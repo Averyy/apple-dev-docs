@@ -19,7 +19,7 @@ var underlineThickness: CGFloat { get }
 @property (readonly) CGFloat underlineThickness;
 ```
 
-#### Discussion
+## Discussion
 
 The value in this property is determined by the font’s AFM file.
 

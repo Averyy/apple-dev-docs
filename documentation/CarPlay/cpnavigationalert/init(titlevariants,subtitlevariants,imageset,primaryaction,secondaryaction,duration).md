@@ -21,7 +21,7 @@ init(titleVariants: [String], subtitleVariants: [String]?, imageSet: CPImageSet?
 - (instancetype) initWithTitleVariants:(NSArray<NSString *> *) titleVariants subtitleVariants:(NSArray<NSString *> *) subtitleVariants imageSet:(CPImageSet *) imageSet primaryAction:(CPAlertAction *) primaryAction secondaryAction:(CPAlertAction *) secondaryAction duration:(NSTimeInterval) duration;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized navigation alert.
 

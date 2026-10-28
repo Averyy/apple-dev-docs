@@ -21,7 +21,7 @@ class func subscribers() -> [CTSubscriber]
 + (NSArray<CTSubscriber *> *) subscribers;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`CTSubscriber`](../ctsubscriber.md) instances.
 

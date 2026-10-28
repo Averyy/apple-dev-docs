@@ -15,7 +15,7 @@ A Boolean value that determines whether the annotation responds to user interact
 enabled?: boolean;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `true`.
 

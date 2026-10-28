@@ -30,7 +30,7 @@ nonisolated
 init(item: URL, subject: Text? = nil, message: Text? = nil) where Data == CollectionOfOne<URL>
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer when you want the system-standard appearance for `ShareLink`.
 

@@ -21,7 +21,7 @@ func negative(_ array: MLXArray, stream: StreamOrDevice = .default) -> MLXArray
 
 - [Converting From Python](./converting-python.md)
 
-#### Discussion
+## Discussion
 
 Negate the values in the array.
 
@@ -32,7 +32,7 @@ let a = MLXArray(0 ..< 12, [4, 3])
 let r = negative(a) // e.g. -a
 ```
 
-##### See Also
+### See Also
 
 - [Arithmetic](./arithmetic.md)
 

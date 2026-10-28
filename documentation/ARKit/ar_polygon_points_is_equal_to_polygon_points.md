@@ -15,7 +15,7 @@ Check if two polygon points collections are equal.
 extern bool ar_polygon_points_is_equal_to_polygon_points(ar_polygon_points_t polygon_points, ar_polygon_points_t other_polygon_points);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the two collections contain the same points in the same order; otherwise, `false`.
 

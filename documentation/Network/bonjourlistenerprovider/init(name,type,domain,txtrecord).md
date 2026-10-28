@@ -21,7 +21,7 @@ Create a Bonjour service to advertise.
 init(name: String? = nil, type: String, domain: String? = nil, txtRecord: NWTXTRecord? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: You can use `.bonjour()` as a convenience initializer.
 

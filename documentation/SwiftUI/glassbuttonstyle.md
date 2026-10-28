@@ -21,7 +21,7 @@ nonisolated
 struct GlassButtonStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`glass`](./primitivebuttonstyle/glass.md) to construct this style.
 

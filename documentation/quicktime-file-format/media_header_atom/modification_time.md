@@ -6,7 +6,7 @@
 
 A 32-bit integer that specifies the last modification date for the media atom.
 
-#### Overview
+## Overview
 
 Represent the calendar date and time in seconds since midnight, January 1, 1904, preferably using coordinated universal time (UTC).
 

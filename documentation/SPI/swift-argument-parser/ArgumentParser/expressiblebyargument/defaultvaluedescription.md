@@ -22,9 +22,7 @@ var defaultValueDescription: String { get }
 
 ### ExpressibleByArgument Implementations
 - [var defaultValueDescription: String](./defaultvaluedescription-2vi00.md)
-  The description of this instance to show as a default value in a command-line tool’s help screen.
 - [var defaultValueDescription: String](./defaultvaluedescription-940zv.md)
-  The description of this instance to show as a default value in a command-line tool’s help screen.
 
 
 ---

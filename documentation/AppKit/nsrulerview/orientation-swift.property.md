@@ -19,7 +19,7 @@ var orientation: NSRulerView.Orientation { get set }
 @property NSRulerOrientation orientation;
 ```
 
-#### Discussion
+## Discussion
 
 Possible values for `orientation` are described in `Constants`.
 

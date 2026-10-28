@@ -25,11 +25,11 @@ func CMVideoFormatDescriptionCreateForImageBuffer(allocator: CFAllocator?, image
 extern OSStatus CMVideoFormatDescriptionCreateForImageBuffer(CFAllocatorRef allocator, CVImageBufferRef imageBuffer, CMVideoFormatDescriptionRef*formatDescriptionOut);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. Returns `noErr` if successful.
 
-#### Discussion
+## Discussion
 
 This convenience function is equivalent to:
 

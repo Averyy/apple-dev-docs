@@ -25,11 +25,11 @@ var persistentStoreCoordinator: NSPersistentStoreCoordinator? { get set }
 @property (strong, nullable) NSPersistentStoreCoordinator * persistentStoreCoordinator;
 ```
 
-#### Return Value
+## Return Value
 
 The persistent store coordinator of the receiver.
 
-#### Discussion
+## Discussion
 
 The coordinator provides the managed object model and handles persistency. Note that multiple contexts can share a coordinator. May not be `nil`.
 

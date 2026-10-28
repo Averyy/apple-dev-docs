@@ -21,11 +21,11 @@ Registers a list of traits to observe, and calls a method on the specified targe
 @MainActor func registerForTraitChanges(_ traits: [UITrait], target: Any, action: Selector) -> any UITraitChangeRegistration
 ```
 
-#### Return Value
+## Return Value
 
 An opaque token you can use to stop observing trait changes by passing to [`unregisterForTraitChanges(_:)`](./unregisterfortraitchanges%28_%29.md). You don’t have to unregister your observations, and you can safely ignore this value.
 
-#### Discussion
+## Discussion
 
 The method specified by the selector can take zero, one, or two arguments. If the method takes one argument, the system passes the object whose trait collection is changing. If the method takes two arguments, the system passes the trait collection prior to the observed changes as the second argument.
 

@@ -20,7 +20,7 @@ The element’s unrotated frame.
 var frame: CGRect { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Together with `rotation` this defines the element’s position in its parent. This won’t necessarily contain all the contents of an element, rotation and styling may cause the element to extend beyond this frame. Use `renderFrame` for an unrotated frame that contains the entire element.
 

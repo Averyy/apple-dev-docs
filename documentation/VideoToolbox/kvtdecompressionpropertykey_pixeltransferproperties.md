@@ -24,7 +24,7 @@ let kVTDecompressionPropertyKey_PixelTransferProperties: CFString
 extern CFStringRef const kVTDecompressionPropertyKey_PixelTransferProperties;
 ```
 
-#### Discussion
+## Discussion
 
 This property value is a [`CFDictionary`](../CoreFoundation/cfdictionary.md) object containing properties from `VTPixelTransferProperties.h`.
 

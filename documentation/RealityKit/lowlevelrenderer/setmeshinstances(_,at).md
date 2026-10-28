@@ -18,7 +18,7 @@ Assigns a mesh instance array to the given slot index.
 final func setMeshInstances(_ meshInstances: LowLevelMeshInstanceArray?, at index: Int) throws(LowLevelRendererError)
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: [`LowLevelRendererError`](../lowlevelrenderererror.md) if the renderer’s render target descriptor is not contained in the array’s descriptor set.
 

@@ -24,7 +24,7 @@ var destinationFeatureChannelOffset: Int { get set }
 @property (nonatomic, readwrite) NSUInteger destinationFeatureChannelOffset;
 ```
 
-#### Discussion
+## Discussion
 
 This is the starting offset in the destination image in the feature channel dimension at which destination output data is written. This allows you to pass a subset of all the channels in an image as the output of a kernel.
 

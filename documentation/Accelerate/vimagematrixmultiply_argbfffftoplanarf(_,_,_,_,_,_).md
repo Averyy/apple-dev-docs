@@ -25,11 +25,11 @@ func vImageMatrixMultiply_ARGBFFFFToPlanarF(_ src: UnsafePointer<vImage_Buffer>,
 vImage_Error vImageMatrixMultiply_ARGBFFFFToPlanarF(const vImage_Buffer *src, const vImage_Buffer *dest, const float matrix[4], const float pre_bias[4], float post_bias, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 This function treats the four-channel source pixels as a four-element vector, and multiplies each source pixel by the matrix. The operation is equivalent to computing the dot product of the source pixel and the matrix.
 

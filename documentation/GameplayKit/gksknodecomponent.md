@@ -24,7 +24,7 @@ class GKSKNodeComponent
 @interface GKSKNodeComponent : GKComponent
 ```
 
-#### Overview
+## Overview
 
 Adding a [`GKSKNodeComponent`](./gksknodecomponent.md) object to an entity automatically updates the [`entity`](../SpriteKit/sknode/entity.md) property of the component’s SpriteKit node (an [`SKNode`](../SpriteKit/sknode.md) object) to point to that entity.
 

@@ -25,7 +25,7 @@ static let groupingSeparator: CFLocaleKey!
 extern CFLocaleKey const kCFLocaleGroupingSeparator;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a CFString object, for example “,” or “.”.
 

@@ -24,7 +24,7 @@ var maxAcceleration: Float { get set }
 @property (nonatomic) float maxAcceleration;
 ```
 
-#### Discussion
+## Discussion
 
 When an agent evaluates the goals listed in its [`behavior`](./behavior.md) property, the result is an acceleration vector that changes the position and direction of the agent. If the magnitude of that vector, in units per second per second, is greater than this value, its effect is limited to this value. An agent with a low maximum acceleration will be slow to change speed and direction; an agent with a high maximum acceleration can start moving, stop, and turn more quickly.
 

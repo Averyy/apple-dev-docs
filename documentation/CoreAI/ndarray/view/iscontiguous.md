@@ -21,7 +21,7 @@ var isContiguous: Bool { get }
 
 Available when `Element` conforms to `BitwiseCopyable`.
 
-#### Discussion
+## Discussion
 
 > **Note**: If this returns `false`, then `contiguousElements` will return `nil`.
 

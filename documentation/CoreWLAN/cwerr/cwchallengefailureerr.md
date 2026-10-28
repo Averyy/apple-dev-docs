@@ -17,7 +17,7 @@ case cwChallengeFailureErr
 kCWChallengeFailureErr
 ```
 
-#### Discussion
+## Discussion
 
 Authentication was rejected because of a challenge failure.
 

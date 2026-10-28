@@ -24,7 +24,7 @@ case failureNotSubscribed
 INSetRadioStationIntentResponseCodeFailureNotSubscribed
 ```
 
-#### Discussion
+## Discussion
 
 For example, use this code if the user selects a satellite radio station but doesn’t subscribe to the satellite service.
 

@@ -25,11 +25,11 @@ func sparse_pack_vector_float(_ N: sparse_dimension, _ nz: sparse_dimension, _ x
 long sparse_pack_vector_float(sparse_dimension N, sparse_dimension nz, const float * restrictx, sparse_stride incx, float * restricty, sparse_index * restrictindy);
 ```
 
-#### Return Value
+## Return Value
 
 The number of nonzero values written. On success, `y` and `indy` are updated with up to the first `nz` nonzero indices.
 
-#### Discussion
+## Discussion
 
 Pack the first `nz` nonzero values and indices from the dense vector *x* and place them in `y` and `indy`. If less than `nz` nonzero elements are found in the `N` elements of `x`, then the last `nz - actual_nonzero_count` elements of `y` and `indy` are unused. The number of indices written can range from `0` to `nz` values and the number written is returned.
 

@@ -20,7 +20,7 @@ func stopLoading(_ sender: Any?)
 - (void) stopLoading:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 Make this method the action of any controls that stop the loading of your web content. Connect your controls to this method programmatically or in Interface Builder.
 

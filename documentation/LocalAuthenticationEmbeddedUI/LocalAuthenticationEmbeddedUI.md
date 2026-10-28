@@ -13,7 +13,7 @@ Present a standard local authentication view icon in a custom authentication vie
 - macOS 12.0+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 When you authenticate users with the `Local Authentication` framework, the framework handles all user interaction by default. If you want to create a custom authentication user interface, build it around an [`LAAuthenticationView`](./laauthenticationview.md) instance. The authentication view displays an icon that users associate with biometric authentication, like the Touch ID icon, and then modifies that icon over time to reflect changes in the authentication state. You can add other text, images, or interactive elements to your custom view as needed.
 

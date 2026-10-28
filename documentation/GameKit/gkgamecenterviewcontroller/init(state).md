@@ -28,7 +28,7 @@ init(state: GKGameCenterViewControllerState)
 
 - [Displaying the Game Center dashboard](../displaying-the-game-center-dashboard.md)
 
-#### Return Value
+## Return Value
 
 The initialized view controller.
 

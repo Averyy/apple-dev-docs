@@ -28,7 +28,7 @@ protocol GCDevicePhysicalInputState : NSObjectProtocol
 
 - [Handling input events](./handling-input-events.md)
 
-#### Overview
+## Overview
 
 It’s safe to call any property and method implementation of this protocol from any thread, as long as you don’t do so from multiple threads concurrently.
 

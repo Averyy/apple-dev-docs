@@ -19,7 +19,7 @@
 static float SPVector3DFloatLength(SPVector3DFloat x);
 ```
 
-#### Discussion
+## Discussion
 
 Returns the length of the vector.
 

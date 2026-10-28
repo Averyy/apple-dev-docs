@@ -15,7 +15,7 @@ Determine if a filesystem is mounted read-only but a request has been made to up
 int vfs_iswriteupgrade(mount_t mp);
 ```
 
-#### Return Value
+## Return Value
 
 Nonzero if a request has been made to update from read-only to read-write, else 0.
 

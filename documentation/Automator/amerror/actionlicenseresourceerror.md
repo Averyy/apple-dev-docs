@@ -16,7 +16,7 @@ An error that indicates a license required by the action was not found.
 static var actionLicenseResourceError: AMError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 The only license currently supported is QuickTime Pro.
 

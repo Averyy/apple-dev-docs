@@ -19,7 +19,7 @@ static let image: NSBindingName
 extern NSBindingName NSImageBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

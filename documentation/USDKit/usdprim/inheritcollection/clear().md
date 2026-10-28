@@ -20,7 +20,7 @@ Removes all inherit arcs from the prim.
 func clear() throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the inherits cannot be cleared.
 

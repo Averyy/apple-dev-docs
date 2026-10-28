@@ -25,7 +25,7 @@ var isReadOnly: Bool { get set }
 @property (getter=isReadOnly) BOOL readOnly;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the receiver is read-only, otherwise [`false`](../../Swift/false.md).
 

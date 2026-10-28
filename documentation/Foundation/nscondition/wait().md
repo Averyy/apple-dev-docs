@@ -25,7 +25,7 @@ func wait()
 - (void) wait;
 ```
 
-#### Discussion
+## Discussion
 
 You must lock the receiver prior to calling this method.
 

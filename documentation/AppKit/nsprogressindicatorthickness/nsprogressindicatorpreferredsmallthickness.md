@@ -13,7 +13,7 @@
 NSProgressIndicatorPreferredSmallThickness
 ```
 
-#### Discussion
+## Discussion
 
 10
 

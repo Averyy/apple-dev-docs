@@ -21,7 +21,7 @@ Constructs an asynchronous sequence for a given closure by tracking changes of `
 init(_ emit: @escaping @isolated(any) @Sendable () throws(Failure) -> Element)
 ```
 
-#### Discussion
+## Discussion
 
 The emit closure is responsible for extracting a value out of a single or many `@Observable` types.
 

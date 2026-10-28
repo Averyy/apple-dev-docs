@@ -21,7 +21,7 @@ The non-extension portion of this file or directory  component.
 var stem: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 Examples:
 

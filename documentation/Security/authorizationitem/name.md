@@ -20,7 +20,7 @@ var name: AuthorizationString
 AuthorizationString name;
 ```
 
-#### Discussion
+## Discussion
 
 The field is mandatory.
 

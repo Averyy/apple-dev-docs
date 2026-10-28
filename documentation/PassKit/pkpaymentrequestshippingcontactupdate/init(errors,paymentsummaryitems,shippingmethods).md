@@ -24,7 +24,7 @@ init(errors: [any Error]?, paymentSummaryItems: [PKPaymentSummaryItem], shipping
 - (instancetype) initWithErrors:(NSArray<NSError *> *) errors paymentSummaryItems:(NSArray<PKPaymentSummaryItem *> *) paymentSummaryItems shippingMethods:(NSArray<PKShippingMethod *> *) shippingMethods;
 ```
 
-#### Discussion
+## Discussion
 
 Use the `errors` array to specify any errors in the shipping method that the user must resolve. For more information on creating user errors, see [`PKPaymentError`](../pkpaymenterror.md).
 

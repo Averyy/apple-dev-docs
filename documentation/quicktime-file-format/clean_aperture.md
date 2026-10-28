@@ -10,7 +10,7 @@ An extension that defines the relationship between the pixels in a stored image 
 
 - [QuickTime File Format change log](./revision_history.md)
 
-#### Overview
+## Overview
 
 The clean aperture extension defines the relationship between the pixels in a stored image and a canonical rectangular region of a video system from which it was captured or to which it will be displayed. This can be used to correlate pixel locations in two or more images — possibly recorded using different systems — for accurate compositing. This is necessary because different video digitizer devices can digitize different regions of the incoming video signal, causing pixel misalignment between images. In particular, a stored image may contain “edge” data outside the canonical display area for a given system.
 

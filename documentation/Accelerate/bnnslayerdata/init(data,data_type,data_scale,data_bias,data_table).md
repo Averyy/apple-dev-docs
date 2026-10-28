@@ -23,7 +23,7 @@ Returns a new layer data structure.
 init(data: UnsafeRawPointer?, data_type: BNNSDataType, data_scale: Float, data_bias: Float, data_table: UnsafePointer<Float>?)
 ```
 
-#### Return Value
+## Return Value
 
 A new layer data structure.
 

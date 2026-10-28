@@ -22,7 +22,7 @@ nonisolated init(_ data: Data) where ID == Data.Element.ID, Content == TableRow<
 
 Available when `Data` conforms to `RandomAccessCollection`, `ID` conforms to `Hashable`, and `Content` conforms to `TableRowContent`.
 
-#### Discussion
+## Discussion
 
 The following example creates a `Person` type that conforms to [`Identifiable`](../../Swift/identifiable.md), and an array of this type called `people`. A `ForEach` instance iterates over the array, producing new [`TableRow`](../tablerow.md) instances implicitly.
 

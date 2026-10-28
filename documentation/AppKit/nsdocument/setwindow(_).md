@@ -19,7 +19,7 @@ func setWindow(_ window: NSWindow?)
 - (void) setWindow:(NSWindow *) window;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked automatically during the loading of any nib for which this document is the file’s owner, if the file’s owner `window` outlet is connected in the nib. You should not invoke this method directly, and typically you would not override it either.
 

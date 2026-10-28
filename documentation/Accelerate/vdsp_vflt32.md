@@ -21,7 +21,7 @@ Converts a vector of signed 32-bit integers to single-precision floating-point v
 extern void vDSP_vflt32(const int *__A, vDSP_Stride __IA, float *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 The input and output values must point to different, non-overlapping regions of memory; it doesn’t work in-place.
 

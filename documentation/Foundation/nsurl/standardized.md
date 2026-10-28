@@ -25,7 +25,7 @@ var standardized: URL? { get }
 @property (copy, readonly, nullable) NSURL * standardizedURL;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains a new `NSURL` object, initialized using the receiver’s path with any instances of `".."` or `"."` removed. If the receiver does not conform to RFC 1808, this property contains `nil`.
 

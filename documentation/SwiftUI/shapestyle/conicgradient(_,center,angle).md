@@ -31,7 +31,7 @@ Available when `Self` is `AngularGradient`.
 static func conicGradient(_ gradient: Gradient, center: UnitPoint, angle: Angle = .zero) -> AngularGradient
 ```
 
-#### Discussion
+## Discussion
 
 For example, a conic gradient used as a background:
 

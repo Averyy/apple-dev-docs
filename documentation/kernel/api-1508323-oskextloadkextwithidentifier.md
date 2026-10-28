@@ -15,11 +15,11 @@ Request that a kext be loaded.
 OSReturn OSKextLoadKextWithIdentifier(const char *kextIdentifier);
 ```
 
-#### Return Value
+## Return Value
 
 `kOSReturnSuccess` if the kext was loaded (or was already loaded). `kOSKextReturnDeferred` if the kext was not found and a request was queued to kextd(8). Other return values indicate a failure to load the kext.
 
-#### Discussion
+## Discussion
 
 If a kext is already in the kernel but not loaded, it is loaded immediately. If it isn't found, an asynchronous load request is made to kextd(8) and `kOSKextReturnDeferred` is returned. There is no general notification or callback mechanism for load requests.
 

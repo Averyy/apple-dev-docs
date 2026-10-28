@@ -17,7 +17,7 @@ Applies 1-dimensional average pooling.
 init(kernelSize: Int, stride: Int, padding: Int = 0)
 ```
 
-#### Discussion
+## Discussion
 
 The input is expected to be `NLC`. The output will have the same N/C dimensions with the new L = floor((L - kernel)/stride) + 1
 

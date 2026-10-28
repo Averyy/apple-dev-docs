@@ -19,7 +19,7 @@ class NSGridView
 @interface NSGridView : NSView
 ```
 
-#### Overview
+## Overview
 
 A grid view helps you lay out content, such as photos or thumbnails, in a row-column arrangement similar to a spreadsheet. Within a grid view, an item that occupies a single row-column intersection is represented by an [`NSGridCell`](./nsgridcell.md) object.
 

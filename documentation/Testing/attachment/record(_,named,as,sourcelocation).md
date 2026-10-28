@@ -18,7 +18,7 @@ static func record<T>(_ image: T, named preferredName: String? = nil, as imageFo
 
 Available when `AttachableValue` conforms to `Attachable`.
 
-#### Discussion
+## Discussion
 
 This function creates a new instance of [`Attachment`](../attachment.md) wrapping `image` and immediately attaches it to the current test. The testing library uses the image format that `imageFormat` specifies. Pass `nil` to let the testing library select which image format to use. If you pass `nil`, the image format that the testing library uses depends on the path extension you specify in `preferredName`, if any. If you don’t specify a path extension, or if the path extension you specify doesn’t correspond to an image format the operating system knows how to write, the testing library selects an appropriate image format for you.
 

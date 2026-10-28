@@ -22,7 +22,7 @@ A mechanism to interface between synchronous and asynchronous code, which enforc
 struct Continuation<Success, Failure> where Failure : Error, Success : ~Copyable
 ```
 
-#### Overview
+## Overview
 
 Unlike `CheckedContinuation`, which detects misuse at runtime, `Continuation` uses non-copyable semantics to enforce correct usage.
 

@@ -14,7 +14,7 @@
 DCLCommand *(*Allocate)(IOFireWireLibDCLCommandPoolRef self, IOByteCount inSize);
 ```
 
-#### Discussion
+## Discussion
 
 Description forthcoming
 

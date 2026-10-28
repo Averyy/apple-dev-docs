@@ -25,11 +25,11 @@ init?(_ name: CFString)
 extern CGFontRefCGFontCreateWithFontName(CFStringRef name);
 ```
 
-#### Return Value
+## Return Value
 
 The font object or `NULL` if the font can’t be created. In Objective-C, you’re responsible for releasing this object using [`CGFontRelease`](../cgfontrelease.md).
 
-#### Discussion
+## Discussion
 
 Before drawing text in a Core Graphics context, you must set the font in the current graphics state by calling the function [`setFont(_:)`](../cgcontext/setfont%28_%29.md).
 

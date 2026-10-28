@@ -25,7 +25,7 @@ typealias CFRunLoopTimerCallBack = (CFRunLoopTimer?, UnsafeMutableRawPointer?) -
 typedef void (*)(struct __CFRunLoopTimer *, void *) CFRunLoopTimerCallBack;
 ```
 
-#### Discussion
+## Discussion
 
 If `timer` repeats, the run loop automatically schedules the next firing time after calling this function, unless you manually update the firing time within this callback by calling [`CFRunLoopTimerSetNextFireDate(_:_:)`](./cfrunlooptimersetnextfiredate%28_,_%29.md). If `timer` does not repeat, the run loop invalidates `timer`.
 

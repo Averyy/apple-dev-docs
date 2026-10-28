@@ -19,7 +19,7 @@ case small
 NSControlSizeSmall
 ```
 
-#### Discussion
+## Discussion
 
 This constant is for controls that can’t be resized in one direction, such as push buttons, radio buttons, checkboxes, sliders, scroll bars, pop-up buttons, tabs, and progress indicators. Use a small system font with a small control.
 

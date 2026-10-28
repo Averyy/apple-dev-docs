@@ -21,7 +21,7 @@ func end(_ workoutSession: HKWorkoutSession)
 - (void) endWorkoutSession:(HKWorkoutSession *) workoutSession;
 ```
 
-#### Discussion
+## Discussion
 
 This method returns immediately; however, the work is performed asynchronously on an anonymous serial background queue. If successful, the session’s state transitions to [`HKWorkoutSessionState.ended`](../hkworkoutsessionstate/ended.md), and the system calls the session delegate’s [`workoutSession(_:didChangeTo:from:date:)`](../hkworkoutsessiondelegate/workoutsession%28_,didchangeto,from,date%29.md) method.
 

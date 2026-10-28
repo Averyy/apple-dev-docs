@@ -21,11 +21,11 @@ Returns a Boolean value that indicates whether the set is a subset of another se
 func isSubset(of other: Self) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the set is a subset of `other`; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 Set *A* is a subset of another set *B* if every member of *A* is also a member of *B*.
 

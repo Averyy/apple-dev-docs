@@ -9,7 +9,7 @@ Retrieve performance metrics for the actual search terms that triggered keyword 
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 Apple Maps search term reports show the actual user-entered queries that matched a keyword and generated an impression on the Search Results placement. Each row contains the `searchTermText` field and the associated `keyword` object, allowing you to map observed search behavior back to specific bid keywords in your Apple Maps campaign.
 
@@ -25,7 +25,7 @@ Filter by `adGroupId` or `campaignId` to scope results to a specific part of you
 
 See [`Filter`](./filter.md) for the full set of supported comparison operators.
 
-#### Request Body
+## Request Body
 
 See [`BrandsReportingRequest`](./brandsreportingrequest.md).
 
@@ -62,13 +62,13 @@ Search term reporting carries several restrictions beyond granularity, including
 | `locationId` groupBy | Not supported at the search term entity level. |
 | Privacy threshold | Low-volume search terms may be suppressed or aggregated to protect user privacy. |
 
-#### Payload Examples
+## Payload Examples
 
 **Brands, Search Terms for Ad Group**:
 
 Retrieve daily search term metrics for all keywords in a specific Apple Maps ad group. Results show the exact user queries that triggered impressions on Apple Maps.
 
-##### Request
+### Request
 
 Filters by `adGroupId` with no `groupBy` dimension, returning daily search term metrics for all matched queries in March 2025 using the account’s reporting timezone.
 
@@ -96,7 +96,7 @@ POST /v1/reports/business-brands/searchterms/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -266,7 +266,7 @@ POST /v1/reports/business-brands/searchterms/query
 
 Retrieve search term metrics grouped by device class to understand whether your Apple Maps keywords attract different queries on iPhone vs iPad.
 
-##### Request
+### Request
 
 Filters by `campaignId`, groups by `deviceClass`, and uses daily granularity to show search term performance broken down by device type over March 2025.
 
@@ -297,7 +297,7 @@ POST /v1/reports/business-brands/searchterms/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -414,7 +414,7 @@ POST /v1/reports/business-brands/searchterms/query
 
 Retrieve weekly search term metrics for a campaign. Weekly granularity requires the date range to span at least 14 days.
 
-##### Request
+### Request
 
 Filters by `campaignId` with no `groupBy` dimension and uses weekly granularity over a 2-month window, well over the 14-day minimum required for weekly reporting.
 
@@ -442,7 +442,7 @@ POST /v1/reports/business-brands/searchterms/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

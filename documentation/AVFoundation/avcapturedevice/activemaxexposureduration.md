@@ -22,7 +22,7 @@ var activeMaxExposureDuration: CMTime { get set }
 @property (nonatomic) CMTime activeMaxExposureDuration;
 ```
 
-#### Discussion
+## Discussion
 
 When you set the exposureMode to [`AVCaptureDevice.ExposureMode.autoExpose`](./exposuremode-swift.enum/autoexpose.md) or [`AVCaptureDevice.ExposureMode.continuousAutoExposure`](./exposuremode-swift.enum/continuousautoexposure.md), the autoexposure algorithm picks a default maximum exposure duration that’s tuned for the current configuration, balancing low light image quality with motion preservation. By querying or key-value observing this property, you can determine the current maximum exposure duration in use.
 

@@ -32,7 +32,7 @@ var moodNames: [String]? { get }
 @property (atomic, copy, readonly, nullable) NSArray<NSString *> * moodNames;
 ```
 
-#### Discussion
+## Discussion
 
 A mood is generally how the user feels. For example, the user may ask to play some happy, sad, or angry music.
 

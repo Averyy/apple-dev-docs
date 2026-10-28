@@ -4,7 +4,7 @@
 
 Manage the simulated and physical devices that you use to test your app.
 
-#### Overview
+## Overview
 
 You manage all the devices that appear in Xcode as run destinations using Device Hub.
 

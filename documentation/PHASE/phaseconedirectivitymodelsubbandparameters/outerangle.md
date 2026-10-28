@@ -24,7 +24,7 @@ var outerAngle: Double { get }
 @property (readonly) double outerAngle;
 ```
 
-#### Discussion
+## Discussion
 
 To set this property, call [`setAngles(innerAngle:outerAngle:)`](./setangles%28innerangle,outerangle%29.md).
 

@@ -16,7 +16,7 @@ Attempts to reconnect the central manager to the most recently connected periphe
 func connectToLastConnectedPeripheral(timeout: TimeInterval = 7.0, callback: ((CBPeripheral?, Error?) -> Void)? = nil) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value indicating whether the currently active playground book has previously connected to a peripheral. If [`true`](../../Swift/true.md), the central manager attempts to reconnect to it.
 

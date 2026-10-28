@@ -17,7 +17,7 @@ Stop the metal capture.
 static func stopCapture(url: URL)
 ```
 
-#### Discussion
+## Discussion
 
 See [`startCapture(url:)`](./startcapture%28url%29.md).
 

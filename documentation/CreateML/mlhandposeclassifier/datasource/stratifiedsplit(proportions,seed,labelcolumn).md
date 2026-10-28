@@ -21,7 +21,7 @@ Generates a data table by splitting the data source into strata.
 func stratifiedSplit(proportions: [Double], seed: Int = timestampSeed(), labelColumn: String) throws -> MLDataTable
 ```
 
-#### Discussion
+## Discussion
 
 - proportions: An array of stratum proportions, each in the range `[0.0, 1.0]`.
 

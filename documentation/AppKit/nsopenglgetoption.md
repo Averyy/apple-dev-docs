@@ -17,7 +17,7 @@ Returns global OpenGL options.
 extern void NSOpenGLGetOption(NSOpenGLGlobalOption pname, GLint *param);
 ```
 
-#### Discussion
+## Discussion
 
 Returns in `param` the value of the global OpenGL parameter `pname`. The available options are enumerated by the [`NSOpenGLGlobalOption`](./nsopenglglobaloption.md) type.
 

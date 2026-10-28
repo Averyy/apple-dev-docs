@@ -12,7 +12,7 @@ virtual void updateStatus(
  void);
 ```
 
-#### Overview
+## Overview
 
 The system will not poll this object for battery updates. Rather \ the battery's controller must call updateStatus() every time state changes \ and the settings will be relayed to higher levels of power management. \ The subclassing driver should override this only if the driver needs to add \ new settings to the base class.
 

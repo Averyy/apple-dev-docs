@@ -5,7 +5,7 @@
 
 Set up a window that handles dynamically resizing your Metal content.
 
-#### Overview
+## Overview
 
 A scene represents a single instance of your app’s UI. You can choose whether people can create multiple scenes for your app. Typically, Metal apps and games support only one scene because they need priority access to the available resources on a device. On iPadOS 26 and later, people can always resize your app’s scenes if they have enabled multitasking.
 
@@ -15,7 +15,7 @@ Apps that don’t adopt the scene-based life cycle log a warning at startup on i
 
 For more information on migrating your iPad app, see [TN3192: Migrating your app from the deprecated UIRequiresFullScreen key](../Technotes/tn3192-migrating-your-app-from-the-deprecated-uirequiresfullscreen-key.md) and [TN3187: Migrating to the UIKit scene-based life cycle](../Technotes/tn3187-migrating-to-the-uikit-scene-based-life-cycle.md).
 
-#### Create the window
+## Create the window
 
 Manage windows on iPad by using [`UIWindowScene`](../UIKit/uiwindowscene.md) for UIKit and [`Scene`](../SwiftUI/scene.md) for SwiftUI. To configure a [`UIWindow`](../UIKit/uiwindow.md) under a scene you assign a content view controller and embed your Metal view inside the controller.
 
@@ -175,7 +175,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 For more information on dynamic configuration, see [TN3187: Migrating to the UIKit scene-based life cycle](../Technotes/tn3187-migrating-to-the-uikit-scene-based-life-cycle.md). For more information on adding scene support to your app, see [Specifying the scenes your app supports](../UIKit/specifying-the-scenes-your-app-supports.md).
 
-#### Choose the content size and style of your window
+## Choose the content size and style of your window
 
 After adding scene support, configure the initial size and style of your window’s scenes. When your app creates or restores an instance of your user interface, the system calls [`scene(_:willConnectTo:options:)`](../UIKit/uiscenedelegate/scene%28_,willconnectto,options%29.md). This delegate method provides a window scene that you use to configure size contraints and style. For Metal apps and games, this is typically a single scene.
 
@@ -303,7 +303,7 @@ override func viewDidLoad() {
 }
 ```
 
-#### Handle window resizing
+## Handle window resizing
 
 When resizing a window, the system sets [`isInteractivelyResizing`](../UIKit/uiwindowscene/geometry/isinteractivelyresizing.md) and calls the scene delegate
 [`windowScene(_:didUpdateEffectiveGeometry:)`](../UIKit/uiwindowscenedelegate/windowscene%28_,didupdateeffectivegeometry%29.md) to allow for an app to handle window size changes. When a window resizes, continue rendering at the existing render target size until a person stops resizing the window, at which point you can update the new render target size. Don’t query the window size while a person is resizing a window. Instead, track the state in your renderer and then perform the necessary render size update when the person finishes resizing the window. For more information on responding to scene size changes, see [TN3187: Migrating to the UIKit scene-based life cycle](../Technotes/tn3187-migrating-to-the-uikit-scene-based-life-cycle.md).
@@ -431,7 +431,7 @@ func resizeDrawable(scaleFactor: CGFloat) {
 }
 ```
 
-#### Handle moving a window between displays
+## Handle moving a window between displays
 
 In iPad, you use [`UITraitCollection`](../UIKit/uitraitcollection.md) to assist with providing a flexible windowing environment that allows your app to render and move windows between multiple displays. To eliminate the need to manually register for trait changes, use [Automatic trait tracking](../UIKit/automatic-trait-tracking.md) to observe the values you need from your specific views. In some cases, you might use [`UIScreen`](../UIKit/uiscreen.md) to access a trait that [`UITraitCollection`](../UIKit/uitraitcollection.md) doesn’t provide, like [`nativeScale`](../UIKit/uiscreen/nativescale.md).
 
@@ -472,7 +472,7 @@ func windowScene(
 
 For more information on supporting multiple displays in iPadOS, see [Presenting content on a connected display](../UIKit/presenting-content-on-a-connected-display.md). For more information on managing your Metal app window in macOS, see [Managing your game window for Metal in macOS](./managing-your-game-window-for-metal-in-macos.md).
 
-#### Lock interface orientation for device rotation
+## Lock interface orientation for device rotation
 
 Some Metal apps and games might need to lock the interface orientation so the screen geometry remains locked when a person rotates the device. To lock the orientation, call [`setNeedsUpdateOfPrefersInterfaceOrientationLocked()`](../UIKit/uiviewcontroller/setneedsupdateofprefersinterfaceorientationlocked%28%29.md) in your view controller and check whether the interface is already locked with the `previousEffectiveGeometry` parameter of [`windowScene(_:didUpdateEffectiveGeometry:)`](../UIKit/uiwindowscenedelegate/windowscene%28_,didupdateeffectivegeometry%29.md):
 

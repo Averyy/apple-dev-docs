@@ -20,7 +20,7 @@ case waitingForAvailabilityCheck
 ARGeoTrackingStateReasonWaitingForAvailabilityCheck
 ```
 
-#### Discussion
+## Discussion
 
 While in this state, the app waits for the geotracking subsystem to determine geotracking availability at the user’s GPS location. Inform the user of the check in progress; for instance, present a message alerting them to the geotracking initialization process.
 

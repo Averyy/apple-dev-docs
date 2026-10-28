@@ -25,7 +25,7 @@ func className(for cls: AnyClass) -> String?
 - (NSString *) classNameForClass:(Class) cls;
 ```
 
-#### Return Value
+## Return Value
 
 The class name with which the receiver encodes instances of `cls`. Returns `nil` if the receiver does not have a translation mapping for `cls`. The class’s separate translation map is not searched.
 

@@ -24,11 +24,11 @@ func realToHermiteanFFT(_ tensor: MPSGraphTensor, axesTensor: MPSGraphTensor, de
 - (MPSGraphTensor *) realToHermiteanFFTWithTensor:(MPSGraphTensor *) tensor axesTensor:(MPSGraphTensor *) axesTensor descriptor:(MPSGraphFFTDescriptor *) descriptor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor of type `MPSDataTypeComplexFloat32`, `MPSDataTypeComplexFloat16` or `MPSDataTypeComplexBFloat16` with reduced size (see Discussion).
 
-#### Discussion
+## Discussion
 
 This operation computes the fast Fourier transform of a real-valued input tensor according to the following formulae.
 

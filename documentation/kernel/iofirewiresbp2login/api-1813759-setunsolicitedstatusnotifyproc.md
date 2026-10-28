@@ -13,7 +13,7 @@ virtual void setUnsolicitedStatusNotifyProc(
  FWSBP2NotifyCallbackcallback );
 ```
 
-#### Overview
+## Overview
 
 The supplied callback is called when unsolicited status is recieved. "notificationEvent" in the callback's params will indicate what happened. In this case it will be set to kFWSBP2UnsolicitedStatus. If "len" is non-zero then "message" contains the data written to the status block. Note: any buffers returned by callbacks are only valid for the duration of the login and should not have their contents modified.
 

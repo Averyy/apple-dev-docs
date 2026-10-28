@@ -23,7 +23,7 @@ func deleteItems(at indexPaths: [IndexPath])
 - (void) deleteItemsAtIndexPaths:(NSArray<NSIndexPath *> *) indexPaths;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to remove items from the collection view. You might do this when you remove the items from your data source object or in response to user interactions with the collection view. The collection view updates the layout of the remaining items to account for the deletions, animating the remaining items into position as needed.
 

@@ -24,7 +24,7 @@ case version2
 HKAppleECGAlgorithmVersion2
 ```
 
-#### Discussion
+## Discussion
 
 Version 2 of the ECG algorithm includes the following changes:
 

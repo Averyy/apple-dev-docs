@@ -16,11 +16,11 @@ OSStatus PMSetColorMode (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../core_printing.md#1670007).
 
-#### Overview
+## Overview
 
 This function does nothing in macOS.
 

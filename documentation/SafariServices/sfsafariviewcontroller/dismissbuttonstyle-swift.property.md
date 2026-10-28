@@ -21,7 +21,7 @@ var dismissButtonStyle: SFSafariViewController.DismissButtonStyle { get set }
 @property (nonatomic) SFSafariViewControllerDismissButtonStyle dismissButtonStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The Safari view controller sets dismissButtonStyle to [`SFSafariViewController.DismissButtonStyle.close`](./dismissbuttonstyle-swift.enum/close.md) during initialization, displaying “xmark” icon by default. You can use other values such as [`SFSafariViewController.DismissButtonStyle.done`](./dismissbuttonstyle-swift.enum/done.md) to show “checkmark” icon to provide consistency with your app.
 

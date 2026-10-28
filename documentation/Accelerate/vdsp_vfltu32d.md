@@ -21,7 +21,7 @@ Converts an array of unsigned 32-bit integers to double-precision floating-point
 extern void vDSP_vfltu32D(const unsigned int *__A, vDSP_Stride __IA, double *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 The following code shows an example of using this function:
 

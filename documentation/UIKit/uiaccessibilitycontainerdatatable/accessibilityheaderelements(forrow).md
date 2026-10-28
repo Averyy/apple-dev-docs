@@ -23,7 +23,7 @@ optional func accessibilityHeaderElements(forRow row: Int) -> [any UIAccessibili
 - (NSArray<id<UIAccessibilityContainerDataTableCell>> *) accessibilityHeaderElementsForRow:(NSUInteger) row;
 ```
 
-#### Return Value
+## Return Value
 
 The accessibility elements for the specified row header.
 

@@ -24,7 +24,7 @@ var mindingInterval: TimeInterval { get set }
 @property (nonatomic) NSTimeInterval mindingInterval;
 ```
 
-#### Discussion
+## Discussion
 
 The default interval is `10.0`.
 

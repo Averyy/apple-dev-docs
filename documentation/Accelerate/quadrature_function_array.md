@@ -23,7 +23,7 @@ typealias quadrature_function_array = (UnsafeMutableRawPointer?, Int, UnsafePoin
 typedef void (*)(void *, unsigned long, const double *, double *) quadrature_function_array;
 ```
 
-#### Discussion
+## Discussion
 
 Y=F(X) one-dimensional real function, array form, double precision
 

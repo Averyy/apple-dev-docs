@@ -21,7 +21,7 @@ Creates a scoring scale from a typed score level enum.
 static func custom<Level>(_ level: Level.Type) -> ScoringScale where Level : ScoreLevel
 ```
 
-#### Discussion
+## Discussion
 
 The method enumerates all cases and converts them to [`ScaleOption`](../scaleoption.md) values.
 

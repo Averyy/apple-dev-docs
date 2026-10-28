@@ -17,7 +17,7 @@ The key for the code of the accessory’s top error.
 static let accessoryErrorCode: String
 ```
 
-#### Discussion
+## Discussion
 
 This key is present only in troubleshooting content, and only when there’s an error to report.
 

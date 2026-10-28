@@ -21,7 +21,7 @@ string AdGroupCreate.PricingModel
 - `CPM`: Cost-per-thousand-impressions. Pairs with `billingEvent: IMPRESSIONS`.
 - `CPT`: Cost-per-tap. Pairs with `billingEvent: TAPS`.
 
-#### Discussion
+## Discussion
 
 - The `CPM` value pairs with `billingEvent: IMPRESSIONS`.
 - The `CPT` value pairs with `billingEvent: TAPS`.

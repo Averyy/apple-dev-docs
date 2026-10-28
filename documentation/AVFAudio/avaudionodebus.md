@@ -25,7 +25,7 @@ typealias AVAudioNodeBus = Int
 typedef NSUInteger AVAudioNodeBus;
 ```
 
-#### Discussion
+## Discussion
 
 An [`AVAudioNodeBus`](./avaudionodebus.md) represents a bus as a zero-based index. [`AVAudioNode`](./avaudionode.md) objects potentially have multiple input and output busses.
 

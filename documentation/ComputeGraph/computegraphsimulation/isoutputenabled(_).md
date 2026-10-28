@@ -21,7 +21,7 @@ Returns whether the specified output is currently enabled for simulation.
 final func isOutputEnabled(_ outputID: Int) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the output is simulated; `false` if it is disabled.
 

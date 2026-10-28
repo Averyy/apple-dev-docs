@@ -20,7 +20,7 @@ nonisolated
 init(x: PlottableValue<some Plottable>, y: PlottableValue<some Plottable>, z: PlottableValue<some Plottable>)
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: A 3D PointMark requires exactly three numeric points.
 

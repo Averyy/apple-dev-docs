@@ -22,7 +22,7 @@ var type: ARHitTestResult.ResultType { get }
 @property (nonatomic, readonly) ARHitTestResultType type;
 ```
 
-#### Discussion
+## Discussion
 
 You specify one or more result types to search for when calling a hit-testing method. A result object has only one result type.
 

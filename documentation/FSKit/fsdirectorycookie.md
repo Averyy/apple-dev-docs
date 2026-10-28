@@ -19,7 +19,7 @@ struct FSDirectoryCookie
 typedef uint64_t FSDirectoryCookie;
 ```
 
-#### Overview
+## Overview
 
 Your implementation of [`enumerateDirectory(_:startingAt:verifier:attributes:packer:context:replyHandler:)`](./fsvolume/handler/enumeratedirectory%28_,startingat,verifier,attributes,packer,context,replyhandler%29.md) defines the semantics of this value; it’s opaque to FSKit.
 

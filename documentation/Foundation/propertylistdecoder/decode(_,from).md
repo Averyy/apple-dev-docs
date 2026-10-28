@@ -21,7 +21,7 @@ Returns a value of the specified type by decoding a property list using the defa
 func decode<T>(_ type: T.Type, from data: Data) throws -> T where T : Decodable
 ```
 
-#### Discussion
+## Discussion
 
 If the data is not a valid property list, this method throws the [`DecodingError.dataCorrupted(_:)`](../../Swift/decodingerror/datacorrupted%28_%29.md) error. If a value within the property list fails to decode, this method throws the corresponding error.
 

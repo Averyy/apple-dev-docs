@@ -21,7 +21,7 @@ Creates an error from a predefined error with a custom localized description.
 init(predefinedError: AppIntentError, description: LocalizedStringResource)
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create one of the predefined [`AppIntentError`](../appintenterror.md) values with a custom message specific to your app’s context.
 

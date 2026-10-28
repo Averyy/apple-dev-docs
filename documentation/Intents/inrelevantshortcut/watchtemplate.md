@@ -36,7 +36,7 @@ var watchTemplate: INDefaultCardTemplate? { get set }
 
 - [Displaying Shortcut Information in a Siri Watch Face Card](../../SiriKit/displaying-shortcut-information-in-a-siri-watch-face-card.md)
 
-#### Discussion
+## Discussion
 
 Provide a template when you want to customize the appearance of the relevant shortcut card displayed on the Siri watch face.
 

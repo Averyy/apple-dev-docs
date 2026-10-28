@@ -9,7 +9,7 @@ Provide a recovery queue that allows the client to resume playback after an erro
 **Availability**:
 - SiriKit Cloud Media 1.0.2+
 
-#### Discussion
+## Discussion
 
 If the playback of a queue fails to start, or there’s an error during playback that the client can recover from, the client reports the failure by sending a request to this endpoint. Configure your service to respond with a recovery queue that the client can use to restart playback.
 

@@ -9,7 +9,7 @@ Read information about people and classes from an Apple School Manager organizat
 **Availability**:
 - Roster API 1.0.0+
 
-#### Overview
+## Overview
 
 Roster API provides access to people and class information in Apple School Manager (ASM). Use this REST API if you need to support a workflow within your app to automatically create student or teacher records in advance of the first day of school. A typical use case is when your app requires teachers to input assignments and due dates for students in each class.
 

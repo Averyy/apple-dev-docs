@@ -20,7 +20,7 @@ var geometry: ARPlaneGeometry { get }
 @property (nonatomic, strong, readonly) ARPlaneGeometry * geometry;
 ```
 
-#### Discussion
+## Discussion
 
 This mesh provides vertex, index, and texture coordinate buffers describing the estimated 2D footprint of the plane.
 

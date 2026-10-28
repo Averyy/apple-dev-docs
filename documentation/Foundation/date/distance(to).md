@@ -21,7 +21,7 @@ Returns the distance from this date to another date, specified as a time interva
 func distance(to other: Date) -> TimeInterval
 ```
 
-#### Return Value
+## Return Value
 
 The distance from this date to the other date, as a [`TimeInterval`](../timeinterval.md).
 

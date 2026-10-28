@@ -25,7 +25,7 @@ func makeIntersectionFunctionTable(descriptor: MTLIntersectionFunctionTableDescr
 - (id<MTLIntersectionFunctionTable>) newIntersectionFunctionTableWithDescriptor:(MTLIntersectionFunctionTableDescriptor *) descriptor;
 ```
 
-#### Return Value
+## Return Value
 
 A new intersection function table, or `nil` if an error occurred in creation.
 

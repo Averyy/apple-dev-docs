@@ -24,7 +24,7 @@ enum HKCategoryValueVaginalBleeding
 enum HKCategoryValueVaginalBleeding : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Use these values when creating [`HKCategorySample`](./hkcategorysample.md) instances for bleeding-related category types, including [`bleedingDuringPregnancy`](./hkcategorytypeidentifier/bleedingduringpregnancy.md), [`bleedingAfterMenopause`](./hkcategorytypeidentifier/bleedingaftermenopause.md), and other vaginal bleeding types. Each value represents a different intensity level or confirmation of no bleeding.
 

@@ -29,7 +29,7 @@ class NSURL
 
 - [Implementing Handoff in Your App](./implementing-handoff-in-your-app.md)
 
-#### Overview
+## Overview
 
 In Swift, this object bridges to [`URL`](./url.md); use [`NSURL`](./nsurl.md) when you need reference semantics or other Foundation-specific behavior.
 
@@ -45,7 +45,7 @@ The [`NSURL`](./nsurl.md) class is “toll-free bridged” with its Core Foundat
 
 > ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`URL`](./url.md) structure, which bridges to the [`NSURL`](./nsurl.md) class. For more information about value types, see [Classes and Structures](https://developer.apple.com/library/archive/documentation/Swift/Conceptual/Swift_Programming_Language/ClassesAndStructures.html#//apple_ref/doc/uid/TP40014097-CH13) in [The Swift Programming Language (Swift 4.1)](https://developer.apple.com/library/archive/documentation/Swift/Conceptual/Swift_Programming_Language/index.html#//apple_ref/doc/uid/TP40014097) and [Working with Cocoa Frameworks](https://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/WorkingWithCocoaDataTypes.html#//apple_ref/doc/uid/TP40014216-CH6) in [Using Swift with Cocoa and Objective-C (Swift 4.1)](https://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/index.html#//apple_ref/doc/uid/TP40014216).
 
-##### Structure of a URL
+### Structure of a URL
 
 An [`NSURL`](./nsurl.md) object is composed of two parts—a potentially `nil` base URL and a string that is resolved relative to the base URL. An [`NSURL`](./nsurl.md) object is considered absolute if its string part is fully resolved without a base; all other URLs are considered relative.
 
@@ -83,7 +83,7 @@ The [`NSURL`](./nsurl.md) class provides properties that let you examine each of
 
 For apps linked before iOS 17, the [`NSURL`](./nsurl.md) class parses URLs according to [RFC 1808](https://tools.ietf.org/html/rfc1808), [RFC 1738](https://tools.ietf.org/html/rfc1738), and [RFC 2732](https://tools.ietf.org/html/rfc2732).
 
-##### Bookmarks and Security Scope
+### Bookmarks and Security Scope
 
 Starting with OS X v10.6 and iOS 4.0, the [`NSURL`](./nsurl.md) class provides a facility for creating and using bookmark objects. A **bookmark** provides a persistent reference to a file-system resource. When you resolve a bookmark, you obtain a URL to the resource’s current location. A bookmark’s association with a file-system resource (typically a file or folder) usually continues to work if the user moves or renames the resource, or if the user relaunches your app or restarts the system.
 
@@ -93,7 +93,7 @@ In a macOS app that adopts App Sandbox, you can use **security-scoped bookmarks*
 
 When you resolve a security-scoped bookmark, you get a security-scoped URL.
 
-##### Security-Scoped URLs
+### Security-Scoped URLs
 
 Security-scoped URLs provide access to resources outside an app’s sandbox. In macOS, you get access to security-scoped URLs when you resolve a security-scoped bookmark. In iOS, apps that *open* or *move* documents using a [`UIDocumentPickerViewController`](../UIKit/uidocumentpickerviewcontroller.md) also receive security-scoped URLs.
 
@@ -103,13 +103,13 @@ If `startAccessingSecurityScopedResource` (or `CFUrLStartAccessingSecurityScoped
 
 > ⚠️ **Warning**:  If you fail to relinquish your access when you no longer need a file-system resource, your app leaks kernel resources. If sufficient kernel resources are leaked, your app loses its ability to add file-system locations to its sandbox, using Powerbox, security-scoped bookmarks, or similar APIs, until relaunched.
 
-###### Security-Scoped URLs and String Paths
+#### Security-Scoped URLs and String Paths
 
 In a macOS app, when you copy a security-scoped URL, the copy has the security scope of the original. You gain access to the file-system resource (that the URL points to) just as you would with the original URL: by calling the [`startAccessingSecurityScopedResource()`](./nsurl/startaccessingsecurityscopedresource%28%29.md) method (or its Core Foundation equivalent).
 
 If you need a security-scoped URL’s path as a string value (as provided by the [`path`](./nsurl/path.md) method), such as to provide to an API that requires a string value, obtain the path from the URL as needed. Note, however, that a string-based path obtained from a security-scoped URL *does not* have security scope and you cannot use that string to obtain access to a security-scoped resource.
 
-##### iCloud Document Thumbnails
+### iCloud Document Thumbnails
 
 With OS X v10.10 and iOS 8.0, the NSURL class includes the ability to get and set document thumbnails as a resource property for iCloud documents. You can get a dictionary of [`NSImage`](../AppKit/nsimage.md) objects in macOS or [`UIImage`](../UIKit/uiimage.md) objects in iOS using the [`getResourceValue(_:forKey:)`](./nsurl/getresourcevalue%28_,forkey%29.md) or [`getPromisedItemResourceValue(_:forKey:)`](./nsurl/getpromiseditemresourcevalue%28_,forkey%29.md) methods.
 

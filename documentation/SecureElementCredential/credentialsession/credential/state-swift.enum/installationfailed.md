@@ -16,7 +16,7 @@ The credential installation failed.
 case installationFailed
 ```
 
-#### Discussion
+## Discussion
 
 A credential is only in this state following a failed installation. Prior to success or failure, the state is [`CredentialSession.Credential.State.installationPending`](./installationpending.md).
 

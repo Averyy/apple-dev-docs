@@ -19,7 +19,7 @@ var animationBehavior: NSWindow.AnimationBehavior { get set }
 @property NSWindowAnimationBehavior animationBehavior;
 ```
 
-#### Discussion
+## Discussion
 
 This property controls the automatic window animation behavior used when the [`orderFront(_:)`](./orderfront%28_%29.md) or [`orderOut(_:)`](./orderout%28_%29.md) methods are called. See [`NSWindow.AnimationBehavior`](./animationbehavior-swift.enum.md) for the possible values of this property.
 

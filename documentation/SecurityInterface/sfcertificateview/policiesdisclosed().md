@@ -19,7 +19,7 @@ func policiesDisclosed() -> Bool
 - (BOOL) policiesDisclosed;
 ```
 
-#### Discussion
+## Discussion
 
 The trust policy settings can be shown or hidden depending on whether the user clicks the disclosure triangle. This method returns the state of that disclosure triangle.
 

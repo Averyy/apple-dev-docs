@@ -25,7 +25,7 @@ struct CFPropertyListMutabilityOptions
 enum CFPropertyListMutabilityOptions : CFOptionFlags;
 ```
 
-#### Overview
+## Overview
 
 See [Property List Mutability Options](./property_list_mutability_options.md) for possible values.
 

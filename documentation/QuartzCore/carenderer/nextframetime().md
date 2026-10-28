@@ -24,11 +24,11 @@ func nextFrameTime() -> CFTimeInterval
 - (CFTimeInterval) nextFrameTime;
 ```
 
-#### Return Value
+## Return Value
 
 The time at which the next update should happen.
 
-#### Discussion
+## Discussion
 
 If infinite, no update needs to be scheduled yet. If `nextFrameTime` is the current frame time, a continuous animation is running and an update should be scheduled after an appropriate delay.
 

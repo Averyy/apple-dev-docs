@@ -19,7 +19,7 @@ class NSTextAttachmentCell
 @interface NSTextAttachmentCell : NSCell
 ```
 
-#### Overview
+## Overview
 
 This specification describes only those methods whose implementations have features that are particular to this class. For a general discussion of the protocol’s methods, see [`NSTextAttachmentCellProtocol`](./nstextattachmentcellprotocol.md).
 

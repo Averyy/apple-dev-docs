@@ -29,7 +29,7 @@ func targets(with params: MTREnergyEVSEClusterGetTargetsParams?) async throws ->
 - (void) getTargetsWithParams:(MTREnergyEVSEClusterGetTargetsParams *) params completion:(void (^)(MTREnergyEVSEClusterGetTargetsResponseParams *data, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Allows a client to retrieve the current set of charging targets.
 

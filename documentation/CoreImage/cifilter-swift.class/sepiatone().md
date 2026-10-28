@@ -29,11 +29,11 @@ class func sepiaTone() -> any CIFilter & CISepiaTone
 - [Simulating Scratchy Analog Film](../simulating-scratchy-analog-film.md)
 - [Processing an Image Using Built-in Filters](../processing-an-image-using-built-in-filters.md)
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the sepia tone filter to an image. The effect maps the colors of the `inputImage` to various shades of brown.
 

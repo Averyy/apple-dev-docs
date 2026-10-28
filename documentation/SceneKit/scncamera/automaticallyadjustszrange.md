@@ -25,7 +25,7 @@ var automaticallyAdjustsZRange: Bool { get set }
 @property (nonatomic) BOOL automaticallyAdjustsZRange;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`false`](../../Swift/false.md), specifying that the camera’s [`zNear`](./znear.md) and [`zFar`](./zfar.md) properties control its depth limits. If you change this property’s value to [`true`](../../Swift/true.md), SceneKit automatically adjusts the depth limits at render time to fit the bounding box of the scene. Changing the values of the [`zNear`](./znear.md) and [`zFar`](./zfar.md) properties automatically resets this property’s value to [`false`](../../Swift/false.md).
 

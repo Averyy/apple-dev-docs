@@ -15,11 +15,11 @@ Get the credential associated with a vfs_context_t.
 kauth_cred_t vfs_context_ucred(vfs_context_t ctx);
 ```
 
-#### Return Value
+## Return Value
 
 Process if available, NULL otherwise.
 
-#### Discussion
+## Discussion
 
 Succeeds if and only if the context has a thread, the thread has a task, and the task has a BSD proc.
 

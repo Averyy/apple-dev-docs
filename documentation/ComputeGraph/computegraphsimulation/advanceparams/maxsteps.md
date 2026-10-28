@@ -21,7 +21,7 @@ The maximum number of fixed-size steps per advance.
 var maxSteps: Int
 ```
 
-#### Discussion
+## Discussion
 
 This value is only used when [`mode`](../simulationrate-swift.struct/mode-swift.property.md) is [`ComputeGraphSimulation.SimulationRate.Mode.fixedFrequency`](../simulationrate-swift.struct/mode-swift.enum/fixedfrequency.md) or [`ComputeGraphSimulation.SimulationRate.Mode.fixedTime`](../simulationrate-swift.struct/mode-swift.enum/fixedtime.md).
 

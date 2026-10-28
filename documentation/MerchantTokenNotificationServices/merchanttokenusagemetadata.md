@@ -15,7 +15,7 @@ Metadata about where and how to retrieve the latest usage information.
 object MerchantTokenUsageMetadata
 ```
 
-#### Discussion
+## Discussion
 
 The `merchantPublicKey` includes encrypted metadata. When decrypted, you get a `data` JSON object that contains the `webServiceURL` of the merchant server, which hosts the usage information, and an opaque `authenticationToken`. The user’s devices present the `authenticationToken` when retrieving the latest usage information from the merchant server. This allows the merchant server to authenticate these requests.
 

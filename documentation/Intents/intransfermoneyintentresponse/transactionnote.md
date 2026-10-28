@@ -33,7 +33,7 @@ var transactionNote: String? { get set }
 @property (atomic, copy, readwrite, nullable) NSString * transactionNote;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify any notes to include with the transaction. If the intent object contained transaction notes, you typically copy those notes over into this property.
 

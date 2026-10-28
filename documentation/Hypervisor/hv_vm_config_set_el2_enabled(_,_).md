@@ -19,7 +19,7 @@ func hv_vm_config_set_el2_enabled(_ config: hv_vm_config_t, _ el2_enabled: Bool)
 extern hv_return_t hv_vm_config_set_el2_enabled(hv_vm_config_t config, bool el2_enabled);
 ```
 
-#### Return Value
+## Return Value
 
 [`HV_SUCCESS`](./hv_success.md) if the operation was successful, otherwise an error code specified in [`hv_return_t`](./hv_return_t.md).
 

@@ -24,7 +24,7 @@ class MTLFunctionStitchingGraph
 @interface MTLFunctionStitchingGraph : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`MTLFunctionStitchingGraph`](./mtlfunctionstitchinggraph.md) instance describes the function graph for a stitched function. A *stitched function* is a visible function you create by composing other Metal shader functions together in a function graph. A function stitching graph contains nodes for the function’s arguments and any functions it calls in the implementation. Data flows from the arguments to the end of the graph until the stitched function evaluates all of the graph’s nodes.
 
@@ -34,7 +34,7 @@ The graph in the figure below constructs a new function that adds numbers from t
 
 Create an [`MTLFunctionStitchingGraph`](./mtlfunctionstitchinggraph.md) instance for each stitched function you want to create. Configure its properties to describe the new function and the nodes that define its behavior, as described below. To create a new library with these stitched functions, see [`MTLStitchedLibraryDescriptor`](./mtlstitchedlibrarydescriptor.md).
 
-##### Configuring a function stitching graph
+### Configuring a function stitching graph
 
 To create a valid stitched function, the function stitching graph and shader code need to meet some requirements:
 

@@ -25,11 +25,11 @@ init(code: INSearchForNotebookItemsIntentResponseCode, userActivity: NSUserActiv
 - (instancetype) initWithCode:(INSearchForNotebookItemsIntentResponseCode) code userActivity:(NSUserActivity *) userActivity;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized response object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 After initializing the response object, put the search results into the appropriate property.
 

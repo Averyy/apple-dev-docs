@@ -19,11 +19,11 @@ func hv_vcpu_set_vtimer_mask(_ vcpu: hv_vcpu_t, _ vtimer_is_masked: Bool) -> hv_
 extern hv_return_t hv_vcpu_set_vtimer_mask(hv_vcpu_t vcpu, bool vtimer_is_masked);
 ```
 
-#### Return Value
+## Return Value
 
 [`HV_SUCCESS`](./hv_success.md) if the operation was successful, otherwise an error code specified in [`hv_return_t`](./hv_return_t.md).
 
-#### Discussion
+## Discussion
 
 After [`hv_vcpu_run(_:)`](./hv_vcpu_run%28_%29.md) returns with the exit reason `HV_EXIT_REASON_VTIMER_ACTIVATED`, the timer is masked automatically.
 

@@ -23,7 +23,7 @@ func setMaximumVolumeSliderImage(_ image: UIImage?, for state: UIControl.State)
 - (void) setMaximumVolumeSliderImage:(UIImage *) image forState:(UIControlState) state;
 ```
 
-#### Discussion
+## Discussion
 
 The orientation of the track image must match the orientation of the slider control. To facilitate the stretching of the image to fill the space between the thumb and end point, track images are usually defined in three regions. A stretchable region sits between two end cap regions. The end caps define the portions of the image that remain as is and aren’t stretched. The stretchable region is a 1-point wide area between the end caps that the system can replicate to make the image appear longer.
 

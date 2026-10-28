@@ -25,7 +25,7 @@ func la_matrix_to_double_buffer(_ buffer: UnsafeMutablePointer<Double>, _ buffer
 extern la_status_t la_matrix_to_double_buffer(double *buffer, la_count_t buffer_row_stride, la_object_t matrix);
 ```
 
-#### Discussion
+## Discussion
 
 Stores the elements of a matrix to a buffer.
 

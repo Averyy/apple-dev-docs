@@ -25,7 +25,7 @@ func insertPointer(_ item: UnsafeMutableRawPointer?, at index: Int)
 - (void) insertPointer:(void *) item atIndex:(NSUInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 Elements at and above `index`, including `NULL` values, slide higher.
 

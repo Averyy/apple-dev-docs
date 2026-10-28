@@ -21,7 +21,7 @@ Creates an error from a custom app intent convertible value.
 init(wrapping convertible: some CustomAppIntentErrorConvertible)
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this initializer for errors thrown from [`perform()`](../appintent/perform%28%29.md) that conform to [`CustomAppIntentErrorConvertible`](../customappintenterrorconvertible.md).
 

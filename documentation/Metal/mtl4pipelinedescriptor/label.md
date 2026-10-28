@@ -24,7 +24,7 @@ var label: String? { get set }
 @property (nonatomic, copy, nullable) NSString * label;
 ```
 
-#### Discussion
+## Discussion
 
 After you provide this label, you can use it to look up a pipeline state object by name in a binary archive.
 

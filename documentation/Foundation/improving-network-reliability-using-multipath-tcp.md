@@ -5,13 +5,13 @@
 
 Use the available radios in iOS devices to improve your app’s network reliability and performance.
 
-#### Overview
+## Overview
 
 When using your app on an iOS device, users are likely to move in and out of range of Wi-Fi, switching to cellular networks and back again.
 
 Multipath TCP improves the performance of your app when a user is in a location with limited Wi-Fi and while their device is transitioning to and from cellular data usage. In its default configuration, a URL session uses a single radio for a network call, preferring Wi-Fi over cellular. However, with Multipath TCP enabled, the URL session initiates the request on both radios and selects the more responsive of the two with a preference for Wi-Fi.
 
-##### Enable Multipath TCP in your app
+### Enable Multipath TCP in your app
 
 These steps are required:
 
@@ -22,7 +22,7 @@ While the user’s device is connected to a reliable Wi-Fi network, your app use
 
 > ❗ **Important**:  Multipath TCP requires the destination server to have Multipath TCP enabled. Many commercial load balancers already support Multipath TCP, and you can enable it in the configuration. For Linux-based servers, the Linux kernel with Multipath TCP is available at the [Multipath TCP](https://multipath-tcp.org) website.
 
-##### Limitations when using Multipath TCP with Wi-Fi Assist
+### Limitations when using Multipath TCP with Wi-Fi Assist
 
 Because Wi-Fi Assist is a user selectable, device-wide option, there are a few limitations when using Multipath TCP with that option enabled:
 

@@ -31,17 +31,17 @@ optional func paymentQueue(_ queue: SKPaymentQueue, shouldAddStorePayment paymen
 - [Promoting Apple In-App Purchases](../promoting-in-app-purchases.md)
 - [Supporting promoted Apple In-App Purchases in your app](../supporting-promoted-in-app-purchases-in-your-app.md)
 
-#### Return Value
+## Return Value
 
 Return `true` to continue the transaction in your app.
 
-#### Discussion
+## Discussion
 
 Return `false` to defer or cancel the transaction.
 
 If you return `false`, you can continue the transaction later by manually adding the [`SKPayment`](../skpayment.md) `payment` to the [`SKPaymentQueue`](../skpaymentqueue.md) `queue`.
 
-#### Discussion
+## Discussion
 
 The system calls this delegate method when the user starts an Apple In-App Purchase in the App Store, and the transaction continues in your app. Specifically, if your app is already installed, StoreKit calls this method automatically.
 

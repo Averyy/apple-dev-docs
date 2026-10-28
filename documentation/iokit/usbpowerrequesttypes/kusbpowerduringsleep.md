@@ -14,7 +14,7 @@
 kUSBPowerDuringSleep = 0
 ```
 
-#### Discussion
+## Discussion
 
 The power is to be used during sleep.
 

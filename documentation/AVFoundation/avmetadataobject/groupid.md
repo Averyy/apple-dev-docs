@@ -23,7 +23,7 @@ var groupID: Int { get }
 @property (readonly) NSInteger groupID;
 ```
 
-#### Discussion
+## Discussion
 
 When presented with a collection of [`AVMetadataObject`](../avmetadataobject.md) instances of different types, you may use the objects’ [`groupID`](./groupid.md) to combine them into groups. For example, a human body and face belonging to the same person have the same [`groupID`](./groupid.md).  If an object’s [`groupID`](./groupid.md) property is set to -1, it is invalid. When set to a value of >=0, it is unique across all object groups.
 

@@ -46,11 +46,11 @@ subscript<R>(slice: R) -> MLDataTable where R : RangeExpression, R.Bound == Int 
 subscript<S>(columnNames: S) -> MLDataTable where S : Sequence, S.Element == String { get }
 ```
 
-#### Return Value
+## Return Value
 
 A new [`MLUntypedColumn`](../mluntypedcolumn.md) with the specified name, if it exists; otherwise an invalid column.
 
-#### Overview
+## Overview
 
 Use this subscript to retrieve an [`MLUntypedColumn`](../mluntypedcolumn.md) or add a new one to the data table.
 

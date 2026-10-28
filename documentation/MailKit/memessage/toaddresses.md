@@ -19,7 +19,7 @@ var toAddresses: [MEEmailAddress] { get }
 @property (nonatomic, copy, readonly) NSArray<MEEmailAddress *> * toAddresses;
 ```
 
-#### Discussion
+## Discussion
 
 This property corresponds to the To header in the message.
 

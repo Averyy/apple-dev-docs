@@ -19,11 +19,11 @@ func smartDeleteRange(forProposedRange proposedCharRange: NSRange) -> NSRange
 - (NSRange) smartDeleteRangeForProposedRange:(NSRange) proposedCharRange;
 ```
 
-#### Return Value
+## Return Value
 
 An extended range that includes adjacent whitespace that should be deleted along with the proposed range in order to preserve proper spacing and punctuation of the text surrounding the deletion.
 
-#### Discussion
+## Discussion
 
 `NSTextView` uses this method as necessary; you can also use it in implementing your own methods that delete text, typically when the selection granularity is `NSSelectByWord`. To do so, invoke this method with the proposed range to delete, then actually delete the range returned. If placing text on the pasteboard, however, you should put only the characters from the proposed range onto the pasteboard.
 

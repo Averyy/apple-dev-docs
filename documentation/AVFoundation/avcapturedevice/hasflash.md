@@ -23,7 +23,7 @@ var hasFlash: Bool { get }
 @property (nonatomic, readonly) BOOL hasFlash;
 ```
 
-#### Discussion
+## Discussion
 
 This property is key-value observable.
 

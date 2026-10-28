@@ -21,7 +21,7 @@ Create a QUIC protocol for use in a protocol stack.
 init(alpn: [String])
 ```
 
-#### Discussion
+## Discussion
 
 The application layer protocol negotiation (ALPN) tokens describe the application protocol in use above QUIC.
 

@@ -25,7 +25,7 @@ var volume: Float { get set }
 @property (nonatomic) float volume;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property for frequent vloume changes; for example, a volume knob or fader. A value of `0.0` silences all audio while a value of `1.0` plays all audio at full volume.
 

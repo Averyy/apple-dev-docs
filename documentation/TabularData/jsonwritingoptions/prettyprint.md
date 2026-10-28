@@ -21,7 +21,7 @@ A Boolean value that indicates whether to split lines and indent the generated J
 var prettyPrint: Bool
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `false`.
 

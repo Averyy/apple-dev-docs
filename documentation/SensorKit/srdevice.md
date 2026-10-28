@@ -21,7 +21,7 @@ class SRDevice
 @interface SRDevice : NSObject
 ```
 
-#### Overview
+## Overview
 
 This class supports iOS and watchOS devices.
 

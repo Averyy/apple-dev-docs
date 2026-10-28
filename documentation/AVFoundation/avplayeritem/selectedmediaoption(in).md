@@ -25,11 +25,11 @@ func selectedMediaOption(in mediaSelectionGroup: AVMediaSelectionGroup) -> AVMed
 - (AVMediaSelectionOption *) selectedMediaOptionInMediaSelectionGroup:(AVMediaSelectionGroup *) mediaSelectionGroup;
 ```
 
-#### Return Value
+## Return Value
 
 An instance of [`AVMediaSelectionOption`](../avmediaselectionoption.md) that describes the currently selected option in the group.
 
-#### Discussion
+## Discussion
 
 If the value of the [`allowsEmptySelection`](../avmediaselectiongroup/allowsemptyselection.md) property of `mediaSelectionGroup` is [`true`](../../Swift/true.md), the currently selected option in the group may be `nil`.
 

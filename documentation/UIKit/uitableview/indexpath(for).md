@@ -23,7 +23,7 @@ func indexPath(for cell: UITableViewCell) -> IndexPath?
 - (NSIndexPath *) indexPathForCell:(UITableViewCell *) cell;
 ```
 
-#### Return Value
+## Return Value
 
 An index path representing the row and section of the cell, or `nil` if the index path is invalid.
 

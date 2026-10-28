@@ -24,7 +24,7 @@ var owningPortUID: String { get }
 @property (nonatomic, readonly) NSString * owningPortUID;
 ```
 
-#### Discussion
+## Discussion
 
 You can use the value of this property along with the value of the [`channelNumber`](./channelnumber.md) property to communicate with specific hardware channels.
 

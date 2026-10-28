@@ -23,7 +23,7 @@ var value: String? { get }
 
 - [Signing people in to their media accounts automatically](../../signing-people-in-to-media-apps-automatically.md)
 
-#### Discussion
+## Discussion
 
 Your app determines the contents of this property using a mechanism you determine fitting to identify the account. Only your app consumes this property and interprets its contents, for example, by ensuring it represents an account with a valid subscription.
 

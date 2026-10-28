@@ -24,11 +24,11 @@ class func parallelogramTile() -> any CIFilter & CIParallelogramTile
 + (CIFilter<CIParallelogramTile> *) parallelogramTileFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The tiled image.
 
-#### Discussion
+## Discussion
 
 This method applies the parallelogram tile filter to an image. The effect warps the input image to create a parallelogram and then tiles the result.
 

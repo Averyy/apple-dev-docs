@@ -20,7 +20,7 @@ unowned(unsafe) var delegate: AnyObject! { get set }
 @property (assign) id delegate;
 ```
 
-#### Return Value
+## Return Value
 
 The delegate.
 

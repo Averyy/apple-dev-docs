@@ -19,7 +19,7 @@ optional func fileOutput(_ output: AVCaptureFileOutput, willFinishRecordingTo fi
 - (void) captureOutput:(AVCaptureFileOutput *) output willFinishRecordingToOutputFileAtURL:(NSURL *) fileURL fromConnections:(NSArray<AVCaptureConnection *> *) connections error:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called when the file output will stop recording new samples to the file at [`outputFileURL`](../avcapturefileoutput/outputfileurl.md), either because [`startRecording(to:recordingDelegate:)`](../avcapturefileoutput/startrecording%28to,recordingdelegate%29.md) or [`stopRecording()`](../avcapturefileoutput/stoprecording%28%29.md) was called, or because an error (described by the error parameter) occurred (if no error occurred, the error parameter is `nil`).
 

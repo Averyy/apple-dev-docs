@@ -25,7 +25,7 @@ var isEnabled: Bool { get set }
 
 - [Presenting content on a connected display](../presenting-content-on-a-connected-display.md)
 
-#### Discussion
+## Discussion
 
 This value does not reflect the availability of the scene accessory, which is determined by the system.
 

@@ -36,7 +36,7 @@ static func minimum(_ value: Float) -> GenerationGuide<Float>
 static func minimum(_ value: Int) -> GenerationGuide<Int>
 ```
 
-#### Discussion
+## Discussion
 
 Use a `minimum` generation guide — whose bounds are inclusive — to ensure the model produces a value greater than or equal to some minimum value. For example, you can specify that all characters in your game start at level 0.75:
 

@@ -18,7 +18,7 @@ Invalidates all currently shown ranges.
 - (void) invalidate;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method causes the system find panel to update its current state, and might trigger a new search using [`performTextSearchWithQueryString:usingOptions:resultAggregator:`](../uitextsearching-53wjq/performtextsearchwithquerystring_usingoptions_resultaggregator_.md) immediately after.
 

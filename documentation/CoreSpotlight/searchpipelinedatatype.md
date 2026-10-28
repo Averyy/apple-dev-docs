@@ -19,7 +19,7 @@ Data types that a pipeline stage accepts or produces.
 enum SearchPipelineDataType
 ```
 
-#### Overview
+## Overview
 
 Use this type to specify the input and output values your [`CustomStage`](./customstage.md) supports. Foundation models use this information to validate that data can pass from one stage to the next.
 

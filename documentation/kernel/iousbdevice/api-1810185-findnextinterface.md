@@ -11,11 +11,11 @@ virtual IOUSBInterface *FindNextInterface(
  IOUSBFindInterfaceRequest *request);
 ```
 
-#### Return Value
+## Return Value
 
 Pointer to a matching IOUSBInterface, or NULL if none match. Note: The IOUSBInterface is NOT retained for the caller. If the caller wishes to continue to use the returned object, it should call retain() on that object.
 
-#### Overview
+## Overview
 
 return an pointer to an IOUSBInterface object satisfying the requirements specified in request, or NULL if there aren't any. the device must be configured for there to be any interfaces.
 

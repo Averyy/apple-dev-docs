@@ -19,7 +19,7 @@ static let currentVoice: NSSpeechSynthesizer.SpeechPropertyKey
 extern NSSpeechPropertyKey const NSSpeechCurrentVoiceProperty;
 ```
 
-#### Discussion
+## Discussion
 
 A dictionary object that contains the phoneme symbols and example words defined for the current synthesizer. Your application might use this information to show the user what symbols to use when entering phonemic text directly. See `NSSpeechPhonemeSymbolsProperty Dictionary Keys` for the keys you can use to specify values in this dictionary.
 

@@ -19,7 +19,7 @@ Creates a slice layer with the specified start, end, and stride.
 + (instancetype) sliceLayerWithStart:(NSArray<NSNumber *> *) start end:(NSArray<NSNumber *> *) end stride:(NSArray<NSNumber *> *) stride;
 ```
 
-#### Return Value
+## Return Value
 
 A slice layer.
 

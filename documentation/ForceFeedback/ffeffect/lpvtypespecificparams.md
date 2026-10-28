@@ -20,7 +20,7 @@ var lpvTypeSpecificParams: UnsafeMutableRawPointer!
 void * lpvTypeSpecificParams;
 ```
 
-#### Discussion
+## Discussion
 
 If the effect is of type FFEFT_CONDITION, this member contains a pointer to an array of FFCONDITION structures that define the parameters for the condition. A single structure may be used, in which case the condition is applied in the direction specified in the rglDirection array. Otherwise, there must be one structure for each axis, in the same order as the axes in rgdwAxes array. If a structure is supplied for each axis, the effect should not be rotated; you should use the following values in the rglDirection array:
 

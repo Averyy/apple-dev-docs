@@ -19,11 +19,11 @@ class func boldSystemFont(ofSize fontSize: CGFloat) -> NSFont
 + (NSFont *) boldSystemFontOfSize:(CGFloat) fontSize;
 ```
 
-#### Return Value
+## Return Value
 
 A font object of the specified size.
 
-#### Discussion
+## Discussion
 
 If `fontSize` is 0 or negative, returns the boldface system font at the default size.
 

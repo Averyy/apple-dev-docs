@@ -21,11 +21,11 @@ Returns a custom format style that portrays the year of the calendar system of t
 static func padded(_ length: Int) -> Date.FormatStyle.Symbol.Year
 ```
 
-#### Return Value
+## Return Value
 
 A custom year format style that portrays the year of the calendar system with the provided length.
 
-#### Discussion
+## Discussion
 
 Use [`padded(_:)`](./padded%28_%29.md) to display a year using three or more digits, zero-padded if necessary. For example, `002`, `020`, `201`, `2017`.
 

@@ -20,7 +20,7 @@ A time value that indicates how closely playback follows the latest live stream 
 var minimumTimeOffsetFromLive: CMTime { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property value is only valid when working with live streaming content. For non-live assets, this property value is [`invalid`](../../CoreMedia/cmtime/invalid.md).
 

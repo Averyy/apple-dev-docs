@@ -30,7 +30,7 @@ extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierActiveEnergyBurned
 - [Dividing a HealthKit workout into activities](../dividing-a-healthkit-workout-into-activities.md)
 - [Running workout sessions](../running-workout-sessions.md)
 
-#### Discussion
+## Discussion
 
 Active energy is the energy that the user has burned due to physical activity and exercise. These samples should not include the resting energy burned during the sample’s duration. Use the health store’s [`splitTotalEnergy(_:start:end:resultsHandler:)`](../hkhealthstore/splittotalenergy%28_,start,end,resultshandler%29.md) method to split a workout’s total energy burned into the active and resting portions, and then save each portion in its own sample. The system automatically records active energy samples on Apple Watch.
 

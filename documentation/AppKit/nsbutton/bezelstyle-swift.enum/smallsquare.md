@@ -19,7 +19,7 @@ case smallSquare
 NSBezelStyleSmallSquare
 ```
 
-#### Discussion
+## Discussion
 
 A square style button (sometimes referred to as a “gradient button”) initiates an action related to a view, like adding or removing rows in a table.
 

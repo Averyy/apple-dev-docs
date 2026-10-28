@@ -19,7 +19,7 @@ convenience init(wrappingLabelWithString stringValue: String)
 + (instancetype) wrappingLabelWithString:(NSString *) stringValue;
 ```
 
-#### Return Value
+## Return Value
 
 A multiline text field that displays the specified string.
 

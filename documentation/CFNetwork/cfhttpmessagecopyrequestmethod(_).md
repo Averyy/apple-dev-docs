@@ -24,7 +24,7 @@ func CFHTTPMessageCopyRequestMethod(_ request: CFHTTPMessage) -> Unmanaged<CFStr
 extern CFStringRefCFHTTPMessageCopyRequestMethod(CFHTTPMessageRef request);
 ```
 
-#### Return Value
+## Return Value
 
 A `CFString` object containing a copy of the message’s request method, or `NULL` if there was a problem creating the object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

@@ -25,7 +25,7 @@ var distinguishedNames: [Data]? { get }
 @property (copy, readonly, nullable) NSArray<NSData *> * distinguishedNames;
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` if the authentication method of the protection space is not client certificate. The returned issuing authorities are encoded with Distinguished Encoding Rules (DER).
 

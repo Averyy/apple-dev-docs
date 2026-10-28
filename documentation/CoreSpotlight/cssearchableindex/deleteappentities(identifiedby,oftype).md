@@ -19,7 +19,7 @@ Deletes entities with the specified identifiers and type from the current index.
 func deleteAppEntities<Entity>(identifiedBy identifiers: [Entity.ID], ofType type: Entity.Type) async throws where Entity : IndexedEntity
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to remove only the specified entities from the current index. You might call this method as a precursor to indexing a new set of entity objects. To remove all entities of the specified type, call the [`deleteAppEntities(ofType:)`](./deleteappentities%28oftype%29.md) method instead.
 

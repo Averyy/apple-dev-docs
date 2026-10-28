@@ -19,7 +19,7 @@ var javaScriptContext: JSContext! { get }
 @property (nonatomic, strong, readonly) JSContext * javaScriptContext;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to bridge between the WebKit and Objective-C JavaScriptCore API.
 

@@ -25,7 +25,7 @@ func compare(_ decimalNumber: NSNumber) -> ComparisonResult
 - (NSComparisonResult) compare:(NSNumber *) decimalNumber;
 ```
 
-#### Return Value
+## Return Value
 
 `NSOrderedAscending` if the value of `decimalNumber` is greater than the receiver; `NSOrderedSame` if they’re equal; and `NSOrderedDescending` if the value of `decimalNumber` is less than the receiver.
 

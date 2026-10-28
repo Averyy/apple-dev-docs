@@ -22,7 +22,7 @@ case unsupported
 SKANErrorUnsupported
 ```
 
-#### Discussion
+## Discussion
 
 For information about supported features by version number, see [SKAdNetwork release notes](../../skadnetwork-release-notes.md). For example, to provide view-through ads, use SKAdNetwork version 2.2 or later.
 

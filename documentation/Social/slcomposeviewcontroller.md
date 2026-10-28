@@ -21,7 +21,7 @@ class SLComposeViewController
 @interface SLComposeViewController : UIViewController
 ```
 
-#### Overview
+## Overview
 
 Use the [`isAvailable(forServiceType:)`](./slcomposeviewcontroller/isavailable%28forservicetype%29.md) class method to check if a service account, such as Twitter, is set up and reachable before presenting this view to the user.
 

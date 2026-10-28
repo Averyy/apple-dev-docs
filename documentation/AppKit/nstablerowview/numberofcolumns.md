@@ -19,7 +19,7 @@ var numberOfColumns: Int { get }
 @property (readonly) NSInteger numberOfColumns;
 ```
 
-#### Discussion
+## Discussion
 
 The number of columns may not be equal to the number of columns in the enclosing [`NSTableView`](../nstableview.md), if this row view is a group style and has a single view that spans the entire width of the row.
 

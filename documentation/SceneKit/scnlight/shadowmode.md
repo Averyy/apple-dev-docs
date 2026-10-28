@@ -25,7 +25,7 @@ var shadowMode: SCNShadowMode { get set }
 @property (nonatomic) SCNShadowMode shadowMode;
 ```
 
-#### Discussion
+## Discussion
 
 The default mode is [`SCNShadowMode.forward`](../scnshadowmode/forward.md) in iOS and in macOS 10.10 or later. In OS X v10.9 or earlier, the default mode is [`SCNShadowMode.deferred`](../scnshadowmode/deferred.md).
 

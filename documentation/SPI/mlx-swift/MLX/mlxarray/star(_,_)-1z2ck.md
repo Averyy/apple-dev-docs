@@ -21,7 +21,7 @@ static func * (lhs: MLXArray, rhs: MLXArray) -> MLXArray
 
 - [Converting From Python](../converting-python.md)
 
-#### Discussion
+## Discussion
 
 Multiply two arrays with [Numpy Style Broadcasting](../broadcasting.md).
 
@@ -34,7 +34,7 @@ let b = MLXArray([4, 5, 6])
 let r = a * b * 7
 ```
 
-##### See Also
+### See Also
 
 - [Arithmetic](../arithmetic.md)
 - [`multiply(_:_:stream:)`](../multiply%28_,_,stream%29.md)

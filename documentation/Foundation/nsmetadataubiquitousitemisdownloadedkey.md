@@ -24,7 +24,7 @@ let NSMetadataUbiquitousItemIsDownloadedKey: String
 extern NSString * const NSMetadataUbiquitousItemIsDownloadedKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value is an [`NSNumber`](./nsnumber.md) object that contains a Boolean indicating whether the current version of the item has been downloaded and is available locally.
 

@@ -21,7 +21,7 @@ If `prefix` is a prefix of `self`, removes it and returns `true`. Otherwise retu
 mutating func removePrefix(_ prefix: FilePath) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 Example:
 

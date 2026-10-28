@@ -22,7 +22,7 @@ protocol INGetUserCurrentRestaurantReservationBookingsIntentHandling : NSObjectP
 @protocol INGetUserCurrentRestaurantReservationBookingsIntentHandling <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Use the methods of the [`INGetUserCurrentRestaurantReservationBookingsIntentHandling`](./ingetusercurrentrestaurantreservationbookingsintenthandling.md) protocol to resolve, confirm, and handle requests to get the reservations associated with the current user. The system delivers an [`INGetUserCurrentRestaurantReservationBookingsIntent`](./ingetusercurrentrestaurantreservationbookingsintent.md) object to your handler when it needs the user’s reservations. Use that intent object to determine whether to retrieve all of the user’s reservations or only some of them. Your Intents extension must be able to fetch the user’s reservations from your systems.
 

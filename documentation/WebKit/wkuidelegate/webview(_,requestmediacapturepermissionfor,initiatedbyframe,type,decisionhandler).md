@@ -27,7 +27,7 @@ optional func webView(_ webView: WKWebView, decideMediaCapturePermissionsFor ori
 - (void) webView:(WKWebView *) webView requestMediaCapturePermissionForOrigin:(WKSecurityOrigin *) origin initiatedByFrame:(WKFrameInfo *) frame type:(WKMediaCaptureType) type decisionHandler:(void (^)(enum WKPermissionDecision)) decisionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t implement this method in your delegate, the system returns [`WKPermissionDecision.prompt`](../wkpermissiondecision/prompt.md).
 

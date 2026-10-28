@@ -19,7 +19,7 @@ case mediaPlayerFailed
 WatchKitMediaPlayerError
 ```
 
-#### Discussion
+## Discussion
 
 WatchKit reports this error when it’s unable to play a media file.
 

@@ -18,7 +18,7 @@ nonisolated
 struct BorderedButtonMenuStyle
 ```
 
-#### Overview
+## Overview
 
 Use [`borderedButton`](./menustyle/borderedbutton.md) to construct this style.
 

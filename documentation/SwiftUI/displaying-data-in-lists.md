@@ -5,7 +5,7 @@
 
 Visualize collections of data with platform-appropriate appearance.
 
-#### Overview
+## Overview
 
 Displaying a collection of data in a vertical list is a common requirement in many apps. Whether it’s a list of contacts, a schedule of events, an index of categories, or a shopping list, you’ll often find a use for a [`List`](./list.md).
 
@@ -17,7 +17,7 @@ By default, list views also apply platform-appropriate styling to their elements
 
 The code in this article shows the use of list views to display a company’s staff directory. Each section enhances the usefulness of the list, by adding custom cells, splitting the list into sections, and using the list selection to navigate to a detail view.
 
-##### Prepare your data for iteration
+### Prepare your data for iteration
 
 The most common use of [`List`](./list.md) is for representing collections of information in your data model. The following example defines a `Person` as an [`Identifiable`](../Swift/identifiable.md) type with the properties `name` and `phoneNumber`. An array called `staff` contains two instances of this type.
 
@@ -54,7 +54,7 @@ Members of a list must be uniquely identifiable from one another. Unique identif
 
 > ❗ **Important**: The values you use for [`Identifiable`](../Swift/identifiable.md) data must be unique. Using a [`UUID`](../Foundation/uuid.md) or a database row identifier are both good choices, whereas using data like a person’s name or phone number could potentially contain duplicates.
 
-##### Display data inside a row
+### Display data inside a row
 
 Each row inside a [`List`](./list.md) must be a SwiftUI [`View`](./view.md). You may be able to represent your data with a single view such as an [`Image`](./image.md) or [`Text`](./text.md) view, or you may need to define a custom view to compose several views into something more complex.
 
@@ -93,7 +93,7 @@ struct StaffList: View {
 
 For more information on composing the types of views commonly used inside list rows, see [Building layouts with stack views](./building-layouts-with-stack-views.md).
 
-##### Represent data hierarchy with sections
+### Represent data hierarchy with sections
 
 [`List`](./list.md) views can also display data with a level of hierarchy, grouping associated data into sections.
 
@@ -145,7 +145,7 @@ List {
 
 > **Note**: If your data hierarchy is too deep to represent with a single level of sections and rows, [`OutlineGroup`](./outlinegroup.md) and [`DisclosureGroup`](./disclosuregroup.md) might be a better fit. These views use a disclosure metaphor to allow someone to drill down to an arbitrary depth in the hierarchy.
 
-##### Use Lists for Navigation
+### Use Lists for Navigation
 
 Using a [`NavigationLink`](./navigationlink.md) within a [`List`](./list.md) contained inside a [`NavigationStack`](./navigationstack.md) adds platform-appropriate visual styling for navigation. SwiftUI navigates to a destination view you provide when a person chooses a list item.
 

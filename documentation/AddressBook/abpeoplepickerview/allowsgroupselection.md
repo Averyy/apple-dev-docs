@@ -19,7 +19,7 @@ var allowsGroupSelection: Bool { get set }
 @property (nonatomic, assign) BOOL allowsGroupSelection;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the user can to select entire groups. If [`false`](../../Swift/false.md), the user is required to select at least one person in the group.
 

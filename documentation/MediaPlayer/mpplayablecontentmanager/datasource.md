@@ -24,7 +24,7 @@ weak var dataSource: (any MPPlayableContentDataSource)? { get set }
 @property (nonatomic, weak, nullable) id<MPPlayableContentDataSource> dataSource;
 ```
 
-#### Discussion
+## Discussion
 
 This property ensures support for random access of media items through the [`MPPlayableContentDataSource`](../mpplayablecontentdatasource.md) protocol, whose methods are callable at any point during the app’s lifetime. Set this property as soon as the data is available.
 

@@ -19,11 +19,11 @@ func selectItem(withTag tag: Int) -> Bool
 - (BOOL) selectItemWithTag:(NSInteger) tag;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the item was successfully selected; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 If no item with the specified tag is found, this method returns [`false`](../../Swift/false.md) and leaves the menu state unchanged.
 

@@ -16,7 +16,7 @@ struct vnop_revoke_args {
 };
 ```
 
-#### Discussion
+## Discussion
 
 VNOP_EXCHANGE() is currently only called by the exchangedata() system call. It will only be applied to files on the same volume.
 

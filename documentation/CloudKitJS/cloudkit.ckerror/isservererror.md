@@ -15,7 +15,7 @@ A Boolean value indicating whether a server error occurred.
 readonly attribute Boolean isServerError;
 ```
 
-#### Discussion
+## Discussion
 
 `true` if a server error occurred; otherwise, `false`.
 

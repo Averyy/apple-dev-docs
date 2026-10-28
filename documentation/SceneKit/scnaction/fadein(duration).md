@@ -25,11 +25,11 @@ class func fadeIn(duration sec: TimeInterval) -> SCNAction
 + (SCNAction *) fadeInWithDuration:(NSTimeInterval) sec;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 When the action executes, the node’s [`opacity`](../scnnode/opacity.md) property animates from its current value to `1.0`.
 

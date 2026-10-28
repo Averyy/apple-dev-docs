@@ -22,7 +22,7 @@ nonisolated
 func toolbarMinimizationRestoration(_ restoration: ToolbarMinimizationRestoration, for bars: ToolbarPlacement...) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier alongside [`toolbarMinimizationBehavior(_:for:)`](./toolbarminimizationbehavior%28_,for%29.md) to customize when a minimized bar restores. By default, the bar restores when the user reverses scroll direction. Use [`atScrollEdge`](../toolbarminimizationrestoration/atscrolledge.md) to restrict restoration to when the scroll view’s content reaches the scroll edge – appropriate for screens where the bar is mostly chrome that doesn’t need to follow the user.
 

@@ -24,7 +24,7 @@ static let matrix: UIFontDescriptor.AttributeName
 extern UIFontDescriptorAttributeName const UIFontDescriptorMatrixAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value is a [`CGAffineTransform`](../../../CoreFoundation/cgaffinetransform.md) instance that specifies the font’s transformation matrix. The default value is the identity matrix.
 

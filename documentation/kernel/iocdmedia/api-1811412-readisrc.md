@@ -11,11 +11,11 @@ virtual IOReturn readISRC(
  CDISRCisrc);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the status of the operation.
 
-#### Overview
+## Overview
 
 Read the International Standard Recording Code for the specified track.
 

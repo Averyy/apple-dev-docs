@@ -18,7 +18,7 @@ A diagnostic report for an app launch.
 struct AppLaunchDiagnostic
 ```
 
-#### Discussion
+## Discussion
 
 This captures a [`CallStackTree`](./callstacktree.md) and a `launchDuration` measurement for app launches that exceed the diagnostic threshold.
 

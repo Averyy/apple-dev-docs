@@ -19,7 +19,7 @@ var lineCapStyle: NSBezierPath.LineCapStyle { get set }
 @property NSLineCapStyle lineCapStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The line cap style specifies the shape of the endpoints on an open path when stroked. The default value of this property is the value returned by the [`defaultLineCapStyle`](./defaultlinecapstyle.md) method.
 

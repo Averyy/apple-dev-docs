@@ -23,7 +23,7 @@ var currentSource: AVCaptureTimecode.Source { get }
 @property (nonatomic, readonly) AVCaptureTimecodeSource * currentSource;
 ```
 
-#### Discussion
+## Discussion
 
 Indicates the active timecode source, as defined in the `AVCaptureTimecodeSynchronizationSourceType` enum. If an [`AVCaptureTimecodeGenerator`](../avcapturetimecodegenerator.md) becomes disconnected from its source, it continues generating timecodes using historical data from its ring buffer. This approach allows the generator to maintain synchronization during brief disruptions, as is common in cinema workflows where timecode signals may experience discontinuities.
 

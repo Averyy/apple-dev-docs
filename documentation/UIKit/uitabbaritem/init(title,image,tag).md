@@ -23,7 +23,7 @@ convenience init(title: String?, image: UIImage?, tag: Int)
 - (instancetype) initWithTitle:(NSString *) title image:(UIImage *) image tag:(NSInteger) tag;
 ```
 
-#### Discussion
+## Discussion
 
 Use `nil` for `title` or `image` to not display that element.
 

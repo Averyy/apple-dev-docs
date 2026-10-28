@@ -27,7 +27,7 @@ class UICollectionViewDropProposal
 
 - [Supporting Drag and Drop in Collection Views](./supporting-drag-and-drop-in-collection-views.md)
 
-#### Overview
+## Overview
 
 Create instances of this class in the [`collectionView(_:dropSessionDidUpdate:withDestinationIndexPath:)`](./uicollectionviewdropdelegate/collectionview%28_,dropsessiondidupdate,withdestinationindexpath%29.md) method of your drop delegate object. You create drop proposals to let the collection view know how you intend to handle a drop at the currently specified location. The collection view uses that information to provide appropriate visual feedback to the user.
 

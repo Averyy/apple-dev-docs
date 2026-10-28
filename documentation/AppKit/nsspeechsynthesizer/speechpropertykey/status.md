@@ -19,7 +19,7 @@ static let status: NSSpeechSynthesizer.SpeechPropertyKey
 extern NSSpeechPropertyKey const NSSpeechStatusProperty;
 ```
 
-#### Discussion
+## Discussion
 
 A dictionary that contains speech-status information for the synthesizer. See [`NSSpeechSynthesizer.SpeechPropertyKey.StatusKey`](./statuskey.md) for a description of the keys present in the dictionary.
 

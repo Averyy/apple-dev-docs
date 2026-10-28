@@ -17,11 +17,11 @@ Finds the next keychain item matching the given search criteria.
 OSStatus SecKeychainSearchCopyNext(SecKeychainSearchRef searchRef, SecKeychainItemRef*itemRef);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This function is deprecated. The common security services manager module is no longer used.
 

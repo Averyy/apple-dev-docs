@@ -28,7 +28,7 @@ static let accented: WidgetRenderingMode
 - [Migrating ClockKit complications to WidgetKit](../converting-a-clockkit-app.md)
 - [Updating your widgets for visionOS](../updating-your-widgets-for-visionos.md)
 
-#### Discussion
+## Discussion
 
 In watchOS, the system displays accented widget-based complications on many watch faces. For example, when the user selects a color, the Infograph watch face uses white for the default group, and the user-selected color for the accent. However, these colors can change from face to face. In the X-Large watch face, the system applies the selected color to the default group, and colors the accent group white. Other faces use system-defined colors for both groups; for example, the Solar Dial face defines both an accent and a default color, and changes these colors based on the time of day.
 

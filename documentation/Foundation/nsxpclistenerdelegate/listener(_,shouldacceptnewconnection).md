@@ -25,7 +25,7 @@ optional func listener(_ listener: NSXPCListener, shouldAcceptNewConnection newC
 - (BOOL) listener:(NSXPCListener *) listener shouldAcceptNewConnection:(NSXPCConnection *) newConnection;
 ```
 
-#### Discussion
+## Discussion
 
 To accept the connection, first configure the connection if desired, then call [`resume()`](../nsxpcconnection/resume%28%29.md) on the new connection, then return [`true`](../../Swift/true.md).
 

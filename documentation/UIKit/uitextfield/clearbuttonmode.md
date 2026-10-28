@@ -23,7 +23,7 @@ var clearButtonMode: UITextField.ViewMode { get set }
 @property (nonatomic) UITextFieldViewMode clearButtonMode;
 ```
 
-#### Discussion
+## Discussion
 
 The standard clear button displays at the right side of the text field when the text field has contents, providing a way for the user to remove text quickly.
 

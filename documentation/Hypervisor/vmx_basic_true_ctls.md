@@ -19,7 +19,7 @@ var VMX_BASIC_TRUE_CTLS: UInt { get }
 VMX_BASIC_TRUE_CTLS
 ```
 
-#### Discussion
+## Discussion
 
 The hardware must return this bit as a 1 in order to create any VM using the framework.
 

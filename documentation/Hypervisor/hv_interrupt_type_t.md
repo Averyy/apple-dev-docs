@@ -19,7 +19,7 @@ struct hv_interrupt_type_t
 typedef enum { ... } hv_interrupt_type_t;
 ```
 
-#### Overview
+## Overview
 
 To raise interrupts on a vCPU, call [`hv_vcpu_set_pending_interrupt(_:_:_:)`](./hv_vcpu_set_pending_interrupt%28_,_,_%29.md) prior to calling [`hv_vcpu_run(_:)`](./hv_vcpu_run%28_%29.md).
 

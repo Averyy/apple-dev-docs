@@ -24,7 +24,7 @@ enum AudioFilePermissions
 enum AudioFilePermissions : SInt8;
 ```
 
-#### Overview
+## Overview
 
 Use these flags with the [`AudioFileOpenURL(_:_:_:_:)`](./audiofileopenurl%28_,_,_,_%29.md) and [`AudioFileOpen`](./audiofileopen.md) functions.
 

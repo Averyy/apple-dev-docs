@@ -23,7 +23,7 @@ class UIToolbar
 @interface UIToolbar : UIView
 ```
 
-#### Overview
+## Overview
 
 To create toolbar items, use the [`UIBarButtonItem`](./uibarbuttonitem.md) class. To add toolbar items to a toolbar, use the [`setItems(_:animated:)`](./uitoolbar/setitems%28_,animated%29.md) method.
 
@@ -38,7 +38,7 @@ When the system presents the toolbar with Liquid Glass:
 
 > **Note**: In iOS 18 and earlier, you use the methods listed in [Customizing appearance](./uitoolbar.md#Customizing-appearance) to customize the appearance of toolbars. You send the setter messages to the appearance proxy (`UIToolbar.appearance()` in Swift or `[UIToolbar appearance]` in Objective-C) to customize all toolbars, or to a specific `UIToolbar` instance. If a property is dependent on the bar metrics, specify a value for [`UIBarMetrics.default`](./uibarmetrics/default.md) as well as for [`UIBarMetrics.compact`](./uibarmetrics/compact.md).
 
-##### Split the toolbar’s shared background
+### Split the toolbar’s shared background
 
 By default, the system organizes all of the buttons you provide into one grouping that shares a background in the toolbar. To split buttons into different groupings with separate shared backgrounds, add [`fixedSpace()`](./uibarbuttonitem/fixedspace%28%29.md) between buttons to indicate where you want to split the shared background.
 

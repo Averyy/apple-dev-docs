@@ -20,7 +20,7 @@ A handle to an attribute definition stored in a layer.
 struct Spec
 ```
 
-#### Overview
+## Overview
 
 `USDPrim.Attribute.Spec` is a struct but acts as a handle into data owned by a [`USDLayer`](../../usdlayer.md). Mutations write through to the layer.
 

@@ -19,7 +19,7 @@ The current configuration state of the cell.
 @property (nonatomic, readonly) UICellConfigurationState * configurationState;
 ```
 
-#### Discussion
+## Discussion
 
 To add your own custom state, see [`UIConfigurationStateCustomKey`](../uiconfigurationstatecustomkey.md).
 

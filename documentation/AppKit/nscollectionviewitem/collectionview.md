@@ -19,7 +19,7 @@ weak var collectionView: NSCollectionView? { get }
 @property (weak, readonly, nullable) NSCollectionView * collectionView;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property as a convenient way to access the collection view that owns the item.
 

@@ -12,7 +12,7 @@ void SendNotification_DeviceRemoved (
  void );
 ```
 
-#### Overview
+## Overview
 
 Method called by subclasses when a device is physically removed from the bus.
 

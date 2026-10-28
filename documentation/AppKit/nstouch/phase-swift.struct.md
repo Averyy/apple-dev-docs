@@ -19,7 +19,7 @@ struct Phase
 enum NSTouchPhase : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 These constants are used by [`phase`](./phase-swift.property.md).
 

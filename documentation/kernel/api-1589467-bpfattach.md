@@ -13,7 +13,7 @@
 void bpfattach(ifnet_t interface, u_int data_link_type, u_int header_length);
 ```
 
-#### Discussion
+## Discussion
 
 Registers an interface with BPF. This allows bpf devices to attach to your interface to capture packets. Your interface will be unregistered automatically when your interface is detached.
 

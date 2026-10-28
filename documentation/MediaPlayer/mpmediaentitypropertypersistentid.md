@@ -24,7 +24,7 @@ let MPMediaEntityPropertyPersistentID: String
 extern NSString * const MPMediaEntityPropertyPersistentID;
 ```
 
-#### Discussion
+## Discussion
 
 This value contains a [`uint64_t`](../kernel/uint64_t.md) (unsigned long long) which you can use to build a media property predicate, as described in [`MPMediaPropertyPredicate`](./mpmediapropertypredicate.md).
 

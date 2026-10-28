@@ -23,7 +23,7 @@ init(items: [any UIDynamicItem], mode: UIPushBehavior.Mode)
 - (instancetype) initWithItems:(NSArray<id<UIDynamicItem>> *) items mode:(UIPushBehaviorMode) mode;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized push behavior, or `nil` if there was a problem initializing the object.
 

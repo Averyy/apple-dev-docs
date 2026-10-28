@@ -15,11 +15,11 @@ Gets the sample rate of the clock device.
 double GetSampleRate();
 ```
 
-#### Return Value
+## Return Value
 
 The sample rate for the clock device.
 
-#### Discussion
+## Discussion
 
 This method synchronizes by using the work queue created by the object.
 

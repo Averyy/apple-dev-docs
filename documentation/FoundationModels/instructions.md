@@ -29,7 +29,7 @@ struct Instructions
 - [Running a Core AI model in a Foundation Models session](./running-a-core-ai-model-in-a-foundation-models-session.md)
 - [Supporting languages and locales with Foundation Models](./supporting-languages-and-locales-with-foundation-models.md)
 
-#### Overview
+## Overview
 
 You typically provide instructions to define the role and behavior of the model. In the code below, the instructions specify that the model replies with topics rather than, for example, a recipe:
 

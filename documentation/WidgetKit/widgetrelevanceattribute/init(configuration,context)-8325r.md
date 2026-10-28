@@ -22,7 +22,7 @@ init(configuration: Configuration, context: RelevantContext)
 
 Available when `Configuration` inherits `INIntent`.
 
-#### Discussion
+## Discussion
 
 For example, a weather widget could specify that a configuration for a specific location is relevant for a the relevant context at that specific location.
 

@@ -25,11 +25,11 @@ String getAllResponseHeaders();
 DOMString getAllResponseHeaders();
 ```
 
-#### Return Value
+## Return Value
 
 A string representation of the response headers.
 
-#### Discussion
+## Discussion
 
 Returns `null` if no responses have been received.
 

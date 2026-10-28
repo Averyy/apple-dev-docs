@@ -32,7 +32,7 @@ func findPlayersForHostedMatch() async throws -> [GKPlayer]
 
 - [Creating activities for your game](../creating-activities-for-your-game.md)
 
-#### Discussion
+## Discussion
 
 GameKit creates a classic server hosted match making request with the activity’s party code and other information, and returns the players in the completion handler or any error that occurred. An error occurs if this activity doesn’t support party code, or has unsupported range of players, which is used to be configured as match request’s `minPlayers` and `maxPlayers`.
 

@@ -23,7 +23,7 @@ var falloff: CGFloat { get set }
 @property (nonatomic, assign) CGFloat falloff;
 ```
 
-#### Discussion
+## Discussion
 
 This property defines how quickly the field strength diminishes as the distance from the field’s center increases. Falloff is not applied until the distance between objects is greater than the value in the [`minimumRadius`](./minimumradius.md) property.
 

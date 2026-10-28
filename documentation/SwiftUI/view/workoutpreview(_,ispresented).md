@@ -20,7 +20,7 @@ nonisolated
 func workoutPreview(_ workout: WorkoutPlan, isPresented: Binding<Bool>) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 struct WorkoutPreviewer: View {

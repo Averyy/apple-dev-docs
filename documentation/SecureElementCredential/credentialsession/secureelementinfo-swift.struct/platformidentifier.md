@@ -16,7 +16,7 @@ A unique identifier that describes the hardware and operating system combination
 let platformIdentifier: String
 ```
 
-#### Discussion
+## Discussion
 
 Use this string to verify any Secure Element OS and hardware composite certification requirements.
 

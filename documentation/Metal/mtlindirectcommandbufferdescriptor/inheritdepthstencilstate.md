@@ -24,7 +24,7 @@ var inheritDepthStencilState: Bool { get set }
 @property (nonatomic, readwrite) BOOL inheritDepthStencilState;
 ```
 
-#### Discussion
+## Discussion
 
 The property’s default value is [`true`](../../Swift/true.md).
 

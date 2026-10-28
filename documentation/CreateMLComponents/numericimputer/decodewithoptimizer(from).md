@@ -23,7 +23,7 @@ func decodeWithOptimizer(from decoder: inout any EstimatorDecoder) throws -> Num
 
 Available when `Element` conforms to `BinaryFloatingPoint`, `Decodable`, and `Encodable`.
 
-#### Return Value
+## Return Value
 
 The decoded transformer.
 

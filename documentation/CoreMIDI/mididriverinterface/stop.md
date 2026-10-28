@@ -25,7 +25,7 @@ var Stop: (MIDIDriverRef) -> OSStatus
 int (*)(struct MIDIDriverInterface **) Stop;
 ```
 
-#### Discussion
+## Discussion
 
 You should terminate all I/O operations that you started.
 

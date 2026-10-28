@@ -23,7 +23,7 @@ var identifier: String { get }
 @property (nonatomic, copy, readonly) NSString * identifier;
 ```
 
-#### Discussion
+## Discussion
 
 Use a string that’s unique among the activity items attached to a particular activity.
 

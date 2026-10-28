@@ -19,7 +19,7 @@ var emailAddress: String? { get }
 @property (nonatomic, readonly, nullable) NSString * emailAddress;
 ```
 
-#### Return Value
+## Return Value
 
 The email address of an identity or `nil` if none exists.
 

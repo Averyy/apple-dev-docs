@@ -22,7 +22,7 @@ var qualityPrioritization: VTSuperResolutionScalerConfiguration.QualityPrioritiz
 @property (nonatomic, readonly) VTSuperResolutionScalerConfigurationQualityPrioritization qualityPrioritization;
 ```
 
-#### Discussion
+## Discussion
 
 For more information about supported levels, see [`VTSuperResolutionScalerConfiguration.QualityPrioritization`](./qualityprioritization-swift.enum.md).
 

@@ -23,7 +23,7 @@ func executeGradient(batchSize: Int, options: MLCExecutionOptions = [], completi
 - (BOOL) executeGradientWithBatchSize:(NSUInteger) batchSize options:(MLCExecutionOptions) options completionHandler:(MLCGraphCompletionHandler) completionHandler;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the execution was successful.
 

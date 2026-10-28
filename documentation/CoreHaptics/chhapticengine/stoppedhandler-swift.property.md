@@ -28,7 +28,7 @@ var stoppedHandler: CHHapticEngine.StoppedHandler { get set }
 
 - [Preparing your app to play haptics](../preparing-your-app-to-play-haptics.md)
 
-#### Discussion
+## Discussion
 
 External causes that can cause the system to call this closure include audio session interruptions, app suspensions, or system errors. Calling [`stop(completionHandler:)`](./stop%28completionhandler%29.md) doesn’t invoke this callback.
 

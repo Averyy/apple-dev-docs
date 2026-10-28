@@ -24,7 +24,7 @@ var vertexCount: Int { get }
 @property (nonatomic, readonly) NSUInteger vertexCount;
 ```
 
-#### Discussion
+## Discussion
 
 Obstacles are immutable objects; to change the shape of an obstacle, remove it and create a new obstacle with a new list of vertices. Use this property along with the [`vertex(at:)`](./vertex%28at%29.md) method to inspect an existing obstacle—for example, to draw a debugging overlay representing the obstacle in your game.
 

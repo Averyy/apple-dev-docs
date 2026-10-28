@@ -24,7 +24,7 @@ var lightCubeMap: MDLTexture? { get }
 @property (nonatomic, retain, readonly, nullable) MDLTexture * lightCubeMap;
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`generateSphericalHarmonics(fromLight:)`](./generatesphericalharmonics%28fromlight%29.md) method to create a cube map texture based on the light’s photometry data, then use this property to access the resulting texture. In this texture, each texel represents the light’s intensity in the direction from the cube’s center to the texel’s position on the cube.
 

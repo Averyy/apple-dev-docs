@@ -24,7 +24,7 @@ var uniqueIdentifiersForBridgedAccessories: [UUID]? { get }
 @property (nonatomic, copy, readonly, nullable) NSArray<NSUUID *> * uniqueIdentifiersForBridgedAccessories;
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` for accessories that aren’t bridges. See the [`isBridged`](./isbridged.md) property for more information about working with bridges.
 

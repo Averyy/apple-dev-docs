@@ -25,7 +25,7 @@ typealias CFTreeCopyDescriptionCallBack = (UnsafeRawPointer?) -> Unmanaged<CFStr
 typedef const struct __CFString *(*)(const void *) CFTreeCopyDescriptionCallBack;
 ```
 
-#### Return Value
+## Return Value
 
 A textual description of `info`. The caller is responsible for releasing this object.
 

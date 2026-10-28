@@ -25,7 +25,7 @@ func models(forTagScheme tagScheme: NLTagScheme) -> [NLModel]
 - (NSArray<NLModel *> *) modelsForTagScheme:(NLTagScheme) tagScheme;
 ```
 
-#### Return Value
+## Return Value
 
 The array of models that apply to the given tag scheme.
 

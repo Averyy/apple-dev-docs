@@ -25,7 +25,7 @@ let MPMediaItemPropertyArtist: String
 extern NSString * const MPMediaItemPropertyArtist;
 ```
 
-#### Discussion
+## Discussion
 
 For example, if the album artist is “Joseph Fable,” the artist for one of the songs in the album may be “Joseph Fable featuring Thomas Smithson”. Value is an [`NSString`](../Foundation/nsstring.md) object.
 

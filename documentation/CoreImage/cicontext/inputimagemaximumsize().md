@@ -23,7 +23,7 @@ func inputImageMaximumSize() -> CGSize
 - (CGSize) inputImageMaximumSize;
 ```
 
-#### Discussion
+## Discussion
 
 Some contexts limit the maximum size of an image that can be rendered into them. For example, the maximum size might reflect a limitation in the underlying graphics hardware.
 

@@ -23,7 +23,7 @@ class MLCReductionLayer
 @interface MLCReductionLayer : MLCLayer
 ```
 
-#### Overview
+## Overview
 
 Use this layer to perform reduction operations on a given dimension. The output of this layer is a tensor of the same shape as the source tensor, except the layer sets the dimension to `1`.
 

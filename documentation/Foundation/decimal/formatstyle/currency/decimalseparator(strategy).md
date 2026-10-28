@@ -21,7 +21,7 @@ Modifies the format style to use the specified decimal separator display strateg
 func decimalSeparator(strategy: Decimal.FormatStyle.Currency.Configuration.DecimalSeparatorDisplayStrategy) -> Decimal.FormatStyle.Currency
 ```
 
-#### Return Value
+## Return Value
 
 A decimal currency format style modified to use the specified decimal separator display strategy.
 

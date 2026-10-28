@@ -21,7 +21,7 @@ struct SynthesizerInfoKey
 typedef NSString * NSSpeechSynthesizerInfoKey;
 ```
 
-#### Discussion
+## Discussion
 
 Use constants as keys for the [`synthesizerInfo`](./synthesizerinfo.md) dictionary.
 

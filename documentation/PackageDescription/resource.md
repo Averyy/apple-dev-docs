@@ -15,7 +15,7 @@ A resource to bundle with the Swift package.
 struct Resource
 ```
 
-#### Overview
+## Overview
 
 If a Swift package declares a Swift tools version of 5.3 or later, it can include resource files. Similar to source code, Swift Package Manager scopes resources to a target, so you must put them into the folder that corresponds to the target they belong to. For example, any resources for the `MyLibrary` target must reside in `Sources/MyLibrary`. Use subdirectories to organize your resource files in a way that simplifies file identification and management. For example, put all resource files into a directory named `Resources`, so they reside at `Sources/MyLibrary/Resources`.
 

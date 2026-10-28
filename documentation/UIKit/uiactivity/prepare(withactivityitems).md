@@ -22,7 +22,7 @@ func prepare(withActivityItems activityItems: [Any])
 - (void) prepareWithActivityItems:(NSArray *) activityItems;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method does nothing. This method is called after the user has selected your service but before your service is asked to perform its action. Subclasses should override this method and use it to store a reference to the data items in the `activityItems` parameter. In addition, if the implementation of your service requires displaying additional UI to the user, you can use this method to prepare your view controller object and make it available from the [`activityViewController`](./activityviewcontroller.md) method.
 

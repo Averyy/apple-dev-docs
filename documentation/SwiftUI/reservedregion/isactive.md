@@ -21,7 +21,7 @@ A Boolean value that indicates whether the region is active.
 var isActive: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 A region can become active or inactive as conditions change. An active region currently affects your view. An inactive region doesn’t. For example, the fold of iPhone Duo is active when the device is partially open, and inactive when it’s fully open.
 

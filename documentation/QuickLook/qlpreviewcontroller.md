@@ -22,7 +22,7 @@ class QLPreviewController
 @interface QLPreviewController : UIViewController
 ```
 
-#### Overview
+## Overview
 
 A `QLPreviewController` can display previews for many common file types, including the following:
 
@@ -37,17 +37,17 @@ A `QLPreviewController` can display previews for many common file types, includi
 
 > **Note**:  The list of supported common file types may change between operating system releases. In addition, you can enable previews for your own file types by implementing your own preview extension.
 
-##### Providing data to a preview controller
+### Providing data to a preview controller
 
 To use a preview controller, you need to provide a data source object. The data source provides preview items to the controller and tells it how many items to include in a preview navigation list. If there’s more than one item in the list, a controller displays navigation arrows to let the user switch among the items. If you push a preview controller into view using a navigation controller, you can provide buttons in the navigation bar for moving through the navigation list.
 
 For details on providing items to a preview controller, see [`QLPreviewControllerDataSource`](./qlpreviewcontrollerdatasource.md) and [`QLPreviewItem`](./qlpreviewitem.md).
 
-##### Presenting a preview controller
+### Presenting a preview controller
 
 You can present a `QLPreviewController` modally by calling [`present(_:animated:completion:)`](../UIKit/uiviewcontroller/present%28_,animated,completion%29.md) from a presenting [`UIViewController`](../UIKit/uiviewcontroller.md), or you can push it into view using a [`UINavigationController`](../UIKit/uinavigationcontroller.md). The preview includes a title that the system derives from the last path component of the item URL. You can override it by implementing a [`previewItemTitle`](./qlpreviewitem/previewitemtitle.md) accessor for the preview item.
 
-##### Previewing items in Mac apps built with Mac Catalyst
+### Previewing items in Mac apps built with Mac Catalyst
 
 For Mac apps built with Mac Catalyst, presenting a `QLPreviewController` displays the preview in a [`QLPreviewPanel`](../QuickLookUI/qlpreviewpanel.md) and dims the previously active window. However, unlike on iOS devices, where displaying a preview hides the presenting view controller, the previously visible window’s content remains visible in Mac apps built with Mac Catalyst. Be sure the content is appropriate to display while the `QLPreviewPanel` is visible.
 

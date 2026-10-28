@@ -16,7 +16,7 @@ var iterationCount: Int { get set }
 @property (nonatomic) NSUInteger iterationCount;
 ```
 
-#### Discussion
+## Discussion
 
 A performance test runs its block `iterationCount+1` times, ignoring the first iteration and recording metrics for the remaining iterations. The test ignores the first iteration to reduce measurement variance associated with “warming up” caches and other first-run behavior.
 

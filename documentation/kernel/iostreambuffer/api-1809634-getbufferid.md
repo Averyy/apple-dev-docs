@@ -12,7 +12,7 @@ virtual IOStreamBufferID getBufferID(
  void);
 ```
 
-#### Overview
+## Overview
 
 The buffer identifier is unique across all buffers in a stream.
 

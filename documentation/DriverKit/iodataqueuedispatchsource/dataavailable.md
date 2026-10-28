@@ -22,7 +22,7 @@ virtual void DataAvailable(OSAction *action);
 
 - [Creating a Driver Using the DriverKit SDK](../creating-a-driver-using-the-driverkit-sdk.md)
 
-#### Discussion
+## Discussion
 
 Use this method as a prototype for declaring your own custom data-queue handlers. When declaring your method, use the [`TYPE`](../type.md) macro to indicate that your method has the same parameters and return value as this method.
 

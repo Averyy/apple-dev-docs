@@ -29,7 +29,7 @@ func reset()
 
 - [Accessing data when the store changes](../accessing-data-when-the-store-changes.md)
 
-#### Discussion
+## Discussion
 
 All the receiver’s managed objects are “forgotten.” If you use this method, you should ensure that you also discard references to any managed objects fetched using the receiver, since they will be invalid afterwards.
 

@@ -19,7 +19,7 @@ var tabbingMode: NSWindow.TabbingMode { get set }
 @property NSWindowTabbingMode tabbingMode;
 ```
 
-#### Discussion
+## Discussion
 
 Set this to the desired tabbing mode before displaying a window. The default value is [`NSWindow.TabbingMode.automatic`](./tabbingmode-swift.enum/automatic.md). When the value is [`NSWindow.TabbingMode.automatic`](./tabbingmode-swift.enum/automatic.md), the system uses [`userTabbingPreference`](./usertabbingpreference-swift.type.property.md) to determine tabbing behavior.
 

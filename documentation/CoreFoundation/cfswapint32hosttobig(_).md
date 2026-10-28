@@ -25,7 +25,7 @@ func CFSwapInt32HostToBig(_ arg: UInt32) -> UInt32
 static uint32_t CFSwapInt32HostToBig(uint32_t arg);
 ```
 
-#### Return Value
+## Return Value
 
 The integer with its bytes swapped. If the host is big-endian, this function returns `arg` unchanged.
 

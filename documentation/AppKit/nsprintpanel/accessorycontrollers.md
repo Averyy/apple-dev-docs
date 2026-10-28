@@ -19,7 +19,7 @@ var accessoryControllers: [NSViewController] { get }
 @property (copy, readonly) NSArray<__kindof NSViewController *> * accessoryControllers;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains an array of [`NSViewController`](../nsviewcontroller.md) objects, each of which represents an accessory view added using the [`addAccessoryController(_:)`](./addaccessorycontroller%28_%29.md) method.
 

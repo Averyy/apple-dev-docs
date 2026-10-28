@@ -24,7 +24,7 @@ case oneMinusDestinationAlpha
 MTLBlendFactorOneMinusDestinationAlpha
 ```
 
-#### Discussion
+## Discussion
 
 `F = 1 - Dest.a`
 

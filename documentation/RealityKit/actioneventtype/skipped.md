@@ -20,7 +20,7 @@ An event that takes place when the system misses an action event’s time interv
 static var skipped: ActionEventType { get }
 ```
 
-#### Discussion
+## Discussion
 
 RealityKit generates a skip event under the following conditions:
 

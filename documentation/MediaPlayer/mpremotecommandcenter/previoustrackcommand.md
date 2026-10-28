@@ -25,7 +25,7 @@ var previousTrackCommand: MPRemoteCommand { get }
 @property (nonatomic, readonly) MPRemoteCommand * previousTrackCommand;
 ```
 
-#### Discussion
+## Discussion
 
 Use the object in this property to register your app’s handler for selecting the previous track. In your handler, select the media item that precedes the current media item. You can disable the command if your app does not support it.
 

@@ -19,7 +19,7 @@ An error that indicates the vehicle didn’t recognize the specified function id
 case FunctionUnknown
 ```
 
-#### Discussion
+## Discussion
 
 Verify that the integer value in your [`FunctionIdentifier`](../functionidentifier.md) type matches one your vehicle supports.
 

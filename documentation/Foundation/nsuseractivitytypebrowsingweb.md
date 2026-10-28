@@ -25,7 +25,7 @@ let NSUserActivityTypeBrowsingWeb: String
 extern NSString * const NSUserActivityTypeBrowsingWeb;
 ```
 
-#### Discussion
+## Discussion
 
 An [`NSUserActivity`](./nsuseractivity.md) object with an [`activityType`](./nsuseractivity/activitytype.md) value of [`NSUserActivityTypeBrowsingWeb`](./nsuseractivitytypebrowsingweb.md) indicates either an activity continued from a web browser-to-native app Handoff or a universal link. For this activity type, the [`webpageURL`](./nsuseractivity/webpageurl.md) property contains the `http` or `https` URL associated with the activity.
 

@@ -5,13 +5,13 @@
 
 Position views inside a stack using alignment guides.
 
-#### Overview
+## Overview
 
 Stacks place their child views to match their alignment, which defaults to center alignment. When you initialize the stack, you can specify an alignment for the stack to use that also applies to a stack’s child views. If you want to modify the placement of individual child views, use the alignment guide modifier to make adjustments that offset the view from the alignment the stack provides.
 
 To align views across multiple stacks, see [Aligning views across stacks](./aligning-views-across-stacks.md).
 
-##### Use defaults for basic alignment
+### Use defaults for basic alignment
 
 For an example of how SwiftUI applies default alignment to the views in an [`HStack`](./hstack.md), examine the following code used to provide a status view for a recording app. The `HStack` contains an image view for the icon and two text views with labels that use the [`font(_:)`](./view/font%28_%29.md) modifier to adjust the font size of the text.
 
@@ -31,7 +31,7 @@ The orange reference line in the following figure shows the default alignment po
 
 ![A blue rectangle defines the padded boundary of an HStack, in which a microphone image against the left side, followed the word Connecting styled as a caption, then the name Bryan styled as a title. The child views are spaced evenly across the stack and centered vertically. An orange line runs underneath the view, displaying the location of the default center alignment guide.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Aligning-Views-Within-a-Stack-1@2x.png)
 
-##### Customize stack alignment
+### Customize stack alignment
 
 You can align content within a stack based on guides provided by the alignments that the stack supports. The various kinds of stacks support the following alignments:
 
@@ -55,7 +55,7 @@ HStack(alignment: .firstTextBaseline) {
 
 ![A blue rectangle defines the padded boundary of an HStack, in which a microphone image against the left side, followed the word Connecting styled as a caption, then the name Bryan styled as a title. The child views are spaced evenly across the stack and aligned with the text baselines matching the bottom of the microphone image. An orange line runs underneath the view, displaying the location of the baseline alignment guide.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Aligning-Views-Within-a-Stack-2@2x.png)
 
-##### Adjust the alignment of individual views within a stack
+### Adjust the alignment of individual views within a stack
 
 Custom images don’t provide a text baseline guide, so the bottom of the image aligns to the text view’s baseline. Adjust the alignment of the image using [`alignmentGuide(_:computeValue:)`](./view/alignmentguide%28_,computevalue%29.md) to get the visual alignment you desire. The alignment guide’s closure provides an instance of [`ViewDimensions`](./viewdimensions.md), the parameter `context` in this example — which you can use to return an offset value. The value looked up from `context` with [`bottom`](./verticalalignment/bottom.md), provides an offset that aligns the bottom of the image adjusted by an offset to the baseline guide defined on the stack:
 
@@ -78,7 +78,7 @@ When you use an alignment guide modifier, make sure to specify an active alignme
 
 ![A blue rectangle defines the padded boundary of an HStack, in which a microphone image against the left side, followed the word Connecting styled as a caption, then the name Bryan styled as a title. The child views are spaced evenly across the stack and aligned with the text baselines. The microphone image is slightly offset to that the bottom of the microphone aligns with the baseline. An orange line runs underneath the view, displaying the location of the baseline alignment guide.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Aligning-Views-Within-a-Stack-3@2x.png)
 
-##### Use SF Symbols to simplify views when aligning with text
+### Use SF Symbols to simplify views when aligning with text
 
 You can replace the microphone image with a similar icon from [SF Symbols](https://developer.apple.com/design/human-interface-guidelines/sf-symbols) to simplify the view. The icons from SF Symbols use text baseline guides, which means they support whatever font styling you apply to the view.
 

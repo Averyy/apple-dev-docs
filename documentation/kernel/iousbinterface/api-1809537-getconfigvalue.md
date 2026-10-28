@@ -9,11 +9,11 @@
 virtual UInt8 GetConfigValue();
 ```
 
-#### Return Value
+## Return Value
 
 The device configuration value.
 
-#### Overview
+## Overview
 
 returns the device configuration value for the interface
 

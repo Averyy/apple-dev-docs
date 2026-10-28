@@ -14,7 +14,7 @@
 @property (nonatomic, assign) BOOL showsCameraControl;
 ```
 
-#### Discussion
+## Discussion
 
 showsCameraControl Indicates whether the system picker will show camera control for user. Default is NO. Only applies when presenting the picker for the current application
 

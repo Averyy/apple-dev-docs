@@ -22,7 +22,7 @@ A short description of how to use the tip’s feature.
 var message: Text? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property is `Optional` and defaults to a value of `nil`.
 

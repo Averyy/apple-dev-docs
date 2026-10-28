@@ -19,7 +19,7 @@ var isEnabled: Bool { get set }
 @property (getter=isEnabled) BOOL enabled;
 ```
 
-#### Discussion
+## Discussion
 
 The filter is applied to its input when this property is set to `true` (the default).
 

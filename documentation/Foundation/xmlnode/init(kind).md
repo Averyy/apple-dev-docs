@@ -20,11 +20,11 @@ convenience init(kind: XMLNode.Kind)
 - (instancetype) initWithKind:(NSXMLNodeKind) kind;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSXMLNode` object initialized with kind or `nil` if the object couldn’t be created. If `kind` is not a valid NSXMLNodeKind constant, the method returns an `NSXMLNode` object of kind `NSXMLInvalidKind`.
 
-#### Discussion
+## Discussion
 
 This method invokes [`init(kind:options:)`](./init%28kind,options%29.md) with the `options` parameter set to `NSXMLNodeOptionsNone`.
 

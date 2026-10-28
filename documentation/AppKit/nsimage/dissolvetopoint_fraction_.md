@@ -17,7 +17,7 @@ Composites the entire image to the specified location using the source-over oper
 - (void) dissolveToPoint:(NSPoint) point fraction:(CGFloat) fraction;
 ```
 
-#### Discussion
+## Discussion
 
 Except for the choice of compositing operator, this method behaves in the same way as the [`compositeToPoint:operation:`](./compositetopoint_operation_.md) method. During printing, the `delta` parameter is ignored.
 

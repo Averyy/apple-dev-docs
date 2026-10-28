@@ -25,7 +25,7 @@ static var anchored: NSData.SearchOptions { get }
 NSDataSearchAnchored
 ```
 
-#### Discussion
+## Discussion
 
 This option performs searching only on bytes at the beginning of the range (or the end when using [`backwards`](./backwards.md)). No match at the beginning or end means nothing is found, even if a matching sequence of bytes occurs elsewhere in the data object.
 

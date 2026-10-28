@@ -25,11 +25,11 @@ class func success(with resolvedNote: INNote) -> Self
 + (instancetype) successWithResolvedNote:(INNote *) resolvedNote;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INNoteResolutionResult`](../innoteresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object after successfully locating the note to modify. Provide an [`INNote`](../innote.md) object with as much information about the note as you have available.
 

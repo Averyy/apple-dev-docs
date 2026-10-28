@@ -21,11 +21,11 @@ class CTCellularPlanStatus
 @interface CTCellularPlanStatus : NSObject
 ```
 
-#### Overview
+## Overview
 
 This class provides UPI device validation or cellular plan availability checking.
 
-#### Perform UPI device validation
+## Perform UPI device validation
 
 To check if the Integrated Circuit Card Identifier (ICCID) on a device is associated with a given token, use the [`setUPIVerificationCodeSendCompletion(_:)`](../MessageUI/mfmessagecomposeviewcontroller/setupiverificationcodesendcompletion%28_%29.md) method to configure an instance of a view for Unified Payments Interface (UPI) device validation. When the person sends an SMS, the framework creates a token and maps it to the  [`MFMessageComposeViewController`](../MessageUI/mfmessagecomposeviewcontroller.md) instance’s associated ICCID. Use this token to determine if changes exist to the underlying ICCID.
 
@@ -37,7 +37,7 @@ For more information on configuring an instance for UPI device validation, see [
 
 > ❗ **Important**:  To use UPI device validation, your app needs the [`com.apple.developer.upi-device-validation`](../BundleResources/entitlements/com.apple.developer.upi-device-validation.md) entitlement.
 
-##### Check cellular plan continuity
+### Check cellular plan continuity
 
 To check the status of a cellular plan, use [`requestAuthorization(forPhoneNumber:completion:)`](./ctcellularplanstatus/requestauthorization%28forphonenumber,completion%29.md) to ask the person for permission to access status information for a phone number. Provide phone numbers in [ITU-T E.164 international format](https://www.itu.int/rec/T-REC-E.164) (for example, `+15550001234`).
 

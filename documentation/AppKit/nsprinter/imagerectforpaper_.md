@@ -15,7 +15,7 @@ Deprecated.
 - (NSRect) imageRectForPaper:(NSString *) paperName;
 ```
 
-#### Discussion
+## Discussion
 
 If used, it attempts to determine and return the bounds of the imageable area for a particular paper named `paperName`, but the result is not completely reliable.
 

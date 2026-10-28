@@ -23,11 +23,11 @@ optional func splitViewController(_ splitViewController: UISplitViewController, 
 - (UIViewController *) splitViewController:(UISplitViewController *) splitViewController separateSecondaryViewControllerFromPrimaryViewController:(UIViewController *) primaryViewController;
 ```
 
-#### Return Value
+## Return Value
 
 The view controller to use as the secondary view controller in the expanded split view interface, or `nil` to let the split view controller choose an appropriate secondary view controller for you.
 
-#### Discussion
+## Discussion
 
 This delegate method only applies to classic split view interfaces. For more information, see [Split view styles](../uisplitviewcontroller.md#Split-view-styles).
 

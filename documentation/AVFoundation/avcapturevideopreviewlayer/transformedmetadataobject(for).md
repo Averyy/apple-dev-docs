@@ -23,11 +23,11 @@ func transformedMetadataObject(for metadataObject: AVMetadataObject) -> AVMetada
 - (AVMetadataObject *) transformedMetadataObjectForMetadataObject:(AVMetadataObject *) metadataObject;
 ```
 
-#### Return Value
+## Return Value
 
 A metadata object with coordinates converted into layer coordinates, or `nil` if the  metadata object originates from an input source other than that of the preview layer.
 
-#### Discussion
+## Discussion
 
 The system provides the metadata object’s bounds as a rectangle where `{0,0}` represents the top-left of the picture area, and `{1,1}` represents the bottom-right on an unrotated image. Face metadata objects also provide [`yawAngle`](../avmetadatafaceobject/yawangle.md) and [`rollAngle`](../avmetadatafaceobject/rollangle.md) values with respect to an unrotated picture.
 

@@ -24,11 +24,11 @@ convenience init(toFollow path: GKPath, maxPredictionTime: TimeInterval, forward
 + (instancetype) goalToFollowPath:(GKPath *) path maxPredictionTime:(NSTimeInterval) maxPredictionTime forward:(BOOL) forward;
 ```
 
-#### Return Value
+## Return Value
 
 A new goal object.
 
-#### Discussion
+## Discussion
 
 This goal uses the shape and the [`radius`](../gkpath/radius.md) property of the specified path to define the agent’s desired movement. The agent first attempts to reach a location near the path’s start point (or end point if the forward parameter is [`false`](../../Swift/false.md)), to a tolerance determined by the path’s radius. Then, the agent attemps to move toward the next point in the path, again with a tolerance determined by the path’s radius. This sequence continues until the path terminates, or repeats indefinitely if the path’s [`isCyclical`](../gkpath/iscyclical.md) property is [`true`](../../Swift/true.md).
 

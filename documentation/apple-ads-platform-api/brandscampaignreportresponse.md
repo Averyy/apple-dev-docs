@@ -15,11 +15,11 @@ The top-level response envelope for Apple Maps campaign-level reports.
 object BrandsCampaignReportResponse
 ```
 
-#### Discussion
+## Discussion
 
 The `brands` campaign reports support `groupBy` dimensions `deviceClass`, `locationId`, and `supplyPlacement`.
 
-##### Example
+### Example
 
 ```json
 {

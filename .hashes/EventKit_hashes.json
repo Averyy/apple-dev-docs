@@ -3402,8 +3402,13 @@
     }
   },
   "metadata": {
+    "gone_links": [
+      "https://developer.apple.com/documentation/eventkit/ekeventstore/authorizationstatus",
+      "https://developer.apple.com/documentation/eventkit/ekeventstore/requestaccess",
+      "https://developer.apple.com/documentation/foundation/nsnotification/name/ekeventstorechanged"
+    ],
     "render": {
-      "version": 3
+      "version": 4
     },
     "total_pages": 850
   }

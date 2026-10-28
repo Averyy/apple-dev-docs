@@ -19,7 +19,7 @@ var draggingDestinationFeedbackStyle: NSTableView.DraggingDestinationFeedbackSty
 @property NSTableViewDraggingDestinationFeedbackStyle draggingDestinationFeedbackStyle;
 ```
 
-#### Discussion
+## Discussion
 
 Possible values are defined in [`NSTableView.DraggingDestinationFeedbackStyle`](../nstableview/draggingdestinationfeedbackstyle-swift.enum.md).
 

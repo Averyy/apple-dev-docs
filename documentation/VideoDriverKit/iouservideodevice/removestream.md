@@ -15,11 +15,11 @@ Removes a video stream from the device.
 kern_return_t RemoveStream(IOUserVideoStream *in_stream);
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` if stream was successfully removed.
 
-#### Discussion
+## Discussion
 
 The stream’s reference count will be decremented if it was successfully removed.
 

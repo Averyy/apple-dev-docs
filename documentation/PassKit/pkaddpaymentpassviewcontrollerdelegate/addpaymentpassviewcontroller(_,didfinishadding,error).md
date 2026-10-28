@@ -21,7 +21,7 @@ func addPaymentPassViewController(_ controller: PKAddPaymentPassViewController, 
 - (void) addPaymentPassViewController:(PKAddPaymentPassViewController *) controller didFinishAddingPaymentPass:(PKPaymentPass *) pass error:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called when the request successfully adds the card to Apple Pay or when the request fails.
 

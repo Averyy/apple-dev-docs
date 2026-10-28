@@ -25,11 +25,11 @@ func BNNSGraphContextMakeStreaming(_ graph: bnns_graph_t, _ function: UnsafePoin
 bnns_graph_context_t BNNSGraphContextMakeStreaming(bnns_graph_t graph, const char *function, size_t initial_states_count, const BNNSTensor *initial_states);
 ```
 
-#### Return Value
+## Return Value
 
 A compiled graph context object. If the operation fails, the graph object’s [`data`](./bnns_graph_context_t/data.md) property is `nil`.
 
-#### Discussion
+## Discussion
 
 In addition to the work that [`BNNSGraphContextMake(_:)`](./bnnsgraphcontextmake%28_%29.md) performs, this call allocates ring-buffer backed memory for all [Core ML](../CoreML/CoreML.md) state arguments of the given function.
 

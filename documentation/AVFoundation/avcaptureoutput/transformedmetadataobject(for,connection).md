@@ -23,11 +23,11 @@ func transformedMetadataObject(for metadataObject: AVMetadataObject, connection:
 - (AVMetadataObject *) transformedMetadataObjectForMetadataObject:(AVMetadataObject *) metadataObject connection:(AVCaptureConnection *) connection;
 ```
 
-#### Return Value
+## Return Value
 
 A metadata object whose properties are in output coordinates, or `nil` if the object originates from an input source other than the preview layer.
 
-#### Discussion
+## Discussion
 
 A metadata object has a rectangular bounds where `0,0` is the top-left of the picture area, and `1,1` represents the bottom-right on an unrotated picture. Face metadata objects likewise express yaw and roll angles with respect to an unrotated picture.
 

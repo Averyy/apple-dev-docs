@@ -24,7 +24,7 @@ var baseColor: PhysicallyBasedMaterial.BaseColor { get set }
 
 - [Applying realistic material and lighting effects to entities](../applying-realistic-material-and-lighting-effects-to-entities.md)
 
-#### Discussion
+## Discussion
 
 The base color of an entity is either a solid color or a UV-mapped image texture. This property represents the color of the entity before RealityKit applies any lighting or rendering calculations.
 

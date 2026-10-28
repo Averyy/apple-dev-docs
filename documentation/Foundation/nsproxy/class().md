@@ -25,7 +25,7 @@ class func `class`() -> AnyClass
 + (Class) class;
 ```
 
-#### Return Value
+## Return Value
 
 `self`. Because this is a class method, it returns the class object
 

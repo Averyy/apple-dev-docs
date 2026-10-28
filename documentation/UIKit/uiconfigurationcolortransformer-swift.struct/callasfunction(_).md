@@ -19,7 +19,7 @@ Calls the transform closure of the color transformer.
 func callAsFunction(_ input: UIColor) -> UIColor
 ```
 
-#### Discussion
+## Discussion
 
 Using this syntax, you can call the color transformer type as if it were a closure:
 

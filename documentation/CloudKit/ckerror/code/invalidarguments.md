@@ -25,7 +25,7 @@ case invalidArguments
 CKErrorInvalidArguments
 ```
 
-#### Discussion
+## Discussion
 
 Consult the error’s [`userInfo`](../../../Foundation/nserror/userinfo.md) dictionary for more information about the issue.
 

@@ -27,7 +27,7 @@ var appEntityIdentifier: EntityIdentifier? { get set }
 - [Providing contextual cues to Apple Intelligence and Siri](../providing-contextual-cues-to-apple-intelligence-and-siri.md)
 - [Donating your app’s data and actions to the system](../donating-your-apps-data-and-actions-to-the-system.md)
 
-#### Discussion
+## Discussion
 
 This property stores the unique identifier of one of your app’s entities. Use it to create an association between a system type and one of your custom [`AppEntity`](../appentity.md) types. For example, the [`NSUserActivity`](../../Foundation/nsuseractivity.md) makes this property available so you can specify the entity associated with your app’s activity. To remove the association with one of your app’s entities, set this property to `nil`.
 

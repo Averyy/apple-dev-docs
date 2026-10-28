@@ -13,7 +13,7 @@ Coordinate and control compatible smart home accessories.
 - macOS 14.0+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 Matter is a smart home connectivity standard that gives your app the ability to control devices from a wide variety of manufacturers and across platforms. Adopt this framework in your app to add compatible devices to your ecosystem, then use [Matter](../Matter/Matter.md) to commission and control them.
 

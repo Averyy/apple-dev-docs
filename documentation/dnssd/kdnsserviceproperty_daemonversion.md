@@ -25,7 +25,7 @@ var kDNSServiceProperty_DaemonVersion: String { get }
 #define kDNSServiceProperty_DaemonVersion
 ```
 
-#### Discussion
+## Discussion
 
 When requesting [`kDNSServiceProperty_DaemonVersion`](./kdnsserviceproperty_daemonversion.md), the result pointer must point to a 32-bit unsigned integer, and the size parameter must be set to sizeof(uint32_t).
 

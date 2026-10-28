@@ -24,7 +24,7 @@ class UISearchController
 @interface UISearchController : UIViewController
 ```
 
-#### Overview
+## Overview
 
 Use a search controller to provide a standard search experience of the contents of another view controller. When the user interacts with a [`UISearchBar`](./uisearchbar.md), the search controller coordinates with a search results controller to display the search results.
 
@@ -34,13 +34,13 @@ In tvOS, start with a [`UISearchContainerViewController`](./uisearchcontainervie
 
 > **Note**:  Don’t use a [`UISearchContainerViewController`](./uisearchcontainerviewcontroller.md) in iOS.
 
-##### Display search results
+### Display search results
 
 Specify a second view controller for displaying search results when you call [`init(searchResultsController:)`](./uisearchcontroller/init%28searchresultscontroller%29.md). When the user interacts with the search bar, the search controller automatically displays the results controller with the results you specify. If your results view is full-screen in tvOS, set the [`searchControllerObservedScrollView`](./uisearchcontroller/searchcontrollerobservedscrollview.md) to the results controller as well, so the search bar scrolls with your content view.
 
 Provide a [`UISearchResultsUpdating`](./uisearchresultsupdating.md) object to the search controller’s [`searchResultsUpdater`](./uisearchcontroller/searchresultsupdater.md) property. Typically, the view controller with your searchable content also acts as the search results updater object, but you can use another object if you prefer. When the user interacts with the search bar, the search controller calls the appropriate [`UISearchResultsUpdating`](./uisearchresultsupdating.md) method, giving your object the opportunity to perform the search and update the contents of your search results view.
 
-##### Customize transitions
+### Customize transitions
 
 To customize the presentation or dismissal of the search results controller, set the search controller’s [`delegate`](./uisearchcontroller/delegate.md) property to an object that conforms to the [`UISearchControllerDelegate`](./uisearchcontrollerdelegate.md) protocol. Then implement delegate methods in this object to receive presentation and dismissal events from the search controller.
 

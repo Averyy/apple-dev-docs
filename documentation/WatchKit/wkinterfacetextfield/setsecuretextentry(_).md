@@ -19,7 +19,7 @@ func setSecureTextEntry(_ secureTextEntry: Bool)
 - (void) setSecureTextEntry:(BOOL) secureTextEntry;
 ```
 
-#### Discussion
+## Discussion
 
 Pass [`true`](../../Swift/true.md) to help keep passwords and other secure data private. When you enable secure text entry, the system displays a series of dots instead of the text entered by the user.
 

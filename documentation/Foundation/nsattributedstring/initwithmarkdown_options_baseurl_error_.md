@@ -21,7 +21,7 @@ Creates an attributed string from Markdown-formatted data using the provided opt
 - (instancetype) initWithMarkdown:(NSData *) markdown options:(NSAttributedStringMarkdownParsingOptions *) options baseURL:(NSURL *) baseURL error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An attributed string with the parsed Markdown text and styling, or `nil` if parsing the data fails.
 

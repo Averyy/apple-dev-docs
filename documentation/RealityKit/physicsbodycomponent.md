@@ -20,7 +20,7 @@ A component that defines an entity’s behavior in physics body simulations.
 struct PhysicsBodyComponent
 ```
 
-#### Overview
+## Overview
 
 Only entities with a [`PhysicsBodyComponent`](./physicsbodycomponent.md) and a [`CollisionComponent`](./collisioncomponent.md) can participate in a scene’s physics simulation. If you need to move an entity that participates in the physics system, it also needs a [`PhysicsMotionComponent`](./physicsmotioncomponent.md).
 

@@ -28,7 +28,7 @@ var renderTargetArrayLength: Int { get set }
 
 - [Rendering to multiple texture slices in a draw command](../rendering-to-multiple-texture-slices-in-a-draw-command.md)
 
-#### Discussion
+## Discussion
 
 The default value is `0`, indicating that the GPU does not use layered rendering on this render pass.
 

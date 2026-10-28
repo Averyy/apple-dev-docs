@@ -29,7 +29,7 @@ func requestConstraintBasedForecast(with params: MTRDeviceEnergyManagementCluste
 - (void) requestConstraintBasedForecastWithParams:(MTRDeviceEnergyManagementClusterRequestConstraintBasedForecastParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Allows a client to ask the ESA to recompute its Forecast based on power and time constraints.
 

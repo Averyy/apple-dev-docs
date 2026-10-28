@@ -25,7 +25,7 @@ var fetchRequest: NSFetchRequest<ResultType> { get }
 @property (nonatomic, readonly) NSFetchRequest<id<NSFetchRequestResult>> * fetchRequest;
 ```
 
-#### Discussion
+## Discussion
 
 If you want to modify the fetch request, you must follow the steps described in [Modifying the fetch request](../nsfetchedresultscontroller.md#Modifying-the-fetch-request).
 

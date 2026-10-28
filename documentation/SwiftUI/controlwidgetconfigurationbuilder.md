@@ -20,7 +20,7 @@ A custom attribute that constructs a control widget’s body.
 struct ControlWidgetConfigurationBuilder
 ```
 
-#### Overview
+## Overview
 
 The `@ControlWidgetConfigurationBuilder` attribute allows your control widget’s body closure to produce a control widget configuration after zero or more other statements:
 

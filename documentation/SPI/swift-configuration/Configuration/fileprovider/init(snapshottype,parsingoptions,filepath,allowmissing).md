@@ -24,7 +24,7 @@ Creates a file provider that reads from the specified file path.
 init(snapshotType: Snapshot.Type = Snapshot.self, parsingOptions: Snapshot.ParsingOptions = .default, filePath: FilePath, allowMissing: Bool = false) async throws
 ```
 
-#### Discussion
+## Discussion
 
 This initializer reads the file at the given path and creates a snapshot using the specified snapshot type. The file is read once during initialization.
 

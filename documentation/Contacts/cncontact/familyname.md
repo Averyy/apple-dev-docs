@@ -32,7 +32,7 @@ var familyName: String { get }
 @property (atomic, copy, readonly) NSString * familyName;
 ```
 
-#### Discussion
+## Discussion
 
 The family name is often known as the last name of the contact.
 

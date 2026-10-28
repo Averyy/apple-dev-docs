@@ -22,7 +22,7 @@ var onImage: UIImage? { get set }
 @property (nonatomic, strong, nullable) UIImage * onImage;
 ```
 
-#### Discussion
+## Discussion
 
 In iOS 7 and later, this property has no effect.
 

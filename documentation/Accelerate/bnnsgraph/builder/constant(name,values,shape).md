@@ -21,7 +21,7 @@ Registers and returns a tensor with the specified shape that contains constant d
 func constant<T>(name: String? = nil, values: some AccelerateBuffer, shape: [Int]? = nil) -> BNNSGraph.Builder.Tensor<T> where T : BNNSScalar
 ```
 
-#### Discussion
+## Discussion
 
 For example, the following code defines the tensor `y` that contains the single-precision values `[1, 2, 3, 4, 5, 6, 7, 8]`:
 

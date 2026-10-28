@@ -20,7 +20,7 @@ func forKey(_ key: String) -> NSScriptClassDescription?
 - (NSScriptClassDescription *) classDescriptionForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 The instance of `NSScriptClassDescription` for the type of the attribute or relationship specified by `key`. Returns `nil` if no scriptable property corresponds to `key`.
 

@@ -21,7 +21,7 @@ A presentation that shows the ISO code of the currency.
 static var isoCode: CurrencyFormatStyleConfiguration.Presentation { get }
 ```
 
-#### Discussion
+## Discussion
 
 This presentation produces output like `USD 123.00`.
 

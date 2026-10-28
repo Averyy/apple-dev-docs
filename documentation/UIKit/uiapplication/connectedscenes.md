@@ -23,7 +23,7 @@ var connectedScenes: Set<UIScene> { get }
 @property (nonatomic, readonly) NSSet<UIScene *> * connectedScenes;
 ```
 
-#### Discussion
+## Discussion
 
 Connected scenes are those that are in memory and potentially doing active work. A connected scene may be in the foreground or background, and it may be onscreen or offscreen.
 

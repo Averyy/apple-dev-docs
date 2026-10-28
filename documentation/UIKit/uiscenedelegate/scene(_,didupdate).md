@@ -23,7 +23,7 @@ optional func scene(_ scene: UIScene, didUpdate userActivity: NSUserActivity)
 - (void) scene:(UIScene *) scene didUpdateUserActivity:(NSUserActivity *) userActivity;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to add any final data to the specified user activity object. UIKit calls this method on your app’s main thread after calling your [`stateRestorationActivity(for:)`](./staterestorationactivity%28for%29.md) method and after giving other parts of your app an opportunity to update the activity object returned by that method.
 

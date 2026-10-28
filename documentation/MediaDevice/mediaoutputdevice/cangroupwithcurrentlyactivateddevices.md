@@ -17,7 +17,7 @@ Indicates whether this device can be grouped with devices that are currently act
 let canGroupWithCurrentlyActivatedDevices: Bool
 ```
 
-#### Discussion
+## Discussion
 
 When `true`, this device supports being added to a group with other devices via [`activateDevice(_:session:for:)`](../mediadeviceextension/activatedevice%28_,session,for%29.md)
 

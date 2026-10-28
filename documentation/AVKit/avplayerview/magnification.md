@@ -19,7 +19,7 @@ var magnification: CGFloat { get set }
 @property (nonatomic, setter=setMagnification:) CGFloat magnification;
 ```
 
-#### Discussion
+## Discussion
 
 The supported magnification range is `1.0` to `64.0`. The system zooms using nearest neighbor interpolation after it scales the content past a certain factor.
 

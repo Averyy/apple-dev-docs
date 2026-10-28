@@ -22,7 +22,7 @@ The unit in the last place of this value.
 var ulp: Self { get }
 ```
 
-#### Discussion
+## Discussion
 
 This is the unit of the least significant digit in this value’s significand. For most numbers `x`, this is the difference between `x` and the next greater (in magnitude) representable number. There are some edge cases to be aware of:
 

@@ -23,7 +23,7 @@ var activationState: WCSessionActivationState { get }
 @property (nonatomic, readonly) WCSessionActivationState activationState;
 ```
 
-#### Discussion
+## Discussion
 
 Check the value of this property before attempting to transfer data or files using the methods of this object. When the value is [`WCSessionActivationState.activated`](../wcsessionactivationstate/activated.md) you may initiate the transfer of data and files normally. If it is any other value, do not initiate any transfers.
 

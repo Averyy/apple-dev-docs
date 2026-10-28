@@ -18,7 +18,7 @@
 @property (nonatomic, copy, readonly, nullable) NSNumber * matterEndpointID;
 ```
 
-#### Discussion
+## Discussion
 
 The Matter endpoint identifier that this service is mapped to.
 

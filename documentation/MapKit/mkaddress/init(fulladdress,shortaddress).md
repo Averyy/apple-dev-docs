@@ -25,7 +25,7 @@ init?(fullAddress: String, shortAddress: String?)
 - (instancetype) initWithFullAddress:(NSString *) fullAddress shortAddress:(NSString *) shortAddress;
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a new [`MKAddress`](../mkaddress.md) with a complete address and a short abbreviated address, such as a street address and city.
 

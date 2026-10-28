@@ -24,7 +24,7 @@ var kMultiChannelMixerParam_PreAveragePower: AudioUnitParameterID { get }
 kMultiChannelMixerParam_PreAveragePower
 ```
 
-#### Discussion
+## Discussion
 
 Input and output scope. This is a read-only property. Use the value of this constant to read the left channel and its value+1 to read the right channel.
 

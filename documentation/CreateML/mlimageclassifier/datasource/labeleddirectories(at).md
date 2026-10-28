@@ -19,7 +19,7 @@ An image classifier data source that uses the directory structure to label image
 case labeledDirectories(at: URL)
 ```
 
-#### Discussion
+## Discussion
 
 Use this case to create a data source based on a directory structure on disk that contains your training images. The associated value is a URL that represents a directory with subdirectories that are named as the labels for your images. Each subdirectory should contain the images associated with the label for which that subdirectory is named.
 

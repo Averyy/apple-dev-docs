@@ -23,7 +23,7 @@ final var isSupplementaryInterfaceHidden: Bool { get set }
 
 - [Enabling Live Text interactions with images](../enabling-live-text-interactions-with-images.md)
 
-#### Discussion
+## Discussion
 
 Supplementary interface objects include the Live Text button and Quick Actions, depending on the item type. Setting this property invokes the [`setSupplementaryInterfaceHidden(_:animated:)`](./setsupplementaryinterfacehidden%28_,animated%29.md) method, passing this property value and `true` for the `animated` parameter.
 

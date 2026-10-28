@@ -25,7 +25,7 @@ let kCFErrorDescriptionKey: CFString!
 extern CFStringRef const kCFErrorDescriptionKey;
 ```
 
-#### Discussion
+## Discussion
 
 When you create a CFError object, you can provide a value for this key if you do not have localizable error strings. The description should be a complete sentence if possible, and should not contain the domain name or error code.
 

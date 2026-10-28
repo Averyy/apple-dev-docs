@@ -13,7 +13,7 @@
 #define kIOPropertySCSIDomainIdentifierKey
 ```
 
-#### Discussion
+## Discussion
 
 An identifier that will uniquely identify this SCSI Domain for the Physical Interconnect type. This identifier is only guaranteed to be unique for any given Physical Interconnect and is not guaranteed to be the same across restarts or shutdowns.
 

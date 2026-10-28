@@ -6,14 +6,17 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.co
 
 # mlx.core.cos
 
-**cos(*a: array*, */*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: Element-wise cosine.
+```python
+cos(a: array, /, *, stream: StreamOrDevice = None) → array
+```
 
-Parameters:
-**a** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
+Element-wise cosine.
 
-Returns:
-The cosine of `a`.
+**Parameters:**
+: **a** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
 
-Return type:
-[array](mlx.core.array.md#mlx.core.array)
+**Returns:**
+: The cosine of `a`.
+
+**Return type:**
+: [array](mlx.core.array.md#mlx.core.array)

@@ -14,7 +14,7 @@
 gestaltStereoInput = 8
 ```
 
-#### Discussion
+## Discussion
 
 Set if the built-in sound hardware can record stereo sounds.
 

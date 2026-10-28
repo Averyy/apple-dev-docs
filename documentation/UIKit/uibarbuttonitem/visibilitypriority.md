@@ -23,7 +23,7 @@ var visibilityPriority: UIBarButtonItemVisibilityPriority { get set }
 @property (nonatomic, assign, readwrite) UIBarButtonItemVisibilityPriority visibilityPriority;
 ```
 
-#### Discussion
+## Discussion
 
 Items with higher priority values are preserved longer when space is constrained. When an item is placed in an implicit group, the group inherits this priority.
 

@@ -25,11 +25,11 @@ func padding(toLength newLength: Int, withPad padString: String, startingAt padI
 - (NSString *) stringByPaddingToLength:(NSUInteger) newLength withString:(NSString *) padString startingAtIndex:(NSUInteger) padIndex;
 ```
 
-#### Return Value
+## Return Value
 
 A new string formed from the receiver by either removing characters from the end, or by appending as many occurrences of `padString` as necessary.
 
-#### Discussion
+## Discussion
 
 Here are some examples of usage:
 

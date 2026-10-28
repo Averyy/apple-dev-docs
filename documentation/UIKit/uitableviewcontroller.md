@@ -30,7 +30,7 @@ class UITableViewController
 - [Displaying and managing views with a view controller](./displaying-and-managing-views-with-a-view-controller.md)
 - [Handling row selection in a table view](./handling-row-selection-in-a-table-view.md)
 
-#### Overview
+## Overview
 
 Subclass [`UITableViewController`](./uitableviewcontroller.md) when your interface consists of a table view and little or no other content. Table view controllers already adopt the protocols you need to manage your table view’s content and respond to changes. In addition, [`UITableViewController`](./uitableviewcontroller.md) implements the following behaviors:
 

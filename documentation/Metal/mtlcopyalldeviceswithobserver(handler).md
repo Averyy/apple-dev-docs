@@ -16,12 +16,12 @@ Returns an array of all the Metal GPU devices in the system and registers a noti
 func MTLCopyAllDevicesWithObserver(handler: @escaping (any MTLDevice, MTLDeviceNotificationName) -> Void) -> (devices: [any MTLDevice], observer: NSObject)
 ```
 
-#### Return Value
+## Return Value
 
 - **`devices`**: An array of [`MTLDevice`](./mtldevice.md) instances
 - **`observer`**: An object instance that represents an observer the function creates for you.
 
-#### Discussion
+## Discussion
 
 Keep a copy of `observer` in your app in case you want to stop receiving notifications. You can stop receiving notifications by passing `observer` to the [`MTLRemoveDeviceObserver(_:)`](./mtlremovedeviceobserver%28_%29.md) function.
 

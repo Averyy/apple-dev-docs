@@ -24,11 +24,11 @@ class func roundedRectangleStrokeGenerator() -> any CIFilter & CIRoundedRectangl
 + (CIFilter<CIRoundedRectangleStrokeGenerator> *) roundedRectangleStrokeGeneratorFilter;
 ```
 
-#### Return Value
+## Return Value
 
 A [`CIImage`](../ciimage.md) containing the stroked rectangle.
 
-#### Discussion
+## Discussion
 
 This filter creates an outline of a rounded rectangle.
 

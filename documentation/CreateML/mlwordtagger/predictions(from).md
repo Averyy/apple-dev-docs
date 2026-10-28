@@ -21,7 +21,7 @@ func predictions<S>(from texts: S) throws -> DataFrame where S : Sequence, S.Ele
 func predictions(from texts: MLDataColumn<String>) throws -> MLDataTable
 ```
 
-#### Return Value
+## Return Value
 
 A `DataFrame` containing predicted labels, token locations, and token lengths.
 

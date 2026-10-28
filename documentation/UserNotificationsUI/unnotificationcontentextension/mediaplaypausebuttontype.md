@@ -27,7 +27,7 @@ optional var mediaPlayPauseButtonType: UNNotificationContentExtensionMediaPlayPa
 
 - [Customizing the Appearance of Notifications](../customizing-the-appearance-of-notifications.md)
 
-#### Discussion
+## Discussion
 
 Implement this property when you want the system to display a media playback button in your notification interface. Return an appropriate constant indicating the type of button you want. If you don’t implement this property, the system behaves as if you set the value to [`UNNotificationContentExtensionMediaPlayPauseButtonType.none`](../unnotificationcontentextensionmediaplaypausebuttontype/none.md).
 

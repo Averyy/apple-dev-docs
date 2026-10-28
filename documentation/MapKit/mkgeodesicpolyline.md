@@ -25,7 +25,7 @@ class MKGeodesicPolyline
 @interface MKGeodesicPolyline : MKPolyline
 ```
 
-#### Overview
+## Overview
 
 A geodesic polyline contains a set of points that connect end-to-end in the order that you provide them. The first and last points don’t automatically connect to each other. When displaying on a two-dimensional map view, the line segment between any two points may appear curved.
 

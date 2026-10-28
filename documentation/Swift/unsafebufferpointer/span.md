@@ -21,11 +21,11 @@ A span over the elements of this buffer.
 var span: Span<Element> { get }
 ```
 
-#### Return Value
+## Return Value
 
 A `Span` over the elements of this buffer.
 
-#### Discussion
+## Discussion
 
 The lifetime of the returned span matches the lifetime of the binding which returns it. This lifetime is a convenience, as there can be no enforcement that there is no concurrent write to the underlying memory. The programmer must ensure that the memory remains allocated, initialized and immutable for the lifetime of the returned span.
 

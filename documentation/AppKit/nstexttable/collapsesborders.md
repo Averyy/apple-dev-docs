@@ -19,7 +19,7 @@ var collapsesBorders: Bool { get set }
 @property BOOL collapsesBorders;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the text table borders are collapsible.
 

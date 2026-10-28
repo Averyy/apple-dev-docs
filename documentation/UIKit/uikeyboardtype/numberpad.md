@@ -23,7 +23,7 @@ case numberPad
 UIKeyboardTypeNumberPad
 ```
 
-#### Discussion
+## Discussion
 
 This keyboard type prominently features the numbers `0` through `9`. This keyboard type does not support auto-capitalization.
 

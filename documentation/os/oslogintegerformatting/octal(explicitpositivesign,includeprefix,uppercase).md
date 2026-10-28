@@ -21,7 +21,7 @@ Creates a custom octal format that displays the exact number of digits in the nu
 static func octal(explicitPositiveSign: Bool = false, includePrefix: Bool = false, uppercase: Bool = false) -> OSLogIntegerFormatting
 ```
 
-#### Return Value
+## Return Value
 
 A custom octal format for integers.
 

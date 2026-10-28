@@ -28,7 +28,7 @@ class HKClinicalRecord
 - [Accessing Health Records](./accessing-health-records.md)
 - [Accessing Sample Data in the Simulator](./accessing-sample-data-in-the-simulator.md)
 
-#### Overview
+## Overview
 
 The clinical record stores information about a single condition, procedure, or result. While the record’s properties expose some high-level information, the  [`fhirResource`](./hkclinicalrecord/fhirresource.md) property contains the underlying data from the user’s healthcare institution.
 

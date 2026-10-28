@@ -21,7 +21,7 @@ A point of interest.
 static var pointOfInterest: MapFeature.FeatureKind { get }
 ```
 
-#### Discussion
+## Discussion
 
 A point of interest, such as a museum, café, park, or school.
 

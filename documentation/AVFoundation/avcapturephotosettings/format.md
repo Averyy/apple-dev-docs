@@ -23,7 +23,7 @@ var format: [String : Any]? { get }
 @property (copy, readonly, nullable) NSDictionary<NSString *,id> * format;
 ```
 
-#### Discussion
+## Discussion
 
 This property is read-only—you specify a processed format when creating a settings object with the [`photoSettings`](./photosettings.md), [`init(format:)`](./init%28format%29.md), or [`init(rawPixelFormatType:processedFormat:)`](./init%28rawpixelformattype,processedformat%29.md) initializer.
 

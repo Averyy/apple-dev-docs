@@ -25,7 +25,7 @@ var includesApproximationPhrase: Bool { get set }
 @property BOOL includesApproximationPhrase;
 ```
 
-#### Discussion
+## Discussion
 
 Setting the value of this property to [`true`](../../Swift/true.md) adds phrasing to output strings to reflect that the given time value is approximate and not exact. Using this property yields more correct phrasing than simply prepending the string “About” to an output string.
 

@@ -16,7 +16,7 @@ Indicates various aspects of the device state.
 UInt32 dwState;
 ```
 
-#### Discussion
+## Discussion
 
 Can indicate zero, one, or more of the following:
 

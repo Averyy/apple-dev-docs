@@ -21,11 +21,11 @@ Fits a model to a sequence of examples.
 func fitted(to input: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, eventHandler: EventHandler? = nil) async throws -> LinearTimeSeriesForecaster<Scalar>.Model
 ```
 
-#### Return Value
+## Return Value
 
 The fitted model.
 
-#### Discussion
+## Discussion
 
 This method uses a sliding window to chunk the input features into features of [`inputWindowSize`](./inputwindowsize.md) elements and annotations of [`forecastWindowSize`](./forecastwindowsize.md) elements. If you want to use a different windowing strategy, use [`fitted(toWindows:eventHandler:)`](./fitted%28towindows,eventhandler%29.md).
 

@@ -19,7 +19,7 @@ var location: any NSTextLocation { get }
 @property (strong, readonly) id<NSTextLocation> location;
 ```
 
-#### Discussion
+## Discussion
 
 Specify the value of this property at initialization time using the [`init(textAttachment:parentView:textLayoutManager:location:)`](./init%28textattachment,parentview,textlayoutmanager,location%29.md) initializer.
 

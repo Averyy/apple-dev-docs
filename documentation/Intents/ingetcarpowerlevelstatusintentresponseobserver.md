@@ -22,7 +22,7 @@ protocol INGetCarPowerLevelStatusIntentResponseObserver : NSObjectProtocol
 @protocol INGetCarPowerLevelStatusIntentResponseObserver <NSObject>
 ```
 
-#### Overview
+## Overview
 
 This protocol allows adopting objects to provide the system with an updated power level of a vehicle. You do not adopt this protocol in your own objects. Instead, the system provides an object that adopts this protocol, and you call its [`didUpdate(getCarPowerLevelStatus:)`](./ingetcarpowerlevelstatusintentresponseobserver/didupdate%28getcarpowerlevelstatus%29.md) method to provide the vehicle’s current power level.
 

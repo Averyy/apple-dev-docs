@@ -25,11 +25,11 @@ func CFURLGetByteRangeForComponent(_ url: CFURL!, _ component: CFURLComponentTyp
 extern CFRange CFURLGetByteRangeForComponent(CFURLRef url, CFURLComponentType component, CFRange *rangeIncludingSeparators);
 ```
 
-#### Return Value
+## Return Value
 
 The range of bytes for `component` in the buffer returned by the [`CFURLGetBytes(_:_:_:)`](./cfurlgetbytes%28_,_,_%29.md) function. If `anURL` does not contain `component`, the first part of the returned range is set to [`kCFNotFound`](./kcfnotfound.md).
 
-#### Discussion
+## Discussion
 
 This function is intended to be used in conjunction with the [`CFURLGetBytes(_:_:_:)`](./cfurlgetbytes%28_,_,_%29.md) function, since the range returned is only applicable to the bytes returned by [`CFURLGetBytes(_:_:_:)`](./cfurlgetbytes%28_,_,_%29.md).
 

@@ -22,7 +22,7 @@ Performs the request on a Core Graphics image and produces observations.
 func perform(on image: CGImage, orientation: CGImagePropertyOrientation?) async throws -> Self.Result
 ```
 
-#### Return Value
+## Return Value
 
 The observation — or list of observations — the request produces.
 

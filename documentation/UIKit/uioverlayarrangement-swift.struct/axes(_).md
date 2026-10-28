@@ -19,7 +19,7 @@ Sets the axes that the arrangement supports to the axes you provide.
 func axes(_ axes: UIAxis) -> UIOverlayArrangement
 ```
 
-#### Discussion
+## Discussion
 
 For axes that you don’t include, the arrangement only displays the primary view.
 

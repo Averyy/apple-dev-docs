@@ -22,7 +22,7 @@ var isAvailable: Bool { get }
 @property (nonatomic, readonly, getter=isAvailable) BOOL available;
 ```
 
-#### Discussion
+## Discussion
 
 Available Indicates whether screen recording is available on this device.
 

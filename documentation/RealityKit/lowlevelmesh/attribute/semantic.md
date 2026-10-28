@@ -20,7 +20,7 @@ The semantic of the vertex attribute, which describes how you want RealityKit to
 var semantic: LowLevelMesh.VertexSemantic
 ```
 
-#### Discussion
+## Discussion
 
 RealityKit consults the vertex semantic when interpreting the data in your [`LowLevelMesh`](../../lowlevelmesh.md). For example, an attribute with the semantic value of [`LowLevelMesh.VertexSemantic.position`](../vertexsemantic/position.md) uses to determine the position of a vertex.
 

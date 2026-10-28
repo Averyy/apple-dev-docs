@@ -25,11 +25,11 @@ func CMAudioFormatDescriptionEqual(_ formatDescription: CMAudioFormatDescription
 extern Boolean CMAudioFormatDescriptionEqual(CMAudioFormatDescriptionRef formatDescription, CMAudioFormatDescriptionRef otherFormatDescription, CMAudioFormatDescriptionMask equalityMask, CMAudioFormatDescriptionMask *equalityMaskOut);
 ```
 
-#### Return Value
+## Return Value
 
 The result of the comparison.  True if all parts in which the caller is interested are equal. False if any of the parts in which the caller is interested are not equal.
 
-#### Discussion
+## Discussion
 
 Bits in `equalityMask` specify the caller’s interest in the equality of various parts of the descriptions. Bits set and returned in `equalityMaskOut` represent the subset of those parts that are equal. If there is any sort of error that prevents the comparison from occurring, false will be returned, and all bits in `equalityMaskOut` will be cleared. If you pass [`kCMAudioFormatDescriptionMask_All`](./kcmaudioformatdescriptionmask_all.md) in equalityMask, and `nil` for `equalityMaskOut`, this function is equivalent to `CFEqual(formatDescription, otherFormatDescription)`.
 

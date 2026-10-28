@@ -21,7 +21,7 @@ Returns a string representation of the receiver using the given locale.
 func description(with locale: Locale?) -> String
 ```
 
-#### Return Value
+## Return Value
 
 A string representation of the `Date`, using the given locale, or if the locale argument is `nil`, in the international format `YYYY-MM-DD HH:MM:SS ±HHMM`, where `±HHMM` represents the time zone offset in hours and minutes from UTC (for example, “`2001-03-24 10:45:32 +0600`”).
 

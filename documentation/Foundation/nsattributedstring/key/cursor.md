@@ -15,7 +15,7 @@ The cursor object.
 static let cursor: NSAttributedString.Key
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSCursor`](../../../AppKit/nscursor.md) object. The default value is the cursor returned by the [`iBeam`](../../../AppKit/nscursor/ibeam.md) method.
 

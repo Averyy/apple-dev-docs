@@ -21,7 +21,7 @@ A lazy `Collection` wrapper that includes the elements of an underlying collecti
 typealias LazyFilterCollection<T> = LazyFilterSequence<T> where T : Collection
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: The performance of accessing `startIndex`, `first`, any methods that depend on `startIndex`, or of advancing an index depends on how sparsely the filtering predicate is satisfied, and may not offer the usual performance given by `Collection`. Be aware, therefore, that general operations on `LazyFilterCollection` instances may not have the documented complexity.
 

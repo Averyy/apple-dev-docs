@@ -23,11 +23,11 @@ Concatenates the text in two text views in a new text view.
 static func + (lhs: Text, rhs: Text) -> Text
 ```
 
-#### Return Value
+## Return Value
 
 A new text view containing the combined contents of the two input text views.
 
-#### Discussion
+## Discussion
 
 > **Attention**:  The `+` on `Text` has been deprecated.
 >

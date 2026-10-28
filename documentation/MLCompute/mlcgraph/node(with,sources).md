@@ -23,7 +23,7 @@ func node(with layer: MLCLayer, sources: [MLCTensor]) -> MLCTensor?
 - (MLCTensor *) nodeWithLayer:(MLCLayer *) layer sources:(NSArray<MLCTensor *> *) sources;
 ```
 
-#### Return Value
+## Return Value
 
 A result tensor.
 

@@ -18,7 +18,7 @@ typedef struct MPTaskInfo {
 } MPTaskInfo;
 ```
 
-#### Overview
+## Overview
 
 If you specify the `kMPTaskStateTaskInfo` constant when calling the function [`MPExtractTaskState`](./api-1585718-mpextracttaskstate.md) , Multiprocessing Services returns state information in an `MPTaskInfo` structure. 
 

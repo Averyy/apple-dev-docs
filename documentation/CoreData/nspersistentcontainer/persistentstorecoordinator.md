@@ -29,7 +29,7 @@ var persistentStoreCoordinator: NSPersistentStoreCoordinator { get }
 
 - [Setting up a Core Data stack](../setting-up-a-core-data-stack.md)
 
-#### Discussion
+## Discussion
 
 When the persistent container is initialized, it creates a persistent store coordinator as part of that initialization. That persistent store coordinator is referenced in this property.
 

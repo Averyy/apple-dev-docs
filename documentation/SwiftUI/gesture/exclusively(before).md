@@ -22,7 +22,7 @@ nonisolated
 func exclusively<Other>(before other: Other) -> ExclusiveGesture<Self, Other> where Other : Gesture
 ```
 
-#### Return Value
+## Return Value
 
 A gesture that’s the result of combining two gestures where only one of them can succeed. SwiftUI gives precedence to the first gesture.
 

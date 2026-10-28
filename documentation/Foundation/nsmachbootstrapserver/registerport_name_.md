@@ -16,11 +16,11 @@ Registers a port with a specified name.
 - (BOOL) registerPort:(NSPort *) port name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the registration succeeded, [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 Once registered, a port cannot be unregistered; instead, you need to invalidate the port.
 

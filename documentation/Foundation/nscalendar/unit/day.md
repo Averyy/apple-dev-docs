@@ -25,7 +25,7 @@ static var day: NSCalendar.Unit { get }
 NSCalendarUnitDay
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an `NSInteger`. Equal to `kCFCalendarUnitDay`.
 

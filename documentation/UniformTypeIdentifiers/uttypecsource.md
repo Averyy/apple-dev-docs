@@ -21,7 +21,7 @@ A type that represents a C source code file.
 extern UTType * const UTTypeCSource;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.c-source`.
 

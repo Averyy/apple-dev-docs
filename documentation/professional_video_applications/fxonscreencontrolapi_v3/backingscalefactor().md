@@ -20,11 +20,11 @@ func backingScaleFactor() -> Double
 - (double) backingScaleFactor;
 ```
 
-#### Return Value
+## Return Value
 
 The scale factor.
 
-#### Discussion
+## Discussion
 
 Vertex coordinates already scale properly, but this method can be used for other types of drawings. For example, if you are preparing a texture on the CPU and uploading it, this can tell you how large to make the texture before uploading it.
 

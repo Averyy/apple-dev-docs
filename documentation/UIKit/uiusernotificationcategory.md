@@ -24,7 +24,7 @@ class UIUserNotificationCategory
 @interface UIUserNotificationCategory : NSObject
 ```
 
-#### Overview
+## Overview
 
 Each instance of `UIUserNotificationCategory` represents a group of actions to display in conjunction with a single notification. The title of each action is uses as the title of a button in the alert displayed to the user. When the user taps a button, the system reports the selected action to your app delegate.
 

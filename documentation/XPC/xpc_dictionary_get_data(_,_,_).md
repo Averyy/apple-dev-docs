@@ -25,7 +25,7 @@ func xpc_dictionary_get_data(_ xdict: xpc_object_t, _ key: UnsafePointer<CChar>,
 extern const void *xpc_dictionary_get_data(xpc_object_t xdict, const char *key, size_t *length);
 ```
 
-#### Return Value
+## Return Value
 
 The underlying raw data for the specified key. NULL if the value for the specified key is not a data value or if there is no value for the specified key.
 

@@ -17,7 +17,7 @@ A list of authority key identifiers that correspond to relying party authorizers
 var supportedAuthorityKeyIdentifiers: [Data]
 ```
 
-#### Discussion
+## Discussion
 
 A relying party that’s authorized by an authority in this list of key identifiers can receive this document during a presentment.
 

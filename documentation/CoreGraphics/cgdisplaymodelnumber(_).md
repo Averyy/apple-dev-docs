@@ -20,11 +20,11 @@ func CGDisplayModelNumber(_ display: CGDirectDisplayID) -> UInt32
 extern uint32_t CGDisplayModelNumber(CGDirectDisplayID display);
 ```
 
-#### Return Value
+## Return Value
 
 A model number for the monitor associated with the specified display, or a constant to indicate an exception—see the discussion below.
 
-#### Discussion
+## Discussion
 
 This function uses I/O Kit to identify the monitor associated with the specified display. The return value depends on the following:
 

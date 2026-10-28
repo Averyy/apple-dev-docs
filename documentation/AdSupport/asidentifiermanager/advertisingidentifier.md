@@ -23,7 +23,7 @@ var advertisingIdentifier: UUID { get }
 @property (nonatomic, readonly) NSUUID * advertisingIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The [`advertisingIdentifier`](./advertisingidentifier.md) is an alphanumeric string that’s unique to each device, and which you only use for advertising. Use this string for frequency capping, attribution, conversion events, estimating the number of unique users, advertising fraud detection, and debugging. On devices running iOS 14.5 and later and iPadOS 14.5 and later, your app must request tracking authorization before it can get the advertising identifier. For more information on getting the advertising identifier, see [AdSupport](../AdSupport.md).
 

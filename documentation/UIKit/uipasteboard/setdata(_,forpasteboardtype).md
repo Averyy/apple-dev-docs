@@ -22,7 +22,7 @@ func setData(_ data: Data, forPasteboardType pasteboardType: String)
 - (void) setData:(NSData *) data forPasteboardType:(NSString *) pasteboardType;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to put raw data on the pasteboard. For example, you could archive a graph of model objects and pass the resulting [`NSData`](../../Foundation/nsdata.md) object to a related app via a pasteboard using a custom pasteboard type. (To put objects—such as [`NSString`](../../Foundation/nsstring.md), [`NSArray`](../../Foundation/nsarray.md), [`NSDictionary`](../../Foundation/nsdictionary.md), [`NSDate`](../../Foundation/nsdate.md), [`NSNumber`](../../Foundation/nsnumber.md), [`UIImage`](../uiimage.md), or [`NSURL`](../../Foundation/nsurl.md) objects—on the pasteboard, use the [`setValue(_:forPasteboardType:)`](./setvalue%28_,forpasteboardtype%29.md) method.) This method writes data for the first item in the pasteboard. Calling this method replaces any items currently in the pasteboard.
 

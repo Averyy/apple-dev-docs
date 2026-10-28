@@ -26,7 +26,7 @@ static let typeIdentifier: UIFontDescriptor.FeatureKey
 extern UIFontDescriptorFeatureKey const UIFontFeatureSelectorIdentifierKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is an [`NSNumber`](../../../Foundation/nsnumber.md) object specifying the ligature, character shape, or other font feature.
 

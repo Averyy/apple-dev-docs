@@ -16,7 +16,7 @@ Notifies the event service that an updated report is available from the HID devi
 virtual void ReportAvailable(uint64_t timestamp, uint32_t reportID, uint32_t reportLength, IOHIDReportType type, IOMemoryDescriptor *report, OSAction *action);
 ```
 
-#### Discussion
+## Discussion
 
 Implement a custom version of this method in your event service. Use the [`TYPE`](../../DriverKit/type.md) macro to let the system know that your method conforms to this prototype.
 

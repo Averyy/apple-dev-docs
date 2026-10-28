@@ -25,7 +25,7 @@ func offsetBy(dx: Double, dy: Double) -> MKMapRect
 extern MKMapRect MKMapRectOffset(MKMapRect rect, double dx, double dy);
 ```
 
-#### Return Value
+## Return Value
 
 The offset rectangle. If the original rectangle is `null`, that rectangle returns instead.
 

@@ -4,7 +4,7 @@
 
 Enable visual and audible responses to programmatic or environmental events.
 
-#### Overview
+## Overview
 
 Create a `Preliminary_Behavior` to uniquely pair triggers with actions. You can configure some of the triggers and actions, like the settings for a proximity trigger, the velocity of an impulse action, and the audio file for background music or sound effects.
 

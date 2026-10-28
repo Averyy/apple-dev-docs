@@ -23,7 +23,7 @@ static func automatic<DataValue>(includesZero: Bool? = nil, reversed: Bool? = ni
 
 Available when `Self` is `AutomaticScaleDomain`.
 
-#### Discussion
+## Discussion
 
 You can modify the inferred scale domain with a function.
 

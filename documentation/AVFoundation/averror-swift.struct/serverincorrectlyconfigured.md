@@ -21,7 +21,7 @@ The configuration of the HTTP server that streams the media resource isn’t cor
 static var serverIncorrectlyConfigured: AVError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error might indicate that the server doesn’t support byte range requests.
 

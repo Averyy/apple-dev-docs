@@ -27,7 +27,7 @@ var highlightView: any UIView & UITextSelectionHighlightView { get set }
 
 - [Adopting system selection UI in custom text views](../adopting-system-selection-ui-in-custom-text-views.md)
 
-#### Discussion
+## Discussion
 
 When you install the interaction on your text input view, the system installs a view in this property that provides the standard system highlight appearance for selections. You can replace this view with a custom one you provide to change the appearance of selections.
 

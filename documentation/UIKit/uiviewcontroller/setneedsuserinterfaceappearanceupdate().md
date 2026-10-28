@@ -19,7 +19,7 @@ func setNeedsUserInterfaceAppearanceUpdate()
 - (void) setNeedsUserInterfaceAppearanceUpdate;
 ```
 
-#### Discussion
+## Discussion
 
 UIKit calls this method to let the view controller know when system-level interface style changes occur. You can also call it to let UIKit know when you change your view controller in a way that affects the preferred user interface style.
 

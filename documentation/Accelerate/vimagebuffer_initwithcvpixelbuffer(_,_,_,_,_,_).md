@@ -25,11 +25,11 @@ func vImageBuffer_InitWithCVPixelBuffer(_ buffer: UnsafeMutablePointer<vImage_Bu
 vImage_Error vImageBuffer_InitWithCVPixelBuffer(vImage_Buffer *buffer, vImage_CGImageFormat *desiredFormat, CVPixelBufferRef cvPixelBuffer, vImageCVImageFormatRef cvImageFormat, const CGFloat *backgroundColor, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 Some Core Video pixel buffers and image formats have incompletely specified color information that prevents [`vImageBuffer_InitWithCVPixelBuffer(_:_:_:_:_:_:)`](./vimagebuffer_initwithcvpixelbuffer%28_,_,_,_,_,_%29.md) from performing the conversion. In this situation, the function returns one of the format errors below. To proceed, create a [`vImageCVImageFormat`](./vimagecvimageformat.md) instance, add the missing information, and pass the image format instance as the `cvImageFormat` parameter to this function. It’s possible that more than one piece of information is missing.
 
@@ -37,7 +37,7 @@ Some Core Video pixel buffers and image formats have incompletely specified colo
 - **[`kvImageCVImageFormat_ChromaSiting`](./kvimagecvimageformat_chromasiting.md)**: The chrominance siting information is missing from the `cvPixelBuffer` or the `vImageCVImageFormat`. Use [`vImageCVImageFormat_SetChromaSiting(_:_:)`](./vimagecvimageformat_setchromasiting%28_,_%29.md) to set the chrominance siting on an image format.
 - **[`kvImageCVImageFormat_ColorSpace`](./kvimagecvimageformat_colorspace.md)**: The color space that contains primaries and transfer function is missing from the `cvPixelBuffer` or the `vImageCVImageFormat`. Use [`vImageCVImageFormat_SetColorSpace(_:_:)`](./vimagecvimageformat_setcolorspace%28_,_%29.md) to set the color space on an image format.
 
-#### Discussion
+## Discussion
 
 For compatibility with Core Video, vImage substitutes gamma `1/1.961` for [`kCVImageBufferTransferFunction_ITU_R_709_2`](../CoreVideo/kcvimagebuffertransferfunction_itu_r_709_2.md) and substitutes the ITU-R BT.709-5 transfer function for [`kCVImageBufferTransferFunction_SMPTE_240M_1995`](../CoreVideo/kcvimagebuffertransferfunction_smpte_240m_1995.md). You can manually set the transfer function using [`vImageCreateRGBColorSpaceWithPrimariesAndTransferFunction(_:_:_:_:_:)`](./vimagecreatergbcolorspacewithprimariesandtransferfunction%28_,_,_,_,_%29.md) and [`vImageCVImageFormat_SetColorSpace(_:_:)`](./vimagecvimageformat_setcolorspace%28_,_%29.md) to avoid this substitution.
 

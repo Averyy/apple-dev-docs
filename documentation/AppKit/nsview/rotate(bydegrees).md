@@ -19,7 +19,7 @@ func rotate(byDegrees angle: CGFloat)
 - (void) rotateByAngle:(CGFloat) angle;
 ```
 
-#### Discussion
+## Discussion
 
 See the [`boundsRotation`](./boundsrotation.md) method description for more information. This method neither redisplays the view nor marks it as needing display. You must do this yourself by calling the [`display()`](./display%28%29.md) method or setting the [`needsDisplay`](./needsdisplay.md) property.
 

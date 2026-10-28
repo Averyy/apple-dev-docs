@@ -20,7 +20,7 @@ A component that can load another entity from a file.
 struct ReferenceComponent
 ```
 
-#### Overview
+## Overview
 
 You can use a `ReferenceComponent` to load other entities from files in your app’s main bundle. This allows you to load complex scenes incrementally, resulting in more responsive apps. It also enables collaborative workflows so you can split a complex scene into separate pieces that different teams own.
 

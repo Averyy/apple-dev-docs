@@ -23,7 +23,7 @@ var DISPATCH_VNODE_LINK: Int32 { get }
 #define DISPATCH_VNODE_LINK
 ```
 
-#### Discussion
+## Discussion
 
 The file-system object link count changed.
 

@@ -26,7 +26,7 @@ var directoryURL: URL? { get set }
 
 - [Providing access to directories](../providing-access-to-directories.md)
 
-#### Discussion
+## Discussion
 
 Set this property to specify the starting directory for the document picker. This property defaults to `nil`. If you specify a value, the document picker tries to start at the specified directory. Otherwise, it starts with the last directory chosen by the user.
 

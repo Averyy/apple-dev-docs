@@ -20,7 +20,7 @@ Creates a portal component with a target entity and an optional clipping plane.
 init(target: Entity, clippingPlane: PortalComponent.ClippingPlane? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 This initializes the [`PortalComponent`](../portalcomponent.md) with the given target entity, and an optional clipping plane. The target entity needs a [`WorldComponent`](../worldcomponent.md) in its component set.
 

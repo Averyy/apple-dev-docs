@@ -5,7 +5,7 @@
 
 Store a QTVR track, an object track, and an object image track in a single-node object movie.
 
-#### Overview
+## Overview
 
 Every object movie contains at least three tracks: a QTVR track, an object track, and an object image track.
 

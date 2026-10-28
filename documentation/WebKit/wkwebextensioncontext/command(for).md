@@ -19,11 +19,11 @@ func command(for event: NSEvent) -> WKWebExtension.Command?
 - (WKWebExtensionCommand *) commandForEvent:(NSEvent *) event;
 ```
 
-#### Return Value
+## Return Value
 
 The command associated with the event, or `nil` if there is no such command.
 
-#### Discussion
+## Discussion
 
 Returns the command that corresponds to the provided event, if such a command exists. This provides a way to programmatically determine what action would occur for a given event, without triggering the command.
 

@@ -15,7 +15,7 @@ A reference to points of interest on a tracked accessory.
 struct AccessoryLocation
 ```
 
-#### Overview
+## Overview
 
 Accessories may include locations such as buttons, and thumb sticks, and grips.
 

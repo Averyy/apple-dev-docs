@@ -24,7 +24,7 @@ Creates a sectioned fetch request for a specified entity description, based on a
 
 Available when `SectionIdentifier` conforms to `Hashable` and `Result` conforms to `NSFetchRequestResult`.
 
-#### Discussion
+## Discussion
 
 Use this initializer if you need to explicitly specify the entity type for the request. If you specify a placeholder `Result` type in the request declaration, use the [`init(sectionIdentifier:sortDescriptors:predicate:animation:)`](./init%28sectionidentifier,sortdescriptors,predicate,animation%29.md) initializer to let the request infer the entity type. If you need more control over the fetch request configuration, use [`init(fetchRequest:sectionIdentifier:animation:)`](./init%28fetchrequest,sectionidentifier,animation%29.md).
 

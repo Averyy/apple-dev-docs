@@ -19,11 +19,11 @@ convenience init(forSupplementaryViewOfKind elementKind: NSCollectionView.Supple
 + (instancetype) layoutAttributesForSupplementaryViewOfKind:(NSCollectionViewSupplementaryElementKind) elementKind withIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 A new layout attributes object configured with the initial attributes for the supplementary view.
 
-#### Discussion
+## Discussion
 
 Call this method when you need to create a layout attributes object for a supplementary view in a collection view. Supplementary views are a secondary type of content that display data related to a specific section. For example, header and footer views in a grid layout implemented using supplementary views. This method uses the parameters to set the initial values of the [`indexPath`](./indexpath.md) and [`representedElementKind`](./representedelementkind.md) properties the returned object.
 

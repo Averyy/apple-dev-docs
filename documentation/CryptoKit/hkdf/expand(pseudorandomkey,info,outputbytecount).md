@@ -21,11 +21,11 @@ Expands cryptographically strong key material into a derived symmetric key.
 static func expand<PRK, Info>(pseudoRandomKey prk: PRK, info: Info?, outputByteCount: Int) -> SymmetricKey where PRK : ContiguousBytes, Info : DataProtocol
 ```
 
-#### Return Value
+## Return Value
 
 The derived symmetric key.
 
-#### Discussion
+## Discussion
 
 Generate cryptographically strong key material to use with this function by calling `extract(inputKeyMaterial:salt:)`.
 

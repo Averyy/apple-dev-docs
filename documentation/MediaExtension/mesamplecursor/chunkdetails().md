@@ -19,11 +19,11 @@ optional func chunkDetails() throws -> MESampleCursorChunk
 - (MESampleCursorChunk *) chunkDetailsReturningError:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A sample cursor chunk.
 
-#### Discussion
+## Discussion
 
 If the sample resides in a contiguous chunk of the file among similar samples, this method returns information about that chunk.
 

@@ -24,7 +24,7 @@ class MDLObjectContainer
 @interface MDLObjectContainer : NSObject
 ```
 
-#### Overview
+## Overview
 
 Model I/O uses the [`MDLObjectContainerComponent`](./mdlobjectcontainercomponent.md) protocol to create object hierarchy relationships for meshes, lights, cameras, and containers loaded from a [`MDLAsset`](./mdlasset.md) instance. To create your own containers—for example, to reference in-memory representations, offline databases, or custom asset file formats—create [`MDLObjectContainer`](./mdlobjectcontainer.md) subclasses and add them to a [`MDLObject`](./mdlobject.md) instance using its [`setComponent(_:for:)`](./mdlobject/setcomponent%28_,for%29.md) method.
 

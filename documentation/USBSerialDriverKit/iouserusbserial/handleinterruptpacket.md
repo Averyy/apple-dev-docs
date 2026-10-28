@@ -15,7 +15,7 @@ Processes an interrupt packet that originated from the device.
 virtual void handleInterruptPacket(const uint8_t *packet, uint32_t size);
 ```
 
-#### Discussion
+## Discussion
 
 Override this method if you want to process interrupt packets sent by the device. The default implementation of this method does nothing.
 

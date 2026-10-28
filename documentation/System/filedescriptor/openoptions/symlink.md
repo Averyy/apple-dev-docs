@@ -25,7 +25,7 @@ static var symlink: FileDescriptor.OpenOptions { get }
 
 - [Adopting Swift File Options](../../adopting-file-options.md)
 
-#### Discussion
+## Discussion
 
 If you specify this option and the file path you pass to doc:FileDescriptor/open(_:_:options:permissions:retryOnInterrupt:)-2266j is a symbolic link, then the link itself is opened instead of what it links to.
 

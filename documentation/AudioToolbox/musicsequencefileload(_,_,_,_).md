@@ -24,7 +24,7 @@ func MusicSequenceFileLoad(_ inSequence: MusicSequence, _ inFileRef: CFURL, _ in
 extern OSStatus MusicSequenceFileLoad(MusicSequence inSequence, CFURLRef inFileRef, MusicSequenceFileTypeID inFileTypeHint, MusicSequenceLoadFlags inFlags);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 

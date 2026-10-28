@@ -25,7 +25,7 @@ var CbCrMax: Int32
 int32_t CbCrMax;
 ```
 
-#### Discussion
+## Discussion
 
 All chroma values greater than this value will be clamped to this value.
 

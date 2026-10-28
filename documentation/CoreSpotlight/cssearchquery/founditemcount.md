@@ -23,7 +23,7 @@ var foundItemCount: Int { get }
 @property (readonly) NSUInteger foundItemCount;
 ```
 
-#### Discussion
+## Discussion
 
 As Spotlight finds matches to the query string, it updates the value of this property and delivers the new results to the handler in the [`foundItemsHandler`](./founditemshandler.md) property. This value reflects the total number of matching items, including the number of items the query delivered to your handler block previously.
 

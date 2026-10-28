@@ -23,7 +23,7 @@ The custom link out style that informs the type of disclosure notice to display.
 enum NoticeType
 ```
 
-#### Overview
+## Overview
 
 Provide a notice type value when you call [`showNotice(type:)`](./shownotice%28type%29.md).
 

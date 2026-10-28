@@ -23,7 +23,7 @@ Returns a new pooling layer.
 convenience init?(type poolingType: BNNS.PoolingType, input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, bias: BNNSNDArrayDescriptor?, activation: BNNS.ActivationFunction, kernelSize: (width: Int, height: Int), stride: (x: Int, y: Int), padding: BNNS.ConvolutionPadding, filterParameters: BNNSFilterParameters? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  The number of input channels must be equal to number of output channels. The pooling layer supports `float16` and `float`, and the input data type must be equal to the output data type. The pooling layer only supports dilation stride for max and unmax pooling functions and in that case, data type must be `float`.
 

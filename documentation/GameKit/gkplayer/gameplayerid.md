@@ -36,7 +36,7 @@ var gamePlayerID: String { get }
 
 - [Protecting the player’s privacy using scoped identifiers](../protecting-the-player-s-privacy-using-scoped-identifiers.md)
 
-#### Discussion
+## Discussion
 
 This identifier is unique to this game instance if the [`scopedIDsArePersistent()`](./scopedidsarepersistent%28%29.md) method returns [`false`](../../Swift/false.md). Otherwise, this identifier is the same across all game instances. An instance is the time between when the game launches and when the game terminates.
 

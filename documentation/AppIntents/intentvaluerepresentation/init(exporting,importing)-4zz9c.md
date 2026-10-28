@@ -23,7 +23,7 @@ init(exporting: @escaping @Sendable (Item) async throws -> IntentValue, importin
 
 Available when `Item` conforms to `Transferable` and `IntentValue` conforms to `_SystemIntentValue`.
 
-#### Example
+## Example
 
 ```swift
 struct LocationEntity: AppEntity, Transferable {

@@ -23,7 +23,7 @@ var taskHint: SFSpeechRecognitionTaskHint { get set }
 @property (nonatomic) SFSpeechRecognitionTaskHint taskHint;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`SFSpeechRecognitionTaskHint.unspecified`](../sfspeechrecognitiontaskhint/unspecified.md). For a valid list of values, see [`SFSpeechRecognitionTaskHint`](../sfspeechrecognitiontaskhint.md).
 

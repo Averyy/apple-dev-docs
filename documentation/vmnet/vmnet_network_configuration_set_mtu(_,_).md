@@ -20,7 +20,7 @@ func vmnet_network_configuration_set_mtu(_ config: vmnet_network_configuration_r
 vmnet_return_t vmnet_network_configuration_set_mtu(vmnet_network_configuration_ref config, uint32_t mtu);
 ```
 
-#### Return Value
+## Return Value
 
 VMNET_SUCCESS on success, error otherwise.
 

@@ -24,7 +24,7 @@ var borderAgentID: Data? { get }
 @property (nonatomic, readonly, nullable) NSData * borderAgentID;
 ```
 
-#### Discussion
+## Discussion
 
 This property’s value is the MAC Extended Address, a random identifier that the active Thread network Thread Border Router generates.
 

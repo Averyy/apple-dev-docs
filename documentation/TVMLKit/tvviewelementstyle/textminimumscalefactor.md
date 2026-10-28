@@ -21,7 +21,7 @@ var textMinimumScaleFactor: CGFloat { get }
 @property (nonatomic, readonly) CGFloat textMinimumScaleFactor;
 ```
 
-#### Discussion
+## Discussion
 
 The minimum size is defined as a percentage of the original text size.
 

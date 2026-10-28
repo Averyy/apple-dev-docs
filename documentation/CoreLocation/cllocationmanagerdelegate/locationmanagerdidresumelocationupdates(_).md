@@ -23,7 +23,7 @@ optional func locationManagerDidResumeLocationUpdates(_ manager: CLLocationManag
 - (void) locationManagerDidResumeLocationUpdates:(CLLocationManager *) manager;
 ```
 
-#### Discussion
+## Discussion
 
 When you restart location services after an automatic pause, Core Location calls this method to notify your app that services have resumed. You are responsible for restarting location services in your app. Core Location does not resume updates automatically after it pauses them. For tips on how to restart location services when a pause occurs, see the discussion of the [`locationManagerDidPauseLocationUpdates(_:)`](./locationmanagerdidpauselocationupdates%28_%29.md) method.
 

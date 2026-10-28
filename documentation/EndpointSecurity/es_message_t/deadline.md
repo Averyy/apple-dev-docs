@@ -20,7 +20,7 @@ var deadline: UInt64
 uint64_t deadline;
 ```
 
-#### Discussion
+## Discussion
 
 If you fail to respond to an event before this deadline, Endpoint Security may terminate the client process, or restart the process if it’s a system extension. If your client repeatedly misses deadlines, Endpoint Security may refuse new connections from [`es_new_client(_:_:)`](../es_new_client%28_,_%29.md) altogether.
 

@@ -23,7 +23,7 @@ var kCTFontTableBASE: Int { get }
 kCTFontTableBASE
 ```
 
-#### Discussion
+## Discussion
 
 Font table tag for the font baseline.
 

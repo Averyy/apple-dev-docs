@@ -29,7 +29,7 @@ init(get: @escaping @isolated(any) @Sendable () -> Value, set: @escaping @isolat
 init(get: @escaping @isolated(any) @Sendable () -> Value, set: @escaping @isolated(any) @Sendable (Value, Transaction) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 A binding conforms to Sendable only if its wrapped value type also conforms to Sendable. It is always safe to pass a sendable binding between different concurrency domains. However, reading from or writing to a binding’s wrapped value from a different concurrency domain may or may not be safe, depending on how the binding was created. SwiftUI will issue a warning at runtime if it detects a binding being used in a way that may compromise data safety.
 

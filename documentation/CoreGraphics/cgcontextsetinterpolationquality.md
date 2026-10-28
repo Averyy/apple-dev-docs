@@ -21,7 +21,7 @@ Sets the level of interpolation quality for a graphics context.
 extern void CGContextSetInterpolationQuality(CGContextRef c, CGInterpolationQuality quality);
 ```
 
-#### Discussion
+## Discussion
 
 Interpolation quality is merely a hint to the context—not all contexts support all interpolation quality levels.
 

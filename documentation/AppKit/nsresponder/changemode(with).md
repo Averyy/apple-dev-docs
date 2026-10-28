@@ -19,7 +19,7 @@ func changeMode(with event: NSEvent)
 - (void) changeModeWithEvent:(NSEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation passes the event to the next responder.
 

@@ -30,7 +30,7 @@ func recoverActiveWorkoutSession() async throws -> HKWorkoutSession?
 
 - [Running workout sessions](../running-workout-sessions.md)
 
-#### Discussion
+## Discussion
 
 If your app crashes during an active workout session, the system calls your extension delegate’s [`handleActiveWorkoutRecovery()`](../../WatchKit/wkextensiondelegate/handleactiveworkoutrecovery%28%29.md) method the next time your app launches. To recover the workout session, call [`recoverActiveWorkoutSession(completion:)`](./recoveractiveworkoutsession%28completion%29.md) from your extension delegate’s [`handleActiveWorkoutRecovery()`](../../WatchKit/wkextensiondelegate/handleactiveworkoutrecovery%28%29.md) method. HealthKit then attempts to restore the previous workout session, returning either a new session object or an error to the completion block.
 

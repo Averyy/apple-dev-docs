@@ -24,7 +24,7 @@ func playPattern(from data: Data) throws
 - (BOOL) playPatternFromData:(NSData *) data error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 Start the engine prior to calling this method to provide low-latency playback. If the engine isn’t already running when you call this method, the system starts it, which can result in a significant playback delay.
 

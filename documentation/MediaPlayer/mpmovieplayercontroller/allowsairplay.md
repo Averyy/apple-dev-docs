@@ -23,7 +23,7 @@ var allowsAirPlay: Bool { get set }
 @property (nonatomic) BOOL allowsAirPlay;
 ```
 
-#### Discussion
+## Discussion
 
 A movie player supports wireless movie playback to AirPlay-enabled hardware. When enabled, the user can select AirPlay-enabled hardware in the Control Panel when such hardware is in range.
 

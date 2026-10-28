@@ -17,7 +17,7 @@ Quantization modes for weight compression in neural networks.
 enum QuantizationMode
 ```
 
-#### Overview
+## Overview
 
 Quantization reduces the precision of model weights to decrease memory usage and potentially improve inference speed. Different modes use different strategies for mapping full-precision values to lower-precision representations.
 

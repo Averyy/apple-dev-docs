@@ -15,7 +15,7 @@ An algorithm that uses timestamp values as-is.
 Raw
 ```
 
-#### Discussion
+## Discussion
 
 Under this algorithm, the Host doesn’t apply any filtering to the time stamps returned from [`GetCurrentZeroTimestamp`](../../iouseraudioclockdevice/getcurrentzerotimestamp.md).
 

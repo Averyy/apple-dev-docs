@@ -14,7 +14,7 @@
 #define kIOPropertyBusVoltageKey
 ```
 
-#### Discussion
+## Discussion
 
 This key defines the current bus voltage for the device in mV
 

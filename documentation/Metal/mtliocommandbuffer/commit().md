@@ -25,7 +25,7 @@ func commit()
 - (void) commit;
 ```
 
-#### Discussion
+## Discussion
 
 If you haven’t already called [`enqueue()`](./enqueue%28%29.md) for the command buffer, the [`commit()`](./commit%28%29.md) method enqueues it at the next position in the input/output command queue.
 

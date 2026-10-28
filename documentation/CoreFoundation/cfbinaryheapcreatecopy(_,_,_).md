@@ -25,7 +25,7 @@ func CFBinaryHeapCreateCopy(_ allocator: CFAllocator!, _ capacity: CFIndex, _ he
 extern CFBinaryHeapRefCFBinaryHeapCreateCopy(CFAllocatorRef allocator, CFIndex capacity, CFBinaryHeapRef heap);
 ```
 
-#### Return Value
+## Return Value
 
 A new `CFBinaryHeap` object holding the same values as `heap`. The new binary heap uses the same callbacks as `heap`. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

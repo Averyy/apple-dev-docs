@@ -23,11 +23,11 @@ func snapshotView(afterScreenUpdates afterUpdates: Bool) -> UIView?
 - (UIView *) snapshotViewAfterScreenUpdates:(BOOL) afterUpdates;
 ```
 
-#### Return Value
+## Return Value
 
 A new view object based on a snapshot of the current view’s rendered contents.
 
-#### Discussion
+## Discussion
 
 This method very efficiently captures the current rendered appearance of a view and uses it to build a new snapshot view. You can use the returned view as a visual stand-in for the current view in your app. For example, you might use a snapshot view for animations where updating a large view hierarchy might be expensive. Because the content is captured from the already rendered content, this method reflects the current visual appearance of the view and is not updated to reflect animations that are scheduled or in progress. However, calling this method is faster than trying to render the contents of the current view into a bitmap image yourself.
 

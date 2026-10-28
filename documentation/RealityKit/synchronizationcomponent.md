@@ -20,7 +20,7 @@ A component that synchronizes an entity between processes and networked applicat
 struct SynchronizationComponent
 ```
 
-#### Overview
+## Overview
 
 An entity acquires a [`SynchronizationComponent`](./synchronizationcomponent.md) instance by adopting the [`HasSynchronization`](./hassynchronization.md) protocol. All entities have this component because the [`Entity`](./entity.md) base class adopts the protocol.
 

@@ -25,7 +25,7 @@ optional func renderer(_ renderer: any SCNSceneRenderer, didRenderScene scene: S
 - (void) renderer:(id<SCNSceneRenderer>) renderer didRenderScene:(SCNScene *) scene atTime:(NSTimeInterval) time;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to perform custom drawing after SceneKit has rendered a scene—for example, to draw overlay content on top of SceneKit content. You should only execute Metal or OpenGL drawing commands (and any setup required to perform them) in this method—the results of modifying SceneKit objects in this method are undefined.
 

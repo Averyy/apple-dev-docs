@@ -24,7 +24,7 @@ var calendarIdentifier: String { get }
 @property (nonatomic, readonly) NSString * calendarIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 This property is set when the calendar is created and can be used as a local identifier. Use [`calendar(withIdentifier:)`](../ekeventstore/calendar%28withidentifier%29.md) to get a calendar with the specified identifier.
 

@@ -15,7 +15,7 @@ A Boolean value that indicates if a person can configure a microphone mode regar
 - **Name**: `NSAlwaysAllowMicrophoneModeControl`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 When your app is in the foreground, use this key to allow someone to configure their microphone mode — automatic, standard, voice isolation, or wide spectrum — before activating the microphone. For example, a person can configure the microphone mode to voice isolation before starting a call in your teleconferencing app.
 

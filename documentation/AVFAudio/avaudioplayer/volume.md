@@ -25,7 +25,7 @@ var volume: Float { get set }
 @property float volume;
 ```
 
-#### Discussion
+## Discussion
 
 This property supports values ranging from `0.0` for silence to `1.0` for full volume.
 

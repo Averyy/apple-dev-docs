@@ -21,7 +21,7 @@ Creates a low-resolution mask from the instances you specify.
 func generateMask(for instances: IndexSet) throws -> CVPixelBuffer
 ```
 
-#### Return Value
+## Return Value
 
 The pixel buffer that contains the mask.
 

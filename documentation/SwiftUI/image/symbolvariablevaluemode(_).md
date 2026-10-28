@@ -21,7 +21,7 @@ Sets the variable value mode mode for symbol images within this view.
 func symbolVariableValueMode(_ mode: SymbolVariableValueMode?) -> Image
 ```
 
-#### Return Value
+## Return Value
 
 A view that uses the symbol variable value mode you supply.
 

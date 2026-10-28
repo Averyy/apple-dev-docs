@@ -23,7 +23,7 @@ var frictionTorque: CGFloat { get set }
 @property (nonatomic, readwrite) CGFloat frictionTorque;
 ```
 
-#### Discussion
+## Discussion
 
 For attachments where each item rotates around an anchor point, use this property to specify the resistance to that rotation. The default value of this property is `0.0`, which causes items to rotate freely with even very small impulses. Higher torque values increase the amount of force needed to cause rotation.
 

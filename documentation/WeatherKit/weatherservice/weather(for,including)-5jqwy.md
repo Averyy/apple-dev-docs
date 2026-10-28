@@ -22,11 +22,11 @@ Returns the weather forecast for the requested location.
 final func weather<each T>(for location: CLLocation, including dataSet: repeat WeatherQuery<each T>) async throws -> (repeat each T) where repeat each T : Sendable
 ```
 
-#### Return Value
+## Return Value
 
 The requested weather data set.
 
-#### Discussion
+## Discussion
 
 > **Throws**: Weather data error `WeatherError`
 

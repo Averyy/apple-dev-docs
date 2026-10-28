@@ -23,7 +23,7 @@ var maxBracketedCaptureStillImageCount: Int { get }
 @property (nonatomic, readonly) NSUInteger maxBracketedCaptureStillImageCount;
 ```
 
-#### Discussion
+## Discussion
 
 AVCaptureStillImageOutput can only satisfy a limited number of image requests in a single bracket without exhausting system resources.
 

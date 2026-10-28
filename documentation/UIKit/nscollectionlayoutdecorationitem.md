@@ -24,7 +24,7 @@ class NSCollectionLayoutDecorationItem
 @interface NSCollectionLayoutDecorationItem : NSCollectionLayoutItem
 ```
 
-#### Overview
+## Overview
 
 Each type of decoration item must have a unique element kind. Consider tracking these strings together in a way that makes it straightforward to identify each element, for example:
 

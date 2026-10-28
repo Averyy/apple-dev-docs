@@ -25,11 +25,11 @@ func CTParagraphStyleGetValueForSpecifier(_ paragraphStyle: CTParagraphStyle, _ 
 extern bool CTParagraphStyleGetValueForSpecifier(CTParagraphStyleRef paragraphStyle, CTParagraphStyleSpecifier spec, size_t valueBufferSize, void *valueBuffer);
 ```
 
-#### Return Value
+## Return Value
 
 `True` if `valueBuffer` was successfully filled; otherwise, `False`, indicating that one or more of the parameters are not valid.
 
-#### Discussion
+## Discussion
 
 This function returns the current value of the specifier whether or not the user actually set it. If the user did not set the specifier, this function returns the default value. If an invalid paragraph style setting specifier is passed into the `spec` parameter, nothing bad happens, and the buffer value is simply zeroed out. The reason is to allow backward compatibility with style setting specifiers that may be introduced in future versions.
 

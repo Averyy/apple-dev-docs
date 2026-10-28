@@ -23,7 +23,7 @@ weak var owningView: UIView? { get set }
 @property (nonatomic, weak, nullable) UIView * owningView;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this property is `nil`. To participate in Auto Layout, the layout guide must be added to a view by calling its [`addLayoutGuide(_:)`](../uiview/addlayoutguide%28_%29.md) method. Do not modify this property directly. Instead, use the view’s [`addLayoutGuide(_:)`](../uiview/addlayoutguide%28_%29.md) and [`removeLayoutGuide(_:)`](../uiview/removelayoutguide%28_%29.md) methods, which update this property as necessary.
 

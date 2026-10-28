@@ -19,7 +19,7 @@ var action: Selector? { get set }
 @property (nullable) SEL action;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the action message selector of the receiver’s cell. Controls that support multiple cells (such as `NSMatrix` and `NSForm`) must supply the appropriate action-message selector in this property. Specify `NULL` to prevent action messages from being sent to the receiver’s target.
 

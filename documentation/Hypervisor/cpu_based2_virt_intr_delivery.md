@@ -19,7 +19,7 @@ var CPU_BASED2_VIRT_INTR_DELIVERY: UInt32 { get }
 CPU_BASED2_VIRT_INTR_DELIVERY
 ```
 
-#### Discussion
+## Discussion
 
 Must be `0`.
 

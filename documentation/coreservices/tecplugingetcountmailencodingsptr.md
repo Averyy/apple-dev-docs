@@ -16,7 +16,7 @@ Defines a pointer to a function that obtainsthe text encodings available for ema
 typedef OSStatus (*TECPluginGetCountMailEncodingsPtr)(TextEncoding *availableEncodings, ItemCount maxAvailableEncodings, ItemCount *actualAvailableEncodings);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 

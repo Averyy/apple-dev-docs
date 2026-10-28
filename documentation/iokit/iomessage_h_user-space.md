@@ -5,9 +5,9 @@
 
 Defines message type constants for several IOKit messaging API's.
 
-#### Overview
+## Overview
 
-##### Included Headers
+### Included Headers
 
 - <IOKit/IOReturn.h>
 - <IOKit/IOTypes.h>

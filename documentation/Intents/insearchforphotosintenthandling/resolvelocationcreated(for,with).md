@@ -29,7 +29,7 @@ optional func resolveLocationCreated(for intent: INSearchForPhotosIntent) async 
 - (void) resolveLocationCreatedForSearchForPhotos:(INSearchForPhotosIntent *) intent withCompletion:(void (^)(INPlacemarkResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the location of the photos.
 

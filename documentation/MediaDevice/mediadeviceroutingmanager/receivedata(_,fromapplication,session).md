@@ -18,7 +18,7 @@ Delivers data received from a remote application to the system for processing.
 final func receiveData(_ data: Data, fromApplication applicationIdentifier: String, session: MediaOutputSession)
 ```
 
-#### Discussion
+## Discussion
 
 Call this function when data has been received from a remote application.
 

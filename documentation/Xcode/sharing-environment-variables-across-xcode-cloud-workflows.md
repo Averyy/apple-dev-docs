@@ -5,13 +5,13 @@
 
 Apply common configurations to multiple workflows by using shared environment variables.
 
-#### Overview
+## Overview
 
 You can use shared environment variables in your custom build scripts to extend workflows. For example, use a shared environment variable for the location of an IPA file. Then you can edit the values of common environment variables in one location.
 
 Before you begin, configure your project to use Xcode Cloud and create two or more workflows to share environment variables with.
 
-##### Manage shared environment variables in Xcode
+### Manage shared environment variables in Xcode
 
 To create shared environment variables in Xcode:
 
@@ -39,7 +39,7 @@ To apply environment variables to workflows in Xcode:
 
 To create another environment variable, click the Add button and choose New Shared Environment Variable from the pop-up menu.
 
-##### Manage shared environment variables in App Store Connect
+### Manage shared environment variables in App Store Connect
 
 You can also apply shared environment variables to workflows in App Store Connect with the following steps:
 

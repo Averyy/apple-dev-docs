@@ -20,7 +20,7 @@ A value that influences the confidence of the model’s response.
 var temperature: Double?
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property must be a number between `0` and `1` inclusive.
 

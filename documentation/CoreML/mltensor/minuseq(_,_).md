@@ -21,7 +21,7 @@ Computes element-wise subtraction.
 static func -= (lhs: inout MLTensor, rhs: MLTensor)
 ```
 
-#### Discussion
+## Discussion
 
 Shapes must be broadcastable, where the broadcasted shape becomes the shape of the output.
 

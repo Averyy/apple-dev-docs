@@ -6,14 +6,21 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary_function
 
 # mlx.nn.gelu_fast_approx
 
-**class gelu_fast_approx(*x*)**
-: A fast approximation to Gaussian Error Linear Unit.
+```python
+class gelu_fast_approx(x)
+```
+
+A fast approximation to Gaussian Error Linear Unit.
+
 See [gelu()](mlx.nn.gelu.md#mlx.nn.gelu) for the exact computation.
+
 This function approximates `gelu` with a maximum absolute error \(<
 0.015\) in the range \([-6, 6]\) using the following
 
 \[x = x \sigma\left(1.702 x\right)\]
+
 where \(\sigma(\cdot)\) is the logistic sigmoid.
+
 References:
 - [hendrycks/GELUs](https://github.com/hendrycks/GELUs)
 - [https://arxiv.org/abs/1606.08415](https://arxiv.org/abs/1606.08415)

@@ -18,7 +18,7 @@ Creates a renderer using pre-compiled GPU resources.
 init(resources: LowLevelRenderer.Resources) throws(LowLevelRendererError)
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if GPU buffer allocation fails.
 

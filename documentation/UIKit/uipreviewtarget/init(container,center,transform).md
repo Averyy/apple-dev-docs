@@ -23,7 +23,7 @@ init(container: UIView, center: CGPoint, transform: CGAffineTransform)
 - (instancetype) initWithContainer:(UIView *) container center:(CGPoint) center transform:(CGAffineTransform) transform;
 ```
 
-#### Return Value
+## Return Value
 
 A new preview target object with the specified container and configuration data.
 

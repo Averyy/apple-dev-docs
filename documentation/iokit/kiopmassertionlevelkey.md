@@ -16,7 +16,7 @@ The CFDictionary key for assertion level in an assertion info dictionary.
 #define kIOPMAssertionLevelKey
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key will be a CFNumber, kCFNumberIntType with value `kIOPMAssertionLevelOff` or `kIOPMAssertionLevelOn`. The level reflects the assertion's level set at creation, or adjusted via IOPMAssertionSetLevel
 

@@ -21,7 +21,7 @@ func popConfigurationViewController()
 - (void) popConfigurationViewController;
 ```
 
-#### Discussion
+## Discussion
 
 You can call this method to dismiss the configuration view controller in response to a user action.
 

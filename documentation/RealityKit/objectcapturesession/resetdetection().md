@@ -17,7 +17,7 @@ Moves the session state from `.detecting` back to `.ready` to reset the bounding
 @MainActor func resetDetection() -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 If the session is not in `.detecting` state this will return false and have no effect.
 

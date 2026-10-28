@@ -22,7 +22,7 @@ weak var searchableObject: (any __UITextSearching)? { get }
 @property (nonatomic, weak, readonly) id<UITextSearching> searchableObject;
 ```
 
-#### Discussion
+## Discussion
 
 Use the methods this object implements from the [`UITextSearching`](../uitextsearching-53wjq.md) protocol to search text in your app and decorate the found results.
 

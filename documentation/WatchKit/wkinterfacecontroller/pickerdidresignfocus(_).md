@@ -19,7 +19,7 @@ func pickerDidResignFocus(_ picker: WKInterfacePicker)
 - (void) pickerDidResignFocus:(WKInterfacePicker *) picker;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method does nothing. Subclasses can override it and use it to perform actions related to the picker losing focus. You do not need to call `super` in your implementation.
 

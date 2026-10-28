@@ -19,7 +19,7 @@ func backgroundColor() -> NSColor!
 - (NSColor *) backgroundColor;
 ```
 
-#### Return Value
+## Return Value
 
 The color drawn in the background of the control.
 

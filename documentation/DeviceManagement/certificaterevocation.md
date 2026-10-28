@@ -18,11 +18,11 @@ The payload that configures certificate revocation checking.
 object CertificateRevocation
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.security.certificaterevocation` as the payload type.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -34,7 +34,7 @@ Specify `com.apple.security.certificaterevocation` as the payload type.
 | Allowed in user enrollment | iOS, visionOS |
 | Allow multiple payloads | iOS, Shared iPad, visionOS |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

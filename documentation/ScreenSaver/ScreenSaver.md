@@ -9,7 +9,7 @@ Animate screen savers, and interact with the screen saver infrastructure.
 **Availability**:
 - macOS 10.0+
 
-#### Overview
+## Overview
 
 The Screen Saver framework defines the interface for custom modules to interact with the Screen Effects user interface feature. Write screen savers in Objective-C, and implement your module’s user interface using Cocoa. Use the available functions to produce random values and centering rectangles.
 
@@ -17,7 +17,7 @@ To create a screen saver, create a bundle directory with the `.saver` suffix and
 
 Because screen savers are plug-ins for the screen saver engine, the screen saver binary must support the same hardware architecture of the running engine. As with any application, the screen saver engine uses the native architecture of the host computer. For full compatibility, make sure your screen saver supports both the `x86_64` and `arm64` architectures.
 
-##### How the system runs your screen saver
+### How the system runs your screen saver
 
 When macOS starts your screen saver, the system:
 

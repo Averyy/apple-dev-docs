@@ -18,8 +18,8 @@ Fetches and sorts the subset of the attached model type that satisfy the specifi
 ## Declaration
 
 ```swift
-@attached
-(accessor) @attached(peer, names: prefixed(`_`)) macro Query<Element>(filter: Predicate<Element>? = nil, sort descriptors: [SortDescriptor<Element>] = [], transaction: Transaction? = nil) where Element : PersistentModel
+@attached(accessor)
+@attached(peer, names: prefixed(`_`)) macro Query<Element>(filter: Predicate<Element>? = nil, sort descriptors: [SortDescriptor<Element>] = [], transaction: Transaction? = nil) where Element : PersistentModel
 ```
 
 ## Parameters

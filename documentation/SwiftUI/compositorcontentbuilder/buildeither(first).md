@@ -24,7 +24,7 @@ static func buildEither<F>(first: _ConditionalContent<_LimitedAvailabilityCompos
 static func buildEither<F>(first: _LimitedAvailabilityCompositorContent) -> _ConditionalContent<_LimitedAvailabilityCompositorContent, F> where F : CompositorContent
 ```
 
-#### Discussion
+## Discussion
 
 Conditional statements in a [`CompositorContentBuilder`](../compositorcontentbuilder.md) must contain both an `if` statement and an `else` statement, and the condition can only perform a compiler check for availability, like in the following code:
 

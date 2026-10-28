@@ -15,7 +15,7 @@ Boolean value indicating whether this notification is a [`CloudKit.QueryNotifica
 readonly attribute Boolean isQueryNotification;
 ```
 
-#### Discussion
+## Discussion
 
 This property is `true`.
 

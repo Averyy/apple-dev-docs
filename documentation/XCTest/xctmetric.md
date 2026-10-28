@@ -16,7 +16,7 @@ protocol XCTMetric : NSCopying, NSObjectProtocol
 @protocol XCTMetric <NSCopying, NSObject>
 ```
 
-#### Overview
+## Overview
 
 Objects that gather metrics during performance tests must conform to `XCTMetric`. Before you create your own conforming objects, first use the metrics classes that `XCTest` supplies.
 

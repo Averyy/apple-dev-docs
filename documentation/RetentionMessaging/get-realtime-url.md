@@ -15,7 +15,7 @@ Gets the URL for real-time messages that points to your Get Retention Message en
 - [Retention Messaging API changelog](./retention-messaging-changelog.md)
 - [Setting up your Get Retention Message endpoint](./setting-up-retention-messaging-endpoint.md)
 
-#### Discussion
+## Discussion
 
 This endpoint returns your `Get Retention Message` endpoint’s URL. The URL it provides is specific to the environment (sandbox or production) you use to call [`Get Realtime URL`](./get-realtime-url.md).
 

@@ -24,7 +24,7 @@ class func fetchAssetCollectionsContaining(_ asset: PHAsset, with type: PHAssetC
 + (PHFetchResult<PHAssetCollection *> *) fetchAssetCollectionsContainingAsset:(PHAsset *) asset withType:(PHAssetCollectionType) type options:(PHFetchOptions *) options;
 ```
 
-#### Return Value
+## Return Value
 
 A fetch result that contains the requested [`PHAssetCollection`](../phassetcollection.md) objects, or an empty fetch result if no objects match the request.
 

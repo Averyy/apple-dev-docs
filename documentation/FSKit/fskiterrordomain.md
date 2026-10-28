@@ -19,7 +19,7 @@ let FSKitErrorDomain: String
 extern NSErrorDomain const FSKitErrorDomain;
 ```
 
-#### Discussion
+## Discussion
 
 See [`NSError`](../Foundation/nserror.md) for more information on error domains.
 

@@ -24,7 +24,7 @@ class var componentMax: CIBlendKernel { get }
 @property (class, strong, readonly) CIBlendKernel * componentMax;
 ```
 
-#### Discussion
+## Discussion
 
 ![The result of using the component max blend kernel (background image is top left, foreground image is bottom left)](https://developer.apple.com/tutorials/images/com.apple.coreimage/media-2926854@2x.png)
 

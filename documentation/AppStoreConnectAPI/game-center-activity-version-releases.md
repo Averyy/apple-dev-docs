@@ -5,7 +5,7 @@
 
 Manage version releases for your Game Center activities.
 
-#### Overview
+## Overview
 
 To manage Game Center activity version releases, be sure you have one of the following user roles:
 

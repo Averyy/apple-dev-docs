@@ -20,7 +20,7 @@ struct AudioHardwareIOProcStreamUsage
 struct AudioHardwareIOProcStreamUsage;
 ```
 
-#### Overview
+## Overview
 
 - **`mIOProc`**: The IOProc whose stream usage is being specified.
 - **`mNumberStreams`**: The number of streams being specified.

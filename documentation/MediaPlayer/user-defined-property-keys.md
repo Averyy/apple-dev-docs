@@ -5,7 +5,7 @@
 
 Properties for obtaining user-defined metadata for a media item.
 
-#### Overview
+## Overview
 
 Obtain user-defined metadata for a media item by calling the [`value(forProperty:)`](./mpmediaentity/value%28forproperty%29.md) method with these property keys. Don’t use user-defined properties to build media property predicates.
 

@@ -25,11 +25,11 @@ func class_respondsToSelector(_ cls: AnyClass?, _ sel: Selector) -> Bool
 extern BOOL class_respondsToSelector(Class cls, SEL sel);
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](./yes.md) if instances of the class respond to the selector, otherwise [`NO`](./no.md).
 
-#### Discussion
+## Discussion
 
 You should usually use `NSObject`’s [`responds(to:)`](./nsobjectprotocol/responds%28to%29.md) or [`instancesRespond(to:)`](./nsobject-swift.class/instancesrespond%28to%29.md) methods instead of this function.
 

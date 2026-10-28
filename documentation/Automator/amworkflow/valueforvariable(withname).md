@@ -20,7 +20,7 @@ func valueForVariable(withName variableName: String) -> Any?
 - (id) valueForVariableWithName:(NSString *) variableName;
 ```
 
-#### Return Value
+## Return Value
 
 The value for the variable. Returns `nil` if no variable is found with the specified name.
 

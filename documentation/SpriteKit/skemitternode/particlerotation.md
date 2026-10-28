@@ -25,7 +25,7 @@ var particleRotation: CGFloat { get set }
 @property (nonatomic) CGFloat particleRotation;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0.0`.
 

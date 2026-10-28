@@ -4,7 +4,7 @@
 
 Use touch events directly on a view subclass if touch handling is intricately linked to the view’s content.
 
-#### Overview
+## Overview
 
 If you don’t plan to use gesture recognizers with a custom view, you can handle touch events directly from the view itself. Because views are responders, they can handle Multi-Touch events and many other types of events. When UIKit determines that a touch event occurred in a view, it calls the view’s [`touchesBegan(_:with:)`](./uiresponder/touchesbegan%28_,with%29.md), [`touchesMoved(_:with:)`](./uiresponder/touchesmoved%28_,with%29.md), or [`touchesEnded(_:with:)`](./uiresponder/touchesended%28_,with%29.md) method. You can override these methods in your custom views and use them to provide a response to touch events.
 

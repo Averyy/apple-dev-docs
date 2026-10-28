@@ -23,7 +23,7 @@ var duration: CGFloat { get }
 @property (readonly) CGFloat duration;
 ```
 
-#### Discussion
+## Discussion
 
 This property reflects the duration of the transition animation if it were to occur without user interactions. It is obtained from the standard animator object returned by your delegate. The actual duration can vary depending on the user interactions you are tracking and responding to.
 

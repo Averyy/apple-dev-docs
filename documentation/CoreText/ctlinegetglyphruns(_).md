@@ -25,7 +25,7 @@ func CTLineGetGlyphRuns(_ line: CTLine) -> CFArray
 extern CFArrayRefCTLineGetGlyphRuns(CTLineRef line);
 ```
 
-#### Return Value
+## Return Value
 
 A [`CFArray`](../CoreFoundation/cfarray.md) containing the CTRun objects that make up the line.
 

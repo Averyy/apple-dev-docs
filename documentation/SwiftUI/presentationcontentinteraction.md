@@ -21,7 +21,7 @@ A behavior that you can use to influence how a presentation responds to swipe ge
 struct PresentationContentInteraction
 ```
 
-#### Overview
+## Overview
 
 Use values of this type with the [`presentationContentInteraction(_:)`](./view/presentationcontentinteraction%28_%29.md) modifier.
 

@@ -17,7 +17,7 @@ An object that contains all the properties necessary to schedule an alarm.
 struct AlarmConfiguration<Metadata> where Metadata : AlarmMetadata
 ```
 
-#### Overview
+## Overview
 
 Pass the schedule or countdown and any attributes you define to the `AlarmConfiguration` for the system to schedule. You can pass in an optional secondary intent that the system executes when a person taps a secondary button. This is only available after first unlock. You can also include custom sounds for your alarm.
 

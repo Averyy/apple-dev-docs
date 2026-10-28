@@ -19,7 +19,7 @@ func convert(_ fontObj: NSFont, toSize size: CGFloat) -> NSFont
 - (NSFont *) convertFont:(NSFont *) fontObj toSize:(CGFloat) size;
 ```
 
-#### Return Value
+## Return Value
 
 A font with matching traits except in the new size, or `aFont` if it can’t be converted.
 

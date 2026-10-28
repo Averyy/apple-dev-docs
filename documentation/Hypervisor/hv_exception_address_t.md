@@ -19,7 +19,7 @@ typealias hv_exception_address_t = UInt64
 typedef uint64_t hv_exception_address_t;
 ```
 
-#### Discussion
+## Discussion
 
 This corresponds to Fault Address Register EL2 (FAR_EL2).
 

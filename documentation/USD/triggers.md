@@ -5,11 +5,11 @@
 
 A list of prims that execute a behavior’s actions.
 
-#### Overview
+## Overview
 
 The runtime executes all actions in the [actions](./actions.md) array if the conditions of any trigger in [triggers](./triggers.md) are satisfied. Only insert [Preliminary_Trigger](./preliminary-trigger.md) prims in this array.
 
-##### Declaration
+### Declaration
 
 ```other
 rel triggers

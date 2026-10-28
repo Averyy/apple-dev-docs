@@ -23,13 +23,13 @@ class INCancelWorkoutIntent
 @interface INCancelWorkoutIntent : INIntent
 ```
 
-#### Overview
+## Overview
 
 SiriKit creates an [`INCancelWorkoutIntent`](./incancelworkoutintent.md) object when the user asks to cancel a currently running workout. Canceling a workout stops the workout and doesn’t record any progress toward the workout goals. Use this intent object to get the workout parameters.
 
 To handle this intent, the handler object in your Intents extension must adopt the [`INCancelWorkoutIntentHandling`](./incancelworkoutintenthandling.md) protocol. Your handler should confirm the request and create an [`INCancelWorkoutIntentResponse`](./incancelworkoutintentresponse.md) object to indicate it’s possible to cancel the workout. For the successful handling of the intent, SiriKit launches your app and passes it an [`NSUserActivity`](../Foundation/nsuseractivity.md) object that your app must then use to cancel the workout.
 
-##### Additional Intent Attributes
+### Additional Intent Attributes
 
 The following table lists additional attributes of this intent object:
 

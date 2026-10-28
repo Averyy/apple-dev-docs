@@ -23,7 +23,7 @@ func setLineFragmentRect(_ fragmentRect: CGRect, forGlyphRange glyphRange: NSRan
 - (void) setLineFragmentRect:(CGRect) fragmentRect forGlyphRange:(NSRange) glyphRange usedRect:(CGRect) usedRect;
 ```
 
-#### Discussion
+## Discussion
 
 The typesetter must specify the text container first with [`setTextContainer(_:forGlyphRange:)`](./settextcontainer%28_,forglyphrange%29.md), and it sets the exact positions of the glyphs afterwards with [`setLocation(_:forStartOfGlyphRange:)`](./setlocation%28_,forstartofglyphrange%29.md).
 

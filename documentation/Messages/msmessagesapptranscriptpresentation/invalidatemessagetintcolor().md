@@ -20,7 +20,7 @@ func invalidateMessageTintColor()
 - (void) invalidateMessageTintColor;
 ```
 
-#### Discussion
+## Discussion
 
 Call this when `messageTintColor` changes, e.g. due to change in app state or trait collection.
 

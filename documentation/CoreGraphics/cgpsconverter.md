@@ -20,7 +20,7 @@ class CGPSConverter
 typedef struct CGPSConverter * CGPSConverterRef;
 ```
 
-#### Overview
+## Overview
 
 The PostScript data is supplied by a data provider and written into a data consumer. When you create a PostScript converter object, you can supply callback functions to invoke at various stages of the conversion process.
 

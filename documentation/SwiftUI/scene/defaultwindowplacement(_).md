@@ -17,7 +17,7 @@ nonisolated
 func defaultWindowPlacement(_ makePlacement: @escaping (WindowLayoutRoot, WindowPlacementContext) -> WindowPlacement) -> some Scene
 ```
 
-#### Discussion
+## Discussion
 
 Use this scene modifier to indicate a default initial size and position for a new window that the system creates from a [`Scene`](../scene.md) declaration.
 

@@ -25,7 +25,7 @@ var stages: [NSMigrationStage] { get }
 @property (strong, readonly) NSArray<__kindof NSMigrationStage *> * stages;
 ```
 
-#### Discussion
+## Discussion
 
 Core Data sets this property to the `stages` parameter you specify when creating the migration manager.
 

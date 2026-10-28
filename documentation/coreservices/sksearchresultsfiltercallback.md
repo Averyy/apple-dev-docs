@@ -20,11 +20,11 @@ typealias SKSearchResultsFilterCallBack = (SKIndex?, SKDocument?, UnsafeMutableR
 typedef Boolean (*SKSearchResultsFilterCallBack)(SKIndexRef inIndex, SKDocumentRef inDocument, void *inContext);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value of `true` for a successful search hit, or `false` otherwise.
 
-#### Discussion
+## Discussion
 
 Deprecated. Defines a pointer to a search-results filtering callback function for hit testing and processing during a search. Use this callback function to perform custom filtering on the search hits returned by the [`SKSearchResultsCreateWithQuery`](./api-1448610-sksearchresultscreatewithquery.md) and [`SKSearchResultsCreateWithDocuments`](./api-1448629-sksearchresultscreatewithdocumen.md) functions. Return `true` to keep this document URL object (SKDocumentRef) in the results, `false` to filter it out.
 

@@ -24,7 +24,7 @@ var texture: MDLTexture? { get set }
 @property (nonatomic, retain, nullable) MDLTexture * texture;
 ```
 
-#### Discussion
+## Discussion
 
 A [`MDLTexture`](../mdltexture.md) object describes texture image data.
 

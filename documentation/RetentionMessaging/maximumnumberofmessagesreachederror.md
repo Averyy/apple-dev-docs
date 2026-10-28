@@ -15,7 +15,7 @@ An error that indicates when you reach the maximum number of uploaded messages.
 object MaximumNumberOfMessagesReachedError
 ```
 
-#### Discussion
+## Discussion
 
 For information about the maximum number of messages, see [`Upload Message`](./upload-message.md).
 

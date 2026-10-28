@@ -24,7 +24,7 @@ let kVTPropertyTypeKey: CFString
 extern CFStringRef const kVTPropertyTypeKey;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value will be either [`kVTPropertyType_Boolean`](./kvtpropertytype_boolean.md), [`kVTPropertyType_Enumeration`](./kvtpropertytype_enumeration.md), or [`kVTPropertyType_Number`](./kvtpropertytype_number.md).
 

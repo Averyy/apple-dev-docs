@@ -25,7 +25,7 @@ var transparencyMode: SCNTransparencyMode { get set }
 @property (nonatomic) SCNTransparencyMode transparencyMode;
 ```
 
-#### Discussion
+## Discussion
 
 The default transparency mode is [`SCNTransparencyMode.aOne`](../scntransparencymode/aone.md). See [`SCNTransparencyMode`](../scntransparencymode.md) for available values and their effects.
 

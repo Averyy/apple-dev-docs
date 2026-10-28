@@ -19,7 +19,7 @@ class let didChangeOcclusionStateNotification: NSNotification.Name
 extern NSNotificationName const NSWindowDidChangeOcclusionStateNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the `NSWindow` object whose occlusion state changed. This notification doesn’t contain a `userInfo` dictionary.
 

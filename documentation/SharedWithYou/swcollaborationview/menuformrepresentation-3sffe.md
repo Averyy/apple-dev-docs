@@ -16,7 +16,7 @@ Returns a menu item suitable to display the collaboration detail view from the t
 @objc @preconcurrency dynamic var menuFormRepresentation: NSMenuItem { get }
 ```
 
-#### Discussion
+## Discussion
 
 If this [`SWCollaborationView`](../swcollaborationview.md) instance is being set on an [`NSToolbarItem`](../../AppKit/nstoolbaritem.md), assign this property to the item’s `menuFormRepresentation` property.
 

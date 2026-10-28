@@ -5,11 +5,11 @@
 
 Create the individual components that Core Data requires manually, to support earlier versions of Apple operating systems.
 
-#### Overview
+## Overview
 
 If your app targets iOS 10+, macOS 10.12+, tvOS 10+, watchOS 3+, or visionOS 1+, you can use [`NSPersistentContainer`](./nspersistentcontainer.md) to simplify creation and management of the Core Data stack. Otherwise, you need to manually create an [`NSManagedObjectModel`](./nsmanagedobjectmodel.md), [`NSPersistentStoreCoordinator`](./nspersistentstorecoordinator.md), and at least one [`NSManagedObjectContext`](./nsmanagedobjectcontext.md).
 
-##### Create a managed object model
+### Create a managed object model
 
 To instantiate an [`NSManagedObjectModel`](./nsmanagedobjectmodel.md), pass in a URL that points to the compiled version of the `.xcdatamodeld` file. This `.momd` file is typically part of your app bundle.
 
@@ -26,7 +26,7 @@ guard let model = NSManagedObjectModel(contentsOf: modelURL) else {
 }
 ```
 
-##### Create a persistent store coordinator
+### Create a persistent store coordinator
 
 Next, pass the managed object model to the [`NSPersistentStoreCoordinator`](./nspersistentstorecoordinator.md) initializer to create a store coordinator with that model.
 
@@ -35,7 +35,7 @@ Next, pass the managed object model to the [`NSPersistentStoreCoordinator`](./ns
 let coordinator = NSPersistentStoreCoordinator(managedObjectModel: managedObjectModel)
 ```
 
-###### Add a persistent store to the coordinator
+#### Add a persistent store to the coordinator
 
 If you want Core Data to persist your data model to disk, tell the store coordinator where the file exists and what format to use.
 
@@ -65,7 +65,7 @@ do {
 
 There are advantages and disadvantages to each of the store types. Refer to the [`NSPersistentStoreCoordinator`](./nspersistentstorecoordinator.md) documentation for details on each store type.
 
-##### Create a managed object context
+### Create a managed object context
 
 Create an [`NSManagedObjectContext`](./nsmanagedobjectcontext.md), and set its store coordinator property.
 

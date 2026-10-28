@@ -14,11 +14,11 @@ CMError CMRemoveProfileElement (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 The `CMRemoveProfileElement` function deletes the tag as well as the element data from the profile. 
 

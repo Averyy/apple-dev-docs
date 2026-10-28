@@ -17,7 +17,7 @@ Prints the current document’s data.
 - (void) printShowingPrintPanel:(BOOL) flag;
 ```
 
-#### Discussion
+## Discussion
 
 Overridden by subclasses to print the current document’s (the receiver’s) data; if `flag` is [`true`](../../Swift/true.md), the implementation should first display the Print panel. This method is typically invoked by `printDocument:` with an argument of [`true`](../../Swift/true.md). The default implementation does nothing. If there is any printing information other than that encoded in the receiver’s `NSPrintInfo` object, subclasses should get it here.
 

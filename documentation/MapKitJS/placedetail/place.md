@@ -16,7 +16,7 @@ get place(): Place | null;
 set place(value: Place | null);
 ```
 
-#### Discussion
+## Discussion
 
 if this property is `null`, the place detail renders in a collapsed state and doesn’t show any information.
 

@@ -22,7 +22,7 @@ The type this format style produces as output.
 associatedtype FormatOutput
 ```
 
-#### Discussion
+## Discussion
 
 Conforming types in Foundation define this type as either [`String`](../../Swift/string.md) or [`AttributedString`](../attributedstring.md).
 

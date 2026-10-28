@@ -19,7 +19,7 @@ func AXObserverRemoveNotification(_ observer: AXObserver, _ element: AXUIElement
 AXError AXObserverRemoveNotification(AXObserverRef observer, AXUIElementRef element, CFStringRef notification);
 ```
 
-#### Return Value
+## Return Value
 
 If unsuccessful, `AXObserverRemoveNotification` may return one of the following error codes, among others:
 

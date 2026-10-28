@@ -20,7 +20,7 @@ var isActive: Bool { get }
 @property (readonly, getter=isActive) BOOL active;
 ```
 
-#### Discussion
+## Discussion
 
 When this value is `true`, the window is currently streaming, even if offscreen.
 

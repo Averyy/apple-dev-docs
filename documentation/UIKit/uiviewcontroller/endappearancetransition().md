@@ -23,7 +23,7 @@ func endAppearanceTransition()
 - (void) endAppearanceTransition;
 ```
 
-#### Discussion
+## Discussion
 
 If you are implementing a custom container controller, use this method to tell the child that the view transition is complete.
 

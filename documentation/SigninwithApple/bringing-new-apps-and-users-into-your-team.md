@@ -5,13 +5,13 @@
 
 Receive Sign in with Apple users and associated apps from another team.
 
-#### Overview
+## Overview
 
 When acquiring an app from another team that uses Sign in with Apple, you follow a specific process to receive signed-in users from the sending team.
 
 Coordinate with the sending team transferring their users and apps over to your team. Then accept transfer identifiers for all of the migrating users, and exchange the transfer identifiers for team-scoped identifiers and private email addresses to complete the process.
 
-##### Obtain team-scoped identifiers
+### Obtain team-scoped identifiers
 
 The identity token issued by Apple contains the transfer identifier in the `transfer_sub` claim for all migrated users who sign into your application after the transfer, as well as the team-scoped identifier. See [Authenticating users with Sign in with Apple](./authenticating-users-with-sign-in-with-apple.md) for more information.
 
@@ -51,7 +51,7 @@ Pragma: no-cache
 
 For more information, see [Receiving a User’s Identity Token](./receiving-a-users-identity-token.md)
 
-##### Exchange identifiers
+### Exchange identifiers
 
 Use the access token to call the `userMigrationInfo` endpoint. Provide the transfer identifier of the user as input using the following HTTP POST method.
 
@@ -96,13 +96,13 @@ The user identifier and the private email address are specific to your team, and
 
 Once 60 days have passed after transfer acceptance, the ID token no longer includes the transfer identifier. Also, the server endpoint used to obtain the team-scoped identifiers becomes inactive.
 
-##### Regroup your apps
+### Regroup your apps
 
 If the sending team ungrouped their apps, coordinate with the team to regroup the apps after the transfer completes. See [Group Apps for Sign in with Apple](https://developer.apple.com/help/account/configure-app-capabilities/group-apps-for-sign-in-with-apple) for more information.
 
 > **Note**:  The service identifiers for web applications don’t require ungrouping. They transfer over automatically when their primary app transfers.
 
-##### Confirm the transferred credential state
+### Confirm the transferred credential state
 
 Your transferred application starts receiving [`ASAuthorizationAppleIDProvider.CredentialState.transferred`](../AuthenticationServices/asauthorizationappleidprovider/credentialstate/transferred.md) when you call [`getCredentialState(forUserID:completion:)`](../AuthenticationServices/asauthorizationappleidprovider/getcredentialstate%28foruserid,completion%29.md). This status indicates that the user identifier currently in use is the one associated with the delivering team.
 

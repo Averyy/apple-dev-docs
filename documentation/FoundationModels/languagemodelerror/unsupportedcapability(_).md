@@ -20,7 +20,7 @@ The model being used doesn’t support a particular feature.
 case unsupportedCapability(LanguageModelError.UnsupportedCapability)
 ```
 
-#### Discussion
+## Discussion
 
 This failure can happen if you use capabilities like guided generation or tool calling with a model that does not support them.
 

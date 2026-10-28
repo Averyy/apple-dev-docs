@@ -20,7 +20,7 @@ anchor fails to be added, due to anchor tracking provider reaching its maximum a
 case maximumLimitReached
 ```
 
-#### Discussion
+## Discussion
 
 See [`WorldTrackingProvider.Error`](../../../../ARKit/worldtrackingprovider/error.md)
 

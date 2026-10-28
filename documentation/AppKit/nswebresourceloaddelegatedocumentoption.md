@@ -15,7 +15,7 @@ An object to serve as the web resource loading delegate.
 extern NSAttributedStringDocumentReadingOptionKey NSWebResourceLoadDelegateDocumentOption;
 ```
 
-#### Discussion
+## Discussion
 
 For HTML only. The value is an [`NSObject`](../ObjectiveC/nsobject-swift.class.md).
 

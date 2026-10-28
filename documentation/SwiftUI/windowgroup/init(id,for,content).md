@@ -22,7 +22,7 @@ init<D, C>(id: String, for type: D.Type, @ContentBuilder content: @escaping (Bin
 
 Available when `Content` conforms to `View`.
 
-#### Discussion
+## Discussion
 
 The window group uses the specified content as a template to create each window in the group.
 

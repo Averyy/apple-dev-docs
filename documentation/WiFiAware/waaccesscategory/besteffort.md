@@ -17,7 +17,7 @@ A default quality-of-service (QoS) type that provides high throughput for data t
 case bestEffort
 ```
 
-#### Discussion
+## Discussion
 
 This Wi-Fi access category is the default for packets transmitted by a `NetworkConnection`, as well as if you set `serviceClass = .bestEffort` with [`NWParameters`](../../Network/nwparameters.md). Use this category for bulk transfers that are visible to a person using your app.
 

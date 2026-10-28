@@ -17,11 +17,11 @@ Element-wise bitwise and.
 static func & (lhs: MLXArray, rhs: some ScalarOrArray) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 Take the bitwise and of two arrays with numpy-style broadcasting semantics. Either or both input arrays can also be scalars.
 
-##### See Also
+### See Also
 
 - [Arithmetic](../arithmetic.md)
 - [`bitwiseAnd(_:_:stream:)`](../bitwiseand%28_,_,stream%29.md)

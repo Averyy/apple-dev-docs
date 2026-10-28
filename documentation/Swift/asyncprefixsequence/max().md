@@ -24,11 +24,11 @@ func max() async rethrows -> Self.Element?
 
 Available when `Element` conforms to `Comparable`.
 
-#### Return Value
+## Return Value
 
 The sequence’s maximum element. If the sequence has no elements, returns `nil`.
 
-#### Discussion
+## Discussion
 
 In this example, an asynchronous sequence called `Counter` produces `Int` values from `1` to `10`. The `max()` method returns the max value of the sequence.
 

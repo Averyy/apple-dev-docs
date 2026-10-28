@@ -18,7 +18,7 @@ An object that manages navigation for your extension’s content in the Home app
 final class HomeNavigator
 ```
 
-#### Overview
+## Overview
 
 Access the navigator through [`navigator`](./homecontext/navigator.md), and use it to push pages onto the Home app’s navigation stack.
 

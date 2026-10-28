@@ -20,11 +20,11 @@ nonisolated
 func onDrag<V>(_ data: @escaping () -> NSItemProvider, @ContentBuilder preview: () -> V) -> some View where V : View
 ```
 
-#### Return Value
+## Return Value
 
 A view that activates this view as the source of a drag-and- drop operation, beginning with user gesture input.
 
-#### Discussion
+## Discussion
 
 Applying the `onDrag(_:preview:)` modifier adds the appropriate gestures for drag and drop to this view. When a drag operation begins, a rendering of `preview` is generated and used as the preview image.
 

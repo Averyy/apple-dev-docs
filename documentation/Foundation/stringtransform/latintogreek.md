@@ -25,7 +25,7 @@ static let latinToGreek: StringTransform
 extern NSStringTransform const NSStringTransformLatinToGreek;
 ```
 
-#### Discussion
+## Discussion
 
 This transformation is reversible.
 

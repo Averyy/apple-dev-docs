@@ -24,11 +24,11 @@ class func gaussianGradient() -> any CIFilter & CIGaussianGradient
 + (CIFilter<CIGaussianGradient> *) gaussianGradientFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The generated image.
 
-#### Discussion
+## Discussion
 
 This method generates a Gaussian gradient image. The effect uses the Gaussian kernel to calculate the even dispersal of the first color in the center to the second color in the image’s periphery.
 

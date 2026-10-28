@@ -20,7 +20,7 @@ ApplePayPaymentContact billingContact;
 
 - [Apple Pay on the Web Version 10 Release Notes](../apple-pay-on-the-web-version-10-release-notes.md)
 
-#### Discussion
+## Discussion
 
 Before the user authorizes the transaction, you receive redacted billing contact information in a callback event. The redacted information includes only the necessary data for completing transaction tasks, such as calculating taxes or shipping costs.
 

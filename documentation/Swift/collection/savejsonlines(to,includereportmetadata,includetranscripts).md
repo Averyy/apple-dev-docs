@@ -22,7 +22,7 @@ func saveJSONLines(to url: URL, includeReportMetadata: Bool = false, includeTran
 
 Available when `Element` is `EvaluationResult`.
 
-#### Return Value
+## Return Value
 
 The URL of the saved file.
 

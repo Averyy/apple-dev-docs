@@ -20,7 +20,7 @@ func durationTime(_ duration: UnsafeMutablePointer<CMTime>!, ofImageParameter pa
 - (void) durationTime:(CMTime *) duration ofImageParameter:(UInt32) parameterID;
 ```
 
-#### Discussion
+## Discussion
 
 In Motion, duration represents the duration of the the image well input after the user has trimmed or retimed it.
 

@@ -24,7 +24,7 @@ func viewWillTransition(to size: CGSize, with coordinator: any UIViewControllerT
 - (void) viewWillTransitionToSize:(CGSize) size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>) coordinator;
 ```
 
-#### Discussion
+## Discussion
 
 UIKit calls this method before changing the size of a presented view controller’s view. You can override this method in your own objects and use it to perform additional tasks related to the size change. For example, a container view controller might use this method to override the traits of its embedded child view controllers. Use the provided `coordinator` object to animate any changes you make.
 

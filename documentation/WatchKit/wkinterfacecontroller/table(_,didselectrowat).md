@@ -19,7 +19,7 @@ func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int)
 - (void) table:(WKInterfaceTable *) table didSelectRowAtIndex:(NSInteger) rowIndex;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to respond to row selections in a table. You might use the selection of a row to display a new interface controller or update the state of your app. If you connected an action method to the table in your storyboard file, WatchKit does not call this method.
 

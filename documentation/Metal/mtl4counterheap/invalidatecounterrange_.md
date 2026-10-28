@@ -20,7 +20,7 @@ Invalidates a range of entries in this counter heap.
 - (void) invalidateCounterRange:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 The effect of this call is immediate on the CPU timeline. You are responsible for ensuring that this counter heap is not currently in use on the GPU.
 

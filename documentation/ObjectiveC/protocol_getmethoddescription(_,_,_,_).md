@@ -25,11 +25,11 @@ func protocol_getMethodDescription(_ proto: Protocol, _ aSel: Selector, _ isRequ
 extern struct objc_method_description protocol_getMethodDescription(Protocol *proto, SEL aSel, BOOL isRequiredMethod, BOOL isInstanceMethod);
 ```
 
-#### Return Value
+## Return Value
 
 An `objc_method_description` structure that describes the method specified by `aSel`, `isRequiredMethod`, and `isInstanceMethod` for the protocol `p`.
 
-#### Discussion
+## Discussion
 
 If the protocol does not contain the specified method, returns an `objc_method_description` structure with the value `{NULL, NULL}`.
 

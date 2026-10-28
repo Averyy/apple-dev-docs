@@ -22,7 +22,7 @@ var radius: CLLocationDistance { get }
 @property (atomic, readonly) CLLocationDistance radius;
 ```
 
-#### Discussion
+## Discussion
 
 In iOS, use a [`CLCircularRegion`](../clcircularregion.md) object to manage geographic regions.
 

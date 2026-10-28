@@ -5,13 +5,13 @@
 
 Use a scene-based life cycle in SwiftUI while keeping your existing codebase.
 
-#### Overview
+## Overview
 
 Take advantage of the declarative syntax in SwiftUI and its compatibility with spatial frameworks by moving your app to the SwiftUI life cycle.
 
 Moving to the SwiftUI life cycle requires several steps, including changing your app’s entry point, configuring the launch of your app, and monitoring life-cycle changes with the methods that SwiftUI provides.
 
-##### Change your app’s entry point
+### Change your app’s entry point
 
 The [UIKit](../UIKit/UIKit.md) framework defines the `AppDelegate` file as the entry point of your app with the annotation `@main`. For more information on `@main`, see the [Attributes](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/attributes/#main) section in The Swift Programming Language. To indicate the entry of a SwiftUI app, you’ll need to create a new file that defines your app’s structure.
 
@@ -38,7 +38,7 @@ struct MyExampleApp: App {
 }
 ```
 
-##### Support app delegate methods
+### Support app delegate methods
 
 To continue using methods in your app delegate, use the [`UIApplicationDelegateAdaptor`](./uiapplicationdelegateadaptor.md) property wrapper. To tell SwiftUI about a delegate that conforms to the [`UIApplicationDelegate`](../UIKit/uiapplicationdelegate.md) protocol, place this property wrapper inside your [`App`](./app.md) declaration:
 
@@ -54,7 +54,7 @@ This example marks a custom app delegate named `MyAppDelegate` as the delegate a
 
 > **Note**: For AppKit support, use [`NSApplicationDelegateAdaptor`](./nsapplicationdelegateadaptor.md). For WatchKit support, use [`WKApplicationDelegateAdaptor`](./wkapplicationdelegateadaptor.md).
 
-##### Configure the launch of your app
+### Configure the launch of your app
 
 If you’re migrating an app that contains storyboards to SwiftUI, make sure to remove them when they’re no longer needed.
 
@@ -73,7 +73,7 @@ The scene delegate continues to be called after removing the keys from the `Info
 
 If you didn’t previously support scenes in your app and rely on your app delegate to respond to the launch of your app, ensure you’re no longer setting a root view controller in [`application(_:didFinishLaunchingWithOptions:)`](../UIKit/uiapplicationdelegate/application%28_,didfinishlaunchingwithoptions%29.md). Instead, return `true`.
 
-##### Monitor life cycle changes
+### Monitor life cycle changes
 
 You will no longer be able to monitor life-cycle changes in your app delegate due to the scene-based nature of SwiftUI (see [`Scene`](./scene.md)). Prefer to handle these changes in [`ScenePhase`](./scenephase.md), the life cycle enumeration that SwiftUI provides to monitor the phases of a scene. Observe the [`Environment`](./environment.md) value to initiate actions when the phase changes.
 

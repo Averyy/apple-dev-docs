@@ -22,7 +22,7 @@ A partial interval extending upward from a lower bound.
 struct PartialRangeFrom<Bound> where Bound : Comparable
 ```
 
-#### Overview
+## Overview
 
 You create `PartialRangeFrom` instances by using the postfix range operator (postfix `...`).
 
@@ -49,7 +49,7 @@ print(numbers[3...])
 // Prints "[40, 50, 60, 70]"
 ```
 
-#### Using a Partial Range as a Sequence
+## Using a Partial Range as a Sequence
 
 When a partial range uses integers as its lower and upper bounds, or any other type that conforms to the `Strideable` protocol with an integer stride, you can use that range in a `for`-`in` loop or with any sequence method that doesn’t require that the sequence is finite. The elements of a partial range are the consecutive values from its lower bound continuing upward indefinitely.
 

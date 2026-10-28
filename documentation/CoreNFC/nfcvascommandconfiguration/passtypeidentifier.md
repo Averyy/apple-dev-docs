@@ -21,7 +21,7 @@ var passTypeIdentifier: String { get set }
 @property (nonatomic, retain) NSString * passTypeIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The reader session uses the string value to calculate the merchant ID value for the `GET VAS DATA` command.
 

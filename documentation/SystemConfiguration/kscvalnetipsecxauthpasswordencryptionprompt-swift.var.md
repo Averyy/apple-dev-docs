@@ -19,7 +19,7 @@ let kSCValNetIPSecXAuthPasswordEncryptionPrompt: CFString
 extern CFStringRef const kSCValNetIPSecXAuthPasswordEncryptionPrompt;
 ```
 
-#### Discussion
+## Discussion
 
 This value applies to the [`kSCPropNetIPSecXAuthPasswordEncryption`](./kscpropnetipsecxauthpasswordencryption-swift.var.md) key.
 

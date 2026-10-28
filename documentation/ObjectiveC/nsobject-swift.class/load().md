@@ -25,7 +25,7 @@ class func load()
 + (void) load;
 ```
 
-#### Discussion
+## Discussion
 
 The [`load()`](./load%28%29.md) message is sent to classes and categories that are both dynamically loaded and statically linked, but only if the newly loaded class or category implements a method that can respond.
 

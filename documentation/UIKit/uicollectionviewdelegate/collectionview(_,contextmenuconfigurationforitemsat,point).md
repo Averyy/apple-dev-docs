@@ -27,11 +27,11 @@ optional func collectionView(_ collectionView: UICollectionView, contextMenuConf
 
 - [Building a desktop-class iPad app](../building-a-desktop-class-ipad-app.md)
 
-#### Return Value
+## Return Value
 
 A contextual menu configuration object describing the menu to present. Returning `nil` prevents the interaction from beginning. Returning an empty configuration causes the interaction to begin, and then end with a cancellation effect. You can use this cancellation effect to indicate to people that it’s possible to present a menu from this element, but that there aren’t any actions currently available.
 
-#### Discussion
+## Discussion
 
 The system calls this method when a person invokes a context menu from the collection view. Implement this method to build a [`UIContextMenuConfiguration`](../uicontextmenuconfiguration.md) according to the index paths the system passes in to this method. The following code example shows different context-menu configurations for zero, one, and multiple index paths.
 

@@ -25,7 +25,7 @@ var doubleValue: Double { get }
 @property (readonly) double doubleValue;
 ```
 
-#### Discussion
+## Discussion
 
 This property doesn’t include any whitespace at the beginning of the string. This property is `HUGE_VAL` or `–HUGE_VAL` on overflow, `0.0` on underflow. This property is `0.0` if the string doesn’t begin with a valid text representation of a floating-point number.
 

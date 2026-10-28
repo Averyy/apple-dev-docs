@@ -8,11 +8,11 @@ Create, retrieve, update, and delete ad creatives through these endpoints.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Overview
+## Overview
 
 You create a [`Creative`](./creative.md) object at the ad account level, and an [`Ad`](./ad.md) object references it to define what users see when your ad serves. Since an ad creative lives at the ad account level, you can reuse the same one across multiple ads, even ads in different ad groups, instead of creating a new ad creative for each ad.
 
-#### Use the Creatives Endpoints
+## Use the Creatives Endpoints
 
 Use these endpoints to create, retrieve, update, and delete ad creatives:
 
@@ -24,7 +24,7 @@ Use these endpoints to create, retrieve, update, and delete ad creatives:
 | `PUT` | `/v1/creatives/{id}` | [`Update an Ad Creative`](./put-creatives-_id_.md) updates an existing ad creative. |
 | `DELETE` | `/v1/creatives/{id}` | [`Delete an Ad Creative`](./delete-creatives-_id_.md) soft-deletes an ad creative by its ID. |
 
-##### Understand Creative Types
+### Understand Creative Types
 
 The `creativeType` field determines the ad creative’s content source, how the pre-tap ad renders, and which placements it’s eligible for. You set the creative type at creation, and you can’t change it afterward. The following table summarizes each creative type, its pre-tap content source, and its post-tap destination:
 
@@ -34,7 +34,7 @@ The `creativeType` field determines the ad creative’s content source, how the 
 | `CUSTOM_PRODUCT_PAGE` | System-rendered from a custom product page in App Store Connect | Custom App Store product page |
 | `LOCAL_ADS_SEARCH_CREATIVE` | Brand location assets or logo assembled in [`Creative.CreativeSpec`](./creative/creativespec-data.dictionary.md) | Apple Maps place card |
 
-##### Define the Pre-Tap and Post-Tap Experience
+### Define the Pre-Tap and Post-Tap Experience
 
 Every ad creative has two distinct content areas, `creativeSpec` and `destination`, each with a separate responsibility:
 
@@ -43,7 +43,7 @@ Every ad creative has two distinct content areas, `creativeSpec` and `destinatio
 
 These two fields operate independently. For product page ad creatives, `creativeSpec` is intentionally empty because App Store Connect controls the pre-tap rendering. Only `destination` carries meaningful data. For Apple Maps ad creatives, `creativeSpec` contains the Apple Maps creative spec with the brand’s visual content and promotional text.
 
-##### Understand Product Page Creatives
+### Understand Product Page Creatives
 
 For `DEFAULT_PRODUCT_PAGE` and `CUSTOM_PRODUCT_PAGE` creative types, `creativeSpec` is a product page creative spec object, which is intentionally empty. The pre-tap experience isn’t customizable through the API. All visual assets and copy come from App Store Connect.
 
@@ -53,7 +53,7 @@ The `destination` object carries all required parameters for product page ad cre
 - The `parameters.adamId` field is the App Store app identifier, and it’s required for both ad creative types.
 - The `parameters.productPageId` field is the custom product page identifier, and it’s required for `CUSTOM_PRODUCT_PAGE`. Omit it or leave it `null` for `DEFAULT_PRODUCT_PAGE`.
 
-##### Understand Apple Maps Creatives
+### Understand Apple Maps Creatives
 
 For `LOCAL_ADS_SEARCH_CREATIVE`, `creativeSpec` contains an Apple Maps creative spec with the brand’s visual content and promotional text. The spec includes the following fields:
 
@@ -66,7 +66,7 @@ For `LOCAL_ADS_SEARCH_CREATIVE`, `creativeSpec` contains an Apple Maps creative 
 
 For Apple Maps ad creatives, the post-tap destination is always the Apple Maps place card. Set `destination.destinationType` to `LOCAL_ADS_PLACECARD` at creation. This destination type takes no `parameters`, since there’s no equivalent of `adamId` or `productPageId` to specify for a Maps place card.
 
-##### Track System Status and Eligibility
+### Track System Status and Eligibility
 
 Every ad creative has a `systemStatus` field that reflects whether the ad creative is ready to serve:
 
@@ -97,11 +97,11 @@ When `systemStatus` is `INVALID`, the `systemStatusReasons` array contains one o
 
 Each ad creative also carries an `eligibility` field of type [`CreativeEligibility`](./creativeeligibility.md). The system returns eligibility data for ad creatives of every `creativeType`, including App Store product page ad creatives (`DEFAULT_PRODUCT_PAGE`, `CUSTOM_PRODUCT_PAGE`) and Apple Maps ad creatives (`LOCAL_ADS_SEARCH_CREATIVE`). It summarizes whether the ad creative meets the requirements to serve on each supported ad placement.
 
-##### Query Ad Creatives
+### Query Ad Creatives
 
 The [`Query Ad Creatives`](./post-creatives-query.md) endpoint supports filtering ad creatives by `creativeType`, `systemStatus`, `name`, and `eligibility.status` using dot-notation, with observed values `ELIGIBLE` and `INELIGIBLE`.
 
-##### Look Up Rejection Reasons
+### Look Up Rejection Reasons
 
 For product page ad creatives (`DEFAULT_PRODUCT_PAGE`, `CUSTOM_PRODUCT_PAGE`), detailed rejection information is available as [`CreativeRejectionReason`](./creativerejectionreason.md) records. These records are queried and fetched through endpoints documented under Apps > App Eligibility rather than under Creatives: see [`Query Rejection Reasons`](./find-rejection-reasons.md) (`POST /v1/rejection-reasons/apps/query`) and [`Get Rejection Reasons`](./gets-rejection-reasons-by-id.md) (`GET /v1/rejection-reasons/apps/{rejectionReasonId}`).
 

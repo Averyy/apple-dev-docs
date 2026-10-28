@@ -15,11 +15,11 @@ virtual IOReturn runCommand(
  void *arg3 = 0);
 ```
 
-#### Return Value
+## Return Value
 
 kIOReturnSuccess if successful. kIOReturnAborted if a disabled command gate is free()ed before being reenabled, kIOReturnNoResources if no action available.
 
-#### Overview
+## Overview
 
 Client function that causes the current action to be called in a single threaded manner. Beware the work-loop's gate is recursive and command gates can cause direct or indirect re-entrancy. When the executing on a client's thread runCommand will sleep until the work-loop's gate opens for execution of client actions, the action is single threaded against all other work-loop event sources. If the command is disabled the attempt to run a command will be stalled until enable is called.
 

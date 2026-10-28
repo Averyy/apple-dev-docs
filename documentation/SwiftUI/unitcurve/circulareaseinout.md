@@ -21,7 +21,7 @@ A circular curve that starts out slowly, speeds up over the middle, then slows d
 static let circularEaseInOut: UnitCurve
 ```
 
-#### Discussion
+## Discussion
 
 The shape of the curve is defined by a piecewise combination of `circularEaseIn` and `circularEaseOut`.
 

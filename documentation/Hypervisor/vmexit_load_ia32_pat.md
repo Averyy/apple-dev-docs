@@ -19,7 +19,7 @@ var VMEXIT_LOAD_IA32_PAT: UInt32 { get }
 VMEXIT_LOAD_IA32_PAT
 ```
 
-#### Discussion
+## Discussion
 
 Must be `1`.
 

@@ -12,11 +12,11 @@ virtual IOReturn getKeyValue(
  OSString **text = NULL);
 ```
 
-#### Return Value
+## Return Value
 
 kIOReturnSuccess if the key exists in the dictionary and is of a type appropriate for the value parameter
 
-#### Overview
+## Overview
 
 Gets the value for the specified key, in a variety of forms.
 

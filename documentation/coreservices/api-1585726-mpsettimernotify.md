@@ -15,11 +15,11 @@ Sets the notification information associated with a timer.
 OSStatus MPSetTimerNotify(MPTimerID timerID, MPOpaqueID anID, void *notifyParam1, void *notifyParam2, void *notifyParam3);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./carbon_core/multiprocessing_services.md#1663965).
 
-#### Discussion
+## Discussion
 
 When the timer expires, Multiprocessing Services checks the notification ID, and if it is valid, notifies the related notification mechanisms (that is, event groups, queues, or semaphores) you had specified in your  [`MPSetTimerNotify`](./api-1585726-mpsettimernotify.md)  calls. 
 

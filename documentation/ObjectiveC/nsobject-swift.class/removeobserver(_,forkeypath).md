@@ -25,7 +25,7 @@ func removeObserver(_ observer: NSObject, forKeyPath keyPath: String)
 - (void) removeObserver:(NSObject *) observer forKeyPath:(NSString *) keyPath;
 ```
 
-#### Discussion
+## Discussion
 
 It is an error to call [`removeObserver(_:forKeyPath:)`](./removeobserver%28_,forkeypath%29.md) for an `object` that has not previously been registered as an observer.
 

@@ -20,7 +20,7 @@ func normalizeAdjacentTextNodesPreservingCDATA(_ preserve: Bool)
 - (void) normalizeAdjacentTextNodesPreservingCDATA:(BOOL) preserve;
 ```
 
-#### Discussion
+## Discussion
 
 A text node with a value of an empty string is removed. When you process an input source of XML, adjacent text nodes are automatically normalized. You should invoke this method (with `preserve` as [`false`](../../Swift/false.md)) before using the [`XMLNode`](../xmlnode.md) methods [`objects(forXQuery:constants:)`](../xmlnode/objects%28forxquery,constants%29.md) or [`nodes(forXPath:)`](../xmlnode/nodes%28forxpath%29.md).
 

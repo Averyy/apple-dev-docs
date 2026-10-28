@@ -19,7 +19,7 @@ func getColor(_ color: AutoreleasingUnsafeMutablePointer<NSColor>?, location: Un
 - (void) getColor:(NSColor **) color location:(CGFloat *) location atIndex:(NSInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 This method returns the color stop information that was used to create the receiver. It does not return the interpolated color values at any point along the gradient. The location of the gradient’s first color is typically 0.0 and the location of the last color is typically 1.0, although the locations can vary depending on how the receiver was created.
 

@@ -16,7 +16,7 @@ A class that provices cellular service predictions about upcoming events and ano
 final class ServicePredictionProvider
 ```
 
-#### Overview
+## Overview
 
 To receive predictions about changing cellular conditions, start by initializing and retaining an instance of this class. Next, iterate over the [`servicePredictions`](./servicepredictionprovider/servicepredictions.md) asynchronous sequence with a `for`-`await`-`in` loop.
 

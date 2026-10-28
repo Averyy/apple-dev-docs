@@ -25,7 +25,7 @@ class let extendedGray: CFString
 extern CFStringRef const kCGColorSpaceExtendedGray;
 ```
 
-#### Discussion
+## Discussion
 
 This color space has the same colorimetry as [`genericGrayGamma2_2`](./genericgraygamma2_2.md); in addition, you may encode component values below `0.0` and above `1.0`. Negative values are encoded as the signed reflection of the original encoding function, as shown below
 

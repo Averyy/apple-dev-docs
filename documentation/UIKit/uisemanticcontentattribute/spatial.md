@@ -23,7 +23,7 @@ case spatial
 UISemanticContentAttributeSpatial
 ```
 
-#### Discussion
+## Discussion
 
 These views aren’t flipped when switching between left-to-right and right-to-left layouts.
 

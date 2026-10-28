@@ -20,7 +20,7 @@ Returns a new mutable video composition instruction.
 + (instancetype) videoCompositionInstruction;
 ```
 
-#### Return Value
+## Return Value
 
 A new mutable video composition instruction.
 

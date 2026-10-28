@@ -13,7 +13,7 @@
 kIOPMDeviceUsable = 0x00008000
 ```
 
-#### Discussion
+## Discussion
 
 Indicates the device is usable in this state. Useful only as a Capability
 

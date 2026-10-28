@@ -17,7 +17,7 @@ case readOnly
 NSWindowSharingReadOnly
 ```
 
-#### Discussion
+## Discussion
 
 The window’s contents can be read but not modified by another process.
 

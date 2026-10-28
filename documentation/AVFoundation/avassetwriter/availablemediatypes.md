@@ -24,7 +24,7 @@ var availableMediaTypes: [AVMediaType] { get }
 @property (nonatomic, readonly) NSArray<NSString *> * availableMediaTypes;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to determine the acceptable media types for the container file that the asset writer outputs.
 

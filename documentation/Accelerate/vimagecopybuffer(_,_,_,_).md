@@ -25,7 +25,7 @@ func vImageCopyBuffer(_ src: UnsafePointer<vImage_Buffer>, _ dest: UnsafePointer
 vImage_Error vImageCopyBuffer(const vImage_Buffer *src, const vImage_Buffer *dest, size_t pixelSize, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 

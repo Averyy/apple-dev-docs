@@ -25,11 +25,11 @@ func predictions(fromBatch inputBatch: any MLBatchProvider) throws -> any MLBatc
 - (id<MLBatchProvider>) predictionsFromBatch:(id<MLBatchProvider>) inputBatch error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A batch provider that contains an output feature provider for each prediction.
 
-#### Discussion
+## Discussion
 
 Use this method to make more than one prediction at one time.
 

@@ -19,7 +19,7 @@ date-time dateTimeISO8601
 
 - `/^\d{4}-\d{2}-\d{2}(?:T\d{2}:\d{2}:\d{2}(?:\.\d{1,6})?(?:Z|[-\+]\d{2}:?\d{2})?)?$//`
 
-#### Overview
+## Overview
 
 Event start and end times must use the ISO-8601 format. Provide the most relevant time zone in each `dateTimeISO8601`. For example, a flight reservation from Indiana to California should provide the departure time in the local time zone at the airport in Indiana and the arrival time in California’s time zone.
 

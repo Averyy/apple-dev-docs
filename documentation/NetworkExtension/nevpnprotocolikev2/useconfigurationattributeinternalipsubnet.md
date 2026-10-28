@@ -24,7 +24,7 @@ var useConfigurationAttributeInternalIPSubnet: Bool { get set }
 @property BOOL useConfigurationAttributeInternalIPSubnet;
 ```
 
-#### Discussion
+## Discussion
 
 If this property is [`false`](../../Swift/false.md), split tunnel configurations may still be communicated via Traffic Selectors during IKE negotiation.
 

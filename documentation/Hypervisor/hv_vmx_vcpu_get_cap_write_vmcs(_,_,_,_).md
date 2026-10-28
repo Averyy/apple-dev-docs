@@ -19,11 +19,11 @@ func hv_vmx_vcpu_get_cap_write_vmcs(_ vcpu: hv_vcpuid_t, _ field: UInt32, _ allo
 extern hv_return_t hv_vmx_vcpu_get_cap_write_vmcs(hv_vcpuid_t vcpu, uint32_t field, uint64_t *allowed_0, uint64_t *allowed_1);
 ```
 
-#### Return Value
+## Return Value
 
 [`HV_SUCCESS`](./hv_success.md) if the operation was successful, otherwise an error code specified in [`hv_return_t`](./hv_return_t.md).
 
-#### Discussion
+## Discussion
 
 Returns the constraints imposed by the Hypervisor framework on the given VMCS field, in the form of `allowed_0` and `allowed_1` masks, that indicate what bit values may be set when writing the given VMCS field.
 

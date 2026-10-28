@@ -19,7 +19,7 @@ class var stronglyReferencesTextStorage: Bool { get }
 @property (class, readonly) BOOL stronglyReferencesTextStorage;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`true`](../../Swift/true.md).
 

@@ -28,7 +28,7 @@ optional func resolveContent(for intent: INSendMessageIntent) async -> INStringR
 - (void) resolveContentForSendMessage:(INSendMessageIntent *) intent withCompletion:(void (^)(INStringResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This method resolves the contents of the message.
 

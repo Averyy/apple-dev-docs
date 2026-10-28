@@ -19,7 +19,7 @@ case behindWindow
 NSVisualEffectBlendingModeBehindWindow
 ```
 
-#### Discussion
+## Discussion
 
 Views using this blending mode can overlap, and the view lower in the hierarchy “wins”.
 

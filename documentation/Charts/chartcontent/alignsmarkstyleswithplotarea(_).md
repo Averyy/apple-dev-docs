@@ -22,7 +22,7 @@ nonisolated
 func alignsMarkStylesWithPlotArea(_ aligns: Bool = true) -> some ChartContent
 ```
 
-#### Discussion
+## Discussion
 
 Marks map unit-point coordinates within the plot area’s bounds.
 

@@ -23,11 +23,11 @@ func completions(forPartialWordRange range: NSRange, in string: String, language
 - (NSArray<NSString *> *) completionsForPartialWordRange:(NSRange) range inString:(NSString *) string language:(NSString *) language;
 ```
 
-#### Return Value
+## Return Value
 
 An array of strings, each of which is a completion of a partially entered word represented by `range` in `string`. If no possible completions are found,  the method returns an empty array.
 
-#### Discussion
+## Discussion
 
 The strings in the array are in the order they should be presented to the user—that is, more probable completions come first in the array.
 

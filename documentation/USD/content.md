@@ -5,11 +5,11 @@
 
 The characters that the text displays.
 
-#### Overview
+## Overview
 
 You can include line breaks in the value of this property.
 
-##### Declaration
+### Declaration
 
 ```other
 string content = ""

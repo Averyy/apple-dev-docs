@@ -15,7 +15,7 @@ The resource linkage identifying an alternative distribution package version ass
 object AlternativeDistributionPackage.Relationships.Versions.Data
 ```
 
-#### Discussion
+## Discussion
 
 For more information on the object that owns this version data, see [`AlternativeDistributionPackage.Relationships.Versions`](../versions-data.dictionary.md).
 

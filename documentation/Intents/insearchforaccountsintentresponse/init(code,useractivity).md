@@ -23,11 +23,11 @@ init(code: INSearchForAccountsIntentResponseCode, userActivity: NSUserActivity?)
 - (instancetype) initWithCode:(INSearchForAccountsIntentResponseCode) code userActivity:(NSUserActivity *) userActivity;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized response object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 After initializing the response object, put the account details in the [`accounts`](./accounts.md) property. Always provide as much account information as is relevant.
 

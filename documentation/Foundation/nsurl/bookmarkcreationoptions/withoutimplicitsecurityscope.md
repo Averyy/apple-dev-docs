@@ -25,7 +25,7 @@ static var withoutImplicitSecurityScope: NSURL.BookmarkCreationOptions { get }
 NSURLBookmarkCreationWithoutImplicitSecurityScope
 ```
 
-#### Discussion
+## Discussion
 
 Bookmarks that you create without security scope automatically carry implicit ephemeral security scope. This security scope is valid until reboot at the latest, and confers access to the resource to any other process that resolves the bookmark. Using this option prevents inclusion of this ephemeral security scope.
 

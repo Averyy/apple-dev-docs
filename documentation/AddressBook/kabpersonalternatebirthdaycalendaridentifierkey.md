@@ -23,7 +23,7 @@ let kABPersonAlternateBirthdayCalendarIdentifierKey: CFString!
 extern CFStringRef const kABPersonAlternateBirthdayCalendarIdentifierKey;
 ```
 
-#### Discussion
+## Discussion
 
 Corresponds to [`calendar`](../Foundation/nsdatecomponents/calendar.md).
 

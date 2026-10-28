@@ -25,7 +25,7 @@ extern void vDSP_vsadd(const float *__A, vDSP_Stride __IA, const float *__B, flo
 
 - [Using vDSP for vector-based arithmetic](./using-vdsp-for-vector-based-arithmetic.md)
 
-#### Discussion
+## Discussion
 
 This function calculates the element-wise sum of vector `A` and scalar value `B`, and writes the result to vector `C`, as follows:
 

@@ -20,7 +20,7 @@ A notification that posts after a single keyboard, or the last of multiple keybo
 static let GCKeyboardDidDisconnect: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is a [`GCKeyboard`](../../../GameController/gckeyboard.md) object that represents one or more keyboards. If the user connects multiple keyboards, the framework posts this notification only after the last keyboard disconnects from the device.
 

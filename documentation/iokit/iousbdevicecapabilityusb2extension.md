@@ -16,7 +16,7 @@ typedef struct IOUSBDeviceCapabilityUSB2Extension {
 } IOUSBDeviceCapabilityUSB2Extension;
 ```
 
-#### Overview
+## Overview
 
 Device Capability USB 2.0 Extension
 

@@ -19,7 +19,7 @@ func drawUnderline(forGlyphRange glyphRange: NSRange, underlineType underlineVal
 - (void) drawUnderlineForGlyphRange:(NSRange) glyphRange underlineType:(NSUnderlineStyle) underlineVal baselineOffset:(CGFloat) baselineOffset lineFragmentRect:(NSRect) lineRect lineFragmentGlyphRange:(NSRange) lineGlyphRange containerOrigin:(NSPoint) containerOrigin;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked automatically by [`underlineGlyphRange(_:underlineType:lineFragmentRect:lineFragmentGlyphRange:containerOrigin:)`](./underlineglyphrange%28_,underlinetype,linefragmentrect,linefragmentglyphrange,containerorigin%29.md); you should rarely need to invoke it directly. This method’s `underlineVal` parameter does not take account of any setting for[`NSUnderlineByWordMask`](../nsunderlinebywordmask.md) because that’s taken care of by [`underlineGlyphRange(_:underlineType:lineFragmentRect:lineFragmentGlyphRange:containerOrigin:)`](./underlineglyphrange%28_,underlinetype,linefragmentrect,linefragmentglyphrange,containerorigin%29.md).
 

@@ -24,11 +24,11 @@ typealias JSObjectConvertToTypeCallback = (JSContextRef?, JSObjectRef?, JSType, 
 typedef const struct OpaqueJSValue *(*)(const struct OpaqueJSContext *, struct OpaqueJSValue *, JSType, const struct OpaqueJSValue **) JSObjectConvertToTypeCallback;
 ```
 
-#### Return Value
+## Return Value
 
 The object’s converted value, or `NULL` if the object doesn’t convert.
 
-#### Discussion
+## Discussion
 
 If you name your function `ConvertToType`, you declare it like this:
 

@@ -5,7 +5,7 @@
 
 Allow users to scan NFC tags without an app using background tag reading.
 
-#### Overview
+## Overview
 
 On iPhones that support background tag reading, the system scans for and reads NFC data without requiring users to scan tags using an app. The system displays a pop-up notification each time it reads a new tag. After the user taps the notification, the system delivers the tag data to the appropriate app. If the iPhone is locked, the system prompts the user to unlock the phone before providing the tag data to the app.
 
@@ -19,7 +19,7 @@ To avoid unintentional tag reading, the system reads tags in the background only
 - The camera is in use.
 - Airplane mode is enabled.
 
-##### Process Scanned Tags
+### Process Scanned Tags
 
 After the device scans an NFC tag while in background tag reading mode, the system inspects the tag’s NDEF message for a URI record by looking for an [`NFCNDEFPayload`](./nfcndefpayload.md) object with the following property values:
 
@@ -28,11 +28,11 @@ After the device scans an NFC tag while in background tag reading mode, the syst
 
 If the NDEF message contains more than one URI record, the system uses the first one. The URI record must contain either a universal link or a supported URL scheme.
 
-###### Use Universal Links
+#### Use Universal Links
 
 For universal links, the system launches (or brings to the foreground) the app associated with the universal link after the user taps the notification. The system sends the NDEF message to the app as an [`NSUserActivity`](../Foundation/nsuseractivity.md) object. If there are no installed apps associated with the universal link, the system opens the link in Safari.
 
-###### Use URL Schemes
+#### Use URL Schemes
 
 The system processes NDEF payloads containing a URI for a URL scheme in the same way as universal links. The system displays a notification after reading the tag. When the user taps the notification, the system launches the app that supports the URL scheme.
 
@@ -53,13 +53,13 @@ For more information on URL schemes, see [Apple URL Scheme Reference](https://de
 
 > **Note**:  Background tag reading doesn’t support custom URL schemes. Use universal links instead.
 
-##### Configure Your App
+### Configure Your App
 
 Add support for background tag reading to your app by turning on *Associated Domains* under the project’s Capabilities tab. This step adds the [`Associated Domains Entitlement`](../BundleResources/entitlements/com.apple.developer.associated-domains.md) to your project’s entitlement file and to the app ID. Next, enter the domain for each universal link supported by your app.
 
 ![A screenshot of Xcode highlighting the Associated Domain capabilities setting.](https://developer.apple.com/tutorials/images/com.apple.corenfc/media-3225639@2x.png)
 
-##### Handle Tag Delivery
+### Handle Tag Delivery
 
 To handle the NDEF message read from the tag, implement the [`application(_:continue:restorationHandler:)`](../UIKit/uiapplicationdelegate/application%28_,continue,restorationhandler%29.md) method in your app delegate. The system calls this method to deliver the tag data to your app in an [`NSUserActivity`](../Foundation/nsuseractivity.md) object. The user activity has an [`activityType`](../Foundation/nsuseractivity/activitytype.md) of [`NSUserActivityTypeBrowsingWeb`](../Foundation/nsuseractivitytypebrowsingweb.md), and the tag data is available in the [`ndefMessagePayload`](../Foundation/nsuseractivity/ndefmessagepayload.md) property.
 

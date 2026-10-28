@@ -24,7 +24,7 @@ var unmappedLocalizedName: String? { get set }
 @property (nonatomic, strong, nullable) NSString * unmappedLocalizedName;
 ```
 
-#### Discussion
+## Discussion
 
 To present the element that a user wants to remap in your interface, use this property to get the original name. Otherwise, use the [`localizedName`](./localizedname.md) property to get the possibly remapped name.
 

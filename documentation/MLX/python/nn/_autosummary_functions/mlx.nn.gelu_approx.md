@@ -6,9 +6,14 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary_function
 
 # mlx.nn.gelu_approx
 
-**class gelu_approx(*x*)**
-: An approximation to Gaussian Error Linear Unit.
+```python
+class gelu_approx(x)
+```
+
+An approximation to Gaussian Error Linear Unit.
+
 See [gelu()](mlx.nn.gelu.md#mlx.nn.gelu) for the exact computation.
+
 This function approximates `gelu` with a maximum absolute error \(<
 0.0005\) in the range \([-6, 6]\) using the following
 

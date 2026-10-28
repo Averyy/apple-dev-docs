@@ -19,7 +19,7 @@ func maximumLength() -> Int
 - (NSUInteger) maximumLength;
 ```
 
-#### Return Value
+## Return Value
 
 The maximum number of characters allowed in the annotations string. A return value of `0` means that there is no specified maximum.
 

@@ -20,11 +20,11 @@ func CGWindowListCreateDescriptionFromArray(_ windowArray: CFArray?) -> CFArray?
 extern CFArrayRefCGWindowListCreateDescriptionFromArray(CFArrayRef windowArray);
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`CFDictionary`](../CoreFoundation/cfdictionary.md) types, each of which contains information about one of the windows in the current user session. If there are no windows matching the desired criteria, the function returns an empty array. If you call this function from outside of a GUI security session or when no window server is running, this function returns `NULL`.
 
-#### Discussion
+## Discussion
 
 This function ignores any window IDs in the `windowArray` parameter that refer to windows that no longer exist. (This can occur if the user closes a window between the time you retrieve its ID and the time you call this function.) You should therefore not assume that the returned array of dictionaries contains the same number of entries as this parameter. To make it easier to associate window IDs with the correct information, however, each dictionary does contain a [`kCGWindowNumber`](./kcgwindownumber.md) key whose value is the corresponding window ID. For the list of keys and values that may be present in the dictionary, see [Required Window List Keys](./required-window-list-keys.md) and [Optional Window List Keys](./optional-window-list-keys.md).
 

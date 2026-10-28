@@ -12,7 +12,7 @@ Apply Vision algorithms to identify objects in real-time video.
 - Mac Catalyst 12.0+
 - Xcode 11.3+
 
-#### Overview
+## Overview
 
 With the [Vision](./Vision.md) framework, you can recognize objects in live capture.  Starting in iOS 12, macOS 10.14, and tvOS 12, Vision requests made with a Core ML model return results as  [VNRecognizedObjectObservation](./vnrecognizedobjectobservation.md) objects, which identify objects found in the captured scene.
 
@@ -20,7 +20,7 @@ This sample app shows you how to set up your camera for live capture, incorporat
 
 ![Example screenshots of app identifying a croissant and bananas in live capture.](https://developer.apple.com/tutorials/images/Vision/BananaCroissant.png)
 
-##### Set Up Live Capture
+### Set Up Live Capture
 
 Although implementing AV live capture is similar from one capture app to another, configuring the camera to work best with Vision algorithms involves some subtle differences.
 
@@ -109,7 +109,7 @@ previewLayer.frame = rootLayer.bounds
 rootLayer.addSublayer(previewLayer)
 ```
 
-##### Specify Device Orientation
+### Specify Device Orientation
 
 You must input the camera’s orientation properly using the device orientation.  Vision algorithms aren’t orientation-agnostic, so when you make a request, use an orientation that’s relative to that of the capture device.
 
@@ -131,7 +131,7 @@ default:
 }
 ```
 
-##### Designate Labels Using a Core ML Classifier
+### Designate Labels Using a Core ML Classifier
 
 The Core ML model you include in your app determines which labels are used in Vision’s object identifiers.  The model in this sample app was trained in Turi Create 4.3.2 using Darknet YOLO (You Only Look Once). See [Object Detection](https://apple.github.io/turicreate/docs/userguide/object_detection/) to learn how to generate your own models using Turi Create. Vision analyzes these models and returns observations as [`VNRecognizedObjectObservation`](./vnrecognizedobjectobservation.md) objects.
 
@@ -158,7 +158,7 @@ The completion handler could execute on a background queue, so perform UI update
 
 Access results in the request’s completion handler, or through the `requests` property.
 
-##### Parse Recognized Object Observations
+### Parse Recognized Object Observations
 
 The `results` property is an array of observations, each with a set of labels and bounding boxes. Parse those observations by iterating through the array, as follows:
 

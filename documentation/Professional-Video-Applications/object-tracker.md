@@ -5,7 +5,7 @@
 
 Describe a tracked object such as a face or other moving object in a video clip.
 
-#### Overview
+## Overview
 
 Users can track moving objects in video clips to match their movement to a clip, title, logo, generator, or a still image, by using the object-tracker feature in Final Cut Pro. They can also track the shape mask of a video effect, for example a blur, highlight, or color effect, to a moving object in a video clip.
 

@@ -23,11 +23,11 @@ optional func editMenu(for textRange: UITextRange, suggestedActions: [UIMenuElem
 - (UIMenu *) editMenuForTextRange:(UITextRange *) textRange suggestedActions:(NSArray<UIMenuElement *> *) suggestedActions;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a menu describing the desired menu hierarchy. Return `nil` to present the default system menu.
 
-#### Discussion
+## Discussion
 
 The following example returns a menu with additional actions in a submenu.
 

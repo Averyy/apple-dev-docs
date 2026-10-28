@@ -25,7 +25,7 @@ var SPARSE_NORM_R1: sparse_norm { get }
 SPARSE_NORM_R1
 ```
 
-#### Discussion
+## Discussion
 
 | Matrix element wise | *sumⱼ ( sqrt ( sumᵢ ( A[i,j]² ) ) )* |
 | --- | --- |

@@ -15,7 +15,7 @@ The Boolean value that indicates whether the customer upgraded to another subscr
 boolean isUpgraded
 ```
 
-#### Discussion
+## Discussion
 
 If `isUpgraded` is `true`, the customer has upgraded the subscription represented by this transaction to another subscription. This value appears in the transaction only when it’s `true`. To determine the service that the customer is entitled to, look for another transaction that has a subscription with a higher level of service.
 

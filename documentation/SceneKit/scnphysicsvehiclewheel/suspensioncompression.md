@@ -25,7 +25,7 @@ var suspensionCompression: CGFloat { get set }
 @property CGFloat suspensionCompression;
 ```
 
-#### Discussion
+## Discussion
 
 The default suspension coefficient is `4.4`. Lower values cause the wheel to return to its natural position more quickly.
 

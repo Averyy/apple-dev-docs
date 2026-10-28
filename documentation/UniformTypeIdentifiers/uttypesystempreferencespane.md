@@ -21,7 +21,7 @@ A type that represents a System Preferences pane.
 extern UTType * const UTTypeSystemPreferencesPane;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.apple.systempreference.prefpane`.
 

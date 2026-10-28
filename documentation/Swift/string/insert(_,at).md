@@ -21,7 +21,7 @@ Inserts a new character at the specified position.
 mutating func insert(_ newElement: Character, at i: String.Index)
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method invalidates any existing indices for use with this string.
 

@@ -22,11 +22,11 @@ nonisolated
 func luminanceToAlpha() -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view with the luminance to alpha effect applied.
 
-#### Discussion
+## Discussion
 
 Use this modifier to create a semitransparent mask, with the opacity of each part of the modified view controlled by the luminance of the corresponding part of the original view. Regions of lower luminance become more transparent, while higher luminance yields greater opacity.
 

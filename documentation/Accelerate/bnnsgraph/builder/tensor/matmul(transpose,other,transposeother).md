@@ -23,7 +23,7 @@ func matmul(transpose: Bool = false, other: some BNNSGraph.Builder.OperationPara
 
 Available when `T` conforms to `BNNSScalar`.
 
-#### Discussion
+## Discussion
 
 This function treats `self` as the LHS of the matrix multiply operation.
 

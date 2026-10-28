@@ -22,7 +22,7 @@ Creates and returns a type that contains the rendering options for Compositor Se
 
 - [Drawing fully immersive content using Metal](../drawing-fully-immersive-content-using-metal.md)
 
-#### Discussion
+## Discussion
 
 In your implementation of this method, modify the `configuration` parameter to specify the Metal texture formats and layouts you want to use during rendering. Verify that your preferred choices are available by checking the supported options using the information in the `capabilities` parameter.
 

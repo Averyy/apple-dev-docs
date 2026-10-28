@@ -19,7 +19,7 @@ var tableColumns: [NSTableColumn] { get }
 @property (copy, readonly) NSArray<NSTableColumn *> * tableColumns;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains an array of [`NSTableColumn`](../nstablecolumn.md) objects corresponding to the columns in the table. This array contains all columns, including those that are currently hidden.
 

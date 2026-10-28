@@ -25,7 +25,7 @@ enum CFNotificationSuspensionBehavior
 enum CFNotificationSuspensionBehavior : CFIndex;
 ```
 
-#### Overview
+## Overview
 
 An application selects the suspension behavior for a given notification when it registers an observer for that notification with [`CFNotificationCenterAddObserver(_:_:_:_:_:_:)`](./cfnotificationcenteraddobserver%28_,_,_,_,_,_%29.md).
 

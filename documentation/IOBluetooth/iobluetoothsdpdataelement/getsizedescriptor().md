@@ -19,7 +19,7 @@ func getSizeDescriptor() -> BluetoothSDPDataElementSizeDescriptor
 - (BluetoothSDPDataElementSizeDescriptor) getSizeDescriptor;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the size descriptor for the target data element.
 

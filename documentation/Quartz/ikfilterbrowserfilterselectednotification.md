@@ -15,7 +15,7 @@ Posted when the user clicks a filter name in the filter browser.
 extern NSString * const IKFilterBrowserFilterSelectedNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The name of the selected filter is sent as the object in the notification.
 

@@ -8,7 +8,7 @@ Filter, sort, and paginate recommendation queries by status, state, and category
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Overview
+## Overview
 
 Every recommendation query request builds on [`RecommendationQueryRequest`](./recommendationqueryrequest.md), which requires `promotedObjectId` and `promotedObjectType` filters. Add [`FilterCondition`](./recommendationfiltercondition.md) entries to narrow results, and use [`Sorting`](./recommendationsorting.md) and [`QueryRequestPagination`](./recommendationqueryrequestpagination.md) to order and page them. The suggestion query endpoints reuse these objects.
 

@@ -25,7 +25,7 @@ let NSURLErrorNetworkUnavailableReasonKey: String
 extern NSErrorUserInfoKey const NSURLErrorNetworkUnavailableReasonKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value associated with this key is an [`NSNumber`](./nsnumber.md). For possible values, see [`NSURLErrorNetworkUnavailableReason`](./nsurlerrornetworkunavailablereason.md).
 

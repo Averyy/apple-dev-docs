@@ -5,18 +5,18 @@
 
 Released September 16, 2024 — 18.0 (20619.1.26)
 
-#### Overview
+## Overview
 
 Safari 18 is available for iOS 18, iPadOS 18, visionOS 2, macOS 15, macOS Sonoma, and macOS Ventura.
 
-##### Accessibility
+### Accessibility
 
-###### New Features
+#### New Features
 
 - Added support for `<input type="datetime">`, `<input type="datetime-local">`, and `<time>` elements.  (118180250)
 - Added support for `ariaBrailleLabel` and `ariaBrailleRoleDescription` element reflection properties.  (123926949)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed role assignment for `<header>` inside `<main>` and sectioning elements.  (48370244)
 - Fixed range input not firing an input event when incremented or decremented via accessibility APIs.  (85707481)
@@ -35,44 +35,44 @@ Safari 18 is available for iOS 18, iPadOS 18, visionOS 2, macOS 15, macOS Sonoma
 - Fixed updating table accessibility text when its caption dynamically changes.  (127263464)
 - Fixed updating `aria-describedby` text after the targeted element changes its subtree.  (127390465)
 
-##### Animations
+### Animations
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed the `transition` property to produce the shortest serialization.  (119822401)
 - Fixed the `animation` property to produce the shortest serialization.  (120439368)
 
-##### Apple Pay
+### Apple Pay
 
-###### New Features
+#### New Features
 
 - Added support for funds transfer.  (104115471)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed arbitrary 8 digit limit on a line item’s total amount.  (112078798)
 
-##### Authentication
+### Authentication
 
-###### New Features
+#### New Features
 
 - Implemented conditional credential creation.  (113573376)
 - Added support for the WebAuthn PRF extension.  (119057355)
 - Added support for using passkeys across related origins.  (121477346)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `navigator.credentials.create()` rejects with “NotAllowedError: Operation Failed” after a conditional UI request is aborted.  (109936742)
 - Fixed setting the cancel flag once the cancel completes regardless of a subsequent request occurring.  (124727713)
 
-##### Canvas
+### Canvas
 
-###### New Features
+#### New Features
 
 - Added support for `willReadFrequently`.  (126739379)
 - Added support for resolving a nested `currentcolor` used in `color-mix` or a relative color.  (128027026)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `drawImage(detachedOffscreenCanvas)` to throw an exception.  (120451062)
 - Fixed OffscreenCanvas failing to render to the placeholder with nested workers.  (126069375)
@@ -82,19 +82,19 @@ Safari 18 is available for iOS 18, iPadOS 18, visionOS 2, macOS 15, macOS Sonoma
 - Fixed the Canvas `drawImage()` API to throw an exception when the image is in broken state.  (128588063)
 - Fixed a detached OffscreenCanvas to not transfer an ImageBuffer.  (129270155)
 
-###### Deprecations
+#### Deprecations
 
 - Removed support for OffscreenCanvasRenderingContext2D’s `commit()` method.  (126758254)
 
-##### Cookies
+### Cookies
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed treating the lack of an explicit “SameSite” attribute as “SameSite=Lax”.  (96026173)
 
-##### CSS
+### CSS
 
-###### New Features
+#### New Features
 
 - Added support for `currentColor` and system color keywords to Relative Color Syntax.  (100981965)
 - Added support for `(prefers-contrast: custom)`.  (103658875)
@@ -105,7 +105,7 @@ Safari 18 is available for iOS 18, iPadOS 18, visionOS 2, macOS 15, macOS Sonoma
 - Added support for the unprefixed `backdrop-filter`.  (123523441)
 - Added support for the `:active-view-transition` pseudo-class.  (129851076)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed setting `white-space` to a non-default value dynamically on a whitespace or a new line.  (92559818)
 - Fixed custom counter styles `disclosure-open` and `disclosure-closed` to point to the correct direction in right-to-left.  (109014745)
@@ -138,7 +138,7 @@ Safari 18 is available for iOS 18, iPadOS 18, visionOS 2, macOS 15, macOS Sonoma
 - Fixed: Improved large Grid performance.  (130728344)
 - Fixed some CSS properties causing quotes to be reset.  (132585704)
 
-###### Deprecations
+#### Deprecations
 
 - Removed `WEBKIT_KEYFRAMES_RULE` and `WEBKIT_KEYFRAME_RULE` in CSSRule.  (97084520)
 - Removed `:-webkit-full-screen-ancestor` pseudo-class.  (100782937)
@@ -150,25 +150,25 @@ Safari 18 is available for iOS 18, iPadOS 18, visionOS 2, macOS 15, macOS Sonoma
 - Removed `:-webkit-full-page-media` pseudo-class.  (121752962)
 - Removed `:-webkit-full-screen-document` pseudo-class.  (121816310)
 
-##### Editing
+### Editing
 
-###### New Features
+#### New Features
 
 - Added `writingsuggestions` attribute to HTML elements to opt into multiword text completions.  (114989563)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where input method editing would sporadically drop the composition range.  (130020224)
 - Fixed dictation UI no longer showing up when beginning dictation after focusing an empty text field.  (131534054) (FB14277296)
 
-##### Forms
+### Forms
 
-###### New Features
+#### New Features
 
 - Added haptic feedback for `<input type=checkbox switch>` on iOS.  (125474921)
 - Added support for partially transparent accent colors.  (130599744)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed displayed `datalist` dropdown to sync its `options` elements after a DOM update.  (54690831)
 - Fixed input elements to use the `[value]` as the first fallback step base.  (107721910)
@@ -179,33 +179,33 @@ Safari 18 is available for iOS 18, iPadOS 18, visionOS 2, macOS 15, macOS Sonoma
 - Fixed form controls drawing with an active appearance when the window is inactive.  (127391198)
 - Fixed constructed FormData object to not include entries for the image button submitter by default.  (128176811)
 
-##### History
+### History
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed the properties of `History` to throw a SecurityError when not in a fully active Document.  (118750576)
 
-##### HTML
+### HTML
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed “about:blank” `document.referrer` initialization.  (97689906)
 - Fixed parsing a self-closing SVG script element. It now successfully executes.  (121887875)
 
-##### Images
+### Images
 
-###### Deprecations
+#### Deprecations
 
 - Removed support for JPEG2000.  (35161822)
 
-##### JavaScript
+### JavaScript
 
-###### New Features
+#### New Features
 
 - Added support for the `v` flag with `RegExp.prototype[Symbol.matchAll]`.  (126017731)
 - Added support for Unicode 15.1.0 characters in RegExp.  (126863692)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `RegExp.prototype.@@split` to update the following legacy RegExp static properties: `RegExp.input`, `RegExp.lastMatch`, `RegExp.lastParen`, `RegExp.leftContext`, `RegExp.rightContext`, and `RegExp.$1, ... RegExp.$9`.  (99865597)
 - Fixed `String.prototype.replace` to not take the fast path if the pattern is RegExp Object and the `lastIndex` is not numeric.  (101122567)
@@ -243,25 +243,25 @@ Safari 18 is available for iOS 18, iPadOS 18, visionOS 2, macOS 15, macOS Sonoma
 - Fixed optimized TypedArrays giving incorrect results.  (129303210)
 - Fixed `Intl.DurationFormat` for `numeric` and `2-digit`.  (130279541)
 
-###### Deprecations
+#### Deprecations
 
 - Removed `[[VarNames]]` from the global object to reflect changes in the specification.  (130438575)
 
-##### Loading
+### Loading
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `navigator.cookieEnabled` to return `false` when cookies are blocked.  (121284878)
 
-##### Media
+### Media
 
-###### New Features
+#### New Features
 
 - Added support for WebRTC HEVC RFC 7789 RTP Payload Format.  (112001659)
 - Added support for Viewer on macOS, a full window video watching mode for web pages with a prominent video element.  (114218891)
 - Added support for MSE in workers.  (123052315)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed MediaSession to determine the best size artwork to use when the `sizes` metadata attribute is provided.  (81160539) (FB9409169)
 - Fixed video sound coming from another window after changing tabs in the Tab Bar in visionOS.  (120018549)
@@ -275,30 +275,30 @@ Safari 18 is available for iOS 18, iPadOS 18, visionOS 2, macOS 15, macOS Sonoma
 - Fixed picture-in-picture when hiding the `<video>` element while in Viewer.  (131786564)
 - Fixed the return button not working after the video is paused and played in picture-in-picture.  (131791367)
 
-###### Deprecations
+#### Deprecations
 
 - Removed non-standard `VTTRegion.track`.  (123172214)
 
-##### Networking
+### Networking
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed upgrading inactive or passive subresource requests and fetches in would-be mixed security contexts to match standards.  (101678657)
 - Fixed incorrect `Sec-Fetch-Site` value for navigation of a nested document.  (109358563)
 - Fixed loading WebArchives with a non-persistent datastore.  (122290562)
 - Fixed `Timing-Allow-Origin` to not apply to an HTTP 302 response.  (126531139)
 
-##### PDF
+### PDF
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed print buttons with a print action implementation.  (123850236)
 - Fixed Open in Preview for a PDF with a space in its name.  (127379128)
 - Fixed “Open with Preview” context menu item to work with locked PDF documents.  (132033502)
 
-##### Rendering
+### Rendering
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed Greek uppercase transforms failing for some characters.  (90364897)
 - Fixed resizing a `<textarea>` element with `1rem` padding.  (90639221)
@@ -316,46 +316,46 @@ Safari 18 is available for iOS 18, iPadOS 18, visionOS 2, macOS 15, macOS Sonoma
 - Fixed selecting Japanese text annotated with `ruby` in a `vertical-rl` writing mode table.  (130974783)
 - Fixed support for border, padding, and margin on `mfrac` and `mspace` elements in MathML.  (131119823)
 
-##### Safari Extensions
+### Safari Extensions
 
-###### New Features
+#### New Features
 
 - Added support for Safari Web Extensions and Content Blockers in web apps on macOS.  (99755515)
 - Added support for Device Management of extension enabled state, private browsing state, and website access on Managed Devices.  (113051857)
 
-##### Scrolling
+### Scrolling
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed the cursor not updating as content scrolls under it on some pages.  (122347347)
 
-##### Security
+### Security
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed stripping the scroll-to-text fragment from the URL to prevent exposing the fragment to the page.  (124717009)
 - Fixed CORS bypass on private localhost domain using 0.0.0.0 host and mode “no-cors”.  (125913679)
 - Fixed blocking cross-origin redirect downloads in an iframe.  (130901951)
 - Fixed blocked cross-origin redirect downloads to attempt rendering the page instead.  (131962658)
 
-##### Spatial Web
+### Spatial Web
 
-###### New Features
+#### New Features
 
 - Added support for docking fullscreen videos into the current Environment in visionOS.  (91364019)
 - Added support for interaction regions in SVGs that have a `cursor: pointer` set.  (117642184) (FB13310281)
 - Added interaction region support for CSS `clip-path`.  (119124300)
 - Added support for Spatial and Panoramic images.  (125913434)
 
-##### Storage
+### Storage
 
-###### Deprecations
+#### Deprecations
 
 - Removed support for AppCache.  (113343269)
 
-##### SVG
+### SVG
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed the SVG parser to interpret “form feed” as white space.  (95488677)
 - Fixed error handling for invalid filter primitive references.  (104262208)
@@ -366,28 +366,28 @@ Safari 18 is available for iOS 18, iPadOS 18, visionOS 2, macOS 15, macOS Sonoma
 - Fixed the SVG marker segment calculations if the marker path consists of sub-paths.  (123434203)
 - Fixed `SVGLength` to sync with the WebIDL specification.  (129169603)
 
-###### Deprecations
+#### Deprecations
 
 - Removed non-standard `getTransformToElement` from SVGGraphicsElement  (122435702)
 - Removed the `SVGAnimateColorElement` interface.  (122586568)
 
-##### Text
+### Text
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed disclosure counter styles to consider `writing-mode`.  (130468537)
 
-##### Web Animations
+### Web Animations
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed percentage transform animations when `width` and `height` are animated.  (63309680)
 - Fixed updating an animation when changing the value of a `transform` property while that property is animated with an implicit keyframe.  (126126617)
 - Fixed `display` transition to `none`.  (130857338)
 
-##### Web API
+### Web API
 
-###### New Features
+#### New Features
 
 - Added support for `URL.parse()`.  (125376520)
 - Added support for `shadowRootDelegatesFocus` and `shadowRootClonable` to `<template>`.  (125401993)
@@ -398,7 +398,7 @@ Safari 18 is available for iOS 18, iPadOS 18, visionOS 2, macOS 15, macOS Sonoma
 - Added support for the `bytes()` method to Request and Response.  (128407577)
 - Added support for `bytes()` to Blob and PushMessageData.  (128418858)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `cssText `setter to change the `style` attribute when the serialization differs.  (29861252) (FB5535475)
 - Fixed `history.pushState()` and `history.replaceState()` to ignore the `title` argument.  (75695791)
@@ -421,44 +421,44 @@ Safari 18 is available for iOS 18, iPadOS 18, visionOS 2, macOS 15, macOS Sonoma
 - Fixed an issue when inserting writing suggestions into an editable `display: grid` container.  (129366300)
 - Fixed the warning message for `window.styleMedia`.  (131005713)
 
-###### Deprecations
+#### Deprecations
 
 - Removed support for `KeyboardEvent.altGraphKey`.  (102980723)
 - Removed AES-CFB support from WebCrypto.  (120000331)
 - Removed the non-standard `KeyboardEvent.keyLocation`.  (121564228)
 - Removed `HashChangeEvent`’s non-standard `initHashChangeEvent()` method.  (124736521)
 
-##### Web Apps
+### Web Apps
 
-###### New Features
+#### New Features
 
 - Added support for opening links directly in web apps on macOS.  (113034778)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed resolving `www.` sub-domain for Associated Domains for all web apps.  (121216556)
 
-##### Web Assembly
+### Web Assembly
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed initialization of portable reference typed globals.  (119397603)
 
-##### Web Extensions
+### Web Extensions
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed getting an empty key from storage.  (99440265) (FB11427769)
 - Fixed Service Workers not appearing in the Develop menu or remote Web Inspector menu.  (130712941)
 - Fixed web extensions unable to start due to an issue parsing declarativeNetRequest rules.  (130861213) (FB14145801)
 
-##### Web Inspector
+### Web Inspector
 
-###### New Features
+#### New Features
 
 - Added support for fuzzy search code completion in the CSS source editor.  (125030691)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed font sizes in the Audits tab.  (76162927)
 - Fixed expanded sections of Storage to not collapse.  (107687975)
@@ -480,27 +480,27 @@ Safari 18 is available for iOS 18, iPadOS 18, visionOS 2, macOS 15, macOS Sonoma
 - Fixed inspectable tabs from Safari in the visionOS Simulator don’t appear in Developer menu on the host macOS.  (127259433)
 - Fixed Accessibility inspector for switch controls to report “State: on/off” instead of “Checked: true/false”.  (128952449)
 
-##### Web Views
+### Web Views
 
-###### New Features
+#### New Features
 
 - Added WKWebView API support for Text Assistant.  (126585826)
 - Added WKWebView API to control adaptive image glyph insertion.  (126585881)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed Gamepad API in WKWebView.  (123310472)
 - Fixed repainting HTML elements when their width or height change in legacy WebView.  (124564409)
 
-##### WebDriver
+### WebDriver
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed retrieving titles containing multibyte characters.  (123987149)
 
-##### WebGL
+### WebGL
 
-###### New Features
+#### New Features
 
 - Enabled support for the following approved extensions:
 
@@ -511,14 +511,14 @@ Safari 18 is available for iOS 18, iPadOS 18, visionOS 2, macOS 15, macOS Sonoma
   - `OES_sample_variables`
   - `OES_shader_multisample_interpolation` (121835897)  (126863775)
 
-##### WebRTC
+### WebRTC
 
-###### New Features
+#### New Features
 
 - Added support for MediaStreamTrack processing in a dedicated worker.  (114213842)
 - Added support for additional WebRTC stats.  (121594743)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed RTCEncodedVideoFrame and RTCEncodedAudioFrame to match the WebIDL specification.  (118607685)
 - Fixed VideoTrackGenerator writer to close when its generator track (and all its clones) are stopped.  (121835553)
@@ -526,9 +526,9 @@ Safari 18 is available for iOS 18, iPadOS 18, visionOS 2, macOS 15, macOS Sonoma
 - Fixed black stripes with screen sharing windows.  (123492622)
 - Fixed black stripes with getDisplayMedia captured windows when the window is resized.  (124131045)
 
-##### WebView
+### WebView
 
-###### Deprecations
+#### Deprecations
 
 - Deprecated some legacy WebKit notification names including:
 
@@ -538,9 +538,9 @@ Safari 18 is available for iOS 18, iPadOS 18, visionOS 2, macOS 15, macOS Sonoma
   - `WebViewDidChangeTypingStyleNotification`
   - `WebViewDidChangeSelectionNotification`  (130033164)
 
-##### WebXR
+### WebXR
 
-###### New Features
+#### New Features
 
 - Added support for immersive WebXR in visionOS.  (125631316)
 

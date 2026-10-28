@@ -19,11 +19,11 @@ class func availableColorSpaces(with model: NSColorSpace.Model) -> [NSColorSpace
 + (NSArray<NSColorSpace *> *) availableColorSpacesWithModel:(NSColorSpaceModel) model;
 ```
 
-#### Return Value
+## Return Value
 
 The list of color spaces, or an empty array if no color spaces are available for the specified model.
 
-#### Discussion
+## Discussion
 
 This method doesn’t return color spaces created on the fly or spaces without user-displayable names. Pass [`NSUnknownColorSpaceModel`](../nsunknowncolorspacemodel.md) as `model` to get all available color spaces.
 

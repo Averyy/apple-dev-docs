@@ -23,7 +23,7 @@ var legibilityWeight: UILegibilityWeight { get }
 @property (nonatomic, readonly) UILegibilityWeight legibilityWeight;
 ```
 
-#### Discussion
+## Discussion
 
 The legibility weight reflects the value of the Bold Text display setting.
 

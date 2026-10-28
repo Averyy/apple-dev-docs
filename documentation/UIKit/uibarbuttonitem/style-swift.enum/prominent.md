@@ -23,7 +23,7 @@ case prominent
 UIBarButtonItemStyleProminent
 ```
 
-#### Discussion
+## Discussion
 
 For example, use this for a button that completes or finalizes some task. Buttons with this style will not be visually grouped with other items in a navigation bar or toolbar, and will also have other styling changes appropriate to their context to indicate their prominence.
 

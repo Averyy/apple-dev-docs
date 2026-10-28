@@ -20,7 +20,7 @@ optional func tableView(_ tableView: NSTableView, didAdd rowView: NSTableRowView
 - (void) tableView:(NSTableView *) tableView didAddRowView:(NSTableRowView *) rowView forRow:(NSInteger) row;
 ```
 
-#### Discussion
+## Discussion
 
 At this point, the delegate can add extra views, or modify the properties of `rowView`.
 

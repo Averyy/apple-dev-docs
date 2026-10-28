@@ -20,7 +20,7 @@ A type that describes a control widget’s content.
 @preconcurrency protocol ControlWidgetTemplate
 ```
 
-#### Overview
+## Overview
 
 Controls are defined using templates in order to ensure that they control will work at all sizes and in all system spaces in which they might be displayed. These templates define images (specifically, symbol images) and text using simple SwiftUI views like [`Label`](./label.md), [`Text`](./text.md), and [`Image`](./image.md); and tint colors using the [`tint(_:)`](./controlwidgettemplate/tint%28_%29.md) modifier.
 

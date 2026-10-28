@@ -21,11 +21,11 @@ func fileDataRepresentation(withReplacementMetadata replacementMetadata: [String
 - (NSData *) fileDataRepresentationWithReplacementMetadata:(NSDictionary<NSString *,id> *) replacementMetadata replacementEmbeddedThumbnailPhotoFormat:(NSDictionary<NSString *,id> *) replacementEmbeddedThumbnailPhotoFormat replacementEmbeddedThumbnailPixelBuffer:(CVPixelBufferRef) replacementEmbeddedThumbnailPixelBuffer replacementDepthData:(AVDepthData *) replacementDepthData;
 ```
 
-#### Return Value
+## Return Value
 
 Data appropriate for writing to a file of the type specified when requesting photo capture, or `nil` if the photo and attachment data cannot be flattened.
 
-#### Discussion
+## Discussion
 
 When you request a photo capture with the [`AVCapturePhotoOutput`](../avcapturephotooutput.md) [`capturePhoto(with:delegate:)`](../avcapturephotooutput/capturephoto%28with,delegate%29.md) method, the [`AVCapturePhotoSettings`](../avcapturephotosettings.md) object you provide specifies image data formats (such as JPEG and HEVC) and container file formats (such as JFIF and HEIF) for the resulting image file. Calling this method formats and packages the image pixel buffer, along with metadata and other attachments created during capture (such as preview photos and depth maps), into data appropriate for writing to a file of that type.
 

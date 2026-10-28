@@ -22,11 +22,11 @@ nonisolated
 func stroke<S>(_ content: S, lineWidth: CGFloat = 1) -> some View where S : ShapeStyle
 ```
 
-#### Return Value
+## Return Value
 
 A stroked shape.
 
-#### Discussion
+## Discussion
 
 The following example draws a circle with a purple stroke:
 

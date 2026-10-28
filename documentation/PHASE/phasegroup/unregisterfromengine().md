@@ -24,7 +24,7 @@ func unregisterFromEngine()
 - (void) unregisterFromEngine;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [`groups`](../phaseengine/groups.md).
 

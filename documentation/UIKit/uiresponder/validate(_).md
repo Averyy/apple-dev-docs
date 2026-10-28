@@ -23,7 +23,7 @@ func validate(_ command: UICommand)
 - (void) validateCommand:(UICommand *) command;
 ```
 
-#### Discussion
+## Discussion
 
 Override this method in your view controller to make changes to a command before the command system renders it as a menu item.
 

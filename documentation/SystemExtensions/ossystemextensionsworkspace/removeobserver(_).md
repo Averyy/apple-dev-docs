@@ -17,7 +17,7 @@ func removeObserver(_ observer: any OSSystemExtensionsWorkspaceObserver)
 - (void) removeObserver:(id<OSSystemExtensionsWorkspaceObserver>) observer;
 ```
 
-#### Discussion
+## Discussion
 
 Stop observing changes to System Extension(s).
 

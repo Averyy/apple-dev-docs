@@ -20,7 +20,7 @@ A Boolean value indicating whether this prim is valid.
 var isValid: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 A prim’s validity is connected to a [`USDStage`](../usdstage.md). A prim becomes invalid when the lifetime of its stage ends.
 

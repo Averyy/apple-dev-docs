@@ -25,7 +25,7 @@ func CVPixelBufferGetWidth(_ pixelBuffer: CVPixelBuffer) -> Int
 extern size_t CVPixelBufferGetWidth(CVPixelBufferRef pixelBuffer);
 ```
 
-#### Return Value
+## Return Value
 
 The width of the buffer, in pixels.
 

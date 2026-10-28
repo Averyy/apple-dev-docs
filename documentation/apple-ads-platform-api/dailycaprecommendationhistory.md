@@ -15,11 +15,11 @@ History record created when you apply or dismiss a daily budget recommendation.
 object DailyCapRecommendationHistory
 ```
 
-#### Discussion
+## Discussion
 
 The `DailyCapRecommendationHistory` object is an immutable record created when you apply or dismiss a daily budget recommendation. The record preserves both `suggestedDailyBudgetAmount` and the `appliedDailyBudgetAmount` actually used, so you can check whether you overrode the suggestion.
 
-##### Example
+### Example
 
 ```json
 {

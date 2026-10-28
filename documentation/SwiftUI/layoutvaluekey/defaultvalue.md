@@ -22,7 +22,7 @@ The default value of the key.
 static var defaultValue: Self.Value { get }
 ```
 
-#### Discussion
+## Discussion
 
 Implement the `defaultValue` property for a type that conforms to the [`LayoutValueKey`](../layoutvaluekey.md) protocol. For example, you can create a `Flexibility` layout value that defaults to `nil`:
 

@@ -24,11 +24,11 @@ func replacePass(with pass: PKPass) -> Bool
 - (BOOL) replacePassWithPass:(PKPass *) pass;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if PassKit replaces the pass successfully; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The new pass replaces the existing pass with the same pass type identifier and serial number. If there isn’t such a pass in the user’s pass library, the replacement fails.
 

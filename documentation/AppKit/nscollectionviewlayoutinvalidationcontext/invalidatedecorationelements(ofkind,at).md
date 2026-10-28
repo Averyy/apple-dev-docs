@@ -19,7 +19,7 @@ func invalidateDecorationElements(ofKind elementKind: NSCollectionView.Decoratio
 - (void) invalidateDecorationElementsOfKind:(NSCollectionViewDecorationElementKind) elementKind atIndexPaths:(NSSet<NSIndexPath *> *) indexPaths;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method when you want the layout object to recompute attributes for one or more decoration views. All of the views must be of the type specified by the `elementKind` parameter. The method adds the views you specify to the [`invalidatedDecorationIndexPaths`](./invalidateddecorationindexpaths.md) property. You can call this method more than once for the specified `elementKind` value.
 

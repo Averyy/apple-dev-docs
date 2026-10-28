@@ -19,7 +19,7 @@ var hasShadow: Bool { get set }
 @property BOOL hasShadow;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the window has a shadow; otherwise, [`false`](../../Swift/false.md). If you change the value of this property, the window shadow is invalidated, forcing the window shadow to be recomputed.
 

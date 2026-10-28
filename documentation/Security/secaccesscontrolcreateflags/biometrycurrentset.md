@@ -25,7 +25,7 @@ static var biometryCurrentSet: SecAccessControlCreateFlags { get }
 kSecAccessControlBiometryCurrentSet
 ```
 
-#### Discussion
+## Discussion
 
 Touch ID must be available and enrolled with at least one finger, or Face ID available and enrolled. The item is invalidated if fingers are added or removed for Touch ID, or if the user re-enrolls for Face ID.
 

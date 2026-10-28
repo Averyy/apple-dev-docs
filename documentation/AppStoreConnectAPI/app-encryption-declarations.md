@@ -5,7 +5,7 @@
 
 View, and assign to builds, the declarations about types of encryption used in your app.
 
-#### Overview
+## Overview
 
 To comply with regulatory requirements, you sometimes need to provide information and supporting documentation in the form of declarations about the types of encryption used by your app. The app encryption declarations resource represents this information, and enables you to:
 

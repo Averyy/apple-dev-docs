@@ -28,7 +28,7 @@ var players: [GKPlayer] { get }
 
 - [Assigning players to teams using rules](../assigning-players-to-teams-using-rules.md)
 
-#### Discussion
+## Discussion
 
 This property includes all players except the local player.
 

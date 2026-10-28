@@ -5,7 +5,7 @@
 
 The operating system terminated the process, often because a background task violated a requirement, device resources were limited, or the user force quit the app.
 
-#### Overview
+## Overview
 
 The crash report contains a `Termination Reason` field with a code that explains the reason for the crash. In the following example, that code is `0xdead10cc`:
 

@@ -26,7 +26,7 @@ class UIActivityViewController
 
 - [Collaborating and sharing copies of your data](./collaborating-and-sharing-copies-of-your-data.md)
 
-#### Overview
+## Overview
 
 The system provides several standard services, such as copying items to the pasteboard, posting content to social media sites, sending items via email or SMS, and more. Apps can also define custom services.
 

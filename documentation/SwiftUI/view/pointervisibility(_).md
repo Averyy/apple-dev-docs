@@ -16,7 +16,7 @@ nonisolated
 func pointerVisibility(_ visibility: Visibility) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that changes the visibility of the pointer when hovered.
 

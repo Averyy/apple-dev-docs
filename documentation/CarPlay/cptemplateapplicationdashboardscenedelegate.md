@@ -21,7 +21,7 @@ protocol CPTemplateApplicationDashboardSceneDelegate : UISceneDelegate
 @protocol CPTemplateApplicationDashboardSceneDelegate <UISceneDelegate>
 ```
 
-#### Overview
+## Overview
 
 This protocol defines methods that CarPlay calls when the scene connects and disconnects, and your implementation provides the appropriate behavior when these events occur. For example, setting the window’s root view controller when CarPlay connects your navigation app’s dashboard scene.
 

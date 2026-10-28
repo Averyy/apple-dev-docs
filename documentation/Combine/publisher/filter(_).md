@@ -26,11 +26,11 @@ func filter(_ isIncluded: @escaping (Self.Output) -> Bool) -> Publishers.Filter<
 - [Receiving and Handling Events with Combine](../receiving-and-handling-events-with-combine.md)
 - [Routing Notifications to Combine Subscribers](../routing-notifications-to-combine-subscribers.md)
 
-#### Return Value
+## Return Value
 
 A publisher that republishes all elements that satisfy the closure.
 
-#### Discussion
+## Discussion
 
 Combine’s [`filter(_:)`](./filter%28_%29.md) operator performs an operation similar to that of [`filter(_:)`](../../Swift/sequence/filter%28_%29-8li9y.md) in the Swift Standard Library: it uses a closure to test each element to determine whether to republish the element to the downstream subscriber.
 

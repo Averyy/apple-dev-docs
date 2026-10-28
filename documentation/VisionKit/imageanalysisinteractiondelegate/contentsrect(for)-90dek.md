@@ -19,7 +19,7 @@ A default unit rectangle that represents the full size of the interaction view.
 func contentsRect(for interaction: ImageAnalysisInteraction) -> CGRect
 ```
 
-#### Return Value
+## Return Value
 
 A unit rectangle with origin `(0, 0)` and the same width and height as the interaction view.
 

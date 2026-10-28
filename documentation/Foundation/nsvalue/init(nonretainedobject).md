@@ -25,11 +25,11 @@ init(nonretainedObject anObject: Any?)
 + (NSValue *) valueWithNonretainedObject:(id) anObject;
 ```
 
-#### Return Value
+## Return Value
 
 A new value object that contains `anObject`.
 
-#### Discussion
+## Discussion
 
 This method is equivalent to invoking [`init(_:withObjCType:)`](./init%28_,withobjctype%29.md) in this manner:
 

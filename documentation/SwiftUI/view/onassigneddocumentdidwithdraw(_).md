@@ -19,11 +19,11 @@ Adds an action to perform after an assigned document submission has been withdra
 @preconcurrency func onAssignedDocumentDidWithdraw(_ action: @escaping (URL) -> Void) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that executes the specified action after submission withdrawal.
 
-#### Discussion
+## Discussion
 
 This action runs regardless of whether you provided an [`onAssignedDocumentWillWithdraw(_:)`](./onassigneddocumentwillwithdraw%28_%29.md) action, and only runs if the withdrawal completes successfully.
 

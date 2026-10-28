@@ -20,11 +20,11 @@ func IOUSBGetEndpointAddress(_ descriptor: UnsafePointer<IOUSBEndpointDescriptor
 uint8_t IOUSBGetEndpointAddress(const IOUSBEndpointDescriptor *descriptor);
 ```
 
-#### Return Value
+## Return Value
 
 The direction and endpoint number.
 
-#### Discussion
+## Discussion
 
 This method parses an endpoint descriptor to determine its address.
 

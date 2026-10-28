@@ -23,11 +23,11 @@ func notify_register_check(_ name: UnsafePointer<CChar>!, _ out_token: UnsafeMut
 extern uint32_t notify_register_check(const char *name, int *out_token);
 ```
 
-#### Return Value
+## Return Value
 
 Returns status.
 
-#### Discussion
+## Discussion
 
 Creates a registration token be used with notify_check(), but no active notifications will be delivered.
 

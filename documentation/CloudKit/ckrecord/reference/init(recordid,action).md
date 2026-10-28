@@ -25,11 +25,11 @@ init(recordID: CKRecord.ID, action: CKRecord.ReferenceAction)
 - (instancetype) initWithRecordID:(CKRecordID *) recordID action:(CKReferenceAction) action;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized reference object that points to the specified record.
 
-#### Discussion
+## Discussion
 
 Use this method when you have only the ID of the record for the target of a link. You might use this method if you save only the ID of the record to a local data cache.
 

@@ -20,7 +20,7 @@ func xpc_main(_ handler: xpc_connection_handler_t) -> Never
 extern void xpc_main(xpc_connection_handler_t handler);
 ```
 
-#### Discussion
+## Discussion
 
 This is the springboard into the XPC service runtime. This function sets up your service bundle’s listener connection and manages it automatically. After this initial setup, this function calls [`dispatchMain()`](../Dispatch/dispatchmain%28%29.md). You may override this behavior by setting the [`RunLoopType`](../BundleResources/information-property-list/xpcservice/runlooptype.md) key in your XPC service bundle’s `Info.plist` under the `XPCService` dictionary.
 

@@ -19,7 +19,7 @@ func performTextFinderAction(_ sender: Any?)
 - (void) performTextFinderAction:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 When an application performs a find action, it should send this message to the responder chain.
 

@@ -22,7 +22,7 @@ optional func searchController(_ searchController: UISearchController, didChange
 - (void) searchController:(UISearchController *) searchController didChangeFromSearchBarPlacement:(UINavigationItemSearchBarPlacement) previousPlacement;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method after a search bar placement change occurs. Implement this method if you need to make any custom changes to your search suggestions UI according to the previous search bar placement.
 

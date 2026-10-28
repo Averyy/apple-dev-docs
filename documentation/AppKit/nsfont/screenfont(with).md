@@ -19,7 +19,7 @@ func screenFont(with renderingMode: NSFontRenderingMode) -> NSFont
 - (NSFont *) screenFontWithRenderingMode:(NSFontRenderingMode) renderingMode;
 ```
 
-#### Discussion
+## Discussion
 
 For valid rendering modes, see [`NSFontRenderingMode`](../nsfontrenderingmode.md).
 

@@ -21,7 +21,7 @@ A type that specifies the format for the seconds in a date format style.
 struct Second
 ```
 
-#### Overview
+## Overview
 
 The type [`Date.FormatStyle.Symbol.Second`](./second.md) includes static factory variables that create custom [`Date.FormatStyle.Symbol.Second`](./second.md) objects:
 

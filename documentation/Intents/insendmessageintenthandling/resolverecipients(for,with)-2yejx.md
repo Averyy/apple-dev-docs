@@ -34,7 +34,7 @@ optional func resolveRecipients(for intent: INSendMessageIntent) async -> [INPer
 - (void) resolveRecipientsForSendMessage:(INSendMessageIntent *) intent withCompletion:(void (^)(NSArray<INPersonResolutionResult *> *resolutionResults)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to verify the identity of the intended recipients. Always strive toward a successful resolution of the specified users, but feel free to ask for confirmation for one or more users if there is some uncertainty.
 

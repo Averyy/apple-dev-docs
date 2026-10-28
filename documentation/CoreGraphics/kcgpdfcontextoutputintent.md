@@ -23,7 +23,7 @@ let kCGPDFContextOutputIntent: CFString
 extern CFStringRef const kCGPDFContextOutputIntent;
 ```
 
-#### Discussion
+## Discussion
 
 The output intent `PDF/X`. This key is optional. If present, the value of this key must be a CFDictionary object. The dictionary is added to the `/OutputIntents` entry in the PDF file document catalog. The keys and values contained in the dictionary must match those specified in section 9.10.4 of the PDF 1.4 specification, ISO/DIS 15930-3 document published by ISO/TC 130, and Adobe Technical Note #5413.
 

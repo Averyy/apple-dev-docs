@@ -23,7 +23,7 @@ var estimatedProperties: UITouch.Properties { get }
 @property (nonatomic, readonly) UITouchProperties estimatedProperties;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains a bitmask of constants indicating which touch properties could not be reported immediately. For example, Apple Pencil records the force of a touch, but must transmit that information over the air to the underlying iPad. The delay incurred by transmitting the data may cause the information to be received after the touch has been reported to your app.
 

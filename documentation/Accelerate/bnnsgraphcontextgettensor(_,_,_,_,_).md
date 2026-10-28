@@ -25,7 +25,7 @@ func BNNSGraphContextGetTensor(_ context: bnns_graph_context_t, _ function: Unsa
 int BNNSGraphContextGetTensor(bnns_graph_context_t context, const char *function, const char *argument, bool fill_known_dynamic_shapes, BNNSTensor *tensor);
 ```
 
-#### Return Value
+## Return Value
 
 `0` on success, nonzero on failure.
 

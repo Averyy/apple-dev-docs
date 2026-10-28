@@ -23,7 +23,7 @@ var isScrollEnabled: Bool { get set }
 @property (nonatomic, getter=isScrollEnabled) BOOL scrollEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The default is `NO`.
 

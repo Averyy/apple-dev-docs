@@ -13,7 +13,7 @@
 kINQUIRY_PERIPHERAL_QUALIFIER_NotSupported = 0x60
 ```
 
-#### Discussion
+## Discussion
 
 Peripheral Device is not supported.
 

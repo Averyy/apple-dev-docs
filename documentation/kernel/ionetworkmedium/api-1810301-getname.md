@@ -9,7 +9,7 @@
 virtual const OSSymbol * getName() const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the name assigned to this medium object.
 

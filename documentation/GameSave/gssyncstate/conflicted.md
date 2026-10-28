@@ -23,7 +23,7 @@ case conflicted
 GSSyncStateConflicted
 ```
 
-#### Discussion
+## Discussion
 
 In this state, the value of [`conflictedVersions`](../gssynceddirectorystate/conflictedversions.md) is nonnull.
 

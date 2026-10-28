@@ -19,7 +19,7 @@ Creates a clearcoat roughness object from a custom material’s clearcoat roughn
 init(_ value: CustomMaterial.ClearcoatRoughness)
 ```
 
-#### Discussion
+## Discussion
 
 A clearcoat is a separate layer of transparent specular highlights used to simulate a clear transparent coating, like the paint on a car, or the surface of lacquered objects. When you enable clearcoat rendering for a material, RealityKit renders the clearcoat as a separate layer just above the surface of the entity. You can specify a clearcoat roughness value for the clearcoat to indicate how much the clearcoat scatters light that bounces off of it, which softens and spreads out the highlights.
 

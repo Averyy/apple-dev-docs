@@ -19,7 +19,7 @@ var contentDescription: String { get }
 @property (copy, readonly) NSString * contentDescription;
 ```
 
-#### Discussion
+## Discussion
 
 This string contains a brief description of the image, which is useful for searches or places where you need a text-based description. The adaptive image derives the content of this property from the underlying image data.
 

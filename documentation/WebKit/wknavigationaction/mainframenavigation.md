@@ -21,7 +21,7 @@ var mainFrameNavigation: WKNavigation? { get }
 @property (nonatomic, readonly, nullable) WKNavigation * mainFrameNavigation;
 ```
 
-#### Discussion
+## Discussion
 
 The most recent main frame navigation that took place that encompasses this navigation action.
 

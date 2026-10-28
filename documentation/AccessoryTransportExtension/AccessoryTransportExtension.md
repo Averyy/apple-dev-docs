@@ -9,7 +9,7 @@ Transfer data securely to connected accessories that you develop.
 **Availability**:
 - iOS 26.2+
 
-#### Overview
+## Overview
 
 Use the Accessory Transport Extension framework to securely transfer information to an accessory that you develop. First, establish a connection with your accessory using [AccessorySetupKit](../AccessorySetupKit/AccessorySetupKit.md). Then, you can share Wi-Fi networks with your accessory using [Wi-Fi Infrastructure](../WiFiInfrastructure/WiFiInfrastructure.md), or forward iOS system notifications to your accessory using [Accessory Notifications](../AccessoryNotifications/AccessoryNotifications.md).
 
@@ -19,11 +19,11 @@ For information about automatic routing of audio to accessories, see [AudioAcces
 >
 > You can develop and test an app that uses this framework on devices in any region. Customer installations of your app can only use the framework on devices located in the EU that are signed in with an Apple Account with an EU country or region.
 
-#### Share a Wi-Fi network with an accessory
+## Share a Wi-Fi network with an accessory
 
 Implement the [`AccessoryTransportAppExtension`](./accessorytransportappextension.md) protocol in an extension to share Wi-Fi networks with your accessory. The system calls your extension’s [`accept(sessionRequest:)`](./accessorytransportappextension/accept%28sessionrequest%29.md) method when it’s ready to start. After accepting the session request, your extension connects to the accessory using [`ASAccessorySession`](../AccessorySetupKit/asaccessorysession.md) and delivers Wi-Fi network data using [`WINetworkSharingProvider`](../WiFiInfrastructure/winetworksharingprovider.md).
 
-#### Forward iOS system notifications to an accessory
+## Forward iOS system notifications to an accessory
 
 Using the Accessory Transport Extension framework with [Accessory Notifications](../AccessoryNotifications/AccessoryNotifications.md), your app can receive iOS system notifications to send alerts to people on a connected accessory that you develop. The workflow requires three extensions to maintain security and encapsulation. Implement [`AccessoryDataProvider`](./accessorydataprovider.md) to receive and curate the content of a given notification. The system encrypts the notification data using keys you provide in your [`AccessoryTransportSecurity`](./accessorytransportsecurity.md) extension. Then, the system delivers the encrypted data to your [`AccessoryTransportAppExtension`](./accessorytransportappextension.md) for transmission to the accessory. Your transport extension sends the encrypted data to your accessory, but is unable to decipher the notification’s content.
 

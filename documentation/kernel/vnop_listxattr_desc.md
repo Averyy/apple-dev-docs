@@ -15,7 +15,7 @@ Remove extended file attributes.
 struct vnodeop_desc vnop_listxattr_desc;
 ```
 
-#### Discussion
+## Discussion
 
 The vnode from which to remove extended attributes.
 

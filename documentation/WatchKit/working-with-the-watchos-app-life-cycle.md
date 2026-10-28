@@ -5,7 +5,7 @@
 
 Learn how the watchOS app life cycle operates and responds to life cycle notification methods.
 
-#### Overview
+## Overview
 
 WatchKit reports changes in your app’s execution state to your extension delegate object. State changes correspond to major events in the lifetime of your app, and the state changes in a watchOS app are analogous to the state changes of an iOS app. For each state change, perform relevant tasks, such as loading shared resources and configuring your initial user interface. The following table lists the possible state of the app and the implications for your app.
 
@@ -29,7 +29,7 @@ In the preceding diagram:
 
 Except for [`applicationDidFinishLaunching()`](./wkextensiondelegate/applicationdidfinishlaunching%28%29.md), the system only calls the extension delegate’s life cycle methods for the watchOS app’s main interface. The system doesn’t call the delegate methods when it displays any other supplementary interfaces. For example, it doesn’t call the methods when it launches the app to update complications or to display custom notification interfaces. For notifications, use the notification controller’s [`willActivate()`](./wkinterfacecontroller/willactivate%28%29.md) and [`didDeactivate()`](./wkinterfacecontroller/diddeactivate%28%29.md) methods to track the state of the interface.
 
-##### Step through common state transitions
+### Step through common state transitions
 
 The watch app runs in different states depending on the app’s current context. Also, there’s no direct relationship between the app’s state and the interface’s state. For example, the app may be inactive while the interface is active. The following table shows the app and interface states in most common situations.
 
@@ -68,7 +68,7 @@ The app resumes when the app is running in the background, or is suspended, and 
 3. *The app* transitions to the [`WKApplicationState.active`](./wkapplicationstate/active.md) state. *The system* calls the extension delegate’s [`applicationDidBecomeActive()`](./wkextensiondelegate/applicationdidbecomeactive%28%29.md) method.
 4. *The system* calls the initial interface controller’s [`willActivate()`](./wkinterfacecontroller/willactivate%28%29.md) method.
 
-##### Receive background data
+### Receive background data
 
 When the system receives background data, it may not immediately wake the watchOS app to process that data. Instead, it may delay delivery of the data to preserve battery life.
 

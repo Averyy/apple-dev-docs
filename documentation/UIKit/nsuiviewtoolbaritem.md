@@ -23,7 +23,7 @@ class NSUIViewToolbarItem
 
 - [Building a desktop-class iPad app](./building-a-desktop-class-ipad-app.md)
 
-#### Overview
+## Overview
 
 The [`NSUIViewToolbarItem`](./nsuiviewtoolbaritem.md) class lets you display a [`UIView`](./uiview.md) in an [`NSToolbar`](../AppKit/nstoolbar.md). Use this class if you have a custom UIKit view you want to appear as a control in a toolbar when you build your app with Mac Catalyst.
 

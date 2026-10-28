@@ -25,7 +25,7 @@ struct ModelSubject<Value> where Value : Decodable, Value : Encodable, Value : S
 
 - [Evaluating language model responses](./evaluating-language-model-responses.md)
 
-#### Overview
+## Overview
 
 Carries the value the model produces and an optional structured transcript. The transcript is required for tool-call evaluation. [`ToolCallEvaluator`](./toolcallevaluator.md) performs a runtime check and throws [`EvaluationError.missingTranscript(evaluatorType:)`](./evaluationerror/missingtranscript%28evaluatortype%29.md) if the transcript is `nil`.
 

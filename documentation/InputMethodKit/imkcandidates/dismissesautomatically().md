@@ -19,7 +19,7 @@ func dismissesAutomatically() -> Bool
 - (BOOL) dismissesAutomatically;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the candidates window dismisses automatically; otherwise [`false`](../../Swift/false.md).
 

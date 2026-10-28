@@ -27,7 +27,7 @@ optional func mediaPlay()
 
 - [Customizing the Appearance of Notifications](../customizing-the-appearance-of-notifications.md)
 
-#### Discussion
+## Discussion
 
 Don’t call this method yourself. If you implement the [`mediaPlayPauseButtonFrame`](./mediaplaypausebuttonframe.md) property in your view controller, the system calls this method when the user wants to begin playback of your media. Use your implementation of this method to initiate playback.
 

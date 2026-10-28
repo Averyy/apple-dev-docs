@@ -25,7 +25,7 @@ class let globalDomain: String
 extern NSString * const NSGlobalDomain;
 ```
 
-#### Discussion
+## Discussion
 
 The system populates this domain with information that’s relevant to all apps. For example, this domain contains the current language settings for the device. You can read values from this domain, but don’t write your own settings to it.
 

@@ -20,11 +20,11 @@ optional func windowWillUseStandardFrame(_ window: NSWindow, defaultFrame newFra
 - (NSRect) windowWillUseStandardFrame:(NSWindow *) window defaultFrame:(NSRect) newFrame;
 ```
 
-#### Return Value
+## Return Value
 
 The specified window’s standard frame.
 
-#### Discussion
+## Discussion
 
 The standard frame for a window should supply the size and location that are “best” for the type of information shown in the window, taking into account the available display or displays. For example, the best width for a window that displays a word-processing document is the width of a page or the width of the display, whichever is smaller. The best height can be determined similarly. On return from this method, the [`zoom(_:)`](../nswindow/zoom%28_%29.md) method modifies the returned standard frame, if necessary, to fit on the current screen.
 

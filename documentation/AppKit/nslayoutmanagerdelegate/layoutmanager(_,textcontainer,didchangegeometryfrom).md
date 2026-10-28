@@ -19,7 +19,7 @@ optional func layoutManager(_ layoutManager: NSLayoutManager, textContainer: NST
 - (void) layoutManager:(NSLayoutManager *) layoutManager textContainer:(NSTextContainer *) textContainer didChangeGeometryFromSize:(NSSize) oldSize;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate can react to the geometry change and perform adjustments such as recreating an exclusion path.
 

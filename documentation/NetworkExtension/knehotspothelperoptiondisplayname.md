@@ -22,7 +22,7 @@ let kNEHotspotHelperOptionDisplayName: String
 extern const NSString * kNEHotspotHelperOptionDisplayName;
 ```
 
-#### Discussion
+## Discussion
 
 This key specifies the display name for the application, if an alternate name is desired. If this property is not specified, the application’s name is used.
 

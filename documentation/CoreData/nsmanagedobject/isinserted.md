@@ -25,7 +25,7 @@ var isInserted: Bool { get }
 @property (nonatomic, readonly, getter=isInserted) BOOL inserted;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the receiver has been inserted in a managed object context, otherwise [`false`](../../Swift/false.md). If the receiver is a fault, accessing this property does not cause it to fire.
 

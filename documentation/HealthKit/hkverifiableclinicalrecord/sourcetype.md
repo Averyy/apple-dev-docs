@@ -23,7 +23,7 @@ var sourceType: HKVerifiableClinicalRecordSourceType? { get }
 @property (copy, readonly, nullable) HKVerifiableClinicalRecordSourceType sourceType;
 ```
 
-#### Discussion
+## Discussion
 
 For a list of valid sources, see [`HKVerifiableClinicalRecordSourceType`](../hkverifiableclinicalrecordsourcetype.md).
 

@@ -14,7 +14,7 @@
 IOReturn (*GetIndexEntry)(IOFireWireLibConfigDirectoryRef self, int inIndex, UInt32 *outValue);
 ```
 
-#### Discussion
+## Discussion
 
 Description forthcoming
 

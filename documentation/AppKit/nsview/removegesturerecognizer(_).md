@@ -19,7 +19,7 @@ func removeGestureRecognizer(_ gestureRecognizer: NSGestureRecognizer)
 - (void) removeGestureRecognizer:(NSGestureRecognizer *) gestureRecognizer;
 ```
 
-#### Discussion
+## Discussion
 
 Removing a gesture recognizer also removes the strong reference to it held by the view.
 

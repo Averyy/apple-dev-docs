@@ -18,7 +18,7 @@ Indicates that the camera needs to view the user’s environment from different 
 extern NIAlgorithmConvergenceStatusReason const NIAlgorithmConvergenceStatusReasonInsufficientHorizontalSweep;
 ```
 
-#### Discussion
+## Discussion
 
 Coach the user to resolve the issue, such as by presenting text that instructs the user to sweep the device horizontally from side to side.
 

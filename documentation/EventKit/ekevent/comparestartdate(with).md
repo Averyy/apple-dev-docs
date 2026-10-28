@@ -28,11 +28,11 @@ func compareStartDate(with other: EKEvent) -> ComparisonResult
 
 - [Retrieving events and reminders](../retrieving-events-and-reminders.md)
 
-#### Return Value
+## Return Value
 
 Returns [`ComparisonResult.orderedAscending`](../../Foundation/comparisonresult/orderedascending.md) if the start date of the receiver precedes the start date of `other`. Returns [`ComparisonResult.orderedSame`](../../Foundation/comparisonresult/orderedsame.md) if the start dates of the two events are identical. Returns [`ComparisonResult.orderedDescending`](../../Foundation/comparisonresult/ordereddescending.md) if the start date of the receiver comes after the start date of `other`.
 
-#### Discussion
+## Discussion
 
 You can pass the selector for this method to the NSArray method [`sortedArray(using:)`](../../Foundation/nsarray/sortedarray%28using%29-9nhh9.md) to create an array of events sorted by start date.
 

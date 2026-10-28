@@ -25,7 +25,7 @@ protocol NSExtensionRequestHandling : NSObjectProtocol
 @protocol NSExtensionRequestHandling <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The [`NSExtensionRequestHandling`](./nsextensionrequesthandling.md) protocol provides a life cycle hook into an app extension. An extension’s principal object can implement this protocol and use [`beginRequest(with:)`](./nsextensionrequesthandling/beginrequest%28with%29.md) to keep track of the request from a host app.
 

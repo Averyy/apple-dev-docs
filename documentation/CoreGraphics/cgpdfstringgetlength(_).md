@@ -25,7 +25,7 @@ func CGPDFStringGetLength(_ string: CGPDFStringRef) -> Int
 extern size_t CGPDFStringGetLength(CGPDFStringRef string);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the number of bytes referenced by the string, or `0` if the string is `NULL`.
 

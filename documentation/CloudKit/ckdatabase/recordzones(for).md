@@ -21,11 +21,11 @@ Fetches the specified record zones and returns them to an awaiting caller.
 func recordZones(for ids: [CKRecordZone.ID]) async throws -> [CKRecordZone.ID : Result<CKRecordZone, any Error>]
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary that contains the fetched record zones. The dictionary uses the specified record zone identifiers as its keys. The value of each key is a [`Result`](../../Swift/result.md) that contains either the corresponding fetched record zone, or an error that describes why CloudKit can’t provide that record zone.
 
-#### Discussion
+## Discussion
 
 This method throws an error if the request fails, such as when the network is unavailable or the device doesn’t have an active iCloud account; otherwise, the returned dictionary includes any individual record zone errors.
 

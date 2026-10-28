@@ -20,7 +20,7 @@ A top-level transcript entry payload in a serialized, portable format.
 struct DataEntry
 ```
 
-#### Overview
+## Overview
 
 A [`Transcript.DataEntry`](./dataentry.md) records the bytes and identifier of a value that a [`LanguageModel`](../languagemodel.md) implementation opted into via [`supportsDataEntryType(_:)`](../languagemodel/supportsdataentrytype%28_%29.md). It’s what a [`DataEntryRepresentable`](../dataentryrepresentable.md)-conforming type produces from its [`transcriptRepresentation`](../dataentryrepresentable/transcriptrepresentation.md), and it round-trips through the transcript’s `Codable` conformance so the transcript remains portable even in environments where the declaring package isn’t installed.
 

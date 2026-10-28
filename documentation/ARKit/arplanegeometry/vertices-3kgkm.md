@@ -16,7 +16,7 @@ A buffer of vertex positions for each point in the plane mesh.
 @property (nonatomic, readonly) const simd_float3 * vertices;
 ```
 
-#### Discussion
+## Discussion
 
 Each `float3` value in this buffer represents the position of a vertex in the mesh. The owning plane anchor’s [`transform`](../aranchor/transform.md) matrix defines the coordinate system for these points.
 

@@ -25,7 +25,7 @@ var locale: Locale? { get set }
 @property (nonatomic, copy, readwrite, nullable) NSLocale * locale;
 ```
 
-#### Discussion
+## Discussion
 
 The locale may be `nil` if no locale information is available for the item.
 

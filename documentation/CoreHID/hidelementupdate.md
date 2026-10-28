@@ -15,7 +15,7 @@ A base protocol for element update types.
 protocol HIDElementUpdate : Hashable, Sendable
 ```
 
-#### Overview
+## Overview
 
 Not intended to be used directly, see [`HIDDeviceClient.ProvideElementUpdate`](./hiddeviceclient/provideelementupdate.md) and [`HIDDeviceClient.RequestElementUpdate`](./hiddeviceclient/requestelementupdate.md).
 

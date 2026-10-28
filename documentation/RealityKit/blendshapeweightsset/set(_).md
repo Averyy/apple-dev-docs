@@ -21,7 +21,7 @@ Updates a blend shape weights data instance in the set based on its name. If ble
 mutating func set(_ newValue: BlendShapeWeightsSet.Element) -> BlendShapeWeightsSet.Element?
 ```
 
-#### Return Value
+## Return Value
 
 The previous pose value, if named pose exists. nil otherwise.
 

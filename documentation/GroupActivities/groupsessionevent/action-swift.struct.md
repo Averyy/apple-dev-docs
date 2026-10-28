@@ -20,7 +20,7 @@ A playback-related change that occurs during the session.
 struct Action
 ```
 
-#### Overview
+## Overview
 
 Use this structure to communicate playback-related changes to participants using the system UI. You can use this structure to communicate the following types of events:
 

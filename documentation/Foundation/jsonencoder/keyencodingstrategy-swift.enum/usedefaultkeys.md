@@ -21,7 +21,7 @@ A key encoding strategy that doesn’t change key names during encoding.
 case useDefaultKeys
 ```
 
-#### Discussion
+## Discussion
 
 The [`JSONEncoder.KeyEncodingStrategy.useDefaultKeys`](./usedefaultkeys.md) strategy is the strategy used if you don’t specify one.
 

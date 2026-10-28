@@ -19,7 +19,7 @@ Create a typed `MutableView` of the same storage as this raw view.
 consuming func view<T>(as type: T.Type = T.self) -> NDArray.MutableView<T> where T : BitwiseCopyable
 ```
 
-#### Return Value
+## Return Value
 
 A mutable view of the tensor.
 

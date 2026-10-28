@@ -16,11 +16,11 @@ Get node ID of local machine.
 IOReturn (*GetLocalNodeIDWithGeneration)(IOFireWireLibDeviceRef self, UInt32 checkGeneration, UInt16 *outLocalNodeID);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if a valid nodeID has been returned in 'outLocalNodeID'. Returns kIOFireWireBusReset if 'checkGeneration' does not match the current bus generation number.
 
-#### Discussion
+## Discussion
 
 Use this function instead of GetLocalNodeID().
 

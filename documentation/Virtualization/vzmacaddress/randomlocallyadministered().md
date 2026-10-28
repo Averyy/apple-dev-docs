@@ -19,11 +19,11 @@ class func randomLocallyAdministered() -> Self
 + (instancetype) randomLocallyAdministeredAddress;
 ```
 
-#### Return Value
+## Return Value
 
 A MAC address suitable for use in your network devices.
 
-#### Discussion
+## Discussion
 
 This method doesn’t guarantee the generation of a unique MAC address.
 

@@ -19,7 +19,7 @@ A color transformer that returns the preferred system accent color.
 extern const UIConfigurationColorTransformer UIConfigurationColorTransformerPreferredTint;
 ```
 
-#### Discussion
+## Discussion
 
 This color transformer returns the original color on platforms without a system accent color, or when the system accent color is set to Multicolor. When the system accent color is set to any other color, this color transformer returns that system accent color.
 

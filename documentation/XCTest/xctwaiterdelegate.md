@@ -16,7 +16,7 @@ protocol XCTWaiterDelegate : NSObjectProtocol
 @protocol XCTWaiterDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 [`XCTestCase`](./xctestcase.md) instances automatically conform to the [`XCTWaiterDelegate`](./xctwaiterdelegate.md) protocol. If you pass a test case instance as the delegate property of [`XCTWaiter`](./xctwaiter.md)’s [`init(delegate:)`](./xctwaiter/init%28delegate%29.md) initializer, that test case will automatically report timeouts and other unexpected events as test failures.
 

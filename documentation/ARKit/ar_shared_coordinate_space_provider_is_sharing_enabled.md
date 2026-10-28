@@ -15,7 +15,7 @@ Get the latest sharing status.
 extern bool ar_shared_coordinate_space_provider_is_sharing_enabled(ar_shared_coordinate_space_provider_t shared_coordinate_space_provider);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if coordinate space sharing is enabled, `false` otherwise.
 

@@ -22,7 +22,7 @@ protocol MFMessageComposeViewControllerDelegate : NSObjectProtocol
 @protocol MFMessageComposeViewControllerDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The [`MFMessageComposeViewControllerDelegate`](./mfmessagecomposeviewcontrollerdelegate.md) protocol defines a single method that custom objects can implement to respond to updates from a message composition view (an instance of the  [`MFMessageComposeViewController`](./mfmessagecomposeviewcontroller.md) class). Use the method of this protocol to respond to the end of the user composing an SMS message. The method includes information about whether the user chose to send or cancel the message, or whether the attempt to send it failed.
 

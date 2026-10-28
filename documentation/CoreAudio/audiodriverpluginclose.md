@@ -14,11 +14,11 @@
 extern OSStatus AudioDriverPlugInClose(AudioDeviceID inDevice);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus indicating success or failure.
 
-#### Discussion
+## Discussion
 
 Closes an instance of the driver plug-in.
 

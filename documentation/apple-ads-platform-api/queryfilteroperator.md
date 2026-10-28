@@ -37,7 +37,7 @@ string QueryFilterOperator
 - `IS_NULL`: Matches records where the field has no value.
 - `IS_NOT_NULL`: Matches records where the field has a value.
 
-#### Discussion
+## Discussion
 
 The `QueryFilterOperator` enumerates the comparison operators available in `QueryFilter.operator`. Not every field or endpoint supports all operators. Refer to each entity’s dictionary keys for per-field operator support.
 

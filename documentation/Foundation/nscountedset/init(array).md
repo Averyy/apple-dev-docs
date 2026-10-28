@@ -25,7 +25,7 @@ convenience init(array: [Any])
 - (instancetype) initWithArray:(NSArray<id> *) array;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized counted set object with the contents of `array`. The returned object might be different than the original receiver.
 

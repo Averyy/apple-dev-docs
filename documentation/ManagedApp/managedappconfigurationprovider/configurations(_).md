@@ -22,11 +22,11 @@ func configurations<Configuration>(_ t: Configuration.Type) async -> some AsyncS
 
 - [Specifying and decoding a configuration](../specifying-and-decoding-a-configuration.md)
 
-#### Return Value
+## Return Value
 
 An [`AsyncSequence`](../../Swift/asyncsequence.md) of optionals of the specified type. When the framework instantiates the result, the sequence yields the current configuration immediately. The sequence yields `nil` if a decoding error occurs or if the MDM admin currently provides no configuration for the app.
 
-#### Discussion
+## Discussion
 
 The MDM server provides an encoded configuration to the framework using [Device Management](../../DeviceManagement/DeviceManagement.md). The argument you pass in to this method is a type you implement that decodes the configuration definition. Your custom type also becomes the element of the returned sequence. Your decoder processes the configuration according to your specification, which the MDM admin uses to define the configuration on the server.
 

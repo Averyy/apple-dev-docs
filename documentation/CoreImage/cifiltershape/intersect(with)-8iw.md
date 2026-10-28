@@ -24,7 +24,7 @@ func intersect(with s2: CIFilterShape) -> CIFilterShape
 - (CIFilterShape *) intersectWith:(CIFilterShape *) s2;
 ```
 
-#### Return Value
+## Return Value
 
 The filter shape object that results from the intersection.
 

@@ -19,7 +19,7 @@ func draw(at point: NSPoint, from fromRect: NSRect, operation op: NSCompositingO
 - (void) drawAtPoint:(NSPoint) point fromRect:(NSRect) fromRect operation:(NSCompositingOperation) op fraction:(CGFloat) delta;
 ```
 
-#### Discussion
+## Discussion
 
 The image content is drawn at its current resolution and is not scaled unless the CTM of the current coordinate system itself contains a scaling factor. The image is otherwise positioned and oriented using the current coordinate system.
 

@@ -15,11 +15,11 @@ Get an iocount on the parent of a vnode.
 vnode_t vnode_getparent(vnode_t vp);
 ```
 
-#### Return Value
+## Return Value
 
 Parent if available, else NULL.
 
-#### Discussion
+## Discussion
 
 A vnode's parent may change over time or be reclaimed, so vnode_getparent() may return different results at different times (e.g. a multiple-hardlink file). The parent is returned with an iocount which must subsequently be dropped with vnode_put().
 

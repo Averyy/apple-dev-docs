@@ -24,11 +24,11 @@ class func confirmationRequired(with paymentMethodToConfirm: INPaymentMethod?) -
 + (instancetype) confirmationRequiredWithPaymentMethodToConfirm:(INPaymentMethod *) paymentMethodToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new `INPaymentMethodResolutionResult` object.
 
-#### Discussion
+## Discussion
 
 Use this method when you can resolve the parameter to the specified object but you want the user to confirm that value.
 

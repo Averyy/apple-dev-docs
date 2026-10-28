@@ -39,7 +39,7 @@ class URLSession
 - [Performing manual server trust authentication](./performing-manual-server-trust-authentication.md)
 - [Uploading streams of data](./uploading-streams-of-data.md)
 
-#### Overview
+## Overview
 
 The [`URLSession`](./urlsession.md) class and related classes provide an API for downloading data from and uploading data to endpoints indicated by URLs. Your app can also use this API to perform background downloads when your app isn’t running or, in iOS, while your app is suspended. You can use the related [`URLSessionDelegate`](./urlsessiondelegate.md) and [`URLSessionTaskDelegate`](./urlsessiontaskdelegate.md) to support authentication and receive events like redirection and task completion.
 
@@ -47,7 +47,7 @@ The [`URLSession`](./urlsession.md) class and related classes provide an API for
 
 Your app creates one or more [`URLSession`](./urlsession.md) instances, each of which coordinates a group of related data-transfer tasks. For example, if you’re creating a web browser, your app might create one session per tab or window, or one session for interactive use and another for background downloads. Within each session, your app adds a series of tasks, each of which represents a request for a specific URL (following HTTP redirects, if necessary).
 
-##### Types of URL sessions
+### Types of URL sessions
 
 The tasks within a given URL session share a common session configuration object, which defines connection behavior, like the maximum number of simultaneous connections to make to a single host, whether connections can use the cellular network, and so on.
 
@@ -59,7 +59,7 @@ The tasks within a given URL session share a common session configuration object
 
 See Creating a session configuration object in the [`URLSessionConfiguration`](./urlsessionconfiguration.md) class for details on creating each type of configuration.
 
-##### Types of URL session tasks
+### Types of URL session tasks
 
 Within a session, you create tasks that optionally upload data to a server and then retrieve data from the server either as a file on disk or as one or more [`NSData`](./nsdata.md) objects in memory. The [`URLSession`](./urlsession.md) API provides four types of tasks:
 
@@ -68,7 +68,7 @@ Within a session, you create tasks that optionally upload data to a server and t
 - Download tasks retrieve data in the form of a file, and support background downloads and uploads while the app isn’t running.
 - WebSocket tasks exchange messages over TCP and TLS, using the WebSocket protocol defined in [RFC 6455](https://tools.ietf.org/html/rfc6455).
 
-##### Using a session delegate
+### Using a session delegate
 
 Tasks in a session also share a common delegate object. You implement this delegate to provide and obtain information when various events occur, including when:
 
@@ -82,7 +82,7 @@ If you don’t need the features provided by a delegate, you can use this API wi
 
 Each task you create with the session calls back to the session’s delegate, using the methods defined in [`URLSessionTaskDelegate`](./urlsessiontaskdelegate.md). You can also intercept these callbacks before they reach the session delegate by populating a separate [`delegate`](./urlsessiontask/delegate.md) that’s specific to the task.
 
-##### Asynchronicity and URL sessions
+### Asynchronicity and URL sessions
 
 Like most networking APIs, the [`URLSession`](./urlsession.md) API is highly asynchronous. It returns data to your app in one of three ways, depending on the methods you call:
 
@@ -92,7 +92,7 @@ Like most networking APIs, the [`URLSession`](./urlsession.md) API is highly asy
 
 In addition to delivering this information to delegates, the [`URLSession`](./urlsession.md) provides status and progress properties. Query these properties if you need to make programmatic decisions based on the current state of the task (with the caveat that its state can change at any time).
 
-##### Protocol support
+### Protocol support
 
 The [`URLSession`](./urlsession.md) class natively supports the `data`, `file`, `ftp`, `http`, and `https` URL schemes, with transparent support for proxy servers and SOCKS gateways, as configured in the user’s system preferences.
 
@@ -100,20 +100,20 @@ The [`URLSession`](./urlsession.md) class natively supports the `data`, `file`, 
 
 You can also add support for your own custom networking protocols and URL schemes (for your app’s private use) by subclassing [`URLProtocol`](./urlprotocol.md).
 
-##### App Transport Security (ATS)
+### App Transport Security (ATS)
 
 iOS 9.0 and macOS 10.11 and later use App Transport Security (ATS) for all HTTP connections made with [`URLSession`](./urlsession.md). ATS requires that HTTP connections use HTTPS ([RFC 2818](https://tools.ietf.org/html/rfc2818)).
 
 For more information, see [`NSAppTransportSecurity`](../BundleResources/information-property-list/nsapptransportsecurity.md).
 
-##### Foundation copying behavior
+### Foundation copying behavior
 
 Session and task objects conform to the [`NSCopying`](./nscopying.md) protocol as follows:
 
 - When your app copies a session or task object, you get the same object back.
 - When your app copies a configuration object, you get a new copy you can independently modify.
 
-##### Thread safety
+### Thread safety
 
 The URL session API is thread-safe. You can freely create sessions and tasks in any thread context. When your delegate methods call the provided completion handlers, the work is automatically scheduled on the correct delegate queue.
 

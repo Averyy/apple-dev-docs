@@ -19,7 +19,7 @@ The entitlement for accessing the user-assigned device name instead of a generic
 - **Name**: `com.apple.developer.device-information.user-assigned-device-name`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 In iOS, the *user-assigned device name* is available in the Settings app under General > About > Name. In iOS 15 and earlier, the [`name`](../../UIKit/uidevice/name.md) property returns this name. In iOS 16 and later, the [`name`](../../UIKit/uidevice/name.md) property returns a generic device name by default instead.
 

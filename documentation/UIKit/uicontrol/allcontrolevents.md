@@ -23,11 +23,11 @@ var allControlEvents: UIControl.Event { get }
 @property (nonatomic, readonly) UIControlEvents allControlEvents;
 ```
 
-#### Return Value
+## Return Value
 
 A bitmask of constants indicating the events for which this control has associated actions. For a list of possible constants, see the [`UIControl.Event`](./event.md) type.
 
-#### Discussion
+## Discussion
 
 You can use this method to ascertain which control events trigger actions. More than one action method may be called for a given event.
 

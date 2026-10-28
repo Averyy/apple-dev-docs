@@ -21,7 +21,7 @@ A Boolean value that indicates whether to use the even-odd rule when rendering a
 var isEOFilled: Bool
 ```
 
-#### Discussion
+## Discussion
 
 When `isOEFilled` is `false`, the style uses the non-zero winding number rule.
 

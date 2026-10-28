@@ -24,11 +24,11 @@ class func sobelGradients() -> any CIFilter & CISobelGradients
 + (CIFilter<CISobelGradients> *) sobelGradientsFilter;
 ```
 
-#### Return Value
+## Return Value
 
 A [`CIImage`](../ciimage.md) containing the Sobel gradients.
 
-#### Discussion
+## Discussion
 
 This filter applies the Sobel operator to the color components of the input image. You would typically use the Sobel filter as part of an edge-detection algorithm for performing.
 

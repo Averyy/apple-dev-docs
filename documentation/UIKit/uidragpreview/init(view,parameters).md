@@ -22,11 +22,11 @@ init(view: UIView, parameters: UIDragPreviewParameters)
 - (instancetype) initWithView:(UIView *) view parameters:(UIDragPreviewParameters *) parameters;
 ```
 
-#### Return Value
+## Return Value
 
 A drag preview that is based on the specified view and has specific appearance parameters.
 
-#### Discussion
+## Discussion
 
 Use this method to display a custom drag item preview based on the provided view and appearance parameters. The appearance parameters specify display options for the preview, such as a background color and a Bézier path of the visible area of the provided view. The appearance parameters affect only the display of the preview, and not the provided view. The drag item preview uses a snapshot of the view for the display, and it never changes or moves the view.
 

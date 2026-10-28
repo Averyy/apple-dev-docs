@@ -28,7 +28,7 @@ HKWorkoutActivityTypeCycling
 
 - [Dividing a HealthKit workout into activities](../dividing-a-healthkit-workout-into-activities.md)
 
-#### Discussion
+## Discussion
 
 HealthKit provides optimized calorie calculations for this activity based on the data from Apple Watch’s sensors.
 

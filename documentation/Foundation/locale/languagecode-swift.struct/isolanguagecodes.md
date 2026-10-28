@@ -21,7 +21,7 @@ Returns an array of ISO-defined language codes.
 static var isoLanguageCodes: [Locale.LanguageCode] { get }
 ```
 
-#### Discussion
+## Discussion
 
 The returned array contains two-letter codes defined by ISO 639, as well as three-letter codes without a two-letter equivalent.
 

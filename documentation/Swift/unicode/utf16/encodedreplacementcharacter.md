@@ -21,7 +21,7 @@ A unicode scalar value to be used when repairing encoding/decoding errors, as re
 static var encodedReplacementCharacter: Unicode.UTF16.EncodedScalar { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the Unicode replacement character U+FFFD is representable in this encoding, `encodedReplacementCharacter` encodes that scalar value.
 

@@ -16,7 +16,7 @@ Create a quadlet read command object.
 IOFireWireLibCommandRef (*CreateReadQuadletCommand)(IOFireWireLibDeviceRef self, io_object_t device, const FWAddress *addr, UInt32 quads[], UInt32 numQuads, IOFireWireLibCommandCallback callback, Boolean failOnReset, UInt32 generation, void *inRefCon, REFIID iid);
 ```
 
-#### Return Value
+## Return Value
 
 An IOFireWireLibCommandRef interface. See IOFireWireLibCommandRef.
 

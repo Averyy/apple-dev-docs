@@ -18,11 +18,11 @@ func data(withCapacity capacity: Int, options: IOUSBHostObjectDataOptions = []) 
 - (NSMutableData *) dataWithCapacity:(NSUInteger) capacity options:(IOUSBHostObjectDataOptions) options error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 NSMutableData of memory mapped to user space of an IOBufferMemoryDescriptor if successful, otherwise nil. An IOReturn error code will be reported on failure. The result is to be released by the caller
 
-#### Discussion
+## Discussion
 
 Allocate a buffer to be used for I/O or an isochronous frame list.
 

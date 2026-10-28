@@ -23,7 +23,7 @@ func loadHTMLString(_ string: String, baseURL: URL?)
 - (void) loadHTMLString:(NSString *) string baseURL:(NSURL *) baseURL;
 ```
 
-#### Discussion
+## Discussion
 
 To help you avoid being vulnerable to security attacks, be sure to use this method to load local HTML files; don’t use [`loadRequest(_:)`](./loadrequest%28_%29.md).
 

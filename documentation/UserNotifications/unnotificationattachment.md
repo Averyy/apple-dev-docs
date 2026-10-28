@@ -24,7 +24,7 @@ class UNNotificationAttachment
 @interface UNNotificationAttachment : NSObject
 ```
 
-#### Overview
+## Overview
 
 Create a [`UNNotificationAttachment`](./unnotificationattachment.md) object when you want to include audio, image, or video content together in an alert-based notification. When creating the [`UNNotificationAttachment`](./unnotificationattachment.md) object, the file you specify must be on disk, and the file format must be one of the supported types.
 
@@ -32,7 +32,7 @@ You’re responsible for supplying attachments before the system displays your n
 
 The system validates attachments before displaying the associated notification. If you attach a file to a local notification request that’s corrupted, invalid, or of an unsupported file type, the system doesn’t schedule your request. For remote notifications, the system validates attachments after your notification service app extension finishes. Once validated, the system moves the attached files into the attachment data store so that the appropriate processes can access the files. The system copies attachments located inside an app’s bundle.
 
-##### Supported File Types
+### Supported File Types
 
 Table 1 lists the types of files you can include as an attachment and the supported file formats. The table also lists the maximum size allowed for attachments of each type. An image file may contain a static image or an animated image sequence.
 

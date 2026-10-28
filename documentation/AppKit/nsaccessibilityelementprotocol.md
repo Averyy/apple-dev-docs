@@ -19,7 +19,7 @@ protocol NSAccessibilityElementProtocol : NSObjectProtocol
 @protocol NSAccessibilityElement <NSObject>
 ```
 
-#### Overview
+## Overview
 
 This protocol provides the base behavior for more specific, role-based accessibility protocols. In general, your user interface elements shouldn’t adopt this protocol. They should adopt a more specific, role-based protocol instead. See [Custom Controls](./custom-controls.md).
 

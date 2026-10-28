@@ -23,7 +23,7 @@ var allowsAddingToAddressBook: Bool { get set }
 @property (nonatomic) BOOL allowsAddingToAddressBook;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md).
 

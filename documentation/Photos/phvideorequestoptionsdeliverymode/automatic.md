@@ -24,7 +24,7 @@ case automatic
 PHVideoRequestOptionsDeliveryModeAutomatic
 ```
 
-#### Discussion
+## Discussion
 
 When you request an [`AVAsset`](../../AVFoundation/avasset.md) or [`AVPlayerItem`](../../AVFoundation/avplayeritem.md) object, Photos typically uses the medium-quality format. When you request an [`AVAssetExportSession`](../../AVFoundation/avassetexportsession.md) object for writing out the asset’s contents, Photos always uses the high-quality format.
 

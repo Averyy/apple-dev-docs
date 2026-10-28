@@ -23,11 +23,11 @@ set cameraBoundary(
 - [MapKit JS 5](../mapkit-js-5.md)
 - [Migrating from Version 5 to Version 6](../migrating-from-version-5-to-version-6.md)
 
-#### Return Value
+## Return Value
 
 An object containing both [`CoordinateRegion`](../coordinateregion.md) and [`MapRect`](../maprect.md) instances.
 
-#### Discussion
+## Discussion
 
 Setting this property requires either a [`CoordinateRegion`](../coordinateregion.md) or a [`MapRect`](../maprect.md) instance as a value. Getting the property returns an object containing both [`CoordinateRegion`](../coordinateregion.md) and [`MapRect`](../maprect.md) instances.
 

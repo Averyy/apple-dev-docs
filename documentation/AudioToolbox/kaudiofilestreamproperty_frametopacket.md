@@ -24,7 +24,7 @@ var kAudioFileStreamProperty_FrameToPacket: AudioFileStreamPropertyID { get }
 kAudioFileStreamProperty_FrameToPacket
 ```
 
-#### Discussion
+## Discussion
 
 Obtains the packet number corresponding to a frame number. Pass an `AudioFramePacketTranslation` structure with the `mFrame` field filled in, and values in the `mPacket` and `mFrameOffsetInPacket` fields are returned on output. For more information on the audio frame packet translation structure, see [Audio File Services](./audio-file-services.md).
 

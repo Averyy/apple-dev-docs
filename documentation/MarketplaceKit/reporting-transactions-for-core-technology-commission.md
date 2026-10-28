@@ -5,7 +5,7 @@
 
 Track any eligible purchases that you offer a person that relate to your app and report them to Apple using a token.
 
-#### Overview
+## Overview
 
 When a person installs your app from your website or from an alternative app marketplace, track any eligible purchases that you offer to a person that relate to your app and report them to Apple. To report the potential purchases, request a token from MarketplaceKit and send it to Apple using the External Purchase Server API. For more information, see [`Send External Purchase Report`](../ExternalPurchaseServerAPI/send-external-purchase-report.md). Retrieve a token for each purchase that you offer and send the token to Apple even if a person doesn’t complete a transaction for the offered purchase.
 
@@ -13,11 +13,11 @@ When a person installs your app from your website or from an alternative app mar
 
 To receive reminders to report your tokens and transactions, sign up for App Store Server notifications. The App Store’s commerce server periodically sends the endpoint that you configure in App Store Connect information regarding the tokens you generate. Compare the information with your own records, and if you fail to report a token, you can catch it and fix the issue. Notifications also help during development by validating your token-transmission code in the sandbox environment.
 
-#### Add the required target property
+## Add the required target property
 
 As a one-time setup task, add the [`MKSellsDigitalGoods`](../BundleResources/information-property-list/mksellsdigitalgoods.md) property to your app’s target configuration in Xcode. Assign the property a value of `YES` to indicate that your app offers the purchase of digital goods or services. If your app doesn’t sell digital goods or services, you still need to add the [`MKSellsDigitalGoods`](../BundleResources/information-property-list/mksellsdigitalgoods.md) property to your app’s target configuration with a value of `NO`.
 
-#### Request a Core Technology token
+## Request a Core Technology token
 
 For the potential transactions that are eligible for reporting, request a token from MarketplaceKit using the [`TransactionReporting`](./transactionreporting.md) enumerations’s [`token(for:)`](./transactionreporting/token%28for%29.md) method, passing in a token of type [`coreTechnology`](./transactionreporting/tokentype/coretechnology.md). For example:
 
@@ -52,13 +52,13 @@ Decode the token using Base64URL decoding to reveal the token’s JSON data. A d
 
 For more information on decoding tokens, see [Receiving and decoding external purchase tokens](../StoreKit/receiving-and-decoding-external-purchase-tokens.md).
 
-#### Report tokens and their transactions
+## Report tokens and their transactions
 
 In the decoded JSON, use the [`externalPurchaseId`](../ExternalPurchaseServerAPI/externalpurchaseid.md) value to report the token to Apple. Report the token by using the [`Send External Purchase Report`](../ExternalPurchaseServerAPI/send-external-purchase-report.md) endpoint of the [External Purchase Server API](../ExternalPurchaseServerAPI/ExternalPurchaseServerAPI.md).
 
 Report each token you retrieve regardless of whether the token corresponds to a completed transaction. The endpoint allows you to specify which tokens result in a transaction. You can also send the same token with updated information. For example, when a transaction completes after you initially report a token you can update the token with the transaction information. For more information, see [Reporting tokens with transactions](../ExternalPurchaseServerAPI/reportwithtransactions.md).
 
-#### Receive notifications
+## Receive notifications
 
 To receive reminders to report your tokens and transactions, sign up for [App Store Server Notifications](../AppStoreServerNotifications/AppStoreServerNotifications.md). Implement an endpoint on your webserver ([`App Store Server Notifications V2`](../AppStoreServerNotifications/app-store-server-notifications-v2.md)), to receive notifications of type `EXTERNAL_PURCHASE_TOKEN` for each token that you generate. For more information, see [`notificationType`](../AppStoreServerNotifications/notificationtype.md).
 

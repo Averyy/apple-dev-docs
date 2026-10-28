@@ -11,9 +11,9 @@ Store client-specific information on the server.
 
 > **Deprecated**: This legacy API is currently in maintenance mode. Apple won’t add any new functionality to it.
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 
@@ -48,7 +48,7 @@ Store client-specific information on the server.
 }
 ```
 
-##### Example Request and Response with a Legacy Token
+### Example Request and Response with a Legacy Token
 
 **Request**:
 

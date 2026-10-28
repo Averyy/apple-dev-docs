@@ -18,7 +18,7 @@ An error that indicates a failure requesting a secret from the asset server.
 case serverError
 ```
 
-#### Discussion
+## Discussion
 
 This error can also indicate a problem communicating with a subsequent server, such as ACME or SCEP.
 

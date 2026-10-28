@@ -19,7 +19,7 @@ var bidiProcessingEnabled: Bool { get set }
 @property BOOL bidiProcessingEnabled;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if bidirectional text processing is enabled, [`false`](../../Swift/false.md) otherwise.
 

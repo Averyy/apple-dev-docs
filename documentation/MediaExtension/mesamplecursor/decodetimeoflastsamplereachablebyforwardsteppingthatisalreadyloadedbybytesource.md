@@ -19,7 +19,7 @@ optional var decodeTimeOfLastSampleReachableByForwardSteppingThatIsAlreadyLoaded
 @property (nonatomic, readonly) CMTime decodeTimeOfLastSampleReachableByForwardSteppingThatIsAlreadyLoadedByByteSource;
 ```
 
-#### Discussion
+## Discussion
 
 Indicates the time difference between the current cursor decode timestamp (DTS) and the last reachable sample DTS. This is necessary to play certain assets such as those with HTTP URLs, because it indicates what samples the byte source has already loaded.
 

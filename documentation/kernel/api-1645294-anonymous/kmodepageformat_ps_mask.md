@@ -13,7 +13,7 @@
 kModePageFormat_PS_Mask = (1 << kModePageFormat_PS_Bit)
 ```
 
-#### Discussion
+## Discussion
 
 Mask to test for kModePageFormat_PS_Bit.
 

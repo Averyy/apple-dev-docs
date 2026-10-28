@@ -24,7 +24,7 @@ func addNormals(withAttributeNamed attributeName: String?, creaseThreshold: Floa
 - (void) addNormalsWithAttributeNamed:(NSString *) attributeName creaseThreshold:(float) creaseThreshold;
 ```
 
-#### Discussion
+## Discussion
 
 Model I/O calculates surface normal vectors based on vertex positions using the common definition: The surface normal to a triangle is the normalized cross product of two sides of the triangle. For this method to calculate surface normals, the mesh must contain vertex data for the [`MDLVertexAttributePosition`](../mdlvertexattributeposition.md) attribute. Calling this method on a mesh that does not contain vertex position data raises an exception.
 

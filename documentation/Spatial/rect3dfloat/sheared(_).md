@@ -21,7 +21,7 @@ Returns a sheared rectangle.
 func sheared(_ shear: AxisWithFactors) -> Rect3DFloat
 ```
 
-#### Discussion
+## Discussion
 
 - Returns The sheared rectangle.
 

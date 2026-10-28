@@ -21,7 +21,7 @@ Modifies the current clipping path.
 func clip(using rule: CGPathFillRule = .winding)
 ```
 
-#### Discussion
+## Discussion
 
 A clipping path restricts the paintable area: painting operations take effect only for those areas in the interior of the clipping path. This method uses the specified rule to calculate the intersection of the current path with the current clipping path. The path resulting from the intersection is used as the new current clipping path for subsequent painting operations.
 

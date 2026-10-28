@@ -20,7 +20,7 @@ A component that supports general video-playback experience with an AV player.
 struct VideoPlayerComponent
 ```
 
-#### Overview
+## Overview
 
 To streamline and enhance video playback controls, a video player component empowers an app to support captions, subtitles, light spill, and passthrough tinting (visionOS only). Attach a `VideoPlayerComponent` to an entity to start configuring playback controls.
 
@@ -90,29 +90,29 @@ RealityView { content in
 }
 ```
 
-##### Playing immersive video
+### Playing immersive video
 
 On visionOS, you can also use `VideoPlayerComponent` to play immersive media with RealityKit. Watch videos in a window alongside other Shared Space apps, or watch immersive video with a 180-degree field of view in a fully immersive space, or watch immersive video with a progressive view in a progressive immersive space
 
-##### Playing immersive video with a 180-degree field of view
+### Playing immersive video with a 180-degree field of view
 
 To play the immersive media with a 180-degree field of view, first set up a fully immersive space, and then set [`desiredImmersiveViewingMode`](./videoplayercomponent/desiredimmersiveviewingmode.md) to [`VideoPlayerComponent.ImmersiveViewingMode.full`](./videoplayercomponent/immersiveviewingmode-swift.enum/full.md).
 
 If you want to switch the immersive-viewing mode to `full` while immersive-media playback is in [`VideoPlayerComponent.ImmersiveViewingMode.portal`](./videoplayercomponent/immersiveviewingmode-swift.enum/portal.md) mode, wait for the scene event named [`VideoPlayerEvents.ImmersiveViewingModeDidChange`](./videoplayerevents/immersiveviewingmodedidchange.md) to trigger after you set [`desiredImmersiveViewingMode`](./videoplayercomponent/desiredimmersiveviewingmode.md) to `full`. Then, dismiss the window scene and open up a fully immersive space scene.
 
-##### Playing immersive video with a progressive view
+### Playing immersive video with a progressive view
 
 To play the immersive media with a progressive view, first set up a progressive immersive space, and then set [`desiredImmersiveViewingMode`](./videoplayercomponent/desiredimmersiveviewingmode.md) to [`VideoPlayerComponent.ImmersiveViewingMode.progressive`](./videoplayercomponent/immersiveviewingmode-swift.enum/progressive.md).
 
 If you want to switch the immersive-viewing mode to `progressive` while immersive-media playback is in [`VideoPlayerComponent.ImmersiveViewingMode.portal`](./videoplayercomponent/immersiveviewingmode-swift.enum/portal.md) mode, wait for the scene event named [`VideoPlayerEvents.ImmersiveViewingModeDidChange`](./videoplayerevents/immersiveviewingmodedidchange.md) to trigger after you set [`desiredImmersiveViewingMode`](./videoplayercomponent/desiredimmersiveviewingmode.md) to `progressive`. Then, dismiss the window scene and open up a progressive immersive space scene.
 
-##### Playing immersive video in a portal window
+### Playing immersive video in a portal window
 
 To play the immersive video in a portal window, set up a window scene in the Shared Space, and then set [`desiredImmersiveViewingMode`](./videoplayercomponent/desiredimmersiveviewingmode.md) to [`VideoPlayerComponent.ImmersiveViewingMode.portal`](./videoplayercomponent/immersiveviewingmode-swift.enum/portal.md).
 
 If you want to switch the immersive-viewing mode to `portal` while immersive-media playback is in `full` or is in `progressive` mode, wait for the scene event named [`VideoPlayerEvents.ImmersiveViewingModeDidChange`](./videoplayerevents/immersiveviewingmodedidchange.md) to trigger after you set [`desiredImmersiveViewingMode`](./videoplayercomponent/desiredimmersiveviewingmode.md) to `portal`. Then, dismiss the fully/progressive immersive space and open up a window scene.
 
-##### Updating the UI during transitions
+### Updating the UI during transitions
 
 The system triggers scene events named [`VideoPlayerEvents.ImmersiveViewingModeWillTransition`](./videoplayerevents/immersiveviewingmodewilltransition.md) and [`VideoPlayerEvents.ImmersiveViewingModeDidTransition`](./videoplayerevents/immersiveviewingmodedidtransition.md) at the start and end of the immersive-viewing mode transitions, respectively. Apps can listen to these scene events to turn playback controls or other UI items on or off during transitions.
 

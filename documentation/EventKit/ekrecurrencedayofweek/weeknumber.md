@@ -24,7 +24,7 @@ var weekNumber: Int { get }
 @property (nonatomic, readonly) NSInteger weekNumber;
 ```
 
-#### Discussion
+## Discussion
 
 Values range from `–53` to `53`. A negative value indicates a value from the end of the range. `0` indicates the week number is irrelevant.
 

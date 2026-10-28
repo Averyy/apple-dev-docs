@@ -19,7 +19,7 @@ A value that represents a person’s account and their consent to Automatic Sign
 @interface VSAutoSignInToken : NSObject
 ```
 
-#### Overview
+## Overview
 
 Automatic Sign-In tokens implement a single sign-on experience for media streaming services for a signed-in Apple Account.
 

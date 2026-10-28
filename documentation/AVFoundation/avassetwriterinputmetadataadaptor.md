@@ -26,7 +26,7 @@ class AVAssetWriterInputMetadataAdaptor
 @interface AVAssetWriterInputMetadataAdaptor : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use a metadata adaptor to append track-level metadata, packaged as instances of [`AVTimedMetadataGroup`](./avtimedmetadatagroup.md), to an asset writer input.
 

@@ -12,11 +12,11 @@ virtual UInt64 getRefCon64(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 Returns the previously stored user defined value.
 
-#### Overview
+## Overview
 
 Returns the user defined value previously stored in the ORB with setRefCon.
 

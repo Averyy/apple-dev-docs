@@ -21,7 +21,7 @@ An optional semantic role describing the button’s purpose.
 let role: ButtonRole?
 ```
 
-#### Discussion
+## Discussion
 
 A value of `nil` means that the Button has no assigned role. If the button does have a role, use it to make adjustments to the button’s appearance. The following example shows a custom style that uses bold text when the role is [`cancel`](../buttonrole/cancel.md), [`red`](../shapestyle/red.md) text when the role is [`destructive`](../buttonrole/destructive.md), and adds no special styling otherwise:
 

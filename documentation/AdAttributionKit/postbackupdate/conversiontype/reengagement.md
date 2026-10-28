@@ -17,7 +17,7 @@ The value that represents someone reengaging with an app they’ve previously in
 case reengagement
 ```
 
-#### Discussion
+## Discussion
 
 In the attribution report, the framework represents this using the string *re-engagement*.
 

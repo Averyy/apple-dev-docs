@@ -25,7 +25,7 @@ func stop() -> Bool
 - (BOOL) stop;
 ```
 
-#### Discussion
+## Discussion
 
 Returns YES if this commissioning was still in-progress and has now been stopped; returns NO if this commissioning wasn’t in-progress.
 

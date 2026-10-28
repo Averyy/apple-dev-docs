@@ -23,7 +23,7 @@ static let rdd18UDAMSetVersion: AVCaptureAncillaryDataUserKey
 extern AVCaptureAncillaryDataUserKey const AVCaptureAncillaryDataUserKeyRDD18UDAMSetVersion;
 ```
 
-#### Discussion
+## Discussion
 
 Clients may set the UDAM Set Version with `AVCaptureAncillaryDataEncoder/setUserInstanceUID:userUdamVersion:`
 

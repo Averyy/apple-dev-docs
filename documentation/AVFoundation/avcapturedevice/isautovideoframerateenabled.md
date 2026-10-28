@@ -23,7 +23,7 @@ var isAutoVideoFrameRateEnabled: Bool { get set }
 @property (nonatomic, getter=isAutoVideoFrameRateEnabled) BOOL autoVideoFrameRateEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 You can enable this property on a device when its active format’s [`isAutoVideoFrameRateSupported`](./format/isautovideoframeratesupported.md) property is [`true`](../../Swift/true.md). When enabled, a capture device automatically adjusts the active frame rate based on light level. Under low light conditions, it decreases the frame rate to properly expose the scene. For formats with a maximum frame rate of 30 fps, the frame rate switches between 30-24. For formats with a maximum frame rate of 60 fps, the frame rate switches between 60-30-24.
 

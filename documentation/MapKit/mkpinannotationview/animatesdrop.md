@@ -24,7 +24,7 @@ var animatesDrop: Bool { get set }
 @property (nonatomic) BOOL animatesDrop;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is [`true`](../../Swift/true.md), the map view animates the appearance of pin annotation views by making them appear to drop onto the map at the target point. This animation occurs whenever the view transitions from offscreen to onscreen.
 

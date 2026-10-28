@@ -5,7 +5,7 @@
 
 Implement a driver that supports Thunderbolt devices or PCI cards.
 
-#### Overview
+## Overview
 
 For many types of PCI drivers, the use of kernel extensions is deprecated. Instead, create a DriverKit extension using [PCIDriverKit](../../PCIDriverKit/PCIDriverKit.md).
 

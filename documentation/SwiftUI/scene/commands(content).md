@@ -24,7 +24,7 @@ func commands<Content>(@ContentBuilder content: () -> Content) -> some Scene whe
 
 - [Building and customizing the menu bar with SwiftUI](../building-and-customizing-the-menu-bar-with-swiftui.md)
 
-#### Discussion
+## Discussion
 
 Commands are realized in different ways on different platforms. On macOS, the main menu uses the available command menus and groups to organize its main menu items. Each menu is represented as a top-level menu bar menu, and each command group has a corresponding set of menu items in one of the top-level menus, delimited by separator menu items.
 

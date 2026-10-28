@@ -15,7 +15,7 @@ Gets the stream activity state.
 bool GetStreamIsActive();
 ```
 
-#### Return Value
+## Return Value
 
 True if the stream is enabled and doing IO; otherwise false.
 

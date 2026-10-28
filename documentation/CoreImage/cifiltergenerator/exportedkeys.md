@@ -19,11 +19,11 @@ var exportedKeys: [AnyHashable : Any] { get }
 @property (nonatomic, readonly) NSDictionary * exportedKeys;
 ```
 
-#### Return Value
+## Return Value
 
 An array of dictionaries that describe the exported key and target object. See [`kCIFilterGeneratorExportedKey`](../kcifiltergeneratorexportedkey.md), [`kCIFilterGeneratorExportedKeyTargetObject`](../kcifiltergeneratorexportedkeytargetobject.md),  and [`kCIFilterGeneratorExportedKey`](../kcifiltergeneratorexportedkey.md) for keys used in the dictionary.
 
-#### Discussion
+## Discussion
 
 This method returns the keys that you exported using the [`exportKey(_:from:withName:)`](./exportkey%28_,from,withname%29.md) method or that were exported before being written to the file from which you read the filter chain.
 

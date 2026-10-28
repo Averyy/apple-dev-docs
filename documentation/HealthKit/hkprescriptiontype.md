@@ -24,7 +24,7 @@ class HKPrescriptionType
 @interface HKPrescriptionType : HKSampleType
 ```
 
-#### Overview
+## Overview
 
 The [`HKPrescriptionType`](./hkprescriptiontype.md) class is a concrete subclass of the [`HKSampleType`](./hksampletype.md) class. To create a vision prescription type instances, use the [`visionPrescriptionType()`](./hkobjecttype/visionprescriptiontype%28%29.md) convenience method.
 

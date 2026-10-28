@@ -15,11 +15,11 @@ Counts and returns the number of destination encodingsto which a specified sourc
 OSStatus TECCountDestinationTextEncodings(TextEncoding inputEncoding, ItemCount *numberOfEncodings);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 
-#### Discussion
+## Discussion
 
 This function counts every instance of an encoding. If differentconversion plug-ins support the same direct text encoding, the directtext encoding is counted more than once.
 

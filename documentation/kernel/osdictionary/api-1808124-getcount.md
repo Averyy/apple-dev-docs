@@ -11,7 +11,7 @@ Returns the current number of key/object pairs contained within the dictionary.
 virtual unsigned int getCount() const;
 ```
 
-#### Return Value
+## Return Value
 
 The current number of key/object pairs contained within the dictionary.
 

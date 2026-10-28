@@ -26,7 +26,7 @@ func unblockAccessory(_ accessory: HMAccessory) async throws
 - (void) unblockAccessory:(HMAccessory *) accessory completionHandler:(void (^)(NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 A misbehaving accessory automatically becomes blocked. After that, all requests to the accessory fail. Use this API to explicitly unblock the accessory.
 

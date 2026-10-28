@@ -13,11 +13,11 @@ Set a custom registry.
 **Availability**:
 - Swift 5.9+
 
-#### Overview
+## Overview
 
 Use this subcommand to assign a registry at project or user-level.
 
-##### Project-level
+### Project-level
 
 ```bash
 $ swift package-registry set https://packages.example.com 
@@ -25,7 +25,7 @@ $ swift package-registry set https://packages.example.com
 
 At the project level, package manager uses the registry for packages within the project with the registry settings stored in `.swiftpm/configuration/registries.json`.
 
-##### User-level
+### User-level
 
 When you pass the `--global` option, the package manager sets the registry at the user-level:
 
@@ -35,7 +35,7 @@ $ swift package-registry set --global https://global.example.com
 
 At the user level, the package manager uses the registry for all projects for that user with the registry settings stored in `~/.swiftpm/configuration/registries.json`.
 
-##### Registry settings
+### Registry settings
 
 An example of the `registries.json` that would result from the user-level setting from above would look something like:
 
@@ -52,7 +52,7 @@ An example of the `registries.json` that would result from the user-level settin
 
 The JSON key `[default]` means that the registry at `https://global.example.com` is “unscoped” and will be applied when there is no registry association found for a given scope.
 
-##### Setting a scope
+### Setting a scope
 
 To set a specific scope:
 
@@ -64,11 +64,11 @@ $ swift package-registry set --scope foo https://local.example.com
 $ swift package-registry set --scope foo --global https://global.example.com  
 ```
 
-##### Removing a registry
+### Removing a registry
 
 To remove a registry assignment, use the [`swift package-registry unset` subcommand](./packageregistryunset.md).
 
-##### Usage
+### Usage
 
 ```
 package-registry set [--package-path=<package-path>]

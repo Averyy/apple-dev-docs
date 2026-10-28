@@ -21,7 +21,7 @@ Identifier for the tabular Islamic calendar.
 case islamicTabular
 ```
 
-#### Discussion
+## Discussion
 
 This calendar uses arithmetical calculations of months, and is based on the astronomical epoch (Thursday, July 15, 622 CE).
 

@@ -25,7 +25,7 @@ protocol DynamicOptionsProvider : _SupportsAppDependencies
 
 - [Adding parameters to an app intent](./adding-parameters-to-an-app-intent.md)
 
-#### Overview
+## Overview
 
 Implement this protocol in a type that provides a set of possible values for an intent parameter. When configuring the parameter, specify your custom type as the options provider for that parameter. The type of result you return determines how the system displays the information.
 

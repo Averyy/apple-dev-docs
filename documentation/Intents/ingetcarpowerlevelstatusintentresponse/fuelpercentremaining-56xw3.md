@@ -19,7 +19,7 @@ The percentage of fuel that remains for the fuel-powered vehicle.
 final var fuelPercentRemaining: Float? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Typically, you assign a value to this property only after handling the intent.
 

@@ -18,7 +18,7 @@ The bounds of this mesh instance, in model space, or `nil` to derive bounds from
 final var bounds: BoundingSphereBox? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Assign a value to override the mesh part’s bounds — for example, when using instancing to place instances across a wider area than the base mesh part covers, or when a geometry modifier displaces vertices beyond the mesh part’s recorded bounds.
 

@@ -16,11 +16,11 @@ Creates an async event source.
 IOReturn (*createAsyncEventSource)(void *self, CFRunLoopSourceRef *source);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOReturn code.
 
-#### Discussion
+## Discussion
 
 This will be used with setEventCallout.
 

@@ -21,7 +21,7 @@ Returns a Boolean value that indicates whether a demand requests the given numbe
 static func == (lhs: Subscribers.Demand, rhs: Int) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 An `.unlimited` demand doesn’t match any integer.
 

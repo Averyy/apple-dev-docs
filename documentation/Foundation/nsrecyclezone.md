@@ -23,7 +23,7 @@ Frees memory in a zone.
 extern void NSRecycleZone(NSZone *zone);
 ```
 
-#### Discussion
+## Discussion
 
 Frees `zone` after adding any of its pointers still in use to the default zone. (This strategy prevents retained objects from being inadvertently destroyed.)
 

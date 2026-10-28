@@ -25,7 +25,7 @@ class AVPlayerItemSampleBufferOutputConfiguration
 @interface AVPlayerItemSampleBufferOutputConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 Mutating [`AVPlayerItemSampleBufferOutputConfiguration`](./avplayeritemsamplebufferoutputconfiguration.md) after using it to create an [`AVPlayerItemSampleBufferOutput`](./avplayeritemsamplebufferoutput.md) object will not affect the [`AVPlayerItemSampleBufferOutput`](./avplayeritemsamplebufferoutput.md) object.
 

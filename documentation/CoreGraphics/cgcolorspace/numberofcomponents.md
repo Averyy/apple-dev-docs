@@ -25,7 +25,7 @@ var numberOfComponents: Int { get }
 extern size_t CGColorSpaceGetNumberOfComponents(CGColorSpaceRef space);
 ```
 
-#### Discussion
+## Discussion
 
 A color space defines an n-dimensional space whose dimensions (or components) represent intensity values. Use this function to obtain the number of components in a given color space: for example, in an RGB color space this function returns 3 (for the three intensity values red, green, and blue).
 

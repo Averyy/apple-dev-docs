@@ -5,11 +5,11 @@
 
 Create and run observer queries.
 
-#### Overview
+## Overview
 
 Observer queries are long-running queries that monitor the HealthKit store on a background thread, and update your app when the HealthKit store saves or deletes a matching sample. By default, observer queries only return results while your app is in the foreground; however, you can configure your app to also receive update notifications in the background.
 
-##### Create Observer Queries
+### Create Observer Queries
 
 To create an observer query, call the [`init(sampleType:predicate:updateHandler:)`](./hkobserverquery/init%28sampletype,predicate,updatehandler%29.md) initializer. Start by creating a type object for the samples you want to observe. The following example creates a type object for step counts.
 
@@ -50,7 +50,7 @@ This runs the query on an anonymous background queue. Whenever a matching sample
 
 To stop the query, call the HealthKit store’s [`stop(_:)`](./hkhealthstore/stop%28_%29.md) method.
 
-##### Receive Background Deliveries
+### Receive Background Deliveries
 
 Apps can also register to receive updates while in the background by calling the HealthKit store’s [`enableBackgroundDelivery(for:frequency:withCompletion:)`](./hkhealthstore/enablebackgrounddelivery%28for,frequency,withcompletion%29.md) method. This method registers your app for background notifications. HealthKit wakes your app when the store receives new samples of the specified type. HealthKit notifies your app at most once per time period defined by the frequency you specified when registering.
 

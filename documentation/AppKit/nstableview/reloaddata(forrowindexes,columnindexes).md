@@ -19,7 +19,7 @@ func reloadData(forRowIndexes rowIndexes: IndexSet, columnIndexes: IndexSet)
 - (void) reloadDataForRowIndexes:(NSIndexSet *) rowIndexes columnIndexes:(NSIndexSet *) columnIndexes;
 ```
 
-#### Discussion
+## Discussion
 
 For cells that are visible, the appropriate [`dataSource`](./datasource.md) and [`delegate`](./delegate.md) methods are called and the cells are redrawn.
 

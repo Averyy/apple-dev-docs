@@ -19,7 +19,7 @@ optional func webView(_ webView: WebView!, unableToImplementPolicyWithError erro
 - (void) webView:(WebView *) webView unableToImplementPolicyWithError:(NSError *) error frame:(WebFrame *) frame;
 ```
 
-#### Discussion
+## Discussion
 
 Delegates might implement this method to display or log an error message. If you do not implement this method, no action is taken.
 

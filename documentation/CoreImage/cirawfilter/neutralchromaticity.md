@@ -24,7 +24,7 @@ var neutralChromaticity: CGPoint { get set }
 @property (readwrite) CGPoint neutralChromaticity;
 ```
 
-#### Discussion
+## Discussion
 
 Set this value to change the level of white balance to apply to the image, based on `x,y` chromaticity values in the range `0...1`.
 

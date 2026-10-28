@@ -20,7 +20,7 @@ struct AudioStreamRangedDescription
 struct AudioStreamRangedDescription;
 ```
 
-#### Overview
+## Overview
 
 Note that this structure is only used to describe the the available formats for a stream. It is not used for the current format.
 

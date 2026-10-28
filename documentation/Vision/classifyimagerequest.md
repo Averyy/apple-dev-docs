@@ -21,7 +21,7 @@ A request to classify an image.
 struct ClassifyImageRequest
 ```
 
-#### Overview
+## Overview
 
 This type of request produces a collection of [`ClassificationObservation`](./classificationobservation.md) objects that describe an image. Access the possible classifications through the [`supportedIdentifiers`](./classifyimagerequest/supportedidentifiers.md) property.
 

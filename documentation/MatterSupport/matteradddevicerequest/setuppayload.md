@@ -19,9 +19,9 @@ The payload to use for Matter device setup.
 var setupPayload: MTRSetupPayload?
 ```
 
-#### Overview
+## Overview
 
-This is an optional field for a setup to be able to complete. If this is provided, no QR-Code selection occurs. Use of this field requires an entitlement in the application ([com.apple.developer.matter.allow-setup-payload](../../BundleResources/entitlements/com_apple_developer_matter_allow-setup-payload.md)).
+This is an optional field for a setup to be able to complete. If this is provided, no QR-Code selection occurs. Use of this field requires an entitlement in the application ([com.apple.developer.matter.allow-setup-payload](../../BundleResources/entitlements/com.apple.developer.matter.allow-setup-payload.md)).
 
 ## See Also
 

@@ -19,7 +19,7 @@ var userInterfaceLayoutDirection: NSUserInterfaceLayoutDirection { get }
 @property (readonly) NSUserInterfaceLayoutDirection userInterfaceLayoutDirection;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the general user interface layout flow directions. For a list of possible values, see [`NSUserInterfaceLayoutDirection`](../nsuserinterfacelayoutdirection.md).
 

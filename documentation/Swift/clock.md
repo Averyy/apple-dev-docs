@@ -21,7 +21,7 @@ A mechanism in which to measure time, and delay work until a given point in time
 protocol Clock<Duration> : Sendable
 ```
 
-#### Overview
+## Overview
 
 Types that conform to the `Clock` protocol define a concept of “now” which is the specific instant in time that property is accessed. Any pair of calls to the `now` property may have a minimum duration between them - this minimum resolution is exposed by the `minimumResolution` property to inform any user of the type the expected granularity of accuracy.
 

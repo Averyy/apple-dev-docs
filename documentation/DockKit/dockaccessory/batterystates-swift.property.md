@@ -18,11 +18,11 @@ Battery states from the accessory that indicate changes in battery charge or rea
 final var batteryStates: DockAccessory.BatteryStates { get throws }
 ```
 
-#### Return Value
+## Return Value
 
 Accessory events related to button presses and common camera controls.
 
-#### Discussion
+## Discussion
 
 > **Throws**: [`DockKitError.notConnected`](../dockkiterror/notconnected.md) if device is disconnected, or [`DockKitError.notSupportedByDevice`](../dockkiterror/notsupportedbydevice.md) if device doesn’t support updates.
 

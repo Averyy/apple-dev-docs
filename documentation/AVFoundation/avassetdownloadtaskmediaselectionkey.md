@@ -25,7 +25,7 @@ let AVAssetDownloadTaskMediaSelectionKey: String
 extern NSString * const AVAssetDownloadTaskMediaSelectionKey;
 ```
 
-#### Discussion
+## Discussion
 
 By default, a download task automatically retrieves all of an asset’s media selections. To download a specific media selection, provide an [`AVMediaSelection`](./avmediaselection.md) object for this key.
 

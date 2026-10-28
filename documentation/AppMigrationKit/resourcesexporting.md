@@ -16,7 +16,7 @@ A protocol for exporting transportable resources in a streaming archive format w
 protocol ResourcesExporting : ResourcesExportingWithOptions where Self.OptionsType == MigrationDefaultSupportedOptions
 ```
 
-#### Overview
+## Overview
 
 This protocol extends [`ResourcesExportingWithOptions`](./resourcesexportingwithoptions.md) and sets its [`OptionsType`](./resourcesexportingwithoptions/optionstype.md) to [`MigrationDefaultSupportedOptions`](./migrationdefaultsupportedoptions.md), which indicates the destination platform doesn’t require any special options. If you know your export to the other platform doesn’t need these options, conform to this protocol in your app exension and implement the methods and properties defined by [`ResourcesExportingWithOptions`](./resourcesexportingwithoptions.md).
 

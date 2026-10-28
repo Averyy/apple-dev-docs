@@ -20,7 +20,7 @@ struct es_event_lookup_t
 typedef struct { ... } es_event_lookup_t;
 ```
 
-#### Overview
+## Overview
 
 This event represents a call to `mpo_vnode_check_lookup_preflight`, which the system performs prior to looking up a path. Endpoint Security always delivers this event for file system path access, even if the path doesn’t exist (which prevents an “open” or “close” event from occurring).
 

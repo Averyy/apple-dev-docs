@@ -21,11 +21,11 @@ func fontManager(_ sender: Any, willIncludeFont fontName: String) -> Bool
 - (BOOL) fontManager:(id) sender willIncludeFont:(NSString *) fontName;
 ```
 
-#### Return Value
+## Return Value
 
 If the Font panel delegate returns [`YES`](../yes.md), `fontName` is listed; if the delegate returns [`NO`](../no.md), it isn’t.
 
-#### Discussion
+## Discussion
 
 In macOS versions 10.2 and earlier, this method is invoked repeatedly as necessary whenever the Font panel needs updating, such as when the Font panel is first loaded, and when the user selects a family name to see which typefaces in that family are available. Your implementation should execute fairly quickly to ensure the responsiveness of the Font panel.
 

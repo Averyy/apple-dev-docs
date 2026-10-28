@@ -25,7 +25,7 @@ struct DenseVector_Float
 typedef struct { ... } DenseVector_Float;
 ```
 
-#### Overview
+## Overview
 
 You typically use dense vectors to represent the unknowns vector, *x*, and the right-hand-side vector, *b*, in the matrix equation *Ax = b.* A [`DenseVector_Float`](./densevector_float.md) structure provides a pointer to its underlying data and a count of its number of elements.
 

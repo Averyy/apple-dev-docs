@@ -15,7 +15,7 @@ The name of a color to use as the background color on the launch screen.
 - **Name**: `UIColorName`
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 Provide a value for this key that’s the name of a color in your asset catalog. You use the same string for the value that you might use when calling the [`init(named:)`](../../../../UIKit/uicolor/init%28named%29.md) initializer of [`UIColor`](../../../../UIKit/uicolor.md).
 

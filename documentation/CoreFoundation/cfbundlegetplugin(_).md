@@ -25,7 +25,7 @@ func CFBundleGetPlugIn(_ bundle: CFBundle!) -> CFPlugIn!
 extern CFPlugInRefCFBundleGetPlugIn(CFBundleRef bundle);
 ```
 
-#### Return Value
+## Return Value
 
 The plug-in for `bundle`. Ownership follows the [The Get Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
 

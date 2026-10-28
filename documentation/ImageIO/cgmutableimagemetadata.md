@@ -25,7 +25,7 @@ class CGMutableImageMetadata
 typedef struct CGImageMetadata * CGMutableImageMetadataRef;
 ```
 
-#### Discussion
+## Discussion
 
 Create a [`CGMutableImageMetadata`](./cgmutableimagemetadata.md) opaque type when you want to modify the metadata in an image. You may pass this type to any functions that take a [`CGImageMetadata`](./cgimagemetadata.md) type as a parameter. This object stores the tag information as XMP data, which you can write back to the image.
 

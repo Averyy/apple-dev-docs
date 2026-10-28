@@ -17,7 +17,7 @@ A message that tells people why the app is requesting access to their location a
 - **Name**: `NSLocationAlwaysUsageDescription` (Privacy - Location Always Usage Description)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 Use this key if your iOS app accesses location information in the background, and you deploy to a target earlier than iOS 11. In that case, add both this key and [`NSLocationAlwaysAndWhenInUseUsageDescription`](./nslocationalwaysandwheninuseusagedescription.md) to your app’s `Info.plist` file with the same message. Apps running on older versions of the OS use the message associated with [`NSLocationAlwaysUsageDescription`](./nslocationalwaysusagedescription.md), while apps running on later versions use the one associated with [`NSLocationAlwaysAndWhenInUseUsageDescription`](./nslocationalwaysandwheninuseusagedescription.md).
 

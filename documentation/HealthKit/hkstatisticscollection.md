@@ -24,7 +24,7 @@ class HKStatisticsCollection
 @interface HKStatisticsCollection : NSObject
 ```
 
-#### Overview
+## Overview
 
 For more information on statistics objects, see [`HKStatistics`](./hkstatistics.md). For more information on calculating statistics over consecutive time intervals, see [`HKStatisticsCollectionQuery`](./hkstatisticscollectionquery.md).
 

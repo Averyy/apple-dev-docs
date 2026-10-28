@@ -28,7 +28,7 @@ func requestPerObjectReadAuthorization(for objectType: HKObjectType, predicate: 
 - (void) requestPerObjectReadAuthorizationForType:(HKObjectType *) objectType predicate:(NSPredicate *) predicate completion:(void (^)(BOOL success, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Some samples require per-object authorization. For these samples, people can select which ones your app can read on a sample-by-sample basis. By default, your app can read any of the per-object authorization samples that it has saved to the HealthKit store; however, you may not always have access to those samples. People can update the authorization status for any of these samples at any time.
 

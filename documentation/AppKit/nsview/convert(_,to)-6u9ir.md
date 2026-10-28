@@ -19,7 +19,7 @@ func convert(_ point: NSPoint, to view: NSView?) -> NSPoint
 - (NSPoint) convertPoint:(NSPoint) point toView:(NSView *) view;
 ```
 
-#### Return Value
+## Return Value
 
 The point converted to the coordinate system of `aView`.
 

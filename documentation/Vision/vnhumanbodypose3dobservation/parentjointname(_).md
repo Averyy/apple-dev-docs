@@ -24,7 +24,7 @@ func parentJointName(_ jointName: VNHumanBodyPose3DObservation.JointName) -> VNH
 - (VNHumanBodyPose3DObservationJointName) parentJointNameForJointName:(VNHumanBodyPose3DObservationJointName) jointName;
 ```
 
-#### Return Value
+## Return Value
 
 The name of the parent joint.
 

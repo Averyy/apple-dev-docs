@@ -20,7 +20,7 @@ A request whose execution depends on assets that may need to be downloaded.
 protocol DownloadableAssetsRequest
 ```
 
-#### Overview
+## Overview
 
 Inspect [`assetStatus`](./downloadableassetsrequest/assetstatus.md) to determine whether the required assets are ready, and call [`downloadAssets()`](./downloadableassetsrequest/downloadassets%28%29.md) to initiate the download when they are not.
 

@@ -14,7 +14,7 @@
 UInt8 (*GetDCLTagBits)(NuDCLRef dcl);
 ```
 
-#### Discussion
+## Discussion
 
 Description forthcoming
 

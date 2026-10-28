@@ -15,7 +15,7 @@ The break key.
 static let `break`: NSEvent.SpecialKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is unavailable on most Macintosh keyboards.
 

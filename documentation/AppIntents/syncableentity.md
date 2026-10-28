@@ -25,7 +25,7 @@ protocol SyncableEntity : AppEntity
 
 - [Defining app entities for your custom data types](./defining-app-entities-for-your-custom-data-types.md)
 
-#### Overview
+## Overview
 
 Adopt the `SyncableEntity` protocol in your entity types when they have an identifier that’s the same across devices. The presence of this protocol tells the system that it can refer to your entity consistently across devices. For eample, Siri uses this capability to transfer a conversation from one device to another.
 

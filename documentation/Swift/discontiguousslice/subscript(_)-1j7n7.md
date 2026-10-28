@@ -23,7 +23,7 @@ subscript(i: DiscontiguousSlice<Base>.Index) -> Base.Element { get set }
 
 Available when `Base` conforms to `MutableCollection`.
 
-#### Overview
+## Overview
 
 For example, you can replace an element of an array by using its subscript.
 

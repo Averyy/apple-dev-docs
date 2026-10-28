@@ -21,11 +21,11 @@ func removeAllImages() -> Bool
 - (BOOL) removeAllImages;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a Boolean value that indicates whether the images were successfully removed.
 
-#### Discussion
+## Discussion
 
 If the view controller has already been presented to the user when [`removeAllImages()`](./removeallimages%28%29.md) is called, the method returns [`false`](../../Swift/false.md) and the images are not removed.
 

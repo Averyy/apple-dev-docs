@@ -12,7 +12,7 @@ virtual void reset(
  void );
 ```
 
-#### Overview
+## Overview
 
 This method exits all levels of recursion, and restores the iterator to its state at creation.
 

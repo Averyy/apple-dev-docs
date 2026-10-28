@@ -19,7 +19,7 @@ Returns the background color at the index position.
 func backgroundColor(at index: String.Index) -> (CGColor?, Range<String.Index>)
 ```
 
-#### Return Value
+## Return Value
 
 A tuple that contains the background color and range to which it applies.
 

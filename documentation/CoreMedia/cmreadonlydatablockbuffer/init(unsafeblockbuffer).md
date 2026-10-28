@@ -21,7 +21,7 @@ Create a readonly block buffer from an existing block buffer.
 init(unsafeBlockBuffer: sending CMBlockBuffer)
 ```
 
-#### Discussion
+## Discussion
 
 This init will make sure that all memory referenced by `unsafeBlockBuffer` is allocated by calling [`assureBlockMemory()`](../cmblockbuffer/assureblockmemory%28%29.md).
 

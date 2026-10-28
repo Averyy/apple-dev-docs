@@ -22,7 +22,7 @@ nonisolated
 func chartScrollableAxes(_ axes: Axis.Set) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to make a chart scrollable. Below is an example that makes a chart scrollable along the horizontal axis.
 

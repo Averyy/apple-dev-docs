@@ -22,11 +22,11 @@ init(document: UIDocument?)
 - (instancetype) initWithDocument:(UIDocument *) document;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized [`UIDocumentViewController`](../uidocumentviewcontroller.md) object.
 
-#### Discussion
+## Discussion
 
 The document view controller opens and displays the document that you specify. If you don’t provide custom values, the new view controller gets its title and other information from the document itself.
 

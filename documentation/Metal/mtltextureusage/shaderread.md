@@ -24,7 +24,7 @@ static var shaderRead: MTLTextureUsage { get }
 MTLTextureUsageShaderRead
 ```
 
-#### Discussion
+## Discussion
 
 Set this option if you access the given texture with a `read()` or `sample()` function in any shader. This option enables the `access::read` and `access::sample` attributes for the texture. For more information about texture functions and access attributes, see [Metal Shading Language Guide](https://developer.apple.com/library/archive/documentation/Metal/Reference/MetalShadingLanguageGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40014364).
 

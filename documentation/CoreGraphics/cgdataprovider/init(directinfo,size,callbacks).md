@@ -25,11 +25,11 @@ init?(directInfo info: UnsafeMutableRawPointer?, size: off_t, callbacks: UnsafeP
 extern CGDataProviderRefCGDataProviderCreateDirect(void *info, off_t size, const CGDataProviderDirectCallbacks *callbacks);
 ```
 
-#### Return Value
+## Return Value
 
 A new data provider. In Objective-C, you’re responsible for releasing this object using [`CGDataProviderRelease`](../cgdataproviderrelease.md).
 
-#### Discussion
+## Discussion
 
 You use this function to create a direct-access data provider that uses callback functions to read data from your program in a single block.
 

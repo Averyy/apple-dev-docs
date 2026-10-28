@@ -18,11 +18,11 @@ Creates a box mesh with a topology suitable for cloth simulation.
 static func box(size: SIMD3<Float>, targetEdgeLength: Float = defaultTargetEdgeLength) throws -> Self
 ```
 
-#### Return Value
+## Return Value
 
 The generated box mesh resource.
 
-#### Discussion
+## Discussion
 
 - size: The dimensions (width, height, depth) of the generated box, in meters. The resulting box will extend from `-dimensions/2` to `+dimensions/2`.
 - targetEdgeLength: The targeted average edge length for the generated mesh, in meters. The generated mesh will contain edges with a length as close as possible to this.

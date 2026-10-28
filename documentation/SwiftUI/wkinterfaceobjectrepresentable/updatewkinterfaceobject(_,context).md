@@ -17,7 +17,7 @@ Updates the presented WatchKit interface object (and its coordinator) to the lat
 @preconcurrency func updateWKInterfaceObject(_ wkInterfaceObject: Self.WKInterfaceObjectType, context: Self.Context)
 ```
 
-#### Discussion
+## Discussion
 
 When the state of your app changes, SwiftUI updates the portions of your interface affected by those changes. SwiftUI calls this method for any changes affecting the corresponding interface object. Use this method to update the configuration of your object to match the new state information provided in the `context` parameter.
 

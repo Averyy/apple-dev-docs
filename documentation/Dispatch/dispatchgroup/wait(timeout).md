@@ -21,7 +21,7 @@ Waits synchronously for the previously submitted work to complete, and returns i
 func wait(timeout: DispatchTime) -> DispatchTimeoutResult
 ```
 
-#### Return Value
+## Return Value
 
 A result value indicating whether the method returned due to a timeout.
 

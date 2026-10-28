@@ -25,7 +25,7 @@ class MKPointOfInterestFilter
 @interface MKPointOfInterestFilter : NSObject
 ```
 
-#### Overview
+## Overview
 
 You can apply a point of interest filter in a map view ([`pointOfInterestFilter`](./mkmapview/pointofinterestfilter.md)), a local search request ([`pointOfInterestFilter`](./mklocalsearchcompleter/pointofinterestfilter.md)), a search completer ([`pointOfInterestFilter`](./mklocalsearchcompleter/pointofinterestfilter.md)), and in snapshot options ([`pointOfInterestFilter`](./mkmapsnapshotter/options/pointofinterestfilter.md)).
 

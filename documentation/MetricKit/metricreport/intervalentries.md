@@ -22,7 +22,7 @@ let intervalEntries: [MetricReport.IntervalEntry]
 
 - [Monitoring app performance with MetricKit](../monitoring-app-performance-with-metrickit.md)
 
-#### Discussion
+## Discussion
 
 Use the [`fullDayEntry`](../../Swift/array/fulldayentry.md) convenience property on the collection to access the entry covering the entire 24-hour reporting period. This is the entry with the longest [`duration`](./intervalentry/duration.md):
 

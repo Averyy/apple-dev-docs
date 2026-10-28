@@ -16,7 +16,7 @@ A structure containing the current digitizer touch data.
 typedef struct IOHIDDigitizerTouchData { ... } IOHIDDigitizerTouchData;
 ```
 
-#### Overview
+## Overview
 
 Pass this structure to the [`dispatchDigitizerTouchEvent`](./iohideventservice/dispatchdigitizertouchevent.md) method when dispatching touch events.
 

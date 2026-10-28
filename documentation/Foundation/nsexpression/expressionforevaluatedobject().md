@@ -25,7 +25,7 @@ class func expressionForEvaluatedObject() -> NSExpression
 + (NSExpression *) expressionForEvaluatedObject;
 ```
 
-#### Return Value
+## Return Value
 
 A new expression that represents the object being evaluated.
 

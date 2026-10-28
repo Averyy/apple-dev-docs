@@ -24,7 +24,7 @@ let HMCharacteristicTypeOccupancyDetected: String
 extern NSString * const HMCharacteristicTypeOccupancyDetected;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is one of the constants in the [`HMCharacteristicValueOccupancyStatus`](./hmcharacteristicvalueoccupancystatus.md) enumeration.
 

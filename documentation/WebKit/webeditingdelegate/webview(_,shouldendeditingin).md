@@ -19,11 +19,11 @@ optional func webView(_ webView: WebView!, shouldEndEditingIn range: DOMRange!) 
 - (BOOL) webView:(WebView *) webView shouldEndEditingInDOMRange:(DOMRange *) range;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the user should be allowed to end editing `webView`; otherwise, [`false`](../../Swift/false.md). If this method returns[`true`](../../Swift/true.md), `webView` ends editing and resigns as the first responder.
 
-#### Discussion
+## Discussion
 
 This method is invoked when a web view attempts to resign as the first responder.
 

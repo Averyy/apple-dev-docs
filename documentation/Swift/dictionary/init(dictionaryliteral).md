@@ -23,7 +23,7 @@ init(dictionaryLiteral elements: (Key, Value)...)
 
 Available when `Key` conforms to `Hashable`.
 
-#### Discussion
+## Discussion
 
 Do not call this initializer directly. It is called by the compiler to handle dictionary literals. To use a dictionary literal as the initial value of a dictionary, enclose a comma-separated list of key-value pairs in square brackets.
 

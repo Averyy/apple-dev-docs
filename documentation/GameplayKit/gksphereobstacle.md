@@ -24,7 +24,7 @@ class GKSphereObstacle
 @interface GKSphereObstacle : GKObstacle
 ```
 
-#### Overview
+## Overview
 
 To make agents ([`GKAgent`](./gkagent.md) objects) avoid obstacles, create a goal with the [`init(toAvoid:maxPredictionTime:)`](./gkgoal/init%28toavoid,maxpredictiontime%29-7oslq.md) method. Agents affected by an avoid-obstacles goal will attempt to move such that their radius never overlaps that of a spherical obstacle.
 

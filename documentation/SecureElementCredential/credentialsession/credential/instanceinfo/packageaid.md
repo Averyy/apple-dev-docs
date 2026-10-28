@@ -16,7 +16,7 @@ The unique identifier of the package you use to install the instance.
 let packageAID: Data
 ```
 
-#### Discussion
+## Discussion
 
 You can use the version encoded in this identifier to determine the version of the installed applet.
 

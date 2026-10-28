@@ -19,7 +19,7 @@ optional func deviceBrowser(_ browser: ICDeviceBrowser, requestsSelect device: I
 - (void) deviceBrowser:(ICDeviceBrowser *) browser requestsSelectDevice:(ICDevice *) device;
 ```
 
-#### Discussion
+## Discussion
 
 This message is sent when a button is pressed on a device and the current application is the target for that button press. When this happens, if a session is open on the device, this message is not sent to the browser delegate; instead the message `device(_:didReceiveButtonPress:)` is sent to the device delegate.
 

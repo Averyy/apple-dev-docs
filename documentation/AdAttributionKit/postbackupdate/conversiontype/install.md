@@ -17,7 +17,7 @@ The value that represents the installation of an app after an ad interaction.
 case install
 ```
 
-#### Discussion
+## Discussion
 
 In the attribution report, the framework represents this using the strings *download* or *redownload*, depending on the kind of installation.
 

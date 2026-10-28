@@ -10,11 +10,11 @@ Build a fluid sign-in experience for your tvOS apps using AuthenticationServices
 - tvOS 15.0+
 - Xcode 13.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC21 session [10279: Simplify sign in for your tvOS apps](https://developer.apple.com/wwdc21/10279/).
 
-##### Configure the Sample Code Project
+### Configure the Sample Code Project
 
 To configure the sample code project, perform the following steps in Xcode:
 

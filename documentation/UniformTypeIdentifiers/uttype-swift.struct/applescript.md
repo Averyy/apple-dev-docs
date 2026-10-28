@@ -21,7 +21,7 @@ A type that represents an AppleScript text-based script.
 static var appleScript: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.apple.applescript.text`.
 

@@ -23,7 +23,7 @@ static func zoom(options: UIViewController.Transition.ZoomOptions? = nil, source
 
 - [Enhancing your app with fluid transitions](../../enhancing-your-app-with-fluid-transitions.md)
 
-#### Discussion
+## Discussion
 
 The system calls the source view provider when it presents and when it dismisses the view controller. In the closure, return the [`UIView`](../../uiview.md) that the animation should zoom in from or zoom back out to, respectively. For more information, see [Enhancing your app with fluid transitions](../../enhancing-your-app-with-fluid-transitions.md).
 

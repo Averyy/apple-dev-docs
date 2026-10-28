@@ -15,7 +15,7 @@ The response body for endpoints that list analytics report requests for an app.
 object AnalyticsReportRequestsResponse
 ```
 
-#### Discussion
+## Discussion
 
 Use this object with [`Read Report Requests`](./get-v1-apps-_id_-analyticsreportrequests.md).
 

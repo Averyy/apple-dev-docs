@@ -20,11 +20,11 @@ Creates a new render pipeline state synchronously.
 - (id<MTLRenderPipelineState>) newRenderPipelineStateWithDescriptor:(MTL4PipelineDescriptor *) descriptor dynamicLinkingDescriptor:(MTL4RenderPipelineDynamicLinkingDescriptor *) dynamicLinkingDescriptor compilerTaskOptions:(MTL4CompilerTaskOptions *) compilerTaskOptions error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A new render pipeline state object upon success, `nil` otherwise.
 
-#### Discussion
+## Discussion
 
 Use this method to build any render pipeline type, including render, tile, and mesh render pipeline states. The type of the descriptor you pass indicates the pipeline type this method builds.
 

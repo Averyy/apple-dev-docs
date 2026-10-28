@@ -17,7 +17,7 @@ The selector objects available to filter returned data.
 object Selector
 ```
 
-#### Discussion
+## Discussion
 
 [`Selector`](./selector.md) objects define what data the API returns when fetching resources. You use [`Selector`](./selector.md) objects with find calls and reporting endpoints.
 

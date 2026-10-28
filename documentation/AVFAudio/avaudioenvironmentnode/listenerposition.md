@@ -24,7 +24,7 @@ var listenerPosition: AVAudio3DPoint { get set }
 @property (nonatomic) AVAudio3DPoint listenerPosition;
 ```
 
-#### Discussion
+## Discussion
 
 The system specifies the coordinates in meters.
 

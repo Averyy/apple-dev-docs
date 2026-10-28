@@ -13,7 +13,7 @@ Update the localized information for a specific beta app and locale.
 
 - [App Store Connect API 3.7 release notes](./app-store-connect-api-3-7-release-notes.md)
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  A description is required for all `betaAppLocalizations` before you can submit to beta app review. After you have added data to the fields for this resource, you can change that data, but you cannot remove data.
 

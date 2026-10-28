@@ -11,11 +11,11 @@ virtual UInt32 getStatistics(
  UInt32statisticsMaxCount) const;
 ```
 
-#### Return Value
+## Return Value
 
 Actual number of statistic values copied to the buffer, or if no buffer is given, the total number of statistic values available.
 
-#### Overview
+## Overview
 
 Ask the driver to report its operating statistics.
 

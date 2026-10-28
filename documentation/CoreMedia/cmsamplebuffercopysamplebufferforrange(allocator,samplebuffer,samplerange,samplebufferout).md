@@ -25,11 +25,11 @@ func CMSampleBufferCopySampleBufferForRange(allocator: CFAllocator?, sampleBuffe
 extern OSStatus CMSampleBufferCopySampleBufferForRange(CFAllocatorRef allocator, CMSampleBufferRef sbuf, CFRange sampleRange, CMSampleBufferRef*sampleBufferOut);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Sample Buffer Error Codes](./sample-buffer-errors.md).
 
-#### Discussion
+## Discussion
 
 > **Note**:  Samples containing non-interleaved audio aren’t supported.
 

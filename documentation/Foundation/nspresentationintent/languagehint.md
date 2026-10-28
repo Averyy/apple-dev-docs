@@ -21,7 +21,7 @@ The language associated with the code listing.
 @property (copy, readonly, nullable) NSString * languageHint;
 ```
 
-#### Discussion
+## Discussion
 
 If the intent is not a code block, the value of this property is `nil`.
 

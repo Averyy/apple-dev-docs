@@ -25,18 +25,18 @@ func vImageConvert_BGRA8888toRGB565_dithered(_ src: UnsafePointer<vImage_Buffer>
 vImage_Error vImageConvert_BGRA8888toRGB565_dithered(const vImage_Buffer *src, const vImage_Buffer *dest, void *tempBuffer, int dither, const vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, a negative value indicates one of the error codes that [Data Types and Constants](./data-types-and-constants.md) describes, and a positive value indicates the required size for the temporary buffer.
 
-#### Discussion
+## Discussion
 
 This function supports the following dithering algorithms:
 
 - **[`kvImageConvert_DitherOrdered`](./kvimageconvert_ditherordered.md)**: Adds precomputed blue noise to the source image before it rounds the input values to the nearest representable value in the destination format. The vImage conversion functions support uniform and Gaussian noise by including [`kvImageConvert_OrderedUniformBlue`](./kvimageconvert_ordereduniformblue.md) and [`kvImageConvert_OrderedGaussianBlue`](./kvimageconvert_orderedgaussianblue.md), respectively.
 - **[`kvImageConvert_DitherOrderedReproducible`](./kvimageconvert_ditherorderedreproducible.md)**: Returns the same result as [`kvImageConvert_DitherOrdered`](./kvimageconvert_ditherordered.md), but uses the same offset into the blue noise for each call.
 
-##### Optimize performance with temporary buffers
+### Optimize performance with temporary buffers
 
 This function uses a multiple-pass algorithm that saves intermediate pixel values between passes. In some cases, the destination buffer may not be large enough to store that intermediate data, so the operation requires additional storage.
 

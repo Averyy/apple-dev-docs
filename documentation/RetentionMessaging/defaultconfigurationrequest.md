@@ -15,7 +15,7 @@ The request body that contains the default configuration information.
 object DefaultConfigurationRequest
 ```
 
-#### Discussion
+## Discussion
 
 This is the request body for the [`Configure Default Message`](./configure-default-message.md) endpoint.
 

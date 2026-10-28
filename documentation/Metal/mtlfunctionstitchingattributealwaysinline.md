@@ -24,7 +24,7 @@ class MTLFunctionStitchingAttributeAlwaysInline
 @interface MTLFunctionStitchingAttributeAlwaysInline : NSObject
 ```
 
-#### Overview
+## Overview
 
 To inline functions in a call graph, instantiate an instance of this class and assign it as an attribute on the [`MTLFunctionStitchingGraph`](./mtlfunctionstitchinggraph.md).
 

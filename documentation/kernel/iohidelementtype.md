@@ -15,7 +15,7 @@ Describes different types of HID elements.
 typedef enum IOHIDElementType IOHIDElementType;
 ```
 
-#### Discussion
+## Discussion
 
 Used by the IOHIDFamily to identify the type of element processed. Represented by the key kIOHIDElementTypeKey in the dictionary describing the element.
 

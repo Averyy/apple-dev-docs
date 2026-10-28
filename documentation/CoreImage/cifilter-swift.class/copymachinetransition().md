@@ -28,11 +28,11 @@ class func copyMachineTransition() -> any CIFilter & CICopyMachineTransition
 
 - [Customizing Image Transitions](../customizing-image-transitions.md)
 
-#### Return Value
+## Return Value
 
 The transition image.
 
-#### Discussion
+## Discussion
 
 This method applies the copy machine transition filter to an image. The effect transitions from one image to another by simulating the scanning light effect of a copy machine.
 

@@ -23,7 +23,7 @@ func layoutAttributesForSupplementaryView(ofKind kind: String, at indexPath: Ind
 - (UICollectionViewLayoutAttributes *) layoutAttributesForSupplementaryViewOfKind:(NSString *) kind atIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 The collection view layout attributes for the specified supplementary view.
 

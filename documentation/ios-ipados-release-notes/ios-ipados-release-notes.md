@@ -4,11 +4,11 @@
 
 Learn about changes to the iOS & iPadOS SDK.
 
-#### Overview
+## Overview
 
 Release notes provide details on API changes, known issues, fixes, workarounds, and deprecations for recent software releases.
 
-##### Bug Reporting
+### Bug Reporting
 
 For issues not mentioned in release notes, send feedback through [Feedback Assistant](applefeedback://).
 

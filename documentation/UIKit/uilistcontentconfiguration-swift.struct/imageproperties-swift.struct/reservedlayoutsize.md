@@ -19,7 +19,7 @@ The layout size that the system reserves for the image, and then centers the ima
 var reservedLayoutSize: CGSize { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to ensure:
 

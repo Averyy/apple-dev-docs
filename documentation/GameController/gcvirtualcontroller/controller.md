@@ -21,7 +21,7 @@ var controller: GCController? { get }
 @property (nonatomic, readonly, nullable) GCController * controller;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to either get the element’s input values directly, or set handlers to get callbacks with the input values that changed. If you don’t connect the virtual controller to the device using `connect()`, this property is `nil`.
 

@@ -5,7 +5,7 @@
 
 Initiate install validation by displaying a view-through ad with signed parameters.
 
-#### Overview
+## Overview
 
 Install validation informs an ad network when users install and launch an app they purchase after viewing an ad. Ad networks provide an ad with cryptographically signed information that includes their ad network ID. If the ad results in a conversion, the customer’s device sends install-validation postbacks. For information about attribution-winning and nonwinning postbacks, see [Receiving ad attributions and postbacks](./receiving-ad-attributions-and-postbacks.md).
 
@@ -17,7 +17,7 @@ To provide a view-through ad and initiate a validation, the app calls [`startImp
 
 Ad networks generate the signature on their server using their ad network ID and the PKCS#8 private key they establish when registering to use the API. For more information, see [Registering an ad network](./registering-an-ad-network.md).
 
-##### Create an ad impression instance
+### Create an ad impression instance
 
 Create an instance of [`SKAdImpression`](./skadimpression.md) to set the properties for the ad impression. These properties contain the same values you use to generate the signature.
 
@@ -35,7 +35,7 @@ The following table maps the parameters you use in the signature string to their
 | `fidelity-type` | An additional parameter in the signature that isn’t part of [`SKAdImpression`](./skadimpression.md). Required for version 2.2 and later signatures. For view-through ads, use a fidelity type value of `0`. |
 | `timestamp` | [`timestamp`](./skadimpression/timestamp.md) |
 
-##### Combine parameter values
+### Combine parameter values
 
 The order and content of the signature parameters depends on the [`version`](./skadimpression/version.md) of the signature you’re creating. Choose one of the parameter combinations below, based on your [`version`](./skadimpression/version.md).
 
@@ -55,7 +55,7 @@ version + '\u2063' + ad-network-id + '\u2063' + campaign-id + '\u2063' + itunes-
 
 Use the most recent version available in the SDK whenever possible. For information about availability, see [SKAdNetwork release notes](./skadnetwork-release-notes.md).
 
-##### Sign the combined string
+### Sign the combined string
 
 Sign the combined UTF-8 string with the following key and algorithm:
 
@@ -64,7 +64,7 @@ Sign the combined UTF-8 string with the following key and algorithm:
 
 The resulting Digital Encoding Rules (DER)-formatted binary value is the signature.
 
-##### Encode the signature
+### Encode the signature
 
 Encode the binary signature you generate into a Base64 string. The result is your ad network attribution signature, [`signature`](./skadimpression/signature.md), to use for view-through ads. The signature string should resemble the following:
 
@@ -74,7 +74,7 @@ MEQCIEQlmZRNfYzKBSE8QnhLTIHZZZWCFgZpRqRxHss65KoFAiAJgJKjdrWdkLUOCCjuEx2RmFS7daRz
 
 For more information about Base64 encoding, see [`base64EncodedString(options:)`](../Foundation/data/base64encodedstring%28options%29.md).
 
-##### Use the generated signature string
+### Use the generated signature string
 
 After you generate the signature, you have all the required values for your [`SKAdImpression`](./skadimpression.md) instance and can use it to call [`startImpression(_:completionHandler:)`](./skadnetwork/startimpression%28_,completionhandler%29.md). Present your view-through ad, and then call [`endImpression(_:completionHandler:)`](./skadnetwork/endimpression%28_,completionhandler%29.md) using the same [`SKAdImpression`](./skadimpression.md) instance.
 

@@ -25,7 +25,7 @@ class AVPlayerVideoOutput
 @interface AVPlayerVideoOutput : NSObject
 ```
 
-#### Overview
+## Overview
 
 Attach a video output to an [`AVPlayer`](./avplayer.md) object to access the player’s video data as [`CMTaggedBufferGroupRef`](../CoreMedia/cmtaggedbuffergroupref.md) objects.
 

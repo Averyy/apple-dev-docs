@@ -22,7 +22,7 @@ weak var delegate: (any UIScreenshotServiceDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<UIScreenshotServiceDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 Assign an object to this property early in the life cycle of your window scene. The object must conform to the [`UIScreenshotServiceDelegate`](../uiscreenshotservicedelegate.md) protocol.
 

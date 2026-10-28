@@ -19,7 +19,7 @@ var lineScroll: CGFloat { get set }
 @property CGFloat lineScroll;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is the amount by which the scroll view scrolls itself when scrolling line by line, expressed in the content view’s coordinate system. This value is used when the user clicks the scroll arrows without holding down a modifier key. When displaying text in a scroll view, for example, you might set this value to the height of a single line of text in the default font. As part of its implementation, this property accesses [`verticalLineScroll`](./verticallinescroll.md).
 

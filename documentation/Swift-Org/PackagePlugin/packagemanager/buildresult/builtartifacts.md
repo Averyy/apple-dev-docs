@@ -17,7 +17,7 @@ The artifacts built from the products in the package.
 var builtArtifacts: [BuiltArtifact]
 ```
 
-#### Discussion
+## Discussion
 
 Intermediates such as object files produced from individual targets aren’t listed.
 

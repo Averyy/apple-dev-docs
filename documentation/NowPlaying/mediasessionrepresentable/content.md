@@ -27,7 +27,7 @@ var content: (any MediaContentRepresentable)? { get }
 
 - [Publishing media sessions](../publishing-media-sessions.md)
 
-#### Discussion
+## Discussion
 
 Use a content type like [`MusicContent`](../musiccontent.md), [`PodcastContent`](../podcastcontent.md), [`MovieContent`](../moviecontent.md), [`TVShowContent`](../tvshowcontent.md), or [`GenericContent`](../genericcontent.md) to describe the media being played. You can provide additional metadata using the content type’s trailing closure.
 

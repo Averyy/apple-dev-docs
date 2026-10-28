@@ -24,11 +24,11 @@ class func palettize() -> any CIFilter & CIPalettize
 + (CIFilter<CIPalettize> *) palettizeFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the palette filter to an image. The effect uses the palette image that is *K* x 1 pixels in size containing a set of colors, replacing the image colors.
 

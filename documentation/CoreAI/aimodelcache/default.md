@@ -23,7 +23,7 @@ static let `default`: AIModelCache
 
 - [Managing model specialization and caching](../managing-model-specialization-and-caching.md)
 
-#### Discussion
+## Discussion
 
 The shared specialized asset cache for your app bundle. The framework uses this cache by default whenever specialization happens automatically, such as during [`init(contentsOf:options:)`](../aimodel/init%28contentsof,options%29.md).
 

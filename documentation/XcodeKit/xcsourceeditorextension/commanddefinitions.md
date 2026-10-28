@@ -19,7 +19,7 @@ optional var commandDefinitions: [[XCSourceEditorCommandDefinitionKey : Any]] { 
 @property (copy, readonly) NSArray<NSDictionary<NSString *,id> *> * commandDefinitions;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this property when you need to override the command definitions specified in your extension target’s Info.plist file. There are no guarantees about the thread or queue on which this property is accessed.
 

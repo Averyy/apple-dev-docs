@@ -896,6 +896,10 @@
       "file_path": "documentation/SiriKitCloudMedia/extensionconfig/intent-data.dictionary/updatemediaaffinity-data.dictionary.md",
       "hash": "336fbad373d5bba9533455a49744a5872294cace09c482dabdd0d919819bd368"
     },
+    "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/extensionconfig/intent-data.dictionary/updatemediaaffinity-data.dictionarykey.json": {
+      "error": "HTTP 404",
+      "status": "error"
+    },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/extensionconfig/media-data.dictionary.json": {
       "file_path": "documentation/SiriKitCloudMedia/extensionconfig/media-data.dictionary.md",
       "hash": "382c610b1400aeaee094b65a96612a1dafc89b3922f29d799f49478a346f9c67"
@@ -908,6 +912,10 @@
       "file_path": "documentation/SiriKitCloudMedia/extensionconfig/media-data.dictionary/queues-data.dictionary/contentplaybackfailure-data.dictionary.md",
       "hash": "8612646f58aa79574454adb075b2e43160db2c8ce37b27ee525fe1b8faea6385"
     },
+    "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/extensionconfig/media-data.dictionary/queues-data.dictionary/contentplaybackfailure-data.dictionarykey.json": {
+      "error": "HTTP 404",
+      "status": "error"
+    },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/extensionconfig/media-data.dictionary/queues-data.dictionary/contentprotectionkey-data.dictionary.json": {
       "file_path": "documentation/SiriKitCloudMedia/extensionconfig/media-data.dictionary/queues-data.dictionary/contentprotectionkey-data.dictionary.md",
       "hash": "bc9100d5e697e386466ce9539ebf64268bfcf09c97de7d1322bdcbeccde6c820"
@@ -919,6 +927,10 @@
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/extensionconfig/media-data.dictionary/queues-data.dictionary/contentprotectionkey-data.dictionary/hdr-data.dictionary.json": {
       "file_path": "documentation/SiriKitCloudMedia/extensionconfig/media-data.dictionary/queues-data.dictionary/contentprotectionkey-data.dictionary/hdr-data.dictionary.md",
       "hash": "819e71f3e7903a4e471786c9dce363179a7d09fce9aa0b5500627db205040621"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/extensionconfig/media-data.dictionary/queues-data.dictionary/contentprotectionkey-data.dictionarykey.json": {
+      "error": "HTTP 404",
+      "status": "error"
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/extensionconfig/media-data.dictionary/queues-data.dictionary/hdr-data.dictionary.json": {
       "file_path": "documentation/SiriKitCloudMedia/extensionconfig/media-data.dictionary/queues-data.dictionary/hdr-data.dictionary.md",
@@ -939,6 +951,10 @@
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/extensionconfig/media-data.dictionary/queues-data.dictionary/updateactivity-data.dictionary/hdr-data.dictionary.json": {
       "file_path": "documentation/SiriKitCloudMedia/extensionconfig/media-data.dictionary/queues-data.dictionary/updateactivity-data.dictionary/hdr-data.dictionary.md",
       "hash": "29a57cd0243a2e57f9f0bb118d60f0834c4257299358de745caa4f4d5c7ef0a8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/extensionconfig/media-data.dictionary/queues-data.dictionary/updateactivity-data.dictionarykey.json": {
+      "error": "HTTP 404",
+      "status": "error"
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/extensionconfigtag.json": {
       "file_path": "documentation/SiriKitCloudMedia/extensionconfigtag.md",
@@ -1347,8 +1363,8 @@
   },
   "metadata": {
     "render": {
-      "version": 3
+      "version": 4
     },
-    "total_pages": 336
+    "total_pages": 340
   }
 }

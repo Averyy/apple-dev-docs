@@ -24,7 +24,7 @@ class let statusBarFrameUserInfoKey: String
 extern NSString * const UIApplicationStatusBarFrameUserInfoKey;
 ```
 
-#### Discussion
+## Discussion
 
 The key’s value is an [`NSValue`](../../Foundation/nsvalue.md) object that encapsulates a [`CGRect`](../../CoreFoundation/cgrect.md) structure expressing the location and size of the new status bar frame. This key is used with [`didChangeStatusBarFrameNotification`](./didchangestatusbarframenotification.md) and [`willChangeStatusBarFrameNotification`](./willchangestatusbarframenotification.md) notifications.
 

@@ -29,7 +29,7 @@ class CLBeaconRegion
 - [Turning an iOS device into an iBeacon device](./turning-an-ios-device-into-an-ibeacon-device.md)
 - [Determining the proximity to an iBeacon device](./determining-the-proximity-to-an-ibeacon-device.md)
 
-#### Overview
+## Overview
 
 A [`CLBeaconRegion`](./clbeaconregion.md) object defines a region that you use to detect Bluetooth beacons conforming to the iBeacon specification. In contrast to a [`CLCircularRegion`](./clcircularregion.md) that centers on a geographic location, a [`CLBeaconRegion`](./clbeaconregion.md) focuses on an iBeacon with specific identifying characteristics, which you provide. When a matching device comes in range, Core Location notifies your app.
 

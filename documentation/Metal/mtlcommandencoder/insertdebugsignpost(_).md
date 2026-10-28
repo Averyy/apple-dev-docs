@@ -25,7 +25,7 @@ func insertDebugSignpost(_ string: String)
 - (void) insertDebugSignpost:(NSString *) string;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Naming resources and commands](../../Xcode/naming-resources-and-commands.md).
 

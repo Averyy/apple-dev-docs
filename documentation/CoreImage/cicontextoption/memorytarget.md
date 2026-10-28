@@ -24,7 +24,7 @@ static let memoryTarget: CIContextOption
 extern CIContextOption const kCIContextMemoryLimit;
 ```
 
-#### Discussion
+## Discussion
 
 Larger values could increase memory  footprint while smaller values could reduce performance.
 

@@ -25,11 +25,11 @@ func intersection(with dateInterval: DateInterval) -> DateInterval?
 - (NSDateInterval *) intersectionWithDateInterval:(NSDateInterval *) dateInterval;
 ```
 
-#### Return Value
+## Return Value
 
 A date interval for the intersection of the receiver and `dateInterval`, or `nil` if no intersection occurs.
 
-#### Discussion
+## Discussion
 
 Calculating the intersection of date intervals is a commutative and associative operation. The intersection of a date interval with itself is equal to itself.
 

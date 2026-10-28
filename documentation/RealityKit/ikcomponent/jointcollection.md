@@ -20,7 +20,7 @@ Ordered dictionary like container with fixed size.
 struct JointCollection
 ```
 
-#### Overview
+## Overview
 
 Supports subscripting by index, element’s identifier or element’s name.
 

@@ -19,7 +19,7 @@ var isFloatingPanel: Bool { get }
 @property (readonly, getter=isFloatingPanel) BOOL floatingPanel;
 ```
 
-#### Discussion
+## Discussion
 
 This property is key-value coding compliant.
 

@@ -23,7 +23,7 @@ var nonceResponseKeypath: String { get set }
 
 - [Obtaining a server nonce](../obtaining-a-server-nonce.md)
 
-#### Discussion
+## Discussion
 
 ## See Also
 

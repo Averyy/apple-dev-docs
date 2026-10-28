@@ -12,11 +12,11 @@ virtual unsigned int ensureCapacity(
  unsigned intnewCapacity) = 0;
 ```
 
-#### Return Value
+## Return Value
 
 The new capacity of the collection, which may be different from the number requested (if smaller, reallocation of storage failed).
 
-#### Overview
+## Overview
 
 Subclasses implement this pure virtual member function to adjust their storage so that they can hold at least `newCapacity` objects. Libkern collections generally allocate storage in multiples of their capacity increment.
 

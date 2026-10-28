@@ -24,7 +24,7 @@ func sampleCursorAtFirstSampleInDecodeOrder() async throws -> any MESampleCursor
 - (void) generateSampleCursorAtFirstSampleInDecodeOrderWithCompletionHandler:(void (^)(id<MESampleCursor>sampleCursor, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The new sample cursor points to the first sample in decode order, regardless of presentation time stamp (PTS).
 

@@ -20,7 +20,7 @@ The function used to respond to action updated events.
 mutating func actionUpdated(event: Self.EventType)
 ```
 
-#### Discussion
+## Discussion
 
 An update event is raised after a start event, and the the animation time remains within the an action’s event interval.
 

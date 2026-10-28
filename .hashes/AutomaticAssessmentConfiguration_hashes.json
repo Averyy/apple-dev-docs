@@ -1250,8 +1250,11 @@
     }
   },
   "metadata": {
+    "gone_links": [
+      "https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmentconfiguration/setconfiguration(_:for:)"
+    ],
     "render": {
-      "version": 3
+      "version": 4
     },
     "total_pages": 312
   }

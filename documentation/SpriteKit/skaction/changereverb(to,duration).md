@@ -25,11 +25,11 @@ class func changeReverb(to v: Float, duration: TimeInterval) -> SKAction
 + (SKAction *) changeReverbTo:(float) v duration:(NSTimeInterval) duration;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 When the action executes, the audio node’s reverb animates from its current value to its new value. For more information, see [`AVAudio3DMixing`](../../AVFAudio/avaudio3dmixing.md).
 

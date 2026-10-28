@@ -20,7 +20,7 @@ func setDockTile(_ dockTile: NSDockTile?)
 - (void) setDockTile:(NSDockTile *) dockTile;
 ```
 
-#### Discussion
+## Discussion
 
 The plugin is loaded in a system process at login time or when the application tile is added to the Dock.
 

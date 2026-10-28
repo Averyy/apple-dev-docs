@@ -15,11 +15,11 @@ Removes a video object from the driver.
 kern_return_t RemoveObject(IOUserVideoObject *in_object);
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` if object was successfully removed.
 
-#### Discussion
+## Discussion
 
 The objects’s reference count will be decremented if it was successfully removed. Caller should also call PropertiesChanged() as necessary to notify host of any changes.
 

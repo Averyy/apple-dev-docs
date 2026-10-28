@@ -23,7 +23,7 @@ class DDDiscoverySession
 @interface DDDiscoverySession : NSObject
 ```
 
-#### Overview
+## Overview
 
 The system passes the extension an instance of this class when it attempts to discover a device. Device discovery starts when an app displays [`AVRoutePickerView`](../AVKit/avroutepickerview.md) and the system calls the extension’s `startDiscovery(session:)` implementation.
 

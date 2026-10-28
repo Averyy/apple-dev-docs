@@ -21,7 +21,7 @@ Apply a change to the attributes in the entire selection.
 mutating func transformAttributes<E>(in selection: inout AttributedTextSelection, body: (inout AttributeContainer) throws(E) -> Void) throws(E) where E : Error
 ```
 
-#### Discussion
+## Discussion
 
 Applies the given `body` to the selection. Specifically, in the case of a selection spanning one or multiple characters, the `body` is applied to every run in the selection individually, modifying only the part of the run that is in the selection.
 

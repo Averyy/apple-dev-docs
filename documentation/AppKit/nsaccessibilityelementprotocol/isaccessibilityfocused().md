@@ -19,11 +19,11 @@ optional func isAccessibilityFocused() -> Bool
 - (BOOL) isAccessibilityFocused;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if this element has the keyboard focus; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method is the getter for the [`NSAccessibilityProtocol`](../nsaccessibilityprotocol.md) protocol’s [`accessibilityFocused`](../nsaccessibility-c.protocol/accessibilityfocused.md) property.
 

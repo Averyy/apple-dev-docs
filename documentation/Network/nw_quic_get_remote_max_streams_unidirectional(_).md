@@ -25,7 +25,7 @@ func nw_quic_get_remote_max_streams_unidirectional(_ metadata: nw_protocol_metad
 uint64_t nw_quic_get_remote_max_streams_unidirectional(nw_protocol_metadata_t metadata);
 ```
 
-#### Return Value
+## Return Value
 
 The maximum number of unidirectional streams advertised by peer that the connection is allowed to create.
 

@@ -15,11 +15,11 @@ Gets current max packet length.
 OBEXError OBEXSessionGetMaxPacketLength(OBEXSessionRef inSessionRef, OBEXMaxPacketLength *outLength);
 ```
 
-#### Return Value
+## Return Value
 
 An error code value. 0 if successful.
 
-#### Discussion
+## Discussion
 
 This value *could* change before and after a connect command has been sent or a connect command response has been received, since the recipient could negotiate a lower max packet size.
 

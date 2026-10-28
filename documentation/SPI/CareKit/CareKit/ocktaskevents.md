@@ -17,7 +17,7 @@ A data structure that holds events for multiple tasks.
 struct OCKTaskEvents
 ```
 
-#### Overview
+## Overview
 
 This data structure acts much like an ordered set. Events are ordered by least recently added, and an event is only valid if it is unique when compared to all other existing events. An event `x` is considered unique if:
 

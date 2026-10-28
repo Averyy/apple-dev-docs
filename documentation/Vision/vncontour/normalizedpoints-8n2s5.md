@@ -20,7 +20,7 @@ The contour’s array of points in normalized coordinates.
 var normalizedPoints: [simd_float2] { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property value provides the address of the buffer that contain the array of [`CGPoint`](../../CoreFoundation/cgpoint.md) values.
 

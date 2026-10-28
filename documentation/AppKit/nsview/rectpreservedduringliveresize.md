@@ -19,7 +19,7 @@ var rectPreservedDuringLiveResize: NSRect { get }
 @property (readonly) NSRect rectPreservedDuringLiveResize;
 ```
 
-#### Discussion
+## Discussion
 
 The rectangle in this property is in the coordinate system of your view and reflects the space your view previously occupied. This rectangle may be smaller or the same size as your view’s current bounds, depending on whether the view grew or shrunk.
 

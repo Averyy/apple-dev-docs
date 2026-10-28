@@ -25,7 +25,7 @@ static let easyToRead: AVMediaCharacteristic
 extern AVMediaCharacteristic const AVMediaCharacteristicEasyToRead;
 ```
 
-#### Discussion
+## Discussion
 
 Closed caption tracks that carry “easy reader” captions, as the CEA-608 specification defines, should have this characteristic.
 

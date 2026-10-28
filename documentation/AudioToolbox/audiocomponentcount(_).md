@@ -24,7 +24,7 @@ func AudioComponentCount(_ inDesc: UnsafePointer<AudioComponentDescription>) -> 
 extern UInt32 AudioComponentCount(const AudioComponentDescription *inDesc);
 ```
 
-#### Return Value
+## Return Value
 
 The number of matching components on the system.
 

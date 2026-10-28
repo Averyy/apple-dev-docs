@@ -28,7 +28,7 @@ optional func photoOutput(_ output: AVCapturePhotoOutput, willBeginCaptureFor re
 - [Capturing and saving Live Photos](../capturing-and-saving-live-photos.md)
 - [Tracking photo capture progress](../tracking-photo-capture-progress.md)
 
-#### Discussion
+## Discussion
 
 The photo output calls this method when it has committed to a choice of settings and will soon begin the capture process. This call occurs as early as possible after your call to the [`capturePhoto(with:delegate:)`](../avcapturephotooutput/capturephoto%28with,delegate%29.md) method, letting you know what to expect for other delegate method calls related to the same capture.
 

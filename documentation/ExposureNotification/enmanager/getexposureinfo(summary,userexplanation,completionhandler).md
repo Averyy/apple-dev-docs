@@ -23,11 +23,11 @@ func getExposureInfo(summary: ENExposureDetectionSummary, userExplanation: Strin
 - (NSProgress *) getExposureInfoFromSummary:(ENExposureDetectionSummary *) summary userExplanation:(NSString *) userExplanation completionHandler:(ENGetExposureInfoHandler) completionHandler;
 ```
 
-#### Return Value
+## Return Value
 
 The progress of the method.
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This method is available in iOS 12.5, and in iOS 13.5 to 13.6.
 

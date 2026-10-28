@@ -24,7 +24,7 @@ class NSCollectionLayoutGroup
 @interface NSCollectionLayoutGroup : NSCollectionLayoutItem
 ```
 
-#### Overview
+## Overview
 
 Groups determine how the items in a collection view lay out in relation to each other. A group might lay out its items in a horizontal row, a vertical column, or a custom arrangement. A group determines the rules for how items are rendered in relation to each other, but in itself doesn’t render any content.
 

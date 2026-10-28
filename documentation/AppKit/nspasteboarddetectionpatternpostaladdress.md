@@ -15,7 +15,7 @@ A pattern that indicates the pasteboard detects a string that contains a postal 
 extern NSPasteboardDetectionPattern const NSPasteboardDetectionPatternPostalAddress;
 ```
 
-#### Return Value
+## Return Value
 
 Array of DDMatchPostalAddress values
 

@@ -24,7 +24,7 @@ class Configuration
 @interface WKWebExtensionControllerConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 Contains properties used to configure a [`WKWebExtensionController`](../wkwebextensioncontroller.md).
 

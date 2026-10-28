@@ -23,7 +23,7 @@ case dismiss
 UNNotificationContentExtensionResponseOptionDismiss
 ```
 
-#### Discussion
+## Discussion
 
 The content extension handles the selected action.
 

@@ -19,7 +19,7 @@ var transitionProgress: CGFloat { get set }
 @property (assign) CGFloat transitionProgress;
 ```
 
-#### Discussion
+## Discussion
 
 During the transition, set the value of this property periodically and call the [`invalidateLayout()`](../nscollectionviewlayout/invalidatelayout%28%29.md) method to force the collection view to update item positions. For example, when driving a transition using a gesture recognizer, you can set this property from the handler method of your gesture recognizer.
 

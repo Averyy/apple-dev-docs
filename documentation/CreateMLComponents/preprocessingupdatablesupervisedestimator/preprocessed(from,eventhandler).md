@@ -21,7 +21,7 @@ Preprocesses a sequence of examples.
 func preprocessed<S>(from input: S, eventHandler: EventHandler? = nil) async throws -> AnySequence<AnnotatedFeature<Preprocessor.Output, PreprocessingUpdatableSupervisedEstimator<Preprocessor, Estimator>.Annotation>> where S : Sequence, S.Element == AnnotatedFeature<Preprocessor.Input, Estimator.Annotation>
 ```
 
-#### Return Value
+## Return Value
 
 The preprocessed examples.
 

@@ -23,7 +23,7 @@ case systemDefault
 GCControllerHomeButtonSettingCustomizationDefault
 ```
 
-#### Discussion
+## Discussion
 
 The setting’s value is the system default.
 

@@ -22,7 +22,7 @@ case inactive
 UISpringLoadedInteractionEffectStateInactive
 ```
 
-#### Discussion
+## Discussion
 
 This state has no effect on the styling of the interaction view. It remains in its original style.
 

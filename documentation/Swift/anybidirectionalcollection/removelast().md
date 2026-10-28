@@ -24,11 +24,11 @@ mutating func removeLast() -> Self.Element
 
 Available when `Self` is `Self.SubSequence`.
 
-#### Return Value
+## Return Value
 
 The last element of the collection.
 
-#### Discussion
+## Discussion
 
 The collection must not be empty. To remove the last element of a collection that might be empty, use the `popLast()` method instead.
 

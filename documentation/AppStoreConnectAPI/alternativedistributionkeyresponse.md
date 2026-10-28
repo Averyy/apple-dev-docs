@@ -15,7 +15,7 @@ The response body for endpoints that create or read a single alternative distrib
 object AlternativeDistributionKeyResponse
 ```
 
-#### Discussion
+## Discussion
 
 This object is the response from the alternative distribution key endpoints. For more information about alternative distribution keys, see Creating and reading keys.
 

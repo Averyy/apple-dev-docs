@@ -21,7 +21,7 @@ A text formatting definition that enforces the constraints of a series of text f
 struct TupleDefinition<Scope, each Definition> where Scope : AttributeScope, repeat each Definition : AttributedTextFormattingDefinition
 ```
 
-#### Overview
+## Overview
 
 > **Note**: All sub-definitions are required to have the same `Scope`.
 

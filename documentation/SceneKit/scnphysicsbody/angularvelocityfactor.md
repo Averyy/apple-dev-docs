@@ -25,7 +25,7 @@ var angularVelocityFactor: SCNVector3 { get set }
 @property (nonatomic) SCNVector3 angularVelocityFactor;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to constrain or restrict the effect of physics simulation on the node containing the physics body. For example, you can force a body to rotate in only one axis by setting its angular velocity factor to `{0.0, 1.0, 0.0}`.
 

@@ -17,7 +17,7 @@ Resets the current batch state in the store, allowing you to request a new batch
 func resetBatchState() async throws
 ```
 
-#### Discussion
+## Discussion
 
 Use this method if the transmission of the batch to the partner service provider fails and the batch processing status is unknown. The framework doesn’t delete the reads; instead, it dissociates them from the batch.
 

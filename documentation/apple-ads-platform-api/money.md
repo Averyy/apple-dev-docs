@@ -15,13 +15,13 @@ Monetary representation with currency.
 object Money
 ```
 
-#### Discussion
+## Discussion
 
 The `Money` object is the standard monetary value type used throughout the API for budgets, bids, and spend amounts. An account doesn’t support mixing currencies.
 
 To avoid validation errors when setting bid amounts or budgets, always use the currency code returned by the ad account’s `currency` field.
 
-##### Example
+### Example
 
 ```json
 {

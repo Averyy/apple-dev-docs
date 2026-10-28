@@ -16,7 +16,7 @@ A string that contains the RGBa color value of shadows.
 attribute DOMString shadowColor;
 ```
 
-#### Discussion
+## Discussion
 
 The value may be any CSS color value. If the alpha value of `shadowColor` is nonzero, shadows are cast, provided that at least one of the three properties `shadowBlur`, `shadowOffsetX`, or `shadowOffsetY` is also nonzero.
 

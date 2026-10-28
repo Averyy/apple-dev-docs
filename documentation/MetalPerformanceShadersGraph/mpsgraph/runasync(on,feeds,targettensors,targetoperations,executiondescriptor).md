@@ -24,11 +24,11 @@ func runAsync(on commandQueue: any MTL4CommandQueue, feeds: [MPSGraphTensor : MP
 - (MPSGraphTensorDataDictionary *) runAsyncWithMTL4CommandQueue:(id<MTL4CommandQueue>) commandQueue feeds:(MPSGraphTensorDataDictionary *) feeds targetTensors:(NSArray<MPSGraphTensor *> *) targetTensors targetOperations:(NSArray<MPSGraphOperation *> *) targetOperations executionDescriptor:(MPSGraphExecutionDescriptor *) executionDescriptor;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor : MPSGraphTensorData dictionary with results synchronized to the CPU memory if MPSGraphOptionsSynchronizeResults set.
 
-#### Discussion
+## Discussion
 
 This call is asynchronous and will return immediately if a completionHandler is set.
 

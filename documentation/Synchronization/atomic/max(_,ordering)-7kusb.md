@@ -24,7 +24,7 @@ func max(_ operand: Int32, ordering: AtomicUpdateOrdering) -> (oldValue: Int32, 
 
 Available when `Value` is `Int32`.
 
-#### Return Value
+## Return Value
 
 A tuple containing the original value before the operation and the new value after the operation.
 

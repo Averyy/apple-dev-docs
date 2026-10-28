@@ -25,7 +25,7 @@ var instanceID: TKToken.InstanceID { get }
 @property (nonatomic, readonly) TKTokenInstanceID instanceID;
 ```
 
-#### Discussion
+## Discussion
 
 The instance identifier often represents some kind of serial number of the target hardware.
 

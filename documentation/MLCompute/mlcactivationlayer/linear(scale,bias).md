@@ -23,11 +23,11 @@ class func linear(scale: Float, bias: Float) -> Self
 + (instancetype) linearLayerWithScale:(float) scale bias:(float) bias;
 ```
 
-#### Return Value
+## Return Value
 
 A new `MLCActivationLayer` instance.
 
-#### Discussion
+## Discussion
 
 The [`linear(scale:bias:)`](./linear%28scale,bias%29.md) factory type method creates an activation descriptor using [`init(type:a:b:)`](../mlcactivationdescriptor/init%28type,a,b%29.md), where `type =` [`MLCActivationType.linear`](../mlcactivationtype/linear.md), `a = scale`, and `b = bias`, and passes that descriptor to [`init(descriptor:)`](./init%28descriptor%29.md).
 

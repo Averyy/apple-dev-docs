@@ -16,7 +16,7 @@ Converts a signed 16-bit big-endian value to the equivalentvalue in the computer
 #define EndianS16_BtoN(value)
 ```
 
-#### Return Value
+## Return Value
 
 The equivalent valuein the computer’s native format.
 

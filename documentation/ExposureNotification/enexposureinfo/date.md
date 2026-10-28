@@ -23,7 +23,7 @@ var date: Date { get }
 @property (nonatomic, copy, readonly) NSDate * date;
 ```
 
-#### Discussion
+## Discussion
 
 This property may report a date of relative precision, such as within one day of the actual event.
 

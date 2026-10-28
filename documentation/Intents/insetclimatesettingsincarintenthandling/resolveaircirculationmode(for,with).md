@@ -28,7 +28,7 @@ optional func resolveAirCirculationMode(for intent: INSetClimateSettingsInCarInt
 - (void) resolveAirCirculationModeForSetClimateSettingsInCar:(INSetClimateSettingsInCarIntent *) intent withCompletion:(void (^)(INCarAirCirculationModeResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the air circulation mode. Use the intent object to identify the air circulation mode specified by the user.
 

@@ -21,7 +21,7 @@ Returns a Boolean value that indicates whether debug-level logging is in an enab
 #define os_log_debug_enabled(log)
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if debug-level logging is in an enabled state; otherwise, [`false`](../Swift/false.md).
 

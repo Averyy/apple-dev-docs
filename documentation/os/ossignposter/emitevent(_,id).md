@@ -25,7 +25,7 @@ func emitEvent(_ name: StaticString, id: OSSignpostID = .exclusive)
 
 - [Recording Performance Data](../recording-performance-data.md)
 
-#### Discussion
+## Discussion
 
 You can use the [`makeSignpostID()`](./makesignpostid%28%29.md) and [`makeSignpostID(from:)`](./makesignpostid%28from%29.md) methods to generate an identifier for the event, as the following example shows:
 

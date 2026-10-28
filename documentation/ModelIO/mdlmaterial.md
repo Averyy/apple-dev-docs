@@ -24,7 +24,7 @@ class MDLMaterial
 @interface MDLMaterial : NSObject
 ```
 
-#### Overview
+## Overview
 
 Each material property (a [`MDLMaterialProperty`](./mdlmaterialproperty.md) object) provides one specific aspect of appearance, such as opacity, shininess, or surface detail. Use the [`material`](./mdlsubmesh/material.md) property of a [`MDLSubmesh`](./mdlsubmesh.md) object to associate a material with a 3D object for rendering or to find the material assigned to an object loaded from an asset file.
 

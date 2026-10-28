@@ -19,7 +19,7 @@ A Boolean value that indicates whether at least one movie fragment extends the a
 var containsFragments: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 For QuickTime movie files and MPEG-4 files, the value is [`true`](../../Swift/true.md) if [`canContainFragments`](../avasset/cancontainfragments.md) is [`true`](../../Swift/true.md) and at least one `moof` box is present after the `moov` box.
 

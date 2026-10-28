@@ -21,11 +21,11 @@ Creates a string representation from a person name components value.
 func format(_ value: PersonNameComponents) -> String
 ```
 
-#### Return Value
+## Return Value
 
 A string representation of the person name components.
 
-#### Discussion
+## Discussion
 
 The [`format(_:)`](./format%28_%29.md) instance method applies the style to an instance of `PersonNameComponent`. After creating a style, you can use it to format multiple instances of person name components. For example:
 

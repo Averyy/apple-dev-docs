@@ -6,7 +6,7 @@
 
 Analyze image and video content in your app using computer vision algorithms for object detection, text recognition, and image segmentation.
 
-#### Overview
+## Overview
 
 The Vision framework provides pretrained machine learning models for computer vision tasks. Use Vision to analyze still images and video for a variety of purposes, including:
 

@@ -21,7 +21,7 @@ enum CameraCaptureMode
 enum UIImagePickerControllerCameraCaptureMode : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The constants in this enumeration are for use as values of the [`cameraCaptureMode`](./cameracapturemode-swift.property.md) property.
 

@@ -24,7 +24,7 @@ var payloadMemoryLength: Int { get set }
 @property (nonatomic, readwrite) NSUInteger payloadMemoryLength;
 ```
 
-#### Discussion
+## Discussion
 
 This property determines the size, in bytes, of the buffer you indicate via the Metal Shading Language `[[payload]]` attribute in the object and mesh shader functions of the mesh render pipeline.
 

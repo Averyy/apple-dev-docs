@@ -5,13 +5,13 @@
 
 Select the type of receipt validation, on the device or on your server, that works for your app.
 
-#### Overview
+## Overview
 
 > **Note**:  The receipt isn’t necessary if you use [`AppTransaction`](./apptransaction.md) to validate the app download, or [`Transaction`](./transaction.md) to validate in-app purchases. Only use the receipt if your app uses the [Original API for Apple In-App Purchase](./original-api-for-in-app-purchase.md), or needs the receipt to validate the app download because it can’t use [`AppTransaction`](./apptransaction.md).
 
 An App Store receipt provides a record of the sale of an app and any purchases the person makes within the app. You can authenticate purchased content by adding receipt validation code to your app or server. Receipt validation requires an understanding of secure coding techniques to employ a solution that’s secure and unique to your app.
 
-##### Choose a validation technique
+### Choose a validation technique
 
 There are two ways to verify a receipt’s authenticity:
 
@@ -29,7 +29,7 @@ Compare the approaches and determine the method that best fits your app and your
 
 Receipts contain non-consumable Apple In-App Purchases, auto-renewable subscriptions, and non-renewing subscriptions indefinitely. Consumable Apple In-App Purchases remain in the receipt until you call [`finishTransaction(_:)`](./skpaymentqueue/finishtransaction%28_%29.md). You may choose to maintain and manage records of consumable Apple In-App Purchases on your server.
 
-##### Get the latest receipt
+### Get the latest receipt
 
 The App Store updates receipts immediately after completed purchases. When you call [`verifyReceipt`](../AppStoreReceipts/verify-receipt.md) from your server, the App Store returns the latest transaction information, regardless of the contents of the receipt you send in the request.
 

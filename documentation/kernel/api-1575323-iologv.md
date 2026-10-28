@@ -24,7 +24,7 @@ int IOLogv(const char *format, va_list ap);
 void IOLogv(const char *format, va_list ap);
 ```
 
-#### Discussion
+## Discussion
 
 This function allows a driver to log diagnostic information to the screen during verbose boots, and to a log file found at /var/log/system.log. IOLogv should not be called from interrupt context.
 

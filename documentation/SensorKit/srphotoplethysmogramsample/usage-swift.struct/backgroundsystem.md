@@ -21,7 +21,7 @@ static let backgroundSystem: SRPhotoplethysmogramSample.Usage
 extern SRPhotoplethysmogramSampleUsage const SRPhotoplethysmogramSampleUsageBackgroundSystem;
 ```
 
-#### Discussion
+## Discussion
 
 The system takes this reading while performing various heart features on watchOS — such as background blood oxygen, atrial fibrillation (AFib), and low-cardio notifications.
 

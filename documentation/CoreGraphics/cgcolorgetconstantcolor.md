@@ -21,11 +21,11 @@ Returns a color object that represents a constant color.
 extern CGColorRefCGColorGetConstantColor(CFStringRef colorName);
 ```
 
-#### Return Value
+## Return Value
 
 A color object.
 
-#### Discussion
+## Discussion
 
 As this function is not a “Copy” or “Create” function, it does not necessarily return a new reference each time it’s called. As a consequence, you should not release the returned value. However, colors returned from this function can be retained and released in a properly nested fashion, just as any other Core Foundation type can.
 

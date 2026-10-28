@@ -26,7 +26,7 @@ func manageUsers() async throws
 - (void) manageUsersWithCompletionHandler:(void (^)(NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Only users that have administrator access to the home can call this method. Otherwise, the completion handler returns the error [`HMError.Code.insufficientPrivileges`](../hmerror/code/insufficientprivileges.md).
 

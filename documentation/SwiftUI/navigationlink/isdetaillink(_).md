@@ -21,11 +21,11 @@ func isDetailLink(_ isDetailLink: Bool) -> some View
 
 Available when `Label` conforms to `View` and `Destination` conforms to `View`.
 
-#### Return Value
+## Return Value
 
 A view that applies the specified detail link behavior.
 
-#### Discussion
+## Discussion
 
 This method sets the behavior when the navigation link is used in a [`NavigationSplitView`](../navigationsplitview.md), or a multi-column navigation view, such as one using [`ColumnNavigationViewStyle`](../columnnavigationviewstyle.md).
 

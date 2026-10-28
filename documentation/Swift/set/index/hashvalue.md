@@ -23,7 +23,7 @@ var hashValue: Int { get }
 
 Available when `Element` conforms to `Hashable`.
 
-#### Discussion
+## Discussion
 
 Hash values are not guaranteed to be equal across different executions of your program. Do not save hash values to use during a future execution.
 

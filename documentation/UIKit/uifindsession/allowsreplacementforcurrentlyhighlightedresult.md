@@ -22,7 +22,7 @@ var allowsReplacementForCurrentlyHighlightedResult: Bool { get }
 @property (nonatomic, readonly) BOOL allowsReplacementForCurrentlyHighlightedResult;
 ```
 
-#### Discussion
+## Discussion
 
 This property determines whether the find panel supports replacement for the currently highlighted item. If [`true`](../../Swift/true.md), the system enables the Replace button in the find panel and the hardware keyboard shortcuts for replacement.
 

@@ -23,7 +23,7 @@ var percentComplete: CGFloat { get }
 @property (readonly) CGFloat percentComplete;
 ```
 
-#### Discussion
+## Discussion
 
 The value in this property reflects the last value passed to the [`update(_:)`](./update%28_%29.md) method.
 

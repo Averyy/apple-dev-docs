@@ -25,7 +25,7 @@ func la_matrix_to_float_buffer(_ buffer: UnsafeMutablePointer<Float>, _ buffer_r
 extern la_status_t la_matrix_to_float_buffer(float *buffer, la_count_t buffer_row_stride, la_object_t matrix);
 ```
 
-#### Discussion
+## Discussion
 
 Stores the elements of a matrix to a buffer.
 

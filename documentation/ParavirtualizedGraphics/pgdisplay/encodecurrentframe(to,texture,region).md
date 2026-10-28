@@ -21,11 +21,11 @@ func encodeCurrentFrame(to commandBuffer: any MTLCommandBuffer, texture: any MTL
 - (bool) encodeCurrentFrameToCommandBuffer:(id<MTLCommandBuffer>) commandBuffer texture:(id<MTLTexture>) texture region:(MTLRegion) region;
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`true`](../../Swift/true.md) if the method encoded the commands successfully; otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method encodes Metal commands to process the new frame, dealing with color matching, gamma, and other factors. The GPU writes data to a region inside the destination texture, linearly scaled as necessary to fit in the specified region. The encoded commands won’t change any texture data outside the specified region.
 

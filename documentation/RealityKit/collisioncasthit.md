@@ -20,7 +20,7 @@ A hit result of a collision cast.
 struct CollisionCastHit
 ```
 
-#### Overview
+## Overview
 
 You get a collection of collision cast hits from either the [`raycast(origin:direction:length:query:mask:relativeTo:)`](./scene/raycast%28origin,direction,length,query,mask,relativeto%29.md) method, or the [`convexCast(convexShape:fromPosition:fromOrientation:toPosition:toOrientation:query:mask:relativeTo:)`](./scene/convexcast%28convexshape,fromposition,fromorientation,toposition,toorientation,query,mask,relativeto%29.md) method. Each hit indicates where the ray or the convex shape, starting at a given point and traveling in a given direction, hit a particular entity in the scene.
 

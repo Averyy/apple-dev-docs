@@ -21,7 +21,7 @@ var previousSibling: XMLNode? { get }
 @property (copy, readonly, nullable) NSXMLNode * previousSibling;
 ```
 
-#### Discussion
+## Discussion
 
 This object will have an [`index`](./index.md) value that is one less than the receiver’s. If there are no more previous siblings (that is, other child nodes of the receiver’s parent) the method returns `nil`
 

@@ -4,7 +4,7 @@
 
 Displays a spinning indicator and a title.
 
-#### Overview
+## Overview
 
 Use the `activityIndicator` to show your users that some sort of activity is taking place. The activity indicator is mostly used to show users that content is currently loading. Here’s an example that displays an activity indicator inside of a loading page.
 
@@ -16,11 +16,11 @@ Use the `activityIndicator` to show your users that some sort of activity is tak
 </loadingTemplate>
 ```
 
-##### Subelements of activityIndicator
+### Subelements of activityIndicator
 
 - [title](./title.md)
 
-##### Elements that Use activityIndicator
+### Elements that Use activityIndicator
 
 - [loadingTemplate](./loadingtemplate.md)
 - [relatedContent](./relatedcontent.md)

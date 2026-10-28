@@ -25,7 +25,7 @@ func draw(at point: CGPoint, withAttributes attrs: [NSAttributedString.Key : Any
 - (void) drawAtPoint:(CGPoint) point withAttributes:(NSDictionary<NSString *,id> *) attrs;
 ```
 
-#### Discussion
+## Discussion
 
 The width (height for vertical layout) of the rendering area is unlimited, unlike [`draw(in:withAttributes:)`](./draw%28in,withattributes%29.md), which uses a bounding rectangle. As a result, this method renders the text in a single line. However, if newline characters are present in the string, those characters are honored and cause subsequent text to be placed on the next line underneath the starting point.
 

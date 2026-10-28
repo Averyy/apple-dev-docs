@@ -25,7 +25,7 @@ var intents: IntentDefinitions.DefinitionCollection<AppIntentDefinition> { get }
 
 - [Testing your App Intents code](../testing-your-app-intents-code.md)
 
-#### Discussion
+## Discussion
 
 Access individual intent definitions using subscript syntax with the intent’s type name as shown in the following example:
 

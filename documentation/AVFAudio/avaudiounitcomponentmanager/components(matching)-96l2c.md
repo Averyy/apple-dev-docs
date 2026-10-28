@@ -24,11 +24,11 @@ func components(matching predicate: NSPredicate) -> [AVAudioUnitComponent]
 - (NSArray<AVAudioUnitComponent *> *) componentsMatchingPredicate:(NSPredicate *) predicate;
 ```
 
-#### Return Value
+## Return Value
 
 An array of `AVAudioComponent` objects that match the predicate.
 
-#### Discussion
+## Discussion
 
 You use the audio component’s information or tags to build search criteria, such as `“typeName CONTAINS 'Effect'"` or `“tags IN {'Sampler', 'MIDI'}"`.
 

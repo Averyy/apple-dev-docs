@@ -5,38 +5,38 @@
 
 Learn about important changes to AppKit.
 
-#### Overview
+## Overview
 
 Browse notable changes in [AppKit](../AppKit/AppKit.md).
 
-#### June 2026
+## June 2026
 
-##### General
+### General
 
 - Create events similar to `UIControl` events on [`NSControl`](../AppKit/nscontrol.md) with the new [`NSControl.Events`](../AppKit/nscontrol/events.md) type.
 
-##### Gesture recognizers
+### Gesture recognizers
 
 - Initiate a drag operation from a gesture recognizer using the new [`beginDraggingSession(items:gesture:source:)`](../AppKit/nsview/begindraggingsession%28items,gesture,source%29.md) method on [`NSView`](../AppKit/nsview.md).
 - Adopt gesture recognizers to receive touch input from a Sidecar-connected iPad. For more information, see [TN3212: Adopting gesture recognizers for Sidecar touch support](../Technotes/tn3212-adopting-gesture-recognizers-for-sidecar-touch-support.md).
 
-##### Scroll views
+### Scroll views
 
 - Configure pull-to-refresh and touch scrolling with [`NSRefreshController`](../AppKit/nsrefreshcontroller.md) and updated [`NSScrollView`](../AppKit/nsscrollview.md) properties.
 
-##### Swift and SwiftUI
+### Swift and SwiftUI
 
 - Update views automatically in response to [`Observable`](../Observation/observable.md) model changes using the guidance in [Updating views automatically with observation tracking in AppKit](../AppKit/updating-views-automatically-with-observation-tracking-in-appkit.md).
 - Limit a SwiftUI gesture to specific types of input, such as touch or mouse, using [`GestureInputKinds`](../SwiftUI/gestureinputkinds.md).
 
-##### Information property list
+### Information property list
 
 - Configure app-wide gesture recognizer exclusivity and touch emulation using the [`NSViewGestureRecognizerIsExclusive`](../BundleResources/information-property-list/nsviewgesturerecognizerisexclusive.md) and [`NSIsTouchNative`](../BundleResources/information-property-list/nsistouchnative.md) keys.
 - Control whether gesture recognizers suppress menu keyboard shortcuts using [`NSGestureRecognizerSuppressesMainMenuActions`](../BundleResources/information-property-list/nsgesturerecognizersuppressesmainmenuactions.md).
 
-#### June 2025
+## June 2025
 
-##### General
+### General
 
 - To use control metrics consistent with macOS 15 and earlier, use [`prefersCompactControlSizeMetrics`](../AppKit/nsview/preferscompactcontrolsizemetrics.md).
 - [`NSControl.ControlSize`](../AppKit/nscontrol/controlsize-swift.enum.md) includes a new extra large size, [`NSControl.ControlSize.extraLarge`](../AppKit/nscontrol/controlsize-swift.enum/extralarge.md).
@@ -44,32 +44,32 @@ Browse notable changes in [AppKit](../AppKit/AppKit.md).
 - Apply Liquid Glass effects to your custom views using [`NSGlassEffectView`](../AppKit/nsglasseffectview.md). Use [`NSGlassEffectContainerView`](../AppKit/nsglasseffectcontainerview.md) to efficiently merge these views when they’re in proximity to one other.
 - Configure buttons for Liquid Glass by setting `NSButton.BezelStyle` to [`NSButton.BezelStyle.glass`](../AppKit/nsbutton/bezelstyle-swift.enum/glass.md).
 
-##### Split views
+### Split views
 
 - Add top and bottom accessory views in split views by adding one or more [`NSSplitViewItemAccessoryViewController`](../AppKit/nssplitviewitemaccessoryviewcontroller.md) objects to the [`topAlignedAccessoryViewControllers`](../AppKit/nssplitviewitem/topalignedaccessoryviewcontrollers.md) and [`bottomAlignedAccessoryViewControllers`](../AppKit/nssplitviewitem/bottomalignedaccessoryviewcontrollers.md) properties.
 
-##### Toolbars
+### Toolbars
 
 - Tint toolbar items to make them stand out and stand apart from other toolbar items by setting [`NSToolbarItem.Style`](../AppKit/nstoolbaritem/style-swift.enum.md) to [`NSToolbarItem.Style.prominent`](../AppKit/nstoolbaritem/style-swift.enum/prominent.md), and setting [`backgroundTintColor`](../AppKit/nstoolbaritem/backgroundtintcolor.md).
 
-#### April 2025
+## April 2025
 
-##### macOS pasteboard privacy
+### macOS pasteboard privacy
 
 - Prepare your app for an upcoming feature in macOS that alerts a person using a device when your app programmatically reads the general pasteboard. The system shows the alert only if the pasteboard access wasn’t a result of someone’s input on a UI element that the system considers paste-related. This behavior is similar to how [`UIPasteboard`](../UIKit/uipasteboard.md) behaves in iOS. New `detect` methods in [`NSPasteboard`](../AppKit/nspasteboard.md) and [`NSPasteboardItem`](../AppKit/nspasteboarditem.md) make it possible for an app to examine the kinds of data on the pasteboard without actually reading them and showing the alert. [`NSPasteboard`](../AppKit/nspasteboard.md) also adds an [`accessBehavior`](../AppKit/nspasteboard/accessbehavior-86972.md) property to determine if programmatic pasteboard access is always allowed, never allowed, or if it prompts an alert requesting permission. You can adopt these APIs ahead of the change, and set a user default to test the new behavior on your Mac. To do so, launch Terminal and enter the command `defaults write <your_app_bundle_id> EnablePasteboardPrivacyDeveloperPreview -bool yes` to enable the behavior for your app.
 
-#### June 2024
+## June 2024
 
-##### General
+### General
 
 - Organize your windows’ display and layout with window tiling.
 
-##### Swift and SwiftUI
+### Swift and SwiftUI
 
 - Use SwiftUI menus in AppKit with the [`NSHostingMenu`](../SwiftUI/nshostingmenu.md).
 - Animate AppKit views using SwiftUI animations using [`animate(_:changes:completion:)`](../AppKit/nsanimationcontext/animate%28_,changes,completion%29.md).
 
-##### API refinements
+### API refinements
 
 - Use the keyboard to open context menus for UI elements on which you are focused currently.
 - Add repeat, wiggle, bounce, and rotate effects to [SF Symbols](https://developer.apple.com/sf-symbols/).
@@ -78,9 +78,9 @@ Browse notable changes in [AppKit](../AppKit/AppKit.md).
 - Control whether your toolbars display text as well as icons using the [`allowsDisplayModeCustomization`](../AppKit/nstoolbar/allowsdisplaymodecustomization.md) property.
 - Offer customized type-ahead suggestions in NSTextField using the [`suggestionsDelegate`](../AppKit/nstextfield/suggestionsdelegate.md).
 
-#### June 2023
+## June 2023
 
-##### Views and controls
+### Views and controls
 
 - Use the new `userCanChangeVisibilityOf` delegate method on `NSTableView` to toggle the visibility of table columns.
 - Use a new `NSProgressIndicator` property to observe progress of an ongoing task.
@@ -89,12 +89,12 @@ Browse notable changes in [AppKit](../AppKit/AppKit.md).
 - New improvements to `NSPopover` enable you to anchor popovers from toolbar items, as well as support full-size popovers.
 - Explore new UI elements in `NSMenu`. Group information more easily in section headers, lay out menu items in horizontal palettes, as well as display badge counts on menu items.
 
-##### Cooperative app activation
+### Cooperative app activation
 
 - App activation is now driven by the user, preventing unexpected switches between apps.
 - Take advantage of Cooperative Activation, where your apps can yield and accept activation from other apps on the system without interrupting the user’s workflows. For more information, see the `activate()` function on `NSApp` and `NSRunningApplication`.
 
-##### Graphics
+### Graphics
 
 - `CGPath` and `NSBezierPath` are now interoperable. You can create a `CGPath` from a `NSBezierPath` and vice versa.
 - Leverage `CADisplayLink` to synchronize your app’s ability to draw to the refresh of the display.
@@ -103,13 +103,13 @@ Browse notable changes in [AppKit](../AppKit/AppKit.md).
 - Animate symbol images with the new `addSymbolEffect` function on ` NSImageView`. Symbol effects include: bounce, pulse, variable color, scale, appear, disappear, and replace.
 - Display and manipulate high dynamic range (HDR) images.
 
-##### Swift and SwiftUI
+### Swift and SwiftUI
 
 - AppKit more fully integrates with Swift and SwiftUI with Sendable (`NSColor`, `NSColorSpace`, `NSGradient`, `NSShadow`, `NSTouch`) and Transferable (`NSImage`, `NSColor`, `NSSound`) types.
 - Preview your views and view controllers alongside your code using the new `#Preview` Swift macro. Incrementally adopt SwiftUI into your AppKit life cycle by leveraging modifiers like toolbar and navigation title on `NSWindows`.
 - Simplify your code with new attributes, `@ViewLoading` and `@WindowLoading`, to help with view and window loading.
 
-##### Text improvements
+### Text improvements
 
 - Help people enter text more effectively with the `NSTextInsertionIndicator` that adapts to the current accent color of the app. Cursor accessories also help users visualize where and how to enter text.
 - Simplify `NSTextField` entry by leveraging the new `.contentType` AutoFill feature, making it more convenient to enter types such as contact information, birthdays, names, credit cards, and street addresses.

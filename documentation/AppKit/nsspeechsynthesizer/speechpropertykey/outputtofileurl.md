@@ -19,7 +19,7 @@ static let outputToFileURL: NSSpeechSynthesizer.SpeechPropertyKey
 extern NSSpeechPropertyKey const NSSpeechOutputToFileURLProperty;
 ```
 
-#### Discussion
+## Discussion
 
 An [`NSURL`](../../../Foundation/nsurl.md) object. To write the speech output to a file, use the file’s [`NSURL`](../../../Foundation/nsurl.md); to generate the sound through the computer’s speakers, use `nil`. This property works with [`setObject(_:forProperty:)`](../setobject%28_,forproperty%29.md).
 

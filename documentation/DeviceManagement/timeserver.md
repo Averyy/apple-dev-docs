@@ -15,13 +15,13 @@ The payload that configures the time server.
 object TimeServer
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.MCX` as the payload type.
 
 If multiple profiles with this payload are sent, the system sets the device’s time server to the value in the last payload installed. Removing the payload won’t change the settings back to the prior settings.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -33,7 +33,7 @@ If multiple profiles with this payload are sent, the system sets the device’s 
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

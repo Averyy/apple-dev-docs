@@ -20,7 +20,7 @@ weak var delegate: (any BEDragInteractionDelegate)? { get }
 @property (nonatomic, weak, readonly, nullable) id<BEDragInteractionDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate conforms to [`BEDragInteractionDelegate`](../bedraginteractiondelegate.md).
 

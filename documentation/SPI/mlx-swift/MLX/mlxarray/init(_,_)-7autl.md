@@ -17,14 +17,14 @@ Initializer allowing creation of `MLXArray` from an array of `HasDType` values w
 convenience init<T>(_ value: [T], _ shape: (some Collection<Int>)? = [Int]?.none) where T : HasDType
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 let linear = MLXArray([0, 1, 2, 3])
 let twoByTwo = MLXArray([0, 1, 2, 3], [2, 2])
 ```
 
-##### See Also
+### See Also
 
 - [Initialization](../initialization.md)
 

@@ -19,7 +19,7 @@ func CSBackupIsItemExcluded(_ item: CFURL!, _ excludeByPath: UnsafeMutablePointe
 Boolean CSBackupIsItemExcluded(CFURLRef item, Boolean *excludeByPath);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the item or any of its ancestors are currently excluded from backup, `false` otherwise.
 

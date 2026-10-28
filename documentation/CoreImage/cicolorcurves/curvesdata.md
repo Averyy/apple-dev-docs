@@ -25,7 +25,7 @@ var curvesData: Data { get set }
 @property (nonatomic, retain) NSData * curvesData;
 ```
 
-#### Discussion
+## Discussion
 
 Create the curves data as an [`NSData`](../../Foundation/nsdata.md) object containing a sequence of single-precision RGB values. These values represent a lookup table that’s applied to the input image.
 

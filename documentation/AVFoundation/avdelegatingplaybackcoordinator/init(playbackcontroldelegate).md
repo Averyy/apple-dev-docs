@@ -24,7 +24,7 @@ init(playbackControlDelegate: any AVPlaybackCoordinatorPlaybackControlDelegate)
 - (instancetype) initWithPlaybackControlDelegate:(id<AVPlaybackCoordinatorPlaybackControlDelegate>) playbackControlDelegate;
 ```
 
-#### Discussion
+## Discussion
 
 If your app doesn’t use [`AVPlayer`](../avplayer.md) for playback, create an instance of this class to coordinate playback of your customer player.
 

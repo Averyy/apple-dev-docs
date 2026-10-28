@@ -21,7 +21,7 @@ Returns `true` if `lhs.degrees` is less than `rhs.degrees`.
 static func < (lhs: Angle2D, rhs: Angle2D) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 Note that this operator compares the raw value of each angle and doesn’t normalize the values. For example, 360° does **not** equal 0°.
 

@@ -20,7 +20,7 @@ The string encoding.
 extern NSAttributedStringDocumentReadingOptionKey const NSCharacterEncodingDocumentOption;
 ```
 
-#### Overview
+## Overview
 
 For plain text documents; [`NSNumber`](../Foundation/nsnumber.md) containing the unsigned int [`NSStringEncoding`](../Foundation/nsstringencoding.md) to override any encoding specified in an HTML document. The previous string constant was `@"CharacterEncoding"`.
 

@@ -17,7 +17,7 @@ A protocol that defines an identity document registration.
 protocol IdentityDocumentRegistration : Sendable
 ```
 
-#### Discussion
+## Discussion
 
 Each kind of document format needs its own concrete type that conforms to this protocol.
 

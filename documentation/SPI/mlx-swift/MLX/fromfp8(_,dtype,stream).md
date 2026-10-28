@@ -17,11 +17,11 @@ Convert an E4M3 FP8 array to the given floating-point [`DType`](./dtype.md).
 func fromFP8(_ array: MLXArray, dtype: DType = .bfloat16, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 The input array is interpreted as raw FP8 bytes.
 
-##### See Also
+### See Also
 
 - [`toFP8(_:stream:)`](./tofp8%28_,stream%29.md)
 - [Conversion](./conversion.md)

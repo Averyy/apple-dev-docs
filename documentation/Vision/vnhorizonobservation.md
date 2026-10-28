@@ -24,7 +24,7 @@ class VNHorizonObservation
 @interface VNHorizonObservation : VNObservation
 ```
 
-#### Overview
+## Overview
 
 Instances of this class result from invoking a [`VNDetectHorizonRequest`](./vndetecthorizonrequest.md), and report the [`angle`](./vnhorizonobservation/angle.md) and [`transform`](./vnhorizonobservation/transform.md) of the horizon in an image.
 

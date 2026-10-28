@@ -25,7 +25,7 @@ static let boundingBoxOnly: SCNHitTestOption
 extern SCNHitTestOption const SCNHitTestBoundingBoxOnlyKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSNumber`](../../Foundation/nsnumber.md) object containing a Boolean value. The default value is [`false`](../../Swift/false.md), specifying that hit-testing searches should test against node geometry. Specifying [`true`](../../Swift/true.md) for this option increases search performance at the expense of geometric accuracy.
 

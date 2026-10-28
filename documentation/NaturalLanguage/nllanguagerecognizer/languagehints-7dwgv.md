@@ -22,7 +22,7 @@ A dictionary that maps languages to their probabilities in the language identifi
 var languageHints: [NLLanguage : Double] { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This is a dictionary mapping languages to their probabilities and used by [`processString(_:)`](./processstring%28_%29.md).
 

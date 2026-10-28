@@ -25,11 +25,11 @@ func vImageOverwriteChannels_ARGBFFFF(_ newSrc: UnsafePointer<vImage_Buffer>, _ 
 vImage_Error vImageOverwriteChannels_ARGBFFFF(const vImage_Buffer *newSrc, const vImage_Buffer *origSrc, const vImage_Buffer *dest, uint8_t copyMask, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 The following code overwrites channel `0` of the source pixels in `pixelBuffer` with the corresponding source pixels from `newSource`:
 

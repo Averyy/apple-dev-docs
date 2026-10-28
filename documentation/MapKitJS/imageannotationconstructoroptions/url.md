@@ -17,7 +17,7 @@ An object that contains URLs for the image assets in multiple resolutions.
 url?: ImageDelegate | ImageHashObject | ImageSource | Promise<ImageSource>;
 ```
 
-#### Discussion
+## Discussion
 
 This property is an object literal containing absolute or relative URLs to standard, 2×, and 3× Retina assets. MapKit JS requires at least one image URL.
 

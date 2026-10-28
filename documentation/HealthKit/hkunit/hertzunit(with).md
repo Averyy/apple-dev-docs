@@ -24,7 +24,7 @@ class func hertzUnit(with prefix: HKMetricPrefix) -> Self
 + (instancetype) hertzUnitWithMetricPrefix:(HKMetricPrefix) prefix;
 ```
 
-#### Discussion
+## Discussion
 
 Hertz represent cycles per second.
 

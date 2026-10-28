@@ -17,13 +17,13 @@ The Adam optimizer [1].
 class Adam
 ```
 
-#### Overview
+## Overview
 
 By default our Adam implementation omits bias correction in the first and second moment estimates. Set `biasCorrection` to `true` to apply it. In detail,
 
 [1]: Kingma, D.P. and Ba, J., 2015. Adam: A method for stochastic optimization. ICLR 2015.
 
-##### See Also
+### See Also
 
 - [MLXOptimizers](./MLXOptimizers.md)
 

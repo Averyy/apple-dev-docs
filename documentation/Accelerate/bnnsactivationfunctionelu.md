@@ -25,7 +25,7 @@ var BNNSActivationFunctionELU: BNNSActivationFunction { get }
 BNNSActivationFunctionELU
 ```
 
-#### Discussion
+## Discussion
 
 This constant defines an activation function that returns values using the following operation:
 

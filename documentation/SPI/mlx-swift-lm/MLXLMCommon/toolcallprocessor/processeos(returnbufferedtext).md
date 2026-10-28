@@ -18,11 +18,11 @@ Process end-of-sequence and optionally return residual buffered text.
 func processEOS(returnBufferedText: Bool = true) -> String?
 ```
 
-#### Return Value
+## Return Value
 
 Residual buffered text that should be emitted as regular output, or `nil` when the buffer was fully parsed as tool call content (or when `returnBufferedText` is `false`).
 
-#### Discussion
+## Discussion
 
 Use this overload when callers need to preserve non-tool trailing content that remained buffered until generation end.
 

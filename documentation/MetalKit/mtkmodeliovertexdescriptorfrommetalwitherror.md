@@ -20,11 +20,11 @@ Returns a partially converted Model I/O vertex descriptor, reporting any error t
 extern MDLVertexDescriptor *MTKModelIOVertexDescriptorFromMetalWithError(MTLVertexDescriptor *metalDescriptor, NSError **error);
 ```
 
-#### Return Value
+## Return Value
 
 A Model I/O vertex descriptor object.
 
-#### Discussion
+## Discussion
 
 This function can only set vertex format, offset, buffer index, and stride information in the resulting MDLMutableVertexDescriptor object. It does not add any semantic information such as attribute names. Names must be set in the returned MDLMutableVertexDescriptor object before it can be applied to a Model I/O mesh.
 

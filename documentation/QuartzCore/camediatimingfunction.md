@@ -24,7 +24,7 @@ class CAMediaTimingFunction
 @interface CAMediaTimingFunction : NSObject
 ```
 
-#### Overview
+## Overview
 
 `CAMediaTimingFunction` represents one segment of a function that defines the pacing of an animation as a timing curve. The function maps an input time normalized to the range `[0,1]` to an output time also in the range `[0,1]`.
 

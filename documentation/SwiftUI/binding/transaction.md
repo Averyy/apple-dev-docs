@@ -21,7 +21,7 @@ The binding’s transaction.
 var transaction: Transaction
 ```
 
-#### Discussion
+## Discussion
 
 The transaction captures the information needed to update the view when the binding value changes.
 

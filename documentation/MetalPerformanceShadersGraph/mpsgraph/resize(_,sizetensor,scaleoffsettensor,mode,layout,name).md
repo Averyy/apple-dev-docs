@@ -24,11 +24,11 @@ func resize(_ imagesTensor: MPSGraphTensor, sizeTensor size: MPSGraphTensor, sca
 - (MPSGraphTensor *) resizeTensor:(MPSGraphTensor *) imagesTensor sizeTensor:(MPSGraphTensor *) size scaleOffsetTensor:(MPSGraphTensor *) scaleOffset mode:(MPSGraphResizeMode) mode layout:(MPSGraphTensorNamedDataLayout) layout name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object
 
-#### Discussion
+## Discussion
 
 ```md
 dst_indices = (src_indicesscale) + offset 

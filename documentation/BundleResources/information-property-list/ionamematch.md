@@ -14,7 +14,7 @@ One or more strings that contain the names of possible provider objects in the s
 - **Name**: `IONameMatch`
 - **Type**: array of string 
 
-#### Discussion
+## Discussion
 
 The value of this key is a string or an array of strings. The system begins the matching process with a provider object, and looks for additional drivers or nubs that support that provider object. When this key is present, the system compares its values to the provider object’s name. (It also compares the strings to the provider’s `compatible` and `device_type` properties.) If it doesn’t find any matches, the system doesn’t match the driver to the provider object.
 

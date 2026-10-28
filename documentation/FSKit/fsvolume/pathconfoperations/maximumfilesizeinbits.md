@@ -19,7 +19,7 @@ optional var maximumFileSizeInBits: Int { get }
 @property (readonly) NSInteger maximumFileSizeInBits;
 ```
 
-#### Discussion
+## Discussion
 
 The maximum file size is `2^(maximumFileSizeInBits - 1)`.
 

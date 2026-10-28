@@ -23,11 +23,11 @@ func sec_identity_copy_certificates_ref(_ identity: sec_identity_t) -> Unmanaged
 CFArrayRefsec_identity_copy_certificates_ref(sec_identity_t identity);
 ```
 
-#### Return Value
+## Return Value
 
 The underlying `CFArrayRef` container with `SecCertificateRef` instances.
 
-#### Discussion
+## Discussion
 
 Copy a retained reference to the underlying `CFArrayRef` container of `SecCertificateRef` types.
 

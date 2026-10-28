@@ -19,7 +19,7 @@ class NSOutlineView
 @interface NSOutlineView : NSTableView
 ```
 
-#### Overview
+## Overview
 
 Like a table view, an outline view does not store its own data, instead it retrieves data values as needed from a data source to which it has a weak reference (see [Delegates and Data Sources](https://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/DelegatesandDataSources/DelegatesandDataSources.html#//apple_ref/doc/uid/TP40010810-CH11)). See [`NSOutlineViewDataSource`](./nsoutlineviewdatasource.md), which declares the methods that an `NSOutlineView` object uses to access the contents of its data source object.
 
@@ -34,7 +34,7 @@ An outline view has the following features:
 
 For more information about using NSOutlineView in your app, see [Navigating Hierarchical Data Using Outline and Split Views](./navigating-hierarchical-data-using-outline-and-split-views.md).
 
-##### Subclassing
+### Subclassing
 
 Subclassing `NSOutlineView` is not recommended. Customization can be accomplished in your data source class implementation (conforming to [`NSOutlineViewDataSource`](./nsoutlineviewdatasource.md)) or your delegate class implementation (conforming to [`NSOutlineViewDelegate`](./nsoutlineviewdelegate.md)).
 

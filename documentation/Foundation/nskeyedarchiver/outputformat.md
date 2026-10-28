@@ -25,7 +25,7 @@ var outputFormat: PropertyListSerialization.PropertyListFormat { get set }
 @property NSPropertyListFormat outputFormat;
 ```
 
-#### Discussion
+## Discussion
 
 The available formats are [`PropertyListSerialization.PropertyListFormat.xml`](../propertylistserialization/propertylistformat/xml.md) and [`PropertyListSerialization.PropertyListFormat.binary`](../propertylistserialization/propertylistformat/binary.md).
 

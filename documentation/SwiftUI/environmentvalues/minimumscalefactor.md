@@ -21,7 +21,7 @@ The minimum permissible proportion to shrink the font size to fit the text into 
 var minimumScaleFactor: CGFloat { get set }
 ```
 
-#### Discussion
+## Discussion
 
 In the example below, a label with a `minimumScaleFactor` of `0.5` draws its text in a font size as small as half of the actual font if needed to fit into the space next to the text input field:
 

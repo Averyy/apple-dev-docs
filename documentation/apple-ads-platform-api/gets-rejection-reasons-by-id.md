@@ -9,13 +9,13 @@ Retrieve the details of an ad creative rejection reason by ID.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint retrieves the details of a specific ad creative rejection reason by its identifier, including the reason code and description. See [`CreativeRejectionReason`](./creativerejectionreason.md) for the full field reference, including `creativeId` and the `reasonLevel` values.
 
-#### Payload Examples
+## Payload Examples
 
-##### Request
+### Request
 
 Retrieves the details of a specific ad creative rejection reason by its identifier, including the reason code and description.
 
@@ -23,7 +23,7 @@ Retrieves the details of a specific ad creative rejection reason by its identifi
 GET /v1/rejection-reasons/apps/112233445
 ```
 
-##### Response
+### Response
 
 ```json
 {

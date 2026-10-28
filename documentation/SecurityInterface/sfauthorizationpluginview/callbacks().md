@@ -19,11 +19,11 @@ func callbacks() -> UnsafePointer<AuthorizationCallbacks>!
 - (const AuthorizationCallbacks *) callbacks;
 ```
 
-#### Return Value
+## Return Value
 
 An object of type [`AuthorizationCallbacks`](../../Security/authorizationcallbacks.md).
 
-#### Discussion
+## Discussion
 
 Use the [`AuthorizationCallbacks`](../../Security/authorizationcallbacks.md) structure to get the function pointers to functions such as `SetResult` and `SetContextValue`.
 

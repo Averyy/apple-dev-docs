@@ -23,7 +23,7 @@ func prepareCredentialList(for serviceIdentifiers: [ASCredentialServiceIdentifie
 - (void) prepareCredentialListForServiceIdentifiers:(NSArray<ASCredentialServiceIdentifier *> *) serviceIdentifiers requestParameters:(ASPasskeyCredentialRequestParameters *) requestParameters;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method to tell your extension’s view controller to prepare to present a list of credentials, when there’s an active passkey request in the app or website. After calling this method, the system presents the view controller to the user.
 

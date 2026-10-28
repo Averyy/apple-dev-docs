@@ -19,7 +19,7 @@ enum PointingDeviceType
 enum NSPointingDeviceType : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 The [`pointingDeviceType`](./pointingdevicetype-swift.property.md) property returns one of these constants.
 

@@ -21,7 +21,7 @@ func showsCompositionNames() -> Bool
 - (BOOL) showsCompositionNames;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the display of names is enabled; otherwise [`false`](../../Swift/false.md).
 

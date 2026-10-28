@@ -15,7 +15,7 @@ Lock a spin lock.
 void IOSimpleLockLock(IOSimpleLock *lock);
 ```
 
-#### Discussion
+## Discussion
 
 Lock the spin lock. If the lock is held, spin waiting for its unlock. Spin locks disable preemption, cannot be held across any blocking operation, and should be held for very short periods. When used to synchronize between interrupt context and thread context they should be locked with interrupts disabled - IOSimpleLockLockDisableInterrupt() will do both. Locking the lock recursively from one thread will result in deadlock.
 

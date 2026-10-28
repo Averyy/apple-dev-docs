@@ -21,11 +21,11 @@ Modifies the date format style to use the specified second format style.
 func second(_ format: Date.FormatStyle.Symbol.Second = .defaultDigits) -> Date.FormatStyle
 ```
 
-#### Return Value
+## Return Value
 
 A date format style modified to include the specified second style.
 
-#### Discussion
+## Discussion
 
 Values of [`Date.FormatStyle.Symbol.Second`](./symbol/second.md) are [`defaultDigits`](./symbol/second/defaultdigits.md) and [`twoDigits`](./symbol/second/twodigits.md).
 

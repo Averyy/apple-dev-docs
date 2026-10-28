@@ -14,7 +14,7 @@ A surface shader that defines properties for a RealityKit Unlit material.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 | Input | Type |
 | --- | --- |
@@ -28,7 +28,7 @@ A surface shader that defines properties for a RealityKit Unlit material.
 | --- | --- |
 | `Out` | Token |
 
-#### Parameter descriptions
+## Parameter descriptions
 
 - **`Color`**: The base color of the surface.
 - **`Opacity`**: The level of opaqueness of the surface. If the value of this parameter is `1.0`, the surface is fully opaque. If the value is less than `1.0`, the surface appears translucent. If the value is `0`, the surface is completely transparent. The default value is `1.0`.
@@ -36,7 +36,7 @@ A surface shader that defines properties for a RealityKit Unlit material.
 - **`Apply Post Process Tone Map`**: A Boolean value that tells the node whether to apply the post process tone map.
 - **`Has Premultiplied Alpha`**: A Boolean value that tells the node if it has a premultiplied alpha.
 
-#### Discussion
+## Discussion
 
 The `Unlit Surface` node produces a custom surface based on its input parameters. Connect the output of the `Unlit Surface` node connect to the `Custom Surface` output of your material.
 

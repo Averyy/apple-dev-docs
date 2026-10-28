@@ -5,7 +5,7 @@
 
 Review download performance when using the AVAssetDownloadTask APIs in your apps.
 
-#### Overview
+## Overview
 
 You can use the [AVAssetDownloadTask](../AVFoundation/avassetdownloadtask.md) API and others in [AVFoundation](https://developer.apple.com/av-foundation) to download the [HTTP Live Streaming](https://developer.apple.com/streaming) (HLS) content to disk for offline playback. The data in this report contains aggregate information about download performance.
 
@@ -13,7 +13,7 @@ You can use the [AVAssetDownloadTask](../AVFoundation/avassetdownloadtask.md) AP
 - Data Source: Data in this report only comes from devices that opt in to share data with Apple and developers.
 - Historical Data: One-time snapshots for this report are available beginning in February 2024, if there are events for the report.
 
-#### Report Fields
+## Report Fields
 
 | Report Field | Description | Data Type |
 | --- | --- | --- |

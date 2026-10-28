@@ -15,7 +15,7 @@ Returns a string representation of the notification.
 String toString();
 ```
 
-#### Return Value
+## Return Value
 
 A string representation of the notification.
 

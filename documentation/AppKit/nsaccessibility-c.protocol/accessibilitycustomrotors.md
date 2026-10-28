@@ -15,7 +15,7 @@ The custom rotors of the current accessibility element.
 @property (copy) NSArray<NSAccessibilityCustomRotor *> * accessibilityCustomRotors;
 ```
 
-#### Discussion
+## Discussion
 
 Custom rotors are lists of items of a specific category. For example, a “headings” rotor returns a list of headings a given document.
 

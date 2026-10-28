@@ -17,7 +17,7 @@ Describes the behaviour of the second button.
 enum SecondaryButtonBehavior
 ```
 
-#### Overview
+## Overview
 
 You define your secondary action using `SecondaryButtonBehavior` parameter when creating alerting state of your alarm attributes. The secondary button is optional, you can choose to exclude it. The secondary button displays if you use `custom`.
 

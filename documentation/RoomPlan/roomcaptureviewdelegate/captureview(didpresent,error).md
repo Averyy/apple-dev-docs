@@ -18,7 +18,7 @@ Provides the delegate with the processed scan results as the view presents them.
 func captureView(didPresent processedResult: CapturedRoom, error: (any Error)?)
 ```
 
-#### Discussion
+## Discussion
 
 The framework invokes this callback when your app returns `true` for [`captureView(shouldPresent:error:)`](./captureview%28shouldpresent,error%29.md).
 

@@ -19,7 +19,7 @@ func SCNetworkServiceCopyProtocol(_ service: SCNetworkService, _ protocolType: C
 SCNetworkProtocolRefSCNetworkServiceCopyProtocol(SCNetworkServiceRef service, CFStringRef protocolType);
 ```
 
-#### Return Value
+## Return Value
 
 The network protocol associated with the service, or `NULL` if this protocol has not been added or if an error occurred. You must release the returned value.
 

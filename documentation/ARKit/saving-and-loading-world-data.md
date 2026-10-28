@@ -11,7 +11,7 @@ Serialize a world-tracking session to resume it later on.
 - iPadOS 12.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 This sample app demonstrates a simple AR experience for iOS 12 devices. Before exploring the code, try building and running the app to familiarize yourself with the user experience it demonstrates:
 
@@ -22,17 +22,17 @@ This sample app demonstrates a simple AR experience for iOS 12 devices. Before e
 
 Follow the steps below to see how this app uses the [`ARWorldMap`](./arworldmap.md) class to save and restore ARKit’s spatial mapping state.
 
-#### Getting started
+## Getting started
 
 Requires Xcode 10.0, iOS 12.0 and an iOS device with A9 or later processor.
 
-#### Run the AR session and place AR content
+## Run the AR session and place AR content
 
 This app extends the basic workflow for building an ARKit app. (For details, see [Tracking and visualizing planes](./tracking-and-visualizing-planes.md).) It defines an [`ARWorldTrackingConfiguration`](./arworldtrackingconfiguration.md) with plane detection enabled, then runs that configuration in the [`ARSession`](./arsession.md) attached to the [`ARSCNView`](./arscnview.md) that displays the AR experience.
 
 When [`UITapGestureRecognizer`](../UIKit/uitapgesturerecognizer.md) detects a tap on the screen, the `handleSceneTap` method uses ARKit hit-testing to find a 3D point on a real-world surface, then places an [`ARAnchor`](./aranchor.md) marking that position. When ARKit calls the delegate method [`renderer(_:didAdd:for:)`](./arscnviewdelegate/renderer%28_,didadd,for%29.md), the app loads a 3D model for [`ARSCNView`](./arscnview.md) to display at the anchor’s position.
 
-#### Capture and save the AR world map
+## Capture and save the AR world map
 
 An [`ARWorldMap`](./arworldmap.md) object contains a snapshot of all the spatial mapping information that ARKit uses to locate the user’s device in real-world space. To save a map that can reliably be used for restoring your AR session later, you’ll first need to find a good time to capture the map.
 
@@ -80,7 +80,7 @@ sceneView.session.getCurrentWorldMap { worldMap, error in
 
 To help a user resume the AR experience from this map later, the app also captures a snapshot of the camera view with the example `SnapshotAnchor` class and stores it in the world map.
 
-#### Load and relocalize to a saved map
+## Load and relocalize to a saved map
 
 When the app launches, it checks local storage for a world map file it may have saved in an earlier session:
 
@@ -104,7 +104,7 @@ sceneView.session.run(configuration, options: [.resetTracking, .removeExistingAn
 
 ARKit then attempts to *relocalize* to the new world map—that is, to reconcile the received spatial-mapping information with what it senses of the local environment. This process is more likely to succeed if the user moves to areas of the local environment that they visited during the previous session. To help the user successfully resume the saved experience, this app uses the example `SnapshotAnchor` class to save a camera image in the world map, then displays that image while ARKit is relocalizing.
 
-#### Restore AR content after relocalization
+## Restore AR content after relocalization
 
 Saving a world map also archives all anchors currently associated with the AR session. After you successfully run a session from a saved world map, the session contains all anchors previously saved in the map. You can use saved anchors to restore virtual content from a previous session.
 

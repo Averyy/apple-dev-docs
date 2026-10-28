@@ -24,7 +24,7 @@ func avgPooling2D(withSourceTensor source: MPSGraphTensor, descriptor: MPSGraphP
 - (MPSGraphTensor *) avgPooling2DWithSourceTensor:(MPSGraphTensor *) source descriptor:(MPSGraphPooling2DOpDescriptor *) descriptor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object
 

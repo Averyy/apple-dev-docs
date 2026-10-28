@@ -20,11 +20,11 @@ func vmnet_network_configuration_set_ipv4_subnet(_ config: vmnet_network_configu
 vmnet_return_t vmnet_network_configuration_set_ipv4_subnet(vmnet_network_configuration_ref config, const struct in_addr *subnet_addr, const struct in_addr *subnet_mask);
 ```
 
-#### Return Value
+## Return Value
 
 VMNET_SUCCESS on success, error otherwise.
 
-#### Discussion
+## Discussion
 
 > **Note**: The framework reserves the first, second, and last addresses of the range. The second address is reserved for the host, the first and last are not assignable to any node.
 

@@ -20,7 +20,7 @@ func raycastQuery(from point: CGPoint, allowing target: ARRaycastQuery.Target, a
 - (ARRaycastQuery *) raycastQueryFromPoint:(CGPoint) point allowingTarget:(ARRaycastTarget) target alignment:(ARRaycastTargetAlignment) alignment;
 ```
 
-#### Discussion
+## Discussion
 
 When you call this function, ARKit creates a ray that extends in the positive z-direction from the argument screen space point, to determine if any of the argument targets exist in the physical environment anywhere along the ray. If so, ARKit returns a 3D position where the ray intersects the target.
 

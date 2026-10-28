@@ -24,7 +24,7 @@ func CATransform3DGetAffineTransform(_ t: CATransform3D) -> CGAffineTransform
 extern CGAffineTransform CATransform3DGetAffineTransform(CATransform3D t);
 ```
 
-#### Discussion
+## Discussion
 
 If `t` can not be exactly represented as an affine transform, the return value is undefined.
 

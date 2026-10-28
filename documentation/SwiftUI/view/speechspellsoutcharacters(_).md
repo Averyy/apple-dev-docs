@@ -22,7 +22,7 @@ nonisolated
 func speechSpellsOutCharacters(_ value: Bool = true) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier when you want VoiceOver to speak text as individual letters, character by character. This is important for text that is not meant to be spoken together, like:
 

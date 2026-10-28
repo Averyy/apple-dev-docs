@@ -19,11 +19,11 @@ func vAEBuildParameters(_ event: UnsafeMutablePointer<AppleEvent>!, _ error: Uns
 OSStatus vAEBuildParameters(AppleEvent *event, AEBuildError *error, const char *format, va_list args);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 Passing an argument list to `vAEBuildParameters` corresponds to passing a series of individual parameters to the [`AEBuildParameters`](./api-1573755-aebuildparameters.md) function.
 

@@ -20,13 +20,13 @@ An immutable representation of a behavior tree.
 class BehaviorTreeResource
 ```
 
-#### Overview
+## Overview
 
 A `BehaviorTreeResource` can be produced by compiling a tree definition. Once compiled, assign it to an entity via [`BehaviorTreeComponent`](./behaviortreecomponent.md) to begin driving behaviors:
 
 let treeResource1 = try BehaviorTreeResource(definition: Data(behaviorTreeDefinition1.utf8)) let treeResource2 = try BehaviorTreeResource(definition: Data(behaviorTreeDefinition2.utf8)) let treeResources: [String : BehaviorTreeResource] = [“tree1” : treeResource1, “tree2” : treeResource2] entity.components.set(BehaviorTreeComponent(behaviorTree: resource, availableBehaviorTrees: treeResources))
 
-#### Parameters
+## Parameters
 
 The tree exposes a set of named parameters that control its behavior at runtime, such as movement speed. Read the available parameters via [`parameterNames`](./behaviortreeresource/parameternames.md). To set values at runtime, use the entity’s parameter binding:
 

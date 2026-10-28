@@ -17,7 +17,7 @@ Resolve a model identifier, e.g. “mlx-community/Llama-3.2-3B-Instruct-4bit”,
 func configuration(id: String) -> ModelConfiguration
 ```
 
-#### Discussion
+## Discussion
 
 This will either create a new (mostly unconfigured) [`ModelConfiguration`](../modelconfiguration.md) or return a registered instance that matches the id.
 

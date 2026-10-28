@@ -24,7 +24,7 @@ func setHasContent(_ flag: Bool, forWidgetWithBundleIdentifier bundleID: String)
 - (void) setHasContent:(BOOL) flag forWidgetWithBundleIdentifier:(NSString *) bundleID;
 ```
 
-#### Discussion
+## Discussion
 
 Both a widget and its containing app can use this method to specify whether the widget has content to display. The value of `flag` determines whether a widget should be visible in the Today view and whether the widget’s most recent snapshot is still valid.
 

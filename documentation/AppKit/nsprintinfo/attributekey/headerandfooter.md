@@ -19,7 +19,7 @@ static let headerAndFooter: NSPrintInfo.AttributeKey
 extern NSPrintInfoAttributeKey const NSPrintHeaderAndFooter;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../../Swift/true.md), a standard header and footer are added outside the margins of each page.
 

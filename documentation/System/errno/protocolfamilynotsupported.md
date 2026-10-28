@@ -25,7 +25,7 @@ static var protocolFamilyNotSupported: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 The protocol family hasn’t been configured into the system or no implementation for it exists.
 

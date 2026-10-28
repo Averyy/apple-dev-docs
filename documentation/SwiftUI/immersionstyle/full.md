@@ -19,7 +19,7 @@ static var full: FullImmersionStyle { get }
 
 Available when `Self` is `FullImmersionStyle`.
 
-#### Discussion
+## Discussion
 
 When this immersion style is selected, the immersion amount reported by the closure of [`onImmersionChange(initial:_:)`](../view/onimmersionchange%28initial,_%29.md) is `1.0`.
 

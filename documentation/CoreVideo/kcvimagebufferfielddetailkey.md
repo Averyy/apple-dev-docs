@@ -25,7 +25,7 @@ let kCVImageBufferFieldDetailKey: CFString
 extern CFStringRef const kCVImageBufferFieldDetailKey;
 ```
 
-#### Discussion
+## Discussion
 
 The field detail value is of type [`CFString`](../CoreFoundation/cfstring.md). See [Image Buffer Field Detail Constants](./image-buffer-field-detail-constants.md) for more information.
 

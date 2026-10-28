@@ -19,7 +19,7 @@ func setCoordinatedAnimations(_ coordinatedAnimations: [any WKInterfaceObject & 
 - (void) setCoordinatedAnimations:(NSArray<WKInterfaceObject<WKImageAnimatable> *> *) coordinatedAnimations;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to link other animatable images to the picker. When the user turns the crown, the picker updates the currently displayed image in each of the linked interface objects.
 

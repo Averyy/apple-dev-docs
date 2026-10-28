@@ -15,7 +15,7 @@ Sets the available sample rates for the clock device.
 kern_return_t SetAvailableSampleRates(const double *in_sample_rates, size_t in_num_rates);
 ```
 
-#### Discussion
+## Discussion
 
 Changing the available sample rates will send a notification to the host to update the object state if successful. The object’s work queue synchronizes access to the sample rates.
 

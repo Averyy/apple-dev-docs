@@ -16,7 +16,7 @@
 typedef struct SCSICmd_INQUIRY_StandardData { ... } SCSICmd_INQUIRY_StandardData;
 ```
 
-#### Overview
+## Overview
 
 This structure defines the format of the required standard data that is returned for the INQUIRY command.  This is the data that is required to be returned from all devices.
 

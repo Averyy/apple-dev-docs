@@ -14,7 +14,7 @@ A Boolean that indicates whether the app supports additional header fields in re
 - **Name**: `AdditionalHeaderFieldsAreSupported`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 Set the corresponding value to `YES` to indicate that your browser uses the [`additionalHeaderFields`](../../../AuthenticationServices/aswebauthenticationsessionrequest/additionalheaderfields.md) property of an [`ASWebAuthenticationSessionRequest`](../../../AuthenticationServices/aswebauthenticationsessionrequest.md).
 

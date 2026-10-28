@@ -26,7 +26,7 @@ func element(matching predicate: NSPredicate) -> XCUIElement
 - (XCUIElement *) elementMatchingPredicate:(NSPredicate *) predicate;
 ```
 
-#### Discussion
+## Discussion
 
 The predicate evaluates against objects that conform to the [`XCUIElementAttributes`](../xcuielementattributes.md) protocol.
 

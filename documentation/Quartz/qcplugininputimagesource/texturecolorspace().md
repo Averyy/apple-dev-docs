@@ -22,7 +22,7 @@ func textureColorSpace() -> Unmanaged<CGColorSpace>!
 - (CGColorSpaceRef) textureColorSpace;
 ```
 
-#### Return Value
+## Return Value
 
 The color space of the texture.
 

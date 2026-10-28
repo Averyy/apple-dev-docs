@@ -24,11 +24,11 @@ func MusicEventIteratorPreviousEvent(_ inIterator: MusicEventIterator) -> OSStat
 extern OSStatus MusicEventIteratorPreviousEvent(MusicEventIterator inIterator);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 Use this function to decrement a music event iterator, moving it backward through a music track’s events.
 

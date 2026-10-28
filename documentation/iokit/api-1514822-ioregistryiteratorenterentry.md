@@ -23,11 +23,11 @@ func IORegistryIteratorEnterEntry(_ iterator: io_iterator_t) -> kern_return_t
 kern_return_t IORegistryIteratorEnterEntry(io_iterator_t iterator);
 ```
 
-#### Return Value
+## Return Value
 
 A kern_return_t error code.
 
-#### Discussion
+## Discussion
 
 This method makes the current entry, ie. the last entry returned by IOIteratorNext, the root in a new level of recursion.
 

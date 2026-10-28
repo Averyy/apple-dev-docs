@@ -23,7 +23,7 @@ var imageLayoutGuide: UILayoutGuide? { get }
 @property (nonatomic, strong, readonly, nullable) UILayoutGuide * imageLayoutGuide;
 ```
 
-#### Discussion
+## Discussion
 
 If the configuration doesn’t specify an image, the value of this property is `nil`.
 

@@ -5,7 +5,7 @@
 
 Provide results for audio playback requests that people make by using Siri.
 
-#### Overview
+## Overview
 
 When a person uses Siri to search your app’s audio catalog, the system needs to query your app for matching content, present results, and allow the person to play content. To integrate your app with Apple Intelligence and Siri and provide this functionality, use the [App Intents](../AppIntents/AppIntents.md) framework. The Media Intents framework provides the [`AudioSearch`](./audiosearch.md) type that you use when searching for matching audio content in your media catalog.
 
@@ -15,7 +15,7 @@ To respond to audio playback requests people make with Siri:
 2. Implement an [`IntentValueQuery`](../AppIntents/intentvaluequery.md) that finds matching results using the information that [`AudioSearch`](./audiosearch.md) provides, and return app entities that represent your playable content.
 3. Create an app intent that conforms to the [`playAudio`](../AppIntents/appschema/audiointent/playaudio.md) schema and enable Siri to play the audio content.
 
-#### Create app entities
+## Create app entities
 
 To return search results to the system, provide audio content in a format that Apple Intelligence and Siri understand by using the App Intents framework. To provide this format, describe audio content by creating an [`AppEntity`](../AppIntents/appentity.md) that conforms to the matching app entity schema. The [Audio](../AppIntents/app-schema-domain-audio.md) domain includes entity schemas that represent audio content. For example, if you develop a music player with artists, albums, and songs, create entities that conform to the [`artist`](../AppIntents/appschema/audioentity/artist.md), [`album`](../AppIntents/appschema/audioentity/album.md), and [`song`](../AppIntents/appschema/audioentity/song.md) schemas.
 
@@ -41,7 +41,7 @@ struct SongEntity {
 
 To learn more about App Intents and app intent schemas, see [Apple Intelligence and Siri AI](../AppIntents/apple-intelligence-and-siri-ai.md).
 
-#### Implement the intent value query
+## Implement the intent value query
 
 When you create an app entity, you include a default query implementation. In the example above, the `SongEntityQuery` structure conforms to [`EntityQuery`](../AppIntents/entityquery.md), the default protocol you use to provide app entities to the system. To let Siri respond to audio-search and playback requests, extend your entity query to conform to the [`IntentValueQuery`](../AppIntents/intentvaluequery.md) protocol:
 
@@ -59,7 +59,7 @@ extension SongEntityQuery: IntentValueQuery {
 }
 ```
 
-#### Find matching audio content
+## Find matching audio content
 
 People ask Siri to find and play audio content in a variety of ways, from specific requests such as “Siri, play Example song by Example artist” to open-ended asks like “Siri, play energetic music”. As a result, your app’s search logic is particularly important. Use the [`AudioSearch`](./audiosearch.md) structure in the [`values(for:)`](../AppIntents/intentvaluequery/values%28for%29.md) callback to find matching content and return it as app entities.
 
@@ -91,7 +91,7 @@ The [`AudioSearch`](./audiosearch.md) structure provides you with information ba
 - **[`AudioSearch.Criteria.url(_:)`](./audiosearch/criteria-swift.enum/url%28_%29.md)**: The system was able to identify a URL for the requested audio content. The source for the URL might be a URL that a person includes in their request, or onscreen content that an app made available to the system using the App Intents framework.
 - **[`AudioSearch.Criteria.unspecified`](./audiosearch/criteria-swift.enum/unspecified.md)**: The person’s request doesn’t include specific information. Return relevant results based on their favorites, recommended songs, and so on.
 
-#### Create the app intent for the matching audio action
+## Create the app intent for the matching audio action
 
 When a person chooses to perform an audio action for the returned results, the system performs your app’s logic for the chosen content. For example, if a person requests a specific song and your intent value query provides a result, the system needs a way to play the song in your app. The App Intents framework lets the system perform audio actions in your app if you implement an app intent that conforms to the schema for the requested action. For example, to allow the system to play a song, create an app intent that conforms to the [`playAudio`](../AppIntents/appschema/audiointent/playaudio.md) schema. For more information about implementing an app intent that conforms to a media schema, see [Audio](../AppIntents/app-schema-domain-audio.md).
 

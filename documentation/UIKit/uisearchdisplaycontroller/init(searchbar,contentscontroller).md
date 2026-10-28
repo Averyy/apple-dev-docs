@@ -23,7 +23,7 @@ init(searchBar: UISearchBar, contentsController viewController: UIViewController
 - (instancetype) initWithSearchBar:(UISearchBar *) searchBar contentsController:(UIViewController *) viewController;
 ```
 
-#### Return Value
+## Return Value
 
 A search display controller initialized with the given search bar and contents controller.
 

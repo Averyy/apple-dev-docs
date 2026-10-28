@@ -21,7 +21,7 @@ All initial and generated samples from the most recent run.
 var samples: [SampleType] { get }
 ```
 
-#### Discussion
+## Discussion
 
 Before you call [`run()`](./run%28%29.md), this equals the samples you passed to the initializer. After iteration completes, it contains the full resulting dataset.
 

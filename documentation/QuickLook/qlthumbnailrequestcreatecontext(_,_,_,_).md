@@ -21,11 +21,11 @@ func QLThumbnailRequestCreateContext(_ thumbnail: QLThumbnailRequest!, _ size: C
 extern CGContextRefQLThumbnailRequestCreateContext(QLThumbnailRequestRef thumbnail, CGSize size, Boolean isBitmap, CFDictionaryRef properties);
 ```
 
-#### Return Value
+## Return Value
 
 A Core Graphics graphics-context object that you can draw your thumbnail image in. You should explicitly release this object when it is no longer needed.
 
-#### Discussion
+## Discussion
 
 You can directly draw your thumbnail data in the graphics-context object created by this function. After calling this function, you should flush the context with [`QLThumbnailRequestFlushContext(_:_:)`](./qlthumbnailrequestflushcontext%28_,_%29.md). Also be sure to release the `CGContext` object.
 
@@ -33,7 +33,7 @@ With this function you can create two types of graphics contexts for drawing thu
 
 If you prefer to work in Objective-C code, you can convert the created [`CGContext`](../CoreGraphics/cgcontext.md) to a [`NSGraphicsContext`](../AppKit/nsgraphicscontext.md) object using [`init(graphicsPort:flipped:)`](../AppKit/nsgraphicscontext/init%28graphicsport,flipped%29.md).
 
-##### Special Considerations
+### Special Considerations
 
 Thread-safety: This function should be called in the same thread as the thumbnail request is made in; generally, this is the same thread in which the `GenerateThumbnailForURL` callback was invoked.
 

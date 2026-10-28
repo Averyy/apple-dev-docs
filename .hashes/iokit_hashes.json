@@ -114941,8 +114941,15 @@
     "handoff_from": {
       "kernel": {}
     },
+    "link_seeds": [
+      [
+        "https://developer.apple.com/tutorials/data/documentation/iokit/kusbhostportpropertystatus.json",
+        "iokit",
+        "com.apple.documentation"
+      ]
+    ],
     "render": {
-      "version": 3
+      "version": 4
     },
     "total_pages": 28734
   }

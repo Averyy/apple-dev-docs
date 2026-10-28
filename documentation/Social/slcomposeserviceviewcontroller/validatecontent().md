@@ -22,7 +22,7 @@ func validateContent()
 - (void) validateContent;
 ```
 
-#### Discussion
+## Discussion
 
 By default, `validateContent` calls [`isContentValid()`](./iscontentvalid%28%29.md), performs internal content validation, and updates the state of the Post button, if necessary. You should call this method if you change any data that your implementation of `isContentValid` uses to test for content validity.
 

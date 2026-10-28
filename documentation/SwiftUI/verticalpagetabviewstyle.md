@@ -16,7 +16,7 @@ nonisolated
 struct VerticalPageTabViewStyle
 ```
 
-#### Overview
+## Overview
 
 Use [`verticalPage`](./tabviewstyle/verticalpage.md) to construct this style.
 

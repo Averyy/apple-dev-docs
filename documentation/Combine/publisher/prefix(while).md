@@ -21,11 +21,11 @@ Republishes elements while a predicate closure indicates publishing should conti
 func prefix(while predicate: @escaping (Self.Output) -> Bool) -> Publishers.PrefixWhile<Self>
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that passes through elements until the predicate indicates publishing should finish.
 
-#### Discussion
+## Discussion
 
 Use [`prefix(while:)`](./prefix%28while%29.md) to emit values while elements from the upstream publisher meet a condition you specify. The publisher finishes when the closure returns `false`.
 

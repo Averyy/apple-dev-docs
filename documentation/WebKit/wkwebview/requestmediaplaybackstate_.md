@@ -19,7 +19,7 @@ Requests the playback status of media in the web view.
 - (void) requestMediaPlaybackState:(void (^)(enum WKMediaPlaybackState)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 If there is media in the web view, this method provides a [`WKMediaPlaybackState`](../wkmediaplaybackstate.md) enumeration case to indicate whether the media in the web view is playing, paused, or suspended. If there is no media in the web view to play, this method provides [`WKMediaPlaybackState.none`](../wkmediaplaybackstate/none.md).
 

@@ -19,7 +19,7 @@ init(remoteWithProtocolFamily family: Int32, socketType type: Int32, protocol: I
 - (instancetype) initRemoteWithProtocolFamily:(int) family socketType:(int) type protocol:(int) protocol address:(NSData *) address;
 ```
 
-#### Discussion
+## Discussion
 
 A connection is not opened to the remote address until data is sent.
 

@@ -25,11 +25,11 @@ func paragraphRange(for range: NSRange) -> NSRange
 - (NSRange) paragraphRangeForRange:(NSRange) range;
 ```
 
-#### Return Value
+## Return Value
 
 The range of characters representing the paragraph or paragraphs containing `aRange`, including the paragraph termination characters.
 
-#### Discussion
+## Discussion
 
 A paragraph is any segment of text delimited by a carriage return (`U+000D`), newline (`U+000A`), or paragraph separator (`U+2029`).
 

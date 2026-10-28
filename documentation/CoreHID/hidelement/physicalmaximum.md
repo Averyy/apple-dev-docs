@@ -15,7 +15,7 @@ The physical maximum for this element’s data.
 var physicalMaximum: Int64?
 ```
 
-#### Discussion
+## Discussion
 
 The physical maximum combines with the physical minimum to determine the shifting and scaling required to transform the raw report data into the actual value that has meaning for the device.
 

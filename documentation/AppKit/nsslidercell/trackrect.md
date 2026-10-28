@@ -19,7 +19,7 @@ var trackRect: NSRect { get }
 @property (readonly) NSRect trackRect;
 ```
 
-#### Discussion
+## Discussion
 
 The tracking rectangle includes the slider bar, but not the bezel.
 

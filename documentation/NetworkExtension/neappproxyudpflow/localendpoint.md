@@ -23,7 +23,7 @@ var localEndpoint: NWEndpoint? { get }
 @property (readonly, nullable) NWEndpoint * localEndpoint;
 ```
 
-#### Discussion
+## Discussion
 
 This property may be nil if the corresponding UDP socket was not bound to a port by the application and the App Proxy Provider did not set a local endpoint in [`open(withLocalEndpoint:completionHandler:)`](../neappproxyflow/open%28withlocalendpoint,completionhandler%29.md).
 

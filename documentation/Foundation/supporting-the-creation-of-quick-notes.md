@@ -5,11 +5,11 @@
 
 Support the creation of notes that include your app’s content.
 
-#### Overview
+## Overview
 
 People use Quick Notes on macOS and iOS to quickly add app-specific content to the Notes app. When someone activates Quick Notes from your app, the system displays an interface for creating the note content. If your app has a properly configured activity, the system also includes a link to that activity in the note. Someone viewing the note later can use that link to open your app and perform the activity. For example, someone activating Quick Note while viewing a photo an use the link to view that photo again.
 
-##### Configure a user activity object with your content
+### Configure a user activity object with your content
 
 Apps can provide the initial content for a Quick Note using an [`NSUserActivity`](./nsuseractivity.md) object. When your app has a current activity object, the Quick Note system adds a link to the activity in the new note. However, the system creates this link only if your activity object provides a value in its [`webpageURL`](./nsuseractivity/webpageurl.md), [`persistentIdentifier`](./nsuseractivity/persistentidentifier.md), or [`targetContentIdentifier`](./nsuseractivity/targetcontentidentifier.md) property. The system relies on these properties because they typically contain information that persists for a long time:
 
@@ -21,7 +21,7 @@ The URL or identifier you provide needs to remain stable and consistent so you c
 
 In addition to providing stable identifiers for your content, provide a descriptive noun phrase in the [`title`](./nsuseractivity/title.md) property of your activity object. When displaying the note, the Notes app uses the text in that property as part of the link to your item. Provide a noun phrase that conveys helpful informaton about the content. For example, a photo app might set the title of a photo-viewing activity to something like “Photo taken on December 28, 2025”.
 
-##### Keep your activity objects up to date
+### Keep your activity objects up to date
 
 To make your content available to Quick Notes, call the [`becomeCurrent()`](./nsuseractivity/becomecurrent%28%29.md) method of your activity object. The Quick Notes system pulls content only from your app’s current activity object. You can change this object at any time to reflect changes in your app’s interface. For example, if someone is browsing a catalog of items, change the activity object each time they focus on a different item. If your app isn’t reflecting any content that is suitable for inclusion in a note, you can clear the current activity object by calling its [`resignCurrent()`](./nsuseractivity/resigncurrent%28%29.md) method.
 

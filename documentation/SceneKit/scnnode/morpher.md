@@ -25,7 +25,7 @@ var morpher: SCNMorpher? { get set }
 @property (nonatomic, retain, nullable) SCNMorpher * morpher;
 ```
 
-#### Discussion
+## Discussion
 
 You use a morpher object to interpolate between multiple geometries. For details, see [`SCNMorpher`](../scnmorpher.md).
 

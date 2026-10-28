@@ -19,7 +19,7 @@ case tile
 NSImageResizingModeTile
 ```
 
-#### Discussion
+## Discussion
 
 The interior region of the original image repeats to fill in the interior region of the newly resized image.
 

@@ -15,7 +15,7 @@ Get the authorization type required by the stereo properties provider.
 extern ar_authorization_type_t ar_stereo_properties_provider_get_required_authorization_type();
 ```
 
-#### Return Value
+## Return Value
 
 Authorization type.
 

@@ -19,7 +19,7 @@ var isSpringLoaded: Bool { get set }
 @property (getter=isSpringLoaded) BOOL springLoaded;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is [`true`](../../Swift/true.md), the split view item can temporarily expand during a drag if the user hovers or force clicks its neighboring divider.
 

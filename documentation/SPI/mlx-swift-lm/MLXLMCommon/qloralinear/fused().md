@@ -17,7 +17,7 @@ Convert back into a fused `QuantizedLinear` layer.
 func fused() -> Module
 ```
 
-##### See Also
+### See Also
 
 - [`fused()`](../loralinear/fused%28%29.md)
 

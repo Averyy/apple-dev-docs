@@ -19,7 +19,7 @@ case full
 VZDiskImageSynchronizationModeFull
 ```
 
-#### Discussion
+## Discussion
 
 This mode synchronizes the data with the permanent storage holding the disk image and ensures the data moves from the disk’s internal cache to permanent storage. This ensures there’s no loss of already synchronized data in the case of panic or loss of power.
 

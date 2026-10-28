@@ -22,7 +22,7 @@ func addAction(handler: @escaping (UIUpdateLink, UIUpdateInfo) -> Void)
 - (void) addActionWithHandler:(void (^)(UIUpdateLink *updateLink, UIUpdateInfo *updateInfo)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 This method adds the action to the [`beforeCADisplayLinkDispatch`](../uiupdateactionphase/beforecadisplaylinkdispatch.md) phase. To specify a different phase, use [`addAction(to:handler:)`](./addaction%28to,handler%29.md) instead.
 

@@ -29,7 +29,7 @@ typedef struct vImageCVImageFormat * vImageCVImageFormatRef;
 
 - [Converting chroma-subsampled images](./converting-chroma-subsampled-images.md)
 
-#### Overview
+## Overview
 
 The vImage library uses the information in an image format to construct [`vImageConverter`](./vimageconverter.md) instances that convert to and from images encoded with the format. The format stores a description of the pixels in the image, such as color representation, bit depth, and number of channels.
 

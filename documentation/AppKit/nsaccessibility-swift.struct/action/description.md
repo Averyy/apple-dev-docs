@@ -19,7 +19,7 @@ var description: String? { get }
 extern NSString *NSAccessibilityActionDescription(NSAccessibilityActionName action);
 ```
 
-#### Discussion
+## Discussion
 
 This function returns a standard description for `action`.
 

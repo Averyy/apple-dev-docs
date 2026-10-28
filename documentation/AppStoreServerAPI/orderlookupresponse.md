@@ -15,7 +15,7 @@ A response that includes the order lookup status and an array of signed transact
 object OrderLookupResponse
 ```
 
-#### Discussion
+## Discussion
 
 The order lookup response contains information about the [`orderId`](./orderid.md) you specify when you call [`Look Up Order ID`](./look-up-order-id.md).
 

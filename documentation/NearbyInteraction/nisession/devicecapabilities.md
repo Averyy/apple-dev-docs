@@ -27,7 +27,7 @@ class var deviceCapabilities: any NIDeviceCapability { get }
 - [Extending advanced direction finding and ranging](../extending-advanced-direction-finding-and-ranging.md)
 - [Initiating and maintaining a session](../initiating-and-maintaining-a-session.md)
 
-#### Discussion
+## Discussion
 
 Use the properties of the specified object to determine what features are available.
 

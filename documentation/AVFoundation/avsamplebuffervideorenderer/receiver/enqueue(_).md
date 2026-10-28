@@ -17,15 +17,15 @@ Suspends until the receiver is ready for more media data, then enqueues a sample
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) func enqueue(_ sampleBuffer: CMReadySampleBuffer<CMSampleBuffer.DynamicContent>) async throws -> AVSampleBufferVideoRenderer.Receiver.EnqueueResult
+nonisolated(nonsending)
+func enqueue(_ sampleBuffer: CMReadySampleBuffer<CMSampleBuffer.DynamicContent>) async throws -> AVSampleBufferVideoRenderer.Receiver.EnqueueResult
 ```
 
-#### Return Value
+## Return Value
 
 The result of the enqueue operation.
 
-#### Discussion
+## Discussion
 
 > **Throws**: `CancellationError` if the Task was cancelled.
 

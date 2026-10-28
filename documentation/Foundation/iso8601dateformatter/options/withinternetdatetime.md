@@ -23,7 +23,7 @@ static var withInternetDateTime: ISO8601DateFormatter.Options { get }
 NSISO8601DateFormatWithInternetDateTime
 ```
 
-#### Discussion
+## Discussion
 
 The format used for internet date times, according to the [RFC 3339](https://www.ietf.org/rfc/rfc3339) standard. Equivalent to specifying [`withFullDate`](./withfulldate.md), [`withFullTime`](./withfulltime.md), [`withDashSeparatorInDate`](./withdashseparatorindate.md), [`withColonSeparatorInTime`](./withcolonseparatorintime.md), and [`withColonSeparatorInTimeZone`](./withcolonseparatorintimezone.md).
 

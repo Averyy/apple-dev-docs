@@ -24,7 +24,7 @@ class GKScoreChallenge
 @interface GKScoreChallenge : GKChallenge
 ```
 
-#### Overview
+## Overview
 
 To complete the challenge, the player must score an equal or better score than the other player. When the player completes the challenge, Game Center issues a new score challenge to the player who initiated the challenge and continues issuing challenges between the players until a player refuses the challenge.
 

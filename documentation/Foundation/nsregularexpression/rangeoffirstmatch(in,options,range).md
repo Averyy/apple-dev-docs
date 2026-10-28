@@ -25,11 +25,11 @@ func rangeOfFirstMatch(in string: String, options: NSRegularExpression.MatchingO
 - (NSRange) rangeOfFirstMatchInString:(NSString *) string options:(NSMatchingOptions) options range:(NSRange) range;
 ```
 
-#### Return Value
+## Return Value
 
 The range of the first match. Returns `{NSNotFound, 0}` if no match is found.
 
-#### Discussion
+## Discussion
 
 This is a convenience method that calls [`enumerateMatches(in:options:range:using:)`](./enumeratematches%28in,options,range,using%29.md).
 

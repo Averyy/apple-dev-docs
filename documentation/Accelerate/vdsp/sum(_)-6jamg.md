@@ -21,7 +21,7 @@ Returns the double-precision vector sum.
 static func sum<U>(_ vector: U) -> Double where U : AccelerateBuffer, U.Element == Double
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates and returns the sum of the elements of a supplied vector.
 

@@ -20,7 +20,7 @@ Blurs an image using a disc-shaped convolution kernel.
 func applied(to image: CIImage, eventHandler: EventHandler? = nil) -> CIImage
 ```
 
-#### Return Value
+## Return Value
 
 The blurry image.
 

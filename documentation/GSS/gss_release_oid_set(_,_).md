@@ -23,11 +23,11 @@ func gss_release_oid_set(_ minor_status: UnsafeMutablePointer<OM_uint32>, _ set:
 OM_uint32 gss_release_oid_set(OM_uint32 *minor_status, gss_OID_set*set);
 ```
 
-#### Return Value
+## Return Value
 
 A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on completion. See [Function Status](./function-status.md) for a complete enumeration of status outputs.
 
-#### Discussion
+## Discussion
 
 Use this function to free the memory associated with an OID set that you created with [`gss_create_empty_oid_set(_:_:)`](./gss_create_empty_oid_set%28_,_%29.md), or that was created on your behalf this way. The contents of the set don’t need to be freed individually. OIDs are typically static objects that don’t require memory management.
 

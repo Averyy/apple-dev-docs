@@ -20,7 +20,7 @@ let kSecCFErrorResourceMissing: CFString
 extern CFStringRef const kSecCFErrorResourceMissing;
 ```
 
-#### Discussion
+## Discussion
 
 This key is present when a non-optional sealed resource is missing.
 

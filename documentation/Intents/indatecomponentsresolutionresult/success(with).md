@@ -24,11 +24,11 @@ class func success(with resolvedDateComponents: DateComponents) -> Self
 + (instancetype) successWithResolvedDateComponents:(NSDateComponents *) resolvedDateComponents;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INDateComponentsResolutionResult`](../indatecomponentsresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you are able to resolve a parameter successfully to a specific date.
 

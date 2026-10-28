@@ -26,7 +26,7 @@ func players(with state: GKConnectionState) -> [GKCloudPlayer]
 - (NSArray<GKCloudPlayer *> *) playersWithConnectionState:(GKConnectionState) state;
 ```
 
-#### Return Value
+## Return Value
 
 An array of players with the indicated connection state.
 

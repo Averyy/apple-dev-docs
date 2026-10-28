@@ -21,7 +21,7 @@ A structure that converts between decimal values and their textual representatio
 struct FormatStyle
 ```
 
-#### Overview
+## Overview
 
 Instances of [`Decimal.FormatStyle`](./formatstyle.md) create localized, human-readable text from [`Decimal`](../decimal.md) numbers and parse string representations of numbers into instances of [`Decimal`](../decimal.md).
 
@@ -29,7 +29,7 @@ Instances of [`Decimal.FormatStyle`](./formatstyle.md) create localized, human-r
 
 > **Note**:  Foundation provides other format style types for working with the numeric types that the Swift standard library defines. [`IntegerFormatStyle`](../integerformatstyle.md) works with types that conform to [`BinaryInteger`](../../Swift/binaryinteger.md), and [`FloatingPointFormatStyle`](../floatingpointformatstyle.md) works with types that conform to [`BinaryFloatingPoint`](../../Swift/binaryfloatingpoint.md).
 
-##### Formatting decimal values
+### Formatting decimal values
 
 Use the [`formatted()`](./formatted%28%29.md) method to create a string representation of a decimal value using the default [`Decimal.FormatStyle`](./formatstyle.md) configuration:
 
@@ -70,7 +70,7 @@ let customFormatting = exampleNumber.formatted(
 // customFormatting is "+125000.12"
 ```
 
-##### Creating a decimal format style instance
+### Creating a decimal format style instance
 
 The previous examples use static instances like [`number`](../formatstyle/number-3luf2.md) to create format styles within the call to the [`formatted(_:)`](./formatted%28_%29.md) method. You can also create a [`Decimal.FormatStyle`](./formatstyle.md) instance and use it to repeatedly format different values by using the [`format(_:)`](./formatstyle/format%28_%29.md) method, as shown here:
 
@@ -82,7 +82,7 @@ percentFormatStyle.format(0.855) // "85.5%"
 percentFormatStyle.format(1.0) // "100%"
 ```
 
-##### Parsing decimal values
+### Parsing decimal values
 
 You can use [`Decimal.FormatStyle`](./formatstyle.md) to parse strings into decimal values. You can define the format style within the type’s initializer or pass in a format style created outside the function. The following demonstrates both approaches:
 
@@ -95,7 +95,7 @@ let salePrice = try? Decimal("$731.67",
                              format: priceFormatStyle) // 731.67
 ```
 
-##### Matching regular expressions
+### Matching regular expressions
 
 Along with parsing numeric values in strings, you can use the Swift regular expression domain-specific language to match and capture numeric substrings. The following example defines a currency format style to match and capture a currency value using US dollars and `en_US` numeric conventions. The rest of the regular expression ignores any characters prior to a `": "` sequence that precedes the currency substring.
 

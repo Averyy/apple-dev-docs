@@ -25,11 +25,11 @@ typealias nw_framer_start_handler_t = (nw_framer_t) -> nw_framer_start_result_t
 typedef nw_framer_start_result_t (^)(NSObject<OS_nw_framer> *) nw_framer_start_handler_t;
 ```
 
-#### Return Value
+## Return Value
 
 Return a start result indicating if the connection should become ready immediately, or wait for you protocol to perform a handshake.
 
-#### Discussion
+## Discussion
 
 Within your start handler, you should register all other callbacks for your custom protocol, particularly [`nw_framer_set_output_handler(_:_:)`](./nw_framer_set_output_handler%28_,_%29.md) and [`nw_framer_set_input_handler(_:_:)`](./nw_framer_set_input_handler%28_,_%29.md).
 

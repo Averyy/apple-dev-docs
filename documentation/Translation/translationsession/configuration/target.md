@@ -18,7 +18,7 @@ The language to translate content into.
 var target: Locale.Language?
 ```
 
-#### Discussion
+## Discussion
 
 If left to its default value of `nil`, the session picks a target language according to the `source` and the person’s [`preferredLanguages`](../../../Foundation/locale/preferredlanguages.md). Changing this value cancels the previous tasks and creates a new one.
 

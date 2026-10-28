@@ -19,7 +19,7 @@ func detailsDisclosed() -> Bool
 - (BOOL) detailsDisclosed;
 ```
 
-#### Discussion
+## Discussion
 
 The certificate details can be shown or hidden depending on whether the user clicks the disclosure triangle. This method returns the state of that disclosure triangle.
 

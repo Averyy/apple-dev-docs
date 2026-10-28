@@ -27,7 +27,7 @@ class UIPopoverPresentationController
 
 - [Displaying transient content in a popover](./displaying-transient-content-in-a-popover.md)
 
-#### Overview
+## Overview
 
 From the time a popover is presented until the time it’s dismissed, UIKit uses an instance of this class to manage the presentation behavior. You use instances of this class as-is to configure aspects of the popover appearance and behavior for view controllers whose presentation style is set to [`UIModalPresentationStyle.popover`](./uimodalpresentationstyle/popover.md).
 

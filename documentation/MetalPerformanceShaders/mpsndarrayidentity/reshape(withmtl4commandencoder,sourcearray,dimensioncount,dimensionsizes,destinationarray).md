@@ -22,7 +22,7 @@ func reshape(withMTL4CommandEncoder encoder: any MTL4ComputeCommandEncoder, sour
 - (void) reshapeWithMTL4CommandEncoder:(id<MTL4ComputeCommandEncoder>) encoder sourceArray:(MPSNDArray *) sourceArray dimensionCount:(NSUInteger) numberOfDimensions dimensionSizes:(NSUInteger *) dimensionSizes destinationArray:(MPSNDArray *) destinationArray;
 ```
 
-#### Discussion
+## Discussion
 
 Encode a reshape operation. The encoder associates the commands with MTLStageDispatch. Synchronize your workloads against this stage when using this function to prevent race conditions.
 

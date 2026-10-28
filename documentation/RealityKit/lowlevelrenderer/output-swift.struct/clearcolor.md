@@ -18,7 +18,7 @@ The color to use when clearing the color attachment at the start of a render pas
 var clearColor: MTLClearColor { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Corresponds to `MTLRenderPassColorAttachmentDescriptor.clearColor`.
 

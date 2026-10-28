@@ -12,7 +12,7 @@ virtual UInt32 GetExtraPowerAllocated(
  UInt32type);
 ```
 
-#### Return Value
+## Return Value
 
 Amount of power allocated, in mA.
 

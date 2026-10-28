@@ -21,7 +21,7 @@ Returns the single-precision vector sum.
 static func sum<U>(_ vector: U) -> Float where U : AccelerateBuffer, U.Element == Float
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates and returns the sum of the elements of a supplied vector.
 

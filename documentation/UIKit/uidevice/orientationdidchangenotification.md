@@ -26,7 +26,7 @@ extern NSNotificationName const UIDeviceOrientationDidChangeNotification;
 
 - [Processing queued notifications](../processing-queued-notifications.md)
 
-#### Discussion
+## Discussion
 
 You can obtain the new orientation by getting the value of the [`orientation`](./orientation.md) property.
 

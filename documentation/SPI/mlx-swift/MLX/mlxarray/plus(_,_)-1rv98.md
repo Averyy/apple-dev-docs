@@ -21,7 +21,7 @@ static func + (lhs: MLXArray, rhs: MLXArray) -> MLXArray
 
 - [Converting From Python](../converting-python.md)
 
-#### Discussion
+## Discussion
 
 Add two arrays with [Numpy Style Broadcasting](../broadcasting.md).
 
@@ -34,7 +34,7 @@ let b = MLXArray([4, 5, 6])
 let r = a + b + 7
 ```
 
-##### See Also
+### See Also
 
 - [Arithmetic](../arithmetic.md)
 - [`add(_:_:stream:)`](../add%28_,_,stream%29.md)

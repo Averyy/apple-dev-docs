@@ -22,7 +22,7 @@ optional func clipBufferingOutput(_ clipBufferingOutput: SCClipBufferingOutput, 
 - (void) clipBufferingOutput:(SCClipBufferingOutput *) clipBufferingOutput didFailWithError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 clipBufferingOutput:didFailWithError:
 

@@ -15,7 +15,7 @@ An IOService class representing an AGP primary device.
 class IOAGPDevice : IOPCIDevice
 ```
 
-#### Overview
+## Overview
 
 The discovery of an AGP primary device by the PCI bus family results in an instance of the IOAGPDevice being created and published. It provides services specific to AGP, in addition to the PCI services supplied by its superclass IOPCIDevice.
 

@@ -19,7 +19,7 @@ var isEmpty: Bool { get }
 @property (readonly, getter=isEmpty) BOOL empty;
 ```
 
-#### Discussion
+## Discussion
 
 Returns [`true`](../../Swift/true.md) if the option is equivalent to the empty set, or [`false`](../../Swift/false.md) otherwise.
 

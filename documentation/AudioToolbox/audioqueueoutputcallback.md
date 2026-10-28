@@ -24,11 +24,11 @@ typealias AudioQueueOutputCallback = (UnsafeMutableRawPointer?, AudioQueueRef, A
 typedef void (*)(void *, struct OpaqueAudioQueue *, struct AudioQueueBuffer *) AudioQueueOutputCallback;
 ```
 
-#### Discussion
+## Discussion
 
 If you name your callback function `MyAudioQueueOutputCallback`, you would declare it like this:
 
-##### Discussion
+### Discussion
 
 This callback function is invoked each time its associated playback audio queue has acquired the data from an audio queue buffer, at which point the buffer is available for reuse. The newly-available buffer is sent to this callback in the `inBuffer` parameter. Typically, you write this callback to:
 

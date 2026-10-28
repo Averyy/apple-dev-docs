@@ -20,7 +20,7 @@ Creates generated content representing a structure with the properties you speci
 init(properties: KeyValuePairs<String, any ConvertibleToGeneratedContent>, id: GenerationID? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 The order of properties is important. For [`Generable`](../generable.md) types, the order must match the order properties in the types `schema`.
 

@@ -25,7 +25,7 @@ var releaseConsumer: CGDataConsumerReleaseInfoCallback?
 CGDataConsumerReleaseInfoCallback releaseConsumer;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [`CGDataConsumerReleaseInfoCallback`](../cgdataconsumerreleaseinfocallback.md).
 

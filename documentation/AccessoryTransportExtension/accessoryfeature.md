@@ -15,7 +15,7 @@ A protocol that defines a capability for an accessory data provider extension.
 protocol AccessoryFeature : Sendable, AppExtensionPoint.Capability
 ```
 
-#### Overview
+## Overview
 
 Implement this protocol to create a custom capability that your extension supports. Each feature has an associated handler type that processes events for that capability.
 

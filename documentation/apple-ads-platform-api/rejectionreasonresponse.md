@@ -15,11 +15,11 @@ The response object for a rejection reason operation.
 object RejectionReasonResponse
 ```
 
-#### Discussion
+## Discussion
 
 The API returns `RejectionReasonResponse` as the envelope when you retrieve rejection reason details for an app.
 
-##### Example
+### Example
 
 ```json
 {

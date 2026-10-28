@@ -12,11 +12,11 @@ virtual IOReturn getResources(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn code; `kIOReturnSuccess` is necessary for the IOService object to be successfully used, otherwise the registration process for the object is halted.
 
-#### Overview
+## Overview
 
 This method is called during the registration process for an IOService object if there are successful driver matches, before any clients attach. It allows for lazy allocation of resources to an IOService object when a matching driver is found.
 

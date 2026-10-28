@@ -24,7 +24,7 @@ var allStatistics: [HKQuantityType : HKStatistics] { get }
 @property (copy, readonly) NSDictionary<HKQuantityType *,HKStatistics *> * allStatistics;
 ```
 
-#### Discussion
+## Discussion
 
 HealthKit calculates an [`HKStatistics`](../hkstatistics.md) object for each [`HKQuantityType`](../hkquantitytype.md), based on the [`HKQuantitySample`](../hkquantitysample.md) objects associated with the containing workout.
 

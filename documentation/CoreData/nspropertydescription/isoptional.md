@@ -25,11 +25,11 @@ var isOptional: Bool { get set }
 @property (getter=isOptional) BOOL optional;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the receiver is optional, otherwise [`false`](../../Swift/false.md). The optionality flag specifies whether a property’s value can be `nil` before an object can be saved to a persistent store.
 
-##### Special Considerations
+### Special Considerations
 
 Setting this property raises an exception if the receiver’s model has been used by an object graph manager.
 

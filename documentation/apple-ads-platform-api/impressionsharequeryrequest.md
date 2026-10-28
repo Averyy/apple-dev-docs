@@ -15,7 +15,7 @@ Request body for the impression share query endpoint.
 object ImpressionShareQueryRequest
 ```
 
-#### Example
+## Example
 
 ```json
 {

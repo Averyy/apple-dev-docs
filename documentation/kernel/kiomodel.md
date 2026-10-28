@@ -15,7 +15,7 @@ A property of IONetworkController objects.
 #define kIOModel
 ```
 
-#### Discussion
+## Discussion
 
 The kIOModel property is a property of IONetworkController objects. It has an OSString value that describes the model of the network controller.
 

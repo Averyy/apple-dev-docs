@@ -18,7 +18,7 @@ Reads the current contents of a vertex buffer synchronously on the CPU.
 final func readVertices<R, E>(at index: Int, _ body: (RawSpan) throws(E) -> R) throws(E) -> R where E : Error, R : ~Copyable
 ```
 
-#### Discussion
+## Discussion
 
 You pass a closure that receives a read-only span representing the contents of the vertex buffer. This span is valid only for the duration of the closure.
 

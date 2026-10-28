@@ -18,7 +18,7 @@ Indicates the current Apple Account isn’t eligible for age range sharing.
 case invalidAccount
 ```
 
-#### Discussion
+## Discussion
 
 You receive this error when no Apple Account is signed in on the device, or when the signed-in account, such as a managed or enterprise account, isn’t eligible to share an age range.
 

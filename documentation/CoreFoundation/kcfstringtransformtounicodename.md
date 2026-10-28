@@ -25,7 +25,7 @@ let kCFStringTransformToUnicodeName: CFString!
 extern CFStringRef const kCFStringTransformToUnicodeName;
 ```
 
-#### Discussion
+## Discussion
 
 Examples include `"\N{AIRPLANE}"` for “✈” and `"\N{GREEK CAPITAL LETTER PSI}"` for “Ψ”.
 

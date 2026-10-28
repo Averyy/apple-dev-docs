@@ -20,7 +20,7 @@ A Boolean value that indicates whether your app can offer external purchases.
 - **Name**: `com.apple.developer.storekit.external-purchase`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 Qualifying apps may offer external purchases within the app. To offer external purchases in your app, complete a request for this entitlement. For more information about qualifying apps and to request this entitlement, see:
 

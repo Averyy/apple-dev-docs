@@ -23,7 +23,7 @@ optional func findPrevious(_ sender: Any?)
 - (void) findPrevious:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 UIKit calls this method when the user selects the Find Previous command from an editing menu. Your implementation should highlight the previous result in the UI for finding textual content in your view.
 

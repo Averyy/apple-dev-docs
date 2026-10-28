@@ -20,7 +20,7 @@ Creates a physics body component with default settings.
 init()
 ```
 
-#### Discussion
+## Discussion
 
 For the default settings used in a new physics body component, see the discussions of the component’s individual properties.
 

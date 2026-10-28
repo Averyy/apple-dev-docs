@@ -19,11 +19,11 @@ A Boolean value that indicates whether a messaging app displays suggested action
 
 **Default**: `NO`
 
-#### Discussion
+## Discussion
 
 A Boolean value that indicates whether a messaging app displays suggested actions for a message.
 
-#### Overview
+## Overview
 
 Add this entitlement to your app and use the [Suggested Actions](../../SuggestedActions/SuggestedActions.md) framework to add a view to your messaging app that suggests actions, based on the content of a message. For example, a person might receive a message with an invite to an event, and your app can automatically display a suggested action for adding the event in Calendar.
 

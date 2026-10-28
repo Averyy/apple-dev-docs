@@ -27,7 +27,7 @@ class CXHandle
 
 - [Making and receiving VoIP calls](./making-and-receiving-voip-calls.md)
 
-#### Overview
+## Overview
 
 When the telephony provider receives an incoming call or the user starts an outgoing call, the other caller is identified by a [`CXHandle`](./cxhandle.md) object. For a caller identified by a phone number, the handle type is [`CXHandle.HandleType.phoneNumber`](./cxhandle/handletype/phonenumber.md) and the value is a sequence of digits. For a caller identified by an email address, the handle type is [`CXHandle.HandleType.emailAddress`](./cxhandle/handletype/emailaddress.md) and the value is an email address. For a caller identified in any other way, the handle type is [`CXHandle.HandleType.generic`](./cxhandle/handletype/generic.md) and the value typically follows some domain-specific format, such as a username, numeric ID, or URL.
 

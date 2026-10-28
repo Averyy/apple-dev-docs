@@ -25,11 +25,11 @@ class func localizedString(byJoining strings: [String]) -> String
 + (NSString *) localizedStringByJoiningStrings:(NSArray<NSString *> *) strings;
 ```
 
-#### Return Value
+## Return Value
 
 A formatted string that joins together a list of strings using a locale-specific list format.
 
-#### Discussion
+## Discussion
 
 > 💡 **Tip**:  Use this method to join strings that are ready to be displayed in a bullet-point list. Sentences, phrases with punctuations, and appositions may not work well when joined together.
 

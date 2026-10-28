@@ -19,11 +19,11 @@ var isHidden: Bool { get }
 @property (nonatomic, readonly, getter=isHidden) BOOL hidden;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the identity is hidden; [`false`](../../Swift/false.md) if it is not.
 
-#### Discussion
+## Discussion
 
 A hidden identity does not show up in the Identity Picker. A hidden identity refers to system identities such as `root`, `www`, and `wheel`.
 

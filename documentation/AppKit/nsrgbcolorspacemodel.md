@@ -17,7 +17,7 @@ The RGB (red green blue) color-space model.
 static const NSColorSpaceModel NSRGBColorSpaceModel;
 ```
 
-#### Discussion
+## Discussion
 
 Can refer to both device-dependent and generic color space variants.
 

@@ -8,11 +8,11 @@ Query budget and Target CPA recommendations, then apply or dismiss them to adjus
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Overview
+## Overview
 
 The Recommendations API returns recommendations for target CPA adjustments and daily budget increases to help you improve your campaigns’ performance. Unlike [Suggestions Endpoints](./suggestions-endpoints.md), recommendations are stateful; each one has a lifecycle you apply or dismiss, and the system tracks the outcome. For historical performance metrics, see [Managing Reports](./reports.md). For market-level signals like impression share, see [Insights Endpoints](./insights-endpoints.md).
 
-#### Explore the Available Endpoints
+## Explore the Available Endpoints
 
 The API scopes recommendations to a promoted object, either an app or a brand, that you identify by `promotedObjectId` and `promotedObjectType`. For `promotedObjectId`, use the app Adam ID when `promotedObjectType` is `APPSTORE_APP` and the brand ID when it’s `BUSINESS_BRAND`. Use `campaignId` as an optional filter to narrow results to a specific campaign.
 
@@ -29,7 +29,7 @@ The following endpoints let you query, apply, and dismiss recommendations:
 | `POST` | `/v1/recommendations/target-cpas/apply` | Applies a target CPA recommendation using [`Apply Target CPA Recommendations`](./apply-target-cpa-recommendations.md). |
 | `POST` | `/v1/recommendations/target-cpas/dismiss` | Dismisses a target CPA recommendation using [`Dismiss Target CPA Recommendations`](./dismiss-target-cpa-recommendations.md). |
 
-##### Track the Recommendation Lifecycle
+### Track the Recommendation Lifecycle
 
 Every recommendation has a `state` field. Recommendations start in `AVAILABLE` state and move to either `APPLIED` or `DISMISSED` via the API. State is terminal. After the system applies or dismisses a recommendation, it doesn’t return to available.
 
@@ -46,7 +46,7 @@ The following table lists the possible `state` values:
 
 > **Note**: The `DELETE` value of `state` and the `DELETED` value of `status` are similarly named but distinct. Don’t confuse them when filtering or reading a recommendation record.
 
-##### Recommendation Category
+### Recommendation Category
 
 Every recommendation read object carries a `recommendationType` field using the [`RecommendationCategory`](./recommendationcategory.md) enum. Each optimization area has a merged category and a system category (algorithm-generated, prefixed `S`). This field isn’t a filterable field on the query endpoints below; see each endpoint’s Filterable Fields table for what you can query on.
 
@@ -60,7 +60,7 @@ The following table lists each optimization area’s merged and system categorie
 
 Only `DAILYCAP` and `TCPA` have corresponding query, apply, and dismiss endpoints in this API version. `BID` is defined in the enum but has no dedicated endpoints.
 
-##### Query Recommendations
+### Query Recommendations
 
 All recommendation types use a `POST /query` pattern with the [`RecommendationQueryRequest`](./recommendationqueryrequest.md) body. Two filters are mandatory on every request:
 
@@ -107,7 +107,7 @@ Optional filters such as `state` and `campaignId` narrow results further. The fo
 }
 ```
 
-##### Apply Recommendations
+### Apply Recommendations
 
 Applying a recommendation signals that the API user accepts the recommendation and wants the API to make the corresponding change automatically. Each type has a dedicated apply endpoint. All items in a single request must share the same `promotedObjectId`.
 
@@ -120,11 +120,11 @@ The following table shows what each apply endpoint changes:
 
 Required fields on every apply item are `id`, `promotedObjectId`, and `promotedObjectType`.
 
-##### Dismiss Recommendations
+### Dismiss Recommendations
 
 Dismiss requests use the same structure as apply, but the API ignores value override fields. You only need `id`, `promotedObjectId`, and `promotedObjectType`. The request doesn’t modify any campaign or ad group entity.
 
-##### Review Recommendation History
+### Review Recommendation History
 
 Apply and dismiss operations return a history object rather than the original recommendation object. History records preserve the full state of the recommendation at the time of the action, including the value the system actually applied, and serve as the audit trail for optimization changes.
 

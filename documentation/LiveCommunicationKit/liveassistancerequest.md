@@ -19,7 +19,7 @@ A pending interpreter request, sent from the framework to the extension.
 struct LiveAssistanceRequest
 ```
 
-#### Overview
+## Overview
 
 This is a value type sent by the framework to the request. All properties are read-only.
 

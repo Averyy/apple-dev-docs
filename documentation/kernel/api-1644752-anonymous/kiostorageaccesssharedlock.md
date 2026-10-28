@@ -13,7 +13,7 @@
 kIOStorageAccessSharedLock = 0x04
 ```
 
-#### Discussion
+## Discussion
 
 Shared access is requested.
 

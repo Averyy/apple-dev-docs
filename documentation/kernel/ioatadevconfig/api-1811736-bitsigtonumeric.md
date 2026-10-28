@@ -12,7 +12,7 @@ virtual UInt8 bitSigToNumeric(
  UInt16binary);
 ```
 
-#### Return Value
+## Return Value
 
 the numerical value of the highest bit set in the field.
 

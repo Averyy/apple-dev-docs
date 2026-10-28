@@ -20,7 +20,7 @@ var errSecCSSigDBAccess: OSStatus { get }
 errSecCSSigDBAccess
 ```
 
-#### Discussion
+## Discussion
 
 This error is returned when the system is attempting to sign unsigned code ad-hoc and couldn’t write to the signature database because of some problem other than a permission problem. For example, the signature database might be missing or corrupted.
 

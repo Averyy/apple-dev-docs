@@ -23,7 +23,7 @@ var isAdjustingWhiteBalance: Bool { get }
 @property (nonatomic, readonly, getter=isAdjustingWhiteBalance) BOOL adjustingWhiteBalance;
 ```
 
-#### Discussion
+## Discussion
 
 This property is key-value observable.
 

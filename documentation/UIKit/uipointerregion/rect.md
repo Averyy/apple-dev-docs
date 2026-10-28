@@ -22,7 +22,7 @@ var rect: CGRect { get }
 @property (nonatomic, readonly) CGRect rect;
 ```
 
-#### Discussion
+## Discussion
 
 This rectangle must be in the [`UIPointerInteraction`](../uipointerinteraction.md) view’s coordinate space.
 

@@ -21,7 +21,7 @@ The maximum number of lines that text can occupy in a view.
 var lineLimit: Int? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The maximum number of lines is `1` if the value is less than `1`. If the value is `nil`, the text uses as many lines as required. The default is `nil`.
 

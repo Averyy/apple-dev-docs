@@ -21,7 +21,7 @@ Assigns a position and proposed size to the subview.
 func place(at position: CGPoint, anchor: UnitPoint = .topLeading, proposal: ProposedViewSize)
 ```
 
-#### Discussion
+## Discussion
 
 Call this method from your implementation of the [`Layout`](../layout.md) protocol’s [`placeSubviews(in:proposal:subviews:cache:)`](../layout/placesubviews%28in,proposal,subviews,cache%29.md) method for each subview arranged by the layout. Provide a position within the container’s bounds where the subview should appear, and an anchor that indicates which part of the subview appears at that point.
 

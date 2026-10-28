@@ -22,7 +22,7 @@ var baseBackgroundColor: UIColor? { get set }
 @property (nonatomic, strong, nullable) UIColor * baseBackgroundColor;
 ```
 
-#### Discussion
+## Discussion
 
 This color fills the shape you choose for [`cornerStyle`](./cornerstyle.md) (Swift) or [`cornerStyle`](../../uipastecontrolconfiguration/cornerstyle.md) (Objective-C).
 

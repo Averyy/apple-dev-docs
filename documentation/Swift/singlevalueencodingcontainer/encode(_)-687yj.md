@@ -22,7 +22,7 @@ Encodes a single value of the given type.
 mutating func encode<T>(_ value: T) throws where T : Encodable
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: `EncodingError.invalidValue` if the given value is invalid in the current context for this format.
 

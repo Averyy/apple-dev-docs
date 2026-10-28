@@ -5,7 +5,7 @@
 
 Metadata that partitions an asset into scene-based units.
 
-#### Overview
+## Overview
 
 Set a prim’s `kind` metadata to `sceneLibrary` to create a *scene.* Partitioning an asset’s contents into multiple scenes offers the following benefits:
 
@@ -19,13 +19,13 @@ Define a scene using the `def` keyword to specify the asset’s active scene –
 
 This specification is backward compatible because of the way traditional USD runtimes skip `over` definitions. A runtime that doesn’t support the `sceneLibrary` metadata displays only the first active scene.
 
-##### Declaration
+### Declaration
 
 ```other
 kind = "sceneLibrary"
 ```
 
-##### Partition content into scenes
+### Partition content into scenes
 
 The following example demonstrates a scene template on which you can base your asset.
 

@@ -23,7 +23,7 @@ var nowPlayingInfo: [String : Any]? { get set }
 @property (nonatomic, copy, nullable) NSDictionary<NSString *,id> * nowPlayingInfo;
 ```
 
-#### Discussion
+## Discussion
 
 Setting this value to `nil` clears the player item’s now playing information.
 

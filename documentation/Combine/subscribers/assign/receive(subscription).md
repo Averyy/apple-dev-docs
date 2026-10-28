@@ -21,7 +21,7 @@ Tells the subscriber that it has successfully subscribed to the publisher and ma
 final func receive(subscription: any Subscription)
 ```
 
-#### Discussion
+## Discussion
 
 Use the received [`Subscription`](../../subscription.md) to request items from the publisher.
 

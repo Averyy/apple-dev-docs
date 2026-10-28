@@ -21,7 +21,7 @@ Returns a regular expression where quantifiers use the specified behavior by def
 func repetitionBehavior(_ behavior: RegexRepetitionBehavior) -> Regex<Regex<Output>.RegexOutput>
 ```
 
-#### Discussion
+## Discussion
 
 This setting does not affect calls to quantifier methods, such as `OneOrMore`, that include an explicit `behavior` parameter.
 

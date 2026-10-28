@@ -25,13 +25,13 @@ class INSearchForNotebookItemsIntent
 @interface INSearchForNotebookItemsIntent : INIntent
 ```
 
-#### Overview
+## Overview
 
 Siri creates an [`INSearchForNotebookItemsIntent`](./insearchfornotebookitemsintent.md) object when the user asks to search for existing notes, tasks, and reminders. The intent object contains search parameters such as the type of items to return, strings to match against the title or content, the completion status of tasks, or the trigger conditions used to generate reminders.
 
 To handle this intent, the handler object in your Intents extension must adopt the [`INSearchForNotebookItemsIntentHandling`](./insearchfornotebookitemsintenthandling.md) protocol. Your handler should confirm the request and create an [`INSearchForNotebookItemsIntentResponse`](./insearchfornotebookitemsintentresponse.md) object with the search results.
 
-##### Additional Intent Attributes
+### Additional Intent Attributes
 
 The following table lists additional attributes of this intent object:
 
@@ -40,7 +40,7 @@ The following table lists additional attributes of this intent object:
 | Supported by | Siri Intents |
 | Always requires unlocked device | Yes |
 
-##### Example Phrases
+### Example Phrases
 
 Users can ask Siri to search for notebook items in a variety of ways. The table below provides a few sample phrases in different languages. You can use these phrases during testing to trigger your intents. This list isn’t exhaustive and Siri may recognize many other phrases.
 

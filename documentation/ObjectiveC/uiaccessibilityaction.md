@@ -5,7 +5,7 @@
 
 A set of methods that accessibility elements can use to support specific actions.
 
-#### Overview
+## Overview
 
 The `UIAccessibilityAction` informal protocol provides a way for accessibility elements to support specific actions, such as selecting values in a range or scrolling through information on the screen. For example, to respond to a scrolling gesture, you implement the [`accessibilityScroll(_:)`](./nsobject-swift.class/accessibilityscroll%28_%29.md) method and post [`pageScrolled`](../UIKit/uiaccessibility/notification/pagescrolled.md) with the new page status (such as “Page 3 of 9”). Or, to make an element such as a slider or picker view accessible, you first need to characterize it by including the [`adjustable`](../UIKit/uiaccessibilitytraits/adjustable.md) trait. Then, you must implement the [`accessibilityIncrement()`](./nsobject-swift.class/accessibilityincrement%28%29.md) and [`accessibilityDecrement()`](./nsobject-swift.class/accessibilitydecrement%28%29.md) methods. When you do this, assistive technology users can adjust the element using gestures specific to the assistive technology.
 

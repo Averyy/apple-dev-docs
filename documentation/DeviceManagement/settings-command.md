@@ -19,13 +19,13 @@ Configure settings on a device.
 
 - [Returning a managed device to service](./returning-a-managed-device-to-service.md)
 
-#### Discussion
+## Discussion
 
 Users may be able to change the settings later if a profile isn’t set to restrict such changes.
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command availability
+### Command availability
 
 |  |  |
 | --- | --- |
@@ -35,7 +35,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Required access right | AllowSettings |
 
-##### Example request and response (DeviceName)
+### Example request and response (DeviceName)
 
 **Request**:
 

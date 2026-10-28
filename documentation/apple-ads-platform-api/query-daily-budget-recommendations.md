@@ -9,7 +9,7 @@ Retrieve daily budget recommendations for campaigns that may have more opportuni
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 Each [`DailyCapRecommendation`](./dailycaprecommendation.md) result includes:
 
@@ -20,7 +20,7 @@ Each [`DailyCapRecommendation`](./dailycaprecommendation.md) result includes:
 
 See [`FilterOperator`](./recommendationfilteroperator.md) for the full set of supported comparison operators.
 
-##### Filterable Fields
+### Filterable Fields
 
 | Field | Type | Operators | Description |
 | --- | --- | --- | --- |
@@ -50,13 +50,13 @@ See [`FilterOperator`](./recommendationfilteroperator.md) for the full set of su
 
 > **Note**: `id` appears in every response but doesn’t support any filter operator on this endpoint.
 
-#### Payload Examples
+## Payload Examples
 
 **Query App Budget Recommendations**:
 
 This example queries available daily budget recommendations for an app, sorted by the suggested budget amount in descending order. The response includes the current and suggested budgets alongside historical and projected performance metrics.
 
-##### Request
+### Request
 
 ```http
 POST /v1/recommendations/daily-budgets/query
@@ -98,7 +98,7 @@ POST /v1/recommendations/daily-budgets/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -167,7 +167,7 @@ POST /v1/recommendations/daily-budgets/query
 
 This example queries available daily budget recommendations for a Brands campaign by filtering on `promotedObjectId` and `promotedObjectType: BUSINESS_BRAND`. Since these campaigns haven’t accrued reporting history yet, the historical and expected metric fields return `null`.
 
-##### Request
+### Request
 
 ```http
 POST /v1/recommendations/daily-budgets/query
@@ -192,7 +192,7 @@ POST /v1/recommendations/daily-budgets/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

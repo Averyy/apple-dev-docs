@@ -21,7 +21,7 @@ Calculates the stereo dot product of two fixed-point 8.24 format vectors.
 void vDSP_dotpr2_s8_24(const int *__A0, vDSP_Stride __IA0, const int *__A1, vDSP_Stride __IA1, const int *__B, vDSP_Stride __IB, int *__C0, int *__C1, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the stereo dot products of two vectors, using the following operation:
 

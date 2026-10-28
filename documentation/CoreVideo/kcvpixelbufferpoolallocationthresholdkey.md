@@ -25,7 +25,7 @@ let kCVPixelBufferPoolAllocationThresholdKey: CFString
 extern CFStringRef const kCVPixelBufferPoolAllocationThresholdKey;
 ```
 
-#### Discussion
+## Discussion
 
 Include this key in the auxiliary attributes dictionary you pass to [`CVPixelBufferPoolCreatePixelBufferWithAuxAttributes(_:_:_:_:)`](./cvpixelbufferpoolcreatepixelbufferwithauxattributes%28_,_,_,_%29.md).
 

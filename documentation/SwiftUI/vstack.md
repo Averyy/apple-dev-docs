@@ -35,7 +35,7 @@ nonisolated struct VStack<Content> where Content : View
 - [Configuring views](./configuring-views.md)
 - [Declaring a custom view](./declaring-a-custom-view.md)
 
-#### Overview
+## Overview
 
 Unlike [`LazyVStack`](./lazyvstack.md), which only renders the views when your app needs to display them, a `VStack` renders the views all at once, regardless of whether they are on- or offscreen. Use the regular `VStack` when you have a small number of subviews or don’t want the delayed rendering behavior of the “lazy” version.
 

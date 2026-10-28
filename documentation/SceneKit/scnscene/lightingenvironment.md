@@ -25,7 +25,7 @@ var lightingEnvironment: SCNMaterialProperty { get }
 @property (nonatomic, readonly) SCNMaterialProperty * lightingEnvironment;
 ```
 
-#### Discussion
+## Discussion
 
 When rendering materials with the [`physicallyBased`](../scnmaterial/lightingmodel-swift.struct/physicallybased.md) lighting model, SceneKit illuminates surfaces differently according to the environment that surrounds them. For example, with physically based shading, even a diffuse surface takes on some color from the sky above it and the ground below it.
 

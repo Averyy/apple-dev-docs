@@ -13,7 +13,7 @@ List the available traits for a package.
 **Availability**:
 - Swift 6.3+
 
-#### Overview
+## Overview
 
 ```
 package show-traits [--package-path=<package-path>]

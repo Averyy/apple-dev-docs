@@ -23,7 +23,7 @@ let AVURLAssetShouldParseExternalSphericalTagsKey: String
 extern NSString * const AVURLAssetShouldParseExternalSphericalTagsKey;
 ```
 
-#### Discussion
+## Discussion
 
 Default is NO.
 

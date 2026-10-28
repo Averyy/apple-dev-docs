@@ -26,15 +26,15 @@ func CFNetServiceGetType(_ theService: CFNetService) -> Unmanaged<CFString>
 extern CFStringRefCFNetServiceGetType(CFNetServiceRef theService);
 ```
 
-#### Return Value
+## Return Value
 
 A CFString object containing the type from a CFNetService.
 
-#### Discussion
+## Discussion
 
 This function gets the type of a CFNetService.
 
-##### Special Considerations
+### Special Considerations
 
 This function is thread safe. The function gets the data in a thread-safe way, but the data is not safe if the service is altered from another thread.
 

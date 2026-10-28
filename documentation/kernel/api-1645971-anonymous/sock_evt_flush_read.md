@@ -13,7 +13,7 @@
 sock_evt_flush_read = 5
 ```
 
-#### Discussion
+## Discussion
 
 The read socket buffer has been flushed.
 

@@ -24,7 +24,7 @@ var type: MDLMeshBufferType { get }
 @property (nonatomic, readonly) MDLMeshBufferType type;
 ```
 
-#### Discussion
+## Discussion
 
 A [`MDLMeshBuffer`](../../ModelIO/mdlmeshbuffer.md) object can contain Model I/O mesh vertex data or submesh index data.
 

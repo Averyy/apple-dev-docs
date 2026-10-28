@@ -23,7 +23,7 @@ case failureAirplaneModeEnabled
 INStartCallIntentResponseCodeFailureAirplaneModeEnabled
 ```
 
-#### Discussion
+## Discussion
 
 Use this code when the call can’t start due to the device being in airplane mode.
 

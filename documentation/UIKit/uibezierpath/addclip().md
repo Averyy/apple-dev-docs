@@ -24,7 +24,7 @@ func addClip()
 - (void) addClip;
 ```
 
-#### Discussion
+## Discussion
 
 This method modifies the visible drawing area of the current graphics context. After calling it, subsequent drawing operations result in rendered content only if they occur within the fill area of the specified path.
 

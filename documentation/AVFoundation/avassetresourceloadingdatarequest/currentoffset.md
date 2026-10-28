@@ -24,7 +24,7 @@ var currentOffset: Int64 { get }
 @property (nonatomic, readonly) long long currentOffset;
 ```
 
-#### Discussion
+## Discussion
 
 When incrementally loading data you should begin loading at this offset, returning the data by invoking the [`respond(with:)`](./respond%28with%29.md) method. Bytes previous to this value have already been provided.
 

@@ -5,7 +5,7 @@
 
 Create and update in-app event metadata that’s localized.
 
-#### Overview
+## Overview
 
 > **Note**:  The in-app event screenshot and in-app event video clip relationships are deprecated. Manage in-app event media with the [App Asset Library](./app-asset-library.md) and [placements](./app-asset-library-placements.md) instead.
 

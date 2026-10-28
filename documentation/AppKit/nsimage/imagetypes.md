@@ -19,11 +19,11 @@ class var imageTypes: [String] { get }
 @property (class, copy, readonly) NSArray<NSString *> * imageTypes;
 ```
 
-#### Return Value
+## Return Value
 
 An array of `NSString` objects, each of which contains a UTI identifying a supported image type. Some sample image-related UTI strings include “`public.image`”, “`public.jpeg`”, and “`public.tiff`”. For a list of supported types, see `UTCoreTypes.h`.
 
-#### Discussion
+## Discussion
 
 The returned list includes UTIs all file types supported by registered subclasses of `NSImageRep` plus those that can be converted to a supported type by a user-installed filter service. You can use the returned UTI strings with any method that supports UTIs.
 

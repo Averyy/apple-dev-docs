@@ -23,7 +23,7 @@ func executeOptimizerUpdate(options: MLCExecutionOptions = [], completionHandler
 - (BOOL) executeOptimizerUpdateWithOptions:(MLCExecutionOptions) options completionHandler:(MLCGraphCompletionHandler) completionHandler;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the execution was successful.
 

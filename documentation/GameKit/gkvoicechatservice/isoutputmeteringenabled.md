@@ -25,7 +25,7 @@ var isOutputMeteringEnabled: Bool { get set }
 @property (nonatomic, getter=isOutputMeteringEnabled) BOOL outputMeteringEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), your application can read the [`outputMeterLevel`](./outputmeterlevel.md) property to monitor sound level of remote participants. If [`false`](../../Swift/false.md), the value of the [`outputMeterLevel`](./outputmeterlevel.md) property is undefined. Default is [`false`](../../Swift/false.md). When your application doesn’t need to monitor remote participants, it should set this property to [`false`](../../Swift/false.md) to improve performance.
 

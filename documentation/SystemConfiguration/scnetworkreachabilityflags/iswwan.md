@@ -23,7 +23,7 @@ static var isWWAN: SCNetworkReachabilityFlags { get }
 kSCNetworkReachabilityFlagsIsWWAN
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This absence of this flag does not necessarily mean that a connection will never pass over a cellular network. If you need to robustly prevent cellular networking, read [Avoiding Common Networking Mistakes](https://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/NetworkingOverview/CommonPitfalls/CommonPitfalls.html#//apple_ref/doc/uid/TP40010220-CH4) in [Networking Overview](https://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/NetworkingOverview/Introduction/Introduction.html#//apple_ref/doc/uid/TP40010220).
 

@@ -25,7 +25,7 @@ enum SCNShadowMode
 enum SCNShadowMode : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Each shadow mode may have a positive or negative effect on rendering performance, depending on the contents of the scene. Test your app to determine which shadow mode provides the best balance between performance and quality for the scenes you want to render.
 

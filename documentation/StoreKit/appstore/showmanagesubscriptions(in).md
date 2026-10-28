@@ -27,7 +27,7 @@ static func showManageSubscriptions(in scene: UIWindowScene) async throws
 - [Testing failing subscription renewals and Apple In-App Purchases](../testing-failing-subscription-renewals-and-in-app-purchases.md)
 - [Testing win-back offers in Xcode](../testing-win-back-offers-in-xcode.md)
 
-#### Discussion
+## Discussion
 
 Use this function to display the manage subscriptions sheet within your app. Consider adding a manage subscriptions option to your app. For design guidance on supporting this functionality, see [Human Interface Guidelines > Apple In-App Purchase > Helping People Manage Their Subscriptions](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase/overview/auto-renewable-subscriptions/#helping-people-manage-their-subscriptions).
 
@@ -40,7 +40,7 @@ Avoid showing the user interface for this feature in Mac apps built with Mac Cat
 - In Mac apps built with Mac Catalyst, enclose the code in a compilation conditional block that uses the `targetEnvironment():` platform condition. For more information on Mac Catalyst, see [Creating a Mac version of your iPad app](../../UIKit/creating-a-mac-version-of-your-ipad-app.md).
 - For iOS apps running on Apple silicon, if [`isiOSAppOnMac`](../../Foundation/processinfo/isiosapponmac.md) is `true,` avoid showing the user interface for this feature.
 
-##### Test managing subscriptions
+### Test managing subscriptions
 
 Test the managing subscriptions functionality in the sandbox environment and StoreKit testing in Xcode. For more information about testing, see [Testing at all stages of development with Xcode and the sandbox](../testing-at-all-stages-of-development-with-xcode-and-the-sandbox.md) and [Setting up StoreKit Testing in Xcode](../../Xcode/setting-up-storekit-testing-in-xcode.md).
 

@@ -25,7 +25,7 @@ func setDynamicAspectRatio(_ dynamicAspectRatio: AVCaptureDevice.AspectRatio) as
 - (void) setDynamicAspectRatio:(AVCaptureAspectRatio) dynamicAspectRatio completionHandler:(void (^)(CMTime syncTime, NSError *error)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 This is the only way of setting [`dynamicAspectRatio`](./dynamicaspectratio.md). This method throws an `NSInvalidArgumentException` if `dynamicAspectRatio` is not a supported aspect ratio found in the device’s activeFormat’s [`supportedDynamicAspectRatios`](./format/supporteddynamicaspectratios.md). This method throws an `NSGenericException` if you call it without first obtaining exclusive access to the device using [`lockForConfiguration()`](./lockforconfiguration%28%29.md).
 

@@ -23,7 +23,7 @@ protocol ARSKViewDelegate : ARSessionObserver, SKViewDelegate
 @protocol ARSKViewDelegate <SKViewDelegate, ARSessionObserver>
 ```
 
-#### Overview
+## Overview
 
 Implement this protocol to provide SpriteKit content corresponding to [`ARAnchor`](./aranchor.md) objects tracked by the view’s AR session, or to manage the view’s automatic updating of such content.
 

@@ -11,11 +11,11 @@ Frees all packets currently held in a synchronized queue and releases them back 
 virtual UInt32 lockFlush();
 ```
 
-#### Return Value
+## Return Value
 
 Returns the number of packets freed.
 
-#### Overview
+## Overview
 
 The size of the queue is cleared to zero. A spinlock is used to synchronize access to the queue.
 

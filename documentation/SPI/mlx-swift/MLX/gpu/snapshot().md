@@ -17,7 +17,7 @@ Return a snapshot of memory stats – see [`Memory.Snapshot`](../memory/snapshot
 static func snapshot() -> GPU.Snapshot
 ```
 
-#### Discussion
+## Discussion
 
 Get the current memory use.  This can be used to measure before/after and current memory use:
 

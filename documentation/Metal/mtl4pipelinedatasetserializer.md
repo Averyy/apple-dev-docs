@@ -28,7 +28,7 @@ protocol MTL4PipelineDataSetSerializer : NSObjectProtocol
 
 - [Using the Metal 4 compilation API](./using-the-metal-4-compilation-api.md)
 
-#### Overview
+## Overview
 
 Pipeline data serializer instances allow you to create binary archives and serialize pipeline scripts to use with the offline Metal binary generator (`metal-tt`) [Compiling binary archives from a custom configuration script](./compiling-binary-archives-from-a-custom-configuration-script.md).
 

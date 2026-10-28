@@ -21,7 +21,7 @@ Returns two single-precision vectors that contain stereo monotonically increment
 static func stereoRamp<U>(withInitialValue initialValue: inout Float, multiplyingBy multiplierOne: U, _ multiplierTwo: U, increment: Float) -> (firstOutput: [Float], secondOutput: [Float]) where U : AccelerateBuffer, U.Element == Float
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to create two vectors by multiplying the values in two input vectors with the corresponding values of a ramp.
 

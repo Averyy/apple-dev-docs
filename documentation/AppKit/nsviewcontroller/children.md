@@ -19,7 +19,7 @@ var children: [NSViewController] { get set }
 @property (copy) NSArray<__kindof NSViewController *> * childViewControllers;
 ```
 
-#### Discussion
+## Discussion
 
 You can add or remove child view controllers by using this property. When you do, the [`addChild(_:)`](./addchild%28_%29.md) or [`removeFromParent()`](./removefromparent%28%29.md) method gets called accordingly.
 

@@ -11,7 +11,7 @@ Occlude your app’s virtual content where ARKit recognizes people in the camera
 - iPadOS 13.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC 2019 session [607: Bringing People into AR](https://developer.apple.com/videos/play/wwdc19/607/).
 

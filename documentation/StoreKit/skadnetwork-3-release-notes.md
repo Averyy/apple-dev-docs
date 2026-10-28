@@ -5,7 +5,7 @@
 
 A version of SKAdNetwork available in iOS 14.6 and later.
 
-#### Overview
+## Overview
 
 Use `“3.0”` as the version number when signing ads for this version.
 
@@ -15,7 +15,7 @@ You’re eligible to receive a version 3.0 postback if all three of the followin
 - The source app is built with iOS 14.6 SDK or later.
 - The advertised app is App Store-signed and is running on a device with iOS 14.6 or later.
 
-##### New features
+### New features
 
 New features include:
 

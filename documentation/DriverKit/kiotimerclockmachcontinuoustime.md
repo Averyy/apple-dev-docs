@@ -18,7 +18,7 @@ A clock type representing the number of ticks since the last reboot, including w
 kIOTimerClockMachContinuousTime
 ```
 
-#### Discussion
+## Discussion
 
 This constant is a clock type whose value is from `mach_continuous_time()` in tick units.
 

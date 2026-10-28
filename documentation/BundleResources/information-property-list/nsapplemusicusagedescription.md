@@ -17,7 +17,7 @@ A message that tells people why the app is requesting access to their media libr
 - **Name**: `NSAppleMusicUsageDescription` (Privacy - Media Library Usage Description)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 Set the value of this key to a user-readable description of how your app intends to use a person’s media library. The first time your app attempts to access their library, the system prompts the user to grant or deny access to your app. The system includes this key’s description in the dialog it displays to the user.
 

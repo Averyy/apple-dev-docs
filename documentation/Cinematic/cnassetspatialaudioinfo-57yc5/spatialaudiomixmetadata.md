@@ -17,7 +17,7 @@
 @property (nonatomic, readonly) NSData * spatialAudioMixMetadata;
 ```
 
-#### Discussion
+## Discussion
 
 The result of audio analysis during recording which contains metadata necessary to properly configure the Audio Mix feature during playback or editing.. Can be used with `AUAudioUnit` instances that support AudioUnitPropertyID `kProperty_SpatialAudioMixMetadata`
 

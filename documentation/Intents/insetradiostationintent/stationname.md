@@ -32,7 +32,7 @@ var stationName: String? { get }
 @property (atomic, copy, readonly, nullable) NSString * stationName;
 ```
 
-#### Discussion
+## Discussion
 
 For stations that are identifiable by name, this property contains that name. If the user doesn’t provide other identifying information, use the station name to look up the appropriate channel or frequency information.
 

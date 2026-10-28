@@ -21,7 +21,7 @@ Creates classification metrics for predicted and ground truth labels.
 init<Predicted, Correct>(predicted: Predicted, groundTruth: Correct, labels: Set<Label>) where Label == Predicted.Element, Predicted : Sequence, Correct : Sequence, Predicted.Element == Correct.Element
 ```
 
-#### Discussion
+## Discussion
 
 The predicted and ground truth collections are matched element by element in the order they are provided. Both collections must have the same number of elements. Labels not in the labels set are ignored.
 

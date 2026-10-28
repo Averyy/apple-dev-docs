@@ -21,11 +21,11 @@ init?(pickerMask mask: Int, colorPanel owningColorPanel: NSColorPanel)
 - (instancetype) initWithPickerMask:(NSUInteger) mask colorPanel:(NSColorPanel *) owningColorPanel;
 ```
 
-#### Return Value
+## Return Value
 
 If your color picker responds to any of the modes represented in `panelModes`, it should perform its initialization and return an initialized color picker. Color pickers that do so have their buttons inserted in the color panel and continue to receive messages from the panel as the user manipulates it. If the color picker doesn’t respond to any of the modes represented in `panelModes`, it should do nothing and return `nil`.
 
-#### Discussion
+## Discussion
 
 This method is sent by the `NSColorPanel` to all implementors of the color-picking protocols when the application’s color panel is first initialized. In order for your color picker to receive this message, it must have a bundle in your application’s “ColorPickers” directory (described in [Adding Custom Color Pickers to a Color Panel](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DrawColor/Tasks/AddingColorPickers.html#//apple_ref/doc/uid/20000793)).
 

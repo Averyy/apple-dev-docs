@@ -25,7 +25,7 @@ var publicKeyHash: Data? { get set }
 @property (copy, nullable) NSData * publicKeyHash;
 ```
 
-#### Discussion
+## Discussion
 
 This property is equivalent to the `kSecAttrApplicationLabel` type attribute.
 

@@ -24,7 +24,7 @@ optional func preparePreviewOfSearchableItem(identifier: String, queryString: St
 - (void) preparePreviewOfSearchableItemWithIdentifier:(NSString *) identifier queryString:(NSString *) queryString completionHandler:(void (^)(NSError *)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to prepare the content of the view controller with the data that the searchable item represents.
 

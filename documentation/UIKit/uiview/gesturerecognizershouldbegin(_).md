@@ -23,11 +23,11 @@ func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> B
 - (BOOL) gestureRecognizerShouldBegin:(UIGestureRecognizer *) gestureRecognizer;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the gesture recognizer should continue tracking touch events and use them to trigger a gesture or [`false`](../../Swift/false.md) if it should transition to the [`UIGestureRecognizer.State.failed`](../uigesturerecognizer/state-swift.enum/failed.md) state.
 
-#### Discussion
+## Discussion
 
 Subclasses may override this method and use it to prevent the recognition of particular gestures. For example, the [`UISlider`](../uislider.md) class uses this method to prevent swipes parallel to the slider’s travel direction and that start in the thumb.
 

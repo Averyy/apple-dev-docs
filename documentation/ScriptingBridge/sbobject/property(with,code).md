@@ -20,11 +20,11 @@ func property(with cls: AnyClass, code: AEKeyword) -> SBObject
 - (SBObject *) propertyWithClass:(Class) cls code:(AEKeyword) code;
 ```
 
-#### Return Value
+## Return Value
 
 An instance of the designated `class` that represents the receiver’s property identified by `code`.
 
-#### Discussion
+## Discussion
 
 `SBObject` subclasses use this method to implement application-specific property accessor methods. You should not need to call this method directly.
 

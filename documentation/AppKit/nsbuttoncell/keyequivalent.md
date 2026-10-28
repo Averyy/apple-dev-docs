@@ -19,7 +19,7 @@ var keyEquivalent: String { get set }
 @property (copy) NSString * keyEquivalent;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is the string that contains the key equivalent character of the button, or the empty string if one hasn’t been defined. Buttons don’t have a default key equivalent.
 

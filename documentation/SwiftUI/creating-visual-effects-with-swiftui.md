@@ -12,7 +12,7 @@ Add scroll effects, rich color treatments, custom transitions, and advanced effe
 - Mac Catalyst 18.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC24 session 10151: [Create custom visual effects in SwiftUI](https://developer.apple.com/wwdc24/10151/).
 

@@ -22,7 +22,7 @@ class let touchBarEnterFullScreenTemplateName: String
 extern NSImageName const NSImageNameTouchBarEnterFullScreenTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for enter full screen](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2825112@2x.png)
 

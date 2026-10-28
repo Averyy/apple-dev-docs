@@ -25,7 +25,7 @@ var url: URL? { get }
 @property (copy, readonly, nullable) NSURL * URL;
 ```
 
-#### Discussion
+## Discussion
 
 This property is only available after saving a share record to the server. This URL is stable and persists across shares and reshares of the same root record.
 

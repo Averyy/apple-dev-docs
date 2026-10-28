@@ -20,7 +20,7 @@ Creates a timeline for when you want WidgetKit to update a widget’s view.
 init(entries: [EntryType], policy: TimelineReloadPolicy)
 ```
 
-#### Discussion
+## Discussion
 
 Set the date and time of the first entry in a timeline to the current date and time. Add entries for future dates and times when you want WidgetKit to update the widget’s view. Note that the widget’s view might not be updated precisely at a timeline entry’s date and time; the update might occur later.
 

@@ -9,7 +9,7 @@ Retrieve a single negative keyword by its unique identifier.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint retrieves a single negative keyword by its ID. The response indicates whether the record is a campaign-level or ad-group-level exclusion based on the presence of the `adGroupId` field. Campaign-level negatives don’t include `adGroupId` in the response. Ad-group-level negatives include it.
 
@@ -20,19 +20,19 @@ The presence of `adGroupId` in the response distinguishes which level the negati
 | `adGroupId` is absent from the response | Campaign-level negative keyword: applies to all ad groups in the campaign |
 | `adGroupId` is present in the response | Ad-group-level negative keyword: scoped to a single ad group |
 
-Deleted negative keywords remain retrievable by ID and never expose a `bid` field.
+Deleted negative keywords aren’t retrievable by ID. The endpoint returns 404 Not Found. Negative keywords never expose a `bid` field.
 
 | Constraint | Detail |
 | --- | --- |
-| Deleted negative keywords are returned | A deleted negative keyword is returned with `deleted: true`. The record is not removed from GET by ID responses. |
+| Deleted negative keywords return 404 | A request for a deleted negative keyword returns 404 Not Found. |
 | Use query endpoint for listing | `GET /negative-keywords/{id}` returns a single record. Use `POST /negative-keywords/query` to filter and list. |
 | No `bid` field | Negative keywords never have a bid field in the response. |
 
-#### Payload Examples
+## Payload Examples
 
 **Campaign-Level Response**:
 
-##### Request
+### Request
 
 A campaign-level negative keyword. The `adGroupId` field is absent. This exclusion applies across all ad groups in the campaign.
 
@@ -40,7 +40,7 @@ A campaign-level negative keyword. The `adGroupId` field is absent. This exclusi
 GET /v1/negative-keywords/777888999
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -60,7 +60,7 @@ GET /v1/negative-keywords/777888999
 
 **Ad Group-Level Response**:
 
-##### Request
+### Request
 
 An ad-group-level negative keyword. The `adGroupId` field is present. This exclusion is scoped to that ad group only.
 
@@ -68,7 +68,7 @@ An ad-group-level negative keyword. The `adGroupId` field is present. This exclu
 GET /v1/negative-keywords/777888998
 ```
 
-##### Response
+### Response
 
 ```json
 {

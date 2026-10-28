@@ -26,11 +26,11 @@ init(serviceType: String, discoveryInfo info: [String : String]?, session: MCSes
 - (instancetype) initWithServiceType:(NSString *) serviceType discoveryInfo:(NSDictionary<NSString *,NSString *> *) info session:(MCSession *) session;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized instance, or `nil` if an error occurred.
 
-#### Discussion
+## Discussion
 
 This method throws an exception if a valid `peerID` object is not provided, or if `serviceType` is not a legal Bonjour service type.
 

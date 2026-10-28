@@ -6,7 +6,7 @@
 
 An atom that contains other atoms that describe where to find a particular movie, the system requirements to play that movie, and a quality rating.
 
-#### Overview
+## Overview
 
 The reference movie descriptor atom contains other atoms that describe where a particular movie can be found, and optionally what the system requirements are to play that movie, as well as an optional quality rating for that movie.
 

@@ -19,7 +19,7 @@ func MDQueryCopyValueListAttributes(_ query: MDQuery!) -> CFArray!
 CFArrayRef MDQueryCopyValueListAttributes(MDQueryRef query);
 ```
 
-#### Return Value
+## Return Value
 
 A CFArrayRef containing the attribute names of the collected values.
 

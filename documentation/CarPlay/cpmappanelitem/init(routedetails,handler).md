@@ -21,11 +21,11 @@ init(routeDetails: [CPRouteDetail], handler: ((CPMapPanelItem, @escaping () -> V
 - (instancetype) initWithRouteDetails:(NSArray<CPRouteDetail *> *) routeDetails handler:(void (^)(CPMapPanelItem *item, dispatch_block_t completionBlock)) handler;
 ```
 
-#### Return Value
+## Return Value
 
 A map panel item initialized with route details.
 
-#### Discussion
+## Discussion
 
 For this type of item, the map panel displays up to four route details per item.
 

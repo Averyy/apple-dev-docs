@@ -17,7 +17,7 @@ Tells the delegate that the connection view needs a title to display for its cur
 func connectionView(_ connectionView: PlaygroundBluetoothConnectionView, titleFor state: PlaygroundBluetoothConnectionView.State) -> String
 ```
 
-#### Return Value
+## Return Value
 
 A localized string corresponding to the current state of the view.
 

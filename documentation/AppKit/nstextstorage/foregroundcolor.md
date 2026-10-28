@@ -19,7 +19,7 @@ var foregroundColor: NSColor? { get set }
 @property (strong, nullable) NSColor * foregroundColor;
 ```
 
-#### Discussion
+## Discussion
 
 Unless you’re dealing with scriptability, you shouldn’t use or modify this property directly.
 

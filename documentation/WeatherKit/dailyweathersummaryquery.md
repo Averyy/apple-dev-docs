@@ -21,7 +21,7 @@ A structure that encapsulates a generic daily weather summary dataset request.
 struct DailyWeatherSummaryQuery<T> where T : Decodable, T : Encodable, T : Equatable, T : Sendable
 ```
 
-#### Overview
+## Overview
 
 Use the properties of this structure to create a daily weather summary query. You can combine multiple queries into a single `WeatherService` request.
 

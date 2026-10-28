@@ -18,7 +18,7 @@ The input language to translate from.
 final let sourceLanguage: Locale.Language?
 ```
 
-#### Discussion
+## Discussion
 
 If this value is set to `nil`, the session tries to identify the source language automatically. If it can’t identify the language, it prompts the person to choose the source language to use for the translation.
 

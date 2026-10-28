@@ -20,7 +20,7 @@ The outer angle of the spotlight in degrees.
 var outerAngleInDegrees: Float
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `60.0` degrees.
 

@@ -24,11 +24,11 @@ class func linearToSRGBToneCurve() -> any CIFilter & CILinearToSRGBToneCurve
 + (CIFilter<CILinearToSRGBToneCurve> *) linearToSRGBToneCurveFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the linear-to-sRGB tone curve filter to an image. The effect converts an image in linear color space to sRGB.
 

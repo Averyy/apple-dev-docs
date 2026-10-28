@@ -20,7 +20,7 @@ class AMWorkflowView
 @interface AMWorkflowView : NSView
 ```
 
-#### Overview
+## Overview
 
 A workflow view displays an instance of [`AMWorkflow`](./amworkflow.md).
 

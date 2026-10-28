@@ -15,7 +15,7 @@ Returns a Boolean value that indicates whether the accessory is held.
 extern bool ar_accessory_anchor_is_held(ar_accessory_anchor_t accessory_anchor);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the accessory is currently held, otherwise `false`.
 

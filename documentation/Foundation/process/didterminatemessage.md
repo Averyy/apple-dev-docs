@@ -15,7 +15,7 @@ A message the system sends when a task stops operation.
 struct DidTerminateMessage
 ```
 
-#### Overview
+## Overview
 
 Observe this message with the identifier [`didTerminate`](../notificationcenter/messageidentifier/didterminate.md), or specify its type directly to the `addObserver(of:for:using:)` method. The [`Subject`](../notificationcenter/mainactormessage/subject.md) of this message type is [`Process`](../process.md).
 

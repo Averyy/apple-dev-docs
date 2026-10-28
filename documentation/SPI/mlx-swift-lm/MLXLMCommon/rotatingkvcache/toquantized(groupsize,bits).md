@@ -17,7 +17,7 @@ Convert to a quantized cache.
 func toQuantized(groupSize: Int = 64, bits: Int = 4) throws -> QuantizedKVCache
 ```
 
-#### Discussion
+## Discussion
 
 Rotating-cache quantization needs a representation that preserves temporal ordering and rotation metadata. Until that representation exists, callers can recover by retaining the full-precision rotating cache.
 

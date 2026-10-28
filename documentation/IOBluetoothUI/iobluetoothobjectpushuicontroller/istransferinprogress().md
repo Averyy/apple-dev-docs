@@ -19,7 +19,7 @@ func isTransferInProgress() -> Bool
 - (BOOL) isTransferInProgress;
 ```
 
-#### Return Value
+## Return Value
 
 The state of the transfer
 

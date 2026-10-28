@@ -5,7 +5,7 @@
 
 Define interactions from taps, clicks, and swipes to fine-grained gestures.
 
-#### Overview
+## Overview
 
 Respond to gestures by adding gesture modifiers to your views. You can listen for taps, drags, pinches, and other standard gestures.
 

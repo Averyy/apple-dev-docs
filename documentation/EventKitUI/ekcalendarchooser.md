@@ -22,7 +22,7 @@ class EKCalendarChooser
 @interface EKCalendarChooser : UIViewController
 ```
 
-#### Overview
+## Overview
 
 Use the calendar chooser view controller to allow users to select one or more calendars when creating or editing a calendar event. The calendar chooser also lets you specify whether to display all calendars, or only those that may be written to. The view controller can be pushed on a navigation stack or presented modally.
 

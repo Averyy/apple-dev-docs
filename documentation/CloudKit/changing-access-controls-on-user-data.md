@@ -5,11 +5,11 @@
 
 Restrict access to or remove restrictions from a user’s data at their request.
 
-#### Overview
+## Overview
 
 Users can ask you to prevent any further changes to their data that your app stores in CloudKit. Use the `restrict` API that CloudKit Web Services provides to honor those requests. You can remove restrictions at the user’s request by calling the `unrestrict` API.
 
-##### Identify Containers
+### Identify Containers
 
 To be sure that you restrict changes and access to all of a user’s data that your app stores, cross-reference the list of containers your app has access to in Xcode and assemble a list of those containers’ identifiers. [Identifying an App’s Containers](./identifying-an-app-s-containers.md) describes this process.
 
@@ -21,7 +21,7 @@ let documents = CKContainer(identifier: "iCloud.com.example.myexampleapp.documen
 let settings = CKContainer(identifier: "iCloud.com.example.myexampleapp.settings")
 ```
 
-##### Create Reusable API Tokens
+### Create Reusable API Tokens
 
 The `restrict` API call requires a token each time you call the API. You create an API token once for each container in your app using the CloudKit Dashboard, and reuse it in each API call to a specific container.
 
@@ -39,7 +39,7 @@ let containerAPITokens: [CKContainer: String] = [
 let containers = Array(containerAPITokens.keys)
 ```
 
-##### Create Web Authentication Tokens
+### Create Web Authentication Tokens
 
 The `restrict` API call requires a new authentication token each time you call the API, in addition to the reusable API token. The example below shows how to create that token using an instance of [`CKFetchWebAuthTokenOperation`](./ckfetchwebauthtokenoperation.md):
 
@@ -69,7 +69,7 @@ for container in containers {
 
 After you receive the authentication token, you can immediately call the `restrict` API once for each container.
 
-##### Restrict Data Access in Each Container
+### Restrict Data Access in Each Container
 
 The example below defines the `restrict(container:apiToken:webToken:completionHandler:)` and `requestRestriction(url:completionHandler:)` methods for the example above to build the network request for the `restrict` API:
 
@@ -125,7 +125,7 @@ func restrict(container: CKContainer, apiToken: String, webToken: String, comple
 }
 ```
 
-##### Remove Restrictions
+### Remove Restrictions
 
 When a user requests that you remove restrictions, you use the `unrestrict` API, which performs the opposite operation that the `restrict` API performs.
 

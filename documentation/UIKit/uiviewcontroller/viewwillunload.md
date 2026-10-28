@@ -19,7 +19,7 @@ Called just before releasing the controller’s view from memory.
 - (void) viewWillUnload;
 ```
 
-#### Discussion
+## Discussion
 
 In iOS 5 and earlier, when a low-memory condition occurred and the current view controller’s views were not needed, the system could opt to remove those views from memory. This method was called prior to releasing the actual views so you could perform any cleanup prior to the view being deallocated. For example, you could use this method to remove views as observers of notifications or record the state of the views so it can be reestablished when the views are reloaded.
 

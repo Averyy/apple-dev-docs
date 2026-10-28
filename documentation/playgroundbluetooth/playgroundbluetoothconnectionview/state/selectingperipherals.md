@@ -16,7 +16,7 @@ One or more peripherals have been discovered and can be selected.
 case selectingPeripherals
 ```
 
-#### Discussion
+## Discussion
 
 The connection view title corresponding to this state should be in one of the following formats:
 

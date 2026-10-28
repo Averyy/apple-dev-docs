@@ -23,7 +23,7 @@ init(collectionViewLayout layout: UICollectionViewLayout)
 - (instancetype) initWithCollectionViewLayout:(UICollectionViewLayout *) layout;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `UICollectionViewController` object or `nil` if the object could not be created.
 

@@ -26,7 +26,7 @@ func centralManagerDidUpdateState(_ central: CBCentralManager)
 - (void) centralManagerDidUpdateState:(CBCentralManager *) central;
 ```
 
-#### Discussion
+## Discussion
 
 You implement this required method to ensure that the central device supports Bluetooth low energy and that it’s available to use. You should issue commands to the central manager only when the central manager’s [`state`](../cbmanager/state.md) indicates it’s powered on. A state with a value lower than [`CBManagerState.poweredOn`](../cbmanagerstate/poweredon.md) implies that scanning has stopped, which in turn disconnects any previously-connected peripherals. If the state moves below [`CBManagerState.poweredOff`](../cbmanagerstate/poweredoff.md), all [`CBPeripheral`](../cbperipheral.md) objects obtained from this central manager become invalid; you must retrieve or discover these peripherals again. For a complete list of possible states, see [`CBManagerState`](../cbmanagerstate.md).
 

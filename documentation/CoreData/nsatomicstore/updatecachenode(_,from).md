@@ -25,13 +25,13 @@ func updateCacheNode(_ node: NSAtomicStoreCacheNode, from managedObject: NSManag
 - (void) updateCacheNode:(NSAtomicStoreCacheNode *) node fromManagedObject:(NSManagedObject *) managedObject;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked by the framework after a save operation on a managed object context, once for each updated `NSManagedObject` instance.
 
 You override this method in a subclass to take the information from `managedObject` and update `node`.
 
-##### Special Considerations
+### Special Considerations
 
 You must override this method.
 

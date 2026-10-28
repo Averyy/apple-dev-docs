@@ -19,7 +19,7 @@ static var securityScopeAllowOnlyReadAccess: NSURL.BookmarkCreationOptions { get
 NSURLBookmarkCreationSecurityScopeAllowOnlyReadAccess
 ```
 
-#### Discussion
+## Discussion
 
 This option is only meaningful when used along with the [`withSecurityScope`](./withsecurityscope.md) option,
 

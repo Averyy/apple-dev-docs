@@ -21,11 +21,11 @@ init!(forServiceType serviceType: String!)
 + (SLComposeViewController *) composeViewControllerForServiceType:(NSString *) serviceType;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a social compose view controller or `nil` if an error occurs.
 
-#### Discussion
+## Discussion
 
 Use this method to create a social compose view controller. Do not use any other methods.
 

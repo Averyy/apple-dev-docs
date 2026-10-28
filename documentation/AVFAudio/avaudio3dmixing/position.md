@@ -25,7 +25,7 @@ var position: AVAudio3DPoint { get set }
 @property (nonatomic) AVAudio3DPoint position;
 ```
 
-#### Discussion
+## Discussion
 
 The system specifies the coordinates in meters. Only the [`AVAudioEnvironmentNode`](../avaudioenvironmentnode.md) class implements this property.
 

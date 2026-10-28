@@ -19,11 +19,11 @@ func IOBluetoothNSStringFromDeviceAddress(_ deviceAddress: UnsafePointer<Bluetoo
 extern NSString *IOBluetoothNSStringFromDeviceAddress(const BluetoothDeviceAddress *deviceAddress);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the created address string.
 
-#### Discussion
+## Discussion
 
 The resultant string will be in this format: “00-11-22-33-44-55”
 

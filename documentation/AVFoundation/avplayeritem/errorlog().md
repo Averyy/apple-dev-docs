@@ -28,11 +28,11 @@ func errorLog() -> AVPlayerItemErrorLog?
 - (AVPlayerItemErrorLog *) errorLog;
 ```
 
-#### Return Value
+## Return Value
 
 An object that represents a snapshot of the error log. The returned value can be `nil`.
 
-#### Discussion
+## Discussion
 
 If the method returns `nil`, there is no logging information currently available for the player item.
 

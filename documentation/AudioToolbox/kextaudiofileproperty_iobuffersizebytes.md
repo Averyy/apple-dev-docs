@@ -24,7 +24,7 @@ var kExtAudioFileProperty_IOBufferSizeBytes: ExtAudioFilePropertyID { get }
 kExtAudioFileProperty_IOBufferSizeBytes
 ```
 
-#### Discussion
+## Discussion
 
 This property has a value only when there is an underlying audio converter object present.
 

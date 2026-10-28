@@ -25,7 +25,7 @@ case surfaceNormal
 SCNParticleBirthDirectionSurfaceNormal
 ```
 
-#### Discussion
+## Discussion
 
 The particle system creates new particles at points in space defined by the [`emitterShape`](../scnparticlesystem/emittershape.md) geometry. When a new particle is emitted, the geometry’s surface normal vector at the point nearest the particle determines the particle’s initial direction. (Note that the [`birthLocation`](../scnparticlesystem/birthlocation.md) property defines where particles may be created relative to the [`emitterShape`](../scnparticlesystem/emittershape.md) geometry.)
 

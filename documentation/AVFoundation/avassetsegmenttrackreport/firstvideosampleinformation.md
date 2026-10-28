@@ -24,7 +24,7 @@ var firstVideoSampleInformation: AVAssetSegmentReportSampleInformation? { get }
 @property (nonatomic, readonly, nullable) AVAssetSegmentReportSampleInformation * firstVideoSampleInformation;
 ```
 
-#### Discussion
+## Discussion
 
 The value is `nil` if this track isn’t a video track, or if sample information isn’t available.
 

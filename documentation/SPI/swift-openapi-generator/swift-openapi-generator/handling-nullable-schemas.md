@@ -10,7 +10,7 @@ framework: "swift-openapi-generator/swift-openapi-generator"
 
 Learn how the generator handles schema nullability.
 
-#### Overview
+## Overview
 
 Both the OpenAPI specification itself and JSON Schema, which OpenAPI uses to describe payloads, make the important distinction between optional and required values.
 
@@ -18,13 +18,13 @@ As Swift not only supports, but enforces this distinction as well, Swift OpenAPI
 
 This document describes the rules used to decide which generated Swift types and properties are marked as optional.
 
-##### Optionality in OpenAPI and JSON Schema
+### Optionality in OpenAPI and JSON Schema
 
 [OpenAPI 3.0.3](https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.3.md) uses JSON Schema [Draft 5](https://json-schema.org/specification-links.html#draft-5), while [OpenAPI 3.1.0](https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.1.0.md) uses JSON Schema [2020-12](https://json-schema.org/specification-links.html#2020-12). There are a few differences that we call out below, but it’s important to be aware of the fact that the generator needs to handle both.
 
 The generator uses a simple rule: if any of the places that hint at optionality mark a field as optional, the value is generated as optional. It can be thought of as an `OR` operator.
 
-##### Standalone schemas
+### Standalone schemas
 
 A schema in JSON Schema Draft 5 (used by OpenAPI 3.0.3) can be marked as optional using:
 
@@ -54,7 +54,7 @@ MyOptionalString:
 
 The nullability of a schema is propagated through references. That means if a schema is a reference, the generator looks up the target schema of the reference to decide whether the value is treated as optional.
 
-##### Schemas as object properties
+### Schemas as object properties
 
 In addition to the schema itself being marked as nullable, we also have to consider the context in which the schema is used.
 
@@ -93,7 +93,7 @@ MyPerson:
 
 > **The rule can be summarized as**: `property is optional := schema is nullable OR property is not required`.
 
-##### Schemas in parameters
+### Schemas in parameters
 
 Another context in which a schema can appear, in addition to being standalone or an object property, is as a parameter. Examples of parameters are header fields, query items, path parameters. The following also applies to request bodies, even though they’re not technically parameters.
 

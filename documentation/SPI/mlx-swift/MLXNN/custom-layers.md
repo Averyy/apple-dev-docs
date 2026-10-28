@@ -10,13 +10,13 @@ framework: "mlx-swift/MLXNN"
 
 Creating custom modules using `MLXNN`.
 
-#### Neural Networks
+## Neural Networks
 
 Writing arbitrarily complex neural networks in MLX can be done using only `MLXArray` and `valueAndGrad()`.  However, this requires the user to write again and again the same simple neural network operations as well as handle all the parameter state and initialization manually and explicitly.
 
 The [MLXNN](./MLXNN.md) package solves this problem by providing an intuitive way of composing neural network layers, initializing their parameters, freezing them for finetuning and more.
 
-#### The Module Class
+## The Module Class
 
 The workhorse of any neural network library is the [`Module`](./module.md) class. In MLX the [`Module`](./module.md) class is a container of `MLXArray` or [`Module`](./module.md) instances. Its main function is to provide a way to recursively **access** and **update** its parameters and those of its submodules.
 
@@ -62,7 +62,7 @@ let output = layer(input)
 
 See the *Converting From Python* section about other considerations when converting code.
 
-##### Parameters
+### Parameters
 
 A parameter of a module is any public member of type `MLXArray` (its name should not start with `_`). It can be arbitrarily nested in other [`Module`](./module.md) instances or `[MLXArray]` and `[String:MLXArray]`.
 
@@ -72,13 +72,13 @@ A [`Module`](./module.md) can also keep track of “frozen” parameters. See th
 
 See the *ModuleInfo and ParameterInfo* section for more information about using these in swift.
 
-##### Updating the Parameters
+### Updating the Parameters
 
 MLX modules allow accessing and updating individual parameters. However, most times we need to update large subsets of a module’s parameters. This action is performed by [`update(parameters:verify:path:modulePath:)`](./module/update%28parameters,verify,path,modulepath%29.md).
 
 See also [Training a Model](./training.md).
 
-##### Inspecting Modules
+### Inspecting Modules
 
 The simplest way to see the model architecture is to print it. Following along with the above example, you can print the `FeedForward` with:
 
@@ -118,7 +118,7 @@ resulting in:
 ]
 ```
 
-#### ModuleInfo and ParameterInfo
+## ModuleInfo and ParameterInfo
 
 The [`ModuleInfo`](./moduleinfo.md) and [`ParameterInfo`](./parameterinfo.md) provide two important features for module instance variables:
 
@@ -179,7 +179,7 @@ The `ModuleInfo` provides a hook for [`QuantizedLinear`](./quantizedlinear.md) a
 
 Note that `MLXArray` is settable without any [`ParameterInfo`](./parameterinfo.md) – it has an `update()` method.
 
-#### Converting From Python
+## Converting From Python
 
 Consider [this example from a Llama model](https://github.com/ml-explore/mlx-examples/blob/main/llms/mlx_lm/models/llama.py):
 

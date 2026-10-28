@@ -22,7 +22,7 @@ var attributedTitle: NSAttributedString? { get set }
 @property (nonatomic, strong, nullable) NSAttributedString * attributedTitle;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `nil`.
 

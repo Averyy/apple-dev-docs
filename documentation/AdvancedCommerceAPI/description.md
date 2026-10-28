@@ -19,7 +19,7 @@ string description
 
 **Maximum Length**: `45`
 
-#### Discussion
+## Discussion
 
 You provide a description of a SKU when you create or modify a purchase transaction. You can use this description for your own purpose; it isn’t displayed to customers or used for any purpose by the API.
 

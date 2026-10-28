@@ -11,11 +11,11 @@ Accessor to the task of the mapping.
 virtual task_t getAddressTask();
 ```
 
-#### Return Value
+## Return Value
 
 A mach task_t.
 
-#### Overview
+## Overview
 
 This method returns the mach task the mapping exists in.
 

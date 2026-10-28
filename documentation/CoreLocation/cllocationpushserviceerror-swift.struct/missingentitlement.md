@@ -16,7 +16,7 @@ An error code that indicates the app is missing the entitlement it needs to use 
 static var missingEntitlement: CLLocationPushServiceError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Creating a location push service extension](../creating-a-location-push-service-extension.md).
 

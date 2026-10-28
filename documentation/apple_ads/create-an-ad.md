@@ -11,7 +11,7 @@ Creates an ad in an ad group with a creative.
 
 > **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
-#### Discussion
+## Discussion
 
 Use this endpoint to create an [`Ad`](./ad.md) object using your `creativeId` in the request payload. To obtain a `creativeId`, use the [`Create a Creative`](./create-a-creative.md) endpoint. See [`Update an Ad`](./update-an-ad.md) to update or replace the ad group assignment of an [`Ad`](./ad.md) object.
 
@@ -19,7 +19,7 @@ In API version 5.2, this endpoint supports default product page ads. For more in
 
 The `Id` in the response is your `adId`, representing the assignment of a creative to an [`AdGroup`](./adgroup.md). Use your `adId` in the resource path with [`Get an Ad`](./get-an-ad.md), [`Update an Ad`](./update-an-ad.md), [`Delete an Ad`](./delete-an-ad.md), and in [`Get Ad-Level Reports`](./get-ad-level-reports.md). Your `adId` is also output in the [AdServices](../AdServices/AdServices.md) attribution framework.
 
-##### Payload example: Create an ad
+### Payload example: Create an ad
 
 **Request**:
 

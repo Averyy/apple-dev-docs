@@ -20,7 +20,7 @@ var pageHeader: NSAttributedString { get }
 @property (copy, readonly) NSAttributedString * pageHeader;
 ```
 
-#### Discussion
+## Discussion
 
 Typically, the print job title is the same as the window title. A printable view class can override this property to provide its own content in place of the default value. You should not need to access this property directly. The printing system accesses it once per page during printing.
 

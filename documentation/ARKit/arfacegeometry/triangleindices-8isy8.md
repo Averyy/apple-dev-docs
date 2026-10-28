@@ -17,7 +17,7 @@ An array of indices describing the triangle mesh formed by the face geometry’s
 var triangleIndices: [Int16] { get }
 ```
 
-#### Discussion
+## Discussion
 
 Each 16-bit integer value in this array represents an index into the [`vertices`](./vertices-fhdb.md) and [`textureCoordinates`](./texturecoordinates-8ahq1.md) buffers. Each set of three indices identifies the vertices that form a single triangle in the mesh. (That is, this array is appropriate for use as an index buffer for a triangle mesh in GPU-based rendering or creating 3D model asset files.)
 

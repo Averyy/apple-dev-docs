@@ -22,7 +22,7 @@ Encodes a reference to the given object only if it is encoded unconditionally el
 mutating func encodeConditional<T>(_ object: T, forKey key: Self.Key) throws where T : AnyObject, T : Encodable
 ```
 
-#### Discussion
+## Discussion
 
 For encoders which don’t support this feature, the default implementation encodes the given object unconditionally.
 

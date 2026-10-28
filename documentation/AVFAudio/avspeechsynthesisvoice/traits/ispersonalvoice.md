@@ -25,7 +25,7 @@ static var isPersonalVoice: AVSpeechSynthesisVoice.Traits { get }
 AVSpeechSynthesisVoiceTraitIsPersonalVoice
 ```
 
-#### Discussion
+## Discussion
 
 A user generates and owns a personal voice.
 

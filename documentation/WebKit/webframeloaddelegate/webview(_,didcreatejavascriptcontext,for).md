@@ -19,7 +19,7 @@ optional func webView(_ webView: WebView!, didCreateJavaScriptContext context: J
 - (void) webView:(WebView *) webView didCreateJavaScriptContext:(JSContext *) context forFrame:(WebFrame *) frame;
 ```
 
-#### Discussion
+## Discussion
 
 If a delegate implements this method along with either [`webView(_:didClearWindowObject:for:)`](./webview%28_,didclearwindowobject,for%29.md) or [`webView:windowScriptObjectAvailable:`](./webview_windowscriptobjectavailable_.md), only `webView:didCreateJavaScriptContext:forFrame:` will be invoked. This lets the delegate implement multiple versions to maintain backwards compatibility with older versions of WebKit.
 

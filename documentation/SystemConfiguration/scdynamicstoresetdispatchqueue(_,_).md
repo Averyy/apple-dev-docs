@@ -19,7 +19,7 @@ func SCDynamicStoreSetDispatchQueue(_ store: SCDynamicStore, _ queue: dispatch_q
 Boolean SCDynamicStoreSetDispatchQueue(SCDynamicStoreRef store, dispatch_queue_t queue);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if notifications were successfully initiated; otherwise, `FALSE`.
 

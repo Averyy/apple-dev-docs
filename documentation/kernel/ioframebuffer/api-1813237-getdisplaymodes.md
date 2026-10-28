@@ -12,11 +12,11 @@ virtual IOReturn getDisplayModes(
  IODisplayModeID *allDisplayModes ) = 0;
 ```
 
-#### Return Value
+## Return Value
 
 an IOReturn code. A return other than kIOReturnSuccess will prevent the system from using the device.
 
-#### Overview
+## Overview
 
 IOFramebuffer subclasses must implement this method to return an array of display mode IDs available for the framebuffer. The IDs are defined by the driver in the range 0x00000001 - 0x7fffffff, and should be constant for a given display mode.
 

@@ -9,7 +9,7 @@ Update the reference name for a specific subscription group.
 **Availability**:
 - App Store Connect API 2.0+
 
-#### Discussion
+## Discussion
 
 > **Note**:  Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
 

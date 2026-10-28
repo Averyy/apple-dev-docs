@@ -19,7 +19,7 @@ Presents an image viewer for an asset in a photo library that contains Apple Ref
 @preconcurrency func photosReferenceImageViewer(asset: Binding<PHAsset?>, onProcessingCompletion: ((Result<PHAsset, any Error>) -> Void)?) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 - Parameters
 

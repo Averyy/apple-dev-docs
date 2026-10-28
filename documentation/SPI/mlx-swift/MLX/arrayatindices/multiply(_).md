@@ -17,7 +17,7 @@ Multiply values via `at[]` operator.
 func multiply(_ values: some ScalarOrArray) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 let idx = MLXArray([0, 1, 0, 1])
@@ -25,7 +25,7 @@ var a2 = MLXArray([1, 1])
 a2 = a2.at[idx].multiply(2)
 ```
 
-##### See Also
+### See Also
 
 ```
 - ``MLXArray/at``

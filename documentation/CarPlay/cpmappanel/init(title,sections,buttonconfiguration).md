@@ -21,7 +21,7 @@ init(title: String?, sections: [CPMapPanelSection], buttonConfiguration: CPMapPa
 - (instancetype) initWithTitle:(NSString *) title sections:(NSArray<CPMapPanelSection *> *) sections buttonConfiguration:(CPMapPanelButtonConfiguration *) buttonConfiguration;
 ```
 
-#### Return Value
+## Return Value
 
 A new map panel instance.
 

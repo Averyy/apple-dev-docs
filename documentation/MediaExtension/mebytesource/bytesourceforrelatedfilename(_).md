@@ -19,11 +19,11 @@ func byteSourceForRelatedFileName(_ fileName: String) throws -> MEByteSource
 - (MEByteSource *) byteSourceForRelatedFileName:(NSString *) fileName error:(NSError **) errorOut;
 ```
 
-#### Return Value
+## Return Value
 
 A byte source.
 
-#### Discussion
+## Discussion
 
 Requests creation of a new [`MEByteSource`](../mebytesource.md) for a file related to the receiving [`MEByteSource`](../mebytesource.md). Only file names returned by the [`relatedFileNamesInSameDirectory`](./relatedfilenamesinsamedirectory.md) method may be accessed.
 

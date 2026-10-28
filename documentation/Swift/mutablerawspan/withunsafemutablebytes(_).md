@@ -21,11 +21,11 @@ Calls the given closure with a mutable pointer to the underlying bytes of the vi
 mutating func withUnsafeMutableBytes<E, Result>(_ body: (UnsafeMutableRawBufferPointer) throws(E) -> Result) throws(E) -> Result where E : Error, Result : ~Copyable
 ```
 
-#### Return Value
+## Return Value
 
 The return value of the `body` closure parameter.
 
-#### Discussion
+## Discussion
 
 The buffer pointer passed as an argument to `body` is valid only during the execution of `withUnsafeMutableBytes(_:)`. Do not store or return the pointer for later use.
 

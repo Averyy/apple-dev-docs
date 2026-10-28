@@ -21,11 +21,11 @@ Publishes the minimum value received from the upstream publisher, after it finis
 func min(by areInIncreasingOrder: @escaping (Self.Output, Self.Output) -> Bool) -> Publishers.Comparison<Self>
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that publishes the minimum value received from the upstream publisher, after the upstream publisher finishes.
 
-#### Discussion
+## Discussion
 
 Use [`min(by:)`](./min%28by%29.md) to determine the minimum value in the stream of elements from an upstream publisher using a comparison operation you specify.
 

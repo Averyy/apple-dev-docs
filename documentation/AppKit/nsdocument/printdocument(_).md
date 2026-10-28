@@ -20,7 +20,7 @@ func printDocument(_ sender: Any?)
 - (void) printDocument:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 An `NSDocument` object receives this action message as it travels up the responder chain. The default implementation invokes [`print(withSettings:showPrintPanel:delegate:didPrint:contextInfo:)`](./print%28withsettings,showprintpanel,delegate,didprint,contextinfo%29.md).
 

@@ -25,7 +25,7 @@ func xpc_date_create(_ interval: Int64) -> xpc_object_t
 extern xpc_object_txpc_date_create(int64_t interval);
 ```
 
-#### Return Value
+## Return Value
 
 A new date object.
 

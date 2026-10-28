@@ -17,7 +17,7 @@ Key for retrieving the `NSDictionary` object containing proxy information to use
 extern NSString * const NSHTTPPropertyHTTPProxy;
 ```
 
-#### Discussion
+## Discussion
 
 To avoid any proxy use, pass an empty dictionary.
 

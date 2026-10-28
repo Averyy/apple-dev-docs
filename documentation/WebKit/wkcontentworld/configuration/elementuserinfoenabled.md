@@ -21,7 +21,7 @@ var elementUserInfoEnabled: Bool { get set }
 @property (nonatomic, getter=isElementUserInfoEnabled) BOOL elementUserInfoEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 A boolean value indicating whether the ability to attach user info on an element is exposed to scripts or not.
 

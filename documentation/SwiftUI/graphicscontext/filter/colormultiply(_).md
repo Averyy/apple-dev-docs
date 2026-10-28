@@ -21,7 +21,7 @@ Returns a filter that multiplies each color component by the matching component 
 static func colorMultiply(_ color: Color) -> GraphicsContext.Filter
 ```
 
-#### Return Value
+## Return Value
 
 A filter that multiplies color components.
 

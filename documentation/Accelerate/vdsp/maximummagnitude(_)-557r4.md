@@ -21,11 +21,11 @@ Returns the double-precision maximum magnitude of a vector.
 static func maximumMagnitude<U>(_ vector: U) -> Double where U : AccelerateBuffer, U.Element == Double
 ```
 
-#### Return Value
+## Return Value
 
 The maximum magnitude of the vector.
 
-#### Discussion
+## Discussion
 
 This function calculates the maximum magnitude of the first `N` elements of input vector `A`, and writes the result to output scalar `C`.
 

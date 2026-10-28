@@ -23,7 +23,7 @@ var currentAttributedTitle: NSAttributedString? { get }
 @property (nonatomic, strong, readonly, nullable) NSAttributedString * currentAttributedTitle;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this property reflects the title associated with the control’s current state. For states that do not have a custom title string associated with them, this method returns the attributed title that is currently displayed, which is typically the one associated with the [`normal`](../uicontrol/state-swift.struct/normal.md) state.
 

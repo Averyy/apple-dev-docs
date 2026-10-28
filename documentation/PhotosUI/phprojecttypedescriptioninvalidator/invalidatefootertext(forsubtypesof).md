@@ -20,7 +20,7 @@ func invalidateFooterText(forSubtypesOf projectType: PHProjectType)
 - (void) invalidateFooterTextForSubtypesOfProjectType:(PHProjectType) projectType;
 ```
 
-#### Discussion
+## Discussion
 
 Use [`undefined`](../phprojecttype/undefined.md) to invalidate the root-level footer text.
 

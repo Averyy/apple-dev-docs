@@ -25,7 +25,7 @@ func writeTimestamp(granularity: MTL4TimestampGranularity, after stage: MTLRende
 - (void) writeTimestampWithGranularity:(MTL4TimestampGranularity) granularity afterStage:(MTLRenderStages) stage intoHeap:(id<MTL4CounterHeap>) counterHeap atIndex:(NSUInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 This command only guarantees all draws prior to this command are complete when Metal writes the timestamp into the counter heap you provide in the `counterHeap` parameter. The timestamp may also include subsequent operations.
 

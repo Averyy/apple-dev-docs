@@ -21,7 +21,7 @@ An app entity that Apple Intelligence can discover to fulfill a person’s reque
 protocol AssistantEntity : AppEntity
 ```
 
-#### Overview
+## Overview
 
 Don’t adopt this protocol directly, instead use the [`AssistantEntity(schema:)`](./assistantentity%28schema%29.md) macro to meet requirements for making your [`AppEntity`](./appentity.md) discoverable by Apple Intelligence and Siri.
 

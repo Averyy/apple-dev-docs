@@ -24,11 +24,11 @@ class func success(with resolvedPlaybackQueueLocation: INPlaybackQueueLocation) 
 + (instancetype) successWithResolvedPlaybackQueueLocation:(INPlaybackQueueLocation) resolvedPlaybackQueueLocation;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INPlaybackQueueLocationResolutionResult`](../inplaybackqueuelocationresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you’re able to change the playback queue location for a media item.
 

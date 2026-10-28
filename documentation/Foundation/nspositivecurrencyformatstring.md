@@ -17,7 +17,7 @@ A format string that specifies how positive numbers are printed when representin
 extern NSString * const NSPositiveCurrencyFormatString;
 ```
 
-#### Discussion
+## Discussion
 
 The default is `$9,999.00`.
 

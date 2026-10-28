@@ -18,7 +18,7 @@ The permitted list of domains the extension can use when scheduling the initial 
 - **Name**: `BADownloadDomainAllowList`
 - **Type**: array of string 
 
-#### Discussion
+## Discussion
 
 This key is required to use Background Assets.
 

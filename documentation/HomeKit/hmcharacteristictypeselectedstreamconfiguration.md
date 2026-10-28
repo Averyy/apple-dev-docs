@@ -24,7 +24,7 @@ let HMCharacteristicTypeSelectedStreamConfiguration: String
 extern NSString * const HMCharacteristicTypeSelectedStreamConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is TLV8-encoded data.
 

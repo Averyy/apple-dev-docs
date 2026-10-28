@@ -24,7 +24,7 @@ case beats
 kAudioUnitParameterUnit_Beats
 ```
 
-#### Discussion
+## Discussion
 
 1.0 beats at 120 BPM (beats per minute) equals a duration of 1/2 second.
 

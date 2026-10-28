@@ -25,7 +25,7 @@ var audioMix: AVAudioMix? { get set }
 @property (nonatomic, copy, nullable) AVAudioMix * audioMix;
 ```
 
-#### Discussion
+## Discussion
 
 This value is key-value observable.
 

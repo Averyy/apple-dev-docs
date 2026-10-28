@@ -19,7 +19,7 @@ static let filePromise: NSPasteboard.PasteboardType
 extern NSPasteboardType NSFilesPromisePboardType;
 ```
 
-#### Discussion
+## Discussion
 
 In macOS 10.6 and later, use `(NSString *)kPasteboardTypeFileURLPromise` instead.
 

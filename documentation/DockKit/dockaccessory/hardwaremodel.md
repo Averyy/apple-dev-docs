@@ -18,7 +18,7 @@ The model of the dock accessory.
 final var hardwareModel: String? { get }
 ```
 
-#### Discussion
+## Discussion
 
 The format of the model is major, minor, and revision, separated by periods.
 

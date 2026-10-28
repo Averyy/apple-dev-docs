@@ -21,7 +21,7 @@ Sets the model context in this scene’s environment.
 @preconcurrency func modelContext(_ modelContext: ModelContext) -> some Scene
 ```
 
-#### Discussion
+## Discussion
 
 In this example, `RecipesApp` sets a shared model context to use for all of its windows:
 

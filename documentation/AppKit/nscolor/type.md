@@ -19,7 +19,7 @@ var type: NSColor.ColorType { get }
 @property (readonly) NSColorType type;
 ```
 
-#### Discussion
+## Discussion
 
 A color object’s type determines which of its methods and properties you may access. For example, if the type is [`NSColor.ColorType.pattern`](./colortype/pattern.md), you may safely access the [`patternImage`](./patternimage.md) property.
 

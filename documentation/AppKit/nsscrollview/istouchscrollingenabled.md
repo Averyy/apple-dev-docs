@@ -19,7 +19,7 @@ var isTouchScrollingEnabled: Bool { get set }
 @property (getter=isTouchScrollingEnabled) BOOL touchScrollingEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `true`.
 

@@ -22,7 +22,7 @@ var activityType: UIActivity.ActivityType? { get }
 @property (nonatomic, readonly, nullable) UIActivityType activityType;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`. Subclasses may override this property to return a custom activity type that’s reported to the [`completionWithItemsHandler`](../uiactivityviewcontroller/completionwithitemshandler-swift.property.md) completion handler.
 

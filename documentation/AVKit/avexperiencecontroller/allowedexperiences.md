@@ -16,7 +16,7 @@ The set of experiences the app supports.
 final var allowedExperiences: AVExperienceController.Experiences { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Use this to allow additional experiences like multiview, or to disable expanded. This list is the basis for [`availableExperiences`](./availableexperiences.md), which filters out inapplicable experiences.
 

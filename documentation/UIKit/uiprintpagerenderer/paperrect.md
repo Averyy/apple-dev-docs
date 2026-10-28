@@ -22,7 +22,7 @@ var paperRect: CGRect { get }
 @property (nonatomic, readonly) CGRect paperRect;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is a rectangle that defines the size of paper chosen for the print job. The origin is always (0,0).
 

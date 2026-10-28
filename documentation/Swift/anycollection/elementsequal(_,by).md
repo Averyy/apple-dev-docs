@@ -21,11 +21,11 @@ Returns a Boolean value indicating whether this sequence and another sequence co
 func elementsEqual<OtherSequence>(_ other: OtherSequence, by areEquivalent: (Self.Element, OtherSequence.Element) throws -> Bool) rethrows -> Bool where OtherSequence : Sequence
 ```
 
-#### Return Value
+## Return Value
 
 `true` if this sequence and `other` contain equivalent items, using `areEquivalent` as the equivalence test; otherwise, `false.`
 
-#### Discussion
+## Discussion
 
 At least one of the sequences must be finite.
 

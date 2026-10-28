@@ -15,7 +15,7 @@ The playback progress to display for the media item.
 @property (nonatomic, assign) float playbackProgress;
 ```
 
-#### Discussion
+## Discussion
 
 The system clamps the value between `0.0` and `1.0`.
 

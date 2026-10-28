@@ -24,7 +24,7 @@ var imageCropAndScaleOption: VNImageCropAndScaleOption { get set }
 @property (nonatomic, assign, readwrite) VNImageCropAndScaleOption imageCropAndScaleOption;
 ```
 
-#### Discussion
+## Discussion
 
 Scaling is applied before generating the feature print. The default value is [`VNImageCropAndScaleOption.scaleFill`](../vnimagecropandscaleoption/scalefill.md).
 

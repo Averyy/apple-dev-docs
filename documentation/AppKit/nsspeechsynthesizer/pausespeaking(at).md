@@ -19,7 +19,7 @@ func pauseSpeaking(at boundary: NSSpeechSynthesizer.Boundary)
 - (void) pauseSpeakingAtBoundary:(NSSpeechBoundary) boundary;
 ```
 
-#### Discussion
+## Discussion
 
 Pass the constant [`NSSpeechSynthesizer.Boundary.immediateBoundary`](./boundary/immediateboundary.md) to pause immediately, even in the middle of a word. Pass [`NSSpeechSynthesizer.Boundary.wordBoundary`](./boundary/wordboundary.md) or [`NSSpeechSynthesizer.Boundary.sentenceBoundary`](./boundary/sentenceboundary.md) to pause speech at the end of the current word or sentence, respectively.
 

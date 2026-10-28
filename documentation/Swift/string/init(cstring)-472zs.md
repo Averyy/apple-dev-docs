@@ -24,7 +24,7 @@ Creates a new string by copying the null-terminated UTF-8 data referenced by the
 init(cString nullTerminatedUTF8: [UInt8])
 ```
 
-#### Discussion
+## Discussion
 
 This is identical to `init(cString: [CChar])` but operates on an unsigned sequence of bytes.
 

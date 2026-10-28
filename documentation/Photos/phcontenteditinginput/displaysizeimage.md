@@ -40,7 +40,7 @@ var displaySizeImage: NSImage? { get }
 @property (strong, readonly, nullable) NSImage * displaySizeImage;
 ```
 
-#### Discussion
+## Discussion
 
 This property does not provide the full-sized image for a photo asset but rather a scaled-down image appropriate for use in a photo editing user interface. To load the full-sized asset image, use the [`fullSizeImageURL`](./fullsizeimageurl.md) property.
 

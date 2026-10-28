@@ -15,11 +15,11 @@ Returns the IOBluetoothObjectID of the given IOBluetoothL2CAPChannel.
 - (IOBluetoothObjectID) getObjectID;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the IOBluetoothObjectID of the given IOBluetoothL2CAPChannel.
 
-#### Discussion
+## Discussion
 
 The IOBluetoothObjectID can be used as a global reference for a given IOBluetoothL2CAPChannel. It allows two separate applications to refer to the same IOBluetoothL2CAPChannel.
 

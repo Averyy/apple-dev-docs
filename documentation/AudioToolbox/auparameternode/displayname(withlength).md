@@ -24,7 +24,7 @@ func displayName(withLength maximumLength: Int) -> String
 - (NSString *) displayNameWithLength:(NSInteger) maximumLength;
 ```
 
-#### Return Value
+## Return Value
 
 A truncated display name.
 

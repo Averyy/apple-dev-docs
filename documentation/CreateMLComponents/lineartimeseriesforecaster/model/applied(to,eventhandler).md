@@ -31,11 +31,11 @@ func applied(to input: some Sequence<MLShapedArray<Scalar>>, eventHandler: Event
 func applied(to input: some TemporalSequence<MLShapedArray<Scalar>>, eventHandler: EventHandler? = nil) async throws -> AnyTemporalSequence<MLShapedArray<Scalar>>
 ```
 
-#### Return Value
+## Return Value
 
 A shaped array of predictions with shape `[M, forecastWindowSize, annotationSize]` where `M` is the number of predictions based on the input sequence length and the [`stride`](./stride.md) property.
 
-#### Discussion
+## Discussion
 
 This method uses a sliding window to chunk the input features into [`inputWindowSize`](./inputwindowsize.md) elements every [`stride`](./stride.md) elements. If you want to use a different windowing strategy, use [`applied(toWindow:eventHandler:)`](./applied%28towindow,eventhandler%29.md).
 

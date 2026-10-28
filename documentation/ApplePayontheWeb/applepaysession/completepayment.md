@@ -20,13 +20,13 @@ undefined completePayment();
 
 - [Apple Pay on the Web Version 3 Release Notes](../apple-pay-on-the-web-version-3-release-notes.md)
 
-#### Discussion
+## Discussion
 
 This method must be called by [`onpaymentauthorized`](./onpaymentauthorized.md).
 
 Use status values of [`STATUS_SUCCESS`](./status_success.md) or [`STATUS_FAILURE`](./status_failure.md) only.  You should pass in [`STATUS_FAILURE`](./status_failure.md) along with the errors.
 
-##### completePayment in Apple Pay JS API version 1 and 2
+### completePayment in Apple Pay JS API version 1 and 2
 
 The parameter for [`completePayment`](./completepayment.md) in versions 1 and 2 is the following:
 

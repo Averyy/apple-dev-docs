@@ -37,7 +37,7 @@ class SKView
 - [Choosing a SpriteKit Scene Renderer](./choosing-a-spritekit-scene-renderer.md)
 - [Creating a New Node By Rendering To a Texture](./creating-a-new-node-by-rendering-to-a-texture.md)
 
-#### Overview
+## Overview
 
 You present a scene by calling the view’s [`presentScene(_:)`](./skview/presentscene%28_%29.md) method. When a scene is presented by the view, it alternates between running its simulation (which animates the content) and rendering the content for display. You can pause the scene by setting the view’s [`isPaused`](./skview/ispaused.md) property to [`true`](../Swift/true.md).
 

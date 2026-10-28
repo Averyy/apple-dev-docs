@@ -22,7 +22,7 @@ Updates the layout’s cache when something changes.
 func updateCache(_ cache: inout Self.Cache, subviews: Self.Subviews)
 ```
 
-#### Discussion
+## Discussion
 
 If your custom layout container creates a cache by implementing the [`makeCache(subviews:)`](./makecache%28subviews%29.md) method, SwiftUI calls the update method when your layout or its subviews change, giving you an opportunity to modify or invalidate the contents of the cache. The method’s default implementation recreates the cache by calling the [`makeCache(subviews:)`](./makecache%28subviews%29.md) method, but you can provide your own implementation to take an incremental approach, if appropriate.
 

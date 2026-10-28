@@ -24,7 +24,7 @@ class MTLTensorAuxiliaryPlaneDescriptor
 @interface MTLTensorAuxiliaryPlaneDescriptor : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use this descriptor to configure an auxiliary plane’s data type and block factors before attaching it to a [`MTLTensorDescriptor`](./mtltensordescriptor.md).
 

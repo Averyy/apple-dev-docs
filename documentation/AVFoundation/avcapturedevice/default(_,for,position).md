@@ -28,11 +28,11 @@ class func `default`(_ deviceType: AVCaptureDevice.DeviceType, for mediaType: AV
 
 - [Choosing a capture device](../choosing-a-capture-device.md)
 
-#### Return Value
+## Return Value
 
 The default system device, or `nil` if no device currently exists that satisfies the specified criteria.
 
-#### Discussion
+## Discussion
 
 Use this method to select the system default capture device for a given scenario. For example, to obtain the dual camera on supported hardware and fall back to the standard wide-angle camera otherwise, call this method twice, as shown below.
 

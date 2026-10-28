@@ -19,7 +19,7 @@ var kAXReplacementStringTextAttribute: Unmanaged<CFString>
 CFStringRef kAXReplacementStringTextAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 
 ---

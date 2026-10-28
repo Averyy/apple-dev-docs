@@ -18,11 +18,11 @@ Compares the array with an OSObject
 virtual bool isEqualTo(const OSMetaClassBase *anObject) const;
 ```
 
-#### Return Value
+## Return Value
 
 True iff the object is of class OSArray and isEqualTo(const OSArray * anArray) returns true.
 
-#### Discussion
+## Discussion
 
 If the object is of class OSArray, the result of isEqualTo(const OSArray * anArray) is returned. Otherwise false is returned.
 

@@ -9,11 +9,11 @@
 virtual CDTOC * getTOC();
 ```
 
-#### Return Value
+## Return Value
 
 Returns a pointer to the TOC buffer (do not deallocate).
 
-#### Overview
+## Overview
 
 Get the full Table Of Contents.
 

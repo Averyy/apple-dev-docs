@@ -29,7 +29,7 @@ func supportsVertexAmplificationCount(_ count: Int) -> Bool
 
 - [Improving rendering performance with vertex amplification](../improving-rendering-performance-with-vertex-amplification.md)
 
-#### Discussion
+## Discussion
 
 A vertex amplification factor of `1` has no effect because it effectively disables vertex amplification.
 

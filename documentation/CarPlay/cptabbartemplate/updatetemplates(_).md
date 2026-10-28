@@ -21,7 +21,7 @@ func updateTemplates(_ newTemplates: [CPTemplate])
 - (void) updateTemplates:(NSArray<__kindof CPTemplate *> *) newTemplates;
 ```
 
-#### Discussion
+## Discussion
 
 This method is multipurpose. Use it to add new templates to the tab bar, to remove and reorder existing templates, and to update a template’s tab bar appearance.
 

@@ -24,7 +24,7 @@ protocol INCarPlayDomainHandling : INSaveProfileInCarIntentHandling, INSetAudioS
 @protocol INCarPlayDomainHandling <INSetAudioSourceInCarIntentHandling, INSetClimateSettingsInCarIntentHandling, INSetDefrosterSettingsInCarIntentHandling, INSetSeatSettingsInCarIntentHandling, INSetProfileInCarIntentHandling, INSaveProfileInCarIntentHandling>
 ```
 
-#### Overview
+## Overview
 
 The [`INCarPlayDomainHandling`](./incarplaydomainhandling.md) protocol is a convenience protocol that adopts all of the protocols used to handle CarPlay-related intents. When your app adopts all of the protocols associated with CarPlay, you can adopt this one protocol instead of adopting the [`INSetAudioSourceInCarIntentHandling`](./insetaudiosourceincarintenthandling.md), [`INSetClimateSettingsInCarIntentHandling`](./insetclimatesettingsincarintenthandling.md), [`INSetDefrosterSettingsInCarIntentHandling`](./insetdefrostersettingsincarintenthandling.md), [`INSetSeatSettingsInCarIntentHandling`](./insetseatsettingsincarintenthandling.md), [`INSetProfileInCarIntentHandling`](./insetprofileincarintenthandling.md), and [`INSaveProfileInCarIntentHandling`](./insaveprofileincarintenthandling.md) protocols separately.
 

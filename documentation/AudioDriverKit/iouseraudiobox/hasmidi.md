@@ -15,11 +15,11 @@ Returns a Boolean value that indicates the box’s MIDI support.
 bool HasMIDI();
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the box supports MIDI; `false` otherwise.
 
-#### Discussion
+## Discussion
 
 This method synchronizes by using the work queue created by the object.
 

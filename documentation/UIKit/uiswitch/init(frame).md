@@ -22,11 +22,11 @@ init(frame: CGRect)
 - (instancetype) initWithFrame:(CGRect) frame;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized [`UISwitch`](../uiswitch.md) object.
 
-#### Discussion
+## Discussion
 
 [`UISwitch`](../uiswitch.md) overrides [`init(frame:)`](../uiview/init%28frame%29.md) and enforces a size appropriate for the control.
 

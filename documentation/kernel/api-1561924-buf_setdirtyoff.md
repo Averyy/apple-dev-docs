@@ -15,11 +15,11 @@ Set the starting offset of the dirty region associated with a buffer.
 void buf_setdirtyoff(buf_t bp, uint32_t);
 ```
 
-#### Return Value
+## Return Value
 
 void.
 
-#### Discussion
+## Discussion
 
 This value is zero unless someone set it explicitly.
 

@@ -15,11 +15,11 @@ A static factory method that allocates and initializes a custom property.
 static OSSharedPtr<IOUserVideoCustomProperty> Create(IOUserVideoDriver *in_video_driver, IOUserVideoObjectPropertyAddress in_prop_addr, bool in_is_property_settable, IOUserVideoCustomPropertyDataType in_qualifier_data_type, IOUserVideoCustomPropertyDataType in_data_type);
 ```
 
-#### Return Value
+## Return Value
 
 OSSharedPtr to an IOUserVideoBooleanControl if it was successfully allocated and initialized
 
-#### Discussion
+## Discussion
 
 If IOUserVideoCustomProperty is subclassed to override behavior, don’t use this method to allocate or initialize the custom subclass.
 

@@ -25,7 +25,7 @@ var arrayLength: Int { get }
 @property (readonly) NSUInteger arrayLength;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property ranges from 1 to 2048, inclusive. If the texture type is not an array, this value is 1.
 

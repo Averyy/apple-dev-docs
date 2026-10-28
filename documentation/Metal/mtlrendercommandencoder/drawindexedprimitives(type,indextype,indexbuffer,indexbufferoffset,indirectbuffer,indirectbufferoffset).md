@@ -25,7 +25,7 @@ func drawIndexedPrimitives(type primitiveType: MTLPrimitiveType, indexType: MTLI
 - (void) drawIndexedPrimitives:(MTLPrimitiveType) primitiveType indexType:(MTLIndexType) indexType indexBuffer:(id<MTLBuffer>) indexBuffer indexBufferOffset:(NSUInteger) indexBufferOffset indirectBuffer:(id<MTLBuffer>) indirectBuffer indirectBufferOffset:(NSUInteger) indirectBufferOffset;
 ```
 
-#### Discussion
+## Discussion
 
 Indirect drawing methods may help your app avoid expensive latency costs. This is because the command reads arguments from an [`MTLBuffer`](../mtlbuffer.md) instance instead of using the CPU to pass parameters to the command.
 

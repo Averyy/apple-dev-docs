@@ -20,7 +20,7 @@ func value(at index: Int, inPropertyWithKey key: String) -> Any?
 - (id) valueAtIndex:(NSUInteger) index inPropertyWithKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 This actually works with a single-value key as well if `index` is 0. The method `valueIn<Key>AtIndex:` is used if it exists.
 

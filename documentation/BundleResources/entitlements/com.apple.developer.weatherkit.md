@@ -23,7 +23,7 @@ A Boolean value that indicates whether the app may use WeatherKit.
 
 **Default**: `NO`
 
-#### Discussion
+## Discussion
 
 To add this entitlement to your app, enable the WeatherKit capability in Xcode.
 

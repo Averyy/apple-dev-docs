@@ -13,7 +13,7 @@
 var soOutputToAudioDevice: OSType { get }
 ```
 
-#### Discussion
+## Discussion
 
 Pass a pointer to an [`AudioDeviceID`](../CoreAudio/audiodeviceid.md) in the `speechInfo` parameter to play to this file, or `0` to play through the default audio output device.
 

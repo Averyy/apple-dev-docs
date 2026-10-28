@@ -23,7 +23,7 @@ static let serious: AVCaptureDevice.SystemPressureState.Level
 extern AVCaptureSystemPressureLevel const AVCaptureSystemPressureLevelSerious;
 ```
 
-#### Discussion
+## Discussion
 
 System pressures may impact capture performance. Consider limiting the frame rate until system pressure state improves.
 

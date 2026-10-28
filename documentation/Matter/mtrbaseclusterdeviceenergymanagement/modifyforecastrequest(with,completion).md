@@ -29,7 +29,7 @@ func modifyForecastRequest(with params: MTRDeviceEnergyManagementClusterModifyFo
 - (void) modifyForecastRequestWithParams:(MTRDeviceEnergyManagementClusterModifyForecastRequestParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Allows a client to modify a Forecast within the limits allowed by the ESA.
 

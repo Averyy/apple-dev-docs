@@ -18,7 +18,7 @@ Creates a color match from a working color space and a target display color spac
 init(workingColorSpace: CGColorSpace, targetColorSpace: CGColorSpace) throws(LowLevelRendererError)
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: [`LowLevelRendererError`](../../lowlevelrenderererror.md) if either color space is not a supported linear gamut.
 

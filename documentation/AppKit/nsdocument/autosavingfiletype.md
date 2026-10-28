@@ -20,7 +20,7 @@ var autosavingFileType: String? { get }
 @property (copy, readonly, nullable) NSString * autosavingFileType;
 ```
 
-#### Discussion
+## Discussion
 
 This properties contains a string that identifies the document type for autosave files. The default implementation just returns the value provided by the [`fileType`](./filetype.md) property. You can override this property and return `nil` to completely disable autosaving of individual documents (because the [`NSDocumentController`](../nsdocumentcontroller.md) object does not call the  [`autosave(withDelegate:didAutosave:contextInfo:)`](./autosave%28withdelegate,didautosave,contextinfo%29.md) method of a document that has no autosaving file type). You can also override it if your app defines a document type that is specifically designed for autosaving, for example, one that efficiently represents document content changes instead of complete document contents.
 

@@ -22,7 +22,7 @@ Tells the system to execute the superclass’ implementation of the current meth
 
 - [Creating a Driver Using the DriverKit SDK](./creating-a-driver-using-the-driverkit-sdk.md)
 
-#### Discussion
+## Discussion
 
 When calling the DriverKit implementation of a method that runs in the kernel, use this macro to bridge from your driver extension’s process space to the superclass’ version of the method. You must use this macro to call inherited DriverKit methods annotated with the [`IIG_KERNEL`](./iig_kernel.md) macro.
 

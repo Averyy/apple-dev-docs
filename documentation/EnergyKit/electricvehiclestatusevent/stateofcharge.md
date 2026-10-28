@@ -17,7 +17,7 @@ A state of charge as a percentage at the time of the status event.
 let stateOfCharge: Int
 ```
 
-#### Discussion
+## Discussion
 
 An integer from 0 to 100 in which 0 indicates an empty battery, and 100 indicates a full battery.
 

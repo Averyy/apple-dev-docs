@@ -25,7 +25,7 @@ case continueInApp
 INCancelWorkoutIntentResponseCodeContinueInApp
 ```
 
-#### Discussion
+## Discussion
 
 Upon returning this code, SiriKit launches your app and passes it the [`NSUserActivity`](../../Foundation/nsuseractivity.md) object you provided at initialization time. (If you did not provide a user activity object, SiriKit creates one for you). SiriKit adds an [`INInteraction`](../ininteraction.md) object with the intent and your response to the user activity object before delivering it. Your app should use the information in the user activity object to cancel the workout.
 

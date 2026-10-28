@@ -20,7 +20,7 @@ An error code that indicates the command buffer has an invalid reference to reso
 static var invalidResource: MTLCommandBufferError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Typically, apps trigger this error by deleting a resource and then running a command buffer that refers to it.
 

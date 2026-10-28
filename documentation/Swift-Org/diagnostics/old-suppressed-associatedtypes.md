@@ -10,11 +10,11 @@ framework: "Swift-Org/diagnostics"
 
 [SE-503](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0503-suppressed-associated-types.md) officially introduced the ability to define protocols with associated types that are `~Copyable` and/or `~Escapable` (i.e., “suppressed”), which relaxes the requirement on types conforming to that protocol. During the evolution process, a prototype version of this feature existed under the experimental feature named `SuppressedAssociatedTypes`. **That experimental feature is now deprecated** and is source-incompatible with the accepted version detailed in SE-503.
 
-#### Overview
+## Overview
 
 This document provides high-level guidance for users of this experimental feature to help them update their code to be compatible with [SE-503](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0503-suppressed-associated-types.md). Please see the evolution proposal for complete details of the accepted functionality.
 
-#### Source Changes
+## Source Changes
 
 > **Note**: The difference between the prototype experimental feature and SE-503 is with its treatment of primary associated types that are suppressed.
 >
@@ -50,7 +50,7 @@ struct PostOffice<M: Mailbox> {} // OLD
 struct PostOffice<M: Mailbox> where M.Items: ~Copyable {} // NEW
 ```
 
-#### ABI Changes
+## ABI Changes
 
 > **Note**: This section is only of interest to who distribute pre-built shared libraries and declared a public protocol that has a suppressed primary associated type.
 

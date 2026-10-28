@@ -19,7 +19,7 @@ Maintains information about a specific Wi-Fi network.
 static func network(ssid: Data, credentials: Data) -> MatterAddDeviceExtensionRequestHandler.WiFiNetworkAssociation
 ```
 
-#### Discussion
+## Discussion
 
 The credentials represent the passphrase that the system needs to associate to the SSID, if one is required. The security type of the Wi-Fi network determines the content of this field, its format, and its valid length.
 

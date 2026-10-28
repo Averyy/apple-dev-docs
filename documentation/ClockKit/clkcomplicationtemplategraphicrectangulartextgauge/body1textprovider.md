@@ -22,7 +22,7 @@ var body1TextProvider: CLKTextProvider { get set }
 @property (nonatomic, copy) CLKTextProvider * body1TextProvider;
 ```
 
-#### Discussion
+## Discussion
 
 In watchOS 5 and earlier, the system always displays the text as white. In watchOS 6 and later, it can display multicolor text.
 

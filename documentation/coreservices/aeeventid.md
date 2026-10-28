@@ -20,7 +20,7 @@ typealias AEEventID = FourCharCode
 typedef FourCharCode AEEventID;
 ```
 
-#### Discussion
+## Discussion
 
 Apple events are identified by their event class and event ID attributes. The event ID is the attribute that identifies a particular Apple event within its event class. In conjunction with the event class, the event ID uniquely identifies the Apple event and communicates what action the Apple event should perform.
 

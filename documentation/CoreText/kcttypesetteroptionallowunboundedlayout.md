@@ -25,7 +25,7 @@ let kCTTypesetterOptionAllowUnboundedLayout: CFString
 extern CFStringRef const kCTTypesetterOptionAllowUnboundedLayout;
 ```
 
-#### Discussion
+## Discussion
 
 Proper Unicode layout of some text requires unreasonable effort. By default, the text system avoids expending this effort. To create a typesetter that always typesets the text, regardless of the amount of work needed, call [`CTTypesetterCreateWithAttributedStringAndOptions(_:_:)`](./cttypesettercreatewithattributedstringandoptions%28_,_%29.md) and set this option to [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md).
 

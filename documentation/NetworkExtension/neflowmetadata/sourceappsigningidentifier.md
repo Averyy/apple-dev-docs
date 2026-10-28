@@ -23,7 +23,7 @@ var sourceAppSigningIdentifier: String { get }
 @property (readonly) NSString * sourceAppSigningIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 For all apps that are signed in the standard way using Xcode, this value is identical to the app’s bundle identifier.
 

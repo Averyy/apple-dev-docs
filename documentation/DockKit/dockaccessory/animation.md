@@ -18,7 +18,7 @@ Character animations that describe how to move the dock accessory.
 enum Animation
 ```
 
-#### Overview
+## Overview
 
 Each animation executes on a predefined trajectory. See [`animate(motion:)`](./animate%28motion%29.md) for more information.
 

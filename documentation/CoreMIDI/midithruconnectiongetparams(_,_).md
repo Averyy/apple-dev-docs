@@ -23,11 +23,11 @@ func MIDIThruConnectionGetParams(_ connection: MIDIThruConnectionRef, _ outConne
 extern OSStatus MIDIThruConnectionGetParams(MIDIThruConnectionRef connection, CFDataRef*outConnectionParams);
 ```
 
-#### Return Value
+## Return Value
 
 An `OSStatus` result code.
 
-#### Discussion
+## Discussion
 
 The returned object contains a [`MIDIThruConnectionParams`](./midithruconnectionparams.md) structure. The caller is responsible for releasing it.
 

@@ -32,7 +32,7 @@ convenience init(image: NSImage, quality: XCTAttachment.ImageQuality)
 + (instancetype) attachmentWithImage:(NSImage *) image quality:(XCTImageQuality) quality;
 ```
 
-#### Discussion
+## Discussion
 
 Creates an attachment with a [`uniformTypeIdentifier`](./uniformtypeidentifier.md) of `"public.png"` when `quality` is [`XCTAttachment.ImageQuality.original`](./imagequality/original.md), and a [`uniformTypeIdentifier`](./uniformtypeidentifier.md) of `"public.jpeg"` when `quality` is [`XCTAttachment.ImageQuality.medium`](./imagequality/medium.md) or [`XCTAttachment.ImageQuality.low`](./imagequality/low.md).
 

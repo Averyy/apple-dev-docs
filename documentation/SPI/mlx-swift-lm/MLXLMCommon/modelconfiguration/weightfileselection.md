@@ -17,7 +17,7 @@ How to choose which safetensors files in the model directory hold the model’s 
 var weightFileSelection: WeightFileSelection
 ```
 
-#### Discussion
+## Discussion
 
 The default, [`WeightFileSelection.automatic`](../weightfileselection/automatic.md), handles a well-packaged checkpoint and the common packaging mistakes. Set [`WeightFileSelection.allFilesPresent`](../weightfileselection/allfilespresent.md) for a checkpoint whose index is known to omit weights the model needs – see the caveats on that case before reaching for it.
 

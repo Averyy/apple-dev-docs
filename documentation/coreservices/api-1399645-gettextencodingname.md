@@ -15,11 +15,11 @@ Returns the localized name for a specified text encoding.
 OSStatus GetTextEncodingName(TextEncoding iEncoding, TextEncodingNameSelector iNamePartSelector, RegionCode iPreferredRegion, TextEncoding iPreferredEncoding, ByteCount iOutputBufLen, ByteCount *oNameLength, RegionCode *oActualRegion, TextEncoding *oActualEncoding, TextPtr oEncodingName);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 
-#### Discussion
+## Discussion
 
 Names returned by `GetTextEncodingName ` (in the buffer referred to by `oEncodingName`)can contain parentheses and other menu item meta characters, andso cannot be used with `AppendMenu` or `InsertMenuItem`.You can use them with `SetMenuItemText`.
 

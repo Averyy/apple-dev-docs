@@ -25,7 +25,7 @@ var includedServices: [CBService]? { get set }
 @property (retain, readwrite, nullable) NSArray<CBService *> * includedServices;
 ```
 
-#### Discussion
+## Discussion
 
 A service of a peripheral may contain a reference to other services that are available on the peripheral. These other services are the included services of the service.
 

@@ -23,7 +23,7 @@ var interSectionSpacing: CGFloat { get set }
 @property (nonatomic) CGFloat interSectionSpacing;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `0.0`.
 

@@ -22,7 +22,7 @@ An attribute that specifies a grammatical agreement concept for substituting pro
 enum ReferentConceptAttribute
 ```
 
-#### Overview
+## Overview
 
 Use the [`referentConcept`](./referentconcept.md) formatting attribute for cases where you need to refer to a person using their preferred pronoun in a string.
 

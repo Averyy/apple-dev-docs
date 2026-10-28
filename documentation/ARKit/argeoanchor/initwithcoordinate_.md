@@ -16,7 +16,7 @@ Initializes a new location anchor with the given coordinates.
 - (instancetype) initWithCoordinate:(CLLocationCoordinate2D) coordinate;
 ```
 
-#### Discussion
+## Discussion
 
 Because this initializer does not take an altitude argument, ARKit sets the anchor’s [`altitude`](./altitude-9kges.md) to ground level.
 

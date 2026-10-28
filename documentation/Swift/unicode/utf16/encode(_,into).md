@@ -21,7 +21,7 @@ Encodes a Unicode scalar as a series of code units by calling the given closure 
 static func encode(_ input: Unicode.Scalar, into processCodeUnit: (Unicode.UTF16.CodeUnit) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 For example, the musical fermata symbol (“𝄐”) is a single Unicode scalar value (`\u{1D110}`) but requires two code units for its UTF-16 representation. The following code encodes a fermata in UTF-16:
 

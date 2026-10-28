@@ -21,7 +21,7 @@ case required
 kSecTransformMetaAttributeRequired
 ```
 
-#### Discussion
+## Discussion
 
 Specifies if an attribute must have a non `NULL` value set or have an incoming connection before the transform starts to execute. This metadata has a default value of [`true`](../../Swift/true.md) for the input attribute, but [`false`](../../Swift/false.md) for all other attributes.
 

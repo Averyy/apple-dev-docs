@@ -19,7 +19,7 @@ func candidateSelectionChanged(_ candidateString: NSAttributedString!)
 - (void) candidateSelectionChanged:(NSAttributedString *) candidateString;
 ```
 
-#### Discussion
+## Discussion
 
 Note this method is called to indicate user activity in the candidate window. The candidate object might not be the user’s final selection.
 

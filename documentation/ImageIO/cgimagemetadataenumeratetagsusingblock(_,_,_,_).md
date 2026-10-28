@@ -25,7 +25,7 @@ func CGImageMetadataEnumerateTagsUsingBlock(_ metadata: CGImageMetadata, _ rootP
 extern void CGImageMetadataEnumerateTagsUsingBlock(CGImageMetadataRef metadata, CFStringRef rootPath, CFDictionaryRef options, CGImageMetadataTagBlock block);
 ```
 
-#### Discussion
+## Discussion
 
 This function iterates over the tags in the specified metadata object. By default, it iterates over only the top-level tags. Include the [`kCGImageMetadataEnumerateRecursively`](./kcgimagemetadataenumeraterecursively.md) constant in the `options` parameter to iterate over all tags recursively.
 

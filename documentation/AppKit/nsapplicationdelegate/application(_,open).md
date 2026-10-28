@@ -20,7 +20,7 @@ optional func application(_ application: NSApplication, open urls: [URL])
 - (void) application:(NSApplication *) application openURLs:(NSArray<NSURL *> *) urls;
 ```
 
-#### Discussion
+## Discussion
 
 AppKit calls this method when your app is asked to open one or more URL-based resources. You must declare the URL types that your app supports in your `Info.plist` file using the `CFBundleURLTypes` key. The list can also include URLs for documents for which your app does not have an associated [`NSDocument`](../nsdocument.md) class. You configure document types using Xcode, or by adding the `CFBundleDocumentTypes` key to your `Info.plist` file.
 

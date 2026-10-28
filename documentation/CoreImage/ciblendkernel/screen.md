@@ -24,7 +24,7 @@ class var screen: CIBlendKernel { get }
 @property (class, strong, readonly) CIBlendKernel * screen;
 ```
 
-#### Discussion
+## Discussion
 
 ![The result of using the screen blend kernel (background image is top left, foreground image is bottom left)](https://developer.apple.com/tutorials/images/com.apple.coreimage/media-2926881@2x.png)
 

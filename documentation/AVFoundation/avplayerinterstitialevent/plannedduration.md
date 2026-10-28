@@ -25,7 +25,7 @@ var plannedDuration: CMTime { get set }
 @property (nonatomic, readwrite) CMTime plannedDuration;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`zero`](../../CoreMedia/cmtime/zero.md).
 

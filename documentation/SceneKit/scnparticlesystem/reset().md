@@ -25,7 +25,7 @@ func reset()
 - (void) reset;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method removes all currently live particles from the scene.
 

@@ -23,7 +23,7 @@ var timecodeAlignmentOffset: TimeInterval { get set }
 @property (nonatomic) NSTimeInterval timecodeAlignmentOffset;
 ```
 
-#### Discussion
+## Discussion
 
 This offset allows fine-tuning of time alignment for synchronization with external sources or to accommodate any intentional delay. The default value is 0 seconds.
 

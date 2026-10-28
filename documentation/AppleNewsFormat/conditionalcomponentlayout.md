@@ -15,11 +15,11 @@ The object for defining conditional properties for a component layout, and when 
 object ConditionalComponentLayout
 ```
 
-#### Discussion
+## Discussion
 
 Use the `ConditionalComponentLayout` object to define an array of conditional component layout properties and the conditions under which to apply them. When a condition is met, the value of a property in `ConditionalComponentLayout` overrides the value of the same property if defined in the parent `ComponentLayout` object. See [`ComponentLayout`](./componentlayout.md).
 
-##### Example
+### Example
 
 ```json
 {

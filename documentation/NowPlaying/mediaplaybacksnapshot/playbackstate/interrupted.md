@@ -21,7 +21,7 @@ Playback was interrupted by the system.
 case interrupted
 ```
 
-#### Discussion
+## Discussion
 
 Use this state when playback is interrupted by system events such as a phone call or alarm. Your app is responsible for resuming playback when the interruption ends, if appropriate.
 

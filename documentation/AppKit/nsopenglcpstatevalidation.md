@@ -17,7 +17,7 @@ If enabled, OpenGL inspects the context state each time the [`update()`](./nsope
 static const NSOpenGLContextParameter NSOpenGLCPStateValidation;
 ```
 
-#### Discussion
+## Discussion
 
 Normally, the state is inspected only when it is actually necessary to switch renderers. This is useful when using a single monitor system to test that an application performs correctly on a multiple-monitor system.
 

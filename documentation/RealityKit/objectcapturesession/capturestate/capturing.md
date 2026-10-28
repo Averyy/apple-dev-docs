@@ -16,7 +16,7 @@ Auto-capture is in progress.
 case capturing
 ```
 
-#### Discussion
+## Discussion
 
 In this state the user is expected to orbit the device slowly and smoothly around the object in order to fully complete the capture dial.
 

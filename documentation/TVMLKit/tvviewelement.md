@@ -21,7 +21,7 @@ class TVViewElement
 @interface TVViewElement : NSObject
 ```
 
-#### Overview
+## Overview
 
 The `TVViewElement` model object is traversed by the [`TVInterfaceFactory`](./tvinterfacefactory.md) factory to construct views and view controllers, and to render templates. Views and view controllers should use the available dispatch APIs to send user events to JavaScript.
 

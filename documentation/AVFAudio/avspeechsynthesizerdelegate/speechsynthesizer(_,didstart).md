@@ -25,7 +25,7 @@ optional func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didStart utt
 - (void) speechSynthesizer:(AVSpeechSynthesizer *) synthesizer didStartSpeechUtterance:(AVSpeechUtterance *) utterance;
 ```
 
-#### Discussion
+## Discussion
 
 If the utterance’s [`preUtteranceDelay`](../avspeechutterance/preutterancedelay.md) property is greater than zero, the system calls this method after the delay completes and speech begins.
 

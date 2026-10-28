@@ -21,7 +21,7 @@ var stickerSize: MSStickerSize { get }
 @property (nonatomic, assign, readonly) MSStickerSize stickerSize;
 ```
 
-#### Discussion
+## Discussion
 
 For a list of possible size values, see [`MSStickerSize`](../msstickersize.md).
 

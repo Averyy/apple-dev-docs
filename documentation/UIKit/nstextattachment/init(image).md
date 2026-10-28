@@ -23,11 +23,11 @@ init(image: UIImage)
 + (NSTextAttachment *) textAttachmentWithImage:(UIImage *) image;
 ```
 
-#### Return Value
+## Return Value
 
 A new text attachment object initialized with the image.
 
-#### Discussion
+## Discussion
 
 Attachments created with this method automatically adapt to the surrounding font and color attributes in attributed strings.
 

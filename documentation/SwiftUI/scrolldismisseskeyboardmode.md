@@ -20,7 +20,7 @@ The ways that scrollable content can interact with the software keyboard.
 struct ScrollDismissesKeyboardMode
 ```
 
-#### Overview
+## Overview
 
 Use this type in a call to the [`scrollDismissesKeyboard(_:)`](./view/scrolldismisseskeyboard%28_%29.md) modifier to specify the dismissal behavior of scrollable views.
 

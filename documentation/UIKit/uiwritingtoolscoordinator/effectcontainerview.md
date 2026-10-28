@@ -22,7 +22,7 @@ weak var effectContainerView: UIView? { get set }
 @property (nonatomic, weak, nullable) UIView * effectContainerView;
 ```
 
-#### Discussion
+## Discussion
 
 Writing Tools uses the view in this property to host the visual effects it creates when making interactive changes to your view’s content. These visual effects let people know the state of the text and provide feedback about what’s happening to it. Set this property to a subview that sits visually above, and covers, all of the text in your custom text view. If you don’t assign a value to this property, the coordinator uses the object in its [`view`](../uiinteraction/view.md) property to host any visual effects.
 

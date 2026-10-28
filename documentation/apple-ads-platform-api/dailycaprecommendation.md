@@ -15,11 +15,11 @@ A daily budget recommendation for a campaign that’s frequently hitting its spe
 object DailyCapRecommendation
 ```
 
-#### Discussion
+## Discussion
 
 When a campaign frequently exhausts its daily budget, `DailyCapRecommendation` provides a system-calculated `suggestedDailyBudgetAmount` to unlock constrained growth. The `expectedInstalls`, `expectedSpend`, and `expectedCpa` fields provide projected seven-day performance estimates. Recommendations expire (`expirationTime`) and transition to `APPLIED` or `DISMISSED` once actioned.
 
-##### Example
+### Example
 
 ```json
 {

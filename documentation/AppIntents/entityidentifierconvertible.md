@@ -21,7 +21,7 @@ An interface for converting between an entity’s identifier and its string repr
 protocol EntityIdentifierConvertible
 ```
 
-#### Overview
+## Overview
 
 Every entity provides a stable, unique identifier that the framework uses as a concrete reference to the entity while mediating between your app and other parts of the system. To enforce this requirement, the [`AppEntity`](./appentity.md) protocol inherits the [`Identifiable`](../Swift/identifiable.md) protocol.
 

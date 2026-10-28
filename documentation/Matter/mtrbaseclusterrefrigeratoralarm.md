@@ -25,7 +25,7 @@ class MTRBaseClusterRefrigeratorAlarm
 @interface MTRBaseClusterRefrigeratorAlarm : MTRGenericBaseCluster
 ```
 
-#### Overview
+## Overview
 
 Attributes and commands for configuring the Refrigerator alarm.
 

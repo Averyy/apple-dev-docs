@@ -24,7 +24,7 @@ class CNContact
 @interface CNContact : NSObject
 ```
 
-#### Overview
+## Overview
 
 A `CNContact` object stores an immutable copy of a contact’s information, so you cannot change the information in this object directly. Contact objects are thread-safe, so you may access them from any thread of your app.
 

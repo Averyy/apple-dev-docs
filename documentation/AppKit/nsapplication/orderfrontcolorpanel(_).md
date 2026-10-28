@@ -19,7 +19,7 @@ func orderFrontColorPanel(_ sender: Any?)
 - (void) orderFrontColorPanel:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 If the `NSColorPanel` object does not exist yet, this method creates one. This method is typically invoked when the user chooses Colors from a menu.
 

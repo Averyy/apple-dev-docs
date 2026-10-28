@@ -19,7 +19,7 @@ object InvalidAssignedTransactionNotSupportedError
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Discussion
+## Discussion
 
 A request returns this error if you call the [`Send Consumption Information`](./send-consumption-information.md), [`Send Consumption Information V1`](./send-consumption-information-v1.md), or [`Set App Account Token`](./set-app-account-token.md) endpoint with a transaction identifier for a transaction that an organization or group assigns to the customer.
 

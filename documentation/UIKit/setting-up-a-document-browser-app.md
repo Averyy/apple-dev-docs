@@ -5,7 +5,7 @@
 
 Add a document browser view controller to your app.
 
-#### Overview
+## Overview
 
 Setting up the document browser is a three-step process:
 
@@ -15,7 +15,7 @@ Setting up the document browser is a three-step process:
 
 The simplest way to do all three is to create a new project using the Document Based App template.
 
-##### Create a new document-based app
+### Create a new document-based app
 
 To create a new document-based app, open Xcode and choose File > New > Project. In the template chooser, under Application, choose the Document Based App template, and click Next.
 
@@ -29,7 +29,7 @@ Continue following the prompts to create a document-based project. The following
 
 Use most of these default values as-is; however, unless you’re making an image-based app, you probably need to update the supported document types.
 
-##### Set the supported document types
+### Set the supported document types
 
 For each document type your app supports, follow these steps in the project editor’s Info pane:
 

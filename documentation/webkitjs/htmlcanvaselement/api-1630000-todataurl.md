@@ -18,15 +18,15 @@ DOMString toDataURL(
 );
 ```
 
-#### Return Value
+## Return Value
 
 Returns a data URL containing image data of a snapshot of the canvas. The image data is in `.png` format unless otherwise specified.
 
-#### Discussion
+## Discussion
 
 Use this method to record an image of the canvas’ contents as `.png` or `.jpg` file. The method returns the image as a data URL. The image can be drawn back to the canvas later using the drawing context’s `drawImage` method.
 
-##### Special Considerations
+### Special Considerations
 
 The HTML5 specification currently requires `toDataURL()` to support the `.png` format. Safari also supports the `image/jpeg` type, but other HTML5-savvy browsers may not.
 

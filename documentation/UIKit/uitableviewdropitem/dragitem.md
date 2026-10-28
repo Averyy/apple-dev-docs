@@ -23,7 +23,7 @@ var dragItem: UIDragItem { get }
 @property (nonatomic, readonly) UIDragItem * dragItem;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to get the data associated with the item being dragged.
 

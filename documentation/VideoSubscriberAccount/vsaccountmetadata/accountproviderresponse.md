@@ -24,7 +24,7 @@ var accountProviderResponse: VSAccountProviderResponse? { get }
 @property (nonatomic, strong, readonly, nullable) VSAccountProviderResponse * accountProviderResponse;
 ```
 
-#### Discussion
+## Discussion
 
 This property is `nil` if you didn’t specify any attributes in your [`VSAccountMetadataRequest`](../vsaccountmetadatarequest.md) object or if the person doesn’t have a valid authentication session with the account provider.
 

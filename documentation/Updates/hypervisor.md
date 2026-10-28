@@ -5,15 +5,15 @@
 
 Learn about important changes to Hypervisor.
 
-#### Overview
+## Overview
 
 Browse notable changes in [Hypervisor](../Hypervisor/Hypervisor.md).
 
-#### June 2025
+## June 2025
 
 - Support configuration of the intermediate physical address (IPA) memory granularity of a virtual machine (VM). This capability enables more efficient use of memory and allows for granularity sizes down to 4 KB, which is useful for certain specialized device drivers.
 
-#### June 2024
+## June 2024
 
 - Build your own VM solutions with added support for nested virtualization in Apple silicon chips, and enable a Hypervisor to run inside another VM. Nested virtualization capabilities on a Mac with Apple silicon use a new exception level (EL), EL2, which the framework enables though several new methods, including [`hv_vm_config_set_el2_enabled(_:_:)`](../Hypervisor/hv_vm_config_set_el2_enabled%28_,_%29.md), and a number of enumeration constants that describe ARM system registers.
 - Add support for virtualized ARM Generic Interrupt Controller (GIC) devices and provide an efficient mechanism to manage interrupt delivery to a virtual machine. Providing a GIC device reduces the custom code you need to write to emulate an interrupt controller.

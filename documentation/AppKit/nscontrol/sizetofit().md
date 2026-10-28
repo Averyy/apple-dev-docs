@@ -19,7 +19,7 @@ func sizeToFit()
 - (void) sizeToFit;
 ```
 
-#### Discussion
+## Discussion
 
 If you want a multiple-cell custom subclass of `NSControl` to size itself to fit its cells, you must override this method. This method neither redisplays the receiver nor marks it as needing display. You must do this yourself with either the[`display()`](../nsview/display%28%29.md) or [`setNeedsDisplay()`](./setneedsdisplay%28%29.md) method.
 

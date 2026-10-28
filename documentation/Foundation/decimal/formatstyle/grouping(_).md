@@ -21,11 +21,11 @@ Modifies the format style to use the specified grouping.
 func grouping(_ group: Decimal.FormatStyle.Configuration.Grouping) -> Decimal.FormatStyle
 ```
 
-#### Return Value
+## Return Value
 
 A decimal format style modified to use the specified grouping.
 
-#### Discussion
+## Discussion
 
 The following example creates a default [`Decimal.FormatStyle`](../formatstyle.md) for the `en_US` locale, and a second style that never uses grouping. It then applies each style to an array of decimal values. The formatting that the modified style applies eliminates the three-digit grouping usually performed for the `en_US` locale.
 

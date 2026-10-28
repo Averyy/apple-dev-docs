@@ -33,7 +33,7 @@ func read(from data: Data, options opts: [NSAttributedString.DocumentReadingOpti
 - (BOOL) readFromData:(NSData *) data options:(NSDictionary<NSString *,id> *) opts documentAttributes:(NSDictionary<NSString *,id> **) dict error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 `opts` can contain one of the values described in the Constants section of NSAttributedString Application Kit Additions Reference (“Option keys for importing documents”).
 

@@ -17,7 +17,7 @@ A list of access options to display in the contact access button when matching a
 enum Caption
 ```
 
-#### Overview
+## Overview
 
 Set the caption of a contact access button with the view modifier [`contactAccessButtonCaption(_:)`](../../SwiftUI/view/contactaccessbuttoncaption%28_%29.md). When the query produces a single result, the content access button shows the the caption under the matching contact name. For example, a search for `Anne` could show a button that displays the matching name “Anne Johnson” with a caption line of “annejohnson1@icloud.com” when the caption type is [`ContactAccessButton.Caption.email`](./caption/email.md).
 

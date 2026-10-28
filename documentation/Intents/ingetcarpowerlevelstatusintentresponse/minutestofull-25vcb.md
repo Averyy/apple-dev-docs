@@ -27,7 +27,7 @@ The number of minutes it will take to fully charge the electric vehicle’s batt
 @property (atomic, copy, readwrite, nullable) NSNumber * minutesToFull;
 ```
 
-#### Discussion
+## Discussion
 
 Typically, you assign a value to this property only after handling the intent.
 

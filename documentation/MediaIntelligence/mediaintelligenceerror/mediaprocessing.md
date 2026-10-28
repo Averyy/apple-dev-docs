@@ -20,7 +20,7 @@ The framework can’t process a media asset.
 case mediaProcessing
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs when the framework can’t read or process an image or video asset. This can happen when the asset’s URL is unreachable, the file format is unsupported, or the asset data is corrupt.
 

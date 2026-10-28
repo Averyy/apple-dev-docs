@@ -14,11 +14,11 @@ virtual bool isChild(
  bool onlyChild = false ) const;
 ```
 
-#### Return Value
+## Return Value
 
 If the child argument is not a child of the registry entry, false is returned. If onlyChild is true and the child is not the only child of the entry, false is returned, otherwise true is returned.
 
-#### Overview
+## Overview
 
 This method called in the parent entry determines if the specified entry is a child, in a plane. Additionally, it can check if the child is the only child of the parent entry.
 

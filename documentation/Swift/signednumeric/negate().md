@@ -22,7 +22,7 @@ Replaces this value with its additive inverse.
 mutating func negate()
 ```
 
-#### Discussion
+## Discussion
 
 The following example uses the `negate()` method to negate the value of an integer `x`:
 

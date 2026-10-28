@@ -3,7 +3,7 @@
 **Framework**: Application Services  
 **Kind**: econst
 
-#### Overview
+## Overview
 
 In response to this request code, your CMM must create a single device link profile of type `DeviceLink` that includes the profiles passed to you in the array pointed to by the `profileSet` parameter. For more information, see the function [CWNewLinkProfile](../api-1804915-cwnewlinkprofile.md).
 

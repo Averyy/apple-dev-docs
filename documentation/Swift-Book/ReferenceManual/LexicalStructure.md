@@ -34,12 +34,6 @@ vertical tab (U+000B),
 form feed (U+000C)
 and null (U+0000).
 
-<!--
-  Whitespace characters are listed roughly from
-  most salient/common to least,
-  not in order of Unicode scalar value.
--->
-
 Comments are treated as whitespace by the compiler.
 Single line comments begin with `//`
 and continue until a line feed (U+000A)  or carriage return (U+000D).
@@ -109,14 +103,6 @@ but `` `class` ``, `` `100` `` and `` `model & test` `` are valid.
 The backticks aren't considered part of the identifier;
 `` `x` `` and `x` have the same meaning.
 
-<!--
-The paragraph above produces a link-resolution warning
-because of a known issue with ` in code voice.
-
-https://github.com/swiftlang/swift-book/issues/71
-https://github.com/swiftlang/swift-markdown/issues/93
--->
-
 A raw identifier can contain any Unicode scalar value except the following:
 
 - Backtick (`` ` ``)
@@ -146,47 +132,6 @@ A raw identifier can contain any Unicode scalar value except the following:
 - Medium mathematical space (U+205F)
 - Ideographic space (U+3000)
 
-<!--
-The list above states the rules from SE-0451 without nested negation.
-The acceptance revision (https://forums.swift.org/t/76387)
-lists the rules as follows:
-
->>>
-The only whitespace that should be permitted in a raw identifier is
-`Pattern_White_Space` (which is stable), minus line/paragraph separators, and
-minus any already forbidden ASCII characters (like U+0009). That leaves
-{U+0020, U+200E, U+200F}.
-
-All other `White_Space` not in the set above, as defined in the Unicode 16.0.0
-standard, should be forbidden.
->>>
-
-The list above also avoids discussing whitespace characters
-using a different definition of whitespace
-from what's in the Whitespace and Comments section above.
-
-0009..000D    ; Pattern_White_Space # Cc   [5] <control-0009>..<control-000D>
-0020          ; Pattern_White_Space # Zs       SPACE
-0085          ; Pattern_White_Space # Cc       <control-0085>
-200E..200F    ; Pattern_White_Space # Cf   [2] LEFT-TO-RIGHT MARK..RIGHT-TO-LEFT MARK
-2028          ; Pattern_White_Space # Zl       LINE SEPARATOR
-2029          ; Pattern_White_Space # Zp       PARAGRAPH SEPARATOR
-
-0009..000D    ; White_Space # Cc   [5] <control-0009>..<control-000D>
-0020          ; White_Space # Zs       SPACE
-0085          ; White_Space # Cc       <control-0085>
-00A0          ; White_Space # Zs       NO-BREAK SPACE
-1680          ; White_Space # Zs       OGHAM SPACE MARK
-2000..200A    ; White_Space # Zs  [11] EN QUAD..HAIR SPACE
-2028          ; White_Space # Zl       LINE SEPARATOR
-2029          ; White_Space # Zp       PARAGRAPH SEPARATOR
-202F          ; White_Space # Zs       NARROW NO-BREAK SPACE
-205F          ; White_Space # Zs       MEDIUM MATHEMATICAL SPACE
-3000          ; White_Space # Zs       IDEOGRAPHIC SPACE
-
-From https://www.unicode.org/Public/UCD/latest/ucd/PropList.txt
--->
-
 Raw identifiers can contain whitespace,
 but can't consist of only whitespace.
 In a raw identifier,
@@ -212,21 +157,6 @@ Your code can interact with these identifiers,
 but you can't declare identifiers with that prefix.
 For more information, see the [propertyWrapper](Attributes.md#propertyWrapper) section
 of the [Attributes](Attributes.md) chapter.
-
-<!--
-  The cross reference above includes both the section and chapter because,
-  even though "propertyWrapper" is the title of the section,
-  the section name isn't title case so it doesn't necessarily look like a title.
--->
-
-<!--
-The formal grammar below for 'identifier'
-produces a link-resolution warning
-because of a known issue with ` in code voice.
-
-https://github.com/swiftlang/swift-book/issues/71
-https://github.com/swiftlang/swift-markdown/issues/93
--->
 
 > Grammar of an identifier:
 >
@@ -282,64 +212,6 @@ for example, `self`, `Type`, and `Protocol`
 have special meaning in an explicit member expression,
 so they must be escaped with backticks in that context.
 
-<!--
-  - test: `keywords-without-backticks`
-
-  ```swifttest
-  -> func f(x: Int, in y: Int) {
-        print(x+y)
-     }
-  ```
--->
-
-<!--
-  - test: `var-requires-backticks`
-
-  ```swifttest
-  -> func g(`var` x: Int) {}
-  -> func f(var x: Int) {}
-  !$ warning: 'var' in this position is interpreted as an argument label
-  !! func f(var x: Int) {}
-  !!        ^~~
-  !!        `var`
-  ```
--->
-
-<!--
-  - test: `let-requires-backticks`
-
-  ```swifttest
-  -> func g(`let` x: Int) {}
-  -> func f(let x: Int) {}
-  !$ warning: 'let' in this position is interpreted as an argument label
-  !! func f(let x: Int) {}
-  !!        ^~~
-  !!        `let`
-  ```
--->
-
-<!--
-  - test: `inout-requires-backticks`
-
-  ```swifttest
-  -> func g(`inout` x: Int) {}
-  -> func f(inout x: Int) {}
-  !$ error: 'inout' before a parameter name is not allowed, place it before the parameter type instead
-  !! func f(inout x: Int) {}
-  !!        ^~~~~
-  !!                 inout
-  ```
--->
-
-<!--
-  NOTE: This list of language keywords and punctuation
-  is derived from the file "swift/include/swift/Parse/Tokens.def"
-  and from "utils/gyb_syntax_support/Token.py",
-  which generates the TokenKinds.def file.
-
-  Last updated at Swift commit 2f1987567f5, for Swift 5.4.
--->
-
 - Keywords used in declarations:
   `associatedtype`,
   `borrowing`,
@@ -368,10 +240,6 @@ so they must be escaped with backticks in that context.
   `subscript`,
   `typealias`,
   and `var`.
-
-<!--
-  Token.py doesn't include 'open' but DeclNodes.py does.
--->
 
 - Keywords used in statements:
   `break`,
@@ -448,24 +316,6 @@ so they must be escaped with backticks in that context.
 > [`line`](https://developer.apple.com/documentation/swift/line()),
 > and [`warning(_:)`](https://developer.apple.com/documentation/swift/warning(_:)).
 
-<!--
-  Token.py includes #assert,
-  which looks like it's part of an experimental feature
-  based on the pound_assert_disabled diagnostic's error message:
-  #assert is an experimental feature that is currently disabled
--->
-
-<!--
-  Token.py includes #fileID,
-  which looks like it's part of a future feature related to
-  -enable-experimental-concise-pound-file (see also Swift commit 0e569f5d9e66)
--->
-
-<!--
-  Token.py includes 'yield' as a keyword,
-  which looks like it's related to a future feature around memory ownership.
--->
-
 - Keywords reserved in particular contexts:
   `associativity`,
   `async`,
@@ -499,13 +349,6 @@ so they must be escaped with backticks in that context.
   Outside the context in which they appear in the grammar,
   they can be used as identifiers.
 
-<!--
-  NOTE: The list of context-sensitive keywords above
-  is derived from the file "swift/include/swift/AST/Attr.def"
-  where they're marked CONTEXTUAL_SIMPLE_DECL_ATTR.
-  However, not all context-sensitive keywords appear there;
--->
-
 The following tokens are reserved as punctuation
 and can't be used as custom operators:
 `(`, `)`, `{`, `}`, `[`, `]`,
@@ -527,33 +370,6 @@ The following are examples of literals:
 /Hello, .*/      // Regular expression literal
 true             // Boolean literal
 ```
-
-<!--
-  - test: `basic-literals`
-
-  ```swifttest
-  >> let r0 =
-  -> 42               // Integer literal
-  >> let r1 =
-  -> 3.14159          // Floating-point literal
-  >> let r2 =
-  -> "Hello, world!"  // String literal
-  >> let r4 =
-  -> /Hello, .*/      // Regular expression literal
-  >> let r3 =
-  -> true             // Boolean literal
-  >> for x in [r0, r1, r2, r3] as [Any] { print(type(of: x)) }
-  << Int
-  << Double
-  << String
-  << Bool
-  ```
--->
-
-<!--
-  Refactor the above if possible to avoid using bare expressions.
-  Tracking bug is <rdar://problem/35301593>
--->
 
 A literal doesn't have a type on its own.
 Instead, a literal is parsed as having infinite precision and Swift's type inference
@@ -584,12 +400,6 @@ literal `"Hello, world"` is `String`.
 Also, `Int8` conforms to the `ExpressibleByIntegerLiteral` protocol,
 and therefore it can be used in the type annotation for the integer literal `42`
 in the declaration `let x: Int8 = 42`.
-
-<!--
-  The list of ExpressibleBy... protocols above also appears in Declarations_EnumerationsWithRawCaseValues.
-  ExpressibleByNilLiteral is left out of the list because conformance to it isn't recommended.
-  There is no protocol for regex literal in the list because the stdlib intentionally omits that.
--->
 
 > Grammar of a literal:
 >
@@ -627,23 +437,6 @@ the default inferred type of an integer literal is the Swift standard library ty
 The Swift standard library also defines types for various sizes of
 signed and unsigned integers,
 as described in [Integers](../LanguageGuide/TheBasics.md#Integers).
-
-<!--
-  TR: The prose assumes underscores only belong between digits.
-  Is there a reason to allow them at the end of a literal?
-  Java and Ruby both require underscores to be between digits.
-  Also, are adjacent underscores meant to be allowed, like 5__000?
-  (REPL supports them as of swift-1.21 but it seems odd.)
--->
-
-<!--
-  NOTE: Updated the syntax-grammar to reflect [Contributor 7746]'s comment in
-  <rdar://problem/15181997> Teach the compiler about a concept of negative integer literals.
-  This feels very strange from a grammatical point of view.
-  Update: This is a parser hack, not a lexer hack. Therefore,
-  it's not part of the grammar for integer literal, contrary to [Contributor 2562]'s claim.
-  (Doug confirmed this, 4/2/2014.)
--->
 
 > Grammar of an integer literal:
 >
@@ -816,14 +609,6 @@ using the following escape sequences:
   where *n* is a hexadecimal number
   that has one to eight digits
 
-<!--
-  The behavior of \n and \r isn't the same as C.
-  We specify exactly what those escapes mean.
-  The behavior on C is platform dependent --
-  in text mode, \n maps to the platform's line separator
-  which could be CR or LF or CRLF.
--->
-
 The value of an expression can be inserted into a string literal
 by placing the expression in parentheses after a backslash (`\`).
 The interpolated expression can contain a string literal,
@@ -839,34 +624,6 @@ For example, all of the following string literals have the same value:
 "1 2 \(1 + 2)"
 let x = 3; "1 2 \(x)"
 ```
-
-<!--
-  - test: `string-literals`
-
-  ```swifttest
-  >> let r0 =
-  -> "1 2 3"
-  >> let r1 =
-  -> "1 2 \("3")"
-  >> assert(r0 == r1)
-  >> let r2 =
-  -> "1 2 \(3)"
-  >> assert(r0 == r2)
-  >> let r3 =
-  -> "1 2 \(1 + 2)"
-  >> assert(r0 == r3)
-  -> let x = 3; "1 2 \(x)"
-  >> assert(r0 == "1 2 \(x)")
-  !$ warning: string literal is unused
-  !! let x = 3; "1 2 \(x)"
-  !!            ^~~~~~~~~~
-  ```
--->
-
-<!--
-  Refactor the above if possible to avoid using bare expressions.
-  Tracking bug is <rdar://problem/35301593>
--->
 
 A string delimited by extended delimiters is a sequence of characters
 surrounded by quotation marks and a balanced set of one or more number signs (`#`).
@@ -902,52 +659,14 @@ print(string == escaped)
 // Prints "true".
 ```
 
-<!--
-  - test: `extended-string-delimiters`
-
-  ```swifttest
-  -> let string = #"\(x) \ " \u{2603}"#
-  -> let escaped = "\\(x) \\ \" \\u{2603}"
-  -> print(string)
-  <- \(x) \ " \u{2603}
-  -> print(string == escaped)
-  <- true
-  ```
--->
-
 If you use more than one number sign to form
 a string delimited by extended delimiters,
 don't place whitespace in between the number signs:
-
-<!--
-  - test: `extended-string-delimiters`
-
-  ```swifttest
-  -> print(###"Line 1\###nLine 2"###) // OK
-  << Line 1
-  << Line 2
-  ```
--->
 
 ```swift
 print(###"Line 1\###nLine 2"###) // OK
 print(# # #"Line 1\# # #nLine 2"# # #) // Error
 ```
-
-<!--
-  - test: `extended-string-delimiters-err`
-
-  ```swifttest
-  -> print(###"Line 1\###nLine 2"###) // OK
-  -> print(# # #"Line 1\# # #nLine 2"# # #) // Error
-  !$ error: expected expression in list of expressions
-  !! print(# # #"Line 1\# # #nLine 2"# # #) // Error
-  !! ^
-  !$ error: invalid escape sequence in literal
-  !! print(# # #"Line 1\# # #nLine 2"# # #) // Error
-  !! ^
-  ```
--->
 
 Multiline string literals that you create using extended delimiters
 have the same indentation requirements as regular multiline string literals.
@@ -967,15 +686,6 @@ no runtime concatenation is performed.
 let textA = "Hello " + "world"
 let textB = "Hello world"
 ```
-
-<!--
-  - test: `concatenated-strings`
-
-  ```swifttest
-  -> let textA = "Hello " + "world"
-  -> let textB = "Hello world"
-  ```
--->
 
 > Grammar of a string literal:
 >
@@ -1016,23 +726,6 @@ let textB = "Hello world"
 >
 > *escaped-newline* → *escape-sequence* *inline-spaces*_?_ *line-break*
 
-<!--
-  Quoted text resolves to a sequence of escaped characters by way of
-  the quoted-text rule which allows repetition; no need to allow
-  repetition in the quoted-text/escaped-character rule too.
--->
-
-<!--
-  Now that single quotes are gone, we don't have a character literal.
-  Because we may one bring them back, here's the old grammar for them:
-
-  textual-literal -> character-literal | string-literal
-
-  character-literal -> ``'`` quoted-character ``'``
-  quoted-character -> escaped-character
-  quoted-character -> Any Unicode scalar value except ``'``, ``\``, U+000A, or U+000D
--->
-
 ### Regular Expression Literals
 
 A regular expression literal is a sequence of characters
@@ -1059,30 +752,6 @@ For example,
 `/\(/` matches a single left parenthesis
 and `/\d/` matches a single digit.
 
-<!--
-  OUTLINE
-
-  Doc comments on Regex struct don't have more syntax details,
-  or a cross reference to where you can learn more.
-  We probably need at least some baseline coverage
-  of the supported syntax here.
-  (Unified dialect/superset of POSIX + PCRE 2 + Oniguruma + .NET)
-
-  https://github.com/swiftlang/swift-experimental-string-processing/blob/main/Sources/_StringProcessing/Regex/Core.swift
-
-  Regex literals and the DSL take different approaches to captures.
-  The literals give you more type safety.
-  The DSL lets you access stuff by name.
-
-  From SE-0354:
-  A regex literal may be used with a prefix operator,
-  e.g `let r = ^^/x/` is parsed as `let r = ^^(/x/)`.
-  In this case,
-  when encountering operator characters containing `/` in an expression position,
-  the characters up to the first `/` are split into a prefix operator,
-  and regex literal parsing continues as normal.
--->
-
 A regular expression literal delimited by extended delimiters
 is a sequence of characters surrounded by slashes (`/`)
 and a balanced set of one or more number signs (`#`).
@@ -1108,12 +777,6 @@ Inside a multiline regular expression literal,
 the extended regular expression syntax is enabled by default ---
 specifically, whitespace is ignored and comments are allowed.
 
-<!--
-  TODO As details about the multiline syntax shake out during SE review,
-  like indentation and whitespace,
-  add them above or spin out a separate paragraph.
--->
-
 If you use more than one number sign to form
 a regular expression literal delimited by extended delimiters,
 don't place whitespace in between the number signs:
@@ -1122,15 +785,6 @@ don't place whitespace in between the number signs:
 let regex1 = ##/abc/##       // OK
 let regex2 = # #/abc/# #     // Error
 ```
-
-<!--
-  - test: `extended-regex-delimiters-err`
-
-  ```swifttest
-  -> let regex1 = ##/abc/##       // OK
-  -> let regex2 = # #/abc/# #     // Error
-  ```
--->
 
 If you need to make an empty regular expression literal,
 you must use the extended delimiter syntax.
@@ -1171,68 +825,10 @@ it can't contain a dot elsewhere.
 For example, `+.+` is treated as
 the `+` operator followed by the `.+` operator.
 
-<!--
-  - test: `dot-operator-must-start-with-dot`
-
-  ```swifttest
-  >> infix operator +.+ ;
-  !$ error: consecutive statements on a line must be separated by ';'
-  !! infix operator +.+ ;
-  !!                 ^
-  !!                 ;
-  !$ error: operator with postfix spacing cannot start a subexpression
-  !! infix operator +.+ ;
-  !!                 ^
-  !$ error: expected expression
-  !! infix operator +.+ ;
-  !!                    ^
-  >> infix operator .+
-  >> infix operator .+.
-  ```
--->
-
 Although you can define custom operators that contain a question mark (`?`),
 they can't consist of a single question mark character only.
 Additionally, although operators can contain an exclamation point (`!`),
 postfix operators can't begin with either a question mark or an exclamation point.
-
-<!--
-  - test: `postfix-operators-dont-need-unique-prefix`
-
-  ```swifttest
-  >> struct Num { var value: Int }
-     postfix operator +
-     postfix operator +*
-     postfix func + (x: Num) -> Int { return x.value + 1 }
-     postfix func +* (x: Num) -> Int { return x.value * 100 }
-  >> let n = Num(value: 5)
-  >> print(n+)
-  << 6
-  >> print(n+*)
-  << 500
-  ```
--->
-
-<!--
-  - test: `postfix-operator-cant-start-with-question-mark`
-
-  ```swifttest
-  >> postfix operator ?+
-  >> postfix func ?+ (x: Int) -> Int {
-         if x > 10 {
-             return x
-         }
-         return x + 1
-     }
-  >> print(1?+)
-  !$ error: postfix operator names starting with '?' or '!' are disallowed to avoid collisions with built-in unwrapping operators
-  !! postfix operator ?+
-  !!                  ^
-  !$ error: '+' is not a postfix unary operator
-  !! print(1?+)
-  !!         ^
-  ```
--->
 
 > Note: The tokens `=`, `->`, `//`, `/*`, `*/`, `.`,
 > the prefix operators `<`, `&`, and `?`,
@@ -1284,29 +880,10 @@ to disambiguate between the closing `>` characters in constructs like
 In this example, the closing `>` characters aren't treated as a single token
 that may then be misinterpreted as a bit shift `>>` operator.
 
-<!--
-  NOTE: Once the parser sees a < it goes into a pre-scanning lookahead mode.  It
-  matches < and > and looks at what token comes after the > -- if it's a . or
-  a ( it treats the <...> as a generic parameter list, otherwise it treats
-  them as less than and greater than.
-
-  This fails to parse things like x<<2>>(1+2) but it's the same as C#.  So
-  don't write that.
-
-  We call out the > > vs >> because
-  C++ typically needs whitespace to resolve the ambiguity.
--->
-
 To learn how to define new, custom operators,
 see [Custom Operators](../LanguageGuide/AdvancedOperators.md#Custom-Operators) and [Operator Declaration](Declarations.md#Operator-Declaration).
 To learn how to overload existing operators,
 see [Operator Methods](../LanguageGuide/AdvancedOperators.md#Operator-Methods).
-
-<!--
-  NOTE: The ? is a reserved punctuation.  Optional-chaining (foo?.bar) is actually a
-  monad -- the ? is actually a monadic bind operator.  It is like a burrito.
-  The current list of reserved punctuation is in Tokens.def.
--->
 
 > Grammar of operators:
 >
@@ -1348,13 +925,3 @@ see [Operator Methods](../LanguageGuide/AdvancedOperators.md#Operator-Methods).
 > *infix-operator* → *operator* \
 > *prefix-operator* → *operator* \
 > *postfix-operator* → *operator*
-
-<!--
-This source file is part of the Swift.org open source project
-
-Copyright (c) 2014 - 2022 Apple Inc. and the Swift project authors
-Licensed under Apache License v2.0 with Runtime Library Exception
-
-See https://swift.org/LICENSE.txt for license information
-See https://swift.org/CONTRIBUTORS.txt for the list of Swift project authors
--->

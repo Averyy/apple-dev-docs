@@ -25,7 +25,7 @@ class CKLocationSortDescriptor
 @interface CKLocationSortDescriptor : NSSortDescriptor
 ```
 
-#### Overview
+## Overview
 
 You can add a location sort descriptor to your queries when searching for records. At creation time, you must provide the sort descriptor with a key that has a [`CLLocation`](../CoreLocation/cllocation.md) object as its value. The sort descriptor uses the value of that key to perform the sort.
 

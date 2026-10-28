@@ -15,11 +15,11 @@ Adds a video control to the video clock device.
 kern_return_t AddControl(IOUserVideoControl *in_control);
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` if control was successfully added.
 
-#### Discussion
+## Discussion
 
 The control’s reference count will be incremented if it was successfully added to the clock device.
 

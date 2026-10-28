@@ -19,7 +19,7 @@ var windowTitlebarLayoutDirection: NSUserInterfaceLayoutDirection { get }
 @property (readonly) NSUserInterfaceLayoutDirection windowTitlebarLayoutDirection;
 ```
 
-#### Discussion
+## Discussion
 
 The layout direction of the window title bar includes the standard window buttons (close, minimize, maximize) and the title for the window. In general, this returns [`NSUserInterfaceLayoutDirection.rightToLeft`](../nsuserinterfacelayoutdirection/righttoleft.md) if the primary system language is right to left. The layout direction may be right to left even in applications that don’t have a right to left language localization. Refer to this value if the application uses [`titlebarAppearsTransparent`](./titlebarappearstransparent.md) and places controls under the title bar.
 

@@ -16,7 +16,7 @@ The protocol your app extension implements, which provides contact items to the 
 protocol ContactProviderExtension : ContactItemEnumerating, AppExtension
 ```
 
-#### Overview
+## Overview
 
 For the system to recognize your app extension, use the following identifier in the extension’s `Info.plist` file:
 

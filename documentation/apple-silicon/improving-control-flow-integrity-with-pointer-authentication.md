@@ -5,7 +5,7 @@
 
 Increase confidence that your code uses pointers correctly.
 
-#### Overview
+## Overview
 
 Many common attacks against software use techniques that compromise control flow within an app, executing code within the app that the attacker wants to run instead of the intended code path. Two examples of such attacks are:
 
@@ -25,7 +25,7 @@ You identify a signing key by name; the CPU keeps the key’s data secret and ca
 
 The pointer-signing key names intrinsic operations are defined in the header file `<ptrauth.h>`.
 
-#### Generate a discriminator
+## Generate a discriminator
 
 Signing pointers requires an arbitrary value called the *discriminator*, that the processor uses as a salt for the signing operation to ensure that signed pointers for different purposes aren’t interchangeable. Using different discriminators in different places makes it more difficult for an attacker to compromise your code by replacing a valid signed pointer value with a different valid signed pointer.
 
@@ -47,7 +47,7 @@ const int discriminator = ptrauth_blend_discriminator(pointer, SEED_VALUE);
 
 When you use a discriminator that incorporates the pointer’s memory location, you can’t copy the pointer or a data structure that contains the pointer using `memcpy` and related functions because the discriminator isn’t valid to verify the pointer at the new memory location.
 
-#### Select a key
+## Select a key
 
 The cryptographic key that the system uses to generate a PAC for a pointer is known as the *signing key*. You identify which signing key to use by name, and the system doesn’t give you access to the signing key’s value. Choose from the four different signing keys, depending on whether you’re protecting a code pointer and whether you need a process-dependent or process-independent signing key:
 
@@ -68,7 +68,7 @@ The header file `ptrauth.h` also provides these names that are synonyms for the 
 - **`ptrauth_key_block_function`**: A key you use to sign pointers to block functions.
 - **`ptrauth_key_cxx_vtable_pointer`**: A key you use to sign C++ v-table entries.
 
-#### Annotate pointers with the pointer-authentication type qualifiers
+## Annotate pointers with the pointer-authentication type qualifiers
 
 Use the `__ptrauth` type qualifier to tell the compiler to generate a PAC for your data pointer or function pointer, and to validate the PAC when you dereference the pointer. The type qualifier takes three arguments:
 
@@ -82,7 +82,7 @@ For example, to declare a data pointer that the system signs using the constant 
 void *__ptrauth(ptrauth_key_process_dependent_data, 0, 0x1f35) *pointer = &data;
 ```
 
-#### Sign a pointer
+## Sign a pointer
 
 To sign a pointer, you need three pieces of information:
 
@@ -100,7 +100,7 @@ void *signed_pointer = ptrauth_sign_constant(pointer, ptrauth_key_process_depend
 
 The returned signed pointer is the same size and type as a raw pointer, and the signature information is stored in unused bits of the pointer value.
 
-#### Authenticate a signed pointer
+## Authenticate a signed pointer
 
 To recover the raw pointer value, if the signed pointer passes validity checks, call `ptr_auth_data`:
 

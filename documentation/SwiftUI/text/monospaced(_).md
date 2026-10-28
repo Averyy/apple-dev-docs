@@ -22,7 +22,7 @@ nonisolated
 func monospaced(_ isActive: Bool = true) -> Text
 ```
 
-#### Return Value
+## Return Value
 
 Monospaced text.
 

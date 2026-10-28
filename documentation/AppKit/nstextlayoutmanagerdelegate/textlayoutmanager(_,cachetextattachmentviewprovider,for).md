@@ -19,7 +19,7 @@ optional func textLayoutManager(_ textLayoutManager: NSTextLayoutManager, cacheT
 - (void) textLayoutManager:(NSTextLayoutManager *) textLayoutManager cacheTextAttachmentViewProvider:(NSTextAttachmentViewProvider *) viewProvider forTextAttachment:(NSTextAttachment *) textAttachment;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate can use this to cache the view provider.
 

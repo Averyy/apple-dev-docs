@@ -19,7 +19,7 @@ func contentResizingMask() -> Int
 - (NSUInteger) contentResizingMask;
 ```
 
-#### Return Value
+## Return Value
 
 The content resizing mask.
 

@@ -9,18 +9,18 @@ Create, open, and manage disk images.
 **Availability**:
 - macOS 27.0+
 
-#### Overview
+## Overview
 
 The DiskImageKit framework provides an API for creating, opening, and managing disk images. It’s designed primarily for use with the Virtualization framework, enabling seamless integration of disk images as storage for virtual machines.
 
-##### Supported Formats
+### Supported Formats
 
 DiskImageKit supports two disk image formats:
 
 - **ASIF**: Apple Sparse Image Format. ASIF images support both standalone and stacked configurations.
 - **RAW**: Traditional raw disk image format. You can only use RAW images as standalone images or as base images in stacked configurations.
 
-##### Stacked Disk Images
+### Stacked Disk Images
 
 A key feature of DiskImageKit is support for stacked disk images, where multiple image layers are combined into a single logical disk. This enables powerful workflows:
 
@@ -34,9 +34,9 @@ Stacked images allow you to:
 - Implement snapshot and restore functionality.
 - Optimize performance with caching layers.
 
-##### Getting started
+### Getting started
 
-###### Create a standalone ASIF image
+#### Create a standalone ASIF image
 
 Create a standalone disk image:
 
@@ -54,7 +54,7 @@ import DiskImageKit
     ))
 ```
 
-###### Open an existing image
+#### Open an existing image
 
 Open any existing disk image (standalone or layer):
 
@@ -69,7 +69,7 @@ Open any existing disk image (standalone or layer):
     }
 ```
 
-###### Create a stacked disk image
+#### Create a stacked disk image
 
 Build a multi-layer disk image:
 
@@ -84,7 +84,7 @@ Build a multi-layer disk image:
     stackedImage = try stackedImage.appending(.asifLayer(url: overlayURL, type: .overlay))
 ```
 
-###### Use disk images with the Virtualization framework
+#### Use disk images with the Virtualization framework
 
 Pass the disk image - either a standalone image or a stack - to the Virtualization framework:
 
@@ -93,7 +93,7 @@ Pass the disk image - either a standalone image or a stack - to the Virtualizati
     let storageAttachment = try VZDiskImageStorageDeviceAttachment(diskImage: diskImage)
 ```
 
-##### Truncate or extend disk images
+### Truncate or extend disk images
 
 You can truncate or extend disk images (this does not resize the filesystem inside the image):
 
@@ -107,7 +107,7 @@ You can truncate or extend disk images (this does not resize the filesystem insi
 
 > **Note**: For stacked images, truncating affects the top layer, which determines the stack’s effective size.
 
-##### Inspect disk images with image properties
+### Inspect disk images with image properties
 
 DiskImage objects provide various properties to inspect disk images:
 
@@ -138,7 +138,7 @@ if let parentUUID = diskImage.parentUUID {
 
 ```
 
-##### Important details about stacked disk images
+### Important details about stacked disk images
 
 Remember to keep the following details in mind when working with stack disk images:
 

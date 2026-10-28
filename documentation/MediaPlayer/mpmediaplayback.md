@@ -27,7 +27,7 @@ protocol MPMediaPlayback
 
 - [Playing audio using the built-in music player](./playing-audio-using-the-built-in-music-player.md)
 
-#### Overview
+## Overview
 
 This protocol supports basic transport operations including start, stop, and pause, and also lets you seek forward and back through media or to a specific point in its timeline.
 

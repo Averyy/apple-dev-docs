@@ -20,7 +20,7 @@ A distance at which the rigid bodies receive zero radial force.
 let restDistance: Float
 ```
 
-#### Discussion
+## Discussion
 
 Use a **non-negative** rate. The force field pulls rigid bodies to the effect’s origin along the radial direction if this value is `0`.
 

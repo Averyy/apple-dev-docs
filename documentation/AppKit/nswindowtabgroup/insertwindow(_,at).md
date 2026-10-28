@@ -19,7 +19,7 @@ func insertWindow(_ window: NSWindow, at index: Int)
 - (void) insertWindow:(NSWindow *) window atIndex:(NSInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 Inserts the window at the specified location within the tab group. If the window is already a member of another tab group, it is first removed from that group.
 

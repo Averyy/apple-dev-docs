@@ -20,7 +20,7 @@ func update(_ content: ActivityContent<Activity<Attributes>.ContentState>) async
 
 - [Displaying live data with Live Activities](../displaying-live-data-with-live-activities.md)
 
-#### Discussion
+## Discussion
 
 Use this function to update the Live Activity while your app is in the foreground or while it’s in the background — for example, by using [Background Tasks](../../BackgroundTasks/BackgroundTasks.md).
 

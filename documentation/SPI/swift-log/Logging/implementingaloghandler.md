@@ -10,11 +10,11 @@ framework: "swift-log/Logging"
 
 Create a custom logging backend that provides logging services for your apps and libraries.
 
-#### Overview
+## Overview
 
 To become a compatible logging backend that any SwiftLog consumer can use, you need to fulfill a few requirements, primarily conforming to the [`LogHandler`](./loghandler.md) protocol.
 
-##### Implement with value type semantics
+### Implement with value type semantics
 
 Your log handler **must be a `struct`** and exhibit value semantics. This ensures that changes to one logger don’t affect others.
 
@@ -42,7 +42,7 @@ func logHandlerValueSemantics() {
 
 > **Note**: In special cases, it is acceptable for a log handler to provide global log level overrides that may affect all log handlers created.
 
-##### Example implementation
+### Example implementation
 
 Here’s a complete example of a simple print-based log handler:
 
@@ -105,7 +105,7 @@ public struct PrintLogHandler: LogHandler {
 
 ```
 
-##### Constructing handlers that need more than a label
+### Constructing handlers that need more than a label
 
 Many log handler backends need more than a `label` in order to construct them: a file path, a remote address, credentials, or a buffer. A handler is an ordinary value that you construct, so nothing constrains its initializer — it can take any parameters it needs, and it can `throw`. There is no protocol-required `init(label:)`. The single `label` argument on factory methods such as `StreamLogHandler.standardOutput(label:)` is a convention, not a requirement.
 
@@ -196,7 +196,7 @@ public struct FileLogHandler: LogHandler {
 }
 ```
 
-###### Using your log handler
+#### Using your log handler
 
 Construct the destination where you can use `try` to build a logger backed by your handler, then bind it as [`current`](./logger/current.md) for the application’s lifetime using `withLogger`:
 
@@ -223,9 +223,9 @@ The `try` on `Destination` is where setup fails if the path is unwritable: valid
 
 For runtime failures the handler can’t avoid, such as a full disk or a broken pipe, degrade gracefully inside `log(event:)` by dropping the log message, retrying, or reporting to `stderr`. Never call `fatalError` on the logging path.
 
-##### Advanced features
+### Advanced features
 
-###### Metadata providers
+#### Metadata providers
 
 Metadata providers allow you to dynamically add contextual information to all log messages without explicitly passing it each time. Common use cases include request IDs, user sessions, or trace contexts that should be included in logs throughout a request’s lifecycle.
 
@@ -298,7 +298,7 @@ public struct PrintLogHandler: LogHandler {
 }
 ```
 
-###### Reading metadata attributes in LogHandlers
+#### Reading metadata attributes in LogHandlers
 
 Metadata values can carry attributes alongside their string representation. Attributes are embedded inside `MetadataValue` via the `.stringConvertible` case and are accessible through the `value.attributes` property. This enables features like sensitivity annotations without any changes to your handler’s protocol conformance.
 
@@ -334,7 +334,7 @@ public func log(event: LogEvent) {
 - **No new protocol requirements**: Reading attributes does not require implementing any new `LogHandler` properties or subscripts. The `metadata` property and `metadataKey` subscript work exactly as before.
 - **Attributes flow through metadata**: Attributed values flow naturally through metadata merging, `MetadataProvider`, and `MultiplexLogHandler` — no special handling needed.
 
-##### Performance considerations
+### Performance considerations
 
 1. **Avoid blocking**: Don’t block the calling thread for I/O operations.
 2. **Lazy evaluation**: Remember that messages and metadata are autoclosures.

@@ -13,11 +13,11 @@
 size_t sockopt_valsize(sockopt_t sopt);
 ```
 
-#### Return Value
+## Return Value
 
 The length, in bytes, of the data.
 
-#### Discussion
+## Discussion
 
 Retrieves the size of the socket option data.
 

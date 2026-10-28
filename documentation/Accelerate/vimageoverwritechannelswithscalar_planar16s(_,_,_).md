@@ -25,11 +25,11 @@ func vImageOverwriteChannelsWithScalar_Planar16S(_ scalar: Pixel_16S, _ dest: Un
 vImage_Error vImageOverwriteChannelsWithScalar_Planar16S(Pixel_16S scalar, const vImage_Buffer *dest, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 The following code fills `pixelBuffer` with `scalar`:
 

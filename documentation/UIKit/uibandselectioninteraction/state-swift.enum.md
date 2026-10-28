@@ -22,7 +22,7 @@ enum State
 enum UIBandSelectionInteractionState : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Use the [`UIBandSelectionInteraction.State`](./state-swift.enum.md) constants in the handler of a [`UIBandSelectionInteraction`](../uibandselectioninteraction.md) object to determine the current state of the interaction. When the interaction object is idle, it sets the state to [`UIBandSelectionInteraction.State.possible`](./state-swift.enum/possible.md). After the interaction starts, the state changes to other values to reflect the progress toward the completion of that interaction.
 

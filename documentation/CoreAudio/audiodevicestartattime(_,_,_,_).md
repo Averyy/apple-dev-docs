@@ -20,11 +20,11 @@ func AudioDeviceStartAtTime(_ inDevice: AudioObjectID, _ inProcID: AudioDeviceIO
 extern OSStatus AudioDeviceStartAtTime(AudioObjectID inDevice, AudioDeviceIOProcID inProcID, AudioTimeStamp *ioRequestedStartTime, UInt32 inFlags);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus indicating success or failure. kAudioHardwareUnsupportedOperationError will be returned if the AudioDevice does not support starting at a specific time and inProc and ioRequestedStartTime are not NULL.
 
-#### Discussion
+## Discussion
 
 Starts IO for the given AudioDeviceIOProcID and aligns the IO cycle of the AudioDevice with the given time.
 

@@ -13,11 +13,11 @@ Restores the current driver to QuickDraw mode, ready to accept QuickDraw data in
 OSStatus PMPostScriptEnd ();
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../core_printing.md#1670007).
 
-#### Overview
+## Overview
 
 Valid between calls to `PMBeginPage` and `PMEndPage`. Call  `PMPostScriptEnd`  to complete a PostScript session started with  `PMPostScriptBegin`.
 

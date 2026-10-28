@@ -21,7 +21,7 @@ The reorderable customization behavior.
 static var reorderable: ToolbarCustomizationBehavior { get }
 ```
 
-#### Discussion
+## Discussion
 
 Items with this behavior start in the toolbar and can be moved within the toolbar by the user, but can not be removed from the toolbar.
 

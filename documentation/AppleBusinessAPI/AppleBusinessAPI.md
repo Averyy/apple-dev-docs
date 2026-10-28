@@ -9,7 +9,7 @@ Automate device management activities, view device information, and manage users
 **Availability**:
 - Apple Business API 2.6+
 
-#### Overview
+## Overview
 
 > **Note**: This API is a part of the [Apple School Manager and Apple Business APIs](../apple-school-and-business-manager-api/apple-school-and-business-manager-api.md) collection.
 

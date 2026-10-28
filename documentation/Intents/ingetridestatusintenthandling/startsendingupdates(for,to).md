@@ -28,7 +28,7 @@ func startSendingUpdates(for intent: INGetRideStatusIntent, to observer: any ING
 
 - [Providing Live Status Updates](../../SiriKit/providing-live-status-updates.md)
 
-#### Discussion
+## Discussion
 
 The system calls this method when it wants you to provide periodic status updates on a previously booked ride. Your implementation should store a reference to the provided observer object and schedule a repeating task to send updates to that observer. SiriKit expects you to send updates fairly frequently, with a minimum update rate of once every 10 seconds. You should continue delivering updates until the system calls the [`stopSendingUpdates(for:)`](./stopsendingupdates%28for%29.md) method.
 

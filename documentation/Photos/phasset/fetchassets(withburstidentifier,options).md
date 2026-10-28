@@ -24,11 +24,11 @@ class func fetchAssets(withBurstIdentifier burstIdentifier: String, options: PHF
 + (PHFetchResult<PHAsset *> *) fetchAssetsWithBurstIdentifier:(NSString *) burstIdentifier options:(PHFetchOptions *) options;
 ```
 
-#### Return Value
+## Return Value
 
 A fetch result that contains the requested [`PHAsset`](../phasset.md) objects, or an empty fetch result if no objects match the request.
 
-#### Discussion
+## Discussion
 
 A burst photo sequence, as seen in the Photos app, corresponds to a group of Photos assets that share the same [`burstIdentifier`](./burstidentifier.md) string.
 

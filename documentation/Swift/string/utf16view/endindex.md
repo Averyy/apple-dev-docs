@@ -21,7 +21,7 @@ The “past the end” position—that is, the position one greater than the las
 var endIndex: String.UTF16View.Index { get }
 ```
 
-#### Discussion
+## Discussion
 
 In an empty UTF-16 view, `endIndex` is equal to `startIndex`.
 

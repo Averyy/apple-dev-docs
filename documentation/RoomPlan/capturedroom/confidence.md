@@ -17,7 +17,7 @@ Levels of certainty in the classification of a particular detail in a scan.
 enum Confidence
 ```
 
-#### Overview
+## Overview
 
 The framework chooses a level of certainty in its assessment of particular room features, such as:
 

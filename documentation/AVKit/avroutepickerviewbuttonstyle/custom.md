@@ -19,7 +19,7 @@ case custom
 AVRoutePickerViewButtonStyleCustom
 ```
 
-#### Discussion
+## Discussion
 
 Use this button style to customize the background view and focus appearance for a route picker view.
 

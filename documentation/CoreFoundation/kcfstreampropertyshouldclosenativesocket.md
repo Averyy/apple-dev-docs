@@ -25,7 +25,7 @@ let kCFStreamPropertyShouldCloseNativeSocket: CFString
 extern CFStringRef const kCFStreamPropertyShouldCloseNativeSocket;
 ```
 
-#### Discussion
+## Discussion
 
 If set to `kCFBooleanTrue`, the stream will close and release the underlying native socket when the stream is released. If set to `kCFBooleanFalse`, the stream will not close and release the underlying native socket when the stream is released. If a stream is created with a native socket, the default value of this property is `kCFBooleanFalse`. This property is only available for socket streams. It can be set by calling [`CFReadStreamSetProperty(_:_:_:)`](./cfreadstreamsetproperty%28_,_,_%29.md) and [`CFWriteStreamSetProperty(_:_:_:)`](./cfwritestreamsetproperty%28_,_,_%29.md), and it can be copied by [`CFReadStreamCopyProperty(_:_:)`](./cfreadstreamcopyproperty%28_,_%29.md) and [`CFWriteStreamCopyProperty(_:_:)`](./cfwritestreamcopyproperty%28_,_%29.md).
 

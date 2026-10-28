@@ -25,7 +25,7 @@ case failure
 INSearchCallHistoryIntentResponseCodeFailure
 ```
 
-#### Discussion
+## Discussion
 
 Use this code for both transient and unrecoverable errors that would prevent your app from searching the user’s call history. For example, use this code if the user’s call history requires accessing the network and the network is unavailable.
 

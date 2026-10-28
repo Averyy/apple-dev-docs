@@ -20,7 +20,7 @@ new errorCode(
 );
 ```
 
-#### Discussion
+## Discussion
 
 [`ApplePayError`](../applepayerror.md) objects are created using a constructor, as follows:
 

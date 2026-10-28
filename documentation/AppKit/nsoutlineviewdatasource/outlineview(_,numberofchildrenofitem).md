@@ -20,11 +20,11 @@ optional func outlineView(_ outlineView: NSOutlineView, numberOfChildrenOfItem i
 - (NSInteger) outlineView:(NSOutlineView *) outlineView numberOfChildrenOfItem:(id) item;
 ```
 
-#### Return Value
+## Return Value
 
 The number of child items encompassed by `item`. If `item` is `nil`, this method should return the number of children for the top-level item.
 
-#### Discussion
+## Discussion
 
 The [`outlineView(_:numberOfChildrenOfItem:)`](./outlineview%28_,numberofchildrenofitem%29.md) method is called very frequently, so it must be efficient.
 

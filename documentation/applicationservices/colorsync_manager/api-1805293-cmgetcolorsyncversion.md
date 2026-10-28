@@ -13,11 +13,11 @@ CMError CMGetColorSyncVersion (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 `CMGetColorSyncVersion` relieves you from having to call `Gestalt` to find out the version of ColorSync installed on the system. 
 

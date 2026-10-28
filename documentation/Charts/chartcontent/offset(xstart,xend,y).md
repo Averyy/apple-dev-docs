@@ -22,7 +22,7 @@ nonisolated
 func offset(xStart: CGFloat = 0, xEnd: CGFloat = 0, y: CGFloat = 0) -> some ChartContent
 ```
 
-#### Discussion
+## Discussion
 
 The `xStart` and `xEnd` offset values apply only to marks that have such properties, like bar marks and line segment marks.
 

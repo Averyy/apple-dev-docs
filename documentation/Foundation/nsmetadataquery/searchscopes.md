@@ -25,7 +25,7 @@ var searchScopes: [Any] { get set }
 @property (copy) NSArray * searchScopes;
 ```
 
-#### Discussion
+## Discussion
 
 This array can contain `NSURL` or `NSString` objects that represent file-system directories or the search scopes for the query. For a list of valid search scopes, see [Metadata Query Search Scopes](../metadata-query-search-scopes.md). An empty array indicates that there is no limitation on where the query searches.
 

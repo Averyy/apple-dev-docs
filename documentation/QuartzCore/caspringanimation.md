@@ -24,7 +24,7 @@ class CASpringAnimation
 @interface CASpringAnimation : CABasicAnimation
 ```
 
-#### Overview
+## Overview
 
 You would typically use a spring animation to animate a layer’s position so that it appears to be pulled towards a target by a spring. The further the layer is from the target, the greater the acceleration towards it is.
 

@@ -24,7 +24,7 @@ var lineJoin: CGLineJoin { get set }
 @property CGLineJoin lineJoin;
 ```
 
-#### Discussion
+## Discussion
 
 The default line join style is [`CGLineJoin.round`](../../CoreGraphics/cglinejoin/round.md).
 

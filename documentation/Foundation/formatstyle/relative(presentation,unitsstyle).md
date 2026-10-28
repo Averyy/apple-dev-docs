@@ -23,11 +23,11 @@ static func relative(presentation: Date.RelativeFormatStyle.Presentation, unitsS
 
 Available when `Self` is `Date.RelativeFormatStyle`.
 
-#### Return Value
+## Return Value
 
 A relative date format style customized with the specified presentation and unit styles.
 
-#### Discussion
+## Discussion
 
 Use this static method when the call point allows the use of [`Date.RelativeFormatStyle`](../date/relativeformatstyle.md). You typically do this when calling the [`formatted(_:)`](../date/formatted%28_%29.md) method of [`Date`](../date.md).
 

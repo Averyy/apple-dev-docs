@@ -20,7 +20,7 @@ Copies multiple offsets within a source placement sparse buffer to a destination
 func copyMappings(sourceBuffer: any MTLBuffer, destinationBuffer: any MTLBuffer, operations: [MTL4CopySparseBufferMappingOperation])
 ```
 
-#### Discussion
+## Discussion
 
 You are responsible for ensuring the source destination sparse buffers have the same `placementSparsePageSize` when you create them via [`makeBuffer(length:options:placementSparsePageSize:)`](../mtldevice/makebuffer%28length,options,placementsparsepagesize%29.md).
 

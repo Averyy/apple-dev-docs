@@ -29,7 +29,7 @@ class HKStatisticsQuery
 - [Accessing condensed workout samples](./accessing-condensed-workout-samples.md)
 - [Executing Statistics Collection Queries](./executing-statistics-collection-queries.md)
 
-#### Overview
+## Overview
 
 Statistics queries calculate common statistics over the set of matching samples. You can use statistical queries to calculate the minimum, maximum, or average value of a set of discrete quantities, or use them to calculate the sum for cumulative quantities. For the complete list of possible calculations, see [`HKStatisticsOptions`](./hkstatisticsoptions.md). For more information about the available quantity types and to learn whether they are discrete or cumulative values, see [Data types](./data-types.md).
 

@@ -19,7 +19,7 @@ func insertColor(_ color: NSColor, key: NSColor.Name, at loc: Int)
 - (void) insertColor:(NSColor *) color key:(NSColorName) key atIndex:(NSUInteger) loc;
 ```
 
-#### Discussion
+## Discussion
 
 If the list already contains a color with the same key at a different location, it’s removed from the old location. This method posts [`didChangeNotification`](./didchangenotification.md) to the default notification center. It raises `NSColorListNotEditableException` if the color list isn’t editable.
 

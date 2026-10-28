@@ -25,7 +25,7 @@ var kAudioChannelLayoutTag_Ambisonic_B_Format: AudioChannelLayoutTag { get }
 kAudioChannelLayoutTag_Ambisonic_B_Format
 ```
 
-#### Discussion
+## Discussion
 
 Your channels must be laid out in the following order:
 

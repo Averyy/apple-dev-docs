@@ -19,7 +19,7 @@ The identifier of the related indexed entity for this searchable item.
 var relatedAppEntityIdentifier: EntityIdentifier? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Convenience property that forwards to the item’s attribute set. Use this property to associate a child searchable item such as an attachment or embedded content with its parent `IndexedEntity` instance.
 

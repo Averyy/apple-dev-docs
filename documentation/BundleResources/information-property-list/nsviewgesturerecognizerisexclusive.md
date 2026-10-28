@@ -18,7 +18,7 @@ A Boolean value that controls whether only one view’s gesture recognizers can 
 
 **Default**: `YES`
 
-#### Discussion
+## Discussion
 
 Set this key to `NO` to allow gesture recognizers in multiple views to activate simultaneously. Do this only if your app intentionally needs concurrent gesture recognition across different views.
 

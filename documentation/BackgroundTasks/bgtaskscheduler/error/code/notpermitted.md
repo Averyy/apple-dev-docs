@@ -23,7 +23,7 @@ case notPermitted
 BGTaskSchedulerErrorCodeNotPermitted
 ```
 
-#### Discussion
+## Discussion
 
 There are two causes for this error:
 

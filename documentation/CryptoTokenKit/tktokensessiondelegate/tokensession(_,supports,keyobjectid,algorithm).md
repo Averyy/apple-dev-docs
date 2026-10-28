@@ -25,7 +25,7 @@ optional func tokenSession(_ session: TKTokenSession, supports operation: TKToke
 - (BOOL) tokenSession:(TKTokenSession *) session supportsOperation:(TKTokenOperation) operation usingKey:(TKTokenObjectID) keyObjectID algorithm:(TKTokenKeyAlgorithm *) algorithm;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the operation is supported; otherwise, [`false`](../../Swift/false.md).
 

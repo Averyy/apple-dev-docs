@@ -5,7 +5,7 @@
 
 Identify your image file with a file type and suffix.
 
-#### Overview
+## Overview
 
 On Mac OS systems, QuickTime image files are identified by the file type `'qtif'`. Apple recommends using the filename extension .QIF to identify QuickTime image files.
 

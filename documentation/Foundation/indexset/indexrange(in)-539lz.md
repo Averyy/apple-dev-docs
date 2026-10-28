@@ -21,7 +21,7 @@ Return a `Range<IndexSet.Index>` which can be used to subscript the index set.
 func indexRange(in range: Range<IndexSet.Element>) -> Range<IndexSet.Index>
 ```
 
-#### Discussion
+## Discussion
 
 The resulting range is the range of the intersection of the integers in `range` with the index set. The resulting range will be `isEmpty` if the intersection is empty.
 

@@ -21,7 +21,7 @@ Borrow access to the port name in a block that can perform non-consuming operati
 func withBorrowedName<ReturnType>(body: (mach_port_name_t) -> ReturnType) -> ReturnType
 ```
 
-#### Discussion
+## Discussion
 
 Take care when using this function; many operations consume rights, and send-once rights are easily consumed.
 

@@ -21,7 +21,7 @@ Returns a Boolean value indicating whether a date is within the same day as anot
 func isDate(_ date1: Date, inSameDayAs date2: Date) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `date1` and `date2` are in the same day, as defined by the calendar and calendar’s locale; otherwise, `false`.
 

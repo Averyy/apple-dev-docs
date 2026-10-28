@@ -24,7 +24,7 @@ var radius: Double { get set }
 @property (nonatomic) double radius;
 ```
 
-#### Discussion
+## Discussion
 
 To use the default radius, set this property to `0`.
 

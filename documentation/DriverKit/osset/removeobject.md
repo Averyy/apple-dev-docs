@@ -16,7 +16,7 @@
 void removeObject(const OSMetaClassBase *anObject);
 ```
 
-#### Discussion
+## Discussion
 
 Removes an object from the set.
 

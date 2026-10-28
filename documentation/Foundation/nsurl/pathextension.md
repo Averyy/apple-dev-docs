@@ -25,11 +25,11 @@ var pathExtension: String? { get }
 @property (copy, readonly, nullable) NSString * pathExtension;
 ```
 
-#### Return Value
+## Return Value
 
 The path extension of the receiver, or `nil` if [`path`](./path.md) is `nil`.
 
-#### Discussion
+## Discussion
 
 This property contains the path extension, unescaped using the [`replacingPercentEscapes(using:)`](../nsstring/replacingpercentescapes%28using%29.md) method. For example, in the URL `file:///path/to/file.txt`, the path extension is `txt`.
 

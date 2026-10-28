@@ -23,7 +23,7 @@ init()
 - (instancetype) init;
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a sequencer with tracks that only send events to external MIDI endpoints.
 

@@ -19,7 +19,7 @@ static var read: FSVolume.OpenModes { get }
 FSVolumeOpenModesRead
 ```
 
-#### Discussion
+## Discussion
 
 This mode is equivalent to POSIX `FREAD`.
 

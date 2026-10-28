@@ -20,7 +20,7 @@ Creates a new data table by merging two data tables by the given columns.
 func join(with: MLDataTable, on columnsNamed: String..., type: MLDataTable.JoinType = .inner) -> MLDataTable
 ```
 
-#### Return Value
+## Return Value
 
 A new data table.
 

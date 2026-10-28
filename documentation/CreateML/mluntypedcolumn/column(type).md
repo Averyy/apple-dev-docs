@@ -20,11 +20,11 @@ Clones the column to a data column of the given type.
 func column<T>(type: T.Type) -> MLDataColumn<T>? where T : MLDataValueConvertible
 ```
 
-#### Return Value
+## Return Value
 
 A new data column if the underlying type of the column is the same as `type`; otherwise `nil`.
 
-#### Discussion
+## Discussion
 
 Use this method to create a typed copy of the column. For example, to create a data column of integers from an untyped column of integers, use [`column(type:)`](./column%28type%29.md) with [`Int`](../../Swift/int.md)`.self` as the argument for the `type` parameter.
 

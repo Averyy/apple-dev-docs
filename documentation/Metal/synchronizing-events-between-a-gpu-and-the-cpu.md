@@ -5,7 +5,7 @@
 
 Use shareable events to synchronize your app’s work between a GPU and the CPU.
 
-#### Overview
+## Overview
 
 A shared event has methods and properties that let your app execute code when the event is triggered, or update the event’s value.
 

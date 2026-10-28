@@ -21,7 +21,7 @@ Produces a response to a prompt.
 nonisolated(nonsending) final func respond(options: GenerationOptions = GenerationOptions(), @PromptBuilder prompt: () throws -> Prompt) async throws -> LanguageModelSession.Response<String>
 ```
 
-#### Return Value
+## Return Value
 
 A string composed of the tokens produced by sampling model output.
 

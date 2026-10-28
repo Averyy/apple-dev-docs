@@ -25,7 +25,7 @@ func setData(_ data: Data)
 - (void) setData:(NSData *) data;
 ```
 
-#### Discussion
+## Discussion
 
 As part of its implementation, this method calls [`replaceBytes(in:withBytes:)`](./replacebytes%28in,withbytes%29.md).
 

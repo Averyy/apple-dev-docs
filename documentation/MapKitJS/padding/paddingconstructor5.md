@@ -15,7 +15,7 @@ Creates a padding object and initializes it with the provided values.
 constructor(top: number, right: number, bottom: number, left: number);
 ```
 
-#### Discussion
+## Discussion
 
 Create [`Padding`](../padding.md) by passing in four numbers that represent the inset values for the top, right, bottom, and left edges.
 

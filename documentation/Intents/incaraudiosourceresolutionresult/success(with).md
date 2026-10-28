@@ -24,11 +24,11 @@ class func success(with resolvedCarAudioSource: INCarAudioSource) -> Self
 + (instancetype) successWithResolvedCarAudioSource:(INCarAudioSource) resolvedCarAudioSource;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INCarAudioSourceResolutionResult`](../incaraudiosourceresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you recognize the audio source and are able to switch to it.
 

@@ -24,11 +24,11 @@ class func needsDisplay(forKey key: String) -> Bool
 + (BOOL) needsDisplayForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the layer requires a redisplay.
 
-#### Discussion
+## Discussion
 
 Subclasses can override this method and return [`true`](../../Swift/true.md) if the layer should be redisplayed when the value of the specified attribute changes. Animations changing the value of the attribute also trigger redisplay.
 

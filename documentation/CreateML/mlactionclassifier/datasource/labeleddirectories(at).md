@@ -15,7 +15,7 @@ The location of a folder with subfolders each of which contain sample videos of 
 case labeledDirectories(at: URL)
 ```
 
-#### Discussion
+## Discussion
 
 The action classifier task uses each subfolder’s name as the label for an action.
 

@@ -23,7 +23,7 @@ var progressReportingCapabilities: Set<CLSProgressReportingCapability> { get }
 @property (nonatomic, copy, readonly) NSSet<CLSProgressReportingCapability *> * progressReportingCapabilities;
 ```
 
-#### Discussion
+## Discussion
 
 Use progress reporting capabilities to tell teachers what kinds of metrics — like duration, percentage completion, or a score — that a context records.
 

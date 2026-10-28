@@ -32,7 +32,7 @@ var dateComponentsRange: INDateComponentsRange { get }
 @property (atomic, copy, readonly) INDateComponentsRange * dateComponentsRange;
 ```
 
-#### Discussion
+## Discussion
 
 This property is set automatically at initialization time and can’t be changed later.
 

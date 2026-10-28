@@ -21,7 +21,7 @@ Sets the interval (in nanoseconds) at which to invoke the I/O handlers for the c
 extern void dispatch_io_set_interval(dispatch_io_t channel, uint64_t interval, dispatch_io_interval_flags_t flags);
 ```
 
-#### Discussion
+## Discussion
 
 A channel interval is a way for you to receive periodic progress reports on the state of a read or write operation. You can use this feedback to update progress bars or other parts of your application.
 

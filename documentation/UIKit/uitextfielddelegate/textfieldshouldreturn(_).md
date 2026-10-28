@@ -23,11 +23,11 @@ optional func textFieldShouldReturn(_ textField: UITextField) -> Bool
 - (BOOL) textFieldShouldReturn:(UITextField *) textField;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the text field should implement its default behavior for the return button; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The text field calls this method whenever the user taps the return button. You can use this method to implement any custom behavior when the button is tapped. For example, if you want to dismiss the keyboard when the user taps the return button, your implementation can call the [`resignFirstResponder()`](../uiresponder/resignfirstresponder%28%29.md) method.
 

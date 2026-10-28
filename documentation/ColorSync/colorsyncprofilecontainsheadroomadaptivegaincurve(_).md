@@ -25,7 +25,7 @@ func ColorSyncProfileContainsHeadroomAdaptiveGainCurve(_ profile: ColorSyncProfi
 extern bool ColorSyncProfileContainsHeadroomAdaptiveGainCurve(ColorSyncProfileRef profile);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the profile contains an HAGC tag; otherwise, `false`.
 

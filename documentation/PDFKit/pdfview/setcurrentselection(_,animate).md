@@ -24,7 +24,7 @@ func setCurrentSelection(_ selection: PDFSelection?, animate: Bool)
 - (void) setCurrentSelection:(PDFSelection *) selection animate:(BOOL) animate;
 ```
 
-#### Discussion
+## Discussion
 
 This method behaves as `setCurrentSelection(_:)`, but with the addition of animation, if `animate` is [`true`](../../Swift/true.md). The animation serves to draw the user’s attention to the new selection, which can be useful when implementing search.
 

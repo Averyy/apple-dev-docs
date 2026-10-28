@@ -23,7 +23,7 @@ The content and behavior of the scene.
 @MainActor @preconcurrency var body: Self.Body { get }
 ```
 
-#### Discussion
+## Discussion
 
 For any scene that you create, provide a computed `body` property that defines the scene as a composition of other scenes. You can assemble a scene from built-in scenes that SwiftUI provides, as well as other scenes that you’ve defined.
 

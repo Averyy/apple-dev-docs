@@ -23,7 +23,7 @@ struct PKInkingTool
 
 - [Supporting backward compatibility for ink types](./supporting-backward-compatibility-for-ink-types.md)
 
-#### Overview
+## Overview
 
 A [`PKInkingTool`](./pkinkingtool-swift.struct.md) object supports the creation of new content on a [`PKCanvasView`](./pkcanvasview.md). With an inking tool, the canvas turns touch input from the user into a continuously rendered stroke. The value in the [`width`](./pkinkingtool-swift.struct/width.md) property determines the base width of that stroke; however, that base value also depends on input from Apple Pencil, including force, azimuth, and angle data.
 

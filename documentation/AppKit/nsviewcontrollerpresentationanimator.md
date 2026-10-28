@@ -19,7 +19,7 @@ protocol NSViewControllerPresentationAnimator : NSObjectProtocol
 @protocol NSViewControllerPresentationAnimator <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Implement this protocol only if you want to provide custom animations. You might find what you need in the [`NSViewController.TransitionOptions`](./nsviewcontroller/transitionoptions.md) enumeration, which provides many predefined animations.
 

@@ -27,11 +27,11 @@ init(tagSchemes: [NSLinguisticTagScheme], options opts: Int)
 - (instancetype) initWithTagSchemes:(NSArray<NSString *> *) tagSchemes options:(NSUInteger) opts;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized linguistic tagger.
 
-#### Discussion
+## Discussion
 
 Pass any tag schemes to `tagSchemes` that you intend to use with the methods described in Enumerating Linguistic Tags and Getting Linguistic Tags.
 

@@ -17,7 +17,7 @@ Representation of a Device in MLX.
 final class Device
 ```
 
-#### Overview
+## Overview
 
 This is typically used with [`withDefaultDevice(_:_:)`](./device/withdefaultdevice%28_,_%29-17vjl.md) or [`withNewDefaultStream(device:_:)`](./stream/withnewdefaultstream%28device,_%29-5bwc3.md).
 
@@ -34,7 +34,7 @@ Stream.withNewDefaultStream(device: .cpu) {
 
 Implementation: [`Stream`](./stream.md) hold the current device as a Task local variable.
 
-##### See Also
+### See Also
 
 - [Using Streams](./using-streams.md)
 - [`StreamOrDevice`](./streamordevice.md)

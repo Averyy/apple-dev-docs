@@ -24,7 +24,7 @@ enum HMCharacteristicValuePowerModeSelection
 enum HMCharacteristicValuePowerModeSelection : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 ## Topics
 

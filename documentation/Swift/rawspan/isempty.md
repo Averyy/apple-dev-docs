@@ -21,7 +21,7 @@ A Boolean value indicating whether the span is empty.
 var isEmpty: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(1)
 

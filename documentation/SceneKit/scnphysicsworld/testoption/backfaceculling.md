@@ -25,7 +25,7 @@ static let backfaceCulling: SCNPhysicsWorld.TestOption
 extern SCNPhysicsTestOption const SCNPhysicsTestBackfaceCullingKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSNumber`](../../../Foundation/nsnumber.md) object containing a Boolean value. The default value is [`true`](../../../Swift/true.md), specifying that the search should only return contacts with the exterior surfaces of any physics shapes. Change the value to [`false`](../../../Swift/false.md) to consider contacts with both interior and exterior surfaces.
 

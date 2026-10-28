@@ -25,7 +25,7 @@ var dateFormat: String! { get set }
 @property (copy, null_resettable) NSString * dateFormat;
 ```
 
-#### Discussion
+## Discussion
 
 See [Data Formatting Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DataFormatting/DataFormatting.html#//apple_ref/doc/uid/10000029i) for a list of the conversion specifiers permitted in date format strings.
 

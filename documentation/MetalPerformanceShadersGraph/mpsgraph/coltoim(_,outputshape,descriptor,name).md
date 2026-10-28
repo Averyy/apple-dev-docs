@@ -24,7 +24,7 @@ func colToIm(_ source: MPSGraphTensor, outputShape: [NSNumber], descriptor: MPSG
 - (MPSGraphTensor *) colToImWithSourceTensor:(MPSGraphTensor *) source outputShape:(MPSShape *) outputShape descriptor:(MPSGraphImToColOpDescriptor *) descriptor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object
 

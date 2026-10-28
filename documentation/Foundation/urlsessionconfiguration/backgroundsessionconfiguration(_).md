@@ -27,7 +27,7 @@ class func backgroundSessionConfiguration(_ identifier: String) -> URLSessionCon
 + (NSURLSessionConfiguration *) backgroundSessionConfiguration:(NSString *) identifier;
 ```
 
-#### Return Value
+## Return Value
 
 A URL session configuration object that causes upload and download tasks to be performed by the system in a separate process.
 

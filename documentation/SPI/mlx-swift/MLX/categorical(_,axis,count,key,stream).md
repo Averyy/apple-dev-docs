@@ -17,7 +17,7 @@ Sample `count` values from a categorical distribution.
 func categorical(_ logits: MLXArray, axis: Int = -1, count: Int, key: (some RandomStateOrKey)? = MLXArray?.none, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 The values are sampled from the categorical distribution specified by the unnormalized values in `logits`.
 

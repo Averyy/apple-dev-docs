@@ -22,7 +22,7 @@ optional func promptForReplace(_ sender: Any?)
 - (void) promptForReplace:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 To present the standard system UI for this action, call [`showReplacements(forText:)`](../betextinteraction/showreplacements%28fortext%29.md) in your implementation of this method.
 

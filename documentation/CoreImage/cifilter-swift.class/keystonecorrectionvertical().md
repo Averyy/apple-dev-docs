@@ -24,11 +24,11 @@ class func keystoneCorrectionVertical() -> any CIFilter & CIKeystoneCorrectionVe
 + (CIFilter<CIKeystoneCorrectionVertical> *) keystoneCorrectionVerticalFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The adjusted image.
 
-#### Discussion
+## Discussion
 
 This method applies the keystone correction vertical. The effect performs vertical adjustment of the image to shape the image to be rectangular. This effect is commonly used with multimedia projectors to correct the distortion caused by the projector being lower or higher than the projected screen.
 

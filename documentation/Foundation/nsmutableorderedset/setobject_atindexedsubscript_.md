@@ -21,7 +21,7 @@ Replaces the given object at the specified index of the mutable ordered set.
 - (void) setObject:(ObjectType) obj atIndexedSubscript:(NSUInteger) idx;
 ```
 
-#### Discussion
+## Discussion
 
 If the index is already occupied, the objects at index and beyond are shifted by adding `1` to their indices to make room.
 

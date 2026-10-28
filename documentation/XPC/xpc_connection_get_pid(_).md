@@ -19,11 +19,11 @@ func xpc_connection_get_pid(_ connection: xpc_connection_t) -> pid_t
 extern pid_t xpc_connection_get_pid(xpc_connection_t connection);
 ```
 
-#### Return Value
+## Return Value
 
 The PID of the remote peer.
 
-#### Discussion
+## Discussion
 
 A given PID is not guaranteed to be unique across an entire boot cycle. Great care should be taken when dealing with this information, as it can go stale after the connection is established. macOS recycles PIDs, and therefore another process could spawn and claim the PID before a message is actually received from the connection.
 

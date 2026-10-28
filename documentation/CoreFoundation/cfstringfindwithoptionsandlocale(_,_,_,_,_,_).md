@@ -25,11 +25,11 @@ func CFStringFindWithOptionsAndLocale(_ theString: CFString!, _ stringToFind: CF
 extern Boolean CFStringFindWithOptionsAndLocale(CFStringRef theString, CFStringRef stringToFind, CFRange rangeToSearch, CFStringCompareFlags searchOptions, CFLocaleRef locale, CFRange *result);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the substring was found, `false` otherwise.
 
-#### Discussion
+## Discussion
 
 If `stringToFind` is the empty string (zero length), nothing is found.
 

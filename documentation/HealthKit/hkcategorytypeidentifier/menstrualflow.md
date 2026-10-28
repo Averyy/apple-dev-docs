@@ -24,7 +24,7 @@ static let menstrualFlow: HKCategoryTypeIdentifier
 extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierMenstrualFlow;
 ```
 
-#### Discussion
+## Discussion
 
 These samples use values from the [`HKCategoryValueMenstrualFlow`](../hkcategoryvaluemenstrualflow.md) enum. Additionally, these samples must include [`HKMetadataKeyMenstrualCycleStart`](../hkmetadatakeymenstrualcyclestart.md)  metadata.
 

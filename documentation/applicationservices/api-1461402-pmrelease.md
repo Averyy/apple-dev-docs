@@ -19,11 +19,11 @@ func PMRelease(_ object: PMObject?) -> OSStatus
 OSStatus PMRelease(PMObject object);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 Your application should use the `PMRelease` function to release any printing objects it creates or retains. When an object’s reference count reaches 0, the object is deallocated.
 

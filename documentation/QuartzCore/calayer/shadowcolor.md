@@ -24,7 +24,7 @@ var shadowColor: CGColor? { get set }
 @property (nullable) CGColorRef shadowColor;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is an opaque black color.
 

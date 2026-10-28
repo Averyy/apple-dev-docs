@@ -21,7 +21,7 @@ A type that specifies a format for the time period in a date format style.
 struct DayPeriod
 ```
 
-#### Overview
+## Overview
 
 The type [`Date.FormatStyle.Symbol.DayPeriod`](./dayperiod.md) includes static factory methods that create custom [`Date.FormatStyle.Symbol.DayPeriod`](./dayperiod.md) objects.
 

@@ -15,7 +15,7 @@ The notary service’s response to a request for the log information about a com
 object SubmissionLogURLResponse
 ```
 
-#### Discussion
+## Discussion
 
 You receive a structure of this type in response to a call to the [`Get Submission Log`](./get-submission-log.md) endpoint.
 

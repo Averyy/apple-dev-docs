@@ -24,7 +24,7 @@ case none
 AVAudioSessionPromptStyleNone
 ```
 
-#### Discussion
+## Discussion
 
 This style indicates that another audio session is currently using microphone input, and your app shouldn’t issue prompts at this time.
 

@@ -26,7 +26,7 @@ struct EntityCollection<Entity> where Entity : AppEntity
 - [Defining app entities for your custom data types](./defining-app-entities-for-your-custom-data-types.md)
 - [Adding parameters to an app intent](./adding-parameters-to-an-app-intent.md)
 
-#### Overview
+## Overview
 
 Use an `EntityCollection` type to manage large numbers of entities in an app intent or app entity. An entity collection stores the identifier for each entity initially and provides an option to fetch the entire [`AppEntity`](./appentity.md) instances later if needed. Storing only the identifiers initially can save memory and speed up operations that don’t require the entire entity instance.
 

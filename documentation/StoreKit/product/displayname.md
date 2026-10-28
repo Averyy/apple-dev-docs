@@ -21,7 +21,7 @@ The localized display name of the product, if it exists.
 let displayName: String
 ```
 
-#### Discussion
+## Discussion
 
 The storefront of the device determines the language of the display name, not the preferred language set on the device. For more information, see [`Storefront`](../storefront.md).
 

@@ -15,7 +15,7 @@ A string containing the server change token for the record.
 attribute string? recordChangeTag;
 ```
 
-#### Discussion
+## Discussion
 
 Use this tag to indicate which version of the record you last fetched. This tag is required unless force parameter for updateRecord operation is set to true.
 

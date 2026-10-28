@@ -6,7 +6,7 @@
 
 A 32-bit integer that identifies the atom type.
 
-#### Overview
+## Overview
 
 Set this to `'ilst'`.
 

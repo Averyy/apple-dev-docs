@@ -22,7 +22,7 @@ case red
 MKPinAnnotationColorRed
 ```
 
-#### Discussion
+## Discussion
 
 The head of the pin is red. Red pins indicate destination points on the map.
 

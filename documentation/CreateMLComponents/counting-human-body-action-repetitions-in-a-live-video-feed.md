@@ -12,7 +12,7 @@ Use Create ML Components to analyze a series of video frames and count a person�
 - Mac Catalyst 16.0+
 - Xcode 14.0+
 
-#### Overview
+## Overview
 
 This sample app counts a person’s repetitive or periodic body movements (*actions*) by analyzing a series of video frames and making a prediction with a human body action repetition counter. The counter in this sample can count arbitrary body moves that occur at moderate speed, such as jumping jacks, dance spins, and waving arms.
 
@@ -32,7 +32,7 @@ The app begins by configuring a camera to generate video frames, then directs th
 
 > **Note**: This sample code project is associated with WWDC22 session [110332: What’s new in Create ML](https://developer.apple.com/wwdc22/110332/).
 
-#### Configure the sample code project
+## Configure the sample code project
 
 This sample code project requires a device with iOS 16 or later, or iPadOS 16 or later. To build this project:
 
@@ -41,7 +41,7 @@ This sample code project requires a device with iOS 16 or later, or iPadOS 16 or
 3. Select your development team from the Add Account pop-up menu.
 4. Select your target device from the scheme menu, and choose Product > Run.
 
-#### Start a live video feed
+## Start a live video feed
 
 The app uses [`VideoReader`](./videoreader.md) to configure the device’s camera and generate an asynchronous video frame sequence. The [`VideoReader.CameraConfiguration`](./videoreader/cameraconfiguration.md) specifies the front- or rear-facing camera, and configures its pixel format and resolution. This app supports portrait orientation only. Low lighting and other factors can vary the frame rate, which may affect the counting performance, so ensure the person’s full body is visible in bright environments.
 
@@ -75,7 +75,7 @@ func startVideoProcessingPipeline() {
 }
 ```
 
-#### Analyze each frame for body poses
+## Analyze each frame for body poses
 
 The [`HumanBodyPoseExtractor`](./humanbodyposeextractor.md) is a transformer that can locate any human body poses from an image or a video frame.
 
@@ -98,7 +98,7 @@ The `Pose` structure serves the following purposes:
 
 For more information about the underlying human body pose model, see [Detecting Human Body Poses in Images](../Vision/detecting-human-body-poses-in-images.md).
 
-#### Create a pose stream
+## Create a pose stream
 
 [AsyncChannel](https://github.com/apple/swift-async-algorithms/blob/main/Sources/AsyncAlgorithms/AsyncAlgorithms.docc/Guides/Channel.md) sends the extracted poses to a separate asynchronous stream. This allows additional consumers to obtain poses from the upstream asynchronous sequence. `AsyncChannel` requires the inclusion of the [AsyncAlgorithms](https://github.com/apple/swift-async-algorithms) Swift package.
 
@@ -107,7 +107,7 @@ For more information about the underlying human body pose model, see [Detecting 
 private let poseStream = AsyncChannel<TemporalFeature<[Pose]>>()
 ```
 
-#### Create an action repetition counting pipeline
+## Create an action repetition counting pipeline
 
 The `ActionCounter` structure consists of a pipeline of [Create ML Components](./CreateMLComponents.md) transformers to achieve continuous action repetition counting. It takes a pose stream as input and returns an asynchronous sequence of cumulative counts.
 
@@ -116,7 +116,7 @@ The `ActionCounter` structure consists of a pipeline of [Create ML Components](.
 private let actionCounter = ActionCounter()
 ```
 
-#### Downsample a pose stream
+## Downsample a pose stream
 
 The first optional transformer in the pipeline, [`Downsampler`](./downsampler.md), downsamples the incoming pose sequence by an integer factor. This allows the pipeline to process and count much slower actions. For example, without downsampling, the original counter model can handle moderate speed actions, about one repetition per second, such as jumping jacks. A downsampling factor of three can effectively speed up slower actions, such as pushups or a complex dance sequence with about one repetition per 3 seconds, and still allow the model to count the actions.
 
@@ -126,7 +126,7 @@ The first optional transformer in the pipeline, [`Downsampler`](./downsampler.md
 let pipeline = Downsampler(factor: 1)
 ```
 
-#### Isolate a body pose
+## Isolate a body pose
 
 The next transformer in the pipeline, [`PoseSelector`](./poseselector.md), selects a single pose from the array of poses by using the default strategy, namely, selecting the most prominent person by their maximum bounding box area.
 
@@ -142,7 +142,7 @@ The goal of this strategy is to consistently select the same person’s pose fro
 
 > ❗ **Important**: Get the most accurate predictions by using whatever strategy best tracks a person from frame to frame.
 
-#### Select a subset of body joints
+## Select a subset of body joints
 
 The next optional transformer in the pipeline, [`JointsSelector`](./jointsselector.md), selects or ignores a specified subset of body joints from the pose.
 
@@ -156,7 +156,7 @@ For example, to count only upper-body movements, the transformer can ignore lowe
     .appending(JointsSelector(ignoredJoints: [.nose, .leftEye, .leftEar, .rightEye, .rightEar]))
 ```
 
-#### Gather a window of poses
+## Gather a window of poses
 
 The next transformer in the pipeline is a [`SlidingWindowTransformer`](./slidingwindowtransformer.md) that receives a pose sequence from its upstream and gathers the frames into an array by providing the following parameters:
 
@@ -173,7 +173,7 @@ The next transformer in the pipeline is a [`SlidingWindowTransformer`](./sliding
 
 The action repetition counter assumes a fixed length of 90, where the sliding window transformer groups 90 frames together to generate a single prediction count. The stride is adjustable. An example is a stride of 10 frames, indicating the count updates every 10 frames, which is about 0.3 seconds if the frame rate is 30 frames per second. When the stride is smaller than the length, the windows overlap.
 
-#### Predict the person’s action repetition count
+## Predict the person’s action repetition count
 
 The next transformer in the pipeline, [`HumanBodyActionCounter`](./humanbodyactioncounter.md), takes a stream of grouped pose windows as input and produces a [`HumanBodyActionCounter.CumulativeSumSequence`](./humanbodyactioncounter/cumulativesumsequence.md) where each result is a cumulative count of the actions in the sequence. Live counting occurs by iterating each item in the resulted sequence.
 
@@ -183,11 +183,11 @@ The next transformer in the pipeline, [`HumanBodyActionCounter`](./humanbodyacti
     .appending(HumanBodyActionCounter())
 ```
 
-#### Present the count to the user
+## Present the count to the user
 
 The final count appears as a [SwiftUI](../SwiftUI/SwiftUI.md) label on the screen using the `OverlayView` structure on the main thread.
 
-#### Present the poses to the user
+## Present the poses to the user
 
 The app visualizes the result of each detected human body pose by drawing the poses on top of the frame that [`HumanBodyPoseExtractor`](./humanbodyposeextractor.md) finds them in. Each time the `poseExtractor` creates an array of [`Pose`](./pose.md) instances, the `PosesView` iterates each detected pose and draws it by calling its `drawWireframe(to:applying:)` method, which draws the pose as a wireframe of connection lines and joint circles.
 

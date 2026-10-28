@@ -24,7 +24,7 @@ var serviceGroups: [HMServiceGroup] { get }
 @property (nonatomic, copy, readonly) NSArray<HMServiceGroup *> * serviceGroups;
 ```
 
-#### Discussion
+## Discussion
 
 Services groups are instances of [`HMServiceGroup`](../hmservicegroup.md).
 

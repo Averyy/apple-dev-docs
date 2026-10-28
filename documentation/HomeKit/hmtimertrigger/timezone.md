@@ -26,7 +26,7 @@ var timeZone: TimeZone? { get }
 @property (nonatomic, copy, readonly, nullable) NSTimeZone * timeZone;
 ```
 
-#### Discussion
+## Discussion
 
 If this value is `nil`, the trigger’s fire time will stay at the same relative time if the user changes timezones. If this value is set to a specific value, the trigger’s fire time will always be the same absolute time as evaluated in that time zone. A common value to set this to is the time zone where the accessories are physically located. This will result in the trigger firing at a specific time of day in that location, regardless of where the iOS device is located.
 

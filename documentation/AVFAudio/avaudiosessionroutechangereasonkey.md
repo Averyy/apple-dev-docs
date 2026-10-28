@@ -24,7 +24,7 @@ let AVAudioSessionRouteChangeReasonKey: String
 extern NSString * const AVAudioSessionRouteChangeReasonKey;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is an unsigned integer, provided as an [`NSNumber`](../Foundation/nsnumber.md) object, that identifies the reason why the route changed. For a list of possible values, see [`AVAudioSession.RouteChangeReason`](./avaudiosession/routechangereason.md).
 

@@ -23,7 +23,7 @@ var cameraLensSmudgeDetectionInterval: CMTime { get }
 @property (nonatomic, readonly) CMTime cameraLensSmudgeDetectionInterval;
 ```
 
-#### Discussion
+## Discussion
 
 [`cameraLensSmudgeDetectionInterval`](./cameralenssmudgedetectioninterval.md) is set by calling [`setCameraLensSmudgeDetectionEnabled(_:detectionInterval:)`](./setcameralenssmudgedetectionenabled%28_,detectioninterval%29.md). By default, this property returns `kCMTimeInvalid`.
 

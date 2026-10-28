@@ -21,7 +21,7 @@ The line where the text begins in the Markdown source.
 let startLine: Int
 ```
 
-#### Discussion
+## Discussion
 
 This property uses `1`-based counting.
 

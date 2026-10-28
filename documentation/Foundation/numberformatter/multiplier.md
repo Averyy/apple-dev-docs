@@ -26,7 +26,7 @@ var multiplier: NSNumber? { get set }
 @property (copy, nullable) NSNumber * multiplier;
 ```
 
-#### Discussion
+## Discussion
 
 A multiplier is a factor used in conversions between numbers and strings (that is, numbers as stored and numbers as displayed). When the input value is a string, the multiplier is used to divide, and when the input value is a number, the multiplier is used to multiply. These operations allow the formatted values to be different from the values that a program manipulates internally.
 

@@ -17,7 +17,7 @@ The unique identifier for the payment.
 let id: String
 ```
 
-#### Discussion
+## Discussion
 
 Include this identifier in support requests or tracing incidents to help track down potential problems.
 

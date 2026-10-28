@@ -19,7 +19,7 @@ static let target: NSViewAnimation.Key
 extern NSViewAnimationKey NSViewAnimationTargetKey;
 ```
 
-#### Discussion
+## Discussion
 
 The target can be either an [`NSView`](../../nsview.md) object or an [`NSWindow`](../../nswindow.md) object. This property is required.
 

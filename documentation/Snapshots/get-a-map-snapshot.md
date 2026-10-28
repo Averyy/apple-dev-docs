@@ -13,7 +13,7 @@ Generates a map image with characteristics that you provide in the query paramet
 
 - [Generating a URL and Signature to Create a Maps Web Snapshot](./generating-a-url-and-signature-to-create-a-maps-web-snapshot.md)
 
-#### Discussion
+## Discussion
 
 Use the Snapshot URL query parameters to define characteristics of the map image such as dimensions, language, color scheme, and more.
 

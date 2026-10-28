@@ -25,7 +25,7 @@ func imageblockMemoryLength(forDimensions imageblockDimensions: MTLSize) -> Int
 - (NSUInteger) imageblockMemoryLengthForDimensions:(MTLSize) imageblockDimensions;
 ```
 
-#### Return Value
+## Return Value
 
 The length, in bytes, occupied by the image block in memory.
 

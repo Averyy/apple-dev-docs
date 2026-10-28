@@ -8,13 +8,11 @@ Create, update, and delete keywords and negative keywords in bulk through these 
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Overview
+## Overview
 
 Bulk operations accept arrays of items in a single request. All bulk endpoints share the same `items` array structure: each item carries a client-supplied `correlationId` and a `data` object containing the operation payload. The response returns a `result` array with one entry per input item, keyed by `correlationId`.
 
-Set `allowPartialSuccess: true` in the request to use partial success semantics. The response reports individual item failures per item without rolling back successful items. When omitted or `false`, any single failure rejects the entire batch.
-
-#### Find Bulk Endpoints
+## Find Bulk Endpoints
 
 Each entity that supports bulk operations exposes create, update, and delete endpoints at the following paths:
 
@@ -23,23 +21,23 @@ Each entity that supports bulk operations exposes create, update, and delete end
 | Keywords | `POST /v1/keywords/bulk-create` | `POST /v1/keywords/bulk-update` | `POST /v1/keywords/bulk-delete` |
 | Negative Keywords | `POST /v1/negative-keywords/bulk-create` | `POST /v1/negative-keywords/bulk-update` | `POST /v1/negative-keywords/bulk-delete` |
 
-##### Create, Update, and Delete
+### Create, Update, and Delete
 
-To create, update, or delete items in bulk, send a POST request to the entity’s bulk endpoint with an `items` array; the endpoint you call determines the shape of each item’s `data` object:
+To create, update, or delete items in bulk, send a POST request to the entity’s bulk endpoint with an `items` array. The endpoint you call determines the shape of each item’s `data` object:
 
 | Operation | Description |
 | --- | --- |
 | **Create** | Send the array to `/bulk-create`. Each item’s `data` contains the create payload. The response’s `result` array includes one entry per item with a `success` flag and per-item error details on failure. |
 | **Update** | Send the array to `/bulk-update`. Each item’s `data` must include the entity’s `id` plus only the fields you want to change; omitted fields retain their current values. |
-| **Delete** | Send the array to `/bulk-delete`. Each item’s `data` must include the entity’s `id`. Bulk delete soft-deletes entities: a deleted keyword stops serving immediately, and a deleted negative keyword stops suppressing matching terms immediately. The response doesn’t include the deleted entity, just each item’s success status. |
+| **Delete** | Send the array to `/bulk-delete`. Each item’s `data` must include the entity’s `id`. Bulk delete soft-deletes entities: a deleted keyword stops serving immediately, and a deleted negative keyword stops suppressing matching terms immediately and isn’t returned by the query endpoint, even if you filter for `deleted=true`. The response doesn’t include the deleted entity, just each item’s success status. |
 
-##### Handle Errors
+### Handle Errors
 
 Bulk endpoints use a partial-success model when the request sets `allowPartialSuccess: true`. The endpoint processes valid items, and the response includes per-item error details for any items that failed. When `allowPartialSuccess` is omitted or `false` (the default), any single item failure rejects the entire batch.
 
 The response reports bulk-level validation failures (such as sending more items than the endpoint allows in a single request) in the outer `BulkResponse.error.details` field, not in the per-item `result` array. When the endpoint returns a bulk-level error, it processes no items regardless of the `allowPartialSuccess` setting. If you hit this rejection, split the request into smaller batches and retry each one.
 
-##### Choose Between Bulk and Single-Item Endpoints
+### Choose Between Bulk and Single-Item Endpoints
 
 Prefer bulk endpoints when creating, updating, or deleting more than a handful of keywords or negative keywords at once, such as rolling out a new keyword list across many ad groups or pausing a large negative keyword list in one pass. A bulk request counts as a single call against your rate limit regardless of how many items it carries, so batching changes into bulk requests is the most effective way to stay under the limits described in [Applying Rate Limits](./rate-limits.md) during large-scale operations.
 

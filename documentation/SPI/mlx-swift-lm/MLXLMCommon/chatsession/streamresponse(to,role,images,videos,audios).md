@@ -17,11 +17,11 @@ Produces a streaming response to a prompt as Strings.
 func streamResponse(to prompt: String, role: Chat.Message.Role = .user, images: consuming [UserInput.Image] = [], videos: consuming [UserInput.Video] = [], audios: consuming [UserInput.Audio] = []) -> AsyncThrowingStream<String, Error>
 ```
 
-#### Return Value
+## Return Value
 
 A stream of string chunks from the model
 
-#### Discussion
+## Discussion
 
 > **Throws**: [`RejectedToolCallError`](../rejectedtoolcallerror.md) if the model emits a rejected tool call, or an error produced during generation.
 

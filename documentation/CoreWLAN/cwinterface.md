@@ -19,7 +19,7 @@ class CWInterface
 @interface CWInterface : NSObject
 ```
 
-#### Overview
+## Overview
 
 Provides access to various WLAN interface parameters, and operations such as scanning for networks, association, and creating computer-to-computer (ad-hoc) networks.
 

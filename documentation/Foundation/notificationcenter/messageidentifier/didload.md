@@ -23,7 +23,7 @@ static var didLoad: NotificationCenter.BaseMessageIdentifier<Bundle.DidLoadMessa
 
 Available when `Self` is `NotificationCenter.BaseMessageIdentifier<Bundle.DidLoadMessage>`.
 
-#### Discussion
+## Discussion
 
 Use this identifier with [`NotificationCenter`](../../notificationcenter.md)’s `addObserver(of:for:using:)` or `messages(of:for:bufferSize:)` methods to observe messages of type [`Bundle.DidLoadMessage`](../../bundle/didloadmessage.md).
 

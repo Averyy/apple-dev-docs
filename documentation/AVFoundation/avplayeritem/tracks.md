@@ -26,7 +26,7 @@ var tracks: [AVPlayerItemTrack] { get }
 @property (readonly) NSArray<AVPlayerItemTrack *> * tracks;
 ```
 
-#### Discussion
+## Discussion
 
 The value is an empty array before the player loads the underlying tracks. Key-value observe this property value to access valid tracks as soon as they’re available.
 

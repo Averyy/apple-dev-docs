@@ -21,7 +21,7 @@ A list of the user’s preferred languages.
 static var preferredLanguages: [String] { get }
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  [`Bundle`](../bundle.md) is responsible for determining the language that your application will run in, based on the result of this API and combined with the languages your application supports.
 

@@ -17,7 +17,7 @@ Clip the values of the array between the given minimum and maximum.
 func clip(_ array: MLXArray, min: some ScalarOrArray, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-##### See Also
+### See Also
 
 - [Arithmetic](./arithmetic.md)
 - [`clip(_:max:stream:)`](./clip%28_,max,stream%29.md)

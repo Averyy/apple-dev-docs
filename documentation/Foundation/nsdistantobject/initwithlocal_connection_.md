@@ -16,11 +16,11 @@ Initializes an `NSDistantObject` object as a local proxy for a given object.
 - (instancetype) initWithLocal:(id) target connection:(NSConnection *) connection;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSDistantObject` object that serves as a local proxy for `target`. If a proxy for `target` and `connection` already exists, the receiver is released and the existing proxy is retained and returned.
 
-#### Discussion
+## Discussion
 
 Other applications connect to the proxy using the `NSConnection` [`connectionWithRegisteredName:host:`](../nsconnection/connectionwithregisteredname_host_.md) class method.
 

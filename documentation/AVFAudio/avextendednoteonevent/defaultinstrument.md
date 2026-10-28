@@ -24,7 +24,7 @@ class let defaultInstrument: UInt32
 extern const UInt32 AVExtendedNoteOnEventDefaultInstrument;
 ```
 
-#### Discussion
+## Discussion
 
 The system uses the instrument loaded on the channel [`groupID`](./groupid.md).
 

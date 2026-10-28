@@ -31,7 +31,7 @@ enum SKProductDiscountPaymentMode : NSUInteger;
 
 - [Implementing introductory offers in your app](../implementing-introductory-offers-in-your-app.md)
 
-#### Overview
+## Overview
 
 The payment mode indicates if the discount price is charged one time, multiple times, or if the discount is a free trial.
 

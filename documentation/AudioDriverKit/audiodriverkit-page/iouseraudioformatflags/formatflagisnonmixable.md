@@ -15,7 +15,7 @@ A flag to indicate whether the format can’t mix.
 FormatFlagIsNonMixable
 ```
 
-#### Discussion
+## Discussion
 
 This flag is for use only when interacting with the Core Audio HAL’s stream format information. It isn’t a valid flag for any other uses.
 

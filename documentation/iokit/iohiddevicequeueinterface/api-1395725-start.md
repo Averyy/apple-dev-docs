@@ -16,7 +16,7 @@ Starts element value delivery to the queue.
 IOReturn (*start)(void *self, IOOptionBits options);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful or a kern_return_t if unsuccessful.
 

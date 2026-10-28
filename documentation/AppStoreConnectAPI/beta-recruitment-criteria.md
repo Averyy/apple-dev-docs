@@ -5,7 +5,7 @@
 
 Create public links that accept testers with specific device and OS combinations.
 
-#### Overview
+## Overview
 
 Use the `betaRecruitmentCriteria` resource to create public links with Device and OS criteria that help improve beta recruitment. Gain insights on the public-link performance from tester-event metrics, so you can modify the criteria set for the public, and enable or disable a public link.
 

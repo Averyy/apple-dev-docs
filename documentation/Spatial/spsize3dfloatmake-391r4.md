@@ -19,11 +19,11 @@
 static SPSize3DFloat SPSize3DFloatMake(SPSize3D size);
 ```
 
-#### Return Value
+## Return Value
 
 A new size.
 
-#### Discussion
+## Discussion
 
 Returns a single-precision size from a double-precision size.
 

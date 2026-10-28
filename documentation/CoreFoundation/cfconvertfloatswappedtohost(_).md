@@ -25,7 +25,7 @@ func CFConvertFloatSwappedToHost(_ arg: CFSwappedFloat32) -> Float
 static float CFConvertFloatSwappedToHost(CFSwappedFloat32 arg);
 ```
 
-#### Return Value
+## Return Value
 
 The real value in the host’s native format.
 

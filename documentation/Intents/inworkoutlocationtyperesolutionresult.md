@@ -23,7 +23,7 @@ class INWorkoutLocationTypeResolutionResult
 @interface INWorkoutLocationTypeResolutionResult : INIntentResolutionResult
 ```
 
-#### Overview
+## Overview
 
 You return an [`INWorkoutLocationTypeResolutionResult`](./inworkoutlocationtyperesolutionresult.md) object when resolving parameters containing a [`INWorkoutLocationType`](./inworkoutlocationtype.md) value. Use the creation method that best reflects your ability to successfully resolve the parameter. For additional resolution options, see [`INIntentResolutionResult`](./inintentresolutionresult.md).
 

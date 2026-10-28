@@ -13,11 +13,11 @@
 mbuf_t mbuf_next(const mbuf_t mbuf);
 ```
 
-#### Return Value
+## Return Value
 
 The next mbuf in the chain.
 
-#### Discussion
+## Discussion
 
 Returns the next mbuf in the chain.
 

@@ -25,11 +25,11 @@ func MIDIBluetoothDriverDisconnect(_ uuid: CFString) -> OSStatus
 extern OSStatus MIDIBluetoothDriverDisconnect(CFStringRef uuid);
 ```
 
-#### Return Value
+## Return Value
 
 A status code that indicates the result of the disconnect.
 
-#### Discussion
+## Discussion
 
 If a [Core MIDI](./CoreMIDI.md) device is in a connected state to a Bluetooth Low Energy MIDI peripheral with the identifier you specify, the system disconnects it.
 

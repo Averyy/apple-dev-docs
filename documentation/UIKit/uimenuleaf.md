@@ -24,7 +24,7 @@ protocol UIMenuLeaf : NSObjectProtocol
 @protocol UIMenuLeaf <NSObject>
 ```
 
-#### Overview
+## Overview
 
 `UIMenuLeaf` defines the behavior shared by menu elements that don’t have child elements. Don’t implement the `UIMenuLeaf` protocol in your object directly. Instead, create an appropriate object that implements this protocol, such as [`UIAction`](./uiaction.md) or [`UICommand`](./uicommand.md).
 

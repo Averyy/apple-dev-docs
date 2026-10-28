@@ -23,11 +23,11 @@ func notify_check(_ token: Int32, _ check: UnsafeMutablePointer<Int32>!) -> UInt
 extern uint32_t notify_check(int token, int *check);
 ```
 
-#### Return Value
+## Return Value
 
 Returns status.
 
-#### Discussion
+## Discussion
 
 Check if any notifications have been posted.
 

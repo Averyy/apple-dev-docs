@@ -20,7 +20,7 @@ var bcdUSB: UInt16
 uint16_t bcdUSB;
 ```
 
-#### Discussion
+## Discussion
 
 Initialize this descriptor to the USB version that the device supports. Acceptable values are 0x0110, 0x0200, 0x0300, 0x0310.
 

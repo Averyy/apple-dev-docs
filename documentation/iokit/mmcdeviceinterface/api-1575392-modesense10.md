@@ -16,11 +16,11 @@ Issues a MODE_SENSE_10 command to the device as defined in SPC-2.
 IOReturn (*ModeSense10)(void *self, SCSICmdField1Bit LLBAA, SCSICmdField1Bit DBD, SCSICmdField2Bit PC, SCSICmdField6Bit PAGE_CODE, void *buffer, SCSICmdField2Byte bufferSize, SCSITaskStatus *taskStatus, SCSI_Sense_Data *senseDataBuffer);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful, kIOReturnNoDevice if there is no connection to an IOService, kIOReturnNoMemory if a SCSITask couldn't be created, or kIOReturnExclusiveAccess if the device is already opened for exclusive access by another client.
 
-#### Discussion
+## Discussion
 
 Once an MMCDeviceInterface is opened, the client may send this command to get mode page information from the device.
 

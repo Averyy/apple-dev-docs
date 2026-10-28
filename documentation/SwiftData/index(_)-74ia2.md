@@ -19,8 +19,8 @@ Specifies the key-paths that SwiftData uses to create one or more binary indices
 ## Declaration
 
 ```swift
-@freestanding
-(declaration) macro Index<T>(_ indices: [PartialKeyPath<T>]...) where T : PersistentModel
+@freestanding(declaration)
+macro Index<T>(_ indices: [PartialKeyPath<T>]...) where T : PersistentModel
 ```
 
 ## See Also

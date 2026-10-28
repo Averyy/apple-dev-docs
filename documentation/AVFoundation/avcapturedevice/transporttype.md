@@ -19,7 +19,7 @@ var transportType: Int32 { get }
 @property (nonatomic, readonly) int32_t transportType;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property represents a capture device’s transport type, such as USB or PCI. The value is an IOKit framework transport type constant (`kIOAudioDeviceTransportType`).
 

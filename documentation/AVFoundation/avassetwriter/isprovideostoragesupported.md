@@ -23,7 +23,7 @@ var isProVideoStorageSupported: Bool { get }
 @property (nonatomic, readonly, getter=isProVideoStorageSupported) BOOL proVideoStorageSupported;
 ```
 
-#### Discussion
+## Discussion
 
 Check this value prior to setting the `usesProVideoStorage` property to avoid exceptions when pre-allocated storage is not supported.
 

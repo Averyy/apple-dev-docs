@@ -24,7 +24,7 @@ var instanceTransformationMatrixLayout: MTLMatrixLayout { get set }
 @property (nonatomic) MTLMatrixLayout instanceTransformationMatrixLayout;
 ```
 
-#### Discussion
+## Discussion
 
 Metal interprets the value of this property as the layout for the buffers that both [`instanceDescriptorBuffer`](./instancedescriptorbuffer.md) and [`motionTransformBuffer`](./motiontransformbuffer.md) reference.
 

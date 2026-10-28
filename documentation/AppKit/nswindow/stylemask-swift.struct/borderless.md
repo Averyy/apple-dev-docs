@@ -19,7 +19,7 @@ static var borderless: NSWindow.StyleMask { get }
 NSWindowStyleMaskBorderless
 ```
 
-#### Discussion
+## Discussion
 
 Useful only for display or caching purposes. A window that uses `NSWindowStyleMaskBorderless` can’t become key or main, unless the value of [`canBecomeKey`](../canbecomekey.md) or [`canBecomeMain`](../canbecomemain.md) is [`true`](../../../Swift/true.md). Note that you can set a window’s or panel’s style mask to `NSWindowStyleMaskBorderless` in Interface Builder by deselecting Title Bar in the Appearance section of the Attributes inspector.
 

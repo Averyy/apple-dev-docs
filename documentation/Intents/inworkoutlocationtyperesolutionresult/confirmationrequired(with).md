@@ -23,11 +23,11 @@ class func confirmationRequired(with workoutLocationTypeToConfirm: INWorkoutLoca
 + (instancetype) confirmationRequiredWithWorkoutLocationTypeToConfirm:(INWorkoutLocationType) workoutLocationTypeToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INWorkoutLocationTypeResolutionResult`](../inworkoutlocationtyperesolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you can resolve the parameter to a similar workout location and want the user to confirm that location choice.
 

@@ -10,7 +10,7 @@ Highlight content from your Apple TV application by building a full screen Top S
 - tvOS 13.0+
 - Xcode 11.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC 2019 session [211: Mastering the Living Room With tvOS](https://developer.apple.com/videos/play/wwdc19/211/).
 

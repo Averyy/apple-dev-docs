@@ -19,11 +19,11 @@ class var sRGB: NSColorSpace { get }
 @property (class, strong, readonly) NSColorSpace * sRGBColorSpace;
 ```
 
-#### Return Value
+## Return Value
 
 The `NSColorSpace` object. This color-additive color space has red, green, blue, and alpha components.
 
-#### Discussion
+## Discussion
 
 The sRGB color space is a standard color space for use on monitors, printers, and the Internet. For further information on sRGB, see [http://www.color.org/srgb.html](http://www.color.org/srgb.html).
 

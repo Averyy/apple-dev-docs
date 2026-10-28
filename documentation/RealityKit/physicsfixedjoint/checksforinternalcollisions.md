@@ -20,7 +20,7 @@ A Boolean that indicates whether the joint checks and reports collisions between
 let checksForInternalCollisions: Bool
 ```
 
-#### Discussion
+## Discussion
 
 The entities that [`PhysicsFixedJoint`](../physicsfixedjoint.md) references are not checked or reported, so this property only returns `false`.
 

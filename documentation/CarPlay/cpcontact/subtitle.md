@@ -21,7 +21,7 @@ var subtitle: String? { get set }
 @property (nonatomic, copy, nullable) NSString * subtitle;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to display secondary information about the contact. For example, their job title or email address.
 

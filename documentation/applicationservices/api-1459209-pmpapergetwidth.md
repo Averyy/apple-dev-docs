@@ -19,7 +19,7 @@ func PMPaperGetWidth(_ paper: PMPaper, _ paperWidth: UnsafeMutablePointer<Double
 OSStatus PMPaperGetWidth(PMPaper paper, double *paperWidth);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 

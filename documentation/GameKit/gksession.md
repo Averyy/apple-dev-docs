@@ -24,7 +24,7 @@ class GKSession
 @interface GKSession : NSObject
 ```
 
-#### Overview
+## Overview
 
 Sessions primarily work with *peers*. A peer is any iOS device made visible by creating and configuring a [`GKSession`](./gksession.md) object. Each peer is identified by a unique identifier, called a peer id ([`peerID`](./gksession/peerid.md)) string. Your application can use a [`peerID`](./gksession/peerid.md) string to obtain a user-readable name for a remote peer and to attempt to connect to that peer. Similarly, your session’s peer ID is visible to other nearby peers. After a connection is established, your application uses the remote peer’s ID to address data packets that it wants to send.
 

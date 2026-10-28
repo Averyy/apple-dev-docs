@@ -24,7 +24,7 @@ class UILongPressGestureRecognizer
 @interface UILongPressGestureRecognizer : UIGestureRecognizer
 ```
 
-#### Overview
+## Overview
 
 [`UILongPressGestureRecognizer`](./uilongpressgesturerecognizer.md) is a concrete subclass of [`UIGestureRecognizer`](./uigesturerecognizer.md).
 

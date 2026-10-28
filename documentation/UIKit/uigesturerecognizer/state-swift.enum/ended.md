@@ -32,7 +32,7 @@ UIGestureRecognizerStateEnded
 - [Handling rotation gestures](../../handling-rotation-gestures.md)
 - [Implementing a Continuous Gesture Recognizer](../../implementing-a-continuous-gesture-recognizer.md)
 
-#### Discussion
+## Discussion
 
 The gesture recognizer sends its action message (or messages) at the next cycle of the run loop and resets its state to [`UIGestureRecognizer.State.possible`](./possible.md).
 

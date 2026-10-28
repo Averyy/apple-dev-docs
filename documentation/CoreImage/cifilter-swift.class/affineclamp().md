@@ -24,11 +24,11 @@ class func affineClamp() -> any CIFilter & CIAffineClamp
 + (CIFilter<CIAffineClamp> *) affineClampFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The tiled image.
 
-#### Discussion
+## Discussion
 
 This method applies the affine clamp filter to an image. This effect performs similarly to the affine transform filter except that it produces an infinite image. You can use this filter when you need to blur an image but you want to avoid a soft, black fringe along the edges.
 

@@ -17,7 +17,7 @@ var kOBEXHeaderIDWho: OBEXHeaderIdentifiers { get }
 kOBEXHeaderIDWho
 ```
 
-#### Discussion
+## Discussion
 
 Identifies the OBEX applications, used to tell if talking to a peer.
 

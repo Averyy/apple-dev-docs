@@ -24,7 +24,7 @@ init(fire fireDateComponents: DateComponents)
 - (instancetype) initWithFireDateComponents:(NSDateComponents *) fireDateComponents;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized calendar event.
 

@@ -19,7 +19,7 @@ init(existingItemIdentifier: NSFileProviderItemIdentifier)
 - (instancetype) initWithExistingItemIdentifier:(NSFileProviderItemIdentifier) existingItemIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 If the known folder already exists on the server, the provider can specify the exact identifier of the item that needs to be used to back the known folder.
 

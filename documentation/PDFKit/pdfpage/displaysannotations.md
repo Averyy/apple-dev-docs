@@ -24,7 +24,7 @@ var displaysAnnotations: Bool { get set }
 @property (nonatomic) BOOL displaysAnnotations;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the page will draw annotations when a drawing method is called.
 

@@ -24,7 +24,7 @@ var contentSize: CGSize { get set }
 @property (nonatomic) CGSize popoverContentSize;
 ```
 
-#### Discussion
+## Discussion
 
 This property represents the size of the content view that is managed by the view controller in the [`contentViewController`](./contentviewcontroller.md) property. The initial value of this property is set to value in the view controller’s [`contentSizeForViewInPopover`](../uiviewcontroller/contentsizeforviewinpopover.md) property. Changing the value of this property overrides the default value of the current view controller. The overridden value persists until you assign a new content view controller to the receiver. Thus, if you want to keep your overridden value, you must reassign it after changing the content view controller.
 

@@ -19,7 +19,7 @@ The URL of a directory where you read and write game-save data.
 var url: URL { get }
 ```
 
-#### Discussion
+## Discussion
 
 You define the format and structure of files you write in this directory.
 

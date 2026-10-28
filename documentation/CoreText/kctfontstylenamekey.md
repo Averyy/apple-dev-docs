@@ -23,7 +23,7 @@ let kCTFontStyleNameKey: CFString
 extern CFStringRef const kCTFontStyleNameKey;
 ```
 
-#### Discussion
+## Discussion
 
 The name specifier for the style name.
 

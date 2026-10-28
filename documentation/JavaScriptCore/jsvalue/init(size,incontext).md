@@ -20,11 +20,11 @@ Creates a JavaScript representation of the specified width and height.
 init!(size: CGSize, inContext context: JSContext!)
 ```
 
-#### Return Value
+## Return Value
 
 A JavaScript object representing the specified size.
 
-#### Discussion
+## Discussion
 
 Converting a rectangle creates a JavaScript object value with fields named `width` and `height`.
 

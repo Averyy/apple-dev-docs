@@ -20,7 +20,7 @@ var name: String? { get set }
 @property (atomic, strong, nullable) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 The key for this property is [`providerName`](../cmioextensionproperty/providername.md).
 

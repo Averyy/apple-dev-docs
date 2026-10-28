@@ -28,7 +28,7 @@ class VNRecognizeTextRequest
 
 - [Recognizing Text in Images](./recognizing-text-in-images.md)
 
-#### Overview
+## Overview
 
 By default, a text recognition request first locates all possible glyphs or characters in the input image, and then analyzes each string. To specify or limit the languages to find in the request, set the [`recognitionLanguages`](./vnrecognizetextrequest/recognitionlanguages.md) property to an array that contains the names of the languages of text you want to recognize. Vision returns the result of this request in a [`VNRecognizedTextObservation`](./vnrecognizedtextobservation.md) object.
 

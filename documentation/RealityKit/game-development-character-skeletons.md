@@ -5,7 +5,7 @@
 
 Direct the movements and animation of models.
 
-#### Overview
+## Overview
 
 Games and immersive game-like experiences often rely on animated character models to represent the player or non-player characters. The `CharacterControllerComponent` simplifies the process of moving a character around a scene. It handles basic movement, including navigating up and down stairs and slopes and jumping. It also allows you to sync the character movement with specific animations.
 

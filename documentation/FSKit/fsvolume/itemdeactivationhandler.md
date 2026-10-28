@@ -19,7 +19,7 @@ protocol ItemDeactivationHandler : NSObjectProtocol
 @protocol FSVolumeItemDeactivationHandler <NSObject>
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**: This protocol replaces the [`FSVolume.ItemDeactivation`](./itemdeactivation.md) protocol. It exposes the same functionality, while using the [`FSDeactivateItemResult`](../fsdeactivateitemresult.md) object. This object adds the ability to reply with free space from [`deactivateItem(_:context:replyHandler:)`](./itemdeactivationhandler/deactivateitem%28_,context,replyhandler%29.md).
 

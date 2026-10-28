@@ -29,7 +29,7 @@ Available when `Scalar` conforms to `BinaryFloatingPoint` and `Scalar.RawSignifi
 init(identityMatrixOfSize size: Int)
 ```
 
-#### Discussion
+## Discussion
 
 The initializer creates a shaped array of shape size x size where the contents are zeros except array[scalarAt: x, x], which are ones.
 

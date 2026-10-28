@@ -22,7 +22,7 @@ The memory layout of a type, describing its size, stride, and alignment.
 enum MemoryLayout<T> where T : ~Copyable, T : ~Escapable
 ```
 
-#### Overview
+## Overview
 
 You can use `MemoryLayout` as a source of information about a type when allocating or binding memory using raw pointers. The following example declares a `Point` type with `x` and `y` coordinates and a Boolean `isFilled` property.
 

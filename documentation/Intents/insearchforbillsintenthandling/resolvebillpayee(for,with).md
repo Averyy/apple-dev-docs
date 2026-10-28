@@ -29,7 +29,7 @@ optional func resolveBillPayee(for intent: INSearchForBillsIntent) async -> INBi
 - (void) resolveBillPayeeForSearchForBills:(INSearchForBillsIntent *) intent withCompletion:(void (^)(INBillPayeeResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve any questions about the payee to use during the search. Use the [`billPayee`](../insearchforbillsintent/billpayee.md) property in the `intent` object to identify the requested payee. The payee represents the entity that provided the bill to the user. The user must register all payees in advance.
 

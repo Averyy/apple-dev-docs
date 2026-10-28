@@ -28,7 +28,7 @@ var shippingContact: PKContact? { get set }
 
 - [Displaying a Read-Only Pickup Address](../displaying-a-read-only-pickup-address.md)
 
-#### Discussion
+## Discussion
 
 If you have an up-to-date shipping address on file, you can set this property to that address. This shipping address appears in the payment sheet. When the framework presents the [`PKPaymentAuthorizationViewController`](../pkpaymentauthorizationviewcontroller.md), the user can either keep the address you specified or enter a different address.
 

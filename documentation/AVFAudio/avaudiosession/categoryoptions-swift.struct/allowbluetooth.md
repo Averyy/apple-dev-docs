@@ -24,7 +24,7 @@ static var allowBluetooth: AVAudioSession.CategoryOptions { get }
 AVAudioSessionCategoryOptionAllowBluetooth
 ```
 
-#### Discussion
+## Discussion
 
 You’re required to set this option to allow routing audio input and output to a paired Bluetooth Hands-Free Profile (HFP) device. If you clear this option, paired Bluetooth HFP devices don’t show up as available audio input routes.
 

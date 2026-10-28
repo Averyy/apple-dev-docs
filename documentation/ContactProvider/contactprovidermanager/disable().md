@@ -16,7 +16,7 @@ Disables the extension domain.
 func disable() async throws
 ```
 
-#### Discussion
+## Discussion
 
 Disabling the extension deletes all previously-provided contacts for the domain.
 

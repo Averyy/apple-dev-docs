@@ -16,11 +16,11 @@ Returns the current age of the element in seconds.
 float element::age()
 ```
 
-#### Return Value
+## Return Value
 
 The age in seconds since the element was created
 
-#### Discussion
+## Discussion
 
 Use this function to determine how long the element has existed, which is useful for time-based effects and animations.
 

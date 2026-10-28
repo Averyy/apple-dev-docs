@@ -25,7 +25,7 @@ var particleColorBlendFactor: CGFloat { get set }
 @property (nonatomic) CGFloat particleColorBlendFactor;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0.0`, which means that the texture is used as is, ignoring the particle’s color. Otherwise, the texture is blended with the color. The maximum value is `1.0`, which means the particle renders with a full-tint color.
 

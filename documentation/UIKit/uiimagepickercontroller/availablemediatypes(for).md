@@ -22,11 +22,11 @@ class func availableMediaTypes(for sourceType: UIImagePickerController.SourceTyp
 + (NSArray<NSString *> *) availableMediaTypesForSourceType:(UIImagePickerControllerSourceType) sourceType;
 ```
 
-#### Return Value
+## Return Value
 
 An array whose elements identify the available media types for the specified source type.
 
-#### Discussion
+## Discussion
 
 Some iOS devices support video recording. Use this method, along with the [`isSourceTypeAvailable(_:)`](./issourcetypeavailable%28_%29.md) method, to determine if video recording is available on a device. The availability of video recording is indicated by the presence of the `kUTTypeMovie` media type for the [`UIImagePickerController.SourceType.camera`](./sourcetype-swift.enum/camera.md) source type.
 

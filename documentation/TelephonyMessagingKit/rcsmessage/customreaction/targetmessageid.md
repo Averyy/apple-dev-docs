@@ -15,7 +15,7 @@ The target message ID for the custom reaction.
 var targetMessageID: RCSMessageID
 ```
 
-#### Discussion
+## Discussion
 
 When adding a custom reaction, this property indicates the target message ID for the custom reaction. Your app should store the message ID for the sent message used to add the custom reaction. This is necessary for removing the custom reaction at a later point in time.
 

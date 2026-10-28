@@ -5,14 +5,14 @@
 
 Receive controller input using either polling or callbacks.
 
-#### Overview
+## Overview
 
 The Game Controller framework provides your game with low-level and fast access to input from connected gamepads, arcade sticks, and racing wheels. Not all games receive and process input the same way. The Game Controller framework input APIs support several ways for your game to receive controller input:
 
 - Use polling when input handling occurs at a fixed interval as part of your game’s loop. You request the latest input state from the Game Controller framework each time you handle input. This can occur once per frame, or at a lower frequency than the frame rate.
 - Use callbacks when the input handling in your game is event-driven. You provide one or more blocks that the Game Controller framework invokes when any or certain elements’ input values change.
 
-##### Get the input profile
+### Get the input profile
 
 You get game controller input from the device’s input profile. The [`GCDevicePhysicalInput`](./gcdevicephysicalinput.md) protocol declares the common properties for the input profile. The [`GCControllerLiveInput`](./gccontrollerliveinput.md) and [`GCRacingWheelInput`](./gcracingwheelinput.md) classes provide the concrete implementations for gamepads and arcade sticks, and racing wheels, respectively.
 
@@ -36,11 +36,11 @@ let input: GCRacingWheelInput
 input = racingWheel.wheelInput
 ```
 
-##### Configure the input dispatch queue
+### Configure the input dispatch queue
 
 The Game Controller framework processes input events, and invokes any configured callbacks, on the [`GCController`](./gccontroller.md) or [`GCRacingWheel`](./gcracingwheel.md) [`handlerQueue`](./gcdevice/handlerqueue.md) property of the device. The [`handlerQueue`](./gcdevice/handlerqueue.md) property is the main queue by default. To configure a dedicated queue for input processing, set the [`queue`](./gcdevicephysicalinput/queue.md) property of the [`GCControllerLiveInput`](./gccontrollerliveinput.md) or [`GCRacingWheelInput`](./gcracingwheelinput.md) object.
 
-##### Access input elements
+### Access input elements
 
 Game controllers organize their input states by elements. These elements correspond to the individual buttons, directional pads, thumbsticks, and other kinds of controls on the gamepad, arcade stick, or racing wheel. Game controllers identify elements by their semantic name, and group them into one or more collections, such as the `elements`, `buttons`, `dpads`, `axes`, and `switches` properties.
 
@@ -60,7 +60,7 @@ To get the left thumbstick of a directional pad, use `.leftThumbstick` with the 
 let leftThumbstick = input.dpads[.leftThumbstick]
 ```
 
-##### Get the current input state
+### Get the current input state
 
 Both the [`GCControllerLiveInput`](./gccontrollerliveinput.md) and [`GCRacingWheelInput`](./gcracingwheelinput.md) objects track the last received input state from the game controller. If you poll for input, but just need the current input values, get the elements from the [`GCControllerLiveInput`](./gccontrollerliveinput.md) and [`GCRacingWheelInput`](./gcracingwheelinput.md) objects and read their input values.
 
@@ -85,7 +85,7 @@ let aButtonPressed = snapshot.buttons[.a].pressedInput.isPressed
 let bButtonPressed = snapshot.buttons[.b].pressedInput.isPressed
 ```
 
-##### Poll for input changes
+### Poll for input changes
 
 Sometimes an input device generates input more frequently than your game can process it. For example, a racing wheel with a high refresh rate generates hundreds of inputs per second. If you read the current input values every frame (at 60 frames per second), you miss input events. In this case, configure the Game Controller framework to maintain a queue of input states that you retrieve and process later.
 
@@ -142,7 +142,7 @@ while let nextInputState = input.nextInputState() {
 
 Handle when the queue overflows. If the queue is empty, the [`nextInputState()`](./gcdevicephysicalinput/nextinputstate%28%29.md) method returns `nil`. If the queue overflows, the [`changedElements()`](./gcdevicephysicalinputstatediff/changedelements%28%29-2zzwm.md) method returns `nil` and the [`change(for:)`](./gcdevicephysicalinputstatediff/change%28for%29.md) method returns [`GCDevicePhysicalInputElementChange.unknownChange`](./gcdevicephysicalinputelementchange/unknownchange.md).
 
-##### Receive callbacks for input changes
+### Receive callbacks for input changes
 
 To receive callbacks from specific elements when their inputs change, assign a callback to one or more of the element’s inputs. Then implement the handlers to take the appropriate action for your game.
 

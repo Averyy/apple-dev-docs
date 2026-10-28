@@ -24,7 +24,7 @@ var preferHDR: Bool { get set }
 @property (nonatomic, assign) BOOL preferHDR;
 ```
 
-#### Discussion
+## Discussion
 
 When set to `YES`, the image manager will attempt to provide HDR image data if the asset contains HDR content. Defaults to `NO`.
 

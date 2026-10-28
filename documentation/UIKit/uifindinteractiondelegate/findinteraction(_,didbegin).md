@@ -22,7 +22,7 @@ optional func findInteraction(_ interaction: UIFindInteraction, didBegin session
 - (void) findInteraction:(UIFindInteraction *) interaction didBeginFindSession:(UIFindSession *) session;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to decorate your view to indicate that a search operation is about to occur. For example, apply a dimming view around the unhighlighted search results.
 

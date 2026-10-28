@@ -25,7 +25,7 @@ var particleAngleVariation: CGFloat { get set }
 @property (nonatomic) CGFloat particleAngleVariation;
 ```
 
-#### Discussion
+## Discussion
 
 Setting a nonzero value for this property randomizes the effect of the [`particleAngle`](./particleangle.md) property. SceneKit randomly adjusts the initial angle of each particle by up to half the [`particleAngleVariation`](./particleanglevariation.md) value. For example, if the [`particleAngle`](./particleangle.md) value is `90.0` degrees and the [`particleAngleVariation`](./particleanglevariation.md) value is `30.0` degrees, newly spawned particles are randomly rotated to an angle between 75° and 105°.
 

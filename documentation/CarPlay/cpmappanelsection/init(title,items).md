@@ -21,7 +21,7 @@ init(title: String?, items: [CPMapPanelItem])
 - (instancetype) initWithTitle:(NSString *) title items:(NSArray<CPMapPanelItem *> *) items;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized section object.
 

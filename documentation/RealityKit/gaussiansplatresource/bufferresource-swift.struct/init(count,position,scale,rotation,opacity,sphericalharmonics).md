@@ -20,7 +20,7 @@ Creates a buffer resource from descriptors for each per-splat property.
 init(count: Int, position: GaussianSplatResource.BufferDescriptor, scale: GaussianSplatResource.BufferDescriptor, rotation: GaussianSplatResource.BufferDescriptor, opacity: GaussianSplatResource.BufferDescriptor, sphericalHarmonics: (GaussianSplatResource.BufferDescriptor, GaussianSplatResource.SphericalHarmonicDegree)) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if a descriptor is invalid or its buffer is too small for the splat count, or if the count exceeds the maximum the platform supports.
 

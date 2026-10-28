@@ -25,7 +25,7 @@ var kAudioChannelLayoutTag_AAC_Quadraphonic: AudioChannelLayoutTag { get }
 kAudioChannelLayoutTag_AAC_Quadraphonic
 ```
 
-#### Discussion
+## Discussion
 
 Your channels must be laid out in the following order:
 

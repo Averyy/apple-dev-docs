@@ -24,7 +24,7 @@ func isFlashModeSupported(_ flashMode: AVCaptureDevice.FlashMode) -> Bool
 - (BOOL) isFlashModeSupported:(AVCaptureFlashMode) flashMode;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the device supports the flash mode; otherwise, [`false`](../../Swift/false.md).
 

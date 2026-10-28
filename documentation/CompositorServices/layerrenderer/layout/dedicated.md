@@ -24,7 +24,7 @@ cp_layer_renderer_layout_dedicated
 
 - [Drawing fully immersive content using Metal](../../drawing-fully-immersive-content-using-metal.md)
 
-#### Discussion
+## Discussion
 
 Each view receives its own dedicated texture, and the type of each texture is [`MTLTextureType.type2D`](../../../Metal/mtltexturetype/type2d.md). Because each texture is separate, when there are multiple textures, you must perform a separate render pass for each texture.
 

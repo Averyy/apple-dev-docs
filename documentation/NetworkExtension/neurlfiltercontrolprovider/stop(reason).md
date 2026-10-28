@@ -19,7 +19,7 @@ Prepares the filter to stop, in response to a call from the framework.
 func stop(reason: NEProviderStopReason) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Override this method in your conformance to [`NEURLFilterControlProvider`](../neurlfiltercontrolprovider.md) and perform whatever steps are necessary to prepare for the URL filter stopping.
 

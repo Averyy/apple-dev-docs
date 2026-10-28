@@ -23,7 +23,7 @@ type TileOverlayUrlTemplate =
       ) => string | null);
 ```
 
-#### Discussion
+## Discussion
 
 You may set the URL template as either a template string or a function.
 

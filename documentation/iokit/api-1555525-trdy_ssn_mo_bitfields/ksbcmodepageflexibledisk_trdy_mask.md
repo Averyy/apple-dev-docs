@@ -14,7 +14,7 @@
 kSBCModePageFlexibleDisk_TRDY_Mask = (1 << kSBCModePageFlexibleDisk_TRDY_Bit)
 ```
 
-#### Discussion
+## Discussion
 
 Mask for use with TRDY_SSN_MO field.
 

@@ -24,7 +24,7 @@ class func node(withPoint point: vector_float2) -> Self
 + (instancetype) nodeWithPoint:(vector_float2) point;
 ```
 
-#### Return Value
+## Return Value
 
 A new graph node representing the specified point.
 

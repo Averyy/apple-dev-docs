@@ -15,7 +15,7 @@ An array that contains all the app’s windows.
 @property (copy, nullable) NSArray * accessibilityWindows;
 ```
 
-#### Discussion
+## Discussion
 
 Use on the app element.
 

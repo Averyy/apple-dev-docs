@@ -20,7 +20,7 @@ let kSecGuestAttributeHash: CFString
 extern CFStringRef const kSecGuestAttributeHash;
 ```
 
-#### Discussion
+## Discussion
 
 This hash can be used as a unique identifier to recognize this specific code in the future. This identifier is tied to the current version of the code, unlike the [`kSecCodeInfoIdentifier`](./kseccodeinfoidentifier.md) identifier, which remains stable across developer-approved updates. If you are not passing this hash in the attribute dictionary when you call the [`SecHostCreateGuest`](./sechostcreateguest.md) function, then you must pass the [`kSecCSGenerateGuestHash`](./kseccsgenerateguesthash.md) flag to the function as well.
 

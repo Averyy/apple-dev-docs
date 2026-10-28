@@ -21,7 +21,7 @@ var isBordered: Bool { get set }
 @property (getter=isBordered) BOOL bordered;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is [`true`](../../Swift/true.md), the color well has a border; if it’s [`false`](../../Swift/false.md), the color well doesn’t have a border. The default value of this property is [`true`](../../Swift/true.md).
 

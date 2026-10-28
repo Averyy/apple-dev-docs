@@ -16,7 +16,7 @@ Posted when an `NSConnection` object is initialized using [`initWithReceivePort:
 extern NSString * const NSConnectionDidInitializeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 ## See Also
 

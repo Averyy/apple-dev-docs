@@ -21,7 +21,7 @@ The kind of values published by this publisher.
 typealias Output = P.Output
 ```
 
-#### Discussion
+## Discussion
 
 This publisher produces elements of the type produced by the upstream publisher-of-publishers.
 

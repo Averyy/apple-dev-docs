@@ -25,7 +25,7 @@ var auxiliaryPlanes: [any MTLTensorAuxiliaryPlane] { get }
 @property (readonly) NSArray<id<MTLTensorAuxiliaryPlane>> * auxiliaryPlanes;
 ```
 
-#### Discussion
+## Discussion
 
 Returns an array of [`MTLTensorAuxiliaryPlane`](../mtltensorauxiliaryplane.md) objects describing each auxiliary plane configured on this tensor. For single-plane tensors, this array is empty.
 

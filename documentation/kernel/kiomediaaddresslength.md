@@ -15,7 +15,7 @@ A property of IONetworkInterface objects.
 #define kIOMediaAddressLength
 ```
 
-#### Discussion
+## Discussion
 
 The kIOMediaAddressLength property has an OSNumber value that specifies the size of the media address in bytes.
 

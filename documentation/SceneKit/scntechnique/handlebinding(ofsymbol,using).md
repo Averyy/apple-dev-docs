@@ -25,7 +25,7 @@ func handleBinding(ofSymbol symbol: String, using block: SCNBindingBlock? = nil)
 - (void) handleBindingOfSymbol:(NSString *) symbol usingBlock:(SCNBindingBlock) block;
 ```
 
-#### Discussion
+## Discussion
 
 This method associates a block for handling setup of an attribute or uniform variable in the shader programs associated with the technique. SceneKit calls your block before any performing any rendering passes that use that symbol. In the block, you can execute any OpenGL commands or other code necessary for preparing your custom shader.
 

@@ -19,7 +19,7 @@ case unexpectedEOF
 NSImageLoadStatusUnexpectedEOF
 ```
 
-#### Discussion
+## Discussion
 
 The image contains the portions of the data that have already been successfully decompressed, if any.
 

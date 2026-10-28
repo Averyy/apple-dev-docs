@@ -23,7 +23,7 @@ optional func toggleItalics(_ sender: Any?)
 - (void) toggleItalics:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to apply or remove style information to the currently selected content.
 

@@ -5,7 +5,7 @@
 
 Configure your JavaScript project to use CKTool JS.
 
-#### Overview
+## Overview
 
 Include CKTool JS in your JavaScript automation testing and continuous integration tasks to manipulate the schema and the data in your database. To start using CKTool JS in your scripts, you need to:
 
@@ -13,13 +13,13 @@ Include CKTool JS in your JavaScript automation testing and continuous integrati
 - Install CKTool JS and configure it for your environment
 - Initialize the database API for your scripts to use
 
-##### Obtain a CloudKit management token
+### Obtain a CloudKit management token
 
 CKTool JS requires a CloudKit management token from the CloudKit Console within the [Apple Developer Portal](https://developer.apple.com). Generate the token from the CloudKit Console by choosing the Settings section for your account. Save this token, because it won’t be visible again.
 
 If you’ll be accessing with data in a container, then you’ll also require a user token. You can obtain a user token from CloudKit Console.
 
-##### Specify and install the CKTool JS packages
+### Specify and install the CKTool JS packages
 
 To install the CKTool JS client library, you need to have the `npm` package management tool already installed on your machine. The client library suite includes a main database package and a package used to target Node.js.
 
@@ -46,7 +46,7 @@ $ npm install
 
 This command downloads the CKTool JS packages specified in your dependencies.
 
-##### Prepare the client library for use in your scripts
+### Prepare the client library for use in your scripts
 
 In your code, import the configuration factory function for Node.js. This prepares a configuration object for your target platform that the client library requires for initialization.
 
@@ -69,7 +69,7 @@ const api = new PromisesApi({
 
 Use the [`PromisesApi`](./promisesapi.md) instance to access your containers from your scripts.
 
-##### Create a default parameters object to provide required parameters
+### Create a default parameters object to provide required parameters
 
 Most methods on the API object require `teamId`, `containerId`, and `environment`. Each method on the API object takes a single parameters dictionary to pass required and optional values to the method.
 
@@ -96,7 +96,7 @@ In the above example, `importSchema` requires a `file` value as well as the valu
 
 > **Note**:  You can add additional values to your parameters object. If the method doesn’t use them, it ignores those values.
 
-##### Convert value types into the library’s expected types
+### Convert value types into the library’s expected types
 
 In order to pass values to CKTool JS functions that expect `Float`, `Double`, `Int32`, `Int64`, `Byte`, `ByteArray`, or `UUID` values, you must convert the parameters into the appropriate type.
 

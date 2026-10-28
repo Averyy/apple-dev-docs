@@ -16,7 +16,7 @@ The system relinquished an underlying shared resource, preventing the operation 
 case acquiredResourceRelinquished
 ```
 
-#### Discussion
+## Discussion
 
 When the system throws this error, it also reverts the session state to [`CredentialSession.State.management`](../state-swift.enum/management.md).
 

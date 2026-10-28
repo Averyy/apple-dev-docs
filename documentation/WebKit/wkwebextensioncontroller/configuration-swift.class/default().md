@@ -23,7 +23,7 @@ class func `default`() -> Self
 + (instancetype) defaultConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 If a [`WKWebExtensionController`](../../wkwebextensioncontroller.md) is associated with a persistent configuration, data will be written to the file system in a common location. When using multiple extension controllers, each controller should use a unique configuration to avoid conflicts.
 

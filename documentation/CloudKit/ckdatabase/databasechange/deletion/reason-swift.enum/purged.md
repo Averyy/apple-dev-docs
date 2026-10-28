@@ -21,7 +21,7 @@ A deletion from the user via the iCloud storage UI.
 case purged
 ```
 
-#### Discussion
+## Discussion
 
 This is an indication that the user wanted all data deleted, including locally-cached data.
 

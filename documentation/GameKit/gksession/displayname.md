@@ -24,7 +24,7 @@ var displayName: String! { get }
 @property (readonly) NSString * displayName;
 ```
 
-#### Discussion
+## Discussion
 
 The display name is transmitted to visible peers so that they can present a human-readable name for your session.
 

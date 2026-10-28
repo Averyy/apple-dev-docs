@@ -15,11 +15,11 @@ Creates the shared input and output queues, without regard to whether the stream
 kern_return_t createQueues(uint32_t queueCount, uint32_t options);
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` if the queues were successfully created.
 
-#### Discussion
+## Discussion
 
 Normally, [`init`](./init.md) calls this method.
 

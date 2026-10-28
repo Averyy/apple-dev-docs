@@ -19,7 +19,7 @@ class var defaultFlatness: CGFloat { get set }
 @property (class) CGFloat defaultFlatness;
 ```
 
-#### Return Value
+## Return Value
 
 The default value for determining the smoothness of curved paths, or 0.6 if no other value has been set.
 

@@ -19,11 +19,11 @@ class NSAlignmentFeedbackFilter
 @interface NSAlignmentFeedbackFilter : NSObject
 ```
 
-#### Overview
+## Overview
 
 With a Force Touch trackpad, apps can produce tactile feedback to complement user actions. If your app implements alignment features, you can use the [`NSAlignmentFeedbackFilter`](./nsalignmentfeedbackfilter.md) class to filter object movements and provide haptic feedback to the user at appropriate times. As the user drags objects into alignment with a guide or another object, the user actually feels a physical bump as the object snaps into place.
 
-##### Implementing Alignment Feedback
+### Implementing Alignment Feedback
 
 To implement alignment feedback in your custom alignment controller class, set up the class to receive events for tracking the movement of an object. These can be events matching the [`inputEventMask`](./nsalignmentfeedbackfilter/inputeventmask.md) value of an `NSAlignmentFeedbackFilter` object, or events from a gesture recognizer ([`NSGestureRecognizer`](./nsgesturerecognizer.md)). For each event received:
 

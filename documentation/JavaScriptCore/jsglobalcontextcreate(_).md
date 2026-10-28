@@ -24,11 +24,11 @@ func JSGlobalContextCreate(_ globalObjectClass: JSClassRef!) -> JSGlobalContextR
 JSGlobalContextRefJSGlobalContextCreate(JSClassRef globalObjectClass);
 ```
 
-#### Return Value
+## Return Value
 
 A [`JSGlobalContextRef`](./jsglobalcontextref.md) with a global object of class `globalObjectClass`.
 
-#### Discussion
+## Discussion
 
 [`JSGlobalContextCreate(_:)`](./jsglobalcontextcreate%28_%29.md) allocates a global object and populates it with all the built-in JavaScript objects, such as `Object`, `Function`, `String`, and `Array`.
 

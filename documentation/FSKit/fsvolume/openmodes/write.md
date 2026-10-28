@@ -19,7 +19,7 @@ static var write: FSVolume.OpenModes { get }
 FSVolumeOpenModesWrite
 ```
 
-#### Discussion
+## Discussion
 
 This mode is equivalent to POSIX `FRWITE`.
 

@@ -13,11 +13,11 @@
 mbuf_type_t mbuf_type(const mbuf_t mbuf);
 ```
 
-#### Return Value
+## Return Value
 
 The type.
 
-#### Discussion
+## Discussion
 
 Gets the type of mbuf.
 

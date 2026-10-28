@@ -17,7 +17,7 @@ The radius of the rounded edges.
 var edgeRadius: Float { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Must be non-negative; negative values are clamped to zero.
 

@@ -24,7 +24,7 @@ class VZMacHardwareModel
 - [Installing macOS on a Virtual Machine](./installing-macos-on-a-virtual-machine.md)
 - [Using iCloud with macOS virtual machines](./using-icloud-with-macos-virtual-machines.md)
 
-#### Overview
+## Overview
 
 The Mac hardware model abstracts a set of virtualized hardware elements and configurations.
 

@@ -23,7 +23,7 @@ var barButtonItems: [UIBarButtonItem] { get set }
 @property (nonatomic, copy, readwrite) NSArray<UIBarButtonItem *> * barButtonItems;
 ```
 
-#### Discussion
+## Discussion
 
 You may include any number of bar button items in a group, but you should keep the total number of items relatively small because of space considerations. The items in a group are typically related to each other, but need not be. The array must contain at least one item.
 

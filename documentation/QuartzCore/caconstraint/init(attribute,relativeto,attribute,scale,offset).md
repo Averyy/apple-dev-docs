@@ -20,11 +20,11 @@ init(attribute attr: CAConstraintAttribute, relativeTo srcId: String, attribute 
 - (instancetype) initWithAttribute:(CAConstraintAttribute) attr relativeTo:(NSString *) srcId attribute:(CAConstraintAttribute) srcAttr scale:(CGFloat) m offset:(CGFloat) c;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized constraint object using the specified parameters.
 
-#### Discussion
+## Discussion
 
 The value for the constraint is calculated as (`srcAttr` * `scale`) + `offset`).
 

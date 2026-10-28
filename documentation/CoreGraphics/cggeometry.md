@@ -5,7 +5,7 @@
 
 Various structures and associated functions for 2D geometric primitives.
 
-#### Overview
+## Overview
 
 The data structure [`CGPoint`](../CoreFoundation/cgpoint.md) represents a point in a two-dimensional coordinate system. The data structure [`CGRect`](../CoreFoundation/cgrect.md) represents the location and dimensions of a rectangle. The data structure [`CGSize`](../CoreFoundation/cgsize.md) represents the dimensions of width and height.
 

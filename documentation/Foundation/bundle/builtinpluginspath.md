@@ -25,7 +25,7 @@ var builtInPlugInsPath: String? { get }
 @property (copy, readonly, nullable) NSString * builtInPlugInsPath;
 ```
 
-#### Discussion
+## Discussion
 
 This is the appropriate path for modern application and framework bundles. This may not be a path for non-standard bundle formats or for some older bundle formats.
 

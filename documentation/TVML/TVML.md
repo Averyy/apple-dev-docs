@@ -6,7 +6,7 @@ Use Apple TV Markup Language to create individual pages inside of a client-serve
 
 > **Deprecated**: TVML is deprecated in tvOS 18 and later. Instead, develop apps for tvOS with [SwiftUI](../SwiftUI/SwiftUI.md) or [UIKit](../UIKit/UIKit.md).
 
-#### Overview
+## Overview
 
 Every page in a client-server app is built on an Apple TV Markup Language (TVML) template. TVML templates define what elements can be used and in what order. Each template is designed to display information in a specific way. For example, `loadingTemplate` shows a spinner and a quick description of what is happening, while `ratingTemplate` shows the rating for a product. You create a new TVML file that contains a single template for each page in a client-server app. Each template page occupies the entire TV screen.
 

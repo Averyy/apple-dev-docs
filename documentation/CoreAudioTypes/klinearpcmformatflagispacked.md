@@ -25,7 +25,7 @@ var kLinearPCMFormatFlagIsPacked: AudioFormatFlags { get }
 kLinearPCMFormatFlagIsPacked
 ```
 
-#### Discussion
+## Discussion
 
 This flag is a synonym for [`kAudioFormatFlagIsPacked`](./kaudioformatflagispacked.md).
 

@@ -20,7 +20,7 @@ optional func candidateListTouchBarItem(_ anItem: NSCandidateListTouchBarItem<An
 - (void) candidateListTouchBarItem:(NSCandidateListTouchBarItem *) anItem endSelectingCandidateAtIndex:(NSInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 If `index` is equal to `NSNotFound` then the user didn’t select a candidate.
 

@@ -21,7 +21,7 @@ The always-by-one limit behavior.
 static var alwaysByOne: ViewAlignedScrollTargetBehavior.LimitBehavior { get }
 ```
 
-#### Discussion
+## Discussion
 
 Limit the number of views that can be scrolled by a single interaction to a single view.
 

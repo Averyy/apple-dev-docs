@@ -24,7 +24,7 @@ let HMCharacteristicTypeStatusJammed: String
 extern NSString * const HMCharacteristicTypeStatusJammed;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is one of the constants in the [`HMCharacteristicValueJammedStatus`](./hmcharacteristicvaluejammedstatus.md) enumeration.
 

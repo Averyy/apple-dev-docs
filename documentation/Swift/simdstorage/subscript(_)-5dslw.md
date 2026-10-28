@@ -21,7 +21,7 @@ Extracts the scalars at specified indices to form a SIMD8.
 subscript<Index>(index: SIMD8<Index>) -> SIMD8<Self.Scalar> where Index : FixedWidthInteger, Index : SIMDScalar, Self.Scalar : SIMDScalar { get }
 ```
 
-#### Overview
+## Overview
 
 The elements of the index vector are wrapped modulo the count of elements in this vector. Because of this, the index is always in-range and no trap can occur.
 

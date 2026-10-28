@@ -14,7 +14,7 @@
 #define IOFRAMEBUFFER_CONFORMSTO
 ```
 
-#### Discussion
+## Discussion
 
 The class name of the framebuffer service.
 

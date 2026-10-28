@@ -25,11 +25,11 @@ func CFPlugInUnregisterFactory(_ factoryUUID: CFUUID!) -> Bool
 extern Boolean CFPlugInUnregisterFactory(CFUUIDRef factoryUUID);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the factory function was successfully unregistered, otherwise `false`.
 
-#### Discussion
+## Discussion
 
 Used by a plug-in or host when performing dynamic registration.
 

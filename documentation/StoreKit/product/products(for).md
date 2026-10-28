@@ -21,11 +21,11 @@ Requests product data from the App Store.
 static func products<Identifiers>(for identifiers: Identifiers) async throws -> [Product] where Identifiers : Collection, Identifiers.Element == String
 ```
 
-#### Return Value
+## Return Value
 
 An array of products, returned from the App Store.
 
-#### Discussion
+## Discussion
 
 Use this method to get an instance of [`Product`](../product.md). Your app must have its product identifiers available to provide them to this function. The following example illustrates requesting two products using hard-coded identifiers.
 

@@ -21,7 +21,7 @@ var reasonsNotRecommendedForCaptureUse: Set<AVExternalStorageDevice.ReasonNotRec
 @property (nonatomic, readonly) NSSet<NSString *> * reasonsNotRecommendedForCaptureUse;
 ```
 
-#### Discussion
+## Discussion
 
 A set of reasons why the storage device is not recommended for capture.
 

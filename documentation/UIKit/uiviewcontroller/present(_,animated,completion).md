@@ -30,7 +30,7 @@ func present(_ viewControllerToPresent: UIViewController, animated flag: Bool, c
 - [Presenting selected documents](../presenting-selected-documents.md)
 - [Providing access to directories](../providing-access-to-directories.md)
 
-#### Discussion
+## Discussion
 
 In a horizontally regular environment, the view controller is presented in the style specified by the [`modalPresentationStyle`](./modalpresentationstyle.md) property. In a horizontally compact environment, the view controller is presented full screen by default. If you associate an adaptive delegate with the presentation controller associated with the object in `viewControllerToPresent`, you can modify the presentation style dynamically.
 

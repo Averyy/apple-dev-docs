@@ -13,7 +13,7 @@
 kSCSITaskStatus_BUSY = 0x08
 ```
 
-#### Discussion
+## Discussion
 
 The task completed with a status of BUSY. The device server might need time to process a request and a delay may be required.
 

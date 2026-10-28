@@ -20,11 +20,11 @@ func child(at index: Int) -> XMLNode?
 - (NSXMLNode *) childAtIndex:(NSUInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 An NSXMLNode object or `nil` f the receiver has no children.
 
-#### Discussion
+## Discussion
 
 The receiver should be an `NSXMLNode` object representing a document, element, or document type declaration. The returned node object can represent an element, comment, text, or processing instruction.
 

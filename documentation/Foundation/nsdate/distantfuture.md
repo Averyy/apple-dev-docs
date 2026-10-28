@@ -25,11 +25,11 @@ class var distantFuture: Date { get }
 @property (class, copy, readonly) NSDate * distantFuture;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSDate`](../nsdate.md) object representing a date in the distant future (in terms of centuries).
 
-#### Discussion
+## Discussion
 
 You can pass this value when an [`NSDate`](../nsdate.md) object is required to have the date argument essentially ignored. For example, the [`NSWindow`](../../AppKit/nswindow.md) method [`nextEvent(matching:until:inMode:dequeue:)`](../../AppKit/nswindow/nextevent%28matching,until,inmode,dequeue%29.md) returns `nil` if an event specified in the event mask does not happen before the specified date. You can use the object returned by [`distantFuture`](./distantfuture.md) as the date argument to wait indefinitely for the event to occur.
 

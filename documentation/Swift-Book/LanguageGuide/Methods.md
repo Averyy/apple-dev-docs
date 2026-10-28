@@ -53,25 +53,6 @@ class Counter {
 }
 ```
 
-<!--
-  - test: `instanceMethods`
-
-  ```swifttest
-  -> class Counter {
-        var count = 0
-        func increment() {
-           count += 1
-        }
-        func increment(by amount: Int) {
-           count += amount
-        }
-        func reset() {
-           count = 0
-        }
-     }
-  ```
--->
-
 The `Counter` class defines three instance methods:
 
 - `increment()` increments the counter by `1`.
@@ -94,25 +75,6 @@ counter.reset()
 // the counter's value is now 0
 ```
 
-<!--
-  - test: `instanceMethods`
-
-  ```swifttest
-  -> let counter = Counter()
-  /> the initial counter value is \(counter.count)
-  </ the initial counter value is 0
-  -> counter.increment()
-  /> the counter's value is now \(counter.count)
-  </ the counter's value is now 1
-  -> counter.increment(by: 5)
-  /> the counter's value is now \(counter.count)
-  </ the counter's value is now 6
-  -> counter.reset()
-  /> the counter's value is now \(counter.count)
-  </ the counter's value is now 0
-  ```
--->
-
 Function parameters can have both a name (for use within the function's body)
 and an argument label (for use when calling the function),
 as described in [Function Argument Labels and Parameter Names](Functions.md#Function-Argument-Labels-and-Parameter-Names).
@@ -133,23 +95,6 @@ func increment() {
     self.count += 1
 }
 ```
-
-<!--
-  - test: `instanceMethodsIncrement`
-
-  ```swifttest
-  >> class Counter {
-  >> var count: Int = 0
-     func increment() {
-        self.count += 1
-     }
-  >> }
-  ```
--->
-
-<!--
-  NOTE: I'm slightly cheating with my testing of this excerpt, but it works!
--->
 
 In practice, you don't need to write `self` in your code very often.
 If you don't explicitly write `self`,
@@ -182,24 +127,6 @@ if somePoint.isToTheRightOf(x: 1.0) {
 // Prints "This point is to the right of the line where x == 1.0".
 ```
 
-<!--
-  - test: `self`
-
-  ```swifttest
-  -> struct Point {
-        var x = 0.0, y = 0.0
-        func isToTheRightOf(x: Double) -> Bool {
-           return self.x > x
-        }
-     }
-  -> let somePoint = Point(x: 4.0, y: 5.0)
-  -> if somePoint.isToTheRightOf(x: 1.0) {
-        print("This point is to the right of the line where x == 1.0")
-     }
-  <- This point is to the right of the line where x == 1.0
-  ```
--->
-
 Without the `self` prefix,
 Swift would assume that both uses of `x` referred to the method parameter called `x`.
 
@@ -207,10 +134,6 @@ Swift would assume that both uses of `x` referred to the method parameter called
 
 Structures and enumerations are *value types*.
 By default, the properties of a value type can't be modified from within its instance methods.
-
-<!--
-  TODO: find out why.  once I actually know why, explain it.
--->
 
 However, if you need to modify the properties of your structure or enumeration
 within a particular method,
@@ -238,24 +161,6 @@ print("The point is now at (\(somePoint.x), \(somePoint.y))")
 // Prints "The point is now at (3.0, 4.0)".
 ```
 
-<!--
-  - test: `selfStructures`
-
-  ```swifttest
-  -> struct Point {
-        var x = 0.0, y = 0.0
-        mutating func moveBy(x deltaX: Double, y deltaY: Double) {
-           x += deltaX
-           y += deltaY
-        }
-     }
-  -> var somePoint = Point(x: 1.0, y: 1.0)
-  -> somePoint.moveBy(x: 2.0, y: 3.0)
-  -> print("The point is now at (\(somePoint.x), \(somePoint.y))")
-  <- The point is now at (3.0, 4.0)
-  ```
--->
-
 The `Point` structure above defines a mutating `moveBy(x:y:)` method,
 which moves a `Point` instance by a certain amount.
 Instead of returning a new point,
@@ -273,37 +178,6 @@ fixedPoint.moveBy(x: 2.0, y: 3.0)
 // this will report an error
 ```
 
-<!--
-  - test: `selfStructures-err`
-
-  ```swifttest
-  >> struct Point {
-  >>    var x = 0.0, y = 0.0
-  >>    mutating func moveBy(x deltaX: Double, y deltaY: Double) {
-  >>       x += deltaX
-  >>       y += deltaY
-  >>    }
-  >> }
-  -> let fixedPoint = Point(x: 3.0, y: 3.0)
-  -> fixedPoint.moveBy(x: 2.0, y: 3.0)
-  !$ error: cannot use mutating member on immutable value: 'fixedPoint' is a 'let' constant
-  !! fixedPoint.moveBy(x: 2.0, y: 3.0)
-  !! ~~~~~~~~~~ ^
-  !$ note: change 'let' to 'var' to make it mutable
-  !! let fixedPoint = Point(x: 3.0, y: 3.0)
-  !! ^~~
-  !! var
-  // this will report an error
-  ```
--->
-
-<!--
-  TODO: talk about nonmutating as well.
-  Struct setters are implicitly 'mutating' by default and thus don't work on 'let's.
-  However, JoeG says that this ought to work
-  if the setter for the computed property is explicitly defined as @!mutating.
--->
-
 ### Assigning to self Within a Mutating Method
 
 Mutating methods can assign an entirely new instance to the implicit `self` property.
@@ -317,23 +191,6 @@ struct Point {
     }
 }
 ```
-
-<!--
-  - test: `selfStructuresAssign`
-
-  ```swifttest
-  -> struct Point {
-        var x = 0.0, y = 0.0
-        mutating func moveBy(x deltaX: Double, y deltaY: Double) {
-           self = Point(x: x + deltaX, y: y + deltaY)
-        }
-     }
-  >> var somePoint = Point(x: 1.0, y: 1.0)
-  >> somePoint.moveBy(x: 2.0, y: 3.0)
-  >> print("The point is now at (\(somePoint.x), \(somePoint.y))")
-  << The point is now at (3.0, 4.0)
-  ```
--->
 
 This version of the mutating `moveBy(x:y:)` method creates a new structure
 whose `x` and `y` values are set to the target location.
@@ -363,31 +220,6 @@ ovenLight.next()
 ovenLight.next()
 // ovenLight is now equal to .off
 ```
-
-<!--
-  - test: `selfEnumerations`
-
-  ```swifttest
-  -> enum TriStateSwitch {
-        case off, low, high
-        mutating func next() {
-           switch self {
-              case .off:
-                 self = .low
-              case .low:
-                 self = .high
-              case .high:
-                 self = .off
-           }
-        }
-     }
-  -> var ovenLight = TriStateSwitch.low
-  -> ovenLight.next()
-  // ovenLight is now equal to .high
-  -> ovenLight.next()
-  // ovenLight is now equal to .off
-  ```
--->
 
 This example defines an enumeration for a three-state switch.
 The switch cycles between three different power states
@@ -421,19 +253,6 @@ class SomeClass {
 }
 SomeClass.someTypeMethod()
 ```
-
-<!--
-  - test: `typeMethods`
-
-  ```swifttest
-  -> class SomeClass {
-        class func someTypeMethod() {
-           // type method implementation goes here
-        }
-     }
-  -> SomeClass.someTypeMethod()
-  ```
--->
 
 Within the body of a type method,
 the implicit `self` property refers to the type itself,
@@ -486,35 +305,6 @@ struct LevelTracker {
 }
 ```
 
-<!--
-  - test: `typeMethods`
-
-  ```swifttest
-  -> struct LevelTracker {
-        static var highestUnlockedLevel = 1
-        var currentLevel = 1
-
-  ->    static func unlock(_ level: Int) {
-           if level > highestUnlockedLevel { highestUnlockedLevel = level }
-        }
-
-  ->    static func isUnlocked(_ level: Int) -> Bool {
-           return level <= highestUnlockedLevel
-        }
-
-  ->    @discardableResult
-        mutating func advance(to level: Int) -> Bool {
-           if LevelTracker.isUnlocked(level) {
-              currentLevel = level
-              return true
-           } else {
-              return false
-           }
-        }
-     }
-  ```
--->
-
 The `LevelTracker` structure keeps track of the highest level that any player has unlocked.
 This value is stored in a type property called `highestUnlockedLevel`.
 
@@ -562,24 +352,6 @@ class Player {
 }
 ```
 
-<!--
-  - test: `typeMethods`
-
-  ```swifttest
-  -> class Player {
-        var tracker = LevelTracker()
-        let playerName: String
-        func complete(level: Int) {
-           LevelTracker.unlock(level + 1)
-           tracker.advance(to: level + 1)
-        }
-        init(name: String) {
-           playerName = name
-        }
-     }
-  ```
--->
-
 The `Player` class creates a new instance of `LevelTracker`
 to track that player's progress.
 It also provides a method called `complete(level:)`,
@@ -600,17 +372,6 @@ print("highest unlocked level is now \(LevelTracker.highestUnlockedLevel)")
 // Prints "highest unlocked level is now 2".
 ```
 
-<!--
-  - test: `typeMethods`
-
-  ```swifttest
-  -> var player = Player(name: "Argyrios")
-  -> player.complete(level: 1)
-  -> print("highest unlocked level is now \(LevelTracker.highestUnlockedLevel)")
-  <- highest unlocked level is now 2
-  ```
--->
-
 If you create a second player, whom you try to move to a level
 that's not yet unlocked by any player in the game,
 the attempt to set the player's current level fails:
@@ -624,43 +385,3 @@ if player.tracker.advance(to: 6) {
 }
 // Prints "level 6 hasn't yet been unlocked".
 ```
-
-<!--
-  - test: `typeMethods`
-
-  ```swifttest
-  -> player = Player(name: "Beto")
-  -> if player.tracker.advance(to: 6) {
-        print("player is now on level 6")
-     } else {
-        print("level 6 hasn't yet been unlocked")
-     }
-  <- level 6 hasn't yet been unlocked
-  ```
--->
-
-<!--
-  TODO: Method Binding
-  --------------------
-
-  TODO: you can get a function that refers to a method, either with or without the 'self' argument already being bound:
-  class C {
-     func foo(x: Int) -> Float { ... }
-  }
-  var c = C()
-  var boundFunc = c.foo   // a function with type (Int) -> Float
-  var unboundFunc = C.foo // a function with type (C) -> (Int) -> Float
-
-  TODO: selector-style methods can be referenced as foo.bar:bas:
-  (see Doug's comments from the 2014-03-12 release notes)
--->
-
-<!--
-This source file is part of the Swift.org open source project
-
-Copyright (c) 2014 - 2022 Apple Inc. and the Swift project authors
-Licensed under Apache License v2.0 with Runtime Library Exception
-
-See https://swift.org/LICENSE.txt for license information
-See https://swift.org/CONTRIBUTORS.txt for the list of Swift project authors
--->

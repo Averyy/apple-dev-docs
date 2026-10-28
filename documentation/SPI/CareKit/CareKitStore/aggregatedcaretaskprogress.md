@@ -17,7 +17,7 @@ An object that combines the progress for multiple tasks.
 struct AggregatedCareTaskProgress
 ```
 
-#### Overview
+## Overview
 
 This type can be useful for displaying progress for multiple tasks using a progress bar. If you have multiple events, start by computing the progress for each event individually:
 

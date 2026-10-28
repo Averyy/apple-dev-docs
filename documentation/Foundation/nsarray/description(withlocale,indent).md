@@ -25,11 +25,11 @@ func description(withLocale locale: Any?, indent level: Int) -> String
 - (NSString *) descriptionWithLocale:(id) locale indent:(NSUInteger) level;
 ```
 
-#### Return Value
+## Return Value
 
 A string that represents the contents of the array, formatted as a property list.
 
-#### Discussion
+## Discussion
 
 The returned `NSString` object contains the string representations of each of the array’s elements, in order, from first to last. To obtain the string representation of a given element, [`description(withLocale:indent:)`](./description%28withlocale,indent%29.md) proceeds as follows:
 

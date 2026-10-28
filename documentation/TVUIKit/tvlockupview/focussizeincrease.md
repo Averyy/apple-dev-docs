@@ -19,7 +19,7 @@ var focusSizeIncrease: NSDirectionalEdgeInsets { get set }
 @property (nonatomic, assign) NSDirectionalEdgeInsets focusSizeIncrease;
 ```
 
-#### Discussion
+## Discussion
 
 Use negative values for a size increase. The values contribute to the lockup view’s intrinsic content size and guide layout update when focus state changes.
 

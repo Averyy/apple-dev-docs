@@ -25,11 +25,11 @@ init?(sampleBuffer: CMSampleBuffer)
 - (instancetype) initWithSampleBuffer:(CMSampleBufferRef) sampleBuffer;
 ```
 
-#### Return Value
+## Return Value
 
 An instance of AVTimedMetadataGroup.
 
-#### Discussion
+## Discussion
 
 Initializes an instance of AVTimedMetadataGroup with a sample buffer.
 

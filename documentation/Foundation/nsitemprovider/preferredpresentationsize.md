@@ -39,7 +39,7 @@ var preferredPresentationSize: NSSize { get }
 @property (readonly) NSSize preferredPresentationSize;
 ```
 
-#### Discussion
+## Discussion
 
 When displaying the item, the value in this property represents the ideal size at which to display the item. The size in this property may differ from the size in the [`sourceFrame`](./sourceframe.md) rectangle. For images, video, and other content with a natural size, the item automatically derives the size from that content. If the value in this property is [`NSZeroSize`](../nszerosize.md), use the size specified in the [`sourceFrame`](./sourceframe.md) rectangle.
 

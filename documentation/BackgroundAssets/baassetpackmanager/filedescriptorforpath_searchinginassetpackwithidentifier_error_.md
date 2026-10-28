@@ -20,11 +20,11 @@ Opens and returns a file descriptor for the asset file at the specified relative
 - (int) fileDescriptorForPath:(NSString *) path searchingInAssetPackWithIdentifier:(NSString *) assetPackIdentifier error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A descriptor for the opened file. A return value of `-1` indicates that an error occurred.
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: It’s your responsibility to close the file descriptor when you’re done using it.
 

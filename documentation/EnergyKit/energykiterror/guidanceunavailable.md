@@ -17,7 +17,7 @@ An error that indicates the framework fails to provide guidance for a location.
 case guidanceUnavailable
 ```
 
-#### Discussion
+## Discussion
 
 This error can occur:
 

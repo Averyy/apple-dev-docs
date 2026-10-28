@@ -19,7 +19,7 @@ var preventsApplicationTerminationWhenModal: Bool { get set }
 @property BOOL preventsApplicationTerminationWhenModal;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the window prevents application termination when modal; otherwise, [`false`](../../Swift/false.md). The default value is [`true`](../../Swift/true.md).
 

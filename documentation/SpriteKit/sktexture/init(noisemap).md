@@ -24,11 +24,11 @@ convenience init(noiseMap: GKNoiseMap)
 + (instancetype) textureWithNoiseMap:(GKNoiseMap *) noiseMap;
 ```
 
-#### Return Value
+## Return Value
 
 A new texture based on the contents of the noise map.
 
-#### Discussion
+## Discussion
 
 The [`GKNoiseMap`](../../GameplayKit/gknoisemap.md) class encapsulates the output of procedural noise generation and processing. You use noise sources (the [`GKNoiseSource`](../../GameplayKit/gknoisesource.md) class cluster), noise objects (the [`GKNoise`](../../GameplayKit/gknoise.md) class), and noise maps to generate, process, and combine styles of noise, then use this method to create a graphical representation of the noise for use as a texture image in your game. Noise textures can be useful for imitating natural phenomena such as clouds, stone surfaces, and wood grain. You can also use noise textures as normal maps to make surfaces appear more natural under lighting.
 

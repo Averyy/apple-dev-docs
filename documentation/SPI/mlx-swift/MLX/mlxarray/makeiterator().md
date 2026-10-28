@@ -17,7 +17,7 @@ Return an iterator along axis 0:
 func makeIterator() -> some IteratorProtocol<MLXArray>
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 for row in array {

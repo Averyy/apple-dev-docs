@@ -4,7 +4,7 @@
 
 Displays an image that is usually large and detailed.
 
-#### Overview
+## Overview
 
 The `heroImg` element contains a link to an image that is to be displayed. This element is commonly used to display a picture of a product inside of a banner. Here’s an example of a `heroImg` element used to promote a movie.
 
@@ -12,7 +12,7 @@ The `heroImg` element contains a link to an image that is to be displayed. This 
 <heroImg src="path to images on your server/Car_Movie_720x1080.png" />
 ```
 
-##### Contained In
+### Contained In
 
 - [background](./background.md)
 - [banner](./banner.md)

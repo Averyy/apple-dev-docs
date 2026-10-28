@@ -5,11 +5,11 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 Foundation in macOS 10.14, iOS 12, watchOS 5, and tvOS 12 includes new features, API changes, and deprecations. For information about earlier releases, see [Foundation Release Notes for macOS 10.13 and iOS 11](https://developer.apple.com/library/archive/releasenotes/Foundation/RN-Foundation/index.html).
 
-##### Secure Data Archival and Unarchival
+### Secure Data Archival and Unarchival
 
 The [`NSKeyedArchiver`](../Foundation/nskeyedarchiver.md) and [`NSKeyedUnarchiver`](../Foundation/nskeyedunarchiver.md) classes have new initializers and helper methods that make it easier for you to enable secure coding for archival and unarchival. Each initializer or helper method replaces a corresponding member that’s now deprecated.
 
@@ -22,7 +22,7 @@ The [`NSKeyedArchiver`](../Foundation/nskeyedarchiver.md) and [`NSKeyedUnarchive
 
 For more information, see the WWDC 2018 session [Data You Can Trust](https://developer.apple.com/videos/play/wwdc2018/222/).
 
-##### Secure Value Transformer
+### Secure Value Transformer
 
 [`NSSecureUnarchiveFromDataTransformer`](../Foundation/nssecureunarchivefromdatatransformer.md) is a new subclass of [`ValueTransformer`](../Foundation/valuetransformer.md). It uses [`NSKeyedArchiver`](../Foundation/nskeyedarchiver.md) and [`NSKeyedUnarchiver`](../Foundation/nskeyedunarchiver.md) to archive and unarchive data by enabling `requiresSecureCoding`.
 
@@ -37,7 +37,7 @@ To transform top-level values of types other than the defaults listed above, sub
 
 The older [`unarchiveFromDataTransformerName`](../Foundation/nsvaluetransformername/unarchivefromdatatransformername.md) and [`keyedUnarchiveFromDataTransformerName`](../Foundation/nsvaluetransformername/keyedunarchivefromdatatransformername.md) values are now deprecated.
 
-##### NSSecureCoding Conformance
+### NSSecureCoding Conformance
 
 The [`NSPointerFunctions`](../Foundation/nspointerfunctions.md), [`NSMapTable`](../Foundation/nsmaptable.md), and [`NSHashTable`](../Foundation/nshashtable.md) classes now support limited conformance to the [`NSSecureCoding`](../Foundation/nssecurecoding.md) protocol. You can securely encode pointer-function consuming collections as long as you configure them with the following personalities and kinds of memory:
 
@@ -49,7 +49,7 @@ The [`NSPointerFunctions`](../Foundation/nspointerfunctions.md), [`NSMapTable`](
 
 > ❗ **Important**: Weak values won’t round-trip as expected unless you strongly reference them elsewhere during unarchival.
 
-##### Macro for Closed Enumerations
+### Macro for Closed Enumerations
 
 `NS_CLOSED_ENUM` is a new macro for declaring enumerations. You use it only for enumerations that are guaranteed to never gain an additional case. Usually you determine that there won’t be new cases because the enumeration you’re modeling represents a mathematically complete set. [`ComparisonResult`](../Foundation/comparisonresult.md) now adopts the `NS_CLOSED_ENUM` macro. It won’t ever gain additional cases.
 
@@ -57,7 +57,7 @@ The [`NSPointerFunctions`](../Foundation/nspointerfunctions.md), [`NSMapTable`](
 
 For information about `NS_CLOSED_ENUM` and choosing between it and other macros for grouping constants, see [Grouping Related Objective-C Constants](../Swift/grouping-related-objective-c-constants.md).
 
-##### UserDefaults
+### UserDefaults
 
 [`UserDefaults`](../Foundation/userdefaults.md) has several bug fixes and improvements:
 
@@ -65,17 +65,17 @@ For information about `NS_CLOSED_ENUM` and choosing between it and other macros 
 - Removed retains when adding an observer. Adding observers to an instance of [`UserDefaults`](../Foundation/userdefaults.md) using the [`addObserver(_:forKeyPath:options:context:)`](../ObjectiveC/nsobject-swift.class/addobserver%28_,forkeypath,options,context%29.md) method unintentionally retained it, unlike all other uses of key-value observing. This has been corrected, and normal Cocoa memory management rules are now followed.
 - Fixed key-value observing bug in [`UserDefaults`](../Foundation/userdefaults.md). Reading defaults on one thread while another thread set defaults could nondeterministically send key-value observing notifications on both threads, rather than just the thread doing the set operation. This is now fixed.
 
-##### On-Demand Resources
+### On-Demand Resources
 
 [`NSBundleResourceRequest`](../Foundation/nsbundleresourcerequest.md) no longer throws exceptions when encountering certain kinds of internal errors. Instead, it returns an error in the error argument of the completion handler of the [`beginAccessingResources(completionHandler:)`](../Foundation/nsbundleresourcerequest/beginaccessingresources%28completionhandler%29.md) method. The error might include the [`NSFileReadUnknownError`](../Foundation/nsfilereadunknownerror-swift.var.md) and `NSXPCConnectionInterrupted` errors in addition to [`NSUserCancelledError`](../Foundation/nsusercancellederror-swift.var.md) and network-related errors.
 
 If your app encounters an error when using [`NSBundleResourceRequest`](../Foundation/nsbundleresourcerequest.md), request the resource again or display a prompt to your user to try again.
 
-##### Thread Safety of Bundles
+### Thread Safety of Bundles
 
 The [`principalClass`](../Foundation/bundle/principalclass.md) property on [`Bundle`](../Foundation/bundle.md) includes new thread-safety improvements. Accessing the property blocks if other threads are in the process of loading the bundle. This action allows the property to return the correct value in all cases.
 
-##### CFMessagePort
+### CFMessagePort
 
 The [`CFMessagePortSetName(_:_:)`](../CoreFoundation/cfmessageportsetname%28_,_%29.md) function doesn’t do anything in apps linked on or after macOS 10.14, iOS 12, watchOS 5, and tvOS 12. This API will be deprecated in a future release.
 

@@ -23,7 +23,7 @@ class ABUnknownPersonViewController
 @interface ABUnknownPersonViewController : UIViewController
 ```
 
-#### Overview
+## Overview
 
 Unknown-person view controllers display contact information that can be saved to the Address Book database. From instances of this class, users may also initiate standard actions, such as:
 
@@ -36,7 +36,7 @@ Performing any of the standard actions may result in your application being move
 
 > ❗ **Important**:  Unknown-person view controllers must be used with a navigation controller in order to function properly.
 
-##### Subclassing
+### Subclassing
 
 The `ABUnknownPersonViewController` class does not support subclassing.
 

@@ -21,7 +21,7 @@ init(format: NFCTypeNameFormat, type: Data, identifier: Data, payload: Data, chu
 - (instancetype) initWithFormat:(NFCTypeNameFormat) format type:(NSData *) type identifier:(NSData *) identifier payload:(NSData *) payload chunkSize:(size_t) chunkSize;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized payload record object.
 

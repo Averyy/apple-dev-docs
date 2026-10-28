@@ -24,7 +24,7 @@ convenience init(identifier: String, actions: [UNNotificationAction], intentIden
 + (instancetype) categoryWithIdentifier:(NSString *) identifier actions:(NSArray<UNNotificationAction *> *) actions intentIdentifiers:(NSArray<NSString *> *) intentIdentifiers options:(UNNotificationCategoryOptions) options;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized category object.
 

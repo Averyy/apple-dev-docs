@@ -21,11 +21,11 @@ Creates a encryption sequential input stream.
 static func encryptionStream(writingTo encryptedStream: ArchiveByteStream, encryptionContext context: ArchiveEncryptionContext, flags: ArchiveFlags = [], threadCount: Int = 0) -> ArchiveByteStream?
 ```
 
-#### Return Value
+## Return Value
 
 A new archive byte stream.
 
-#### Discussion
+## Discussion
 
 The operation reads decompressed and decrypted data from the supplied archive byte stream, `encryptedStream`.
 

@@ -15,11 +15,11 @@ Set the vnode associated with a buffer.
 void buf_setvnode(buf_t bp, vnode_t vp);
 ```
 
-#### Return Value
+## Return Value
 
 void.
 
-#### Discussion
+## Discussion
 
 This call need not be used on traditional buffers; it is for use with iobufs.
 

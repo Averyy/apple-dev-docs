@@ -25,7 +25,7 @@ convenience init(set: Set<AnyHashable>)
 - (instancetype) initWithSet:(NSSet<id> *) set;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized objects set containing the objects from `set`. The returned set might be different than the original receiver.
 

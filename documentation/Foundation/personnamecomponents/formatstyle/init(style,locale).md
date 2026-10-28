@@ -21,7 +21,7 @@ Creates an instance using the provided format style and locale.
 init(style: PersonNameComponents.FormatStyle.Style = .medium, locale: Locale = .autoupdatingCurrent)
 ```
 
-#### Discussion
+## Discussion
 
 Customize the person name components format style by providing a style and a locale.
 

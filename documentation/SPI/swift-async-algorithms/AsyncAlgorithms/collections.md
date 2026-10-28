@@ -8,19 +8,19 @@ framework: "swift-async-algorithms/AsyncAlgorithms"
 **Framework**: swift-async-algorithms/AsyncAlgorithms  
 **Role**: Article
 
-#### Overview
+## Overview
 
 - Author(s): [Philippe Hausler](https://github.com/phausler)
 
 [ [Source](https://github.com/apple/swift-async-algorithms/blob/main/Sources/AsyncAlgorithms/Dictionary.swift), [Source](https://github.com/apple/swift-async-algorithms/blob/main/Sources/AsyncAlgorithms/RangeReplaceableCollection.swift), [Source](https://github.com/apple/swift-async-algorithms/blob/main/Sources/AsyncAlgorithms/SetAlgebra.swift) | [Tests](https://github.com/apple/swift-async-algorithms/blob/main/Tests/AsyncAlgorithmsTests/TestDictionary.swift), [Tests](https://github.com/apple/swift-async-algorithms/blob/main/Tests/AsyncAlgorithmsTests/TestRangeReplaceableCollection.swift), [Tests](https://github.com/apple/swift-async-algorithms/blob/main/Tests/AsyncAlgorithmsTests/TestSetAlgebra.swift), ]
 
-#### Introduction
+## Introduction
 
 `Array`, `Dictionary` and `Set` are some of the most commonly-used data structures for storing collections of elements. Having a way to transition from an `AsyncSequence` to a collection is not only a useful shorthand but a powerful way of expressing direct intent for how to consume an `AsyncSequence`.
 
 This type of functionality can be useful for examples and testing, and also for interfacing with existing APIs that expect a fully-formed collection before processing it.
 
-#### Proposed Solution
+## Proposed Solution
 
 Three categories of initializers will be added to provide initializers for those three primary types: `Array`, `Dictionary` and `Set`. However these initializers can be written in a generic fashion such that they can apply to all similar collections.
 
@@ -69,7 +69,7 @@ extension SetAlgebra {
 }
 ```
 
-#### Detailed Design
+## Detailed Design
 
 Each of the initializers is intended for uses where the `AsyncSequence` being used for initialization is known to be finite. Common uses include:
 
@@ -79,29 +79,29 @@ Each of the initializers is intended for uses where the `AsyncSequence` being us
 
 Each of the initializers will use the `for`-`await`-`in`/`for`-`try`-`await`-`in` syntax to iterate the sequence directly in the initializer. In addition each initializer relies on the `AsyncSequence` being passed in to properly respect cancellation. In the cases where cancellation is a potential, developers should be ready to either check immediately or be ready for initialization based on a partial sequence, depending on the behavior of the `AsyncSequence` being used.
 
-##### RangeReplaceableCollection
+### RangeReplaceableCollection
 
 ```swift
 let contents = try await Data(URL(fileURLWithPath: "/tmp/example.bin").resourceBytes)
 ```
 
-##### Dictionary
+### Dictionary
 
 ```swift
 let table = await Dictionary(uniqueKeysWithValues: zip(keys, values))
 ```
 
-##### SetAlgebra
+### SetAlgebra
 
 ```swift
 let allItems = await Set(items.prefix(10))
 ```
 
-#### Alternatives Considered
+## Alternatives Considered
 
 The spelling of these initializers could be expressed as a trailing conversion. However, that can lead to hard-to-read chains of operations. Functionally these all belong to the `reduce` family of functions, but due to source readability concerns they are more ergonomic for understanding what the code does by using the initializer patterns.
 
-#### Credits/Inspiration
+## Credits/Inspiration
 
 The direct inspiration for each initialization is from their standard library counterparts.
 

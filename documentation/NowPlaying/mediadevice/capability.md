@@ -22,7 +22,7 @@ struct Capability
 
 - [Publishing remote media sessions](../publishing-remote-media-sessions.md)
 
-#### Overview
+## Overview
 
 Use this to specify what control operations a device supports. The system uses this information to enable or disable device-specific controls in the interface.
 

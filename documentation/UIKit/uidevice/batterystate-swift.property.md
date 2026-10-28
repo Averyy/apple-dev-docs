@@ -22,7 +22,7 @@ var batteryState: UIDevice.BatteryState { get }
 @property (nonatomic, readonly) UIDeviceBatteryState batteryState;
 ```
 
-#### Discussion
+## Discussion
 
 The value for [`batteryState`](./batterystate-swift.property.md) is one of the constants in [`UIDevice.BatteryState`](./batterystate-swift.enum.md).
 

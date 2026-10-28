@@ -22,7 +22,7 @@ var documentState: UIDocument.State { get }
 @property (readonly) UIDocumentState documentState;
 ```
 
-#### Discussion
+## Discussion
 
 When document state changes, the [`UIDocument`](../uidocument.md) object stores a constant identifying the new state in this property. See the [`UIDocument.State`](./state.md) enum for descriptions of these constants. To receive notifications about changes in document state, observe the [`stateChangedNotification`](./statechangednotification.md) notification.
 

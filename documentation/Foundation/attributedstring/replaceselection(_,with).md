@@ -21,7 +21,7 @@ Replace the selection with new attributed content.
 mutating func replaceSelection(_ selection: inout AttributedTextSelection, with newContent: some AttributedStringProtocol)
 ```
 
-#### Discussion
+## Discussion
 
 In the case the selection is an insertion point, the `newContent` gets inserted at the caret location and the caret is moved to after the new content.
 

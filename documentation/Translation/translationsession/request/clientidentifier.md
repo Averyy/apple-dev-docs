@@ -18,7 +18,7 @@ An optional unique identifier to associate a translation request with its respon
 var clientIdentifier: String?
 ```
 
-#### Discussion
+## Discussion
 
 When you set this identifier, it returns the same value in the corresponding [`TranslationSession.Response`](../response.md).
 

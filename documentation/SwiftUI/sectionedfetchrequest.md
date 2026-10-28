@@ -22,7 +22,7 @@ A property wrapper type that retrieves entities, grouped into sections, from a C
 @propertyWrapper @preconcurrency struct SectionedFetchRequest<SectionIdentifier, Result> where SectionIdentifier : Hashable, Result : NSFetchRequestResult
 ```
 
-#### Overview
+## Overview
 
 Use a `SectionedFetchRequest` property wrapper to declare a [`SectionedFetchResults`](./sectionedfetchresults.md) property that provides a grouped collection of Core Data managed objects to a SwiftUI view. If you don’t need sectioning, use [`FetchRequest`](./fetchrequest.md) instead.
 

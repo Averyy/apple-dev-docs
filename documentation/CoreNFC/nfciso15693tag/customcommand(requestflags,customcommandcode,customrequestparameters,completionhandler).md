@@ -26,7 +26,7 @@ func customCommand(requestFlags flags: NFCISO15693RequestFlag, customCommandCode
 - (void) customCommandWithRequestFlag:(NFCISO15693RequestFlag) flags customCommandCode:(NSInteger) customCommandCode customRequestParameters:(NSData *) customRequestParameters completionHandler:(void (^)(NSData *customResponseParameters, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method inserts the [`icManufacturerCode`](./icmanufacturercode.md) after the command byte before appending the `customRequestParameters` when constructing the data packet that the method sends to the tag.
 

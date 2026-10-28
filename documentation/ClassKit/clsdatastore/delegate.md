@@ -23,7 +23,7 @@ weak var delegate: (any CLSDataStoreDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<CLSDataStoreDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The data store delegate creates contexts when the data store receives a request for a context it doesn’t already have. The data store calls on its delegate to build the missing context.
 

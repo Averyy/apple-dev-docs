@@ -22,7 +22,7 @@ class let touchBarGetInfoTemplateName: String
 extern NSImageName const NSImageNameTouchBarGetInfoTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for get info](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2793524@2x.png)
 

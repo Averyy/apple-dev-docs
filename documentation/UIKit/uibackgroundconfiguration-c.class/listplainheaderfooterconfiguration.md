@@ -19,11 +19,11 @@ Creates the default configuration you use to style a plain list header or footer
 + (instancetype) listPlainHeaderFooterConfiguration;
 ```
 
-#### Return Value
+## Return Value
 
 The default configuration for a plain list header or footer.
 
-#### Discussion
+## Discussion
 
 > **Deprecated**: Use [`listHeader()`](../uibackgroundconfiguration-swift.struct/listheader%28%29.md) or [`listFooter()`](../uibackgroundconfiguration-swift.struct/listfooter%28%29.md) instead.
 

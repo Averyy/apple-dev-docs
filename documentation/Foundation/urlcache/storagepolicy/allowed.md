@@ -25,7 +25,7 @@ case allowed
 NSURLCacheStorageAllowed
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  iOS prior to version 5 ignores this cache policy, and instead treats it as [`URLCache.StoragePolicy.allowedInMemoryOnly`](./allowedinmemoryonly.md).
 

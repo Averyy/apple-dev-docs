@@ -19,7 +19,7 @@ The contact’s names as a set of structured name components.
 var nameComponents: [PersonNameComponents]
 ```
 
-#### Discussion
+## Discussion
 
 Specify each distinct name as a separate [`PersonNameComponents`](../../Foundation/personnamecomponents.md) type in the array.
 

@@ -21,7 +21,7 @@ An animation that applies a transitory scaling effect, or bounce, to the layers 
 + (instancetype) effect;
 ```
 
-#### Return Value
+## Return Value
 
 A new instance of the bounce effect options.
 

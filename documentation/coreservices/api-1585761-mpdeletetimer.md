@@ -15,11 +15,11 @@ Removes a timer.
 OSStatus MPDeleteTimer(MPTimerID timerID);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./carbon_core/multiprocessing_services.md#1663965).
 
-#### Discussion
+## Discussion
 
 After deletion, the timer ID becomes invalid, and all internal resources associated with the timer are reclaimed.
 

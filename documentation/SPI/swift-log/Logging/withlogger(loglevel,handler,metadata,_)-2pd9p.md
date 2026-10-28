@@ -29,11 +29,11 @@ func withLogger<Result, Failure>(logLevel: Logger.Level? = nil, handler: (any Lo
 
 - [004: Testing code that logs](./api-004-testinglogging.md)
 
-#### Return Value
+## Return Value
 
 The value returned by `operation`.
 
-#### Discussion
+## Discussion
 
 Unlike [`withLogger(mergingMetadata:_:)`](./withlogger%28mergingmetadata,_%29-2c7dy.md), which layers metadata on top of the inherited base, this overload **replaces** the base metadata when `metadata` is non-nil. Pass `metadata: [:]` to wipe the inherited metadata entirely for the scope.
 

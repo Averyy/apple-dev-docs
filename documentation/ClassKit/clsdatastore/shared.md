@@ -23,7 +23,7 @@ class var shared: CLSDataStore { get }
 @property (class, nonatomic, strong, readonly) CLSDataStore * shared;
 ```
 
-#### Discussion
+## Discussion
 
 When working with the data store, always use this shared instance. Don’t create a new instance.
 

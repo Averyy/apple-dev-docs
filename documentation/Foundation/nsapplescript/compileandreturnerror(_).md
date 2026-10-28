@@ -20,7 +20,7 @@ func compileAndReturnError(_ errorInfo: AutoreleasingUnsafeMutablePointer<NSDict
 - (BOOL) compileAndReturnError:(NSDictionary<NSString *,id> **) errorInfo;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) for success or if the script was already compiled, [`false`](../../Swift/false.md) otherwise.
 

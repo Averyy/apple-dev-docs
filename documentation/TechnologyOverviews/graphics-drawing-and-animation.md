@@ -6,6 +6,10 @@ Create 2D and 3D content for your app, and learn how to animate and print that c
 
 When you want to customize your app’s appearance in ways the standard system views don’t support, draw the content yourself using the system’s drawing technologies. Most apps can use a combination of images, text, and standard views to display their content. Custom drawing lets you create any content you want and update it dynamically. A digital painting app might use custom drawing to reflect mouse or touch input, while a game might draw custom worlds in two or three dimensions.
 
+## Images, camera, and photos
+
+[Read about images, camera, and photos](./images-camera-and-photos.md)
+
 Images provide a simple way to display custom content without drawing it dynamically at runtime. Use images in your interface for decoration or to show custom content. Access a person’s photo library with permission and include their photos in the content you display. Capture or create images on the fly and save them to disk or access their pixel information and metadata.
 
 - Load images and photos from disk and display them in your interface.
@@ -16,9 +20,9 @@ Images provide a simple way to display custom content without drawing it dynamic
 
 ![](https://developer.apple.com/tutorials/images/com.apple.TechnologyOverviews/images-cameras-and-photos.png)
 
-#### Images, camera, and photos
+## Text display
 
-[Read about images, camera, and photos](./images-camera-and-photos.md)
+[Read about text](./text-display.md)
 
 Incorporate text into your interface to describe your content in a person’s native language. Manage your app’s text as Unicode characters and support both left-to-right and right-to-left layouts. Display text in your interface using the system-provided text views or create your own custom text view to perform advanced layout of your content.
 
@@ -29,9 +33,9 @@ Incorporate text into your interface to describe your content in a person’s na
 
 ![](https://developer.apple.com/tutorials/images/com.apple.TechnologyOverviews/text-display.png)
 
-#### Text display
+## Custom symbols
 
-[Read about text](./text-display.md)
+[Read about custom symbols](./custom-sf-symbols.md)
 
 SF Symbols provides a library of ready-made symbol images, and lets you create your own custom symbols with the same behaviors. Display your custom symbols as user interface elements and inline with text. Define and use rendering modes, variable color, and animations with annotations in the SF Symbols app. To learn more, read [Annotating custom symbols](./annotating-sf-symbols.md).
 
@@ -42,9 +46,9 @@ SF Symbols provides a library of ready-made symbol images, and lets you create y
 
 ![](https://developer.apple.com/tutorials/images/com.apple.TechnologyOverviews/sf-symbols.png)
 
-#### Custom symbols
+## Drawing and printing
 
-[Read about custom symbols](./custom-sf-symbols.md)
+[Read about drawing and printing](./drawing-and-printing.md)
 
 Perform custom drawing in your app for content that changes dynamically or in ways you can’t predict at design time. Use system types to configure the drawing environment, issue drawing commands, and composite the results in one of your views. Configure your app for printing and use your existing drawing code to generate the content for an attached printer.
 
@@ -55,9 +59,9 @@ Perform custom drawing in your app for content that changes dynamically or in wa
 
 ![](https://developer.apple.com/tutorials/images/com.apple.TechnologyOverviews/drawing-and-printing.png)
 
-#### Drawing and printing
+## 3D content
 
-[Read about drawing and printing](./drawing-and-printing.md)
+[Read about 3D content](./api-3d-content.md)
 
 Build and animate 3D content entirely on your own or with the help of system technologies. Give your content its appearance using custom materials and textures you define in advance. When performance matters most, build your own rendering engine to communicate directly with the GPU.
 
@@ -68,9 +72,9 @@ Build and animate 3D content entirely on your own or with the help of system tec
 
 ![](https://developer.apple.com/tutorials/images/com.apple.TechnologyOverviews/3d-content.png)
 
-#### 3D content
+## Animations
 
-[Read about 3D content](./api-3d-content.md)
+[Read about animations](./animations.md)
 
 Animate items in your interface to make them feel more lively or to provide feedback about what your app is doing. Keep people oriented to where they are in your app’s content by animating transitions between different sets of views. Customize the parameters and timing of your animations and synchronize them with animations in other parts of your interface.
 
@@ -80,10 +84,6 @@ Animate items in your interface to make them feel more lively or to provide feed
 - Animate everything in your interface using Metal.
 
 ![](https://developer.apple.com/tutorials/images/com.apple.TechnologyOverviews/animations.png)
-
-#### Animations
-
-[Read about animations](./animations.md)
 
 ## Topics
 

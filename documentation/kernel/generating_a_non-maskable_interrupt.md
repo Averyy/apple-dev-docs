@@ -5,13 +5,13 @@
 
 Interrupt the kernel on a target Mac and attach a remote debugger to it.
 
-#### Overview
+## Overview
 
 Debugging many types of kernel-level problems requires a second Mac computer to run the debugger. On your target Mac, configure the `debug` boot arg with the options you need to support non-maskable interrupts (NMIs). The `DB_NMI` (`0x4`) flag causes the kernel on the target Mac to wait for a debuger to attach when an NMI occurs; add other flags as needed. After an NMI occurs, use the debugger on your second Mac to examine the system and diagnose any issues.
 
 For information about how to configure your Mac to debug kernel processes, sign in and download the Kernel Debug Kit from [https://developer.apple.com/download/more/](https://developer.apple.com/download/more/). 
 
-##### Trigger a Non-Maskable Interrupt Manually
+### Trigger a Non-Maskable Interrupt Manually
 
 The following table lists the keys you press to trigger an NMI on different types of Mac. 
 
@@ -23,7 +23,7 @@ The following table lists the keys you press to trigger an NMI on different type
 
 For information about which Intel-based Mac computers have the Apple T2 Security Chip, see [About the Apple T2 Security Chip](https://support.apple.com/en-us/HT208862).
 
-##### Configure a One-Button NMI
+### Configure a One-Button NMI
 
 To trigger an NMI manually using only the target Mac’s power button, add the `DB_NMI_BTN_ENA` (`0x8000`) flag to the `debug` boot arg. Using only the power button makes it possible to trigger an NMI early in the Mac’s boot sequence. For example, you can trigger an NMI before the system loads the USB keyboard driver, or trigger one on systems with no keyboard at all. Combine this flag with the `DB_NMI` flag and set the boot args on your target Mac as shown in the following example:
 

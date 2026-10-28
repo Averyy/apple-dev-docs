@@ -22,11 +22,11 @@ Binds the memory to the specified type and returns a typed pointer to the bound 
 func bindMemory<T>(to type: T.Type, capacity count: Int) -> UnsafePointer<T> where T : ~Copyable
 ```
 
-#### Return Value
+## Return Value
 
 A typed pointer to the newly bound memory. The memory in this region is bound to `T`, but has not been modified in any other way. The number of bytes in this region is `count * MemoryLayout<T>.stride`.
 
-#### Discussion
+## Discussion
 
 Use the `bindMemory(to:capacity:)` method to bind the memory referenced by this pointer to the type `T`. The memory must be uninitialized or initialized to a type that is layout compatible with `T`. If the memory is uninitialized, it is still uninitialized after being bound to `T`.
 

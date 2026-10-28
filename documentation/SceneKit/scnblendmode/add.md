@@ -25,7 +25,7 @@ case add
 SCNBlendModeAdd
 ```
 
-#### Discussion
+## Discussion
 
 This mode results in a brightening effect that can be useful for making objects appear to glow relative to their surroundings.
 

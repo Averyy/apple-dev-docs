@@ -40,17 +40,6 @@ and is used to separate multiple statements if they appear on the same line.
 > *statement* → *compiler-control-statement* \
 > *statements* → *statement* *statements*_?_
 
-<!--
-  NOTE: Removed semicolon-statement as syntactic category,
-  because, according to Doug, they're not really statements.
-  For example, you can't have
-      if foo { ; }
-  but you should be able to if it's truly considered a statement.
-  The semicolon isn't even required for the compiler; we just added
-  rules that require them in some places to enforce a certain amount
-  of readability.
--->
-
 ## Loop Statements
 
 Loop statements allow a block of code to be executed repeatedly,
@@ -339,18 +328,6 @@ only if it's a tuple that contains two elements of the same value, such as `(1, 
 case let (x, y) where x == y:
 ```
 
-<!--
-  - test: `switch-case-statement`
-
-  ```swifttest
-  >> switch (1, 1) {
-  -> case let (x, y) where x == y:
-  >> break
-  >> default: break
-  >> }
-  ```
--->
-
 As the above example shows, patterns in a case can also bind constants
 using the `let` keyword (they can also bind variables using the `var` keyword).
 These constants (or variables) can then be referenced in a corresponding `where` clause
@@ -359,11 +336,6 @@ If the case contains multiple patterns that match the control expression,
 all of the patterns must contain the same constant or variable bindings,
 and each bound variable or constant must have the same type
 in all of the case's patterns.
-
-<!--
-  The discussion above about multi-pattern cases
-  matches discussion of multi-pattern catch under Do Statement.
--->
 
 A `switch` statement can also include a default case, introduced by the `default` keyword.
 The code within a default case is executed only if no other cases match the control expression.
@@ -378,34 +350,6 @@ the order in which they appear in source code.
 As a result, if multiple cases contain patterns that evaluate to the same value,
 and thus can match the value of the control expression,
 the program executes only the code within the first matching case in source order.
-
-<!--
-  - test: `switch-case-with-multiple-patterns`
-
-  ```swifttest
-  >> let tuple = (1, 1)
-  >> switch tuple {
-  >>     case (let x, 5), (let x, 1): print(x)
-  >>     default: print(2)
-  >> }
-  << 1
-  ```
--->
-
-<!--
-  - test: `switch-case-with-multiple-patterns-err`
-
-  ```swifttest
-  >> let tuple = (1, 1)
-  >> switch tuple {
-  >>     case (let x, 5), (let x as Any, 1): print(1)
-  >>     default: print(2)
-  >> }
-  !$ error: pattern variable bound to type 'Any', expected type 'Int'
-  !! case (let x, 5), (let x as Any, 1): print(1)
-  !!                       ^
-  ```
--->
 
 #### Switch Statements Must Be Exhaustive
 
@@ -469,25 +413,6 @@ case .suppressed:
 // Prints "Generate a default mirror for all ancestor classes."
 ```
 
-<!--
-  - test: `unknown-case`
-
-  ```swifttest
-  -> let representation: Mirror.AncestorRepresentation = .generated
-  -> switch representation {
-     case .customized:
-         print("Use the nearest ancestor’s implementation.")
-     case .generated:
-         print("Generate a default mirror for all ancestor classes.")
-     case .suppressed:
-         print("Suppress the representation of all ancestor classes.")
-  -> @unknown default:
-         print("Use a representation that was unknown when this code was compiled.")
-     }
-  <- Generate a default mirror for all ancestor classes.
-  ```
--->
-
 #### Execution Does Not Fall Through Cases Implicitly
 
 After the code within a matched case has finished executing,
@@ -521,12 +446,6 @@ see [Fallthrough Statement](Statements.md#Fallthrough-Statement) below.
 > *switch-elseif-directive-clause* → *elseif-directive* *compilation-condition* *switch-cases*_?_ \
 > *switch-else-directive-clause* → *else-directive* *switch-cases*_?_
 
-<!--
-  The grammar above uses attributes-OPT to match what's used
-  in all other places where attributes are allowed,
-  although as of Swift 4.2 only a single attribute (@unknown) is allowed.
--->
-
 ## Labeled Statement
 
 You can prefix a loop statement, an `if` statement, a `switch` statement,
@@ -543,22 +462,6 @@ You can nest labeled statements, but the name of each statement label must be un
 For more information and to see examples
 of how to use statement labels,
 see [Labeled Statements](../LanguageGuide/ControlFlow.md#Labeled-Statements) in [Control Flow](../LanguageGuide/ControlFlow.md).
-
-<!--
-  - test: `backtick-identifier-is-legal-label`
-
-  ```swifttest
-  -> var i = 0
-  -> `return`: while i < 100 {
-         i += 1
-         if i == 10 {
-             break `return`
-         }
-     }
-  -> print(i)
-  << 10
-  ```
--->
 
 > Grammar of a labeled statement:
 >
@@ -702,11 +605,6 @@ before it's returned to the calling function or method.
 > Note: As described in [Failable Initializers](Declarations.md#Failable-Initializers), a special form of the `return` statement (`return nil`)
 > can be used in a failable initializer to indicate initialization failure.
 
-<!--
-  TODO: Discuss how the conversion takes place and what is allowed to be converted
-  in the (yet to be written) chapter on subtyping and type conversions.
--->
-
 When a `return` statement isn't followed by an expression,
 it can be used only to return from a function or method that doesn't return a value
 (that is, when the return type of the function or method is `Void` or `()`).
@@ -787,26 +685,6 @@ f(x: 5)
 // Prints "First defer".
 ```
 
-<!--
-  ```swifttest
-  -> func f(x: Int) {
-    defer { print("First defer") }
-
-    if x < 10 {
-      defer { print("Second defer") }
-      print("End of if")
-    }
-
-    print("End of function")
-  }
-  f(x: 5)
-  <- End of if
-  <- Second defer
-  <- End of function
-  <- First defer
-  ```
--->
-
 In the code above,
 the `defer` in the `if` statement
 executes before the `defer` declared in the function `f`
@@ -830,20 +708,6 @@ f()
 // Prints "Second defer".
 // Prints "First defer".
 ```
-
-<!--
-  ```swifttest
-  -> func f() {
-         defer { print("First defer") }
-         defer { print("Second defer") }
-         print("End of function")
-     }
-     f()
-  <- End of function
-  <- Second defer
-  <- First defer
-  ```
--->
 
 The statements in the `defer` statement can't
 transfer program control outside of the `defer` statement.
@@ -944,11 +808,6 @@ all of the patterns must contain the same constant or variable bindings,
 and each bound variable or constant must have the same type
 in all of the `catch` clause's patterns.
 
-<!--
-  The discussion above of multi-pattern catch
-  matches the discussion of multi-pattern case under Switch Statement.
--->
-
 To ensure that an error is handled,
 use a `catch` clause with a pattern that matches all errors,
 such as a wildcard pattern (`_`).
@@ -1016,27 +875,6 @@ conditions listed in the table below.
 | `canImport()` | A module name |
 | `targetEnvironment()` | `simulator`, `macCatalyst` |
 
-<!--
-  The lists above match <https://www.swift.org/platform-support/>
-  and include only platforms with *official* support.
-  For the full list of operating systems and architectures,
-  including those with unofficial or experimental support,
-  see the values of
-  SupportedConditionalCompilationOSs and SupportedConditionalCompilationArches
-  in the file lib/Basic/LangOptions.cpp.
-  The compiler also accepts pretty much any string --
-  for example "#if os(toaster)" compiles just fine,
-  but Swift doesn't actually support running on a toaster oven --
-  so don't rely on that when checking possible os/arch values.
--->
-
-<!--
-  The target environment "UIKitForMac"
-  is understood by the compiler as a synonym for "macCatalyst",
-  but that spelling is marked "Must be removed" outside of a few places,
-  so it's omitted from the table above.
--->
-
 The version number for the `swift()` and `compiler()` platform conditions
 consists of a major number, optional minor number, optional patch number, and so on,
 with a dot (`.`) separating each part of the version number.
@@ -1064,28 +902,6 @@ print("Compiled with the Swift 5 compiler or later in a Swift mode earlier than 
 // Prints "Compiled with the Swift 5 compiler or later in a Swift mode earlier than 5".
 ```
 
-<!--
-  ```swifttest
-  -> #if compiler(>=5)
-     print("Compiled with the Swift 5 compiler or later")
-     #endif
-     #if swift(>=4.2)
-     print("Compiled in Swift 4.2 mode or later")
-     #endif
-     #if compiler(>=5) && swift(<5)
-     print("Compiled with the Swift 5 compiler or later in a Swift mode earlier than 5")
-     #endif
-  <- Compiled with the Swift 5 compiler or later
-  <- Compiled in Swift 4.2 mode or later
-  // Prints "Compiled with the Swift 5 compiler or later in a Swift mode earlier than 5".
-  ```
--->
-
-<!--
-  That testcode is cheating by explicitly printing the third line of output,
-  since it's not actually running in Swift 4.2 mode.
--->
-
 The argument for the `canImport()` platform condition
 is the name of a module that may not be present on all platforms.
 The module can include periods (`.`) in its name.
@@ -1094,44 +910,6 @@ but doesn't actually import it.
 If the module is present, the platform condition returns `true`;
 otherwise, it returns `false`.
 
-<!--
-  - test: `canImport_A, canImport`
-
-  ```swifttest
-  >> public struct SomeStruct {
-  >>     public init() { }
-  >> }
-  ```
--->
-
-<!--
-  - test: `canImport_A.B, canImport`
-
-  ```swifttest
-  >> public struct AnotherStruct {
-  >>     public init() { }
-  >> }
-  ```
--->
-
-<!--
-  - test: `canImport`
-
-  ```swifttest
-  >> import canImport_A
-  >> let s = SomeStruct()
-  >> #if canImport(canImport_A)
-  >> #else
-  >> #error("Can't import A")
-  >> #endif
-
-  >> #if canImport(canImport_A.B)
-  >> #else
-  >> #error("Can't import A.B")
-  >> #endif
-  ```
--->
-
 The `targetEnvironment()` platform condition
 returns `true` when code is being compiled for the specified environment;
 otherwise, it returns `false`.
@@ -1139,60 +917,6 @@ otherwise, it returns `false`.
 > Note: The `arch(arm)` platform condition doesn't return `true` for ARM 64 devices.
 > The `arch(i386)` platform condition returns `true`
 > when code is compiled for the 32–bit iOS simulator.
-
-<!--
-  - test: `pound-if-swift-version`
-
-  ```swifttest
-  -> #if swift(>=2.1)
-         print(1)
-     #endif
-  << 1
-  -> #if swift(>=2.1) && true
-         print(2)
-     #endif
-  << 2
-  -> #if swift(>=2.1) && false
-         print(3)
-     #endif
-  -> #if swift(>=2.1.9.9.9.9.9.9.9.9.9)
-         print(5)
-     #endif
-  << 5
-  ```
--->
-
-<!--
-  - test: `pound-if-swift-version-err`
-
-  ```swifttest
-  -> #if swift(>= 2.1)
-         print(4)
-     #endif
-  !$ error: unary operator cannot be separated from its operand
-  !! #if swift(>= 2.1)
-  !!           ^ ~
-  !!-
-  ```
--->
-
-<!--
-  - test: `pound-if-compiler-version`
-
-  ```swifttest
-  -> #if compiler(>=4.2)
-         print(1)
-     #endif
-  << 1
-  -> #if compiler(>=4.2) && true
-         print(2)
-     #endif
-  << 2
-  -> #if compiler(>=4.2) && false
-         print(3)
-     #endif
-  ```
--->
 
 You can combine and negate compilation conditions using the logical operators
 `&&`, `||`, and `!`
@@ -1264,20 +988,6 @@ see [Explicit Member Expression](Expressions.md#Explicit-Member-Expression).
 > *swift-version* → *decimal-digits* *swift-version-continuation*_?_ \
 > *swift-version-continuation* → **`.`** *decimal-digits* *swift-version-continuation*_?_ \
 > *environment* → **`simulator`** | **`macCatalyst`**
-
-<!--
-  Testing notes:
-
-  !!true doesn't work but !(!true) does -- this matches normal expressions
-  #if can be nested, as expected
-
-  Also, the body of a conditional compilation block contains *zero* or more statements.
-  Thus, this is allowed:
-      #if
-      #elseif
-      #else
-      #endif
--->
 
 ### Line Control Statement
 
@@ -1388,72 +1098,3 @@ It has the same meaning as the `*` argument in an availability condition.
 > *platform-version* → *decimal-digits* \
 > *platform-version* → *decimal-digits* **`.`** *decimal-digits* \
 > *platform-version* → *decimal-digits* **`.`** *decimal-digits* **`.`** *decimal-digits*
-
-<!--
-  If you need to add a new platform to this list,
-  you probably need to update the list under @available too.
--->
-
-<!--
-  - test: `pound-available-platform-names`
-
-  ```swifttest
-  >> if #available(iOS 1, iOSApplicationExtension 1,
-  >>               macOS 1, macOSApplicationExtension 1,
-  >>               macCatalyst 1, macCatalystApplicationExtension 1,
-  >>               watchOS 1, watchOSApplicationExtension 1,
-  >>               tvOS 1, tvOSApplicationExtension 1,
-  >>               visionOS 1, visionOSApplicationExtension 1, *) {
-  >>     print("a")
-  >> } else {
-  >>     print("b")
-  >> }
-  >> if #available(madeUpPlatform 1, *) {
-  >>     print("c")
-  >> }
-  >> if #unavailable(fakePlatform 1) {
-  >>     print("d")
-  >> } else {
-  >>     print("dd")
-  >> }
-  !$ warning: unrecognized platform name 'madeUpPlatform'
-  !$ if #available(madeUpPlatform 1, *) {
-  !$               ^
-  !$ warning: unrecognized platform name 'fakePlatform'
-  !$ if #unavailable(fakePlatform 1) {
-  !$                 ^
-  << a
-  << c
-  << dd
-  ```
--->
-
-<!--
-  - test: `empty-availability-condition`
-
-  ```swifttest
-  >> if #available(*) { print("1") }
-  << 1
-  ```
--->
-
-<!--
-  - test: `empty-unavailability-condition`
-
-  ```swifttest
-  >> if #unavailable() { print("2") }
-  !$ error: expected platform name
-  !$ if #unavailable() { print("2") }
-  !$                ^
-  ```
--->
-
-<!--
-This source file is part of the Swift.org open source project
-
-Copyright (c) 2014 - 2022 Apple Inc. and the Swift project authors
-Licensed under Apache License v2.0 with Runtime Library Exception
-
-See https://swift.org/LICENSE.txt for license information
-See https://swift.org/CONTRIBUTORS.txt for the list of Swift project authors
--->

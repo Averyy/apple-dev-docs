@@ -28,7 +28,7 @@ optional func resolvePlaybackRepeatMode(for intent: INPlayMediaIntent) async -> 
 - (void) resolvePlaybackRepeatModeForPlayMedia:(INPlayMediaIntent *) intent withCompletion:(void (^)(INPlaybackRepeatModeResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve which repeat mode to use when playing media.
 

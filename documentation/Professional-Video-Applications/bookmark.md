@@ -4,7 +4,7 @@
 
 Represents security-scoped bookmark data in a base64-encoded string.
 
-#### Overview
+## Overview
 
 A bookmark is associated with a `media-rep` element. Bookmark data is required for sandboxed applications that need to access a media file outside the sandboxed environment. Because of this requirement, Final Cut Pro creates a document-scoped bookmark for the media file for each media representation to which the user grants access and includes this bookmark data in the `media-rep` element when exporting an FCPXML document. When your application exports an FCPXML document, it’s recommended that you add bookmark data to each `media-rep` element.
 

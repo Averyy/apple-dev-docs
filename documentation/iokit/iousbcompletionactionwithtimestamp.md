@@ -14,7 +14,7 @@
 typedef void (*IOUSBCompletionActionWithTimeStamp)(void *target, void *parameter, IOReturn status, UInt32 bufferSizeRemaining, AbsoluteTime timeStamp);
 ```
 
-#### Discussion
+## Discussion
 
 Function called when USB I/O completes.
 

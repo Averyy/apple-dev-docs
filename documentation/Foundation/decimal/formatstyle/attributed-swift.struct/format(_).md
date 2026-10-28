@@ -21,7 +21,7 @@ Formats a decimal value, using this style.
 func format(_ value: Decimal) -> AttributedString
 ```
 
-#### Return Value
+## Return Value
 
 An attributed string representation of `value`, formatted according to the style’s configuration. The returned string contains attributes from the [`AttributeScopes.FoundationAttributes.NumberFormatAttributes`](../../../attributescopes/foundationattributes/numberformatattributes.md) attribute scope to indicate runs formatted by this format style.
 

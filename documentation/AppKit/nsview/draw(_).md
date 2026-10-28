@@ -23,7 +23,7 @@ func draw(_ dirtyRect: NSRect)
 
 - [Updating views automatically with observation tracking in AppKit](../updating-views-automatically-with-observation-tracking-in-appkit.md)
 
-#### Discussion
+## Discussion
 
 Use this method to draw the specified portion of your view’s content. Your implementation of this method should be as fast as possible and do as little work as possible. The `dirtyRect` parameter helps you achieve better performance by specifying the portion of the view that needs to be drawn. You should always limit drawing to the content inside this rectangle. For even better performance, you can call the [`getRectsBeingDrawn(_:count:)`](./getrectsbeingdrawn%28_,count%29.md) method and use the list of rectangles returned by that method to limit drawing even further. You can also use the [`needsToDraw(_:)`](./needstodraw%28_%29.md) method to test whether objects in a particular rectangle need to be drawn.
 

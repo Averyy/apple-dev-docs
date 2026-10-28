@@ -5,13 +5,13 @@
 
 Revoke unused, lost, or compromised private keys.
 
-#### Overview
+## Overview
 
 Revoke an API key immediately if it becomes inactive, lost, or compromised. A revoked API key denies access to the Enterprise Program API on your organization’s behalf.
 
 > ❗ **Important**:  Once you revoke an API key, you can’t reinstate it. Revoked keys are displayed for 30 days on the Integrations page under the Revoked heading.
 
-##### Revoking Enterprise Program Keys
+### Revoking Enterprise Program Keys
 
 To revoke a team API key, log in to the [Apple Developer website](https://developer.apple.com) with an Admin account.
 

@@ -16,7 +16,7 @@ An error that indicates the device lacks support for the session’s configurati
 static var unsupportedConfiguration: ARError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Call [`isSupported`](../arconfiguration/issupported.md) on an [`ARConfiguration`](../arconfiguration.md) to ensure it’s supported before attempting to create and run it on the session with [`runWithConfiguration:`](../arsession/runwithconfiguration_.md).
 

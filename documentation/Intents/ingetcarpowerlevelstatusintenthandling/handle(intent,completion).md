@@ -28,7 +28,7 @@ func handle(intent: INGetCarPowerLevelStatusIntent) async -> INGetCarPowerLevelS
 - (void) handleGetCarPowerLevelStatus:(INGetCarPowerLevelStatusIntent *) intent completion:(void (^)(INGetCarPowerLevelStatusIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Your implementation of this method must access and return the current power status data from the car. If you are unable to access the data, return a response object whose result code indicates the reason for the failure.
 

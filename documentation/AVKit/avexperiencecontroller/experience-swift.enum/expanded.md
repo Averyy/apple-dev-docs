@@ -15,7 +15,7 @@ An experience where the system places the video outside of its original containe
 case expanded
 ```
 
-#### Discussion
+## Discussion
 
 Transition to this experience to get the appropriate expanded experience for the platform.
 

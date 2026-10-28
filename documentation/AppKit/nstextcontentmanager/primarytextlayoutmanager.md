@@ -19,7 +19,7 @@ var primaryTextLayoutManager: NSTextLayoutManager? { get set }
 @property (strong, nullable) NSTextLayoutManager * primaryTextLayoutManager;
 ```
 
-#### Discussion
+## Discussion
 
 Setting this property to an [`NSTextLayoutManager`](../nstextlayoutmanager.md) not in `textLayoutManagers` resets it to `nil`. It automatically synchronizes pending edits before switching to a new primary object. The operation is synchronous.
 

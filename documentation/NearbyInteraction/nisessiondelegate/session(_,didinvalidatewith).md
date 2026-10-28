@@ -26,7 +26,7 @@ optional func session(_ session: NISession, didInvalidateWith error: any Error)
 
 - [Initiating and maintaining a session](../initiating-and-maintaining-a-session.md)
 
-#### Discussion
+## Discussion
 
 The delegate of an invalidated session receives no further callbacks, and the app can’t restart the session. To resume peer interaction, remove references to the invalidated session and begin a new session.
 

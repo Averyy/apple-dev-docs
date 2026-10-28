@@ -28,7 +28,7 @@ The minimum Transport Layer Security (TLS) version for network connections.
 
 **Default**: `TLSv1.2`
 
-#### Discussion
+## Discussion
 
 This key is optional. The value is a string, with a default value of `TLSv1.2`.
 

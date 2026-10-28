@@ -5,7 +5,7 @@
 
 Position views so that they aren’t obstructed by other content.
 
-#### Overview
+## Overview
 
 Safe areas help you place your views within the visible portion of the overall interface. UIKit-defined view controllers may position special views on top of your content. For example, a navigation controller displays a navigation bar on top of the underlying view controller’s content. Even when such views are partially transparent, they still occlude the content that’s underneath them. In tvOS, the safe area also includes the screen’s overscan insets, which represent the area covered by the screen’s bezel.
 
@@ -15,7 +15,7 @@ The following image shows two different devices with a view of the Calendar app 
 
 ![Safe areas in the Calendar app on two different iPhones.](https://developer.apple.com/tutorials/images/com.apple.uikit/media-2936293@2x.png)
 
-##### Extend the safe area to include custom views
+### Extend the safe area to include custom views
 
 Your container view controller can display its own content views over the views of an embedded child view controller. In this situation, update the child view controller’s safe area to exclude the areas covered by the container view controller’s content views. UIKit container view controllers already adjust the safe area of their child view controllers to account for content views. For example, navigation controllers extend the safe area of their child view controllers to account for the navigation bar.
 

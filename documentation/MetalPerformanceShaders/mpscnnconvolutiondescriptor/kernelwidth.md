@@ -24,7 +24,7 @@ var kernelWidth: Int { get set }
 @property (nonatomic, readwrite) NSUInteger kernelWidth;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `3`.
 

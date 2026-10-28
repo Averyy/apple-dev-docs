@@ -23,7 +23,7 @@ A type representing the duration of a time limit applied to a test.
 struct Duration
 ```
 
-#### Overview
+## Overview
 
 Use this type to specify a test timeout with [`TimeLimitTrait`](../timelimittrait.md). `TimeLimitTrait` uses this type instead of Swift’s built-in `Duration` type because the testing library doesn’t support high-precision, arbitrarily short durations for test timeouts. The smallest unit of time you can specify in a `Duration` is minutes.
 

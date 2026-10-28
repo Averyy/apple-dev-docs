@@ -20,7 +20,7 @@ Copies the attributes for source pixel buffers expected by motion-estimation ses
 extern OSStatus VTMotionEstimationSessionCopySourcePixelBufferAttributes(VTMotionEstimationSessionRef motionEstimationSession, CFDictionaryRef*attributesOut);
 ```
 
-#### Discussion
+## Discussion
 
 This function provides a `CFDictionary` of attributes that you must release. Use this function to query [`VTMotionEstimationSession`](./vtmotionestimationsession.md) for the native source attributes. If you provide an input `CVPixelBuffer` that is not compatible with the attributes that this function returns, [`VTMotionEstimationSession`](./vtmotionestimationsession.md) automatically converts the input pixel buffer into a compatible pixel buffer for processing.
 

@@ -21,7 +21,7 @@ Returns the label you assigned to the dispatch queue at creation time.
 extern const char *dispatch_queue_get_label(dispatch_queue_t queue);
 ```
 
-#### Return Value
+## Return Value
 
 The label of the queue, or `NULL` if the queue was not provided a label during initialization.
 

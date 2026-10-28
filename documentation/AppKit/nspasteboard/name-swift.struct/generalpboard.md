@@ -19,7 +19,7 @@ static let generalPboard: NSPasteboard.Name
 extern NSPasteboardName NSGeneralPboard;
 ```
 
-#### Discussion
+## Discussion
 
 This pasteboard holds the contents of the last selection that’s been cut or copied.
 

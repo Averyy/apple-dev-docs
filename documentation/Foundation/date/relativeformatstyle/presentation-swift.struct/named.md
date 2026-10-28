@@ -21,7 +21,7 @@ A style that uses named styles to describe relative dates, such as “yesterday�
 static var named: Date.RelativeFormatStyle.Presentation { get }
 ```
 
-#### Discussion
+## Discussion
 
 The format uses the [`numeric`](./numeric.md) style if a name isn’t available.
 

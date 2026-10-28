@@ -25,7 +25,7 @@ class NSMergePolicy
 @interface NSMergePolicy : NSObject
 ```
 
-#### Overview
+## Overview
 
 A conflict is a mismatch between state held at two different layers in the Core Data stack. A conflict can arise when you save a managed object context and you have stale data at another layer. There are two places in which a conflict may occur:
 

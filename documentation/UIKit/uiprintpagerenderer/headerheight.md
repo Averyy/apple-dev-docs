@@ -22,7 +22,7 @@ var headerHeight: CGFloat { get set }
 @property (nonatomic) CGFloat headerHeight;
 ```
 
-#### Discussion
+## Discussion
 
 The header is measured in points from the top of [`printableRect`](./printablerect.md) and is above the content area. The default header height is 0.0.
 

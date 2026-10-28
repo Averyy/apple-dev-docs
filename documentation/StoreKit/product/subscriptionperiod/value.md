@@ -21,7 +21,7 @@ The number of period units.
 let value: Int
 ```
 
-#### Discussion
+## Discussion
 
 Use the value and the unit together to determine the subscription period. For example, if the [`unit`](./unit-swift.property.md) is [`Product.SubscriptionPeriod.Unit.month`](./unit-swift.enum/month.md), and the [`value`](./value.md) is `3`, the subscription period is three months.
 

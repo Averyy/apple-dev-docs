@@ -27,7 +27,7 @@ var dropout: Float
 float dropout;
 ```
 
-#### Discussion
+## Discussion
 
 BNNS doesn’t apply the dropout ratio to the last stacked layer. When the number of layers is `1`, BNNS ignores this property.
 

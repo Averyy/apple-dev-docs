@@ -16,7 +16,7 @@ class XCTWaiter
 @interface XCTWaiter : NSObject
 ```
 
-#### Overview
+## Overview
 
 You can use waiters with or without a delegate to respond to events such as completion, timeout, or invalid expectation fulfillment. [`XCTestCase`](./xctestcase.md) automatically conforms to the [`XCTWaiterDelegate`](./xctwaiterdelegate.md) protocol and automatically reports timeouts and other unexpected events as test failures.
 

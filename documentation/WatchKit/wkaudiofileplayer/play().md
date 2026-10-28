@@ -19,7 +19,7 @@ func play()
 - (void) play;
 ```
 
-#### Discussion
+## Discussion
 
 This method sets the value of the [`rate`](./rate.md) property to `1.0`.
 

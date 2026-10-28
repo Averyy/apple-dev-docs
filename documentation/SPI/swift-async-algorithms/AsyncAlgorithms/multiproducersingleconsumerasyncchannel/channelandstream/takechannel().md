@@ -24,7 +24,7 @@ Takes and returns the channel.
 mutating func takeChannel() -> sending MultiProducerSingleConsumerAsyncChannel<Element, Failure>
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: If this is called more than once it will result in a runtime crash.
 

@@ -21,11 +21,11 @@ Returns the sum along all axes.
 func sum(keepRank: Bool = false) -> MLTensor
 ```
 
-#### Return Value
+## Return Value
 
 The reduced tensor.
 
-#### Discussion
+## Discussion
 
 For example:
 

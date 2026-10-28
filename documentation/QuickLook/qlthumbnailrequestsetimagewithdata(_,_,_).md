@@ -21,11 +21,11 @@ func QLThumbnailRequestSetImageWithData(_ thumbnail: QLThumbnailRequest!, _ data
 extern void QLThumbnailRequestSetImageWithData(QLThumbnailRequestRef thumbnail, CFDataRef data, CFDictionaryRef properties);
 ```
 
-#### Discussion
+## Discussion
 
 This function returns the thumbnail as a `CFData` object containing image data. The document’s application must save this data as part of the document’s data; the generator retrieves it and uses this function to return it to the client. Before you call this function, call [`QLThumbnailRequestGetMaximumSize(_:)`](./qlthumbnailrequestgetmaximumsize%28_%29.md) to obtain the maximum allowed size for the thumbnail and resize the image if necessary.
 
-##### Special Considerations
+### Special Considerations
 
 Thread-safety: This function should be called in the same thread as the thumbnail request is made in; generally, this is the same thread in which the `GenerateThumbnailForURL` callback was invoked.
 

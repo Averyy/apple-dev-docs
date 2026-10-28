@@ -24,7 +24,7 @@ class ARConfiguration
 
 - [Verifying Device Support and User Permission](./verifying-device-support-and-user-permission.md)
 
-#### Overview
+## Overview
 
 [`ARConfiguration`](./arconfiguration.md) defines a base class for the different options you can configure in your AR experience.
 

@@ -25,7 +25,7 @@ optional func renderer(_ renderer: any SCNSceneRenderer, willRenderScene scene: 
 - (void) renderer:(id<SCNSceneRenderer>) renderer willRenderScene:(SCNScene *) scene atTime:(NSTimeInterval) time;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to perform custom drawing before SceneKit renders a scene—for example, to draw backdrop content underneath SceneKit content. You should only execute Metal or OpenGL drawing commands (and any setup required to perform them) in this method—the results of modifying SceneKit objects during this method are undefined.
 

@@ -19,7 +19,7 @@ case stop
 WKHapticTypeStop
 ```
 
-#### Discussion
+## Discussion
 
 For example, a stopwatch app uses this haptic when the user stops the stopwatch.
 

@@ -19,7 +19,7 @@ A base hover effect used to build additional effects.
 struct EmptyHoverEffect
 ```
 
-#### Overview
+## Overview
 
 `EmptyHoverEffect` does not change a view on hover.
 

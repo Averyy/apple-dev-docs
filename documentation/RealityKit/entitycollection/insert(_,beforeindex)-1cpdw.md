@@ -20,7 +20,7 @@ Adds the specified entity to this collection directly before the entity at the g
 mutating func insert(_ entity: Entity, beforeIndex index: Int)
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This operation can invalidate the index order of any extant entities.
 

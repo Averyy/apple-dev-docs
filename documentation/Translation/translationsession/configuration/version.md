@@ -18,7 +18,7 @@ A value the equals function uses to represent change in the configuration instan
 var version: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 This integer changes when you call [`invalidate()`](./invalidate%28%29.md) on an instance of your translation session.
 

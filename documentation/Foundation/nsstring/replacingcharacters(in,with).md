@@ -25,7 +25,7 @@ func replacingCharacters(in range: NSRange, with replacement: String) -> String
 - (NSString *) stringByReplacingCharactersInRange:(NSRange) range withString:(NSString *) replacement;
 ```
 
-#### Return Value
+## Return Value
 
 A new string in which the characters in `range` of the receiver are replaced by `replacement`.
 

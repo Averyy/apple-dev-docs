@@ -23,11 +23,11 @@ optional func textFieldShouldEndEditing(_ textField: UITextField) -> Bool
 - (BOOL) textFieldShouldEndEditing:(UITextField *) textField;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if editing should stop or [`false`](../../Swift/false.md) if it should continue.
 
-#### Discussion
+## Discussion
 
 The text field calls this method when it is asked to resign the first responder status. This can happen when the user selects another control or when you call the text field’s [`resignFirstResponder()`](../uiresponder/resignfirstresponder%28%29.md) method. Before the focus change occurs, however, the text field calls this method and gives you a chance to prevent the change from happening.
 

@@ -5,11 +5,11 @@
 
 Ensure that your Swift package provides localized resources for many locales.
 
-#### Overview
+## Overview
 
 Localizing the resources in your Swift package ensures its usefulness for as many developers as possible. Adopt localized resources early to avoid additional development costs later.
 
-##### Declare a default localization
+### Declare a default localization
 
 To localize your package’s resources, pass the optional [`defaultLocalization`](../PackageDescription/package/defaultlocalization.md) parameter to the package initializer in your package manifest. This example provides English as the default localization:
 
@@ -36,7 +36,7 @@ When you declare a value for `defaultLocalization` in the package manifest, Xcod
 
 > ❗ **Important**: When declaring a supported language, or naming directories that contain localized resources, use two-letter ISO 639-1 or three-letter ISO 639-2 language codes with optional region or script designators. See [`CFBundleDevelopmentRegion`](../BundleResources/information-property-list/cfbundledevelopmentregion.md) for more information.
 
-##### Add resources to language-specific directories
+### Add resources to language-specific directories
 
 To use Xcode’s default localization mechanism, place localized resources in language-specific directories. A language-specific directory has a name that uses an ISO 639 language code and optional designators, followed by the `.lproj` suffix, and doesn’t contain subdirectories. For example, resources in the English language as it’s used in the United Kingdom reside in a directory named `en-GB.lproj`. By placing package resources in directories that end in `.lproj` and using ISO 639 language codes, Xcode can infer the language automatically.
 
@@ -52,7 +52,7 @@ The following screenshot shows the structure of a Swift package with localized r
 
 ![Screenshot of an expanded Swift package in Xcode’s Project navigator with localized resource directories residing in a parent directory named Resources.](https://developer.apple.com/tutorials/images/com.apple.Xcode/localizing-package-resources-1@2x.png)
 
-##### Localize storyboards and Interface Builder files
+### Localize storyboards and Interface Builder files
 
 If the Swift package includes storyboards or Interface Builder files as resources, adopt base internationalization to relieve localizers of the need to modify these files directly. To have Xcode automatically recognize base localization in the Swift package:
 
@@ -67,7 +67,7 @@ If you prefer to explicitly declare a resource for base internationalization, us
 
 For more information about base internationalization, see [Internationalizing the User Interface](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPInternational/InternationalizingYourUserInterface/InternationalizingYourUserInterface.html#//apple_ref/doc/uid/10000171i-CH3-SW2).
 
-##### Access localized resources
+### Access localized resources
 
 Xcode recognizes localized resources in `.lproj` directories and automatically creates resource bundles. As a result, you can access localized resource files in your package’s code with APIs you may already know from app development. For example, use [Foundation](../Foundation/Foundation.md) to access a localized string at runtime:
 

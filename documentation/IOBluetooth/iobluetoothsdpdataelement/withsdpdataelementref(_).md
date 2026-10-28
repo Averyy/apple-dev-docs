@@ -19,7 +19,7 @@ class func withSDPDataElementRef(_ sdpDataElementRef: IOBluetoothSDPDataElementR
 + (instancetype) withSDPDataElementRef:(IOBluetoothSDPDataElementRef) sdpDataElementRef;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the IOBluetoothSDPDataElement * for the given IOBluetoothSDPDataElementRef.
 

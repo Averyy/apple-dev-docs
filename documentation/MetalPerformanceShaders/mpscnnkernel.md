@@ -24,7 +24,7 @@ class MPSCNNKernel
 @interface MPSCNNKernel : MPSKernel
 ```
 
-#### Overview
+## Overview
 
 An [`MPSCNNKernel`](./mpscnnkernel.md) object consumes one [`MPSImage`](./mpsimage.md) object and produces one [`MPSImage`](./mpsimage.md) object.
 

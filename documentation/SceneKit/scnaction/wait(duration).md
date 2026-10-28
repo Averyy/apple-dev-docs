@@ -25,11 +25,11 @@ class func wait(duration sec: TimeInterval) -> SCNAction
 + (SCNAction *) waitForDuration:(NSTimeInterval) sec;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 When the action executes, the action waits for the specified amount of time and then ends. This is typically used as part of a sequence of actions to insert a delay between two other actions. You might also use it in conjunction with the [`runAction(_:completionHandler:)`](../scnactionable/runaction%28_,completionhandler%29.md) method to trigger code that needs to run at a later time.
 

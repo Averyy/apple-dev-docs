@@ -19,7 +19,7 @@ func SCDynamicStoreCopyComputerName(_ store: SCDynamicStore?, _ nameEncoding: Un
 CFStringRefSCDynamicStoreCopyComputerName(SCDynamicStoreRef store, CFStringEncoding *nameEncoding);
 ```
 
-#### Return Value
+## Return Value
 
 The current computer name, or `NULL` if the name has not been set or if an error occurred. You must release the return value.
 

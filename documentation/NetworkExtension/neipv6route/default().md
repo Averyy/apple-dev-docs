@@ -24,11 +24,11 @@ class func `default`() -> NEIPv6Route
 + (NEIPv6Route * const) defaultRoute;
 ```
 
-#### Return Value
+## Return Value
 
 A `NEIPv6Route` object containing the default IPv6 route.
 
-#### Discussion
+## Discussion
 
 Set this route in the `includedRoutes` array in `NEIPv6Settings` to specify that all IPv6 network traffic be routed to the TUN interface by default.
 

@@ -23,7 +23,7 @@ var substringRange: NSRange { get }
 @property (nonatomic, readonly) NSRange substringRange;
 ```
 
-#### Discussion
+## Discussion
 
 Use the range information to find the position of the segment within the [`formattedString`](../sftranscription/formattedstring.md) property of the [`SFTranscription`](../sftranscription.md) object containing this segment.
 

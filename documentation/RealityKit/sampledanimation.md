@@ -20,7 +20,7 @@ An animation that cycles through a series of frames at a constant interval.
 struct SampledAnimation<Value> where Value : AnimatableData
 ```
 
-#### Overview
+## Overview
 
 To specify the data that the animation samples, set one of the `frames` properties that matches the animated property’s type. For example, set the [`frames`](./sampledanimation/frames-2j4nj.md) property to interpolate [`Float`](../Swift/float.md) values.
 

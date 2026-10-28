@@ -19,7 +19,7 @@ unowned(unsafe) var textContainers: NSArray? { get }
 @property (assign, readonly, nullable) NSArray<NSTextContainer *> * textContainers;
 ```
 
-#### Return Value
+## Return Value
 
 An array containing the text containers belonging to the current layout manager. This value is valid only while the typesetter is performing layout.
 

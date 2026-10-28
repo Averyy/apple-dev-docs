@@ -28,7 +28,7 @@ optional func paymentQueueShouldShowPriceConsent(_ paymentQueue: SKPaymentQueue)
 
 - [Handling Subscriptions Billing](../handling-subscriptions-billing.md)
 
-#### Discussion
+## Discussion
 
 This method applies only to auto-renewable subscription price increases that require customer consent.
 

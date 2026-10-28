@@ -19,7 +19,7 @@ func imageScaling(forSegment segment: Int) -> NSImageScaling
 - (NSImageScaling) imageScalingForSegment:(NSInteger) segment;
 ```
 
-#### Return Value
+## Return Value
 
 One of the image scaling constants. For a list of possible values, see [`NSImageScaling`](../nsimagescaling.md). The default value is [`NSImageScaling.scaleProportionallyDown`](../nsimagescaling/scaleproportionallydown.md).
 

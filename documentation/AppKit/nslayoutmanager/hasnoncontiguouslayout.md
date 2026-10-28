@@ -19,7 +19,7 @@ var hasNonContiguousLayout: Bool { get }
 @property (readonly) BOOL hasNonContiguousLayout;
 ```
 
-#### Discussion
+## Discussion
 
 There may be times at which there is no noncontiguous layout, such as when layout is complete; this method enables the layout manager to report that to clients.
 

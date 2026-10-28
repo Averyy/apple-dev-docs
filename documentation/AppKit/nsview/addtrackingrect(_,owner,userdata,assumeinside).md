@@ -19,11 +19,11 @@ func addTrackingRect(_ rect: NSRect, owner: Any, userData data: UnsafeMutableRaw
 - (NSTrackingRectTag) addTrackingRect:(NSRect) rect owner:(id) owner userData:(void *) data assumeInside:(BOOL) flag;
 ```
 
-#### Return Value
+## Return Value
 
 A tag that identifies the tracking rectangle. It is stored in the associated [`NSEvent`](../nsevent.md) objects and can be used to remove the tracking rectangle.
 
-#### Discussion
+## Discussion
 
 Tracking rectangles provide a general mechanism that can be used to trigger actions based on the cursor location (for example, a status bar or hint field that provides information on the item the cursor lies over). To simply change the cursor over a particular area, use [`addCursorRect(_:cursor:)`](./addcursorrect%28_,cursor%29.md). If you must use tracking rectangles to change the cursor, the [`NSCursor`](../nscursor.md) class specification describes the additional methods that must be invoked to change cursors by using tracking rectangles.
 

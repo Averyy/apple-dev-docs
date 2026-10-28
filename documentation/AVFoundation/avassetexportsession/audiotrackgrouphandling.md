@@ -24,7 +24,7 @@ var audioTrackGroupHandling: AVAssetTrackGroupOutputHandling { get set }
 @property (nonatomic) AVAssetTrackGroupOutputHandling audioTrackGroupHandling;
 ```
 
-#### Discussion
+## Discussion
 
 By default, a session exports only the enabled audio tracks within an alternate track group from the source asset. You can specify that the session preserve all audio tracks within an alternate track group by setting this value to [`preserveAlternateTracks`](../avassettrackgroupoutputhandling/preservealternatetracks.md).
 

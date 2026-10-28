@@ -6,8 +6,11 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.M
 
 # mlx.nn.Module.modules
 
-**Module.modules()**
-: Return a list with all the modules in this instance.
+```python
+Module.modules()
+```
 
-Returns:
-A list of [mlx.nn.Module](../module.md#mlx.nn.Module) instances.
+Return a list with all the modules in this instance.
+
+**Returns:**
+: A list of [mlx.nn.Module](../module.md#mlx.nn.Module) instances.

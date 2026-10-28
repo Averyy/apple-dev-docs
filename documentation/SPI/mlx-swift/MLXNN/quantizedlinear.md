@@ -21,7 +21,7 @@ class QuantizedLinear
 
 - [Creating Modules](./custom-layers.md)
 
-#### Overview
+## Overview
 
 It is the quantized equivalent of [`Linear`](./linear.md).  For now its parameters are frozen and will not be included in any gradient computation but this will probably change in the future.
 
@@ -32,7 +32,7 @@ QuantizedLinear also provides several useful static to convert linear layers to 
 
 Please see the discussion in [`Linear`](./linear.md) for considerations when replacing layers.
 
-##### See Also
+### See Also
 
 - [`init(_:_:bias:groupSize:bits:mode:)`](./quantizedlinear/init%28_,_,bias,groupsize,bits,mode%29.md)
 

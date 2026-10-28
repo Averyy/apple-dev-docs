@@ -21,11 +21,11 @@ func QLPreviewRequestGetGeneratorBundle(_ preview: QLPreviewRequest!) -> Unmanag
 extern CFBundleRefQLPreviewRequestGetGeneratorBundle(QLPreviewRequestRef preview);
 ```
 
-#### Return Value
+## Return Value
 
 A reference to a bundle object representing the generator’s bundle.
 
-#### Discussion
+## Discussion
 
 Thread-safety: This function should be called in the same thread as the preview request is made in; generally, this is the same thread in which the `GeneratePreviewForURL` callback was invoked.
 

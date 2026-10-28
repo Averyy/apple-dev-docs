@@ -23,7 +23,7 @@ var stringRepresentation: String { get }
 @property (nonatomic, copy, readonly) NSString * stringRepresentation;
 ```
 
-#### Discussion
+## Discussion
 
 The string representation uses the following format: `<major>.<minor>.<patch>`.
 

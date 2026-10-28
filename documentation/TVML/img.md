@@ -4,7 +4,7 @@
 
 Displays an image.
 
-#### Overview
+## Overview
 
 The `img` element contains a link to an image that is to be displayed. This element is commonly used to display a preview image for a product. Here’s an example of an `img` element as part of a `lockup` element.
 
@@ -15,7 +15,7 @@ The `img` element contains a link to an image that is to be displayed. This elem
 </lockup>
 ```
 
-##### Contained In
+### Contained In
 
 - [background](./background.md)
 - [lockup](./lockup.md)

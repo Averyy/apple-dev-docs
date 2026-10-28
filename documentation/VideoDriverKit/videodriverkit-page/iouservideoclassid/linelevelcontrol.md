@@ -15,7 +15,7 @@ A video selector control that identifies the nominal line level for the element.
 LineLevelControl
 ```
 
-#### Discussion
+## Discussion
 
 Note that this is not a gain stage but rather indicating the voltage standard (if any) used for the element, such as +4dBu, -10dBV, or instrument.
 

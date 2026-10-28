@@ -13,7 +13,7 @@ typedef void ( *TimerEvent)(
    IOAudioDevice *audioDevice);
 ```
 
-#### Overview
+## Overview
 
 TimerEvent callback function takes two arguments; the target of the timer event and the IOAudioDevice sending the event.
 

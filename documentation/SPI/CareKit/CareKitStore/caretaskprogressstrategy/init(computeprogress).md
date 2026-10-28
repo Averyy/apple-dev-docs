@@ -17,7 +17,7 @@ Create a custom task progress computation strategy.
 init(computeProgress: @escaping (OCKAnyEvent) -> Progress)
 ```
 
-#### Discussion
+## Discussion
 
 - Parameters
 

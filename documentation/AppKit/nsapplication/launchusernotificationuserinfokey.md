@@ -19,7 +19,7 @@ class let launchUserNotificationUserInfoKey: String
 extern NSString * const NSApplicationLaunchUserNotificationKey;
 ```
 
-#### Discussion
+## Discussion
 
 The [`launchUserNotificationUserInfoKey`](./launchusernotificationuserinfokey.md) key is an [`NSUserNotification`](../../Foundation/nsusernotification.md) object that is present in the [`userInfo`](../../Foundation/nsnotification/userinfo.md) dictionary of the [`didFinishLaunchingNotification`](./didfinishlaunchingnotification.md) notification if your app was launched because a user activated a notification in the Notification Center. To access the notification payload in the [`userInfo`](../../Foundation/nsnotification/userinfo.md) dictionary, you can use code like this:
 

@@ -25,11 +25,11 @@ func registeredTypeIdentifiers(fileOptions: NSItemProviderFileOptions = []) -> [
 - (NSArray<NSString *> *) registeredTypeIdentifiersWithFileOptions:(NSItemProviderFileOptions) fileOptions;
 ```
 
-#### Return Value
+## Return Value
 
 An array of type identifier strings.
 
-#### Discussion
+## Discussion
 
 To access the array of all registered UTIs, pass the value `0` in the `fileOptions` parameter.
 

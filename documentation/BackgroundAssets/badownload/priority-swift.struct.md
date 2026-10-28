@@ -24,7 +24,7 @@ struct Priority
 typedef NSInteger BADownloaderPriority;
 ```
 
-#### Overview
+## Overview
 
 Use [`BADownload.Priority`](./priority-swift.struct.md) to assign an app-specific priority to a download or group of downloads. The system processes downloads with a higher priority before those with a lower priority, no matter what order you schedule them in.
 

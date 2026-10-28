@@ -19,7 +19,7 @@ class MESampleCursorChunk
 @interface MESampleCursorChunk : NSObject
 ```
 
-#### Overview
+## Overview
 
 The [`chunkDetails()`](./mesamplecursor/chunkdetails%28%29.md) method returns an instance of this class.
 

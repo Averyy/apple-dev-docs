@@ -23,7 +23,7 @@ static var controlCharacter: NSLayoutManager.GlyphProperty { get }
 NSGlyphPropertyControlCharacter
 ```
 
-#### Discussion
+## Discussion
 
 Control character such as tab, attachment, and so on, that has associated special behavior.
 

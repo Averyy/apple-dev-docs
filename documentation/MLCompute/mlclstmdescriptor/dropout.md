@@ -23,7 +23,7 @@ var dropout: Float { get }
 @property (nonatomic, readonly) float dropout;
 ```
 
-#### Discussion
+## Discussion
 
 If `dropout` is non-zero, the layer adds a dropout layer to the outputs of each layer except the last, with the dropout rate equal to `dropout`.
 

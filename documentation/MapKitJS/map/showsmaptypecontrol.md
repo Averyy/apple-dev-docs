@@ -16,7 +16,7 @@ get showsMapTypeControl(): boolean;
 set showsMapTypeControl(showsMapTypeControl: boolean);
 ```
 
-#### Discussion
+## Discussion
 
 The map type control enables users to select whether to show a standard, satellite, or hybrid map view.
 

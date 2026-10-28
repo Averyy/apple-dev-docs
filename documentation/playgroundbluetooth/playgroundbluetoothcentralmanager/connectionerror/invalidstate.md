@@ -16,7 +16,7 @@ The error that occurs when the central manager is in a state that can’t make c
 case invalidState
 ```
 
-#### Discussion
+## Discussion
 
 For example, the central manager is in an invalid state for connections when it’s powered off.
 

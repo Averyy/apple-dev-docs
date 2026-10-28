@@ -27,11 +27,11 @@ static func .< (lhs: MLTensor, rhs: MLTensor) -> MLTensor
 static func .< (lhs: MLTensor, rhs: some MLTensorScalar & Numeric) -> MLTensor
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean tensor where each element is true if the left hand side tensor is less than the corresponding element of the right hand side, and false otherwise.
 
-#### Discussion
+## Discussion
 
 Shapes must be broadcastable, where the broadcasted shape becomes the shape of the output.
 

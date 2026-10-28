@@ -13,7 +13,7 @@
 IFNET_FAMILY_FIREWIRE = 13
 ```
 
-#### Discussion
+## Discussion
 
 An IEEE 1394 [Firewire] interface.
 

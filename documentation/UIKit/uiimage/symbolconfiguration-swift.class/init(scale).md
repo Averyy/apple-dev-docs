@@ -24,7 +24,7 @@ convenience init(scale: UIImage.SymbolScale)
 + (instancetype) configurationWithScale:(UIImageSymbolScale) scale;
 ```
 
-#### Return Value
+## Return Value
 
 A new symbol configuration object with the specified information.
 

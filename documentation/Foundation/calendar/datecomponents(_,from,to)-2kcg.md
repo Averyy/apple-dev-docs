@@ -21,7 +21,7 @@ Returns the difference between two dates.
 func dateComponents(_ components: Set<Calendar.Component>, from start: Date, to end: Date) -> DateComponents
 ```
 
-#### Return Value
+## Return Value
 
 The result of calculating the difference from start to end.
 

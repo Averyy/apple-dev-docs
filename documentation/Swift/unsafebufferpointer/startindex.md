@@ -21,7 +21,7 @@ The index of the first element in a nonempty buffer.
 var startIndex: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 The `startIndex` property of an `UnsafeBufferPointer` instance is always zero.
 

@@ -25,11 +25,11 @@ class func success(with resolvedTaskList: INTaskList) -> Self
 + (instancetype) successWithResolvedTaskList:(INTaskList *) resolvedTaskList;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INTaskListResolutionResult`](../intasklistresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you successfully locate the task list modified. Provide an [`INTaskList`](../intasklist.md) object with as much information about the task list as you have available.
 

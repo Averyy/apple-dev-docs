@@ -21,7 +21,7 @@ func AUGraphGetNodeInfoSubGraph(_ inGraph: AUGraph, _ inNode: AUNode, _ outSubGr
 extern OSStatus AUGraphGetNodeInfoSubGraph(AUGraph const inGraph, AUNode inNode, AUGraph*outSubGraph);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 

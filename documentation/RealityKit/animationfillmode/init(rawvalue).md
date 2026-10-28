@@ -20,7 +20,7 @@ Creates a fill mode from its backing data type.
 init(rawValue: Int8)
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to unarchive a fill mode from data:
 

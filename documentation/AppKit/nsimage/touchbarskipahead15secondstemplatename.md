@@ -22,7 +22,7 @@ class let touchBarSkipAhead15SecondsTemplateName: String
 extern NSImageName const NSImageNameTouchBarSkipAhead15SecondsTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for skip ahead 15 seconds](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2825131@2x.png)
 

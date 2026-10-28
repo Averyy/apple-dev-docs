@@ -24,7 +24,7 @@ func didFailWithError(_ error: any Error)
 - (void) didFailWithError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method signals to WebKit that the task is complete, but failed with the specified error. Use this method to report any errors during the load process.
 

@@ -24,7 +24,7 @@ static var traitTightLeading: UIFontDescriptor.SymbolicTraits { get }
 UIFontDescriptorTraitTightLeading
 ```
 
-#### Discussion
+## Discussion
 
 For fonts that you create using [`UIFont.TextStyle`](../../uifont/textstyle.md), tight leading subtracts 2 points from the current leading value.
 

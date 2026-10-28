@@ -24,7 +24,7 @@ var mode: MTLSparseTextureMappingMode
 MTLSparseTextureMappingMode mode;
 ```
 
-#### Discussion
+## Discussion
 
 When mode is [`MTLSparseTextureMappingMode.map`](../mtlsparsetexturemappingmode/map.md), Metal walks the tiles in the range in buffer offset order, assigning the next tile from the heap in increasing order, starting at [`heapOffset`](./heapoffset.md).
 

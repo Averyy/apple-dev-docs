@@ -15,7 +15,7 @@ Creates a HID element value from a logical value.
 init?<IntegerType>(element: HIDElement, fromLogicalValueTruncatingIfNeeded: IntegerType, timestamp: SuspendingClock.Instant) where IntegerType : FixedWidthInteger
 ```
 
-#### Discussion
+## Discussion
 
 The raw value and physical value are calculated; both must be valid.
 

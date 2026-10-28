@@ -21,11 +21,11 @@ Calculates the single-precision element-wise difference of the product of a vect
 static func subtract<T, U>(multiplication: (a: U, b: Float), _ vector: T) -> [Float] where T : AccelerateBuffer, U : AccelerateBuffer, T.Element == Float, U.Element == Float
 ```
 
-#### Return Value
+## Return Value
 
 The output vector `D` in `D = (A * B) - C`.
 
-#### Discussion
+## Discussion
 
 This function calculates the element-wise product of vector `A` and scalar value `B`, subtracts vector `C` from the product, and writes the result to vector `D`, as follows:
 

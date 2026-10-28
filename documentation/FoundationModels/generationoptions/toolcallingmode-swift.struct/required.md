@@ -24,7 +24,7 @@ static let required: GenerationOptions.ToolCallingMode
 
 - [Expanding generation with tool calling](../../expanding-generation-with-tool-calling.md)
 
-#### Discussion
+## Discussion
 
 Please note that [`LanguageModelSession`](../../languagemodelsession.md) will loop until a `Tool` throws an error or this value is changed dynamically via `LanguageModelSession.Manifest`.
 

@@ -23,7 +23,7 @@ func setImage(_ image: NSImage?)
 
 - [Adjusting settings for a toolbar item](../adjusting-settings-for-a-toolbar-item.md)
 
-#### Discussion
+## Discussion
 
 Pass nil to use the image specified in the `Info.plist` file.
 

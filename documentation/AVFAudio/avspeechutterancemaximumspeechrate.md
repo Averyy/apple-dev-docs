@@ -25,7 +25,7 @@ let AVSpeechUtteranceMaximumSpeechRate: Float
 extern const float AVSpeechUtteranceMaximumSpeechRate;
 ```
 
-#### Discussion
+## Discussion
 
 The speech rate is a decimal representation.
 

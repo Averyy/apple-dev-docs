@@ -23,7 +23,7 @@ var fixesAttributesLazily: Bool { get }
 @property (nonatomic, readonly) BOOL fixesAttributesLazily;
 ```
 
-#### Discussion
+## Discussion
 
 When subclassing, the default value of this property is [`false`](../../Swift/false.md), meaning that your subclass fixes attributes immediately when they change. The system’s concrete subclass overrides this property and sets it to [`true`](../../Swift/true.md).
 

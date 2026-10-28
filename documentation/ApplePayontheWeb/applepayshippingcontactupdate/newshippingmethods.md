@@ -16,7 +16,7 @@ A list of shipping methods that are available to the updated shipping contact.
 sequence <ApplePayShippingMethod> newShippingMethods;
 ```
 
-#### Discussion
+## Discussion
 
 Supply a list of shipping methods that apply to the updated shipping contact, if the shipping methods changed. See [`ApplePayShippingMethod`](../applepayshippingmethod.md).
 

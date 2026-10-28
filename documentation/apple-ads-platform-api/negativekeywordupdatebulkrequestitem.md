@@ -15,11 +15,11 @@ A single item in a negative-keyword bulk-update request.
 object NegativeKeywordUpdateBulkRequestItem
 ```
 
-#### Discussion
+## Discussion
 
 The `data` object accepts only the fields defined on [`BulkNegativeKeywordUpdate`](./bulknegativekeywordupdate.md), keeping each item’s payload identical in shape to a single-item update request.
 
-##### Example
+### Example
 
 ```json
 {

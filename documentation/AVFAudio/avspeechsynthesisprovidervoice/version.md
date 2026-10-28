@@ -25,7 +25,7 @@ var version: String { get set }
 @property (nonatomic, strong) NSString * version;
 ```
 
-#### Discussion
+## Discussion
 
 This value is for your own tracking and doesn’t impact the behavior of the system.
 

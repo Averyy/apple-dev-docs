@@ -25,7 +25,7 @@ var longLongValue: Int64 { get }
 @property (readonly) long long longLongValue;
 ```
 
-#### Discussion
+## Discussion
 
 The `long long` value of the string, assuming a decimal representation and skipping whitespace at the beginning of the string. This property is `LLONG_MAX` or `LLONG_MIN` on overflow. This property is `0` if the receiver doesn’t begin with a valid decimal text representation of a number.
 

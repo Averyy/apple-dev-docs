@@ -6,7 +6,7 @@
 
 A 32-bit unsigned integer indicating the value to use for the item ID of the next item created or assigned an item ID.
 
-#### Overview
+## Overview
 
 If the value is all ones, it indicates that future additions will require a search for an unused item ID.
 

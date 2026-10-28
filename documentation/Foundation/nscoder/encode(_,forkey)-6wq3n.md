@@ -24,7 +24,7 @@ func encode(_ size: CGSize, forKey key: String)
 - (void) encodeCGSize:(CGSize) size forKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 When decoding the data from the archive, you pass the value in the `key` parameter to the corresponding [`decodeCGSize(forKey:)`](./decodecgsize%28forkey%29.md) method to retrieve the data.
 

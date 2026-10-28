@@ -21,7 +21,7 @@ var totalTypingEpisodes: Int { get }
 @property (readonly) NSInteger totalTypingEpisodes;
 ```
 
-#### Discussion
+## Discussion
 
 The framework counts one episode for all the typing between pauses (see [`totalPauses`](./totalpauses.md)). If the framework records no pauses, the value of this property is `1`.
 

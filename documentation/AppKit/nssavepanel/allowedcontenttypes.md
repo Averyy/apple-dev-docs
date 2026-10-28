@@ -19,7 +19,7 @@ var allowedContentTypes: [UTType] { get set }
 @property (copy) NSArray<UTType *> * allowedContentTypes;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to an empty array that indicates that you can use any file type. If you don’t provide an extension, the system uses the first preferred extension in the array for the save panel. If you specify a type that isn’t in the array and [`allowsOtherFileTypes`](./allowsotherfiletypes.md) is `YES`, the system presents another dialog when prompting you to save.
 

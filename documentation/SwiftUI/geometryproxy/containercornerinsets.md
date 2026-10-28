@@ -21,7 +21,7 @@ Returns the corner insets of the container view. Use this value to adjust the ge
 var containerCornerInsets: RectangleCornerInsets { get }
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 GeometryReader { geometry in

@@ -21,7 +21,7 @@ A closed polygon overlay.
 struct MapPolygon
 ```
 
-#### Overview
+## Overview
 
 Use this view to create map polygons instances in the closure you provide to the `content` parameter in the [`Map`](./map.md) initializers.
 

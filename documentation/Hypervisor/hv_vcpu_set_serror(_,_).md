@@ -17,7 +17,7 @@ func hv_vcpu_set_serror(_ vcpu: hv_vcpu_t, _ pending: Bool) -> hv_return_t
 extern hv_return_t hv_vcpu_set_serror(hv_vcpu_t vcpu, bool pending);
 ```
 
-#### Discussion
+## Discussion
 
 Sets pending SError for a vcpu.
 

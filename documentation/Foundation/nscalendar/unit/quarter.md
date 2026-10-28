@@ -25,7 +25,7 @@ static var quarter: NSCalendar.Unit { get }
 NSCalendarUnitQuarter
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an `NSInteger`. Equal to `kCFCalendarUnitQuarter`.
 

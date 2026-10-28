@@ -17,7 +17,7 @@ A pseudo log handler that sends messages to multiple other log handlers.
 struct MultiplexLogHandler
 ```
 
-##### Effective Logger.Level
+### Effective Logger.Level
 
 When first initialized, the multiplex log handlers’ log level is automatically set to the minimum of all the provided log handlers. This ensures that each of the handlers are able to log at their appropriate level any log events they might be interested in.
 
@@ -25,7 +25,7 @@ Example: If log handler `A` is logging at `.debug` level, and log handler `B` is
 
 If the log level is *set* on a `Logger` backed by an `MultiplexLogHandler` the log level applies to *all* underlying log handlers, allowing a logger to still select at what level it wants to log regardless of if the underlying handler is a multiplex or a normal one. If for some reason one might want to not allow changing a log level of a specific handler passed into the multiplex log handler, this is possible by wrapping it in a handler which ignores any log level changes.
 
-##### Effective Logger.Metadata
+### Effective Logger.Metadata
 
 Since a `MultiplexLogHandler` is a combination of multiple log handlers, the handling of metadata can be non-obvious. For example, the underlying log handlers may have metadata of their own set before they are used to initialize the multiplex log handler.
 

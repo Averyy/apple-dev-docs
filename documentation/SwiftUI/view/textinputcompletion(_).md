@@ -16,7 +16,7 @@ nonisolated
 func textInputCompletion(_ completion: String) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to associate a fully formed string with a view that is within a text input suggestion list context. The system uses this value when the view is selected to replace the partial text being currently edited of the associated text field.
 

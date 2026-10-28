@@ -23,7 +23,7 @@ func finalizeAnimatedBoundsChange()
 - (void) finalizeAnimatedBoundsChange;
 ```
 
-#### Discussion
+## Discussion
 
 The collection view calls this method after creating the animations for changing the view’s bounds or after the animated insertion or deletion of items. This method is the layout object’s opportunity to do any cleanup related to those operations.
 

@@ -14,7 +14,7 @@ A Boolean value that indicates whether the app may create writable and executabl
 - **Name**: `com.apple.security.cs.allow-unsigned-executable-memory` (Allow Unsigned Executable Memory)
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 In rare cases, an app might need to override or patch C code, use the long-deprecated `NSCreateObjectFileImageFromMemory` (which is fundamentally insecure), or use the DVDPlayback framework. Add the [Allow Unsigned Executable Memory Entitlement](./com.apple.security.cs.allow-unsigned-executable-memory.md) to enable these use cases. Otherwise, the app might crash or behave in unexpected ways.
 

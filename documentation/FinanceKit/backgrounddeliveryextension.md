@@ -17,7 +17,7 @@ An extension used to receive updates about changes to data within the finance st
 protocol BackgroundDeliveryExtension : AppExtension, BackgroundDeliveryExtensionProviding
 ```
 
-#### Overview
+## Overview
 
 Use [`enableBackgroundDelivery(for:frequency:)`](./financestore/enablebackgrounddelivery%28for,frequency%29.md) to enable updates for an extension and see [`BackgroundDeliveryExtensionProviding`](./backgrounddeliveryextensionproviding.md) to implement functions for an extension.
 

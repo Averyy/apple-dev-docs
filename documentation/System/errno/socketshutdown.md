@@ -25,7 +25,7 @@ static var socketShutdown: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 A request to send data wasn’t permitted because the socket had already been shut down with a previous `shutdown(2)` call.
 

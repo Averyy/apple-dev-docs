@@ -23,7 +23,7 @@ func receive<Value>(as type: Value.Type) async throws -> ApplicationProtocol.Mes
 
 Available when `ApplicationProtocol` conforms to `StreamProtocol`.
 
-#### Discussion
+## Discussion
 
 This may be called before the connection is ready, in which case the receive request will be enqueued until the connection is ready.
 

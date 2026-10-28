@@ -21,7 +21,7 @@ Set the timeout for TCP connection establishment.
 func connectionTimeout(_ timeout: UInt32) -> TCP
 ```
 
-#### Discussion
+## Discussion
 
 A timeout for TCP connection establishment, in seconds. (`TCP_CONNECTIONTIMEOUT`).
 

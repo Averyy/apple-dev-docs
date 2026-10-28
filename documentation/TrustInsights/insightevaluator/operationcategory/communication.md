@@ -16,7 +16,7 @@ A value that indicates a communication operation.
 case communication
 ```
 
-#### Discussion
+## Discussion
 
 For example, sending bulk messages or making connections to other people.
 

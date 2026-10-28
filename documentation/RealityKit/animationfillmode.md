@@ -20,7 +20,7 @@ Options that determine which animation frames display outside of the normal dura
 struct AnimationFillMode
 ```
 
-#### Overview
+## Overview
 
 This structure enables you to lock an animation at its starting frame for a period of time before beginning. You can also lock an animation to its ending frame for a specified amount of time after it finishes, or both.
 

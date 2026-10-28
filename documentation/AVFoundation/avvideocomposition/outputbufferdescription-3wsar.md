@@ -20,7 +20,7 @@ The output buffers of the video composition can be specified with the outputBuff
 @property (nonatomic, copy, readonly, nullable) NSArray * outputBufferDescription;
 ```
 
-#### Discussion
+## Discussion
 
 If the video composition will output tagged buffers, the details of those buffers should be specified with CMTags. Specifically, the StereoView (eyes) and ProjectionKind must be specified. The behavior is undefined if the output tagged buffers do not match the outputBufferDescription. The default is nil, which means monoscopic output. Note that an empty array is not valid. An exception will be thrown if the objects in the array are not of type CMTagCollectionRef. Note that tagged buffers are only supported for custom compositors.
 

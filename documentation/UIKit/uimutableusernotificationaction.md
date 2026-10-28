@@ -24,7 +24,7 @@ class UIMutableUserNotificationAction
 @interface UIMutableUserNotificationAction : UIUserNotificationAction
 ```
 
-#### Overview
+## Overview
 
 When a notification is delivered, the system displays a button for each custom action associated with the notification. Tapping a button launches your app (either in the foreground or background) and gives you a chance to perform the indicated action. You use this class to configure the details about the button that is displayed and the information your app needs to perform the corresponding action.
 

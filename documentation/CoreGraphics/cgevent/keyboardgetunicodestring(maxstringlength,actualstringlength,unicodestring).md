@@ -20,7 +20,7 @@ func keyboardGetUnicodeString(maxStringLength: Int, actualStringLength: UnsafeMu
 extern void CGEventKeyboardGetUnicodeString(CGEventRef event, UniCharCount maxStringLength, UniCharCount *actualStringLength, UniChar *unicodeString);
 ```
 
-#### Discussion
+## Discussion
 
 When you call this function and specify a `NULL` string or a maximum string length of 0, the function still returns the actual count of Unicode characters in the event data.
 

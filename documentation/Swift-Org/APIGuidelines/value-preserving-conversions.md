@@ -10,7 +10,7 @@ framework: "Swift-Org/APIGuidelines"
 
 In initializers that perform value preserving type conversions, omit the first argument label.
 
-#### Overview
+## Overview
 
 For example: `Int64(someUInt32)`.
 

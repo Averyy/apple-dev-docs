@@ -21,7 +21,7 @@ The type of element produced by this asynchronous sequence.
 typealias Element = UInt8
 ```
 
-#### Discussion
+## Discussion
 
 The sequence produces `UInt8` elements.
 

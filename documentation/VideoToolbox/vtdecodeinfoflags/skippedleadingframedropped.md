@@ -24,7 +24,7 @@ static var skippedLeadingFrameDropped: VTDecodeInfoFlags { get }
 kVTDecodeInfo_SkippedLeadingFrameDropped
 ```
 
-#### Discussion
+## Discussion
 
 This condition occurs when you performs a seek to a sync frame, and due to frame reordering, there are leading frames following the sync frame that the system can’t decode due to missing references. Dropping these frames has no impact on playback because the nondecodeable frames won’t render.
 

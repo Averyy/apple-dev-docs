@@ -5,7 +5,7 @@
 
 Identify your app’s performance and power goals and create a plan to measure and assess them.
 
-#### Overview
+## Overview
 
 Performance tuning is an important part of the development process, regardless of platform. Performance tuning means making your app run as efficiently as possible, so it does more work in less time and with fewer system resources. Efficiency is especially important on devices that can support multiple apps in an immersive experience. Apps that consume too many resources, can push the device beyond thermal limits. When this occurs, the system takes steps to cool down to a more acceptable level. This can have a noticeable visual impact and be disorienting for the wearer.
 
@@ -13,7 +13,7 @@ As you start development, set aggressive goals and evaluate progress throughout 
 
 For more information on performance tuning, see [Improving your app’s performance](../Xcode/improving-your-app-s-performance.md).
 
-##### Set performance and power targets
+### Set performance and power targets
 
 Performance isn’t a single metric that you measure and improve. Typically, you choose several metrics and set goals for each of them. For example, consider:
 
@@ -28,7 +28,7 @@ After you choose the metrics you want, set realistic goals and prioritize them, 
 
 Consider how people will use your app. If your app runs in the Shared Space, consider more conservative targets and goals for system resources. If you expect people to use your app for longer periods of time, factor this extended use into your targets and goals when choosing metrics.
 
-##### Identify the code flows and user scenarios to test
+### Identify the code flows and user scenarios to test
 
 After you choose the metrics to collect, decide which portions of your app to test. Choose features that are repeatable, measurable, and reliable to test. Repeatable automated tests allow you to compare the results and know the comparisons represent the exact same task. Focus on places where your app executes code, but don’t ignore places where your app hands off data to the system and waits. If your app spends a significant amount of time waiting for information, consider eliminating the requests altogether or batching them to achieve better performance.
 
@@ -42,13 +42,13 @@ Focus your tuning efforts on the parts of your app that people use the most, or 
 
 Choose actions that people perform frequently or that correspond to important features. For example, if your app lets someone add a new contact, test the workflow for creating the contact, editing the contact, and saving the results. Test your app with a particular feature enabled and disabled to determine whether the feature is solely responsible for any performance impacts. Choose lightweight workflows such as how your app performs at idle time, and also heavyweight workflows, for example, ones that involve user interactions and your app’s responses. For launch times, gather metrics for both hot and cold launches — that is, when the app is already resident in memory and when it is not.
 
-##### Consider thermal and environmental factors
+### Consider thermal and environmental factors
 
 Consider how environmental factors impact your app. The characteristics of your physical environment can affect system load and thermals of the device. Consider the effect that ambient room temperature, the presence of other people, and the number and type of real-world objects can have on the your app‘s algorithms. Try to test in different settings to get an idea of whether you need to optimize for these scenarios or not.
 
 Use Xcode’s thermal inducers to mimic the device hitting its thermal limits and consider how your app responds to fair, serious, and critical thermal notifications. You might need to have different performance goals when under thermal pressure, and prioritize optimizing for power or find ways to dynamically lower your app‘s complexity in response to thermal pressure to give a smoother experience, even if latency is a bit higher.
 
-##### Choose tools to collect performance data
+### Choose tools to collect performance data
 
 There are many tools and APIs you can use to collect performance-related data for your visionOS app. Use a variety of tools to make sure you have the data you need:
 
@@ -62,11 +62,11 @@ There are many tools and APIs you can use to collect performance-related data fo
 - **Log messages**: Include log messages to report significant events and relevant data for those events. For more information, see [Generating log messages from your code](../os/generating-log-messages-from-your-code.md).
 - **TestFlight**: Get feedback from testers about their experiences with beta versions of your app. Fill out the Test Information page for your beta version, and request that testers provide feedback about the performance of your app.
 
-##### Profile on a physical device
+### Profile on a physical device
 
 In general, profile and analyze performance on a physical device rather than in Simulator. Even if something works well in Simulator, it might not perform as well on devices for all use cases. Simulator doesn’t support some hardware features and APIs. There are differences in the rendering pipeline for Simulator running on macOS, so rendering performance characteristics will be different. Other pipelines such as input delivery and audio or video playback are also different. There are, however, some insights you can gain profiling in Simulator, such as CPU stalls, that help you spot areas to investigate and address.
 
-##### Build automated test cases and run them regularly
+### Build automated test cases and run them regularly
 
 Xcode comes with tools to help you automate the collection of performance data:
 

@@ -20,7 +20,7 @@ The state of the animated property before the animation starts.
 let from: Value?
 ```
 
-#### Discussion
+## Discussion
 
 When the value is `nil`, the system uses the default source value.
 

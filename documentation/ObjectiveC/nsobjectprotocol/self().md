@@ -26,7 +26,7 @@ func `self`() -> Self
 - (instancetype) self;
 ```
 
-#### Return Value
+## Return Value
 
 The receiver.
 

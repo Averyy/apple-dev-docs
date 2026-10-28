@@ -15,7 +15,7 @@ An accessor for the map feature type enumeration.
 get MapFeatureType(): typeof MapFeatureType;
 ```
 
-#### Discussion
+## Discussion
 
 You must load the appropriate library first before accessing the getter, otherwise, the getter throws an `Error`.
 

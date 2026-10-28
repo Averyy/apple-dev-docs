@@ -22,11 +22,11 @@ func AudioConverterFillComplexBufferWithPacketDependencies(_ inAudioConverter: A
 OSStatus AudioConverterFillComplexBufferWithPacketDependencies(AudioConverterRef inAudioConverter, AudioConverterComplexInputDataProc inInputDataProc, void *inInputDataProcUserData, UInt32 *ioOutputDataPacketSize, AudioBufferList *outOutputData, AudioStreamPacketDescription *outPacketDescriptions, AudioStreamPacketDependencyDescription *outPacketDependencies);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 Converts audio data supplied by a callback function, supporting non-interleaved and packetized formats, and also supporting packet dependency descriptions.
 

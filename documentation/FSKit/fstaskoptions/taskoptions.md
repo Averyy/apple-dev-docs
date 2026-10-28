@@ -19,7 +19,7 @@ var taskOptions: [String] { get }
 @property (copy, readonly) NSArray<NSString *> * taskOptions;
 ```
 
-#### Discussion
+## Discussion
 
 This property is equivalent to the `argv` array of C strings passed to a command-line tool.
 

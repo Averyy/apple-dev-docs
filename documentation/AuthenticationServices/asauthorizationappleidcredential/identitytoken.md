@@ -25,7 +25,7 @@ var identityToken: Data? { get }
 @property (nonatomic, copy, readonly, nullable) NSData * identityToken;
 ```
 
-#### Discussion
+## Discussion
 
 The system encodes the object as a string using [`NSUTF8StringEncoding`](../../Foundation/nsutf8stringencoding.md).
 

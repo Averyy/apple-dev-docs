@@ -24,11 +24,11 @@ func convertPoint(toView point: CGPoint) -> CGPoint
 - (CGPoint) convertPointToView:(CGPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 The same point in the view’s coordinate system.
 
-#### Discussion
+## Discussion
 
 The scene must be presented in a view before calling this method.
 

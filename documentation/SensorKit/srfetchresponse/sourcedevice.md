@@ -17,7 +17,7 @@ The source of the sample data.
 var sourceDevice: SRSourceDevice? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Represents the peripheral supplying data. Useful for distinguishing multiple source peripherals using a common device. Is nullable when no source information is available when providing sample data.
 

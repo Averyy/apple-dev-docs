@@ -15,7 +15,7 @@ Gets the scalar level value for the control.
 float GetScalarValue();
 ```
 
-#### Discussion
+## Discussion
 
 The object’s work queue synchronizes access to the control value.
 

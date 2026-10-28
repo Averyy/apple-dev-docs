@@ -24,11 +24,11 @@ func canHandle(_ adjustmentData: PHAdjustmentData) -> Bool
 - (BOOL) canHandleAdjustmentData:(PHAdjustmentData *) adjustmentData;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if your extension supports the adjustment data; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 When an asset is edited, Photos stores a [`PHAdjustmentData`](../../Photos/phadjustmentdata.md) object that is provided by the app (or by the extension) that edited the asset. This object provides whatever information is necessary to reconstruct the edited asset using the previous version of the asset’s content. When a user attempts to edit an asset with your extension, Photos calls this block to learn whether your extension can handle the asset’s past adjustments.
 

@@ -18,7 +18,7 @@ An entitlement that lets an app create and manage virtual HID devices.
 
 **Default**: `true`
 
-#### Discussion
+## Discussion
 
 To request this entitlement, [fill out the request form](https://developer.apple.com/contact/request/system-extension/).
 

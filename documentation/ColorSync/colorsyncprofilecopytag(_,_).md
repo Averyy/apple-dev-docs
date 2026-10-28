@@ -25,7 +25,7 @@ func ColorSyncProfileCopyTag(_ prof: ColorSyncProfile!, _ signature: CFString!) 
 extern CFDataRefColorSyncProfileCopyTag(ColorSyncProfileRef prof, CFStringRef signature);
 ```
 
-#### Return Value
+## Return Value
 
 The tag data, or `NULL` in case of failure.
 

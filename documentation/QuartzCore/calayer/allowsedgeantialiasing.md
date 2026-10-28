@@ -24,7 +24,7 @@ var allowsEdgeAntialiasing: Bool { get set }
 @property BOOL allowsEdgeAntialiasing;
 ```
 
-#### Discussion
+## Discussion
 
 When the value is [`true`](../../Swift/true.md), the layer is allowed to antialias its edges, as requested by the value in the layer’s [`edgeAntialiasingMask`](./edgeantialiasingmask.md) property. The default value is read from the boolean `UIViewEdgeAntialiasing` property in the main bundle’s `Info.plist` file. If no value is found, the default value is [`false`](../../Swift/false.md).
 

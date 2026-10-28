@@ -19,11 +19,11 @@ func readObjects(forClasses classArray: [AnyClass], options: [NSPasteboard.Readi
 - (NSArray *) readObjectsForClasses:(NSArray<Class> *) classArray options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Return Value
+## Return Value
 
 An array containing the best match (if any) for each of the items on the receiver that can be represented by a class specified in `classArray`. Returns `nil` if there is an error in retrieving the requested items from the pasteboard, or an empty array if no objects of the specified classes can be created.
 
-#### Discussion
+## Discussion
 
 Classes in `classArray` must implement the `NSPasteboardReading` protocol. Cocoa classes that implement this protocol include `NSImage`, `NSString`, `NSURL`, `NSColor`, `NSAttributedString`, and `NSPasteboardItem`.  For every item on the pasteboard, each class in the provided array will be queried for the types it can read using [`readableTypes(for:)`](../nspasteboardreading/readabletypes%28for%29.md).  An instance is created of the first class found in the provided array whose readable types match a conforming type contained in that pasteboard item. Any instances that could be created from pasteboard item data is returned to the caller.  Additional options, such as restricting the search to file URLs with particular content types, can be specified with an options dictionary.
 

@@ -25,7 +25,7 @@ var presentation: SCNNode { get }
 @property (nonatomic, readonly) SCNNode * presentationNode;
 ```
 
-#### Discussion
+## Discussion
 
 When you use implicit animation (see [`SCNTransaction`](../scntransaction.md)) to change a node’s properties, those node properties are set immediately to their target values, even though the animated node content appears to transition from the old property values to the new. During the animation SceneKit maintains a copy of the node, called the **presentation node**, whose properties reflect the transitory values determined by any in-flight animations currently affecting the node. The presentation node’s properties provide a close approximation to the version of the node that is currently displayed. SceneKit also uses the presentation node when computing the results of explicit animations, physics, and constraints.
 

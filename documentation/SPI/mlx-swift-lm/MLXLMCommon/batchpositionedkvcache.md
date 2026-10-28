@@ -17,7 +17,7 @@ Protocol for KV caches that expose per-sequence RoPE offsets.
 protocol BatchPositionedKVCache : KVCache
 ```
 
-#### Overview
+## Overview
 
 This is a forward-compatible hook for batched caches. Current scalar-cache code paths continue using `KVCache.offset`.
 

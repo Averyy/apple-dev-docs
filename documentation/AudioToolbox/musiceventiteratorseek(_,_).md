@@ -24,7 +24,7 @@ func MusicEventIteratorSeek(_ inIterator: MusicEventIterator, _ inTimeStamp: Mus
 extern OSStatus MusicEventIteratorSeek(MusicEventIterator inIterator, MusicTimeStamp inTimeStamp);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 

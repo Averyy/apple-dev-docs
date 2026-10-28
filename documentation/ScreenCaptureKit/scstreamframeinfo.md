@@ -24,7 +24,7 @@ struct SCStreamFrameInfo
 typedef NSString * SCStreamFrameInfo;
 ```
 
-#### Overview
+## Overview
 
 Use [`SCStreamFrameInfo`](./scstreamframeinfo.md) keys to retrieve values from the dictionary of metadata attached to the sample buffers that a stream produces. For example, you can retrieve the display time, content scale, and scaling factor, as shown below:
 

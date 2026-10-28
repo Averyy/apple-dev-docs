@@ -24,11 +24,11 @@ func JSObjectMakeConstructor(_ ctx: JSContextRef!, _ jsClass: JSClassRef!, _ cal
 JSObjectRefJSObjectMakeConstructor(JSContextRef ctx, JSClassRef jsClass, JSObjectCallAsConstructorCallback callAsConstructor);
 ```
 
-#### Return Value
+## Return Value
 
 A [`JSObjectRef`](./jsobjectref.md) that is a constructor. The object’s prototype is the default object prototype.
 
-#### Discussion
+## Discussion
 
 The default object constructor takes no arguments, and constructs an object of class `jsClass` with no private data.
 

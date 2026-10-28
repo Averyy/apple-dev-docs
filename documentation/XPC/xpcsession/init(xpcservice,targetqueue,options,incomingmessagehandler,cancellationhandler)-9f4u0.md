@@ -17,7 +17,7 @@ Establishes a connection to an XPC service with the name and received message ha
 convenience init(xpcService: String, targetQueue: DispatchQueue? = nil, options: XPCSession.InitializationOptions = .none, incomingMessageHandler: (@Sendable (XPCReceivedMessage) -> (any Encodable)?)? = nil, cancellationHandler: (@Sendable (XPCRichError) -> Void)? = nil) throws
 ```
 
-#### Discussion
+## Discussion
 
 If the service isn’t found or is unavailable the connection fails, this method throws an error.
 

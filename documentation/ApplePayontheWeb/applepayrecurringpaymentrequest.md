@@ -23,7 +23,7 @@ dictionary ApplePayRecurringPaymentRequest {
 };
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  You must include the [`recurringPaymentRequest`](./applepaypaymentrequest/recurringpaymentrequest.md) property in the [`ApplePayPaymentRequest`](./applepaypaymentrequest.md) object to specify a request for a recurring payment.
 

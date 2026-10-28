@@ -23,7 +23,7 @@ enum EventSubtype
 enum UIEventSubtype : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 You can obtain the subtype of an event from the [`subtype`](./subtype.md) property.
 

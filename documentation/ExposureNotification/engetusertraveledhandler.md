@@ -23,7 +23,7 @@ typealias ENGetUserTraveledHandler = (Bool, (any Error)?) -> Void
 typedef void (^)(_Bool, NSError *) ENGetUserTraveledHandler;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This type is available in iOS 12.5, and in iOS 13.5 and later.
 

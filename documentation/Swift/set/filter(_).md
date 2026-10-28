@@ -24,11 +24,11 @@ consuming func filter<E>(_ isIncluded: (Element) throws(E) -> Bool) throws(E) ->
 
 Available when `Element` conforms to `Hashable`.
 
-#### Return Value
+## Return Value
 
 A set of the elements that `isIncluded` allows.
 
-#### Discussion
+## Discussion
 
 In this example, `filter(_:)` is used to include only names shorter than five characters.
 

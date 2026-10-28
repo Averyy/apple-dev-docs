@@ -20,7 +20,7 @@ var symbolConfiguration: NSImage.SymbolConfiguration { get }
 @property (copy, readonly) NSImageSymbolConfiguration * symbolConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to access the traits and rendering attributes the system uses with the symbol image. These details determine which variant of the image to load and draw and how to render it, falling back on the current environment for values that you don’t specify. For symbol images, the default value of this property is a symbol image configuration object with unspecified values.
 

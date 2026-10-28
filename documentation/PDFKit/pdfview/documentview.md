@@ -40,7 +40,7 @@ var documentView: NSView? { get }
 @property (nonatomic, readonly, nullable) NSView * documentView;
 ```
 
-#### Discussion
+## Discussion
 
 The innermost view is the one displaying the visible document pages. This method is useful when converting coordinates from one view to another.
 

@@ -23,7 +23,7 @@ var primaryConstituentDeviceSwitchingBehaviorForRecording: AVCaptureDevice.Prima
 @property (nonatomic, readonly) AVCapturePrimaryConstituentDeviceSwitchingBehavior primaryConstituentDeviceSwitchingBehaviorForRecording;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`AVCaptureDevice.PrimaryConstituentDeviceSwitchingBehavior.restricted`](../avcapturedevice/primaryconstituentdeviceswitchingbehavior-swift.enum/restricted.md).
 

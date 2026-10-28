@@ -24,7 +24,7 @@ func round(with tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
 - (MPSGraphTensor *) roundWithTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid `MPSGraphTensor` object containing the elementwise result of the applied operation.
 

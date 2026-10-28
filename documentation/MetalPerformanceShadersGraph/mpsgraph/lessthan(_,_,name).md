@@ -24,11 +24,11 @@ func lessThan(_ primaryTensor: MPSGraphTensor, _ secondaryTensor: MPSGraphTensor
 - (MPSGraphTensor *) lessThanWithPrimaryTensor:(MPSGraphTensor *) primaryTensor secondaryTensor:(MPSGraphTensor *) secondaryTensor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid `MPSGraphTensor` object containing the elementwise result of the applied operation.
 
-#### Discussion
+## Discussion
 
 This operation creates a `lessThan` operation and returns the result tensor. It supports broadcasting as well.
 

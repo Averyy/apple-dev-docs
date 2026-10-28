@@ -18,7 +18,7 @@ Methods an object implements to rename a navigation item.
 @protocol UINavigationItemRenameDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 A navigation item ([`UINavigationItem`](./uinavigationitem.md)) uses this delegate to determine whether a person can change the navigation item’s title and to handle the rename process.
 

@@ -19,7 +19,7 @@ let kSpeechWordCFCallBack: CFString
 const CFStringRef kSpeechWordCFCallBack;
 ```
 
-#### Discussion
+## Discussion
 
  The value associated with this property is `CFNumber` object whose value is a pointer to an application-defined word callback function, whose syntax is described in [`SpeechWordCFProcPtr`](./speechwordcfprocptr.md). Passing a `CFNumber` object that contains the value `NULL` for the value of this property disables the word callback function.
 

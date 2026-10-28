@@ -21,7 +21,7 @@ A Boolean value that indicates whether the rule can inflect the user’s current
 static var canInflectPreferredLocalization: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value doesn’t change throughout the lifetime of a process.
 

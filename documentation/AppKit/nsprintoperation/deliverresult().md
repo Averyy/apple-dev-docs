@@ -19,11 +19,11 @@ func deliverResult() -> Bool
 - (BOOL) deliverResult;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the results were successfully delivered; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method may be called to deliver the results to the printer spool or preview application.  Do not invoke this method directly—it is invoked automatically when the print operation is done.
 

@@ -15,11 +15,11 @@ framework: "mlx-swift-lm/MLXLMCommon"
 func imageFeatures(_ pixels: MLXArray) throws -> MLXArray?
 ```
 
-#### Return Value
+## Return Value
 
 `[B, soft tokens, hidden]` features that fill their placeholder tokens, or `nil` when this checkpoint has no vision encoder.
 
-#### Discussion
+## Discussion
 
 > **Throws**: Loading errors, or `OnDemandComponentError` if vision was excluded.
 

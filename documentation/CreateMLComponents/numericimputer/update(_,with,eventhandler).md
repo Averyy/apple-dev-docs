@@ -23,7 +23,7 @@ func update(_ transformer: inout ImputeTransformer<Element>, with input: some Se
 
 Available when `Element` conforms to `BinaryFloatingPoint`, `Decodable`, and `Encodable`.
 
-#### Discussion
+## Discussion
 
 > **Note**: You can’t update an impute transformer when using the `median` strategy.
 

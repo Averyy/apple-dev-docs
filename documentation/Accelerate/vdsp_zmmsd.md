@@ -21,7 +21,7 @@ Subtracts a double-precision complex matrix from the product of two double-preci
 extern void vDSP_zmmsD(const DSPDoubleSplitComplex *__A, vDSP_Stride __IA, const DSPDoubleSplitComplex *__B, vDSP_Stride __IB, const DSPDoubleSplitComplex *__C, vDSP_Stride __IC, const DSPDoubleSplitComplex *__D, vDSP_Stride __ID, vDSP_Length __M, vDSP_Length __N, vDSP_Length __P);
 ```
 
-#### Discussion
+## Discussion
 
 The following code subtracts the matrix `c` from the product of matrices `a` and `b`, and writes the result to matrix `d`:
 

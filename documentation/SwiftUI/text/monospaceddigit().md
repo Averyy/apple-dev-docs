@@ -22,11 +22,11 @@ nonisolated
 func monospacedDigit() -> Text
 ```
 
-#### Return Value
+## Return Value
 
 A text view with a modified font that uses fixed-width numeric characters, while leaving other characters proportionally spaced.
 
-#### Discussion
+## Discussion
 
 This modifier only affects numeric characters, and leaves all other characters unchanged.
 

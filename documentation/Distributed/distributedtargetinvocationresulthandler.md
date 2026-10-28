@@ -21,7 +21,7 @@ Protocol a distributed invocation execution’s result handler.
 protocol DistributedTargetInvocationResultHandler<SerializationRequirement>
 ```
 
-#### Overview
+## Overview
 
 An instance conforming to this type must be passed when invoking [`executeDistributedTarget(on:target:invocationDecoder:handler:)`](./distributedactorsystem/executedistributedtarget%28on,target,invocationdecoder,handler%29.md) while handling an incoming distributed call.
 

@@ -25,11 +25,11 @@ func vImageConvert_Planar8toPlanar16F(_ src: UnsafePointer<vImage_Buffer>, _ des
 vImage_Error vImageConvert_Planar8toPlanar16F(const vImage_Buffer *src, const vImage_Buffer *dest, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 The conversion maps source pixels with a value of `0` to `0.0`, and maps source pixels with a value of `255` to `1.0`.
 

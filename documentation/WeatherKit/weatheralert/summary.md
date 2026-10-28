@@ -21,7 +21,7 @@ The summary of the event type.
 var summary: String
 ```
 
-#### Discussion
+## Discussion
 
 The summary may or may not contain localized descriptions, depending on what is available from the source.
 

@@ -21,7 +21,7 @@ nonisolated
 init<V>(_ data: Data, id: KeyPath<Data.Element, ID>, @SliderTickBuilder<V> content: @escaping (Data.Element) -> Content) where V == Data.Element, Data.Element == Content.Value
 ```
 
-#### Discussion
+## Discussion
 
 It’s important that the `id` of a data element doesn’t change, unless SwiftUI considers the data element to have been replaced with a new data element that has a new identity. If the `id` of a data element changes, then the marks generated from that data element will lose any current state and animations.
 

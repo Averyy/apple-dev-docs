@@ -21,7 +21,7 @@ A line from the start point of the current subpath (if any) to the current point
 case closeSubpath
 ```
 
-#### Discussion
+## Discussion
 
 After closing the subpath, the current point becomes undefined.
 

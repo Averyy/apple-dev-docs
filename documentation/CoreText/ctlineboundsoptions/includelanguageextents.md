@@ -25,7 +25,7 @@ static var includeLanguageExtents: CTLineBoundsOptions { get }
 kCTLineBoundsIncludeLanguageExtents
 ```
 
-#### Discussion
+## Discussion
 
 Use the result of this option when drawing to avoid clipping that the typographic bounds may cause. This option doesn’t have an effect when you use it with [`useGlyphPathBounds`](./useglyphpathbounds.md).
 

@@ -19,11 +19,11 @@ func dropOperation() -> IKImageBrowserDropOperation
 - (IKImageBrowserDropOperation) dropOperation;
 ```
 
-#### Return Value
+## Return Value
 
 [`IKImageBrowserDropOn`](../ikimagebrowserdropon.md) if the drop occurs on an item, otherwise [`IKImageBrowserDropBefore`](../ikimagebrowserdropbefore.md).
 
-#### Discussion
+## Discussion
 
 The returned value is valid when a drop occurred and until next drop.
 

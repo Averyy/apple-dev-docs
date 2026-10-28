@@ -22,7 +22,7 @@ class var supportedRevisions: IndexSet { get }
 @property (class, nonatomic, readonly) NSIndexSet * supportedRevisions;
 ```
 
-#### Discussion
+## Discussion
 
 This property allows you to check what revisions are available for each configuration at runtime.
 

@@ -15,7 +15,7 @@ The function that returns the `HandLocation` based on `HandJoint`.
 static func joint(for joint: AnchoringComponent.Target.HandLocation.HandJoint) -> AnchoringComponent.Target.HandLocation
 ```
 
-#### Return Value
+## Return Value
 
 The `HandLocation` represents the hand joint.
 

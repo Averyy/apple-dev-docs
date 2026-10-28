@@ -16,7 +16,7 @@ A default implementation that returns a `nil` reference.
 func contentView(for overlayView: ImageAnalysisOverlayView) -> NSView?
 ```
 
-#### Return Value
+## Return Value
 
 This default implementation returns `nil`.
 

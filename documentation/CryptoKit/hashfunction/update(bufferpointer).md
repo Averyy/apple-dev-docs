@@ -22,7 +22,7 @@ Incrementally updates the hash function with the contents of the buffer.
 mutating func update(bufferPointer: UnsafeRawBufferPointer)
 ```
 
-#### Discussion
+## Discussion
 
 Call this method one or more times to provide data to the hash function in blocks. After providing the last block of data, call the [`finalize()`](./finalize%28%29.md) method to get the computed digest. Don’t call the update method again after finalizing the hash function.
 

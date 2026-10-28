@@ -31,7 +31,7 @@ func flush(fromSourceTime time: CMTime) async -> Bool
 - (void) flushFromSourceTime:(CMTime) time completionHandler:(void (^)(BOOL flushSucceeded)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method can be used to replace media data scheduled to be rendered in the future, without interrupting playback. One example of this is when the data that has already been enqueued is from a sequence of two songs and the second song is swapped for a new song. In this case, this method would be called with the timestamp of the first sample buffer from the second song. After the completion handler is executed with a `YES` parameter, media data may again be enqueued with time stamps at the specified time.
 

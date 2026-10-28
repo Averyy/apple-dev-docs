@@ -23,7 +23,7 @@ func invalidateAttributes(in range: NSRange)
 - (void) invalidateAttributesInRange:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 Called from [`processEditing()`](./processediting%28%29.md) to invalidate attributes when the text storage changes. If the receiver isn’t lazy, this method calls [`fixAttributes(in:)`](../../Foundation/nsmutableattributedstring/fixattributes%28in%29.md). If lazy attribute fixing is in effect, this method instead records the range needing fixing.
 

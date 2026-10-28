@@ -25,7 +25,7 @@ func CMBufferQueueIsAtEndOfData(_ queue: CMBufferQueue) -> Bool
 extern Boolean CMBufferQueueIsAtEndOfData(CMBufferQueueRef queue);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean indicating whether the `CMBufferQueue` has been marked with EndOfData, and is now empty.If queue is `NULL`, true is returned (a NULL queue is considered to be empty, and permanently at EndOfData).
 

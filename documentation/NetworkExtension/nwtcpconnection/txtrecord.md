@@ -26,7 +26,7 @@ var txtRecord: Data? { get }
 @property (nonatomic, readonly, nullable) NSData * txtRecord;
 ```
 
-#### Discussion
+## Discussion
 
 When the connection is connected to a Bonjour service endpoint, the TXT record associated with the Bonjour service is available via this property.
 

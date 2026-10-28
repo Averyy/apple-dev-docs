@@ -5,7 +5,7 @@
 
 Modifies the visible image through resizing, moving, or rotating.
 
-#### Overview
+## Overview
 
 Modify the visible image using the following attributes:
 

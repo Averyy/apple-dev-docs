@@ -22,7 +22,7 @@ let MFMessageComposeViewControllerTextMessageAvailabilityKey: String
 extern NSString * const MFMessageComposeViewControllerTextMessageAvailabilityKey;
 ```
 
-#### Discussion
+## Discussion
 
 This value matches the result of the [`canSendText()`](./mfmessagecomposeviewcontroller/cansendtext%28%29.md) class method.The `userInfo` dictionary for the [`MFMessageComposeViewControllerTextMessageAvailabilityDidChangeNotification`](./mfmessagecomposeviewcontrollertextmessageavailabilitydidchangenotification.md) notification includes this key. The value of this key is an [`NSNumber`](../Foundation/nsnumber.md) object that contains a Boolean value. This value matches the result of the [`canSendText()`](./mfmessagecomposeviewcontroller/cansendtext%28%29.md) class method.
 

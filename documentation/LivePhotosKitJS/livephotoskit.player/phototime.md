@@ -15,7 +15,7 @@ The nominated time, in seconds, of where the photo component should be within th
 attribute Number photoTime;
 ```
 
-#### Discussion
+## Discussion
 
 This is the timestamp, in seconds from the beginning of the provided video asset, at which the still photo was captured.
 

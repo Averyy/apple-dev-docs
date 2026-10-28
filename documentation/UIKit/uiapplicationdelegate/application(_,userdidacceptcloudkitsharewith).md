@@ -25,7 +25,7 @@ optional func application(_ application: UIApplication, userDidAcceptCloudKitSha
 - (void) application:(UIApplication *) application userDidAcceptCloudKitShareWithMetadata:(CKShareMetadata *) cloudKitShareMetadata;
 ```
 
-#### Discussion
+## Discussion
 
 If your app doesn’t support scenes, use this method to respond to a CloudKit Sharing invitation. In your implementation, accept the share by scheduling a [`CKAcceptSharesOperation`](../../CloudKit/ckacceptsharesoperation.md) object that contains the metadata object in the `cloudKitShareMetadata` parameter. After the share has been accepted, you can begin fetching records and incorporating the resulting data into your app. For a scene-based app, accept the invitation in your window scene delegate’s [`windowScene(_:userDidAcceptCloudKitShareWith:)`](../uiwindowscenedelegate/windowscene%28_,userdidacceptcloudkitsharewith%29.md) method.
 

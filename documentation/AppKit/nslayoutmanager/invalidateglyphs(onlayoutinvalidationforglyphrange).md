@@ -21,7 +21,7 @@ func invalidateGlyphs(onLayoutInvalidationForGlyphRange glyphRange: NSRange)
 - (void) invalidateGlyphsOnLayoutInvalidationForGlyphRange:(NSRange) glyphRange;
 ```
 
-#### Discussion
+## Discussion
 
 This method is for the use of the typesetter, to allow it to specify explicitly when portions of the glyph stream depend on layout, for example, because they have had hyphens inserted. Therefore, the glyphs are invalidated the next time their layout is invalidated, so that they will be regenerated before being laid out again.
 

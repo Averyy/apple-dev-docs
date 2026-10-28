@@ -19,7 +19,7 @@ case behavior_10_2_WithCompatibility
 NSTypesetterBehavior_10_2_WithCompatibility
 ```
 
-#### Discussion
+## Discussion
 
 The typesetting behavior is the same as `NSTypesetterBehavior_10_2`, but using line widths and height metric calculations that are the same as with `NSTypesetterOriginalBehavior`.
 

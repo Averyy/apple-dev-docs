@@ -24,7 +24,7 @@ init(data imageData: Data, orientation: CGImagePropertyOrientation, options: [VN
 - (instancetype) initWithData:(NSData *) imageData orientation:(CGImagePropertyOrientation) orientation options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Discussion
+## Discussion
 
 The intended use cases of this type of initializer include compressed images and network downloads, where a client may receive a JPEG from a website or the cloud.
 

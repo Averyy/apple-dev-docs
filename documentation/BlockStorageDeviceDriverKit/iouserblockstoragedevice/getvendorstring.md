@@ -15,7 +15,7 @@ Gets a string that identifies the vendor in response to a call from the framewor
 virtual kern_return_t GetVendorString(struct DeviceString *vendor);
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates the get-vendor-string result. Return [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) to inidicate success. To indicate a failure, see [IOKit Constants](../../iokit/iokit_constants.md) for error definitions.
 

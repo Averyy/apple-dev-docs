@@ -24,7 +24,7 @@ func addCurve(to endPoint: CGPoint, controlPoint1: CGPoint, controlPoint2: CGPoi
 - (void) addCurveToPoint:(CGPoint) endPoint controlPoint1:(CGPoint) controlPoint1 controlPoint2:(CGPoint) controlPoint2;
 ```
 
-#### Discussion
+## Discussion
 
 This method appends a cubic Bézier curve from the current point to the end point specified by the `endPoint` parameter. The two control points define the curvature of the segment. The following image shows an approximation of a cubic Bézier curve given a set of initial points. The exact curvature of the segment involves a complex mathematical relationship between all of the points and is well documented online.
 

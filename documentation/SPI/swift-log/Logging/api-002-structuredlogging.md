@@ -10,17 +10,17 @@ framework: "swift-log/Logging"
 
 Use metadata to create machine-readable, searchable log entries.
 
-#### Overview
+## Overview
 
 Structured logging uses metadata to separate human-readable messages from machine-readable data. This practice makes logs easier to search, filter, and analyze programmatically while maintaining readability.
 
-##### Motivation
+### Motivation
 
 Traditional string-based logging embeds all information in the message text, making it more difficult for automated tools to parse and extract. Structured logging separates these concerns; messages provide human readable context while metadata provides structured data for tooling.
 
-##### Example
+### Example
 
-###### Recommended: Structured logging
+#### Recommended: Structured logging
 
 ```swift
 // ✅ Structured - message provides context, metadata provides data
@@ -43,7 +43,7 @@ logger.error(
 )
 ```
 
-##### Advanced: Nested metadata for complex data
+### Advanced: Nested metadata for complex data
 
 ```swift
 // ✅ Complex structured data
@@ -62,7 +62,7 @@ logger.trace(
 )
 ```
 
-###### Avoid: Unstructured logging
+#### Avoid: Unstructured logging
 
 ```swift
 // ❌ Not structured - hard to parse programmatically
@@ -70,7 +70,7 @@ logger.info("Accepted connection \(id) from \(peer), total: \(count)")
 logger.error("Database query failed after \(retries) retries: \(error)")
 ```
 
-##### Metadata key conventions
+### Metadata key conventions
 
 Use hierarchical dot-notation for related fields:
 

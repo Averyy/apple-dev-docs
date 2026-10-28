@@ -21,7 +21,7 @@ static let foregroundHeartRate: SRPhotoplethysmogramSample.Usage
 extern SRPhotoplethysmogramSampleUsage const SRPhotoplethysmogramSampleUsageForegroundHeartRate;
 ```
 
-#### Discussion
+## Discussion
 
 An example is a sample of a heart rate reading from a person using the Heart Rate or a workout app.
 

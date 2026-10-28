@@ -5,7 +5,7 @@
 
 The number of logged-in users.
 
-#### Overview
+## Overview
 
 This value includes only those users with a Window Server connection, that is, those that appear in the Fast User Switching list.
 

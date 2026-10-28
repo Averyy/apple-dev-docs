@@ -19,7 +19,7 @@ class NSPageController
 @interface NSPageController : NSViewController
 ```
 
-#### Overview
+## Overview
 
 [`NSPageController`](./nspagecontroller.md) is useful for user interfaces which control navigating multiple pages as in a book or a web browser history. Page controller inherits from the [`NSViewController`](./nsviewcontroller.md) class . You must assign the `view` property to a view in your view hierarchy. The [`NSPageController`](./nspagecontroller.md) class does not vend a view and does insert itself into the responder chain.
 
@@ -27,17 +27,17 @@ Conceptually, the page controller manages swiping between an array of pages, the
 
 > **Note**:  When using history mode, do not wire `pageController.view` to an [`NSSplitView`](./nssplitview.md) subview. This will actually cause a 3rd split when the private transition view is put in the view hierarchy. You can work around this by using an empty [`NSView`](./nsview.md) instance as the [`NSSplitView`](./nssplitview.md) subview and placing the real contents in a subview of the empty view.
 
-##### Page Controller Modes
+### Page Controller Modes
 
 There are two modes that an `NSPageController` instance may operate in, history mode and book mode. The main difference between the two modes is that **History mode** expects `pageController.view` to be the content and **Book mode** expects `pageController.view` to be be a container for the content that you will supply by returning `viewControllers` in your delegate methods.
 
-###### History Mode
+#### History Mode
 
 History mode is designed to be the easiest way to create a history user interface. The page controller will manage the history (the `arrangedObjects` property), snapshots, and user navigation between pages in the history.
 
 As the user navigates to new content, add to the history by calling [`navigateForward(to:)`](./nspagecontroller/navigateforward%28to%29.md). The page controller will remove any `arrangedObjects` after the [`selectedIndex`](./nspagecontroller/selectedindex.md) and then add the object to the end of the `arrangedObjects` array and update the `selectedIndex` property. Just like navigating in a new direction in a web browser, all forward history is lost once the user starts navigating a new path. After returning from `navigateForwardToObject:` you are free to update the contents of `pageController.view`.
 
-###### Delegate Method Invocation During History Mode Swiping
+##### Delegate Method Invocation During History Mode Swiping
 
 During swiping, the following optional delegate methods are called in the specified order:
 
@@ -47,7 +47,7 @@ Upon returning from the this delegate method, `pageController.view` is hidden. I
 
 Finally, the pageControllerDidEndLiveTransition: delegate method is invoked after the swipe and swipe animations are complete. You should any position settings or other display specific state stored in the [`pageControllerWillStartLiveTransition(_:)`](./nspagecontrollerdelegate/pagecontrollerwillstartlivetransition%28_%29.md) implementation. The `pageController.view` is still hidden at this point and you must call [`completeTransition()`](./nspagecontroller/completetransition%28%29.md) on the page controller instance to inform the instance to hide the private transition view and show `pageController.view`. Often you do this immediately, however, if your content is not ready you can call this at a later.
 
-###### Book Mode (View Controller Mode)
+#### Book Mode (View Controller Mode)
 
 Book mode is designed to give you more control over the swiping process and to facilitate more user interface designs than just history, although you can use book mode to create a history user interface.
 
@@ -65,7 +65,7 @@ When using the book mode, if `pageController.view` is layer backed, live layers 
 
 Generally, when using book mode, the set of pages are known and it is your responsibility to set the `arrangedObjects` array property and initially selected page using the `selectedIndex` property.
 
-###### Delegate Method Invocation During Book Mode Swiping
+##### Delegate Method Invocation During Book Mode Swiping
 
 During swiping, the following optional delegate methods are called in the specified order:
 
@@ -77,7 +77,7 @@ Next the [`pageController(_:didTransitionTo:)`](./nspagecontrollerdelegate/pagec
 
 Finally the [`pageControllerDidEndLiveTransition(_:)`](./nspagecontrollerdelegate/pagecontrollerdidendlivetransition%28_%29.md) method is invoked after the swipe and swipe animations are complete. The `selectedViewController.view` is still detached at this point and you must call [`completeTransition()`](./nspagecontroller/completetransition%28%29.md) on the page controller to hide the private transition view and update the [`selectedViewController`](./nspagecontroller/selectedviewcontroller.md). Often you do this immediately, however, if your content is not ready you can call this at a later.
 
-##### Completing the Page Controller Transition
+### Completing the Page Controller Transition
 
 An `NSPageController` instance uses a private view hierarchy during swiping. To create a seamless transition to the new content, it is your responsibility to inform the page controller when you are ready to draw the new content. Ideally, the new content should match the snapshot so the user is none the wiser. You inform the page controller to complete the transition by calling [`completeTransition()`](./nspagecontroller/completetransition%28%29.md). If needed, a view controller is prepared and then the content view is shown (or added) to the view hierarchy and the private transition view is hidden.
 

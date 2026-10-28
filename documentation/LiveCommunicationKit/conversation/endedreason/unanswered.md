@@ -19,7 +19,7 @@ The conversation didn’t complete the connection process and was never explicit
 case unanswered
 ```
 
-#### Discussion
+## Discussion
 
 Conversations might end with the `.unsanswered` reason when a person doesn’t respond to an incoming conversation or when an incoming or outgoing conversation times out.
 

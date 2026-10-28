@@ -17,7 +17,7 @@ The marker size determines the size of the line, bar, or scatter plot elements. 
 var markerSize: CGFloat
 ```
 
-#### Discussion
+## Discussion
 
 - For line plots, it will be the width of the line.
 - For scatter plots, it will be the radius of the markers.

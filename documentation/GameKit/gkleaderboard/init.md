@@ -21,11 +21,11 @@ Initializes a default leaderboard request.
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized leaderboard request.
 
-#### Discussion
+## Discussion
 
 A leaderboard object that you initialize with this method uses the [`playerScope`](./playerscope-swift.property.md), [`timeScope`](./timescope-swift.property.md), and [`range`](./range.md) properties to search Game Center for scores.
 

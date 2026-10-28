@@ -26,7 +26,7 @@ struct AppExtensionPoint
 - [Adding support for app extensions to your app](./adding-support-for-app-extensions-to-your-app.md)
 - [Building an app extension to support a host app](./building-an-app-extension-to-support-a-host-app.md)
 
-#### Overview
+## Overview
 
 Use this type both to declare your app’s supported extension points and to bind to those extension points. To declare an extension point your app supports, extend this type by adding a static variable with the details of your extension point. Annotate your variable with the [`AppExtensionPoint.Definition`](./appextensionpoint/definition.md) property wrapper and specify the name and other attributes of your extension point. The following example adds two extension point with different configurations:
 

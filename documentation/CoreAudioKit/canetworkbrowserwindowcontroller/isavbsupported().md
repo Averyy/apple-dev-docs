@@ -19,7 +19,7 @@ class func isAVBSupported() -> Bool
 + (BOOL) isAVBSupported;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the hardware supports AVB; otherwise, [`false`](../../Swift/false.md).
 

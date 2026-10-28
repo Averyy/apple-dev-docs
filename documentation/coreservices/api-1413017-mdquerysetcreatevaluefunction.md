@@ -19,7 +19,7 @@ func MDQuerySetCreateValueFunction(_ query: MDQuery!, _ func: MDQueryCreateValue
 void MDQuerySetCreateValueFunction(MDQueryRef query, MDQueryCreateValueFunction func, void *context, const CFArrayCallBacks *cb);
 ```
 
-#### Discussion
+## Discussion
 
 Values created after a create function is set will be created using the newly specified function, but existing values are not modified. It is not advisable to change this function after `MDQueryExecute` has been called with the query.
 

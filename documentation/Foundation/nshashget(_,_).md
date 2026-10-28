@@ -25,7 +25,7 @@ func NSHashGet(_ table: NSHashTable<AnyObject>, _ pointer: UnsafeRawPointer?) ->
 extern void *NSHashGet(NSHashTable *table, const void *pointer);
 ```
 
-#### Return Value
+## Return Value
 
 The pointer in the table that matches `pointer` (as defined by the `isEqual` callback function). If there is no matching element, returns `NULL`.
 

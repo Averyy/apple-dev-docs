@@ -24,7 +24,7 @@ var edgeCreaseIndices: (any MDLMeshBuffer)? { get set }
 @property (nonatomic, retain, nullable) id<MDLMeshBuffer> edgeCreaseIndices;
 ```
 
-#### Discussion
+## Discussion
 
 Each pair of entries in this buffer identifies an edge, between two connected vertices in the submesh, that is to be treated as a crease during surface subdivision. The buffer is sparse, containing only those vertex indices to be treated as creases. The corresponding entry in the [`edgeCreases`](./edgecreases.md) buffer provides a sharpness value for the crease.
 

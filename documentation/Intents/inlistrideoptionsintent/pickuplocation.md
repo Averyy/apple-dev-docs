@@ -32,7 +32,7 @@ var pickupLocation: CLPlacemark? { get }
 @property (atomic, copy, readonly, nullable) CLPlacemark * pickupLocation;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to determine what vehicles are in the vicinity. Combine this property with the [`dropOffLocation`](./dropofflocation.md) property to determine pricing and timing information.
 

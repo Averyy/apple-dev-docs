@@ -15,7 +15,7 @@ The number of spaces for indenting nested HTML elements.
 extern NSAttributedStringDocumentAttributeKey NSPrefixSpacesDocumentAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 An [`NSNumber`](../Foundation/nsnumber.md) object containing an integer that represents the number of spaces per level by which to indent certain nested HTML elements. The default value is `0`.
 

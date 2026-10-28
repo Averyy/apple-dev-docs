@@ -14,11 +14,11 @@ Mixes foreground and background inputs, weighting based on mix value.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 F * m + B(1 - m)
 
-#### Parameter Types
+## Parameter Types
 
 **Mix (float)**:
 
@@ -140,13 +140,13 @@ F * m + B(1 - m)
 | --- | --- |
 | `Out` | Vector4h |
 
-#### Parameter descriptions
+## Parameter descriptions
 
 - **`Foreground`**: The foreground input.
 - **`Background`**: The background input.
 - **`Mix`**: The weight that determines what the output value is closer to. The default value is `0`. Values outside of the range `0-1` produce an undefined effect outside of the node’s intended function.
 
-#### Discussion
+## Discussion
 
 The Mix node blends two input values together, represented by the equation `F * m + B(1 - m)`.  If the `Mix` value is `1`, the output is identical to the `Foreground` value. If the value is `0`, the output is identical to the `Background` value. The closer the `Mix` value is to `0` or `1`, the closer the output will be to the corresponding input. Use the Mix node to blend between two different textures and create transtions or effects, interpolate between two colors, or mix shader parameters. Below is an example of a simple node graph that uses the Mix node to blend two images together into a single material:
 

@@ -18,7 +18,7 @@ Adds the given condition for monitoring.
 func add(_ Condition: any CLCondition, identifier: String)
 ```
 
-#### Discussion
+## Discussion
 
 The framework encapsulates the condition in an instance of [`CLMonitor.Record`](./record.md) and then associates the record, along with the condition with the given identifier. The initial state is [`CLRegionState.unknown`](../clregionstate/unknown.md).
 

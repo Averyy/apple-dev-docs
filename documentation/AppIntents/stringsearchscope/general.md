@@ -21,7 +21,7 @@ The app offers a general search functionality that’s exposed to the system.
 case general
 ```
 
-#### Overview
+## Overview
 
 This may opt the app into system-wide universal search behavior.
 

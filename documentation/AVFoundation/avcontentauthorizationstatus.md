@@ -19,7 +19,7 @@ enum AVContentAuthorizationStatus
 enum AVContentAuthorizationStatus : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Even if authorization is completed by the user, there is no guarantee that the content will then be authorized. You should re-check whether the content is authorized before proceeding.
 

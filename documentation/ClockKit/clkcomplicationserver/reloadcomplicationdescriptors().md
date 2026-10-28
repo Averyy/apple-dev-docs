@@ -23,7 +23,7 @@ func reloadComplicationDescriptors()
 
 - [Declaring complications for your app](../declaring-complications-for-your-app.md)
 
-#### Discussion
+## Discussion
 
 Call this method to reload the complication descriptors from your data source. ClockKit then calls your data source’s [`getComplicationDescriptors(handler:)`](../clkcomplicationdatasource/getcomplicationdescriptors%28handler%29.md) method to update the list of available complications.
 

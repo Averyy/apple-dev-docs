@@ -21,11 +21,11 @@ Sets the contrast and separation between similar colors in the view.
 func contrast(_ amount: Double) -> some VisualEffect
 ```
 
-#### Return Value
+## Return Value
 
 An effect that applies color contrast to the view.
 
-#### Discussion
+## Discussion
 
 Apply contrast to a view to increase or decrease the separation between similar colors in the view.
 

@@ -19,7 +19,7 @@ var style: NSComboButton.Style { get set }
 @property NSComboButtonStyle style;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`NSComboButton.Style.split`](./style-swift.enum/split.md).
 

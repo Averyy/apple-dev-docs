@@ -22,7 +22,7 @@ var isToolbarHidden: Bool { get set }
 @property (nonatomic, getter=isToolbarHidden) BOOL toolbarHidden;
 ```
 
-#### Discussion
+## Discussion
 
 If this property is set to [`true`](../../Swift/true.md), the toolbar is not visible. The default value of this property is [`true`](../../Swift/true.md).
 

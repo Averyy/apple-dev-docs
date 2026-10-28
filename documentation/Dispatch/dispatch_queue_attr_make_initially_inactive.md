@@ -21,11 +21,11 @@ Returns an attribute that configures a dispatch queue as initially inactive.
 extern dispatch_queue_attr_tdispatch_queue_attr_make_initially_inactive(dispatch_queue_attr_t attr);
 ```
 
-#### Return Value
+## Return Value
 
 An updated set of queue attributes that includes the initially inactive attribute.
 
-#### Discussion
+## Discussion
 
 When you configure a dispatch queue with this attribute, the queue does not execute tasks until you call its [`activate()`](./dispatchobject/activate%28%29.md) method.
 

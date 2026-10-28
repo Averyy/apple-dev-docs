@@ -21,7 +21,7 @@ var securityRestrictionMode: WKSecurityRestrictionMode { get set }
 @property (nonatomic) WKSecurityRestrictionMode securityRestrictionMode;
 ```
 
-#### Discussion
+## Discussion
 
 Security restriction mode for this navigation.
 

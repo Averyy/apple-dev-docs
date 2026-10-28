@@ -24,7 +24,7 @@ var billingIdentifier: String? { get set }
 @property (nonatomic, copy, nullable) NSString * billingIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this property to restrict content availability based on the proximity of the billing address to a specific venue.
 

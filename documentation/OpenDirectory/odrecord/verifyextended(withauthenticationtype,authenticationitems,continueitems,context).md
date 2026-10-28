@@ -20,7 +20,7 @@ func verifyExtended(withAuthenticationType inType: String!, authenticationItems 
 - (BOOL) verifyExtendedWithAuthenticationType:(ODAuthenticationType) inType authenticationItems:(NSArray *) inItems continueItems:(NSArray **) outItems context:(id*) outContext error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 > **Handling Errors in Swift**:  In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
 >

@@ -15,9 +15,9 @@ The request for registering a user.
 object RegisterVppUserRequest
 ```
 
-#### Discussion
+## Discussion
 
-##### ClientUserIdStr
+### ClientUserIdStr
 
 The `clientUserIdStr` must be unique within the organization and can’t be changed after a user is registered. Don’t use an email address because a future user might reuse an email address. You can use the GUID of the user.
 

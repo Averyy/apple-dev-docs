@@ -27,7 +27,7 @@ optional func download(_ download: WKDownload, respondTo challenge: URLAuthentic
 - (void) download:(WKDownload *) download didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *) challenge completionHandler:(void (^)(enum NSURLSessionAuthChallengeDisposition, NSURLCredential *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Determine how to respond to the authentication challenge in this method. Then invoke `completionHandler` with a disposition that describes how to respond to the authorization challenge, and optional credentials.
 

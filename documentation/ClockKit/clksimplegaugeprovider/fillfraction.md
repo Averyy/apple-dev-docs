@@ -21,7 +21,7 @@ var fillFraction: Float { get }
 @property (nonatomic, assign, readonly) float fillFraction;
 ```
 
-#### Discussion
+## Discussion
 
 Contains a value between `0.0` and `1.0`, or `CLKSimpleGaugeProviderFillFractionEmpty` for an empty gauge.
 

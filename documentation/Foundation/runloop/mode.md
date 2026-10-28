@@ -25,7 +25,7 @@ struct Mode
 typedef NSString * NSRunLoopMode;
 ```
 
-#### Discussion
+## Discussion
 
 [`NSApplication`](../../AppKit/nsapplication.md) defines additional run loop modes, including the following:
 

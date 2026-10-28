@@ -29,7 +29,7 @@ func generateMipmaps(for texture: any MTLTexture)
 
 - [Generating mipmap data](../generating-mipmap-data.md)
 
-#### Discussion
+## Discussion
 
 The command generates with scaled images for all levels up to the highest mipmap level.
 

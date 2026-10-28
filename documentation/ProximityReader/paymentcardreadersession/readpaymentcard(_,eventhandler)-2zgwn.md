@@ -19,11 +19,11 @@ Presents a sheet to read a contactless payment card for a purchase or a refund, 
 func readPaymentCard(_ request: PaymentCardTransactionRequest, eventHandler: ((PaymentCardReaderSession.Event) -> Void)? = nil) async throws -> PaymentCardReadResult
 ```
 
-#### Return Value
+## Return Value
 
 A [`PaymentCardReadResult`](../paymentcardreadresult.md) if the read operation was successful.
 
-#### Discussion
+## Discussion
 
 Call this method as the first step in a financial transaction involving Tap to Pay with iPhone. This method displays a system-provided sheet with instructions on what the person needs to do. This UI remains onscreen until the system reads the person’s card, you cancel the operation, or an error occurs. After the read operation concludes successfully, deliver the returned card information to your payment service provider.
 

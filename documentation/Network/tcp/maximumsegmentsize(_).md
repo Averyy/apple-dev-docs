@@ -21,7 +21,7 @@ Set maximum segment size.
 func maximumSegmentSize(_ bytes: UInt32) -> TCP
 ```
 
-#### Discussion
+## Discussion
 
 The maximum segment size in bytes (`TCP_MAXSEG`).
 

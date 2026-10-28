@@ -21,7 +21,7 @@ init(cgLayer layer: CGLayer)
 - (instancetype) initWithCGLayer:(CGLayerRef) layer;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized image object.
 

@@ -19,7 +19,7 @@ func row(at point: NSPoint) -> Int
 - (NSInteger) rowAtPoint:(NSPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 The index of the row `aPoint` lies in, or `–1` if `aPoint` lies outside the table view’s bounds.
 

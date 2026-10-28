@@ -19,11 +19,11 @@ func hv_gic_config_set_msi_region_base(_ config: hv_gic_config_t, _ msi_region_b
 extern hv_return_t hv_gic_config_set_msi_region_base(hv_gic_config_t config, hv_ipa_t msi_region_base_address);
 ```
 
-#### Return Value
+## Return Value
 
 [`HV_SUCCESS`](./hv_success.md) on success; otherwise, an error code.
 
-#### Discussion
+## Discussion
 
 Align the guest physical address for MSI region base to the byte value returned by [`hv_gic_get_msi_region_base_alignment(_:)`](./hv_gic_get_msi_region_base_alignment%28_%29.md).
 

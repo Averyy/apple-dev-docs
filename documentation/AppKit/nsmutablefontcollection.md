@@ -19,7 +19,7 @@ class NSMutableFontCollection
 @interface NSMutableFontCollection : NSFontCollection
 ```
 
-#### Overview
+## Overview
 
 You can use this class to modify the search queries for the font descriptors used by the parent [`NSFontCollection`](./nsfontcollection.md) class.
 

@@ -20,7 +20,7 @@ The zone, if any, from which this mesh buffer was created.
 @property (nonatomic, readonly, nullable) id<MDLMeshBufferZone> zone;
 ```
 
-#### Discussion
+## Discussion
 
 A single [`MTLBuffer`](../../Metal/mtlbuffer.md) object is allocated for each zone, but each zone can have multiple [`MTKMeshBuffer`](../mtkmeshbuffer.md) objects, each with its own [`offset`](./offset.md). Though there may be many [`MTKMeshBuffer`](../mtkmeshbuffer.md) objects for a model, they are all backed with the same contiguous [`MTLBuffer`](../../Metal/mtlbuffer.md) objects.
 

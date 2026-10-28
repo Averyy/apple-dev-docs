@@ -15,7 +15,7 @@ Display and allow editing of the time zone.
 static const NSDatePickerElementFlags NSTimeZoneDatePickerElementFlag;
 ```
 
-#### Discussion
+## Discussion
 
 This flag has been declared for possible future use, and does not yet have any effect.
 

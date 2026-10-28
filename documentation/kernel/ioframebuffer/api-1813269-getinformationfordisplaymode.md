@@ -13,11 +13,11 @@ virtual IOReturn getInformationForDisplayMode(
  IODisplayModeInformation *info ) = 0;
 ```
 
-#### Return Value
+## Return Value
 
 an IOReturn code. A return other than kIOReturnSuccess will prevent the system from using the device.
 
-#### Overview
+## Overview
 
 IOFramebuffer subclasses must implement this method to return information in the IODisplayModeInformation structure for the display mode with the passed ID.
 

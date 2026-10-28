@@ -24,7 +24,7 @@ class THClient
 @interface THClient : NSObject
 ```
 
-#### Overview
+## Overview
 
 Request credentials for either a specific Thread network or for the *preferred network* using [`THClient`](./thclient.md). The preferred network is the default Thread network chosen by the framework for a home.
 

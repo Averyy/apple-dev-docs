@@ -19,11 +19,11 @@ var fileLabels: [String] { get }
 @property (copy, readonly) NSArray<NSString *> * fileLabels;
 ```
 
-#### Return Value
+## Return Value
 
 An array of strings.
 
-#### Discussion
+## Discussion
 
 You can listen for notifications named [`didChangeFileLabelsNotification`](./didchangefilelabelsnotification.md) to be notified when file labels change.
 

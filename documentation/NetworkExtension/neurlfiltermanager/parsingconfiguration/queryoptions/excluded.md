@@ -18,7 +18,7 @@ A Boolean value that indicates whether to exclude the query component from URL p
 var excluded: Bool
 ```
 
-#### Discussion
+## Discussion
 
 When this value is `true`, parsing ignores all other query options.
 

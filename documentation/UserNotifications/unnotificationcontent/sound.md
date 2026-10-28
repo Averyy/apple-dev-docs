@@ -33,7 +33,7 @@ var sound: UNNotificationSound? { get }
 @property (atomic, copy, readonly, nullable) UNNotificationSound * sound;
 ```
 
-#### Discussion
+## Discussion
 
 Notifications can play a default sound or a custom sound. For information on how to specify custom sounds for your notifications, see [`UNNotificationSound`](../unnotificationsound.md).
 

@@ -17,11 +17,11 @@ Return the contents as a Metal buffer in the native [`dtype`](./dtype.md).
 func asMTLBuffer(device: some MTLDevice, noCopy: Bool = false) -> (any MTLBuffer)?
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: If you can guarantee the lifetime of the [`MLXArray`](../mlxarray.md) will exceed the MTLBuffer and that the array will not be mutated (e.g. using indexing or other means) it is possible to pass `noCopy: true` to reference the backing bytes.
 
-##### See Also
+### See Also
 
 - [Conversion](../conversion.md)
 - [`asArray(_:)`](./asarray%28_%29.md)

@@ -22,11 +22,11 @@ Chart content that represents data using rectangles.
 @preconcurrency struct RectangleMark
 ```
 
-#### Overview
+## Overview
 
 Use rectangle mark to map data fields to rectangles. You can use the rectangle mark to create heat map charts or to annotate rectangular areas in a chart.
 
-##### Create a Heat Map with Rectangle Marks
+### Create a Heat Map with Rectangle Marks
 
 When presenting data about the effectiveness of a machine learning model, you typically organize the data using a confusion matrix which shows the predicted versus the actual results of the model. To create a 2D heat map that represents a machine learning model you use [`init(x:y:width:height:)`](./rectanglemark/init%28x,y,width,height%29.md). The example below uses a 2D heat map to visualize a basic confusion matrix with the following layout:
 
@@ -64,7 +64,7 @@ var body: some View {
 
 ![2D heat map chart that represents a simple confusion matrix in a 2x2 grid. The number of records is represented by the color of its corresponding rectangle. Darker colors represent higher values.](https://developer.apple.com/tutorials/images/com.apple.Charts/RectangleMarkSwift.RectangleMarkHistogramHeatmap2D@2x.png)
 
-##### Annotate a Rectangular Area with Rectangle Marks
+### Annotate a Rectangular Area with Rectangle Marks
 
 You can annotate a specific region in a chart with a rectangle mark by providing the coordinates of one or more rectangles. For example you can annotate point marks with rectangle marks using a shared data source like in the example below:
 
@@ -100,7 +100,7 @@ var body: some View {
 
 ![Scatter plot chart with a rectangle mark annotation. 3 points on the chart at: (5, 5), (2.5, 2.5), (3, 3) each point mark is highlighted with an opaque rectangle.](https://developer.apple.com/tutorials/images/com.apple.Charts/RectangleMarkSwift.RectangleMarkScatter@2x.png)
 
-##### RectangleMark in Chart3D
+### RectangleMark in Chart3D
 
 To plot a rectangle in a 3D Chart, use the [`init(x:y:z:)`](./rectanglemark/init%28x,y,z%29.md) initializer.
 

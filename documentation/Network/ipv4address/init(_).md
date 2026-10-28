@@ -21,7 +21,7 @@ Initializes an IPv4 address with a string.
 init?(_ string: String)
 ```
 
-#### Discussion
+## Discussion
 
 The provided string will be interpreted as an IPv4 address. If the string cannot be interpreted as an IPv4 address, the initialization will fail.
 

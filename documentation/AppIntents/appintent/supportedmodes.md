@@ -28,7 +28,7 @@ static var supportedModes: IntentModes { get }
 - [Creating your first app intent](../creating-your-first-app-intent.md)
 - [Getting started with the App Intents framework](../getting-started-with-the-app-intents-framework.md)
 
-#### Discussion
+## Discussion
 
 Use this property to specify whether your app needs to be in the foreground or background when running an app intent’s action. You can assign one or more values to this property:
 

@@ -16,7 +16,7 @@ enum Severity
 enum XCTIssueSeverity : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The numeric values of this enum’s cases are comparable. A case which represents higher severity has a larger numeric value than one which represents lower severity. Specifying a numeric severity value other than one corresponding to a case defined below when initializing an `XCTIssue` is unsupported.
 

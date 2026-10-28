@@ -28,7 +28,7 @@ var recognitionLanguages: [String] { get set }
 
 - [Recognizing Text in Images](../recognizing-text-in-images.md)
 
-#### Discussion
+## Discussion
 
 The order of the languages in the array defines the order in which languages are used during language processing and text recognition.
 

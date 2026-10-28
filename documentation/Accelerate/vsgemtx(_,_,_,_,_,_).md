@@ -21,7 +21,7 @@ func vSgemtx(_ m: Int32, _ n: Int32, _ alpha: Float, _ a: UnsafePointer<vFloat>,
 extern void vSgemtx(int32_t m, int32_t n, float alpha, const vFloat *a, const vFloat *x, vFloat *y);
 ```
 
-#### Discussion
+## Discussion
 
 The transpose of matrix `a` is multiplied by `alpha` and then by vector `x`; the resulting vector is added to vector `y`, and the results are stored in `y`.
 

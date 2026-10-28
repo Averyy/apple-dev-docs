@@ -24,7 +24,7 @@ var motionKeyframeCount: Int { get set }
 @property (nonatomic) NSUInteger motionKeyframeCount;
 ```
 
-#### Discussion
+## Discussion
 
 This property’s default is `1`, indicating no motion.
 

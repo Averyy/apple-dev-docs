@@ -14,7 +14,7 @@ void ProcessCompletedTask (
  SCSITaskStatustaskStatus );
 ```
 
-#### Overview
+## Overview
 
 Internal method called to process completed SCSITasks. This method determines if a CHECK_CONDITION has occurred and if sense data was requested and autosense data is not present. If so, it will change the execution mode of the SCSITask and request sense data on behalf of the caller.
 

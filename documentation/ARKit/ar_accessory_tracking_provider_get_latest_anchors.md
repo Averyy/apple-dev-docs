@@ -15,11 +15,11 @@ Retrieves the latest anchors updated with the most recent inertial data.
 extern ar_accessory_anchors_tar_accessory_tracking_provider_get_latest_anchors(ar_accessory_tracking_provider_t accessory_tracking_provider);
 ```
 
-#### Return Value
+## Return Value
 
 An `ar_accessory_anchors_t` collection of latest anchors.
 
-#### Discussion
+## Discussion
 
 These anchors provide higher frequency, lower latency and slightly lower accuracy than the anchors from the update handler. Use them directly or in combination with `ar_accessory_tracking_provider_predict_anchor_at_timestamp`.
 

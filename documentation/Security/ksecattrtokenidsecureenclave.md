@@ -29,7 +29,7 @@ extern CFStringRef const kSecAttrTokenIDSecureEnclave;
 
 - [Protecting keys with the Secure Enclave](./protecting-keys-with-the-secure-enclave.md)
 
-#### Discussion
+## Discussion
 
 To generate a new key that’s protected by the Secure Enclave, call [`SecKeyGeneratePair(_:_:_:)`](./seckeygeneratepair%28_,_,_%29.md), setting the [`kSecAttrTokenID`](./ksecattrtokenid.md) key in the parameters dictionary to [`kSecAttrTokenIDSecureEnclave`](./ksecattrtokenidsecureenclave.md). For an example, see [Protecting keys with the Secure Enclave](./protecting-keys-with-the-secure-enclave.md).
 

@@ -16,7 +16,7 @@
 kINQUIRY_Byte7_TRANDIS_Bit
 ```
 
-#### Discussion
+## Discussion
 
 TRANDIS bit definition.
 

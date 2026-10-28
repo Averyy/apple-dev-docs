@@ -28,7 +28,7 @@ func saveLivePhoto(to output: PHContentEditingOutput, options: [String : Any]? =
 - (void) saveLivePhotoToOutput:(PHContentEditingOutput *) output options:(NSDictionary<NSString *,id> *) options completionHandler:(void (^)(BOOL success, NSError *error)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method when you have finished an editing session and need to provide rendered output in a [`PHContentEditingOutput`](../phcontenteditingoutput.md) object. Unlike when rendering output for a photo or video asset, you don’t need to provide rendered output using the [`renderedContentURL`](../phcontenteditingoutput/renderedcontenturl.md) property of the editing output object. Instead, create a [`PHContentEditingOutput`](../phcontenteditingoutput.md) object using the [`init(contentEditingInput:)`](../phcontenteditingoutput/init%28contenteditinginput%29.md) initializer, passing the same [`PHContentEditingInput`](../phcontenteditinginput.md) object you used in the [`PHLivePhotoFrameProcessingBlock`](../phlivephotoframeprocessingblock.md) initializer to start this Live Photo editing context. Then pass that editing output object to this method, and Photos renders the Live Photo and provides it to the editing output.
 

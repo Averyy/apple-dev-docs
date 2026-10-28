@@ -25,7 +25,7 @@ var kAudioChannelLayoutTag_StereoHeadphones: AudioChannelLayoutTag { get }
 kAudioChannelLayoutTag_StereoHeadphones
 ```
 
-#### Discussion
+## Discussion
 
 Your channels must be laid out in the following order:
 

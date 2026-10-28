@@ -24,7 +24,7 @@ enum MTLDataType
 enum MTLDataType : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 Metal reports or accepts this type in several reflection and configuration contexts, such as:
 
@@ -33,7 +33,7 @@ Metal reports or accepts this type in several reflection and configuration conte
 - The [`attributeType`](./mtlvertexattribute/attributetype.md) property of [`MTLVertexAttribute`](./mtlvertexattribute.md)
 - The [`setConstantValue(_:type:withName:)`](./mtlfunctionconstantvalues/setconstantvalue%28_,type,withname%29.md) method of [`MTLFunctionConstantValues`](./mtlfunctionconstantvalues.md)
 
-##### Normalized integer types
+### Normalized integer types
 
 Color types with `Snorm` in the name are normalized signed integer types. For these types, values in the range `[-1.0, 1.0]` map to `[MIN_INT, MAX_INT]`, where `MIN_INT` is the most negative integer and `MAX_INT` is the most positive integer for the number of bits in the storage size. Positive values and zero distribute uniformly in the range `[0.0, 1.0]`, and negative integer values greater than `(MIN_INT + 1)` distribute uniformly in the range `(-1.0, 0.0)`.
 

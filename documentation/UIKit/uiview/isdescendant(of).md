@@ -23,7 +23,7 @@ func isDescendant(of view: UIView) -> Bool
 - (BOOL) isDescendantOfView:(UIView *) view;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver is an immediate or distant subview of `view` or if `view` is the receiver itself; otherwise [`false`](../../Swift/false.md).
 

@@ -25,7 +25,7 @@ var particleColorVariation: SCNVector4 { get set }
 @property (nonatomic) SCNVector4 particleColorVariation;
 ```
 
-#### Discussion
+## Discussion
 
 This vector randomizes the color specified by the [`particleColor`](./particlecolor.md) property. The components of the vector specify ranges of variation in hue, saturation, brightness, and alpha, in that order.
 

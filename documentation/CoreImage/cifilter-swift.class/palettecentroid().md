@@ -24,11 +24,11 @@ class func paletteCentroid() -> any CIFilter & CIPaletteCentroid
 + (CIFilter<CIPaletteCentroid> *) paletteCentroidFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the palette centroid filter to an image. The filter locates colors in the input image that the palette image defines and `outputImage.extent` provides the location of the colors of the image. You can combine with other filters to create more sophisticated images.
 

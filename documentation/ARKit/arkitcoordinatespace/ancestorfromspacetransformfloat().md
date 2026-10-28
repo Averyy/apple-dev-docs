@@ -16,7 +16,7 @@ Get the transformation to ancestor space from this ARKit coordinate space.
 func ancestorFromSpaceTransformFloat() -> ProjectiveTransform3DFloat
 ```
 
-#### Return Value
+## Return Value
 
 The transformation to ancestor space from this ARKit coordinate space.
 

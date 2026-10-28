@@ -5,13 +5,13 @@
 
 Check the validity and integrity of a user’s identity token.
 
-#### Overview
+## Overview
 
 After your app receives a user’s information, you can verify their associated identity token with the server to confirm that the token isn’t expired and ensure it hasn’t been tampered with or replayed to your app. For information about retrieving the identity token, see [Authenticating users with Sign in with Apple](./authenticating-users-with-sign-in-with-apple.md).
 
 ![A sequence diagram that describes the flow for verifying a user’s identity.](https://developer.apple.com/tutorials/images/com.apple.signinwithapple/media-3384756@2x.png)
 
-##### Verify the identity token
+### Verify the identity token
 
 Start by securely transmitting the identity token and authorization code to your app server. For more about the information required to verify a user’s identity, see [Authenticating users with Sign in with Apple](./authenticating-users-with-sign-in-with-apple.md).
 
@@ -27,7 +27,7 @@ To verify the identity token, your app server must:
 
 For more information, see [`id_token`](../SigninwithAppleJS/authorizationi/id_token.md).
 
-##### Obtain a refresh token
+### Obtain a refresh token
 
 After verifying the identity token on your server, call the [`Token validation`](../SigninwithAppleRESTAPI/generate-and-validate-tokens.md) endpoint with the `client_id`, `client_secret`, and `nonce` information.
 
@@ -35,7 +35,7 @@ On success, the server issues a refresh token, which you use to obtain access to
 
 You may continue to use the same refresh token until it’s invalidated — for example, by an Apple Account account password change, or when a user revokes access to your app — or the token verification fails. If any step of the token verification fails, direct your app to fetch a new identity token for the user. Obtaining a new identity token on the device requires user interaction.
 
-##### Manage the user session
+### Manage the user session
 
 After verifying the identity token, your app is responsible for managing the user session. You may tie the session’s lifetime to successful [`getCredentialState(forUserID:completion:)`](../AuthenticationServices/asauthorizationappleidprovider/getcredentialstate%28foruserid,completion%29.md) calls on Apple devices. This is a local, inexpensive, nonnetwork call enabled by the Apple Account system that keeps the Apple Account state on a device in sync with Apple servers.
 

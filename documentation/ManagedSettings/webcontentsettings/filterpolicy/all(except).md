@@ -17,7 +17,7 @@ The system blocks all websites except the ones you specify.
 case all(except: Set<WebDomain> = [])
 ```
 
-#### Discussion
+## Discussion
 
 Your app can specify up to 50 web domains exceptions.
 

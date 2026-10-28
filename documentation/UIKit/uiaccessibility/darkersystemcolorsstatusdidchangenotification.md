@@ -24,7 +24,7 @@ static let darkerSystemColorsStatusDidChangeNotification: NSNotification.Name
 extern NSNotificationName const UIAccessibilityDarkerSystemColorsStatusDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 This notification doesn’t include a parameter. Observe this notification using the default notification center.
 

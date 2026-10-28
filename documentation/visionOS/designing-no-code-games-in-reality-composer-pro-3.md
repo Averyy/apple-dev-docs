@@ -11,7 +11,7 @@ Build a video game in Reality Composer Pro without code using Script Graphs.
 - visionOS 27.0+
 - Xcode 27.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC26 session 252: [Design no-code games with Reality Composer Pro](https://developer.apple.com/videos/play/wwdc2026/252/).
 
@@ -21,7 +21,7 @@ This sample code project uses [Reality Composer Pro](https://developer.apple.com
 
 Rather than writing code, the sample relies on Script Graphs to drive almost every behavior of the squirrel and the world. A small [SwiftUI](../SwiftUI/SwiftUI.md) layer hosts the scene, shows the speech bubbles and buttons, and trades messages with those graphs. This sample demonstrates how to initialize the [RealityKitScripting](https://github.com/apple/realitykitscripting) runtime, pass messages between the Script Graph layer and the SwiftUI layer, and design platformer game mechanics inside Reality Composer Pro.
 
-#### Start the Script Graph runtime
+## Start the Script Graph runtime
 
 Script Graphs are the visual gameplay logic you author in Reality Composer Pro. Inside Reality Composer Pro, you attach a Scripting component to entities, edit the Script Graph associated with those entities, then publish the entities and logic together as a Reality file. Then in your Xcode project, you initialize the runtime before loading your content in a [`RealityView`](../RealityKit/realityview.md) marked with the `.realityScripting()` view modifier.
 
@@ -60,7 +60,7 @@ RealityView { content, attachments in
 .realityScripting()
 ```
 
-#### Pass messages between SwiftUI and the graph
+## Pass messages between SwiftUI and the graph
 
 The interface and the gameplay logic need to stay in agreement. When the squirrel speaks, a bubble appears, and when you press a button, the game responds. Script Graphs and [SwiftUI](../SwiftUI/SwiftUI.md) keep that agreement through named scene events. You declare each event once in Reality Composer Pro, after which both sides refer to the events by name.
 
@@ -86,7 +86,7 @@ scene.subscribe(forEventName: "squirrelTalk", on: { event in
 }).store(in: &cancellables)
 ```
 
-#### Drive game mechanics with Script Graphs
+## Drive game mechanics with Script Graphs
 
 Script Graphs drive almost every behavior in this game instead of Swift code. The moving platforms, the collectibles, and the squirrel’s animations all run as visual node graphs in the scene.
 

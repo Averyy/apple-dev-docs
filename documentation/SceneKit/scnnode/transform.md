@@ -25,7 +25,7 @@ var transform: SCNMatrix4 { get set }
 @property (nonatomic) SCNMatrix4 transform;
 ```
 
-#### Discussion
+## Discussion
 
 The transformation is the combination of the node’s [`rotation`](./rotation.md), [`position`](./position.md), and [`scale`](./scale.md) properties. The default transformation is [`SCNMatrix4Identity`](../scnmatrix4identity.md).
 

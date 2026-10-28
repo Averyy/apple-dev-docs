@@ -19,7 +19,7 @@ static let pattern: NSColorSpaceName
 extern NSColorSpaceName NSPatternColorSpace;
 ```
 
-#### Discussion
+## Discussion
 
 Identifies a pattern color space, which is simply an image that is repeated over and over again in a tiled pattern.
 

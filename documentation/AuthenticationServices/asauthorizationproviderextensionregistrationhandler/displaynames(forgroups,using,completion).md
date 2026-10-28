@@ -21,7 +21,7 @@ optional func displayNames(forGroups groups: [String], using loginManager: ASAut
 - (void) displayNamesForGroups:(NSArray<NSString *> *) groups loginManager:(ASAuthorizationProviderExtensionLoginManager *) loginManager completion:(void (^)(NSDictionary<NSString *,NSString *> *fullNames)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Request the display names for the supplied group identifiers.  The completion key is the identifier and the value is the display name.
 

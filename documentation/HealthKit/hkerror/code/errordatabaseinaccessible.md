@@ -28,7 +28,7 @@ HKErrorDatabaseInaccessible
 
 - [Executing Statistics Collection Queries](../../executing-statistics-collection-queries.md)
 
-#### Discussion
+## Discussion
 
 This error occurs when your app queries for HealthKit data while the device is locked. You can, however, still save data. This data is saved into a temporary file, which is merged with HealthKit’s data when the user unlocks their device.
 

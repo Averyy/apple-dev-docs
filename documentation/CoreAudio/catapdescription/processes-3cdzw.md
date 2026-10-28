@@ -14,7 +14,7 @@
 @property (atomic, copy, readwrite) NSArray<NSNumber *> * processes;
 ```
 
-#### Discussion
+## Discussion
 
 An NSArray of NSNumbers where each NSNumber holds the AudioObjectID of a process object to tap or exclude.
 

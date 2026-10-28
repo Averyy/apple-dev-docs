@@ -23,7 +23,7 @@ func cancel()
 - (void) cancel;
 ```
 
-#### Discussion
+## Discussion
 
 Cancel a query operation when you no longer need the results. You can use this method to cancel queries started using either the [`start()`](./start%28%29.md) method or by accessing the [`responses`](./responses-swift.property.md) property.  After you cancel a query operation, you can’t restart it. To perform a new query, create a new query object. For example, you might cancel one query and start a new one when the text in your app’s search control changes.
 

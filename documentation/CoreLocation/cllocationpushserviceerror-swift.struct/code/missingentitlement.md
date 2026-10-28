@@ -21,7 +21,7 @@ case missingEntitlement
 CLLocationPushServiceErrorMissingEntitlement
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Creating a location push service extension](../../creating-a-location-push-service-extension.md).
 

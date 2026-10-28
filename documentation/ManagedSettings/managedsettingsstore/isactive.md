@@ -17,7 +17,7 @@ Property that controls whether the store is active
 var isActive: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 An inactive store is not included in the effective settings calculation. Defaults to true.
 

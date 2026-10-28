@@ -5,11 +5,11 @@
 
 Describe a URL-based resource.
 
-#### Overview
+## Overview
 
 Use the `locator` element to describe the location of data files associated with another FCPXML element.
 
-##### Locator Element Attributes
+### Locator Element Attributes
 
 - **`id`**: Specifies a local identifier that you use within the FCPXML document.
 - **`url`**: A string that specifies the location of the resource as an absolute or relative URL. For details about the URL, see the [Location of Media Files](./media-rep.md#Location-of-Media-Files) section of `media-rep`.

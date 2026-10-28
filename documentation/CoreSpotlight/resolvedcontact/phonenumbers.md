@@ -19,7 +19,7 @@ The phone numbers for this contact.
 var phoneNumbers: [String]
 ```
 
-#### Discussion
+## Discussion
 
 Specify each phone number as a separate string in the array.
 

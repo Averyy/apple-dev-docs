@@ -24,7 +24,7 @@ case dynamic
 PHASENormalizationModeDynamic
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [`PHASENormalizationMode`](../phasenormalizationmode.md).
 

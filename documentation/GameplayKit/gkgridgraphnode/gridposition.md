@@ -24,7 +24,7 @@ var gridPosition: vector_int2 { get }
 @property (nonatomic, readonly) vector_int2 gridPosition;
 ```
 
-#### Discussion
+## Discussion
 
 You specify the position only when creating a node.
 

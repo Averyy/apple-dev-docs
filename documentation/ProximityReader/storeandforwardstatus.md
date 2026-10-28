@@ -17,7 +17,7 @@ A structure that describes the Store and Forward session status.
 struct StoreAndForwardStatus
 ```
 
-#### Overview
+## Overview
 
 A session’s `StoreAndForwardStatus` tells you when the Store and Forward session expires and how many successful reads the framework performed using a Store and Forward session.
 

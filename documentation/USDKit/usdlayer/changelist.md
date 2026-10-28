@@ -20,7 +20,7 @@ A list of changes made to a layer.
 struct ChangeList
 ```
 
-#### Overview
+## Overview
 
 Used by the layer change notification system to describe what modifications occurred between two states of a layer.
 

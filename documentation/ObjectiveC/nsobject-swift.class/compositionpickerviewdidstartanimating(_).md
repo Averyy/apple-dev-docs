@@ -21,7 +21,7 @@ func compositionPickerViewDidStartAnimating(_ pickerView: QCCompositionPickerVie
 - (void) compositionPickerViewDidStartAnimating:(QCCompositionPickerView *) pickerView;
 ```
 
-#### Discussion
+## Discussion
 
 Quartz Composer invokes  this method when  the composition picker view starts animating a composition. Implement this method if you want to perform custom tasks at that time.
 

@@ -5,13 +5,13 @@
 
 Preserve battery life and improve performance on the watch by providing a timeline with expected data and updates.
 
-#### Overview
+## Overview
 
 ClockKit renders your complication in advance to ensure that it’s instantly available when the user glances at their watch. To minimize power usage, create a timeline that includes your app’s current data as well as future entries. These timeline entries let ClockKit automatically update your complication without requiring further background tasks.
 
 For example, a meeting complication could display all the meetings that the user currently has scheduled, with a timeline entry for each meeting. If details about the meeting change, your server can use PushKit [`complication`](../PushKit/pkpushtype/complication.md) notifications to alert the user of these changes, updating the timeline as needed. For more information, see [Keeping your complications up to date](./keeping-your-complications-up-to-date.md).
 
-##### Batch Load Data
+### Batch Load Data
 
 To batch load data for future timeline entries, implement your data source’s [`getTimelineEndDate(for:withHandler:)`](./clkcomplicationdatasource/gettimelineenddate%28for,withhandler%29.md) method and pass the handler the date of the last timeline entry you can create. For example, a meeting app might return the date of the user’s last meeting.
 
@@ -31,7 +31,7 @@ This process is similar to implementing the [`getCurrentTimelineEntry(for:withHa
 
 For details on creating timeline entries, see [Creating a timeline entry](./creating-a-timeline-entry.md).
 
-##### Schedule Future Events
+### Schedule Future Events
 
 When constructing your timeline entries, choose dates that make sense based on when the user needs to see the data. ClockKit displays a timeline entry at the time specified by the entry’s [`date`](./clkcomplicationtimelineentry/date.md) property. For some types of data, you may want to specify a date before the event actually occurs. For example, if you’re implementing a meeting app, alert users to the meeting before it starts. One option is to set the dates so that the complication displays the next meeting, as soon as the current meeting begins.
 

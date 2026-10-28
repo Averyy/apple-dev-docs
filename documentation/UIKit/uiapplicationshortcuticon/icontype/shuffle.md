@@ -22,7 +22,7 @@ case shuffle
 UIApplicationShortcutIconTypeShuffle
 ```
 
-#### Discussion
+## Discussion
 
 ![Shuffle symbol](https://developer.apple.com/tutorials/images/com.apple.uikit/media-2934535@2x.png)
 

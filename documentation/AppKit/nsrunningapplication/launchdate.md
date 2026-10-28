@@ -19,7 +19,7 @@ var launchDate: Date? { get }
 @property (copy, readonly, nullable) NSDate * launchDate;
 ```
 
-#### Discussion
+## Discussion
 
 This property is only available for applications that were launched by LaunchServices.
 

@@ -26,7 +26,7 @@ func preservationPriority(forTag tag: String) -> Double
 - (double) preservationPriorityForTag:(NSString *) tag;
 ```
 
-#### Return Value
+## Return Value
 
 The preservation priority for the specified `tag`. Possible values are between `0.0` and `1.0`
 

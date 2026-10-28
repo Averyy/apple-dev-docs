@@ -20,7 +20,7 @@ A directive that adds a prominent button or link to a page’s header.
 @CallToAction(url: URL?, file: ResourceReference?, purpose: Purpose?, label: String?)
 ```
 
-#### Overview
+## Overview
 
 A “Call to Action” has two main components: a link or file path, and the link text to display.
 

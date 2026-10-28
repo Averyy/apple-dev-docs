@@ -24,7 +24,7 @@ static OSDictionaryPtr withDictionary(const OSDictionary *dictionary, uint32_t c
 static OSPtr<OSDictionary> withDictionary(const OSDictionary *dict, unsigned int capacity);
 ```
 
-#### Return Value
+## Return Value
 
 NULL on failure, otherwise the allocated OSDictionary with reference count 1 to be released by the caller.
 

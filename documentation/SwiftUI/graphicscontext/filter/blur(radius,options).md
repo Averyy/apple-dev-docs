@@ -21,7 +21,7 @@ Returns a filter that applies a Gaussian blur.
 static func blur(radius: CGFloat, options: GraphicsContext.BlurOptions = BlurOptions()) -> GraphicsContext.Filter
 ```
 
-#### Return Value
+## Return Value
 
 A filter that applies Gaussian blur.
 

@@ -16,7 +16,7 @@ Prevents the system from sleeping and allows the system to reside in Dark Wake f
 #define kIOPMAssertionTypePreventSystemSleep
 ```
 
-#### Discussion
+## Discussion
 
 When asserted and set to level [`kIOPMAssertionLevelOn`](./api-1557096-assertion/kiopmassertionlevelon.md), the system will prefer to enter the Dark Wake state, or remain in Dark Wake if already there, rather than go to sleep.
 

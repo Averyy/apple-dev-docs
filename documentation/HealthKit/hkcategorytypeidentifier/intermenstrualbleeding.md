@@ -24,7 +24,7 @@ static let intermenstrualBleeding: HKCategoryTypeIdentifier
 extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierIntermenstrualBleeding;
 ```
 
-#### Discussion
+## Discussion
 
 Use a [`HKCategoryValue.notApplicable`](../hkcategoryvalue/notapplicable.md) value with these samples.
 

@@ -22,7 +22,7 @@ var remediationMap: [String : [String : NSObject]]? { get set }
 @property (copy, nullable) NSDictionary<NSString *,NSDictionary<NSString *,NSObject *> *> * remediationMap;
 ```
 
-#### Discussion
+## Discussion
 
 Each key in this dictionary corresponds to a string in the remediation portion of the block page. The value of each key is a dictionary that maps keys to the custom strings to be inserted into the block page. The keys for the sub-dictionaries are defined by the Filter Control Provider. When the Filter Data Provider creates a “remediate” verdict using [[`NEFilterDataVerdict`](../nefilterdataverdict.md) `remediateVerdictWithRemediationURLMapKey:remediationButtonTextMapKey:`], it specifies the keys corresponding to the desired custom strings to be inserted into the block page. The system then uses these keys to fetch the custom strings from this dictionary and inserts them into the block page.
 

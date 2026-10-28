@@ -32,7 +32,7 @@ var allParameterValues: Bool { get }
 @property (atomic, readonly) BOOL allParameterValues;
 ```
 
-#### Discussion
+## Discussion
 
 KVO notifications are issued on this property in response to certain events where potentially all parameter values are invalidated—for example, the selection of a preset.
 

@@ -21,7 +21,7 @@ func impactOccurred()
 - (void) impactOccurred;
 ```
 
-#### Discussion
+## Discussion
 
 This method tells the generator that an impact has occurred. In response, the generator may play the appropriate haptics based on the [`UIImpactFeedbackGenerator.FeedbackStyle`](./feedbackstyle.md) value passed to the generator’s [`init(style:)`](./init%28style%29.md) initializer.
 

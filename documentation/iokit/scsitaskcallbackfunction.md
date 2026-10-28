@@ -16,7 +16,7 @@ Asynchronous callback routine definition.
 typedef void (*SCSITaskCallbackFunction)(SCSIServiceResponse serviceResponse, SCSITaskStatus taskStatus, UInt64 bytesTransferred, void *refCon);
 ```
 
-#### Discussion
+## Discussion
 
 Asynchronous callback routine definition. Any function which is used as a callback routine for SCSITasks must conform to this function definition.
 

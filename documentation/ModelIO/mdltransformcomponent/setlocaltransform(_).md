@@ -24,7 +24,7 @@ optional func setLocalTransform(_ transform: matrix_float4x4)
 - (void) setLocalTransform:(matrix_float4x4) transform;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method sets both the [`minimumTime`](./minimumtime.md) and [`maximumTime`](./maximumtime.md) properties to zero.
 

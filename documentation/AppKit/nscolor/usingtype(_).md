@@ -19,11 +19,11 @@ func usingType(_ type: NSColor.ColorType) -> NSColor?
 - (NSColor *) colorUsingType:(NSColorType) type;
 ```
 
-#### Return Value
+## Return Value
 
 A compatible color object, or `nil` if a compatible color object is not available.
 
-#### Discussion
+## Discussion
 
 Before accessing the details of an [`NSColor`](../nscolor.md) object, use this method to ensure that you have an object capable of returning those details. For example, before you access the component values, make sure you have a color object of type [`NSColor.ColorType.componentBased`](./colortype/componentbased.md). For some types of colors, conversions to a compatible color type may be possible.
 

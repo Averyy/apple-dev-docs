@@ -25,7 +25,7 @@ let kCVPixelBufferPoolFreeBufferNotification: CFString
 extern CFStringRef const kCVPixelBufferPoolFreeBufferNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The system posts this notification if a buffer becomes available after the [`CVPixelBufferPoolCreatePixelBufferWithAuxAttributes(_:_:_:_:)`](./cvpixelbufferpoolcreatepixelbufferwithauxattributes%28_,_,_,_%29.md) function fails because the system exceeds the threshold you set for the [`kCVPixelBufferPoolAllocationThresholdKey`](./kcvpixelbufferpoolallocationthresholdkey.md) key. The system won’t post this notification if you don’t set a value for the [`kCVPixelBufferPoolAllocationThresholdKey`](./kcvpixelbufferpoolallocationthresholdkey.md) key for the `auxAttributes` parameter of the [`CVPixelBufferPoolCreatePixelBufferWithAuxAttributes(_:_:_:_:)`](./cvpixelbufferpoolcreatepixelbufferwithauxattributes%28_,_,_,_%29.md) function.
 

@@ -21,7 +21,7 @@ let CPMaximumListSectionImageSize: CGSize
 extern const CGSize CPMaximumListSectionImageSize;
 ```
 
-#### Discussion
+## Discussion
 
 To properly size your images, use [`carTraitCollection`](./cpinterfacecontroller/cartraitcollection.md) to determine the display scale of the car screen.
 

@@ -19,7 +19,7 @@ optional func replaceCharacters(in range: NSRange, with string: String)
 - (void) replaceCharactersInRange:(NSRange) range withString:(NSString *) string;
 ```
 
-#### Discussion
+## Discussion
 
 See [`NSTextFinder`](../nstextfinder.md) for a complete description.
 

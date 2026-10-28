@@ -26,7 +26,7 @@ var version: UInt16
 uint16_t version;
 ```
 
-#### Discussion
+## Discussion
 
 For the structure defined here, the Game Controller framework uses a value of `0x0100`.
 

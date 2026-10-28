@@ -5,7 +5,7 @@
 
 Define standard ways to handle conflicts during a save operation.
 
-#### Overview
+## Overview
 
 `NSErrorMergePolicy` is the default policy. It is the only policy that requires action to correct any conflicts. The other policies make a save go through silently by making changes that follow rules specific to that policy.
 

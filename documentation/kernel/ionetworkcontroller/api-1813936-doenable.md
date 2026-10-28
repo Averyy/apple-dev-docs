@@ -12,7 +12,7 @@ virtual IOReturn doEnable(
  IOService *client);
 ```
 
-#### Overview
+## Overview
 
 Do not use this method, it may be removed in the future. See enable().
 

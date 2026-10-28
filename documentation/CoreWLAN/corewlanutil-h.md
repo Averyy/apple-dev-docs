@@ -3,7 +3,7 @@
 **Framework**: Core WLAN  
 **Role**: API Collection
 
-##### Included Headers
+### Included Headers
 
 - <Foundation/Foundation.h>
 

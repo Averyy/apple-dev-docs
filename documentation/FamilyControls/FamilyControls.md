@@ -11,7 +11,7 @@ Authorize your app to provide parental controls on a device.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 
-#### Overview
+## Overview
 
 To authorize your parental controls app, use a shared [`AuthorizationCenter`](./authorizationcenter.md) instance. You can authorize parental controls on any device.
 

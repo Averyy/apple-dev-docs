@@ -19,7 +19,7 @@ var needsDisplay: Bool { get set }
 @property BOOL needsDisplay;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to [`true`](../../Swift/true.md) when you want the menu item to be drawn.
 

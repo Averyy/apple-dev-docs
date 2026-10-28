@@ -20,7 +20,7 @@ System-specific information.
 uint32_t reserved[6];
 ```
 
-#### Discussion
+## Discussion
 
 The values of this array must be 0.
 

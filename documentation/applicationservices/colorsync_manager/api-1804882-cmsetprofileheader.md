@@ -14,11 +14,11 @@ CMError CMSetProfileHeader (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 You can use the `CMSetProfileHeader` function to set a header for a version 1.0 or a version 2.x profile. Before you call this function, you must set the values for the header, depending on the version of the profile. For a version 2.x profile, you use a data structure of type [`CM2Header`](../cm2header.md). For a version 1.0 profile, you use a data structure of type `CMHeader`. You pass the header you supply in the `CMAppleProfileHeader` union, described in [`CMAppleProfileHeader`](../api-1560290-cmappleprofileheader.md). 
 

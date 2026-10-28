@@ -16,11 +16,11 @@ CMError CMGetPS2ColorRenderingVMSize (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 Your application or device driver can call this function to determine if the virtual memory size of the color rendering dictionary exceeds the printer’s capacity before sending the CRD to the printer. If the printer’s profile contains the Apple-defined optional tag `'psvm'` described in [`CMConcatProfileSet`](../cmconcatprofileset.md), then the default CMM will return the data supplied by this tag specifying the CRD virtual memory size for the rendering intent’s CRD. If the printer’s profile does not contain this tag, then the CMM uses an algorithm to assess the VM size of the CRD, in which case the assessment can be larger than the actual maximum VM size. 
 

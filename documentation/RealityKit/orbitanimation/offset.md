@@ -20,7 +20,7 @@ The time, in seconds, at which the animation begins within the duration.
 var offset: TimeInterval { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0`, which indicates that the animation plays with no offset. Setting a value for this property moves the animation data along the timeline and doesn’t change timing. If you set a [`fillMode`](./fillmode.md) other than [`none`](../animationfillmode/none.md), the animation fills the vacant area created by the offset according to the characteristics of the specified fill mode.
 

@@ -17,7 +17,7 @@ Protocol for values usable as an index with [`MLXArray`](./mlxarray.md).
 protocol MLXArrayIndex
 ```
 
-##### See Also
+### See Also
 
 - [Indexing](./indexing.md)
 - [`subscript(_:stream:)`](./mlxarray/subscript%28_,stream%29-375a0.md)

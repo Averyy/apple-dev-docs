@@ -15,7 +15,7 @@ typedef struct IOPacketBufferConstraints {
 } IOPacketBufferConstraints;
 ```
 
-#### Overview
+## Overview
 
 Constraint parameters, specified by a driver, for the data buffer in a packet mbuf. This is observed by allocatePacket() to satisfy the stated requirements.
 

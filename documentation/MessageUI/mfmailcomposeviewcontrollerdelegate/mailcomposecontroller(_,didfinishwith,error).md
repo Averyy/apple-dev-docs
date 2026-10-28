@@ -22,7 +22,7 @@ optional func mailComposeController(_ controller: MFMailComposeViewController, d
 - (void) mailComposeController:(MFMailComposeViewController *) controller didFinishWithResult:(MFMailComposeResult) result error:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 Your implementation of this method should dismiss the mail composition view. Implementation of this method is optional, but expected.
 

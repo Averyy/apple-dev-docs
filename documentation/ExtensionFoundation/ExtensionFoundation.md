@@ -20,7 +20,7 @@ Create executable bundles to extend the functionality of other apps.
 - [Adding support for app extensions to your app](./adding-support-for-app-extensions-to-your-app.md)
 - [Building an app extension to support a host app](./building-an-app-extension-to-support-a-host-app.md)
 
-#### Overview
+## Overview
 
 An app extension is an executable code bundle that extends the capabilities of the system, or the capabilities of another app. At the system level, app extensions give you a way to add your custom capabilities to system features. For example, [widgets](../WidgetKit/creating-a-widget-extension.md) display your app’s content in specific locations like the iOS Home Screen and Lock screen. To build app extensions for system features, you typically use a different framework or a dedicated set of types instead of this framework.
 

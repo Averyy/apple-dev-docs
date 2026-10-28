@@ -24,11 +24,11 @@ class func success(with resolvedMediaAffinityType: INMediaAffinityType) -> Self
 + (instancetype) successWithResolvedMediaAffinityType:(INMediaAffinityType) resolvedMediaAffinityType;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INMediaAffinityTypeResolutionResult`](../inmediaaffinitytyperesolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you’re able to update the user’s affinity for the media item.
 

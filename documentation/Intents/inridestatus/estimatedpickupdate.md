@@ -31,7 +31,7 @@ var estimatedPickupDate: Date? { get set }
 @property (atomic, copy, readwrite, nullable) NSDate * estimatedPickupDate;
 ```
 
-#### Discussion
+## Discussion
 
 Specify the estimated date and time that your driver will pick up the user’s party. Siri and Maps display this information to the user.
 

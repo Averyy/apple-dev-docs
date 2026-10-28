@@ -21,7 +21,7 @@ Converts single-precision polar coordinates to rectangular coordinates, using th
 extern void vDSP_rect(const float *__A, vDSP_Stride __IA, float *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 The function uses the following calculation to convert polar coordinates to rectangular coordinates:
 

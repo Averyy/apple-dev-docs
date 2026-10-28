@@ -31,7 +31,7 @@ Available when `Self` is `Tag.List`.
 - [Adding tags to tests](../addingtags.md)
 - [Defining test functions](../definingtests.md)
 
-#### Return Value
+## Return Value
 
 An instance of [`Tag.List`](../tag/list.md) containing the specified tags.
 

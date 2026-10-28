@@ -24,7 +24,7 @@ var producesCombinableFragments: Bool { get set }
 @property (nonatomic) BOOL producesCombinableFragments;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md). Set the value to [`true`](../../Swift/true.md) when you use multiple asset writers to produce distinct streams that complement each other, such as HLS encodings or bit rate variants.
 

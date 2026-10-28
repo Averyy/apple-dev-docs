@@ -19,7 +19,7 @@ init(bundleIdentifier: String)
 + (NSAppleEventDescriptor *) descriptorWithBundleIdentifier:(NSString *) bundleIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The result is suitable for use as the `targetDescriptor` parameter of `+appleEventWithEventClass:eventID:targetDescriptor:returnID:transactionID:`.
 

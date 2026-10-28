@@ -21,7 +21,7 @@ init(title: String, style: CPAlertAction.Style, handler: @escaping CPAlertAction
 - (instancetype) initWithTitle:(NSString *) title style:(CPAlertActionStyle) style handler:(CPAlertActionHandler) handler;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized alert action.
 

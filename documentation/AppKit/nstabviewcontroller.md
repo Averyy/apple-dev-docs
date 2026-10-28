@@ -19,7 +19,7 @@ class NSTabViewController
 @interface NSTabViewController : NSViewController
 ```
 
-#### Overview
+## Overview
 
 Each page of content is managed by a separate child view controller. Navigation between child view controllers is accomplished with the help of an [`NSTabView`](./nstabview.md) object, which the tab view controller manages. When the user selects a new tab, the tab view controller displays the content associated with the associated child view controller, replacing the previous content.
 

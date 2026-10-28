@@ -29,7 +29,7 @@ nonisolated
 func onScrollPhaseChange(_ action: @escaping (ScrollPhase, ScrollPhase, ScrollPhaseChangeContext) -> Void) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to be informed of changes to a scroll view’s phase. A scroll view may be in a variety of different phases like panning or decelerating. See [`ScrollPhase`](../scrollphase.md) for more information on the phases of a scroll view.
 

@@ -19,7 +19,7 @@ func SCNetworkInterfaceGetHardwareAddressString(_ interface: SCNetworkInterface)
 CFStringRefSCNetworkInterfaceGetHardwareAddressString(SCNetworkInterfaceRef interface);
 ```
 
-#### Return Value
+## Return Value
 
 The hardware MAC (Media Access Control) address for the interface.
 

@@ -20,7 +20,7 @@ func removeValue(at index: Int, fromPropertyWithKey key: String)
 - (void) removeValueAtIndex:(NSUInteger) index fromPropertyWithKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 The method `removeFrom<Key>AtIndex:` is invoked if it exists. If no corresponding scripting-KVC-compliant method (`-removeFrom<Key>AtIndex:`) is found, this method invokes `-mutableArrayValueForKey:` and mutates the result.
 

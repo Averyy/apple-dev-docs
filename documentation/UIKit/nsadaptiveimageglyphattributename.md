@@ -20,7 +20,7 @@ The adaptive image glyph for the text.
 extern NSAttributedStringKey const NSAdaptiveImageGlyphAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSAdaptiveImageGlyph`](./nsadaptiveimageglyph.md) object. The default value of this property is `nil`, which indicates there is no adaptive image glyph.
 

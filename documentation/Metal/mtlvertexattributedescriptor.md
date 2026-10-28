@@ -24,7 +24,7 @@ class MTLVertexAttributeDescriptor
 @interface MTLVertexAttributeDescriptor : NSObject
 ```
 
-#### Overview
+## Overview
 
 A vertex attribute descriptor provides organization information so a vertex shader function can locate and load data into its arguments. The descriptor maps memory locations to attribute locations. It supports access to multiple attributes (such as vertex coordinates, surface normals, and texture coordinates) that are interleaved within the same buffer.
 

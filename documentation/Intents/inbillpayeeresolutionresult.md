@@ -25,7 +25,7 @@ class INBillPayeeResolutionResult
 @interface INBillPayeeResolutionResult : INIntentResolutionResult
 ```
 
-#### Overview
+## Overview
 
 An [`INBillPayeeResolutionResult`](./inbillpayeeresolutionresult.md) object is what you return when resolving parameters containing an [`INBillPayee`](./inbillpayee.md) object. Use the creation method that best reflects your ability to resolve the parameter successfully. For additional resolution options, see [`INIntentResolutionResult`](./inintentresolutionresult.md).
 

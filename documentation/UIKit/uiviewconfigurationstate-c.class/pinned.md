@@ -19,7 +19,7 @@ A Boolean value that indicates whether the view is in a pinned state.
 @property (nonatomic, getter=isPinned) BOOL pinned;
 ```
 
-#### Discussion
+## Discussion
 
 This state applies to header and footer views.
 

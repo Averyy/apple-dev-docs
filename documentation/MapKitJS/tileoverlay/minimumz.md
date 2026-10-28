@@ -16,7 +16,7 @@ get minimumZ(): number | null;
 set minimumZ(minimumZ: number | null);
 ```
 
-#### Discussion
+## Discussion
 
 By default, the minimum zoom level for a tile overlay is the same as the minimum zoom level for MapKit JS built-in tiles. MapKit JS requests the overlay tiles when the map is above or at this zoom level.
 

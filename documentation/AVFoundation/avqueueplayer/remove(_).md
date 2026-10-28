@@ -26,7 +26,7 @@ func remove(_ item: AVPlayerItem)
 - (void) removeItem:(AVPlayerItem *) item;
 ```
 
-#### Discussion
+## Discussion
 
 If the item is currently playing, calling this method has the same effect as calling the [`advanceToNextItem()`](./advancetonextitem%28%29.md) method.
 

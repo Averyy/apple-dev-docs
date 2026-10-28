@@ -23,7 +23,7 @@ An entitlement that lets a background task run inference on the Neural Engine.
 
 **Default**: `NO`
 
-#### Discussion
+## Discussion
 
 This entitlement works with [`BGContinuedProcessingTask`](../../BackgroundTasks/bgcontinuedprocessingtask.md), which lets your app’s critical inference work finish on the Neural Engine even when your app moves to the background before the task completes.
 

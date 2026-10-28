@@ -21,7 +21,7 @@ Represents a location in the file system.
 struct FilePath
 ```
 
-#### Overview
+## Overview
 
 This structure recognizes directory separators  (e.g. `/`), roots, and requires that the content terminates in a NUL (`0x0`). Beyond that, it does not give any meaning to the bytes that it contains. The file system defines how the content is interpreted; for example, by its choice of string encoding.
 

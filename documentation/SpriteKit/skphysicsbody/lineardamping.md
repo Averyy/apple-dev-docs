@@ -25,7 +25,7 @@ var linearDamping: CGFloat { get set }
 @property (nonatomic, assign) CGFloat linearDamping;
 ```
 
-#### Discussion
+## Discussion
 
 This property is used to simulate fluid or air friction forces on the body. The property must be a value between `0.0` and `1.0`. The default value is `0.1`. If the value is `0.0`, no linear damping is applied to the object.
 

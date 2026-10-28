@@ -32,7 +32,7 @@ func hasProperty(_ property: String!) -> Bool
 - (BOOL) hasProperty:(JSValueProperty) property;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the JavaScript object has a defined property by that name; otherwise, [`false`](../../Swift/false.md).
 

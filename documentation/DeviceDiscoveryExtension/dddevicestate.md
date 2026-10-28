@@ -23,7 +23,7 @@ enum DDDeviceState
 enum DDDeviceState : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The device ([`DDDevice`](./dddevice.md)) [`state`](./dddevice/state.md) property is of this type.
 

@@ -25,7 +25,7 @@ func CTFontGetUnderlinePosition(_ font: CTFont) -> CGFloat
 extern CGFloat CTFontGetUnderlinePosition(CTFontRef font);
 ```
 
-#### Return Value
+## Return Value
 
 The font underline-position metric scaled according to the point size and matrix of the font reference.
 

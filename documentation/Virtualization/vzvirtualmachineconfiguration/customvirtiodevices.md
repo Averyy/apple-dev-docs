@@ -19,7 +19,7 @@ var customVirtioDevices: [VZCustomVirtioDeviceConfiguration] { get set }
 @property (copy, readwrite) NSArray<VZCustomVirtioDeviceConfiguration *> * customVirtioDevices;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is an empty array. If your VM exposes one or more virtio  devices, assign an array of [`VZCustomVirtioDeviceConfiguration`](../vzcustomvirtiodeviceconfiguration.md) objects to this property.
 

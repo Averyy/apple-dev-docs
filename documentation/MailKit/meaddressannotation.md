@@ -19,7 +19,7 @@ class MEAddressAnnotation
 @interface MEAddressAnnotation : NSObject
 ```
 
-#### Overview
+## Overview
 
 Mail displays the status of an annotation as part of the address tokens in the To, Cc, and Bcc fields using a status icon and color.
 

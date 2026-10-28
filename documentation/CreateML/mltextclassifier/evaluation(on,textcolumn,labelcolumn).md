@@ -25,7 +25,7 @@ func evaluation(on dataFrame: DataFrame, textColumn: String, labelColumn: String
 func evaluation(on labeledTexts: MLDataTable, textColumn: String, labelColumn: String) -> MLClassifierMetrics
 ```
 
-#### Return Value
+## Return Value
 
 The computed metrics or an error message.
 

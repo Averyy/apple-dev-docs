@@ -21,7 +21,7 @@ The name of the animation resource.
 @preconcurrency final let name: String?
 ```
 
-#### Discussion
+## Discussion
 
 You can get an [`AnimationPlaybackController`](../animationplaybackcontroller.md) instance ready to play a particular resource that you reference by its name using the `playAnimation(named:transitionDuration:startsPaused:)` method.
 

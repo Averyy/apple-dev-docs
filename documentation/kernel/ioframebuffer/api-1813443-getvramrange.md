@@ -12,11 +12,11 @@ virtual IODeviceMemory * getVRAMRange(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 an IODeviceMemory instance. A reference will be consumed by the caller for each call of this method - the implementatation should create a new instance of IODeviceMemory for each call, or return one instance with a retain for each call.
 
-#### Overview
+## Overview
 
 IOFramebuffer subclasses should implement this method to describe all the vram memory available on the card. The OS will map this memory range into user space for client access - the range should only include vram memory not hardware registers.
 

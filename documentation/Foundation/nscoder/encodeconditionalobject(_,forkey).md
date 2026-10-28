@@ -25,7 +25,7 @@ func encodeConditionalObject(_ object: Any?, forKey key: String)
 - (void) encodeConditionalObject:(id) object forKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses must override this method if they support keyed coding.
 

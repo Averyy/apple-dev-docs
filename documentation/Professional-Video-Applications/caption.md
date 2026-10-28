@@ -5,7 +5,7 @@
 
 Represents a closed-caption or subtitle with one or more text blocks.
 
-#### Overview
+## Overview
 
 A `caption` element contains one or more [text](./text.md) elements each of which describes a block of text with custom styles.
 

@@ -17,7 +17,7 @@ A state that represents the end of the session.
 case end
 ```
 
-#### Discussion
+## Discussion
 
 The electricity measurement stage must be 0.
 

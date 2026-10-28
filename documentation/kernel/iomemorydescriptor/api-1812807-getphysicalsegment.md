@@ -22,11 +22,11 @@ virtual addr64_t getPhysicalSegment(
 /* !__LP64__ */
 ```
 
-#### Return Value
+## Return Value
 
 A physical address, or zero if the offset is beyond the length of the memory.
 
-#### Overview
+## Overview
 
 This method returns the physical address of the byte at the given offset into the memory, and optionally the length of the physically contiguous segment from that offset.
 

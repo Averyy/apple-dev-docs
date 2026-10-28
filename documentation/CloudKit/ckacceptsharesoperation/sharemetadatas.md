@@ -25,7 +25,7 @@ var shareMetadatas: [CKShare.Metadata]? { get set }
 @property (nonatomic, copy, nullable) NSArray<CKShareMetadata *> * shareMetadatas;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to view or change the metadata of the shares you want to process. If you intend to specify or change the value of this property, do so before you execute the operation or submit it to a queue.
 

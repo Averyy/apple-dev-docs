@@ -30,7 +30,7 @@ func textureNamed(_ name: String) -> SKTexture
 - [About Texture Atlases](../about-texture-atlases.md)
 - [Maximizing Node Drawing Performance](../maximizing-node-drawing-performance.md)
 
-#### Return Value
+## Return Value
 
 The SpriteKit texture associated with the name. If the specified image does not exist in the atlas object, SpriteKit returns a placeholder texture image.
 

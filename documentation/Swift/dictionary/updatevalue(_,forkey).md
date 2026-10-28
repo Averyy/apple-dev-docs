@@ -24,11 +24,11 @@ mutating func updateValue(_ value: Value, forKey key: Key) -> Value?
 
 Available when `Key` conforms to `Hashable`.
 
-#### Return Value
+## Return Value
 
 The value that was replaced, or `nil` if a new key-value pair was added.
 
-#### Discussion
+## Discussion
 
 Use this method instead of key-based subscripting when you need to know whether the new value supplants the value of an existing key. If the value of an existing key is updated, `updateValue(_:forKey:)` returns the original value.
 

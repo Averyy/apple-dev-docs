@@ -25,7 +25,7 @@ func decodeObject(forKey key: String) -> Any?
 - (id) decodeObjectForKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses must override this method if they perform keyed coding.
 

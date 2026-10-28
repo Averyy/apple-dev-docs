@@ -21,7 +21,7 @@ An object that represents an optical flow that an image-analysis request produce
 struct OpticalFlowObservation
 ```
 
-#### Overview
+## Overview
 
 The optical flow is a 2D image, with each pixel representing the directional change from a previous to current image.
 

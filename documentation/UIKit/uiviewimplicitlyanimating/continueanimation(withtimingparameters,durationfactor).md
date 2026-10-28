@@ -23,7 +23,7 @@ optional func continueAnimation(withTimingParameters parameters: (any UITimingCu
 - (void) continueAnimationWithTimingParameters:(id<UITimingCurveProvider>) parameters durationFactor:(CGFloat) durationFactor;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to change the timing and duration parameters for the current animations temporarily. You define the conditions for which it’s safe to call this method, but typically it’s an error to call this method on an animator that’s inactive, running, or not interruptible. You should retain the original timing and duration values and restore them when your animator transitions back to the inactive state.
 

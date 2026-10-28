@@ -25,7 +25,7 @@ func enumerateDates(startingAfter start: Date, matching comps: DateComponents, o
 - (void) enumerateDatesStartingAfterDate:(NSDate *) start matchingComponents:(NSDateComponents *) comps options:(NSCalendarOptions) opts usingBlock:(void (^)(NSDate *date, BOOL exactMatch, BOOL *stop)) block;
 ```
 
-#### Discussion
+## Discussion
 
 Executes a given block with dates that most closely match a given set of components after a given date, until the enumeration is stopped.
 

@@ -21,11 +21,11 @@ Republishes all elements that match a provided error-throwing closure.
 func tryFilter(_ isIncluded: @escaping (Self.Output) throws -> Bool) -> Publishers.TryFilter<Self>
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that republishes all elements that satisfy the closure.
 
-#### Discussion
+## Discussion
 
 Use [`tryFilter(_:)`](./tryfilter%28_%29.md) to filter elements evaluated in an error-throwing closure. If the `isIncluded` closure throws an error, the publisher fails with that error.
 

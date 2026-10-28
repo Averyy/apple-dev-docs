@@ -23,7 +23,7 @@ var kDNSServiceType_LOC: Int { get }
 kDNSServiceType_LOC
 ```
 
-#### Discussion
+## Discussion
 
 Location Information.
 

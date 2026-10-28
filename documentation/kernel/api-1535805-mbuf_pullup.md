@@ -13,11 +13,11 @@
 errno_t mbuf_pullup(mbuf_t *mbuf, size_t len);
 ```
 
-#### Return Value
+## Return Value
 
 0 upon success otherwise the errno error. In the case of an error, the mbuf chain has been freed.
 
-#### Discussion
+## Discussion
 
 Move the next len bytes in to mbuf from other mbufs in the chain. This is commonly used to get the IP and TCP or UDP header contiguous in the first mbuf. If mbuf_pullup fails, the entire mbuf chain will be freed.
 

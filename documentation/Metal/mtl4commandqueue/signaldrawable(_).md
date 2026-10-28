@@ -25,7 +25,7 @@ func signalDrawable(_ drawable: any MTLDrawable)
 - (void) signalDrawable:(id<MTLDrawable>) drawable;
 ```
 
-#### Discussion
+## Discussion
 
 Signaling when rendering to a [`MTLDrawable`](../mtldrawable.md) instance is complete indicates that it’s safe to present it to the display.
 

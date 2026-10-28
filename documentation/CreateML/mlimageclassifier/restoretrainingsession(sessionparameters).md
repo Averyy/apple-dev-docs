@@ -19,7 +19,7 @@ Creates an asynchronous training session for an image classifier by restoring an
 static func restoreTrainingSession(sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLImageClassifier>
 ```
 
-#### Return Value
+## Return Value
 
 An [`MLTrainingSession`](../mltrainingsession.md) that represents the image classifier training session.
 

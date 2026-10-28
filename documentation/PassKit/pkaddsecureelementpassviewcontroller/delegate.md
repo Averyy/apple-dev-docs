@@ -22,7 +22,7 @@ weak var delegate: (any PKAddSecureElementPassViewControllerDelegate)? { get set
 @property (nonatomic, weak, nullable) id<PKAddSecureElementPassViewControllerDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate must adopt the [`PKAddSecureElementPassViewControllerDelegate`](../pkaddsecureelementpassviewcontrollerdelegate.md) protocol. The view controller doesn’t retain the delegate.
 

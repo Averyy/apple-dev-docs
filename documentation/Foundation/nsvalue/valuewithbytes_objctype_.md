@@ -21,11 +21,11 @@ Creates a value object containing the specified value, interpreted with the spec
 + (NSValue *) valueWithBytes:(const void *) value objCType:(const char *) type;
 ```
 
-#### Return Value
+## Return Value
 
 A new value object that contains `value`, which is interpreted as being of the Objective-C type `type`.
 
-#### Discussion
+## Discussion
 
 See [Number and Value Programming Topics](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/NumbersandValues/NumbersandValues.html#//apple_ref/doc/uid/10000038i) for other considerations in creating a value object and code examples.
 

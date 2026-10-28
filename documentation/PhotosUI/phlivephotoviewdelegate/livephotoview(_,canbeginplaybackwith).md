@@ -24,7 +24,7 @@ optional func livePhotoView(_ livePhotoView: PHLivePhotoView, canBeginPlaybackWi
 - (BOOL) livePhotoView:(PHLivePhotoView *) livePhotoView canBeginPlaybackWithStyle:(PHLivePhotoViewPlaybackStyle) playbackStyle;
 ```
 
-#### Return Value
+## Return Value
 
 Whether the playback of Live Photo content can begin.
 

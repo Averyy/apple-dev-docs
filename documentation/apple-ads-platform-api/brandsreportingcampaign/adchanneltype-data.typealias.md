@@ -20,11 +20,11 @@ string BrandsReportingCampaign.AdChannelType
 - `SEARCH`: Metrics from Search results ads.
 - `DISPLAY`: Metrics from Search tab, Today tab, or Product Pages ads.
 
-#### Discussion
+## Discussion
 
 Since Brands campaigns only run on Apple Maps, this field distinguishes `SEARCH` results placements from `DISPLAY` placements like the Search tab or Today tab.
 
-##### Example
+### Example
 
 ```json
 {

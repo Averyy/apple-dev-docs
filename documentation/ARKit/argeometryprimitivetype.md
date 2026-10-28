@@ -20,7 +20,7 @@ enum ARGeometryPrimitiveType
 enum ARGeometryPrimitiveType : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 When you enable [`sceneReconstruction`](./arworldtrackingconfiguration/scenereconstruction.md) on a world-tracking configuration, ARKit provies a wireframe mesh that models the shape of the real world using a collection of connected vertices. ARKit uses [`ARGeometryPrimitiveType`](./argeometryprimitivetype.md) to indicate how a particular property of that mesh is interpreted. For example, a mesh geometry’s [`faces`](./armeshgeometry/faces.md) property specifies that each face within the geometry is of type [`ARGeometryPrimitiveType.triangle`](./argeometryprimitivetype/triangle.md).
 

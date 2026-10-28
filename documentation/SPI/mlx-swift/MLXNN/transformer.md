@@ -17,13 +17,13 @@ Implements a standard Transformer model.
 class Transformer
 ```
 
-#### Overview
+## Overview
 
 The implementation is based on “Attention Is All You Need” [https://arxiv.org/abs/1706.03762](https://arxiv.org/abs/1706.03762).
 
 The Transformer model contains an encoder and a decoder. The encoder processes the input sequence and the decoder generates the output sequence. The interaction between encoder and decoder happens through the attention mechanism.
 
-##### See Also
+### See Also
 
 - [Transformer](./transformers.md)
 - [https://arxiv.org/abs/1706.03762](https://arxiv.org/abs/1706.03762)

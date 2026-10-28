@@ -16,11 +16,11 @@ Sets the number of commands this vector can hold.
 IOReturn (*EnsureCapacity)(IOFireWireLibVectorCommandRef self, UInt32 capacity);
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn result code
 
-#### Discussion
+## Discussion
 
 The vector can grow dynamically, but for performance reasons developers may want the storage preallocated for a certain number of commmands
 

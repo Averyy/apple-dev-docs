@@ -24,15 +24,15 @@ func shouldChange(to format: AVAudioFormat, for bus: AUAudioUnitBus) -> Bool
 - (BOOL) shouldChangeToFormat:(AVAudioFormat *) format forBus:(AUAudioUnitBus *) bus;
 ```
 
-#### Return Value
+## Return Value
 
 - [`true`](../../Swift/true.md) if the new format will be set on the bus.
 
-#### Discussion
+## Discussion
 
 - [`false`](../../Swift/false.md) if the new format will not be set on the bus.
 
-#### Discussion
+## Discussion
 
 The bus has already checked that the format meets its channel constraints. The audio unit can override this method to check the format before allowing it to be set on the bus.
 

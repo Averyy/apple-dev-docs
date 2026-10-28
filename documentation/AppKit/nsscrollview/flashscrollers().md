@@ -19,7 +19,7 @@ func flashScrollers()
 - (void) flashScrollers;
 ```
 
-#### Discussion
+## Discussion
 
 This method only applies to scroll views that use overlay scrollers.
 

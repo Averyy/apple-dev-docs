@@ -14,7 +14,7 @@ Get the statuses for all of a customer’s auto-renewable subscriptions in your 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 - [Identifying rate limits](./identifying-rate-limits.md)
 
-#### Discussion
+## Discussion
 
 This API returns the status for all of the customer’s subscriptions, organized by their subscription group identifier.
 

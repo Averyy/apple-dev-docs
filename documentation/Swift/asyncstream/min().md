@@ -24,11 +24,11 @@ func min() async rethrows -> Self.Element?
 
 Available when `Element` conforms to `Comparable`.
 
-#### Return Value
+## Return Value
 
 The sequence’s minimum element. If the sequence has no elements, returns `nil`.
 
-#### Discussion
+## Discussion
 
 In this example, an asynchronous sequence called `Counter` produces `Int` values from `1` to `10`. The `min()` method returns the minimum value of the sequence.
 

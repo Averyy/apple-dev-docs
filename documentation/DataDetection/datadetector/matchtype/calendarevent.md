@@ -21,7 +21,7 @@ The type that represents calendar events, such as dates and times, or date and t
 static let calendarEvent: DataDetector.MatchType
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: The framework doesn’t match dates if they conform to the structure of a recurring event, which is a date range that also includes a time range. For example, an event that takes place Monday to Friday from 11 a.m. to 1:30 p.m.
 

@@ -15,7 +15,7 @@ framework: "CareKit/CareKitStore"
 func offset(by dateComponents: DateComponents) -> OCKScheduleElement
 ```
 
-#### Return Value
+## Return Value
 
 A new instance of with all event times offset by the given value.
 

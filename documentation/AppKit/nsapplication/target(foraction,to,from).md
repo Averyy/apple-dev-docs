@@ -19,11 +19,11 @@ func target(forAction action: Selector, to target: Any?, from sender: Any?) -> A
 - (id) targetForAction:(SEL) action to:(id) target from:(id) sender;
 ```
 
-#### Return Value
+## Return Value
 
 The object that can accept the specified action message or `nil` if no target object can receive the message from the specified `sender`. Returns `nil` if `anAction` is `nil`.
 
-#### Discussion
+## Discussion
 
 The system looks for an object that implements a method matching `anAction`.
 

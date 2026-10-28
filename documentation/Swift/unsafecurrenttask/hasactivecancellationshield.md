@@ -21,7 +21,7 @@ Checks if this task is executing in a scope with a task cancellation shield acti
 var hasActiveCancellationShield: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 An active task cancellation shield prevents a task’s ability to observe if it was cancelled, i.e. the [`isCancelled`](../task/iscancelled-swift.type.property.md) property will always return `false` when the task is executing with an active shield.
 

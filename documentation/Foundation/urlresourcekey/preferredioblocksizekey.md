@@ -25,7 +25,7 @@ static let preferredIOBlockSizeKey: URLResourceKey
 extern NSURLResourceKey const NSURLPreferredIOBlockSizeKey;
 ```
 
-#### Discussion
+## Discussion
 
 The system returns the read-only value as an [`NSNumber`](../nsnumber.md) object, or `nil` if the preferred size isn’t available.
 

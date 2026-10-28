@@ -25,7 +25,7 @@ enum SCNParticleBirthLocation
 enum SCNParticleBirthLocation : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The [`emitterShape`](./scnparticlesystem/emittershape.md) property determines the shape of the space in which new particles can be emitted, and the [`birthLocation`](./scnparticlesystem/birthlocation.md) property determines the locations of new particles relative to this shape.
 

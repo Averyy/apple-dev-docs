@@ -23,7 +23,7 @@ typealias DNSServiceResolveReply = (DNSServiceRef?, DNSServiceFlags, UInt32, DNS
 typedef void (*)(struct _DNSServiceRef_t *, unsigned int, unsigned int, int, const char *, const char *, unsigned short, unsigned short, const unsigned char *, void *) DNSServiceResolveReply;
 ```
 
-#### Discussion
+## Discussion
 
 Resolve a service name discovered via [`DNSServiceBrowse(_:_:_:_:_:_:_:)`](./dnsservicebrowse%28_,_,_,_,_,_,_%29.md) to a target host name, port number, and txt record.
 

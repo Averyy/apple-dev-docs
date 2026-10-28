@@ -24,11 +24,11 @@ class func success(with resolvedTimeInterval: TimeInterval) -> Self
 + (instancetype) successWithResolvedTimeInterval:(NSTimeInterval) resolvedTimeInterval;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INTimeIntervalResolutionResult`](../intimeintervalresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you can resolve a parameter successfully to a value in your own internal data structures.
 

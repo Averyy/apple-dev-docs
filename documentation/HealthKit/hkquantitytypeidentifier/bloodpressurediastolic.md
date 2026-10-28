@@ -24,7 +24,7 @@ static let bloodPressureDiastolic: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierBloodPressureDiastolic;
 ```
 
-#### Discussion
+## Discussion
 
 When recording blood pressure, combine systolic and diastolic samples into a single correlation object (described in [`bloodPressure`](../hkcorrelationtypeidentifier/bloodpressure.md)). These samples use pressure units (described in [`HKUnit`](../hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)).
 

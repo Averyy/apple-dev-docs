@@ -13,11 +13,11 @@
 typedef errno_t (*proto_media_send_arp)(ifnet_t ifp, u_short arpop, const struct sockaddr_dl *sender_hw, const struct sockaddr *sender_proto, const struct sockaddr_dl *target_hw, const struct sockaddr *target_proto);
 ```
 
-#### Return Value
+## Return Value
 
 Return zero on success or an errno error value on failure.
 
-#### Discussion
+## Discussion
 
 proto_media_send_arp is called by the stack to generate an ARP packet. This field is currently only used with IP. This function should inspect the parameters and transmit an arp packet using the information passed in.
 

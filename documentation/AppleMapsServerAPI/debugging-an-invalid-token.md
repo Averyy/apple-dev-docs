@@ -5,11 +5,11 @@
 
 Inspect the JavaScript console logs, the token, and events to determine why a token is invalid.
 
-#### Overview
+## Overview
 
 MapKit JS requires a valid token to initialize. If the token you provide isn’t valid, MapKit JS won’t initialize and doesn’t provide a valid map to the user. When MapKit JS fails to initialize, errors are available in the JavaScript console.
 
-##### Identify errors in the JavaScript console
+### Identify errors in the JavaScript console
 
 To diagnose this situation, first check your browser’s JavaScript console for messages that describe why your token may be invalid. Reasons why a token might be invalid include:
 
@@ -19,7 +19,7 @@ To diagnose this situation, first check your browser’s JavaScript console for 
 
 For more information about the structure of MapKit-specific token, see [Creating and using tokens with Maps Server API](./creating-and-using-tokens-with-maps-server-api.md).
 
-##### Examine the token
+### Examine the token
 
 MapKit JS considers a token with duplicate headers to be invalid. You can view headers of the token and check for duplicates by decoding the token at the command line. For example, the following command decodes the headers of a token:
 
@@ -38,7 +38,7 @@ If you find duplicate headers in your token, review the software that you used t
 
 For more information on how to create a new token, see [Creating and using tokens with Maps Server API](./creating-and-using-tokens-with-maps-server-api.md).
 
-##### Inspect the error event on MapKit JS
+### Inspect the error event on MapKit JS
 
 The MapKit JS API rejects an otherwise valid token when your Apple Developer team exceeds the number of requests allowed. You can detect when your team exceeds the number of allowed requests by listening to the `error` event on the [`mapkit`](../MapKitJS/mapkit.md) object.
 

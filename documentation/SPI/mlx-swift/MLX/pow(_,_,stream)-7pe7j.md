@@ -17,7 +17,7 @@ Element-wise power operation.
 func pow(_ array: MLXArray, _ other: some ScalarOrArray, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 Raise the elements of `self` to the powers in elements of `other` with [Numpy Style Broadcasting](./broadcasting.md).
 
@@ -30,7 +30,7 @@ let a = MLXArray(0 ..< 12, [4, 3])
 let r = pow(a, 3)
 ```
 
-##### See Also
+### See Also
 
 - [Arithmetic](./arithmetic.md)
 - [`pow(_:stream:)`](./mlxarray/pow%28_,stream%29.md)

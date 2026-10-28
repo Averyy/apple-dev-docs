@@ -22,7 +22,7 @@ var isRoamingEnabled: Bool { get set }
 @property (getter=isRoamingEnabled) BOOL roamingEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 If `true`, the HS 2.0 Wi-Fi- network can connect to networks of roaming service providers. The default value is `false`.
 

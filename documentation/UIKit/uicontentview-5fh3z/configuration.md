@@ -21,7 +21,7 @@ The current configuration of the view.
 var configuration: any UIContentConfiguration { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Setting this property applies the new configuration to the view.
 

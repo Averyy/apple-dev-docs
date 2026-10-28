@@ -27,11 +27,11 @@ class func unarchiveObject(withFile path: String) -> Any?
 + (id) unarchiveObjectWithFile:(NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 The object graph previously encoded by `NSKeyedArchiver` written to the file `path`. Returns `nil` if there is no file at `path`.
 
-#### Discussion
+## Discussion
 
 This method raises an [`invalidArgumentException`](../nsexceptionname/invalidargumentexception.md) if the file at `path` does not contain a valid archive.
 

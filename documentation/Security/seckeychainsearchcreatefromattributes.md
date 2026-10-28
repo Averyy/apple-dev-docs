@@ -17,11 +17,11 @@ Creates a search object matching a list of zero or more attributes.
 OSStatus SecKeychainSearchCreateFromAttributes(CFTypeRef keychainOrArray, SecItemClass itemClass, const SecKeychainAttributeList *attrList, SecKeychainSearchRef*searchRef);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This function is deprecated. Use [`SecItemCopyMatching(_:_:)`](./secitemcopymatching%28_,_%29.md) instead.
 

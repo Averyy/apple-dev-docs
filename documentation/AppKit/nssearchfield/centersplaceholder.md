@@ -21,7 +21,7 @@ var centersPlaceholder: Bool { get set }
 @property BOOL centersPlaceholder;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is set to [`true`](../../Swift/true.md), the search field’s components become centered within the control if the field is empty and doesn’t have focus. If the field is empty when receiving focus, the centered objects animate to the edges of the control. When this property is set to [`false`](../../Swift/false.md), the components are always at the edge. The default value is [`true`](../../Swift/true.md).
 

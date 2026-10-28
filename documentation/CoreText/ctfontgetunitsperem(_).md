@@ -25,7 +25,7 @@ func CTFontGetUnitsPerEm(_ font: CTFont) -> UInt32
 extern unsigned int CTFontGetUnitsPerEm(CTFontRef font);
 ```
 
-#### Return Value
+## Return Value
 
 The units per em of the font.
 

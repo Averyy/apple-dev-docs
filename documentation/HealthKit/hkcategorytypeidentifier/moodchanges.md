@@ -24,7 +24,7 @@ static let moodChanges: HKCategoryTypeIdentifier
 extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierMoodChanges;
 ```
 
-#### Discussion
+## Discussion
 
 These samples use values from the [`HKCategoryValuePresence`](../hkcategoryvaluepresence.md) enumeration.
 

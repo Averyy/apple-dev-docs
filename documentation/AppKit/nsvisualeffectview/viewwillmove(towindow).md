@@ -19,7 +19,7 @@ func viewWillMove(toWindow newWindow: NSWindow?)
 - (void) viewWillMoveToWindow:(NSWindow *) newWindow;
 ```
 
-#### Discussion
+## Discussion
 
 When subclassing, you can override this method and use it to perform any tasks associated with the change. You must call `super` at some point during your implementation.
 

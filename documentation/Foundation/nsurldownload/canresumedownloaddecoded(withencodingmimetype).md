@@ -19,11 +19,11 @@ class func canResumeDownloadDecoded(withEncodingMIMEType MIMEType: String) -> Bo
 + (BOOL) canResumeDownloadDecodedWithEncodingMIMEType:(NSString *) MIMEType;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the URL download object can resume a download that was decoded with the specified MIME type, [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 The MIME type of a file, in conjunction with the value returned by the [`download(_:shouldDecodeSourceDataOfMIMEType:)`](../nsurldownloaddelegate/download%28_,shoulddecodesourcedataofmimetype%29.md) delegate method, determines whether the `NSURLDownload` class should decode or decompress the incoming data as it is received.
 

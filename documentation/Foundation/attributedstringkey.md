@@ -21,7 +21,7 @@ A type that defines an attribute’s name and type.
 protocol AttributedStringKey : SendableMetatype
 ```
 
-#### Overview
+## Overview
 
 You don’t instantiate types that conform to this protocol. Rather, dynamic member lookup uses this type as the basis for looking up key paths on [`AttributedString`](./attributedstring.md) subtypes when using an [`AttributeScope`](./attributescope.md) type parameter. When it also conforms to [`CodableAttributedStringKey`](./codableattributedstringkey.md), (or [`DecodableAttributedStringKey`](./decodableattributedstringkey.md)/[`EncodableAttributedStringKey`](./encodableattributedstringkey.md) if the type isn’t fully codable), the [`AttributedStringKey`](./attributedstringkey.md) describes which attributes of an [`AttributedString`](./attributedstring.md) support encoding or decoding.
 

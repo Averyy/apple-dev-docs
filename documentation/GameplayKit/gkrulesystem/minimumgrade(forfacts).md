@@ -24,11 +24,11 @@ func minimumGrade(forFacts facts: [Any]) -> Float
 - (float) minimumGradeForFacts:(NSArray *) facts;
 ```
 
-#### Return Value
+## Return Value
 
 The lowest membership grade in the array of facts.
 
-#### Discussion
+## Discussion
 
 In fuzzy logic, this method is called the AND Zadeh operator, because it corresponds to the AND operator in Boolean logic.
 

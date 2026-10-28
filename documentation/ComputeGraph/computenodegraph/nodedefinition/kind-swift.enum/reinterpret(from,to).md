@@ -21,7 +21,7 @@ Reinterpret one type scalar or vector type as another of the same number of size
 case reinterpret(from: ComputeNodeGraph.DataType, to: ComputeNodeGraph.DataType)
 ```
 
-#### Discussion
+## Discussion
 
 Equivalent to calling Metal’s `as_type<>`
 

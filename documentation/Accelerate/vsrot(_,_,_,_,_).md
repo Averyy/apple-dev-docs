@@ -21,7 +21,7 @@ func vSrot(_ n: Int32, _ x: UnsafeMutablePointer<vFloat>, _ y: UnsafeMutablePoin
 extern void vSrot(int32_t n, vFloat *x, vFloat *y, float c, float s);
 ```
 
-#### Discussion
+## Discussion
 
 The coordinates are modified in place in the vectors in arrays `x` and `y`.
 

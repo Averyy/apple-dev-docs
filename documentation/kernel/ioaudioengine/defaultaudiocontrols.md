@@ -9,7 +9,7 @@
 OSSet *defaultAudioControls;
 ```
 
-#### Overview
+## Overview
 
 All of the IOAudioControls that affect this audio engine.
 

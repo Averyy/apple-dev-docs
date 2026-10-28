@@ -20,7 +20,7 @@ Use the texture to store a single value in each pixel.
 case scalar
 ```
 
-#### Discussion
+## Discussion
 
 Properties that specify a semantic of `scalar` use the texture to store a single floating point value in each pixel. If the texture’s source is an RGB image, the property uses only the red channel value.
 

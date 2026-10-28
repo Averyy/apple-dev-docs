@@ -27,7 +27,7 @@ init()
 - (instancetype) init;
 ```
 
-#### Discussion
+## Discussion
 
 You should never need to create your own [`URLSessionTaskTransactionMetrics`](../urlsessiontasktransactionmetrics.md) instances. The [`URLSession`](../urlsession.md) creates task transaction metrics as part of the [`URLSessionTaskMetrics`](../urlsessiontaskmetrics.md) instance that it delivers to the [`urlSession(_:task:didFinishCollecting:)`](../urlsessiontaskdelegate/urlsession%28_,task,didfinishcollecting%29.md) method of [`URLSessionTaskDelegate`](../urlsessiontaskdelegate.md).
 

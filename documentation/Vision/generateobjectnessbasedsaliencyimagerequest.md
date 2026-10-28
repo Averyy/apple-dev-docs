@@ -21,7 +21,7 @@ A request that generates a heat map that identifies the parts of an image most l
 struct GenerateObjectnessBasedSaliencyImageRequest
 ```
 
-#### Overview
+## Overview
 
 The request returns the resulting heat map and object data in an instance of [`SaliencyImageObservation`](./saliencyimageobservation.md).
 

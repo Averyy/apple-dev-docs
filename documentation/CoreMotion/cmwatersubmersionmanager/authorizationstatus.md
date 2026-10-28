@@ -23,7 +23,7 @@ class var authorizationStatus: CMAuthorizationStatus { get }
 @property (class, nonatomic, readonly) CMAuthorizationStatus authorizationStatus;
 ```
 
-#### Discussion
+## Discussion
 
 The system automatically requests authorization to access motion data the first time your app instantiates a `CMWaterSubmersionManager`. You can use this property to check the current authorization status.
 

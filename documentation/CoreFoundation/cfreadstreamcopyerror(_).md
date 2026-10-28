@@ -25,7 +25,7 @@ func CFReadStreamCopyError(_ stream: CFReadStream!) -> CFError!
 extern CFErrorRefCFReadStreamCopyError(CFReadStreamRef stream);
 ```
 
-#### Return Value
+## Return Value
 
 A CFError object that describes the current problem with stream, or `NULL` if there is no error. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

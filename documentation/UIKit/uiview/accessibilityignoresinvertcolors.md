@@ -23,7 +23,7 @@ var accessibilityIgnoresInvertColors: Bool { get set }
 @property (nonatomic) BOOL accessibilityIgnoresInvertColors;
 ```
 
-#### Discussion
+## Discussion
 
 Inverting colors is often used to help users with light or color sensitivities to make bright colors darker. However, this behavior can have a destructive impact on images and videos. If inverting the colors would have a negative impact on your view’s content, set this property to [`true`](../../Swift/true.md) to prevent it from inverting its colors. Setting the property to [`true`](../../Swift/true.md) prevents the system from inverting the colors of the view and all of its subviews.
 

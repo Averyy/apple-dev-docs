@@ -25,11 +25,11 @@ func xpc_connection_create(_ name: UnsafePointer<CChar>?, _ targetq: dispatch_qu
 extern xpc_connection_txpc_connection_create(const char *name, dispatch_queue_t targetq);
 ```
 
-#### Return Value
+## Return Value
 
 A new connection object. The caller is responsible for disposing of the returned object with [`xpc_release`](./xpc_release.md) when it is no longer needed.
 
-#### Discussion
+## Discussion
 
 This method will succeed even if the named service does not exist. This is because the XPC namespace is not queried for the service name until the first call to [`xpc_connection_resume(_:)`](./xpc_connection_resume%28_%29.md).
 

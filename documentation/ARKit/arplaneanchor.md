@@ -20,7 +20,7 @@ class ARPlaneAnchor
 @interface ARPlaneAnchor : ARAnchor
 ```
 
-#### Overview
+## Overview
 
 When you enable [`planeDetection`](./arworldtrackingconfiguration/planedetection-swift.property.md) in a world tracking session, ARKit notifies your app of all the surfaces it observes using the device’s back camera. ARKit calls your delegate’s [`session(_:didAdd:)`](./arsessiondelegate/session%28_,didadd%29.md) with an [`ARPlaneAnchor`](./arplaneanchor.md) for each unique surface. Each plane anchor provides details about the surface, like its real-world position and shape.
 

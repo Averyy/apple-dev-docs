@@ -24,7 +24,7 @@ static let audioContinuous: CHHapticEvent.EventType
 extern CHHapticEventType CHHapticEventTypeAudioContinuous;
 ```
 
-#### Discussion
+## Discussion
 
 Continuous audio patterns take the form of lengthier feedback over a period of time. You must provide continuous events with a duration to determine their endpoint.
 

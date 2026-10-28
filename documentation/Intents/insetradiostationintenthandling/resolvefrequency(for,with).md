@@ -28,7 +28,7 @@ optional func resolveFrequency(for intent: INSetRadioStationIntent) async -> IND
 - (void) resolveFrequencyForSetRadioStation:(INSetRadioStationIntent *) intent withCompletion:(void (^)(INDoubleResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the requested radio station frequency.
 

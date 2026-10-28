@@ -21,11 +21,11 @@ Causes the animation to report logical completion after the specified duration, 
 func logicallyComplete(after duration: TimeInterval) -> Animation
 ```
 
-#### Return Value
+## Return Value
 
 An animation that reports logical completion after the given duration.
 
-#### Discussion
+## Discussion
 
 Note that the indicated duration will not cause the animation to continue running after the base animation has fully completed.
 

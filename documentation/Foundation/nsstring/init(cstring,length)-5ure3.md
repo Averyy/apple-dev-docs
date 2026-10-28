@@ -21,7 +21,7 @@ Initializes the receiver, a newly allocated `NSString` object, by converting the
 convenience init?(CString bytes: UnsafePointer<CChar>, length: Int)
 ```
 
-#### Discussion
+## Discussion
 
 This method converts `length` * `sizeof(char)` bytes from `cString` and doesn’t stop short at a zero character. `cString` must contain bytes in the default C-string encoding and may not be `NULL`. Returns an initialized object, which might be different from the original receiver.
 

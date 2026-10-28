@@ -21,7 +21,7 @@ Returns the foreground style for the given data value. Returns `nil` if the fore
 func foregroundStyle<P>(for value: P) -> AnyShapeStyle? where P : Plottable
 ```
 
-#### Return Value
+## Return Value
 
 The foreground style corresponding to the data value, or `nil` if the data value is incompatible with the chart.
 

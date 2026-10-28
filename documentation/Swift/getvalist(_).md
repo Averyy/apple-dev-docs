@@ -25,11 +25,11 @@ func getVaList(_ args: [any CVarArg]) -> CVaListPointer
 
 - [Using Imported C Functions in Swift](./using-imported-c-functions-in-swift.md)
 
-#### Return Value
+## Return Value
 
 A pointer that can be used with C functions that take a `va_list` argument.
 
-#### Discussion
+## Discussion
 
 You should prefer `withVaList(_:_:)` instead of this function. In some uses, such as in a `class` initializer, you may find that the language rules do not allow you to use `withVaList(_:_:)` as intended.
 

@@ -19,7 +19,7 @@ func interiorColor() -> NSColor!
 - (NSColor *) interiorColor;
 ```
 
-#### Return Value
+## Return Value
 
 The color used in the line-end ornament at the ends of the line.
 

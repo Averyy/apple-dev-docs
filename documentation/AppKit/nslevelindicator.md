@@ -19,7 +19,7 @@ class NSLevelIndicator
 @interface NSLevelIndicator : NSControl
 ```
 
-#### Overview
+## Overview
 
 A level indicator is similar to an [`NSSlider`](./nsslider.md) object, but provides a more customized visual feedback to the user. Unlike sliders, level indicators do not have a “knob” indicating the current setting, and they do not allow the user to adjust the current setting. You set the value of the level indicator programmatically. The supported indicator styles include:
 

@@ -15,13 +15,13 @@ virtual IOReturn registerInterrupt(
  void *refCon = 0);
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn code.
 
 `kIOReturnNoInterrupt` is returned if the source is not valid; `kIOReturnNoResources` is returned if the interrupt already has an installed handler.
 
-#### Overview
+## Overview
 
 This method installs a C function interrupt handler to be called at primary interrupt time for a device's interrupt. Only one handler may be installed per interrupt source. IOInterruptEventSource provides a work loop based abstraction for interrupt delivery that may be more appropriate for work loop based drivers.
 

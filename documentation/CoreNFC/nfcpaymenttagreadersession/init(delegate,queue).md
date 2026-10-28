@@ -18,7 +18,7 @@ Creates a new session instance for processing NFC payment tags.
 convenience init(delegate: any NFCTagReaderSessionDelegate, queue: DispatchQueue? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 Creating a session requires that your app have the [`Near Field Communication Tag Reader Session Formats Entitlement`](../../BundleResources/entitlements/com.apple.developer.nfc.readersession.formats.md) entitlement; if it’s missing, your delegate receives the callback [`tagReaderSession(_:didInvalidateWithError:)`](../nfctagreadersessiondelegate-2joku/tagreadersession%28_,didinvalidatewitherror%29.md) with the error [`NFCReaderError.Code.readerErrorSecurityViolation`](../nfcreadererror-swift.struct/code/readererrorsecurityviolation.md). Additionally, the app’s information property list must contain a non-empty usage description string. If it’s absent, the delegate doesn’t receive tag-discovery callbacks.
 

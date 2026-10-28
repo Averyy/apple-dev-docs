@@ -23,7 +23,7 @@ var font: UIFont? { get set }
 @property (nonatomic, strong, nullable) UIFont * font;
 ```
 
-#### Discussion
+## Discussion
 
 This property applies to the entire text string. The default value of this property is the body style of the system font.
 

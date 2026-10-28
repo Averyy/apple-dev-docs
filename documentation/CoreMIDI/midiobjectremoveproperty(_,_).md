@@ -23,7 +23,7 @@ func MIDIObjectRemoveProperty(_ obj: MIDIObjectRef, _ propertyID: CFString) -> O
 extern OSStatus MIDIObjectRemoveProperty(MIDIObjectRef obj, CFStringRef propertyID);
 ```
 
-#### Return Value
+## Return Value
 
 An `OSStatus` result code.
 

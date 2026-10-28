@@ -21,11 +21,11 @@ func setValue(_ value: Any!, forOutputKey key: String!) -> Bool
 - (BOOL) setValue:(id) value forOutputKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if successful; [`false`](../../Swift/false.md)  if called outside of the [`execute(_:atTime:withArguments:)`](./execute%28_,attime,witharguments%29.md) method.
 
-#### Discussion
+## Discussion
 
 You call this method from within your [`execute(_:atTime:withArguments:)`](./execute%28_,attime,witharguments%29.md) method to set the output values of your custom patch.
 

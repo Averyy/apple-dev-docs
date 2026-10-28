@@ -21,7 +21,7 @@ static func cancel(_ comment: Comment? = nil, sourceLocation: SourceLocation = #
 - [Migrating a test from XCTest](../migratingfromxctest.md)
 - [Enabling and disabling tests](../enablinganddisabling.md)
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error indicating that the current test or test case has been cancelled. The testing library does not treat this error as a test failure.
 

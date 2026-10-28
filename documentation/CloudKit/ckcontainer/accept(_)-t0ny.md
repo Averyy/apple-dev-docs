@@ -21,11 +21,11 @@ Accepts the specified share metadatas and returns the accepted shares to an awai
 func accept(_ metadatas: [CKShare.Metadata]) async throws -> [CKShare.Metadata : Result<CKShare, any Error>]
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary of accepted shares. The dictionary uses the share metadatas you specify in `metadatas` as its keys. The value of each key is a [`Result`](../../Swift/result.md) that contains either the corresponding accepted share, or an error that describes why CloudKit can’t accept that share.
 
-#### Discussion
+## Discussion
 
 This method accepts shares asynchronously and with a low priority. If you want the task to execute with a higher priority, create an instance of [`CKAcceptSharesOperation`](../ckacceptsharesoperation.md) and configure it to use the necessary priority.
 

@@ -20,7 +20,7 @@ func NSPointFromCGPoint(_ cgpoint: CGPoint) -> NSPoint
 static NSPoint NSPointFromCGPoint(CGPoint cgpoint);
 ```
 
-#### Return Value
+## Return Value
 
 An `NSPoint` typecast from a `CGPoint`.
 

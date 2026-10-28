@@ -25,7 +25,7 @@ convenience init(lowerLimit lower: CGFloat)
 + (instancetype) rangeWithLowerLimit:(CGFloat) lower;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized range object whose minimum value is `lower` and whose maximum value is `+Inf`.
 

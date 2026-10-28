@@ -24,7 +24,7 @@ func reductionMaximum(with tensor: MPSGraphTensor, axis: Int, name: String?) -> 
 - (MPSGraphTensor *) reductionMaximumWithTensor:(MPSGraphTensor *) tensor axis:(NSInteger) axis name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object.
 

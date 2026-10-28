@@ -16,7 +16,7 @@ get style(): Style;
 set style(style: Style);
 ```
 
-#### Discussion
+## Discussion
 
 The following example shows a new [`style`](./style.md) object replacing the current style properties for a circle overlay:
 

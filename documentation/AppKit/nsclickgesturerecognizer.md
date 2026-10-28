@@ -19,7 +19,7 @@ class NSClickGestureRecognizer
 @interface NSClickGestureRecognizer : NSGestureRecognizer
 ```
 
-#### Overview
+## Overview
 
 When configuring this gesture recognizer, you can specify which mouse buttons must be clicked and how many clicks must occur before the action method is called. The user must click the specified mouse button the required number of times without dragging the mouse for the gesture to be recognized.
 

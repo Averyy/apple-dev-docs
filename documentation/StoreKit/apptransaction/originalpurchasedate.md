@@ -21,7 +21,7 @@ The date the customer originally purchased the app from the App Store.
 let originalPurchaseDate: Date
 ```
 
-#### Discussion
+## Discussion
 
 The original purchase date remains the same, even if the customer deletes and reinstalls the app.
 

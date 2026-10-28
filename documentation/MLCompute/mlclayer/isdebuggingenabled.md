@@ -23,7 +23,7 @@ var isDebuggingEnabled: Bool { get set }
 @property (nonatomic, readwrite) BOOL isDebuggingEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 If `true`, the layer makes the result tensor and gradient tensors available for reading. The default value is `false`.
 

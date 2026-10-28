@@ -5,7 +5,7 @@
 
 Affect the way the system draws a view, for example by scaling or masking a view, or by applying graphical effects.
 
-#### Overview
+## Overview
 
 Use these view modifiers to apply many of the rendering effects typically associated with a graphics context, like adding masks and creating composites. You can apply these effects to graphical views, like [Shapes](./shapes.md), as well as any other SwiftUI view.
 

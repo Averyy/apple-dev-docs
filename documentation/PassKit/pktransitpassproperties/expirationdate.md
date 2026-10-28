@@ -24,7 +24,7 @@ var expirationDate: Date? { get }
 @property (nonatomic, copy, readonly, nullable) NSDate * expirationDate;
 ```
 
-#### Discussion
+## Discussion
 
 Rules for expiry depend on the pass provider. The return value can be `nil` if the transit card does not support an expiration date.
 

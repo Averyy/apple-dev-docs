@@ -19,7 +19,7 @@ var allowsImmersiveEnvironments: Bool { get set }
 @property (nonatomic) BOOL allowsImmersiveEnvironments;
 ```
 
-#### Discussion
+## Discussion
 
 A Boolean value that determines whether the web view allows immersive environments.
 

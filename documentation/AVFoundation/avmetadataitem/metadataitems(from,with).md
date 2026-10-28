@@ -25,7 +25,7 @@ class func metadataItems(from metadataItems: [AVMetadataItem], with locale: Loca
 + (NSArray<AVMetadataItem *> *) metadataItemsFromArray:(NSArray<AVMetadataItem *> *) metadataItems withLocale:(NSLocale *) locale;
 ```
 
-#### Return Value
+## Return Value
 
 An array of metadata items that match the specified key and key space.
 

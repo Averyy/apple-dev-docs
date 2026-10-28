@@ -20,7 +20,7 @@ var lyricsContentRating: ITLibMediaItemLyricsContentRating { get }
 @property (nonatomic, assign, readonly) ITLibMediaItemLyricsContentRating lyricsContentRating;
 ```
 
-#### Discussion
+## Discussion
 
 See [`ITLibMediaItemLyricsContentRating`](../itlibmediaitemlyricscontentrating.md) for a list of possible lyric content ratings. If there are no associated lyrics, this property is [`ITLibMediaItemLyricsContentRating.none`](../itlibmediaitemlyricscontentrating/none.md).
 

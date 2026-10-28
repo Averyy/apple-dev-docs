@@ -5,7 +5,7 @@
 
 Make the content you index for Spotlight available to Foundation models to help generate responses to prompts.
 
-#### Overview
+## Overview
 
 The Foundation Models framework provides access to language models that you can use to implement intelligent features in your apps. Language models answer questions on a wide variety of subjects, but they can’t automatically answer questions related to your app’s content. However, you can give those models the ability to answer questions about your content using the Spotlight search tool.
 
@@ -13,7 +13,7 @@ The Spotlight search tool gives models a way to search your app’s content and 
 
 > **Note**: To use the Spotlight search tool, you first need to index your app’s content. For information about the indexing process and how to perform it on your app’s content, see [Adding your app’s content to Spotlight indexes](./adding-your-app-s-content-to-spotlight-indexes.md).
 
-##### Configure a model to use the Spotlight search tool
+### Configure a model to use the Spotlight search tool
 
 When configuring a Foundation Models session, you can specify additional tools to handle specific tasks. The [`SpotlightSearchTool`](./spotlightsearchtool.md) type implements the framework’s protocols for tools and gives models the ability to query your app’s content. The following example creates a default instance of the tool, uses it to initialize a session, and generates a response to a prompt:
 
@@ -34,7 +34,7 @@ The default configuration of [`SpotlightSearchTool`](./spotlightsearchtool.md) p
 - **Optimize data retrieval operations.** Focus data retrieval on specific types of content, such as someone’s messages and communications, documents, media, or other data. The tool packages this information in a more compact format suitable for on-device models or models with smaller context windows.
 - **Offer guidance on how to search your content.** The Spotlight search tool has many ways to perform searches, but some techniques might not apply to your content. For example, if you only search for textual items, you don’t need to consider searches involving dates or numerical values. Eliminate search options you don’t need to reduce the amount of content the tool sends to the model.
 
-##### Specify where to find your app’s content
+### Specify where to find your app’s content
 
 At configuration time, you need to tell the Spotlight search tool where to look for your app’s content. You provide that information using a search source, which is one of the following types:
 
@@ -45,7 +45,7 @@ In addition to telling your app where to search, a search source provides detail
 
 You can configure the Spotlight search tool with multiple sources, and search your app’s Spotlight index, multiple directories, or both. During a query, the tool searches each source separately and then combines the results before delivering them to the model.
 
-##### Make searches more efficient by optimizing data retrieval
+### Make searches more efficient by optimizing data retrieval
 
 At configuration time, provide guidance to help the model optimize the queries it performs using the Spotlight search tool. The search tool supports a variety of search techniques and content types, and your guidance specifies which options you support. Eliminating options that aren’t relevant for your content reduces the amount of information the search tool sends back to the model, freeing up context space for other content.
 
@@ -59,7 +59,7 @@ The default configuration of [`SpotlightSearchTool`](./spotlightsearchtool.md) u
 
 If you’re using a model with severe token constraints, another way to improve efficiency is to apply the [`SpotlightSearchTool.FormatLevel.compact`](./spotlightsearchtool/formatlevel/compact.md) configuration option. When you apply this option to the [`format`](./spotlightsearchtool/guide/format.md) property of your guide configuration, the tool outputs results in a compact format. You might choose this option if you’re using a model with a small context window that can’t handle conversations with large amounts of data. You might also use this approach if you anticipate a long conversation and need to save room for additional contextual data later.
 
-##### Help the model resolve references to people
+### Help the model resolve references to people
 
 People inherently understand the personal pronouns other people use during conversations, but those same pronouns present difficulties for tools and code. If your searchable items contain metadata relating to people, such as author or recipient data, provide a contact resolver to help the model resolve first-person pronouns like “I” and “me”. A contact resolver provides information about the person using your app such as the person’s name, email, or phone details. The model can match this information against the data it encounters in item metadata to resolve first-person references. The following example shows how to add a custom contact resolver to the Spotlight search tool:
 
@@ -76,7 +76,7 @@ let response = try await session.respond(to: "Show me the documents I shared las
 To implement a contact resolver, create a type that adopts the [`ContactResolver`](./contactresolver.md) protocol.
 Your custom type returns a [`ResolvedContact`](./resolvedcontact.md) structure with information about the person who owns your app’s data. Fill in the properties of the structure with relevant information about the person who uses your app. For example, a communications app might include the person’s name and the phone number or email associated with their account. The search tool passes this information along to the model to help it reason about references to the person.
 
-##### Customize how the tool determines search results
+### Customize how the tool determines search results
 
 When processing complex prompts, a model might run multiple queries to get the results it needs. For each query, the model builds a pipeline of work, where each *stage* of the pipeline is a specific task to run on the data. For example, one stage might retrieve items, another one might count the items, and a third one might assign relevance scores to each item. The Spotlight search tool defines pipeline stages for many common tasks, but you can add custom stages to apply app-specific transformations to the data in the pipeline.
 
@@ -126,7 +126,7 @@ let tool = SpotlightSearchTool(configuration: .init(
 ))
 ```
 
-##### Examine results while a search runs
+### Examine results while a search runs
 
 While the Spotlight search tool runs, your app can monitor the search results and any search-related information the tool generates. You might do so to debug your code, to display the search results in your app, or to monitor specific metrics during the search process. To receive these results, set up a task to monitor the asynchronous sequence in the [`searchResults`](./spotlightsearchtool/searchresults.md) property of [`SpotlightSearchTool`](./spotlightsearchtool.md). This property delivers a series of [`SpotlightSearchTool.SearchReply`](./spotlightsearchtool/searchreply.md) structures to your app, which you use to retrieve information.
 

@@ -22,7 +22,7 @@ func newConnection(forProcessID processID: pid_t, minimumVersion minVers: Int, m
 - (void) newConnectionForProcessID:(pid_t) processID minimumVersion:(NSUInteger) minVers maximumVersion:(NSUInteger) maxVers hostCapabilities:(NSDictionary *) remoteCapabilities reply:(void (^)(NSXPCListenerEndpoint * , NSUInteger xpcVersion, NSError * )) reply;
 ```
 
-#### Discussion
+## Discussion
 
 Accepts a connection from the host application.
 

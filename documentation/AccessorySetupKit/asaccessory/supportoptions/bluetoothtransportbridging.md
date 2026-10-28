@@ -20,7 +20,7 @@ static var bluetoothTransportBridging: ASAccessory.SupportOptions { get }
 ASAccessorySupportBluetoothTransportBridging
 ```
 
-#### Discussion
+## Discussion
 
 This option indicates that when connecting with low energy transport, the accessory supports activating Bluetooth classic transport profiles.
 

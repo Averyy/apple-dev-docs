@@ -22,7 +22,7 @@ The render options that configure the view’s AR session.
 
 - [Reducing GPU Utilization in Your RealityKit App](../reducing-gpu-utilization-in-your-realitykit-app.md)
 
-#### Discussion
+## Discussion
 
 RealityKit applies effects like camera grain, motion blur, and depth of field to the render to make the AR experience more immersive. Each effect causes your virtual content to better blend in with live images from the camera in some way.
 

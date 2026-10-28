@@ -15,13 +15,13 @@ The object for defining the color, width, and style of a border or divider.
 object StrokeStyle
 ```
 
-#### Discussion
+## Discussion
 
 You can specify the color, width, and style (solid, dashed, or dotted) of a stroke. Such strokes have many uses, including component borders and divider components.
 
 You can use this object in [`Border`](./border.md), [`Divider`](./divider.md), [`TableRowStyle`](./tablerowstyle.md), [`TableColumnStyle`](./tablecolumnstyle.md), [`ConditionalTableRowStyle`](./conditionaltablerowstyle.md), and [`ConditionalTableColumnStyle`](./conditionaltablecolumnstyle.md).
 
-##### Example
+### Example
 
 ```json
 {

@@ -24,7 +24,7 @@ var destination: PDFDestination { get set }
 @property (nonatomic, strong) PDFDestination * destination;
 ```
 
-#### Return Value
+## Return Value
 
 The destination specified by the go-to action.
 

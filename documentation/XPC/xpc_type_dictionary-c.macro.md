@@ -21,7 +21,7 @@ A type that represents a dictionary of XPC objects keyed off of C-strings.
 #define XPC_TYPE_DICTIONARY
 ```
 
-#### Discussion
+## Discussion
 
 You may insert `NULL` values into this collection. The dictionary grows as necessary to accommodate more key-value pairs.
 

@@ -21,11 +21,11 @@ init(mapTemplateWaypoint: CPMapTemplateWaypoint, image: UIImage?, handler: ((CPM
 - (instancetype) initWithMapTemplateWaypoint:(CPMapTemplateWaypoint *) mapTemplateWaypoint image:(UIImage *) image handler:(void (^)(CPMapPanelItem *item, dispatch_block_t completionBlock)) handler;
 ```
 
-#### Return Value
+## Return Value
 
 A map panel item initialized with waypoint details.
 
-#### Discussion
+## Discussion
 
 For this type of item, the map panel displays the waypoint name, address, and any available route details.
 

@@ -20,7 +20,7 @@ var kLSMMapDiscardCounts: Int { get }
 kLSMMapDiscardCounts
 ```
 
-#### Discussion
+## Discussion
 
 If you specify this option when loading the map, you must reload the map without this option before calling [`LSMMapStartTraining(_:)`](./lsmmapstarttraining%28_%29.md).
 

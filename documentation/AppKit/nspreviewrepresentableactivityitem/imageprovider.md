@@ -19,7 +19,7 @@ optional var imageProvider: NSItemProvider? { get }
 @property (strong, readonly, nullable) NSItemProvider * imageProvider;
 ```
 
-#### Discussion
+## Discussion
 
 Provide a full-size representation of the content you’re sharing. For example, if the shared item is a link to a webpage, provide the hero image for that webpage or a rendering of the page.
 

@@ -17,11 +17,11 @@ Fetches the schedule of a device activity.
 func schedule(for activity: DeviceActivityName) -> DeviceActivitySchedule?
 ```
 
-#### Return Value
+## Return Value
 
 The schedule of the activity or `nil` if no such activity is currently monitored.
 
-#### Discussion
+## Discussion
 
 The returned object is a static representation of the schedule at the time the function was called. In other words, a `Schedule` fetched for a particular activity doesn’t dynamically update in response to future changes made to that activity.
 

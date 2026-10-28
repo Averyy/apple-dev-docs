@@ -19,7 +19,7 @@ class var active: FSContainerStatus { get }
 @property (class, readonly) FSContainerStatus * active;
 ```
 
-#### Discussion
+## Discussion
 
 This value is a [`FSContainerStatus`](../fscontainerstatus.md) with a [`state`](./state.md) that is [`active`](./active.md), and has a [`status`](./status.md) that is `nil`.
 

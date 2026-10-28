@@ -30,7 +30,7 @@ var status: INRestaurantReservationUserBookingStatus { get set }
 @property (atomic) INRestaurantReservationUserBookingStatus status;
 ```
 
-#### Discussion
+## Discussion
 
 Upon receipt of a reservation, your Intents extension works with the restaurant to place the reservation. This property contains the status of whether the restaurant accepted or declined the reservation, or whether the reservation is still pending while you communicate the details of the reservation to the restaurant.
 

@@ -21,7 +21,7 @@ A flag to allow an unfair lock caller to spin temporarily before blocking.
 OS_UNFAIR_LOCK_FLAG_ADAPTIVE_SPIN
 ```
 
-#### Discussion
+## Discussion
 
 This flag is particularly useful when the holder of the lock is on core. Only use this flag for locks where the protected critical section is always extremely short.
 

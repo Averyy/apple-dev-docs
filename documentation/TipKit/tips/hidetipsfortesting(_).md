@@ -21,7 +21,7 @@ Hide specified tips regardless of their display rule eligibility for UI testing 
 static func hideTipsForTesting(_ tips: [any Tip.Type])
 ```
 
-#### Overview
+## Overview
 
 This function can also be called with the launch argument `-com.apple.TipKit.HideTips FindTrailheadTip,SlopeProfileTip`.
 

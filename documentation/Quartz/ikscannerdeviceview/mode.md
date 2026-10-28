@@ -19,7 +19,7 @@ var mode: IKScannerDeviceViewDisplayMode { get set }
 @property IKScannerDeviceViewDisplayMode mode;
 ```
 
-#### Discussion
+## Discussion
 
 The possible constants are described in [`IKScannerDeviceViewDisplayMode`](../ikscannerdeviceviewdisplaymode.md).
 

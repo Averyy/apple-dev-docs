@@ -27,7 +27,7 @@ func generateRepresentations(for request: QLThumbnailGenerator.Request, update u
 
 - [Creating Quick Look Thumbnails to Preview Files in Your App](../creating-quick-look-thumbnails-to-preview-files-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 Use this method if you want to create a file icon or low-quality thumbnail quickly, and replace it with a higher quality thumbnail once it becomes available.
 

@@ -19,7 +19,7 @@ var title: String { get set }
 @property (copy) NSString * title;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the string to display in the cell. Subclasses (such as [`NSButtonCell`](../nsbuttoncell.md)) may use the title for a different purpose.
 

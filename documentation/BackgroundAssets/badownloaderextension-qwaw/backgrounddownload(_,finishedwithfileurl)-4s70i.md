@@ -20,7 +20,7 @@ Handles a finished download
 func backgroundDownload(_ finishedDownload: BADownload, finishedWithFileURL fileURL: URL)
 ```
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**: Don’t override this default implementation.
 

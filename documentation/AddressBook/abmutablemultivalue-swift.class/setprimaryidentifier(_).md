@@ -19,11 +19,11 @@ func setPrimaryIdentifier(_ identifier: String!) -> Bool
 - (BOOL) setPrimaryIdentifier:(NSString *) identifier;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if successful; otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 If the identifier is `nil`, this method raises an exception. Use the [`identifier(at:)`](../abmultivalue-swift.class/identifier%28at%29.md) method to get the identifier given the index.
 

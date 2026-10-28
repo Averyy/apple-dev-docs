@@ -25,7 +25,7 @@ convenience init(zoneID: CKRecordZone.ID)
 - (instancetype) initWithZoneID:(CKRecordZoneID *) zoneID;
 ```
 
-#### Discussion
+## Discussion
 
 The subscription that this method returns is a zone-based subscription that generates push notifications when CloudKit changes any of the specified record zone’s records.
 

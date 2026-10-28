@@ -24,7 +24,7 @@ static let flags: PDFAnnotationKey
 extern PDFAnnotationKey PDFAnnotationKeyFlags;
 ```
 
-#### Discussion
+## Discussion
 
 For a full description of annotation flags, see [Table 165](https://www.adobe.com/content/dam/acom/en/devnet/acrobat/pdfs/PDF32000_2008.pdf#page=393) in the [Adobe PDF 1.7 Specification](https://www.adobe.com/content/dam/acom/en/devnet/acrobat/pdfs/PDF32000_2008.pdf).
 

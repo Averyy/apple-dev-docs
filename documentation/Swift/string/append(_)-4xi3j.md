@@ -21,7 +21,7 @@ Appends the given character to the string.
 mutating func append(_ c: Character)
 ```
 
-#### Discussion
+## Discussion
 
 The following example adds an emoji globe to the end of a string.
 

@@ -5,19 +5,19 @@
 
 Learn about important changes to MapKitJS.
 
-#### Overview
+## Overview
 
 Browse notable changes in [MapKit JS](../MapKitJS/MapKitJS.md).
 
-#### June 2025
+## June 2025
 
 - Render Look Around views and Look Around previews that allow someone to see a street-level view of a place by using [`LookAround`](../MapKitJS/lookaround.md) and [`LookAroundPreview`](../MapKitJS/lookaroundpreview.md).
 - Request cycling directions and ETAs using the [`Cycling`](../MapKitJS/transporttype/cycling.md) transport type.
 
-#### June 2024
+## June 2024
 
 - Obtain a place identifier to track a specific location, such as a business, park, physical feature, or landmark, over its lifetime.
-- Show detailed information about a point of interest across [MapKit](http://developer.apple.com/documentation/mapkit/mapkit_for_appkit_and_uikit), [MapKit for SwiftUI](../MapKit/mapkit_for_swiftui.md), and [MapKit JS](../MapKitJS/MapKitJS.md).
+- Show detailed information about a point of interest across [MapKit](http://developer.apple.com/documentation/mapkit/mapkit_for_appkit_and_uikit), [MapKit for SwiftUI](../MapKit/mapkit-for-swiftui.md), and [MapKit JS](../MapKitJS/MapKitJS.md).
 - Filter location results using criteria such as neighborhoods, postal codes, and municipalities.
 - Use pagination to obtain significantly more results over a successive set of calls when using the [Apple Maps Server API](../AppleMapsServerAPI/AppleMapsServerAPI.md).
 

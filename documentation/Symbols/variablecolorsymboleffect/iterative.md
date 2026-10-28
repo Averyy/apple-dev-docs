@@ -21,7 +21,7 @@ An effect that momentarily enables each layer of a symbol-based image in sequenc
 var iterative: VariableColorSymbolEffect { get }
 ```
 
-#### Discussion
+## Discussion
 
 This effect enables each successive variable layer for a short period of time, and then disables the layer until the animation cycle ends. This effect cancels the [`cumulative`](./cumulative.md) variant.
 

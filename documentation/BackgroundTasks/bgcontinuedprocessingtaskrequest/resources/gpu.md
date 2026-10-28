@@ -25,7 +25,7 @@ BGContinuedProcessingTaskRequestResourcesGPU
 
 - [Performing long-running tasks on iOS and iPadOS](../../performing-long-running-tasks-on-ios-and-ipados.md)
 
-#### Discussion
+## Discussion
 
 The system requires your app to have the [`Background GPU Access`](../../../BundleResources/entitlements/com.apple.developer.background-tasks.continued-processing.gpu.md) entitlement with a value of `true` to use the GPU in the background. To do that, enable the Background GPU Access capability on your app’s target. For more information about capabilities in Xcode, see [Adding capabilities to your app](../../../Xcode/adding-capabilities-to-your-app.md).
 

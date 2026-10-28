@@ -17,7 +17,7 @@ case cwCipherSuiteRejectedErr
 kCWCipherSuiteRejectedErr
 ```
 
-#### Discussion
+## Discussion
 
 Cipher suite rejected due to network security policy.
 

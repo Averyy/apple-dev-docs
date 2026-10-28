@@ -18,7 +18,7 @@ typedef struct IOFireWireConfigDirectoryInterface_t {
 } IOFireWireConfigDirectoryInterface;
 ```
 
-#### Overview
+## Overview
 
 Represents an interface to the config ROM of a remote device. You can use the methods of this interface to browser the ROM and obtain key values. You can also create additional IOFireWireConfigDirectoryInterface's to represent subdirectories within the ROM.
 

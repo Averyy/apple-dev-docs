@@ -19,7 +19,7 @@ typealias ABSearchConjunction = CFIndex
 typedef CFIndex ABSearchConjunction;
 ```
 
-#### Discussion
+## Discussion
 
 These constants are used to create compound search elementswith the [`ABSearchElementCreateWithConjunction(_:_:)`](./absearchelementcreatewithconjunction%28_,_%29.md) function.
 

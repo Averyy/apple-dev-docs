@@ -21,11 +21,11 @@ Reopens a compression sequential output stream.
 static func compressionStream(appendingTo compressedStream: ArchiveByteStream, flags: ArchiveFlags = [], threadCount: Int = 0) -> ArchiveByteStream?
 ```
 
-#### Return Value
+## Return Value
 
 A new archive byte stream.
 
-#### Discussion
+## Discussion
 
 The operation writes compressed data to the end of the supplied archive byte stream, `compressedStream`. `compressedStream` must implement [`seek(toOffset:relativeTo:)`](../archivebytestreamprotocol/seek%28tooffset,relativeto%29.md), and the read and write functions.
 

@@ -19,7 +19,7 @@ A structure for movie-wide attributes required for proper rendering.
 @interface CNRenderingSessionAttributes : NSObject
 ```
 
-#### Overview
+## Overview
 
 The attributes include camera intrinsics from the camera on which the video was originally recorded.
 

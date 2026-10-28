@@ -10,11 +10,11 @@ virtual IOUSBPipe *GetPipeObj(
  UInt8index);
 ```
 
-#### Return Value
+## Return Value
 
 The IOUSBPipe object. Note that the client does not own a reference to this pipe, so the client should retain() the IOUSBPipe object if necessary.
 
-#### Overview
+## Overview
 
 returns a handle to the pipe at the corresponding index
 

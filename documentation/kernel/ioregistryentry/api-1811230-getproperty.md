@@ -12,11 +12,11 @@ virtual OSObject * getProperty(
  const OSString *aKey) const;
 ```
 
-#### Return Value
+## Return Value
 
 The property value found, or zero.
 
-#### Overview
+## Overview
 
 This method will lookup a property in a registry entry's property table, using the OSDictionary::getObject semantics. This method is synchronized with other IORegistryEntry accesses to the property table.
 

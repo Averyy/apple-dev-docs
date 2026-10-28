@@ -20,7 +20,7 @@ Sets the value of a parameter by name.
 mutating func setParameter(name: String, value newValue: MaterialParameters.Value) throws
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to drive a shader-graph input from Swift — for example, to animate a portal’s opacity each frame, or to swap in a different texture in response to user input.
 

@@ -25,7 +25,7 @@ func CMTimebaseSetTimerNextFireTime(_ timebase: CMTimebase, timer: CFRunLoopTime
 extern OSStatus CMTimebaseSetTimerNextFireTime(CMTimebaseRef timebase, CFRunLoopTimerRef timer, CMTime fireTime, uint32_t flags);
 ```
 
-#### Discussion
+## Discussion
 
 The timer must be on the list of timers the timebase manages. The timebase continues to update the timer’s “NextFireDate” according to time jumps and effective rate changes. If `fireTime` is not numeric, or if the timebase is not moving, the “NextFireDate” is set to a future date.
 

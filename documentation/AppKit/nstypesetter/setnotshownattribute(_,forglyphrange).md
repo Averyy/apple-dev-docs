@@ -19,7 +19,7 @@ func setNotShownAttribute(_ flag: Bool, forGlyphRange glyphRange: NSRange)
 - (void) setNotShownAttribute:(BOOL) flag forGlyphRange:(NSRange) glyphRange;
 ```
 
-#### Discussion
+## Discussion
 
 For example, a tab or newline character doesn’t leave any marks; it just indicates where following glyphs are laid out.
 

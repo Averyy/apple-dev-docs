@@ -24,7 +24,7 @@ class PHASESoundEventNodeAsset
 @interface PHASESoundEventNodeAsset : PHASEAsset
 ```
 
-#### Overview
+## Overview
 
 This object refers by name to a collection of sound event nodes that connect to form a tree, or hierarchy. To retrieve an instance of this class, add a sound-event node definition to the asset registry using [`registerSoundEventAsset(rootNode:identifier:)`](./phaseassetregistry/registersoundeventasset%28rootnode,identifier%29.md). Choose the `rootNode` argument from the subclasses in [Sound Event Nodes](./sound-event-nodes.md) based on the playback features your app requires.
 

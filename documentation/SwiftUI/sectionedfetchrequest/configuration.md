@@ -21,7 +21,7 @@ The request’s configurable properties.
 struct Configuration
 ```
 
-#### Overview
+## Overview
 
 You initialize a [`SectionedFetchRequest`](../sectionedfetchrequest.md) with a section identifier, an optional predicate, and sort descriptors, either explicitly or with a configured [`NSFetchRequest`](../../CoreData/nsfetchrequest.md). Later, you can dynamically update the identifier, predicate, and sort parameters using the request’s configuration structure.
 

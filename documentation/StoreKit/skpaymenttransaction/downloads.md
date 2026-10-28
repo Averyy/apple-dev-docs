@@ -30,7 +30,7 @@ var downloads: [SKDownload] { get }
 
 - [Unlocking purchased content](../unlocking-purchased-content.md)
 
-#### Discussion
+## Discussion
 
 The contents of this property are undefined except when [`transactionState`](./transactionstate.md) is set to [`SKPaymentTransactionState.purchased`](../skpaymenttransactionstate/purchased.md). The [`SKDownload`](../skdownload.md) objects stored in this property must be used to download the transaction’s content before the transaction is finished. After the transaction is finished, the download objects are no longer queueable.
 

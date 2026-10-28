@@ -25,11 +25,11 @@ init(code: INSetTaskAttributeIntentResponseCode, userActivity: NSUserActivity?)
 - (instancetype) initWithCode:(INSetTaskAttributeIntentResponseCode) code userActivity:(NSUserActivity *) userActivity;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized response object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 After initializing the response object, create an [`INTask`](../intask.md) object with the updated values that you intend to apply to your app’s data structures and assign that object to the [`modifiedTask`](./modifiedtask.md) property.
 

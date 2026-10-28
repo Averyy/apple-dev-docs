@@ -5,7 +5,7 @@
 
 Traverse large result sets with page-index and cursor-based pagination.
 
-#### Overview
+## Overview
 
 To improve performance, the server uses pagination to return smaller discrete subsets of a large result set. When the number of records in a response exceeds a server-controlled limit, the server paginates it. Endpoints that support pagination can accept a `pageIndex` query parameter that indicates the page to return. You can make paginated requests in parallel to reduce the time it takes to retrieve the entire result set.
 
@@ -22,7 +22,7 @@ The following endpoints support the `sinceVersionId` query parameter:
 - [`Get Assignments`](./get-assignments-9wv1e.md)
 - [`Get Users`](./get-users-4mwln.md)
 
-#### Handle pagination
+## Handle pagination
 
 Requests for large record sets return paginated responses. You can traverse the pages by supplying the `pageIndex` query parameter in your request.
 
@@ -150,7 +150,7 @@ The response that contains the last page of records looks like the following:
 }
 ```
 
-#### Handle parallel paginated requests
+## Handle parallel paginated requests
 
 Paginated endpoints can accept multiple requests in parallel instead of sequentially, which can significantly reduce the amount of time to request and receive records. For performance reasons, don’t submit more than five requests simultaneously.
 
@@ -161,7 +161,7 @@ To make requests for multiple pages in parallel:
 
 > ❗ **Important**:  The `totalPages` in a result set can change while traversing a paginated result set. This occurs whenever the system modifies underlying data in the result set. When performing parallel requests, it’s important to note whether the value for `totalPages` changes on any paginated response, and to continue to iterate through the result set until you traverse the last page.
 
-#### Handle versioned responses
+## Handle versioned responses
 
 If you’re unable to subscribe to notifications, or are performing an initial sync, use the `sinceVersionId` query parameter to obtain incremental updates to keep your device management service up to date with changes without having to retrieve all records.
 
@@ -254,7 +254,7 @@ The response that contains the updated data looks like the following:
 
 > **Note**:  Using the `sinceVersionId` query parameter can result in responses with zero records. This isn’t an error or an end signal. It’s just an indication that there aren’t any records with modifications.
 
-#### Handle cursor-based pagination
+## Handle cursor-based pagination
 
 The subscription endpoints use cursor-based pagination instead of page-index pagination. These endpoints include:
 

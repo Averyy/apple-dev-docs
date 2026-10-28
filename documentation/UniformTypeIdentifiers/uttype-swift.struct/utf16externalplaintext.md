@@ -21,7 +21,7 @@ A type that represents plain text encoded as UTF-16 with an optional bill of mat
 static var utf16ExternalPlainText: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the bill of materials isn’t present, the encoding uses “external byte order (big-endian),
 

@@ -25,7 +25,7 @@ var nilSymbol: String { get set }
 @property (copy) NSString * nilSymbol;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this property is set to an empty string (””).
 

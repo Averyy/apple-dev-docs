@@ -19,7 +19,7 @@ dictionary CKDBUserIdentity {
 };
 ```
 
-#### Overview
+## Overview
 
 In JavaScript, this is a plain object with properties as described.
 

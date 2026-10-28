@@ -6,16 +6,19 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.as
 
 # mlx.core.astype
 
-**astype(*a: array*, *dtype: Dtype*, */*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: Cast the array to a specified type.
+```python
+astype(a: array, dtype: Dtype, /, *, stream: StreamOrDevice = None) → array
+```
 
-Parameters:
+Cast the array to a specified type.
 
-**a** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
-**dtype** ([Dtype](mlx.core.Dtype.md#mlx.core.Dtype)) – Type to which the array is cast.
+**Parameters:**
 
-Returns:
-The array with type `dtype`.
+- **a** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
+- **dtype** ([Dtype](mlx.core.Dtype.md#mlx.core.Dtype)) – Type to which the array is cast.
 
-Return type:
-[array](mlx.core.array.md#mlx.core.array)
+**Returns:**
+: The array with type `dtype`.
+
+**Return type:**
+: [array](mlx.core.array.md#mlx.core.array)

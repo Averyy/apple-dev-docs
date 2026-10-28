@@ -25,7 +25,7 @@ func CGPDFScannerPopObject(_ scanner: CGPDFScannerRef, _ value: UnsafeMutablePoi
 extern bool CGPDFScannerPopObject(CGPDFScannerRef scanner, CGPDFObjectRef*value);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the object is retrieved successfully; otherwise, [`false`](../Swift/false.md).
 

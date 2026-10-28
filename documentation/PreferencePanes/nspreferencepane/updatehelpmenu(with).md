@@ -20,7 +20,7 @@ func updateHelpMenu(with inArrayOfMenuItems: [[String : String]]?)
 - (void) updateHelpMenuWithArray:(NSArray<NSDictionary<NSString *,NSString *> *> *) inArrayOfMenuItems;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method if you need to update help menu items dynamically. If you have static help menu items, you should not use this method. Specify them under the `NSPrefPanelHelpAnchors` key in the bundle’s `Info.plist` instead.
 

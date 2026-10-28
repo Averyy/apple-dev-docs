@@ -23,11 +23,11 @@ init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
 - (instancetype) initWithNibName:(NSString *) nibNameOrNil bundle:(NSBundle *) nibBundleOrNil;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized [`UIViewController`](../uiviewcontroller.md) object.
 
-#### Discussion
+## Discussion
 
 This is the designated initializer for this class. When using a storyboard to define your view controller and its associated views, you never initialize your view controller class directly. Instead, view controllers are instantiated by the storyboard either automatically when a segue is triggered or programmatically when your app calls the [`instantiateViewController(withIdentifier:)`](../uistoryboard/instantiateviewcontroller%28withidentifier%29.md) method of a storyboard object. When instantiating a view controller from a storyboard, iOS initializes the new view controller by calling its [`init(coder:)`](./init%28coder%29.md) method instead of this method and sets the [`nibName`](./nibname.md) property to a nib file stored inside the storyboard.
 

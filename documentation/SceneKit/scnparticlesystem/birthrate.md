@@ -25,7 +25,7 @@ var birthRate: CGFloat { get set }
 @property (nonatomic) CGFloat birthRate;
 ```
 
-#### Discussion
+## Discussion
 
 The system emits this number of particles at a constant rate through the duration of the period specified by the [`emissionDuration`](./emissionduration.md) property. A value of zero prevents the system from emitting particles, unless you randomize the birth rate with the [`birthRateVariation`](./birthratevariation.md) property.
 

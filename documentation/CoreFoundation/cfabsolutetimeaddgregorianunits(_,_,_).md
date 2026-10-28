@@ -27,7 +27,7 @@ func CFAbsoluteTimeAddGregorianUnits(_ at: CFAbsoluteTime, _ tz: CFTimeZone!, _ 
 extern CFAbsoluteTime CFAbsoluteTimeAddGregorianUnits(CFAbsoluteTime at, CFTimeZoneRef tz, CFGregorianUnits units);
 ```
 
-#### Return Value
+## Return Value
 
 An absolute time value equal to the sum of `at` and `units`.
 

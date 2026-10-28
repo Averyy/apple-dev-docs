@@ -24,7 +24,7 @@ var groundColor: CGColor? { get set }
 @property (nonatomic, nullable) CGColorRef groundColor;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this property’s value is `nil`, causing Model I/O to render an infinite sky above and below. If you set this property to a color, Model I/O renders a solid color for all areas of the cube texture below the level specified in the [`horizonElevation`](./horizonelevation.md) property.
 

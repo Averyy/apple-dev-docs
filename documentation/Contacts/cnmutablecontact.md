@@ -24,7 +24,7 @@ class CNMutableContact
 @interface CNMutableContact : CNContact
 ```
 
-#### Overview
+## Overview
 
 `CNMutableContact` objects are not a thread-safe class. To access the contact information in a thread-safe manner, use a [`CNContact`](./cncontact.md) object instead.
 

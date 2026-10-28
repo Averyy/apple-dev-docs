@@ -23,7 +23,7 @@ static var liveOff: PHLivePhotoBadgeOptions { get }
 PHLivePhotoBadgeOptionsLiveOff
 ```
 
-#### Discussion
+## Discussion
 
 For example, when implementing a picker interface for sharing photos on a social network, you can use this icon to indicate when the user has chosen not to share the additional motion and sound content of a Live Photo.
 

@@ -21,11 +21,11 @@ nonisolated
 func url(for path: FilePath) throws -> URL
 ```
 
-#### Return Value
+## Return Value
 
 The URL to the item.
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**: Don’t persist the returned URL beyond the lifetime of the current process.
 

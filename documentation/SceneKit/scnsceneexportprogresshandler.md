@@ -25,7 +25,7 @@ typealias SCNSceneExportProgressHandler = (Float, (any Error)?, UnsafeMutablePoi
 typedef void (^)(float, NSError *, _Bool *) SCNSceneExportProgressHandler;
 ```
 
-#### Discussion
+## Discussion
 
 You specify a block with this signature when calling the [`write(to:options:delegate:progressHandler:)`](./scnscene/write%28to,options,delegate,progresshandler%29.md) method in order to receive updates on the progress of the export operation. The block takes the following parameters:
 

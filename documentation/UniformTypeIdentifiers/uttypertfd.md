@@ -21,7 +21,7 @@ A type that represents Rich Text Format Directory documents.
 extern UTType * const UTTypeRTFD;
 ```
 
-#### Discussion
+## Discussion
 
 RTFD is RTF with content embedded in its on-disk format.
 

@@ -5,7 +5,7 @@
 
 Provide prices for SKUs with the supported number of decimal places, in milliunits of currency.
 
-#### Discussion
+## Discussion
 
 Apps that use the Advanced Commerce API manage their own catalog of Apple In-App Purchases and their respective SKUs, including their prices. When supplying a price, be sure to use the supported number of decimal places, as shown in the section below. In the API, provide the price value in milliunit format.
 
@@ -19,11 +19,11 @@ When setting a price for your SKU, it’s strongly recommended that you choose f
 
 For price point information by currency, see [App Store Pricing Update](https://www.apple.com/newsroom/pdfs/App-Store-Pricing-Update.pdf).
 
-##### Determine the currency at runtime
+### Determine the currency at runtime
 
 To determine the currency to use at runtime, check the device’s App Store storefront. For a list of currencies that the App Store supports for each storefront, see [Financial reports regions and currencies](https://developer.apple.com/help/app-store-connect/reference/financial-report-regions-and-currencies). For information about getting the current storefront in the app, see the [`current`](../StoreKit/storefront/current.md) property of [`Storefront`](../StoreKit/storefront.md). For more information on currency, see [`currency`](./currency.md).
 
-##### Provide prices in milliunit format in API calls
+### Provide prices in milliunit format in API calls
 
 The Advanced Commerce API accepts prices in milliunit format, as noted in the documentation, such as for the [`price`](./price.md) type.
 
@@ -37,7 +37,7 @@ To determine a price in milliunits, multiply the price by 1000.  One unit of a c
 
 > **Note**: The payment sheet and other customer communications automatically display prices in the standard format, not in milliunits.
 
-##### Use the supported number of decimal places for prices
+### Use the supported number of decimal places for prices
 
 The App Store supports either zero or two decimal places for prices, depending on the currency.
 
@@ -50,7 +50,7 @@ The following table shows examples of valid and invalid prices, based on the num
 
 > ❗ **Important**: Don’t exceed the supported number of decimal places when you supply a price in the Advanced Commerce API. If your API call includes more decimal digits on a price than its currency supports, the system doesn’t display the payment sheet and fails with an error.
 
-##### Look up the supported number of decimal places by currency code
+### Look up the supported number of decimal places by currency code
 
 The following currencies don’t support any decimal places:
 

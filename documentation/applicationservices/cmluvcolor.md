@@ -17,7 +17,7 @@ typedef struct CMLuvColor {
 } CMLuvColor;
 ```
 
-#### Overview
+## Overview
 
 A color value expressed in the L*u*v* color space is composed of `L`, `u`, and `v` component values. 
 

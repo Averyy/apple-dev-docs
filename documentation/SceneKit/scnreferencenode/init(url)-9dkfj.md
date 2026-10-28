@@ -25,11 +25,11 @@ init?(url referenceURL: URL)
 - (instancetype) initWithURL:(NSURL *) referenceURL;
 ```
 
-#### Return Value
+## Return Value
 
 A new reference node.
 
-#### Discussion
+## Discussion
 
 Using this initializer does not load the node’s content. To load content from the referenced URL, use the [`load()`](./load%28%29.md) method.
 

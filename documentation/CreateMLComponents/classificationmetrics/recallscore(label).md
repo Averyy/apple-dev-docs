@@ -23,11 +23,11 @@ func recallScore(label: Label) -> Double
 
 Available when `Label` conforms to `Hashable`.
 
-#### Return Value
+## Return Value
 
 The recall score for the given label.
 
-#### Discussion
+## Discussion
 
 Precision score is computed as the ratio `tp / (tp + fn)` where `tp` is the number of true positives and `fn` is the number of false negatives.
 

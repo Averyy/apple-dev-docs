@@ -23,7 +23,7 @@ static var didUndoChange: NotificationCenter.BaseMessageIdentifier<UndoManager.D
 
 Available when `Self` is `NotificationCenter.BaseMessageIdentifier<UndoManager.DidUndoChangeMessage>`.
 
-#### Discussion
+## Discussion
 
 Use this identifier with [`NotificationCenter`](../../notificationcenter.md)’s `addObserver(of:for:using:)` or `messages(of:for:bufferSize:)` methods to observe messages of type [`UndoManager.DidUndoChangeMessage`](../../undomanager/didundochangemessage.md).
 

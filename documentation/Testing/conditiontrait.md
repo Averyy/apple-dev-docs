@@ -27,7 +27,7 @@ struct ConditionTrait
 
 - [Migrating a test from XCTest](./migratingfromxctest.md)
 
-#### Overview
+## Overview
 
 To add this trait to a test, use one of the following functions:
 

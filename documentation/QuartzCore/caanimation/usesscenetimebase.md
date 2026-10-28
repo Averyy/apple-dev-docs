@@ -24,7 +24,7 @@ var usesSceneTimeBase: Bool { get set }
 @property BOOL usesSceneTimeBase;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is [`true`](../../Swift/true.md), animation timing is governed by the currentTime property of the view, layer, or custom renderer responsible for drawing the scene. The default value is [`false`](../../Swift/false.md).
 

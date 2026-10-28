@@ -20,7 +20,7 @@ class LSMMap
 typedef struct __LSMMap * LSMMapRef;
 ```
 
-#### Overview
+## Overview
 
 An [`LSMMap`](./lsmmap.md) is a mutable, opaque Core Foundation type that represents a map.
 

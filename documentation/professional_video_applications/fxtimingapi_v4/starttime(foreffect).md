@@ -24,7 +24,7 @@ func startTime(forEffect startTime: UnsafeMutablePointer<CMTime>!)
 
 - [Understanding time in FxPlug](../../Professional-Video-Applications/understanding-time-in-fxplug.md)
 
-#### Discussion
+## Discussion
 
 In Motion, this is the time the effect starts relative to timeline time, but in Final Cut Pro this is the time the effect starts relative to the input object’s native start time. For example, if an object’s head is trimmed by 2 seconds and the effect starts at the head of the template, then `-startTimeForEffect:` will return 2 seconds. This value changes when the user retimes the clip in Final Cut Pro, so a 200-percent increase in speed halves the start time to 1 second.
 

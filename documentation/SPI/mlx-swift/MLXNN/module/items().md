@@ -17,7 +17,7 @@ Return a `NestedDictionary` structure of [`ModuleItem`](../moduleitem.md) repres
 func items() -> ModuleItems
 ```
 
-#### Discussion
+## Discussion
 
 This is typically not used directly – it is part of the implementation of [`filterMap(filter:map:isLeaf:)`](./filtermap%28filter,map,isleaf%29.md) and [`update(parameters:)`](./update%28parameters%29.md) for example.
 

@@ -24,11 +24,11 @@ convenience init(device: any MTLDevice)
 - (instancetype) initWithDevice:(id<MTLDevice>) device;
 ```
 
-#### Return Value
+## Return Value
 
 A valid [`MPSImagePyramid`](../mpsimagepyramid.md) object or `nil`, if failure.
 
-#### Discussion
+## Discussion
 
 The filter kernel is the outer product of `w = [1/16, 1/4, 3/8, 1/4, 1/16]^T`, with itself.
 

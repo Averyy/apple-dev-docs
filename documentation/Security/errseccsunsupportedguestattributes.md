@@ -20,7 +20,7 @@ var errSecCSUnsupportedGuestAttributes: OSStatus { get }
 errSecCSUnsupportedGuestAttributes
 ```
 
-#### Discussion
+## Discussion
 
 When calling the [`SecHostCreateGuest`](./sechostcreateguest.md) function or the [`SecCodeCopyGuestWithAttributes(_:_:_:_:)`](./seccodecopyguestwithattributes%28_,_,_,_%29.md) function, you passed a key that either isn’t understood, recognized, or supported.
 

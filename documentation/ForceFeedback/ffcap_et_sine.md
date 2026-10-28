@@ -18,7 +18,7 @@ var FFCAP_ET_SINE: Int { get }
 FFCAP_ET_SINE
 ```
 
-#### Discussion
+## Discussion
 
 The effect represents a sine force effect.
 

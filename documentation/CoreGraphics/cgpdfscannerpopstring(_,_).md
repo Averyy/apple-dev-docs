@@ -25,7 +25,7 @@ func CGPDFScannerPopString(_ scanner: CGPDFScannerRef, _ value: UnsafeMutablePoi
 extern bool CGPDFScannerPopString(CGPDFScannerRef scanner, CGPDFStringRef*value);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the string is retrieved successfully; otherwise, [`false`](../Swift/false.md).
 

@@ -23,7 +23,7 @@ var completionHandler: ((PKIssuerProvisioningExtensionAuthorizationResult) -> Vo
 @property (nonatomic, copy, nullable) void (^completionHandler)(PKIssuerProvisioningExtensionAuthorizationResult result);
 ```
 
-#### Discussion
+## Discussion
 
 The completion handler takes the following parameter:
 

@@ -22,7 +22,7 @@ Record the return type of the distributed method. This method will not be invoke
 mutating func recordReturnType<R>(_ type: R.Type) throws
 ```
 
-##### Serialization Requirement
+### Serialization Requirement
 
 Implementations of this method must ensure that the `R` type parameter conforms to the types’ `SerializationRequirement`.
 

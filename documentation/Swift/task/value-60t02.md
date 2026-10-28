@@ -23,11 +23,11 @@ var value: Success { get async throws }
 
 Available when `Success` conforms to `Sendable` and `Failure` conforms to `Error`.
 
-#### Return Value
+## Return Value
 
 The task’s result.
 
-#### Discussion
+## Discussion
 
 If the task hasn’t completed, accessing this property waits for it to complete and its priority increases to that of the current task. Note that this might not be as effective as creating the task with the correct priority, depending on the executor’s scheduling details.
 

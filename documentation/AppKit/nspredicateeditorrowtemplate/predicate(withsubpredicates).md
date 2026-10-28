@@ -19,11 +19,11 @@ func predicate(withSubpredicates subpredicates: [NSPredicate]?) -> NSPredicate
 - (NSPredicate *) predicateWithSubpredicates:(NSArray<NSPredicate *> *) subpredicates;
 ```
 
-#### Return Value
+## Return Value
 
 The predicate represented by the values of the template’s views and the given subpredicates. You can override this method to return the predicate represented by your custom views.
 
-#### Discussion
+## Discussion
 
 This method is only called if [`match(for:)`](./match%28for%29.md) returned a positive value for the receiver.
 

@@ -20,7 +20,7 @@ Constructs a data container using a builder
 convenience init(locale: Locale, identifier: String, version: String, @SFCustomLanguageModelData.DataInsertableBuilder builder: () -> any DataInsertable)
 ```
 
-#### Discussion
+## Discussion
 
 The `SFCustomLanguageModelData` class accumulates language model training and custom vocabulary data, both associated with a specified locale. This initializer creates an object that is initially populated using the provided builder.
 

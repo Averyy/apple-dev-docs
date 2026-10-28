@@ -26,11 +26,11 @@ func createDirectory(atPath path: String, attributes: [AnyHashable : Any] = [:])
 - (BOOL) createDirectoryAtPath:(NSString *) path attributes:(NSDictionary *) attributes;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the operation was successful, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Because this method does not return error information, it has been deprecated as of OS X v10.5. Use [`createDirectory(atPath:withIntermediateDirectories:attributes:)`](./createdirectory%28atpath,withintermediatedirectories,attributes%29.md) instead.
 

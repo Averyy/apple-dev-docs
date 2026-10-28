@@ -15,7 +15,7 @@ A request that you make when modifying context information.
 object ContextsRequest
 ```
 
-#### Discussion
+## Discussion
 
 Use this request object to define one or more contexts that your app provides.
 

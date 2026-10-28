@@ -20,7 +20,7 @@ var audit_token: audit_token_t
 audit_token_t audit_token;
 ```
 
-#### Discussion
+## Discussion
 
 Use this token with the functions defined in `libbsm.h` to extract values such as the process identifier (`PID`), user identifier (`UID`), and group identifier (`GID`).
 

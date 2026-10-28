@@ -16,7 +16,7 @@ kIOPSBatteryHealthConditionKey broadly describes the battery's health.
 #define kIOPSBatteryHealthConditionKey
 ```
 
-#### Discussion
+## Discussion
 
 - Apple-defined power sources will publish this key.
 - Value is one of the "Battery Health Condition Values" strings described in this file.

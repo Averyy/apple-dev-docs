@@ -20,7 +20,7 @@ Completes pending audio conversions.
 final func flush() throws -> [AnalyzerInput]
 ```
 
-#### Return Value
+## Return Value
 
 An array of `AnalyzerInput` objects containing completed pending audio conversions.
 

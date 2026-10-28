@@ -24,11 +24,11 @@ class UICollectionViewLayoutInvalidationContext
 @interface UICollectionViewLayoutInvalidationContext : NSObject
 ```
 
-#### Overview
+## Overview
 
 Layout objects that are designed to support invalidation contexts can use the information in a [`UICollectionViewLayoutInvalidationContext`](./uicollectionviewlayoutinvalidationcontext.md) object to optimize their behavior during the invalidation cycle. You can create an invalidation context object as a precursor to invalidating a layout object. After configuring the invalidation context object, pass it to the layout object’s [`invalidateLayout(with:)`](./uicollectionviewlayout/invalidatelayout%28with%29.md) method, which is responsible for using the context object to update the layout efficiently. The collection view also creates invalidation contexts in response to specific changes. For example, it creates an invalidation context when you change the layout or data source object, when you insert or delete items, and when you call the [`reloadData()`](./uicollectionview/reloaddata%28%29.md) method.
 
-##### Subclassing Notes
+### Subclassing Notes
 
 If you create your own custom layout objects, you can subclass `UICollectionViewLayoutInvalidationContext` and add properties to specify which aspects of your layout data can be invalidated separately. You must then design your layout object to check for these properties and update the layout appropriately.
 

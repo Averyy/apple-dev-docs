@@ -25,7 +25,7 @@ let NSURLErrorFailingURLPeerTrustErrorKey: String
 extern NSString * const NSURLErrorFailingURLPeerTrustErrorKey;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is the [`SecTrust`](../Security/sectrust.md) object.
 

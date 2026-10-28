@@ -19,7 +19,7 @@ A validation dataset derived by randomly selecting a portion of the sound classi
 case split(strategy: MLSplitStrategy)
 ```
 
-#### Discussion
+## Discussion
 
 - strategy: The partition method this case uses to create the validation dataset from the training dataset.
 

@@ -25,11 +25,11 @@ convenience init?(named name: String, inDirectory directory: String?)
 + (instancetype) particleSystemNamed:(NSString *) name inDirectory:(NSString *) directory;
 ```
 
-#### Return Value
+## Return Value
 
 A new particle system instantiated from the contents of the file.
 
-#### Discussion
+## Discussion
 
 A SceneKit particle file created by Xcode contains an archived [`SCNParticleSystem`](../scnparticlesystem.md) instance, so you can also use the [`NSKeyedArchiver`](../../Foundation/nskeyedarchiver.md) and [`NSKeyedUnarchiver`](../../Foundation/nskeyedunarchiver.md) classes to write and read particle files.
 

@@ -20,7 +20,7 @@ struct CGScreenUpdateMoveDelta
 struct CGScreenUpdateMoveDelta;
 ```
 
-#### Overview
+## Overview
 
 Move operation notifications are restricted to changes that move a region by an integer number of pixels. The fields `dX` and `dY` describe the direction of movement:
 

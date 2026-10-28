@@ -16,7 +16,7 @@ typealias XCWaitCompletionHandler = ((any Error)?) -> Void
 typedef void (^)(NSError *) XCWaitCompletionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Pass a block with this signature to [`waitForExpectations(timeout:handler:)`](./xctestcase/waitforexpectations%28timeout,handler%29.md). Your block should handle any errors the waiter object encounters, including a timeout, and should perform assertions when the test fulfills the expectation for the waiter object.
 

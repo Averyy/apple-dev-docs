@@ -5,7 +5,7 @@
 
 Include test targets that build code to test the logic in your functions, check for integration issues, automate UI workflows, and measure performance.
 
-#### Overview
+## Overview
 
 When creating a new project in Xcode 16 and later, choose a Testing System from the pop-up menu in the options dialog and let Xcode configure your project with test bundles.
 
@@ -16,7 +16,7 @@ Xcode includes two testing frameworks:
 
 The options for testing system are Swift Test with XCTest UI Tests and XCTests for Unit and UI Tests. After making a selection, Xcode adds two types of test targets to your project, one for your unit tests with a name ending in “Tests” and one for your UI tests with a name ending in “UITests”. You’ll find the matching name for each of these targets in the Project navigator, along with a template file you can use to start writing your first tests. Your testing system choice impacts the primary framework Xcode includes in the file template for unit tests. Previous versions of Xcode included these targets when you enabled the Include Tests option when creating a new project and included file templates that use XCTest.
 
-##### Add a new testing target
+### Add a new testing target
 
 If you need to add testing to additional targets or have an existing target you want to add tests to:
 
@@ -29,7 +29,7 @@ If you need to add testing to additional targets or have an existing target you 
 
 > **Note**: Swift Testing and XCTest can build from the same test target and coexist inside the same test bundle. If your project already contains a test bundle with unit tests written using XCTest, you don’t need to add a new Unit Testing Bundle to your project to start writing unit test with Swift Testing. You can add additional files to the target using Swift Testing and consider converting your old tests as time allows.
 
-##### Write a unit test
+### Write a unit test
 
 To write a test, select a test file from your test target, and choose a type or function to write a unit test for. If you need to add a new test file to your target,  choose File > New > New File From Template, then select Swift Testing Unit Test or XCTest Unit Test to add a test file with the appropriate structure. The test function that implements the unit test has the following three steps, in order:
 
@@ -71,13 +71,13 @@ For more information on defining tests using Swift Testing, see [Defining test f
 
 > **Note**: The Swift access control model prevents an external entity from accessing anything declared as internal. To access items declared as internal from your test code, compile the module your test code needs to access with [Enable Testability](./build-settings-reference.md#Enable-Testability) and add the `@testable` attribute to the import statement for the module. For more information, see [Access Control](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/accesscontrol/#Access-Levels-for-Unit-Test-Targets).
 
-##### Write an integration test
+### Write an integration test
 
 Integration tests look very similar to unit tests, use the same APIs, and follow the same Arrange-Act-Assert pattern. The difference between a unit test and an integration test is one of scale. While a unit test covers a very small part of your app’s logic, an integration test examines the behavior of a larger subsystem, or combination of classes and functions. In the Arrange step of an integration test, widen the scope of real project code that’s under test, using fewer stub objects.
 
 Rather than trying to cover every different condition or boundary case as with unit tests, use integration tests to assert that components work together to achieve app goals in important situations. Examples include testing that a value received from a controller is stored in the model correctly, and that an error produced by a network request gets passed to and presented by the user interface.
 
-##### Write a UI test
+### Write a UI test
 
 UI tests work in a different way from unit and integration tests. The XCTest UI Test template for new files contains the common starting points for UI tests. You implement the UI tests for your app using XCTest in a subclass of [`XCTestCase`](../XCTest/xctestcase.md). Rather than executing your app’s code directly, they use the app’s user-interface controls to determine whether the user can complete a specific task using the app.
 
@@ -120,7 +120,7 @@ class MyUITests: XCTestCase {
 
 Where UI tests imitate complex workflows with multiple distinct steps, use [`XCTActivity`](../XCTest/xctactivity.md) to organize and name the shared steps. Create helper methods to share implementations of activities that you use in multiple tests.
 
-##### Write a performance test
+### Write a performance test
 
 Write performance tests to gather information on time taken, memory used, or data written, during the execution of a region of code. XCTest runs your code multiple times, measuring the requested metrics. You can set a baseline expectation for the metric, and if the measured value is significantly worse than the baseline, XCTest reports a test failure.
 

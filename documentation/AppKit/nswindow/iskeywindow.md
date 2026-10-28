@@ -19,7 +19,7 @@ var isKeyWindow: Bool { get }
 @property (readonly, getter=isKeyWindow) BOOL keyWindow;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the window is the key window for the application; otherwise, [`false`](../../Swift/false.md).
 

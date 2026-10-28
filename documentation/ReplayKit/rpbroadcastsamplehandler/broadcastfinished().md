@@ -26,7 +26,7 @@ func broadcastFinished()
 - (void) broadcastFinished;
 ```
 
-#### Discussion
+## Discussion
 
 ReplayKit calls this method when the the broadcasting app calls its [`finishBroadcast(handler:)`](../rpbroadcastcontroller/finishbroadcast%28handler%29.md) method.
 

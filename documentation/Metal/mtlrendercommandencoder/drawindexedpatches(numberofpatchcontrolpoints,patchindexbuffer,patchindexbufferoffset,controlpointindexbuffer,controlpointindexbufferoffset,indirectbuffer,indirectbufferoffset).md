@@ -25,7 +25,7 @@ func drawIndexedPatches(numberOfPatchControlPoints: Int, patchIndexBuffer: (any 
 - (void) drawIndexedPatches:(NSUInteger) numberOfPatchControlPoints patchIndexBuffer:(id<MTLBuffer>) patchIndexBuffer patchIndexBufferOffset:(NSUInteger) patchIndexBufferOffset controlPointIndexBuffer:(id<MTLBuffer>) controlPointIndexBuffer controlPointIndexBufferOffset:(NSUInteger) controlPointIndexBufferOffset indirectBuffer:(id<MTLBuffer>) indirectBuffer indirectBufferOffset:(NSUInteger) indirectBufferOffset;
 ```
 
-#### Discussion
+## Discussion
 
 Indirect drawing methods may help your app avoid expensive latency costs. This is because the command reads arguments from an [`MTLBuffer`](../mtlbuffer.md) instance instead of using the CPU to pass parameters to the command.
 

@@ -17,7 +17,7 @@ The request included an invalid currency code.
 case invalidCurrencyCode
 ```
 
-#### Discussion
+## Discussion
 
 The currency code in the request must follow the ISO 4217 standard.
 

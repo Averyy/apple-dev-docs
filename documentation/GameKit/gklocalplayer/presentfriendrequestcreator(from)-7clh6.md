@@ -27,7 +27,7 @@ func presentFriendRequestCreator(from window: NSWindow?) throws
 - (BOOL) presentFriendRequestCreatorFromWindow:(NSWindow *) window error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 If this method throws an exception, it doesn’t open the Messages app.
 

@@ -15,7 +15,7 @@ An error that indicates an invalid extend-by-days value.
 object InvalidExtendByDaysError
 ```
 
-#### Discussion
+## Discussion
 
 This error applies to the [`extendByDays`](./extendbydays.md) you provide in the [`Extend a Subscription Renewal Date`](./extend-a-subscription-renewal-date.md) and [`Extend Subscription Renewal Dates for All Active Subscribers`](./extend-subscription-renewal-dates-for-all-active-subscribers.md) endpoints.
 

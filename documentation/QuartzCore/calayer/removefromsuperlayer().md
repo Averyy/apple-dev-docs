@@ -24,7 +24,7 @@ func removeFromSuperlayer()
 - (void) removeFromSuperlayer;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this method to remove a layer (and all of its sublayers) from a layer hierarchy. This method updates both the superlayer’s list of sublayers and sets this layer’s [`superlayer`](./superlayer.md) property to `nil`.
 

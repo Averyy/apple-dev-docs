@@ -21,7 +21,7 @@ Creates a new monitor without any extension points.
 init()
 ```
 
-#### Discussion
+## Discussion
 
 After using this initializer, call the [`addAppExtensionPoint(_:)`](./addappextensionpoint%28_%29.md) method to add an extension point to monitor.
 

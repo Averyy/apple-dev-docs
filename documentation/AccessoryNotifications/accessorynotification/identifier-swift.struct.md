@@ -15,7 +15,7 @@ A structure that uniquely identifies a notification.
 struct Identifier
 ```
 
-#### Overview
+## Overview
 
 A notification’s [`identifier`](./identifier-swift.property.md) property is of this type.
 

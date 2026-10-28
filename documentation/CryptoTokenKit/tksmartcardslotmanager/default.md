@@ -25,7 +25,7 @@ class var `default`: TKSmartCardSlotManager? { get }
 @property (class, readonly, nullable) TKSmartCardSlotManager * defaultManager;
 ```
 
-#### Discussion
+## Discussion
 
 This method returns `nil` unless the [`com.apple.security.smartcard`](../../BundleResources/entitlements/com.apple.security.smartcard.md) entitlement is enabled.
 

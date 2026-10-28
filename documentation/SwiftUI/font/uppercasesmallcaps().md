@@ -21,7 +21,7 @@ Adjusts the font to enable uppercase small capitals.
 func uppercaseSmallCaps() -> Font
 ```
 
-#### Discussion
+## Discussion
 
 This feature turns capital characters into small capitals. It is generally used for words which would otherwise be set in all caps, such as acronyms, but which are desired in small-cap form to avoid disrupting the flow of text.
 

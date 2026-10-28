@@ -27,7 +27,7 @@ nonisolated
 init(text: Binding<String>, selection: Binding<TextSelection?>)
 ```
 
-#### Discussion
+## Discussion
 
 Use a [`TextEditor`](../texteditor.md) instance to create a view in which users can enter and edit long-form styled text.
 
@@ -44,13 +44,13 @@ struct StyledTextEditingView: View {
 }
 ```
 
-##### Format text by combining attributes and view modifiers
+### Format text by combining attributes and view modifiers
 
 If the AttributedString does not have a font and/or foreground color specified for a given range of text, the rich text editor will use the font and/or foreground color inherited from the environment for that range of text, just like [`init(_:)`](../text/init%28_%29-1a4oh.md). To control what formatting options are available in the editor, use the [`AttributedTextFormattingDefinition`](../attributedtextformattingdefinition.md) protocol.
 
 > **Note**: Other than [`Text`](../text.md), this editor does not automatically translate UIKit or AppKit formatting attributes into SwiftUI attributes. For importing RTF documents, which encode formatting using UIKit and AppKit attributes, use [`AttributedTextFormatting.Transferable`](../attributedtextformatting/transferable.md) to obtain an attributed string compatible with this editor.
 
-##### Build custom controls using the selection binding
+### Build custom controls using the selection binding
 
 Use [`AttributedTextSelection`](../attributedtextselection.md) for implementing custom controls, e.g. for applying formatting such as boldness:
 

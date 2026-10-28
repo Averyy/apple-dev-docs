@@ -25,7 +25,7 @@ class func mediaSelectionOptions(from mediaSelectionOptions: [AVMediaSelectionOp
 + (NSArray<AVMediaSelectionOption *> *) mediaSelectionOptionsFromArray:(NSArray<AVMediaSelectionOption *> *) mediaSelectionOptions filteredAndSortedAccordingToPreferredLanguages:(NSArray<NSString *> *) preferredLanguages;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`AVMediaSelectionOption`](../avmediaselectionoption.md) objects that match one of the languages in the `preferredLanguages` parameter. The objects in this array are sorted based on the language each one matches, with objects matching the most preferred language first in the array.
 

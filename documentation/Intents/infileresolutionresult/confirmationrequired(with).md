@@ -24,11 +24,11 @@ class func confirmationRequired(with fileToConfirm: INFile?) -> Self
 + (instancetype) confirmationRequiredWithFileToConfirm:(INFile *) fileToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INFileResolutionResult`](../infileresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you can resolve the parameter to the specified object but you want the user to confirm that value.
 

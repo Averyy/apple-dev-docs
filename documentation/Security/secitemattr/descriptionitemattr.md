@@ -20,7 +20,7 @@ case descriptionItemAttr
 kSecDescriptionItemAttr
 ```
 
-#### Discussion
+## Discussion
 
 You use this tag to set or get a string value that represents a user-visible string describing this particular kind of item, for example “disk image password”. Keychain strings should use UTF-8 encoding.
 

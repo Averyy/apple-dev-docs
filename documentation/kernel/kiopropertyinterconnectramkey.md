@@ -13,7 +13,7 @@
 #define kIOPropertyInterconnectRAMKey
 ```
 
-#### Discussion
+## Discussion
 
 This key defines the value of RAM for the key kIOPropertyPhysicalInterconnectLocationKey. If the device is system memory that is being represented as a storage device, this key should be set.
 

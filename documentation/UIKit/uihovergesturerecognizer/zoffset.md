@@ -22,7 +22,7 @@ var zOffset: CGFloat { get }
 @property (nonatomic, readonly) CGFloat zOffset;
 ```
 
-#### Discussion
+## Discussion
 
 This value is `1` at the maximum distance from the screen and approaches `0` as the pointing device gets closer to the screen. This value is `0` for devices that don’t support [`zOffset`](./zoffset.md).
 

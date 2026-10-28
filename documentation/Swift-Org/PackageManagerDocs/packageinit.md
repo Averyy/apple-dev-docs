@@ -10,7 +10,7 @@ framework: "Swift-Org/PackageManagerDocs"
 
 Initialize a new package.
 
-#### Overview
+## Overview
 
 ```
 package init [--package-path=<package-path>]

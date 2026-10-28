@@ -24,11 +24,11 @@ func JSObjectGetPropertyForKey(_ ctx: JSContextRef!, _ object: JSObjectRef!, _ p
 JSValueRefJSObjectGetPropertyForKey(JSContextRef ctx, JSObjectRef object, JSValueRef propertyKey, JSValueRef*exception);
 ```
 
-#### Return Value
+## Return Value
 
 The property’s value if `object` has the property key; otherwise, the undefined value.
 
-#### Discussion
+## Discussion
 
 This function is the same as performing `object[propertyKey]` from JavaScript.
 

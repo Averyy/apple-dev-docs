@@ -11,7 +11,7 @@ Play the Lost Mode sound on a device that’s in Lost Mode.
 - iPadOS 10.3+
 - Mac Catalyst 10.3+
 
-#### Discussion
+## Discussion
 
 A device responds with error code:
 
@@ -22,7 +22,7 @@ The sound plays until the server disables Lost Mode or the user disables the sou
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command availability
+### Command availability
 
 |  |  |
 | --- | --- |
@@ -32,7 +32,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | N/A |
 | Required access right | N/A |
 
-##### Example request and response
+### Example request and response
 
 **Request**:
 

@@ -26,7 +26,7 @@ static var all: Transaction.Transactions { get }
 - [Supporting subscription offer codes in your app](../supporting-subscription-offer-codes-in-your-app.md)
 - [Supporting win-back offers in your app](../supporting-win-back-offers-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 This sequence returns the customer’s transaction history current to the moment you access it. The sequence emits a finite number of transactions. If the App Store processes additional transactions for the customer while you’re accessing this sequence, they appear in the transaction listener [`updates`](./updates.md).
 

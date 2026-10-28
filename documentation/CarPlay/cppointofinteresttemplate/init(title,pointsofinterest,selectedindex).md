@@ -21,7 +21,7 @@ init(title: String, pointsOfInterest: [CPPointOfInterest], selectedIndex: Int)
 - (instancetype) initWithTitle:(NSString *) title pointsOfInterest:(NSArray<CPPointOfInterest *> *) pointsOfInterest selectedIndex:(NSUInteger) selectedIndex;
 ```
 
-#### Discussion
+## Discussion
 
 `pointsOfInterest` can contain a maximum of twelve points of interest because that is the most the template displays.
 

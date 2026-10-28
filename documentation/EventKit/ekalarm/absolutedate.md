@@ -24,7 +24,7 @@ var absoluteDate: Date? { get set }
 @property (nonatomic, copy, nullable) NSDate * absoluteDate;
 ```
 
-#### Discussion
+## Discussion
 
 If you set this property for a relative offset alarm, it loses the relative offset and becomes an absolute alarm.
 

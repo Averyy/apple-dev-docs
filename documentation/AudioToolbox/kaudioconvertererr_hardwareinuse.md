@@ -23,7 +23,7 @@ var kAudioConverterErr_HardwareInUse: OSStatus { get }
 kAudioConverterErr_HardwareInUse
 ```
 
-#### Discussion
+## Discussion
 
 On receiving this error, your application must stop calling `AudioConverterFillComplexBuffer`. You can check the value of the [`kAudioConverterPropertyCanResumeFromInterruption`](./kaudioconverterpropertycanresumefrominterruption.md) property to determine if the converter you are using can resume processing after an interruption. If so, then wait for an interruption-ended call from Audio Session Services, reactivate the audio session, and finally resume using the codec.
 

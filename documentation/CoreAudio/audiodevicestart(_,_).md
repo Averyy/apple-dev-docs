@@ -20,11 +20,11 @@ func AudioDeviceStart(_ inDevice: AudioObjectID, _ inProcID: AudioDeviceIOProcID
 extern OSStatus AudioDeviceStart(AudioObjectID inDevice, AudioDeviceIOProcID inProcID);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus indicating success or failure.
 
-#### Discussion
+## Discussion
 
 Starts IO for the given AudioDeviceIOProcID.
 

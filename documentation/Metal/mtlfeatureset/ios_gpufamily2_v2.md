@@ -22,7 +22,7 @@ case iOS_GPUFamily2_v2
 MTLFeatureSet_iOS_GPUFamily2_v2
 ```
 
-#### Discussion
+## Discussion
 
 This feature set corresponds with Apple A8 devices running iOS 9.
 

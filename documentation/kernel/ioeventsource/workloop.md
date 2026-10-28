@@ -9,7 +9,7 @@
 IOWorkLoop *workLoop;
 ```
 
-#### Overview
+## Overview
 
 What is the work-loop for this event source.
 

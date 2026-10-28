@@ -25,7 +25,7 @@ static let directional: SCNLight.LightType
 extern SCNLightType const SCNLightTypeDirectional;
 ```
 
-#### Discussion
+## Discussion
 
 Because a directional light illuminates all objects in the scene from the same direction and with the same intensity, so the position of the node containing the light has no effect. Attenuation and spotlight angle attributes do not apply to directional lights.
 

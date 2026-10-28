@@ -24,7 +24,7 @@ func accessibilityElementIsFocused() -> Bool
 - (BOOL) accessibilityElementIsFocused;
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](../yes.md) if an assistive technology is virtually focused on the element; otherwise, [`NO`](../no.md).
 

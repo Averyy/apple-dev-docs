@@ -20,7 +20,7 @@ A Boolean value indicating whether this attribute is valid.
 var isValid: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 An attribute’s validity is connected to a [`USDStage`](../../usdstage.md). An attribute becomes invalid when the lifetime of its stage ends.
 

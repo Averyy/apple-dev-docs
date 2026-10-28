@@ -23,7 +23,7 @@ var isOnHold: Bool { get }
 @property (nonatomic, assign, readonly, getter=isOnHold) BOOL onHold;
 ```
 
-#### Discussion
+## Discussion
 
 When a caller places the call on hold, callers are unable to communicate with one another until the holding caller removes the call from hold.
 

@@ -27,7 +27,7 @@ optional func confirm(intent: INGetRideStatusIntent) async -> INGetRideStatusInt
 - (void) confirmGetRideStatus:(INGetRideStatusIntent *) intent completion:(void (^)(INGetRideStatusIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to verify that you are able to return the status for the ride. You might use this method to verify that your service is available and that the user has a valid account. Create a response object with an appropriate code indicating your app’s readiness and execute the provided `completion` block.
 

@@ -23,11 +23,11 @@ class func unsupported(forReason reason: INSendPaymentCurrencyAmountUnsupportedR
 + (instancetype) unsupportedForReason:(INSendPaymentCurrencyAmountUnsupportedReason) reason;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INSendPaymentCurrencyAmountResolutionResult`](../insendpaymentcurrencyamountresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when the specified currency amount does not met the payment criteria for your service. For example, you might specify this value when the user attempts to send money in an unsupported currency or the transfer exceeds the maximum limit for the user’s account.
 

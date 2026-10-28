@@ -24,7 +24,7 @@ var boundingBox: CGRect { get }
 @property (nonatomic, assign, readonly) CGRect boundingBox;
 ```
 
-#### Discussion
+## Discussion
 
 The system normalizes the coordinates to the dimensions of the processed image, with the origin at the lower-left corner of the image.
 

@@ -16,7 +16,7 @@ Destroys the aggregate device represented by the given AudioHardwareAggregateDev
 func destroyAggregateDevice(_ device: AudioHardwareAggregateDevice) throws
 ```
 
-#### Discussion
+## Discussion
 
 The actual destruction of the aggregate device is asynchronous and may take place after the call to this routine has returned.
 

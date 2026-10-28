@@ -19,7 +19,7 @@ var invalidateFlowLayoutAttributes: Bool { get set }
 @property BOOL invalidateFlowLayoutAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 Setting this property to [`false`](../../Swift/false.md) tells the flow layout object to keep its existing layout information, effectively stopping the invalidation process. Typically, you set this property to [`false`](../../Swift/false.md) only if you subclass [`NSCollectionViewFlowLayout`](../nscollectionviewflowlayout.md) and update changed layout information directly.
 

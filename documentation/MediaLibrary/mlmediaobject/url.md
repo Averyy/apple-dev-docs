@@ -22,7 +22,7 @@ var url: URL? { get }
 @property (copy, readonly, nullable) NSURL * URL;
 ```
 
-#### Discussion
+## Discussion
 
 This property is provided as a security-scoped URL. In order to gain access to the file that this URL refers to, the caller must call [`startAccessingSecurityScopedResource()`](../../Foundation/nsurl/startaccessingsecurityscopedresource%28%29.md) before and [`stopAccessingSecurityScopedResource()`](../../Foundation/nsurl/stopaccessingsecurityscopedresource%28%29.md) after using the URL to access the file. For more information about security-scoped URLs, see [`NSURL`](../../Foundation/nsurl.md).
 

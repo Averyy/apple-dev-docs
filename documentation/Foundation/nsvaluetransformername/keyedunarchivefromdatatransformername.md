@@ -27,7 +27,7 @@ static let keyedUnarchiveFromDataTransformerName: NSValueTransformerName
 extern NSValueTransformerName const NSKeyedUnarchiveFromDataTransformerName;
 ```
 
-#### Discussion
+## Discussion
 
 The transformer this property references returns the [`NSData`](../nsdata.md) instance created by archiving the value using keyed archiving. This transformer requires that an object implement the [`NSCoding`](../nscoding.md) protocol using keyed archiving in order to archive and unarchive with this transformer.
 

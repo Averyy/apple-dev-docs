@@ -15,7 +15,7 @@ Sets whether the path should cache its path information.
 - (void) setCachesBezierPath:(BOOL) flag;
 ```
 
-#### Discussion
+## Discussion
 
 Caching of paths currently has no effect.
 

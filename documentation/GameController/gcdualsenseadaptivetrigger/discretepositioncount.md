@@ -24,7 +24,7 @@ class var discretePositionCount: Int { get }
 GCDualSenseAdaptiveTriggerDiscretePositionCount
 ```
 
-#### Discussion
+## Discussion
 
 You can configure each of these positions separately in multiposition feedback and vibration modes.
 

@@ -25,7 +25,7 @@ let AVURLAssetHTTPUserAgentKey: String
 extern NSString * const AVURLAssetHTTPUserAgentKey;
 ```
 
-#### Discussion
+## Discussion
 
 Use this key to set a custom `User-Agent` header on requests that this asset makes. The system uses its default user agent if you don’t specify a value.
 

@@ -23,7 +23,7 @@ func relative<C>(to collection: C) -> Range<Bound> where Bound == C.Index, C : C
 
 Available when `Bound` conforms to `Comparable`.
 
-#### Return Value
+## Return Value
 
 A range suitable for slicing `collection`. The returned range is *not* guaranteed to be inside the bounds of `collection`. Callers should apply the same preconditions to the return value as they would to a range provided directly by the user.
 

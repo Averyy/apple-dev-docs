@@ -14,10 +14,10 @@ Use the first character of the property’s name as a short option label.
 ## Declaration
 
 ```swift
-static var short: NameSpecification.Element { get }
+static var short: Element { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, a property named `verbose` would be converted to the label `-v`. Short labels can be combined into groups.
 

@@ -24,7 +24,7 @@ var isAutoShutdownEnabled: Bool { get set }
 @property (nonatomic, getter=isAutoShutdownEnabled) BOOL autoShutdownEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 If you manually manage the engine’s life cycle, save power by stopping the engine when it’s not in use. You can enable the engine to automatically manage this behavior by setting the value to [`true`](../../Swift/true.md). When this property is enabled, the engine shuts down after approximately two minutes of inactivity.
 

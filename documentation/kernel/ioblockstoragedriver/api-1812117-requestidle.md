@@ -12,7 +12,7 @@ virtual IOReturn requestIdle(
  void);
 ```
 
-#### Overview
+## Overview
 
 Request that the device enter an idle state. The device will exit this state on the next read or write request, or as it sees necessary. One example is for a DVD drive to spin down when it enters such an idle state, and spin up on the next read request from the system.
 

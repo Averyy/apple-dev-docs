@@ -27,7 +27,7 @@ init<Scalar>(randomUniform shape: [Int], in bounds: ClosedRange<Scalar> = 0...1,
 init<Scalar>(randomUniform shape: [Int], in bounds: Range<Scalar> = 0..<1, seed: UInt64? = nil, scalarType: Scalar.Type = Scalar.self) where Scalar : MLTensorScalar, Scalar : BinaryFloatingPoint
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: Using the same seed produces the same result only when dispatched to the same compute device.
 

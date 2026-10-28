@@ -23,7 +23,7 @@ var payloadData: Data { get }
 
 Available when `SignedType` is `Transaction`.
 
-#### Discussion
+## Discussion
 
 This value is the same as the [`jsonRepresentation`](../transaction/jsonrepresentation.md) in [`Transaction`](../transaction.md).
 

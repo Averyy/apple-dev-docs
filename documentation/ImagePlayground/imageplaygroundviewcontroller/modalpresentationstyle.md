@@ -19,7 +19,7 @@ The presentation style for modal view controllers.
 @preconcurrency override dynamic var modalPresentationStyle: UIModalPresentationStyle { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The view controller overrides this method to establish its preferred presentation style in visionOS. Changing the value of this property has no effect in visionOS.
 

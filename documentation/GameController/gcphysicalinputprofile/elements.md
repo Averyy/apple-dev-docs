@@ -24,7 +24,7 @@ var elements: [String : GCControllerElement] { get }
 @property (nonatomic, strong, readonly) NSDictionary<NSString *,GCControllerElement *> * elements;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to access elements by name. For example, use the name `“Button A”` to get the face button of an extended gamepad profile.
 

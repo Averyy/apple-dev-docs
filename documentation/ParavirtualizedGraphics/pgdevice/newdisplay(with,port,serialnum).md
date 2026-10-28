@@ -21,7 +21,7 @@ func newDisplay(with descriptor: PGDisplayDescriptor, port: Int, serialNum: UInt
 - (id<PGDisplay>) newDisplayWithDescriptor:(PGDisplayDescriptor *) descriptor port:(NSUInteger) port serialNum:(uint32_t) serialNum;
 ```
 
-#### Return Value
+## Return Value
 
 A new display object, or `nil` if an error occurred.
 

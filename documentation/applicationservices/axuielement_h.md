@@ -3,11 +3,11 @@
 **Framework**: Application Services  
 **Role**: API Collection
 
-#### Overview
+## Overview
 
 See the Overview section above for header-level documentation.
 
-##### Overview
+### Overview
 
 Assistive applications use the functions defined in this header file to communicate with and control accessible applications running in macOS.
 
@@ -24,7 +24,7 @@ In addition, some functions can return the following error codes:
 
 For more information on the definition and use of accessibility objects and in macOS accessibility support in general, see [Accessibility Programming Guide for OS X](https://developer.apple.com/library/archive/documentation/Accessibility/Conceptual/AccessibilityMacOSX/index.html#//apple_ref/doc/uid/TP40001078).
 
-###### Included Headers
+#### Included Headers
 
 - <AvailabilityMacros.h>
 - <CoreFoundation/CoreFoundation.h>

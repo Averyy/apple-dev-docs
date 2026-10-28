@@ -5,7 +5,7 @@
 
 Debug and profile your app’s performance using a GPU trace file in the Metal debugger.
 
-#### Overview
+## Overview
 
 Replaying a GPU trace file allows you to debug and profile previously captured GPU commands using the Metal debugger. For more information, see [Capturing a Metal workload in Xcode](./capturing-a-metal-workload-in-xcode.md) or [Capturing a Metal workload programmatically](./capturing-a-metal-workload-programmatically.md).
 
@@ -13,7 +13,7 @@ To replay a GPU trace file, open it in Xcode. Before clicking Replay, you can co
 
 ![An Xcode screenshot of the Replay GPU Trace dialog with options to begin replaying a GPU trace file.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-essentials-replay@2x.png)
 
-##### Configure replay
+### Configure replay
 
 If you have multiple devices, you need to select a device before you can replay the GPU trace file. Xcode automatically selects the most compatible device, but you can select a different device using the Device popover.
 

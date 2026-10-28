@@ -15,11 +15,11 @@ Retrieves multiple network packets from the queue.
 virtual uint32_t DequeuePackets(IOUserNetworkPacket **packets, uint32_t maxDequeueCount);
 ```
 
-#### Return Value
+## Return Value
 
 The actual number of packets returned in the `packets` parameter.
 
-#### Discussion
+## Discussion
 
 Call this method to retrieve multiple packets from the submission queue. This method returns as many packets as are available, up to the maximum number you specify.
 

@@ -23,7 +23,7 @@ var snapPoint: CGPoint { get set }
 @property (nonatomic, assign) CGPoint snapPoint;
 ```
 
-#### Discussion
+## Discussion
 
 The initial value of this property is the value you passed in to the [`init(item:snapTo:)`](./init%28item,snapto%29.md) method. Changing this value updates the dynamic item and potentially puts it in motion again.
 

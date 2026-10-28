@@ -24,7 +24,7 @@ func replace(_ object: Any, with newObject: Any)
 - (void) replaceObject:(id) object withObject:(id) newObject;
 ```
 
-#### Discussion
+## Discussion
 
 `newObject` can be of a different class from object, and the class mappings set by [`classNameDecoded(forArchiveClassName:)`](./classnamedecoded%28forarchiveclassname%29-swift.type.method.md) and [`decodeClassName(_:asClassName:)`](./decodeclassname%28_,asclassname%29-swift.method.md) are ignored.
 

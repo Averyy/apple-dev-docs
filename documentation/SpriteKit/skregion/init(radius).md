@@ -25,7 +25,7 @@ init(radius: Float)
 - (instancetype) initWithRadius:(float) radius;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized region. The region is circular and centered on the origin.
 

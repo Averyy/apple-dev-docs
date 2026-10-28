@@ -24,7 +24,7 @@ struct DirectionalLightComponent
 
 - [Automatically animating RealityKit entities](./automatically-animating-realitykit-entities.md)
 
-#### Overview
+## Overview
 
 A directional light shines in the entity’s forward direction `[0, 0, -1]`.
 
@@ -52,7 +52,7 @@ The directional light illuminates entities evenly in the direction it derives fr
 
 > **Note**: The green arrows in the above illustration are only a visual representation of the light’s direction.
 
-#### Dynamic light capacity
+## Dynamic light capacity
 
 On older hardware, only a limited number of dynamic lights can affect each object. Devices that support `MTLGPUFamily.apple6` or later lift this limit.
 

@@ -15,7 +15,7 @@
 kINQUIRY_Byte6_BQUE_Bit = 7
 ```
 
-#### Discussion
+## Discussion
 
 BQUE bit definition.
 

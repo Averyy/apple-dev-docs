@@ -19,11 +19,11 @@ Performs an identity document request.
 final func performRequests(_ requests: [any IdentityDocumentWebPresentmentRequest], origin: URL) async throws -> any IdentityDocumentWebPresentmentResponse
 ```
 
-#### Return Value
+## Return Value
 
 A response that contains the requested document information.
 
-#### Discussion
+## Discussion
 
 In iOS, the systems sources this document from a document provider installed on the current device. On other platforms, this function triggers a remote presentment flow where the app prompts the person to use a nearby device for the presentment.
 

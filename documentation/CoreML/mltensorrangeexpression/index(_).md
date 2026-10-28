@@ -23,7 +23,7 @@ static func index(_ index: Int) -> any MLTensorRangeExpression
 
 Available when `Self` is `_MLTensorRange`.
 
-#### Discussion
+## Discussion
 
 For example:
 

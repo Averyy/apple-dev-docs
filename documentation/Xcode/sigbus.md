@@ -5,7 +5,7 @@
 
 A bus error terminated the process, often because the process tried to access a misaligned or invalid address in memory, or due to a pointer authentication failure.
 
-#### Overview
+## Overview
 
 Common problems include accessing an invalid index in an array, dereferencing a pointer to an invalid memory location, or writing to read-only memory. In many cases, these problems produce `SIGSEGV` rather than `SIGBUS`.
 

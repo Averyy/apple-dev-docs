@@ -5,7 +5,7 @@
 
 Give players the ability to connect and interact with friends in your game.
 
-#### Overview
+## Overview
 
 Friends are such an important part of social play that GameKit gives you privacy-friendly access to a player’s Game Center friends. For example, you can show what level friends are on in your game, launch a mission together with friends, or show a friends-only recurring leaderboard.
 
@@ -17,7 +17,7 @@ For example, if a player grants access, then only the friends who also grant you
 
 > ❗ **Important**:  The code listings in this article use GameKit asynchronous methods that you invoke within a [`Task`](../Swift/task.md) structure in SwiftUI. For details on asynchronous flows, see [Concurrency](../Swift/concurrency.md).
 
-##### Sending friend requests
+### Sending friend requests
 
 Game Center provides an interface for sending and receiving friend requests including an inbox that shows requests that a player may have missed. Players can also send friend requests within your game. For example, use this feature to encourage players to add more friends in your multiplayer game.
 
@@ -33,13 +33,13 @@ do {
 }
 ```
 
-##### Providing a reason to access the friends list
+### Providing a reason to access the friends list
 
 You must provide a reason to access a player’s friends by adding the [`NSGKFriendListUsageDescription`](../BundleResources/information-property-list/nsgkfriendlistusagedescription.md) key to the information property list. The system displays the reason in the prompt it presents to the player to grant your game access. If you don’t provide this key, an error occurs when you attempt to access the friends.
 
 For details on the system prompt, see [Requesting access to protected resources](../UIKit/requesting-access-to-protected-resources.md).
 
-##### Checking whether the player grants access
+### Checking whether the player grants access
 
 Display the prompt to access friends when it’s convenient for the player by checking whether the player grants you permission to access their friends using the [`loadFriendsAuthorizationStatus(_:)`](./gklocalplayer/loadfriendsauthorizationstatus%28_%29.md) method.
 
@@ -77,7 +77,7 @@ do {
 }
 ```
 
-##### Accessing the player’s friends
+### Accessing the player’s friends
 
 Once the player grants access, use the [`loadFriends(_:)`](./gklocalplayer/loadfriends%28_%29.md) method to get the friends who also grant you access to their friends.
 

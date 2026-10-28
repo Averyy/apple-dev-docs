@@ -5,7 +5,7 @@
 
 Beta test information about apps, specific to a locale.
 
-#### Overview
+## Overview
 
 A `betaAppLocalization` resource represents one localized set of information about an app that is visible to beta testers. When distributing a prerelease app, the TestFlight app on the beta tester’s device displays information such as descriptions, URLs, and privacy policies. The information can be localized for the languages listed in [App Store localizations](https://help.apple.com/app-store-connect/#/dev656087953).
 

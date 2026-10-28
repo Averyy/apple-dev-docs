@@ -24,7 +24,7 @@ let HMCharacteristicTypeStatusFault: String
 extern NSString * const HMCharacteristicTypeStatusFault;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is one of the constants in the [`HMCharacteristicValueStatusFault`](./hmcharacteristicvaluestatusfault.md) enumeration. It indicates whether the accessory has experienced a fault that interferes with normal functioning, such as when a humidifier runs out of water.
 

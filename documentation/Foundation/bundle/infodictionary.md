@@ -25,7 +25,7 @@ var infoDictionary: [String : Any]? { get }
 @property (copy, readonly, nullable) NSDictionary<NSString *,id> * infoDictionary;
 ```
 
-#### Discussion
+## Discussion
 
 If the bundle does not contain an `Info.plist` file, this dictionary contains only private keys that are used internally by the [`Bundle`](../bundle.md) class. The [`Bundle`](../bundle.md) class may add extra keys to this dictionary for its own use. Common keys for accessing the values of the dictionary are `CFBundleIdentifier`, `NSMainNibFile`, and `NSPrincipalClass`.
 

@@ -28,7 +28,7 @@ protocol MTL4RenderCommandEncoder : MTL4CommandEncoder
 
 - [Understanding the Metal 4 core API](./understanding-the-metal-4-core-api.md)
 
-#### Overview
+## Overview
 
 A render pass draws a scene, or a component within a scene, to its render *attachments*, the outputs of a render pass. You can render to those outputs with various approaches, including techniques that apply the following:
 
@@ -51,7 +51,7 @@ Encode drawing commands after you configure the state and resources the commands
 
 When you finish encoding the render pass’s commands, finalize it into the command buffer by calling the encoder’s [`endEncoding()`](./mtl4commandencoder/endencoding%28%29.md) method.
 
-##### Command stages
+### Command stages
 
 Most render commands apply to one or more stages within a pass. The following table shows which stages apply to each command:
 

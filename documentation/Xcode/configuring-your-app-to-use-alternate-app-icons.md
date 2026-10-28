@@ -12,15 +12,15 @@ Add alternate app icons to your app, and let people choose which icon to display
 - Mac Catalyst 18.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 This sample code project demonstrates how to configure your app so that people can change the icon that appears on the Home screen, in Spotlight, and elsewhere in the system. People select an alternate icon in the app interface from a collection that you provide.
 
-##### Add icon files for the alternate icons
+### Add icon files for the alternate icons
 
 For each alternate app icon, the project requires an Icon Composer file. Create your app icon using Icon Composer, then add it to the Project navigator in your Xcode project. For more information, see [Creating your app icon using Icon Composer](./creating-your-app-icon-using-icon-composer.md). For design guidance, see [App icons](https://developer.apple.com/design/human-interface-guidelines/app-icons).
 
-##### Configure the asset catalog compiler
+### Configure the asset catalog compiler
 
 The system gathers information about the app’s icons from the app’s `Info.plist` file under the top-level key [`CFBundleIcons`](../BundleResources/information-property-list/cfbundleicons.md). Xcode adds entries to this file for the icons the project specifies through build settings under Asset Catalog Compiler - Options.
 
@@ -38,7 +38,7 @@ ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = AppIcon-Green AppIcon-Blue AppIc
 
 For more information about build configuration files, see [Adding a build configuration file to your project](./adding-a-build-configuration-file-to-your-project.md).
 
-##### Change the app’s icon
+### Change the app’s icon
 
 When people select an alternate icon in the app interface, the app calls [`setAlternateIconName(_:completionHandler:)`](../UIKit/uiapplication/setalternateiconname%28_,completionhandler%29.md) with the name of the new icon. This tells the system to display the new icon for this app. The system automatically displays an alert notifying people of the change. Passing `nil` displays the app’s primary icon.
 

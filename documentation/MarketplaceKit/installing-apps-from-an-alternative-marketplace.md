@@ -5,7 +5,7 @@
 
 Manage the installation of apps that developers distribute from your marketplace app.
 
-#### Overview
+## Overview
 
 To install apps that others distribute on your marketplace, call the [`AppLibrary`](./applibrary.md) installation functions. The system enforces that calls displaying the install sheet need to source from the callback of an [`ActionButton`](./actionbutton.md). This ensures that app installation occurs as the result of a person’s interaction with your marketplace app.
 
@@ -15,7 +15,7 @@ If your marketplace requires authentication to download apps — for example, a 
 
 When the system receives a license, it requests that licensed app from your web server. Publish two endpoints that field requests for apps, including restore requests for new apps, and update requests. Using MarketplaceKit, handle any errors that might occur as the system communicates with your server, and provide people with visual status during app management tasks that might be long-running, such as installing an app.
 
-#### Define the request header
+## Define the request header
 
 Bundle an extension with your marketplace to define authorization headers for requests to your server. Implement the [`MarketplaceAppExtension`](./marketplaceappextension.md) method [`additionalHeaders(for:account:)`](./marketplaceappextension/additionalheaders%28for,account%29.md).
 
@@ -26,7 +26,7 @@ If an access token or subscription expires, return an HTTP failure code from you
 - An expired subscription, set a flag to present an e-commerce flow within your alternative marketplace app.
 - An invalid access token, reauthenticate the person according to [Reauthenticate a person in your marketplace app or extension](./reauthenticating-a-person-to-manage-apps.md#Reauthenticate-a-person-in-your-marketplace-app-or-extension).
 
-#### Request installation from an alternative app marketplace
+## Request installation from an alternative app marketplace
 
 Your app requests app installation using MarketplaceKit API. The system enforces that installation requests source from a person’s interaction with your app’s UI. In other words, your app can install another app only when a person requests it by tapping a button. MarketplaceKit provides the [`ActionButton`](./actionbutton.md) class for this purpose.
 
@@ -81,11 +81,11 @@ override func viewDidLoad() {
 
 If an app requires a purchase before installation, modify the `confirmInstall` closure to present a custom UI and external purchase flow that you implement in your app.
 
-#### Retrieve a license for the app from your web server
+## Retrieve a license for the app from your web server
 
 If your website doesn’t require authentication or the system is already successfully authorized to act on behalf of the page visitor, the system requests an app license from your web server. To process license requests, your web server implements an endpoint that serves generated licenses by using [App License Delivery SDK](../AppLicenseDeliverySDK/AppLicenseDeliverySDK.md).
 
-#### Serve a restore request
+## Serve a restore request
 
 When your server responds with a license, the system then requests the app. To determine the endpoint to call, the system checks your `marketplace-kit` configuration file at the following relative URL:
 
@@ -150,7 +150,7 @@ The `"restores"` array in the response contains an object for each requested app
 | `installVerificationToken` | A JSON web signature that [MarketplaceKit](./MarketplaceKit.md) requires for installations. For more information, see [Supplying an install verification token](./supplying-an-install-verification-token.md). |
 | `appShareURL` | An optional URL to a product landing page for the app on your marketplace website. The operating system populates the value in the Share Sheet when a person touches and holds the app’s icon on the Home Screen. |
 
-#### Serve an app update request
+## Serve an app update request
 
 When a person requests an update to an installed app, or when Automatic Updates are on, the system sends a request similar to a restore. Add the `updates` endpoint in your server’s `marketplace-kit` configuration:
 
@@ -217,7 +217,7 @@ The `"restores"` array in the response contains an object for each requested app
 | `installVerificationToken` | A JSON web signature that [MarketplaceKit](./MarketplaceKit.md) requires for installations. For more information, see [Supplying an install verification token](./supplying-an-install-verification-token.md). |
 | `appShareURL` | An optional URL to a product landing page for the app on your marketplace website. The operating system populates the value in the Share Sheet when a person touches and holds the app’s icon on the Home Screen. |
 
-#### Indicate app unavailability
+## Indicate app unavailability
 
 If a device requests an app that’s not available on your alternative marketplace, then your marketplace responds with a `"failures"` array that includes the unavailable apps:
 
@@ -251,7 +251,7 @@ App Not Available
 "App 1" not available from Megabyte Mart.
 ```
 
-#### Override the MarketplaceKit endpoint for an app
+## Override the MarketplaceKit endpoint for an app
 
 To handle a specific app differently, modify the `marketplace-kit` file to add a configuration just for that app using the `"overridesByAppleItemID"` element. Inside, define an `"appleItemId"` element that contains a copy of the `marketplace-kit` configuration, differing in just the ways necessary to process the specific app.
 
@@ -285,7 +285,7 @@ Add the `"overridesByAppleItemID"` element to the bottom of your `marketplace-ki
 
 You can override the `marketplace-kit` endpoint for many reasons. For example, to route requests for a specific app on your marketplace to a different endpoint for processing.
 
-#### Show progress for app downloads
+## Show progress for app downloads
 
 To provide a responsive installation experience, give visual feedback while installation is in progress. Display your own custom UI according to the [`progress`](./applibrary/app/installation-swift.struct/progress.md) object to provide visual feedback on the state of a given installation. Convey the progress in a way that works for your app; MarketplaceKit doesn’t provide a predetermined UI for progress.
 

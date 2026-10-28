@@ -20,7 +20,7 @@ Creates an object that indicates the user’s focus status.
 convenience init(isFocused: Bool? = nil)
 ```
 
-#### Return Value
+## Return Value
 
 A new status object, or `nil` if the system can’t create one.
 

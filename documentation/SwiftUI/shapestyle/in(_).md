@@ -21,11 +21,11 @@ Maps a shape style’s unit-space coordinates to the absolute coordinates of a g
 func `in`(_ rect: CGRect) -> some ShapeStyle
 ```
 
-#### Return Value
+## Return Value
 
 A new shape style mapped to the coordinates given by `rect`.
 
-#### Discussion
+## Discussion
 
 Some shape styles have colors or patterns that vary with position based on [`UnitPoint`](../unitpoint.md) coordinates. For example, you can create a [`LinearGradient`](../lineargradient.md) using [`top`](../unitpoint/top.md) and [`bottom`](../unitpoint/bottom.md) as the start and end points:
 

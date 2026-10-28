@@ -21,7 +21,7 @@ A key encapsulation mechanism.
 enum KEM
 ```
 
-#### Overview
+## Overview
 
 Use a key encapsulation mechanism (KEM) to protect a symmetric cryptographic key that you share with another party.
 

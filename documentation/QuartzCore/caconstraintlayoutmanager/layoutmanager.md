@@ -16,11 +16,11 @@ Returns the shared layout manager object.
 + (instancetype) layoutManager;
 ```
 
-#### Return Value
+## Return Value
 
 The shared layout manager object.
 
-#### Discussion
+## Discussion
 
 You can assign the returned object to any layers that manage layout using constraints.
 

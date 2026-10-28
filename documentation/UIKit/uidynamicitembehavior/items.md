@@ -23,7 +23,7 @@ var items: [any UIDynamicItem] { get }
 @property (nonatomic, copy, readonly) NSArray<id<UIDynamicItem>> * items;
 ```
 
-#### Discussion
+## Discussion
 
 ## See Also
 

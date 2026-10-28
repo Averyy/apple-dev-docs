@@ -11,11 +11,11 @@ Starts the audio I/O engine.
 virtual IOReturn startAudioEngine();
 ```
 
-#### Return Value
+## Return Value
 
 Must return kIOReturnSuccess on a successful start of the engine.
 
-#### Overview
+## Overview
 
 This method is called automatically when the audio engine is placed into use the first time. This must be overridden by the subclass. No call to the superclass's implementation is necessary. The subclass's implementation must start up the audio I/O engine. This includes any audio engine that needs to be started as well as any interrupts that need to be enabled. Upon successfully starting the engine, the subclass's implementation must call setState(kIOAudioEngineRunning). If it has also checked the state using getState() earlier in the implementation, the stateLock must be acquired for the entire initialization process (using IORecursiveLockLock(stateLock) and IORecursiveLockUnlock(stateLock)) to ensure that the state remains consistent. See the general class comments for an example.
 

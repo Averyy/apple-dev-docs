@@ -21,7 +21,7 @@ Compares `String`s as compared by the Finder.
 static let localizedStandard: String.StandardComparator
 ```
 
-#### Discussion
+## Discussion
 
 Uses a localized, numeric comparison in the current locale.
 

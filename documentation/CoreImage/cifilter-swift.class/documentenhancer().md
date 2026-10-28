@@ -24,11 +24,11 @@ class func documentEnhancer() -> any CIFilter & CIDocumentEnhancer
 + (CIFilter<CIDocumentEnhancer> *) documentEnhancerFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the document enhancer filter to an image. The effect removes unwanted shadows while whitening the background and enhancing contrast. The filter is commonly used to enhance scanned documents.
 

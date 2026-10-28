@@ -19,7 +19,7 @@ func withSymbolicTraits(_ symbolicTraits: NSFontDescriptor.SymbolicTraits) -> NS
 - (NSFontDescriptor *) fontDescriptorWithSymbolicTraits:(NSFontDescriptorSymbolicTraits) symbolicTraits;
 ```
 
-#### Return Value
+## Return Value
 
 The new font descriptor.
 

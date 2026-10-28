@@ -17,11 +17,11 @@ virtual IOReturn getDDCBlock(
  IOByteCount *length );
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn code.
 
-#### Overview
+## Overview
 
 Hardware that supports DDC/EDID display sensing should implement this method to return EDID data in 128 byte blocks.
 

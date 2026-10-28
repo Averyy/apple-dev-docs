@@ -26,7 +26,7 @@ var renderingAPI: SCNRenderingAPI { get }
 @property (nonatomic, readonly) SCNRenderingAPI renderingAPI;
 ```
 
-#### Discussion
+## Discussion
 
 You choose a graphics technology when initializing a scene renderer:
 

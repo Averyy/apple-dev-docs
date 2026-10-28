@@ -21,7 +21,7 @@ The current phase of the scene.
 var scenePhase: ScenePhase { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The system sets this value to provide an indication of the operational state of a scene or collection of scenes. The exact meaning depends on where you access the value. For more information, see [`ScenePhase`](../scenephase.md).
 

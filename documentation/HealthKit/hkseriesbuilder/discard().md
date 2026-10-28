@@ -24,7 +24,7 @@ func discard()
 - (void) discard;
 ```
 
-#### Discussion
+## Discussion
 
 Any further calls to the builder raise an exception.
 

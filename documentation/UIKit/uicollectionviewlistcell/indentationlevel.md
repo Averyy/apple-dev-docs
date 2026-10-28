@@ -23,7 +23,7 @@ var indentationLevel: Int { get set }
 @property (nonatomic) NSInteger indentationLevel;
 ```
 
-#### Discussion
+## Discussion
 
 The indentation level sets automatically when you use a hierarchical data source, such as an [`NSDiffableDataSourceSectionSnapshot`](../nsdiffabledatasourcesectionsnapshot-swift.struct.md).
 

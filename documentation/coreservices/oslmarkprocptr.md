@@ -20,11 +20,11 @@ typealias OSLMarkProcPtr = (UnsafePointer<AEDesc>?, UnsafePointer<AEDesc>?, Int)
 typedef OSErr (*OSLMarkProcPtr)(const AEDesc *dToken, const AEDesc *markToken, long index);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145). Your object marking function should return `noErr` if it successfully marks the Apple event object and `errAEEventNotHandled` if it fails to mark the object. When the Apple Event Manager gets an error result of `errAEEventNotHandled` after calling an object marking function, it attempts to get mark the object by calling the equivalent system object marking function.
 
-#### Discussion
+## Discussion
 
 To mark an Apple event object using the current mark token, the Apple Event Manager calls the object-marking function provided by your application. In addition to marking the specified object, your `MyMarkCallback` function should record the mark count for each object that it marks. The mark count recorded for each marked object allows your application to determine which of a set of marked tokens pass a test, as described in the Discussion section for the [`OSLAdjustMarksProcPtr`](./osladjustmarksprocptr.md) function.
 

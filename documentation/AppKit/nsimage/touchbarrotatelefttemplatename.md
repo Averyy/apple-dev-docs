@@ -22,7 +22,7 @@ class let touchBarRotateLeftTemplateName: String
 extern NSImageName const NSImageNameTouchBarRotateLeftTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for rotate left](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2793537@2x.png)
 

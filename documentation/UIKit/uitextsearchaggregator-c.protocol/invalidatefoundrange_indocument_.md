@@ -18,7 +18,7 @@ Removes a text range from the set of matches.
 - (void) invalidateFoundRange:(UITextRange *) range inDocument:(UITextSearchDocumentIdentifier) document;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to invalidate a text range when removing or changing text in the document. This causes the system find panel to update its current state, and if the range is the highlighted range, the find panel advances to the next found result.
 

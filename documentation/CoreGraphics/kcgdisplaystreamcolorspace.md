@@ -10,7 +10,7 @@
 extern CFStringRef const kCGDisplayStreamColorSpace;
 ```
 
-#### Discussion
+## Discussion
 
 Set the desired CGColorSpace of the output frames.  By default the color space will be that of the display.
 

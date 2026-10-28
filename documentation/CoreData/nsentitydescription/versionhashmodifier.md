@@ -25,7 +25,7 @@ var versionHashModifier: String? { get set }
 @property (copy, nullable) NSString * versionHashModifier;
 ```
 
-#### Discussion
+## Discussion
 
 This value is included in the version hash for the entity. You use it to mark or denote an entity as being a different “version” than another even if all of the values which affect persistence are equal. (Such a difference is important in cases where, for example, the structure of an entity is unchanged but the format or content of data has changed.)
 

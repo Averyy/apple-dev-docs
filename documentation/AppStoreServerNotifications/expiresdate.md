@@ -15,7 +15,7 @@ The UNIX time, in milliseconds, an auto-renewable subscription purchase expires 
 timestamp expiresDate
 ```
 
-#### Discussion
+## Discussion
 
 The `expiresDate` is a static value that applies for each transaction. When the auto-renewable subscription renews, the App Store creates a new transaction with a new `expiresDate`.
 

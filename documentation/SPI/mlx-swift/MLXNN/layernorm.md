@@ -17,11 +17,11 @@ Applies layer normalization [1] on the inputs.
 class LayerNorm
 ```
 
-##### References
+### References
 
 1. [https://arxiv.org/abs/1607.06450](https://arxiv.org/abs/1607.06450)
 
-##### See also
+### See also
 
 - [Normalization](./normalization.md)
 

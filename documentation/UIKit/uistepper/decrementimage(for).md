@@ -22,7 +22,7 @@ func decrementImage(for state: UIControl.State) -> UIImage?
 - (UIImage *) decrementImageForState:(UIControlState) state;
 ```
 
-#### Return Value
+## Return Value
 
 The image used for the decrement glyph of the control.
 

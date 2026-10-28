@@ -25,7 +25,7 @@ class NSUbiquitousKeyValueStore
 @interface NSUbiquitousKeyValueStore : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use the shared `NSUbiquitousKeyValueStore` object to store settings, configuration information, and app-specific data in a person’s iCloud account and share it among instances of your app running on all of the person’s devices. The object stores a dictionary of key-value pairs that you provide, and propagates that data to devices with the same Apple account. Sharing data among different devices gives you a way to coordinate your app’s behavior on those devices. For example, a textbook app might save the current page number on someone’s iPhone so that the person can continue reading from the same place on their other devices.
 

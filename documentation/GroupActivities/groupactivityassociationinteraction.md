@@ -20,7 +20,7 @@ An interaction configures a view’s association with the current SharePlay grou
 
 - [Adding spatial Persona support to an activity](./adding-spatial-persona-support-to-an-activity.md)
 
-#### Overview
+## Overview
 
 When a group of people join a SharePlay activity with their spatial Personas, the system selects a common, primary scene to arrange their spatial Personas around. This association between the group activity and a scene in your app creates a shared space for the spatial Personas to interact in; enabling participants to gesture at the associated scene and understand each other. For more information about spatial Personas and SharePlay on visionOS, see [Adding spatial Persona support to an activity](./adding-spatial-persona-support-to-an-activity.md).
 

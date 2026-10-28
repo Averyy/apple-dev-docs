@@ -19,7 +19,7 @@ Dequeues a configured reusable supplementary view object.
 - (UICollectionReusableView *) dequeueConfiguredReusableSupplementaryViewWithRegistration:(UICollectionViewSupplementaryRegistration *) registration forIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 A configured reusable supplementary view object.
 

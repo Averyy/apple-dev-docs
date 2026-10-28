@@ -21,7 +21,7 @@ A handler block used to process operations on a dispatch I/O channel.
 typedef void (^)(_Bool, NSObject<OS_dispatch_data> *, int) dispatch_io_handler_t;
 ```
 
-#### Discussion
+## Discussion
 
 The parameters of a dispatch I/O handler are as follows:
 

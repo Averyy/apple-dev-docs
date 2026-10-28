@@ -24,7 +24,7 @@ var rotation: Float { get set }
 @property (nonatomic) float rotation;
 ```
 
-#### Discussion
+## Discussion
 
 The agent updates its own position, rotation, and velocity according to its goals when you call its [`update(deltaTime:)`](./update%28deltatime%29.md) method.
 

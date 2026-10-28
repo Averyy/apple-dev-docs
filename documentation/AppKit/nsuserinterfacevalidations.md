@@ -19,7 +19,7 @@ protocol NSUserInterfaceValidations
 @protocol NSUserInterfaceValidations
 ```
 
-#### Overview
+## Overview
 
 The [`NSUserInterfaceValidations`](./nsuserinterfacevalidations.md) protocol works with the [`NSValidatedUserInterfaceItem`](./nsvalidateduserinterfaceitem.md) protocol to allow the target of a user interface element such as a menu item or a toolbar item to decide whether or not the user interface element should be enabled.
 

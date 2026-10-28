@@ -11,13 +11,13 @@ Finds creatives within an organization.
 
 > **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
-#### Discussion
+## Discussion
 
 Use this endpoint to find creatives using a [`Selector`](./selector.md) [`Condition`](./condition.md) to filter results. If you don’t specify selector conditions, all creatives return in the response. See [`Creative`](./creative.md) for field descriptions and selector condition operators.
 
 Values are case-sensitive strings. The `orderBy` selector supports the `Id` and `name` fields.
 
-##### Payload example: Find creatives
+### Payload example: Find creatives
 
 **Request**:
 

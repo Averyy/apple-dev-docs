@@ -15,7 +15,7 @@ The start address of the generated physical segment of the data buffer.
 uint64_t fBufferIOVMAddr;
 ```
 
-#### Discussion
+## Discussion
 
 The physical segment is large enough to accommodate the amount of data that [`fRequestedTransferCount`](./frequestedtransfercount.md) indicates.
 

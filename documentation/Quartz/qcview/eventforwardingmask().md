@@ -21,7 +21,7 @@ func eventForwardingMask() -> Int
 - (NSUInteger) eventForwardingMask;
 ```
 
-#### Return Value
+## Return Value
 
 The event filtering mask.
 

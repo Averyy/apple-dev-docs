@@ -25,11 +25,11 @@ func BNNSGraphGetArgumentCount(_ graph: bnns_graph_t, _ function: UnsafePointer<
 size_t BNNSGraphGetArgumentCount(bnns_graph_t graph, const char *function);
 ```
 
-#### Return Value
+## Return Value
 
 The number of arguments, or `SIZE_T_MAX` if the query fails.
 
-#### Discussion
+## Discussion
 
 The value that this function returns is the sum of the values [`BNNSGraphGetInputCount(_:_:)`](./bnnsgraphgetinputcount%28_,_%29.md) and [`BNNSGraphGetOutputCount(_:_:)`](./bnnsgraphgetoutputcount%28_,_%29.md) return.
 

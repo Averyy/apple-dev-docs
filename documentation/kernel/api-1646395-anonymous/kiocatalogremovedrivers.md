@@ -13,7 +13,7 @@
 kIOCatalogRemoveDrivers
 ```
 
-#### Discussion
+## Discussion
 
 Signals a call to the removeDrivers function in IOCatalogue.
 

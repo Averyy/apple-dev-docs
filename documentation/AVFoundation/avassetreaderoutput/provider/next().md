@@ -17,15 +17,15 @@ Returns the next piece of media data.
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) func next() async throws -> Payload?
+nonisolated(nonsending)
+func next() async throws -> Payload?
 ```
 
-#### Return Value
+## Return Value
 
 Returns the next piece of media data with the specified Payload type. If no more media data is available, this method returns nil.
 
-#### Discussion
+## Discussion
 
 > **Throws**: If the underlying reader encountered an error.
 

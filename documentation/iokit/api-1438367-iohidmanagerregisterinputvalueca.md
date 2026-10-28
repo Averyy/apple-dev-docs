@@ -16,7 +16,7 @@ Registers a callback to be used when an input value is issued by any enumerated 
 void IOHIDManagerRegisterInputValueCallback(IOHIDManagerRef manager, IOHIDValueCallback callback, void *context);
 ```
 
-#### Discussion
+## Discussion
 
 An input element refers to any element of type kIOHIDElementTypeInput and is usually issued by interrupt driven reports.
 

@@ -19,7 +19,7 @@ Returns a bar layout region of a given extent on a given edge.
 + (UIViewLayoutRegion *) layoutRegionForBarOnEdge:(UIRectEdge) edge extent:(CGFloat) extent;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: Only a single edge is allowed per region.
 

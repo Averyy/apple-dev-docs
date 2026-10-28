@@ -16,7 +16,7 @@ Adds a velocity delta to the element’s current velocity.
 void module::addVelocity(float3 velocity)
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to incrementally adjust an element’s velocity by adding a velocity vector to its existing value.
 

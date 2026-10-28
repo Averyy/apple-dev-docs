@@ -24,7 +24,7 @@ var image: UIImage? { get set }
 @property (nonatomic, strong, nullable) UIImage * image;
 ```
 
-#### Discussion
+## Discussion
 
 For details about using the [`UIImage`](../uiimage.md) class to create text attachments that automatically adjust to surrounding font and color attributes, see the [`init(image:)`](./init%28image%29.md) initializer.
 

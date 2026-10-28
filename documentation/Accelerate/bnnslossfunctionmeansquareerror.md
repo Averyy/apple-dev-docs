@@ -25,7 +25,7 @@ var BNNSLossFunctionMeanSquareError: BNNSLossFunction { get }
 BNNSLossFunctionMeanSquareError
 ```
 
-#### Discussion
+## Discussion
 
 [`BNNSLossFunctionMeanSquareError`](./bnnslossfunctionmeansquareerror.md) performs mean square error (MSE) computation between input logits and one hot encoded labels.
 

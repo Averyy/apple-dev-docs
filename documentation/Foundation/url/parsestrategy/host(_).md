@@ -21,7 +21,7 @@ Modifies a parse strategy to parse a URL’s host component in accordance with t
 func host(_ strategy: URL.ParseStrategy.ComponentParseStrategy<String> = .required) -> URL.ParseStrategy
 ```
 
-#### Return Value
+## Return Value
 
 A modified [`URL.ParseStrategy`](../parsestrategy.md) that incorporates the specified behavior.
 

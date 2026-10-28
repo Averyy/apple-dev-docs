@@ -19,7 +19,7 @@ enum SaveOperationType
 enum NSSaveOperationType : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 These values are used with method parameters of type [`NSDocument.SaveOperationType`](./saveoperationtype.md). Depending on the method, the save operation type can affect the title of the Save dialog and can affect which files are displayed in the dialog.
 

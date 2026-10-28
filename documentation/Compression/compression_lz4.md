@@ -25,7 +25,7 @@ var COMPRESSION_LZ4: compression_algorithm { get }
 COMPRESSION_LZ4
 ```
 
-#### Discussion
+## Discussion
 
 LZ4 is a high-performance compressor. The encoded format that the Compression library produces and consumes is compatible with the open-source version, apart from the addition of a very simple frame to the raw stream to enable additional validation and functionality.
 

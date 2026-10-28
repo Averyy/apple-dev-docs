@@ -19,7 +19,7 @@ func SCNetworkServiceCopy(_ prefs: SCPreferences, _ serviceID: CFString) -> SCNe
 SCNetworkServiceRefSCNetworkServiceCopy(SCPreferencesRef prefs, CFStringRef serviceID);
 ```
 
-#### Return Value
+## Return Value
 
 The network service from the associated preferences, or `NULL` if the service ID does not exist in the preferences or if an error occurred. You must release the returned value.
 

@@ -20,7 +20,7 @@ var renameOptions: ASAccessory.RenameOptions { get set }
 @property (nonatomic, assign, readwrite) ASAccessoryRenameOptions renameOptions;
 ```
 
-#### Discussion
+## Discussion
 
 To permit renaming, include [`rename`](./setupoptions-swift.struct/rename.md) in the [`setupOptions`](./setupoptions-swift.property.md)
 

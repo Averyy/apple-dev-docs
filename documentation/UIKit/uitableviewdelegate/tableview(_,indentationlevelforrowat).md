@@ -23,7 +23,7 @@ optional func tableView(_ tableView: UITableView, indentationLevelForRowAt index
 - (NSInteger) tableView:(UITableView *) tableView indentationLevelForRowAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the depth of the specified row to show its hierarchical position in the section.
 

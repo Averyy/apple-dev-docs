@@ -25,7 +25,7 @@ var segmentsDownloadedDuration: TimeInterval { get }
 @property (nonatomic, readonly) NSTimeInterval segmentsDownloadedDuration;
 ```
 
-#### Discussion
+## Discussion
 
 The property corresponds to “c-duration-downloaded”.
 

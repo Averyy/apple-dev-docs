@@ -25,7 +25,7 @@ let kSecAttrCanVerify: CFString
 extern CFStringRef const kSecAttrCanVerify;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFBoolean`](../CoreFoundation/cfboolean.md) and indicates whether this cryptographic key can be used to verify a digital signature.
 

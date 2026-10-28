@@ -25,11 +25,11 @@ func execute(_ request: NSPersistentStoreRequest, with context: NSManagedObjectC
 - (id) executeRequest:(NSPersistentStoreRequest *) request withContext:(NSManagedObjectContext *) context error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An array containing managed objects, managed object IDs, or dictionaries as appropriate for a fetch request; an empty array if `request` is a save request, or `nil` if an error occurred.
 
-#### Discussion
+## Discussion
 
 User defined requests return arrays of arrays, where a nested array is the result returned from a single store.
 

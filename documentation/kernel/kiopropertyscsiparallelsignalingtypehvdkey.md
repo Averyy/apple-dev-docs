@@ -14,7 +14,7 @@
 #define kIOPropertySCSIParallelSignalingTypeHVDKey
 ```
 
-#### Discussion
+## Discussion
 
 This key defines the value of High Voltage Differential for the key kIOPropertySCSIParallelSignalingTypeKey. If the signaling type of the port is High Voltage Differential, this key should be used.
 

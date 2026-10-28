@@ -5,11 +5,11 @@
 
 Specify Rendition Playlists that can override the main presentation.
 
-#### Overview
+## Overview
 
 Adding alternate media to a Multivariant Playlist allows a provider to specify one of a set of variant playlists as an *override* of the main presentation. The client plays only the override media (audio or video), and suppresses any media of the same type from the main presentation, if present. This allows a presentation to offer multiple versions of the media without requiring the provider to store duplicate media, or requiring the client to download all variants when it only needs one. It also allows additional media to be offered subsequently without remastering the original content.
 
-##### Add alternate media
+### Add alternate media
 
 Here’s an example of a Multivariant Playlist that provides additional audio renditions:
 
@@ -74,7 +74,7 @@ lo/prog_index.m3u8
 hi/prog_index.m3u8
 ```
 
-##### Combine Groups and Single Options
+### Combine Groups and Single Options
 
 You can have both a group and a single stream in a playlist. This is often done when you have multiple camera angles that all use the same audio. Create a group for the video streams and then declare the single audio stream. The following example shows a playlist with three camera angles and a single audio stream:
 

@@ -27,7 +27,7 @@ func provideThumbnail(for request: QLFileThumbnailRequest, _ handler: @escaping 
 
 - [Providing Thumbnails of Your Custom File Types](../providing-thumbnails-of-your-custom-file-types.md)
 
-#### Discussion
+## Discussion
 
 To provide a thumbnail for a custom file type, subclass [`QLThumbnailProvider`](../qlthumbnailprovider.md), implement this method, and return a [`QLThumbnailReply`](../qlthumbnailreply.md) that either contains a drawing block or the URL to an image file.
 

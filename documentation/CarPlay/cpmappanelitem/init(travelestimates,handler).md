@@ -21,11 +21,11 @@ init(travelEstimates: CPTravelEstimates, handler: ((CPMapPanelItem, @escaping ()
 - (instancetype) initWithTravelEstimates:(CPTravelEstimates *) travelEstimates handler:(void (^)(CPMapPanelItem *item, dispatch_block_t completionBlock)) handler;
 ```
 
-#### Return Value
+## Return Value
 
 A map panel item initialized with travel estimates.
 
-#### Discussion
+## Discussion
 
 For this type of item, the map panel displays the expected arrival time, along with the remaining distance and time information.
 

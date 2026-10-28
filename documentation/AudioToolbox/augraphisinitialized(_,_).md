@@ -26,11 +26,11 @@ func AUGraphIsInitialized(_ inGraph: AUGraph, _ outIsInitialized: UnsafeMutableP
 extern OSStatus AUGraphIsInitialized(AUGraph inGraph, Boolean *outIsInitialized);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 ## Parameters
 

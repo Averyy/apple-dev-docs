@@ -21,7 +21,7 @@ var showsItemsWithProtectedAssets: Bool { get set }
 @property (nonatomic) BOOL showsItemsWithProtectedAssets;
 ```
 
-#### Discussion
+## Discussion
 
 When set to [`true`](../../Swift/true.md), the media item picker displays media items with DRM. The default value for this property is [`true`](../../Swift/true.md).
 

@@ -19,7 +19,7 @@ func reconfigure(sizeInPixels: CGSize) throws
 - (BOOL) reconfigureWithSizeInPixels:(CGSize) sizeInPixels error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 If successful, the framework passes the new size to the guest but the guest may or may not respond to the new size. If the guest doesn’t use the new size, the Virtualization framework doesn’t return an error.
 

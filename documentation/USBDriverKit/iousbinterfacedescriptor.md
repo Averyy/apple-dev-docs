@@ -15,7 +15,7 @@ A descriptor for a specific interface of a USB device.
 struct IOUSBInterfaceDescriptor;
 ```
 
-#### Overview
+## Overview
 
 An [`IOUSBInterfaceDescriptor`](./iousbinterfacedescriptor.md) object contains information about one of the device’s supported interfaces. A device’s configuration provides one or more interfaces, each with zero or more endpoints that define how to configure the pipes for that device.
 

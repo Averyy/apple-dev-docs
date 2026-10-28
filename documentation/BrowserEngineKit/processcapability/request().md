@@ -17,7 +17,7 @@ Requests the capability to be granted to the current process.
 func request() throws -> ProcessCapability.Grant
 ```
 
-#### Discussion
+## Discussion
 
 Returns the granted capability or throws an error if it can not be granted.
 

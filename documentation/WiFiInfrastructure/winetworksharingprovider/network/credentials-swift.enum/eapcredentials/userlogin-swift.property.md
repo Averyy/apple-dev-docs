@@ -17,7 +17,7 @@ The information used authenticate the user and log them in.
 let userLogin: WINetworkSharingProvider.Network.Credentials.EAPCredentials.UserLogin?
 ```
 
-#### Discussion
+## Discussion
 
 Used for PEAP, EAP-TTLS, and EAP-FAST. Optional for EAP-TLS.
 

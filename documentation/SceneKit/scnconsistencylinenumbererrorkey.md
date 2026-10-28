@@ -25,7 +25,7 @@ let SCNConsistencyLineNumberErrorKey: String
 extern NSString * const SCNConsistencyLineNumberErrorKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSNumber`](../Foundation/nsnumber.md) object.
 

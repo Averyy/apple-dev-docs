@@ -19,7 +19,7 @@ var currentValue: Bool { get set }
 @property (readwrite) BOOL currentValue;
 ```
 
-#### Discussion
+## Discussion
 
 This property can be observed if appropriate in order to monitor changes to the set of `MERAWProcessingParameters` vended by the extension.
 

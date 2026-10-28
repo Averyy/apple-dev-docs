@@ -21,7 +21,7 @@ var emptyViewTitleVariants: [String] { get set }
 @property (nonatomic, copy) NSArray<NSString *> * emptyViewTitleVariants;
 ```
 
-#### Discussion
+## Discussion
 
 When the list contains zero items, the template displays an empty view with a title and a subtitle. The template removes the empty view if you update the list and provide items.
 

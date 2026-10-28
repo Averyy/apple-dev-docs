@@ -13,7 +13,7 @@ Remove a configured collection.
 **Availability**:
 - Swift 5.5+
 
-#### Overview
+## Overview
 
 This subcommand removes a collection from the user’s list of configured collections:
 
@@ -22,7 +22,7 @@ $ swift package-collection remove https://www.example.com/packages.json
 Removed "Sample Package Collection" from your package collections.
 ```
 
-#### Usage
+## Usage
 
 ```
 package-collection remove <collection-url>

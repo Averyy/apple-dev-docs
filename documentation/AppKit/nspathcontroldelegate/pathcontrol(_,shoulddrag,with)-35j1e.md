@@ -20,7 +20,7 @@ optional func pathControl(_ pathControl: NSPathControl, shouldDrag pathComponent
 - (BOOL) pathControl:(NSPathControl *) pathControl shouldDragPathComponentCell:(NSPathComponentCell *) pathComponentCell withPasteboard:(NSPasteboard *) pasteboard;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called when a drag is about to begin. You can refuse to allow the drag to happen by returning [`false`](../../Swift/false.md) and allow it by returning [`true`](../../Swift/true.md). By default, the pasteboard automatically has the following types on it: `NSStringPboardType`, `NSURLPboardType` (if there is a URL value for the cell being dragged), and `NSFilenamesPboardType` (if the URL value returns [`true`](../../Swift/true.md) from -[`isFileURL`](../../Foundation/nsurl/isfileurl.md)). You can customize the types placed on the pasteboard at this time, if desired. Implementation of this method is optional.
 

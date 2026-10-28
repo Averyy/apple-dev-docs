@@ -19,7 +19,7 @@ struct NSFontTraitMask
 enum NSFontTraitMask : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 [`NSFontManager`](./nsfontmanager.md) categorizes fonts according to a small set of traits. You can convert fonts by adding and removing individual traits, and you can get a font with a specific combination of traits.
 

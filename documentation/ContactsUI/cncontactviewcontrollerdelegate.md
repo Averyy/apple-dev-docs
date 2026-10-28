@@ -22,7 +22,7 @@ protocol CNContactViewControllerDelegate : NSObjectProtocol
 @protocol CNContactViewControllerDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Implement the methods of this protocol and assign the resulting object to the [`delegate`](./cncontactviewcontroller/delegate.md) property of a `CNContactViewController` object.
 

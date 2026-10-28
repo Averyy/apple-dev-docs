@@ -20,7 +20,7 @@ func goForward(_ sender: Any?)
 - (void) goForward:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This method does nothing if it is unable to move forward.
 

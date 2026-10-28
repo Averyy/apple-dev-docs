@@ -21,7 +21,7 @@ Returns a custom set of options for CKSyncEngine to use while fetching changes.
 - (CKSyncEngineFetchChangesOptions *) syncEngine:(CKSyncEngine *) syncEngine nextFetchChangesOptionsForContext:(CKSyncEngineFetchChangesContext *) context;
 ```
 
-#### Discussion
+## Discussion
 
 While `CKSyncEngine` fetches changes from the server, it calls this function to determine priority and other options for fetching changes.
 

@@ -16,7 +16,7 @@ Authentication using biometric information.
 case systemBiometric
 ```
 
-#### Discussion
+## Discussion
 
 Use of the systemBiometric authentication requires you to set the [`NSFaceIDUsageDescription`](../../../../BundleResources/information-property-list/nsfaceidusagedescription.md) usage description.
 

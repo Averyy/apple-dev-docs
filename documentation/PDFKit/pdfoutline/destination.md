@@ -24,7 +24,7 @@ var destination: PDFDestination? { get set }
 @property (nonatomic, strong, nullable) PDFDestination * destination;
 ```
 
-#### Discussion
+## Discussion
 
 The root outline serves only as a container for the outlines it owns; it does not have a destination. Note that a `PDFOutline` object can have either a destination or an action, not both.
 

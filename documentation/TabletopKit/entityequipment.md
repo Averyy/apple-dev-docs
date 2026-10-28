@@ -15,7 +15,7 @@ A protocol for equipment in a game that you render using RealityKit.
 protocol EntityEquipment : Equipment
 ```
 
-#### Overview
+## Overview
 
 To render equipment using an entity, follow these steps:
 

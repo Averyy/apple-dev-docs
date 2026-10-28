@@ -24,7 +24,7 @@ class PDFActionResetForm
 @interface PDFActionResetForm : PDFAction
 ```
 
-#### Overview
+## Overview
 
 A `PDFActionResetForm` object represents an action associated with a PDF form.
 

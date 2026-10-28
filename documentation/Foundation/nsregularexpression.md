@@ -25,7 +25,7 @@ class NSRegularExpression
 @interface NSRegularExpression : NSObject
 ```
 
-#### Overview
+## Overview
 
 The fundamental matching method for [`NSRegularExpression`](./nsregularexpression.md) is a Block iterator method that allows clients to supply a Block object which will be invoked each time the regular expression matches a portion of the target string.  There are additional convenience methods for returning all the matches as an array, the total number of matches, the first match, and the range of the first match.
 
@@ -33,7 +33,7 @@ An individual match is represented by an instance of the [`NSTextCheckingResult`
 
 > **Note**:  [`NSRegularExpression`](./nsregularexpression.md) conforms to the International Components for Unicode ([ICU](https://unicode-org.github.io/icu/)) specification for [regular expressions](https://unicode-org.github.io/icu/userguide/strings/regexp.html).
 
-##### Examples Using NSRegularExpression
+### Examples Using NSRegularExpression
 
 What follows are a set of graduated examples for using the `NSRegularExpression` class. All these examples use the regular expression `\\b(a|b)(c|d)\\b` as their regular expression.
 
@@ -203,15 +203,15 @@ NSString *modifiedString = [regex stringByReplacingMatchesInString:string
                                                       withTemplate:@"$2$1"];
 ```
 
-##### Concurrency and Thread Safety
+### Concurrency and Thread Safety
 
 `NSRegularExpression` is designed to be immutable and thread safe, so that a single instance can be used in matching operations on multiple threads at once.  However, the string on which it is operating should not be mutated during the course of a matching operation, whether from another thread or from within the Block used in the iteration.
 
-##### Regular Expression Syntax
+### Regular Expression Syntax
 
 The following tables describe the character expressions used by the regular expression to match patterns within a string, the pattern operators that specify how many times a pattern is matched and additional matching restrictions, and the last table specifies flags that can be included in the regular expression pattern that specify search behavior over multiple lines (these flags can also be specified using the [`NSRegularExpression.Options`](./nsregularexpression/options-swift.struct.md) option flags.
 
-###### Regular Expression Metacharacters
+#### Regular Expression Metacharacters
 
 Table 1: Character sequences used to match characters within a string.
 
@@ -255,7 +255,7 @@ Table 1: Character sequences used to match characters within a string.
 | `$` | Match at the end of a line. See [`anchorsMatchLines`](./nsregularexpression/options-swift.struct/anchorsmatchlines.md) and the `m` character expression in Table 4. |
 | `\` | Quotes the following character. Characters that must be quoted to be treated as literals are `* ? + [ ( ) { } ^ $ |
 
-###### Regular Expression Operators
+#### Regular Expression Operators
 
 Table 2: Regular expression operators.
 
@@ -291,7 +291,7 @@ Table 2: Regular expression operators.
 | `(?ismwx-ismwx:` `...` `)` | Flag settings. Evaluate the parenthesized expression with the specified flags enabled or -disabled. The flags are defined in [Flag Options](./nsregularexpression.md#Flag-Options). |
 | `(?ismwx-ismwx)` | Flag settings. Change the flag settings. Changes apply to the portion of the pattern following the setting. For example, (?i) changes to a case insensitive match.The flags are defined in [Flag Options](./nsregularexpression.md#Flag-Options). |
 
-###### Template Matching Format
+#### Template Matching Format
 
 The `NSRegularExpression` class provides find-and-replace methods for both immutable and mutable strings using the technique of template matching.
 
@@ -304,7 +304,7 @@ Table 3: Find-and-replace syntax.
 
 The replacement string is treated as a template, with `$0` being replaced by the contents of the matched range, `$1` by the contents of the first capture group, and so on.  Additional digits beyond the maximum required to represent the number of capture groups will be treated as ordinary characters, as will a `$` not followed by digits.  Backslash will escape both `$` and `\`.
 
-###### Flag Options
+#### Flag Options
 
 The following flags control various aspects of regular expression matching. These flag values may be specified within the pattern using the `(?ismx-ismx)` pattern options.  Equivalent behaviors can be specified for the entire pattern when an `NSRegularExpression` is initialized, using the [`NSRegularExpression.Options`](./nsregularexpression/options-swift.struct.md) option flags.
 
@@ -318,11 +318,11 @@ Table 4: Regular expression matching flags.
 | m | Control the behavior of “`^`” and “`$`” in a pattern. By default these will only match at the start and end, respectively, of the input text. If this flag is set, “`^`” and “`$`” will also match at the start and end of each line within the input text. |
 | w | Controls the behavior of `\b` in a pattern. If set, word boundaries are found according to the definitions of word found in Unicode UAX 29, Text Boundaries. By default, word boundaries are identified by means of a simple classification of characters as either “word” or “non-word”, which approximates traditional regular expression behavior. The results obtained with the two options can be quite different in runs of spaces and other non-word characters. |
 
-##### Performance
+### Performance
 
 `NSRegularExpression` implements a nondeterministic finite automaton matching engine. As such, complex regular expression patterns containing multiple `*` or `+` operators may result in poor performance when attempting to perform matches — particularly failing to match a given input. For more information, see the [“Performance Tips” section of the ICU User Guide](http://userguide.icu-project.org/strings/regexp#TOC-Performance-Tips).
 
-##### ICU License
+### ICU License
 
 Tables 1, 2, 3, and 4 are reproduced from the ICU User Guide, Copyright (c) 2000 - 2009 IBM and Others, which are licensed under the following terms:
 

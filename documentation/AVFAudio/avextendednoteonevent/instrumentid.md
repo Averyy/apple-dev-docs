@@ -24,7 +24,7 @@ var instrumentID: UInt32 { get set }
 @property (readwrite) UInt32 instrumentID;
 ```
 
-#### Discussion
+## Discussion
 
 Set this value to [`defaultInstrument`](./defaultinstrument.md).
 

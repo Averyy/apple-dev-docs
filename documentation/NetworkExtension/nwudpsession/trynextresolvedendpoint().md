@@ -26,7 +26,7 @@ func tryNextResolvedEndpoint()
 - (void) tryNextResolvedEndpoint;
 ```
 
-#### Discussion
+## Discussion
 
 This should be used when the caller has attempted to communicate with the current `resolvedEndpoint`, and the caller has determined that it is unusable. If there are no other resolved endpoints, the session will move to the failed state.
 

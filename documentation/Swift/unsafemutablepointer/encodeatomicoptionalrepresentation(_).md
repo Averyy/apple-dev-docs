@@ -21,11 +21,11 @@ Destroys a value of `Self` and prepares an `AtomicOptionalRepresentation` storag
 static func encodeAtomicOptionalRepresentation(_ value: consuming UnsafeMutablePointer<Pointee>?) -> UnsafeMutablePointer<Pointee>.AtomicOptionalRepresentation
 ```
 
-#### Return Value
+## Return Value
 
 The newly encoded `AtomicOptionalRepresentation` storage.
 
-#### Discussion
+## Discussion
 
 > **Note**: This is not an atomic operation. This simply encodes the logical type `Self` into its storage representation suitable for atomic operations, `AtomicOptionalRepresentation`.
 

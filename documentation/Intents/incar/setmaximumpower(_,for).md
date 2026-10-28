@@ -23,7 +23,7 @@ func setMaximumPower(_ power: Measurement<UnitPower>, for chargingConnectorType:
 - (void) setMaximumPower:(NSMeasurement<NSUnitPower *> *) power forChargingConnectorType:(INCarChargingConnectorType) chargingConnectorType;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method for each type of charging connector the electric vehicle supports.
 

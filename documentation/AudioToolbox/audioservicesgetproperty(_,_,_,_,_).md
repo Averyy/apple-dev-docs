@@ -24,15 +24,15 @@ func AudioServicesGetProperty(_ inPropertyID: AudioServicesPropertyID, _ inSpeci
 extern OSStatus AudioServicesGetProperty(AudioServicesPropertyID inPropertyID, UInt32 inSpecifierSize, const void *inSpecifier, UInt32 *ioPropertyDataSize, void *outPropertyData);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 System Sound Services properties are listed and described in [System Sound Services Property Identifiers](./api-1405268-system-sound-services-property-i.md).
 
-##### Special Considerations
+### Special Considerations
 
 Some Core Audio property values are C types and others are Core Foundation objects.
 

@@ -17,7 +17,7 @@ Sample from the standard Gumbel distribution with a given `DType`.
 func gumbel(_ shape: some Collection<Int> = [], dtype: DType, key: (some RandomStateOrKey)? = MLXArray?.none, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 The values are sampled from a standard Gumbel distribution which CDF `exp(-exp(-x))`.
 

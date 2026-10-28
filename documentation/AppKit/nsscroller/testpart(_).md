@@ -19,7 +19,7 @@ func testPart(_ point: NSPoint) -> NSScroller.Part
 - (NSScrollerPart) testPart:(NSPoint) point;
 ```
 
-#### Discussion
+## Discussion
 
 See [`NSScroller.Part`](./part.md) for a list of possible return values. In macOS 10.7 and later, this method no longer returns [`NSScroller.Part.incrementLine`](./part/incrementline.md) or [`NSScroller.Part.decrementLine`](./part/decrementline.md).
 

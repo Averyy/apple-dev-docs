@@ -21,7 +21,7 @@ Finds the sum of values in a sliding window at each possible position in a singl
 extern void vDSP_vswsum(const float *__A, vDSP_Stride __IA, float *__C, vDSP_Stride __IC, vDSP_Length __N, vDSP_Length __P);
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to populate an output vector with the consecutive sums of values in a sliding window. The number of elements in the input vector must be one subtracted from the sum of the window length and the number of window positions.
 

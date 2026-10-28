@@ -22,7 +22,7 @@ nonisolated
 func onScrollTargetVisibilityChange<ID>(idType: ID.Type, threshold: Double = 0.5, _ action: @escaping ([ID]) -> Void) -> some View where ID : Hashable
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier along with the modifier [`scrollTargetLayout(isEnabled:)`](./scrolltargetlayout%28isenabled%29.md) to be informed when the views in the targetted scroll view have crossed the provided threshold to be considered on/off screen.
 

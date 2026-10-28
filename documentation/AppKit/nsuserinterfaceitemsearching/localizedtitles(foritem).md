@@ -20,7 +20,7 @@ func localizedTitles(forItem item: Any) -> [String]
 - (NSArray<NSString *> *) localizedTitlesForItem:(id) item;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSArray` of `NSStrings` (localized for display in the menu) that will be combined with separators to form the menu item title.
 

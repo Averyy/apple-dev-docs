@@ -15,7 +15,7 @@ A transition was attempted while another transition was in progress.
 case transitionInProgress
 ```
 
-#### Discussion
+## Discussion
 
 Possible response is to try again after the transition completes.
 

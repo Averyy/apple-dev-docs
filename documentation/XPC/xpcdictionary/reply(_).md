@@ -21,7 +21,7 @@ Sends a reply to the originator of the dictionary.
 func reply(_ reply: XPCDictionary)
 ```
 
-#### Discussion
+## Discussion
 
 When a listener receives an [`XPCDictionary`](../xpcdictionary.md), the dictionary keeps track of the client that sent it. This function sends the specified `reply` dictionary back to the originating client.
 

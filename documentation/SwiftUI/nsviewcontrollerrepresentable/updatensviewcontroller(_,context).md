@@ -17,7 +17,7 @@ Updates the state of the specified view controller with new information from Swi
 @preconcurrency func updateNSViewController(_ nsViewController: Self.NSViewControllerType, context: Self.Context)
 ```
 
-#### Discussion
+## Discussion
 
 When the state of your app changes, SwiftUI updates the portions of your interface affected by those changes. SwiftUI calls this method for any changes affecting the corresponding AppKit view controller. Use this method to update the configuration of your view controller to match the new state information provided in the `context` parameter.
 

@@ -34,7 +34,7 @@ var transactionScheduledDate: INDateComponentsRange? { get }
 @property (atomic, copy, readonly, nullable) INDateComponentsRange * transactionScheduledDate;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to get the date on which to schedule the payment. If the intent doesn’t include a transaction date, assume that the user intended to pay the bill immediately.
 

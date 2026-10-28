@@ -24,7 +24,7 @@ The default progress view style in the current context of the view being styled.
 
 Available when `Self` is `DefaultProgressViewStyle`.
 
-#### Discussion
+## Discussion
 
 The default style represents the recommended style based on the original initialization parameters of the progress view, and the progress view’s context within the view hierarchy.
 

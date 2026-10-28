@@ -13,11 +13,11 @@
 ifaddr_t ifaddr_withdstaddr(const struct sockaddr *destination);
 ```
 
-#### Return Value
+## Return Value
 
 A reference to the interface address.
 
-#### Discussion
+## Discussion
 
 Returns an interface address for the interface address that matches the destination when the netmask is applied. Increments the reference count on the ifaddr before returning to the caller. Caller is responsible for calling ifaddr_release.
 

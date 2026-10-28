@@ -23,7 +23,7 @@ let NSMetadataUbiquitousItemPercentDownloadedKey: String
 extern NSString * const NSMetadataUbiquitousItemPercentDownloadedKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value is an [`NSNumber`](./nsnumber.md) object that contains the percentage of the file that has already been downloaded from the cloud. The value is a double in the range `0.0` to `100.0`.
 

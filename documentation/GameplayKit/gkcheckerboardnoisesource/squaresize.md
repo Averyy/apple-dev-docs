@@ -24,7 +24,7 @@ var squareSize: Double { get set }
 @property (nonatomic) double squareSize;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `1.0`.
 

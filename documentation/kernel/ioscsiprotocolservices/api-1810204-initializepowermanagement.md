@@ -12,7 +12,7 @@ virtual void InitializePowerManagement (
  IOService *provider );
 ```
 
-#### Overview
+## Overview
 
 Subclasses call this method to initialize power management. In the protocol services layer, this method calls the protocol interface layer to initialize power management state variables and then registers the protocol layer driver with the power manager with two(2) states, ON and OFF. Subclasses may override this behavior.
 

@@ -15,7 +15,7 @@ Subscription renewal information signed by the App Store, in JSON Web Signature 
 string JWSRenewalInfo
 ```
 
-#### Discussion
+## Discussion
 
 The [`JWSRenewalInfo`](./jwsrenewalinfo.md) type is a string of three Base64 URL-encoded components, separated by a period. The string contains the JWS representation of the subscription renewal information, signed by the App Store according to the JSON Web Signature (JWS) [IETF RFC 7515](https://datatracker.ietf.org/doc/html/rfc7515) specification.
 

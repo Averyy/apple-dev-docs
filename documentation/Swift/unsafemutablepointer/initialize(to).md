@@ -21,7 +21,7 @@ Initializes this pointer’s memory with a single instance of the given value.
 func initialize(to value: consuming Pointee)
 ```
 
-#### Discussion
+## Discussion
 
 The destination memory must be uninitialized or the pointer’s `Pointee` must be a trivial type. After a call to `initialize(to:)`, the memory referenced by this pointer is initialized. Calling this method is roughly equivalent to calling `initialize(repeating:count:)` with a `count` of 1.
 

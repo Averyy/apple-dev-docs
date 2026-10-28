@@ -22,7 +22,7 @@ var browserAccessibilityDetailsElements: [NSObject] { get set }
 @property (nonatomic, strong) NSArray<NSObject *> * browserAccessibilityDetailsElements;
 ```
 
-#### Discussion
+## Discussion
 
 Represents the value of aria-details. Returns an array of objects. default: []
 

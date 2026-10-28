@@ -19,11 +19,11 @@
 static bool SPRect3DFloatIsFinite(SPRect3DFloat rect);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether all of the coordinates and dimensions of the rectangle are finite.
 
-#### Discussion
+## Discussion
 
 Returns a Boolean value that indicates whether all of the coordinates and dimensions of the rectangle are finite.
 

@@ -20,7 +20,7 @@ optional func tokenField(_ tokenField: NSTokenField, writeRepresentedObjects obj
 - (BOOL) tokenField:(NSTokenField *) tokenField writeRepresentedObjects:(NSArray *) objects toPasteboard:(NSPasteboard *) pboard;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the delegate writes the represented objects to the pasteboard, [`false`](../../Swift/false.md) otherwise. If [`false`](../../Swift/false.md), the token field writes the display strings to the [`NSStringPboardType`](../nsstringpboardtype.md) pasteboard.
 

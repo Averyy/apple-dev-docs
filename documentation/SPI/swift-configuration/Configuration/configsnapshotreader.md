@@ -24,11 +24,11 @@ A container type for reading config values from snapshots.
 struct ConfigSnapshotReader
 ```
 
-#### Overview
+## Overview
 
 A config snapshot reader provides read-only access to config values stored in an underlying [`ConfigSnapshot`](./configsnapshot.md). Unlike a config reader, which can access live, changing config values from providers, a snapshot reader works with a fixed, immutable snapshot of the configuration data.
 
-#### Usage
+## Usage
 
 Get a snapshot reader from a config reader by using the [`snapshot()`](./configreader/snapshot%28%29.md) method. All values in the snapshot are guaranteed to be from the same point in time:
 
@@ -62,7 +62,7 @@ try await config.watchSnapshot { snapshots in
 }
 ```
 
-##### Scoping
+### Scoping
 
 Like `ConfigReader`, you can set a key prefix on the config snapshot reader, allowing all config lookups to prepend a prefix to the keys, which lets you pass a scoped snapshot reader to nested components.
 
@@ -72,7 +72,7 @@ let timeout = httpConfig.int(forKey: "timeout")
 // Reads from "http.timeout" in the snapshot
 ```
 
-##### Config keys and context
+### Config keys and context
 
 The library requests config values using a canonical “config key”, that represents a key path. You can provide additional context that some providers use when creating the snapshot.
 
@@ -83,7 +83,7 @@ let httpTimeout = snapshotReader.int(
 )
 ```
 
-##### Automatic type conversion
+### Automatic type conversion
 
 String configuration values can be automatically converted to other types using the `as:` parameter. This works with:
 
@@ -134,7 +134,7 @@ let dbUrl = snapshot.string(
 )
 ```
 
-##### Access reporting
+### Access reporting
 
 When reading from a snapshot, access events are reported to the access reporter from the original config reader. This helps debug which config values are accessed, even when reading from snapshots.
 

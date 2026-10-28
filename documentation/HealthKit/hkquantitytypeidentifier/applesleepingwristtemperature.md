@@ -24,7 +24,7 @@ static let appleSleepingWristTemperature: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierAppleSleepingWristTemperature;
 ```
 
-#### Discussion
+## Discussion
 
 Apple Watch Series 8 and Apple Watch Ultra can sample a person’s wrist temperature while they sleep. A supported watch measures temperature from both sensors every five seconds overnight during sleep. The watch then aggregates this data to a single [`appleSleepingWristTemperature`](./applesleepingwristtemperature.md) sample. It corrects this sample for environmental bias and calculates a single value that represents the wrist temperature over the entire night.
 

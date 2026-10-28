@@ -21,7 +21,7 @@ Calculates the double-precision distance squared between two points in n-dimensi
 extern void vDSP_distancesqD(const double *__A, vDSP_Stride __IA, const double *__B, vDSP_Stride __IB, double *__C, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the sum of squares of the differences of corresponding elements of vectors `A` and `B`, using the following operation:
 

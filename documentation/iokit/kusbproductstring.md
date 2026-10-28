@@ -14,7 +14,7 @@
 #define kUSBProductString
 ```
 
-#### Discussion
+## Discussion
 
 IORegistry key for the device's USB Product string
 

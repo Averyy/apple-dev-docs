@@ -21,11 +21,11 @@ Publishes the last element of a stream that satisfies a predicate closure, after
 func last(where predicate: @escaping (Self.Output) -> Bool) -> Publishers.LastWhere<Self>
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that only publishes the last element satisfying the given predicate.
 
-#### Discussion
+## Discussion
 
 Use [`last(where:)`](./last%28where%29.md) when you need to republish only the last element of a stream that satisfies a closure you specify.
 

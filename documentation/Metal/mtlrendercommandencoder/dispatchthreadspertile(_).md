@@ -25,7 +25,7 @@ func dispatchThreadsPerTile(_ threadsPerTile: MTLSize)
 - (void) dispatchThreadsPerTile:(MTLSize) threadsPerTile;
 ```
 
-#### Discussion
+## Discussion
 
 The command invokes the GPU function that’s in the encoder’s current tile render pipeline state. You can configure that state with the following steps:
 

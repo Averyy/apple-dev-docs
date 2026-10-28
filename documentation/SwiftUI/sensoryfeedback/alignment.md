@@ -21,7 +21,7 @@ Indicates the alignment of a dragged item.
 static let alignment: SensoryFeedback
 ```
 
-#### Discussion
+## Discussion
 
 For example, use this pattern in a drawing app when the user drags a shape into alignment with another shape.
 

@@ -19,7 +19,7 @@ func ABMultiValueCreate() -> Unmanaged<ABMultiValueRef>!
 extern ABMultiValueRefABMultiValueCreate();
 ```
 
-#### Return Value
+## Return Value
 
 A new ABMultiValueobject. You are responsible for releasing this object.
 

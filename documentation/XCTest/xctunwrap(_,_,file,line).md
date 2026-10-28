@@ -12,11 +12,11 @@ Asserts that an expression is not `nil,` and returns the unwrapped value.
 func XCTUnwrap<T>(_ expression: @autoclosure () throws -> T?, _ message: @autoclosure () -> String = "", file: StaticString = #filePath, line: UInt = #line) throws -> T
 ```
 
-#### Return Value
+## Return Value
 
 The result of evaluating and unwrapping the `expression`, which is of type `T`. `XCTUnwrap()` only returns a value if `expression` is not `nil`.
 
-#### Discussion
+## Discussion
 
 This function generates a failure when `expression` is `nil`. Otherwise, it returns the unwrapped value of `expression` for subsequent use in the test.
 

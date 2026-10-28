@@ -26,7 +26,7 @@ func flatMapLatest<T>(_ transform: @escaping @Sendable (Self.Element) -> T) -> s
 
 Available when `Self` conforms to `Sendable`.
 
-#### Discussion
+## Discussion
 
 When a new element is emitted by this sequence, the `transform` is called to produce a new inner sequence. Iteration on the previous inner sequence is cancelled, and iteration begins on the new one.
 

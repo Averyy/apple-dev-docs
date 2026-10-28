@@ -17,7 +17,7 @@ A quality-of-service (QoS) type that provides low-latency for moderate throughpu
 case interactiveVideo
 ```
 
-#### Discussion
+## Discussion
 
 Only use this type if normal Wi-Fi packet transmission delays are directly visible to the person using your app. Use this type for moderate data rate, live, and unbuffered realtime flows that directly interact with the person using your app.
 

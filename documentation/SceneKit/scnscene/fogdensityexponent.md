@@ -25,7 +25,7 @@ var fogDensityExponent: CGFloat { get set }
 @property (nonatomic) CGFloat fogDensityExponent;
 ```
 
-#### Discussion
+## Discussion
 
 A fog effect fades out the contents of the scene with increasing distance from the [`pointOfView`](../scnscenerenderer/pointofview.md) location, replacing them with increasing intensities of the [`fogColor`](./fogcolor.md) color. The [`fogDensityExponent`](./fogdensityexponent.md) property determines the smoothness or abruptness of this transition.
 

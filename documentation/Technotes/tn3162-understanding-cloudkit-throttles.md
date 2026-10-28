@@ -5,13 +5,13 @@
 
 Learn how to identify and handle CloudKit throttles.
 
-#### Overview
+## Overview
 
 The CloudKit infrastructure is shared by all apps and services. The resources are finite, and so high utilization from one app can negatively affect others. To avoid this kind of impact and optimize the overall experience, CloudKit implements a number of limits and controls on incoming traffic, which are known as *throttles*.
 
 CloudKit can enforce throttles when it deems necessary on any app or service that uses the [CloudKit](../CloudKit/CloudKit.md) framework, [CloudKit Web Services](https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitWebServicesReference/index.html), [CloudKit JS](../CloudKitJS/CloudKitJS.md), [`NSPersistentCloudKitContainer`](../CoreData/nspersistentcloudkitcontainer.md), and [`NSUbiquitousKeyValueStore`](../Foundation/nsubiquitouskeyvaluestore.md). This technote discusses how to identify CloudKit throttles with representative error messages and how to handle them.
 
-#### Identify CloudKit throttles
+## Identify CloudKit throttles
 
 The CloudKit server throttles a request from an app in the following cases:
 
@@ -60,7 +60,7 @@ Use these example messages to determine if your app hits CloudKit throttles. If 
 
 > **Note**: The system on a device can throttle CloudKit requests for other reasons. For example, when the battery level on an iPhone or Apple Watch runs low, iOS or watchOS may decide to defer a CloudKit operation, and this kind of throttle expires only after the battery returns to a high level. For more information, see [Understand system throttles](./tn3163-understanding-the-synchronization-of-nspersistentcloudkitcontainer.md#Understand-system-throttles).
 
-#### Handle CloudKit throttles
+## Handle CloudKit throttles
 
 CloudKit throttles are implemented to balance the use of CloudKit resources and achieve the best overall user experience of the service. When an app hits throttles, CloudKit stops accepting its requests until the throttles expire. There is no API for an app to configure the expiration time.
 
@@ -78,7 +78,7 @@ Apps that use `NSPersistentCloudKitContainer` and `NSUbiquitousKeyValueStore` au
 
 A retried request is not guaranteed to succeed. It may be throttled again, with a new `retry-after` time, for the same reason. If your CloudKit requests keep getting throttled, even though your app doesn’t have a lot of CloudKit traffic, and the device, networking, and [system status](https://www.apple.com/support/systemstatus/) are all in a good state, consider [providing your feedback](./tn3163-understanding-the-synchronization-of-nspersistentcloudkitcontainer.md#Provide-actionable-feedback).
 
-#### Revision History
+## Revision History
 
 - **2024-02-20** First published.
 

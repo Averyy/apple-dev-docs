@@ -26,7 +26,7 @@ func prepareForInterfaceBuilder()
 - (void) prepareForInterfaceBuilder;
 ```
 
-#### Discussion
+## Discussion
 
 When Interface Builder instantiates a class with the `IB_DESIGNABLE` attribute, it calls this method to let the resulting object know that it was created at design time. You can implement this method in your designable classes and use it to configure their design-time appearance. For example, you might use the method to configure a custom text control with a default string. The system does not call this method; only Interface Builder calls it.
 

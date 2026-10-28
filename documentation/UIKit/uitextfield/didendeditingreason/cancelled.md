@@ -19,7 +19,7 @@ case cancelled
 UITextFieldDidEndEditingReasonCancelled
 ```
 
-#### Discussion
+## Discussion
 
 On tvOS, text field changes become cancelled when the user dismisses the text entry interface by pressing the Menu button.
 

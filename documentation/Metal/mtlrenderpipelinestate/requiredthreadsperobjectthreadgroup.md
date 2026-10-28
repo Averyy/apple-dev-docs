@@ -23,7 +23,7 @@ var requiredThreadsPerObjectThreadgroup: MTLSize { get }
 @property (readonly) MTLSize requiredThreadsPerObjectThreadgroup;
 ```
 
-#### Discussion
+## Discussion
 
 The required size of every object shader threadgroup.
 

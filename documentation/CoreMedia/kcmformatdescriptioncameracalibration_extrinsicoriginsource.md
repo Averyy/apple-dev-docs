@@ -23,7 +23,7 @@ let kCMFormatDescriptionCameraCalibration_ExtrinsicOriginSource: CFString
 extern CFStringRef const kCMFormatDescriptionCameraCalibration_ExtrinsicOriginSource;
 ```
 
-#### Discussion
+## Discussion
 
 Identifies how the origin of the camera system’s extrinsics are determined.
 

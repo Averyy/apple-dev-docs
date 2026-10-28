@@ -21,7 +21,7 @@ A structure that pairs a value with a time.
 struct TimedValue<Value> where Value : Decodable, Value : Encodable, Value : Equatable, Value : Sendable
 ```
 
-#### Overview
+## Overview
 
 The `TimedValue` pairs a value with a `CMTime` point — a measurement at a specific instant, as opposed to a span. Contrast: properties that hold constant over a span (key, pace) use RangedValue with a `CMTimeRange`; instantaneous measurements use `TimedValue` with a `CMTime`.
 

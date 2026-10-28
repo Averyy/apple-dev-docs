@@ -24,7 +24,7 @@ var arrayLength: Int { get set }
 @property (nonatomic) NSUInteger arrayLength;
 ```
 
-#### Discussion
+## Discussion
 
 For a nonarray argument, this value needs to be `0`.
 

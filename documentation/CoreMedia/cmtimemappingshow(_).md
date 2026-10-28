@@ -25,7 +25,7 @@ func CMTimeMappingShow(_ mapping: CMTimeMapping)
 extern void CMTimeMappingShow(CMTimeMapping mapping);
 ```
 
-#### Discussion
+## Discussion
 
 You typically use this function for debugging purposes.
 

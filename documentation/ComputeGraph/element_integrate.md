@@ -14,7 +14,7 @@
 void element_integrate()
 ```
 
-#### Discussion
+## Discussion
 
 > **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/element_integrate.svg)
 

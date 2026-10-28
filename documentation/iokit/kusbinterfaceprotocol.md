@@ -14,7 +14,7 @@
 #define kUSBInterfaceProtocol
 ```
 
-#### Discussion
+## Discussion
 
 The field in the USB Interface Descriptor corresponding to the interface protocol
 

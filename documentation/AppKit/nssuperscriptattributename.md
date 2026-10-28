@@ -15,7 +15,7 @@ The superscript of the text.
 extern NSAttributedStringKey NSSuperscriptAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSNumber`](../Foundation/nsnumber.md) object containing an integer. The default value is `0`.
 

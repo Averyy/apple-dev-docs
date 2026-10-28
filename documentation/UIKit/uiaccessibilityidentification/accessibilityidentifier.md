@@ -25,7 +25,7 @@ var accessibilityIdentifier: String? { get set }
 @property (nonatomic, copy, nullable) NSString * accessibilityIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 An identifier can be used to uniquely identify an element in the scripts you write using the UI Automation interfaces. Using an identifier allows you to avoid inappropriately setting or accessing an element’s accessibility label.
 

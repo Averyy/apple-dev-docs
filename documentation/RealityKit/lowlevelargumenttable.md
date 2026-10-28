@@ -18,7 +18,7 @@ A table of buffer slices and textures bound to a single shader function.
 final class LowLevelArgumentTable
 ```
 
-#### Overview
+## Overview
 
 A `LowLevelArgumentTable` binds a set of `LowLevelBufferSlice` and `LowLevelTextureResource` objects at indexed slots. Its layout is described by an `LowLevelArgumentTable.Descriptor` that must match the `argumentTableDescriptor` on the corresponding material function.
 

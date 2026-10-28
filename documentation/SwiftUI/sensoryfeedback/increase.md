@@ -21,7 +21,7 @@ Indicates that an important value increased above a significant threshold.
 static let increase: SensoryFeedback
 ```
 
-#### Discussion
+## Discussion
 
 Only plays feedback on watchOS and visionOS.
 

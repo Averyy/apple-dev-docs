@@ -23,7 +23,7 @@ class UIPrinterDestination
 @interface UIPrinterDestination : NSObject
 ```
 
-#### Overview
+## Overview
 
 You can use `UIPrinterDestination` to describe a printer so that it populates in a [`UIPrinterPickerController`](./uiprinterpickercontroller.md) when the printer’s capabilities match the print-job attributes. `UIPrinterDestination` requires a URL to locate the printer. You can include an optional display name that populates in the user interface and a TXT record to detail the printer’s additional features.
 

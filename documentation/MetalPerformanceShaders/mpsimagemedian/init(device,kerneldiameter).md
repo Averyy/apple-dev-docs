@@ -24,7 +24,7 @@ init(device: any MTLDevice, kernelDiameter: Int)
 - (instancetype) initWithDevice:(id<MTLDevice>) device kernelDiameter:(NSUInteger) kernelDiameter;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized median filter object.
 

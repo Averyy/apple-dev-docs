@@ -26,7 +26,7 @@ var scale: CGFloat { get set }
 
 - [Handling pinch gestures](../handling-pinch-gestures.md)
 
-#### Discussion
+## Discussion
 
 You may set the scale factor, but doing so resets the velocity.
 

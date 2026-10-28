@@ -15,7 +15,7 @@ Clock smoothing algorithm selectors.
 enum IOUserVideoClockAlgorithm : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 These are the valid values for [`IOUserVideoClockAlgorithm`](./iouservideoclockalgorithm.md).
 

@@ -19,7 +19,7 @@ init?(contentsOf url: URL, byReference byRef: Bool)
 - (instancetype) initWithContentsOfURL:(NSURL *) url byReference:(BOOL) byRef;
 ```
 
-#### Return Value
+## Return Value
 
 Initialized `NSSound` instance.
 

@@ -5,7 +5,7 @@
 
 Gain new insights into your video data by using Vision to detect trajectories.
 
-#### Overview
+## Overview
 
 Starting in iOS 14, tvOS 14, and macOS 11, Vision provides the ability to detect the trajectories of objects in a video sequence. It detects multiple, simultaneous trajectories in a scene, following the path of objects, including those that are only a few pixels in size. This feature has wide-ranging uses, but can be of particular use in sports and fitness apps, where you commonly want to follow the trajectories of balls, pucks, and so on.
 
@@ -15,7 +15,7 @@ Vision’s trajectory-detection algorithm requires a stable scene, meaning the c
 
 A single object may produce multiple trajectories. For example, a bouncing ball forms a new trajectory with each bounce. Similarly, if a trajectory goes offscreen and comes back at a later time, Vision creates a new trajectory for the object.
 
-##### Perform a Request to Detect Trajectories
+### Perform a Request to Detect Trajectories
 
 To detect trajectories in video, use an instance of [`VNDetectTrajectoriesRequest`](./vndetecttrajectoriesrequest.md). This is a new *stateful* request type that you use to build evidence over time. Most Vision requests are stateless, and because they require limited resources to create, you typically make new instances as needed. Because a request to detect trajectories maintains state, you instead create a single instance of it and perform the request multiple times.
 
@@ -66,7 +66,7 @@ request.regionOfInterest = CGRect(x: 0, y: 0, width: 0.5, height: 1.0)
 
 > 💡 **Tip**:  The minimum and maximum object sizes aren’t pixel accurate, but instead provide general guidelines to the algorithm. Setting a size that’s slightly smaller than your target [`minimumObjectSize`](./vndetecttrajectoriesrequest/minimumobjectsize.md), and slightly larger than your [`maximumObjectSize`](./vndetecttrajectoriesrequest/maximumobjectsize.md) may produce better results.
 
-##### Process the Results
+### Process the Results
 
 After the handler performs the request, it calls the request’s completion closure, passing it the request and any errors that occurred. Retrieve the observations by querying the request object for its results, which it returns as an array of [`VNTrajectoryObservation`](./vntrajectoryobservation.md) objects.
 
@@ -88,7 +88,7 @@ The key pieces of data that a [`VNTrajectoryObservation`](./vntrajectoryobservat
 
 Each trajectory provides a [`uuid`](../Foundation/uuid/uuid.md) value that you can use to track it over time, which is useful when performing ongoing calculations on the data or drawing visualizations of it. For an example of how you can visualize trajectory data, see the [Building a feature-rich app for sports analysis](./building-a-feature-rich-app-for-sports-analysis.md) sample app.
 
-##### Apply Your Business Logic
+### Apply Your Business Logic
 
 Vision gives you the tools to detect trajectories and retrieve the relevant data about them. How you use the data is unique to your app, and requires you to apply your own business logic. Some key things to keep in mind as you develop that logic:
 

@@ -33,7 +33,7 @@ var groupNamesOperator: INConditionalOperator { get }
 @property (atomic, assign, readonly) INConditionalOperator groupNamesOperator;
 ```
 
-#### Discussion
+## Discussion
 
 This property indicates whether the message must contain all, some, or none of the groups listed in the [`groupNames`](./groupnames.md) property.
 

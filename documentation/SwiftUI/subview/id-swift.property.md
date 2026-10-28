@@ -22,7 +22,7 @@ nonisolated
 var id: Subview.ID { get }
 ```
 
-#### Discussion
+## Discussion
 
 This identifier persists across updates, changes to the order of subviews, etc. so can be used to track the lifetime of a subview.
 

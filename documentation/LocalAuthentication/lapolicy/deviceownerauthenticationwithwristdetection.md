@@ -19,7 +19,7 @@ case deviceOwnerAuthenticationWithWristDetection
 LAPolicyDeviceOwnerAuthenticationWithWristDetection
 ```
 
-#### Discussion
+## Discussion
 
 You use the [`LAPolicy.deviceOwnerAuthenticationWithWristDetection`](./deviceownerauthenticationwithwristdetection.md) policy when calling the [`evaluatePolicy(_:localizedReason:reply:)`](../lacontext/evaluatepolicy%28_,localizedreason,reply%29.md) method to authenticate a user on watchOS.
 

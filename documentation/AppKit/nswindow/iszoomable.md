@@ -19,7 +19,7 @@ var isZoomable: Bool { get }
 @property (readonly, getter=isZoomable) BOOL zoomable;
 ```
 
-#### Discussion
+## Discussion
 
 This property is key-value coding compliant.
 

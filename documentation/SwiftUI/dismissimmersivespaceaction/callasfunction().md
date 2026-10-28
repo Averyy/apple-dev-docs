@@ -17,7 +17,7 @@ Dismisses the currently opened immersive space.
 func callAsFunction() async
 ```
 
-#### Discussion
+## Discussion
 
 Don’t call this method directly. SwiftUI calls it when you call the [`dismissImmersiveSpace`](../environmentvalues/dismissimmersivespace.md) action:
 

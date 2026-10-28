@@ -24,7 +24,7 @@ case success
 INSendMessageIntentResponseCodeSuccess
 ```
 
-#### Discussion
+## Discussion
 
 Use this code if your app successfully sent the message.
 

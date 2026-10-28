@@ -21,7 +21,7 @@ subscript(metadataKey metadataKey: String) -> Logger.Metadata.Value? { get set }
 
 - [Disable log levels during compilation](../disableloglevelsduringcompilation.md)
 
-#### Overview
+## Overview
 
 If the `logLevel` passed to this method is more severe than the `Logger`’s [`logLevel`](./loglevel.md), the library logs the message, otherwise nothing will happen.
 

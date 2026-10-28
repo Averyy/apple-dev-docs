@@ -23,7 +23,7 @@ var searchResults: some AsyncSequence<SpotlightSearchTool.SearchReply, Never> { 
 
 - [Making your indexed content available to Foundation Models](../making-your-indexed-content-available-to-foundation-models.md)
 
-#### Discussion
+## Discussion
 
 Use this property to monitor the search results as the tool generates them. Each time the model calls the Spotlight search tool’s [`call(arguments:)`](../../FoundationModels/tool/call%28arguments%29.md) method, the tool generates one or more [`SpotlightSearchTool.SearchReply`](./searchreply.md) structures with information about the results. Use this information to track the tool’s behavior while responding to the model’s requests.
 

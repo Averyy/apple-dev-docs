@@ -22,11 +22,11 @@ Adds a task to perform before this view appears or when a specified value change
 nonisolated func task<T>(id: T, name: String? = nil, priority: TaskPriority = .userInitiated, file: String = #fileID, line: Int = #line, _ action: sending @escaping @isolated(any) () async -> Void) -> some View where T : Equatable
 ```
 
-#### Return Value
+## Return Value
 
 A view that runs the specified action asynchronously before the view appears, or restarts the task when the `id` value changes.
 
-#### Discussion
+## Discussion
 
 This method behaves like `View/task(priority:_:)`, except that it also cancels and recreates the task when a specified value changes. To detect a change, the modifier tests whether a new value for the `id` parameter equals the previous value. For this to work, the value’s type must conform to the [`Equatable`](../../Swift/equatable.md) protocol.
 

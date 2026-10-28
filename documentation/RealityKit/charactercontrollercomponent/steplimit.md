@@ -20,7 +20,7 @@ The maximum obstacle height that the controller can move over.
 var stepLimit: Float
 ```
 
-#### Discussion
+## Discussion
 
 Specify this value relative to the entity’s coordinate system.
 

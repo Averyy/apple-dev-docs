@@ -19,7 +19,7 @@ class var defaultTokenizingCharacterSet: CharacterSet { get }
 @property (class, copy, readonly) NSCharacterSet * defaultTokenizingCharacterSet;
 ```
 
-#### Discussion
+## Discussion
 
 The default tokenizing character set is “,”.
 

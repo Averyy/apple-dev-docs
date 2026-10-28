@@ -19,7 +19,7 @@ let IKImageBrowserPathRepresentationType: String
 extern NSString * const IKImageBrowserPathRepresentationType;
 ```
 
-#### Discussion
+## Discussion
 
 A path representation ([`NSString`](../Foundation/nsstring.md)).
 

@@ -5,7 +5,7 @@
 
 Signal the system about any changes created by an action.
 
-#### Overview
+## Overview
 
 You must let the system know about any changes so that it can update the document browser’s interface as needed. For some actions, the browser displays transient items while the action is in progress. The signal tells the browser that the action has completed, letting the system clean up the browser’s interface. The signal also provides updated information for any items that are currently on display.
 

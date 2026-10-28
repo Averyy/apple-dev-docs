@@ -24,11 +24,11 @@ func SSLGetConnection(_ context: SSLContext, _ connection: UnsafeMutablePointer<
 OSStatus SSLGetConnection(SSLContextRef context, SSLConnectionRef*connection);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 
-#### Discussion
+## Discussion
 
 You can use this function on either the client or server to retrieve the connection associated with a secure session.
 

@@ -25,11 +25,11 @@ convenience init?(string URLString: String)
 - (instancetype) initWithString:(NSString *) URLString;
 ```
 
-#### Return Value
+## Return Value
 
 An NSURL object initialized with `URLString`. If the URL string was malformed, returns `nil`.
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  For apps linked on or after iOS 17 and aligned OS versions, [`NSURL`](../nsurl.md) parsing has updated from the obsolete RFC 1738/1808 parsing to the same [RFC 3986](https://www.ietf.org/rfc/rfc3986.txt) parsing as [`NSURLComponents`](../nsurlcomponents.md). This unifies the parsing behaviors of the `NSURL` and `NSURLComponents` APIs. Now, `NSURL` automatically percent- and IDNA-encodes invalid characters to help create a valid URL.
 

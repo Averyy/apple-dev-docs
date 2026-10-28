@@ -19,7 +19,7 @@ func smartInsert(for pasteString: String, replacing charRangeToReplace: NSRange,
 - (void) smartInsertForString:(NSString *) pasteString replacingRange:(NSRange) charRangeToReplace beforeString:(NSString **) beforeString afterString:(NSString **) afterString;
 ```
 
-#### Discussion
+## Discussion
 
 As part of its implementation, this method calls [`smartInsert(afterStringFor:replacing:)`](./smartinsert%28afterstringfor,replacing%29.md) and [`smartInsert(beforeStringFor:replacing:)`](./smartinsert%28beforestringfor,replacing%29.md). To change this method’s behavior, override those two methods instead of this one.
 

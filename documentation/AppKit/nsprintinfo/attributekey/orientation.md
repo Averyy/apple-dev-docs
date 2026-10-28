@@ -19,7 +19,7 @@ static let orientation: NSPrintInfo.AttributeKey
 extern NSPrintInfoAttributeKey const NSPrintOrientation;
 ```
 
-#### Discussion
+## Discussion
 
 `NSPortraitOrientation` or `NSLandscapeOrientation`
 

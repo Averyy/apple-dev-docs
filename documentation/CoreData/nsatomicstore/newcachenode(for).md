@@ -25,15 +25,15 @@ func newCacheNode(for managedObject: NSManagedObject) -> NSAtomicStoreCacheNode
 - (NSAtomicStoreCacheNode *) newCacheNodeForManagedObject:(NSManagedObject *) managedObject;
 ```
 
-#### Return Value
+## Return Value
 
 A new cache node for `managedObject`.
 
-#### Discussion
+## Discussion
 
 This method is invoked by the framework during a save operation, once for each newly-inserted managed object. It should pull information from the managed object and return a cache node containing the information (the node will be registered by the framework).
 
-##### Special Considerations
+### Special Considerations
 
 You must override this method.
 

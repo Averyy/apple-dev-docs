@@ -13,9 +13,9 @@ Cancel enhanced log collection on the device.
 - macOS 27.0+
 - tvOS 27.0+
 
-#### Discussion
+## Discussion
 
-##### Command availability
+### Command availability
 
 |  |  |
 | --- | --- |

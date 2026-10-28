@@ -13,11 +13,11 @@ virtual bool setObject(
  const OSMetaClassBase *anObject);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the addition of `anObject` was successful, `false` if not.
 
-#### Overview
+## Overview
 
 This function moves existing objects from `index` on, in order to accommodate the new object; it does not replace an existing object at `index`. See replaceObject. If successfully added, the object is retained.
 

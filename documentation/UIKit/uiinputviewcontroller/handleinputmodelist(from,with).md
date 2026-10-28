@@ -23,7 +23,7 @@ func handleInputModeList(from view: UIView, with event: UIEvent)
 - (void) handleInputModeListFromView:(UIView *) view withEvent:(UIEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to launch the input mode list from your input view when the user long-presses or swipes up from the view; advance to the next input mode in the list when the user taps the view.
 

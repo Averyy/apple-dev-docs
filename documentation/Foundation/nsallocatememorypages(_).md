@@ -25,7 +25,7 @@ func NSAllocateMemoryPages(_ bytes: Int) -> UnsafeMutableRawPointer
 extern void *NSAllocateMemoryPages(NSUInteger bytes);
 ```
 
-#### Discussion
+## Discussion
 
 Allocates the integral number of pages whose total size is closest to, but not less than, `byteCount`. The allocated pages are guaranteed to be filled with zeros. If the allocation fails, raises `NSInvalidArgumentException`.
 

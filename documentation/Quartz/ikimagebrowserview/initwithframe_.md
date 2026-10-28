@@ -15,7 +15,7 @@ Initializes a newly allocated image browser view with the provided frame rectang
 - (id) initWithFrame:(NSRect) frame;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized object.
 

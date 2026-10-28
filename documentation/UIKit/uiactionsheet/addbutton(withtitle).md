@@ -23,7 +23,7 @@ func addButton(withTitle title: String?) -> Int
 - (NSInteger) addButtonWithTitle:(NSString *) title;
 ```
 
-#### Return Value
+## Return Value
 
 The index of the new button. Button indices start at `0` and increase in the order they are added.
 

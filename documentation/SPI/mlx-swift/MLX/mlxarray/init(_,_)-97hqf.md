@@ -17,7 +17,7 @@ Initializer allowing creation of scalar (0-dimension) `MLXArray` from an `[Int]`
 convenience init(_ value: [Int], _ shape: (some Collection<Int>)? = [Int]?.none)
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 let a = MLXArray([1, 2, 3])
@@ -25,7 +25,7 @@ let a = MLXArray([1, 2, 3])
 
 Note: if the value is out of bounds for an `Int32` the precondition will fail.  If you need an `Int` (`Int64`) scalar, please use [`init(int64:_:)`](./init%28int64,_%29-8xap9.md).
 
-##### See Also
+### See Also
 
 - [Initialization](../initialization.md)
 - [`init(int64:_:)`](./init%28int64,_%29-8xap9.md)

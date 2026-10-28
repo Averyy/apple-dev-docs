@@ -19,7 +19,7 @@ func scaleUnitSquare(to newUnitSize: NSSize)
 - (void) scaleUnitSquareToSize:(NSSize) newUnitSize;
 ```
 
-#### Discussion
+## Discussion
 
 For example, a `newUnitSize` of (0.5, 1.0) causes the view’s horizontal coordinates to be halved, in turn doubling the width of its bounds rectangle. Note that scaling is performed from the origin of the coordinate system, (0.0, 0.0), not the origin of the bounds rectangle; as a result, both the origin and size of the bounds rectangle are changed. The frame rectangle remains unchanged.
 

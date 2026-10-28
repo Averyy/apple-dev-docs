@@ -13,7 +13,7 @@
 kINQUIRY_ECMA_VERSION_Mask = 0x38
 ```
 
-#### Discussion
+## Discussion
 
 Mask for valid bits for ECMA Version.
 

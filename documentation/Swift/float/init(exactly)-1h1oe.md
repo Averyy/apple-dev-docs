@@ -23,7 +23,7 @@ init?<Source>(exactly value: Source) where Source : BinaryInteger
 
 Available when `RawSignificand` conforms to `FixedWidthInteger`.
 
-#### Discussion
+## Discussion
 
 If the given integer cannot be represented exactly, the result is `nil`.
 

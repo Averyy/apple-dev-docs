@@ -25,7 +25,7 @@ func CFFileSecurityCreateCopy(_ allocator: CFAllocator!, _ fileSec: CFFileSecuri
 extern CFFileSecurityRefCFFileSecurityCreateCopy(CFAllocatorRef allocator, CFFileSecurityRef fileSec);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a new `CFFileSecurityRef` object, or `NULL` if an error occurred. Ownership follows the Create Rule.
 

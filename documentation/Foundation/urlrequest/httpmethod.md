@@ -25,7 +25,7 @@ var httpMethod: String? { get set }
 
 - [Uploading data to a website](../uploading-data-to-a-website.md)
 
-#### Discussion
+## Discussion
 
 The default HTTP method is “GET”.
 

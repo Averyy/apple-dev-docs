@@ -15,7 +15,7 @@ Returns the version number for a CFXMLNode object.
 extern CFIndex CFXMLNodeGetVersion(CFXMLNodeRef node);
 ```
 
-#### Return Value
+## Return Value
 
 The version number of `node`.
 

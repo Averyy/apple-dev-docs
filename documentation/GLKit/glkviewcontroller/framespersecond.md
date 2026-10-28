@@ -23,7 +23,7 @@ var framesPerSecond: Int { get }
 @property (nonatomic, readonly) NSInteger framesPerSecond;
 ```
 
-#### Discussion
+## Discussion
 
 The view controller attempts to maintain this frame rate, but it may still drop frames if the per-frame processing performed by your application takes more time than the time between frames.
 

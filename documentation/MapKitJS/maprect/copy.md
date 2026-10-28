@@ -15,7 +15,7 @@ Returns a copy of a map rectangle.
 copy(): MapRect;
 ```
 
-#### Return Value
+## Return Value
 
 A MapRect object that is a copy of the original.
 

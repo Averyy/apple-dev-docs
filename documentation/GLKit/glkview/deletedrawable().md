@@ -23,7 +23,7 @@ func deleteDrawable()
 - (void) deleteDrawable;
 ```
 
-#### Discussion
+## Discussion
 
 The drawable object consumes a significant amount of memory, so whenever the view is not going to be used to display content for a significant period of time, your application should call this method to dispose of the underlying memory. For example, your application might call this method after hiding a view or before transitioning to another screen of content.
 

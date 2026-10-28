@@ -39,7 +39,7 @@ nonisolated
 init<S>(_ title: S, sortUsing comparator: Sort, @ContentBuilder content: @escaping (RowValue) -> Content) where S : StringProtocol
 ```
 
-#### Discussion
+## Discussion
 
 This initializer creates a [`Text`](../text.md) view on your behalf. For more information about localizing strings, see[`Text`](../text.md).
 

@@ -13,7 +13,7 @@
 kIOStorageAccessExclusiveLock = 0x08
 ```
 
-#### Discussion
+## Discussion
 
 Exclusive access is requested.
 

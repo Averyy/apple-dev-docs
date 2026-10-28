@@ -24,7 +24,7 @@ class GKBehavior
 @interface GKBehavior : NSObject
 ```
 
-#### Overview
+## Overview
 
 By combining multiple goals ([`GKGoal`](./gkgoal.md) objects) you can create complex behavior, such as groups of agents  ([`GKAgent`](./gkagent.md) objects) that move together naturally. To assign a set of goals to an agent, use its [`behavior`](./gkagent/behavior.md) property.
 

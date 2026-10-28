@@ -19,7 +19,7 @@ static let restorePurchase: ASAuthorizationCustomMethod
 extern ASAuthorizationCustomMethod const ASAuthorizationCustomMethodRestorePurchase;
 ```
 
-#### Discussion
+## Discussion
 
 This kind of authorization method displays a Restore Purchase button.
 

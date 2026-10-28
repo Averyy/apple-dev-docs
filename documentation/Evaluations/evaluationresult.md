@@ -26,7 +26,7 @@ struct EvaluationResult
 - [Evaluating language model responses](./evaluating-language-model-responses.md)
 - [Designing effective evaluations](./designing-effective-evaluations.md)
 
-#### Overview
+## Overview
 
 A structure that contains the summary and detailed results from an evaluation run.
 

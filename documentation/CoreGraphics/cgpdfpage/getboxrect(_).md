@@ -25,11 +25,11 @@ func getBoxRect(_ box: CGPDFBox) -> CGRect
 extern CGRect CGPDFPageGetBoxRect(CGPDFPageRef page, CGPDFBox box);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the rectangle associated with the type of box specified by the `box` parameter in the specified page.
 
-#### Discussion
+## Discussion
 
 Returns the rectangle associated with the specified box in the specified page. This is the value of the corresponding entry (such as `/MediaBox`, `/ArtBox`, and so on) in the page’s dictionary.
 

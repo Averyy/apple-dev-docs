@@ -20,7 +20,7 @@ Returns the source CMReadySampleBuffer for the given track ID.
 func sourceReadySampleBuffer(byTrackID trackID: CMPersistentTrackID) -> CMReadySampleBuffer<CMSampleBuffer.DynamicContent>?
 ```
 
-#### Return Value
+## Return Value
 
 The source CMReadySampleBuffer for the given track ID.
 

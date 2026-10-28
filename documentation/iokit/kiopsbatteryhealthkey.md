@@ -16,7 +16,7 @@ CFDictionary key for the current power source's "health" estimate.
 #define kIOPSBatteryHealthKey
 ```
 
-#### Discussion
+## Discussion
 
 - Apple-defined battery power sources will publish this key.
 - Use value [`kIOPSGoodValue`](./kiopsgoodvalue.md) to describe a well-performing power source,

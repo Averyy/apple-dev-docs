@@ -25,7 +25,7 @@ func cancel()
 - (void) cancel;
 ```
 
-#### Discussion
+## Discussion
 
 This method invokes the completion handler with the error code [`LPError.Code.metadataFetchCancelled`](../lperror/code/metadatafetchcancelled.md) if the request hasn’t already completed.
 

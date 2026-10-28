@@ -22,7 +22,7 @@ The schema that maps your app’s model classes to the associated data in the ap
 final let schema: Schema
 ```
 
-#### Discussion
+## Discussion
 
 This property provides a reference to the schema you specified when calling one the container’s initializers.
 

@@ -15,7 +15,7 @@ Check if the field of view is valid.
 extern bool ar_visual_fidelity_data_is_field_of_view_valid(ar_visual_fidelity_data_t fidelity_data);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the expected field of view meets requirements, `false` if any portion is invalid.
 

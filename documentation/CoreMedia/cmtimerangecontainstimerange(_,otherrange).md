@@ -25,7 +25,7 @@ func CMTimeRangeContainsTimeRange(_ range: CMTimeRange, otherRange: CMTimeRange)
 extern Boolean CMTimeRangeContainsTimeRange(CMTimeRange range, CMTimeRange otherRange);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if `range1` contains `range2`; otherwise, [`false`](../Swift/false.md).
 

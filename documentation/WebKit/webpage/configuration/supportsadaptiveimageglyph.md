@@ -20,7 +20,7 @@ Indicates whether insertion of adaptive image glyphs is allowed.
 var supportsAdaptiveImageGlyph: Bool
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `false`. If `false`, adaptive image glyphs are inserted as regular images. If `true`, they are inserted with the full adaptive sizing behavior.
 

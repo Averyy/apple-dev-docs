@@ -21,7 +21,7 @@ Creates a stroked symbol shape by inner-stroking the basic symbol shape.
 func strokeBorder(lineWidth: CGFloat = 1) -> some ChartSymbolShape
 ```
 
-#### Return Value
+## Return Value
 
 A symbol shape that strokes the shape of `self`.
 

@@ -24,7 +24,7 @@ let CNSocialProfileURLStringKey: String
 extern NSString * const CNSocialProfileURLStringKey;
 ```
 
-#### Discussion
+## Discussion
 
 This key takes a string value.
 

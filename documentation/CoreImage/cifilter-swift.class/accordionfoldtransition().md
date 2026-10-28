@@ -24,11 +24,11 @@ class func accordionFoldTransition() -> any CIFilter & CIAccordionFoldTransition
 + (CIFilter<CIAccordionFoldTransition> *) accordionFoldTransitionFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The transition image.
 
-#### Discussion
+## Discussion
 
 This method applies the accordion fold transition filter to an image. The effect transitions from one image to another by unfolding and crossfading.
 

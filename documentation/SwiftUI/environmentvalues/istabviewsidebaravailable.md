@@ -21,7 +21,7 @@ A Boolean value that indicates whether a tab sidebar is available within the con
 var isTabViewSidebarAvailable: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value is only meaningful inside the content views of a [`TabView`](../tabview.md) that uses a sidebar-capable style such as [`sidebarAdaptable`](../tabviewstyle/sidebaradaptable.md). Reading it from a view that is not nested inside a `TabView`’s content — for example, a view above the `TabView` in the hierarchy — returns `false`.
 

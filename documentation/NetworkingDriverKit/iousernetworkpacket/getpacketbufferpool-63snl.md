@@ -15,7 +15,7 @@ Gets the memory buffer that contains the pakcet.
 virtual kern_return_t GetPacketBufferPool(IOUserNetworkPacketBufferPool **pool) const;
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` on success, or another value if an error occurred.
 

@@ -13,11 +13,11 @@
 errno_t mbuf_clear_csum_requested(mbuf_t mbuf);
 ```
 
-#### Return Value
+## Return Value
 
 0 upon success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 This function clears the checksum request flags.
 

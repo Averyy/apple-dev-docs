@@ -5,7 +5,7 @@
 
 Validate whether your code causes expected events to happen.
 
-#### Overview
+## Overview
 
 The testing library integrates with Swift concurrency, meaning that in many situations you can test asynchronous code using standard Swift features.  Mark your test function as `async` and, in the function body, `await` any asynchronous interactions:
 
@@ -18,7 +18,7 @@ The testing library integrates with Swift concurrency, meaning that in many situ
 
 In more complex situations you can use [`Confirmation`](./confirmation.md) to discover whether an expected event happens.
 
-##### Confirm that an event happens
+### Confirm that an event happens
 
 Call [`confirmation(_:expectedCount:isolation:sourceLocation:_:)`](./confirmation%28_,expectedcount,isolation,sourcelocation,_%29-5mqz2.md) in your asynchronous test function to create a `Confirmation` for the expected event. In the trailing closure parameter, call the code under test. Swift Testing passes a `Confirmation` as the parameter to the closure, which you call as a function in the event handler for the code under test when the event you’re testing for occurs:
 
@@ -61,7 +61,7 @@ In this example, there may be zero customers or up to (but not including) 1,000 
 | `1 ... 5` | If an event must occur at least once, but not more than five times |
 | `0 ..< 100` | If an event may or may not occur, but *must not* occur more than 99 times |
 
-##### Confirm that an event doesn’t happen
+### Confirm that an event doesn’t happen
 
 To validate that a particular event doesn’t occur during a test, create a `Confirmation` with an expected count of `0`:
 

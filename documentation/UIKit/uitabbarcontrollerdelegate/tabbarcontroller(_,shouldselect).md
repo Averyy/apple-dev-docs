@@ -23,11 +23,11 @@ optional func tabBarController(_ tabBarController: UITabBarController, shouldSel
 - (BOOL) tabBarController:(UITabBarController *) tabBarController shouldSelectViewController:(UIViewController *) viewController;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the view controller’s tab should be selected or [`false`](../../Swift/false.md) if the current tab should remain active.
 
-#### Discussion
+## Discussion
 
 The tab bar controller calls this method in response to the user tapping a tab bar item. You can use this method to dynamically decide whether a given tab should be made the active tab.
 

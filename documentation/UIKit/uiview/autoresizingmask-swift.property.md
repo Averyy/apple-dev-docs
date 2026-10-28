@@ -23,7 +23,7 @@ var autoresizingMask: UIView.AutoresizingMask { get set }
 @property (nonatomic) UIViewAutoresizing autoresizingMask;
 ```
 
-#### Discussion
+## Discussion
 
 When a view’s bounds change, that view automatically resizes its subviews according to each subview’s autoresizing mask. You specify the value of this mask by combining the constants described in [`UIView.AutoresizingMask`](./autoresizingmask-swift.struct.md) using the C bitwise OR operator. Combining these constants lets you specify which dimensions of the view should grow or shrink relative to the superview. The default value of this property is [`UIViewAutoresizingNone`](../uiviewautoresizing/uiviewautoresizingnone.md), which indicates that the view should not be resized at all.
 

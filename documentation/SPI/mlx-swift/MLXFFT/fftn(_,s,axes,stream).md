@@ -19,11 +19,11 @@ n-dimensional discrete Fourier Transform.
 func fftn(_ array: MLXArray, s: [Int]? = nil, axes: [Int]? = nil, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 DFT of the input along the given axes
 
-##### See Also
+### See Also
 
 - [MLXFFT](./MLXFFT.md)
 

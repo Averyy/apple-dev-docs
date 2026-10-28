@@ -21,7 +21,7 @@ A type that represents Windows icon data.
 static var ico: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.microsoft.ico`.
 

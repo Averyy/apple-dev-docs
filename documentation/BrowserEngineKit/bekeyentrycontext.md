@@ -22,7 +22,7 @@ class BEKeyEntryContext
 @interface BEKeyEntryContext : NSObject
 ```
 
-#### Overview
+## Overview
 
 If the key entry occurs within the context of a composed input mode, for example Chinese, Japanese, or Korean input, set [`shouldEvaluateForInputSystemHandling`](./bekeyentrycontext/shouldevaluateforinputsystemhandling.md) to `true`. The text system uses the document’s marked text to combine multiple key events into a single input character.
 

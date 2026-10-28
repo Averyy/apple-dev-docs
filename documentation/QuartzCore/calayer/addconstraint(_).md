@@ -20,7 +20,7 @@ func addConstraint(_ c: CAConstraint)
 - (void) addConstraint:(CAConstraint *) c;
 ```
 
-#### Discussion
+## Discussion
 
 In macOS, you typically add constraints to a layer to manage the size and position of that layer’s sublayers. Before constraints can be applied, you must also assign a [`CAConstraintLayoutManager`](../caconstraintlayoutmanager.md) object to the [`layoutManager`](./layoutmanager.md) property of the layer. For more information about managing layer-based constraints, see [Core Animation Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004514).
 

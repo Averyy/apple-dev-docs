@@ -25,11 +25,11 @@ class func animate(withNormalTextures textures: [SKTexture], timePerFrame sec: T
 + (SKAction *) animateWithNormalTextures:(NSArray<SKTexture *> *) textures timePerFrame:(NSTimeInterval) sec;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 This action can only be executed by an [`SKSpriteNode`](../skspritenode.md) object. When the action executes, the sprite’s [`normalTexture`](../skspritenode/normaltexture.md) property animates through the array of textures. The sprite’s [`normalTexture`](../skspritenode/normaltexture.md) property is changed to the next texture in the array. The action then pauses for the specified time before continuing. The action continues until it has finished animating through all of the textures in the array. The total duration of the action is the number of textures multiplied by the frame interval.
 

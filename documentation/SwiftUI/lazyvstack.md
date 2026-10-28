@@ -29,7 +29,7 @@ struct LazyVStack<Content> where Content : View
 - [Creating performant scrollable stacks](./creating-performant-scrollable-stacks.md)
 - [Displaying data in lists](./displaying-data-in-lists.md)
 
-#### Overview
+## Overview
 
 The stack is “lazy,” in that the stack view doesn’t create items until it needs to render them onscreen.
 

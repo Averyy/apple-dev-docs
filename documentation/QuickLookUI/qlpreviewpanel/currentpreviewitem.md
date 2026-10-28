@@ -19,7 +19,7 @@ var currentPreviewItem: (any QLPreviewItem)! { get }
 @property (readonly) id<QLPreviewItem> currentPreviewItem;
 ```
 
-#### Discussion
+## Discussion
 
 The value is `nil` if there’s no current preview item.
 

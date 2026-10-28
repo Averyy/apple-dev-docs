@@ -20,11 +20,11 @@ func AudioObjectAddPropertyListener(_ inObjectID: AudioObjectID, _ inAddress: Un
 extern OSStatus AudioObjectAddPropertyListener(AudioObjectID inObjectID, const AudioObjectPropertyAddress *inAddress, AudioObjectPropertyListenerProc inListener, void *inClientData);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus indicating success or failure.
 
-#### Discussion
+## Discussion
 
 Registers the given AudioObjectPropertyListenerProc to receive notifications when the given properties change.
 

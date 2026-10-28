@@ -15,7 +15,7 @@ The aLaw 2:1 format.
 ALaw
 ```
 
-#### Discussion
+## Discussion
 
 This format uses no flags.
 

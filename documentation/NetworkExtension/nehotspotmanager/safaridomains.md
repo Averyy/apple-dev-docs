@@ -18,7 +18,7 @@ An array of domain strings for use with Safari-based hotspot authentication.
 final var safariDomains: [String] { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The containing app can specify these domains when it intends to use the [`SFSafariViewController`](../../SafariServices/sfsafariviewcontroller.md) class for interacting with the hotspot service provider’s web application during hotspot authentication.
 

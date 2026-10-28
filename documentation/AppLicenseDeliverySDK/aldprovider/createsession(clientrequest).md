@@ -16,7 +16,7 @@ func createSession(clientRequest: [UInt8]) throws -> ALDSession
 
 - [Licensing alternative distribution apps](../licensing-alternative-distribution-apps.md)
 
-#### Return Value
+## Return Value
 
 An ALD session on success, or nil when fails
 

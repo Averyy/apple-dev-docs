@@ -8,7 +8,7 @@ When porting your Windows game code to macOS, it’s important to find platform-
 
 Setting up a Mac to build your Windows code remotely requires changes to both the Mac and your PC. On the Mac, you install the tools to build your code, and configure the system to support remote connections from your PC. On your PC, you configure your Microsoft Visual Studio environment to connect to the Mac and initiate remote builds. To build on both platforms, you must have a CMake-based project, which provides the instructions that both systems need to build your code.
 
-#### Configure your Mac as the remote builder
+## Configure your Mac as the remote builder
 
 To remotely build projects on your Mac, verify that your Mac is running macOS Sequoia 15.4 or later, and has Xcode 26 or later installed. Perform this verification in the Terminal app on your Mac using the following command:
 
@@ -26,7 +26,7 @@ In addition to verifying the base software installation:
 
 > **Note**: If your network uses a firewall, make sure it allows Remote Management and Remote Login services, as well as TCP port forwarding over SSH. Microsoft Visual Studio requires this configuration to copy files over the network.
 
-#### Configure Microsoft Visual Studio to connect to your Mac
+## Configure Microsoft Visual Studio to connect to your Mac
 
 With your Mac environment set up, switch to your Microsoft Windows PC to download and install Microsoft Visual Studio 2022 17.14 or later. Using the Visual Studio Installer tool, install the “Linux and embedded development with C++” workload, which allows you to target and run on remote hosts. You might also want to install “Game Development with C++”.
 
@@ -54,7 +54,7 @@ Your Mac now appears as a new run destination in Visual Studio:
 
 If the entry is missing from this list, try restarting Visual Studio. For more details, see [Connect to your remote Linux system by using Visual Studio](https://learn.microsoft.com/en-us/cpp/linux/connect-to-your-remote-linux-computer?view=msvc-170).
 
-#### Create a build configuration file for CMake
+## Create a build configuration file for CMake
 
 To initiate builds from your PC, you need to provide CMake with a build file and debugger settings it can use for the macOS version of your game. Create this file on your PC:
 
@@ -111,7 +111,7 @@ Add the following contents to the `CMakePresets.json` file you created:
 
 > **Note**: The Game Porting Toolkit includes a project “gptk-sample” that includes an example `CMakeLists.txt` file ready for remote building on a target Mac from your PC. Use it to explore building a game remotely from within Visual Studio.
 
-#### Set up the default debugger environment
+## Set up the default debugger environment
 
 To debug on your Mac, upgrade to Visual Studio 2022 17.14.3 or later and configure the default debugger with the following steps:
 
@@ -125,7 +125,7 @@ To debug on your Mac, upgrade to Visual Studio 2022 17.14.3 or later and configu
 8. Click OK to save and close.
 9. Choose Project > Configure to reconfigure your project.
 
-#### Build and run the game project remotely on your Mac
+## Build and run the game project remotely on your Mac
 
 After you configure a remote Mac and set up the build configuration files you need, you can initiate builds from your PC. In the Visual Studio run bar, select the remote build destination, the macOS build configuration, and the target that matches the executable name in the `CMakeLists.txt` file you created. The following screenshot shows the IP address of a connected Mac, the macOS build configuration settings, and the `gptksample` target.
 
@@ -141,7 +141,7 @@ You can dramatically accelerate the remote building process by configuring CMake
 2. Add the `-j` option to the “Build command arguments”.
 3. Restart Visual Studio to pick up the new CMake settings.
 
-#### Visualize the Mac desktop remotely
+## Visualize the Mac desktop remotely
 
 Depending on your setup, you may need to access the desktop of your Mac remotely to visualize your game or app running. macOS comes with a built-in VNC server that enables you to remotely log in and view its desktop.
 
@@ -149,7 +149,7 @@ While Microsoft’s Remote Desktop Client doesn’t support the VNC protocol, se
 
 > **Note**: Visualizing a desktop remotely over the network may incur latency and compression artifacts. Additionally, the VNC protocol doesn’t support game controllers. If possible, connect a physical display to your Mac to visualize your game instead.
 
-#### Debug any connectivity issues
+## Debug any connectivity issues
 
 If a remote build fails, it could be the result of connectivity issues rather than an actual problem with your code. Verify that connectivity isn’t the issue by performing the following steps in Visual Studio on your PC:
 

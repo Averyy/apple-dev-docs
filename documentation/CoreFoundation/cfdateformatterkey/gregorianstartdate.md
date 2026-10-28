@@ -25,7 +25,7 @@ static let gregorianStartDate: CFDateFormatterKey!
 extern CFDateFormatterKey const kCFDateFormatterGregorianStartDate;
 ```
 
-#### Discussion
+## Discussion
 
 This is used to specify the start date for the Gregorian calendar switch from the Julian calendar. Different locales switched at different times. Normally you should just accept the locale’s default date for the switch.
 

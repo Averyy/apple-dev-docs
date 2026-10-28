@@ -19,11 +19,11 @@ func IOBluetoothIsFileAppleDesignatedPIMData(_ inFileName: String!) -> Bool
 extern Boolean IOBluetoothIsFileAppleDesignatedPIMData(NSString *inFileName);
 ```
 
-#### Return Value
+## Return Value
 
 Yes or no, is it Apple-designated PIM data?
 
-#### Discussion
+## Discussion
 
 Not much to talk about.
 

@@ -19,7 +19,7 @@ func stopMonitoringAllEvents() throws
 - (BOOL) stopMonitoringAllEventsAndReturnError:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method when you no longer want to receive any Wi-Fi notifications from the client.
 

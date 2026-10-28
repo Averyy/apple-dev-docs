@@ -25,7 +25,7 @@ class NSDateComponents
 @interface NSDateComponents : NSObject
 ```
 
-#### Overview
+## Overview
 
 In Swift, this object bridges to [`DateComponents`](./datecomponents.md); use [`NSDateComponents`](./nsdatecomponents.md) when you need reference semantics or other Foundation-specific behavior.
 

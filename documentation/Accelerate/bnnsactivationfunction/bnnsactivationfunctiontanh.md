@@ -21,7 +21,7 @@ An activation function that returns the hyperbolic tangent of its input.
 BNNSActivationFunctionTanh
 ```
 
-#### Discussion
+## Discussion
 
 This constant defines an activation function that returns values using the following operation:
 

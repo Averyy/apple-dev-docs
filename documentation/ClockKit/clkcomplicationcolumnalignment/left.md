@@ -19,7 +19,7 @@ static var left: CLKComplicationColumnAlignment { get }
 CLKComplicationColumnAlignmentLeft
 ```
 
-#### Discussion
+## Discussion
 
 Use [`CLKComplicationColumnAlignment.leading`](./leading.md) instead.
 

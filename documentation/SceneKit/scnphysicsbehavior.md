@@ -25,7 +25,7 @@ class SCNPhysicsBehavior
 @interface SCNPhysicsBehavior : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`SCNPhysicsBehavior`](./scnphysicsbehavior.md) object defines a high-level behavior for one or more physics bodies, modifying the results of the physics simulation. Behaviors include joints that connect multiple bodies so they move together and vehicle definitions that cause a body to roll like a car. You never use this class directly; instead, you instantiate one of the subclasses that defines the kind of behavior you want to add to your physics world. describes the kinds of behaviors you can create in SceneKit.
 

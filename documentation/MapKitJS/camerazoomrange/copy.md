@@ -15,7 +15,7 @@ Returns a copy of the camera zoom region.
 copy(): CameraZoomRange;
 ```
 
-#### Return Value
+## Return Value
 
 A [`CameraZoomRange`](../camerazoomrange.md) object that is a copy of the original.
 

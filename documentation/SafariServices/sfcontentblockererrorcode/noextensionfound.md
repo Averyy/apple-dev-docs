@@ -19,7 +19,7 @@ case noExtensionFound
 SFContentBlockerNoExtensionFound
 ```
 
-#### Discussion
+## Discussion
 
 A Content Blocker extension with the specified bundle identifier was not found, or the bundle identifier specified an extension that was not owned by you.
 

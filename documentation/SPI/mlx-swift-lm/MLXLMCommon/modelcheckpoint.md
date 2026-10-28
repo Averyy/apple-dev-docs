@@ -21,7 +21,7 @@ struct ModelCheckpoint
 
 - [Model Compatibility](./model-compatibility.md)
 
-#### Overview
+## Overview
 
 Models can normalize a checkpoint in [`prepareCheckpoint(_:)`](./baselanguagemodel/preparecheckpoint%28_%29.md) before quantization and strict parameter validation. Name mappings apply to tensors and layer settings together, so a renamed layer keeps its declared precision.
 

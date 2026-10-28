@@ -25,7 +25,7 @@ case success
 INAppendToNoteIntentResponseCodeSuccess
 ```
 
-#### Discussion
+## Discussion
 
 Use this code after updating the note successfully. Your response should contain the details of the note that you updated.
 

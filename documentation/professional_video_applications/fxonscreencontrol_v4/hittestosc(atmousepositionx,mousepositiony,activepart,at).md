@@ -20,7 +20,7 @@ func hitTestOSC(atMousePositionX mousePositionX: Double, mousePositionY: Double,
 - (void) hitTestOSCAtMousePositionX:(double) mousePositionX mousePositionY:(double) mousePositionY activePart:(NSInteger *) activePart atTime:(CMTime) time;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called by the host to determine which part of your controls were hit by the mouse. Return a constant that represents a part number for your onscreen control in the activePart parameter. It will be sent to you in the `-draw`, `-mouse`, and `-key` methods so you can handle those events properly.
 

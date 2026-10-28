@@ -18,7 +18,7 @@ static UInt32 simpleWriter(
  IOFWRequestRefConreqrefcon);
 ```
 
-#### Return Value
+## Return Value
 
 UIn32 returns kFWResponseComplete on success
 

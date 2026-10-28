@@ -17,11 +17,11 @@ Returns an array of suggested spellings for the misspelled word.
 - (NSArray *) guessesForWord:(NSString *) word;
 ```
 
-#### Return Value
+## Return Value
 
 An array of suggested spellings for the word.
 
-#### Discussion
+## Discussion
 
 If `word` contains all capital letters, or its first letter is capitalized, the suggested words are capitalized in the same way.
 

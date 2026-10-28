@@ -13,11 +13,11 @@
 errno_t ifnet_list_get(ifnet_family_t family, ifnet_t **interfaces, uint32_t *count);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Get a list of attached interfaces. List will be set to point to an array allocated by ifnet_list_get. The interfaces are refcounted and the counts will be incremented before the function returns. The list of interfaces must be freed using ifnet_list_free.
 

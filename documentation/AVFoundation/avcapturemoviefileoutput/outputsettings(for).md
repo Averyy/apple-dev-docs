@@ -23,11 +23,11 @@ func outputSettings(for connection: AVCaptureConnection) -> [String : Any]
 - (NSDictionary<NSString *,id> *) outputSettingsForConnection:(AVCaptureConnection *) connection;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary of output settings.
 
-#### Discussion
+## Discussion
 
 If the returned value is an empty dictionary, the format of the media from the connection isn’t changed before writing to the file.
 

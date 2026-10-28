@@ -19,7 +19,7 @@ func cachedScanResults() -> Set<CWNetwork>?
 - (NSSet<CWNetwork *> *) cachedScanResults;
 ```
 
-#### Discussion
+## Discussion
 
 Returns *nil* in the case of an error.
 

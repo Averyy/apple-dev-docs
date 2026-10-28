@@ -23,7 +23,7 @@ func setNeedsUpdateOfSupportedInterfaceOrientations()
 - (void) setNeedsUpdateOfSupportedInterfaceOrientations;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this method animates any changes to orientation. To perform a nonanimated update, call this method from [`performWithoutAnimation(_:)`](../uiview/performwithoutanimation%28_%29.md).
 

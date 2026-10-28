@@ -19,11 +19,11 @@ func SKIndexAddDocument(_ inIndex: SKIndex!, _ inDocument: SKDocument!, _ inMIME
 Boolean SKIndexAddDocument(SKIndexRef inIndex, SKDocumentRef inDocument, CFStringRef inMIMETypeHint, Boolean inCanReplace);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value of `true` on success, or `false` on failure. Also returns `false` if the document has an entry in the index and `inCanReplace` is set to `false`.
 
-#### Discussion
+## Discussion
 
  The document scheme must be of type “`file`” to use this function. If it’s not, call [`SKIndexAddDocumentWithText(_:_:_:_:)`](./api-1444518-skindexadddocumentwithtext.md) instead. For more information on schemes, see [http://www.iana.org/assignments/uri-schemes.html](http://www.iana.org/assignments/uri-schemes.html).
 
@@ -37,7 +37,7 @@ Search Kit is thread-safe. You can use separate indexing and searching threads. 
 
 A single Search Kit index can hold up to 4 billion document URL objects and their associated textual content.
 
-##### Special Considerations
+### Special Considerations
 
 In the current implementation of Search Kit, some functions do not provide expected results unless you follow `SKIndexAddDocument` with a call to [`SKIndexFlush(_:)`](./api-1450667-skindexflush.md). The affected functions include [`SKIndexGetDocumentCount(_:)`](./api-1449093-skindexgetdocumentcount.md), [`SKIndexGetDocumentTermCount(_:_:)`](./api-1448341-skindexgetdocumenttermcount.md), [`SKIndexGetDocumentTermFrequency(_:_:_:)`](./api-1447537-skindexgetdocumenttermfrequency.md), and [`SKIndexGetTermDocumentCount(_:_:)`](./api-1444015-skindexgettermdocumentcount.md). However, in typical use this won’t be an issue, because applications call these functions after a search, and you must call `SKIndexFlush` before a search.
 

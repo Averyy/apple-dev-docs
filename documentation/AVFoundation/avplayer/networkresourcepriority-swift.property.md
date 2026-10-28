@@ -25,7 +25,7 @@ var networkResourcePriority: AVPlayer.NetworkResourcePriority { get set }
 @property (nonatomic) AVPlayerNetworkResourcePriority networkResourcePriority;
 ```
 
-#### Discussion
+## Discussion
 
 This value determines the priority of the player during network resource allocation among all other players within the same application process. The default value for this is AVPlayerNetworkResourcePriorityDefault.
 

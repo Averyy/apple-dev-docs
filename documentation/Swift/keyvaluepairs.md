@@ -22,7 +22,7 @@ A lightweight collection of key-value pairs.
 struct KeyValuePairs<Key, Value>
 ```
 
-#### Overview
+## Overview
 
 Use a `KeyValuePairs` instance when you need an ordered collection of key-value pairs and don’t require the fast key lookup that the `Dictionary` type provides. Unlike key-value pairs in a true dictionary, neither the key nor the value of a `KeyValuePairs` instance must conform to the `Hashable` protocol.
 
@@ -50,7 +50,7 @@ if let index = recordTimes.firstIndex(where: { $0.0 == runner }) {
 // Prints "Marlies Gohr set a 100m record of 10.81 seconds."
 ```
 
-#### Key-Value Pairs as a Function Parameter
+## Key-Value Pairs as a Function Parameter
 
 When calling a function with a `KeyValuePairs` parameter, you can pass a Swift dictionary literal without causing a `Dictionary` to be created. This capability can be especially important when the order of elements in the literal is significant.
 

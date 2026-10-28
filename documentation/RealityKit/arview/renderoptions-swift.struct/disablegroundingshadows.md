@@ -17,7 +17,7 @@ Disable rendering of ambient occlusion and shadows that ground objects in an AR 
 static let disableGroundingShadows: ARView.RenderOptions
 ```
 
-#### Discussion
+## Discussion
 
 Objects in the real world cast a grounding shadow onto adjacent surfaces due to ambient light. This provides viewers with a visual cue that the object is in close proximity to the surface. Objects without a grounding shadow appear disconnected from their environment. To create the same visual cue for virtual objects, RealityKit provides a grounding shadow effect.
 

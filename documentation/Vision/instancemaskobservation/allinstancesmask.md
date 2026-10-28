@@ -21,7 +21,7 @@ The resulting mask that represents all instances.
 let allInstancesMask: PixelBufferObservation
 ```
 
-#### Discussion
+## Discussion
 
 A pixel can only correspond to one instance. A `0` represents the background, and all other values represent the indices of the instances.
 

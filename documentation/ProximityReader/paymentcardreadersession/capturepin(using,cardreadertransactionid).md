@@ -21,11 +21,11 @@ func capturePIN(using token: PaymentCardReaderSession.PINToken, cardReaderTransa
 
 - [Adding support for Tap to Pay on iPhone to your app](../adding-support-for-tap-to-pay-on-iphone-to-your-app.md)
 
-#### Return Value
+## Return Value
 
 [`PaymentCardReadResult`](../paymentcardreadresult.md) if the PIN was successfully captured.
 
-#### Discussion
+## Discussion
 
 Call this method when the payment card issuer requests a PIN for the current transaction. When you call this method, the system displays UI with instructions on what the person needs to do. This UI remains onscreen until the system reads the person’s PIN, you cancel the operation, or an error occurs.
 

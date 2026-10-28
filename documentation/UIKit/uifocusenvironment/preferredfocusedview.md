@@ -24,7 +24,7 @@ weak optional var preferredFocusedView: UIView? { get }
 @property (nonatomic, weak, readonly, nullable) UIView * preferredFocusedView;
 ```
 
-#### Discussion
+## Discussion
 
 Since [`UIView`](../uiview.md) conforms to [`UIFocusEnvironment`](../uifocusenvironment.md), any view returned from this property also has a preferred focused view. This creates a linked-list of views called the *preferred focus chain*. When focus updates to a new view, the focus engine will actually update focus to the deepest, focusable view in that new view’s preferred focus chain. Similarly, when setting initial focus, such as at application launch, the initial focused view is found by following the preferred focus chain from the root window.
 

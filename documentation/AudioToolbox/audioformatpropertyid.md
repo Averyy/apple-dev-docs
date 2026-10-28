@@ -24,7 +24,7 @@ typealias AudioFormatPropertyID = UInt32
 typedef UInt32 AudioFormatPropertyID;
 ```
 
-#### Discussion
+## Discussion
 
 See [Audio Format Property Identifiers](./api-1577853-audio-format-property-identifier.md).
 

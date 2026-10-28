@@ -19,7 +19,7 @@ var rowTypeKeyPath: String { get set }
 @property (copy) NSString * rowTypeKeyPath;
 ```
 
-#### Discussion
+## Discussion
 
 The key path is used to get the row type in the “rows” binding. The corresponding property should be a number that specifies an `NSRuleEditorRowType` value (see `Row Types`).
 

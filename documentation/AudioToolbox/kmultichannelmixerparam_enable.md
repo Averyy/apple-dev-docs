@@ -24,7 +24,7 @@ var kMultiChannelMixerParam_Enable: AudioUnitParameterID { get }
 kMultiChannelMixerParam_Enable
 ```
 
-#### Discussion
+## Discussion
 
 Global scope. The value is a boolean: use `0` to disable the channel or `1` to enable the channel. The default value is `1`.
 

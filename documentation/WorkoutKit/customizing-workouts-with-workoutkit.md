@@ -12,11 +12,11 @@ Create, preview, and sync workouts for use in the Workout app on Apple Watch.
 - Mac Catalyst 18.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC23 session 10016: [Build custom workouts with WorkoutKit](https://developer.apple.com/wwdc23/10016) and WWDC24 session 10084: [Build custom swimming workouts with WorkoutKit](https://developer.apple.com/wwdc24/10084).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 Before you run the sample code project in Xcode:
 
@@ -24,7 +24,7 @@ Before you run the sample code project in Xcode:
 2. Select the top-level project.
 3. Click the target and select a team in the Signing & Capabilities pane.
 
-##### Plan a workout and track its progress
+### Plan a workout and track its progress
 
 To run the sample code project in Xcode:
 

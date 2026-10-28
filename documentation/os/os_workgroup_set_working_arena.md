@@ -21,11 +21,11 @@ Distributes a block of managed memory to the threads of a workgroup.
 extern int os_workgroup_set_working_arena(os_workgroup_t wg, void *arena, uint32_t max_workers, os_workgroup_working_arena_destructor_t destructor);
 ```
 
-#### Return Value
+## Return Value
 
 `0` on success or an error code if the function encountered a problem. For example, the function returns `ENOMEM` if it is unable to allocate the memory it needs to manage the arena data.
 
-#### Discussion
+## Discussion
 
 Use this function to distribute a block of memory that you created to the threads of the workgroup. Configure the block of memory with the work that you want to those threads to perform. Call this function before you start an interval or parallel workgroup, and before you join any threads to the workgroup.
 

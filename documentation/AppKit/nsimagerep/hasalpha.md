@@ -19,7 +19,7 @@ var hasAlpha: Bool { get set }
 @property (getter=hasAlpha) BOOL alpha;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the receiver has a known alpha channel; otherwise, [`false`](../../Swift/false.md).
 

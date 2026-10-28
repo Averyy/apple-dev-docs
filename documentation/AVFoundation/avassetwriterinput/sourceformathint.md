@@ -24,7 +24,7 @@ var sourceFormatHint: CMFormatDescription? { get }
 @property (nonatomic, readonly, nullable) CMFormatDescriptionRef sourceFormatHint;
 ```
 
-#### Discussion
+## Discussion
 
 An input may use this hint to fill in missing output settings or perform additional upfront validation of samples.
 

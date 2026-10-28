@@ -25,7 +25,7 @@ var audioFileSettings: [String : Any] { get }
 @property (nonatomic, readonly) NSDictionary<NSString *,id> * audioFileSettings;
 ```
 
-#### Discussion
+## Discussion
 
 If you want to generate speech and save it as an audio file to share or play later, use this dictionary to create an [`AVAudioFile`](../avaudiofile.md) instance and pass it as the `settings` parameter.
 

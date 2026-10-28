@@ -21,7 +21,7 @@ Returns a run loop scheduler time calculated by advancing this instance’s time
 func advanced(by n: RunLoop.SchedulerTimeType.Stride) -> RunLoop.SchedulerTimeType
 ```
 
-#### Return Value
+## Return Value
 
 A dispatch queue time advanced by the given interval from this instance’s time.
 

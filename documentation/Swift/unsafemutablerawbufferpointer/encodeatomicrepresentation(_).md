@@ -21,11 +21,11 @@ Destroys a value of `Self` and prepares an `AtomicRepresentation` storage type t
 static func encodeAtomicRepresentation(_ value: consuming UnsafeMutableRawBufferPointer) -> UnsafeMutableRawBufferPointer.AtomicRepresentation
 ```
 
-#### Return Value
+## Return Value
 
 The newly encoded `AtomicRepresentation` storage.
 
-#### Discussion
+## Discussion
 
 > **Note**: This is not an atomic operation. This simply encodes the logical type `Self` into its storage representation suitable for atomic operations, `AtomicRepresentation`.
 

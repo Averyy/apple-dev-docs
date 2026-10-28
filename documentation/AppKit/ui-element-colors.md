@@ -5,7 +5,7 @@
 
 Retrieve standard color objects for use with windows, controls, labels, text, selections and other content in your app.
 
-#### Overview
+## Overview
 
 For design guidance, see [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/macos/visual-design/color#dynamic-system-colors).
 

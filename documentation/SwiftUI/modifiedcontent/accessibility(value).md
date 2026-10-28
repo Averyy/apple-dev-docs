@@ -26,7 +26,7 @@ func accessibility(value: Text) -> ModifiedContent<Content, Modifier>
 
 Available when `Modifier` is `AccessibilityAttachmentModifier`.
 
-#### Discussion
+## Discussion
 
 Use this method to describe the value represented by a view, but only if that’s different than the view’s label. For example, for a slider that you label as “Volume” using [`accessibility(label:)`](./accessibility%28label%29.md), you can provide the current volume setting, like “60%”, using [`accessibility(value:)`](./accessibility%28value%29.md).
 

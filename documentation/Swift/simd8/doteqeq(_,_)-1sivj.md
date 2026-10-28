@@ -23,7 +23,7 @@ static func .== (a: SIMD8<Scalar>, b: SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.M
 
 Available when `Scalar` is `Float16`.
 
-#### Discussion
+## Discussion
 
 Each lane of the result is true if that lane of a is equal to the corresponding lane of b, and false otherwise.
 

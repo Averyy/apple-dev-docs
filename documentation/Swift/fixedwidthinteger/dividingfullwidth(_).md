@@ -22,11 +22,11 @@ Returns a tuple containing the quotient and remainder obtained by dividing the g
 func dividingFullWidth(_ dividend: (high: Self, low: Self.Magnitude)) -> (quotient: Self, remainder: Self)
 ```
 
-#### Return Value
+## Return Value
 
 A tuple containing the quotient and remainder obtained by dividing `dividend` by this value.
 
-#### Discussion
+## Discussion
 
 The resulting quotient must be representable within the bounds of the type. If the quotient is too large to represent in the type, a runtime error may occur.
 

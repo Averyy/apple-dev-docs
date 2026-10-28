@@ -13,7 +13,7 @@
 kINQUIRY_Page83_IdentifierTypeNAAIdentifier = 3
 ```
 
-#### Discussion
+## Discussion
 
 NAA Identifier Type.
 

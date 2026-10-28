@@ -19,7 +19,7 @@ var maxMagnification: CGFloat { get set }
 @property CGFloat maxMagnification;
 ```
 
-#### Discussion
+## Discussion
 
 This value must be greater than or equal to the minimum magnification. The default value is `4.0`.
 

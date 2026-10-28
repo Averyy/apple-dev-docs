@@ -21,7 +21,7 @@ func cacheStatus(parameters: GenerateParameters? = nil) async throws -> KVCacheS
 
 - [KV Cache Quantization](../kv-cache-quantization.md)
 
-#### Discussion
+## Discussion
 
 Reports topology, capacity provenance, and strategy compatibility without requiring application code to allocate or cast concrete [`KVCache`](../kvcache.md) types.
 

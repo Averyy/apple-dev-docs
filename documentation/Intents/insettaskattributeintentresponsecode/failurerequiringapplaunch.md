@@ -25,7 +25,7 @@ case failureRequiringAppLaunch
 INSetTaskAttributeIntentResponseCodeFailureRequiringAppLaunch
 ```
 
-#### Discussion
+## Discussion
 
 Use this response code when you cannot modify task attributes from your Intents extension but the user can do so from your app. Do not use this code for general errors or to force the user to launch your app.
 

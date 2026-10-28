@@ -24,7 +24,7 @@ var reportsAbsoluteTouchSurfaceValues: Bool { get set }
 @property (nonatomic) BOOL reportsAbsoluteTouchSurfaceValues;
 ```
 
-#### Discussion
+## Discussion
 
 If this property is [`true`](../../Swift/true.md), the touch values are absolute on the surface of the touchpad. If this property is [`false`](../../Swift/false.md), the touch values are relative to the first touch on a virtual directional pad. The default value for this property is [`true`](../../Swift/true.md).
 

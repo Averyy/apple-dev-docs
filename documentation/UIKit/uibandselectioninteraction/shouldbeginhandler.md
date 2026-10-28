@@ -22,7 +22,7 @@ var shouldBeginHandler: ((UIBandSelectionInteraction, CGPoint) -> Bool)? { get s
 @property (nonatomic, copy, nullable) BOOL (^shouldBeginHandler)(UIBandSelectionInteraction *interaction, CGPoint point);
 ```
 
-#### Discussion
+## Discussion
 
 This property stores an optional handler block you use to selectively start the interaction. If you provide a handler, the [`UIBandSelectionInteraction`](../uibandselectioninteraction.md) object calls your handler upon successful recognition of the appropriate event sequence, but before it starts the interaction. Use your handler to specify whether you want the interaction to proceed.
 

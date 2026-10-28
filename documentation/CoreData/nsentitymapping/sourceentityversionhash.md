@@ -25,7 +25,7 @@ var sourceEntityVersionHash: Data? { get set }
 @property (copy, nullable) NSData * sourceEntityVersionHash;
 ```
 
-#### Discussion
+## Discussion
 
 The version hash is calculated by Core Data based on the property values of the entity (see `NSEntityDescription`’s [`versionHash`](../nsentitydescription/versionhash.md) method). The `sourceEntityVersionHash` must equal the version hash of the source entity represented by the mapping.
 

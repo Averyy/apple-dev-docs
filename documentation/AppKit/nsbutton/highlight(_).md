@@ -19,7 +19,7 @@ func highlight(_ flag: Bool)
 - (void) highlight:(BOOL) flag;
 ```
 
-#### Discussion
+## Discussion
 
 Highlighting makes the button appear recessed, displays its alternate title or image, or causes the button to appear illuminated.
 

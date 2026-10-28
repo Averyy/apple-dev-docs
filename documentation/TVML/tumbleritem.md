@@ -4,7 +4,7 @@
 
 Contains title information for a tumbler header.
 
-#### Overview
+## Overview
 
 The user swipes left and right on the remote to display the previous and next `tumblerItem` elements inside of the tumbler header. Here’s an example of a tumbler bar containing two tumbler items.
 
@@ -21,12 +21,12 @@ The user swipes left and right on the remote to display the previous and next `t
 </tumblerBar>
 ```
 
-##### Subelements of tumblerItem
+### Subelements of tumblerItem
 
 - [subtitle](./subtitle.md)
 - [title](./title.md)
 
-##### Elements that Use tumberBarItem
+### Elements that Use tumberBarItem
 
 - [tumblerBar](./tumblerbar.md)
 

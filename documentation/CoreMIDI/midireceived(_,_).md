@@ -25,11 +25,11 @@ func MIDIReceived(_ src: MIDIEndpointRef, _ pktlist: UnsafePointer<MIDIPacketLis
 extern OSStatus MIDIReceived(MIDIEndpointRef src, const MIDIPacketList *pktlist);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus result code.
 
-#### Discussion
+## Discussion
 
 Drivers should call this function when receiving MIDI from a source.
 

@@ -24,7 +24,7 @@ case failureRequiringAppLaunch
 INSetDefrosterSettingsInCarIntentResponseCodeFailureRequiringAppLaunch
 ```
 
-#### Discussion
+## Discussion
 
 Use this response code when you can’t handle the request through Siri for a reason not covered by any other response code. Don’t use it for general errors or to force the user to launch your app.
 

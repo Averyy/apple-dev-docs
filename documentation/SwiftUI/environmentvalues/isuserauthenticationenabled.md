@@ -21,7 +21,7 @@ The current system user authentication enablement status.
 var isUserAuthenticationEnabled: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this value to determine whether the system will issue additional device-owner authentication challenges before revealing this piece of user interface from under a system-installed shield.
 

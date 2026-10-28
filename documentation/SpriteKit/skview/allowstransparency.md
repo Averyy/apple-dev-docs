@@ -28,7 +28,7 @@ var allowsTransparency: Bool { get set }
 
 - [Creating a Scene with a Transparent Background](../creating-a-scene-with-a-transparent-background.md)
 
-#### Discussion
+## Discussion
 
 This property tells the drawing system as to how it should treat the view. If set to [`false`](../../Swift/false.md), the drawing system treats the view as fully opaque, which allows the drawing system to optimize some drawing operations and improve performance. If set to [`true`](../../Swift/true.md), the drawing system composites the view normally with other content. The default value of this property is [`false`](../../Swift/false.md).
 

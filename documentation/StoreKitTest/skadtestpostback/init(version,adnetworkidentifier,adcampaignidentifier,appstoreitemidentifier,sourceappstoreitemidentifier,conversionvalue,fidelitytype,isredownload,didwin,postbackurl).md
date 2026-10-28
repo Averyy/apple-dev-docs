@@ -21,7 +21,7 @@ init?(version: SKAdTestPostbackVersion, adNetworkIdentifier: String, adCampaignI
 - (instancetype) initWithVersion:(SKAdTestPostbackVersion) version adNetworkIdentifier:(NSString *) adNetworkIdentifier adCampaignIdentifier:(NSInteger) adCampaignIdentifier appStoreItemIdentifier:(NSInteger) appStoreItemIdentifier sourceAppStoreItemIdentifier:(NSInteger) sourceAppStoreItemIdentifier conversionValue:(NSInteger) conversionValue fidelityType:(NSInteger) fidelityType isRedownload:(BOOL) isRedownload didWin:(BOOL) didWin postbackURL:(NSString *) postbackURL;
 ```
 
-#### Discussion
+## Discussion
 
 Create one to six test postbacks to use for unit testing. Call [`setPostbacks(_:)`](../skadtestsession/setpostbacks%28_%29.md) to add the test postbacks to the test session.
 

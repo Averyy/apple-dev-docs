@@ -15,7 +15,7 @@ Controls how all C compiler warnings are treated during compilation.
 static func treatAllWarnings(as level: WarningLevel, _ condition: BuildSettingCondition? = nil) -> CSetting
 ```
 
-#### Discussion
+## Discussion
 
 Use this setting to specify whether all warnings should be treated as warnings (default behavior) or as errors. This is equivalent to passing `-Werror` or `-Wno-error` to the C compiler.
 

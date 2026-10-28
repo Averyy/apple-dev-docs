@@ -21,7 +21,7 @@ func filePromiseProvider(_ filePromiseProvider: NSFilePromiseProvider, fileNameF
 - (NSString *) filePromiseProvider:(NSFilePromiseProvider *) filePromiseProvider fileNameForType:(NSString *) fileType;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called when the drag destination fulfills the file promise. Determine and return the final filename (a base filename, not a full path).
 

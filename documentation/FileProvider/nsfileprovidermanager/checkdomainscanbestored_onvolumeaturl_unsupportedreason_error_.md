@@ -15,7 +15,7 @@ Check if a URL is eligible for storing a domain.
 + (BOOL) checkDomainsCanBeStored:(BOOL *) eligible onVolumeAtURL:(NSURL *) url unsupportedReason:(NSFileProviderVolumeUnsupportedReason *) unsupportedReason error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This returns whether the check has been performed succesfully - NOT whether the drive is eligible.
 

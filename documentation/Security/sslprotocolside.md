@@ -21,7 +21,7 @@ enum SSLProtocolSide
 enum SSLProtocolSide : int;
 ```
 
-#### Overview
+## Overview
 
 Use one of these flags with the [`SSLCreateContext(_:_:_:)`](./sslcreatecontext%28_,_,_%29.md) function to indicate whether the context is intended for the server side or client side of a connection.
 

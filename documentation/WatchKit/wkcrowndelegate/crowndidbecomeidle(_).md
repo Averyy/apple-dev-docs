@@ -19,7 +19,7 @@ optional func crownDidBecomeIdle(_ crownSequencer: WKCrownSequencer?)
 - (void) crownDidBecomeIdle:(WKCrownSequencer *) crownSequencer;
 ```
 
-#### Discussion
+## Discussion
 
 The crown sequencer calls this method when the crown finally comes to rest. The sequencer calls this method only after one or more calls to the [`crownDidRotate(_:rotationalDelta:)`](./crowndidrotate%28_,rotationaldelta%29.md) method.
 

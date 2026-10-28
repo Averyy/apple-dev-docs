@@ -21,7 +21,7 @@ The value of the tag.
 CMTagValue value;
 ```
 
-#### Discussion
+## Discussion
 
 Use a function listed in [Retrieving Tag Values](../cmtag-api.md#Retrieving-Tag-Values) to retrieve a tag value safely and interpret it as the correct underlying type.
 

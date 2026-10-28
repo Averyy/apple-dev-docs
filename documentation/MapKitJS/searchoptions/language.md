@@ -15,7 +15,7 @@ A language ID that determines the language for the search result text.
 language?: string;
 ```
 
-#### Discussion
+## Discussion
 
 This overrides the [`language`](../serviceconstructoroptions/language.md) provided to the [`Search`](../search.md) constructor.
 

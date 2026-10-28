@@ -25,7 +25,7 @@ var extendedLanguageTag: String? { get }
 @property (nonatomic, readonly, nullable) NSString * extendedLanguageTag;
 ```
 
-#### Discussion
+## Discussion
 
 This property may be `nil` indicating that the underlying media presented when the option is selected carries no language information. This can occur with media formats for which language information is optional, such as HTTP Live Streaming playlists, or that do not accommodate language information in machine-readable form.
 

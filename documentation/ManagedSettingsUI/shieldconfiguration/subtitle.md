@@ -17,7 +17,7 @@ The subtitle for a shield to display below the title.
 let subtitle: ShieldConfiguration.Label?
 ```
 
-#### Discussion
+## Discussion
 
 Use a `subtitle` to provide more information, such as the reason for shielding the content.
 

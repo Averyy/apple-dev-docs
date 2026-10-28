@@ -5,11 +5,11 @@
 
 A list of prims that respond to the notification.
 
-#### Overview
+## Overview
 
 The action provides this list of prims to the app, on which it decides the operation to perform to achieve the desired effect.
 
-##### Declaration
+### Declaration
 
 ```other
 rel affectedObjects

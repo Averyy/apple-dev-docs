@@ -19,7 +19,7 @@ class NSStepper
 @interface NSStepper : NSControl
 ```
 
-#### Overview
+## Overview
 
 A stepper consists of two small arrows that can increment and decrement a value that appears beside it, such as a date or time. The illustration below shows a stepper to the right of a text field, which would show the stepper’s value.
 

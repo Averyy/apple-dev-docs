@@ -15,7 +15,7 @@ A model you train to make recommendations based on item similarity, grouping, an
 struct MLRecommender
 ```
 
-#### Overview
+## Overview
 
 Use an [`MLRecommender`](./mlrecommender.md) to train a machine learning model that you include in your app to make recommendations for the user, while keeping their data on-device.
 

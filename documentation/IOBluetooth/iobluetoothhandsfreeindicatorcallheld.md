@@ -19,7 +19,7 @@ let IOBluetoothHandsFreeIndicatorCallHeld: String
 extern NSString * const IOBluetoothHandsFreeIndicatorCallHeld;
 ```
 
-#### Discussion
+## Discussion
 
 The possible values for the hold indicator are:
 

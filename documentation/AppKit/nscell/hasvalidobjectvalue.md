@@ -19,7 +19,7 @@ var hasValidObjectValue: Bool { get }
 @property (readonly) BOOL hasValidObjectValue;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the cell has a valid object value or [`false`](../../Swift/false.md) if it does not. A valid object value is one that the cell’s formatter can “understand.” Objects are always assumed to be valid unless they are rejected by the formatter. Invalid objects can still be accepted by the delegate of the cell’s [`NSControl`](../nscontrol.md) object (using the [`control(_:didFailToFormatString:errorDescription:)`](../nscontroltexteditingdelegate/control%28_,didfailtoformatstring,errordescription%29.md) delegate method).
 

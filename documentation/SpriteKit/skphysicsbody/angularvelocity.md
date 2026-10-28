@@ -29,7 +29,7 @@ var angularVelocity: CGFloat { get set }
 
 - [Making Physics Bodies Move](../making-physics-bodies-move.md)
 
-#### Discussion
+## Discussion
 
 The angular velocity is a pseudo vector around an axis vector of `(0.0,0.0,1.0)` measured in radians per second.
 

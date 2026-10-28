@@ -21,7 +21,7 @@ Disassociate the work item’s attributes from the current execution context.
 static let detached: DispatchWorkItemFlags
 ```
 
-#### Discussion
+## Discussion
 
 When this flag is set, the system does not apply attributes from the current execution context to the work item.
 

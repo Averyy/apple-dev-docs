@@ -19,7 +19,7 @@ static let markerType: NSAccessibility.Attribute
 extern NSAccessibilityAttributeName const NSAccessibilityMarkerTypeAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 See [Ruler Marker Type Values](../../ruler-marker-type-values.md) for possible values.
 

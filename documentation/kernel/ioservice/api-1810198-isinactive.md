@@ -12,11 +12,11 @@ bool isInactive(
  void ) const;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the IOService object has been terminated.
 
-#### Overview
+## Overview
 
 When an IOService object is successfully terminated, it is immediately made inactive, which blocks further attach()es, matching or notifications occuring on the object. It remains inactive until the last client closes, and is then finalized and destroyed.
 

@@ -19,7 +19,7 @@ Tells the view that one or more new touches occurred.
 @preconcurrency override dynamic func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
 ```
 
-#### Discussion
+## Discussion
 
 See [`touchesBegan(_:with:)`](../../UIKit/uiresponder/touchesbegan%28_,with%29.md) for more information.
 

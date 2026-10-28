@@ -14,7 +14,7 @@
 typedef void (*IOHIDValueMultipleCallback)(void *context, IOReturn result, void *sender, CFDictionaryRef multiple);
 ```
 
-#### Discussion
+## Discussion
 
 Type and arguments of callout C function that is used when an element value completion routine is called.
 

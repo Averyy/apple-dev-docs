@@ -19,11 +19,11 @@ object FlexibleSpacer
 
 - [Displaying Components Side By Side](../AppleNews/displaying-components-side-by-side.md)
 
-#### Discussion
+## Discussion
 
 Use the `FlexibleSpacer` object to redistribute the extra space between child components in a [`HorizontalStackDisplay`](./horizontalstackdisplay.md).  Otherwise, if you have two child components in a horizontal stack that don’t use up all of the space, the extra space is always on the right side. The `FlexibleSpacer` object does not have an intrinsic size, but is sized to fit any remaining width, and to fit the height of the parent container. The object is ignored when used outside of the `HorizontalStackDisplay` context.
 
-##### Example
+### Example
 
 ```json
 {

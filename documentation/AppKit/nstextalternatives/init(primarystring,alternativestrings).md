@@ -19,7 +19,7 @@ init(primaryString: String, alternativeStrings: [String])
 - (instancetype) initWithPrimaryString:(NSString *) primaryString alternativeStrings:(NSArray<NSString *> *) alternativeStrings;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSTextAlternatives` instance.
 

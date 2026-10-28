@@ -16,11 +16,11 @@ Set the finalize callback for a local isoch port
 IOReturn (*SetFinalizeCallback)(IOFireWireLibLocalIsochPortRef self, IOFireWireLibIsochPortFinalizeCallback finalizeCallback);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if this isoch port has no more pending callbacks and does not need any more runloop time.
 
-#### Discussion
+## Discussion
 
 When Stop() is called on a LocalIsochPortInterface, there may or may not be isoch callbacks still pending for this isoch port. The port must be allowed to handle any pending callbacks, so the isoch runloop should not be stopped until a port has handled all pending callbacks. The finalize callback is called after the final callback has been made on the isoch runloop. After this callback is sent, it is safe to stop the isoch runloop.
 

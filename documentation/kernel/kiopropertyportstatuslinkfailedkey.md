@@ -14,7 +14,7 @@
 #define kIOPropertyPortStatusLinkFailedKey
 ```
 
-#### Discussion
+## Discussion
 
 This key defines the value of Link Failed for the key kIOPropertyPortStatusKey.
 

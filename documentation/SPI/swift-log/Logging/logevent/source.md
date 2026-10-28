@@ -17,7 +17,7 @@ The source where this log event originated, for example the logging module.
 var source: String { get set }
 ```
 
-#### Discussion
+## Discussion
 
 When no explicit source was provided at the call site, this is derived lazily from [`file`](./file.md) every time this property is accessed. Handlers that never read this property pay no allocation cost for source computation.
 

@@ -30,7 +30,7 @@ func handle(intent: INCreateTaskListIntent) async -> INCreateTaskListIntentRespo
 - (void) handleCreateTaskList:(INCreateTaskListIntent *) intent completion:(void (^)(INCreateTaskListIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 In your implementation of this method, create the task list described by the `intent` parameter, create a response object with any relevant details, and call the provided completion handler.
 

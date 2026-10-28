@@ -21,7 +21,7 @@ Resize the tensor’s spatial dimensions to size using the specified method.
 func resized(to size: (newHeight: Int, newWidth: Int), method: MLTensor.ResizeMethod = .nearestNeighbor) -> MLTensor
 ```
 
-#### Discussion
+## Discussion
 
 For example:
 

@@ -24,7 +24,7 @@ let kCFStreamPropertyFTPProxyUser: CFString
 extern CFStringRef const kCFStreamPropertyFTPProxyUser;
 ```
 
-#### Discussion
+## Discussion
 
 FTP Proxy Host stream property key or FTP Proxy dictionary key for set and copy operations. The value of this property is a CFString containing the username to be used when connecting to the proxy server.
 

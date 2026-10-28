@@ -22,7 +22,7 @@ typealias CMMotionActivityQueryHandler = ([CMMotionActivity]?, (any Error)?) -> 
 typedef void (^)(NSArray<CMMotionActivity *> *, NSError *) CMMotionActivityQueryHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This block takes the following parameters:
 

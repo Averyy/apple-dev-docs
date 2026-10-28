@@ -25,7 +25,7 @@ case byDate
 INSortTypeByDate
 ```
 
-#### Discussion
+## Discussion
 
 You may specify this sort type regardless of whether the search included a date as one of the search parameters.
 

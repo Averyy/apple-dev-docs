@@ -25,7 +25,7 @@ case perFrame
 SCNBufferFrequencyPerFrame
 ```
 
-#### Discussion
+## Discussion
 
 Use this option when the contents of the buffer should be uniform across all uses of the shader when rendering a single frame, no matter how many different nodes, geometries, and materials use the shader program.
 

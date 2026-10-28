@@ -23,7 +23,7 @@ var estimationUpdateIndex: NSNumber? { get }
 @property (nonatomic, readonly) NSNumber * estimationUpdateIndex;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains a unique marker for the current touch data. When the touch contains estimated properties, save this index along with the rest of the touch data to your app’s data structures. When the system reports the actual touch values later, use this index to locate the original data in your app’s data structures and replace the estimated values you stored previously. For example, when a touch contains estimated properties, you might use this property as a key in a dictionary whose value is the object you use to store the touch data.
 

@@ -13,7 +13,7 @@ Arrange views in your app’s interface using layout tools that SwiftUI provides
 - macOS 13.0+
 - Xcode 14.0+
 
-#### Overview
+## Overview
 
 This sample app demonstrates many of the layout tools that SwiftUI provides by building an interface that enables people to vote for their favorite kind of pet. The app offers buttons to vote for a specific pet type, and displays the vote counts and relative rankings of the various contenders on a leaderboard. It also shows avatars for the pets, arranged in a way that reflects the current rankings.
 
@@ -21,7 +21,7 @@ This sample app demonstrates many of the layout tools that SwiftUI provides by b
 
 > **Note**: This sample code project is associated with WWDC22 session [10056: Compose custom layouts with SwiftUI](https://developer.apple.com/wwdc22/10056/).
 
-##### Arrange views in two dimensions with a grid
+### Arrange views in two dimensions with a grid
 
 To draw a leaderboard in the middle of the display that shows vote counts and percentages, the sample uses a [`Grid`](./grid.md) view.
 
@@ -48,7 +48,7 @@ Grid(alignment: .leading) {
 
 The sample initializes the grid with leading-edge alignment, which applies to every cell in the grid. Meanwhile, the [`gridColumnAlignment(_:)`](./view/gridcolumnalignment%28_%29.md) view modifier that appears on the vote count cell overrides the alignment of cells in that column to use trailing-edge alignment.
 
-##### Create a custom equal-width layout
+### Create a custom equal-width layout
 
 The app offers buttons for voting at the bottom of the interface.
 
@@ -105,7 +105,7 @@ func placeSubviews(
 
 The method creates a single size proposal for the subviews, and then uses that, along with a point that changes for each subview, to arrange the buttons in a horizontal line with default spacing.
 
-##### Choose the view that fits
+### Choose the view that fits
 
 The size of the voting buttons depends on the width of the text they contain. For people that speak another language or that use a larger text size, the horizontally arranged buttons might not fit in the display. So the app uses [`ViewThatFits`](./viewthatfits.md) to let SwiftUI choose between a horizontal and a vertical arrangement of the buttons for the one that fits in the available space.
 
@@ -122,7 +122,7 @@ ViewThatFits { // Choose the first view that fits.
 
 To ensure that the buttons maintain their equal-width property when arranged vertically, the app uses a custom equal-width vertical stack (`MyEqualWidthVStack`) that’s very similar to the horizontal version.
 
-##### Improve layout efficiency with a cache
+### Improve layout efficiency with a cache
 
 The methods of the [`Layout`](./layout.md) protocol take a bidirectional `cache` parameter. The cache provides access to optional storage that’s shared among all the methods of a particular layout instance. To demonstrate the use of a cache, the sample app’s equal-width vertical layout creates storage to share size and spacing calculations between its [`sizeThatFits(proposal:subviews:cache:)`](./layout/sizethatfits%28proposal,subviews,cache%29.md) and [`placeSubviews(in:proposal:subviews:cache:)`](./layout/placesubviews%28in,proposal,subviews,cache%29.md) implementations.
 
@@ -162,7 +162,7 @@ Contrast this with the equal-width horizontal stack, which doesn’t use a cache
 
 > **Note**: Most simple layouts, including the equal-width vertical stack, don’t gain much efficiency from using a cache. Developers can profile their app with Instruments to find out whether a particular layout type actually benefits from a cache.
 
-##### Create a custom radial layout with an offset
+### Create a custom radial layout with an offset
 
 To display the pet avatars in a circle, the app defines a radial layout (`MyRadialLayout`).
 
@@ -194,7 +194,7 @@ for (index, subview) in subviews.enumerated() {
 
 The offset that the app applies to the rotation accounts for the current rankings, placing higher-ranked pets closer to the top of the interface. The app stores ranks on the subviews using the [`LayoutValueKey`](./layoutvaluekey.md) protocol, and then reads the values to calculate the offset before placing views.
 
-##### Animate transitions between layouts
+### Animate transitions between layouts
 
 The radial layout can calculate an offset that creates an appropriate arrangement for all but one set of rankings: there’s no way to show a three-way tie with the avatars in a circle. To resolve this, the app detects this condition, and uses it to put the avatars in a line instead, using a the [`HStackLayout`](./hstacklayout.md) type, which is a version of the built-in [`HStack`](./hstack.md) that conforms to the [`Layout`](./layout.md) protocol. To transition between these layout types, the app uses the [`AnyLayout`](./anylayout.md) type.
 
@@ -215,7 +215,7 @@ Podium()
 
 Because the structural identity of the views remains the same throughout, the [`animation(_:value:)`](./view/animation%28_,value%29.md) view modifier creates animated transitions between layout types. The modifier also animates radial layout changes that result from changes in the rankings because the calculated offsets depend on the same pet data.
 
-##### Build documentation for the app
+### Build documentation for the app
 
 To see more information about the symbols defined by this app, you can build the app’s documentation. Open the project in Xcode and select Product > Build Documentation.
 

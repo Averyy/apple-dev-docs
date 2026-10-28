@@ -20,7 +20,7 @@ let kLSItemExtensionIsHidden: CFString!
 const CFStringRef kLSItemExtensionIsHidden;
 ```
 
-#### Discussion
+## Discussion
 
 Use [`LSSetExtensionHiddenForURL(_:_:)`](./api-1443948-lssetextensionhiddenforurl.md) or the URL resource property [`kCFURLHasHiddenExtensionKey`](../CoreFoundation/kcfurlhashiddenextensionkey.md)/[`hasHiddenExtensionKey`](../Foundation/urlresourcekey/hashiddenextensionkey.md) instead.
 

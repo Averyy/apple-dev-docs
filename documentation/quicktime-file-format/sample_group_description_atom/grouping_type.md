@@ -10,7 +10,7 @@ A 32-bit integer that identifies the grouping type of this sample group descript
 
 - [Representing encoder delay explicitly](../example_representing_encoder_delay_explicitly.md)
 
-#### Overview
+## Overview
 
 Set to `‘roll’`.
 

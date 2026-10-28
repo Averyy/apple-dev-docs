@@ -22,7 +22,7 @@ let kCVPixelBufferOpenGLESCompatibilityKey: CFString
 extern CFStringRef const kCVPixelBufferOpenGLESCompatibilityKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is of type [`CFBoolean`](../CoreFoundation/cfboolean.md). To use pixel buffers in OpenGL ES rendering, see [CVOpenGLESTextureCache](./cvopenglestexturecache-q2r.md).
 

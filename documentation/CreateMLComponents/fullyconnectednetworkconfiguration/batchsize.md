@@ -21,7 +21,7 @@ The number of examples to use per mini-batch.
 var batchSize: Int
 ```
 
-#### Discussion
+## Discussion
 
 A larger batch size will speed up computation when training, as long as the batch fits in memory.
 

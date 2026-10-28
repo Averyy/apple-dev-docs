@@ -24,7 +24,7 @@ var textSelector: String? { get }
 @property (nonatomic, readonly, nullable) NSString * textSelector;
 ```
 
-#### Discussion
+## Discussion
 
 The format of the legible media determines the syntax of this string. For WebVTT, it’s a CSS selector that matches the markup inside a cue. A class selector needs a leading period, and a voice selector wraps the speaker’s name in a `voice` attribute.
 

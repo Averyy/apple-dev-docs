@@ -25,7 +25,7 @@ var type: PHLivePhotoFrameType { get }
 @property (nonatomic, readonly) PHLivePhotoFrameType type;
 ```
 
-#### Discussion
+## Discussion
 
 Photos calls your [`frameProcessor`](../phlivephotoeditingcontext/frameprocessor.md) block repeatedly, both to process each frame of the Live Photo’s video content and to process the Live Photo’s still photo content. Use this property to distinguish photo content from video frames—for example, to add a watermark only to still photo content.
 

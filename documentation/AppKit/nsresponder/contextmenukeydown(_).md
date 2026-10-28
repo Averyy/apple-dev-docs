@@ -17,7 +17,7 @@ func contextMenuKeyDown(_ event: NSEvent)
 - (void) contextMenuKeyDown:(NSEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 Handle a key event that should present a context menu at the user focus.
 

@@ -21,11 +21,11 @@ init()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 A message compose button with a system-provided image.
 
-#### Discussion
+## Discussion
 
 > **Note**:  This button type does not use a handler. Instead, tapping this button activates Siri and initiates the compose message flow.
 

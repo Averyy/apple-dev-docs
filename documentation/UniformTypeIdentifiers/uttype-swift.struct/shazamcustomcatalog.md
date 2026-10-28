@@ -21,7 +21,7 @@ A type that represents a custom catalog.
 static var shazamCustomCatalog: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.apple.shazamcatalog`.
 

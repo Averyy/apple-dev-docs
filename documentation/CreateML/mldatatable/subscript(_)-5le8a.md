@@ -46,7 +46,7 @@ subscript<Element>(columnName: String) -> MLDataColumn<Element> where Element : 
 subscript<S>(columnNames: S) -> MLDataTable where S : Sequence, S.Element == String { get }
 ```
 
-#### Return Value
+## Return Value
 
 A new data table.
 

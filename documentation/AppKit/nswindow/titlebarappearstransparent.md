@@ -19,7 +19,7 @@ var titlebarAppearsTransparent: Bool { get set }
 @property BOOL titlebarAppearsTransparent;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the title bar does not draw its background, which allows all content underneath it to show through. It only makes sense to set this property to [`true`](../../Swift/true.md) when [`NSFullSizeContentViewWindowMask`](../nsfullsizecontentviewwindowmask.md) is also set.
 

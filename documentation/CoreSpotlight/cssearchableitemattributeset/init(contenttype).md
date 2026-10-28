@@ -23,7 +23,7 @@ init(contentType: UTType)
 - (instancetype) initWithContentType:(UTType *) contentType;
 ```
 
-#### Return Value
+## Return Value
 
 An attribute set that represents an item of the specified content type.
 

@@ -19,7 +19,7 @@ func replaceCharacters(in range: NSRange, with string: String)
 - (void) replaceCharactersInRange:(NSRange) range withString:(NSString *) string;
 ```
 
-#### Discussion
+## Discussion
 
 For a rich text object, the text of `aString` is assigned the formatting attributes of the first character of the text it replaces, or of the character immediately before `aRange` if the range’s length is 0. If the range’s location is 0, the formatting attributes of the first character in the receiver are used.
 

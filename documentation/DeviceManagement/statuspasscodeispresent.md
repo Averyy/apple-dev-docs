@@ -19,9 +19,9 @@ The status item that reports whether the device has a passcode.
 object StatusPasscodeIsPresent
 ```
 
-#### Discussion
+## Discussion
 
-##### Status item availability
+### Status item availability
 
 |  |  |
 | --- | --- |
@@ -32,7 +32,7 @@ object StatusPasscodeIsPresent
 | Allowed in system scope | iOS, Shared iPad, visionOS, watchOS |
 | Allowed in user scope | Shared iPad |
 
-##### Status item example
+### Status item example
 
 ```json
 {

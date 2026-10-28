@@ -22,7 +22,7 @@ func setValue(_ value: Any, forPasteboardType pasteboardType: String)
 - (void) setValue:(id) value forPasteboardType:(NSString *) pasteboardType;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to put an object—such as an [`NSString`](../../Foundation/nsstring.md), [`NSArray`](../../Foundation/nsarray.md), [`NSDictionary`](../../Foundation/nsdictionary.md), [`NSDate`](../../Foundation/nsdate.md), [`NSNumber`](../../Foundation/nsnumber.md), [`UIImage`](../uiimage.md), or [`NSURL`](../../Foundation/nsurl.md) object—on the pasteboard. (For images, you can also use the [`image`](./image.md) or [`images`](./images.md) properties; for all other data, such as raw binary data, use the [`setData(_:forPasteboardType:)`](./setdata%28_,forpasteboardtype%29.md) method.) This method writes the object as the first item in the pasteboard. Calling this method replaces any items currently in the pasteboard.
 

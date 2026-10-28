@@ -22,11 +22,11 @@ func CVDisplayLinkCreateWithActiveCGDisplays(_ displayLinkOut: UnsafeMutablePoin
 extern CVReturn CVDisplayLinkCreateWithActiveCGDisplays(CVDisplayLinkRef*displayLinkOut);
 ```
 
-#### Return Value
+## Return Value
 
 A Core Video result code. See [Core Video Constants](./core-video-constants.md) for possible values.
 
-#### Discussion
+## Discussion
 
 `CVDisplayLinkCreateWithActiveCGDisplays` determines the displays actively used by the host computer and creates a display link compatible with all of them. For most applications, calling this function is the most convenient way to create a display link. After creation, you can assign the display link to any active display by calling the [`CVDisplayLinkSetCurrentCGDisplay(_:_:)`](./cvdisplaylinksetcurrentcgdisplay%28_,_%29.md) function.
 

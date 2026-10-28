@@ -25,11 +25,11 @@ func CFDataCreate(_ allocator: CFAllocator!, _ bytes: UnsafePointer<UInt8>!, _ l
 extern CFDataRefCFDataCreate(CFAllocatorRef allocator, const UInt8 *bytes, CFIndex length);
 ```
 
-#### Return Value
+## Return Value
 
 A new CFData object, or `NULL` if there was a problem creating the object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 You must supply a count of the bytes in the buffer. This function always copies the bytes in the provided buffer into internal storage.
 

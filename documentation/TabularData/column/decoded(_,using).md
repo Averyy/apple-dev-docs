@@ -21,11 +21,11 @@ Generates a column by decoding each element’s data.
 func decoded<T, Decoder>(_ type: T.Type, using decoder: Decoder) throws -> Column<T> where WrappedElement == Decoder.Input, T : Decodable, Decoder : TopLevelDecoder
 ```
 
-#### Return Value
+## Return Value
 
 A new column of decoded values.
 
-#### Discussion
+## Discussion
 
 > **Throws**: `ColumnDecodingError` when the decoder fails to decode an element.
 

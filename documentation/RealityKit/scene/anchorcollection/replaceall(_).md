@@ -28,7 +28,7 @@ Replaces the existing anchor collection with a provided collection.
 @preconcurrency func replaceAll<S>(_ entities: S) where S : Sequence, S.Element : HasAnchoring
 ```
 
-#### Discussion
+## Discussion
 
 This method removes all anchors currently in the collection, then appends all the elements in `entities` to the collection.
 

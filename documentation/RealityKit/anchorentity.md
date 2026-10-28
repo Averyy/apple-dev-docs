@@ -26,7 +26,7 @@ An anchor that tethers entities to a scene.
 - [Handling different-sized objects in physics simulations](./handling-different-sized-objects-in-physics-simulations.md)
 - [Loading entities from a file](./loading-entities-from-a-file.md)
 
-#### Overview
+## Overview
 
 Control how RealityKit places virtual objects into your scene with anchor entities. `AnchorEntity` conforms to the [`HasAnchoring`](./hasanchoring.md) protocol, which gives it an [`AnchoringComponent`](./anchoringcomponent.md) instance.
 

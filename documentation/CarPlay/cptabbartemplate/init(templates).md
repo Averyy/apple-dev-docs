@@ -21,7 +21,7 @@ init(templates: [CPTemplate])
 - (instancetype) initWithTemplates:(NSArray<__kindof CPTemplate *> *) templates;
 ```
 
-#### Discussion
+## Discussion
 
 At runtime, use [`maximumTabCount`](./maximumtabcount.md) to determine the maximum number of tabs the template can display. CarPlay throws an exception if the number of items in `templates` exceeds this value.
 

@@ -12,7 +12,7 @@ void NotifyClientsOfPortStatusChange (
  SCSIPortStatus newStatus );
 ```
 
-#### Overview
+## Overview
 
 This method is used by the HBA child class to inform the parent class and any clients that a port has changed status.
 

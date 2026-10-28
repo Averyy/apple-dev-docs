@@ -19,11 +19,11 @@ convenience init(contentViewController: NSViewController)
 + (instancetype) windowWithContentViewController:(NSViewController *) contentViewController;
 ```
 
-#### Return Value
+## Return Value
 
 A window with the content view controller set to the passed-in view controller object.
 
-#### Discussion
+## Discussion
 
 This method creates a basic window object that is titled, closable, resizable, and miniaturizable. By default, the window’s title is automatically bound to the title of `contentViewController`. You can control the size of the window by using Auto Layout and applying size constraints to the view or its subviews. The initial size of the window is set to the initial size of [`contentView`](./contentview.md) (that is, the size of `contentViewController``.view`). The newly created window has [`isReleasedWhenClosed`](./isreleasedwhenclosed.md) set to [`false`](../../Swift/false.md), and it must be explicitly retained to keep the window instance alive.
 

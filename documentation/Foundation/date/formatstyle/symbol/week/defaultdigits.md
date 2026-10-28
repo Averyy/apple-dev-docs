@@ -21,7 +21,7 @@ Custom week format style showing the minimum number of digits that represents th
 static var defaultDigits: Date.FormatStyle.Symbol.Week { get }
 ```
 
-#### Discussion
+## Discussion
 
 This style represents weeks like `1` or `18`.
 

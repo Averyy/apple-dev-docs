@@ -20,7 +20,7 @@ var isCollaborationEnabled: Bool { get set }
 @property (nonatomic, assign, getter=isCollaborationEnabled) BOOL collaborationEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`false`](../../Swift/false.md). When you enable collaboration, ARKit invokes [`session(_:didOutputCollaborationData:)`](../arsessionobserver/session%28_,didoutputcollaborationdata%29.md) periodically, providing you with collaboration data to share with peers. Collaboration data contains information about the real-world surfaces ARKit detects, your position in relation to them, and any anchors you may have created.
 
@@ -30,7 +30,7 @@ For more information, see [Creating a collaborative session](../creating-a-colla
 
 > ❗ **Important**:  Collaborative sessions work best with up to four participants.
 
-##### Sharing Collaboration Data Over the Network
+### Sharing Collaboration Data Over the Network
 
 You are responsible for sending collaboration data over the network, including choosing the network framework and implementing the code. See [Creating a multiuser AR experience](../creating-a-multiuser-ar-experience.md) for an example app that shares a world map among users via [Multipeer Connectivity](../../MultipeerConnectivity/MultipeerConnectivity.md). Although [Creating a multiuser AR experience](../creating-a-multiuser-ar-experience.md) demonstrates sharing world data among peer users, it does so using a host-guest model. The primary advantage of collaboration data is that it enables you to share world data peer-to-peer.
 
@@ -46,7 +46,7 @@ func session(_ session: ARSession, didOutputCollaborationData data: ARSession.Co
 }
 ```
 
-##### Updating Your Session with Collaboration Data
+### Updating Your Session with Collaboration Data
 
 When you receive collaboration data from other people, you instantiate an [`ARSession.CollaborationData`](../arsession/collaborationdata.md) object with it and pass the object to your session with [`update(with:)`](../arsession/update%28with%29.md). For optimum performance, it’s helpful if the participants in a collaborative session are on the same OS version. Unarchiving `ARSession.CollaborationData` received from a device running a different OS version may fail.
 

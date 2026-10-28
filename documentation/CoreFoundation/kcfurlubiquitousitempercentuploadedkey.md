@@ -24,7 +24,7 @@ let kCFURLUbiquitousItemPercentUploadedKey: CFString!
 extern CFStringRef const kCFURLUbiquitousItemPercentUploadedKey;
 ```
 
-#### Discussion
+## Discussion
 
 A `CFNumber` value that provides the status of the upload in progress.
 

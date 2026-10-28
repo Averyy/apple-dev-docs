@@ -9,7 +9,7 @@ Inspect an app’s visionOS Enterprise license state and its approved managed en
 **Availability**:
 - visionOS 26.0+
 
-#### Overview
+## Overview
 
 Enterprise apps on visionOS unlock managed entitlements through a signed license installed on the device. This includes main camera access, barcode detection, or the elevated App Compute Category. Use VisionEntitlementServices to read the current license state at runtime and to check which managed entitlements the license approves for the calling app.
 

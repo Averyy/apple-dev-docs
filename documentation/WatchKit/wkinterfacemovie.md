@@ -19,7 +19,7 @@ class WKInterfaceMovie
 @interface WKInterfaceMovie : WKInterfaceObject
 ```
 
-#### Overview
+## Overview
 
 A movie object displays a poster image with a play button on top of it. When the user taps the play button, WatchKit plays the movie in a modal interface.
 
@@ -41,7 +41,7 @@ During the initialization of your interface controller, WatchKit creates any nee
 
 Do not attempt to play audio or video content while gathering heart rate data using Health Kit. If you use this class to play media, WatchKit automatically disables the gathering of heart rate data.
 
-##### Supported Media Formats
+### Supported Media Formats
 
 The following table lists the encoding information to use when creating media files to play on a user’s Apple Watch. For audio and video assets played directly from your app, keep your clips relatively short. Short clips consume less space on disk, use less power, and take less time to download.
 
@@ -50,7 +50,7 @@ The following table lists the encoding information to use when creating media fi
 | Video assets | Video codec: H.264 High Profile ![](https://developer.apple.com/tutorials/images/com.apple.watchkit/spacer.png) Bit rate: 160 kpbs at up to 30 fps ![](https://developer.apple.com/tutorials/images/com.apple.watchkit/spacer.png) Full screen resolution: 208 x 260 in portrait orientation ![](https://developer.apple.com/tutorials/images/com.apple.watchkit/spacer.png) 16:9 resolution: 320 x 180 in landscape orientation ![](https://developer.apple.com/tutorials/images/com.apple.watchkit/spacer.png) Audio bit rate: 32 kpbs stereo |
 | Audio-only assets | Bit rate: 32 kbps stereo |
 
-##### Interface Builder Configuration Options
+### Interface Builder Configuration Options
 
 Xcode lets you configure information about your movie interface object in your storyboard file. The following table lists the attributes you can configure and their meaning.
 

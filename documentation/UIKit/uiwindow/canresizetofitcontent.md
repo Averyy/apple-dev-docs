@@ -23,7 +23,7 @@ var canResizeToFitContent: Bool { get set }
 @property (nonatomic, setter=setCanResizeToFitContent:) BOOL canResizeToFitContent;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`false`](../../Swift/false.md), which causes the window to maintain a fixed size. Setting this property to [`true`](../../Swift/true.md) allows the system to perform constraints-based window sizing, which updates the window’s size to match the space needed by its content. Window-size changes occur only when the app runs on macOS.
 

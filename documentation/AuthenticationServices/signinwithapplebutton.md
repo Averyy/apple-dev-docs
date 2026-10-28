@@ -22,7 +22,7 @@ A SwiftUI view that creates the Sign in with Apple button for display.
 @preconcurrency struct SignInWithAppleButton
 ```
 
-#### Discussion
+## Discussion
 
 For more information about which Sign in with Apple buttons are available on different Apple platforms, see [Displaying Sign in with Apple buttons in your app](../SigninwithApple/displaying-sign-in-with-apple-buttons-in-your-app.md).
 

@@ -20,7 +20,7 @@ unowned(unsafe) var imageView: NSImageView? { get set }
 @property (assign, nullable) NSImageView * imageView;
 ```
 
-#### Discussion
+## Discussion
 
 This property is typically configured when the row is created in the [`NSTableViewDataSource`](../nstableviewdatasource.md) protocol method [`tableView(_:viewFor:row:)`](../nstableviewdelegate/tableview%28_,viewfor,row%29.md).
 

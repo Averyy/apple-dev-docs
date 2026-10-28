@@ -23,7 +23,7 @@ init(lowHalf: SIMD16<Int16>, highHalf: SIMD16<Int16>)
 
 Available when `Scalar` is `Int16`.
 
-#### Discussion
+## Discussion
 
 Equivalent to:
 

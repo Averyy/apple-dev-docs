@@ -21,11 +21,11 @@ Creates a new configuration that discretely animates the transition when the vie
 static func animated(_ animation: Animation = .default) -> ScrollTransitionConfiguration
 ```
 
-#### Return Value
+## Return Value
 
 A configuration that discretely animates between transition phases.
 
-#### Discussion
+## Discussion
 
 Unlike the interactive configuration, the transition isn’t interpolated as the scroll view is scrolled. Instead, the transition phase only changes once the threshold has been reached, at which time the given animation is used to animate to the new phase.
 

@@ -22,7 +22,7 @@ init?(frameWidth: Int, frameHeight: Int, scaleFactor: Int, inputType: VTSuperRes
 - (instancetype) initWithFrameWidth:(NSInteger) frameWidth frameHeight:(NSInteger) frameHeight scaleFactor:(NSInteger) scaleFactor inputType:(VTSuperResolutionScalerConfigurationInputType) inputType usePrecomputedFlow:(BOOL) usePrecomputedFlow qualityPrioritization:(VTSuperResolutionScalerConfigurationQualityPrioritization) qualityPrioritization revision:(VTSuperResolutionScalerConfigurationRevision) revision;
 ```
 
-#### Discussion
+## Discussion
 
 This processor increases resolution of an image or video. Returns `nil` if dimensions are out of range or revision is unsupported.
 

@@ -19,7 +19,7 @@ The location of an Apple Pencil hovering in the area above the view’s bounds, 
 let anchor: UnitPoint
 ```
 
-#### Discussion
+## Discussion
 
 You can pass this anchor point directly to a presentation modifier like [`popover(isPresented:attachmentAnchor:arrowEdge:content:)`](../view/popover%28ispresented,attachmentanchor,arrowedge,content%29.md) or use the [`location`](./location.md) property if you require an absolute point instead.
 

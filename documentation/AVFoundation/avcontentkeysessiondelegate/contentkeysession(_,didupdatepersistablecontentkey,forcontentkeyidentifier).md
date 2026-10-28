@@ -25,7 +25,7 @@ optional func contentKeySession(_ session: AVContentKeySession, didUpdatePersist
 - (void) contentKeySession:(AVContentKeySession *) session didUpdatePersistableContentKey:(NSData *) persistableContentKey forContentKeyIdentifier:(id) keyIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 If the content key session provides updated persistable content key data, previous key data is no longer valid and cannot be used to answer future loading requests.
 

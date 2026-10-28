@@ -25,7 +25,7 @@ struct Message
 - [Choosing a StoreKit API for Apple In-App Purchases](./choosing-a-storekit-api-for-in-app-purchases.md)
 - [Testing failing subscription renewals and Apple In-App Purchases](./testing-failing-subscription-renewals-and-in-app-purchases.md)
 
-#### Overview
+## Overview
 
 A StoreKit message represents a sheet that appears over your app to display important information from the App Store. Messages have a reason, which the  [`reason`](./message/reason-swift.property.md) value indicates. StoreKit retrieves any messages from the App Store each time your app launches, and presents them by default.
 
@@ -35,7 +35,7 @@ You can optionally use the `Message` API to control message presentation by dela
 
 StoreKit presents message sheets only if a message is still relevant. For example, if a person resolves the issue outside your app before it calls [`display(in:)`](./message/display%28in%29.md), StoreKit doesn’t present the message. StoreKit ensures that it presents each unique message once, even if the app asks to display messages multiple times.
 
-##### Listen for and display messages
+### Listen for and display messages
 
 If you want to defer or suppress App Store messages, set up the message listener in your app when your app launches.
 

@@ -21,7 +21,7 @@ A Boolean value indicating whether the scalar is an ASCII character commonly use
 var isASCIIHexDigit: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 The only scalars for which this property is `true` are:
 

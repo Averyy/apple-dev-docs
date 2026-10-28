@@ -25,7 +25,7 @@ class Metadata
 @interface CKShareMetadata : NSObject
 ```
 
-#### Overview
+## Overview
 
 A share’s metadata is an intermediary object that provides access to the share, its owner, and, for a shared record hierarchy, its root record. Metadata also includes details about the current user’s participation in the share.
 

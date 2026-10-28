@@ -19,11 +19,11 @@ func selectedCell() -> NSCell?
 - (NSCell *) selectedCell;
 ```
 
-#### Return Value
+## Return Value
 
 The selected cell object.
 
-#### Discussion
+## Discussion
 
 The default implementation of this method simply returns the control’s associated cell (or `nil` if no cell has been set). Subclasses of `NSControl` that manage multiple cells (such as `NSMatrix` and `NSForm`) must override this method to return the cell selected by the user.
 

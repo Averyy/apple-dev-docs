@@ -19,7 +19,7 @@ var compoundTypes: [NSNumber]? { get }
 @property (copy, readonly, nullable) NSArray<NSNumber *> * compoundTypes;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`NSNumber`](../../Foundation/nsnumber.md) objects specifying compound predicate types. See [`NSCompoundPredicate.LogicalType`](../../Foundation/nscompoundpredicate/logicaltype.md) for possible values.
 

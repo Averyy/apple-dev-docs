@@ -25,7 +25,7 @@ func CFBundleCopyBundleURL(_ bundle: CFBundle!) -> CFURL!
 extern CFURLRefCFBundleCopyBundleURL(CFBundleRef bundle);
 ```
 
-#### Return Value
+## Return Value
 
 A CFURL object describing the location of `bundle`, or `NULL` if the specified bundle does not exist. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

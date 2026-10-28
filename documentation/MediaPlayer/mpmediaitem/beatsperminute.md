@@ -23,7 +23,7 @@ var beatsPerMinute: Int { get }
 @property (nonatomic, readonly) NSUInteger beatsPerMinute;
 ```
 
-#### Discussion
+## Discussion
 
 This property corresponds to the “BPM” field in the Info tab in the Get Info dialog in iTunes.
 

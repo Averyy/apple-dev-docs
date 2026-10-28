@@ -25,7 +25,7 @@ static var socketIsConnected: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 A `connect(2)` or `connectx(2)` request was made on an already connected socket, or a `sendto(2)` or `sendmsg(2)` request was made on a connected socket specified a destination when already connected.
 

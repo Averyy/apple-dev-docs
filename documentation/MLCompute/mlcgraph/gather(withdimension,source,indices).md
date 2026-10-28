@@ -23,7 +23,7 @@ func gather(withDimension dimension: Int, source: MLCTensor, indices: MLCTensor)
 - (MLCTensor *) gatherWithDimension:(NSUInteger) dimension source:(MLCTensor *) source indices:(MLCTensor *) indices;
 ```
 
-#### Return Value
+## Return Value
 
 A gather tensor.
 

@@ -16,11 +16,11 @@ Match two display information dictionaries to see if they are for the same displ
 SInt32 IODisplayMatchDictionaries(CFDictionaryRef matching1, CFDictionaryRef matching2, IOOptionBits options);
 ```
 
-#### Return Value
+## Return Value
 
 Returns FALSE if the two displays are not equivalent or TRUE if they are.
 
-#### Discussion
+## Discussion
 
 By comparing two CFDictionaries returned from IODisplayCreateInfoDictionary(), this function determines if the displays are the same. The information compared is what is returned by calling IODisplayCreateInfoDictionary() with an option of kIODisplayMatchingInfo. This includes information such as the vendor, product, and serial number.
 

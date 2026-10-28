@@ -24,7 +24,7 @@ var startPoint: CGPoint { get set }
 @property CGPoint startPoint;
 ```
 
-#### Discussion
+## Discussion
 
 The start point corresponds to the first stop of the gradient. The point is defined in the unit coordinate space and is then mapped to the layer’s bounds rectangle when drawn.
 

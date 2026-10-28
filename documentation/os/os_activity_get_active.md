@@ -23,11 +23,11 @@ Returns the stack of nested activities associated with the current thread.
 extern unsigned int os_activity_get_active(os_activity_id_t *entries, unsigned int *count);
 ```
 
-#### Return Value
+## Return Value
 
 The number of activities written to `entries`.
 
-#### Discussion
+## Discussion
 
 Because activities can be nested, there can be more than one activity involved on the current thread.
 

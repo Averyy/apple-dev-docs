@@ -23,7 +23,7 @@ class UIImagePickerController
 @interface UIImagePickerController : UINavigationController
 ```
 
-#### Overview
+## Overview
 
 An image picker controller manages user interactions and delivers the results of those interactions to a delegate object. The role and appearance of an image picker controller depend on the *source type* you assign to it before you present it.
 
@@ -55,25 +55,25 @@ You can customize an image picker controller to manage user interactions yoursel
 
 > ❗ **Important**:  The `UIImagePickerController` class supports portrait mode only. This class is intended to be used as-is and doesn’t support subclassing. The view hierarchy for this class is private and must not be modified, with one exception. You can assign a custom view to the [`cameraOverlayView`](./uiimagepickercontroller/cameraoverlayview.md) property and use that view to present additional information or manage the interactions between the camera interface and your code.
 
-##### Provide a delegate object
+### Provide a delegate object
 
 To use an image picker controller, you must provide a delegate that conforms to the [`UIImagePickerControllerDelegate`](./uiimagepickercontrollerdelegate.md) protocol. Starting in iOS 4.1, you can use the delegate to save still-image metadata to the photo library along with the image. See [`UIImagePickerControllerDelegate`](./uiimagepickercontrollerdelegate.md).
 
-##### Observe required viewing standards
+### Observe required viewing standards
 
 As a view controller that renders on top of your app for the temporary purpose of selecting images, the picker controller expects your app to keep its contents visible as a prerequisite to operation. In iOS 17 and later, the picker controller ignores touch events while its opacity is anything other than fully opaque. If your app alters the controller’s visibility, such as by adjusting the [`opacity`](../QuartzCore/calayer/opacity.md) of its view’s layer, the picker controller disables user interaction.
 
-##### Adjust flash mode
+### Adjust flash mode
 
 In iOS 4.0 and later, you can provide custom controls to let the user adjust flash mode (on devices that have a flash LED), pick which camera to use (on devices that have a front and rear camera), and switch between still image and movie capture. You can also manage these settings programmatically. You can also manipulate the flash directly to provide effects, such as a strobe light. Present a picker interface set to use video capture mode. Then, turn the flash LED on or off by setting the [`cameraFlashMode`](./uiimagepickercontroller/cameraflashmode-swift.property.md) property to [`UIImagePickerController.CameraFlashMode.on`](./uiimagepickercontroller/cameraflashmode-swift.enum/on.md) or [`UIImagePickerController.CameraFlashMode.off`](./uiimagepickercontroller/cameraflashmode-swift.enum/off.md).
 
-##### Work with movies
+### Work with movies
 
 Movie capture has a default duration limit of 10 minutes but can be adjusted using the [`videoMaximumDuration`](./uiimagepickercontroller/videomaximumduration.md) property. When a person taps the Share button to send a movie to MMS, YouTube, or another destination, the system applies duration and video quality limitations.
 
 The default camera interface supports editing movies in the photo library. Editing involves trimming from the start or end of the movie, then saving the trimmed movie. To display an interface dedicated to movie editing, rather than one that also supports recording new movies, use the [`UIVideoEditorController`](./uivideoeditorcontroller.md) class instead of this one. See [`UIVideoEditorController`](./uivideoeditorcontroller.md).
 
-##### Work with Live Photos
+### Work with Live Photos
 
 Live Photos is a Camera app feature on supported devices, enabling a picture to be not just a single moment in time but to include motion and sound from the moments just before and after its capture. A [`PHLivePhoto`](../Photos/phlivephoto.md) object represents a Live Photo, and the [`PHLivePhotoView`](../PhotosUI/phlivephotoview.md) class provides a system-standard, interactive user interface for displaying a Live Photo and playing back its content.
 
@@ -81,7 +81,7 @@ Although Live Photos include sound and motion, they remain photos. When you use 
 
 To obtain the full motion and sound content when the user chooses a Live Photo with the image picker, you must include *both* the `kUTTypeImage` and `kUTTypeLivePhoto` types in the [`mediaTypes`](./uiimagepickercontroller/mediatypes.md) array. For more information, see [`livePhoto`](./uiimagepickercontroller/infokey/livephoto.md) in [`UIImagePickerControllerDelegate`](./uiimagepickercontrollerdelegate.md).
 
-##### Perform fully customized media capture and browsing
+### Perform fully customized media capture and browsing
 
 To perform fully customized image or movie capture, instead use the [AVFoundation](../AVFoundation/AVFoundation.md) framework as described in [Still and Video Media Capture](https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/AVFoundationPG/Articles/00_Introduction.html#//apple_ref/doc/uid/TP40010188-CH1-SW10). Camera access using the AVFoundation framework is available starting in iOS 4.0.
 

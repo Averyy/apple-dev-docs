@@ -25,7 +25,7 @@ var BNNSShuffleTypePixelUnshuffleNCHW: BNNSShuffleType { get }
 BNNSShuffleTypePixelUnshuffleNCHW
 ```
 
-#### Discussion
+## Discussion
 
 Use this shuffle type to reverse the pixel shuffle operation by rearranging elements in a tensor of shape `(N,C,H×r,W×r)` to a tensor of shape `(N,C×rxr,H,W)`, where `r` is a downscale factor
 

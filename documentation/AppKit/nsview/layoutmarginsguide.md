@@ -19,7 +19,7 @@ var layoutMarginsGuide: NSLayoutGuide { get }
 @property (strong, readonly) NSLayoutGuide * layoutMarginsGuide;
 ```
 
-#### Discussion
+## Discussion
 
 To ensure you pad your view’s content by the correct amount, constrain against the anchors of the layout margins guide on all sides. The system automatically updates the guide when a view becomes the content view.
 

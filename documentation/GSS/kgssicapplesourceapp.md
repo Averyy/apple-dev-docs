@@ -23,7 +23,7 @@ var kGSSICAppleSourceApp: String { get }
 #define kGSSICAppleSourceApp
 ```
 
-#### Discussion
+## Discussion
 
 This dictionary can contain the keys found in Apple Source App Keys.
 

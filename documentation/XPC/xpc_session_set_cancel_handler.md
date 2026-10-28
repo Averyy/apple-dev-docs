@@ -21,7 +21,7 @@ Sets a handler the session calls when it’s canceled.
 extern void xpc_session_set_cancel_handler(xpc_session_t session, xpc_session_cancel_handler_t cancel_handler);
 ```
 
-#### Discussion
+## Discussion
 
 The `session` you pass to this method must be inactive. To create an inactive session, use the [`XPC_SESSION_CREATE_INACTIVE`](./xpc_session_create_flags_t-c.enum/xpc_session_create_inactive.md) flag when you call [`xpc_session_create_xpc_service`](./xpc_session_create_xpc_service.md) or [`xpc_session_create_mach_service`](./xpc_session_create_mach_service.md). If the session already has a cancellation handler, this method replaces it.
 

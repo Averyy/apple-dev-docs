@@ -24,11 +24,11 @@ convenience init?(name: CAValueFunctionName)
 + (instancetype) functionWithName:(CAValueFunctionName) name;
 ```
 
-#### Return Value
+## Return Value
 
 A new `CAValueFunction` instance with the value function specified by the name.
 
-#### Discussion
+## Discussion
 
 The possible values for `name` are specified in [Rotate Value Functions](../rotate-value-functions.md), [Scale Value Functions](../scale-value-functions.md), and [Translate Functions](../translate-functions.md).
 

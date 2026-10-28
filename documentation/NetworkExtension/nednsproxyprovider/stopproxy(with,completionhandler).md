@@ -27,7 +27,7 @@ func stopProxy(with reason: NEProviderStopReason) async
 - (void) stopProxyWithReason:(NEProviderStopReason) reason completionHandler:(void (^)()) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses of [`NEDNSProxyProvider`](../nednsproxyprovider.md) must override this method to perform whatever steps are necessary to stop the proxy.
 

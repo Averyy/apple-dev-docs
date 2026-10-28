@@ -16,7 +16,7 @@ A default implementation that indicates the overlay view handles the given key-d
 func overlayView(_ overlayView: ImageAnalysisOverlayView, shouldHandleKeyDownEvent event: NSEvent) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 This default implementation returns `true`.
 

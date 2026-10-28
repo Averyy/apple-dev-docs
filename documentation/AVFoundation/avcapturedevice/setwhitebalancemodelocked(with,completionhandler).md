@@ -26,7 +26,7 @@ func setWhiteBalanceModeLocked(with whiteBalanceGains: AVCaptureDevice.WhiteBala
 - (void) setWhiteBalanceModeLockedWithDeviceWhiteBalanceGains:(AVCaptureWhiteBalanceGains) whiteBalanceGains completionHandler:(void (^)(CMTime syncTime)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 Each channel in the white balance gains structure supports values between `1.0` and [`maxWhiteBalanceGain`](./maxwhitebalancegain.md). Setting a channel value outside this range generates an exception.
 

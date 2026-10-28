@@ -26,7 +26,7 @@ var device: (any MTLDevice)? { get }
 @property (nonatomic, readonly, nullable) id<MTLDevice> device;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to create or look up other Metal resources that use the same device as your SceneKit renderer.
 

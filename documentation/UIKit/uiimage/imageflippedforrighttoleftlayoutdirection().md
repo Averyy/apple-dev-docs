@@ -24,11 +24,11 @@ func imageFlippedForRightToLeftLayoutDirection() -> UIImage
 - (UIImage *) imageFlippedForRightToLeftLayoutDirection;
 ```
 
-#### Return Value
+## Return Value
 
 The current image, prepared to flip horizontally if it’s in a right-to-left layout.
 
-#### Discussion
+## Discussion
 
 Use this method to specify an image that should flip in a right-to-left layout. Note that most images do not need to flip in a right-to-left layout.
 

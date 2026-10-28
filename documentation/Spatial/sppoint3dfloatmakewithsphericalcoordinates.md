@@ -19,11 +19,11 @@
 static SPPoint3DFloat SPPoint3DFloatMakeWithSphericalCoordinates(SPSphericalCoordinates3DFloat coords);
 ```
 
-#### Return Value
+## Return Value
 
 A new point that contains the spherical coorddinates converted to Cartesian coordinates.
 
-#### Discussion
+## Discussion
 
 Returns a Spatial point that represents the Cartesian coordinates of the specified spherical coordinates structure.
 

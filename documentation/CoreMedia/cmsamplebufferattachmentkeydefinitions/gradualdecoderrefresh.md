@@ -21,7 +21,7 @@ Indicates the decoder refresh count.
 static let gradualDecoderRefresh: CVAttachmentKeyDefinition<CMSampleBufferAttachmentKeyDefinitions.ShouldPropagate, Int16>
 ```
 
-#### Discussion
+## Discussion
 
 Sample buffers with this attachment may be used to identify the audio decoder refresh count.
 

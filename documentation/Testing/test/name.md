@@ -23,7 +23,7 @@ The name of this instance.
 var name: String { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is equal to the name of the symbol to which the [`Test`](../test.md) attribute is applied (that is, the name of the type or function.) To get the customized display name specified as part of the [`Test`](../test.md) attribute, use the [`displayName`](./displayname.md) property.
 

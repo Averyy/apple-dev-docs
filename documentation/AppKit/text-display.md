@@ -5,7 +5,7 @@
 
 Display text and check spelling.
 
-#### Overview
+## Overview
 
 In most cases, you can lay out your app’s text using the [`NSTextField`](./nstextfield.md) or [`NSTextView`](./nstextview.md) classes (or their subclasses). Use the [`NSTextField`](./nstextfield.md) class to add either a label or a simple text input. Use the [`NSTextView`](./nstextview.md) class to provide more comprehensive layout and editing features for larger bodies of text.
 
@@ -15,7 +15,7 @@ For example, [`NSTextView`](./nstextview.md) supports rich text, attachments (gr
 
 For even more powerful and more creative text manipulation (such as displaying text in a circle) see [TextKit](./textkit.md).
 
-##### Spell-checking
+### Spell-checking
 
 The [`NSSpellServer`](../Foundation/nsspellserver.md) class lets you define a spell-checking service and provide it as a service to other apps. To connect your app to a spell-checking service, use the [`NSSpellChecker`](./nsspellchecker.md) class. The [`NSIgnoreMisspelledWords`](./nsignoremisspelledwords.md) and [`NSChangeSpelling`](./nschangespelling.md) protocols support the spell-checking mechanism.
 

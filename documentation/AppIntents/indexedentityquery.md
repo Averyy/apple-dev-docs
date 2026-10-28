@@ -24,7 +24,7 @@ protocol IndexedEntityQuery : EntityQuery where Self.Entity : IndexedEntity
 - [Making app entities available in Spotlight](./making-app-entities-available-in-spotlight.md)
 - [Defining app entities for your custom data types](./defining-app-entities-for-your-custom-data-types.md)
 
-#### Overview
+## Overview
 
 Adopt this protocol in query types for app entities that you donate to your app’s Spotlight index using the [`indexAppEntities(_:priority:)`](../CoreSpotlight/cssearchableindex/indexappentities%28_,priority%29.md) method. When the system encounters an issue with an app’s index, it can ask that app to reindex its content. During reindexing, the system calls the methods of this protocol if your query type supports the protocol. If your type doesn’t support the protocol, Spotlight continues to ask your app’s [`CSSearchableIndexDelegate`](../CoreSpotlight/cssearchableindexdelegate.md) object to reindex any content. Similarly, if you donated an entity by associating it with a [`CSSearchableItem`](../CoreSpotlight/cssearchableitem.md) type, Spotlight uses your [`CSSearchableIndexDelegate`](../CoreSpotlight/cssearchableindexdelegate.md) object.
 

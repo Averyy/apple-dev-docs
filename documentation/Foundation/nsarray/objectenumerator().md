@@ -25,11 +25,11 @@ func objectEnumerator() -> NSEnumerator
 - (NSEnumerator<id> *) objectEnumerator;
 ```
 
-#### Return Value
+## Return Value
 
 An enumerator object that lets you access each object in the array, in order, from the element at the lowest index upwards.
 
-#### Discussion
+## Discussion
 
 Returns an enumerator object that lets you access each object in the array, in order, starting with the element at index 0, as in:
 
@@ -42,7 +42,7 @@ while (anObject = [enumerator nextObject]) {
 }
 ```
 
-##### Special Considerations
+### Special Considerations
 
 When you use this method with mutable subclasses of `NSArray`, you must not modify the array during enumeration.
 

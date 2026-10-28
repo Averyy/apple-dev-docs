@@ -20,11 +20,11 @@ typealias SecTransformInstanceBlock = () -> Unmanaged<CFError>?
 typedef struct __CFError *(^)(void) SecTransformInstanceBlock;
 ```
 
-#### Return Value
+## Return Value
 
 A an error object if an error occurred.
 
-#### Discussion
+## Discussion
 
 You return a block of this type from the custom transform creation function of type [`SecTransformCreateFP`](./sectransformcreatefp.md) that you register with the [`SecTransformRegister(_:_:_:)`](./sectransformregister%28_,_,_%29.md) function.
 

@@ -23,7 +23,7 @@ func decodeRestorableState(with coder: NSCoder)
 - (void) decodeRestorableStateWithCoder:(NSCoder *) coder;
 ```
 
-#### Discussion
+## Discussion
 
 If your app supports state restoration, you should override this method for any views for which you also overrode the [`encodeRestorableState(with:)`](./encoderestorablestate%28with%29.md) method. Your implementation of this method should use any saved state information to restore the view to its previous configuration. If your [`encodeRestorableState(with:)`](./encoderestorablestate%28with%29.md) method called `super`, this method should similarly call `super` at some point in its implementation.
 

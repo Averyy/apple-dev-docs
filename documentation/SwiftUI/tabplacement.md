@@ -21,7 +21,7 @@ A place that a tab can appear.
 struct TabPlacement
 ```
 
-#### Overview
+## Overview
 
 Not all `TabView` styles support all placements.
 

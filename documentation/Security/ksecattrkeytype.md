@@ -29,7 +29,7 @@ extern CFStringRef const kSecAttrKeyType;
 
 - [Generating New Cryptographic Keys](./generating-new-cryptographic-keys.md)
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFNumber`](../CoreFoundation/cfnumber.md) and indicates the algorithm associated with this cryptographic key. See [Key Type Values](./item-attribute-keys-and-values.md#Key-Type-Values) for a list of valid values.
 

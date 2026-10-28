@@ -17,7 +17,7 @@ Element-wise subtraction with a [`ScalarOrArray`](../scalarorarray.md) (scalar) 
 static func - (lhs: some ScalarOrArray, rhs: MLXArray) -> MLXArray
 ```
 
-##### See Also
+### See Also
 
 - [Arithmetic](../arithmetic.md)
 

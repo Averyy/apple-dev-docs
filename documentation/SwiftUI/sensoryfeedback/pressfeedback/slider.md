@@ -21,7 +21,7 @@ Indicates that a slider’s thumb has been pressed (touch down).
 static let slider: SensoryFeedback.PressFeedback
 ```
 
-#### Discussion
+## Discussion
 
 Slider controls should also play [`release(_:)`](../release%28_%29.md) with [`slider`](../releasefeedback/slider.md).
 

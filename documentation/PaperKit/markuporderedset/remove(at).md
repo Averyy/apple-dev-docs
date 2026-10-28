@@ -20,11 +20,11 @@ Removes and returns the element at the specified position.
 mutating func remove(at index: Int) -> MarkupOrderedSet.Element
 ```
 
-#### Return Value
+## Return Value
 
 The removed element.
 
-#### Discussion
+## Discussion
 
 The operation moves all elements following the specified position to close the resulting gap.
 

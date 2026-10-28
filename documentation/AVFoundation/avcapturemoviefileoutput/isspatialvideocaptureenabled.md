@@ -23,7 +23,7 @@ var isSpatialVideoCaptureEnabled: Bool { get set }
 @property (nonatomic, getter=isSpatialVideoCaptureEnabled) BOOL spatialVideoCaptureEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 Spatial capture lets you record your favorite moments in 3D for playback on Apple Vision Pro. This feature isn’t supported on all devices, so you can only enable this property when [`isSpatialVideoCaptureSupported`](./isspatialvideocapturesupported.md) is [`true`](../../Swift/true.md).
 

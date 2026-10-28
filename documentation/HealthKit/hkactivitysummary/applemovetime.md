@@ -24,7 +24,7 @@ var appleMoveTime: HKQuantity { get set }
 @property (nonatomic, strong) HKQuantity * appleMoveTime;
 ```
 
-#### Discussion
+## Discussion
 
 Move time measures every full minute where the watch detects active, full-body movements, like walking, running, or playing in the playground. For younger users, HealthKit’s activity summary can track move time instead of active energy burned. For more information, see [`HKActivityMoveMode.appleMoveTime`](../hkactivitymovemode/applemovetime.md).
 

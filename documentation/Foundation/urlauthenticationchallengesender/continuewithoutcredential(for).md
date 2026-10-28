@@ -26,7 +26,7 @@ func continueWithoutCredential(for challenge: URLAuthenticationChallenge)
 - (void) continueWithoutCredentialForAuthenticationChallenge:(NSURLAuthenticationChallenge *) challenge;
 ```
 
-#### Discussion
+## Discussion
 
 This method has no effect if it is called with an authentication challenge that has already been handled.
 

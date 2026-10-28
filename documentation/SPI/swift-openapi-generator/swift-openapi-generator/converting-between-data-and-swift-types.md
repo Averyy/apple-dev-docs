@@ -10,7 +10,7 @@ framework: "swift-openapi-generator/swift-openapi-generator"
 
 Learn about the type responsible for converting between binary data and Swift types.
 
-#### Overview
+## Overview
 
 The [Converter](https://github.com/apple/swift-openapi-runtime/blob/main/Sources/OpenAPIRuntime/Conversion/Converter.swift) type is a structure defined in the runtime library and is used by both the client and server generated code to perform conversions between binary data and Swift types.
 
@@ -26,7 +26,7 @@ Some helper methods can be reused between client and server code, such as header
 
 The converter, it contains helper methods for all the supported combinations of an schema location, a “coding strategy” and a Swift type.
 
-##### Codable and coders
+### Codable and coders
 
 The project uses multiple encoder and decoder implementations that all utilize the `Codable` conformance of generated and built-in types.
 
@@ -42,7 +42,7 @@ At the time of writing, the list of coders used is as follows.
 
 While the generator attempts to catch invalid inputs at generation time, there are still combinations of `Codable` types and locations that aren’t compatible, and will only get caught at runtime by the specific coder implementation. For example, one could ask the `StringEncoder` to encode an array, but the encoder will throw an error, as containers are not supported in that encoder.
 
-##### Dimensions of helper methods
+### Dimensions of helper methods
 
 Below is a list of the “dimensions” across which the helper methods differ:
 
@@ -85,7 +85,7 @@ Below is a list of the “dimensions” across which the helper methods differ:
   - *optional* represents a special overload only for optional values
   - *both* represents a special overload that works for optional values without negatively impacting passed-in required values (for example, setters)
 
-##### Helper method variants
+### Helper method variants
 
 Together, the dimensions are enough to deterministically decide which helper method on the converter should be used.
 

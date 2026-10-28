@@ -21,7 +21,7 @@ A Boolean value indicating whether the work item has been canceled.
 var isCancelled: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the work item has been canceled.
 

@@ -22,7 +22,7 @@ func setConfidence(_ confidence: NEHotspotHelperConfidence)
 - (void) setConfidence:(NEHotspotHelperConfidence) confidence;
 ```
 
-#### Discussion
+## Discussion
 
 Hotspot Helper apps use this method in the response to the [`NEHotspotHelperCommandType.evaluate`](../nehotspothelpercommandtype/evaluate.md) and [`NEHotspotHelperCommandType.filterScanList`](../nehotspothelpercommandtype/filterscanlist.md) commands.
 

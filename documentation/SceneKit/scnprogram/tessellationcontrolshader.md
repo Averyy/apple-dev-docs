@@ -25,7 +25,7 @@ var tessellationControlShader: String? { get set }
 @property (nonatomic, copy, nullable) NSString * tessellationControlShader;
 ```
 
-#### Discussion
+## Discussion
 
 A program’s tessellation control shader executes once for each vertex in the geometry it renders. The tessellation control shader takes as input the vertex positions output by the vertex shader, and outputs tessellation-level information to be used by the hardware tessellator for subdividing polygons and edges. The tessellator then provides input to your tessellation evaluation shader.
 

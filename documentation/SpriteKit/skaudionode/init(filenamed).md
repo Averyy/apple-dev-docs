@@ -25,11 +25,11 @@ convenience init(fileNamed name: String)
 - (instancetype) initWithFileNamed:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized audio node.
 
-#### Discussion
+## Discussion
 
 The named file containing the audio asset must reside within the main bundle.
 

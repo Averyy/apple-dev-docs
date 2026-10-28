@@ -24,7 +24,7 @@ let HKMetadataKeyDeviceSerialNumber: String
 extern NSString * const HKMetadataKeyDeviceSerialNumber;
 ```
 
-#### Discussion
+## Discussion
 
 This key takes a string value.
 

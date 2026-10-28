@@ -24,11 +24,11 @@ class func creationRequestForAssetFromVideo(atFileURL fileURL: URL) -> Self?
 + (instancetype) creationRequestForAssetFromVideoAtFileURL:(NSURL *) fileURL;
 ```
 
-#### Return Value
+## Return Value
 
 An asset creation request.
 
-#### Discussion
+## Discussion
 
 Call this method within a photo library change block to create a new asset. For details on change blocks, see [`PHPhotoLibrary`](../phphotolibrary.md).
 

@@ -21,7 +21,7 @@ Scrolls the position of the scroll view to the point you provide.
 mutating func scrollTo(point: CGPoint)
 ```
 
-#### Discussion
+## Discussion
 
 The scroll view will clamp this value to only scroll to the size of its actual content.
 

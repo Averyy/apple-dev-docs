@@ -15,7 +15,7 @@ An error that indicates a default message isn’t configured.
 object DefaultMessageNotFoundError
 ```
 
-#### Overview
+## Overview
 
 For information on configuring default messages, see [Setting up retention messages](./setting-up-retention-messages.md).
 

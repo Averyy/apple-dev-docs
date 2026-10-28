@@ -6,7 +6,7 @@
 
 Four atoms that define a rectangle.
 
-#### Overview
+## Overview
 
 Not all atoms must be present: top and left must both appear together, width and height must both appear together. The dimensions contained in this rectangle are used in place of the track box when applying the contents of the spatial adjustment atom. If the top and left are not specified, the top and left of the containing track’s box are used. If the width and height are not specified, the width and height of the containing track’s box are used. Each atom contains a `UInt32`.
 

@@ -24,11 +24,11 @@ class func falseColor() -> any CIFilter & CIFalseColor
 + (CIFilter<CIFalseColor> *) falseColorFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the false color filter to an image. The effect maps the luminance to a color ramp from `color0` to `color1`. People use this effect to process astronomical and other scientific data, such as ultraviolet and X-ray images.
 

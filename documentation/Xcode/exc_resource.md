@@ -5,7 +5,7 @@
 
 The operating system stopped the process because the process exceeded a limit on resource consumption, like CPU time or memory.
 
-#### Overview
+## Overview
 
 If the `Exception Note` field contains `NON-FATAL CONDITION`, this means the operating system generated a crash report without actually terminating the process. The `Exception Message` field describes the amount of resources consumed over a specific time interval.
 

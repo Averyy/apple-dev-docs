@@ -21,11 +21,11 @@ Unsafely converts an unmanaged class reference to a pointer.
 func toOpaque() -> UnsafeMutableRawPointer
 ```
 
-#### Return Value
+## Return Value
 
 An opaque pointer to the value of this unmanaged reference.
 
-#### Discussion
+## Discussion
 
 This operation does not change reference counts.
 

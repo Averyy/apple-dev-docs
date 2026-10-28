@@ -20,7 +20,7 @@ Creates a rate map descriptor with a set of layer descriptors.
 + (MTLRasterizationRateMapDescriptor *) rasterizationRateMapDescriptorWithScreenSize:(MTLSize) screenSize layerCount:(NSUInteger) layerCount layers:(MTLRasterizationRateLayerDescriptor * const*) layers;
 ```
 
-#### Return Value
+## Return Value
 
 A descriptor object whose [`screenSize`](./screensize.md) is set to the provided size and whose rate map layers are set to the array you provided.
 

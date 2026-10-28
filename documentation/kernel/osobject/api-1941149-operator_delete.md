@@ -13,7 +13,7 @@ static void operator delete(
  size_tsize);
 ```
 
-#### Overview
+## Overview
 
 Never use `delete` on objects derived from OSObject; use release instead.
 

@@ -21,7 +21,7 @@ A regex component that matches a specific condition at a particular position in 
 struct Anchor
 ```
 
-#### Overview
+## Overview
 
 You can use anchors to guarantee that a match only occurs at certain points in an input string, such as at the beginning of the string or at the end of a line.
 

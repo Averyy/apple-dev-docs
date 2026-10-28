@@ -21,7 +21,7 @@ Prefer the quality-of-service class associated with the current execution contex
 static let inheritQoS: DispatchWorkItemFlags
 ```
 
-#### Discussion
+## Discussion
 
 This flag prioritizes the quality-of-service class of the current execution context over the one associated with the block, as long as doing so does not lower the quality of service.
 

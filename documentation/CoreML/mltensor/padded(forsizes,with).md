@@ -21,11 +21,11 @@ Returns a tensor padded with the given constant according to the specified paddi
 func padded(forSizes sizes: [(before: Int, after: Int)], with value: Float) -> MLTensor
 ```
 
-#### Return Value
+## Return Value
 
 The padded tensor.
 
-#### Discussion
+## Discussion
 
 For example:
 

@@ -26,7 +26,7 @@ func completeSavePasswordRequest() async -> Bool
 - (void) completeSavePasswordRequestWithCompletionHandler:(void (^)(BOOL expired)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: You are responsible for updating the ASCredentialIdentityStore.
 

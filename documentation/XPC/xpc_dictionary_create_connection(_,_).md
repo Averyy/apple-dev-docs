@@ -25,7 +25,7 @@ func xpc_dictionary_create_connection(_ xdict: xpc_object_t, _ key: UnsafePointe
 extern xpc_connection_txpc_dictionary_create_connection(xpc_object_t xdict, const char *key);
 ```
 
-#### Return Value
+## Return Value
 
 A new connection created from the value for the specified key. You are responsible for calling [`xpc_release`](./xpc_release.md) on the returned connection. `NULL` if the value for the specified key is not an endpoint containing a connection or if there is no value for the specified key. Each call to this method for the same key in the same dictionary will yield a different connection. See [`xpc_connection_create_from_endpoint(_:)`](./xpc_connection_create_from_endpoint%28_%29.md) for discussion as to the responsibilities when dealing with the returned connection.
 

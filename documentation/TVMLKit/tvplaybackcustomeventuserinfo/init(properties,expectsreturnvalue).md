@@ -21,11 +21,11 @@ init(properties: [TVPlaybackEventProperty : Any]?, expectsReturnValue: Bool)
 - (instancetype) initWithProperties:(NSDictionary<NSString *,id> *) properties expectsReturnValue:(BOOL) expectsReturnValue;
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the custom playback event requires a return value.
 
-#### Discussion
+## Discussion
 
 When created, if the function requires a return value, it is only dispatched to first listener. Otherwise, it is broadcast to all of the listeners.
 

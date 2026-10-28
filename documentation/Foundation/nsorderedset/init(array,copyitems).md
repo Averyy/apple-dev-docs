@@ -25,7 +25,7 @@ convenience init(array set: [Any], copyItems flag: Bool)
 - (instancetype) initWithArray:(NSArray<id> *) set copyItems:(BOOL) flag;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized ordered set containing a uniqued collection of the objects contained in the array.
 

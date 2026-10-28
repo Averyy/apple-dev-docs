@@ -12,11 +12,11 @@ virtual IOReturn disable(
  IOService *client);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the return from the overloaded disable() method, or kIOReturnBadArgument if the client type is unknown.
 
-#### Overview
+## Overview
 
 This method handles a disable request from a client. A client will call disable if it has previously enabled the controller, and it no longer needs to transport packets or perform I/O using the controller. The client object is typecasted using OSDynamicCast, and depending on whether the client is an IOKernelDebugger or an IONetworkInterface, then an overloaded disable method that takes a more specific argument type is called. If the client matches neither type, then kIOReturnBadArgument is returned. A driver has the option of overriding this base disable method, or the overloaded form. This method call is synchronized by the workloop's gate.
 

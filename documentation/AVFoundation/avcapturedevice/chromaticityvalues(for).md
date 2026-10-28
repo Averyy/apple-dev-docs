@@ -22,11 +22,11 @@ func chromaticityValues(for whiteBalanceGains: AVCaptureDevice.WhiteBalanceGains
 - (AVCaptureWhiteBalanceChromaticityValues) chromaticityValuesForDeviceWhiteBalanceGains:(AVCaptureWhiteBalanceGains) whiteBalanceGains;
 ```
 
-#### Return Value
+## Return Value
 
 A structure that contains device-independent values.
 
-#### Discussion
+## Discussion
 
 Call this method to convert device-specific white balance RGB gain values to device-independent chromaticity (little x, little y) values.
 

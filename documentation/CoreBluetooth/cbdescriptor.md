@@ -25,7 +25,7 @@ class CBDescriptor
 @interface CBDescriptor : CBAttribute
 ```
 
-#### Overview
+## Overview
 
 [`CBDescriptor`](./cbdescriptor.md) and its subclass [`CBMutableDescriptor`](./cbmutabledescriptor.md) represent a descriptor of a peripheral’s characteristic. In partcular, [`CBDescriptor`](./cbdescriptor.md) objects represent the descriptors of a remote peripheral’s characteristic. Descriptors provide further information about a characteristic’s value. For example, they may describe the value in human-readable form and describe how to format the value for presentation purposes. Characteristic descriptors also indicate whether a characteristic’s value indicates or notifies a client (a central) when the value of the characteristic changes.
 

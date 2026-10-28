@@ -18,7 +18,7 @@ The dictionary of app privacy permission defaults. Each key in the dictionary is
 object AppSettingsPrivacy_PermissionDefaultsObject
 ```
 
-#### Discussion
+## Discussion
 
 In iOS, the app identifier is a bundle ID, for example, “com.example.app”.
 

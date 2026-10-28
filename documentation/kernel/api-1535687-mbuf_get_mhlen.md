@@ -13,11 +13,11 @@
 u_int32_t mbuf_get_mhlen(void);
 ```
 
-#### Return Value
+## Return Value
 
 The number of bytes of available data.
 
-#### Discussion
+## Discussion
 
 This routine returns the number of data bytes in a packet header mbuf. This is equivalent to the legacy MHLEN macro.
 

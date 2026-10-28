@@ -5,13 +5,13 @@
 
 Construct a digital pass for store loyalty and gift cards.
 
-#### Overview
+## Overview
 
 Use store card passes for discount, gift, and store loyalty cards. Setting the store card pass style provides data that Wallet displays automatically, such as store points, rewards balance, terms and conditions, and other helpful information.
 
 ![An image of a mock coffee shop store card with a strip image background.](https://developer.apple.com/tutorials/images/com.apple.walletpasses/store-card@2x.png)
 
-#### Create your pass type identifier
+## Create your pass type identifier
 
 Signing a pass requires a signing certificate for the *pass type identifier*, which is similar to a bundle identifier, or a class name. The value for the `passTypeIdentifier` key specifies the pass type identifier. You choose a string to define a class or category of passes; the string always begins with `pass`, and uses reverse DNS style—for example, `pass.com.example.loyalty-card`. Create your pass type identifier in the [Certificates, Identifiers & Profiles](https://developer.apple.com/account/resources) area of your Apple Developer account. The pass type identifier must match the certificate used to sign the pass. For more information on creating Wallet certificates, see [Create Wallet identifiers and certificates](https://developer.apple.com/help/account/capabilities/create-wallet-identifiers-and-certificates/).
 
@@ -23,7 +23,7 @@ PassKit uses the combination of pass type identifier and serial number to unique
 
 For more information on creating your pass type identifier, see [Create a Pass Type Identifier](./building-a-pass.md#Create-a-Pass-Type-Identifier).
 
-#### Add the store card pass style
+## Add the store card pass style
 
 The pass’s style determines the overall visual appearance of the pass and the template for placement of information on the pass. The value of the pass style key is a dictionary containing fields that hold the pass content. Specify the pass style by providing the corresponding key at the top level of the `pass.json` file; store card passes use the key `storeCard`. For more information on building your pass json file, see [Building a Pass](./building-a-pass.md).
 
@@ -114,7 +114,7 @@ The following example shows a `pass.json` file with the `storeCard` pass style a
 
 > **Note**:  A pass viewed on an Apple Watch doesn’t show the strip image (banner image), thumbnail image, or the information on the back of the pass.
 
-#### Provide scannable codes
+## Provide scannable codes
 
 Passes can work with Near Field Communication (NFC) readers and barcodes. Someone can hold a device near an NFC reader with the contactless symbol to use their pass. When employing NFC, the pass doesn’t need a barcode.
 
@@ -124,7 +124,7 @@ For more information on barcodes, see [`Pass.Barcodes`](./pass/barcodes-data.dic
 
 For design guidance about store cards, see Human Interface Guidelines > Wallet > Passes > [Store cards](https://developer.apple.com/design/human-interface-guidelines/wallet#Store-cards).
 
-#### Debug the pass
+## Debug the pass
 
 If the pass doesn’t display and add to Wallet, check the logs for a description of what went wrong. If you’re using Simulator to debug, you can drag your `.pkpass` file into the Simulator, then use the Console app on your Mac to view the Simulator device logs.
 

@@ -17,7 +17,7 @@ An approximation to Gaussian Error Linear Unit.
 func geluApproximate(_ x: MLXArray) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 This is:
 
@@ -25,7 +25,7 @@ This is:
 0.5 * x * (1 + tanh(sqrt(2 / Float.pi) * (x + 0.044715 * x**3)))
 ```
 
-##### See Also
+### See Also
 
 - [Activation Functions and Layers](./activations.md)
 - [`GELU`](./gelu.md)

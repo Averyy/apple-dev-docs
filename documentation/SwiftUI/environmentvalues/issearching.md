@@ -25,7 +25,7 @@ var isSearching: Bool { get }
 
 - [Managing search interface activation](../managing-search-interface-activation.md)
 
-#### Discussion
+## Discussion
 
 You can read this value like any of the other [`EnvironmentValues`](../environmentvalues.md), by creating a property with the [`Environment`](../environment.md) property wrapper:
 

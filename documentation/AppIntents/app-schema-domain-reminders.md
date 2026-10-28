@@ -5,7 +5,7 @@
 
 Make your reminder app’s actions available to Apple Intelligence and Siri by adopting schemas for common reminder actions.
 
-#### Overview
+## Overview
 
 The `.reminders` domain defines app schemas that provide a structured representation for common reminder actions and content. Apply schemas in the `.reminders` domain to make your app’s reminder functionality available to Apple Intelligence and Siri. Each schema defines the requirements for intents, parameters, and results so people get a consistent experience across reminder apps. For example, a person can create a reminder on different apps that support the [`createReminder`](./appschema/remindersintent/createreminder.md) schema with the same phrases.
 

@@ -21,7 +21,7 @@ enum TextContentType
 
 - [Scanning data with the camera](../scanning-data-with-the-camera.md)
 
-#### Overview
+## Overview
 
 To configure a [`DataScannerViewController`](../datascannerviewcontroller.md), pass one or more options into its initializer. For example, the following code creates a data scanner that detects textual references to money.
 

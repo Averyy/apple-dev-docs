@@ -24,7 +24,7 @@ func selectionsByLine() -> [PDFSelection]
 - (NSArray<PDFSelection *> *) selectionsByLine;
 ```
 
-#### Discussion
+## Discussion
 
 If you call this method on a `PDFSelection` object that represents a paragraph, for example, `selectionsByLine` returns an array that contains one `PDFSelection` object for each line of text in the paragraph.
 

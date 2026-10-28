@@ -24,7 +24,7 @@ optional func accessoryDidUpdateReachability(_ accessory: HMAccessory)
 - (void) accessoryDidUpdateReachability:(HMAccessory *) accessory;
 ```
 
-#### Discussion
+## Discussion
 
 Accessories expose their reachability via the [`isReachable`](../hmaccessory/isreachable.md) property.
 

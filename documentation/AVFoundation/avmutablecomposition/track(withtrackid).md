@@ -25,11 +25,11 @@ func track(withTrackID trackID: CMPersistentTrackID) -> AVMutableCompositionTrac
 - (AVMutableCompositionTrack *) trackWithTrackID:(CMPersistentTrackID) trackID;
 ```
 
-#### Return Value
+## Return Value
 
 A composition track or `nil` if no track is available.
 
-#### Discussion
+## Discussion
 
 Apple discourages using this method. Load a track asynchronously using [`loadTrack(withTrackID:completionHandler:)`](./loadtrack%28withtrackid,completionhandler%29.md) instead.
 

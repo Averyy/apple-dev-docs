@@ -21,7 +21,7 @@ var developerPostbackURL: URL? { get }
 @property (nonatomic, strong, readonly, nullable) NSURL * developerPostbackURL;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to view the URL that [`SKAdNetwork`](../../StoreKit/skadnetwork.md) computes to send a copy of the winning postback to the developer. This property has a valid URL only if you specify a valid URL in the [`NSAdvertisingAttributionReportEndpoint`](../../BundleResources/information-property-list/nsadvertisingattributionreportendpoint.md) key in your app’s `Info.plist`. For more information, see [Configuring an advertised app](../../StoreKit/configuring-an-advertised-app.md).
 

@@ -19,7 +19,7 @@ var currentProgress: NSAnimation.Progress { get set }
 @property NSAnimationProgress currentProgress;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the completion percentage of the animation. Valid values are in the range `0.0` to `1.0`, where `0.0` represents the beginning of the animation and `1.0` represents the end of the animation.
 

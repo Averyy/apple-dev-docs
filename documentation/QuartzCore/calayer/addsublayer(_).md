@@ -24,7 +24,7 @@ func addSublayer(_ layer: CALayer)
 - (void) addSublayer:(CALayer *) layer;
 ```
 
-#### Discussion
+## Discussion
 
 If the array in the sublayers property is `nil`, calling this method creates an array for that property and adds the specified layer to it.
 

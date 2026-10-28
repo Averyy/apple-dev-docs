@@ -15,7 +15,7 @@ The starting point for estimated arrival time requests.
 origin: CoordinateData;
 ```
 
-#### Discussion
+## Discussion
 
 The [`origin`](./origin.md) can be a [`Coordinate`](../coordinate.md), a [`Place`](../place.md) object, or a string that’s an address. Other services, such as Search and Geocoder, return [`Place`](../place.md) objects.
 

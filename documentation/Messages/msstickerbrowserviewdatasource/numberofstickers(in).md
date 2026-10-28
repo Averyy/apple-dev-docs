@@ -22,7 +22,7 @@ func numberOfStickers(in stickerBrowserView: MSStickerBrowserView) -> Int
 - (NSInteger) numberOfStickersInStickerBrowserView:(MSStickerBrowserView *) stickerBrowserView;
 ```
 
-#### Return Value
+## Return Value
 
 The number of stickers. This must be a non-negative number.
 

@@ -5,13 +5,13 @@
 
 Enable your App Clip to schedule and receive notifications for a short or extended time period.
 
-#### Overview
+## Overview
 
 Some App Clips may need to schedule or receive notifications to provide value. Consider an App Clip that allows users to order food for delivery: By sending notifications, the App Clip informs the user about an upcoming delivery. If notifications are important for the functionality provided by your App Clip, enable it to schedule or receive notifications for up to 8 hours after each launch. Additionally, if you create an App Clip for multiple businesses, be sure to make changes to your notification payloads.
 
 > ❗ **Important**:  If a user returns to a previously launched App Clip from a notification, the App Clip launches without an invocation URL. You must handle this scenario in both your App Clip and your full app. For more information on invocations, see [Responding to invocations](./responding-to-invocations.md).
 
-##### Schedule or receive notifications temporarily
+### Schedule or receive notifications temporarily
 
 To enable your App Clip to schedule or receive notifications for up to 8 hours after each launch, first add the [`NSAppClip`](../BundleResources/information-property-list/nsappclip.md) key to your App Clip’s `Info.plist` file and set its type to `Dictionary`. Then, add an entry to the dictionary with the [`NSAppClipRequestEphemeralUserNotification`](../BundleResources/information-property-list/nsappclip/nsappcliprequestephemeralusernotification.md) key. Set its type to `Boolean` and its value to `true`.
 
@@ -37,7 +37,7 @@ center.getNotificationSettings { (settings) in {
 }
 ```
 
-##### Request explicit permission to send notifications
+### Request explicit permission to send notifications
 
 If your App Clip’s functionality spans more than a day, explicitly request the user’s permission to send notifications. For example, a car rental company’s App Clip can ask for permission to receive notifications that remind users when they need to return a rented car.
 
@@ -45,7 +45,7 @@ However, carefully consider whether you should ask for this permission. Users co
 
 For more information, see [Asking permission to use notifications](../UserNotifications/asking-permission-to-use-notifications.md).
 
-##### Make changes to your notification payload
+### Make changes to your notification payload
 
 You may create an App Clip for multiple businesses. For example, you may be a platform provider for restaurants and create an App Clip that serves many different restaurants. If a user launches the App Clip consecutively for several different businesses within a short amount of time, multiple instances of the App Clip may exist on their device.
 

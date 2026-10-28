@@ -17,11 +17,11 @@ Remaps weight keys from external formats (e.g., Hugging Face) to this model’s 
 func sanitize(weights: [String : MLXArray]) -> [String : MLXArray]
 ```
 
-#### Return Value
+## Return Value
 
 A new dictionary with keys renamed to match this Swift class structure.
 
-#### Discussion
+## Discussion
 
 This is critical when loading `.safetensors` or PyTorch checkpoints, as variable names often differ.
 

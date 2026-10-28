@@ -19,15 +19,15 @@ func PMPaperCreateLocalizedName(_ paper: PMPaper, _ printer: PMPrinter, _ paperN
 OSStatus PMPaperCreateLocalizedName(PMPaper paper, PMPrinter printer, CFStringRef  _Nullable *paperName);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 Not all printers have the same way of referring to a given paper. Generally, if you want to obtain the name of a paper, you want to localize the paper name for a particular printer. For example, if you were displaying a list of papers for a given printer, you would want the paper names to be localized for that printer.
 
-##### Special Considerations
+### Special Considerations
 
 In macOS 10.5 and later, Apple recommends using this function instead of [PMPaperGetName](./core_printing/api-1805534-pmpapergetname.md).
 

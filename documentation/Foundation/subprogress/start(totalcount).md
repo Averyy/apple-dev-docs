@@ -21,7 +21,7 @@ Instantiates a ProgressManager which is a child to the parent from which `self` 
 consuming func start(totalCount: Int?) -> ProgressManager
 ```
 
-#### Return Value
+## Return Value
 
 A `ProgressManager` instance.
 

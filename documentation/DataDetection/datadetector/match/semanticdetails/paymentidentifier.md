@@ -21,7 +21,7 @@ A match that the data detector determines represents a payment identifier.
 struct PaymentIdentifier
 ```
 
-#### Discussion
+## Discussion
 
 The [`identifier`](./paymentidentifier/identifier.md) property is an identifier suitable to initiate a payment transaction. The [`type`](./paymentidentifier/type.md) is the type of payment system.
 

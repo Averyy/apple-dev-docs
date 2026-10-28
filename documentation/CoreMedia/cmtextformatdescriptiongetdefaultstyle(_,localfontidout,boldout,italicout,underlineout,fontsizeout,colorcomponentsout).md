@@ -25,7 +25,7 @@ func CMTextFormatDescriptionGetDefaultStyle(_ desc: CMFormatDescription, localFo
 extern OSStatus CMTextFormatDescriptionGetDefaultStyle(CMFormatDescriptionRef desc, uint16_t *localFontIDOut, Boolean *boldOut, Boolean *italicOut, Boolean *underlineOut, CGFloat *fontSizeOut, CGFloat colorComponentsOut[4]);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. Returns `noErr` if Successful.
 

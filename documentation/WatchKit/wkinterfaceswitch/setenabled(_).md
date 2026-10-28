@@ -19,7 +19,7 @@ func setEnabled(_ enabled: Bool)
 - (void) setEnabled:(BOOL) enabled;
 ```
 
-#### Discussion
+## Discussion
 
 A disabled switch does not respond to taps in its content area. When the user taps an enabled switch, WatchKit executes the associated action method (if any) in your WatchKit extension.
 

@@ -23,11 +23,11 @@ func notify_get_state(_ token: Int32, _ state64: UnsafeMutablePointer<UInt64>!) 
 extern uint32_t notify_get_state(int token, uint64_t *state64);
 ```
 
-#### Return Value
+## Return Value
 
 Returns status.
 
-#### Discussion
+## Discussion
 
 Get the 64-bit integer state value.
 

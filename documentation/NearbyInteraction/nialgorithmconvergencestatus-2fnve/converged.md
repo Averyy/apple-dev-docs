@@ -18,7 +18,7 @@ A status that indicates the framework’s Camera Assistance feature is operation
 case converged
 ```
 
-#### Discussion
+## Discussion
 
 In this state, the app doesn’t need to coach the user and receives all the benefits of Camera Assistance described in [`isCameraAssistanceEnabled`](../ninearbypeerconfiguration/iscameraassistanceenabled.md).
 

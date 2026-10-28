@@ -15,7 +15,7 @@ Presents an ornament on hover.
 struct OrnamentHoverEffect<OrnamentView> where OrnamentView : View
 ```
 
-#### Overview
+## Overview
 
 You don’t use this directly. Use `CustomHoverEffect.ornament` to create ornament effects instead.
 

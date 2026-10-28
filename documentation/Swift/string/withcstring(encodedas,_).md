@@ -21,11 +21,11 @@ Calls the given closure with a pointer to the contents of the string, represente
 func withCString<Result, TargetEncoding, E>(encodedAs targetEncoding: TargetEncoding.Type, _ body: (UnsafePointer<TargetEncoding.CodeUnit>) throws(E) -> Result) throws(E) -> Result where TargetEncoding : _UnicodeEncoding, E : Error
 ```
 
-#### Return Value
+## Return Value
 
 The return value, if any, of the `body` closure parameter.
 
-#### Discussion
+## Discussion
 
 The pointer passed as an argument to `body` is valid only during the execution of `withCString(encodedAs:_:)`. Do not store or return the pointer for later use.
 

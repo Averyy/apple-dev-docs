@@ -19,7 +19,7 @@ func deminiaturize(_ sender: Any?)
 - (void) deminiaturize:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 Invoke this method to programmatically deminimize a minimized window in the Dock.
 

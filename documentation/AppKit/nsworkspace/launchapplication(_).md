@@ -21,11 +21,11 @@ func launchApplication(_ appName: String) -> Bool
 - (BOOL) launchApplication:(NSString *) appName;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the app was successfully launched or was already running; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The `appName` parameter need not be specified with a full path and, in the case of an app wrapper, may be specified with or without the `.app` extension.
 

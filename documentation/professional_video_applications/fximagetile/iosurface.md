@@ -19,7 +19,7 @@ var ioSurface: IOSurface! { get }
 @property (nonatomic, readonly) IOSurface * ioSurface;
 ```
 
-#### Discussion
+## Discussion
 
 The value may be `nil` during non-render calls.
 

@@ -25,7 +25,7 @@ init(parent parentProgressOrNil: Progress?, userInfo userInfoOrNil: [ProgressUse
 - (instancetype) initWithParent:(NSProgress *) parentProgressOrNil userInfo:(NSDictionary<NSString *,id> *) userInfoOrNil;
 ```
 
-#### Discussion
+## Discussion
 
 This is the designated initializer for the [`Progress`](../progress.md) class.
 

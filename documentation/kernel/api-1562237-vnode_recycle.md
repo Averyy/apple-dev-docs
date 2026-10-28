@@ -15,11 +15,11 @@ Cause a vnode to be reclaimed and prepared for reuse.
 int vnode_recycle(vnode_t vp);
 ```
 
-#### Return Value
+## Return Value
 
 1 if the vnode was reclaimed (i.e. there were no existing references), 0 if it was only marked for future reclaim.
 
-#### Discussion
+## Discussion
 
 Like all vnode KPIs, must be called with an iocount on the target vnode. vnode_recycle() will mark that vnode for reclaim when all existing references are dropped.
 

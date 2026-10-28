@@ -24,7 +24,7 @@ class CAMetalDisplayLink
 @interface CAMetalDisplayLink : NSObject
 ```
 
-#### Overview
+## Overview
 
 [`CAMetalDisplayLink`](./cametaldisplaylink.md) instances are a specialized way to interact with variable-rate displays when you need more control over the timing window to render your app’s frames. Controlling the timing window and rendering delay for frames can help you achieve smoother frame rates and avoid visual artifacts.
 

@@ -21,7 +21,7 @@ A type that represents a Microsoft internet shortcut file.
 static var internetShortcut: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.microsoft.internet-shortcut`.
 

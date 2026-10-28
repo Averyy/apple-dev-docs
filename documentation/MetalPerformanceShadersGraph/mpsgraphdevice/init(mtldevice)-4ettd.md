@@ -24,7 +24,7 @@ convenience init(mtlDevice metalDevice: any MTLDevice)
 + (instancetype) deviceWithMTLDevice:(id<MTLDevice>) metalDevice;
 ```
 
-#### Return Value
+## Return Value
 
 A valid device.
 

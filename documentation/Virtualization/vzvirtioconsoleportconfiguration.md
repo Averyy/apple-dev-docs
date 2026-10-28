@@ -19,7 +19,7 @@ class VZVirtioConsolePortConfiguration
 @interface VZVirtioConsolePortConfiguration : VZConsolePortConfiguration
 ```
 
-#### Overview
+## Overview
 
 A console port is a two-way communication channel between a host [`VZSerialPortAttachment`](./vzserialportattachment.md) and a VM console port. A Virtio device can have one or more attached console devices. Optionally, you can set a name for a console port and also configure a console port that the guest can use as the system console.
 

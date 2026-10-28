@@ -20,7 +20,7 @@ A Boolean value that indicates whether the framework includes this tool’s defi
 var includesSchemaInInstructions: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation is `true`
 

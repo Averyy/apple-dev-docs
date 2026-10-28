@@ -21,11 +21,11 @@ func SecKeyDeriveFromPassword(_ password: CFString, _ parameters: CFDictionary, 
 SecKeyRefSecKeyDeriveFromPassword(CFStringRef password, CFDictionaryRef parameters, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 The derived key object, or `NULL` on error. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to free the key’s memory when you are done with it.
 
-#### Discussion
+## Discussion
 
 The parameters dictionary must contain at least the following keys:
 

@@ -19,7 +19,7 @@ protocol XattrOperations : NSObjectProtocol
 @protocol FSVolumeXattrOperations <NSObject>
 ```
 
-#### Overview
+## Overview
 
 > **Deprecated**: Use [`FSVolume.XattrHandler`](./xattrhandler.md)
 

@@ -20,7 +20,7 @@ Returns a new path with a variant selection appended.
 func appending(variantSet: USDToken, variant: USDToken) -> USDLayer.Path
 ```
 
-#### Return Value
+## Return Value
 
 A new path with the variant selection appended.
 

@@ -5,7 +5,7 @@
 
 Understand how SpriteKit layers your scene’s nodes from top to bottom.
 
-#### Overview
+## Overview
 
 The standard behavior for scene rendering follows a simple pair of rules (as shown in the figure below):
 
@@ -20,7 +20,7 @@ In the figure above, the helicopter body and its components are all children of 
 2. The scene renders the `sky` node.
 3. The `sky` node renders its children—the helicopter body and its components—in the order they were added as children.
 
-##### Draw Order Relative to the Parent Node
+### Draw Order Relative to the Parent Node
 
 Maintaining the order of a node’s children can be a lot of work. Instead, you can give each node an explicit height in the scene. You do this by setting a node’s [`zPosition`](./sknode/zposition.md) property. The `zPosition` is the node’s height relative to its parent node, much as a node’s [`position`](./sknode/position.md) property represents its x and y position relative to its parent’s position. So you use `zPosition` to place a node above or below the parent’s position.
 
@@ -30,7 +30,7 @@ When you take `zPosition` into account, here is how the node tree is rendered:
 2. Nodes are drawn in order from smallest `zPosition` to largest `zPosition`.
 3. If two nodes share the same `zPosition`, ancestors are rendered first, and siblings are rendered in child order.
 
-##### Sibling Order Performance
+### Sibling Order Performance
 
 SpriteKit uses a deterministic rendering order based on the height nodes and their positions in the node tree. But, because the rendering order is so deterministic, SpriteKit may be unable to apply some rendering optimizations that it might otherwise apply. For example, it might be better if SpriteKit could gather all of the nodes that share the same texture and drawing mode and draw them with a single drawing pass. To enable these sorts of optimizations, you set the view’s [`ignoresSiblingOrder`](./skview/ignoressiblingorder.md) property to [`true`](../Swift/true.md).
 
@@ -40,7 +40,7 @@ The figure below shows an example of a tree that uses `zPosition` to determine t
 
 ![Figure illustrating how depth-only rendering can improve performance](https://developer.apple.com/tutorials/images/com.apple.spritekit/media-3044936@2x.png)
 
-##### Interleaved Child Nodes from Different Parents
+### Interleaved Child Nodes from Different Parents
 
 Because a child node’s `zPosition` is added to its parent’s `zPosition`, you can interleave child nodes from different parent nodes. Listing 1 shows code that creates two square parent nodes, each with a circular child node. The first node has a `zPosition` of 10 and its child node has a `zPosition` of 10. The second node has a `zPosition` of 15 and its child node also has a `zPosition` of 10.
 

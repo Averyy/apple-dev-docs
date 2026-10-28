@@ -22,7 +22,7 @@ func defaultTargetJoints(index: Int, count: Int, transforms: inout [Transform]) 
 
 Available when `Value` is `JointTransforms`.
 
-#### Discussion
+## Discussion
 
 See [`defaultTarget`](../animationstateprotocol/defaulttarget.md) for more about the default target value.
 

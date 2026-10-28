@@ -19,7 +19,7 @@ let IKImageBrowserCellsTitleAttributesKey: String
 extern NSString * const IKImageBrowserCellsTitleAttributesKey;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is an [`NSDictionary`](../Foundation/nsdictionary.md) object.
 

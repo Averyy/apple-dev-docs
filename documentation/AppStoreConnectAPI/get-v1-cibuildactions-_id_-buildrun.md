@@ -9,11 +9,11 @@ Get Xcode Cloud build information for a given build action.
 **Availability**:
 - App Store Connect API 1.5+
 
-#### Discussion
+## Discussion
 
 The example request below retrieves detailed information for a specific action Xcode Cloud performed. Use the data provided in the response to display detailed build information on a dashboard or to access related information.
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

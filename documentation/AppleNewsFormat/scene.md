@@ -15,7 +15,7 @@ A combination of animations and behaviors to use in sections and chapters that h
 object Scene
 ```
 
-#### Discussion
+## Discussion
 
 A scene is a combination of animations and behaviors that lets you create special effects for the `section` and `chapter` components in an article. You don’t use the `Scene` object directly, but instead use the specific objects that extend scene:
 

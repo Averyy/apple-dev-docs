@@ -24,11 +24,11 @@ class func circularWrap() -> any CIFilter & CICircularWrap
 + (CIFilter<CICircularWrap> *) circularWrapFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The distorted image.
 
-#### Discussion
+## Discussion
 
 This method applies the circular wrap filter to an image. This effect wraps an image around a transparent circle. The distortion of the image increases with the distance from the center of the circle.
 

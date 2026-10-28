@@ -21,7 +21,7 @@ Creates a decryption sequential input stream.
 static func decryptionStream(readingFrom encryptedStream: ArchiveByteStream, encryptionContext context: ArchiveEncryptionContext, flags: ArchiveFlags = [], threadCount: Int = 0) -> ArchiveByteStream?
 ```
 
-#### Return Value
+## Return Value
 
 A new archive byte stream.
 

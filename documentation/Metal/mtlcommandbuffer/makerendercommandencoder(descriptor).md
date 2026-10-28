@@ -25,7 +25,7 @@ func makeRenderCommandEncoder(descriptor renderPassDescriptor: MTLRenderPassDesc
 - (id<MTLRenderCommandEncoder>) renderCommandEncoderWithDescriptor:(MTLRenderPassDescriptor *) renderPassDescriptor;
 ```
 
-#### Discussion
+## Discussion
 
 Use an [`MTLRenderCommandEncoder`](../mtlrendercommandencoder.md) instance’s methods to set up a single graphics-rendering pass.
 

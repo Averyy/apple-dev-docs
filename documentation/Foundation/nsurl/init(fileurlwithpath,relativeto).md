@@ -29,7 +29,7 @@ init(fileURLWithPath path: String, relativeTo baseURL: URL?)
 
 - [Improving performance and stability when accessing the file system](../improving-performance-and-stability-when-accessing-the-file-system.md)
 
-#### Discussion
+## Discussion
 
 Better to use `initFileURLWithPath:isDirectory:relativeToURL:` if you know if the path is a directory vs non-directory, as it saves an I/O.
 

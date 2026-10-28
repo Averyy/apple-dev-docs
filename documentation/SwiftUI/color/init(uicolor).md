@@ -20,7 +20,7 @@ Creates a color from a UIKit color.
 init(uiColor: UIColor)
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to create a SwiftUI color from a [`UIColor`](../../UIKit/uicolor.md) instance. The new color preserves the adaptability of the original. For example, you can create a rectangle using [`link`](../../UIKit/uicolor/link.md) to see how the shade adjusts to match the user’s system settings:
 

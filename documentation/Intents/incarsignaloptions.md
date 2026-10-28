@@ -23,7 +23,7 @@ struct INCarSignalOptions
 enum INCarSignalOptions : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 In Swift, you can select more than one option from the option set. In Objective-C, you can select more than one option by combining the enums using a bitwise `OR` operation.
 

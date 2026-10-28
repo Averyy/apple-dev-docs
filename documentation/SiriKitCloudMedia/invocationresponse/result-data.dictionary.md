@@ -15,7 +15,7 @@ The outcome of handling an intent.
 object InvocationResponse.Result
 ```
 
-#### Discussion
+## Discussion
 
 Allowed types: [`IntentResolutionResult`](../intentresolutionresult.md), [`IntentResponse`](../intentresponse.md).
 

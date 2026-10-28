@@ -27,7 +27,7 @@ let UIApplicationOpenNotificationSettingsURLString: String
 extern NSString * const UIApplicationOpenNotificationSettingsURLString;
 ```
 
-#### Discussion
+## Discussion
 
 Create a URL from this value and pass it to the [`open(_:options:completionHandler:)`](./uiapplication/open%28_,options,completionhandler%29.md) method to launch the Settings app and display your app’s notification settings, if it has any.
 

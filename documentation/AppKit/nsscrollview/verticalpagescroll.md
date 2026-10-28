@@ -19,7 +19,7 @@ var verticalPageScroll: CGFloat { get set }
 @property CGFloat verticalPageScroll;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is the amount of the document view kept visible when scrolling vertically page by page, expressed in the content view’s coordinate system. This value is used when the user clicks the scroll arrows on the vertical scroll bar while holding down the Option key.
 

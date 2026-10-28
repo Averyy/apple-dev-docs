@@ -20,7 +20,7 @@ case geoDataNotLoaded
 ARGeoTrackingStateReasonGeoDataNotLoaded
 ```
 
-#### Discussion
+## Discussion
 
 ARKit provides this reason in state [`ARGeoTrackingStatus.State.localizing`](../state-swift.enum/localizing.md) when the session is actively attempting to download localization imagery (see [Refine the user’s position with imagery](../../argeotrackingconfiguration.md#Refine-the-users-position-with-imagery)).
 

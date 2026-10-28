@@ -14,7 +14,7 @@
 IOReturn (*GetKeyOffset_FWAddress)(IOFireWireLibConfigDirectoryRef self, int inKey, FWAddress *outValue, CFStringRef *text);
 ```
 
-#### Discussion
+## Discussion
 
 Description forthcoming
 

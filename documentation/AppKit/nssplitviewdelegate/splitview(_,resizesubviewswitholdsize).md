@@ -20,7 +20,7 @@ optional func splitView(_ splitView: NSSplitView, resizeSubviewsWithOldSize oldS
 - (void) splitView:(NSSplitView *) splitView resizeSubviewsWithOldSize:(NSSize) oldSize;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  If your split view uses Auto Layout to size its subviews, don’t implement this method.
 

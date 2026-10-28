@@ -23,7 +23,7 @@ func gss_inquire_cred(_ minor_status: UnsafeMutablePointer<OM_uint32>, _ cred_ha
 OM_uint32 gss_inquire_cred(OM_uint32 *minor_status, gss_cred_id_t const cred_handle, gss_name_t*name_ret, OM_uint32 *lifetime, gss_cred_usage_t *cred_usage, gss_OID_set*mechanisms);
 ```
 
-#### Return Value
+## Return Value
 
 A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on success. See [Function Status](./function-status.md) for a description of other status outputs.
 

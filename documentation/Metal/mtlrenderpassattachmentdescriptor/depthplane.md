@@ -24,7 +24,7 @@ var depthPlane: Int { get set }
 @property (nonatomic) NSUInteger depthPlane;
 ```
 
-#### Discussion
+## Discussion
 
 If the texture isn’t a 3D texture, then Metal ignores this property.
 

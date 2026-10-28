@@ -21,7 +21,7 @@ The payment modes for offers that apply to a transaction.
 struct PaymentMode
 ```
 
-#### Overview
+## Overview
 
 If your app supports offers and the customer redeems an offer, the transaction contains the information in the [`offer`](../offer-swift.property.md) parameter. The payment modes include the subscription payment modes as in the [`Product.SubscriptionOffer.PaymentMode`](../../product/subscriptionoffer/paymentmode-swift.struct.md) structure, and the [`oneTime`](./paymentmode-swift.struct/onetime.md) mode that applies to consumables, non-consumables, and non-renewing subscriptions.
 

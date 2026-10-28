@@ -20,7 +20,7 @@ var pixelFormat: OSType { get set }
 @property (nonatomic, assign) OSType pixelFormat;
 ```
 
-#### Discussion
+## Discussion
 
 A stream supports the following pixel formats:
 

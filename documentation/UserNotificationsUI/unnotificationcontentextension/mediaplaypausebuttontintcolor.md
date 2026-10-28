@@ -41,7 +41,7 @@ optional var mediaPlayPauseButtonTintColor: NSColor { get }
 @property (nonatomic, copy, readonly) NSColor * mediaPlayPauseButtonTintColor;
 ```
 
-#### Discussion
+## Discussion
 
 If you implement the [`mediaPlayPauseButtonFrame`](./mediaplaypausebuttonframe.md) property, you can also implement this property and use it to specify the tint color to apply to the button. If you don’t implement this property, the system uses a default color for the tint color.
 

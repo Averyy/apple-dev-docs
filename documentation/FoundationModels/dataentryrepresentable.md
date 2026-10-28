@@ -20,7 +20,7 @@ A type that a model can produce and represent as a top-level transcript entry.
 protocol DataEntryRepresentable : Sendable
 ```
 
-#### Overview
+## Overview
 
 Conform to this protocol to describe how a value serializes into — and deserializes back from — a [`Transcript.DataEntry`](./transcript/dataentry.md).
 

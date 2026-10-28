@@ -17,7 +17,7 @@ The access point’s Service Set Identifier (SSID), also known as the network na
 let ssid: WISSID
 ```
 
-#### Discussion
+## Discussion
 
 This value is unique among networks known to the host, but is not unique across all Wi-Fi networks that may be present in the environment.
 

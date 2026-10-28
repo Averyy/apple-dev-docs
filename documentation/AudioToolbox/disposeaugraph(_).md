@@ -26,11 +26,11 @@ func DisposeAUGraph(_ inGraph: AUGraph) -> OSStatus
 extern OSStatus DisposeAUGraph(AUGraph inGraph);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 Creates an AUGraph.
 

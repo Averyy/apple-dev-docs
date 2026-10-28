@@ -24,11 +24,11 @@ class func predicateForQuantitySamples(with operatorType: NSComparisonPredicate.
 + (NSPredicate *) predicateForQuantitySamplesWithOperatorType:(NSPredicateOperatorType) operatorType quantity:(HKQuantity *) quantity;
 ```
 
-#### Return Value
+## Return Value
 
 A predicate that matches samples based on the target quantity. This predicate works only on quantity samples.
 
-#### Discussion
+## Discussion
 
 Use this convenience method to create a predicate that matches against a sample’s quantity. The following sample uses both the convenience method and a predicate format string to create equivalent predicates.
 

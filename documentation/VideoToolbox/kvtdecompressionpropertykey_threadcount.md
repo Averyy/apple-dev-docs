@@ -24,7 +24,7 @@ let kVTDecompressionPropertyKey_ThreadCount: CFString
 extern CFStringRef const kVTDecompressionPropertyKey_ThreadCount;
 ```
 
-#### Discussion
+## Discussion
 
 This is an optional property for video decoders to implement.
 

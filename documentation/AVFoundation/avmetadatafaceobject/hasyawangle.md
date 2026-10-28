@@ -23,7 +23,7 @@ var hasYawAngle: Bool { get }
 @property (readonly) BOOL hasYawAngle;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is [`false`](../../Swift/false.md), the value in the [`yawAngle`](./yawangle.md) property is invalid and must not be accessed.
 

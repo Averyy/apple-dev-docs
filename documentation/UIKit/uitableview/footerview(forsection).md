@@ -23,7 +23,7 @@ func footerView(forSection section: Int) -> UITableViewHeaderFooterView?
 - (UITableViewHeaderFooterView *) footerViewForSection:(NSInteger) section;
 ```
 
-#### Return Value
+## Return Value
 
 The footer view associated with the section, or `nil` if the section does not have a footer view.
 

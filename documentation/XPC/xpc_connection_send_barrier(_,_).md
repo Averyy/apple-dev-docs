@@ -25,7 +25,7 @@ func xpc_connection_send_barrier(_ connection: xpc_connection_t, _ barrier: @esc
 extern void xpc_connection_send_barrier(xpc_connection_t connection, dispatch_block_t barrier);
 ```
 
-#### Discussion
+## Discussion
 
 XPC guarantees that, even if the connection’s target queue is a concurrent queue, there are no other messages being sent concurrently while the barrier block is executing. XPC does not guarantee that the receipt of messages (either through the connection’s event handler or through reply handlers) will be suspended while the barrier is executing.
 

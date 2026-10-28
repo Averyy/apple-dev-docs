@@ -22,7 +22,7 @@ var isLivePhotoCaptureSuspended: Bool { get set }
 @property (nonatomic, getter=isLivePhotoCaptureSuspended) BOOL livePhotoCaptureSuspended;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this property’s value is [`false`](../../Swift/false.md). Set this value to [`true`](../../Swift/true.md) to stop any current Live Photo movie captures in progress. Doing this prevents recording additional actions in the Live Photo movie. For example, if you want to capture a still photo that makes a shutter sound, you can prevent recording that action.
 

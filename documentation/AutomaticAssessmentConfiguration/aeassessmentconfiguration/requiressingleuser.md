@@ -20,7 +20,7 @@ var requiresSingleUser: Bool { get set }
 @property (nonatomic, assign) BOOL requiresSingleUser;
 ```
 
-#### Discussion
+## Discussion
 
 When set to `true`, the assessment session will only start if there is exactly one user account logged in on the device. Defaults to `false`.
 

@@ -19,11 +19,11 @@ func defaultNameOrdering() -> Int
 - (NSInteger) defaultNameOrdering;
 ```
 
-#### Return Value
+## Return Value
 
 The default name ordering defined by the user in the Address Book application’s preferences.
 
-#### Discussion
+## Discussion
 
 The possible values are kABFirstNameFirst and kABLastNameFirst.
 

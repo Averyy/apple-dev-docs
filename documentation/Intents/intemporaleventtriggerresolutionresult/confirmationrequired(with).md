@@ -23,11 +23,11 @@ class func confirmationRequired(with temporalEventTriggerToConfirm: INTemporalEv
 + (instancetype) confirmationRequiredWithTemporalEventTriggerToConfirm:(INTemporalEventTrigger *) temporalEventTriggerToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INTemporalEventTriggerResolutionResult`](../intemporaleventtriggerresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you have to make assumptions about the time information specified by the user. Provide an [`INTemporalEventTrigger`](../intemporaleventtrigger.md) object with the trigger details as you intend to apply them.
 

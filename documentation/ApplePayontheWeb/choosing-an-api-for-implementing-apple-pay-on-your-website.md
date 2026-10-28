@@ -5,13 +5,13 @@
 
 Compare Apple Pay JS and Payment Request API to choose the right implementation for your website.
 
-#### Overview
+## Overview
 
 Safari supports two APIs for implementing payment requests: [Apple Pay JS API](./apple-pay-js-api.md), and the W3C [Payment Request API](./payment-request-api.md). Both APIs present the same Apple Pay payment sheet on Safari, and offer nearly the same user experience.
 
 To help you decide which API to implement, or whether to implement both, first determine which features your solution requires, and choose the API that matches your needs.
 
-##### Features of Apple Pay JS API
+### Features of Apple Pay JS API
 
 Use [Apple Pay JS API](./apple-pay-js-api.md) if you depend on any of its unique features:
 
@@ -28,14 +28,14 @@ Use [Apple Pay JS API](./apple-pay-js-api.md) if you depend on any of its unique
 
 **Phonetic names.** You can request a phonetic name in [Apple Pay JS API](./apple-pay-js-api.md) only.
 
-##### Features of Payment Request API
+### Features of Payment Request API
 
 Use [Payment Request API](./payment-request-api.md) for these benefits:
 
 - **Cross-browser solution.** Payment Request API-based code can support a variety platforms and browsers. Apple Pay is available on Safari; other payment methods are available on other browsers and platforms.
 - **W3C standard candidate API.**  The Payment Request API is defined by the [World Wide Web Consortium (W3C)](https://www.w3.org/TR/payment-request/).
 
-##### Choose an API to Support Your Customers
+### Choose an API to Support Your Customers
 
 To better reach your customers, choose an API that works on their devices, as follows:
 
@@ -44,7 +44,7 @@ To better reach your customers, choose an API that works on their devices, as fo
 
 When implementing [Payment Request API](./payment-request-api.md), consider also implementing [Apple Pay JS API](./apple-pay-js-api.md) as a fallback for customers whose devices run an older operating system version.
 
-##### Requirements for Both APIs
+### Requirements for Both APIs
 
 The same first steps, configurations, and guidelines for using Apple Pay on the web apply regardless of which API you choose to implement.
 

@@ -19,7 +19,7 @@ static let symbolic: NSFontDescriptor.TraitKey
 extern NSFontDescriptorTraitKey NSFontSymbolicTrait;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is an [`NSNumber`](../../../Foundation/nsnumber.md) object.
 

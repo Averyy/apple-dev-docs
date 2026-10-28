@@ -17,7 +17,7 @@ The original hybrid Qwen3 protocol and its published budget transition.
 static let qwen3: ReasoningConfig
 ```
 
-#### Discussion
+## Discussion
 
 The exact leading space after the two newlines is part of Qwen’s `early_stopping_text`. Keeping this adapter family-specific prevents a later Qwen-derived model from inheriting the transition merely because it happens to use the same delimiters.
 

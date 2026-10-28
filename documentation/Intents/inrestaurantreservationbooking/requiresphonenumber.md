@@ -30,7 +30,7 @@ var requiresPhoneNumber: Bool { get set }
 @property (atomic) BOOL requiresPhoneNumber;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`false`](../../Swift/false.md). Change the value to [`true`](../../Swift/true.md) if the restaurant (or your service) requires a phone number to confirm the reservation.
 

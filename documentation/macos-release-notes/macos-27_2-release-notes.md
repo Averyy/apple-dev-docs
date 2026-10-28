@@ -5,51 +5,51 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The macOS 27.2 SDK provides support to develop apps for Mac computers running macOS 27.2 Golden Gate. The SDK comes bundled with Xcode 27.2. For information on the compatibility requirements for Xcode 27.2, see [Xcode 27.2 Release Notes](../Xcode-Release-Notes/xcode-27_2-release-notes.md).
 
-##### General
+### General
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Xcode might crash when using code completion on macOS 27.2 beta. (186939138)
 
-##### AppKit
+### AppKit
 
-###### Deprecations
+#### Deprecations
 
 - The `EnablePasteboardPrivacyDeveloperPreview` user default has been removed. (186955507)
 
-##### Display Settings
+### Display Settings
 
-###### Known Issues
+#### Known Issues
 
 - When an external display is connected, display settings might not be restored correctly, and the display arrangement might change. (188643179)
 
-##### Notifications
+### Notifications
 
-###### Known Issues
+#### Known Issues
 
 - Mac computers with a clean install of this build might not prompt you to allow notifications for some apps, such as Calendar, Maps, Find My, Home, and Weather. (187312007)
 
   **Workaround:** Go to System Settings > Notifications to manually turn on notifications for the affected apps.
 
-##### Shortcuts
+### Shortcuts
 
-###### Known Issues
+#### Known Issues
 
 - Describe a Shortcut might fail with the error “Something went wrong. Try again later.” (187499433)
 
-##### StoreKit Testing in Xcode
+### StoreKit Testing in Xcode
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Intro offer eligibility does not reset immediately after calling `SKTestSession.clearTransactions()`. (183933307) (FB24137836)
 - Fixed: Changing the storefront or locale using `SKTestSession` doesn’t propagate through `Storefront.updates`. (184155259)
 - Fixed: Failed purchases using `SKTestSession` might display error dialogs even when `dialogsDisabled` is set to `true`. (184255116)
 
-###### Known Issues
+#### Known Issues
 
 - Making a purchase in-app for a subscription that is a member of a subscription bundle incorrectly allows the user to unbundle instead of throwing an error. (186018916)
 

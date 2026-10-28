@@ -21,7 +21,7 @@ Returns the next consecutive position after `i`.
 func index(after i: String.UTF8View.Index) -> String.UTF8View.Index
 ```
 
-#### Discussion
+## Discussion
 
 > **Precondition**: The next position is representable.
 

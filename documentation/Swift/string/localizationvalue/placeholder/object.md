@@ -21,7 +21,7 @@ The object type, as used for replacement values with the localized string placeh
 case object
 ```
 
-#### Discussion
+## Discussion
 
 To insert a object into a placeholder, use the syntax `\(placeholder: .object)`.
 

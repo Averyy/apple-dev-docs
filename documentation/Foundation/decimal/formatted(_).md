@@ -21,11 +21,11 @@ Formats the decimal using the provided format style.
 func formatted<S>(_ format: S) -> S.FormatOutput where S : FormatStyle, S.FormatInput == Decimal
 ```
 
-#### Return Value
+## Return Value
 
 A localized, formatted string representation of the decimal.
 
-#### Discussion
+## Discussion
 
 Use this method when you want to format a single decimal value with a specific format style or multiple format styles. The following example shows the results of formatting a given decimal value with format styles for the `en_US` and `fr_FR` locales:
 

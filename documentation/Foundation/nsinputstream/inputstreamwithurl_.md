@@ -21,7 +21,7 @@ Creates and returns an initialized `NSInputStream` object that reads data from t
 + (instancetype) inputStreamWithURL:(NSURL *) url;
 ```
 
-#### Discussion
+## Discussion
 
 The stream must be opened before it can be used.
 

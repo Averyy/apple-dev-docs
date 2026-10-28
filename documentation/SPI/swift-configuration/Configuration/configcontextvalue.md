@@ -24,7 +24,7 @@ A value that can be stored in a configuration context.
 enum ConfigContextValue
 ```
 
-#### Overview
+## Overview
 
 Context values support common data types for configuration metadata.
 

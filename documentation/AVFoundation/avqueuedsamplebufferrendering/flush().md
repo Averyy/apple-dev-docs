@@ -26,7 +26,7 @@ func flush()
 - (void) flush;
 ```
 
-#### Discussion
+## Discussion
 
 It is not possible to determine which sample buffers have been decoded for video. The next frame passed to [`enqueue(_:)`](./enqueue%28_%29.md) should be an IDR frame (also known as a key frame or sync sample).
 

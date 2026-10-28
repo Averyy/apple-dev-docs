@@ -19,7 +19,7 @@ A command type for opacity fading environment backdrops during immersive media p
 struct FadeEnvironmentCommand
 ```
 
-#### Overview
+## Overview
 
 Opacity fade is used to apply requested opacity to the AIV environment backdrops. Fade environment commands can be absolute time based or offset based. If fade commands are absolute time based, then property time dictates the time it needs to start executing and keep fading until the duration property value. On the other hand if they are offset based, then offset property dictates the fade percentage from the start time of the fade command till the duration of the fade. If the fade has to start at time 0.0 second of the playback for duration of 1.0 seconds and if the media FPS is 90, then first frame should be accompanied with presentation metadata with fade command which has 0.011 as offset. Second frame should have fade command with offset 0.022 and so on. For the 90th frame, we should receive offset 1.0.
 

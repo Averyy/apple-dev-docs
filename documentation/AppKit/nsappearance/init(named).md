@@ -19,11 +19,11 @@ init?(named name: NSAppearance.Name)
 + (NSAppearance *) appearanceNamed:(NSAppearanceName) name;
 ```
 
-#### Return Value
+## Return Value
 
 A standard [`NSAppearance`](../nsappearance.md) object.
 
-#### Discussion
+## Discussion
 
 When you specify a standard appearance name—such as [`aqua`](./name-swift.struct/aqua.md)—this method returns a built-in appearance.
 

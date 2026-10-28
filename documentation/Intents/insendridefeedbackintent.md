@@ -22,13 +22,13 @@ class INSendRideFeedbackIntent
 @interface INSendRideFeedbackIntent : INIntent
 ```
 
-#### Overview
+## Overview
 
 When the user provides feedback for a completed ride, SiriKit sends an [`INSendRideFeedbackIntent`](./insendridefeedbackintent.md) object to your handler. SiriKit populates this intent object with the ride identifier and the feedback, including a possible driver rating and tip. Upon receiving this intent, validate the provided information and forward it along to your service. SiriKit guarantees that it provides at least one piece of feedback.
 
 To handle this intent, the handler object in your Intents extension must adopt the [`INSendRideFeedbackIntentHandling`](./insendridefeedbackintenthandling.md) protocol. Your handler should confirm the request and create an [`INSendRideFeedbackIntentResponse`](./insendridefeedbackintentresponse.md) object with the status of the task.
 
-##### Additional Intent Attributes
+### Additional Intent Attributes
 
 The following table lists additional attributes of this intent object:
 

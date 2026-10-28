@@ -21,7 +21,7 @@ func setTitleAlignment(_ mode: NSTextAlignment)
 - (void) setTitleAlignment:(NSTextAlignment) mode;
 ```
 
-#### Discussion
+## Discussion
 
 The default alignment is `NSRightTextAlignment`.
 

@@ -21,7 +21,7 @@ case atScrollEdge
 UIBarMinimizationRestorationBehaviorAtScrollEdge
 ```
 
-#### Discussion
+## Discussion
 
 Currently this is only honored alongside `UIBarMinimizationBehaviorOnScrollDown`. With other minimization behaviors, the system falls back to [`UIBarMinimizationRestorationBehavior.automatic`](./automatic.md).
 

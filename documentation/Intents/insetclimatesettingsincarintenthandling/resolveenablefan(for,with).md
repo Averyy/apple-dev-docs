@@ -28,7 +28,7 @@ optional func resolveEnableFan(for intent: INSetClimateSettingsInCarIntent) asyn
 - (void) resolveEnableFanForSetClimateSettingsInCar:(INSetClimateSettingsInCarIntent *) intent withCompletion:(void (^)(INBooleanResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the user’s request. The intent object passed to this method a Boolean value that indicates whether you can enable the car’s fan.
 

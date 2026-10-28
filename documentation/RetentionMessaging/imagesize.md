@@ -28,7 +28,7 @@ string imageSize
 
 **Default**: `FULL_SIZE`
 
-#### Discussion
+## Discussion
 
 Specify the `FULL_SIZE` image size when you upload an image to appear above the message body.
 

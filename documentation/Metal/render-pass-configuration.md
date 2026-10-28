@@ -5,7 +5,7 @@
 
 Set a render pass’s pipeline state, attachment actions, viewports, and so on, that affect subsequent drawing commands.
 
-#### Overview
+## Overview
 
 These methods encode commands that configure the render pass for all subsequent drawing commands. The most important configuration is the pipeline state (see [`MTLRenderPipelineState`](./mtlrenderpipelinestate.md)), which you configure by calling the [`setRenderPipelineState(_:)`](./mtlrendercommandencoder/setrenderpipelinestate%28_%29.md) method.
 

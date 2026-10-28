@@ -25,7 +25,7 @@ func evaluate(with object: Any?) -> Bool
 - (BOOL) evaluateWithObject:(id) object;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if `object` matches the conditions specified by the predicate, otherwise [`false`](../../Swift/false.md).
 

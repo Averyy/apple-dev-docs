@@ -31,7 +31,7 @@ optional func playerViewControllerRestoreUserInterfaceForPictureInPictureStop(_ 
 
 - [Adopting Picture in Picture in a standard player](../adopting-picture-in-picture-in-a-standard-player.md)
 
-#### Discussion
+## Discussion
 
 Implement this method to reestablish your playback user interface when PiP ends. The framework calls this method no matter how PiP ends, whether it’s because the user ended playback, the user tapped the button to return ongoing video playback to your app, or the video finished playing on its own.
 

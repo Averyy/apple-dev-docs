@@ -19,7 +19,7 @@ func draw(in rect: NSRect, angle: CGFloat)
 - (void) drawInRect:(NSRect) rect angle:(CGFloat) angle;
 ```
 
-#### Discussion
+## Discussion
 
 This convenience method draws a linear gradient inside the specified rectangle. The gradient is drawn so that the start and end colors are guaranteed to be visible in opposite corners of the rectangle. The angle of rotation determines which corner contains the start color; see the table below.
 

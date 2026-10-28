@@ -22,7 +22,7 @@ class UIImpactFeedbackGenerator
 @interface UIImpactFeedbackGenerator : UIFeedbackGenerator
 ```
 
-#### Overview
+## Overview
 
 Use impact feedback to indicate when an impact occurs. For example, you might trigger impact feedback when a user interface object collides with another object.
 

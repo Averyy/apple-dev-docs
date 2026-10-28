@@ -5,7 +5,7 @@
 
 Basic data types.
 
-#### Overview
+## Overview
 
 | Code | Type | Comment |
 | --- | --- | --- |

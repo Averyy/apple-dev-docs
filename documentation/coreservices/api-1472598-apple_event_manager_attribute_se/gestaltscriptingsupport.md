@@ -14,7 +14,7 @@
 gestaltScriptingSupport = 1
 ```
 
-#### Discussion
+## Discussion
 
 A `Gestalt` attribute constant. If the bit specified by this constant is set in the `response` parameter value supplied by `Gestalt` for the `gestaltAppleEventsAttr` selector, the Open Scripting Architecture (OSA) is available to provide scripting support. The OSA is described in “Scripting Components”.
 

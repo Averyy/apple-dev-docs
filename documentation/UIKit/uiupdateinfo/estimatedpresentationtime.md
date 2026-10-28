@@ -23,7 +23,7 @@ var estimatedPresentationTime: TimeInterval { get }
 @property (nonatomic, readonly) NSTimeInterval estimatedPresentationTime;
 ```
 
-#### Discussion
+## Discussion
 
 This time is an estimate, so the actual time when changes become visible might differ.
 

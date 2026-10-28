@@ -25,7 +25,7 @@ func addAudioPlayer(_ player: SCNAudioPlayer)
 - (void) addAudioPlayer:(SCNAudioPlayer *) player;
 ```
 
-#### Discussion
+## Discussion
 
 Positional audio effects from a player attached to a node are based on that node’s position relative to the [`audioListener`](../scnscenerenderer/audiolistener.md) position in the scene.
 

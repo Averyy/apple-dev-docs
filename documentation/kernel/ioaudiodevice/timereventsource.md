@@ -9,7 +9,7 @@
 IOTimerEventSource *timerEventSource;
 ```
 
-#### Overview
+## Overview
 
 An IOTimerEventSource attached to workLoop used for the timer services
 

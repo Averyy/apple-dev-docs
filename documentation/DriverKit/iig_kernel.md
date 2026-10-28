@@ -18,7 +18,7 @@ Tells the system that the class or method runs inside the kernel.
 #define IIG_KERNEL
 ```
 
-#### Discussion
+## Discussion
 
 DriverKit adds this macro to methods that must run inside the kernel’s process space. When overriding a method tagged with this macro, you must define your method using the [`IMPL`](./impl.md) macro, which creates the necessary binding to bridge from your driver’s process space to the kernel implementation. When applied to a class, this macro affects all methods of the class.
 

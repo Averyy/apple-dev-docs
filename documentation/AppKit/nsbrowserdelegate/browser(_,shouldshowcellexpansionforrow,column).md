@@ -20,11 +20,11 @@ optional func browser(_ browser: NSBrowser, shouldShowCellExpansionForRow row: I
 - (BOOL) browser:(NSBrowser *) browser shouldShowCellExpansionForRow:(NSInteger) row column:(NSInteger) column;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to allow the cell expansion tooltip; [`false`](../../Swift/false.md) to disallow it.
 
-#### Discussion
+## Discussion
 
 Cell expansion can occur when the mouse hovers over the specified cell and the cell contents are unable to be fully displayed within the cell. If this method returns YES, the full cell contents will be shown in a special floating tool tip view, otherwise the content is truncated.
 

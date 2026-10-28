@@ -20,7 +20,7 @@ A limit of the rotational freedom between the pins around the x-axis.
 var angularLimit: ClosedRange<Float>?
 ```
 
-#### Discussion
+## Discussion
 
 If defined, this limits the rotation of `pin1` around the x-axis of `pin0`. There is no limit if this property is `nil`.
 

@@ -23,7 +23,7 @@ convenience init(controlPoints: [PKStrokePoint], creationDate: Date, strokePathI
 - (instancetype) initWithControlPoints:(NSArray<PKStrokePoint *> *) controlPoints creationDate:(NSDate *) creationDate strokePathID:(NSUUID *) strokePathID;
 ```
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**: Using multiple stroke paths with identical IDs but different control points will result in undefined rendering behavior. Ensure each stroke path has a unique identifier.
 

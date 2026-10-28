@@ -23,7 +23,7 @@ var sessionPreset: AVCaptureSession.Preset { get set }
 @property (nonatomic, copy) AVCaptureSessionPreset sessionPreset;
 ```
 
-#### Discussion
+## Discussion
 
 Specify a preset value to configure a capture session’s format and settings. The default preset is [`high`](./preset/high.md), which produces high-quality video and audio output, but you can specify any preset value that returns [`true`](../../Swift/true.md) for a call to [`canSetSessionPreset(_:)`](./cansetsessionpreset%28_%29.md).
 

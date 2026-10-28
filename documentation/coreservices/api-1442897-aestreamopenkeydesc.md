@@ -19,11 +19,11 @@ func AEStreamOpenKeyDesc(_ ref: AEStreamRef!, _ key: AEKeyword, _ newType: DescT
 OSStatus AEStreamOpenKeyDesc(AEStreamRef ref, AEKeyword key, DescType newType);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 Use this routine to mark the beginning of a keyword/descriptor definition in an Apple event record. After calling this routine, you should call [`AEStreamWriteData(_:_:_:)`](./api-1442610-aestreamwritedata.md) one or more times to write the record data to the stream. When you are done writing data, you must call [`AEStreamCloseDesc(_:)`](./api-1449272-aestreamclosedesc.md) to complete the record definition. 
 

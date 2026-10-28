@@ -21,7 +21,7 @@ The value of the metadata item as a date.
 var dateValue: Date? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` if the system can’t represent the value as a date.
 

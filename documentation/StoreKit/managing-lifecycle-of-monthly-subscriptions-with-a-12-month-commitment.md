@@ -5,13 +5,13 @@
 
 Handle renewals, cancellations, billing issues, refund requests, and price changes, and test subscriptions with a commitment plan.
 
-#### Overview
+## Overview
 
 A *monthly subscription with a 12-month commitment* is an auto-renewable subscription that bills customers monthly and has a yearly commitment. Unlike standard subscriptions that bill customers up front, its ([`billingPlanType`](./transaction/billingplantype.md)) in [`Transaction`](./transaction.md) is [`monthly`](./product/subscriptioninfo/billingplantype/monthly.md).
 
 For more information on configuring, merchandising, purchasing, and entitling a monthly subscription with a 12-month commitment, see [Supporting monthly subscriptions with a 12-month commitment](./supporting-monthly-subscriptions-with-a-12-month-commitment.md).
 
-#### Manage subscription renewals
+## Manage subscription renewals
 
 A monthly subscription with a 12-month commitment automatically bills monthly. Process the resulting transaction and enable access to content the same way as for standard subscriptions. When subscriptions renew, your server receives a `DID_RENEW` notification ([`notificationType`](../AppStoreServerNotifications/notificationtype.md)) at your [`App Store Server Notifications V2`](../AppStoreServerNotifications/app-store-server-notifications-v2.md) endpoint. Your app receives a transaction through the [`updates`](./transaction/updates.md) listener.
 
@@ -25,7 +25,7 @@ The following fields in the transaction provide additional information about the
 
 When the 12th billing period completes, a value of `1` for [`willAutoRenew`](./product/subscriptioninfo/renewalinfo/commitmentinfo-swift.struct/willautorenew.md) indicates that the subscription automatically renews. The App Store Server Notifications sends a `DID_RENEW` notification. If the renewal is for a monthly subscription with a 12-month commitment, period `1` of the new commitment begins. The renewal may apply to a different subscription, not necessarily one with a 12-month commitment.
 
-#### Manage subscription cancellation during a commitment
+## Manage subscription cancellation during a commitment
 
 When a customer cancels a monthly subscription with a 12-month commitment, they’re canceling the renewal of the commitment, not the remaining payments within the current term. Billing continues through all remaining periods. When a customer cancels the subscription mid-period, the following occurs:
 
@@ -40,7 +40,7 @@ When you receive a `DID_CHANGE_RENEWAL_STATUS` notification, check the billing p
 - If the billing plan type is `MONTHLY`, read `commitmentAutoRenewStatus` to confirm the commitment doesn’t renew. Don’t revoke access to the subscription; continue to honor all remaining billing periods.
 - If the billing plan type is `BILLED_UPFRONT`, the subscription is a standard subscription. Apply your existing cancellation logic.
 
-#### Manage subscription access during billing issues
+## Manage subscription access during billing issues
 
 When a monthly renewal fails due to a billing issue, the App Store automatically attempts to recover the payment. While the subscription is in a billing retry state, revoke access to the subscription, and restore it if billing recovers. If the App Store is unable to recover the payment within 90 days, the commitment ends and you revoke service permanently for that transaction.
 
@@ -58,13 +58,13 @@ After a billing issue recovery, read the `commitmentExpiresDate` from the latest
 
 Billing Grace Period doesn’t apply to monthly subscriptions with 12-month commitments. Revoke access to the subscription as soon as you receive a `DID_FAIL_TO_RENEW` [`notificationType`](../AppStoreServerNotifications/notificationtype.md).
 
-#### Respond to refund consumption requests
+## Respond to refund consumption requests
 
 When a customer submits a refund request for a subscription with a commitment plan, your server receives a `CONSUMPTION_REQUEST` notification at your [`App Store Server Notifications V2`](../AppStoreServerNotifications/app-store-server-notifications-v2.md) endpoint.
 
 Respond with the consumption information and your refund preference for that billing period. For more information on consumption requests, see [`Send Consumption Information`](../AppStoreServerAPI/send-consumption-information.md).
 
-#### Manage access after a refund
+## Manage access after a refund
 
 Customers may receive a refund after they request one, or after making changes to their subscription plan that cause a refund.
 
@@ -73,11 +73,11 @@ When a customer receives a refund for a monthly subscription with a 12-month com
 - If the refund applies to a prior billing period, the system revokes the transaction for that specific period, but the commitment continues unaffected. The customer remains subscribed and billing continues on schedule. Check the [`revocationDate`](./transaction/revocationdate.md) on the affected transaction to detect the revocation, but don’t interpret it as a commitment cancellation.
 - If the refund applies to the current billing period, the commitment ends immediately. Check the [`revocationDate`](./transaction/revocationdate.md) on the latest transaction — its presence indicates the current period has been revoked and the commitment has ended. Revoke access accordingly.
 
-#### Manage price changes
+## Manage price changes
 
 Price changes for monthly subscriptions with 12-month commitments follow the same rules as standard annual subscriptions. For more information, see [Managing Price Increases for Auto-Renewable Subscriptions](./managing-price-increases-for-auto-renewable-subscriptions.md).
 
-#### Test the subscription using StoreKit Testing for Xcode
+## Test the subscription using StoreKit Testing for Xcode
 
 You can test your client-side implementation locally without a Sandbox Apple Account or an Apple Account using StoreKit Testing in Xcode. Testing monthly subscriptions with 12-month commitments is available starting in Xcode 26.5.
 
@@ -98,7 +98,7 @@ With the configuration in place, you can:
 
 For more information, see [Setting up StoreKit Testing in Xcode](../Xcode/setting-up-storekit-testing-in-xcode.md).
 
-#### Test your app in the sandbox environment
+## Test your app in the sandbox environment
 
 When you’re ready to validate your server-side implementation, test in the sandbox environment using a Sandbox Apple Account.
 

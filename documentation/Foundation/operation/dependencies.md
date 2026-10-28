@@ -25,7 +25,7 @@ var dependencies: [Operation] { get }
 @property (copy, readonly) NSArray<NSOperation *> * dependencies;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains an array of `NSOperation` objects. To add an object to this array, use the [`addDependency(_:)`](./adddependency%28_%29.md) method.
 

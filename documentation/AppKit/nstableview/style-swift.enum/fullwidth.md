@@ -19,7 +19,7 @@ case fullWidth
 NSTableViewStyleFullWidth
 ```
 
-#### Discussion
+## Discussion
 
 In a full-width style table, each row spans the entire width of the table. The full-width style also applies a standard horizontal inset between the edges of the table and its first and last columns.
 

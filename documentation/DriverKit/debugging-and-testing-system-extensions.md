@@ -5,13 +5,13 @@
 
 Debug your system extensions by temporarily disabling the security checks that macOS performs during the installation process.
 
-#### Overview
+## Overview
 
 When you activate a system extension from your app, the system requires your extension to have the proper entitlements and code signature. It must also meet all other criteria for running on the user’s system. If the extension doesn’t meet all of the requirements, the activation request fails with an error. During the development of a system extension, you can disable some validation checks to simplify writing and testing your code.
 
 > ❗ **Important**:  Always remember to reenable all validation checks and perform additional testing before shipping your system extension to users. Disabling validation checks is only appropriate during the development process on your local system.
 
-##### Enable activation from any directory
+### Enable activation from any directory
 
 You must place all system extensions in the `Contents/Library/SystemExtensions` directory of your app bundle, and the app itself must be installed in one of the system’s `Applications` directories. To allow development of your app outside of these directories, use the `systemextensionsctl` command-line tool to enable developer mode. When in developer mode, the system doesn’t check the location of your system extension prior to loading it, so you can load it from anywhere in the file system. To enable developer mode, open a Terminal window and execute the following command:
 
@@ -19,13 +19,13 @@ You must place all system extensions in the `Contents/Library/SystemExtensions` 
 
 To turn developer mode off, open Terminal and run the same tool with `developer off` as the parameter.
 
-##### Disable code-signing and notarization checks
+### Disable code-signing and notarization checks
 
 System Integrity Protection (SIP) in macOS prevents unauthorized code from running on your system. Xcode doesn’t notarize apps or system extensions during the normal development cycle, so disabling SIP bypasses the notarization checks that the system normally performs, and allows you to debug your code more quickly.
 
 For information on how to disable SIP, see [Disabling and Enabling System Integrity Protection](../Security/disabling-and-enabling-system-integrity-protection.md).
 
-##### Attach the debugger to your system extension
+### Attach the debugger to your system extension
 
 Because the system loads system extensions dynamically, attach the debugger to your system extension’s process after the system launches it. The `lldb` command-line tool provides a way to attach to any process and examine its state. To use this tool for your system extension, do the following:
 
@@ -35,7 +35,7 @@ Because the system loads system extensions dynamically, attach the debugger to y
 
 After you attach to your system extension’s process, you can use `lldb` to examine its threads and other state information. To view a list of commands available from the `lldb` command-line tool, run the tool in Terminal and type `help`.
 
-##### Test your driver extensions on arm64e
+### Test your driver extensions on arm64e
 
 Driver extensions (dexts) often coordinate with kernel extensions (kexts) to perform certain tasks. On Apple silicon, kexts use the `arm64e` architecture, which includes support for pointer authentication codes (PACs). During your testing cycle, try to build your dext for the `arm64e` architecture and address any issues that arise. To test your dext, do the following:
 

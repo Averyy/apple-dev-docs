@@ -22,7 +22,7 @@ nonisolated
 func defaultSectionExpansion(_ expansion: TabSectionExpansion) -> some TabContent<Self.TabValue>
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to control whether a tab section starts expanded or collapsed in the sidebar. The user can manually change the expansion state, and subsequent user interactions take precedence over this default.
 

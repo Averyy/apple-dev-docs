@@ -19,7 +19,7 @@ var title: String! { get set }
 @property (copy, null_resettable) NSString * title;
 ```
 
-#### Discussion
+## Discussion
 
 By default, “Save” is the title string. If you adapt the `NSSavePanel` object for other uses, its title should reflect the user action that brings it to the screen.
 

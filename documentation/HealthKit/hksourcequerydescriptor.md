@@ -24,7 +24,7 @@ struct HKSourceQueryDescriptor<Sample> where Sample : HKSample
 
 - [Reading data from HealthKit](./reading-data-from-healthkit.md)
 
-#### Overview
+## Overview
 
 Use [`HKSourceQueryDescriptor`](./hksourcequerydescriptor.md) to run a general query that returns a snapshot of all the apps and devices that have saved matching data to the HealthKit store.
 

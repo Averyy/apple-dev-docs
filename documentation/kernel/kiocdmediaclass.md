@@ -15,7 +15,7 @@ kIOCDMediaClass is the name of the IOCDMedia class.
 #define kIOCDMediaClass
 ```
 
-#### Discussion
+## Discussion
 
 kIOCDMediaClass is the name of the IOCDMedia class.
 

@@ -16,11 +16,11 @@ Draws the entire paper contents in the specified rectangle.
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) func draw(in context: CGContext, frame: CGRect, options: RenderingOptions = RenderingOptions()) async
+nonisolated(nonsending)
+func draw(in context: CGContext, frame: CGRect, options: RenderingOptions = RenderingOptions()) async
 ```
 
-#### Discussion
+## Discussion
 
 To draw a cropped portion of a paper data model, modify the `bounds` of the paper being drawn.
 

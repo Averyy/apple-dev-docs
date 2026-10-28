@@ -17,7 +17,7 @@ Initiates a dragging operation from the view, allowing the user to drag arbitrar
 - (void) dragImage:(NSImage *) image at:(NSPoint) viewLocation offset:(NSSize) initialOffset event:(NSEvent *) event pasteboard:(NSPasteboard *) pboard source:(id) sourceObj slideBack:(BOOL) slideFlag;
 ```
 
-#### Discussion
+## Discussion
 
 This method must be invoked only within an implementation of the [`mouseDown(with:)`](../nsresponder/mousedown%28with%29.md) or [`mouseDragged(with:)`](../nsresponder/mousedragged%28with%29.md) methods.
 

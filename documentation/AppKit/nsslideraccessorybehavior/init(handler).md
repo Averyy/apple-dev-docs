@@ -22,7 +22,7 @@ init(handler: @escaping (NSSliderAccessory) -> Void)
 + (NSSliderAccessoryBehavior *) behaviorWithHandler:(void (^)(NSSliderAccessory *)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 This variant is not codable and will assert in `-encodeWithCoder:`.
 

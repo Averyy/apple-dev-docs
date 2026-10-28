@@ -19,7 +19,7 @@ Creates a geometry modifier object from a named function in a Metal library.
 init(named name: String, in library: any MTLLibrary)
 ```
 
-#### Discussion
+## Discussion
 
 To create a geometry modifier function for a custom material, create a Metal file in your Xcode project. Prefix the function with the keyword `[[visible]]`. The function needs to take a single parameter of type `realitykit::geometry_parameters`.
 

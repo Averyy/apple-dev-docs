@@ -25,7 +25,7 @@ init(code: INSearchForPhotosIntentResponseCode, userActivity: NSUserActivity?)
 - (instancetype) initWithCode:(INSearchForPhotosIntentResponseCode) code userActivity:(NSUserActivity *) userActivity;
 ```
 
-#### Discussion
+## Discussion
 
 After initializing the object, assign a value to the [`searchResultsCount`](./searchresultscount-3i5mz.md) property indicating the number of photos that match the search parameters.
 

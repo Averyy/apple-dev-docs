@@ -18,7 +18,7 @@ Performs a tracked ray cast, where a ray is cast into the scene from the center 
 @preconcurrency func trackedRaycast(from point: CGPoint, allowing target: ARRaycastQuery.Target, alignment: ARRaycastQuery.TargetAlignment, updateHandler: @escaping ([ARRaycastResult]) -> Void) -> ARTrackedRaycast?
 ```
 
-#### Return Value
+## Return Value
 
 A tracked ray-cast instance used to update or stop ray casting. The result is `nil` if the ray cast fails or if the AR [`session`](./session.md) configuration isn’t [`ARWorldTrackingConfiguration`](../../ARKit/arworldtrackingconfiguration.md) or one of its subclasses.
 

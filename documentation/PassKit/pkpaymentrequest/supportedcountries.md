@@ -24,7 +24,7 @@ var supportedCountries: Set<String>? { get set }
 @property (nonatomic, copy, nullable) NSSet<NSString *> * supportedCountries;
 ```
 
-#### Discussion
+## Discussion
 
 Use the list of supported countries or regions to limit payments to cards that were issued in specific countries or regions. For example, debit cards may expect transactions only in the country or region where the card was issued. Indicate the supported countries or regions by using ISO 3166 country codes.
 

@@ -24,7 +24,7 @@ typealias AUImplementorValueFromStringCallback = (AUParameter, String) -> AUValu
 typedef float (^)(AUParameter *, NSString *) AUImplementorValueFromStringCallback;
 ```
 
-#### Discussion
+## Discussion
 
 This block is only of interest to audio unit subclasses.
 

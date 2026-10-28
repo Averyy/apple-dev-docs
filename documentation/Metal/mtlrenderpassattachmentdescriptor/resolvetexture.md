@@ -28,7 +28,7 @@ var resolveTexture: (any MTLTexture)? { get set }
 
 - [Setting load and store actions](../setting-load-and-store-actions.md)
 
-#### Discussion
+## Discussion
 
 If the [`storeAction`](./storeaction.md) value is set to [`MTLStoreAction.multisampleResolve`](../mtlstoreaction/multisampleresolve.md) or [`MTLStoreAction.storeAndMultisampleResolve`](../mtlstoreaction/storeandmultisampleresolve.md), then the [`resolveTexture`](./resolvetexture.md) value needs to point to a valid texture. Otherwise, Metal ignores this property.
 

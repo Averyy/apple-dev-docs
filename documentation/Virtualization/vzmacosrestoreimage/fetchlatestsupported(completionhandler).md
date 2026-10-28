@@ -16,7 +16,7 @@ Fetches the latest restore image supported by this host from the network.
 class func fetchLatestSupported(completionHandler: @escaping @Sendable (Result<VZMacOSRestoreImage, any Error>) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 Construct a [`VZMacOSInstaller`](../vzmacosinstaller.md) object with a `VZMacOSRestoreImage` loaded from a file on the local file system. A `VZMacOSRestoreImage` fetched with the [`latestSupported`](./latestsupported.md) method has a URL property that refers to a restore image on the network.
 

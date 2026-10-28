@@ -24,7 +24,7 @@ var featureProvider: (any MLFeatureProvider)? { get set }
 @property (nonatomic, strong, readwrite, nullable) id<MLFeatureProvider> featureProvider;
 ```
 
-#### Discussion
+## Discussion
 
 This optional object conforms to the [`MLFeatureProvider`](../../CoreML/mlfeatureprovider.md) protocol that the model uses to predict inputs that are not supplied by Vision. Vision provides the MLModel with the image for the [`inputImageFeatureName`](./inputimagefeaturename.md) via the `VNRequestHandler`.
 

@@ -25,11 +25,11 @@ func setURL(_ url: URL, for store: NSPersistentStore) -> Bool
 - (BOOL) setURL:(NSURL *) url forPersistentStore:(NSPersistentStore *) store;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the store was relocated, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 For atomic stores, this method alters the location to which the next save operation will write the file; for non-atomic stores, invoking this method will relinquish the existing connection and create a new one at the specified URL. (For non-atomic stores, a store must already exist at the destination URL; a new store will not be created.)
 

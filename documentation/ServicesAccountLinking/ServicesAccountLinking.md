@@ -11,7 +11,7 @@ Link reseller accounts with Apple Media & Purchases accounts.
 - iPadOS 16.4+
 - Mac Catalyst 16.4+
 
-#### Overview
+## Overview
 
 This framework enables applications to register reseller account identifiers or tokens with a user’s Apple Media & Purchases account. This functionality lets content providers and channel partners link their user accounts with Apple’s ecosystem.
 

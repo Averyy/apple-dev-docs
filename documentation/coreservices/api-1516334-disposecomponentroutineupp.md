@@ -15,7 +15,7 @@ Disposes of the universal procedure pointer (UPP) to a component routine callbac
 void DisposeComponentRoutineUPP(ComponentRoutineUPP userUPP);
 ```
 
-#### Discussion
+## Discussion
 
 See the  [`ComponentRoutineProcPtr`](./componentroutineprocptr.md)  callback for more information. 
 

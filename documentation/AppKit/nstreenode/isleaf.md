@@ -19,7 +19,7 @@ var isLeaf: Bool { get }
 @property (readonly, getter=isLeaf) BOOL leaf;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the receiver is a leaf node (has no child nodes), otherwise [`false`](../../Swift/false.md).
 

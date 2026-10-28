@@ -23,7 +23,7 @@ var kCTFontTableCmap: Int { get }
 kCTFontTableCmap
 ```
 
-#### Discussion
+## Discussion
 
 Font table tag for character-to-glyph mapping.
 

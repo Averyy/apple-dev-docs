@@ -22,7 +22,7 @@ case unsupportedParentBundleLocation
 OSSystemExtensionErrorUnsupportedParentBundleLocation
 ```
 
-#### Discussion
+## Discussion
 
 The expected location of a driver extension is in the `Contents/Library/SystemExtensions` directory of a macOS app. The app itself must be in one of the system’s `Applications` directories.
 

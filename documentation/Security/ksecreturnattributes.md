@@ -25,7 +25,7 @@ let kSecReturnAttributes: CFString
 extern CFStringRef const kSecReturnAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFBoolean`](../CoreFoundation/cfboolean.md). A value of [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md) indicates that a dictionary of the (unencrypted) attributes of an item should be returned in the form of a [`CFDictionary`](../CoreFoundation/cfdictionary.md) using the keys and values defined in [Item attribute keys and values](./item-attribute-keys-and-values.md).
 

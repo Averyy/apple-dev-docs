@@ -21,7 +21,7 @@ optional var widgetAllowsEditing: Bool { get }
 @property (readonly) BOOL widgetAllowsEditing;
 ```
 
-#### Discussion
+## Discussion
 
 When a widget that supports editing sets this property to [`true`](../../Swift/true.md), it automatically gets a system-provided button in its header area that users choose to begin or end editing. The default value of this property is [`false`](../../Swift/false.md).
 

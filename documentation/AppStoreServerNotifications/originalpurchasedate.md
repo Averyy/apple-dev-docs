@@ -15,7 +15,7 @@ The purchase date of the transaction associated with the original transaction id
 timestamp originalPurchaseDate
 ```
 
-#### Discussion
+## Discussion
 
 The original purchase date is in UNIX time, in milliseconds.
 

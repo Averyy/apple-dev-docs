@@ -23,7 +23,7 @@ static var byParagraphs: NSString.EnumerationOptions { get }
 NSStringEnumerationByParagraphs
 ```
 
-#### Discussion
+## Discussion
 
 Enumerates by paragraphs. Equivalent to [`paragraphRange(for:)`](../paragraphrange%28for%29.md).
 

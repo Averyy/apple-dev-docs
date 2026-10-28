@@ -28,7 +28,7 @@ var traitCollection: UITraitCollection { get }
 
 - [Displaying and managing views with a view controller](../displaying-and-managing-views-with-a-view-controller.md)
 
-#### Discussion
+## Discussion
 
 [`UIViewController`](../uiviewcontroller.md) and [`UIView`](../uiview.md) adopt the [`UITraitEnvironment`](../uitraitenvironment.md) protocol and expose this property.
 

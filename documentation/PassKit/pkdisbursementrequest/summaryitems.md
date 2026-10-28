@@ -23,7 +23,7 @@ var summaryItems: [PKPaymentSummaryItem] { get set }
 @property (nonatomic, copy) NSArray<PKPaymentSummaryItem *> * summaryItems;
 ```
 
-#### Discussion
+## Discussion
 
 This array must contain one [`PKPaymentSummaryItem`](../pkpaymentsummaryitem.md), which contains the amount the individual receives. This may differ from the total amount withdrawn — for example, if the transfer has an associated fee. The framework displays the amount this [`PKPaymentSummaryItem`](../pkpaymentsummaryitem.md) item represents on the main Apple Pay sheet.
 

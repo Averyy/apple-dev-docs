@@ -21,7 +21,7 @@ Returns an `NSMethodSignature` object for the given Objective-C method type stri
 + (NSMethodSignature *) signatureWithObjCTypes:(const char *) types;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSMethodSignature` object for the given Objective-C method type string in `types`.
 

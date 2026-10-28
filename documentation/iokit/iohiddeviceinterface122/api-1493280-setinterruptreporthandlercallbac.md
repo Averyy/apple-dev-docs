@@ -16,11 +16,11 @@ Sets the report handler callout to be called when the data is received from the 
 IOReturn (*setInterruptReportHandlerCallback)(void *self, void *reportBuffer, uint32_t reportBufferSize, IOHIDReportCallbackFunction callback, void *callbackTarget, void *callbackRefcon);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOReturn code.
 
-#### Discussion
+## Discussion
 
 In order for this to work correctly, you must call createAsyncPort and createAsyncEventSource.
 

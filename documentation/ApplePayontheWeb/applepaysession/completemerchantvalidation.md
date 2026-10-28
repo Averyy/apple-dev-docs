@@ -23,7 +23,7 @@ undefined completeMerchantValidation(
 - [Providing Merchant Validation](../providing-merchant-validation.md)
 - [Requesting an Apple Pay payment session](../requesting-an-apple-pay-payment-session.md)
 
-#### Discussion
+## Discussion
 
 Your server receives the merchant session object when it calls the `Payment Session` endpoint as described in [Providing Merchant Validation](../providing-merchant-validation.md).
 

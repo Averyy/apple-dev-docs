@@ -14,7 +14,7 @@
 #define kIOPropertyCardTypeSDHCKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is used to indicate the card type is SDHC.
 

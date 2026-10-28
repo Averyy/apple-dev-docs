@@ -21,7 +21,7 @@ A structure that holds a collection of month weather statistics data.
 struct MonthlyWeatherStatistics<T> where T : Decodable, T : Encodable, T : Equatable, T : Sendable
 ```
 
-#### Overview
+## Overview
 
 Weather statistics for each month are derived from data for that month, collected over all years since the baseline start date.
 

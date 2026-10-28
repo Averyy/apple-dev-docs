@@ -25,7 +25,7 @@ func drawIndexedPrimitives(primitiveType: MTLPrimitiveType, indexCount: Int, ind
 - (void) drawIndexedPrimitives:(MTLPrimitiveType) primitiveType indexCount:(NSUInteger) indexCount indexType:(MTLIndexType) indexType indexBuffer:(MTLGPUAddress) indexBuffer indexBufferLength:(NSUInteger) indexBufferLength;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to perform indexed drawing, where an index buffer determines how Metal assembles primitives.
 

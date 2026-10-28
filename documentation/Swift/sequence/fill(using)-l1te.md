@@ -18,7 +18,7 @@ func fill(using operation: NSCompositingOperation = NSGraphicsContext.current?.c
 
 Available when `Element` is `CGRect`.
 
-#### Discussion
+## Discussion
 
 > **Precondition**: There must be a set current NSGraphicsContext.
 

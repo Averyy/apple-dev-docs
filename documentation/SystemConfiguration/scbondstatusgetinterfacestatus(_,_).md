@@ -19,7 +19,7 @@ func SCBondStatusGetInterfaceStatus(_ bondStatus: SCBondStatus, _ interface: SCN
 CFDictionaryRefSCBondStatusGetInterfaceStatus(SCBondStatusRef bondStatus, SCNetworkInterfaceRef interface);
 ```
 
-#### Return Value
+## Return Value
 
 The interface status.
 

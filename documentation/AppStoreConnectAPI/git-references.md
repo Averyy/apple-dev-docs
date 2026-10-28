@@ -5,7 +5,7 @@
 
 Read information about the canonical reference for a Git branch or tag.
 
-#### Overview
+## Overview
 
 The `scmGitReferences` resource represents the canonical Git reference for the Git commit that Xcode Cloud used to perform a build. The resource includes the following information:
 

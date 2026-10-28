@@ -15,7 +15,7 @@ Frees a tag used with OSMalloc functions.
 void OSMalloc_Tagfree(OSMallocTag tag);
 ```
 
-#### Discussion
+## Discussion
 
 OSMalloc tags must not be freed while any memory blocks allocated with them still exist. Any OSMalloc function called on those blocks will result in a panic.
 

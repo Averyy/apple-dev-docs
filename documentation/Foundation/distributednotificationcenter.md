@@ -20,24 +20,24 @@ class DistributedNotificationCenter
 @interface NSDistributedNotificationCenter : NSNotificationCenter
 ```
 
-#### Overview
+## Overview
 
 A [`DistributedNotificationCenter`](./distributednotificationcenter.md) instance broadcasts [`NSNotification`](./nsnotification.md) objects to objects in other tasks that have registered for the notification with their task’s default distributed notification center.
 
-##### Principal Attributes
+### Principal Attributes
 
 - Notification dispatch table. See “Class at a Glance” > “Principal Attributes” in [`NotificationCenter`](./notificationcenter.md) for information about the dispatch table.
 
 In addition to the notification name and sender, dispatch table entries for distributed notification centers specify when the notification center delivers notifications to its observers. See the [`postNotificationName(_:object:userInfo:deliverImmediately:)`](./distributednotificationcenter/postnotificationname%28_,object,userinfo,deliverimmediately%29.md) method, Suspending and Resuming Notification Delivery, and [`DistributedNotificationCenter.SuspensionBehavior`](./distributednotificationcenter/suspensionbehavior.md) for details.
 
-##### Commonly Used Methods
+### Commonly Used Methods
 
 - **[`default()`](./distributednotificationcenter/default%28%29.md)**: Accesses the default distributed notification center.
 - **[`addObserver(_:selector:name:object:suspensionBehavior:)`](./distributednotificationcenter/addobserver%28_,selector,name,object,suspensionbehavior%29.md)**: Registers an object to receive a notification with a specified behavior when notification delivery is suspended.
 - **[`postNotificationName(_:object:userInfo:deliverImmediately:)`](./distributednotificationcenter/postnotificationname%28_,object,userinfo,deliverimmediately%29.md)**: Creates and posts a notification.
 - **[`removeObserver(_:name:object:)`](./distributednotificationcenter/removeobserver%28_,name,object%29.md)**: Specifies that an object no longer wants to receive certain notifications.
 
-##### Overview
+### Overview
 
 Each task has a default distributed notification center that you access with the [`default()`](./distributednotificationcenter/default%28%29.md) class method. There may be different types of distributed notification centers. Currently there is a single type—`NSLocalNotificationCenterType`. This type of distributed notification center handles notifications that can be sent between tasks on a single computer. For communication between tasks on different computers, use [Distributed Objects Programming Topics](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DistrObjects/DistrObjects.html#//apple_ref/doc/uid/10000102i).
 

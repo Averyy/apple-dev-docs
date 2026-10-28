@@ -17,7 +17,7 @@ Linear speculative decoding: bidirectional drafter + AR verifier with a shared K
 func linearSpecGenerate(promptIds: [Int], maxNewTokens: Int = 128, blockLength: Int = 32, threshold: Float = 0.0, eosTokenId: Int? = nil, onAccept: ((_ tokens: [Int], _ nfe: Int) -> Void)? = nil) -> (tokens: [Int], nfe: Int)
 ```
 
-#### Discussion
+## Discussion
 
 Requires `batch_size == 1`. The drafter runs with bidirectional attention (no KV-cache update) over a `blockLength`-token block; the verifier runs the same block causally and **does** update the cache. Accepted tokens are the longest matching prefix (plus one bonus AR token), and the cache is trimmed to length to discard rejected tokens.
 

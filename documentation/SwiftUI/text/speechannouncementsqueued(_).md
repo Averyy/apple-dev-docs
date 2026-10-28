@@ -21,7 +21,7 @@ Controls whether to queue pending announcements behind existing speech rather th
 func speechAnnouncementsQueued(_ value: Bool = true) -> Text
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier when you want affect the order in which the accessibility system delivers spoken text. Announcements can occur automatically when the label or value of an accessibility element changes.
 

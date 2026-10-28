@@ -19,7 +19,7 @@ var VMEXIT_SAVE_DBG_CONTROLS: UInt32 { get }
 VMEXIT_SAVE_DBG_CONTROLS
 ```
 
-#### Discussion
+## Discussion
 
 Musrt be `1`.
 

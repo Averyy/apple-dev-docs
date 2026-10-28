@@ -19,7 +19,7 @@ class let didChangeScreenProfileNotification: NSNotification.Name
 extern NSNotificationName NSWindowDidChangeScreenProfileNotification;
 ```
 
-#### Discussion
+## Discussion
 
 NSWindow sends this notification only if the value of [`displaysWhenScreenProfileChanges`](./displayswhenscreenprofilechanges.md) is [`true`](../../Swift/true.md), and in the following situations:
 

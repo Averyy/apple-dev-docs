@@ -20,11 +20,11 @@ optional func window(_ window: NSWindow, willPositionSheet sheet: NSWindow, usin
 - (NSRect) window:(NSWindow *) window willPositionSheet:(NSWindow *) sheet usingRect:(NSRect) rect;
 ```
 
-#### Return Value
+## Return Value
 
 The custom location specified.
 
-#### Discussion
+## Discussion
 
 This method is also called whenever the user resizes `window` while `sheet` is attached.
 

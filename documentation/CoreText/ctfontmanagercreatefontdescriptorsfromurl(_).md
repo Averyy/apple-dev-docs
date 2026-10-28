@@ -25,7 +25,7 @@ func CTFontManagerCreateFontDescriptorsFromURL(_ fileURL: CFURL) -> CFArray?
 extern CFArrayRefCTFontManagerCreateFontDescriptorsFromURL(CFURLRef fileURL);
 ```
 
-#### Return Value
+## Return Value
 
 This function returns a retained reference to a CFArray of `CTFontDescriptorRef` objects, or `NULL` on error. The caller is responsible for releasing the array.
 

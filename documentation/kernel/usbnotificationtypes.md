@@ -15,7 +15,7 @@ Defines types of USB notifications.
 typedef enum USBNotificationTypes USBNotificationTypes;
 ```
 
-#### Discussion
+## Discussion
 
 Use this enumeration to register for USB notifications. You can OR these types together if you need more than one notification. Acknowledge each notification before the process (system sleep or system wake) continues. See [`RegisterForNotification`](../iokit/iousbinterfaceinterface942/api-2977241-registerfornotification.md) and [`AcknowledgeNotification`](../iokit/iousbdeviceinterface942/api-2977134-acknowledgenotification.md) for more information.
 

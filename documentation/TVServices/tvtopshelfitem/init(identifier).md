@@ -19,11 +19,11 @@ init(identifier: String)
 - (instancetype) initWithIdentifier:(NSString *) identifier;
 ```
 
-#### Return Value
+## Return Value
 
 An empty item object.
 
-#### Discussion
+## Discussion
 
 After creating the item object, call the [`setImageURL(_:for:)`](./setimageurl%28_,for%29.md) method to assign an image and one or more actions to the item. Include the item object in the [`TVTopShelfContent`](../tvtopshelfcontent.md) object you return from your extension.
 

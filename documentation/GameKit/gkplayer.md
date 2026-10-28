@@ -30,7 +30,7 @@ class GKPlayer
 - [Protecting the player’s privacy using scoped identifiers](./protecting-the-player-s-privacy-using-scoped-identifiers.md)
 - [Authenticating a player](./authenticating-a-player.md)
 
-#### Overview
+## Overview
 
 Before using Game Center for the first time, players create a single account that identifies them across all Game Center games. The player only needs to sign in to Game Center once per device to start using GameKit features in your game. A player sets a nickname and avatar in their account that provide a consistent and familiar look in your game. Game Center then uses the account to record leaderboard scores and achievements, and to start games with other players.
 

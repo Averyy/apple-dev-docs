@@ -25,7 +25,7 @@ optional func templateApplicationDashboardScene(_ templateApplicationDashboardSc
 
 - [Displaying Content in CarPlay](../displaying-content-in-carplay.md)
 
-#### Discussion
+## Discussion
 
 CarPlay calls this method when it connects a dashboard scene to your navigation app. Create an instance of your map-drawing view controller and assign it as the window’s root view controller. Use the dashboard controller to provide up to two shortcut buttons to display instead of your map content when there’s no active navigation session.
 

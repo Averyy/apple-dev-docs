@@ -21,7 +21,7 @@ A shape used to draw a button’s border.
 struct ButtonBorderShape
 ```
 
-#### Overview
+## Overview
 
 Use the [`buttonBorderShape(_:)`](./view/buttonbordershape%28_%29.md) view modifier to apply the shape to bordered buttons within a view hierarchy.
 

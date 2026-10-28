@@ -21,11 +21,11 @@ Returns a subsequence from the specified position to the end of the collection.
 func suffix(from start: Self.Index) -> Self.SubSequence
 ```
 
-#### Return Value
+## Return Value
 
 A subsequence starting at the `start` position.
 
-#### Discussion
+## Discussion
 
 The following example searches for the index of the number `40` in an array of integers, and then prints the suffix of the array starting at that index:
 

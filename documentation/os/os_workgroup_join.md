@@ -21,11 +21,11 @@ Adds the current thread to the specified workgroup.
 extern int os_workgroup_join(os_workgroup_t wg, os_workgroup_join_token_t token_out);
 ```
 
-#### Return Value
+## Return Value
 
 A value of `0` on success, or a nonzero error code that indicates why the function failed. Common error codes include `EINVAL` or `EALREADY`. For example, this method returns `EALREADY` if the thread already belongs to a workgroup. It returns `EINVAL` if the workgroup is already canceled.
 
-#### Discussion
+## Discussion
 
 When you call this function, the current thread must not belong to any workgroup. This function adds the thread to the specified workgroup and updates the `token_out` parameter. You may call this function safely from a real-time thread of your app.
 

@@ -21,7 +21,7 @@ Computes the coherence function of two single-precision vectors.
 extern void vDSP_zcoher(const float *__A, const float *__B, const DSPSplitComplex *__C, float *__D, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function computes the coherence function of two signals. The  inputs are the signals’ autospectra, real vectors `A` and `B`, and their cross-spectrum, complex vector `C`. Results are left in `D`.
 

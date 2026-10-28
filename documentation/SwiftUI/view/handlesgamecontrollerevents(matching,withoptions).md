@@ -19,7 +19,7 @@ nonisolated
 func handlesGameControllerEvents(matching types: GCUIEventTypes, withOptions options: GameControllerEventHandlingOptions?) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 SpriteView(scene: MyGameScene())

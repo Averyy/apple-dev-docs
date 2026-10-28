@@ -22,7 +22,7 @@ nonisolated
 struct LinkMetadata
 ```
 
-#### Overview
+## Overview
 
 Use [`LinkMetadata`](./linkmetadata.md) to store metadata about a URL, including its title, icon, images, and video.
 

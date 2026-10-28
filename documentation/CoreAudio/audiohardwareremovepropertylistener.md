@@ -14,11 +14,11 @@
 extern OSStatus AudioHardwareRemovePropertyListener(AudioHardwarePropertyID inPropertyID, AudioHardwarePropertyListenerProc inProc);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus indicating success or failure.
 
-#### Discussion
+## Discussion
 
 Unregisters the given AudioHardwarePropertyListenerProc from receive notifications when the given property changes.
 

@@ -25,7 +25,7 @@ static let inflectionRule: NSAttributedString.Key
 extern NSAttributedStringKey const NSInflectionRuleAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is an [`NSInflectionRule`](../../nsinflectionrule.md) object.
 

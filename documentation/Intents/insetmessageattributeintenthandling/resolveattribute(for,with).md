@@ -26,7 +26,7 @@ optional func resolveAttribute(for intent: INSetMessageAttributeIntent) async ->
 - (void) resolveAttributeForSetMessageAttribute:(INSetMessageAttributeIntent *) intent withCompletion:(void (^)(INMessageAttributeResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This method resolves the attribute to apply to the messages.
 

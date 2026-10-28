@@ -20,7 +20,7 @@ An operation that can be performed on a tool call.
 struct Action
 ```
 
-#### Overview
+## Overview
 
 `Action` is an enum-like struct; construct one with a leading-dot factory such as [`appendArguments(_:tokenCount:)`](./action-swift.struct/appendarguments%28_,tokencount%29.md).
 

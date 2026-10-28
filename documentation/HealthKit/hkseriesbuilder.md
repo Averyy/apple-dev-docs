@@ -24,7 +24,7 @@ class HKSeriesBuilder
 @interface HKSeriesBuilder : NSObject
 ```
 
-#### Overview
+## Overview
 
 Never instantiate [`HKSeriesBuilder`](./hkseriesbuilder.md) objects directly. Instead, user one of the concrete subclasses (for example, the [`HKWorkoutRouteBuilder`](./hkworkoutroutebuilder.md) class).
 

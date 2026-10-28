@@ -23,7 +23,7 @@ let kCMMetadataIdentifier_QuickTimeMetadataSpatialAudioMix: CFString
 extern CFStringRef const kCMMetadataIdentifier_QuickTimeMetadataSpatialAudioMix;
 ```
 
-#### Discussion
+## Discussion
 
 ```
 Data associated with a Spatial Audio capture that contains an analysis of a First Order Ambisonics audio stream which is used for playback.

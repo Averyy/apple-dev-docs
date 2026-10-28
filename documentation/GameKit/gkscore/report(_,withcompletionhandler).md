@@ -29,7 +29,7 @@ class func report(_ scores: [GKScore]) async throws
 + (void) reportScores:(NSArray<GKScore *> *) scores withCompletionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this class method whenever you need to submit scores to Game Center, whether you are reporting a single score or multiple scores. The method runs through the array of `GKScore` objects, submitting scores one at a time.
 

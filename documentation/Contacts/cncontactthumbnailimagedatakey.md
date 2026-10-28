@@ -24,7 +24,7 @@ let CNContactThumbnailImageDataKey: String
 extern NSString * const CNContactThumbnailImageDataKey;
 ```
 
-#### Discussion
+## Discussion
 
 This key takes a string value.
 

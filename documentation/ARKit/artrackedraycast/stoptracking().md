@@ -20,7 +20,7 @@ func stopTracking()
 - (void) stopTracking;
 ```
 
-#### Discussion
+## Discussion
 
 A tracked raycast updates continuously until you stop it explicitly by calling [`stopTracking()`](./stoptracking%28%29.md). A raycast will automatically stop when:
 

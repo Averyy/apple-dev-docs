@@ -21,7 +21,7 @@ Prefer the quality-of-service class associated with the block.
 DISPATCH_BLOCK_ENFORCE_QOS_CLASS
 ```
 
-#### Discussion
+## Discussion
 
 Indicates that execution of a dispatch block submitted to a queue should prefer the QoS class assigned to the block at the time of submission over the QoS class assigned to the queue, as long as doing so will not result in a lower QoS class. This flag is the default when a dispatch block is submitted to a queue for synchronous execution or when the dispatch block is invoked directly.
 

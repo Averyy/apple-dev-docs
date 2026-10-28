@@ -30,7 +30,7 @@ class CLLocation
 - [Converting between coordinates and user-friendly place names](./converting-between-coordinates-and-user-friendly-place-names.md)
 - [Getting heading and course information](./getting-heading-and-course-information.md)
 
-#### Overview
+## Overview
 
 A [`CLLocation`](./cllocation.md) object contains the geographical location and altitude of a device, along with values indicating the accuracy of those measurements and when they were collected. In iOS, a location object also contains course information — that is, the speed and heading in which the device was moving.
 

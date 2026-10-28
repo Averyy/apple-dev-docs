@@ -21,7 +21,7 @@ A type that provides sequential, iterated access to its elements.
 protocol Sequence<Element>
 ```
 
-#### Overview
+## Overview
 
 A sequence is a list of values that you can step through one at a time. The most common way to iterate over the elements of a sequence is to use a `for`-`in` loop:
 
@@ -61,7 +61,7 @@ if bugs.contains("Mosquito") {
 // Prints "Whew, no mosquitos!"
 ```
 
-### Repeated Access
+## Repeated Access
 
 The `Sequence` protocol makes no requirement on conforming types regarding whether they will be destructively consumed by iteration. As a consequence, don’t assume that multiple `for`-`in` loops on a sequence will either resume iteration or restart from the beginning:
 
@@ -79,7 +79,7 @@ In this case, you cannot assume either that a sequence will be consumable and wi
 
 To establish that a type you’ve created supports nondestructive iteration, add conformance to the `Collection` protocol.
 
-### Conforming to the Sequence Protocol
+## Conforming to the Sequence Protocol
 
 Making your own custom types conform to `Sequence` enables many useful operations, like `for`-`in` looping and the `contains` method, without much effort. To add `Sequence` conformance to your own custom type, add a `makeIterator()` method that returns an iterator.
 
@@ -110,7 +110,7 @@ for i in threeToGo {
 // Prints "1"
 ```
 
-### Expected Performance
+## Expected Performance
 
 A sequence should provide its iterator in O(1). The `Sequence` protocol makes no other requirements about element access, so routines that traverse a sequence should be considered O(*n*) unless documented otherwise.
 

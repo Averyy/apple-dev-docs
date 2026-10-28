@@ -12,7 +12,7 @@ Key to retrieve a URL that uniquely identifies the group.
 extern NSString * const ALAssetsGroupPropertyURL;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an `NSURL` object.
 

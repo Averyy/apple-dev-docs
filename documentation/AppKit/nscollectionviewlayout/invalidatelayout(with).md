@@ -19,7 +19,7 @@ func invalidateLayout(with context: NSCollectionViewLayoutInvalidationContext)
 - (void) invalidateLayoutWithContext:(NSCollectionViewLayoutInvalidationContext *) context;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method when you make changes that need to be reflected by the collection view, but which do not require the replacement of all of the layout information. You use this method to minimize the work performed by the layout object. Instead of optimizing everything, the specified context object indicates which parts of the layout need to be recomputed. All other layout information is left alone.
 

@@ -26,7 +26,7 @@ consuming func elements() -> some Sendable & AsyncSequence<Element, Failure>
 
 Available when `Failure` conforms to `Error`.
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: The returned asynchronous sequence only supports a single iterator to be created and will fatal error at runtime on subsequent calls to `makeAsyncIterator`.
 

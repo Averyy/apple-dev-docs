@@ -22,7 +22,7 @@ protocol RemoteMediaSessionAttributes : Decodable, Encodable
 
 - [Publishing remote media sessions](./publishing-remote-media-sessions.md)
 
-#### Overview
+## Overview
 
 Conform to this protocol to define the data that configures your remote sessions. Attributes identify sessions and communicate session state between your app and extension. The attributes must be encodable for transmission and uniquely identifiable.
 

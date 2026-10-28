@@ -22,7 +22,7 @@ func setSubject(_ subject: String)
 - (void) setSubject:(NSString *) subject;
 ```
 
-#### Discussion
+## Discussion
 
 This method replaces the previous subject text with the new text. Only call this method before you display the mail composition interface. Don’t call it after presenting the interface to the user.
 

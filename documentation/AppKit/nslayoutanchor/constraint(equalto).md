@@ -19,11 +19,11 @@ func constraint(equalTo anchor: NSLayoutAnchor<AnchorType>) -> NSLayoutConstrain
 - (NSLayoutConstraint *) constraintEqualToAnchor:(NSLayoutAnchor<id> *) anchor;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSLayoutConstraint`](../nslayoutconstraint.md) object that defines an equal relationship between the attributes represented by the two layout anchors.
 
-#### Discussion
+## Discussion
 
 This method defines the relationship `first attribute = second attribute`. Where `first attribute` is the layout attribute represented by the anchor receiving this method call, and `second attribute` is the layout attribute represented by the `anchor` parameter.
 

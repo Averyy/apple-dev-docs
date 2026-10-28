@@ -16,11 +16,11 @@ Opens a HID device for communication.
 IOReturn IOHIDDeviceOpen(IOHIDDeviceRef device, IOOptionBits options);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful.
 
-#### Discussion
+## Discussion
 
 Before the client can issue commands that change the state of the device, it must have succeeded in opening the device. This establishes a link between the client's task and the actual device. To establish an exclusive link use the kIOHIDOptionsTypeSeizeDevice option.
 

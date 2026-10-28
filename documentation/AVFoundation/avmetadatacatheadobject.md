@@ -23,7 +23,7 @@ class AVMetadataCatHeadObject
 @interface AVMetadataCatHeadObject : AVMetadataObject
 ```
 
-#### Overview
+## Overview
 
 [`AVMetadataCatHeadObject`](./avmetadatacatheadobject.md) is a concrete subclass of [`AVMetadataObject`](./avmetadataobject.md) representing a cat head.
 

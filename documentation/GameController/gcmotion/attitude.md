@@ -24,7 +24,7 @@ var attitude: GCQuaternion { get }
 @property (nonatomic, readonly) GCQuaternion attitude;
 ```
 
-#### Discussion
+## Discussion
 
 The *attitude* is the orientation of a body relative to the controller’s reference frame.
 

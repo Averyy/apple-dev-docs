@@ -19,7 +19,7 @@ class NSSplitViewController
 @interface NSSplitViewController : NSViewController
 ```
 
-#### Overview
+## Overview
 
 A split view controller manages a set of child views that it displays next to each other in a side-by-side or top-to-bottom arrangement.
 

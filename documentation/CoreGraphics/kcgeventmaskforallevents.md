@@ -14,7 +14,7 @@
 #define kCGEventMaskForAllEvents
 ```
 
-#### Discussion
+## Discussion
 
 An event mask that specifies all event types.
 

@@ -5,20 +5,20 @@
 
 Observe audio session notifications to ensure that your app responds appropriately to interruptions.
 
-#### Overview
+## Overview
 
 Interruptions are a common part of the iOS, tvOS, visionOS, and watchOS user experiences. For example, consider the scenario of receiving a phone call while you’re watching a movie in the TV app on your iPhone. In this case, the movie’s audio fades out, playback pauses, and the sound of the call’s ringtone fades in. If you decline the call, control returns to the TV app, and playback begins again as the movie’s audio fades in.
 
 At the center of this behavior is your app’s audio session. As interruptions begin and end, the audio session notifies any registered observers so they can take appropriate action. For example, [`AVPlayer`](../AVFoundation/avplayer.md) monitors your app’s audio session and automatically pauses playback in response to interruption events. You can monitor these changes by key-value observing the player’s [`timeControlStatus`](../AVFoundation/avplayer/timecontrolstatus-swift.property.md) property, and update your user interface as necessary when the player pauses and resumes playback.
 
-#### Customize the interruption behavior
+## Customize the interruption behavior
 
 Most apps rely on the system’s default interruption behavior. However, [`AVAudioSession`](./avaudiosession.md) provides ways to customize the default behavior to better accommodate your app’s needs:
 
 - Recent iPad models provide a feature that mutes the built-in microphone at the hardware level when the user closes the device’s Smart Folio cover. If your app plays and records audio, you may want to continue playback even if the system mutes the microphone. You can disable the default interruption behavior by setting the [`overrideMutedMicrophoneInterruption`](./avaudiosession/categoryoptions-swift.struct/overridemutedmicrophoneinterruption.md) option when configuring your audio session.
 - System alerts, such as receiving an incoming phone call, interrupt the active audio session. If you prefer that the system not interrupt your app’s audio session in these cases, you can indicate this preference by setting a value for the [`setPrefersNoInterruptionsFromSystemAlerts(_:)`](./avaudiosession/setprefersnointerruptionsfromsystemalerts%28_%29.md) method.
 
-#### Adopt the lifecycle notifications
+## Adopt the lifecycle notifications
 
 In iOS 27, tvOS 27, visionOS 27, and watchOS 27 and later, [`AVAudioSession`](./avaudiosession.md) posts a set of life-cycle notifications that model interruptions as deactivation and resumption events rather than as begin and end signals. Adopt these notifications for new code because they represent the interrupted-versus-active state directly and don’t get out of sync when the system can’t deliver an end event.
 
@@ -30,7 +30,7 @@ The audio session posts three life-cycle notifications:
 
 The system posts these notifications on the main queue.
 
-#### Handle a deactivation
+## Handle a deactivation
 
 To respond to an interruption, observe [`didBecomeInactiveNotification`](./avaudiosession/didbecomeinactivenotification.md) and inspect the [`AVAudioSession.DeactivationContext`](./avaudiosession/deactivationcontext.md) in the user-information dictionary. The context’s [`source`](./avaudiosession/deactivationcontext/source.md) property indicates whether your app or the system initiated the deactivation. When the system initiates it, [`interruptionContext`](./avaudiosession/deactivationcontext/interruptioncontext.md) describes the interruption.
 
@@ -80,7 +80,7 @@ NotificationCenter.default.addObserver(of: session, for: .didBecomeInactive) { m
 }
 ```
 
-#### Respond to a resumption recommendation
+## Respond to a resumption recommendation
 
 After a system interruption ends, or some cases when activation was rejected, [`AVAudioSession`](./avaudiosession.md) posts [`resumptionRecommendationNotification`](./avaudiosession/resumptionrecommendationnotification.md) with an [`AVAudioSession.ResumptionContext`](./avaudiosession/resumptioncontext.md) value in the user-information dictionary. Read the context’s [`recommendation`](./avaudiosession/resumptioncontext/recommendation.md) property and either play/resume playback or leave the session paused.
 
@@ -116,7 +116,7 @@ func observeResumption() async {
 
 Unlike the legacy interruption notification, [`resumptionRecommendationNotification`](./avaudiosession/resumptionrecommendationnotification.md) isn’t tied to the interrupting app’s end-of-interruption signal, so your app doesn’t stay stuck in an interrupted state if that signal never arrives.
 
-#### Observe the legacy interruption notification
+## Observe the legacy interruption notification
 
 When deploying to iOS 26, tvOS 26, visionOS 26, or watchOS 26 and earlier, observe [`interruptionNotification`](./avaudiosession/interruptionnotification.md) directly. In later releases, the system deprecates this notification, its user-information keys, and the associated enumerations in favor of life-cycle notifications.
 

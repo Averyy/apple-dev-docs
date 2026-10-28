@@ -20,7 +20,7 @@ set padding(padding: PaddingData);
 
 - [MapKit JS 5](../mapkit-js-5.md)
 
-#### Discussion
+## Discussion
 
 The padding affects the map’s controls layout. The map computes the region it draws to fit within the inset frame that the padding specifies.
 

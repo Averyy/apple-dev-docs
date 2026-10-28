@@ -24,7 +24,7 @@ var budget: Int { get set }
 @property (nonatomic, assign) NSUInteger budget;
 ```
 
-#### Discussion
+## Discussion
 
 When you call the [`bestMoveForActivePlayer()`](../gkstrategist/bestmoveforactiveplayer%28%29.md) method, the Monte Carlo strategist randomly chooses between the available moves for the current player (see the [`gameModelUpdates(for:)`](../gkgamemodel/gamemodelupdates%28for%29.md) method of your game model class), then randomly chooses a subsequent move, and so on, until it reaches a state in which the game is either won or lost. Then it returns to the original game state and repeats that process, accumulating information about which sequences of moves are more or less likely to result in a win. When the strategist examines a number of moves equal to the value of its [`budget`](./budget.md) property, it stops, and returns the move it currently rates as “best”.
 

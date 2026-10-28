@@ -21,7 +21,7 @@ class AVCaptureEvent
 @interface AVCaptureEvent : NSObject
 ```
 
-#### Overview
+## Overview
 
 Inspect a capture event’s [`phase`](./avcaptureevent/phase.md) to determine whether the event begins, ends, or is in a canceled state.
 

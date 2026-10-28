@@ -21,7 +21,7 @@ nonisolated
 struct GlassProminentButtonStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`glassProminent`](./primitivebuttonstyle/glassprominent.md) to construct this style.
 

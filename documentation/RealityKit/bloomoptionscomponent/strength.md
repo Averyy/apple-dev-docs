@@ -20,7 +20,7 @@ The intensity of the bloom effect.
 var strength: Float
 ```
 
-#### Discussion
+## Discussion
 
 Higher values create a more pronounced glow effect. The values can be be in the range `[0.0, 2.0]`, where:
 

@@ -16,11 +16,11 @@ Returns the pixel format to apply to the layer’s tracking areas textures.
 MTLPixelFormat cp_layer_renderer_configuration_get_tracking_areas_format(cp_layer_renderer_configuration_t configuration);
 ```
 
-#### Return Value
+## Return Value
 
 The pixel format to apply to the layer’s tracking areas textures.
 
-#### Discussion
+## Discussion
 
 The compositor creates the tracking areas textures using the pixel format information you provide.
 

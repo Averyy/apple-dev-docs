@@ -24,7 +24,7 @@ typealias AUScheduleParameterBlock = (AUEventSampleTime, AUAudioFrameCount, AUPa
 typedef void (^)(long long, unsigned int, unsigned long long, float) __attribute__((nonblocking)) AUScheduleParameterBlock;
 ```
 
-#### Discussion
+## Discussion
 
 Check the parameter’s flags to determine whether the parameter is rampable. If a parameter isn’t rampable, a ramp duration of `0` changes it immediately to the target value, and a nonzero ramp duration leaves it unchanged.
 

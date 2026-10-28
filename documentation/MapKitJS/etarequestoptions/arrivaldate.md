@@ -15,7 +15,7 @@ The arrival date for the trip.
 arrivalDate?: Date;
 ```
 
-#### Discussion
+## Discussion
 
 Specify either a [`departureDate`](./departuredate.md) or an `arrivalDate`, but don’t set both. If you send both values, MapKit JS logs a warning.
 

@@ -25,7 +25,7 @@ let kCVPixelBufferIOSurfacePropertiesKey: CFString
 extern CFStringRef const kCVPixelBufferIOSurfacePropertiesKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is of type [`CFDictionary`](../CoreFoundation/cfdictionary.md). Provide a value for this key if you want Core Video to use the [IOSurface](../IOSurface/IOSurface.md) framework to allocate the pixel buffer. Provide an empty dictionary to use the default [IOSurface](../IOSurface/IOSurface.md) options.
 

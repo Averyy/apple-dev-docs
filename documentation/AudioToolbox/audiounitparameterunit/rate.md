@@ -24,7 +24,7 @@ case rate
 kAudioUnitParameterUnit_Rate
 ```
 
-#### Discussion
+## Discussion
 
 A multiplication factor, most often used for playback speed. A value of  2.0, for example, means twice as fast. May also be used for other purposes where a multiplication factor is appropriate.
 

@@ -15,7 +15,7 @@ The spatial audio component description.
 var spatialExtensionDescription: AudioComponentDescription?
 ```
 
-#### Discussion
+## Discussion
 
 Use this to help identify spatial audio rendering extension Only applicable when `.audioSpatialization` capability is enabled Example AudioComponentDescription(componentType: 0xaaf, componentSubType: 0xc0f, componentManufacturer: 0xb05e, componentFlags: 0, componentFlagsMask: 0)
 

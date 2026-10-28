@@ -25,7 +25,7 @@ var resourceOptions: MTLResourceOptions { get }
 @property (readonly) MTLResourceOptions resourceOptions;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property aggregates the values of [`storageMode`](./storagemode.md), [`cpuCacheMode`](./cpucachemode.md), and [`hazardTrackingMode`](./hazardtrackingmode.md).
 

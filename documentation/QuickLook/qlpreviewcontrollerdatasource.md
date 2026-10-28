@@ -23,7 +23,7 @@ protocol QLPreviewControllerDataSource
 @protocol QLPreviewControllerDataSource
 ```
 
-#### Overview
+## Overview
 
 Besides providing a [`QLPreviewController`](./qlpreviewcontroller.md) with items to preview, this protocol is responsible for telling the preview controller how many items it needs to include in a preview item navigation list.
 

@@ -19,11 +19,11 @@ init?(catalogName listName: NSColorList.Name, colorName: NSColor.Name)
 + (NSColor *) colorWithCatalogName:(NSColorListName) listName colorName:(NSColorName) colorName;
 ```
 
-#### Return Value
+## Return Value
 
 The color object.
 
-#### Discussion
+## Discussion
 
 This method searches the app’s main bundle for an asset catalog with the specified name. It then creates a color object based on the asset whose name matches the value in `colorName`.
 

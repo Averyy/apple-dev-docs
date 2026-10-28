@@ -22,7 +22,7 @@ var videoDisplaySize: CGSize { get set }
 @property (nonatomic, assign) CGSize videoDisplaySize;
 ```
 
-#### Discussion
+## Discussion
 
 The output renders the pixel buffers according to the width and height of display area. If you set this property during the presentation time of a vended caption image, the output vends a new image rendered at the new size.
 

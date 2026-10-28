@@ -19,7 +19,7 @@ var items: [WKAudioFilePlayerItem] { get }
 @property (nonatomic, readonly) NSArray<WKAudioFilePlayerItem *> * items;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the array of queued [`WKAudioFilePlayerItem`](../wkaudiofileplayeritem.md) objects. The initial contents of this array are set at initialization time but you may add or remove items using the methods of this class.
 

@@ -24,7 +24,7 @@ var attitude: CMAttitude { get }
 @property (nonatomic, readonly) CMAttitude * attitude;
 ```
 
-#### Discussion
+## Discussion
 
 A [`CMAttitude`](../cmattitude.md) object represents a measurement of attitude—that is, the orientation of a body relative to a given frame of reference.
 

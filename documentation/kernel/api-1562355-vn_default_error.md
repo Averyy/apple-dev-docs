@@ -15,7 +15,7 @@ Default vnode operation to fill unsupported slots in vnode operation vectors.
 int vn_default_error(void);
 ```
 
-#### Return Value
+## Return Value
 
 ENOTSUP
 

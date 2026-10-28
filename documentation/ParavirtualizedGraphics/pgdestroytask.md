@@ -15,7 +15,7 @@ The block signature for a routine that destroys a task.
 typedef void (^)(struct PGTask_s *) PGDestroyTask;
 ```
 
-#### Discussion
+## Discussion
 
 The block must clean up any virtual memory that the device object allocated when it created the task.
 

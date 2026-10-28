@@ -23,7 +23,7 @@ var itemSpacing: CGFloat { get set }
 @property (nonatomic) CGFloat itemSpacing;
 ```
 
-#### Discussion
+## Discussion
 
 When the tab bar positions items using the [`UITabBar.ItemPositioning.centered`](./itempositioning-swift.enum/centered.md) option, it checks the value of this property to see if a custom spacing value has been supplied. The default value of this property is `0`, which causes the tab bar to use a system-defined default spacing value. Specifying a value greater than `0` causes the tab bar to use your custom value instead. If you try to set this property to a negative value, the tab bar sets the value to `0` instead.
 

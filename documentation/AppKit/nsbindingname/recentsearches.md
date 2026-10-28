@@ -19,7 +19,7 @@ static let recentSearches: NSBindingName
 extern NSBindingName NSRecentSearchesBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

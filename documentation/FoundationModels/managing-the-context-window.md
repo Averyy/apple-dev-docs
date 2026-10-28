@@ -5,7 +5,7 @@
 
 Optimize your app’s token usage when prompting a model with the Foundation Models framework.
 
-#### Overview
+## Overview
 
 When working with a model — like the default on-device foundation model — you have a fixed *context window* that limits the number of tokens the model can process in a single *session*. Apple’s on-device foundation model has a context window of 4096 tokens per session, with a token representing each word, or partial word.
 
@@ -13,7 +13,7 @@ The size of the context window matters, because every session interaction with t
 
 Understanding and managing the context window is essential for building reliable AI features in your app. This article covers several strategies for staying within a token budget, along with how to recover from exceeding the budget.
 
-#### Understand tokens and the context window
+## Understand tokens and the context window
 
 In Latin alphabet languages such as English, a token typically represents three to four characters. For multibyte languages such as Chinese, Japanese, Korean, and Vietnamese a token typically represents one character.
 
@@ -27,7 +27,7 @@ After reaching the context size, the session can no longer process additional re
 
 ![A diagram showing a new session with a fresh context window. The session](https://developer.apple.com/tutorials/images/com.apple.foundationmodels/managing-the-context-window-new-context-window@2x.png)
 
-#### Profile token usage in Xcode
+## Profile token usage in Xcode
 
 Before optimizing your token usage, it’s important to understand how your interaction with the model impacts token growth. The Foundation Models instrument in Xcode provides real-time visibility into token usage. To profile your app in Xcode:
 
@@ -47,7 +47,7 @@ The instrument shows you exactly how many tokens each interaction uses for your 
 
 For more information about profiling, see [Analyzing the runtime performance of your Foundation Models app](./analyzing-the-runtime-performance-of-your-foundation-models-app.md).
 
-#### Write concise prompts and instructions
+## Write concise prompts and instructions
 
 Prompts and instructions often consume the most tokens, especially in multiturn conversations. Shorter, clearer prompts not only save tokens but they often produce better results. Focus on clarity and brevity, along with:
 
@@ -59,7 +59,7 @@ Prompts and instructions often consume the most tokens, especially in multiturn 
 
 For more information on prompting a model, see [Prompting an on-device foundation model](./prompting-an-on-device-foundation-model.md).
 
-#### Ask the model for less content
+## Ask the model for less content
 
 If you notice the model produces long, detailed responses, try limiting how many tokens the model uses in its responses:
 
@@ -77,7 +77,7 @@ struct GameSettings {
 
 > ❗ **Important**: Only use [`maximumResponseTokens`](./generationoptions/maximumresponsetokens.md) to prevent verbose responses. Limiting tokens can cause the model to generate incomplete or grammatically incorrect responses, like “A cat is a small.”
 
-#### Simplify generable types
+## Simplify generable types
 
 Generable types consume tokens in multiple ways. The framework converts each type’s structure into a JSON schema and sends that to the model.
 
@@ -106,7 +106,7 @@ struct ContentAnalysis {
 
 Test Generable types without an `@Guide` macro first, then add guide annotations to the properties that need more clarity to help the model improve the response quality. If you have an unclear property name, it won’t convey the right intent to the model. Instead, consider renaming the property so it’s easier to interpret, or apply an `@Guide` macro to provide a description that the model uses when generating a response.
 
-#### Use tool calling efficiently
+## Use tool calling efficiently
 
 Like `@Generable` types, each tool call and its output consume tokens. The framework sends tool definitions — including names, descriptions, and parameters — to the model so it can decide when to call them. To use tools efficiently:
 
@@ -150,7 +150,7 @@ final class FindPointsOfInterestTool: Tool {
 
 For complex workflows that approach the context window limit, split tool usage across multiple sessions. When you need the model to generate tool arguments, consider asking the model to generate those in one session, execute the tool in your code, then have the model process the tool’s output in a new session.
 
-#### Split large tasks across multiple sessions
+## Split large tasks across multiple sessions
 
 When a task requires more than the size of the context window, divide it into smaller steps that each run in a new language model session. For example, to summarize a long article:
 
@@ -204,7 +204,7 @@ let prompt = """
 let finalSummary = try await finalSession.respond(to: prompt).content
 ```
 
-#### Handle context window errors
+## Handle context window errors
 
 Even with careful optimization, you may exceed the context window limit. This commonly occurs in open-ended conversations where people continue chatting until they reach the token limit. When your app exceeds the limit, the framework throws an [`LanguageModelError.contextSizeExceeded(_:)`](./languagemodelerror/contextsizeexceeded%28_%29.md) error and the session stops responding. When this occurs, create a new session and evaluate your user experience so people understand what happened. You can catch the error in your code, like the following example shows:
 

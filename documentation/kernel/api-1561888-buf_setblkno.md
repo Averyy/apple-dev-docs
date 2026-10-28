@@ -15,11 +15,11 @@ Set physical block number associated with a buffer.
 void buf_setblkno(buf_t bp, daddr64_t blkno);
 ```
 
-#### Return Value
+## Return Value
 
 void.
 
-#### Discussion
+## Discussion
 
 Physical block number is generally set by the cluster layer or by buf_getblk().
 

@@ -19,7 +19,7 @@ var hasConfigureSheet: Bool { get }
 @property (readonly) BOOL hasConfigureSheet;
 ```
 
-#### Discussion
+## Discussion
 
 If you provide a configuration sheet in your bundle, override this method and return [`true`](../../Swift/true.md).
 

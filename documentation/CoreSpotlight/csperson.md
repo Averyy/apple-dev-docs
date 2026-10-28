@@ -23,7 +23,7 @@ class CSPerson
 @interface CSPerson : NSObject
 ```
 
-#### Overview
+## Overview
 
 A `CSPerson` object represents a person in the context of search results. You can create a `CSPerson` object when you have a display name and a contact handle of some kind, such as an email address or phone number.
 

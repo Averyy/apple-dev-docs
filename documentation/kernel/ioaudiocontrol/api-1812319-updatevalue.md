@@ -12,11 +12,11 @@ virtual IOReturn updateValue(
  OSObject *newValue);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if the value is successfully updated.
 
-#### Overview
+## Overview
 
 It also calls sendValueChangedNotification() to send notifications to the user clients.
 

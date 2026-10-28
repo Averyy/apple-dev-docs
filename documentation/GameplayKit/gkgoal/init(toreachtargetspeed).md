@@ -24,7 +24,7 @@ convenience init(toReachTargetSpeed targetSpeed: Float)
 + (instancetype) goalToReachTargetSpeed:(float) targetSpeed;
 ```
 
-#### Return Value
+## Return Value
 
 A new goal object.
 

@@ -20,7 +20,7 @@ func scale(by scale: Double)
 - (void) scaleBy:(CGFloat) scale;
 ```
 
-#### Discussion
+## Discussion
 
 After invoking this method, applying the receiver’s matrix modifies the unit lengths along the current x and y axes by a factor of `scale`, in addition to performing all previous transformations.
 

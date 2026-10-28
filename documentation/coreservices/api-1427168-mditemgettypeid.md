@@ -19,7 +19,7 @@ func MDItemGetTypeID() -> CFTypeID
 CFTypeID MDItemGetTypeID(void);
 ```
 
-#### Return Value
+## Return Value
 
 The type identifier for the `MDItem` opaque type. 
 

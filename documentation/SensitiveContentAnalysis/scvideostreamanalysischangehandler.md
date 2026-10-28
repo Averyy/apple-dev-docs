@@ -16,7 +16,7 @@ A handler your app provides to receive video-stream analysis results.
 typedef void (^)(SCSensitivityAnalysis *, NSError *) SCVideoStreamAnalysisChangeHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Your app implements this handler and the framework calls it when the analyzer’s video stream detects sensitive content, or when the analyzer encounters an error providing analysis or an error in input parameters.
 

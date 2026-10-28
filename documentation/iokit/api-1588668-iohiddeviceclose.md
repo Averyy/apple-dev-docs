@@ -16,11 +16,11 @@ Closes communication with a HID device.
 IOReturn IOHIDDeviceClose(IOHIDDeviceRef device, IOOptionBits options);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful.
 
-#### Discussion
+## Discussion
 
 This closes a link between the client's task and the actual device.
 

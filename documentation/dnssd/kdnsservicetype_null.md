@@ -23,7 +23,7 @@ var kDNSServiceType_NULL: Int { get }
 kDNSServiceType_NULL
 ```
 
-#### Discussion
+## Discussion
 
 Null resource record.
 

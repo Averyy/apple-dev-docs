@@ -21,7 +21,7 @@ var isAutoDeferredPhotoDeliveryEnabled: Bool { get set }
 @property (nonatomic, getter=isAutoDeferredPhotoDeliveryEnabled) BOOL autoDeferredPhotoDeliveryEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 Changing this value requires a lengthy reconfiguration of the capture pipeline, so you should set this property before calling [`startRunning()`](../avcapturesession/startrunning%28%29.md) on the capture session.
 

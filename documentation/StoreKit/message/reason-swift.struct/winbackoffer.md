@@ -24,7 +24,7 @@ static let winBackOffer: Message.Reason
 - [Supporting win-back offers in your app](../../supporting-win-back-offers-in-your-app.md)
 - [Testing win-back offers in the sandbox environment](../../testing-win-back-offers-in-the-sandbox-environment.md)
 
-#### Discussion
+## Discussion
 
 If the customer is eligible for a win-back offer, StoreKit displays the win-back offer message when the app launches. If your app customizes the way it displays win-back offers, you can suppress this message, as described in [`Message`](../../message.md).
 

@@ -24,7 +24,7 @@ let kCIInputTransformKey: String
 extern NSString * const kCIInputTransformKey;
 ```
 
-#### Discussion
+## Discussion
 
 A key for an [`NSAffineTransform`](../Foundation/nsaffinetransform.md) object that specifies a transformation to apply.
 

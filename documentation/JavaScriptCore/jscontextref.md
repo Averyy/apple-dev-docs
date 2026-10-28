@@ -24,7 +24,7 @@ typealias JSContextRef = OpaquePointer
 typedef const struct OpaqueJSContext * JSContextRef;
 ```
 
-#### Discussion
+## Discussion
 
 This holds the global object and other execution state.
 

@@ -19,7 +19,7 @@ Generates the validation data by splitting the training dataset.
 case split(strategy: MLSplitStrategy)
 ```
 
-#### Discussion
+## Discussion
 
 By default, model parameters use this approach to specify the validation data.
 

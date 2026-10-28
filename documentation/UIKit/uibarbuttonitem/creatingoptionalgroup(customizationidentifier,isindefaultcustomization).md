@@ -19,11 +19,11 @@ Places the item in an optional group that a person can move, add to, or remove f
 @preconcurrency func creatingOptionalGroup(customizationIdentifier: String, isInDefaultCustomization: Bool = true) -> UIBarButtonItemGroup
 ```
 
-#### Return Value
+## Return Value
 
 A [`UIBarButtonItemGroup`](../uibarbuttonitemgroup.md) that contains only this bar button item.
 
-#### Discussion
+## Discussion
 
 A bar button item can only belong to one [`UIBarButtonItemGroup`](../uibarbuttonitemgroup.md). If you add a bar button item to a new group, the system removes it from its previous group.
 

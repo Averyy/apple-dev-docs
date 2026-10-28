@@ -21,11 +21,11 @@ class var alternateSelectedControlColor: NSColor { get }
 @property (class, strong, readonly) NSColor * alternateSelectedControlColor;
 ```
 
-#### Return Value
+## Return Value
 
 The system color used for the face of a selected control—a control being clicked or dragged. This color is used in lists and tables.
 
-#### Discussion
+## Discussion
 
 This color is the table and list view equivalent to the [`selectedControlColor`](./selectedcontrolcolor.md) color, which is used for controls in other views.
 

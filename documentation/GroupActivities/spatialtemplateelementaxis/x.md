@@ -15,7 +15,7 @@ The x-axis of alignment.
 static let x: SpatialTemplateElementAxis
 ```
 
-#### Discussion
+## Discussion
 
 An element aligned with the x-axis is parallel to that axis and faces the app from the side.
 

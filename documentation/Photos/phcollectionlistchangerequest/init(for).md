@@ -24,11 +24,11 @@ convenience init?(for collectionList: PHCollectionList)
 + (instancetype) changeRequestForCollectionList:(PHCollectionList *) collectionList;
 ```
 
-#### Return Value
+## Return Value
 
 A collection list change request.
 
-#### Discussion
+## Discussion
 
 After you create a change request within a photo library change block, propose changes to the collection’s title or list of child collections with the properties and instance methods of the change request. After Photos runs your change block, the collection list reflects your changes. For details on change blocks, see [`PHPhotoLibrary`](../phphotolibrary.md).
 

@@ -5,7 +5,7 @@
 
 Display a structured, scrollable column of information.
 
-#### Overview
+## Overview
 
 Use a list to display a one-dimensional vertical collection of views.
 

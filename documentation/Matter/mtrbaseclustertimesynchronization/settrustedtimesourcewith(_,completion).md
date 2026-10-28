@@ -29,7 +29,7 @@ func setTrustedTimeSourceWith(_ params: MTRTimeSynchronizationClusterSetTrustedT
 - (void) setTrustedTimeSourceWithParams:(MTRTimeSynchronizationClusterSetTrustedTimeSourceParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This command is used to set the TrustedTimeSource attribute.
 

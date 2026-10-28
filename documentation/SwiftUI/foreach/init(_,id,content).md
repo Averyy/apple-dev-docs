@@ -63,7 +63,7 @@ init<V>(_ data: Data, id: KeyPath<Data.Element, ID>, @TableRowBuilder<V> content
 
 - [Creating performant scrollable stacks](../creating-performant-scrollable-stacks.md)
 
-#### Discussion
+## Discussion
 
 It’s important that the `id` of a data element doesn’t change, unless the data element has been replaced with a new data element that has a new identity. If the `id` of a data element changes, then the map content generated from that data element will lose any current state and animations.
 

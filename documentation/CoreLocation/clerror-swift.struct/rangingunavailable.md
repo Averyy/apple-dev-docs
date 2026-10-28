@@ -21,7 +21,7 @@ A constant that indicates ranging is disabled.
 static var rangingUnavailable: CLError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error might occur if the device is in Airplane mode or if Bluetooth or location services are disabled.
 

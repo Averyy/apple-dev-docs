@@ -13,7 +13,7 @@ Define and manage which of your app’s activities can be continued between devi
 - macOS 10.14+
 - Xcode 15.0+
 
-#### Overview
+## Overview
 
 This sample app searches for Apple Store locations and shows them on a map. The user can choose a store’s map annotation to see its address and mark it as a favorite. As the user changes visible regions or inspects individual stores, the app uses Handoff to share these activities with the user’s other devices. If the user changes devices, they can use Handoff to launch the app and return to what they were doing on the original device.
 
@@ -21,7 +21,7 @@ This sample app searches for Apple Store locations and shows them on a map. The 
 
 The sample project builds for both macOS and iOS, so you can run it on a Mac, iPhone, and iPad. The project does not contain a watchOS or tvOS app.
 
-##### Configure the Sample Code Project
+### Configure the Sample Code Project
 
 `HandoffMapViewer` must be run on actual devices; the iOS version cannot run in Simulator.
 
@@ -44,7 +44,7 @@ To configure the sample code project so that it can run on your devices, open th
 3. To run the macOS version, build the `HandoffMapViewerMac` target, and run it locally, or copy the application file from the `Products` folder to another Mac and run it there.
 4. To run the iOS version, build the `HandoffMapViewerIOS` target and run it on one of your connected iOS devices.
 
-##### Define User Activities
+### Define User Activities
 
 You implement Handoff by determining specific activities that a user can perform in your app, and whose state you can reproduce on a second device. The sample app has two user activities:
 
@@ -63,7 +63,7 @@ You use the app’s `Info.plist` to tell Handoff which activities your app can c
 </array>
 ```
 
-##### Manage User Activities
+### Manage User Activities
 
 At runtime, you represent a user activity with the `NSUserActivity`  type. You initialize a user activity object with a string identifier, the same one used earlier in the `Info.plist`.  This object also has an `isEligibleForHandoff` property that exposes the activity to Handoff, and a `userInfo`  dictionary containing data needed to recreate the app’s state on the receiving device.
 
@@ -88,7 +88,7 @@ func updateViewingRegion(_ region: MKCoordinateRegion) {
 }
 ```
 
-##### Receive User Activities
+### Receive User Activities
 
 When you move to another device, macOS or iOS indicates that a Handoff activity is available. macOS displays a Handoff icon at the beginning of the Dock, with a badge indicating the type of source device. On iOS, the Handoff banner appears at the bottom of the screen in the app switcher, showing the app and source device name.
 
@@ -123,7 +123,7 @@ func application(_ application: NSApplication, continue userActivity: NSUserActi
 }
 ```
 
-##### Update the App’s State
+### Update the App’s State
 
 The view controllers receive the `NSUserActivity` in the `restoreUserActivityState(_:)` method. `MapViewController` inspects the activity to determine whether it is the map-viewing or the store-editing activity, and then updates the UI as needed. The map-viewing activity case resets the map region, by creating a new `MKCoordinateRegion` from the values in the `userInfo`.
 
@@ -144,7 +144,7 @@ func viewingRegion() -> MKCoordinateRegion? {
 
 In the case of the store-editing activity, the view controller also retrieves the store’s URL and location coordinates from the `userInfo`. The app waits until the map adds a `MKAnnotationView` for the store being edited, so it knows where to anchor the popover.
 
-##### Update the Original Device’s State (Optional)
+### Update the Original Device’s State (Optional)
 
 The `NSUserActivity` class has a `delegate` property of type `NSUserActivityDelegate`. This notifies the originating device when you continue an activity on another device. The originating device can use this to clean up its own UI state.
 

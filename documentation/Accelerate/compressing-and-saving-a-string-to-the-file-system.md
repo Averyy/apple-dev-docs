@@ -5,13 +5,13 @@
 
 Compress the contents of a Unicode string and store the result on the file system.
 
-#### Overview
+## Overview
 
 In this article, you’ll learn how to use AppleArchive to compress a [`String`](../Swift/string.md) structure, and write the compressed data to a file in macOS.
 
 The code below compresses a string using the [`Algorithm.lzfse`](../Compression/algorithm/lzfse.md) algorithm, and stores the result as `lorem.txt` in an AppleArchive file named `lorem.aar`. The code writes `lorem.aar` to the user’s `Downloads` directory.
 
-##### Create the source string
+### Create the source string
 
 Create a string that contains the data the code compresses.
 
@@ -24,7 +24,7 @@ In a real-world app, you’ll most likely generate the string from a source such
     """
 ```
 
-##### Specify the compressed file path
+### Specify the compressed file path
 
 Create a [`FilePath`](../System/filepath.md) structure that specifies the file name and location of the AppleArchive file that stores the compressed data. You must add read and write file access to the Downloads folder in the Signing and Capabilities pane. To learn more about configuring the App Sandbox, see [App Sandbox](../Security/app-sandbox.md).
 
@@ -44,7 +44,7 @@ let archiveFilePath: FilePath = {
 }()
 ```
 
-##### Create the file stream to write the compressed File
+### Create the file stream to write the compressed File
 
 Use `fileStream(path:mode:options:permissions:)` to create the file stream that writes the compressed file to the file system. In this case, use the [`writeOnly`](../System/filedescriptor/accessmode/writeonly.md) mode. Set the options as:
 
@@ -64,7 +64,7 @@ defer {
 }
 ```
 
-##### Create the compression stream
+### Create the compression stream
 
 Create the compression stream, and specify the compression algorithm as [`lzfse`](../AppleArchive/archivecompression/lzfse.md). Specify the file-writing stream as the stream that receives the compressed data:
 
@@ -79,7 +79,7 @@ defer {
 }
 ```
 
-##### Create the encoding stream
+### Create the encoding stream
 
 Create the encoding stream. The encoding stream encodes its data as a byte stream, and sends the encoded data to the compression stream:
 
@@ -92,7 +92,7 @@ defer {
 }
 ```
 
-##### Define the archive header
+### Define the archive header
 
 Define the header for the archive file. The header contains three fields:
 
@@ -130,7 +130,7 @@ do {
 }
 ```
 
-##### Write the string to the encode stream
+### Write the string to the encode stream
 
 Use [`writeBlob(key:from:)`](../AppleArchive/archivestreamprotocol/writeblob%28key,from%29.md) to write the contents of the string as a blob to the encode stream. In turn, the encode stream writes to the compression stream and then, the compression stream writes to the file stream. Finally, the file stream writes the archive file to the file system:
 

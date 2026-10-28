@@ -22,7 +22,7 @@ case success
 INSetMessageAttributeIntentResponseCodeSuccess
 ```
 
-#### Discussion
+## Discussion
 
 Use this code when are able to modify the messages successfully.
 

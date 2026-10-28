@@ -20,7 +20,7 @@ The methods adopted by the object you use to make items in a collection view dis
 protocol UICollectionViewAppIntentsDataSource : AnyObject
 ```
 
-#### Overview
+## Overview
 
 For more information, refer to [Providing contextual cues to Apple Intelligence and Siri](./providing-contextual-cues-to-apple-intelligence-and-siri.md) and [App Intents](./AppIntents.md).
 

@@ -25,7 +25,7 @@ let MPNowPlayingInfoPropertyExternalUserProfileIdentifier: String
 extern NSString * const MPNowPlayingInfoPropertyExternalUserProfileIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 This is only used to reference the profile to the Now Playing app and can be in any format.
 

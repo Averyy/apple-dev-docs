@@ -24,7 +24,7 @@ var accelerationStructureIndex: UInt32
 uint32_t accelerationStructureIndex;
 ```
 
-#### Discussion
+## Discussion
 
 This index refers to a bottom-level instance in the [`instancedAccelerationStructures`](../mtlinstanceaccelerationstructuredescriptor/instancedaccelerationstructures.md) of the [`MTLInstanceAccelerationStructureDescriptor`](../mtlinstanceaccelerationstructuredescriptor.md) that you use to create the new instance acceleration structure.
 

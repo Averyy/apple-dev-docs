@@ -6,5 +6,8 @@ url: https://ml-explore.github.io/mlx-data/build/html/python/_autosummary/_autos
 
 # mlx.data.core.CharTrie.root
 
-**CharTrie.root(*self: mlx.data._c.core.CharTrie*) → mlx.data._c.core.CharTrieNode**
-: Get the root node of the trie
+```python
+CharTrie.root(self: mlx.data._c.core.CharTrie) → mlx.data._c.core.CharTrieNode
+```
+
+Get the root node of the trie

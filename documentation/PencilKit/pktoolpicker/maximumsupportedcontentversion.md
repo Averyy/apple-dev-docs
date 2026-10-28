@@ -26,7 +26,7 @@ var maximumSupportedContentVersion: PKContentVersion { get set }
 
 - [Supporting backward compatibility for ink types](../supporting-backward-compatibility-for-ink-types.md)
 
-#### Discussion
+## Discussion
 
 The default value is [`latest`](../pkcontentversion/latest.md).
 

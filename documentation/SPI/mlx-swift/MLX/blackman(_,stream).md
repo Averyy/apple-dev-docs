@@ -17,11 +17,11 @@ Return the Blackman window.
 func blackman(_ m: Int, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 The window, with the maximum value normalized to one (the value one appears only if the number of samples is odd).
 
-#### Discussion
+## Discussion
 
 The Blackman window is a taper formed by using the first three terms of a summation of cosines.
 

@@ -21,7 +21,7 @@ The string the CSV file generator uses to represent a newline sequence.
 var newline: String
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to a line feed.
 

@@ -23,7 +23,7 @@ func notifyWhenInteractionEnds(_ handler: @escaping (any UIViewControllerTransit
 - (void) notifyWhenInteractionEndsUsingBlock:(void (^)(id<UIViewControllerTransitionCoordinatorContext>context)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 Your block is executed both when the transition completes normally and when the user cancels the transition. In the case where the user cancels the transition, UIKit executes your `context` block, calls the [`viewWillDisappear(_:)`](../uiviewcontroller/viewwilldisappear%28_%29.md) method on the presented view controller, and finally calls the [`viewWillAppear(_:)`](../uiviewcontroller/viewwillappear%28_%29.md) method on the original view controller to signal that it’s once again visible.
 

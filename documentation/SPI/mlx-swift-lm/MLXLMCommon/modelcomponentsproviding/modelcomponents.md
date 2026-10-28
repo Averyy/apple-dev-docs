@@ -18,7 +18,7 @@ The checkpoint components that make up each model component.
 var modelComponents: [ModelComponent : [CheckpointComponent]] { get }
 ```
 
-#### Discussion
+## Discussion
 
 Each [`destination`](../checkpointcomponent/destination.md) is the path of an optional module. Its [`namespaces`](../checkpointcomponent/namespaces.md) list every serialized prefix of the module’s tensors, as they appear before [`prepareCheckpoint(_:)`](../baselanguagemodel/preparecheckpoint%28_%29.md).
 

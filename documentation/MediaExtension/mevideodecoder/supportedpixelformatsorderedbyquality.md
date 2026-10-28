@@ -19,7 +19,7 @@ optional var supportedPixelFormatsOrderedByQuality: [NSNumber] { get }
 @property (readonly) NSArray<NSNumber *> * supportedPixelFormatsOrderedByQuality;
 ```
 
-#### Discussion
+## Discussion
 
 This array contains [`CMPixelFormatType`](../../CoreMedia/cmpixelformattype.md) values, ordered by quality from best to worst. The system queries this property on the extension when [Video Toolbox](../../VideoToolbox/VideoToolbox.md) queries the [`kVTDecompressionPropertyKey_SupportedPixelFormatsOrderedByQuality`](../../VideoToolbox/kvtdecompressionpropertykey_supportedpixelformatsorderedbyquality.md) on the hosting [`VTDecompressionSession`](../../VideoToolbox/vtdecompressionsession.md).
 

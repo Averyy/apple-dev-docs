@@ -25,7 +25,7 @@ func end(_ mapping: NSEntityMapping, manager: NSMigrationManager) throws
 - (BOOL) endEntityMapping:(NSEntityMapping *) mapping manager:(NSMigrationManager *) manager error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This is the end to the given entity mapping. You can implement this method to perform any clean-up at the end of the migration (from any of the three phases of the mapping).
 

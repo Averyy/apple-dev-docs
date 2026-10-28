@@ -23,7 +23,7 @@ final class EndConversationAction
 
 - [Initiating VoIP conversations with LiveCommunicationKit](./initiating-voip-conversations-with-livecommunicationkit.md)
 
-#### Overview
+## Overview
 
 Ending a conversation locally doesn’t necessarily end the conversation for remote members.
 

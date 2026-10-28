@@ -12,7 +12,7 @@ A bitfield to identify types of asset.
 typedef NSUInteger ALAssetsGroupType;
 ```
 
-#### Discussion
+## Discussion
 
 For possible values, see [Types of Asset](./types-of-asset.md).
 

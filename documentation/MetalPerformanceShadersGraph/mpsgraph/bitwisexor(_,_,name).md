@@ -24,7 +24,7 @@ func bitwiseXOR(_ primaryTensor: MPSGraphTensor, _ secondaryTensor: MPSGraphTens
 - (MPSGraphTensor *) bitwiseXORWithPrimaryTensor:(MPSGraphTensor *) primaryTensor secondaryTensor:(MPSGraphTensor *) secondaryTensor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid `MPSGraphTensor` object containing the elementwise result of the applied operation.
 

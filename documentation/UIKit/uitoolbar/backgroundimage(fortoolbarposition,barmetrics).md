@@ -22,11 +22,11 @@ func backgroundImage(forToolbarPosition topOrBottom: UIBarPosition, barMetrics: 
 - (UIImage *) backgroundImageForToolbarPosition:(UIBarPosition) topOrBottom barMetrics:(UIBarMetrics) barMetrics;
 ```
 
-#### Return Value
+## Return Value
 
 The image to use for the toolbar background in the position specified by `topOrBottom` and with the metrics specified by `barMetrics`.
 
-#### Discussion
+## Discussion
 
 The default value is `nil`. When non-`nil` the image will be used instead of the system image for toolbars in the specified position.
 

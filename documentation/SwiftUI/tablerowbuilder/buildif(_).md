@@ -22,7 +22,7 @@ static func buildIf<C>(_ content: C?) -> C? where Value == C.TableRowValue, C : 
 
 Available when `Value` conforms to `Identifiable`.
 
-#### Discussion
+## Discussion
 
 This method provides support for “if” statements in multi-statement closures, producing an optional value that is visible only when the condition evaluates to `true`.
 

@@ -26,7 +26,7 @@ func features(at index: Int) -> any MLFeatureProvider
 - (id<MLFeatureProvider>) featuresAtIndex:(NSInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The feature provider at the given index.
 

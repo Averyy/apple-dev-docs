@@ -26,7 +26,7 @@ func runAction(_ action: SCNAction)
 - (void) runAction:(SCNAction *) action;
 ```
 
-#### Discussion
+## Discussion
 
 SceneKit begins running a newly added action when it prepares to render the next frame.
 

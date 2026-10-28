@@ -17,7 +17,7 @@ nonisolated
 func transactionTask(_ configuration: CredentialTransaction.Configuration?, action: @escaping (CredentialTransaction) async -> Void) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 This task provides an instance of a `CredentialTransaction` to be used to perform transactions.
 

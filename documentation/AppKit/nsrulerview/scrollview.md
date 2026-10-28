@@ -19,7 +19,7 @@ weak var scrollView: NSScrollView? { get set }
 @property (weak, nullable) NSScrollView * scrollView;
 ```
 
-#### Discussion
+## Discussion
 
 This method is generally invoked only by the ruler’s scroll view; you should rarely need to invoke it directly.
 

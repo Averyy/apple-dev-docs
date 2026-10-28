@@ -15,7 +15,7 @@ An event that indicates a state change request has occurred.
 attribute  shouldHandleStateChange;
 ```
 
-#### Discussion
+## Discussion
 
 This event is called when the user requests a change, but before the change occurs. Only a single `shouldHandleStateChange` listener can be active at a time. If multiple listeners are set to listen for `shouldHandleStateChange`, only the last one will be updated. The listener is passed an event object with the following attributes:
 

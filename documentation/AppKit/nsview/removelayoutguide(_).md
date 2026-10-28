@@ -19,7 +19,7 @@ func removeLayoutGuide(_ guide: NSLayoutGuide)
 - (void) removeLayoutGuide:(NSLayoutGuide *) guide;
 ```
 
-#### Discussion
+## Discussion
 
 This method removes the provided layout guide from the view’s [`layoutGuides`](./layoutguides.md) array. It also sets the guide’s [`owningView`](../nslayoutguide/owningview.md) property to `nil`. Finally, it removes any constraints to the layout guide.
 

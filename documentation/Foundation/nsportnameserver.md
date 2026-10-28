@@ -18,7 +18,7 @@ An object-oriented interface to the port registration service used by the distri
 @interface NSPortNameServer : NSObject
 ```
 
-#### Overview
+## Overview
 
 [`NSConnection`](./nsconnection.md) objects use this interface to contact each other and to distribute objects over the network; you should rarely need to interact directly with an [`NSPortNameServer`](./nsportnameserver.md).
 

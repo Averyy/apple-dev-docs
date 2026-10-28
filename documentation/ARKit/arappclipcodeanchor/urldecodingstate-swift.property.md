@@ -20,7 +20,7 @@ var urlDecodingState: ARAppClipCodeAnchor.URLDecodingState { get }
 @property (nonatomic, assign, readonly) ARAppClipCodeURLDecodingState urlDecodingState;
 ```
 
-#### Discussion
+## Discussion
 
 The initial value of this property is [`ARAppClipCodeAnchor.URLDecodingState.decoding`](./urldecodingstate-swift.enum/decoding.md).
 

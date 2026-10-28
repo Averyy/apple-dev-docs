@@ -23,7 +23,7 @@ protocol NSFileProviderServicing : NSObjectProtocol
 @protocol NSFileProviderServicing <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Adopt this protocol if your File Provider extension supports custom services. For more information on custom services, see [`NSFileProviderService`](../Foundation/nsfileproviderservice.md).
 

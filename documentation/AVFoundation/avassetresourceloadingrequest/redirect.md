@@ -24,7 +24,7 @@ var redirect: URLRequest? { get set }
 @property (nonatomic, copy, nullable) NSURLRequest * redirect;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to an instance of [`NSURLRequest`](../../Foundation/nsurlrequest.md) indicating a redirection of the loading request to another URL.
 

@@ -20,7 +20,7 @@ The value that controls how fast a dynamic rigid body’s translation motion app
 var linearDamping: Float { get set }
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: Use a non-negative value for linear damping.
 

@@ -22,7 +22,7 @@ The ClassKit development or production environment for an education app that wor
 - `development`: The environment used to develop and test your app locally, without requiring a Managed Apple ID issued by an educational institution.
 - `production`: The environment used by customers of your app who have a Managed Apple ID. This enviroment enables teachers and students to share data through iCloud.
 
-#### Discussion
+## Discussion
 
 This key specifies the ClassKit environment your app uses to share data with Apple’s Schoolwork app.
 

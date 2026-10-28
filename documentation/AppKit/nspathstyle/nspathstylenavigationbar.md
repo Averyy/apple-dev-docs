@@ -13,7 +13,7 @@
 NSPathStyleNavigationBar
 ```
 
-#### Discussion
+## Discussion
 
 The navigation bar display style and behavior. Similar to the `NSPathStyleStandard` with the navigation bar drawing style. Also known as the breadcrumb style.
 

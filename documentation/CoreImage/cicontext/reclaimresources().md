@@ -19,7 +19,7 @@ func reclaimResources()
 - (void) reclaimResources;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method automatically after every rendering operation. You can use this method to remove textures from the texture cache that reference deleted images.
 

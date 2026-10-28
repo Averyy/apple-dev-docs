@@ -25,7 +25,7 @@ func drawIndexedPrimitives(type primitiveType: MTLPrimitiveType, indexCount: Int
 - (void) drawIndexedPrimitives:(MTLPrimitiveType) primitiveType indexCount:(NSUInteger) indexCount indexType:(MTLIndexType) indexType indexBuffer:(id<MTLBuffer>) indexBuffer indexBufferOffset:(NSUInteger) indexBufferOffset instanceCount:(NSUInteger) instanceCount;
 ```
 
-#### Discussion
+## Discussion
 
 You can complete a primitive and start a new one by passing a sentinel index value that’s the largest unsigned integer possible for `indexType`. For example, the largest unsigned integer for [`MTLIndexType.uint16`](../mtlindextype/uint16.md) and [`MTLIndexType.uint32`](../mtlindextype/uint32.md) is `0xFFFF` and `0xFFFFFFFF`, respectively. The command finishes the current primitive and begins drawing a new one each time the command reads a sentinel index value.
 

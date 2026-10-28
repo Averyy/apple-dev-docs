@@ -24,7 +24,7 @@ class CMIOExtensionProvider
 
 - [Creating a camera extension with Core Media I/O](./creating-a-camera-extension-with-core-media-i-o.md)
 
-#### Overview
+## Overview
 
 An extension provider manages device connections and provides the [`startService(provider:)`](./cmioextensionprovider/startservice%28provider%29.md) class method that you call to bootstrap the service.
 

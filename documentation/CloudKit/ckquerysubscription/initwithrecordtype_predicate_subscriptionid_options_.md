@@ -21,7 +21,7 @@ Creates a named query-based subscription that queries records of a specific type
 - (instancetype) initWithRecordType:(CKRecordType) recordType predicate:(NSPredicate *) predicate subscriptionID:(CKSubscriptionID) subscriptionID options:(CKQuerySubscriptionOptions) querySubscriptionOptions;
 ```
 
-#### Discussion
+## Discussion
 
 The subscription that this method returns is a query-based subscription with a scope that includes all of the user’s record zones. When CloudKit modifies a record that matches the specified type and predicate, it uses `querySubscriptionOptions` to determine whether to send a push notification.
 

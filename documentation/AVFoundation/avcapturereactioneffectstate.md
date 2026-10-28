@@ -23,7 +23,7 @@ class AVCaptureReactionEffectState
 @interface AVCaptureReactionEffectState : NSObject
 ```
 
-#### Overview
+## Overview
 
 Obtain an instance of this class by querying a capture device’s [`reactionEffectsInProgress`](./avcapturedevice/reactioneffectsinprogress.md) property. The system adds new entries to this array when you call [`performEffect(for:)`](./avcapturedevice/performeffect%28for%29.md) or by gesture detection in the capture stream when the value of [`reactionEffectGesturesEnabled`](./avcapturedevice/reactioneffectgesturesenabled.md) is [`true`](../Swift/true.md).
 

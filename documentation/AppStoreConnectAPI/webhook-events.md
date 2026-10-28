@@ -8,7 +8,7 @@ Learn the events that describe payloads and the notifications the system sends.
 **Availability**:
 - App Store Connect API 4.0+
 
-#### Overview
+## Overview
 
 Webhooks give you real-time, event-driven notifications over HTTP, so you can act on events in an automated way. When you enable a webhook, you get a notification each time one of the events you specify occurs. Use the information in the notification to make subsequent calls to the App Store Connect API to retrieve data.
 
@@ -16,7 +16,7 @@ Webhook events describe the payloads that the system sends to your listening ser
 
 To learn more about setting up, testing, and parsing webhook configurations, see [Configuring and parsing App Store Connect API webhook notifications](./configuring-webhook-notifications.md).
 
-#### Learn webhook event types
+## Learn webhook event types
 
 The following event types are available. Each type carries a different set of attributes, depending on whether the system notifies you about an app status change, a build change, beta tester feedback, a background asset change, or an alternative marketplace change.
 
@@ -466,7 +466,7 @@ The following event types are available. Each type carries a different set of at
 }
 ```
 
-#### Trace background asset events to your API calls
+## Trace background asset events to your API calls
 
 Background asset events correspond to specific points in the upload and review workflow, so you can use them to drive automation instead of polling for state.
 

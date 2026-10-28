@@ -21,7 +21,7 @@ The content offset of the scroll view.
 var contentOffset: CGPoint { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This is the position of the scroll view within its overall content size. This value may extend before zero or beyond the content size when the content insets of the scroll view are non-zero or when rubber banding.
 

@@ -27,7 +27,7 @@ class AVCaptureSystemZoomSlider
 
 - [Enhancing your app experience with the Camera Control](./enhancing-your-app-experience-with-the-camera-control.md)
 
-#### Overview
+## Overview
 
 The system sets the slider’s range to the value of the [`systemRecommendedVideoZoomRange`](./avcapturedevice/format/systemrecommendedvideozoomrange.md) property of the device’s active format. If a device’s [`activeFormat`](./avcapturedevice/activeformat.md) value changes, the slider updates its range to the new format’s recommendation.
 

@@ -23,7 +23,7 @@ func index(before i: Self.Index) -> Self.Index
 
 Available when `Index` conforms to `Strideable`, `Indices` is `Range<Self.Index>`, and `Index.Stride` is `Int`.
 
-#### Return Value
+## Return Value
 
 The index value immediately before `i`.
 

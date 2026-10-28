@@ -25,7 +25,7 @@ func CFTimeZoneGetDaylightSavingTimeOffset(_ tz: CFTimeZone!, _ at: CFAbsoluteTi
 extern CFTimeInterval CFTimeZoneGetDaylightSavingTimeOffset(CFTimeZoneRef tz, CFAbsoluteTime at);
 ```
 
-#### Return Value
+## Return Value
 
 The daylight saving time offset for `tz` at `at`.
 

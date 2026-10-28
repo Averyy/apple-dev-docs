@@ -30,7 +30,7 @@ var overrideTraitCollection: UITraitCollection? { get set }
 
 - [Choosing a specific interface style for your iOS app](../choosing-a-specific-interface-style-for-your-ios-app.md)
 
-#### Discussion
+## Discussion
 
 Use this property to provide an interface trait collection for the presented view controller, overriding one or more values in the iOS trait environment.
 

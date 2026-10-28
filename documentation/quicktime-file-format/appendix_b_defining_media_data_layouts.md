@@ -4,7 +4,7 @@
 
 Use efficient media layouts.
 
-#### Overview
+## Overview
 
 The QuickTime file format provides a great deal of flexibility in how media data is physically arranged within a file. However, it also allows media layouts to be created that may be inefficient for playback on a given device. To complicate the matter, a media layout that is inefficient for one device may be, in fact, very efficient for another. Review [Using QuickTime files and media layouts](./using_quicktime_files_and_media_layouts.md) for some common uses of QuickTime files and media layouts in these circumstances.
 

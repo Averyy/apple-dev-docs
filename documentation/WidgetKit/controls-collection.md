@@ -5,7 +5,7 @@
 
 Offer controls that people place in Control Center, on the Lock Screen, and on the Action button to quickly perform an action from your app.
 
-#### Overview
+## Overview
 
 Controls act as a button that initiates an action from your app or opens your app to a specific view, or as a toggle. A toggle can turn a light on and off, or open and close a garage door. People place controls in prominent locations to personalize how they use their devices:
 

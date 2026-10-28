@@ -20,7 +20,7 @@ Animation-evaluation data baked into this resource at construction time.
 final let animationEvaluation: SkeletonResource.AnimationEvaluation
 ```
 
-#### Discussion
+## Discussion
 
 Fixed at construction and immutable for the lifetime of the resource — every reader observes the same value the initializer received.
 

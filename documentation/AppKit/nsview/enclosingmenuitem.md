@@ -19,7 +19,7 @@ var enclosingMenuItem: NSMenuItem? { get }
 @property (strong, readonly, nullable) NSMenuItem * enclosingMenuItem;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `nil` if the view is not in a menu item.
 

@@ -22,7 +22,7 @@ class let touchBarMailTemplateName: String
 extern NSImageName const NSImageNameTouchBarMailTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for mail](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2793534@2x.png)
 

@@ -24,7 +24,7 @@ var attackCurve: PHASECurveType { get }
 @property (nonatomic, readonly) PHASECurveType attackCurve;
 ```
 
-#### Discussion
+## Discussion
 
 This mathematical curve shapes signal progress during the time it takes for sound reduction to reach maximum strength.
 

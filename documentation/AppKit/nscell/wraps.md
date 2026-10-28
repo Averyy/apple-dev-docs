@@ -19,7 +19,7 @@ var wraps: Bool { get set }
 @property BOOL wraps;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the cell wraps text and makes the cell non-scrollable. If the text of the cell is an attributed string value, you must explicitly set the paragraph style line break mode. Setting the value of this property to [`true`](../../Swift/true.md) is equivalent to setting the [`lineBreakMode`](./linebreakmode.md) property to [`NSLineBreakMode.byWordWrapping`](../nslinebreakmode/bywordwrapping.md).
 

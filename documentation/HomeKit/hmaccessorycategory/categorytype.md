@@ -24,7 +24,7 @@ var categoryType: String { get }
 @property (copy, readonly) NSString * categoryType;
 ```
 
-#### Discussion
+## Discussion
 
 See [Accessory Category Types](../accessory-category-types.md) for possible values.
 

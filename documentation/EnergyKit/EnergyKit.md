@@ -10,7 +10,7 @@ Provide grid forecasts and energy insights to help people optimize their electri
 - iOS 26.0+
 - iPadOS 26.0+
 
-#### Overview
+## Overview
 
 EnergyKit provides grid forecasts and energy insights to help people view their energy consumption patterns and choose when to use electricity at home. The framework delivers personalized forecasts for a home based on grid cleanliness and electricity rates, when available, enabling apps to optimize device operation for environmental impact and cost.
 
@@ -25,7 +25,7 @@ Using EnergyKit, your app can:
 - Request insights about a customer’s historical electricity usage correlated with grid cleanliness and electricity rate periods.
 - Display rich activity logs and analytics in the Home app without building custom statistics or graphing UI.
 
-#### Receive energy guidance and submit energy use
+## Receive energy guidance and submit energy use
 
 The framework provides two complementary workflows:
 
@@ -36,7 +36,7 @@ The framework provides two complementary workflows:
 >
 > To use EnergyKit, the system requires your app to have the [`EnergyKit Entitlement`](../BundleResources/entitlements/com.apple.developer.energykit.md) entitlement with a value of `true`.
 
-#### Display energy data in the Home app
+## Display energy data in the Home app
 
 When you adopt the [`EnergyKit LoadEvents Entitlement`](../BundleResources/entitlements/com.apple.developer.energykit.loadevents-experience.md), the Home app displays your electrical load events in a unified energy experience. The Home app shows:
 

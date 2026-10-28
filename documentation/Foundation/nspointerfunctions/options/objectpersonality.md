@@ -25,7 +25,7 @@ static var objectPersonality: NSPointerFunctions.Options { get }
 NSPointerFunctionsObjectPersonality
 ```
 
-#### Discussion
+## Discussion
 
 This is the default personality value.
 

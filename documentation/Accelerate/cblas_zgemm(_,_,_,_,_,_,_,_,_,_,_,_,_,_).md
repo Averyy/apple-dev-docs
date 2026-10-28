@@ -25,7 +25,7 @@ func cblas_zgemm(_ ORDER: CBLAS_ORDER, _ TRANSA: CBLAS_TRANSPOSE, _ TRANSB: CBLA
 void cblas_zgemm(const enum CBLAS_ORDER ORDER, const enum CBLAS_TRANSPOSE TRANSA, const enum CBLAS_TRANSPOSE TRANSB, const __LAPACK_int M, const __LAPACK_int N, const __LAPACK_int K, const __LAPACK_double_complex *ALPHA, const __LAPACK_double_complex *A, const __LAPACK_int LDA, const __LAPACK_double_complex *B, const __LAPACK_int LDB, const __LAPACK_double_complex *BETA, __LAPACK_double_complex *C, const __LAPACK_int LDC);
 ```
 
-#### Discussion
+## Discussion
 
 This function multiplies `A * B` and multiplies the resulting matrix by `alpha`. It then multiplies matrix `C` by `beta`. It stores the sum of these two products in matrix `C`.
 

@@ -17,15 +17,15 @@ The inverse of [`fftshift(_:axes:stream:)`](./fftshift%28_,axes,stream%29.md).
 func ifftshift(_ array: MLXArray, axes: [Int]? = nil, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 The shifted array
 
-#### Discussion
+## Discussion
 
 While identical to [`fftshift(_:axes:stream:)`](./fftshift%28_,axes,stream%29.md) for even-length axes, the behavior differs for odd-length axes.
 
-##### See Also
+### See Also
 
 - [`MLXFFT`](./mlxfft.md)
 

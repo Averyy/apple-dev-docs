@@ -24,7 +24,7 @@ case bgra10_xr_srgb
 MTLPixelFormatBGRA10_XR_sRGB
 ```
 
-#### Discussion
+## Discussion
 
 Pixel components are in blue, green, red, and alpha order, from least significant bit to most significant bit. Each component is a 16-bit chunk arranged as follows:
 

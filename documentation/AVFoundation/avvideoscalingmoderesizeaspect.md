@@ -24,7 +24,7 @@ let AVVideoScalingModeResizeAspect: String
 extern NSString * const AVVideoScalingModeResizeAspect;
 ```
 
-#### Discussion
+## Discussion
 
 This mode preserves the aspect ratio of the source and fills the remaining areas with black to fit the destination dimensions.
 

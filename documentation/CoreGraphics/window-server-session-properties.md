@@ -5,7 +5,7 @@
 
 The keys for the standard properties in a window server session dictionary.
 
-#### Overview
+## Overview
 
 To learn how to use these keys to access the values in a session dictionary, see [`CFDictionary`](../CoreFoundation/cfdictionary.md).
 

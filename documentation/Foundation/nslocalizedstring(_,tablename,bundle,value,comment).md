@@ -21,11 +21,11 @@ Returns a localized string from a table that Xcode generates for you when export
 func NSLocalizedString(_ key: String, tableName: String? = nil, bundle: Bundle = Bundle.main, value: String = "", comment: String) -> String
 ```
 
-#### Return Value
+## Return Value
 
 The result of sending [`localizedString(forKey:value:table:)`](./bundle/localizedstring%28forkey,value,table%29.md) to `bundle`, passing the specified `key`, `value`, and `tableName`.
 
-#### Discussion
+## Discussion
 
 Use this function to automatically generate a strings files named `[tableName].strings` located in `bundle` from your code when exporting localizations from Xcode or the `genstrings` utility.
 
@@ -33,7 +33,7 @@ For information about inserting plural nouns and units into localized strings, s
 
 > ❗ **Important**:  The values for `key`, `tableName`, `value`, and `comment` must be string literal values. Xcode can read these values from source code to automatically create localization tables when exporting localizations, but it doesn’t resolve string variables. If you want to use string variables, manually create a strings file and use [`localizedString(forKey:value:table:)`](./bundle/localizedstring%28forkey,value,table%29.md) instead. For more information on strings files, see [String Resources](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/LoadingResources/Strings/Strings.html#//apple_ref/doc/uid/10000051i-CH6).
 
-##### Choose Meaningful Keys
+### Choose Meaningful Keys
 
 Words can often have multiple different meanings depending on the context in which they’re used. For example, the word “Book” can be a noun referring to a printed literary work or a verb for the action of making a reservation. Words with different meanings that share the same spelling are heteronyms.
 
@@ -59,7 +59,7 @@ For the previous example, the table for the French locale in `fr.lproj/Localized
 "book-button-title" = "Réserver";
 ```
 
-##### Avoid String Interpolation
+### Avoid String Interpolation
 
 Xcode doesn’t evaluate interpolated strings and string variables when generating strings files from code. Attempting to localize interpolated strings causes Xcode to export something that resembles the original code expression instead of its expected value at runtime. Translators then translate that exported value—leaving international users with a localized string containing code.
 
@@ -92,7 +92,7 @@ let localizedString = String.localizedStringWithFormat(format, favoriteColor)
 
 For information about inserting plural nouns and units into localized strings, see [Localizing strings that contain plurals](../Xcode/localizing-strings-that-contain-plurals.md).
 
-##### Avoid Multiline String Literals
+### Avoid Multiline String Literals
 
 Using multiline string literals for strings with newlines can result in unexpected behavior when exporting localizations. Xcode inserts a new line before and after the body of text in the strings file, which translators preserve in their localizations.
 

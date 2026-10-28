@@ -24,7 +24,7 @@ func closestPosition(to point: CGPoint) -> UITextPosition?
 - (UITextPosition *) closestPositionToPoint:(CGPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 An object locating a position in a document that is closest to `point`.
 

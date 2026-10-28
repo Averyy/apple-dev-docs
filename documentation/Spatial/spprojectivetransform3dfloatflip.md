@@ -19,11 +19,11 @@
 static SPProjectiveTransform3DFloat SPProjectiveTransform3DFloatFlip(SPProjectiveTransform3DFloat transform, SPAxis flipAxis);
 ```
 
-#### Return Value
+## Return Value
 
 A new transform flipped along the specified axis.
 
-#### Discussion
+## Discussion
 
 Returns a projective transform that’s flipped along the specified axis.
 

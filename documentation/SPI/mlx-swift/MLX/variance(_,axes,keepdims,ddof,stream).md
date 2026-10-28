@@ -21,7 +21,7 @@ func variance(_ array: MLXArray, axes: some Collection<Int>, keepDims: Bool = fa
 
 - [Converting From Python](./converting-python.md)
 
-##### See Also
+### See Also
 
 - [Reduction Functions](./reduction.md)
 - [`variance(_:axis:keepDims:ddof:stream:)`](./variance%28_,axis,keepdims,ddof,stream%29.md)

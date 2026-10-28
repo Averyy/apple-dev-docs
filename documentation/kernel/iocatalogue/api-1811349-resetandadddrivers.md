@@ -13,7 +13,7 @@ bool resetAndAddDrivers(
  bool doNubMatching = true);
 ```
 
-#### Overview
+## Overview
 
 Resets the catalogue with a new set of drivers, preserving matching originals to keep wired memory usage down.
 

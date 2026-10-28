@@ -25,7 +25,7 @@ func replaceObjects(in range: NSRange, withObjectsFrom otherArray: [Any], range 
 - (void) replaceObjectsInRange:(NSRange) range withObjectsFromArray:(NSArray<id> *) otherArray range:(NSRange) otherRange;
 ```
 
-#### Discussion
+## Discussion
 
 The lengths of `aRange` and `otherRange` don’t have to be equal: If `aRange` is longer than `otherRange`, the extra objects in the receiving array are removed; if `otherRange` is longer than `aRange`, the extra objects from `otherArray` are inserted into the receiving array.
 

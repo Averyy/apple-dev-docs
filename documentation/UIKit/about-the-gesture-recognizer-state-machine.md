@@ -5,7 +5,7 @@
 
 Learn about the states and transitions of the state machine that underlies gesture recognizers.
 
-#### Overview
+## Overview
 
 Gesture recognizers are driven by a state machine, which UIKit uses to ensure the proper handling of events. The state machine determines several important behaviors:
 
@@ -15,7 +15,7 @@ Gesture recognizers are driven by a state machine, which UIKit uses to ensure th
 
 When implementing a custom gesture recognizer, you must update its state machine at appropriate times. A gesture recognizer always starts in the [`UIGestureRecognizer.State.possible`](./uigesturerecognizer/state-swift.enum/possible.md) state, which indicates that it is ready to start processing events. From that state, discrete and continuous gesture recognizers follow different paths until they reach the [`UIGestureRecognizer.State.ended`](./uigesturerecognizer/state-swift.enum/ended.md), [`UIGestureRecognizer.State.failed`](./uigesturerecognizer/state-swift.enum/failed.md), or [`UIGestureRecognizer.State.cancelled`](./uigesturerecognizer/state-swift.enum/cancelled.md) state. A gesture recognizer remains in one of those final states until the current event sequence ends, at which point UIKit resets the gesture recognizer and returns it to the [`UIGestureRecognizer.State.possible`](./uigesturerecognizer/state-swift.enum/possible.md) state.
 
-##### Managing State Transitions for a Discrete Gesture Recognizer
+### Managing State Transitions for a Discrete Gesture Recognizer
 
 When implementing a discrete gesture recognizer, you change the [`state`](./uigesturerecognizer/state-swift.property.md) property to one of two possible values: [`UIGestureRecognizer.State.ended`](./uigesturerecognizer/state-swift.enum/ended.md) or [`UIGestureRecognizer.State.failed`](./uigesturerecognizer/state-swift.enum/failed.md). The following image shows the state diagram for these transitions. When incoming events successfully match your gesture, change the state to [`UIGestureRecognizer.State.ended`](./uigesturerecognizer/state-swift.enum/ended.md). When events do not match your intended gesture, change the state to [`UIGestureRecognizer.State.failed`](./uigesturerecognizer/state-swift.enum/failed.md) as soon as you detect the failure.
 
@@ -25,7 +25,7 @@ When your gesture recognizer transitions to the [`UIGestureRecognizer.State.ende
 
 For an example of how to implement a discrete gesture recognizer, see [Implementing a discrete gesture recognizer](./implementing-a-discrete-gesture-recognizer.md).
 
-##### Managing State Transitions for a Continuous Gesture Recognizer
+### Managing State Transitions for a Continuous Gesture Recognizer
 
 The following image shows the state diagram for a continuous gesture recognizer. The state transitions you make can be broken down into three general phases:
 
@@ -43,13 +43,13 @@ When your gesture recognizer transitions to the [`UIGestureRecognizer.State.bega
 
 For an example of how to implement a continuous gesture recognizer, see [Implementing a Continuous Gesture Recognizer](./implementing-a-continuous-gesture-recognizer.md).
 
-##### Handling Cancellation
+### Handling Cancellation
 
 Cancellation of a gesture occurs automatically when the current event sequence is interrupted by a system event, such as an incoming phone call. You can also cancel a gesture programmatically based on event information or on conditions in your app. Cancellation prevents the gesture recognizer from performing tasks that the user didn’t intend.
 
 When the system cancels a gesture, UIKit calls the [`touchesCancelled(_:with:)`](./uiresponder/touchescancelled%28_,with%29.md) or [`pressesCancelled(_:with:)`](./uigesturerecognizer/pressescancelled%28_,with%29.md) method of your gesture recognizer. When that happens, move your gesture recognizer to the [`UIGestureRecognizer.State.cancelled`](./uigesturerecognizer/state-swift.enum/cancelled.md) state immediately. When you move your gesture recognizer to the [`UIGestureRecognizer.State.cancelled`](./uigesturerecognizer/state-swift.enum/cancelled.md) state, UIKit calls the gesture recognizer’s action methods one final time before resetting it.
 
-##### Resetting the Gesture Recognizer State Machine
+### Resetting the Gesture Recognizer State Machine
 
 Implement the [`reset()`](./uigesturerecognizer/reset%28%29.md) method and use it to return your gesture recognizer to its initial configuration. For example, use this method to return your gesture recognizer’s custom properties to their starting values. Before delivering events in a new event sequence, UIKit calls the [`reset()`](./uigesturerecognizer/reset%28%29.md) method of every gesture recognizer that received touches or is in the [`UIGestureRecognizer.State.failed`](./uigesturerecognizer/state-swift.enum/failed.md), [`UIGestureRecognizer.State.cancelled`](./uigesturerecognizer/state-swift.enum/cancelled.md), or [`UIGestureRecognizer.State.ended`](./uigesturerecognizer/state-swift.enum/ended.md) state. In addition to calling the [`reset()`](./uigesturerecognizer/reset%28%29.md) method, UIKit automatically changes each gesture recognizer’s [`state`](./uigesturerecognizer/state-swift.property.md) property back to [`UIGestureRecognizer.State.possible`](./uigesturerecognizer/state-swift.enum/possible.md) so that it can respond to new event sequences.
 

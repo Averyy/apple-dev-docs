@@ -15,7 +15,7 @@
 kSENSE_KEY_RECOVERED_ERROR = 0x01
 ```
 
-#### Discussion
+## Discussion
 
 A recovered error has occurred.
 

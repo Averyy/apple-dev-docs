@@ -23,7 +23,7 @@ Requests additional margins for drawing beyond the bounds of the window.
 @preconcurrency func preferredWindowClippingMargins(_ edges: Edge3D.Set, _ margins: EdgeInsets3D) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 This modifier will only have an effect on windows with a [`volumetric`](../windowstyle/volumetric.md) window style.
 

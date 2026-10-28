@@ -12,7 +12,7 @@ Inform people when they may have been exposed to COVID-19.
 - Mac Catalyst 12.5+
 - Xcode 12.4+
 
-#### Overview
+## Overview
 
 This code project uses the [Exposure Notification framework](https://developer.apple.com/exposure-notification/) to build a sample app that demonstrates how to notify people when they have come into contact with someone who meets a set of criteria for a case of COVID-19. When using the project as a reference for designing an Exposure Notifications app, you can define the criteria for how the framework determines whether the risk is high enough to report to the user.
 
@@ -25,7 +25,7 @@ Exposure Notifications is available on all iOS devices running iOS 13.5 or later
 
 For more information on the architecture and security of the Exposure Notification service, see [Privacy-Preserving Contact Tracing](https://www.apple.com/covid19/contacttracing/). For more information on supporting iOS 12.5 in your Exposure Notifications App, see [Supporting Exposure Notifications in iOS 12.5](./supporting-exposure-notifications-in-ios-12-5.md).
 
-##### Configure the Sample Code Project
+### Configure the Sample Code Project
 
 Before you run the sample code project in Xcode, make sure:
 
@@ -33,7 +33,7 @@ Before you run the sample code project in Xcode, make sure:
 - You are running Xcode 12 or later.
 - You configure the project with a provisioning profile that includes the Exposure Notification entitlement. To get permission to use this entitlement, see [Exposure Notification Entitlement Request](https://developer.apple.com/contact/request/exposure-notification-entitlement).
 
-##### Authorize Exposure Notifications
+### Authorize Exposure Notifications
 
 Users must explicitly authorize an app to use Exposure Notifications. The [`ENManager`](./enmanager.md) class provides information on the user’s authorization status and requests authorization. The project has a singleton class called `ExposureManager` that instantiates and manages the life cycle of an `ENManager` object. During `init`, It calls [`activate(completionHandler:)`](./enmanager/activate%28completionhandler%29.md) on `ENManager`, then checks the callback to find out if Exposure Notifications is enabled. If it isn’t, `ExposureManager` attempts to enable it.
 
@@ -55,7 +55,7 @@ Users must explicitly authorize an app to use Exposure Notifications. The [`ENMa
 }
 ```
 
-##### Store User Data Locally
+### Store User Data Locally
 
 The app stores information about test results and high-risk exposures in the user defaults directory. The local data is private and stays on the device.
 
@@ -99,7 +99,7 @@ struct TestResult: Codable {
 }
 ```
 
-##### Share Diagnosis Keys with the Server
+### Share Diagnosis Keys with the Server
 
 A user with a diagnosis for COVID-19 can upload *diagnosis keys* to the server. Each instance of the app periodically downloads diagnosis keys to search the device’s private interaction data for matching interactions.
 
@@ -119,7 +119,7 @@ class Server {
 
 As with the local store, this local server stores the data in JSON format, using the same `Persisted` property wrapper.
 
-##### Ask Users to Share COVID-19 Indicators
+### Ask Users to Share COVID-19 Indicators
 
 The sample app demonstrates a strategy in which a recognized medical authority tested the user and found positive COVID-19 indicators. The sample app provides a way for users to enter an authentication code, but doesn’t submit this data to an authentication service, so all codes automatically pass.
 
@@ -170,7 +170,7 @@ func postDiagnosisKeys(_ diagnosisKeys: [ENTemporaryExposureKey], completion: (E
 }
 ```
 
-##### Ask Users to Preauthorize Key Release at the Time of the Test
+### Ask Users to Preauthorize Key Release at the Time of the Test
 
 Starting with iOS 14.4, the Exposure Notification framework allows apps to ask users for permission to release temporary exposure keys when they take a COVID-19 diagnostic test. This authorization lasts for up to five days and should be requested only if the app determines that the user is about to take a test and the app has a way to determine the results. To request preauthorization, the app calls [`preAuthorizeDiagnosisKeys(completionHandler:)`](./enmanager/preauthorizediagnosiskeys%28completionhandler%29.md).
 
@@ -225,7 +225,7 @@ manager.requestPreAuthorizedDiagnosisKeys { (error) in
 
 > ❗ **Important**: PHAs must notify users that they’ve tested positive *before* the app calls `requestPreAuthorizedDiagnosisKeys(completionHandler:)`. They must also notify users that their keys are being submitted to the PHA’s key server.
 
-##### Detect Exposure Notifications API Version at Runtime
+### Detect Exposure Notifications API Version at Runtime
 
 The Exposure Notifications APIs are available in the following distinct versions that implement slightly different versions of the detection algorithm:
 
@@ -294,7 +294,7 @@ func getExposuresV1(_ summary: ENExposureDetectionSummary) {
 }
 ```
 
-##### Check for Exposures in iOS 13.5+
+### Check for Exposures in iOS 13.5+
 
 The ExposureNotificationApp target demonstrates how to create a background task in iOS 13.5 or later to periodically download new keys and check whether the user may have been exposed to an individual with COVID-19.
 
@@ -343,7 +343,7 @@ func createBackgroundTaskIfNeeded() {
 }
 ```
 
-##### Check for Exposures in iOS 12.5
+### Check for Exposures in iOS 12.5
 
 To support iOS 12.5, apps must register an activity handler with `ENManager`’s `setLaunchActivityHandler()` instead of creating a background task, but only when running on iOS 12.5. This step is necessary because [Background Tasks](../BackgroundTasks/BackgroundTasks.md) do not exist in iOS 12.5. Instead, `ENManager` provides apps that register an activity handler with 3.5 minutes of background processing at least once per day.
 
@@ -376,7 +376,7 @@ if #available(iOS 13.5, *) {
 
 The remaining sections describe how the app obtains the set of diagnosis keys and submits them to the framework for evaluation.
 
-##### Download Diagnosis Keys
+### Download Diagnosis Keys
 
 The app downloads diagnosis keys from the server to pass to the framework, starting with the first key the app hasn’t downloaded before. This design ensures that the app checks each diagnosis key only once on any given device.
 
@@ -420,7 +420,7 @@ dispatchGroup.notify(queue: .main) {
     }
 ```
 
-##### Configure Criteria to Estimate Risk
+### Configure Criteria to Estimate Risk
 
 The framework will compare locally saved interaction data against the diagnosis keys provided by the app. When the framework finds a match, it calculates a risk score for that interaction based on a number of different factors, such as when the interaction took place and how long the devices were in proximity to each other.
 
@@ -529,7 +529,7 @@ func getExposureConfiguration(completion: (Result<ENExposureConfiguration, Error
 }
 ```
 
-##### Submit Diagnosis Keys to the Framework
+### Submit Diagnosis Keys to the Framework
 
 After downloading the key files, the app performs the search for exposures using a series of asynchronous steps. First, the app requests the criteria from the server, which calls into the code shown in the Configure Criteria to Estimate Risk section above. Then the app calls the `ENManager` objects’s [`detectExposures(configuration:diagnosisKeyURLs:completionHandler:)`](./enmanager/detectexposures%28configuration,diagnosiskeyurls,completionhandler%29.md) method, passing the criteria and the URLs for the downloaded key files. This method returns a summary of the search results.
 

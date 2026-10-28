@@ -24,7 +24,7 @@ class VNRecognizedObjectObservation
 @interface VNRecognizedObjectObservation : VNDetectedObjectObservation
 ```
 
-#### Overview
+## Overview
 
 The confidence of the classifications sum up to `1.0.` Multiply the classification confidence with the confidence of this observation.
 

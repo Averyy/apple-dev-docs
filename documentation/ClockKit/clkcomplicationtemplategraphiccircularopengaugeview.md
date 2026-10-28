@@ -17,7 +17,7 @@ A template for displaying a SwiftUI view, an open gauge, and text.
 final class CLKComplicationTemplateGraphicCircularOpenGaugeView<Label> where Label : View
 ```
 
-#### Overview
+## Overview
 
 This template belongs to the [`CLKComplicationFamily.graphicCircular`](./clkcomplicationfamily/graphiccircular.md) family. [Figure 1](./clkcomplicationtemplategraphiccircularopengaugeview.md#3667249) shows the layout of the view and where the template might appear on the clock face.
 

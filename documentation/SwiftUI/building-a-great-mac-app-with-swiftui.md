@@ -10,7 +10,7 @@ Create engaging SwiftUI Mac apps by incorporating side bars, tables, toolbars, a
 - macOS 12.0+
 - Xcode 13.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC21 sessions: [10062: SwiftUI on the Mac: Build the Fundamentals](https://developer.apple.com/wwdc21/10062/) and [10289: SwiftUI on the Mac: The Finishing Touches](https://developer.apple.com/wwdc21/10289/).
 

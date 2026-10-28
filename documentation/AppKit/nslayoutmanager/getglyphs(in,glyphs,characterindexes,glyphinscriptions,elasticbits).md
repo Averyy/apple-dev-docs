@@ -21,7 +21,7 @@ func getGlyphs(in glyphRange: NSRange, glyphs glyphBuffer: UnsafeMutablePointer<
 - (NSUInteger) getGlyphsInRange:(NSRange) glyphRange glyphs:(NSGlyph *) glyphBuffer characterIndexes:(NSUInteger *) charIndexBuffer glyphInscriptions:(NSGlyphInscription *) inscribeBuffer elasticBits:(BOOL *) elasticBuffer;
 ```
 
-#### Discussion
+## Discussion
 
 This is a convenience method for [`getGlyphs(in:glyphs:characterIndexes:glyphInscriptions:elasticBits:bidiLevels:)`](./getglyphs%28in,glyphs,characterindexes,glyphinscriptions,elasticbits,bidilevels%29.md) that does not return a `bidiLevelBuffer`.
 

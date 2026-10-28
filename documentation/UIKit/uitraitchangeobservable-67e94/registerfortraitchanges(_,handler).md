@@ -21,11 +21,11 @@ Registers a list of traits to observe and a closure to execute when one of the o
 @MainActor func registerForTraitChanges<TraitEnvironment>(_ traits: [UITrait], handler: @escaping Self.TraitChangeHandler<TraitEnvironment>) -> any UITraitChangeRegistration where TraitEnvironment : UITraitEnvironment
 ```
 
-#### Return Value
+## Return Value
 
 An opaque token you can use to stop observing trait changes by passing to [`unregisterForTraitChanges(_:)`](./unregisterfortraitchanges%28_%29.md). You don’t have to unregister your observations, and you can safely ignore this value.
 
-#### Discussion
+## Discussion
 
 The first parameter of the closure provides access to the observed object whose traits have changed, so you don’t need to create a weak reference. When registering for changes on self, use `self` as the name and `Self` as the type of the first parameter.
 

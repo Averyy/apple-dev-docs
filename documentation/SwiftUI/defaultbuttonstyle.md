@@ -22,7 +22,7 @@ nonisolated
 struct DefaultButtonStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`automatic`](./primitivebuttonstyle/automatic.md) to construct this style.
 

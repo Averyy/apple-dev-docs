@@ -25,7 +25,7 @@ var n_threads: Int
 size_t n_threads;
 ```
 
-#### Discussion
+## Discussion
 
 If `0`, BNNS uses the best number of threads for the current machine.
 

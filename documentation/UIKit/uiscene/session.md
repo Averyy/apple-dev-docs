@@ -23,7 +23,7 @@ var session: UISceneSession { get }
 @property (nonatomic, readonly) UISceneSession * session;
 ```
 
-#### Discussion
+## Discussion
 
 UIKit maintains a session object for each scene. The session object contains a unique identifier for the scene and other information about its configuration.
 

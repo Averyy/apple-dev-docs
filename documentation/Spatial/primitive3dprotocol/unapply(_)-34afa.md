@@ -22,7 +22,7 @@ Unapplies an affine transform.
 mutating func unapply(_ transform: Self.AffineTransform)
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: The transform must be rectilinear otherwise this function returns `self`.
 

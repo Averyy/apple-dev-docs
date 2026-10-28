@@ -19,15 +19,15 @@ func PMCopyLocalizedPPD(_ ppd: CFURL, _ localizedPPD: UnsafeMutablePointer<Unman
 OSStatus PMCopyLocalizedPPD(CFURLRef ppd, CFURLRef  _Nullable *localizedPPD);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 To access the data in the PPD file, you can use the function [`PMCopyPPDData(_:_:)`](./api-1460345-pmcopyppddata.md).
 
-##### Special Considerations
+### Special Considerations
 
 In macOS 10.5 and later, the printing system supports globalized PPD files as defined in CUPS version 1.2 and later. A globalized PPD file contains multiple localizations within a single file. If a globalized PPD file exists, this function returns the URL to this file and it is up to the application to obtain the correct localized data. For more information, see [CUPS PPD Extensions](http://www.cups.org/documentation.php/spec-ppd.html).
 

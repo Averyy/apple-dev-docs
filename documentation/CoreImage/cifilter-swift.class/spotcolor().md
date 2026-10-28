@@ -24,11 +24,11 @@ class func spotColor() -> any CIFilter & CISpotColor
 + (CIFilter<CISpotColor> *) spotColorFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the spot color filter to an image. The effect replaces one or more of the color ranges of the input image with properties.
 

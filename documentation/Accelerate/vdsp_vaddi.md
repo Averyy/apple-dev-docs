@@ -21,7 +21,7 @@ Adds two integer vectors.
 extern void vDSP_vaddi(const int *__A, vDSP_Stride __IA, const int *__B, vDSP_Stride __IB, int *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the sums of the first `N` elements of `A` and `B`, writing the result to `C`:
 

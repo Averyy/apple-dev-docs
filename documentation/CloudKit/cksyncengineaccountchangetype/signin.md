@@ -25,7 +25,7 @@ case signIn
 CKSyncEngineAccountChangeTypeSignIn
 ```
 
-#### Discussion
+## Discussion
 
 If your app has locally-stored data when [`CKSyncEngine`](../cksyncengine-4b4w9.md) notifies it about the device signing in to an iCloud account, perform one of the following actions:
 

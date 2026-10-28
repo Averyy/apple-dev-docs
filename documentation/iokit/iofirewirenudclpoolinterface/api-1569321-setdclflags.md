@@ -14,7 +14,7 @@
 void (*SetDCLFlags)(NuDCLRef dcl, UInt32 flags);
 ```
 
-#### Discussion
+## Discussion
 
 Description forthcoming
 

@@ -19,7 +19,7 @@ let XPC_ACTIVITY_REQUIRE_SCREEN_SLEEP: UnsafePointer<CChar>
 extern const char * const XPC_ACTIVITY_REQUIRE_SCREEN_SLEEP;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `false`.
 

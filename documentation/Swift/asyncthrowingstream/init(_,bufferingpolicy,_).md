@@ -21,7 +21,7 @@ Constructs an asynchronous stream for an element type, using the specified buffe
 init(_ elementType: Element.Type = Element.self, bufferingPolicy limit: AsyncThrowingStream<Element, Failure>.Continuation.BufferingPolicy = .unbounded, _ build: (AsyncThrowingStream<Element, Failure>.Continuation) -> Void) where Failure == any Error
 ```
 
-#### Discussion
+## Discussion
 
 The `AsyncStream.Continuation` received by the `build` closure is appropriate for use in concurrent contexts. It is thread safe to send and finish; all calls to the continuation are serialized. However, calling this from multiple concurrent contexts could result in out-of-order delivery.
 

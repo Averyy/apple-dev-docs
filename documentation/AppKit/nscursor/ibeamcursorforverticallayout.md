@@ -22,7 +22,7 @@ class var iBeamCursorForVerticalLayout: NSCursor { get }
 @property (class, strong, readonly) NSCursor * IBeamCursorForVerticalLayout;
 ```
 
-#### Return Value
+## Return Value
 
 The vertical layout text cursor. This cursor is used when editing vertical layout text.
 

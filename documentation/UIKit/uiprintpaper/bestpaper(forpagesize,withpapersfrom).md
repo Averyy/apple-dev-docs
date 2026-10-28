@@ -22,11 +22,11 @@ class func bestPaper(forPageSize contentSize: CGSize, withPapersFrom paperList: 
 + (UIPrintPaper *) bestPaperForPageSize:(CGSize) contentSize withPapersFromArray:(NSArray<UIPrintPaper *> *) paperList;
 ```
 
-#### Return Value
+## Return Value
 
 An instance of `UIPrintPaper` that represents the optimal printable area and paper size for the current print job. Returns `nil` if the instance could not be created.
 
-#### Discussion
+## Discussion
 
 The delegate of [`UIPrintInteractionController`](../uiprintinteractioncontroller.md) may call this method in its implementation of the [`printInteractionController(_:choosePaper:)`](../uiprintinteractioncontrollerdelegate/printinteractioncontroller%28_,choosepaper%29.md) method declared in the [`UIPrintInteractionControllerDelegate`](../uiprintinteractioncontrollerdelegate.md) protocol.
 

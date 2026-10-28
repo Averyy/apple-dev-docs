@@ -6,16 +6,22 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.De
 
 # mlx.core.Device
 
-**class Device(**args*, ***kwargs*)**
-: A device to run operations on.
+```python
+class Device(*args, **kwargs)
+```
 
-__init__(*self*, *type: mlx.core.DeviceType*, *index: int = 0*) → [None](https://docs.python.org/3/builtins/constants.html#None)
+A device to run operations on.
+
+```python
+__init__(self, type: mlx.core.DeviceType, index: int = 0) → None
+```
 
 Methods
 
-[__init__](#mlx.core.Device.__init__)(self, type[, index])
+| [__init__](#mlx.core.Device.__init__)(self, type[, index]) |  |
+| --- | --- |
 
 Attributes
 
-`type`
-(self) -> mlx.core.DeviceType
+| `type` | (self) -> mlx.core.DeviceType |
+| --- | --- |

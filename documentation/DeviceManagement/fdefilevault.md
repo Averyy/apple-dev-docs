@@ -15,7 +15,7 @@ The payload that configures FileVault.
 object FDEFileVault
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.MCX.FileVault2` as the payload type.
 
@@ -23,7 +23,7 @@ FileVault 2 performs full XTS-AES 128 encryption on the contents of a volume. Re
 
 As of macOS 10.15, FileVault settings require supervision or user approval when installed manually.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -35,7 +35,7 @@ As of macOS 10.15, FileVault settings require supervision or user approval when 
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

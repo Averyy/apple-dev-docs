@@ -25,11 +25,11 @@ func CFFileSecurityCopyAccessControlList(_ fileSec: CFFileSecurity!, _ accessCon
 extern Boolean CFFileSecurityCopyAccessControlList(CFFileSecurityRef fileSec, acl_t*accessControlList);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` if the ACL was successfully copied, or `false` if there is no ACL property associated with the `CFFileSecurityRef` object.
 
-#### Discussion
+## Discussion
 
 You can manipulate the `acl_t` object using the acl calls defined in `<sys/acl.h>`. For more information, see the acl manual page.
 

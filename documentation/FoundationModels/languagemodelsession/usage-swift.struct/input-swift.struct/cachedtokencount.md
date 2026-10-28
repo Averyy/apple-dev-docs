@@ -20,7 +20,7 @@ The number of input tokens that were served from a cache.
 var cachedTokenCount: Int
 ```
 
-#### Discussion
+## Discussion
 
 This value is always less than or equal to [`totalTokenCount`](./totaltokencount.md).
 

@@ -15,7 +15,7 @@ The block signature for a routine that handles trace requests.
 typedef void (^)(struct PGPhysicalMemoryRange_s *) PGTraceRangeHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The returned range may be larger than the range that the guest wrote into. For example, if you can only determine which memory the guest accessed at virtual memory page boundaries, you’d report that the entire page changed. Where possible, coalesce writes over a period of time into a single activity notification.
 

@@ -17,7 +17,7 @@ The build configuration to use while building.
 var configuration: BuildConfiguration
 ```
 
-#### Discussion
+## Discussion
 
 Typically whether to build for debug or release.
 

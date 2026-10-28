@@ -19,7 +19,7 @@ protocol NSPasteboardReading : NSObjectProtocol
 @protocol NSPasteboardReading <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The Cocoa framework classes [`NSString`](../Foundation/nsstring.md), [`NSAttributedString`](../Foundation/nsattributedstring.md), [`NSURL`](../Foundation/nsurl.md), [`NSColor`](./nscolor.md), [`NSSound`](./nssound.md), [`NSImage`](./nsimage.md), and [`NSPasteboardItem`](./nspasteboarditem.md) implement this protocol. You can make your custom class conform to this protocol so that you can read instances from a pasteboard using the [`readObjects(forClasses:options:)`](./nspasteboard/readobjects%28forclasses,options%29.md) method of [`NSPasteboard`](./nspasteboard.md).
 

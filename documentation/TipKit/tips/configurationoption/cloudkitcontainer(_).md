@@ -21,7 +21,7 @@ Sets the CloudKit container used for syncing tips.
 static func cloudKitContainer(_ cloudKitContainer: Tips.ConfigurationOption.CloudKitContainer?) -> Tips.ConfigurationOption
 ```
 
-#### Overview
+## Overview
 
 Use `cloudKitContainer` to sync TipKit’s datastore across devices.
 
@@ -29,7 +29,7 @@ In order to avoid record collisions between your app and TipKit, it is recommend
 
 By default, TipKit’s datastore does not sync with CloudKit.
 
-#### Discussion
+## Discussion
 
 Syncing TipKit’s datastore requires two separate capabilities in your app’s entitlements: the iCloud capability which lets you specify a CloudKit container, and the Background Modes capability, which lets your app receive remote notifications from CloudKit that contain information about new changes on the server.
 
@@ -53,7 +53,7 @@ struct TipKitTrails: App {
 }
 ```
 
-##### CloudKit Container Values
+### CloudKit Container Values
 
 - [`automatic`](./cloudkitcontainer/automatic.md)
   Syncs the TipKit datastore using the first container in your app’s entitlements with a “.tips” suffix or, if none is available, the primary container is used.

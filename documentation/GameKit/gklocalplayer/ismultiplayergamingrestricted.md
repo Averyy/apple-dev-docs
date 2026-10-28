@@ -28,7 +28,7 @@ var isMultiplayerGamingRestricted: Bool { get }
 
 - [Authenticating a player](../authenticating-a-player.md)
 
-#### Discussion
+## Discussion
 
 If this property is [`true`](../../Swift/true.md), the local player can’t join multiplayer games. If your game uses a custom multiplayer feature, you should disable it.
 

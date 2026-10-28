@@ -25,7 +25,7 @@ static let morphology: NSAttributedString.Key
 extern NSAttributedStringKey const NSMorphologyAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is an [`NSMorphology`](../../nsmorphology.md) object. Use the value to determine the appropriate gender and other grammatical rules to apply to the text.
 

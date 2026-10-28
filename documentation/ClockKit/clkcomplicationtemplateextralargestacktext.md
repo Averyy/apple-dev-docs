@@ -21,7 +21,7 @@ class CLKComplicationTemplateExtraLargeStackText
 @interface CLKComplicationTemplateExtraLargeStackText : CLKComplicationTemplate
 ```
 
-#### Overview
+## Overview
 
 This template belongs to the [`CLKComplicationFamily.extraLarge`](./clkcomplicationfamily/extralarge.md) family.
 

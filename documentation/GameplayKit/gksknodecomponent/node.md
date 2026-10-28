@@ -24,7 +24,7 @@ var node: SKNode { get set }
 @property (nonatomic, strong) SKNode * node;
 ```
 
-#### Discussion
+## Discussion
 
 When you add this component to a [`GKEntity`](../gkentity.md) object, the component automatically sets the [`entity`](../../SpriteKit/sknode/entity.md) property of its SpriteKit node to point to that entity.
 

@@ -18,7 +18,7 @@ Creates a graph from data previously produced by [`encode()`](./encode%28%29.md)
 convenience init(from data: Data) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: If the data is malformed or was produced by an incompatible version.
 

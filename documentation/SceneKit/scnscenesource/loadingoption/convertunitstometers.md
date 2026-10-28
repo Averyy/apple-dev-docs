@@ -25,7 +25,7 @@ static let convertUnitsToMeters: SCNSceneSource.LoadingOption
 extern SCNSceneSourceLoadingOption const SCNSceneSourceConvertUnitsToMetersKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSNumber`](../../../Foundation/nsnumber.md) object containing a floating-point value. The default value is `nil`, specifying no unit conversion.
 

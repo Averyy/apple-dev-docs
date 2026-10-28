@@ -25,7 +25,7 @@ func removeObserver(_ observer: Any)
 - (void) removeObserver:(id) observer;
 ```
 
-#### Discussion
+## Discussion
 
 Removing the observer stops it from receiving notifications.
 

@@ -25,7 +25,7 @@ func copy(alpha: CGFloat) -> CGColor?
 extern CGColorRefCGColorCreateCopyWithAlpha(CGColorRef color, CGFloat alpha);
 ```
 
-#### Return Value
+## Return Value
 
 A copy of the specified color, using the specified alpha value. In Objective-C, you’re responsible for releasing this object using [`CGColorRelease`](../cgcolorrelease.md).
 

@@ -22,7 +22,7 @@ enum MTLFloatingPointConversionRoundingMode
 enum MTLFloatingPointConversionRoundingMode : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The rounding mode for narrowing floating-point conversions.
 

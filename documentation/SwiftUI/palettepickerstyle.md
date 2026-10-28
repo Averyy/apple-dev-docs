@@ -19,7 +19,7 @@ A picker style that presents the options as a row of compact elements.
 struct PalettePickerStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`palette`](./pickerstyle/palette.md) to construct this style.
 

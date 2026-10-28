@@ -23,7 +23,7 @@ var navigationController: UINavigationController? { get }
 @property (nonatomic, strong, readonly, nullable) UINavigationController * navigationController;
 ```
 
-#### Discussion
+## Discussion
 
 If the view controller or one of its ancestors is a child of a navigation controller, this property contains the owning navigation controller. This property is `nil` if the view controller is not embedded inside a navigation controller.
 

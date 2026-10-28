@@ -19,7 +19,7 @@ A boolean value that determines whether this material performs the depth test by
 var readsDepth: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 If true, meshes with this material will depth test each of their fragments when being rendered. If an object that writes depth is in front of this material, this material will be hidden.
 

@@ -15,7 +15,7 @@
 static const NSColorPanelMode NSWheelModeColorPanel;
 ```
 
-#### Discussion
+## Discussion
 
 Color wheel
 

@@ -20,7 +20,7 @@ Creates a subset of the table by randomly selecting the given proportion of rows
 func randomSample(by proportion: Double, seed: Int = 42) -> MLDataTable
 ```
 
-#### Return Value
+## Return Value
 
 A new data table.
 

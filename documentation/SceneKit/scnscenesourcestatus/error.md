@@ -25,7 +25,7 @@ case error
 SCNSceneSourceStatusError
 ```
 
-#### Discussion
+## Discussion
 
 If the `status` parameter of a [`SCNSceneSourceStatusHandler`](../scnscenesourcestatushandler.md) block has this value, see the block’s `error` parameter for information about the nature and location of the error. When SceneKit encounters an error during scene loading, it calls the handler block with this status, then after the block completes, the [`scene(options:statusHandler:)`](../scnscenesource/scene%28options,statushandler%29.md) method returns `nil`.
 

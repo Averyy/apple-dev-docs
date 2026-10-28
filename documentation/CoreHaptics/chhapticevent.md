@@ -24,7 +24,7 @@ class CHHapticEvent
 @interface CHHapticEvent : NSObject
 ```
 
-#### Overview
+## Overview
 
 Each event represents a single haptic or audio signal. The event [`type`](./chhapticevent/type.md) determines whether it’s audio or haptic. Use a [`CHHapticPatternPlayer`](./chhapticpatternplayer.md) object obtained through [`CHHapticEngine`](./chhapticengine.md) factory methods to play events. Haptic events can be transient or continuous. Transient haptic patterns are brief impulses that occur at a specific point in time, such as the haptic feedback you feel from swiping through a picker or toggling a switch. Continuous haptic patterns, like the vibration from a ringtone, take the form of lengthier feedback over a period of time.
 

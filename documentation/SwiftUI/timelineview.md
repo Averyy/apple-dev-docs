@@ -21,7 +21,7 @@ A view that updates according to a schedule that you provide.
 struct TimelineView<Schedule, Content> where Schedule : TimelineSchedule
 ```
 
-#### Overview
+## Overview
 
 A timeline view acts as a container with no appearance of its own. Instead, it redraws the content it contains at scheduled points in time. For example, you can update the face of an analog timer once per second:
 

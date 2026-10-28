@@ -17,7 +17,7 @@ Leaf filter that will stop at [`ModuleValue.module(_:)`](../modulevalue/module%2
 static let isLeafModuleNoChildren: @Sendable (Module, String, ModuleItem) -> Bool
 ```
 
-##### See Also
+### See Also
 
 - [Module Filter and Map Functions](../module-filters.md)
 - [`filterMap(filter:map:isLeaf:)`](./filtermap%28filter,map,isleaf%29.md)

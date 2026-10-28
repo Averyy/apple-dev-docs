@@ -20,7 +20,7 @@ class ARReferenceObject
 @interface ARReferenceObject : NSObject
 ```
 
-#### Overview
+## Overview
 
 Object detection in ARKit lets you trigger AR content when the session recognizes a known 3D object. For example, your app could detect sculptures in an art museum and provide a virtual curator, or detect tabletop gaming figures and create visual effects for the game.
 

@@ -19,7 +19,7 @@ optional func webView(_ sender: WebView!, willPerformClientRedirectTo URL: URL!,
 - (void) webView:(WebView *) sender willPerformClientRedirectToURL:(NSURL *) URL delay:(NSTimeInterval) seconds fireDate:(NSDate *) date forFrame:(WebFrame *) frame;
 ```
 
-#### Discussion
+## Discussion
 
 Delegates might implement this method to display progress while a client redirect is pending. If a client redirect is cancelled the [`webView(_:didCancelClientRedirectFor:)`](./webview%28_,didcancelclientredirectfor%29.md) delegate method is invoked.
 

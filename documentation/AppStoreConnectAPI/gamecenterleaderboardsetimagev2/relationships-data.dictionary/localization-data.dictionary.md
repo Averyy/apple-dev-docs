@@ -15,7 +15,7 @@ The data that describes the localization of the Game Center leaderboard set imag
 object GameCenterLeaderboardSetImageV2.Relationships.Localization
 ```
 
-#### Overview
+## Overview
 
 - data:
 

@@ -20,7 +20,7 @@ A type that describes physics joints.
 protocol PhysicsJoint : Equatable
 ```
 
-#### Overview
+## Overview
 
 `PhysicsJoint` objects are transient and define physics joints properties. [`PhysicsJointsComponent`](./physicsjointscomponent.md) stores physics joints when added to an entity.
 

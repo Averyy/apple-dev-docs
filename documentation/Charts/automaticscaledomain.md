@@ -21,7 +21,7 @@ A domain that the chart infers from its data.
 struct AutomaticScaleDomain
 ```
 
-#### Overview
+## Overview
 
 Use [`automatic`](./scaledomain/automatic.md) to get an instance of this type.
 

@@ -20,7 +20,7 @@ An option specifying that the default tracking mode should be used.
 MTLResourceHazardTrackingModeDefault
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [`MTLHazardTrackingMode.default`](../mtlhazardtrackingmode/default.md).
 

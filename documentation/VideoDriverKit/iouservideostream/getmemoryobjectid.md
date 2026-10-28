@@ -15,7 +15,7 @@ Gets the video object identifier for a memory object.
 IOUserVideoObjectID GetMemoryObjectID(uint32_t memtype);
 ```
 
-#### Return Value
+## Return Value
 
 The object identifier of the data portion of the buffer.
 

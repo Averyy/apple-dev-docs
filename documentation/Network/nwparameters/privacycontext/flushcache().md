@@ -21,7 +21,7 @@ Flushes all cached data, such as TLS session state, created by connections assoc
 func flushCache()
 ```
 
-#### Discussion
+## Discussion
 
 Flushing the cache may be asynchronous, which means that it will take effect shortly after you invoke the function.
 

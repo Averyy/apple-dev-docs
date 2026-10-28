@@ -19,7 +19,7 @@ static let orientation: NSAccessibility.Attribute
 extern NSAccessibilityAttributeName const NSAccessibilityOrientationAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value can be [`horizontal`](../orientationvalue/horizontal.md) or [`vertical`](../orientationvalue/vertical.md).
 

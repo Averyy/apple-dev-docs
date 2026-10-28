@@ -21,7 +21,7 @@ The type that provides the URL for an app entity.
 struct EntityURLRepresentation<Entity> where Entity : AppEntity
 ```
 
-#### Overview
+## Overview
 
 If you adopt the [`URLRepresentableEntity`](./urlrepresentableentity.md) protocol in an app entity, use this type to build the URL for your entity. Construct the type as a Swift string that contains characters suitable for use in a URL. To incorporate content from your app entity’s properties into the URL, include a key path to the property in your string. The following example shows an app entity that represents a specific inventory item. Before returning the URL, this type replaces the `\(\.$contentID)` key path with the value in the `contentID` property.
 

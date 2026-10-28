@@ -24,11 +24,11 @@ func premultiplyingAlpha() -> CIImage
 - (CIImage *) imageByPremultiplyingAlpha;
 ```
 
-#### Return Value
+## Return Value
 
 An image object representing the result of the operation.
 
-#### Discussion
+## Discussion
 
 Premultiplied alpha speeds up the rendering of images, so Core Image filters require that input image data be premultiplied. If you have an image without premultiplied alpha that you want to feed into a filter, use this method before applying the filter.
 

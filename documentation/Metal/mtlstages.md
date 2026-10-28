@@ -31,7 +31,7 @@ enum MTLStages : NSUInteger;
 - [Synchronizing passes with producer barriers](./synchronizing-passes-with-producer-barriers.md)
 - [Synchronizing stages within a pass](./synchronizing-stages-within-a-pass.md)
 
-#### Overview
+## Overview
 
 Metal associates each command with one or more stages within a pass. Use these stage identifiers to synchronize command execution within a pass by selecting which stages wait for other stages to complete.
 

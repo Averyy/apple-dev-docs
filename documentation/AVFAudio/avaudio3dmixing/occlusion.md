@@ -25,7 +25,7 @@ var occlusion: Float { get set }
 @property (nonatomic) float occlusion;
 ```
 
-#### Discussion
+## Discussion
 
 The value of `obstruction` is in decibels. The system blocks the direct and reverb paths of sound between the source and listener.
 

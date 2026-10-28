@@ -20,11 +20,11 @@ Returns the default sample locations based on the number of samples.
 func getDefaultSamplePositions(sampleCount: Int) -> [MTLSamplePosition]
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`MTLSamplePosition`](../mtlsampleposition.md) instances.
 
-#### Discussion
+## Discussion
 
 The default sample positions are the same on all GPUs that support programmable sample positions (see [`areProgrammableSamplePositionsSupported`](./areprogrammablesamplepositionssupported.md)).
 

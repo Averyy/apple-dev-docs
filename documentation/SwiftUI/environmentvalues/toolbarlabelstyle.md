@@ -21,7 +21,7 @@ The label style to apply to controls within a toolbar.
 var toolbarLabelStyle: ToolbarLabelStyle? { get }
 ```
 
-#### Discussion
+## Discussion
 
 The default is `nil` for items outside the window toolbar.
 

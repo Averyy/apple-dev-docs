@@ -21,7 +21,7 @@ Variable line height based on font metrics.
 static var variable: AttributedString.LineHeight { get }
 ```
 
-#### Discussion
+## Discussion
 
 Defines the line height based on the ascent and descent of the fonts used in each line.
 

@@ -25,7 +25,7 @@ let kCMSampleBufferConduitNotificationParameter_MinUpcomingOutputPTS: CFString
 extern CFStringRef const kCMSampleBufferConduitNotificationParameter_MinUpcomingOutputPTS;
 ```
 
-#### Discussion
+## Discussion
 
 This key may be present in the `userInfo` dictionary for the [`kCMSampleBufferConduitNotification_UpcomingOutputPTSRangeChanged`](./kcmsamplebufferconduitnotification_upcomingoutputptsrangechanged.md) notification in cases where upcoming frames may have earlier timestamps than those previously provided. Its value is the `CFDictionary` representation of a `CMTime` object (see [`CMTimeMakeFromDictionary(_:)`](./cmtimemakefromdictionary%28_%29.md)).
 

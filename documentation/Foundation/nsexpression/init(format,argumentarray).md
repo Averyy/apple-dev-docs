@@ -25,7 +25,7 @@ init(format expressionFormat: String, argumentArray arguments: [Any])
 + (NSExpression *) expressionWithFormat:(NSString *) expressionFormat argumentArray:(NSArray *) arguments;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSExpression` object with the specified arguments.
 

@@ -19,11 +19,11 @@ func readBytes(withExactLength exactLength: Int) throws -> Data
 - (NSData *) readBytesWithExactLength:(NSUInteger) exactLength error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSData`](../../Foundation/nsdata.md) object filled with the memory that the framework read, or `nil` if the read failed.
 
-#### Discussion
+## Discussion
 
 Memory is copied into the newly allocated buffer represented by the returned NSData object.
 

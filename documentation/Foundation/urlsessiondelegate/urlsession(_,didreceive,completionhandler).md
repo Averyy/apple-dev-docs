@@ -33,7 +33,7 @@ optional func urlSession(_ session: URLSession, didReceive challenge: URLAuthent
 
 - [Performing manual server trust authentication](../performing-manual-server-trust-authentication.md)
 
-#### Discussion
+## Discussion
 
 This method is called in two situations:
 

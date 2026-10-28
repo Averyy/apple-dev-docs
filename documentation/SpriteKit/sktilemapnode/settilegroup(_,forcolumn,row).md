@@ -29,7 +29,7 @@ func setTileGroup(_ tileGroup: SKTileGroup?, forColumn column: Int, row: Int)
 
 - [Creating Tile Groups Programmatically](../creating-tile-groups-programmatically.md)
 
-#### Discussion
+## Discussion
 
 This function is for use when you’re creating a tile map programmatically, versus creating it ahead of time with the scene editor.
 

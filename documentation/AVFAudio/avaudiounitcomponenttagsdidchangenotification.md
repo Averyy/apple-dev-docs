@@ -20,7 +20,7 @@ A notification that indicates when component tags change.
 extern NSString * const AVAudioUnitComponentTagsDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object contains the `AVAudioUnitComponent` object with the tags.
 

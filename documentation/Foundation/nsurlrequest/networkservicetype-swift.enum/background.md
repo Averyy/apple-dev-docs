@@ -25,7 +25,7 @@ case background
 NSURLNetworkServiceTypeBackground
 ```
 
-#### Discussion
+## Discussion
 
 An example of this service type is prefetching content so that it’s available when the user chooses to view it.
 

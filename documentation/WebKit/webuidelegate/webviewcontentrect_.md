@@ -17,11 +17,11 @@ Returns a web view window’s content rectangle.
 - (NSRect) webViewContentRect:(WebView *) sender;
 ```
 
-#### Return Value
+## Return Value
 
 The content rectangle of the window that contains the web view.
 
-#### Discussion
+## Discussion
 
 The content view is the highest accessible [`NSView`](../../AppKit/nsview.md) object in the view hierarchy displayed in the window. A web view invokes this method instead of setting the content view’s frame directly, allowing delegates to alter the size that is returned.
 

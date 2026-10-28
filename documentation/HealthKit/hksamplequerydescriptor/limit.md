@@ -20,7 +20,7 @@ The maximum number of samples that the query returns.
 var limit: Int?
 ```
 
-#### Discussion
+## Discussion
 
 If the `limit` is `nil`, the system returns all matching samples in the HealthKit store.
 

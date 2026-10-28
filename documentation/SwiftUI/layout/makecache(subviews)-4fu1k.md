@@ -23,7 +23,7 @@ func makeCache(subviews: Self.Subviews) -> Self.Cache
 
 Available when `Cache` is `()`.
 
-#### Discussion
+## Discussion
 
 If you don’t implement the [`makeCache(subviews:)`](./makecache%28subviews%29-4fu1k.md) method in your custom layout, the protocol uses this default implementation instead, which returns an empty value.
 

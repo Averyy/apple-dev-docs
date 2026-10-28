@@ -20,7 +20,7 @@ struct RenderValue
 typedef uint16_t cp_tracking_area_render_value;
 ```
 
-#### Overview
+## Overview
 
 When rendering to [`cp_drawable_get_tracking_areas_texture`](../../../cp_drawable_get_tracking_areas_texture.md) use this value to write the pixel value. Upper bound limit is based on pixel format set by [`cp_layer_renderer_configuration_get_tracking_areas_format`](../../../cp_layer_renderer_configuration_get_tracking_areas_format.md) Can change per-frame for the same rendered mesh/object. A value of 0 is reserved to represent the absence of a tracking area.
 

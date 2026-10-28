@@ -24,7 +24,7 @@ struct HairLightingModel
 
 - [Rendering high-fidelity characters](./rendering-high-fidelity-characters.md)
 
-#### Overview
+## Overview
 
 `LitLightingModel` doesn’t accurately represent hair and fur, since their thin, nearly cylindrical strands scatter light differently than a typical opaque surface. Use this lighting model for materials that shade hair or fur.
 

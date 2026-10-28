@@ -20,7 +20,7 @@ Dynamic instructions that produce content for each element of a collection.
 struct DynamicInstructionsForEach<Data, ID, Content> where Data : RandomAccessCollection, ID : Hashable, Content : DynamicInstructions
 ```
 
-#### Overview
+## Overview
 
 Don’t use this type directly. Instead, use [`DynamicInstructions.ForEach`](./dynamicinstructions/foreach.md) within the `body` of your [`DynamicInstructions`](./dynamicinstructions.md).
 

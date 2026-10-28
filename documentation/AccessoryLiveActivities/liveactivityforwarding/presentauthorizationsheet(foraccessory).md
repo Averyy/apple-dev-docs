@@ -20,11 +20,11 @@ static func presentAuthorizationSheet(forAccessory accessory: ASAccessory) async
 
 - [Receiving Live Activity updates and alerts on an accessory](../receiving-live-activities-on-an-accessory.md)
 
-#### Return Value
+## Return Value
 
 The updated authorization decision.
 
-#### Overview
+## Overview
 
 Call `presentAuthorizationSheet(forAccessory:)` to update which apps forward Live Activities to the accessory after a person has initially responded to the system UI that allows them to authorize forwarded iOS system notifications and Live Activities. The system ignores your call of `presentAuthorizationSheet(forAccessory:)` if you haven’t previously asked someone if they want to receive iOS system notifications and Live Activities on the accessory. For more information about asking for a person’s initial permission, see [Receiving Live Activity updates and alerts on an accessory](../receiving-live-activities-on-an-accessory.md).
 

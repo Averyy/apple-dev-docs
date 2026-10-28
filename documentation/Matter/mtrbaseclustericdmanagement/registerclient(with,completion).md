@@ -29,7 +29,7 @@ func registerClient(with params: MTRICDManagementClusterRegisterClientParams) as
 - (void) registerClientWithParams:(MTRICDManagementClusterRegisterClientParams *) params completion:(void (^)(MTRICDManagementClusterRegisterClientResponseParams *data, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This command allows a client to register itself with the ICD to be notified when the device is available for communication.
 

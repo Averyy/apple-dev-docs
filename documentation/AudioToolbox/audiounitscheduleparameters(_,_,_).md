@@ -28,11 +28,11 @@ extern OSStatus AudioUnitScheduleParameters(AudioUnit inUnit, const AudioUnitPar
 
 - [Migrating Your Audio Unit Host to the AUv3 API](./migrating-your-audio-unit-host-to-the-auv3-api.md)
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 Use this function to schedule changes to the value of an audio unit parameter.
 

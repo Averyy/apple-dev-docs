@@ -17,7 +17,7 @@ A Base64-encoded string that contains general cardholder and terminal data in ta
 let generalCardData: String
 ```
 
-#### Discussion
+## Discussion
 
 The content of this field is determined by your payment service provider. This field can contain both card tags and terminal tags.
 

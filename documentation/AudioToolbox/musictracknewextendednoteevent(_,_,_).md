@@ -24,7 +24,7 @@ func MusicTrackNewExtendedNoteEvent(_ inTrack: MusicTrack, _ inTimeStamp: MusicT
 extern OSStatus MusicTrackNewExtendedNoteEvent(MusicTrack inTrack, MusicTimeStamp inTimeStamp, const ExtendedNoteOnEvent *inInfo);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 

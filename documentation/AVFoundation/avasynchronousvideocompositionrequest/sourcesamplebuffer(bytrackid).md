@@ -26,7 +26,7 @@ func sourceSampleBuffer(byTrackID trackID: CMPersistentTrackID) -> CMSampleBuffe
 - (CMSampleBufferRef) sourceSampleBufferByTrackID:(CMPersistentTrackID) trackID;
 ```
 
-#### Return Value
+## Return Value
 
 A sample buffer, or `nil` if not found.
 

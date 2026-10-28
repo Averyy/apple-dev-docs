@@ -23,11 +23,11 @@ class func field(evaluationBlock block: @escaping (UIFieldBehavior, CGPoint, CGV
 + (instancetype) fieldWithEvaluationBlock:(CGVector (^)(UIFieldBehavior *field, CGPoint position, CGVector velocity, CGFloat mass, CGFloat charge, NSTimeInterval deltaTime)) block;
 ```
 
-#### Return Value
+## Return Value
 
 A field behavior object that applies forces based on the custom algorithm you provided.
 
-#### Discussion
+## Discussion
 
 Use this method to define a custom field for your app. The block you provide is called many times during the course of animations, so your implementation should be reasonably fast. Use the provided `field` object to retrieve values associated with the field itself, such as the field’s position and strength. The other parameters reflect information about the dynamic item affected by the field.
 

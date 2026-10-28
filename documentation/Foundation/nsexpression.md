@@ -25,23 +25,23 @@ class NSExpression
 @interface NSExpression : NSObject
 ```
 
-#### Overview
+## Overview
 
 Comparison operations in an [`NSPredicate`](./nspredicate.md) derive from two expressions as instances of the [`NSExpression`](./nsexpression.md) class. You create expressions for constant values, key paths, and so on.
 
 Generally, anywhere in the [`NSExpression`](./nsexpression.md) class hierarchy where there’s a composite API and subtypes that may only reasonably respond to a subset of that API, invoking a method that doesn’t make sense for that subtype throws an exception.
 
-##### Aggregate Expressions
+### Aggregate Expressions
 
 [`NSExpression.ExpressionType.aggregate`](./nsexpression/expressiontype-swift.enum/aggregate.md) allows you to create predicates containing expressions that evaluate to collections that contain further expressions. The collection may be an [`NSArray`](./nsarray.md), [`NSSet`](./nsset.md), or [`NSDictionary`](./nsdictionary.md) object.
 
 Core Data doesn’t support aggregate expressions.
 
-##### Subquery Expressions
+### Subquery Expressions
 
 The [`NSExpression.ExpressionType.subquery`](./nsexpression/expressiontype-swift.enum/subquery.md) creates a subexpression that returns a subset of a collection of objects. This allows you to create sophisticated queries across relationships, such as a search for multiple correlated values on the destination object of a relationship.
 
-##### Set Expressions
+### Set Expressions
 
 The set expressions ([`NSExpression.ExpressionType.unionSet`](./nsexpression/expressiontype-swift.enum/unionset.md), [`NSExpression.ExpressionType.intersectSet`](./nsexpression/expressiontype-swift.enum/intersectset.md), and [`NSExpression.ExpressionType.minusSet`](./nsexpression/expressiontype-swift.enum/minusset.md)) combine results in a manner similar to the [`NSSet`](./nsset.md) methods.
 
@@ -55,7 +55,7 @@ Both sides of these expressions must evaluate to a collection; the left side mus
 
 Core Data doesn’t support set expressions.
 
-##### Function Expressions
+### Function Expressions
 
 In macOS 10.4, [`NSExpression`](./nsexpression.md) only supports a predefined set of functions: `sum`, `count`, `min`, `max`, and `average`. You access these predefined functions in the predicate syntax using custom keywords (for example, `MAX(1, 5, 10)`).
 

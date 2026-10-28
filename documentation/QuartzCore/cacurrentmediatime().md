@@ -28,7 +28,7 @@ extern CFTimeInterval CACurrentMediaTime();
 
 - [Optimizing iPhone and iPad apps to support ProMotion displays](./optimizing-iphone-and-ipad-apps-to-support-promotion-displays.md)
 
-#### Return Value
+## Return Value
 
 A `CFTimeInterval` derived by calling `mach_absolute_time()` and converting the result to seconds.
 

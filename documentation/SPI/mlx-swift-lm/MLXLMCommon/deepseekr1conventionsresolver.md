@@ -17,7 +17,7 @@ Recognizes DeepSeek-R1 and its distills by repo id.
 struct DeepSeekR1ConventionsResolver
 ```
 
-#### Overview
+## Overview
 
 Two reasons this cannot be a model declaration:
 

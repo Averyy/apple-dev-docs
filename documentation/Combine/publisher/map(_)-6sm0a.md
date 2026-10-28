@@ -21,11 +21,11 @@ Publishes the value of a key path.
 func map<T>(_ keyPath: KeyPath<Self.Output, T>) -> Publishers.MapKeyPath<Self, T>
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that publishes the value of the key path.
 
-#### Discussion
+## Discussion
 
 In the following example, the [`map(_:)`](./map%28_%29-6sm0a.md) operator uses the Swift key path syntax to access the `die` member of the `DiceRoll` structure published by the [`Just`](../just.md) publisher.
 

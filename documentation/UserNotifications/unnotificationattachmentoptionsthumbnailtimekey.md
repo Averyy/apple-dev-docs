@@ -24,7 +24,7 @@ let UNNotificationAttachmentOptionsThumbnailTimeKey: String
 extern NSString * const UNNotificationAttachmentOptionsThumbnailTimeKey;
 ```
 
-#### Discussion
+## Discussion
 
 For animated images, the value of this key is an [`NSNumber`](../Foundation/nsnumber.md) containing the frame number to use as the thumbnail. For movies, the value of this key is the time (in seconds) into the movie from which to grab the thumbnail image; you may also specify the value as a [`CMTime`](../CoreMedia/cmtime.md) structure encoded using the [`CMTimeCopyAsDictionary(_:allocator:)`](../CoreMedia/cmtimecopyasdictionary%28_,allocator%29.md) function.
 

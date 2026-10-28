@@ -23,7 +23,7 @@ static let cellularIMEI2: UITextContentType
 extern UITextContentType const UITextContentTypeCellularIMEI2;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This property isn’t present on single-SIM devices.
 

@@ -15,7 +15,7 @@ Marks the location of the last batch of results.
 readonly attribute String continuationMarker;
 ```
 
-#### Discussion
+## Discussion
 
 Pass this key to another [`performQuery`](../cloudkit.database/performquery.md) method call when the results of a previous fetch exceed the maximum.
 

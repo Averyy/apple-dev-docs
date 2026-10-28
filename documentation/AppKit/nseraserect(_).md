@@ -19,7 +19,7 @@ func NSEraseRect(_ rect: NSRect)
 extern void NSEraseRect(NSRect rect);
 ```
 
-#### Discussion
+## Discussion
 
 This function fills the specified rectangle with white. It does not alter the current color.
 

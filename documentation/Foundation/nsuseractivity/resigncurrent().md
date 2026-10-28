@@ -29,7 +29,7 @@ func resignCurrent()
 
 - [Supporting the creation of Quick Notes](../supporting-the-creation-of-quick-notes.md)
 
-#### Discussion
+## Discussion
 
 Calling this method marks the user activity as no longer current, but doesn’t invalidate it entirely. You can call this method when you want to stop advertising the activity for continuation and search indexing only temporarily. You may call [`becomeCurrent()`](./becomecurrent%28%29.md) later to restore this object as the current activity.
 

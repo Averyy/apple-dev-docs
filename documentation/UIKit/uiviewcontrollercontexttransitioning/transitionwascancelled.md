@@ -24,11 +24,11 @@ var transitionWasCancelled: Bool { get }
 @property (nonatomic, readonly) BOOL transitionWasCancelled;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the transition was canceled or [`false`](../../Swift/false.md) if it is ongoing or finished normally.
 
-#### Discussion
+## Discussion
 
 You can call this method from your animator object to determine whether the transition has been canceled. Calling the [`cancelInteractiveTransition()`](./cancelinteractivetransition%28%29.md) method causes this method to return [`true`](../../Swift/true.md).
 

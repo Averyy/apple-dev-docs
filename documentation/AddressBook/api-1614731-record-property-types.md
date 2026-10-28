@@ -5,7 +5,7 @@
 
 These constants identify record property types.
 
-#### Overview
+## Overview
 
 See [`ABPropertyType`](./abpropertytype.md).
 

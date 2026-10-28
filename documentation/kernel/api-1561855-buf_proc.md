@@ -15,11 +15,11 @@ Get the process associated with this buffer.
 proc_t buf_proc(buf_t bp);
 ```
 
-#### Return Value
+## Return Value
 
 Associated process, possibly NULL.
 
-#### Discussion
+## Discussion
 
 buf_proc() will generally return NULL; a process is currently only associated with a buffer in the event of a physio() call.
 

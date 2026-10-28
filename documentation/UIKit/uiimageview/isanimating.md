@@ -23,7 +23,7 @@ var isAnimating: Bool { get }
 @property (nonatomic, readonly, getter=isAnimating) BOOL animating;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the animation is running; otherwise, [`false`](../../Swift/false.md).
 

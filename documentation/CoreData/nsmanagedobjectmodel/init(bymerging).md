@@ -25,11 +25,11 @@ init?(byMerging models: [NSManagedObjectModel]?)
 + (NSManagedObjectModel *) modelByMergingModels:(NSArray<NSManagedObjectModel *> *) models;
 ```
 
-#### Return Value
+## Return Value
 
 A single model made by combining the models in `models`.
 
-#### Discussion
+## Discussion
 
 You use this method to combine multiple models (typically from different frameworks) into one.
 

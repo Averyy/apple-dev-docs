@@ -18,11 +18,11 @@ Culls mesh instances against a frustum and returns the surviving indices.
 static func cullMeshInstances(_ meshInstances: LowLevelMeshInstanceArray, indices: Span<Int>, configuration: LowLevelRenderer.CullConfiguration) -> [Int]
 ```
 
-#### Return Value
+## Return Value
 
 The indices of instances that are not culled, in input order.
 
-#### Discussion
+## Discussion
 
 A convenience overload that allocates and returns the surviving indices as an array.
 

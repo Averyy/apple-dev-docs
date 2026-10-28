@@ -12,11 +12,11 @@ virtual SCSIServiceResponse HandleClearTaskSet (
  UInt8theLogicalUnit );
 ```
 
-#### Return Value
+## Return Value
 
 A valid SCSIServiceResponse.
 
-#### Overview
+## Overview
 
 HandleClearTaskSet instructs the Protocol Services driver to clear the task set.
 

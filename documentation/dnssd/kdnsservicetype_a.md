@@ -23,7 +23,7 @@ var kDNSServiceType_A: Int { get }
 kDNSServiceType_A
 ```
 
-#### Discussion
+## Discussion
 
 Host address.
 

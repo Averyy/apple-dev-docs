@@ -17,7 +17,7 @@ Element-wise addition with a [`ScalarOrArray`](../scalarorarray.md) (scalar) arg
 static func + (lhs: some ScalarOrArray, rhs: MLXArray) -> MLXArray
 ```
 
-##### See Also
+### See Also
 
 - [Arithmetic](../arithmetic.md)
 - [`+(_:_:)`](./plus%28_,_%29-1rv98.md)

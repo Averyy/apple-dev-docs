@@ -1,0 +1,47 @@
+# init(_:systemImage:isInserted:content:)
+
+**Framework**: SwiftUI  
+**Kind**: init  
+**Role**: Initializer
+
+Creates a menu bar extra with a system image to use as the items label. The provided title will be used by the accessibility system.
+
+**Availability**:
+- macOS 13.0+
+
+## Declaration
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, systemImage: String, isInserted: Binding<Bool>, @ContentBuilder content: () -> Content)
+```
+
+Available when `Label` is `Label<Text, Image>` and `Content` conforms to `View`.
+
+**Other overloads**:
+
+```swift
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, systemImage: String, isInserted: Binding<Bool>, @ContentBuilder content: () -> Content)
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, systemImage: String, isInserted: Binding<Bool>, @ContentBuilder content: () -> Content) where S : StringProtocol
+```
+
+## Discussion
+
+The item will be displayed in the system menu bar when the specified binding is set to `true`. If the user removes the item from the menu bar, the binding will be set to `false`.
+
+## Parameters
+
+- `titleKey`: The localized string key to use for the accessibility label of the item.
+- `systemImage`: The name of a system image to use as the label.
+- `isInserted`: Whether the item is inserted in the menu bar. The item may or may not be visible, depending on the number of items present.
+- `content`: A `View` to display when the user selects the item.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/menubarextra/init(_:systemimage:isinserted:content:)-1qg20)*

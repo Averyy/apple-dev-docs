@@ -23,7 +23,7 @@ static func arrowHeight() -> CGFloat
 + (CGFloat) arrowHeight;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to return the height of the arrow used by your popover background content. The arrow height must be the same for all possible directions and that height must not change.
 

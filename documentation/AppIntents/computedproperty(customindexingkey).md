@@ -16,11 +16,11 @@ A macro that adds a computed app entity property with a get accessor and an opti
 ## Declaration
 
 ```swift
-@attached
-(peer, names: prefixed(`$`), prefixed(`_`)) @attached(accessor, names: named(get), named(set)) macro ComputedProperty(customIndexingKey: CSCustomAttributeKey)
+@attached(peer, names: prefixed(`$`), prefixed(`_`))
+@attached(accessor, names: named(get), named(set)) macro ComputedProperty(customIndexingKey: CSCustomAttributeKey)
 ```
 
-#### Example
+## Example
 
 ```swift
 struct Restaurant: AppEntity {

@@ -27,7 +27,7 @@ class XCUIScreen
 @interface XCUIScreen : NSObject
 ```
 
-#### Overview
+## Overview
 
 Call the [`screenshot()`](./xcuiscreenshotproviding/screenshot%28%29.md) method on an [`XCUIScreen`](./xcuiscreen.md) instance to capture a screenshot of its current UI state. The [`XCUIScreenshotProviding`](./xcuiscreenshotproviding.md) protocol adds this method to [`XCUIScreen`](./xcuiscreen.md).
 

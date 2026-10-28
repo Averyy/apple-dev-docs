@@ -8,7 +8,7 @@ Incorporate features that make it easier for people to do the things they want t
 
 ---
 
-#### Provide consistent URLs for app content
+## Provide consistent URLs for app content
 
 URLs are a consistent way for people to access content on the web, and universal links extend that consistency to your apps. When you [adopt universal links](../Xcode/allowing-apps-and-websites-to-link-to-your-content.md) in your app, the same URLs people use to access your website work in your app, too. Many features rely on universal links, including:
 
@@ -27,7 +27,7 @@ To prevent other apps from opening links intended for your website, universal li
 
 ---
 
-#### Transfer activities to other devices
+## Transfer activities to other devices
 
 Handoff is a way for people to start an activity on one device, and transfer that activity to a different device with the same Apple ID. Handoff works with iPhone, iPad, Apple Watch, and Mac, so add support if you offer your app on more than one of those platforms.
 
@@ -39,7 +39,7 @@ Because Handoff transfers your app’s data from one device to another, make tra
 
 ---
 
-#### Generate previews for custom data formats
+## Generate previews for custom data formats
 
 If your app has custom document formats, include a Quick Look Preview app extension to generate a preview of files that use those formats. Quick Look is a system feature that people use to view the contents of a file or document without opening it. They can use this feature to verify a file contains the content they expect before opening it. The Finder displays a Quick Look preview when someone selects a file and presses the Spacebar key, and the [Share Sheet](https://developer.apple.com/design/human-interface-guidelines/activity-views) and other system interfaces also incorporate Quick Look previews.
 
@@ -49,7 +49,7 @@ If you have a macOS app that shows files as part of its interface, add previews 
 
 ---
 
-#### Adopt a fast login workflow
+## Adopt a fast login workflow
 
 If your app or website requires a login and password, give people the option to log in using [Sign in with Apple](../SigninwithApple/SigninwithApple.md). When someone needs to perform a task quickly, prompting them for their login and password information can be inconvenient and delay their access to that information. Sign in with Apple lets people log in to apps and websites using Face ID or Touch ID from their device, and using credentials that map to their Apple ID. This approach respects people’s privacy, while giving you greater confidence that the account information you receive represents real people.
 
@@ -66,7 +66,7 @@ For a media streaming app that runs on multiple platforms, [create a single sign
 
 ---
 
-#### Incorporate content shared in Messages
+## Incorporate content shared in Messages
 
 People often receive links and other content when they’re not ready to receive it. [Shared with You](../SharedWithYou/SharedWithYou.md) makes it easier for you to incorporate the links that people share into your app. The framework extracts app-specific links people send using Messages and makes them available to your app. You can display this list of links to people from a custom view in your app, giving them quick access to content they might have forgotten about in their Messages conversations.
 
@@ -79,7 +79,7 @@ In addition to managing shared items in Messages, you can also use Shared with Y
 
 ---
 
-#### Allow people to try your app quickly
+## Allow people to try your app quickly
 
 People use apps for many kinds of tasks, but they might not always have the app they need when they need it. An App Clip helps people discover your app at a moment when they might not have time to download the full version. For example, the system can display your App Clip to help someone set up a new appliance, rent a scooter, or order take-out from a restaurant. This convenience can help convince people to download the full version of your app later.
 

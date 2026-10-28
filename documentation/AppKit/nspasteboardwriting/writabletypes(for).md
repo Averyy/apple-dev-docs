@@ -20,11 +20,11 @@ func writableTypes(for pasteboard: NSPasteboard) -> [NSPasteboard.PasteboardType
 - (NSArray<NSString *> *) writableTypesForPasteboard:(NSPasteboard *) pasteboard;
 ```
 
-#### Return Value
+## Return Value
 
 An array of UTI strings of data types the receiver can write to `pasteboard`.
 
-#### Discussion
+## Discussion
 
 By default, data for the first returned type is put onto the pasteboard immediately, with the remaining types being promised.
 

@@ -28,11 +28,11 @@ optional func application(_ application: UIApplication, willFinishLaunchingWithO
 - [About the app launch sequence](../about-the-app-launch-sequence.md)
 - [Performing one-time setup for your app](../performing-one-time-setup-for-your-app.md)
 
-#### Return Value
+## Return Value
 
 Return [`false`](../../Swift/false.md) if the app can’t handle the URL resource or continue a user activity, or if the app doesn’t need to perform the [`application(_:performActionFor:completionHandler:)`](./application%28_,performactionfor,completionhandler%29.md) method because you’re handling the invocation of a Home Screen quick action in this method; otherwise return [`true`](../../Swift/true.md). The system ignores the return value if the app launches as a result of a remote notification.
 
-#### Discussion
+## Discussion
 
 Use this method (and the corresponding [`application(_:didFinishLaunchingWithOptions:)`](./application%28_,didfinishlaunchingwithoptions%29.md) method) to initialize your app and prepare it to run. In an app that doesn’t support scenes, the system calls this method after your app launches and loads its main storyboard or nib file, but before restoring your app’s state. When the system calls this method, your app is in the inactive state.
 

@@ -20,7 +20,7 @@ func LSMTextAddToken(_ textref: LSMText, _ token: CFData) -> OSStatus
 OSStatus LSMTextAddToken(LSMTextRef textref, CFDataRef token);
 ```
 
-#### Discussion
+## Discussion
 
 The order of tokens is significant if the map uses pairs or triplets, and the count of tokens is always significant.
 

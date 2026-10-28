@@ -18,7 +18,7 @@ The index of the method you want to execute.
 uint64_t selector;
 ```
 
-#### Discussion
+## Discussion
 
 When calling one of the IOKit connection methods, such as `IOConnectMethodScalarIScalarO`, the value in this property represents the index of the method you want to execute.
 

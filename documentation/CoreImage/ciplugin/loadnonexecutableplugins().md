@@ -19,7 +19,7 @@ class func loadNonExecutablePlugIns()
 + (void) loadNonExecutablePlugIns;
 ```
 
-#### Discussion
+## Discussion
 
 This call scans for plugins with the extension `.plugin` in the following directories:
 

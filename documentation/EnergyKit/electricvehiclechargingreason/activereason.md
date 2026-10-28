@@ -17,7 +17,7 @@ Information about why a vehicle is actively charging.
 enum ActiveReason
 ```
 
-#### Overview
+## Overview
 
 Use these reasons with [`ElectricVehicleStatusEvent.Status.chargingActive(_:)`](../electricvehiclestatusevent/status-swift.enum/chargingactive%28_%29.md) to explain why charging starts or resumes.
 

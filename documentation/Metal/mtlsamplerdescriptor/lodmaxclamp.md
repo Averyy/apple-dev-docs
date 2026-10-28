@@ -28,7 +28,7 @@ var lodMaxClamp: Float { get set }
 
 - [Restricting access to specific mipmaps](../restricting-access-to-specific-mipmaps.md)
 
-#### Discussion
+## Discussion
 
 The default value is `FLT_MAX`. Clamp values are always applied, even when using an explicit LOD.
 

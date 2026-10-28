@@ -25,7 +25,7 @@ enum AVAudio3DMixingRenderingAlgorithm
 enum AVAudio3DMixingRenderingAlgorithm : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The rendering algorithms differ in quality and CPU cost. [`AVAudio3DMixingRenderingAlgorithm.equalPowerPanning`](./avaudio3dmixingrenderingalgorithm/equalpowerpanning.md) is the simplest panning algorithm and the least expensive computationally.
 

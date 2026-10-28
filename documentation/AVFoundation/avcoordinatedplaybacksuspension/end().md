@@ -24,7 +24,7 @@ func end()
 - (void) end;
 ```
 
-#### Discussion
+## Discussion
 
 If this is the last suspension, the coordinator adjusts the timing of its playback object to match the group.
 

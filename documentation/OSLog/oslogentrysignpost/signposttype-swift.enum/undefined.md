@@ -25,7 +25,7 @@ case undefined
 OSLogEntrySignpostTypeUndefined
 ```
 
-#### Discussion
+## Discussion
 
 You should never encounter an undefined signpost type.
 

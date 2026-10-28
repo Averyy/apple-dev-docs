@@ -13,7 +13,7 @@ Prints all configuration properties currently applied to a given Swift SDK and t
 **Availability**:
 - Swift 6.1+
 
-#### Overview
+## Overview
 
 ```
 sdk configuration show [--package-path=<package-path>]

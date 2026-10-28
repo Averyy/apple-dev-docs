@@ -21,11 +21,11 @@ func SecAccessCopyACLList(_ accessRef: SecAccess, _ aclList: UnsafeMutablePointe
 OSStatus SecAccessCopyACLList(SecAccessRef accessRef, CFArrayRef*aclList);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 An access instance can have any number of ACL entries for specific operations or sets of operations. Use this method to get an array of all the ACL entries of a particular access instance. To retrieve entries corresponding to specific operations, use the [`SecAccessCopyMatchingACLList(_:_:)`](./secaccesscopymatchingacllist%28_,_%29.md) method instead.
 

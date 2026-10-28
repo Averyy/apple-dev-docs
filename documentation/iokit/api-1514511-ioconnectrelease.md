@@ -23,11 +23,11 @@ func IOConnectRelease(_ connect: io_connect_t) -> kern_return_t
 kern_return_t IOConnectRelease(io_connect_t connect);
 ```
 
-#### Return Value
+## Return Value
 
 A kern_return_t error code.
 
-#### Discussion
+## Discussion
 
 Removes a reference to the connect handle. If the last reference is removed an implicit IOServiceClose is performed.
 

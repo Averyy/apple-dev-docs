@@ -22,7 +22,7 @@ class let touchBarDeleteTemplateName: String
 extern NSImageName const NSImageNameTouchBarDeleteTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for delete](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2793517@2x.png)
 

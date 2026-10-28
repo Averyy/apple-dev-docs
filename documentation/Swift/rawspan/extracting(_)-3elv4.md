@@ -21,11 +21,11 @@ Constructs a new span over all the bytes of this span.
 func extracting(_: UnboundedRange) -> RawSpan
 ```
 
-#### Return Value
+## Return Value
 
 A `RawSpan` over all the bytes of this span.
 
-#### Discussion
+## Discussion
 
 The returned span’s first byte is always at offset 0; unlike buffer slices, extracted spans do not share their indices with the span from which they are extracted.
 

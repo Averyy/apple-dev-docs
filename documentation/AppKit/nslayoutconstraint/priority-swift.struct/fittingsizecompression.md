@@ -19,7 +19,7 @@ static var fittingSizeCompression: NSLayoutConstraint.Priority { get }
 static const NSLayoutPriority NSLayoutPriorityFittingSizeCompression;
 ```
 
-#### Discussion
+## Discussion
 
 This is the priority level with which the view wants to be as small as possible in that computation. It’s quite low. It is generally not appropriate to make a constraint at exactly this priority. You want to be higher or lower.
 

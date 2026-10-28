@@ -19,7 +19,7 @@ var metadata: [AVMetadataItem] { get set }
 @property (nonatomic, copy) NSArray<AVMetadataItem *> * metadata;
 ```
 
-#### Discussion
+## Discussion
 
 In addition to the title and preview image, you can associate any custom metadata you need for the presentation of this content proposal.
 

@@ -13,11 +13,11 @@ Returns information about the Apple School Manager organization.
 
 - [Integrating with Roster API and Sign in with Apple](./integrating-with-roster-api-and-sign-in-with-apple.md)
 
-#### Discussion
+## Discussion
 
 Access to the `organization` resource requires authorization to either the `edu.users.read` or `edu.classes.read` scope.
 
-##### Example
+### Example
 
 **Request**:
 

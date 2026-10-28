@@ -19,7 +19,7 @@ The possible states the framework sets for Automatic Sign-In.
 enum VSAutoSignInAuthorization : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The framework sets the [`authorization`](./vsautosignintoken/authorization.md) property to one of these values depending on how a person responds to the framework prompt that offers to enable Automatic Sign-In.
 

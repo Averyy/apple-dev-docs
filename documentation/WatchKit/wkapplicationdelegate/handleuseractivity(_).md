@@ -19,7 +19,7 @@ optional func handleUserActivity(_ userInfo: [AnyHashable : Any]?)
 - (void) handleUserActivity:(NSDictionary *) userInfo;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to respond to Handoff–related activity. WatchKit calls this method when your app launches as a result of a Handoff action. Use the information in the provided `userInfo` dictionary to determine how you want to respond to the action. For example, you might decide to display a specific view.
 

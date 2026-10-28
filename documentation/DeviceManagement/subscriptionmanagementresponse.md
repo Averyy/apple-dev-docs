@@ -12,7 +12,7 @@ A confirmation response that reports your device management service’s subscrip
 object SubscriptionManagementResponse
 ```
 
-#### Overview
+## Overview
 
 The server returns this object from [`Enable Subscriptions`](./enable-subscriptions.md) and [`Disable Subscriptions`](./disable-subscriptions.md). Read `subscriptionManagement` to confirm the state that the server recorded for the token.
 

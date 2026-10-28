@@ -27,7 +27,7 @@ var displayOrder: Int { get set }
 
 - [Building missing contexts](../building-missing-contexts.md)
 
-#### Discussion
+## Discussion
 
 Setting this value provides a hint to the system about what order you intend sibling contexts to appear in. But this has nothing to do with the order in which a teacher assigns your content. Teachers are free to assign your content in any order they choose.
 

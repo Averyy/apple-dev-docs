@@ -21,7 +21,7 @@ An integrity-checked representation of the private key.
 var integrityCheckedRepresentation: Data { get }
 ```
 
-#### Discussion
+## Discussion
 
 This representation includes the seed value, and a hash of the corresponding public key.
 

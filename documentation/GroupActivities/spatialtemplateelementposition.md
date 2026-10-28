@@ -15,7 +15,7 @@ A type that defines the position of an element in a spatial template.
 struct SpatialTemplateElementPosition
 ```
 
-#### Overview
+## Overview
 
 Use the `SpatialTemplateElementPosition` type to specify the position of an element along the x- and z-axes in the shared coordinate space. You place elements relative to the app’s content, which sits at the origin of the coordinate space. Specify distances in meters. The following example positions two participants one meter away from the app’s content, and on opposite sides of it:
 

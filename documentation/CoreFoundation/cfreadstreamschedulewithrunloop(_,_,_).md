@@ -25,7 +25,7 @@ func CFReadStreamScheduleWithRunLoop(_ stream: CFReadStream!, _ runLoop: CFRunLo
 extern void CFReadStreamScheduleWithRunLoop(CFReadStreamRef stream, CFRunLoopRef runLoop, CFRunLoopMode runLoopMode);
 ```
 
-#### Discussion
+## Discussion
 
 After scheduling `stream` with a run loop, its client (set with [`CFReadStreamSetClient(_:_:_:_:)`](./cfreadstreamsetclient%28_,_,_,_%29.md)) is notified when various events happen with the stream, such as when it finishes opening, when it has bytes available, and when an error occurs. A stream can be scheduled with multiple run loops and run loop modes. Use [`CFReadStreamUnscheduleFromRunLoop(_:_:_:)`](./cfreadstreamunschedulefromrunloop%28_,_,_%29.md) to later remove `stream` from the run loop.
 

@@ -16,7 +16,7 @@ The Apple Pay version supported on your website.
 required long version;
 ```
 
-#### Discussion
+## Discussion
 
 The version number you provide here represents the minimum Apple Pay version that the user’s browser must support. You can check which API version the browser supports by calling [`supportsVersion`](../applepaysession/supportsversion.md).
 

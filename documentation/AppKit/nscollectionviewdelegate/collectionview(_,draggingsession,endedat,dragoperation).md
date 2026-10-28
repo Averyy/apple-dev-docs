@@ -20,7 +20,7 @@ optional func collectionView(_ collectionView: NSCollectionView, draggingSession
 - (void) collectionView:(NSCollectionView *) collectionView draggingSession:(NSDraggingSession *) session endedAtPoint:(NSPoint) screenPoint dragOperation:(NSDragOperation) operation;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this method to perform tasks related to the ending of a drag session.
 

@@ -25,7 +25,7 @@ func CFFileSecurityCopyGroupUUID(_ fileSec: CFFileSecurity!, _ groupUUID: Unsafe
 extern Boolean CFFileSecurityCopyGroupUUID(CFFileSecurityRef fileSec, CFUUIDRef*groupUUID);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` if a group UUID was successfully copied, or `false` if there is no group UUID property associated with this `CFFileSecurityRef` object.
 

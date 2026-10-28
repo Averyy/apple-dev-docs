@@ -28,7 +28,7 @@ class MPSImageGaussianBlur
 
 - [The MPSKernel Class](./the-mpskernel-class.md)
 
-#### Overview
+## Overview
 
 > **Note**:  The Gaussian blur utilizes a very fast algorithm that typically runs at approximately half the speed of copy speeds. Notably, it is faster than either the tent or box blur except perhaps for very large filter windows. Mathematically, it is an approximate Gaussian. Some non-Gaussian behavior may be detectable with advanced analytical methods such as FFT.
 >

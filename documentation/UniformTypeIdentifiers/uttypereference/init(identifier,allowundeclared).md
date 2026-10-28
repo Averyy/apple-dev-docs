@@ -23,11 +23,11 @@ convenience init?(identifier: String, allowUndeclared: Bool)
 + (instancetype) typeWithIdentifier:(NSString *) identifier allowUndeclared:(BOOL) allowUndeclared;
 ```
 
-#### Return Value
+## Return Value
 
 A type object, or \c nil if the input \c identifier was not a Uniform Type Identifier.
 
-#### Discussion
+## Discussion
 
 Create a type given a type identifier, optionally allowing identifiers that do not have an active declaration on the current system.
 

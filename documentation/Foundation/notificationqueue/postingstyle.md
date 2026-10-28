@@ -25,7 +25,7 @@ enum PostingStyle
 enum NSPostingStyle : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 These constants are used by the [`enqueue(_:postingStyle:)`](./enqueue%28_,postingstyle%29.md) and [`enqueue(_:postingStyle:coalesceMask:forModes:)`](./enqueue%28_,postingstyle,coalescemask,formodes%29.md) methods.
 

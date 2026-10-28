@@ -24,7 +24,7 @@ protocol MTLCommandBufferEncoderInfo : NSObjectProtocol
 @protocol MTLCommandBufferEncoderInfo <NSObject>
 ```
 
-#### Overview
+## Overview
 
 To create a command buffer that generates additional information (when a GPU encounters an error running it), configure an [`MTLCommandBufferDescriptor`](./mtlcommandbufferdescriptor.md) instance’s [`errorOptions`](./mtlcommandbufferdescriptor/erroroptions.md) property. For information about how to retrieve the information from an [`MTLCommandBuffer`](./mtlcommandbuffer.md) instance, see its [`error`](./mtlcommandbuffer/error.md) property.
 

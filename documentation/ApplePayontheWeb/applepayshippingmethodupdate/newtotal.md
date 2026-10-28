@@ -16,7 +16,7 @@ The new total that results from a change in the shipping method.
 required ApplePayLineItem newTotal;
 ```
 
-#### Discussion
+## Discussion
 
 Recalculate the total for the payment, because it may change as a result of shipping method changes. The [`newTotal`](../applepayshippingcontactupdate/newtotal.md) value is required.
 

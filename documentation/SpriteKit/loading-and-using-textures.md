@@ -5,7 +5,7 @@
 
 Learn the basics about using textures in SpriteKit.
 
-#### Overview
+## Overview
 
 Use the [`init(imageNamed:)`](./sktexture/init%28imagenamed%29.md) method to create an [`SKTexture`](./sktexture.md). When the texture is initialized using an image file, SpriteKit must perform two steps before it can use the texture to render sprites. First, it must load the texture data from the file. Second, it must prepare the texture data to be used by the graphics hardware. Both of these steps can be expensive compared to other SpriteKit operations. In particular, loading a texture from a file is very expensive. SpriteKit defers loading and preparing the texture as long as possible and provides methods you can use to control these steps.
 

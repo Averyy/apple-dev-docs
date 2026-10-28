@@ -15,7 +15,7 @@ A callback function that is called when changes to a device’s restriction info
 attribute function onRestrictionsChange;
 ```
 
-#### Discussion
+## Discussion
 
 The `onRestrictionsChange` attribute is used to update any activities that use a device’s restriction information. The attribute must be set to a function; for example, `Settings.onRestrictionsChange = function () {}`.
 

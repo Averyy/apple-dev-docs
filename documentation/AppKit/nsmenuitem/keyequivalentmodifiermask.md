@@ -19,7 +19,7 @@ var keyEquivalentModifierMask: NSEvent.ModifierFlags { get set }
 @property NSEventModifierFlags keyEquivalentModifierMask;
 ```
 
-#### Discussion
+## Discussion
 
 `NSShiftKeyMask` is a valid modifier for any key equivalent in `mask`. This allows you to specify key-equivalents such as Command-Shift-1 that are consistent across all keyboards. However, with a few exceptions (such as the German “ß” character), a lowercase character with `NSShiftKeyMask` is interpreted the same as the uppercase character without that mask. For example, Command-Shift-c and Command-C are considered to be identical key equivalents.
 

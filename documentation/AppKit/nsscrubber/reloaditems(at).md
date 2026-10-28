@@ -19,7 +19,7 @@ func reloadItems(at indexes: IndexSet)
 - (void) reloadItemsAtIndexes:(NSIndexSet *) indexes;
 ```
 
-#### Discussion
+## Discussion
 
 The scrubber makes requests for updated views from the data source and then animates their display.
 

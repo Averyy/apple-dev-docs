@@ -30,7 +30,7 @@ class UNMutableNotificationContent
 - [Declaring your actionable notification types](./declaring-your-actionable-notification-types.md)
 - [Modifying content in newly delivered notifications](./modifying-content-in-newly-delivered-notifications.md)
 
-#### Overview
+## Overview
 
 Create a [`UNMutableNotificationContent`](./unmutablenotificationcontent.md) object when you want to specify the payload for a local notification. Specifically, use this object to specify the title and message for an alert, the sound to play, or the value to assign to your app’s badge. You might also provide details about how the system handles the notification. For example, you can specify a custom launch image and a thread identifier for visually grouping related notifications.
 
@@ -80,7 +80,7 @@ UNUserNotificationCenter* center = [UNUserNotificationCenter currentNotification
 
 > **Note**:  Local notifications always result in user interactions, and the system ignores any interactions for which your app isn’t authorized. For information about how to request authorization for user interactions, see [Asking permission to use notifications](./asking-permission-to-use-notifications.md).
 
-##### Localizing the Alert Strings
+### Localizing the Alert Strings
 
 Localize the strings you display in a notification alert for the current user. Although you can use the [`NSLocalizedString`](../Foundation/nslocalizedstring.md) macros to load strings from your app’s resource files, a better option is to specify your string using the [`localizedUserNotificationString(forKey:arguments:)`](../Foundation/nsstring/localizedusernotificationstring%28forkey,arguments%29.md) method of [`NSString`](../Foundation/nsstring.md). The [`localizedUserNotificationString(forKey:arguments:)`](../Foundation/nsstring/localizedusernotificationstring%28forkey,arguments%29.md) method delays the loading of the localized string until the system delivers the notification. If the user changes the language setting before the system delivers a notification, the system updates the alert text to the user’s current language instead of the language in use when the system scheduled the notification.
 

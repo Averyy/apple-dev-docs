@@ -21,7 +21,7 @@ func resetProperty(_ resettableProperty: TVElementResettableProperty)
 - (void) resetProperty:(TVElementResettableProperty) resettableProperty;
 ```
 
-#### Discussion
+## Discussion
 
 This method can be used to reset a resettable property to its default value after changes to the property have been read.
 

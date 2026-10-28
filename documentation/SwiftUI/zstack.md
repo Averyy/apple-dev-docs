@@ -32,7 +32,7 @@ nonisolated struct ZStack<Content> where Content : View
 - [Making fine adjustments to a view’s position](./making-fine-adjustments-to-a-view-s-position.md)
 - [Picking container views for your content](./picking-container-views-for-your-content.md)
 
-#### Overview
+## Overview
 
 The `ZStack` assigns each successive subview a higher z-axis value than the one before it, meaning later subviews appear “on top” of earlier ones.
 

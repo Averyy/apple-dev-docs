@@ -23,7 +23,7 @@ class MIDINetworkSession
 @interface MIDINetworkSession : NSObject
 ```
 
-#### Overview
+## Overview
 
 A session can have any number of connections. The system broadcasts output to all connections, and merges input from multiple connections.
 

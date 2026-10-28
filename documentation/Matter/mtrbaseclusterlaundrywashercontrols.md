@@ -25,7 +25,7 @@ class MTRBaseClusterLaundryWasherControls
 @interface MTRBaseClusterLaundryWasherControls : MTRGenericBaseCluster
 ```
 
-#### Overview
+## Overview
 
 This cluster supports remotely monitoring and controlling the different types of functionality available to a washing device, such as a washing machine.
 

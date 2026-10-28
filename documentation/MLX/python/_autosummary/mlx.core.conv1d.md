@@ -6,20 +6,23 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.co
 
 # mlx.core.conv1d
 
-**conv1d(*input: array*, *weight: array*, */*, *stride: int = 1*, *padding: int = 0*, *dilation: int = 1*, *groups: int = 1*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: 1D convolution over an input with several channels
+```python
+conv1d(input: array, weight: array, /, stride: int = 1, padding: int = 0, dilation: int = 1, groups: int = 1, *, stream: StreamOrDevice = None) → array
+```
 
-Parameters:
+1D convolution over an input with several channels
 
-**input** ([array](mlx.core.array.md#mlx.core.array)) – Input array of shape `(N, L, C_in)`.
-**weight** ([array](mlx.core.array.md#mlx.core.array)) – Weight array of shape `(C_out, K, C_in)`.
-**stride** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – Kernel stride. Default: `1`.
-**padding** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – Input padding. Default: `0`.
-**dilation** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – Kernel dilation. Default: `1`.
-**groups** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – Input feature groups. Default: `1`.
+**Parameters:**
 
-Returns:
-The convolved array.
+- **input** ([array](mlx.core.array.md#mlx.core.array)) – Input array of shape `(N, L, C_in)`.
+- **weight** ([array](mlx.core.array.md#mlx.core.array)) – Weight array of shape `(C_out, K, C_in)`.
+- **stride** ([int](https://docs.python.org/3/builtins/functions.html#int), *optional*) – Kernel stride. Default: `1`.
+- **padding** ([int](https://docs.python.org/3/builtins/functions.html#int), *optional*) – Input padding. Default: `0`.
+- **dilation** ([int](https://docs.python.org/3/builtins/functions.html#int), *optional*) – Kernel dilation. Default: `1`.
+- **groups** ([int](https://docs.python.org/3/builtins/functions.html#int), *optional*) – Input feature groups. Default: `1`.
 
-Return type:
-[array](mlx.core.array.md#mlx.core.array)
+**Returns:**
+: The convolved array.
+
+**Return type:**
+: [array](mlx.core.array.md#mlx.core.array)

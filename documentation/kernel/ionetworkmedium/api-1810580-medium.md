@@ -16,7 +16,7 @@ static IONetworkMedium * medium(
  const char *name = 0);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IONetworkMedium instance on success, or 0 otherwise.
 

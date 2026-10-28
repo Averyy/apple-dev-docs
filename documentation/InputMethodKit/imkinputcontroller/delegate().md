@@ -19,7 +19,7 @@ func delegate() -> Any!
 - (id) delegate;
 ```
 
-#### Return Value
+## Return Value
 
 The delegate object.
 

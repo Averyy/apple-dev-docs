@@ -17,7 +17,7 @@ Adds an order to the store or updates an existing order.
 func saveOrder(signedArchive: Data) async throws -> FinanceStore.SaveOrderResult
 ```
 
-#### Discussion
+## Discussion
 
 `Data` must be the archive data of a valid, signed order.
 

@@ -25,7 +25,7 @@ init(name: String, texture: SKTexture?)
 - (instancetype) initWithName:(NSString *) name texture:(SKTexture *) texture;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized uniform object whose type is set to [`SKUniformType.texture`](../skuniformtype/texture.md).
 

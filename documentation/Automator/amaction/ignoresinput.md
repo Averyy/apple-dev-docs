@@ -20,7 +20,7 @@ var ignoresInput: Bool { get }
 @property (nonatomic, readonly) BOOL ignoresInput;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the action acts upon its input, otherwise [`false`](../../Swift/false.md).
 

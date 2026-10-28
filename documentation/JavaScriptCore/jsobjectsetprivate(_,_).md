@@ -24,11 +24,11 @@ func JSObjectSetPrivate(_ object: JSObjectRef!, _ data: UnsafeMutableRawPointer!
 bool JSObjectSetPrivate(JSObjectRef object, void *data);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if `object` can store private data; otherwise, [`false`](../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The default object class doesn’t allocate storage for private data. Only objects that have a non-`NULL` [`JSClassRef`](./jsclassref.md) can store private data.
 

@@ -19,7 +19,7 @@ A content configuration suitable for hosting a hierarchy of SwiftUI views.
 struct UIHostingConfiguration<Content, Background> where Content : View, Background : View
 ```
 
-#### Overview
+## Overview
 
 Use a value of this type, which conforms to the [`UIContentConfiguration`](../UIKit/uicontentconfiguration-9eib5.md) protocol, with a [`UICollectionViewCell`](../UIKit/uicollectionviewcell.md) or [`UITableViewCell`](../UIKit/uitableviewcell.md) to host a hierarchy of SwiftUI views in a collection or table view, respectively. For example, the following shows a stack with an image and text inside the cell:
 

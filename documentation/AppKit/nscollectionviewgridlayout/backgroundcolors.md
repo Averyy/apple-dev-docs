@@ -19,7 +19,7 @@ var backgroundColors: [NSColor]! { get set }
 @property (copy, null_resettable) NSArray<NSColor *> * backgroundColors;
 ```
 
-#### Discussion
+## Discussion
 
 The [`NSColor`](../nscolor.md) objects in this property are used to draw the grid’s background. The appearance of the background depends on the value you specify:
 

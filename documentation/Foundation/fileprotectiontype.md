@@ -25,7 +25,7 @@ struct FileProtectionType
 typedef NSString * NSFileProtectionType;
 ```
 
-#### Overview
+## Overview
 
 These values are associated with the [`protectionKey`](./fileattributekey/protectionkey.md) key.
 

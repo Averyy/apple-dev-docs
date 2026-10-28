@@ -22,7 +22,7 @@ optional func storeOverlayWillStartDismissal(_ overlay: SKOverlay, transitionCon
 - (void) storeOverlay:(SKOverlay *) overlay willStartDismissal:(SKOverlayTransitionContext *) transitionContext;
 ```
 
-#### Discussion
+## Discussion
 
 Use the `transitionContext` parameter to animate updates to the UI on the main thread. For example, make a [`UIImageView`](../../UIKit/uiimageview.md) appear by animating the change of its opacity to 100%`,` as shown in the following code:
 

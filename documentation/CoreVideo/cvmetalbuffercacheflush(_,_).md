@@ -22,7 +22,7 @@ func CVMetalBufferCacheFlush(_ bufferCache: CVMetalBufferCache, _ options: CVOpt
 extern void CVMetalBufferCacheFlush(CVMetalBufferCacheRef bufferCache, CVOptionFlags options);
 ```
 
-#### Discussion
+## Discussion
 
 Performs internal housekeeping/recycling operations
 

@@ -20,11 +20,11 @@ optional func textView(_ textView: NSTextView, willShow servicePicker: NSSharing
 - (NSSharingServicePicker *) textView:(NSTextView *) textView willShowSharingServicePicker:(NSSharingServicePicker *) servicePicker forItems:(NSArray *) items;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSSharingServicePicker`](../nssharingservicepicker.md) instance. The original sharing picker or a new sharing picker instance can be returned.
 
-#### Discussion
+## Discussion
 
 Returns a sharing service picker created for items right before shown to the screen when the `orderFrontSharingServicePicker:` method. Return `nil` to remove the Share item from the menu.
 

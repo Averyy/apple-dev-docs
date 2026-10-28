@@ -24,7 +24,7 @@ static let attackTime: CHHapticEvent.ParameterID
 extern CHHapticEventParameterID CHHapticEventParameterIDAttackTime;
 ```
 
-#### Discussion
+## Discussion
 
 This parameter can be an event parameter or a dynamic parameter. An event parameter indicates that the haptic begins increasing in intensity at the set time, where time `0` indicates now, or the current time.
 

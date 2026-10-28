@@ -21,7 +21,7 @@ var junctionElementAngles: Set<Measurement<UnitAngle>>? { get set }
 @property (nonatomic, copy, nullable) NSSet<NSMeasurement<NSUnitAngle *> *> * junctionElementAngles;
 ```
 
-##### Discussion
+### Discussion
 
 This must not include `junctionExitAngle`.
 

@@ -19,7 +19,7 @@ func representation(using storageType: NSBitmapImageRep.FileType, properties: [N
 - (NSData *) representationUsingType:(NSBitmapImageFileType) storageType properties:(NSDictionary<NSString *,id> *) properties;
 ```
 
-#### Return Value
+## Return Value
 
 A data object containing the receiver’s image data in the specified format. You can write this data to a file or use it to create a new [`NSBitmapImageRep`](../nsbitmapimagerep.md) object.
 

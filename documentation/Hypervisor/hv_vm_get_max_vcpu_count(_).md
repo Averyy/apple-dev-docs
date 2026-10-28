@@ -19,7 +19,7 @@ func hv_vm_get_max_vcpu_count(_ max_vcpu_count: UnsafeMutablePointer<UInt32>) ->
 extern hv_return_t hv_vm_get_max_vcpu_count(uint32_t *max_vcpu_count);
 ```
 
-#### Return Value
+## Return Value
 
 [`HV_SUCCESS`](./hv_success.md) if the operation was successful, otherwise an error code specified in [`hv_return_t`](./hv_return_t.md).
 

@@ -23,7 +23,7 @@ static var allowAnimatedContent: UIView.AnimationOptions { get }
 UIViewAnimationOptionAllowAnimatedContent
 ```
 
-#### Discussion
+## Discussion
 
 If this key is not present, the views are animated using a snapshot image.
 

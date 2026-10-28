@@ -24,7 +24,7 @@ init(x: LocalizedStringResource, y: LocalizedStringResource, t: LocalizedStringR
 
 Available when `Content` is `FunctionLinePlotContent`.
 
-#### Discussion
+## Discussion
 
 Parameters:
 

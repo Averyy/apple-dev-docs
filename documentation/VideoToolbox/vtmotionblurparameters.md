@@ -22,7 +22,7 @@ class VTMotionBlurParameters
 @interface VTMotionBlurParameters : NSObject
 ```
 
-#### Overview
+## Overview
 
 This object is used in the processWithParameters call of the VTFrameProcessor class. The output parameter is a destinationFrame where the output frame is returned as a VTFrameProcessorFrame back to the caller function once processWithParameters completes.
 

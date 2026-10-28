@@ -21,7 +21,7 @@ func drawsBackground() -> Bool
 - (BOOL) drawsBackground;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the composition picker view draws its background; otherwise [`false`](../../Swift/false.md).
 

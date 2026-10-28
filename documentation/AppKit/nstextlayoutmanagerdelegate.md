@@ -19,7 +19,7 @@ protocol NSTextLayoutManagerDelegate : NSObjectProtocol
 @protocol NSTextLayoutManagerDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Optional methods that delegates implement to respond to layout changes.
 

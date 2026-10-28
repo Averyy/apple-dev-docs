@@ -24,7 +24,7 @@ var lightModelTwoSided: GLboolean { get set }
 @property (nonatomic, assign) GLboolean lightModelTwoSided;
 ```
 
-#### Discussion
+## Discussion
 
 If the value is `GL_TRUE` and the back face of a primitive is being rendered, the lighting values are calculated by negating the surface normals for the primitive. If the value is `GL_FALSE`, then the facing of the primitive is ignored when performing the lighting calculation. The default value is `GL_FALSE`.
 

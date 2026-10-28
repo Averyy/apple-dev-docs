@@ -22,7 +22,7 @@ mutating func validate() throws
 
 - [Providing Custom Validation](../validation.md)
 
-#### Discussion
+## Discussion
 
 Implement this method to perform validation or other processing after creating a new instance from command-line arguments.
 
@@ -30,7 +30,6 @@ Implement this method to perform validation or other processing after creating a
 
 ### ParsableArguments Implementations
 - [func validate() throws](./validate%28%29-39ivb.md)
-  Validates the properties of the instance after parsing.
 
 
 ---

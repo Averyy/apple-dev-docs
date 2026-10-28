@@ -21,7 +21,7 @@ A QUIC connection’s initial maximum data transport parameter.
 var initialMaxData: Int { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This property determines the value of the `initial_max_data` transport parameter.
 

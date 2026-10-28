@@ -22,7 +22,7 @@ var isDepthDataDeliveryEnabled: Bool { get set }
 @property (nonatomic, getter=isDepthDataDeliveryEnabled) BOOL depthDataDeliveryEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is  [`false`](../../Swift/false.md) (the default), the capture output produces only photo data and metadata.
 

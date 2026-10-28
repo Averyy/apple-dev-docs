@@ -24,7 +24,7 @@ static func evaluates(_ evaluation: any Evaluation, info: [String : String] = [:
 
 Available when `Self` is `EvaluationTrait`.
 
-#### Discussion
+## Discussion
 
 ```swift
 let accuracyMetric = Metric("Accuracy")

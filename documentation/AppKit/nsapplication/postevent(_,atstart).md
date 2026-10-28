@@ -19,7 +19,7 @@ func postEvent(_ event: NSEvent, atStart: Bool)
 - (void) postEvent:(NSEvent *) event atStart:(BOOL) atStart;
 ```
 
-#### Discussion
+## Discussion
 
 This method can also be called in subthreads. Events posted in subthreads bubble up in the main thread event queue.
 

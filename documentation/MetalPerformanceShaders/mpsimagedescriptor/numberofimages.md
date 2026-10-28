@@ -24,7 +24,7 @@ var numberOfImages: Int { get set }
 @property (nonatomic, readwrite) NSUInteger numberOfImages;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is 1.
 

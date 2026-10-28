@@ -25,7 +25,7 @@ static let quickTimeMetadataFullFrameRatePlaybackIntent: AVMetadataIdentifier
 extern AVMetadataIdentifier const AVMetadataIdentifierQuickTimeMetadataFullFrameRatePlaybackIntent;
 ```
 
-#### Discussion
+## Discussion
 
 Some apps play movies recorded at frame rates of 120fps or higher in slow motion. If your app records high-frame-rate movies, you can add this movie-level metadata to indicate whether the movie intends to play at the full frame rate (1) or at a slow motion rate (0). Apps that play movies may use this metadata, when present, to guide their behavior.
 

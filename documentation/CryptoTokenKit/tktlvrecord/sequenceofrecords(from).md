@@ -25,7 +25,7 @@ class func sequenceOfRecords(from data: Data) -> [TKTLVRecord]?
 + (NSArray<TKTLVRecord *> *) sequenceOfRecordsFromData:(NSData *) data;
 ```
 
-#### Return Value
+## Return Value
 
 A sequence of TLV records, or `nil` if `data` does not specify a sequence of valid records.
 

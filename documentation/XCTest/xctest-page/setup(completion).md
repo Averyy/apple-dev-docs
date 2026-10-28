@@ -24,7 +24,7 @@ func setUp() async throws
 
 - [Set Up and Tear Down State in Your Tests](../set-up-and-tear-down-state-in-your-tests.md)
 
-#### Discussion
+## Discussion
 
 In Swift, override `setUp() async throws` for asynchronous state preparation with error handling before each test. Do not override `setUp(completion:)` for synchronous state preparation. In Objective-C, override this method for asynchronous state preparation with error handling before each test. Call the completion handler after you have set up your state to notify the test system it can proceed with the next task.
 

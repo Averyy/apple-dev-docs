@@ -10,7 +10,7 @@ framework: "Swift-Org/SwiftAndroid"
 
 Integrate Swift builds with Android tooling and frameworks
 
-#### Gradle
+## Gradle
 
 Add a custom Gradle task to invoke `swift build` and copy the resulting `.so` into `jniLibs/`:
 
@@ -23,13 +23,13 @@ tasks.register<Exec>("buildSwiftLibrary") {
 }
 ```
 
-#### Swift Package Manager
+## Swift Package Manager
 
 ```shell
 $ swift build --swift-sdk aarch64-unknown-linux-android28
 ```
 
-#### Resources
+## Resources
 
 - [Swift SDK for Android – Getting Started](https://www.swift.org/documentation/articles/swift-sdk-for-android-getting-started.html)
 - [swift-java](https://github.com/swiftlang/swift-java) – Java/Kotlin interop

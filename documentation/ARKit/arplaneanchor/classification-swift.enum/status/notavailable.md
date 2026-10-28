@@ -16,7 +16,7 @@ ARKit cannot currently provide plane classification information.
 case notAvailable
 ```
 
-#### Discussion
+## Discussion
 
 Plane classification is available only on iPhone XS and iPhone XS Max devices. On other devices, all plane anchors always indicate a classification status of [`ARPlaneAnchor.Classification.Status.notAvailable`](./notavailable.md).
 

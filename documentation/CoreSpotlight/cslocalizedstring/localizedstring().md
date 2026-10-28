@@ -23,7 +23,7 @@ func localizedString() -> String
 - (NSString *) localizedString;
 ```
 
-#### Return Value
+## Return Value
 
 The localized string for the current language.
 

@@ -16,7 +16,7 @@ Values that indicate whether the shipping mode prevents the user from editing fi
 enum ApplePayShippingContactEditingMode
 ```
 
-#### Overview
+## Overview
 
 The values for the contact editing mode:
 

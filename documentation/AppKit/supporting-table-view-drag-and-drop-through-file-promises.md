@@ -10,19 +10,19 @@ Share data between macOS apps during drag and drop by using an item provider.
 - macOS 10.13+
 - Xcode 13.1+
 
-#### Overview
+## Overview
 
 A file promise is a possible future file sent by an app of a specified type. When working with drag and drop, use file promises to indicate intent for a future drag operation. The future drag operation promises the delivery of the file at drop time. This avoids loading or performing any actions on the file until the promise completes. Use the [`NSFilePromiseProvider`](./nsfilepromiseprovider.md) class when creating file promises. Use the [`NSFilePromiseReceiver`](./nsfilepromisereceiver.md) to receive file promises.
 
 Implement drag and drop with an [`NSTableView`](./nstableview.md) by using a dragging pasteboard. When a drag starts, you adopt the [`NSPasteboardWriting`](./nspasteboardwriting.md) protocol to write data to the [`NSPasteboard`](./nspasteboard.md). When a drag occurs, you determine the valid drop target. When the drag ends, you read the drag data from the [`NSPasteboard`](./nspasteboard.md). Adopt [`NSTableViewDataSource`](./nstableviewdatasource.md) to handle with these drag operations.
 
-##### Display Files to Drag and Drop
+### Display Files to Drag and Drop
 
 This sample code project displays a list of image files from the Pictures folder found in the user’s home directory. It allows those pictures to be dragged within the table view, to be reordered, and dragged out to be copied to other apps. Pictures are also dragged in from other apps like Finder, Mail, Safari, and Photos.
 
 The sample shows how to support both `URL` and file promises drags when accepting images from Mail, Safari, Photos, and other apps that support drag and drop. It also demonstrates how to provide file promises to other apps.
 
-##### Test Drag and Drop by Creating or Receiving File Promises
+### Test Drag and Drop by Creating or Receiving File Promises
 
 To see this sample in action, build and run the project, then drag an image from another app or location, such as Finder, Mail, Photos or Safari, into the app’s window. Dragging the image into the window imports it into a form that the sample app can parse and consume. There are multiple ways to drag and drop image files to and from the sample app. The way a user drags a file determines how files are promised to and from the destination. If the user drags an image file from the app to the Finder, the Finder uses the `NSFilePromiseProvider` to make a copy. If the user drags a photo from Photos, the sample app uses `NSFilePromiseReceiver` to receive a copy.
 
@@ -48,7 +48,7 @@ In addition, a drag and drop involves just the image file’s URL, without a fil
 
 This sample app also supports drag and drop of images from within the table view that don’t involve a URL. In this case photos are re-ordered using the row number of the photo as the drag reference.
 
-##### Support Image Import by Accepting File Promises
+### Support Image Import by Accepting File Promises
 
 When setting up the table view to support drag and drop, register drag pasteboard types to the table view. This sample registers three pasteboard types. `NSFilePromiseReceiver` provides the first. This type allows the table view to accept file promises that handle dragged images from apps like Safari or Photos. The second, `.fileURL`, accepts drags as file URLs. The third type is `itemDragType`, a custom pasteboard type that accepts table view cell rows to drag within the table view.
 
@@ -114,7 +114,7 @@ func handlePromisedDrops(draggingInfo: NSDraggingInfo, toRow: Int) -> Bool {
 }
 ```
 
-##### Support Image Export by Providing File Promises
+### Support Image Export by Providing File Promises
 
 To write images from the table view, the sample app creates formats that other apps like Safari, Mail, and Finder can consume, write an `NSFilePromiseProvider` instance to the dragging pasteboard, and conform to [`NSFilePromiseProviderDelegate`](./nsfilepromiseproviderdelegate.md) by implementing three delegate functions.
 
@@ -194,11 +194,11 @@ Returning a non-nil value will make the table view cell draggable. To drag image
 tableView.setDraggingSourceOperationMask(.copy, forLocal: false)
 ```
 
-##### Validate the Table Drop
+### Validate the Table Drop
 
 To allow the table view to determine a valid drop target, implement [`tableView(_:validateDrop:proposedRow:proposedDropOperation:)`](./nstableviewdatasource/tableview%28_,validatedrop,proposedrow,proposeddropoperation%29.md). UIKit calls this delegate function when a drag is moved over the table view and before the dragging object is dropped by the user. Specify how to respond to a proposed drop operation, which will be either on or above a cell. In this sample, users can drop items between cells to insert them.
 
-##### Accept the Drop onto the Table
+### Accept the Drop onto the Table
 
 To allow the table view to accept the drop when the user releases the mouse button over it, implement this delegate function [`tableView(_:acceptDrop:row:dropOperation:)`](./nstableviewdatasource/tableview%28_,acceptdrop,row,dropoperation%29.md).
 
@@ -225,7 +225,7 @@ func tableView(_ tableView: NSTableView,
 
 This function handles the data from the dragging pasteboard after the user drops the image onto the table view.
 
-##### Drag and Drop to Reorder Table Rows
+### Drag and Drop to Reorder Table Rows
 
 To reorder image files within the table view, the sample app defines and registers a custom pasteboard type:
 

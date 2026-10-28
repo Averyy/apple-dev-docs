@@ -36,7 +36,7 @@ static func maximum(_ value: Float) -> GenerationGuide<Float>
 static func maximum(_ value: Int) -> GenerationGuide<Int>
 ```
 
-#### Discussion
+## Discussion
 
 Use a `maximum` generation guide — whose bounds are inclusive — to ensure the model produces a value less than or equal to some maximum value. For example, you can specify that the highest level a character in your game can achieve is 99.9:
 

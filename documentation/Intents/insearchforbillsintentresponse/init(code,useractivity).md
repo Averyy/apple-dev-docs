@@ -25,11 +25,11 @@ init(code: INSearchForBillsIntentResponseCode, userActivity: NSUserActivity?)
 - (instancetype) initWithCode:(INSearchForBillsIntentResponseCode) code userActivity:(NSUserActivity *) userActivity;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized response object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 After initializing the response object, put the bill details into the [`bills`](./bills.md) property of the object. Always fill in each bill detail with as much information as possible about the transaction.
 

@@ -22,11 +22,11 @@ func backButtonTitlePositionAdjustment(for barMetrics: UIBarMetrics) -> UIOffset
 - (UIOffset) backButtonTitlePositionAdjustmentForBarMetrics:(UIBarMetrics) barMetrics;
 ```
 
-#### Return Value
+## Return Value
 
 The back button title offset for `barMetrics`.
 
-#### Discussion
+## Discussion
 
 This modifier applies only to navigation bar back buttons and is ignored by other buttons.
 

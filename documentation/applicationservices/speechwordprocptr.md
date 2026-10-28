@@ -19,7 +19,7 @@ typealias SpeechWordProcPtr = (SpeechChannel, SRefCon, UInt, UInt16) -> Void
 typedef void (*SpeechWordProcPtr)(SpeechChannel chan, SRefCon refCon, unsigned long wordPos, UInt16 wordLen);
 ```
 
-#### Discussion
+## Discussion
 
 The Speech Synthesis Manager calls a speech channel’s wordcallback function just before it pronounces a word. You might usesuch a callback function, for example, to draw the word about tobe spoken in a window. In this case, the callback function wouldset a global flag variable to indicate that the word being spokenis changing and another two global variables to `wordPos` and `wordLen`.A function called by your application’s main event loop coulddetect that the word being spoken is changing and draw the wordin a window.
 

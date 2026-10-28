@@ -25,7 +25,7 @@ var shouldProcessNamespaces: Bool { get set }
 @property BOOL shouldProcessNamespaces;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the parser reports namespace and qualified name, [`false`](../../Swift/false.md) otherwise.
 

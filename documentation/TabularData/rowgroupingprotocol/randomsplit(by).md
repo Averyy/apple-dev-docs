@@ -21,7 +21,7 @@ Generates two row groupings by randomly splitting the original with a proportion
 func randomSplit(by proportion: Double) -> (Self, Self)
 ```
 
-#### Return Value
+## Return Value
 
 A tuple of two row groupings.
 

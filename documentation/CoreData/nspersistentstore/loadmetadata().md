@@ -25,7 +25,7 @@ func loadMetadata() throws
 - (BOOL) loadMetadata:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 There is no way to return an error if the store is invalid.
 

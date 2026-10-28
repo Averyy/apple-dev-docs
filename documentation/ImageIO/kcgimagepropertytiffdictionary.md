@@ -25,7 +25,7 @@ let kCGImagePropertyTIFFDictionary: CFString
 extern CFStringRef const kCGImagePropertyTIFFDictionary;
 ```
 
-#### Discussion
+## Discussion
 
 For more information about the available metadata keys, see [TIFF Image Properties](./tiff-image-properties.md).
 

@@ -24,11 +24,11 @@ static OSStringPtr withString(const OSString *aString);
 static OSPtr<OSString> withString(const OSString *aString);
 ```
 
-#### Return Value
+## Return Value
 
 NULL on failure, otherwise the allocated OSString with reference count 1 to be released by the caller.
 
-#### Discussion
+## Discussion
 
 Allocates an OSString object with a copy of an OString object.
 

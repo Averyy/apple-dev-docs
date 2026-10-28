@@ -21,11 +21,11 @@ Returns a summary for a custom duration property across the progress subtree.
 final func summary<P>(of property: KeyPath<ProgressManager.Properties, P.Type>) -> P.Summary where P : ProgressManager.Property, P.Summary == Duration, P.Value == Duration
 ```
 
-#### Return Value
+## Return Value
 
 A `Duration` summary value for the specified property.
 
-#### Discussion
+## Discussion
 
 This method aggregates the values of a custom duration property from this progress manager and all its children, returning a consolidated summary value.
 

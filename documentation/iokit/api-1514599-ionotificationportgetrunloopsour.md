@@ -23,11 +23,11 @@ func IONotificationPortGetRunLoopSource(_ notify: IONotificationPortRef!) -> Unm
 CFRunLoopSourceRef IONotificationPortGetRunLoopSource(IONotificationPortRef notify);
 ```
 
-#### Return Value
+## Return Value
 
 A CFRunLoopSourceRef for the notification object.
 
-#### Discussion
+## Discussion
 
 A notification object may deliver notifications to a CFRunLoop by adding the run loop source returned by this function to the run loop.
 

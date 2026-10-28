@@ -19,13 +19,13 @@ class WKPanGestureRecognizer
 @interface WKPanGestureRecognizer : WKGestureRecognizer
 ```
 
-#### Overview
+## Overview
 
 In watchOS, a pan gesture must track exactly one touch event, but that touch event may move freely. Pan gestures are often used to drag content around a given area.
 
 You do not create instances of this class programmatically. Instead, add a pan gesture recognizer to your Watch app’s storyboard file, dropping it onto a specific interface object. Touches occurring within the bounds of that interface object are tracked by the gesture recognizer and reported to an action method you define on the parent interface controller. For information on defining your action method and connecting it to your gesture recognizer, see [`WKGestureRecognizer`](./wkgesturerecognizer.md).
 
-##### State Changes for a Pan Gesture
+### State Changes for a Pan Gesture
 
 ![](https://developer.apple.com/tutorials/images/com.apple.watchkit/media-2557623@2x.png)
 
@@ -36,7 +36,7 @@ A pan gesture recognizer tracks touch events continuously, and therefore has man
 
 The Changed state is optional and may occur multiple times before the Ended, Failed, or Cancelled state is reached. The gesture recognizer calls its action method at each state transition. For more information on implementing continuous gesture recognizers, see [`WKGestureRecognizer`](./wkgesturerecognizer.md).
 
-##### Interface Builder Attributes
+### Interface Builder Attributes
 
 Xcode lets you configure information about your gesture recognizer in your storyboard file. A pan gesture recognizer defines no attributes of its own, but you can configure attributes of the [`WKGestureRecognizer`](./wkgesturerecognizer.md) parent class. For information about those attributes, see [`WKGestureRecognizer`](./wkgesturerecognizer.md).
 

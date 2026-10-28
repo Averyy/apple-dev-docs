@@ -23,7 +23,7 @@ func equalizeHistogram(destination: vImage.PixelBuffer<Format>)
 
 Available when `Format` conforms to `MultiplePlanePixelFormat` and `Format.ComponentType` is `UInt8`.
 
-#### Discussion
+## Discussion
 
 Use this function to transform an image so that its histogram is more uniformly distributed across the entire range of values.
 

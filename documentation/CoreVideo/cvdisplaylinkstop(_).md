@@ -22,11 +22,11 @@ func CVDisplayLinkStop(_ displayLink: CVDisplayLink) -> CVReturn
 extern CVReturn CVDisplayLinkStop(CVDisplayLinkRef displayLink);
 ```
 
-#### Return Value
+## Return Value
 
 A Core Video result code. See [Core Video Constants](./core-video-constants.md) for possible values.
 
-#### Discussion
+## Discussion
 
 If the specified display link is already stopped, `CVDisplayLinkStop` returns an error.
 

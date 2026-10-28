@@ -12,7 +12,7 @@ Asserts that two values are identical.
 #define XCTAssertIdentical(expression1, expression2, ...)
 ```
 
-#### Discussion
+## Discussion
 
 Compare two values of type `id`. The values are identical if they’re the same instance.
 

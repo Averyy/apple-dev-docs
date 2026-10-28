@@ -17,7 +17,7 @@ Applies the element-wise parametric ReLU.
 func prelu(_ x: MLXArray, alpha: MLXArray) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 This is:
 
@@ -25,7 +25,7 @@ This is:
 maximum(0, x) + alpha * minimum(0, x)
 ```
 
-##### See Also
+### See Also
 
 - [Activation Functions and Layers](./activations.md)
 - [`PReLU`](./prelu.md)

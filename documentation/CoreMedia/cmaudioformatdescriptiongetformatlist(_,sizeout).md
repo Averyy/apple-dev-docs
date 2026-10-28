@@ -25,11 +25,11 @@ func CMAudioFormatDescriptionGetFormatList(_ desc: CMAudioFormatDescription, siz
 extern const AudioFormatListItem *CMAudioFormatDescriptionGetFormatList(CMAudioFormatDescriptionRef desc, size_t *sizeOut);
 ```
 
-#### Return Value
+## Return Value
 
 A read-only pointer to the array of `AudioFormatListItem` structs inside the audio format description.
 
-#### Discussion
+## Discussion
 
 This property is analogous to `kAudioFormatProperty_FormatList` and follows its conventions. Namely, the API returns formats in order from the most to least useful, with channel count taking the highest precedence followed by sample rate. This API is specific to audio format descriptions, and returns `NULL` if called with a non-audio format description.
 

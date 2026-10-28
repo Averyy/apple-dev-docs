@@ -23,7 +23,7 @@ class CLSScoreItem
 @interface CLSScoreItem : CLSActivityItem
 ```
 
-#### Overview
+## Overview
 
 Use an activity item of this type to indicate the relative success in completing a task, like the number of correctly answered questions on a quiz.
 

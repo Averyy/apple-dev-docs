@@ -24,7 +24,7 @@ func MTLRegionMake1D(_ x: Int, _ width: Int) -> MTLRegion
 static MTLRegion MTLRegionMake1D(NSUInteger x, NSUInteger width);
 ```
 
-#### Return Value
+## Return Value
 
 A region whose x and width values are as specified.  The y and z coordinates of the region’s origin are set to `0`, and the region’s height and depth are set to `1.`
 

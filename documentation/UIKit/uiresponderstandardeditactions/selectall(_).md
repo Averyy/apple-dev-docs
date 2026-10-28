@@ -23,7 +23,7 @@ optional func selectAll(_ sender: Any?)
 - (void) selectAll:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 UIKit calls this method when the user selects the Select All command from an editing menu. The command selects all content in the responder. For example, a text view selects all of its text and displays an appropriate selection interface.
 

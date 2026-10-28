@@ -20,7 +20,7 @@ let kSecTransformPreviousErrorKey: CFString
 extern CFStringRef const kSecTransformPreviousErrorKey;
 ```
 
-#### Discussion
+## Discussion
 
 Use the value associated with this key to trace through a chain of [`CFError`](../CoreFoundation/cferror.md) objects when more than one error occurs during transform evaluation.
 

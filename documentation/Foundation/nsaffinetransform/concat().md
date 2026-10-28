@@ -19,7 +19,7 @@ func concat()
 - (void) concat;
 ```
 
-#### Discussion
+## Discussion
 
 Concatenation is performed by matrix multiplication—see Manipulating Transform Values.
 

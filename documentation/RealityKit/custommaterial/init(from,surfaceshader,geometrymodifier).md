@@ -19,7 +19,7 @@ Creates a custom material from an existing material, surface shader, and geometr
 init(from material: any Material, surfaceShader: CustomMaterial.SurfaceShader, geometryModifier: CustomMaterial.GeometryModifier? = nil) throws
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a custom material with the same properties as another existing material, but with a geometry modifier and surface shader.
 

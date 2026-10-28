@@ -26,7 +26,7 @@ class func assetResource(forUploadJob job: PHAssetResourceUploadJob) -> PHAssetR
 
 - [Uploading asset resources in the background](../../PhotoKit/uploading-asset-resources-in-the-background.md)
 
-#### Return Value
+## Return Value
 
 The asset resource associated with the upload job, or nil if the resource cannot be found.
 

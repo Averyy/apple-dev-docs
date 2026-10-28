@@ -19,7 +19,7 @@ func layoutAttributesForItem(at index: Int) -> NSScrubberLayoutAttributes?
 - (NSScrubberLayoutAttributes *) layoutAttributesForItemAtIndex:(NSInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 The base implementation returns `nil`.
 

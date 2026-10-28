@@ -20,7 +20,7 @@ A handle to a prim definition stored in a layer.
 struct Spec
 ```
 
-#### Overview
+## Overview
 
 `USDPrim.Spec` is a struct but acts as a handle into data owned by a [`USDLayer`](../usdlayer.md), much like [`USDPrim`](../usdprim.md) is a handle into a [`USDStage`](../usdstage.md). Mutations write through to the layer rather than to the spec value itself, so property setters and methods on this type are non-mutating.
 

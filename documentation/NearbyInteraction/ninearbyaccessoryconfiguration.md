@@ -26,13 +26,13 @@ class NINearbyAccessoryConfiguration
 
 - [Initiating and maintaining a session](./initiating-and-maintaining-a-session.md)
 
-#### Overview
+## Overview
 
 Use this class to interact with a third-party accessory that you partner with or develop. The framework supports ranging with accessories using either Ultra Wideband (UWB) or Bluetooth Channel Sounding technology.
 
 For an example app that demonstrates this configuration with UWB accessories, see [Implementing spatial interactions with third-party accessories](./implementing-spatial-interactions-with-third-party-accessories.md).
 
-##### Discover the accessory and create a configuration
+### Discover the accessory and create a configuration
 
 To begin the interaction, your app discovers the nearby accessory using a technology you choose — like [Core Bluetooth](../CoreBluetooth/CoreBluetooth.md), the local network, or a secure internet connection — and establishes a two-way data link.
 
@@ -40,7 +40,7 @@ For UWB accessories, over the data link, the accessory sends your app configurat
 
 For Bluetooth Channel Sounding accessories in iOS 27 and later, create a configuration using the [`init(bluetoothChannelSoundingIdentifier:previousBluetoothIdentifier:)`](./ninearbyaccessoryconfiguration/init%28bluetoothchannelsoundingidentifier,previousbluetoothidentifier%29.md) initializer with the Bluetooth pairing identifier.
 
-##### Enable background interaction for Bluetooth accessories
+### Enable background interaction for Bluetooth accessories
 
 In iOS 16, third-party UWB accessories paired to the device through Bluetooth can interact with your app while it’s in the background. This enables a new class of hands-free experiences. For example, the person’s phone can be in their pocket and prompt an eBike to power on when mounted, or prompt lights to turn on and music to play as the person enters a room.
 
@@ -50,7 +50,7 @@ To enable background interaction:
 - The app connects and pairs to the accessory using [Core Bluetooth](../CoreBluetooth/CoreBluetooth.md).
 - The app calls the [`init(accessoryData:bluetoothPeerIdentifier:)`](./ninearbyaccessoryconfiguration/init%28accessorydata,bluetoothpeeridentifier%29.md) initializer and passes in the accessory’s Bluetooth identifier.
 
-##### Start a session and share configuration data
+### Start a session and share configuration data
 
 To start a session, the app creates an [`NISession`](./nisession.md) instance and passes an instance of this class into the session’s [`run(_:)`](./nisession/run%28_%29.md) function. For UWB accessories, after your app sets the session [`delegate`](./nisession/delegate.md), the system invokes the delegate’s [`session(_:didGenerateShareableConfigurationData:for:)`](./nisessiondelegate/session%28_,didgenerateshareableconfigurationdata,for%29.md) callback and provides your device’s configuration data.
 
@@ -58,7 +58,7 @@ Over the data link, your app sends your device’s configuration data to the UWB
 
 When the system gathers location updates for the accessory, Nearby Interaction calls your delegate’s [`session(_:didUpdate:)`](./nisessiondelegate/session%28_,didupdate%29.md) implementation. To match [`distance`](./ninearbyobject/distance-676dm.md) updates that your app receives through [`session(_:didUpdate:)`](./nisessiondelegate/session%28_,didupdate%29.md) with the accessory, compare the argument object’s discovery token with the value of this property’s [`accessoryDiscoveryToken`](./ninearbyaccessoryconfiguration/accessorydiscoverytoken.md).
 
-##### Turn on Precision Finding for stationary objects
+### Turn on Precision Finding for stationary objects
 
 In iOS 16, you can combine the visual-spatial power of ARKit with the radio sensitivity of the Ultra Wideband (UWB) chips to locate stationary nearby objects with considerable precision. To do that, set [`isCameraAssistanceEnabled`](./ninearbyaccessoryconfiguration/iscameraassistanceenabled.md) to `true` and optionally provide the interaction session with an [`ARSession`](../ARKit/arsession.md) instance through [`setARSession(_:)`](./nisession/setarsession%28_%29.md) before running the session. Together, the UWB chip and ARKit’s assistance enable Nearby Interaction to provide the same Precision Finding capabilities present in AirTag.
 

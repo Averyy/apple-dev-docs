@@ -21,7 +21,7 @@ Presents the recording editor for the given recording URL.
 @preconcurrency func recordingEditor(_ item: Binding<URL?>) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 When `item` is non-nil, the editor is presented for that URL. When the user dismisses, the framework sets `item` back to `nil`.
 

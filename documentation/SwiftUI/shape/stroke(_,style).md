@@ -22,11 +22,11 @@ nonisolated
 func stroke<S>(_ content: S, style: StrokeStyle) -> some View where S : ShapeStyle
 ```
 
-#### Return Value
+## Return Value
 
 A stroked shape.
 
-#### Discussion
+## Discussion
 
 The following example adds a dashed purple stroke to a `Capsule`:
 

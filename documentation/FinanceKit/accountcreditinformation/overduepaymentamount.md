@@ -16,7 +16,7 @@ The amount by which the account is overdue for the current period.
 let overduePaymentAmount: CurrencyAmount?
 ```
 
-#### Discussion
+## Discussion
 
 If not `nil` and `minimumNextPaymentAmount` is not `nil` then the `minimumNextPaymentAmount` has information about the next bill.
 

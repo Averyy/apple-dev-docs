@@ -25,7 +25,7 @@ func stopAdvertising()
 - (void) stopAdvertising;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method when you no longer want to advertise peripheral manager data.
 

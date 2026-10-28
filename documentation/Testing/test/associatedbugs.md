@@ -23,7 +23,7 @@ The set of bugs associated with this test.
 var associatedBugs: [Bug] { get }
 ```
 
-#### Discussion
+## Discussion
 
 For information on how to associate a bug with a test, see the documentation for [`Bug`](../bug.md).
 

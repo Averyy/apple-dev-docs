@@ -23,7 +23,7 @@ func supplementaryView(forElementKind elementKind: String, at indexPath: IndexPa
 - (UICollectionReusableView *) supplementaryViewForElementKind:(NSString *) elementKind atIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 The specified supplementary view, or `nil` if the view could not be found.
 

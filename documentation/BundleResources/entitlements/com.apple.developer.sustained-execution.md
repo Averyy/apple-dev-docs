@@ -17,7 +17,7 @@ A Boolean value that indicates whether your app performs consistently when the s
 - **Name**: `com.apple.developer.sustained-execution`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 Instruct the system to limit burst performance to your app by adding this entitlement. Enabling this entitlement tells the system to maintain a consistent performance state over your app’s lifecycle on applicable devices. This allows your app to assess the performance of its workload at any time, including immediately after launch. When your app includes the entitlement:
 

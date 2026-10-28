@@ -19,11 +19,11 @@ func CMSEncoderGetHasDetachedContent(_ cmsEncoder: CMSEncoder, _ detachedContent
 OSStatus CMSEncoderGetHasDetachedContent(CMSEncoderRef cmsEncoder, Boolean *detachedContentOut);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 This function returns the value specified in `CMSEncoderSetHasDetachedContent` if that function has been called; otherwise it returns `FALSE`.
 

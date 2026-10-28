@@ -25,7 +25,7 @@ init(value: Bool)
 - (NSNumber *) initWithBool:(BOOL) value;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSNumber` object containing `value`, treating it as a `BOOL`.
 

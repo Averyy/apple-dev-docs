@@ -19,7 +19,7 @@ var scrollerKnobStyle: NSScroller.KnobStyle { get set }
 @property NSScrollerKnobStyle scrollerKnobStyle;
 ```
 
-#### Discussion
+## Discussion
 
 See [`NSScroller.KnobStyle`](../nsscroller/knobstyle-swift.enum.md) for possible values.
 

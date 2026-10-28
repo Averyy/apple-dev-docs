@@ -25,11 +25,11 @@ func sel_registerName(_ str: UnsafePointer<CChar>) -> Selector
 extern SELsel_registerName(const char *str);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer of type [`SEL`](./sel.md) specifying the selector for the named method.
 
-#### Discussion
+## Discussion
 
 You must register a method name with the Objective-C runtime system to obtain the method’s selector before you can add the method to a class definition. If the method name has already been registered, this function simply returns the selector.
 

@@ -19,7 +19,7 @@ func hv_vm_config_create() -> hv_vm_config_t
 extern hv_vm_config_thv_vm_config_create();
 ```
 
-#### Return Value
+## Return Value
 
 A new virtual-machine configuration object. Release this object with `os_release` when no longer used.
 

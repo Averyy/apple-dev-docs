@@ -17,11 +17,11 @@ Converts the SSID’s raw data to a string representation using the specified en
 func stringRepresentation(encoding: String.Encoding = .utf8) -> String?
 ```
 
-#### Return Value
+## Return Value
 
 A string representation of the SSID, or `nil` if the raw data can’t be converted using the specified encoding.
 
-#### Discussion
+## Discussion
 
 Use this method to obtain a human-readable version of the network name. Because SSIDs don’t have a standardized text encoding, the conversion may fail if the raw data can’t be represented as text in the specified encoding.
 

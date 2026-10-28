@@ -10,7 +10,7 @@ framework: "Swift-Org/EmbeddedSwift"
 
 Learn what external system dependencies to expect from Embedded Swift compilations.
 
-#### Overview
+## Overview
 
 Embedded Swift minimizes external dependencies (that is, functions that need to be available at link-time), but they still exist. There are generally two categories of dependencies: (1) functions that the Swift standard library or Embedded Swift runtime need to call, and (2) functions/symbols that are implicitly added by LLVM and the compiler pipeline.
 

@@ -5,7 +5,7 @@
 
 Detect and respond to user activity information from Handoff or a complication.
 
-#### Overview
+## Overview
 
 SwiftUI provides the [`onContinueUserActivity(_:perform:)`](../SwiftUI/view/oncontinueuseractivity%28_,perform%29.md) modifier to handle incoming [`NSUserActivity`](../Foundation/nsuseractivity.md) objects. This replaces the WatchKit extension delegate’s [`handle(_:)`](./wkextensiondelegate/handle%28_%29-5pyj1.md) method.
 

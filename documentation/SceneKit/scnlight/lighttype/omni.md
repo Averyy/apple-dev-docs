@@ -25,7 +25,7 @@ static let omni: SCNLight.LightType
 extern SCNLightType const SCNLightTypeOmni;
 ```
 
-#### Discussion
+## Discussion
 
 Because an omnidirectional light casts equal illumination in all directions, the orientation of the node containing the light has no effect. Spotlight angle and shadow attributes do not apply to directional lights.
 

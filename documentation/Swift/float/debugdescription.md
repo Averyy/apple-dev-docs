@@ -21,7 +21,7 @@ A textual representation of the value, suitable for debugging.
 var debugDescription: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property has the same value as the `description` property, except that NaN values are printed in an extended format.
 

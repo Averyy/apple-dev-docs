@@ -25,7 +25,7 @@ static let chapterList: AVAssetTrack.AssociationType
 extern AVTrackAssociationType const AVTrackAssociationTypeChapterList;
 ```
 
-#### Discussion
+## Discussion
 
 The track containing the chapter information can be a text track, a video track, or a timed metadata track.
 

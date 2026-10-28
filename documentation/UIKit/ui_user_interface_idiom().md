@@ -24,7 +24,7 @@ func UI_USER_INTERFACE_IDIOM() -> UIUserInterfaceIdiom
 static UIUserInterfaceIdiom UI_USER_INTERFACE_IDIOM();
 ```
 
-#### Return Value
+## Return Value
 
 [`UIUserInterfaceIdiom.phone`](./uiuserinterfaceidiom/phone.md) if the device is an iPhone or iPod touch or [`UIUserInterfaceIdiom.pad`](./uiuserinterfaceidiom/pad.md) if the device is an iPad.
 

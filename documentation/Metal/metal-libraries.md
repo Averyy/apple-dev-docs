@@ -4,7 +4,7 @@
 
 Compile and manage Metal libraries from the command line.
 
-#### Overview
+## Overview
 
 By default, your Metal shaders compile as a format called *Metal intermediate representation* (Metal IR), a GPU-independent bytecode. At your app’s runtime, Metal compiles this bytecode to a GPU-specific binary for the host device. If you provide your shader functions as strings, they first compile to Metal IR on device, and then go through a secondary compilation for GPU.
 

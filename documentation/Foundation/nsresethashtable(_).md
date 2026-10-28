@@ -25,7 +25,7 @@ func NSResetHashTable(_ table: NSHashTable<AnyObject>)
 extern void NSResetHashTable(NSHashTable *table);
 ```
 
-#### Discussion
+## Discussion
 
 Releases each element but doesn’t deallocate `table`. This function is useful for preserving the capacity of `table`.
 

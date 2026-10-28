@@ -26,7 +26,7 @@ func showTextAtPoint(x: CGFloat, y: CGFloat, string: UnsafePointer<CChar>, lengt
 extern void CGContextShowTextAtPoint(CGContextRef c, CGFloat x, CGFloat y, const char *string, size_t length);
 ```
 
-#### Discussion
+## Discussion
 
 Core Graphics uses font data provided by the system to map each byte of the array through the encoding vector of the current font to obtain the glyph to display. Note that the font must have been set using [`selectFont(name:size:textEncoding:)`](./selectfont%28name,size,textencoding%29.md). Don’t use `CGContextShowTextAtPoint` in conjunction with [`setFont(_:)`](./setfont%28_%29.md).
 

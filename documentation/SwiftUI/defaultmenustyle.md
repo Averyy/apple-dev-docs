@@ -21,7 +21,7 @@ nonisolated
 struct DefaultMenuStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`automatic`](./menustyle/automatic.md) to construct this style.
 

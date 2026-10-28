@@ -19,7 +19,7 @@ var minValue: Double { get set }
 @property double minValue;
 ```
 
-#### Discussion
+## Discussion
 
 A horizontal slider sends the minimum value when the knob is all the way to the leading end of the bar. A vertical slider sends the minimum value when its knob is at the bottom.
 

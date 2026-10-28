@@ -20,7 +20,7 @@ The lifetime of the effect in seconds.
 var duration: TimeInterval
 ```
 
-#### Discussion
+## Discussion
 
 This value needs to be non-negative.
 

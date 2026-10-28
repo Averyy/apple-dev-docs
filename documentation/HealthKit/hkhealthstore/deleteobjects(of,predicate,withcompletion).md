@@ -28,7 +28,7 @@ func deleteObjects(of objectType: HKObjectType, predicate: NSPredicate) async th
 - (void) deleteObjectsOfType:(HKObjectType *) objectType predicate:(NSPredicate *) predicate withCompletion:(void (^)(BOOL success, NSUInteger deletedObjectCount, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Your app can delete only those objects that it has previously saved to the HealthKit store. If the user revokes sharing permission for an object type, you can no longer delete those objects. This method operates asynchronously. As soon as the delete operation is finished, it calls the completion block on a background queue.
 

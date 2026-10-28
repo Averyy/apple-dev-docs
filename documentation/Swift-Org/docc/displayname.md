@@ -20,7 +20,7 @@ Configures a symbol’s documentation page and any references to that page to sh
 @DisplayName(_ name: String, style: Style = conceptual)
 ```
 
-#### Overview
+## Overview
 
 Place the `DisplayName` directive within a `Metadata` directive to configure a symbol’s documentation page and any references to that page to show a custom name.
 
@@ -53,7 +53,7 @@ By default, a custom display name renders without a monospaced text style. To re
 
 > **Note**: Adding a `DisplayName` directive to a non-symbol page results in a warning.
 
-##### Containing Elements
+### Containing Elements
 
 The following items can include a display name element:
 

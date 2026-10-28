@@ -23,7 +23,7 @@ case overCurrentContext
 UIModalPresentationOverCurrentContext
 ```
 
-#### Discussion
+## Discussion
 
 Using this presentation style, the current view controller’s content is displayed over the view controller whose [`definesPresentationContext`](../uiviewcontroller/definespresentationcontext.md) property is [`true`](../../Swift/true.md). UIKit may walk up the view controller hierarchy to find a view controller that wants to define the presentation context. The views beneath the presented content are not removed from the view hierarchy when the presentation finishes. So if the presented view controller does not fill the screen with opaque content, the underlying content shows through.
 

@@ -9,9 +9,9 @@ Read client-specific information from the server.
 **Availability**:
 - VPP License Management 2.0+
 
-#### Discussion
+## Discussion
 
-##### Example Response
+### Example Response
 
 **Request**:
 

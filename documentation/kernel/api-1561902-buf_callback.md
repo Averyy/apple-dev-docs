@@ -15,11 +15,11 @@ Get the function set to be called when I/O on a buffer completes.
 void * buf_callback(buf_t bp);
 ```
 
-#### Return Value
+## Return Value
 
 0 for success, or errors from filesystem or device layers.
 
-#### Discussion
+## Discussion
 
 A function returned by buf_callback was originally set with buf_setcallback().
 

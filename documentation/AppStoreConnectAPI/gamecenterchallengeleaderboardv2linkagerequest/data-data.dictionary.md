@@ -15,7 +15,7 @@ The data structure that represents a challenge resource.
 object GameCenterChallengeLeaderboardV2LinkageRequest.Data
 ```
 
-#### Overview
+## Overview
 
 - id:
 - type:

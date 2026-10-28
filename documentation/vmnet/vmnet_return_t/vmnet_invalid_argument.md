@@ -18,7 +18,7 @@ case VMNET_INVALID_ARGUMENT
 VMNET_INVALID_ARGUMENT
 ```
 
-#### Discussion
+## Discussion
 
 Indicates failure due to an invalid argument.
 

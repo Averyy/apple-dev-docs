@@ -12,11 +12,11 @@ virtual bool merge(
  const OSDictionary *aDictionary);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the merge succeeds, `false` otherwise.
 
-#### Overview
+## Overview
 
 If there are keys in `aDictionary` that match keys in the receiving dictionary, then the objects in the receiver are replaced by those from `aDictionary`, and the replaced objects are released.
 

@@ -24,7 +24,7 @@ unowned(unsafe) var delegate: (any GLKViewControllerDelegate)? { get set }
 @property (nonatomic, assign, nullable) id<GLKViewControllerDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate is optional.
 

@@ -24,7 +24,7 @@ protocol CAAnimationDelegate : NSObjectProtocol
 @protocol CAAnimationDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 You can use an animation delegate to execute additional logic when an animation starts or ends. For example, you may want to remove a layer from its parent once a fade out animation has completed.
 

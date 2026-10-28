@@ -22,7 +22,7 @@ var isSmoothAutoFocusSupported: Bool { get }
 @property (nonatomic, readonly, getter=isSmoothAutoFocusSupported) BOOL smoothAutoFocusSupported;
 ```
 
-#### Discussion
+## Discussion
 
 The smooth focusing mode is available only on compatible devices. If this property’s value is [`false`](../../Swift/false.md), setting the value of [`isSmoothAutoFocusEnabled`](./issmoothautofocusenabled.md) to [`true`](../../Swift/true.md) raises an exception.
 

@@ -25,7 +25,7 @@ static let isAliasFileKey: URLResourceKey
 extern NSURLResourceKey const NSURLIsAliasFileKey;
 ```
 
-#### Discussion
+## Discussion
 
 The system returns the read-only value as a Boolean [`NSNumber`](../nsnumber.md) object.
 

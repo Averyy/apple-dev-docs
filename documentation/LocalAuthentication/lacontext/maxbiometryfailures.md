@@ -25,7 +25,7 @@ var maxBiometryFailures: NSNumber? { get set }
 @property (nonatomic, nullable) NSNumber * maxBiometryFailures;
 ```
 
-#### Discussion
+## Discussion
 
 Biometry lockout happens after too many wrong attempts, regardless of how you set this property.
 

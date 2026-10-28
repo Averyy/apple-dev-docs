@@ -22,7 +22,7 @@ func configurePersistentStoreCoordinator(for storeURL: URL, ofType fileType: Str
 - (BOOL) configurePersistentStoreCoordinatorForURL:(NSURL *) storeURL ofType:(NSString *) fileType modelConfiguration:(NSString *) configuration storeOptions:(NSDictionary *) storeOptions error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 You can override this method if you want customize the creation or loading of the document’s persistent store. For example, you can perform post-migration clean-up — if your app needs to migrate store data to use a new version of the managed object model, you can override this method to make additional modifications to the store after migration.
 

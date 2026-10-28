@@ -15,11 +15,11 @@ Gets the storage value stored at a specified index number.
 TaskStorageValue MPGetTaskStorageValue(TaskStorageIndex taskIndex);
 ```
 
-#### Return Value
+## Return Value
 
 The value stored at the specified index number. See the description of the `TaskStorageValue` data type.
 
-#### Discussion
+## Discussion
 
 Calling this function from within a task effectively reads a value in a two-dimensional array cross-referenced by task storage index value and the task ID.
 

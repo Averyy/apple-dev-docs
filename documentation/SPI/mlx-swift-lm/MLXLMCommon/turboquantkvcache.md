@@ -17,7 +17,7 @@ KV cache using TurboQuant compression with two-phase architecture:
 class TurboQuantKVCache
 ```
 
-#### Overview
+## Overview
 
 **Phase 1, Prefill** (L>1): Store raw K/V like KVCacheSimple. Zero overhead. **Transition**: On first decode call, compress entire raw cache in one batch. **Phase 2, Decode** (L=1): Encode 1 new token. Metal kernel scores against all compressed tokens. Zero dequantization.
 

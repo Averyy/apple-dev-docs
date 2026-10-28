@@ -23,7 +23,7 @@ func saveMachineStateTo(url saveFileURL: URL) async throws
 - (void) saveMachineStateToURL:(NSURL *) saveFileURL completionHandler:(void (^)(NSError *errorOrNil)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to save a paused VM to a file. You can use the contents of this file later to restore the state of the paused VM.
 

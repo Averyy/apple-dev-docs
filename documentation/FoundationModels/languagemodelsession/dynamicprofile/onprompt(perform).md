@@ -31,7 +31,7 @@ func onPrompt(perform action: nonisolated(nonsending) sending @escaping (Transcr
 
 - [Composing dynamic sessions with instructions and profiles](../../composing-dynamic-sessions-with-instructions-and-profiles.md)
 
-#### Discussion
+## Discussion
 
 When the `onPrompt` closure throws an error, the caller’s `respond` or `response` propagates that error.
 

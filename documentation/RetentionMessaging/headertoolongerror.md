@@ -15,7 +15,7 @@ An error that indicates the header text is too long.
 object HeaderTooLongError
 ```
 
-#### Discussion
+## Discussion
 
 When calling [`Upload Message`](./upload-message.md), provide a maximum of 66 characters.
 

@@ -24,7 +24,7 @@ case up
 UIImageOrientationUp
 ```
 
-#### Discussion
+## Discussion
 
 If an image is encoded with this orientation, then displayed by software unaware of orientation metadata, the image appears correctly “right side up”. That is, this orientation is an identity value.
 

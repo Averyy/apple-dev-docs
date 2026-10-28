@@ -21,7 +21,7 @@ Returns a Boolean value that indicates whether the rectangle contains any of the
 func contains(anyOf points: [Point3D]) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the rectangle contains any of the specified points.
 

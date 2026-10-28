@@ -23,11 +23,11 @@ func IORegistryEntryFromPath(_ mainPort: mach_port_t, _ path: UnsafePointer<CCha
 io_registry_entry_t IORegistryEntryFromPath(mach_port_t mainPort, const io_string_t path);
 ```
 
-#### Return Value
+## Return Value
 
 A handle to the IORegistryEntry witch was found with the path, to be released with IOObjectRelease by the caller, or MACH_PORT_NULL on failure.
 
-#### Discussion
+## Discussion
 
 This function parses paths to lookup registry entries. The path should begin with '<plane name>:' If there are characters remaining unparsed after an entry has been looked up, this is considered an invalid lookup. Paths are further documented in IORegistryEntry.h
 

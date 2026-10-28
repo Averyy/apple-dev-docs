@@ -14,7 +14,7 @@ A Boolean value that indicates whether the app has read-write access to the user
 - **Name**: `com.apple.security.personal-information.photos-library` (Photos Library)
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 To add this entitlement to your app, first enable the Hardened Runtime capability in Xcode. Then, under Resource Access, select Photos Library.
 

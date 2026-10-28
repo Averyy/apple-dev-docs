@@ -13,7 +13,7 @@
 kIOHIDQueueOptionsTypeEnqueueAll = 0x01
 ```
 
-#### Discussion
+## Discussion
 
 Force the IOHIDQueue to enqueue all events, relative or absolute, regardless of change.
 

@@ -18,11 +18,11 @@ Starts a new remote session with the specified attributes.
 static func start(attributes: Attributes) async throws -> RemoteMediaSession<Attributes>
 ```
 
-#### Return Value
+## Return Value
 
 A remote session instance.
 
-#### Discussion
+## Discussion
 
 This method registers a session. The attributes are encoded and sent to your app extension, which creates the actual session using your [`RemoteMediaSessionExtension`](../remotemediasessionextension.md) conformance.
 

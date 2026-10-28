@@ -22,11 +22,11 @@ class func remediateVerdict(withRemediationURLMapKey remediationURLMapKey: Strin
 + (NEFilterDataVerdict *) remediateVerdictWithRemediationURLMapKey:(NSString *) remediationURLMapKey remediationButtonTextMapKey:(NSString *) remediationButtonTextMapKey;
 ```
 
-#### Return Value
+## Return Value
 
 A `NEFilterDataVerdict` object.
 
-#### Discussion
+## Discussion
 
 When the Filter Data Provider returns this verdict from one of its data filtering methods, the system resolves the verdict as follows:
 

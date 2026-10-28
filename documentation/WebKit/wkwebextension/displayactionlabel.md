@@ -23,7 +23,7 @@ var displayActionLabel: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * displayActionLabel;
 ```
 
-#### Discussion
+## Discussion
 
 Returns `nil` if there was no default action label specified.
 

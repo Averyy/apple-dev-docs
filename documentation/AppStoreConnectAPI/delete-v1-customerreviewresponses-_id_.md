@@ -9,7 +9,7 @@ Delete a specific response you wrote to a customer review.
 **Availability**:
 - App Store Connect API 2.0+
 
-#### Discussion
+## Discussion
 
 Deletions of responses don’t take effect instantly in the App Store. Allow some time for the deletion to take effect.
 

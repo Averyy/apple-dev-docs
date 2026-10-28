@@ -23,7 +23,7 @@ Makes a newly allocated Core Foundation object eligible for collection.
 static idNSMakeCollectable(CFTypeRef cf);
 ```
 
-#### Discussion
+## Discussion
 
 This function is a wrapper for [`CFMakeCollectable`](../CoreFoundation/cfmakecollectable.md), but its return type is `id`—avoiding the need for casting when using Cocoa objects.
 

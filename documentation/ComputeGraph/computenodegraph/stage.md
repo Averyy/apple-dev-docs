@@ -21,7 +21,7 @@ An execution context within a compute node graph that groups related nodes into 
 struct Stage
 ```
 
-#### Overview
+## Overview
 
 Stages define the order and purpose of computation passes. In particle systems, stages correspond to phases like emission, initialization, simulation, and output.
 

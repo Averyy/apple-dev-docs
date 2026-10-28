@@ -20,13 +20,13 @@ class NSURLHandle
 @interface NSURLHandle : NSObject
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  [`NSURLHandle`](./nsurlhandle.md) is deprecated in macOS 10.4 and later. Use [`URLSession`](./urlsession.md) instead.
 
 A single [`NSURLHandle`](./nsurlhandle.md) can service multiple equivalent [`NSURL`](./nsurl.md) objects, but only if these URLs map to the same resource.
 
-##### Overview
+### Overview
 
 Cocoa provides private concrete subclasses to handle HTTP and file URL schemes. If you want to implement support for additional URL schemes, you would do so by creating a subclass of `NSURLHandle`. You can use `NSURL` and `NSURLHandle` to download from FTP sites without subclassing.
 

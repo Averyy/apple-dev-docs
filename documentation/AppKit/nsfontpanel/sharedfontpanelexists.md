@@ -19,7 +19,7 @@ class var sharedFontPanelExists: Bool { get }
 @property (class, readonly) BOOL sharedFontPanelExists;
 ```
 
-#### Discussion
+## Discussion
 
 The value is [`true`](../../Swift/true.md) if the shared Font panel has been created, and [`false`](../../Swift/false.md) if it hasn’t.
 

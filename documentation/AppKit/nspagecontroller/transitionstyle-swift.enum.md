@@ -19,7 +19,7 @@ enum TransitionStyle
 enum NSPageControllerTransitionStyle : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 These transition styles are independent of the delegate’s specification of book or history mode. It is perfectly reasonable to create a history style user interface using the book mode delegate methods. Simply set the transition style appropriately.
 

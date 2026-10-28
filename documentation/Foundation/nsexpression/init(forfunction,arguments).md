@@ -25,11 +25,11 @@ init(forFunction name: String, arguments parameters: [Any])
 + (NSExpression *) expressionForFunction:(NSString *) name arguments:(NSArray *) parameters;
 ```
 
-#### Return Value
+## Return Value
 
 A new expression that invokes the function `name` using the parameters in `parameters`.
 
-#### Discussion
+## Discussion
 
 The `name` parameter can be one of the following predefined functions.
 
@@ -104,7 +104,7 @@ BOOL ok = [result isEqual: [NSNumber numberWithInt: 60]]; // ok == YES
         [NSExpression expressionForConstantValue: [NSNumber numberWithInt: 10]], nil]];
 ```
 
-##### Special Considerations
+### Special Considerations
 
 This method throws an exception immediately if the selector is unknown; it throws at runtime if the parameters are incorrect.
 

@@ -13,7 +13,7 @@
 typedef struct SBCModePageFormatDevice SBCModePageFormatDevice;
 ```
 
-#### Discussion
+## Discussion
 
 Format Device Mode Page (PAGE CODE 0x03) format.
 

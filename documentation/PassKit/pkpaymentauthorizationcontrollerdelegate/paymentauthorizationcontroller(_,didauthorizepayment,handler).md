@@ -30,7 +30,7 @@ optional func paymentAuthorizationController(_ controller: PKPaymentAuthorizatio
 - (void) paymentAuthorizationController:(PKPaymentAuthorizationController *) controller didAuthorizePayment:(PKPayment *) payment handler:(void (^)(PKPaymentAuthorizationResult *result)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method after the payment request is authorized. You submit the payment information to your payment processor to authorize the transaction, and then call the handler.
 

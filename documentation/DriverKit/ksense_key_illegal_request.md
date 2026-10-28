@@ -16,7 +16,7 @@
 kSENSE_KEY_ILLEGAL_REQUEST
 ```
 
-#### Discussion
+## Discussion
 
 Device server detected an illegal request.
 

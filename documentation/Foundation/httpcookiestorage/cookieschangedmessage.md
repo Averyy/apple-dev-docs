@@ -21,7 +21,7 @@ A message a cookie storage instance sends when its cookies change.
 struct CookiesChangedMessage
 ```
 
-#### Overview
+## Overview
 
 Observe this message with the identifier [`cookiesChanged`](../notificationcenter/messageidentifier/cookieschanged.md), or specify its type directly to the `addObserver(of:for:using:)` method. The [`Subject`](../notificationcenter/mainactormessage/subject.md) of this message type is [`HTTPCookieStorage`](../httpcookiestorage.md).
 

@@ -9,7 +9,7 @@ Develop drivers for video capture and playback devices.
 **Availability**:
 - DriverKit 27.0+
 
-#### Overview
+## Overview
 
 The VideoDriverKit framework supports the development of DriverKit-based video extensions that communicate with [Core Media](../CoreMedia/CoreMedia.md). VideoDriverKit handles all of the necessary user client communication between CoreMedia and the driver extension, which eliminates the need to use `IOVideoFamily` kexts and [Device Abstraction Layer (DAL) Plug-Ins](../CoreMediaIO/device-abstraction-layer-dal-plug-ins.md).
 

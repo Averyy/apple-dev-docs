@@ -23,7 +23,7 @@ func requestDiagnosticCollection(for itemIdentifier: NSFileProviderItemIdentifie
 - (void) requestDiagnosticCollectionForItemWithIdentifier:(NSFileProviderItemIdentifier) itemIdentifier errorReason:(NSError *) errorReason completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method requests that the system prompt the person using the app, who may be experiencing an issue with sync in your provider. It asks their permission to collect and send diagnostic information to Apple for further analysis. Even if the person gives their approval, however, the prompt or the diagnostic collection might not occur, depending on system state and other throttling parameters.
 

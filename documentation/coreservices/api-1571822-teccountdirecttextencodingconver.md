@@ -15,11 +15,11 @@ Counts and returns the number of direct conversions currentlyconfigured in the T
 OSStatus TECCountDirectTextEncodingConversions(ItemCount *numberOfEncodings);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 
-#### Discussion
+## Discussion
 
 The number of direct conversions includes every instance ofa conversion. If different conversion plug-ins support the samedirect conversion, the direct conversion is counted more than once.
 

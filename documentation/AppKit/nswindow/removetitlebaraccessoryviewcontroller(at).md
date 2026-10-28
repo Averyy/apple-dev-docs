@@ -19,7 +19,7 @@ func removeTitlebarAccessoryViewController(at index: Int)
 - (void) removeTitlebarAccessoryViewControllerAtIndex:(NSInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 You can also use [`removeFromParent()`](../nsviewcontroller/removefromparent%28%29.md) to remove a specific title bar accessory view controller.
 

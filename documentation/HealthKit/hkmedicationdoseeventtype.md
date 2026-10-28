@@ -22,7 +22,7 @@ class HKMedicationDoseEventType
 @interface HKMedicationDoseEventType : HKSampleType
 ```
 
-#### Overview
+## Overview
 
 Represents a recorded log of a specific medication, represented by HKMedicationDoseEvent samples.
 

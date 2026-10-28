@@ -5,17 +5,17 @@
 
 Update your server-side code to use new features, and test your code against API changes.
 
-#### Overview
+## Overview
 
 App Store Connect API version 2.2 provides resources that enable you to automate actions you take in App Store Connect.
 
-##### New features
+### New features
 
 - Added support for getting information about and editing [Sandbox Testers](./sandbox-testers.md) and clearing [Sandbox Testers](./sandbox-testers.md) purchase history.
 - Expanded support around [App Encryption Declarations](./app-encryption-declarations.md), state and documents.
 - [Billing Grace Periods](./billing-grace-periods.md) now has additional parameters including 3 distinct durations.
 
-##### Deprecations
+### Deprecations
 
 - The [`List all In-App Purchases for an app v1`](./get-v1-apps-_id_-inapppurchases.md) endpoint is now deprecated and replaced with the [`List all In-App Purchases for an app`](./get-v1-apps-_id_-inapppurchasesv2.md) endpoint.
 

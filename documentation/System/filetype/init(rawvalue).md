@@ -21,7 +21,7 @@ Creates a strongly-typed file type from the raw C `mode_t`.
 init(rawValue: CInterop.Mode)
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This initializer stores the `rawValue` directly and **does not** mask the value with `S_IFMT`. If the supplied `rawValue` contains bits outside of the `S_IFMT` mask, the resulting `FileType` will not compare equal to constants like `.directory` and `.symbolicLink`, which may be unexpected.
 >

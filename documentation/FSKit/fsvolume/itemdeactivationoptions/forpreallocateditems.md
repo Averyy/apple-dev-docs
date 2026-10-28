@@ -19,7 +19,7 @@ static var forPreallocatedItems: FSVolume.ItemDeactivationOptions { get }
 FSItemDeactivationForPreallocatedItems
 ```
 
-#### Discussion
+## Discussion
 
 This option facilitates a sort of trim-on-close behavior. It is only meaningful for volumes that conform to [`FSVolume.PreallocateHandler`](../preallocatehandler.md).
 

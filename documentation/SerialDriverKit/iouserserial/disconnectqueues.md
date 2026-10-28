@@ -15,11 +15,11 @@ Releases the buffers that manage data moving to and from the device.
 virtual kern_return_t DisconnectQueues();
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 During the cleanup of your driver, call this method to disconnect the data queues you use to buffer data. If you provided the buffer objects at configuration time, the system releases its references to the objects you provided.
 

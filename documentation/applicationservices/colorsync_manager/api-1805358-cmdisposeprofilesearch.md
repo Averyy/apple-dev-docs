@@ -13,11 +13,11 @@ void CMDisposeProfileSearch (
 );
 ```
 
-#### Overview
+## Overview
 
 To set up a search, use the function [CMNewProfileSearch](./api-1805344-cmnewprofilesearch.md). To obtain a reference to a profile corresponding to a specific index in the list, use the function  [CMSearchGetIndProfile](./api-1805362-cmsearchgetindprofile.md). To obtain the file specification for a profile corresponding to a specific index in the list, use the function  [CMSearchGetIndProfileFileSpec](./api-1805365-cmsearchgetindprofilefilespec.md). To update the search result list, use the function  [CMUpdateProfileSearch](./api-1805356-cmupdateprofilesearch.md). 
 
-##### Version-Notes
+### Version-Notes
 
 This function is not recommended for use in ColorSync 2.5.
 

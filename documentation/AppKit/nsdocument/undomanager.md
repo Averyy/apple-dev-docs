@@ -19,7 +19,7 @@ var undoManager: UndoManager? { get set }
 @property (strong, nullable) NSUndoManager * undoManager;
 ```
 
-#### Discussion
+## Discussion
 
 When the [`hasUndoManager`](./hasundomanager.md) property is [`true`](../../Swift/true.md), accessing this property creates an [`UndoManager`](../../Foundation/undomanager.md) before returning it. If the [`hasUndoManager`](./hasundomanager.md) property is [`false`](../../Swift/false.md), the value of this property is `nil` by default. Assigning an undo manager to this property stores a reference to the object and automatically changes the [`hasUndoManager`](./hasundomanager.md) property to [`true`](../../Swift/true.md).
 

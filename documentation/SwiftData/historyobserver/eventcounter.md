@@ -21,7 +21,7 @@ A counter that increments each time the observer detects relevant changes.
 final var eventCounter: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 The observer increments this value when it processes a remote change notification that contains transactions matching its criteria. You can observe this property from a SwiftUI view to trigger a UI update.
 

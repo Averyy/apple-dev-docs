@@ -21,7 +21,7 @@ A variant that draws a slash through the symbol.
 static let slash: SymbolVariants
 ```
 
-#### Discussion
+## Discussion
 
 Use this variant with a call to the [`symbolVariant(_:)`](../view/symbolvariant%28_%29.md) modifier to draw symbols with a slash, for those symbols that have such a variant:
 

@@ -15,11 +15,11 @@ A suggested Target CPA for a new Maximize Conversions campaign, based on histori
 object TargetCpaSuggestion
 ```
 
-#### Discussion
+## Discussion
 
 The `TargetCpaSuggestion` object represents the recommended cost-per-acquisition goal returned by the Target CPA suggestions endpoint. Use this value as the starting Target CPA when creating a new [Campaigns Endpoints](./campaigns-endpoints.md) campaign.
 
-##### Example
+### Example
 
 ```json
 {

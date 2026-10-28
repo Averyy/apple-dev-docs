@@ -23,7 +23,7 @@ func playAudio() throws
 - (BOOL) playAndReturnError:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 Start or resume playback immediately.
 

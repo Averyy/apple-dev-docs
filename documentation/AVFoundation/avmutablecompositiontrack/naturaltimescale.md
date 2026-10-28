@@ -25,7 +25,7 @@ var naturalTimeScale: CMTimeScale { get set }
 @property (nonatomic) CMTimeScale naturalTimeScale;
 ```
 
-#### Discussion
+## Discussion
 
 If not set, the value is the natural time scale of the first non-empty edit, or 600 if there are no non-empty edits.
 

@@ -25,7 +25,7 @@ func hasMediaCharacteristic(_ mediaCharacteristic: AVMediaCharacteristic) -> Boo
 - (BOOL) hasMediaCharacteristic:(AVMediaCharacteristic) mediaCharacteristic;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the track references media with the specified characteristic; otherwise, [`false`](../../Swift/false.md).
 

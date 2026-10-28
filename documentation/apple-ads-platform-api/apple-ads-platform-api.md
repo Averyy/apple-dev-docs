@@ -9,7 +9,7 @@ Programmatically manage App Store and Apple Maps advertising campaigns through a
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Overview
+## Overview
 
 Apple Ads helps people discover and engage with your app or business. With the Apple Ads Platform API, you can build campaigns with budgets, and create ad groups that include keywords, audience refinement criteria, and scheduling. Through a single RESTful interface, you can also create and manage ads and creative assets, configure targeting and bidding, and monitor performance through reports, insights, and recommendations.
 

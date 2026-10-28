@@ -5,7 +5,7 @@
 
 Display standard controls in your app to edit the timeline of the currently playing media.
 
-#### Overview
+## Overview
 
 You use [`AVPlayerViewController`](./avplayerviewcontroller.md) to present the system video-player interface in your visionOS app. In addition to its primary role, [`AVPlayerViewController`](./avplayerviewcontroller.md) can also provide a media-trimming experience similar to the interface of QuickTime Player in macOS, like that below.
 
@@ -13,7 +13,7 @@ You use [`AVPlayerViewController`](./avplayerviewcontroller.md) to present the s
 
 When you enable this feature, people can specify a segment of the media timeline for display. This article describes how to adopt this feature in your app, and shows how to use AVFoundation to export the trimmed result.
 
-##### Determine whether the media supports trimming
+### Determine whether the media supports trimming
 
 Apps typically provide a user-interface element to put the player view controller into trimming mode. Because the player doesn’t support trimming certain media, such as HTTP Live Streaming or protected content, apps observe the state of the [`canBeginTrimming`](./avplayerviewcontroller/canbegintrimming.md) property to update the enabled state of their user interface accordingly. For example, the following code observes the state of the [`canBeginTrimming`](./avplayerviewcontroller/canbegintrimming.md) property and updates the state of a published property, which sets the appropriate enabled state in the UI:
 
@@ -39,7 +39,7 @@ var controller: AVPlayerViewController? {
 }
 ```
 
-##### Enable the trimming user interface
+### Enable the trimming user interface
 
 After you determine that the player view controller supports editing the current media’s timeline, call the player’s [`beginTrimming(completionHandler:)`](./avplayerviewcontroller/begintrimming%28completionhandler%29.md) method to enable its trimming interface. Call this method from an asynchronous context:
 
@@ -61,7 +61,7 @@ func startTrimming() async {
 
 This method returns a Boolean value that indicates whether the user pinched the Done button or the Cancel button. Pinching the Done button causes the view controller to update the values of the player item’s [`reversePlaybackEndTime`](../AVFoundation/avplayeritem/reverseplaybackendtime.md) and [`forwardPlaybackEndTime`](../AVFoundation/avplayeritem/forwardplaybackendtime.md) properties to match the trimmed selection.
 
-##### Export the trimmed media selection
+### Export the trimmed media selection
 
 A convenient way to export your trimmed selection is to use [`AVAssetExportSession`](../AVFoundation/avassetexportsession.md). This object provides a simple preset-based approach to transcode media in various formats. Create an instance of an export session by passing it the player item’s asset and an export preset. Additionally, configure its output URL and file type:
 

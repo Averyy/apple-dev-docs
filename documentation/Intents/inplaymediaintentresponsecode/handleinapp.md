@@ -27,7 +27,7 @@ INPlayMediaIntentResponseCodeHandleInApp
 
 - [Improving Siri Media Interactions and App Selection](../../SiriKit/improving-siri-media-interactions-and-app-selection.md)
 
-#### Discussion
+## Discussion
 
 Because the lifespan of an app extension is short, media playback should happen in your app, not in the Intents app extension. To handle media playback in your app while in the background, return [`INPlayMediaIntentResponseCode.handleInApp`](./handleinapp.md) as the response [`code`](../inplaymediaintentresponse/code.md).
 

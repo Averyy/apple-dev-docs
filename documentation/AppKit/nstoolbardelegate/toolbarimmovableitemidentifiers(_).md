@@ -23,11 +23,11 @@ optional func toolbarImmovableItemIdentifiers(_ toolbar: NSToolbar) -> Set<NSToo
 - (NSSet<NSString *> *) toolbarImmovableItemIdentifiers:(NSToolbar *) toolbar;
 ```
 
-#### Return Value
+## Return Value
 
 The set of item identifiers that people can’t remove from the toolbar or move to other locations in the toolbar. Return an empty set to let someone customize all toolbar items.
 
-#### Discussion
+## Discussion
 
 Implement this method in your delegate and return any items you don’t want people to remove or rearrange. If you don’t implement this method, the toolbar lets people rearrange and remove all toolbar items.
 

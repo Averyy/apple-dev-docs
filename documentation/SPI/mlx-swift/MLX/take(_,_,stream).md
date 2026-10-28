@@ -17,7 +17,7 @@ Take elements from flattened 1-D array.
 func take(_ array: MLXArray, _ indices: MLXArray, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-##### See Also
+### See Also
 
 - [`take(_:_:axis:stream:)`](./take%28_,_,axis,stream%29.md)
 - [`take(_:axis:stream:)`](./mlxarray/take%28_,axis,stream%29.md)

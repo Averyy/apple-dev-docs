@@ -25,7 +25,7 @@ func setEntities(_ entities: [NSEntityDescription], forConfigurationName configu
 - (void) setEntities:(NSArray<NSEntityDescription *> *) entities forConfiguration:(NSString *) configuration;
 ```
 
-#### Discussion
+## Discussion
 
 This method raises an exception if the receiver has been used by an object graph manager.
 

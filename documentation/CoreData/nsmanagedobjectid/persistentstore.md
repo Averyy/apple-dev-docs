@@ -25,7 +25,7 @@ weak var persistentStore: NSPersistentStore? { get }
 @property (weak, readonly, nullable) NSPersistentStore * persistentStore;
 ```
 
-#### Discussion
+## Discussion
 
 `nil` if the ID is for a newly-inserted object that has not yet been saved to a persistent store.
 

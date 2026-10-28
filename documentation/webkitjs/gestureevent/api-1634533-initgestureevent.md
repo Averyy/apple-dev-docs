@@ -33,7 +33,7 @@ void initGestureEvent(
 );
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to programmatically create a `GestureEvent` object.
 

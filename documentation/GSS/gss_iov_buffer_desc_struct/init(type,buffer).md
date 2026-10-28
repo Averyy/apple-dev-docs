@@ -17,7 +17,7 @@
 init(type: OM_uint32, buffer: gss_buffer_desc)
 ```
 
-#### Discussion
+## Discussion
 
 Initialize a new IOV buffer structure with the given configuration.
 

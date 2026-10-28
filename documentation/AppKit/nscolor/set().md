@@ -19,7 +19,7 @@ func set()
 - (void) set;
 ```
 
-#### Discussion
+## Discussion
 
 This method should be implemented in subclasses.
 

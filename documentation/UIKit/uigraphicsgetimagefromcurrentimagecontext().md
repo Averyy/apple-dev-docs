@@ -26,11 +26,11 @@ func UIGraphicsGetImageFromCurrentImageContext() -> UIImage?
 extern UIImage *UIGraphicsGetImageFromCurrentImageContext();
 ```
 
-#### Return Value
+## Return Value
 
 A image object containing the contents of the current bitmap graphics context.
 
-#### Discussion
+## Discussion
 
 You should call this function only when a bitmap-based graphics context is the current graphics context. If the current context is `nil` or was not created by a call to [`UIGraphicsBeginImageContext(_:)`](./uigraphicsbeginimagecontext%28_%29.md), this function returns `nil`.
 

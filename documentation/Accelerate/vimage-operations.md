@@ -4,7 +4,7 @@
 
 Apply image manipulation operations to vImage buffers.
 
-#### Overview
+## Overview
 
 A vImage function name includes the data type of the buffer it operates on. For example, [`vImageConvolve_Planar8(_:_:_:_:_:_:_:_:_:_:_:)`](./vimageconvolve_planar8%28_,_,_,_,_,_,_,_,_,_,_%29.md) works with 8-bit planar buffers, and [`vImageConvolve_ARGBFFFF(_:_:_:_:_:_:_:_:_:_:)`](./vimageconvolve_argbffff%28_,_,_,_,_,_,_,_,_,_%29.md) works with 32-bits-per-channel, four-channel interleaved buffers.
 

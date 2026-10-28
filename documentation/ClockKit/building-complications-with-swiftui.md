@@ -5,7 +5,7 @@
 
 Design the appearance of a graphic complication using SwiftUI.
 
-#### Overview
+## Overview
 
 ClockKit provides SwiftUI templates for all of the graphic complication families. These templates use a [`View`](../SwiftUI/view.md) instance to define some or all of the complication’s content. To access these templates, import both ClockKit and SwiftUI.
 
@@ -22,7 +22,7 @@ ClockKit provides a variety of templates for each family. Many of these mix Swif
 
 These templates provide a blank canvas that you can use to draw the entire complication.
 
-##### Present a View
+### Present a View
 
 ClockKit varies the SwiftUI view’s size based on the template. The SwiftUI template replaces a full color image provider with a SwiftUI view. The view has the same dimensions as the corresponding image.
 
@@ -32,13 +32,13 @@ Also, the template may mask the SwiftUI view to a circle or apply a corner radiu
 
 For additional details, see each template’s class reference document.
 
-##### Design a View
+### Design a View
 
 Use SwiftUI static views, such as text, shapes, or images, to create your complication’s content. You can also add render effects like blurs and gradients, but keep in mind that complications only have one or two frames in which to render the effect.
 
 Because complications show a snapshot of the apps data at a particular point in time, they don’t support features like animation. Additionally, if the user touches your complication, the system launches your app instead of passing the touch event to the SwiftUI views, so a complication can’t use interactive elements like buttons or switches.
 
-##### Support Tinted Views
+### Support Tinted Views
 
 Some watch faces let the user select a tint color that affects how the face displays graphical complications. Some watch faces use a complex set of colors; for example, the Solar Dial face sets both a foreground and background color, and the colors change based on the time of day.
 
@@ -102,7 +102,7 @@ In this example, if the system renders the watch face in [`ComplicationRendering
 
 ![An image of two watch faces with an extra-large circular complication. The first face displays the full-color version, while the second displays the tinted version with a gradient fill.](https://developer.apple.com/tutorials/images/com.apple.clockkit/media-3666655@2x.png)
 
-##### Preview the Complication
+### Preview the Complication
 
 Like other SwiftUI views, you can preview your complications as you design them. To enable previews:
 

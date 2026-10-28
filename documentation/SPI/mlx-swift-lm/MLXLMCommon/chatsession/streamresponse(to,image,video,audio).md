@@ -17,7 +17,7 @@ Produces a streaming response to a prompt.
 func streamResponse(to prompt: String, image: consuming UserInput.Image? = nil, video: consuming UserInput.Video? = nil, audio: consuming UserInput.Audio? = nil) -> AsyncThrowingStream<String, Error>
 ```
 
-#### Return Value
+## Return Value
 
 A stream of string chunks from the model
 

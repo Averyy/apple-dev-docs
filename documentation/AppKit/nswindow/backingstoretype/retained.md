@@ -19,7 +19,7 @@ case retained
 NSBackingStoreRetained
 ```
 
-#### Discussion
+## Discussion
 
 You should not use this mode. It combines the limitations of `NSBackingStoreNonretained` with the memory use of `NSBackingStoreBuffered`. The original NeXTSTEP implementation was an interesting compromise that worked well with fast memory mapped framebuffers on the CPU bus—something that hasn’t been in general use since around 1994. These tend to have performance problems.
 

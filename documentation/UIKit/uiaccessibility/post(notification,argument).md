@@ -24,7 +24,7 @@ static func post(notification: UIAccessibility.Notification, argument: Any?)
 extern void UIAccessibilityPostNotification(UIAccessibilityNotifications notification, id argument);
 ```
 
-#### Discussion
+## Discussion
 
 Your application might need to post accessibility notifications if you have user interface components that change very frequently or that appear and disappear.
 

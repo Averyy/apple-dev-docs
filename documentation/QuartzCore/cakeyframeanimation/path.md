@@ -24,7 +24,7 @@ var path: CGPath? { get set }
 @property (nullable) CGPathRef path;
 ```
 
-#### Discussion
+## Discussion
 
 For layer properties that contain a [`CGPoint`](../../CoreFoundation/cgpoint.md) data type, the path object you assign to this property defines the values for that property over the length of the animation. If you specify a value for this property, any data in the [`values`](./values.md) property is ignored.
 

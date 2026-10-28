@@ -21,7 +21,7 @@ var overviewButtonTitle: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * overviewButtonTitle;
 ```
 
-#### Discussion
+## Discussion
 
 When the title is `nil`, the button displays a system-provided title.
 

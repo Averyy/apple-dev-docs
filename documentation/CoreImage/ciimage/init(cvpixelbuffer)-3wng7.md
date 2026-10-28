@@ -24,7 +24,7 @@ init(cvPixelBuffer pixelBuffer: CVPixelBuffer)
 - (instancetype) initWithCVPixelBuffer:(CVPixelBufferRef) pixelBuffer;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized image object.
 

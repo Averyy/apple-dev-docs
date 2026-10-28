@@ -22,7 +22,7 @@ var isGeometricDistortionCorrectionEnabled: Bool { get set }
 @property (nonatomic, getter=isGeometricDistortionCorrectionEnabled) BOOL geometricDistortionCorrectionEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 When the device supports geometric distortion correction (GDC), the default value is [`true`](../../Swift/true.md).
 

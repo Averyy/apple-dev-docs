@@ -21,7 +21,7 @@ The generic product ID.
 let id: AdvancedCommerceProduct.ID
 ```
 
-#### Discussion
+## Discussion
 
 You create the generic product ID in App Store Connect when you set up your project to use the Advanced Commerce API. For more information, see [Setting up your project for Advanced Commerce API](../../AdvancedCommerceAPI/setting-up-your-project-for-advanced-commerce.md).
 

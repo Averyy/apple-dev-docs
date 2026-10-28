@@ -32,7 +32,7 @@ var isMe: Bool { get }
 @property (atomic, assign, readonly) BOOL isMe;
 ```
 
-#### Discussion
+## Discussion
 
 It’s essential that you set [`isMe`](./isme.md) to [`true`](../../Swift/true.md) for the current device user when creating an [`INPerson`](../inperson.md) object for use with [Messaging](../../SiriKit/messaging.md) intents. For example, if the sender of an outgoing message is also the user of the device, set [`isMe`](./isme.md) to [`true`](../../Swift/true.md). Similarly, when creating the recipient array for an incoming message—which should include the current device user—set [`isMe`](./isme.md) to [`true`](../../Swift/true.md) for the person in the recipient list that is the current device user, and set [`isMe`](./isme.md) to [`false`](../../Swift/false.md) for all other recipients.
 

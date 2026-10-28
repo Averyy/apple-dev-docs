@@ -5,7 +5,7 @@
 
 Test development postbacks for your advertised app without interacting with ads from a publisher app.
 
-#### Overview
+## Overview
 
 Use the AdAttributionKit Development Postbacks tool in the developer settings to create development postbacks for your advertised app. This tool allows you to test your AdAttributionKit functionality without interacting with ads from a publisher app or publishing your app in the App Store or an alternate marketplace. Test your app from various distribution methods, such as those you build with Xcode, ad-hoc, or TestFlight.
 
@@ -19,7 +19,7 @@ After enabling Developer Mode, access the developer settings on your test device
 
 ![An image of the iOS Developer Mode settings that shows a number of test settings, including the switch that enables development testing for AdAttributionKit.](https://developer.apple.com/tutorials/images/com.apple.AdAttributionKit/ad-attribution-testing@2x.png)
 
-#### Create a development postback
+## Create a development postback
 
 To create development postbacks for your app, type in your app’s bundle identifier and tap the Configure Development Postbacks button.
 
@@ -27,7 +27,7 @@ To create development postbacks for your app, type in your app’s bundle identi
 
 > **Note**: An app with the specified bundle identifier needs to exist on your device. The system doesn’t allow you to create development postbacks for an app that isn’t installed.
 
-##### Provide the server URL to process the postback
+### Provide the server URL to process the postback
 
 Provide the URL of the server to receive the development postbacks. AdAttributionKit sends the postback to this destination when the postback is eligible for transmission.
 
@@ -37,17 +37,17 @@ You can also tap Use Developer Postback URL to generate the full postback copy U
 
 > **Note**: It’s a best practice to use a server URL that’s different than the production server URL for testing. The testing URL can include a custom path that’s difficult to guess, such as a UUID that you can disable once the test is complete.
 
-##### Fill in postback properties
+### Fill in postback properties
 
 Configure each property of the postback in this section. You can create variations of all properties in the postback, including the view or click interaction type, conversion types, and one or three conversion windows.
 
 ![An image of the AdAttributionKit postback properties form that allows someone to set values that the framework sends in a development postback.](https://developer.apple.com/tutorials/images/com.apple.AdAttributionKit/postback-properties@2x.png)
 
-##### Add a conversion tag
+### Add a conversion tag
 
 Fill in a conversion tag if you’re testing the overlapping conversion windows feature. After you specify a conversion tag, you can update the postback by setting the [`conversionTag`](./postbackupdate/conversiontag.md) property and calling [`updateConversionValue(_:)`](./postback/updateconversionvalue%28_%29.md). For more information on overlapping conversion windows, see [Identifying conversion values with conversion tags](./conversion-tags.md).
 
-##### Adjust postback data tiers
+### Adjust postback data tiers
 
 AdAttributionKit uses Crowd Anonymity to control the amount of data the framework returns in postbacks in production flows. For each postback, adjust the amount of data that AdAttributionKit includes in the postback.
 
@@ -55,7 +55,7 @@ AdAttributionKit uses Crowd Anonymity to control the amount of data the framewor
 
 You can use this to test that your server logic is processing different postback data granularities correctly. For more information about Crowd Anonymity, see [Receiving postbacks in multiple conversion windows](./receiving-postbacks-in-multiple-conversion-windows.md).
 
-##### Examine the JWS of the development postback
+### Examine the JWS of the development postback
 
 Postbacks you create using the developer settings have notable differences from postbacks you create in a full end-to-end flow:
 
@@ -65,13 +65,13 @@ Postbacks you create using the developer settings have notable differences from 
 
 The system signs development postbacks with a different private key from production postbacks to help distinguish them. The steps for verifying development postback signatures are identical to the steps for production postbacks, with the exception of the key you use. For more information on the public key for development postbacks and verifying a postback’s JWS signature, see [Verifying a postback](./verifying-a-postback.md).
 
-#### Transmit eligible development postbacks on-demand
+## Transmit eligible development postbacks on-demand
 
 The device sends eligible postbacks automatically, which can take a few minutes. To send postbacks immediately, you can transmit eligible development postbacks on-demand by tapping the Transmit Development Postbacks button.
 
 AdAttributionKit treats a postback as eligible for transmission after its conversion window elapses or you lock it by calling the [`updateConversionValue(_:)`](./postback/updateconversionvalue%28_%29.md) API. The duration of the postback’s conversion window depends on whether you enable AdAttributionKit Developer Mode. For more information about Developer Mode, see [Testing ad attributions with Developer Mode](./testing-adattributionkit-with-developer-mode.md).
 
-#### Clear development postbacks
+## Clear development postbacks
 
 Tapping Clear Development Postbacks deletes all development postbacks currently in the system, allowing you to return the device to a known starting point.
 

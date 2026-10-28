@@ -25,7 +25,7 @@ static let socketRemotePortNumber: CFStreamPropertyKey!
 extern CFStreamPropertyKey const kCFStreamPropertySocketRemotePortNumber;
 ```
 
-#### Discussion
+## Discussion
 
 You cannot modify this value. You can read this value at any time.]
 

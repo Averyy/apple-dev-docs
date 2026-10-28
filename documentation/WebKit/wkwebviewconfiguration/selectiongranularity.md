@@ -24,7 +24,7 @@ var selectionGranularity: WKSelectionGranularity { get set }
 @property (nonatomic) WKSelectionGranularity selectionGranularity;
 ```
 
-#### Discussion
+## Discussion
 
 The value is one of the constants of the enumerated type [`WKSelectionGranularity`](../wkselectiongranularity.md). The default value is [`WKSelectionGranularity.dynamic`](../wkselectiongranularity/dynamic.md).
 

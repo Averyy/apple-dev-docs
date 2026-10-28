@@ -12,11 +12,11 @@ virtual IOReturn HandlePowerOn (
  void );
 ```
 
-#### Return Value
+## Return Value
 
 A valid IOReturn code.
 
-#### Overview
+## Overview
 
 Convenience method for a protocol service driver to handle a power on call (called on the way back up from sleep). Driver should perform any bus specific activity necessary to recover from power-on/wake from sleep (e.g. bus reset on ATAPI). This method is guaranteed to be called before application layer drivers have been awakened.
 

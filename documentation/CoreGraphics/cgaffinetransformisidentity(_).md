@@ -25,7 +25,7 @@ func CGAffineTransformIsIdentity(_ t: CGAffineTransform) -> Bool
 extern bool CGAffineTransformIsIdentity(CGAffineTransform t);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` if `t` is the identity transform, `false` otherwise.
 

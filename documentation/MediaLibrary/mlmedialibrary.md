@@ -22,7 +22,7 @@ class MLMediaLibrary
 @interface MLMediaLibrary : NSObject
 ```
 
-#### Overview
+## Overview
 
 The media library structure is defined by [`MLMediaSource`](./mlmediasource.md), [`MLMediaGroup`](./mlmediagroup.md), and [`MLMediaObject`](./mlmediaobject.md) classes. At the highest level, all content within a media library instance is categorized by media source. Conceptually, a media source represents a single app, such as iTunes or Aperture. Each source contains a hierarchy of media groups that originates from a root group. These groups consist of media objects—individual files containing a piece of media such as a photo, song, or movie. Only one copy of each object exists within a media library instance, but an object can be referenced by multiple groups from a single source. The structure of the group hierarchy is specific to each media source.
 

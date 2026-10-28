@@ -23,7 +23,7 @@ func makeIterator() -> FlattenSequence<Base>.Iterator
 
 Available when `Base` conforms to `Sequence` and `Base.Element` conforms to `Sequence`.
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(1).
 

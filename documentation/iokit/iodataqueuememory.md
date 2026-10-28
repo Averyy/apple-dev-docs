@@ -25,7 +25,7 @@ typedef struct _IODataQueueMemory {
 } IODataQueueMemory;
 ```
 
-#### Discussion
+## Discussion
 
 This struct is variable sized. The struct represents the data queue header information plus a pointer to the actual data queue itself. The size of the struct is the combined size of the header fields (3 * sizeof(UInt32)) plus the actual size of the queue region. This size is stored in the queueSize field.
 

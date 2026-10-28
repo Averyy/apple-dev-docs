@@ -21,7 +21,7 @@ The orientation of the text.
 static let orientation: NSAttributedString.TextLayoutSectionKey
 ```
 
-#### Discussion
+## Discussion
 
 An [`NSNumber`](../../nsnumber.md) object containing an [`NSLayoutManager.TextLayoutOrientation`](../../../AppKit/nslayoutmanager/textlayoutorientation.md) value. The default value is [`NSLayoutManager.TextLayoutOrientation.horizontal`](../../../AppKit/nslayoutmanager/textlayoutorientation/horizontal.md).
 

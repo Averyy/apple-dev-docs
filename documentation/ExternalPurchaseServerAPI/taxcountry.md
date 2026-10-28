@@ -15,7 +15,7 @@ The three-letter country code of the country that collects the taxes for the tra
 string taxCountry
 ```
 
-#### Discussion
+## Discussion
 
 Use three-letter ISO 3166-1 Alpha-3 country codes.
 

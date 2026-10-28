@@ -25,7 +25,7 @@ func beginEditing()
 - (void) beginEditing;
 ```
 
-#### Discussion
+## Discussion
 
 Override this method in a subclass to buffer or optimize a series of changes to the string’s characters or attributes. The string continues to buffer text until you call [`endEditing()`](./endediting%28%29.md), at which time it consolidates the changes and notifies observers.
 

@@ -19,7 +19,7 @@ var levelIndex: Int16 { get set }
 @property (nonatomic) int16_t levelIndex;
 ```
 
-#### Discussion
+## Discussion
 
 This value maps to the [`kCMHEVCTemporalLevelInfoKey_LevelIndex`](../../CoreMedia/kcmhevctemporallevelinfokey_levelindex.md) sample buffer attachment, and is `-1` if this information isn’t available.
 

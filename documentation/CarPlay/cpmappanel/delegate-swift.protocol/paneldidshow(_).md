@@ -21,7 +21,7 @@ optional func panelDidShow(_ panel: CPMapPanel)
 - (void) panelDidShow:(CPMapPanel *) panel;
 ```
 
-#### Discussion
+## Discussion
 
 Shortly after a panel appears in your CarPlay interface, the system calls this method to give you a chance to respond. Use this method to perform any additional tasks that require the panel to be visible. The system calls this method on your app’s main thread after any animations to display the panel.
 

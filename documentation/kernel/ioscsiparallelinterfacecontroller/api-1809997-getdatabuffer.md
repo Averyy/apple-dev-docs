@@ -12,7 +12,7 @@ IOMemoryDescriptor * GetDataBuffer (
  SCSIParallelTaskIdentifierparallelTask );
 ```
 
-#### Return Value
+## Return Value
 
 returns pointer to an IOMemoryDescriptor which represents the buffer.
 

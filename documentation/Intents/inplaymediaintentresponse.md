@@ -24,7 +24,7 @@ class INPlayMediaIntentResponse
 @interface INPlayMediaIntentResponse : INIntentResponse
 ```
 
-#### Overview
+## Overview
 
 Create an instance of this class when you are:
 

@@ -19,7 +19,7 @@ init(cgContext graphicsPort: CGContext, flipped initialFlippedState: Bool)
 + (NSGraphicsContext *) graphicsContextWithCGContext:(CGContextRef) graphicsPort flipped:(BOOL) initialFlippedState;
 ```
 
-#### Return Value
+## Return Value
 
 The created [`NSGraphicsContext`](../nsgraphicscontext.md) object, or `nil` if the object could not be created.
 

@@ -19,11 +19,11 @@ func client() -> (any IMKTextInput & NSObjectProtocol)!
 - (id<IMKTextInput,NSObject>) client;
 ```
 
-#### Return Value
+## Return Value
 
 The client object.
 
-#### Discussion
+## Discussion
 
 The client object conforms to the `IMKTextInput` protocol.
 

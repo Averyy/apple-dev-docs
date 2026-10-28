@@ -23,7 +23,7 @@ func update(_ model: inout LinearTimeSeriesForecaster<Scalar>.Transformer, with 
 
 Available when `Scalar` conforms to `MLShapedArrayScalar` and `BinaryFloatingPoint`.
 
-#### Discussion
+## Discussion
 
 Use [`TimeSeriesForecasterBatches`](../timeseriesforecasterbatches.md) to convert a shaped array of features into batches of windowed features and annotations. Here is an example of training a forecaster:
 

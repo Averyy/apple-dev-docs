@@ -19,7 +19,7 @@ class NSMenuItemBadge
 @interface NSMenuItemBadge : NSObject
 ```
 
-#### Overview
+## Overview
 
 You create a badge using an initializer or a predefined factory method, and then you assign it to the [`badge`](./nsmenuitem/badge.md) property of a [`NSMenuItem`](./nsmenuitem.md) for display.
 

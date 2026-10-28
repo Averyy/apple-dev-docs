@@ -19,7 +19,7 @@ enum NSColorRenderingIntent
 enum NSColorRenderingIntent : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 These constants are used by the property [`colorRenderingIntent`](./nsgraphicscontext/colorrenderingintent.md).
 

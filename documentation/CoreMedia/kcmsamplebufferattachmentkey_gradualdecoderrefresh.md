@@ -25,7 +25,7 @@ let kCMSampleBufferAttachmentKey_GradualDecoderRefresh: CFString
 extern CFStringRef const kCMSampleBufferAttachmentKey_GradualDecoderRefresh;
 ```
 
-#### Discussion
+## Discussion
 
 Sample buffers with this attachment may be used to identify the audio decoder refresh count.
 

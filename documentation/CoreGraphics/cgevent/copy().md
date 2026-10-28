@@ -20,7 +20,7 @@ func copy() -> CGEvent?
 extern CGEventRefCGEventCreateCopy(CGEventRef event);
 ```
 
-#### Return Value
+## Return Value
 
 A copy of the specified event. When you no longer need the copy, you should release it using the function `CFRelease`.
 

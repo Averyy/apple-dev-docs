@@ -26,7 +26,7 @@ case pvrtc_rgba_2bpp_srgb
 MTLPixelFormatPVRTC_RGBA_2BPP_sRGB
 ```
 
-#### Discussion
+## Discussion
 
 The only texture types that support this format include:
 

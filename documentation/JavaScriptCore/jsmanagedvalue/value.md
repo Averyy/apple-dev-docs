@@ -24,7 +24,7 @@ var value: JSValue! { get }
 @property (strong, readonly) JSValue * value;
 ```
 
-#### Discussion
+## Discussion
 
 If the JavaScript garbage collector removes the underlying value, this property becomes `nil`.
 

@@ -29,7 +29,7 @@ protocol MTLLibrary : NSObjectProtocol, Sendable
 - [Building a shader library by precompiling source files](./building-a-shader-library-by-precompiling-source-files.md)
 - [Logging shader debug messages](./logging-shader-debug-messages.md)
 
-#### Overview
+## Overview
 
 An [`MTLLibrary`](./mtllibrary.md) instance contains Metal shading language source code compiled during an app’s build process or at runtime from a text string.
 

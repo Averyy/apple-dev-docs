@@ -21,7 +21,7 @@ class func interfaceNames() -> [String]?
 + (NSArray<NSString *> *) interfaceNames;
 ```
 
-#### Return Value
+## Return Value
 
 An array of strings representing the names of the available Wi-Fi interfaces in the system. Any one of these names can be used with the [`interface(withName:)`](./interface%28withname%29.md) method to obtain a reference to the corresponding [`CWInterface`](../cwinterface.md) instance.
 

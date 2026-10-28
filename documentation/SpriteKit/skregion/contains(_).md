@@ -25,7 +25,7 @@ func contains(_ point: CGPoint) -> Bool
 - (BOOL) containsPoint:(CGPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the point is contained in the region; otherwise, [`false`](../../Swift/false.md).
 

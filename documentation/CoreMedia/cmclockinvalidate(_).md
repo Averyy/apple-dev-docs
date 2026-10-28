@@ -25,7 +25,7 @@ func CMClockInvalidate(_ clock: CMClock)
 extern void CMClockInvalidate(CMClockRef clock);
 ```
 
-#### Discussion
+## Discussion
 
 After invalidation, the clock returns errors from all APIs. Only the owner of the clock should call this function.
 

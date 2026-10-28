@@ -15,7 +15,7 @@ Ad entity that links an ad creative to an ad group for serving.
 object Ad
 ```
 
-#### Discussion
+## Discussion
 
 An `Ad` links a `Creative` to an `AdGroup` and is the atomic serving unit, the object that appears to users. To serve a different ad creative on an ad group, create a new ad rather than modifying an existing one.
 
@@ -25,7 +25,7 @@ When `systemStatus` is `NOT_RUNNING`, inspect `systemStatusReasons` for the caus
 
 Fields you can filter and sort on when querying ads are listed in [`Query Ads`](./post-ads-query.md).
 
-##### Example
+### Example
 
 ```json
 {

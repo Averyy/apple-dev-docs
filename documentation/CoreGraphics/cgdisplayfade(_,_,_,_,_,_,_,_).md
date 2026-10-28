@@ -20,11 +20,11 @@ func CGDisplayFade(_ token: CGDisplayFadeReservationToken, _ duration: CGDisplay
 extern CGError CGDisplayFade(CGDisplayFadeReservationToken token, CGDisplayFadeInterval duration, CGDisplayBlendFraction startBlend, CGDisplayBlendFraction endBlend, float redBlend, float greenBlend, float blueBlend, boolean_t synchronous);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. To interpret the result code, see [`CGError`](./cgerror.md).
 
-#### Discussion
+## Discussion
 
 Over the fade operation time interval, Quartz interpolates a blending coefficient between the starting and ending values given, applying a nonlinear (sine-based) bias term. Using this coefficient, Quartz blends the video output with the specified color.
 

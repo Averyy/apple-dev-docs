@@ -19,11 +19,11 @@ optional func selectionManager(_ selectionManager: NSTextSelectionManager, shoul
 - (BOOL) selectionManager:(NSTextSelectionManager *) selectionManager shouldBeginSelectionAtPoint:(NSPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 `YES` if selection can begin at the point; otherwise, `NO`.
 
-#### Discussion
+## Discussion
 
 Return `YES` to allow a text selection to begin at the specified point, `NO` to prevent it. If the delegate doesn’t implement this method, selection is always allowed. The selection manager calls this method when the user initiates a selection gesture at the given point in the coordinate system of the view containing the selection manager.
 

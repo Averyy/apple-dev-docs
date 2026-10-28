@@ -25,7 +25,7 @@ let kCGImagePropertyOrientation: CFString
 extern CFStringRef const kCGImagePropertyOrientation;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is a [`CFNumber`](../CoreFoundation/cfnumber.md). The value encodes the intended display orientation for the image according to the TIFF and EXIF specifications. See the [`CGImagePropertyOrientation`](./cgimagepropertyorientation.md) type for possible values and their meanings.
 

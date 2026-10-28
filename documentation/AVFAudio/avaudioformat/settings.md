@@ -25,7 +25,7 @@ var settings: [String : Any] { get }
 @property (nonatomic, readonly) NSDictionary<NSString *,id> * settings;
 ```
 
-#### Discussion
+## Discussion
 
 The settings dictionary doesn’t support all formats that [`AudioStreamBasicDescription`](../../CoreAudioTypes/audiostreambasicdescription.md) represents (the underlying implementation), in which case, this property returns `nil`.
 

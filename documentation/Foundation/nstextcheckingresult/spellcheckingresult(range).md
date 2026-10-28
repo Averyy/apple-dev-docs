@@ -25,7 +25,7 @@ class func spellCheckingResult(range: NSRange) -> NSTextCheckingResult
 + (NSTextCheckingResult *) spellCheckingResultWithRange:(NSRange) range;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an `NSTextCheckingResult` with the specified [`range`](./range.md) and a [`resultType`](./resulttype.md) of [`spelling`](./checkingtype/spelling.md).
 

@@ -24,7 +24,7 @@ func run(with commandQueue: any MTLCommandQueue, feeds: [MPSGraphTensor : MPSGra
 - (void) runWithMTLCommandQueue:(id<MTLCommandQueue>) commandQueue feeds:(MPSGraphTensorDataDictionary *) feeds targetOperations:(NSArray<MPSGraphOperation *> *) targetOperations resultsDictionary:(MPSGraphTensorDataDictionary *) resultsDictionary;
 ```
 
-#### Discussion
+## Discussion
 
 It also ensures all target operations also executed. This call blocks until execution has completed.
 

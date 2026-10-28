@@ -19,7 +19,7 @@ func identifier(at index: Int) -> String!
 - (NSString *) identifierAtIndex:(NSUInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 If the `index` argument is out of bounds, this method raises an exception.
 

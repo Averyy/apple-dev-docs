@@ -22,7 +22,7 @@ init(by: Value, timing: AnimationTimingFunction = .linear, isAdditive: Bool = fa
 
 Available when `Value` is `Transform`.
 
-#### Discussion
+## Discussion
 
 `defaultSource` → `defaultSource + by`
 

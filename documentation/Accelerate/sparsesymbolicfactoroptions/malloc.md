@@ -25,11 +25,11 @@ var malloc: (Int) -> UnsafeMutableRawPointer?
 void *(*)(unsigned long) malloc;
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to newly allocated memory, or `nil` if allocation fails.
 
-#### Discussion
+## Discussion
 
 The system frees memory through the [`free`](./free.md) callback. If this function pointer is `nil`, the system uses `malloc()`.
 

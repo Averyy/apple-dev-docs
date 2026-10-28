@@ -28,11 +28,11 @@ init(device: any MTLDevice)
 
 - [The MPSKernel Class](../the-mpskernel-class.md)
 
-#### Return Value
+## Return Value
 
 An initialized kernel object.
 
-#### Discussion
+## Discussion
 
 This method fails if the device is not supported. Query the [`MPSSupportsMTLDevice(_:)`](../mpssupportsmtldevice%28_%29.md) function to determine whether the device is supported.
 

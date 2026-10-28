@@ -22,7 +22,7 @@ func stopScanning()
 
 - [Scanning data with the camera](../scanning-data-with-the-camera.md)
 
-#### Discussion
+## Discussion
 
 This method removes all items from the [`recognizedItems`](./recognizeditems.md) property.
 

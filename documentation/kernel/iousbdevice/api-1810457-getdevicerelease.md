@@ -10,7 +10,7 @@ virtual UInt16 GetDeviceRelease(
  void);
 ```
 
-#### Overview
+## Overview
 
 returns the DeviceRelease information
 

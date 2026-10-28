@@ -12,11 +12,11 @@ Delete a user’s account from a device.
 - Mac Catalyst 9.3+
 - macOS 10.13+
 
-#### Discussion
+## Discussion
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Error codes
+### Error codes
 
 An error response uses one of the following error codes:
 
@@ -25,7 +25,7 @@ An error response uses one of the following error codes:
 - `12073`: The user has data to sync and ForceDeletion is false or unspecified.
 - `12074`: Unable to delete the user. In macOS, this error code also returns for an attempt to delete the last administrator account.
 
-##### Command availability
+### Command availability
 
 |  |  |
 | --- | --- |
@@ -35,7 +35,7 @@ An error response uses one of the following error codes:
 | Allowed in user enrollment | N/A |
 | Required access right | N/A |
 
-##### Example request and response
+### Example request and response
 
 **Request**:
 

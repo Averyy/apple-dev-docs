@@ -24,11 +24,11 @@ func SCCopyLastError() -> CFError
 CFErrorRefSCCopyLastError();
 ```
 
-#### Return Value
+## Return Value
 
 The most recent status or error code generated as the result of calling a function defined by the System Configuration framework. The code is represented by a Core Foundation `CFErrorRef` opaque type.
 
-#### Discussion
+## Discussion
 
 Call the [`CFErrorGetCode(_:)`](../CoreFoundation/cferrorgetcode%28_%29.md) function on the returned object to get the underlying error-code integer. See [Status and Error Codes](./api-1518026-status-and-error-codes.md) for descriptions of these codes. For more on `CFErrorRef` objects, see [`CFError`](../CoreFoundation/cferror.md).
 

@@ -18,7 +18,7 @@ The object that the framework passes to the monitor’s callback handler upon re
 @interface CLMonitoringEvent : NSObject
 ```
 
-#### Overview
+## Overview
 
 Instances of `CLMonitoringEvent` contain detailed information about an event in the monitoring of a [`CLCondition`](./clcondition-swift.protocol.md) by a [`CLMonitor`](./clmonitor-2r51v.md).
 

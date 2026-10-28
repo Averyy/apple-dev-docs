@@ -20,7 +20,7 @@ init(event: CareStoreFetchedResult<OCKAnyEvent>, onError: @escaping (OCKStoreErr
 
 Available when `Header` is `_SimpleTaskViewHeader`.
 
-#### Discussion
+## Discussion
 
 This view displays a button to toggle completion for the event.
 

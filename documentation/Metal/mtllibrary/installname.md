@@ -25,7 +25,7 @@ var installName: String? { get }
 @property (readonly, nullable) NSString * installName;
 ```
 
-#### Discussion
+## Discussion
 
 Metal ignores this property if the library’s [`type`](./type.md) isn’t  [`MTLLibraryType.dynamic`](../mtllibrarytype/dynamic.md). Otherwise this property is a non-`nil` value specifying a file system path to the dynamic library.
 

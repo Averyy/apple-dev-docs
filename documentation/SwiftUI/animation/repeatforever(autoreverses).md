@@ -21,11 +21,11 @@ Repeats the animation for the lifespan of the view containing the animation.
 func repeatForever(autoreverses: Bool = true) -> Animation
 ```
 
-#### Return Value
+## Return Value
 
 An animation that continuously repeats.
 
-#### Discussion
+## Discussion
 
 Use this method to repeat the animation until the instance of the view no longer exists, or the view’s explicit or structural identity changes. For example, the following code continuously rotates a gear symbol for the lifespan of the view.
 

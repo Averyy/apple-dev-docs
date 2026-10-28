@@ -22,7 +22,7 @@ func dismiss(animated: Bool)
 - (void) dismissAnimated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 This method dismisses a picker that you previously presented. When using this method to dismiss a picker, the picker does not call the [`printerPickerControllerWillDismiss(_:)`](../uiprinterpickercontrollerdelegate/printerpickercontrollerwilldismiss%28_%29.md) or [`printerPickerControllerDidDismiss(_:)`](../uiprinterpickercontrollerdelegate/printerpickercontrollerdiddismiss%28_%29.md) methods of your delegate object.
 

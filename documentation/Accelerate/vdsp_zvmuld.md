@@ -21,7 +21,7 @@ Multiplies a double-precision complex vector by the optionally conjugate of anot
 extern void vDSP_zvmulD(const DSPDoubleSplitComplex *__A, vDSP_Stride __IA, const DSPDoubleSplitComplex *__B, vDSP_Stride __IB, const DSPDoubleSplitComplex *__C, vDSP_Stride __IC, vDSP_Length __N, int __Conjugate);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the products of the first `N` complex (optionally conjugates) of `A` by the corresponding complex elements of `B`, writing the result to `C`:
 

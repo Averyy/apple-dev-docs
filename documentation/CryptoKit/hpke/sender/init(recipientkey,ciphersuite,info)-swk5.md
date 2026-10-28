@@ -21,7 +21,7 @@ Creates a sender in base mode.
 init<PK>(recipientKey: PK, ciphersuite: HPKE.Ciphersuite, info: Data) throws where PK : HPKEKEMPublicKey
 ```
 
-#### Discussion
+## Discussion
 
 The `Sender` encrypts messages in base mode with a symmetric encryption key it derives using a key derivation function (KDF). The KDF uses the key schedule data in `info` as input to generate the key. The `Sender` encapsulates the derived key using the recipient’s public key. You access the encapsulated key using [`encapsulatedKey`](./encapsulatedkey.md).
 

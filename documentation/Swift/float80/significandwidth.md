@@ -15,7 +15,7 @@ The number of bits required to represent the value’s significand.
 var significandWidth: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 If this value is a finite nonzero number, `significandWidth` is the number of fractional bits required to represent the value of `significand`; otherwise, `significandWidth` is -1. The value of `significandWidth` is always -1 or between zero and `significandBitCount`. For example:
 

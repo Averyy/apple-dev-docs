@@ -21,7 +21,7 @@ protocol Delegate : NSObjectProtocol
 @protocol CPMapPanelDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 If you need to know when the system shows or hides the map panel, implement this protocol in a custom object and assign it to the [`delegate`](./delegate-swift.property.md) property of your [`CPMapPanel`](../cpmappanel.md) object. The system calls the methods of your object after it shows or hides the panel.
 

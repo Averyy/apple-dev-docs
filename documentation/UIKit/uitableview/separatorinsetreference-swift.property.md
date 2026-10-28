@@ -23,7 +23,7 @@ var separatorInsetReference: UITableView.SeparatorInsetReference { get set }
 @property (nonatomic) UITableViewSeparatorInsetReference separatorInsetReference;
 ```
 
-#### Discussion
+## Discussion
 
 Use the value of this property to determine how the value in the separatorInset property is interpreted for cells. The default value of this property is [`UITableView.SeparatorInsetReference.fromCellEdges`](./separatorinsetreference-swift.enum/fromcelledges.md).
 

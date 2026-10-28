@@ -24,11 +24,11 @@ func configurationWithoutPointSizeAndWeight() -> Self
 - (instancetype) configurationWithoutPointSizeAndWeight;
 ```
 
-#### Return Value
+## Return Value
 
 A new symbol configuration object without the specified information.
 
-#### Discussion
+## Discussion
 
 This method sets the weight value in the new object to [`UIImage.SymbolWeight.unspecified`](../symbolweight/unspecified.md) and removes the point-size information.
 

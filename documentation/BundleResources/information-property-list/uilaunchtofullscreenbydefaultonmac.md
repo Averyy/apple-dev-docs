@@ -14,7 +14,7 @@ A Boolean value that indicates whether to launch your iPad app in full-screen mo
 - **Name**: `UILaunchToFullScreenByDefaultOnMac`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 To launch your iPad app in full-screen mode when running in macOS, add this key to your app’s `Info.plist` file and set its value to [`true`](../../Swift/true.md). State restoration can override this behavior if the person using your app exits full-screen mode before quitting the app.
 

@@ -25,7 +25,7 @@ func synchronousRemoteObjectProxyWithErrorHandler(_ handler: @escaping (any Erro
 - (id) synchronousRemoteObjectProxyWithErrorHandler:(void (^)(NSError *error)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 The error handler block and reply block will be invoked on the calling thread before the message to the proxy returns, instead of on the queue for the connection.
 

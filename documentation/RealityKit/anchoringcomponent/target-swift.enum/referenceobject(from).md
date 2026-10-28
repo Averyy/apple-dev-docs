@@ -20,7 +20,7 @@ An anchor point attached to an object that matches the reference of an object an
 case referenceObject(from: AnchoringComponent.ObjectAnchoringSource)
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: macOS and tvOS apps don’t track this type of anchor.
 

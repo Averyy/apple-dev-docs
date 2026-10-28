@@ -19,7 +19,7 @@ The untransformed color for background views.
 var baseBackgroundColor: UIColor? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The button configuration may transform the base color before applying it to background elements.
 

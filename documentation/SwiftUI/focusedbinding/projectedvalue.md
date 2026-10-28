@@ -21,7 +21,7 @@ A binding to the optional value.
 var projectedValue: Binding<Value?> { get }
 ```
 
-#### Discussion
+## Discussion
 
 The unwrapped value is `nil` when no focused view hierarchy has published a corresponding binding.
 

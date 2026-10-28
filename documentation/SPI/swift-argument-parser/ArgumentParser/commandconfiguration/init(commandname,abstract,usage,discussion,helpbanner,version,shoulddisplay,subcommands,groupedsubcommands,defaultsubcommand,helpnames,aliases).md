@@ -14,7 +14,7 @@ Creates the configuration for a command.
 ## Declaration
 
 ```swift
-init(commandName: String? = nil, abstract: String = "", usage: String? = nil, discussion: String = "", helpBanner: String? = nil, version: String = "", shouldDisplay: Bool = true, subcommands ungroupedSubcommands: [any ParsableCommand.Type] = [], groupedSubcommands: [CommandGroup] = [], defaultSubcommand: (any ParsableCommand.Type)? = nil, helpNames: NameSpecification? = nil, aliases: [String] = [])
+init(commandName: String? = nil, abstract: String = "", usage: String? = nil, discussion: String = "", helpBanner: String? = nil, version: String = "", shouldDisplay: Bool = true, subcommands ungroupedSubcommands: [ParsableCommand.Type] = [], groupedSubcommands: [CommandGroup] = [], defaultSubcommand: ParsableCommand.Type? = nil, helpNames: NameSpecification? = nil, aliases: [String] = [])
 ```
 
 ## Parameters

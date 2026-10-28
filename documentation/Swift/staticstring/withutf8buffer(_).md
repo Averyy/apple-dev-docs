@@ -21,11 +21,11 @@ Invokes the given closure with a buffer containing the static string’s UTF-8 c
 func withUTF8Buffer<R>(_ body: (UnsafeBufferPointer<UInt8>) -> R) -> R
 ```
 
-#### Return Value
+## Return Value
 
 The return value, if any, of the `body` closure.
 
-#### Discussion
+## Discussion
 
 This method works regardless of whether the static string stores a pointer or a single Unicode scalar value.
 

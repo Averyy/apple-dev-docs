@@ -24,7 +24,7 @@ case sigmoid
 PHASECurveTypeSigmoid
 ```
 
-#### Discussion
+## Discussion
 
 Also known as an *s-curve*, the sigmoid curve’s path movement is slow at either end and quick in the middle.
 

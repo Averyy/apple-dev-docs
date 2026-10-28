@@ -19,11 +19,11 @@ func hv_vcpu_set_sme_state(_ vcpu: hv_vcpu_t, _ sme_state: UnsafePointer<hv_vcpu
 extern hv_return_t hv_vcpu_set_sme_state(hv_vcpu_t vcpu, const hv_vcpu_sme_state_t *sme_state);
 ```
 
-#### Return Value
+## Return Value
 
 `HV_SUCCESS` on success, `HV_UNSUPPORTED` if SME is not supported on the platform, or an error code otherwise.
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  You need to call this on the owning thread
 

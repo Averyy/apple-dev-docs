@@ -23,7 +23,7 @@ func pause()
 - (void) pauseInteractiveTransition;
 ```
 
-#### Discussion
+## Discussion
 
 This is a convenience method that calls through to the [`pauseInteractiveTransition()`](../uiviewcontrollercontexttransitioning/pauseinteractivetransition%28%29.md) method of the context object. You might call this method so that you can begin driving an animation interactively. For example, when the user’s finger touches the screen, your gesture handler would call this method to stop the animation and then use changes to the touch location to update the [`percentComplete`](./percentcomplete.md) property.
 

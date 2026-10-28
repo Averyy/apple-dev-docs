@@ -25,11 +25,11 @@ func bestMoveForActivePlayer() -> (any GKGameModelUpdate)?
 - (id<GKGameModelUpdate>) bestMoveForActivePlayer;
 ```
 
-#### Return Value
+## Return Value
 
 An object describing the move found by the strategist.
 
-#### Discussion
+## Discussion
 
 This method looks ahead at the possible moves for the current player (as specified by the [`activePlayer`](../gkgamemodel/activeplayer.md) of the strategist’s game model), as well as possible future moves by other players on subsequent turns, and examines the state of the game model resulting from each possible move. Your game model class rates the desirability of its current state, allowing the strategist to find the sequence of future moves that results in the best outcome for the current player and to return the first move in that sequence.
 

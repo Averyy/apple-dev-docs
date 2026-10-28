@@ -16,7 +16,7 @@ The updated list of available shipping methods that results from the user’s ch
 sequence <ApplePayShippingMethod> newShippingMethods;
 ```
 
-#### Discussion
+## Discussion
 
 Supply an updated list of shipping methods if the user’s change in the payment method caused any changes in the shipping methods.
 

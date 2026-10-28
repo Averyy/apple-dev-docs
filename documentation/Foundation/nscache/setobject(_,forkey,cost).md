@@ -25,7 +25,7 @@ func setObject(_ obj: ObjectType, forKey key: KeyType, cost g: Int)
 - (void) setObject:(ObjectType) obj forKey:(KeyType) key cost:(NSUInteger) g;
 ```
 
-#### Discussion
+## Discussion
 
 The `cost` value is used to compute a sum encompassing the costs of all the objects in the cache. When memory is limited or when the total cost of the cache eclipses the maximum allowed total cost, the cache could begin an eviction process to remove some of its elements. However, this eviction process is not in a guaranteed order. As a consequence, if you try to manipulate the cost values to achieve some specific behavior, the consequences could be detrimental to your program. Typically, the obvious cost is the size of the value in bytes. If that information is not readily available, you should not go through the trouble of trying to compute it, as doing so will drive up the cost of using the cache. Pass in `0` for the cost value if you otherwise have nothing useful to pass, or simply use the `setObject:forKey:` method, which does not require a `cost` value to be passed in.
 

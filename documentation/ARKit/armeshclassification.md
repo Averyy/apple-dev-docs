@@ -20,7 +20,7 @@ enum ARMeshClassification
 enum ARMeshClassification : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 When you enable [`sceneReconstruction`](./arworldtrackingconfiguration/scenereconstruction.md) on a world-tracking configuration, ARKit provides several mesh anchors ([`ARMeshAnchor`](./armeshanchor.md)) that collectively estimate the shape of the physical environment. Within that model of the real world, ARKit may identify specific objects, like seats, windows, tables, or walls. ARKit shares that information by exposing one or more [`ARMeshClassification`](./armeshclassification.md) instances in a mesh’s [`geometry`](./armeshanchor/geometry.md) property.
 

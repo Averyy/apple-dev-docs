@@ -10,7 +10,7 @@ framework: "Swift-Org/docc"
 
 Add reference documentation to your symbols that explains how to use them.
 
-#### Overview
+## Overview
 
 A common characteristic of a well-crafted API is that it’s easy to read and practically self-documenting. However, an API alone can’t convey important information like clear documentation does, such as:
 
@@ -29,7 +29,7 @@ mutating public func eat(_ food: Food, quantity: Int) throws -> Int {
 
 To help the people who use your API have a better understanding of it, follow the steps in the sections below to add documentation comments to the public symbols in your project. DocC compiles those comments and generates formatted documentation that you share with your users.
 
-##### Add a Basic Description for Each Symbol
+### Add a Basic Description for Each Symbol
 
 The first step toward writing great documentation is to add single-sentence abstracts or summaries, and where necessary, *Discussion* sections, or additional details about a symbol and its use, to each of your framework’s public symbols. Discussion sections are areas in documentation that provide additional detail about a symbol and its usage.
 
@@ -67,7 +67,7 @@ Any paragraphs you add appear below the Discussion header in the symbol referenc
 
 When writing content for a Discussion section, use documentation markup. For more information, see [Formatting Your Documentation Content](./formatting-your-documentation-content.md).
 
-##### Describe the Parameters of a Method
+### Describe the Parameters of a Method
 
 For methods that take parameters, document those parameters directly below the summary, or the Discussion section if you prefer. Describe each parameter in isolation. Discuss its purpose and, where necessary, the range of acceptable values.
 
@@ -107,7 +107,7 @@ In languages like Swift where parameters can have both external names (also call
 
 It can be hard to understand what one of these external names refer to without the context of the argument, and its variable name, at the call site.
 
-###### Describe a Parameter in More Detail
+#### Describe a Parameter in More Detail
 
 Some parameters can benefit from more than one paragraph of documentation. For example:
 
@@ -138,7 +138,7 @@ Like other multi-paragraph list items, this indentation can sometimes be more cl
 ///     This is a another paragraph of the parameter's description.
 ```
 
-##### Describe the Return Value of a Method
+### Describe the Return Value of a Method
 
 For methods that return a value, include a Returns section in your documentation comment to describe the returned value. If the return value is optional, provide information about when the method returns `nil`.
 
@@ -173,7 +173,7 @@ If the return value description spans more than one paragraph you need to indent
 
 > **Note**: DocC supports a single Returns section. Including more than one section results in undefined behavior.
 
-##### Describe the Thrown Errors of a Method
+### Describe the Thrown Errors of a Method
 
 If a method can throw an error, add a Throws section to your documentation comment. Explain the circumstances that cause the method to throw an error, and list the types of possible errors.
 
@@ -190,7 +190,7 @@ mutating public func eat(_ food: Food, quantity: Int) throws -> Int {
 
 > **Note**: DocC supports a single Throws section. Including more than one section results in undefined behavior.
 
-##### Create a Richer Experience for Your Symbol Documentation
+### Create a Richer Experience for Your Symbol Documentation
 
 A documentation comment that includes each of the previously mentioned sections provides much more information to developers than a single-line source comment, as the following example shows:
 

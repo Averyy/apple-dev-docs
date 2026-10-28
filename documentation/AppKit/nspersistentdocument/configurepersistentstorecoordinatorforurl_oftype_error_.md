@@ -17,11 +17,11 @@ Configures the receiver’s persistent store coordinator for a given URL and doc
 - (BOOL) configurePersistentStoreCoordinatorForURL:(NSURL *) url ofType:(NSString *) fileType error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the method completes successfully, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method is invoked automatically when an existing document is opened. You override this method to customize creation of a persistent store for a given document or store type. You can retrieve the persistent store coordinator with the following code:
 

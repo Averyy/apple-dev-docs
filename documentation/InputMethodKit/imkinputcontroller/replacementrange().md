@@ -19,11 +19,11 @@ func replacementRange() -> NSRange
 - (NSRange) replacementRange;
 ```
 
-#### Return Value
+## Return Value
 
 The range to replace.
 
-#### Discussion
+## Discussion
 
 This method is called by [`updateComposition()`](./updatecomposition%28%29.md) to obtain the range in the client  document where marked text should be placed. The default implementation returns an `NSRange` object whose location and length are `NSNotFound`. That indicates that the marked text should be placed at the current insertion point. Input methods that insert marked text somewhere other than at the current insertion point should override this method.
 

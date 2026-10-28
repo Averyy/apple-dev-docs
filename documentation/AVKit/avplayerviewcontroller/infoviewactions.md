@@ -25,7 +25,7 @@ var infoViewActions: [UIAction]! { get set }
 - [Adopting the system player interface in visionOS](../adopting-the-system-player-interface-in-visionos.md)
 - [Customizing the tvOS playback experience](../customizing-the-tvos-playback-experience.md)
 
-#### Discussion
+## Discussion
 
 The Info content view can display up to two custom action controls along its trailing edge. The default value of this property is a single action that plays the current media from the beginning when tapped.
 

@@ -19,7 +19,7 @@ func reloadColumn(_ column: Int)
 - (void) reloadColumn:(NSInteger) column;
 ```
 
-#### Discussion
+## Discussion
 
 If after reloading the selected item no longer exists in the column, the column is set to be the last column.
 

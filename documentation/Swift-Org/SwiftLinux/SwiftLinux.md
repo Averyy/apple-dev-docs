@@ -10,11 +10,11 @@ framework: "Swift-Org/SwiftLinux"
 
 Build and host libraries, apps, and services on Linux.
 
-#### Overview
+## Overview
 
 Linux is a **Tier 1** platform under [SP-0001, Swift Platform Support Tiers](https://github.com/swiftlang/swift-evolution/blob/main/policies/0001-platform-support-tiers.md), and a toolchain host. The Swift project provides official toolchain builds, so you can both develop and deploy Swift on Linux.
 
-##### Platform support
+### Platform support
 
 | Distribution | Minimum version |
 | --- | --- |

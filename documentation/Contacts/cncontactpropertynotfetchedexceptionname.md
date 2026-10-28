@@ -24,7 +24,7 @@ let CNContactPropertyNotFetchedExceptionName: String
 extern NSString * const CNContactPropertyNotFetchedExceptionName;
 ```
 
-#### Discussion
+## Discussion
 
 This key takes a string value.
 

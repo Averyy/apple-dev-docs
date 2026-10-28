@@ -15,11 +15,11 @@ Initializes and returns an `NSDateFormatter` instance that uses the OS X 10.0 fo
 - (id) initWithDateFormat:(NSString *) format allowNaturalLanguage:(BOOL) flag;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSDateFormatter` instance that uses `format` in its conversions and that *uses the OS X 10.0 formatting behavior*.
 
-#### Discussion
+## Discussion
 
 `NSDateFormatter` attempts natural-language processing only after it fails to interpret an entered string according to `format`. Natural-language processing supports only a limited set of colloquial phrases, primarily in English. It may give unexpected results, and its use is strongly discouraged.
 
@@ -32,7 +32,7 @@ NSDateFormatter *dateFormat = [[NSDateFormatter alloc]
      withObject:dateFormat];
 ```
 
-##### Special Considerations
+### Special Considerations
 
 You cannot use this method to initialize a formatter with the OS X 10.4 formatting behavior, you must use `init`.
 

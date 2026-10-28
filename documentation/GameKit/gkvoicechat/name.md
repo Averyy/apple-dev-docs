@@ -34,7 +34,7 @@ var name: String { get }
 @property (atomic, copy, readonly) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 Use a unique name for each voice chat channel in your game.
 

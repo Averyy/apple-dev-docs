@@ -21,7 +21,7 @@ Returns a size that results from applying the specified rotation.
 static SPSize3D SPSize3DRotate(SPSize3D size, SPRotation3D rotation);
 ```
 
-#### Return Value
+## Return Value
 
 The size that results from applying the specified rotation.
 

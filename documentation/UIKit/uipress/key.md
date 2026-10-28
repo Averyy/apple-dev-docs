@@ -27,7 +27,7 @@ var key: UIKey? { get }
 
 - [Handling key presses made on a physical keyboard](../handling-key-presses-made-on-a-physical-keyboard.md)
 
-#### Discussion
+## Discussion
 
 This property is `nil` when the press event isn’t from a keyboard; for example, a button press on an Apple TV remote.
 

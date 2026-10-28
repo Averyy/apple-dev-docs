@@ -19,7 +19,7 @@ func vLL64Shift(_ vA: vUInt32, _ vShiftFactor: vUInt8) -> vUInt32
 extern vUInt32 vLL64Shift(vUInt32 vA, vUInt8 vShiftFactor);
 ```
 
-#### Discussion
+## Discussion
 
 This function treats the vector as a pair of 64-bit values to shift.
 

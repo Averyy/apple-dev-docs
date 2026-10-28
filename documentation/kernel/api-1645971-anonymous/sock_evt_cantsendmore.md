@@ -13,7 +13,7 @@
 sock_evt_cantsendmore = 8
 ```
 
-#### Discussion
+## Discussion
 
 Indicates the socket cannot send more data.
 

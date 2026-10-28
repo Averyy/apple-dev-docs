@@ -15,7 +15,7 @@ Checks whether high-frame-rate tracking is enabled on this configuration.
 extern bool ar_reference_object_configuration_is_high_frame_rate_tracking_enabled(ar_reference_object_configuration_t reference_object_configuration);
 ```
 
-#### Return Value
+## Return Value
 
 The enablement status.
 

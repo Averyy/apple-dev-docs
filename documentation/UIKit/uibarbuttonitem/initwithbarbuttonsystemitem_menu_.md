@@ -19,7 +19,7 @@ Creates an item using the specified system item and context menu.
 - (instancetype) initWithBarButtonSystemItem:(UIBarButtonSystemItem) systemItem menu:(UIMenu *) menu;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized [`UIBarButtonItem`](../uibarbuttonitem.md).
 

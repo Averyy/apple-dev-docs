@@ -21,7 +21,7 @@ Contextual clues the system uses to show relevant widgets in the Smart Stack on 
 struct RelevantContext
 ```
 
-#### Overview
+## Overview
 
 > **Note**: Smart Stacks are available in iOS, iPadOS, and watchOS. However, functionality provided by RelevanceKit API is only available in watchOS. Calling its API on other platforms doesn’t have any effect. For more information about widgets in Smart Stacks, refer to [Increasing the visibility of widgets in Smart Stacks](../WidgetKit/widget-suggestions-in-smart-stacks.md).
 

@@ -5,7 +5,7 @@
 
 Automatically or manually generate managed object subclasses from entities.
 
-#### Overview
+## Overview
 
 After you define your entities, their attributes, and relationships as described in Configuring a Core Data Model, specify the classes that you’ll use to create instances of your entities. Core Data optionally generates two files to support your class: a class file and a properties file.
 
@@ -75,7 +75,7 @@ extension Store : Identifiable {
 
 Core Data takes care of generating managed object subclasses for you, but you can take control when you need to add logic or edit properties.
 
-##### Select a Code Generation Option
+### Select a Code Generation Option
 
 To select a code generation option:
 
@@ -86,7 +86,7 @@ To select a code generation option:
 
 The sections that follow describe circumstances for choosing each option.
 
-###### Automatically Generate Both Files
+#### Automatically Generate Both Files
 
 Choose Class Definition when you don’t need to edit the properties or functionality of the managed object subclass and properties files that Core Data generates for you.
 
@@ -94,7 +94,7 @@ The generated source code doesn’t appear in your project’s source list. Xcod
 
 These files regenerate whenever the related entity changes in the data model.
 
-###### Generate the Properties File Only
+#### Generate the Properties File Only
 
 Choose Category/Extension to add additional convenience methods or business logic inside your managed object subclass.
 
@@ -110,7 +110,7 @@ You can now see and edit the class file in your project source list.
 
 ![A screenshot showing the file that Xcode generates in the Project navigator.](https://developer.apple.com/tutorials/images/com.apple.coredata/media-3839163@2x.png)
 
-###### Manage Both Files Manually
+#### Manage Both Files Manually
 
 Choose Manual/None to edit the properties in your managed object subclass, for example, to alter access modifiers, and to add additional convenience methods or business logic.
 

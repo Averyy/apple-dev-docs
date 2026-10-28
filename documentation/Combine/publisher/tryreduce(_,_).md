@@ -21,11 +21,11 @@ Applies an error-throwing closure that collects each element of a stream and pub
 func tryReduce<T>(_ initialResult: T, _ nextPartialResult: @escaping (T, Self.Output) throws -> T) -> Publishers.TryReduce<Self, T>
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that applies the closure to all received elements and produces an accumulated value when the upstream publisher finishes.
 
-#### Discussion
+## Discussion
 
 Use [`tryReduce(_:_:)`](./tryreduce%28_,_%29.md) to collect a stream of elements and produce an accumulated value based on an error-throwing closure you provide. If the closure throws an error, the publisher fails and passes the error to its subscriber.
 

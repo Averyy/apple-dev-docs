@@ -17,7 +17,7 @@ The signal strength the accessory measured for the access point.
 let signalStrength: Double
 ```
 
-#### Discussion
+## Discussion
 
 The Received Signal Strength Indicator (RSSI) as value between `0.0` (weakest) and `1.0` (strongest).
 

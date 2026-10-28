@@ -24,11 +24,11 @@ class func predicateForElectrocardiograms(classification: HKElectrocardiogram.Cl
 + (NSPredicate *) predicateForElectrocardiogramsWithClassification:(HKElectrocardiogramClassification) classification;
 ```
 
-#### Return Value
+## Return Value
 
 A predicate that matches electrocardiogram samples with the specified classification.
 
-#### Discussion
+## Discussion
 
 Use this convenience method to create a predicate that matches electrocardiogram samples with the specified classification. The following sample uses both the convenience method and a predicate format string to create equivalent predicates.
 

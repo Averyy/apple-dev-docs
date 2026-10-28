@@ -21,7 +21,7 @@ var twoPieceImageForeground: UIImage? { get set }
 @property (nonatomic, retain, nullable) UIImage * twoPieceImageForeground;
 ```
 
-#### Discussion
+## Discussion
 
 The image you specified is tinted white and composited on top of the background image. This image is used only in multicolor environments. You may specify `nil` for this image if you want to display only the background image, but in that case it’s better to use a one-piece image instead.
 

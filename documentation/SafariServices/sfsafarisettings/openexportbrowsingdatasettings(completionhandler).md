@@ -30,7 +30,7 @@ class func openExportBrowsingDataSettings() async throws
 
 - [Importing data exported from Safari](../importing-data-exported-from-safari.md)
 
-#### Discussion
+## Discussion
 
 This method presents the same data export sheet accessible in Safari’s settings, which enables someone to export their browsing data to a file. The data includes page visit history, reading list information, bookmarks, passwords, payment cards, and browser extensions.
 

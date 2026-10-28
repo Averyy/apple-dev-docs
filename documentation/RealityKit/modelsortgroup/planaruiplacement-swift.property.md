@@ -20,7 +20,7 @@ A planar placement instance that controls how the renderer draws a model relativ
 var planarUIPlacement: ModelSortGroup.PlanarUIPlacement? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Set to `nil` when the renderer doesn’t need planar sort the group. setting the property to `nil`.
 

@@ -21,7 +21,7 @@ Creates a UTF8Span containing `codeUnits`. Validates that the input is valid UTF
 init(validating codeUnits: consuming Span<UInt8>) throws(UTF8.ValidationError)
 ```
 
-#### Discussion
+## Discussion
 
 The resulting UTF8Span has the same lifetime constraints as `codeUnits`.
 

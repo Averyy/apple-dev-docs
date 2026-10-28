@@ -44,11 +44,11 @@ class func creationRequestForAsset(from image: NSImage) -> Self
 
 - [Requesting Changes to the Photo Library](../../PhotoKit/requesting-changes-to-the-photo-library.md)
 
-#### Return Value
+## Return Value
 
 An asset creation request.
 
-#### Discussion
+## Discussion
 
 Call this method within a photo library change block to create a new asset. For details on change blocks, see [`PHPhotoLibrary`](../phphotolibrary.md).
 

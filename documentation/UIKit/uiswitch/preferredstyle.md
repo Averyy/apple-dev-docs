@@ -27,7 +27,7 @@ var preferredStyle: UISwitch.Style { get set }
 - [Choosing a user interface idiom for your Mac app](../choosing-a-user-interface-idiom-for-your-mac-app.md)
 - [Displaying a checkbox in your Mac app built with Mac Catalyst](../displaying-a-checkbox-in-your-mac-app-built-with-mac-catalyst.md)
 
-#### Discussion
+## Discussion
 
 Use this property to specify the display style that you prefer. If the style changes, the switch may generate a layout pass to update the display.
 

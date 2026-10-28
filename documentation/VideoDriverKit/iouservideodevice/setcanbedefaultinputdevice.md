@@ -15,7 +15,7 @@ Specify if device can be used as default input device.
 kern_return_t SetCanBeDefaultInputDevice(bool in_can_be_default);
 ```
 
-#### Discussion
+## Discussion
 
 The object’s work queue synchronizes access to the value.
 

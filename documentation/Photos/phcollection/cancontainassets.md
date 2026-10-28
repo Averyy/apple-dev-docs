@@ -24,7 +24,7 @@ var canContainAssets: Bool { get }
 @property (nonatomic, assign, readonly) BOOL canContainAssets;
 ```
 
-#### Discussion
+## Discussion
 
 If this value is `true`, the collection is a [`PHAssetCollection`](../phassetcollection.md) object; otherwise, `false`. For details on asset collections, see [`PHAssetCollection`](../phassetcollection.md).
 

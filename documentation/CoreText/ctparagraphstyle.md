@@ -25,7 +25,7 @@ class CTParagraphStyle
 typedef const struct __CTParagraphStyle * CTParagraphStyleRef;
 ```
 
-#### Overview
+## Overview
 
 A paragraph style object represents a complex attribute value in an attributed string, storing a number of subattributes that affect paragraph layout for the characters of the string. Among these subattributes are alignment, tab stops, writing direction, line-breaking mode, and indentation settings.
 

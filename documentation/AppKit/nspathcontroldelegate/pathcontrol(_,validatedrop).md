@@ -20,7 +20,7 @@ optional func pathControl(_ pathControl: NSPathControl, validateDrop info: any N
 - (NSDragOperation) pathControl:(NSPathControl *) pathControl validateDrop:(id<NSDraggingInfo>) info;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called when something is dragged over the control. Return `NSDragOperationNone` to refuse the drop, or return anything else to accept it.
 

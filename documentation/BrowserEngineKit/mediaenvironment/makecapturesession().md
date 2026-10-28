@@ -16,7 +16,7 @@ Creates a new capture session in this media environment  or throws an error if i
 func makeCaptureSession() throws -> AVCaptureSession
 ```
 
-#### Discussion
+## Discussion
 
 The media environment must be activated before the capture session can be started.
 

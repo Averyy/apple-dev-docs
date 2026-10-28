@@ -19,7 +19,7 @@ struct CellularServiceID
 
 - [Creating a carrier messaging app](./creating-a-carrier-messaging-app.md)
 
-#### Overview
+## Overview
 
 The number of cellular services may vary across device types.
 

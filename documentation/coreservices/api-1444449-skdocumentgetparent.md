@@ -19,11 +19,11 @@ func SKDocumentGetParent(_ inDocument: SKDocument!) -> Unmanaged<SKDocument>!
 SKDocumentRef SKDocumentGetParent(SKDocumentRef inDocument);
 ```
 
-#### Return Value
+## Return Value
 
 The parent document URL object, or `NULL` on failure.
 
-#### Discussion
+## Discussion
 
 Search Kit manages document locations in terms of URLs as Document URL objects (of type [`SKDocument`](./skdocument.md)). The parent document URL object typically contains the document’s URL up to but not including the document name.
 

@@ -25,11 +25,11 @@ func MIDIPacketListAdd(_ pktlist: UnsafeMutablePointer<MIDIPacketList>, _ listSi
 extern MIDIPacket *MIDIPacketListAdd(MIDIPacketList *pktlist, ByteCount listSize, MIDIPacket *curPacket, MIDITimeStamp time, ByteCount nData, const Byte *data);
 ```
 
-#### Return Value
+## Return Value
 
 Returns null if there was not room in the packet for the event; otherwise returns a packet pointer which should be passed as curPacket in a subsequent call to this function.
 
-#### Discussion
+## Discussion
 
 The maximum size of a packet list is 65536 bytes. Large sysex messages must be sent in smaller packet lists.
 

@@ -29,7 +29,7 @@ var earliestBeginDate: Date? { get set }
 
 - [Downloading files in the background](../downloading-files-in-the-background.md)
 
-#### Discussion
+## Discussion
 
 For tasks created from background [`URLSession`](../urlsession.md) instances, this property indicates that the network load should not begin any earlier than this date. Setting this property does not guarantee that the load will begin at the specified date, but only that it will not begin sooner. If not specified, no start delay is used.
 

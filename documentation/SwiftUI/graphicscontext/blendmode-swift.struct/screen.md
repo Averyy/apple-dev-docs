@@ -21,7 +21,7 @@ A mode that multiplies the inverse of the source image samples with the inverse 
 static var screen: GraphicsContext.BlendMode { get }
 ```
 
-#### Discussion
+## Discussion
 
 Drawing in this mode results in colors that are at least as light as either of the two contributing sample colors.
 

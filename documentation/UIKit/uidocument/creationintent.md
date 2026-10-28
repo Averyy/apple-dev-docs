@@ -26,7 +26,7 @@ typedef NSString * UIDocumentCreationIntent;
 
 - [Customizing a document-based app’s launch experience](../customizing-a-document-based-app-s-launch-experience.md)
 
-#### Overview
+## Overview
 
 UIKit provides a default intent. You can extend this structure to provide additional intents for your app.
 

@@ -23,7 +23,7 @@ optional func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: In
 - (void) tableView:(UITableView *) tableView didDeselectRowAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate handles row deselections in this method. It could, for example, remove the check-mark image ([`UITableViewCell.AccessoryType.checkmark`](../uitableviewcell/accessorytype-swift.enum/checkmark.md)) associated with the row.
 

@@ -8,11 +8,11 @@ Upload, query, retrieve, and delete Apple Maps creative assets.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Overview
+## Overview
 
 You use assets to build creative for your campaigns. Uploading new assets through this API is available only for Apple Maps brands, but querying and retrieving assets covers both App Store apps and Apple Maps brands. Each asset carries metadata about its type, dimensions, eligibility status, and any rejection reasons.
 
-#### Use the Endpoints
+## Use the Endpoints
 
 The Assets API provides four endpoints for uploading, querying, retrieving, and deleting assets:
 
@@ -23,11 +23,11 @@ The Assets API provides four endpoints for uploading, querying, retrieving, and 
 | `GET` | `/v1/assets/{id}` | [`Get Asset`](./get-asset-by-id.md) retrieves a single asset by its ID. |
 | `DELETE` | `/v1/assets/{id}` | [`Delete Asset`](./delete-asset-by-id.md) soft-deletes an uploaded asset by its ID. |
 
-##### Identify the Asset Type
+### Identify the Asset Type
 
 Every asset has an `assetType` field, which identifies the kind of media it contains. Currently, `IMAGE` is the only supported value, and it represents a static image file. See [`ImageType`](./imagetype.md) for the full list of supported formats.
 
-##### Upload Assets
+### Upload Assets
 
 Assets enter the system through a single upload method. Send a multipart form to `POST /v1/assets/upload` ([`Upload Asset`](./upload-asset.md)) containing the binary image file (`file`), `promotedObjectId`, and `promotedObjectType: BUSINESS_BRAND`. The endpoint accepts PNG, JPG, and HEIC formats.
 
@@ -35,7 +35,7 @@ This endpoint only supports asset uploads for Apple Maps (`BUSINESS_BRAND`) asse
 
 After upload, the asset begins processing. Poll using [`Get Asset`](./get-asset-by-id.md) until the `eligibility.status` indicates the asset is ready before referencing it in a creative.
 
-##### Query Assets
+### Query Assets
 
 To find assets, use `POST /v1/assets/query` ([`Query Assets`](./query-assets.md)) with the following filterable fields:
 
@@ -46,7 +46,7 @@ To find assets, use `POST /v1/assets/query` ([`Query Assets`](./query-assets.md)
 | `providerAssetId` | `EQUALS`, `IN` | Filter by the provider-assigned asset identifier. |
 | `assetType` | `EQUALS`, `IN` | Filter by asset type: `IMAGE`. |
 
-##### Review the Shared Response Fields
+### Review the Shared Response Fields
 
 Every asset response includes the following fields:
 
@@ -66,7 +66,7 @@ Every asset response includes the following fields:
 | `creationTime` | Timestamp when the asset was created (ISO 8601). Read-only. |
 | `modificationTime` | Timestamp of the last modification (ISO 8601). Read-only. |
 
-##### Delete Assets
+### Delete Assets
 
 You can only delete assets you’ve uploaded. A call to [`Get Asset`](./get-asset-by-id.md) still returns a deleted asset and marks it with `deleted: true`, but [`Query Assets`](./query-assets.md) excludes deleted assets from results by default.
 

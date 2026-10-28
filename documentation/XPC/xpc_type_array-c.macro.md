@@ -21,7 +21,7 @@ A type that represents an array of XPC objects.
 #define XPC_TYPE_ARRAY
 ```
 
-#### Discussion
+## Discussion
 
 This array must be contiguous, that is, it can’t contain `NULL` values. If you want to indicate that a slot is empty, you can insert a null object. The array grows as necessary to accommodate more objects.
 

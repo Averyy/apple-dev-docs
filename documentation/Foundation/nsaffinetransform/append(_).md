@@ -28,7 +28,7 @@ func append(_ transform: AffineTransform)
 - (void) appendTransform:(NSAffineTransform *) transform;
 ```
 
-#### Discussion
+## Discussion
 
 This method multiplies the receiver’s matrix by the matrix in `aTransform` and replaces the receiver’s matrix with the results. This type of operation is the same as applying the transformations in the receiver followed by the transformations in `aTransform`.
 

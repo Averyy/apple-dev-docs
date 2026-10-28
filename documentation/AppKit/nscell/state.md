@@ -19,7 +19,7 @@ var state: NSControl.StateValue { get set }
 @property NSControlStateValue state;
 ```
 
-#### Discussion
+## Discussion
 
 The [`NSOffState`](../nsoffstate.md) state indicates the normal or unpressed state. The [`NSOnState`](../nsonstate.md) state indicates the alternate or pressed state. The [`NSMixedState`](../nsmixedstate.md) state indicates that the feature represented by the control is in effect somewhere.
 

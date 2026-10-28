@@ -24,7 +24,7 @@ init(provider: String?, busName: String?, busNumber: String?, tripDuration: INDa
 - (instancetype) initWithProvider:(NSString *) provider busName:(NSString *) busName busNumber:(NSString *) busNumber tripDuration:(INDateComponentsRange *) tripDuration departureBusStopLocation:(CLPlacemark *) departureBusStopLocation departurePlatform:(NSString *) departurePlatform arrivalBusStopLocation:(CLPlacemark *) arrivalBusStopLocation arrivalPlatform:(NSString *) arrivalPlatform;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INBusTrip`](../inbustrip.md) object or `nil` if the initializer can’t create one.
 

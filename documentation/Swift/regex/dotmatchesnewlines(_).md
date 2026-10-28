@@ -21,7 +21,7 @@ Returns a regular expression where the “any” metacharacter (`.`) also matche
 func dotMatchesNewlines(_ dotMatchesNewlines: Bool = true) -> Regex<Regex<Output>.RegexOutput>
 ```
 
-#### Return Value
+## Return Value
 
 The modified regular expression.
 

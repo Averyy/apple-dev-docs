@@ -25,7 +25,7 @@ class func lock()
 + (void) lock;
 ```
 
-#### Discussion
+## Discussion
 
 SceneKit’s data model is thread-safe in that it ensures that internal data structures will not be corrupted by concurrent attempts to modify their contents from multiple threads. However, this model does not guarantee the validity of values you read from scene graph objects after returning them.
 

@@ -26,7 +26,7 @@ var scene: SCNScene? { get set }
 @property (nonatomic, retain, nullable) SCNScene * scene;
 ```
 
-#### Discussion
+## Discussion
 
 Setting a new scene immediately replaces whatever scene the renderer was previously displaying. To display a transition between scenes, use the [`present(_:with:incomingPointOfView:completionHandler:)`](./present%28_,with,incomingpointofview,completionhandler%29.md) method.
 

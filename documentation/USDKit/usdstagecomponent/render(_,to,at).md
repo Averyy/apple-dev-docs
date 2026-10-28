@@ -17,15 +17,15 @@ Renders a USD stage to an entity in manual mode.
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) static func render(_ stage: USDStage, to entity: Entity, at timeCode: USDStage.TimeCode = .default) async -> USDStageComponent.RenderResult
+nonisolated(nonsending)
+static func render(_ stage: USDStage, to entity: Entity, at timeCode: USDStage.TimeCode = .default) async -> USDStageComponent.RenderResult
 ```
 
-#### Return Value
+## Return Value
 
 The result of the render operation.
 
-#### Discussion
+## Discussion
 
 If the entity does not have a `USDStageComponent` attached, or if the attached component is in automatic mode, the result is `.failed`.
 

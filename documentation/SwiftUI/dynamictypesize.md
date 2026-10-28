@@ -21,7 +21,7 @@ A Dynamic Type size, which specifies how large scalable content should be.
 enum DynamicTypeSize
 ```
 
-#### Overview
+## Overview
 
 Read this value from the environment to adapt a layout to the text size someone chooses in system settings. The sizes are ordered, so you can compare them to find out how much room the text needs.
 

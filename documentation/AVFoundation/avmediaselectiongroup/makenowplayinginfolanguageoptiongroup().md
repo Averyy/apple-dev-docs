@@ -25,11 +25,11 @@ func makeNowPlayingInfoLanguageOptionGroup() -> MPNowPlayingInfoLanguageOptionGr
 - (MPNowPlayingInfoLanguageOptionGroup *) makeNowPlayingInfoLanguageOptionGroup;
 ```
 
-#### Return Value
+## Return Value
 
 The new language option group.
 
-#### Discussion
+## Discussion
 
 Any option from [`AVMediaSelectionOption`](../avmediaselectionoption.md) in the [`AVMediaSelectionGroup`](../avmediaselectiongroup.md) not representing an audible or legible selection option is ignored.
 

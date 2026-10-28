@@ -23,7 +23,7 @@ var coverage: [String]? { get set }
 @property (copy, nullable) NSArray<NSString *> * coverage;
 ```
 
-#### Discussion
+## Discussion
 
 The string values in this property typically include a location (such as a place name or geographic coordinates), a temporal period (such as a period label, date, or date range), or a jurisdiction (such as a named administrative entity).
 

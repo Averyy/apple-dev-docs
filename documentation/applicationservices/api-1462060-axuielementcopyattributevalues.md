@@ -19,7 +19,7 @@ func AXUIElementCopyAttributeValues(_ element: AXUIElement, _ attribute: CFStrin
 AXError AXUIElementCopyAttributeValues(AXUIElementRef element, CFStringRef attribute, CFIndex index, CFIndex maxValues, CFArrayRef  _Nullable *values);
 ```
 
-#### Return Value
+## Return Value
 
 If unsuccessful, `AXUIElementCopyAttributeValues` may return one of the following error codes, among others:
 
@@ -29,7 +29,7 @@ If unsuccessful, `AXUIElementCopyAttributeValues` may return one of the followin
 - **`kAXErrorCannotComplete`**: The function cannot complete because messaging has failed in some way.
 - **`kAXErrorNotImplemented`**: The process does not fully support the accessibility API.
 
-#### Discussion
+## Discussion
 
 This function is useful for dealing with large arrays, for example, a table view with a large number of children.
 

@@ -17,7 +17,7 @@ Element-wise logical exclusive or.
 func logicalXor(_ a: some ScalarOrArray, _ b: some ScalarOrArray, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-##### See Also
+### See Also
 
 - [Arithmetic](./arithmetic.md)
 - [Logical Operators](./logical.md)

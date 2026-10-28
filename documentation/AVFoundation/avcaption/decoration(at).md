@@ -19,7 +19,7 @@ Returns the text decoration at the index position.
 func decoration(at index: String.Index) -> (AVCaption.Decoration, Range<String.Index>)
 ```
 
-#### Return Value
+## Return Value
 
 A tuple that contains the text decoration and range to which it applies.
 

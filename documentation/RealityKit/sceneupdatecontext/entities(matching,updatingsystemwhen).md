@@ -24,7 +24,7 @@ func entities(matching query: EntityQuery, updatingSystemWhen condition: SystemU
 
 - [Implementing systems for entities in a scene](../implementing-systems-for-entities-in-a-scene.md)
 
-#### Discussion
+## Discussion
 
 Calling this function can increase the rate at which RealityKit calls the [`update(context:)`](../system/update%28context%29.md) method. If `condition` is not met for the current update, this method returns an empty result.
 

@@ -19,7 +19,7 @@ var appearance: NSAppearance { get }
 @property (nonatomic, readonly) NSAppearance * appearance;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to determine whether MapKit applied a light or dark appearance to your map.
 

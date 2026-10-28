@@ -13,7 +13,7 @@ Reduce CPU overhead and simplify your command execution by reusing commands.
 - macOS 14.0+
 - Xcode 26.3+
 
-#### Overview
+## Overview
 
 This sample app provides an introduction to *indirect command buffers* (ICB), which enable you to store repeated commands for later use. Because Metal discards a normal command buffer and its commands after Metal executes them, use ICBs to save expensive allocation, deallocation, and encoding time for your app’s common instructions. Additionally, you benefit when using ICBs with:
 
@@ -29,7 +29,7 @@ ICBs are also useful to render static objects in typical 3D scenes. Because enco
 
 This sample demonstrates how to set up an ICB to repeatedly render a series of shapes. While it’s possible to gain even more instruction-parallelism by encoding the ICB on the GPU, this sample encodes an ICB on the CPU for simplicity. See [Encoding indirect command buffers on the GPU](./encoding-indirect-command-buffers-on-the-gpu.md) for the more advanced usage.
 
-##### Getting started
+### Getting started
 
 This sample contains macOS and iOS targets. Run the iOS scheme on a physical device because Metal isn’t supported in the simulator.
 
@@ -50,7 +50,7 @@ You check the GPU that you choose at runtime if it supports ICBs using the [`MTL
 
 This sample calls ‘supportsFeatureSet:’ for this purpose within its view controller’s `viewDidLoad:` callback.
 
-##### Individual commands versus indirect command buffers
+### Individual commands versus indirect command buffers
 
 Metal apps, particularly games, typically contain multiple render commands, each associated with a set of render states, buffers, and draw calls. To execute these commands for a render pass, apps first encode them into a render command encoder within a command buffer.
 
@@ -64,7 +64,7 @@ Recreating draws that were equivalent to ones you did in a previous queue can be
 
 > **Note**: To access individual buffers referenced by an indirect command buffer, you need to call the `useResource:usage:` method for each buffer that you want to use. For more information, see the “Execute an Indirect Command Buffer” section.
 
-##### Define render commands and inherited render state
+### Define render commands and inherited render state
 
 For the indirect command buffer, `_indirectCommandBuffer`, the sample defines render commands that:
 
@@ -77,7 +77,7 @@ The sample encodes these commands differently for the CPU or the GPU. However, t
 
 The sample also allows `_indirectCommandBuffer` to inherit the render pipeline state from its parent encoder, `renderEncoder`. Furthermore, `_indirectCommandBuffer` implicitly inherits any render state that can’t be encoded into it, such as the cull mode and depth or stencil state for the render pass.
 
-##### Create an indirect command buffer
+### Create an indirect command buffer
 
 The sample creates `_indirectCommandBuffer` from an [`MTLIndirectCommandBufferDescriptor`](./mtlindirectcommandbufferdescriptor.md), which defines the features and limits of an indirect command buffer.
 
@@ -111,7 +111,7 @@ The sample creates `_indirectCommandBuffer` from an [`MTLIndirectCommandBufferDe
 
 The sample specifies the types of commands, `commandTypes`, and the maximum number of commands, `maxCount`, so that Metal reserves enough space in memory for the sample to encode `_indirectCommandBuffer` successfully (with the CPU or GPU).
 
-##### Encode an indirect command buffer with the CPU
+### Encode an indirect command buffer with the CPU
 
 From the CPU, the sample encodes commands into `_indirectCommandBuffer` with an [`MTLIndirectRenderCommand`](./mtlindirectrendercommand.md) instance. For each shape to be rendered, the sample encodes two [`setVertexBuffer(_:offset:at:)`](./mtlindirectrendercommand/setvertexbuffer%28_,offset,at%29.md) commands and one [`drawPrimitives(_:vertexStart:vertexCount:instanceCount:baseInstance:)`](./mtlindirectrendercommand/drawprimitives%28_,vertexstart,vertexcount,instancecount,baseinstance%29.md) command.
 
@@ -148,7 +148,7 @@ The sample performs this encoding only once, before encoding any subsequent rend
 
 ![Layout diagram that shows the commands encoded into an indirect command buffer with the CPU.](https://developer.apple.com/tutorials/images/com.apple.metal/icbs-with-cpu-encoding-3-IndirectCommandBufferCPUEncoding.png)
 
-##### Update the data used by an ICB
+### Update the data used by an ICB
 
 To update data that’s fed to the GPU, you typically cycle through a set of buffers such that the CPU updates one while the GPU reads another (see [Synchronizing events between a GPU and the CPU](./synchronizing-events-between-a-gpu-and-the-cpu.md)). You can’t apply that pattern literally with ICBs, however, because you can’t update an ICB’s buffer set after you encode its commands, but you follow a two-step process to blit data updates from the CPU. First, update a single buffer in your dynamic buffer array on the CPU:
 
@@ -173,7 +173,7 @@ id<MTLBlitCommandEncoder> blitEncoder = [commandBuffer blitCommandEncoder];
 [blitEncoder endEncoding];
 ```
 
-##### Execute an indirect command buffer
+### Execute an indirect command buffer
 
 The sample calls the `executeCommandsInBuffer:withRange:` method to execute the commands in `_indirectCommandBuffer`.
 

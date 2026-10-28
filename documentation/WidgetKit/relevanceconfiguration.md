@@ -21,7 +21,7 @@ A type that describes the content of a widget that uses relevance clues.
 - [Increasing the visibility of widgets in Smart Stacks](./widget-suggestions-in-smart-stacks.md)
 - [Creating a widget extension](./creating-a-widget-extension.md)
 
-#### Overview
+## Overview
 
 In watchOS, widgets can provide the system with relevance clues to indicate that the widget is relevant to a person and should appear prominently in the Smart Stack. To provide relevance clues to watchOS, use `RelevanceConfiguration` or implement the `relevance()` requirement in your timeline provider.
 

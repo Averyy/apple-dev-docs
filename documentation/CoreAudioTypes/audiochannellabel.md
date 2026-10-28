@@ -25,7 +25,7 @@ typealias AudioChannelLabel = UInt32
 typedef UInt32 AudioChannelLabel;
 ```
 
-#### Discussion
+## Discussion
 
 This data type is used for the `mChannelLabel` field of the [`AudioChannelDescription`](./audiochanneldescription.md) structure. See [Audio Channel Labels](./audio-channel-labels.md) for possible values.
 

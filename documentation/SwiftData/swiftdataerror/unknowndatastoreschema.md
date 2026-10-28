@@ -22,7 +22,7 @@ An error that indicates the data store’s schema is not recognized.
 static let unknownDataStoreSchema: SwiftDataError
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs when a `ModelContainer` attempts to load a data store whose schema does not match the current schema or any schema defined in the provided migration plan.
 

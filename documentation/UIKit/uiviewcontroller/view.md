@@ -27,7 +27,7 @@ var view: UIView! { get set }
 
 - [Displaying and managing views with a view controller](../displaying-and-managing-views-with-a-view-controller.md)
 
-#### Discussion
+## Discussion
 
 This property represents the root view of the view controller’s view hierarchy. The default value of this property is `nil`.
 

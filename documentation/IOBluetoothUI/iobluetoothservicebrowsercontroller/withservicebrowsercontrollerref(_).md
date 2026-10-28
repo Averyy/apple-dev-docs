@@ -19,7 +19,7 @@ class func withServiceBrowserControllerRef(_ serviceBrowserControllerRef: IOBlue
 + (IOBluetoothServiceBrowserController *) withServiceBrowserControllerRef:(IOBluetoothServiceBrowserControllerRef) serviceBrowserControllerRef;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the IOBluetoothServiceBrowserController * for the given IOBluetoothServiceBrowserControllerRef.
 

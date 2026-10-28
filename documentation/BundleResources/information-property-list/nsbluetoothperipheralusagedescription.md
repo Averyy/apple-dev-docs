@@ -15,7 +15,7 @@ A message that tells people why the app is requesting the ability to connect to 
 - **Name**: `NSBluetoothPeripheralUsageDescription` (Privacy - Bluetooth Peripheral Usage Description)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 For apps with a deployment target of iOS 13 and later, use [`NSBluetoothAlwaysUsageDescription`](./nsbluetoothalwaysusagedescription.md) instead.
 

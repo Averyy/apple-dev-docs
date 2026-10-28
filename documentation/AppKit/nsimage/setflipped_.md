@@ -17,7 +17,7 @@ Sets whether the polarity of the y axis is inverted when drawing an image.
 - (void) setFlipped:(BOOL) flag;
 ```
 
-#### Discussion
+## Discussion
 
 If `flag` is [`true`](../../Swift/true.md), the y-axis of the image’s internal coordinate system is inverted, with the origin in the upper-left corner and the positive y axis extending downward. This method affects only the coordinate system used internally by the image and the orientation of the image when it is drawn; it does not affect the coordinate system used to specify the position of an image in a view. This method does not cause the receiver to recache itself.
 

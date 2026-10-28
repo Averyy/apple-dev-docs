@@ -15,7 +15,7 @@ A protocol for objects that manage the entire flow of players interacting with e
 protocol Delegate
 ```
 
-#### Overview
+## Overview
 
 Implement the [`update(interaction:)`](./delegate/update%28interaction%29.md) method to take an appropriate action depending on the equipment and the phase of the interaction. For example, turn a card face up if a player flips it over or toss a die when a gesture ends.
 

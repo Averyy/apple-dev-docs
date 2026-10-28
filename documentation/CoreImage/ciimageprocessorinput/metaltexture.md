@@ -25,7 +25,7 @@ var metalTexture: (any MTLTexture)? { get }
 @property (nonatomic, readonly, nullable) id<MTLTexture> metalTexture;
 ```
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**: This texture must not be modified by the [`CIImageProcessorKernel`](../ciimageprocessorkernel.md).
 

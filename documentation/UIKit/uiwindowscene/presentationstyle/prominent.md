@@ -25,7 +25,7 @@ case prominent
 UIWindowScenePresentationStyleProminent
 ```
 
-#### Discussion
+## Discussion
 
 On iPad, the system displays the window scene modally, centered and elevated above the existing workspace. You should dedicate the scene to specific content within your app, like a document or file, and include buttons to close the scene.
 

@@ -29,7 +29,7 @@ func skip(with params: MTRServiceAreaClusterSkipAreaParams) async throws -> MTRS
 - (void) skipAreaWithParams:(MTRServiceAreaClusterSkipAreaParams *) params completion:(void (^)(MTRServiceAreaClusterSkipAreaResponseParams *data, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This command is used to skip the given area, and to attempt operating at other areas on the SupportedAreas attribute list.
 

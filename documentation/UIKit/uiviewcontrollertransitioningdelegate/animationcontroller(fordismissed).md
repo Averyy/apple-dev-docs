@@ -23,11 +23,11 @@ optional func animationController(forDismissed dismissed: UIViewController) -> (
 - (id<UIViewControllerAnimatedTransitioning>) animationControllerForDismissedController:(UIViewController *) dismissed;
 ```
 
-#### Return Value
+## Return Value
 
 The animator object to use when dismissing the view controller or `nil` if you do not want to dismiss the view controller using a custom transition. The object you return should be capable of performing a fixed-length animation that is not interactive.
 
-#### Discussion
+## Discussion
 
 Use this method to create and return an object that implements the methods of the [`UIViewControllerAnimatedTransitioning`](../uiviewcontrolleranimatedtransitioning.md) protocol. Your implementation of that protocol must animate the disappearance of the `dismissed` view controller’s view from the screen. Use the `dismissed` parameter to initialize your object or perform any tasks necessary to prepare the transition animations. You may return `nil` from this method if you do not want to implement a custom transition animation when dismissing view controllers.
 

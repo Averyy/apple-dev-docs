@@ -23,11 +23,11 @@ func sec_protocol_metadata_get_early_data_accepted(_ metadata: sec_protocol_meta
 bool sec_protocol_metadata_get_early_data_accepted(sec_protocol_metadata_t metadata);
 ```
 
-#### Return Value
+## Return Value
 
 A bool indicating if early data was accepted.
 
-#### Discussion
+## Discussion
 
 Determine if early data was accepted by the peer.
 

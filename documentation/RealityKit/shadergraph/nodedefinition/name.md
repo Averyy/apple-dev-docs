@@ -18,7 +18,7 @@ The unique identifier for this node definition.
 var name: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 Names follow the MaterialX convention, encoding the functional operation, input types, and output type. For example, `ND_atan2_float` identifies the two-argument arctangent node whose output is a `float`.
 

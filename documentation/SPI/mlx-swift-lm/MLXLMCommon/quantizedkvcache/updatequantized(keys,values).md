@@ -17,7 +17,7 @@ Update cache and return quantized tuples (Python’s update_and_fetch) This is n
 func updateQuantized(keys: MLXArray, values: MLXArray) -> ((MLXArray, MLXArray, MLXArray?), (MLXArray, MLXArray, MLXArray?))
 ```
 
-#### Return Value
+## Return Value
 
 Quantized tuples (keys, values) as ((weight, scales, biases), (weight, scales, biases))
 

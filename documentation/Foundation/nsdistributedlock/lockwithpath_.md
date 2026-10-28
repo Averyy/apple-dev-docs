@@ -16,11 +16,11 @@ Returns an `NSDistributedLock` object initialized to use as the locking object t
 + (NSDistributedLock *) lockWithPath:(NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSDistributedLock` object initialized to use as the locking object the file-system entry specified by `path`.
 
-#### Discussion
+## Discussion
 
 For applications to use the lock, `path` must be accessible to—and writable by—all hosts on which the applications might be running.
 

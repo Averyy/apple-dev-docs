@@ -21,7 +21,7 @@ Modifies a format style to display a URL’s user component in accordance with t
 func user(_ strategy: URL.FormatStyle.ComponentDisplayOption = .never) -> URL.FormatStyle
 ```
 
-#### Return Value
+## Return Value
 
 A modified [`URL.FormatStyle`](../formatstyle.md) that incorporates the specified behavior.
 

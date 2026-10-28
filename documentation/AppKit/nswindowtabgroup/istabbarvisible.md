@@ -19,7 +19,7 @@ var isTabBarVisible: Bool { get }
 @property (readonly, getter=isTabBarVisible) BOOL tabBarVisible;
 ```
 
-#### Discussion
+## Discussion
 
 Typically, a tabbed window displays a tab bar if there is more than one window in the tabbing group. The tab bar can also be manually toggled using the [`toggleTabBar(_:)`](../nswindow/toggletabbar%28_%29.md) method.
 

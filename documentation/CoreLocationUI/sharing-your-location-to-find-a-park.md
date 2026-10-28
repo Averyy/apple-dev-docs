@@ -12,7 +12,7 @@ Ask for location access using a customizable location button.
 - Mac Catalyst 15.0+
 - Xcode 13.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC21 session [10102: Meet the Location Button](https://developer.apple.com/wwdc21/10102/).
 

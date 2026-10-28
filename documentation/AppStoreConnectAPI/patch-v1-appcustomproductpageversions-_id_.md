@@ -9,9 +9,9 @@ Update the name and visibility status of an app custom product page.
 **Availability**:
 - App Store Connect API 3.5+
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

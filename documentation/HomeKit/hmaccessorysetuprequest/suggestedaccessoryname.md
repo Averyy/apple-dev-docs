@@ -21,7 +21,7 @@ var suggestedAccessoryName: String? { get set }
 @property (copy, nullable) NSString * suggestedAccessoryName;
 ```
 
-#### Discussion
+## Discussion
 
 If this value is `nil`, then the suggested name is taken from the accessory itself. If the user sets up an accessory bridge, then this value only applies to the accessory bridge and not any accessories behind the bridge.
 

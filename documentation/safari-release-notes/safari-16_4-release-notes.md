@@ -5,20 +5,20 @@
 
 Released March 27, 2023 — Version 16.4 (18615.1.26)
 
-#### Overview
+## Overview
 
 Safari 16.4 is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadOS 16.4, and iOS 16.4.
 
-##### Browser Changes
+### Browser Changes
 
-###### New Features
+#### New Features
 
 - Added dark mode support for plain text files.
 - Added fingerprinting countermeasures for querying the permission state of the Notifications API.
 
-##### CSS
+### CSS
 
-###### New Features
+#### New Features
 
 - Added support for `currentColor` with `color-mix()`.
 - Added support for `margin-trim`.
@@ -34,7 +34,7 @@ Safari 16.4 is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadO
 - Added support for the unprefixed `:fullscreen` pseudo-class.
 - Added support for the unprefixed absolute size keyword `xxx-large`.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `-webkit-mask-box-image: initial` to set the correct initial value.
 - Fixed `-webkit-radial-gradient` parsing accidentally treating several mandatory commas as optional.
@@ -89,15 +89,15 @@ Safari 16.4 is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadO
 - Fixed to always use percentages for computed values of `font-stretch`, never keywords.
 - Fixed to not require whitespace between `of` and the selector list in `:nth-child` or `:nth-last-child`.
 
-##### CSS API
+### CSS API
 
-###### New Features
+#### New Features
 
 - Added support for CSS Typed OM.
 - Added support for constructible and adoptable CSSStyleSheet objects.
 - Added support for input validation for `CSSColorValues` as part of CSS Typed OM.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `CSS.supports` returning false for custom properties.
 - Fixed `CSS.supports` whitespace handling with `!important`.
@@ -105,38 +105,38 @@ Safari 16.4 is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadO
 - Fixed `getComputedStyle()` to return a function list for the transform property.
 - Fixed `linear-gradient` keyword values not getting converted to their `rgb()` equivalents for `getComputedStyle()`.
 
-##### Content Security Policy
+### Content Security Policy
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed updating the Content Security Policy when a new header is sent as part of a 304 response.
 
-##### Custom Elements
+### Custom Elements
 
-###### New Features
+#### New Features
 
 - Added support for Declarative Shadow DOM.
 - Added support for ElementInternals.
 - Added support for form-associated custom elements.
 - Added support for Imperative Slot API.
 
-##### Forms
+### Forms
 
-###### New Features
+#### New Features
 
 - Added a thumbnail of the selected file for `<input type="file">` on macOS.
 - Added support for the `cancel` event on `<input type="file">`.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `<input type="submit">`, `<input type="reset">,` and `<input type="button">` to honor `font-size`, `padding`, `height`, and work with multi-line values.
 - Fixed firing the `change` event for `<input type="file">` when a different file with the same name is selected.
 - Fixed preventing a disabled `<fieldset>` element from getting focus.
 - Fixed the `:out-of-range` pseudo class matching for empty `input[type=number]`.
 
-##### JavaScript
+### JavaScript
 
-###### New Features
+#### New Features
 
 - Added support for RegExp lookbehind assertions.
 - Added support for `Array.fromAsync`.
@@ -151,7 +151,7 @@ Safari 16.4 is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadO
 - Added support for resizable ArrayBuffer.
 - Added support for using `Symbols` in `WeakMap` and `WeakSet`.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `Array.prototype.indexOf` constant-folding to account for a non-numeric index.
 - Fixed `Intl.NumberFormat` `useGrouping` handling to match updated specs.
@@ -159,44 +159,44 @@ Safari 16.4 is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadO
 - Fixed `String.prototype.includes` incorrectly returning false when the string is empty and the position is past end of the string.
 - Fixed `toLocaleLowerCase` and `toLocaleUpperCase` to throw an exception on an empty string.
 
-##### HTML
+### HTML
 
-###### New Features
+#### New Features
 
 - Added support for lazy loading iframes.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed aligning the parsing of `<body link vlink alink>` to follow standards.
 - Fixed `<legend>` to accept more `display` property values than `display: block`.
 
-##### Intelligent Tracking Prevention
+### Intelligent Tracking Prevention
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed user initiated cross-domain link navigations getting counted as Top Frame Redirects.
 
-##### Images
+### Images
 
-###### New Features
+#### New Features
 
 - Added support for AVIF on macOS Monterey and macOS Big Sur.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed ensuring the `<picture>` element works with AVIF.
 - Fixed some display issues with HDR AVIF images.
 - Fixed the accept header to correctly indicate AVIF support.
 
-##### Loading
+### Loading
 
-###### New Features
+#### New Features
 
 - Added prevention of redirects to `data:` or `about:` URLs.
 
-##### Lockdown Mode
+### Lockdown Mode
 
-###### New Restrictions
+#### New Restrictions
 
 - Disabled binary fonts in the CSS Font Loading API.
 - Disabled Cache API.
@@ -207,9 +207,9 @@ Safari 16.4 is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadO
 - Disabled WebSpeech API.
 - Fixed common cases of missing glyphs due to custom icon fonts.
 
-##### Media
+### Media
 
-###### New Features
+#### New Features
 
 - Added improvements to audio quality for web video conferencing.
 - Added support for a subset of the AudioSession Web API.
@@ -219,7 +219,7 @@ Safari 16.4 is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadO
 - Added support to allow a site to provide an “alternate” URL to be used during AirPlay.
 - Added video-only support for Web Codecs.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `enumerateDevices` may return filtered devices even if page is capturing.
 - Fixed `MediaRecorder.stop()` firing an additional `dataavailable` event with bytes after `MediaRecorder.pause()`.
@@ -236,9 +236,9 @@ Safari 16.4 is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadO
 - Fixed unmuting a TikTok video pauses it.
 - Fixed WebVTT styles not applied with in-band tracks.
 
-##### Rendering
+### Rendering
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Ensured negative letter-spacing does not pull content oustisde of the inline box
 - Fixed `<div>` with `border-radius` not painted correctly while using jQuery’s `.slideToggle()`.
@@ -271,9 +271,9 @@ Safari 16.4 is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadO
 - Fixed updating table rows during simplified layout.
 - Fixed: improved balancing for border, padding, and empty block content.
 
-##### Safari Extensions
+### Safari Extensions
 
-###### New Features
+#### New Features
 
 - Added `MAX_NUMBER_OF_DYNAMIC_AND_SESSION_RULES` property to `declarativeNetRequest`.
 - Added support for `:has()` selector in Safari Content Blocker rules.
@@ -287,7 +287,7 @@ Safari 16.4 is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadO
 - Added support to allow extensions to store data in memory using the `browser.storage.session` API.
 - Safari Web Extensions are now turned off upon update if the new version requests more host permissions.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Extensions that request the `unlimitedStorage` permission no longer need to also request `storage`.
 - Fixed `browser.declarativeNetRequest` namespace is now available when an extension has the `declarativeNetRequestWithHostAccess` permission.
@@ -303,19 +303,19 @@ Safari 16.4 is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadO
 - Fixed `browser.webNavigation` events firing for hosts where the extension did not have access.
 - Removed Keyboard Shortcut conflict warnings for `browser.commands` when there are multiple commands without keyboard shortcuts assigned.
 
-##### Scrolling
+### Scrolling
 
-###### New Features
+#### New Features
 
 - Added support for smooth key-driven scrolling on macOS.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `overscroll-behavior: none` to prevent overscroll when the page is too small to scroll.
 
-##### SVG
+### SVG
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `<svg:text>` to not auto-wrap.
 - Fixed `preserveAspectRatio` to stop accepting `defer`.
@@ -328,20 +328,20 @@ Safari 16.4 is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadO
 - Fixed handling animation freezes when `repeatDur` is not a multiple of `dur`.
 - Fixed making sure computed values for `baseline-shift` CSS property use `px` unit for lengths.
 
-##### Tables
+### Tables
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed not forcing `display: table-cell`, `display: inline-table`, `display: table`, and `float: none` on table cell elements when in quirks mode.
 - Fixed removing the visual border when the table border attribute is removed.
 
-##### Text
+### Text
 
-###### New Features
+#### New Features
 
 - Added support for `font-size-adjust`.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `font-optical-sizing: auto` having no effect in Safari 16.
 - Fixed directionality of the `<bdi>` and `<input>` elements to align with HTML specifications.
@@ -350,22 +350,22 @@ Safari 16.4 is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadO
 - Fixed the handling of `<bdo>`.
 - Fixed the order of how `@font-palette-values` `override-colors` are applied.
 
-##### WebAssembly
+### WebAssembly
 
-###### New Features
+#### New Features
 
 - Added support for WASM SIMD.
 
-##### Web Animations
+### Web Animations
 
-###### New Features
+#### New Features
 
 - Added animation support for `align-tracks` and `justify-tracks`.
 - Added support for `KeyframeEffect.iterationComposite`.
 - Added support for animating custom properties.
 - Added support for blending of mismatched filter lists.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `@keyframes` rules using an `inherit` value to update the resolved value when the parent style changes.
 - Fixed `Animation.commitStyles()` triggering a mutation even when the styles are unchanged.
@@ -407,9 +407,9 @@ Safari 16.4 is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadO
 - Fixed the timing model for updating animations and sending events.
 - Fixed updating timing to invalidate the effect.
 
-##### Web API
+### Web API
 
-###### New Features
+#### New Features
 
 - Added support for 2D-only OffscreenCanvas.
 - Added support for `gamepad.vibrationActuator`.
@@ -437,7 +437,7 @@ Safari 16.4 is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadO
 - Added support to the Permissions API for dedicated workers.
 - Added support for the `messageerror` event.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `-webkit-user-select: none` allowing text to be copied to clipboard.
 - Fixed `contentEditable` caret getting left aligned instead of centered when the `:before` pseudo-element is used.
@@ -519,29 +519,29 @@ Safari 16.4 is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadO
 - Fixed: Removed a gray border while loading images with `loading="lazy"`.
 - Fixed: Removed the `precision="float"` attribute on `<input type="range">`.
 
-##### Web Apps
+### Web Apps
 
-###### New Features
+#### New Features
 
 - Added support for Web Push in web apps saved to the home screen on iOS.
 - Added support for the `"id"` member in Web App Manifest files.
 - Added support for the Badging API.
 - Added support for third-party browsers to offer Add to Home Screen from the Share menu.
 
-##### WebGL
+### WebGL
 
-###### New Features
+#### New Features
 
 - Added support for `display-p3` wide-gamut color space in WebGL canvas.
 - Added support for `WEBGL_clip_cull_distance`.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed video textures set to repeat.
 
-##### Web Inspector
+### Web Inspector
 
-###### New Features
+#### New Features
 
 - Added a Badges button to control what badges are shown in the Elements Tab.
 - Added a Path column to the Network Tab.
@@ -563,7 +563,7 @@ Safari 16.4 is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadO
 - Added support for symbolic breakpoints in the Sources Tab
 - Added using the Shift key to highlight the initiator or initiated resources in the Network Tab.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed “Inspect Element” not highlighting the element.
 - Fixed capturing async stack traces for `queueMicrotask`.
@@ -577,9 +577,9 @@ Safari 16.4 is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadO
 - Fixed URL breakpoints to also pause when HTML attributes are set that trigger loads.
 - fixed: Improved the visual hierarchy of the Layout sidebar in the Elements Tab.
 
-##### WebDriver
+### WebDriver
 
-###### New Features
+#### New Features
 
 - Added support for generateTestReport.
 - Added support for shadow roots.
@@ -587,7 +587,7 @@ Safari 16.4 is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadO
 - Added support for the `SameSite` cookie attribute.
 - Added support for typing characters that are represented by multiple code points, including emoji.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed “Get Element Rect” to not round to integer values.
 - Fixed automation sessions terminating during navigation.
@@ -595,9 +595,9 @@ Safari 16.4 is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadO
 - Fixed HTTP GET requests with a body failing.
 - Fixed the Shift modifier key not applying to typed text.
 
-##### WKWebView
+### WKWebView
 
-###### New Features
+#### New Features
 
 - Added WKPreferences `shouldPrintBackgrounds` API to allow clients to specify if a page’s background should be included when printing.
 

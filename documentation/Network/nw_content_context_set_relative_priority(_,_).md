@@ -25,7 +25,7 @@ func nw_content_context_set_relative_priority(_ context: nw_content_context_t, _
 void nw_content_context_set_relative_priority(nw_content_context_t context, double relative_priority);
 ```
 
-#### Discussion
+## Discussion
 
 Relative priority of contexts only affects ordering when there is a queue of messages to be sent. The priority is a double ranging from 0.0 to 1.0, where default messages are set to 0.5.
 

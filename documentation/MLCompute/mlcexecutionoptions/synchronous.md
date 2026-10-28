@@ -23,7 +23,7 @@ static var synchronous: MLCExecutionOptions { get }
 MLCExecutionOptionsSynchronous
 ```
 
-#### Discussion
+## Discussion
 
 Include this option to wait until execution of the graph on specified device finishes before returning from the execute method.
 

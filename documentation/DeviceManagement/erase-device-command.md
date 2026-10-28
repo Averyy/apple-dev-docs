@@ -19,13 +19,13 @@ Remotely and immediately erase a device.
 
 - [Returning a managed device to service](./returning-a-managed-device-to-service.md)
 
-#### Discussion
+## Discussion
 
 This command allows the server to immediately erase a device, even a locked device, without warning the user. The device sends a response to the server, but it doesn’t retry if it isn’t successful the first time.
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command availability
+### Command availability
 
 |  |  |
 | --- | --- |
@@ -35,7 +35,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | N/A |
 | Required access right | AllowDeviceErase |
 
-##### Example request and response
+### Example request and response
 
 **Request**:
 

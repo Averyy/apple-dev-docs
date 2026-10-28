@@ -24,7 +24,7 @@ var timeResolution: Int { get }
 @property (nonatomic, readonly) NSUInteger timeResolution;
 ```
 
-#### Discussion
+## Discussion
 
 If you use a MIDI file to construct the containing sequence, the resolution is the contents of the file. If you want to keep a time resolution when writing a new file, retrieve this value and then specify it when writing to an audio sequencer. It doesn’t affect the rendering or notion of time of the sequence — only it’s MIDI file representation.
 

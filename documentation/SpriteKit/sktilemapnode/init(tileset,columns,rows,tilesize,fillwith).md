@@ -25,11 +25,11 @@ init(tileSet: SKTileSet, columns: Int, rows: Int, tileSize: CGSize, fillWith til
 - (instancetype) initWithTileSet:(SKTileSet *) tileSet columns:(NSUInteger) columns rows:(NSUInteger) rows tileSize:(CGSize) tileSize fillWithTileGroup:(SKTileGroup *) tileGroup;
 ```
 
-#### Return Value
+## Return Value
 
 A new tile map node.
 
-#### Discussion
+## Discussion
 
 For a grid set type, the overall size, in points, of the node will be `numberOfColumns` * `tileSize.width` wide and `numberOfRows` * `tileSize.height` high. This initializer fills each tile with a texture defined by the descriptors in the final `SKTileGroup` argument.
 

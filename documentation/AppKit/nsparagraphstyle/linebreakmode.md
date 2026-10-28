@@ -19,7 +19,7 @@ var lineBreakMode: NSLineBreakMode { get }
 @property (readonly) NSLineBreakMode lineBreakMode;
 ```
 
-#### Discussion
+## Discussion
 
 This property controls how the text system lays out lines that don’t fit in its container, such as by truncating with an ellipsis (…) or clipping the text. This is different from [`NSParagraphStyle.LineBreakStrategy`](./linebreakstrategy-swift.struct.md), which controls where the system places line breaks in a paragraph.
 

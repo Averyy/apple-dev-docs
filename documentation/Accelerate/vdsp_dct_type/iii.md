@@ -25,7 +25,7 @@ case III
 vDSP_DCT_III
 ```
 
-#### Discussion
+## Discussion
 
 The type-III DCT uses the following operation for a discrete cosine transform:
 

@@ -21,7 +21,7 @@ case `default`
 CPTimeRemainingColorDefault
 ```
 
-#### Discussion
+## Discussion
 
 The color is white when the map template’s [`tripEstimateStyle`](../cpmaptemplate/tripestimatestyle.md) is [`CPTripEstimateStyle.dark`](../cptripestimatestyle/dark.md), and black when the style is [`CPTripEstimateStyle.light`](../cptripestimatestyle/light.md).
 

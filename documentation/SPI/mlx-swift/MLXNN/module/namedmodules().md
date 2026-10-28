@@ -17,7 +17,7 @@ Return a flat array of all the `Module` in the instance (including self) with th
 func namedModules() -> [(String, Module)]
 ```
 
-##### See Also
+### See Also
 
 - [`modules()`](./modules%28%29.md)
 - [`children()`](./children%28%29.md)

@@ -18,7 +18,7 @@ var kDADiskDescriptionWatchVolumeName: Unmanaged<CFArray>
 extern CFArrayRef kDADiskDescriptionWatchVolumeName;
 ```
 
-#### Discussion
+## Discussion
 
 Predefined CFArray object containing a set of disk description keys appropriate for watching volume name changes using DARegisterDiskDescriptionChangedCallback().
 

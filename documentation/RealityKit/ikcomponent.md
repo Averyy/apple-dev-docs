@@ -20,13 +20,13 @@ A component that allows you to procedurally animate a skeletal model using a ful
 struct IKComponent
 ```
 
-#### Overview
+## Overview
 
 Video games and live productions use inverse kinematics (IK) solvers to procedurally adapt the animation of virtual characters to the environment and the person using the experience. Full body IK solvers produce more life like motion due to each demand affecting the whole body.
 
 Use `IKComponent` to create and control a full body iterative IK solver for your character. The solver procedurally adjusts the pose of your character to the demands you set. This component also maintains the state of the entity’s IK solvers within the overall skeletal animation system.
 
-##### Create a solver
+### Create a solver
 
 Define an inverse kinematics rig for the skeleton of the model you want to animate and generate an immutable resource containing it. Create a new component value with the resource.
 
@@ -70,7 +70,7 @@ let resource = try IKResource(rig: rig)
 armEntity.components.set(IKComponent(resource: resource))
 ```
 
-##### Update settings and demands
+### Update settings and demands
 
 The initialized component provides update objects matching the structure of the rig. The update objects expose limited set of parameters and the ability to set the constraint demands that can be adjusted each frame.
 

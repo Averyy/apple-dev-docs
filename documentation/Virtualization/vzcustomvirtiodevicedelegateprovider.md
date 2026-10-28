@@ -19,7 +19,7 @@ class VZCustomVirtioDeviceDelegateProvider
 @interface VZCustomVirtioDeviceDelegateProvider : VZCustomVirtioDeviceProvider
 ```
 
-#### Overview
+## Overview
 
 The delegate runs in the same process as the guest’s `VZVirtualMachine` instance.
 

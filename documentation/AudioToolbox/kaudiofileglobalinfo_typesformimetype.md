@@ -24,7 +24,7 @@ var kAudioFileGlobalInfo_TypesForMIMEType: AudioFilePropertyID { get }
 kAudioFileGlobalInfo_TypesForMIMEType
 ```
 
-#### Discussion
+## Discussion
 
 When accessing this property, provide a pointer, in the `inSpecifier` parameter, to a `CFStringRef` containing a MIME Type.
 

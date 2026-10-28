@@ -19,7 +19,7 @@ let kCFUserNotificationIconURLKey: CFString!
 extern CFStringRef const kCFUserNotificationIconURLKey;
 ```
 
-#### Discussion
+## Discussion
 
 If absent, a default icon based on the alert level is used.
 

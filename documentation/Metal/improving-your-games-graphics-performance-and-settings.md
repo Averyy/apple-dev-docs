@@ -5,13 +5,13 @@
 
 Fix performance glitches and develop default settings for smooth experiences on Apple platforms using the powerful suite of Metal development tools.
 
-#### Overview
+## Overview
 
 Metal games range from having modest performance requirements to pushing hardware to their limits. Players expect smooth frame rates and animation, and when that doesn’t happen, they’re perceived as glitches in the game. You can investigate the underlying cause of these glitches, and organize your work by creating a data collection plan to measure your performance data before and after you make improvements.
 
 After you understand the performance characteristics of your game, you can tailor the player experience for different devices depending on the available set of features, computing power, and memory resources. You can also identify the game’s features that are performance or image-quality oriented and choose a subset that work for the entire game, and in a variety of circumstances. There are many tools like Instruments, Metal HUD, and GPU Debugger to aide you as you investigate performance bottlenecks in your Metal game.
 
-##### Avoid frame glitches
+### Avoid frame glitches
 
 Ideally, players perceive that a game runs smoothly if there are no noticeable frame glitches. A frame glitch is commonly defined as any kind of rendering error, hitch, sudden visual change, and low or uneven frame rate. Hitching occurs when a frame takes too long to render and ends up missing the time it was supposed to display onscreen. Streaming resources and loading shaders inefficiently cause sudden visual changes to the game graphics. And inconsistent frame rates cause the game to fluctuate from a steady frame rate to a lower frame rate, especially when a player wants the best frame rate to perform well, such as during an action scene.
 
@@ -35,7 +35,7 @@ To solve this type of problem, reorganize a long task for the renderer to split 
 
 Apply the same approach to the GPU timeline too. Consider a cache to store temporary resources, like shadow maps, or use GPU culling to reduce geometric complexity. Note that tasks that aren’t part of every frame create opportunities to add delays. Carefully understand all parts of the game’s rendering pipeline to locate and eliminate glitches. There are some techniques to measure, understand, and fix these performance problems.
 
-##### Think through performance problems
+### Think through performance problems
 
 Performance problems typically have several underlying reasons, or root causes. Root causes are usually separate issues that affect the game to different degrees. The process to fix these issues is measure, analyze, and improve. The first step in investigating performance problems is to measure with tools. Analyze these data measurements to identify the performance problem’s root causes. Some problems are easy to find and fix, but most need investigation. After identifying the root causes, prioritize fixing the problem that affects the game’s performance most. After this improvement, re-measure the game until it meets its performance requirements or repeat this improvement process.
 
@@ -49,7 +49,7 @@ The “five whys” technique is a helpful way to find and scope the root cause 
 
 This process creates opportunities to ask additional side questions. Focus on one line of questions at a time and write down the other ones to investigate them afterward. In the example, there was a choice to examine the vertex shader time or the fragment shader time. Because the vertex shader time seems to be the source of the bottleneck, that’s the first place to look. Later, investigate the fragment shader to see if there’s a problem. It’s helpful to put these questions and answers on a diagram or board to see the whole picture. When you make an improvement to the game, then take a full profile again to compare the results and investigate where the next bottleneck is.
 
-##### Organize your work with a plan
+### Organize your work with a plan
 
 To stay organized, create a data collection plan to decide the key data points in the investigation and validate whether you achieved the desired results. Include a process to store the investigation data when you collect it because the game and its data might change during development. This makes it easier to document a specific problem or validate the improvements you made to the game.
 
@@ -68,13 +68,13 @@ Here’s an example of recording a measurement of the frame rate. Capture a vide
 
 Match the data with the kind of improvement you’re trying to make. For instance, if the goal is to improve the frame rate, then recording the GPU frame time is essential. In this case, record a Metal system trace with Instruments for about 5 to 10 seconds. A second example using Metal HUD is to log and display the game’s memory utilization, especially if there’s instability caused by excess resources in memory. These kinds of performance data measurements help inform decisions for the right initial defaults in a variety of situations, like the player’s device capabilities, preferred frame rate, or image quality.
 
-##### Choose the initial defaults for your game
+### Choose the initial defaults for your game
 
 Performance data is useful for selecting good default settings. Choose a few sets of options that work all of the time, rather than presenting all of the options to players. Avoid setting combinations that lead to instability or poor performance. Optimize the game for the range of devices that players may use, and to adjust the default settings based on the device the game is running on. For instance, the game can select a set of defaults based on the amount of memory and the type of processor. For example, the [`userInterfaceIdiom`](../UIKit/uidevice/userinterfaceidiom.md) API on iOS returns the kind of device that the game is running on. Refer to the article [Running code on a specific platform or OS version](../Xcode/running-code-on-a-specific-version.md) for details on customizing the game’s behavior on different Apple platforms.
 
 Each device the game runs on — like iPhone, iPad, or Mac — has different ranges of performance characteristics. Players expect fewer, but tuned, settings for a game running on iPhone compared with Mac. Design a few settings that work well with smaller, portable devices, such as a performance mode that prioritizes battery life and frame rate, and a quality mode that prioritizes image quality. For all devices, tune settings to optimize input latency, frame pacing, and interoperability with the other features on the device. For example, test whether the player can record their screens or switch apps without requiring a restart.
 
-##### Determine the set of options that work for the entire game
+### Determine the set of options that work for the entire game
 
 Use the data collection plan from earlier to monitor the key details for the entire game. The following list of data points can help determine if the game is stable, stays within its memory budget, and has a good frame rate:
 
@@ -85,11 +85,11 @@ Use the data collection plan from earlier to monitor the key details for the ent
 
 If the game doesn’t meet the required performance targets, this data helps to find the cause. The game might need additional texture and geometry optimizations in a level, renderer fixes, shader improvements, or different graphics settings for a device. Repeat this process until game play is smooth throughout the entire game and meets its performance targets.
 
-##### Limit the system’s burst performance
+### Limit the system’s burst performance
 
 Use sustained execution mode to limit the burst performance of the system while the game runs. Include the [`com.apple.developer.sustained-execution`](../BundleResources/entitlements/com.apple.developer.sustained-execution.md) entitlement and set the App Category in the `Info.plist` to one of the Games categories. Use this entitlement to obtain accurate performance measurements while the game runs. Benchmark and test various areas in the game to tune the sustained performance on different devices.
 
-##### Detect the device’s capabilities to choose the settings
+### Detect the device’s capabilities to choose the settings
 
 The game can adjust its runtime performance characteristics by applying these recommendations:
 
@@ -103,13 +103,13 @@ To more finely tune your apps and games, you can call the [Kernel](../kernel/ker
 - `hw.perflevel0.logicalcpu` for the number of performance cores
 - `hw.perflevel1.logicalcpu` for the number of efficiency cores
 
-##### Support features on devices with hardware support
+### Support features on devices with hardware support
 
 When the game starts, query for the GPU family support with the [`supportsFamily(_:)`](./mtldevice/supportsfamily%28_%29.md) API and use the device’s supported hardware features, if they’re available. For instance, prefer to enable hardware-accelerated ray tracing when the hardware supports it. If the game needs more memory to use a feature than is available, then disable that feature as a last resort and provide a fallback if possible. Players prefer to use a feature that’s supported in hardware.
 
 > **Note**:  Hardware-accelerated mesh shaders and ray tracing are supported on `MTLGPUFamilyApple9` GPU families.
 
-##### Adapt the game for battery life or low-power mode
+### Adapt the game for battery life or low-power mode
 
 When designing games that run on a portable device, consider detecting when the app goes into low-power mode. See the [`isLowPowerModeEnabled`](../Foundation/processinfo/islowpowermodeenabled.md) API for more information on getting a notification when the system goes into low-power mode. This technique allows a game to adapt its graphics settings so that it uses less energy. For example, the game can:
 

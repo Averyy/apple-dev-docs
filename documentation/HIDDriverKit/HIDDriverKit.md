@@ -10,7 +10,7 @@ Develop drivers for human-interface devices, such as keyboards, pointing devices
 - DriverKit 19.0+
 - macOS 10.15+
 
-#### Overview
+## Overview
 
 The HIDDriverKit framework provides C++ classes for developing drivers for human interface devices. HIDDriverKit uses the core types defined in [DriverKit](../DriverKit/DriverKit.md), and adds features specific to human interface device development.
 

@@ -10,7 +10,7 @@ framework: "Swift-Org/PackageManagerDocs"
 
 Provide a package manifest for a specific version of Swift.
 
-#### Overview
+## Overview
 
 The package manager supports packages that work with a variety of versions, both the versions of the language and versions of the Swift toolchain, which provides the package manager.
 
@@ -18,7 +18,7 @@ For language-specific version checks, use the language-specific version checks a
 
 The package manager supports a mechanism to allow version-specific manifests to be used alongside a current manifest to support older versions of Swift.
 
-##### Version-specific Manifest Selection
+### Version-specific Manifest Selection
 
 The package manager looks for a version-specific marked manifest version when loading the particular version of a package, by searching for a manifest in the form of `Package@swift-6.swift`. The version is a loosely specified semantic version, resolving in the following order of preference:
 
@@ -40,7 +40,7 @@ A package may have versioned manifest files which specify newer tools versions t
 
 > **Note**: Support for having a versioned manifest file with a *newer* tools version was required when the feature was first introduced because prior versions of the package manager were not aware of the concept and only knew to look for the unversioned `Package.swift`. This is still supported, but there have been many Swift releases since the feature was introduced. It is a best practice to have `Package.swift` declare the newest-supported tools version and for versioned manifest files to only specify older versions.
 
-##### Version-specific tags when resolving remote dependencies
+### Version-specific tags when resolving remote dependencies
 
 The tags that define package versions can *optionally* be suffixed with a marker in the form of `@swift-3`. When the package manager is determining the available tags for a repository, *if* a version-specific marker is available which matches the current tool version, then it *only* considers the versions which have the version-specific marker. Conversely, version-specific tags are ignored by any non-matching tool version.
 

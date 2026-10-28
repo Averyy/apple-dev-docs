@@ -25,11 +25,11 @@ class func applyForce(_ force: CGVector, duration: TimeInterval) -> SKAction
 + (SKAction *) applyForce:(CGVector) force duration:(NSTimeInterval) duration;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 When the action executes, the force is applied continuously to the physics body for the duration of the action. This action accelerates the body without imparting any angular acceleration to it.
 

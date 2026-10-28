@@ -16,11 +16,11 @@ Fetches ad creative rejection reasons.
 - [Apple Ads Campaign Management API 4](./apple-search-ads-campaign-management-api-4.md)
 - [Apple Ads Campaign Management API 5](./apple-search-ads-campaign-management-api-5.md)
 
-#### Discussion
+## Discussion
 
 Use this endpoint to find rejected approval reasons for ad creatives based on default or custom product page. See the [`ProductPageReason`](./productpagereason.md) object for rejection reason code enumerations, parameter descriptions, and [`Selector`](./selector.md) condition operators.
 
-##### Payload example 1: Find ad creative rejection reasons
+### Payload example 1: Find ad creative rejection reasons
 
 **Request**:
 
@@ -103,7 +103,7 @@ POST https://api.searchads.apple.com/api/v5/product-page-reasons/find
 
 ```
 
-##### Payload example 2: Find ad creative rejection reasons
+### Payload example 2: Find ad creative rejection reasons
 
 **Request**:
 

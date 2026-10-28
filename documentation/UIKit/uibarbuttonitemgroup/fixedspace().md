@@ -21,7 +21,7 @@ class func fixedSpace() -> UIBarButtonItemGroup
 + (UIBarButtonItemGroup *) groupWithFixedSpace;
 ```
 
-#### Discussion
+## Discussion
 
 If you specify a group with a single zero-width fixed space, the navigation bar to visually separate the following groups.
 

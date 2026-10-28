@@ -21,7 +21,7 @@ A style that uses abbreviated units, such as “2 mo. ago”.
 static var abbreviated: Date.RelativeFormatStyle.UnitsStyle { get }
 ```
 
-#### Discussion
+## Discussion
 
 This style may give different results in languages other than English.
 

@@ -20,7 +20,7 @@ Removes animation for the specified joint.
 static func removeAnimation(for jointName: String) -> SampledAnimation<Value>.SkeletalAnimationOperation
 ```
 
-#### Return Value
+## Return Value
 
 A [`SampledAnimation.SkeletalAnimationOperation`](../skeletalanimationoperation.md) that, when processed, produces a `SampledAnimation<JointTransforms>` with animation removed.
 

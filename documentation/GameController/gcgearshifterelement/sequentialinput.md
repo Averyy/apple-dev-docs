@@ -20,7 +20,7 @@ var sequentialInput: (any GCRelativeInput)? { get }
 @property (readonly, nullable) id<GCRelativeInput> sequentialInput;
 ```
 
-#### Discussion
+## Discussion
 
 If this property is `nil`, this gear shift isn’t a sequential gear shift. A sequential gear shift requires the user to move through the gears in sequence.
 

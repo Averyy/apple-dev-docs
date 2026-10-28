@@ -16,7 +16,7 @@ A pid_t indicating the process that currently owns exclusive access to the devic
 var hogModePID: pid_t { get throws }
 ```
 
-#### Discussion
+## Discussion
 
 If the device is in a non-mixable mode, the HAL will automatically take hog mode on behalf of the first process to start an IOProc.
 

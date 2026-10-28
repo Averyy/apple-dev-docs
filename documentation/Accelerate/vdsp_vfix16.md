@@ -21,7 +21,7 @@ Converts a vector of single-precision floating-point values to signed 16-bit int
 extern void vDSP_vfix16(const float *__A, vDSP_Stride __IA, short *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 The following code shows an example of using this function:
 

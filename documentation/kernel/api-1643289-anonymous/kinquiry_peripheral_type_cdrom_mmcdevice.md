@@ -13,7 +13,7 @@
 kINQUIRY_PERIPHERAL_TYPE_CDROM_MMCDevice = 0x05
 ```
 
-#### Discussion
+## Discussion
 
 MMC Device.
 

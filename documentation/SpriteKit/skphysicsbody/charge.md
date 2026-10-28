@@ -25,7 +25,7 @@ var charge: CGFloat { get set }
 @property (nonatomic) CGFloat charge;
 ```
 
-#### Discussion
+## Discussion
 
 The electrical charge is used by electromagnetic fields to calculate electromagnetic force effects on the physics body. See [`SKFieldNode`](../skfieldnode.md).
 

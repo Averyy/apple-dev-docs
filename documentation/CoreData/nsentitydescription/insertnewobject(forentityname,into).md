@@ -25,11 +25,11 @@ class func insertNewObject(forEntityName entityName: String, into context: NSMan
 + (NSManagedObject *) insertNewObjectForEntityForName:(NSString *) entityName inManagedObjectContext:(NSManagedObjectContext *) context;
 ```
 
-#### Return Value
+## Return Value
 
 A new, autoreleased, fully configured instance of the class for the entity named `entityName`. The instance has its entity description set and is inserted it into `context`.
 
-#### Discussion
+## Discussion
 
 This method makes it easy for you to create instances of a given entity without worrying about the details of managed object creation. The method is conceptually similar to the following code example.
 

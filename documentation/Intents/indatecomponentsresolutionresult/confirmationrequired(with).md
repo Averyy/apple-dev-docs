@@ -24,11 +24,11 @@ class func confirmationRequired(with dateComponentsToConfirm: DateComponents?) -
 + (instancetype) confirmationRequiredWithDateComponentsToConfirm:(NSDateComponents *) dateComponentsToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INDateComponentsResolutionResult`](../indatecomponentsresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you can resolve the parameter to a single object but you want the user to confirm that value before proceeding. You might ask for confirmation when there is some doubt that the specified object is what the user intended. For example, when booking a restaurant reservation, you might ask the user to confirm a date that is close, but not exactly the same, to the one that was requested.
 

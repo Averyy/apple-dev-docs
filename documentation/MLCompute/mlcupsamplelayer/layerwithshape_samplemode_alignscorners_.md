@@ -19,7 +19,7 @@ Creates an upsample layer with the shape, upsampling algorithm, and corner align
 + (instancetype) layerWithShape:(NSArray<NSNumber *> *) shape sampleMode:(MLCSampleMode) sampleMode alignsCorners:(BOOL) alignsCorners;
 ```
 
-#### Return Value
+## Return Value
 
 An upsample layer.
 

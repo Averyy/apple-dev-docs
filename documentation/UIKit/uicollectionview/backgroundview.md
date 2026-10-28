@@ -23,7 +23,7 @@ var backgroundView: UIView? { get set }
 @property (nonatomic, strong, nullable) UIView * backgroundView;
 ```
 
-#### Discussion
+## Discussion
 
 The view (if any) in this property is positioned underneath all of the other content and sized automatically to fill the entire bounds of the collection view. The background view does not scroll with the collection view’s other content. The collection view maintains a strong reference to the background view object.
 

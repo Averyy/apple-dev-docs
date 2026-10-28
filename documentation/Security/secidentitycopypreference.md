@@ -15,15 +15,15 @@ Returns the preferred identity for the specified name and key use.
 OSStatus SecIdentityCopyPreference(CFStringRef name, CSSM_KEYUSE keyUsage, CFArrayRef validIssuers, SecIdentityRef*identity);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 If a preferred identity has not been set for the specified name, the returned identity reference is `NULL`. You should then typically perform a search for possible identities, using [`SecIdentitySearchCreate`](./secidentitysearchcreate.md) and [`SecIdentitySearchCopyNext`](./secidentitysearchcopynext.md), allowing the user to choose from a list if more than one is found.
 
-##### Special Considerations
+### Special Considerations
 
 Use [`SecIdentityCopyPreferred(_:_:_:)`](./secidentitycopypreferred%28_,_,_%29.md) for new development instead.
 

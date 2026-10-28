@@ -25,7 +25,7 @@ case baseWritingDirection
 kCTParagraphStyleSpecifierBaseWritingDirection
 ```
 
-#### Discussion
+## Discussion
 
 Type: [`CTWritingDirection`](../ctwritingdirection.md). Default value: [`CTWritingDirection.natural`](../ctwritingdirection/natural.md). Affects: [`CTFramesetter`](../ctframesetter.md) and [`CTTypesetter`](../cttypesetter.md).
 

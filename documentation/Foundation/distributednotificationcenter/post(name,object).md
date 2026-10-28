@@ -20,7 +20,7 @@ func post(name aName: NSNotification.Name, object anObject: String?)
 - (void) postNotificationName:(NSNotificationName) aName object:(NSString *) anObject;
 ```
 
-#### Discussion
+## Discussion
 
 This method invokes [`postNotificationName(_:object:userInfo:deliverImmediately:)`](./postnotificationname%28_,object,userinfo,deliverimmediately%29.md) with `userInfo:nil deliverImmediately:NO`.
 

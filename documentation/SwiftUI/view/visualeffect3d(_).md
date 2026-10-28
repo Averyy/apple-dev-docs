@@ -16,11 +16,11 @@ nonisolated
 func visualEffect3D(_ effect: @escaping @Sendable (EmptyVisualEffect, GeometryProxy3D) -> some VisualEffect) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view with the effect applied.
 
-#### Discussion
+## Discussion
 
 You return new effects by calling functions on the first argument provided to the `effect` closure. In this example, `ContentView` is offset in Z by its own depth, causing its back face to appear where the front face of the view was originally located:
 

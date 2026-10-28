@@ -24,7 +24,7 @@ optional func session(_ session: ARSession, didUpdate frame: ARFrame)
 
 - [Displaying an AR Experience with Metal](../displaying-an-ar-experience-with-metal.md)
 
-#### Discussion
+## Discussion
 
 Implement this method if you provide your own display for rendering an AR experience. The provided [`ARFrame`](../arframe.md) object contains the latest image captured from the device camera, which you can render as a scene background, as well as information about camera parameters and anchor transforms you can use for rendering virtual content on top of the camera image.
 

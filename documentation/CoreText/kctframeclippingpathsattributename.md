@@ -25,7 +25,7 @@ let kCTFrameClippingPathsAttributeName: CFString
 extern CFStringRef const kCTFrameClippingPathsAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 The value must be a `CFArrayRef` containing `CFDictionaryRef`s. Each dictionary should have a `kCTFramePathClippingPathAttributeName` key-value pair, and can have a `kCTFramePathFillRuleAttributeName` key-value pair and `kCTFramePathFillRuleAttributeName` key-value pair as optional parameters.
 

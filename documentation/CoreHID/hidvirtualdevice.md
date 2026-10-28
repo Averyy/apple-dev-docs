@@ -19,7 +19,7 @@ actor HIDVirtualDevice
 
 - [Creating virtual devices](./creatingvirtualdevices.md)
 
-#### Overview
+## Overview
 
 A HID device is a computer peripheral intended to provide direction to the system from human input. The specification is a broad, industry-wide standard maintained by the [USB Implementers Forum](https://www.usb.org/hid).
 

@@ -20,7 +20,7 @@ func unregister() throws
 - (BOOL) unregisterAndReturnError:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This is the opposite operation of [`register()`](./register%28%29.md).
 

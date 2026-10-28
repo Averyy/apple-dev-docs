@@ -21,7 +21,7 @@ The previous blend stage value.
 var defaultSource: Self.ValueType? { get }
 ```
 
-#### Discussion
+## Discussion
 
 The default source is the value output from the previous blend stage, and initialized with [`defaultTarget`](./defaulttarget.md) for the first stage.
 

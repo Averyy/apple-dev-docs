@@ -26,7 +26,7 @@ var error: (any Error)? { get }
 @property (nonatomic, readonly, nullable) NSError * error;
 ```
 
-#### Discussion
+## Discussion
 
 Indicates any fatal error that occurred while processing the connection or performing data reading or writing. Use Key-Value Observing to watch this property.
 

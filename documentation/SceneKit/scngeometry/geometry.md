@@ -21,11 +21,11 @@ Creates a new geometry object with no content (or default content).
 + (instancetype) geometry;
 ```
 
-#### Return Value
+## Return Value
 
 A new geometry object.
 
-#### Discussion
+## Discussion
 
 This method creates a geometry with no visible content. You can use an empty geometry with another geometry’s [`levelsOfDetail`](./levelsofdetail.md) property to make the geometry disappear when it is too far away from the camera to usefully render.
 

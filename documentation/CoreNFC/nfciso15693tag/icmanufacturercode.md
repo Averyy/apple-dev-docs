@@ -22,7 +22,7 @@ var icManufacturerCode: Int { get }
 @property (nonatomic, readonly) NSUInteger icManufacturerCode;
 ```
 
-#### Discussion
+## Discussion
 
 The IC manufacturer code comes from bits 49 through 56 of the [`identifier`](./identifier.md) data, in accordance with ISO/IEC 7816-6:2004.
 

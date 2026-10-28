@@ -21,7 +21,7 @@ A type defining the role of a scroll anchor.
 struct ScrollAnchorRole
 ```
 
-#### Overview
+## Overview
 
 You can associate a [`UnitPoint`](./unitpoint.md) to a [`ScrollView`](./scrollview.md) using the [`defaultScrollAnchor(_:)`](./view/defaultscrollanchor%28_%29.md) modifier. By default, the system uses this point for different kinds of behaviors including:
 

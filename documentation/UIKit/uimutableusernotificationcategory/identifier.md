@@ -23,7 +23,7 @@ var identifier: String? { get set }
 @property (nonatomic, copy, nullable) NSString * identifier;
 ```
 
-#### Discussion
+## Discussion
 
 This property is a writable version of the one declared by the parent class.
 

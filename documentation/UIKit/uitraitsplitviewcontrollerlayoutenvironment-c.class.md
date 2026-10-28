@@ -19,7 +19,7 @@ A class that represents the split view controller layout environment trait.
 @interface UITraitSplitViewControllerLayoutEnvironment : NSObject
 ```
 
-#### Overview
+## Overview
 
 The trait specifies whether an ancestor split view controller, if any, is expanded or collapsed.
 

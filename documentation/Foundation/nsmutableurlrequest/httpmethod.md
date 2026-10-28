@@ -25,7 +25,7 @@ var httpMethod: String { get set }
 @property (copy) NSString * HTTPMethod;
 ```
 
-#### Discussion
+## Discussion
 
 The default HTTP method is “GET”.
 

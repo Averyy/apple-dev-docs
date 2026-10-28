@@ -25,11 +25,11 @@ class func property(forKey key: String, in request: URLRequest) -> Any?
 + (id) propertyForKey:(NSString *) key inRequest:(NSURLRequest *) request;
 ```
 
-#### Return Value
+## Return Value
 
 The property associated with `key`, or `nil` if no property has been stored for `key`.
 
-#### Discussion
+## Discussion
 
 Use this method to access protocol-specific information associated with [`URLRequest`](../urlrequest.md) objects.
 

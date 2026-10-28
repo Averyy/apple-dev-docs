@@ -25,7 +25,7 @@ func setTemporaryResourceValue(_ value: (any Sendable)?, forKey key: URLResource
 - (void) setTemporaryResourceValue:(id) value forKey:(NSURLResourceKey) key;
 ```
 
-#### Discussion
+## Discussion
 
 Your app can use a temporary resource value to temporarily store a value for an app-defined resource value key in memory without modifying the actual resource that the URL represents. Once set, you can copy the temporary resource value from the URL object just as you would copy system-defined keys—by calling [`getResourceValue(_:forKey:)`](./getresourcevalue%28_,forkey%29.md) or [`resourceValues(forKeys:)`](./resourcevalues%28forkeys%29.md).
 

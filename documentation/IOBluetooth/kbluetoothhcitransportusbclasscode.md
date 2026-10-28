@@ -17,7 +17,7 @@ var kBluetoothHCITransportUSBClassCode: Int { get }
 kBluetoothHCITransportUSBClassCode
 ```
 
-#### Discussion
+## Discussion
 
 Wireless Controller
 

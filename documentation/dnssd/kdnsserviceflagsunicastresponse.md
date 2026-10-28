@@ -23,7 +23,7 @@ var kDNSServiceFlagsUnicastResponse: UInt32 { get }
 kDNSServiceFlagsUnicastResponse
 ```
 
-#### Discussion
+## Discussion
 
 Request unicast response to query.
 

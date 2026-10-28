@@ -21,7 +21,7 @@ Returns a shading instance that fills with a color.
 static func color(_ color: Color) -> GraphicsContext.Shading
 ```
 
-#### Return Value
+## Return Value
 
 A shading instance filled with a color.
 

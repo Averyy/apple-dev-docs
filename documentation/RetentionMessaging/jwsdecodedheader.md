@@ -19,7 +19,7 @@ object JWSDecodedHeader
 
 - [Responding to real-time retention messaging requests](./responding-to-realtime-retention-messaging-requests.md)
 
-#### Discussion
+## Discussion
 
 The type [`RealtimeRequestBody`](./realtimerequestbody.md) contains a header that’s a `JWSDecodedHeader` object when decoded. Use the information in the `JWSDecodedHeader` to validate the JWS signature of the request body. For more information about validating signatures, see the JSON Web Signature (JWS) [IETF RFC 7515](https://datatracker.ietf.org/doc/html/rfc7515) specification.
 

@@ -25,11 +25,11 @@ func CMSimpleQueueCreate(allocator: CFAllocator?, capacity: Int32, queueOut: Uns
 extern OSStatus CMSimpleQueueCreate(CFAllocatorRef allocator, int32_t capacity, CMSimpleQueueRef*queueOut);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Simple Queue Error Codes](./simple-queue-errors.md).
 
-#### Discussion
+## Discussion
 
 On return, the caller owns the returned `CMSimpleQueue`, and must release it when done with it.
 

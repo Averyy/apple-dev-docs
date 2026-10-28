@@ -21,7 +21,7 @@ class func isCameraDeviceAvailable(_ cameraDevice: UIImagePickerController.Camer
 + (BOOL) isCameraDeviceAvailable:(UIImagePickerControllerCameraDevice) cameraDevice;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the camera indicated by `cameraDevice` is available, or [`false`](../../Swift/false.md) if it is not available.
 

@@ -25,7 +25,7 @@ let kCFAllocatorNull: CFAllocator!
 extern CFAllocatorRef const kCFAllocatorNull;
 ```
 
-#### Discussion
+## Discussion
 
 This allocator is useful as the `bytesDeallocator` in CFData or `contentsDeallocator` in CFString where the memory should not be freed.
 

@@ -23,7 +23,7 @@ func setPrimaryConstituentDeviceSwitchingBehavior(_ switchingBehavior: AVCapture
 - (void) setPrimaryConstituentDeviceSwitchingBehavior:(AVCapturePrimaryConstituentDeviceSwitchingBehavior) switchingBehavior restrictedSwitchingBehaviorConditions:(AVCapturePrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions) restrictedSwitchingBehaviorConditions;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to configure the camera switching behavior of a capture device. Before calling it, determine if a device supports configuring its device switching behavior by querying the device’s [`activePrimaryConstituentDeviceSwitchingBehavior`](./activeprimaryconstituentdeviceswitchingbehavior.md) property. If the value equals `.unsupported`, attempting to configure its switching behavior results in an error.
 

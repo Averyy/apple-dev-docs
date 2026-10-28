@@ -24,11 +24,11 @@ func adam(currentLearningRate currentLearningRateTensor: MPSGraphTensor, beta1 b
 - (NSArray<MPSGraphTensor *> *) adamWithCurrentLearningRateTensor:(MPSGraphTensor *) currentLearningRateTensor beta1Tensor:(MPSGraphTensor *) beta1Tensor beta2Tensor:(MPSGraphTensor *) beta2Tensor epsilonTensor:(MPSGraphTensor *) epsilonTensor valuesTensor:(MPSGraphTensor *) valuesTensor momentumTensor:(MPSGraphTensor *) momentumTensor velocityTensor:(MPSGraphTensor *) velocityTensor maximumVelocityTensor:(MPSGraphTensor *) maximumVelocityTensor gradientTensor:(MPSGraphTensor *) gradientTensor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 If maximumVelocity is nil array of 3 tensors (update, newMomentum, newVelocity) else array of 4 tensors (update, newMomentum, newVelocity, newMaximumVelocity)
 
-#### Discussion
+## Discussion
 
 The adam update ops are added
 

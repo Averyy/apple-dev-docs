@@ -24,7 +24,7 @@ enum MTLCompareFunction
 enum MTLCompareFunction : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 Whenever the comparison test passes, the incoming fragment is compared to the stored data at the specified location.
 

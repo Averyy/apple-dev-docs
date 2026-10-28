@@ -24,7 +24,7 @@ case donate
 PKPaymentButtonTypeDonate
 ```
 
-#### Discussion
+## Discussion
 
 This button looks like:
 

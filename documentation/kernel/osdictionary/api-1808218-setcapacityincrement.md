@@ -12,11 +12,11 @@ virtual unsigned int setCapacityIncrement(
  unsigned increment);
 ```
 
-#### Return Value
+## Return Value
 
 The new storage increment of the dictionary, which may be different from the number requested.
 
-#### Overview
+## Overview
 
 An OSDictionary allocates storage for key/object pairs in multiples of the capacity increment. Calling this function does not immediately reallocate storage.
 

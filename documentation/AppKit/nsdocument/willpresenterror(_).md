@@ -19,11 +19,11 @@ func willPresentError(_ error: any Error) -> any Error
 - (NSError *) willPresentError:(NSError *) error;
 ```
 
-#### Return Value
+## Return Value
 
 The error that should actually be presented.
 
-#### Discussion
+## Discussion
 
 The default implementation of this method merely returns the passed-in error. The returned error may simply be forwarded to the document controller.
 

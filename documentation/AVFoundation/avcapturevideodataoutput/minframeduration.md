@@ -19,7 +19,7 @@ The minimum frame duration.
 @property (nonatomic) CMTime minFrameDuration;
 ```
 
-#### Discussion
+## Discussion
 
 This property specifies the minimum duration of each video frame produced by the video data output, placing a lower bound on the amount of time that should separate consecutive frames. This is equivalent to the inverse of the maximum frame rate. A value of [`zero`](../../CoreMedia/cmtime/zero.md) or [`invalid`](../../CoreMedia/cmtime/invalid.md) indicates an unlimited maximum frame rate.
 

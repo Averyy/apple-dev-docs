@@ -24,11 +24,11 @@ class func colorMap() -> any CIFilter & CIColorMap
 + (CIFilter<CIColorMap> *) colorMapFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies a color map filter to an image. The effect transforms source color values by converting the unpremultiplied RGB values to luma using the weighting `(0.2125, 0.7154, 0.0721)`. The luma value is then used to look up the new color from the gradient image.
 

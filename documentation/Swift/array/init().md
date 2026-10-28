@@ -21,7 +21,7 @@ Creates a new, empty array.
 init()
 ```
 
-#### Discussion
+## Discussion
 
 This is equivalent to initializing with an empty array literal. For example:
 

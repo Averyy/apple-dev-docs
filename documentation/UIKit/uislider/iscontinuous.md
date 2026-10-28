@@ -22,7 +22,7 @@ var isContinuous: Bool { get set }
 @property (nonatomic, getter=isContinuous) BOOL continuous;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the slider triggers the associated target’s action method repeatedly, as the user moves the thumb. If [`false`](../../Swift/false.md), the slider triggers the associated action method just once, when the user releases the slider’s thumb control to set the final value.
 

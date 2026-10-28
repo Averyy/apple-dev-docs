@@ -19,11 +19,11 @@ class func paletteFont(ofSize fontSize: CGFloat) -> NSFont
 + (NSFont *) paletteFontOfSize:(CGFloat) fontSize;
 ```
 
-#### Return Value
+## Return Value
 
 A font object of the specified size.
 
-#### Discussion
+## Discussion
 
 If `fontSize` is 0 or negative, returns the palette title font at the default size.
 

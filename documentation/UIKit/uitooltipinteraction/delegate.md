@@ -22,7 +22,7 @@ weak var delegate: (any UIToolTipInteractionDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<UIToolTipInteractionDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 To provide tooltip text based on the current state or unique logic of your app, set the [`delegate`](./delegate.md) property to an object that conforms to the [`UIToolTipInteractionDelegate`](../uitooltipinteractiondelegate.md) protocol and implements the [`toolTipInteraction(_:configurationAt:)`](../uitooltipinteractiondelegate/tooltipinteraction%28_,configurationat%29.md) method. The method returns a [`UIToolTipConfiguration`](../uitooltipconfiguration.md) object containing the text to display in the tooltip. For example, the following code listing instructs the tooltip to show the name of the view’s background color instead of the [`defaultToolTip`](./defaulttooltip.md) text. If the color name is unavailable, the method returns `nil`, which disables the display of the tooltip.
 

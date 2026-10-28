@@ -17,7 +17,7 @@ Nearest neighbor interpolation using MLX Metal kernel.
 func nearestInterpolate(_ x: MLXArray, size: (Int, Int)? = nil, scaleFactor: (Float, Float)? = nil) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 Interpolated tensor of shape [B, C, outH, outW]
 

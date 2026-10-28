@@ -19,7 +19,7 @@ func setSpellingState(_ value: Int, range charRange: NSRange)
 - (void) setSpellingState:(NSInteger) value range:(NSRange) charRange;
 ```
 
-#### Discussion
+## Discussion
 
 May be called or overridden to control setting of spelling and grammar indicators on text, used to highlight portions of the text that are flagged for spelling or grammar issues.
 

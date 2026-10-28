@@ -21,7 +21,7 @@ var soundName: String? { get set }
 @property (copy, nullable) NSString * soundName;
 ```
 
-#### Discussion
+## Discussion
 
 Passing the [`NSUserNotificationDefaultSoundName`](../nsusernotificationdefaultsoundname.md) constant causes the default notification center sound to be played.
 

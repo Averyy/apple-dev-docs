@@ -10,11 +10,11 @@ virtual IOReturn gatedReturnCommand(
  IOCommand *vCommand);
 ```
 
-#### Return Value
+## Return Value
 
 Always returns kIOReturnSuccess if the vCommand argument is valid.
 
-#### Overview
+## Overview
 
 The gatedReturnCommand method is used to serialize the return of a command to the pool behind a command gate, runAction-ed by returnCommand.
 

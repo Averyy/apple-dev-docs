@@ -20,7 +20,7 @@ The block that the system calls when the rendering context changes.
 @property (nonatomic, readonly) AURenderContextObserver renderContextObserver;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this property if your Audio Unit creates auxilliary realtime rendering threads. Return a block for the system to call when the rendering context changes.
 

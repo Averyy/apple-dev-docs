@@ -25,11 +25,11 @@ convenience init(fileNamed fileName: String)
 + (instancetype) referenceNodeWithFileNamed:(NSString *) fileName;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized reference node.
 
-#### Discussion
+## Discussion
 
 This initializer is for loading files that reside inside of the app bundle.
 

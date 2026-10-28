@@ -24,7 +24,7 @@ func maxPooling2D(withSourceTensor source: MPSGraphTensor, descriptor: MPSGraphP
 - (MPSGraphTensor *) maxPooling2DWithSourceTensor:(MPSGraphTensor *) source descriptor:(MPSGraphPooling2DOpDescriptor *) descriptor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object
 

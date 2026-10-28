@@ -19,7 +19,7 @@ class NSComboButton
 @interface NSComboButton : NSControl
 ```
 
-#### Overview
+## Overview
 
 An [`NSComboButton`](./nscombobutton.md) object is a button that displays a title string, image, and an optional control for displaying a menu. Use this control in places where you want to offer a button with a default action and one or more alternative actions. Clicking the title or image executes the default action you provide, and clicking the menu control displays a menu for selecting a different action. If you configure the button to hide the menu control, a long-press gesture displays the menu.
 

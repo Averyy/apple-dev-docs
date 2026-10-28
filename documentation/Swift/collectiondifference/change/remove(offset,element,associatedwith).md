@@ -21,7 +21,7 @@ A removal.
 case remove(offset: Int, element: ChangeElement, associatedWith: Int?)
 ```
 
-#### Discussion
+## Discussion
 
 The `offset` value is the offset of the element to be removed in the original state of the collection. A non-`nil` `associatedWith` value is the offset of the complementary change.
 

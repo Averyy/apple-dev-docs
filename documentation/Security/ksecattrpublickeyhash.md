@@ -25,7 +25,7 @@ let kSecAttrPublicKeyHash: CFString
 extern CFStringRef const kSecAttrPublicKeyHash;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFData`](../CoreFoundation/cfdata.md) and contains the hash of a certificate’s public key. Items of class [`kSecClassCertificate`](./ksecclasscertificate.md) have this attribute. Read only.
 

@@ -5,7 +5,7 @@
 
 Transmit your remote notification payload and device token information to Apple Push Notification service (APNs).
 
-#### Overview
+## Overview
 
 As a best-effort service, APNs may reorder notifications you send to the same device token. If APNs can’t deliver a notification immediately, it may store the notification for 30 days or less, depending on the date you specify in the `apns-expiration` header. APNs attempts to deliver the notification the next time the device activates and is available online.
 
@@ -13,7 +13,7 @@ APNs stores only one notification per bundle ID. When you send multiple notifica
 
 When you have a notification to send to a user, your provider must construct a POST request and send it to Apple Push Notification service (APNs). Upon receiving your server’s POST request, APNs validates the request using either the provided authentication token or your server’s certificate. If validation succeeds, APNs uses the provided device token to identify the user’s device. It then tries to send your JSON payload to that device. For information on sending test notifications without setting up the environment, refer to [Testing notifications using the Push Notification Console](./testing-notifications-using-the-push-notification-console.md).
 
-##### Establish a connection to APNs
+### Establish a connection to APNs
 
 Use HTTP/2 and TLS 1.2 or later to establish a connection between your provider server and one of the following servers:
 
@@ -28,7 +28,7 @@ APNs allows multiple concurrent streams for each connection, but don’t assume 
 
 If you experience a revoked provider certificate, or if you revoke your authentication token, close all connections to APNs, fix the problem, and then open new connections. APNs may also terminate a connection by sending a `GOAWAY` frame. The payload of the `GOAWAY` frame includes JSON data with a `reason` key, indicating the reason for the connection termination. For a list of values for the `reason` key, refer to the response error strings in [Handling notification responses from APNs](./handling-notification-responses-from-apns.md).
 
-##### Create a POST request to APNs
+### Create a POST request to APNs
 
 To send a notification to a user’s device, construct and send a POST notification to APNs. Send this request over the connection you created using HTTP/2 and TLS. To create your POST notification, you must already have the following pieces of information:
 
@@ -38,7 +38,7 @@ To send a notification to a user’s device, construct and send a POST notificat
 
 > **Note**:  If you’re using certificate-based authentication, you send your provider certificate to APNs when setting up your TLS connection. For more information, refer to [Establishing a certificate-based connection to APNs](./establishing-a-certificate-based-connection-to-apns.md).
 
-##### Send a POST request to APNs
+### Send a POST request to APNs
 
 To deliver the notifications, you’re required to have some header fields. In addition to the preceding data, add the following header fields in to your request. Other headers are optional or may depend on whether you’re using token-based or certificate-based authentication.
 
@@ -108,7 +108,7 @@ DATA
 
 ```
 
-##### Know when to use push types
+### Know when to use push types
 
 The `apns-push-type` header field has the following valid values. The descriptions below describe when and how to use these values. Send an `apns-push-type` header with each push. Recent and upcoming features may not work if this header is missing. See the table above to determine if this header is required or optional.
 
@@ -155,7 +155,7 @@ The `apns-push-type` header field has the following valid values. The descriptio
 
 Certificate-based connection supports only a subset of push types and token-based connection supports all push-types. For more information, refer to [Establishing a certificate-based connection to APNs](./establishing-a-certificate-based-connection-to-apns.md). Check Extension `1.2.840.113635.100.6.3.6` and `1.2.840.113635.100.6.3.4` of your push certificate. These extensions list all the push topics allowed for your certificate. If a push topic for a specific push type isn’t listed, you can’t use the certificate to send a notification of that push type.
 
-##### Follow best practices while sending push notifications with APNs
+### Follow best practices while sending push notifications with APNs
 
 Below are some APNs best practices to consider:
 

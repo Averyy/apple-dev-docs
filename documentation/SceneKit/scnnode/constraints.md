@@ -25,7 +25,7 @@ var constraints: [SCNConstraint]? { get set }
 @property (copy, nullable) NSArray<SCNConstraint *> * constraints;
 ```
 
-#### Discussion
+## Discussion
 
 An array of constraint objects. Before rendering, SceneKit evaluates all constraints attached to a node hierarchy and adjusts node transformations appropriately.
 

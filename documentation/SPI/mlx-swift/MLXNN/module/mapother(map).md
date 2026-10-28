@@ -17,7 +17,7 @@ Function that will turn a `(Any) -> Result?` into a function suitable for use in
 static func mapOther<Result>(map: @escaping (Any) -> Result? = { $0 }) -> (ModuleItem) -> Result?
 ```
 
-#### Discussion
+## Discussion
 
 For example:
 
@@ -28,7 +28,7 @@ let floatArguments = module.mapParameters { other in
 }
 ```
 
-##### See Also
+### See Also
 
 - [Module Filter and Map Functions](../module-filters.md)
 - [`ModuleValue.other(_:)`](../modulevalue/other%28_%29.md)

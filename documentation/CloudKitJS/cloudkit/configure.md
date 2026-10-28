@@ -17,11 +17,11 @@ CloudKit configure(
 );
 ```
 
-#### Return Value
+## Return Value
 
 The configured CloudKit object.
 
-#### Discussion
+## Discussion
 
 For each container that you access, specify the container ID, API token, and environment.
 

@@ -24,7 +24,7 @@ dictionary ApplePayPaymentAuthorizationResult {
 
 - [Apple Pay on the Web Version 3 Release Notes](./apple-pay-on-the-web-version-3-release-notes.md)
 
-#### Overview
+## Overview
 
 Use the [Apple Pay Status Codes](./apple-pay-status-codes.md) values of [`STATUS_SUCCESS`](./applepaysession/status_success.md) to indicate when the payment authorization succeeds, or [`STATUS_FAILURE`](./applepaysession/status_failure.md), along with the errors, when it fails.
 

@@ -23,7 +23,7 @@ var maximumNumberOfLines: Int { get set }
 @property (nonatomic) NSUInteger maximumNumberOfLines;
 ```
 
-#### Discussion
+## Discussion
 
 The layout manager uses the value of this property to determine the maximum number of lines associated with the text container. The default value of this property is `0`, which indicates that there is no limit.
 

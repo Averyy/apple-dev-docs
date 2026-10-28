@@ -23,7 +23,7 @@ var rightView: UIView? { get set }
 @property (nonatomic, strong, nullable) UIView * rightView;
 ```
 
-#### Discussion
+## Discussion
 
 You can use the right overlay view to provide indicate additional features available for the text field. For example, you might display a bookmarks button in this location to allow the user to select from a set of predefined items. The right overlay view flips automatically in a right-to-left user interface.
 

@@ -21,7 +21,7 @@ The App Store has already received a refund request for this Apple In-App Purcha
 case duplicateRequest
 ```
 
-#### Discussion
+## Discussion
 
 StoreKit returns this error if the App Store has previously received a refund request for this transaction and the refund decision is still pending, has been previously denied, or has been previously approved.
 

@@ -15,7 +15,7 @@ Callback called when a write request packet is received for a 'virtual' firewire
 typedef UInt32 (*FWWriteCallback)(void *refcon, UInt16 nodeID, IOFWSpeed & speed, FWAddress addr, UInt32 len, const void *buf, IOFWRequestRefCon requestRefcon);
 ```
 
-#### Return Value
+## Return Value
 
 return: kFWResponseComplete = 0, OK kFWResponseConflictError = 4, Resource conflict, may retry kFWResponseDataError = 5, Data not available kFWResponseTypeError = 6, Operation not supported kFWResponseAddressError = 7 Address not valid in target device
 

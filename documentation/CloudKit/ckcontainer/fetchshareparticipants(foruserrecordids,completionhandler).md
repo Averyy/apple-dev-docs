@@ -22,7 +22,7 @@ Fetches share participants with the specified user record IDs.
 func fetchShareParticipants(forUserRecordIDs userRecordIDs: [CKRecord.ID], completionHandler: @escaping @Sendable (Result<[CKRecord.ID : Result<CKShare.Participant, any Error>], any Error>) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 The closure doesn’t return a value and takes the following parameters:
 

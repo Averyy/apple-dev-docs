@@ -19,7 +19,7 @@ Options that allow the model to use all available compute units.
 static let `default`: SpecializationOptions
 ```
 
-#### Discussion
+## Discussion
 
 The specialization process selects the combination of compute units that minimizes inference latency.
 

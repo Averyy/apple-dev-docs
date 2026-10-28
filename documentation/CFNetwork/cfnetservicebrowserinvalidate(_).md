@@ -26,11 +26,11 @@ func CFNetServiceBrowserInvalidate(_ browser: CFNetServiceBrowser)
 extern void CFNetServiceBrowserInvalidate(CFNetServiceBrowserRef browser);
 ```
 
-#### Discussion
+## Discussion
 
 This function invalidates the specified instance of a Network Service browser object. Any searches using the specified instance that are in progress when this function is called are stopped. An invalidated browser cannot be scheduled on a run loop and its callback function is never called.
 
-##### Special Considerations
+### Special Considerations
 
 This function is thread safe as long as another thread does not alter the same CFNetServiceBrowserRef at the same time.
 

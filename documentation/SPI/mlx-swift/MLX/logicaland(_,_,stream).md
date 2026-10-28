@@ -17,7 +17,7 @@ Element-wise logical and.
 func logicalAnd(_ a: some ScalarOrArray, _ b: some ScalarOrArray, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 Logical and on two arrays with [Numpy Style Broadcasting](./broadcasting.md).
 
@@ -32,7 +32,7 @@ let r = (a .< b) .&& ((a + 1) .> b)
 let r2 = logicalAnd((a .< b), ((a + 1) .> b))
 ```
 
-##### See Also
+### See Also
 
 - [Arithmetic](./arithmetic.md)
 - [Logical Operators](./logical.md)

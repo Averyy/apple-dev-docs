@@ -25,11 +25,11 @@ class func current() -> Progress?
 + (NSProgress *) currentProgress;
 ```
 
-#### Return Value
+## Return Value
 
 The progress instance for the current thread, if any.
 
-#### Discussion
+## Discussion
 
 If you invoke [`becomeCurrent(withPendingUnitCount:)`](./becomecurrent%28withpendingunitcount%29.md) on the current thread, this method returns the progress instance.
 

@@ -21,7 +21,7 @@ A dictionary key for assigning tag collections to.
 extern CFStringRef const kCMTagCollectionTagsArrayKey;
 ```
 
-#### Discussion
+## Discussion
 
 Avoid creating dictionaries and setting this key yourself. Call [`CMTagCollectionCopyAsDictionary`](./cmtagcollectioncopyasdictionary.md) on an existing, valid tag collection instead.
 

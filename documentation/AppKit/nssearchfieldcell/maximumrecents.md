@@ -19,7 +19,7 @@ var maximumRecents: Int { get set }
 @property NSInteger maximumRecents;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property must be between `0` and `254`. Specifying a negative value for the property sets it to the default value, which is `10`. Specifying a value greater than `254` sets the property to `254`.
 

@@ -20,11 +20,11 @@ func CGGetDisplaysWithPoint(_ point: CGPoint, _ maxDisplays: UInt32, _ displays:
 extern CGError CGGetDisplaysWithPoint(CGPoint point, uint32_t maxDisplays, CGDirectDisplayID *displays, uint32_t *matchingDisplayCount);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. To interpret the result code, see [`CGError`](./cgerror.md).
 
-#### Discussion
+## Discussion
 
 If the `displays` array is `nil`, this function ignores the `maxDisplays` parameter. If the `maxDisplays` parameter is `0`, this function ignores the `displays` array. In any case, this function fills in the `matchingDisplayCount` pointer with the number of displays that contain the specified point.
 

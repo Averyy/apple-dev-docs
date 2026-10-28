@@ -21,11 +21,11 @@ func draggingSession(_ session: NSDraggingSession, sourceOperationMaskFor contex
 - (NSDragOperation) draggingSession:(NSDraggingSession *) session sourceOperationMaskForDraggingContext:(NSDraggingContext) context;
 ```
 
-#### Return Value
+## Return Value
 
 A dragging operation you specify.
 
-#### Discussion
+## Discussion
 
 To account for unexpected contexts, set a `default` case for the most specific context your app handles. The following code shows an example that handles different dragging contexts and includes a default case.
 

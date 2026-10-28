@@ -23,7 +23,7 @@ mutating func sort(by areInIncreasingOrder: (Self.Element, Self.Element) throws 
 
 Available when `Self` conforms to `RandomAccessCollection`.
 
-#### Discussion
+## Discussion
 
 When you want to sort a collection of elements that don’t conform to the `Comparable` protocol, pass a closure to this method that returns `true` when the first element should be ordered before the second.
 

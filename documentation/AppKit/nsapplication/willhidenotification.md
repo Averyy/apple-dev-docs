@@ -19,7 +19,7 @@ class let willHideNotification: NSNotification.Name
 extern NSNotificationName NSApplicationWillHideNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is `NSApp`. This notification doesn’t contain a `userInfo` dictionary.  The system posts this notification on the main actor.
 

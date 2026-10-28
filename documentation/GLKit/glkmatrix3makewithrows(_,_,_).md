@@ -22,7 +22,7 @@ func GLKMatrix3MakeWithRows(_ row0: GLKVector3, _ row1: GLKVector3, _ row2: GLKV
 static GLKMatrix3 GLKMatrix3MakeWithRows(GLKVector3 row0, GLKVector3 row1, GLKVector3 row2);
 ```
 
-#### Return Value
+## Return Value
 
 A new matrix.
 

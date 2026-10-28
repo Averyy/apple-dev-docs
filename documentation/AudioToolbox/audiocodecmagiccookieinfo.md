@@ -24,7 +24,7 @@ struct AudioCodecMagicCookieInfo
 struct AudioCodecMagicCookieInfo;
 ```
 
-#### Overview
+## Overview
 
 This structure is passed as input to the [`AudioCodecGetProperty(_:_:_:_:)`](./audiocodecgetproperty%28_,_,_,_%29.md) function for the `kAudioCodecPropertyFormatList` property. The first `4 + sizeof(void *)` bytes of the buffer pointed to by the function’s `outPropertyData` parameter contains this structure on input.
 

@@ -13,11 +13,11 @@
 errno_t ifmaddr_release(ifmultiaddr_t ifmaddr);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success. Only error will be EINVAL if ifmaddr is not valid.
 
-#### Discussion
+## Discussion
 
 Decrement the reference count of an interface multicast address. If the reference count reaches zero, the ifmultiaddr will be removed from the interface and the ifmultiaddr will be freed.
 

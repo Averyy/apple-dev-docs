@@ -5,7 +5,7 @@
 
 Combine gestures to create complex interactions.
 
-#### Overview
+## Overview
 
 When you add multiple gestures to your app’s view hierarchy, you need to decide how the gestures interact with each other. You use gesture composition to define the order SwiftUI recognizes gestures. There are three gesture composition types:
 
@@ -15,11 +15,11 @@ When you add multiple gestures to your app’s view hierarchy, you need to decid
 
 When you combine gesture modifiers simultaneously, SwiftUI must recognize all subgesture patterns at the same time for it to recognize the combining gesture. When you sequence gesture modifiers one after the other, SwiftUI must recognize each subgesture in order. Finally, when you combine gestures exclusively, SwiftUI recognizes the entire gesture pattern when SwiftUI only recognizes one subgesture but not the others.
 
-##### Sequence one gesture after another
+### Sequence one gesture after another
 
 When you sequence one gesture after another, SwiftUI recognizes the first gesture before it recognizes the second. For example, to require a long press before the user can drag a view, you sequence a [`DragGesture`](./draggesture.md) after a [`LongPressGesture`](./longpressgesture.md).
 
-###### Model sequenced gesture states
+#### Model sequenced gesture states
 
 To make it easier to track complicated states, use an enumeration that captures all of the states you need to configure your views. In the following example, there are three important states: no interaction (`inactive`), long press in progress (`pressing`), and dragging (`dragging`).
 
@@ -64,7 +64,7 @@ struct DraggableCircle: View {
     ...
 ```
 
-###### Create gestures and update the UI state
+#### Create gestures and update the UI state
 
 When you sequence two gestures, the callbacks capture the state of both gestures. In the update callback, the new `value` uses an enumeration to represent the combination of the possible gesture states. The code below converts the underlying gesture states into the high-level `DragState` enumeration defined above.
 

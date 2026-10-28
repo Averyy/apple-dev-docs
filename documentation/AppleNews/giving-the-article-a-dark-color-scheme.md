@@ -5,7 +5,7 @@
 
 Apply a new color scheme to your article.
 
-#### Overview
+## Overview
 
 In this third advanced article design, you’ll create some visual effects using a dark color scheme, a `video` component, and a fixed image fill.
 
@@ -13,7 +13,7 @@ In this third advanced article design, you’ll create some visual effects using
 
 ![Screenshot of an Apple News article with a dark color scheme on iPhone.](https://developer.apple.com/tutorials/images/com.apple.applenews/media-3624917@2x.png)
 
-##### Define a Dark Background Color for Components
+### Define a Dark Background Color for Components
 
 You can use a dark color scheme to create contrast between one group of articles and another or for variety within a single article.
 
@@ -25,7 +25,7 @@ This `ComponentStyle` object has a dark background color.
 
 Your code should look like the example code [darkBackgroundStyle: Result](./giving-the-article-a-dark-color-scheme.md#darkBackgroundStyle-Result).
 
-###### darkBackgroundStyle: Copy This Code
+#### darkBackgroundStyle: Copy This Code
 
 ```json
 ,
@@ -34,7 +34,7 @@ Your code should look like the example code [darkBackgroundStyle: Result](./givi
     }
 ```
 
-###### darkBackgroundStyle: Result
+#### darkBackgroundStyle: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -51,7 +51,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Define a Light-Color Text Style
+### Define a Light-Color Text Style
 
 The `ComponentTextStyle` object called `bodyFirstDropCapDark` has a light text color.
 
@@ -60,7 +60,7 @@ The `ComponentTextStyle` object called `bodyFirstDropCapDark` has a light text c
 
 Your code should look like the example code [bodyFirstDropCapDark: Result](./giving-the-article-a-dark-color-scheme.md#bodyFirstDropCapDark-Result).
 
-###### bodyFirstDropCapDark: Copy This Code
+#### bodyFirstDropCapDark: Copy This Code
 
 ```json
 ,
@@ -74,7 +74,7 @@ Your code should look like the example code [bodyFirstDropCapDark: Result](./giv
     }
 ```
 
-###### bodyFirstDropCapDark: Result
+#### bodyFirstDropCapDark: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -95,7 +95,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Implement the Dark Color Scheme
+### Implement the Dark Color Scheme
 
 You’ll move some components from the header into a new section and add references to a new `ComponentStyle` object and a new `ComponentTextStyle` object.
 
@@ -112,7 +112,7 @@ Your code should look like the example code [Dark Color Scheme: Result](./giving
 
 After you make these changes in your code, you can preview your working `article.json` file in News Preview to see the dark color scheme.
 
-###### Components: Copy This Code
+#### Components: Copy This Code
 
 ```json
         {
@@ -136,7 +136,7 @@ After you make these changes in your code, you can preview your working `article
         },
 ```
 
-###### Section Boundary: Copy This Code
+#### Section Boundary: Copy This Code
 
 ```json
 ]
@@ -148,7 +148,7 @@ After you make these changes in your code, you can preview your working `article
       "components": [
 ```
 
-###### Dark Color Scheme: Result
+#### Dark Color Scheme: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -232,7 +232,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Set the Default to a Dark Color Scheme
+### Set the Default to a Dark Color Scheme
 
 To view the dark color scheme in Dark Mode, switch your simulator device to a dark systemwide appearance (Features > Toggle Appearance).
 
@@ -243,7 +243,7 @@ In [Define a Dark Background Color for Components](./giving-the-article-a-dark-c
 1. Copy the example code from [Condition Dark Mode: Copy This Code](./giving-the-article-a-dark-color-scheme.md#Condition-Dark-Mode-Copy-This-Code).
 2. Paste the code inside the `darkBackgroundStyle`, `componentStyle` of your article, at the end of this line: `"backgroundColor": "#202020"`.` `Your code should look like the example code in [Condition Dark Mode: Result](./giving-the-article-a-dark-color-scheme.md#Condition-Dark-Mode-Result).
 
-###### Condition Dark Mode: Copy This Code
+#### Condition Dark Mode: Copy This Code
 
 ```json
 ,
@@ -260,7 +260,7 @@ In [Define a Dark Background Color for Components](./giving-the-article-a-dark-c
 
 ```
 
-###### Condition Dark Mode: Result
+#### Condition Dark Mode: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -295,17 +295,17 @@ To view the dark color scheme when the device appearance is toggled, preview you
 
 ![Screenshot of an Apple News article with a dark color scheme on iPhone displaying a dark systemwide appearance.](https://developer.apple.com/tutorials/images/com.apple.applenews/media-3966566@2x.png)
 
-##### Further Exploration
+### Further Exploration
 
 For information about using Dark Mode and adjusting designs for light and dark appearances, see [Apple Human Interface Guidelines > Dark Mode](https://developer.apple.com/design/human-interface-guidelines/macos/visual-design/dark-mode/).
 
 For information about updating your article so that it adapts when Dark Mode is active, see [Supporting Dark Mode for Your Article](./supporting-dark-mode-for-your-article.md).
 
-##### Previous
+### Previous
 
 [Viewing the Finished Article for Advanced Design Tutorial 2](./viewing-the-finished-article-for-advanced-design-tutorial-2.md)
 
-##### Next
+### Next
 
 [Adding a Video](./adding-a-video.md)
 

@@ -21,7 +21,7 @@ var templates: [CPTemplate] { get }
 @property (nonatomic, strong, readonly) NSArray<__kindof CPTemplate *> * templates;
 ```
 
-#### Discussion
+## Discussion
 
 The array contains the root template from each of the tab bar’s tabs. To add new templates to the tab bar, to remove or reorder existing templates, or to update a template’s tab bar appearance, use the [`updateTemplates(_:)`](./updatetemplates%28_%29.md) method.
 

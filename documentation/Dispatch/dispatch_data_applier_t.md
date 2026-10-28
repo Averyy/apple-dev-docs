@@ -21,7 +21,7 @@ A block to invoke for every contiguous memory region in a data object.
 typedef _Bool (^)(NSObject<OS_dispatch_data> *, unsigned long, const void *, unsigned long) dispatch_data_applier_t;
 ```
 
-#### Discussion
+## Discussion
 
 The parameters of a dispatch data applier block are as follows:
 

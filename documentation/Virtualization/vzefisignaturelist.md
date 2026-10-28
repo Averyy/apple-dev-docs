@@ -19,7 +19,7 @@ class VZEFISignatureList
 @interface VZEFISignatureList : NSObject
 ```
 
-#### Overview
+## Overview
 
 This class represents a UEFI signature list that can contain X.509 certificates or SHA-256 hashes.
 

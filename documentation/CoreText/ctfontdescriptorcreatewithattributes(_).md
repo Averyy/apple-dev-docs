@@ -25,11 +25,11 @@ func CTFontDescriptorCreateWithAttributes(_ attributes: CFDictionary) -> CTFontD
 extern CTFontDescriptorRefCTFontDescriptorCreateWithAttributes(CFDictionaryRef attributes);
 ```
 
-#### Return Value
+## Return Value
 
 A new font descriptor with the attributes specified.
 
-#### Discussion
+## Discussion
 
 The provided attribute dictionary can contain arbitrary attributes that are preserved; however, unrecognized attributes are ignored on font creation and may not be preserved over the round trip from descriptor to font and back to descriptor.
 

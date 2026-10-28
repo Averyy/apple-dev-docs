@@ -12,7 +12,7 @@ Add an Intent Extension to your app to handle money transfer requests with Siri.
 - Mac Catalyst 10.0+
 - Xcode 17.0+
 
-#### Overview
+## Overview
 
 The app in this sample project demonstrates how to send payments between users by implementing [`INSendPaymentIntentHandling`](../Intents/insendpaymentintenthandling.md). Users can make payments with Siri and view a list of previously completed payments inside the main app.
 
@@ -24,7 +24,7 @@ The project consists of three targets:
 
 See [Creating an Intents App Extension](./creating-an-intents-app-extension.md). for more information on the general process of adding an Intent Extension to your app, including how to enable the Siri capability and configure the `NSExtension` keys in the `Info.plist`.
 
-##### Configure the Sample Code Project
+### Configure the Sample Code Project
 
 This sample app can be run in the iOS Simulator without any special setup, but in order to run on a device you will need to update the build settings and enable an App Group for the project:
 
@@ -36,7 +36,7 @@ This sample app can be run in the iOS Simulator without any special setup, but i
 
 > **Note**: Each target in the project must preface its bundle identifier with the bundle identifier of the app’s main target. For example, if you set the bundle identifier for the `Payments` target to `com.example.Payments`, then you should set the bundle identifier for the `PaymentsIntentsExtension` target to `com.example.Payments.PaymentsIntentsExtension`.
 
-##### Resolve Payment Parameters
+### Resolve Payment Parameters
 
 The first step in processing a payment with `INSendPaymentIntentHandling` is to obtain the payee for the transaction and the currency amount to send to the payee. Depending on the command that the user speaks to Siri, your app may have to deal with one of the following scenarios:
 
@@ -117,7 +117,7 @@ func resolveCurrencyAmount(for intent: INSendPaymentIntent, with completion: @es
 }
 ```
 
-##### Add Domain-Specific Language
+### Add Domain-Specific Language
 
 Use [`INVocabulary`](../Intents/invocabulary.md) to aid Siri with recognizing any domain-specific vocabulary users are likely to use in their voice commands. For example, in this sample project payee names are not taken from the user’s contacts but from a predefined list inside the app, so these names are added as additional vocabulary with [`setVocabularyStrings:ofType:`](../Intents/invocabulary/setvocabularystrings%28_,of%29.md).
 
@@ -129,7 +129,7 @@ INVocabulary.shared().setVocabularyStrings(NSOrderedSet(array: contactNames), of
 
 More information on the types of custom vocabulary that are appropriate to add to Siri can be found in [Registering Custom Vocabulary with SiriKit](./registering-custom-vocabulary-with-sirikit.md).
 
-##### Confirm and Complete the Payment
+### Confirm and Complete the Payment
 
 When all parameters have been resolved, the system calls [`confirm(intent:completion:)`](../Intents/insendpaymentintenthandling/confirm%28intent,completion%29.md) to let the app validate the transaction details. Pass back the status of the transaction by calling the `completion` block with an [`INSendPaymentIntentResponse`](../Intents/insendpaymentintentresponse.md) object initialized from a [`INSendPaymentIntentResponseCode`](../Intents/insendpaymentintentresponsecode.md) and an [`INPaymentRecord`](../Intents/inpaymentrecord.md) in the [`paymentRecord`](../Intents/insendpaymentintentresponse/paymentrecord.md).
 

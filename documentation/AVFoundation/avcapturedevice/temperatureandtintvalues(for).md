@@ -22,11 +22,11 @@ func temperatureAndTintValues(for whiteBalanceGains: AVCaptureDevice.WhiteBalanc
 - (AVCaptureWhiteBalanceTemperatureAndTintValues) temperatureAndTintValuesForDeviceWhiteBalanceGains:(AVCaptureWhiteBalanceGains) whiteBalanceGains;
 ```
 
-#### Return Value
+## Return Value
 
 A structure that contains device-independent values.
 
-#### Discussion
+## Discussion
 
 Each change in the structure supports values between `1.0` and [`maxWhiteBalanceGain`](./maxwhitebalancegain.md). This method throws an exception if you specify an unsupported value.
 

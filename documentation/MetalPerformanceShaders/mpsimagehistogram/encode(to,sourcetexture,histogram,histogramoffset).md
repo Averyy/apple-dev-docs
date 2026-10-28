@@ -24,7 +24,7 @@ func encode(to commandBuffer: any MTLCommandBuffer, sourceTexture source: any MT
 - (void) encodeToCommandBuffer:(id<MTLCommandBuffer>) commandBuffer sourceTexture:(id<MTLTexture>) source histogram:(id<MTLBuffer>) histogram histogramOffset:(NSUInteger) histogramOffset;
 ```
 
-#### Discussion
+## Discussion
 
 The filter will not begin to execute until after the command buffer has been enqueued and committed.
 

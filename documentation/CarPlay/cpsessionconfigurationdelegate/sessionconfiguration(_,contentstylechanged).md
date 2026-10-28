@@ -21,7 +21,7 @@ optional func sessionConfiguration(_ sessionConfiguration: CPSessionConfiguratio
 - (void) sessionConfiguration:(CPSessionConfiguration *) sessionConfiguration contentStyleChanged:(CPContentStyle) contentStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The vehicle selects the content style according to the ambient light level, which can change periodically. Use this method to make sure your navigation app is always drawing the most appropriate style of map content in its base view.
 

@@ -21,7 +21,7 @@ Calls the given closure with a temporary file stream.
 static func withTemporaryFileStream<E>(_ body: (ArchiveByteStream) throws -> E) throws -> E
 ```
 
-#### Return Value
+## Return Value
 
 The result of the closure.
 

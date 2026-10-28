@@ -16,7 +16,7 @@ A number between 1 and 12 that represents a month.
 long months;
 ```
 
-#### Discussion
+## Discussion
 
 Numbers representing months are 1-based. For example, to represent January, use `1` and to represent December, use `12`.
 

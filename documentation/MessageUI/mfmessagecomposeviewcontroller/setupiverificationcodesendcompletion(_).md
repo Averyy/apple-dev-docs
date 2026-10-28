@@ -22,7 +22,7 @@ func setUPIVerificationCodeSendCompletion(_ completion: @escaping (Bool) -> Void
 - (void) setUPIVerificationCodeSendCompletion:(void (^)(BOOL didSend)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 If you use the [`com.apple.developer.upi-device-validation`](../../BundleResources/entitlements/com.apple.developer.upi-device-validation.md) managed entitlement, [`setUPIVerificationCodeSendCompletion(_:)`](./setupiverificationcodesendcompletion%28_%29.md) configures the instance of [`MFMessageComposeViewController`](../mfmessagecomposeviewcontroller.md) with non-editable recipients and body fields.
 

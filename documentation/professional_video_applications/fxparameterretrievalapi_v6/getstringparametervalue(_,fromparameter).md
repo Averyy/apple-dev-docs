@@ -20,7 +20,7 @@ func getStringParameterValue(_ string: AutoreleasingUnsafeMutablePointer<NSStrin
 - (BOOL) getStringParameterValue:(NSString * *) string fromParameter:(UInt32) parameterID;
 ```
 
-#### Return Value
+## Return Value
 
 Returns `YES` if the value is retrieved successfully; `NO` otherwise.
 

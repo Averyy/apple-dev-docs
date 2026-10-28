@@ -18,7 +18,7 @@ Returns an independent copy of this processor.
 func copy() -> Self
 ```
 
-#### Discussion
+## Discussion
 
 Value types (structs) obtain an independent copy via standard value semantics by default. Reference types (classes) must explicitly implement this method to produce a distinct instance; classes that do not provide an implementation trap.
 

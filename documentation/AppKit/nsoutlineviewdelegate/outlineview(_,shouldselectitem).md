@@ -20,11 +20,11 @@ optional func outlineView(_ outlineView: NSOutlineView, shouldSelectItem item: A
 - (BOOL) outlineView:(NSOutlineView *) outlineView shouldSelectItem:(id) item;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to permit `outlineView` to select `item`, [`false`](../../Swift/false.md) to deny permission.
 
-#### Discussion
+## Discussion
 
 You implement this method to disallow selection of particular items.
 

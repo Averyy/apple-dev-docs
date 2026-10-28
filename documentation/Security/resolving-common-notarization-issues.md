@@ -5,13 +5,13 @@
 
 Handle common problems reported in the notarization log file, or that arise during ticket stapling.
 
-#### Overview
+## Overview
 
 If the Apple notary service encounters any problems while notarizing your app, it reports those errors in the log files, as described in [Check the status of your request](./customizing-the-notarization-workflow.md#Check-the-status-of-your-request). Fix any problems reported by the service and notarize your app again.
 
 > **Note**:  Xcode automatically resolves many issues when you use the standard app distribution UI. For information about how to use this UI, see [Notarize your app automatically as part of the distribution process](./notarizing-macos-software-before-distribution.md#Notarize-your-app-automatically-as-part-of-the-distribution-process).
 
-##### Ensure a valid code signature
+### Ensure a valid code signature
 
 Before you can notarize an app, you must first code sign it. If you don’t, or if you make a modification to the bundle after signing, notarization fails with the following message:
 
@@ -37,7 +37,7 @@ The utility’s output includes the strings “Signed with a trusted timestamp�
 
 > ❗ **Important**:  Apple no longer maintains the PackageMaker tool, which doesn’t support code signing. Migrate to `pkgbuild` or `productbuild`, which incorporate most of the command line options that PackageMaker supported, or use a third-party utility that wraps `pkgbuild` or `productbuild` and supports signing.
 
-##### Use a valid Developer ID certificate
+### Use a valid Developer ID certificate
 
 You can only notarize apps that you sign with a Developer ID certificate. If you use any other certificate — like a Mac App Distribution certificate, or a self-signed certificate — notarization fails with the following message:
 
@@ -57,7 +57,7 @@ Additionally, you can use the `spctl` utility to determine if the software to be
 
 Add the `raw` option to generate a more detailed output in the form of a property list.
 
-##### Include a secure timestamp
+### Include a secure timestamp
 
 By default, Xcode doesn’t include a secure timestamp as part of the app’s code signature during the build process. Instead, it adds a secure timestamp only during the archive (as of Xcode 10.2) and export workflows. If you use a custom export process, notarization might fail with the following message:
 
@@ -89,7 +89,7 @@ You can check if a binary has a secure timestamp with the following command:
 
 The `dvv` option tells `codesign` to display information about the code at the given path with elevated verbosity. For a binary with a secure timestamp, the output of this command includes a `Timestamp` value with a corresponding date. Alternatively, the presence of `Signed Time` in the output indicates the binary doesn’t have a secure timestamp.
 
-##### Avoid the get-task-allow entitlement
+### Avoid the get-task-allow entitlement
 
 When you create a new macOS project, Xcode automatically sets the target’s `CODE_SIGN_INJECT_BASE_ENTITLEMENTS` build setting to `YES`. This setting tells Xcode to add the `com.apple.security.get-task-allow` entitlement to your app at build time. This entitlement facilitates debugging on a system that uses System Integrity Protection (SIP) by circumventing certain security checks.
 
@@ -103,7 +103,7 @@ To avoid receiving this error message, archive (as of Xcode 10.2) or export your
 
 > **Note**:  To enable debugging a plug-in in the context of a host executable, the host can include the `com.apple.security.get-task-allow` entitlement if it also includes the [`Disable Library Validation Entitlement`](../BundleResources/entitlements/com.apple.security.cs.disable-library-validation.md). Don’t disable library validation for executables that don’t host plug-ins because library validation protects them from loading untrusted code.
 
-##### Use the macOS 10.9 SDK or later
+### Use the macOS 10.9 SDK or later
 
 Because of significant differences in the way code signing works prior to macOS 10.9 (see [Code Signing Changes in OS X Mavericks 10.9](https://developer.apple.com/library/archive/technotes/tn2206/_index.html#//apple_ref/doc/uid/DTS40007919-CH1-TNTAG20)), notarization only works for binaries linked against macOS 10.9 or later. If you use an older SDK, notarization fails and reports an issue with the following message:
 
@@ -113,7 +113,7 @@ The binary uses an SDK older than the 10.9 SDK.
 
 Using a newer SDK doesn’t affect your binary’s compatibility with earlier versions of macOS. Instead, version compatibility depends on the app’s deployment target, as described in [Edit deployment info settings](https://help.apple.com/xcode/mac/current/#/deve69552ee5).
 
-##### Enable the hardened runtime
+### Enable the hardened runtime
 
 Enable the hardened runtime capability as described in [Enable hardened runtime (macOS)](https://help.apple.com/xcode/mac/current/#/devf87a2ac8f). This adds security restrictions to your app by default while allowing you to ask for specific exceptions as needed. If you don’t enable the hardened runtime, notarization fails and reports an issue with the following message:
 
@@ -129,7 +129,7 @@ Hardened runtime is available in the Capabilities pane of Xcode 10 or later, but
 
 If you need exceptions, manually add the entitlements to your app’s entitlements file. If you enable hardened runtime manually using an earlier version of macOS, make sure that you also test your app running on macOS 10.14 or later.
 
-##### Handle stapler issues
+### Handle stapler issues
 
 You can resolve a few common stapler issues by upgrading your tools. In particular, if you see `error -68` on macOS 10.13.x, you can resolve the issue by upgrading to macOS 10.14 or later. Alternatively, run the following command once to clear the Valid cache:
 
@@ -141,7 +141,7 @@ If you see `error -73` while using Xcode 10, you can resolve this issue by upgra
 
 See the `stapler` man page for a discussion of other exit codes.
 
-##### Ensure properly formatted entitlements
+### Ensure properly formatted entitlements
 
 Command line tools and apps use entitlements to gain access to system resources and capabilities. The file that declares an app’s entitlements must be ASCII-encoded and must not include Unicode Byte Order Marks (BOMs). When using Xcode to code sign, Xcode ensures that the entitlements file is a well-formed XML property list with no extra characters. It also automatically converts entitlement files stored as binary property lists (`bplist`) into properly-formed XML properly lists.
 
@@ -170,7 +170,7 @@ Furthermore, starting in macOS 10.15.4, processes with malformed embedded entitl
 The signature could not be validated because AMFI could not load its entitlements for validation: entitlements cannot be parsed
 ```
 
-##### Notarize macOS apps with external dependencies
+### Notarize macOS apps with external dependencies
 
 You can only notarize macOS app targets in Xcode. You can’t use Xcode to notarize an Aggregate or Build System target, even if that target ultimately produces a Mac app. For archives of unsupported target types, the Archives organizer reports a Generic Xcode Archive:
 

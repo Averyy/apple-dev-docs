@@ -24,11 +24,11 @@ func ExtAudioFileCreateWithURL(_ inURL: CFURL, _ inFileType: AudioFileTypeID, _ 
 extern OSStatus ExtAudioFileCreateWithURL(CFURLRef inURL, AudioFileTypeID inFileType, const AudioStreamBasicDescription *inStreamDesc, const AudioChannelLayout *inChannelLayout, UInt32 inFlags, ExtAudioFileRef*outExtAudioFile);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 If the file to be created is in a compressed format, you may set the sample rate in the `inStreamDesc` parameter to `0`. In all cases, the extended file object’s encoding converter may produce audio at a different sample rate than the source. The file will be created with the audio format produced by the encoder.
 

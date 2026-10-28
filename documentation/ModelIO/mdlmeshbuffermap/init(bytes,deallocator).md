@@ -24,7 +24,7 @@ init(bytes: UnsafeMutableRawPointer, deallocator: (() -> Void)? = nil)
 - (instancetype) initWithBytes:(void *) bytes deallocator:(void (^)()) deallocator;
 ```
 
-#### Return Value
+## Return Value
 
 A new buffer map object.
 

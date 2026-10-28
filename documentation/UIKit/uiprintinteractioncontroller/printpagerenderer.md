@@ -22,7 +22,7 @@ var printPageRenderer: UIPrintPageRenderer? { get set }
 @property (nonatomic, strong, nullable) UIPrintPageRenderer * printPageRenderer;
 ```
 
-#### Discussion
+## Discussion
 
 The object assigned to this property must be an instance of a custom subclass of [`UIPrintPageRenderer`](../uiprintpagerenderer.md). The `UIPrintInteractionController` class retains the page-renderer object and releases it at the end of the print job. The default value is `nil`.
 

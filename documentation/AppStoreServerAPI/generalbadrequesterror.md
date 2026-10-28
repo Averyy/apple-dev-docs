@@ -15,7 +15,7 @@ An error that indicates an invalid request.
 object GeneralBadRequestError
 ```
 
-#### Discussion
+## Discussion
 
 A bad request error typically occurs when the server receives a malformed request or a request that contains incorrect syntax.
 

@@ -19,11 +19,11 @@ func PMPrinterGetCommInfo(_ printer: PMPrinter, _ supportsControlCharRangeP: Uns
 OSStatus PMPrinterGetCommInfo(PMPrinter printer, Boolean *supportsControlCharRangeP, Boolean *supportsEightBitP);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 This function is typically relevant only to PostScript printers. All PostScript printers, regardless of what communications channel is used to send data to them, support data in the range 0x20–0x7F. Many communications channels can support data outside this range. You can use this function to determine whether the communications channel to the specified printer also supports bytes in the ranges 0x0–0x1F and 0x80–0xFF.
 

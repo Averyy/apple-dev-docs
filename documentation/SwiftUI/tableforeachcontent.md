@@ -20,7 +20,7 @@ nonisolated
 struct TableForEachContent<Data> where Data : RandomAccessCollection, Data.Element : Identifiable
 ```
 
-#### Overview
+## Overview
 
 You don’t use this type directly. The various `Table.init(_:,...)` initializers create this type as the table’s `Rows` generic type.
 

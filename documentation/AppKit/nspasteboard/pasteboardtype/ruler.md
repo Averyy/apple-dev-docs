@@ -19,7 +19,7 @@ static let ruler: NSPasteboard.PasteboardType
 extern NSPasteboardType const NSPasteboardTypeRuler;
 ```
 
-#### Discussion
+## Discussion
 
 In macOS 10.6 and later, use [`ruler`](./ruler.md) instead.
 

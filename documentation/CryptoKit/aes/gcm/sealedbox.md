@@ -21,7 +21,7 @@ A secure container for your data that you can access using a cipher.
 struct SealedBox
 ```
 
-#### Overview
+## Overview
 
 Use a sealed box as a container for data that you want to transmit securely. Seal data into a box with one of the cipher algorithms, like [`seal(_:using:nonce:)`](./seal%28_,using,nonce%29.md).
 

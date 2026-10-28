@@ -15,11 +15,11 @@ Fetches information about the current user asynchronously.
 Promise<CloudKit.UserIdentity, CloudKit.CKError> fetchCurrentUserIdentity();
 ```
 
-#### Return Value
+## Return Value
 
 A `Promise` object that resolves to a [`CloudKit.UserIdentity`](../cloudkit.useridentity.md) dictionary if the current user is found, or rejects to a [`CKError`](../cloudkit/ckerror.md) object.
 
-#### Discussion
+## Discussion
 
 If the current user is discoverable, the [`CloudKit.UserIdentity`](../cloudkit.useridentity.md) dictionary contains a `nameComponents` key that you can use to get the user’s first and last name.
 

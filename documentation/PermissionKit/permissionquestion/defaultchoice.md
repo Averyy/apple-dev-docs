@@ -19,7 +19,7 @@ The default answer choice associated with the question.
 final var defaultChoice: PermissionChoice { get }
 ```
 
-#### Discussion
+## Discussion
 
 This default choice will default to the most restrictive choice.
 

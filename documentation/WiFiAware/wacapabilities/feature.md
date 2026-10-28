@@ -17,7 +17,7 @@ Features that your app’s current host device can support.
 enum Feature
 ```
 
-#### Overview
+## Overview
 
 Supported features are typically created by the system on behalf of the client, so they usually don’t need to be instantiated directly.
 

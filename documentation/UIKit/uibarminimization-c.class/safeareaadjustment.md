@@ -19,7 +19,7 @@ The safe area adjustment during minimization.
 @property (nonatomic, assign) UIBarMinimizationSafeAreaAdjustment safeAreaAdjustment;
 ```
 
-#### Discussion
+## Discussion
 
 Currently, only the navigation bar supports customizing the safe area adjustment.
 

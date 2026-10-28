@@ -25,7 +25,7 @@ let kSecAttrCertificateType: CFString
 extern CFStringRef const kSecAttrCertificateType;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFNumber`](../CoreFoundation/cfnumber.md) and denotes the certificate type (see the `CSSM_CERT_TYPE` enumeration in cssmtype.h). Items of class [`kSecClassCertificate`](./ksecclasscertificate.md) have this attribute. Read only.
 

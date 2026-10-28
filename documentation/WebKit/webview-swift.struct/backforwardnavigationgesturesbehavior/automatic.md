@@ -19,7 +19,7 @@ The automatic behavior.
 static let automatic: WebView.BackForwardNavigationGesturesBehavior
 ```
 
-#### Discussion
+## Discussion
 
 The web view automatically chooses whether horizontal swipe gestures trigger backward and forward page navigation. By default, web views use the [`enabled`](./enabled.md) behavior.
 

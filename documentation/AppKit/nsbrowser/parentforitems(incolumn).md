@@ -19,7 +19,7 @@ func parentForItems(inColumn column: Int) -> Any?
 - (id) parentForItemsInColumn:(NSInteger) column;
 ```
 
-#### Return Value
+## Return Value
 
 The parent item for the specified column.
 

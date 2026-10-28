@@ -19,11 +19,11 @@ func SCNetworkConnectionCopyUserOptions(_ connection: SCNetworkConnection) -> CF
 CFDictionaryRefSCNetworkConnectionCopyUserOptions(SCNetworkConnectionRef connection);
 ```
 
-#### Return Value
+## Return Value
 
 The service dictionary containing the connection options (the dictionary can be empty if no user options were used), or `NULL` if an error occurred (use the [`SCError()`](./scerror%28%29.md) function to retrieve the specific error).
 
-#### Discussion
+## Discussion
 
 A client can call this function to retrieve the user options previously passed to the [`SCNetworkConnectionStart(_:_:_:)`](./scnetworkconnectionstart%28_,_,_%29.md) function.
 

@@ -19,7 +19,7 @@ Creates and registers a new collaboration object using a collection of records t
 func registerCKShare(container: CKContainer, allowedSharingOptions: CKAllowedSharingOptions = CKAllowedSharingOptions.standard, preparationHandler: @escaping @Sendable () async throws -> CKShare)
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to share a collection of [`CKRecord`](../../CloudKit/ckrecord.md) objects that don’t have an existing [`CKShare`](../../CloudKit/ckshare.md) assignment. When the system calls the `preparationHandler`, your app creates a new `CKShare` with the appropriate root `CKRecord` or [`CKRecordZone.ID`](../../CloudKit/ckrecordzone/id.md).
 

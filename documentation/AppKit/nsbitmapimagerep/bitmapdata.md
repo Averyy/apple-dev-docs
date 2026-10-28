@@ -19,7 +19,7 @@ var bitmapData: UnsafeMutablePointer<UInt8>? { get }
 @property (readonly, nullable) unsigned char * bitmapData;
 ```
 
-#### Discussion
+## Discussion
 
 For planar data, the value in this property points to the first plane.
 

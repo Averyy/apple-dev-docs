@@ -5,7 +5,7 @@
 
 Add spatial metadata to stereo photos and videos to create spatial media for viewing on Apple Vision Pro.
 
-#### Overview
+## Overview
 
 iPhone 15 Pro and Apple Vision Pro can capture spatial photos and videos, a new type of stereoscopic content that immerses people in a moment and gives them a greater sense of presence in a scene.
 
@@ -21,7 +21,7 @@ Add spatial metadata to stereo photos or videos created by your app to prompt Ap
 
 Both modes contain visual treatments that can help minimize common causes of stereo viewing discomfort.
 
-##### Create spatial photos and videos from your own media
+### Create spatial photos and videos from your own media
 
 While people can use devices like iPhone 15 Pro and Apple Vision Pro to capture spatial media, you can also create and write spatial photos and videos in your own apps. For example:
 
@@ -32,7 +32,7 @@ While people can use devices like iPhone 15 Pro and Apple Vision Pro to capture 
 
 Spatial photos and videos both use the same spatial metadata, but encode it in different ways. For examples of how to write spatial metadata to stereo photos and videos your app creates, check out [Writing spatial photos](./writing-spatial-photos.md) and [Converting side-by-side 3D video to multiview HEVC and spatial video](../AVFoundation/converting-side-by-side-3d-video-to-multiview-hevc-and-spatial-video.md).
 
-##### Specify camera properties
+### Specify camera properties
 
 For visionOS to consider a stereo photo or video as spatial, the media must include three properties of the cameras that captured it:
 
@@ -46,7 +46,7 @@ The *baseline* defines how far apart the centers of the cameras were (also known
 
 The *projection* defines the relationship between objects in the world and pixels in the image. Spatial photos and videos always use a rectilinear projection.
 
-##### Choose a horizontal disparity adjustment
+### Choose a horizontal disparity adjustment
 
 Spatial media must also define a *horizontal disparity adjustment* (also known as a *convergence adjustment*). This modifies the perceived stereo depth of the scene by shifting the left- and right-eye images horizontally when you present them in a window in visionOS. As the two images shift horizontally, the perceived 3D scene shifts in depth along the z-axis, with a negative value making content appear closer, and a positive value pushing it farther away.
 
@@ -54,7 +54,7 @@ Horizontal disparity adjustment is expressed as a positive or negative fraction 
 
 When writing your own spatial media, choose a disparity adjustment value that pushes the closest objects just behind the front of the window, to avoid depth conflicts with other content and UI, while maintaining a sense of depth. The ideal horizontal disparity adjustment value depends on the distance of objects from the camera at capture-time, plus the field of view and aspect ratio of the media. A positive horizontal disparity adjustment of 2 percent typically provides a good default adjustment for many types of stereo media.
 
-##### Decide when to create spatial media
+### Decide when to create spatial media
 
 Determining whether to create spatial media in your app depends on the source content and the experience you want to create.
 

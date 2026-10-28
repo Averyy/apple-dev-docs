@@ -15,11 +15,11 @@ Accessor to the retrieve the tag for the memory descriptor.
 virtual IOOptionBits getTag(void);
 ```
 
-#### Return Value
+## Return Value
 
 The tag.
 
-#### Discussion
+## Discussion
 
 This method returns the tag for the memory descriptor. Tag bits are not interpreted by IOMemoryDescriptor.
 

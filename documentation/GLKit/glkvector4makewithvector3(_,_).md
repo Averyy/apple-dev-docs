@@ -22,7 +22,7 @@ func GLKVector4MakeWithVector3(_ vector: GLKVector3, _ w: Float) -> GLKVector4
 static GLKVector4 GLKVector4MakeWithVector3(GLKVector3 vector, float w);
 ```
 
-#### Return Value
+## Return Value
 
 A new vector.
 

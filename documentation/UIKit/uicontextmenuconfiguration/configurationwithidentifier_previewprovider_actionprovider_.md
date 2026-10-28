@@ -19,7 +19,7 @@ Creates a menu configuration object with the specified action and preview provid
 + (instancetype) configurationWithIdentifier:(id<NSCopying>) identifier previewProvider:(UIContextMenuContentPreviewProvider) previewProvider actionProvider:(UIContextMenuActionProvider) actionProvider;
 ```
 
-#### Return Value
+## Return Value
 
 A new menu configuration object with the specified provider blocks.
 

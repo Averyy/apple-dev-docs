@@ -25,7 +25,7 @@ class AVAudioChannelLayout
 @interface AVAudioChannelLayout : NSObject
 ```
 
-#### Overview
+## Overview
 
 The `AVAudioChannelLayout` class is a thin wrapper for Core Audio’s [`AudioChannelLayout`](../CoreAudioTypes/audiochannellayout.md).
 

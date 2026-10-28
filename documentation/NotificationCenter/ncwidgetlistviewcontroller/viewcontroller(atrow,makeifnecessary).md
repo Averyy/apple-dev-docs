@@ -21,7 +21,7 @@ func viewController(atRow row: Int, makeIfNecessary makeIfNecesary: Bool) -> NSV
 - (NSViewController *) viewControllerAtRow:(NSUInteger) row makeIfNecessary:(BOOL) makeIfNecesary;
 ```
 
-#### Return Value
+## Return Value
 
 The content view controller associated with the specified row, if one exists. Returns `nil` if the row doesn’t have a content view controller and you don’t want to create one.
 

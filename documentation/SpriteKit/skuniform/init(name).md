@@ -25,11 +25,11 @@ init(name: String)
 - (instancetype) initWithName:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized uniform object.
 
-#### Discussion
+## Discussion
 
 A uniform initialized with this method has no initial type and cannot be used in a shader until it is given an initial value. To set the initial value, use one of the properties defined in [`SKUniform`](../skuniform.md). After its value is set, its [`uniformType`](./uniformtype.md) property is set to match the uniform’s new type. Once set, the type may not be changed.
 

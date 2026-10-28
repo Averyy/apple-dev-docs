@@ -13,11 +13,11 @@
 u_int32_t ifnet_unit(ifnet_t interface);
 ```
 
-#### Return Value
+## Return Value
 
 Unit number.
 
-#### Discussion
+## Discussion
 
 Returns the unit number of the interface.
 

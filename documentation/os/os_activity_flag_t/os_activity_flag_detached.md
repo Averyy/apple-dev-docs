@@ -21,7 +21,7 @@ Creates a new activity that is independent of any provided parent activity.
 OS_ACTIVITY_FLAG_DETACHED
 ```
 
-#### Discussion
+## Discussion
 
 When you set this flag when creating an activity, the system creates the activity as a new top-level activity. If you provided a parent activity, the new activity notes this fact, allowing you to see which activity triggered the new activity without actually relating the activities.
 

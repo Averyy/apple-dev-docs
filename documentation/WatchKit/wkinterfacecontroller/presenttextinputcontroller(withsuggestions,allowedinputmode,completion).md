@@ -27,7 +27,7 @@ func presentTextInputController(withSuggestions suggestions: [String]?, allowedI
 
 - [Navigating Between Scenes](../navigating-between-scenes.md)
 
-#### Discussion
+## Discussion
 
 This method executes asynchronously, returning shortly after you call it. During a subsequent run loop cycle, the system displays a text input controller to the user. The input controller displays the list of input phrases you specify and provides options to enter new text phrases through dictation or to select from a list of emoji.
 

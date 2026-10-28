@@ -21,7 +21,7 @@ The numeric value of this metric.
 var doubleValue: Double? { get }
 ```
 
-#### Discussion
+## Discussion
 
 - `passing` → `1.0`
 - `failing` → `0.0`

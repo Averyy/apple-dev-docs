@@ -20,11 +20,11 @@ Creates a path using the positions of the specified graph nodes.
 + (instancetype) pathWithGraphNodes:(NSArray<GKGraphNode *> *) graphNodes radius:(float) radius;
 ```
 
-#### Return Value
+## Return Value
 
 A new path object.
 
-#### Discussion
+## Discussion
 
 Use this method to turn a list of nodes from a navigation graph (as returned by the [`GKGraph`](../gkgraph.md) [`findPath(from:to:)`](../gkgraph/findpath%28from,to%29.md) method) into a path-following goal for an agent. If the nodes are [`GKGraphNode2D`](../gkgraphnode2d.md) objects, this method creates a 2D path; if the nodes are [`GKGraphNode3D`](../gkgraphnode3d.md) objects, this method creates a 3D path.
 

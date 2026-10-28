@@ -20,11 +20,11 @@ A method that allows the calling app to provide the incoming raw web presentment
 func rawRequestsForWebPresentmentController(_ webPresentmentController: IdentityDocumentWebPresentmentController) async -> [IdentityDocumentWebPresentmentRawRequest]
 ```
 
-#### Return Value
+## Return Value
 
 A list of raw web presentment requests.
 
-#### Discussion
+## Discussion
 
 If this method is unimplemented, then an `IdentityDocumentWebPresentmentError/invalidRequest` is thrown from the web presentment controller.
 

@@ -25,7 +25,7 @@ let kCTFontStyleNameAttribute: CFString
 extern CFStringRef const kCTFontStyleNameAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 This name represents the designer’s description of the font’s style. The value associated with this key is a [`CFString`](../CoreFoundation/cfstring.md) object.
 

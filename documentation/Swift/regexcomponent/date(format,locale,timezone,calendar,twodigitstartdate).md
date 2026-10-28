@@ -23,11 +23,11 @@ static func date(format: Date.FormatString, locale: Locale, timeZone: TimeZone, 
 
 Available when `Self` is `Date.ParseStrategy`.
 
-#### Return Value
+## Return Value
 
 A `RegexComponent` that matches date substrings as Foundation [`Date`](../../Foundation/date.md) instances.
 
-#### Discussion
+## Discussion
 
 This method matches date substrings in accordance with a format from a [`Date.FormatString`](../../Foundation/date/formatstring.md).
 

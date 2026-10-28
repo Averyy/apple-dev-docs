@@ -22,7 +22,7 @@ enum Verdict
 enum NEURLFilterVerdict : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 You receive this type as the result of calling [`verdict(for:)`](./verdict%28for%29.md) on a [`NEURLFilter`](../neurlfilter.md) instance.
 

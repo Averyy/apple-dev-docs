@@ -23,7 +23,7 @@ func gss_inquire_mech_for_saslname(_ minor_status: UnsafeMutablePointer<OM_uint3
 OM_uint32 gss_inquire_mech_for_saslname(OM_uint32 *minor_status, gss_buffer_t const sasl_mech_name, gss_OID*mech_type);
 ```
 
-#### Return Value
+## Return Value
 
 A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on success or [`GSS_S_BAD_MECH`](./gss_s_bad_mech.md) if the SASL name is unrecognized. See [Function Status](./function-status.md) for a complete enumeration of status outputs.
 

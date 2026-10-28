@@ -22,7 +22,7 @@ var allowsProminentActivity: Bool { get set }
 @property (nonatomic) BOOL allowsProminentActivity;
 ```
 
-#### Discussion
+## Discussion
 
 The system controls which activities show as prominent in the header of an activity view controller. The default value for this is `true`.
 

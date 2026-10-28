@@ -25,7 +25,7 @@ var calendar: Calendar! { get set }
 @property (copy, null_resettable) NSCalendar * calendar;
 ```
 
-#### Discussion
+## Discussion
 
 If unspecified, the logical calendar for the current user is used.
 

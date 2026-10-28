@@ -19,7 +19,7 @@ let kSpeechTextDoneCallBack: CFString
 const CFStringRef kSpeechTextDoneCallBack;
 ```
 
-#### Discussion
+## Discussion
 
 The value associated with this property is a `CFNumber` object whose value is a pointer to an application-defined text-done callback function, whose syntax is described in [`SpeechTextDoneProcPtr`](./speechtextdoneprocptr.md). Passing a `CFNumber` object that contains the value `NULL` disables the text-done callback function.
 

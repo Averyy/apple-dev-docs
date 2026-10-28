@@ -24,7 +24,7 @@ class UIBarButtonItemAppearance
 @interface UIBarButtonItemAppearance : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use a [`UIBarButtonItemAppearance`](./uibarbuttonitemappearance.md) object to customize the appearance of a bar button item in each of its possible states. You can customize the appearance differently for different states. For example, you might apply different colors to the button’s title in the [`normal`](./uibarbuttonitemappearance/normal.md) and [`highlighted`](./uibarbuttonitemappearance/highlighted.md) states.
 

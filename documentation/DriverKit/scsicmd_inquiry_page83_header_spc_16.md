@@ -16,7 +16,7 @@
 typedef struct SCSICmd_INQUIRY_Page83_Header_SPC_16 { ... } SCSICmd_INQUIRY_Page83_Header_SPC_16;
 ```
 
-#### Overview
+## Overview
 
 INQUIRY Page 83h Header used with the 16 byte INQUIRY command.
 

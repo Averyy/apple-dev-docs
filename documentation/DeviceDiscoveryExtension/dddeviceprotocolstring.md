@@ -23,7 +23,7 @@ struct DDDeviceProtocolString
 typedef NSString * DDDeviceProtocolString;
 ```
 
-#### Discussion
+## Discussion
 
 When an app creates a device discovery extension to stream content to a third-party media receiver, the protocol is Discovery and Launch (DIAL), as designated by the [`DDDevice.Protocol.dial`](./dddevice/protocol-swift.enum/dial.md) option.
 

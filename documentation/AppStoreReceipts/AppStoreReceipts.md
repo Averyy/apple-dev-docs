@@ -11,7 +11,7 @@ Validate app and In-App Purchase receipts with the App Store.
 
 > **Deprecated**: Receipts are deprecated. To validate In-App Purchases on your server without using receipts, call the [App Store Server API](../AppStoreServerAPI/AppStoreServerAPI.md) to get Apple-signed transaction and subscription information for your customers, or verify the [`AppTransaction`](../StoreKit/apptransaction.md) and [`Transaction`](../StoreKit/transaction.md) signed data that your app obtains. You can also get the same signed transaction and subscription information from the [`App Store Server Notifications V2`](../AppStoreServerNotifications/app-store-server-notifications-v2.md) endpoint.
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  The [`verifyReceipt`](./verify-receipt.md) endpoint is deprecated. To validate receipts on your server, follow the steps in [Validating receipts on the device](./validating-receipts-on-the-device.md) on your server.
 

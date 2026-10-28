@@ -41,7 +41,7 @@ string subtype
 
 - [App Store Server Notifications changelog](./app-store-server-notifications-changelog.md)
 
-#### Discussion
+## Discussion
 
 This `subtype` field is part of the [`responseBodyV2DecodedPayload`](./responsebodyv2decodedpayload.md), and further describes an event of type [`notificationType`](./notificationtype.md). It’s present only for specific version 2 notifications.
 

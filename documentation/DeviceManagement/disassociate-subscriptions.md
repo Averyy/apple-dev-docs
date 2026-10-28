@@ -6,9 +6,9 @@
 
 Disassociate subscriptions from client user IDs.
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

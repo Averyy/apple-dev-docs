@@ -25,7 +25,7 @@ var tags: [String : [String]] { get }
 @property (readonly) NSDictionary<NSString *,NSArray<NSString *> *> * tags;
 ```
 
-#### Discussion
+## Discussion
 
 Uniform Type Identifiers don’t store tag information for nonstandard tag classes. Identifiers normalize string values into arrays that contain those strings. For example, a tag specification dictionary with values of:
 

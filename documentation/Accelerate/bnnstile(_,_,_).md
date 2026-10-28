@@ -27,7 +27,7 @@ func BNNSTile(_ input: UnsafePointer<BNNSNDArrayDescriptor>, _ output: UnsafeMut
 int BNNSTile(const BNNSNDArrayDescriptor *input, BNNSNDArrayDescriptor *output, const BNNSFilterParameters *filter_params);
 ```
 
-#### Discussion
+## Discussion
 
 Use [`BNNSTile(_:_:_:)`](./bnnstile%28_,_,_%29.md) to tile generate a tensor by repeating tiled copies of the input tensor. The dimensions of the output tensor must be an integer multiple of the corresponding dimension of the input tensor.
 

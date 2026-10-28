@@ -23,7 +23,7 @@ func SecCreateSharedWebCredentialPassword() -> CFString?
 CFStringRefSecCreateSharedWebCredentialPassword();
 ```
 
-#### Return Value
+## Return Value
 
 A password in the form `xxx-xxx-xxx-xxx`, where `x` is taken from the sets `abcdefghkmnopqrstuvwxy`, `ABCDEFGHJKLMNPQRSTUVWXYZ`, and `3456789`, with at least one character from each set being present.
 

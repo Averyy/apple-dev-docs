@@ -22,7 +22,7 @@ The content and behavior of the widget.
 @preconcurrency var body: Self.Body { get }
 ```
 
-#### Discussion
+## Discussion
 
 For any widgets that you create, provide a computed `body` property that defines the widget as a composition of SwiftUI views.
 

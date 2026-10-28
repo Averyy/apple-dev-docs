@@ -23,7 +23,7 @@ static func + (lhs: Measurement<UnitType>, rhs: Measurement<UnitType>) -> Measur
 
 Available when `UnitType` inherits `Unit`.
 
-#### Return Value
+## Return Value
 
 The result of adding the two measurements.
 

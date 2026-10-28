@@ -21,7 +21,7 @@ Cancels and invalidates the specified workgroup.
 extern void os_workgroup_cancel(os_workgroup_t wg);
 ```
 
-#### Discussion
+## Discussion
 
 After you cancel a workgroup, don’t schedule any more work on it. New threads may not join a canceled workgroup, but may still leave it. Most other calls to workgroup APIs return an appropriate error for a canceled workgroup, but otherwise do nothing.
 

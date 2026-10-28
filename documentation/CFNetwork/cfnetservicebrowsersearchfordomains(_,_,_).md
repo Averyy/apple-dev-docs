@@ -26,11 +26,11 @@ func CFNetServiceBrowserSearchForDomains(_ browser: CFNetServiceBrowser, _ regis
 extern Boolean CFNetServiceBrowserSearchForDomains(CFNetServiceBrowserRef browser, Boolean registrationDomains, CFStreamError *error);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the search was started (asynchronous mode); `FALSE` if another search is already in progress for this CFNetServiceBrowser or if an error occurred.
 
-#### Discussion
+## Discussion
 
 This function uses a CFNetServiceBrowser to search for domains. The search continues until the search is canceled by calling [`CFNetServiceBrowserStopSearch(_:_:)`](./cfnetservicebrowserstopsearch%28_,_%29.md). If `registrationDomains` is `TRUE`, this function searches only for domains in which services can be registered. If `registrationDomains` is `FALSE`, this function searches for domains that can be browsed for services. When a domain is found, the callback function specified when the CFNetServiceBrowser was created is called and passed an instance of a CFStringRef containing the domain that was found.
 
@@ -38,7 +38,7 @@ In asynchronous mode, this function returns `TRUE` if the search was started. Ot
 
 In synchronous mode, this function blocks until the search is stopped by calling [`CFNetServiceBrowserStopSearch(_:_:)`](./cfnetservicebrowserstopsearch%28_,_%29.md) from another thread, in which case it returns `FALSE`, or until an error occurs.
 
-##### Special Considerations
+### Special Considerations
 
 This function is thread safe.
 

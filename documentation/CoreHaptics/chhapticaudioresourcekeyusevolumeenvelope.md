@@ -24,7 +24,7 @@ let CHHapticAudioResourceKeyUseVolumeEnvelope: String
 extern CHHapticAudioResourceKey CHHapticAudioResourceKeyUseVolumeEnvelope;
 ```
 
-#### Discussion
+## Discussion
 
 Fading, or ramping, the volume of an audio resource can prevent clicks during playback. It’s also useful in cases where the app modulates the envelope to use different attack and release times.
 

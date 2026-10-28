@@ -17,7 +17,7 @@ Applies the Softplus function.
 class Softplus
 ```
 
-#### Overview
+## Overview
 
 This is:
 
@@ -25,7 +25,7 @@ This is:
 MLX.logAddExp(x, 0)
 ```
 
-##### See Also
+### See Also
 
 - [Activation Functions and Layers](./activations.md)
 - [`softplus(_:)`](./softplus%28_%29.md)

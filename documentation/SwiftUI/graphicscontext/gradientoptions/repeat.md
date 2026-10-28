@@ -21,7 +21,7 @@ An option that repeats the gradient outside its nominal range.
 static var `repeat`: GraphicsContext.GradientOptions { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this option to cause the gradient to repeat its pattern in areas that exceed the bounds of its start and end points. The repetitions use the same start and end value for each repetition.
 

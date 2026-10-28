@@ -23,7 +23,7 @@ optional var window: UIWindow? { get set }
 @property (nonatomic, strong, nullable) UIWindow * window;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the window used to present the app’s visual content on the device’s main screen.
 

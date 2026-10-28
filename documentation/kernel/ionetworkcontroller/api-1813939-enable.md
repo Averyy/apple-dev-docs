@@ -12,11 +12,11 @@ virtual IOReturn enable(
  IOService *client);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the return value from the overloaded enable() method, or kIOReturnBadArgument if the client type is unknown.
 
-#### Overview
+## Overview
 
 This method handles an enable request from a client. A client will call enable after it has opened the controller, and before it starts to use the controller to send and to receive packets over the network. The client object provided is typecasted using OSDynamicCast, and depending on whether the client is an IOKernelDebugger or an IONetworkInterface, then an overloaded enable method that takes a more specific argument type is called. If the client matches neither type, then kIOReturnBadArgument is returned. A driver has the option of overriding this base enable method, or the overloaded form. This method call is synchronized by the workloop's gate.
 

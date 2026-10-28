@@ -16,7 +16,7 @@ Get a list of up to 50 of a customer’s refunded in-app purchases for your app.
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 - [Identifying rate limits](./identifying-rate-limits.md)
 
-#### Discussion
+## Discussion
 
 Call this endpoint to get a customer’s refund history for your app. The response ([`RefundLookupResponse`](./refundlookupresponse.md)) includes up to 50 of the customer’s most-recently refunded transactions, based on the [`revocationDate`](./revocationdate.md).
 

@@ -15,7 +15,7 @@ The MACE 6:1 format.
 MACE6
 ```
 
-#### Discussion
+## Discussion
 
 This format uses no flags.
 

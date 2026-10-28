@@ -20,11 +20,11 @@ optional func tokenField(_ tokenField: NSTokenField, completionsForSubstring sub
 - (NSArray *) tokenField:(NSTokenField *) tokenField completionsForSubstring:(NSString *) substring indexOfToken:(NSInteger) tokenIndex indexOfSelectedItem:(NSInteger *) selectedIndex;
 ```
 
-#### Return Value
+## Return Value
 
 An array of strings that are possible completions.
 
-#### Discussion
+## Discussion
 
 If the delegate does not implement this method, no completions are provided.
 

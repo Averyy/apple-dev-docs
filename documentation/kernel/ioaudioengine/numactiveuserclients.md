@@ -9,7 +9,7 @@
 UInt32 numActiveUserClients;
 ```
 
-#### Overview
+## Overview
 
 A total of the active user clients - those that are currently playing or recording audio.
 

@@ -17,7 +17,7 @@ Load a model from a [`Downloader`](../downloader.md) and [`ModelConfiguration`](
 func load(from downloader: any Downloader, using tokenizerLoader: any TokenizerLoader, configuration: ModelConfiguration, useLatest: Bool = false, progressHandler: @Sendable @escaping (Progress) -> Void = { _ in }) async throws -> sending ContextType
 ```
 
-#### Discussion
+## Discussion
 
 This resolves the configuration (downloading remote sources via the downloader) and then loads the model from local files.
 

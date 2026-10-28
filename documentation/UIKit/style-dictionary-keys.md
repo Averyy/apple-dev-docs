@@ -5,7 +5,7 @@
 
 A dictionary that contains properties that define text style characteristics.
 
-#### Overview
+## Overview
 
 The style [`NSDictionary`](../Foundation/nsdictionary.md) object is used for providing styling information for marked text ([`markedTextStyle`](./uitextinput/markedtextstyle.md) property) and for providing text-styling information at a certain position ([`textStyling(at:in:)`](./uitextinput/textstyling%28at,in%29.md) method).
 

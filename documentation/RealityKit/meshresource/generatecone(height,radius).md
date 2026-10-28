@@ -21,7 +21,7 @@ Creates a new cone mesh with the specified dimensions.
 @preconcurrency static func generateCone(height: Float, radius: Float) -> MeshResource
 ```
 
-#### Discussion
+## Discussion
 
 The cone is centered at the local origin with its axis aligned along the y-axis.
 

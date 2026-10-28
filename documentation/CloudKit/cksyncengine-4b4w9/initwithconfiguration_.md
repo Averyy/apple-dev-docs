@@ -21,7 +21,7 @@ Creates a sync engine with the specified configuration.
 - (instancetype) initWithConfiguration:(CKSyncEngineConfiguration *) configuration;
 ```
 
-#### Return Value
+## Return Value
 
 A configured sync engine.
 

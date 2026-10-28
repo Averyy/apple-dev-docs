@@ -19,7 +19,7 @@ func recache()
 - (void) recache;
 ```
 
-#### Discussion
+## Discussion
 
 If you modify an image representation, you must send a  [`recache()`](./recache%28%29.md) message to the corresponding image object to force the changes to be recached. The next time any image representation is drawn, it is asked to recreate its cached image. If you do not send this message, the image representation may use the old cache data. This method simply clears the cached image data; it does not delete the `NSCachedImageRep` objects associated with any image representations.
 

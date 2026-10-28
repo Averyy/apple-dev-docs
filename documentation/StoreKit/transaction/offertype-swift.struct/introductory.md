@@ -21,7 +21,7 @@ An introductory offer for an auto-renewable subscription.
 static let introductory: Transaction.OfferType
 ```
 
-#### Discussion
+## Discussion
 
 For more information about introductory offers, see [Set up introductory offers for auto-renewable subscriptions](https://developer.apple.com/help/app-store-connect/manage-subscriptions/set-up-introductory-offers-for-auto-renewable-subscriptions).
 

@@ -21,7 +21,7 @@ var dataByTariffPeak: ElectricityInsightRecord<Measure>.TariffPeak?
 
 - [Providing charging history for electric vehicles](../providing-informative-charging-history-for-electric-vehicles.md)
 
-#### Discussion
+## Discussion
 
 The tariff peaks are the times of day when electricity prices are highest.
 

@@ -28,7 +28,7 @@ var timestamp: TimeInterval { get }
 
 - [Getting processed device-motion data](../getting-processed-device-motion-data.md)
 
-#### Discussion
+## Discussion
 
 The timestamp is the amount of time in seconds since the device booted.
 

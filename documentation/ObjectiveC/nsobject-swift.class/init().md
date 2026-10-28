@@ -25,11 +25,11 @@ init()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized object, or `nil` if an object could not be created for some reason that would not result in an exception.
 
-#### Discussion
+## Discussion
 
 An [`init()`](./init%28%29.md) message is coupled with an [`alloc`](./alloc.md) (or [`allocWithZone:`](./allocwithzone_.md)) message in the same line of code:
 

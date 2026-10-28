@@ -24,11 +24,11 @@ func clampedToExtent() -> CIImage
 - (CIImage *) imageByClampingToExtent;
 ```
 
-#### Return Value
+## Return Value
 
 An image object representing the result of the clamp operation.
 
-#### Discussion
+## Discussion
 
 Calling this method is equivalent to using the [CIAffineClamp](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Reference/CoreImageFilterReference/index.html#//apple_ref/doc/filter/ci/CIAffineClamp) filter, which creates an image of infinite extent by repeating pixel colors from the edges of the original image.
 

@@ -21,7 +21,7 @@ A Boolean value that indicates whether the asset has playable content.
 var isPlayable: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property value is [`true`](../../Swift/true.md) if you can use the composition to create an [`AVPlayerItem`](../avplayeritem.md).
 

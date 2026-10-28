@@ -19,7 +19,7 @@ func insertItems(at indexPaths: Set<IndexPath>)
 - (void) insertItemsAtIndexPaths:(NSSet<NSIndexPath *> *) indexPaths;
 ```
 
-#### Discussion
+## Discussion
 
 After adding new items to your data source object, use this method to synchronize those changes with the collection view. Calling this method lets the collection view know that it must update its internal data structures and possibly update its visual appearance. In response, the collection view asks the layout object for information about the new objects. If the layout object indicates that the new items should appear onscreen, the collection view asks the data source to provide the appropriate content, animating that content into position as needed.
 

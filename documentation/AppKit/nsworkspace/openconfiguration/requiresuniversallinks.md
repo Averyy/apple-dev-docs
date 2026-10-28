@@ -19,7 +19,7 @@ var requiresUniversalLinks: Bool { get set }
 @property BOOL requiresUniversalLinks;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`false`](../../../Swift/false.md), which tells the app to open any URL you provide. Set the value to [`true`](../../../Swift/true.md) when you want the app to open only valid universal links.
 

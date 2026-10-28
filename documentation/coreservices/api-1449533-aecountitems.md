@@ -19,15 +19,15 @@ func AECountItems(_ theAEDescList: UnsafePointer<AEDescList>!, _ theCount: Unsaf
 OSErr AECountItems(const AEDescList *theAEDescList, long *theCount);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 Your application typically counts the descriptors in a descriptor list when it is extracting data from an Apple event. You can use the functions in “Getting Items From Descriptor Lists” to get an individual item from a descriptor list or to iterate through the items. 
 
-##### Version-Notes
+### Version-Notes
 
 Thread safe starting in OS X v10.2.
 

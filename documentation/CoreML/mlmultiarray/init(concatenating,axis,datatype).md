@@ -25,7 +25,7 @@ convenience init(concatenating multiArrays: [MLMultiArray], axis: Int, dataType:
 + (instancetype) multiArrayByConcatenatingMultiArrays:(NSArray<MLMultiArray *> *) multiArrays alongAxis:(NSInteger) axis dataType:(MLMultiArrayDataType) dataType;
 ```
 
-#### Discussion
+## Discussion
 
 All the source MLMultiArrays must have a same shape except the specified axis. The resultant MLMultiArray has the same shape as inputs except this axis, which dimension will be the sum of all the input dimensions of the axis.
 

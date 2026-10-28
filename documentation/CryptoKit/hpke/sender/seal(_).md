@@ -21,11 +21,11 @@ Encrypts the given cleartext message.
 mutating func seal<M>(_ msg: M) throws -> Data where M : DataProtocol
 ```
 
-#### Return Value
+## Return Value
 
 The ciphertext for the recipient to decrypt.
 
-#### Discussion
+## Discussion
 
 You can call this method multiple times to encrypt a series of messages. When using this method, you need to supply ciphertext messages to the decryption code on the receiving side in the same order as you encrypt them.
 

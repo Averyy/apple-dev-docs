@@ -15,7 +15,7 @@ Generates a sequence of predictions for each video input.
 func predictions(from videos: [URL]) throws -> [[MLActionClassifier.Prediction]]
 ```
 
-#### Return Value
+## Return Value
 
 A array of prediction arrays. The index of each inner array corresponds to the video index in the input array.
 

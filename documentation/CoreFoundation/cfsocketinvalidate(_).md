@@ -25,7 +25,7 @@ func CFSocketInvalidate(_ s: CFSocket!)
 extern void CFSocketInvalidate(CFSocketRef s);
 ```
 
-#### Discussion
+## Discussion
 
 You should always invalidate a socket object when you are through using it. Invalidating a CFSocket object prevents the object from sending or receiving any more messages, but does not release the socket object itself.
 

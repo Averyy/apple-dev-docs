@@ -10,7 +10,7 @@ Simulate a bokeh effect by applying dilation.
 - macOS 13.3+
 - Xcode 14.0+
 
-#### Overview
+## Overview
 
 This sample app creates a bokeh effect, where parts of an image that are out of focus adopt the shape of the lens’s aperture. The app dynamically generates a polygon-shaped kernel — also known as a *structuring element* — and applies a morphology operation to an image based on that kernel. The following sample shows a photograph after the app has applied dilation with a triangular kernel:
 
@@ -24,7 +24,7 @@ The following formula shows how a dilation operation calculates the value for th
 
 ![A mathematical formula that represents pixel dilation to create a bokeh effect. A matrix of nine values, representing the structuring element, is subtracted from another matrix of nine values, representing a pixel from the original image. The operation returns a maximum value of 3, resulting in dilation.](https://developer.apple.com/tutorials/images/com.apple.accelerate/dilation_formula_2x.png)
 
-##### Generate the structuring element
+### Generate the structuring element
 
 The `MorphologyTransformer.makeBokehStructuringElement(ofRadius:atAngle:withSides:)` method returns a [`vImage.StructuringElement`](./vimage/structuringelement.md) structure. Within that structure, the `diaphragmBladeCount` variable defines the number of sides. For example, to create a hexagon-shaped bokeh effect, the sample app calls the `MorphologyTransformer.makeBokehStructuringElement(ofRadius:atAngle:withSides:)` method with the number of sides set to `6`.
 
@@ -49,7 +49,7 @@ On return, `bokeh` contains the following values:
 
 ![A diagram depicting the hexagonal dilation kernel from the preceding code sample. In a square grid, cells containing the value 255 surround a cluster of shaded cells containing the value 0, representing the six-sided kernel.](https://developer.apple.com/tutorials/images/com.apple.accelerate/bokeh_kernel_2x.png)
 
-##### Apply the dilation
+### Apply the dilation
 
 To optimize the dilation operations, the sample app calls the planar morphology function, [`applyMorphology(operation:destination:)`](./vimage/pixelbuffer/applymorphology%28operation,destination%29-1aqer.md), concurrently on the three planar pixel buffers that represent the individual red, green, and blue channels.
 

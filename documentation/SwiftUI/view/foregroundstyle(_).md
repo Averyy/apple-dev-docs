@@ -26,11 +26,11 @@ func foregroundStyle<S>(_ style: S) -> some View where S : ShapeStyle
 
 - [Configuring views](../configuring-views.md)
 
-#### Return Value
+## Return Value
 
 A view that uses the given foreground style.
 
-#### Discussion
+## Discussion
 
 Use this method to style foreground content like text, shapes, and template images (including symbols):
 

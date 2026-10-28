@@ -14,10 +14,10 @@ Returns the usage text for the given subcommand of this command.
 ## Declaration
 
 ```swift
-static func usageString(for subcommand: any ParsableCommand.Type, includeHidden: Bool = false) -> String
+static func usageString(for subcommand: ParsableCommand.Type, includeHidden: Bool = false) -> String
 ```
 
-#### Return Value
+## Return Value
 
 The usage text for this type.
 

@@ -22,7 +22,7 @@ init(dataOutputs: [AVCaptureOutput])
 - (instancetype) initWithDataOutputs:(NSArray<AVCaptureOutput *> *) dataOutputs;
 ```
 
-#### Discussion
+## Discussion
 
 The first output in the array acts as the main data output and determines when the synchronized callback is delivered. When data is received for the main data output, the synchronizer holds that data until all other data outputs have received data with an equal or later presentation timestamp, or determines that there is no data for a particular output at the main data output’s presentation timestamp. After collecting data from all outputs, the synchronizer sends a single delegate callback, containing all the data aligned with the main data output’s data. If the capture system receives data with presentation timestamps earlier than the next main data output time, the synchronizer sends separate delegate callbacks.
 

@@ -21,11 +21,11 @@ Moves the character along a specified vector over a period of time.
 @MainActor @preconcurrency func moveCharacter(by moveDelta: SIMD3<Float>, deltaTime: Float, relativeTo referenceEntity: Entity?, collisionHandler: ((CharacterControllerComponent.Collision) -> Void)? = nil) -> CharacterControllerComponent.CollisionFlags
 ```
 
-#### Return Value
+## Return Value
 
 Collision flags that indicate the location of the collision.
 
-#### Discussion
+## Discussion
 
 Moves the character in the collision world, with continuous collision checking and response. This will create character collision events. Entity.transform will be updated on the next engine tick. Use `CharacterControllerStateComponent` to get additional information about the state of the character after the move.
 

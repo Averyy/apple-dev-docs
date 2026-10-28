@@ -23,7 +23,7 @@ func getFirstUnlaidCharacterIndex(_ charIndex: UnsafeMutablePointer<Int>?, glyph
 - (void) getFirstUnlaidCharacterIndex:(NSUInteger *) charIndex glyphIndex:(NSUInteger *) glyphIndex;
 ```
 
-#### Discussion
+## Discussion
 
 Either parameter may be `NULL`, in which case the receiver simply ignores it.
 

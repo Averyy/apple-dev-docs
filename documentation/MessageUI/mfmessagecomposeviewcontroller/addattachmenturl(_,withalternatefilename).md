@@ -22,11 +22,11 @@ func addAttachmentURL(_ attachmentURL: URL, withAlternateFilename alternateFilen
 - (BOOL) addAttachmentURL:(NSURL *) attachmentURL withAlternateFilename:(NSString *) alternateFilename;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the attachment at the specified URL was successfully added to the message, or [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 You can add zero or more attachments to a message before you display the message to the user. To access information about a message’s attachments, access the [`attachments`](./attachments.md) property.
 

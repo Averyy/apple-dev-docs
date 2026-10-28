@@ -24,11 +24,11 @@ func bindMemory<T>(to type: T.Type) -> UnsafeBufferPointer<T> where T : ~Copyabl
 
 Available when `Base` is `UnsafeRawBufferPointer`.
 
-#### Return Value
+## Return Value
 
 A typed buffer of the newly bound memory. The memory in this region is bound to `T`, but has not been modified in any other way. The typed buffer references `self.count / MemoryLayout<T>.stride` instances of `T`.
 
-#### Discussion
+## Discussion
 
 Use the `bindMemory(to:)` method to bind the memory referenced by this buffer slice to the type `T`. The memory must be uninitialized or initialized to a type that is layout compatible with `T`. If the memory is uninitialized, it is still uninitialized after being bound to `T`.
 

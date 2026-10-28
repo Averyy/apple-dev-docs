@@ -15,7 +15,7 @@ Creates a map location.
 constructor(x?: number, y?: number);
 ```
 
-#### Discussion
+## Discussion
 
 The x and y values of the point are unit values. MapKit JS expects the value to be between `0` and `1,` and represents an interpolated location on the map projection in the x and y coordinates, respectively.
 

@@ -15,7 +15,7 @@ The 12-point moving window average filter algorithm.
 TwelvePtMovingWindowAverage
 ```
 
-#### Discussion
+## Discussion
 
 Under this algorithm, the Host applies 12 point moving window average filter to the time stamps returned from [`GetCurrentZeroTimestamp`](../../iouseraudioclockdevice/getcurrentzerotimestamp.md).
 

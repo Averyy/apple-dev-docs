@@ -23,7 +23,7 @@ class UIGraphicsPDFRenderer
 @interface UIGraphicsPDFRenderer : UIGraphicsRenderer
 ```
 
-#### Overview
+## Overview
 
 You can use PDF renderers to create PDF files, without having to manage Core Graphics contexts.
 
@@ -38,7 +38,7 @@ To render a PDF:
 
 After initializing a PDF renderer, you can use it to draw multiple PDFs with the same configuration.
 
-##### Creating a graphics PDF renderer
+### Creating a graphics PDF renderer
 
 Create a PDF renderer, providing the bounds of the PDF page.
 
@@ -56,7 +56,7 @@ UIGraphicsPDFRenderer *renderer = [[UIGraphicsPDFRenderer alloc] initWithBounds:
 
 You can instead use one of the other [`UIGraphicsPDFRenderer`](./uigraphicspdfrenderer.md) initializers to specify a renderer format ([`UIGraphicsPDFRendererFormat`](./uigraphicspdfrendererformat.md)) in addition to the bounds. This allows you to configure the underlying Core Graphics context with custom PDF document info. If you don’t provide a format, the renderer uses the [`default()`](./uigraphicsrendererformat/default%28%29.md) format, which creates a context best suited for the current device.
 
-##### Creating a PDF with a PDF renderer
+### Creating a PDF with a PDF renderer
 
 Use the [`pdfData(actions:)`](./uigraphicspdfrenderer/pdfdata%28actions%29.md) method to create a PDF with the PDF renderer you created above. This takes a block that represents the drawing actions. Within this block, the renderer creates a Core Graphics context using the parameters provided during renderer initialization, and sets this to be the current context.
 
@@ -93,7 +93,7 @@ The above code creates the following result:
 
 ![Image of a PDF open in Preview, with the word “Hello!” rendered in large, black lettering in the top-left.](https://developer.apple.com/tutorials/images/com.apple.uikit/media-2864001@2x.png)
 
-##### Adding pages
+### Adding pages
 
 Add multiple pages to your PDF through repeated calls to the [`beginPage()`](./uigraphicspdfrenderercontext/beginpage%28%29.md) method on the [`UIGraphicsPDFRendererContext`](./uigraphicspdfrenderercontext.md) provided to the drawing block.
 
@@ -130,7 +130,7 @@ This code creates a PDF with three pages, each of which contains the current pag
 
 ![Screenshot from Preview showing a 3-page PDF. Each page contains large black lettering which details the current page number.](https://developer.apple.com/tutorials/images/com.apple.uikit/media-2864003@2x.png)
 
-##### Creating internal links
+### Creating internal links
 
 You can create internal links, known as destinations, in PDFs. A complete link has two components:
 

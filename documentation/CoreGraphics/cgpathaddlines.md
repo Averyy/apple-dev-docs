@@ -21,7 +21,7 @@ Appends an array of new line segments to a mutable graphics path.
 extern void CGPathAddLines(CGMutablePathRef path, const CGAffineTransform *m, const CGPoint *points, size_t count);
 ```
 
-#### Discussion
+## Discussion
 
 This is a convenience function that adds a sequence of connected line segments to a path. This function is equivalent to calling the [`CGPathMoveToPoint`](./cgpathmovetopoint.md) function to move to the starting point of the first line segment, then repeatedly calling the [`CGPathAddLineToPoint`](./cgpathaddlinetopoint.md) to append the sequence of line segments.
 

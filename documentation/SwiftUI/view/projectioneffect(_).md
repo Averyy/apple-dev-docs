@@ -22,7 +22,7 @@ nonisolated
 func projectionEffect(_ transform: ProjectionTransform) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use `projectionEffect(_:)` to apply a 3D transformation to the view.
 

@@ -19,7 +19,7 @@ case relativeColorimetric
 NSColorRenderingIntentRelativeColorimetric
 ```
 
-#### Discussion
+## Discussion
 
 This operation can produce a clipping effect, where two different color values in the gamut of the graphics context are mapped to the same color value in the output device’s gamut. The relative colorimetric shifts all colors (including those within the gamut) to account for the difference between the white point of the graphics context and the white point of the output device.
 

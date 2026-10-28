@@ -5,17 +5,17 @@
 
 Prepare your app to discover and control a Matter device.
 
-#### Overview
+## Overview
 
 If you want your app to interact with a Matter device, you need to commission it. *Commissioning* a Matter device makes it a part of your *fabric*, which is a collection of Matter devices that communicate with each other.
 
 You can securely commission a Matter device using certificates. Generate your own certificates using [`MTRCertificates`](./mtrcertificates.md) or another process. Alternatively, you can provide a root [`MTRKeypair`](./mtrkeypair.md), and the Matter framework generates certificates for you.
 
-##### Obtain the onboarding payload
+### Obtain the onboarding payload
 
 The [MatterSupport](../MatterSupport/MatterSupport.md) framework provides an onboarding payload that you use to discover a device. Implement [`commissionDevice(in:onboardingPayload:commissioningID:)`](../MatterSupport/matteradddeviceextensionrequesthandler/commissiondevice%28in,onboardingpayload,commissioningid%29.md) to obtain the onboarding payload, then securely commission a Matter device using [`MTRDeviceController`](./mtrdevicecontroller.md). For more information, see [Adding Matter support to your ecosystem](../MatterSupport/adding-matter-support-to-your-ecosystem.md).
 
-##### Provide persistent storage
+### Provide persistent storage
 
 Implement [`MTRStorage`](./mtrstorage.md) so that the Matter framework can store and retrieve persistent data, then create an instance of that object and pass it to an instance of [`MTRDeviceControllerFactoryParams`](./mtrdevicecontrollerfactoryparams.md). Set the factory parameter object’s [`productAttestationAuthorityCertificates`](./mtrdevicecontrollerfactoryparams/productattestationauthoritycertificates.md) to an array of trusted Matter certificates.
 
@@ -55,7 +55,7 @@ do {
 }
 ```
 
-##### Set up security for the commissioning
+### Set up security for the commissioning
 
 Create an Identity Protection Key (IPK) and save it to iCloud Keychain. You need this IPK every time you start the controller for this fabric.
 
@@ -101,7 +101,7 @@ fabricID: fabricID, nocSigner: myRootKeypair)
 
 In either case, set `params.vendorID` to your Connectivity Standards Alliance-assigned vendor identifier.
 
-##### Commission the Matter device
+### Commission the Matter device
 
 Before you start commissioning, create a controller. If you’re creating a controller for this fabric for the first time, call [`createController(onNewFabric:)`](./mtrdevicecontrollerfactory/createcontroller%28onnewfabric%29.md); otherwise, call [`createController(onExistingFabric:)`](./mtrdevicecontrollerfactory/createcontroller%28onexistingfabric%29.md).
 

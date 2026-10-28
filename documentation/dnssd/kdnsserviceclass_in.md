@@ -23,7 +23,7 @@ var kDNSServiceClass_IN: Int { get }
 kDNSServiceClass_IN
 ```
 
-#### Discussion
+## Discussion
 
 Internet
 

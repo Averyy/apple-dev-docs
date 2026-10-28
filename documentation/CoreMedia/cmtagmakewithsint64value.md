@@ -21,7 +21,7 @@ Creates a new tag with a given category and a 64-bit signed integer.
 extern CMTag CMTagMakeWithSInt64Value(CMTagCategory category, int64_t value);
 ```
 
-#### Return Value
+## Return Value
 
 A new tag with the assigned category containing a signed 64-bit integer, or [`kCMTagInvalid`](./kcmtaginvalid.md) if no tag could be created.
 

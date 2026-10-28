@@ -15,11 +15,11 @@ Fetches ad creative rejection reasons by custom product page ID.
 
 - [Apple Ads Campaign Management API 4](./apple-search-ads-campaign-management-api-4.md)
 
-#### Discussion
+## Discussion
 
 Use this endpoint to fetch rejected ad creative approval reason details. Use the `id` that returns in `ProductPageReason` in the resource path as your `productPageReasonId`. See the [`ProductPageReason`](./productpagereason.md) object for rejection reason code enumerations, parameter descriptions, and selector condition operators.
 
-##### Payload example: Get rejection reasons
+### Payload example: Get rejection reasons
 
 **Request**:
 

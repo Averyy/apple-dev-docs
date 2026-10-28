@@ -21,7 +21,7 @@ Returns the negated constant if the input value is less than the threshold; othe
 case signedConstant(T)
 ```
 
-#### Discussion
+## Discussion
 
 Use [`vDSP.ThresholdRule.signedConstant(_:)`](./signedconstant%28_%29.md) to calculate a new vector where the threshold operation sets all source values below the threshold to the negated constant.
 

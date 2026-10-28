@@ -17,7 +17,7 @@ An object that contains details about the ISO 18013 mobile document request.
 struct ISO18013MobileDocumentRequestContext
 ```
 
-##### Managing the context
+### Managing the context
 
 - [`request`](./iso18013mobiledocumentrequestcontext/request.md)
 - [`requestingWebsiteOrigin`](./iso18013mobiledocumentrequestcontext/requestingwebsiteorigin.md)

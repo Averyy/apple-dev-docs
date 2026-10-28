@@ -22,7 +22,7 @@ var writingToolsCoordinator: UIWritingToolsCoordinator { get }
 @property (nonatomic, readonly) UIWritingToolsCoordinator * writingToolsCoordinator;
 ```
 
-#### Discussion
+## Discussion
 
 When you get the value of this property, the system creates a Writing Tools coordinator object if one doesn’t already exist for this view.
 

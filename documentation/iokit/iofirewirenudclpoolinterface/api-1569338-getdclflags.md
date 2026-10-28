@@ -14,7 +14,7 @@
 UInt32 (*GetDCLFlags)(NuDCLRef dcl);
 ```
 
-#### Discussion
+## Discussion
 
 Description forthcoming
 

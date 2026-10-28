@@ -20,7 +20,7 @@ Resolves heap data on the CPU timeline.
 func resolveCounterRange(_ range: Range<Int>) throws -> Data?
 ```
 
-#### Discussion
+## Discussion
 
 This method resolves heap data in the CPU timeline. Your app needs to ensure the GPU work has completed in order to retrieve the data correctly. You can alternatively resolve the heap data in the GPU timeline by calling [`resolveCounterHeap(_:range:buffer:fenceToWait:fenceToUpdate:)`](../mtl4commandbuffer/resolvecounterheap%28_,range,buffer,fencetowait,fencetoupdate%29.md).
 

@@ -25,7 +25,7 @@ var canSendWriteWithoutResponse: Bool { get }
 @property (readonly) BOOL canSendWriteWithoutResponse;
 ```
 
-#### Discussion
+## Discussion
 
 If this value is [`false`](../../Swift/false.md), flushing all current writes sets the value to [`true`](../../Swift/true.md). This also results in a call to the delegate’s [`peripheralIsReady(toSendWriteWithoutResponse:)`](../cbperipheraldelegate/peripheralisready%28tosendwritewithoutresponse%29.md).
 

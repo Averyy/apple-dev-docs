@@ -22,13 +22,13 @@ class INGetAvailableRestaurantReservationBookingsIntent
 @interface INGetAvailableRestaurantReservationBookingsIntent : INIntent
 ```
 
-#### Overview
+## Overview
 
 An [`INGetAvailableRestaurantReservationBookingsIntent`](./ingetavailablerestaurantreservationbookingsintent.md) object asks you to generate details regarding the available time slots offered by a restaurant for a given party size. Maps sends this intent to your Intents extension when the user begins the booking process. You use this intent to obtain the initial details about the reservation request, including the number of people and the preferred date for the reservation. You use those details to identify potential time slots that can accommodate the party and return those time slots in your response object.
 
 To handle this intent, the handler object in your Intents extension must adopt the [`INGetAvailableRestaurantReservationBookingsIntentHandling`](./ingetavailablerestaurantreservationbookingsintenthandling.md) protocol. Your handler should resolve and confirm any parameters and create an [`INGetAvailableRestaurantReservationBookingsIntentResponse`](./ingetavailablerestaurantreservationbookingsintentresponse.md) object with the list of potential time slots.
 
-##### Additional Intent Attributes
+### Additional Intent Attributes
 
 The following table lists additional attributes of this intent object:
 

@@ -28,7 +28,7 @@ var url: URL? { get set }
 
 - [Creating binary archives from device-built pipeline state objects](../creating-binary-archives-from-device-built-pipeline-state-objects.md)
 
-#### Discussion
+## Discussion
 
 You can use this method to load a binary archive you created with an [`MTLBinaryArchive`](../mtlbinaryarchive.md) instance’s [`serialize(to:)`](../mtlbinaryarchive/serialize%28to%29.md) method.
 

@@ -26,11 +26,11 @@ func receive<S>(on scheduler: S, options: S.SchedulerOptions? = nil) -> Publishe
 - [Receiving and Handling Events with Combine](../receiving-and-handling-events-with-combine.md)
 - [Replacing Foundation Timers with Timer Publishers](../replacing-foundation-timers-with-timer-publishers.md)
 
-#### Return Value
+## Return Value
 
 A publisher that delivers elements using the specified scheduler.
 
-#### Discussion
+## Discussion
 
 You use the [`receive(on:options:)`](./receive%28on,options%29.md) operator to receive results and completion on a specific scheduler, such as performing UI work on the main run loop. In contrast with [`subscribe(on:options:)`](./subscribe%28on,options%29.md), which affects upstream messages, [`receive(on:options:)`](./receive%28on,options%29.md) changes the execution context of downstream messages.
 

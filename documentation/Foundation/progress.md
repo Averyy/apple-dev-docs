@@ -29,11 +29,11 @@ class Progress
 
 - [Downloading files from websites](./downloading-files-from-websites.md)
 
-#### Overview
+## Overview
 
 The [`Progress`](./progress.md) class provides a self-contained mechanism for progress reporting. It makes it easy for code that performs work to report the progress of that work, and for user interface code to observe that progress for presentation to the user. Specifically, you can use a progress object to show the user a progress bar and explanatory text that update as you do work. It also allows the user to cancel or pause work.
 
-##### Reporting Progress
+### Reporting Progress
 
 Using the methods of this class, your code can report the progress it’s currently making toward completing a task, including progress in related subtasks. You can create instances of this class using the [`init(parent:userInfo:)`](./progress/init%28parent,userinfo%29.md) instance method or the [`init(totalUnitCount:)`](./progress/init%28totalunitcount%29.md) class method.
 
@@ -63,7 +63,7 @@ The following code shows a sample method that reports the progress of performing
 
 Each of the properties of a progress object, including [`totalUnitCount`](./progress/totalunitcount.md), [`completedUnitCount`](./progress/completedunitcount.md), and [`fractionCompleted`](./progress/fractioncompleted.md), support key-value observing (KVO). This makes it extremely easy for a view or window controller object to observe the properties, and update UI elements, such as progress indicators, when the values change. It also means that there is a nonzero cost to updating the values of those properties, so avoid using a unit count that is too granular. If you’re iterating over a large dataset, for example, and each operation takes only a trivial amount of time, divide the work into batches so you can update the unit count once per batch rather than once per iteration.
 
-##### Reporting Progress for Multiple Operations
+### Reporting Progress for Multiple Operations
 
 Sometimes, your code may need to report the *overall* progress of an operation that consists of several suboperations. To accomplish this, your code can report the progress of each suboperation by building up a tree of progress objects.
 
@@ -73,7 +73,7 @@ The [`Progress`](./progress.md) reporting mechanism supports a loosely coupled r
 
 You add suboperation progress objects to your tree implicitly or explicitly.
 
-###### Adding a Progress Operation Implicitly
+#### Adding a Progress Operation Implicitly
 
 Add a suboperation implicitly by setting a pending unit count for the containing progress object and creating a new [`Progress`](./progress.md) instance. When you create the new progress instance, the system sets it as a suboperation of the containing progress object, and assigns the pending unit count.
 
@@ -109,7 +109,7 @@ In the following example, the overall progress object has 100 units. The two sub
 
 If you don’t create any suboperation progress objects between the calls to [`becomeCurrent(withPendingUnitCount:)`](./progress/becomecurrent%28withpendingunitcount%29.md) and [`resignCurrent()`](./progress/resigncurrent%28%29.md), the containing progress object automatically updates its [`completedUnitCount`](./progress/completedunitcount.md) by adding the pending units.
 
-###### Adding a Progress Operation Explicitly
+#### Adding a Progress Operation Explicitly
 
 To add a progress operation explicitly, call `addChild(_:withPendingUnitCount:)` on the containing progress object. The value for the pending unit count is the amount of the containing progress object’s [`totalUnitCount`](./progress/totalunitcount.md) that the suboperation consumes, which conforms to the [`ProgressReporting`](./progressreporting.md) protocol.
 

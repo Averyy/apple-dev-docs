@@ -19,7 +19,7 @@ object InvalidPlatformError
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Discussion
+## Discussion
 
 For valid `platform` values in a [`ConsumptionRequestV1`](./consumptionrequestv1.md), see [`platform`](./platform.md).
 

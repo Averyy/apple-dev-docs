@@ -22,7 +22,7 @@ A view that adapts to the available space by providing the first child view that
 nonisolated struct ViewThatFits<Content> where Content : View
 ```
 
-#### Overview
+## Overview
 
 `ViewThatFits` evaluates its child views in the order you provide them to the initializer. It selects the first child whose ideal size on the constrained axes fits within the proposed size. This means that you provide views in order of preference. Usually this order is largest to smallest, but since a view might fit along one constrained axis but not the other, this isn’t always the case. By default, `ViewThatFits` constrains in both the horizontal and vertical axes.
 

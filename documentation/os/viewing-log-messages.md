@@ -5,7 +5,7 @@
 
 Use various tools to retrieve log information.
 
-#### Overview
+## Overview
 
 The unified log system stores log messages in a binary compressed format, deferring much of the work to turn them into human-readable text messages. Using a binary format allows the log system to store more messages and reduces the overhead of logging data. However, this means you can’t read and parse the log files directly; you need to use tools to convert the log messages into a binary format. Depending on which tool you use, this conversion might be done while your app is running, or later, after the app has already exited.
 

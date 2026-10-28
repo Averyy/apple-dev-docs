@@ -6,7 +6,7 @@
 
 Perform Boolean operations and other logical comparisons on data values.
 
-#### Overview
+## Overview
 
 Use Logic nodes to facilitate decision trees and other logic-based choices within your graph. You can perform comparisons for equality or to determine if one value is larger than another. You can also perform logic operations on Boolean values.
 

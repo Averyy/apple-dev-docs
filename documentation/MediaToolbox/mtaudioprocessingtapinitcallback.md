@@ -24,7 +24,7 @@ typealias MTAudioProcessingTapInitCallback = (MTAudioProcessingTap, UnsafeMutabl
 typedef void (*)(const struct opaqueMTAudioProcessingTap *, void *, void **) MTAudioProcessingTapInitCallback;
 ```
 
-#### Overview
+## Overview
 
 An init callback that is invoked when MTAudioProcessingTapCreate() is called. The init callback is always balanced by a finalize callback when the MTAudioProcessingTap object is released.
 

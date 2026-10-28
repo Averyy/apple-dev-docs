@@ -15,7 +15,7 @@ A string that indicates the notification’s App Store Server Notifications vers
 string version
 ```
 
-#### Discussion
+## Discussion
 
 The version string is `“2.0”`. It’s present in [`responseBodyV2DecodedPayload`](./responsebodyv2decodedpayload.md) for version 2 notifications.
 

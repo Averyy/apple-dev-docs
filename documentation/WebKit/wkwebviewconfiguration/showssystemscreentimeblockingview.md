@@ -21,7 +21,7 @@ var showsSystemScreenTimeBlockingView: Bool { get set }
 @property (nonatomic) BOOL showsSystemScreenTimeBlockingView;
 ```
 
-#### Discussion
+## Discussion
 
 A Boolean value indicating whether the System Screen Time blocking view should be shown.
 

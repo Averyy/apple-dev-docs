@@ -23,7 +23,7 @@ let kCGImageSourceDecodeRequest: CFString
 extern CFStringRef const kCGImageSourceDecodeRequest;
 ```
 
-#### Overview
+## Overview
 
 For more information, see [Image I/O Programming Guide](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/ImageIOGuide/imageio_intro/ikpg_intro.html#//apple_ref/doc/uid/TP40005462).
 

@@ -13,7 +13,7 @@
 kIOCatalogAddDrivers = 1
 ```
 
-#### Discussion
+## Discussion
 
 Signals a call to the addDrivers function in IOCatalogue.
 

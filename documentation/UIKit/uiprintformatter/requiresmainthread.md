@@ -22,7 +22,7 @@ var requiresMainThread: Bool { get }
 @property (nonatomic, readonly) BOOL requiresMainThread;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`true`](../../Swift/true.md), which requires the printing system to execute rendering operations, like drawing and page-count calculation, on the main thread. Override this property to return [`false`](../../Swift/false.md) if you want the system to execute operations like [`draw(in:forPageAt:)`](./draw%28in,forpageat%29.md) and [`pageCount`](./pagecount.md) on a background thread.
 

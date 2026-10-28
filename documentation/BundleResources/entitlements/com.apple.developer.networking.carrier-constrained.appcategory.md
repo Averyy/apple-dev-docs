@@ -41,7 +41,7 @@ The key that defines an app’s category for accessing a carrier-provided satell
 - `travel-8023`: The category for online travel booking apps.
 - `streaming-8024`: The category for video streaming apps
 
-#### Discussion
+## Discussion
 
 This entitlement defines your app’s category for a carrier-provided satellite network, if the person’s carrier provides it.
 

@@ -15,7 +15,7 @@ The status of the transition.
 let status: AVExperienceController.TransitionContext.Status
 ```
 
-#### Discussion
+## Discussion
 
 Use this to update your application state based on the current state of the transition.
 

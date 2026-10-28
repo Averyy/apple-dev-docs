@@ -15,7 +15,7 @@ The data that describes the default group leaderboard of the Game Center detail.
 object GameCenterDetail.Relationships.DefaultGroupLeaderboardV2
 ```
 
-#### Overview
+## Overview
 
 - data:
 

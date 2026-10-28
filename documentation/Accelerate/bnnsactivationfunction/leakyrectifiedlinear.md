@@ -23,7 +23,7 @@ An activation function that returns its input when that is greater than or equal
 static var leakyRectifiedLinear: BNNSActivationFunction { get }
 ```
 
-#### Discussion
+## Discussion
 
 This constant defines an activation function that returns values using the following operation:
 

@@ -20,11 +20,11 @@ typealias MDQueryCreateResultFunction = (MDQuery?, MDItem?, UnsafeMutableRawPoin
 typedef const void *(*MDQueryCreateResultFunction)(MDQueryRef query, MDItemRef item, void *context);
 ```
 
-#### Return Value
+## Return Value
 
 The function mustreturn a pointer-sized value that can be managed with the callbackswhich were set at the same time the create function was given tothe query. The value must be returned with a reference (such asif the retain callback had been called on it), as implied by theCreate name. If this function doesn't wish to create a new objectit can return the given MDItemRef, but must also return it witha new retain, and the callbacks must be able to handle an MDItemRefas an input value. If this function returns NULL, NULL will be storedfor the moment in the query, MDQueryGetResultAtIndex() may returnNULL for that result, and the next time the query wants the result,it will call this function again.
 
-#### Discussion
+## Discussion
 
 The function may hold onto the given attribute name and/orvalue in some other data structure, but must retain them for themto remain valid.
 

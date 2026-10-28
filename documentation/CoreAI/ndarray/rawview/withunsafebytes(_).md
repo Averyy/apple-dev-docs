@@ -19,11 +19,11 @@ Invokes the provided closure with the backing data and memory layout of this vie
 func withUnsafeBytes<R, E>(_ body: (UnsafeRawPointer, Span<Int>, Span<Int>) throws(E) -> R) throws(E) -> R where E : Error
 ```
 
-#### Return Value
+## Return Value
 
 The value returned by the closure.
 
-#### Discussion
+## Discussion
 
 - body: The closure to be invoked with a raw pointer to the first element, as well as shape and strides of the view.
 

@@ -20,7 +20,7 @@ Creates a GPU family instance from a raw value.
 init?(rawValue: Int)
 ```
 
-#### Discussion
+## Discussion
 
 You don’t need to call this initializer because it’s part of how Swift represents an enumeration from an Objective-C framework.
 

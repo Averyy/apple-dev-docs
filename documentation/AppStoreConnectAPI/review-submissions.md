@@ -5,7 +5,7 @@
 
 Create and manage your submissions for review, which can include your App Store version, App Store version experiments, custom product page versions, and in-app events.
 
-#### Overview
+## Overview
 
 The attribute `platform` is no longer required when using [`Create a Review Submission`](./post-v1-reviewsubmissions.md). You can optionally add the attribute platform when using [`Modify a Review Submission`](./patch-v1-reviewsubmissions-_id_.md).
 

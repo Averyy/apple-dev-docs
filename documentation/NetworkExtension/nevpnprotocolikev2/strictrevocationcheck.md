@@ -24,7 +24,7 @@ var strictRevocationCheck: Bool { get set }
 @property BOOL strictRevocationCheck;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is NO. If this property is set to NO, then either a “not revoked” result from the certificate revocation server or a failure to communicate with the certificate revocation server will result in a successful revocation check. If this property is set to YES, then only a “not revoked” result from the certificate revocation server will result in a successful revocation check.
 

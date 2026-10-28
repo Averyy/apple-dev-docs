@@ -27,7 +27,7 @@ var allowsBackgroundLocationUpdates: Bool { get set }
 
 - [Getting the current location of a device](../getting-the-current-location-of-a-device.md)
 
-#### Discussion
+## Discussion
 
 Apps that receive location updates when running in the background must include the [`UIBackgroundModes`](../../BundleResources/information-property-list/uibackgroundmodes.md) key (with the `location` value) in their app’s `Info.plist` file. After including the [`UIBackgroundModes`](../../BundleResources/information-property-list/uibackgroundmodes.md) key, set the value of [`allowsBackgroundLocationUpdates`](./allowsbackgroundlocationupdates.md) to [`true`](../../Swift/true.md). Use this property to enable and disable background updates programmatically. For example, you might set this property to [`true`](../../Swift/true.md) only after the user enables features in your app that require background location updates.
 

@@ -20,7 +20,7 @@ A type you use to send model output deltas and updates to the framework.
 struct LanguageModelExecutorGenerationChannel
 ```
 
-#### Overview
+## Overview
 
 Use this to stream text as your model produces it. You can also use the channel to report metadata and usage that helps developers track what’s happening, like when you want to report model details and token usage updates:
 

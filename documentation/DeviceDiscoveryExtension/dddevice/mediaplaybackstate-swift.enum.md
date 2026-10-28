@@ -23,7 +23,7 @@ enum MediaPlaybackState
 enum DDDeviceMediaPlaybackState : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The device ([`DDDevice`](../dddevice.md)) property [`mediaPlaybackState`](./mediaplaybackstate-swift.property.md) is of this type.
 

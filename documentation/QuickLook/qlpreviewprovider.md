@@ -20,7 +20,7 @@ class QLPreviewProvider
 @interface QLPreviewProvider : NSObject
 ```
 
-#### Overview
+## Overview
 
 Data-based preview extensions should subclass QLPreviewProvider in their principal object. The subclass should conform to QLPreviewingController.
 

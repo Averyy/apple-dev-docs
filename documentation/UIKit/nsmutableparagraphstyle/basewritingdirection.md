@@ -24,7 +24,7 @@ var baseWritingDirection: NSWritingDirection { get set }
 @property (nonatomic) NSWritingDirection baseWritingDirection;
 ```
 
-#### Discussion
+## Discussion
 
 If you specify [`NSWritingDirection.natural`](../nswritingdirection/natural.md), the receiver resolves the writing direction to either [`NSWritingDirection.leftToRight`](../nswritingdirection/lefttoright.md) or [`NSWritingDirection.rightToLeft`](../nswritingdirection/righttoleft.md), depending on the direction for the user’s language preference setting.
 

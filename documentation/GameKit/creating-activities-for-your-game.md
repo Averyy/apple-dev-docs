@@ -5,7 +5,7 @@
 
 Use activities to surface game content to players and encourage them to connect with each other.
 
-#### Overview
+## Overview
 
 Players discover and engage with games — along with connecting with friends and other players — through Game Center. Game activities present players with challenges in your game, like collecting pieces of a puzzle. They offer a way to keep people engaged with your game, and with each other. By regularly adding new activities — like finding parts of a map and piecing them together to find buried treasure — you encourage people to explore your game, or play as a team to accomplish a goal.
 
@@ -15,7 +15,7 @@ Activities provide a way to link players directly to your content. By describing
 
 They also provide the Games app with information about what’s happening in your game. The Games app uses the activity configuration you specify to help drive engagement by deep linking to your content. You can configure activities with achievements, leaderboards, and challenges. To learn more about the Games app, see [Engage players with the Games app](https://developer.apple.com/wwdc25/215). To learn more about challenges, see [Creating engaging challenges from leaderboards](./creating-engaging-challenges-from-leaderboards.md).
 
-#### Configure and test game activities
+## Configure and test game activities
 
 Configure activities in Xcode before accessing them in your code and testing locally with Game Progress Manager. When you’re ready to deploy your configuration, sync your updates with App Store Connect. For more information about configuring and testing Game Center features, see [Initializing and configuring Game Center](./initializing-and-configuring-game-center.md).
 
@@ -35,7 +35,7 @@ Use the Game Progress Manager to test your activities on your local device befor
 
 For design guidance on game activities, see Human Interface Guidelines > Technologies > [Game Center](https://developer.apple.com/design/human-interface-guidelines/game-center). To learn more about the information you enter in App Store Connect, see [Game Activities properties](https://developer.apple.com/help/app-store-connect/reference/game-activities).
 
-#### Get the object that represents the activity
+## Get the object that represents the activity
 
 To retrieve the details of the activities you define you use a [`GKGameActivityDefinition`](./gkgameactivitydefinition.md) object. A definition represents the static metadata that you configure in Xcode or App Store Connect. You use `GKGameActivityDefinition.all` to load all of the activities your game defines. If you want to load individual activities, use [`loadGameActivityDefinitions(IDs:completionHandler:)`](./gkgameactivitydefinition/loadgameactivitydefinitions%28ids,completionhandler%29.md) and provide the list of activities to load.
 
@@ -56,7 +56,7 @@ let achievementDescription = try await activityDescription.associatedAchievement
 let leaderboards = try await activityDescription.leaderboards
 ```
 
-#### Handle deep linking through activity listener
+## Handle deep linking through activity listener
 
 A [`GKGameActivity`](./gkgameactivity.md) object represents a single instance of an activity in your game. The [`GKGameActivityListener`](./gkgameactivitylistener.md) delegate provides the ability to observe and receive activities from the system. The delegate provides a single callback that provides the identifier of the activity so you can route the player to the correct experience.
 
@@ -94,7 +94,7 @@ sampleGameUI.startGame(match)
 
 > **Note**: The matchmaking process is similar to using [`GKMatchmaker`](./gkmatchmaker.md) directly. If too many people try to join a game using the same party code, there’s a chance that friends of the inviter might join different games when exceeding the maximum number of players you set for the match.
 
-#### Add universal link support
+## Add universal link support
 
 Support older operating systems and other platforms by adding a [`fallbackURL`](./gkgameactivitydefinition/fallbackurl.md). If the game activity API isn’t available on the system, players are directed to an invite page on the web when they open an invite they receive. When the player chooses to join an activity, the system invokes the `fallbackURL` you specify for it with the following URL pattern:
 
@@ -108,7 +108,7 @@ Support older operating systems and other platforms by adding a [`fallbackURL`](
 
 To learn more about universal links, see [Supporting universal links in your app](../Xcode/supporting-universal-links-in-your-app.md).
 
-#### Start a game activity life cycle
+## Start a game activity life cycle
 
 Use the game activity object to start, pause, and end the activity. When you start a new game activity, you can start it with a valid party code or just an activity definition. Starting an activity begins tracking its state.
 
@@ -130,7 +130,7 @@ activity.setScore(on: leaderboard, to: score, context: context)
 activity.setProgress(on: achievement, to: 60)
 ```
 
-#### Report progress for an activity
+## Report progress for an activity
 
 When you set the score on a leaderboard instance, or update the progress on an achievement, the framework tracks it in real time but doesn’t submit it as an attempt until the player completes the activity. This is helpful for games that frequently update score or achievement progress and avoids performing frequent network requests. It’s also helpful to avoid tracking incomplete scores or attempts. Instead, `GameKit` queues scores or progress until the player completes the activity.
 

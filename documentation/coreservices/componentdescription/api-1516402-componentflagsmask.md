@@ -16,7 +16,7 @@ A 32-bit field that indicates which flags in the `componentFlags` field are rele
 UInt32 componentFlagsMask;
 ```
 
-#### Discussion
+## Discussion
 
 If you are developing an application that uses components, your application should set each bit that corresponds to a flag in the [`componentFlags`](./api-1516652-componentflags.md) field that is to be considered as a search criterion by the [`FindNextComponent`](../api-1516552-findnextcomponent.md) or [`CountComponents`](../api-1516515-countcomponents.md) function to `1`. The Component Manager considers only these flags during the search. You specify the desired flag value (either `0` or `1`) in the [`componentFlags`](./api-1516652-componentflags.md) field. 
 

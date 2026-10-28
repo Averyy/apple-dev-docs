@@ -22,11 +22,11 @@ class func isAccelerometerRecordingAvailable() -> Bool
 + (BOOL) isAccelerometerRecordingAvailable;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if accelerometer recording is available or [`false`](../../Swift/false.md) if it is not.
 
-#### Discussion
+## Discussion
 
 Call this method before trying to record or retrieve any accelerometer data using the methods of this class. Accelerometer data recording is not supported on all devices.
 

@@ -25,7 +25,7 @@ var remoteAddress: String? { get }
 @property (copy, readonly, nullable) NSString * remoteAddress;
 ```
 
-#### Discussion
+## Discussion
 
 For multipath protocols, this is the remote address of the initial flow. If the app didn’t use the connection, this value is `nil`.
 

@@ -15,7 +15,7 @@ The hosting controller creates and updates constraints that represent its conten
 static let preferredContentSize: NSHostingSizingOptions
 ```
 
-#### Discussion
+## Discussion
 
 The constraints reflect the size that fits a proposal of `.unspecified`.
 

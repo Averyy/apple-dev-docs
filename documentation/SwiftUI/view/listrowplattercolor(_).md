@@ -18,11 +18,11 @@ nonisolated
 func listRowPlatterColor(_ color: Color?) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view with the specified `color` applied to the system cell.
 
-#### Discussion
+## Discussion
 
 Use `listRowPlatterColor(_:)` to set the underlying row background color in a list.
 

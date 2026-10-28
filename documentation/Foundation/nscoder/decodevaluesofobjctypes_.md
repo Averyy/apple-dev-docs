@@ -21,7 +21,7 @@ Decodes a series of potentially different Objective-C types.
 - (void) decodeValuesOfObjCTypes:(const char *) types;
 ```
 
-#### Discussion
+## Discussion
 
 `valueTypes` is a single C string containing any number of type codes. The variable arguments to this method consist of one or more pointer arguments, each of which specifies the buffer in which to place a single decoded value. For each type code in `valueTypes`, you must specify a corresponding pointer argument whose buffer is large enough to hold the decoded value.
 
@@ -31,7 +31,7 @@ This method matches an [`encodeValuesOfObjCTypes:`](./encodevaluesofobjctypes_.m
 
 For information on creating Objective-C type codes suitable for `valueTypes`, see [Type Encodings](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Articles/ocrtTypeEncodings.html#//apple_ref/doc/uid/TP40008048-CH100).
 
-##### Special Considerations
+### Special Considerations
 
 You should not use this method to decode Objective-C objects. See [`decodeArray(ofObjCType:count:at:)`](./decodearray%28ofobjctype,count,at%29.md) for more details.
 

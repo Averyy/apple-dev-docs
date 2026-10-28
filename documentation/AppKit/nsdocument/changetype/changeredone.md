@@ -19,7 +19,7 @@ case changeRedone
 NSChangeRedone
 ```
 
-#### Discussion
+## Discussion
 
 For example, the built-in undo support of [`NSDocument`](../../nsdocument.md) passes this value whenever a document receives an [`NSUndoManagerDidRedoChange`](../../../Foundation/nsnotification/name-swift.struct/nsundomanagerdidredochange.md) from its own undo manager.
 

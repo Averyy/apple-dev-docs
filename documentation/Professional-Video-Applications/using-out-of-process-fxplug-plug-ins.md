@@ -5,17 +5,17 @@
 
 Register and render FxPlug plug-ins with Motion and Final Cut Pro.
 
-#### Overview
+## Overview
 
 FxPlug 4 plug-ins run out-of-process, which means they run in a dedicated process outside the host app, and communication with the plug-in is done over an interprocess communication ([XPC](../Foundation/xpc.md)) using [IOSurface](../IOSurface/IOSurface.md), which is suitable for sharing textures across process boundaries.
 
-##### Register plug-ins
+### Register plug-ins
 
 macOS includes a technology called `PlugInKit` to discover and register plug-ins on a system. After a host application launches, `PlugInKit` reports a list of plug-ins available to that type of host. When a plug-in is instantiated, the out-of-process XPC service is activated, establishes a connection with the host application, and mediates the transfer of information.
 
 > **Note**:  XPCs allow interprocess communication between your plug-in and host apps like Final Cut Pro and Motion. They run as their own process and can become invalid at any point without affecting the application. For this reason, XPCs ideally should remain stateless at any given time.
 
-##### Render plug-ins
+### Render plug-ins
 
 At render time, the host application passes the plug-in state to the XPC service and asks for a render. During this step, your plug-in receives parameter values; for more detailed information, see [Communicating with the plug-in state](./communicating-with-the-plug-in-state.md). After completing its render, your plug-in then hands the image back to the host application.
 
@@ -23,7 +23,7 @@ At render time, the host application passes the plug-in state to the XPC service
 
 ![A diagram of the communication between an FxPlug plug-in and a host application via PluginKit and IOSurface.](https://developer.apple.com/tutorials/images/com.apple.professionalvideoapplications/media-3397536@2x.png)
 
-##### Best practices using XPCs with FxPlug
+### Best practices using XPCs with FxPlug
 
 - Avoid long-running tasks upon plug-in startup and anything that blocks your plug-in’s response to your host app during a restart.
 - Consider pushing some tasks to the background threads. For example, enumerating all the fonts instead of doing so every time your plug-in starts.

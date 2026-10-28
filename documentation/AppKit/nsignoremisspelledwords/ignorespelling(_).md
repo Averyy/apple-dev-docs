@@ -18,7 +18,7 @@ func ignoreSpelling(_ sender: Any?)
 - (void) ignoreSpelling:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this action method to allow an application to ignore misspelled words on a document-by-document basis. This message is sent by the NSSpellChecker instance to the object whose text is being checked.
 

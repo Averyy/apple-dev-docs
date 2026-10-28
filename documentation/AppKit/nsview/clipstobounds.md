@@ -19,7 +19,7 @@ var clipsToBounds: Bool { get set }
 @property BOOL clipsToBounds;
 ```
 
-#### Discussion
+## Discussion
 
 Setting this value to [`true`](../../Swift/true.md) causes the view, and its subviews, to clip themselves to the bounds of the view. Setting it to [`false`](../../Swift/false.md) prevents views and subviews whose frames extend beyond the visible bounds of the view from clipping themselves. A value of [`false`](../../Swift/false.md) has no effect on [`hitTest(_:)`](./hittest%28_%29.md) but does affect [`visibleRect`](./visiblerect.md), as well as the area drawn inside [`draw(_:)`](./draw%28_%29.md).
 

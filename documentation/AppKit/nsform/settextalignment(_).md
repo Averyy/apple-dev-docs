@@ -21,7 +21,7 @@ func setTextAlignment(_ mode: NSTextAlignment)
 - (void) setTextAlignment:(NSTextAlignment) mode;
 ```
 
-#### Discussion
+## Discussion
 
 The default alignment is `NSLeftTextAlignment`.
 

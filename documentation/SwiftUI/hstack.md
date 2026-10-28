@@ -32,7 +32,7 @@ nonisolated struct HStack<Content> where Content : View
 - [Picking container views for your content](./picking-container-views-for-your-content.md)
 - [Applying Liquid Glass to custom views](./applying-liquid-glass-to-custom-views.md)
 
-#### Overview
+## Overview
 
 Unlike [`LazyHStack`](./lazyhstack.md), which only renders the views when your app needs to display them onscreen, an `HStack` renders the views all at once, regardless of whether they are on- or offscreen. Use the regular `HStack` when you have a small number of subviews or don’t want the delayed rendering behavior of the “lazy” version.
 

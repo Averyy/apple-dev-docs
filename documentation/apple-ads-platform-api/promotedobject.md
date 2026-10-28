@@ -15,13 +15,13 @@ Promoted object details.
 object PromotedObject
 ```
 
-#### Discussion
+## Discussion
 
 The `PromotedObject` object provides a lightweight summary of the entity being promoted in an ad.
 
 This object appears in report rows and response contexts where the full promoted object identity (id, type) is captured elsewhere, and only the human-readable name is needed for display or logging purposes.
 
-##### Example
+### Example
 
 ```json
 {

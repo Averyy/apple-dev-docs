@@ -27,7 +27,7 @@ func cancel()
 - (void) cancel;
 ```
 
-#### Discussion
+## Discussion
 
 When you cancel a request, the delegate is not called with an error.
 

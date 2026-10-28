@@ -28,11 +28,11 @@ Check that an expression always throws an error of a given type.
 
 - [Testing for errors in Swift code](./testing-for-errors-in-swift-code.md)
 
-#### Return Value
+## Return Value
 
 If the expectation passes, the instance of `errorType` that was thrown by `expression`. If the expectation fails, the result is `nil`.
 
-#### Overview
+## Overview
 
 Use this overload of `#expect()` when the expression `expression` *should* throw an error of a given type:
 
@@ -49,7 +49,7 @@ If `expression` does not throw an error, or if it throws an error that is not an
 
 If the thrown error need only equal another instance of [Error](../Swift/error.md), use [`expect(throws:_:sourceLocation:performing:)`](./expect%28throws,_,sourcelocation,performing%29-7du1h.md) instead.
 
-#### Expressions that should never throw
+## Expressions that should never throw
 
 If the expression `expression` should *never* throw any error, you can pass [Never.self](../Swift/never.md):
 

@@ -25,7 +25,7 @@ var functionConstantsDictionary: [String : MTLFunctionConstant] { get }
 @property (readonly) NSDictionary<NSString *,MTLFunctionConstant *> * functionConstantsDictionary;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns a dictionary of the function constants that you need to provide to specialize this function. This property returns an empty dictionary if this function is already specialized or doesn’t declare any function constants.
 

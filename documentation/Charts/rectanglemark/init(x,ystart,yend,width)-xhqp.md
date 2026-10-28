@@ -22,14 +22,14 @@ nonisolated
 init<X>(x: PlottableValue<X>, yStart: CGFloat? = nil, yEnd: CGFloat? = nil, width: MarkDimension = .automatic) where X : Plottable
 ```
 
-#### Discussion
+## Discussion
 
 - x: The value plotted with x.
 - width: The rectangle width.  If `width` is not specified, then 70% of the step size will be used. If there is no step size a default width (in pts) will be used.
 - yStart: The y start position. If `yStart` is `nil` then the rectangle will start at the leading edge of the plotting area.
 - yEnd: The y end position. If `yEnd` is `nil` then the rectangle will end at the trailing edge of the plotting area.
 
-##### Discussion
+### Discussion
 
 Use this initializer to map an x position to a rectangle for each data element. Optionally, specify the width, yStart position, or yEnd positions of the rectangles.
 

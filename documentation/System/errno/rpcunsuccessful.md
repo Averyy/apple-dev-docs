@@ -25,7 +25,7 @@ static var rpcUnsuccessful: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 Exchange of RPC information was unsuccessful.
 

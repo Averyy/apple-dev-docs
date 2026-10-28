@@ -15,11 +15,11 @@
 vUInt32 vLR128Shift(vUInt32 vA, vUInt8 vShiftFactor);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the shifted vector.
 
-#### Discussion
+## Discussion
 
 This function treats the entire 128-bit vector as a single value to shift.
 

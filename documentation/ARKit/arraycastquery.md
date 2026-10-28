@@ -20,7 +20,7 @@ class ARRaycastQuery
 @interface ARRaycastQuery : NSObject
 ```
 
-#### Overview
+## Overview
 
 You create a raycast query by providing a 3D vector and starting place.
 

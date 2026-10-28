@@ -24,7 +24,7 @@ let kCIInputPaletteImageKey: String
 extern NSString * const kCIInputPaletteImageKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key needs to be a  1 pixel tall [`CIImage`](./ciimage.md) instance.
 

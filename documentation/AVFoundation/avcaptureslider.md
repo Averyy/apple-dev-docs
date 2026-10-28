@@ -27,7 +27,7 @@ class AVCaptureSlider
 
 - [Enhancing your app experience with the Camera Control](./enhancing-your-app-experience-with-the-camera-control.md)
 
-#### Overview
+## Overview
 
 Sliders are appropriate for controls that provide a single float value.
 

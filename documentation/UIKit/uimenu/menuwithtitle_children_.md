@@ -19,11 +19,11 @@ Creates a menu with the specified title and child menu elements.
 + (UIMenu *) menuWithTitle:(NSString *) title children:(NSArray<UIMenuElement *> *) children;
 ```
 
-#### Return Value
+## Return Value
 
 A new menu object.
 
-#### Discussion
+## Discussion
 
 This method creates a unique identifier for the menu and exposes that value from the [`identifier`](./identifier-swift.property.md) property.
 

@@ -15,7 +15,7 @@ An option that presents a button for more information on any subjects the framew
 static let visualLookUp: ImageAnalysisOverlayView.InteractionTypes
 ```
 
-#### Discussion
+## Discussion
 
 When the framework identifies something familiar in an image that it can provide more information about (see [`ImageAnalysisOverlayView.Subject`](../subject.md)), it offers a button in the bottom-right corner of the view. When people tap the button, a modal sheet appears that offers info about the subject. For example, if the image contains a dog, the modal sheet describes the dog’s breed and provides a relevant web URL where people can read more about the breed.
 

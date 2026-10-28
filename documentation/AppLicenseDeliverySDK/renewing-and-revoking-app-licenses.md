@@ -5,13 +5,13 @@
 
 Determine whether an app for which you issue a license launches.
 
-#### Overview
+## Overview
 
 An app license expires when its expiry date passes. The expiry date is the [`duration`](./aldlicenseattribute/duration.md) after the [`issuedTime`](./aldlicenseattribute/issuedtime.md). Your license server determines the value of those properties at the time of issuing a license (see [Licensing alternative distribution apps](./licensing-alternative-distribution-apps.md)).
 
 When an app’s license expires, the device’s operating system doesn’t allow the app to launch. You determine the criteria for renewal, expiration, and revocation of licenses for apps that you distribute. Depending on the circumstances, you can renew a license before it expires, let it expire, or revoke the license deliberately in advance.
 
-#### Handle a license renewal request from the system
+## Handle a license renewal request from the system
 
 For app license renewal or revocation, the system checks with your server by sending a request. The communication is similar to a dynamic license request for licenses for new app versions, except that the system calls a different endpoint on your server — the `licenseRenewalURL` in your `marketplace-kit` configuration file:
 
@@ -57,17 +57,17 @@ The format you supply in response is:
 | `"license"` | A signed, `base64`-encoded license, as done for dynamic license responses. See [Licensing alternative distribution apps](./licensing-alternative-distribution-apps.md). |
 | `"ineligibleLicenses"` | An array of `string` license IDs from the request that you don’t intend to renew. |
 
-#### Renew an app license from your app
+## Renew an app license from your app
 
 To renew a license, call [`requestLicenseRenewal(appleItemIDs:)`](../MarketplaceKit/applibrary/requestlicenserenewal%28appleitemids%29.md) from within your marketplace app, or other app you distribute from your website. The system then calls your license renewal endpoint and provides the license ID for the given [`AppleItemID`](../MarketplaceKit/appleitemid.md). Your license server responds by providing a new license with the `issuedTime` set to today, and a `duration` set at your discretion.
 
 If any logic running on your web server determines that an app license needs adjusting, record the state and periodically check it from your marketplace app. For example, your marketplace app can call a custom endpoint you implement just for that purpose. When the state indicates the license needs adjusting, your app calls `requestLicenseRenewal(appleItemIDs:)`, which intructs the system to send the renewal request to your license server.
 
-#### Revoke an app license from your app
+## Revoke an app license from your app
 
 To revoke an app license, call [`requestLicenseRenewal(appleItemIDs:)`](../MarketplaceKit/applibrary/requestlicenserenewal%28appleitemids%29.md) passing the app’s [`AppleItemID`](../MarketplaceKit/appleitemid.md) from your app. The system then sends a request to your license renewal endpoint with that app’s license ID. In response, your endpoint includes the license ID in the `ineligibleLicenses` array, which instructs the system to prevent the app from running.
 
-#### Resolve an expired license from the Home Screen
+## Resolve an expired license from the Home Screen
 
 When a license expires for your marketplace app or an app that your marketplace distributes and a person taps the app icon on the Home Screen, the system presents the alert:
 

@@ -18,7 +18,7 @@ Get the completion ring that corresponds to a particular date.
 func completionRingFor(date: Date) -> OCKCompletionRingButton?
 ```
 
-#### Return Value
+## Return Value
 
 The completion ring that matches the given date.
 

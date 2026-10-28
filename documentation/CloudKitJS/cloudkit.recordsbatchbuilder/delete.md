@@ -17,7 +17,7 @@ CloudKit.RecordsBatchBuilder delete(
 );
 ```
 
-#### Return Value
+## Return Value
 
 The object that received this method call.
 

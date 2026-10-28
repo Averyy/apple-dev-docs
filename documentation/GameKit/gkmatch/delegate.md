@@ -24,7 +24,7 @@ weak var delegate: (any GKMatchDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<GKMatchDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 To receive voice or data from other players, you must set the delegate.
 

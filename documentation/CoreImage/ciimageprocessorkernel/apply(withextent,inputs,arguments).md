@@ -24,11 +24,11 @@ class func apply(withExtent extent: CGRect, inputs: [CIImage]?, arguments: [Stri
 + (CIImage *) applyWithExtent:(CGRect) extent inputs:(NSArray<CIImage *> *) inputs arguments:(NSDictionary<NSString *,id> *) arguments error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
  An autoreleased [`CIImage`](../ciimage.md)
 
-#### Discussion
+## Discussion
 
 The inputs and arguments will be retained so that your subclass can be called when the image is drawn.
 

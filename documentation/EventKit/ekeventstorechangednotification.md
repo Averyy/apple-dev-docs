@@ -20,7 +20,7 @@ A notification posted when changes are made to the Calendar database.
 extern NSString * const EKEventStoreChangedNotification;
 ```
 
-#### Discussion
+## Discussion
 
 This notification is posted whenever changes are made to the Calendar database, including adding, removing, and changing events or reminders. Individual changes are not described. When you receive this notification, you should refetch all [`EKEvent`](./ekevent.md) and [`EKReminder`](./ekreminder.md) objects you have accessed, as they are considered stale.
 

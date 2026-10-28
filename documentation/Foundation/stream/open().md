@@ -25,7 +25,7 @@ func open()
 - (void) open;
 ```
 
-#### Discussion
+## Discussion
 
 A stream must be created before it can be opened. Once opened, a stream cannot be closed and reopened.
 

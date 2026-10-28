@@ -24,11 +24,11 @@ class func hardLightBlendMode() -> any CIFilter & CICompositeOperation
 + (CIFilter<CICompositeOperation> *) hardLightBlendModeFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the hard-light blend mode filter to an image. The effect calculates the brightness of the colors in the background image. Colors that are lighter than 50 percent gray become lighter. If the brightness of the colors in the input image are darker then 50 percent gray, the effect darkens the colors. The filter then uses the calculated results to create the output image.
 

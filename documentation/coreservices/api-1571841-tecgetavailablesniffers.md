@@ -15,11 +15,11 @@ Returns the list of sniffers available in all installedplug-ins.
 OSStatus TECGetAvailableSniffers(TextEncoding availableSniffers[], ItemCount maxAvailableSniffers, ItemCount *actualAvailableSniffers);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 
-#### Discussion
+## Discussion
 
 This function ignores duplicate text encoding specifications.If you used the  [`TECCountAvailableSniffers`](./api-1571795-teccountavailablesniffers.md) function to determine the size of the `TECGetAvailableSniffers` array,the number of available encodings may be fewer than the number ofarray elements, because `TECCountAvailableSniffers` includesduplicate text encoding specifications in its count. 
 

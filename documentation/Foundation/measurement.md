@@ -21,7 +21,7 @@ A numeric quantity labeled with a unit of measure, with support for unit convers
 struct Measurement<UnitType> where UnitType : Unit
 ```
 
-#### Overview
+## Overview
 
 A [`Measurement`](./measurement.md) object represents a quantity and unit of measure. The [`Measurement`](./measurement.md) type provides a programmatic interface to converting measurements into different units, as well as calculating the sum or difference between two measurements.
 

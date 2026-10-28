@@ -19,11 +19,11 @@ func criteria(forRow row: Int) -> [Any]
 - (NSArray *) criteriaForRow:(NSInteger) row;
 ```
 
-#### Return Value
+## Return Value
 
 The currently chosen items for row `row`.
 
-#### Discussion
+## Discussion
 
 The items returned are the same as those returned by calling the delegate’s [`ruleEditor(_:child:forCriterion:with:)`](../nsruleeditordelegate/ruleeditor%28_,child,forcriterion,with%29.md) method once for each item in the row.
 

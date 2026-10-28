@@ -12,11 +12,11 @@ virtual IOService * getProvider(
  void ) const;
 ```
 
-#### Return Value
+## Return Value
 
 The first provider of the client, or zero if the IOService object is not attached into the I/O Registry. The provider is retained while the client is attached, and should not be released by the caller.
 
-#### Overview
+## Overview
 
 This function called in an IOService client will return the provider to which it was first attached. Because the majority of IOService objects have only one provider, this is a useful simplification and also supports caching of the provider when the I/O Registry is unchanged.
 

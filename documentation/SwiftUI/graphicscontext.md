@@ -22,7 +22,7 @@ An immediate mode drawing destination, and its current state.
 struct GraphicsContext
 ```
 
-#### Overview
+## Overview
 
 Use a context to execute 2D drawing primitives. For example, you can draw filled shapes using the [`fill(_:with:style:)`](./graphicscontext/fill%28_,with,style%29.md) method inside a [`Canvas`](./canvas.md) view:
 

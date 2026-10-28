@@ -25,7 +25,7 @@ var isNull: Bool { get }
 static BOOL MKMapRectIsNull(MKMapRect rect);
 ```
 
-#### Discussion
+## Discussion
 
 For this class, a rectangle is `null` if its origin point contains an invalid or infinite value.
 

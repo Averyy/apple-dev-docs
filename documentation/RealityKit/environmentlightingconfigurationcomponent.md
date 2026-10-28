@@ -20,7 +20,7 @@ A component that scales the amount of light that an entity receives from its env
 struct EnvironmentLightingConfigurationComponent
 ```
 
-#### Overview
+## Overview
 
 When rendering a RealityKit scene, you can control how much the environment’s lighting affects the virtual objects in your scene, such as the lighting from your real-world surroundings, a virtual environment, or both. Use an `EnvironmentLightingConfigurationComponent` to configure this amount for an entity.
 

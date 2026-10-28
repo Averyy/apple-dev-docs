@@ -22,7 +22,7 @@ var intersectionFunctionBuffer: UInt64
 uint64_t intersectionFunctionBuffer;
 ```
 
-#### Discussion
+## Discussion
 
 The GPU resource ID of the buffer containing intersection-function handles. Required to be aligned to 8 bytes.
 

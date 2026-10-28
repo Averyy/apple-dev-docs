@@ -23,7 +23,7 @@ optional func navigationBar(_ navigationBar: UINavigationBar, didPop item: UINav
 - (void) navigationBar:(UINavigationBar *) navigationBar didPopItem:(UINavigationItem *) item;
 ```
 
-#### Discussion
+## Discussion
 
 If animating the pop operation, this method is invoked after the animation ends; otherwise, it is invoked immediately after the pop.
 

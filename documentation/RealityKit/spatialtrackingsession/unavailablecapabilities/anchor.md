@@ -17,7 +17,7 @@ A type that contains all unavailable anchor capabilities.
 var anchor: Set<SpatialTrackingSession.Configuration.AnchorCapability> { get }
 ```
 
-#### Discussion
+## Discussion
 
 The system marks certain anchor capabilities as unavailable if:
 

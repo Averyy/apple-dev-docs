@@ -16,7 +16,7 @@ Returns a string representation of the matrix.
 DOMString toString();
 ```
 
-#### Return Value
+## Return Value
 
 A string representation of the matrix’s values.
 

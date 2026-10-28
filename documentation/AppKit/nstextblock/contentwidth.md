@@ -19,7 +19,7 @@ var contentWidth: CGFloat { get }
 @property (readonly) CGFloat contentWidth;
 ```
 
-#### Discussion
+## Discussion
 
 This property interpreted according to the value type returned by [`contentWidthValueType`](./contentwidthvaluetype.md).
 

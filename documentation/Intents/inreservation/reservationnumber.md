@@ -32,7 +32,7 @@ var reservationNumber: String? { get }
 @property (atomic, copy, readonly, nullable) NSString * reservationNumber;
 ```
 
-#### Discussion
+## Discussion
 
 Provide your system’s reference number for the reservation. Use a consistent, unique identifier for each reservation. If you also provide reservation information with [Siri Event Suggestions Markup](../../SiriEventSuggestionsMarkup/SiriEventSuggestionsMarkup.md) on your website or in emails, use the same value for the [`reservationId`](../../SiriEventSuggestionsMarkup/reservationid.md) in the reservation markup.
 

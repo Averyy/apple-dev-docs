@@ -25,7 +25,7 @@ var joints: [SKPhysicsJoint] { get }
 @property (nonatomic, readonly) NSArray<SKPhysicsJoint *> * joints;
 ```
 
-#### Discussion
+## Discussion
 
 This property holds an array of [`SKPhysicsJoint`](../skphysicsjoint.md) objects that define all joints added to the scene’s physics world that are connected to this physics body.
 

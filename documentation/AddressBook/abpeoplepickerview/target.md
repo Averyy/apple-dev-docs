@@ -19,7 +19,7 @@ unowned(unsafe) var target: AnyObject! { get set }
 @property (nonatomic, assign) id target;
 ```
 
-#### Discussion
+## Discussion
 
 The target is the object on which the action specified by [`groupDoubleAction`](./groupdoubleaction.md) and [`nameDoubleAction`](./namedoubleaction.md) is invoked.
 

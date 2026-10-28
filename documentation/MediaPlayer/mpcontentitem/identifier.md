@@ -24,7 +24,7 @@ var identifier: String { get }
 @property (nonatomic, copy, readonly) NSString * identifier;
 ```
 
-#### Discussion
+## Discussion
 
 All media items must have a unique identifier. Identifiers must be unique so that Media Player can properly update existing media items or add new media items. Media items won’t update properly if multiple media items have the same identifier.
 

@@ -23,7 +23,7 @@ var invalidateFlowLayoutAttributes: Bool { get set }
 @property (nonatomic) BOOL invalidateFlowLayoutAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`false`](../../Swift/false.md). Set this property to [`true`](../../Swift/true.md) if there are changes to the position of items on the screen. For example, the flow layout object sets this property to [`true`](../../Swift/true.md) when the collection view’s bounds change in a way that affects the number of items in a column or row.
 

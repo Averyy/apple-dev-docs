@@ -22,11 +22,11 @@ func compare(_ other: UInt64) -> JSRelationCondition
 - (JSRelationCondition) compareUInt64:(uint64_t) other;
 ```
 
-#### Return Value
+## Return Value
 
 A value of JSRelationCondition, a kJSRelationConditionUndefined is returned if an exception is thrown.
 
-#### Discussion
+## Discussion
 
 Compare a JSValue with a uint64_t.
 

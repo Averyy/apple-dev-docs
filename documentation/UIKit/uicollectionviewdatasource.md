@@ -24,7 +24,7 @@ protocol UICollectionViewDataSource : NSObjectProtocol
 @protocol UICollectionViewDataSource <NSObject>
 ```
 
-#### Overview
+## Overview
 
 A data source object manages the data in your collection view. It represents your app’s data model and vends information to the collection view as needed. It also creates and configures the cells and supplementary views that the collection view uses to display your data.
 

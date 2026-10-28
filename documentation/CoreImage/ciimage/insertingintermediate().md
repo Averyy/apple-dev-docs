@@ -24,11 +24,11 @@ func insertingIntermediate() -> CIImage
 - (CIImage *) imageByInsertingIntermediate;
 ```
 
-#### Return Value
+## Return Value
 
  An autoreleased [`CIImage`](../ciimage.md).
 
-#### Discussion
+## Discussion
 
 This intermediate will be not be cached if [`cacheIntermediates`](../cicontextoption/cacheintermediates.md) is false.
 

@@ -24,11 +24,11 @@ typealias AudioFileStream_PacketsProc = (UnsafeMutableRawPointer, UInt32, UInt32
 typedef void (*)(void *, unsigned int, unsigned int, const void *, struct AudioStreamPacketDescription *) AudioFileStream_PacketsProc;
 ```
 
-#### Discussion
+## Discussion
 
 If you named your function `MyAudioFileStream_PacketsProc`, you would declare it like this:
 
-##### Discussion
+### Discussion
 
 For constant-bit-rate (CBR) audio data, your callback is typically called with as much data as you passed to the [`AudioFileStreamParseBytes(_:_:_:_:)`](./audiofilestreamparsebytes%28_,_,_,_%29.md) function. At times, however, only a single packet might be passed because of boundaries in the input data. For variable-bit-rate (VBR) audio data, your callback might be called several times for each time you called the [`AudioFileStreamParseBytes(_:_:_:_:)`](./audiofilestreamparsebytes%28_,_,_,_%29.md) function.
 

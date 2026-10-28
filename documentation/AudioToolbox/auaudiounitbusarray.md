@@ -24,7 +24,7 @@ class AUAudioUnitBusArray
 @interface AUAudioUnitBusArray : NSObject
 ```
 
-#### Overview
+## Overview
 
 Hosts can observe a bus property across all busses by using KVO on a bus array object, without having to observe it on each individual bus. Some audio units (e.g. mixers) support variable numbers of busses, via subclassing. When the bus count changes, a KVO notification is sent on the audio unit’s [`inputBusses`](./auaudiounit/inputbusses.md) or [`outputBusses`](./auaudiounit/outputbusses.md) property, as appropriate.
 

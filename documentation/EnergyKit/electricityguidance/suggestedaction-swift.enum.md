@@ -21,7 +21,7 @@ enum SuggestedAction
 
 - [Providing charging history for electric vehicles](../providing-informative-charging-history-for-electric-vehicles.md)
 
-#### Overview
+## Overview
 
 An example of suggested actions for the load could be shift-able load or reduce-able load.
 

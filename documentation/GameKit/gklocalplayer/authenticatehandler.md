@@ -58,7 +58,7 @@ var authenticateHandler: (((any Error)?) -> Void)? { get set }
 - [Authenticating a player](../authenticating-a-player.md)
 - [Initializing and configuring Game Center](../initializing-and-configuring-game-center.md)
 
-#### Discussion
+## Discussion
 
 Before you can access any Game Center data and use GameKit features, you need to initialize the local player to ensure the player signs in to Game Center on the device running your game. Set this property to a method that GameKit invokes during the initialization process. If `viewController` is `nil`, Game Center initializes the player and the player can start your game. Otherwise, present the view controller so the player can perform any additional actions to complete the process.
 

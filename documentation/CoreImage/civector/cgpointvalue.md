@@ -24,7 +24,7 @@ var cgPointValue: CGPoint { get }
 @property (readonly) CGPoint CGPointValue;
 ```
 
-#### Return Value
+## Return Value
 
  Reading this property returns a `CGPoint` structure from the `X` and `Y` values from the vector.
 

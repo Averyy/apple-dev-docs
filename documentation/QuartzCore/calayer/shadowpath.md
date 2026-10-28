@@ -24,7 +24,7 @@ var shadowPath: CGPath? { get set }
 @property (nullable) CGPathRef shadowPath;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `nil`, which causes the layer to use a standard shadow shape. If you specify a value for this property, the layer creates its shadow using the specified path instead of the layer’s composited alpha channel. The path you provide defines the outline of the shadow. It is filled using the non-zero winding rule and the current shadow color, opacity, and blur radius.
 
@@ -34,7 +34,7 @@ Specifying an explicit path usually improves rendering performance.
 
 The value of this property is retained using the Core Foundation retain/release semantics. This behavior occurs despite the fact that the property declaration appears to use the default assign semantics for object retention.
 
-##### Using Shadow Path for Special Effects
+### Using Shadow Path for Special Effects
 
 You can use a layer’s shadow path to create special effects such as simulating the shadows available in [Pages](http://www.apple.com/pages/).
 

@@ -19,13 +19,13 @@ The entitlement the system requires for an app to use the Wi-Fi Infrastructure f
 
 - `WiFiNetworkSharing`: A string that states your app’s intent to share Wi-Fi network data to an accessory.
 
-#### Discussion
+## Discussion
 
 This entitlement works with the Wi-Fi Infrastructure framework, which enables your app and accessory to share Wi-Fi networks from the host device.
 
 To use Wi-Fi Infrastructure, add this entitlement to your app by enabling the Wi-Fi Infrastructure capability on your target in Xcode. For more information, see [Adding capabilities to your app](../../Xcode/adding-capabilities-to-your-app.md).
 
-##### Transport Security
+### Transport Security
 
 To use Wi-Fi network sharing, an accessory must be paired and use Bluetooth Secure Connections, as defined in Bluetooth 4.2 from 2014. This involves a Bluetooth connection using:
 

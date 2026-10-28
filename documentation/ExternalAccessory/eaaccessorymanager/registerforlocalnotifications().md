@@ -24,7 +24,7 @@ func registerForLocalNotifications()
 - (void) registerForLocalNotifications;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to be notified when an accessory becomes connected or disconnected. The system does not send [`EAAccessoryDidConnectNotification`](../eaaccessorydidconnectnotification.md) and [`EAAccessoryDidDisconnectNotification`](../eaaccessorydiddisconnectnotification.md) notifications automatically, so calling this method lets the system know that your application wants to receive them. Typically, you would call this method only once early in your application, either before or after configuring your notification observers. When you no longer need to monitor these notifications, you should call the matching [`unregisterForLocalNotifications()`](./unregisterforlocalnotifications%28%29.md) method.
 

@@ -25,11 +25,11 @@ func CTFontGetGlyphWithName(_ font: CTFont, _ glyphName: CFString) -> CGGlyph
 extern CGGlyph CTFontGetGlyphWithName(CTFontRef font, CFStringRef glyphName);
 ```
 
-#### Return Value
+## Return Value
 
 The glyph value for the named glyph as a [`CGGlyph`](../CoreGraphics/cgglyph.md) object, or if the glyph name is not recognized, the `.notdef` glyph index value.
 
-#### Discussion
+## Discussion
 
 The returned `CGGlyph` object can be used with any of the subsequent glyph data accessors or directly with Core Graphics.
 

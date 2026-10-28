@@ -20,11 +20,11 @@ optional func tokenField(_ tokenField: NSTokenField, hasMenuForRepresentedObject
 - (BOOL) tokenField:(NSTokenField *) tokenField hasMenuForRepresentedObject:(id) representedObject;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the  represented object has a menu, [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 By default tokens in a token field have no menus.
 

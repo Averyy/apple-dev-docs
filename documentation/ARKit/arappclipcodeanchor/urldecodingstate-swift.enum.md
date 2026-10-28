@@ -20,7 +20,7 @@ enum URLDecodingState
 enum ARAppClipCodeURLDecodingState : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The possible states of decoding the [`url`](./url.md) of an App Clip Code.
 

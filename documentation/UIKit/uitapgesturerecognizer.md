@@ -29,7 +29,7 @@ class UITapGestureRecognizer
 - [Handling tap gestures](./handling-tap-gestures.md)
 - [Preferring one gesture over another](./preferring-one-gesture-over-another.md)
 
-#### Overview
+## Overview
 
 [`UITapGestureRecognizer`](./uitapgesturerecognizer.md) is a concrete subclass of [`UIGestureRecognizer`](./uigesturerecognizer.md).
 

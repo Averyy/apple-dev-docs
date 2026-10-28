@@ -19,7 +19,7 @@ init(tag: String)
 - (instancetype) initWithTag:(NSString *) tag;
 ```
 
-#### Discussion
+## Discussion
 
 The system presents the `tag` as a label in the guest identifying this device for mounting. The `tag` must be valid, which you can check with [`validateTag(_:)`](./validatetag%28_%29.md).
 

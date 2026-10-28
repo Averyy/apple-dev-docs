@@ -20,7 +20,7 @@ Sets the tint color within this control template.
 @preconcurrency func tint(_ tint: Color?) -> some ControlWidgetTemplate
 ```
 
-#### Discussion
+## Discussion
 
 Controls don’t respect the [`tint(_:)`](../view/tint%28_%29.md) modifier when applied to control labels, nor do controls support arbitrary tint shape styles. Instead, define a tint color for your control by applying this modifier to its template:
 

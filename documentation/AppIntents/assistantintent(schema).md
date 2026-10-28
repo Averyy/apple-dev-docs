@@ -18,8 +18,8 @@ A Swift macro you use to make sure your app intent conforms to an assistant sche
 ## Declaration
 
 ```swift
-@attached
-(memberAttribute) @attached(extension, conformances: AssistantSchemaIntent, ShowInAppSearchResultsIntent, names: named(__assistantSchemaIntent)) macro AssistantIntent<T>(schema: T) where T : AssistantSchemas.Intent
+@attached(memberAttribute)
+@attached(extension, conformances: AssistantSchemaIntent, ShowInAppSearchResultsIntent, names: named(__assistantSchemaIntent)) macro AssistantIntent<T>(schema: T) where T : AssistantSchemas.Intent
 ```
 
 ## See Also

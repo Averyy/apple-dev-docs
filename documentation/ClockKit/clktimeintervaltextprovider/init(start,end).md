@@ -21,11 +21,11 @@ convenience init(start startDate: Date, end endDate: Date)
 + (instancetype) textProviderWithStartDate:(NSDate *) startDate endDate:(NSDate *) endDate;
 ```
 
-#### Return Value
+## Return Value
 
 A text provider initialized with the specified start and end dates.
 
-#### Discussion
+## Discussion
 
 The returned text provider uses the default calendar and time zone information for the current user. Date and time values are formatted according to the user’s current locale information.
 

@@ -22,7 +22,7 @@ A handler that receives inbound connections.
 final var newConnectionHandler: (@Sendable (NWConnection) -> Void)? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Upon receiving a new connection, you should set update handlers on the connection and start it in order to accept it. If you want to reject the connection, cancel the connection.
 

@@ -19,7 +19,7 @@ static let options: NSRuleEditor.PredicatePartKey
 extern NSRuleEditorPredicatePartKey const NSRuleEditorPredicateOptions;
 ```
 
-#### Discussion
+## Discussion
 
 If no value is specified, `0` (no options) is assumed.
 

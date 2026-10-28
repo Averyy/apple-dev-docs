@@ -20,11 +20,11 @@ Finds the entity in the AR scene closest to the specified point.
 @preconcurrency func entity(at point: CGPoint) -> Entity?
 ```
 
-#### Return Value
+## Return Value
 
 The entity at `point`, or `nil` if no entity is found.
 
-#### Discussion
+## Discussion
 
 The method ignores entities that lack a [`CollisionComponent`](../collisioncomponent.md).
 

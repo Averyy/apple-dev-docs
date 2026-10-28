@@ -17,7 +17,7 @@ Synchronizes the on device store with one on a remote server.
 func synchronize() async throws
 ```
 
-#### Discussion
+## Discussion
 
 Depending on the mode, it possible to overwrite the entire contents of the device or the remote with the data from the other.
 

@@ -25,7 +25,7 @@ var kernelStartTime: CFTimeInterval { get }
 @property (readonly) CFTimeInterval kernelStartTime;
 ```
 
-#### Discussion
+## Discussion
 
 You can calculate how much time the kernel spends scheduling a command buffer by subtracting this value from [`kernelEndTime`](./kernelendtime.md).
 

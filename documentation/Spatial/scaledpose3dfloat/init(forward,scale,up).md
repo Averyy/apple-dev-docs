@@ -21,7 +21,7 @@ Creates a scaled pose with the specified forward and up vectors.
 init(forward: Vector3DFloat, scale: Float = 1, up: Vector3DFloat = Vector3DFloat(x: 0, y: 1, z: 0))
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This function creates a scaled pose where `+z` is forward.
 

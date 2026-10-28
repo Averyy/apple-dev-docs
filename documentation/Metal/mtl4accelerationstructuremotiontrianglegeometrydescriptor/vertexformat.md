@@ -24,7 +24,7 @@ var vertexFormat: MTLAttributeFormat { get set }
 @property (nonatomic) MTLAttributeFormat vertexFormat;
 ```
 
-#### Discussion
+## Discussion
 
 All keyframes share the same vertex format. Defaults to `MTLAttributeFormatFloat3`, corresponding to three packed floating point numbers.
 

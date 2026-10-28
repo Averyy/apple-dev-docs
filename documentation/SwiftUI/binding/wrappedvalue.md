@@ -21,7 +21,7 @@ The underlying value referenced by the binding variable.
 var wrappedValue: Value { get nonmutating set }
 ```
 
-#### Discussion
+## Discussion
 
 This property provides primary access to the value’s data. However, you don’t access `wrappedValue` directly. Instead, you use the property variable created with the [`Binding`](../binding.md) attribute. In the following code example, the binding variable `isPlaying` returns the value of `wrappedValue`:
 

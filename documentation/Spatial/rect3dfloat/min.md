@@ -23,7 +23,7 @@ var min: Point3DFloat { get }
 static SPPoint3DFloat SPRect3DFloatGetMinimum(SPRect3DFloat rect);
 ```
 
-#### Discussion
+## Discussion
 
 Returns a point that represents the corner of the rectangle with smallest x-, y-, and z-coordinates.
 

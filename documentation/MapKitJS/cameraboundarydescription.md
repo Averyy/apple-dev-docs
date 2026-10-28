@@ -15,7 +15,7 @@ An object literal that contains information defining an area on the map.
 interface CameraBoundaryDescription
 ```
 
-#### Overview
+## Overview
 
 The `CameraBoundaryDescription`, returned from the [`cameraBoundary`](./map/cameraboundary.md) property, contains the camera boundary represented as a [`MapRect`](./maprect.md) or a [`CoordinateRegion`](./coordinateregion.md). Both properties describe the same rectangular area on the map.
 

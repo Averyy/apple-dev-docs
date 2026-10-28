@@ -25,7 +25,7 @@ var destination: UIViewController { get }
 @property (nonatomic, readonly) UIViewController * destinationViewController;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the view controller whose contents should be displayed at the end of the segue.
 

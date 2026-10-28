@@ -15,7 +15,7 @@ Returns the scaling factor from user space to device space on the screen.
 - (CGFloat) userSpaceScaleFactor;
 ```
 
-#### Return Value
+## Return Value
 
 The scaling factor, measured in pixels per point, where a point is always equal to 1/72 of an inch. For example, a scaling factor of `2.0` indicates the display has a resolution 2 pixels per point or 144 pixels per inch.
 

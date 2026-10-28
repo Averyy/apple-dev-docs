@@ -21,7 +21,7 @@ A symbol effect that applies the DrawOff animation to symbol images.
 struct DrawOffSymbolEffect
 ```
 
-#### Overview
+## Overview
 
 The DrawOff animation makes the symbol hidden either as a whole, or one motion group at a time, animating parts of the symbol with draw data.
 

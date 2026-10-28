@@ -21,7 +21,7 @@ A Boolean that indicates whether the entity and all of its ancestors are enabled
 @preconcurrency var isEnabledInHierarchy: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `true` if the entity and all of its ancestors are enabled, regardless of anchor state.
 

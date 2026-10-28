@@ -28,7 +28,7 @@ nonisolated
 func textContentType(_ textContentType: UITextContentType?) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to set the content type for input text. For example, you can configure a [`TextField`](../textfield.md) for the entry of email addresses:
 

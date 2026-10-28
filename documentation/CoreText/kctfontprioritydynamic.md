@@ -25,7 +25,7 @@ var kCTFontPriorityDynamic: Int { get }
 kCTFontPriorityDynamic
 ```
 
-#### Discussion
+## Discussion
 
 Dynamic fonts are either in [`user`](./ctfontmanagerscope/user.md) or [`CTFontManagerScope.session`](./ctfontmanagerscope/session.md).
 

@@ -17,7 +17,7 @@ Variant of [`eval(_:)`](./eval%28_%29-91pbd.md) that checks for errors in MLX an
 func checkedEval(_ values: some Sequence<Any>) throws
 ```
 
-##### See Also
+### See Also
 
 - [Lazy Evaluation](./lazy-evaluation.md)
 

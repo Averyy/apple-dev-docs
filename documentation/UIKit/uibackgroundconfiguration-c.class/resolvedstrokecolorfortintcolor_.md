@@ -19,7 +19,7 @@ Generates the resolved stroke color for the specified tint color, using the stro
 - (UIColor *) resolvedStrokeColorForTintColor:(UIColor *) tintColor;
 ```
 
-#### Discussion
+## Discussion
 
 The resulting color depends on `strokeColor` and `strokeColorTransformer`.
 

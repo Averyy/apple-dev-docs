@@ -21,7 +21,7 @@ Retrieves the current thread’s progress object, executes the specified block, 
 - (void) performAsCurrentWithPendingUnitCount:(int64_t) unitCount usingBlock:(void (^)()) work;
 ```
 
-#### Discussion
+## Discussion
 
 Use this function as a convenience method to wrap an existing method or block to increment the current progress object. This function retrieves the current progress object, does the work you specify in the block. When the block is complete, this function increments the current progress object. This function is the same as calling [`becomeCurrent(withPendingUnitCount:)`](../progress/becomecurrent%28withpendingunitcount%29.md), doing the work you specify in the block, and calling [`resignCurrent()`](../progress/resigncurrent%28%29.md).
 

@@ -19,7 +19,7 @@ func changeLayoutOrientation(_ sender: Any?)
 - (void) changeLayoutOrientation:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 Calls [`setLayoutOrientation(_:)`](./setlayoutorientation%28_%29.md) with the sender’s tag as the orientation.
 

@@ -20,11 +20,11 @@ func CGDisplaySetDisplayMode(_ display: CGDirectDisplayID, _ mode: CGDisplayMode
 extern CGError CGDisplaySetDisplayMode(CGDirectDisplayID display, CGDisplayModeRef mode, CFDictionaryRef options);
 ```
 
-#### Return Value
+## Return Value
 
 A Core Graphics result code. To interpret the result code, see [`CGError`](./cgerror.md).
 
-#### Discussion
+## Discussion
 
 This function switches the display mode of the specified display. The operation is always synchronous; the function doesn’t return until the mode switch is complete. Note that after switching, display parameters and addresses may change.
 

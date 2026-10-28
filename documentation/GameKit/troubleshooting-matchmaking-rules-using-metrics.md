@@ -5,11 +5,11 @@
 
 Investigate issues with Game Center by evaluating your matchmaking rules using metrics endpoints.
 
-#### Overview
+## Overview
 
 You can diagnose problems with your matchmaking rules using the metrics endpoints. You can get matchmaking data at different granularities, such as every 15 minutes for 8 hours, hourly over 24 hours, or daily for 30 days. If Game Center takes too long to find matches or fails to find matches, use the metrics APIs to help troubleshoot your rules.
 
-##### View match requests on the queue
+### View match requests on the queue
 
 First, confirm that your game submits requests to the correct queue using the [`Get Match Request Time in Queue`](../AppStoreConnectAPI/get-v1-gamecentermatchmakingqueues-_id_-metrics-matchmakingrequests.md) endpoint. In the query parameters, pass the Game Center details `id` and pass a value for the `granularity` parameter that returns the level of information you want. To get the Game Center detail `id`, use the [`Enable game center for an app`](../AppStoreConnectAPI/post-v1-gamecenterdetails.md) or [`List apps`](../AppStoreConnectAPI/get-v1-apps.md) endpoint.
 
@@ -46,7 +46,7 @@ GET /v1/gameCenterMatchmakingQueues/8fb73d41-1ca1-1cbf-2538-9df424beb10b/metrics
 
 > **Note**:  It’s common for players to cancel a match request by quitting a game or other compatible match requests to arrive too late to fill empty slots. However, if the amount of canceled and expired match requests exceeds the amount of matched requests, investigate whether there’s a problem with your rules.
 
-##### View match request errors
+### View match request errors
 
 Runtime errors can occur when your game submits a match request. If an error occurs while Game Center evaluates a match request, it may reject it and log an error. To view these types of errors, pass the matchmaking rule `id` and pass a `granularity` query parameter to the [`Get Matchmaking Rule Errors`](../AppStoreConnectAPI/get-v1-gamecentermatchmakingrules-_id_-metrics-matchmakingruleerrors.md) endpoint.
 
@@ -60,7 +60,7 @@ For example, you can verify that the game passes the correct key for game-specif
 
 To get the matchmaking rule `id`, use the [`Create a Rule`](../AppStoreConnectAPI/post-v1-gamecentermatchmakingrules.md) endpoint.
 
-##### Check if your rules are too restrictive
+### Check if your rules are too restrictive
 
 Your matchmaking rules should strike a balance between finding the best players and reducing wait times. Check whether your rules are too restrictive by getting the frequency that your rules reject candidate matches using the [`Get boolean rule results`](../AppStoreConnectAPI/get-v1-gamecentermatchmakingrules-_id_-metrics-matchmakingbooleanruleresults.md) and [`Get Numeric Rule Results`](../AppStoreConnectAPI/get-v1-gamecentermatchmakingrules-_id_-metrics-matchmakingnumberruleresults.md) endpoints. Pass the matchmaking rule `id,` pass a `granularity` query parameter, and to organize the results by type, set the `groupBy` query parameter to `result`.
 
@@ -70,7 +70,7 @@ GET /v1/gameCenterMatchmakingRules/0f0fcbf9-43b6-429d-8c08-fcaf66a52872/metrics/
 
 If your rules are too restrictive, consider relaxing the criteria over time using a match rule with an age function. For more information, see [Finding players with similar skill levels](./finding-players-with-similar-skill-levels.md) and [Expressions](../AppStoreConnectAPI/expressions.md) in App Store Connect API.
 
-##### Keep the queues short and responsive
+### Keep the queues short and responsive
 
 If you submit too many match requests to one queue, the matchmaking algorithm may struggle to keep up with the requests and fail to find candidate matches, even when they exist in the queue. To avoid this problem, monitor the size of your queue using the [`Get Queue Size`](../AppStoreConnectAPI/get-v1-gamecentermatchmakingqueues-_id_-metrics-matchmakingqueuesizes.md) endpoint. Pass the queue `id` and pass a `granularity` query parameter.
 

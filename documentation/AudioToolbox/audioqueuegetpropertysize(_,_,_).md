@@ -24,7 +24,7 @@ func AudioQueueGetPropertySize(_ inAQ: AudioQueueRef, _ inID: AudioQueueProperty
 extern OSStatus AudioQueueGetPropertySize(AudioQueueRef inAQ, AudioQueuePropertyID inID, UInt32 *outDataSize);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See Result Codes.
 

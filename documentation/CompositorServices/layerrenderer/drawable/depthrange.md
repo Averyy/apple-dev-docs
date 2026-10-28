@@ -20,7 +20,7 @@ var depthRange: simd_float2 { get nonmutating set }
 simd_float2 cp_drawable_get_depth_range(cp_drawable_t drawable);
 ```
 
-#### Discussion
+## Discussion
 
 Apply the depth range for drawing to the drawable that it applies to. The compositor uses these values to compute the perspective projection matrix, which clips content that’s not between the near and far planes.
 

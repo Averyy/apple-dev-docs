@@ -20,11 +20,11 @@ func SecCodeCopySigningInformation(_ code: SecStaticCode, _ flags: SecCSFlags, _
 OSStatus SecCodeCopySigningInformation(SecStaticCodeRef code, SecCSFlags flags, CFDictionaryRef*information);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Code Signing Services Result Codes](./code-signing-services-result-codes.md).
 
-#### Discussion
+## Discussion
 
 The amount and detail level of the data returned is controlled by the flags passed to the call.
 
@@ -32,7 +32,7 @@ If the code exists but is not signed, this function call succeeds and returns a 
 
 If the signing data for the code is corrupt or invalid, this function may fail or it may return partial data. To ensure that only valid data is returned (and errors are raised for invalid data), you must successfully call the [`SecCodeCheckValidity(_:_:_:)`](./seccodecheckvalidity%28_,_,_%29.md) or [`SecCodeCheckValidityWithErrors(_:_:_:_:)`](./seccodecheckvaliditywitherrors%28_,_,_,_%29.md) function before calling [`SecCodeCopySigningInformation(_:_:_:)`](./seccodecopysigninginformation%28_,_,_%29.md).
 
-##### Special Considerations
+### Special Considerations
 
 Some of the objects returned in the information dictionary are (retained) “live” API objects used by the code signing infrastructure. Making changes to these objects is unsupported and may cause subsequent code signing operations on the affected code to behave in undefined ways.
 

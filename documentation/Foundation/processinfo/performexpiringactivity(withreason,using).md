@@ -24,7 +24,7 @@ func performExpiringActivity(withReason reason: String, using block: @escaping @
 - (void) performExpiringActivityWithReason:(NSString *) reason usingBlock:(void (^)(BOOL expired)) block;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to perform tasks when your process is executing in the background. This method queues `block` for asynchronous execution on a concurrent queue. When your process is in the background, the method tries to take a task assertion to ensure that your block has time to execute. If it is unable to take a task assertion, or if the time allotted for the task assertion expires, the system executes your block with the parameter set to [`true`](../../Swift/true.md). If it is able to take the task assertion, it executes the block and passes [`false`](../../Swift/false.md) for the expired parameter.
 

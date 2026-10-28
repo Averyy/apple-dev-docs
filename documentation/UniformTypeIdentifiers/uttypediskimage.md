@@ -21,7 +21,7 @@ A type that represents a data item that’s mountable as a volume.
 extern UTType * const UTTypeDiskImage;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.disk-image`.
 

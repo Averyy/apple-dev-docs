@@ -21,7 +21,7 @@ Accesses the transaction value associated with a custom key.
 subscript<K>(key: K.Type) -> K.Value where K : TransactionKey { get set }
 ```
 
-#### Overview
+## Overview
 
 Create custom transaction values by defining a key that conforms to the [`TransactionKey`](../transactionkey.md) protocol, and then using that key with the subscript operator of the [`Transaction`](../transaction.md) structure to get and set a value for that key:
 

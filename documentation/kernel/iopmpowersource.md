@@ -13,7 +13,7 @@
 class IOPMPowerSource : IOService
 ```
 
-#### Overview
+## Overview
 
 See IOKit/pwr_mgt/IOPM.h for power source keys relevant to this class. These report-type keys are required for calls to IOPMPowerSource::setReportables(), and they define the IORegistry interface through which data is passed back up to the rest of the system.
 

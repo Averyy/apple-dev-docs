@@ -22,7 +22,7 @@ optional func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inCo
 - (void) pickerView:(UIPickerView *) pickerView didSelectRow:(NSInteger) row inComponent:(NSInteger) component;
 ```
 
-#### Discussion
+## Discussion
 
 To determine what value the user selected, the delegate uses the `row` index to access the value at the corresponding position in the array used to construct the component.
 

@@ -21,7 +21,7 @@ Creates music content with static and animated artwork.
 init(id: String, songTitle: String, artistName: String, albumName: String, type: MediaType, duration: MediaDuration?, artwork: Artwork, animatedArtwork: AnimatedArtwork?)
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer when your track has a matching animated asset, for example motion album art.
 

@@ -29,11 +29,11 @@ func attributesOfFileSystem(forPath path: String) throws -> [FileAttributeKey : 
 
 - [About Apple File System](../about-apple-file-system.md)
 
-#### Return Value
+## Return Value
 
 A dictionary object that describes the attributes of the mounted file system on which `path` resides. See `File-System Attribute Keys` for a description of the keys available in the dictionary.
 
-#### Discussion
+## Discussion
 
 This method does not traverse a terminal symbolic link.
 

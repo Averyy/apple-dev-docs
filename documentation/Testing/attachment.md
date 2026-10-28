@@ -20,7 +20,7 @@ struct Attachment<AttachableValue> where AttachableValue : Attachable, Attachabl
 
 - [Migrating a test from XCTest](./migratingfromxctest.md)
 
-#### Overview
+## Overview
 
 To create an attachment, you need a value of some type that conforms to [`Attachable`](./attachable.md). Initialize an instance of [`Attachment`](./attachment.md) with that value and, optionally, a preferred filename to use when saving the attachment. To record the attachment, call [`record(_:sourceLocation:)`](./attachment/record%28_,sourcelocation%29.md). Alternatively, pass your attachable value directly to [`record(_:named:sourceLocation:)`](./attachment/record%28_,named,sourcelocation%29.md).
 

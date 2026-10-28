@@ -25,7 +25,7 @@ let kSecUseAuthenticationContext: CFString
 extern CFStringRef const kSecUseAuthenticationContext;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`LAContext`](../LocalAuthentication/lacontext.md), and represents a reusable local authentication context that should be used for keychain item authentication, according to the following rules:
 

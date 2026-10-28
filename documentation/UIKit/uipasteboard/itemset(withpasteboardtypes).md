@@ -22,11 +22,11 @@ func itemSet(withPasteboardTypes pasteboardTypes: [String]) -> IndexSet?
 - (NSIndexSet *) itemSetWithPasteboardTypes:(NSArray<NSString *> *) pasteboardTypes;
 ```
 
-#### Return Value
+## Return Value
 
 An index set with each integer positionally identifying a pasteboard item that has one of the representation types specified in `pasteboardTypes`.
 
-#### Discussion
+## Discussion
 
 You can pass the index set returned in this method in a call to [`data(forPasteboardType:inItemSet:)`](./data%28forpasteboardtype,initemset%29.md) or [`values(forPasteboardType:inItemSet:)`](./values%28forpasteboardtype,initemset%29.md) to get the data in the indicated pasteboard items.
 

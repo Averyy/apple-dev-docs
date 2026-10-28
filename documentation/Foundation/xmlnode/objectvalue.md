@@ -20,7 +20,7 @@ var objectValue: Any? { get set }
 @property (retain, nullable) id objectValue;
 ```
 
-#### Return Value
+## Return Value
 
 The object value of the receiver, which may be the same as the value returned by [`stringValue`](./stringvalue.md). For nodes without content (for example, document nodes), this method returns the string value, or an empty string if there is no string value.
 

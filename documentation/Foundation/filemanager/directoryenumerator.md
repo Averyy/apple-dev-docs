@@ -25,7 +25,7 @@ class DirectoryEnumerator
 @interface NSDirectoryEnumerator : NSEnumerator
 ```
 
-#### Overview
+## Overview
 
 You obtain a directory enumerator using [`FileManager`](../filemanager.md)’s [`enumerator(atPath:)`](./enumerator%28atpath%29.md) method. The enumeration provides the pathnames of all files and directories contained within that directory. These pathnames are relative to the directory.
 

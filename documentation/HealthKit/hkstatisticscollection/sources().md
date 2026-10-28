@@ -24,11 +24,11 @@ func sources() -> Set<HKSource>
 - (NSSet<HKSource *> *) sources;
 ```
 
-#### Return Value
+## Return Value
 
 A set of sources if the [`separateBySource`](../hkstatisticsoptions/separatebysource.md) option was specified; otherwise, it returns `nil`.
 
-#### Discussion
+## Discussion
 
 If the [`separateBySource`](../hkstatisticsoptions/separatebysource.md) option was set, each of the statistics objects returned by the statistics collection also has a [`sources`](../hkstatistics/sources.md) array. The statistic object’s array should contain a subset of the sources returned by this method. Specifically, it contains only those sources that contributed samples to that particular statistics object. You can use the source objects in these arrays to request source-specific statistical data.
 

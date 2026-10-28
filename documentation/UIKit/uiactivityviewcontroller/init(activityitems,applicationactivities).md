@@ -22,11 +22,11 @@ init(activityItems: [Any], applicationActivities: [UIActivity]?)
 - (instancetype) initWithActivityItems:(NSArray *) activityItems applicationActivities:(NSArray<__kindof UIActivity *> *) applicationActivities;
 ```
 
-#### Return Value
+## Return Value
 
 The activity view controller to present.
 
-#### Discussion
+## Discussion
 
 It is your responsibility to present and dismiss the view controller using the appropriate means for the given device idiom. On iPad, you must present the view controller in a popover. On other devices, you must present it modally.
 

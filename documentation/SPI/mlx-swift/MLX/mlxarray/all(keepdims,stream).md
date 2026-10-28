@@ -21,7 +21,7 @@ func all(keepDims: Bool = false, stream: StreamOrDevice = .default) -> MLXArray
 
 - [Converting From Python](../converting-python.md)
 
-##### See Also
+### See Also
 
 - [Reduction Functions](../reduction.md)
 - [`all(axes:keepDims:stream:)`](./all%28axes,keepdims,stream%29.md)

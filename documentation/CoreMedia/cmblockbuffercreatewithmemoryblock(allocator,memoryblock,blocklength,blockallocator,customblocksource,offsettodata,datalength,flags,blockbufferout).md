@@ -25,11 +25,11 @@ func CMBlockBufferCreateWithMemoryBlock(allocator structureAllocator: CFAllocato
 extern OSStatus CMBlockBufferCreateWithMemoryBlock(CFAllocatorRef structureAllocator, void *memoryBlock, size_t blockLength, CFAllocatorRef blockAllocator, const CMBlockBufferCustomBlockSource *customBlockSource, size_t offsetToData, size_t dataLength, CMBlockBufferFlags flags, CMBlockBufferRef*blockBufferOut);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `kCMBlockBufferNoErr` if successful.
 
-#### Discussion
+## Discussion
 
 Creates a new `CMBlockBuffer` backed by a memory block. The memory block may be statically allocated, dynamically allocated using the given allocator (or `customBlockSource`) or not yet allocated. The returned `CMBlockBuffer` may be further expanded using `CMBlockBufferAppendMemoryBlock` and/or `CMBlockBufferAppendBufferReference`.
 

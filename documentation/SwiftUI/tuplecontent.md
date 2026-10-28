@@ -22,7 +22,7 @@ Content created from a tuple of content to be treated as siblings.
 struct TupleContent<each Content>
 ```
 
-#### Overview
+## Overview
 
 You will rarely, if ever, need to create a `TupleContent` directly. Instead, `TupleContent` will be constructed on your behalf when using a `ContentBuilder`.
 

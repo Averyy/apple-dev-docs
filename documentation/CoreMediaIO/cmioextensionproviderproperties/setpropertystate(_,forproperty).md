@@ -20,7 +20,7 @@ func setPropertyState(_ propertyState: CMIOExtensionPropertyState<AnyObject>?, f
 - (void) setPropertyState:(CMIOExtensionPropertyState *) propertyState forProperty:(CMIOExtensionProperty) property;
 ```
 
-#### Discussion
+## Discussion
 
 Setting a `nil` property state value doesn’t remove the property.
 

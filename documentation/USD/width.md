@@ -5,13 +5,13 @@
 
 The width of the text’s bounding box.
 
-#### Overview
+## Overview
 
 Supply a positive value for this property in stage linear units. For more information, see [Encoding Stage Linear Units](https://openusd.org/docs/api/group___usd_geom_linear_units__group.html).
 
 The runtime ignores this value if [wrapMode](./wrapmode.md) is `singleLine`.
 
-##### Declaration
+### Declaration
 
 ```other
 float width

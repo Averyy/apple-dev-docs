@@ -25,11 +25,11 @@ func CVPixelBufferCreate(_ allocator: CFAllocator?, _ width: Int, _ height: Int,
 extern CVReturn CVPixelBufferCreate(CFAllocatorRef allocator, size_t width, size_t height, OSType pixelFormatType, CFDictionaryRef pixelBufferAttributes, CVPixelBufferRef*pixelBufferOut);
 ```
 
-#### Return Value
+## Return Value
 
 A Core Video result code. See [Result Codes](./result-codes.md) for possible values.
 
-#### Discussion
+## Discussion
 
 Some of the parameters specified in this function override equivalent pixel buffer attributes. For example, if you set values for the [`kCVPixelBufferWidthKey`](./kcvpixelbufferwidthkey.md) and [`kCVPixelBufferHeightKey`](./kcvpixelbufferheightkey.md) keys in the `pixelBufferAttributes` dictionary, the values for the `width` and `height` parameters override the values in the dictionary.
 

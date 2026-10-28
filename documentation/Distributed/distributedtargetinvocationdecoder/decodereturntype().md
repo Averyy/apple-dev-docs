@@ -24,7 +24,7 @@ Attempt to decode the known return type of the distributed invocation.
 mutating func decodeReturnType() throws -> (any Any.Type)?
 ```
 
-#### Discussion
+## Discussion
 
 It is legal to implement this by returning `nil`, and then the system will take the concrete return type from the located function signature.
 

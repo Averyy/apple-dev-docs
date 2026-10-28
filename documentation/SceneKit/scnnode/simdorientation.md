@@ -25,7 +25,7 @@ var simdOrientation: simd_quatf { get set }
 @property (nonatomic) simd_quatf simdOrientation;
 ```
 
-#### Discussion
+## Discussion
 
 The [`simdRotation`](./simdrotation.md), [`simdEulerAngles`](./simdeulerangles.md), and [`simdOrientation`](./simdorientation.md) properties all affect the rotational aspect of the node’s [`simdTransform`](./simdtransform.md) property. Any change to one of these properties is reflected in the others.
 

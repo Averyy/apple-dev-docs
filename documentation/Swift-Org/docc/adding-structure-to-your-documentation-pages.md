@@ -10,7 +10,7 @@ framework: "Swift-Org/docc"
 
 Make symbols easier to find by arranging them into groups and collections.
 
-#### Overview
+## Overview
 
 By default, when DocC generates documentation for a project, it creates a top-level page that lists all public symbols, and groups them by their kind. You can then provide additional context to explain how your framework works and how different symbols relate to each other. For a more tailored learning experience, use one or more of the following approaches:
 
@@ -20,7 +20,7 @@ By default, when DocC generates documentation for a project, it creates a top-le
 
 For more information, see [Writing Symbol Documentation in Your Source Files](./writing-symbol-documentation-in-your-source-files.md).
 
-##### Customize Your Documentation’s Landing Page
+### Customize Your Documentation’s Landing Page
 
 A landing page provides an overview of your framework, introduces important terms, and organizes the resources within your documentation catalog — the files that enrich your source documentation comments. The landing page is an opportunity for you to ease the reader’s learning path, discuss key features of your technology, and offer motivation for the reader to return to when they need it.
 
@@ -52,7 +52,7 @@ Write your Overview using *documentation markup*, a lightweight markup language 
 
 In addition to presenting rich content, a custom landing page organizes the top-level symbols and other content in your documentation hierarchy.
 
-##### Arrange Top-Level Symbols Using Topic Groups
+### Arrange Top-Level Symbols Using Topic Groups
 
 By default, DocC arranges the symbols in your framework according to their kind. For example, the compiler generates topic groups for classes, structures, protocols, and so forth. You then add information to explain the relationships between those symbols.
 
@@ -90,7 +90,7 @@ DocC uses the double backtick format to create symbol links, and to add the symb
 
 When you rebuild your documentation, the documentation viewer reflects these organizational changes in the navigation pane and on the landing page, as the image above shows.
 
-##### Arrange Nested Symbols in Extension Files
+### Arrange Nested Symbols in Extension Files
 
 Not all symbols appear on the top-level landing page. For example, classes and structures define methods and properties, and in some cases, nested classes or structures introduce additional levels of hierarchy.
 
@@ -142,7 +142,7 @@ After you arrange nested symbols in an extension file, use DocC to compile your 
 
 > **Note**:  If you organize a member symbol into a topic group outside of the type that defines the member, DocC will still include the member symbol in the default topic group. This ensures that the reader can always find the member symbol somewhere in the sub-hierarchy of the containing type.
 
-##### Incorporate Hierarchy in Your Navigation
+### Incorporate Hierarchy in Your Navigation
 
 Much like you organize symbols on a landing page or in an extension file, you can create collections of symbols to add hierarchy to your documentation or to group symbols that have relationships other than those you define in your framework’s type hierarchy.  For more information, see
 [Adding Supplemental Content to a Documentation Catalog](./adding-supplemental-content-to-a-documentation-catalog.md).

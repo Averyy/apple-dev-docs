@@ -24,7 +24,7 @@ func IOSurfaceGetPixelFormat(_ buffer: IOSurfaceRef) -> OSType
 OSType IOSurfaceGetPixelFormat(IOSurfaceRef buffer);
 ```
 
-#### Return Value
+## Return Value
 
 Returns 0 if buffer is invalid.
 

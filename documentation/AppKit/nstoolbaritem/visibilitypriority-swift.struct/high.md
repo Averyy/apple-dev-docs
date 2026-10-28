@@ -22,7 +22,7 @@ static var high: NSToolbarItem.VisibilityPriority { get }
 static const NSToolbarItemVisibilityPriority NSToolbarItemVisibilityPriorityHigh;
 ```
 
-#### Discussion
+## Discussion
 
 The toolbar moves items with [`standard`](./standard.md) priority to the overflow menu before it moves items with this priority.
 

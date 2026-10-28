@@ -24,7 +24,7 @@ init!(newSymbolFromDescription description: String!, in context: JSContext!)
 + (JSValue *) valueWithNewSymbolFromDescription:(NSString *) description inContext:(JSContext *) context;
 ```
 
-#### Return Value
+## Return Value
 
 A [`JSValue`](../jsvalue.md) that represents a new, unique JavaScript symbol object.
 

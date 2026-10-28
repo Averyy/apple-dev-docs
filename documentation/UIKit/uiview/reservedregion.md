@@ -19,7 +19,7 @@ A region within a view’s coordinate space that another entity reserves.
 struct ReservedRegion
 ```
 
-#### Overview
+## Overview
 
 A reserved region indicates an area within a view’s coordinate space that an entity, such as the device hardware, reserves. Arrange your view’s content to account for this region. Each region describes a frame, margins, active state, and an identifier. For example, a camera or the Dynamic Island can cover part of the display, and the hinge of iPhone Duo divides the display into two halves.
 
@@ -28,7 +28,7 @@ There are two categories of reserved regions, which you specify with a [`UIView.
 - **[`occlusion`](./reservedregion/kind-swift.struct/occlusion.md)**: An area where an element, such as the Dynamic Island, a camera, or window controls, covers content. Place content outside this area.
 - **[`division`](./reservedregion/kind-swift.struct/division.md)**: An area where content splits into separate regions, such as at the fold of a hinge. Arrange your content into separate sections on each side of this area.
 
-#### Get the reserved regions that intersect your view
+## Get the reserved regions that intersect your view
 
 Parts of the display aren’t available for your content. For example, a camera or the Dynamic Island covers part of your view, and the fold of iPhone Duo splits it in two. The system describes each of these areas as a reserved region.
 
@@ -44,7 +44,7 @@ The method returns only the regions that overlap your view, including a partial 
 
 Each region has a [`frame`](./reservedregion/frame.md), a rectangle that describes where the region is within your view. The frame uses your view’s own coordinates, not the screen’s, and the values are in points. The frame already includes the region’s [`margins`](./reservedregion/margins.md), which is extra space around the reserved area that keeps interactive content clear of it, so you don’t need to add the margins yourself.
 
-#### Keep content visible around occlusion regions
+## Keep content visible around occlusion regions
 
 An occlusion region covers part of your view; people can’t see content that you place there. Use the [`frame`](./reservedregion/frame.md) of each occlusion region to update the constants of your Auto Layout constraints to move your content out of the way.
 
@@ -87,7 +87,7 @@ class ControlsView: UIView {
 
 UIKit tracks the regions you read in `updateConstraints()` and runs it again when they change, so the constraint stays current as regions become active or inactive.
 
-#### Split your content at a division
+## Split your content at a division
 
 A division region is an area that splits your view into separate parts, such as the fold of iPhone Duo. A division is active only when the device is partially open or closed. When iPhone Duo is fully open, the division is inactive, and [`reservedRegions(kind:options:)`](./reservedregions%28kind,options%29.md) returns no division regions.
 
@@ -97,7 +97,7 @@ To find which direction the fold runs, compare the width and height of the divis
 
 As someone opens or closes the device, your layout changes with the division. When you adjust your layout for the fold, move only what’s necessary to keep elements visible and easy to tap. Controls that disappear or shift dramatically are harder to find and track. Favor small adjustments over rearrangement. If your layout is a grid, use an even number of columns so your content divides cleanly at the fold.
 
-#### Choose where to check for regions
+## Choose where to check for regions
 
 Most apps don’t need to check for reserved regions. Framework-provided views, such as split view controllers, tab bars, alerts, context menus, and sheets, already adjust for the fold and the camera, so the content you place in them stays clear of those areas. Use those views when you can.
 
@@ -107,7 +107,7 @@ If your custom view arranges two related views around the fold, use [`UIArrangem
 
 Check for reserved regions yourself in custom views where controls or other important content might end up in the fold or near the camera. For example, check in a custom overlay, a floating control, or a view that positions its content with explicit frames or constraints. Check in the view that positions the content, so the frames you read use the same coordinates as the content you place.
 
-#### Include inactive regions
+## Include inactive regions
 
 A reserved region can become active or inactive as conditions change. An active region currently affects your view. An inactive region doesn’t. For example, the fold of iPhone Duo becomes active when the device is partially open, and inactive again when it’s fully open. The inner camera is active only while the camera is in use, and the outer camera is always active.
 

@@ -21,11 +21,11 @@ func CGSetLocalEventsSuppressionInterval(_ seconds: CFTimeInterval) -> CGError
 extern CGError CGSetLocalEventsSuppressionInterval(CFTimeInterval seconds);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. If the `seconds` parameter is outside the allowed range, returns `kCGErrorRangeCheck`.
 
-#### Discussion
+## Discussion
 
 This function determines how long local events matching an event filter are to be suppressed following the posting of a synthetic event. The default time interval for event suppression is 0.25 seconds.
 

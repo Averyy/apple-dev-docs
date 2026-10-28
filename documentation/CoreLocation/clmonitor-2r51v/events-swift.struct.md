@@ -18,7 +18,7 @@ A type that represents an asynchronous sequence of events.
 struct Events
 ```
 
-#### Overview
+## Overview
 
 Use this structure to access and iterate over the events the framework delivers.
 

@@ -25,7 +25,7 @@ static var canceled: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 The scheduled operation was canceled.
 

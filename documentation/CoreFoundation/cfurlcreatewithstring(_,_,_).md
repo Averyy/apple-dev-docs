@@ -25,11 +25,11 @@ func CFURLCreateWithString(_ allocator: CFAllocator!, _ URLString: CFString!, _ 
 extern CFURLRefCFURLCreateWithString(CFAllocatorRef allocator, CFStringRef URLString, CFURLRef baseURL);
 ```
 
-#### Return Value
+## Return Value
 
 A new `CFURL` object. Ownership follows the create rule. See [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 Any escape sequences in `URLString` will be interpreted using UTF-8.
 

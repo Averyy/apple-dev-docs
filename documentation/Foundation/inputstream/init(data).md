@@ -25,11 +25,11 @@ init(data: Data)
 - (instancetype) initWithData:(NSData *) data;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSInputStream` object for reading from `data`.
 
-#### Discussion
+## Discussion
 
 The stream must be opened before it can be used.
 

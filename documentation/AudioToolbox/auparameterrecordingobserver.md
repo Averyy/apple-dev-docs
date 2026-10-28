@@ -24,7 +24,7 @@ typealias AUParameterRecordingObserver = (Int, UnsafePointer<AURecordedParameter
 typedef void (^)(long, const struct AURecordedParameterEvent *) AUParameterRecordingObserver;
 ```
 
-#### Discussion
+## Discussion
 
 The block takes the following parameters:
 

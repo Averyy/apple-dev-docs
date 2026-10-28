@@ -6,7 +6,7 @@
 
 An atom that contains information about text media.
 
-#### Overview
+## Overview
 
 For more information, see [`Text media information atom`](../text_media_information_atom.md)
 

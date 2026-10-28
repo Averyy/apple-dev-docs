@@ -20,7 +20,7 @@ Specifies that an array of resources in an argument buffer can be safely used by
 - (void) useResources:(id<MTLResource> const[]) resources count:(NSUInteger) count usage:(MTLResourceUsage) usage;
 ```
 
-#### Discussion
+## Discussion
 
 This method makes the array of resources resident for the duration of a compute pass and ensures that it’s in a format compatible with the compute function.
 

@@ -19,7 +19,7 @@ A transient component that identifies the compute graph output associated with a
 struct ComputeGraphOutputComponent
 ```
 
-#### Overview
+## Overview
 
 The system attaches this component to child entities that represent individual graph outputs. Use `outputID` to correlate the entity with a specific output inside the owning entity’s running simulation.
 

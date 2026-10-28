@@ -19,11 +19,11 @@ func dataWithEPS(inside rect: NSRect) -> Data
 - (NSData *) dataWithEPSInsideRect:(NSRect) rect;
 ```
 
-#### Return Value
+## Return Value
 
 The region in the window (identified by `rect`) as EPS data.
 
-#### Discussion
+## Discussion
 
 This data can be placed on a pasteboard, written to a file, or used to create an `NSImage` object.
 

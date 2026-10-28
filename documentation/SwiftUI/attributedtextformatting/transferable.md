@@ -21,7 +21,7 @@ A transferable representation of an attributed string interpreted in a SwiftUI e
 struct Transferable
 ```
 
-#### Overview
+## Overview
 
 Use this type e.g. with drag and drop APIs or to create a [`fileExporter(isPresented:item:contentTypes:defaultFilename:onCompletion:onCancellation:)`](../view/fileexporter%28ispresented,item,contenttypes,defaultfilename,oncompletion,oncancellation%29.md).
 

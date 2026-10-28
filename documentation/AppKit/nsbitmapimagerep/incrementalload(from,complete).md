@@ -19,11 +19,11 @@ func incrementalLoad(from data: Data, complete: Bool) -> Int
 - (NSInteger) incrementalLoadFromData:(NSData *) data complete:(BOOL) complete;
 ```
 
-#### Return Value
+## Return Value
 
 An integer constant indicating the status of the image during the load operation. See the discussion for details.
 
-#### Discussion
+## Discussion
 
 After initializing the receiver with [`init(forIncrementalLoad:)`](./init%28forincrementalload%29.md), you should call this method to incrementally load the image. Call this method each time new data becomes available. Always pass the entire image data buffer in `data`, not just the newest data, because the image decompressor may need the original data in order to backtrack. This method will block until the data is decompressed; it will decompress as much of the image as possible based on the length of the data. The image rep does not retain `data`, so you must ensure that `data` is not released for the duration of this method call. Pass [`false`](../../Swift/false.md) for `complete` until the entire image is downloaded, at which time you should pass [`true`](../../Swift/true.md). You should also pass [`true`](../../Swift/true.md) for `complete` if you have only partially downloaded the data, but cannot finish the download.
 

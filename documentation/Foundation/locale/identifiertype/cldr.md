@@ -21,7 +21,7 @@ The type of identifiers that follow CLDR (Common Locale Data Repository) convent
 case cldr
 ```
 
-#### Discussion
+## Discussion
 
 The components in this type of identifier use the same components as in [`Locale.IdentifierType.icu`](./icu.md), but don’t use the key-value type keyword list. An example of this type is `th_TH_u_ca_gregory_nu_thai`.
 

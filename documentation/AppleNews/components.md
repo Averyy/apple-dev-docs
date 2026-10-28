@@ -5,7 +5,7 @@
 
 Understand the types of components that can make up an article.
 
-#### Overview
+## Overview
 
 Components are some of the main objects you use to build your article, along with layouts and styles. Components hold the content of your article and are always in an array called `components`.
 

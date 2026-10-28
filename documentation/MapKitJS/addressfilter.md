@@ -15,7 +15,7 @@ An object that filters which address options to include or exclude in search res
 class AddressFilter
 ```
 
-#### Overview
+## Overview
 
 Use this object to filter search results by criteria, such as country, region, and municipality. See [`AddressCategory`](./addresscategory.md) for more information.
 

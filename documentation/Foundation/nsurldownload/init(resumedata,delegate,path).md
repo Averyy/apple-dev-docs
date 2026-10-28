@@ -21,11 +21,11 @@ init(resumeData: Data, delegate: (any NSURLDownloadDelegate)?, path: String)
 - (instancetype) initWithResumeData:(NSData *) resumeData delegate:(id<NSURLDownloadDelegate>) delegate path:(NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized NSURLDownload object.
 
-#### Discussion
+## Discussion
 
 If you want to support pausing and resuming downloads, your app must:
 

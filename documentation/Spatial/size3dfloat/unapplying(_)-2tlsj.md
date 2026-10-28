@@ -21,7 +21,7 @@ Unapplies an affine transform.
 func unapplying(_ transform: AffineTransform3DFloat) -> Size3DFloat
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: The transform must be rectilinear otherwise this function returns `self`.
 

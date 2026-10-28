@@ -20,7 +20,7 @@ Returns a sample predicate that matches samples that contain correlated data.
 static func correlation(type correlationType: HKCorrelationType, predicate: NSPredicate? = nil) -> HKSamplePredicate<HKCorrelation>
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to create an [`HKSamplePredicate`](../hksamplepredicate.md) instance that you can use to query for [`HKCorrelation`](../hkcorrelation.md) objects.
 

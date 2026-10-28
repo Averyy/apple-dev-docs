@@ -21,7 +21,7 @@ protocol UIWebViewDelegate : NSObjectProtocol
 @protocol UIWebViewDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  Before releasing an instance of `UIWebView` for which you have set a delegate, you must first set the `UIWebView` delegate property to `nil` before disposing of the `UIWebView` instance. This can be done, for example, in the dealloc method where you dispose of the `UIWebView`.
 

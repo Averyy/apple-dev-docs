@@ -15,11 +15,11 @@ A 3D spatial scene created from a 2D image.
 class Spatial3DImage
 ```
 
-#### Overview
+## Overview
 
 Create and generate a `Spatial3DImage`  to present a *spatial scene* in RealityKit. Spatial scenes are a 3D representation of a 2D image or photo which RealityKit renders with depth and motion parallax.
 
-##### Spatial scene generation
+### Spatial scene generation
 
 To present a `Spatial3DImage` as a spatial scene, you must first *generate* it. Call the [`generate()`](./spatial3dimage/generate%28%29.md) method to generate an in-memory representation of a spatial scene from the original image. Generation can take a few seconds to complete.
 

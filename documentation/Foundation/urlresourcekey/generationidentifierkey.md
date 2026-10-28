@@ -25,7 +25,7 @@ static let generationIdentifierKey: URLResourceKey
 extern NSURLResourceKey const NSURLGenerationIdentifierKey;
 ```
 
-#### Discussion
+## Discussion
 
 The generation identifier can be compared using isEqual: to determine if the data in a document has been modified. For URLs which refer to the same file inode, the generation identifier changes when the data in the file’s data fork is changed. Changes to extended attributes or other file system metadata do not change the identifier. For URLs which refer to the same directory inode, the generation identifier changes when direct children of that directory are added, removed or renamed. Changes to the data of the direct children of that directory does not change the generation identifier. The  identifier persists across system restarts. It is tied to a specific document on a specific volume and is not transferred when the document is copied to another volume. This property is not supported by all volumes.
 

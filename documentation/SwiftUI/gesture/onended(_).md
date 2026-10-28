@@ -26,11 +26,11 @@ func onEnded(_ action: @escaping (Self.Value) -> Void) -> _EndedGesture<Self>
 
 - [Adding interactivity with gestures](../adding-interactivity-with-gestures.md)
 
-#### Return Value
+## Return Value
 
 A gesture that triggers `action` when the gesture ends.
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: The action is only performed if the gesture ends successfully. Use a `@GestureState` property to track state that is reset regardless of how the gesture ends.
 

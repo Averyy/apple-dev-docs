@@ -36,7 +36,7 @@ var categoryIdentifier: String { get set }
 
 - [Declaring your actionable notification types](../declaring-your-actionable-notification-types.md)
 
-#### Discussion
+## Discussion
 
 Use notification types to distinguish between the different types of notifications your app supports. You use this support primarily to create actionable notifications with custom action buttons to redirect your notifications through either your notification service app extension or your notification content app extension.
 

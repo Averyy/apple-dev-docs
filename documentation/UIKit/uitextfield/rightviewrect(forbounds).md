@@ -23,11 +23,11 @@ func rightViewRect(forBounds bounds: CGRect) -> CGRect
 - (CGRect) rightViewRectForBounds:(CGRect) bounds;
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle in which to draw the right overlay view.
 
-#### Discussion
+## Discussion
 
 You should not call this method directly. If you want to place the right overlay view in a different location, you can override this method and return the new rectangle. Note that the drawing rectangle remains unchanged in a right-to-left user interface.
 

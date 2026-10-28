@@ -21,7 +21,7 @@ Creates a new map point structure from the specified values.
 init(x: Double, y: Double)
 ```
 
-#### Return Value
+## Return Value
 
 A map point with the specified values.
 

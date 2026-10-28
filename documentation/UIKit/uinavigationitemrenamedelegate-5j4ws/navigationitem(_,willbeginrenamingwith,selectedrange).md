@@ -20,11 +20,11 @@ Tells the delegate when the rename process starts.
 @preconcurrency func navigationItem(_: UINavigationItem, willBeginRenamingWith suggestedTitle: String, selectedRange: Range<String.Index>) -> (String, Range<String.Index>)
 ```
 
-#### Return Value
+## Return Value
 
 A string that contains the initial text that appears in the rename text field, and a range that determines which part of that text has selection.
 
-#### Discussion
+## Discussion
 
 UIKit calls this method when the rename process begins. Implement this method to customize the initial text and text selection that appears in the rename text field.
 

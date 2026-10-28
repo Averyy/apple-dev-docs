@@ -24,11 +24,11 @@ init!(newErrorFromMessage message: String!, in context: JSContext!)
 + (JSValue *) valueWithNewErrorFromMessage:(NSString *) message inContext:(JSContext *) context;
 ```
 
-#### Return Value
+## Return Value
 
 A new JavaScript error value.
 
-#### Discussion
+## Discussion
 
 Calling this method creates a JavaScript `Error` object, and is equivalent to calling the `Error` constructor (for example, `new Error("message")`) in JavaScript.
 

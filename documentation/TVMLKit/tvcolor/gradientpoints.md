@@ -21,7 +21,7 @@ var gradientPoints: [NSNumber]? { get }
 @property (nonatomic, readonly, nullable) NSArray<NSNumber *> * gradientPoints;
 ```
 
-#### Discussion
+## Discussion
 
 This property is only available when [`colorType`](./colortype.md) is set to [`TVColorType.linearGradientTopToBottom`](../tvcolortype/lineargradienttoptobottom.md) or [`TVColorType.linearGradientLeftToRight`](../tvcolortype/lineargradientlefttoright.md). The points defined in the array determine when a color change occurs using the colors in the [`gradientColors`](./gradientcolors.md) property.
 

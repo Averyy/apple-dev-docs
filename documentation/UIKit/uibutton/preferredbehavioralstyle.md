@@ -22,7 +22,7 @@ var preferredBehavioralStyle: UIBehavioralStyle { get set }
 @property (nonatomic) UIBehavioralStyle preferredBehavioralStyle;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the behavioral style for the button. If the value of the property is [`UIBehavioralStyle.automatic`](../uibehavioralstyle/automatic.md), use the [`behavioralStyle`](./behavioralstyle.md) property to determine the actual style.
 

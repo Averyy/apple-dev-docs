@@ -24,7 +24,7 @@ var passType: PKPassType { get }
 @property (nonatomic, assign, readonly) PKPassType passType;
 ```
 
-#### Discussion
+## Discussion
 
 For possible values, see [`PKPassType`](../pkpasstype.md).
 

@@ -18,7 +18,7 @@
 var motionVector: CVReadOnlyPixelBuffer { get }
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: motionVector A CVPixelBuffer containing the motion vector information, if processing request was successful.
 

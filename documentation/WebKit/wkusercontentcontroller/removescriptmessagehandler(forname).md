@@ -23,7 +23,7 @@ func removeScriptMessageHandler(forName name: String)
 - (void) removeScriptMessageHandlerForName:(NSString *) name;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to remove a message handler that you previously installed using the [`add(_:name:)`](./add%28_,name%29.md) method. This method removes the message handler from the page content world — that is, the content world available from the [`page`](../wkcontentworld/page.md) property of [`WKContentWorld`](../wkcontentworld.md). If you installed the message handler in a different content world, this method doesn’t remove it.
 

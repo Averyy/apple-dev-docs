@@ -28,7 +28,7 @@ class MKUserLocation
 
 - [Converting a user’s location to a descriptive placemark](./converting-a-user-s-location-to-a-descriptive-placemark.md)
 
-#### Overview
+## Overview
 
 You don’t create instances of this class directly. Instead, you retrieve an existing `MKUserLocation` object from the [`userLocation`](./mkmapview/userlocation.md) property of the map view that displays in your app.
 

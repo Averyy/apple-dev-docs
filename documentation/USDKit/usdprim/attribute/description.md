@@ -20,7 +20,7 @@ A summary description of this attribute.
 var description: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property is safe to access on an invalid or expired attribute.
 

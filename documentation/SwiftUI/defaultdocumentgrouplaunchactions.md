@@ -20,7 +20,7 @@ nonisolated
 struct DefaultDocumentGroupLaunchActions
 ```
 
-#### Overview
+## Overview
 
 This `View` populates [`DocumentGroupLaunchScene`](./documentgrouplaunchscene.md) and [`DocumentLaunchView`](./documentlaunchview.md) with the default actions.
 

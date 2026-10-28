@@ -20,7 +20,7 @@ var minimumFrameInterval: CMTime { get set }
 @property (nonatomic, assign) CMTime minimumFrameInterval;
 ```
 
-#### Discussion
+## Discussion
 
 Use this value to throttle the rate at which you receive updates. The default value is `0`, which indicates that the system uses the maximum supported frame rate.
 

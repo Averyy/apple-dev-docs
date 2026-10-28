@@ -5,7 +5,7 @@
 
 Enable Live Text data scanning of text and codes that appear in the camera’s viewfinder.
 
-#### Overview
+## Overview
 
 Let users scan text and codes with the camera, similar to the Live Text interface in the Camera app. VisionKit provides the live video, guidance for the user, item highlighting, and tap-to-focus and pinch-to-zoom functionality. You provide the user with feedback and actions for the items the scanner recognizes and the user taps. For example, your app can let users scan a QR code on a warehouse box, or call a support number on product materials.
 
@@ -15,7 +15,7 @@ You create a [`DataScannerViewController`](./datascannerviewcontroller.md) objec
 
 > ❗ **Important**: The code listings in this article use asynchronous methods that you invoke from an `async` method or within a [`Task`](../Swift/task.md) structure. For details on asynchronous flows, see [Concurrency](../Swift/concurrency.md).
 
-##### Provide a reason for using the camera
+### Provide a reason for using the camera
 
 The first time your app attempts to use the camera, the system prompts users for permission. It displays a dialog that includes the name of your app and a reason that you provide to notify users why you’re using the camera. If the user grants permission, you can use the camera on the device; otherwise, the user is unable to use your app to scan text or codes. If you don’t add this key, a runtime error occurs when you access the camera.
 
@@ -30,7 +30,7 @@ You provide the reason for using the camera in the Xcode project configuration. 
 
 For more information about privacy keys, see [Requesting access to protected resources](../UIKit/requesting-access-to-protected-resources.md).
 
-##### Create a data scanner view controller
+### Create a data scanner view controller
 
 In your code, create a [`DataScannerViewController`](./datascannerviewcontroller.md) object that you configure for the needs of your app. The [`DataScannerViewController`](./datascannerviewcontroller.md) class provides the interface for scanning items in the live video. In the parameters of the initializer, you specify the types of items to scan, the quality level, whether to return multiple items, and more.
 
@@ -55,7 +55,7 @@ After you create the view controller and before you present it, set its delegate
 viewController.delegate = self
 ```
 
-##### Handle when the scanner becomes unavailable
+### Handle when the scanner becomes unavailable
 
 Before presenting an interface for scanning, confirm that the device supports scanning and that your app has access to the camera.
 
@@ -79,7 +79,7 @@ To reset the user authorization when testing your code, see [Requesting access t
 
 ![A screenshot of an iPhone showing the system dialog requesting access to the camera with the reason given by the app, and the Don’t Allow and OK buttons.](https://developer.apple.com/tutorials/images/com.apple.VisionKit/scanning_data_with_the_camera-3@2x.png)
 
-##### Begin data scanning
+### Begin data scanning
 
 After the user allows access to the camera without restrictions, you can begin scanning for items that appear in the live video by invoking the [`startScanning()`](./datascannerviewcontroller/startscanning%28%29.md) method.
 
@@ -97,7 +97,7 @@ For text items, the items in the `allItems` parameter appear in the reading orde
 
 When scanning QR codes, implement these methods to show an item’s payload, such as a URL, email address, or other data. To process items when the user taps them, see [Respond when users tap an item](./scanning-data-with-the-camera.md#Respond-when-users-tap-an-item).
 
-##### Highlight recognized items
+### Highlight recognized items
 
 If you pass `true` for the `isHighlightingEnabled` parameter in the initializer when you create the view controller, the scanner automatically highlights items it recognizes.
 
@@ -105,7 +105,7 @@ Optionally, provide your own interface for highlighting recognized items. Implem
 
 If you pass `false` as the `recognizesMultipleItems` parameter in the initializer when you create the view controller, the scanner picks only one item in the live video. By default the scanner picks the item closest to the center. However, users can provide a hint to the scanner for which item to highlight. If users tap an area in the live video, the scanner recognizes the item closest to the tap.
 
-##### Respond when users tap an item
+### Respond when users tap an item
 
 When users tap a recognized item in the live video, the view controller invokes the [`dataScanner(_:didTapOn:)`](./datascannerviewcontrollerdelegate/datascanner%28_,didtapon%29.md) delegate method and passes the recognized item. Implement this method to take some action, depending on the item the user taps. Use the parameters of the [`RecognizedItem`](./recognizeditem.md) enumeration to get details about the item, such as the bounds.
 
@@ -127,7 +127,7 @@ func dataScanner(_ dataScanner: DataScannerViewController, didTapOn item: Recogn
 }
 ```
 
-##### Dismiss the data scanner view controller
+### Dismiss the data scanner view controller
 
 When users perform an action, such as tapping an item, you can dismiss the view controller. Alternatively, you can start and stop scanning while the view controller shows the live video.
 
@@ -138,7 +138,7 @@ dataScanner.stopScanning()
 dataScanner.dismiss(animated: true)
 ```
 
-##### Scan specific types of text and codes
+### Scan specific types of text and codes
 
 You can specify the exact types of text and codes that the data scanner recognizes by passing custom types to the [`DataScannerViewController`](./datascannerviewcontroller.md) initializer.
 
@@ -167,7 +167,7 @@ let recognizedDataTypes:Set<DataScannerViewController.RecognizedDataType> = [
 let dataScanner = DataScannerViewController(recognizedDataTypes: recognizedDataTypes)
 ```
 
-##### Recognize more languages
+### Recognize more languages
 
 By default, the data scanner view controller prioritizes text in the user’s preferred languages. If you know the content contains other languages, create the view controller by passing a [`DataScannerViewController.RecognizedDataType`](./datascannerviewcontroller/recognizeddatatype.md) object that you configure for those languages.
 

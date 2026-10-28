@@ -19,7 +19,7 @@ var blackComponent: CGFloat { get }
 @property (readonly) CGFloat blackComponent;
 ```
 
-#### Discussion
+## Discussion
 
 Access this property only for colors in the [`deviceCMYK`](../nscolorspacename/devicecmyk.md) color space, which have a black component. Accessing it for other color types raises an exception.
 

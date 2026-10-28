@@ -24,11 +24,11 @@ func isConnectionLocked(from startNode: NodeType, to endNode: NodeType) -> Bool
 - (BOOL) isConnectionLockedFromNode:(NodeType) startNode toNode:(NodeType) endNode;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the connection between the specified nodes has been locked with the [`lockConnection(from:to:)`](./lockconnection%28from,to%29.md) method; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 By default, adding obstacles with the [`addObstacles(_:)`](./addobstacles%28_%29.md) method disconnects pairs of nodes if the direct path between them intersects an obstacle. This behavior ensures that using the findPathBetweenNodes:toNode: method does not result in a path through the graph that crosses obstacles. With certain nodes, this behavior might not be desirable—use the [`lockConnection(from:to:)`](./lockconnection%28from,to%29.md) method to protect a connection between nodes from being automatically destroyed and the [`unlockConnection(from:to:)`](./unlockconnection%28from,to%29.md) method to remove such protection.
 

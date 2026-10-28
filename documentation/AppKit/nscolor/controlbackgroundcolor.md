@@ -19,11 +19,11 @@ class var controlBackgroundColor: NSColor { get }
 @property (class, strong, readonly) NSColor * controlBackgroundColor;
 ```
 
-#### Return Value
+## Return Value
 
 Do not use this color for drawing. Instead, use an [`NSVisualEffectView`](../nsvisualeffectview.md) with the appropriate background material.
 
-#### Discussion
+## Discussion
 
 When applied to an [`NSBox`](../nsbox.md) object, this color supports Desktop Tinting in Dark Mode. With Desktop Tinting, the system modifies this color dynamically by incorporating some of the color from the underlying desktop image. The system does not apply this dynamic tinting effect to other types of views.
 

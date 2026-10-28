@@ -20,7 +20,7 @@ func waitUntilRunning()
 void cp_layer_renderer_wait_until_running(cp_layer_renderer_t layer_renderer);
 ```
 
-#### Discussion
+## Discussion
 
 Call this function to let the system handle events while you wait for the layer to become ready. The function services incoming layer-related events until the layer exits the paused state.
 

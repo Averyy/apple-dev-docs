@@ -20,7 +20,7 @@ optional func sessionInterruptionEnded(_ session: ARSession)
 - (void) sessionInterruptionEnded:(ARSession *) session;
 ```
 
-#### Discussion
+## Discussion
 
 After a session has been interrupted (see the [`sessionWasInterrupted(_:)`](./sessionwasinterrupted%28_%29.md) delegate method), it automatically resumes running whenever the conditions that caused the interruption improve.
 

@@ -25,11 +25,11 @@ func CMSampleBufferCreate(allocator: CFAllocator?, dataBuffer: CMBlockBuffer?, d
 extern OSStatus CMSampleBufferCreate(CFAllocatorRef allocator, CMBlockBufferRef dataBuffer, Boolean dataReady, CMSampleBufferMakeDataReadyCallback makeDataReadyCallback, void *makeDataReadyRefcon, CMFormatDescriptionRef formatDescription, CMItemCount numSamples, CMItemCount numSampleTimingEntries, const CMSampleTimingInfo *sampleTimingArray, CMItemCount numSampleSizeEntries, const size_t *sampleSizeArray, CMSampleBufferRef*sampleBufferOut);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Sample Buffer Error Codes](./sample-buffer-errors.md).
 
-#### Discussion
+## Discussion
 
 Array parameters (`sampleSizeArray`, `sampleTimingArray`) should have only one element if that same element applies to all samples. All parameters are copied. On return, the caller can release them, free them or reuse them. On return, the caller owns the returned `CMSampleBuffer`, and must release it when done with it.
 

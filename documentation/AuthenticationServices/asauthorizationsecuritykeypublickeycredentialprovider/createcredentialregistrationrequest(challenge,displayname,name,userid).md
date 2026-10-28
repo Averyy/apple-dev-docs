@@ -27,7 +27,7 @@ func createCredentialRegistrationRequest(challenge: Data, displayName: String, n
 - [Supporting passkeys](../supporting-passkeys.md)
 - [Supporting Security Key Authentication Using Physical Keys](../supporting-security-key-authentication-using-physical-keys.md)
 
-#### Return Value
+## Return Value
 
 A security key credential registration request.
 

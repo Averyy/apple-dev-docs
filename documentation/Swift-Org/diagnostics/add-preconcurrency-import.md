@@ -8,7 +8,7 @@ framework: "Swift-Org/diagnostics"
 **Framework**: Swift-Org/diagnostics  
 **Role**: Article
 
-#### Overview
+## Overview
 
 Adding `@preconcurrency` to an import suppresses or downgrades `Sendable`-related diagnostics that originate from the imported module.
 

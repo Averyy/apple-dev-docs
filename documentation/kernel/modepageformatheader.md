@@ -13,7 +13,7 @@
 typedef struct ModePageFormatHeader ModePageFormatHeader;
 ```
 
-#### Discussion
+## Discussion
 
 Mode Page format header.
 

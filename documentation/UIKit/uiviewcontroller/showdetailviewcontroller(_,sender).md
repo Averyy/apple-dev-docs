@@ -28,7 +28,7 @@ func showDetailViewController(_ vc: UIViewController, sender: Any?)
 - [Creating a custom container view controller](../creating-a-custom-container-view-controller.md)
 - [Customizing the behavior of segue-based presentations](../customizing-the-behavior-of-segue-based-presentations.md)
 
-#### Discussion
+## Discussion
 
 You use this method to decouple the need to display a view controller from the process of actually presenting that view controller onscreen. Using this method, a view controller does not need to know whether it is embedded inside a navigation controller or split-view controller. It calls the same method for both. In a regular environment, the [`UISplitViewController`](../uisplitviewcontroller.md) class overrides this method and installs `vc` as its detail view controller; in a compact environment, the split view controller’s implementation of this method calls [`show(_:sender:)`](./show%28_,sender%29.md) instead.
 

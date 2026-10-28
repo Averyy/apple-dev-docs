@@ -20,7 +20,7 @@ func NSMakeRect(_ x: Double, _ y: Double, _ w: Double, _ h: Double) -> NSRect
 static NSRect NSMakeRect(CGFloat x, CGFloat y, CGFloat w, CGFloat h);
 ```
 
-#### Return Value
+## Return Value
 
 An `NSRect` having the specified origin of [`x`, `y`] and size of [`w`, `h`].
 

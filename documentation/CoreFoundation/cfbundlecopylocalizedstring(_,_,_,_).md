@@ -25,11 +25,11 @@ func CFBundleCopyLocalizedString(_ bundle: CFBundle!, _ key: CFString!, _ value:
 extern CFStringRefCFBundleCopyLocalizedString(CFBundleRef bundle, CFStringRef key, CFStringRef value, CFStringRef tableName);
 ```
 
-#### Return Value
+## Return Value
 
 A CFString object that contains the localized string. If no value exists for `key`, returns `value` unless `value` is `NULL` or an empty string, in which case `key` is returned instead. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 This is the base function from which the other localized string macros are derived. In general you should not use this function because the `genstrings` development tool only recognizes the macro version of this call when generating strings files. See [`CFCopyLocalizedString`](./cfcopylocalizedstring.md) for details on how to use these macros.
 

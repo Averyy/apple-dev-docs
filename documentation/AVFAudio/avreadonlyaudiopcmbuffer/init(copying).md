@@ -21,7 +21,7 @@ Creates a read-only buffer by copying audio data from an existing PCM buffer.
 init(copying buffer: AVAudioPCMBuffer)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer creates a new `AVAudioPCMBuffer` and copies all audio data, ensuring the original buffer can continue to be used safely.
 

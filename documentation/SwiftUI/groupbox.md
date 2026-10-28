@@ -20,7 +20,7 @@ nonisolated
 struct GroupBox<Label, Content> where Label : View, Content : View
 ```
 
-#### Overview
+## Overview
 
 Use a group box when you want to visually distinguish a portion of your user interface with an optional title for the boxed content.
 

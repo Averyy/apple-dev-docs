@@ -14,7 +14,7 @@ virtual IOReturn requestPowerDomainState(
  unsigned long specificationFlags );
 ```
 
-#### Overview
+## Overview
 
 This call is handled internally by power management. It is not intended to be overridden or called by drivers.
 

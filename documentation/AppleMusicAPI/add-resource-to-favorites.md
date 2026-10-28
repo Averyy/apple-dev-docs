@@ -9,7 +9,7 @@ Add the user’s resource to favorites.
 **Availability**:
 - Apple Music 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint allows the user to favorite a resource. For example, if a customer favorites a song, the song is added to their `favorite songs` playlist. If they like an album or playlist, they can filter on `favorited album` in their library view.
 

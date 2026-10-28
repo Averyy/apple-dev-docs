@@ -25,11 +25,11 @@ class func disambiguation(with tasksToDisambiguate: [INTask]) -> Self
 + (instancetype) disambiguationWithTasksToDisambiguate:(NSArray<INTask *> *) tasksToDisambiguate;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INTaskResolutionResult`](../intaskresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when more than one task matches the given information and you cannot pick one definitively. Ask the user to select from among the tasks that you specify.
 

@@ -17,7 +17,7 @@ Process a generated text chunk and extract any tool call content.
 func processChunk(_ chunk: String) -> String?
 ```
 
-#### Return Value
+## Return Value
 
 Regular text that should be displayed (non-tool call content), or `nil` if buffering
 

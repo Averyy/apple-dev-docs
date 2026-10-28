@@ -24,7 +24,7 @@ optional func mapViewDidFailLoadingMap(_ mapView: MKMapView, withError error: an
 - (void) mapViewDidFailLoadingMap:(MKMapView *) mapView withError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 The map view might call this method in situations where the device doesn’t have access to the network or is unable to load the map data for some reason. The map view may also call this method if a request for additional map tiles comes in while a previous request for tiles is pending. You can use this message to notify the user that the map data is unavailable.
 

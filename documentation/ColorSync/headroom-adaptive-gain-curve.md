@@ -5,7 +5,7 @@
 
 Work with SMPTE ST 2094-50 tone-mapping metadata shared between HDR stills and video.
 
-#### Overview
+## Overview
 
 A Headroom Adaptive Gain Curve (HAGC) is tone-mapping metadata that describes how an HDR image or video adapts its highlights, midtones, and shadows for a display. The metadata takes effect when a display’s *headroom*, the brightness it can show above reference white, is less than the content needs. An HAGC combines an HDR reference white anchor, the content value mapped to the display’s reference white, and an optional set of gain curves, following the SMPTE ST 2094-50 standard and the matching ICC HAGC profile tag. Because still images and video share one binary representation, you can move the metadata you add to a still into a video stream, and move metadata from a video stream into a still.
 

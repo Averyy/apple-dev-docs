@@ -23,7 +23,7 @@ weak var searchResultsDelegate: (any UITableViewDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<UITableViewDelegate> searchResultsDelegate;
 ```
 
-#### Discussion
+## Discussion
 
 The default is `nil`.
 

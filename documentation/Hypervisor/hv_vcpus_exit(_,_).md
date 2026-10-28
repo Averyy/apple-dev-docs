@@ -19,7 +19,7 @@ func hv_vcpus_exit(_ vcpus: UnsafeMutablePointer<hv_vcpu_t>, _ vcpu_count: UInt3
 extern hv_return_t hv_vcpus_exit(hv_vcpu_t *vcpus, uint32_t vcpu_count);
 ```
 
-#### Return Value
+## Return Value
 
 [`HV_SUCCESS`](./hv_success.md) if the operation was successful, otherwise an error code specified in [`hv_return_t`](./hv_return_t.md).
 

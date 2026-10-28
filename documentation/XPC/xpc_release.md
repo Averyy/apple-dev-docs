@@ -21,7 +21,7 @@ Decrements the reference count of an object.
 extern void xpc_release(xpc_object_t object);
 ```
 
-#### Discussion
+## Discussion
 
 The caller must take care to balance retains and releases. When creating or retaining XPC objects, the creator obtains a reference on the object. Thus, it is the caller’s responsibility to call [`xpc_release`](./xpc_release.md) on those objects when they are no longer needed.
 

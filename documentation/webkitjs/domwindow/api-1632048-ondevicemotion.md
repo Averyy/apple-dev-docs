@@ -16,7 +16,7 @@ The event listener that is called when the device motion changes.
 attribute EventHandler ondevicemotion;
 ```
 
-#### Discussion
+## Discussion
 
 Read [`DeviceMotionEvent`](../devicemotionevent.md) for details.
 

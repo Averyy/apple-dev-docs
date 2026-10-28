@@ -17,7 +17,7 @@ Return a `NestedDictionary<String, MLXArray>` for all trainable parameters in th
 func trainableParameters() -> ModuleParameters
 ```
 
-#### Discussion
+## Discussion
 
 This omits [`freeze(recursive:keys:strict:)`](./freeze%28recursive,keys,strict%29.md) (frozen) parameters.
 

@@ -23,7 +23,7 @@ An `AsyncSequence` that chunks by testing if two elements belong to the same gro
 struct AsyncChunkedByGroupSequence<Base, Collected> where Base : AsyncSequence, Collected : RangeReplaceableCollection, Base.Element == Collected.Element
 ```
 
-#### Overview
+## Overview
 
 Group chunks are determined by passing two consecutive elements to a closure which tests whether they are in the same group. When the `AsyncChunkedByGroupSequence` iterator receives the first element from the base sequence, it will immediately be added to a group. When it receives the second item, it tests whether the previous item and the current item belong to the same group. If they are not in the same group, then the iterator emits the first item’s group and a new group is created containing the second item. Items declared to be in the same group accumulate until a new group is declared, or the iterator finds the end of the base sequence. When the base sequence terminates, the final group is emitted. If the base sequence throws an error, `AsyncChunkedByGroupSequence` will rethrow that error immediately and discard any current group.
 

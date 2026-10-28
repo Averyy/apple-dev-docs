@@ -25,11 +25,11 @@ class func magnetic() -> SCNPhysicsField
 + (SCNPhysicsField *) magneticField;
 ```
 
-#### Return Value
+## Return Value
 
 A physics field object. To use the field in a scene, attach it to the [`physicsField`](../scnnode/physicsfield.md) property of an [`SCNNode`](../scnnode.md) object.
 
-#### Discussion
+## Discussion
 
 Use this field type to make objects behave differently from one another when they enter a region, or to make an object’s behavior different from its mass based behavior. A magnetic field behaves according to the second part of the Lorentz force equation modeling real-world electromagnetic forces—the field applies a force determined by the cross product of an object’s velocity vector and the magnetic field vector at the object’s location, with magnitude proportional to the object’s electric charge.
 

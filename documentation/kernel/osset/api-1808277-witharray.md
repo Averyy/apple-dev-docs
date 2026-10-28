@@ -13,11 +13,11 @@ static OSSet * withArray(
  unsigned int capacity = 0);
 ```
 
-#### Return Value
+## Return Value
 
 An instance of OSSet containing the objects of `array`, with a retain count of 1; `NULL` on failure.
 
-#### Overview
+## Overview
 
 Each distinct object in `array` is added to the new set.
 

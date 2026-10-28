@@ -24,7 +24,7 @@ static var mixWithOthers: AVAudioSession.CategoryOptions { get }
 AVAudioSessionCategoryOptionMixWithOthers
 ```
 
-#### Discussion
+## Discussion
 
 You can set this option explicitly only if the audio session category is [`playAndRecord`](../category-swift.struct/playandrecord.md), [`playback`](../category-swift.struct/playback.md), or [`multiRoute`](../category-swift.struct/multiroute.md). If you set the audio session category to [`ambient`](../category-swift.struct/ambient.md), the session automatically sets this option. Likewise, setting the [`duckOthers`](./duckothers.md) or [`interruptSpokenAudioAndMixWithOthers`](./interruptspokenaudioandmixwithothers.md) options also enables this option.
 

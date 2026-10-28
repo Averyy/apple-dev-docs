@@ -17,7 +17,7 @@ Create a sharded layer from an existing [`QuantizedLinear`](../quantizedlinear.m
 convenience init(_ other: QuantizedLinear, segments: Segments = .count(1), group: MLXDistributed.Group? = nil) throws
 ```
 
-#### Discussion
+## Discussion
 
 This shards the input dimension, which is the packed one, so every segment has to hold whole quantization groups on every process.
 

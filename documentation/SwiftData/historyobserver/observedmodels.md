@@ -21,7 +21,7 @@ The model types that the observer filters for when evaluating history transactio
 final let observedModels: [any PersistentModel.Type]
 ```
 
-#### Discussion
+## Discussion
 
 When non-empty, the observer only reports changes whose transactions contain modifications to instances of these types. When empty, the observer treats any new transaction as relevant.
 

@@ -17,7 +17,7 @@ Block-wise diffusion (parallel) decoding.
 func diffusionGenerate(promptIds: [Int], maxNewTokens: Int, blockLength: Int = 32, threshold: Float? = 0.9, eosTokenId: Int? = nil, onStep: ((_ tokens: [Int], _ nfe: Int) -> Void)? = nil) -> (tokens: [Int], nfe: Int)
 ```
 
-#### Discussion
+## Discussion
 
 Mirrors `generate(...)` in `modeling_nemotron_labs_diffusion.py` with `causal_context = False`. The prompt is causally prefilled into a shared KV cache once. Each block of `blockLength` tokens is initialized to `mask_token_id` and refined in up to `blockLength` denoising steps: at each step the block is forwarded bidirectionally, attending against the cached prefix without re-running it. After each step the cache is trimmed by `blockLength` so the next step writes over the same slots. Once a block stabilizes, we run one causal forward over its finalized tokens to commit their K/V into the cache for subsequent blocks.
 

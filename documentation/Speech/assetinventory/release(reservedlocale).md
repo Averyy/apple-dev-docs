@@ -21,11 +21,11 @@ Removes an asset locale reservation.
 static func release(reservedLocale: Locale) async -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `false` if the locale was not reserved.
 
-#### Discussion
+## Discussion
 
 Unsubscribes from any assets that depended on the locale.
 

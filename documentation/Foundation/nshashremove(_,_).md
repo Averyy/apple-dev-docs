@@ -25,7 +25,7 @@ func NSHashRemove(_ table: NSHashTable<AnyObject>, _ pointer: UnsafeRawPointer?)
 extern void NSHashRemove(NSHashTable *table, const void *pointer);
 ```
 
-#### Discussion
+## Discussion
 
 If `pointer` matches an item already in `table`, this function releases the preexisting item.
 

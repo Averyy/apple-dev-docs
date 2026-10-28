@@ -23,7 +23,7 @@ func extend(in direction: UITextStorageDirection, by granularity: UITextGranular
 - (void) extendInStorageDirection:(UITextStorageDirection) direction byGranularity:(UITextGranularity) granularity;
 ```
 
-#### Discussion
+## Discussion
 
 Word = shift + option + left/right paragraph = shift + option + up/down line = shift + command + left/right document = shift + command + up/down
 

@@ -22,11 +22,11 @@ optional func printInteractionControllerParentViewController(_ printInteractionC
 - (UIViewController *) printInteractionControllerParentViewController:(UIPrintInteractionController *) printInteractionController;
 ```
 
-#### Return Value
+## Return Value
 
 The view controller that is to be the parent of the print-interaction controller managing the printing-options view. Return `nil` for the standard presentation behavior.
 
-#### Discussion
+## Discussion
 
 This method allows an application to present the print-options view from a view controller of their own choosing. The parent view controller returned must be a [`UIViewController`](../uiviewcontroller.md) object, such as a [`UINavigationController`](../uinavigationcontroller.md) object or a generic view controller. A common strategy for embedding is to create a [`UINavigationController`](../uinavigationcontroller.md) object as the content view controller ([`contentViewController`](../uipopovercontroller/contentviewcontroller.md) property) of a [`UIPopoverController`](../uipopovercontroller.md) object and return that. UIKit can push the returned view controller onto the stack if its parent is a navigation controller or present it modally if it isn’t.
 

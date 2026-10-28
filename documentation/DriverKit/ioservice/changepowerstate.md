@@ -18,11 +18,11 @@ Changes the device’s power state to the specified level.
 virtual kern_return_t ChangePowerState(uint32_t powerFlags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../error-codes.md).
 
-#### Discussion
+## Discussion
 
 If the new state is different than the device’s current state, this method places an asynchronous request to change the state to the new value. If the change is successful, the system subsequently calls the [`SetPowerState`](./setpowerstate.md) method of your service.
 

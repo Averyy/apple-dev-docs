@@ -5,7 +5,7 @@
 
 These constants identify the format to use for a person’s composite name order for person records.
 
-#### Overview
+## Overview
 
 See [`ABPersonCompositeNameFormat`](./abpersoncompositenameformat.md) and [`ABRecordCopyCompositeName(_:)`](./abrecordcopycompositename%28_%29.md).
 

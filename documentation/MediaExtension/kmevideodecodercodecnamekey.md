@@ -20,7 +20,7 @@ var kMEVideoDecoderCodecNameKey: String { get }
 #define kMEVideoDecoderCodecNameKey
 ```
 
-#### Discussion
+## Discussion
 
 This string might be displayed as format information for the video track in a player application.
 

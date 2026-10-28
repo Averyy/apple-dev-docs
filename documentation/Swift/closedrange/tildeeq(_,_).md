@@ -21,7 +21,7 @@ Returns a Boolean value indicating whether a value is included in a range.
 static func ~= (pattern: Self, value: Self.Bound) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 You can use the pattern-matching operator (`~=`) to test whether a value is included in a range. The pattern-matching operator is used internally in `case` statements for pattern matching. The following example uses the `~=` operator to test whether an integer is included in a range of single-digit numbers:
 

@@ -25,7 +25,7 @@ typealias CGDataProviderReleaseDataCallback = (UnsafeMutableRawPointer?, UnsafeR
 typedef void (*)(void *, const void *, unsigned long) CGDataProviderReleaseDataCallback;
 ```
 
-#### Discussion
+## Discussion
 
 When Core Graphics no longer needs direct access to your provider data, your function is called. You may safely modify, move, or release your provider data at this time.
 

@@ -19,11 +19,11 @@ var thousandSeparator: String! { get set }
 @property (copy, null_resettable) NSString * thousandSeparator;
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t have thousand separators enabled through any other means (such as [`format`](./format.md)), using this method enables them.
 
-##### Special Considerations
+### Special Considerations
 
 This method is for use with formatters using `NSNumberFormatterBehavior10_0` behavior.
 

@@ -19,7 +19,7 @@ A unique identifier for this editable field.
 var id: Data?
 ```
 
-#### Discussion
+## Discussion
 
 The editable field doesn’t display this value to someone using the app.
 

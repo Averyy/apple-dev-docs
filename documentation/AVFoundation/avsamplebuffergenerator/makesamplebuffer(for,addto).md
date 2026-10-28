@@ -25,11 +25,11 @@ func makeSampleBuffer(for request: AVSampleBufferRequest, addTo batch: AVSampleB
 - (CMSampleBufferRef) createSampleBufferForRequest:(AVSampleBufferRequest *) request addingToBatch:(AVSampleBufferGeneratorBatch *) batch error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 A sample buffer.
 
-#### Discussion
+## Discussion
 
 Call the [`makeDataReady(completionHandler:)`](../avsamplebuffergeneratorbatch/makedataready%28completionhandler%29.md) on [`AVSampleBufferGeneratorBatch`](../avsamplebuffergeneratorbatch.md) once to commence I/O and load sample data for all [`CMSampleBuffer`](../../CoreMedia/cmsamplebuffer.md) objects in a batch. After loading commences, any subsequent calls to [`makeSampleBuffer(for:addTo:)`](./makesamplebuffer%28for,addto%29.md) throw an exception.
 

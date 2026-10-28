@@ -17,7 +17,7 @@ Sets the file (filename and directory path) under which document data is saved.
 - (void) setFileName:(NSString *) fileName;
 ```
 
-#### Discussion
+## Discussion
 
 Sets the file (filename and directory path) under which document data is saved to `fileName`. As a side effect, synchronizes the titles of the document’s windows with the new name or location. A document’s filename is automatically set when it is saved as a new document (Save) and when an existing document is saved under a different filename or path (Save As). The Finder also keeps track of open documents and their associated files. When a user moves or renames a file in the Finder that corresponds to an open document, the Finder calls [`setFileName:`](./setfilename_.md) with the new filename.
 

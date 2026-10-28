@@ -23,7 +23,7 @@ optional var autocorrectionType: UITextAutocorrectionType { get set }
 @property (nonatomic) UITextAutocorrectionType autocorrectionType;
 ```
 
-#### Discussion
+## Discussion
 
 This property determines whether autocorrection is enabled or disabled during typing. With autocorrection enabled, the text object tracks unknown words and suggests a more suitable replacement candidate to the user, replacing the typed text automatically unless the user explicitly overrides the action.
 

@@ -18,11 +18,11 @@ Adds an object to the OSSet if it is not already present.
 bool setObject(const OSMetaClassBase *anObject);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `anObject` was successfully added to the set, `false` otherwise (including if it was already in the set).
 
-#### Discussion
+## Discussion
 
 The set adds storage to accomodate the new object, if necessary. If successfully added, the object is retained.
 

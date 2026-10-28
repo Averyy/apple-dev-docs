@@ -24,11 +24,11 @@ func JSObjectGetPropertyAtIndex(_ ctx: JSContextRef!, _ object: JSObjectRef!, _ 
 JSValueRefJSObjectGetPropertyAtIndex(JSContextRef ctx, JSObjectRef object, unsigned int propertyIndex, JSValueRef*exception);
 ```
 
-#### Return Value
+## Return Value
 
 The property’s value, if `object` has the property; otherwise, the undefined value.
 
-#### Discussion
+## Discussion
 
 Calling [`JSObjectGetPropertyAtIndex(_:_:_:_:)`](./jsobjectgetpropertyatindex%28_,_,_,_%29.md) is equivalent to calling [`JSObjectGetProperty(_:_:_:_:)`](./jsobjectgetproperty%28_,_,_,_%29.md) with a string that contains `propertyIndex`, but [`JSObjectGetPropertyAtIndex(_:_:_:_:)`](./jsobjectgetpropertyatindex%28_,_,_,_%29.md) provides optimized access to numeric properties.
 

@@ -16,7 +16,7 @@ Returns the `NSConnection` object that uses the receiver.
 - (NSConnection *) connection;
 ```
 
-#### Return Value
+## Return Value
 
 The `NSConnection` object that uses the receiver. In an object’s [`encode(with:)`](../nscoding/encode%28with%29.md) method, this is the sending (server) connection. In [`init(coder:)`](../nscoding/init%28coder%29.md) this is the receiving (client) connection.
 

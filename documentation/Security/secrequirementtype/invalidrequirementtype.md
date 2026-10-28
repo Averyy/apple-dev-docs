@@ -20,7 +20,7 @@ case invalidRequirementType
 kSecInvalidRequirementType
 ```
 
-#### Discussion
+## Discussion
 
 This constant is for Apple internal use.
 

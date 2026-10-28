@@ -15,7 +15,7 @@ The scope of a network permission.
 enum PluginNetworkPermissionScope
 ```
 
-#### Overview
+## Overview
 
 The scope can be none, local connections only, or all connections.
 

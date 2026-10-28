@@ -20,7 +20,7 @@ func suspendCurrentAppleEvent() -> NSAppleEventManager.SuspensionID?
 - (NSAppleEventManagerSuspensionID) suspendCurrentAppleEvent;
 ```
 
-#### Discussion
+## Discussion
 
 An Apple event is being handled on the current thread if [`currentAppleEvent`](./currentappleevent.md) does not return `nil`. Returns zero otherwise. The suspended event is no longer the current event after this method returns.
 

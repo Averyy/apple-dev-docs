@@ -11,7 +11,7 @@ Fetches all of an organization’s assigned campaigns.
 
 > **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
-#### Discussion
+## Discussion
 
 This endpoint returns data for all of an organization’s assigned campaigns. You can also use a partial fetch as necessary. For more information, see the Use a Partial Fetch section of [Using Apple Ads API Functionality](./using-apple-search-ads-api-functionality.md).
 

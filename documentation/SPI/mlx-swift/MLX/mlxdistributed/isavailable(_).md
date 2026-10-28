@@ -17,7 +17,7 @@ Check if a communication backend is available.
 static func isAvailable(_ backend: MLXDistributed.Backend = .any) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 Whether MLX has the capability of instantiating that backend
 

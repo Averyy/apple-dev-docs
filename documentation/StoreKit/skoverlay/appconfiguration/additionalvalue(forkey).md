@@ -22,11 +22,11 @@ func additionalValue(forKey key: String) -> Any?
 - (id) additionalValueForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 The associated value of the key.
 
-#### Discussion
+## Discussion
 
 Additional values are values you use to verify and associate an app installation with an ad campaign. For more information, see [`SKAdNetwork`](../../skadnetwork.md).
 

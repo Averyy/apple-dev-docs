@@ -24,7 +24,7 @@ let HMCharacteristicTypeHoldPosition: String
 extern NSString * const HMCharacteristicTypeHoldPosition;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a write-only Boolean. Write a value of `true` to indicate that the current position should be maintained. The accessory ignores a written value of `false`. Write a value to the [`HMCharacteristicTypeTargetPosition`](./hmcharacteristictypetargetposition.md) characteristic to release the hold.
 

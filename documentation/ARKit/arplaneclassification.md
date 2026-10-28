@@ -16,7 +16,7 @@ Possible characterizations of real-world surfaces represented by plane anchors.
 enum ARPlaneClassification : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 You get values of this type from a plane anchor’s [`classification`](./arplaneanchor/classification-2hi2p.md) property, identifying the likely type of real-world surface for a detected plane anchor.
 

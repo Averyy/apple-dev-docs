@@ -15,11 +15,11 @@ A single row in an apps keyword report, containing keyword metadata, performance
 object AppsKeywordReportRow
 ```
 
-#### Discussion
+## Discussion
 
 The `metadata` field captures keyword identifiers and configuration at report time, and `totalMetrics` contains the aggregated performance figures across the full reporting period.
 
-##### Example
+### Example
 
 ```json
 {

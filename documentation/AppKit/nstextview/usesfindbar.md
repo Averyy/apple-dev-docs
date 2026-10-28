@@ -19,7 +19,7 @@ var usesFindBar: Bool { get set }
 @property BOOL usesFindBar;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the find bar is used for this text view; otherwise [`false`](../../Swift/false.md). See [`NSTextFinder`](../nstextfinder.md) for information about the find bar.
 

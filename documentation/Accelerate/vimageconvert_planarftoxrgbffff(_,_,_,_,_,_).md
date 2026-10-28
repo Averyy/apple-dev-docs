@@ -25,11 +25,11 @@ func vImageConvert_PlanarFToXRGBFFFF(_ alpha: Pixel_F, _ red: UnsafePointer<vIma
 vImage_Error vImageConvert_PlanarFToXRGBFFFF(Pixel_F alpha, const vImage_Buffer *red, const vImage_Buffer *green, const vImage_Buffer *blue, const vImage_Buffer *dest, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 This routine can’t be place.
 

@@ -22,7 +22,7 @@ nonisolated
 func fontWeight(_ weight: Font.Weight?) -> Text
 ```
 
-#### Return Value
+## Return Value
 
 Text that uses the font weight you specify.
 

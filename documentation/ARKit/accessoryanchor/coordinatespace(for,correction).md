@@ -15,7 +15,7 @@ The coordinate space of a location on this accessory.
 func coordinateSpace(for location: Accessory.LocationName, correction: ARKitCoordinateSpace.Correction) -> ARKitCoordinateSpace
 ```
 
-#### Return Value
+## Return Value
 
 The coordinate space of the location.
 

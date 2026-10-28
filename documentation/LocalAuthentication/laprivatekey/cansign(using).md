@@ -23,7 +23,7 @@ func canSign(using algorithm: SecKeyAlgorithm) -> Bool
 - (BOOL) canSignUsingSecKeyAlgorithm:(SecKeyAlgorithm) algorithm;
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the algorithm you supply is valid for signing data with the key.
 

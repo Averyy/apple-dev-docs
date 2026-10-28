@@ -29,7 +29,7 @@ func changeToMode(with params: MTRDeviceEnergyManagementModeClusterChangeToModeP
 - (void) changeToModeWithParams:(MTRDeviceEnergyManagementModeClusterChangeToModeParams *) params completion:(void (^)(MTRDeviceEnergyManagementModeClusterChangeToModeResponseParams *data, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This command is used to change device modes.
 

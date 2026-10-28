@@ -24,7 +24,7 @@ var action: PDFAction? { get set }
 @property (nonatomic, strong, nullable) PDFAction * action;
 ```
 
-#### Discussion
+## Discussion
 
 The root outline serves only as a container for the outlines it owns; it does not have an action. Note that a `PDFOutline` object can have either an action or a destination, not both.
 

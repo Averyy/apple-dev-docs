@@ -5,7 +5,7 @@
 
 Constants used to specify the type of barcode to scan.
 
-#### Overview
+## Overview
 
 These constants are used in conjunction with the [`AVCaptureMetadataOutput`](./avcapturemetadataoutput.md) class’s [`metadataObjectTypes`](./avcapturemetadataoutput/metadataobjecttypes.md) property to specify the type (“symbology”) of barcode to scan. When a barcode is detected, the type property of `AVMetadataMachineReadableCodeObject` reflects the constant for the detected barcode’s symbology.
 

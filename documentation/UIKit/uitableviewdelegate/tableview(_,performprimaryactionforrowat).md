@@ -23,7 +23,7 @@ optional func tableView(_ tableView: UITableView, performPrimaryActionForRowAt i
 - (void) tableView:(UITableView *) tableView performPrimaryActionForRowAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Discussion
+## Discussion
 
 Primary actions allow you to distinguish between a distinct user action and a change in selection (like a focus change or other indirect selection change). A primary action occurs when a person selects a single row without extending an existing selection.
 

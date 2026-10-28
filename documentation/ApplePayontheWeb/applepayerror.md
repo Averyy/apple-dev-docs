@@ -22,7 +22,7 @@ interface ApplePayError
 - [Choosing an API for Implementing Apple Pay on Your Website](./choosing-an-api-for-implementing-apple-pay-on-your-website.md)
 - [Setting up the payment request API to accept Apple Pay](./setting-up-the-payment-request-api-to-accept-apple-pay.md)
 
-#### Overview
+## Overview
 
 When you determine that there’s a problem with an address or contact information on the payment sheet, you can use [`ApplePayError`](./applepayerror.md) to create a customized error message. Apple Pay highlights the area with an error and displays your message, making it easier for users to correct errors.
 

@@ -5,7 +5,7 @@
 
 Constants for type faces such as italic or bold.
 
-#### Overview
+## Overview
 
 Typeface information is specified by the lower 16 bits of `NSFontSymbolicTraits` using the following constants.
 

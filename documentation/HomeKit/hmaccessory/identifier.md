@@ -24,7 +24,7 @@ var identifier: UUID { get }
 @property (nonatomic, copy, readonly) NSUUID * identifier;
 ```
 
-#### Discussion
+## Discussion
 
 An identifier is stable for as long as an accessory is in a home. If an accessory is removed from a home, it will get a new identifier when it is next added to a home.
 

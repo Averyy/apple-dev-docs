@@ -15,7 +15,7 @@ Performs enumeration-time initializations in response to a call from the framewo
 virtual kern_return_t UserDetermineDeviceCharacteristics(bool *result);
 ```
 
-#### Discussion
+## Discussion
 
 The kernel calls this user space method at enumeration time. Use this callback to perform any initializations your DriverKit extension (dext) needs to perform.
 

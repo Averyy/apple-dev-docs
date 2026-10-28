@@ -25,7 +25,7 @@ var isFault: Bool { get }
 @property (nonatomic, readonly, getter=isFault) BOOL fault;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the receiver is a fault, otherwise [`false`](../../Swift/false.md). Knowing whether an object is a fault is useful in many situations when computations are optional. It can also be used to avoid growing the object graph unnecessarily (which may improve performance as it can avoid time-consuming fetches from data stores).
 

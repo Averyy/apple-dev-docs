@@ -19,7 +19,7 @@ optional func page(_ page: SFSafariPage, willNavigateTo url: URL?)
 - (void) page:(SFSafariPage *) page willNavigateToURL:(NSURL *) url;
 ```
 
-#### Discussion
+## Discussion
 
 The `url` parameter is `nil` if the extension does not have permission to access the destination webpage.
 

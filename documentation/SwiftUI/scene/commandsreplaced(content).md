@@ -20,11 +20,11 @@ nonisolated
 func commandsReplaced<Content>(@ContentBuilder content: () -> Content) -> some Scene where Content : Commands
 ```
 
-#### Return Value
+## Return Value
 
 A scene that replaces any commands defined by its children with alternative content.
 
-#### Discussion
+## Discussion
 
 `WindowGroup`, `Window`, and other scene types all have an associated set of commands that they include by default. Apply this modifier to a scene to replace those commands with the output from the given builder.
 

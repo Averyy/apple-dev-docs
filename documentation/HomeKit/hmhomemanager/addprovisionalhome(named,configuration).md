@@ -16,11 +16,11 @@ Adds a temporary provisional home while someone performs HomeKit installation se
 func addProvisionalHome(named name: String, configuration: HMHomeManager.ProvisionalConfiguration) async throws -> HMHome
 ```
 
-#### Return Value
+## Return Value
 
 The configured provisional home you use for installation services.
 
-#### Overview
+## Overview
 
 When a person performs installation services at a home and pairs accessories, HomeKit automatically pre-installs the home hub as an administrative controller for each accessory. When using HomeKit accessory protocol (HAP) pairing, HomeKit enables seamless transfer of accessories without key rotation when an installation service provider transfers the provisional home to the home hub.
 

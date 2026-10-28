@@ -24,7 +24,7 @@ var kExtAudioFileProperty_IOBuffer: ExtAudioFilePropertyID { get }
 kExtAudioFileProperty_IOBuffer
 ```
 
-#### Discussion
+## Discussion
 
 This property’s value points to the memory that the extended audio file object uses for disk I/O when converting between the application and file data formats. You may want your application to share this memory among multiple extended audio file objects. If so, you can set this property to point to a buffer you specify—pass a pointer to a pointer when calling the `ExtAudioFileSetProperty` function. After setting this property, your application must then set the `kExtAudioFileProperty_IOBufferSizeBytes` property.
 

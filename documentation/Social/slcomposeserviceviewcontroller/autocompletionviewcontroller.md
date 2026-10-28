@@ -21,7 +21,7 @@ var autoCompletionViewController: UIViewController! { get set }
 @property (nonatomic, strong) UIViewController * autoCompletionViewController;
 ```
 
-#### Discussion
+## Discussion
 
 An autocompletion view can appear in place of the list of configuration items, just below the text view in the compose view. The compose view controller allows only one autocompletion view controller to be present at a time.
 

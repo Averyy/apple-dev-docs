@@ -25,7 +25,7 @@ class INNotebookItemTypeResolutionResult
 @interface INNotebookItemTypeResolutionResult : INIntentResolutionResult
 ```
 
-#### Overview
+## Overview
 
 You return an [`INNotebookItemTypeResolutionResult`](./innotebookitemtyperesolutionresult.md) object when resolving parameters containing an [`INNotebookItemType`](./innotebookitemtype.md) value. Use the creation method that best reflects your ability to resolve the parameter successfully.
 

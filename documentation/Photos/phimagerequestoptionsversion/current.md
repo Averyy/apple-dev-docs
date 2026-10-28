@@ -24,7 +24,7 @@ case current
 PHImageRequestOptionsVersionCurrent
 ```
 
-#### Discussion
+## Discussion
 
 The resulting image is the rendered output from all previously made adjustments.
 

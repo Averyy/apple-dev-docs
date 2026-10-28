@@ -21,7 +21,7 @@ Static factory method that creates a custom day period format style using a styl
 static func with12s(_ width: Date.FormatStyle.Symbol.DayPeriod.Width) -> Date.FormatStyle.Symbol.DayPeriod
 ```
 
-#### Return Value
+## Return Value
 
 A day period format style appropriate for the locale and specified width.
 

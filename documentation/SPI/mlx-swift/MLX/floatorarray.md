@@ -17,7 +17,7 @@ Parameter for taking a single or multiple Float values.
 enum FloatOrArray
 ```
 
-#### Overview
+## Overview
 
 For example the numeric parameters here are all [`FloatOrArray`](./floatorarray.md):
 
@@ -26,7 +26,7 @@ Upsample(scaleFactor: 10.5)
 Upsample(scaleFactor: [4.5, 3.5])
 ```
 
-##### See Also:
+### See Also:
 
 - [`IntOrArray`](./intorarray.md)
 

@@ -16,7 +16,7 @@ A change that invalidates the restorable state of the view.
 static var restorableState: NSView.Invalidations.RestorableState { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this invalidation type to call [`invalidateRestorableState()`](../nsresponder/invalidaterestorablestate%28%29.md) so that a change in property value invalidates the viewʼs restorable state. This triggers the app to save any information the restoration system needs to restore the current state of the view.
 

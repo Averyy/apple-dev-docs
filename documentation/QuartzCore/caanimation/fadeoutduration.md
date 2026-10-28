@@ -24,7 +24,7 @@ var fadeOutDuration: CGFloat { get set }
 @property CGFloat fadeOutDuration;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to create smooth transitions between the effects of multiple animations. These transitions are especially useful for geometry animations created with external 3D authoring tools.
 

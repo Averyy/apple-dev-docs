@@ -19,7 +19,7 @@ The feature-extractor options for a sound-classifier training algorithm.
 enum FeatureExtractorType
 ```
 
-#### Overview
+## Overview
 
 Use the [`MLSoundClassifier.ModelParameters.FeatureExtractorType.audioFeaturePrint(type:revision:)`](./featureextractortype/audiofeatureprint%28type,revision%29.md) feature extractor to create a model with the following advantages over `vggish`:
 

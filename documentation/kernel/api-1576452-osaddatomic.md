@@ -15,11 +15,11 @@
 SInt32 OSAddAtomic(SInt32 amount, volatile SInt32 *address);
 ```
 
-#### Return Value
+## Return Value
 
 The value before the addition
 
-#### Discussion
+## Discussion
 
 The OSAddAtomic function adds the specified amount to the value at the specified address and returns the original value.
 

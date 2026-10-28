@@ -25,7 +25,7 @@ func CFTreeGetTypeID() -> CFTypeID
 extern CFTypeID CFTreeGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The type identifier of the CFTree opaque type.
 

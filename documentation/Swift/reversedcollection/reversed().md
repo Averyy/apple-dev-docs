@@ -24,7 +24,7 @@ func reversed() -> Base
 
 Available when `Base` conforms to `BidirectionalCollection`.
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(1)
 

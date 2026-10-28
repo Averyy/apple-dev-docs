@@ -23,7 +23,7 @@ func didOpenTab(_ newTab: any WKWebExtensionTab)
 - (void) didOpenTab:(id<WKWebExtensionTab>) newTab;
 ```
 
-#### Discussion
+## Discussion
 
 This method informs only the specific extension of the opening of a new tab. If the intention is to inform all loaded extensions consistently, you should use the respective method on the extension controller instead.
 

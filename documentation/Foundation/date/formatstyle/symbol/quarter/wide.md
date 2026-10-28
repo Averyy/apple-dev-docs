@@ -21,7 +21,7 @@ The full representation of a quarter.
 static var wide: Date.FormatStyle.Symbol.Quarter { get }
 ```
 
-#### Discussion
+## Discussion
 
 This custom format style conveys the complete representation of a quarter. For example, `2nd quarter`, for the second quarter.
 

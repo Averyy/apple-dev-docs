@@ -6,7 +6,7 @@
 
 A 32-bit integer that indicates how the text should be aligned.
 
-#### Overview
+## Overview
 
 Set this field to `0` for left-justified text, to `1` for centered text, and to `–1` for right-justified text.
 

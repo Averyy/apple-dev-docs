@@ -17,7 +17,7 @@ A combination of [`mapValues(_:)`](./mapvalues%28_%29.md), [`flattened(prefix:)`
 func mapValues<Result>(prefix: String? = nil, _ transform: (String, Element) throws -> Result) rethrows -> NestedItem<Key, Result>
 ```
 
-#### Discussion
+## Discussion
 
 This transforms a nested structure into a new nested structure with the same shape but transformed values.  The `transform` function receives a dotted path and the value to transform.
 

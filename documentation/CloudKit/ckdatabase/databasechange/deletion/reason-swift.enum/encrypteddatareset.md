@@ -21,7 +21,7 @@ The user chose to reset all encrypted data for their account.
 case encryptedDataReset
 ```
 
-#### Discussion
+## Discussion
 
 This is an indication that the user needed to reset encrypted data during account recovery, and is still interested in locally-cached data.
 

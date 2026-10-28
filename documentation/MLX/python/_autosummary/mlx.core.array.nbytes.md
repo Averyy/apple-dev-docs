@@ -6,5 +6,8 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ar
 
 # mlx.core.array.nbytes
 
-**property array.nbytes**
-: The number of bytes in the array.
+```python
+property array.nbytes
+```
+
+The number of bytes in the array.

@@ -21,7 +21,7 @@ The ways that SwiftUI displays search suggestions.
 struct SearchSuggestionsPlacement
 ```
 
-#### Overview
+## Overview
 
 You can influence which modes SwiftUI displays search suggestions for by using the [`searchSuggestions(_:for:)`](./view/searchsuggestions%28_,for%29.md) modifier:
 

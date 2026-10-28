@@ -24,7 +24,7 @@ weak var delegate: (any GKPeerPickerControllerDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<GKPeerPickerControllerDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate must adopt the [`GKPeerPickerControllerDelegate`](../gkpeerpickercontrollerdelegate.md) formal protocol.
 

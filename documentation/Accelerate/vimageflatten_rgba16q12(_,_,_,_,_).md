@@ -25,11 +25,11 @@ func vImageFlatten_RGBA16Q12(_ argbSrc: UnsafePointer<vImage_Buffer>, _ argbDst:
 vImage_Error vImageFlatten_RGBA16Q12(const vImage_Buffer *argbSrc, const vImage_Buffer *argbDst, const Pixel_ARGB_16S argbBackgroundColorPtr, bool isImagePremultiplied, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 The function uses the following calculation to flatten the source image:
 

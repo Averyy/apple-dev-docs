@@ -19,7 +19,7 @@ var tabbedWindows: [NSWindow]? { get }
 @property (copy, readonly, nullable) NSArray<NSWindow *> * tabbedWindows;
 ```
 
-#### Discussion
+## Discussion
 
 This property is `nil` if the window is not showing a tab bar.
 

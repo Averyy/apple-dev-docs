@@ -21,11 +21,11 @@ Returns a new path with filled regions from this path that are not in the given 
 func subtracting(_ other: Path, eoFill: Bool = false) -> Path
 ```
 
-#### Return Value
+## Return Value
 
 A new path.
 
-#### Discussion
+## Discussion
 
 The filled region of the resulting path is the filled region of this path with the filled region `other` removed from it.
 

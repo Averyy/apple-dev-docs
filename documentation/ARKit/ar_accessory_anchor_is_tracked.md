@@ -15,7 +15,7 @@ Determine whether an accessory anchor is tracked.
 extern bool ar_accessory_anchor_is_tracked(ar_accessory_anchor_t accessory_anchor);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the anchor is tracked, `false` otherwise.
 

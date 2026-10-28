@@ -26,7 +26,7 @@ optional func writingToolsCoordinator(_ writingToolsCoordinator: UIWritingToolsC
 - (void) writingToolsCoordinator:(UIWritingToolsCoordinator *) writingToolsCoordinator requestsGrammarResultsForContext:(UIWritingToolsCoordinatorContext *) context completion:(void (^)(NSArray<NSTextCheckingResult *> *results)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 To support the grammar presentation UI, the delegate should provide information about the identified and currently indicated grammar issues in the specified context. The elements of the results array should be `NSTextCheckingResult` objects of grammar type, of the sort that are returned from grammar checking, with ranges relative to the context. If you use grammar presentation, you must implement this delegate method to provide them.
 

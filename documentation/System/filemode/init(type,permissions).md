@@ -21,7 +21,7 @@ Creates a `FileMode` from the given file type and permissions.
 init(type: FileType, permissions: FilePermissions)
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This initializer masks the inputs with their respective bit masks.
 

@@ -19,11 +19,11 @@ func UTCreateStringForOSType(_ inOSType: OSType) -> Unmanaged<CFString>
 CFStringRef UTCreateStringForOSType(OSType inOSType);
 ```
 
-#### Return Value
+## Return Value
 
 A string that encodes the OSType.
 
-#### Discussion
+## Discussion
 
 The UTI functions assume that all alternate identifier tags can be represented as Core Foundation strings. OSTypes are integer-based rather than string-based, so to pass an OSType into a UTI function, you must call this function to convert it to a string.
 

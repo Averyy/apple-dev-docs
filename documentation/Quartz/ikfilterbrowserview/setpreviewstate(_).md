@@ -19,7 +19,7 @@ func setPreviewState(_ inState: Bool)
 - (void) setPreviewState:(BOOL) inState;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to show and hide the preview programmatically.
 

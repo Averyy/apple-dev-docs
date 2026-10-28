@@ -20,7 +20,7 @@ optional func collectionView(_ collectionView: NSCollectionView, draggingSession
 - (void) collectionView:(NSCollectionView *) collectionView draggingSession:(NSDraggingSession *) session willBeginAtPoint:(NSPoint) screenPoint forItemsAtIndexPaths:(NSSet<NSIndexPath *> *) indexPaths;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this method to modify the dragging session or to perform other tasks related to the beginning of a drag session.
 

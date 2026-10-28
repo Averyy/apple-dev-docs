@@ -25,7 +25,7 @@ let NSUUIDChangedPersistentStoresKey: String
 extern NSString * const NSUUIDChangedPersistentStoresKey;
 ```
 
-#### Discussion
+## Discussion
 
 The object at index `0` is the old store instance, and the object at index `1` the new. When migration happens, the array contains a third object (at index `2`) that is an array containing the new objectIDs for all the migrated objects.
 

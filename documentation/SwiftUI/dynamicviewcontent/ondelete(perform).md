@@ -26,7 +26,7 @@ func onDelete(perform action: Optional<(IndexSet) -> Void>) -> some DynamicViewC
 
 - [Picking container views for your content](../picking-container-views-for-your-content.md)
 
-#### Return Value
+## Return Value
 
 A view that calls `action` when elements are deleted from the original view.
 

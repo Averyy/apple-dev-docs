@@ -15,7 +15,7 @@ The hosting view’s associated window will have its toolbar populated with any 
 static let toolbars: NSHostingSceneBridgingOptions
 ```
 
-#### Discussion
+## Discussion
 
 Toolbars populated in this manner overwrite any toolbar set on the window using AppKit.
 

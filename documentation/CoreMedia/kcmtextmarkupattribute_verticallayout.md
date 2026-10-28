@@ -25,7 +25,7 @@ let kCMTextMarkupAttribute_VerticalLayout: CFString
 extern CFStringRef const kCMTextMarkupAttribute_VerticalLayout;
 ```
 
-#### Discussion
+## Discussion
 
 Specifying this attribute indicates that the writing direction is vertical instead of horizontal. You can set the associated value to [`kCMTextVerticalLayout_LeftToRight`](./kcmtextverticallayout_lefttoright.md) or [`kCMTextVerticalLayout_RightToLeft`](./kcmtextverticallayout_righttoleft.md) to indicate the progression direction for new vertical lines of text.
 

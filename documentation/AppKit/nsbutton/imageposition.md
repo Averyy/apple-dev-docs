@@ -19,7 +19,7 @@ var imagePosition: NSControl.ImagePosition { get set }
 @property NSCellImagePosition imagePosition;
 ```
 
-#### Discussion
+## Discussion
 
 If the title is above, below, or overlapping the image, or if there is no image, the text is horizontally centered within the button. See [`NSControl.ImagePosition`](../nscontrol/imageposition.md) in [`NSCell`](../nscell.md) for the list of possible image positions.
 

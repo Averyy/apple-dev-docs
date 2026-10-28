@@ -20,7 +20,7 @@ Creates a new column by immediately evaluating any lazily applied data processin
 func materialize() throws -> MLUntypedColumn
 ```
 
-#### Return Value
+## Return Value
 
 A new column.
 

@@ -19,7 +19,7 @@ var kAudioUnitProperty_FastDispatch: AudioUnitPropertyID { get }
 kAudioUnitProperty_FastDispatch
 ```
 
-#### Discussion
+## Discussion
 
 This property supports expedited interaction with an audio unit. To use it, call the [`AudioUnitGetProperty(_:_:_:_:_:_:)`](./audiounitgetproperty%28_,_,_,_,_,_%29.md) function with the `inID` parameter set to the selector constant that corresponds to the audio unit function you want to call quickly. On return, the `outData` parameter contains a function pointer for the selector.
 

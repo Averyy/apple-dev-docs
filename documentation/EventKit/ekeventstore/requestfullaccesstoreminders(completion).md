@@ -32,7 +32,7 @@ func requestFullAccessToReminders() async throws -> Bool
 
 - [Accessing the event store](../accessing-the-event-store.md)
 
-#### Discussion
+## Discussion
 
 Requesting access to an event store asynchronously prompts people for permission to use their data. The operating system only prompts them the first time your app requests access to reminders; any subsequent instantiations of [`EKEventStore`](../ekeventstore.md) uses existing permissions. When they grant or deny access, [EventKit](../EventKit.md) calls the completion handler on an arbitrary queue.
 

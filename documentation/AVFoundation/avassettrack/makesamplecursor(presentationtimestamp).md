@@ -25,11 +25,11 @@ func makeSampleCursor(presentationTimeStamp: CMTime) -> AVSampleCursor?
 - (AVSampleCursor *) makeSampleCursorWithPresentationTimeStamp:(CMTime) presentationTimeStamp;
 ```
 
-#### Return Value
+## Return Value
 
 An instance of [`AVSampleCursor`](../avsamplecursor.md).
 
-#### Discussion
+## Discussion
 
 If the track’s [`asset`](./asset.md) property value for [`providesPreciseDurationAndTiming`](../avasset/providesprecisedurationandtiming.md) is [`true`](../../Swift/true.md), the sample cursor is accurately positioned at the track’slast media sample with a presentation timestamp less than or equal to the desired timestamp, or, if there are no such samples, the first sample in presentation order.
 

@@ -18,7 +18,7 @@ Removes an edge from the graph.
 final func removeEdge(_ edge: ShaderGraph.Edge) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: If the edge does not exist in the graph.
 

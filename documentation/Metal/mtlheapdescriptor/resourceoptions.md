@@ -24,7 +24,7 @@ var resourceOptions: MTLResourceOptions { get set }
 @property (nonatomic, readwrite) MTLResourceOptions resourceOptions;
 ```
 
-#### Discussion
+## Discussion
 
 This property aggregates the values of [`storageMode`](./storagemode.md), [`cpuCacheMode`](./cpucachemode.md), and [`hazardTrackingMode`](./hazardtrackingmode.md). Any modifications you make to this property affect the other properties, and vice versa.
 

@@ -20,7 +20,7 @@ Adds Level of Detail configuration using resolution metric-based switching to an
 static func addByResolutionMetric(to entity: Entity, levels: [(entities: LevelOfDetailComponent.DetailLevel, switchingResolutions: LevelOfDetailComponent.SelectionStrategy.ResolutionMetric.DirectionalSwitchingResolutions)], boundingBox: BoundingBox)
 ```
 
-#### Discussion
+## Discussion
 
 Each level pairs a set of entities with a directional switching resolutions struct. Level 0 should have an empty directional switching resolutions struct. Entities within a level are shown or hidden together.
 

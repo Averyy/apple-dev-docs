@@ -25,7 +25,7 @@ var screenSpaceAmbientOcclusionNormalThreshold: CGFloat { get set }
 @property (nonatomic) CGFloat screenSpaceAmbientOcclusionNormalThreshold;
 ```
 
-#### Discussion
+## Discussion
 
 Ambient occlusion is an effect that improves material shading by calculating the amounts of ambient light that reach various parts of a surface, creating shadows on parts of a geometry where incoming light is obscured by other parts of the geometry. (You can provide pre-rendered ambient occlusion effects for a material using its [`ambientOcclusion`](../scnmaterial/ambientocclusion.md) property.) *Screen-space ambient occlusion* (SSAO) provides a real-time approximation of this effect for the entire scene viewed through the camera.
 

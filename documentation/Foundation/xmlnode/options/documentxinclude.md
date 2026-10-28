@@ -20,7 +20,7 @@ static var documentXInclude: XMLNode.Options { get }
 NSXMLDocumentXInclude
 ```
 
-#### Discussion
+## Discussion
 
 XInclude allows clients to include parts of another XML document within a document.
 

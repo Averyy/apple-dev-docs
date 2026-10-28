@@ -12,7 +12,7 @@ static IOPacketQueue * withCapacity(
  UInt32 capacity = capacity);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOPacketQueue instance on success, or 0 otherwise.
 

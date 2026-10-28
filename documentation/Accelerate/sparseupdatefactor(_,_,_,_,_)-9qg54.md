@@ -25,7 +25,7 @@ func SparseUpdateFactor(_ updateAlgorithm: SparseUpdate_t, _ Factorization: Unsa
 static void SparseUpdateFactor(SparseUpdate_t updateAlgorithm, SparseOpaqueFactorization_Float *Factorization, int updateCount, const int *updatedIndices, SparseMatrix_Float Update);
 ```
 
-#### Discussion
+## Discussion
 
 If we have a factorization `A = LU` and now wish to solve a system `ĀX = B` where `Ā = A + UV^T` for some low-rank update matrices `U` of size `m x k` and `V` of size `k x n` for some small `k` there exist methods to modify (update) the original factors at a lower cost than a full factorization.
 

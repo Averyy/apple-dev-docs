@@ -17,7 +17,7 @@ OSStatus PMPrinterGetPrinterResolution (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A result code. The result code `kPMNotImplemented` indicates that the printer driver does not support multiple resolution settings.
 

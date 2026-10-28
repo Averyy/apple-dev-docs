@@ -23,11 +23,11 @@ func adaptivePresentationStyle(for traitCollection: UITraitCollection) -> UIModa
 - (UIModalPresentationStyle) adaptivePresentationStyleForTraitCollection:(UITraitCollection *) traitCollection;
 ```
 
-#### Return Value
+## Return Value
 
 The value provided by the presentation controller’s delegate or [`UIModalPresentationStyle.none`](../uimodalpresentationstyle/none.md) if a delegate was not provided or does not return a valid value.
 
-#### Discussion
+## Discussion
 
 After the content managed by the presentation controller is onscreen, this method returns the presentation style to use for the specified set of traits. The default implementation of this method consults its delegate object and returns the value returned by that object’s `adaptivePresentationStyleForPresentationController:traitCollection:` method. Some system-supplied presentation controllers may also provide a new style that is more suited to the new set of traits.
 

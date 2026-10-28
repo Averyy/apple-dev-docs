@@ -25,7 +25,7 @@ static let openInPlace: UIApplication.OpenURLOptionsKey
 extern UIApplicationOpenURLOptionsKey const UIApplicationOpenURLOptionsOpenInPlaceKey;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`false`](../../../Swift/false.md), you must copy the document to maintain access to it. If the flag is not set, you also must copy the document before you can use it.
 

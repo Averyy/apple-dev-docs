@@ -22,7 +22,7 @@ init(bundleIdentifier: String)
 - (instancetype) initWithBundleIdentifier:(NSString *) bundleIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 You can get the bundle identifier for an app using the `codesign` command line utility:
 

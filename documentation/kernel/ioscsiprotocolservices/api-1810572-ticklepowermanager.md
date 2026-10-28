@@ -12,7 +12,7 @@ virtual void TicklePowerManager (
  void );
 ```
 
-#### Overview
+## Overview
 
 Internal method. Do not use.
 

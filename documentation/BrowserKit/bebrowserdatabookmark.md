@@ -20,7 +20,7 @@ class BEBrowserDataBookmark
 @interface BEBrowserDataBookmark : BEBrowserData
 ```
 
-#### Overview
+## Overview
 
 This class represents a single bookmark or bookmark folder with its associated metadata including title, URL, and relationship to other bookmarks. Bookmarks reside in a folder structure according to the [`parentIdentifier`](./bebrowserdatabookmark/parentidentifier.md) property.
 

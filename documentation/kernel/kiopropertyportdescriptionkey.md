@@ -14,7 +14,7 @@
 #define kIOPropertyPortDescriptionKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is associated with an human readable port description. Examples include "Channel A", "Port 1", etc.
 

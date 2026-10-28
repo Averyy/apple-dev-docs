@@ -20,7 +20,7 @@ var layoutManager: (any CALayoutManager)? { get set }
 @property (strong, nullable) id<CALayoutManager> layoutManager;
 ```
 
-#### Discussion
+## Discussion
 
 The object you assign to this property must nominally implement the CALayoutManager Informal Protocol informal protocol. If the layer’s delegate does not handle layout updates, the object assigned to this property is given a chance to update the layout of the layer’s sublayers.
 

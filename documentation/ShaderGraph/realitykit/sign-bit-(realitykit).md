@@ -14,11 +14,11 @@ Tests for sign bit.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 Returns true if the sign bit is set for the value in X, otherwise returns false
 
-#### Parameter Types
+## Parameter Types
 
 **Sign Bit (half)**:
 

@@ -9,7 +9,7 @@ Soft-deletes an ad by its unique identifier, stopping delivery and removing it f
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint soft-deletes an ad by its ID. The system marks the ad `deleted: true`, and it immediately stops serving. The system preserves the record and excludes it from query results by default, but a GET request still returns the ad with `deleted: true`. A subsequent PUT request to update a deleted ad returns 404 Not Found.
 
@@ -29,11 +29,11 @@ Deleting an ad has the following effects:
 | Associated ad creative is not deleted | The ad creative record is unaffected. Other ads can use it. |
 | To swap an ad creative | Delete this ad and create a new ad with the desired `creativeId` in the same ad group. |
 
-#### Payload Examples
+## Payload Examples
 
 **Delete Ad**:
 
-##### Request
+### Request
 
 Deletes an ad by its unique identifier. A successful delete returns HTTP 200 with an empty response body.
 
@@ -41,7 +41,7 @@ Deletes an ad by its unique identifier. A successful delete returns HTTP 200 wit
 DELETE /v1/ads/777888999
 ```
 
-##### Response
+### Response
 
 ```json
 {}
@@ -49,7 +49,7 @@ DELETE /v1/ads/777888999
 
 **Verify Deletion**:
 
-##### Request
+### Request
 
 After deletion, confirm the ad is marked deleted by querying with `deleted EQUALS true`.
 
@@ -72,7 +72,7 @@ POST /v1/ads/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

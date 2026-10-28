@@ -23,7 +23,7 @@ var maximumDepth: Measurement<UnitLength>? { get }
 @property (nonatomic, readonly, nullable) NSMeasurement<NSUnitLength *> * maximumDepth;
 ```
 
-#### Discussion
+## Discussion
 
 To access data for dives with a maximum depth of 6 m, add the Shallow Depth and Pressure capability to your app. For more information, see [Adding capabilities to your app](../../Xcode/adding-capabilities-to-your-app.md).
 

@@ -19,7 +19,7 @@ var hasVerticalScroller: Bool { get set }
 @property BOOL hasVerticalScroller;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the combo box displays a vertical scroller even when the pop-up list contains few enough items that a scroller is not needed. The default value of this property is [`true`](../../Swift/true.md).
 

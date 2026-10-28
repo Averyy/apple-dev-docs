@@ -15,7 +15,7 @@ A component that controls how an entity blends visually with objects in the loca
 struct EnvironmentBlendingComponent
 ```
 
-#### Overview
+## Overview
 
 Use this component in your visionOS apps to allow physical objects in the real world to occlude your virtual content.
 

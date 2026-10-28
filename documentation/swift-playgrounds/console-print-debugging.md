@@ -5,15 +5,15 @@
 
 Learn different methods to debug your code using console output.
 
-#### Overview
+## Overview
 
 When writing code in Swift Playgrounds, you can debug your playgrounds by using print statements and viewing their output in the console. You can filter statements in the console to find specific outputs.
 
-#### Add a print statement
+## Add a print statement
 
 Call `print(_:separator:terminator)` in the code you’d like to debug and add any items you’d like to output to the console. These items output as `String` values, the same as the output obtained by calling `String(item)`. To customize your debug output for any type, you can add [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md) conformance to provide your own implementation for `debugDescription`. This allows you to print custom `String` representations for any type and view them in the console.
 
-If you’re trying to debug a SwiftUI view, you need to adjust your approach. Because SwiftUI is a [declarative framework](../SwiftUI/state-and-data-flow.md), you can’t add an imperative `print` call inside your view declaration. This is because the view `body` property expects to return a [View](../SwiftUI/view.md) value. To resolve this, you can use one of several approaches.
+If you’re trying to debug a SwiftUI view, you need to adjust your approach. Because SwiftUI is a [declarative framework](../SwiftUI/model-data.md), you can’t add an imperative `print` call inside your view declaration. This is because the view `body` property expects to return a [View](../SwiftUI/view.md) value. To resolve this, you can use one of several approaches.
 
 One approaach to debug your declarative code is to attach the `onAppear(perform:)` modifier to a view in your `body`, and call `print` when the view first appears:
 
@@ -47,7 +47,7 @@ VStack {
 }
 ```
 
-#### Understand when and why your views change
+## Understand when and why your views change
 
 Another approach that’s particularly useful when debugging SwiftUI view updates is to call the internal method `Self._printChanges()` from the `body` of the view — instead of calling `print`. This records which property caused the view to update and sends that information to the console. In addition to providing property names, `@self` marks the change to the view value, and `@identity` marks the change to the view’s identity.
 
@@ -58,7 +58,7 @@ var body: some View {
 }
 ```
 
-#### See your app’s output in the Console
+## See your app’s output in the Console
 
 Press the console button in the code editor to show and hide the console. To adjust the size of the console, you can drag to increase or decrease the available space.
 

@@ -21,7 +21,7 @@ A type that represents a null object.
 #define XPC_TYPE_NULL
 ```
 
-#### Discussion
+## Discussion
 
 This type is useful for disambiguating an unset key in a dictionary and one which has been reserved but set empty. Also, this type is a way to represent a “null” value in dictionaries, which do not accept `NULL`.
 

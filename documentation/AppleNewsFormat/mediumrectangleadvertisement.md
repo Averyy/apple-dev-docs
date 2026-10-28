@@ -21,7 +21,7 @@ object MediumRectangleAdvertisement
 
 - [Apple News Format Release Notes](../AppleNews/apple-news-format-release-notes.md)
 
-#### Discussion
+## Discussion
 
 The `MediumRectangleAdvertisement` object has a fixed size of 300 x 250 points. You can embed this component within the text content or at the end of your article. (Medium rectangle advertisements can appear inside a [`Container`](./container.md) only if the container is full-width.)
 
@@ -35,7 +35,7 @@ Keep these points in mind when including medium rectangle ads in your article:
 
 For advertisements that span the full width of the display, see [`BannerAdvertisement`](./banneradvertisement.md).
 
-##### Example
+### Example
 
 ```json
 {

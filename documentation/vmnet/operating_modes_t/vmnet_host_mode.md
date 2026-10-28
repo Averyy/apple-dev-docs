@@ -18,7 +18,7 @@ case VMNET_HOST_MODE
 VMNET_HOST_MODE
 ```
 
-#### Discussion
+## Discussion
 
 Mode that allows the guest network interface to communicate with other guest network interfaces in the host mode and with the native host.
 

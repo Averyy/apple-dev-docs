@@ -29,7 +29,7 @@ optional func confirm(intent: INStartAudioCallIntent) async -> INStartAudioCallI
 - (void) confirmStartAudioCall:(INStartAudioCallIntent *) intent completion:(void (^)(INStartAudioCallIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to validate that your app is able to initiate the call to the specified users. You might check the availability of your calling network, verify that the current user is logged in and able to place the call, verify that the intended recipients are able to receive the call, or perform other tasks specific to your app.
 

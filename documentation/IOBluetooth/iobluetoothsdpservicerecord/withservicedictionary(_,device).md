@@ -19,7 +19,7 @@ class func withServiceDictionary(_ serviceDict: [AnyHashable : Any]!, device: IO
 + (instancetype) withServiceDictionary:(NSDictionary *) serviceDict device:(IOBluetoothDevice *) device;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOBluetoothSDPServiceRecord * with the attributes specified in the provided dictionary.
 

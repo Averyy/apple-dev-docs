@@ -10,7 +10,7 @@ framework: "Swift-Org/EmbeddedSwift"
 
 Set up a project that can seamlessly use C APIs from the Pico SDK.
 
-#### Overview
+## Overview
 
 Development for [Raspberry Pi Pico and Pico W](https://www.raspberrypi.com/products/raspberry-pi-pico/) normally uses the [Pico SDK](https://github.com/raspberrypi/pico-sdk) and the vendor provides several [sample projects in the pico-examples repository](https://github.com/raspberrypi/pico-examples). The SDK and sample project setup is described in:
 
@@ -21,7 +21,7 @@ Before trying to use Swift with the Pico SDK, make sure your environment works a
 
 The following walks through setting up a minimal three-file project from scratch to explain the key concepts. For a complete, more fleshed out example that supports multiple Pico boards, see the [rpi-pico-blink-sdk](https://github.com/swiftlang/swift-embedded-examples/tree/main/rpi-pico-blink-sdk) project.
 
-#### CMake setup with a bridging header
+## CMake setup with a bridging header
 
 The Pico SDK is using CMake as its build system, and so the simplest way to integrate with it is to also use CMake to build a Swift firmware application on top of the SDK and the libraries from it. The following describes an example set up of that on a “blinky” example (code that just blinks the built-in LED).
 
@@ -93,7 +93,7 @@ target_link_libraries(swift-blinky
 pico_add_extra_outputs(swift-blinky)
 ```
 
-#### Configure and build
+## Configure and build
 
 With these three files, we can now configure and build a Swift firmware for the Pico:
 

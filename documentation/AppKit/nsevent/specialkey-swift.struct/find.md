@@ -15,7 +15,7 @@ The find key.
 static let find: NSEvent.SpecialKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is unavailable on most Macintosh keyboards.
 

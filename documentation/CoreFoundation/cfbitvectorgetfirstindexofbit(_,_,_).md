@@ -25,7 +25,7 @@ func CFBitVectorGetFirstIndexOfBit(_ bv: CFBitVector!, _ range: CFRange, _ value
 extern CFIndex CFBitVectorGetFirstIndexOfBit(CFBitVectorRef bv, CFRange range, CFBit value);
 ```
 
-#### Return Value
+## Return Value
 
 The index of the first occurrence of `value` in the specified range of `bv`, or `kCFNotFound` if `value` is not present.
 

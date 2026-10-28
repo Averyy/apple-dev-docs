@@ -22,7 +22,7 @@ func GLKMatrix3MultiplyVector3(_ matrixLeft: GLKMatrix3, _ vectorRight: GLKVecto
 static GLKVector3 GLKMatrix3MultiplyVector3(GLKMatrix3 matrixLeft, GLKVector3 vectorRight);
 ```
 
-#### Return Value
+## Return Value
 
 A new vector created by multiplying the matrix by the vector.
 

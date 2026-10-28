@@ -25,7 +25,7 @@ class func exit()
 + (void) exit;
 ```
 
-#### Discussion
+## Discussion
 
 This method uses the [`current`](./current.md) class method to access the current thread. Before exiting the thread, this method posts the [`NSThreadWillExit`](../nsnotification/name-swift.struct/nsthreadwillexit.md) with the thread being exited to the default notification center. Because notifications are delivered synchronously, all observers of [`NSThreadWillExit`](../nsnotification/name-swift.struct/nsthreadwillexit.md) are guaranteed to receive the notification before the thread exits.
 

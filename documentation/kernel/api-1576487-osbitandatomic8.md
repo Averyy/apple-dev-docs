@@ -15,11 +15,11 @@
 UInt8 OSBitAndAtomic8(UInt32 mask, volatile UInt8 *address);
 ```
 
-#### Return Value
+## Return Value
 
 The value before the bitwise operation.
 
-#### Discussion
+## Discussion
 
 The OSBitAndAtomic8 function logically ands the bits of the specified mask into the value at the specified address and returns the original value.
 

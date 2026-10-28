@@ -26,7 +26,7 @@ var pointOfView: SCNNode? { get set }
 @property (nonatomic, retain, nullable) SCNNode * pointOfView;
 ```
 
-#### Discussion
+## Discussion
 
 Use a node with an [`SCNCamera`](../scncamera.md) instance assigned to its [`camera`](../scnnode/camera.md) property to view a scene. The node provides the position and direction of a virtual camera, and the camera object provides rendering parameters such as field of view and focus.
 

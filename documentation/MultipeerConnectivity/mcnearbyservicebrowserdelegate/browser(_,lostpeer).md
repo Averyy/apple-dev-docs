@@ -27,7 +27,7 @@ func browser(_ browser: MCNearbyServiceBrowser, lostPeer peerID: MCPeerID)
 - (void) browser:(MCNearbyServiceBrowser *) browser lostPeer:(MCPeerID *) peerID;
 ```
 
-#### Discussion
+## Discussion
 
 This callback informs your app that invitations can no longer be sent to a peer, and that your app should remove that peer from its user interface.
 

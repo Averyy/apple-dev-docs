@@ -21,7 +21,7 @@ The results as an asynchronous sequence of matches.
 final var results: SHSession.Results { get }
 ```
 
-#### Discussion
+## Discussion
 
 This session continues to return results until the sequence is exhausted or the app calls [`cancel()`](./cancel%28%29.md).
 

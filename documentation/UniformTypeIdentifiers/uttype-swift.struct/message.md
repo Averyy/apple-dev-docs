@@ -21,7 +21,7 @@ A base type that represents a message.
 static var message: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.message`.
 

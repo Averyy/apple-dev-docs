@@ -31,7 +31,7 @@ var location: CLLocation { get set }
 @property (atomic, copy) CLLocation * location;
 ```
 
-#### Discussion
+## Discussion
 
 This value represents the location on the map where the restaurant’s marker appears.
 

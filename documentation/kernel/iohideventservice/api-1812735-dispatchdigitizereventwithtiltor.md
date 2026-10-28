@@ -25,7 +25,7 @@ virtual void dispatchDigitizerEventWithTiltOrientation(
  IOOptionBits options = 0 );
 ```
 
-#### Overview
+## Overview
 
 This is meant to be used with transducers that leverage tilt orientation
 

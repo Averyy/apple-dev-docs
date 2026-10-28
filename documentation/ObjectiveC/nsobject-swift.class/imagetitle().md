@@ -19,11 +19,11 @@ func imageTitle() -> String!
 - (NSString *) imageTitle;
 ```
 
-#### Return Value
+## Return Value
 
 The display title of the image.
 
-#### Discussion
+## Discussion
 
 This method is optional.
 

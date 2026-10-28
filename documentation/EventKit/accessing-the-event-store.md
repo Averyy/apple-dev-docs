@@ -5,7 +5,7 @@
 
 Request access to a person’s calendar data through the event store.
 
-#### Overview
+## Overview
 
 Your app must obtain permission from the person using the app before it can access the calendar database: your app must never directly modify the calendar database on its own. [`EKEventStore`](./ekeventstore.md) is the app’s way of accessing calendar and reminder data.
 
@@ -13,7 +13,7 @@ Your app should only request the access it needs to complete its tasks. You can 
 
 > **Note**:  Your app can’t request read-only access to either events or reminders. To read events or reminders from the event store, your app needs full access.
 
-##### Connect to the event store
+### Connect to the event store
 
 To receive event or reminder data, you must request access to an entity type after initializing the event store. To request access to reminders, use [`requestFullAccessToReminders(completion:)`](./ekeventstore/requestfullaccesstoreminders%28completion%29.md). To request access to events, use [`requestWriteOnlyAccessToEvents(completion:)`](./ekeventstore/requestwriteonlyaccesstoevents%28completion%29.md) or [`requestFullAccessToEvents(completion:)`](./ekeventstore/requestfullaccesstoevents%28completion%29.md), depending on the level of access your app needs.
 
@@ -45,13 +45,13 @@ EKEventStore *store = [[EKEventStore alloc] init];
 
 Releasing an event store instance before other EventKit objects may result in an error.
 
-##### Use EventKit with write-only calendar access
+### Use EventKit with write-only calendar access
 
 Your app can use the entire EventKit calendar API when it has write-only calendar access. If your app has write-only access, a request for a list of calendars returns a single virtual calendar, that doesn’t represent any real calendar in the event store. Requests for events on the virtual calendar return no results. When your app creates an event, EventKit saves it to a calendar that’s chosen by the person using your app.
 
 [EventKit UI](../EventKitUI/EventKitUI.md) presents chooser and editor UI outside of your app’s process on iOS 17 and later. Your app can use [EventKit UI](../EventKitUI/EventKitUI.md) without requesting write-only or full calendar access. The chooser and editor UI has full access to calendars on the device regardless of the access granted to your app. If your app needs to present UI for creating and editing calendar events, consider using [EventKit UI](../EventKitUI/EventKitUI.md) instead of requesting full access to calendar data. Create an event, then present an [`EKEventEditViewController`](../EventKitUI/ekeventeditviewcontroller.md) to allow people to edit and save the event. [`EKEventEditViewController`](../EventKitUI/ekeventeditviewcontroller.md) saves the event to the calendar the person requests in the editor UI.
 
-##### Protect user privacy with information property list keys
+### Protect user privacy with information property list keys
 
 An iOS app must include in its `Info.plist` file the usage description keys for the types of data it needs to access. On iOS 17 and later, to access a person’s calendar events or reminders, you need to include descriptions for:
 

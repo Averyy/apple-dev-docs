@@ -25,11 +25,11 @@ class func noiseField(smoothness: CGFloat, animationSpeed speed: CGFloat) -> SCN
 + (SCNPhysicsField *) noiseFieldWithSmoothness:(CGFloat) smoothness animationSpeed:(CGFloat) speed;
 ```
 
-#### Return Value
+## Return Value
 
 A physics field object. To use the field in a scene, attach it to the [`physicsField`](../scnnode/physicsfield.md) property of an [`SCNNode`](../scnnode.md) object.
 
-#### Discussion
+## Discussion
 
 Use this field type to simulate effects involving random motion, such as fireflies or gently falling snow.
 

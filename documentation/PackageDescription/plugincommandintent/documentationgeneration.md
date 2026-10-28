@@ -15,7 +15,7 @@ The plug-in generates documentation.
 case documentationGeneration
 ```
 
-#### Discussion
+## Discussion
 
 The command used to generate documentation, either by parsing the package contents directly or by using the build system support for generating symbol graphs. Invoked by a `generate-documentation` verb to `swift package`.
 

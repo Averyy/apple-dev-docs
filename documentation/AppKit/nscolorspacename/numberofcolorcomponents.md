@@ -19,7 +19,7 @@ var numberOfColorComponents: Int { get }
 extern NSInteger NSNumberOfColorComponents(NSColorSpaceName colorSpaceName);
 ```
 
-#### Discussion
+## Discussion
 
 Returns the number of color components in the color space whose name is provided by `colorSpaceName`.
 

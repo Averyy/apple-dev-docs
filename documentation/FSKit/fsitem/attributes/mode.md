@@ -19,7 +19,7 @@ var mode: UInt32 { get set }
 @property (nonatomic) uint32_t mode;
 ```
 
-#### Discussion
+## Discussion
 
 The mode is often used for `setuid`, `setgid`, and `sticky` bits.
 

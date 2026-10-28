@@ -16,7 +16,7 @@ Create a block read command object.
 IOFireWireLibCommandRef (*CreateReadCommand)(IOFireWireLibDeviceRef self, io_object_t device, const FWAddress *addr, void *buf, UInt32 size, IOFireWireLibCommandCallback callback, Boolean failOnReset, UInt32 generation, void *inRefCon, REFIID iid);
 ```
 
-#### Return Value
+## Return Value
 
 An IOFireWireLibCommandRef interface. See IOFireWireLibCommandRef.
 

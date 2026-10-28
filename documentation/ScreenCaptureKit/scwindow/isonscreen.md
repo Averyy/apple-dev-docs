@@ -20,7 +20,7 @@ var isOnScreen: Bool { get }
 @property (readonly, getter=isOnScreen) BOOL onScreen;
 ```
 
-#### Discussion
+## Discussion
 
 This value represents the macOS window server’s onscreen status of the window.
 

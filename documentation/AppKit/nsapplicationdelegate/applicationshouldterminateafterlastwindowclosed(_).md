@@ -20,11 +20,11 @@ optional func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplic
 - (BOOL) applicationShouldTerminateAfterLastWindowClosed:(NSApplication *) sender;
 ```
 
-#### Return Value
+## Return Value
 
 [`false`](../../Swift/false.md) if the application should not be terminated when its last window is closed; otherwise, [`true`](../../Swift/true.md) to terminate the application.
 
-#### Discussion
+## Discussion
 
 The application sends this message to your delegate when the application’s last window is closed. It sends this message regardless of whether there are still panels open. (A panel in this case is defined as being an instance of `NSPanel` or one of its subclasses.)
 

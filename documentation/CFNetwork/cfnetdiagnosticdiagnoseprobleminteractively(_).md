@@ -24,15 +24,15 @@ func CFNetDiagnosticDiagnoseProblemInteractively(_ details: CFNetDiagnostic) -> 
 extern CFNetDiagnosticStatus CFNetDiagnosticDiagnoseProblemInteractively(CFNetDiagnosticRef details);
 ```
 
-#### Return Value
+## Return Value
 
 `CFNetDiagnosticNoErr` if no error occurred, or `CFNetDiagnosticErr` if an error occurred that prevented this call from completing successfully.
 
-#### Discussion
+## Discussion
 
 This function opens the Network Diagnostics window and returns immediately once the window is open.
 
-##### Special Considerations
+### Special Considerations
 
 This function is thread safe as long as another thread does not alter the same CFNetDiagnosticRef at the same time.
 

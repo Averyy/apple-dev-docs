@@ -23,7 +23,7 @@ var localDragSession: (any UIDragSession)? { get }
 @property (nonatomic, readonly, nullable) id<UIDragSession> localDragSession;
 ```
 
-#### Discussion
+## Discussion
 
 The local drag session is `nil` if the drag activity started in a different app.
 

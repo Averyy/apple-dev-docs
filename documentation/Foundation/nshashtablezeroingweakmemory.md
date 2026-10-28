@@ -15,7 +15,7 @@ This option has been deprecated. Instead use the `NSHashTableWeakMemory` option.
 static const NSPointerFunctionsOptions NSHashTableZeroingWeakMemory;
 ```
 
-#### Discussion
+## Discussion
 
 Note that `NSHashTableWeakMemory` is not entirely equivalent to and compatible with the previous option’s behavior: objects must be weak-reference-safe under manual and automatic reference counting; not all objects are.
 

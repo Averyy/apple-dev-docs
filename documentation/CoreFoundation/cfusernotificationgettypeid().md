@@ -19,7 +19,7 @@ func CFUserNotificationGetTypeID() -> CFTypeID
 extern CFTypeID CFUserNotificationGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The type identifier for the `CFUserNotification` opaque type.
 

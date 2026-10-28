@@ -20,11 +20,11 @@ Resumes a training session from the last checkpoint if available.
 static func resume(_ session: MLTrainingSession<MLBoostedTreeClassifier>) throws -> MLJob<MLBoostedTreeClassifier>
 ```
 
-#### Return Value
+## Return Value
 
 A `MLJob` that can be used to observe training progress.
 
-#### Discussion
+## Discussion
 
 If there are no resumable checkpoints training starts over from the beginning.
 

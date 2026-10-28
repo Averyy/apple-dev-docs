@@ -21,11 +21,11 @@ func startSpeaking(_ string: String, to url: URL) -> Bool
 - (BOOL) startSpeakingString:(NSString *) string toURL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) when synthesis starts successfully, [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 When synthesis of `text` finishes normally or is stopped, the message [`speechSynthesizer(_:didFinishSpeaking:)`](../nsspeechsynthesizerdelegate/speechsynthesizer%28_,didfinishspeaking%29.md) is sent to the delegate.
 

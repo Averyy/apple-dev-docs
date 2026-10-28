@@ -19,7 +19,7 @@ var frameDescriptor: NSWindow.PersistableFrameDescriptor { get }
 @property (copy, readonly) NSWindowPersistableFrameDescriptor stringWithSavedFrame;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is a string that can be used in a later call to [`setFrame(from:)`](./setframe%28from%29.md).
 

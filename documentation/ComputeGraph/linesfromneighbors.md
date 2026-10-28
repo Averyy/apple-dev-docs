@@ -14,7 +14,7 @@
 void linesFromNeighbors(pointer<uniform_grid_t> grid, strided_buffer<float3> positions, strided_buffer<uint2> outputSegments, float maxDistance)
 ```
 
-#### Discussion
+## Discussion
 
 > **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/linesFromNeighbors.svg)
 

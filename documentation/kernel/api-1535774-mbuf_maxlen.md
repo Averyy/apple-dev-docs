@@ -13,11 +13,11 @@
 size_t mbuf_maxlen(const mbuf_t mbuf);
 ```
 
-#### Return Value
+## Return Value
 
 The maximum lenght of data for this mbuf.
 
-#### Discussion
+## Discussion
 
 Retrieves the maximum length of data that may be stored in this mbuf. This value assumes that the data pointer was set to the start of the possible range for that pointer (mbuf_data_start).
 

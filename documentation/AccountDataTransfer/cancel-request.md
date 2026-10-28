@@ -9,11 +9,11 @@ Tells the server to stop processing an active request.
 **Availability**:
 - Account Data Transfer 1.0+
 
-#### Overview
+## Overview
 
 A cancellation request only succeeds if the request is currently in progress.
 
-##### Cancel a one-time download
+### Cancel a one-time download
 
 **Request**:
 
@@ -35,7 +35,7 @@ A cancellation request only succeeds if the request is currently in progress.
 }
 ```
 
-##### Cancel a recurring download
+### Cancel a recurring download
 
 **Request**:
 

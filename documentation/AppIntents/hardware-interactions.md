@@ -5,7 +5,7 @@
 
 Run your App Shortcuts from the Action button on iPhone or Apple Watch, or launch your own conversational app from the side button on iPhone.
 
-#### Overview
+## Overview
 
 On supported iPhone models, people can run custom actions quickly using the Action button. This button is configurable in Settings, so people can assign any App Shortcuts you create to quickly access your app’s features. In select regions, people can also place custom actions on the side button of an iPhone to launch your conversational app.
 

@@ -19,7 +19,7 @@ var isCompanionAppInstalled: Bool { get }
 @property (nonatomic, readonly, getter=isCompanionAppInstalled) BOOL companionAppInstalled;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property on independent watchOS apps to determine whether the paired iPhone has installed the app.
 

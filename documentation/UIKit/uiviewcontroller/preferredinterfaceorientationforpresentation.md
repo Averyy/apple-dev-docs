@@ -22,11 +22,11 @@ var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation { get }
 @property (nonatomic, readonly) UIInterfaceOrientation preferredInterfaceOrientationForPresentation;
 ```
 
-#### Return Value
+## Return Value
 
 The interface orientation with which to present the view controller.
 
-#### Discussion
+## Discussion
 
 The system calls this method when presenting the view controller full screen. When your view controller supports two or more orientations but the content appears best in one of those orientations, override this method and return the preferred orientation.
 

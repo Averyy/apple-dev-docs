@@ -25,7 +25,7 @@ var password: String? { get }
 @property (copy, readonly, nullable) NSString * password;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the password. Any percent-encoded characters are not unescaped. If the receiver does not conform to RFC 1808, it contains `nil`. For example, in the URL `http://username:password@www.example.com/index.html`, the password is `password`.
 

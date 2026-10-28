@@ -24,11 +24,11 @@ class func localizedUserNotificationString(forKey key: String, arguments: [Any]?
 + (NSString *) localizedUserNotificationStringForKey:(NSString *) key arguments:(NSArray *) arguments;
 ```
 
-#### Return Value
+## Return Value
 
 A string whose value is created dynamically from a localized string resource. If a string resource corresponding to the specified `key` cannot be found, this method returns `key`.
 
-#### Discussion
+## Discussion
 
 When configuring the content of a local notification using the User Notifications framework, use this method to create strings whose contents are stored in your app’s `Localizable.strings` file. When the notification is about to be displayed, the string object uses the key and arguments you specify to load the appropriate localized version of the string. If the localized string has any escaped character sequences—that is, special characters proceeded by a percent (%) sign—those character sequences are replaced by the values in the `arguments` parameter.
 

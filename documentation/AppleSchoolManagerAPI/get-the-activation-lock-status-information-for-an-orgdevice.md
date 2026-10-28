@@ -9,11 +9,11 @@ Get the Activation Lock status of an organization device.
 **Availability**:
 - Apple School Manager API 1.7+
 
-#### Overview
+## Overview
 
 > **Note**: The request can also fail with an unexpected server error if the device reports an internal-only lock state that isn’t valid for a managed device.
 
-##### Example
+### Example
 
 **Request**:
 

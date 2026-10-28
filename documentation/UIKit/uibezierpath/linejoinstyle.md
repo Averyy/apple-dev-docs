@@ -24,7 +24,7 @@ var lineJoinStyle: CGLineJoin { get set }
 @property (nonatomic) CGLineJoin lineJoinStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The default line join style is [`CGLineJoin.miter`](../../CoreGraphics/cglinejoin/miter.md).
 

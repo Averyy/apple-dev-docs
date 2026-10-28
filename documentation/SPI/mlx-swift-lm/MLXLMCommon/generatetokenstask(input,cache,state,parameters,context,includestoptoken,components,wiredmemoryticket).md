@@ -17,11 +17,11 @@ Generates raw token IDs asynchronously and returns the stream plus a `Task`.
 func generateTokensTask(input: LMInput, cache: [KVCache]? = nil, state: LMOutput.State? = nil, parameters: GenerateParameters, context: ModelContext, includeStopToken: Bool = false, components: GenerationComponents = .init(), wiredMemoryTicket: WiredMemoryTicket? = nil) throws -> (AsyncStream<TokenGeneration>, Task<Void, Never>)
 ```
 
-#### Return Value
+## Return Value
 
 An `AsyncStream` that emits `TokenGeneration` values and a `Task`.
 
-#### Discussion
+## Discussion
 
 Prefer this overload if you want to be able to observe when the underlying generation work is finished (especially if the consumer terminates the stream early).
 

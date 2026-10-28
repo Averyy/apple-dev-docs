@@ -25,11 +25,11 @@ func range(of smaller: NSCalendar.Unit, in larger: NSCalendar.Unit, for date: Da
 - (NSRange) rangeOfUnit:(NSCalendarUnit) smaller inUnit:(NSCalendarUnit) larger forDate:(NSDate *) date;
 ```
 
-#### Return Value
+## Return Value
 
 The range of absolute time values `smaller` can take on in `larger` at the time specified by `date`. Returns `{NSNotFound, NSNotFound`} if `larger` is not logically bigger than `smaller` in the calendar, or the given combination of units does not make sense (or is a computation which is undefined).
 
-#### Discussion
+## Discussion
 
 You can use this method to calculate, for example, the range the Day unit can take on in the Month in which `date` lies.
 

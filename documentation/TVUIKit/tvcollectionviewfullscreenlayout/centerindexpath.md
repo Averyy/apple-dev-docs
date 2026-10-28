@@ -19,7 +19,7 @@ var centerIndexPath: IndexPath? { get }
 @property (nonatomic, strong, readonly, nullable) NSIndexPath * centerIndexPath;
 ```
 
-#### Discussion
+## Discussion
 
 The `centerIndexPath` property returns the index path of the cell currently centered on the screen. `TVUIKit` calculates the current index path using the current content offset of the collection view.
 

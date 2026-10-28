@@ -18,7 +18,7 @@ typedef struct MMCDeviceInterface {
 } MMCDeviceInterface;
 ```
 
-#### Overview
+## Overview
 
 After rendezvous with a MMC-2 Compliant Device in the IORegistry you can create an instance of this interface as a proxy to the IOService. Once you have this interface, or one of its subclasses, you can issue some select MMC-2 calls to the device without getting exclusive access first.
 

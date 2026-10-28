@@ -21,7 +21,7 @@ Flag indicating that the process is signed.
 static let isSigned: ProcessCodeSigningFlags.ValueSet
 ```
 
-#### Discussion
+## Discussion
 
 This is equivalent to `CS_SIGNED` in C APIs.
 

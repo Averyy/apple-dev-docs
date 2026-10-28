@@ -19,7 +19,7 @@ Creates a surface shader object from a named function in a Metal library.
 init(named name: String, in library: any MTLLibrary)
 ```
 
-#### Discussion
+## Discussion
 
 To create a surface shader for a custom material, create a Metal file in your Xcode project. Prefix the function with the keyword `[[visible]]`. The function needs to take a single parameter of type `realitykit::surface_parameters`.
 

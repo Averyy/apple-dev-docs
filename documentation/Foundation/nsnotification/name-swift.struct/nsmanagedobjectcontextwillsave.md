@@ -21,7 +21,7 @@ A notification that posts before a context writes unsaved changes.
 static let NSManagedObjectContextWillSave: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 This notification’s `object` is the context that’s about to save. Only use the notification to operate on the in-process save operation. For example, to insert additional managed objects. Don’t peform any asynchronous work or block the calling thread. [`NSManagedObjectContext`](../../../CoreData/nsmanagedobjectcontext.md) posts notifications to the same thread that creates it.
 

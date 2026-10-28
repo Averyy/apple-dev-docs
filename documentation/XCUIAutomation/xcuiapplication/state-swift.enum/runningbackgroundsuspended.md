@@ -25,7 +25,7 @@ case runningBackgroundSuspended
 XCUIApplicationStateRunningBackgroundSuspended
 ```
 
-#### Discussion
+## Discussion
 
 This enumeration case isn’t applicable in macOS.
 

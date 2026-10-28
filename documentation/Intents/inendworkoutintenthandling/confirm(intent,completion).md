@@ -27,7 +27,7 @@ optional func confirm(intent: INEndWorkoutIntent) async -> INEndWorkoutIntentRes
 - (void) confirmEndWorkout:(INEndWorkoutIntent *) intent completion:(void (^)(INEndWorkoutIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This method validates that your app is currently able to end the user’s workout. For example, verify that a workout is currently in progress and whether you can end it.
 

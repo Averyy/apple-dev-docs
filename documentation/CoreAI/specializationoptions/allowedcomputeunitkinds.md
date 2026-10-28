@@ -19,7 +19,7 @@ The set of compute units the specialized model can use.
 var allowedComputeUnitKinds: Set<ComputeUnitKind> { get }
 ```
 
-#### Discussion
+## Discussion
 
 The model may use all or any subset of the kinds in this set during inference.
 

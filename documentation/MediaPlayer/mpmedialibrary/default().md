@@ -22,7 +22,7 @@ class func `default`() -> MPMediaLibrary
 + (MPMediaLibrary *) defaultMediaLibrary;
 ```
 
-#### Return Value
+## Return Value
 
 The user’s default media library.
 

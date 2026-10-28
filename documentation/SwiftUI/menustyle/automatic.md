@@ -23,7 +23,7 @@ The default menu style, based on the menu’s context.
 
 Available when `Self` is `DefaultMenuStyle`.
 
-#### Discussion
+## Discussion
 
 The default menu style can vary by platform. By default, macOS uses the bordered button style.
 

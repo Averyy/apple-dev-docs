@@ -23,11 +23,11 @@ func deletePlaceholder() -> Bool
 - (BOOL) deletePlaceholder;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the placeholder cell was removed, or [`false`](../../Swift/false.md) if the cell was no longer in the table view.
 
-#### Discussion
+## Discussion
 
 Call this method on your app’s main thread to remove a placeholder cell without swapping in a new cell. You might call this method if the user chooses to undo the insertion of a cell or if the contents of the table view changed.
 

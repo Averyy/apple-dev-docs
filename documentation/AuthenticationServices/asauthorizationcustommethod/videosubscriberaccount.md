@@ -19,7 +19,7 @@ static let videoSubscriberAccount: ASAuthorizationCustomMethod
 extern ASAuthorizationCustomMethod const ASAuthorizationCustomMethodVideoSubscriberAccount;
 ```
 
-#### Discussion
+## Discussion
 
 This kind of authorization method displays a Sign in with TV Provider button.
 

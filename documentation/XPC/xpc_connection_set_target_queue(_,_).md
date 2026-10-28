@@ -25,7 +25,7 @@ func xpc_connection_set_target_queue(_ connection: xpc_connection_t, _ targetq: 
 extern void xpc_connection_set_target_queue(xpc_connection_t connection, dispatch_queue_t targetq);
 ```
 
-#### Discussion
+## Discussion
 
 Setting the target queue is asynchronous and non-preemptive and therefore this method will not interrupt the execution of an already-running event handler block. Setting the target queue may be likened to issuing a barrier to the connection which does the actual work of changing the target queue.
 

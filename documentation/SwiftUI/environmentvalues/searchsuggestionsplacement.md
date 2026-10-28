@@ -21,7 +21,7 @@ The current placement of search suggestions.
 var searchSuggestionsPlacement: SearchSuggestionsPlacement { get }
 ```
 
-#### Discussion
+## Discussion
 
 Search suggestions render based on the platform and surrounding context in which you place the searchable modifier containing suggestions. You can render search suggestions in two ways:
 

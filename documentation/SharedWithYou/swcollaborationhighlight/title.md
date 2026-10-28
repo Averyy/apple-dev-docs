@@ -23,7 +23,7 @@ var title: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * title;
 ```
 
-#### Discussion
+## Discussion
 
 The app that hosts the collaboration provides this title.
 

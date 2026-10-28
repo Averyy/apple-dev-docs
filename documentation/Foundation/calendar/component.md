@@ -21,7 +21,7 @@ An enumeration for the various components of a calendar date.
 enum Component
 ```
 
-#### Overview
+## Overview
 
 You use one or more [`Calendar.Component`](./component.md) values with the [`component(_:from:)`](./component%28_,from%29.md) or [`dateComponents(_:from:)`](./datecomponents%28_,from%29.md) methods to specify parts to extract from a given [`Date`](../date.md).
 

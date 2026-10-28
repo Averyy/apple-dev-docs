@@ -27,7 +27,7 @@ protocol GroupActivity : Decodable, Encodable
 - [Adding spatial Persona support to an activity](./adding-spatial-persona-support-to-an-activity.md)
 - [Joining and managing a shared activity](./joining-and-managing-a-shared-activity.md)
 
-#### Overview
+## Overview
 
 Adopt the `GroupActivity` protocol in custom app data structures that represent your app’s shareable experiences. The protocol provides the system with the context and metadata to start an activity-related session. For example, the protocol defines the unique identity of the activity, and returns information about the activity.
 

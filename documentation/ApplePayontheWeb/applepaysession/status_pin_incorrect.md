@@ -15,7 +15,7 @@ The PIN information is not valid.
 const unsigned short STATUS_PIN_INCORRECT;
 ```
 
-#### Discussion
+## Discussion
 
 Cards on the China Union Pay network may require a PIN.
 

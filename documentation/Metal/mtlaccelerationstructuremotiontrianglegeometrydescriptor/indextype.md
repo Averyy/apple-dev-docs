@@ -24,7 +24,7 @@ var indexType: MTLIndexType { get set }
 @property (nonatomic) MTLIndexType indexType;
 ```
 
-#### Discussion
+## Discussion
 
 The index type needs to be [`MTLIndexType.uint16`](../mtlindextype/uint16.md) or [`MTLIndexType.uint32`](../mtlindextype/uint32.md). The default is [`MTLIndexType.uint32`](../mtlindextype/uint32.md).
 

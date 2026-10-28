@@ -22,7 +22,7 @@ Sets a closure the session calls when it’s canceled.
 func setCancellationHandler(_ cancellationHandler: @escaping @Sendable (XPCRichError) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Only call this method on an inactive session.
 

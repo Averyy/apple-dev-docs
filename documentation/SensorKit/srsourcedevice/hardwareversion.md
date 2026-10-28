@@ -19,7 +19,7 @@ var hardwareVersion: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * hardwareVersion;
 ```
 
-#### Discussion
+## Discussion
 
 Hardware version of the source. A nil value means a hardware version was not provided.
 

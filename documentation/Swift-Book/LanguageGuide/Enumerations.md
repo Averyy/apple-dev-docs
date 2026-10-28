@@ -38,11 +38,6 @@ For more about these capabilities, see
 [Properties](Properties.md), [Methods](Methods.md), [Initialization](Initialization.md),
 [Extensions](Extensions.md), and [Protocols](Protocols.md).
 
-<!--
-  TODO: this chapter should probably mention that enums without associated values
-  are hashable and equatable by default (and what that means in practice)
--->
-
 ## Enumeration Syntax
 
 You introduce enumerations with the `enum` keyword
@@ -54,16 +49,6 @@ enum SomeEnumeration {
 }
 ```
 
-<!--
-  - test: `enums`
-
-  ```swifttest
-  -> enum SomeEnumeration {
-        // enumeration definition goes here
-     }
-  ```
--->
-
 Here's an example for the four main points of a compass:
 
 ```swift
@@ -74,19 +59,6 @@ enum CompassPoint {
     case west
 }
 ```
-
-<!--
-  - test: `enums`
-
-  ```swifttest
-  -> enum CompassPoint {
-        case north
-        case south
-        case east
-        case west
-     }
-  ```
--->
 
 The values defined in an enumeration
 (such as `north`, `south`, `east`, and `west`)
@@ -110,16 +82,6 @@ enum Planet {
 }
 ```
 
-<!--
-  - test: `enums`
-
-  ```swifttest
-  -> enum Planet {
-        case mercury, venus, earth, mars, jupiter, saturn, uranus, neptune
-     }
-  ```
--->
-
 Each enumeration definition defines a new type.
 Like other types in Swift, their names
 (such as `CompassPoint` and `Planet`)
@@ -131,14 +93,6 @@ so that they read as self-evident:
 var directionToHead = CompassPoint.west
 ```
 
-<!--
-  - test: `enums`
-
-  ```swifttest
-  -> var directionToHead = CompassPoint.west
-  ```
--->
-
 The type of `directionToHead` is inferred
 when it's initialized with one of the possible values of `CompassPoint`.
 Once `directionToHead` is declared as a `CompassPoint`,
@@ -147,14 +101,6 @@ you can set it to a different `CompassPoint` value using a shorter dot syntax:
 ```swift
 directionToHead = .east
 ```
-
-<!--
-  - test: `enums`
-
-  ```swifttest
-  -> directionToHead = .east
-  ```
--->
 
 The type of `directionToHead` is already known,
 and so you can drop the type when setting its value.
@@ -178,25 +124,6 @@ case .west:
 }
 // Prints "Watch out for penguins".
 ```
-
-<!--
-  - test: `enums`
-
-  ```swifttest
-  -> directionToHead = .south
-  -> switch directionToHead {
-        case .north:
-           print("Lots of planets have a north")
-        case .south:
-           print("Watch out for penguins")
-        case .east:
-           print("Where the sun rises")
-        case .west:
-           print("Where the skies are blue")
-     }
-  <- Watch out for penguins
-  ```
--->
 
 You can read this code as:
 
@@ -229,21 +156,6 @@ default:
 // Prints "Mostly harmless".
 ```
 
-<!--
-  - test: `enums`
-
-  ```swifttest
-  -> let somePlanet = Planet.earth
-  -> switch somePlanet {
-        case .earth:
-           print("Mostly harmless")
-        default:
-           print("Not a safe place for humans")
-     }
-  <- Mostly harmless
-  ```
--->
-
 ## Iterating over Enumeration Cases
 
 For some enumerations,
@@ -263,19 +175,6 @@ print("\(numberOfChoices) beverages available")
 // Prints "3 beverages available".
 ```
 
-<!--
-  - test: `enums`
-
-  ```swifttest
-  -> enum Beverage: CaseIterable {
-         case coffee, tea, juice
-     }
-  -> let numberOfChoices = Beverage.allCases.count
-  -> print("\(numberOfChoices) beverages available")
-  <- 3 beverages available
-  ```
--->
-
 In the example above,
 you write `Beverage.allCases` to access a collection
 that contains all of the cases of the `Beverage` enumeration.
@@ -293,22 +192,6 @@ for beverage in Beverage.allCases {
 // tea
 // juice
 ```
-
-<!--
-  - test: `enums`
-
-  ```swifttest
-  -> for beverage in Beverage.allCases {
-         print(beverage)
-     }
-  << coffee
-  << tea
-  << juice
-  // coffee
-  // tea
-  // juice
-  ```
--->
 
 The syntax used in the examples above
 marks the enumeration as conforming to the
@@ -361,17 +244,6 @@ enum Barcode {
 }
 ```
 
-<!--
-  - test: `enums`
-
-  ```swifttest
-  -> enum Barcode {
-        case upc(Int, Int, Int, Int)
-        case qrCode(String)
-     }
-  ```
--->
-
 This can be read as:
 
 “Define an enumeration type called `Barcode`,
@@ -390,14 +262,6 @@ You can then create new barcodes using either type:
 var productBarcode = Barcode.upc(8, 85909, 51226, 3)
 ```
 
-<!--
-  - test: `enums`
-
-  ```swifttest
-  -> var productBarcode = Barcode.upc(8, 85909, 51226, 3)
-  ```
--->
-
 This example creates a new variable called `productBarcode`
 and assigns it a value of `Barcode.upc`
 with an associated tuple value of `(8, 85909, 51226, 3)`.
@@ -407,14 +271,6 @@ You can assign the same product a different type of barcode:
 ```swift
 productBarcode = .qrCode("ABCDEFGHIJKLMNOP")
 ```
-
-<!--
-  - test: `enums`
-
-  ```swifttest
-  -> productBarcode = .qrCode("ABCDEFGHIJKLMNOP")
-  ```
--->
 
 At this point,
 the original `Barcode.upc` and its integer values are replaced by
@@ -442,20 +298,6 @@ case .qrCode(let productCode):
 // Prints "QR code: ABCDEFGHIJKLMNOP."
 ```
 
-<!--
-  - test: `enums`
-
-  ```swifttest
-  -> switch productBarcode {
-        case .upc(let numberSystem, let manufacturer, let product, let check):
-           print("UPC: \(numberSystem), \(manufacturer), \(product), \(check).")
-        case .qrCode(let productCode):
-           print("QR code: \(productCode).")
-     }
-  <- QR code: ABCDEFGHIJKLMNOP.
-  ```
--->
-
 If all of the associated values for an enumeration case
 are extracted as constants, or if all are extracted as variables,
 you can place a single `let` or `var` annotation before the case name, for brevity:
@@ -469,20 +311,6 @@ case let .qrCode(productCode):
 }
 // Prints "QR code: ABCDEFGHIJKLMNOP."
 ```
-
-<!--
-  - test: `enums`
-
-  ```swifttest
-  -> switch productBarcode {
-        case let .upc(numberSystem, manufacturer, product, check):
-           print("UPC : \(numberSystem), \(manufacturer), \(product), \(check).")
-        case let .qrCode(productCode):
-           print("QR code: \(productCode).")
-     }
-  <- QR code: ABCDEFGHIJKLMNOP.
-  ```
--->
 
 When you're matching just one case of an enumeration ---
 for example,
@@ -525,18 +353,6 @@ enum ASCIIControlCharacter: Character {
 }
 ```
 
-<!--
-  - test: `rawValues`
-
-  ```swifttest
-  -> enum ASCIIControlCharacter: Character {
-        case tab = "\t"
-        case lineFeed = "\n"
-        case carriageReturn = "\r"
-     }
-  ```
--->
-
 Here, the raw values for an enumeration called `ASCIIControlCharacter`
 are defined to be of type `Character`,
 and are set to some of the more common ASCII control characters.
@@ -577,16 +393,6 @@ enum Planet: Int {
 }
 ```
 
-<!--
-  - test: `rawValues`
-
-  ```swifttest
-  -> enum Planet: Int {
-        case mercury = 1, venus, earth, mars, jupiter, saturn, uranus, neptune
-     }
-  ```
--->
-
 In the example above,
 `Planet.mercury` has an explicit raw value of `1`,
 `Planet.venus` has an implicit raw value of `2`, and so on.
@@ -603,16 +409,6 @@ enum CompassPoint: String {
 }
 ```
 
-<!--
-  - test: `rawValues`
-
-  ```swifttest
-  -> enum CompassPoint: String {
-        case north, south, east, west
-     }
-  ```
--->
-
 In the example above,
 `CompassPoint.south` has an implicit raw value of `"south"`, and so on.
 
@@ -625,20 +421,6 @@ let earthsOrder = Planet.earth.rawValue
 let sunsetDirection = CompassPoint.west.rawValue
 // sunsetDirection is "west"
 ```
-
-<!--
-  - test: `rawValues`
-
-  ```swifttest
-  -> let earthsOrder = Planet.earth.rawValue
-  /> earthsOrder is \(earthsOrder)
-  </ earthsOrder is 3
-
-  -> let sunsetDirection = CompassPoint.west.rawValue
-  /> sunsetDirection is \"\(sunsetDirection)\"
-  </ sunsetDirection is "west"
-  ```
--->
 
 ### Initializing from a Raw Value
 
@@ -654,18 +436,6 @@ This example identifies Uranus from its raw value of `7`:
 let possiblePlanet = Planet(rawValue: 7)
 // possiblePlanet is of type Planet? and equals Planet.uranus
 ```
-
-<!--
-  - test: `rawValues`
-
-  ```swifttest
-  -> let possiblePlanet = Planet(rawValue: 7)
-  >> print(type(of: possiblePlanet))
-  << Optional<Planet>
-  >> assert(possiblePlanet == .uranus)
-  // possiblePlanet is of type Planet? and equals Planet.uranus
-  ```
--->
 
 Not all possible `Int` values will find a matching planet, however.
 Because of this, the raw value initializer always returns an *optional* enumeration case.
@@ -694,35 +464,11 @@ if let somePlanet = Planet(rawValue: positionToFind) {
 // Prints "There isn't a planet at position 11".
 ```
 
-<!--
-  - test: `rawValues`
-
-  ```swifttest
-  -> let positionToFind = 11
-  -> if let somePlanet = Planet(rawValue: positionToFind) {
-        switch somePlanet {
-           case .earth:
-              print("Mostly harmless")
-           default:
-              print("Not a safe place for humans")
-        }
-     } else {
-        print("There isn't a planet at position \(positionToFind)")
-     }
-  <- There isn't a planet at position 11
-  ```
--->
-
 This example uses optional binding to try to access a planet with a raw value of `11`.
 The statement `if let somePlanet = Planet(rawValue: 11)` creates an optional `Planet`,
 and sets `somePlanet` to the value of that optional `Planet` if it can be retrieved.
 In this case, it isn't possible to retrieve a planet with a position of `11`,
 and so the `else` branch is executed instead.
-
-<!--
-  TODO: Switch around the order of this chapter so that all of the non-union stuff
-  is together, and the union bits (aka Associated Values) come last.
--->
 
 ## Recursive Enumerations
 
@@ -743,18 +489,6 @@ enum ArithmeticExpression {
 }
 ```
 
-<!--
-  - test: `recursive-enum-intro`
-
-  ```swifttest
-  -> enum ArithmeticExpression {
-         case number(Int)
-         indirect case addition(ArithmeticExpression, ArithmeticExpression)
-         indirect case multiplication(ArithmeticExpression, ArithmeticExpression)
-     }
-  ```
--->
-
 You can also write `indirect` before the beginning of the enumeration
 to enable indirection for all of the enumeration's cases that have an associated value:
 
@@ -765,18 +499,6 @@ indirect enum ArithmeticExpression {
     case multiplication(ArithmeticExpression, ArithmeticExpression)
 }
 ```
-
-<!--
-  - test: `recursive-enum`
-
-  ```swifttest
-  -> indirect enum ArithmeticExpression {
-         case number(Int)
-         case addition(ArithmeticExpression, ArithmeticExpression)
-         case multiplication(ArithmeticExpression, ArithmeticExpression)
-     }
-  ```
--->
 
 This enumeration can store three kinds of arithmetic expressions:
 a plain number,
@@ -801,17 +523,6 @@ let sum = ArithmeticExpression.addition(five, four)
 let product = ArithmeticExpression.multiplication(sum, ArithmeticExpression.number(2))
 ```
 
-<!--
-  - test: `recursive-enum`
-
-  ```swifttest
-  -> let five = ArithmeticExpression.number(5)
-  -> let four = ArithmeticExpression.number(4)
-  -> let sum = ArithmeticExpression.addition(five, four)
-  -> let product = ArithmeticExpression.multiplication(sum, ArithmeticExpression.number(2))
-  ```
--->
-
 A recursive function is a straightforward way
 to work with data that has a recursive structure.
 For example, here's a function that evaluates an arithmetic expression:
@@ -832,39 +543,9 @@ print(evaluate(product))
 // Prints "18".
 ```
 
-<!--
-  - test: `recursive-enum`
-
-  ```swifttest
-  -> func evaluate(_ expression: ArithmeticExpression) -> Int {
-         switch expression {
-             case let .number(value):
-                 return value
-             case let .addition(left, right):
-                 return evaluate(left) + evaluate(right)
-             case let .multiplication(left, right):
-                 return evaluate(left) * evaluate(right)
-         }
-     }
-
-  -> print(evaluate(product))
-  <- 18
-  ```
--->
-
 This function evaluates a plain number
 by simply returning the associated value.
 It evaluates an addition or multiplication
 by evaluating the expression on the left-hand side,
 evaluating the expression on the right-hand side,
 and then adding them or multiplying them.
-
-<!--
-This source file is part of the Swift.org open source project
-
-Copyright (c) 2014 - 2022 Apple Inc. and the Swift project authors
-Licensed under Apache License v2.0 with Runtime Library Exception
-
-See https://swift.org/LICENSE.txt for license information
-See https://swift.org/CONTRIBUTORS.txt for the list of Swift project authors
--->

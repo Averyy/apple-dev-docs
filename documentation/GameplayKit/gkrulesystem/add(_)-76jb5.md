@@ -24,7 +24,7 @@ func add(_ rule: GKRule)
 - (void) addRule:(GKRule *) rule;
 ```
 
-#### Discussion
+## Discussion
 
 Adding rules to the system also adds them to the [`agenda`](./agenda.md) list, in decreasing order of the rules’ [`salience`](../gkrule/salience.md) values. Rules with the same salience are listed in the agenda in the order in which they were added to the system.
 

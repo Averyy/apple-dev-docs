@@ -10,7 +10,7 @@ virtual int getStreamCount(
  void);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the number of streams of the device.
 

@@ -25,7 +25,7 @@ var containerFrame: CGRect { get set }
 @property (nonatomic) CGRect containerFrame;
 ```
 
-#### Discussion
+## Discussion
 
 SceneKit can lay out a body of text to fit within a rectangular area. To do this, you must first use this property to define the area for text layout as a rectangle in the x- and y-axis dimensions of the text object’s local coordinate system. Then you use the [`isWrapped`](./iswrapped.md), [`alignmentMode`](./alignmentmode.md), and [`truncationMode`](./truncationmode.md) properties to control how SceneKit fits the text into the container frame. Text layout begins in the upper left corner of the rectangle.
 

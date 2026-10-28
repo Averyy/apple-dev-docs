@@ -25,7 +25,7 @@ func beginPage(mediaBox: UnsafePointer<CGRect>?)
 extern void CGContextBeginPage(CGContextRef c, const CGRect *mediaBox);
 ```
 
-#### Discussion
+## Discussion
 
 When using a graphics context that supports multiple pages, you should call this function together with [`endPage()`](./endpage%28%29.md) to delineate the page boundaries in the output. In other words, each page should be bracketed by calls to `CGContextBeginPage` and `CGContextEndPage`. Core Graphics ignores all drawing operations performed outside a page boundary in a page-based context.
 

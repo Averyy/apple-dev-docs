@@ -24,7 +24,7 @@ case newData
 NCUpdateResultNewData
 ```
 
-#### Discussion
+## Discussion
 
 When new data is available, the widget might have to update its layout.
 

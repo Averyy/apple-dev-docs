@@ -29,7 +29,7 @@ func setVertexAmplificationCount(_ count: Int, viewMappings: UnsafePointer<MTLVe
 
 - [Improving rendering performance with vertex amplification](../improving-rendering-performance-with-vertex-amplification.md)
 
-#### Discussion
+## Discussion
 
 With *vertex amplification*, you can encode drawing commands that process the same vertex multiple times, one per render target. You can configure the render pipeline’s vertex amplification multiplier by calling this method with a `count` argument that’s greater than `1`.
 

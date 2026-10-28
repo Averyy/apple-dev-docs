@@ -17,7 +17,7 @@ A Boolean value that indicates whether Safari’s AutoFill feature is active.
 var denyAutoFill: Bool? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Set this value to `true` to prevent Safari from automatically entering passwords, contact information, and credit cards in form fields. This value also denies Safari permission to use the keychain to AutoFill stored credentials. If your app doesn’t configure this setting, the value is `nil`.
 

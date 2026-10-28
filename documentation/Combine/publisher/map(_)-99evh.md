@@ -25,11 +25,11 @@ func map<T>(_ transform: @escaping (Self.Output) -> T) -> Publishers.Map<Self, T
 
 - [Receiving and Handling Events with Combine](../receiving-and-handling-events-with-combine.md)
 
-#### Return Value
+## Return Value
 
 A publisher that uses the provided closure to map elements from the upstream publisher to new elements that it then publishes.
 
-#### Discussion
+## Discussion
 
 Combine’s [`map(_:)`](./map%28_%29-99evh.md) operator performs a function similar to that of [`map(_:)`](../../Swift/sequence/map%28_%29.md) in the Swift standard library: it uses a closure to transform each element it receives from the upstream publisher. You use [`map(_:)`](./map%28_%29-99evh.md) to transform from one kind of element to another.
 

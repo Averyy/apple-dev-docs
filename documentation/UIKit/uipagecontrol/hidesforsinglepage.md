@@ -23,7 +23,7 @@ var hidesForSinglePage: Bool { get set }
 @property (nonatomic) BOOL hidesForSinglePage;
 ```
 
-#### Discussion
+## Discussion
 
 Assign a value of [`true`](../../Swift/true.md) to hide the page control when there is only one page; assign [`false`](../../Swift/false.md) (the default) to show the page control if there is only one page.
 

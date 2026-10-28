@@ -24,7 +24,7 @@ static var truncatesLastVisibleLine: NSStringDrawingOptions { get }
 NSStringDrawingTruncatesLastVisibleLine
 ```
 
-#### Discussion
+## Discussion
 
 This option is ignored if `NSStringDrawingUsesLineFragmentOrigin` is not also set. In addition, the line break mode must be either `NSLineBreakByWordWrapping` or `NSLineBreakByCharWrapping` for this option to take effect. The line break mode can be specified in a paragraph style passed in the attributes dictionary argument of the drawing methods.
 

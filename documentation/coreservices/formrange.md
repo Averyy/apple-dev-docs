@@ -14,7 +14,7 @@
 var formRange: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 Specifies a group of elements between two other elements. The key data is specified by a range descriptor, which is a coerced Apple event record of type `typeRangeDescriptor` that identifies two Apple event objects marking the beginning and end of a range of elements.
 

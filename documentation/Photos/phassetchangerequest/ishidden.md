@@ -24,7 +24,7 @@ var isHidden: Bool { get set }
 @property (nonatomic, assign, readwrite, getter=isHidden) BOOL hidden;
 ```
 
-#### Discussion
+## Discussion
 
 Hidden assets do not appear in the Moments interface in the Photos app.
 

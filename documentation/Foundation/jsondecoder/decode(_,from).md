@@ -21,11 +21,11 @@ Returns a value of the type you specify, decoded from a JSON object.
 func decode<T>(_ type: T.Type, from data: Data) throws -> T where T : Decodable
 ```
 
-#### Return Value
+## Return Value
 
 A value of the specified type, if the decoder can parse the data.
 
-#### Discussion
+## Discussion
 
 If the data isn’t valid JSON, this method throws the [`DecodingError.dataCorrupted(_:)`](../../Swift/decodingerror/datacorrupted%28_%29.md) error. If a value within the JSON fails to decode, this method throws the corresponding error.
 

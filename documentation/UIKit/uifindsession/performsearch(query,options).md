@@ -22,7 +22,7 @@ func performSearch(query: String, options: UITextSearchOptions?)
 - (void) performSearchWithQuery:(NSString *) query options:(UITextSearchOptions *) options;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method when the user initiates a search for a string in your app’s text content.
 

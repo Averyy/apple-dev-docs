@@ -12,11 +12,11 @@ virtual IODeviceMemory * getDeviceMemoryWithIndex(
  unsigned intindex );
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to an instance of IODeviceMemory, or zero if the index is beyond the count available. The IODeviceMemory is retained by the provider, so is valid while attached, or while any mappings to it exist. It should not be released by the caller. See also mapDeviceMemoryWithIndex, which creates a device memory mapping.
 
-#### Overview
+## Overview
 
 This method returns a pointer to an instance of IODeviceMemory for the physical memory range at the given index for a memory mapped device.
 

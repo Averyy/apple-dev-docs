@@ -19,7 +19,7 @@ var iccProfileData: Data? { get }
 @property (strong, readonly, nullable) NSData * ICCProfileData;
 ```
 
-#### Discussion
+## Discussion
 
 The ICC profile from which the receiver was created. This method attempts to compute the profile data from a CMProfileRef object and returns `nil` if it is unable to.
 

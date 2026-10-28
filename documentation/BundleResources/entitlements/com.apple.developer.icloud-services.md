@@ -25,7 +25,7 @@ The iCloud services used by the app.
 - `CloudKit`
 - `CloudKit-Anonymous`
 
-#### Discussion
+## Discussion
 
 To add this entitlement to your app, enable the iCloud capability and the iCloud Documents or CloudKit service in Xcode.
 

@@ -23,7 +23,7 @@ static let medium: AVCaptureSession.Preset
 extern AVCaptureSessionPreset const AVCaptureSessionPresetMedium;
 ```
 
-#### Discussion
+## Discussion
 
 Use this preset to achieve output video and audio bitrates suitable for sharing over WiFi.
 

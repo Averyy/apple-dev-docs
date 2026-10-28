@@ -6,7 +6,7 @@
 
 A 32-bit integer that specifies the developer of the compressor that generated the compressed data.
 
-#### Overview
+## Overview
 
 Often this field contains `'appl'` to indicate Apple, Inc.
 

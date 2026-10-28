@@ -23,7 +23,7 @@ var transfersVerticalScrollingToParent: Bool { get set }
 @property (nonatomic) BOOL transfersVerticalScrollingToParent;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `true`, in which case when the scroll view reaches either end of its vertical scroll axis it transfers scroll events to a containing scroll view. To stop this behavior, set the property to `false`.
 

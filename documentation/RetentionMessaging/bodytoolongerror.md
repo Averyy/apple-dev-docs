@@ -15,7 +15,7 @@ An error that indicates the body text is too long.
 object BodyTooLongError
 ```
 
-#### Discussion
+## Discussion
 
 When calling [`Upload Message`](./upload-message.md), provide a maximum of 144 characters.
 

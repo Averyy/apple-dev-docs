@@ -25,7 +25,7 @@ func createSymbolicLink(atPath path: String, withDestinationPath destPath: Strin
 - (BOOL) createSymbolicLinkAtPath:(NSString *) path withDestinationPath:(NSString *) destPath error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method does not traverse symbolic links contained in `destPath`, making it possible to create symbolic links to locations that do not yet exist. Also, if the final path component in `path` is a symbolic link, that link is not followed.
 

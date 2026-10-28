@@ -19,7 +19,7 @@ var requestingExecutable: URL? { get }
 @property (nonatomic, copy, readonly, nullable) NSURL * requestingExecutable;
 ```
 
-#### Discussion
+## Discussion
 
 This property is `nil` unless the device has a Mobile Device Management (MDM) profile, and the profile’s administrator installed the file provider’s app using the MDM profile.
 

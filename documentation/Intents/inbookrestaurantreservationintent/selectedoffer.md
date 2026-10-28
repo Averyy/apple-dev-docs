@@ -31,7 +31,7 @@ var selectedOffer: INRestaurantOffer? { get set }
 @property (atomic, copy, nullable) INRestaurantOffer * selectedOffer;
 ```
 
-#### Discussion
+## Discussion
 
 If the reservation option selected by the user contained any special offers, this property contains the offer that the user selected. Prior to booking, you create [`INRestaurantReservationBooking`](../inrestaurantreservationbooking.md) objects with the details of the reservation options, including any special offers available at that time. If the user selects one of the options, the system puts the information about the selected offer in this property. You should convey the offer data to the restaurant along with the other details of the user’s reservation.
 

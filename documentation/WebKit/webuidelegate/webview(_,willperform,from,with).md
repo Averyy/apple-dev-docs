@@ -19,7 +19,7 @@ optional func webView(_ webView: WebView!, willPerform action: WebDragSourceActi
 - (void) webView:(WebView *) webView willPerformDragSourceAction:(WebDragSourceAction) action fromPoint:(NSPoint) point withPasteboard:(NSPasteboard *) pasteboard;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked after the last invocation of the [`webView(_:dragSourceActionMaskFor:)`](./webview%28_,dragsourceactionmaskfor%29.md) method, when the dragged content is dropped and the sender is about to perform the drag-source action. The delegate has the opportunity to modify the contents of the object on the pasteboard before completing the drag-source action. No action is taken if you do not implement this method.
 

@@ -19,17 +19,17 @@ func SKIndexGetDocumentCount(_ inIndex: SKIndex!) -> CFIndex
 CFIndex SKIndexGetDocumentCount(SKIndexRef inIndex);
 ```
 
-#### Return Value
+## Return Value
 
 A [`CFIndex`](../CoreFoundation/cfindex.md) object containing the number of document URL objects (of type [`SKDocument`](./skdocument.md)) in the index. On failure, returns 0.
 
-#### Discussion
+## Discussion
 
 Document URL objects (of type [`SKDocument`](./skdocument.md))  added to an index have an indexing state of `kSKDocumentStateIndexed`. See the [`SKDocumentIndexState`](./skdocumentindexstate.md) enumeration. 
 
 Search Kit is thread-safe. You can use separate indexing and searching threads. Your application is responsible for ensuring that no more than one process is open at a time for writing to an index.
 
-##### Special Considerations
+### Special Considerations
 
 In the current implementation of Search Kit, `SKIndexGetDocumentCount` returns the number of documents represented in the on-disk index. If your application has added document URL objects to the index but has not yet called [`SKIndexFlush(_:)`](./api-1450667-skindexflush.md), the document count may not be correct.
 

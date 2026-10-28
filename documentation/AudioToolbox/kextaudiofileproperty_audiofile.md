@@ -24,7 +24,7 @@ var kExtAudioFileProperty_AudioFile: ExtAudioFilePropertyID { get }
 kExtAudioFileProperty_AudioFile
 ```
 
-#### Discussion
+## Discussion
 
 The value is a read-only [`AudioFileID`](./audiofileid.md) object.
 

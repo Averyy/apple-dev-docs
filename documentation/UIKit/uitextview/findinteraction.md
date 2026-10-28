@@ -22,7 +22,7 @@ var findInteraction: UIFindInteraction? { get }
 @property (nonatomic, readonly, nullable) UIFindInteraction * findInteraction;
 ```
 
-#### Discussion
+## Discussion
 
 Set [`isFindInteractionEnabled`](./isfindinteractionenabled.md) to `true` to enable the text view’s built-in find interaction. This method returns `nil` when the interaction isn’t enabled.
 

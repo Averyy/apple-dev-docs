@@ -24,7 +24,7 @@ var cgColor: CGColor! { get set }
 @property (nonatomic, null_unspecified) CGColorRef CGColor;
 ```
 
-#### Discussion
+## Discussion
 
 This property is the equivalent of the [`color`](./color.md) property in macOS.
 

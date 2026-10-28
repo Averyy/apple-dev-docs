@@ -21,7 +21,7 @@ A type that represents a zip archive.
 extern UTType * const UTTypeZIP;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.zip-archive`.
 

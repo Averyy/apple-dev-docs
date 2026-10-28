@@ -21,7 +21,7 @@ Accesses the code unit at the given position.
 subscript(idx: String.UTF16View.Index) -> UTF16.CodeUnit { get }
 ```
 
-#### Overview
+## Overview
 
 The following example uses the subscript to print the value of a string’s first UTF-16 code unit.
 

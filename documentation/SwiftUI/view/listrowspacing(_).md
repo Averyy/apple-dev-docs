@@ -20,7 +20,7 @@ nonisolated
 func listRowSpacing(_ spacing: CGFloat?) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 The following example creates a List with 10 pts of spacing between each row:
 

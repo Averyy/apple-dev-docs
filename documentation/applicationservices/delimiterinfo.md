@@ -21,7 +21,7 @@ typedef struct DelimiterInfo {
 } DelimiterInfo;
 ```
 
-#### Overview
+## Overview
 
 A delimiter information structure defines the characters used to indicate the beginning and end of a command embedded in text. A delimiter can be one or two characters.
 

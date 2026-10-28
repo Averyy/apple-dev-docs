@@ -19,7 +19,7 @@ annotationsInMapRect(mapRect: MapRectData): Annotation[];
 
 - [MapKit JS 5](../mapkit-js-5.md)
 
-#### Return Value
+## Return Value
 
 Returns an array of annotations that fall inside `mapRect`.
 

@@ -16,11 +16,11 @@ Sends a request on the default control endpoint with a default completion timeou
 - (BOOL) sendDeviceRequest:(IOUSBDeviceRequest) request data:(NSMutableData *) data bytesTransferred:(NSUInteger *) bytesTransferred error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 `YES` if the request completes successfully; otherwise, `NO`.
 
-#### Discussion
+## Discussion
 
 This method sends a synchronous request on the default control endpoint, and doesn’t return until the request completes or times out. It uses [`IOUSBHostDefaultControlCompletionTimeout`](../iousbhostdefaultcontrolcompletiontimeout.md) for the completion timeout.
 

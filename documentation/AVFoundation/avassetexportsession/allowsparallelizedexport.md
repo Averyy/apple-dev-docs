@@ -19,7 +19,7 @@ var allowsParallelizedExport: Bool { get set }
 @property (nonatomic) BOOL allowsParallelizedExport;
 ```
 
-#### Discussion
+## Discussion
 
 This value is [`true`](../../Swift/true.md) by default, which indicates that the export session is allowed to expedite its processing by using additional resources in parallel on select Mac systems. If parallelization isn’t achievable, export proceeds as normal.
 

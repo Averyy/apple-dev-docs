@@ -13,7 +13,7 @@
 kINQUIRY_Byte6_ENCSERV_Bit = 6
 ```
 
-#### Discussion
+## Discussion
 
 ENCSERV bit definition.
 

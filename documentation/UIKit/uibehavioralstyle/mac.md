@@ -27,7 +27,7 @@ UIBehavioralStyleMac
 - [Building a desktop-class iPad app](../building-a-desktop-class-ipad-app.md)
 - [Choosing a user interface idiom for your Mac app](../choosing-a-user-interface-idiom-for-your-mac-app.md)
 
-#### Discussion
+## Discussion
 
 This style effects a control’s behavior only when the app’s user interface idiom is [`UIUserInterfaceIdiom.mac`](../uiuserinterfaceidiom/mac.md).
 

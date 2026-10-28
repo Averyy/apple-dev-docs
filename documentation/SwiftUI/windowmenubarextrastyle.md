@@ -15,7 +15,7 @@ A menu bar extra style that renders its contents in a popover-like window.
 struct WindowMenuBarExtraStyle
 ```
 
-#### Overview
+## Overview
 
 Use [`window`](./menubarextrastyle/window.md) to construct this style.
 

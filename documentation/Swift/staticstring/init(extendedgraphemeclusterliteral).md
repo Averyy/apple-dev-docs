@@ -21,7 +21,7 @@ Creates an instance initialized to a single character that is made up of one or 
 init(extendedGraphemeClusterLiteral value: StaticString)
 ```
 
-#### Discussion
+## Discussion
 
 Do not call this initializer directly. It may be used by the compiler when you initialize a static string using an extended grapheme cluster.
 

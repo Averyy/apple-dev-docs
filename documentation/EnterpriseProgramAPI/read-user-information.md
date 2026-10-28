@@ -6,7 +6,7 @@
 
 Get information about a user on your team, such as name, roles, and app visibility.
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

@@ -21,7 +21,7 @@ static let telephonySpeechMetrics: SRSensor
 extern SRSensor const SRSensorTelephonySpeechMetrics;
 ```
 
-#### Discussion
+## Discussion
 
 The [`sample`](../srfetchresult/sample.md) type for this sensor is [`SRSpeechMetrics`](../srspeechmetrics.md).
 

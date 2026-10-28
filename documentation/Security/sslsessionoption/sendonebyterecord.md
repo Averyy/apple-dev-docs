@@ -22,7 +22,7 @@ case sendOneByteRecord
 kSSLSessionOptionSendOneByteRecord
 ```
 
-#### Discussion
+## Discussion
 
 When enabled, record splitting is performed only for TLS 1.0 connections based on a block cipher.
 

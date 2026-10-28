@@ -18,7 +18,7 @@ Posted when the ready for display state changes.
 extern NSString * const MPMoviePlayerReadyForDisplayDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 To check whether a movie player is ready for display, access its [`readyForDisplay`](./mpmovieplayercontroller/readyfordisplay.md) property. The movie player whose display state has changed is available as the object associated with the notification.
 

@@ -23,11 +23,11 @@ func becomeFirstResponder() -> Bool
 - (BOOL) becomeFirstResponder;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if this object is now the first responder; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Call this method when you want the object to be the first responder.
 

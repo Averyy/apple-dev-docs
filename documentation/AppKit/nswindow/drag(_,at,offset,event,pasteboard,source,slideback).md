@@ -21,7 +21,7 @@ func drag(_ image: NSImage, at baseLocation: NSPoint, offset initialOffset: NSSi
 - (void) dragImage:(NSImage *) image at:(NSPoint) baseLocation offset:(NSSize) initialOffset event:(NSEvent *) event pasteboard:(NSPasteboard *) pboard source:(id) sourceObj slideBack:(BOOL) slideFlag;
 ```
 
-#### Discussion
+## Discussion
 
 This method should be invoked only from within a view’s implementation of the [`mouseDown(with:)`](../nsresponder/mousedown%28with%29.md) or [`mouseDragged(with:)`](../nsresponder/mousedragged%28with%29.md) methods (which overrides the version defined in `NSResponder` class). Essentially the same as the `NSView` method of the same name, except that `baseLocation` is given in the `NSWindow` object’s base coordinate system.
 

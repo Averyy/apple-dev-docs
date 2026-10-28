@@ -25,7 +25,7 @@ func CFMessagePortIsRemote(_ ms: CFMessagePort!) -> Bool
 extern Boolean CFMessagePortIsRemote(CFMessagePortRef ms);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `ms` is a remote port, otherwise `false`.
 

@@ -17,7 +17,7 @@ Registry of [`ModelFactory`](./modelfactory.md) trampolines.
 final class ModelFactoryRegistry
 ```
 
-#### Overview
+## Overview
 
 This allows [`loadModel(from:using:id:revision:useLatest:progressHandler:)`](./loadmodel%28from,using,id,revision,uselatest,progresshandler%29.md) to use any [`ModelFactory`](./modelfactory.md) instances available but be defined in the `LLMCommon` layer.  This is not typically used directly – it is called via [`loadModel(from:using:id:revision:useLatest:progressHandler:)`](./loadmodel%28from,using,id,revision,uselatest,progresshandler%29.md):
 

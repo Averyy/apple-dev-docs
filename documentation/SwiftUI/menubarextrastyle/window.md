@@ -17,7 +17,7 @@ static var window: WindowMenuBarExtraStyle { get }
 
 Available when `Self` is `WindowMenuBarExtraStyle`.
 
-#### Discussion
+## Discussion
 
 The styling and layout of controls is similar to that when contained in a normal window, compared to the menu-like layout that the [`menu`](./menu.md) style provides.
 

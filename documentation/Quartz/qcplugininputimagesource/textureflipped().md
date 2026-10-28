@@ -22,7 +22,7 @@ func textureFlipped() -> Bool
 - (BOOL) textureFlipped;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the contents of the texture are flipped (upside-down); [`false`](../../Swift/false.md) otherwise.
 

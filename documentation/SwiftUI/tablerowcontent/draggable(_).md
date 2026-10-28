@@ -20,11 +20,11 @@ Activates this row as the source of a drag and drop operation.
 @preconcurrency func draggable<T>(_ payload: @autoclosure @escaping () -> T) -> some TableRowContent<Self.TableRowValue> where T : Transferable
 ```
 
-#### Return Value
+## Return Value
 
 A row that activates this row as the source of a drag and drop operation.
 
-#### Discussion
+## Discussion
 
 Applying the `draggable(_:)` modifier adds the appropriate gestures for drag and drop to this row.
 

@@ -16,7 +16,7 @@ Synthesizes a low-level mouse-button event on the local machine.
 extern CGError CGPostMouseEvent(CGPoint mouseCursorPosition, boolean_t updateMouseCursorPosition, CGButtonCount buttonCount, boolean_t mouseButtonDown, ...);
 ```
 
-##### Parameters
+### Parameters
 
 - **mouseCursorPosition**: The new coordinates of the mouse in global display space.
 - **updateMouseCursorPosition**: Pass `true` if the on-screen cursor should be moved to the location specified in the `mouseCursorPosition` parameter; otherwise, pass `false`.
@@ -24,11 +24,11 @@ extern CGError CGPostMouseEvent(CGPoint mouseCursorPosition, boolean_t updateMou
 - **mouseButtonDown**: Pass `true` to specify that the primary or left mouse button is down; otherwise, pass `false`.
 - **…**: Zero or more Boolean values that specify whether the remaining mouse buttons are down (`true`) or up (`false`). The second value, if any, should specify the state of the secondary mouse button (right). A third value would specify the state of the center button, and the remaining buttons would be in USB device order.
 
-##### Returns
+### Returns
 
 A result code. See the result codes described in [Quartz Display Services](./quartz-display-services.md).
 
-#### Discussion
+## Discussion
 
 Based on the arguments you pass to this function, the function generates the appropriate mouse-down, mouse-up, mouse-move, or mouse-drag events by comparing the new state with the current state.
 

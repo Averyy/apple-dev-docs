@@ -21,7 +21,7 @@ Encodes this value into the given encoder.
 func encode(to encoder: any Encoder) throws
 ```
 
-#### Discussion
+## Discussion
 
 This function throws an error if any values are invalid for the given encoder’s format.
 

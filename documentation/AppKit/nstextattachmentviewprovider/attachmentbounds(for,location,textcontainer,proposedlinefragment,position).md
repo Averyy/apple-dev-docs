@@ -19,7 +19,7 @@ func attachmentBounds(for attributes: [NSAttributedString.Key : Any], location: 
 - (CGRect) attachmentBoundsForAttributes:(NSDictionary<NSString *,id> *) attributes location:(id<NSTextLocation>) location textContainer:(NSTextContainer *) textContainer proposedLineFragment:(CGRect) proposedLineFragment position:(CGPoint) position;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a [`CGRect`](../../CoreFoundation/cgrect.md) that describes the bounds of the attachment.
 

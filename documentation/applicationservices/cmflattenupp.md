@@ -19,7 +19,7 @@ typealias CMFlattenUPP = CMFlattenProcPtr
 typedef CMFlattenProcPtr CMFlattenUPP;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see the description of the [`CMFlattenProcPtr`](./cmflattenprocptr.md) callback function.
 

@@ -15,7 +15,7 @@ Coordinates for constraining the lookup results.
 coordinate?: CoordinateData;
 ```
 
-#### Discussion
+## Discussion
 
 Tell the geocoder to return results around this coordinate. For example, constrain the geocoder to return results around the coordinate 37.37, -122.04 with `{ coordinate: new mapkit.Coordinate(37.37, -122.04) }`.
 

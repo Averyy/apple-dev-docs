@@ -25,7 +25,7 @@ var device: any MTLDevice { get }
 @property (readonly) id<MTLDevice> device;
 ```
 
-#### Discussion
+## Discussion
 
 The device assigns itself to this property when you create a residency set with its [`makeResidencySet(descriptor:)`](../mtldevice/makeresidencyset%28descriptor%29.md) method.
 

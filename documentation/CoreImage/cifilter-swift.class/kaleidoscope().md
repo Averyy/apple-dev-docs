@@ -24,11 +24,11 @@ class func kaleidoscope() -> any CIFilter & CIKaleidoscope
 + (CIFilter<CIKaleidoscope> *) kaleidoscopeFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The tiled image.
 
-#### Discussion
+## Discussion
 
 This method applies the kaleidoscope tile filter to an image. The effect produces a complex 12-way symmetrical reflected pattern from the input image.
 

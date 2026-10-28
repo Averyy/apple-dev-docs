@@ -25,7 +25,7 @@ class CKFetchShareMetadataOperation
 @interface CKFetchShareMetadataOperation : CKOperation
 ```
 
-#### Overview
+## Overview
 
 Use this operation to fetch the metadata for one or more shares. A share’s metadata contains the share and details about the user’s participation. Fetch metadata when you want to manually accept participation in a share using [`CKAcceptSharesOperation`](./ckacceptsharesoperation.md).
 

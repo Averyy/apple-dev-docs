@@ -24,7 +24,7 @@ var contrastPivot: NSNumber? { get set }
 @property (nonatomic, strong, readwrite, nullable) NSNumber * contrastPivot;
 ```
 
-#### Discussion
+## Discussion
 
 Numeric values range from `0.0` to `1.0`. You can also specify `nil` to have the framework automatically detect the value according to image intensity.
 

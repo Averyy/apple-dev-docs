@@ -23,7 +23,7 @@ Copies all the objects contained in the array to `aBuffer`.
 - (void) getObjects:(ObjectType[]) objects;
 ```
 
-#### Discussion
+## Discussion
 
 The method copies into `aBuffer` all the objects in the array; the size of the buffer must therefore be at least the count of the array multiplied by the size of an object reference, as shown in the following example (note that this is just an example, you should typically not create a buffer simply to iterate over the contents of an array):
 
@@ -42,7 +42,7 @@ for (i = 0; i < count; i++) {
 free(objects);
 ```
 
-##### Special Considerations
+### Special Considerations
 
 This deprecated method is unsafe because it could potentially cause buffer overruns.
 

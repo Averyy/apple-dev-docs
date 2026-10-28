@@ -22,7 +22,7 @@ class let autoISO: Float
 extern const float AVCaptureISOAuto;
 ```
 
-#### Discussion
+## Discussion
 
 This value may be passed to [`setExposureModeCustom(duration:iso:completionHandler:)`](./setexposuremodecustom%28duration,iso,completionhandler%29.md) or [`setExposureModeCustom(lensAperture:duration:iso:completionHandler:)`](./setexposuremodecustom%28lensaperture,duration,iso,completionhandler%29.md) to enable “priority” modes, where some parameters are locked to specified values (given “priority”), whereas the ones specified as “auto” will be continually adjusted by the system to maintain image brightness.
 

@@ -25,7 +25,7 @@ func cblas_dsymm(_ ORDER: CBLAS_ORDER, _ SIDE: CBLAS_SIDE, _ UPLO: CBLAS_UPLO, _
 void cblas_dsymm(const enum CBLAS_ORDER ORDER, const enum CBLAS_SIDE SIDE, const enum CBLAS_UPLO UPLO, const __LAPACK_int M, const __LAPACK_int N, const double ALPHA, const double *A, const __LAPACK_int LDA, const double *B, const __LAPACK_int LDB, const double BETA, double *C, const __LAPACK_int LDC);
 ```
 
-#### Discussion
+## Discussion
 
 This function multiplies `A * B` or `B * A` (depending on the value of `Side`) and multiplies the resulting matrix by `alpha`. It then multiplies matrix `C` by `beta`. It stores the sum of these two products in matrix `C`.
 

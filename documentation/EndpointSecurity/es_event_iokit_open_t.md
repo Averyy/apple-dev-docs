@@ -20,7 +20,7 @@ struct es_event_iokit_open_t
 typedef struct { ... } es_event_iokit_open_t;
 ```
 
-#### Overview
+## Overview
 
 Endpoint Security generates this event when a process calls [`IOServiceOpen(_:_:_:_:)`](../iokit/api-1514515-ioserviceopen.md) in order to open a communications channel with an IOKit driver. The event doesn’t correspond to driver/device communication and provides neither visibility nor access control into devices.
 

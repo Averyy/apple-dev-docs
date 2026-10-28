@@ -26,7 +26,7 @@ var commandQueue: (any MTLCommandQueue)? { get }
 @property (nonatomic, readonly, nullable) id<MTLCommandQueue> commandQueue;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to schedule additional command buffers for the Metal device to execute as part of the render cycle. For example, you can use a compute command encoder to modify the vertex data in a Metal buffer for use by a SCNGeometrySource object.
 

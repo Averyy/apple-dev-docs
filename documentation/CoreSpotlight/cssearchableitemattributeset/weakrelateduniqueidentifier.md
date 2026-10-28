@@ -23,7 +23,7 @@ var weakRelatedUniqueIdentifier: String? { get set }
 @property (copy, nullable) NSString * weakRelatedUniqueIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Unlike the similar [`relatedUniqueIdentifier`](./relateduniqueidentifier.md) property, this property does not link the lifetime of the item to the lifetime of the activity. In particular, deleting the item does not delete the activity.
 

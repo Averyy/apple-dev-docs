@@ -24,7 +24,7 @@ class UIUserNotificationSettings
 @interface UIUserNotificationSettings : NSObject
 ```
 
-#### Overview
+## Overview
 
 Apps that use visible or audible alerts in conjunction with a local or push notification must register the types of alerts they employ. UIKit correlates the information you provide with the user’s preferences to determine what types of alerts your app is allowed to employ.
 

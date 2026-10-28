@@ -5,7 +5,7 @@
 
 Use buffers to pass image data to and from vImage operations.
 
-#### Overview
+## Overview
 
 The [`vImage_Buffer`](./vimage_buffer.md) structure is the fundamental data type for passing image data to and from vImage operations.
 

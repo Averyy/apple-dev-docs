@@ -17,7 +17,7 @@ Result type for queries against the finance store’s orders.
 enum ContainsOrderResult
 ```
 
-#### Overview
+## Overview
 
 These values represent the possible results of the `containsOrder` method you use to check whether an order you specified exists in the `FinanceStore`.
 

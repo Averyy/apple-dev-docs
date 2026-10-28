@@ -6,7 +6,7 @@
 
 Text (not a C string or a pascal string) that is displayed to the user when the embedded movie is being instantiated or if the embedded movie cannot be instantiated.
 
-#### Overview
+## Overview
 
 If this atom is not present, the name of the data reference (typically the file name) is used.
 

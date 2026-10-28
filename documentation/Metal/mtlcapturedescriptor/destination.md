@@ -24,7 +24,7 @@ var destination: MTLCaptureDestination { get set }
 @property (nonatomic, assign) MTLCaptureDestination destination;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`MTLCaptureDestination.developerTools`](../mtlcapturedestination/developertools.md).
 

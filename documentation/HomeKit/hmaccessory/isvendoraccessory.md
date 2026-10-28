@@ -22,7 +22,7 @@ var isVendorAccessory: Bool { get }
 @property (nonatomic, readonly, getter=isVendorAccessory) BOOL vendorAccessory;
 ```
 
-#### Discussion
+## Discussion
 
 Returns YES if the current process is entitled to vendor-level access to this accessory.
 

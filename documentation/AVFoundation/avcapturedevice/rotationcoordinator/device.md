@@ -23,7 +23,7 @@ weak var device: AVCaptureDevice? { get }
 @property (nonatomic, weak, readonly, nullable) AVCaptureDevice * device;
 ```
 
-#### Discussion
+## Discussion
 
 The coordinator updates its [`videoRotationAngleForHorizonLevelCapture`](./videorotationangleforhorizonlevelcapture.md) property by monitoring the device’s physical rotation.
 

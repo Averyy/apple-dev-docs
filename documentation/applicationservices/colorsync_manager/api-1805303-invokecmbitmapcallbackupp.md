@@ -19,7 +19,7 @@ Boolean InvokeCMBitmapCallBackUPP (
 );
 ```
 
-#### Overview
+## Overview
 
 In most cases, you do not need to call this function as ColorSync Manager invokes your callback for you. See the [`CMBitmapCallBackProcPtr`](../cmbitmapcallbackprocptr.md) callback for more information and for a description of the parameters.
 

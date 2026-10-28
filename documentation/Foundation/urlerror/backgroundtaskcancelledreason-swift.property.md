@@ -21,7 +21,7 @@ The reason for canceling a background task.
 var backgroundTaskCancelledReason: URLError.BackgroundTaskCancelledReason? { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the error doesn’t involve cancellation of a background task, this property is `nil`.
 

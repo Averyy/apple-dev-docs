@@ -26,7 +26,7 @@ convenience init(image: UIImage)
 - (instancetype) initWithImage:(UIImage *) image;
 ```
 
-#### Discussion
+## Discussion
 
 This method assumes that the crop rectangle of the image matches the bounds of the image, as defined by the image’s size in points. That is, this method assumes the image you supply is tightly cropped.
 

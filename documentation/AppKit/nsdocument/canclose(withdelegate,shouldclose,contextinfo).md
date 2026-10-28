@@ -19,7 +19,7 @@ func canClose(withDelegate delegate: Any, shouldClose shouldCloseSelector: Selec
 - (void) canCloseDocumentWithDelegate:(id) delegate shouldCloseSelector:(SEL) shouldCloseSelector contextInfo:(void *) contextInfo;
 ```
 
-#### Discussion
+## Discussion
 
 If the document is not dirty, this method immediately calls the `shouldCloseSelector` callback on the specified delegate with [`true`](../../Swift/true.md).
 

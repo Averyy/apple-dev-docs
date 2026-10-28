@@ -18,7 +18,7 @@ The most recent event the monitor records.
 let lastEvent: CLMonitor.Event
 ```
 
-#### Discussion
+## Discussion
 
 The event record contains the specifics of the most recent event, including its state, date, and the specifics of the condition, if applicable.
 

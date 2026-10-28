@@ -27,7 +27,7 @@ class BETextSuggestion
 
 - [Integrating custom browser text views with UIKit](./integrating-custom-browser-text-views-with-uikit.md)
 
-#### Overview
+## Overview
 
 Don’t create instances of this class. The system provides instances to your app through a text view’s [`insert(_:)`](./betextinput/insert%28_%29-5iryn.md) method when it suggests text insertions, for example, an AutoFill suggestion.
 

@@ -21,7 +21,7 @@ A scope that defines translation-specific properties on attributed strings.
 struct TranslationAttributes
 ```
 
-#### Overview
+## Overview
 
 Use this scope to access translation attributes when working with [`AttributedString`](../attributedstring.md) instances.
 

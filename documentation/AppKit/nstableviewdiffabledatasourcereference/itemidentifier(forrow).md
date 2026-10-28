@@ -19,7 +19,7 @@ func itemIdentifier(forRow row: Int) -> ItemIdentifierType?
 - (ItemIdentifierType) itemIdentifierForRow:(NSInteger) row;
 ```
 
-#### Return Value
+## Return Value
 
 The item’s identifier, or `nil` if the method doesn’t find an item at the provided row.
 

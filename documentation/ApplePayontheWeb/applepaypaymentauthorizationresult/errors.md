@@ -16,7 +16,7 @@ A list of custom errors to display on the payment sheet.
 sequence <ApplePayError> errors;
 ```
 
-#### Discussion
+## Discussion
 
 List the errors on the payment sheet for the user to remedy. If there are multiple errors, list the most critical error first. For information about errors, see [`ApplePayError`](../applepayerror.md).
 

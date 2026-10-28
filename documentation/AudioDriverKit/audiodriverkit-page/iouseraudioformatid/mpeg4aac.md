@@ -15,7 +15,7 @@ The MPEG-4 Low Complexity AAC audio object format.
 MPEG4AAC
 ```
 
-#### Discussion
+## Discussion
 
 This format uses no flags.
 

@@ -20,7 +20,7 @@ nonisolated
 init(text: Binding<String>)
 ```
 
-#### Discussion
+## Discussion
 
 Use a [`TextEditor`](../texteditor.md) instance to create a view in which users can enter and edit long-form text.
 

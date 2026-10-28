@@ -27,7 +27,7 @@ static let sortResults: SCNHitTestOption
 extern SCNHitTestOption const SCNHitTestSortResultsKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSNumber`](../../Foundation/nsnumber.md) object containing a Boolean value. The default value is [`true`](../../Swift/true.md), specifying that the array of hit-test results is sorted from nearest to farthest. (When using the [`hitTestWithSegment(from:to:options:)`](../scnnode/hittestwithsegment%28from,to,options%29.md) method, “nearest” is defined as closer to the point specified in the first parameter.) If you specify [`false`](../../Swift/false.md), results are returned in an arbitrary order.
 

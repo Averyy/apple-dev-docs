@@ -21,7 +21,7 @@ case promptDeclined
 SRErrorPromptDeclined
 ```
 
-#### Discussion
+## Discussion
 
 The [`requestAuthorization(sensors:completion:)`](../../srsensorreader/requestauthorization%28sensors,completion%29.md) passes this error into the completion closure if the user declines the prompt by pressing Cancel. The framework also cancels the prompt if you call this function after the user had already responded to the prompt either by approving or denying access to the argument sensors.
 

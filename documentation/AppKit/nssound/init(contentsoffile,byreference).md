@@ -19,7 +19,7 @@ init?(contentsOfFile path: String, byReference byRef: Bool)
 - (instancetype) initWithContentsOfFile:(NSString *) path byReference:(BOOL) byRef;
 ```
 
-#### Return Value
+## Return Value
 
 Initialized `NSSound` instance.
 

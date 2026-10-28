@@ -5,23 +5,23 @@
 
 Icons pertaining to the Rotten Tomatoes rating system.
 
-#### Overview
+## Overview
 
 Rotten Tomatoes ratings are based on reviews by television and movie critics.
 
-##### Fresh
+### Fresh
 
 The fresh rating icon comes in two sizes, which have the resource names `tomato-fresh` and `tomato-fresh-m`. Rotten Tomatoes assigns a fresh rating to media items that have at least 60% positive reviews. Place a fresh rating icon using `<img src="resource://tomato-fresh" />`.
 
 ![A drawing of a tomato.](https://developer.apple.com/tutorials/images/com.apple.TVML/rotten-tomatoes-rating-icons-1@2x.png)
 
-##### Splat
+### Splat
 
 The splat rating icon comes in two sizes, which have the resource names `tomato-splat` and `tomato-splat-m`. Rotten Tomatoes assigns a splat rating to media items that have less than 60% positive reviews. Place a splat rating icon is `<img src="resource://tomato-splat" />`.
 
 ![A drawing of an irregularly shaped green blob.](https://developer.apple.com/tutorials/images/com.apple.TVML/rotten-tomatoes-rating-icons-2@2x.png)
 
-##### Certified Fresh
+### Certified Fresh
 
 The certified fresh rating icon comes in two sizes, which have the resource names `tomato-certified` and `tomato-certified-m`. Rotten Tomatoes assigns a certified fresh rating to media items that meet the following criteria:
 

@@ -28,7 +28,7 @@ var canStartWithMinimumPlayers: Bool { get set }
 
 - [Finding multiple players for a game](../finding-multiple-players-for-a-game.md)
 
-#### Discussion
+## Discussion
 
 If you set this property to [`true`](../../Swift/true.md), players can optionally start a multiplayer game when the minimum number of players accept their invitations. Design your game to progressively add additional players up to the maximum number of players. The default value for this property is [`false`](../../Swift/false.md).
 

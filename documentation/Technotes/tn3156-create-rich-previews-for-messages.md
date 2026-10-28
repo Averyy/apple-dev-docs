@@ -5,7 +5,7 @@
 
 Learn best practices for creating rich text and image previews for display in the Messages app.
 
-#### Overview
+## Overview
 
 The Messages app on iOS and macOS by default shows inline previews for links as gray bubbles with the page title, domain, and small icon belonging to the linked web page:
 
@@ -24,11 +24,11 @@ This appearance results from the following `meta` tags on the webpage:
 
 Read the following sections for tips on how to get rich link previews in Messages.
 
-#### Use consistent metadata for all user agents
+## Use consistent metadata for all user agents
 
 Serve the same metadata to both mobile and desktop versions of the page. Clients shouldn’t have to change the `User-Agent` header to receive useful metadata.
 
-#### Add images to link previews
+## Add images to link previews
 
 Use the `og:image` property to include an image in your link preview. Preview images are displayed large enough to represent the linked page clearly, including relevant details.
 
@@ -36,7 +36,7 @@ Also provide a high-resolution icon in addition to your image. The link preview 
 
 Avoid text in preview images. Images may be displayed at varying sizes depending on context and device, potentially making text unreadable. For best results, keep the image graphical and use other metadata tags for text. Text provided via metadata is also accessible for people using [VoiceOver](https://www.apple.com/accessibility/vision/).
 
-#### Add videos to link previews
+## Add videos to link previews
 
 If you want to display a video in your preview, use a direct link to your video asset via a `meta` tag, rather than a reference to an embeddable video page. With the direct link, the video loads and displays faster, and it uses the system user interface for playback.
 
@@ -44,19 +44,19 @@ If the link preview encounters an `og:video` or `twitter:player:stream` property
 
 Videos that can be streamed but not downloaded, such as [HTTP Live Streaming](https://developer.apple.com/streaming/) (HLS) streams, require the user to tap to start playback. Videos that require embedding HTML will not play inline.
 
-#### Customize titles in link previews
+## Customize titles in link previews
 
 Use the `og:title` property to specify the title of your link preview. Titles should be short and specific enough to distinguish different pages on the same website. For example, product pages should indicate the product name in the title.
 
 Do not put the site name or other branding in the `og:title`. Doing so often leads to duplication of information between the title and other parts of the rich preview, and is semantically incorrect. Use `og:site_name` for the site name instead.
 
-#### Ensure your metadata is reachable
+## Ensure your metadata is reachable
 
 Link previews do not follow `meta` redirects, nor run JavaScript; metadata must be available directly on the linked page. Server-side redirects are followed, however, and are a good alternative.
 
 Pages that require authentication should still have meaningful metadata, without revealing any sensitive content. For pages that require authentication, the main resource should provide metadata for the page to which access is being provided, and not for the authentication page itself. This avoids showing “Sign In” as the title for every page behind an authentication wall.
 
-#### Respect resource usage guidelines
+## Respect resource usage guidelines
 
 - Icons should be square, at least 108 pixels per side.
 - Images should be at least 900 pixels in width.
@@ -65,14 +65,14 @@ Pages that require authentication should still have meaningful metadata, without
 
 These recommendations are guidelines only. Limits may change in the future.
 
-#### Enable social network link previews
+## Enable social network link previews
 
 For preview links to user posts on social network services, specify the text of the user post via the `og:description` property. In addition:
 
 - The page must be configured with a `twitter:card` value of `summary` or `summary_large_image` as described in the [X for Websites](https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/summary) documentation.
 - The page must have a `link` element with a `type` attribute of `application/activity+json` as described in the [ActivityPub protocol](https://www.w3.org/TR/activitypub/) documentation.
 
-#### Revision History
+## Revision History
 
 - **2024-04-30** Republished as TN3156. Added social network information.
 - **2017-09-08** First published as TN2444 “Best Practices for Link Previews in Messages”.

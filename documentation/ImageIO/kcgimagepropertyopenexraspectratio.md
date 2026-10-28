@@ -25,7 +25,7 @@ let kCGImagePropertyOpenEXRAspectRatio: CFString
 extern CFStringRef const kCGImagePropertyOpenEXRAspectRatio;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is a [`CFNumber`](../CoreFoundation/cfnumber.md).
 

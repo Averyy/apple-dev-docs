@@ -27,11 +27,11 @@ func SecTrustEvaluateAsync(_ trust: SecTrust, _ queue: dispatch_queue_t?, _ resu
 OSStatus SecTrustEvaluateAsync(SecTrustRef trust, dispatch_queue_t queue, SecTrustCallback result);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 This function is functionally equivalent to [`SecTrustEvaluate(_:_:)`](./sectrustevaluate%28_,_%29.md) except that it performs evaluation asynchronously and calls a block when evaluation completes. For a detailed discussion of the evaluation process, see [`SecTrustEvaluate(_:_:)`](./sectrustevaluate%28_,_%29.md).
 

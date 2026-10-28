@@ -24,7 +24,7 @@ func reconcilePreferredLanguages() async throws
 
 - [Reducing download and storage demands with localized asset packs](../reducing-download-and-storage-demands-with-localized-asset-packs.md)
 
-#### Discussion
+## Discussion
 
 This method downloads any missing localized asset packs, waits for those downloads to finish, and removes any unneeded ones. If you’ve overridden the preferred languages by setting [`resolvedLanguage`](./resolvedlanguage.md), then this method will respect that. It won’t remove any localized asset packs that you’ve downloaded manually.
 

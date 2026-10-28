@@ -6,31 +6,27 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.fi
 
 # mlx.core.finfo
 
-**class finfo(**args*, ***kwargs*)**
-: Get information on floating-point types.
+```python
+class finfo(*args, **kwargs)
+```
 
-__init__(*self*, *arg: Dtype*, */*) → [None](https://docs.python.org/3/builtins/constants.html#None)
+Get information on floating-point types.
+
+```python
+__init__(self, arg: Dtype, /) → None
+```
 
 Methods
 
-[__init__](#mlx.core.finfo.__init__)(self, arg, /)
+| [__init__](#mlx.core.finfo.__init__)(self, arg, /) |  |
+| --- | --- |
 
 Attributes
 
-`bits`
-The number of bits occupied by the type.
-
-`dtype`
-The [Dtype](mlx.core.Dtype.md#mlx.core.Dtype).
-
-`eps`
-The difference between 1.0 and the next smallest representable number larger than 1.0.
-
-`max`
-The largest representable number.
-
-`min`
-The smallest representable number.
-
-`smallest_normal`
-The smallest positive normal number.
+| `bits` | The number of bits occupied by the type. |
+| --- | --- |
+| `dtype` | The [Dtype](mlx.core.Dtype.md#mlx.core.Dtype). |
+| `eps` | The difference between 1.0 and the next smallest representable number larger than 1.0. |
+| `max` | The largest representable number. |
+| `min` | The smallest representable number. |
+| `smallest_normal` | The smallest positive normal number. |

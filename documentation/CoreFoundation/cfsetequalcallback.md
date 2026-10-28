@@ -25,11 +25,11 @@ typealias CFSetEqualCallBack = (UnsafeRawPointer?, UnsafeRawPointer?) -> DarwinB
 typedef unsigned char (*)(const void *, const void *) CFSetEqualCallBack;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `value1` and `value2` are equal, `false` otherwise.
 
-#### Discussion
+## Discussion
 
 This callback is passed to [`CFSetCreate(_:_:_:_:)`](./cfsetcreate%28_,_,_,_%29.md) in a [`CFSetCallBacks`](./cfsetcallbacks.md) structure.
 

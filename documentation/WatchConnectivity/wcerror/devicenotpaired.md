@@ -19,7 +19,7 @@ An error indicating that the current device doesn’t have a paired counterpart.
 static var deviceNotPaired: WCError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Communication can only occur between paired devices.
 

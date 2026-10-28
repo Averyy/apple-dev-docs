@@ -27,7 +27,7 @@ var subAdministrativeArea: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * subAdministrativeArea;
 ```
 
-#### Discussion
+## Discussion
 
 Subadministrative areas typically correspond to counties or other regions that are then organized into a larger administrative area or state. For example, if the placemark location is Apple’s headquarters, the value for this property would be the string “Santa Clara”, which is the county in California that contains the city of Cupertino.
 

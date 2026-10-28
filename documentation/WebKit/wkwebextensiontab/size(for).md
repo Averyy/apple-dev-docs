@@ -23,7 +23,7 @@ optional func size(for context: WKWebExtensionContext) -> CGSize
 - (CGSize) sizeForWebExtensionContext:(WKWebExtensionContext *) context;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to size of the tab’s web view if not implemented.
 

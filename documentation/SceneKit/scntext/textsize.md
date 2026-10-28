@@ -25,7 +25,7 @@ var textSize: CGSize { get }
 @property (nonatomic, readonly) CGSize textSize;
 ```
 
-#### Discussion
+## Discussion
 
 This property reports the size of the smallest bounding rectangle containing the text.
 

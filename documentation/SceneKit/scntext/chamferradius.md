@@ -25,7 +25,7 @@ var chamferRadius: CGFloat { get set }
 @property (nonatomic) CGFloat chamferRadius;
 ```
 
-#### Discussion
+## Discussion
 
 A value of `0.0` (the default) or less specifies no chamfer—the extruded sides of each character end at right angles to its front and back.
 

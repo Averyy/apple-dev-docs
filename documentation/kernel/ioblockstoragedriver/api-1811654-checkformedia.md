@@ -12,7 +12,7 @@ virtual IOReturn checkForMedia(
  void);
 ```
 
-#### Overview
+## Overview
 
 This method does most of the work in polling for media, first calling the block storage device's reportMediaState method. If reportMediaState reports no change in the media state, kIOReturnSuccess is returned. If the media state has indeed changed, a call is made to mediaStateHasChanged to act on the event.
 

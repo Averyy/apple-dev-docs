@@ -25,7 +25,7 @@ func mediaSelectionOptions(in mediaSelectionGroup: AVMediaSelectionGroup) -> [AV
 - (NSArray<AVMediaSelectionOption *> *) mediaSelectionOptionsInMediaSelectionGroup:(AVMediaSelectionGroup *) mediaSelectionGroup;
 ```
 
-#### Return Value
+## Return Value
 
 The array of media selection options, or an empty array if none are available.
 

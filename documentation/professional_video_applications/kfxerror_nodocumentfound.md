@@ -19,7 +19,7 @@ var kFxError_NoDocumentFound: Int { get }
 kFxError_NoDocumentFound
 ```
 
-#### Discussion
+## Discussion
 
 The plug-in may be loaded in memory but not applied, or it may be applied to a clip or other object that’s not in a document, such as a compound clip in Final Cut Pro.
 

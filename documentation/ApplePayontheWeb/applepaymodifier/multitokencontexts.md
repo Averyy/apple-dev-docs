@@ -20,7 +20,7 @@ sequence <ApplePayPaymentTokenContext> multiTokenContexts;
 
 - [Apple Pay on the Web Version 14 Release Notes](../apple-pay-on-the-web-version-14-release-notes.md)
 
-#### Discussion
+## Discussion
 
 Use multitoken contexts to indicate payments for multiple merchants. This modifier is an array of [`ApplePayPaymentTokenContext`](../applepaypaymenttokencontext.md) objects. The sum of the [`amount`](../applepaypaymenttokencontext/amount.md) of all the payment token contexts must be less than or equal to the grand total amount of the enclosing payment request. Otherwise, the request results in a runtime error and cancels the payment request.
 

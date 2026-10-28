@@ -25,7 +25,7 @@ var kAudioSessionMode_Default: Int { get }
 kAudioSessionMode_Default
 ```
 
-#### Discussion
+## Discussion
 
 When this mode is in use, audio session behavior matches that of iOS versions prior to iOS 5.0. You can use this mode with every audio session category. On devices with more than one built-in microphone, the primary microphone is used.
 

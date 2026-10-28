@@ -21,7 +21,7 @@ Synchronously executes a new activity using the provided function.
 #define os_activity_initiate_f(description, flags, context, function)
 ```
 
-#### Discussion
+## Discussion
 
 This function creates a new activity object implicitly as a child of the current activity object on the current thread. The object persists for the duration of the activity block’s execution.
 

@@ -24,7 +24,7 @@ let HKMetadataKeyInsulinDeliveryReason: String
 extern NSString * const HKMetadataKeyInsulinDeliveryReason;
 ```
 
-#### Discussion
+## Discussion
 
 This key is required for [`insulinDelivery`](./hkquantitytypeidentifier/insulindelivery.md) samples. It takes an [`NSNumber`](../Foundation/nsnumber.md) object containing a [`HKInsulinDeliveryReason`](./hkinsulindeliveryreason.md) value.
 

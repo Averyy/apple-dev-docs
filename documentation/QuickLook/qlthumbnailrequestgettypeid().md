@@ -21,11 +21,11 @@ func QLThumbnailRequestGetTypeID() -> CFTypeID
 extern CFTypeID QLThumbnailRequestGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The type identifier for the `QLThumbnailRequest` opaque type.
 
-#### Discussion
+## Discussion
 
 Thread-safety: This function should be called in the same thread as the thumbnail request is made in; generally, this is the same thread in which the `GenerateThumbnailForURL` callback was invoked.
 

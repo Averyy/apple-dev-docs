@@ -25,7 +25,7 @@ var frontFaceStencil: MTLStencilDescriptor! { get set }
 @property (nonatomic, copy, null_resettable) MTLStencilDescriptor * frontFaceStencil;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`, which indicates the stencil test is disabled for the front-facing primitives. For more information, see [`MTLStencilDescriptor`](../mtlstencildescriptor.md).
 

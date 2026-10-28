@@ -19,7 +19,7 @@ var isFixedPitch: Bool { get }
 @property (readonly, getter=isFixedPitch) BOOL fixedPitch;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when all glyphs have the same advancement or [`false`](../../Swift/false.md) when they do not. Some Japanese fonts encoded with the scheme “EUC12-NJE-CFEncoding” return that they have the same advancement, but actually encode glyphs with one of two advancements, for historical compatibility. You may need to handle such fonts specially for some applications.
 

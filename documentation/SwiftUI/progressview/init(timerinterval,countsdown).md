@@ -24,7 +24,7 @@ init(timerInterval: ClosedRange<Date>, countsDown: Bool = true)
 
 Available when `Label` is `EmptyView` and `CurrentValueLabel` is `DefaultDateProgressLabel`.
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a view that shows continuous progress within a date range. The following example initializes a progress view with a range of `start...end`, where `start` is 30 seconds in the past and `end` is 90 seconds in the future. As a result, the progress view begins at 25 percent complete.
 

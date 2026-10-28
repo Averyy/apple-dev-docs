@@ -21,11 +21,11 @@ Modifies the format style to use the specified scale.
 func scale(_ multiplicand: Double) -> FloatingPointFormatStyle<Value>
 ```
 
-#### Return Value
+## Return Value
 
 A floating-point format style modified to use the specified scale.
 
-#### Discussion
+## Discussion
 
 The following example creates a default [`FloatingPointFormatStyle`](../floatingpointformatstyle.md) for the `en_US` locale, and a second style that scales by a `multiplicand` of `0.001`. It then applies each style to an array of floating-point values. The formatting that the modified style applies expresses each value in terms of one-thousandths.
 

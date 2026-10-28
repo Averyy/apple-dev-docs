@@ -25,7 +25,7 @@ typealias CFRunLoopObserverCallBack = (CFRunLoopObserver?, CFRunLoopActivity, Un
 typedef void (*)(struct __CFRunLoopObserver *, enum CFRunLoopActivity, void *) CFRunLoopObserverCallBack;
 ```
 
-#### Discussion
+## Discussion
 
 You specify this callback when you create the run loop observer with [`CFRunLoopObserverCreate(_:_:_:_:_:_:)`](./cfrunloopobservercreate%28_,_,_,_,_,_%29.md).
 

@@ -19,7 +19,7 @@ class func stroke(_ rect: NSRect)
 + (void) strokeRect:(NSRect) rect;
 ```
 
-#### Discussion
+## Discussion
 
 The path is drawn beginning at the rectangle’s origin and proceeding in a counterclockwise direction. This method strokes the specified path immediately.
 

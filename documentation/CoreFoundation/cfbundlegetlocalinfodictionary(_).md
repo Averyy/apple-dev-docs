@@ -25,7 +25,7 @@ func CFBundleGetLocalInfoDictionary(_ bundle: CFBundle!) -> CFDictionary!
 extern CFDictionaryRefCFBundleGetLocalInfoDictionary(CFBundleRef bundle);
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary containing the key-value pairs in `bundle`’s localized information dictionary (from the `InfoPlist.strings` file for the current locale). Ownership follows the [The Get Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
 

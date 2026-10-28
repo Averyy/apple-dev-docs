@@ -25,7 +25,7 @@ var name: String { get }
 @property (nonatomic, readonly) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 Your custom fragment shader uses this name to identify the variable. SpriteKit automatically declares the uniform variable for your shader.
 

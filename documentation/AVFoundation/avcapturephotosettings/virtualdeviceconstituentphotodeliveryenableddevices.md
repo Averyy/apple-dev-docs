@@ -22,7 +22,7 @@ var virtualDeviceConstituentPhotoDeliveryEnabledDevices: [AVCaptureDevice] { get
 @property (nonatomic, copy) NSArray<AVCaptureDevice *> * virtualDeviceConstituentPhotoDeliveryEnabledDevices;
 ```
 
-#### Discussion
+## Discussion
 
 You can opt in to constituent-device photo delivery by setting this property to any subset of the devices in the virtual device’s [`constituentDevices`](../avcapturedevice/constituentdevices.md) array. The framework calls your [`photoOutput(_:didFinishProcessingPhoto:error:)`](../avcapturephotocapturedelegate/photooutput%28_,didfinishprocessingphoto,error%29.md)callback once for each of the devices you include in the array.
 

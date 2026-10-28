@@ -23,7 +23,7 @@ var minimumFocusDistance: Int { get }
 @property (nonatomic, readonly) NSInteger minimumFocusDistance;
 ```
 
-#### Discussion
+## Discussion
 
 For virtual cameras, like [`builtInDualCamera`](./devicetype-swift.struct/builtindualcamera.md) or [`builtInTripleCamera`](./devicetype-swift.struct/builtintriplecamera.md), this value represents the smallest minimum focus distance of the autofocus-capable cameras that it sources.
 

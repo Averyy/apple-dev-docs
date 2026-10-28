@@ -15,7 +15,7 @@ Invoice billing contact details supplied when updating a budget order.
 object SharedBudgetUpdate.InvoiceDetail
 ```
 
-#### Discussion
+## Discussion
 
 All fields are optional, allowing partial updates to an existing invoice detail record. Only include the fields you want to change.
 

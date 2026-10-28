@@ -19,11 +19,11 @@ init(items: [Any])
 - (instancetype) initWithItems:(NSArray *) items;
 ```
 
-#### Return Value
+## Return Value
 
 A configured sharing service picker.
 
-#### Discussion
+## Discussion
 
 If an item is an [`NSURL`](../../Foundation/nsurl.md) object and contains a file URL (pointing to a video on the local disk for example), the picker shares the content of the file. If the URL is remote, then the picker shares the URL instead of the contents.
 

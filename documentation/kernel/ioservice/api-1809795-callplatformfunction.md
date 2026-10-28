@@ -17,11 +17,11 @@ virtual IOReturn callPlatformFunction(
  void *param4 );
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn code; `kIOReturnSuccess` if the function was successfully executed, `kIOReturnUnsupported` if a service to execute the function could not be found. Other return codes may be returned by the function.
 
-#### Overview
+## Overview
 
 The platform expert or other drivers may implement various functions to control hardware features. `callPlatformFunction` allows any IOService object to access these functions. Normally `callPlatformFunction` is called on a service's provider. The provider services the request or passes it to its provider. The system's IOPlatformExpert subclass catches functions it knows about and redirects them into other parts of the service plane. If the IOPlatformExpert subclass cannot execute the function, the base class is called. The IOPlatformExpert base class attempts to find a service to execute the function by looking up the function name in an IOResources name space. A service may publish a service using `publishResource(functionName, this)`. If no service can be found to execute the function an error is returned.
 

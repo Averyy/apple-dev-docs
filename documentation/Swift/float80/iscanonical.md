@@ -15,7 +15,7 @@ A Boolean value indicating whether the instance’s representation is in its can
 var isCanonical: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 The [IEEE 754 specification](http://ieeexplore.ieee.org/servlet/opac?punumber=4610933) defines a *canonical*, or preferred, encoding of a floating-point value. On platforms that fully support IEEE 754, every `Float` or `Double` value is canonical, but non-canonical values can exist on other platforms or for other types. Some examples:
 

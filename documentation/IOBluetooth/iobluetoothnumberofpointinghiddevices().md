@@ -19,7 +19,7 @@ func IOBluetoothNumberOfPointingHIDDevices() -> Int
 extern long IOBluetoothNumberOfPointingHIDDevices();
 ```
 
-#### Return Value
+## Return Value
 
 Number of HID devices.
 

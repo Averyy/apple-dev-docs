@@ -20,7 +20,7 @@ A trigger collision object.
 case trigger
 ```
 
-#### Discussion
+## Discussion
 
 When a collision object of this type collides with any other object, RealityKit records that contact was made, but does not compute other details, like contact points, normal vectors, and so on. This makes a trigger object more performant when all you need is a Boolean indicator that contact occurred.
 

@@ -26,11 +26,11 @@ func fileAttributes(atPath path: String, traverseLink yorn: Bool) -> [AnyHashabl
 - (NSDictionary *) fileAttributesAtPath:(NSString *) path traverseLink:(BOOL) yorn;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSDictionary` object that describes the POSIX attributes of the file specified at `path`. The keys in the dictionary are described in `File Attribute Keys`. If there is no item at `path`, returns `nil`.
 
-#### Discussion
+## Discussion
 
 This code example gets several attributes of a file and logs them.
 
@@ -65,7 +65,7 @@ if (fileModDate = [fileAttributes fileModificationDate])
     NSLog(@"Modification date: %@\n", fileModDate);
 ```
 
-##### Special Considerations
+### Special Considerations
 
 Because this method does not return error information, it has been deprecated as of OS X v10.5. Use [`attributesOfItem(atPath:)`](./attributesofitem%28atpath%29.md) instead.
 

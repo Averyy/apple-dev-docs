@@ -22,13 +22,13 @@ object TableStyle
 - [Defining and Using Table Styles](../AppleNews/defining-and-using-table-styles.md)
 - [Enhancing Your Articles with Styles](../AppleNews/enhancing-your-articles-with-styles.md)
 
-#### Discussion
+## Discussion
 
 You can style rows, columns, and cells including headers, and also apply conditions to customize your table. For example, you can display a different color for an even row by applying `rows.conditional`.
 
 You can use this object in [`ComponentStyle`](./componentstyle.md).
 
-##### Example
+### Example
 
 ```json
 {

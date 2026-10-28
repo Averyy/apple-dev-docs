@@ -21,7 +21,7 @@ A set of options you can use to refine the behavior of text scanning, and better
 struct Options
 ```
 
-#### Overview
+## Overview
 
 These properties are only hints, so it’s best to not make assumptions about how the framework uses them:
 

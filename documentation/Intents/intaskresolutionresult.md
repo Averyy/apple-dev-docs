@@ -25,7 +25,7 @@ class INTaskResolutionResult
 @interface INTaskResolutionResult : INIntentResolutionResult
 ```
 
-#### Overview
+## Overview
 
 You return an [`INTaskResolutionResult`](./intaskresolutionresult.md) object when resolving parameters containing an [`INTask`](./intask.md) object. Use the creation method that best reflects your ability to resolve the parameter successfully.
 

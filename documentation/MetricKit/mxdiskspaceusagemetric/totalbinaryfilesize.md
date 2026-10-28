@@ -25,7 +25,7 @@ var totalBinaryFileSize: Measurement<UnitInformationStorage> { get }
 @property (strong, readonly, nonnull) NSMeasurement<NSUnitInformationStorage *> * totalBinaryFileSize;
 ```
 
-#### Discussion
+## Discussion
 
 Binary files include the application’s executables, frameworks, and other constant files that are generated during the build process.
 

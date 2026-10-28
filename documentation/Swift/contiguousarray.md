@@ -22,7 +22,7 @@ A contiguously stored array.
 struct ContiguousArray<Element>
 ```
 
-#### Overview
+## Overview
 
 The `ContiguousArray` type is a specialized array that always stores its elements in a contiguous region of memory. This contrasts with `Array`, which can store its elements in either a contiguous region of memory or an `NSArray` instance if its `Element` type is a class or `@objc` protocol.
 

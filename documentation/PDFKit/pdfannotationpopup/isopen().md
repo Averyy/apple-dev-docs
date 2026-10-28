@@ -19,7 +19,7 @@ func isOpen() -> Bool
 - (BOOL) isOpen;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the pop-up is open; [`false`](../../Swift/false.md) otherwise.
 

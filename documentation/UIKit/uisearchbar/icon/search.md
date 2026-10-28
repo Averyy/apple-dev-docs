@@ -23,7 +23,7 @@ case search
 UISearchBarIconSearch
 ```
 
-#### Discussion
+## Discussion
 
 By default, the corresponding icon is a magnifying glass.
 

@@ -25,11 +25,11 @@ class func `default`() -> MPNowPlayingInfoCenter
 + (MPNowPlayingInfoCenter *) defaultCenter;
 ```
 
-#### Return Value
+## Return Value
 
 The now playing info center singleton.
 
-#### Discussion
+## Discussion
 
 The default now playing info center holds Now Playing information for the app that’s designated to receive remote control events. For information on how to configure your app to receive remote control events, see [Handling external player events notifications](../handling-external-player-events-notifications.md).
 

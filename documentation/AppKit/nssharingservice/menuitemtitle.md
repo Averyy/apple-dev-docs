@@ -19,7 +19,7 @@ var menuItemTitle: String { get set }
 @property (copy) NSString * menuItemTitle;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this title is the same as the value of the [`title`](./title.md) property. Your app can modify this value.
 

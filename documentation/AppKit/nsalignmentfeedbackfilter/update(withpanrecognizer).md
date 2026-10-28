@@ -19,7 +19,7 @@ func update(withPanRecognizer panRecognizer: NSPanGestureRecognizer)
 - (void) updateWithPanRecognizer:(NSPanGestureRecognizer *) panRecognizer;
 ```
 
-#### Discussion
+## Discussion
 
 This method informs the feedback filter about a new pan (drag) gesture recognizer event. Call this method instead of [`update(with:)`](./update%28with%29.md) if your event tracking uses gesture recognizers.
 

@@ -19,7 +19,7 @@ var isInFullScreenMode: Bool { get }
 @property (readonly, getter=isInFullScreenMode) BOOL inFullScreenMode;
 ```
 
-#### Discussion
+## Discussion
 
 The value is [`true`](../../Swift/true.md) if the panel is currently open and in full screen mode; otherwise it’s [`false`](../../Swift/false.md).
 

@@ -5,7 +5,7 @@
 
 Reduce the opportunities to treat pointers as data in your code.
 
-#### Overview
+## Overview
 
 The compiler supports type-aware memory allocations, which track the data types you allocate memory for, and returns pointers to memory in different regions for different data types. The typed allocator generates a descriptor for any type of data structure you allocate in your code, for example, a C `struct` or a C++ `class`. When you allocate memory for storing a particular type of data structure, the compiler computes the type’s descriptor and returns memory from a zone dedicated to containing memory with that descriptor.
 
@@ -13,7 +13,7 @@ Because the system records that the memory zone containing the pointer is associ
 
 When you enable the type-aware memory allocator, the compiler automatically rewrites calls to `malloc`, `calloc`, `realloc`, `posix_memalign`, related functions, and the C++ `new` operator, to use type-aware equivalents.
 
-##### Enable the type-aware memory allocator for your target
+### Enable the type-aware memory allocator for your target
 
 Xcode automatically configures your target to use the type-aware memory allocator, in addition to other hardening settings, when you add the Enhanced Security capability. For more information, see [Enabling enhanced security for your app](./enabling-enhanced-security-for-your-app.md).
 
@@ -24,7 +24,7 @@ To enable the type-aware memory allocator without adding the Enhanced Security c
 
 Consider adding the [`com.apple.security.hardened-process.hardened-heap`](../BundleResources/entitlements/com.apple.security.hardened-process.hardened-heap.md) entitlement with the value `YES` to apply additional runtime allocator restrictions.
 
-##### Make type-aware memory allocations
+### Make type-aware memory allocations
 
 You need to call the type-aware version of memory-allocation functions anywhere you use runtime information to determine type before allocating memory. For example, if your app includes a runtime library for a programming language that uses runtime information to determine the type of a pointer. To call the type-aware version of memory-allocation functions yourself, prefix the function name with `malloc_type_`. For example, `malloc` becomes `malloc_type_malloc`.
 
@@ -32,7 +32,7 @@ The `malloc_type_` functions take an additional parameter compared with the regu
 
 If you use `union` types, avoid designing a type that uses the same location for either a pointer or for data, as the typed allocator can’t protect that memory.
 
-##### Create type-aware allocator wrappers
+### Create type-aware allocator wrappers
 
 If your project includes wrapper functions that call the system’s memory-allocation functions, consider whether you can remove the wrappers and call the memory-allocation functions directly, and benefit from the compiler’s automatic rewrites to use typed allocators. If you can’t remove your wrapper functions, write type-aware variants of the wrapper functions and use the `_MALLOC_TYPED` macro to annotate your existing wrapper functions with references to their type-aware variants. The macro takes two parameters:
 

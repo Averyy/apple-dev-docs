@@ -29,7 +29,7 @@ optional func resolveTransactionAmount(for intent: INPayBillIntent) async -> INP
 - (void) resolveTransactionAmountForPayBill:(INPayBillIntent *) intent withCompletion:(void (^)(INPaymentAmountResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the precise amount of the bill. The [`transactionAmount`](../inpaybillintent/transactionamount.md) property of the intent contains information about how much the user wants to pay, which might be a precise amount or might be a relative amount such as the minimum due or the current balance. If a precise amount wasn’t specified, use the details provided by the payee to fill in the precise amount in the [`INPaymentAmount`](../inpaymentamount.md) object you create. For example, if the user asks to pay the minimum due and the payee indicates that the minimum due is $25, include both values in the resulting [`INPaymentAmount`](../inpaymentamount.md) object.
 

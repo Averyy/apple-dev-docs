@@ -5,7 +5,7 @@
 
 Keys that describe the display dimensions of an image buffer mask.
 
-#### Overview
+## Overview
 
 Use [`kCVImageBufferDisplayMaskRectangleKey`](./kcvimagebufferdisplaymaskrectanglekey.md) to attach a dictionary value containing display mask information to the image buffer. [`kCVImageBufferDisplayMaskRectangleStereoLeftKey`](./kcvimagebufferdisplaymaskrectanglestereoleftkey.md) and [`kCVImageBufferDisplayMaskRectangleStereoRightKey`](./kcvimagebufferdisplaymaskrectanglestereorightkey.md) perform the same function for left- and right-eye stereo images.
 

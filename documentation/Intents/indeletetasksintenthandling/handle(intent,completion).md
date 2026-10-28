@@ -30,7 +30,7 @@ func handle(intent: INDeleteTasksIntent) async -> INDeleteTasksIntentResponse
 - (void) handleDeleteTasks:(INDeleteTasksIntent *) intent completion:(void (^)(INDeleteTasksIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to transfer control of deleting the task to your app. Delete the task based on the information in the intent parameter, create a response object with the relevant details, and call the provided completion handler.
 

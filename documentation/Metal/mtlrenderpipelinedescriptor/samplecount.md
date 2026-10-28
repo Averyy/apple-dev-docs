@@ -26,7 +26,7 @@ var sampleCount: Int { get set }
 @property (nonatomic, readwrite) NSUInteger sampleCount;
 ```
 
-#### Discussion
+## Discussion
 
 The render pipeline state honors this property only if the pipeline render targets support multisampling.
 

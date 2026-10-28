@@ -23,7 +23,7 @@ Returns a new transform that results from inverting an existing affine transform
 func inverted() -> AffineTransform3D?
 ```
 
-#### Return Value
+## Return Value
 
 The transform that results from inverting an existing affine transform. The method returns `nil` if the underlying matrix isn’t invertible.
 

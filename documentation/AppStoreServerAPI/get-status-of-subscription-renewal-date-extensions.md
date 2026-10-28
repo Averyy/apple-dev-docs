@@ -14,7 +14,7 @@ Checks whether a renewal date extension request completed, and provides the fina
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 - [Extending the renewal date for auto-renewable subscriptions](./extending-the-renewal-date-for-auto-renewable-subscriptions.md)
 
-#### Discussion
+## Discussion
 
 This endpoint provides basic status information about a request you initiate when you call the [`Extend Subscription Renewal Dates for All Active Subscribers`](./extend-subscription-renewal-dates-for-all-active-subscribers.md) endpoint. Such requests may take hours, or even days, depending on the number of subscribers. This status tells whether the request is complete. If so, it has the total count of successful and failed subscription-renewal-date extensions.
 

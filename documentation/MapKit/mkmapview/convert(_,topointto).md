@@ -40,7 +40,7 @@ func convert(_ coordinate: CLLocationCoordinate2D, toPointTo view: NSView?) -> C
 - (CGPoint) convertCoordinate:(CLLocationCoordinate2D) coordinate toPointToView:(NSView *) view;
 ```
 
-#### Return Value
+## Return Value
 
 The point (in the appropriate view or window coordinate system) corresponding to the specified latitude and longitude value.
 

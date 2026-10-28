@@ -25,7 +25,7 @@ let CBPeripheralManagerOptionShowPowerAlertKey: String
 extern NSString * const CBPeripheralManagerOptionShowPowerAlertKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSNumber`](../Foundation/nsnumber.md). If the key isn’t specified, the default value is [`false`](../Swift/false.md).
 

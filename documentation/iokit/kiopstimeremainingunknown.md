@@ -16,7 +16,7 @@ Possible return value from [`IOPSGetTimeRemainingEstimate`](./api-1523835-iopsge
 #define kIOPSTimeRemainingUnknown
 ```
 
-#### Discussion
+## Discussion
 
 Indicates the system is connected to a limited power source, but the system is still calculating a time remaining estimate. Check for a valid estimate again when the notification kIOPSPowerSourcesNotificationKey fires.
 

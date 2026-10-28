@@ -21,7 +21,7 @@ let tokenizerSource: TokenizerSource?
 
 - [Model Compatibility](../model-compatibility.md)
 
-#### Discussion
+## Discussion
 
 - `.id`: download from a remote provider (requires a [`Downloader`](../downloader.md))
 - `.directory`: load from a local path

@@ -21,7 +21,7 @@ Removes all donated entities for the given context.
 func removeAllEntities(for context: AppEntityContext) async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the removal fails.
 

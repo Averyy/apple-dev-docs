@@ -5,7 +5,7 @@
 
 Display images for specific times within the media timeline by generating images from a video’s frames.
 
-#### Overview
+## Overview
 
 A common requirement when you build video apps is to display images of a video’s content. You may want to show a single thumbnail next to a video in a list, or show several images spanning a video’s duration that you use to build a visual scrubbing or selection user interface. AVFoundation makes it simple to produce images from your app’s video content by using [`AVAssetImageGenerator`](./avassetimagegenerator.md).
 
@@ -13,7 +13,7 @@ A common requirement when you build video apps is to display images of a video�
 
 [`AVAssetImageGenerator`](./avassetimagegenerator.md) is a utility class that creates images from assets that contain one or more video tracks. You can use it to generate an image for a single point in time, or a series of images by passing it an array of times.
 
-##### Configure an image generator
+### Configure an image generator
 
 Create an instance of [`AVAssetImageGenerator`](./avassetimagegenerator.md) by passing it a video asset to retrieve images from. A generator supports creating images from local and remote file–based media, and also from HTTP Live Streaming (HLS) video that provides I-frame only renditions.
 
@@ -31,7 +31,7 @@ An image generator is ready to produce images when you create it, but it also pr
 generator.maximumSize = CGSize(width: 300, height: 0)
 ```
 
-##### Specify the time precision
+### Specify the time precision
 
 By default, an image generator creates images near the time you request, but its actual time may be slightly before or after for efficiency sake. To change the amount of time you allow the generator to deviate from the requested time, set the value of its [`requestedTimeToleranceBefore`](./avassetimagegenerator/requestedtimetolerancebefore.md) and [`requestedTimeToleranceAfter`](./avassetimagegenerator/requestedtimetoleranceafter.md) properties. For example, to allow image generation to occur over a time range that starts no earlier than your requested time, and no later than two seconds after, set its tolerance values as shown below.
 
@@ -43,7 +43,7 @@ generator.requestedTimeToleranceAfter = CMTime(seconds: 2, preferredTimescale: 6
 
 You can request frame-accurate image generation by setting the values of the before and after tolerances to [`zero`](../CoreMedia/cmtime/zero.md). However, configuring the generator this way requires it to perform additional frame decoding, which impacts its image generation speed.
 
-##### Generate images
+### Generate images
 
 Retrieving and decoding the media data that a generator requires to produce images takes an unknown amount of time. It’s not safe to perform image generation synchronously because it blocks the calling thread, which can degrade your app’s user experience and may even result in a crash. Instead, perform image generation asynchronously.
 

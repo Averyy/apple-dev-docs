@@ -25,7 +25,7 @@ let kSecAttrIsExtractable: CFString
 extern CFStringRef const kSecAttrIsExtractable;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFBoolean`](../CoreFoundation/cfboolean.md) and indicates whether the item can be exported from its keychain. Items of class [`kSecClassKey`](./ksecclasskey.md) have this attribute.
 

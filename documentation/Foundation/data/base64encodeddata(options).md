@@ -21,7 +21,7 @@ Returns Base-64 encoded data.
 func base64EncodedData(options: Data.Base64EncodingOptions = []) -> Data
 ```
 
-#### Return Value
+## Return Value
 
 The Base-64 encoded data.
 

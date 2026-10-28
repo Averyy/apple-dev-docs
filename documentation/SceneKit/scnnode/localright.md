@@ -25,7 +25,7 @@ class var localRight: SCNVector3 { get }
 @property (class, nonatomic, readonly) SCNVector3 localRight;
 ```
 
-#### Discussion
+## Discussion
 
 No SceneKit features depend directly on this direction’s definition—it’s simply a natural consequence of recognizing “forward” and “up” directions for use with cameras, directional lighting, and relative orientation operations.
 

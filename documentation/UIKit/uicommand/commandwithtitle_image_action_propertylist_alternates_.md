@@ -19,7 +19,7 @@ Creates a command with the specified title, image, action, property list, and al
 + (instancetype) commandWithTitle:(NSString *) title image:(UIImage *) image action:(SEL) action propertyList:(id) propertyList alternates:(NSArray<UICommandAlternate *> *) alternates;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized command object.
 

@@ -24,7 +24,7 @@ var subtitleLocalizationKey: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * subtitleLocalizationKey;
 ```
 
-#### Discussion
+## Discussion
 
 This property takes precedence over [`subtitle`](./subtitle.md).
 

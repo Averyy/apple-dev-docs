@@ -16,7 +16,7 @@ A structure that defines an account balance query.
 struct AccountBalanceQuery
 ```
 
-#### Overview
+## Overview
 
 Use an `AccountBalanceQuery` to find and filter specific balances in a person’s accounts.
 

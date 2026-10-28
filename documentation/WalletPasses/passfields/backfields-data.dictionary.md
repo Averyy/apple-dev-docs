@@ -21,7 +21,7 @@ object PassFields.BackFields
 
 - [Supporting semantic tags in Wallet passes](../supporting-semantic-tags-in-wallet-passes.md)
 
-#### Discussion
+## Discussion
 
 Use this field to provide additional, noncritical information. This field displays in watchOS 7 and later.
 

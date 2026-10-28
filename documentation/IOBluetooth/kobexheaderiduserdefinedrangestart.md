@@ -17,7 +17,7 @@ var kOBEXHeaderIDUserDefinedRangeStart: OBEXHeaderIdentifiers { get }
 kOBEXHeaderIDUserDefinedRangeStart
 ```
 
-#### Discussion
+## Discussion
 
 Range includes all combos of the upper 2 bits. User defined.
 

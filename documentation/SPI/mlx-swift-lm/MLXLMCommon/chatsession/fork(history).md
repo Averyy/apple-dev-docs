@@ -14,15 +14,15 @@ Create a session that starts from a copy of this session’s cache.
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) func fork(history: [Chat.Message]? = nil) async -> ChatSession
+nonisolated(nonsending)
+func fork(history: [Chat.Message]? = nil) async -> ChatSession
 ```
 
-#### Return Value
+## Return Value
 
 A session that owns a copy of this session’s cache
 
-#### Discussion
+## Discussion
 
 Each session continues without affecting the other. Copying is cheap: they share the cache’s arrays until one of them writes. Once either loads the draft model for speculative decoding, both use it.
 

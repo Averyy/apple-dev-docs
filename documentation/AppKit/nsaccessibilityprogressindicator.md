@@ -19,7 +19,7 @@ protocol NSAccessibilityProgressIndicator : NSAccessibilityGroup
 @protocol NSAccessibilityProgressIndicator <NSAccessibilityGroup>
 ```
 
-#### Overview
+## Overview
 
 Use this protocol when you want a user interface element to behave like a progress indicator—a view that provides visual feedback to the user about the status of an ongoing task—in the accessibility hierarchy.
 

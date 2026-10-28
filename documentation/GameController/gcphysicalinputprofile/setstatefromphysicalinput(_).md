@@ -24,7 +24,7 @@ func setStateFromPhysicalInput(_ physicalInput: GCPhysicalInputProfile)
 - (void) setStateFromPhysicalInput:(GCPhysicalInputProfile *) physicalInput;
 ```
 
-#### Discussion
+## Discussion
 
 If the associated controller isn’t a snapshot, this method does nothing.
 

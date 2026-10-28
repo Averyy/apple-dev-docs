@@ -19,7 +19,7 @@ var allowsVideoFrameAnalysis: Bool { get set }
 @property (nonatomic) BOOL allowsVideoFrameAnalysis;
 ```
 
-#### Discussion
+## Discussion
 
 If the value is `true`, a player view tries to find objects, text, and people when you pause media playback. If it finds an object, the user is able to interact with it using a long press to present a context menu.
 

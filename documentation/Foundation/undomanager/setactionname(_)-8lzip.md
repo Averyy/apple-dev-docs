@@ -25,7 +25,7 @@ func setActionName(_ actionName: String)
 - (void) setActionName:(NSString *) actionName;
 ```
 
-#### Discussion
+## Discussion
 
 If `actionName` is an empty string, the undo manager removes the action name currently associated with the menu command.
 

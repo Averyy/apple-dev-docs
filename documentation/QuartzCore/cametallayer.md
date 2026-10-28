@@ -24,7 +24,7 @@ class CAMetalLayer
 @interface CAMetalLayer : CALayer
 ```
 
-#### Overview
+## Overview
 
 Use a [`CAMetalLayer`](./cametallayer.md) when you want to use Metal to render a layer’s contents; for example, to render into a view. Consider using [`MTKView`](../MetalKit/mtkview.md) instead, because this class automatically wraps a [`CAMetalLayer`](./cametallayer.md) object and provides a higher-level abstraction.
 
@@ -46,7 +46,7 @@ myView.layer = [CAMetalLayer layer];
 
 Adjust the layer’s properties to configure its underlying pixel format and other display behaviors.
 
-##### Rendering the Layer’s Contents
+### Rendering the Layer’s Contents
 
 A [`CAMetalLayer`](./cametallayer.md) creates a pool of Metal drawable objects ([`CAMetalDrawable`](./cametaldrawable.md)). At any given time, one of these drawable objects contains the contents of the layer. To change the layer’s contents, ask the layer for a drawable object, render into it, and then update the layer’s contents to point to the new drawable.
 
@@ -71,13 +71,13 @@ To change the layer’s contents to the new drawable, call the [`present(_:)`](.
 [commandBuffer presentDrawable:drawable];
 ```
 
-##### Keeping References to Drawables
+### Keeping References to Drawables
 
 The layer reuses a drawable only if it isn’t onscreen and there are no strong references to it. Further, if a drawable isn’t available when you call [`nextDrawable()`](./cametallayer/nextdrawable%28%29.md), the system waits for one to become available. To avoid stalls in your app, request a new drawable only when you need it, and release any references to it as quickly as possible after you’re done with it.
 
 For example, before retrieving a new drawable, you might perform other work on the CPU or submit commands to the GPU that don’t require the drawable. Then, obtain the drawable and encode a command buffer to render into it, as described above. After you commit this command buffer, release all strong references to the drawable. If you don’t release drawables correctly, the layer runs out of drawables, and future calls to [`nextDrawable()`](./cametallayer/nextdrawable%28%29.md) return `nil`.
 
-##### Releasing the Drawable
+### Releasing the Drawable
 
 Don’t release the drawable explicitly; instead, embed your render loop within an autorelease pool block:
 

@@ -15,11 +15,11 @@ Attempts to make the process represented by the specified path a trusted accessi
 AXError AXMakeProcessTrusted(CFStringRef executablePath);
 ```
 
-#### Return Value
+## Return Value
 
 An AXError that indicates success or failure.
 
-#### Discussion
+## Discussion
 
 Use this function to make a process a trusted accessibility client. Note: The caller must be running as `root` to successfully call this function. In addition, the caller should relaunch the process after this function returns successfully for the trusted status to take effect.
 

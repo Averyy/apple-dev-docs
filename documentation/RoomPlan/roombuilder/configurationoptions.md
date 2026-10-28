@@ -17,7 +17,7 @@ Options that configure a room builder.
 struct ConfigurationOptions
 ```
 
-#### Overview
+## Overview
 
 The `options` argument to the [`RoomBuilder`](../roombuilder.md) initializer [`init(options:)`](./init%28options%29.md) is of this type.
 

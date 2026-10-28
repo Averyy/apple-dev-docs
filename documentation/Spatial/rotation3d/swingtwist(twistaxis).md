@@ -21,7 +21,7 @@ Returns the rotation’s swing-twist decomposition for a given twist axis.
 func swingTwist(twistAxis: RotationAxis3D) -> (swing: Rotation3D, twist: Rotation3D)
 ```
 
-#### Return Value
+## Return Value
 
 A tuple that contains the swing rotation and the twist rotation.
 

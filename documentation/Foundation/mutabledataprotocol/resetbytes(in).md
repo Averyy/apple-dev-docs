@@ -22,7 +22,7 @@ Replaces the contents of the data buffer with zeros for the provided range.
 mutating func resetBytes<R>(in range: R) where R : RangeExpression, Self.Index == R.Bound
 ```
 
-#### Discussion
+## Discussion
 
 The following example sets the bytes to zero for the bytes identified by the provided range:
 

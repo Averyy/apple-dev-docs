@@ -12,11 +12,11 @@ UInt32 getPowerState(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 The current power state's index into the device's power state array.
 
-#### Overview
+## Overview
 
 A device's "current power state" is updated at the end of each power state transition (e.g. transition from state 1 to state 0, or state 0 to state 2). This transition includes the time spent powering on or off any power plane children. Thus, if a child calls `getPowerState` on its power parent during system wake from sleep, the call will return the index to the device's off state rather than its on state.
 

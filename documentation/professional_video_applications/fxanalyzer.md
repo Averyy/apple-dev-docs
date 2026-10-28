@@ -23,7 +23,7 @@ protocol FxAnalyzer
 
 - [Analyzing media](../Professional-Video-Applications/analyzing-media.md)
 
-#### Overview
+## Overview
 
 Implement this protocol if your plug-in needs to analyze some or all of the frames your plug-in is applied to before being able to render.
 

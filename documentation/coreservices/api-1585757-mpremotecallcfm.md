@@ -15,11 +15,11 @@ Calls a non-reentrant function and blocks the current task.
 void * MPRemoteCallCFM(MPRemoteProcedure remoteProc, void *parameter, MPRemoteContext context);
 ```
 
-#### Return Value
+## Return Value
 
 The value that your remote procedure callback returned. 
 
-#### Discussion
+## Discussion
 
 You use this function to execute code on your application’s main task. The `remoteProc` function is scheduled on the application’s main run loop and run in the default mode (`kCFRunloopDefaultMode`). If you call this function from your application’s main task, the `remoteProc` function is executed immediately in the current mode without blocking the task; otherwise, calling this function blocks the current task until the remote call completes.
 

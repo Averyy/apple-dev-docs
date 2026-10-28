@@ -25,7 +25,7 @@ var topRadius: CGFloat { get set }
 @property (nonatomic) CGFloat topRadius;
 ```
 
-#### Discussion
+## Discussion
 
 The cone is centered in its local coordinate system. For example, the upper surface of a cone whose top radius is `5.0` extends from `-5.0` to `5.0` along the x- and z-axes.
 

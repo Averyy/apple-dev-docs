@@ -26,11 +26,11 @@ func load<T>(_ property: AVAsyncProperty<Self, T>, isolation: isolated (any Acto
 
 - [Loading media data asynchronously](../loading-media-data-asynchronously.md)
 
-#### Return Value
+## Return Value
 
 The loaded property value.
 
-#### Discussion
+## Discussion
 
 Call this method from an asynchronous context to load the value of one or more media properties. The method returns a single result if you load one property value, and returns a tuple if you load multiple properties (up to eight) at the same time.
 

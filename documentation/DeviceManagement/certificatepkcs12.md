@@ -25,7 +25,7 @@ object CertificatePKCS12
 
 - [Implementing Platform SSO during Automated Device Enrollment](./implementing-platform-sso-during-automated-device-enrollment.md)
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.security.pkcs12` as the payload type.
 
@@ -37,7 +37,7 @@ It’s recommended to omit the password in the profile, or do one of the followi
 - Encrypt the profile so that only authorized devices can decrypt it.
 - Use [`SCEP`](./scep.md) or [`ACMECertificate`](./acmecertificate.md) to provision the identity.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -49,7 +49,7 @@ It’s recommended to omit the password in the profile, or do one of the followi
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Allow multiple payloads | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 
-##### Example profile
+### Example profile
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

@@ -24,7 +24,7 @@ let kIOSurfaceElementHeight: CFString
 extern CFStringRef const kIOSurfaceElementHeight;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to 1.
 

@@ -21,7 +21,7 @@ var dashboardWindow: UIWindow { get }
 @property (nonatomic, strong, readonly, nonnull) UIWindow * dashboardWindow;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to access the window CarPlay creates for your dashboard scene. You draw your navigation app’s map content into this window for display in the dashboard.
 

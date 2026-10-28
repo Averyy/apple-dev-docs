@@ -19,7 +19,7 @@ The system uses the best representation for the asset.
 case automatic
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  This may change in future releases.
 

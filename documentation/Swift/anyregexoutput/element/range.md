@@ -21,7 +21,7 @@ The range over which a value was captured, if there was a capture.
 var range: Range<String.Index>? { get }
 ```
 
-#### Discussion
+## Discussion
 
 If nothing was captured, `range` is `nil`.
 

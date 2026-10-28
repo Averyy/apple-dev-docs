@@ -5,7 +5,7 @@
 
 Create web extensions that work in Safari and other browsers.
 
-#### Overview
+## Overview
 
 A Safari web extension adds custom functionality to Safari using JavaScript APIs and common file formats from extensions for Google Chrome, Mozilla Firefox, and Microsoft Edge browsers. While [Safari app extensions](./safari-app-extensions.md) are useful for sharing code between your native macOS app and Safari, you build Safari web extensions primarily on JavaScript, HTML, and CSS, and can repackage them to work in other browsers. You can also use Safari web extensions in [Mac web apps](https://support.apple.com/en-us/104996).
 

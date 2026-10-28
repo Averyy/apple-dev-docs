@@ -5,7 +5,7 @@
 
 Send HTTP status codes to indicate the success of a notification post.
 
-#### Overview
+## Overview
 
 When you set up the endpoints on your server to receive notifications, configure your server to send a response. Use HTTP status codes to indicate whether the App Store server notification post succeeded:
 
@@ -21,7 +21,7 @@ If the App Store server doesn’t receive a success response from your server af
 
 > **Note**:  Retry notifications are available only in the production environment. In the sandbox environment, the App Store server attempts to send the notification one time.
 
-##### Recover from server outages
+### Recover from server outages
 
 If your server misses notifications due to an outage, you can always get up-to-date transaction information by calling [App Store Server API](../AppStoreServerAPI/AppStoreServerAPI.md) endpoints including [`Get Transaction History`](../AppStoreServerAPI/get-transaction-history.md) and [`Get All Subscription Statuses`](../AppStoreServerAPI/get-all-subscription-statuses.md).
 

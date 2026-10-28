@@ -19,7 +19,7 @@ var isFullKeyboardAccessEnabled: Bool { get }
 @property (readonly, getter=isFullKeyboardAccessEnabled) BOOL fullKeyboardAccessEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if Full Keyboard Access is enabled or [`false`](../../Swift/false.md) if it’s not. You might use this value to implement your own key loop or to implement in-control tabbing behavior similar to [`NSTableView`](../nstableview.md). Because of the nature of the preference storage, you won’t be notified of changes to this property if you attempt to observe it through key-value observing; however, accessing this property is fairly inexpensive, so you can access it directly rather than caching it.
 

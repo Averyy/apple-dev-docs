@@ -19,7 +19,7 @@ func loadWindow()
 - (void) loadWindow;
 ```
 
-#### Discussion
+## Discussion
 
 You should never directly invoke this method. Instead, access the [`window`](./window.md) property so the [`windowDidLoad()`](./windowdidload%28%29.md) and [`windowWillLoad()`](./windowwillload%28%29.md) methods are invoked. Subclasses can override this method if the way it finds and loads the window is not adequate. It uses the [`Bundle`](../../Foundation/bundle.md) class’s [`init(for:)`](../../Foundation/bundle/init%28for%29.md) method to get the bundle, using the class of the nib file owner as argument. It then locates the nib file within the bundle and, if successful, loads it; if unsuccessful, it tries to find the nib file in the main bundle.
 

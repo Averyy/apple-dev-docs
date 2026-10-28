@@ -21,7 +21,7 @@ An integer type that uses a fixed size for every instance.
 protocol FixedWidthInteger : BinaryInteger, LosslessStringConvertible where Self.Magnitude : FixedWidthInteger, Self.Magnitude : UnsignedInteger, Self.Stride : FixedWidthInteger, Self.Stride : SignedInteger
 ```
 
-#### Overview
+## Overview
 
 The `FixedWidthInteger` protocol adds binary bitwise operations, bit shifts, and overflow handling to the operations supported by the `BinaryInteger` protocol.
 
@@ -68,7 +68,7 @@ print(squared(y))
 // Prints "nil"
 ```
 
-### Conforming to the FixedWidthInteger Protocol
+## Conforming to the FixedWidthInteger Protocol
 
 To make your own custom type conform to the `FixedWidthInteger` protocol, declare the required initializers, properties, and methods. The required methods that are suffixed with `ReportingOverflow` serve as the customization points for arithmetic operations. When you provide just those methods, the standard library provides default implementations for all other arithmetic methods and operators.
 

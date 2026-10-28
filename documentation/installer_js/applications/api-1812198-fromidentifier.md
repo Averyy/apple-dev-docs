@@ -11,7 +11,7 @@ Provides information about running processes with a given application identifier
 fromIdentifier(bundleID)
 ```
 
-#### Return Value
+## Return Value
 
 An array of dictionaries (associative arrays) describing the running applications identified by `bundleID`.
 

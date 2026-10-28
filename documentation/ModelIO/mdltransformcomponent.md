@@ -24,7 +24,7 @@ protocol MDLTransformComponent : MDLComponent
 @protocol MDLTransformComponent <MDLComponent>
 ```
 
-#### Overview
+## Overview
 
 Transform information—that is, the combination of an object’s position, orientation, shear, and scale—can be static, or in the case of resources that describe animations, time-based. By default, the [`MDLTransform`](./mdltransform.md) class manages transform information for objects loaded from a [`MDLAsset`](./mdlasset.md) instance. By providing your own class that adopts this protocol, you can support other ways to associate transform information with objects—for example, when defining a custom asset file format.
 

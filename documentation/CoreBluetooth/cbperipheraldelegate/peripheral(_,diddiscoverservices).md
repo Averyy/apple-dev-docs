@@ -25,7 +25,7 @@ optional func peripheral(_ peripheral: CBPeripheral, didDiscoverServices error: 
 - (void) peripheral:(CBPeripheral *) peripheral didDiscoverServices:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 Core Bluetooth invokes this method when your app calls the [`discoverServices(_:)`](../cbperipheral/discoverservices%28_%29.md) method. If the peripheral successfully discovers services, you can access them through the peripheral’s [`services`](../cbperipheral/services.md) property. If successful, the `error` parameter is `nil`. If unsuccessful, the `error` parameter returns the cause of the failure.
 

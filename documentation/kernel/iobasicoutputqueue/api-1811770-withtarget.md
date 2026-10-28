@@ -15,7 +15,7 @@ static IOBasicOutputQueue * withTarget(
  UInt32priorities);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOBasicOutputQueue object on success, or 0 otherwise.
 

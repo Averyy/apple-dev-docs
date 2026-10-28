@@ -16,7 +16,7 @@ An object that contains parsed information from a HID input report.
 class IOHIDElement;
 ```
 
-#### Overview
+## Overview
 
 An `IOHIDElement` object contains details about a particular aspect of a HID-related input report. After receiving an input report from a HID device, `IOUserHIDEventService` and `IOHIDInterface` objects divide the report details into `IOHIDElement` objects for easier management. You use these element objects to obtain details about the report, such as the current value reported by the device, how that value is meant to be used, and the minimum and maximum values. For example, a report from a mouse usually contains separate elements for the mouse’s x and y positions.
 

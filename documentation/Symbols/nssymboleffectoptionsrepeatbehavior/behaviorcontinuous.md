@@ -21,7 +21,7 @@ Creates and returns a repeat behavior that prefers to repeat indefinitely, using
 + (instancetype) behaviorContinuous;
 ```
 
-#### Return Value
+## Return Value
 
 A new behavior that prefers to repeat indefinitely with continuous animations.
 

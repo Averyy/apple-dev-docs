@@ -24,7 +24,7 @@ static let ambient: AVAudioSession.Category
 extern AVAudioSessionCategory const AVAudioSessionCategoryAmbient;
 ```
 
-#### Discussion
+## Discussion
 
 This category is also appropriate for “play-along” apps, such as a virtual piano that a user plays while the Music app is playing. When you use this category, audio from other apps mixes with your audio. Screen locking and the Silent switch (on iPhone, the Ring/Silent switch) silence your audio.
 

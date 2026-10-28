@@ -25,7 +25,7 @@ func setResourceValues(_ keyedValues: [URLResourceKey : Any]) throws
 - (BOOL) setResourceValues:(NSDictionary<NSString *,id> *) keyedValues error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method synchronously writes the new resource value out to disk. If an error occurs after some resource properties have been successfully changed, the `userInfo` dictionary in the returned error object contains a `kCFURLKeysOfUnsetValuesKey` key whose value is an array of the resource values that were not successfully set.
 

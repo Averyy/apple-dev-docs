@@ -19,11 +19,11 @@ convenience init?(processIdentifier pid: pid_t)
 + (instancetype) runningApplicationWithProcessIdentifier:(pid_t) pid;
 ```
 
-#### Return Value
+## Return Value
 
 An instance of `NSRunningApplication` for the specified `pid`, or nil if the application has no process identifier.
 
-#### Discussion
+## Discussion
 
 Applications that do not have `PIDs` cannot be returned from this method.
 

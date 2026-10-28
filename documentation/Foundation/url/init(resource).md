@@ -21,7 +21,7 @@ Creates a URL from a resource.
 init?(resource: URLResource)
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to resolve [`URLResource`](../urlresource.md) instances, possibly received from other processes, into [`URL`](../url.md) instances.
 

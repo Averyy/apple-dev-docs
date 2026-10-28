@@ -15,7 +15,7 @@ The document’s category.
 extern NSAttributedStringDocumentAttributeKey NSCategoryDocumentAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSString`](../Foundation/nsstring.md) object containing the document’s category.
 

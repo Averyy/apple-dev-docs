@@ -18,7 +18,7 @@ static var prompt: AccessibilityQuickActionPromptStyle { get }
 
 Available when `Self` is `AccessibilityQuickActionPromptStyle`.
 
-#### Discussion
+## Discussion
 
 The following example shows how to add an [`accessibilityQuickAction(style:content:)`](../view/accessibilityquickaction%28style,content%29.md) to pause and resume a workout.
 

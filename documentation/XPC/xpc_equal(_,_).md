@@ -25,11 +25,11 @@ func xpc_equal(_ object1: xpc_object_t, _ object2: xpc_object_t) -> Bool
 extern bool xpc_equal(xpc_object_t object1, xpc_object_t object2);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the objects are equal, otherwise false. Two objects must be of the same type in order to be equal.
 
-#### Discussion
+## Discussion
 
 For two arrays to be equal, they must contain the same values at the same indexes. For two dictionaries to be equal, they must contain the same values for the same keys.
 

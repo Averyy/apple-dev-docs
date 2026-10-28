@@ -22,7 +22,7 @@ nonisolated
 func axisBehavior(_ behavior: ToolbarItemAxisBehavior) -> some CustomizableToolbarContent
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to control which bar axes a toolbar item can appear in.
 

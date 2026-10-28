@@ -17,7 +17,7 @@ Initializer allowing creation of `MLXArray` from a buffer of `HasDType` values w
 convenience init<T>(_ ptr: UnsafeBufferPointer<T>, _ shape: (some Collection<Int>)? = [Int]?.none) where T : HasDType
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 let image = vImage.PixelBuffer
@@ -26,7 +26,7 @@ let array = image.withUnsafeBufferPointer { ptr in
 }
 ```
 
-##### See Also
+### See Also
 
 - [Initialization](../initialization.md)
 

@@ -21,11 +21,11 @@ Omits a specified number of elements from the base asynchronous sequence, then p
 func dropFirst(_ count: Int = 1) -> AsyncDropFirstSequence<Self>
 ```
 
-#### Return Value
+## Return Value
 
 An asynchronous sequence that drops the first `count` elements from the base sequence.
 
-#### Discussion
+## Discussion
 
 Use `dropFirst(_:)` when you want to drop the first *n* elements from the base sequence and pass through the remaining elements.
 

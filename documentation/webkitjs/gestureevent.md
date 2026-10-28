@@ -16,7 +16,7 @@ The `GestureEvent` class encapsulates information about a multi-touch gesture.
 interface GestureEvent
 ```
 
-#### Overview
+## Overview
 
 `GestureEvent` objects are high-level events that encapsulate the low-level [`TouchEvent`](./touchevent.md) objects. Both `GestureEvent` and `TouchEvent` events are sent during a multi-touch sequence. Gesture events contain scaling and rotation information allowing gestures to be combined, if supported by the platform. If not supported, one gesture ends before another starts. Listen for `GestureEvent` events if you want to respond to gestures only, not process the low-level `TouchEvent` objects.
 

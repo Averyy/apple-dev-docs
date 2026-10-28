@@ -20,7 +20,7 @@ Defines the implementation of all `IndexView` instances within a view hierarchy.
 protocol IndexViewStyle
 ```
 
-#### Overview
+## Overview
 
 To configure the current `IndexViewStyle` for a view hierarchy, use the `.indexViewStyle()` modifier.
 

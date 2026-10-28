@@ -17,7 +17,7 @@ The source domain isn’t in the correct format.
 static var invalidSourceDomain: SKAdTestError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 For more information about formatting source domains, see the `source_domain` property of [`AdImpressionResponse`](../../SKAdNetworkforWebAds/adimpressionresponse.md).
 

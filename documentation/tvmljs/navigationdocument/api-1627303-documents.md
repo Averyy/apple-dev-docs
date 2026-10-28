@@ -15,7 +15,7 @@ The documents currently on the stack.
 readonly attribute Array documents;
 ```
 
-#### Discussion
+## Discussion
 
 Contains an array consisting of all of the documents currently on the stack.
 

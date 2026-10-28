@@ -15,11 +15,11 @@ Get the age-rating declaration for an app info.
 - [App Store Connect API 4.3 release notes](./app-store-connect-api-4-3-release-notes.md)
 - [App Store Connect API 4.4 release notes](./app-store-connect-api-4-4-release-notes.md)
 
-#### Discussion
+## Discussion
 
 Responses for this endpoint include `contests` or `gambling` properties. In an app that has a `FREQUENT_OR_INTENSE` declaration for contests, the age rating for the `AppInfos` is 12+. If you declare a value of true for `gambling`, the age rating for the `AppInfos` is 17+.
 
-##### Read the age-rating declaration
+### Read the age-rating declaration
 
 **Request**:
 

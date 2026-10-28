@@ -19,7 +19,7 @@ func pressureChange(with event: NSEvent)
 - (void) pressureChangeWithEvent:(NSEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked automatically in response to user actions. `event` is the event that initiated the change in pressure.
 

@@ -11,7 +11,7 @@ Create a localized display name and optional custom app name for a subscription 
 
 > **Deprecated**: This endpoint is deprecated. Use [`Create a subscription group localization`](./post-v2-subscriptiongrouplocalizations.md) instead.
 
-#### Discussion
+## Discussion
 
 > **Note**:  Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
 

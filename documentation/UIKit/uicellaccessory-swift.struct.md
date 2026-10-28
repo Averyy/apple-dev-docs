@@ -19,7 +19,7 @@ An accessory in a collection view list cell.
 struct UICellAccessory
 ```
 
-#### Overview
+## Overview
 
 A cell accessory is a visual element that you can add to a list cell ([`UICollectionViewListCell`](./uicollectionviewlistcell.md)). You use a cell accessory as a visual indicator or to let a user perform a cell-specific action like selecting, reordering, or deleting the cell. A cell accessory appears either on the leading or the trailing edge of a cell, outside of the cell’s content view.
 

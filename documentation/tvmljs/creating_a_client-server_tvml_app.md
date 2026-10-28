@@ -10,11 +10,11 @@ Display and navigate between TVML documents on Apple TV by retrieving and parsin
 - tvOS 12.1+
 - Xcode 11.3+
 
-#### Overview
+## Overview
 
 A TVML app creates a client-server connection to retrieve information stored on a server. The retrieved information is parsed into a document and displayed on a TV screen. Use this sample code project to create your first client-server app. The app uses JavaScript to load an initial TVML document from a local server. The user navigates between two images and the app loads a new document after the user selects one of the images. For detailed information about the TVML framework, see [TVML](../TVML/TVML.md).
 
-##### Configure the Sample Code Project
+### Configure the Sample Code Project
 
 Before running the app, you need to set up a local server on your machine:
 
@@ -26,7 +26,7 @@ Before running the app, you need to set up a local server on your machine:
 
 After testing the sample app in Apple TV Simulator, you can close the local server by pressing Control-C in Terminal. Closing the Terminal window also kills the server.
 
-##### Display the Initial Document
+### Display the Initial Document
 
 The `application.js` file controls the app. The app creates two global variables that contain URL information. When the app launches, the app populates the variables with information contained in the `AppDelegate.swift` file and retrieves the first document from the server.
 
@@ -42,7 +42,7 @@ App.onLaunch = function(options) {
 }
 ```
 
-##### Retrieve a TVML Document From the Server
+### Retrieve a TVML Document From the Server
 
 While you can’t control a user’s internet access, you can control what they see on the screen. To avoid showing a blank screen, create and display a loading document to provide users with a visual cue that your app is working, despite not having a connection to the server.
 
@@ -73,7 +73,7 @@ function getDocument(extension) {
 }
 ```
 
-##### Replace the Previous Document
+### Replace the Previous Document
 
 After the user selects a new document, push that document onto the navigation stack. This places the new document at the top of the current document stack and displays it. When the user presses the Menu button on the Siri Remote, the system removes the current document from the stack and displays the previous document. Doing this causes the previous loading document to display when you want the user to see the selection document.
 
@@ -86,7 +86,7 @@ function pushPage(page, loading) {
 }
 ```
 
-##### Select a New TVML Document
+### Select a New TVML Document
 
 Each file on your server contains the information to display a single document onscreen. In this app, the initial document contains information that displays two images, each with their own title. Each image is a [Lockup Elements](../TVML/lockup-elements.md) element. When the user selects a lockup, the app uses the `onselect` attribute to call the `getDocument` method. The lockup passes the URL for the next document to the `getDocument` method.
 

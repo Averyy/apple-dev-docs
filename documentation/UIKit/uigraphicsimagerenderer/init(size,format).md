@@ -23,11 +23,11 @@ init(size: CGSize, format: UIGraphicsImageRendererFormat)
 - (instancetype) initWithSize:(CGSize) size format:(UIGraphicsImageRendererFormat *) format;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized renderer.
 
-#### Discussion
+## Discussion
 
 Use this initializer to create an image renderer when you want to override the default format for the current device. Provide the size of the images you want to create, and an instance of [`UIGraphicsImageRendererFormat`](../uigraphicsimagerendererformat.md) with the required configuration.
 

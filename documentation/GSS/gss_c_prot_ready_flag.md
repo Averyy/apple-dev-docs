@@ -23,7 +23,7 @@ var GSS_C_PROT_READY_FLAG: Int32 { get }
 #define GSS_C_PROT_READY_FLAG
 ```
 
-#### Discussion
+## Discussion
 
 Establishing a context requires a back and forth over a network connection between initiator and acceptor, typically involving multiple calls to the [`gss_init_sec_context(_:_:_:_:_:_:_:_:_:_:_:_:_:)`](./gss_init_sec_context%28_,_,_,_,_,_,_,_,_,_,_,_,_%29.md) and [`gss_accept_sec_context(_:_:_:_:_:_:_:_:_:_:_:)`](./gss_accept_sec_context%28_,_,_,_,_,_,_,_,_,_,_%29.md) functions. The `GSS_C_PROT_READY_FLAG` flag, when set by either function as a return flag, indicates that although the context is not yet ready, the forthcoming availability of confidentiality and integrity services is already known and reported by the [`GSS_C_CONF_FLAG`](./gss_c_conf_flag.md) and [`GSS_C_INTEG_FLAG`](./gss_c_integ_flag.md) flags, respectively. This allows you to begin using the various protection functions if reported as available, without waiting for the context to complete.
 

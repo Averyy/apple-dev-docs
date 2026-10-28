@@ -19,7 +19,7 @@ The visual prominence of a badge.
 struct BadgeProminence
 ```
 
-#### Overview
+## Overview
 
 Badges can be used for different kinds of information, from the passive number of items in a container to the number of required actions. The prominence of badges in Lists can be adjusted to reflect this and be made to draw more or less attention to themselves.
 

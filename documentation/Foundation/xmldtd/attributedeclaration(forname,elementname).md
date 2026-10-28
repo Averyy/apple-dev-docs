@@ -20,11 +20,11 @@ func attributeDeclaration(forName name: String, elementName: String) -> XMLDTDNo
 - (NSXMLDTDNode *) attributeDeclarationForName:(NSString *) name elementName:(NSString *) elementName;
 ```
 
-#### Return Value
+## Return Value
 
 An autoreleased [`XMLDTDNode`](../xmldtdnode.md) object, or `nil` if there is no matching attribute-list declaration.
 
-#### Discussion
+## Discussion
 
 For example, in the attribute-list declaration:
 

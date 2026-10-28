@@ -21,7 +21,7 @@ The transition is being applied to a view that is in the view hierarchy.
 case identity
 ```
 
-#### Discussion
+## Discussion
 
 In this phase, a transition should show its steady state appearance, which will generally not make any visual change to the view.
 

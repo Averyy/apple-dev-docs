@@ -19,7 +19,7 @@ class let didChangeScreenNotification: NSNotification.Name
 extern NSNotificationName NSWindowDidChangeScreenNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the `NSWindow` object that has changed screens. This notification doesn’t contain a `userInfo` dictionary.
 

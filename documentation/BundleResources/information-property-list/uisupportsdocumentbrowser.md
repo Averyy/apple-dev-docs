@@ -16,7 +16,7 @@ A Boolean value indicating whether the app is a document-based app.
 - **Name**: `UISupportsDocumentBrowser` (Supports Document Browser)
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 To allow other apps to open and edit the files stored in your app’s `Documents` folder, set this key to `YES`. This key also lets users set the app’s default save location in Settings.
 

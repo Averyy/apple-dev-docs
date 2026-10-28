@@ -23,7 +23,7 @@ struct ConvertedBezierPoint
 
 - [Importing Bézier path data into PencilKit](../importing-external-drawing-data-into-pencilkit.md)
 
-#### Overview
+## Overview
 
 `ConvertedBezierPoint` values are passed one at a time to the `pointProvider` closure of [`init(bezierPath:creationDate:pointProvider:)`](./init%28bezierpath,creationdate,pointprovider%29.md). Use the provided location, index, and segment information to initialize each `PKStrokePoint` with appropriate size, opacity, force, and other drawing properties.
 

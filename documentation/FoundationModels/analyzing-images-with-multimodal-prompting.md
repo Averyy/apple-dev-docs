@@ -5,7 +5,7 @@
 
 Analyze and extract information from images by combining them with descriptive text prompts.
 
-#### Overview
+## Overview
 
 The Foundation Models framework supports using text and images in your prompts, giving you the ability to analyze and interpret visual content. When paired with tool calling, this *multimodal prompting* approach makes it possible to build rich content analysis workflows and apps that perform sophisticated image analysis tasks, such as:
 
@@ -14,7 +14,7 @@ The Foundation Models framework supports using text and images in your prompts, 
 - Generating accessibility descriptions for images that you share on the web.
 - Identifying a list of items within a photo of a fridge to generate recipe ideas.
 
-#### Prompt an on-device model with images
+## Prompt an on-device model with images
 
 When including an image with a text prompt, the model processes both the visual content and any accompanying text to generate a response. This multimodal approach allows the model to interpret visual details that are difficult to convey through text alone.
 
@@ -24,7 +24,7 @@ To improve the results, consider the following strategies when including an imag
 - Consider whether preprocessing is necessary before passing an image to an on-device model, such as isolating a region of interest.
 - Use the [`Generable`](./generable.md) protocol to constrain responses to specific formats, making it easier to extract structured data or classify images.
 
-#### Include images in your request
+## Include images in your request
 
 The framework supports several image types to include in your prompts, like [`CGImage`](../CoreGraphics/cgimage.md), [`CIImage`](../CoreImage/ciimage.md), [`CVPixelBuffer`](../CoreVideo/cvpixelbuffer.md), and image URLs.
 
@@ -67,7 +67,7 @@ Here are three comparisons between the two images:
 
 Perform image analysis with the on-device model first. If you determine that more reasoning or context is necessary for the task, initialize [`LanguageModelSession`](./languagemodelsession.md) using [`PrivateCloudComputeLanguageModel`](./privatecloudcomputelanguagemodel.md).
 
-#### Define custom types to perform image analysis
+## Define custom types to perform image analysis
 
 For more structured results, use the [`Generable`](./generable.md) protocol to create an enumeration with specific labels you use to identify the contents of an image. This approach is useful when you need to classify images into predefined categories, ensuring the model returns one of your specified labels rather than free-form text. For example, the following prompts the model to identify which label best represents the image:
 
@@ -98,7 +98,7 @@ func classifyImage(_ image: CGImage) async throws -> ImageLabel {
 
 For more information on guided generation, see [Generating Swift data structures with guided generation](./generating-swift-data-structures-with-guided-generation.md).
 
-#### Use built-in image analysis tools
+## Use built-in image analysis tools
 
 The [Vision](../Vision/Vision.md) framework provides optical character recognition (OCR) and barcode tools that you can add to a session in the Foundation Models framework. Use [`BarcodeReaderTool`](../Vision/barcodereadertool.md) to detect barcodes and interpret their encoded content, and [`OCRTool`](../Vision/ocrtool.md) to extract text from images.
 
@@ -126,7 +126,7 @@ func analyzeBarcodeImage(_ image: CGImage) async {
 }
 ```
 
-#### Create a custom tool to perform image analysis
+## Create a custom tool to perform image analysis
 
 Provide custom image processing to the model by creating a custom tool. When you create a tool, you specify the arguments that the model provides when calling your tool. When defining your arguments, use [`ImageReference`](./imagereference.md) to receive a reference to your image:
 

@@ -24,7 +24,7 @@ init(selection: Binding<SelectionValue>, @ContentBuilder content: () -> Content,
 
 Available when `Label` conforms to `View`, `SelectionValue` conforms to `Hashable`, and `Content` conforms to `View`.
 
-#### Discussion
+## Discussion
 
 The following example shows a picker with a current value label that only displays the title of the currently selected song:
 

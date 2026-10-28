@@ -22,7 +22,7 @@ func addItem(with URL: URL, title: String?, previewText: String?) throws
 - (BOOL) addReadingListItemWithURL:(NSURL *) URL title:(NSString *) title previewText:(NSString *) previewText error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method when the user chooses to add to the Reading List.
 

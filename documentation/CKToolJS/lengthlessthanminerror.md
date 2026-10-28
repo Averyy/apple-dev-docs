@@ -15,7 +15,7 @@ An error a validator emits when the length property of the value given is less t
 interface LengthLessThanMinError
 ```
 
-#### Overview
+## Overview
 
 Extends `LengthError`.
 

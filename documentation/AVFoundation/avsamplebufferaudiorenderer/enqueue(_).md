@@ -27,7 +27,7 @@ func enqueue(_ sampleBuffer: CMSampleBuffer)
 - (void) enqueueSampleBuffer:(CMSampleBufferRef) sampleBuffer;
 ```
 
-#### Discussion
+## Discussion
 
 The audio in the sample buffer is rendered at the sample buffer’s output presentation timestamp, as interpreted by the timebase.
 

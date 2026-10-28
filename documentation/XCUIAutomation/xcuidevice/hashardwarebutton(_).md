@@ -25,11 +25,11 @@ func hasHardwareButton(_ button: XCUIDevice.Button) -> Bool
 - (BOOL) hasHardwareButton:(XCUIDeviceButton) button;
 ```
 
-#### Return Value
+## Return Value
 
 `True` if the device has this type of button, otherwise `False`.
 
-#### Discussion
+## Discussion
 
 Use this method to check if the device supports the particular button type you provide.
 

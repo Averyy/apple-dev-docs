@@ -10,7 +10,7 @@ Securely support custom camera devices in macOS.
 - Mac Catalyst 13.0+
 - macOS 10.7+
 
-#### Overview
+## Overview
 
 Use the Core Media I/O framework to enable support for custom camera devices in macOS. Starting in macOS 12.3, the framework builds on [System Extensions](../SystemExtensions/SystemExtensions.md) to enable you to support custom devices while maintaining system privacy and security protections. The system prevents apps from loading extension code into their process to ensure that they can’t bypass macOS privacy protections or mask their identity.
 

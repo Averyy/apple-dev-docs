@@ -23,7 +23,7 @@ The column in the source file.
 var column: Int { get set }
 ```
 
-#### Discussion
+## Discussion
 
 > **Precondition**: The value of this property must be greater than `0`.
 

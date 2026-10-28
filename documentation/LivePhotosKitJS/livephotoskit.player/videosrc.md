@@ -15,7 +15,7 @@ A reference to the source of the video component of this Live Photo.
 attribute String,ArrayBuffer videoSrc;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to one of three types of value:
 

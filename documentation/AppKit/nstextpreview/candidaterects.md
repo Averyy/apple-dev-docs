@@ -19,7 +19,7 @@ var candidateRects: [NSValue] { get }
 @property (readonly) NSArray<NSValue *> * candidateRects;
 ```
 
-#### Discussion
+## Discussion
 
 At initialization time, you set this property to an array of [`NSValue`](../../Foundation/nsvalue.md) objects, each of which contains an [`NSRect`](../../Foundation/nsrect.md) in the coordinate space of the target view. Each rectangle contains a bounding rectangle for text that is part of the preview. When applying visual effects, the system adds highlights only to the text in the specified rectangles.
 

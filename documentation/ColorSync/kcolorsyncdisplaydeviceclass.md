@@ -20,7 +20,7 @@ var kColorSyncDisplayDeviceClass: Unmanaged<CFString>!
 extern CFStringRef kColorSyncDisplayDeviceClass;
 ```
 
-#### Discussion
+## Discussion
 
 The string that represents a display device is `mntr`.
 

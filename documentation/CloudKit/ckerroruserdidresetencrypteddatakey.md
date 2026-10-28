@@ -29,7 +29,7 @@ extern NSString * const CKErrorUserDidResetEncryptedDataKey;
 
 - [Encrypting User Data](./encrypting-user-data.md)
 
-#### Discussion
+## Discussion
 
 An [`NSNumber`](../Foundation/nsnumber.md) that represents a Boolean value you use to determine whether a user action causes CloudKit to delete a record zone. CloudKit adds this key to the error’s `userInfo` dictionary when the error code is [`CKError.Code.zoneNotFound`](./ckerror/code/zonenotfound.md).
 

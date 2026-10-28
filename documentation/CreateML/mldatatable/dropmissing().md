@@ -20,7 +20,7 @@ Creates a subset of the table by removing any row missing one or more values.
 func dropMissing() -> MLDataTable
 ```
 
-#### Return Value
+## Return Value
 
 A new data table.
 

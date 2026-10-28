@@ -26,7 +26,7 @@ func onSubmit(of triggers: SubmitTriggers = .text, _ action: @escaping () -> Voi
 
 - [Managing search interface activation](../managing-search-interface-activation.md)
 
-#### Discussion
+## Discussion
 
 Different views may have different triggers for the provided action. A [`TextField`](../textfield.md), or [`SecureField`](../securefield.md) will trigger this action when the user hits the hardware or software return key. This modifier may also bind this action to a default action keyboard shortcut. You may set this action on an individual view or an entire view hierarchy.
 

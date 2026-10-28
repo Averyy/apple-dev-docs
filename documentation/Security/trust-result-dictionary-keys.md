@@ -5,7 +5,7 @@
 
 Recognize the keys that appear in a dictionary containing information about an evaluated certification chain.
 
-#### Overview
+## Overview
 
 These keys appear in the dictionary returned from a call to the [`SecTrustCopyResult(_:)`](./sectrustcopyresult%28_%29.md) function and provide information about the evaluated trust.
 

@@ -15,7 +15,7 @@ A format for a side-chain of 32-bit floating-point data.
 ParameterValueStream
 ```
 
-#### Discussion
+## Discussion
 
 The data in this kind of stream flows to or from an Audio Unit to send a high density of parameter value control information. An Audio Unit typically runs a [`ParameterValueStream`](./parametervaluestream.md) at the sample rate of the AudioUnit’s audio data. It can also use some integer divisor of this rate, such as a half or a third of the audio’s sample rate. The sample rate of the [`IOUserAudioStreamBasicDescription`](../iouseraudiostreambasicdescription.md) describes this relationship.
 

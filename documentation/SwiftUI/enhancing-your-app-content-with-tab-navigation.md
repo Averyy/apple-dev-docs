@@ -14,7 +14,7 @@ Keep your app content front and center while providing quick access to navigatio
 - tvOS 18.0+
 - visionOS 2.0+
 
-#### Overview
+## Overview
 
 [Destination Video](../visionOS/destination-video.md) adopts the [`sidebarAdaptable`](./tabviewstyle/sidebaradaptable.md) tab view style, which optimizes the content browsing experience for each platform.
 
@@ -22,7 +22,7 @@ Starting in iPadOS 18, the tab bar appears on the top of the screen floating ove
 
 [Video: A screen recording of Destination Video on iPad that shows the tab bar turning into a sidebar, then becoming editable.](https://developer.apple.com/tutorials/videos/com.apple.SwiftUI/Enhancing-your-app-content-with-tab-navigation-hero-video.mp4)
 
-##### Create a tab bar
+### Create a tab bar
 
 You can create a [`TabView`](./tabview.md) with an explicit selection binding using the [`init(selection:content:)`](./tabview/init%28selection,content%29.md) initializer. To add a tab within a `TabView` initialize a [`Tab`](./tab.md). Destination Video uses the [`init(_:systemImage:value:content:)`](./tab/init%28_,systemimage,value,content%29.md) initializer to create each tab:
 
@@ -71,7 +71,7 @@ Pinned tabs appear at the trailing edge of the tab bar, depending on the preferr
 
 ![A screenshot of the tab bar with the a search tab highlighted.  The tab bar has an icon on the left that turns it into a sidebar, followed by the tabs: Watch Now, Library, New, Favorites, and Search, which appears as a magnifying glass.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Enhancing-your-app-content-with-tab-navigation-search@2x.png)
 
-##### Build hierarchy in tab view
+### Build hierarchy in tab view
 
 You can use a [`TabSection`](./tabsection.md) to declare a secondary tab hierarchy within a `TabView`. For example Destination Video uses the [`init(content:header:)`](./tabsection/init%28content,header%29.md) initializer to create tab sections.
 
@@ -126,7 +126,7 @@ TabSection {
 }
 ```
 
-##### Make the tab bar adaptable
+### Make the tab bar adaptable
 
 Tab bars with the [`sidebarAdaptable`](./tabviewstyle/sidebaradaptable.md) style allow people to toggle between the sidebar and tab bar. This lets your app leverage the convenience of being able to quickly navigate to top-level destinations within a compact tab bar while providing rich navigation hierarchy and destination options in the sidebar.
 
@@ -169,7 +169,7 @@ A `TabView` appears as an ornament in visionOS. Tab section headers appear in th
 
 > **Note**: By default, contents in a `ScrollView(.horizontal)` scroll under the sidebar when you use the `sidebarAdaptable` tab view style in iPadOS. You can prevent the content from scrolling under the sidebar by adding the [`clipped(antialiased:)`](./view/clipped%28antialiased%29.md) or [`clipShape(_:style:)`](./view/clipshape%28_,style%29.md) modifier to `ScrollView`.
 
-##### Enable customization
+### Enable customization
 
 Tab view customization allows people to enter edit mode and personalize the tab bar. The customization in Destination Video allows people to:
 
@@ -209,7 +209,7 @@ Tab("Watch Now", systemImage: "play", value: .watchNow) {
 
 ![A screenshot of a tab view in edit mode on iPad.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Enhancing-your-app-content-with-tab-navigation-customization@2x.png)
 
-##### Set the default visibility for tabs
+### Set the default visibility for tabs
 
 In iPadOS, if there are too many tabs to fit in the screen, the system collapses the tabs that don’t fit and enables scrolling. However, having too many tabs can make it harder for people to locate the tab they’re looking for and navigate your app. Consider limiting the number of tabs so they all fit in the tab bar. The [`defaultVisibility(_:for:)`](./tabcontent/defaultvisibility%28_,for%29.md) modifier sets the default visibility of a `Tab` or `TabSection`.
 
@@ -248,19 +248,19 @@ If you enable customization, the [`defaultVisibility(_:for:)`](./tabcontent/defa
 
 For design guidance, see Human Interface Guidelines >  [Tab bars](https://developer.apple.com/design/human-interface-guidelines/tab-bars).
 
-#### See Also
+## See Also
 
-###### Related samples
+#### Related samples
 
 - [Destination Video](../visionOS/destination-video.md)
   Leverage SwiftUI to build an immersive media experience in a multiplatform app.
 
-###### Related articles
+#### Related articles
 
 - [Elevating your iPad app with a tab bar and sidebar](../UIKit/elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md)
   Provide a compact, ergonomic tab bar for quick access to key parts of your app, and a sidebar for in-depth navigation.
 
-###### Related videos
+#### Related videos
 
 - [Elevate your tab and sidebar experience in iPadOS](https://developer.apple.com/videos/play/wwdc2024/10147)
   iPadOS 18 introduces a new navigation system that gives people the flexibility to choose between using a tab bar or sidebar. The newly redesigned tab bar provides more space for content and other functionality. Learn how to use SwiftUI and UIKit to enable customization features – like adding, removing and reordering tabs – to enable a more personal touch in your app.

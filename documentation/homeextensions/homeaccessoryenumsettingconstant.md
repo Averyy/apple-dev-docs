@@ -17,7 +17,7 @@ A type whose cases are the options for an enumeration setting.
 protocol HomeAccessoryEnumSettingConstant : CaseIterable, Hashable, RawRepresentable where Self.RawValue : LosslessStringConvertible
 ```
 
-#### Overview
+## Overview
 
 For example, the following code defines an enumeration that has a string raw value:
 

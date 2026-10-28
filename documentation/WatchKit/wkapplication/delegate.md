@@ -19,7 +19,7 @@ weak var delegate: (any WKApplicationDelegate)? { get }
 @property (nonatomic, weak, readonly, nullable) id<WKApplicationDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate object is an object that conforms to the [`WKApplicationDelegate`](../wkapplicationdelegate.md) protocol. You provide the delegate object and use it to manage lifecycle events in your extension. Providing a delegate object is required if your extension supports actionable notifications or Handoff behaviors.
 

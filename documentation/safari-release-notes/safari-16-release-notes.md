@@ -5,13 +5,13 @@
 
 Released September 12, 2022 — Version 16 (18614.1.25)
 
-#### Overview
+## Overview
 
 Safari 16 ships with iOS 16, and is available as an update on macOS Monterey and macOS Big Sur.
 
-##### CSS
+### CSS
 
-###### New Features
+#### New Features
 
 - Added size queries support for Container Queries.
 - Added support for Container Query Units.
@@ -22,18 +22,18 @@ Safari 16 ships with iOS 16, and is available as an update on macOS Monterey and
 - Added support for `text-align-last`.
 - Added support for the `resolution` media query.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed gradient color interpolation with alpha.
 
-##### Forms
+### Forms
 
-###### New Features
+#### New Features
 
 - Added support for `<form>.requestSubmit()`.
 - Added the `showPicker()` method for HTML input elements.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed firing the load event after a form is submitted with a `"_blank"` target.
 - Fixed `contenteditable` anchors getting stuck with an `:active` state.
@@ -52,40 +52,40 @@ Safari 16 ships with iOS 16, and is available as an update on macOS Monterey and
 - Fixed the user-agent stylesheet to include `box-sizing: border-box` for `<input type="color">.`
 - Fixed the `line-height` declaration to use `!important` for the placeholder of an input.
 
-###### Removed Features
+#### Removed Features
 
 - Removed most non-standard CSS `appearance` values.
 
-##### Accessibility
+### Accessibility
 
-###### New Features
+#### New Features
 
 - Added accessibility support for `display:contents`.
 - Added Isolated Tree Mode to reduce VoiceOver hangs in WebKit by offloading accessibility work to a secondary thread.
 
-##### Apple Pay
+### Apple Pay
 
-###### New Features
+#### New Features
 
 - Added support for allowing scripts to be injected into `WKWebView` that have used Apple Pay (and vice versa).
 - Added support for recurring payments, automatic reload payments, and multimerchant payments.
 - Added a way for merchants to provide order details that are surfaced in the Wallet app after payments are authorized.
 
-##### Authentication
+### Authentication
 
-###### New Features
+#### New Features
 
 - Added support for passkeys on iOS 16.
 
-##### Media
+### Media
 
-###### New Features
+#### New Features
 
 - Added support for non-animated AVIF.
 
-##### Safari Web Extensions
+### Safari Web Extensions
 
-###### New Features
+#### New Features
 
 - Added support for Safari Web Inspector Extensions.
 - Added the ability to open a Safari Web Extension popover programmatically.
@@ -93,7 +93,7 @@ Safari 16 ships with iOS 16, and is available as an update on macOS Monterey and
 - Added support for `declarativeNetRequestWithHostAccess` permission.
 - Added support for `browser.runtime.getFrameID`.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed incorrect counts being returned from `getBytesInUse`.
 - Fixed background service worker to load bundle resources.
@@ -101,13 +101,13 @@ Safari 16 ships with iOS 16, and is available as an update on macOS Monterey and
 - Updated the maximum number of static rulesets to 50 and the maximum number of enabled static rulesets to 10.
 - Service workers are no longer returned from `extension.getBackgroundPage` and `extension.getViews`.
 
-##### Security
+### Security
 
-###### New Features
+#### New Features
 
 - Added support for the `worker-src` Content Security Policy directive.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed blocking image content in object elements.
 - Fixed incorrect CORP/COEP check in 304 responses.
@@ -115,34 +115,34 @@ Safari 16 ships with iOS 16, and is available as an update on macOS Monterey and
 - Fixed `script-src-elem` policies in Workers.
 - Fixed incorrect `blocked-uri` for inline scripts and `strict-dynamic` policies.
 
-##### WebGL 2
+### WebGL 2
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed handling `AllowShared` `TypedArray`.
 
-##### Web Animations
+### Web Animations
 
-###### New Features
+#### New Features
 
 - Added support for composite operations.
 
-##### Web API
+### Web API
 
-###### New Features
+#### New Features
 
 - Added support for Shared Workers.
 - Added support for Shadow Realms.
 
-##### Web Driver
+### Web Driver
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `pointerMove` actions to correctly fire mouse events.
 
-##### Web Inspector
+### Web Inspector
 
-###### New Features
+#### New Features
 
 - Added support for inspecting Flexbox layouts.
 - Added support for Container Queries in the Styles sidebar.
@@ -152,7 +152,7 @@ Safari 16 ships with iOS 16, and is available as an update on macOS Monterey and
 - Added links to reference documentation in the Timelines tab.
 - Added a proxy indicator in the Network tab.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed breakpoints not triggering, breakpoints occurring at incorrect locations in scripts, and incorrect error, stack trace line, and column numbers when inspecting minified sources with multi-line strings.
 - Fixed importing Timelines sometimes not scrolling.

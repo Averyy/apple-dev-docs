@@ -21,7 +21,7 @@ var count: Int { get }
 
 - [Converting From Python](../converting-python.md)
 
-#### Discussion
+## Discussion
 
 For example, these would be equivalent:
 

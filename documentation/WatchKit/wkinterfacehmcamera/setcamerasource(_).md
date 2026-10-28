@@ -19,7 +19,7 @@ func setCameraSource(_ cameraSource: HMCameraSource?)
 - (void) setCameraSource:(HMCameraSource *) cameraSource;
 ```
 
-#### Discussion
+## Discussion
 
 Pass `nil` to clear the camera source.
 

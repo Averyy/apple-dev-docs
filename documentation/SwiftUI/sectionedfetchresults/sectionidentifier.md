@@ -22,7 +22,7 @@ The key path that the system uses to group fetched results into sections.
 @preconcurrency var sectionIdentifier: KeyPath<Result, SectionIdentifier> { get nonmutating set }
 ```
 
-#### Discussion
+## Discussion
 
 Set this value to cause the associated [`SectionedFetchRequest`](../sectionedfetchrequest.md) to execute a fetch with a new section identifier, producing an updated collection of results. Changing this value produces a new set of sections. Use care to coordinate section and sort updates, as described in [`SectionedFetchRequest.Configuration`](../sectionedfetchrequest/configuration.md).
 

@@ -19,7 +19,7 @@ func performFeedback(_ alignmentFeedbackTokens: [any NSAlignmentFeedbackToken], 
 - (void) performFeedback:(NSArray<id<NSAlignmentFeedbackToken>> *) alignmentFeedbackTokens performanceTime:(NSHapticFeedbackPerformanceTime) performanceTime;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to initiate haptic feedback to the user. Pass it one or more alignment feedback tokens of type `NSAlignmentFeedbackToken` and a time to execute of type `NSHapticFeedbackPerformanceTime`. Call this method immediately before moving the object to its new aligned position.
 

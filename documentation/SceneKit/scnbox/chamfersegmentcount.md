@@ -25,7 +25,7 @@ var chamferSegmentCount: Int { get set }
 @property (nonatomic) NSInteger chamferSegmentCount;
 ```
 
-#### Discussion
+## Discussion
 
 A larger number of segments adds more vertex data to the geometry, creating a smoother curve for each rounded edge and corner at a cost to rendering performance.
 

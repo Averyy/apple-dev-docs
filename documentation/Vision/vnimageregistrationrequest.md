@@ -24,7 +24,7 @@ class VNImageRegistrationRequest
 @interface VNImageRegistrationRequest : VNTargetedImageRequest
 ```
 
-#### Overview
+## Overview
 
 This abstract superclass forms the basis of image alignment or registration requests. Make specific requests through one of its subclasses, [`VNTranslationalImageRegistrationRequest`](./vntranslationalimageregistrationrequest.md) or [`VNHomographicImageRegistrationRequest`](./vnhomographicimageregistrationrequest.md). Don’t create an instance of this superclass yourself.
 

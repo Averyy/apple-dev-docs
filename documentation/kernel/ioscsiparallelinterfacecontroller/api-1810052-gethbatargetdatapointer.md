@@ -12,11 +12,11 @@ void * GetHBATargetDataPointer (
  SCSITargetIdentifiertargetDevice );
 ```
 
-#### Return Value
+## Return Value
 
 returns pointer to buffer for HBA specific data, NULL if none found or GetHBADataSize is zero.
 
-#### Overview
+## Overview
 
 Method to retrieve the HBA Data pointer.
 

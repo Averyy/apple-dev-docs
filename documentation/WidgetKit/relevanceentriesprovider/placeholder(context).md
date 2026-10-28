@@ -20,7 +20,7 @@ func placeholder(context: Self.Context) -> Self.Entry
 
 - [Increasing the visibility of widgets in Smart Stacks](../widget-suggestions-in-smart-stacks.md)
 
-#### Return Value
+## Return Value
 
 A relevance entry that represents a placeholder version of the widget.
 

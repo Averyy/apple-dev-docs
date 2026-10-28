@@ -25,7 +25,7 @@ class var now: Date { get }
 @property (class, copy, readonly) NSDate * now;
 ```
 
-#### Discussion
+## Discussion
 
 This is equivalent to initializing a new instance with `NSDate()` (or `[[NSDate alloc] init]` in Objective-C). The [`NSDate`](../nsdate.md) instance doesn’t automatically update its time after you retrieve it.
 

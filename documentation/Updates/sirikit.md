@@ -5,13 +5,13 @@
 
 Learn about important changes in SiriKit.
 
-#### Overview
+## Overview
 
 Browse notable changes in [SiriKit](../SiriKit/SiriKit.md).
 
-#### June 2024
+## June 2024
 
-##### System integration
+### System integration
 
 - Standard intents and custom intents you create with SiriKit are automatically available to enhanced action capabilities of Siri, powered by Apple Intelligence.
 

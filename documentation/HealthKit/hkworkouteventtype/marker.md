@@ -24,7 +24,7 @@ case marker
 HKWorkoutEventTypeMarker
 ```
 
-#### Discussion
+## Discussion
 
 Use markers to indicate arbitrary points during a workout (for example, when the user reaches the top of a hill during a run).
 

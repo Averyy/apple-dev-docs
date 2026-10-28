@@ -20,7 +20,7 @@ Creates a portal component with a target entity, a single planar definition, and
 init(target: Entity, plane: PortalComponent.Plane, options: PortalComponent.Options)
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to toggle [`clippingMode`](./clippingmode-swift.property.md) and [`crossingMode`](./crossingmode-swift.property.md) with the same [`PortalComponent.Plane`](./plane.md).
 

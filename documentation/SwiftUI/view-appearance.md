@@ -5,7 +5,7 @@
 
 Configure a view’s foreground and background styles, controls, and visibility.
 
-#### Overview
+## Overview
 
 Use these modifiers to configure the appearance of a view, including the use of color and tint, and the application of overlays and background elements. Control the visibility of a view and specific elements within a view. Manage the shape and size of various controls.
 

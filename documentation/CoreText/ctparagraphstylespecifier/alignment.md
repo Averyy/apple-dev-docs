@@ -25,7 +25,7 @@ case alignment
 kCTParagraphStyleSpecifierAlignment
 ```
 
-#### Discussion
+## Discussion
 
 Natural text alignment is realized as left or right alignment, depending on the line sweep direction of the first script contained in the paragraph. Type: [`CTTextAlignment`](../cttextalignment.md). Default value: [`kCTNaturalTextAlignment`](../cttextalignment/kctnaturaltextalignment.md). Affects: [`CTFramesetter`](../ctframesetter.md).
 

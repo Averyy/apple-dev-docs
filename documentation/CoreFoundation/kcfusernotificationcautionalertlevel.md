@@ -19,7 +19,7 @@ var kCFUserNotificationCautionAlertLevel: CFOptionFlags { get }
 kCFUserNotificationCautionAlertLevel
 ```
 
-#### Discussion
+## Discussion
 
 A caution icon is displayed by default.
 

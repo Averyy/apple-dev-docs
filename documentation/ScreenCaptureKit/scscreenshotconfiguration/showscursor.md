@@ -20,7 +20,7 @@ var showsCursor: Bool { get set }
 @property (nonatomic, assign) BOOL showsCursor;
 ```
 
-#### Discussion
+## Discussion
 
 By default the pointer is visible in screenshots.
 

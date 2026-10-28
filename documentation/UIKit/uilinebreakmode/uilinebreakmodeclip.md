@@ -19,7 +19,7 @@ Clip the text when reaching the end of the drawing rectangle.
 UILineBreakModeClip
 ```
 
-#### Discussion
+## Discussion
 
 This option could result in a partially rendered character at the end of a string.
 

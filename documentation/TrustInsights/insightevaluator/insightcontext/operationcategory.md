@@ -16,7 +16,7 @@ The type of operation you’re requesting the evaluation for.
 var operationCategory: InsightEvaluator.OperationCategory
 ```
 
-#### Discussion
+## Discussion
 
 The framework may present information based on this request in the transparency log that shows the use of this framework by your app.
 

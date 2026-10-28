@@ -19,7 +19,7 @@ func attachColorList(_ colorList: NSColorList)
 - (void) attachColorList:(NSColorList *) colorList;
 ```
 
-#### Discussion
+## Discussion
 
 An application should use this method to add an `NSColorList` saved with a document in its file package or in a directory other than `NSColorList`’s standard search directories.
 

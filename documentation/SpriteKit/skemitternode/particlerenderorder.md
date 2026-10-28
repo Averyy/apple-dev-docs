@@ -25,7 +25,7 @@ var particleRenderOrder: SKParticleRenderOrder { get set }
 @property (nonatomic) SKParticleRenderOrder particleRenderOrder;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`SKParticleRenderOrder.oldestLast`](../skparticlerenderorder/oldestlast.md).
 

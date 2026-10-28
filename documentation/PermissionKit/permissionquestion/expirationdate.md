@@ -19,7 +19,7 @@ The date that this question expires, if any.
 final var expirationDate: Date?
 ```
 
-#### Discussion
+## Discussion
 
 Once the date passes, the person that receives the question can no longer respond.
 

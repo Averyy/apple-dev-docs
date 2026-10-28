@@ -18,7 +18,7 @@ var cdhash_full: es_token_t
 es_token_t cdhash_full;
 ```
 
-#### Discussion
+## Discussion
 
 Structure buffer with size
 

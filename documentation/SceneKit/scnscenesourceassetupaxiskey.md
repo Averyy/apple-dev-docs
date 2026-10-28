@@ -23,7 +23,7 @@ let SCNSceneSourceAssetUpAxisKey: String
 extern NSString * const SCNSceneSourceAssetUpAxisKey;
 ```
 
-#### Discussion
+## Discussion
 
 The up-axis for the scene. For example, if the scene is oriented y-up, the corresponding value is the string `"0.0 1.0 0.0"`.
 

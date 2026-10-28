@@ -15,7 +15,7 @@ Options you use to specify access to restricted content.
 var sourceOptions: CSSearchQueryContext.SourceOptions
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify access to sensitive items like email.
 

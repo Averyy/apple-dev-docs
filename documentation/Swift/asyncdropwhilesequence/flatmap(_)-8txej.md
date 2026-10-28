@@ -22,11 +22,11 @@ Creates an asynchronous sequence that concatenates the results of calling the gi
 func flatMap<SegmentOfResult>(_ transform: @escaping @Sendable (Self.Element) async -> SegmentOfResult) -> AsyncFlatMapSequence<Self, SegmentOfResult> where SegmentOfResult : AsyncSequence, Self.Failure == SegmentOfResult.Failure
 ```
 
-#### Return Value
+## Return Value
 
 A single, flattened asynchronous sequence that contains all elements in all the asynchronous sequences produced by `transform`.
 
-#### Discussion
+## Discussion
 
 Use this method to receive a single-level asynchronous sequence when your transformation produces an asynchronous sequence for each element.
 

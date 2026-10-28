@@ -16,7 +16,7 @@ Tells the system that the app no longer needs the directory at the URL and it ca
 final func invalidateSessionContent(at url: URL) async throws
 ```
 
-#### Discussion
+## Discussion
 
 The directory at the `URL` contains captured content for a session. Store the captured content appropriately before calling this method, otherwise the system deletes it.
 

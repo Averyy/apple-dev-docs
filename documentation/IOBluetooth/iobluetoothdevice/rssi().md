@@ -19,7 +19,7 @@ func rssi() -> BluetoothHCIRSSIValue
 - (BluetoothHCIRSSIValue) RSSI;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the RSSI of the device. If the value cannot be read (e.g. the device is disconnected), a value of +127 will be returned.
 

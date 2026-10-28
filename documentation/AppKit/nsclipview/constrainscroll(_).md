@@ -21,11 +21,11 @@ func constrainScroll(_ newOrigin: NSPoint) -> NSPoint
 - (NSPoint) constrainScrollPoint:(NSPoint) newOrigin;
 ```
 
-#### Return Value
+## Return Value
 
 A point which will guarantee the view will lie within its document view.
 
-#### Discussion
+## Discussion
 
 For example, if the x-coordinate of `newOrigin` lies to the left of the document view’s origin, then the x-coordinate returned is set to that of the x-coordinate of the document view’s origin.
 

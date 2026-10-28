@@ -23,7 +23,7 @@ var count: Int { get }
 
 Available when `Base` conforms to `Collection`.
 
-#### Discussion
+## Discussion
 
 To check whether the collection is empty, use its `isEmpty` property instead of comparing `count` to zero. Unless the collection guarantees random-access performance, calculating `count` can be an O(*n*) operation.
 

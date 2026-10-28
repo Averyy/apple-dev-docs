@@ -25,7 +25,7 @@ func xpc_data_get_length(_ xdata: xpc_object_t) -> Int
 extern size_t xpc_data_get_length(xpc_object_t xdata);
 ```
 
-#### Return Value
+## Return Value
 
 The length of the underlying boxed data.
 

@@ -27,7 +27,7 @@ optional func accommodatePresentedItemEviction() async throws
 - (void) accommodatePresentedItemEvictionWithCompletionHandler:(void (^)(NSError *errorOrNil)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 If this method is not implemented, eviction will fail.
 

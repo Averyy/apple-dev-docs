@@ -23,7 +23,7 @@ var kDNSServiceType_WKS: Int { get }
 kDNSServiceType_WKS
 ```
 
-#### Discussion
+## Discussion
 
 Well known service.
 

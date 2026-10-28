@@ -19,7 +19,7 @@ Applies the specified transform and returns a new drawing.
 func transformed(using transform: CGAffineTransform) -> PKDrawing
 ```
 
-#### Return Value
+## Return Value
 
 A new drawing with the provided `transform` applied.
 

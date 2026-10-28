@@ -19,7 +19,7 @@ class var shared: NSFontPanel { get }
 @property (class, strong, readonly) NSFontPanel * sharedFontPanel;
 ```
 
-#### Return Value
+## Return Value
 
 The `NSFontPanel` instance for the application.
 

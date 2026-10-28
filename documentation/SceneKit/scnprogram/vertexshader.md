@@ -25,7 +25,7 @@ var vertexShader: String? { get set }
 @property (nonatomic, copy, nullable) NSString * vertexShader;
 ```
 
-#### Discussion
+## Discussion
 
 A program’s vertex shader executes once for each vertex in the geometry it renders. It takes as input the attributes of each vertex (such as position in model space, normal vectors, and texture coordinates). The vertex shader then outputs a clip-space position for the vertex, as well as values that the GPU interpolates across a surface and sends to the fragment shader.
 

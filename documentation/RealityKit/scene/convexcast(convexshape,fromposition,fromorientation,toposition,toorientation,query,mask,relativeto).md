@@ -21,11 +21,11 @@ Performs a convex shape cast against all the geometry in the scene.
 @preconcurrency func convexCast(convexShape: ShapeResource, fromPosition: SIMD3<Float>, fromOrientation: simd_quatf, toPosition: SIMD3<Float>, toOrientation: simd_quatf, query: CollisionCastQueryType = .all, mask: CollisionGroup = .all, relativeTo referenceEntity: Entity? = nil) -> [CollisionCastHit]
 ```
 
-#### Return Value
+## Return Value
 
 An array of collision cast hit results. Each hit indicates where the convex shape, starting at a given point and traveling in a given direction, collides with entities in the scene. To retrieve the hit entity from a returned [`CollisionCastHit`](../collisioncasthit.md), use the [`entity`](../collisioncasthit/entity.md) property.
 
-#### Discussion
+## Discussion
 
 For objects that intersect the convex shape at its starting position and orientation, the returned collision cast hit result’s [`position`](../collisioncasthit/position.md) is `(0, 0, 0)` and the [`normal`](../collisioncasthit/normal.md) points in the opposite direction of the sweep.
 

@@ -22,7 +22,7 @@ Finds the named uniform and sets it to the given BitwiseCopyable value.
 final func setUniform<V>(_ value: V, named name: String) -> Bool where V : BitwiseCopyable
 ```
 
-#### Discussion
+## Discussion
 
 Returns true if the value was found and set successfully
 

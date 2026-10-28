@@ -15,7 +15,7 @@ The descriptor for a SuperSpeed USB Endpoint Companion.
 struct IOUSBSuperSpeedEndpointCompanionDescriptor;
 ```
 
-#### Overview
+## Overview
 
 For more information about this descriptor type, see section 9.6.7 of the USB 3.1 specification at [http://www.usb.org](http://www.usb.org).
 

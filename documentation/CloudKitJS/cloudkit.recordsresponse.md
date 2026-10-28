@@ -15,7 +15,7 @@ A [`CloudKit.RecordsResponse`](./cloudkit.recordsresponse.md) object encapsulate
 interface CloudKit.RecordsResponse
 ```
 
-#### Overview
+## Overview
 
 The methods in the [`CloudKit.Database`](./cloudkit.database.md) class that operate on records and the [`commit`](./cloudkit.recordsbatchbuilder/commit.md) method in the [`CloudKit.RecordsBatchBuilder`](./cloudkit.recordsbatchbuilder.md) class return a `Promise` object that resolves to a [`CloudKit.RecordsResponse`](./cloudkit.recordsresponse.md) object if the operation is successful. You should not create instances of this class directly.
 

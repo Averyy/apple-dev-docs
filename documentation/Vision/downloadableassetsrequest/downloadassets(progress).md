@@ -25,7 +25,7 @@ func downloadAssets(progress: consuming Subprogress) async throws
 
 - [Isolating an object from a tap, box, or scribble](../segmenting-objects-with-iterative-refinement.md)
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the download fails.
 

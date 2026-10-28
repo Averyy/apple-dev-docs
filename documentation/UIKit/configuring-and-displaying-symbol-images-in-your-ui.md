@@ -5,7 +5,7 @@
 
 Create scalable images that integrate with your app’s text, and adjust the appearance of those images dynamically.
 
-#### Overview
+## Overview
 
 Symbol images give you a consistent set of icons to use in your app, and guarantee that those icons adapt to different sizes and to app-specific content. A symbol image contains a vector-based shape that scales without losing its sharpness. You generate its final appearance by applying a tint color, or if you’re using [SF Symbols](https://developer.apple.com/design/resources/#sf-symbols), you can apply multiple colors to add depth and emphasis to your symbol. You use symbol images in places where you display a simple shape or glyph, such as a bar button item.
 
@@ -20,7 +20,7 @@ The system provides a collection of standard symbol images for you, including im
 
 You can also create symbol image files for your app’s custom iconography, as described in [Creating custom symbols](../TechnologyOverviews/custom-sf-symbols.md).
 
-##### Load a symbol image
+### Load a symbol image
 
 When configuring an image view in a storyboard file, you browse the list of symbol image names in the Attribute inspector. When loading symbol images from your code, you look up the name for a symbol image using the SF Symbols app. For custom symbol images, create a Symbol Image Set asset in your asset catalog and load the asset by name.
 
@@ -59,7 +59,7 @@ let image = NSImage(systemSymbolName: "multiply.circle.fill",
 let image = NSImage(named: "custom.multiply.circle")
 ```
 
-##### Apply a specific appearance to a symbol image
+### Apply a specific appearance to a symbol image
 
 UIKit and AppKit methods return an image object with symbol image information. When you display that symbol image in an image view, the system applies default styling to it. An image with the default styling might appear out of place next to bold text or text that uses the headline text style.
 
@@ -94,7 +94,7 @@ configuration = config.applying(.init(textStyle: .title1))
 imageView.symbolConfiguration = config
 ```
 
-##### Update the rendering mode for a symbol
+### Update the rendering mode for a symbol
 
 SF Symbols contains four rendering modes: monochrome, palette, hierarchical, and multicolor. Symbols don’t have an intrinsic color, so by default, the system uses the tint color to render them. For example, the following code illustrates applying a tint color to an entire image:
 
@@ -127,7 +127,7 @@ imageView.image = image.applyingSymbolConfiguration(config)
 
 Starting in iOS 16, symbols don’t automatically render in monochrome mode when you don’t specify a mode. For example, the system symbol “airpodsmax” defaults to hierarchical. If your app needs monochrome rendering for a symbol, use [`preferringMonochrome()`](./uiimage/symbolconfiguration-swift.class/preferringmonochrome%28%29.md). To determine the default rendering mode for a symbol, find the symbol in the SF Symbols app and inspect the color sidebar.
 
-##### Apply variable rendering
+### Apply variable rendering
 
 In iOS 16 and later, the system can dynamically apply colors to system and custom symbols using a percentage value to convey the strength or progress over time. For example, the following code creates a symbol of a speaker wave with two of the three bars highlighted:
 
@@ -138,7 +138,7 @@ let image = UIImage(systemName: "speaker.wave.3", variableValue: 0.36)
 
 To use variable rendering in AppKit, see [`init(symbolName:variableValue:)`](../AppKit/nsimage/init%28symbolname,variablevalue%29.md).
 
-##### Update the weight and scale of a symbol
+### Update the weight and scale of a symbol
 
 There are nine symbol weights corresponding to a weight of the San Francisco system font, helping you achieve precise weight matching between symbols and adjacent text, while supporting flexibility for different sizes and context.
 
@@ -158,7 +158,7 @@ var config = NSImage.SymbolConfiguration(scale: .large)
 imageView.image = image.withSymbolConfiguration(config)
 ```
 
-##### Apply a symbol image variant
+### Apply a symbol image variant
 
 SF Symbols defines design variants — such as outline, fill, slash, and enclosed — to help you communicate precise states and actions, while maintaining visual consistency and simplicity in your UI. For example, you might use the slash variant to show that an action is unavailable, or use the fill variant to indicate when the user selects something.
 
@@ -172,7 +172,7 @@ Image(systemName: "multiply")
       .symbolVariant(.circle.fill)
 ```
 
-##### Align symbol images with a text label by using a baseline
+### Align symbol images with a text label by using a baseline
 
 Because of the typographical nature of SF Symbols, when you position an image view containing a symbol image next to a label, you should align the views using their baselines. To align views in your storyboard, select the two views and add a first baseline constraint. Programmatically, you create this constraint by setting the [`firstBaselineAnchor`](./uiview/firstbaselineanchor.md) of both views to be equal, as the following code example shows:
 
@@ -212,7 +212,7 @@ HStack(alignment: .firstTextBaseline) {
 }
 ```
 
-##### Use fallback assets for deprecated symbol name changes
+### Use fallback assets for deprecated symbol name changes
 
 Symbol names may change between operating system versions and SF Symbols app releases, so you need to review your symbol usage when supporting new versions. Look for the deployment target when browsing the SF Symbols app and use the old name if you’re backward deploying.
 

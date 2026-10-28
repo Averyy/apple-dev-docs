@@ -16,7 +16,7 @@ An optional value that indicates the kind of group activity association, if any.
 var associationKind: GroupActivityAssociationKind? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to `nil` to remove the view’s association with the current SharePlay group activity.
 

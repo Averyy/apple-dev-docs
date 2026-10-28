@@ -21,7 +21,7 @@ A pausable schedule of dates updating at a frequency no more quickly than the pr
 struct AnimationTimelineSchedule
 ```
 
-#### Overview
+## Overview
 
 You can also use [`animation(minimumInterval:paused:)`](./timelineschedule/animation%28minimuminterval,paused%29.md) to construct this schedule.
 

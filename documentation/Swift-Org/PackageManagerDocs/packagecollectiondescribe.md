@@ -13,11 +13,11 @@ Get metadata for a collection or a package included in an imported collection.
 **Availability**:
 - Swift 5.5+
 
-#### Overview
+## Overview
 
 This subcommand shows metadata for a collection or a package included in an imported collection. The result can optionally be returned as JSON using `--json` for integration into other tools.
 
-##### Metadata and packages of a collection
+### Metadata and packages of a collection
 
 `describe` can be used for both collections that have been previously added to the list of the user’s configured collections, as well as to preview any other collections.
 
@@ -33,7 +33,7 @@ Packages:
     ...
 ```
 
-###### Signed package collections
+#### Signed package collections
 
 If a collection is signed, SwiftPM will check that the signature is valid before showing a preview.
 
@@ -48,7 +48,7 @@ Users may continue previewing the collection despite the error or preemptively s
 $ swift package-collection describe https://www.example.com/packages.json --skip-signature-check
 ```
 
-##### Metadata of a package
+### Metadata of a package
 
 `describe` can also show the metadata of a package included in an imported collection:
 
@@ -68,7 +68,7 @@ Supported Swift Versions: 5.3, 5.2, 5.1, 5.0
 License: MIT
 ```
 
-##### Metadata of a package version
+### Metadata of a package version
 
 User may view additional metadata for a package version by passing `--version`:
 
@@ -82,7 +82,7 @@ Supported Swift Versions: 5.3, 5.2, 5.1, 5.0
 License: MIT
 ```
 
-#### Usage
+## Usage
 
 ```
 package-collection describe [--json] <package-url>

@@ -21,7 +21,7 @@ An action that activates the standard rename interaction.
 var rename: RenameAction? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`renameAction(_:)`](../view/renameaction%28_%29.md) modifier to configure the rename action in the environment.
 

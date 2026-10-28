@@ -17,7 +17,7 @@ Document getDocument(
 );
 ```
 
-#### Return Value
+## Return Value
 
 The TVML page associated with the selected menu item.
 

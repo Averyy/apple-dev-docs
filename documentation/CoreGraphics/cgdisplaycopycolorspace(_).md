@@ -20,11 +20,11 @@ func CGDisplayCopyColorSpace(_ display: CGDirectDisplayID) -> CGColorSpace
 extern CGColorSpaceRefCGDisplayCopyColorSpace(CGDirectDisplayID display);
 ```
 
-#### Return Value
+## Return Value
 
 The current color space for the specified display. In Objective-C, you’re responsible for releasing the color space with the [`CGColorSpaceRelease`](./cgcolorspacerelease.md) function.
 
-#### Discussion
+## Discussion
 
 This function returns a display-dependent ICC-based color space. You can use this function when rendering content for a specific display in order to produce color-matched output for that display.
 

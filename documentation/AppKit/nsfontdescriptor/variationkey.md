@@ -19,7 +19,7 @@ struct VariationKey
 typedef NSString * NSFontDescriptorVariationKey;
 ```
 
-#### Discussion
+## Discussion
 
 These keys are used with [`variation`](./attributename/variation.md).
 

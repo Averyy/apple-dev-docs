@@ -24,7 +24,7 @@ static var everyMinute: EveryMinuteTimelineSchedule { get }
 
 Available when `Self` is `EveryMinuteTimelineSchedule`.
 
-#### Discussion
+## Discussion
 
 Initialize a [`TimelineView`](../timelineview.md) with an every minute timeline schedule when you want to schedule timeline view updates at the start of every minute:
 

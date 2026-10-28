@@ -24,7 +24,7 @@ var stepFunction: MTLVertexStepFunction { get set }
 @property (nonatomic, assign) MTLVertexStepFunction stepFunction;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`MTLVertexStepFunction.perVertex`](../mtlvertexstepfunction/pervertex.md).
 

@@ -24,7 +24,7 @@ func addChildCollections(_ collections: any NSFastEnumeration)
 - (void) addChildCollections:(id<NSFastEnumeration>) collections;
 ```
 
-#### Discussion
+## Discussion
 
 If you created the change request with a snapshot of the collection list’s contents using the [`init(for:childCollections:)`](./init%28for,childcollections%29.md) method, Photos inserts the new children after the existing child collections in the collection list. Otherwise, the arrangement of the new children relative to others in the collection is undefined.
 

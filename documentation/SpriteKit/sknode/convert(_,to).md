@@ -30,7 +30,7 @@ func convert(_ point: CGPoint, to node: SKNode) -> CGPoint
 - [Connecting Bodies with Joints](../connecting-bodies-with-joints.md)
 - [Converting Coordinate Spaces](../converting-coordinate-spaces.md)
 
-#### Return Value
+## Return Value
 
 The same point converted to the other node’s coordinate system.
 

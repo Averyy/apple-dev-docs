@@ -25,7 +25,7 @@ convenience init?(modelIdentifier: String)
 + (instancetype) contextualEmbeddingWithModelIdentifier:(NSString *) modelIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 If you train a custom model with the contextual embedding as the feature layer, keep track of this identifier and use it when loading the custom model in your app.
 

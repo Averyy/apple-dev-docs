@@ -17,7 +17,7 @@ Applies adapter modules (LoRA or DoRA) to the given model.
 func load(into model: LanguageModel) throws
 ```
 
-#### Discussion
+## Discussion
 
 This method replaces target layers in the model with corresponding adapter layers based on the configuration. It also loads adapter-specific weights into the model. Replacement layers preserve the model’s current training or evaluation mode. Models placed in a [`ModelContext`](../modelcontext.md) are in evaluation mode by default.
 

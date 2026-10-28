@@ -51,7 +51,7 @@ optional func snapshot(using configuration: WKSnapshotConfiguration, for context
 - (void) takeSnapshotUsingConfiguration:(WKSnapshotConfiguration *) configuration forWebExtensionContext:(WKWebExtensionContext *) context completionHandler:(void (^)(NSImage *webpageImage, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to capturing the visible area of the tab’s web view if not implemented.
 

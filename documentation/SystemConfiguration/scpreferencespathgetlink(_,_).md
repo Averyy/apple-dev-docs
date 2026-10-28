@@ -19,7 +19,7 @@ func SCPreferencesPathGetLink(_ prefs: SCPreferences, _ path: CFString) -> CFStr
 CFStringRefSCPreferencesPathGetLink(SCPreferencesRef prefs, CFStringRef path);
 ```
 
-#### Return Value
+## Return Value
 
 The link associated with the specified path, or `NULL` if the path is not a link or does not exist.
 

@@ -19,7 +19,7 @@ case appScheduled
 WKSnapshotReasonAppScheduled
 ```
 
-#### Discussion
+## Discussion
 
 You can schedule snapshots either by calling the [`scheduleSnapshotRefresh(withPreferredDate:userInfo:scheduledCompletion:)`](../wkextension/schedulesnapshotrefresh%28withpreferreddate,userinfo,scheduledcompletion%29.md) method, or—when completing a background task—by calling the [`setTaskCompletedWithSnapshot(_:)`](../wkrefreshbackgroundtask/settaskcompletedwithsnapshot%28_%29.md) method and passing [`true`](../../Swift/true.md).
 

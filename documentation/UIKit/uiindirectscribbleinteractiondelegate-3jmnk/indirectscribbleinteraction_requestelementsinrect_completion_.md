@@ -17,7 +17,7 @@ Asks the delegate to return the locations of text input elements inside the spec
 - (void) indirectScribbleInteraction:(UIIndirectScribbleInteraction *) interaction requestElementsInRect:(CGRect) rect completion:(void (^)(NSArray<id<NSCopying,NSObject>> *elements)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Each rectangle returned by the completion handler represents an area where the user can start writing even if it’s not a text input field itself.
 

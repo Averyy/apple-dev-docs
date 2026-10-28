@@ -23,7 +23,7 @@ class INRequestPaymentIntentResponse
 @interface INRequestPaymentIntentResponse : INIntentResponse
 ```
 
-#### Overview
+## Overview
 
 Use an [`INRequestPaymentIntentResponse`](./inrequestpaymentintentresponse.md) object to specify the details of a payment request that you make. After creating the object, assign the details of the payment transaction to the [`paymentRecord`](./inrequestpaymentintentresponse/paymentrecord.md) property, the details of which Siri communicates to the user at appropriate times.
 

@@ -29,7 +29,7 @@ func encodeSignalEvent(_ event: any MTLEvent, value: UInt64)
 
 - [About synchronization events](../about-synchronization-events.md)
 
-#### Discussion
+## Discussion
 
 The method can unblock one or more command buffers that are waiting for `event`, including those in other command queues (see [`encodeWaitForEvent(_:value:)`](./encodewaitforevent%28_,value%29.md)).
 

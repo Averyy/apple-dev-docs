@@ -15,7 +15,7 @@ The mode of transportation the server uses when estimating arrival times.
 transportType?: TransportType;
 ```
 
-#### Discussion
+## Discussion
 
 Use `transportType` to specify the mode of transportation for your [`route()`](../directions/route.md) and [`eta()`](../directions/eta.md) requests.
 

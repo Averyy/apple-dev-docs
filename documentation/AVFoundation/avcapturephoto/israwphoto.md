@@ -22,7 +22,7 @@ var isRawPhoto: Bool { get }
 @property (readonly, getter=isRawPhoto) BOOL rawPhoto;
 ```
 
-#### Discussion
+## Discussion
 
 When you request capture in RAW format, the capture output calls your delegate’s [`photoOutput(_:didFinishProcessingPhoto:error:)`](../avcapturephotocapturedelegate/photooutput%28_,didfinishprocessingphoto,error%29.md) method one or more times, delivering both the RAW photo data and (if requested) equivalent processed photos. Use this property to distinguish between the RAW and processed results from the same capture.
 

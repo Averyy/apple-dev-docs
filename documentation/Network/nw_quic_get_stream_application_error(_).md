@@ -25,7 +25,7 @@ func nw_quic_get_stream_application_error(_ metadata: nw_protocol_metadata_t) ->
 uint64_t nw_quic_get_stream_application_error(nw_protocol_metadata_t metadata);
 ```
 
-#### Return Value
+## Return Value
 
 A QUIC application error code.
 

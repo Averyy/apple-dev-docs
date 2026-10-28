@@ -3,7 +3,7 @@
 **Framework**: System Configuration  
 **Role**: API Collection
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  All `SCNetworkReachability` functions are deprecated, because network conditions change too frequently for preflight reachability tests to be accurate and useful. Instead of trying to perform a preflight check, just attempt your connection. The connection may not be available immediately, but you can use [`waitsForConnectivity`](../Foundation/urlsessionconfiguration/waitsforconnectivity.md) in your [`URLSessionConfiguration`](../Foundation/urlsessionconfiguration.md) to automatically connect as soon as it’s possible to do so. If you’re using the [Network](../Network/Network.md) framework, you can monitor the state of an [`NWConnection`](../Network/nwconnection.md) ([`nw_connection_t`](../Network/nw_connection_t.md) in Objective-C), which lets you know when the connection is waiting for a change in connectivity before automatically proceeding. In limited cases, if you need to change a network request based on the network you’re using, use [`NWPathMonitor`](../Network/nwpathmonitor.md) to observe the system networking state.
 

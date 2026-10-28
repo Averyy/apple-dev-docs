@@ -24,7 +24,7 @@ var kSequenceTrackProperty_TimeResolution: UInt32 { get }
 kSequenceTrackProperty_TimeResolution
 ```
 
-#### Discussion
+## Discussion
 
 To use a specific time resolution when writing a new file, retrieve this value and then specify it when calling the [`MusicSequenceFileCreate(_:_:_:_:_:)`](./musicsequencefilecreate%28_,_,_,_,_%29.md) function.
 

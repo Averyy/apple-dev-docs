@@ -22,7 +22,7 @@ var isSubjectAreaChangeMonitoringEnabled: Bool { get set }
 @property (nonatomic, getter=isSubjectAreaChangeMonitoringEnabled) BOOL subjectAreaChangeMonitoringEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property indicates whether the device monitors the video subject area for changes, such as lighting changes, substantial movement, and so on. If you enable subject area change monitoring, the capture device object sends an [`subjectAreaDidChangeNotification`](./subjectareadidchangenotification.md) whenever it detects a change to the subject area. You can observe this notification and take action such as focusing, adjusting exposure, and so on.
 

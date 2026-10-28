@@ -25,7 +25,7 @@ var proxySettings: NEProxySettings? { get set }
 @property (copy, nullable) NEProxySettings * proxySettings;
 ```
 
-#### Discussion
+## Discussion
 
 HTTP connections to hosts in the tunnel’s internal network will use these proxy settings.
 

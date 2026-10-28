@@ -21,7 +21,7 @@ Compares two ordered sets, with options, to create a difference object that repr
 - (NSOrderedCollectionDifference<id> *) differenceFromOrderedSet:(NSOrderedSet<id> *) other withOptions:(NSOrderedCollectionDifferenceCalculationOptions) options;
 ```
 
-#### Discussion
+## Discussion
 
 The difference method creates the difference object by comparing objects within the ordered sets with the `isEqual:` method.
 

@@ -19,7 +19,7 @@ enum Code
 enum VZErrorCode : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The domain for these errors is [`VZErrorDomain`](../vzerrordomain.md). When an error originates in a different component, the [`NSError`](../../Foundation/nserror.md) object contains the domain of that component.
 

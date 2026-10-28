@@ -20,7 +20,7 @@ The visible area of content in the scroll view.
 @preconcurrency var contentVisibleFrame: CGRect { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Modifying this property immediately moves the canvas, to animate changing the visible rect use [`setContentVisibleFrame(_:animated:)`](./setcontentvisibleframe%28_,animated%29.md).
 

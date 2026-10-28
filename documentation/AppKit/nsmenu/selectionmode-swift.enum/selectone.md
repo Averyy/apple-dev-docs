@@ -19,7 +19,7 @@ case selectOne
 NSMenuSelectionModeSelectOne
 ```
 
-#### Discussion
+## Discussion
 
 A change in selection deselects any previously selected item.
 

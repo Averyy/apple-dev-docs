@@ -23,7 +23,7 @@ case failureRequiringAppLaunchServiceTemporarilyUnavailable
 INRequestRideIntentResponseCodeFailureRequiringAppLaunchServiceTemporarilyUnavailable
 ```
 
-#### Discussion
+## Discussion
 
 Use this code when you are unable to reach your service to book the ride. Do not use this code for general errors or to force the user to launch your app.
 

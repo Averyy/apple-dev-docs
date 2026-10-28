@@ -26,11 +26,11 @@ func voiceChat(withName name: String) -> GKVoiceChat?
 - (GKVoiceChat *) voiceChatWithName:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A voice chat object for the channel, or `nil` if an error occurs or parental controls restrict the player from joining a voice chat.
 
-#### Discussion
+## Discussion
 
 This method adds the local player to the named voice chat channel and creates it if necessary. GameKit connects players who join a channel with the same name. A match can have multiple channels and a player can join multiple channels.
 

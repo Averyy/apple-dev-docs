@@ -25,7 +25,7 @@ init(value: UInt32)
 - (NSNumber *) initWithUnsignedInt:(unsigned int) value;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSNumber` object containing `value`, treating it as an `unsigned int`.
 

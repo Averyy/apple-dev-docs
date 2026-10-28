@@ -13,7 +13,7 @@
 kIOUSBInterfaceOpenAlt = 0x00010000
 ```
 
-#### Discussion
+## Discussion
 
 Open the alternate interface specified when creating the interface.
 

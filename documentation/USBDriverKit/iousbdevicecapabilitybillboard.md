@@ -15,7 +15,7 @@ The structure for the billboard device capability.
 struct IOUSBDeviceCapabilityBillboard;
 ```
 
-#### Overview
+## Overview
 
 For more information about this descriptor type, see section 6.2 of the USB 3.1 specification at [http://www.usb.org](http://www.usb.org).
 

@@ -20,7 +20,7 @@ case visualLocalizationFailed
 ARGeoTrackingStateReasonVisualLocalizationFailed
 ```
 
-#### Discussion
+## Discussion
 
 ARKit provides this reason when visual localization is taking too long. This indicates that the app has met all requirements for geo tracking, except for visual localization. In this situation, the app needs to ask the user to pan the device around the physical environment to acquire more camera-feed imagery. For more information, see [Assisting the User with Visual Localization](../state-swift.enum/localizing.md#Assisting-the-User-with-Visual-Localization).
 

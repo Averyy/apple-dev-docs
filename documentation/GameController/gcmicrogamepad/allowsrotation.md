@@ -24,7 +24,7 @@ var allowsRotation: Bool { get set }
 @property (nonatomic) BOOL allowsRotation;
 ```
 
-#### Discussion
+## Discussion
 
 If this property is [`false`](../../Swift/false.md), the profile reports the value of the directional pad only in portrait orientation even when the user rotates the controller. If this property is [`true`](../../Swift/true.md), the profile reports the values using the current orientation. The default value for this property is [`false`](../../Swift/false.md).
 

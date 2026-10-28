@@ -21,7 +21,7 @@ Initializes the type with a string you can use to find the extension point.
 init(identifier: StaticString) throws
 ```
 
-#### Discussion
+## Discussion
 
 - Paramerters:
 

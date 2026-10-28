@@ -23,7 +23,7 @@ protocol UICloudSharingControllerDelegate : NSObjectProtocol
 @protocol UICloudSharingControllerDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Implement an object that conforms to the [`UICloudSharingControllerDelegate`](./uicloudsharingcontrollerdelegate.md) protocol when you want to:
 

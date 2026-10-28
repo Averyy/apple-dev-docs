@@ -21,11 +21,11 @@ Returns the range of x and y positions for the given pair of data values, or `ni
 func positionRange<X, Y>(for point: (x: X, y: Y)) -> CGRect? where X : Plottable, Y : Plottable
 ```
 
-#### Return Value
+## Return Value
 
 The position range corresponding to the data values.
 
-#### Discussion
+## Discussion
 
 For a continuous data value, the returned range is a single point. For a categorical data value, the returned range is the range of positions that correspond to the given category.
 

@@ -9,7 +9,7 @@ Add a user’s content rating by using the content’s identifier.
 **Availability**:
 - Apple Music 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint requires a music user token. For more information, see [User Authentication for MusicKit](./user-authentication-for-musickit.md).
 
@@ -17,7 +17,7 @@ A rating indicates whether a user likes `(1)` or dislikes `(-1)` the album. Thes
 
 For a particular album, the personal ratings for that album’s catalog ID and library ID (if the album is in the library) stay synced.
 
-##### Example
+### Example
 
 **Request**:
 

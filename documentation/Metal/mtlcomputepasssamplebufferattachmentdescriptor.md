@@ -28,7 +28,7 @@ class MTLComputePassSampleBufferAttachmentDescriptor
 
 - [Sampling GPU data into counter sample buffers](./sampling-gpu-data-into-counter-sample-buffers.md)
 
-#### Overview
+## Overview
 
 For more context about configuring sample buffer attachments for compute passes, see [Sampling GPU data into counter sample buffers](./sampling-gpu-data-into-counter-sample-buffers.md). That article is one of a series in [GPU counters and counter sample buffers](./gpu-counters-and-counter-sample-buffers.md) about sampling Metal hardware counters for performance measurement.
 

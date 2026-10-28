@@ -25,11 +25,11 @@ optional func shouldShowBanner(forLocallyReceivedChallenge challenge: GKChalleng
 - (BOOL) shouldShowBannerForLocallyReceivedChallenge:(GKChallenge *) challenge;
 ```
 
-#### Return Value
+## Return Value
 
 Your delegate should return [`true`](../../Swift/true.md) if it wants a banner to be displayed. Otherwise it should return [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 If you do not implement this method, a banner is always shown.
 

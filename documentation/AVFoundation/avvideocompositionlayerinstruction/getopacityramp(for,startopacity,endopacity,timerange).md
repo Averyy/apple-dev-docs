@@ -24,7 +24,7 @@ func getOpacityRamp(for time: CMTime, startOpacity: UnsafeMutablePointer<Float>?
 - (BOOL) getOpacityRampForTime:(CMTime) time startOpacity:(float *) startOpacity endOpacity:(float *) endOpacity timeRange:(CMTimeRange *) timeRange;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if values are returned successfully, otherwise [`false`](../../Swift/false.md). [`false`](../../Swift/false.md) is returned if `time` is beyond the duration of the last opacity ramp that has been set.
 

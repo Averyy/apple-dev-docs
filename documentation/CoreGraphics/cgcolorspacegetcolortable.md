@@ -21,7 +21,7 @@ Copies the entries in the color table of an indexed color space.
 extern void CGColorSpaceGetColorTable(CGColorSpaceRef space, uint8_t *table);
 ```
 
-#### Discussion
+## Discussion
 
 This function does nothing if the color space is not an indexed color space. To determine whether a color space is an indexed color space, call the function [`model`](./cgcolorspace/model.md).
 

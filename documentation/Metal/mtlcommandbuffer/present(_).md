@@ -25,7 +25,7 @@ func present(_ drawable: any MTLDrawable)
 - (void) presentDrawable:(id<MTLDrawable>) drawable;
 ```
 
-#### Discussion
+## Discussion
 
 This convenience method calls the drawable’s [`present()`](../mtldrawable/present%28%29.md) method after the command queue schedules the command buffer for execution. The command buffer does this by adding a completion handler by calling its own [`addScheduledHandler(_:)`](./addscheduledhandler%28_%29.md) method for you.
 

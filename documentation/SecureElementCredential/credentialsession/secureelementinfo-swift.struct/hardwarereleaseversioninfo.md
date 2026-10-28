@@ -16,7 +16,7 @@ A string that encodes the hardware and software release versions of the Secure E
 let hardwareReleaseVersionInfo: String
 ```
 
-#### Discussion
+## Discussion
 
 Use this string to determine eligibility or select which applet bundle, previously submitted to [Apple Business Register](https://register.apple.com/login) (ABR), to install on this device.
 

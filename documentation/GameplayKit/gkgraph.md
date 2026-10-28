@@ -24,7 +24,7 @@ class GKGraph
 @interface GKGraph : NSObject
 ```
 
-#### Overview
+## Overview
 
 Individual nodes in a graph represent discrete locations that a character or other object in your game can occupy, and the connections between adjacent nodes represent the ability of a game entity to travel from one location to another. Use the [`GKGraph`](./gkgraph.md) class to create a general graph, or the [`GKGridGraph`](./gkgridgraph.md), [`GKObstacleGraph`](./gkobstaclegraph.md), or [`GKMeshGraph`](./gkmeshgraph.md) subclass to generate specialized graphs that contain more information about the geometry of your game world.
 

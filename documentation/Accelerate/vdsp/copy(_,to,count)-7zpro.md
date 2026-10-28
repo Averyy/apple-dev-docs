@@ -21,7 +21,7 @@ Copies a complex double-precision vector.
 static func copy(_ source: DSPDoubleSplitComplex, to destination: inout DSPDoubleSplitComplex, count: Int)
 ```
 
-#### Discussion
+## Discussion
 
 The following code copies the complex elements in the source to the destination:
 

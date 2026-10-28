@@ -19,7 +19,7 @@ var imageOrigin: NSPoint { get set }
 @property NSPoint imageOrigin;
 ```
 
-#### Discussion
+## Discussion
 
 For a horizontal ruler, the x coordinate of the image origin is aligned with the location of the marker, and the y coordinate lies on the baseline of the ruler. For vertical rulers, the y coordinate of the image origin is the location, and the x coordinate lies on the baseline.
 

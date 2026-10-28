@@ -17,7 +17,7 @@ Apply channel scaling + pairwise Givens rotations to the last axis.
 func rotate(_ x: MLXArray) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 Accepts any leading shape (the MoE path passes gathered 4-D activations); the input is flattened to 2-D for the kernel and the original shape is restored on return. Empty batches pass through unchanged (guarded in `dispatchPairwiseRotation`). No mutable state is read or written by this method.
 

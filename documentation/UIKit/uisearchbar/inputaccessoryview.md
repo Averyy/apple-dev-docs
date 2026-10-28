@@ -22,7 +22,7 @@ var inputAccessoryView: UIView? { get set }
 @property (nonatomic, strong, readwrite, nullable) UIView * inputAccessoryView;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`. When non-`nil`, this property represents a custom input accessory view that will be placed onto the search bar’s system-supplied keyboard.
 

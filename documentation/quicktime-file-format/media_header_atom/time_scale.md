@@ -6,7 +6,7 @@
 
 A time value that indicates the time scale for this media.
 
-#### Overview
+## Overview
 
 The number of time units that pass per second in its time coordinate system.
 

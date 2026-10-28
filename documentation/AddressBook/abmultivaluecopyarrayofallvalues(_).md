@@ -23,7 +23,7 @@ func ABMultiValueCopyArrayOfAllValues(_ multiValue: ABMultiValue!) -> Unmanaged<
 extern CFArrayRefABMultiValueCopyArrayOfAllValues(ABMultiValueRef multiValue);
 ```
 
-#### Return Value
+## Return Value
 
 Array containing the values in `multiValue`.
 

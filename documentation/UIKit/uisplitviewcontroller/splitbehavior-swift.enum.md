@@ -23,7 +23,7 @@ enum SplitBehavior
 enum UISplitViewControllerSplitBehavior : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 A split view controller’s split behavior controls how its secondary view controller appears in relation to the others. You can configure this behavior so that the secondary view controller always appears side-by-side with the others, so that it’s partially obscured by the others, or so that it’s displaced offscreen opposite the others to make space for them.
 

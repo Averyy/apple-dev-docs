@@ -21,7 +21,7 @@ Creates a new shape resource by applying a translation.
 @preconcurrency func offsetBy(translation: SIMD3<Float>) -> ShapeResource
 ```
 
-#### Return Value
+## Return Value
 
 The transformed resource.
 

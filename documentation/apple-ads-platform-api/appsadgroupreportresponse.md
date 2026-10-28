@@ -15,11 +15,11 @@ The top-level response envelope for apps ad group reports.
 object AppsAdGroupReportResponse
 ```
 
-#### Discussion
+## Discussion
 
 Check for the presence of `error` before processing `result` to handle failure cases cleanly.
 
-##### Example
+### Example
 
 ```json
 {

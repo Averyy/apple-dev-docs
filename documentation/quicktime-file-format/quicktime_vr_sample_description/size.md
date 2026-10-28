@@ -6,7 +6,7 @@
 
 The size, in bytes, of the sample description header structure.
 
-#### Overview
+## Overview
 
 The structure includes the VR world atom container contained in the `data` field.
 

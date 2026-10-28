@@ -22,14 +22,14 @@ optional func dropInteraction(_ interaction: UIDropInteraction, previewForDroppi
 - (UITargetedDragPreview *) dropInteraction:(UIDropInteraction *) interaction previewForDroppingItem:(UIDragItem *) item withDefault:(UITargetedDragPreview *) defaultPreview;
 ```
 
-#### Return Value
+## Return Value
 
 - The default preview, which is the same behavior as not implementing this method.
 - A targeted drag item preview that you create.
 - The preview returned after moving to a new preview target by using the `defaultPreview`’s [`retargetedPreview(with:)`](../uitargeteddragpreview/retargetedpreview%28with%29.md) method.
 - `nil` to fade the preview that is currently displayed to the user.
 
-#### Discussion
+## Discussion
 
 The system calls this method multiple times, once for each visible drag item. It shows the preview during the drop animation in order to visually *drop* the drag item into place.
 

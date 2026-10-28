@@ -25,7 +25,7 @@ let kCGImagePropertyNamedColorSpace: CFString
 extern CFStringRef const kCGImagePropertyNamedColorSpace;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is a [`CFString`](../CoreFoundation/cfstring.md).
 

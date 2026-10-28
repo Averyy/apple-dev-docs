@@ -23,7 +23,7 @@ optional func searchBarTextDidEndEditing(_ searchBar: UISearchBar)
 - (void) searchBarTextDidEndEditing:(UISearchBar *) searchBar;
 ```
 
-#### Discussion
+## Discussion
 
 Typically, you implement this method to perform the text-based search.
 

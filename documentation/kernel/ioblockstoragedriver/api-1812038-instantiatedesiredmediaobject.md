@@ -12,7 +12,7 @@ virtual IOMedia * instantiateDesiredMediaObject(
  void);
 ```
 
-#### Overview
+## Overview
 
 This method creates the exact type of IOMedia object desired. It is called by instantiateMediaObject. A subclass may override this one-line method to change the type of media object actually instantiated.
 

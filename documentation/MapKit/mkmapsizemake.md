@@ -21,7 +21,7 @@ Creates a new map size structure from the specified values.
 static MKMapSize MKMapSizeMake(double width, double height);
 ```
 
-#### Return Value
+## Return Value
 
 A map size with the specified values.
 

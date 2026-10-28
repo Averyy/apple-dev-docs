@@ -16,7 +16,7 @@ class XCTestObservationCenter
 @interface XCTestObservationCenter : NSObject
 ```
 
-#### Overview
+## Overview
 
 Observers can be any object that conforms to the [`XCTestObservation`](./xctestobservation.md) protocol. Register new observers with the [`addTestObserver(_:)`](./xctestobservationcenter/addtestobserver%28_%29.md) method and remove them with the [`removeTestObserver(_:)`](./xctestobservationcenter/removetestobserver%28_%29.md) method.
 

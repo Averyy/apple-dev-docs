@@ -25,7 +25,7 @@ optional func relinquishPresentedItem(toWriter writer: @escaping @Sendable ((@Se
 - (void) relinquishPresentedItemToWriter:(void (^)(void (^reacquirer)())) writer;
 ```
 
-#### Discussion
+## Discussion
 
 You use this method to provide an appropriate response when another object wants to write to your presented URL. For example, when this method is called, you would likely stop making changes to the file or directory. After taking any appropriate steps, you must execute the block in the `writer` parameter to let the waiting object know that it may now proceed with its task. If you want to be notified when the writer has completed its task, pass your own block to the writer and use that block to reacquire the file or URL for your own uses.
 

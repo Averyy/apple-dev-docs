@@ -23,7 +23,7 @@ class INCarSignalOptionsResolutionResult
 @interface INCarSignalOptionsResolutionResult : INIntentResolutionResult
 ```
 
-#### Overview
+## Overview
 
 Return an `INCarSignalOptionsResolutionResult` object when resolving the [`signals`](./inactivatecarsignalintent/signals.md) property of a [`INActivateCarSignalIntent`](./inactivatecarsignalintent.md) object. Use the creation method that best reflects your ability to successfully resolve the parameter.
 

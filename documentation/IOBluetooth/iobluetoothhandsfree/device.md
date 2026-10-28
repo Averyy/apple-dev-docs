@@ -19,11 +19,11 @@ var device: IOBluetoothDevice! { get }
 @property (retain, readonly) IOBluetoothDevice * device;
 ```
 
-#### Return Value
+## Return Value
 
 The IOBluetoothDevice object
 
-#### Discussion
+## Discussion
 
 Returns the IOBluetoothDevice to connect with.
 

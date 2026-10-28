@@ -21,7 +21,7 @@ Indicates a drawn path has completed and/or recognized.
 static let pathComplete: SensoryFeedback
 ```
 
-#### Discussion
+## Discussion
 
 Use this to provide feedback for closed shape drawing or similar actions. It should supplement the user experience, since only some platforms will play feedback in response to it.
 

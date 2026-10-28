@@ -24,7 +24,7 @@ var confidence: VNConfidence { get }
 @property (readonly) VNConfidence confidence;
 ```
 
-#### Discussion
+## Discussion
 
 A value of `0` indicates no confidence. A value of `1` indicates full confidence.
 

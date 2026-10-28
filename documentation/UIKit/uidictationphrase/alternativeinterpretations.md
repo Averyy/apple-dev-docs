@@ -23,7 +23,7 @@ var alternativeInterpretations: [String]? { get }
 @property (nonatomic, readonly, nullable) NSArray<NSString *> * alternativeInterpretations;
 ```
 
-#### Discussion
+## Discussion
 
 If the system determines only one textual interpretation of a dictated phrase, the value of this property is `nil`. If there’s more than one interpretation, this property contains an array of strings, with the first being most likely interpretation and the last being the least likely.
 

@@ -23,7 +23,7 @@ static func closedRange(_ range: ClosedRange<Int>, stride: Int = 1) -> any MLTen
 
 Available when `Self` is `_MLTensorRange`.
 
-#### Discussion
+## Discussion
 
 For example:
 

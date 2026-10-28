@@ -20,7 +20,7 @@ Returns a Boolean value that indicates whether two collections of joints are equ
 static func == (lhs: JointTransforms, rhs: JointTransforms) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` if the two collections of joints are equal. Otherwise, returns `false`.
 

@@ -24,7 +24,7 @@ Creates a reloading file provider using configuration from a reader.
 convenience init(snapshotType: Snapshot.Type = Snapshot.self, parsingOptions: Snapshot.ParsingOptions = .default, config: ConfigReader, logger: Logger = Logger(label: "ReloadingFileProvider"), metrics: any MetricsFactory = MetricsSystem.factory) async throws
 ```
 
-#### Configuration keys
+## Configuration keys
 
 - `filePath` (string, required): The path to the configuration file to monitor.
 - `allowMissing` (bool, optional, default: false): A flag controlling how the provider handles a missing file. When `false` (the default), if the file is missing or malformed, throws an error. When `true`, if the file is missing, treats it as empty. Malformed files still throw an error.

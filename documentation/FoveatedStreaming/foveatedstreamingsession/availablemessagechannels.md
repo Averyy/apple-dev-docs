@@ -16,7 +16,7 @@ A list of all available message channels in this session.
 final var availableMessageChannels: Set<FoveatedStreamingSession.MessageChannel.ID> { get }
 ```
 
-#### Discussion
+## Discussion
 
 Observe this property to know when the endpoint creates a new message channel. Message channels can only be initialized by the endpoint.
 

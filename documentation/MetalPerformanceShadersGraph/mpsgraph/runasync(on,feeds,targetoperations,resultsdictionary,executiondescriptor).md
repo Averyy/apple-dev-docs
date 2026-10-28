@@ -24,7 +24,7 @@ func runAsync(on commandQueue: any MTL4CommandQueue, feeds: [MPSGraphTensor : MP
 - (void) runAsyncWithMTL4CommandQueue:(id<MTL4CommandQueue>) commandQueue feeds:(MPSGraphTensorDataDictionary *) feeds targetOperations:(NSArray<MPSGraphOperation *> *) targetOperations resultsDictionary:(MPSGraphTensorDataDictionary *) resultsDictionary executionDescriptor:(MPSGraphExecutionDescriptor *) executionDescriptor;
 ```
 
-#### Discussion
+## Discussion
 
 It ensures all target operations also executed. This call is asynchronous and will return immediately if a completionHandler is set.
 

@@ -25,7 +25,7 @@ case maximumLineHeight
 kCTParagraphStyleSpecifierMaximumLineHeight
 ```
 
-#### Discussion
+## Discussion
 
 Glyphs and graphics exceeding this height overlap neighboring lines. A maximum height of `0` implies no line height limit. This value is always nonnegative. Type: [`CGFloat`](../../CoreFoundation/cgfloat-swift.struct.md). Default value: `0.0`. Affects: [`CTFramesetter`](../ctframesetter.md).
 

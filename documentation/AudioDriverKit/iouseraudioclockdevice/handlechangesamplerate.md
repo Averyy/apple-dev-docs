@@ -15,11 +15,11 @@ Tells the clock device the sample rate is changing.
 virtual kern_return_t HandleChangeSampleRate(double in_sample_rate);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 The default implementation calls [`SetSampleRate`](./setsamplerate.md) and returns [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md). Subclass and override this method to handle changes to the sample rate and return [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) upon success.
 

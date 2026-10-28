@@ -5,7 +5,7 @@
 
 Assemble angles from a multi-camera shooting as a unit.
 
-#### Overview
+## Overview
 
 A multicam media describes a collection of angles shot at the same time from multiple angles. Assemble footages synchronized in time from multiple cameras, or angles, using the `multicam` element. The `mc-angle` element describes the construction of each angle.
 
@@ -40,7 +40,7 @@ The code listing below shows a multicam definition with two angle definitions,�
 
 > **Note**:  Starting in FCPXML 1.4, specify visual adjustments on a multicam clip on individual angles instead of the entire clip.
 
-##### Using Multicam Media
+### Using Multicam Media
 
 To use the multicam media as a clip, add an `mc-clip` element that references the media in the timeline.
 

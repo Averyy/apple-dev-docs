@@ -23,7 +23,7 @@ var kDNSServiceErr_NATPortMappingDisabled: Int { get }
 kDNSServiceErr_NATPortMappingDisabled
 ```
 
-#### Discussion
+## Discussion
 
 The NAT gateway supports PCP, NAT-PMP or UPnP, but support is disabled by the administrator.
 

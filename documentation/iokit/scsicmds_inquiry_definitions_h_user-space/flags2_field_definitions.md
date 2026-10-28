@@ -37,7 +37,7 @@ enum {
 };
 ```
 
-#### Overview
+## Overview
 
 Definitions for bits/masks in the INQUIRY flags2 field.
 

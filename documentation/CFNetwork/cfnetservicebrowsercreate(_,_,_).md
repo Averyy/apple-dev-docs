@@ -26,11 +26,11 @@ func CFNetServiceBrowserCreate(_ alloc: CFAllocator?, _ clientCB: CFNetServiceBr
 extern CFNetServiceBrowserRefCFNetServiceBrowserCreate(CFAllocatorRef alloc, CFNetServiceBrowserClientCallBack clientCB, CFNetServiceClientContext *clientContext);
 ```
 
-#### Return Value
+## Return Value
 
 A new browser object, or `NULL` if the instance could not be created. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 This function creates an instance of a Network Service browser object, called a CFNetServiceBrowser, that can be used to search for domains and for services.
 
@@ -40,7 +40,7 @@ If you do not call [`CFNetServiceBrowserScheduleWithRunLoop(_:_:_:)`](./cfnetser
 
 To shut down a CFNetServiceBrowser that is running in asynchronous mode, call [`CFNetServiceBrowserStopSearch(_:_:)`](./cfnetservicebrowserstopsearch%28_,_%29.md), followed by [`CFNetServiceBrowserUnscheduleFromRunLoop(_:_:_:)`](./cfnetservicebrowserunschedulefromrunloop%28_,_,_%29.md), and then [`CFNetServiceBrowserInvalidate(_:)`](./cfnetservicebrowserinvalidate%28_%29.md).
 
-##### Special Considerations
+### Special Considerations
 
 This function is thread safe.
 

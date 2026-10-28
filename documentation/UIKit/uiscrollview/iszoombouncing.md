@@ -23,7 +23,7 @@ var isZoomBouncing: Bool { get }
 @property (nonatomic, readonly, getter=isZoomBouncing) BOOL zoomBouncing;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the scroll view is zooming back to a minimum or maximum zoom scaling value; otherwise, the value is [`false`](../../Swift/false.md).
 

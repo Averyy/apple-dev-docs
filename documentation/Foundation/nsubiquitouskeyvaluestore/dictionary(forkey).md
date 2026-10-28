@@ -25,7 +25,7 @@ func dictionary(forKey aKey: String) -> [String : Any]?
 - (NSDictionary<NSString *,id> *) dictionaryForKey:(NSString *) aKey;
 ```
 
-#### Return Value
+## Return Value
 
 The dictionary object associated with `aKey`, or `nil` if the key isn’t present. This method also returns `nil` if the retrieved value isn’t a dictionary object.
 

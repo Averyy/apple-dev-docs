@@ -18,7 +18,7 @@ Creates a range for a text selection that also specifies a direction.
 init(offset: Int, length: Int)
 ```
 
-#### Discussion
+## Discussion
 
 The sign of the `length` argument determines the selection’s direction from the `offset` argument.
 

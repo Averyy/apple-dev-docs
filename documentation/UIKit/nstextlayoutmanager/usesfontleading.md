@@ -23,7 +23,7 @@ var usesFontLeading: Bool { get set }
 @property BOOL usesFontLeading;
 ```
 
-#### Discussion
+## Discussion
 
 If set to `true`, uses the leading as specified by the font. However, this isn’t appropriate for most UI text. Defaults to `true`.
 

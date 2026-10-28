@@ -19,11 +19,11 @@ func fieldEditor(_ createFlag: Bool, for object: Any?) -> NSText?
 - (NSText *) fieldEditor:(BOOL) createFlag forObject:(id) object;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the field editor for the designated object (`object`) or, if `object` is `nil`, the default field editor. Returns `nil` if `createFlag` is [`false`](../../Swift/false.md) and if the field editor doesn’t exist.
 
-#### Discussion
+## Discussion
 
 The field editor is a single [`NSTextView`](../nstextview.md) object that is shared among all the controls in a window for light text-editing needs. It is automatically instantiated when needed, and it can be used however your application sees fit. Typically, the field editor is used by simple text-bearing objects—for example, an [`NSTextField`](../nstextfield.md) object uses its window’s field editor to display and manipulate text. The field editor can be shared by any number of objects, and so its state may be constantly changing. Therefore, it shouldn’t be used to display text that demands sophisticated layout (for this you should create a dedicated `NSTextView` object).
 

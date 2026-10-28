@@ -25,7 +25,7 @@ class let extendedLinearGray: CFString
 extern CFStringRef const kCGColorSpaceExtendedLinearGray;
 ```
 
-#### Discussion
+## Discussion
 
 This color space has the same colorimetry as [`linearGray`](./lineargray.md); in addition, you may encode component values below `0.0` and above `1.0`.
 

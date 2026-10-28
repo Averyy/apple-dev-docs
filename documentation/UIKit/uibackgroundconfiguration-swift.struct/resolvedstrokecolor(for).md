@@ -19,7 +19,7 @@ Generates the resolved stroke color for the specified tint color, using the stro
 func resolvedStrokeColor(for tintColor: UIColor) -> UIColor
 ```
 
-#### Discussion
+## Discussion
 
 The resulting color depends on [`strokeColor`](./strokecolor.md) and [`strokeColorTransformer`](./strokecolortransformer.md).
 

@@ -24,7 +24,7 @@ class UISearchSuggestionItem
 @interface UISearchSuggestionItem : NSObject
 ```
 
-#### Overview
+## Overview
 
 This class provides a basic implementation of the [`UISearchSuggestion`](./uisearchsuggestion.md) protocol.
 

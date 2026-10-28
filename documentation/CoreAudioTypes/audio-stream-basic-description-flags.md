@@ -5,7 +5,7 @@
 
 The standard format flags for an audio stream basic description.
 
-#### Overview
+## Overview
 
 When you use an [`AudioStreamBasicDescription`](./audiostreambasicdescription.md), the fields describe the complete layout of the sample data in the buffers that the description represents, whereas, typically, an [`AudioBuffer`](./audiobuffer.md) in an [`AudioBufferList`](./audiobufferlist.md) represents those buffers.
 

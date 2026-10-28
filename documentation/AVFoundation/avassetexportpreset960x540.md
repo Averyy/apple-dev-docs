@@ -24,7 +24,7 @@ let AVAssetExportPreset960x540: String
 extern NSString * const AVAssetExportPreset960x540;
 ```
 
-#### Discussion
+## Discussion
 
 The system doesn’t scale movies up from a smaller size.
 

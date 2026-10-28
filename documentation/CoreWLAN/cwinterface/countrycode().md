@@ -19,7 +19,7 @@ func countryCode() -> String?
 - (NSString *) countryCode;
 ```
 
-#### Discussion
+## Discussion
 
 Dynamically queries the interface for the current country code. Returns *nil* in the case of an error, or if the interface is *OFF*.
 

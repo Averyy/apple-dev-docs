@@ -19,7 +19,7 @@ class NSSearchToolbarItem
 @interface NSSearchToolbarItem : NSToolbarItem
 ```
 
-#### Overview
+## Overview
 
 [`NSSearchToolbarItem`](./nssearchtoolbaritem.md) automatically resizes to accommodate typing when the focus switches to the toolbar item. When the toolbar is low on space, the system may collapse the search item into a button representation, which then expands to a full search field when the user clicks on it.
 

@@ -21,11 +21,11 @@ Generates a locale-aware string representation of a date using the specified dat
 func formatted<F>(_ format: F) -> F.FormatOutput where F : FormatStyle, F.FormatInput == Date
 ```
 
-#### Return Value
+## Return Value
 
 A string, formatted according to the specified style.
 
-#### Discussion
+## Discussion
 
 For full customization of the string representation of a date, use the [`formatted(_:)`](./formatted%28_%29.md) instance method of [`Date`](../date.md) and provide a [`Date.FormatStyle`](./formatstyle.md) object.
 

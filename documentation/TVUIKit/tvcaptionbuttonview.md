@@ -19,7 +19,7 @@ class TVCaptionButtonView
 @interface TVCaptionButtonView : TVLockupView
 ```
 
-#### Overview
+## Overview
 
 A caption button responds to user interactions and can contain an image or text. When the caption button comes into focus, the caption button expands in the [`leading`](../AppKit/nsdirectionaledgeinsets/leading.md), [`top`](../AppKit/nsdirectionaledgeinsets/top.md), and [`trailing`](../AppKit/nsdirectionaledgeinsets/trailing.md) directions. The user can click the caption button to select an option. As the user moves their finger on the Siri Remote up and down, or left and right, the caption button may limit the direction of the tilt based on the type set in [`motionDirection`](./tvcaptionbuttonview/motiondirection.md).
 

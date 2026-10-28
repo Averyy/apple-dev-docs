@@ -21,7 +21,7 @@ Appends an interpolated numeric type using the specified attributes.
 mutating func appendInterpolation<T>(_ number: @autoclosure @escaping () -> T, format: OSLogIntegerFormatting = .decimal, align: OSLogStringAlignment = .none, privacy: OSLogPrivacy = .auto, attributes: String) where T : FixedWidthInteger
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  You don’t call this method directly. Instead, the framework calls it automatically when you append an interpolated type that adopts the [`FixedWidthInteger`](../../Swift/fixedwidthinteger.md) protocol to a log message.
 

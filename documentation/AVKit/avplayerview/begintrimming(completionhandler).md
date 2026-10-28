@@ -27,7 +27,7 @@ func beginTrimming() async -> AVPlayerViewTrimResult
 
 - [Implementing trimming in a macOS player](../implementing-trimming-in-a-macos-player.md)
 
-#### Discussion
+## Discussion
 
 An example implementation of the handler block is as follows:
 

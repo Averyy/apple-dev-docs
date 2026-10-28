@@ -15,7 +15,7 @@ A mapping of storefront country code to relevance score.
 object Artist.RelevanceScore.StorefrontOverrides
 ```
 
-#### Overview
+## Overview
 
 Country codes are lowercase ISO 3166-1 alpha-2 codes, for example, `us` or `gb`. When a storefront-specific score is available, use it instead of the default.
 

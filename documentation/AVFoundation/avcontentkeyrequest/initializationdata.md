@@ -25,7 +25,7 @@ var initializationData: Data? { get }
 @property (nonatomic, readonly, nullable) NSData * initializationData;
 ```
 
-#### Discussion
+## Discussion
 
 This property is specific to the container and the protocol.
 

@@ -23,11 +23,11 @@ init(carName: INSpeakableString?, signals: INCarSignalOptions = [])
 - (instancetype) initWithCarName:(INSpeakableString *) carName signals:(INCarSignalOptions) signals;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized `INActivateCarSignalIntent` object.
 
-#### Discussion
+## Discussion
 
 Normally, you do not create instances of this class yourself. Instead, Siri creates instances when the user asks for an audible or visual signal from the car. However, you can use this method during testing to create intent objects to validate your intent-handling code paths.
 

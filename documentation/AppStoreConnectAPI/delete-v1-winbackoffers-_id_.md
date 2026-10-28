@@ -9,11 +9,11 @@ The data structure that represents a delete-v1-win back offers-{id} resource.
 **Availability**:
 - App Store Connect API 3.6+
 
-#### Overview
+## Overview
 
 Remove a win-back offer for a specific subscription.
 
-#### Discussion
+## Discussion
 
 **Request**:
 

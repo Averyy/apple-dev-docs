@@ -21,7 +21,7 @@ Returns a Boolean value indicating whether the first argument represents a posit
 static func < (lhs: AnyIndex, rhs: AnyIndex) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 The types of the two underlying indices must be identical.
 

@@ -21,7 +21,7 @@ var pointsOfInterest: [CPPointOfInterest] { get }
 @property (nonatomic, readonly) NSArray<CPPointOfInterest *> * pointsOfInterest;
 ```
 
-#### Discussion
+## Discussion
 
 You must call the [`setPointsOfInterest(_:selectedIndex:)`](./setpointsofinterest%28_,selectedindex%29.md) method to update the points of interest the template displays.
 

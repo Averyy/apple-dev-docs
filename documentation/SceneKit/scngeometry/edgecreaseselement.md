@@ -25,7 +25,7 @@ var edgeCreasesElement: SCNGeometryElement? { get set }
 @property (nonatomic, retain, nullable) SCNGeometryElement * edgeCreasesElement;
 ```
 
-#### Discussion
+## Discussion
 
 This geometry element’s [`primitiveType`](../scngeometryelement/primitivetype.md) value must be [`SCNGeometryPrimitiveType.line`](../scngeometryprimitivetype/line.md). The geometry element’s data is an array of vertex indices, each pair of which defines a line segment identifying an edge to be treated as a crease during subdivision. Use the [`edgeCreasesSource`](./edgecreasessource.md) property to specify the smoothness or sharpness of each crease.
 

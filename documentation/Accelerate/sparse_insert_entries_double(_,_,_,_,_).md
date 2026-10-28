@@ -25,7 +25,7 @@ func sparse_insert_entries_double(_ A: sparse_matrix_double!, _ N: sparse_dimens
 sparse_status sparse_insert_entries_double(sparse_matrix_double A, sparse_dimension N, const double * restrictval, const sparse_index * restrictindx, const sparse_index * restrictjndx);
 ```
 
-#### Discussion
+## Discussion
 
 Use to build a sparse matrix by providing a list of point entries. For each entry provided, update `A[indx[i],jndx[i]] = val[i]`.
 

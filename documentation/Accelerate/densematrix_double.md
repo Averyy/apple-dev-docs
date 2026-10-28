@@ -25,7 +25,7 @@ struct DenseMatrix_Double
 typedef struct { ... } DenseMatrix_Double;
 ```
 
-#### Overview
+## Overview
 
 You typically use dense matrices to represent the unknowns matrix, *X*, and the right-hand-side matrix, *B*, in the matrix equation *AX = B.* A [`DenseMatrix_Double`](./densematrix_double.md) structure provides a pointer to its underlying data, and information about its structure and attributes.
 

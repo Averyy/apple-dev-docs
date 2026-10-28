@@ -26,7 +26,7 @@ subscript(id: IKRig.ConstraintsCollection.Element.ID) -> IKRig.ConstraintsCollec
 subscript(name: String) -> IKRig.ConstraintsCollection.Element? { get set }
 ```
 
-#### Overview
+## Overview
 
 > **Note**: Set `nil` to remove the element with matching identifier.
 

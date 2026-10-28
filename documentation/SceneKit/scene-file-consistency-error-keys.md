@@ -5,7 +5,7 @@
 
 Keys identifying errors found during a scene-file-format consistency check.
 
-#### Overview
+## Overview
 
 If you specify [`true`](../Swift/true.md) for the [`checkConsistency`](./scnscenesource/loadingoption/checkconsistency.md) when creating or loading from a scene source, SceneKit verifies the scene file against the specification for its file format. SceneKit reports any format verification issues that occur as an array of dictionaries, identified by the in the [`SCNDetailedErrorsKey`](./scndetailederrorskey.md) key in the [`userInfo`](../Foundation/nserror/userinfo.md) dictionary of an [`NSError`](../Foundation/nserror.md) object. Each item in the array is a dictionary containing one or more of the keys listed above.
 

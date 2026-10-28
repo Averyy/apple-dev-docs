@@ -19,7 +19,7 @@ var isTargetForDropOperation: Bool { get set }
 @property (getter=isTargetForDropOperation) BOOL targetForDropOperation;
 ```
 
-#### Discussion
+## Discussion
 
 When [`true`](../../Swift/true.md), the row view will draw a drop on indicator based on the current [`draggingDestinationFeedbackStyle`](../nstableview/draggingdestinationfeedbackstyle-swift.property.md).
 

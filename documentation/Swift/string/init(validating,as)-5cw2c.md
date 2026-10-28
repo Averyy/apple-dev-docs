@@ -21,7 +21,7 @@ Creates a new string by copying and validating the sequence of code units passed
 init?<Encoding>(validating codeUnits: some Sequence<Int8>, as encoding: Encoding.Type) where Encoding : _UnicodeEncoding, Encoding.CodeUnit == UInt8
 ```
 
-#### Discussion
+## Discussion
 
 This initializer does not try to repair ill-formed code unit sequences. If any are found, the result of the initializer is `nil`.
 

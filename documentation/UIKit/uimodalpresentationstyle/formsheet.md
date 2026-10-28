@@ -23,7 +23,7 @@ case formSheet
 UIModalPresentationFormSheet
 ```
 
-#### Discussion
+## Discussion
 
 In a regular-width, regular-height size class, the system adds a layer with a Liquid Glass effect over the background content and centers the view controller’s content on top of this layer. The default content size is smaller than that of the [`UIModalPresentationStyle.pageSheet`](./pagesheet.md) style. A part of the background content always remains visible.
 

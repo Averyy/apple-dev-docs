@@ -23,7 +23,7 @@ func loadRequest(_ request: URLRequest)
 - (void) loadRequest:(NSURLRequest *) request;
 ```
 
-#### Discussion
+## Discussion
 
 Don’t use this method to load local HTML files; instead, use [`loadHTMLString(_:baseURL:)`](./loadhtmlstring%28_,baseurl%29.md). To stop this load, use the [`stopLoading()`](./stoploading%28%29.md) method. To see whether the receiver is done loading the content, use the [`isLoading`](./isloading.md) property.
 

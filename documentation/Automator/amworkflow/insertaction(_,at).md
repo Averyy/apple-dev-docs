@@ -20,7 +20,7 @@ func insertAction(_ action: AMAction, at index: Int)
 - (void) insertAction:(AMAction *) action atIndex:(NSUInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 The workflow retains the action but does not copy it.
 

@@ -21,11 +21,11 @@ Creates a migration manager with the specified stages.
 - (instancetype) initWithMigrationStages:(NSArray<__kindof NSMigrationStage *> *) stages;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized migration manager, or `nil` if Core Data can’t create one.
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Core Data processes the migration stages in the order that you provide them.
 

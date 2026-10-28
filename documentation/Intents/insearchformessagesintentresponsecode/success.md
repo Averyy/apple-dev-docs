@@ -23,7 +23,7 @@ case success
 INSearchForMessagesIntentResponseCodeSuccess
 ```
 
-#### Discussion
+## Discussion
 
 Use this code when your app completed the search successfully, regardless of the number of found messags. If the search yielded one or more messages, provide the details of those messages in the [`messages`](../insearchformessagesintentresponse/messages.md) property.
 

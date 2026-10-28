@@ -22,11 +22,11 @@ optional func webView(_ webView: WKWebView, previewingViewControllerForElement e
 - (UIViewController *) webView:(WKWebView *) webView previewingViewControllerForElement:(WKPreviewElementInfo *) elementInfo defaultActions:(NSArray<id<WKPreviewActionItem>> *) previewActions;
 ```
 
-#### Return Value
+## Return Value
 
 Return `nil` to use Webkit’s default preview behavior. Returning a view controller allows [`webView(_:commitPreviewingViewController:)`](./webview%28_,commitpreviewingviewcontroller%29.md) to be invoked when the user performs a pop action.
 
-#### Discussion
+## Discussion
 
 To use the default actions, your app must return the actions to be run in your view controller’s implementation of [`previewActionItems`](../../UIKit/uiviewcontroller/previewactionitems.md).
 

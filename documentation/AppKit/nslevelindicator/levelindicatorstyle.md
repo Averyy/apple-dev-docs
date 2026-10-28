@@ -19,7 +19,7 @@ var levelIndicatorStyle: NSLevelIndicator.Style { get set }
 @property NSLevelIndicatorStyle levelIndicatorStyle;
 ```
 
-#### Discussion
+## Discussion
 
 See [`NSLevelIndicator.Style`](./style.md) for possible styles.
 

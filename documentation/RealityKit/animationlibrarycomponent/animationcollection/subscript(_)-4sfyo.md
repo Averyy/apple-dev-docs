@@ -30,7 +30,7 @@ subscript(bounds: Range<AnimationLibraryComponent.AnimationCollection.Index>) ->
 subscript(position: AnimationLibraryComponent.AnimationCollection.Index) -> AnimationLibraryComponent.AnimationCollection.Element { get }
 ```
 
-#### Return Value
+## Return Value
 
 An animation resource, or `nil` if the component can’t find one that maps to the `key`.
 

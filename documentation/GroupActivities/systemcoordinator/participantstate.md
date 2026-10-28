@@ -19,7 +19,7 @@ struct ParticipantState
 
 - [Adding spatial Persona support to an activity](../adding-spatial-persona-support-to-an-activity.md)
 
-#### Overview
+## Overview
 
 A [`SystemCoordinator.ParticipantState`](./participantstate.md) structure reports the current person’s ability to display a spatial Persona when joined to a group activity. A person can display a spatial Persona only if the device supports it, and only if they configured that spatial Persona in advance.
 

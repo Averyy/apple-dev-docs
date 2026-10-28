@@ -19,7 +19,7 @@ var isHorizontallyResizable: Bool { get set }
 @property (getter=isHorizontallyResizable) BOOL horizontallyResizable;
 ```
 
-#### Discussion
+## Discussion
 
 If `flag` is [`true`](../../Swift/true.md) it does; if `flag` is [`false`](../../Swift/false.md) it doesn’t
 

@@ -16,11 +16,11 @@ Returns the number of separate views to draw for the frame.
 size_t cp_drawable_get_view_count(cp_drawable_t drawable);
 ```
 
-#### Return Value
+## Return Value
 
 The number of separate views to draw.
 
-#### Discussion
+## Discussion
 
 The number of views corresponds to the number of separate versions of your scene you create for the frame. For a device with stereoscopic video, you render two views — one for each eye. The actual number of views can vary based on the drawing environment or your app’s configuration. For example, you typically render only one view in Simulator.
 

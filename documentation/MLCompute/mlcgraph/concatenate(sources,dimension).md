@@ -23,7 +23,7 @@ func concatenate(sources: [MLCTensor], dimension: Int) -> MLCTensor?
 - (MLCTensor *) concatenateWithSources:(NSArray<MLCTensor *> *) sources dimension:(NSUInteger) dimension;
 ```
 
-#### Return Value
+## Return Value
 
 A result tensor.
 

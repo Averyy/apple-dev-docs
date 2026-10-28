@@ -23,7 +23,7 @@ init(width: Int, height: Int, pixelFormat: Format.Type = Format.self)
 
 Available when `Format` conforms to `StaticPixelFormat`.
 
-#### Discussion
+## Discussion
 
 This initializer allocates but doesn’t initialize the pixel buffer’s memory. That is, the operation doesn’t guarantee that all pixel values are zero.
 

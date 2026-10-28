@@ -5,7 +5,7 @@
 
 Create enumerators to specify your file provider’s content, and track changes to that content.
 
-#### Overview
+## Overview
 
 To display your file provider’s items to the user, you tell the system about those items and any changes to their contents. You do this by providing enumerators.
 

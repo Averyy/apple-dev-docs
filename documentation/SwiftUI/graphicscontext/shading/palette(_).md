@@ -21,7 +21,7 @@ Returns a multilevel shading instance constructed from an array of shading insta
 static func palette(_ array: [GraphicsContext.Shading]) -> GraphicsContext.Shading
 ```
 
-#### Return Value
+## Return Value
 
 A shading instance composed from the given instances.
 

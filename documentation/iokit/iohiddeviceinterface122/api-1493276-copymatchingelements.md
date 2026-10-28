@@ -16,11 +16,11 @@ Obtains specific elements defined by the device.
 IOReturn (*copyMatchingElements)(void *self, CFDictionaryRef matchingDict, CFArrayRef *elements);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOReturn code.
 
-#### Discussion
+## Discussion
 
 Using keys defined in IOHIDKeys.h for elements, create a matching dictonary containing items that you wish to search for. A null array indicates that no elements matching that criteria were found. Each item in the array is a reference to the same dictionary item that represents each element in the I/O Registry. It is up to the caller to release the returned array of elements.
 

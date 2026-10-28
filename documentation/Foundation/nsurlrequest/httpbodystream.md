@@ -25,7 +25,7 @@ var httpBodyStream: InputStream? { get }
 @property (retain, readonly, nullable) NSInputStream * HTTPBodyStream;
 ```
 
-#### Discussion
+## Discussion
 
 `nil` if the body stream has not been set. The returned stream is for examination only—it is not safe to manipulate the stream in any way.
 

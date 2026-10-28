@@ -21,7 +21,7 @@ final func requestAppInstallationFromBrowser(for url: URL, referrer: URL) async 
 
 - [Enabling alternative distribution app installation in a browser](../enabling-alternative-distribution-app-installation-in-a-browser.md)
 
-#### Discussion
+## Discussion
 
 Web browsers that render with [BrowserEngineKit](../../BrowserEngineKit/BrowserEngineKit.md) rather than [WebKit](../../WebKit/WebKit.md) call this method to forward the installation of an app from the developer’s webpage. Your browser listens for [`MarketplaceKitURIScheme`](../marketplacekiturischeme.md) invocations to field such requests.
 

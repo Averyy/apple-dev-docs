@@ -23,7 +23,7 @@ func ensureGlyphs(forCharacterRange charRange: NSRange)
 - (void) ensureGlyphsForCharacterRange:(NSRange) charRange;
 ```
 
-#### Discussion
+## Discussion
 
 The layout manager reserves the right to perform glyph generation for larger ranges. If noncontiguous layout is disabled, then the affected range is always effectively extended to start at the beginning of the text.
 

@@ -27,7 +27,7 @@ func BNNSFilterCreateLayerDropout(_ layer_params: UnsafePointer<BNNSLayerParamet
 BNNSFilterBNNSFilterCreateLayerDropout(const BNNSLayerParametersDropout *layer_params, const BNNSFilterParameters *filter_params);
 ```
 
-#### Discussion
+## Discussion
 
 Use a dropout layer to randomly set the elements—or entire dimensions—of a tensor to 0. The layer scales the unchanged elements by `1 / (1 -` [`rate`](./bnnslayerparametersdropout/rate.md) `)`. The following code randomly drops half the elements from a 4 x 4 matrix:
 

@@ -20,7 +20,7 @@ A notification that the [`beginFindString(_:withOptions:)`](./pdfdocument/beginf
 extern NSNotificationName const PDFDocumentDidEndFindNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The [`beginFindString(_:withOptions:)`](./pdfdocument/beginfindstring%28_,withoptions%29.md) method returns immediately, so this notification is posted when the “find” operation is finished.
 

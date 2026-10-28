@@ -19,7 +19,7 @@ var menu: NSMenu { get set }
 @property (strong) NSMenu * menu;
 ```
 
-#### Discussion
+## Discussion
 
 The combo button executes the menu item’s action when someone selects that item, so make sure to configure the targets and actions for each menu item in your menu.
 

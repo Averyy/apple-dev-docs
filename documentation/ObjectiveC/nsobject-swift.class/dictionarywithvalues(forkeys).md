@@ -25,11 +25,11 @@ func dictionaryWithValues(forKeys keys: [String]) -> [String : Any]
 - (NSDictionary<NSString *,id> *) dictionaryWithValuesForKeys:(NSArray<NSString *> *) keys;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary containing as keys the property names in `keys`, with corresponding values being the corresponding property values.
 
-#### Discussion
+## Discussion
 
 The default implementation invokes [`value(forKey:)`](./value%28forkey%29.md) for each key in `keys` and substitutes `NSNull` values in the dictionary for returned `nil` values.
 

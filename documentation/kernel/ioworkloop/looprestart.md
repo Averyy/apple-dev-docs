@@ -9,7 +9,7 @@
 bool loopRestart;
 ```
 
-#### Overview
+## Overview
 
 Set if an event chain has been changed and the system has to be rechecked from start. (Internal use only)
 

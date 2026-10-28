@@ -22,7 +22,7 @@ Returns the smallest volumetric entity that contains the two source entities.
 func union(_ other: Self) -> Self
 ```
 
-#### Discussion
+## Discussion
 
 - Returns The union of `self` and `other`.
 

@@ -22,7 +22,7 @@ The value that all entities in the section share for a specified key path.
 @preconcurrency let id: SectionIdentifier
 ```
 
-#### Discussion
+## Discussion
 
 Specify the key path that the entities share this value with by setting the [`SectionedFetchRequest`](../../sectionedfetchrequest.md) instance’s `sectionIdentifier` parameter during initialization, or by modifying the corresponding [`SectionedFetchResults`](../../sectionedfetchresults.md) instance’s [`sectionIdentifier`](../sectionidentifier.md) property.
 

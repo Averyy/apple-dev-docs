@@ -21,7 +21,7 @@ The current task’s priority.
 var priority: TaskPriority { get }
 ```
 
-#### Discussion
+## Discussion
 
 > **See Also**: `TaskPriority`
 

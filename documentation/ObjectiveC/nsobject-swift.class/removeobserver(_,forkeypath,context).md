@@ -25,7 +25,7 @@ func removeObserver(_ observer: NSObject, forKeyPath keyPath: String, context: U
 - (void) removeObserver:(NSObject *) observer forKeyPath:(NSString *) keyPath context:(void *) context;
 ```
 
-#### Discussion
+## Discussion
 
 Examining the value in `context` you are able to determine precisely which [`addObserver(_:forKeyPath:options:context:)`](./addobserver%28_,forkeypath,options,context%29.md) invocation was used to create the observation relationship. When the same observer is registered for the same key-path multiple times, but with different context pointers, an application can determine specifically which object to stop observing. It is an error to call [`removeObserver(_:forKeyPath:context:)`](./removeobserver%28_,forkeypath,context%29.md) if the object has not been registered as an observer.
 

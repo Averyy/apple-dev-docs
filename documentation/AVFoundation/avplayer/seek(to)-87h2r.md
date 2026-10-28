@@ -31,7 +31,7 @@ func seek(to time: CMTime)
 - [Controlling the transport behavior of a player](../controlling-the-transport-behavior-of-a-player.md)
 - [Presenting chapter markers](../presenting-chapter-markers.md)
 
-#### Discussion
+## Discussion
 
 The time to which the player seeks may differ from the specified requested time for efficiency. For sample accurate seeking see [`seek(to:toleranceBefore:toleranceAfter:)`](./seek%28to,tolerancebefore,toleranceafter%29.md).
 

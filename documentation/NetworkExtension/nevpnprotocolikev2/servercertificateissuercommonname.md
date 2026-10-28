@@ -24,7 +24,7 @@ var serverCertificateIssuerCommonName: String? { get set }
 @property (copy, nullable) NSString * serverCertificateIssuerCommonName;
 ```
 
-#### Discussion
+## Discussion
 
 This string helps verify the identity of the IKEv2 server.
 

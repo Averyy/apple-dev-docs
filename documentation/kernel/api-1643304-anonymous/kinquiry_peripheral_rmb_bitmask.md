@@ -13,7 +13,7 @@
 kINQUIRY_PERIPHERAL_RMB_BitMask = 0x80
 ```
 
-#### Discussion
+## Discussion
 
 Mask to use for RMB field.
 

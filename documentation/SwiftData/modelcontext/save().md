@@ -26,7 +26,7 @@ func save() throws
 
 - [Preserving your app’s model data across launches](../preserving-your-apps-model-data-across-launches.md)
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: Use the [`hasChanges`](./haschanges.md) property to determine whether the context has uncommitted changes before invoking this method. Otherwise, SwiftData may perform unnecessary work.
 

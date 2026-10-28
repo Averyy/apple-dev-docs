@@ -16,7 +16,7 @@ Type for AssertionLevel argument to IOPMAssertionCreate
 typedef uint32_t IOPMAssertionLevel;
 ```
 
-#### Discussion
+## Discussion
 
 Possible values for `IOPMAssertionLevel` are [`kIOPMAssertionLevelOff`](./api-1557096-assertion/kiopmassertionleveloff.md) and [`kIOPMAssertionLevelOn`](./api-1557096-assertion/kiopmassertionlevelon.md)
 

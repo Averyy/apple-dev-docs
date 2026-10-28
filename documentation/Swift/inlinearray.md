@@ -22,11 +22,11 @@ A fixed-size array.
 struct InlineArray<let count : Int, Element> where Element : ~Copyable
 ```
 
-#### Overview
+## Overview
 
 An `InlineArray` is a specialized container that doesn’t use a separate memory allocation just to store its elements. When a value is copied, all of its elements are copied eagerly, like those of a tuple. Use an `InlineArray` when you have a fixed number of elements and need to avoid a separate heap allocation.
 
-#### Initializing a Value
+## Initializing a Value
 
 When initializing a new `InlineArray` value, you must initialize all of its elements. You can use an array literal just as with `Array`, rely on type inference for the `count` and `Element` type, and spell the type with the shorthand `[count of Element]`.
 
@@ -44,7 +44,7 @@ let h: [_ of _]            = [1, 2, 3]
 
 You can also use one of the type’s initializers to create a new value.
 
-#### Accessing Elements
+## Accessing Elements
 
 Just as with `Array`, you can read and modify an element in an `InlineArray` using a subscript. Unless you use the memory-unsafe `unchecked` subscript, any index you provide is subject to bounds checking; an invalid index triggers a runtime error in your program.
 
@@ -64,11 +64,11 @@ for index in values.indices {
 }
 ```
 
-#### Working with Noncopyable Elements
+## Working with Noncopyable Elements
 
 An `InlineArray` can store elements of potentially noncopyable type. When `Element` isn’t copyable, the `InlineArray` itself also isn’t copyable. You must then explicitly move or consume the value if you want to transfer ownership.
 
-#### Memory Layout
+## Memory Layout
 
 An `InlineArray` stores its elements contiguously. If an `InlineArray` is a stored property of a class, then it’s allocated on the heap along with the other stored properties of the class. Otherwise, in general, an `InlineArray` is allocated on the stack.
 

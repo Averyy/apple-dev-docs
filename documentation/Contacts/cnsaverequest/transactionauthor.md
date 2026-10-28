@@ -23,7 +23,7 @@ var transactionAuthor: String? { get set }
 @property (nonatomic, copy, nullable) NSString * transactionAuthor;
 ```
 
-#### Discussion
+## Discussion
 
 Specify a string to identify a transaction author when you save changes. Then, when you configure a [`CNChangeHistoryFetchRequest`](../cnchangehistoryfetchrequest.md), provide the same string in [`excludedTransactionAuthors`](../cnchangehistoryfetchrequest/excludedtransactionauthors.md) to prevent fetching changes that the author already knows about.
 

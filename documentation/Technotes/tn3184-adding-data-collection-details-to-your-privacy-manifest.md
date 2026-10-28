@@ -5,7 +5,7 @@
 
 Declare the data your app or third-party SDK collects in a privacy manifest.
 
-#### Overview
+## Overview
 
 When you build an app or third-party SDK that collects any data type, perform these steps in your privacy manifest (`PrivacyInfo.xcprivacy`):
 
@@ -18,7 +18,7 @@ This document describes how to add the `NSPrivacyCollectedDataType`, `NSPrivacyC
 
 > **Note**:  Before you start adding the keys to your privacy manifest, enable raw keys and values in Xcode to view the raw keys and hide their human-readable names. Click anywhere in the privacy manifest, then choose Xcode > Editor > Raw Keys and Values. Repeat the process to disable this feature.
 
-#### Add a collected data type key
+## Add a collected data type key
 
 The `NSPrivacyCollectedDataType` key uses the following format:
 
@@ -39,7 +39,7 @@ To add the `NSPrivacyCollectedDataType` key to a privacy collected data type and
 6. Select a data type from the pop-up menu in the Value column. For possible values, see “Report the categories of data your app or third-party SDK collects“ in [Describing data use in privacy manifests](../BundleResources/describing-data-use-in-privacy-manifests.md).
 7. Confirm that the value exactly matches the type of data your app or third-party SDK collects.
 
-#### Add a collected data type linked key
+## Add a collected data type linked key
 
 The `NSPrivacyCollectedDataTypeLinked` key uses the following format:
 
@@ -59,7 +59,7 @@ To add the `NSPrivacyCollectedDataTypeLinked` key to a privacy collected data ty
 5. In the Type column, confirm that the value is `Boolean`.
 6. Select `YES` from the pop-up menu in the Value column if your app or third-party SDK links this data type to the user’s identity; otherwise, select `NO`.
 
-#### Add a collected data type tracking key
+## Add a collected data type tracking key
 
 The `NSPrivacyCollectedDataTypeTracking` key uses the following format:
 
@@ -78,7 +78,7 @@ To add the `NSPrivacyCollectedDataTypeTracking` key to a privacy collected data 
 5. In the Type column, confirm that the value is `Boolean`.
 6. Select `YES` from the pop-up menu in the Value column if your app or third-party SDK uses this data type to track; otherwise, select `NO`.
 
-#### Add a collected data type purposes key
+## Add a collected data type purposes key
 
 The `NSPrivacyCollectedDataTypePurposes` key uses the following format:
 
@@ -106,7 +106,7 @@ To add the `NSPrivacyCollectedDataTypePurposes` key to a privacy collected data 
 
 Repeat the last two steps for each reason your app or third-party SDK collects this data type.
 
-#### Add a collected data type and reasons dictionary
+## Add a collected data type and reasons dictionary
 
 A privacy collected data type and reasons dictionary includes a data type, a data linked to the user status, a tracking status, and a list of reasons for collecting this data type. The dictionary contains exactly four keys: `NSPrivacyCollectedDataType`, `NSPrivacyCollectedDataTypeLinked`, `NSPrivacyCollectedDataTypeTracking`, and `NSPrivacyCollectedDataTypePurposes`. It uses the following format:
 
@@ -146,7 +146,7 @@ To add a privacy collected data type and reasons dictionary to the `NSPrivacyCol
 9. To add the `NSPrivacyCollectedDataTypeTracking` key to the dictionary, see [Add a collected data type tracking key](./tn3184-adding-data-collection-details-to-your-privacy-manifest.md#Add-a-collected-data-type-tracking-key).
 10. To add the `NSPrivacyCollectedDataTypePurposes` key to the dictionary, see [Add a collected data type purposes key](./tn3184-adding-data-collection-details-to-your-privacy-manifest.md#Add-a-collected-data-type-purposes-key).
 
-#### Add the collected data types key
+## Add the collected data types key
 
 The `NSPrivacyCollectedDataTypes` key is an array of privacy collected data type and reasons dictionaries. For more information, see [Add a collected data type and reasons dictionary](./tn3184-adding-data-collection-details-to-your-privacy-manifest.md#Add-a-collected-data-type-and-reasons-dictionary). The key uses the following format:
 
@@ -262,7 +262,7 @@ Repeat step 5 for each additional data type your app or third-party SDK collects
 
 ![A privacy manifest that declares the contacts and user ID information collected from the user.](https://developer.apple.com/tutorials/images/com.apple.technotes/tn3184-privacy_collected_data_entries@2x.png)
 
-#### Revision History
+## Revision History
 
 - **2024-12-17** First published.
 

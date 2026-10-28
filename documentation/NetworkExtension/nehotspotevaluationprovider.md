@@ -18,7 +18,7 @@ A protocol that defines methods and properties your extension implements to hand
 protocol NEHotspotEvaluationProvider : AppExtension
 ```
 
-#### Overview
+## Overview
 
 Conform to this protocol in your hotspot helper app extension.
 

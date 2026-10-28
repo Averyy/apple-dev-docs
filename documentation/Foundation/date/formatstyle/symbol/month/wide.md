@@ -21,7 +21,7 @@ The full representation of a month.
 static var wide: Date.FormatStyle.Symbol.Month { get }
 ```
 
-#### Discussion
+## Discussion
 
 This custom format style conveys the full representation of a month, like  `September`.
 

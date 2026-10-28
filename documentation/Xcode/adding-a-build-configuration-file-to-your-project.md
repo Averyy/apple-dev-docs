@@ -5,7 +5,7 @@
 
 Specify your project’s build settings in plain-text files, and supply different settings for debug and release builds.
 
-#### Overview
+## Overview
 
 A build configuration file is a plain-text file you use to specify the build settings for a specific target or your entire project. Build configuration files make it easier to manage build settings yourself, and to change build settings automatically for different architectures and platforms. With a build configuration file, you place only the settings you want to modify in a text file. You can create multiple files, each with different combinations of build settings, and you can change the settings quickly for your target or project. Xcode layers your settings on top of other project-related settings to create the final build configuration.
 
@@ -17,7 +17,7 @@ Build configuration files are particularly useful in the following situations:
 
 For more information about how build configuration files integrate with your project’s other settings values, see [Configuring the build settings of a target](./configuring-the-build-settings-of-a-target.md).
 
-##### Add a build configuration file to your project
+### Add a build configuration file to your project
 
 A build configuration file is a text file with an `.xcconfig` filename extension that you add to your project. You can create as many build configuration files as you want, and you configure different settings in each one. For example, you might use one build configuration file for debug settings and another for release settings.
 
@@ -32,7 +32,7 @@ To create a build configuration file:
 
 ![A figure that shows the selection of the Configuration Settings File template in Xcode’s file template chooser.](https://developer.apple.com/tutorials/images/com.apple.Xcode/build-configuration-creation@2x.png)
 
-##### Map build settings to a build configuration
+### Map build settings to a build configuration
 
 You can specify different build configuration files for debug and release builds, and you can layer configuration files on top of other settings. To specify build configuration files:
 
@@ -47,7 +47,7 @@ Xcode applies settings from a build configuration file before the corresponding 
 
 For more information about the order in which Xcode applies settings, see [Configuring the build settings of a target](./configuring-the-build-settings-of-a-target.md).
 
-##### Assign a value to a setting
+### Assign a value to a setting
 
 To specify a new value for a setting, add that setting to your configuration file using the following format:
 
@@ -78,7 +78,7 @@ OTHER_LDFLAGS = -lncurses
 
 For a list of build settings, see [Build settings reference](./build-settings-reference.md).
 
-##### Augment a setting with additional values
+### Augment a setting with additional values
 
 In some cases, you might want to extend a setting rather than overwrite its current value. For example, you might want to add more flags to a compiler instead of replacing the existing flags. To extend a setting’s existing value, add the `$(inherited)` keyword to the value of your setting, as shown in the following example:
 
@@ -86,7 +86,7 @@ In some cases, you might want to extend a setting rather than overwrite its curr
 OTHER_SWIFT_FLAGS = $(inherited) -v
 ```
 
-##### Refer to the value of another setting
+### Refer to the value of another setting
 
 To reuse an existing build setting’s value, place the name of the setting in a string of the form `$(SettingName)`. When evaluating your build settings, Xcode replaces these references with the values of the corresponding settings. For example, the following definition assigns the value of the `SYMROOT` build setting to the `OBJROOT` setting:
 
@@ -101,7 +101,7 @@ DSTROOT = /tmp/$(PROJECT_NAME).dst
 CONFIGURATION_BUILD_DIR = $(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 ```
 
-##### Apply a setting conditionally to a platform or architecture
+### Apply a setting conditionally to a platform or architecture
 
 Add a conditional expression after a build setting to apply that setting only when a specific platform or architecture is active. To specify a conditional expression, enclose it in square brackets after the build setting name, as shown in the following example:
 
@@ -123,7 +123,7 @@ To add multiple conditions to the same build setting, place each condition in se
 OTHER_LDFLAGS[sdk=macos*][arch=x86_64] = -lncurses
 ```
 
-##### Include settings from other build configuration files
+### Include settings from other build configuration files
 
 When you specify the build configuration file for your target, you must select only one file, but that file can include settings from other configuration files. To import the settings from a different configuration file, add an `#include` statement:
 
@@ -144,7 +144,7 @@ Xcode looks for included build configuration files in the same directory as the 
 #include "/Users/MyUserName/Desktop/MyOtherConfigFile.xcconfig" // At the specific path.
 ```
 
-##### Add comments to your settings
+### Add comments to your settings
 
 Add comments to your build configuration files to include notes or other information that’s relevant to you. Specify your comments on a single line preceded by two forward slashes (`//`). The build system ignores everything from the comment delimiter to the end of the current line. For example:
 

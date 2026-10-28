@@ -18,7 +18,7 @@ Surface shared content and collaborate in your app.
 
 - [Adding shared content collaboration to your app](./adding-shared-content-collaboration-to-your-app.md)
 
-#### Overview
+## Overview
 
 Access and view content shared from Messages across the system and continue the messaging experience without leaving your app. Incorporate Shared with You to make it easier for people to access content shared through conversations or notifications.
 

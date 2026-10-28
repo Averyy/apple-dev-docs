@@ -25,7 +25,7 @@ let kCMSampleBufferConduitNotification_InhibitOutputUntil: CFString
 extern CFStringRef const kCMSampleBufferConduitNotification_InhibitOutputUntil;
 ```
 
-#### Discussion
+## Discussion
 
 A conduit of sample buffers (for example, a buffer queue; see [CMBufferQueue](./cmbufferqueue-api.md)) posts this notification when a discontinuity in decoding occurs. The `userInfo` dictionary for this notification contains the [`kCMSampleBufferConduitNotificationParameter_ResumeTag`](./kcmsamplebufferconduitnotificationparameter_resumetag.md) key, whose value specifies a tag that indicates when output should resume.
 

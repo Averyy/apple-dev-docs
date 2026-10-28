@@ -25,7 +25,7 @@ func xpc_array_get_dictionary(_ xarray: xpc_object_t, _ index: Int) -> xpc_objec
 extern xpc_object_txpc_array_get_dictionary(xpc_object_t xarray, size_t index);
 ```
 
-#### Return Value
+## Return Value
 
 The object at the specified index within the array or `NULL` if the given object was not an XPC array or if the the value at the specified index was not a dictionary.
 

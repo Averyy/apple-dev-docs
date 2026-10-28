@@ -19,11 +19,11 @@ class var shared: NSDocumentController { get }
 @property (class, strong, readonly) NSDocumentController * sharedDocumentController;
 ```
 
-#### Return Value
+## Return Value
 
 The shared `NSDocumentController` instance.
 
-#### Discussion
+## Discussion
 
 If an `NSDocumentController` instance doesn’t exist yet, it is created.
 

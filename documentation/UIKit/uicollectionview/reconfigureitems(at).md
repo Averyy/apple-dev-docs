@@ -23,7 +23,7 @@ func reconfigureItems(at indexPaths: [IndexPath])
 - (void) reconfigureItemsAtIndexPaths:(NSArray<NSIndexPath *> *) indexPaths;
 ```
 
-#### Discussion
+## Discussion
 
 To update the contents of existing (including prefetched) cells without replacing them with new cells, use this method instead of [`reloadItems(at:)`](./reloaditems%28at%29.md). For optimal performance, choose to reconfigure items instead of reloading items unless you have an explicit need to replace the existing cell with a new cell.
 

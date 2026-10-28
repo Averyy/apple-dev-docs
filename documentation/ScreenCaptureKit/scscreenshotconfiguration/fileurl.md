@@ -20,7 +20,7 @@ var fileURL: URL? { get set }
 @property (nonatomic, strong, nullable) NSURL * fileURL;
 ```
 
-#### Discussion
+## Discussion
 
 If `imageOutputURL` is `nil`, then the file isn’t saved.
 

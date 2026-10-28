@@ -26,7 +26,7 @@ var element: XCUIElement { get }
 @property (readonly) XCUIElement * element;
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`element`](./element.md) property to access a query’s result when you expect a single matching element for the query, but want to check for multiple ambiguous matches before accessing the result. The [`element`](./element.md) property traverses your app’s accessibility tree to check for multiple matching elements before returning, and fails the current test if there isn’t a single matching element.
 

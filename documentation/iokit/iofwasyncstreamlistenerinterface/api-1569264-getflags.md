@@ -16,7 +16,7 @@ get the flags of listener.
 UInt32 (*GetFlags)(IOFWAsyncStreamListenerInterfaceRef self);
 ```
 
-#### Return Value
+## Return Value
 
 flags.
 

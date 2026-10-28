@@ -20,7 +20,7 @@ func entityDeclaration(forName name: String) -> XMLDTDNode?
 - (NSXMLDTDNode *) entityDeclarationForName:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 An autoreleased [`XMLDTDNode`](../xmldtdnode.md) object, or `nil` if there is no match.
 

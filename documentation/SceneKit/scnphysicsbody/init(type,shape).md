@@ -25,11 +25,11 @@ convenience init(type: SCNPhysicsBodyType, shape: SCNPhysicsShape?)
 + (instancetype) bodyWithType:(SCNPhysicsBodyType) type shape:(SCNPhysicsShape *) shape;
 ```
 
-#### Return Value
+## Return Value
 
 A new physics body object.
 
-#### Discussion
+## Discussion
 
 For the body to participate in collision detection or respond to forces, you must attach it to the [`physicsBody`](../scnnode/physicsbody.md) property of an [`SCNNode`](../scnnode.md) object in a scene.
 

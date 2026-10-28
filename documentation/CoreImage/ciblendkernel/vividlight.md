@@ -24,7 +24,7 @@ class var vividLight: CIBlendKernel { get }
 @property (class, strong, readonly) CIBlendKernel * vividLight;
 ```
 
-#### Discussion
+## Discussion
 
 ![The result of using the vivid light blend kernel (background image is top left, foreground image is bottom left)](https://developer.apple.com/tutorials/images/com.apple.coreimage/media-2926888@2x.png)
 

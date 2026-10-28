@@ -27,7 +27,7 @@ protocol Publisher<Output, Failure>
 - [Receiving and Handling Events with Combine](./receiving-and-handling-events-with-combine.md)
 - [Using Combine for Your App’s Asynchronous Code](./using-combine-for-your-app-s-asynchronous-code.md)
 
-#### Overview
+## Overview
 
 A publisher delivers elements to one or more [`Subscriber`](./subscriber.md) instances. The subscriber’s [`Input`](./subscriber/input.md) and [`Failure`](./subscriber/failure.md) associated types must match the [`Output`](./publisher/output.md) and [`Failure`](./publisher/failure.md) types declared by the publisher. The publisher implements the [`receive(subscriber:)`](./publisher/receive%28subscriber%29.md)method to accept a subscriber.
 
@@ -41,7 +41,7 @@ Every `Publisher` must adhere to this contract for downstream subscribers to fun
 
 > 💡 **Tip**: A Combine publisher fills a role similar to, but distinct from, the [`AsyncSequence`](../Swift/asyncsequence.md) in the Swift standard library. A `Publisher` and an `AsyncSequence` both produce elements over time. However, the pull model in Combine uses a [`Subscriber`](./subscriber.md) to request elements from a publisher, while Swift concurrency uses the `for`-`await`-`in` syntax to iterate over elements published by an `AsyncSequence`. Both APIs offer methods to modify the sequence by mapping or filtering elements, while only Combine provides time-based operations like [`debounce(for:scheduler:options:)`](./publisher/debounce%28for,scheduler,options%29.md) and [`throttle(for:scheduler:latest:)`](./publisher/throttle%28for,scheduler,latest%29.md), and combining operations like [`merge(with:)`](./publisher/merge%28with%29-7fk3a.md) and [`combineLatest(_:_:)`](./publisher/combinelatest%28_,_%29-1n30g.md). To bridge the two approaches, the property [`values`](./publisher/values-1dm9r.md) exposes a publisher’s elements as an `AsyncSequence`, allowing you to iterate over them with `for`-`await`-`in` rather than attaching a [`Subscriber`](./subscriber.md).
 
-##### Using operators
+### Using operators
 
 Extensions on `Publisher` define a wide variety of *operators* that you compose to create sophisticated event-processing chains. Each operator returns a type that implements the [`Publisher`](./publisher.md) protocol Most of these types exist as extensions on the [`Publishers`](./publishers.md) enumeration. For example, the [`map(_:)`](./publisher/map%28_%29-99evh.md) operator returns an instance of [`Publishers.Map`](./publishers/map.md).
 
@@ -62,7 +62,7 @@ let cancellable = [1, 2, 3, 4, 5].publisher
 // Even number: 4
 ```
 
-#### Creating Your Own Publishers
+## Creating Your Own Publishers
 
 Rather than implementing the `Publisher` protocol yourself, you can create your own publisher by using one of several types provided by the Combine framework:
 

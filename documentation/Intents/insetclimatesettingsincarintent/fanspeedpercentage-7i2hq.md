@@ -20,7 +20,7 @@ A floating-point value indicating the requested fan speed specified as a percent
 final var fanSpeedPercentage: Double? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Convert the value in this property to an appropriate fan speed setting in your vehicle. For example, if the user asks to set the fan speed to 50%, select a fan speed halfway between the minimum and maximum values.
 

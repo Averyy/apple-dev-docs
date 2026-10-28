@@ -23,7 +23,7 @@ var animationRepeatCount: Int { get set }
 @property (nonatomic) NSInteger animationRepeatCount;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0`, which specifies to repeat the animation indefinitely.
 

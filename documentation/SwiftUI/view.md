@@ -31,7 +31,7 @@ A type that represents part of your app’s user interface and provides modifier
 - [Migrating to the SwiftUI life cycle](./migrating-to-the-swiftui-life-cycle.md)
 - [Performing a search operation](./performing-a-search-operation.md)
 
-#### Overview
+## Overview
 
 You create custom views by declaring types that conform to the `View` protocol. Implement the required [`body`](./view/body-8kl5o.md) computed property to provide the content for your custom view.
 

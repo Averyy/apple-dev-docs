@@ -15,7 +15,7 @@ Daily budget cap for a campaign.
 object Campaign.DailyBudget
 ```
 
-#### Discussion
+## Discussion
 
 A `Money` object specifying the campaign’s daily spend cap. Once the daily budget is exhausted, the campaign stops delivering ads for the remainder of that day. The `dailyBudget` field is required on all campaigns. A shared budget assignment, if any, enforces a separate flight-period cap independently.
 

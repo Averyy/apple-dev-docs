@@ -19,7 +19,7 @@ class let contextHelpModeDidDeactivateNotification: NSNotification.Name
 extern NSNotificationName NSContextHelpModeDidDeactivateNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the help manager. This notification does not contain a `userInfo` dictionary.
 

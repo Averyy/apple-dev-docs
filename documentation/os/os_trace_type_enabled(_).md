@@ -27,7 +27,7 @@ func os_trace_type_enabled(_ type: UInt8) -> Bool
 static bool os_trace_type_enabled(uint8_t type);
 ```
 
-#### Discussion
+## Discussion
 
 Generally, trace points should not involve expensive operations, however some circumstances warrant it. Use this function to do expensive work only when a given level of trace messages are enabled.
 

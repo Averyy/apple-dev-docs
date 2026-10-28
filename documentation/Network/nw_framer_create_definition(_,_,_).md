@@ -25,7 +25,7 @@ func nw_framer_create_definition(_ identifier: UnsafePointer<CChar>, _ flags: UI
 nw_protocol_definition_tnw_framer_create_definition(const char *identifier, uint32_t flags, nw_framer_start_handler_t start_handler);
 ```
 
-#### Discussion
+## Discussion
 
 Each time you initialize a protocol definition with your custom start handler, a new definition is created that will not be considered equal to other definitions. If you need to associate messages with a protocol you have added to a connection’s protocol stack, make sure to use the same definition.
 

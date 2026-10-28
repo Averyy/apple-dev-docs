@@ -21,7 +21,7 @@ var reportApplicationIdentifier: String { get }
 @property (copy, readonly) NSString * reportApplicationIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property uniquely refers to a single app throughout the report without revealing the app’s true identity. For user privacy, the system assigns this property a pseudonymous string in cases where the [`bundleIdentifier`](./bundleidentifier.md) is `nil`.
 

@@ -23,7 +23,7 @@ func stopGradient(for tensors: [MLCTensor]) -> Bool
 - (BOOL) stopGradientForTensors:(NSArray<MLCTensor *> *) tensors;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the operation was successful.
 

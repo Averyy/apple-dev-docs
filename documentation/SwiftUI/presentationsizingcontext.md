@@ -21,7 +21,7 @@ Contextual information about a presentation.
 struct PresentationSizingContext
 ```
 
-#### Overview
+## Overview
 
 The properties of a `PresentationSizingContext` can influence what size is proposed to a presentation.
 

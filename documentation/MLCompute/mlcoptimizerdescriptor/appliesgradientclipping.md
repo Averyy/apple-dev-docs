@@ -23,7 +23,7 @@ var appliesGradientClipping: Bool { get }
 @property (nonatomic, readonly) BOOL appliesGradientClipping;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `false`.
 

@@ -16,7 +16,7 @@ A description of the automatic reload payment that Apple Pay displays in the pay
 required DOMString paymentDescription;
 ```
 
-#### Discussion
+## Discussion
 
 Provide a display name for the automatic reload, for example, “Gift Card Reload”.
 

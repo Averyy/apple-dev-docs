@@ -15,11 +15,11 @@ Submit a thread call to be executed at some point in the future, with an extra p
 boolean_t thread_call_enter1_delayed(thread_call_t call, thread_call_param_t param1, uint64_t deadline);
 ```
 
-#### Return Value
+## Return Value
 
 TRUE if the call was already pending for either delayed or immediate execution, FALSE otherwise.
 
-#### Discussion
+## Discussion
 
 This routine is identical to thread_call_enter_delayed(), except that a second parameter to the callback is specified.
 

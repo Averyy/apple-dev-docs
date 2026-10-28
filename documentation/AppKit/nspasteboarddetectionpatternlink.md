@@ -15,7 +15,7 @@ A pattern that indicates the pasteboard detects a string that contains a URL.
 extern NSPasteboardDetectionPattern const NSPasteboardDetectionPatternLink;
 ```
 
-#### Return Value
+## Return Value
 
 Array of DDMatchLink values
 

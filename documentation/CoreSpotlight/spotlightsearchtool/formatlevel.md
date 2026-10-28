@@ -19,7 +19,7 @@ Controls how tool responses are serialized for the model’s context window.
 enum FormatLevel
 ```
 
-#### Overview
+## Overview
 
 The tool returns search results to the model as part of the generation context. The format level determines how those results are encoded:
 

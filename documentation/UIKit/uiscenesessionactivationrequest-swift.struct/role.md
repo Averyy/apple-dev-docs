@@ -19,7 +19,7 @@ The role to request.
 var role: UISceneSession.Role { get }
 ```
 
-#### Discussion
+## Discussion
 
 If you created the request using [`init(session:userActivity:options:)`](./init%28session,useractivity,options%29.md), this property reflects the role of the `session`.
 

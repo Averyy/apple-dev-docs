@@ -25,11 +25,11 @@ var metadata: [String : Any]! { get set }
 @property (nonatomic, strong, null_resettable) NSDictionary<NSString *,id> * metadata;
 ```
 
-#### Discussion
+## Discussion
 
 The dictionary must include the store type ([`NSStoreTypeKey`](../nsstoretypekey.md)) and UUID ([`NSStoreUUIDKey`](../nsstoreuuidkey.md)).
 
-##### Special Considerations
+### Special Considerations
 
 Subclasses must override this property to provide storage and persistence for the store metadata.
 

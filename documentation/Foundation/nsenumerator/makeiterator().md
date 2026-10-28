@@ -21,7 +21,7 @@ Return an *iterator* over the *enumerator*.
 func makeIterator() -> NSFastEnumerationIterator
 ```
 
-#### Discussion
+## Discussion
 
 Complexity: O(1).
 

@@ -24,7 +24,7 @@ var videoExportPreset: String { get set }
 @property (nonatomic, copy) NSString * videoExportPreset;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is one of the export presets supported by the [`AVAssetExportSession`](../../AVFoundation/avassetexportsession.md) class. For a list of possible values, see the export preset constants in [`AVAssetExportSession`](../../AVFoundation/avassetexportsession.md).
 

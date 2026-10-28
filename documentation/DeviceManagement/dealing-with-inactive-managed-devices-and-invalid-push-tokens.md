@@ -5,11 +5,11 @@
 
 Handle when devices become unmanageable due to inactivity or invalid push tokens.
 
-#### Overview
+## Overview
 
 When a device becomes inactive, your service can take action, such as limiting the deviceʼs access to your organizationʼs resources until the device resumes responding to push notifications.
 
-#### Handle when a device becomes inactive
+## Handle when a device becomes inactive
 
 To receive a notification when a device becomes inactive, set the `CheckOutWhenRemoved` key to `true` in the MDM payload. This causes the device to contact your device management service when it becomes unmanaged.
 

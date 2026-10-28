@@ -19,11 +19,11 @@ func shouldChangeText(inRanges affectedRanges: [NSValue], replacementStrings: [S
 - (BOOL) shouldChangeTextInRanges:(NSArray<NSValue *> *) affectedRanges replacementStrings:(NSArray<NSString *> *) replacementStrings;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to allow the change, [`false`](../../Swift/false.md) to prohibit it.
 
-#### Discussion
+## Discussion
 
 This method checks with the delegate as needed using [`textShouldBeginEditing(_:)`](../nstextdelegate/textshouldbeginediting%28_%29.md) and [`textView(_:shouldChangeTextInRanges:replacementStrings:)`](../nstextviewdelegate/textview%28_,shouldchangetextinranges,replacementstrings%29.md).
 
@@ -31,7 +31,7 @@ This method must be invoked at the start of any sequence of user-initiated editi
 
 that modify the text, make sure to invoke this method to determine whether the change should be made. If the change is allowed, complete the change by invoking the [`didChangeText()`](./didchangetext%28%29.md) method. If you can’t determine the affected range or replacement string before beginning changes, pass `nil` for these values.
 
-##### Special Considerations
+### Special Considerations
 
 If you override this method, you must call `super` at the beginning of the override.
 

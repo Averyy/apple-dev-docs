@@ -19,7 +19,7 @@ static var persist: FSVolume.PreallocateFlags { get }
 FSPreallocateFlagsPersist
 ```
 
-#### Discussion
+## Discussion
 
 This space remains allocated even after calling `close(2)`.
 

@@ -19,7 +19,7 @@ var manufacturerCode: Int { get set }
 @property (nonatomic, assign) NSUInteger manufacturerCode;
 ```
 
-#### Discussion
+## Discussion
 
 Manufacturer code. Valid range is 0x00 to 0xFF.
 

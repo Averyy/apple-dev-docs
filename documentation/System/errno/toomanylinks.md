@@ -25,7 +25,7 @@ static var tooManyLinks: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 The maximum number of hard links to a single file (32767) has been exceeded.
 

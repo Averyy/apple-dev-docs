@@ -21,7 +21,7 @@ var allowsPictureInPictureMediaPlayback: Bool { get set }
 @property (nonatomic) BOOL allowsPictureInPictureMediaPlayback;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`true`](../../Swift/true.md) on devices that support Picture in Picture (PiP) mode and [`false`](../../Swift/false.md) on all other devices.
 

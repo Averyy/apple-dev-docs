@@ -5,7 +5,7 @@
 
 Optimize discrete Fourier transform (DFT) performance with the vDSP interleaved DFT routines.
 
-#### Overview
+## Overview
 
 In many cases, your code performs Fourier transforms on data that originates as interleaved-complex values. An interleaved-complex representation stores the real and imaginary parts of complex values together as collections of [`DSPComplex`](./dspcomplex.md) or [`DSPDoubleComplex`](./dspdoublecomplex.md) structures. Many Fourier-related routines in [`vDSP`](./vdsp.md) accept complex values in a split-complex representation that stores real and imaginary parts as separate collections.
 
@@ -40,7 +40,7 @@ let imaginaries = [imag₀, imag₁, imag₂, imag₃]
 
 vDSP routines accept split-complex values either as [`DSPSplitComplex`](./dspsplitcomplex.md) structures or as two separate collections.
 
-##### Convert interleaved values to split-complex format
+### Convert interleaved values to split-complex format
 
 Given an array `signal` that contains 32 interleaved-complex values, the following code performs a Fourier transform on the values. Use [`vDSP_ctoz`](./vdsp_ctoz.md) to populate the split collections `splitSignalReal` and `splitSignalImag` with the interleaved values from `signal`:
 
@@ -90,7 +90,7 @@ vDSP_ctoz(signal, 2,
           complexValuesCount);
 ```
 
-##### Perform a Fourier transform on split data
+### Perform a Fourier transform on split data
 
 Use the vDSP function [`vDSP_DFT_zop_CreateSetup`](./vdsp_dft_zop_createsetup.md) to create a setup object for complex-to-complex DFTs. The execute function, [`vDSP_DFT_Execute`](./vdsp_dft_execute.md), automatically switches to a fast Fourier transform (FFT) when the specified count supports the FFT algorithm.
 
@@ -143,7 +143,7 @@ if (splitComplexSetup) {
 
 On return,`splitOutputReal` and `splitOutputImag` contain the split format frequency-domain representation of the values in `signal`. Use [`indexOfMaximum(_:)`](./vdsp/indexofmaximum%28_%29-5qdtm.md) to find the dominant frequency.
 
-##### Convert split-complex values to interleaved format
+### Convert split-complex values to interleaved format
 
 Use [`vDSP_ztoc`](./vdsp_ztoc.md) to convert the split result to the interleaved format.
 
@@ -182,7 +182,7 @@ vDSP_ztoc(&splitComplex2, 1,
 
 On return, `dftOutputInterleaved` contains the DFT result in the interleaved format.
 
-##### Perform a Fourier transform directly on interleaved data
+### Perform a Fourier transform directly on interleaved data
 
 vDSP provides routines for DFTs directly on interleaved data. Use these functions instead of using [`vDSP_ctoz`](./vdsp_ctoz.md) and [`vDSP_ztoc`](./vdsp_ztoc.md) to convert between interleaved and split formats.
 

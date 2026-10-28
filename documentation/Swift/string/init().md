@@ -21,7 +21,7 @@ Creates an empty string.
 init()
 ```
 
-#### Discussion
+## Discussion
 
 Using this initializer is equivalent to initializing a string with an empty string literal.
 

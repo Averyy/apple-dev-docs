@@ -19,7 +19,7 @@ func openHelpAnchor(_ anchor: NSHelpManager.AnchorName, inBook book: NSHelpManag
 - (void) openHelpAnchor:(NSHelpAnchorName) anchor inBook:(NSHelpBookName) book;
 ```
 
-#### Discussion
+## Discussion
 
 To open an anchor in your bundle’s localized help book, you could use code similar to the following:
 

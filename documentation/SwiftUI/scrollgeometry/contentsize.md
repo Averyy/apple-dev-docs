@@ -21,7 +21,7 @@ The size of the content of the scroll view.
 var contentSize: CGSize
 ```
 
-#### Discussion
+## Discussion
 
 Unlike the container size of the scroll view, this refers to the total size of the content of the scroll view which can be smaller or larger than its containing size.
 

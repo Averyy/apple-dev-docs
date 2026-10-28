@@ -19,7 +19,7 @@ var isButtonBordered: Bool { get set }
 @property (getter=isButtonBordered) BOOL buttonBordered;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the button has a border; when it is [`false`](../../Swift/false.md), the button is borderless. For example, it is often useful when using a combo box in an [`NSTableView`](../nstableview.md) to display the button without a border.
 

@@ -21,7 +21,7 @@ Sets additional resources for residency on all command buffers used by this simu
 final func setUserResources(_ resources: [any MTLResource])
 ```
 
-#### Discussion
+## Discussion
 
 Only needed when buffers or textures are passed indirectly through structures using Metal Tier 2 Argument Buffers, since Metal cannot discover those resources automatically.
 

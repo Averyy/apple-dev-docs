@@ -20,11 +20,11 @@ func accessibilityChildren() -> [Any]?
 - (NSArray *) accessibilityChildren;
 ```
 
-#### Return Value
+## Return Value
 
 An array that contains references to this element’s children in the accessibility hierarchy.
 
-#### Discussion
+## Discussion
 
 This method is the getter for the [`NSAccessibilityProtocol`](../nsaccessibilityprotocol.md) protocol’s [`accessibilityChildren`](../nsaccessibility-c.protocol/accessibilitychildren.md) property.
 

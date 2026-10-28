@@ -22,7 +22,7 @@ func dynamicRegistrationEndpoint(forProcessID processID: pid_t, version: Int) as
 - (void) dynamicRegistrationEndpointForProcessID:(pid_t) processID version:(NSInteger) version reply:(void (^)(NSXPCListenerEndpoint * , NSError * )) reply;
 ```
 
-#### Discussion
+## Discussion
 
 Obtains the NSXPCListenerEndpoint for dynamic registration.
 

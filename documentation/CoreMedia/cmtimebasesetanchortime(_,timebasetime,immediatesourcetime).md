@@ -25,7 +25,7 @@ func CMTimebaseSetAnchorTime(_ timebase: CMTimebase, timebaseTime: CMTime, immed
 extern OSStatus CMTimebaseSetAnchorTime(CMTimebaseRef timebase, CMTime timebaseTime, CMTime immediateSourceTime);
 ```
 
-#### Discussion
+## Discussion
 
 The system interpolates `CMTimebaseGetTime`’s results from the anchor time.
 

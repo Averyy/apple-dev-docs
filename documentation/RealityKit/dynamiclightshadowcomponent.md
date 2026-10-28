@@ -20,7 +20,7 @@ A component that controls an entity’s shadow from dynamic (virtual) lights.
 struct DynamicLightShadowComponent
 ```
 
-#### Overview
+## Overview
 
 Use `DynamicLightShadowComponent` to control whether an entity casts shadows from dynamic (virtual) lights. Dynamic lights cast shadows on other virtual objects, but not on physical objects. You can add a dynamic light shadow component to any entity that has a [`ModelComponent`](./modelcomponent.md) in its component set by adding a dynamic light shadow component to the entity’s [`components`](./entity/components.md) property.
 

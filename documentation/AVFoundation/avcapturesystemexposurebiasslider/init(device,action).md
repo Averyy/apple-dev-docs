@@ -23,7 +23,7 @@ init(device: AVCaptureDevice, action: @escaping @MainActor @Sendable (Float) -> 
 - (instancetype) initWithDevice:(AVCaptureDevice *) device action:(void (^)(float)) action;
 ```
 
-#### Discussion
+## Discussion
 
 The system only calls the specified action when the exposure bias slider changes the device’s [`videoZoomFactor`](../avcapturedevice/videozoomfactor.md) property value. If you need to react to other sources of changes to the exposure target bias, use key-value observation instead.
 

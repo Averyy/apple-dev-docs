@@ -24,7 +24,7 @@ case automatic
 MTLHeapTypeAutomatic
 ```
 
-#### Discussion
+## Discussion
 
 In an automatic heap, Metal automatically determines the locations of resources allocated by the heap, with a layout specific to the GPU. Automatic heaps may perform better than manually placing resources in the heap ([`MTLHeapType.placement`](./placement.md)).
 

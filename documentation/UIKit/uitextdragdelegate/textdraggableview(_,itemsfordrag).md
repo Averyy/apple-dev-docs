@@ -22,11 +22,11 @@ optional func textDraggableView(_ textDraggableView: any UIView & UITextDraggabl
 - (NSArray<UIDragItem *> *) textDraggableView:(UIView<UITextDraggable> *) textDraggableView itemsForDrag:(id<UITextDragRequest>) dragRequest;
 ```
 
-#### Return Value
+## Return Value
 
 An array of drag items that represent the items to drag.
 
-#### Discussion
+## Discussion
 
 You implement this method when you need to provide custom drag items. The drag request gives you the text range of the text that is included in the drag activity. It also gives you the default drag items, which you can add to or change. If you return an empty array, the drag operation does not happen.
 

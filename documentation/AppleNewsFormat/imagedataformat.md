@@ -15,13 +15,13 @@ The object that allows you to specify the minimum and maximum dimensions for ima
 object ImageDataFormat
 ```
 
-#### Discussion
+## Discussion
 
 When you specify `image` as the data type for an item in [`DataDescriptor`](./datadescriptor.md), you can also indicate a minimum and maximum height and width for the image in the table cell.
 
 This object can be used in [`DataDescriptor`](./datadescriptor.md).
 
-##### Example
+### Example
 
 ```json
 "components": [

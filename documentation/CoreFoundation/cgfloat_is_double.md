@@ -23,7 +23,7 @@ var CGFLOAT_IS_DOUBLE: Int32 { get }
 #define CGFLOAT_IS_DOUBLE
 ```
 
-#### Discussion
+## Discussion
 
 Indicates whether [`CGFloat`](./cgfloat-swift.struct.md) is defined as a `float` or `double` type.
 

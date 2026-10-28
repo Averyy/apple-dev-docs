@@ -14,13 +14,13 @@ Create a MetalKit view and a render pass to draw the view’s contents.
 - tvOS 12.1+
 - Xcode 11.0+
 
-#### Overview
+## Overview
 
 In this sample, you’ll learn the basics of rendering graphics content with Metal. You’ll use the MetalKit framework to create a view that uses Metal to draw the contents of the view.  Then, you’ll encode commands for a render pass that erases the view to a background color.
 
 > **Note**: MetalKit automates windowing system tasks, loads textures, and handles 3D model data. See [MetalKit](../MetalKit/MetalKit.md) for more information.
 
-##### Prepare a MetalKit view to draw
+### Prepare a MetalKit view to draw
 
 MetalKit provides a class called [`MTKView`](../MetalKit/mtkview.md), which is a subclass of [`NSView`](../AppKit/nsview.md) (in macOS) or [`UIView`](../UIKit/uiview.md) (in iOS and tvOS). `MTKView` handles many of the details related to getting the content you draw with Metal onto the screen.
 
@@ -42,7 +42,7 @@ Because you won’t be drawing animated content in this sample, configure the vi
 _view.enableSetNeedsDisplay = YES;
 ```
 
-##### Delegate drawing responsibilities
+### Delegate drawing responsibilities
 
 `MTKView` relies on your app to issue commands to Metal to produce visual content. `MTKView` uses the delegate pattern to inform your app when it should draw. To receive delegate callbacks, set the view’s `delegate` property to an object that conforms to the [`MTKViewDelegate`](../MetalKit/mtkviewdelegate.md) protocol.
 
@@ -57,7 +57,7 @@ The delegate implements two methods:
 
 In this sample, a class called `AAPLRenderer` implements the delegate methods and takes on the responsibility of drawing. The view controller creates an instance of this class and sets it as the view’s delegate.
 
-##### Create a render pass descriptor
+### Create a render pass descriptor
 
 When you draw, the GPU stores the results into *textures*, which are blocks of memory that contain image data and are accessible to the GPU. In this sample, the `MTKView` creates all of the textures you need to draw into the view. It creates multiple textures so that it can display the contents of one texture while you render into another.
 
@@ -75,7 +75,7 @@ A render pass descriptor describes the set of render targets, and how they shoul
 
 Because a view’s render pass descriptor might be `nil`, you should test to make sure the render pass descriptor object is non-`nil` before creating the render pass.
 
-##### Create a render pass
+### Create a render pass
 
 You create the render pass by encoding it into the command buffer using a  [`MTLRenderCommandEncoder`](./mtlrendercommandencoder.md) object. Call the command buffer’s [`makeRenderCommandEncoder(descriptor:)`](./mtlcommandbuffer/makerendercommandencoder%28descriptor%29.md) method and pass in the render pass descriptor.
 
@@ -89,7 +89,7 @@ In this sample, you don’t encode any drawing commands, so the only thing the r
 [commandEncoder endEncoding];
 ```
 
-##### Present a drawable to the screen
+### Present a drawable to the screen
 
 Drawing to a texture doesn’t automatically display the new contents onscreen. In fact, only some textures can be presented onscreen. In Metal, textures that can be displayed onscreen are managed by *drawable objects*, and to display the content, you present the drawable.
 
@@ -107,7 +107,7 @@ Call the [`present(_:)`](./mtlcommandbuffer/present%28_%29.md) method on the com
 
 This method tells Metal that when the command buffer is scheduled for execution, Metal should coordinate with Core Animation to display the texture after rendering completes. When Core Animation presents the texture, it becomes the view’s new contents. In this sample, this means that the erased texture becomes the new background for the view. The change happens alongside any other visual updates that Core Animation makes for onscreen user interface elements.
 
-##### Commit the command buffer
+### Commit the command buffer
 
 Now that you’ve issued all the commands for the frame, commit the command buffer.
 

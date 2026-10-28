@@ -19,7 +19,7 @@ class VZVirtioDeviceSpecificConfiguration
 @interface VZVirtioDeviceSpecificConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 This class represents a Virtio device’s device-specific configuration.
 

@@ -15,7 +15,7 @@ A type that contains the configuration details for a spatial template.
 struct SpatialTemplateConfiguration
 ```
 
-#### Overview
+## Overview
 
 Create a [`SpatialTemplateConfiguration`](./spatialtemplateconfiguration.md) structure and fill it with the information you want to apply to your custom [`SpatialTemplate`](./spatialtemplate.md) type. A configuration structure contains the role to give to the person who initiates an activity that uses the template. For example, you might assign a presenter role to a person presenting a slide deck. Spatial templates use roles to place spatial Personas in the shared coordinate space.
 

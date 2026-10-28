@@ -25,11 +25,11 @@ func CFNotificationCenterGetDarwinNotifyCenter() -> CFNotificationCenter!
 extern CFNotificationCenterRefCFNotificationCenterGetDarwinNotifyCenter();
 ```
 
-#### Return Value
+## Return Value
 
 The application’s Darwin notification center.
 
-#### Discussion
+## Discussion
 
 This notification center is used to cover the `<notify.h>` Core OS notification mechanism (see `/usr/include/notify.h`). An application has only one Darwin notification center, so this function returns the same value each time it is called.
 

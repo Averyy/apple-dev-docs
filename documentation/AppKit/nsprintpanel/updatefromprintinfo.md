@@ -15,7 +15,7 @@ Updates the Print panel with information from the current print operation object
 - (void) updateFromPrintInfo;
 ```
 
-#### Discussion
+## Discussion
 
 Do not invoke this method directly—it is invoked automatically before the Print panel is displayed.
 

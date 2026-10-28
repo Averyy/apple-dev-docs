@@ -20,7 +20,7 @@ The video pixel formats the output supports.
 @property (nonatomic, readonly) NSArray<NSNumber *> * availableVideoCVPixelFormatTypes;
 ```
 
-#### Discussion
+## Discussion
 
 This value contains an array of video formats, in unspecified order, that the output supports. You can set the format by specifying it as the [`kCVPixelBufferPixelFormatTypeKey`](../../CoreVideo/kcvpixelbufferpixelformattypekey.md) entry in the output’s [`videoSettings`](./videosettings.md) dictionary.
 

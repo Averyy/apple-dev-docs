@@ -21,7 +21,7 @@ Moves the elements of a fully initialized buffer into this array, starting at th
 mutating func insert(moving items: UnsafeMutableBufferPointer<Element>, at index: Int)
 ```
 
-#### Discussion
+## Discussion
 
 If the array does not have sufficient capacity to hold all elements, then this reallocates storage to extend its capacity, using a geometric growth rate.
 

@@ -25,7 +25,7 @@ func la_matrix_cols(_ matrix: la_object_t) -> la_count_t
 extern la_count_t la_matrix_cols(la_object_t matrix);
 ```
 
-#### Discussion
+## Discussion
 
 Get the number of columns in a matrix.
 

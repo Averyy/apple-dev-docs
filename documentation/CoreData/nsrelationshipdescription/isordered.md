@@ -25,7 +25,7 @@ var isOrdered: Bool { get set }
 @property (getter=isOrdered) BOOL ordered;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md).
 

@@ -19,7 +19,7 @@ class let willExitFullScreenNotification: NSNotification.Name
 extern NSNotificationName const NSWindowWillExitFullScreenNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the `NSWindow` object that will exit full-screen mode. This notification doesn’t contain a `userInfo` dictionary.
 

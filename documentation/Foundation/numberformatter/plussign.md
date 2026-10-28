@@ -25,7 +25,7 @@ var plusSign: String! { get set }
 @property (copy, null_resettable) NSString * plusSign;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this property is set to the plus sign (+).
 

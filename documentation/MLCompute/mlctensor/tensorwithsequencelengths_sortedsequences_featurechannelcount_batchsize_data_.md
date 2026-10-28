@@ -19,7 +19,7 @@ Creates a tensor with the sequence lengths, sorting indicator, number of feature
 + (instancetype) tensorWithSequenceLengths:(NSArray<NSNumber *> *) sequenceLengths sortedSequences:(BOOL) sortedSequences featureChannelCount:(NSUInteger) featureChannelCount batchSize:(NSUInteger) batchSize data:(MLCTensorData *) data;
 ```
 
-#### Return Value
+## Return Value
 
 A tensor.
 

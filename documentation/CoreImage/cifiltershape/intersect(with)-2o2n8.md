@@ -24,7 +24,7 @@ func intersect(with r: CGRect) -> CIFilterShape
 - (CIFilterShape *) intersectWithRect:(CGRect) r;
 ```
 
-#### Return Value
+## Return Value
 
 The filter shape that results from the intersection
 

@@ -24,7 +24,7 @@ var isMuted: Bool { get set }
 @property (nonatomic, assign, readwrite, getter=isMuted) BOOL muted;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `false`, indicating that the view plays audio content along with the motion content of its Live Photo. Change this value to `true` to play motion content but not audio content.
 

@@ -20,7 +20,7 @@ A specification for the context of a widget preview.
 struct WidgetPreviewContext
 ```
 
-#### Overview
+## Overview
 
 To create a preview for a widget in Xcode, use [`previewContext(_:)`](../SwiftUI/view/previewcontext%28_%29.md) and pass `WidgetPreviewContext` initialized with the appropriate `WidgetFamily`.
 

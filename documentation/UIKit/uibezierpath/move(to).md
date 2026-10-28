@@ -24,7 +24,7 @@ func move(to point: CGPoint)
 - (void) moveToPoint:(CGPoint) point;
 ```
 
-#### Discussion
+## Discussion
 
 This method implicitly ends the current subpath (if any) and sets the current point to the value in the `point` parameter. When ending the previous subpath, this method does not actually close the subpath. Therefore, the first and last points of the previous subpath are not connected to each other.
 

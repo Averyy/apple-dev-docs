@@ -20,7 +20,7 @@ Returns the property at a given path, if it exists.
 func property(at path: USDLayer.Path) -> USDPrim.Property
 ```
 
-#### Discussion
+## Discussion
 
 If no property exists at the resolved path, returns an invalid property handle.
 

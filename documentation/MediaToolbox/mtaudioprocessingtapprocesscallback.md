@@ -24,7 +24,7 @@ typealias MTAudioProcessingTapProcessCallback = (MTAudioProcessingTap, CMItemCou
 typedef void (*)(const struct opaqueMTAudioProcessingTap *, long, unsigned int, struct AudioBufferList *, long *, unsigned int *) MTAudioProcessingTapProcessCallback;
 ```
 
-#### Overview
+## Overview
 
 The system calls this function when the audio track has data that can be processed by a given tap.
 

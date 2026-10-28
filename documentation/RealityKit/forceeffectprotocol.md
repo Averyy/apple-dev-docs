@@ -20,7 +20,7 @@ A protocol that defines a custom force effect.
 protocol ForceEffectProtocol
 ```
 
-#### Overview
+## Overview
 
 A custom force effect is a function of a set of input rigid body attributes and returns force-like vector quantities. You can declare this custom force effect’s input types ([`parameterTypes`](./forceeffectprotocol/parametertypes.md)) and output types ([`forceMode`](./forceeffectprotocol/forcemode.md)) by conforming to `ForceEffectProtocol`.
 

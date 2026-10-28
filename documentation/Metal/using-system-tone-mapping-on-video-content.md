@@ -5,7 +5,7 @@
 
 Use EDR metadata to apply the default system tone mapping to a layer.
 
-#### Overview
+## Overview
 
 When processing video content, you usually want to work in a linear color space. You also want to display content that’s consistent with how playback would appear in AVFoundation or other playback mechanisms. To create content in your app that is consistent with the system behavior, create a Metal layer with a linear color space and attach an [`CAEDRMetadata`](../QuartzCore/caedrmetadata.md) object defining how the system should tone map the video content.
 

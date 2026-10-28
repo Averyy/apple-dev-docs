@@ -15,11 +15,11 @@ Sets a vnode's filesystem-specific data to be NULL.
 void vnode_clearfsnode(vnode_t vp);
 ```
 
-#### Return Value
+## Return Value
 
 void.
 
-#### Discussion
+## Discussion
 
 This routine should only be called when a vnode is no longer in use, i.e. during a VNOP_RECLAIM.
 

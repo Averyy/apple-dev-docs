@@ -26,11 +26,11 @@ class func predicateForWorkouts(with operatorType: NSComparisonPredicate.Operato
 + (NSPredicate *) predicateForWorkoutsWithOperatorType:(NSPredicateOperatorType) operatorType totalFlightsClimbed:(HKQuantity *) totalFlightsClimbed;
 ```
 
-#### Return Value
+## Return Value
 
 A predicate that matches workouts based on the number of flights climbed.
 
-#### Discussion
+## Discussion
 
 This convenience method creates a predicate that compares the total flights climbed during a workout with a target number of flights climbed. The following sample uses the convenience method and a predicate format string to create equivalent predicates.
 

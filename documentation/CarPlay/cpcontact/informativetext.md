@@ -21,7 +21,7 @@ var informativeText: String? { get set }
 @property (nonatomic, copy, nullable) NSString * informativeText;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to display additional information about the contact. For example, their address or a short bio.
 

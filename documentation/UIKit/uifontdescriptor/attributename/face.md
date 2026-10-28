@@ -24,7 +24,7 @@ static let face: UIFontDescriptor.AttributeName
 extern UIFontDescriptorAttributeName const UIFontDescriptorFaceAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value is an optional [`NSString`](../../../Foundation/nsstring.md) object that specifies the font face.
 

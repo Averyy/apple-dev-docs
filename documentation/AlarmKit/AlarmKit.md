@@ -11,7 +11,7 @@ Schedule prominent alarms and countdowns to help people manage their time.
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 
-#### Overview
+## Overview
 
 Use `AlarmKit` to create custom alarms and timers in your app. `AlarmKit` provides a framework for managing alarms with customizable schedules and UI. It supports one-time and repeating alarms, with the option for countdown durations and snooze functionality. `AlarmKit` handles alarm authorization and provides UI for both templated and widget presentations. It supports traditional alarms, timers, or both, and provides methods to schedule, pause, resume, and cancel alarms.
 

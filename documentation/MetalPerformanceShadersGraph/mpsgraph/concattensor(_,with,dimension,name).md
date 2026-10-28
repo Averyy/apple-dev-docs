@@ -24,11 +24,11 @@ func concatTensor(_ tensor: MPSGraphTensor, with tensor2: MPSGraphTensor, dimens
 - (MPSGraphTensor *) concatTensor:(MPSGraphTensor *) tensor withTensor:(MPSGraphTensor *) tensor2 dimension:(NSInteger) dimensionIndex name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object.
 
-#### Discussion
+## Discussion
 
 Concatenates two input tensors along the specified dimension. Tensors must be broadcast compatible along all other dimensions, and have the same datatype.
 

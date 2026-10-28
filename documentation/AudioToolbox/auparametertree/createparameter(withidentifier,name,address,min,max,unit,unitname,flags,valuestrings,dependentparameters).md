@@ -24,7 +24,7 @@ class func createParameter(withIdentifier identifier: String, name: String, addr
 + (AUParameter *) createParameterWithIdentifier:(NSString *) identifier name:(NSString *) name address:(AUParameterAddress) address min:(AUValue) min max:(AUValue) max unit:(AudioUnitParameterUnit) unit unitName:(NSString *) unitName flags:(AudioUnitParameterOptions) flags valueStrings:(NSArray<NSString *> *) valueStrings dependentParameters:(NSArray<NSNumber *> *) dependentParameters;
 ```
 
-#### Return Value
+## Return Value
 
 A newly-initialized parameter object.
 

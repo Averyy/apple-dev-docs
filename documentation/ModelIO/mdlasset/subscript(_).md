@@ -24,11 +24,11 @@ subscript(index: Int) -> MDLObject? { get }
 - (MDLObject *) objectAtIndexedSubscript:(NSUInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The object at the specified index.
 
-#### Discussion
+## Discussion
 
 An asset contains one or more top-level objects (instances of the [`MDLObject`](../mdlobject.md) class or one of its subclasses, such as [`MDLMesh`](../mdlmesh.md)), each of which may contain a hierarchy of child objects.
 

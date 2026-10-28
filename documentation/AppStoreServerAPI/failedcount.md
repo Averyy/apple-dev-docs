@@ -15,7 +15,7 @@ The count of subscriptions that fail to receive a subscription-renewal-date exte
 int64 failedCount
 ```
 
-#### Discussion
+## Discussion
 
 For information about retrying a renewal date extension when if fails, see [Extending the renewal date for auto-renewable subscriptions](./extending-the-renewal-date-for-auto-renewable-subscriptions.md).
 

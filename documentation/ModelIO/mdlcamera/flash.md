@@ -24,7 +24,7 @@ var flash: vector_float3 { get set }
 @property (nonatomic, assign) vector_float3 flash;
 ```
 
-#### Discussion
+## Discussion
 
 In real-world film processing, *flashing* is a small and even level of exposure added to the entire image, intended to shift the brightness and color of darker areas of the image. Because exposure is logarithmic, flash does not affect midtones or highlights. In color grading, this effect is also called *lift* and can be applied independently to the red, green, and blue channels of an image. A renderer can use negative component values to subtract color.
 

@@ -33,7 +33,7 @@ var date: Date { get }
 @property (atomic, retain, readonly) NSDate * date;
 ```
 
-#### Discussion
+## Discussion
 
 When you initialize the new score object, the `date` property is automatically set to the current date and time.
 

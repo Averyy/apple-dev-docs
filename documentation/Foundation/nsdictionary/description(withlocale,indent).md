@@ -25,11 +25,11 @@ func description(withLocale locale: Any?, indent level: Int) -> String
 - (NSString *) descriptionWithLocale:(id) locale indent:(NSUInteger) level;
 ```
 
-#### Return Value
+## Return Value
 
 A string object that represents the contents of the dictionary, formatted as a property list.
 
-#### Discussion
+## Discussion
 
 The returned `NSString` object contains the string representations of each of the dictionary’s entries. [`description(withLocale:indent:)`](./description%28withlocale,indent%29.md) obtains the string representation of a given key or value as follows:
 

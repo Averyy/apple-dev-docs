@@ -24,7 +24,7 @@ let HKMetadataKeyCrossTrainerDistance: String
 extern NSString * const HKMetadataKeyCrossTrainerDistance;
 ```
 
-#### Discussion
+## Discussion
 
 Set this key on a workout sample representing exercise on a GymKit cross-trainer machine (such as an elliptical cross-trainer). Set its value to an [`HKQuantity`](./hkquantity.md) object with a length unit.
 

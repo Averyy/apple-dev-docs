@@ -25,11 +25,11 @@ init(range aRange: NSRange)
 + (NSCharacterSet *) characterSetWithRange:(NSRange) aRange;
 ```
 
-#### Return Value
+## Return Value
 
 A character set containing characters whose Unicode values are given by `aRange`. If `aRange.length` is `0`, returns an empty character set.
 
-#### Discussion
+## Discussion
 
 This code excerpt creates a character set object containing the lowercase English alphabetic characters:
 

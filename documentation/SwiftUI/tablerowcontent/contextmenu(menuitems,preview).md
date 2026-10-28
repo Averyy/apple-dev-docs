@@ -20,11 +20,11 @@ Adds a context menu with a preview to a table row.
 @preconcurrency func contextMenu<M, P>(@ContentBuilder menuItems: () -> M, @ContentBuilder preview: () -> P) -> ModifiedContent<Self, _ContextMenuPreviewTableRowModifier<M, P>> where M : View, P : View
 ```
 
-#### Return Value
+## Return Value
 
 A row that can display a context menu with a preview.
 
-#### Discussion
+## Discussion
 
 When you use this modifier to add a context menu to rows in a table, the system shows a preview beside the menu. Compose the menu by returning controls like [`Button`](../button.md), [`Toggle`](../toggle.md), and [`Picker`](../picker.md) from the `menuItems` closure. You can also use [`Menu`](../menu.md) to define submenus.
 

@@ -21,7 +21,7 @@ Returns a double-precision vector that contains monotonically incrementing or de
 static func ramp(withInitialValue initialValue: Double, increment: Double, count: Int) -> [Double]
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to generate and return a vector populated with ramped values.
 

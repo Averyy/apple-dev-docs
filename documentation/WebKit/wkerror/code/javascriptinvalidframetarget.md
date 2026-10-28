@@ -23,7 +23,7 @@ case javaScriptInvalidFrameTarget
 WKErrorJavaScriptInvalidFrameTarget
 ```
 
-#### Discussion
+## Discussion
 
 WebKit might report this error in the following situations:
 

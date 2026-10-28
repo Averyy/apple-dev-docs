@@ -17,7 +17,7 @@ System wide [`Logger.MetadataProvider`](../logger/metadataprovider-swift.struct.
 static var metadataProvider: Logger.MetadataProvider? { get }
 ```
 
-#### Discussion
+## Discussion
 
 When creating a [`Logger`](../logger.md) using the plain [`init(label:)`](../logger/init%28label%29.md) initializer, this metadata provider will be provided to it.
 

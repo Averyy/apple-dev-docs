@@ -22,7 +22,7 @@ func glkView(_ view: GLKView, drawIn rect: CGRect)
 - (void) glkView:(GLKView *) view drawInRect:(CGRect) rect;
 ```
 
-#### Discussion
+## Discussion
 
 The semantics of this method are identical to those of the [`draw(_:)`](../../UIKit/uiview/draw%28_%29.md) method; the [`GLKView`](../glkview.md) object makes its OpenGL ES context the current context and binds its framebuffer as the target for OpenGL ES rendering commands. Your delegate method should then draw the view’s contents.
 

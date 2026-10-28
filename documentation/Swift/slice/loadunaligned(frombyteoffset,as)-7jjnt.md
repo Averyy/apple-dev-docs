@@ -23,11 +23,11 @@ func loadUnaligned<T>(fromByteOffset offset: Int = 0, as type: T.Type) -> T wher
 
 Available when `Base` is `UnsafeRawBufferPointer`.
 
-#### Return Value
+## Return Value
 
 A new instance of type `T`, copied from the buffer pointer’s memory.
 
-#### Discussion
+## Discussion
 
 This function only supports loading trivial types. A trivial type does not contain any reference-counted property within its in-memory stored representation. The memory at `offset` bytes into the buffer slice must be laid out identically to the in-memory representation of `T`.
 

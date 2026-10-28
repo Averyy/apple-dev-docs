@@ -28,7 +28,7 @@ var channelAssignments: [AVAudioSessionChannelDescription]? { get set }
 
 - [Routing audio to specific devices in multidevice sessions](../routing-audio-to-specific-devices-in-multidevice-sessions.md)
 
-#### Discussion
+## Discussion
 
 The default value of this property is `nil`. When the value is non-`nil`, this value must have the same number of channels as defined in the [`settings`](./settings.md) property for the [`AVNumberOfChannelsKey`](../avnumberofchannelskey.md) value. Use this property to help record specific audio channels.
 

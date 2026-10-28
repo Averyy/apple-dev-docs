@@ -21,7 +21,7 @@ void fillText(
 );
 ```
 
-#### Discussion
+## Discussion
 
 Text is rendered in the current font, with the current `textBaseline` aligned with the y-coordinate and the current `textAlign` point (left, center, or right) aligned with the x-coordinate.  The `x`, `y`, and `maxWidth` parameter values are in the canvas’s current coordinate system, subject to the current transformation matrix (rotation, scale, and so on).
 

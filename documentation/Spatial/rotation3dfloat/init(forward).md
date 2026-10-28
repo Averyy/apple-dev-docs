@@ -21,7 +21,7 @@ Returns a rotation with the specified forward vector.
 init(forward: Vector3DFloat)
 ```
 
-#### Discussion
+## Discussion
 
 - Parameter forward The forward direction.
 

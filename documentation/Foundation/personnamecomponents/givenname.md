@@ -21,7 +21,7 @@ Name bestowed upon an individual to differentiate them from other members of a g
 var givenName: String? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 An example of a given name would be Maria.
 

@@ -24,7 +24,7 @@ class func pound() -> Self
 + (instancetype) poundUnit;
 ```
 
-#### Return Value
+## Return Value
 
 A HealthKit unit for measuring mass in pounds.
 

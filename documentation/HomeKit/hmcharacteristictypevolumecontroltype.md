@@ -24,7 +24,7 @@ let HMCharacteristicTypeVolumeControlType: String
 extern NSString * const HMCharacteristicTypeVolumeControlType;
 ```
 
-#### Overview
+## Overview
 
 The corresponding value is one of the constants in the [`HMCharacteristicValueVolumeControlType`](./hmcharacteristicvaluevolumecontroltype.md) enumeration.
 

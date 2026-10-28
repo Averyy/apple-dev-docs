@@ -23,7 +23,7 @@ func MIDIClientCreateWithBlock(_ name: CFString, _ outClient: UnsafeMutablePoint
 extern OSStatus MIDIClientCreateWithBlock(CFStringRef name, MIDIClientRef *outClient, MIDINotifyBlock notifyBlock);
 ```
 
-#### Return Value
+## Return Value
 
 An `OSStatus` result code.
 

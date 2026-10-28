@@ -16,7 +16,7 @@ var executionTimeAllowance: TimeInterval { get set }
 @property NSTimeInterval executionTimeAllowance;
 ```
 
-#### Discussion
+## Discussion
 
 If the duration of a test exceeds this value, it’s marked as a failure and the next test runs. The default value is 600 seconds, or 10 minutes. The test rounds up the value you supply to the nearest minute.
 

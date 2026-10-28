@@ -21,7 +21,7 @@ Provides a subject to deliver elements to multiple subscribers.
 func multicast<S>(subject: S) -> Publishers.Multicast<Self, S> where S : Subject, Self.Failure == S.Failure, Self.Output == S.Output
 ```
 
-#### Discussion
+## Discussion
 
 Use a multicast publisher when you have multiple downstream subscribers, but you want upstream publishers to only process one [`receive(_:)`](../subscriber/receive%28_%29.md) call per event. This is useful when upstream publishers are doing expensive work you don’t want to duplicate, like performing network requests.
 

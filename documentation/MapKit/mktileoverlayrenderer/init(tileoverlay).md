@@ -24,11 +24,11 @@ init(tileOverlay overlay: MKTileOverlay)
 - (instancetype) initWithTileOverlay:(MKTileOverlay *) overlay;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized tile renderer object.
 
-#### Discussion
+## Discussion
 
 The returned renderer object works with the tile overlay object to coordinate the loading and display of its map tiles.
 

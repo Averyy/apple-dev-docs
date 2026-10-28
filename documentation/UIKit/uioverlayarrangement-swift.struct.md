@@ -19,7 +19,7 @@ An arrangement that layers the primary view over the secondary view, or places t
 struct UIOverlayArrangement
 ```
 
-#### Overview
+## Overview
 
 An overlay arrangement view controller places a primary view controller and a secondary view controller in a stacked arrangement when the device has a flat display, or next to each other horizontally when someone is holding a folded device in landscape orientation or above and below each other when someone is holding a folded device in portrait orientation. Here’s how the overlay arrangement positions the primary and secondary views:
 
@@ -41,7 +41,7 @@ arrangementVC.setViewController(secondaryVC, for: .secondary)
 arrangementVC.updateArrangement(.overlay)
 ```
 
-##### Limit an overlay arrangement by orientation
+### Limit an overlay arrangement by orientation
 
 You can limit which axes your overlay arrangement view controller supports by specifying the axes for the arrangement. The following example shows an arrangement that only functions vertically:
 
@@ -59,7 +59,7 @@ arrangementVC.updateArrangement(.overlay.axes(.vertical))
 
 Use [`axes(_:)`](./uioverlayarrangement-swift.struct/axes%28_%29.md) to set the axes for an overlay arrangement. For axes that you don’t include, the arrangement view only displays the primary view.
 
-##### Customize a folded layout
+### Customize a folded layout
 
 You can adjust how the overlay arrangement positions the primary and secondary views on a folded iPhone Duo with view properties. For example, if you would prefer the primary view to appear in the leading position instead of the trailing position when someone holds a folded iPhone Duo in landscape orientation, customize the overlay arrangement with view properties.
 

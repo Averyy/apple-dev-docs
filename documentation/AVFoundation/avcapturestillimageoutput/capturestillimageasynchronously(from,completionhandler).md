@@ -24,7 +24,7 @@ func captureStillImageAsynchronously(from connection: AVCaptureConnection, compl
 - (void) captureStillImageAsynchronouslyFromConnection:(AVCaptureConnection *) connection completionHandler:(void (^)(CMSampleBufferRef imageDataSampleBuffer, NSError *error)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 This method returns immediately after it is invoked, later calling the provided completion handler block when image data is ready. If the request could not be completed, the error parameter will contain an `NSError` object describing the failure.
 

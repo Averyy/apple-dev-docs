@@ -27,7 +27,7 @@ var tlsMinimumSupportedProtocol: SSLProtocol { get set }
 @property SSLProtocol TLSMinimumSupportedProtocol;
 ```
 
-#### Discussion
+## Discussion
 
 This property determines the minimum supported TLS protocol version for tasks within sessions based on this configuration.
 

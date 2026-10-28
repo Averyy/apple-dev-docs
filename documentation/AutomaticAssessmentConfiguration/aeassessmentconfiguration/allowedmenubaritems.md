@@ -20,7 +20,7 @@ var allowedMenuBarItems: Set<AEMenuBarItem>? { get set }
 @property (nonatomic, copy, nullable) NSSet<NSString *> * allowedMenuBarItems;
 ```
 
-#### Discussion
+## Discussion
 
 When [`allowsMenuBar`](./allowsmenubar.md) is `true`, the menu bar is restricted to only the items specified in this set. If this property is `nil`, all menu bar items are allowed (unrestricted menu bar).
 

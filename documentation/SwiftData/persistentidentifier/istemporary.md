@@ -21,7 +21,7 @@ A Boolean value that indicates whether the identifier is temporary.
 var isTemporary: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 A temporary identifier is assigned to a model when it is first initialized. Once you call [`save()`](../modelcontext/save%28%29.md), the model receives a permanent identifier.
 

@@ -24,7 +24,7 @@ let kCFStreamPropertySSLSettings: CFString
 extern CFStringRef const kCFStreamPropertySSLSettings;
 ```
 
-#### Discussion
+## Discussion
 
 The key’s value is a `CFDictionary` object containing security settings. For information on the dictionary’s keys and values, see [CFStream Property SSL Settings Constants](../CoreFoundation/cfstream-property-ssl-settings-constants.md). By default, there are no security settings.
 

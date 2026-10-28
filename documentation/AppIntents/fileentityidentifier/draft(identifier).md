@@ -21,7 +21,7 @@ Creates and returns an identifier for a draft document.
 static func draft(identifier: String) -> FileEntityIdentifier
 ```
 
-#### Discussion
+## Discussion
 
 Only use this method to initialize identifiers for documents which aren’t materialized on disk yet and don’t have a file URL.
 

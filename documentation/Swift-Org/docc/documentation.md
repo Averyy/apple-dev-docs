@@ -22,7 +22,7 @@ Displays a set of documentation links in the resources section of a tutorial’s
 }
 ```
 
-#### Overview
+## Overview
 
 Use the `Documentation` directive to add links to related documentation in the Resources section at the bottom of your tutorial’s table of contents page.
 
@@ -50,7 +50,7 @@ DocC renders the URL you specify in the `destination` parameter as a “View mor
 
 You can include documentation alongside other types of resources, like [`Downloads`](./downloads.md),  [`Forums`](./forums.md), [`SampleCode`](./samplecode.md), and [`Videos`](./videos.md).
 
-##### Containing Elements
+### Containing Elements
 
 The following items can contain documentation resources:
 

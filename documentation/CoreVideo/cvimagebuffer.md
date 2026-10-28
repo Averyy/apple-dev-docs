@@ -25,7 +25,7 @@ typealias CVImageBuffer = CVBuffer
 typedef CVBufferRef CVImageBufferRef;
 ```
 
-#### Discussion
+## Discussion
 
 An image buffer is an abstract type representing Core Video buffers that hold images. In Core Video, pixel buffers, OpenGL buffers, and OpenGL textures all derive from the image buffer type.
 

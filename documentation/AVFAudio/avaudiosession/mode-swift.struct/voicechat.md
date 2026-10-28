@@ -24,7 +24,7 @@ static let voiceChat: AVAudioSession.Mode
 extern AVAudioSessionMode const AVAudioSessionModeVoiceChat;
 ```
 
-#### Discussion
+## Discussion
 
 This mode is appropriate for Voice over IP (VoIP) apps that use the [`playAndRecord`](../category-swift.struct/playandrecord.md) category. When you set this mode, the session optimizes the device’s tonal equalization for voice and reduces the set of allowed audio routes to only those suitable for voice chat. Setting this mode also causes the system to automatically apply the [`allowBluetoothHFP`](../categoryoptions-swift.struct/allowbluetoothhfp.md) category option.
 

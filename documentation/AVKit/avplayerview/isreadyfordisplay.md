@@ -19,7 +19,7 @@ var isReadyForDisplay: Bool { get }
 @property (readonly, getter=isReadyForDisplay) BOOL readyForDisplay;
 ```
 
-#### Discussion
+## Discussion
 
 This property value is key-value observable.
 

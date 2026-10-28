@@ -25,11 +25,11 @@ convenience init(queryString: String, attributes: [String]?)
 - (instancetype) initWithQueryString:(NSString *) queryString attributes:(NSArray<NSString *> *) attributes;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized query object.
 
-#### Discussion
+## Discussion
 
 - queryString: A formatted string that defines the matching criteria to apply to indexed items. To learn how to construct a query string, see [Create a query string for your search](../searching-for-information-in-your-app.md#Create-a-query-string-for-your-search).
 
@@ -37,7 +37,7 @@ An initialized query object.
 
   - attributes: An array of strings that represent the attributes of indexed items. Each string corresponds to a property name that your app can set for an item; for a list of possible properties, see [`CSSearchableItemAttributeSet`](../cssearchableitemattributeset.md). Passing `nil` for this parameter means that the query doesn’t use attributes to find matching items.
 
-#### Discussion
+## Discussion
 
 After you create and initialize a query object, and call [`start()`](./start%28%29.md) to begin the query, you can’t update or reuse the query object for a new query.
 

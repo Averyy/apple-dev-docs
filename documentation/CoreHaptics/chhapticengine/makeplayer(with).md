@@ -29,7 +29,7 @@ func makePlayer(with pattern: CHHapticPattern) throws -> any CHHapticPatternPlay
 - [Playing a single-tap haptic pattern](../playing-a-single-tap-haptic-pattern.md)
 - [Preparing your app to play haptics](../preparing-your-app-to-play-haptics.md)
 
-#### Return Value
+## Return Value
 
 A new pattern player instance.
 

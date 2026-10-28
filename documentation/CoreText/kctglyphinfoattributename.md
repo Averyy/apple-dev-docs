@@ -25,7 +25,7 @@ let kCTGlyphInfoAttributeName: CFString
 extern CFStringRef const kCTGlyphInfoAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 Value must be a [`CTGlyphInfo`](./ctglyphinfo.md) object. The glyph specified by this [`CTGlyphInfo`](./ctglyphinfo.md) object is assigned to the entire attribute range, provided that its contents match the specified base string and that the specified glyph is available in the font specified by [`kCTFontAttributeName`](./kctfontattributename.md).
 

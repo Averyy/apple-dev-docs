@@ -25,11 +25,11 @@ func CFStringConvertEncodingToWindowsCodepage(_ encoding: CFStringEncoding) -> U
 extern UInt32 CFStringConvertEncodingToWindowsCodepage(CFStringEncoding encoding);
 ```
 
-#### Return Value
+## Return Value
 
 The Windows codepage value that is closest to the Core Foundation encoding `encoding`. The behavior is undefined if an invalid string encoding is passed.
 
-#### Discussion
+## Discussion
 
 The [`CFStringConvertWindowsCodepageToEncoding(_:)`](./cfstringconvertwindowscodepagetoencoding%28_%29.md) function is complementary to this function.
 

@@ -12,11 +12,11 @@ Preview a widget with a relevance configuration, using the specified relevances.
 ## Declaration
 
 ```swift
-@freestanding
-(declaration) macro Preview<Widget, Provider>(_ name: String? = nil, widget: @escaping @MainActor () -> Widget, relevanceProvider: @escaping @MainActor () -> Provider, relevance: @escaping @MainActor () async -> WidgetRelevance<Provider.Configuration>) where Widget : Widget, Provider : RelevanceEntriesProvider
+@freestanding(declaration)
+macro Preview<Widget, Provider>(_ name: String? = nil, widget: @escaping @MainActor () -> Widget, relevanceProvider: @escaping @MainActor () -> Provider, relevance: @escaping @MainActor () async -> WidgetRelevance<Provider.Configuration>) where Widget : Widget, Provider : RelevanceEntriesProvider
 ```
 
-#### Overview
+## Overview
 
 Provide the relevance provider with sample data and use it to step through relevance entries in the Xcode proview canvas.
 

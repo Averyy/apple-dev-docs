@@ -15,11 +15,11 @@ The request body for creating a new campaign.
 object CampaignCreate
 ```
 
-#### Discussion
+## Discussion
 
 Creating a campaign ties together what’s being promoted, a budget, targeting, and a bid strategy in a single request.
 
-##### Example
+### Example
 
 ```json
 {

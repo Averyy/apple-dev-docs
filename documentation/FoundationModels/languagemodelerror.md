@@ -24,7 +24,7 @@ A failure that may occur while generating a response when using any language mod
 
 - [Adding server-side intelligence with Private Cloud Compute](./adding-server-side-intelligence-with-private-cloud-compute.md)
 
-#### Overview
+## Overview
 
 > **Note**: If your app deploys to iOS 26, macOS 26, or visionOS 26, where this error is unavailable, use an availability check and fall back to [`LanguageModelSession.GenerationError`](./languagemodelsession/generationerror.md):
 >

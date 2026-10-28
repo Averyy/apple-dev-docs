@@ -15,7 +15,7 @@ The key in the IORegistry for the IOAudioControl value-is-read-only attribute.
 #define kIOAudioControlValueIsReadOnlyKey
 ```
 
-#### Discussion
+## Discussion
 
 The value returned by this key is a 32-bit integer but the value doesn't have any direct meaning. Instead, the presence of this key indicates that the value for the control is read-only
 

@@ -24,7 +24,7 @@ class UIFieldBehavior
 @interface UIFieldBehavior : UIDynamicBehavior
 ```
 
-#### Overview
+## Overview
 
 A field behavior defines an area in which forces such as gravity, magnetism, drag, velocity, turbulence, and others can be applied. After creating a field behavior object of the appropriate type, configure the strength of the intended force along with any other field attributes.
 

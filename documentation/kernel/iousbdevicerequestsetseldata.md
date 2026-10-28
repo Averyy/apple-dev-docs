@@ -15,7 +15,7 @@ The structure for receiving system exit latency values.
 typedef struct IOUSBDeviceRequestSetSELData IOUSBDeviceRequestSetSELData;
 ```
 
-#### Discussion
+## Discussion
 
 For information about the `Set SEL` request type, see USB 3.2, 9.4.12.
 

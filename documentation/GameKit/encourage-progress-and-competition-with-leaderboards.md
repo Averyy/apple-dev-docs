@@ -5,7 +5,7 @@
 
 Let players measure their own progress and compare their skills with friends and others.
 
-#### Overview
+## Overview
 
 Use leaderboards to record player scores, which they can view in their Game Center account and directly in your game using built-in Game Center or custom interfaces. Game Center even encourages engagement by notifying players when their friends pass their scores.
 
@@ -17,7 +17,7 @@ You can also combine individual leaderboards into sets, creating a hierarchy of 
 
 For design guidance on all types of leaderboards, see [Human Interface Guidelines > Technologies > Game Center > Leaderboards](https://developer.apple.com/design/human-interface-guidelines/game-center#Leaderboards). For additional information on recurring leaderboards, see [Creating recurring leaderboards](./creating-recurring-leaderboards.md).
 
-#### Configure and test leaderboards and leaderboard sets
+## Configure and test leaderboards and leaderboard sets
 
 Configure leaderboards in Xcode before accessing them in your code and testing locally with Game Progress Manager. When you’re ready to deploy your configuration, sync your updates with App Store Connect. For more information about configuring and testing Game Center features, see [Initializing and configuring Game Center](./initializing-and-configuring-game-center.md).
 
@@ -39,7 +39,7 @@ Use the Game Progress Manager to test leaderboards on your local device before y
 
 For more information about the leaderboard properties you can configure, see [Leaderboard properties](https://developer.apple.com/help/app-store-connect/reference/leaderboards#leaderboard-properties).
 
-#### Choose a score format
+## Choose a score format
 
 Game Center formats the scores that you submit as integer values depending on the leaderboard configuration you enter in Xcode. On the Add Leaderboard page, choose a score format — such as fixed points, elapsed time, or money — that makes sense for your game. For example, if you choose these formats, Game Center formats the values as follows:
 
@@ -58,13 +58,13 @@ Optionally, enter a range of allowable values in the Score Range fields that mat
 
 ![A screenshot of the Add Leaderboard sheet in Xcode. The score format is set to Elapsed Time - To the Hundredth of a Second, with 360000 centiseconds entered as the maximum value in the score range, formatted as 1:00:00.00.](https://developer.apple.com/tutorials/images/com.apple.gamekit/add-leaderboard@2x.png)
 
-#### Add a unit to the score format or choose a currency symbol
+## Add a unit to the score format or choose a currency symbol
 
 You can further format the scores when you add a language to the leaderboard configuration in Xcode. You need to add at least one language to save the leaderboard configuration.
 
 On the Add Language page, append a unit to the score that Game Center formats, such as `pts,` `lbs`, or `meters`, by entering the localized strings for the units in the Score Format Suffix text fields. For money values, you can choose a localized currency symbol from the Score Format menu.
 
-#### Submit scores to leaderboards
+## Submit scores to leaderboards
 
 To submit a score to one or more leaderboards, use the `GKLeaderboard` [`submitScore(_:context:player:leaderboardIDs:completionHandler:)`](./gkleaderboard/submitscore%28_,context,player,leaderboardids,completionhandler%29.md) class method. Pass one or more leaderboard IDs, as well as the score, context, and player.
 
@@ -82,7 +82,7 @@ Optionally, use the `context` parameter in both of these methods to store game-s
 
 If you prefer to submit scores through your own server, see [Game Center leaderboards scores](../AppStoreConnectAPI/game-center-leaderboards-scores.md).
 
-#### Fetch leaderboards and leaderboard sets
+## Fetch leaderboards and leaderboard sets
 
 To fetch one or more individual leaderboards, pass the leaderboard IDs to the `GKLeaderboard` [`loadLeaderboards(IDs:completionHandler:)`](./gkleaderboard/loadleaderboards%28ids,completionhandler%29.md) class method.
 
@@ -95,7 +95,7 @@ To fetch specific occurrences of a recurring leaderboard, use the [`loadPrevious
 
 To fetch leaderboard sets, use the `GKLeaderboardSet` [`loadLeaderboardSets(completionHandler:)`](./gkleaderboardset/loadleaderboardsets%28completionhandler%29.md) class method. Then to fetch individual leaderboards in a set, use the [`loadLeaderboards(handler:)`](./gkleaderboardset/loadleaderboards%28handler%29.md) instance method.
 
-#### Get the scores from leaderboards
+## Get the scores from leaderboards
 
 To load the scores that the local player and others earn from a leaderboard, use the `GKLeaderboard` [`loadEntries(for:timeScope:range:completionHandler:)`](./gkleaderboard/loadentries%28for,timescope,range,completionhandler%29.md) method.
 
@@ -112,7 +112,7 @@ To get all player scores in that time period, pass [`GKLeaderboard.PlayerScope.g
 
 Then use the properties of the [`GKLeaderboard.Entry`](./gkleaderboard/entry.md) instances that this method returns to get details about the individual scores, including the players who earned them.
 
-#### Display leaderboards
+## Display leaderboards
 
 To display a leaderboard or leaderboard set in your custom game interface, load the leaderboard or leaderboard set and use the [`title`](./gkleaderboard/title.md) property to get the localized name. To get the image representation that you upload to App Store Connect, use the [`loadImage(completionHandler:)`](./gkleaderboard/loadimage%28completionhandler%29.md) method.
 
@@ -123,7 +123,7 @@ let image = try await leaderboard.loadImage()
 
 Alternatively, display the leaderboard in the familiar Game Center interface. To learn more, see [Display a single leaderboard](./displaying-the-game-center-dashboard.md#Display-a-single-leaderboard).
 
-#### Set the default leaderboard
+## Set the default leaderboard
 
 You can set the default leaderboard for an individual player during your game. For example, change the default leaderboard when the player advances to a different level in your game.
 

@@ -20,11 +20,11 @@ optional func popoverShouldClose(_ popover: NSPopover) -> Bool
 - (BOOL) popoverShouldClose:(NSPopover *) popover;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the popover should close, [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 The popover invokes this method on its delegate whenever it is about to close. This gives the delegate a chance to override the close.
 

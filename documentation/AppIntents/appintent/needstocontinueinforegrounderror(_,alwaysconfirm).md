@@ -21,7 +21,7 @@ Asks the person to continue the intent’s action in the foreground.
 func needsToContinueInForegroundError(_ dialog: IntentDialog? = nil, alwaysConfirm: Bool = true) -> AppIntentError
 ```
 
-#### Discussion
+## Discussion
 
 If your intent code encounters an error and needs to continue in the foreground, call this method to start the transition process. Before calling this method, use the contextual information in the intent’s [`systemContext`](./systemcontext.md) property to verify the app can transition to the foreground. If you call this method and it’s not possible to transition the app to the foreground, the system throws an [`notAllowed`](../appintenterror/unrecoverable/notallowed.md) error.
 

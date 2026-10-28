@@ -15,11 +15,11 @@ Attempt to cancel a pending invocation of a thread call.
 boolean_t thread_call_cancel(thread_call_t call);
 ```
 
-#### Return Value
+## Return Value
 
 TRUE if the call was successfully cancelled, FALSE otherwise.
 
-#### Discussion
+## Discussion
 
 Attempt to cancel a thread call which has been scheduled for execution with a thread_call_enter* variant. If the call has not yet begun executing, the pending invocation will be cancelled and TRUE will be returned. If the work item has already begun executing, thread_call_cancel will return FALSE immediately; the callback may be about to run, currently running, or already done executing.
 

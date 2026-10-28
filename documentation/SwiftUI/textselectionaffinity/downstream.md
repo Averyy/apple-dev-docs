@@ -21,7 +21,7 @@ An downstream selection affinity. In this case, the cursor is associated with th
 case downstream
 ```
 
-#### Discussion
+## Discussion
 
 In the context of our example `hello|مرحبا`, with a downstream affinity, the cursor would be associated with the first character of “مرحبا”. If you were to type in Arabic, the characters would be added before the “م” in “مرحبا”, since Arabic is written right-to-left.
 

@@ -23,7 +23,7 @@ func point(at i: Int) -> PKStrokePoint
 - (PKStrokePoint *) pointAtIndex:(NSUInteger) i;
 ```
 
-#### Return Value
+## Return Value
 
 The [`PKStrokePointReference`](../pkstrokepointreference.md) at control point index i.
 

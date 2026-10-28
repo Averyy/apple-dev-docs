@@ -6,28 +6,31 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.pa
 
 # mlx.core.pad
 
-**pad(*a: array*, *pad_width: int | tuple[int] | tuple[int, int] | list[tuple[int, int]]*, *mode: Literal['constant', 'edge', 'reflect', 'symmetric'] = 'constant'*, *constant_values: scalar | array = 0*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: Pad an array with a constant value
+```python
+pad(a: array, pad_width: int | tuple[int] | tuple[int, int] | list[tuple[int, int]], mode: Literal['constant', 'edge', 'reflect', 'symmetric'] = 'constant', constant_values: scalar | array = 0, *, stream: StreamOrDevice = None) → array
+```
 
-Parameters:
+Pad an array with a constant value
 
-**a** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
-**pad_width** ([int](https://docs.python.org/3/builtins/functions.html#int)*, *[tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*)**, *[tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*, *[int](https://docs.python.org/3/builtins/functions.html#int)*) or *[list](https://docs.python.org/3/builtins/stdtypes.html#list)*(*[tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*, *[int](https://docs.python.org/3/builtins/functions.html#int)*)**)*) – Number of padded
+**Parameters:**
+
+- **a** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
+- **pad_width** ([int](https://docs.python.org/3/builtins/functions.html#int), [tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)([int](https://docs.python.org/3/builtins/functions.html#int)), [tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)([int](https://docs.python.org/3/builtins/functions.html#int), [int](https://docs.python.org/3/builtins/functions.html#int)*) or* [list](https://docs.python.org/3/builtins/stdtypes.html#list)([tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)([int](https://docs.python.org/3/builtins/functions.html#int), [int](https://docs.python.org/3/builtins/functions.html#int)))) – Number of padded
 values to add to the edges of each axis:`((before_1, after_1),
 (before_2, after_2), ..., (before_N, after_N))`. If a single pair
 of integers is passed then `(before_i, after_i)` are all the same.
 If a single integer or tuple with a single integer is passed then
 all axes are extended by the same number on each side.
-**mode** – Padding mode. One of the following strings:
+- **mode** – Padding mode. One of the following strings:
 “constant” (default): Pads with a constant value.
 “edge”: Pads with the edge values of array.
 “reflect”: Pads with the reflection of the array, without repeating the edge values.
 “symmetric”: Pads with the reflection of the array, repeating the edge values.
-**constant_values** ([array](mlx.core.array.md#mlx.core.array)* or **scalar**, **optional*) – Optional constant value
+- **constant_values** ([array](mlx.core.array.md#mlx.core.array) *or* *scalar*, *optional*) – Optional constant value
 to pad the edges of the array with.
 
-Returns:
-The padded array.
+**Returns:**
+: The padded array.
 
-Return type:
-[array](mlx.core.array.md#mlx.core.array)
+**Return type:**
+: [array](mlx.core.array.md#mlx.core.array)

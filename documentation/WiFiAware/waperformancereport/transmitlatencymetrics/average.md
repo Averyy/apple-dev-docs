@@ -17,7 +17,7 @@ The average per-packet transmit latency measured for this flow’s peers.
 let average: Duration?
 ```
 
-#### Discussion
+## Discussion
 
 This property returns `nil` if the system can’t measure the transmit latency.
 

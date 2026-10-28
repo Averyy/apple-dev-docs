@@ -21,7 +21,7 @@ Computes a forward or inverse out-of-place, single-precision real FFT on multipl
 extern void vDSP_fftm_zrop(FFTSetup __Setup, const DSPSplitComplex *__A, vDSP_Stride __IA, vDSP_Stride __IMA, const DSPSplitComplex *__C, vDSP_Stride __IC, vDSP_Stride __IMC, vDSP_Length __Log2N, vDSP_Length __M, FFTDirection __Direction);
 ```
 
-#### Discussion
+## Discussion
 
 > 💡 **Tip**:  To learn how the vDSP library scales and arranges the FFT output, see [Understanding data packing for Fourier transforms](./understanding-data-packing-for-fourier-transforms.md).
 

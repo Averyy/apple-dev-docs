@@ -25,7 +25,7 @@ class AVAudioPlayerNode
 @interface AVAudioPlayerNode : AVAudioNode
 ```
 
-#### Overview
+## Overview
 
 This audio node supports scheduling the playback of [`AVAudioPCMBuffer`](./avaudiopcmbuffer.md) instances, or segments of audio files that you open through [`AVAudioFile`](./avaudiofile.md). You can schedule buffers and segments to play at specific points in time or to play immediately following preceding segments.
 
@@ -39,11 +39,11 @@ The [`stop()`](./avaudioplayernode/stop%28%29.md) method unschedules all previou
 
 > **Note**:  The `AVAudioPlayerNode` class isn’t key-value observing compliant, and may indicate that Combine publishers are available. Don’t use them for monitoring changes.
 
-##### Player timeline
+### Player timeline
 
 The usual [`AVAudioNode`](./avaudionode.md) sample times, which [`lastRenderTime`](./avaudionode/lastrendertime.md) observes, have an arbitrary zero point. The `AVAudioPlayerNode` class superimposes a second player timeline on top of this to reflect when the player starts and intervals when it pauses. The methods [`nodeTime(forPlayerTime:)`](./avaudioplayernode/nodetime%28forplayertime%29.md) and [`playerTime(forNodeTime:)`](./avaudioplayernode/playertime%28fornodetime%29.md) convert between the two.
 
-##### Scheduling playback time
+### Scheduling playback time
 
 The [`scheduleBuffer(_:at:options:completionHandler:)`](./avaudioplayernode/schedulebuffer%28_,at,options,completionhandler%29.md), [`scheduleFile(_:at:completionHandler:)`](./avaudioplayernode/schedulefile%28_,at,completionhandler%29.md), and [`scheduleSegment(_:startingFrame:frameCount:at:completionHandler:)`](./avaudioplayernode/schedulesegment%28_,startingframe,framecount,at,completionhandler%29.md) methods take an [`AVAudioTime`](./avaudiotime.md) `when` parameter, and you interpret it as follows:
 
@@ -61,13 +61,13 @@ The scheduling methods fail if:
 - An [`AVAudioTime`](./avaudiotime.md) doesn’t specify a valid sample time or a host time.
 - A segment’s start frame or frame count is a negative value.
 
-##### Handling buffer or file completion
+### Handling buffer or file completion
 
 The buffer of file completion handlers are a means to schedule more data if available on the player node. For more information on the different completion callback types, see [`AVAudioPlayerNodeCompletionCallbackType`](./avaudioplayernodecompletioncallbacktype.md).
 
 > ❗ **Important**:  Don’t stop a player within a completion handler callback because it can deadlock while trying to unschedule already scheduled buffers.
 
-##### Rendering offline
+### Rendering offline
 
 When you use a player node with the engine operating in manual rendering mode, you use the buffer or file completion handlers — [`lastRenderTime`](./avaudionode/lastrendertime.md), [`latency`](./avaudionode/latency.md), and [`outputPresentationLatency`](./avaudionode/outputpresentationlatency.md) — to track how much data the player rendered and how much remains to render.
 

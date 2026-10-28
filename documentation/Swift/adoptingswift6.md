@@ -5,7 +5,7 @@
 
 Enable strict concurrency checking to find data races at compile time.
 
-#### Overview
+## Overview
 
 Strict concurrency checking in the Swift 6 language mode helps you find and fix data races at compile time.
 
@@ -13,7 +13,7 @@ Overlapping access to shared mutable state creates the risk for data races. Data
 
 For information about the language-level concurrency model in Swift, see [Concurrency](https://docs.swift.org/swift-book/LanguageGuide/Concurrency.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/).
 
-##### Decide when to upgrade to strict checking
+### Decide when to upgrade to strict checking
 
 Xcode 16 supports the new Swift 6 language mode, which uses strict checking for concurrency, and it also still includes the Swift 5, 4.2, and 4 language modes. The Swift 6 language mode is opt-in: Your projects continue to build with their current language mode, and new projects default to the Swift 5 language mode.
 
@@ -23,7 +23,7 @@ If your app is organized into multiple modules, you can migrate your code one mo
 
 If you maintain a public Swift package, adopting the Swift 6 language mode helps your users who want to migrate their codebases too. You can follow along on the adoption of the Swift 6 language in popular packages on `SwiftPackageIndex.com`.
 
-##### Upgrade a project to Swift 6
+### Upgrade a project to Swift 6
 
 You can start using new features from Swift 6, like strict concurrency checking, before upgrading your project to the Swift 6 language mode. To enable new language features, open your build settings, and choose Swift Compiler - Upcoming Features; then select Yes next to the features you want to adopt. As you prepare to upgrade to the Swift 6 language version, you can increase the level of concurrency checking by changing the Strict Concurrency Checking build setting from Minimal to Complete.
 

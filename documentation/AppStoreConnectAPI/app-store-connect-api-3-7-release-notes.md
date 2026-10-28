@@ -5,11 +5,11 @@
 
 Update your server-side code to use new features, and test your code against API changes.
 
-#### Overview
+## Overview
 
 App Store Connect API version 3.7 provides resources that enable you to automate actions you take in App Store Connect.
 
-##### New Features
+### New Features
 
 - Developers now need to provide a description for all beta localizations before submitting to beta app review for external testing with TestFlight. You can update `betaAppLocalizations` with [`Modify a beta app localization`](./patch-v1-betaapplocalizations-_id_.md).
 - Added `WIN_BACK_ELIGIBILITY` report type to [`Download sales and trends reports`](./get-v1-salesreports.md).
@@ -21,7 +21,7 @@ App Store Connect API version 3.7 provides resources that enable you to automate
 - The [`Read an App’s Alternative Distribution Key`](./get-v1-apps-_id_-alternativedistributionkey.md) endpoint now shows multiple distribution keys when you have multiple configured.
 - There is a new required attribute `defaultFormatter` when you use [`Create a Leaderboard`](./post-v1-gamecenterleaderboards.md), which gives all your localizations the same formatter. To learn more, see [`GameCenterLeaderboardCreateRequest.Data.Attributes`](./gamecenterleaderboardcreaterequest/data-data.dictionary/attributes-data.dictionary.md).
 
-##### Deprecations
+### Deprecations
 
 - The attribute `previewImage` on [`AppPreview.Attributes`](./apppreview/attributes-data.dictionary.md) is deprecated. Use `previewFrameImage` and [`PreviewFrameImage`](./previewframeimage.md) instead.
 - The attribute `assetDeliveryState` on [`AppPreview.Attributes`](./apppreview/attributes-data.dictionary.md) is deprecated. Use `videoDeliveryState` and [`AppMediaVideoState`](./appmediavideostate.md) instead.
@@ -33,7 +33,7 @@ App Store Connect API version 3.7 provides resources that enable you to automate
 - The relationship `groupAchievement` on [`GameCenterAchievement.Relationships`](./gamecenterachievement/relationships-data.dictionary.md) is deprecated.
 - The relationship `groupLeaderboard` on [`GameCenterLeaderboard.Relationships`](./gamecenterleaderboard/relationships-data.dictionary.md) is deprecated.
 
-##### Removals
+### Removals
 
 - The `v1/appPreOrders` and `v1/appAvailabilities` resources are removed and replaced with `v2/appAvailabilities`. To learn more, see [App availability](./app-availability.md).
 - `WATCH_SERIES_4` and `WATCH_SERIES_3` enums are removed from [`PreviewType`](./previewtype.md).

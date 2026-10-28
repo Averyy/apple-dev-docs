@@ -16,7 +16,7 @@ An error that indicates the app lacks user permission for the device’s current
 static var locationUnauthorized: ARError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 To resolve this issue, the app needs to ask the user to enable location access for this app in Settings.
 

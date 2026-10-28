@@ -12,13 +12,13 @@ Prompt the user to share their screen using AirPlay Mirroring.
 - Mac Catalyst 7.0+
 - macOS 10.10+
 
-#### Discussion
+## Discussion
 
 Provide either the `DestinationName` or the `DestinationDeviceID`. If you provide both values, MDM uses `DestinationDeviceID`.
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command availability
+### Command availability
 
 |  |  |
 | --- | --- |
@@ -28,7 +28,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | iOS, macOS |
 | Required access right | N/A |
 
-##### Example request and response
+### Example request and response
 
 **Request**:
 

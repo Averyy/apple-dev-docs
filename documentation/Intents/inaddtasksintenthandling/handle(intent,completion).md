@@ -30,7 +30,7 @@ func handle(intent: INAddTasksIntent) async -> INAddTasksIntentResponse
 - (void) handleAddTasks:(INAddTasksIntent *) intent completion:(void (^)(INAddTasksIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 In your implementation of this method, create the tasks described by the `intent` parameter, create a response object with any relevant details, and call the provided completion handler.
 

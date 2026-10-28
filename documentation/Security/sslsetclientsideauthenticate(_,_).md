@@ -24,11 +24,11 @@ func SSLSetClientSideAuthenticate(_ context: SSLContext, _ auth: SSLAuthenticate
 OSStatus SSLSetClientSideAuthenticate(SSLContextRef context, SSLAuthenticate auth);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 
-#### Discussion
+## Discussion
 
 This function can be called only by servers. Use of this function is optional. The default authentication requirement is [`SSLAuthenticate.neverAuthenticate`](./sslauthenticate/neverauthenticate.md). This function may be called only when no session is active.
 

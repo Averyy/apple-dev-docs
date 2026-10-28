@@ -25,7 +25,7 @@ var purchaseDate: Date { get }
 @property (nonatomic, readonly) NSDate * purchaseDate;
 ```
 
-#### Discussion
+## Discussion
 
 The purchase date applies to any type of Apple In-App Purchase.
 

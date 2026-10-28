@@ -13,7 +13,7 @@
 kINQUIRY_PERIPHERAL_TYPE_UnknownOrNoDeviceType = 0x1F
 ```
 
-#### Discussion
+## Discussion
 
 Unknown or no device.
 

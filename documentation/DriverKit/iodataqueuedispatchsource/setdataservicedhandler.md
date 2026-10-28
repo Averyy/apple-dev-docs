@@ -18,11 +18,11 @@ Installs the handler block to execute when data is removed from the queue.
 virtual kern_return_t SetDataServicedHandler(OSAction *action);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../error-codes.md).
 
-#### Discussion
+## Discussion
 
 If your code produces data for the queue, use this method to install a handler so you can add more data to the queue. When space becomes available in the queue, the system executes your handler.
 

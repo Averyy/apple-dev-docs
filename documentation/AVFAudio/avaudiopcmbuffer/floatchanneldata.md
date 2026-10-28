@@ -25,7 +25,7 @@ var floatChannelData: UnsafePointer<UnsafeMutablePointer<Float>>? { get }
 @property (nonatomic, readonly) float * const* floatChannelData;
 ```
 
-#### Discussion
+## Discussion
 
 The `floatChannelData` property returns pointers to the buffer’s audio samples if the buffer’s format is 32-bit float. It returns `nil` if it’s another format.
 

@@ -16,7 +16,7 @@ typealias Handler = @Sendable (Notification) -> Bool
 typedef _Bool (^)(NSNotification *) XCNotificationExpectationHandler;
 ```
 
-#### Return Value
+## Return Value
 
 Your custom handler should return [`true`](../../Swift/true.md) if the expectation is considered fulfilled after the notification is received, otherwise [`false`](../../Swift/false.md).
 

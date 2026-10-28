@@ -22,7 +22,7 @@ optional func clipBufferingOutputDidStopBuffering(_ clipBufferingOutput: SCClipB
 - (void) clipBufferingOutputDidStopBuffering:(SCClipBufferingOutput *) clipBufferingOutput;
 ```
 
-#### Discussion
+## Discussion
 
 clipBufferingOutputDidStopBuffering:
 

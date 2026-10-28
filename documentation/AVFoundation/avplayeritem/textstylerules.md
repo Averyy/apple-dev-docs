@@ -25,7 +25,7 @@ var textStyleRules: [AVTextStyleRule]? { get set }
 @property (copy, nullable) NSArray<AVTextStyleRule *> * textStyleRules;
 ```
 
-#### Discussion
+## Discussion
 
 Text style rules apply only to WebVTT subtitles. They don’t apply to other subtitle formats and legible text.
 

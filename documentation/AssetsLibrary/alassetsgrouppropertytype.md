@@ -12,7 +12,7 @@ Key to retrieve the group type.
 extern NSString * const ALAssetsGroupPropertyType;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an `ALAssetsGroupType` constant wrapped in an `NSNumber` object.
 

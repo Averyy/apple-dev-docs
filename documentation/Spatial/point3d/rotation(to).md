@@ -27,7 +27,7 @@ func rotation(to other: Point3D) -> Rotation3D
 static SPRotation3D SPPoint3DRotationToPoint(SPPoint3D point, SPPoint3D other);
 ```
 
-#### Return Value
+## Return Value
 
 The rotation between two points.
 

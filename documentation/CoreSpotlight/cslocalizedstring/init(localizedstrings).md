@@ -23,7 +23,7 @@ init(localizedStrings: [AnyHashable : Any])
 - (instancetype) initWithLocalizedStrings:(NSDictionary *) localizedStrings;
 ```
 
-#### Return Value
+## Return Value
 
 An object that contains the localized versions for a specific string.
 

@@ -10,7 +10,7 @@ Add real-time digital signal processing to apps like Logic Pro X and GarageBand 
 - macOS 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC25 session 276: [What’s new in BNNSGraph](https://developer.apple.com/videos/play/wwdc2025/276).
 

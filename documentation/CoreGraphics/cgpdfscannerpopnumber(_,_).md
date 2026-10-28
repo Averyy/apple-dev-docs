@@ -25,11 +25,11 @@ func CGPDFScannerPopNumber(_ scanner: CGPDFScannerRef, _ value: UnsafeMutablePoi
 extern bool CGPDFScannerPopNumber(CGPDFScannerRef scanner, CGPDFReal *value);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the real value is retrieved successfully; otherwise, [`false`](../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The number retrieved from the scanner can be a real value or an integer value. However, the result is always converted to a value of type [`CGPDFReal`](./cgpdfreal.md).
 

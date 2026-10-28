@@ -17,7 +17,7 @@ The defined behavior of the second button.
 var secondaryButtonBehavior: AlarmPresentation.Alert.SecondaryButtonBehavior?
 ```
 
-#### Discussion
+## Discussion
 
 You can define the button to switch back to a countdown for a snoozed alarm or repeating timer, or execute an intent without mutating the alarm state.
 

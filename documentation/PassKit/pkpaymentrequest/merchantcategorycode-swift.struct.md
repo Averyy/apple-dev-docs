@@ -20,7 +20,7 @@ An optional four-digit struct, in ISO 18245 format, that represents the type of 
 struct MerchantCategoryCode
 ```
 
-#### Overview
+## Overview
 
 The four-digit merchant category codes are in ISO 18245 format and range from 1 to 9999.
 

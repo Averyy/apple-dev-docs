@@ -25,9 +25,9 @@ func vvatan2(_: UnsafeMutablePointer<Double>, _: UnsafePointer<Double>, _: Unsaf
 void vvatan2(double *, const double *, const double *, const int *);
 ```
 
-#### Discussion
+## Discussion
 
-##### Parameters:
+### Parameters:
 
 - **parameter 1**: The output array, *z*.
 - **parameter 2**: The input array, *y*.

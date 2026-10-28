@@ -25,7 +25,7 @@ var defaultDate: Date? { get set }
 @property (copy, nullable) NSDate * defaultDate;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this property is `nil`.
 

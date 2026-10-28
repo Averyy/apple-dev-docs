@@ -24,7 +24,7 @@ class func kelvin() -> Self
 + (instancetype) kelvinUnit;
 ```
 
-#### Return Value
+## Return Value
 
 A HealthKit unit for measuring temperature in kelvins.
 

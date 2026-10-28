@@ -25,7 +25,7 @@ func addReferenceSignature(_ signature: SHSignature, representing mediaItems: [S
 - (BOOL) addReferenceSignature:(SHSignature *) signature representingMediaItems:(NSArray<SHMediaItem *> *) mediaItems error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  This system ignores calls to `addReferenceSignature(_:representing:)` after adding the catalog to an `SHSession`.
 

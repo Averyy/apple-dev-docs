@@ -22,7 +22,7 @@ struct UIActivityItemsConfigurationInteraction
 typedef NSString * UIActivityItemsConfigurationInteraction;
 ```
 
-#### Overview
+## Overview
 
 Specify which interactions you want the activity view to include in [`supportedInteractions`](./uiactivityitemsconfiguration/supportedinteractions.md).
 

@@ -25,11 +25,11 @@ func newValue(forRelationship relationship: NSRelationshipDescription, forObject
 - (id) newValueForRelationship:(NSRelationshipDescription *) relationship forObjectWithID:(NSManagedObjectID *) objectID withContext:(NSManagedObjectContext *) context error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The value of the relationship specified `relationship` of the object with object ID `objectID`, or `nil` if an error occurs.
 
-#### Discussion
+## Discussion
 
 If the relationship is a to-one, the method should return an [`NSManagedObjectID`](../nsmanagedobjectid.md) instance that identifies the destination, or an instance of [`NSNull`](../../Foundation/nsnull.md) if the relationship value is `nil`.
 

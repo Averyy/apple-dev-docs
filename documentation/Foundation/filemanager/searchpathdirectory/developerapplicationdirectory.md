@@ -25,7 +25,7 @@ case developerApplicationDirectory
 NSDeveloperApplicationDirectory
 ```
 
-#### Discussion
+## Discussion
 
 Deprecated: As of Xcode 4.3, there is no longer a Developer Application directory directory; instead, Xcode.app is a self-contained application that gets installed in the user’s Applications directory, by default, although it can be put anywhere.
 

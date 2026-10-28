@@ -20,7 +20,7 @@ Returns the variant names available in a nested variant set on this variant.
 func variantNames(_ variantSetName: USDToken) -> [USDToken]
 ```
 
-#### Return Value
+## Return Value
 
 The variant names defined in `variantSetName`.
 

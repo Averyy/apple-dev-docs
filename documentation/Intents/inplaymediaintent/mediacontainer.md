@@ -33,7 +33,7 @@ var mediaContainer: INMediaItem? { get }
 @property (atomic, copy, readonly, nullable) INMediaItem * mediaContainer;
 ```
 
-#### Discussion
+## Discussion
 
 A container consists of one or more pieces of media content such as a playlist or album. You set [`mediaContainer`](./mediacontainer.md) when creating the [`INPlayMediaIntent`](../inplaymediaintent.md) object.
 

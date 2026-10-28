@@ -21,11 +21,11 @@ final func importBrowserData(token: UUID) -> AsyncThrowingStream<BEBrowserData, 
 
 - [Transferring browsing data to another browser](../transferring-browsing-data-to-another-browser.md)
 
-#### Return Value
+## Return Value
 
 An [`AsyncStream`](../../Swift/asyncstream.md), in which you import the individual data types.
 
-#### Discussion
+## Discussion
 
 Call this method from the [`userActivityType`](./useractivitytype-35jes.md) to begin receiving a stream of another app’s browsing data. For more information, see [Transferring browsing data to another browser](../transferring-browsing-data-to-another-browser.md).
 

@@ -25,7 +25,7 @@ var isReadable: Bool { get }
 @property (nonatomic, readonly, getter=isReadable) BOOL readable;
 ```
 
-#### Discussion
+## Discussion
 
 This property value is [`true`](../../Swift/true.md) if you can use [`AVAssetReader`](../avassetreader.md) to extract the asset’s media data.
 

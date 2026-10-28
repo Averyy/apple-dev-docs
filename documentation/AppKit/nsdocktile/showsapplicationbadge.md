@@ -19,7 +19,7 @@ var showsApplicationBadge: Bool { get set }
 @property BOOL showsApplicationBadge;
 ```
 
-#### Discussion
+## Discussion
 
 Miniaturized windows include the application badge by default to convey the associated application to the user. In macOS 10.5 and later, application tiles do not support the application badge. A miniaturized window with a custom view does not draw the application badge.
 

@@ -19,7 +19,7 @@ optional func outputVideoEffectDidFail(for stream: SCStream, withError error: an
 - (void) outputVideoEffectDidFailForStream:(SCStream *) stream withError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 outputVideoEffectDidFailForStream:withError:
 

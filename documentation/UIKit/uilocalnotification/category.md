@@ -22,7 +22,7 @@ var category: String? { get set }
 @property (nonatomic, copy, nullable) NSString * category;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is the category name associated with a registered [`UIUserNotificationSettings`](../uiusernotificationsettings.md) object. When the alert for the local notification is displayed, the system uses the string you specify to look up the group and retrieve its actions. It then adds a button to the alert for each action defined by the group. When the user taps one of those buttons, the app is woken up (or launched) and given a chance to perform the designated action. If the specified category name does not belong to a registered group of actions, the alert does not display any additional action buttons.
 

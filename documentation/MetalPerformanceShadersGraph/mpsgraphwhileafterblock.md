@@ -24,7 +24,7 @@ typealias MPSGraphWhileAfterBlock = ([MPSGraphTensor]) -> [MPSGraphTensor]
 typedef NSArray<MPSGraphTensor *> *(^)(NSArray<MPSGraphTensor *> *) MPSGraphWhileAfterBlock;
 ```
 
-#### Return Value
+## Return Value
 
 A valid `MPSGraphTensor` array with results forwarded to the condition block.
 

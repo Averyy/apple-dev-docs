@@ -19,7 +19,7 @@ var authority: CBIdentityAuthority { get }
 @property (nonatomic, readonly) CBIdentityAuthority * authority;
 ```
 
-#### Return Value
+## Return Value
 
 The identity authority where the identity is stored.
 

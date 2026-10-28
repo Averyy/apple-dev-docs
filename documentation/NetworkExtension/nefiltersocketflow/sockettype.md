@@ -23,7 +23,7 @@ var socketType: Int32 { get }
 @property (readonly) int socketType;
 ```
 
-#### Discussion
+## Discussion
 
 Examples of socket types include `SOCK_STREAM` and `SOCK_DGRAM`.
 

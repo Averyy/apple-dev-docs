@@ -31,7 +31,7 @@ init(concurrencyType ct: NSManagedObjectContextConcurrencyType)
 
 - [Using Core Data in the background](../using-core-data-in-the-background.md)
 
-#### Discussion
+## Discussion
 
 For more information, see [Concurrency](../nsmanagedobjectcontext.md#Concurrency).
 

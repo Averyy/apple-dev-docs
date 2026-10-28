@@ -9,7 +9,7 @@ Get information about a specific package for an organization using Apple Busines
 **Availability**:
 - Apple Business API 2.6+
 
-##### Example
+### Example
 
 **Request**:
 

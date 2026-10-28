@@ -25,7 +25,7 @@ var COMPRESSION_LZMA: compression_algorithm { get }
 COMPRESSION_LZMA
 ```
 
-#### Discussion
+## Discussion
 
 LZMA is a high-ratio compression algorithm that combines an LZ77 match finder with range coding driven by a Markov-chain context model. It typically achieves significantly higher compression ratios than [`COMPRESSION_ZLIB`](./compression_zlib.md) or [`COMPRESSION_LZFSE`](./compression_lzfse.md), at the cost of being roughly an order of magnitude slower than the other Compression library algorithms for both encoding and decoding. Use LZMA when output size is the dominant concern, for example, when bandwidth or storage is far more expensive than CPU time, or when the payload is compressed once and decompressed many times.
 

@@ -20,11 +20,11 @@ Returns a URL for the specified relative path.
 - (NSURL *) URLForPath:(NSString *) path error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The URL to the item or `nil` if an error occurred.
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**: Don’t persist the returned URL beyond the lifetime of the current process.
 

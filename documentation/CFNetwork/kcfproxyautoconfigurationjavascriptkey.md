@@ -22,7 +22,7 @@ let kCFProxyAutoConfigurationJavaScriptKey: CFString
 extern CFStringRef const kCFProxyAutoConfigurationJavaScriptKey;
 ```
 
-#### Discussion
+## Discussion
 
 A `CFString` value containing the full JavaScript source for the proxy autoconfiguration (PAC) file. This key is only present for proxies of type `kCFProxyAutoConfigurationJavaScript`.
 

@@ -14,7 +14,7 @@
 var kSKSearchOptionDefault: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 Default search options include:
 

@@ -19,11 +19,11 @@ class func menuFont(ofSize fontSize: CGFloat) -> NSFont
 + (NSFont *) menuFontOfSize:(CGFloat) fontSize;
 ```
 
-#### Return Value
+## Return Value
 
 A font object of the specified size.
 
-#### Discussion
+## Discussion
 
 If `fontSize` is 0 or negative, returns the menu items font with the default size.
 

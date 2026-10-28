@@ -20,7 +20,7 @@ A container describing a solver instance.
 struct IKSolverDefinition
 ```
 
-#### Overview
+## Overview
 
 Adds unique identifier for each solver instance as the rig can be reused.
 

@@ -19,7 +19,7 @@ func startSpeaking(_ sender: Any?)
 - (void) startSpeaking:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 Speech continues asynchronously until the end of the text or until terminated by invoking the [`stopSpeaking(_:)`](./stopspeaking%28_%29.md) method. This method behaves similar to the [`startSpeaking(_:)`](../../AppKit/nstextview/startspeaking%28_%29.md) method in [`NSTextView`](../../AppKit/nstextview.md).
 

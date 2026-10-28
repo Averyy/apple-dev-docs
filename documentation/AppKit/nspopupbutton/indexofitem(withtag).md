@@ -19,11 +19,11 @@ func indexOfItem(withTag tag: Int) -> Int
 - (NSInteger) indexOfItemWithTag:(NSInteger) tag;
 ```
 
-#### Return Value
+## Return Value
 
 The index of the item or `-1` if no item with the specified tag was found.
 
-#### Discussion
+## Discussion
 
 This method invokes the method of the same name of its `NSPopUpButtonCell` object.
 

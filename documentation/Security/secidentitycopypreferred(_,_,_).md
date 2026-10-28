@@ -19,11 +19,11 @@ func SecIdentityCopyPreferred(_ name: CFString, _ keyUsage: CFArray?, _ validIss
 SecIdentityRefSecIdentityCopyPreferred(CFStringRef name, CFArrayRef keyUsage, CFArrayRef validIssuers);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an identity, or `nil` if no identity from one of the specified issuers has been set as the preferred identity for the specified name and usage. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to free the identity’s memory when you are done with it.
 
-#### Discussion
+## Discussion
 
 If a preferred identity has not been set for the supplied name, this function returns `NULL`. Your code should then perform a search for possible identities by calling [`SecItemCopyMatching(_:_:)`](./secitemcopymatching%28_,_%29.md).
 

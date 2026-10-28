@@ -21,7 +21,7 @@ Preprocesses a data frame of examples.
 func preprocessed(from input: DataFrame, eventHandler: EventHandler? = nil) async throws -> DataFrame
 ```
 
-#### Return Value
+## Return Value
 
 The preprocessed examples.
 

@@ -21,7 +21,7 @@ Iterate the `Character` contents of a `UTF8Span`.
 struct CharacterIterator
 ```
 
-#### Overview
+## Overview
 
 ```swift
 func countCharacters(_ string: borrowing String) {

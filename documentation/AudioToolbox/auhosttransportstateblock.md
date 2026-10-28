@@ -24,7 +24,7 @@ typealias AUHostTransportStateBlock = (UnsafeMutablePointer<AUHostTransportState
 typedef _Bool (^)(enum AUHostTransportStateFlags *, double *, double *, double *) __attribute__((nonblocking)) AUHostTransportStateBlock;
 ```
 
-#### Discussion
+## Discussion
 
 If the host app provides this block to an audio unit, via the [`transportStateBlock`](./auaudiounit/transportstateblock.md) property, then the block may be called at the beginning of each render cycle to obtain information about the current transport state. Any of the provided parameters may be null to indicate that the audio unit is not interested in that particular piece of information.
 

@@ -5,7 +5,7 @@
 
 Contain keyword and smart collections.
 
-#### Overview
+## Overview
 
 Use a `collection-folder` element to describe a collection folder in an event. A `collection-folder` element contains a series of `keyword-collection` elements or `smart-collection` elements, and can also include other `collection-folder` elements. The following example represents a collection folder that contains a keyword collection and a smart collection:
 

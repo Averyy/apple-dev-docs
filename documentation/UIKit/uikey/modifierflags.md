@@ -23,7 +23,7 @@ var modifierFlags: UIKeyModifierFlags { get }
 @property (nonatomic, readonly) UIKeyModifierFlags modifierFlags;
 ```
 
-#### Discussion
+## Discussion
 
 For a list of modifier flags, see [`UIKeyModifierFlags`](../uikeymodifierflags.md).
 

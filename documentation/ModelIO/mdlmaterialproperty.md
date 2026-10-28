@@ -24,7 +24,7 @@ class MDLMaterialProperty
 @interface MDLMaterialProperty : NSObject
 ```
 
-#### Overview
+## Overview
 
 The collection of material properties in a [`MDLMaterial`](./mdlmaterial.md) instance defines the intended surface appearance for rendering a 3D object. A material property object’s [`semantic`](./mdlmaterialproperty/semantic.md) property identifies which aspect of material rendering it affects, and its value (which can be any of several types) determines how the material property contributes to that aspect of rendering.
 

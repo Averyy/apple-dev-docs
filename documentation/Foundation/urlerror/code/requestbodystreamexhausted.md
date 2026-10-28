@@ -21,7 +21,7 @@ A body stream is needed but the client did not provide one.
 static var requestBodyStreamExhausted: URLError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 This impacts clients on iOS that send a `POST` request using a body stream but do not implement the [`URLSessionTaskDelegate`](../../urlsessiontaskdelegate.md) method [`urlSession(_:task:needNewBodyStream:)`](../../urlsessiontaskdelegate/urlsession%28_,task,neednewbodystream%29.md).
 

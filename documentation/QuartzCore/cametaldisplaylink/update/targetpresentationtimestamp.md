@@ -24,7 +24,7 @@ var targetPresentationTimestamp: CFTimeInterval { get }
 @property (nonatomic, readonly) CFTimeInterval targetPresentationTimestamp;
 ```
 
-#### Discussion
+## Discussion
 
 Update your animations based on the time difference between this timestamp and the previous timestamp.
 

@@ -23,7 +23,7 @@ var defaultLocale: Locale? { get }
 @property (nonatomic, copy, readonly, nullable) NSLocale * defaultLocale;
 ```
 
-#### Discussion
+## Discussion
 
 Returns `nil` if there was no default locale specified.
 

@@ -25,11 +25,11 @@ convenience init(personHandle: INPersonHandle, nameComponents: PersonNameCompone
 - (instancetype) initWithPersonHandle:(INPersonHandle *) personHandle nameComponents:(NSPersonNameComponents *) nameComponents displayName:(NSString *) displayName image:(INImage *) image rating:(NSString *) rating phoneNumber:(NSString *) phoneNumber;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized driver object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 You can’t change the driver information after initialization, so specify as much information as you have.
 

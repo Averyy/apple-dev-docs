@@ -21,7 +21,7 @@ case leading
 CPInformationTemplateLayoutLeading
 ```
 
-#### Discussion
+## Discussion
 
 You use this layout when you want to align an item’s title and detail text on the template’s leading edge. In this configuration, the template displays an item’s detail text below its title.
 

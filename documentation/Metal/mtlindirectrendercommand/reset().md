@@ -25,7 +25,7 @@ func reset()
 - (void) reset;
 ```
 
-#### Discussion
+## Discussion
 
 A command that has been reset loses any state that you previously set and does nothing when executed.
 

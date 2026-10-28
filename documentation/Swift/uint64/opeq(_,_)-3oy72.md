@@ -21,7 +21,7 @@ Stores the result of performing a bitwise OR operation on the two given values i
 static func |= (lhs: inout UInt64, rhs: UInt64)
 ```
 
-#### Discussion
+## Discussion
 
 A bitwise OR operation results in a value that has each bit set to `1` where *one or both* of its arguments have that bit set to `1`. For example:
 

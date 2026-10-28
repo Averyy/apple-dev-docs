@@ -12,11 +12,11 @@ Start a workout in iOS, control it from the Lock Screen with App Intents, and pr
 - Mac Catalyst 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC25 session 322: [Track workouts with HealthKit on iPhone and iPad](https://developer.apple.com/wwdc25/322/).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 To configure the sample code project, do the following:
 

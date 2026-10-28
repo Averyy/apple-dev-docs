@@ -15,7 +15,7 @@ A Boolean value that indicates whether an iPadOS driver accepts calls from third
 - **Name**: `com.apple.developer.driverkit.allow-third-party-userclients`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 By default, an iPadOS driver accepts user-client connections from apps signed with the same team ID and the [Communicates with Drivers](./com.apple.developer.driverkit.communicates-with-drivers.md) entitlement. Set this entitlement to `true` on a driver to allow connections apps with other team IDs. The connecting apps must still have the [Communicates with Drivers](./com.apple.developer.driverkit.communicates-with-drivers.md) entitlement.
 

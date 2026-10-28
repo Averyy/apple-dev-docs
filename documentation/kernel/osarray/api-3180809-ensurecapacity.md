@@ -24,7 +24,7 @@ virtual uint32_t ensureCapacity(uint32_t newCapacity);
 virtual unsigned int ensureCapacity(unsigned int newCapacity);
 ```
 
-#### Return Value
+## Return Value
 
 New count of capacity for members in array, may return prior capacity on failure.
 

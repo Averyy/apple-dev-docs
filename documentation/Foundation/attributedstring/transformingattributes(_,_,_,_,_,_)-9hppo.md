@@ -22,7 +22,7 @@ Returns an attributed string created by calling a closure that transforms five a
 func transformingAttributes<K1, K2, K3, K4, K5>(_ k: KeyPath<AttributeDynamicLookup, K1>, _ k2: KeyPath<AttributeDynamicLookup, K2>, _ k3: KeyPath<AttributeDynamicLookup, K3>, _ k4: KeyPath<AttributeDynamicLookup, K4>, _ k5: KeyPath<AttributeDynamicLookup, K5>, _ c: (inout AttributedString.SingleAttributeTransformer<K1>, inout AttributedString.SingleAttributeTransformer<K2>, inout AttributedString.SingleAttributeTransformer<K3>, inout AttributedString.SingleAttributeTransformer<K4>, inout AttributedString.SingleAttributeTransformer<K5>) -> Void) -> AttributedString where K1 : AttributedStringKey, K2 : AttributedStringKey, K3 : AttributedStringKey, K4 : AttributedStringKey, K5 : AttributedStringKey, K1.Value : Sendable, K2.Value : Sendable, K3.Value : Sendable, K4.Value : Sendable, K5.Value : Sendable
 ```
 
-#### Return Value
+## Return Value
 
 An attributed string, with the applied transformations to the given attributes.
 

@@ -31,7 +31,7 @@ class PKPaymentAuthorizationViewController
 @interface PKPaymentAuthorizationViewController : NSViewController
 ```
 
-#### Overview
+## Overview
 
 After the user authorizes the payment request for a transaction, the delegate is called with a payment token used to authorize the transaction’s payment.
 

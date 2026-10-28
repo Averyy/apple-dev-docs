@@ -25,7 +25,7 @@ var kLinearPCMFormatFlagIsSignedInteger: AudioFormatFlags { get }
 kLinearPCMFormatFlagIsSignedInteger
 ```
 
-#### Discussion
+## Discussion
 
 This flag is a synonym for [`kAudioFormatFlagIsSignedInteger`](./kaudioformatflagissignedinteger.md).
 

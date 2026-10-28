@@ -25,11 +25,11 @@ func CFBundleCopyResourceURLsOfType(_ bundle: CFBundle!, _ resourceType: CFStrin
 extern CFArrayRefCFBundleCopyResourceURLsOfType(CFBundleRef bundle, CFStringRef resourceType, CFStringRef subDirName);
 ```
 
-#### Return Value
+## Return Value
 
 A CFArray object containing CFURL objects of the requested resources. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 Note that searches are case-sensitive, even on file systems (such as HFS+) that are not case sensitive with regards to file names.
 

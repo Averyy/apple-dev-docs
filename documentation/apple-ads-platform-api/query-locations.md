@@ -9,7 +9,7 @@ Retrieve a paginated list of business locations using filters and sorting.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint retrieves a paginated list of physical business locations associated with a brand. Locations are the physical stores or venues that `BUSINESS_BRAND` campaigns advertise. When creating ad groups for these campaigns, use location `id` values from this endpoint to scope delivery to specific stores or venues.
 
@@ -17,7 +17,7 @@ Locations are registered entities that represent physical places of business, su
 
 See [`QueryFilterOperator`](./queryfilteroperator.md) for the full set of supported comparison operators.
 
-##### Filterable Fields
+### Filterable Fields
 
 | Field | Type | Operators | Sortable | Description |
 | --- | --- | --- | --- | --- |
@@ -32,7 +32,7 @@ See [`QueryFilterOperator`](./queryfilteroperator.md) for the full set of suppor
 
 The request body is a [`QueryRequest`](./queryrequest.md) composed of [`QueryFilter`](./queryfilter.md) conditions and [`QuerySort`](./querysort.md) directives ([`QuerySortOrder`](./querysortorder.md)), controlled by [`QueryPagination`](./querypagination.md).
 
-#### Request Body
+## Request Body
 
 See [`QueryRequest`](./queryrequest.md).
 
@@ -57,11 +57,11 @@ A few limitations apply to querying locations and using the results for targetin
 | Location IDs in targeting | Add location `id` values to a `LocationGroup`, then reference the group via `targeting.locationGroup` in ad group targeting. |
 | Open locations only | Only locations with `status: OPEN` are typically eligible for ad group targeting. |
 
-#### Payload Examples
+## Payload Examples
 
 **Query by Brand**:
 
-##### Request
+### Request
 
 Retrieve all open locations for a specific brand.
 
@@ -88,7 +88,7 @@ POST /v1/locations/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -154,7 +154,7 @@ POST /v1/locations/query
 
 **Filter by Country**:
 
-##### Request
+### Request
 
 Retrieve all locations in a specific country to build a country-scoped targeting set.
 
@@ -181,7 +181,7 @@ POST /v1/locations/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -222,7 +222,7 @@ POST /v1/locations/query
 
 **Query by Name**:
 
-##### Request
+### Request
 
 Search for locations by name prefix, sorted alphabetically.
 
@@ -255,7 +255,7 @@ POST /v1/locations/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

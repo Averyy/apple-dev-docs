@@ -15,11 +15,11 @@ Tells the device to handle a configuration change.
 virtual kern_return_t PerformDeviceConfigurationChange(uint64_t in_change_action, OSObject *in_change_info);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 The host calls this method to allow the clock device to perform a configuration change. This call can result from a call to `RequestDeviceConfigurationChange` or a from change to an I/O state that requires a configuration change.
 

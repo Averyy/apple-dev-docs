@@ -21,7 +21,7 @@ A Boolean value indicating whether the scalar is a format control character that
 var isJoinControl: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 There are two scalars for which this property is `true`:
 

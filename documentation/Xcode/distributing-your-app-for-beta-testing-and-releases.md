@@ -5,7 +5,7 @@
 
 Release your app to beta testers and users.
 
-#### Overview
+## Overview
 
 After you thoroughly test your app in Xcode, distribute it to beta testers or release it to users to run on their personal devices. Choose a distribution method based on your app’s platform and development stage, and whether you belong to the Apple Developer Program. Before you release your app to users, distribute your final build using one of the beta test methods.
 
@@ -13,7 +13,7 @@ If necessary, review [Preparing your app for distribution](./preparing-your-app-
 
 > **Related sessions from WWDC23**: Session 10224: [Simplify distribution in Xcode and Xcode Cloud](https://developer.apple.com/videos/play/wwdc2023/10224)
 
-##### Join the Apple Developer Program
+### Join the Apple Developer Program
 
 Distribution methods range from exporting your app for test devices to uploading it to App Store Connect. You can use TestFlight to distribute beta builds to testers and collect feedback. If you want to distribute your app to registered devices, to beta testers using TestFlight, or through the App Store, join the Apple Developer Program. After you join the Apple Developer Program, Apple creates an App Store Connect account for you and you can start uploading builds.
 
@@ -23,11 +23,11 @@ Xcode uses cloud-managed signing certificates to automatically code sign your ap
 
 To learn more about enrolling in the program, see [Apple Developer Program](https://developer.apple.com/programs/).
 
-##### Combine multiplatform apps in a project or purchase
+### Combine multiplatform apps in a project or purchase
 
 If you offer related apps on different platforms, combine them in one Xcode project or App Store purchase to make installation more convenient for users. To allow your customers to purchase related apps together from the App Store as a universal purchase or app bundle, see [Offering Universal Purchase](https://developer.apple.com/support/universal-purchase/).
 
-##### Create an archive of your app
+### Create an archive of your app
 
 To use any of the distribution methods, first create an archive of your app. An *archive* is a build of your app, including debugging information, that Xcode stores in a bundle. Xcode repackages the archive’s contents based on the distribution configuration you choose for your distribution.
 
@@ -41,7 +41,7 @@ For a Mac app built with Mac Catalyst, create separate archives for the iPad and
 
 > **Note**: Earlier versions of Xcode didn’t allow you to build an archive with a simulator set as the run destination. In Xcode 15 and later, choosing to build an archive with a simulator as the run destination builds an archive with all the CPU architectures necessary to run on that class of device.
 
-##### Select a method for distribution
+### Select a method for distribution
 
 You can export the archive or upload it to App Store Connect. If you export the archive, you can distribute it outside of the App Store. Otherwise, upload the archive to App Store Connect to distribute it through TestFlight or the App Store.
 
@@ -62,7 +62,7 @@ After selecting a distribution option, click the Distribute button. Xcode begins
 
 > **Note**: Before you upload your app to the App Store for the first time, create an app record to register your app with App Store Connect. If you haven’t done this already, Xcode asks you for the information it needs to create this record for you. For more information, see [Create an app record](https://developer.apple.com/help/app-store-connect/create-an-app-record/add-a-new-app).
 
-##### Create a custom distribution
+### Create a custom distribution
 
 To begin a custom distribution, which allows you to configure your own settings, click the Custom option.
 
@@ -100,7 +100,7 @@ When packaging for self distribution using the Ad Hoc or Development option, cho
 
 ![Screenshot of the distribution flow showing the Ad Hoc distribution settings. The dialog includes the App Thinning pop-up menu with the option None chosen and Additional Options that includes a checkbox with the label Include manifest for over-the-air installation.](https://developer.apple.com/tutorials/images/com.apple.Xcode/distributing-your-app-for-beta-testing-and-releases-7@2x.png)
 
-##### Distribute a beta version
+### Distribute a beta version
 
 To distribute a beta version of your app to offer a preview of an upcoming release, choose a distribution method that aligns with your testing resources:
 
@@ -110,7 +110,7 @@ To distribute a beta version of your app to offer a preview of an upcoming relea
 
 ![Screenshot of App Store Connect showing builds that were uploaded from Xcode.](https://developer.apple.com/tutorials/images/com.apple.Xcode/distributing-your-app-for-beta-testing-and-releases-8@2x.png)
 
-##### Publish on the App Store
+### Publish on the App Store
 
 After beta testing your final build, submit it to App Review, then offer it on the App Store. For more information about the publishing process, see [Overview of publishing an app](https://developer.apple.com/help/app-store-connect/manage-your-apps-availability/overview-of-publishing-your-app).
 
@@ -126,15 +126,15 @@ If you didn’t distribute the final build using TestFlight, prepare your app fo
 
 To submit the build to App Review, go to [Submit for review](https://developer.apple.com/help/app-store-connect/manage-submissions-to-app-review/submit-for-review).
 
-##### Distribute outside of the App Store
+### Distribute outside of the App Store
 
 For macOS apps, you can export a notarized app for distribution outside of the App Store, but you may first need to disable capabilities that require the Apple Developer Program membership first, then distribute the app yourself to users. Notarize all software that you distribute outside of the App Store. This includes system extensions and drivers. To learn more, see [Notarizing macOS software before distribution](../Security/notarizing-macos-software-before-distribution.md).
 
-##### Distribute enterprise apps
+### Distribute enterprise apps
 
 There are also several options for distributing business, customized, or in-house apps as well. For details, see [Find the best way to reach your users](https://developer.apple.com/business/distribute/). If you join the [Apple Developer Enterprise Program](https://developer.apple.com/programs/enterprise/), see [Develop and distribute an enterprise app](https://help.apple.com/xcode/mac/current/#/devba5e7054d) for enterprise-specific Xcode steps to export your app.
 
-##### Review crash, diagnostic, and metrics reports
+### Review crash, diagnostic, and metrics reports
 
 If you distribute your app using TestFlight or through the App Store, you can view crash and diagnostic reports that Apple generates for you in the organizer. You can also use the organizer to review feedback from beta testers. If you distribute your app through the App Store, you can view metrics reports in the organizer too. For more information, see [Acquiring crash reports and diagnostic logs](./acquiring-crash-reports-and-diagnostic-logs.md) and [Viewing and responding to feedback from beta testers](./viewing-and-responding-to-feedback.md). For more information about performance improvements, see [Improving your app’s performance](./improving-your-app-s-performance.md) and [Analyzing the performance of your shipping app](./analyzing-the-performance-of-your-shipping-app.md).
 

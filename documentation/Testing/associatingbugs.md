@@ -5,13 +5,13 @@
 
 Associate bugs uncovered or verified by tests.
 
-#### Overview
+## Overview
 
 Tests allow developers to prove that the code they write is working as expected. If code isn’t working correctly, bug trackers are often used to track the work necessary to fix the underlying problem. It’s often useful to associate specific bugs with tests that reproduce them or verify they are fixed.
 
 > **Note**: “Bugs” as described in this document may also be referred to as “issues.” To avoid confusion with the [`Issue`](./issue.md) type in the testing library, this document consistently refers to them as “bugs.”
 
-#### Associate a bug with a test
+## Associate a bug with a test
 
 To associate a bug with a test, use one of these functions:
 
@@ -47,7 +47,7 @@ func engineWorks() async {
 
 A bug’s URL is passed as a string and must be parseable according to [RFC 3986](https://www.ietf.org/rfc/rfc3986.txt). A bug’s unique identifier can be passed as an integer or as a string. For more information on the formats recognized by the testing library, see [Interpreting bug identifiers](./bugidentifiers.md).
 
-#### Add titles to associated bugs
+## Add titles to associated bugs
 
 A bug’s unique identifier or URL may be insufficient to uniquely and clearly identify a bug associated with a test. Bug trackers universally provide a “title” field for bugs that is not visible to the testing library. To add a bug’s title to a test, include it after the bug’s unique identifier or URL:
 

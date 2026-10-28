@@ -15,11 +15,11 @@ Allows your component to gain access to its resource file.
 ResFileRefNum OpenComponentResFile(Component aComponent);
 ```
 
-#### Return Value
+## Return Value
 
 A reference number that your component can use to read data from the appropriate resource file. If the specified component does not have an associated resource file or if the Component Manager cannot open the resource file, the function returns 0 or a negative number. 
 
-#### Discussion
+## Discussion
 
 This function opens the resource file with read-only permission. The Component Manager adds the resource file to the current resource chain. Your component must close the resource file with the  [`CloseComponentResFile`](./api-1516319-closecomponentresfile.md)  function before returning to the calling application. Note that there is only one resource file associated with a component.
 

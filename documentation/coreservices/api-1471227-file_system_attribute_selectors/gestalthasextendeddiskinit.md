@@ -14,7 +14,7 @@
 gestaltHasExtendedDiskInit = 6
 ```
 
-#### Discussion
+## Discussion
 
 If this bit is set in the `response` parameter, the extended Disk Initialization Package functions are present. These are the `DIXFormat`, `DIXZero`, or `DIReformat` functions. See the *Guide to the File System Manager* for more information about the Disk Initialization Package interfaces.
 

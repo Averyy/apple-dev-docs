@@ -19,7 +19,7 @@ init(configuration: VZVirtualMachineConfiguration, queue: dispatch_queue_t)
 - (instancetype) initWithConfiguration:(VZVirtualMachineConfiguration *) configuration queue:(dispatch_queue_t) queue;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized VM object.
 

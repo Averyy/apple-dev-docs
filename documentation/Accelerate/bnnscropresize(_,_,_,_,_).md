@@ -27,7 +27,7 @@ func BNNSCropResize(_ layer_params: UnsafePointer<BNNSLayerParametersCropResize>
 int BNNSCropResize(const BNNSLayerParametersCropResize *layer_params, const BNNSNDArrayDescriptor *input, const BNNSNDArrayDescriptor *roi, BNNSNDArrayDescriptor *output, const BNNSFilterParameters *filter_params);
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to resize the spatial dimensions (two dimensions with the smallest strides) of the first input according to the bounding boxes and box indices specified in the second input.
 

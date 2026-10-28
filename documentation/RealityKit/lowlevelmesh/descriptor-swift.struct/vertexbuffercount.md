@@ -20,7 +20,7 @@ The number of buffers this descriptor uses.
 var vertexBufferCount: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value derives from the maximum `bufferIndex` each layout specifies in [`vertexLayouts`](./vertexlayouts.md).
 

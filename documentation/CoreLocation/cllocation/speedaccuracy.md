@@ -25,7 +25,7 @@ var speedAccuracy: CLLocationSpeedAccuracy { get }
 @property (nonatomic, readonly) CLLocationSpeedAccuracy speedAccuracy;
 ```
 
-#### Discussion
+## Discussion
 
 When this property contains `0` or a positive number, the value in the speed property is plus or minus the specified number of meters per second. When this property contains a negative number, the value in the speed property is invalid.
 

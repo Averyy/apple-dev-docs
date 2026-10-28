@@ -25,7 +25,7 @@ func requestAuthorization(toShare typesToShare: Set<HKSampleType>, read typesToR
 - [Accessing workout zone data](../accessing-workout-zone-data.md)
 - [Authorizing access to health data](../authorizing-access-to-health-data.md)
 
-#### Discussion
+## Discussion
 
 HealthKit performs these requests asynchronously. If you call this method with a new data type (a type of data that the user hasn’t previously granted or denied permission for in this app), the system automatically displays the permission form, listing all the requested permissions. If the user has already chosen to grant or prohibit access to all of the types specified, HealthKit returns the request without prompting the user.
 

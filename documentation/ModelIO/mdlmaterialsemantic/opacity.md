@@ -24,7 +24,7 @@ case opacity
 MDLMaterialSemanticOpacity
 ```
 
-#### Discussion
+## Discussion
 
 Model I/O uses this semantic for the `d` and `map_d` attributes when importing from the MTL file format (for assets in the OBJ file format).
 

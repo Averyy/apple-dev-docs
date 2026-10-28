@@ -19,7 +19,7 @@ case preferredWithoutActivating
 UISceneCollectionJoinBehaviorPreferredWithoutActivating
 ```
 
-#### Discussion
+## Discussion
 
 If [`requestingScene`](../uiscene/activationrequestoptions/requestingscene.md) is set, this behavior adds the new scene without deactivating the [`requestingScene`](../uiscene/activationrequestoptions/requestingscene.md). Otherwise, this behavior behaves the same as [`UISceneCollectionJoinBehavior.preferred`](./preferred.md). For example, in apps built with Mac Catalyst, you can use this behavior to open a link in a new tab in the background.
 

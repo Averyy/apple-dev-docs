@@ -25,7 +25,7 @@ struct AppExtensionProcess
 
 - [Adding support for app extensions to your app](./adding-support-for-app-extensions-to-your-app.md)
 
-#### Overview
+## Overview
 
 Create this type from your host app when you want to communicate with an available app extension. This type creates a new process, and runs the app extension’s startup code in that process. After startup, establish an XPC connection to the app extension’s process using the methods of this type. Use that XPC connection to communicate with the app extension.
 

@@ -20,7 +20,7 @@ A bundle of additional animation-related skeletal data the runtime consumes when
 struct AnimationEvaluation
 ```
 
-#### Overview
+## Overview
 
 Provided at construction time and immutable for the lifetime of the resource. Bake all the supplemental data the skeleton needs into one `AnimationEvaluation` value and pass it to `SkeletonResource(named:rootJoint:animationEvaluation:)`.
 

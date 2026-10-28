@@ -23,11 +23,11 @@ optional func splitViewController(_ svc: UISplitViewController, topColumnForColl
 - (UISplitViewControllerColumn) splitViewController:(UISplitViewController *) svc topColumnForCollapsingToProposedTopColumn:(UISplitViewControllerColumn) proposedTopColumn;
 ```
 
-#### Return Value
+## Return Value
 
 The column corresponding to the view controller to display in the collapsed interface. This value may be the same as `proposedTopColumn`, or you may return a different value.
 
-#### Discussion
+## Discussion
 
 This delegate method only applies to column-style split view interfaces. For more information, see [Split view styles](../uisplitviewcontroller.md#Split-view-styles).
 

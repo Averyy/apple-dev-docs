@@ -20,7 +20,7 @@ enum CMSSignerStatus
 enum CMSSignerStatus : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 These are obtained using the [`CMSDecoderCopySignerStatus(_:_:_:_:_:_:_:)`](./cmsdecodercopysignerstatus%28_,_,_,_,_,_,_%29.md) function.
 

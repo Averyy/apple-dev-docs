@@ -16,7 +16,7 @@ The resulting signed data and certificate you use to sign the pass.
 struct Signature<IdentityType> where IdentityType : JPKIPassContents.Identity
 ```
 
-#### Overview
+## Overview
 
 Use this structure to access the signature associated with digital identities.
 

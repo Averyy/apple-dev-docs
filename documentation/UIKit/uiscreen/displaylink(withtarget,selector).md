@@ -24,11 +24,11 @@ func displayLink(withTarget target: Any, selector sel: Selector) -> CADisplayLin
 - (CADisplayLink *) displayLinkWithTarget:(id) target selector:(SEL) sel;
 ```
 
-#### Return Value
+## Return Value
 
 A newly constructed display link object.
 
-#### Discussion
+## Discussion
 
 You use display link objects to synchronize your drawing code to the screen’s refresh rate. The newly constructed display link retains the target.
 

@@ -9,11 +9,11 @@ Get information about a specific Xcode version that’s available to Xcode Cloud
 **Availability**:
 - App Store Connect API 1.5+
 
-#### Discussion
+## Discussion
 
 The example request below accesses detailed information for a specific Xcode version available to Xcode Cloud workflows. Use the data provided in the response to display available Xcode versions and test destinations on a dashboard or to read additional information; for example, macOS version information.
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

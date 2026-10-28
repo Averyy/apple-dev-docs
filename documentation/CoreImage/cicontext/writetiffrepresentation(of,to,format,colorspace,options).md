@@ -24,7 +24,7 @@ func writeTIFFRepresentation(of image: CIImage, to url: URL, format: CIFormat, c
 - (BOOL) writeTIFFRepresentationOfImage:(CIImage *) image toURL:(NSURL *) url format:(CIFormat) format colorSpace:(CGColorSpaceRef) colorSpace options:(NSDictionary<NSString *,id> *) options error:(NSError **) errorPtr;
 ```
 
-#### Discussion
+## Discussion
 
 To render an image for export, the image’s contents must not be empty and its [`extent`](../ciimage/extent.md) dimensions must be finite. To export after applying a filter whose output has infinite extent, see the [`clampedToExtent()`](../ciimage/clampedtoextent%28%29.md) method.
 

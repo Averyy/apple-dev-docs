@@ -20,11 +20,11 @@ optional func collectionView(_ collectionView: NSCollectionView, viewForSuppleme
 - (NSView *) collectionView:(NSCollectionView *) collectionView viewForSupplementaryElementOfKind:(NSCollectionViewSupplementaryElementKind) kind atIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 A configured view object. You must not return `nil` from this method.
 
-#### Discussion
+## Discussion
 
 Implement this method if the collection view’s layout object supports supplementary views. Your implementation is responsible for creating, configuring, and returning an appropriate view. You do this by calling the [`makeSupplementaryView(ofKind:withIdentifier:for:)`](../nscollectionview/makesupplementaryview%28ofkind,withidentifier,for%29.md) method of the collection view to retrieve an unconfigured view of the appropriate type. After receiving the view, update its properties and content using your app’s data structures and return it.
 

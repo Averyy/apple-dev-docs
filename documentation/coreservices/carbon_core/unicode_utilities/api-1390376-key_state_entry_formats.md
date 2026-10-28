@@ -4,7 +4,7 @@
 
 Indicate the format for dead-key state records.
 
-#### Overview
+## Overview
 
 These constants are used in `UCKeyStateRecord` structures to indicate the format for dead-key state records.
 

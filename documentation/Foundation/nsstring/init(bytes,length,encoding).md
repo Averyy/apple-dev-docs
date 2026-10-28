@@ -25,7 +25,7 @@ convenience init?(bytes: UnsafeRawPointer, length len: Int, encoding: UInt)
 - (instancetype) initWithBytes:(const void *) bytes length:(NSUInteger) len encoding:(NSStringEncoding) encoding;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSString` object containing `length` bytes from `bytes` interpreted using the encoding `encoding`. The returned object may be different from the original receiver. The return byte strings are allowed to be unterminated. If the length of the byte string is greater than the specified length a `nil` value is returned.
 

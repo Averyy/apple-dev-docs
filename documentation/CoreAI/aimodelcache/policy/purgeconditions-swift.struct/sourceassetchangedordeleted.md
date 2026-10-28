@@ -19,7 +19,7 @@ A condition that allows purging when the source model changes or no longer exist
 static let sourceAssetChangedOrDeleted: AIModelCache.Policy.PurgeConditions
 ```
 
-#### Discussion
+## Discussion
 
 This option allows the system to delete a specialized asset when the `.aimodel` the asset derives from changes or no longer exists.
 

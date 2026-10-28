@@ -24,11 +24,11 @@ class func currentThis() -> JSValue!
 + (JSValue *) currentThis;
 ```
 
-#### Return Value
+## Return Value
 
 The current value of the JavaScript `this` keyword, or `nil` if not within native code called from JavaScript.
 
-#### Discussion
+## Discussion
 
 Call this method within an Objective-C or Swift block or method invoked from within JavaScript to obtain a [`JSValue`](../jsvalue.md) object representing the current value of the `this` keyword in that JavaScript code.
 

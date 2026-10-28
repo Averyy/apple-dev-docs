@@ -21,11 +21,11 @@ func ruleEditor(_ editor: NSRuleEditor, numberOfChildrenForCriterion criterion: 
 - (NSInteger) ruleEditor:(NSRuleEditor *) editor numberOfChildrenForCriterion:(id) criterion withRowType:(NSRuleEditorRowType) rowType;
 ```
 
-#### Return Value
+## Return Value
 
 The number of child items of `criterion`. If `criterion` is `nil`, return the number of root criteria for the row type `rowType`.
 
-#### Discussion
+## Discussion
 
 The delegate must implement this method.
 

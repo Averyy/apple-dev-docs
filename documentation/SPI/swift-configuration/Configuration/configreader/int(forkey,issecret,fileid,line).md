@@ -24,11 +24,11 @@ Synchronously gets a config value for the given config key.
 func int(forKey key: ConfigKey, isSecret: Bool = false, fileID: String = #fileID, line: UInt = #line) -> Int?
 ```
 
-#### Return Value
+## Return Value
 
 The value converted to the expected type if found and convertible, otherwise `nil`.
 
-#### Discussion
+## Discussion
 
 Use this method to retrieve optional configuration values. If the value doesn’t exist or can’t be converted to the expected type, the method returns `nil`.
 

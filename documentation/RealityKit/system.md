@@ -25,7 +25,7 @@ protocol System
 - [Implementing systems for entities in a scene](./implementing-systems-for-entities-in-a-scene.md)
 - [Passing Metal command objects around your application](./passing-metal-command-objects-around-your-application.md)
 
-#### Overview
+## Overview
 
 In RealityKit’s Entity Component System (ECS), a *system* represents continuous behavior that affects multiple entities in the scene. Use systems to implement any behavior or logic that updates entities every scene update, such as different types of objects or characters. For example, a physics simulation system calculates and applies the affect of gravity, forces, and collisions for all entities. A system calls the [`update(context:)`](./system/update%28context%29.md) method as often as the `updatingSystemWhen` parameter of [`entities(matching:updatingSystemWhen:)`](./sceneupdatecontext/entities%28matching,updatingsystemwhen%29.md) defines.
 

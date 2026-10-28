@@ -30,7 +30,7 @@ class VNImageRequestHandler
 - [Identifying 3D human body poses in images](./identifying-3d-human-body-poses-in-images.md)
 - [Recognizing Text in Images](./recognizing-text-in-images.md)
 
-#### Overview
+## Overview
 
 Instantiate this handler to perform Vision requests on a single image. You specify the image and, optionally, a completion handler at the time of creation, and call [`perform(_:)`](./vnimagerequesthandler/perform%28_%29.md) to begin executing the request.
 

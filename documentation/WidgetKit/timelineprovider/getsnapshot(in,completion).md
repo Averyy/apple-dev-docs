@@ -26,7 +26,7 @@ func getSnapshot(in context: Self.Context, completion: @escaping @Sendable (Self
 
 - [Migrating ClockKit complications to WidgetKit](../converting-a-clockkit-app.md)
 
-#### Discussion
+## Discussion
 
 WidgetKit calls `getSnapshot(in:completion:)` when the widget appears in transient situations. If `context.isPreview` is `true`, the widget appears in the widget gallery. In that case, call the `completion` handler as quickly as possible, perhaps supplying sample data if it could take more than a few seconds to fetch or calculate the widget’s current state.
 

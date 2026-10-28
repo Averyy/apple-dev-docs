@@ -17,7 +17,7 @@ Types of chair legs the framework identifies in a captured room.
 enum ChairLegType
 ```
 
-#### Overview
+## Overview
 
 When the framework observes a chair in the physical environment during a scan, it chooses a type among these options that best matches the look of the chair’s legs. The framework adds that instance of this enum to the [`attributes`](./capturedroom/object/attributes.md) array for the object (see [`objects`](./capturedroom/objects.md)) that represents the chair in the captured room.
 

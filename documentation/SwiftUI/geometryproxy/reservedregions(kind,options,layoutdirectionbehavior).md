@@ -21,11 +21,11 @@ Returns an array of reserved regions that match the selection options you specif
 func reservedRegions(kind: ReservedRegion.Kind, options: ReservedRegion.QueryOptions = [], layoutDirectionBehavior: LayoutDirectionBehavior = .mirrors) -> [ReservedRegion]
 ```
 
-#### Return Value
+## Return Value
 
 The reserved regions that overlap the view, with frames in the view’s coordinate space.
 
-#### Discussion
+## Discussion
 
 A reserved region is an area of your view that an entity reserves, such as the device hardware. Arrange your view’s content around it. Each region describes a frame, margins, active state, and an identifier.
 

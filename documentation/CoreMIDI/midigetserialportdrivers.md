@@ -15,11 +15,11 @@ Returns a list of installed MIDI drivers for serial port MIDI devices.
 extern OSStatus MIDIGetSerialPortDrivers(CFArrayRef*outDriverNames);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus result code.
 
-#### Discussion
+## Discussion
 
 Use this to determine which of the installed MIDI drivers are for devices which may attach to serial ports.
 

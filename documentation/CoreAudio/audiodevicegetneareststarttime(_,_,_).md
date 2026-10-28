@@ -20,11 +20,11 @@ func AudioDeviceGetNearestStartTime(_ inDevice: AudioObjectID, _ ioRequestedStar
 extern OSStatus AudioDeviceGetNearestStartTime(AudioObjectID inDevice, AudioTimeStamp *ioRequestedStartTime, UInt32 inFlags);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus indicating success or failure. kAudioHardwareNotRunningError will be returned if the AudioDevice isn’t running. kAudioHardwareUnsupportedOperationError will be returned if the AudioDevice does not support starting at a specific time.
 
-#### Discussion
+## Discussion
 
 Query an AudioDevice to get a time equal to or later than the given time that is the best time to start IO.
 

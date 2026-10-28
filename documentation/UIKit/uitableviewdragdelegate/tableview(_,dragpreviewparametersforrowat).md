@@ -22,11 +22,11 @@ optional func tableView(_ tableView: UITableView, dragPreviewParametersForRowAt 
 - (UIDragPreviewParameters *) tableView:(UITableView *) tableView dragPreviewParametersForRowAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 A [`UIDragPreviewParameters`](../uidragpreviewparameters.md) object containing information about how to customize the row’s appearance. Return `nil` to use the default appearance.
 
-#### Discussion
+## Discussion
 
 Use this method to customize the appearance of the row during drags. For example, you might use this method to specify that only part of the cell’s visible content should be used for the drag preview. If you don’t implement this method, or if you return `nil`, the drag preview displays the row’s visible content.
 

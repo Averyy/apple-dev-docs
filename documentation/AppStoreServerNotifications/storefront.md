@@ -19,7 +19,7 @@ string storefront
 
 - [App Store Server Notifications changelog](./app-store-server-notifications-changelog.md)
 
-#### Discussion
+## Discussion
 
 This property uses the ISO 3166-1 alpha-3 country code representation. This property is the same as the [`countryCode`](../StoreKit/storefront/countrycode.md) in StoreKit.
 

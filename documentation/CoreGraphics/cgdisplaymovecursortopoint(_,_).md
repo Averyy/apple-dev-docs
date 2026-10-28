@@ -20,11 +20,11 @@ func CGDisplayMoveCursorToPoint(_ display: CGDirectDisplayID, _ point: CGPoint) 
 extern CGError CGDisplayMoveCursorToPoint(CGDirectDisplayID display, CGPoint point);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. To interpret the result code, see [`CGError`](./cgerror.md).
 
-#### Discussion
+## Discussion
 
 The function doesn’t generate events as a result of this move. The action clips points that lie outside the desktop to its bounds.
 

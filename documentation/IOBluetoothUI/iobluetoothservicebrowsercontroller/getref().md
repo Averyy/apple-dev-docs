@@ -19,7 +19,7 @@ func getRef() -> Unmanaged<IOBluetoothServiceBrowserControllerRef>!
 - (IOBluetoothServiceBrowserControllerRef) getServiceBrowserControllerRef;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOBluetoothServiceBrowserControllerRef representation of the target IOBluetoothServiceBrowserController object.
 

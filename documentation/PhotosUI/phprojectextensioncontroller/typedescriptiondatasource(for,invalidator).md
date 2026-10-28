@@ -19,7 +19,7 @@ optional func typeDescriptionDataSource(for category: PHProjectCategory, invalid
 - (id<PHProjectTypeDescriptionDataSource>) typeDescriptionDataSourceForCategory:(PHProjectCategory) category invalidator:(id<PHProjectTypeDescriptionInvalidator>) invalidator;
 ```
 
-#### Discussion
+## Discussion
 
 Extensions can define any number of project types to support. The types appear to users as choices in the Photos app upon initial project creation. To enable this entry point into the extension, include the key/value pair `PHProjectExtensionDefinesProjectTypes`: `YES` in the Xcode project’s `Info.plist` file. Once enabled, Photos asks your extension for its list of supported project types. The option the user selects is passed to the extension as an attribute of [`PHProjectInfo`](../phprojectinfo.md).
 

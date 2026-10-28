@@ -19,7 +19,7 @@ func stop()
 - (void) stop;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to stop updates to the timer object’s label. This method does not stop the timer from counting. The timer continues counting to or from its target value even when updates to the label are not occurring.
 

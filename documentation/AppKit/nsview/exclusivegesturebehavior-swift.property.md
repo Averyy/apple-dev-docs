@@ -19,7 +19,7 @@ var exclusiveGestureBehavior: NSView.ExclusiveGestureBehavior { get set }
 @property NSViewExclusiveGestureBehavior exclusiveGestureBehavior;
 ```
 
-#### Discussion
+## Discussion
 
 When a view is set to `.exclusive`, and one or more of its gesture recognizers is active, a second input event will not activate any further gesture recognizers, unless that event hit tests to this view or its subviews.
 

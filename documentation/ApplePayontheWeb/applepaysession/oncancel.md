@@ -20,7 +20,7 @@ attribute EventHandler oncancel;
 
 - [Apple Pay JS change log](../apple-pay-js-change-log.md)
 
-#### Discussion
+## Discussion
 
 This function can be called even after an [`onpaymentauthorized`](./onpaymentauthorized.md) event has been dispatched. Both the user and the web page can dismiss the payment sheet and abandon the transaction.
 

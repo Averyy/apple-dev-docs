@@ -28,7 +28,7 @@ class HKLiveWorkoutBuilder
 - [Accessing workout zone data](./accessing-workout-zone-data.md)
 - [Running workout sessions](./running-workout-sessions.md)
 
-#### Overview
+## Overview
 
 Use a live workout builder to create an [`HKWorkout`](./hkworkout.md) sample during an active [`HKWorkoutSession`](./hkworkoutsession.md). For complete instructions on running workout sessions on Apple Watch, see [Running workout sessions](./running-workout-sessions.md).
 

@@ -21,11 +21,11 @@ Returns the first element of the sequence that satisfies the given predicate.
 func first(where predicate: (Self.Element) throws -> Bool) rethrows -> Self.Element?
 ```
 
-#### Return Value
+## Return Value
 
 The first element of the sequence that satisfies `predicate`, or `nil` if there is no element that satisfies `predicate`.
 
-#### Discussion
+## Discussion
 
 The following example uses the `first(where:)` method to find the first negative number in an array of integers:
 

@@ -25,7 +25,7 @@ typealias nw_framer_parse_completion_t = (UnsafeMutablePointer<UInt8>?, Int, Boo
 typedef unsigned long (^)(unsigned char *, unsigned long, _Bool) nw_framer_parse_completion_t;
 ```
 
-#### Return Value
+## Return Value
 
 Return the number of bytes by which to increment the input or output cursor. Once the cursor is moved, previous bytes will no longer be delivered to [`nw_framer_parse_input(_:_:_:_:_:)`](./nw_framer_parse_input%28_,_,_,_,_%29.md) and [`nw_framer_deliver_input_no_copy(_:_:_:_:)`](./nw_framer_deliver_input_no_copy%28_,_,_,_%29.md) for input data, or [`nw_framer_parse_output(_:_:_:_:_:)`](./nw_framer_parse_output%28_,_,_,_,_%29.md) and [`nw_framer_write_output_no_copy(_:_:)`](./nw_framer_write_output_no_copy%28_,_%29.md) for output messages.
 

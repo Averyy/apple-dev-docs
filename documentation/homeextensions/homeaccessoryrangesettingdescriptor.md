@@ -17,7 +17,7 @@ A type that describes the bounds of a range setting.
 protocol HomeAccessoryRangeSettingDescriptor<Bound>
 ```
 
-#### Overview
+## Overview
 
 You don’t adopt this protocol directly. Standard range types, such as `ClosedRange`, adopt it, so you can pass a range expression like `0...100`.
 

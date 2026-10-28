@@ -10,13 +10,13 @@ framework: "swift-argument-parser/ArgumentParser"
 
 Learn about ArgumentParser’s experimental features.
 
-#### Overview
+## Overview
 
 Command-line programs built using `ArgumentParser` may include some built-in experimental features, available with the prefix `--experimental`. These features should not be considered stable while still prefixed, as future releases may change their behavior or remove them.
 
 If you have any feedback on experimental features, please [open a GitHub issue](https://github.com/apple/swift-argument-parser/issues/new/choose).
 
-##### List of Experimental Features
+### List of Experimental Features
 
 | Name | Description | related PRs | Version |
 | --- | --- | --- | --- |

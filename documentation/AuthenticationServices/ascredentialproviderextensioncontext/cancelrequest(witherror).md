@@ -27,7 +27,7 @@ func cancelRequest(withError error: any Error)
 
 - [Providing one-time passcodes to AutoFill](../providing-one-time-passcodes-to-autofill.md)
 
-#### Discussion
+## Discussion
 
 Call this method if the user cancels the action or if a failure occurs. The system dismisses your extension’s view controller automatically.
 

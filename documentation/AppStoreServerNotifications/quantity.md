@@ -19,7 +19,7 @@ int32 quantity
 
 - [App Store Server Notifications changelog](./app-store-server-notifications-changelog.md)
 
-#### Discussion
+## Discussion
 
 For a subscription that a customer buys as a multiseat purchase, this value is the number of seats the purchase covers. For all other in-app purchase types, it’s the number of products the customer bought.
 

@@ -21,7 +21,7 @@ static func numericCode(length: MediaOutputDevice.AuthorizationMethod.CodeLength
 
 - [Creating a media device extension](../../creating-a-media-device-extension.md)
 
-#### Discussion
+## Discussion
 
 The system presents a UI with individual digit fields for the user to enter a numeric code when connecting to the device.
 

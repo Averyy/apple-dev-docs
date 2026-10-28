@@ -5,7 +5,7 @@
 
 Enable people to configure app intents with their custom input values.
 
-#### Overview
+## Overview
 
 Many of your app’s actions likely require input data to perform their work. To help people provide the input that an [`AppIntent`](./appintent.md) needs to perform its functionality, add parameters to the intent to tell the system about that data and whether it’s required or optional. When you expose these parameters, people can configure your intents with values unique to their requirements and enable the App Intents framework to mediate with system experiences to write those values at runtime.
 
@@ -18,7 +18,7 @@ var trail: TrailEntity
 
 Note that the example doesn’t provide localized text for the `title` and `description` fields to keep the example focused and make it easy to understand. Always provide localized strings for app intents, App Shortcuts, and their parameters.
 
-##### Make a parameter optional or required
+### Make a parameter optional or required
 
 How you define your parameter variables determines whether the system treats that parameter as required or optional. If you define a variable as a non-optional type, the system knows the parameter is required and, when necessary, requests a value. Conversely, if you define a variable as an optional type, the system assumes the parameter is optional and doesn’t request a value. In this scenario, pause the intent and request a value when the intent can’t otherwise proceed by throwing the property wrapper’s [`needsValueError(_:)`](./intentparameter/needsvalueerror%28_%29.md).
 
@@ -28,7 +28,7 @@ guard let date = date else {
 }
 ```
 
-##### Define parameters using only the supported types
+### Define parameters using only the supported types
 
 For every parameter you add to your app intent, choose only types that the App Intents framework supports. The system needs to know how to handle your chosen types because it customizes interactions based on those types. The following table lists the supported types.
 
@@ -44,11 +44,11 @@ For every parameter you add to your app intent, choose only types that the App I
 
 When you want to specify app-specific data in a parameter, create an [`AppEntity`](./appentity.md) or [`AppEnum`](./appenum.md) type and use it to specify your data. Apps make their app entities findable using queries, and the system can use those same queries to resolve parameters that contain entities. Similarly, app enums provide a static set of options from which to choose, making it easier for the system to identify possible values.
 
-##### Transform input into your intent parameter’s types
+### Transform input into your intent parameter’s types
 
 When a person provides input that your app intents use, the input doesn’t always match the type that your parameters require. For example, natural spoken language commands from Siri are strings, but your app intent might require an integer or floating-point value. To help you with input of various types, use [Resolvers](./resolvers.md) to leverage the system’s ability to translate one type to another automatically so your app intent can use the input.
 
-##### Restrict parameter values
+### Restrict parameter values
 
 To make it easy for people to provide your app intents with the right information, restrict parameter values. The system presents known values as a list and prompts the person to select one when it needs to resolve a parameter. To restrict parameter values to a list of known values:
 
@@ -75,7 +75,7 @@ struct LocationOptionsProvider: DynamicOptionsProvider {
 
 You can configure a parameter with additional options such as enforcing an inclusive range for number types, or specifying the capitalization style and keyboard mode for string types. For more information, see [`IntentParameter`](./intentparameter.md).
 
-##### Provide an interactive parameter summary for your intent
+### Provide an interactive parameter summary for your intent
 
 A parameter summary is a visual, textual outline of your app intent that the Shortcuts app displays in the shortcut editor. The summary can include placeholders that people interact with to choose the values for the intent’s parameters. Even if your intent doesn’t expose any parameters, providing a summary is an opportunity to present more information about your intent in addition to its title.
 
@@ -122,7 +122,7 @@ For example, the [Accelerating app interactions with App Intents](./accelerating
     }
 ```
 
-##### Review the role of app entities
+### Review the role of app entities
 
 App entities provide the system with information about your app’s data, or about concepts related to your app’s data. App entities describe your app’s custom data types you use for parameters, and help the system resolve parameters for app intents by letting it inspect relevant types. For example, a photo app that provides app entities for its photos and albums might also provide app entities to represent “the most recent photo” or “the default album.” These specific app entities help resolve intents more quickly and with fewer verbal interactions.
 

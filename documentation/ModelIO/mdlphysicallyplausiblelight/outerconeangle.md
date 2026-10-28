@@ -24,7 +24,7 @@ var outerConeAngle: Float { get set }
 @property (nonatomic, readwrite) float outerConeAngle;
 ```
 
-#### Discussion
+## Discussion
 
 This property measures the angle from the light axis (the direction in which the light points; the negative z-axis of its local coordinate space) to the edge of the region affected by the light. Between this value and that of the [`innerConeAngle`](./innerconeangle.md) property, the light’s intensity varies linearly.
 

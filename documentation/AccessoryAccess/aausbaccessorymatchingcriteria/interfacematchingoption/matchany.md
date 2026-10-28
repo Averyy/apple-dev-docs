@@ -19,7 +19,7 @@ case matchAny
 AAUSBAccessoryMatchingCriteriaInterfaceMatchingOptionMatchAny
 ```
 
-#### Discussion
+## Discussion
 
 Matching is successful for the USB accessory that has at least one USB interface matching any of the criteria in the provided dictionary.
 

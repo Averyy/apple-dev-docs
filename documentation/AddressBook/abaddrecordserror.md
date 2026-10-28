@@ -19,7 +19,7 @@ var ABAddRecordsError: Int { get }
 ABAddRecordsError
 ```
 
-#### Discussion
+## Discussion
 
 - [`ABAddRecordsError`](./abaddrecordserror.md)
 - [`ABPropertyReadOnlyError`](./abpropertyreadonlyerror.md)

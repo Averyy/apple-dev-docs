@@ -21,7 +21,7 @@ Returns the “empty” subscription.
 static var empty: any Subscription { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use the empty subscription when you need a [`Subscription`](../subscription.md) that ignores requests and cancellation.
 

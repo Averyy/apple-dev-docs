@@ -17,7 +17,7 @@ A Boolean value that indicates whether this a multicast MAC Address.
 var isMulticast: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `true` if this MAC address is a multicast MAC Address, `false` otherwise.
 

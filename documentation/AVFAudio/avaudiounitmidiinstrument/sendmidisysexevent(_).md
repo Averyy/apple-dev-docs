@@ -24,7 +24,7 @@ func sendMIDISysExEvent(_ midiData: Data)
 - (void) sendMIDISysExEvent:(NSData *) midiData;
 ```
 
-#### Discussion
+## Discussion
 
 The `midiData` parameter should contain the complete `SysEx` data, including start (F0) and termination (F7) bytes.
 

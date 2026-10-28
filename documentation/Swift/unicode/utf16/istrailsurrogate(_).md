@@ -21,11 +21,11 @@ Returns a Boolean value indicating whether the specified code unit is a low-surr
 static func isTrailSurrogate(_ x: Unicode.UTF16.CodeUnit) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `x` is a low-surrogate code unit; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 Here’s an example of checking whether each code unit in a string’s `utf16` view is a trailing surrogate. The `apple` string contains a single emoji character made up of a surrogate pair when encoded in UTF-16.
 

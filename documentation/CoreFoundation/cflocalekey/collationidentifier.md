@@ -25,7 +25,7 @@ static let collationIdentifier: CFLocaleKey!
 extern CFLocaleKey const kCFLocaleCollationIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a collation.
 

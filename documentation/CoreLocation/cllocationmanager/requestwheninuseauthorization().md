@@ -25,7 +25,7 @@ func requestWhenInUseAuthorization()
 - (void) requestWhenInUseAuthorization;
 ```
 
-#### Discussion
+## Discussion
 
 You must call this method or [`requestAlwaysAuthorization()`](./requestalwaysauthorization%28%29.md) before you can receive location-related information. You may call [`requestWhenInUseAuthorization()`](./requestwheninuseauthorization%28%29.md) whenever the current authorization status is not determined ([`CLAuthorizationStatus.notDetermined`](../clauthorizationstatus/notdetermined.md)).
 

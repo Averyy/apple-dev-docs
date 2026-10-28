@@ -31,7 +31,7 @@ func load(options: [SKCloudServiceSetupOptionsKey : Any] = [:]) async throws -> 
 
 - [Offering Apple Music Subscription in Your App](../offering-apple-music-subscription-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 ## Parameters
 

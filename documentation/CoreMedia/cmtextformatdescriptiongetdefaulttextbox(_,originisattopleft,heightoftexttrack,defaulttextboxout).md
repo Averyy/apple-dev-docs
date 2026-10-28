@@ -25,11 +25,11 @@ func CMTextFormatDescriptionGetDefaultTextBox(_ desc: CMFormatDescription, origi
 extern OSStatus CMTextFormatDescriptionGetDefaultTextBox(CMFormatDescriptionRef desc, Boolean originIsAtTopLeft, CGFloat heightOfTextTrack, CGRect *defaultTextBoxOut);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. Returns `noErr` if successful.
 
-#### Discussion
+## Discussion
 
 Within a text track, text is rendered within a text box.  There is a default text box set, which can be over-ridden by a sample.
 

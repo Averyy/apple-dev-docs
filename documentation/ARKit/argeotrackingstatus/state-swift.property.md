@@ -20,7 +20,7 @@ var state: ARGeoTrackingStatus.State { get }
 @property (nonatomic, readonly) ARGeoTrackingState state;
 ```
 
-#### Discussion
+## Discussion
 
 For any [`state`](./state-swift.property.md) in a frame’s [`geoTrackingStatus`](../arframe/geotrackingstatus.md), ARKit provides a [`stateReason`](./statereason-swift.property.md). A given geo-tracking status may intermix states and reasons, so the reasons are not tied to specific states.
 

@@ -20,7 +20,7 @@ A named identifier for a group of meshes and lights.
 struct RenderLayer
 ```
 
-#### Overview
+## Overview
 
 Use a [`RenderLayer`](./renderlayer.md) to associate a light with the entities it should illuminate, or to mark which entities a light affects. Every entity belongs to [`defaultLayer`](./renderlayer/defaultlayer.md) unless its [`RenderLayerComponent`](./renderlayercomponent.md) specifies otherwise.
 

@@ -15,7 +15,7 @@ A unique identifier for a message, which you provide when you upload the message
 uuid messageIdentifier
 ```
 
-#### Discussion
+## Discussion
 
 You create the UUID to identify a message when you call [`Upload Message`](./upload-message.md). Use this identifier to refer to the same message throughout the API.
 

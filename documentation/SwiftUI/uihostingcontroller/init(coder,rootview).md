@@ -20,7 +20,7 @@ Creates a hosting controller object from an archive and the specified SwiftUI vi
 @preconcurrency init?(coder aDecoder: NSCoder, rootView: Content)
 ```
 
-#### Return Value
+## Return Value
 
 A `UIViewController` object that you can present from your interface.
 

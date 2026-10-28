@@ -24,7 +24,7 @@ var bounds: CGRect { get }
 @property (readonly) CGRect bounds;
 ```
 
-#### Discussion
+## Discussion
 
 This property identifies the rectangular region of the image containing the detected QR code, not necessarily the shape of the QR code. A detected feature is square in space, but may appear as a four-sided polygon in the image. Use the properties listed in `CIQRCodeFeature` to find the corners of the QR code as it appears in perspective.
 

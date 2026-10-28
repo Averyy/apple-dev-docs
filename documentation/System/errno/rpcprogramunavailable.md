@@ -25,7 +25,7 @@ static var rpcProgramUnavailable: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 The requested program isn’t registered on the remote host.
 

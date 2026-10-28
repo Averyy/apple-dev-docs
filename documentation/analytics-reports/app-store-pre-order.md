@@ -5,7 +5,7 @@
 
 Analyze details on the number of pre-orders that people place and cancel for your app on the App Store.
 
-#### Overview
+## Overview
 
 The App Store Pre-Orders Report includes pre-order data generated on the App Store. Use the data in this report to measure the number of pre-orders that people place and the number of cancelations, as well as attribute pre-orders to acquisition sources and App Store pages.
 
@@ -22,7 +22,7 @@ The App Store Pre-Orders Report includes pre-order data generated on the App Sto
 
 The Analytics Reports framework delivers new portions of report content as instances. Each instance can contain one or more batches of data, to accommodate late-arriving events, or in rare cases, data corrections.  To learn more, see [Data Completeness and Corrections](./data-completeness-corrections.md).
 
-#### Report Fields
+## Report Fields
 
 | Report Field | Description | Data Type | Summary Report | Detail Report |
 | --- | --- | --- | --- | --- |
@@ -42,7 +42,7 @@ The Analytics Reports framework delivers new portions of report content as insta
 | Pre-Orders Placed | The total number of pre-orders placed. | `integer` | ✔ | ✔ |
 | Pre-Orders Canceled | The total number of pre-orders canceled. | `integer` | ✔ | ✔ |
 
-#### Glossary
+## Glossary
 
 | Dimension | Value | Definition |
 | --- | --- | --- |

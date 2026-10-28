@@ -13,7 +13,7 @@
 kIOCatalogResetDriversNoMatch
 ```
 
-#### Discussion
+## Discussion
 
 Resets the IOCatalogue with a new set of personalities but does not start a matching thread.
 

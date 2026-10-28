@@ -20,7 +20,7 @@ class NSAppleEventDescriptor
 @interface NSAppleEventDescriptor : NSObject
 ```
 
-#### Overview
+## Overview
 
 An instance of [`NSAppleEventDescriptor`](./nsappleeventdescriptor.md) represents a descriptor—the basic building block for Apple events. This class is a wrapper for the underlying Apple event descriptor data type, [`AEDesc`](../coreservices/aedesc.md). Scriptable Cocoa applications frequently work with instances of [`NSAppleEventDescriptor`](./nsappleeventdescriptor.md), but should rarely need to work directly with the [`AEDesc`](../coreservices/aedesc.md) data structure.
 

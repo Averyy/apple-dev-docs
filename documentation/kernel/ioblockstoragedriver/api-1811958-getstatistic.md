@@ -10,11 +10,11 @@ virtual UInt64 getStatistic(
  Statisticsstatistic) const;
 ```
 
-#### Return Value
+## Return Value
 
 Statistic value.
 
-#### Overview
+## Overview
 
 Ask the driver to report one of its operating statistics.
 

@@ -23,7 +23,7 @@ A Boolean that is true if the locale uses the metric system.
 var usesMetricSystem: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 -seealso: MeasurementFormatter
 

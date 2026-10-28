@@ -32,7 +32,7 @@ var badgeSetting: UNNotificationSetting { get }
 @property (atomic, readonly) UNNotificationSetting badgeSetting;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`UNNotificationSetting.enabled`](../unnotificationsetting/enabled.md), the app is authorized to badge its icon. The system tries to badge your app’s icon when the [`badge`](../unnotificationcontent/badge.md) property of a [`UNNotificationContent`](../unnotificationcontent.md) object contain a value, or when the `aps` dictionary in a remote notification contains the `badge` key.
 

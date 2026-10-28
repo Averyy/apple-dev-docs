@@ -9,7 +9,7 @@ framework: "swift-openapi-generator/swift-openapi-generator"
 
 Learn about the internals of Swift OpenAPI Generator.
 
-#### Overview
+## Overview
 
 Swift OpenAPI Generator contains multiple moving pieces, from the runtime library, to the generator CLI, plugin, to extension packages using the transport and middleware APIs.
 

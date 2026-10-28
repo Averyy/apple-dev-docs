@@ -19,11 +19,11 @@
 static bool SPPoint3DFloatAlmostEqualToPoint(SPPoint3DFloat p1, SPPoint3DFloat p2);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the two points are equal within the specified default absolute tolerance.
 
-#### Discussion
+## Discussion
 
 Returns a Boolean value that indicates whether the two points are equal within the specified default absolute tolerance.
 

@@ -30,7 +30,7 @@ class GKTurnBasedMatch
 - [Starting turn-based matches and passing turns between players](./starting-turn-based-matches-and-passing-turns-between-players.md)
 - [Sending messages to players in turn-based games](./sending-messages-to-players-in-turn-based-games.md)
 
-#### Overview
+## Overview
 
 A `GKTurnBasedMatch` object represents a match in a turn-based game that Game Center stores and forwards to participants in the match. In a turn-based game, participants take turns to advance gameplay until they reach an outcome. You end the match when all participants reach an outcome or they can no longer continue.
 
@@ -52,7 +52,7 @@ When you end a turn, forfeit a match, or end a match, you update the match data 
 
 If you present a [`GKTurnBasedMatchmakerViewController`](./gkturnbasedmatchmakerviewcontroller.md) object for players to manage their turn-based matches, the player can start a match, accept an invitation, open an existing match, and forfeit a match.
 
-##### Subclassing Notes
+### Subclassing Notes
 
 Don’t subclass the [`GKTurnBasedMatch`](./gkturnbasedmatch.md) class.
 

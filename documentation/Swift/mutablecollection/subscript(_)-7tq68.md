@@ -22,7 +22,7 @@ Accesses the element at the specified position.
 override subscript(position: Self.Index) -> Self.Element { get set }
 ```
 
-#### Overview
+## Overview
 
 For example, you can replace an element of an array by using its subscript.
 

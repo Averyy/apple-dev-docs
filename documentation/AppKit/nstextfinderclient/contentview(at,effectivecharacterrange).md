@@ -19,7 +19,7 @@ optional func contentView(at index: Int, effectiveCharacterRange outRange: NSRan
 - (NSView *) contentViewAtIndex:(NSUInteger) index effectiveCharacterRange:(NSRangePointer) outRange;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the view the contains the found text.
 

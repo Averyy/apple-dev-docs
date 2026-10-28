@@ -19,7 +19,7 @@ class VZGenericMachineIdentifier
 @interface VZGenericMachineIdentifier : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use the data representation in [`dataRepresentation`](./vzgenericmachineidentifier/datarepresentation.md) to save the VM’s identifier. To restore a previously saved identifier use [`init(dataRepresentation:)`](./vzgenericmachineidentifier/init%28datarepresentation%29.md).
 

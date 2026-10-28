@@ -16,7 +16,7 @@ Creates a set of properties using the specified configuration values.
 init(configuration: LayerRenderer.Configuration) throws
 ```
 
-#### Discussion
+## Discussion
 
 Prior to receiving the layer you use for drawing, you can create a [`LayerRenderer.Properties`](../properties-swift.struct.md) structure and use it to start the configuration of your Metal code.
 

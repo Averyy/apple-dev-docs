@@ -25,7 +25,7 @@ func CGRectContainsRect(_ rect1: CGRect, _ rect2: CGRect) -> Bool
 extern bool CGRectContainsRect(CGRect rect1, CGRect rect2);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the rectangle specified by `rect2` is contained in the rectangle passed in `rect1`; otherwise, [`false`](../Swift/false.md). The first rectangle contains the second if the union of the two rectangles is equal to the first rectangle.
 

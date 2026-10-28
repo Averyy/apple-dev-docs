@@ -25,7 +25,7 @@ func CFNotificationCenterAddObserver(_ center: CFNotificationCenter!, _ observer
 extern void CFNotificationCenterAddObserver(CFNotificationCenterRef center, const void *observer, CFNotificationCallback callBack, CFStringRef name, const void *object, CFNotificationSuspensionBehavior suspensionBehavior);
 ```
 
-#### Discussion
+## Discussion
 
 Notification delivery is registered for the main thread.
 

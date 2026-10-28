@@ -18,8 +18,8 @@ Produces the column number in which the macro begins.
 ## Declaration
 
 ```swift
-@freestanding
-(expression) macro column<T>() -> T where T : ExpressibleByIntegerLiteral
+@freestanding(expression)
+macro column<T>() -> T where T : ExpressibleByIntegerLiteral
 ```
 
 ## See Also

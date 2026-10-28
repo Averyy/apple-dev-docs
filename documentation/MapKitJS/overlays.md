@@ -5,7 +5,7 @@
 
 Create overlays to highlight geographic regions or paths.
 
-#### Overview
+## Overview
 
 You can enhance your maps by adding *overlays,* shapes that appear on top of the map. There are three overlay shapes:
 

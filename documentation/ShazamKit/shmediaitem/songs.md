@@ -23,7 +23,7 @@ An array of MusicKit song objects that represent the song.
 var songs: [Song] { get }
 ```
 
-#### Discussion
+## Discussion
 
 For more information about the MusicKit song object, see [`Song`](../../MusicKit/song.md).
 

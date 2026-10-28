@@ -22,7 +22,7 @@ func GLKVector2Make(_ x: Float, _ y: Float) -> GLKVector2
 static GLKVector2 GLKVector2Make(float x, float y);
 ```
 
-#### Return Value
+## Return Value
 
 An initialized vector.
 

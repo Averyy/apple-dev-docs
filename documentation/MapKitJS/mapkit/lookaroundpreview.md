@@ -15,7 +15,7 @@ The getter to use to access the look around preview class.
 get LookAroundPreview(): typeof LookAroundPreview;
 ```
 
-#### Discussion
+## Discussion
 
 You must load the appropriate library first before accessing the getter, otherwise, the getter throws an `Error`.
 

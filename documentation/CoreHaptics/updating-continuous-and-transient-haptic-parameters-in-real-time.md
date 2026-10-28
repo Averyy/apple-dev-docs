@@ -12,7 +12,7 @@ Generate continuous and transient haptic patterns in response to user touch.
 - Mac Catalyst 13.0+
 - Xcode 12.0+
 
-#### Overview
+## Overview
 
 This sample, HapticPalette, defines a two-dimensional touch area, where the x-axis varies the haptic pattern’s sharpness, and the y-axis maps to haptic intensity. Use this interface to explore the range of haptic patterns that you can create with Core Haptics. By sliding your finger inside the bounded area, you can vary the parameters of the generated haptic pattern.
 
@@ -20,7 +20,7 @@ This sample, HapticPalette, defines a two-dimensional touch area, where the x-ax
 
 > **Note**: HapticPalette requires Xcode 11 or later. Simulator doesn’t support a haptic interface, so build and run this sample on an iPhone 8, 8 Plus, X, XR, XS, or XS Max running iOS 13 or later.
 
-##### Configure the App to Play Haptics
+### Configure the App to Play Haptics
 
 This sample checks for device compatibility and sets up an instance of [`CHHapticEngine`](./chhapticengine.md) on launch. Before proceeding, start the engine, so it can begin accepting haptics requests.
 
@@ -35,7 +35,7 @@ do {
 
 See [Preparing your app to play haptics](./preparing-your-app-to-play-haptics.md) for more information about setting up the engine.
 
-##### Create a Continuous Haptic Pattern
+### Create a Continuous Haptic Pattern
 
 As the app demonstrates, you can create a sustained vibration by generating a continuous haptic pattern of nonzero duration. When you first create the pattern, on app launch, set the intensity and sharpness through an event parameter.
 
@@ -90,7 +90,7 @@ The normalized mapping converts the user’s finger location to the available sp
 
 The app retains the original pattern player instead of creating a new one with each change. To tell the continuous haptic pattern player to change or modulate its haptic as it’s playing, send dynamic parameters to the player.
 
-##### Alter the Continuous Haptic Pattern by Sending Dynamic Parameters
+### Alter the Continuous Haptic Pattern by Sending Dynamic Parameters
 
 To vary a continuous haptic pattern, send dynamic parameters of class [`CHHapticDynamicParameter`](./chhapticdynamicparameter.md) to the original pattern. This modifies the haptic pattern as it’s playing. In this example, the dynamic parameters for intensity and sharpness immediately change the haptic pattern’s strength and character to follow the user’s finger.
 
@@ -128,7 +128,7 @@ do {
 
 When the app sends the continuous pattern player a dynamic parameter, the value of that parameter changes immediately, resulting in a viscerally different haptic pattern on the device. If your app needs to change the parameter value gradually, consider scheduling a [`CHHapticParameterCurve`](./chhapticparametercurve.md).
 
-##### Create a Transient Haptic Pattern
+### Create a Transient Haptic Pattern
 
 The bottom half of the screen generates transient haptic experiences. A transient haptic event is momentary. This sample generates a transient haptic pattern when the gesture begins. It’s also helpful to generate subsequent transient haptic patterns if the user continues to interact with the interface. As long as the user’s finger remains inside the transient zone, the app continues to create a new transient haptic pattern based on the latest sharpness and intensity values. To accomplish this spacing, you use a dispatch timer to separate the transient haptic patterns by a time interval of 600 milliseconds, so they feel distinct.
 

@@ -19,7 +19,7 @@ protocol NSAccessibilityLayoutArea : NSAccessibilityGroup
 @protocol NSAccessibilityLayoutArea <NSAccessibilityGroup>
 ```
 
-#### Overview
+## Overview
 
 Use this protocol when you want to create a canvas that contains layout items.
 

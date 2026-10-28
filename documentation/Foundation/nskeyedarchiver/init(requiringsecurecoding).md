@@ -25,7 +25,7 @@ init(requiringSecureCoding requiresSecureCoding: Bool)
 - (instancetype) initRequiringSecureCoding:(BOOL) requiresSecureCoding;
 ```
 
-#### Discussion
+## Discussion
 
 To prevent the possibility of encoding an object that [`NSKeyedUnarchiver`](../nskeyedunarchiver.md) can’t decode, set `requiresSecureCoding` to [`true`](../../Swift/true.md) whenever possible. This ensures that all encoded objects conform to [`NSSecureCoding`](../nssecurecoding.md).
 

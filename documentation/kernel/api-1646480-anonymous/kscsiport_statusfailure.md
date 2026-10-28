@@ -13,7 +13,7 @@
 kSCSIPort_StatusFailure = 2
 ```
 
-#### Discussion
+## Discussion
 
 Driver has detected unrecoverable port failure (e.g. hardware port failure)
 

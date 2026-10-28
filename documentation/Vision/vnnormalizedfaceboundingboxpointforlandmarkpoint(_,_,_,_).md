@@ -24,7 +24,7 @@ func VNNormalizedFaceBoundingBoxPointForLandmarkPoint(_ faceLandmarkPoint: vecto
 extern CGPoint VNNormalizedFaceBoundingBoxPointForLandmarkPoint(vector_float2 faceLandmarkPoint, CGRect faceBoundingBox, size_t imageWidth, size_t imageHeight);
 ```
 
-#### Return Value
+## Return Value
 
 The input point projected into normalized bounding box coordinates.
 

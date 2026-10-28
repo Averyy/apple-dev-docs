@@ -21,7 +21,7 @@ An indication that a value of the given type could not be decoded because it did
 case typeMismatch(any Any.Type, DecodingError.Context)
 ```
 
-#### Discussion
+## Discussion
 
 As associated values, this case contains the attempted type and context for debugging.
 

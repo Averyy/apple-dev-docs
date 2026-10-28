@@ -27,7 +27,7 @@ func addParameters() throws
 - [Building an FxPlug plug-in manually](../../Professional-Video-Applications/building-an-fxplug-plug-in-manually.md)
 - [Using FxPlug APIs](../../Professional-Video-Applications/using-fxplug-apis.md)
 
-#### Discussion
+## Discussion
 
 Use the `apiManager` object that was passed to your [`init(apiManager:)`](./init%28apimanager%29-6vvaz.md) method to obtain an `FxParameterCreation*` object. Tell the parameter creation API object which types of parameters your plug-in needs. This method is only called at most once per instance of your plug-in. It will not be called when loading a document which contains your plug-in.
 

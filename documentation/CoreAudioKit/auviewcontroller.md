@@ -31,13 +31,13 @@ class AUViewController
 @interface AUViewController : NSViewController
 ```
 
-#### Overview
+## Overview
 
 This class doesn’t add any new methods or properties to its superclass, but it does conform to the [`NSExtensionRequestHandling`](../Foundation/nsextensionrequesthandling.md) protocol.
 
 A host app can access the view controller by calling the [`requestViewController(completionHandler:)`](../AudioToolbox/auaudiounit/requestviewcontroller%28completionhandler%29.md) method on the corresponding [`AUAudioUnit`](../AudioToolbox/auaudiounit.md) object.
 
-##### Subclassing Notes
+### Subclassing Notes
 
 If an audio unit provides a custom view controller, the UI Audio Unit extension must implement a subclass of `AUViewController` and implement the [`AUAudioUnitFactory`](../AudioToolbox/auaudiounitfactory.md) protocol inside the subclass.
 

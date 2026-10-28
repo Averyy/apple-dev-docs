@@ -17,7 +17,7 @@ The session is no longer valid because it reached its maximum duration.
 case maxSessionDurationReached
 ```
 
-#### Discussion
+## Discussion
 
 If you reach the emulation session’s maximum duration, you can reset with [`stopEmulation(status:)`](../stopemulation%28status%29.md). However, the API enforces a “cool down” period, and restarting emulation too quickly can produce a [`CardSession.Error.systemNotAvailable`](./systemnotavailable.md) error. If this happens, wait before attempting another call to [`startEmulation()`](../startemulation%28%29.md).
 

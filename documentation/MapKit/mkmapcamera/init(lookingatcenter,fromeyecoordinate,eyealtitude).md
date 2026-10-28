@@ -25,11 +25,11 @@ convenience init(lookingAtCenter centerCoordinate: CLLocationCoordinate2D, fromE
 + (instancetype) cameraLookingAtCenterCoordinate:(CLLocationCoordinate2D) centerCoordinate fromEyeCoordinate:(CLLocationCoordinate2D) eyeCoordinate eyeAltitude:(CLLocationDistance) eyeAltitude;
 ```
 
-#### Return Value
+## Return Value
 
 A new camera object that initializes with the specified information.
 
-#### Discussion
+## Discussion
 
 This method calculates the required pitch and heading angles to accommodate the specified eye position and altitude.
 

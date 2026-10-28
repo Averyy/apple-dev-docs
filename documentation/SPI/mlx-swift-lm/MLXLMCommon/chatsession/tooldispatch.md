@@ -17,7 +17,7 @@ Optional automatic dispatcher for accepted tool calls.
 var toolDispatch: (@Sendable (ToolCall) async throws -> String)?
 ```
 
-#### Discussion
+## Discussion
 
 Automatic dispatch is fail-closed: only calls naming a function declared in [`tools`](./tools.md) can reach this callback. If `tools` is `nil` or empty, every tool-call-shaped model output is rejected without invoking the callback.
 

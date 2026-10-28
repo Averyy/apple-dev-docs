@@ -5,7 +5,7 @@
 
 Learn the basics for adding components to your article.
 
-#### Overview
+## Overview
 
 An article can have many types of components, including text, images, social media posts, data tables, and so on. Each component is associated with both a `ComponentLayout` object that determines its placement in an article and a `ComponentStyle` object that determines its appearance.
 

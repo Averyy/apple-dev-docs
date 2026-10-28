@@ -19,7 +19,7 @@ A collection view cell that embeds a tip.
 @objc @preconcurrency final class TipUICollectionViewCell
 ```
 
-#### Overview
+## Overview
 
 Use this cell to create a tip you want to display and layout as a [`UICollectionViewCell`](../UIKit/uicollectionviewcell.md). To configure the content and appearance of your cell, use the [`configureTip(_:arrowEdge:actionHandler:)`](./tipuicollectionviewcell/configuretip%28_,arrowedge,actionhandler%29.md) function and provide a tip along with an optional arrow edge and action handler. Set the background color of your tip view using [`backgroundColor`](./tipuicollectionviewcell/backgroundcolor.md).
 

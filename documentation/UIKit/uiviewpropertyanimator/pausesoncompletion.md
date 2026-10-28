@@ -23,7 +23,7 @@ var pausesOnCompletion: Bool { get set }
 @property (nonatomic) BOOL pausesOnCompletion;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the animator remains in the [`UIViewAnimatingState.active`](../uiviewanimatingstate/active.md) state when the animation finishes, and it does not execute its completion handler. Keeping the animator in the [`UIViewAnimatingState.active`](../uiviewanimatingstate/active.md) state allows you to reverse the animation even after it has finished. When the value of this property is [`false`](../../Swift/false.md), the animator automatically transitions to the [`UIViewAnimatingState.inactive`](../uiviewanimatingstate/inactive.md) state when the animation finishes, thereby concluding the animation. The default value of this property is [`false`](../../Swift/false.md).
 

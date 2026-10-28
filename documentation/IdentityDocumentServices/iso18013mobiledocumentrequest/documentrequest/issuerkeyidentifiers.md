@@ -18,7 +18,7 @@ A list of X.509 authority key identifiers corresponding to the issuer certificat
 var issuerKeyIdentifiers: [Data]
 ```
 
-#### Discussion
+## Discussion
 
 An empty list means any document signer certificate is acceptable.
 

@@ -23,7 +23,7 @@ static var deletionConflicted: NSFileProviderCreateItemOptions { get }
 NSFileProviderCreateItemDeletionConflicted
 ```
 
-#### Discussion
+## Discussion
 
 If the File Provider extension signals the deletion of an item but the deletion conflicts with local edits, the system attempts to create the modified item by calling the [`createItem(basedOn:fields:contents:options:request:completionHandler:)`](../nsfileproviderreplicatedextension/createitem%28basedon,fields,contents,options,request,completionhandler%29.md) method, and passing this value as an option.
 

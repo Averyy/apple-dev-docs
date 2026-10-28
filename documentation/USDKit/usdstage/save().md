@@ -20,7 +20,7 @@ Saves the stage’s changed layers to their sources.
 func save() throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if a layer cannot be saved. Some layers may already have been saved when the failure occurs.
 

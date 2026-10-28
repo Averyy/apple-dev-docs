@@ -23,7 +23,7 @@ func unpremultiply(alpha: vImage.PixelBuffer<Format>)
 
 Available when `Format` is `vImage.PlanarF`.
 
-#### Discussion
+## Discussion
 
 This function divides the color values in `self` by the corresponding alpha values. For example, the following code premultiplies a 4 x 1 planar pixel buffer with the corresponding pixels in a separate planar alpha buffer:
 

@@ -19,11 +19,11 @@ func hv_vcpu_set_tsc_relative(_ vcpu: hv_vcpuid_t, _ offset: Int64) -> hv_return
 extern hv_return_t hv_vcpu_set_tsc_relative(hv_vcpuid_t vcpu, int64_t offset);
 ```
 
-#### Return Value
+## Return Value
 
 `0` on success, or an [`hv_return_t`](./hv_return_t.md) error code.
 
-#### Discussion
+## Discussion
 
 Use this function to set the TSC-offset field in the VMCS so that the TSC value in the guest is the value of [`hv_tsc_clock()`](./hv_tsc_clock%28%29.md) plus the given offset. The examples below show simple ways to calculate and set the TSC offset:
 

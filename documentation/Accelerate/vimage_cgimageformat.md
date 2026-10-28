@@ -34,7 +34,7 @@ typedef struct vImage_CGImageFormat { ... } vImage_CGImageFormat;
 - [Optimizing image-processing performance](./optimizing-image-processing-performance.md)
 - [Transforming an image in three dimensions](./transforming-an-image-in-three-dimensions.md)
 
-#### Overview
+## Overview
 
 This structure describes the ordering and number of the color channels, the size and type of the data in the color channels, and alpha information. This format mirrors the image format descriptors that Core Graphics uses to create objects, such as [`CGImage`](../CoreGraphics/cgimage.md) and [`CGContext`](../CoreGraphics/cgcontext.md).
 

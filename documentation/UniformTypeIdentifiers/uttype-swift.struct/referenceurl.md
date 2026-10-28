@@ -21,7 +21,7 @@ The reference URL for the type.
 var referenceURL: URL? { get }
 ```
 
-#### Discussion
+## Discussion
 
 A reference URL is a human-readable document that describes a type. Most types don’t specify reference URLs.
 

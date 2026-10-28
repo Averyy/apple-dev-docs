@@ -28,7 +28,7 @@ func sumQuantity() -> HKQuantity?
 
 - [Executing Statistics Collection Queries](../executing-statistics-collection-queries.md)
 
-#### Return Value
+## Return Value
 
 If the [`cumulativeSum`](../hkstatisticsoptions/cumulativesum.md) option was set, this method returns a quantity object containing the sum of all the samples matching the query; otherwise, it returns `nil`.
 

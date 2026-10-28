@@ -22,7 +22,7 @@ var iso: Float { get }
 @property (nonatomic, readonly) float ISO;
 ```
 
-#### Discussion
+## Discussion
 
 This property controls the sensor’s sensitivity to light by applying a gain value to the signal. This value is between the active format’s [`minISO`](./format/miniso.md) and [`maxISO`](./format/maxiso.md) values. Higher values result in noisier images.
 

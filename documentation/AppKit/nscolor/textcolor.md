@@ -19,7 +19,7 @@ class var textColor: NSColor { get }
 @property (class, strong, readonly) NSColor * textColor;
 ```
 
-#### Discussion
+## Discussion
 
 When text is selected, its color changes to the return value of [`selectedTextColor`](./selectedtextcolor.md).
 

@@ -19,7 +19,7 @@ protocol NSCollectionViewSectionHeaderView : NSCollectionViewElement
 @protocol NSCollectionViewSectionHeaderView <NSCollectionViewElement>
 ```
 
-#### Overview
+## Overview
 
 A collection view can support a section that can collapse into a single horizontally scrollable row, similar to the groupings in the icon view in Finder. To ensure that the collection view can communicate with the button that controls the collapsing of a section, the section header view object should conform to this protocol and connect the button’s outlet to [`sectionCollapseButton`](./nscollectionviewsectionheaderview/sectioncollapsebutton.md).
 

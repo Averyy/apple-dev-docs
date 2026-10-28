@@ -12,7 +12,7 @@ Signature for the block executed if the user does not grant access to the caller
 typedef void (^)(NSError *) ALAssetsLibraryAccessFailureBlock;
 ```
 
-#### Discussion
+## Discussion
 
 The block parameter is defined as follows:
 

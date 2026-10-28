@@ -24,7 +24,7 @@ func MACaptionAppearanceGetBackgroundOpacity(_ domain: MACaptionAppearanceDomain
 extern CGFloat MACaptionAppearanceGetBackgroundOpacity(MACaptionAppearanceDomain domain, MACaptionAppearanceBehavior *behavior);
 ```
 
-#### Return Value
+## Return Value
 
 A float value, ranging from `0.0` to `1.0`, representing the opacity of the color behind the text and above the window color.
 

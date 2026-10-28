@@ -17,11 +17,11 @@ Converts the point from the base coordinate system to the view’s coordinate sy
 - (NSPoint) convertPointFromBase:(NSPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 The point converted to the view’s base coordinate system.
 
-#### Discussion
+## Discussion
 
 For more information, see [View Coordinates](../view-coordinates.md).
 

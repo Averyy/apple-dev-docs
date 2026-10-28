@@ -20,7 +20,7 @@ Returns an iterator for the contained entities.
 func makeIterator() -> QueryResult<Element>.Iterator
 ```
 
-#### Return Value
+## Return Value
 
 The iterator.
 

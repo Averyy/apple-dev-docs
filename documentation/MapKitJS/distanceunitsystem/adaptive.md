@@ -15,7 +15,7 @@ A measurement system that adapts to the map’s language.
 readonly Adaptive: "adaptive";
 ```
 
-#### Discussion
+## Discussion
 
 MapKit JS chooses the measurement system — either metric or imperial — based on the map’s language.
 

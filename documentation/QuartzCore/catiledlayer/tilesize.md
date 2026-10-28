@@ -24,7 +24,7 @@ var tileSize: CGSize { get set }
 @property CGSize tileSize;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to (256.0, 256.0).
 

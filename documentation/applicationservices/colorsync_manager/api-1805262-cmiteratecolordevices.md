@@ -16,11 +16,11 @@ CMError CMIterateColorDevices (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 This routine gets device information about all registered color devices. If provided, the supplied callback functions is called once for each registered device, passing in the device info and the supplied refcon. 
 

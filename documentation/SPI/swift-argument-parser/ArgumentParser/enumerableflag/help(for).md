@@ -18,7 +18,7 @@ Returns the help information to show for the given flag.
 static func help(for value: Self) -> ArgumentHelp?
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation for this method always returns `nil`, which groups the flags together with the help provided in the `@Flag` declaration. Implement this method for your custom type to provide different help information for each flag.
 
@@ -26,7 +26,6 @@ The default implementation for this method always returns `nil`, which groups th
 
 ### EnumerableFlag Implementations
 - [static func help(for: Self) -> ArgumentHelp?](./help%28for%29-2qgai.md)
-  Returns the help information to show for the given flag.
 
 
 ---

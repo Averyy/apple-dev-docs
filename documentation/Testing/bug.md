@@ -28,7 +28,7 @@ struct Bug
 - [Interpreting bug identifiers](./bugidentifiers.md)
 - [Adding comments to tests](./addingcomments.md)
 
-#### Overview
+## Overview
 
 To add this trait to a test, use one of the following functions:
 

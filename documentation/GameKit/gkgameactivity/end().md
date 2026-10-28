@@ -28,7 +28,7 @@ func end()
 
 - [Creating activities for your game](../creating-activities-for-your-game.md)
 
-#### Discussion
+## Discussion
 
 This reports all associated achievements and submit scores to leaderboards.
 

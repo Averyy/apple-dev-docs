@@ -24,7 +24,7 @@ class AVFragmentedMovieMinder
 @interface AVFragmentedMovieMinder : AVFragmentedAssetMinder
 ```
 
-#### Overview
+## Overview
 
 This class is identical to [`AVFragmentedAssetMinder`](./avfragmentedassetminder.md) except that it’s capable of minding only assets of type [`AVFragmentedMovie`](./avfragmentedmovie.md).
 

@@ -15,7 +15,7 @@ An error that indicates the subscription doesn’t qualify for a renewal-date ex
 object SubscriptionExtensionIneligibleError
 ```
 
-#### Discussion
+## Discussion
 
 This error applies to the [`Extend a Subscription Renewal Date`](./extend-a-subscription-renewal-date.md) endpoint.
 

@@ -21,11 +21,11 @@ Gets the preferred spacing distance along the specified axis to the view that re
 func distance(to next: ViewSpacing, along axis: Axis) -> CGFloat
 ```
 
-#### Return Value
+## Return Value
 
 A floating point value that represents the smallest distance in points between two views that satisfies the spacing preferences of both this view and the adjacent views on their shared edge.
 
-#### Discussion
+## Discussion
 
 Call this method from your implementation of [`Layout`](../layout.md) protocol methods if you need to measure the default spacing between two views in a custom layout. Call the method on the first view’s preferences instance, and provide the second view’s preferences instance as input.
 

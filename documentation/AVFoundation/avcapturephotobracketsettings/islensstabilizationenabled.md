@@ -26,7 +26,7 @@ var isLensStabilizationEnabled: Bool { get set }
 
 - [Capturing a bracketed photo sequence](../capturing-a-bracketed-photo-sequence.md)
 
-#### Discussion
+## Discussion
 
 When this setting is [`true`](../../Swift/true.md), the photo output uses optical image stabilization to hold the lens steady for the duration of the bracketed capture, helping to counter hand shake and produce a sharper bracket of images. The default setting is [`false`](../../Swift/false.md).
 

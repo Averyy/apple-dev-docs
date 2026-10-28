@@ -21,11 +21,11 @@ Returns a JSON-encoded representation of the value you supply.
 func encode<T>(_ value: T) throws -> Data where T : Encodable
 ```
 
-#### Return Value
+## Return Value
 
 The encoded JSON data.
 
-#### Discussion
+## Discussion
 
 If there’s a problem encoding the value you supply, this method throws an error based on the type of problem:
 

@@ -20,7 +20,7 @@ var jointNames: [String] { get }
 @property (nonatomic, readonly) NSArray<NSString *> * jointNames;
 ```
 
-#### Discussion
+## Discussion
 
 Refer to this array to convert a joint index to a joint identifier.
 

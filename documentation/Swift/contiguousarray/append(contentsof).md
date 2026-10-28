@@ -21,7 +21,7 @@ Adds the elements of a sequence to the end of the array.
 mutating func append<S>(contentsOf newElements: S) where Element == S.Element, S : Sequence
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to append the elements of a sequence to the end of this array. This example appends the elements of a `Range<Int>` instance to an array of integers.
 

@@ -15,7 +15,7 @@ A Boolean value that indicates the person’s preference for content that follow
 static var prefersHeadAnchorAlternative: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `true` if the person doesn’t want content anchored to their head position, or `false` if anchoring content to the head position is acceptable.
 

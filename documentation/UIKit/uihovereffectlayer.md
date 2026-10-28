@@ -20,7 +20,7 @@ class UIHoverEffectLayer
 @interface UIHoverEffectLayer : CALayer
 ```
 
-#### Overview
+## Overview
 
 This layer type is useful for adding hover effects to an existing `CALayer` hierarchy. Where possible, use `UIView.hoverStyle` instead.
 

@@ -25,7 +25,7 @@ let kCGImageSourceTypeIdentifierHint: CFString
 extern CFStringRef const kCGImageSourceTypeIdentifierHint;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is a [`CFString`](../CoreFoundation/cfstring.md) object. Add this key to the options dictionary when you create a [`CGImageSource`](./cgimagesource.md) object.
 

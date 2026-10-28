@@ -21,7 +21,7 @@ nonisolated
 func subscriptionStoreButtonLabel(_ label: SubscriptionStoreButtonLabel) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 The button label is not always respected in every context. For example, if you have a subscription store that shows multiple subscribe buttons, setting [`action`](../../StoreKit/subscriptionstorebuttonlabel/action-swift.type.property.md) as the button label will fall back to each subscription’s display name.
 

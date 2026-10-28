@@ -10,7 +10,7 @@ UInt16 getDMACycleTime(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 Reported multiword DMA cycle time in nanoseconds.
 

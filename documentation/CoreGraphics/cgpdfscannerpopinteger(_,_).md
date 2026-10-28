@@ -25,7 +25,7 @@ func CGPDFScannerPopInteger(_ scanner: CGPDFScannerRef, _ value: UnsafeMutablePo
 extern bool CGPDFScannerPopInteger(CGPDFScannerRef scanner, CGPDFInteger *value);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the PDF integer is retrieved successfully; otherwise, [`false`](../Swift/false.md).
 

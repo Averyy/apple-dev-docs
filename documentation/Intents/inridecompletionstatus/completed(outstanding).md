@@ -23,11 +23,11 @@ class func completed(outstanding outstandingPaymentAmount: INCurrencyAmount) -> 
 + (instancetype) completedWithOutstandingPaymentAmount:(INCurrencyAmount *) outstandingPaymentAmount;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized [`INRideCompletionStatus`](../inridecompletionstatus.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when the ride completed successfully but the user has not yet provided full payment. This method sets the [`isCompleted`](./iscompleted.md) and [`isOutstanding`](./isoutstanding.md) properties of the returned object to [`true`](../../Swift/true.md), and it sets the [`isCanceled`](./iscanceled.md) and [`isMissedPickup`](./ismissedpickup.md) properties to [`false`](../../Swift/false.md). It also sets the [`paymentAmount`](./paymentamount.md) property to the value in the `outstandingPaymentAmount` parameter. Your app can use that amount later to handle the payment.
 

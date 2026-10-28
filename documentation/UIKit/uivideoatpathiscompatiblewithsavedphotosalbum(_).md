@@ -22,11 +22,11 @@ func UIVideoAtPathIsCompatibleWithSavedPhotosAlbum(_ videoPath: String) -> Bool
 extern BOOL UIVideoAtPathIsCompatibleWithSavedPhotosAlbum(NSString *videoPath);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the video can be saved to the Camera Roll album or [`false`](../Swift/false.md) if it cannot.
 
-#### Discussion
+## Discussion
 
 Not all devices are able to play video files placed in the user’s Camera Roll album. Before attempting to save a video, call this function and check its return value to ensure that saving the video is supported for the current device. For a code example, refer to [Camera Programming Topics for iOS](https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/CameraAndPhotoLib_TopicsForIOS/Introduction/Introduction.html#//apple_ref/doc/uid/TP40010400).
 

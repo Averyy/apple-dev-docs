@@ -16,11 +16,11 @@ Sets a property for an IOHIDDevice.
 Boolean IOHIDDeviceSetProperty(IOHIDDeviceRef device, CFStringRef key, CFTypeRef property);
 ```
 
-#### Return Value
+## Return Value
 
 Returns TRUE if successful.
 
-#### Discussion
+## Discussion
 
 Property keys are prefixed by kIOHIDDevice and declared in <IOKit/hid/IOHIDKeys.h>.
 

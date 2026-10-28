@@ -5,7 +5,7 @@
 
 Learn how to use a delegate object to allow detection of more than one gesture at a time.
 
-#### Overview
+## Overview
 
 There are times when it makes sense to allow the simultaneous recognition of multiple gestures. The following image shows an app that allows people to drag, scale, and rotate three views onscreen. Each view maintains its own unique set of pan, pinch, and rotate gesture recognizers, and it’s possible for all three of a view’s gesture recognizers to perform their actions simultaneously.
 

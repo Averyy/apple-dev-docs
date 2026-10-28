@@ -24,7 +24,7 @@ func reLUGradient(withIncomingGradient gradient: MPSGraphTensor, sourceTensor so
 - (MPSGraphTensor *) reLUGradientWithIncomingGradient:(MPSGraphTensor *) gradient sourceTensor:(MPSGraphTensor *) source name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid [`MPSGraphTensor`](../mpsgraphtensor.md) object.
 

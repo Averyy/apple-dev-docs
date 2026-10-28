@@ -17,7 +17,7 @@ A Boolean value that indicates whether to prevent the user from changing their a
 var lockAccounts: Bool? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Your app can enable or disable changes to the user’s account settings. The default value is `nil`.
 

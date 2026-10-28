@@ -20,7 +20,7 @@ Time-coded audio data.
 struct AnalyzerInput
 ```
 
-#### Overview
+## Overview
 
 The audio data must have an audio format that is supported by the analyzer’s modules; the analyzer does not perform audio conversion. Call [`bestAvailableAudioFormat(compatibleWith:considering:)`](./speechanalyzer/bestavailableaudioformat%28compatiblewith,considering%29.md) (or its variants) to select an appropriate format to convert to.
 

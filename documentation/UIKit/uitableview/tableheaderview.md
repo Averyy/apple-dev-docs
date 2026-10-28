@@ -27,7 +27,7 @@ var tableHeaderView: UIView? { get set }
 
 - [Adding headers and footers to table sections](../adding-headers-and-footers-to-table-sections.md)
 
-#### Discussion
+## Discussion
 
 Use this property to specify a header view for your entire table. The header view is the first item to appear in the table’s view’s scrolling content, and it’s separate from the header views you add to individual sections. The default value of this property is `nil`.
 

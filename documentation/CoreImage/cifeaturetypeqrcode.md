@@ -24,7 +24,7 @@ let CIFeatureTypeQRCode: String
 extern NSString * const CIFeatureTypeQRCode;
 ```
 
-#### Discussion
+## Discussion
 
 To detect QR codes in an image or video, pass this to `/CIDetector/detectorOfType:context:options:`
 

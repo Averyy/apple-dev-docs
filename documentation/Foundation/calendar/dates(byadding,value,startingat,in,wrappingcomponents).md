@@ -21,7 +21,7 @@ Returns a sequence of `Date`s, calculated by adding a scaled amount of `Calendar
 func dates(byAdding component: Calendar.Component, value: Int = 1, startingAt start: Date, in range: Range<Date>? = nil, wrappingComponents: Bool = false) -> some Sendable & Sequence<Date>
 ```
 
-#### Return Value
+## Return Value
 
 A `Sequence` of `Date` values, or an empty sequence if no addition could be performed.
 

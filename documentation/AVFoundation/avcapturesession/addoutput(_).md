@@ -24,7 +24,7 @@ func addOutput(_ output: AVCaptureOutput)
 - (void) addOutput:(AVCaptureOutput *) output;
 ```
 
-#### Discussion
+## Discussion
 
 You can only add an output to a session using this method if [`canAddOutput(_:)`](./canaddoutput%28_%29.md) returns [`true`](../../Swift/true.md).
 

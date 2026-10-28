@@ -24,7 +24,7 @@ init(forTextStyle textStyle: UIFont.TextStyle)
 - (instancetype) initForTextStyle:(UIFontTextStyle) textStyle;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized font metrics object.
 

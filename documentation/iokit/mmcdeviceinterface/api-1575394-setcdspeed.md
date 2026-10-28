@@ -16,11 +16,11 @@ Issues a SET_CD_SPEED command to the device as defined in MMC-2.
 IOReturn (*SetCDSpeed)(void *self, SCSICmdField2Byte LOGICAL_UNIT_READ_SPEED, SCSICmdField2Byte LOGICAL_UNIT_WRITE_SPEED, SCSITaskStatus *taskStatus, SCSI_Sense_Data *senseDataBuffer);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful, kIOReturnNoDevice if there is no connection to an IOService, kIOReturnNoMemory if a SCSITask couldn't be created, or kIOReturnExclusiveAccess if the device is already opened for exclusive access by another client.
 
-#### Discussion
+## Discussion
 
 Once an MMCDeviceInterface is opened the client may send this command to change the read and/or write CD speed of the drive.
 

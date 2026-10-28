@@ -19,7 +19,7 @@ unowned(unsafe) var supermenu: NSMenu? { get set }
 @property (assign, nullable) NSMenu * supermenu;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains a value of type `NSMenu` representing the the parent menu that contains the menu as a submenu. If the menu has no parent menu, then the value of this property is `nil`.
 

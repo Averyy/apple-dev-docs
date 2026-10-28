@@ -19,7 +19,7 @@ var kCEFrameRateKey: String { get }
 #define kCEFrameRateKey
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key can be a double value representing the frame rate, or an `NSDictionary` object with [`kCENumeratorKey`](./kcenumeratorkey.md) and [`kCEDenominatorKey`](./kcedenominatorkey.md) for a ratio-based frame rate.
 

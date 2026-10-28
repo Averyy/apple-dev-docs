@@ -12,7 +12,7 @@ virtual void setPropertyTable(
  OSDictionary *dict );
 ```
 
-#### Overview
+## Overview
 
 This method will release the current property table of a the entry and replace it with another, retaining the new property table.
 

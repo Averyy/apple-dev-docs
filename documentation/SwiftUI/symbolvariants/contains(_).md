@@ -21,7 +21,7 @@ Returns a Boolean value that indicates whether the current variant contains the 
 func contains(_ other: SymbolVariants) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if this variant contains `other`; otherwise, `false`.
 

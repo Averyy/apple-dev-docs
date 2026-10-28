@@ -23,11 +23,11 @@ func handleOutboundData(from flow: NEFilterFlow, readBytesStartOffset offset: In
 - (NEFilterDataVerdict *) handleOutboundDataFromFlow:(NEFilterFlow *) flow readBytesStartOffset:(NSUInteger) offset readBytes:(NSData *) readBytes;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NEFilterDataVerdict`](../nefilterdataverdict.md) indicating how the system should handle the chunk of data and all subsequent outbound data for the flow.
 
-#### Discussion
+## Discussion
 
 `NEFilterDataProvider` subclasses must override this method.
 

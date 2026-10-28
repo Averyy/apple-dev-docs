@@ -23,7 +23,7 @@ class DDDevice
 @interface DDDevice : NSObject
 ```
 
-#### Overview
+## Overview
 
 The extension creates an instance of this class for a discovered device of interest and passes it to the system for display in the device picker UI ([`AVRoutePickerView`](../AVKit/avroutepickerview.md)).
 

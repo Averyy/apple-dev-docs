@@ -21,7 +21,7 @@ enum WiFiAwareServiceRole
 enum DDDeviceWiFiAwareServiceRole : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Wi-Fi Aware Service’s Role
 

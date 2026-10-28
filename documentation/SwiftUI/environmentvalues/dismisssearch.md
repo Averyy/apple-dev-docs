@@ -25,7 +25,7 @@ var dismissSearch: DismissSearchAction { get }
 
 - [Managing search interface activation](../managing-search-interface-activation.md)
 
-#### Discussion
+## Discussion
 
 Use this environment value to get the [`DismissSearchAction`](../dismisssearchaction.md) instance for the current [`Environment`](../environment.md). Then call the instance to dismiss the current search interaction. You call the instance directly because it defines a [`callAsFunction()`](../dismisssearchaction/callasfunction%28%29.md) method that Swift calls when you call the instance.
 

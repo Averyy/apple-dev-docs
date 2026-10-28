@@ -25,7 +25,7 @@ func BNNSGraphGetArgumentIntents(_ graph: bnns_graph_t, _ function: UnsafePointe
 int BNNSGraphGetArgumentIntents(bnns_graph_t graph, const char *function, size_t argument_intents_count, BNNSGraphArgumentIntent *argument_intents);
 ```
 
-#### Return Value
+## Return Value
 
 `0` on success, nonzero on failure.
 

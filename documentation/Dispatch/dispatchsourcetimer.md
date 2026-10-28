@@ -21,7 +21,7 @@ A dispatch source that submits the event handler block based on a timer.
 protocol DispatchSourceTimer : DispatchSourceProtocol, Sendable
 ```
 
-#### Overview
+## Overview
 
 You do not adopt this protocol in your objects. Instead, use the [`makeTimerSource(flags:queue:)`](./dispatchsource/maketimersource%28flags,queue%29.md) method to create an object that adopts this protocol.
 

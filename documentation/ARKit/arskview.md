@@ -27,7 +27,7 @@ class ARSKView
 
 - [Providing 2D Virtual Content with SpriteKit](./providing-2d-virtual-content-with-spritekit.md)
 
-#### Overview
+## Overview
 
 Use the [`ARSKView`](./arskview.md) class to create augmented reality experiences that position 2D elements in 3D space within a device camera view of the real world. When you run the view’s provided [`ARSession`](./arsession.md) object:
 

@@ -21,7 +21,7 @@ Creates a localized string resource from the given string interpolation.
 init(stringInterpolation: String.LocalizationValue.StringInterpolation)
 ```
 
-#### Discussion
+## Discussion
 
 To create a localized string key from a string interpolation, use the `\()` string interpolation syntax. Swift matches the parameter types in the expression to one of the `appendInterpolation` methods in `LocalizedStringResource/StringInterpolation`.
 

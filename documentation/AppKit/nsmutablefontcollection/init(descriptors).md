@@ -19,7 +19,7 @@ init(descriptors queryDescriptors: [NSFontDescriptor])
 + (NSMutableFontCollection *) fontCollectionWithDescriptors:(NSArray<NSFontDescriptor *> *) queryDescriptors;
 ```
 
-#### Return Value
+## Return Value
 
 A mutable font collection object.
 

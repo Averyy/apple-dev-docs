@@ -20,7 +20,7 @@ var insertionIndex: Int { get }
 @property (readonly) NSInteger insertionIndex;
 ```
 
-#### Return Value
+## Return Value
 
 An insertion index. Determined by evaluating the receiver.
 

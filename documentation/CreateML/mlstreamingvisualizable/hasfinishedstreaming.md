@@ -16,7 +16,7 @@ A Boolean value that indicates whether the stream has provided its final iterati
 var hasFinishedStreaming: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 This method updates [`cgImage`](../mlvisualizable/cgimage.md) to the next iteration.
 

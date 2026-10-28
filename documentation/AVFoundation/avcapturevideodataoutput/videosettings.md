@@ -24,7 +24,7 @@ var videoSettings: [String : Any]! { get set }
 @property (nonatomic, copy, null_resettable) NSDictionary<NSString *,id> * videoSettings;
 ```
 
-#### Discussion
+## Discussion
 
 To receive samples in their device-native format, set this value to an empty dictionary:
 

@@ -19,7 +19,7 @@ var isARepeat: Bool { get }
 @property (readonly, getter=isARepeat) BOOL ARepeat;
 ```
 
-#### Discussion
+## Discussion
 
 Contains [`true`](../../Swift/true.md) if the key event is a repeat caused by the user holding the key down; otherwise, [`false`](../../Swift/false.md). Raises an `NSInternalInconsistencyException` if sent to an `NSFlagsChanged` event or other non-key event.
 

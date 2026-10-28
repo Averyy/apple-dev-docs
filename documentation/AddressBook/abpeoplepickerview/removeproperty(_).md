@@ -19,7 +19,7 @@ func removeProperty(_ property: String!)
 - (void) removeProperty:(NSString *) property;
 ```
 
-#### Discussion
+## Discussion
 
 For additional information about properties see [Using Property Lists](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AddressBook/Tasks/AccessingData.html#//apple_ref/doc/uid/20001023-103048).
 

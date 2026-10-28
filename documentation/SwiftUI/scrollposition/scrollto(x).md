@@ -21,7 +21,7 @@ Scrolls the position of the scroll view to the x value you provide.
 mutating func scrollTo(x: CGFloat)
 ```
 
-#### Discussion
+## Discussion
 
 The scroll view chooses the y value based on the content insets of the scroll view and will clamp this value to only scroll to the size of its actual content.
 

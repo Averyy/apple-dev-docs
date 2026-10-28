@@ -19,7 +19,7 @@ static let representedFilename: NSBindingName
 extern NSBindingName NSRepresentedFilenameBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

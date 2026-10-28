@@ -25,11 +25,11 @@ func CFAllocatorDeallocate(_ allocator: CFAllocator!, _ ptr: UnsafeMutableRawPoi
 extern void CFAllocatorDeallocate(CFAllocatorRef allocator, void *ptr);
 ```
 
-#### Discussion
+## Discussion
 
 If the allocator does not specify a `deallocate` callback function, the memory is not deallocated.
 
-##### Special Considerations
+### Special Considerations
 
 You must use the same allocator to deallocate memory as was used to allocate it.
 

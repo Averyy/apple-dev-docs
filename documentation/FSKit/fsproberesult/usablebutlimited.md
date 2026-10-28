@@ -19,7 +19,7 @@ class var usableButLimited: FSProbeResult { get }
 @property (class, readonly) FSProbeResult * usableButLimitedProbeResult;
 ```
 
-#### Discussion
+## Discussion
 
 This kind of probe result lacks the [`name`](./name.md), [`containerID`](./containerid.md), or both. Don’t return this result from probing a resource that isn’t limited.
 

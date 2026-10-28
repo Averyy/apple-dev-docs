@@ -21,7 +21,7 @@ A type that specifies the format for the quarter in a date format style.
 struct Quarter
 ```
 
-#### Overview
+## Overview
 
 The type [`Date.FormatStyle.Symbol.Quarter`](./quarter.md) includes static factory variables that create custom [`Date.FormatStyle.Symbol.Quarter`](./quarter.md) objects:
 

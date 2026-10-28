@@ -25,7 +25,7 @@ static func maximumCount<Element>(_ count: Int) -> GenerationGuide<[Element]> wh
 - [Categorizing and organizing data with content tags](../categorizing-and-organizing-data-with-content-tags.md)
 - [Managing the context window](../managing-the-context-window.md)
 
-#### Discussion
+## Discussion
 
 The bounds are inclusive.
 

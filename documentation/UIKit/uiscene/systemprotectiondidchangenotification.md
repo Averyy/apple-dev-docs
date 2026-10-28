@@ -22,7 +22,7 @@ class let systemProtectionDidChangeNotification: NSNotification.Name
 extern NSNotificationName const UISceneSystemProtectionDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The object of the notification is the scene for which protection attributes changed.
 

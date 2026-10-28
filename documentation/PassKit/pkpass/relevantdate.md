@@ -26,7 +26,7 @@ var relevantDate: Date? { get }
 @property (nonatomic, copy, readonly, nullable) NSDate * relevantDate;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this property for sorting UI elements that represent passes, such as cells in a table view.
 

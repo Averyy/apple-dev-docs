@@ -13,11 +13,11 @@
 ifaddr_t ifaddr_withaddr(const struct sockaddr *address);
 ```
 
-#### Return Value
+## Return Value
 
 A reference to the interface address.
 
-#### Discussion
+## Discussion
 
 Returns an interface address with the address specified. Increments the reference count on the ifaddr before returning to the caller. Caller is responsible for calling ifaddr_release.
 

@@ -25,7 +25,7 @@ init(objects: UnsafePointer<AnyObject>?, forKeys keys: UnsafePointer<any NSCopyi
 - (instancetype) initWithObjects:(ObjectType const[]) objects forKeys:(id<NSCopying> const[]) keys count:(NSUInteger) cnt;
 ```
 
-#### Discussion
+## Discussion
 
 This method steps through the `objects` and `keys` arrays, creating entries in the new dictionary as it goes. An `NSInvalidArgumentException` is raised if a key or value object is `nil`.
 

@@ -22,7 +22,7 @@ optional func playerViewController(_ playerViewController: AVPlayerViewControlle
 - (void) playerViewController:(AVPlayerViewController *) playerViewController willBeginFullScreenPresentationWithAnimationCoordinator:(id<UIViewControllerTransitionCoordinator>) coordinator;
 ```
 
-#### Discussion
+## Discussion
 
 This method isn’t called if you embed the player view controller as a child of the presented view controller.
 

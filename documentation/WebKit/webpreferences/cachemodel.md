@@ -19,7 +19,7 @@ var cacheModel: WebCacheModel { get set }
 @property (nonatomic) WebCacheModel cacheModel;
 ```
 
-#### Discussion
+## Discussion
 
 Possible values are described in [`WebCacheModel`](../webcachemodel.md).
 

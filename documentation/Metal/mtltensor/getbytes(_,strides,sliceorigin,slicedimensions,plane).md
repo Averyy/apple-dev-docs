@@ -25,7 +25,7 @@ func getBytes(_ bytes: UnsafeMutableRawPointer, strides: MTLTensorExtents, slice
 - (void) getBytes:(void *) bytes strides:(MTLTensorExtents *) strides fromSliceOrigin:(MTLTensorExtents *) sliceOrigin sliceDimensions:(MTLTensorExtents *) sliceDimensions plane:(MTLTensorPlaneType) plane;
 ```
 
-#### Discussion
+## Discussion
 
 When reading from auxiliary planes, specify `sliceOrigin` and `sliceDimensions` in plane coordinates by applying the auxiliary plane’s block factors.
 

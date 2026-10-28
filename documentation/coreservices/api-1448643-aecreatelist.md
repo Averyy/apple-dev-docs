@@ -19,11 +19,11 @@ func AECreateList(_ factoringPtr: UnsafeRawPointer!, _ factoredSize: Size, _ isR
 OSErr AECreateList(const void *factoringPtr, Size factoredSize, Boolean isRecord, AEDescList *resultList);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 The `AECreateList` function creates an empty descriptor list or Apple event record. You can use the functions described in “Adding Items to Descriptor Lists” to populate the list as part of creating an Apple event. After sending the Apple event with the `AESend(_:_:_:_:_:_:_:)` function, you should dispose of the descriptor list with the [`AEDisposeDesc(_:)`](./api-1444208-aedisposedesc.md) function when you no longer need it.
 
@@ -31,7 +31,7 @@ If you intend to use a descriptor list for a factored Apple event array, you mus
 
 For information about data types used with Apple event arrays, see [Data Types](../applicationservices/apple_event_manager.md#1653140).
 
-##### Version-Notes
+### Version-Notes
 
 The `factoringPtr` and `factoredSize` parameters are not supported in macOS 10.2 and later. You should pass `NULL` and zero, respectively, for these parameters.
 

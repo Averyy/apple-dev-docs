@@ -23,7 +23,7 @@ func deselectItem(at indexPath: IndexPath, animated: Bool)
 - (void) deselectItemAtIndexPath:(NSIndexPath *) indexPath animated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 If the [`allowsSelection`](./allowsselection.md) property is [`false`](../../Swift/false.md), calling this method has no effect.
 

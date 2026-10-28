@@ -19,11 +19,11 @@ convenience init(imageData: Data)
 + (instancetype) imageWithImageData:(NSData *) imageData;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `WKImage` object.
 
-#### Discussion
+## Discussion
 
 Use this method when you already have raw PNG or JPG data and want to use it for an image. Using this method for raw image data is more efficient than creating an image object to encapsulate that data.
 

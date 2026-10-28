@@ -21,7 +21,7 @@ The underlying data frame.
 var base: DataFrame { get }
 ```
 
-#### Discussion
+## Discussion
 
 For a [`DataFrame`](../dataframe.md) instance, this property is equivalent to `self`.
 

@@ -19,19 +19,19 @@ func LSCopyAllHandlersForURLScheme(_ inURLScheme: CFString) -> Unmanaged<CFArray
 CFArrayRef LSCopyAllHandlersForURLScheme(CFStringRef inURLScheme);
 ```
 
-#### Return Value
+## Return Value
 
 An array containing the application bundle identifiers for applications capable of handling the URL scheme specified by `inURLScheme`, or `NULL` if no handlers are available.
 
 In macOS 10.15 and later, the returned array is sorted so that the first element contains the best available application for opening the specified URL scheme. Prior to macOS 10.15, the order of elements in the array was undefined.
 
-#### Discussion
+## Discussion
 
 This function returns all of the application bundle identifiers that are capable of handling the specified URL scheme.
 
 URL handling capability is determined according to the value of the [CFBundleURLTypes](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html#//apple_ref/doc/uid/20001431-102207) key in an application’s `Info.plist`.
 
-##### Version Notes
+### Version Notes
 
 Thread-safe since macOS 10.4.
 

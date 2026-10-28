@@ -21,7 +21,7 @@ class NSSpeechSynthesizer
 @interface NSSpeechSynthesizer : NSObject
 ```
 
-#### Overview
+## Overview
 
 Speech synthesis, also called text-to-speech (TTS), parses text and converts it into audible speech. It offers a concurrent feedback mode that can be used in concert with or in place of traditional visual and aural notifications. For example, your application can use a speech synthesizer object to “pronounce” the text of important alert dialogs. Synthesized speech has several advantages. It can provide urgent information to users without forcing them to shift attention from their current task. And because speech doesn’t rely on visual elements for meaning, it is a crucial technology for users with vision or attention disabilities.
 
@@ -31,7 +31,7 @@ When you create an [`NSSpeechSynthesizer`](./nsspeechsynthesizer.md) instance us
 
 Speech synthesis is just one of the macOS speech technologies. The speech recognizer technology allows applications to “listen to” text spoken in U.S. English; the [`NSSpeechRecognizer`](./nsspeechrecognizer.md) class is the Cocoa interface to this technology. Both technologies provide benefits for all users, and are particularly useful to those users who have difficulties seeing the screen or using the mouse and keyboard.
 
-##### Speech Feedback Window
+### Speech Feedback Window
 
 The speech feedback window ([Figure 1](./nsspeechsynthesizer.md#1965715)) displays the text recognized from the user’s speech and the text from which an `NSSpeechSynthesizer` object synthesizes speech. Using the feedback window makes spoken exchange more natural and helps the user understand the synthesized speech.
 

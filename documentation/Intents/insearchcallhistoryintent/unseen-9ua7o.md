@@ -21,7 +21,7 @@ A Boolean value that indicates whether the user has seen the call yet.
 final var unseen: Bool? { get }
 ```
 
-#### Discussion
+## Discussion
 
 ## See Also
 

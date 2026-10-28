@@ -25,7 +25,7 @@ func startLoading()
 - (void) startLoading;
 ```
 
-#### Discussion
+## Discussion
 
 When this method is called, the subclass implementation should start loading the request, providing feedback to the URL loading system via the [`URLProtocolClient`](../urlprotocolclient.md) protocol.
 

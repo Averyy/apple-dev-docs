@@ -23,7 +23,7 @@ static func createMetadataSampleBuffer(from timecode: AVCaptureTimecode, associa
 CMSampleBufferRefAVCaptureTimecodeCreateMetadataSampleBufferAssociatedWithPresentationTimeStamp(AVCaptureTimecode timecode, CMTime presentationTimeStamp);
 ```
 
-#### Return Value
+## Return Value
 
 A `CMSampleBufferRef` with the encoded Timecode Media Description metadata for video synchronization, or `nil` if sample buffer creation fails.
 

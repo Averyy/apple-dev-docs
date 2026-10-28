@@ -5,11 +5,11 @@
 
 Configure subscription groups with the App Store Connect API.
 
-#### Overview
+## Overview
 
 The App Store Connect API lets you create and configure auto-renewable subscriptions for your app. After you create an auto-renewable subscription, you can add metadata, such as a display name, description, and duration. You can also choose your subscription pricing, create promotional and introductory offers, and set up subscription offer codes. When your app is fully configured, you can submit your subscription for review. After you receive approval, you can make pricing changes and edit some metadata for your subscription.
 
-##### Review App Store Connect API usage
+### Review App Store Connect API usage
 
 To manage auto-renewable subscriptions with the App Store Connect API, you need to understand key concepts for using the API. If you’re new to using the App Store Connect API, make sure to read the documentation in the Essentials section of [App Store Connect API](./AppStoreConnectAPI.md) and learn how to create API keys, generate JWTs, identify rate limits, and more.
 
@@ -21,7 +21,7 @@ To create and manage auto-renewable subscriptions, be sure you have one of the f
 
 For the full list of App Store Connect user roles, see [`UserRole`](./userrole.md) and [Program Roles](https://developer.apple.com/support/roles).
 
-##### Plan your subscription offerings
+### Plan your subscription offerings
 
 Before you get started with creating your subscription, first identify which app to include this subscription in. To get the Apple ID of the app, use `GET /v1/apps` ([`List apps`](./get-v1-apps.md)) and search the resulting pages for the name of the app you want to use. In the response, make note of the `id` of that app, which appears in the following format:
 
@@ -46,7 +46,7 @@ To arrange your subscription groups, make sure to map out all your offerings cle
 | Ukulele Advanced Lessons | 1 Month | 2 | 19.99 |
 | Ukulele Advanced Lessons | 1 Year | 2 | 99.99 |
 
-##### Create your subscription group
+### Create your subscription group
 
 After you plan your subscription offerings, create a subscription group, which is the container for your subscriptions. You can create your subscription group by using `POST /v1/subscriptionGroups` ([`Create a subscription group`](./post-v1-subscriptiongroups.md)) with a payload.
 
@@ -87,7 +87,7 @@ Here’s an example response, truncated for clarity:
 
 The response contains an `id` field in the primary `data` object. You need this ID for subsequent steps.
 
-##### Create a version for your subscription group
+### Create a version for your subscription group
 
 Localized names for a subscription group live on a *subscription group version* — a draft container for the metadata that goes through App Review together. Create a version first, then attach localizations to it. The pre-4.4.1 workflow that posts localizations directly to the subscription group (`POST /v1/subscriptionGroupLocalizations`) is deprecated as of 4.4.1 but remains available for existing integrations.
 
@@ -111,7 +111,7 @@ Create a draft version with `POST /v1/subscriptionGroupVersions` ([`Create a sub
 
 Note the version `id` in the response. You use it to attach localizations in the next step.
 
-##### Create your subscription group localization
+### Create your subscription group localization
 
 Your localized subscription group name shows up in your app when someone reviews or purchases your auto-renewable subscription. To add a localization, use `POST /v2/subscriptionGroupLocalizations` ([`Create a subscription group localization`](./post-v2-subscriptiongrouplocalizations.md)) with a payload that specifies the localized name of the subscription group, the locale, and an optional custom app name. The payload relates the localization to the *version* — not the parent subscription group.
 

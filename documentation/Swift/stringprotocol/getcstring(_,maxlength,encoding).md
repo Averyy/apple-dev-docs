@@ -21,7 +21,7 @@ Converts the `String`’s content to a given encoding and stores them in a buffe
 func getCString(_ buffer: inout [CChar], maxLength: Int, encoding: String.Encoding) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: Will store a maximum of `min(buffer.count, maxLength)` bytes.
 

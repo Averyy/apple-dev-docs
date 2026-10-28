@@ -17,7 +17,7 @@ Log a message at the ‘warning’ log level with the source that you provide.
 func warning(_ message: @autoclosure () -> Logger.Message, error: @autoclosure () -> (any Error)? = nil, metadata: @autoclosure () -> Logger.Metadata? = nil, source: @autoclosure () -> String? = nil, file: String = #fileID, function: String = #function, line: UInt = #line)
 ```
 
-#### Discussion
+## Discussion
 
 If [`Logger.Level.warning`](./level/warning.md) is at least as severe as this logger’s [`logLevel`](./loglevel.md) the system logs the message; otherwise nothing will happen.
 

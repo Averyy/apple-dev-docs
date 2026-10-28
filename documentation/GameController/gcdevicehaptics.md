@@ -24,7 +24,7 @@ class GCDeviceHaptics
 @interface GCDeviceHaptics : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use this class to create a haptic engine with a specified locality. Any patterns you send to that engine play on the specified actuators.
 

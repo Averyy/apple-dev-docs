@@ -23,7 +23,7 @@ static var suspending: SuspendingClock { get }
 
 Available when `Self` is `SuspendingClock`.
 
-#### Discussion
+## Discussion
 
 ```swift
   try await Task.sleep(until: .now + .seconds(3), clock: .suspending)

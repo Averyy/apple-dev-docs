@@ -15,7 +15,7 @@ The top-level container that defines a campaign’s promoted object, billing, sc
 object Campaign
 ```
 
-#### Discussion
+## Discussion
 
 A `Campaign` is the top-level advertising container that defines the promoted object, billing model, scheduling, and geographic targeting for a set of ad groups. Each campaign belongs to a single ad account and promotes either an App Store app (`APPSTORE_APP`) or a brand (`BUSINESS_BRAND`). The `billingEvent`, `promotedObjectType`, and `promotedObjectId` fields stay fixed after creation. To change any of them, create a new campaign.
 
@@ -25,7 +25,7 @@ A required `dailyBudget` cap controls the campaign’s budget and limits daily s
 
 Fields you can filter and sort on when querying campaigns are listed in [`Query Campaigns`](./post-campaigns-query.md). For the complete list of required and optional fields at creation, see [`CampaignCreate`](./campaigncreate.md). For the fields that you can change after creation, see [`CampaignUpdate`](./campaignupdate.md).
 
-##### Example
+### Example
 
 ```json
 {

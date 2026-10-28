@@ -24,11 +24,11 @@ class func morphologyRectangleMaximum() -> any CIFilter & CIMorphologyRectangleM
 + (CIFilter<CIMorphologyRectangleMaximum> *) morphologyRectangleMaximumFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The blurred image.
 
-#### Discussion
+## Discussion
 
 This method applies the morphology rectangle maximum filter to an image. The effect targets a rectangular section of the image, calculating the median color values to find colors that make up more than half the working area. Using this calculation, the effect enlarges the pixels with contrasting colors to take up more of the working area. The effect is then repeated throughout the image.
 

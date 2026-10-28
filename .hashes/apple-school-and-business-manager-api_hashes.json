@@ -30,8 +30,12 @@
       "applebusinessapi": {},
       "appleschoolmanagerapi": {}
     },
+    "gone_links": [
+      "https://developer.apple.com/documentation/apple-school-and-business-manager-api/implementing-oauth-for-the-apple-school-and-business-manager-api",
+      "https://developer.apple.com/documentation/appleschoolmanagerapi/get-all-apple-care-coverage-for-an-orgdevice"
+    ],
     "render": {
-      "version": 3
+      "version": 4
     },
     "total_pages": 6
   }

@@ -19,7 +19,7 @@ var accessibilityDisplayShouldDifferentiateWithoutColor: Bool { get }
 @property (readonly) BOOL accessibilityDisplayShouldDifferentiateWithoutColor;
 ```
 
-#### Discussion
+## Discussion
 
 If this property is [`true`](../../Swift/true.md), the user interface avoids conveying information using color alone. Instead, use shapes or glyphs to convey important information.
 

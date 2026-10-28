@@ -21,11 +21,11 @@ Returns the value with lesser magnitude.
 static func minimumMagnitude(_ x: Self, _ y: Self) -> Self
 ```
 
-#### Return Value
+## Return Value
 
 Whichever of `x` or `y` has lesser magnitude, or whichever is a number if the other is NaN.
 
-#### Discussion
+## Discussion
 
 This method returns the value with lesser magnitude of the two given values, preserving order and eliminating NaN when possible. For two values `x` and `y`, the result of `minimumMagnitude(x, y)` is `x` if `x.magnitude <= y.magnitude`, `y` if `y.magnitude < x.magnitude`, or whichever of `x` or `y` is a number if the other is a quiet NaN. If both `x` and `y` are NaN, or either `x` or `y` is a signaling NaN, the result is NaN.
 

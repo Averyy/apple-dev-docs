@@ -27,7 +27,7 @@ var restrictToAutomatch: Bool { get set }
 @property (assign) BOOL restrictToAutomatch;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to match the local player only with players who are also actively looking for a match. If [`true`](../../Swift/true.md), the local player can’t invite contacts, friends, or nearby players. The default value is [`false`](../../Swift/false.md).
 

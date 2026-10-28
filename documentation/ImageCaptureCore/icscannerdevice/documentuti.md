@@ -19,7 +19,7 @@ var documentUTI: String { get set }
 @property (copy) NSString * documentUTI;
 ```
 
-#### Discussion
+## Discussion
 
 Supported uniform type identifiers are `kUTTypeJPEG`, `kUTTypeJPEG2000`, `kUTTypeTIFF`, and `kUTTypePNG`.
 

@@ -17,7 +17,7 @@ Represents a binary large object of raw data.
 interface Blob
 ```
 
-#### Overview
+## Overview
 
 This class is provided for the Node.js platform and is a result for several methods in `PromisesApi`.
 

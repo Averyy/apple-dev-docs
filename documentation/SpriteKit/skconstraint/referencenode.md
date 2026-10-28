@@ -25,7 +25,7 @@ var referenceNode: SKNode? { get set }
 @property (nonatomic, retain, nullable) SKNode * referenceNode;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`, meaning that the coordinate system of the node’s parent is used to apply the constraint. If another node is specified, all positions are converted into this node’s coordinate system before the constraint is applied.
 

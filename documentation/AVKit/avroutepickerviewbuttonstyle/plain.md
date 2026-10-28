@@ -19,7 +19,7 @@ case plain
 AVRoutePickerViewButtonStylePlain
 ```
 
-#### Discussion
+## Discussion
 
 Use this style to set the button to match the system style, except without a blurred background view.
 

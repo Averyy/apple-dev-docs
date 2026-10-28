@@ -21,11 +21,11 @@ Converts a posted notification into this asynchronous message type for any obser
 static func makeMessage(_ notification: Notification) -> Self?
 ```
 
-#### Return Value
+## Return Value
 
 The converted `AsyncMessage`, or `nil` if conversion is not possible.
 
-#### Discussion
+## Discussion
 
 To implement this method in your own `AsyncMessage` conformance, retrieve values from the [`Notification`](../../notification.md)’s [`userInfo`](../../notification/userinfo.md) and set them as properties on the message.
 

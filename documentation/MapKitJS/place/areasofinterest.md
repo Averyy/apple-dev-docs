@@ -15,7 +15,7 @@ Common names of the area in which the place resides.
 areasOfInterest: string[] | null;
 ```
 
-#### Discussion
+## Discussion
 
 For example, the [`areasOfInterest`](./areasofinterest.md) for a specific location in Golden Gate Park in San Francisco, California, are `["Lindley Meadow", "Golden Gate Park"]`.
 

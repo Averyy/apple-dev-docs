@@ -24,7 +24,7 @@ optional func player(_ player: GKPlayer, didRequestMatchWithRecipients recipient
 - (void) player:(GKPlayer *) player didRequestMatchWithRecipients:(NSArray<GKPlayer *> *) recipientPlayers;
 ```
 
-#### Discussion
+## Discussion
 
 When GameKit calls this method, Game Center starts the matchmaking process.
 

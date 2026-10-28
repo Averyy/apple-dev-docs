@@ -27,7 +27,7 @@ class func propertyListFromData(_ data: Data, mutabilityOption opt: PropertyList
 + (id) propertyListFromData:(NSData *) data mutabilityOption:(NSPropertyListMutabilityOptions) opt format:(NSPropertyListFormat *) format errorDescription:(NSString **) errorString;
 ```
 
-#### Return Value
+## Return Value
 
 A property list object corresponding to the representation in `data`. If data is not in a supported format, returns `nil`.
 

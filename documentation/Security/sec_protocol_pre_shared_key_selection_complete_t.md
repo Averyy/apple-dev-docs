@@ -23,7 +23,7 @@ typealias sec_protocol_pre_shared_key_selection_complete_t = (dispatch_data_t?) 
 typedef void (^)(NSObject<OS_dispatch_data> *) sec_protocol_pre_shared_key_selection_complete_t;
 ```
 
-#### Discussion
+## Discussion
 
 Block to be invoked when a PSK selection event is complete and a PSK identity is chosen.
 

@@ -21,11 +21,11 @@ Returns the timezone identifier.
 static func identifier(_ width: Date.FormatStyle.Symbol.TimeZone.Width) -> Date.FormatStyle.Symbol.TimeZone
 ```
 
-#### Return Value
+## Return Value
 
 A timezone format style appropriate for the locale and specified width.
 
-#### Discussion
+## Discussion
 
 For example, `uslax` ([`Date.FormatStyle.Symbol.TimeZone.Width.short`](./width/short.md)) or `America/Los_Angeles` ([`Date.FormatStyle.Symbol.TimeZone.Width.long`](./width/long.md)).
 

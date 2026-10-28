@@ -26,11 +26,11 @@ func tracks(withMediaType mediaType: AVMediaType) -> [AVAssetTrack]
 - (NSArray<AVAssetTrack *> *) tracksWithMediaType:(AVMediaType) mediaType;
 ```
 
-#### Return Value
+## Return Value
 
 An array of tracks, which is empty if there are no tracks with the media type.
 
-#### Discussion
+## Discussion
 
 \You can call this method without blocking the current thread when the data in the [`tracks`](./tracks.md) property is already loaded.
 

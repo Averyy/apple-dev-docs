@@ -19,7 +19,7 @@ case resignedFrontmost
 WKExtendedRuntimeSessionInvalidationReasonResignedFrontmost
 ```
 
-#### Discussion
+## Discussion
 
 If the session type doesn’t grant background execution time, the session stops as soon as the app loses its frontmost app status. Users can dismiss the frontmost app by pressing the Digital Crown, tapping a notification, or launching another app. For more information, see `Understand Frontmost App State`.
 

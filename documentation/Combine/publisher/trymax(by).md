@@ -21,11 +21,11 @@ Publishes the maximum value received from the upstream publisher, using the prov
 func tryMax(by areInIncreasingOrder: @escaping (Self.Output, Self.Output) throws -> Bool) -> Publishers.TryComparison<Self>
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that publishes the maximum value received from the upstream publisher, after the upstream publisher finishes.
 
-#### Discussion
+## Discussion
 
 Use [`tryMax(by:)`](./trymax%28by%29.md) to determine the maximum value of elements received from the upstream publisher using an error-throwing closure you specify.
 

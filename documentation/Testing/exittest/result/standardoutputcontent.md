@@ -16,7 +16,7 @@ All bytes written to the standard output stream of the exit test before it exite
 var standardOutputContent: [UInt8]
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property may contain any arbitrary sequence of bytes, including sequences that are not valid UTF-8 and cannot be decoded by [String.init(cString:)](../../../Swift/string/init%28cstring%29-6kr8s.md). Consider using [String.init(validating:as:)](../../../Swift/string/init%28validating,as%29-84qr9.md) instead.
 

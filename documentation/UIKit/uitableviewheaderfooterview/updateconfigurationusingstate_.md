@@ -19,7 +19,7 @@ Updates the view’s configuration using the current state.
 - (void) updateConfigurationUsingState:(UIViewConfigurationState *) state;
 ```
 
-#### Discussion
+## Discussion
 
 Avoid calling this method directly. Instead, use [`setNeedsUpdateConfiguration()`](./setneedsupdateconfiguration%28%29.md) to request an update.
 

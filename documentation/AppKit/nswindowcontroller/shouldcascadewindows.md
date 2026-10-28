@@ -19,7 +19,7 @@ var shouldCascadeWindows: Bool { get set }
 @property BOOL shouldCascadeWindows;
 ```
 
-#### Discussion
+## Discussion
 
 Cascading in relation to other document windows means having a slightly offset location so that the title bars of previously displayed windows are still visible. The value of this property is [`true`](../../Swift/true.md) if the window will cascade in relation to other document windows, [`false`](../../Swift/false.md) otherwise. The default value is [`true`](../../Swift/true.md).
 

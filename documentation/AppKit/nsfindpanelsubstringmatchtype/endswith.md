@@ -17,7 +17,7 @@ case endsWith
 NSFindPanelSubstringMatchTypeEndsWith
 ```
 
-#### Discussion
+## Discussion
 
 Finds a word ending with the search string.
 

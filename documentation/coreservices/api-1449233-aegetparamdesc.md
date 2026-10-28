@@ -19,17 +19,17 @@ func AEGetParamDesc(_ theAppleEvent: UnsafePointer<AppleEvent>!, _ theAEKeyword:
 OSErr AEGetParamDesc(const AppleEvent *theAppleEvent, AEKeyword theAEKeyword, DescType desiredType, AEDesc *result);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
  You typically call `AEGetParamDesc` to get a descriptor for an Apple event parameter to pass on to another Apple Event Manager routine. To get Apple event parameter data for your application to use directly, call [`AEGetParamPtr(_:_:_:_:_:_:_:)`](./api-1444069-aegetparamptr.md).
 
 If the actual parameter you are getting with `AEGetParamDesc` is a record, you can only request it as a `typeAERecord`, `typeAEList`, or `typeWildcard`. For any other type, `AEGetParamDesc` will return `errAECoercionFail`.
 
-##### Version-Notes
+### Version-Notes
 
 Thread safe starting in OS X v10.2.
 

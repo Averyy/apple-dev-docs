@@ -21,7 +21,7 @@ An anchor to the frame of the chart’s plot container, or `nil` if there is no 
 var plotContainerFrame: Anchor<CGRect>? { get }
 ```
 
-#### Discussion
+## Discussion
 
 The plot is the area between the x and y axes, not including the axes themselves. If the chart is scrollable, the plot container frame only includes the visible portion of the plot. Otherwise, it is the same as [`plotFrame`](./plotframe.md).
 

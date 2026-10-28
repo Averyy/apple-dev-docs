@@ -20,7 +20,7 @@ struct Options
 enum NSXMLNodeOptions : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 The options with “Preserve” in their names are applicable only when external sources of XML are parsed; they have no effect on node objects that are programmatically created. Other options are used in initialization and output methods of `NSXMLDocument`; see the [`XMLDocument`](../xmldocument.md) reference documentation for details.
 

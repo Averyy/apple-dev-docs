@@ -21,7 +21,7 @@ class var shared: CPNowPlayingTemplate { get }
 @property (class, nonatomic, strong, readonly) CPNowPlayingTemplate * sharedTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 You do not create instances of `CPNowPlayingTemplate` directly. Instead, use this property to access the shared Now Playing template that CarPlay provides, and then configure its properties accordingly.
 

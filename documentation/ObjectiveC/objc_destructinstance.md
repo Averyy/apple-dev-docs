@@ -21,7 +21,7 @@ Destroys an instance of a class without freeing memory and removes any of its as
 extern void *objc_destructInstance(id obj);
 ```
 
-#### Discussion
+## Discussion
 
 This method does nothing if `obj` is `nil`.
 

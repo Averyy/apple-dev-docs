@@ -21,7 +21,7 @@ Sets the double-precision coefficients of the specified double-precision, multic
 extern void vDSP_biquadm_SetCoefficientsDoubleD(vDSP_biquadm_SetupD __setup, const double *__coeffs, vDSP_Length __start_sec, vDSP_Length __start_chn, vDSP_Length __nsec, vDSP_Length __nchn);
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to update sections of coefficient values of a biquadratic setup structure. This function doesn’t allocate new memory. The range that you specify using `__start_sec` and `__nsec` must be within the number of sections that you define in the create setup function.
 

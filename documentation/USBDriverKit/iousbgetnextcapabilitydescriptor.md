@@ -15,11 +15,11 @@ Gets the next device capability descriptor in a BOS descriptor.
 const IOUSBDeviceCapabilityDescriptorHeader *IOUSBGetNextCapabilityDescriptor(const IOUSBBOSDescriptor *bosDescriptor, const IOUSBDeviceCapabilityDescriptorHeader *currentDescriptor);
 ```
 
-#### Return Value
+## Return Value
 
 The device capability descriptor pointer, or `NULL` if no descriptor is available.
 
-#### Discussion
+## Discussion
 
 This method advances the current descriptor by its length, and validates that the new descriptor fits within the bounds of the BOS descriptor. Passing `NULL` for `currentDescriptor` returns the first descriptor after the BOS descriptor.
 

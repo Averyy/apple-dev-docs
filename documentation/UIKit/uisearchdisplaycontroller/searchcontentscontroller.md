@@ -23,7 +23,7 @@ var searchContentsController: UIViewController { get }
 @property (nonatomic, readonly) UIViewController * searchContentsController;
 ```
 
-#### Discussion
+## Discussion
 
 This is typically an instance of [`UITableViewController`](../uitableviewcontroller.md).
 

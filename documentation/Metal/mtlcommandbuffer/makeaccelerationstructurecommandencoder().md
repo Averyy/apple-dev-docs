@@ -25,7 +25,7 @@ func makeAccelerationStructureCommandEncoder() -> (any MTLAccelerationStructureC
 - (id<MTLAccelerationStructureCommandEncoder>) accelerationStructureCommandEncoder;
 ```
 
-#### Discussion
+## Discussion
 
 Use an [`MTLAccelerationStructureCommandEncoder`](../mtlaccelerationstructurecommandencoder.md) instance’s methods to set up a single ray-tracing pass.
 

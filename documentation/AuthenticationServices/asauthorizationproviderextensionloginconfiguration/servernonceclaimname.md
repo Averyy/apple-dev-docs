@@ -27,7 +27,7 @@ var serverNonceClaimName: String { get set }
 - [Creating an encrypted embedded assertion](../creating-an-encrypted-embedded-assertion.md)
 - [Creating and validating a login request](../creating-and-validating-a-login-request.md)
 
-#### Discussion
+## Discussion
 
 The default value is `request_nonce`.
 

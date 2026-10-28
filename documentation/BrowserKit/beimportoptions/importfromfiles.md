@@ -24,7 +24,7 @@ var importFromFiles: Bool { get }
 
 - [Transferring browsing data to another browser](../transferring-browsing-data-to-another-browser.md)
 
-#### Discussion
+## Discussion
 
 If the value of this property is `false`, the system retrieves browsing data from the other browser and provides the data to your app by invoking your handler for the [`BEBrowserDataImportManager`](../bebrowserdataimportmanager.md) class’s [`userActivityType`](../bebrowserdataimportmanager/useractivitytype-35jes.md).
 

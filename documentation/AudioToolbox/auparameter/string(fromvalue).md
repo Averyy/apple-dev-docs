@@ -24,11 +24,11 @@ func string(fromValue value: UnsafePointer<AUValue>?) -> String
 - (NSString *) stringFromValue:(const AUValue *) value;
 ```
 
-#### Return Value
+## Return Value
 
 The string representation of a parameter value.
 
-#### Discussion
+## Discussion
 
 Pass `nil` into the `value` parameter to use the current value.
 

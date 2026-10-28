@@ -5,7 +5,7 @@
 
 Add branding or ads to a playlist.
 
-#### Overview
+## Overview
 
 Often you want to deliver a series of movies with some sort of branding (advertisement) displayed in front of each one to let the user know that they originate from your site. One way to do this is to simply merge the ad with each movie. However, if you have hundreds of movies, you’ll have to redo a lot of encoding, and you’ll be duplicating the ad with each movie.
 
@@ -13,7 +13,7 @@ You could deliver the ad as a separate movie that plays first, and then play the
 
 The solution is to let the client know a change is coming, by using the `EXT-X-DISCONTINUITY` tag. This tag informs the client of a change that’s coming to the streaming media so the client can prepare for the change ahead of time.
 
-##### Example
+### Example
 
 The following example shows a stream that uses the `EXT-X-DISCONTINUITY` tag to play movies that are preceded by an 18-second ad (segments `ad0.ts` and `ad1.ts`):
 

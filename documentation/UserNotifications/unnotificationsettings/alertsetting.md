@@ -32,7 +32,7 @@ var alertSetting: UNNotificationSetting { get }
 @property (atomic, readonly) UNNotificationSetting alertSetting;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`UNNotificationSetting.enabled`](../unnotificationsetting/enabled.md), the app is authorized to display alerts. Authorization does not guarantee that alerts always appear on the user’s screen. When a device is unlocked, the [`alertStyle`](./alertstyle.md) property determines the presentation style for the alert, which can include not displaying the alert at all.
 

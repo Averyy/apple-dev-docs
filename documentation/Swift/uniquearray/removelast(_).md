@@ -21,7 +21,7 @@ Removes and discards the specified number of elements from the end of the array.
 mutating func removeLast(_ k: Int)
 ```
 
-#### Discussion
+## Discussion
 
 Attempting to remove more elements than exist in the array triggers a runtime error.
 

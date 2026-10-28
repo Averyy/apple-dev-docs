@@ -25,7 +25,7 @@ init?(suiteName suitename: String?)
 - (instancetype) initWithSuiteName:(NSString *) suitename;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to create a defaults object that reads settings from the custom domain you specify. For example, you might use this method to access settings you share among multiple apps or between your app and an app extension. The returned object writes settings to the domain you specified. Every instance of ``UserDefaults shares the contents of the argument and registration domains.
 

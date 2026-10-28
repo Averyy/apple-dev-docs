@@ -14,7 +14,7 @@ The per-channel sign of the input value: -1 for negative, +1 for positive, 0 for
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Sign (float)**:
 

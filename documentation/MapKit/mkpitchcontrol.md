@@ -28,7 +28,7 @@ class MKPitchControl
 @interface MKPitchControl : NSView
 ```
 
-#### Overview
+## Overview
 
 Use this class when you want to incorporate a standard, fixed-size pitch control into your own view hierarchy. A pitch control allows the user to change the pitch angle of its associated map view.
 

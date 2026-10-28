@@ -29,17 +29,17 @@ class HKQuantity
 - [Defining and converting units and quantities](./defining-and-converting-units-and-quantities.md)
 - [Saving data to HealthKit](./saving-data-to-healthkit.md)
 
-#### Overview
+## Overview
 
 HealthKit uses quantity objects to store numerical data. When you create a quantity, you provide both the quantity’s value and unit.
 
 Quantities are immutable objects: Their values are set when the object is first created and cannot change.
 
-##### Converting Units
+### Converting Units
 
 You can request the value from a quantity object in any compatible units. For example,  if you create a length quantity in feet, you can then request the length in meters. The quantity object automatically converts its value to the requested units.
 
-##### Using Quantities
+### Using Quantities
 
 As with many HealthKit classes, don’t subclass the [`HKQuantity`](./hkquantity.md) class. To help promote sharing data between apps, [`HKQuantity`](./hkquantity.md) objects use only the units defined by the [`HKUnit`](./hkunit.md) class.
 

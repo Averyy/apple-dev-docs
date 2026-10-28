@@ -23,7 +23,7 @@ var isContextMenuInteractionEnabled: Bool { get set }
 @property (nonatomic, assign, readwrite, getter=isContextMenuInteractionEnabled) BOOL contextMenuInteractionEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md).
 

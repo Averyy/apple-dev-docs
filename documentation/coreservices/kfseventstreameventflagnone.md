@@ -14,7 +14,7 @@
 var kFSEventStreamEventFlagNone: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 There was some change in the directory at the specific path supplied in this event.
 

@@ -23,7 +23,7 @@ var onDemandRules: [NEOnDemandRule]? { get set }
 @property (copy, nullable) NSArray<NEOnDemandRule *> * onDemandRules;
 ```
 
-#### Discussion
+## Discussion
 
 An On Demand rule with the action [`NEOnDemandRuleAction.connect`](../neondemandruleaction/connect.md) defines a network on which the DNS settings apply. An On Demand rule with the action [`NEOnDemandRuleAction.disconnect`](../neondemandruleaction/disconnect.md) causes DNS settings to not apply. An On Demand rule with the action of [`NEOnDemandRuleAction.evaluateConnection`](../neondemandruleaction/evaluateconnection.md) can be used to enable the DNS settings on a network with excluded domains, as specified using a [`NEEvaluateConnectionRuleAction.neverConnect`](../neevaluateconnectionruleaction/neverconnect.md) rule.
 

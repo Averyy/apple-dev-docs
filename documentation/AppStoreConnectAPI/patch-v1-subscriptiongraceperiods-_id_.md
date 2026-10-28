@@ -13,9 +13,9 @@ Change the Boolean value representing the billing grace period opt-in status.
 
 - [Managing auto-renewable subscriptions](./managing-auto-renewable-subscriptions.md)
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

@@ -13,7 +13,7 @@ IOByteCount ( *GetControlBufferLength)(
    IOStreamBufferID bufferID );
 ```
 
-#### Return Value
+## Return Value
 
 The length in bytes of the control buffer, or 0 if there is no control buffer.
 

@@ -21,7 +21,7 @@ Appends a localized description of a color for accessibility to a string interpo
 mutating func appendInterpolation(accessibilityName color: Color)
 ```
 
-#### Discussion
+## Discussion
 
 Don’t call this method directly; it’s used by the compiler when interpreting string interpolations.
 

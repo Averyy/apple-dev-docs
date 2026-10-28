@@ -16,7 +16,7 @@ A key for specifying the version number of the device.
 #define kIOHIDVersionNumberKey
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is a number representing the device's version information.
 

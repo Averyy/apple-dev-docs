@@ -16,7 +16,7 @@ An assessment that communicates that a learner has successfully completed a task
 case pass(message: String?)
 ```
 
-#### Discussion
+## Discussion
 
 The `message` associated value can contain markup. For more information on markup, see [Markup Formatting Reference](https://developer.apple.com/library/archive/documentation/Xcode/Reference/xcode_markup_formatting_ref/index.html#//apple_ref/doc/uid/TP40016497). The example below shows a popover with the message “**Great** job!”
 

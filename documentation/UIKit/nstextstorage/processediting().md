@@ -23,7 +23,7 @@ func processEditing()
 - (void) processEditing;
 ```
 
-#### Discussion
+## Discussion
 
 This method is automatically invoked in response to an [`edited(_:range:changeInLength:)`](./edited%28_,range,changeinlength%29.md) message or an [`endEditing()`](../../Foundation/nsmutableattributedstring/endediting%28%29.md) message if edits were made within the scope of a [`beginEditing()`](../../Foundation/nsmutableattributedstring/beginediting%28%29.md) block. You should never need to invoke it directly.
 

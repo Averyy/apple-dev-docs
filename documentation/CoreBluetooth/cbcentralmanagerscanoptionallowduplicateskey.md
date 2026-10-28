@@ -25,7 +25,7 @@ let CBCentralManagerScanOptionAllowDuplicatesKey: String
 extern NSString * const CBCentralManagerScanOptionAllowDuplicatesKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSNumber`](../Foundation/nsnumber.md) object. If [`true`](../Swift/true.md), the central disables filtering and generates a discovery event each time it receives an advertising packet from the peripheral. If [`false`](../Swift/false.md) (the default), the central coalesces multiple discoveries of the same peripheral into a single discovery event.
 

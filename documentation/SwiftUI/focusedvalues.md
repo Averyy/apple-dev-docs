@@ -21,7 +21,7 @@ A collection of state exported by the focused scene or view and its ancestors.
 struct FocusedValues
 ```
 
-#### Creating Custom Focused Values
+## Creating Custom Focused Values
 
 Use the `Entry` macro to create custom focused values by extending `FocusedValues` with new properties:
 
@@ -33,7 +33,7 @@ extension FocusedValues {
 
 The `Entry` macro automatically generates the underlying key type and provides the getter and setter for the focused value. Since the default value for focused values is always `nil`, all focused values must be optional.
 
-##### Publishing Values in Your Views
+### Publishing Values in Your Views
 
 Views publish focused values using the [`focusedValue(_:_:)`](./view/focusedvalue%28_,_%29.md) modifier:
 
@@ -61,7 +61,7 @@ struct DocumentViewer: View {
 }
 ```
 
-##### Accessing the current focused value
+### Accessing the current focused value
 
 Use the [`FocusedValue`](./focusedvalue.md) property wrapper in your [`App`](./app.md) or [`View`](./view.md) to read the current value in the `body`. The [`FocusedBinding`](./focusedbinding.md) can be used as a convenient way to access the `wrappedValue` if the value type of the focused value is a `Binding`:
 

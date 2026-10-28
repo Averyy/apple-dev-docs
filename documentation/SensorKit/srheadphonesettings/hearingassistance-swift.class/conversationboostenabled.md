@@ -19,7 +19,7 @@ var conversationBoostEnabled: SRHeadphoneSettings.SettingEnablement { get }
 @property (nonatomic, assign, readonly) SRHeadphoneSettingsSettingEnablement conversationBoostEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 In noisy environments, automatically focuses source on the person speaking to you.
 

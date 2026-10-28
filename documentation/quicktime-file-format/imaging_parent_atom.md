@@ -8,7 +8,7 @@ An atom that is the parent atom of one or more node-specific imaging atoms.
 
 > **Deprecated**: VR Media is deprecated in the QuickTime file format. The information that follows documents existing content containing VR Media and should not be used for new development.
 
-#### Overview
+## Overview
 
 The imaging parent atom is the parent atom of one or more node-specific imaging atoms. Its atom type is `kQTVRImagingParentAtomType` (`'imgp'`). Only panoramas have an imaging atom defined.
 

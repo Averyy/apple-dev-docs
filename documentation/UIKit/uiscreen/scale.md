@@ -22,7 +22,7 @@ var scale: CGFloat { get }
 @property (nonatomic, readonly) CGFloat scale;
 ```
 
-#### Discussion
+## Discussion
 
 This value reflects the scale factor needed to convert from the default logical coordinate space into the device coordinate space of this screen. The default logical coordinate space is measured using points. For Retina displays, the scale factor may be `3.0` or `2.0` and one point can represented by nine or four pixels, respectively. For standard-resolution displays, the scale factor is `1.0` and one point equals one pixel.
 

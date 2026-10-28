@@ -19,7 +19,7 @@ static let gamma: NSBitmapImageRep.PropertyKey
 extern NSBitmapImageRepPropertyKey NSImageGamma;
 ```
 
-#### Discussion
+## Discussion
 
 Used only for PNG files. The gamma values is a floating-point number between 0.0 and 1.0, with 0.0 being black and 1.0 being the maximum color. It’s set when reading in and used when writing out.
 

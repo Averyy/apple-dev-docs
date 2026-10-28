@@ -15,10 +15,10 @@ Creates an optional property that reads its value from a labeled option, parsing
 
 ```swift
 @preconcurrency
-init<T>(wrappedValue: _OptionalNilComparisonType, name: NameSpecification = .long, defaultAsFlag: T, parsing parsingStrategy: DefaultAsFlagParsingStrategy = .scanningForValue, help: ArgumentHelp? = nil, completion: CompletionKind? = nil, transform: @escaping @Sendable (String) throws -> T) where Value == T?
+init<T>(wrappedValue: _OptionalNilComparisonType, name: NameSpecification = .long, defaultAsFlag: T, parsing parsingStrategy: DefaultAsFlagParsingStrategy = .scanningForValue, help: ArgumentHelp? = nil, completion: CompletionKind? = nil, transform: @Sendable @escaping (String) throws -> T) where Value == T?
 ```
 
-#### Discussion
+## Discussion
 
 This initializer allows providing a `defaultAsFlag` value that is used when the flag is present but no value follows it:
 

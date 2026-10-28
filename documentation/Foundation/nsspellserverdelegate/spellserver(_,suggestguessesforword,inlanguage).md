@@ -20,7 +20,7 @@ optional func spellServer(_ sender: NSSpellServer, suggestGuessesForWord word: S
 - (NSArray<NSString *> *) spellServer:(NSSpellServer *) sender suggestGuessesForWord:(NSString *) word inLanguage:(NSString *) language;
 ```
 
-#### Return Value
+## Return Value
 
 An array of `NSString` objects indicating possible correct spellings.
 

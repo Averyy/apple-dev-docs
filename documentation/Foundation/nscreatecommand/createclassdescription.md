@@ -20,7 +20,7 @@ var createClassDescription: NSScriptClassDescription { get }
 @property (retain, readonly) NSScriptClassDescription * createClassDescription;
 ```
 
-#### Return Value
+## Return Value
 
 The class description for the class that is to be created.
 

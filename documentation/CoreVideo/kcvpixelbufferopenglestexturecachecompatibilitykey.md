@@ -22,7 +22,7 @@ let kCVPixelBufferOpenGLESTextureCacheCompatibilityKey: CFString
 extern CFStringRef const kCVPixelBufferOpenGLESTextureCacheCompatibilityKey;
 ```
 
-#### Discussion
+## Discussion
 
 This key instructs the graphics subsystem to perform YCbCr-to-RGB conversions for the texture-cache data in a GPU shader, instead of performing them natively in OpenGL ES.
 

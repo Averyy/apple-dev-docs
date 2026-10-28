@@ -23,7 +23,7 @@ A SwiftUI view that displays other devices on the network, and creates an encryp
 
 - [Connecting a tvOS app to other devices over the local network](./connecting-a-tvos-app-to-other-devices-over-the-local-network.md)
 
-#### Overview
+## Overview
 
 Always display the picker as a full-screen, modal view. If the user selects a device, the system calls the closure you passed as the `onSelect` parameter. If the user cancels the picker, it silently closes.
 

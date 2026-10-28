@@ -24,7 +24,7 @@ var timeToReset: Double { get }
 @property (nonatomic, readonly) double timeToReset;
 ```
 
-#### Discussion
+## Discussion
 
 This property determines the speed of deactivation when the app calls [`deactivate()`](./deactivate%28%29.md). The framework scales the value by [`unitsPerSecond`](../phaseengine/unitspersecond.md).
 

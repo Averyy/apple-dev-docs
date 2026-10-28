@@ -23,11 +23,11 @@ static func url(scheme: URL.ParseStrategy.ComponentParseStrategy<String> = .requ
 
 Available when `Self` is `URL.ParseStrategy`.
 
-#### Return Value
+## Return Value
 
 A `RegexComponent` that matches a URL.
 
-#### Discussion
+## Discussion
 
 All the parameters to this method take a [`URL.ParseStrategy.ComponentParseStrategy`](../../Foundation/url/parsestrategy/componentparsestrategy.md) value to configure the matching behavior for one component of the URL. The three possible values are:
 

@@ -25,7 +25,7 @@ func CGPDFArrayGetName(_ array: CGPDFArrayRef, _ index: Int, _ value: UnsafeMuta
 extern bool CGPDFArrayGetName(CGPDFArrayRef array, size_t index, const char **value);
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`true`](../Swift/true.md) if there is an array of characters at the specified index, otherwise [`false`](../Swift/false.md).
 

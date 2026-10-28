@@ -20,7 +20,7 @@ Creates a new tool-call expectations evaluator.
 init(allPass: Metric, percentagePass: Metric)
 ```
 
-#### Discussion
+## Discussion
 
 The evaluator evaluates expectations once and produces two columns: a strict score (pass or fail) and a partial score (proportion matched).
 

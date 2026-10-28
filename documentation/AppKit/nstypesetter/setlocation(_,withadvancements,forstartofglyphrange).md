@@ -19,7 +19,7 @@ func setLocation(_ location: NSPoint, withAdvancements advancements: UnsafePoint
 - (void) setLocation:(NSPoint) location withAdvancements:(const CGFloat *) advancements forStartOfGlyphRange:(NSRange) glyphRange;
 ```
 
-#### Discussion
+## Discussion
 
 Setting the location for a series of glyphs implies that the glyphs preceding it can’t be included in a single `show` operation.
 

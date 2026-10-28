@@ -15,11 +15,11 @@ Represents assets organized by device type with fallback device information.
 object DeviceAssetGroup
 ```
 
-#### Discussion
+## Discussion
 
 The `DeviceAssetGroup` object is a value type within the `assetsByDevice` map on `ProductPageLocaleDetails` and `AppLocaleDetails`, keyed by specific device type string (for example, `iphone_6_5`, `iphone_6_7`, `ipadPro`).
 
-##### Example
+### Example
 
 ```json
 {

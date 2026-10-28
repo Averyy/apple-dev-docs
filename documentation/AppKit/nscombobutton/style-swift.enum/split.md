@@ -19,7 +19,7 @@ case split
 NSComboButtonStyleSplit
 ```
 
-#### Discussion
+## Discussion
 
 This style displays a system-standard menu control. When this style is active, someone must click the menu control to display the list of alternate actions.
 

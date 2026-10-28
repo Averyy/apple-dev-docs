@@ -24,7 +24,7 @@ case squared
 PHASECurveTypeSquared
 ```
 
-#### Discussion
+## Discussion
 
 The function `y` `=` `x^2` shapes this curve.
 

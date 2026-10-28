@@ -23,7 +23,7 @@ var containsStart: Bool { get }
 @property (nonatomic, readonly) BOOL containsStart;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is used to determine the placement of the selection handles in bidirectional text. It provides a clue to the system about whether the start of the selection is in the specified rectangle.
 

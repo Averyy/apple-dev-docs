@@ -29,13 +29,13 @@ class var shared: URLSession { get }
 
 - [Fetching website data into memory](../fetching-website-data-into-memory.md)
 
-#### Discussion
+## Discussion
 
 For basic requests, the [`URLSession`](../urlsession.md) class provides a shared singleton session object that gives you a reasonable default behavior for creating tasks. Use the shared session to fetch the contents of a URL to memory with just a few lines of code.
 
 Unlike the other session types, you don’t create the shared session; you merely access it by using this property directly. As a result, you don’t provide a delegate or a configuration object.
 
-##### Limitations of the shared session
+### Limitations of the shared session
 
 Because the shared session has neither a delegate nor a customizable configuration object, the shared session has important limitations:
 

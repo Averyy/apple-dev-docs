@@ -5,7 +5,7 @@
 
 Manage your Metal app’s memory usage by inspecting its resources.
 
-#### Overview
+## Overview
 
 The Memory viewer provides comprehensive information about your app’s memory usage in Metal. The Memory viewer’s top section presents a breakdown of memory by categories, and the bottom section displays a table of resources. In the table, you can inspect resources for their memory size, configuration, and other characteristics.
 
@@ -15,7 +15,7 @@ Metal apps create many resources, and those resources consume a lot of memory. F
 
 Additionally, when you create Metal resources, specifying their configuration precisely has a substantial effect on performance. The Metal debugger analyzes the configuration you provide and uses it to create the underlying GPU representation of a resource. For example, if you create a resource with a private storage mode, Metal can optimize the resource for GPU access, and doesn’t need to store data in a location or format directly accessible from the CPU.
 
-##### Examine the bar graphs
+### Examine the bar graphs
 
 The categories in the top section of the Memory viewer organize memory usage data and provide memory totals based on the following criteria:
 
@@ -28,7 +28,7 @@ Each bar graph consists of segments representing the largest resources that it t
 
 ![A screenshot of the Memory viewer’s bar graphs highlighting only texture resources. The texture that consumes the most memory is selected.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-mv-bar-graph@2x.png)
 
-##### Inspect the resources table
+### Inspect the resources table
 
 To improve how your app creates and manages resources, you need data about how it uses them. The Memory viewer provides information about the resources that are live in your Metal app during a capture.
 
@@ -88,13 +88,13 @@ For acceleration structures, you can add the following column:
 | --- | --- | --- |
 | Size | [`size`](../Metal/mtlaccelerationstructure/size.md) | The logical length, in bytes, of the acceleration structure. |
 
-##### Improve your Metal workload with Insights
+### Improve your Metal workload with Insights
 
 Click the Insights button in the bottom right corner to open a popover of recommendations for the resources.
 
 ![A screenshot of the Insights popover showing recommendations related to unused resources.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-mv-insights@2x.png)
 
-##### Limit your scope with filters
+### Limit your scope with filters
 
 Use the filter field at the bottom of the Memory viewer to adjust filtering criteria. Type filter terms into the field, and the resources table displays any resources with labels that match those filter terms.
 
@@ -102,7 +102,7 @@ You can also click the filter button to add filters for specific kinds of resour
 
 When there are two or more filter terms, you can click the filter button to choose whether to match any or all of the terms. For any filter term, you can click it to choose to include or exclude resources that match that term.
 
-##### Group and sort resources to detect patterns
+### Group and sort resources to detect patterns
 
 By default, the resources table shows all resources in a single list. You can click a column header to sort the table by that column in ascending or descending order. You can also group the resources by certain criteria.
 
@@ -117,13 +117,13 @@ Control-click an entry in the table to group the resources by any of the followi
 
 From this same context menu, you can also choose to sort by a specific criteria, which is equivalent to clicking a column heading for sorting.
 
-##### Get more information about a specific resource
+### Get more information about a specific resource
 
 You can also get more information about a specific resource by Control-clicking it and selecting Get Info.
 
 For example, for a texture, the additional information shows details specific to that texture, such as its pixel format and dimensions. To see the contents of the texture, double-click it.
 
-##### Export a memory report
+### Export a memory report
 
 To share the data in the Memory viewer, you can export it in the following ways:
 

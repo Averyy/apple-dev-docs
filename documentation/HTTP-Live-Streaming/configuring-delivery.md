@@ -5,11 +5,11 @@
 
 Format media URLs and origin domain access for HTTP Live Streaming (HLS) delivery to Apple Podcasts.
 
-#### Overview
+## Overview
 
 Apple Podcasts requests your media from multiple domains, so correctly formatted URLs and Cross-Origin Resource Sharing (CORS) headers ensure your streams resolve and play without errors.
 
-#### Structure media URLs for Apple Podcasts
+## Structure media URLs for Apple Podcasts
 
 Apple Podcasts supports multiple URL formats and redirection mechanisms:
 
@@ -17,7 +17,7 @@ Apple Podcasts supports multiple URL formats and redirection mechanisms:
 - **Prefix services**: Apple Podcasts recognizes and handles redirect services that use URL prefixes, such as link shorteners or analytics redirect services.
 - **HTTP redirects**: Apple Podcasts automatically follows standard HTTP redirect responses to resolve the final destination URL.
 
-#### Configure CORS for Apple domains
+## Configure CORS for Apple domains
 
 To support media playback on Apple sites, allow Cross-Origin Resource Sharing (CORS) from Apple-owned domains on your media hosts. You can configure your environment using either origin pattern matching or server-side origin validation.
 
@@ -31,7 +31,7 @@ Both configuration options have the following requirements:
 - Expose byte-range headers by returning `Access-Control-Expose-Headers: Content-Range, Content-Length` to enable media seeking.
 - Do not return `Access-Control-Allow-Credentials: true`, as playback doesn’t require it.
 
-##### Configure origin pattern matching
+### Configure origin pattern matching
 
 Use this approach if your CDN or cloud storage provider supports origin matching rules. If you’re using an origin storage service behind a CDN, configure CORS headers in one layer only (typically at the CDN) to prevent header conflicts or duplicate values.
 
@@ -42,7 +42,7 @@ Configure your platform’s allowed origin field using one of the following opti
 
 > **Note**: Never return `Access-Control-Allow-Origin: https://*.apple.com` as a literal header value. Browsers reject wildcard subdomains in HTTP responses.
 
-##### Configure server-side origin validation
+### Configure server-side origin validation
 
 If your hosting platform does not support origin pattern matching, or if you need application-level control, validate the incoming `Origin` header directly in server code:
 

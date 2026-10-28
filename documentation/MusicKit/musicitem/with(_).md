@@ -23,7 +23,7 @@ func with(_ properties: [PartialMusicAsyncProperty<Self>]) async throws -> Self
 
 Available when `Self` conforms to `MusicPropertyContainer` and `Decodable`.
 
-#### Discussion
+## Discussion
 
 This asynchronous method fetches a more complete representation of the receiver from Apple Music API over the network.
 

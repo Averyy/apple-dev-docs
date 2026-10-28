@@ -24,7 +24,7 @@ class CNContactFormatter
 @interface CNContactFormatter : NSFormatter
 ```
 
-#### Overview
+## Overview
 
 A `CNContactFormatter` object handles international ordering and delimiting for the contact name components. When formatting many contacts, create an instance of this class and use the instance methods; otherwise use the class methods.
 

@@ -25,7 +25,7 @@ let kCGImagePropertyIsFloat: CFString
 extern CFStringRef const kCGImagePropertyIsFloat;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md) if the image contains floating-point pixel samples.
 

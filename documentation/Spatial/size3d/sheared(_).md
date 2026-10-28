@@ -21,7 +21,7 @@ Returns a size that results from shearing over an axis by shear factors for the 
 func sheared(_ shear: AxisWithFactors) -> Size3D
 ```
 
-#### Return Value
+## Return Value
 
 The size that results from shearing over an axis by shear factors for the other two axes.
 

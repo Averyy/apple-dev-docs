@@ -24,7 +24,7 @@ var manufacturer: String { get }
 @property (nonatomic, readonly) NSString * manufacturer;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this property to identify capture devices by manufacturer. For all Apple devices, the value of this property is `Apple Inc.`
 

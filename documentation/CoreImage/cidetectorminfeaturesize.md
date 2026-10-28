@@ -24,7 +24,7 @@ let CIDetectorMinFeatureSize: String
 extern NSString * const CIDetectorMinFeatureSize;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an `NSNumber` object ranging from 0.0 through 1.0 that represents a fraction of the minor dimension of the image.
 

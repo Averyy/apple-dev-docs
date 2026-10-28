@@ -25,7 +25,7 @@ let kCMSampleBufferDroppedFrameReason_FrameWasLate: CFString
 extern CFStringRef const kCMSampleBufferDroppedFrameReason_FrameWasLate;
 ```
 
-#### Discussion
+## Discussion
 
 A video capture client has indicated         that late video frames should be dropped and the current frame is late.  This condition is typically        caused by the client’s processing taking too long.
 

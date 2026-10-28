@@ -9,7 +9,7 @@ Develop drivers for serial I/O devices connected to your Mac.
 **Availability**:
 - DriverKit 19.0+
 
-#### Overview
+## Overview
 
 The SerialDriverKit framework supports the development of drivers for devices that communicate using a serial interface. The framework lets you build drivers to support modem hardware or a universal asynchronous receiver/transmitter (UART). To create a driver that communicates serially with a USB device, use the [USBSerialDriverKit](../USBSerialDriverKit/USBSerialDriverKit.md) framework instead.
 

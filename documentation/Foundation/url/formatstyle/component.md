@@ -21,7 +21,7 @@ An enumeration of the components of a URL, for use in creating format style opti
 enum Component
 ```
 
-#### Overview
+## Overview
 
 You use this type with style-modifying methods like [`displayWhen(_:matches:)`](./componentdisplayoption/displaywhen%28_,matches%29.md) in [`URL.FormatStyle.ComponentDisplayOption`](./componentdisplayoption.md) and [`omitWhen(_:matches:)`](./hostdisplayoption/omitwhen%28_,matches%29.md) in [`URL.FormatStyle.HostDisplayOption`](./hostdisplayoption.md).
 

@@ -22,7 +22,7 @@ func isRouteActive(_ route: AVCustomDeviceRoute) -> Bool
 - (BOOL) isRouteActive:(AVCustomDeviceRoute *) route;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the route is in an active state; otherwise, [`false`](../../Swift/false.md).
 

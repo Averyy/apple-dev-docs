@@ -19,7 +19,7 @@ Generate a serialized data representation of the data model.
 func dataRepresentation() async throws -> Data
 ```
 
-#### Return Value
+## Return Value
 
 A new serialized data containing a representation of the paper.
 

@@ -20,11 +20,11 @@ func CGGetEventTapList(_ maxNumberOfTaps: UInt32, _ tapList: UnsafeMutablePointe
 extern CGError CGGetEventTapList(uint32_t maxNumberOfTaps, CGEventTapInformation *tapList, uint32_t *eventTapCount);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See the result codes described in [Quartz Display Services](./quartz-display-services.md).
 
-#### Discussion
+## Discussion
 
 Each call to this function has the side effect of resetting the minimum and maximum latency values in the `tapList` parameter to the corresponding average values. Values reported in these fields reflect the minimum and maximum values seen since the preceding call, or the instantiation of the tap. This allows a monitoring tool to evaluate the best and worst case latency over time and under various operating conditions.
 

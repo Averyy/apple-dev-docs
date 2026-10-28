@@ -13,11 +13,11 @@
 errno_t ifnet_set_link_mib_data(ifnet_t interface, void *mibData, u_int32_t mibLen);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Sets the mib link data. The ifnet_t will store the pointer you supply and copy mibLen bytes from the pointer whenever the sysctl for getting interface specific MIB data is used. Since the ifnet_t stores a pointer to your data instead of a copy, you may update the data at the address at any time.
 

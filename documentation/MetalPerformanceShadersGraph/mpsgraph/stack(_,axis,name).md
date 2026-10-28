@@ -24,11 +24,11 @@ func stack(_ inputTensors: [MPSGraphTensor], axis: Int, name: String?) -> MPSGra
 - (MPSGraphTensor *) stackTensors:(NSArray<MPSGraphTensor *> *) inputTensors axis:(NSInteger) axis name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object.
 
-#### Discussion
+## Discussion
 
 Stacks all input tensors along `axis` into a result tensor of `rank + 1`. Tensors must be broadcast compatible along all dimensions except `axis`, and have the same type.
 

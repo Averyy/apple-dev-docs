@@ -13,11 +13,11 @@
 errno_t mbuf_setflags_mask(mbuf_t mbuf, mbuf_flags_t flags, mbuf_flags_t mask);
 ```
 
-#### Return Value
+## Return Value
 
 0 upon success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Useful for setting or clearing individual flags. Easier than calling mbuf_setflags(m, mbuf_flags(m) | M_FLAG).
 

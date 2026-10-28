@@ -29,7 +29,7 @@ nonisolated func sectionIndexLabel(_ label: Text?) -> some View
 nonisolated func sectionIndexLabel<S>(_ label: S?) -> some View where S : StringProtocol
 ```
 
-#### Discussion
+## Discussion
 
 - See also `listSectionIndexVisibility(_:)`
 

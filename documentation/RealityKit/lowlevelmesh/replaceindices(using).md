@@ -21,7 +21,7 @@ Retrieves a Metal index buffer that you can use to replace the indices of this l
 func replaceIndices(using commandBuffer: any MTLCommandBuffer) -> any MTLBuffer
 ```
 
-#### Discussion
+## Discussion
 
 The buffer’s contents are in an uninitialized state.
 

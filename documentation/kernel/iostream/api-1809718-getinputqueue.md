@@ -10,7 +10,7 @@ virtual IOStreamBufferQueue *getInputQueue(
  void);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the input IOStreamBufferQueue structure for the stream, or NULL if the stream is not open and the queue has not been created yet.
 

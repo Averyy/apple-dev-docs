@@ -19,7 +19,7 @@ The color transformer for resolving the stroke color.
 @property (nonatomic, copy, nullable) UIConfigurationColorTransformer strokeColorTransformer;
 ```
 
-#### Discussion
+## Discussion
 
 If the value is `nil`, the configuration uses `strokeColor` without any transformations.
 

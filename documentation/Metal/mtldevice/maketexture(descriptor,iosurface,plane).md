@@ -25,7 +25,7 @@ func makeTexture(descriptor: MTLTextureDescriptor, iosurface: IOSurfaceRef, plan
 - (id<MTLTexture>) newTextureWithDescriptor:(MTLTextureDescriptor *) descriptor iosurface:(IOSurfaceRef) iosurface plane:(NSUInteger) plane;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`MTLTexture`](../mtltexture.md) instance if the method completed successfully; otherwise `nil`.
 

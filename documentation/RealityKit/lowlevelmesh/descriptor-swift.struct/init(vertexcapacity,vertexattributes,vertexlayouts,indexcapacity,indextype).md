@@ -20,7 +20,7 @@ Creates a descriptor for a low-level mesh.
 init(vertexCapacity: Int = 0, vertexAttributes: [LowLevelMesh.Attribute] = [Attribute](), vertexLayouts: [LowLevelMesh.Layout] = [Layout](), indexCapacity: Int = 0, indexType: MTLIndexType = MTLIndexType.uint32)
 ```
 
-#### Discussion
+## Discussion
 
 To create a new [`LowLevelMesh`](../../lowlevelmesh.md), first create a `Descriptor` object and set its property values, then use that `Descriptor` with [`init(descriptor:)`](../init%28descriptor%29.md).
 

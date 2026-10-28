@@ -15,7 +15,7 @@ The contents of the current accessibility element.
 @property (copy, nullable) NSArray * accessibilityContents;
 ```
 
-#### Discussion
+## Discussion
 
 This property is used by container elements. It holds an array of the container’s contents.
 

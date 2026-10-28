@@ -5,7 +5,7 @@
 
 A set of callback functions for operators used when scanning content in a PDF document.
 
-#### Overview
+## Overview
 
 You pass an operator table and a PDF content stream to a CGPDFScanner object. When the scanner parses a PDF operator, Core Graphics invokes your callback for that operator. See also [CGPDFScanner](./cgpdfscanner.md) and [CGPDFContentStream](./cgpdfcontentstream.md).
 

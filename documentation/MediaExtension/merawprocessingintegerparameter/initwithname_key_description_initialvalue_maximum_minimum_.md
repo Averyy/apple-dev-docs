@@ -15,7 +15,7 @@ Creates a integer parameter object with the initial value.
 - (instancetype) initWithName:(NSString *) name key:(NSString *) key description:(NSString *) description initialValue:(NSInteger) initialValue maximum:(NSInteger) maximum minimum:(NSInteger) minimum;
 ```
 
-#### Return Value
+## Return Value
 
 An instance of [`MERAWProcessingParameter.Integer`](../merawprocessingparameter/integer.md).
 

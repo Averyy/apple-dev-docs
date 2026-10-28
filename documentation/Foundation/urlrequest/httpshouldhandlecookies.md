@@ -21,7 +21,7 @@ A Boolean value indicating whether cookies will be sent with and set for this re
 var httpShouldHandleCookies: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 `true` if the default cookie handling will be used for this request, `false` otherwise. The default is `true`.
 

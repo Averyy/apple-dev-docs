@@ -19,7 +19,7 @@ var key: NSDraggingItem.ImageComponentKey { get set }
 @property (copy) NSDraggingImageComponentKey key;
 ```
 
-#### Discussion
+## Discussion
 
 The key must be unique for each component in an [`NSDraggingItem`](../nsdraggingitem.md) instance. You can create your own named components, however the keys described in [NSDragImage Component Keys](../nsdragimage-component-keys.md) have special meanings.
 

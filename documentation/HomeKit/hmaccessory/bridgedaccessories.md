@@ -22,7 +22,7 @@ var bridgedAccessories: [HMAccessory] { get }
 @property (nonatomic, copy, readonly) NSArray<HMAccessory *> * bridgedAccessories;
 ```
 
-#### Discussion
+## Discussion
 
 If the receiver represents a bridge, an array of the accessories behind the bridge, otherwise empty.
 

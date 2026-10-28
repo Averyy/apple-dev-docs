@@ -19,7 +19,7 @@
 static SPVector3DFloat SPVector3DFloatProject(SPVector3DFloat x, SPVector3DFloat y);
 ```
 
-#### Discussion
+## Discussion
 
 Returns the first vector projected onto the second vector.
 

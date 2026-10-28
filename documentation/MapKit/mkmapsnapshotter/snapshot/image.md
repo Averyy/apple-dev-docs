@@ -41,7 +41,7 @@ var image: NSImage { get }
 @property (nonatomic, readonly) NSImage * image;
 ```
 
-#### Discussion
+## Discussion
 
 The image object contains representations appropriate for display on both Retina and standard displays.
 

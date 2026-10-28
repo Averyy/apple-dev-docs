@@ -25,7 +25,7 @@ var minimumRating: Float { get set }
 @property (nonatomic, assign) float minimumRating;
 ```
 
-#### Discussion
+## Discussion
 
 The `minimumRating` property must be less than the [`maximumRating`](./maximumrating.md) property.
 

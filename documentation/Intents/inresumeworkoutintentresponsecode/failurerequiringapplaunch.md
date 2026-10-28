@@ -23,7 +23,7 @@ case failureRequiringAppLaunch
 INResumeWorkoutIntentResponseCodeFailureRequiringAppLaunch
 ```
 
-#### Discussion
+## Discussion
 
 Use this code only when you cannot resume the workout because of extenuating circumstances. For example, you might use this code if the user must log into your app before resuming workouts and is not currently logged in. Do not use this response code for general errors or to force the user to launch your app.
 

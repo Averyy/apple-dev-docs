@@ -21,7 +21,7 @@ Returns a Boolean value indicating whether the given date is within tomorrow.
 func isDateInTomorrow(_ date: Date) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the given date is within tomorrow, as defined by the calendar and calendar’s locale; otherwise, `false`.
 

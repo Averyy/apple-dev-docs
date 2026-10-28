@@ -21,7 +21,7 @@ Generates a column by adding each element in a column to a value.
 static func + (lhs: Self.Element, rhs: Self) -> Column<Self.Element> where Self.Element : AdditiveArithmetic
 ```
 
-#### Return Value
+## Return Value
 
 A new column.
 

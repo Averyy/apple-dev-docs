@@ -20,7 +20,7 @@ A component that stores a sequence of geometric pins.
 struct GeometricPinsComponent
 ```
 
-#### Overview
+## Overview
 
 Add, inspect, and remove geometric pins that belong to the entity that owns an instance of `GeometricPinsComponent` by accessing its [`pins`](./entity/pins.md) property.
 

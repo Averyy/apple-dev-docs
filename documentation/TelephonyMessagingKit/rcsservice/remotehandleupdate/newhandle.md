@@ -15,7 +15,7 @@ The new value for the updated handle.
 let newHandle: RCSHandle?
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` if the handle didn’t change.
 

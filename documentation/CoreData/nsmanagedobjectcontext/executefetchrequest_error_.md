@@ -21,11 +21,11 @@ Returns an array of objects that meet the criteria of the specified fetch reques
 - (NSArray *) executeFetchRequest:(NSFetchRequest *) request error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An array of objects that meet the criteria specified by `request` fetched from the receiver and from the persistent stores associated with the receiver’s persistent store coordinator. If an error occurs, returns `nil`. If no objects match the criteria specified by `request`, returns an empty array.
 
-#### Discussion
+## Discussion
 
 Returned objects are registered with the receiver.
 

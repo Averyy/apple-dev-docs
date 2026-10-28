@@ -4,7 +4,7 @@
 
 Learn how to support high-precision touches in your app.
 
-#### Overview
+## Overview
 
 UIKit usually delivers touches to your app at around 60 Hz, but some devices are capable of recording touch information at up to 240 Hz. On such devices, UIKit doesn’t deliver the extra touch information automatically, in case the app doesn’t need the extra data. Instead, it coalesces any extra touches into a single [`UITouch`](./uitouch.md) object, whose location reflects only the last recorded touch. However, apps that want the extra precision can retrieve and use the additional touch information.
 

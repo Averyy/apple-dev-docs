@@ -15,7 +15,7 @@ Key for strings that identify the time of day.
 extern NSString * const NSHourNameDesignations;
 ```
 
-#### Discussion
+## Discussion
 
 These strings should be bound to an hour. The default is this array of arrays: (0, midnight), (10, morning), (12, noon, lunch), (14, afternoon), (19, dinner).
 

@@ -17,7 +17,7 @@ Sends data to a remote application.
 - (void) sendData:(NSData *) data completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this function again before the completion handler of a previous send is called is safe; multiple send operations can be in-flight concurrently.
 

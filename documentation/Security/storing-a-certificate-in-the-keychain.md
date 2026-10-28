@@ -5,7 +5,7 @@
 
 Store a certificate in the keychain for safekeeping.
 
-#### Overview
+## Overview
 
 If you receive a certificate, perhaps from a `.cer` file, as shown in [Storing a DER-Encoded X.509 Certificate](./storing-a-der-encoded-x-509-certificate.md), you can store it in your keychain for safekeeping. As with other keychain operations, begin by creating a query:
 

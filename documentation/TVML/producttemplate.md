@@ -4,7 +4,7 @@
 
 Displays detailed information about a single product.
 
-#### Overview
+## Overview
 
 Use the `productTemplate` element to display, for example, a page that describes a movie, including information about the actors, ratings, and like movies. The page displays general information about the product in the top two-thirds of the screen with a row of related products directly below. A user can scroll down and access detailed information about the product, including critical reviews, actor biographies, and information about any included extras.
 
@@ -12,7 +12,7 @@ The following figure shows the basic layout for a `productTemplate` page. The de
 
 ![Layout diagram showing an info list area on the left side of the screen, a stack area in the middle, and a banner area on the right. A shelf area is at the bottom of the screen. A second shelf area is shown as being off the bottom of the screen.](https://developer.apple.com/tutorials/images/com.apple.TVML/producttemplate-1@2x.png)
 
-##### Main Elements
+### Main Elements
 
 The following listing shows the main elements of the productTemplate element in TVML format.
 
@@ -44,7 +44,7 @@ The following listing shows the main elements of the productTemplate element in 
 
 > **Note**: You can change the look of a `productTemplate` page by removing `heroImage` from the `stack` element and replacing it with an `img` element that covers the entire screen.
 
-###### Element Descriptions
+#### Element Descriptions
 
 - **[banner](./banner.md)**: Element containing subelements that provide primary information about a product, such as a movie title, description, credits, and purchase information.
 - **[buttonLockup](./buttonlockup.md)**: A type of button that can contain an image (the `badge` element) as well as text.
@@ -58,7 +58,7 @@ The following listing shows the main elements of the productTemplate element in 
 - **[subtitle](./subtitle.md)**: Text that provides additional information about its containing element.
 - **[title](./title.md)**: The title describing its containing element.
 
-##### Example
+### Example
 
 The following listing shows the TVML for a `productTemplate` example:
 

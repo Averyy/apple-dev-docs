@@ -20,7 +20,7 @@ class NSRelativeSpecifier
 @interface NSRelativeSpecifier : NSScriptObjectSpecifier
 ```
 
-#### Overview
+## Overview
 
 You don’t normally subclass `NSRelativeSpecifier`.
 

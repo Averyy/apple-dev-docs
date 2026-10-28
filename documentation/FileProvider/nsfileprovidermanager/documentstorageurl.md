@@ -22,7 +22,7 @@ var documentStorageURL: URL { get }
 @property (nonatomic, readonly) NSURL * documentStorageURL;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the URL `<container URL>/File Provider Storage`, where *container URL* is the value returned by the [`containerURL(forSecurityApplicationGroupIdentifier:)`](../../Foundation/filemanager/containerurl%28forsecurityapplicationgroupidentifier%29.md) method.
 

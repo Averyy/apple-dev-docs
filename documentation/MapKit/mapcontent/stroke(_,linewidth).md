@@ -22,7 +22,7 @@ Applies the given shape style to drawn map overlays using the line width you spe
 @preconcurrency func stroke(_ content: some ShapeStyle, lineWidth: CGFloat = 1) -> some MapContent
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`MapContent`](../mapcontent.md) drawn with the [`ShapeStyle`](../../SwiftUI/shapestyle.md) and `lineWidth` you specified.
 

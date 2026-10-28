@@ -19,11 +19,11 @@ func PMPrinterPrintWithFile(_ printer: PMPrinter, _ settings: PMPrintSettings, _
 OSStatus PMPrinterPrintWithFile(PMPrinter printer, PMPrintSettings settings, PMPageFormat format, CFStringRef mimeType, CFURLRef fileURL);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007). If the specified printer cannot handle the file's MIME type, a non-zero error code is returned.
 
-#### Discussion
+## Discussion
 
 This function can fail if the specified printer cannot handle the file’s MIME type. Use the function [`PMPrinterGetMimeTypes(_:_:_:)`](./api-1460125-pmprintergetmimetypes.md) to check whether a MIME type is supported.
 

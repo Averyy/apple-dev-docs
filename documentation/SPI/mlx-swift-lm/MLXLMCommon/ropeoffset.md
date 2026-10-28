@@ -17,7 +17,7 @@ Offset to use with [`applyRotaryPosition(_:to:offset:)`](./applyrotaryposition%2
 enum RoPEOffset
 ```
 
-#### Overview
+## Overview
 
 See [`ropeOffset`](./kvcache/ropeoffset.md).
 

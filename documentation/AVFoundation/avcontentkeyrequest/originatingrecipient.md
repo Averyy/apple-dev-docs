@@ -25,7 +25,7 @@ weak var originatingRecipient: (any AVContentKeyRecipient)? { get }
 @property (weak, readonly, nullable) id<AVContentKeyRecipient> originatingRecipient;
 ```
 
-#### Discussion
+## Discussion
 
 The originatingRecipient is an AVFoundation object responsible for initiating an AVContentKeyRequest. For example, an AVURLAsset used for playback can trigger an AVContentKeyRequest.
 

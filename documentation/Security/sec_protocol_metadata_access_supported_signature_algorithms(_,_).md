@@ -23,11 +23,11 @@ func sec_protocol_metadata_access_supported_signature_algorithms(_ metadata: sec
 bool sec_protocol_metadata_access_supported_signature_algorithms(sec_protocol_metadata_t metadata, void (^handler)(uint16_t signature_algorithm));
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the supported signature list was accessible, false otherwise.
 
-#### Discussion
+## Discussion
 
 Get the signature algorithms supported by the peer. Clients may call this in response to a challenge block.
 

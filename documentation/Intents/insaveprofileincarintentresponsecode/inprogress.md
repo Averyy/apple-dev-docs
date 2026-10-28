@@ -24,7 +24,7 @@ case inProgress
 INSaveProfileInCarIntentResponseCodeInProgress
 ```
 
-#### Discussion
+## Discussion
 
 Use this code during the handling phase to indicate that you’re in the process of saving the user’s settings, but that you haven’t yet received confirmation of the completed save.
 

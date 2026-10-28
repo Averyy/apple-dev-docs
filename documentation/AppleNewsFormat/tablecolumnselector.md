@@ -15,13 +15,13 @@ The object for defining conditions that apply a conditional style to a column.
 object TableColumnSelector
 ```
 
-#### Discussion
+## Discussion
 
 Use the `TableColumnSelector` object to set the criteria for applying conditional styles to columns. For example, you could set the criteria to select all even columns or to select columns for certain data descriptors.
 
 You can use this object in [`ConditionalTableColumnStyle`](./conditionaltablecolumnstyle.md).
 
-##### Example
+### Example
 
 ```json
 {

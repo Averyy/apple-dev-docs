@@ -27,7 +27,7 @@ optional func resolvePayee(for intent: INSendPaymentIntent) async -> INSendPayme
 - (void) resolvePayeeForSendPayment:(INSendPaymentIntent *) intent completion:(void (^)(INSendPaymentPayeeResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to determine whether you can send funds to the designated recipient. Use the provided payee information in the intent object to locate the corresponding user in your app. Always strive toward a successful resolution to a specific user, but always ask for confirmation of the selected user if there is some uncertainty.
 

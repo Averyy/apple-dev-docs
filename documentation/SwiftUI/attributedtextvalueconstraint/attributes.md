@@ -21,7 +21,7 @@ A proxy type for a container of partially constrained attributes.
 typealias Attributes = AttributedTextFormatting.AttributeContainerProxy<Self.Scope, Self.AttributeKey>
 ```
 
-#### Discussion
+## Discussion
 
 This type is passed to the `constrain(_:)-1p72v` function.
 

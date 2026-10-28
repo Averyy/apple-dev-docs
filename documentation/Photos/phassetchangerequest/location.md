@@ -24,7 +24,7 @@ var location: CLLocation? { get set }
 @property (nonatomic, strong, readwrite, nullable) CLLocation * location;
 ```
 
-#### Discussion
+## Discussion
 
 Typically, an asset’s location metadata identifies the place where the asset was captured. Use this property to provide a different location.
 

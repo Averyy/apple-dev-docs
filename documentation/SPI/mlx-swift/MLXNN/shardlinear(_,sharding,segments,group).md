@@ -17,11 +17,11 @@ Create a new linear layer with sharded parameters that also performs the distrib
 func shardLinear(_ layer: Linear, sharding: ShardingType, segments: Segments = .count(1), group: MLXDistributed.Group? = nil) throws -> Linear
 ```
 
-#### Return Value
+## Return Value
 
 The sharded layer, which can replace `layer` in a model
 
-#### Discussion
+## Discussion
 
 Unlike [`shardInPlace(_:sharding:segments:group:)`](./shardinplace%28_,sharding,segments,group%29.md) the original layer is not changed.  A [`QuantizedLinear`](./quantizedlinear.md) yields the quantized flavor of the sharded layer, so a quantized model shards like any other.
 

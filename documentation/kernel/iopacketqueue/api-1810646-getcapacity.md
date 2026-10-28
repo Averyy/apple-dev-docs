@@ -11,7 +11,7 @@ Gets the current capacity of the queue.
 virtual UInt32 getCapacity() const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the current queue capacity.
 

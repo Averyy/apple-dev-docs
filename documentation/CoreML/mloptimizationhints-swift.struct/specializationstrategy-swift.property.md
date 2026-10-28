@@ -21,7 +21,7 @@ Optimization strategy for the model specialization.
 var specializationStrategy: MLOptimizationHints.SpecializationStrategy
 ```
 
-#### Discussion
+## Discussion
 
 Core ML segments the model’s compute graph and specializes each segment for the target compute device. This process can affect the model loading time and the prediction latency.
 

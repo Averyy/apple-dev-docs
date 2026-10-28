@@ -21,7 +21,7 @@ func indexOfSelectedItem() -> Int
 - (NSInteger) indexOfSelectedItem;
 ```
 
-#### Return Value
+## Return Value
 
 The index of the selected entry, or `-1` if no entry is selected.
 

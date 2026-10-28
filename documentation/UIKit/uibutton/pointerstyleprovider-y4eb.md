@@ -19,7 +19,7 @@ A closure that returns the pointer style to use when the pointer hovers over the
 @preconcurrency var pointerStyleProvider: UIButton.PointerStyleProvider? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 To change the appearance of the pointer when it hovers over the button, create a [`UIButton.PointerStyleProvider`](./pointerstyleprovider-swift.typealias.md) closure that returns a [`UIPointerStyle`](../uipointerstyle.md) describing the pointer shape and content effect. Then assign the closure to [`pointerStyleProvider`](./pointerstyleprovider-y4eb.md). For example, the following code listing creates a pointer style that applies a lift effect to the button when the pointer hovers over it.
 

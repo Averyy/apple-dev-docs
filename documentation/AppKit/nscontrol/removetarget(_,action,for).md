@@ -19,7 +19,7 @@ func removeTarget(_ target: Any?, action: Selector?, for controlEvents: NSContro
 - (void) removeTarget:(id) target action:(SEL) action forControlEvents:(NSControlEvents) controlEvents;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to prevent the delivery of control events to a target object. If you specify a valid object in the `target` parameter, this method stops the delivery of the specified events to all action methods associated with that object. If you specify `nil` for the `target` parameter, this method prevents the delivery of those events to all action methods of all target objects.
 

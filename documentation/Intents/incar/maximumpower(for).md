@@ -23,7 +23,7 @@ func maximumPower(for chargingConnectorType: INCar.ChargingConnectorType) -> Mea
 - (NSMeasurement<NSUnitPower *> *) maximumPowerForChargingConnectorType:(INCarChargingConnectorType) chargingConnectorType;
 ```
 
-#### Return Value
+## Return Value
 
 The maximum power in watts for the charging connector, or `nil` if you haven’t set a value using [`setMaximumPower(_:for:)`](./setmaximumpower%28_,for%29.md).
 

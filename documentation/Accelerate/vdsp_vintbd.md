@@ -21,7 +21,7 @@ Calculates the linear interpolation between the supplied double-precision vector
 extern void vDSP_vintbD(const double *__A, vDSP_Stride __IA, const double *__B, vDSP_Stride __IB, const double *__C, double *__D, vDSP_Stride __ID, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function is the same as [`vDSP_vintb`](./vdsp_vintb.md), except for the types of vectors `A`, `B`, `C`, and `D`.
 

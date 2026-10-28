@@ -19,11 +19,11 @@ convenience init(fullColorImage image: UIImage, tintedImageProvider: CLKImagePro
 + (instancetype) providerWithFullColorImage:(UIImage *) image tintedImageProvider:(CLKImageProvider *) tintedImageProvider;
 ```
 
-#### Return Value
+## Return Value
 
 An image provider that produces full-color and tinted images. For more information about tinted images, see [`tintedImageProvider`](./tintedimageprovider.md).
 
-#### Discussion
+## Discussion
 
 For information about the image sizes and masks used by the different complication families, see [Complication Images](https://developer.apple.com/design/human-interface-guidelines/watchos/icons-and-images/complication-images/).
 

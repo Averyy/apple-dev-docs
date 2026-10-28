@@ -24,7 +24,7 @@ var gainMetaParameterDefinition: PHASENumberMetaParameterDefinition? { get set }
 @property (nonatomic, strong, nullable) PHASENumberMetaParameterDefinition * gainMetaParameterDefinition;
 ```
 
-#### Discussion
+## Discussion
 
 When the framework creates a mixer from a mixer definition, PHASE initializes the mixer’s [`gainMetaParameter`](../phasepushstreamnode/gainmetaparameter.md) to this property’s values.
 

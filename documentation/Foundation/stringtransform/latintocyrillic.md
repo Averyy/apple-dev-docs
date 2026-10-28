@@ -25,7 +25,7 @@ static let latinToCyrillic: StringTransform
 extern NSStringTransform const NSStringTransformLatinToCyrillic;
 ```
 
-#### Discussion
+## Discussion
 
 This transformation is reversible.
 

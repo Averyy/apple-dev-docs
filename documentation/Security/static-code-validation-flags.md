@@ -5,7 +5,7 @@
 
 Use these supplemental flags to test the validity of a static code signature.
 
-#### Overview
+## Overview
 
 These flags supplement the flags described in [`SecCSFlags`](./seccsflags.md). Use these additional constants with the flags parameter of the [`SecStaticCodeCheckValidity(_:_:_:)`](./secstaticcodecheckvalidity%28_,_,_%29.md) and [`SecStaticCodeCheckValidityWithErrors(_:_:_:_:)`](./secstaticcodecheckvaliditywitherrors%28_,_,_,_%29.md) functions to control the validation of code in the file system.
 

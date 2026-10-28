@@ -25,7 +25,7 @@ static let au: AVFileType
 extern AVFileType const AVFileTypeSunAU;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this UTI is `public.au-audio`. Files of this type have an `.au` or `.snd` extension.
 

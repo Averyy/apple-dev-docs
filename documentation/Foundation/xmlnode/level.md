@@ -20,11 +20,11 @@ var level: Int { get }
 @property (readonly) NSUInteger level;
 ```
 
-#### Return Value
+## Return Value
 
 An integer indicating a nesting level.
 
-#### Discussion
+## Discussion
 
 The root element of a document has a nesting level of one.
 

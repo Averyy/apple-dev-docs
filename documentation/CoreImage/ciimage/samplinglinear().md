@@ -24,7 +24,7 @@ func samplingLinear() -> CIImage
 - (CIImage *) imageBySamplingLinear;
 ```
 
-#### Return Value
+## Return Value
 
  An autoreleased [`CIImage`](../ciimage.md) instance with a bilinear sampling.
 

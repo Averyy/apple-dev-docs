@@ -21,7 +21,7 @@ var confirmationCode: String? { get set }
 @property (nonatomic, strong, nullable) NSString * confirmationCode;
 ```
 
-#### Discussion
+## Discussion
 
 This property is optional.
 

@@ -24,7 +24,7 @@ var detectedPoints: [VNPoint] { get }
 @property (nonatomic, copy, readonly) NSArray<VNPoint *> * detectedPoints;
 ```
 
-#### Discussion
+## Discussion
 
 The detected points may differ slightly from the ideal trajectory because they fall within the allowed tolerance. The system limits the maximum number of points based on the maximum trajectory length set in the request.
 

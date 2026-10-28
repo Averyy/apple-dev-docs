@@ -23,7 +23,7 @@ var activityItemsConfiguration: (any UIActivityItemsConfigurationReading)? { get
 @property (nonatomic, strong, readonly, nullable) id<UIActivityItemsConfigurationReading> activityItemsConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 To offer a configuration for sharing through Siri or the toolbar in an app built with Mac Catalyst, override this property on the root view controller or a modal view controller. To provide a configuration when your app is displaying a [`UISplitViewController`](../uisplitviewcontroller.md), implement this property on the detail view controller.
 

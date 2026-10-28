@@ -19,7 +19,7 @@ var isPlayWithMediaEnabled: Bool { get }
 @property (nonatomic, assign, readonly, getter=isPlayWithMediaEnabled) BOOL playWithMediaEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 Background sounds is to be played while media is also playing
 

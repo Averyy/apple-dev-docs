@@ -21,7 +21,7 @@ The channels of the Core Video image format.
 var channels: [vImage.BufferType] { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, the following code prints the channels in a [`kCVPixelFormatType_420YpCbCr8Planar`](../../CoreVideo/kcvpixelformattype_420ypcbcr8planar.md) Core Video image format:
 

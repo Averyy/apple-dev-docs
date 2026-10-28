@@ -20,7 +20,7 @@ class QLPreviewReply
 @interface QLPreviewReply : NSObject
 ```
 
-#### Overview
+## Overview
 
 To provide a data-based preview, you have to return a QLPreviewReply object.
 

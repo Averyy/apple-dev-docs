@@ -15,7 +15,7 @@ A response that contains a single Game Center achievement localization v2 resour
 object GameCenterAchievementLocalizationsV2Response
 ```
 
-#### Overview
+## Overview
 
 - data:
 - included:

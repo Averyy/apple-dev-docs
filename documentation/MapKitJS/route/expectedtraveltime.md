@@ -15,7 +15,7 @@ The expected travel time, in seconds.
 expectedTravelTime: number;
 ```
 
-#### Discussion
+## Discussion
 
 This expected travel time reflects the time it takes to traverse the route under ideal conditions. The actual amount of time may vary.
 

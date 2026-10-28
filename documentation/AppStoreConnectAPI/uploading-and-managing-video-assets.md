@@ -5,13 +5,13 @@
 
 Reserve, upload, and commit a video to your app’s asset library, set its preview frame, then update, archive, or delete it.
 
-#### Overview
+## Overview
 
 An asset library video is a reusable video, for example, an app preview, that you upload once and place across your App Store surfaces. Uploading a video follows the same reserve-upload-commit pattern as an image: you create a reservation that returns upload operations, transfer the bytes to those URLs, then commit the reservation so App Store Connect can process the file. Videos add one step: a preview frame that represents the video before it plays.
 
 For more information about the shared, four-step asset delivery model, see [Uploading Assets to App Store Connect](./uploading-assets-to-app-store-connect.md). For the image walkthrough, which this article parallels closely, see [Uploading and managing image assets](./uploading-and-managing-image-assets.md). For the broader concept, see [Understanding the App Asset Library](./understanding-the-app-asset-library.md).
 
-#### Confirm specifications before you begin
+## Confirm specifications before you begin
 
 Find your app’s asset library and look up the video specifications for the placement types you’re targeting:
 
@@ -38,7 +38,7 @@ Video specifications constrain more than images do. In addition to dimensions an
 
 Check your footage against all of these before you create the reservation. App Store Connect doesn’t validate the footage until after the upload, so a video that runs 12 seconds, or has no audio track where `audioRequired` is `true`, fails processing rather than being rejected up front.
 
-#### Reserve the video
+## Reserve the video
 
 Reserving a video creates its record in your asset library and returns the upload operations you use to send the file. The video stays in `AWAITING_UPLOAD` until you commit the upload. Create the video with `POST /v1/appAssetLibraryVideos` ([`Create an app asset library video`](./post-v1-appassetlibraryvideos.md)). Supply the filename, the file size in bytes, and a category ([`AppAssetLibraryAssetCategory`](./appassetlibraryassetcategory.md)), and relate the video to your asset library. If you want, set `previewFrameTimeCode` to choose the frame that represents the video, and `referenceName` to identify the asset later.
 
@@ -67,13 +67,13 @@ Reserving a video creates its record in your asset library and returns the uploa
 
 A successful response returns the video `id`, a `state` of `AWAITING_UPLOAD`, and an `uploadOperations` array specifying the `method`, `url`, `length`, `offset`, and `requestHeaders` for each part. As with images, `videoAsset`, `previewFrameImage`, and `specId` are `null` until processing finishes.
 
-#### Upload the video
+## Upload the video
 
 Transfer the file to the URLs from `uploadOperations`. For each operation, make an HTTP request using the specified `method`, `url`, and `requestHeaders`, and send the bytes from the given `offset` and `length` in the request body. Because videos are large, expect multiple operations; upload the parts concurrently and in any order, and resend any part that fails before you commit. The upload URLs are unauthenticated and time-limited, so you don’t send a JSON Web Token (JWT), and you don’t share them.
 
 The video stays in `AWAITING_UPLOAD` while you transfer the parts.
 
-#### Commit the upload
+## Commit the upload
 
 After every part uploads, commit the reservation with `PATCH /v1/appAssetLibraryVideos/{id}` ([`Modify an app asset library video`](./patch-v1-appassetlibraryvideos-_id_.md)) by setting `uploaded` to `true`:
 
@@ -93,7 +93,7 @@ After every part uploads, commit the reservation with `PATCH /v1/appAssetLibrary
 
 The video moves to `UPLOAD_COMPLETE`, and processing begins.
 
-#### Verify processing
+## Verify processing
 
 Processing is asynchronous. Re-fetch the video with `GET /v1/appAssetLibraryVideos/{id}` ([`Read an app asset library video`](./get-v1-appassetlibraryvideos-_id_.md)) to check its `state`:
 
@@ -103,7 +103,7 @@ Processing is asynchronous. Re-fetch the video with `GET /v1/appAssetLibraryVide
 
 When processing succeeds, read `specId` for the specification to which App Store Connect matched your file, and `videoAsset` for the processed asset URL. You never send `specId` yourself; compare the returned value against the reference data to confirm your file landed on the specification you intended.
 
-#### Set or change the preview frame
+## Set or change the preview frame
 
 The preview frame is the still image that represents the video before playback. Choose it by setting `previewFrameTimeCode` at creation, or by patching it later with `PATCH /v1/appAssetLibraryVideos/{id}` ([`Modify an app asset library video`](./patch-v1-appassetlibraryvideos-_id_.md)):
 
@@ -123,7 +123,7 @@ Pick a time code that falls inside the video’s duration. App Store Connect the
 
 The preview frame belongs to the video, not to any one placement. Changing it changes what every placement of that video displays.
 
-#### Update, archive, or delete a video
+## Update, archive, or delete a video
 
 Use `PATCH /v1/appAssetLibraryVideos/{id}` ([`Modify an app asset library video`](./patch-v1-appassetlibraryvideos-_id_.md)) to change a video’s `referenceName` or `previewFrameTimeCode`, or to archive it by setting `archived` to `true`. Archiving works only on an approved asset; archiving one that’s still in `PREPARE_FOR_SUBMISSION` returns a 409 with the code `STATE_ERROR.INVALID_ASSET_STATE` and the detail `Only an approved asset can be archived.` The video binary is immutable after commit; to change the footage, upload a new asset and replace the placements that use it.
 
@@ -131,11 +131,11 @@ To remove a video entirely, use `DELETE /v1/appAssetLibraryVideos/{id}` ([`Delet
 
 > ❗ **Important**:  Deleting an asset doesn’t cascade to its placements. Delete every placement that uses the video first, or the request returns a 409 with the code `STATE_ERROR.ASSET_HAS_PLACEMENTS`.
 
-#### Find video placements
+## Find video placements
 
 To see the placements that reuse a video, use `GET /v1/appAssetLibraryVideos/{id}/placements` ([`List related placements`](./get-v1-appassetlibraryvideos-_id_-placements.md)), or fetch just the relationship linkages with `GET /v1/appAssetLibraryVideos/{id}/relationships/placements` ([`List the placement IDs for an app asset library video`](./get-v1-appassetlibraryvideos-_id_-relationships-placements.md)).
 
-#### List the videos in your library
+## List the videos in your library
 
 Read every video in the library with `GET /v1/appAssetLibraries/{id}/videos` ([`List related videos`](./get-v1-appassetlibraries-_id_-videos.md)). The same filters and sorts available for images apply: `filter[state]`, `filter[category]`, `filter[specId]`, `filter[referenceName]`, `filter[id]`, and `sort` by `createdDate`, `lastModifiedDate`, or `referenceName`.
 

@@ -21,7 +21,7 @@ The text you want the system to display, or speak, when requesting a value, aski
 init(_ string: LocalizedStringResource)
 ```
 
-#### Discussion
+## Discussion
 
 Parameters:
 

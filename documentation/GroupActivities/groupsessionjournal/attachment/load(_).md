@@ -20,11 +20,11 @@ Downloads the attachment data and asynchronously delivers it as the type you spe
 func load<AttachmentType>(_ attachmentType: AttachmentType.Type) async throws -> AttachmentType where AttachmentType : Transferable
 ```
 
-#### Return Value
+## Return Value
 
 A requested type that contains the downloaded information.
 
-#### Discussion
+## Discussion
 
 Use this function to retrieve the file or data another participant provides. The method asynchronously retrieves and decodes the data, returning it as the requested type. If the requested type isn’t available, the method throws an error.
 

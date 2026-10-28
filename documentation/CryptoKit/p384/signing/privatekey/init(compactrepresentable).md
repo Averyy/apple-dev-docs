@@ -21,7 +21,7 @@ Creates a random P-384 private key for signing.
 init(compactRepresentable: Bool = true)
 ```
 
-#### Discussion
+## Discussion
 
 Keys that use a compact point encoding enable shorter public keys, but aren’t compliant with FIPS certification. If your app requires FIPS certification, create a key with [`init(rawRepresentation:)`](./init%28rawrepresentation%29.md).
 

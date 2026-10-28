@@ -21,7 +21,7 @@ A guide that marks the trailing edge of the view.
 static let trailing: HorizontalAlignment
 ```
 
-#### Discussion
+## Discussion
 
 Use this guide to align the trailing edges of views. For a device that uses a left-to-right language, the trailing edge is on the right:
 

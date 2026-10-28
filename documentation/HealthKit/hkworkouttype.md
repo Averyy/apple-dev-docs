@@ -24,7 +24,7 @@ class HKWorkoutType
 @interface HKWorkoutType : HKSampleType
 ```
 
-#### Overview
+## Overview
 
 The [`HKWorkoutType`](./hkworkouttype.md) class is a concrete subclass of the [`HKObjectType`](./hkobjecttype.md) class. To create a workout type instances, use the [`workoutType()`](./hkobjecttype/workouttype%28%29.md)  convenience method.
 

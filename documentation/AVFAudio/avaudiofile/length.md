@@ -25,7 +25,7 @@ var length: AVAudioFramePosition { get }
 @property (nonatomic, readonly) AVAudioFramePosition length;
 ```
 
-#### Discussion
+## Discussion
 
 This can be computationally expensive to compute for the first time.
 

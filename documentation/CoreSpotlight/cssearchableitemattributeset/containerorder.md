@@ -23,7 +23,7 @@ var containerOrder: NSNumber? { get set }
 @property (strong, nullable) NSNumber * containerOrder;
 ```
 
-#### Discussion
+## Discussion
 
 For example, if the container represents a series of books, this property specifies the order in which the books should be read.
 

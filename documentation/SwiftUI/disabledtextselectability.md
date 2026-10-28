@@ -19,7 +19,7 @@ A selectability type that disables text selection by the person using your app.
 struct DisabledTextSelectability
 ```
 
-#### Overview
+## Overview
 
 Don’t use this type directly. Instead, use [`disabled`](./textselectability/disabled.md).
 

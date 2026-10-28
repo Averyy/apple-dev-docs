@@ -21,7 +21,7 @@ The ways you can scale the domain or range of a plot.
 struct ScaleType
 ```
 
-#### Overview
+## Overview
 
 Use this type with the `type:` parameter of `.chartXScale` view modifiers to customize scale types.
 

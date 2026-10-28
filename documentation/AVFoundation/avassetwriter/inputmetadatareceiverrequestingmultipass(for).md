@@ -20,7 +20,7 @@ Attaches the input to the writer and returns a tuple with an input receiver for 
 func inputMetadataReceiverRequestingMultiPass(for input: AVAssetWriterInput) -> sending (AVAssetWriterInput.MetadataReceiver, AVAssetWriterInput.MultiPassController)
 ```
 
-#### Return Value
+## Return Value
 
 A tuple with an input receiver for writing timed metadata group, and an associated multi pass controller.
 

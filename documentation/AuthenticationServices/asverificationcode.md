@@ -19,7 +19,7 @@ This is an instance of a verification code.
 struct ASVerificationCode
 ```
 
-#### Overview
+## Overview
 
 It represents a code at a specific point in time.
 

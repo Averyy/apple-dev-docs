@@ -15,7 +15,7 @@ The trait’s canonical name.
 var name: String
 ```
 
-#### Discussion
+## Discussion
 
 Use the trait’s name to enable the trait or when referring to it from other modifiers in the manifest. The trait’s name also defines the conditional block that the compiler supports when the trait is active.
 

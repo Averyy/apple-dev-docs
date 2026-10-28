@@ -18,7 +18,7 @@ case cursorWindow
 kCGCursorWindowLevelKey
 ```
 
-#### Discussion
+## Discussion
 
 The level for the cursor.
 

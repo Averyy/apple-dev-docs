@@ -5,7 +5,7 @@
 
 Measure the relative position of a nearby device and coach the user to sustain interaction.
 
-#### Overview
+## Overview
 
 When an app reacts to the relative position of another device, it creates a unique experience based on the user’s environment. For example, after the user requests a lift in a ride share app, the app can display a graphic that points in the direction of the driver as they approach.
 
@@ -17,7 +17,7 @@ The [`NIConfiguration`](./niconfiguration.md) subclass that you choose decides t
 
 Your session’s delegate also monitors critical state by implementing callbacks. For example, to keep an interaction going, you may need to guide the user to conform to range and line of sight requirements of the Ultra Wideband (UWB) chips.
 
-##### Define a usage description
+### Define a usage description
 
 Before the system allows an interaction session to start, the framework checks for user permission to share the device’s position with a nearby peer. The first time the app runs, the framework presents a prompt that displays the textual value of [`NSNearbyInteractionUsageDescription`](../BundleResources/information-property-list/nsnearbyinteractionusagedescription.md) in the app’s `Info.plist`. This property describes the benefits of position sharing in an interaction session.
 
@@ -29,7 +29,7 @@ Alternatively, the user adjusts Nearby Interaction permission in Privacy Setting
 
 ![Screenshot of Privacy Settings on an iPhone. The setting for the NIPeekaboo app contains a slider in the enabled position, above text that reads, Nearby Interaction uses Ultra Wideband and Bluetooth to precisely measure the distance between your iPhone and other devices or items.](https://developer.apple.com/tutorials/images/com.apple.nearbyinteraction/media-3958392@2x.png)
 
-##### Confirm device and feature support
+### Confirm device and feature support
 
 Apple devices with a UWB chip support Nearby Interaction. To check whether the user’s device supports Nearby Interaction and the specific features your app requires, inspect [`deviceCapabilities`](./nisession/devicecapabilities.md).
 
@@ -65,7 +65,7 @@ if #available(iOS 15, *) {
 }
 ```
 
-##### Locate peers and exchange discovery data
+### Locate peers and exchange discovery data
 
 Your app checks for nearby peers using a network technology that you choose.
 
@@ -77,7 +77,7 @@ Your app checks for nearby peers using a network technology that you choose.
 
 Apps then exchange data in a particular format that depends on the device types in the interaction session. For interaction between Apple devices, peers share their discovery tokens ([`discoveryToken`](./nisession/discoverytoken.md)). For interactions with a third-party accessory, the accessory sends your app a configuration data object as outlined in the [UWB third-party device specification](https://developer.apple.com/nearby-interaction/specification/).
 
-##### Create a configuration object
+### Create a configuration object
 
 The app creates a configuration object with the information it receives from the peer. The type of information depends on the particular peer. From an iPhone or Apple Watch, the app receives a discovery token and passes it to the [`init(peerToken:)`](./ninearbypeerconfiguration/init%28peertoken%29.md) initializer of [`NINearbyPeerConfiguration`](./ninearbypeerconfiguration.md).
 
@@ -93,7 +93,7 @@ configuration = try NINearbyAccessoryConfiguration(data: configData)
 
 > 💡 **Tip**:  To enable interaction in the background for Bluetooth accessories on iOS 16, call the [`init(accessoryData:bluetoothPeerIdentifier:)`](./ninearbyaccessoryconfiguration/init%28accessorydata,bluetoothpeeridentifier%29.md) initializer instead and pass in the accessory’s Bluetooth identifier.
 
-##### Respond to session delegate callbacks
+### Respond to session delegate callbacks
 
 To receive peer positions and react to events in the Nearby Interaction life cycle, the app implements a delegate that conforms to [`NISessionDelegate`](./nisessiondelegate.md).
 
@@ -109,7 +109,7 @@ If a user backgrounds the app, Nearby Interaction suspends the session and notif
 
 If a peer device closes the app or moves out of range of the UWB chip, Nearby Interaction times out the peer. The delegate receives the reason the peer left through the [`session(_:didRemove:reason:)`](./nisessiondelegate/session%28_,didremove,reason%29.md) callback.
 
-##### Coach the user on range, orientation, and line of sight
+### Coach the user on range, orientation, and line of sight
 
 Nearby Interaction works best when peer iPhone devices are:
 
@@ -131,7 +131,7 @@ In either situation, the app could request that the user approach the peer to re
 
 > **Note**:  Because it provides no [`direction`](./ninearbyobject/direction-4qh5w.md) vector, Apple Watch doesn’t conform to line of sight guidelines.
 
-##### Increase line of sight with Camera Assistance
+### Increase line of sight with Camera Assistance
 
 In iOS 16, Camera Assistance ([`isCameraAssistanceEnabled`](./ninearbypeerconfiguration/iscameraassistanceenabled.md)) increases the device’s line of sight to a larger area that surrounds the device. This provides a nearby object’s [`distance`](./ninearbyobject/distance-676dm.md) and [`direction`](./ninearbyobject/direction-4qh5w.md) in a wider range of environmental conditions, in addition to the object’s [`horizontalAngle`](./ninearbyobject/horizontalangle-hsg.md) and [`verticalDirectionEstimate`](./ninearbyobject/verticaldirectionestimate-swift.property.md).
 

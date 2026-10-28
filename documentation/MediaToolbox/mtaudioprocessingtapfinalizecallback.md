@@ -24,7 +24,7 @@ typealias MTAudioProcessingTapFinalizeCallback = (MTAudioProcessingTap) -> Void
 typedef void (*)(const struct opaqueMTAudioProcessingTap *) MTAudioProcessingTapFinalizeCallback;
 ```
 
-#### Overview
+## Overview
 
 This callback is called when it is safe to free any buffers or other state associated with the tap. This callback will be called exactly once when the MTAudioProcessingTap object is finalized. If tapStorage was allocated in the init callback, it should be freed here.
 

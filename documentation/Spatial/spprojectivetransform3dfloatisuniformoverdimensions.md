@@ -19,11 +19,11 @@
 static bool SPProjectiveTransform3DFloatIsUniformOverDimensions(SPProjectiveTransform3DFloat transform, SPAxis dimensionFlags);
 ```
 
-#### Return Value
+## Return Value
 
 @P true if the transform is affine, rectilinear, and the specified axes have equal scales.
 
-#### Discussion
+## Discussion
 
 Returns `true` if the transform is affine and scales equally over the specified dimensions.
 

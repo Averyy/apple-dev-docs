@@ -21,7 +21,7 @@ Specifies a medium person name components style.
 case medium
 ```
 
-#### Discussion
+## Discussion
 
 The rawValue of `medium` is 2.
 

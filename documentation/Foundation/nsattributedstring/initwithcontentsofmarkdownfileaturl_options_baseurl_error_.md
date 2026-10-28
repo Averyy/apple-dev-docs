@@ -21,7 +21,7 @@ Creates an attributed string from the contents of a specified URL that contains 
 - (instancetype) initWithContentsOfMarkdownFileAtURL:(NSURL *) markdownFile options:(NSAttributedStringMarkdownParsingOptions *) options baseURL:(NSURL *) baseURL error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An attributed string with the parsed Markdown text and styling, or `nil` if parsing the data fails.
 

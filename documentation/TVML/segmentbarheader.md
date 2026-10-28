@@ -4,7 +4,7 @@
 
 Displays information above a segment bar.
 
-#### Overview
+## Overview
 
 The `segmentBarHeader` element displays information that is used to describe the contents of a `segmentBar` element. Here’s an example that has a title and subtitle above a segment bar that contains one item.
 
@@ -20,13 +20,13 @@ The `segmentBarHeader` element displays information that is used to describe the
 </segmentBarHeader>
 ```
 
-##### Subelements of segmentBarHeader
+### Subelements of segmentBarHeader
 
 - [segmentBar](./segmentbar.md)
 - [subtitle](./subtitle.md)
 - [title](./title.md)
 
-##### Elements that Use segmentBarHeader
+### Elements that Use segmentBarHeader
 
 - [list](./list.md)
 

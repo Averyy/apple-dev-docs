@@ -21,7 +21,7 @@ Returns all definitions whose user-editable inputs, in order, match the given va
 final func definitionsMatching(inputs inputTypes: [ComputeNodeGraph.ValueType]) -> [ComputeNodeGraph.NodeDefinition]
 ```
 
-#### Discussion
+## Discussion
 
 Non-user-editable inputs (framework-injected contexts, state bindings, etc.) are skipped when comparing the input sequence — callers pass only the user-visible types.
 

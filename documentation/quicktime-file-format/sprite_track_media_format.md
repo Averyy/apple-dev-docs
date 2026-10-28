@@ -5,7 +5,7 @@
 
 A media format for that stores sprite track information in atoms.
 
-#### Overview
+## Overview
 
 > ❗ **Important**: Sprite media is deprecated in the QuickTime file format. The information that follows documents existing content containing sprite media and should not be used for new development.
 
@@ -19,13 +19,13 @@ In addition to the sprite atoms, the QT atom container contains one atom of type
 
 The image container atom contains one atom of type `kImageAtomType` for each image in the key frame sample. The image atom IDs are numbered from `1` to the number of images (`numImages`). Each image atom contains a leaf atom that holds the image data (type `kSpriteImageDataAtomType`) and an optional leaf atom (type `kSpriteNameAtomType`) that holds the name of the image.
 
-#### Sprite Media Format Atoms
+## Sprite Media Format Atoms
 
 The sprite track’s sample format enables you to store the atoms necessary to describe action lists that are executed in response to QuickTime events. [QT atom container description key](./qt_atom_container_description_key.md) defines a grammar for constructing valid action sprite samples, which may include complex expressions.
 
 Both key frame samples and override samples support the sprite action atoms. Override samples override actions at the QuickTime event level. In effect, what you do by overriding is to completely replace one event handler and all its actions with another. The sprite track’s `kSpriteTrackPropertySampleFormat` property has no effect on how actions are performed. The behavior is similar to the default `kKeyFrameAndSingleOverride` format where, if in a given override sample there is no handler for the event, the key frame’s handler is used, if there is one.
 
-#### Sprite Media Format Extensions
+## Sprite Media Format Extensions
 
 This section describes some of the atom types and IDs used to extend the sprite track’s media format, thus enabling action sprite capabilities.
 
@@ -33,7 +33,7 @@ A complete description of the grammar for sprite media handler samples, includin
 
 > ❗ **Important**: Some sprite track property atoms were added in QuickTime 4. In particular, you must set the `kSpriteTrackPropertyHasActions` track property in order for your sprite actions to be executed.
 
-#### Sprite Track Property Atoms
+## Sprite Track Property Atoms
 
 The following constants represent atom types for sprite track properties. These atoms are applied to the whole track, not just to a single sample.
 

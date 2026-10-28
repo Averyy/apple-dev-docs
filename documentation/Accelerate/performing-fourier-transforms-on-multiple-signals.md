@@ -5,11 +5,11 @@
 
 Use Accelerate’s multiple-signal fast Fourier transform (FFT) functions to transform multiple signals with a single function call.
 
-#### Overview
+## Overview
 
 vDSP provides functions for performing fast Fourier transforms (FFTs) on multiple signals with a single function call. Transforming multiple signals is suited to processing stereo audio data or data that’s aquired from multiple sources.
 
-##### Create a Composite Sine Wave
+### Create a Composite Sine Wave
 
 The examples in this article use the following function to create an array with values that represent a composite sine wave:
 
@@ -50,7 +50,7 @@ static func makeCompositeSineWave(from frequencyAmplitudePairs: [(f: Float,
 }
 ```
 
-##### Perform FFT on Multiple Real Signals
+### Perform FFT on Multiple Real Signals
 
 The vDSP multiple-signal FFT functions accept multiple signals concatenated together. The following code creates a single 1024 element array from four separate composite sine waves:
 
@@ -226,7 +226,7 @@ for i in 0 ..< signalCount {
 }
 ```
 
-##### Perform FFT on Multiple Complex Signals
+### Perform FFT on Multiple Complex Signals
 
 A complex signal contains two real signals, one in the real parts and one in the imaginary parts. The following code creates two 1024-element arrays that contain the real and imaginary parts of four 256-element complex signals:
 

@@ -21,11 +21,11 @@ Creates a *search messages* intent object with the specified search criteria.
 convenience init(recipients: [INPerson]?, senders: [INPerson]?, searchTerms: [String]?, attributes: INMessageAttributeOptions = [], dateTimeRange: INDateComponentsRange?, identifiers: [String]?, notificationIdentifiers: [String]?, speakableGroupNames: [INSpeakableString]?)
 ```
 
-#### Return Value
+## Return Value
 
 An initialized intent or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 Normally, you do not create instances of this class yourself. Instead, Siri creates instances when the user asks to search their messages. However, you can use this method during testing to create intent objects in order to validate your intent handling code paths. Specify `nil` for any parameters that you do not want used during the search.
 

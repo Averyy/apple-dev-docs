@@ -19,7 +19,7 @@ A trait that reports the alignment the navigation bar resolved for its title.
 @interface UITraitNavigationTitleAlignment : NSObject
 ```
 
-#### Overview
+## Overview
 
 Read this trait from a custom navigation bar title view to discover the alignment the system chose, so the view can lay out its content to match. When the system has resolved an alignment the trait reports it, Leading or Center; otherwise it is Automatic.
 

@@ -23,11 +23,11 @@ func isStrictSubset<S>(of possibleStrictSuperset: S) -> Bool where Element == S.
 
 Available when `Element` conforms to `Hashable`.
 
-#### Return Value
+## Return Value
 
 `true` is the set is strict subset of `possibleStrictSuperset`; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 Set *A* is a strict subset of another set *B* if every member of *A* is also a member of *B* and *B* contains at least one element that is not a member of *A*.
 

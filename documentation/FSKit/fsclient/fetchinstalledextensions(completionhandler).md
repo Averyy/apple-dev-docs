@@ -23,7 +23,7 @@ var installedExtensions: [FSModuleIdentity] { get async throws }
 - (void) fetchInstalledExtensionsWithCompletionHandler:(void (^)(NSArray<FSModuleIdentity *> *, NSError *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 In Swift, you can either call this method and pass a completion handler closure, or get the value of the `installedExtensions` property with the `async` keyword.
 

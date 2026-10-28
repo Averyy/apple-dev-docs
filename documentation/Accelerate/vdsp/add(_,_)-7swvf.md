@@ -25,11 +25,11 @@ static func add<T, U>(_ vectorA: T, _ vectorB: U) -> [Float] where T : Accelerat
 
 - [Using vDSP for vector-based arithmetic](../using-vdsp-for-vector-based-arithmetic.md)
 
-#### Return Value
+## Return Value
 
 The output vector, `C`.
 
-#### Discussion
+## Discussion
 
 This function calculates the sums of the first `N` elements of input vectors `A` and `B`, and writes the result to output vector `C`, as follows:
 

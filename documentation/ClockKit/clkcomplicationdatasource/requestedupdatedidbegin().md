@@ -21,7 +21,7 @@ optional func requestedUpdateDidBegin()
 - (void) requestedUpdateDidBegin;
 ```
 
-#### Discussion
+## Discussion
 
 When the date returned by the [`getNextRequestedUpdateDate(handler:)`](./getnextrequestedupdatedate%28handler%29.md) method of your data source passes, ClockKit begins a scheduled update of your complication. At the start of that update, it calls this method or the [`requestedUpdateBudgetExhausted()`](./requestedupdatebudgetexhausted%28%29.md) method to let you know that the requested update has begun. These methods are your opportunity to tell ClockKit whether or not you’ve new data to add to your timeline.
 

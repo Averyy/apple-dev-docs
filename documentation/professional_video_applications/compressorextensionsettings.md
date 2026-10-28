@@ -19,7 +19,7 @@ protocol CompressorExtensionSettings
 @protocol CompressorExtensionSettings
 ```
 
-#### Overview
+## Overview
 
 Encoder extensions provide a default settings template with audio and video settings for the extension’s custom output format. To allow users to view and customize these settings, implement the [`edit(_:completionHandler:)`](./compressorextensionsettings/edit%28_,completionhandler%29.md) method.
 

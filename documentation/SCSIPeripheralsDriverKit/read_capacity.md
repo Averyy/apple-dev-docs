@@ -15,11 +15,11 @@ Fills a Command Descriptor Block (CDB) to perform a SCSI read-capacity command.
 bool READ_CAPACITY(SCSIDeviceOutParameters *request, UInt64 bufAddr, SCSIDeviceInParameters *response, UInt64 senseBufAddr);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the call successfully fills the CDB; `false`, otherwise.
 
-#### Discussion
+## Discussion
 
 Use this method in your dext to prefill a 16-byte CDB for the standard `READ CAPACITY` SCSI command.
 

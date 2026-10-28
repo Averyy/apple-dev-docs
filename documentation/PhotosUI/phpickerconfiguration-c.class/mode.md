@@ -19,7 +19,7 @@ A layout type for the photos in the picker’s view.
 @property (nonatomic) PHPickerMode mode;
 ```
 
-#### Discussion
+## Discussion
 
 This property offers two ways that photos lay out in the picker:
 

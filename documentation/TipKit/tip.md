@@ -21,7 +21,7 @@ A type that sets a tip’s content, as well as the conditions for when it displa
 protocol Tip : Identifiable, Sendable
 ```
 
-#### Overview
+## Overview
 
 Use this protocol for setting a tip’s content, as well as defining the conditions for when it appears in a view. You create custom tips by declaring types that conform to the `Tip` protocol. Set your tip’s content by giving it a [`title`](./tip/title.md),  [`message`](./tip/message.md),  [`image`](./tip/image.md), and a list of [`actions`](./tip/actions.md).
 

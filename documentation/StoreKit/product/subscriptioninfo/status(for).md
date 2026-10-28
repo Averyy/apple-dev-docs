@@ -21,11 +21,11 @@ Gets the subscription status for a subscription group identifier.
 static func status(for groupID: String) async throws -> [Product.SubscriptionInfo.Status]
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`Product.SubscriptionInfo.Status`](./status-swift.struct.md). This array is empty if the customer has never subscribed to a product in this subscription group.
 
-#### Discussion
+## Discussion
 
 To get the subscription group identifier of a subscription, see [`subscriptionGroupID`](./subscriptiongroupid.md) in [`Product.SubscriptionInfo`](../subscriptioninfo.md), or [`subscriptionGroupID`](../../transaction/subscriptiongroupid.md) in [`Transaction`](../../transaction.md). You originally create subscription group identifiers when you set up Apple In-App Purchases in App Store Connect. For more information, see [Offer auto-renewable subscriptions](https://help.apple.com/app-store-connect/#/dev75708c031).
 

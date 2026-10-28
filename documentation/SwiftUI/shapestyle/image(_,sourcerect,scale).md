@@ -24,7 +24,7 @@ static func image(_ image: Image, sourceRect: CGRect = CGRect(x: 0, y: 0, width:
 
 Available when `Self` is `ImagePaint`.
 
-#### Discussion
+## Discussion
 
 For information about how to use shape styles, see [`ShapeStyle`](../shapestyle.md).
 

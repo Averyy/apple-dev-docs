@@ -5,7 +5,7 @@
 
 Learn how to format strings to pass to the API client.
 
-#### Overview
+## Overview
 
 When using command-line utilities to pass a string to the API client, enclose the string in single quotation marks to treat the text literally. When you enclose a string in double quotation marks, you need to escape certain ASCII characters (for example, the $ character).
 

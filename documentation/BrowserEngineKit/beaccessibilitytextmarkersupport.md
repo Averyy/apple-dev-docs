@@ -24,7 +24,7 @@ protocol BEAccessibilityTextMarkerSupport : NSObjectProtocol
 @protocol BEAccessibilityTextMarkerSupport <NSObject>
 ```
 
-#### Overview
+## Overview
 
 In your alternative browser engine, implement [`BEAccessibilityTextMarkerSupport`](./beaccessibilitytextmarkersupport.md) on views that represent elements in the Document Object Model (DOM) to supply accessibility information about the element’s text to the system.
 

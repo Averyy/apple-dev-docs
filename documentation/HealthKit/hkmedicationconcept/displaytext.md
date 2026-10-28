@@ -24,7 +24,7 @@ var displayText: String { get }
 @property (nonatomic, copy, readonly) NSString * displayText;
 ```
 
-#### Discussion
+## Discussion
 
 The name of the medication a person enters or selects during medication onboarding.
 

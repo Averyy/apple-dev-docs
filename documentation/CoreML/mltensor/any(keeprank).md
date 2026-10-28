@@ -21,7 +21,7 @@ Computes logical OR on elements across all dimensions of a tensor where the scal
 func any(keepRank: Bool = false) -> MLTensor
 ```
 
-#### Return Value
+## Return Value
 
 The reduced tensor.
 

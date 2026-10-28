@@ -17,7 +17,7 @@ A placement for items in the navigation bar’s inline subtitle area.
 static let subtitle: ToolbarItemPlacement
 ```
 
-#### Discussion
+## Discussion
 
 The view appears when the navigation bar renders its title inline, and takes precedence over the value provided to the `View.navigationSubtitle(_:)` modifier.
 

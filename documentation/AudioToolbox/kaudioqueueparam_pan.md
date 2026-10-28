@@ -24,7 +24,7 @@ var kAudioQueueParam_Pan: AudioQueueParameterID { get }
 kAudioQueueParam_Pan
 ```
 
-#### Discussion
+## Discussion
 
 - –1 = hard left
 -   0 = center

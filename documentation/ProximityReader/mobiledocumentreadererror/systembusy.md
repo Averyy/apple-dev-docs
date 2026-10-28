@@ -17,7 +17,7 @@ An error that indicates the system is busy.
 case systemBusy
 ```
 
-#### Discussion
+## Discussion
 
 Try to perform the document request again later.
 

@@ -19,7 +19,7 @@ func releaseGlobally()
 - (void) releaseGlobally;
 ```
 
-#### Discussion
+## Discussion
 
 After this method is invoked, no other application can use the receiver.
 

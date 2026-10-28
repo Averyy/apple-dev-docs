@@ -15,7 +15,7 @@ The window displays none of the usual peripheral elements.
 static const NSWindowStyleMask NSBorderlessWindowMask;
 ```
 
-#### Discussion
+## Discussion
 
 Useful only for display or caching purposes. A window that uses `NSBorderlessWindowMask` can’t become key or main, unless the value of [`canBecomeKey`](./nswindow/canbecomekey.md) or [`canBecomeMain`](./nswindow/canbecomemain.md) is [`true`](../Swift/true.md). Note that you can set a window’s or panel’s style mask to `NSBorderlessWindowMask` in Interface Builder by deselecting Title Bar in the Appearance section of the Attributes inspector.
 

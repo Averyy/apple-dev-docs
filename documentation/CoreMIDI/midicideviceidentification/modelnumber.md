@@ -25,7 +25,7 @@ var modelNumber: (UInt8, UInt8)
 uint8_t modelNumber[2];
 ```
 
-#### Discussion
+## Discussion
 
 This value is 2 bytes long.
 

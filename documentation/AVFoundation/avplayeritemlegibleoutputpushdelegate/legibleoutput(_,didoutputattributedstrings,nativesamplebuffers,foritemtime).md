@@ -24,7 +24,7 @@ optional func legibleOutput(_ output: AVPlayerItemLegibleOutput, didOutputAttrib
 - (void) legibleOutput:(AVPlayerItemLegibleOutput *) output didOutputAttributedStrings:(NSArray<NSAttributedString *> *) strings nativeSampleBuffers:(NSArray *) nativeSamples forItemTime:(CMTime) itemTime;
 ```
 
-#### Discussion
+## Discussion
 
 For each media subtype in the array passed in to the `output` object’s  [`init(mediaSubtypesForNativeRepresentation:)`](../avplayeritemlegibleoutput/init%28mediasubtypesfornativerepresentation%29.md) method, the delegate receives sample buffers carrying data in its native format via the `nativeSamples` parameter if there is media data of that subtype in the media resource.
 

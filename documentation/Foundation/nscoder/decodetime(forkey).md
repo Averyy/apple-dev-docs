@@ -25,7 +25,7 @@ func decodeTime(forKey key: String) -> CMTime
 - (CMTime) decodeCMTimeForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 The `CMTime` structure associated with `key` in the archive.
 

@@ -17,7 +17,7 @@ A value that can appear in a nested array used to create an [`MLXArray`](./mlxar
 protocol NestedArrayElement
 ```
 
-#### Overview
+## Overview
 
 Conformance is recursive: the built-in [`HasDType`](./hasdtype.md) scalars conform and so does an `Array` of conforming values, adding one dimension.  A nested array therefore describes both the shape and the contents of an [`MLXArray`](./mlxarray.md):
 
@@ -28,7 +28,7 @@ let a = MLXArray([[1, 2, 3], [4, 5, 6]])
 
 This exists to express the nested array initializers, e.g. [`init(_:)`](./mlxarray/init%28_%29-1ocp6.md) – there should be no need to conform your own types to it.
 
-##### See Also
+### See Also
 
 - [Initialization](./initialization.md)
 

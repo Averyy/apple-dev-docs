@@ -22,11 +22,11 @@ Returns a Boolean value that indicates whether the given element exists in the s
 func contains(_ member: Self.Element) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `member` exists in the set; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 This example uses the `contains(_:)` method to test whether an integer is a member of a set of prime numbers.
 

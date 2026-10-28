@@ -24,7 +24,7 @@ class var zero: VNPoint { get }
 @property (class, strong, readonly) VNPoint * zeroPoint;
 ```
 
-#### Discussion
+## Discussion
 
 The origin point is (0.0, 0.0).
 

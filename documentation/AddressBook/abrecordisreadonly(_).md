@@ -19,7 +19,7 @@ func ABRecordIsReadOnly(_ record: ABRecordRef!) -> Bool
 extern bool ABRecordIsReadOnly(ABRecordRef record);
 ```
 
-#### Return Value
+## Return Value
 
 `true` ifrecord is read-only, `false` otherwise.
 

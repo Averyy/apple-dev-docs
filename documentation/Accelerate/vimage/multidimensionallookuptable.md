@@ -25,7 +25,7 @@ struct MultidimensionalLookupTable
 
 - [Applying color transforms to images with a multidimensional lookup table](../applying-color-transforms-to-images-with-a-multidimensional-lookup-table.md)
 
-#### Overview
+## Overview
 
 Use a multidimensional lookup table to transform the colors in an image. The lookup table defines an output color based on the input color values. The vImage multidimensional lookup table provides interpolation to compute output color values that don’t have an explicit entry in the table for a given input color.
 

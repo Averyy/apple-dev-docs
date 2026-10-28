@@ -24,7 +24,7 @@ An asynchronous watch operation that monitors value changes.
 case watch
 ```
 
-#### Discussion
+## Discussion
 
 The async sequence generates a separate event for each value update.
 

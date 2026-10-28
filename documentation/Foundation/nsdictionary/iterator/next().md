@@ -21,7 +21,7 @@ Returns the next key-value pair of a dictionary object as a tuple.
 final func next() -> (key: Any, value: Any)?
 ```
 
-#### Discussion
+## Discussion
 
 If all key-value pairs have been iterated over, this method returns `nil`.
 

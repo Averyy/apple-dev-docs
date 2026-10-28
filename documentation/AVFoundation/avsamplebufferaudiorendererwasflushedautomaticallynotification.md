@@ -21,7 +21,7 @@ A notification that fires whenever the receiver’s enqueued media data has been
 extern NSNotificationName const AVSampleBufferAudioRendererWasFlushedAutomaticallyNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The renderer may flush enqueued media data when the user routes playback to a new destination. The renderer may also flush enqueued media data when the playback rate of the attached AVSampleBufferRenderSynchronizer is changed (e.g. 1.0 -> 2.0 or 1.0 -> 0.0 -> 2.0), however no flush will occur for normal pauses (non-zero -> 0.0) and resumes (0.0 -> same non-zero rate as before).
 

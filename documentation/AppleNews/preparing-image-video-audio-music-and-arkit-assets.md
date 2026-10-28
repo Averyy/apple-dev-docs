@@ -5,7 +5,7 @@
 
 Add media assets to your article.
 
-#### Overview
+## Overview
 
 Images, videos, audio, music, and ARKit files serve a variety of purposes in your article. For example:
 
@@ -17,7 +17,7 @@ When you use such files, you provide the encoded URL in an Apple News Format pro
 
 > ❗ **Important**:  The maximum allowable file size for your article bundle, including remote and local media assets, is 450 MB. Verify that the total size of your article bundle doesn’t exceed this limit.
 
-##### Provide the URL in an Apple News Format Property
+### Provide the URL in an Apple News Format Property
 
 To include an asset in your article, provide a well-formatted and encoded URL to specify the location of the asset file.
 
@@ -41,7 +41,7 @@ To learn which URL property to use, see [`Audio`](../AppleNewsFormat/audio.md), 
 }
 ```
 
-##### Prepare an Image Asset
+### Prepare an Image Asset
 
 Follow the steps below to include an image in your article.
 
@@ -73,7 +73,7 @@ For images that span the full width of the document or the device, the recommend
 - Make the images bleed to both edges of the display.
 - Provide even padding in images.
 
-##### Prepare a Thumbnail Image Asset
+### Prepare a Thumbnail Image Asset
 
 For each article you publish, Apple News Format automatically creates an *article tile*. An article tile provides information about the article. It uses information from the article’s [`Metadata`](../AppleNewsFormat/metadata.md) object and appears in feeds, such as the Today feed, channel feeds, and topic feeds. Use `thumbnailURL` in your article metadata to specify the image you want to use in the article tile.
 
@@ -89,7 +89,7 @@ For each article you publish, Apple News Format automatically creates an *articl
 
 **Use an image from the article as the thumbnail image**.  If you use the same image in both places and it appears on the first screen of the article, it moves with an animated effect from the feed to the article. Using the same image improves the loading time of the article.
 
-##### Prepare a Video Asset
+### Prepare a Video Asset
 
 Follow the steps below to include a [`Video`](../AppleNewsFormat/video.md) or a [`VideoFill`](../AppleNewsFormat/videofill.md) in your article.
 
@@ -99,7 +99,7 @@ Follow the steps below to include a [`Video`](../AppleNewsFormat/video.md) or a 
 
 **Use supported HLS formats.** M3U playlist is the preferred format. For more information about HLS, see the iOS developer documentation about [HTTP Live Streaming](https://developer.apple.com/streaming/).
 
-##### Prepare a Video for Feeds
+### Prepare a Video for Feeds
 
 To add a video to your article, specify the `videoURL` property to the [`Metadata`](../AppleNewsFormat/metadata.md) object. You can also specify an image to use as the thumbnail image (`thumbnailURL`) when the video hasn’t played yet. A glyph appears on the thumbnail image, allowing people to play the video in feeds, such as the Today feed, channel feeds, and topic feeds.
 
@@ -114,7 +114,7 @@ To add a video to your article, specify the `videoURL` property to the [`Metadat
 
 **Use supported HLS formats**. M3U playlist is the preferred format. For more information about HLS, see [HTTP Live Streaming](https://developer.apple.com/streaming/).
 
-##### Prepare an Audio Asset
+### Prepare an Audio Asset
 
 Configure the [`Audio`](../AppleNewsFormat/audio.md) or [`Music`](../AppleNewsFormat/music.md) component to include an audio file in your article.
 

@@ -24,7 +24,7 @@ var completionDate: Date? { get }
 @property (nonatomic, retain, readonly, nullable) NSDate * completionDate;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `nil` until the challenged player completes it.
 

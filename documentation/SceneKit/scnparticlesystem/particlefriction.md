@@ -25,7 +25,7 @@ var particleFriction: CGFloat { get set }
 @property (nonatomic) CGFloat particleFriction;
 ```
 
-#### Discussion
+## Discussion
 
 Friction determines a particle’s resistance to sliding motion after a collision. (To define collision behavior, see the [`colliderNodes`](./collidernodes.md) property.) You can randomize the friction coefficients of particles in the system with the [`particleFrictionVariation`](./particlefrictionvariation.md) property.
 

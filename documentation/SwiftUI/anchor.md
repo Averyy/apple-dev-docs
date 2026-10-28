@@ -22,7 +22,7 @@ An opaque value derived from an anchor source and a particular view.
 struct Anchor<Value>
 ```
 
-#### Overview
+## Overview
 
 You can convert the anchor to a `Value` in the coordinate space of a target view by using a [`GeometryProxy`](./geometryproxy.md) to specify the target view.
 

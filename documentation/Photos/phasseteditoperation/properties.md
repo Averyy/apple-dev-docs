@@ -24,7 +24,7 @@ case properties
 PHAssetEditOperationProperties
 ```
 
-#### Discussion
+## Discussion
 
 To change an asset’s properties, create a change request with the [`init(for:)`](../phassetchangerequest/init%28for%29.md) method inside a [`PHPhotoLibrary`](../phphotolibrary.md) change block.
 

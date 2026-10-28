@@ -19,7 +19,7 @@ A configuration of a webpage for a representation as PDF data.
 static func pdf(region: WebPage.ExportedContentConfiguration.Region = .contents, allowTransparentBackground: Bool = false) -> WebPage.ExportedContentConfiguration
 ```
 
-#### Return Value
+## Return Value
 
 The PDF configuration of this page that will be used when producing its representation.
 

@@ -19,7 +19,7 @@ int64 netAmountTaxExclusive
 
 - [Reporting corrections](./reportcorrections.md)
 
-#### Discussion
+## Discussion
 
 Include this property in the line item to state the net amount in milli-units that you charged the customer, pre-tax, after you account for all refunds and restatements.
 

@@ -24,11 +24,11 @@ func voxelIndices() -> Data?
 - (NSData *) voxelIndices;
 ```
 
-#### Return Value
+## Return Value
 
 A data object containing [`MDLVoxelIndex`](../mdlvoxelindex.md) values.
 
-#### Discussion
+## Discussion
 
 The returned [`NSData`](../../Foundation/nsdata.md) object contains an array of [`MDLVoxelIndex`](../mdlvoxelindex.md) values describing the locations of voxels within the voxel array as well as their volumetric relationship to the object modeled by the voxel array.
 

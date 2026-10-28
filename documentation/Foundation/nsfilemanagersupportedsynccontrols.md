@@ -25,7 +25,7 @@ struct NSFileManagerSupportedSyncControls
 enum NSFileManagerSupportedSyncControls : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 Get an instance of this type by calling [`resourceValues(forKeys:)`](./url/resourcevalues%28forkeys%29.md) on a [`URL`](./url.md) instance (Swift) or [`getResourceValue(_:forKey:)`](./nsurl/getresourcevalue%28_,forkey%29.md) on an [`NSURL`](./nsurl.md) (Swift or Objective-C) and passing in the key [`ubiquitousItemSupportedSyncControlsKey`](./urlresourcekey/ubiquitousitemsupportedsynccontrolskey.md).
 

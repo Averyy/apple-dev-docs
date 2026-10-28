@@ -5,7 +5,7 @@
 
 Allow users to authenticate using NFC, USB, and Lightning security keys in your app or service.
 
-#### Overview
+## Overview
 
 Security key authentication supports physical security devices for authentication to web services, eliminating the need for passwords. Such devices are especially useful in high-security contexts with apps and websites that are able to handle the complexity that comes with account recovery due to security key loss.
 
@@ -13,7 +13,7 @@ Take special care when using physical devices for authentication. If the user lo
 
 > ❗ **Important**:  You must have an associated domain with the `webcredentials` service type when making a registration or assertion request; otherwise, the request returns an error. See [Supporting associated domains](../Xcode/supporting-associated-domains.md) for more information.__
 
-##### Register a New Account on a Service
+### Register a New Account on a Service
 
 The following code sets up the process of registration. Create an instance of [`ASAuthorizationSecurityKeyPublicKeyCredentialProvider`](./asauthorizationsecuritykeypublickeycredentialprovider.md) and pass it your relying party identifier, which is usually the service’s domain name.
 
@@ -35,7 +35,7 @@ Then specify the parameters for the types of credentials that your server suppor
 
 Because this is a registration request, the device displays a sheet asking the user to create a new credential.
 
-##### Connect to a Service with an Existing Account
+### Connect to a Service with an Existing Account
 
 After the user establishes an account with a service, they can connect and authenticate using the physical security device.
 
@@ -58,7 +58,7 @@ The device displays a sheet instructing the user about how to use the physical s
 
 > **Note**:  Unlike platform public key requests and other types of authorization requests, a security key request always shows a sign-in user interface. Ensure that your user is expecting to sign in with a security key before making a security key request.
 
-##### Respond to the Request
+### Respond to the Request
 
 [`ASAuthorizationControllerDelegate`](./asauthorizationcontrollerdelegate.md) provides information about the outcome of a registration or authentication request. Adopt this protocol to determine how to react to authorization success or errors. The following code defines [`authorizationController(controller:didCompleteWithAuthorization:)`](./asauthorizationcontrollerdelegate/authorizationcontroller%28controller,didcompletewithauthorization%29.md) to handle registration and assertion, as well as [`authorizationController(controller:didCompleteWithError:)`](./asauthorizationcontrollerdelegate/authorizationcontroller%28controller,didcompletewitherror%29.md) to handle any errors:
 

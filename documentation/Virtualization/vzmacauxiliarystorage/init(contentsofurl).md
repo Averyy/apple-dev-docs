@@ -15,7 +15,7 @@ Initializes an auxiliary storage object with data from the location at the URL y
 init(contentsOfURL URL: URL)
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to load the data from an auxiliary storage object stored on the file system. To create a new auxiliary storage object, use [`init(creatingStorageAt:hardwareModel:options:)`](./init%28creatingstorageat,hardwaremodel,options%29.md).
 

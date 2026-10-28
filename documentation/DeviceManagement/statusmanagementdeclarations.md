@@ -26,11 +26,11 @@ object StatusManagementDeclarations
 - [Installing, managing, updating, and removing apps](./installing-managing-updating-and-removing-apps.md)
 - [Installing packages](./installing-packages.md)
 
-#### Discussion
+## Discussion
 
 The name of the declaration status item is `management.declarations`.
 
-##### Status item availability
+### Status item availability
 
 |  |  |
 | --- | --- |
@@ -41,7 +41,7 @@ The name of the declaration status item is `management.declarations`.
 | Allowed in system scope | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 | Allowed in user scope | macOS, Shared iPad |
 
-##### Status item example
+### Status item example
 
 ```json
 {

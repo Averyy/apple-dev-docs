@@ -13,11 +13,11 @@
 errno_t mbuf_prepend(mbuf_t *mbuf, size_t len, mbuf_how_t how);
 ```
 
-#### Return Value
+## Return Value
 
 0 upon success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Prepend len bytes to an mbuf. If there is space (mbuf_leadingspace >= len), the mbuf's data ptr is changed and the same mbuf is returned. If there is no space, a new mbuf may be allocated and prepended to the mbuf chain. If the operation fails, the mbuf may be freed (*mbuf will be NULL).
 

@@ -25,11 +25,11 @@ func date(from string: String) -> Date?
 - (NSDate *) dateFromString:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 A date representation of `string`. If [`date(from:)`](./date%28from%29.md) can’t parse the string, returns `nil`.
 
-#### Discussion
+## Discussion
 
 For more information about using [`DateFormatter`](../dateformatter.md) to convert a string to a date, see [Working With Fixed Format Date Representations](../dateformatter.md#Working-With-Fixed-Format-Date-Representations). For a sample code playground, see [Displaying Human-Friendly Content](../displaying-human-friendly-content.md).
 

@@ -21,7 +21,7 @@ Used to encode an invocation of a distributed target (method or computed propert
 protocol DistributedTargetInvocationEncoder<SerializationRequirement>
 ```
 
-#### Forming an invocation
+## Forming an invocation
 
 On the sending-side an instance of an invocation is constructed by the runtime, and calls to: `recordGenericSubstitution`, `recordArgument`, `recordReturnType`, `recordErrorType`, and finally `doneRecording` are made (in this order).
 
@@ -33,7 +33,7 @@ An invocation implementation may decide to perform serialization right-away in t
 
 Once encoded, the system should use some underlying transport mechanism to send the bytes serialized by the invocation to the remote peer.
 
-#### Decoding an invocation
+## Decoding an invocation
 
 Since every actor system is going to deal with a concrete invocation type, they may implement decoding them whichever way is most optimal for the given system.
 

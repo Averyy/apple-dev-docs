@@ -21,7 +21,7 @@ Calculates the double-precision element-wise subtraction of two vectors, using t
 extern void vDSP_vsubD(const double *__B, vDSP_Stride __IB, const double *__A, vDSP_Stride __IA, double *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the differences of the first `N` elements of input vectors `A` and `B`, and writes the result to output vector `C`, as follows:
 

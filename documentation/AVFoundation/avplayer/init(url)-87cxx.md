@@ -26,11 +26,11 @@ init(url URL: URL)
 - (instancetype) initWithURL:(NSURL *) URL;
 ```
 
-#### Return Value
+## Return Value
 
 A new player instance initialized to play the audiovisual resource specified by `URL`.
 
-#### Discussion
+## Discussion
 
 This method implicitly creates an [`AVPlayerItem`](../avplayeritem.md) object. You can get the player item using [`currentItem`](./currentitem.md).
 

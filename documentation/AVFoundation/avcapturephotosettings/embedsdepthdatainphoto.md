@@ -26,7 +26,7 @@ var embedsDepthDataInPhoto: Bool { get set }
 
 - [Capturing photos with depth](../capturing-photos-with-depth.md)
 
-#### Discussion
+## Discussion
 
 When this property is [`true`](../../Swift/true.md) (the default), and depth data capture is enabled with the [`isDepthDataDeliveryEnabled`](./isdepthdatadeliveryenabled.md) property, the [`AVCapturePhoto`](../avcapturephoto.md) class includes the depth map as an embedded attachment when you flatten the photo data for output in compatible file formats.
 

@@ -23,7 +23,7 @@ var scrollDirection: UICollectionView.ScrollDirection { get set }
 @property (nonatomic) UICollectionViewScrollDirection scrollDirection;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`UICollectionView.ScrollDirection.vertical`](../uicollectionview/scrolldirection/vertical.md).
 

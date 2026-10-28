@@ -24,7 +24,7 @@ protocol NSTextAttachmentLayout : NSObjectProtocol
 @protocol NSTextAttachmentLayout <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The `NSTextAttachmentLayout` protocol is the interface for working with attachment objects with an [`NSTextAttachmentViewProvider`](./nstextattachmentviewprovider.md) using a [`NSTextLayoutManager`](./nstextlayoutmanager.md) in macOS 12 and iOS 15 and later.
 

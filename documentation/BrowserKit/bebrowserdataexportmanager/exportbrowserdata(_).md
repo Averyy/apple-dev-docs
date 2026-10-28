@@ -21,7 +21,7 @@ final func exportBrowserData(_ browserDataStream: AsyncStream<BEBrowserData>) as
 
 - [Transferring browsing data to another browser](../transferring-browsing-data-to-another-browser.md)
 
-#### Discussion
+## Discussion
 
 Call this method to stream browsing data to the system, as identified by [`dataTypes`](../beexportoptions/datatypes-swift.property.md).
 

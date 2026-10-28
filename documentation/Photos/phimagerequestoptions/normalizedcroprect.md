@@ -24,7 +24,7 @@ var normalizedCropRect: CGRect { get set }
 @property (nonatomic, assign) CGRect normalizedCropRect;
 ```
 
-#### Discussion
+## Discussion
 
 To request a cropped image, specify the crop rectangle in a unit coordinate space relative to the image. In this coordinate system, the point `{0.0,0.0}` refers to the upper left corner of the image, and the point `{1.0,1.0}` refers to the opposite corner regardless of the image’s aspect ratio.
 

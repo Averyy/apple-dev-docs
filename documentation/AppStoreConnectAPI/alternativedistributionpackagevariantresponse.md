@@ -15,7 +15,7 @@ A response containing a single variant of an alternative distribution package.
 object AlternativeDistributionPackageVariantResponse
 ```
 
-#### Discussion
+## Discussion
 
 This object is the response that contains a single alternative distribution package variant. For more information, see [`Read variant information for an alternative distribution package`](./get-v1-alternativedistributionpackagevariants-_id_.md). The schema of the response body is below.
 

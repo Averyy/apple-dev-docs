@@ -19,7 +19,7 @@ var contentResizeIncrements: NSSize { get set }
 @property NSSize contentResizeIncrements;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property restricts the user’s ability to resize the window so the width and height of its content view change by multiples of width and height increments. As the user resizes the window, the size of its content view changes by integral multiples of `contentResizeIncrements.width` and `contentResizeIncrements.height`. However, you can set a window’s size to any width and height programmatically. This property takes precedence over [`resizeIncrements`](./resizeincrements.md).
 

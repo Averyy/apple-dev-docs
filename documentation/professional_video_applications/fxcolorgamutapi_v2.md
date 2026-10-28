@@ -23,7 +23,7 @@ protocol FxColorGamutAPI_v2
 
 - [Managing color space and gamut in plug-ins](../Professional-Video-Applications/managing-color-space-and-gamut-in-plug-ins.md)
 
-#### Overview
+## Overview
 
 The `FxColorGamutAPI` retrieves the matrices for converting between RGB (in the project’s color gamut) and YCbCr. Use this protocol when your plug-in converts to YCbCr or from color pixels to grayscale.
 

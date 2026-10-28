@@ -11,11 +11,11 @@ Gets the timer interval for use by the timer event.
 virtual AbsoluteTime getTimerInterval();
 ```
 
-#### Return Value
+## Return Value
 
 Returns the interval for the timer event.
 
-#### Overview
+## Overview
 
 This method is called each time the timer event is enabled through addTimer(). The default implementation is set to return a value such that the timer event runs n times each cycle of the audio engine through the sample buffer. The value n is stored as the instance variable: numErasesPerBuffer. The default value of numErasesPerBuffer is set to IOAUDIOENGINE_DEFAULT_NUM_ERASES_PER_BUFFER which is 4. A subclass may change the value of numErasesPerBuffer or override getTimerInterval. If it is overridden, the subclass should call the superclass's implementation, compare its interval with the superclass's and return the smaller of the two.
 

@@ -25,13 +25,13 @@ struct CFSocketCallBackType
 enum CFSocketCallBackType : CFOptionFlags;
 ```
 
-#### Overview
+## Overview
 
 The callback types for which a callback is made is determined when the CFSocket object is created, such as with [`CFSocketCreate(_:_:_:_:_:_:_:)`](./cfsocketcreate%28_,_,_,_,_,_,_%29.md), or later with [`CFSocketEnableCallBacks(_:_:)`](./cfsocketenablecallbacks%28_,_%29.md) and [`CFSocketDisableCallBacks(_:_:)`](./cfsocketdisablecallbacks%28_,_%29.md).
 
 The `kCFSocketReadCallBack`, `kCFSocketAcceptCallBack`, and `kCFSocketDataCallBack` callbacks are mutually exclusive.
 
-##### Version-Notes
+### Version-Notes
 
 `kCFSocketWriteCallBack` is available in macOS 10.2 and later.
 

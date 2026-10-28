@@ -16,7 +16,7 @@
 kSENSE_KEY_DATA_PROTECT
 ```
 
-#### Discussion
+## Discussion
 
 Device server indicates a data protect condition.
 

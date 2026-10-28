@@ -19,7 +19,7 @@ func MDQueryCopyValuesOfAttribute(_ query: MDQuery!, _ name: CFString!) -> CFArr
 CFArrayRef MDQueryCopyValuesOfAttribute(MDQueryRef query, CFStringRef name);
 ```
 
-#### Return Value
+## Return Value
 
 A CFArrayRef containing the value objects for the specified attribute. The array contents are not ordered and contain only one occurrence of each value. The array contents may change over time if the query is configured for live-updates.
 

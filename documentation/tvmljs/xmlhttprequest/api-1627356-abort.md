@@ -17,7 +17,7 @@ Cancels any network activity.
 void abort();
 ```
 
-#### Discussion
+## Discussion
 
 This method raises a `DOMException` if any arguments are passed into this function.
 

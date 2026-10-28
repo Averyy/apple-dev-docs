@@ -27,11 +27,11 @@ init(forReadingWith data: Data)
 - (instancetype) initForReadingWithData:(NSData *) data;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSKeyedUnarchiver`](../nskeyedunarchiver.md) object initialized for for decoding `data`.
 
-#### Discussion
+## Discussion
 
 When you finish decoding data, you should invoke [`finishDecoding()`](./finishdecoding%28%29.md).
 

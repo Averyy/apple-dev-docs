@@ -15,7 +15,7 @@ Determine if a vnode is being used as a swap file.
 int vnode_isswap(vnode_t vp);
 ```
 
-#### Return Value
+## Return Value
 
 Nonzero if the vnode is being used as swap, 0 otherwise.
 

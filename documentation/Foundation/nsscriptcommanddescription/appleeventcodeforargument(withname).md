@@ -20,7 +20,7 @@ func appleEventCodeForArgument(withName argumentName: String) -> FourCharCode
 - (FourCharCode) appleEventCodeForArgumentWithName:(NSString *) argumentName;
 ```
 
-#### Return Value
+## Return Value
 
 The code for the specified argument.
 

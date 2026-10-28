@@ -25,7 +25,7 @@ func CFCharacterSetCreateWithBitmapRepresentation(_ alloc: CFAllocator!, _ theDa
 extern CFCharacterSetRefCFCharacterSetCreateWithBitmapRepresentation(CFAllocatorRef alloc, CFDataRef theData);
 ```
 
-#### Return Value
+## Return Value
 
 A new character set containing the indicated characters from `theData`. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

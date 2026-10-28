@@ -21,11 +21,11 @@ Common protocol to which all actors conform.
 protocol Actor : AnyObject, Sendable
 ```
 
-#### Overview
+## Overview
 
 The `Actor` protocol generalizes over all `actor` types. Actor types implicitly conform to this protocol.
 
-##### Actors and SerialExecutors
+### Actors and SerialExecutors
 
 By default, actors execute tasks on a shared global concurrency thread pool. This pool is shared by all default actors and tasks, unless an actor or task specified a more specific executor requirement.
 

@@ -25,7 +25,7 @@ func setPersistentDomain(_ domain: [String : Any], forName domainName: String)
 - (void) setPersistentDomain:(NSDictionary<NSString *,id> *) domain forName:(NSString *) domainName;
 ```
 
-#### Discussion
+## Discussion
 
 This method removes the existing keys from the specified domain and then adds the new keys you provide. After updating the keys, this method generates a [`didChangeNotification`](./didchangenotification.md) for registered observers.
 

@@ -23,7 +23,7 @@ var isSiteSpecificQuirksModeEnabled: Bool { get set }
 @property (nonatomic, getter=isSiteSpecificQuirksModeEnabled) BOOL siteSpecificQuirksModeEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The default value for this preference is [`true`](../../Swift/true.md).
 

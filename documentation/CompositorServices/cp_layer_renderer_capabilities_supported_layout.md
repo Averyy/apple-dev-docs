@@ -16,11 +16,11 @@ Returns the layout at the specified index in the layer capabilities.
 cp_layer_renderer_layout cp_layer_renderer_capabilities_supported_layout(cp_layer_renderer_capabilities_t layer_capabilities, cp_supported_layouts_options options, size_t index);
 ```
 
-#### Return Value
+## Return Value
 
 The layout at the specified index.
 
-#### Discussion
+## Discussion
 
 Use this function to determine what texture layouts are available for you to use.
 

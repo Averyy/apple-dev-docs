@@ -24,7 +24,7 @@ var currentDrawable: (any CAMetalDrawable)? { get }
 @property (nonatomic, readonly, nullable) id<CAMetalDrawable> currentDrawable;
 ```
 
-#### Discussion
+## Discussion
 
 If all drawable objects are in use, the value of this property is `nil`. Your app should check that [`currentDrawable`](./currentdrawable.md) isn’t `nil` before attempting to draw. The view changes the value of this property only after returning from a drawing function, either [`draw(_:)`](../../UIKit/uiview/draw%28_%29.md) from a subclassed instance of the view, or [`draw(in:)`](../mtkviewdelegate/draw%28in%29.md) from the view’s delegate.
 

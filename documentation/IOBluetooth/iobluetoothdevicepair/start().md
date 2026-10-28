@@ -19,7 +19,7 @@ func start() -> IOReturn
 - (IOReturn) start;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOReturn or Bluetooth error code, if the pairing could not be started.
 

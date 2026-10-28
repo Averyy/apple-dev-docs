@@ -16,7 +16,7 @@ Sets the command generation.
 void (*setCommandGeneration)(void *self, UInt32 generation);
 ```
 
-#### Discussion
+## Discussion
 
 This sets the bus generation this ORB should be appended in. It is only meaningful when combined with the kFWSBP2CommandCheckGeneration flags above.
 

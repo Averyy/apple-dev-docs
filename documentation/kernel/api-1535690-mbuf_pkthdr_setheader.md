@@ -13,11 +13,11 @@
 void mbuf_pkthdr_setheader(mbuf_t mbuf, void *header);
 ```
 
-#### Return Value
+## Return Value
 
 0 upon success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Sets the pointer to the packet header.
 

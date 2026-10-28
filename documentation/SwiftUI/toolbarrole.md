@@ -21,7 +21,7 @@ The purpose of content that populates the toolbar.
 struct ToolbarRole
 ```
 
-#### Overview
+## Overview
 
 A toolbar role provides a description of the purpose of content that populates the toolbar. The purpose of the content influences how a toolbar renders its content. For example, a [`browser`](./toolbarrole/browser.md) will automatically leading align the title of a toolbar in iPadOS.
 

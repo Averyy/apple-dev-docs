@@ -25,7 +25,7 @@ func CFBagGetCountOfValue(_ theBag: CFBag!, _ value: UnsafeRawPointer!) -> CFInd
 extern CFIndex CFBagGetCountOfValue(CFBagRef theBag, const void *value);
 ```
 
-#### Return Value
+## Return Value
 
 The number of times `value` occurs in `theBag`.
 

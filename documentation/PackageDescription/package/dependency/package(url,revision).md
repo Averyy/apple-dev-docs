@@ -15,11 +15,11 @@ Adds a remote package dependency with a specific revision requirement.
 static func package(url: String, revision: String) -> Package.Dependency
 ```
 
-#### Return Value
+## Return Value
 
 A `Package.Dependency` instance.
 
-#### Discussion
+## Discussion
 
 ```swift
 .package(url: "https://example.com/example-package.git", revision: "aa681bd6c61e22df0fd808044a886fc4a7ed3a65"),

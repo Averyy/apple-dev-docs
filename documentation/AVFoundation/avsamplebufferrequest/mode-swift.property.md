@@ -25,7 +25,7 @@ var mode: AVSampleBufferRequest.Mode { get set }
 @property (nonatomic, assign) AVSampleBufferRequestMode mode;
 ```
 
-#### Discussion
+## Discussion
 
 Default is [`AVSampleBufferRequest.Mode.immediate`](./mode-swift.enum/immediate.md).
 

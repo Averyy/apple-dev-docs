@@ -21,7 +21,7 @@ The relative joint transforms of the model entity.
 @preconcurrency var jointTransforms: [Transform] { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Call `RealityKit/BodyTrackedEntity/jointNames` to determine the name and order of the joints.
 

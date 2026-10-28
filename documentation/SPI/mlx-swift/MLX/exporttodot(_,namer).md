@@ -17,11 +17,11 @@ A [GraphViz](https://graphviz.org) `DOT` representation of the compute graph tha
 func exportToDot(_ outputs: [MLXArray], namer: NodeNamer? = nil) -> String
 ```
 
-#### Return Value
+## Return Value
 
 The graph in `DOT` format
 
-#### Discussion
+## Discussion
 
 The arrays are not evaluated – this describes the graph as it currently stands.
 
@@ -31,7 +31,7 @@ let dot = exportToDot([x * 2 + 1])
 try dot.write(to: url, atomically: true, encoding: .utf8)
 ```
 
-##### See Also
+### See Also
 
 - [`graphDescription(_:namer:)`](./graphdescription%28_,namer%29.md)
 - [`NodeNamer`](./nodenamer.md)

@@ -22,7 +22,7 @@ class CLVisit
 @interface CLVisit : NSObject
 ```
 
-#### Overview
+## Overview
 
 A [`CLVisit`](./clvisit.md) object encapsulates information about places that the user has been. Visit objects are created by the system and delivered by the [`CLLocationManager`](./cllocationmanager.md) object to its delegate after you start the delivery of events. The visit includes the location where the visit occurred and information about the arrival and departure times as relevant. You do not create visit objects directly, nor should you subclass [`CLVisit`](./clvisit.md).
 

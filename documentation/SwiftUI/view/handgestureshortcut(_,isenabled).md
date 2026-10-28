@@ -21,7 +21,7 @@ nonisolated
 func handGestureShortcut(_ shortcut: HandGestureShortcut, isEnabled: Bool = true) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Performing the control’s shortcut while the control is anywhere in the frontmost scene is equivalent to direct interaction with the control to perform its primary action.
 

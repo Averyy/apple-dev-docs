@@ -10,18 +10,18 @@ framework: "swift-configuration/Configuration"
 
 Learn about the [`InMemoryProvider`](./inmemoryprovider.md) and [`MutableInMemoryProvider`](./mutableinmemoryprovider.md) built-in types.
 
-#### Overview
+## Overview
 
 Swift Configuration provides two in-memory providers, which you directly instantiate with the desired keys and values, rather than parsing them from another representation. These providers are particularly useful for testing, providing fallback values, and bridging with other configuration systems.
 
 - [`InMemoryProvider`](./inmemoryprovider.md) is an immutable value type, and can be useful for defining overrides and fallbacks in a provider hierarchy.
 - [`MutableInMemoryProvider`](./mutableinmemoryprovider.md) is a mutable reference type, allowing you to update values and automatically notifying any watchers. It can be used to bridge from other stateful, callback-based configuration sources.
 
-##### InMemoryProvider
+### InMemoryProvider
 
 The [`InMemoryProvider`](./inmemoryprovider.md) is ideal for static configuration values that don’t change during application runtime.
 
-###### Basic usage
+#### Basic usage
 
 Create an [`InMemoryProvider`](./inmemoryprovider.md) with a dictionary of configuration values:
 
@@ -38,7 +38,7 @@ let host = config.string(forKey: "database.host") // "localhost"
 let port = config.int(forKey: "database.port") // 5432
 ```
 
-###### Using with hierarchical keys
+#### Using with hierarchical keys
 
 You can use [`AbsoluteConfigKey`](./absoluteconfigkey.md) for more complex key structures:
 
@@ -50,7 +50,7 @@ let provider = InMemoryProvider(values: [
 ])
 ```
 
-###### Configuration context
+#### Configuration context
 
 The in-memory provider performs exact matching of config keys, including the context. This allows you to provide different values for the same key path based on contextual information.
 
@@ -90,11 +90,11 @@ config.double(
 ) // 30.0
 ```
 
-##### MutableInMemoryProvider
+### MutableInMemoryProvider
 
 The [`MutableInMemoryProvider`](./mutableinmemoryprovider.md) allows you to modify configuration values at runtime and notify watchers of changes.
 
-###### Basic usage
+#### Basic usage
 
 ```swift
 let provider = MutableInMemoryProvider()
@@ -105,7 +105,7 @@ let config = ConfigReader(provider: provider)
 let host = config.string(forKey: "database.host") // "localhost"
 ```
 
-###### Updating values
+#### Updating values
 
 You can update values after creation, and the provider notifies any watchers:
 
@@ -117,7 +117,7 @@ provider.setValue("debug", forKey: "logging.level")
 provider.setValue("info", forKey: "logging.level") 
 ```
 
-###### Watching for changes
+#### Watching for changes
 
 Use the provider’s async sequence to watch for configuration changes:
 
@@ -134,9 +134,9 @@ try await config.watchString(
 }
 ```
 
-##### Common Use Cases
+### Common Use Cases
 
-###### Testing
+#### Testing
 
 In-memory providers are excellent for unit testing:
 
@@ -154,7 +154,7 @@ func testDatabaseConnection() {
 }
 ```
 
-###### Fallback values
+#### Fallback values
 
 Use [`InMemoryProvider`](./inmemoryprovider.md) as a fallback in a provider hierarchy:
 
@@ -172,7 +172,7 @@ let config = ConfigReader(providers: [
 ])
 ```
 
-###### Bridging other systems
+#### Bridging other systems
 
 Use [`MutableInMemoryProvider`](./mutableinmemoryprovider.md) to bridge configuration from other systems:
 

@@ -24,7 +24,7 @@ case notSet
 HKHeartRateMotionContextNotSet
 ```
 
-#### Discussion
+## Discussion
 
 This value is identical to the sample’s metadata not containing a [`HKMetadataKeyHeartRateMotionContext`](../hkmetadatakeyheartratemotioncontext.md) key.
 

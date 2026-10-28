@@ -41,11 +41,11 @@ extern SCNMatrix4 SCNMatrix4Scale(SCNMatrix4 m, float sx, float sy, float sz);
 extern SCNMatrix4 SCNMatrix4Scale(SCNMatrix4 m, CGFloat sx, CGFloat sy, CGFloat sz);
 ```
 
-#### Return Value
+## Return Value
 
 A new matrix.
 
-#### Discussion
+## Discussion
 
 The resulting transformation consists of the specified scale followed by the transformation represented by the `mat` parameter.
 

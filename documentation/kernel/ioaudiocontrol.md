@@ -15,7 +15,7 @@ Represents any controllable attribute of an IOAudioDevice.
 class IOAudioControl : IOService
 ```
 
-#### Overview
+## Overview
 
 An IOAudioControl instance may belong to one IOAudioPort. Additionally, it may associated with an IOAudioEngine as a default control for that IOAudioEngine.
 

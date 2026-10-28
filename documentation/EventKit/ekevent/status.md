@@ -24,7 +24,7 @@ var status: EKEventStatus { get }
 @property (nonatomic, readonly) EKEventStatus status;
 ```
 
-#### Discussion
+## Discussion
 
 You should act based on an event’s status only if the status is [`EKEventStatus.canceled`](../ekeventstatus/canceled.md), which indicates that the event has been canceled. Other statuses should be considered informational.
 

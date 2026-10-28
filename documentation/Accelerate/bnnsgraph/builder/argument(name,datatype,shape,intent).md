@@ -21,7 +21,7 @@ Registers and returns an input or in-out tensor argument to the graph.
 func argument<T>(name: String? = nil, dataType: T.Type, shape: [Int], intent: BNNSGraph.Builder.Intent = .input) -> BNNSGraph.Builder.Tensor<T> where T : BNNSScalar
 ```
 
-#### Discussion
+## Discussion
 
 The following code shows how to specify inputs with flexible shapes. The code calls `setBatchSize` before executing the context to specify that the two inputs and the output tensors are 8-element vectors:
 

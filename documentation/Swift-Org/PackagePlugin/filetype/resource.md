@@ -17,7 +17,7 @@ A resource file.
 case resource
 ```
 
-#### Discussion
+## Discussion
 
 A resource file may be either processed or copied.
 

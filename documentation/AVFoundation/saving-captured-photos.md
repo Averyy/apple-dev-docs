@@ -5,7 +5,7 @@
 
 Add an image and other data from a photo capture to the photo library.
 
-#### Overview
+## Overview
 
 When you complete a photo capture with [`AVCapturePhotoOutput`](./avcapturephotooutput.md), you receive an [`AVCapturePhoto`](./avcapturephoto.md) object that contains the image data, camera metadata, and any auxiliary images you requested, such as thumbnails or depth maps. You can retrieve this data individually from the [`AVCapturePhoto`](./avcapturephoto.md) object. Or you can call its [`fileDataRepresentation()`](./avcapturephoto/filedatarepresentation%28%29.md) method to get a [`Data`](../Foundation/data.md) object that’s ready to save using the codec and file format you requested for that photo in [`AVCapturePhotoSettings`](./avcapturephotosettings.md).
 
@@ -13,7 +13,7 @@ After capturing a photo, use [PhotoKit](../PhotoKit/PhotoKit.md) to add that dat
 
 > **Note**:  If your app only needs to access content in the photo library, you can use the [PhotoKit](../PhotoKit/PhotoKit.md) Photos picker instead, which doesn’t require you to request access from the user. To learn more, see [Selecting Photos and Videos in iOS](../PhotoKit/selecting-photos-and-videos-in-ios.md).
 
-##### Configure properties and capabilities for your app targets
+### Configure properties and capabilities for your app targets
 
 You can use [PhotoKit](../PhotoKit/PhotoKit.md) to enable read/write access to the user’s photo library. To do so, provide a static message for the [`NSPhotoLibraryUsageDescription`](../BundleResources/information-property-list/nsphotolibraryusagedescription.md) key in the `Info.plist` file to display to the user when your app requests access.
 
@@ -25,7 +25,7 @@ In macOS, you also need to enable the [`Photos Library Entitlement`](../BundleRe
 
 > ❗ **Important**:  Your app needs to contain the appropriate key in its `Info.plist` file, and the appropriate entitlement enabled in macOS, before it requests authorization or attempts to use a device. Otherwise, the system terminates your app.
 
-##### Request permission to access the user’s photo library
+### Request permission to access the user’s photo library
 
 Use the [`PHPhotoLibrary`](../Photos/phphotolibrary.md) [`requestAuthorization(for:handler:)`](../Photos/phphotolibrary/requestauthorization%28for,handler%29.md) to request access to the photo library at an appropriate time, such as when the user first opens your app’s camera feature. Here’s an example:
 
@@ -50,7 +50,7 @@ var isPhotoLibraryReadWriteAccessGranted: Bool {
 
 > **Note**:  Don’t wait to request access to the photo library until after the user takes their first photo because the permission alert prevents their ability to take multiple photos.
 
-##### Use a creation request to add a photo asset
+### Use a creation request to add a photo asset
 
 Perform these steps to receive a captured photo and save it to the photo library:
 

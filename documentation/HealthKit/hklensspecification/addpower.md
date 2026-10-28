@@ -25,7 +25,7 @@ var addPower: HKQuantity? { get }
 @property (nonatomic, copy, readonly, nullable) HKQuantity * addPower;
 ```
 
-#### Discussion
+## Discussion
 
 This quantity uses [`diopter()`](../hkunit/diopter%28%29.md) units. The range is from 0.25 to 2.5. The right and left eyes should have the same value.
 

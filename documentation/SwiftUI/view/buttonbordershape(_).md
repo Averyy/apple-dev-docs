@@ -22,7 +22,7 @@ nonisolated
 func buttonBorderShape(_ shape: ButtonBorderShape) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 The border shape is used to draw the platter for a bordered button.
 

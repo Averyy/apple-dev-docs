@@ -19,7 +19,7 @@ func removeTabViewItem(_ tabViewItem: NSTabViewItem)
 - (void) removeTabViewItem:(NSTabViewItem *) tabViewItem;
 ```
 
-#### Discussion
+## Discussion
 
 If there is a delegate and the delegate supports it, sends the delegate the [`tabViewDidChangeNumberOfTabViewItems(_:)`](../nstabviewdelegate/tabviewdidchangenumberoftabviewitems%28_%29.md) message.
 

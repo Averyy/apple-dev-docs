@@ -22,11 +22,11 @@ func deviceWhiteBalanceGains(for tempAndTintValues: AVCaptureDevice.WhiteBalance
 - (AVCaptureWhiteBalanceGains) deviceWhiteBalanceGainsForTemperatureAndTintValues:(AVCaptureWhiteBalanceTemperatureAndTintValues) tempAndTintValues;
 ```
 
-#### Return Value
+## Return Value
 
 A fully populated [`AVCaptureDevice.WhiteBalanceGains`](./whitebalancegains.md) structure containing device-specific RGB gain values.
 
-#### Discussion
+## Discussion
 
 Call this method to convert device-independent temperature and tint values to device-specific RGB white balance gain values.
 

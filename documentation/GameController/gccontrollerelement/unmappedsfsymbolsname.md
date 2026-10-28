@@ -24,7 +24,7 @@ var unmappedSfSymbolsName: String? { get set }
 @property (nonatomic, strong, nullable) NSString * unmappedSfSymbolsName;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to get the original unmapped name. Otherwise, use the [`sfSymbolsName`](./sfsymbolsname.md) property to get the possibly remapped symbol.
 

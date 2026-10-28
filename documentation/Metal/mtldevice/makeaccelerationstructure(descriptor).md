@@ -25,7 +25,7 @@ func makeAccelerationStructure(descriptor: MTLAccelerationStructureDescriptor) -
 - (id<MTLAccelerationStructure>) newAccelerationStructureWithDescriptor:(MTLAccelerationStructureDescriptor *) descriptor;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`MTLAccelerationStructure`](../mtlaccelerationstructure.md) instance if the method completed successfully; otherwise `nil`.
 

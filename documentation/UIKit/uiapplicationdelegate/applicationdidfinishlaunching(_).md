@@ -25,7 +25,7 @@ optional func applicationDidFinishLaunching(_ application: UIApplication)
 - (void) applicationDidFinishLaunching:(UIApplication *) application;
 ```
 
-#### Discussion
+## Discussion
 
 Don’t use this method in your apps; instead, use the [`application(_:willFinishLaunchingWithOptions:)`](./application%28_,willfinishlaunchingwithoptions%29.md) and [`application(_:didFinishLaunchingWithOptions:)`](./application%28_,didfinishlaunchingwithoptions%29.md) methods.
 

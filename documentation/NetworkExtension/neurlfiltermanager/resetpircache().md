@@ -18,7 +18,7 @@ Resets the PIR on-device cache.
 func resetPIRCache() async throws
 ```
 
-#### Discussion
+## Discussion
 
 The PIR system on device caches previous PIR queries and responses to minimize exchanges with the PIR server. When there is a dataset change on the PIR server, perform a reset of the on-device cache to avoid using stale cache entries.
 

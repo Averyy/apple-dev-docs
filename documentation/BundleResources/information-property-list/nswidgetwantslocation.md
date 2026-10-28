@@ -16,7 +16,7 @@ A Boolean value that indicates a widget uses the user’s location information.
 - **Name**: `NSWidgetWantsLocation` (Widget Wants Location)
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 To access the user’s location information from a widget, set the value to [`true`](../../Swift/true.md) in the widget extension’s `Info.plist` file.
 

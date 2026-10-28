@@ -17,11 +17,11 @@ func AudioHardwareDestroyProcessTap(_ inTapID: AudioObjectID) -> OSStatus
 extern OSStatus AudioHardwareDestroyProcessTap(AudioObjectID inTapID);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus indicating success or failure.
 
-#### Discussion
+## Discussion
 
 This routine destroys the given Tap.
 

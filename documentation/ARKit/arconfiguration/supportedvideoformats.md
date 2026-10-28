@@ -20,7 +20,7 @@ class var supportedVideoFormats: [ARConfiguration.VideoFormat] { get }
 @property (class, nonatomic, readonly) NSArray<ARVideoFormat *> * supportedVideoFormats;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the [`videoFormat`](./videoformat-swift.property.md) property for a new session configuration matches the first video capture format in this array. To change the video format for a session, change that property’s value to one of the other [`ARConfiguration.VideoFormat`](./videoformat-swift.class.md) objects in this array.
 

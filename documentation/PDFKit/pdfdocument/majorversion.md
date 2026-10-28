@@ -24,7 +24,7 @@ var majorVersion: Int { get }
 @property (nonatomic, readonly) NSInteger majorVersion;
 ```
 
-#### Return Value
+## Return Value
 
 The major version of the document.
 

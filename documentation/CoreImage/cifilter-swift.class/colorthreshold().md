@@ -24,11 +24,11 @@ class func colorThreshold() -> any CIFilter & CIColorThreshold
 + (CIFilter<CIColorThreshold> *) colorThresholdFilter;
 ```
 
-#### Return Value
+## Return Value
 
 An image containing pixels with color components that are either 1 or 0.
 
-#### Discussion
+## Discussion
 
 This method applies the color threshold filter to an image. The filter compares the value of each color component (red, green, and blue) in the image against the threshold value. Any component higher than the threshold becomes 1 and any component lower becomes 0. The alpha component remains unchanged.
 

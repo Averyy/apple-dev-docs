@@ -20,20 +20,20 @@ An application extension that uses the system implementation to schedule asset-p
 @protocol BAManagedDownloaderExtension <BADownloaderExtension>
 ```
 
-#### Overview
+## Overview
 
 The protocol provides default implementations for all of the inherited [`BADownloaderExtension`](./badownloaderextension-zuvm.md) requirements.
 
 > ⚠️ **Warning**: Don’t implement any of the inherited [`BADownloaderExtension`](./badownloaderextension-zuvm.md) requirements aside from, optionally, [`backgroundDownload:didReceiveChallenge:completionHandler:`](./badownloaderextension-zuvm/backgrounddownload_didreceivechallenge_completionhandler_.md).
 
-#### Creating an Objective-C Downloader Extension
+## Creating an Objective-C Downloader Extension
 
 Xcode’s Background Download extension template generates Swift code when you select either the “Apple-Hosted, Managed” option or the “Self-Hosted, Managed” option, but you can easily switch to Objective-C instead if you prefer. To do so, follow these steps:
 
 1. Remove `BackgroundDownloadHandler.swift`.
 2. Create `DownloaderExtension.h` with the following contents:
 
-   ##### Apple Hosting
+   ### Apple Hosting
 
    ```objc
    #import <StoreKit/StoreKit.h>
@@ -43,7 +43,7 @@ Xcode’s Background Download extension template generates Swift code when you s
    @end
    ```
 
-   ##### Self Hosting
+   ### Self Hosting
 
    ```objc
    #import <BackgroundAssets/BackgroundAssets.h>

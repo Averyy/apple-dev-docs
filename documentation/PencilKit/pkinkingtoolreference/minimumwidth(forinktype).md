@@ -23,7 +23,7 @@ class func minimumWidth(forInkType inkType: __PKInkType) -> CGFloat
 + (CGFloat) minimumWidthForInkType:(PKInkType) inkType;
 ```
 
-#### Return Value
+## Return Value
 
 The minimum line width (in points) for the specified tool type.
 

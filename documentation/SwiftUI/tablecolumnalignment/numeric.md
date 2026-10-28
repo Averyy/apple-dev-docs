@@ -19,7 +19,7 @@ Column alignment appropriate for numeric content.
 static var numeric: TableColumnAlignment { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this alignment when a table column is primarily displaying numeric content, so that the values are easy to visually scan and compare.
 

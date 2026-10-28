@@ -5,13 +5,13 @@
 
 Released March 24, 2026 — 26.4 (20624.1.16)
 
-#### Overview
+## Overview
 
 Safari 26.4 is available for iOS 26.4, iPadOS 26.4, visionOS 26.4, macOS 26.4, macOS Sequoia, and macOS Sonoma.
 
-##### Accessibility
+### Accessibility
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where Voice Control commands could cause Safari to hang. (168364189)
 - Fixed an issue where a button’s label would not update when a descendant’s `aria-hidden` attribute changed. (169012516)
@@ -19,29 +19,29 @@ Safari 26.4 is available for iOS 26.4, iPadOS 26.4, visionOS 26.4, macOS 26.4, m
 - Fixed an issue where VoiceOver would announce with extra verbosity when moving onto the first item of a list on the webpage.  (169982730)
 - Fixed an issue where controls with `aria-labelledby` pointing to visually-hidden elements could not obtain proper bounding box geometry through accessibility APIs. (170639492)
 
-##### Animations
+### Animations
 
-###### New Features
+#### New Features
 
 - Added support for threaded scroll-driven animations, improving performance. (168027635)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed incorrect overlap calculations for transform animations including `translate`, `scale`, and `rotate` properties. (88383253)
 
-##### Browser
+### Browser
 
-###### New Features
+#### New Features
 
 - Added Compact tabs back to Safari on macOS and iPadOS.  (148723398)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed Safari gesture support to prevent pages that should not be able to scroll, such as with explicit `overflow: hidden`, from unexpectedly scrolling.  (163660111)
 
-##### CSS
+### CSS
 
-###### New Features
+#### New Features
 
 - Added support for a new blocks-in-inline layout approach. (19534458)
 - Updated absolutely positioned boxes in scrollable containing blocks to allow alignment overflow in scrollable directions, in accordance with a recent CSS spec change. (162722820)
@@ -53,7 +53,7 @@ Safari 26.4 is available for iOS 26.4, iPadOS 26.4, visionOS 26.4, macOS 26.4, m
 - Added support for `math-depth`. (167332590)
 - Added support for the `cursor` property on the `::marker` pseudo-element. (168362833)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where `display: list-item` was incorrectly supported on `fieldset`. (95638460)
 - Fixed an issue where `max-width` was not correctly applied to tables with fixed widths. (96554687)
@@ -110,76 +110,76 @@ Safari 26.4 is available for iOS 26.4, iPadOS 26.4, visionOS 26.4, macOS 26.4, m
 - Fixed an issue where absolutely-positioned elements inside inline containers did not correctly account for the margin of a preceding block when determining their static position. (170934098)
 - Fixed an issue where multi-column layout rendered columns at incorrect positions for some fonts. (171016194)
 
-###### Deprecations
+#### Deprecations
 
 - Removed the `FontFaceSet` constructor from the CSS Font Loading API as it was deemed unnecessary, aligning with the CSSWG resolution. (132031306)
 
-##### Canvas
+### Canvas
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `ImageBitmap` created from SVG image sources to correctly honor the `flipY` orientation. (83959718)
 
-##### Clipboard
+### Clipboard
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where using the “Copy Image” context menu in Safari would also copy the image URL, causing some sites to paste the URL instead of the image. (76598990)
 
-##### Editing
+### Editing
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed incorrect text selection when dragging across pseudo elements. (142905243)
 - Fixed an issue on iOS 26 where the edit menu would not appear when tapping inside an already-focused text field that had a looping `content` animation. (164290305)
 - Fixed an issue where focusing a hidden editable element would incorrectly display the text cursor and selection at full opacity. (165489471)
 - Fixed a regression where dragging to select text would stop scrolling when the cursor left the window. (169983104)
 
-##### Encoding
+### Encoding
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed incorrect handling of invalid UTF-8 sequences in the `TextDecoder` streaming decoder to properly manage partial sequence buffers. (166583808)
 
-##### Events
+### Events
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where `mouseleave` and `mouseout` events were not dispatched when a window moved out from under a stationary cursor. (161493924)
 
-##### Forms
+### Forms
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where input fields did not display user input while typing. (163613957)
 - Fixed an issue where `input[type="search"]` fields with `appearance: none` incorrectly reserved space for the datalist dropdown button. (166754216)
 - Fixed an incorrect fallback for the menu style for empty lists, improving readability and correctness. (167662316)
 
-##### HTML
+### HTML
 
-###### New Features
+#### New Features
 
 - Added support for using the `min()`, `max()`, and `clamp()` math functions in the `sizes` attribute of `<img>` elements. (167526292)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where nested `about:blank` frames were incorrectly treated as self-referencing, preventing them from loading. (148373033)
 - Fixed `shadowrootcustomelementregistry` attribute serialization to correctly compare ShadowRoot and document registries. (165476421)
 - Fixed `HTMLImageElement.currentSrc` to return an empty string for `<img src="">` instead of resolving to the document base URL. (167229274)
 
-##### Images
+### Images
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed image uploading to not transcode images when `accept="image/*"` is specified. (166124206)
 
-##### JavaScript
+### JavaScript
 
-###### New Features
+#### New Features
 
 - Added support for iterator sequencing.  (167633152)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `Date` constructor overflow handling so that invalid day values now return `NaN`. (155776209)
 - Fixed `Intl.DateTimeFormat` to throw a `RangeError` for legacy non-IANA timezones, aligning behavior with TC39 standards. (156857252)
@@ -188,14 +188,14 @@ Safari 26.4 is available for iOS 26.4, iPadOS 26.4, visionOS 26.4, macOS 26.4, m
 - Fixed `%TypedArray%.prototype.includes` to correctly check that the `index` is less than the array length, aligning its behavior with ECMA-262. (167183441)
 - Fixed async functions without any `await` to inline their bodies for performance and corrected async stack traces with a single function entry for exceptions thrown from or through async functions. (167254635)
 
-##### MathML
+### MathML
 
-###### New Features
+#### New Features
 
 - Added support for CSS size containment in MathML elements using `contain-intrinsic-inline-size` and `contain-intrinsic-block-size`. (166323213)
 - Added support for `math-style` and `math-shift` to animate as discrete values. (167369164)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed default MathML rule thickness to use the font’s `underlineThickness` metric with a zero fallback. (164693673)
 - Fixed `mpadded` elements in RTL (`dir="rtl"`) to respect `lspace`. (164740784)
@@ -206,13 +206,13 @@ Safari 26.4 is available for iOS 26.4, iPadOS 26.4, visionOS 26.4, macOS 26.4, m
 - Fixed an issue where `<msqrt>` or `<mroot>` elements did not update their radical operators when children were dynamically added or removed. (166556627)
 - Fixed `<mpadded>` so that percentage values for `width`, `height`, and `depth` attributes are treated as absent and use content dimensions as defaults, matching the MathML Core specification. (167350169)
 
-##### Media
+### Media
 
-###### New Features
+#### New Features
 
 - Added support for a pop-up menu on macOS that allows users to select and manage caption style profiles. (163067314)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where `<video>` poster images were incorrectly double-scaled when `zoom` was applied by using the cached intrinsic poster size without reapplying zoom. (150976146)
 - Fixed dispatching of enter and exit events on `TextTrackCue` and `VTTCue` objects with no associated track, aligning with other browsers. (160195643)
@@ -232,25 +232,25 @@ Safari 26.4 is available for iOS 26.4, iPadOS 26.4, visionOS 26.4, macOS 26.4, m
 - Fixed an issue where `WebCodecs VideoDecoder` could output H264 frames in the wrong order. (168046597)
 - Fixed an issue where the mute button and volume slider overlapped in the video player controls when using a right-to-left language. (170174446)
 
-##### Networking
+### Networking
 
-###### New Features
+#### New Features
 
 - Added support for WebTransport.  (165721145)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed a regression where `fetch()` would throw a `TypeError` when using `targetAddressSpace: 'loopback'` for localhost requests. (166574523)
 
-##### Privacy
+### Privacy
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where cross-browser Private Click Measurement recorded attribution entries even when “Allow privacy-preserving measurement of ad effectiveness” was disabled.  (170669444)
 
-##### Rendering
+### Rendering
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed over-aggressive clipping of child layers in multicolumn layouts to prevent visual overflow issues with `position: relative` elements and `transform:scale()` text. (126413036)
 - Fixed unreadable Scroll-to-Text-Fragment highlights on dark pages. (126539910)
@@ -269,13 +269,13 @@ Safari 26.4 is available for iOS 26.4, iPadOS 26.4, visionOS 26.4, macOS 26.4, m
 - Fixed table layout `min-width` distribution for spanning cells with mixed `percent`, `fixed`, and `auto` columns. (167684748)
 - Fixed: Improved drop-shadow and blur effects rendering performance. (169472992)
 
-##### SVG
+### SVG
 
-###### New Features
+#### New Features
 
 - Added support for the `lighter` operator in `SVGFECompositeElement` IDL to align with the Compositing and Blending specification. (166704079)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where `stroke-dasharray` incorrectly propagated to SVG markers when explicitly marked as ‘0’. (46607685)
 - Fixed an issue where `foreignObject` elements in SVG incorrectly allowed margin collapsing. (97208795)
@@ -302,33 +302,33 @@ Safari 26.4 is available for iOS 26.4, iPadOS 26.4, visionOS 26.4, macOS 26.4, m
 - Fixed hit testing for overlapping `<text>` and `<tspan>` elements in SVG. (167691166)
 - Fixed rendering of dimensionless SVG images. (168176556)
 
-##### Spatial Web
+### Spatial Web
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed auto-dimming for playback sessions in visionOS. (163824973)
 
-##### Storage
+### Storage
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where IndexedDB databases might have mismatched metadata version and database name encoding format. (163219457)
 
-##### Text
+### Text
 
-###### New Features
+#### New Features
 
 - Added support for parsing and computing `font-size: math` with scaling logic. (163323845)
 
-##### WKWebView
+### WKWebView
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where `WKWebView` apps with a toolbar would fail to display a top scroll edge effect when relying on automatic content inset adjustments. (161370795)
 
-##### Web API
+### Web API
 
-###### New Features
+#### New Features
 
 - Added support for `ReadableStream.getIterator()` and the `[@@asyncIterator]` methods to enable iteration over streams. (96318671)
 - Added support for auxiliary mouse button values in `MouseEvent.button`. (137592588)
@@ -341,7 +341,7 @@ Safari 26.4 is available for iOS 26.4, iPadOS 26.4, visionOS 26.4, macOS 26.4, m
 - Exposed the`MediaDeviceInfo` interface  in secure contexts only. per the web specification. (165318702)
 - Added support for Resource Timing Level 3 attributes `finalResponseHeadersStart` and `firstInterimResponseStart` to capture timing for both interim (1xx) and final HTTP response headers for proper measurement of events like 103 Early Hints. (167073003)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `DeviceMotionEvent` and `DeviceOrientationEvent` interfaces so that they only show up in secure contexts just like the corresponding events and made `ondevicemotion` and `ondeviceorientation` enumerable, aligning with the specification. (44804273)
 - Fixed an issue where `IntersectionObserver` computed the root rectangle incorrectly when overflow clipping was present. (117143395)
@@ -360,26 +360,26 @@ Safari 26.4 is available for iOS 26.4, iPadOS 26.4, visionOS 26.4, macOS 26.4, m
 - Fixed an issue where pointer events would fail to dispatch after a parent view’s custom gesture recognizer blocked `touchesEnded:` or `touchesCancelled:`. (169109808)
 - Fixed an issue where JavaScript-to-native object serialization could fail entirely when any individual key-value pair could not be serialized, causing broken workflows in some apps. (171547386)
 
-##### Web Authentication
+### Web Authentication
 
-###### New Features
+#### New Features
 
 - Added support for the WebAuthn PRF extension that maps to the CTAP `hmac-secret` extension, enabling credential-bound cryptographic secrets for both credential creation and authentication flows with security keys. (113572812)
 - Added support for WebAuthn CTAP PIN/UV Auth Protocol 2 using HKDF-SHA-256 for key derivation, enabling proper FIPS-compliant authenticators. (157884782)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where the `excludeCredentials` list was not sent over CTAP when its size was 1. (164546088)
 
-##### Web Extensions
+### Web Extensions
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where `window.open()` calls from web extensions would incorrectly open “about:blank” instead of the intended URL by ensuring each extension URL loads in a fresh tab configuration.  (143901129)
 
-##### Web Inspector
+### Web Inspector
 
-###### New Features
+#### New Features
 
 - Added support for capturing `console.screenshot` images within a `Worker`, including handling of `ImageData`, `ImageBitmap`, `OffscreenCanvas`, various `CanvasRenderingContext` types, and valid base64 `data:` URLs. (98223234)
 - Added support for starting and stopping `<canvas>` recordings from the `console` within a `Worker` using `console.record()` and `console.recordEnd()`. (98223237)
@@ -393,7 +393,7 @@ Safari 26.4 is available for iOS 26.4, iPadOS 26.4, visionOS 26.4, macOS 26.4, m
 - Added support for displaying `Order Numbers` in CSS Grid and CSS Grid Lanes overlays in Web Inspector, including new UI settings for toggling order number visibility. (166648769)
 - Added Grid Inspector support for visualizing gaps between items arranged by Grid Lanes. (166984079)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed incorrect breakpoint and search result positions in the Web Inspector after pretty-printing inline scripts containing multi-line template literals. (29417859)
 - Fixed the Styles sidebar filter in Web Inspector to be case-insensitive. (36086981)
@@ -411,26 +411,26 @@ Safari 26.4 is available for iOS 26.4, iPadOS 26.4, visionOS 26.4, macOS 26.4, m
 - Fixed a performance issue in the Web Inspector search panel by limiting initial results to 100 per resource and adding UI controls to load more or all results, reducing unnecessary UI work for large queries. (169804865)
 - Fixed an issue where the search bar settings icon disappeared when the search field was focused. (169997100)
 
-##### WebAssembly
+### WebAssembly
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `Error.isError(WebAssembly.Exception)` to correctly return `false` based on current WebAssembly spec semantics. (167110254)
 
-##### WebGPU
+### WebGPU
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed incorrect handling of some PNG pixel formats in WebGPU. (158797747)
 
-##### WebRTC
+### WebRTC
 
-###### New Features
+#### New Features
 
 - Added support for capturing audio from multiple microphones on macOS with `getUserMedia` while managing echo cancellation and dynamically migrating existing captures to non-VPIO units. (163945062)
 - Added network slicing support for WebRTC on iOS.  (165202088)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `RTCDataChannelInit` to support `[EnforceRange]` on the `maxPacketLifeTime` and `maxRetransmits` fields to align with the WebRTC specification. (133630397)
 - Fixed an issue on macOS where calling `getUserMedia` with echo cancellation disabled could unintentionally affect existing audio tracks. (151143554)

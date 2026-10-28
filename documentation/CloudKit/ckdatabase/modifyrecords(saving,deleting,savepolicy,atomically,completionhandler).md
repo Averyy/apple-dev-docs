@@ -22,7 +22,7 @@ Modifies the specified records and delivers the results to a completion handler.
 func modifyRecords(saving recordsToSave: [CKRecord], deleting recordIDsToDelete: [CKRecord.ID], savePolicy: CKModifyRecordsOperation.RecordSavePolicy = .ifServerRecordUnchanged, atomically: Bool = true, completionHandler: @escaping @Sendable (Result<(saveResults: [CKRecord.ID : Result<CKRecord, any Error>], deleteResults: [CKRecord.ID : Result<Void, any Error>]), any Error>) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 The completion handler takes a single [`Result`](../../Swift/result.md) parameter that contains either a tuple, or an error if the request fails. For example, when the network is unavailable or the device doesn’t have an active iCloud account, or when `atomically` is [`true`](../../Swift/true.md) and one or more of the specified changes fail.
 

@@ -5,21 +5,21 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The watchOS 8 SDK provides support to develop watchOS apps for Apple Watch devices running watchOS 8. The SDK comes bundled with Xcode 13. For information on the compatibility requirements for Xcode 13, see [Xcode 13 Release Notes](../Xcode-Release-Notes/xcode-13-release-notes.md).
 
-##### General
+### General
 
-###### Known Issues
+#### Known Issues
 
 - Your watch might repeatedly disconnect unexpectedly from your phone. (80733338)
 
   **Workaround:** Restart your phone.
 
-##### App Store
+### App Store
 
-###### New Features
+#### New Features
 
 - [StoreKit](../StoreKit/StoreKit.md) 2 introduces a modern Swift-based API that takes advantage of new language features like Swift concurrency. Use this API to load product information, display in-app purchases in your store, allow customers to make purchases, manage access to content and subscriptions, and receive transaction information signed by the App Store in JSON Web Signature (JWS) format. (66587964)
 
@@ -39,67 +39,67 @@ The watchOS 8 SDK provides support to develop watchOS apps for Apple Watch devic
 
 - `VerificationResult.unverified(SignedType)` is now `VerificationResult.unverified(SignedType, VerificationError)` to provide a reason for unverified signed values. [`jsonRepresentation`](../StoreKit/transaction/jsonrepresentation.md) is available on [`Transaction`](../StoreKit/transaction.md) and [`jsonRepresentation`](../StoreKit/product/subscriptioninfo/renewalinfo/jsonrepresentation.md) is available on [`renewalInfo`](../StoreKit/product/subscriptioninfo/status-swift.struct/renewalinfo.md); both properties provide the payload JSON as `Data`. [`payloadValue`](../StoreKit/verificationresult/payloadvalue.md) and [`unsafePayloadValue`](../StoreKit/verificationresult/unsafepayloadvalue.md) properties are available on [`VerificationResult`](../StoreKit/verificationresult.md) as a convenience to access the signed value. (80701792)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where purchases performed in the Sandbox environment returned `VerificationResult.unverified(_:_:)`. (71949674)
 
 Resolved Issues Fixed issue where `jwsRepresentation` and other validation related properties were not available on `VerificationResult`. (81517650)
 
-###### Known Issues
+#### Known Issues
 
 - The [`unfinished`](../StoreKit/transaction/unfinished.md) property might return `VerificationResult<Transaction>` for transactions that have already finished. (81346114)
 
-##### Focus
+### Focus
 
-###### Known Issues
+#### Known Issues
 
 - Apps installed only on your watch aren’t available in the Focus settings allow list. (76064919)
 
-###### Deprecations
+#### Deprecations
 
 - [`MKPinAnnotationView`](../MapKit/mkpinannotationview.md) and [`MapPin`](../MapKit/mappin.md) are marked as deprecated in this beta. (78536295)
 
-##### Music
+### Music
 
-###### New Features
+#### New Features
 
 - The Radio app has merged into the Music app. (67836373)
 
-###### Known Issues
+#### Known Issues
 
 - When using Watch apps, [MusicKit](../MusicKit/MusicKit.md) might be unable to generate a developer token. (78478620)
 
   **Workaround:** Register the bundle identifier of your [WatchKit](../WatchKit/WatchKit.md) Extension target as a separate App ID in the Developer portal, and enable the MusicKit App Service for the new App ID.
 
-##### Networking
+### Networking
 
-###### New Features
+#### New Features
 
 - The default `Accept-Language` header that [`URLSession`](../Foundation/urlsession.md) sends has an updated format and corrected values for multiple locales. In addition to the preferred language, the header also includes the current system language as a fallback if it differs from the preferred language. This behavior affects apps that link against macOS 12, iOS 15, tvOS 15, and watchOS 8 SDKs. (38772422)
 
-###### Deprecations
+#### Deprecations
 
 - Support for cleartext HTTP URL schemes for Proxy Automatic Configuration (PAC) is now deprecated. Use only HTTPS URL schemes for PAC. This affects all PAC configurations, including, but not limited to, configurations set via Settings, System Preferences, profiles, and `URLSession` APIs such as [`connectionProxyDictionary`](../Foundation/urlsessionconfiguration/connectionproxydictionary.md) and [`CFNetworkExecuteProxyAutoConfigurationURL(_:_:_:_:)`](../CFNetwork/cfnetworkexecuteproxyautoconfigurationurl%28_,_,_,_%29.md). If you configure a cleartext HTTP PAC URL, the system may upgrade it to HTTPS during PAC file loads. Web Proxy Auto-Discovery (WPAD) Protocol via DNS isn’t affected. Dynamic Host Configuration Protocol (DHCP) Option 252 WPAD may attempt to upgrade cleartext HTTP URLs to HTTPS during PAC file loads. (61981845)
 
-##### Pairing
+### Pairing
 
-###### Known Issue
+#### Known Issue
 
 - The Watch app might crash when pairing through the camera. (80804790)
 
   **Workaround:** Pair the Watch using the “Pair Manually” button.
 
-##### Shazam
+### Shazam
 
-###### Known Issues
+#### Known Issues
 
 - [ShazamKit](../ShazamKit/ShazamKit.md) might be unable to generate a developer token in apps using Shazam Catalog. (78589082)
 
   **Workaround:** Register the bundle identifier of your [WatchKit](../WatchKit/WatchKit.md) Extension target as a separate App ID in the developer portal, then enable the ShazamKit App Service for this new App ID.
 
-##### SwiftUI
+### SwiftUI
 
-###### New Features
+#### New Features
 
 - [`LocalizedStringKey`](../SwiftUI/localizedstringkey.md) can now contain Markdown syntax. The system parses Markdown strings when you create a [`Text`](../SwiftUI/text.md) view from a `LocalizedStringKey`, including `Text` views created with a string literal. The system styles `Text` according to Markdown constructs. (74515884)
 
@@ -134,23 +134,23 @@ The [`openURL`](../SwiftUI/environmentvalues/openurl.md) environment value can n
 
 - [`Text`](../SwiftUI/text.md) views that contain excessive line height characters now have a larger default size to avoid clipping or overlapping of oversized characters. (80665315)
 
-###### Known Issues
+#### Known Issues
 
 - You can’t push to a third screen after popping from a third screen in the navigation stack. (79076444)
 
-###### Deprecations
+#### Deprecations
 
 - `controlProminence` is deprecated. Use the new `.borderedProminent` [`ButtonStyle`](../SwiftUI/buttonstyle.md) instead. (78908460)
 
-##### TabularData
+### TabularData
 
-###### New Features
+#### New Features
 
 - [TabularData](../TabularData/TabularData.md) is a new Swift framework you use to analyze and manipulate tabular data. You can use [`DataFrame`](../TabularData/dataframe.md) to read CSV and JSON files, as well as join, group, and aggregate data. (69982458)
 
-##### Xcode
+### Xcode
 
-###### Known Issues
+#### Known Issues
 
 - [MusicKit](../MusicKit/MusicKit.md) functionality, such as loading content with music requests, doesn’t work in simulated devices. (78559381)
 

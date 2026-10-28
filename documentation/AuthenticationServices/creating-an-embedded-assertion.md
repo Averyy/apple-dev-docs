@@ -5,7 +5,7 @@
 
 Request an embedded assertion for login types that require a digital signature for authentication.
 
-#### Overview
+## Overview
 
 During authentication, the system uses the embedded assertion when the login type requires a digital signature for authentication. The system uses this assertion for authentication with a secure enclave key, SmartCard, and encrypted password. The embedded assertion is a Javascript Object Signing and Encryption (JOSE) object that’s formatted per RFC 7523 and signed with the authenticator per RFC 7515. However, the assertion differs from RFC 7523 when using secure enclave key authentication, which is signed using the `ES256` algorithm instead of the `RS256` algorithm in the RFC. This algorithm difference is because secure enclave key supports ellyptic curve keys, not RSA keys.
 

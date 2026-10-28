@@ -20,7 +20,7 @@ Instructs the receiver to discard pending enqueued sample buffers.
 func flush()
 ```
 
-#### Discussion
+## Discussion
 
 Additional sample buffers can be appended after `flush()`.
 

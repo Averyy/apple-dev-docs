@@ -27,7 +27,7 @@ func onReasoning(perform action: nonisolated(nonsending) sending @escaping () as
 func onReasoning(perform action: nonisolated(nonsending) sending @escaping (Transcript.Reasoning) async throws -> Void) -> some LanguageModelSession.DynamicProfile
 ```
 
-#### Discussion
+## Discussion
 
 Reasoning is only produced by models that declare the `.reasoning` capability.
 

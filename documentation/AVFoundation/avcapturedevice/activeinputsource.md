@@ -19,7 +19,7 @@ var activeInputSource: AVCaptureDevice.InputSource? { get set }
 @property (nonatomic, retain, nullable) AVCaptureDeviceInputSource * activeInputSource;
 ```
 
-#### Discussion
+## Discussion
 
 You must call [`lockForConfiguration()`](./lockforconfiguration%28%29.md) before attempting to set a format. Setting a format that isn’t present in the [`inputSources`](./inputsources.md) array results in an exception.
 

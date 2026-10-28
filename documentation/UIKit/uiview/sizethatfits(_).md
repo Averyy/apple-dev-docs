@@ -23,11 +23,11 @@ func sizeThatFits(_ size: CGSize) -> CGSize
 - (CGSize) sizeThatFits:(CGSize) size;
 ```
 
-#### Return Value
+## Return Value
 
 A new size that fits the receiver’s subviews.
 
-#### Discussion
+## Discussion
 
 The default implementation of this method returns the existing size of the view. Subclasses can override this method to return a custom value based on the desired layout of any subviews. For example, a [`UISwitch`](../uiswitch.md) object returns a fixed size value that represents the standard size of a switch view, and a [`UIImageView`](../uiimageview.md) object returns the size of the image it is currently displaying.
 

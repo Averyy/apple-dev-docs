@@ -24,7 +24,7 @@ let kCIInputSaturationKey: String
 extern NSString * const kCIInputSaturationKey;
 ```
 
-#### Discussion
+## Discussion
 
 A key for a scalar value ([`NSNumber`](../Foundation/nsnumber.md)) that specifies the amount to adjust the saturation.
 

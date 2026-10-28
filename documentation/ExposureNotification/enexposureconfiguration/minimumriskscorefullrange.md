@@ -23,7 +23,7 @@ var minimumRiskScoreFullRange: Double { get set }
 @property (nonatomic, assign, readwrite) double minimumRiskScoreFullRange;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This property is available in iOS 12.5, and in iOS 13.6 and later.
 

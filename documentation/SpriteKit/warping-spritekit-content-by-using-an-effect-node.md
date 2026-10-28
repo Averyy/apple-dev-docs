@@ -5,11 +5,11 @@
 
 Distort the child nodes of an effect node by applying a warping effect.
 
-#### Overview
+## Overview
 
 If you want to warp a node that doesn’t conform to [`SKWarpable`](./skwarpable.md), you can add it as a child to an effect node that is warped. As an implementor of `SKWarpable`, effect node inherits the [`SKWarpGeometry`](./skwarpgeometry.md) property that you assign one of the [`SKWarpGeometry`](./skwarpgeometry.md) types to then warp the effect node’s children.
 
-##### Warp Text By Using an Effect Node
+### Warp Text By Using an Effect Node
 
 [`SKLabelNode`](./sklabelnode.md) is one such class that doesn’t conform to `SKWarpable`. The following Swift code shows how you can warp a label node by adding it as a child to a [`SKEffectNode`](./skeffectnode.md) and assign the effect node a [`SKWarpGeometryGrid`](./skwarpgeometrygrid.md) that pulls out the corners horizontally and stretches the center vertically.
 

@@ -22,7 +22,7 @@ unowned(unsafe) var delegate: (any AVAudioSessionDelegate)? { get set }
 @property (assign, nullable) id<AVAudioSessionDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate object must implement the protocol described in [`AVAudioSessionDelegate`](../avaudiosessiondelegate.md).
 

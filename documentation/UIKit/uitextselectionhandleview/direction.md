@@ -24,7 +24,7 @@ var direction: NSDirectionalRectEdge { get set }
 @property (nonatomic, assign) NSDirectionalRectEdge direction;
 ```
 
-#### Discussion
+## Discussion
 
 Specify [`leading`](../nsdirectionalrectedge/leading.md) if this view represents the leading selection handle or [`trailing`](../nsdirectionalrectedge/trailing.md) if it represents the trailing selection handle. The system uses this information to determine where to differentiate the selection handles visually.
 

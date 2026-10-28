@@ -5,11 +5,11 @@
 
 Throw and catch errors that use Cocoa’s error types.
 
-#### Overview
+## Overview
 
 You use Swift’s `throw` statement and `do`-`catch` statement to throw and catch errors from Cocoa APIs.  Swift imports Cocoa methods with error parameters as throwing methods, as described in [About Imported Cocoa Error Parameters](./about-imported-cocoa-error-parameters.md).
 
-##### Catch Errors
+### Catch Errors
 
 In Swift, calling a method that throws requires explicit error handling. Because Cocoa methods with errors parameters are imported as throwing methods, you handle them using Swift’s `do`-`catch` statement.
 
@@ -51,7 +51,7 @@ do {
 }
 ```
 
-##### Throw Errors
+### Throw Errors
 
 You throw Cocoa errors by initializing a Cocoa error type and passing in the relevant error domain and code:
 
@@ -61,7 +61,7 @@ throw NSError(domain: NSURLErrorDomain, code: NSURLErrorCannotOpenFile, userInfo
 
 If Objective-C code calls a Swift method that throws an error, the error is automatically propagated to the error pointer argument of the bridged Objective-C method.
 
-##### Throw and Catch Errors from Custom Error Domains
+### Throw and Catch Errors from Custom Error Domains
 
 You use custom error domains in Cocoa to group related categories of errors. The example below uses the `NS_ERROR_ENUM` macro to group error constants:
 
@@ -102,7 +102,7 @@ do {
 }
 ```
 
-##### Handle Exceptions in Objective-C Only
+### Handle Exceptions in Objective-C Only
 
 In Objective-C, exceptions are distinct from errors. Objective-C exception handling uses the `@try`, `@catch`, and `@throw` syntax to indicate unrecoverable programmer errors. This is distinct from the Cocoa pattern—described above—that uses a trailing [`NSError`](../Foundation/nserror.md) parameter to indicate recoverable errors that you plan for during development.
 

@@ -20,11 +20,11 @@ convenience init(containerSpecifier container: NSScriptObjectSpecifier, key prop
 - (instancetype) initWithContainerSpecifier:(NSScriptObjectSpecifier *) container key:(NSString *) property;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSScriptObjectSpecifier` object  initialized with container specifier `specifier` and key `key`.
 
-#### Discussion
+## Discussion
 
 The class description of the container is set automatically.
 

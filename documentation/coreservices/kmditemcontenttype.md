@@ -19,7 +19,7 @@ let kMDItemContentType: CFString!
 const CFStringRef kMDItemContentType;
 ```
 
-#### Discussion
+## Discussion
 
  For example, a jpeg image file will have a value of public.jpeg/public.image/public.data. The value of this attribute is set by the MDImporter. Changes to this value are lost when the file attributes are next imported.
 

@@ -15,7 +15,7 @@ The getter to use to access the points of interest search class.
 get PointsOfInterestSearch(): typeof PointsOfInterestSearch;
 ```
 
-#### Discussion
+## Discussion
 
 You must load the appropriate library before accessing the getter, otherwise, the getter throws an `Error`.
 

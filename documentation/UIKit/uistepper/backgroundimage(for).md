@@ -22,7 +22,7 @@ func backgroundImage(for state: UIControl.State) -> UIImage?
 - (UIImage *) backgroundImageForState:(UIControlState) state;
 ```
 
-#### Return Value
+## Return Value
 
 The background image used by the control when it is in the specified state.
 

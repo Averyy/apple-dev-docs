@@ -5,7 +5,7 @@
 
 Create and assign a physics body to enable physics.
 
-#### Overview
+## Overview
 
 An [`SKPhysicsBody`](./skphysicsbody.md) object defines the shape and simulation parameters for a physics body in the system. When the scene simulates physics, it performs the calculations for all physics bodies connected to the scene tree. So, you create an [`SKPhysicsBody`](./skphysicsbody.md) object, configure its properties, and then assign it to a node’s [`physicsBody`](./sknode/physicsbody.md) property.
 
@@ -54,7 +54,7 @@ texturedSpaceShip.physicsBody = SKPhysicsBody(texture: spaceShipTexture,
 
 The shape of a physics body affects performance. A circular physics body offers the best performance and can be significantly faster than other physics bodies. If your simulation contains many physics bodies, circular bodies are the best solution. Rectangular and polygonal shapes improve collision accuracy with reduced speed. Physics bodies created from the alpha channel of a texture offer the best fidelity at the highest performance cost.
 
-##### Create and Assign Physics Bodies
+### Create and Assign Physics Bodies
 
 A physics body is created by calling one of the [`SKPhysicsBody`](./skphysicsbody.md) class methods. Each class method defines whether a volume-based or edge-based body is being created and what shape it has.
 

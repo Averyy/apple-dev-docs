@@ -24,7 +24,7 @@ var collectionListType: PHCollectionListType { get }
 @property (nonatomic, assign, readonly) PHCollectionListType collectionListType;
 ```
 
-#### Discussion
+## Discussion
 
 A collection list may represent an upper level of the Moments hierarchy shown in the Photos app, a folder that contains albums, or a smart folder synced from a Mac. See [`PHCollectionListType`](../phcollectionlisttype.md).
 

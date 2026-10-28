@@ -37,7 +37,7 @@ var userInfo: [AnyHashable : Any] { get }
 - [Declaring your actionable notification types](../declaring-your-actionable-notification-types.md)
 - [Generating a remote notification](../generating-a-remote-notification.md)
 
-#### Discussion
+## Discussion
 
 For remote notifications, this property contains the entire notification payload. For local notifications, you configure the property directly before scheduling the notification.
 

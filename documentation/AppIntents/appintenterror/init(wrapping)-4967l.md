@@ -21,7 +21,7 @@ Creates an error by wrapping an existing localized error.
 init(wrapping error: some CustomLocalizedStringResourceConvertible & Error)
 ```
 
-#### Discussion
+## Discussion
 
 Conform your custom [`Error`](../../Swift/error.md) to [`CustomLocalizedStringResourceConvertible`](../../Foundation/customlocalizedstringresourceconvertible.md) to provide a localized description of the error.
 

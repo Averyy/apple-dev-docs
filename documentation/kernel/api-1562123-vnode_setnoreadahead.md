@@ -15,7 +15,7 @@ Set a vnode to not have data speculatively read in in hopes of hitting in cache.
 void vnode_setnoreadahead(vnode_t vp);
 ```
 
-#### Return Value
+## Return Value
 
 void.
 

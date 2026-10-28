@@ -19,7 +19,7 @@ protocol TVBrowserViewControllerDataSource : NSObjectProtocol
 @protocol TVBrowserViewControllerDataSource <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Use the data source to provide a document to the browser.
 

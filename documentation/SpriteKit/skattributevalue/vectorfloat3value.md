@@ -25,7 +25,7 @@ var vectorFloat3Value: vector_float3 { get set }
 @property (nonatomic) vector_float3 vectorFloat3Value;
 ```
 
-#### Discussion
+## Discussion
 
 If the receiver’s original value is a floating-point number or a [`vector_float2`](../../simd/vector_float2.md), the empty items in the vector are set to 0. If the receiver’s original value is a [`vector_float4`](../../simd/vector_float4.md), the last item is truncated.
 

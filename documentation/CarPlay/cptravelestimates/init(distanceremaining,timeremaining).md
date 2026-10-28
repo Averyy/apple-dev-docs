@@ -21,7 +21,7 @@ init(distanceRemaining distance: Measurement<UnitLength>, timeRemaining time: Ti
 - (instancetype) initWithDistanceRemaining:(NSMeasurement<NSUnitLength *> *) distance timeRemaining:(NSTimeInterval) time;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized travel estimates object.
 

@@ -19,7 +19,7 @@ case cellIsInsetButton
 NSCellIsInsetButton
 ```
 
-#### Discussion
+## Discussion
 
 By default, the cell’s contents are inset by 2 points. This constant is ignored if the cell has no border.
 

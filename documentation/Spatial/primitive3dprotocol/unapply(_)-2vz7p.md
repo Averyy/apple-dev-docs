@@ -23,7 +23,7 @@ mutating func unapply(_ pose: Self.Pose)
 
 Available when `Scalar` is `Float`.
 
-#### Discussion
+## Discussion
 
 > **Note**: When unapplying transforms on size and rectangle structures, the transform must be rectilinear, otherwise this function has no effect.
 

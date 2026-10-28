@@ -16,7 +16,7 @@ The buffer underrun count.
 @property (atomic, strong, nullable) NSNumber * sinkBufferUnderrunCount;
 ```
 
-#### Discussion
+## Discussion
 
 This value is a number the system increments whenever you’re not servicing buffers fast enough.
 

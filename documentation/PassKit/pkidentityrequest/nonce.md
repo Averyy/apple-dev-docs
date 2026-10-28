@@ -27,7 +27,7 @@ var nonce: Data? { get set }
 - [Requesting identity data from a Wallet pass](../requesting-identity-data-from-a-wallet-pass.md)
 - [Verifying Wallet identity requests](../verifying-wallet-identity-requests.md)
 
-#### Discussion
+## Discussion
 
 A [`PKIdentityAuthorizationController`](../pkidentityauthorizationcontroller.md) treats this value as opaque, and has a maximum allowed size of 64 bytes. Your app’s server needs to use the same `nonce` value when decrypting and verifying the response.
 

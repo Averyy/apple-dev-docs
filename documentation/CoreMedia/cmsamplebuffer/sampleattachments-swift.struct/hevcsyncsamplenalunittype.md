@@ -21,7 +21,7 @@ Indicates sync sample NAL unit type.
 var hevcSyncSampleNALUnitType: Int? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Corresponds to ‘sync’ sample group.
 

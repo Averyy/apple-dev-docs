@@ -23,7 +23,7 @@ optional func printContent(_ sender: Any?)
 - (void) print:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method on the responder responsible for printing the contents of the window scene; for instance, the root view controller of a [`UIWindow`](../uiwindow.md). In your implementation, prepare the print job and present an instance of [`UIPrintInteractionController`](../uiprintinteractioncontroller.md) to show a Print dialog.
 

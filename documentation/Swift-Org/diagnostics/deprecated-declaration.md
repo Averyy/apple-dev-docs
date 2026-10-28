@@ -10,7 +10,7 @@ framework: "Swift-Org/diagnostics"
 
 Warnings related to deprecated APIs that may be removed in future versions and should be replaced with more current alternatives.
 
-#### Overview
+## Overview
 
 The `DeprecatedDeclaration` group covers the following warnings:
 

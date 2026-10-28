@@ -20,7 +20,7 @@ func ColorSyncProfileEstimateGammaWithDisplayID(_ displayID: Int32, _ error: Uns
 extern float ColorSyncProfileEstimateGammaWithDisplayID(const int32_t displayID, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 A non-zero value on success, or `0.0` in case of error.
 

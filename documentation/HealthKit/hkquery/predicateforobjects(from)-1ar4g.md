@@ -24,11 +24,11 @@ class func predicateForObjects(from sourceRevisions: Set<HKSourceRevision>) -> N
 + (NSPredicate *) predicateForObjectsFromSourceRevisions:(NSSet<HKSourceRevision *> *) sourceRevisions;
 ```
 
-#### Return Value
+## Return Value
 
 A predicate that matches all the objects created by any of the provided source revisions.
 
-#### Discussion
+## Discussion
 
 The following sample uses both the convenience method and a predicate format string to create equivalent predicates.
 

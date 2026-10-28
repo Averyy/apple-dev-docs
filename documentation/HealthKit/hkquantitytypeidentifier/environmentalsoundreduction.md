@@ -24,7 +24,7 @@ static let environmentalSoundReduction: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierEnvironmentalSoundReduction;
 ```
 
-#### Discussion
+## Discussion
 
 These samples use sound pressure units (described in [`HKUnit`](../hkunit.md)). They measure discrete values of the equivalent continuous sound pressure level, described in [`HKQuantityAggregationStyle.discreteEquivalentContinuousLevel`](../hkquantityaggregationstyle/discreteequivalentcontinuouslevel.md). Environmental sound reduction values are automatically collected when wearing supported headphones.
 

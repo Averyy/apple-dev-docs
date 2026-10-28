@@ -25,7 +25,7 @@ case IV
 vDSP_DCT_IV
 ```
 
-#### Discussion
+## Discussion
 
 The type-IV DCT uses the following operation for a discrete cosine transform:
 

@@ -23,7 +23,7 @@ optional func pageControlProgressVisibilityDidChange(_ progress: UIPageControlPr
 - (void) pageControlProgressVisibilityDidChange:(UIPageControlProgress *) progress;
 ```
 
-#### Discussion
+## Discussion
 
 Example:
 

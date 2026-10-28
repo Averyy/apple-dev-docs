@@ -39,7 +39,7 @@ nonisolated
 func alert<S, A, M, T>(_ title: S, isPresented: Binding<Bool>, presenting data: T?, @ContentBuilder actions: (T) -> A, @ContentBuilder message: (T) -> M) -> some View where S : StringProtocol, A : View, M : View
 ```
 
-#### Discussion
+## Discussion
 
 For the alert to appear, both `isPresented` must be `true` and `data` must not be `nil`. The data should not change after the presentation occurs. Any changes that you make after the presentation occurs are ignored.
 

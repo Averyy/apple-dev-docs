@@ -25,7 +25,7 @@ func startDownloadingUbiquitousItem(at url: URL) throws
 - (BOOL) startDownloadingUbiquitousItemAtURL:(NSURL *) url error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 If a cloud-based file or directory has not been downloaded yet, calling this method starts the download process. If the item exists locally, calling this method synchronizes the local copy with the version in the cloud.
 

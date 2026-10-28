@@ -14,11 +14,11 @@
 extern OSStatus AudioStreamSetProperty(AudioStreamID inStream, const AudioTimeStamp *inWhen, UInt32 inChannel, AudioDevicePropertyID inPropertyID, UInt32 inPropertyDataSize, const void *inPropertyData);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus indicating success or failure.
 
-#### Discussion
+## Discussion
 
 Tells the AudioStream object to change the value of the given property using the provided data.
 

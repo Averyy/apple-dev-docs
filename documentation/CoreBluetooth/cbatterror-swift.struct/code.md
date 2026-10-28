@@ -25,7 +25,7 @@ enum Code
 enum CBATTError : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 These error constants derive from the Bluetooth ATT error codes, defined in the Bluetooth 4.0 specification. For more information, see the Bluetooth 4.0 specification, Volume 3, Part F, Section 3.4.1.1.
 

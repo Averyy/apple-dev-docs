@@ -21,7 +21,7 @@ The default behavior for futex functions that wake a thread.
 OS_SYNC_WAKE_BY_ADDRESS_NONE
 ```
 
-#### Discussion
+## Discussion
 
 Use this flag when you pass an address only accessed in the calling process’s memory space. This flag enables kernel optimizations that can’t be used on shared memory.
 

@@ -19,7 +19,7 @@ func addWindowController(_ windowController: NSWindowController)
 - (void) addWindowController:(NSWindowController *) windowController;
 ```
 
-#### Discussion
+## Discussion
 
 An [`NSDocument`](../nsdocument.md) object uses its list of window controllers when it displays all document windows, sets window edited status upon an undo or redo operation, and modifies window titles. If you create window controllers by overriding [`windowNibName`](./windownibname.md), this method is invoked automatically. If you create window controllers in [`makeWindowControllers()`](./makewindowcontrollers%28%29.md) or in any other context, such as in apps that present multiple windows per document, you should invoke this method for each window controller created.
 

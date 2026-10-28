@@ -21,7 +21,7 @@ Populates two single-precision vectors that contain stereo monotonically increme
 static func formStereoRamp<U, V>(withInitialValue initialValue: inout Float, multiplyingBy multiplierOne: U, _ multiplierTwo: U, increment: Float, results resultOne: inout V, _ resultTwo: inout V) where U : AccelerateBuffer, V : AccelerateMutableBuffer, U.Element == Float, V.Element == Float
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to populate two vectors by multiplying the values in two input vectors with the corresponding values of a ramp.
 

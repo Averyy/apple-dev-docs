@@ -24,7 +24,7 @@ func stopBrowsingForNearbyPlayers()
 - (void) stopBrowsingForNearbyPlayers;
 ```
 
-#### Discussion
+## Discussion
 
 If you use the [`startBrowsingForNearbyPlayers(handler:)`](./startbrowsingfornearbyplayers%28handler%29.md) method to find nearby players, call this method when you are done.
 

@@ -24,7 +24,7 @@ enum ScheduleType
 enum HKMedicationDoseEventScheduleType : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Each value tells you whether the person logged the dose ad-hoc or in response to a scheduled medication reminder.
 

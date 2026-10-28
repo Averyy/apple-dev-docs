@@ -24,7 +24,7 @@ var region: MKCoordinateRegion { get }
 @property (nonatomic, readonly) MKCoordinateRegion region;
 ```
 
-#### Discussion
+## Discussion
 
 Both the [`mapRect`](./maprect.md) and the [`region`](./region.md) represent the same camera boundary.
 

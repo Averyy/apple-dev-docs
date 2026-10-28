@@ -24,7 +24,7 @@ class func revision(_ requestRevision: Int, supportsConstellation constellation:
 + (BOOL) revision:(NSUInteger) requestRevision supportsConstellation:(VNRequestFaceLandmarksConstellation) constellation;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the revision supports the constellation, otherwise [`false`](../../Swift/false.md).
 

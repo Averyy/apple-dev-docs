@@ -23,11 +23,11 @@ class func focusGroups(for environment: any UIFocusEnvironment) -> any UIFocusDe
 + (id<UIFocusDebuggerOutput>) focusGroupsForEnvironment:(id<UIFocusEnvironment>) environment;
 ```
 
-#### Return Value
+## Return Value
 
 An object the focus debugger uses to store the results that it formats for display.
 
-#### Discussion
+## Discussion
 
 Call this method from the `lldb` debugger using the following command. In the example, `obj` corresponds to an object that adopts the [`UIFocusEnvironment`](../uifocusenvironment.md) protocol.
 

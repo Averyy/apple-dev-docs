@@ -25,7 +25,7 @@ func setClasses(_ classes: Set<AnyHashable>, for sel: Selector, argumentIndex ar
 - (void) setClasses:(NSSet<Class> *) classes forSelector:(SEL) sel argumentIndex:(NSUInteger) arg ofReply:(BOOL) ofReply;
 ```
 
-#### Discussion
+## Discussion
 
 If an argument to a method in your protocol is a collection class (for example, NSArray or NSDictionary), then you must explicitly specify the set of expected classes that may appear within that collection.
 

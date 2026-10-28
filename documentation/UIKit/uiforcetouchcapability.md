@@ -23,7 +23,7 @@ enum UIForceTouchCapability
 enum UIForceTouchCapability : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Only certain devices support 3D Touch. On those that do, the user can disable 3D Touch in the Accessibility area in Settings.
 

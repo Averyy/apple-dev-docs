@@ -20,7 +20,7 @@ Returns the name of the back right button at the specified location.
 extern GCInputButtonNameGCInputBackRightButton(NSInteger position);
 ```
 
-#### Return Value
+## Return Value
 
 The name of the back right button.
 

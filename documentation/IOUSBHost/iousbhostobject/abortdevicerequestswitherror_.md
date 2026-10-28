@@ -16,11 +16,11 @@ Aborts device requests synchronously.
 - (BOOL) abortDeviceRequestsWithError:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 `YES` if the request completes successfully; otherwise, `NO`.
 
-#### Discussion
+## Discussion
 
 This method aborts any requests made with the [`sendDeviceRequest:data:bytesTransferred:completionTimeout:error:`](./senddevicerequest_data_bytestransferred_completiontimeout_error_.md) or [`enqueueDeviceRequest:data:completionTimeout:error:completionHandler:`](./enqueuedevicerequest_data_completiontimeout_error_completionhandler_.md) methods.
 

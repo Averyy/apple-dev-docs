@@ -19,7 +19,7 @@ var compositingOperation: NSCompositingOperation { get set }
 @property NSCompositingOperation compositingOperation;
 ```
 
-#### Discussion
+## Discussion
 
 The compositing operation is a global attribute of the graphics context and affects drawing operations that do not take an explicit compositing operation parameter. For methods that do take an explicit compositing operation parameter, the value of that parameter supersedes the global value. The compositing operations are related to (but different from) the blend mode settings used in Quartz. Only the default compositing operation ([`NSCompositeCopy`](../nscompositecopy.md)) is supported when rendering PDF or PostScript content. See [`NSCompositingOperation`](../nscompositingoperation.md) for valid constants.
 

@@ -25,21 +25,21 @@ func vDSP_DFT_Interleaved_CreateSetup(_ Previous: vDSP_DFT_Interleaved_Setup?, _
 vDSP_DFT_Interleaved_SetupvDSP_DFT_Interleaved_CreateSetup(vDSP_DFT_Interleaved_Setup Previous, vDSP_Length Length, vDSP_DFT_Direction Direction, vDSP_DFT_RealtoComplex RealtoComplex);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a [`vDSP_DFT_Interleaved_Setup`](./vdsp_dft_interleaved_setup.md) object, or `nil` if the function fails, either from insufficient memory or because `Length` doesn’t satisfy the above requirements.
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  To prevent potential memory leaks, if the `Previous` parameter is not `nil`, the return value and the `Previous` value must be different variables.
 
-#### Discussion
+## Discussion
 
 The interleaved DFT operations that the Accelerate framework provides work over collections with specific counts. The maximum number of complex elements that these operations support is 4096, and other supported counts are the result of the formula `f * 2ⁿ` for certain values of `f` and `n`. In the case of real-to-complex, `n` is the number of real elements divided by two, and for complex-to-complex `n` is the number of complex elements.
 
 The following tables show the complete list of supported lengths for different values of `f` and `n`:
 
-##### Supported lengths for f = 1
+### Supported lengths for f = 1
 
 | n | `2ⁿ` | `length` (`f * 2ⁿ`) |
 | --- | --- | --- |
@@ -54,7 +54,7 @@ The following tables show the complete list of supported lengths for different v
 | 11 | 2048 | **2048** |
 | 12 | 4096 | **4096** |
 
-##### Supported lengths for f = 3
+### Supported lengths for f = 3
 
 | n | `2ⁿ` | `length` (`f * 2ⁿ`) |
 | --- | --- | --- |
@@ -66,7 +66,7 @@ The following tables show the complete list of supported lengths for different v
 | 7 | 128 | **384** |
 | 8 | 256 | **768** |
 
-##### Supported lengths for f = 5
+### Supported lengths for f = 5
 
 | n | `2ⁿ` | `length` (`f * 2ⁿ`) |
 | --- | --- | --- |
@@ -77,7 +77,7 @@ The following tables show the complete list of supported lengths for different v
 | 6 | 64 | **320** |
 | 7 | 128 | **640** |
 
-##### Supported lengths for f = 9
+### Supported lengths for f = 9
 
 | n | `2ⁿ` | `length` (`f * 2ⁿ`) |
 | --- | --- | --- |
@@ -88,7 +88,7 @@ The following tables show the complete list of supported lengths for different v
 | 6 | 64 | **576** |
 | 7 | 128 | **1152** |
 
-##### Supported lengths for f = 15
+### Supported lengths for f = 15
 
 | n | `2ⁿ` | `length` (`f * 2ⁿ`) |
 | --- | --- | --- |

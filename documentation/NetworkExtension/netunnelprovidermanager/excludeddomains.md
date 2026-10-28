@@ -23,7 +23,7 @@ var excludedDomains: [String] { get set }
 
 - [Routing your VPN network traffic](../routing-your-vpn-network-traffic.md)
 
-#### Discussion
+## Discussion
 
 For per-app VPNs only, the system doesn’t route network traffic to servers within these domains.
 

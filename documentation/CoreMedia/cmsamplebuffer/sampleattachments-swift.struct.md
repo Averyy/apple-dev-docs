@@ -21,7 +21,7 @@ Attachments applicable to each sample within a sample buffer.
 struct SampleAttachments
 ```
 
-#### Overview
+## Overview
 
 Each property of this struct is represented as a key in the [`dictionaryRepresentation`](./sampleattachments-swift.struct/dictionaryrepresentation.md).
 

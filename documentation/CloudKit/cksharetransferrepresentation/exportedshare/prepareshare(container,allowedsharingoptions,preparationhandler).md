@@ -19,11 +19,11 @@ Creates a share when the system calls the specified handler.
 static func prepareShare(container: CKContainer, allowedSharingOptions: CKAllowedSharingOptions = CKAllowedSharingOptions.standard, preparationHandler: @escaping @Sendable () async throws -> CKShare) -> CKShareTransferRepresentation<Item>.ExportedShare
 ```
 
-#### Return Value
+## Return Value
 
 The [`CKShareTransferRepresentation.ExportedShare`](../exportedshare.md) with the new [`CKShare`](../../ckshare.md).
 
-#### Discussion
+## Discussion
 
 Use this method when you want to share a collection of [`CKRecord`](../../ckrecord.md) objects, but don’t currently have a [`CKShare`](../../ckshare.md).
 

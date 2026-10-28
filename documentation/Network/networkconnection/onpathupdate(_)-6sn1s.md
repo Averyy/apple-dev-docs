@@ -24,7 +24,7 @@ final func onPathUpdate(_ handler: @escaping @isolated(any) @Sendable (NetworkCo
 
 Available when `ApplicationProtocol` conforms to `OneToOneProtocol`.
 
-#### Discussion
+## Discussion
 
 This closure will inherit the isolation domain of the caller.
 

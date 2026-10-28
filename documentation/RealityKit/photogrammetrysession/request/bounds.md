@@ -18,7 +18,7 @@ An object-creation request that returns a box the same size as the created model
 case bounds
 ```
 
-#### Discussion
+## Discussion
 
 Use a `bounds` request to quickly retrieve a box the same size as the final created object.
 

@@ -21,7 +21,7 @@ A type that represents a URL to a file in the file system.
 extern UTType * const UTTypeFileURL;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.file-url`.
 

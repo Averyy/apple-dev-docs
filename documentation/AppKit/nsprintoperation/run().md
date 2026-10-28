@@ -19,11 +19,11 @@ func run() -> Bool
 - (BOOL) runOperation;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the operation was successful; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The operation runs to completion in the current thread, blocking the application. A separate thread is not spawned, even if [`canSpawnSeparateThread`](./canspawnseparatethread.md) is [`true`](../../Swift/true.md). Use [`runModal(for:delegate:didRun:contextInfo:)`](./runmodal%28for,delegate,didrun,contextinfo%29.md) to use document-modal sheets and to allow a separate thread to perform the operation.
 

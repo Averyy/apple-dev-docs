@@ -25,7 +25,7 @@ var DISPATCH_QUEUE_PRIORITY_HIGH: Int32 { get }
 #define DISPATCH_QUEUE_PRIORITY_HIGH
 ```
 
-#### Discussion
+## Discussion
 
 Use quality-of-service constants instead. This constant maps to the `QOS_CLASS_USER_INITIATED` class.
 

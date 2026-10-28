@@ -18,7 +18,7 @@ typealias AudioObjectID = UInt32
 typedef UInt32 AudioObjectID;
 ```
 
-#### Discussion
+## Discussion
 
 A UInt32 that provides a handle on a specific AudioObject.
 

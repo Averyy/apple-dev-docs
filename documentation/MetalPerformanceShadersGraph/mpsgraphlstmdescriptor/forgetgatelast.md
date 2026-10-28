@@ -24,7 +24,7 @@ var forgetGateLast: Bool { get set }
 @property (nonatomic, readwrite) BOOL forgetGateLast;
 ```
 
-#### Discussion
+## Discussion
 
 If set to `YES` then the layer will use the gate-ordering `[ i, z, f, o ]` instead of default `[ i, f, z, o ]`. Default value: `NO`
 

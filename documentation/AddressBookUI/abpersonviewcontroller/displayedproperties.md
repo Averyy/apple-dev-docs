@@ -23,7 +23,7 @@ var displayedProperties: [NSNumber]? { get set }
 @property (nonatomic, copy, nullable) NSArray<NSNumber *> * displayedProperties;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `NULL`.
 

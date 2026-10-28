@@ -24,11 +24,11 @@ init(componentClass cls: AnyClass)
 - (instancetype) initWithComponentClass:(Class) cls;
 ```
 
-#### Return Value
+## Return Value
 
 A new component system.
 
-#### Discussion
+## Discussion
 
 Each [`GKComponentSystem`](../gkcomponentsystem.md) object manages components of a specific [`GKComponent`](../gkcomponent.md) subclass, which you specify with the `class` parameter in this intializer. After initializing a component system, you may add components to it only if their type matches the system’s component class.
 

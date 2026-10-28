@@ -19,7 +19,7 @@ func SCNetworkServiceCopyAll(_ prefs: SCPreferences) -> CFArray?
 CFArrayRefSCNetworkServiceCopyAll(SCPreferencesRef prefs);
 ```
 
-#### Return Value
+## Return Value
 
 The list of network services associated with the preferences. You must release the returned value.
 

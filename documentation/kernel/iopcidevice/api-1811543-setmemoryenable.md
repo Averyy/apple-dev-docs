@@ -12,11 +12,11 @@ virtual bool setMemoryEnable(
  boolenable );
 ```
 
-#### Return Value
+## Return Value
 
 True if the memory space response was previously enabled, false otherwise.
 
-#### Overview
+## Overview
 
 This method sets the memory space response bit in the device's command config space register to the passed value, and returns the previous state of the enable.
 

@@ -23,7 +23,7 @@ func CVOpenGLESTextureGetName(_ image: CVOpenGLESTexture) -> GLuint
 extern GLuint CVOpenGLESTextureGetName(CVOpenGLESTextureRef image);
 ```
 
-#### Return Value
+## Return Value
 
 An OpenGLES texture target name associated with the texture referenced by the `image` parameter.
 

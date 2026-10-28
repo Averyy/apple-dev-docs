@@ -17,7 +17,7 @@ A Boolean value that indicates whether the Dynamic Island appears with reduced w
 var isDynamicIslandLimitedInWidth: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 In some devices and context, the system adapts the flexible width of compact and minimal Live Activities and renders them smaller; for example, on iPhone in landscape orientation or on iPhone Duo. Use the `isDynamicIslandLimitedInWidth` environment value to adapt views you provide to compact and minimal Live Activity presentations. The following example shows a view for a compact leading presentation:
 

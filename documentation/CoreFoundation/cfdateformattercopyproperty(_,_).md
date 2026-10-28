@@ -25,7 +25,7 @@ func CFDateFormatterCopyProperty(_ formatter: CFDateFormatter!, _ key: CFDateFor
 extern CFTypeRefCFDateFormatterCopyProperty(CFDateFormatterRef formatter, CFDateFormatterKey key);
 ```
 
-#### Return Value
+## Return Value
 
 A CFType object that is a copy of the property value for `key`, or `NULL` if there is no value specified for `key`. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

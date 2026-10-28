@@ -16,11 +16,11 @@ Performs any custom initialization associated with starting the device service.
 virtual bool handleStart(IOService *provider);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if initialization was successful, or `false` if it wasn’t.
 
-#### Discussion
+## Discussion
 
 When defining a custom service, override this method and use it to perform any custom initialization. For example, you might allocate memory for your service’s instance variables and store a reference to the provider object for later use. Always call the `super` implementation of this method at some point.
 

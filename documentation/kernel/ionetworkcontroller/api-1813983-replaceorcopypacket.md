@@ -14,11 +14,11 @@ virtual mbuf_t replaceOrCopyPacket(
  bool *replaced);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a replacement or a copy of the existing packet, or 0 if packet allocation failed.
 
-#### Overview
+## Overview
 
 This method will either make a copy or replace the existing packet, whichever is more time efficient. Packets containing small frames are copied, otherwise they are replaced. If replaced, then the existing packet is returned, and a new packet with the same buffer size is created to take its place. If copied, the existing packet is left intact, while a copy is returned that will hold a copy of the data from the source packet.
 

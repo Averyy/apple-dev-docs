@@ -26,11 +26,11 @@ func CFURLWriteDataAndPropertiesToResource(_ url: CFURL!, _ dataToWrite: CFData!
 extern Boolean CFURLWriteDataAndPropertiesToResource(CFURLRef url, CFDataRef dataToWrite, CFDictionaryRef propertiesToWrite, SInt32 *errorCode);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if successful, `false` otherwise.
 
-#### Discussion
+## Discussion
 
 Properties not present in `propertiesToWrite` are left unchanged, hence if `propertiesToWrite` is `NULL` or empty, the URL’s properties are not changed at all.
 

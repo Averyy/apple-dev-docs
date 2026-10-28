@@ -24,7 +24,7 @@ class PHASEMetaParameter
 @interface PHASEMetaParameter : NSObject
 ```
 
-#### Overview
+## Overview
 
 Instances of this class provide an app with dynamic control of a sound’s properties. A metaparameter takes a single value as input and may operate on one or more audio characteristics.
 

@@ -16,7 +16,7 @@ Suspends the capability.
 func suspend() throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the capability cannot be suspended.
 

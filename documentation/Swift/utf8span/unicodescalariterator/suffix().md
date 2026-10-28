@@ -21,7 +21,7 @@ Returns the UTF8Span containing all the content after the iterator’s current p
 func suffix() -> UTF8Span
 ```
 
-#### Discussion
+## Discussion
 
 The resultant `UTF8Span` has the same lifetime constraints as `self`.
 

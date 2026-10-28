@@ -18,7 +18,7 @@ A mutable, fixed-capacity array of camera values.
 struct CameraArray
 ```
 
-#### Overview
+## Overview
 
 Set `count` to the number of active cameras before calling [`render(using:_:)`](./render%28using,_%29.md).
 

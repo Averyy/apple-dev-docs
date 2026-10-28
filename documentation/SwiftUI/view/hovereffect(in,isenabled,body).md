@@ -16,11 +16,11 @@ nonisolated
 func hoverEffect(in group: HoverEffectGroup? = nil, isEnabled: Bool = true, body: @escaping (EmptyHoverEffectContent, Bool, GeometryProxy) -> some HoverEffectContent) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A new effect that changes a view’s appearance when hovered.
 
-#### Discussion
+## Discussion
 
 You use this modifier to describe how a view should change when hovered. The given block is provided an empty effect that you use to compose effects, as well as a boolean describing which phase is being requested. A [`GeometryProxy`](../geometryproxy.md) is also provided, allowing effects to change based on the view’s geometry.
 

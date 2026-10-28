@@ -25,7 +25,7 @@ var bitRate: Int { get set }
 @property (nonatomic) NSInteger bitRate;
 ```
 
-#### Discussion
+## Discussion
 
 This value only applies when encoding.
 

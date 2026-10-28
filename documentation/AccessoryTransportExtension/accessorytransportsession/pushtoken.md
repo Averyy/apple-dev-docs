@@ -19,7 +19,7 @@ var pushToken: Data?
 
 - [Forwarding notifications to your accessory using the internet transport type](../forwarding-notifications-to-your-accessory-using-the-internet-transport-type.md)
 
-#### Discussion
+## Discussion
 
 This property contains a value when the session uses internet transport. Convert the token to a hex-encoded string before including it in the JSON payload your accessory sends to your server. Your server uses the token to contact APNs and route the accessory’s encrypted response to the correct device; include the [`sessionID`](../transportmessage/sessionid.md) in the same payload so the system delivers the response to the correct data provider extension.
 

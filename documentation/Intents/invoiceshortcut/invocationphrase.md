@@ -32,7 +32,7 @@ var invocationPhrase: String { get }
 @property (atomic, copy, readonly) NSString * invocationPhrase;
 ```
 
-#### Discussion
+## Discussion
 
 The user sets the invocation phrase when they add the shortcut to Siri.
 

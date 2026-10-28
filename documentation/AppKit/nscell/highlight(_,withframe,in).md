@@ -19,7 +19,7 @@ func highlight(_ flag: Bool, withFrame cellFrame: NSRect, in controlView: NSView
 - (void) highlight:(BOOL) flag withFrame:(NSRect) cellFrame inView:(NSView *) controlView;
 ```
 
-#### Discussion
+## Discussion
 
 Note that the `NSCell` highlighting does not appear when highlighted cells are printed (although instances of `NSTextFieldCell`, `NSButtonCell`, and others can print themselves highlighted). Generally, you cannot depend on highlighting being printed because implementations of this method may choose (or not choose) to use transparency.
 

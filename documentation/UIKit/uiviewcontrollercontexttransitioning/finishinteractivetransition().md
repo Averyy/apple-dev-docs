@@ -24,7 +24,7 @@ func finishInteractiveTransition()
 - (void) finishInteractiveTransition;
 ```
 
-#### Discussion
+## Discussion
 
 While tracking user interactions, gesture recognizers or your interactive animator object should call this method when the interactions suggest that the transition is now complete. For example, if the user swipes a finger, and the touch events indicate that the swipe distance crossed the threshold needed to complete the gesture, call this method when the corresponding touch events end to let the system know that it can now complete the transition.
 

@@ -15,7 +15,7 @@ A function key has been pressed.
 static const NSEventModifierFlags NSFunctionKeyMask;
 ```
 
-#### Discussion
+## Discussion
 
 The numeric keypad is generally on the right side of the keyboard. This is also set if any of the arrow keys are pressed ([`NSUpArrowFunctionKey`](./nsuparrowfunctionkey.md), [`NSDownArrowFunctionKey`](./nsdownarrowfunctionkey.md), [`NSLeftArrowFunctionKey`](./nsleftarrowfunctionkey.md), and [`NSRightArrowFunctionKey`](./nsrightarrowfunctionkey.md)).
 

@@ -19,7 +19,7 @@ A size that requests a preferred size for the button.
 @property (nonatomic, assign, readwrite) UIButtonConfigurationSize buttonSize;
 ```
 
-#### Discussion
+## Discussion
 
 The size indicates a system-defined size you prefer for this button. The exact size of the button may change regardless of this value.
 

@@ -24,11 +24,11 @@ class var iPodMusicPlayer: MPMusicPlayerController { get }
 @property (class, nonatomic, readonly) MPMusicPlayerController * iPodMusicPlayer;
 ```
 
-#### Return Value
+## Return Value
 
 The iPod music player.
 
-#### Discussion
+## Discussion
 
 The iPod music player employs the iPod app on your behalf. On instantiation, it takes on the current iPod app state and controls that state as your app runs. Specifically, the shared state includes the following:
 

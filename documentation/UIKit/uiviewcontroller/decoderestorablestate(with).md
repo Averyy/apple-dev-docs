@@ -27,7 +27,7 @@ func decodeRestorableState(with coder: NSCoder)
 
 - [About the UI restoration process](../about-the-ui-restoration-process.md)
 
-#### Discussion
+## Discussion
 
 Do not call this method directly. The system calls this method during the state restoration process so that you can restore your view controller to its previous state.
 

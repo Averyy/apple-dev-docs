@@ -18,7 +18,7 @@ Returns the operation if it resolves a collision by renaming the new item.
 - (id<NSFileProviderTestingCollisionResolution>) asCollisionResolution;
 ```
 
-#### Discussion
+## Discussion
 
 If the operation doesn’t conform to the [`NSFileProviderTestingCollisionResolution`](../nsfileprovidertestingcollisionresolution.md) protocol, this method returns `nil`.
 

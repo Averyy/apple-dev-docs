@@ -19,7 +19,7 @@ func objectController() -> NSObjectController!
 - (NSObjectController *) objectController;
 ```
 
-#### Return Value
+## Return Value
 
 The object controller for the bindings between the filter and its view.
 

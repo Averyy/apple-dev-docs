@@ -18,7 +18,7 @@ A continuous stream of patients that exist in the store.
 func anyPatients(matching query: OCKPatientQuery) -> CareStoreQueryResults<OCKAnyPatient>
 ```
 
-#### Discussion
+## Discussion
 
 The stream yields a new value whenever the result changes and yields an error if there’s an issue accessing the store or fetching results.
 

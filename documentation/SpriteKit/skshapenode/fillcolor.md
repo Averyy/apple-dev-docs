@@ -46,7 +46,7 @@ var fillColor: NSColor { get set }
 - [Controlling Shape Drawing with Shaders](../controlling-shape-drawing-with-shaders.md)
 - [Getting Started with Shape Nodes](../getting-started-with-shape-nodes.md)
 
-#### Discussion
+## Discussion
 
 The default fill color is `[SKColor clearColor]`, which means the shape is not filled.
 

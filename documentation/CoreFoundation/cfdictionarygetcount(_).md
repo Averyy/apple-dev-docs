@@ -25,7 +25,7 @@ func CFDictionaryGetCount(_ theDict: CFDictionary!) -> CFIndex
 extern CFIndex CFDictionaryGetCount(CFDictionaryRef theDict);
 ```
 
-#### Return Value
+## Return Value
 
 The number of number of key-value pairs in `theDict`.
 

@@ -25,7 +25,7 @@ func sparse_insert_entries_float(_ A: sparse_matrix_float!, _ N: sparse_dimensio
 sparse_status sparse_insert_entries_float(sparse_matrix_float A, sparse_dimension N, const float * restrictval, const sparse_index * restrictindx, const sparse_index * restrictjndx);
 ```
 
-#### Discussion
+## Discussion
 
 Use to build a sparse matrix by providing a list of point entries. For each entry provided, update `A[indx[i],jndx[i]] = val[i]`.
 

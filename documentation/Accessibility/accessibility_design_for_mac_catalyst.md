@@ -12,7 +12,7 @@ Improve navigation in your app by using keyboard shortcuts and accessibility con
 - Mac Catalyst 14.0+
 - Xcode 12.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC20 session [10117: Accessibility design for Mac Catalyst](https://developer.apple.com/videos/play/wwdc2020/10117/).
 

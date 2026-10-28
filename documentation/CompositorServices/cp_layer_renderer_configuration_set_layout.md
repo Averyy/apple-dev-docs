@@ -16,7 +16,7 @@ Changes the layout configuration for the drawable views in the layer.
 void cp_layer_renderer_configuration_set_layout(cp_layer_renderer_configuration_t configuration, cp_layer_renderer_layout layout);
 ```
 
-#### Discussion
+## Discussion
 
 Layouts define how Compositor Services creates the color and depth textures it passes to your app. A layout might use separate textures for each view, or combine the content from multiple views into a single texture. The layout type also determines which Metal texture type the compositor creates for you. For more information about the supported layouts, see `cp_layer_renderer_layout`.
 

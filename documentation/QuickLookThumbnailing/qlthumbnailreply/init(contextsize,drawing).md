@@ -23,11 +23,11 @@ convenience init(contextSize: CGSize, drawing drawingBlock: @escaping (CGContext
 + (instancetype) replyWithContextSize:(CGSize) contextSize drawingBlock:(BOOL (^)(CGContextRef context)) drawingBlock;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized reply object for a requested thumbnail.
 
-#### Discussion
+## Discussion
 
 Use this initializer if you’re drawing the thumbnail using [Core Graphics](../../CoreGraphics/CoreGraphics.md). If you’re using [UIKit](../../UIKit/UIKit.md) or [AppKit](../../AppKit/AppKit.md) to draw the thumbnail, use the initializer [`init(contextSize:currentContextDrawing:)`](./init%28contextsize,currentcontextdrawing%29.md). The context that this initializer provides uses the coordinate system of [Core Graphics](../../CoreGraphics/CoreGraphics.md).
 

@@ -15,7 +15,7 @@ An error that occurs during audio accessory configuration operations.
 enum Error
 ```
 
-#### Overview
+## Overview
 
 Use error cases to identify the cause of failures when registering devices or updating their state.
 

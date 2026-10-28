@@ -24,7 +24,7 @@ static let text: PDFAnnotationSubtype
 extern PDFAnnotationSubtype PDFAnnotationSubtypeText;
 ```
 
-#### Discussion
+## Discussion
 
 A common use for this annotation type is with a pop-up annotation to create a note.
 

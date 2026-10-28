@@ -20,11 +20,11 @@ func minimumSize(withPrioritizedCompressionOptions prioritizedOptions: [NSUserIn
 - (NSSize) minimumSizeWithPrioritizedCompressionOptions:(NSArray<NSUserInterfaceCompressionOptions *> *) prioritizedOptions;
 ```
 
-#### Return Value
+## Return Value
 
 The minimum size of a view when applying the supplied compression options.
 
-#### Discussion
+## Discussion
 
 Compression options that are handled by the system are not included in the supplied array.
 

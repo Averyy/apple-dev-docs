@@ -20,11 +20,11 @@ init?(xmlString string: String)
 - (instancetype) initWithXMLString:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSXMLDTDNode` object initialized with the DTD declaration in `string`. Returns `nil` if initialization did not succeed, as might occur if the passed-in declaration is malformed.
 
-#### Discussion
+## Discussion
 
 The node kind (NSXMLNode) assigned to the returned object—element, attribute, entity, or notation declaration— is based on the full XML string that is parsed. To assign a subkind, set the [`dtdKind`](./dtdkind-swift.property.md) property.
 

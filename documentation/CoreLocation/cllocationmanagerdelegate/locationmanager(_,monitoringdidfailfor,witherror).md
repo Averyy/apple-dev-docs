@@ -22,7 +22,7 @@ optional func locationManager(_ manager: CLLocationManager, monitoringDidFailFor
 - (void) locationManager:(CLLocationManager *) manager monitoringDidFailForRegion:(CLRegion *) region withError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 If an error occurs while trying to monitor a given region, the location manager sends this message to its delegate. Region monitoring might fail because the region itself cannot be monitored or because there was a more general failure in configuring the region monitoring service.
 

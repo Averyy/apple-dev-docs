@@ -26,7 +26,7 @@ extern void vDSP_vadd(const float *__A, vDSP_Stride __IA, const float *__B, vDSP
 - [Controlling vDSP operations with stride](./controlling-vdsp-operations-with-stride.md)
 - [Using vDSP for vector-based arithmetic](./using-vdsp-for-vector-based-arithmetic.md)
 
-#### Discussion
+## Discussion
 
 This function calculates the sums of the first `N` elements of input vectors `A` and `B`, and writes the result to output vector `C`, as follows:
 

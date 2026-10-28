@@ -19,7 +19,7 @@ var numberOfMajorTickMarks: Int { get set }
 @property NSInteger numberOfMajorTickMarks;
 ```
 
-#### Discussion
+## Discussion
 
 The value in this property must be less than or equal to the value in the [`numberOfTickMarks`](./numberoftickmarks.md) property.
 

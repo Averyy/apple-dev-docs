@@ -25,7 +25,7 @@ var context: CGContext? { get }
 extern CGContextRefCGLayerGetContext(CGLayerRef layer);
 ```
 
-#### Discussion
+## Discussion
 
 The context that’s returned is the context for the layer itself, not the context that you specified when you created the layer.
 

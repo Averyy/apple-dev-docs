@@ -19,7 +19,7 @@ typealias TrackingRectTag = Int
 typedef NSInteger NSTrackingRectTag;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this type is 0, it is invalid. See the methods [`addTrackingRect(_:owner:userData:assumeInside:)`](./addtrackingrect%28_,owner,userdata,assumeinside%29.md) and [`removeTrackingRect(_:)`](./removetrackingrect%28_%29.md).
 

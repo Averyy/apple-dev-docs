@@ -21,7 +21,7 @@ A protocol for types that wrap another intent value that supports conversion.
 protocol IntentValueConvertibleWrapper : IntentValueConvertible
 ```
 
-#### Overview
+## Overview
 
 `IntentValueConvertibleWrapper` enables you to create specialized types that derive their `IntentValueConvertible` conformance from an underlying base type. This pattern allows you to extend existing convertible types with additional functionality while preserving their ability to work within the AppIntents framework.
 
@@ -31,7 +31,7 @@ Use this protocol when you want to create a type that:
 - Adds domain-specific properties or methods
 - Maintains compatibility with the AppIntents framework
 
-#### Example
+## Example
 
 ```swift
 struct LandmarkEntity: IntentValueConvertibleWrapper {

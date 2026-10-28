@@ -24,7 +24,7 @@ func displaceWithNoises(x xDisplacementNoise: GKNoise, y yDisplacementNoise: GKN
 - (void) displaceXWithNoise:(GKNoise *) xDisplacementNoise yWithNoise:(GKNoise *) yDisplacementNoise zWithNoise:(GKNoise *) zDisplacementNoise;
 ```
 
-#### Discussion
+## Discussion
 
 For each position in the noise field, this method first constructs a vector by sampling from the same position in the `xDisplacementNoise`, `yDisplacementNoise`, and `zDisplacementNoise` noise objects. Then this method uses that vector to shift the location of the noise value at that position. By applying different types of noise to each parameter, you can create different kinds of distortion effects. For example, passing [`GKCylindersNoiseSource`](../gkcylindersnoisesource.md) output to one parameter and [`GKConstantNoiseSource`](../gkconstantnoisesource.md) to the other two, you can add horizontal, vertical, or transverse waves to the noise.
 

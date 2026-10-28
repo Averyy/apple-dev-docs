@@ -28,7 +28,7 @@ typedef NSString * CHHapticEventParameterID;
 
 - [Representing haptic patterns in AHAP files](../representing-haptic-patterns-in-ahap-files.md)
 
-#### Discussion
+## Discussion
 
 Specify event parameters when creating a haptic or audio event. The combination of parameters determines the event’s character.
 

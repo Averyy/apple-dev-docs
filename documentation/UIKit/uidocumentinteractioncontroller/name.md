@@ -22,7 +22,7 @@ var name: String? { get set }
 @property (copy, nullable) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the filename without any preceding path information. The default value of this property is derived from the path information in the [`url`](./url.md) property. You can change the value of this property as needed if you want to associate a different name with the file.
 

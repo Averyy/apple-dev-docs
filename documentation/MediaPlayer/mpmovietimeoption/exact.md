@@ -21,7 +21,7 @@ case exact
 MPMovieTimeOptionExact
 ```
 
-#### Discussion
+## Discussion
 
 Use the exact current frame.
 

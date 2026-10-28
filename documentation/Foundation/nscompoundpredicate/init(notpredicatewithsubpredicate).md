@@ -25,11 +25,11 @@ init(notPredicateWithSubpredicate predicate: NSPredicate)
 + (NSCompoundPredicate *) notPredicateWithSubpredicate:(NSPredicate *) predicate;
 ```
 
-#### Return Value
+## Return Value
 
 A new predicate formed by NOT-ing the predicate specified by `predicate`.
 
-#### Discussion
+## Discussion
 
 For applications linked on macOS 10.5 or later, the `subpredicates` array is copied. For applications linked on OS X v10.4, the `subpredicates` array is retained (for binary compatibility).
 

@@ -19,7 +19,7 @@ var popupPopover: NSPopover? { get }
 @property (nonatomic, readonly, nullable) NSPopover * popupPopover;
 ```
 
-#### Discussion
+## Discussion
 
 This popover contains a view controller with a web view preloaded with the pop-up page. It automatically adjusts its size to fit the web view’s content size. The [`presentsPopup`](./presentspopup.md) property should be checked to determine the availability of a pop-up before using this property.  Dismissing the popover will close the pop-up and unload the web view.
 

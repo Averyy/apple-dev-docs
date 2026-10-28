@@ -4,7 +4,7 @@
 
 Displays an interactive text field used to search for content.
 
-#### Overview
+## Overview
 
 The `searchField` element creates a text field for user input. Different keyboards can be used to provide the best input experience for the user. Here’s an example that presents a search field along with three movies.
 
@@ -33,7 +33,7 @@ The `searchField` element creates a text field for user input. Different keyboar
 </searchTemplate>
 ```
 
-##### Contained In
+### Contained In
 
 - [searchTemplate](./searchtemplate.md)
 - [stackTemplate](./stacktemplate.md)

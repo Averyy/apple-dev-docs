@@ -20,7 +20,7 @@ Opens a stage using a file as the root layer.
 static func open(_ path: FilePath, sessionLayer: USDLayer? = nil, options: USDStage.OpenOptions = []) throws -> USDStage
 ```
 
-#### Discussion
+## Discussion
 
 Recursively follows the composition rules described by the root layer, opening any files referenced by that layer and assembling a hierarchy of [`USDPrim`](../usdprim.md)s from the combined contents of all layers.
 

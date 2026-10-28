@@ -25,7 +25,7 @@ func CFRunLoopRemoveSource(_ rl: CFRunLoop!, _ source: CFRunLoopSource!, _ mode:
 extern void CFRunLoopRemoveSource(CFRunLoopRef rl, CFRunLoopSourceRef source, CFRunLoopMode mode);
 ```
 
-#### Discussion
+## Discussion
 
 If `source` is a version 0 source, this function calls the `cancel` callback function specified in the context structure for `source`. See [`CFRunLoopSourceContext`](./cfrunloopsourcecontext.md) and [`CFRunLoopSourceContext1`](./cfrunloopsourcecontext1.md)for more details.
 

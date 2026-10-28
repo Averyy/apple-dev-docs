@@ -21,7 +21,7 @@ var logLevel: Logger.Level { get set }
 
 - [Disable log levels during compilation](../disableloglevelsduringcompilation.md)
 
-#### Discussion
+## Discussion
 
 > **Note**: Changing the log level threshold for a logger only affects the instance of the `Logger` where you change it. It is acceptable for logging backends to have some form of global log level override that affects multiple or even all loggers. This means a change in `logLevel` to one `Logger` might in certain cases have no effect.
 

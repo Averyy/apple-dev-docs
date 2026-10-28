@@ -22,7 +22,7 @@ var supportedDepthDataFormats: [AVCaptureDevice.Format] { get }
 @property (nonatomic, readonly) NSArray<AVCaptureDeviceFormat *> * supportedDepthDataFormats;
 ```
 
-#### Discussion
+## Discussion
 
 Depth data capture requires a compatible pairing of video format and depth data format. After you set a capture device’s [`activeFormat`](../activeformat.md) property to this format, you can set the device’s [`activeDepthDataFormat`](../activedepthdataformat.md) property to one of the formats in this array.
 

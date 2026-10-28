@@ -29,11 +29,11 @@ class func controllers() -> [GCController]
 - [Discovering game controllers](../discovering-game-controllers.md)
 - [Discovering and tracking spatial game controllers and styli](../discovering-and-tracking-spatial-game-controllers-and-styli.md)
 
-#### Return Value
+## Return Value
 
 The currently connected controllers.
 
-#### Discussion
+## Discussion
 
 To track the connection status of controllers, observe the framework notifications. The framework posts the [`GCControllerDidConnect`](../../Foundation/nsnotification/name-swift.struct/gccontrollerdidconnect.md) (Swift) and [`GCControllerDidBecomeCurrent`](../../Foundation/nsnotification/name-swift.struct/gccontrollerdidbecomecurrent.md) (Swift) notifications when a controller connects to a device. For Objective-C, it posts the [`GCControllerDidConnectNotification`](../gccontrollerdidconnectnotification.md) and [`GCControllerDidBecomeCurrentNotification`](../gccontrollerdidbecomecurrentnotification.md) notifications. When a controller disconnects from a device, it posts the [`GCControllerDidDisconnect`](../../Foundation/nsnotification/name-swift.struct/gccontrollerdiddisconnect.md) (Swift) and [`GCControllerDidStopBeingCurrent`](../../Foundation/nsnotification/name-swift.struct/gccontrollerdidstopbeingcurrent.md) (Swift) notifications. For Objective-C, it posts the [`GCControllerDidDisconnectNotification`](../gccontrollerdiddisconnectnotification.md) and [`GCControllerDidStopBeingCurrentNotification`](../gccontrollerdidstopbeingcurrentnotification.md) notifications.
 

@@ -25,7 +25,7 @@ weak var delegate: (any SKSceneDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<SKSceneDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 When a delegate is present, when any of the animation loop methods steps are executed, your delegate is called. Typically, you use a delegate when you do not want to implement a scene subclass or if you want to dynamically change the scene behavior at runtime.
 

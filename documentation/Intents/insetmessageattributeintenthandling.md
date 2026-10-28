@@ -26,7 +26,7 @@ protocol INSetMessageAttributeIntentHandling : NSObjectProtocol
 
 - [Dispatching intents to handlers](../SiriKit/dispatching-intents-to-handlers.md)
 
-#### Overview
+## Overview
 
 Use the methods of the [`INSetMessageAttributeIntentHandling`](./insetmessageattributeintenthandling.md) protocol to resolve, confirm, and handle requests to modify attributes of a user’s messages. Adopt this protocol in an object of your Intents extension that is capable of updating the state of messages, such as whether a user has read or flagged the message.
 

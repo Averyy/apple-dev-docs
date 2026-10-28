@@ -5,7 +5,7 @@
 
 Create a version of your macOS app that runs on both Apple silicon and Intel-based Mac computers.
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  If you need to build for Intel-based processors using Xcode 27 to target macOS 27 or DriverKit 27, add `x86_64` to the Architectures (`ARCHS`) build setting in Xcode, as described in the Architectures section of [Build settings reference](../Xcode/build-settings-reference.md) and [Configuring the build settings of a target](../Xcode/configuring-the-build-settings-of-a-target.md). If you need to run Xcode on an Intel-based processor, use Xcode 26 or earlier.
 
@@ -21,7 +21,7 @@ After you create a universal binary, test it on both architectures and determine
 
 To learn how to build a universal binary, see [Building a universal macOS binary](./building-a-universal-macos-binary.md).
 
-##### Create a Porting Plan
+### Create a Porting Plan
 
 Early in the porting process, identify the workflow you’ll use to build and test your code. Xcode runs on all Mac computers, so build your code on either an Apple silicon or Intel-based Mac computer and do your initial testing there. However, always test, tune, and validate your code on both computer types to uncover issues specific to that architecture.
 
@@ -42,7 +42,7 @@ The list above is not exhaustive, but it offers a starting point for your invest
 
 Always have a well-defined test plan, ideally with a set of automated test suites you can run at build time. In addition to testing your code’s correctness, gather metrics on your app’s performance. Examine your app’s memory usage, and measure how long it takes to execute specific tasks on both Apple silicon and Intel-based Mac computers. Use that information to identify additional areas to investigate.
 
-##### Obtain Universal Versions of Linked Libraries
+### Obtain Universal Versions of Linked Libraries
 
 If your project depends on any third-party libraries, contact the original vendors and ask them to provide you with universal versions of those libraries. All code running in the same process must support the same architecture. You cannot produce a universal version of your binary without universal versions of all linked libraries. If one or more libraries is not universal, the linker reports errors.
 
@@ -50,7 +50,7 @@ If your project depends on any third-party libraries, contact the original vendo
 
 To learn how to create your own universal binaries, see [Building a universal macOS binary](./building-a-universal-macos-binary.md).
 
-##### Update Plug-Ins to Universal Binaries
+### Update Plug-Ins to Universal Binaries
 
 A universal plug-in runs natively on any Mac computer. If your app supports a plug-in model, create universal versions of the plug-ins that you manage. If your company allows external developers to contribute plug-ins, encourage those developers to create universal versions of their plug-ins.
 
@@ -62,7 +62,7 @@ Plug-ins that run out-of-process using an XPC service may run using a different 
 
 For information about how to communicate with out-of-process plug-ins using XPC, see [XPC](../Foundation/xpc.md).
 
-##### Address Architectural Differences
+### Address Architectural Differences
 
 Apart from large-scale changes to the processor and graphics hardware, subtle architectural differences exist between Apple silicon and Intel-based Mac computers. During the porting process, audit your code to identify fixes for any potential architectural issues. For example, look for places where your code relies on specific hardware features or configurations.
 
@@ -84,7 +84,7 @@ The following list identifies several known architectural differences between Ap
 
 For additional information about architectural differences, see [Addressing architectural differences in your macOS code](./addressing-architectural-differences-in-your-macos-code.md).
 
-##### Update GPU-Specific Code
+### Update GPU-Specific Code
 
 Metal on Apple silicon supports the features of both Intel-based Mac computers and iOS devices. If your app adopts Metal features that are found only on Intel-based Mac computers, consider also adopting the iOS-specific features in your `arm64` code. Adopting these features can lead to performance improvements for many apps.
 
@@ -96,7 +96,7 @@ If your app uses Metal, OpenGL, or OpenCL, be aware of the following differences
 
 For information about how to update your graphics code, see [Porting your Metal code to Apple silicon](./porting-your-metal-code-to-apple-silicon.md).
 
-##### Update Drivers, System Extensions, and Kernel Extensions
+### Update Drivers, System Extensions, and Kernel Extensions
 
 When porting code to macOS 11, be aware of the following requirements for code that interacts with the kernel:
 
@@ -106,7 +106,7 @@ When porting code to macOS 11, be aware of the following requirements for code t
 
 For more information about kernel extension and driver changes, see [Implementing drivers, system extensions, and kexts](../SystemExtensions/implementing-drivers-system-extensions-and-kexts.md).
 
-##### Migrate Away from Specific Technologies
+### Migrate Away from Specific Technologies
 
 macOS includes a few technologies that are currently deprecated or discouraged for active development. If your app uses one of the following technologies, migrate to an appropriate replacement as soon as possible:
 
@@ -118,13 +118,13 @@ macOS includes a few technologies that are currently deprecated or discouraged f
 
 Apple silicon still provides support for the preceding technologies, and you may continue to use them in macOS 11. However, this support may be removed in a future version of macOS, so migration to newer technologies is recommended.
 
-##### Debug and Test Your Code
+### Debug and Test Your Code
 
 Apple silicon supports all debugging and testing tools found on Intel-based Mac computers. Use the Xcode IDE to set and monitor breakpoints and monitor other aspects of your app’s behavior. Use `lldb` from the command line to perform similar tasks outside of the Xcode interface.
 
 For more information about how to debug and test your code, see [Xcode](../Xcode/Xcode.md).
 
-##### Tune Your App’s Performance
+### Tune Your App’s Performance
 
 Apple silicon runs all performance tools found on Intel-based Mac computers. Use Instruments and other performance tools to gather different types of metrics for your app, including information about its memory usage, speed, energy usage, and more. You can also use command-line tools such as `leaks`, `heap`, `top`, `fs_usage`, `sc_usage`, `vm_stat`, `otool`, `sample`, `malloc_history`, and `vmmap` to identify potential performance issues.
 

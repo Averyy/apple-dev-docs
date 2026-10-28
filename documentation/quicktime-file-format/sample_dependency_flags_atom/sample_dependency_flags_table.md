@@ -6,7 +6,7 @@
 
 A table of 8-bit values indicating the sample flag settings.
 
-#### Overview
+## Overview
 
 The number of entries in the table is obtained from the associated sample size atom’s number of samples field.
 

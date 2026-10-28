@@ -26,7 +26,7 @@ static let neutralChromaticityY: CIRAWFilterOption
 extern CIRAWFilterOption const kCIInputNeutralChromaticityYKey;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is a floating-point value packaged as an [`NSNumber`](../../Foundation/nsnumber.md) object.  You can query this value to get the current y value for neutral x, y.
 

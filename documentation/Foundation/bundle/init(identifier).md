@@ -25,11 +25,11 @@ init?(identifier: String)
 + (NSBundle *) bundleWithIdentifier:(NSString *) identifier;
 ```
 
-#### Return Value
+## Return Value
 
 The `NSBundle` object with the bundle identifier `identifier`, or `nil` if the requested bundle is not found on the system. This method creates and returns a new `NSBundle` object if there is no existing bundle associated with `identifier`. Otherwise, the existing instance is returned.
 
-#### Discussion
+## Discussion
 
 This method is typically used by frameworks and plug-ins to locate their own bundle at runtime. This method may be somewhat more efficient than trying to locate the bundle using the [`init(for:)`](./init%28for%29.md) method. However, if the initial lookup of an already loaded and cached bundle with the specified identifier fails, this method uses potentially time-consuming heuristics to attempt to locate the bundle. As an optimization, you can use the [`bundleWithPath:`](../nsbundle/bundlewithpath_.md) or [`init(url:)`](./init%28url%29-a2t0.md) method instead to avoid file system traversal.
 

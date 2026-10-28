@@ -21,7 +21,7 @@ Chart content that represents a collection of data using rectangles.
 struct RectanglePlot<Content>
 ```
 
-#### Overview
+## Overview
 
 Use `RectanglePlot` when you want to visualize data in the same way as with [`RectangleMark`](./rectanglemark.md), but you want to visualize an entire data collection with a single plot.
 

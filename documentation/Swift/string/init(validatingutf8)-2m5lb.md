@@ -24,7 +24,7 @@ Creates a new string by copying and validating the null-terminated UTF-8 data re
 init?(validatingUTF8 cString: [CChar])
 ```
 
-#### Discussion
+## Discussion
 
 This initializer does not try to repair ill-formed UTF-8 code unit sequences. If any are found, the result of the initializer is `nil`.
 

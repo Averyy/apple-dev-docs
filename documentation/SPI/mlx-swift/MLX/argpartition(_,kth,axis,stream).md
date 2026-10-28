@@ -21,7 +21,7 @@ func argPartition(_ array: MLXArray, kth: Int, axis: Int, stream: StreamOrDevice
 
 - [Converting From Python](./converting-python.md)
 
-#### Discussion
+## Discussion
 
 The ordering of the elements within a partition in given by the indices is undefined.
 
@@ -38,7 +38,7 @@ let partitionIndexes = argPartition(array, kth: 3)
 let partitioned = array[sortIndexes]
 ```
 
-##### See Also
+### See Also
 
 - [Indexes](./indexes.md)
 - [`argPartition(_:kth:stream:)`](./argpartition%28_,kth,stream%29.md)

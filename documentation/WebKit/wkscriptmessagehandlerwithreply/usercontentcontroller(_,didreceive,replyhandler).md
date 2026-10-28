@@ -28,7 +28,7 @@ func userContentController(_ userContentController: WKUserContentController, did
 - (void) userContentController:(WKUserContentController *) userContentController didReceiveScriptMessage:(WKScriptMessage *) message replyHandler:(void (^)(id, NSString *)) replyHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to handle a message from the webpage and provide an appropriate response.
 

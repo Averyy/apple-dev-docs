@@ -22,11 +22,11 @@ init(nameComponents: PersonNameComponents?, phoneNumber: String?, emailAddress: 
 - (instancetype) initWithNameComponents:(NSPersonNameComponents *) nameComponents phoneNumber:(NSString *) phoneNumber emailAddress:(NSString *) emailAddress;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized restaurant guest object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 This method stores a copy of the `phoneNumber` and `emailAddress` objects that you provide.
 

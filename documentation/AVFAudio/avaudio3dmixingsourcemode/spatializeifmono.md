@@ -24,7 +24,7 @@ case spatializeIfMono
 AVAudio3DMixingSourceModeSpatializeIfMono
 ```
 
-#### Discussion
+## Discussion
 
 The system bypasses an input bus with more than one channel. This is equivalent to [`AVAudio3DMixingSourceMode.pointSource`](./pointsource.md) for a mono bus and [`AVAudio3DMixingSourceMode.bypass`](./bypass.md) for a bus with more than one channel.
 

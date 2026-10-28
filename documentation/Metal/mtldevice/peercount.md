@@ -22,7 +22,7 @@ var peerCount: UInt32 { get }
 @property (readonly) uint32_t peerCount;
 ```
 
-#### Discussion
+## Discussion
 
 A peer count value of `0` indicates the GPU isn’t in a peer group. Otherwise, the GPU is in a peer group and the value represents the total number of GPUs in the group, including this one.
 

@@ -19,7 +19,7 @@ Prepares the filter to start, in response to a call from the framework.
 func start() async throws
 ```
 
-#### Discussion
+## Discussion
 
 Override this method in your conformance to [`NEURLFilterControlProvider`](../neurlfiltercontrolprovider.md) and perform whatever steps are necessary to prepare for fetching pre-filter data.
 

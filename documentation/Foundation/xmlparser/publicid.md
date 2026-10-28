@@ -25,7 +25,7 @@ var publicID: String? { get }
 @property (copy, readonly, nullable) NSString * publicID;
 ```
 
-#### Discussion
+## Discussion
 
 You may access this property once a parsing operation has begun or after an error occurs.
 

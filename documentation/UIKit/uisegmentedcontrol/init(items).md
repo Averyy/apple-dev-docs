@@ -23,11 +23,11 @@ init(items: [Any]?)
 - (instancetype) initWithItems:(NSArray *) items;
 ```
 
-#### Return Value
+## Return Value
 
 A `UISegmentedControl` object or `nil` if there was a problem in initializing the object.
 
-#### Discussion
+## Discussion
 
 The system automatically sizes the returned segmented control to fit its content within the width of its superview.
 

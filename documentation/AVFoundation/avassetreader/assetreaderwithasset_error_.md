@@ -20,7 +20,7 @@ Returns a new object to read media data from an asset.
 + (instancetype) assetReaderWithAsset:(AVAsset *) asset error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 A new asset reader object.
 

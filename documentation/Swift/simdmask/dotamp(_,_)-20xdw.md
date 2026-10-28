@@ -23,7 +23,7 @@ static func .& (a: Bool, b: SIMDMask<Storage>) -> SIMDMask<Storage>
 
 Available when `Storage` conforms to `SIMD`, `Storage.Scalar` conforms to `FixedWidthInteger`, and `Storage.Scalar` conforms to `SignedInteger`.
 
-#### Discussion
+## Discussion
 
 Equivalent to `a ? b : SIMDMask(repeating: false)`.
 

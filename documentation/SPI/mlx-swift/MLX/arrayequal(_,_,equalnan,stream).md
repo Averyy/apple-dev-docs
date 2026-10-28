@@ -21,7 +21,7 @@ func arrayEqual(_ array: MLXArray, _ other: some ScalarOrArray, equalNAN: Bool =
 
 - [Converting From Python](./converting-python.md)
 
-#### Discussion
+## Discussion
 
 Compare two arrays for equality. Returns `True` if and only if the arrays have the same shape and their values are equal. The arrays need not have the same type to be considered equal.
 
@@ -33,7 +33,7 @@ print(a1.arrayEqual(a2))
 // prints the scalar array `true`
 ```
 
-##### See Also
+### See Also
 
 - [Logical Operators](./logical.md)
 - [`allClose(_:_:rtol:atol:equalNaN:stream:)`](./allclose%28_,_,rtol,atol,equalnan,stream%29.md)

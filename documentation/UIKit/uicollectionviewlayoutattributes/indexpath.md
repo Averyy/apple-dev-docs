@@ -23,7 +23,7 @@ var indexPath: IndexPath { get set }
 @property (nonatomic, strong) NSIndexPath * indexPath;
 ```
 
-#### Discussion
+## Discussion
 
 The index path contains the index of the section and the index of the item within that section. These two values uniquely identify the position of the corresponding item in the collection view.
 

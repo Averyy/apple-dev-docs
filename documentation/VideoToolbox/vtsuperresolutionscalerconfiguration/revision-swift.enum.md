@@ -22,7 +22,7 @@ enum Revision
 enum VTSuperResolutionScalerConfigurationRevision : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 A new enum case with a higher revision number is added when the processing algorithm is updated. The [`defaultRevision`](./defaultrevision.md) property provides the default algorithm revision.
 

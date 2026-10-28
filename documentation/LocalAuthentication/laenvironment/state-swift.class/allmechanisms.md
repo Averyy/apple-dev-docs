@@ -22,7 +22,7 @@ var allMechanisms: [LAEnvironment.Mechanism] { get }
 @property (nonatomic, readonly) NSArray<LAEnvironmentMechanism *> * allMechanisms;
 ```
 
-#### Discussion
+## Discussion
 
 Information about all authentication mechanisms.
 

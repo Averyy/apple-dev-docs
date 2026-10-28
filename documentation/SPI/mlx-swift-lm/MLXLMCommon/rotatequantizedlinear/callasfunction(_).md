@@ -17,7 +17,7 @@ Forward pass: applies pairwise Givens rotation then quantized matmul.
 override func callAsFunction(_ x: MLXArray) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 Computes `y = quantizedMM(rotate(x), W)` where the rotation fuses channel scaling and Givens rotations in a single Metal kernel. No mutable state is read or written by this method.
 

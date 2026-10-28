@@ -21,7 +21,7 @@ A type that scales the layers in a symbol-based image separately or as a whole.
 struct ScaleSymbolEffect
 ```
 
-#### Overview
+## Overview
 
 A scale animation draws attention to a symbol by changing the symbol’s scale indefinitely. You can choose to scale the symbol up or down.
 

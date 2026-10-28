@@ -24,11 +24,11 @@ func AudioConverterSetProperty(_ inAudioConverter: AudioConverterRef, _ inProper
 extern OSStatus AudioConverterSetProperty(AudioConverterRef inAudioConverter, AudioConverterPropertyID inPropertyID, UInt32 inPropertyDataSize, const void *inPropertyData);
 ```
 
-#### Return Value
+## Return Value
 
 A  result code.
 
-#### Discussion
+## Discussion
 
 You can employ the property mechanism, for example, to split a monaural input to both channels of a stereo output. You would do this as follows:
 

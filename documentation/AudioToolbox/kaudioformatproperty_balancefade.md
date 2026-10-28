@@ -24,7 +24,7 @@ var kAudioFormatProperty_BalanceFade: AudioFormatPropertyID { get }
 kAudioFormatProperty_BalanceFade
 ```
 
-#### Discussion
+## Discussion
 
 The specifier is an [`AudioBalanceFade`](./audiobalancefade.md) structure. Level values typically range from 0 to 1, where 0 represents silence and 1 represents unity gain.
 

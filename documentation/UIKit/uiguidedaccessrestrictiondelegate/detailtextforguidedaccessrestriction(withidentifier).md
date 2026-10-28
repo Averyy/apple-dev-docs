@@ -23,7 +23,7 @@ optional func detailTextForGuidedAccessRestriction(withIdentifier restrictionIde
 - (NSString *) detailTextForGuidedAccessRestrictionWithIdentifier:(NSString *) restrictionIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 A localized, human-readable string that provides additional information about the restriction for the provided identifier.
 

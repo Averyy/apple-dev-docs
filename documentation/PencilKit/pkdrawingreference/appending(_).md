@@ -23,7 +23,7 @@ func appending(_ drawing: PKDrawing) -> PKDrawing
 - (PKDrawing *) drawingByAppendingDrawing:(PKDrawing *) drawing;
 ```
 
-#### Return Value
+## Return Value
 
 A new drawing created by merging the content from the current object with the content in the `drawing` parameter.
 

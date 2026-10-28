@@ -21,7 +21,7 @@ Accesses the element at the given position.
 subscript(position: EmptyCollection<Element>.Index) -> Element { get set }
 ```
 
-#### Overview
+## Overview
 
 Must never be called, since this collection is always empty.
 

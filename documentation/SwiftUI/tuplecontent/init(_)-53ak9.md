@@ -1,0 +1,33 @@
+# init(_:)
+
+**Framework**: SwiftUI  
+**Kind**: init  
+**Role**: Initializer
+
+**Availability**:
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
+- watchOS 26.0+
+
+## Declaration
+
+```swift
+@export(implementation)
+init(_ content: repeat each Content)
+```
+
+**Other overloads**:
+
+```swift
+@export(implementation)
+init(_ content: (repeat each Content))
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/tuplecontent/init(_:)-53ak9)*

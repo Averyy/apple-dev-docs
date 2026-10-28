@@ -16,7 +16,7 @@ The style media object you use to make CSS media queries.
 readonly attribute StyleMedia styleMedia;
 ```
 
-#### Discussion
+## Discussion
 
 Read [`StyleMedia`](../stylemedia.md) for details.
 

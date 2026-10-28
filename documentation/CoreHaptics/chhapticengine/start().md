@@ -29,7 +29,7 @@ func start() throws
 - [Playing a single-tap haptic pattern](../playing-a-single-tap-haptic-pattern.md)
 - [Preparing your app to play haptics](../preparing-your-app-to-play-haptics.md)
 
-#### Discussion
+## Discussion
 
 This method blocks all subsequent event processing on the current thread until the engine has started. It throws an error if the engine can’t start.
 

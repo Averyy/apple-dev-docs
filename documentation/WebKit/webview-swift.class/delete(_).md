@@ -19,7 +19,7 @@ func delete(_ sender: Any?)
 - (void) delete:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 The pasteboard is unaffected by invoking this method.
 

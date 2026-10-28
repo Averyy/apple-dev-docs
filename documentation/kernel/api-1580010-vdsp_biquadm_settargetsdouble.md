@@ -15,7 +15,7 @@ Sets target values for selected double-precision coefficients within a valid sin
 void vDSP_biquadm_SetTargetsDouble(vDSP_biquadm_Setup __setup, const double *__targets, float __interp_rate, float __interp_threshold, vDSP_Length __start_sec, vDSP_Length __start_chn, vDSP_Length __nsec, vDSP_Length __nchn);
 ```
 
-#### Discussion
+## Discussion
 
 Provide the filter coefficient targets as double-precision values. The function increments each selected coefficient at each sample until the difference between its value and the target value is less than a specified threshold.
 

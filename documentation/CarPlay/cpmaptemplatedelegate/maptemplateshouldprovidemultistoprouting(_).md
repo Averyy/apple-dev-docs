@@ -21,7 +21,7 @@ optional func mapTemplateShouldProvideMultiStopRouting(_ mapTemplate: CPMapTempl
 - (BOOL) mapTemplateShouldProvideMultiStopRouting:(CPMapTemplate *) mapTemplate;
 ```
 
-#### Return Value
+## Return Value
 
 YES if the template should provide multi-stop routing functionalities, otherwise NO
 

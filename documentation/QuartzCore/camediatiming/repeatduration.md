@@ -25,7 +25,7 @@ var repeatDuration: CFTimeInterval { get set }
 @property CFTimeInterval repeatDuration;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to 0. If the `repeatDuration` is 0, it is ignored. If both [`repeatDuration`](./repeatduration.md) and [`repeatCount`](./repeatcount.md) are specified the behavior is undefined.
 

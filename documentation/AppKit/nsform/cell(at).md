@@ -21,7 +21,7 @@ func cell(at index: Int) -> Any!
 - (id) cellAtIndex:(NSInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The form cell object at the specified index.
 

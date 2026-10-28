@@ -21,7 +21,7 @@ Retains a Core Video image format.
 void vImageCVImageFormat_Retain(vImageCVImageFormatRef fmt);
 ```
 
-#### Discussion
+## Discussion
 
 This function increments the Core Video image format’s reference count.
 

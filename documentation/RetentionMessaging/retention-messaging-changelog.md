@@ -5,21 +5,21 @@
 
 Learn about new features and updates in the Retention Messaging API.
 
-#### Overview
+## Overview
 
 Use this changelog to learn about feature updates, deprecations, and removals for the Retention Messaging API.
 
-##### Server update  — 2026/05/05
+### Server update  — 2026/05/05
 
 Updated recommended domain from `api.storekit.itunes.apple.com` to `api.storekit.apple.com`, and `api.storekit-sandbox.itunes.apple.com` to `api.storekit-sandbox.apple.com`. The previous domains will continue to be supported.
 
-##### 1.5 2026/04/27
+### 1.5 2026/04/27
 
 **New features**
 
 - Added the new property [`billingPlanType`](./billingplantype.md) to [`alternateProduct`](./alternateproduct.md) to support monthly subscriptions with 12-month commitments.
 
-##### 1.4  2026/03/31
+### 1.4  2026/03/31
 
 **New features**
 
@@ -29,25 +29,25 @@ Updated recommended domain from `api.storekit.itunes.apple.com` to `api.storekit
 - Updated [`GetImageListResponseItem`](./getimagelistresponseitem.md) and [`Upload Image`](./upload-image.md) to add support for the `imageSize` parameter.
 - Updated [`UploadMessageRequestBody`](./uploadmessagerequestbody.md) to add support for the `bulletPoints` and [`headerPosition`](./headerposition.md) parameters.
 
-##### 1.3  2025/12/09
+### 1.3  2025/12/09
 
 **New features**
 
 - The framework now supports the ability to test server response times for real time retention messaging using the [`Initiate Performance Test`](./initiate-performance-test.md) and [`Get Performance Test Results`](./get-performance-test-results.md) endpoints.
 
-##### 1.2  2025/11/05
+### 1.2  2025/11/05
 
 **New features**
 
 - Updated the [`RealtimeResponseBody`](./realtimeresponsebody.md) to include the [`advancedCommerceInfo`](./advancedcommerceinfo.md) object.
 
-##### 1.1  2025/09/04
+### 1.1  2025/09/04
 
 **New features**
 
 - Updated the [`DecodedRealtimeRequestBody`](./decodedrealtimerequestbody.md) to include the [`environment`](./environment.md) and [`signedDate`](./signeddate.md) fields.
 
-##### 1.0  2025/07/16
+### 1.0  2025/07/16
 
 Initial pre-release.
 

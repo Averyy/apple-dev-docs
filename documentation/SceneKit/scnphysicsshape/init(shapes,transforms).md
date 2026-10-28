@@ -25,11 +25,11 @@ convenience init(shapes: [SCNPhysicsShape], transforms: [NSValue]?)
 + (instancetype) shapeWithShapes:(NSArray<SCNPhysicsShape *> *) shapes transforms:(NSArray<NSValue *> *) transforms;
 ```
 
-#### Return Value
+## Return Value
 
 A new physics shape object.
 
-#### Discussion
+## Discussion
 
 An individual physics shape is defined in its own local coordinate space. Therefore, to describe the positions and orientations of multiple shapes relative to one another, you must use coordinate transformations.
 

@@ -23,7 +23,7 @@ class func animate(withDuration duration: TimeInterval, animations: () -> Void)
 + (void) animateWithDuration:(NSTimeInterval) duration animations:(void (^)()) animations;
 ```
 
-#### Discussion
+## Discussion
 
 This method performs the specified animations immediately using the [`curveEaseInOut`](./animationoptions/curveeaseinout.md) and [`UIViewAnimationOptionTransitionNone`](../uiviewanimationoptions/uiviewanimationoptiontransitionnone.md) animation options.
 

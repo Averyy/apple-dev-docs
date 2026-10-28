@@ -19,11 +19,11 @@ func AEPutDesc(_ theAEDescList: UnsafeMutablePointer<AEDescList>!, _ index: Int,
 OSErr AEPutDesc(AEDescList *theAEDescList, long index, const AEDesc *theAEDesc);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 Thread safe starting in OS X v10.2.
 

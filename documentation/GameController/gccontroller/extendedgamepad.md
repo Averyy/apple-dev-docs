@@ -24,7 +24,7 @@ var extendedGamepad: GCExtendedGamepad? { get }
 @property (nonatomic, strong, readonly, nullable) GCExtendedGamepad * extendedGamepad;
 ```
 
-#### Discussion
+## Discussion
 
 If the controller supports the extended gamepad profile, this property is a [`GCExtendedGamepad`](../gcextendedgamepad.md) object that you use to access the input elements of the controller. If the controller doesn’t support the extended gamepad profile, this property is `nil`.
 

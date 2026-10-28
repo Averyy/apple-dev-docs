@@ -4,11 +4,11 @@
 
 A trigger that fires when the user taps.
 
-#### Overview
+## Overview
 
 For an example, see [Trigger animation for a tapped cube](./preliminary-behavior.md#Trigger-animation-for-a-tapped-cube).
 
-##### Declaration
+### Declaration
 
 ```other
 class Preliminary_Trigger "TapGestureTrigger"

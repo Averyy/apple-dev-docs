@@ -20,7 +20,7 @@ var captureDeviceType: AVCaptureDevice.DeviceType { get }
 @property (nonatomic, readonly) AVCaptureDeviceType captureDeviceType;
 ```
 
-#### Discussion
+## Discussion
 
 To specify a particular video format, select from your configuration’s [`supportedVideoFormats`](../supportedvideoformats.md) and set the desired format to the configuration’s [`videoFormat`](../videoformat-swift.property.md) property.
 

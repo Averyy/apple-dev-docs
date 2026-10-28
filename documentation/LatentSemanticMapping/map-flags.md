@@ -5,7 +5,7 @@
 
 Options for creating a map.
 
-#### Overview
+## Overview
 
 Specify these options for [`LSMMapCreate(_:_:)`](./lsmmapcreate%28_,_%29.md). These options can improve mapping accuracy, but may result in a potentially significant increase in memory use.
 

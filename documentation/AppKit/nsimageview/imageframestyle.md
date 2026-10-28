@@ -19,7 +19,7 @@ var imageFrameStyle: NSImageView.FrameStyle { get set }
 @property NSImageFrameStyle imageFrameStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`NSImageView.FrameStyle.none`](./framestyle/none.md).
 

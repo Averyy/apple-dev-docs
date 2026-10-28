@@ -16,7 +16,7 @@ The date and time that the transaction was posted to the account.
 let postedDate: Date?
 ```
 
-#### Discussion
+## Discussion
 
 If not provided, use [`transactionDate`](./transactiondate.md) as `postedDate`.
 

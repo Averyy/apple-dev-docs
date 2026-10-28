@@ -19,13 +19,13 @@ object Parallax
 
 - [About Component Behaviors](../AppleNews/about-component-behaviors.md)
 
-#### Discussion
+## Discussion
 
 When you apply the `Parallax` behavior to a component, the component moves at a different speed than the scroll speed. Use the `factor` property to set the speed of the component. [This video](https://developer.apple.com/apple-news/videos/parallax.mp4) shows an example of the `parallax` behavior.
 
 > 💡 **Tip**:  When you use parallax behavior, you might notice text becoming illegible as it covers an image. You can fix this easily, and create a cleaner, more legible article, by adding a background color.
 
-##### Example
+### Example
 
 ```json
 {

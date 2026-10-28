@@ -25,7 +25,7 @@ typealias CFWriteStreamClientCallBack = (CFWriteStream?, CFStreamEventType, Unsa
 typedef void (*)(struct __CFWriteStream *, enum CFStreamEventType, void *) CFWriteStreamClientCallBack;
 ```
 
-#### Discussion
+## Discussion
 
 This callback is called only for the events requested when setting the client with [`CFWriteStreamSetClient(_:_:_:_:)`](./cfwritestreamsetclient%28_,_,_,_%29.md).
 

@@ -15,7 +15,7 @@ Creates a new value, if the given integer can be represented exactly.
 init?<Source>(exactly value: Source) where Source : BinaryInteger
 ```
 
-#### Discussion
+## Discussion
 
 If the given integer cannot be represented exactly, the result is `nil`.
 

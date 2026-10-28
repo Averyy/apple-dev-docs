@@ -20,11 +20,11 @@ Synchronously creates a texture resource from an in-memory Core Graphics image.
 @preconcurrency static func generate(from cgImage: CGImage, withName resourceName: String? = nil, options: TextureResource.CreateOptions) throws -> TextureResource
 ```
 
-#### Return Value
+## Return Value
 
 A texture resource.
 
-#### Discussion
+## Discussion
 
 This method creates a texture resource from an existing [`CGImage`](../../CoreGraphics/cgimage.md) with specific options.
 

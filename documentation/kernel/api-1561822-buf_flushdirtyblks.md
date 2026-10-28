@@ -15,7 +15,7 @@ Write dirty file blocks to disk.
 void buf_flushdirtyblks(vnode_t vp, int wait, int flags, const char *msg);
 ```
 
-#### Return Value
+## Return Value
 
 void.
 

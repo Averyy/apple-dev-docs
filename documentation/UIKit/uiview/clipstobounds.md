@@ -27,7 +27,7 @@ var clipsToBounds: Bool { get set }
 
 - [Using responders and the responder chain to handle events](../using-responders-and-the-responder-chain-to-handle-events.md)
 
-#### Discussion
+## Discussion
 
 Setting this value to [`true`](../../Swift/true.md) causes subviews to be clipped to the bounds of the view. If set to [`false`](../../Swift/false.md), subviews whose frames extend beyond the visible bounds of the view aren’t clipped.
 

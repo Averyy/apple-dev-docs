@@ -23,7 +23,7 @@ static var urlRepresentation: Self.URLRepresentation { get }
 
 Available when `Self` conforms to `OpenIntent` and `Value` conforms to `URLRepresentableEnum`.
 
-#### Discussion
+## Discussion
 
 Use this property to store the URL for your app intent. When setting the value of this property, you can use a combination of static text and placeholder values to generate the final URL. The following code shows an app intent that opens a specific website page:
 

@@ -22,7 +22,7 @@ class UIMarkupTextPrintFormatter
 @interface UIMarkupTextPrintFormatter : UIPrintFormatter
 ```
 
-#### Overview
+## Overview
 
 To use this print formatter for a print job, create an instance of [`UIMarkupTextPrintFormatter`](./uimarkuptextprintformatter.md) initialized with the HTML, set the inherited layout properties, and add the object to the print job in one of two ways:
 

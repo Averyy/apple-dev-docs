@@ -9,11 +9,11 @@ Get details about your channel’s remaining quota for sending create and update
 **Availability**:
 - Apple News API 2.1+
 
-#### Discussion
+## Discussion
 
 A Read Channel Quota Information request returns the publisher’s remaining create and update request quota, the queue size, and estimated wait time. This information is also available through the [`Meta`](./meta.md) object when you use the [`Create an Article`](./post-channels-_channelid_-articles.md) and [`Update an Article`](./post-articles-_articleid_.md) endpoints.
 
-##### Example
+### Example
 
 **Request**:
 

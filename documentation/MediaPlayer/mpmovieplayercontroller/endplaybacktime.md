@@ -23,7 +23,7 @@ var endPlaybackTime: TimeInterval { get set }
 @property (nonatomic) NSTimeInterval endPlaybackTime;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is -1, which indicates the natural end time of the movie. This property is not applicable for streamed content.
 

@@ -10,7 +10,7 @@ framework: "swift-configuration/Configuration"
 
 Provide flexible and consistent configuration for your application.
 
-#### Overview
+## Overview
 
 Swift Configuration provides consistent configuration for your tools and applications. This guide shows how to:
 
@@ -21,7 +21,7 @@ Swift Configuration provides consistent configuration for your tools and applica
 
 This pattern works well for server applications where configuration comes from environment variables, configuration files, and remote services.
 
-##### Set up a configuration hierarchy
+### Set up a configuration hierarchy
 
 Start by creating a configuration hierarchy in your application’s entry point. This defines the order for consulting configuration sources when looking for values:
 
@@ -63,7 +63,7 @@ This configuration hierarchy gives priority to environment variables, then falls
 
 > 💡 **Tip**: To learn more about access reporting, check out [Troubleshooting and access reporting](./troubleshooting.md). For more on secrets, check out [Handling secrets correctly](./handling-secrets-correctly.md).
 
-##### Configure your application
+### Configure your application
 
 Next, configure your application using the configuration reader:
 
@@ -146,7 +146,7 @@ And using [`InMemoryProvider`](./inmemoryprovider.md):
 
 In practice, you’d only specify a subset of the config keys in each location, to match the needs of your service’s operators.
 
-##### Use scoped configuration
+### Use scoped configuration
 
 For services with multiple instances of the same component, but with different settings, use scoped configuration:
 

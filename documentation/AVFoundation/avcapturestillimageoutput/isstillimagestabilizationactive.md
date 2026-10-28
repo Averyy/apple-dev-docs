@@ -21,7 +21,7 @@ var isStillImageStabilizationActive: Bool { get }
 @property (nonatomic, readonly, getter=isStillImageStabilizationActive) BOOL stillImageStabilizationActive;
 ```
 
-#### Discussion
+## Discussion
 
 The property returns [`true`](../../Swift/true.md) if video stabilization is currently in use; otherwise [`false`](../../Swift/false.md).
 

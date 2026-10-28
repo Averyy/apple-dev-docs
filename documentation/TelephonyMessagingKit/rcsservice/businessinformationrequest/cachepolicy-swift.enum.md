@@ -15,7 +15,7 @@
 enum CachePolicy
 ```
 
-#### Overview
+## Overview
 
 The cache policy used for a business information request.
 

@@ -5,13 +5,13 @@
 
 Interact with and obtain data from devices such as keyboards and mice.
 
-#### Overview
+## Overview
 
 To communicate with a human interface device (HID), you must identify and match it using a set of matching critiera. When you match the device, you become its client and can query its properties and capabilities.
 
 > **Note**: Interacting with certain HIDs, such as keyboards, require user approval. Ensure that you grant permission to access the device to use it.
 
-##### Locate the device of interest
+### Locate the device of interest
 
 To locate the device you’re interested in, specify a set of matching criteria using [`HIDDeviceManager.DeviceMatchingCriteria`](./hiddevicemanager/devicematchingcriteria.md). The following code uses this method to discover the Magic Keyboard with Numeric Keypad `product`:
 
@@ -41,7 +41,7 @@ for try await notification in await manager.monitorNotifications(matchingCriteri
 
 To specify matching criteria using additional properties, see [`init(primaryUsage:deviceUsages:vendorID:productID:transport:product:manufacturer:modelNumber:versionNumber:serialNumber:uniqueID:locationID:localizationCode:isBuiltIn:extraProperties:)`](./hiddevicemanager/devicematchingcriteria/init%28primaryusage,deviceusages,vendorid,productid,transport,product,manufacturer,modelnumber,versionnumber,serialnumber,uniqueid,locationid,localizationcode,isbuiltin,extraproperties%29.md).
 
-##### Communicate with the device
+### Communicate with the device
 
 Create a [`HIDDeviceClient`](./hiddeviceclient.md) and pass in the device reference to start communication with the device. Verify that you’re communicating with the correct device by checking the usage with [`primaryUsage`](./hiddeviceclient/primaryusage.md), the transport with [`transport`](./hiddeviceclient/transport.md), and the product name with [`product`](./hiddeviceclient/product.md).
 

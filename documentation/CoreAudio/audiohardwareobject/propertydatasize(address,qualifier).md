@@ -16,7 +16,7 @@ Queries an AudioHardwareObject to find the size of the data for the given proper
 func propertyDataSize(address: AudioObjectPropertyAddress, qualifier: Data? = nil) throws -> Int
 ```
 
-#### Return Value
+## Return Value
 
 An Int  indicating how many bytes the data for the given property occupies.
 

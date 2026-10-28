@@ -15,7 +15,7 @@ Calculates the distance between two strings in the vocabulary space.
 func distance(between first: String, and second: String, distanceType: NLDistanceType = .cosine) -> Double
 ```
 
-#### Return Value
+## Return Value
 
 The distance
 

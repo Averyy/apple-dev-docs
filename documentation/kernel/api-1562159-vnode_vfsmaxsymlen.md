@@ -15,7 +15,7 @@ Determine the maximum length of a symbolic link for the filesystem on which a vn
 uint32_t vnode_vfsmaxsymlen(vnode_t vp);
 ```
 
-#### Return Value
+## Return Value
 
 Max symlink length.
 

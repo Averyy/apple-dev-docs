@@ -25,7 +25,7 @@ func CFWriteStreamGetTypeID() -> CFTypeID
 extern CFTypeID CFWriteStreamGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The type identifier for the CFWriteStream opaque type.
 

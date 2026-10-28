@@ -21,7 +21,7 @@ A signaling NaN (“not a number”).
 static var signalingNaN: Double { get }
 ```
 
-#### Discussion
+## Discussion
 
 The default IEEE 754 behavior of operations involving a signaling NaN is to raise the Invalid flag in the floating-point environment and return a quiet NaN.
 

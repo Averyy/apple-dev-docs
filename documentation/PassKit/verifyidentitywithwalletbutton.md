@@ -19,7 +19,7 @@ A type that displays a button to present the identity verification flow.
 @preconcurrency struct VerifyIdentityWithWalletButton<Fallback> where Fallback : View
 ```
 
-#### Overview
+## Overview
 
 Use this structure as the SwiftUI equivalent to [`PKIdentityButton`](./pkidentitybutton.md). The system allows one in-progress identity request at a time. Otherwise, it returns a [`PKIdentityError.Code.requestAlreadyInProgress`](./pkidentityerror-swift.struct/code/requestalreadyinprogress.md) error.
 

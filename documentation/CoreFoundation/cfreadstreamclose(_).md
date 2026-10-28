@@ -25,7 +25,7 @@ func CFReadStreamClose(_ stream: CFReadStream!)
 extern void CFReadStreamClose(CFReadStreamRef stream);
 ```
 
-#### Discussion
+## Discussion
 
 This function terminates the flow of bytes and releases any system resources required by the stream. The stream is removed from any run loops in which it was scheduled. Once closed, the stream cannot be reopened.
 

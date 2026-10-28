@@ -24,7 +24,7 @@ case fastFormat
 PHImageRequestOptionsDeliveryModeFastFormat
 ```
 
-#### Discussion
+## Discussion
 
 Photos calls your `resultHandler` block once. If a high-quality image cannot be loaded quickly, the result handler provides a low-quality image. Check the [`PHImageResultIsDegradedKey`](../phimageresultisdegradedkey.md) key in the info dictionary to determine the quality of image provided to the result handler.
 

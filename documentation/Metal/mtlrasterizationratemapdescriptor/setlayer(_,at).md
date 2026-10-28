@@ -24,7 +24,7 @@ func setLayer(_ layer: MTLRasterizationRateLayerDescriptor?, at layerIndex: Int)
 - (void) setLayer:(MTLRasterizationRateLayerDescriptor *) layer atIndex:(NSUInteger) layerIndex;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method is equivalent to using array subscript syntax.
 

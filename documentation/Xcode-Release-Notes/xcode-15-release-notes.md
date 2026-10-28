@@ -5,13 +5,13 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 Xcode 15 includes SDKs for iOS 17, iPadOS 17, tvOS 17, watchOS 10, and macOS Sonoma. The Xcode 15 release supports on-device debugging in iOS 12 and later, tvOS 12 and later, and watchOS 4 and later. Xcode 15 requires a Mac running macOS Ventura 13.5 or later.
 
-##### General
+### General
 
-###### New Features
+#### New Features
 
 - When a structured text-based file such as a property list or storyboard fails to open due to a merge conflict, Xcode will offer to open the file as text.  (9148845)
 - The “View by Time” / “View by Group” selector in the Report navigator has moved into the navigator’s action menu.  (73892015)
@@ -21,7 +21,7 @@ Xcode 15 includes SDKs for iOS 17, iPadOS 17, tvOS 17, watchOS 10, and macOS Son
 - Xcode 15 validates the signing identity of XCFrameworks that are used in your project. The signature information for an XCFramework is displayed in the File inspector, and the last known identity is saved in the project file. During a build, the signature of XCFrameworks are validated and the signing identity is compared to the expected identity in the project file.  (106036191)
 - The new “Quick Actions” panel provides keyboard access to perform commands across Xcode.  (108024215)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: macOS Previews can now be interacted with directly in the canvas. You can press and hold the Live preview mode button to switch between previewing in Xcode and previewing in the app-under-preview. (49271058)
 - Fixed: For apps linked on or after iOS 17 and aligned OS versions, `URL` parsing has updated from the obsolete RFC 1738/1808 parsing to the same RFC 3986 parsing as `URLComponents`. This unifies the parsing behaviors of the `URL` and `URLComponents` APIs. Now, `URL` automatically percent- or IDNA-encodes invalid characters to help create a valid URL.
@@ -34,7 +34,7 @@ Xcode 15 includes SDKs for iOS 17, iPadOS 17, tvOS 17, watchOS 10, and macOS Son
 - Fixed: Offline compilation targeting AMD hardware and macOS Ventura isn’t available using Xcode 15.  (108372489)
 - Fixed: Xcode Organizer window TestFlight Internal Only distribution support isn’t currently available.  (111340185)
 
-###### Known Issues
+#### Known Issues
 
 - Devices running iOS 17 may prompt the user twice in rapid succession to trust a Mac when connected to the Mac with a USB cable. The second prompt for trust may obscure the first prompt and prevent the user from entering the passcode.  (109539668)
 
@@ -56,23 +56,23 @@ Xcode 15 includes SDKs for iOS 17, iPadOS 17, tvOS 17, watchOS 10, and macOS Son
 - Swift macro definitions from the macOS/iOS/tvOS/watchOS SDKs are not available in Swift Playgrounds.  (112122752) (FB12581131)
 - The simulator may crash when opening Settings or Action Button settings on iPhone 15 Pro devices.  (115388496)
 
-##### App Intents
+### App Intents
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Apps that implement App Intents may fail to compile with watchOS SDK if an App Entity with Entity Query is present.  (111455662)
 
-##### App Shortcuts Preview
+### App Shortcuts Preview
 
-###### Known Issues
+#### Known Issues
 
 - If an app adds a new App Shortcuts trigger phrase string that already exists in an accompanying `AppShortcuts.strings` or `AppShortcuts.xcstrings` file, the App Shortcuts Preview may not refresh upon rebuild.  (109494636)
 
   **Workaround:** Cleaning prior to rebuilding the app causes App Shortcuts Preview to be in its most up-to-date state.
 
-##### Apple Clang Compiler
+### Apple Clang Compiler
 
-###### New Features
+#### New Features
 
 - There is a new reference page for C++ support on Apple platforms: [https://developer.apple.com/xcode/cpp/](https://developer.apple.com/xcode/cpp/).  (100245338) (FB11563150)
 - Clang and the build system support a new mode for building module dependencies called explicit modules which improves build performance, reliability, and correctness. The new mode is opt-in, and can be enabled by setting `_EXPERIMENTAL_CLANG_EXPLICIT_MODULES` as a user-defined build setting in C and Objective-C projects which build with modules enabled.  (104438594)
@@ -91,14 +91,14 @@ Xcode 15 includes SDKs for iOS 17, iPadOS 17, tvOS 17, watchOS 10, and macOS Son
   - Support for UTF-8 as a portable source file encoding. (P2295R6)
   - Relax requirements on `wchar_t` to match existing practices. (P2460R2)  (108334479)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Improvements in the ARC optimizer allow Objective-C and Swift objects to be released earlier. This causes code to misbehave or crash when it relies on weak or unowned references to remain valid without a strong reference to the target object. For example this can happen inadvertently in code that unnecessarily uses a “weak self” capture in a one-shot asynchronous block callback.  (108386578)
 - Fixed: The x86 vectorizer uses saturated arithmetic instructions that can result in shorter and faster code. This may change program behavior for applications that implicitly rely on overflow behavior, e.g., by casting floating point values to integer types that can’t represent the original value.  (108386879)
 
-##### Asset Catalogs
+### Asset Catalogs
 
-###### New Features
+#### New Features
 
 - Xcode now generates Swift and Objective-C symbols for each color and image in the asset catalog. These symbols provide a safer, more assistive way to reference assets that’s resilient to renames & typos, leverages compiler type checking, and integrates with code completion.
 
@@ -116,22 +116,22 @@ Xcode 15 includes SDKs for iOS 17, iPadOS 17, tvOS 17, watchOS 10, and macOS Son
 - Asset Catalog automatically infers a single scale slot when adding PDF images.  (32661471) (FB5752517)
 - Asset catalog color inspectors remember the last used color configuration when creating new colors.  (48965482) (FB5697990)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Jump-to-definition on an asset symbol now jumps to the asset in the catalog.  (102385742)
 - Fixed: The “Add New Asset” menu now has a “Folder with Namespace” item for creating new folders with namespaces.  (108468310)
 - Fixed: Asset symbols are now generated for assets in Swift packages.  (110083791)
 
-##### Build System
+### Build System
 
-###### New Features
+#### New Features
 
 - Archive builds now support the same set of eager compilation optimizations as other build actions, improving build performance. (98526053)
 - Xcode now automatically generates intermediate text-based dynamic library (TBD) files for dynamic libraries and frameworks in your project. These stubs allow linker dependencies to be tracked more accurately, meaning changes which don’t change the set of exported symbols no longer require all transitive dependencies to relink, speeding up incremental builds. (99972271)
 - Xcode now supports building and consuming macros defined in Swift Packages. (101818756)
 - XCFrameworks can be created from mergeable libraries and frameworks and will be merged or have mergeable metadata removed as appropriate when they are used. See the documentation [Configuring your project to use mergeable libraries](../Xcode/configuring-your-project-to-use-mergeable-libraries.md).  (109124251)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Embedding a static framework using a Copy Files build phase now removes the static archive from the framework when it is embedded in the target bundle. The `REMOVE_STATIC_EXECUTABLES_FROM_EMBEDDED_BUNDLES` build setting can be set to `NO` to opt out of this behavior. The `COPY_RESOURCES_FROM_STATIC_FRAMEWORKS` build setting, previously used in the legacy build system to extract and copy the resources from a static framework to the target bundle, no longer has any effect with the new build system as the entire framework is copied instead (minus the static archive as described above).  (47164939)
 - Fixed: Xcode now tracks dependencies on additional files specified by various linker flags specified in the `OTHER_LDFLAGS` build setting.
@@ -156,13 +156,13 @@ Xcode 15 includes SDKs for iOS 17, iPadOS 17, tvOS 17, watchOS 10, and macOS Son
 - Fixed: Using single-file build actions such as Preprocess or Assemble now works correctly when used on files with an overridden File Type. Previously, this may have produced a “missing input and no rule to build it” error.  (107736241) (FB12102123)
 - Fixed an issue where localization export of dependent frameworks could fail after running a regular build of the project. (108867135) (FB12165312)
 
-###### Deprecations
+#### Deprecations
 
 - Bitcode support has been removed, and the `ENABLE_BITCODE` build setting no longer has any effect.  (105281961)
 
-##### C++ Standard Library
+### C++ Standard Library
 
-###### New Features
+#### New Features
 
 - The following new features have been implemented:
 
@@ -190,7 +190,7 @@ Xcode 15 includes SDKs for iOS 17, iPadOS 17, tvOS 17, watchOS 10, and macOS Son
   - The `ranges` versions of `copy`, `move`, `copy_backward` and `move_backward` are now also optimized for `std::deque<>::iterator`, which can lead to up to 20x performance improvements on certain algorithms.
   - The `std` and `ranges` versions of `copy`, `move`, `copy_backward` and `move_backward` are now also optimized for `join_view::iterator`, which can lead to up to 20x performance improvements on certain combinations of iterators and algorithms.  (108380402)
 
-###### Deprecations
+#### Deprecations
 
 - The following items have been deprecated or removed:
 
@@ -203,26 +203,26 @@ Xcode 15 includes SDKs for iOS 17, iPadOS 17, tvOS 17, watchOS 10, and macOS Son
   - `_LIBCPP_ENABLE_NODISCARD` and `_LIBCPP_DISABLE_NODISCARD_AFTER_CXX17` are no longer respected. Any standards-required `[[nodiscard]]` applications in C++20 are now always enabled. Any extended applications are now enabled by default and can be disabled by defining `_LIBCPP_DISABLE_NODISCARD_EXT`.
   - In freestanding mode, `atomic<small enum class>` doesn’t contain a lock byte anymore if the platform can implement lockfree atomics for that size. This ABI break only affects users that compile with `-ffreestanding`, and only for `atomic<T>` where `T` is a non-builtin type that could be lockfree on the platform.  (108380359)
 
-##### Console
+### Console
 
-###### New Features
+#### New Features
 
 - By default, Xcode streams `os_logs` through the unified logging and activity tracing infrastructure. The output may be formatted differently compared to previous versions of Xcode, and its order relative to standard IO may also change. To customize the behavior of logging, edit the Run scheme action to set the environment variable `IDELogRedirectionPolicy`. The value “oslogToStdio” redirects `os_log` messages to standard IO and formats them in a style identical to previous versions of Xcode. The value stdioToOSLog redirects standard IO to the `os_log` messages, and presents them in the debug console with additional metadata.  (109380695)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The debug console’s action to jump from an `os_log` message to the line of source code which emitted it is only supported when debugging executables on the local Mac or Simulators. The menu item is disabled when debugging executables on connected devices.  (109171925)
 - The maximum permitted size of `os_log` messages shown in the debug console is smaller than in previous Xcode versions. This may cause long messages to more commonly appear truncated in the debug console.  (109381234)
 
-##### Create ML
+### Create ML
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: With the new macOS Seed 1 build of macOS Sonoma, users of the CreateML app from Developer Tools inside Xcode can’t train machine learning models using hand action classifier and hand pose classifier. The specific error message is Unexpected Error when Train button is clicked.  (108227967)
 
-##### Debugging
+### Debugging
 
-###### New Features
+#### New Features
 
 - LLDB now omits defaulted template arguments in type summaries.
 
@@ -266,27 +266,27 @@ Xcode 15 includes SDKs for iOS 17, iPadOS 17, tvOS 17, watchOS 10, and macOS Son
 - Xcode now shows AppKit runtime issues. Some examples are auto-layout constraint issues for constraints constructed in code.  (105229806)
 - When you create a watchpoint, you can see its ancestry path hierarchy. This gives you better context, especially in case of conflicts.  (106777931)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Xcode stops showing you zombie processes when you’re trying to attach from the menu. It was previously confusing and cumbersome to sieve through these non-debuggable processes for the actual process to debug. This works for all platforms.  (11113209)
 - Fixed: External Swift macros can’t be invoked from the LLDB expression evaluator.  (109854291)
 
-##### DeviceDiscoveryUI
+### DeviceDiscoveryUI
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: DeviceDiscoveryUI isn’t available when building for tvOS Simulator.  (109224355)
 
-##### Devices
+### Devices
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Devices running iOS 17 don’t support specifying a Routing App Coverage File for Apps launched from Xcode 15.  (80105713)
 - Fixed: Apple Watch simulators now appear as standalone simulators in the Devices and Simulators Window.  (106664675)
 - Fixed: Xcode requires an internet connection to prepare a device running iOS 17, watchOS 10, or tvOS 17 for development. When preparation for development fails due to the lack of an internet connection, Xcode doesn’t automatically retry preparing the device for development.  (109511717)
 - Fixed: Xcode 15 is unable to connect wirelessly for development with devices running iOS and tvOS versions older than 16.0.  (113153131)
 
-###### Known Issues
+#### Known Issues
 
 - The Xcode Devices and Simulators Window doesn’t accurately reflect the color of devices connected to the Mac.  (98003308)
 - Xcode doesn’t automatically refresh the name of a device running iOS 17, watchOS 10, or tvOS 17 when the user renames the device from the Settings app.  (98406919)
@@ -304,9 +304,9 @@ Xcode 15 includes SDKs for iOS 17, iPadOS 17, tvOS 17, watchOS 10, and macOS Son
 
   **Workaround:** Restart and replug the iPhone
 
-##### Documentation
+### Documentation
 
-###### New Features
+#### New Features
 
 - Xcode 15 now includes an assistant editor that provides a real-time preview of your Swift-DocC documentation as you type.
 
@@ -340,7 +340,7 @@ Xcode 15 includes SDKs for iOS 17, iPadOS 17, tvOS 17, watchOS 10, and macOS Son
 - Swift-DocC now supports designing pages with fully custom layouts by utilizing new directives like `@Row`, `@TabNavigator`, `@Links`, and `@Metadata`. To learn more, see the [API Documentation](https://developer.apple.com/documentation/docc/api-reference-syntax).  (97705029)
 - Swift-DocC websites built with Xcode 15 now include a quick navigation feature that allows you to navigate directly to a page just by activating a keyboard shortcut and typing the page’s name. Press Shift+Cmd+O or Shift+/ while browsing a Swift-DocC website to activate the new quick navigation popover.  (100346089)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Swift-DocC now correctly allows you to customize the title of an API link using markdown’s link syntax.
 
@@ -353,56 +353,56 @@ Xcode 15 includes SDKs for iOS 17, iPadOS 17, tvOS 17, watchOS 10, and macOS Son
 - Fixed: Documentation links to symbols from protocol requirements need to be disambiguated to distinguish them from a possible default implementation.  (98781530) (FB11291552)
 - Fixed: Xcode crashes on macOS Sonoma Beta 1 and Beta 2 when scrolling documentation in Quick Help, the documentation window, and the Swift Package dependency manager.  (109810157)
 
-###### Known Issues
+#### Known Issues
 
 - Xcode documentation includes some sample code projects that require macOS Sonoma to run.  (114836179)
 
-##### Indexing
+### Indexing
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Enabling “Build Libraries for Distribution” for a target no longer significantly slows down the indexing of its files  (111703158)
 
-##### Instruments
+### Instruments
 
-###### New Features
+#### New Features
 
 - Instruments now allows for opening `.memgraph` files in the Allocations, Leaks and VM Tracker Instruments and visualizing timeline of live allocations if Malloc Stack Logging was enabled for the process. Xcode Memory Graph debugger features a new share button to view captured `.memgraph` file in Instruments.  (53014738)
 - Instruments 15 includes a new RealityKit Trace template. This template contains several new instruments for profiling apps and games on visionOS. The RealityKit Frames instrument will visualize the different stages of rendering a frame. RealityKit Metrics detects bottlenecks across the rendering stack and provides recommendations and key metrics to diagnose and eliminate rendering bottlenecks. These key metrics include CoreAnimation statistics, 3D Rendering Statistics, RealityKit Systems CPU time, System Power Impact, and much more.  (104091516)
 - Instruments 15 includes a new dyld Activity Instrument which visualizes `dlopen`, `dlclose`, static initializers and other dyld statistics relevant for application launch profiling. dyld Activity is included in the App Launch template and replaces Static Initializer Instrument.   (106383871)
 - Instruments 15 includes a new Audio System Trace template, providing a comprehensive view of the audio and operating systems. It visualizes how your application interacts with the audio server, giving you insight into Audio Thread I/O Cycles and other general performance metrics.  (106843172)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Significantly improved the performance of opening new documents with complex templates like Game Performance, System Trace and Metal System Trace.  (72983621)
 - Fixed an issue where an application would hang when selecting a HTTP transaction containing a large request or response body in the HTTP Traffic Instrument.  (87893253) (FB9854651)
 
-##### Interface Builder
+### Interface Builder
 
-###### New Features
+#### New Features
 
 - The Cocoa storyboard Popover presentation segues support a full size content inspector property that allows the presented content to push beyond the safe area insets and past the arrow region of the popover.  (102107829)
 - `NSView` supports a Clips Bounds property inspector for finer control on whether the view’s contents should be clipped.  (104581720)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Text views, Text fields and Labels support additional text Content Types in the inspector to classify the data for birthdate, credit card, address, names, and more.  (102866350)
 - Fixed an issue so that the `NSToolbarItem` position centered inspector previews and persists to runtime correctly.  (105597623)
 - Fixed a compilation issue with some iOS storyboards that are marked with a target runtime of “iOS.CocoaTouch.iPad.”  (111328594) (FB12453705)
 
-###### Known Issues
+#### Known Issues
 
 - Interface Builder documents using custom App fonts may load incorrect font at runtime.  (113624207) (FB12903371)
 
   **Workaround:** Set font manually in code.
 
-##### Linking
+### Linking
 
-###### New Features
+#### New Features
 
 - A new linker has been written to significantly speed up static linking.  It’s the default for all macOS, iOS, tvOS and visionOS binaries and anyone using the “Mergeable Libraries” feature.  The classic linker can still be explicitly requested using -ld64, and will be removed in a future release. (108915312)
 
-###### Known Issues
+#### Known Issues
 
 - Binaries using symbols with a weak definition crash at runtime on iOS 14/macOS 12 or older. This impacts primarily C++ projects due to their extensive use of weak symbols.  (114813650) (FB13097713)
 
@@ -411,16 +411,16 @@ Xcode 15 includes SDKs for iOS 17, iPadOS 17, tvOS 17, watchOS 10, and macOS Son
 
   **Workaround:** Add `-Wl,-weak_reference_mismatches,weak` or `-Wl,-ld_classic` options to the `OTHER_LDFLAGS` build setting.
 
-##### Localization
+### Localization
 
-###### New Features
+#### New Features
 
 - String Catalogs (`.xcstrings`) are a new file type in Xcode that make it easy to localize your app by managing strings and keeping track of translation progress. Xcode automatically extracts localizable strings from source code to keep any String Catalogs in sync. String Catalogs can be viewed and edited in a native editor to preview and manage the localized strings in your project. To get started, add a new String Catalog via the File Chooser or migrate existing `.strings` and `.stringsdict` files by choosing Edit > Convert > To String Catalog… in the Menu Bar.  (67254382)
 - The Localization Catalog Editor now displays the translation status of strings when viewing and editing exported strings (for files where this information is available).  (79101944)
 - Xcode now gives you more flexibility when localizing App Intents phrases. You can now add or remove phrases in `AppShortcuts.xcstrings` independently in each locale using the String Catalog editor.  (97283450)
 - Exporting localizations from a Swift Package target will now prefer to generate string tables in the String Catalog format for targets that already contain at least one String Catalog.  (106170507)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Xcode now gives you the option to unlocalize a resource when removing all localizations from a localizable file in the File Inspector.  (11795220)
 - Fixed an issue where there was no way to add a new localization when exporting localizations in a Swift package. New localizations can now be added using the String Catalog editor.  (92296781)
@@ -430,42 +430,42 @@ Xcode 15 includes SDKs for iOS 17, iPadOS 17, tvOS 17, watchOS 10, and macOS Son
 - Fixed an issue where importing a Localization Catalog with translated strings from a String Catalog would not add the appropriate supported languages to the project.  (109236378)
 - Fixed: Migrating InfoPlist.strings to InfoPlist.xcstrings now prefers to keep comments from the original .strings file when present.  (110333696) (FB12242621)
 
-##### Metal
+### Metal
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Xcode’s GPU debugging service automatically tries to connect to all devices running iOS 17, watchOS 10, and tvOS 17 that have been discovered in the local area network. If the device trusts the Mac, it accepts the connection and may drain its battery at a faster rate than normal for a sleeping device.  (108682066)
 
-##### Metal Debugger
+### Metal Debugger
 
-###### New Features
+#### New Features
 
 - The Geometry Viewer and Shader Debugger are now available for Mesh and Object render stages. Bound resources now supports filtering by shader access for Mesh pipelines.  (81698727)
 - The Metal Debugger has been updated with improved support for MetalFX. You can easily navigate to your MetalFX calls, see the bound resources, and compare the input and output results. The dependencies viewer has also been updated so that you can see where your input dependencies are coming from and even see how long it takes to complete the upscaling work.  (101047483)
 - The Buffer Viewer has been updated with new features, improved user interface, and performance improvements. New features include data search, column pinning, column filtering, and type casting.  (101241716)
 
-##### Organizer
+### Organizer
 
-###### New Features
+#### New Features
 
 - Some crashes that were the result of a Foundation exception have their exception reason displayed in the Organizer. If there is an exception reason, it’s displayed in the inspector to the right of the backtrace view.  (103453197)
 
-##### Particle Emitters
+### Particle Emitters
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Adding a particle emitter or loading a particle emitter in Reality Composer Pro can result in a crash on an Intel-based Mac.  (110794948)
 - Fixed: The particle emitter property called `simulationSpace` has been renamed to `particlesInheritTransform`, with possible values changing from `.global`/`.local` to `false`/`true`.  (111411344)
 
-##### Playgrounds
+### Playgrounds
 
-###### New Features
+#### New Features
 
 - The Playgrounds console uses Xcode 15’s new console and gains features such as inline find.  (42891656) (FB5398496)
 - The result sidebar in Xcode Playgrounds shows summaries for all expressions on the line, and a new control allows you to see a popover with details about each expression.  (105740414)
 - The Playgrounds Map template has been updated to use modern MapKit API.  (107284909)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The result sidebar in Xcode Playgrounds always shows a summary of the most recent result instead of the number of results.  (105108520)
 - Fixed: Selecting an inline result in Xcode Playgrounds highlights the source code that produced the result.  (105426026)
@@ -473,9 +473,9 @@ Xcode 15 includes SDKs for iOS 17, iPadOS 17, tvOS 17, watchOS 10, and macOS Son
 - Fixed: Inline results can’t be added from the results sidebar.  (111376539)
 - Fixed: macOS Playgrounds may fail to launch on some macOS Sonoma configurations in Xcode 15.0.  (111478555)
 
-##### Previews
+### Previews
 
-###### New Features
+#### New Features
 
 - The preview canvas has a new control for picking which device to use for previewing. By default it tracks the device family of the selected run destination, but a specific device can be selected. This should be used in favor of the `previewDevice` modifier.  (100562366)
 - Previews can now be created with the `#Preview` macro. This includes support for previewing SwiftUI, `UIView` & `UIViewController`, `NSView` & `NSViewController`, and widget timeline providers, timeline entries, and live activities.  (101566716)
@@ -484,7 +484,7 @@ Xcode 15 includes SDKs for iOS 17, iPadOS 17, tvOS 17, watchOS 10, and macOS Son
 - Right clicking on a `PreviewProvider` in the source editor now offers an action to automatically convert it to the new #Preview API.  (107319323)
 - The `#Preview` can now be used in projects with deployment targets prior to iOS 17 and macOS 14. Usages of `#Preview` for SwiftUI can also be previewed on OS versions earlier than iOS 17 and macOS 14 by adding `@available(iOS 16.0, macOS 13.0, *)` to the `#Preview` (or whichever version you’d like to preview). Usages of `#Preview` for UIKit & AppKit views and view controllers, and for widgets can’t be previewed on OS versions prior to iOS 17 and macOS 14.  (110676526)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Previews failed when renaming or deleting the actively edited file.  (62916700)
 - Fixed: Previews failed when using `@objc` annotations on certain types.  (96018813)
@@ -511,7 +511,7 @@ Xcode 15 includes SDKs for iOS 17, iPadOS 17, tvOS 17, watchOS 10, and macOS Son
 - Fixed: Previews can fail when navigating between a file previewed in a widget and a file previewed in an app target.  (111874103)
 - Fixed: Previewing a view inside of a Swift Package or framework fails.  (113143384)
 
-###### Known Issues
+#### Known Issues
 
 - Previews can fail when previewing files in a widget shared by both a watchOS app and an iOS app.  (108017929)
 - After loading a LiveActivity preview and making a code change, Xcode will get in a state where all previews time out across any project.  (111934738)
@@ -521,41 +521,41 @@ Xcode 15 includes SDKs for iOS 17, iPadOS 17, tvOS 17, watchOS 10, and macOS Son
 
   **Workaround:** Add a `@available(macOS 14.0, *)` annotation to the `#Preview`.
 
-##### Reality Composer
+### Reality Composer
 
-###### Deprecations
+#### Deprecations
 
 - Starting in Xcode 15, Reality Composer for macOS is no longer included, but remains available for iOS and iPadOS on the App Store. Reality Composer Pro will be available in a future release.  (114833716)
 
-##### RealityKit
+### RealityKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Some 3D models loaded with `model3D` or `ModelEntity(named:)` and make use of MaterialX may take longer or fail entirely to load.  (111301582)
 
-##### Sanitizers
+### Sanitizers
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Programs built with Address Sanitizer will hang on launch on Intel-based Macs.  (111288234)
 
-##### ShazamKit
+### ShazamKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: `SHManagedSession` doesn’t work on simulator.  (109672477)
 
-##### Signing & Distribution
+### Signing & Distribution
 
-###### Known Issues
+#### Known Issues
 
 - Xcode may crash if you encounter an error while notarizing your app.  (115425915) (FB13163393)
 
   **Workaround:** You may need to sign a new Program License Agreement in your account at [https://developer.apple.com/](https://developer.apple.com/) account. If that does not resolve the issue, you can also notarize with an older version of Xcode or using the `notarytool` command line utility.
 
-##### Signing and Distribution
+### Signing and Distribution
 
-###### New Features
+#### New Features
 
 - The Archive action is now available when the simulator run destination is selected. Building an archive with the simulator selected produces an app with all the CPU architectures for the devices on the selected platform.  (13094592)
 - The Xcode Signing & Capabilities tab in the project editor now supports adding [Apple approved managed capabilities](https://developer.apple.com/help/account/reference/provisioning-with-managed-capabilities) that are associated with your development team and App ID. Associated managed Capabilities are visible in the Library and work with automatic signing.  (27253063) (FB5468762)
@@ -563,60 +563,60 @@ Xcode 15 includes SDKs for iOS 17, iPadOS 17, tvOS 17, watchOS 10, and macOS Son
 - Xcode now delivers app upload status push notifications to the person who uploaded to App Store Connect.  (100033585)
 - Xcode Organizer window now supports streamlined archive distribution. Uploading or exporting an archive can now be accomplished with one click. Streamlined distribution methods use recommended settings. The custom method allows selection of other options.  (103967573)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: If your app integrates with Game Center, make sure that the `com.apple.developer.game-center` entitlement is present in your `Entitlements.plist` file. Previous Xcode versions automatically injected the entitlement into your app’s signature if it was present in your provisioning profile. That behavior was inconsistent with most other entitlements, and has been removed in Xcode 15.  (106596235)
 - Fixed: Resolved an issue where the “Manage version and build number” distribution option in Xcode and Xcode Cloud overwrote the version and build number of framework dependencies in apps. When distributing an app, framework dependencies retain their original version and build numbers.  (106869375)
 - Fixed: Automatic signing may fail to create a provisioning profile for DriverKit Driver targets.   (109588156)
 - Fixed: When uploading using the streamlined distribution workflow the optionally exported ExportOptions.plist is missing destination key/value.  (114233867)
 
-###### Known Issues
+#### Known Issues
 
 - Streamlined distribution methods in the Xcode Organizer window don’t support all the same error recovery options available when using the custom workflow. For example: if uploading an app without an app record, using streamlined distribution, Xcode shows an error rather than allowing you to create an app record.   (109097705)
 
   **Workaround:** Use the custom method.
 
-##### Simulator
+### Simulator
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The simulator application running on macOS 14 beta 1 may crash if a game controller is connected.  (110038857)
 
-###### Known Issues
+#### Known Issues
 
 - Status bar overrides may be set incorrectly when using the iOS 14 or later simulator runtime.  (101511614) (FB11716688)
 - Simulator doesn’t support all features of Spatial Audio. You can use Simulator to test a subset of audio features; however, final testing should be performed on device.  (109912117)
 
-##### Source Control
+### Source Control
 
-###### New Features
+#### New Features
 
 - Source Control operations and Xcode Cloud operations have been moved into a new combined “Integrate” menu replacing the “Source Control” menu.  (105752873)
 - Xcode now fully integrates with git’s staging features and committing code is now performed in a non-modal fashion.  (107490188)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue that could erroneously insert additional apostrophes when reviewing pull requests.  (107586336)
 - Fixed: Upstream changes may be displayed as staged changes in the Xcode editor.  (109285038)
 - Fixed an issue which may cause git credential helper keychain items to be deleted.  (109411746) (FB12190300)
 
-###### Known Issues
+#### Known Issues
 
 - In-line Code Review Mode does not show when “Show Source Control Changes” is disabled in Xcode Settings.  (114499800)
 
   **Workaround:** Use Side-by-Side Mode instead.
 
-###### Deprecations
+#### Deprecations
 
 - Xcode 15 no longer includes Xcode Server. Xcode Cloud is the best way to get automated build/test/deploy workflows for your code changes. The `xcodebuild` tool is also available for custom automation needs.  (99606507)
 
-##### Source Editor
+### Source Editor
 
-###### New Features
+#### New Features
 
 - Inactive code in `#if`…`#endif` blocks is now dimmed. This can be disabled in the **Text Editing > Display** preferences.  (2450148)
 - The **Editor > Structure > Toggle Comments** now supports commenting a selection within a single line.  (9245498)
-- Quick Help now supports rendering images that are included in a documentation comment. Both external images referenced via URL and local images from your [project’s documentation catalog](../Xcode/formatting-your-documentation-content.md#Add-images-to-your-content) are supported.  (45258339) (FB5708868)
+- Quick Help now supports rendering images that are included in a documentation comment. Both external images referenced via URL and local images from your [project’s documentation catalog](https://www.swift.org/documentation/docc/formatting-your-documentation-content#Add-images-to-your-content) are supported.  (45258339) (FB5708868)
 - Xcode now supports accessing SDK framework documentation by invoking Quick Help on a reference to a module name. For example, activating Quick Help by option-clicking on an `import SwiftUI` statement now shows SwiftUI’s documentation.  (46583395) (FB5667593)
 - Jump to definition “gd” Vim command is now supported.  (81116920) (FB9404427)
 - The **Show Code Actions** command has been replaced with **Show Quick Actions** to quickly access any menu command. By default, Command-clicking a token in the editor now performs **Jump to Definition**. This can be changed in the **Navigation** preferences. Control-clicking a token brings up the standard contextual menu that now contains all the commands that were available in the **Code Actions**.  (86179596)
@@ -628,7 +628,7 @@ Xcode 15 includes SDKs for iOS 17, iPadOS 17, tvOS 17, watchOS 10, and macOS Son
 - Standalone and attached macros can be expanded in-line in the editor with the **Editor > Expand Macro** command.  (104491696)
 - Code completion now suggests names when declaring a type in Swift.  (106005529)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The font size used in the Quick Help popover now automatically adjusts to match the size of the editor’s current theme.  (6955736)
 - Fixed: The source editor shouldn’t add an extra line when hitting Return right before a closing curly brace.  (64872737)
@@ -643,33 +643,33 @@ Xcode 15 includes SDKs for iOS 17, iPadOS 17, tvOS 17, watchOS 10, and macOS Son
 - Fixed: Change case “gu{motion}” and “gU{motion}” Vim commands now change the characters rather than the whole word.  (104870847)
 - Fixed: The source editor may hang for a short period while opening a file if the current toolchain doesn’t match the selected Xcode.  (109723219)
 
-###### Known Issues
+#### Known Issues
 
 - Live Issues aren’t shown in macro expansions.  (108375601)
 
-##### StoreKit
+### StoreKit
 
-###### Resolved Issues
+#### Resolved Issues
 
-- Fixed: The following StoreKitTest APIs are now available when testing on iOS 17 beta, watchOS 10 beta, tvOS 17 beta, and visionOS beta: [setSimulatedError(_:forAPI:)](../StoreKitTest/sktestsession/api-4196369-setsimulatederror.md), [simulatedError(forAPI:)](../StoreKitTest/sktestsession/api-4196370-simulatederror.md), and [buyProduct(identifier:options:)](../StoreKitTest/sktestsession/api-4196368-buyproduct.md).  (110547289)
+- Fixed: The following StoreKitTest APIs are now available when testing on iOS 17 beta, watchOS 10 beta, tvOS 17 beta, and visionOS beta: [setSimulatedError(_:forAPI:)](../StoreKitTest/sktestsession/setsimulatederror%28_,forapi%29.md), [simulatedError(forAPI:)](../StoreKitTest/sktestsession/simulatederror%28forapi%29.md), and [buyProduct(identifier:options:)](../StoreKitTest/sktestsession/buyproduct%28identifier,options%29.md).  (110547289)
 
-##### StoreKit Testing in Xcode
+### StoreKit Testing in Xcode
 
-###### New Features
+#### New Features
 
 - You can now create new in-app purchase transactions from the StoreKit Transaction Manager in Xcode. Just click the “+” button in the Transaction Manager, and configure your new transaction using the menu. Some functionality is only available when you’re testing your app on macOS 14.0, iOS 17.0, watchOS 10.0, or tvOS 17.0.
 
-  You can use the new [`buyProduct(identifier:options:)`](../StoreKitTest/sktestsession/api-4196368-buyproduct.md) API on [SKTestSession](../StoreKitTest/sktestsession.md) to programmatically create an in-app purchase transaction based on a product identifier in your automated tests. When you use the `StoreKitTest` framework in your automated tests, there are additional new `Product.PurchaseOption` values available for configuring properties like the purchase date for your test transactions.  (101591947)
-- The StoreKit Configuration Editor has a new App Configuration menu that allows you to configure global properties of your local StoreKit Testing in Xcode environment. In the App Configuration menu, you can choose an error to simulate for any throwing StoreKit 2 API. This causes that API to always fail with the error you configure, so you can verify your app handles each StoreKit errors properly. You can also use the new [`setSimulatedError(_:forAPI:)`](../StoreKitTest/sktestsession/api-4196369-setsimulatederror.md) method on [`SKTestSession`](../StoreKitTest/sktestsession.md) to programmatically simulate failures in your automated tests.  (101592113)
+  You can use the new [`buyProduct(identifier:options:)`](../StoreKitTest/sktestsession/buyproduct%28identifier,options%29.md) API on [SKTestSession](../StoreKitTest/sktestsession.md) to programmatically create an in-app purchase transaction based on a product identifier in your automated tests. When you use the `StoreKitTest` framework in your automated tests, there are additional new `Product.PurchaseOption` values available for configuring properties like the purchase date for your test transactions.  (101591947)
+- The StoreKit Configuration Editor has a new App Configuration menu that allows you to configure global properties of your local StoreKit Testing in Xcode environment. In the App Configuration menu, you can choose an error to simulate for any throwing StoreKit 2 API. This causes that API to always fail with the error you configure, so you can verify your app handles each StoreKit errors properly. You can also use the new [`setSimulatedError(_:forAPI:)`](../StoreKitTest/sktestsession/setsimulatederror%28_,forapi%29.md) method on [`SKTestSession`](../StoreKitTest/sktestsession.md) to programmatically simulate failures in your automated tests.  (101592113)
 - You can now use the StoreKit Transaction Manager in Xcode to manage transactions without an active debug session. Once you install an app from Xcode using a StoreKit Configuration, it appears in the Transaction Manager’s navigator as long as a device, or simulator, is connected and running. To manage transactions outside of a debug session on a Mac app, you’ll need to be running macOS 14.0 or later. To manage transactions on other devices and simulators, you’ll need the test system to be running iOS 17.0, watchOS 10.0, or tvOS 17.0. You can still manage transactions on older operating systems as long as you have an active debug session.  (101592166)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: When editing an auto-renewable subscription in the transaction manager via the “subscription options” dialog, a new transaction is created but the renewal is disabled. This causes the newly selected subscription to expire, and not renew.  (109403724)
 
-##### Swift
+### Swift
 
-###### New Features
+#### New Features
 
 - Swift 5.9 introduces *parameter packs*, allowing you to write generic code that accepts any number of type parameters. A type parameter pack is declared with the `each` keyword, and you can iterate over a type parameter pack with the `repeat` keyword:
 
@@ -839,7 +839,7 @@ Xcode 15 includes SDKs for iOS 17, iPadOS 17, tvOS 17, watchOS 10, and macOS Son
 
   [SE-0382](https://github.com/apple/swift-evolution/blob/main/proposals/0382-expression-macros.md), [SE-0389](https://github.com/apple/swift-evolution/blob/main/proposals/0389-attached-macros.md), [SE-0394](https://github.com/apple/swift-evolution/blob/main/proposals/0394-swiftpm-expression-macros.md), [SE-0397](https://github.com/apple/swift-evolution/blob/main/proposals/0397-freestanding-declaration-macros.md)  (109903303)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: [#64927](https://github.com/apple/swift/issues/64927):
 
@@ -885,7 +885,7 @@ Xcode 15 includes SDKs for iOS 17, iPadOS 17, tvOS 17, watchOS 10, and macOS Son
 - Fixed: Swift modules with a very large number of extensions may experience slow build times.  (109543968)
 - Fixed: Noncopyable types with deinits that are referenced outside of the defining file cause a compile time crash.  (109679168)
 
-###### Known Issues
+#### Known Issues
 
 - Noncopyable types can’t currently be used in tuples or as generic types.  In particular, this means they can’t currently be stored in Arrays, Dictionaries, or Sets, nor can you form Optionals of noncopyable types or `print` them.  (104669935)
 - Noncopyable types don’t currently work correctly when library evolution mode is enabled.  (107371421)
@@ -905,15 +905,15 @@ Xcode 15 includes SDKs for iOS 17, iPadOS 17, tvOS 17, watchOS 10, and macOS Son
 
   **Workaround:** Add `$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/macosx/libswiftAppKit.dylib` to the Other Linker Flags build setting in Xcode. This should be removed when the deployment target is increased to 10.14 or later.
 
-##### Swift and C++ Interoperability
+### Swift and C++ Interoperability
 
-###### New Features
+#### New Features
 
 - Swift supports bidirectional interoperability with C++ / Objective-C++. You can now use a subset of C++ APIs in Swift and Swift APIs from C++. Enable C++ interoperability by selecting “C++ / Objective-C++” in the “C++ and Objective-C interoperability” build setting.
 
   For more information on C++ interoperability please see [Mixing Swift and C++](https://swift.org/documentation/cxx-interop).  (100830806)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Calling `append` on a `std::string` value from Swift can crash compiler.  (107018724)
 - Fixed: A Swift extension that adds an initializer to a C++ type could lead to a compiler crash when debugging is enabled.  (107561753)
@@ -922,39 +922,39 @@ Xcode 15 includes SDKs for iOS 17, iPadOS 17, tvOS 17, watchOS 10, and macOS Son
 - Fixed: C++ structure or class that contains Objective-C pointers data members, and no other non-trivial data members or special member functions, is passed incorrectly to an Objective-C method that’s called from Swift on Intel, leading to incorrect runtime behavior or crashes.  (109714315)
 - Fixed: Can’t call default initializer of C types when C++ interoperability is enabled.  (109727620)
 
-###### Known Issues
+#### Known Issues
 
 - Xcode code-completion results in Swift code can sometimes show C++ methods having incorrect parameter types (`Any`).  (108855791)
 - Xcode doesn’t offer code-completion results for C++ namespace members in Swift.  (109714059)
 - C++ members imported as properties via the `SWIFT_COMPUTED_PROPERTY` annotation aren’t indexed correctly in Swift files.  (109714153)
 
-##### Swift Packages
+### Swift Packages
 
-###### New Features
+#### New Features
 
 - You can now create Swift Packages of various types using the File > New > Package… menu command.  Templates include macros, package plug-ins, as well as a command line tool configured to use swift-argument-parser.  (60274812) (FB7621436)
 - Adding a dependency to a Swift package on the filesystem (instead of a remote URL) now participates in up-front package verification, such as checking transitive dependencies for conflicting version requirements.  (79576228)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: When viewing Package Dependencies in the project editor, any packages with an Exact Version rule had the version number reset to 1.0.0.  (110303613) (FB12234300)
 - Fixed: Swift Macros may fail to build when target destination is a platform other than macOS.  (110541100) (FB12291279)
 
-###### Known Issues
+#### Known Issues
 
 - If the `Package.swift` file of a Swift App Playground project has been hand-edited to include unit test targets, the app playground fails to build with an error about duplicate commands.  (113752456)
 
   **Workaround:** Comment out or remove the unit test targets in the `Package.swift` file.
 
-##### Swift Standard Library
+### Swift Standard Library
 
-###### New Features
+#### New Features
 
 - Instances of `Zip2Sequence` (that is, the result of calling `zip()`) now conform to `Sendable` if the sequences they zip also conform to `Sendable`.  (103840319)
 
-##### SwiftData
+### SwiftData
 
-###### New Features
+#### New Features
 
 - Existing `@Query` property declarations might not always correctly infer the model type for predicate and sort descriptor parameters. (Note: the `@Query` attribute is now resolved as a macro, instead of as a property wrapper.)
 
@@ -974,48 +974,48 @@ Xcode 15 includes SDKs for iOS 17, iPadOS 17, tvOS 17, watchOS 10, and macOS Son
 
   In all cases, the model type used in the `filter:` and `sort:` parameters is still required to be the same type used as the element in the query’s wrapped array type, and will emit a build error if not.  (109433172)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: After deleting an item, SwiftUI might attempt to reference the deleted content during the animation causing a crash.  (109838173)
 - Fixed: `@Model` classes with initial values for stored properties result in an error that `self._$backingData` is used before being initialized.  (113572344)
 
-##### Templates
+### Templates
 
-###### New Features
+#### New Features
 
 - New Package offers some template package types, making it faster to create new command line tools in addition to libraries.  (107065338)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The App and Document App templates, when used with a SwiftUI interface, can opt in to using SwiftData for persistent storage.  (112229757)
 - Fixed: The Audio Unit App template defines its App as a class.  (113652618)
 
-##### Test Navigator
+### Test Navigator
 
-###### New Features
+#### New Features
 
 - The test navigator has been redesigned and re-written for a faster develop-test-debug loop. It reports and executes tests faster, and has a new filtering system which supports additional test results and recalling prior filters.   (94313839)
 - The filter bar in the test navigator uses tokens instead of toggles now. A token can be added by clicking on the filter icon within the filter bar, or by typing “failed,” “skipped,” or “expected failure” into the bar and taking the autocompletion. Filters can be inverted by clicking on the inserted token and selecting the opposite predicate of what’s currently in use.   (101487428)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Test suites occasionally appear as “(Missing Suite).”  (109423329)
 
-##### Test Report
+### Test Report
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Dragging a Test Report tab will cause Xcode to crash.  (113509332)
 
-##### TestFlight
+### TestFlight
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: watchOS apps that have a minimum deployment target below 6.0 may not install properly with TestFlight.  (109797881)
 
-##### Testing
+### Testing
 
-###### New Features
+#### New Features
 
 - `xcodebuild` now supports enumerating the test suite that would otherwise be executed by a test or test-without-building invocation. Test enumeration will list every target, class, and method contained within the suite in either human-readable or JSON format. Additionally, enumerated tests can be grouped hierarchically or as a flat list of identifiers (suitable for passing to future invocations of `xcodebuild`). Examples:
 
@@ -1043,7 +1043,7 @@ Xcode 15 includes SDKs for iOS 17, iPadOS 17, tvOS 17, watchOS 10, and macOS Son
 - Xcode’s Test Report has been redesigned to provide a simplified understanding of test results across many different devices and testing configurations  (100825750)
 - Instances of `XCTWaiter` can now be reused.  (101293832)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: XCTest has a public API on iOS and iPadOS for typing in hardware keyboard support for modifier keys.  To access this API, use `XCUIElement.typeKey(_:modifierFlags:)`.  (20185910)
 - Fixed: XCTest is now built with full exception handling enabled for Objective-C tests. This change may cause some objects to be released or deallocated when they were previously leaked.  (47727351)
@@ -1052,42 +1052,42 @@ Xcode 15 includes SDKs for iOS 17, iPadOS 17, tvOS 17, watchOS 10, and macOS Son
 - Fixed: For tests that are executed without parallelization, a watchdog timer is now in place that covers the period during which `XCTestCase` instances are constructed (i.e. the designated initializer `-initWithInvocation:` is called). Hangs and long delays that occur during this period cause the test harness to abort testing early and attach a spindump to the result bundle for further investigation. If you have expensive work that occurs during a test case initializer, this work should be moved to `-setUp` or otherwise refactored to occur during the test method itself.  (104390801)
 - Fixes known issues with the XCUIDevice.open(URL) and XCUIApplication.open(URL) API’s.  (109419759)
 
-##### TipKit
+### TipKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Tips and TipKit views will not display on Apple TV hardware.  (108286122)
 - Fixed: TipKit does not build on Simulators or macOS due to macro “could not be found” errors.  (112663003)
 
-##### UI Testing
+### UI Testing
 
-###### New Features
+#### New Features
 
 - Accessibility Audit support: An Accessibility Audit is an automated check performed on a given view for many kinds of Accessibility issues. These issues include missing labels, text which doesn’t scale with Dynamic Type, and low contrast. See `XCUIApplication().performAccessibilityAudit()`  (100732814)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: UI Tests that choose screenshots over screen recordings may not see screenshots attached.  (109908952)
 
-##### VideoToolbox
+### VideoToolbox
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: `canImport(VideoToolbox)` doesn’t return false for watchOS.  (109324910)
 
-##### Xcode
+### Xcode
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Xcode might crash when creating a new file.  (112337760)
 
-##### Xcode Cloud
+### Xcode Cloud
 
-###### New Features
+#### New Features
 
 - Xcode now supports a new Notarize Post-Action in Xcode Cloud workflows for macOS products.  (64009778)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: An “Editor cannot be opened” dialog may show immediately after onboarding a new product to Xcode Cloud.  (109781276)
 - Fixed: Xcode may crash when clicking the “Manage Workflows…” button from the Xcode Cloud Workflow Editor.  (110788363)

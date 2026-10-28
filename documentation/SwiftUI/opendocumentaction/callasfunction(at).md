@@ -16,7 +16,7 @@ Opens the document at the specified file URL.
 func callAsFunction(at url: URL) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Don’t call this method directly. SwiftUI calls it when you call the [`openDocument`](../environmentvalues/opendocument.md) action:
 

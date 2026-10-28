@@ -26,7 +26,7 @@ var alwaysCopiesSampleData: Bool { get set }
 @property (nonatomic) BOOL alwaysCopiesSampleData;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`true`](../../Swift/true.md), which indicates that the output always provides copies of sample data to your app. This is the appropriate property value if you intend to modify the sample data it returns.
 

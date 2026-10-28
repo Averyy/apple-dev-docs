@@ -13,11 +13,11 @@
 ifnet_t ifmaddr_ifnet(ifmultiaddr_t ifmaddr);
 ```
 
-#### Return Value
+## Return Value
 
 A reference to the interface.
 
-#### Discussion
+## Discussion
 
 Returns the interface this multicast address is attached to. The interface reference count is not bumped by this function. The interface is only valid as long as you don't release the refernece to the multiast address. If you need to maintain your pointer to the ifnet, call ifnet_reference followed by ifnet_release when you're finished.
 

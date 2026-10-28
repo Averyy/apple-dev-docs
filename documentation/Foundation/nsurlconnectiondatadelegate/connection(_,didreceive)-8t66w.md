@@ -25,7 +25,7 @@ optional func connection(_ connection: NSURLConnection, didReceive response: URL
 - (void) connection:(NSURLConnection *) connection didReceiveResponse:(NSURLResponse *) response;
 ```
 
-#### Discussion
+## Discussion
 
 In rare cases, for example in the case of an HTTP load where the content type of the load data is `multipart/x-mixed-replace`, the delegate will receive more than one `connection:didReceiveResponse:` message. When this happens, discard (or process) all data previously delivered by `connection:didReceiveData:`, and prepare to handle the next part (which could potentially have a different MIME type).
 

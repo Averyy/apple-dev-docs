@@ -15,7 +15,7 @@ The relationships you include in the request and those you can operate on.
 object GameCenterLeaderboardV2.Relationships
 ```
 
-#### Overview
+## Overview
 
 - activity:
 - challenge:

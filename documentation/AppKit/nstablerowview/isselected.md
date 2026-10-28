@@ -19,7 +19,7 @@ var isSelected: Bool { get set }
 @property (getter=isSelected) BOOL selected;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if selected, otherwise [`false`](../../Swift/false.md).
 

@@ -14,7 +14,7 @@ Outputs True Result or False Result depending on whether value1 >= value2.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **If Greater Or Equal (float)**:
 
@@ -276,7 +276,7 @@ Outputs True Result or False Result depending on whether value1 >= value2.
 | --- | --- |
 | `Out` | Float |
 
-#### Parameter descriptions
+## Parameter descriptions
 
 - **`Value1`**: The first value to compare.
 - **`Value2`**: The second value to compare.

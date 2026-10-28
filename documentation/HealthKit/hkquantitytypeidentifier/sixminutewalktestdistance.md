@@ -24,7 +24,7 @@ static let sixMinuteWalkTestDistance: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierSixMinuteWalkTestDistance;
 ```
 
-#### Discussion
+## Discussion
 
 The standard six-minute walk test measures the maximum number of meters a user can walk on an unobstructed, flat course.
 
@@ -36,7 +36,7 @@ On Apple Watch Series 3 or later, the system automatically records a weekly [`si
 let meters = HKUnit.meter()
 ```
 
-##### Understand Estimated Test Results
+### Understand Estimated Test Results
 
 Each week, the system calculates the approximate result a user might receive from a six-minute walk test administered at a clinic. The system estimates the result using passively observed motion and workout data. The maximum estimated distance is 500m.
 

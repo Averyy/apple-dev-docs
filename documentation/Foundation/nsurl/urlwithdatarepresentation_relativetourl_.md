@@ -21,7 +21,7 @@ Initializes and returns a newly created NSURL using the contents of the given da
 + (NSURL *) URLWithDataRepresentation:(NSData *) data relativeToURL:(NSURL *) baseURL;
 ```
 
-#### Discussion
+## Discussion
 
 If the data representation is not a legal URL string as ASCII bytes, the URL object may not behave as expected.
 

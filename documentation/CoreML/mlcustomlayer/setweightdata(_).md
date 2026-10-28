@@ -30,7 +30,7 @@ func setWeightData(_ weights: [Data]) throws
 
 - [Creating and Integrating a Model with Custom Layers](../creating-and-integrating-a-model-with-custom-layers.md)
 
-#### Discussion
+## Discussion
 
 Implement this method to assign the weights for all the connections between nodes in your layer. This method is called once after the initialization call. Your implementation should validate the weights and throw an error if the weights do not have the expected shape or values.
 

@@ -19,7 +19,7 @@ func updateDragTypeRegistration()
 - (void) updateDragTypeRegistration;
 ```
 
-#### Discussion
+## Discussion
 
 If the receiver is editable and is a rich text view, causes all text views associated with the receiver’s layout manager to register their acceptable drag types. If the text view isn’t editable or isn’t rich text, causes those text views to unregister their dragged types.
 

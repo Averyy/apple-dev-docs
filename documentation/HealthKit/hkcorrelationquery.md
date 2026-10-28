@@ -28,11 +28,11 @@ class HKCorrelationQuery
 
 - [Reading data from HealthKit](./reading-data-from-healthkit.md)
 
-#### Overview
+## Overview
 
 Correlation samples act as a container, grouping multiple quantity or category samples. While you can use [`HKSample`](./hksample.md) objects to search for correlations, correlation queries allow more complex filtering based on the contained samples. Specifically, correlation queries let you provide a separate predicate for each of the sample types stored in the correlation. A correlation is  returned only if the correlation’s predicate and all of the sample predicates match.
 
-##### Requesting Permission to Share and Read
+### Requesting Permission to Share and Read
 
 Unlike other sample types, you do not request permission to share and read correlation types directly. Instead, you request permission to share and read each of the sample types contained within the correlation.
 
@@ -40,7 +40,7 @@ When saving a correlation, the app must have permission to share all of the cont
 
 When your app queries for correlation data, HealthKit only returns samples that contain objects you have permission to read. If the app has permission to read only some of the contained objects, HealthKit still returns the correlation; however, the correlation appears to only contain those objects that your app has permission to read. HealthKit hides all of the other contained objects from your app.
 
-##### Executing Queries
+### Executing Queries
 
 You create a correlation query by calling the [`init(type:predicate:samplePredicates:completion:)`](./hkcorrelationquery/init%28type,predicate,samplepredicates,completion%29.md) initializer. After the query is instantiated, you run it by calling the HealthKit store’s [`execute(_:)`](./hkhealthstore/execute%28_%29.md) method. This method runs the query on an anonymous background queue. When the query is complete, it executes the results handler on the same background queue (though not necessarily the same thread). Typically, you dispatch these results back to the main thread to update your user interface.
 
@@ -133,7 +133,7 @@ In the query’s completion handler, the sample code first checks to see if an e
 
 Once the sample code finishes declaring the completion handler, the query is ready to use. The sample code simply executes the query on the HeathKit store.
 
-##### Subclassing Correlation Queries
+### Subclassing Correlation Queries
 
 As with many HealthKit classes, don’t subclass the [`HKCorrelationQuery`](./hkcorrelationquery.md) class.
 

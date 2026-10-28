@@ -21,7 +21,7 @@ Move `currentCodeUnitOffset` to the start of the previous `n` scalars, without d
 mutating func skipBack(by n: Int) -> Int
 ```
 
-#### Discussion
+## Discussion
 
 Returns the number of `Unicode.Scalar`s skipped over, which can be fewer than `n` if at the start of the UTF8Span.
 

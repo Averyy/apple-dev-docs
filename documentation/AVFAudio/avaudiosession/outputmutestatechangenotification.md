@@ -21,7 +21,7 @@ class let outputMuteStateChangeNotification: NSNotification.Name
 extern NSNotificationName const AVAudioSessionOutputMuteStateChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The userInfo dictionary will contain the updated output mute value as accessed by [`muteStateKey`](./mutestatekey.md)
 

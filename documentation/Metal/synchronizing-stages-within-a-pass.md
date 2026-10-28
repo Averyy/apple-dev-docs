@@ -5,7 +5,7 @@
 
 Block GPU stages in the a pass from running until other stages in the same pass finish.
 
-#### Overview
+## Overview
 
 An intrapass barrier resolves access conflicts between commands within the same pass, without affecting any other passes. When your app encodes commands that access a resource from different passes — or different stages within a single pass — it creates an access conflict when at least one command modifies that resource. This conflict happens because the GPU can run multiple commands at the same time, including those from:
 
@@ -19,7 +19,7 @@ Start by identifying which memory operations from different stages within a pass
 
 > **Note**:  An intrapass barrier has no effect on any other pass. A GPU may still be running an earlier pass, or it may begin running the next pass, or both.
 
-##### Identify access conflicts within a single pass
+### Identify access conflicts within a single pass
 
 The following code example encodes a compute pass that has an access conflict between its copy and dispatch commands.
 
@@ -97,7 +97,7 @@ Without a barrier, the GPU can run the commands at any time relative to each oth
 
 ![A diagram showing the blit and dispatch stages running in parallel without synchronization, potentially causing inconsistent results when both access buffer B.](https://developer.apple.com/tutorials/images/com.apple.metal/synchronizing-stages-within-a-pass-2@2x.png)
 
-##### Resolve an intrapass conflict with a barrier
+### Resolve an intrapass conflict with a barrier
 
 Resolve access conflicts between commands within the same pass by adding an intrapass barrier with the encoder’s [`barrier(afterEncoderStages:beforeEncoderStages:visibilityOptions:)`](./mtl4commandencoder/barrier%28afterencoderstages,beforeencoderstages,visibilityoptions%29.md) method.
 
@@ -149,7 +149,7 @@ The code example adds a barrier between the blit and dispatch stages because the
 
 The barrier makes it so that the store operations from the blit stage’s commands finish completely before the dispatch stage’s commands load from the same memory.
 
-##### Encode commands that rely on fragment or tile stage outputs
+### Encode commands that rely on fragment or tile stage outputs
 
 Metal doesn’t support intrapass barriers that wait for the [`tile`](./mtlstages/tile.md) or [`fragment`](./mtlstages/fragment.md) stages on devices that have a tile-based deferred rendering (TBDR) architecture, such as Apple silicon GPUs.
 

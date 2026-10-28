@@ -26,7 +26,7 @@ struct ToolCallEvaluator<Input> where Input : ModelSampleProtocol, Input.Expecta
 - [Evaluating tool-calling behavior](./evaluating-tool-calling-behavior.md)
 - [Evaluating language model responses](./evaluating-language-model-responses.md)
 
-#### Overview
+## Overview
 
 This evaluator produces both a strict and partial result from a single evaluation pass. It also supports ordered sequences, unordered expectations, disallowed tool checks, and group steps.
 

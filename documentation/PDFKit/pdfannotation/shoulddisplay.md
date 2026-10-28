@@ -24,11 +24,11 @@ var shouldDisplay: Bool { get set }
 @property (nonatomic) BOOL shouldDisplay;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the annotation should be displayed; otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 `PDFPage` respects this flag when drawing.
 

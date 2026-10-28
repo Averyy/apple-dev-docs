@@ -20,11 +20,11 @@ Returns a UIKit offset structure corresponding to the data in a given string.
 class func uiOffset(for string: String) -> UIOffset
 ```
 
-#### Return Value
+## Return Value
 
 An edge insets data structure. If the string is not well-formed, the function returns [`zero`](../../UIKit/uioffset/zero.md).
 
-#### Discussion
+## Discussion
 
 In general, you should use this function only to convert strings that were previously created using the [`string(for:)`](./string%28for%29-454dj.md) function.
 

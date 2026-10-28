@@ -22,7 +22,7 @@ nonisolated
 init<Y>(xStart: CGFloat? = nil, xEnd: CGFloat? = nil, y: PlottableValue<Y>) where Y : Plottable
 ```
 
-##### Discussion
+### Discussion
 
 Use this initializer to create a horizontal rule across a chart’s plotting area at a y position:
 

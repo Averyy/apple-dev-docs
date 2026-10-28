@@ -21,7 +21,7 @@ Calculates the absolute value of each element in the supplied double-precision c
 extern void vDSP_zvabsD(const DSPDoubleSplitComplex *__A, vDSP_Stride __IA, double *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function returns the square roots of the sum of the squares of the real and imaginary parts of each complex element.
 

@@ -24,7 +24,7 @@ func connectMIDI(_ sourceNode: AVAudioNode, to destinationNode: AVAudioNode, for
 - (void) connectMIDI:(AVAudioNode *) sourceNode to:(AVAudioNode *) destinationNode format:(AVAudioFormat *) format eventListBlock:(AUMIDIEventListBlock) tapBlock;
 ```
 
-#### Discussion
+## Discussion
 
 Use this to establish a MIDI connection between a source node and a destination node that has MIDI input capability. This method disconnects any existing MIDI connection that involves the destination node. When making the MIDI connection, this method overwrites the source node’s event list block.
 

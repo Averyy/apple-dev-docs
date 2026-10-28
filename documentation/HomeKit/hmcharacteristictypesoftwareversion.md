@@ -24,7 +24,7 @@ let HMCharacteristicTypeSoftwareVersion: String
 extern NSString * const HMCharacteristicTypeSoftwareVersion;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a string.
 

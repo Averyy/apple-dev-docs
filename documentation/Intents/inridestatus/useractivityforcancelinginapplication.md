@@ -31,7 +31,7 @@ var userActivityForCancelingInApplication: NSUserActivity? { get set }
 @property (atomic, strong, readwrite, nullable) NSUserActivity * userActivityForCancelingInApplication;
 ```
 
-#### Discussion
+## Discussion
 
 If the user asks to cancel a ride that hasn’t completed, the system checks the value of this property. If you provided an appropriate [`NSUserActivity`](../../Foundation/nsuseractivity.md) object, the system launches your app and asks it to continue with that object. The object you provide should include the information your app needs to cancel the ride request.
 

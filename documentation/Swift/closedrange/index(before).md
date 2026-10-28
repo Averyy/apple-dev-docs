@@ -23,7 +23,7 @@ func index(before i: ClosedRange<Bound>.Index) -> ClosedRange<Bound>.Index
 
 Available when `Bound` conforms to `Strideable` and `Bound.Stride` conforms to `SignedInteger`.
 
-#### Return Value
+## Return Value
 
 The index value immediately before `i`.
 

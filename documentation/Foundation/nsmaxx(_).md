@@ -20,7 +20,7 @@ func NSMaxX(_ aRect: NSRect) -> Double
 static CGFloat NSMaxX(NSRect aRect);
 ```
 
-#### Return Value
+## Return Value
 
 The largest x coordinate value within `aRect`.
 

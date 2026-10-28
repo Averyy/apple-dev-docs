@@ -22,7 +22,7 @@ case detailButton
 UITableViewCellAccessoryDetailButton
 ```
 
-#### Discussion
+## Discussion
 
 Choose this option to display a button that, when tapped, displays information about the row. Use your delegate’s [`tableView(_:accessoryButtonTappedForRowWith:)`](../../uitableviewdelegate/tableview%28_,accessorybuttontappedforrowwith%29.md) method to respond to taps in the button.
 

@@ -24,11 +24,11 @@ func randomTensor(withShapeTensor shapeTensor: MPSGraphTensor, descriptor: MPSGr
 - (NSArray<MPSGraphTensor *> *) randomTensorWithShapeTensor:(MPSGraphTensor *) shapeTensor descriptor:(MPSGraphRandomOpDescriptor *) descriptor stateTensor:(MPSGraphTensor *) state name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 An array of MPSGraphTensor of size 2. The first MPSGraphTensor is of shape containing random values in the defined range. The second MPSGraphTensor is the updated state tensor.
 
-#### Discussion
+## Discussion
 
 Returns an array of 2 tensors, where the first is of provided shape of random values in the distribution specified, and the second is the updated state tensor. Uses the provided state to define a stream of random values. No state is preserved, and all calls with equal state yield an identical stream of random values. The initial stateTensor provided should be created using the MPSGraph randomPhiloxStateTensor APIs. The resulting stateTensor from this op can be passed as an argument to the following random calls to continue sampling from the stream.
 

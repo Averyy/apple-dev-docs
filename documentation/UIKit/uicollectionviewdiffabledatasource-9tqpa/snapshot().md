@@ -20,7 +20,7 @@ Returns a representation of the current state of the data in the collection view
 @preconcurrency func snapshot() -> NSDiffableDataSourceSnapshot<SectionIdentifierType, ItemIdentifierType>
 ```
 
-#### Return Value
+## Return Value
 
 A snapshot containing section and item identifiers in the order that they appear in the UI.
 

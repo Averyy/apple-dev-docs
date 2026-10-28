@@ -20,7 +20,7 @@ var xPath: String? { get }
 @property (copy, readonly, nullable) NSString * XPath;
 ```
 
-#### Discussion
+## Discussion
 
 For example, this method might return a string such as “foo/bar[2]/baz”. The result of this method can be used directly in the [`nodes(forXPath:)`](./nodes%28forxpath%29.md) and [`objects(forXQuery:constants:)`](./objects%28forxquery,constants%29.md) methods.
 

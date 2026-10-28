@@ -21,7 +21,7 @@ Inode number
 var inode: Inode { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding C property is `st_ino`.
 

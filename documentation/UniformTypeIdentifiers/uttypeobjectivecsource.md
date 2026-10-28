@@ -21,7 +21,7 @@ A type that represents an Objective-C source code file.
 extern UTType * const UTTypeObjectiveCSource;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.objective-c-source`.
 

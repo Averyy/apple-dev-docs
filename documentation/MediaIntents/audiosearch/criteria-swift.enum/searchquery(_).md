@@ -25,7 +25,7 @@ case searchQuery(String)
 
 - [Responding to audio search and playback requests](../../responding-to-audio-search-and-playback-requests.md)
 
-#### Discussion
+## Discussion
 
 A string representation of a person’s search request. Use it in your app’s search infrastructure to find matching content.
 

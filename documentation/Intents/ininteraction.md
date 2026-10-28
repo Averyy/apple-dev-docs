@@ -34,7 +34,7 @@ class INInteraction
 - [Deleting Donated Shortcuts](../SiriKit/deleting-donated-shortcuts.md)
 - [Improving interactions between Siri and your messaging app](../SiriKit/improving-interactions-between-siri-and-your-messaging-app.md)
 
-#### Overview
+## Overview
 
 An [`INInteraction`](./ininteraction.md) object encapsulates information about a SiriKit request and your app’s response. SiriKit creates interaction objects automatically when it needs your app to respond to a specific intent, either by handling the intent or providing an error explaining why your app couldn’t handle the intent. SiriKit places the interaction in an [`NSUserActivity`](../Foundation/nsuseractivity.md) object that the system passes to your app at launch time. You can also create instances of this class in your app and donate relevant interactions to the system.
 

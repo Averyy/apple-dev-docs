@@ -20,7 +20,7 @@ All time samples authored for this operation.
 var timeSamples: [USDStage.TimeCode] { get }
 ```
 
-#### Discussion
+## Discussion
 
 Returns an empty array if no time samples are authored.
 

@@ -19,7 +19,7 @@ A Boolean value that determines whether the style automatically updates when the
 var automaticallyUpdateForSelection: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`true`](../../../Swift/true.md) for the [`plain()`](./plain%28%29.md), [`gray()`](./gray%28%29.md), and [`tinted()`](./tinted%28%29.md) configurations. Set this value to [`false`](../../../Swift/false.md) to customize the selection behavior.
 

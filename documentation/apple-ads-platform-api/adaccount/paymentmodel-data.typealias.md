@@ -20,13 +20,13 @@ string AdAccount.PaymentModel
 - `PAYG`: Pay as you go. The default billing model when no payment model is configured, charged per campaign spend. Budget orders aren’t available with this model.
 - `LOC`: Line of credit. A monthly invoicing model required to use budget orders. Invoicing details are available in [`InvoiceDetail`](../invoicedetail.md).
 
-#### Discussion
+## Discussion
 
 Choosing `LOC` here is a prerequisite for using budget orders on this ad account.
 
 See also [Budget Orders Endpoints](../budget-orders-endpoints.md).
 
-##### Example
+### Example
 
 ```json
 {

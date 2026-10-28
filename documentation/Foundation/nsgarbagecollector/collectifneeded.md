@@ -15,7 +15,7 @@ Tells the receiver to collect if memory consumption thresholds have been exceede
 - (void) collectIfNeeded;
 ```
 
-#### Discussion
+## Discussion
 
 You use this method to indicate to the collector that there is an opportunity to perform a collection. Collection is subject to interruption on user input.
 

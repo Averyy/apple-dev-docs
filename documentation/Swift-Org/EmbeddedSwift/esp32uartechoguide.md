@@ -11,7 +11,7 @@ framework: "Swift-Org/EmbeddedSwift"
 
 Run a Swift UART echo program on a RISC-V ESP32 device using the ESP-IDF SDK.
 
-#### Overview
+## Overview
 
 This example demonstrates how to use the ESP-IDF UART driver from Swift to build a simple echo application. It wraps the ESP-IDF UART APIs in a Swift-friendly `Uart` struct and redirects Swift’s standard I/O (`print()` and `readLine()`) to a custom UART port, so ordinary Swift console code communicates over a serial connection. The target is the ESP32-C6, but any RISC-V based Espressif chip works.
 
@@ -33,7 +33,7 @@ func main() {
 }
 ```
 
-#### Install ESP-IDF
+## Install ESP-IDF
 
 Set up the [ESP-IDF](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/) development environment by following the [ESP-IDF “Get Started” guide](https://docs.espressif.com/projects/esp-idf/en/v5.4/esp32c6/get-started/index.html).
 
@@ -41,11 +41,11 @@ Set up the [ESP-IDF](https://docs.espressif.com/projects/esp-idf/en/stable/esp32
 
 Before adding Swift, confirm that your setup can build the standard C/C++ sample projects. A good test is building and running the `get-started/hello_world` example from ESP-IDF.
 
-#### Install Swift
+## Install Swift
 
 Follow the instructions in [Installing Embedded Swift](./installembeddedswift.md) to install the latest Swift development snapshot with Embedded Swift support. Confirm the installation by running `swift --version` — it should report a “6.2-dev” or newer development snapshot.
 
-#### Build the project
+## Build the project
 
 Source the ESP-IDF environment script to make `idf.py` available in your shell:
 
@@ -66,7 +66,7 @@ Build the project:
 $ idf.py build
 ```
 
-#### Run on a device
+## Run on a device
 
 Connect your ESP32 board to your Mac using USB. Then connect a USB-UART converter to the configured UART pins (example for ESP32-C6):
 
@@ -88,7 +88,7 @@ $ picocom -b 115200 /dev/ttyUSB0
 
 Type text and press Enter. The board echoes the text back to you.
 
-#### Modify the configuration
+## Modify the configuration
 
 The default UART configuration in `Main.swift` uses UART1, GPIO20 for TX, GPIO19 for RX, and a baud rate of 115200. To change these settings, modify the `Uart` initialization in `Main.swift`:
 

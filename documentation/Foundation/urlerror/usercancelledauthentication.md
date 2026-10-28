@@ -21,7 +21,7 @@ An asynchronous request for authentication has been canceled by the user.
 static var userCancelledAuthentication: URLError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error typically occurs when a user clicks a “Cancel” button in a username/password dialog, rather than attempting to authenticate.
 

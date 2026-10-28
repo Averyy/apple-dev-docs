@@ -31,7 +31,7 @@ var disclaimerMessage: String? { get set }
 @property (atomic, copy, readwrite, nullable) NSString * disclaimerMessage;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify disclaimers about the ride you are offering. For example, you might use this property to present terms and conditions of the ride or to emphasize specific conditions such as when the user might share the ride with other users.
 

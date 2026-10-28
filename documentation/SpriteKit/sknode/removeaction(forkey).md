@@ -29,7 +29,7 @@ func removeAction(forKey key: String)
 
 - [Controlling Actions Precisely by Using Names](../controlling-actions-precisely-by-using-names.md)
 
-#### Discussion
+## Discussion
 
 If an action is found that matches the key, it is removed from the node.
 

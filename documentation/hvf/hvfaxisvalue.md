@@ -21,7 +21,7 @@ A value that can be set on an axis.
 typedef double HVFAxisValue;
 ```
 
-#### Discussion
+## Discussion
 
 The value is in design space, in the range [-1.0, 1.0].
 

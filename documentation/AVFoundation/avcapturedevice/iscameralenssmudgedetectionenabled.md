@@ -23,7 +23,7 @@ var isCameraLensSmudgeDetectionEnabled: Bool { get }
 @property (nonatomic, readonly, getter=isCameraLensSmudgeDetectionEnabled) BOOL cameraLensSmudgeDetectionEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 You enable lens smudge detection by calling [`setCameraLensSmudgeDetectionEnabled(_:detectionInterval:)`](./setcameralenssmudgedetectionenabled%28_,detectioninterval%29.md). By default, this property is returns `false`.
 

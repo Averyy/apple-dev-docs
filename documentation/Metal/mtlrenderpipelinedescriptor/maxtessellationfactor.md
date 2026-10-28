@@ -24,7 +24,7 @@ var maxTessellationFactor: Int { get set }
 @property (nonatomic, readwrite) NSUInteger maxTessellationFactor;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `16` and the maximum value is `64`. Any value in between needs to be set according to the partitioning mode specified by the [`tessellationPartitionMode`](./tessellationpartitionmode.md) property:
 

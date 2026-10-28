@@ -17,7 +17,7 @@ Returns a Boolean value indicating whether a change to the defaults database has
 - (BOOL) userDefaultsChanged;
 ```
 
-#### Return Value
+## Return Value
 
 Currently, this method always returns [`false`](../../Swift/false.md).
 

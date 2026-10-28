@@ -21,7 +21,7 @@ var rating: NSNumber? { get }
 @property (nonatomic, readonly, nullable) NSNumber * rating;
 ```
 
-#### Discussion
+## Discussion
 
 This property is an [`NSNumber`](../../Foundation/nsnumber.md) that contains a value in the range of 0 to [`maximumRating`](./maximumrating.md). The value is an increment of 0.5.
 

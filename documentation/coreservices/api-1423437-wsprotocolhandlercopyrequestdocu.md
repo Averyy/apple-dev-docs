@@ -15,11 +15,11 @@ Creates an XML request for a given `WSProtocolHandler` and parameter list.
 CFDataRef WSProtocolHandlerCopyRequestDocument(WSProtocolHandlerRef ref, CFStringRef methodName, CFDictionaryRef methodParams, CFArrayRef methodParamOrder, CFDictionaryRef methodExtras);
 ```
 
-#### Return Value
+## Return Value
 
 A `CFDataRef`.
 
-#### Discussion
+## Discussion
 
 This function creates an XML request for a given `WSProtocolHandler` and parameter list. This is the request sent to a server.
 

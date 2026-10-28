@@ -21,7 +21,7 @@ var openGLPixelFormat: NSOpenGLPixelFormat? { get set }
 @property (strong, nullable) NSOpenGLPixelFormat * openGLPixelFormat;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses shouldn’t invoke `setOpenGLPixelFormat:`, but can override it if desired to intercept assignment of the layer’s pixel format.
 

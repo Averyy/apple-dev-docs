@@ -3,7 +3,7 @@
 **Framework**: SceneKit  
 **Role**: API Collection
 
-#### Discussion
+## Discussion
 
 Constants for the [`code`](../Foundation/nserror/code.md) property of [`NSError`](../Foundation/nserror.md) objects produced by the SceneKit framework.
 

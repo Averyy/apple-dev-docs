@@ -19,7 +19,7 @@ var state: NSVisualEffectView.State { get set }
 @property NSVisualEffectState state;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`NSVisualEffectView.State.followsWindowActiveState`](./state-swift.enum/followswindowactivestate.md).
 

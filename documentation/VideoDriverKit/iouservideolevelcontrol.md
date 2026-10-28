@@ -15,7 +15,7 @@ A control object that supports a float value level.
 class IOUserVideoLevelControl;
 ```
 
-#### Overview
+## Overview
 
 Getting/Setting control values can be done with scalar or decibel level values.
 

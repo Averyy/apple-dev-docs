@@ -21,7 +21,7 @@ An object that music requests use to access Apple Music API.
 typealias MusicTokenProvider = MusicUserTokenProvider & MusicDeveloperTokenProvider
 ```
 
-#### Discussion
+## Discussion
 
 A token provider for MusicKit needs to be a subclass of [`MusicUserTokenProvider`](./musicusertokenprovider.md) which conforms to the [`MusicDeveloperTokenProvider`](./musicdevelopertokenprovider.md) protocol.
 

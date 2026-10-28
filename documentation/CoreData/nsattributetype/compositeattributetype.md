@@ -25,7 +25,7 @@ case compositeAttributeType
 NSCompositeAttributeType
 ```
 
-#### Discussion
+## Discussion
 
 Composite attributes support all attribute types except the following:
 

@@ -22,7 +22,7 @@ Generates the probabilities of possible languages for the processed text.
 func languageHypotheses(withMaximum maxHypotheses: Int) -> [NLLanguage : Double]
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary mapping languages with their probabilities, up to `maxHypotheses` languages.
 

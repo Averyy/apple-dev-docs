@@ -26,7 +26,7 @@ func requestToBecomeApplicationPrimary() async throws
 
 - [Publishing media sessions](../publishing-media-sessions.md)
 
-#### Discussion
+## Discussion
 
 Use this method to signal to the system that this session supplies data and handles commands.
 

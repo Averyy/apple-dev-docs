@@ -14,7 +14,7 @@
 kOpaqueAreaID = 11
 ```
 
-#### Discussion
+## Discussion
 
 An area.
 

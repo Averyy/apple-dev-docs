@@ -25,11 +25,11 @@ func credentials(for space: URLProtectionSpace) -> [String : URLCredential]?
 - (NSDictionary<NSString *,NSURLCredential *> *) credentialsForProtectionSpace:(NSURLProtectionSpace *) space;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary containing the credentials for the specified protection space. The dictionary’s keys are user name strings, and each value is the corresponding [`URLCredential`](../urlcredential.md).
 
-#### Discussion
+## Discussion
 
 If you override this method, also override [`getCredentials(for:task:completionHandler:)`](./getcredentials%28for,task,completionhandler%29.md).
 

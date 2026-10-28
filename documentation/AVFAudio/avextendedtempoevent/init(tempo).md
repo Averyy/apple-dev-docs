@@ -24,7 +24,7 @@ init(tempo: Double)
 - (instancetype) initWithTempo:(double) tempo;
 ```
 
-#### Discussion
+## Discussion
 
 The new tempo begins at the timestamp for this event.
 

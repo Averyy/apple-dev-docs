@@ -22,7 +22,7 @@ class MFMessageComposeViewController
 @interface MFMessageComposeViewController : UINavigationController
 ```
 
-#### Overview
+## Overview
 
 Use an [`MFMessageComposeViewController`](./mfmessagecomposeviewcontroller.md) object to display the standard message composition interface inside your app. Before presenting the interface, populate the fields with the set of initial recipients and the message you want to send. After presenting the interface, a person can edit your initial values before sending the message.
 
@@ -34,7 +34,7 @@ The composition interface doesn’t guarantee the delivery of your message; it o
 
 An alternate way to compose SMS messages is to create and open a URL that uses the `sms` scheme. URLs of that type go directly to the Messages app, which uses your URL to configure the message. For information about the structure of `sms` URLs, see [Apple URL Scheme Reference](https://developer.apple.com/library/archive/featuredarticles/iPhoneURLScheme_Reference/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007899).
 
-##### Checking the availability of the composition interface
+### Checking the availability of the composition interface
 
 Before presenting the message compose view controller, always call the [`canSendText()`](./mfmessagecomposeviewcontroller/cansendtext%28%29.md) method to see if the person configured the current device to send messages. If the user’s device isn’t set up to send or receive messages, you can notify the user or disable the messaging features in your application. You shouldn’t attempt to use this interface if the [`canSendText()`](./mfmessagecomposeviewcontroller/cansendtext%28%29.md) method returns [`false`](../Swift/false.md). If messaging is available, you can also use the [`canSendAttachments()`](./mfmessagecomposeviewcontroller/cansendattachments%28%29.md) and [`canSendSubject()`](./mfmessagecomposeviewcontroller/cansendsubject%28%29.md) methods to determine if those specific messaging features are available.
 
@@ -55,7 +55,7 @@ if (![MFMessageComposeViewController canSendText]) {
 }
 ```
 
-##### Configuring and displaying the composition interface
+### Configuring and displaying the composition interface
 
 After verifying that message services are available, you can create and configure the message composition view controller and then present it like any other view controller. Use the methods of this class to specify the message’s recipients and the contents of the message. If attachments or a subject line are supported, you can set values for them as well. The sample code below shows how to configure the composition interface and present it modally. Always assign a delegate to the [`messageComposeDelegate`](./mfmessagecomposeviewcontroller/messagecomposedelegate.md) property, because the delegate is responsible for dismissing the composition interface later. The delegate object must conform to the [`MFMessageComposeViewControllerDelegate`](./mfmessagecomposeviewcontrollerdelegate.md) protocol.
 
@@ -115,7 +115,7 @@ func messageComposeViewController(controller: MFMessageComposeViewController,
 
 For more information on how to present and dismiss view controllers, see [View Controller Programming Guide for iOS](https://developer.apple.com/library/archive/featuredarticles/ViewControllerPGforiPhoneOS/index.html#//apple_ref/doc/uid/TP40007457).
 
-##### Detecting changes to the availability of messaging
+### Detecting changes to the availability of messaging
 
 Add an observer to the [`MFMessageComposeViewControllerTextMessageAvailabilityDidChangeNotification`](./mfmessagecomposeviewcontrollertextmessageavailabilitydidchangenotification.md) notification to get notified of changes to the messaging capabilities of the current device. The system delivers that notification to your observer when the status of messaging changes.
 

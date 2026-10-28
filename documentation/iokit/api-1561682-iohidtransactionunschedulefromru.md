@@ -16,7 +16,7 @@ Unschedules transaction with run loop.
 void IOHIDTransactionUnscheduleFromRunLoop(IOHIDTransactionRef transaction, CFRunLoopRef runLoop, CFStringRef runLoopMode);
 ```
 
-#### Discussion
+## Discussion
 
 Formally disassociates transaction with client's run loop.
 

@@ -21,7 +21,7 @@ A type that represents a UNIX executable.
 static var unixExecutable: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.unix-executable`.
 

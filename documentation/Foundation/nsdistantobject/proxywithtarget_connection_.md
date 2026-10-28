@@ -16,11 +16,11 @@ Returns a remote proxy for a given object and connection, creating the proxy if 
 + (id) proxyWithTarget:(id) target connection:(NSConnection *) connection;
 ```
 
-#### Return Value
+## Return Value
 
 A remote proxy for `target` and `connection`, creating the proxy if necessary
 
-#### Discussion
+## Discussion
 
 A remote proxy cannot be used until its connection’s peer has a local proxy representing `target` in the other application.
 

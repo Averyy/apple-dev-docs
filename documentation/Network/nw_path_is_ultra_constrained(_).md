@@ -23,11 +23,11 @@ func nw_path_is_ultra_constrained(_ path: nw_path_t) -> Bool
 bool nw_path_is_ultra_constrained(nw_path_t path);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the path uses any network interface that is considered ultra-constrained, false otherwise.
 
-#### Discussion
+## Discussion
 
 Checks if the path uses any network interfaces that are considered ultra-constrained.
 

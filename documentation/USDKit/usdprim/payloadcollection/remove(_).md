@@ -20,7 +20,7 @@ Removes a specific payload arc from the prim.
 func remove(_ payload: USDPrim.Payload) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the payload cannot be removed.
 

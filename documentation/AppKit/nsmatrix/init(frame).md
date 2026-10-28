@@ -19,11 +19,11 @@ convenience init(frame frameRect: NSRect)
 - (instancetype) initWithFrame:(NSRect) frameRect;
 ```
 
-#### Return Value
+## Return Value
 
 The [`NSMatrix`](../nsmatrix.md), initialized with default parameters. The new [`NSMatrix`](../nsmatrix.md) contains no rows or columns. The default mode is `NSRadioModeMatrix`. The default cell class is [`NSActionCell`](../nsactioncell.md).
 
-#### Discussion
+## Discussion
 
 See [`NSMatrix`](../nsmatrix.md).
 

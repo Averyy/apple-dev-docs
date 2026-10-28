@@ -15,8 +15,8 @@ Compiles a ShaderGraph into a geometry modifier and surface shader.
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) final func makeShaderGraphFunctions(shaderGraph: ShaderGraph, constantValues: MTLFunctionConstantValues) async throws -> sending LowLevelMaterialResource.ShaderGraphOutput
+nonisolated(nonsending)
+final func makeShaderGraphFunctions(shaderGraph: ShaderGraph, constantValues: MTLFunctionConstantValues) async throws -> sending LowLevelMaterialResource.ShaderGraphOutput
 ```
 
 **Other overloads**:
@@ -25,7 +25,7 @@ nonisolated
 final func makeShaderGraphFunctions(shaderGraph: ShaderGraph, constantValues: MTLFunctionConstantValues) throws -> sending LowLevelMaterialResource.ShaderGraphOutput
 ```
 
-#### Return Value
+## Return Value
 
 The compiled functions for use in a [`LowLevelMaterialResource`](../lowlevelmaterialresource.md).
 

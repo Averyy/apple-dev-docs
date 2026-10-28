@@ -30,7 +30,7 @@ class CSSearchableItem
 - [Making your indexed content available to Foundation Models](./making-your-indexed-content-available-to-foundation-models.md)
 - [Searching for information in your app](./searching-for-information-in-your-app.md)
 
-#### Overview
+## Overview
 
 A `CSSearchableItem` uniquely identifies a part of your app’s content, and provides the metadata that Spotlight indexes and uses to find that content later. As part of indexing your app’s content, you create searchable items and fill them with details about your app’s content and where to find it. After indexing the content, you can then execute queries using the Core Spotlight APIs to find the items you indexed. People can also use the system’s Spotlight search interface to find your app’s content.
 

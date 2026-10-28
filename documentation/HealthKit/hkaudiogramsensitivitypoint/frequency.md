@@ -25,7 +25,7 @@ var frequency: HKQuantity { get }
 @property (copy, readonly) HKQuantity * frequency;
 ```
 
-#### Discussion
+## Discussion
 
 This object uses [`hertz()`](../hkunit/hertz%28%29.md) units.
 

@@ -5,7 +5,7 @@
 
 Assign resource indices within an argument buffer.
 
-#### Overview
+## Overview
 
 You can index an argument buffer similarly to buffers, textures, and samplers. However, you index individual argument buffer resources with a generic `[[id(n)]]` attribute instead of the specific type `[[buffer(n)]]`, `[[texture(n)]]`, and `[[sampler(n)]]` attributes.
 
@@ -24,7 +24,7 @@ struct My_Aggregate_AB {
 };
 ```
 
-##### Automatically assigned index IDs
+### Automatically assigned index IDs
 
 If the `[[id(n)]]` attribute is omitted for any argument buffer resource, an index ID is automatically assigned according to preset rules:
 

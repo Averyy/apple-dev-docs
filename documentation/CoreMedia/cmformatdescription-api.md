@@ -5,7 +5,7 @@
 
 A media format descriptor that describes the samples in a sample buffer.
 
-#### Overview
+## Overview
 
 `CMFormatDescriptions` are immutable Core Foundation objects that describe media data of various types, including audio, video, and muxed media data. There are two types of API: media-type-agnostic APIs (supported by all CMFormatDescriptions) and media-type-specific APIs. The media-type-agnostic APIs are prefixed with `CMFormatDescription`, and the media-type-specific APIs are prefixed with `CMAudioFormatDescription`, `CMVideoFormatDescription`, and so on.
 

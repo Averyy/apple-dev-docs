@@ -19,11 +19,11 @@ func convertFontTraits(_ traits: NSFontTraitMask) -> NSFontTraitMask
 - (NSFontTraitMask) convertFontTraits:(NSFontTraitMask) traits;
 ```
 
-#### Return Value
+## Return Value
 
 The new traits mask value to be used by [`convert(_:)`](./convert%28_%29.md).
 
-#### Discussion
+## Discussion
 
 This method is intended to be invoked to query the font traits while the action message (usually [`changeFont:`](../../ObjectiveC/nsobject-swift.class/changefont_.md)) is being invoked when the current font action is either [`NSFontAction.addTraitFontAction`](../nsfontaction/addtraitfontaction.md) or [`NSFontAction.removeTraitFontAction`](../nsfontaction/removetraitfontaction.md).
 

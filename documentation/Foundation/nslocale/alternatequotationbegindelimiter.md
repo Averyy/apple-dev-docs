@@ -25,7 +25,7 @@ var alternateQuotationBeginDelimiter: String { get }
 @property (copy, readonly) NSString * alternateQuotationBeginDelimiter;
 ```
 
-#### Discussion
+## Discussion
 
 Examples of alternate begin quotation symbols include `"‘"`, `"‹"`, and `"『"`.
 

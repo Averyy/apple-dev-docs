@@ -24,7 +24,7 @@ var depthFailureOperation: MTLStencilOperation { get set }
 @property (nonatomic) MTLStencilOperation depthFailureOperation;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`MTLStencilOperation.keep`](../mtlstenciloperation/keep.md), which does not change the current stencil value. For more information on possible values, see [`MTLStencilOperation`](../mtlstenciloperation.md).
 

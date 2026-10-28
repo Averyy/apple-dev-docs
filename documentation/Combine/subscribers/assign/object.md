@@ -21,7 +21,7 @@ The object that contains the property to assign.
 final var object: Root? { get }
 ```
 
-#### Discussion
+## Discussion
 
 The subscriber holds a strong reference to this object until the upstream publisher calls [`receive(completion:)`](../../subscriber/receive%28completion%29.md), at which point the subscriber sets this property to `nil`.
 

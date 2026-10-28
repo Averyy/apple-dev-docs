@@ -15,7 +15,7 @@ Get the transform from a room anchor to the origin coordinate system.
 extern simd_float4x4 ar_room_anchor_get_origin_from_anchor_transform_with_correction(ar_room_anchor_t room_anchor, ar_transform_correction_t transform_correction);
 ```
 
-#### Return Value
+## Return Value
 
 The origin from room anchor transform.
 

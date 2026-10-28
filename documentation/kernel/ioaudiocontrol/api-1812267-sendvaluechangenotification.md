@@ -11,7 +11,7 @@ Called when the value has changed for the control.
 virtual void sendValueChangeNotification();
 ```
 
-#### Overview
+## Overview
 
 This function sends out the value change notification to the user clients.
 

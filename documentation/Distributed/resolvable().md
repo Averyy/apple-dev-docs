@@ -18,11 +18,11 @@ Enables the attached to protocol to be resolved as remote distributed actor refe
 ## Declaration
 
 ```swift
-@attached
-(peer, names: prefixed(`$`)) @attached(extension, names: arbitrary) macro Resolvable()
+@attached(peer, names: prefixed(`$`))
+@attached(extension, names: arbitrary) macro Resolvable()
 ```
 
-##### Requirements
+### Requirements
 
 The attached to type must be a protocol that refines the `DistributedActor` protocol. It must either specify a concrete `ActorSystem` or constrain it in such way that the system’s `SerializationRequirement` is statically known.
 

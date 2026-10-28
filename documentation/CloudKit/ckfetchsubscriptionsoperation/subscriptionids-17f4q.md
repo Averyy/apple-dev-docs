@@ -22,7 +22,7 @@ The IDs of the subscriptions to fetch.
 var subscriptionIDs: [CKSubscription.ID]? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to view or change the IDs of the subscriptions to fetch. Each element of the array is a string that represents the ID of a subscription. If you intend to modify this property’s value, do so before you execute the operation or submit it to a queue.
 

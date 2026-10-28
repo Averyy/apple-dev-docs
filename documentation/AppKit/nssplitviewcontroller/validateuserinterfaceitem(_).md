@@ -20,7 +20,7 @@ func validateUserInterfaceItem(_ item: any NSValidatedUserInterfaceItem) -> Bool
 - (BOOL) validateUserInterfaceItem:(id<NSValidatedUserInterfaceItem>) item;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the specified item responds to [`toggleSidebar(_:)`](./togglesidebar%28_%29.md), [`false`](../../Swift/false.md) if it doesn’t.
 

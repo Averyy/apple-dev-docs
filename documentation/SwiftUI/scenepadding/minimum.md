@@ -21,7 +21,7 @@ The minimum scene padding value.
 static let minimum: ScenePadding
 ```
 
-#### Discussion
+## Discussion
 
 In macOS, this value represents the recommended spacing for the root view of a window. In watchOS, this represents the horizontal spacing that you use to align your view with the title of a navigation view.
 

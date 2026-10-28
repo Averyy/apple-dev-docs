@@ -24,7 +24,7 @@ var queryReserve: Int { get set }
 @property NSUInteger queryReserve;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to optimize for search speed at the cost of memory usage during a search. With the default value of `1`, when you use the [`elements(inBoundingRectMin:rectMax:)`](./elements%28inboundingrectmin,rectmax%29.md) method, the tree examines potential search results one at a time. If you specify a larger number, the tree allocates additional memory to process several elements together when searching.
 

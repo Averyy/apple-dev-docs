@@ -18,11 +18,11 @@ A list of translation languages the framework supports.
 var supportedLanguages: [Locale.Language] { get async }
 ```
 
-#### Return Value
+## Return Value
 
 An array of languages the framework supports.
 
-#### Discussion
+## Discussion
 
 A language must download before it can be used in a translation.
 

@@ -11,11 +11,11 @@ Returns the number of objects the ordered set can store without reallocating.
 virtual unsigned int getCapacity() const;
 ```
 
-#### Return Value
+## Return Value
 
 The number objects the ordered set can store without reallocating.
 
-#### Overview
+## Overview
 
 OSOrderedSet objects grow when full to accommodate additional objects. See getCapacityIncrement and ensureCapacity.
 

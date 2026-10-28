@@ -21,7 +21,7 @@ The UUID for computing the device verification value.
 let deviceVerificationNonce: UUID
 ```
 
-#### Discussion
+## Discussion
 
 Use the lowercased nonce when computing the [`deviceVerification`](./deviceverification.md) value.
 

@@ -22,7 +22,7 @@ var alertTitle: String? { get set }
 @property (nonatomic, copy, nullable) NSString * alertTitle;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to provide a short description of the reason for the alert. You may specify a string with the text you want to display or you may specify a string to use as a lookup key in your app’s `Localizable.strings` file. The default value of this property is `nil`.
 

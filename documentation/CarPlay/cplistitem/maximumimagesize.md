@@ -21,7 +21,7 @@ class var maximumImageSize: CGSize { get }
 @property (class, nonatomic, readonly) CGSize maximumImageSize;
 ```
 
-#### Discussion
+## Discussion
 
 At runtime, use this value to determine the maximum size for a list item’s image and accessory image.
 

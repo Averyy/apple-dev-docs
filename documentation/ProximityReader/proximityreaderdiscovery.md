@@ -17,7 +17,7 @@ An object that presents a UI with information about how to use Tap to Pay on iPh
 final class ProximityReaderDiscovery
 ```
 
-#### Overview
+## Overview
 
 Use a [`ProximityReaderDiscovery`](./proximityreaderdiscovery.md) object to educate people on how to read contactless credentials with their iPhone. When building a reader interface in your app, include controls to display help information. When a person taps those controls, use this type to present a view controller with information about how to use a particular feature. The system manages the presented view controller, displaying materials to teach people how the system works.
 

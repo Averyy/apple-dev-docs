@@ -20,11 +20,11 @@ func selectPrevious(_ sender: Any?)
 - (void) selectPrevious:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 The `sender` is typically the object that invoked this method.
 
-##### Special Considerations
+### Special Considerations
 
 Beginning with OS X v10.4 the result of this method is deferred until the next iteration of the runloop so that the error presentation mechanism can provide feedback as a sheet.
 

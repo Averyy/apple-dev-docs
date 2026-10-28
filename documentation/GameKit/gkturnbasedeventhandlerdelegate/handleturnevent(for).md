@@ -25,7 +25,7 @@ optional func handleTurnEvent(for match: GKTurnBasedMatch)
 - (void) handleTurnEventForMatch:(GKTurnBasedMatch *) match;
 ```
 
-#### Discussion
+## Discussion
 
 When your delegate receives this message, the player has accepted a push notification for a match already in progress. Your game should end whatever task it was performing and switch to the match information provided by the match object.
 

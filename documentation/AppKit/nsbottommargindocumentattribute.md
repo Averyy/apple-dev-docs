@@ -15,7 +15,7 @@ The bottom margin of the document.
 extern NSAttributedStringDocumentAttributeKey NSBottomMarginDocumentAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSNumber`](../Foundation/nsnumber.md) object containing a float, in points.
 

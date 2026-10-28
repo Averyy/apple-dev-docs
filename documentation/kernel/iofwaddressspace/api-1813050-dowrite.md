@@ -17,7 +17,7 @@ virtual UInt32 doWrite(
  IOFWRequestRefConrefcon) = 0;
 ```
 
-#### Return Value
+## Return Value
 
 UIn32 returns kFWResponseComplete on success
 

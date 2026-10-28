@@ -21,7 +21,7 @@ Returns a scaled pose with a rotation that’s rotated by the specified quaterni
 func rotated(by quaternion: simd_quatf) -> ScaledPose3DFloat
 ```
 
-#### Discussion
+## Discussion
 
 - Returns A scaled pose with a rotation that’s rotated by the specified quaternion.
 

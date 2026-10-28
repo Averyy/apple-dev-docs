@@ -25,7 +25,7 @@ var startCursor: AVSampleCursor { get }
 @property (nonatomic, retain, readonly) AVSampleCursor * startCursor;
 ```
 
-#### Discussion
+## Discussion
 
 The [`CMSampleBuffer`](../../CoreMedia/cmsamplebuffer.md) created with the request must include the sample at this position.
 

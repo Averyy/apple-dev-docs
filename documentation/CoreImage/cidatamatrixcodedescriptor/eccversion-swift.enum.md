@@ -24,7 +24,7 @@ enum ECCVersion
 enum CIDataMatrixCodeECCVersion : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 ECC 000 - 140 symbols offer five levels of error correction using convolutional code error correction. Each successive level or error correction offers more protection for the message data but increases the size of the symbol required to carry a given message. See the ISO/IEC 16022:2006 spec for other modes.
 

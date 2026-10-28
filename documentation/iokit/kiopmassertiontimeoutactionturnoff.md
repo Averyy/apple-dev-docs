@@ -16,7 +16,7 @@ A potential value for [`kIOPMAssertionTimeoutActionKey`](./kiopmassertiontimeout
 #define kIOPMAssertionTimeoutActionTurnOff
 ```
 
-#### Discussion
+## Discussion
 
 When a timeout expires with this action, Power Management will log the timeout event, and will set the assertion's level to [`kIOPMAssertionLevelOff`](./api-1557096-assertion/kiopmassertionleveloff.md).
 

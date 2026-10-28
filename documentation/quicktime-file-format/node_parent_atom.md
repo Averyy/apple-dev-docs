@@ -5,7 +5,7 @@
 
 An atom that is the parent of one or more node ID atoms.
 
-#### Overview
+## Overview
 
 > ❗ **Important**: VR Media is deprecated in the QuickTime file format. The information that follows documents existing content containing VR Media and should not be used for new development.
 

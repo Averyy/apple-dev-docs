@@ -23,7 +23,7 @@ struct AVCaptureSceneMonitoringStatus
 typedef NSString * AVCaptureSceneMonitoringStatus;
 ```
 
-#### Overview
+## Overview
 
 Some features have certain requirements on the scene (lighting condition for Cinematic Video, for example) to produce optimal results; these [`AVCaptureSceneMonitoringStatus`](./avcapturescenemonitoringstatus.md) string constants are used to represent such scene statuses for a given feature.
 

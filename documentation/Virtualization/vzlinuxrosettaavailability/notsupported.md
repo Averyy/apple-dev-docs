@@ -19,7 +19,7 @@ case notSupported
 VZLinuxRosettaAvailabilityNotSupported
 ```
 
-#### Discussion
+## Discussion
 
 This error can occur if the host’s version of macOS doesn’t support Rosetta, such as macOS 12 or earlier, or if the underlying Mac computer doesn’t support Rosetta, such as an Intel-based Mac computer.
 

@@ -24,11 +24,11 @@ func canAddInput(_ input: AVCaptureInput) -> Bool
 - (BOOL) canAddInput:(AVCaptureInput *) input;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if you can add the input to the session; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method returns [`false`](../../Swift/false.md) if you can’t add an input to a capture session. This occurs, for example, if you attempt to add the input to a session twice, or if the input already belongs to another capture session.
 

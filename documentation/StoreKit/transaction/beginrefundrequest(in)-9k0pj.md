@@ -22,11 +22,11 @@ func beginRefundRequest(in scene: UIWindowScene) async throws -> Transaction.Ref
 
 - [Testing refund requests](../testing-refund-requests.md)
 
-#### Return Value
+## Return Value
 
 [`Transaction.RefundRequestStatus`](./refundrequeststatus.md)
 
-#### Discussion
+## Discussion
 
 Call this function from account settings or a help menu to enable customers to request a refund for an Apple In-App Purchase within your app. When you call this function, the system displays a refund sheet with the customer’s purchase details and a list of reason codes for the customer to choose from. For design guidance, see [Human Interface Guidelines > Apple In-App Purchase > Providing help with Apple In-App Purchases](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase/overview/introduction/#providing-help-with-in-app-purchases).
 
@@ -38,7 +38,7 @@ For information about setting up your server to receive notifications, see [Enab
 
 > **Note**:  If your app uses SwiftUI, use [`refundRequestSheet(for:isPresented:onDismiss:)`](../../SwiftUI/view/refundrequestsheet%28for,ispresented,ondismiss%29.md) instead. For example usage, see [Food Truck: Building a SwiftUI multiplatform app](../../SwiftUI/food-truck-building-a-swiftui-multiplatform-app.md).
 
-##### Test refund requests
+### Test refund requests
 
 The sandbox environment and StoreKit Testing in Xcode both support testing refund requests. For more information, see [Testing refund requests](../testing-refund-requests.md).
 

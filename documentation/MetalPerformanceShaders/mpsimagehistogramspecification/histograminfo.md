@@ -24,7 +24,7 @@ var histogramInfo: MPSImageHistogramInfo { get }
 @property (nonatomic, readonly) MPSImageHistogramInfo histogramInfo;
 ```
 
-#### Discussion
+## Discussion
 
 Returns a structure describing the format of the histogram.
 

@@ -24,11 +24,11 @@ static func appearance(whenContainedInInstancesOf containerTypes: [any UIAppeara
 + (instancetype) appearanceWhenContainedInInstancesOfClasses:(NSArray<Class<UIAppearanceContainer>> *) containerTypes;
 ```
 
-#### Return Value
+## Return Value
 
 The appearance proxy to use for the object.
 
-#### Discussion
+## Discussion
 
 Set the `containerTypes` array to an ascending hierarchical list of containing types. For example, if you want a navigation bar to take on a specific appearance when contained in a navigation controller inside a tab bar controller, set `containerTypes` to `[UINavigationController.self, UITabBarController.self]` (Swift) or `@[[UINavigationController class], [UITabBarController class]]` (Objective-C).
 

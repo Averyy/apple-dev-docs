@@ -20,7 +20,7 @@ A time value that indicates the asset’s duration.
 var duration: CMTime { get }
 ```
 
-#### Discussion
+## Discussion
 
 If you initialized the composition’s assets by passing the [`AVURLAssetPreferPreciseDurationAndTimingKey`](../avurlassetpreferprecisedurationandtimingkey.md) initialization option, this property value provides precise duration; otherwise, it provides a best-available estimate. You can determine the value’s accuracy by querying the asset’s [`providesPreciseDurationAndTiming`](../avasset/providesprecisedurationandtiming.md) property.
 

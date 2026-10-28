@@ -15,7 +15,7 @@ Get the transform from the anchor to the origin coordinate system.
 extern simd_float4x4 ar_field_of_view_anchor_get_origin_from_anchor_transform(ar_field_of_view_anchor_t anchor);
 ```
 
-#### Return Value
+## Return Value
 
 The transform from the anchor to the origin coordinate system.
 

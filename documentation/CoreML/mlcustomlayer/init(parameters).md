@@ -30,7 +30,7 @@ init(parameters: [String : Any]) throws
 
 - [Creating and Integrating a Model with Custom Layers](../creating-and-integrating-a-model-with-custom-layers.md)
 
-#### Discussion
+## Discussion
 
 Implement this method to initialize your custom layer. It is called once, at load time. Use the parameters to configure the custom layer as needed.
 

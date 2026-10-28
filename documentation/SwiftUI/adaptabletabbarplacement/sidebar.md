@@ -18,7 +18,7 @@ The sidebar of a tab view.
 static let sidebar: AdaptableTabBarPlacement
 ```
 
-#### Discussion
+## Discussion
 
 A tab view can appear as a sidebar in [`sidebarAdaptable`](../tabviewstyle/sidebaradaptable.md). Sidebar tabs represent all of the tabs in a tab view.
 

@@ -24,7 +24,7 @@ class INCurrencyAmount
 @interface INCurrencyAmount : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`INCurrencyAmount`](./incurrencyamount.md) object encapsulates a monetary value and the currency used to express that value. You use these objects to specify payment amounts when handling intents that involve the transfer of money.
 

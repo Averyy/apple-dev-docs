@@ -17,7 +17,7 @@ nonisolated
 func contentCaptureProtected(_ isActive: Bool = true) -> some CompositorContent
 ```
 
-#### Discussion
+## Discussion
 
 The `contentCaptureProtected` modifier requires the [`App-Protected Content`](../../BundleResources/entitlements/com.apple.developer.protected-content.md) entitlement. For more information on how to apply for this entitlement, see [Building spatial experiences for business apps with enterprise APIs for visionOS](../../visionOS/building-spatial-experiences-for-business-apps-with-enterprise-apis.md).
 

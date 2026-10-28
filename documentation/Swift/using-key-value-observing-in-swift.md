@@ -5,11 +5,11 @@
 
 Notify objects about changes to the properties of other objects.
 
-#### Overview
+## Overview
 
 Key-value observing is a Cocoa programming pattern you use to notify objects about changes to properties of other objects. It’s useful for communicating changes between logically separated parts of your app—such as between models and views. You can only use key-value observing with classes that inherit from [`NSObject`](../ObjectiveC/nsobject-swift.class.md).
 
-##### Annotate a Property for Key-Value Observing
+### Annotate a Property for Key-Value Observing
 
 Mark properties that you want to observe through key-value observing with both the `@objc` attribute and the `dynamic` modifier. The example below defines the `MyObjectToObserve` class with a property—`myDate`—that can be observed:
 
@@ -22,7 +22,7 @@ class MyObjectToObserve: NSObject {
 }
 ```
 
-##### Define an Observer
+### Define an Observer
 
 An instance of an observer class manages information about changes made to one or more properties. When you create an observer, you start observation by calling the `observe(_:options:changeHandler:)` method with a key path that refers to the property you want to observe.
 
@@ -51,7 +51,7 @@ You use the `oldValue` and `newValue` properties of the [`NSKeyValueObservedChan
 
 If you don’t need to know *how* a property has changed, omit the `options` parameter. Omitting the `options` parameter forgoes storing the new and old property values, which causes the `oldValue` and `newValue` properties to be `nil`.
 
-##### Associate the Observer with the Property to Observe
+### Associate the Observer with the Property to Observe
 
 You associate the property you want to observe with its observer by passing the object to the initializer of the observer:
 
@@ -60,7 +60,7 @@ let observed = MyObjectToObserve()
 let observer = MyObserver(object: observed)
 ```
 
-##### Respond to a Property Change
+### Respond to a Property Change
 
 Objects that are set up to use key-value observing—such as `observed` above—notify their observers about property changes. The example below changes the `myDate` property by calling the `updateDate` method. That method call automatically triggers the observer’s change handler:
 

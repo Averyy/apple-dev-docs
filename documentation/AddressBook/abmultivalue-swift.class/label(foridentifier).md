@@ -19,7 +19,7 @@ func label(forIdentifier identifier: String!) -> Any!
 - (id) labelForIdentifier:(NSString *) identifier;
 ```
 
-#### Discussion
+## Discussion
 
 If the identifier is not found, this method returns `nil`.
 

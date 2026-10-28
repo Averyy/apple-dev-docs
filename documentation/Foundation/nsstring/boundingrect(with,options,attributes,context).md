@@ -33,11 +33,11 @@ func boundingRect(with size: CGSize, options: NSString.DrawingOptions = [], attr
 - (CGRect) boundingRectWithSize:(CGSize) size options:(NSStringDrawingOptions) options attributes:(NSDictionary<NSString *,id> *) attributes context:(NSStringDrawingContext *) context;
 ```
 
-#### Return Value
+## Return Value
 
 The bounding rect for the receiver drawn using the given options and display characteristics. The rect origin returned from this method is the first glyph origin.
 
-#### Discussion
+## Discussion
 
 To correctly draw and size multi-line text, pass [`usesLineFragmentOrigin`](../../UIKit/nsstringdrawingoptions/useslinefragmentorigin.md) in the options parameter.
 

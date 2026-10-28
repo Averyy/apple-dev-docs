@@ -19,7 +19,7 @@ static let reversePageOrder: NSPrintInfo.AttributeKey
 extern NSPrintInfoAttributeKey const NSPrintReversePageOrder;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../../Swift/true.md), prints first page last.
 

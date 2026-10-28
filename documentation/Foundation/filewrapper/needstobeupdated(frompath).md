@@ -21,11 +21,11 @@ func needsToBeUpdated(fromPath path: String) -> Bool
 - (BOOL) needsToBeUpdatedFromPath:(NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 [`false`](../../Swift/false.md) when the file wrapper needs to be updated to match `node`, [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 This table describes which attributes of the file wrapper and `node` are compared to determine whether the file wrapper needs to be updated:
 
@@ -35,7 +35,7 @@ This table describes which attributes of the file wrapper and `node` are compare
 | Directory | Member hierarchy (recursive). |
 | Symbolic link | Destination pathname. |
 
-##### Special Considerations
+### Special Considerations
 
 Beginning with OS X v10.6, the preferred method of referring to files is with a `file://` URL. Therefore, this method has been deprecated in favor of [`matchesContents(of:)`](./matchescontents%28of%29.md).
 

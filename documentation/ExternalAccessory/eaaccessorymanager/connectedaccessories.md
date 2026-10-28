@@ -24,7 +24,7 @@ var connectedAccessories: [EAAccessory] { get }
 @property (nonatomic, readonly) NSArray<EAAccessory *> * connectedAccessories;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains an array of [`EAAccessory`](../eaaccessory.md) objects. Each object corresponds to an accessory that is connected and available for your application to use. Because the contents of this property can change dynamically based on the connection and disconnection of accessories, you should not cache the value of this property.
 

@@ -21,7 +21,7 @@ A type that tells your app to match its items against a provided string.
 struct StringSearchCriteria
 ```
 
-#### Overview
+## Overview
 
 Use this type in app intents that match your app’s content against a string-based value. When you define an app intent using the [`search`](./appschema/systemintent/search.md) schema or the [`ShowInAppSearchResultsIntent`](./showinappsearchresultsintent.md) protocol, apply this type to the [`criteria`](./showinappsearchresultsintent/criteria-swift.property.md) property. When your app intent runs, the system sets that property to an instance of this structure and fills it with the search term. When you use this type in your app intent, use the accompanying [`StringSearchScope`](./stringsearchscope.md) type for the [`searchScopes`](./showinappsearchresultsintent/searchscopes.md) property.
 

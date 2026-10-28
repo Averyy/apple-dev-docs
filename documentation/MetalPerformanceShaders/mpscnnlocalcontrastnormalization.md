@@ -24,7 +24,7 @@ class MPSCNNLocalContrastNormalization
 @interface MPSCNNLocalContrastNormalization : MPSCNNKernel
 ```
 
-#### Overview
+## Overview
 
 The local contrast normalization kernel is quite similar to the spatial normalization kernel, described in the [`MPSCNNSpatialNormalization`](./mpscnnspatialnormalization.md) class, in that it applies the kernel over local regions which extend spatially, but are in separate feature channels (i.e., they have the shape `1 x kernel width x kernel height`). However, instead of dividing by the local “energy” of the feature, the denominator uses the local variance of the feature - effectively the mean value of the feature is subtracted from the signal. For each feature channel, the function computes the variance `VAR(i,j)` and mean `M(i,j)` of `X(i,j)` inside each rectangle around the spatial point `(i,j)`. Then the result is computed for each element of `X` as follows:
 

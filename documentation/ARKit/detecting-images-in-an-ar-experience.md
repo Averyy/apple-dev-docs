@@ -11,7 +11,7 @@ React to known 2D images in the user’s environment, and use their positions to
 - iPadOS 11.3+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 Many AR experiences can be enhanced by using known features of the user’s environment to trigger the appearance of virtual content. For example, a museum app might show a virtual curator when the user points their device at a painting, or a board game might place virtual pieces when the player points their device at a game board. In iOS 11.3 and later, you can add such features to your AR experience by enabling image detection in ARKit: Your app provides known 2D images, and ARKit tells you when and where those images are detected during an AR session.
 
@@ -19,7 +19,7 @@ This example app looks for any of the several reference images included in the a
 
 > ❗ **Important**: The images included with this sample are designed to fit the screen sizes of various Apple devices. To try the app using these images, choose an image that fits any spare device you have, and display the image full screen on that device. Then run the sample code project on a different device, and point its camera at the device displaying the image. Alternatively, you can add your own images; see the steps in Provide Your Own Reference Images, below.
 
-##### Enable Image Detection
+### Enable Image Detection
 
 Image detection is an add-on feature for world-tracking AR sessions. (For more details on world tracking, see [Tracking and visualizing planes](./tracking-and-visualizing-planes.md).)
 
@@ -42,7 +42,7 @@ configuration.detectionImages = referenceImages
 session.run(configuration, options: [.resetTracking, .removeExistingAnchors])
 ```
 
-##### Visualize Image Detection Results
+### Visualize Image Detection Results
 
 When ARKit detects one of your reference images, the session automatically adds a corresponding [`ARImageAnchor`](./arimageanchor.md) to its list of anchors. To respond to an image being detected, implement an appropriate [`ARSessionDelegate`](./arsessiondelegate.md), [`ARSKViewDelegate`](./arskviewdelegate.md), or [`ARSCNViewDelegate`](./arscnviewdelegate.md) method that reports the new anchor being added to the session. (This example app uses the [`renderer(_:didAdd:for:)`](./arscnviewdelegate/renderer%28_,didadd,for%29.md) method for the code shown below.)
 
@@ -84,7 +84,7 @@ func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: AR
 }
 ```
 
-##### Provide Your Own Reference Images
+### Provide Your Own Reference Images
 
 To use your own images for detection (in this sample or in your own project), you’ll need to add them to your asset catalog in Xcode.
 
@@ -101,7 +101,7 @@ To use your own images for detection (in this sample or in your own project), yo
 - Use only images on flat surfaces for detection. If an image to be detected is on a nonplanar surface, like a label on a wine bottle, ARKit might not detect it at all, or might create an image anchor at the wrong location.
 - Consider how your image appears under different lighting conditions. If an image is printed on glossy paper or displayed on a device screen, reflections on those surfaces can interfere with detection.
 
-##### Apply Best Practices
+### Apply Best Practices
 
 This example app simply visualizes where ARKit detects each reference image in the user’s environment, but your app can do much more. Follow the tips below to design AR experiences that use image detection well.
 

@@ -15,7 +15,7 @@ A notification type value that App Store Server Notifications 2 uses.
 string notificationType
 ```
 
-#### Discussion
+## Discussion
 
 For the list of notification types available in [App Store Server Notifications](../AppStoreServerNotifications/AppStoreServerNotifications.md) version 2, see [`notificationType`](../AppStoreServerNotifications/notificationtype.md).
 

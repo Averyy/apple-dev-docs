@@ -22,11 +22,11 @@ func map<T>(to type: T.Type) -> MLDataColumn<T> where T : MLDataValueConvertible
 
 Available when `Element` conforms to `MLDataValueConvertible`.
 
-#### Return Value
+## Return Value
 
 A new column.
 
-#### Discussion
+## Discussion
 
 This method is functionally equivalent to the initializers of [`MLDataColumn`](../mldatacolumn.md) that have one parameter `column`, such as [`init(column:)`](./init%28column%29-86ge9.md).
 

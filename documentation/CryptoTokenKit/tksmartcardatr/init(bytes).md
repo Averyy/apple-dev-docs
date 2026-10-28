@@ -25,7 +25,7 @@ init?(bytes: Data)
 - (instancetype) initWithBytes:(NSData *) bytes;
 ```
 
-#### Return Value
+## Return Value
 
 A `TKSmartCardATR` object initialized with the parsed data. If `bytes` does not contain a valid ATR, returns `nil`.
 

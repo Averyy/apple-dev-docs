@@ -25,7 +25,7 @@ var data: UnsafeMutableRawPointer? { get }
 extern void *CGBitmapContextGetData(CGContextRef context);
 ```
 
-#### Discussion
+## Discussion
 
 If you provided the memory for the bitmap data, you can use this method to get that data pointer. If you passed `NULL` for the data pointer when creating your bitmap context, it is safe to get the data pointer in iOS 4.0 and later and macOS 10.6 and later only. In earlier versions of the operating system, passing `NULL` for the data parameter is not supported and may lead to crashes when attempting to access this data using this function.
 

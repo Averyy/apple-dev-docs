@@ -22,7 +22,7 @@ Writes data at the supplied offset from the specified buffer, not exceeding the 
 func write(from buffer: UnsafeRawBufferPointer, atOffset offset: Int64) throws -> Int
 ```
 
-#### Return Value
+## Return Value
 
 The number of bytes written by the stream.
 

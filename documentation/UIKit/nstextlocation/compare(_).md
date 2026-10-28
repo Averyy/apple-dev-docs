@@ -25,7 +25,7 @@ func compare(_ location: any NSTextLocation) -> ComparisonResult
 - (NSComparisonResult) compare:(id<NSTextLocation>) location;
 ```
 
-#### Return Value
+## Return Value
 
 A [`ComparisonResult`](../../Foundation/comparisonresult.md).
 

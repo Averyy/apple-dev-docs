@@ -20,7 +20,7 @@ Calculates the bounding box around the characters in the range of a string.
 - (VNRectangleObservation *) boundingBoxForRange:(NSRange) range error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Bounding boxes aren’t always an exact fit around the characters. Use them to display in user interfaces to provide general guidance, but avoid using their contents for image processing.
 

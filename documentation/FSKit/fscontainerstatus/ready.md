@@ -19,7 +19,7 @@ class var ready: FSContainerStatus { get }
 @property (class, readonly) FSContainerStatus * ready;
 ```
 
-#### Discussion
+## Discussion
 
 This value is a [`FSContainerStatus`](../fscontainerstatus.md) with a [`state`](./state.md) that is [`ready`](./ready.md), and a [`status`](./status.md) that is `nil`.
 

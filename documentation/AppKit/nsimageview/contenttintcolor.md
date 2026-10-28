@@ -20,7 +20,7 @@ var contentTintColor: NSColor? { get set }
 @property (copy, nullable) NSColor * contentTintColor;
 ```
 
-#### Discussion
+## Discussion
 
 This color may be combined with other effects to produce a theme-appropriate rendition of the template image. A `nil` value indicates the standard set of effects without color modification. The default value is `nil`.
 

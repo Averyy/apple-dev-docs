@@ -20,7 +20,7 @@ attribute string scope;
 - [Configuring your webpage for Sign in with Apple](../../SigninwithApple/configuring-your-webpage-for-sign-in-with-apple.md)
 - [Incorporating Sign in with Apple into other platforms](../../SigninwithApple/incorporating-sign-in-with-apple-into-other-platforms.md)
 
-#### Discussion
+## Discussion
 
 You can request the user’s name or email. You can also choose to request both, or neither. Use space separation when requesting multiple scopes; for example, `"scope=name email"`.
 

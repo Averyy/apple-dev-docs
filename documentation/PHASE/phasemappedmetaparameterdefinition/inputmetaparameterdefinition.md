@@ -24,7 +24,7 @@ var inputMetaParameterDefinition: PHASENumberMetaParameterDefinition { get }
 @property (nonatomic, strong, readonly) PHASENumberMetaParameterDefinition * inputMetaParameterDefinition;
 ```
 
-#### Discussion
+## Discussion
 
 This property defines the input value to plot on a graph defined by [`envelope`](./envelope.md).
 

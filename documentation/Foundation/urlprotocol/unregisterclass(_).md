@@ -25,7 +25,7 @@ class func unregisterClass(_ protocolClass: AnyClass)
 + (void) unregisterClass:(Class) protocolClass;
 ```
 
-#### Discussion
+## Discussion
 
 After this method is invoked, `protocolClass` is no longer consulted by the URL loading system.
 

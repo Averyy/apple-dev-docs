@@ -19,7 +19,7 @@ var selectedTabViewItemIndex: Int { get set }
 @property NSInteger selectedTabViewItemIndex;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to get and set the selected tab. The property is key-value coding compliant and can be the target of bindings.
 

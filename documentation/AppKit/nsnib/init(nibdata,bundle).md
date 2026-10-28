@@ -19,7 +19,7 @@ init(nibData: Data, bundle: Bundle?)
 - (instancetype) initWithNibData:(NSData *) nibData bundle:(NSBundle *) bundle;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized `NSNib` object or `nil` if there were errors during initialization.
 

@@ -24,11 +24,11 @@ class func overlayBlendMode() -> any CIFilter & CICompositeOperation
 + (CIFilter<CICompositeOperation> *) overlayBlendModeFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the overlay-blend mode filter to an image. The effect creates the output image by overlapping the input image over the background image while preserving highlights and shadows of the background image.
 

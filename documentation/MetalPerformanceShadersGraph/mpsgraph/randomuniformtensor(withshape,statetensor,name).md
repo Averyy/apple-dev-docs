@@ -24,11 +24,11 @@ func randomUniformTensor(withShape shape: [NSNumber], stateTensor state: MPSGrap
 - (NSArray<MPSGraphTensor *> *) randomUniformTensorWithShape:(MPSShape *) shape stateTensor:(MPSGraphTensor *) state name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 An array of MPSGraphTensor of size 2. The first MPSGraphTensor is of shape containing random values in the defined range. The second MPSGraphTensor is the updated state tensor.
 
-#### Discussion
+## Discussion
 
 Returns an array of 2 tensors, where the first is a tensor of provided shape of random uniform values in the range [0.0, 1.0), and the second is the updated state tensor. The provided state is used to define a stream of random values. No state is preserved, and all calls with equal state yield an identical stream of random values. The initial stateTensor provided should be created using the MPSGraph randomPhiloxStateTensor APIs. The resulting stateTensor from this op can be passed as an argument to the following random calls to continue sampling from the stream.
 

@@ -15,7 +15,7 @@ The pointer style appropriate for content opens a URL link to a webpage, documen
 static let link: PointerStyle
 ```
 
-#### Discussion
+## Discussion
 
 This pointer style displays a pointing hand. You may apply this pointer style to a single view or a view hierarchy using the [`pointerStyle(_:)`](../view/pointerstyle%28_%29.md) modifier.
 

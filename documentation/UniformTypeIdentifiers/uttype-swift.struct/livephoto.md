@@ -21,7 +21,7 @@ A type that represents Live Photos.
 static var livePhoto: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.apple.live-photo`.
 

@@ -23,7 +23,7 @@ enum Style
 enum UIProgressViewStyle : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 You can set and retrieve the current style of progress view through the [`progressViewStyle`](./progressviewstyle.md) property.
 

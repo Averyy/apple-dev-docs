@@ -24,7 +24,7 @@ var indexBuffer: (any MTLBuffer)? { get set }
 @property (nonatomic, retain, nullable) id<MTLBuffer> indexBuffer;
 ```
 
-#### Discussion
+## Discussion
 
 This property needs to have a non-nil value when you build an acceleration structure.
 

@@ -21,7 +21,7 @@ func scheduleNotification(_ notification: NSUserNotification)
 - (void) scheduleNotification:(NSUserNotification *) notification;
 ```
 
-#### Discussion
+## Discussion
 
 Scheduled notifications are added to the end of the notification queue.
 

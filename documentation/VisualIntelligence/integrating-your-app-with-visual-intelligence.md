@@ -5,11 +5,11 @@
 
 Enable people to find app content that matches their surroundings or objects onscreen with visual intelligence.
 
-#### Overview
+## Overview
 
 With visual intelligence, people can visually search for information and content that matches their surroundings, or an onscreen object. Integrating your app with visual intelligence lets people view your matching content quickly and launch your app for more detailed information or additional search results, giving it additional visibility.
 
-##### Understand how visual intelligence search communicates with your app
+### Understand how visual intelligence search communicates with your app
 
 To integrate your app with visual intelligence, the Visual Intelligence framework provides information about objects it detects in the visual intelligence camera or a screenshot. To exchange information with your app, the system uses the [App Intents](../AppIntents/AppIntents.md) framework and its concepts of app intents and app entities.
 
@@ -17,7 +17,7 @@ When a person performs visual search on the visual intelligence camera or a scre
 
 To learn more about a displayed item, someone can tap it to open the item in your app and view information and functionality. For example, an app that lets people view information about landmarks might show detailed information such as hours, a map, or community reviews for the item a person taps in visual search.
 
-##### Provide a display representation
+### Provide a display representation
 
 Visual Intelligence uses the [`DisplayRepresentation`](../AppIntents/displayrepresentation.md) of your [`AppEntity`](../AppIntents/appentity.md) to organize and present your content in the visual intelligence search experience. Make sure to provide localized, concise, and high-quality display representations that consist of a title, subtitle, and an image. The following code from the [Adopting App Intents to support system experiences](../AppIntents/adopting-app-intents-to-support-system-experiences.md) sample code project shows the display representation of an `AppEntity` for a landmark. It uses strings from the model object for simplicity. In your code, make sure to provide a localized display representation.
 
@@ -44,7 +44,7 @@ struct LandmarkEntity: IndexedEntity {
 
 For additional information about display representations, refer to [Defining app entities for your custom data types](../AppIntents/defining-app-entities-for-your-custom-data-types.md).
 
-##### Provide search results
+### Provide search results
 
 To integrate your app with visual search, provide visual intelligence with content that matches a person’s surroundings or onscreen object, as described in the steps below and illustrated in the following image:
 
@@ -90,7 +90,7 @@ private func createImage(_ pixelBuffer: CVReadOnlyPixelBuffer) -> CGImage? {
 }
 ```
 
-##### Open an item in your app
+### Open an item in your app
 
 To let someone open your app and view additional information or access additional actions for a visual search, create an [`OpenIntent`](../AppIntents/openintent.md). In the intent’s `perform()` method, open your app to match the app entity that visual intelligence passes to the method, as illustrated in the image below.
 
@@ -113,7 +113,7 @@ Adopting the `OpenIntent` protocol isn’t specific to integrating your app with
 
 For more information about adopting App Intents in your app, refer to [App Intents](../AppIntents/AppIntents.md) and [Making actions and content discoverable by Apple Intelligence](../AppIntents/making-actions-and-content-discoverable-by-apple-intelligence.md).
 
-##### Return different values in one query
+### Return different values in one query
 
 Your app can’t contain more than one [`IntentValueQuery`](../AppIntents/intentvaluequery.md) that takes a [`SemanticContentDescriptor`](./semanticcontentdescriptor.md). To return more than one [`AppEntity`](../AppIntents/appentity.md) type from a single intent value query, use the [`UnionValue()`](../AppIntents/unionvalue%28%29.md) Swift macro to return multiple app entity types. The following example uses a union value for its result — indicated by the `@UnionValue` annotation — to return a list of individual landmarks and collections of landmarks:
 
@@ -139,7 +139,7 @@ struct LandmarkIntentValueQuery: IntentValueQuery {
 }
 ```
 
-##### Link to additional results in your app
+### Link to additional results in your app
 
 Returning visual search results quickly and limiting the number of items ensures a quick and enjoyable experience for people using your app. However, your app might offer a lot — possibly hundreds — of results, or browsing long lists of items might be part of your app’s core experience. If you need to provide many results, display a limited amount and allow people to open your app from the “More results” button to view more visual search results.
 

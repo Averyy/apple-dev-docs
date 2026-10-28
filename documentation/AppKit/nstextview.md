@@ -26,7 +26,7 @@ class NSTextView
 - [Adding Writing Tools support to a custom AppKit view](./adding-writing-tools-support-to-a-custom-nsview.md)
 - [Adopting the system text cursor in custom text views](./adopting-the-system-text-cursor-in-custom-text-views.md)
 
-#### Overview
+## Overview
 
 The [`NSTextView`](./nstextview.md) class is the front-end class to the AppKit text system. The class draws the text managed by the back-end components and handles user events to select and modify its text, in addition to supporting rich text, attachments, input management, and key binding, and marked text attributes.
 
@@ -40,17 +40,17 @@ You’re more likely to use the [`NSTextView`](./nstextview.md) class than [`NST
 
 In macOS 12 and later, if you explicitly call the `layoutManager` property on a text view or text container, the framework reverts to a compatibility mode that uses [`NSLayoutManager`](./nslayoutmanager.md). The text view also switches to this compatibility mode when it encounters text content that’s not yet supported, such as [`NSTextTable`](./nstexttable.md).
 
-##### About Delegate Methods
+### About Delegate Methods
 
 The `NSTextView` class communicates with its delegate through methods declared both by the [`NSTextViewDelegate`](./nstextviewdelegate.md) and by its superclass’s protocol, [`NSTextDelegate`](./nstextdelegate.md). All delegation messages come from the first text view.
 
-##### Becoming the first responder
+### Becoming the first responder
 
 When the system invokes [`becomeFirstResponder()`](./nsresponder/becomefirstresponder%28%29.md) on a text view, if the previous first responder was not a text view on the same layout manager as the receiving text view, the receiving text view draws the selection and updates the insertion point if necessary.
 
 To make a text view the first responder, call the containing window’s [`makeFirstResponder(_:)`](./nswindow/makefirstresponder%28_%29.md) method. Never invoke a text view’s [`becomeFirstResponder()`](./nsresponder/becomefirstresponder%28%29.md) method directly.
 
-##### Resigning as first responder
+### Resigning as first responder
 
 When the system invokes [`resignFirstResponder()`](./nsresponder/resignfirstresponder%28%29.md) on a text view, if the object that will become the new first responder is a text view attached to the same layout manager as the receiver, the receiving text view returns [`true`](../Swift/true.md) with no further action. Otherwise, it sends a [`textShouldEndEditing(_:)`](./nstextdelegate/textshouldendediting%28_%29.md) message to its delegate (if any). If the delegate returns [`false`](../Swift/false.md), the text view returns [`false`](../Swift/false.md). If the delegate returns [`true`](../Swift/true.md), the text view hides the selection highlighting and posts an [`didEndEditingNotification`](./nstext/didendeditingnotification.md) to the default notification center and then returns [`true`](../Swift/true.md).
 

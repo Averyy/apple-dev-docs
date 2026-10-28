@@ -24,7 +24,7 @@ class AVDelegatingPlaybackCoordinator
 @interface AVDelegatingPlaybackCoordinator : AVPlaybackCoordinator
 ```
 
-#### Overview
+## Overview
 
 This object coordinates the state of custom player objects, such as those that render media using [`AVSampleBufferDisplayLayer`](./avsamplebufferdisplaylayer.md) and [`AVSampleBufferAudioRenderer`](./avsamplebufferaudiorenderer.md), or that play audio using [`AVAudioEngine`](../AVFAudio/avaudioengine.md).
 

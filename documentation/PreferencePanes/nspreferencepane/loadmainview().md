@@ -20,7 +20,7 @@ func loadMainView() -> NSView
 - (NSView *) loadMainView;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation loads the main nib file (identified by [`mainNibName`](./mainnibname.md)) and calls [`assignMainView()`](./assignmainview%28%29.md) to set the main view of the preference pane. Returns the main view if successful, or `nil` otherwise.
 

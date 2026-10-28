@@ -16,7 +16,7 @@
 kINQUIRY_Byte56_CLOCKING_ST_AND_DT
 ```
 
-#### Discussion
+## Discussion
 
 Single-transition and double-transition clocking.
 

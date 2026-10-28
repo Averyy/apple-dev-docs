@@ -24,7 +24,7 @@ func enumerateSubstrings(from location: any NSTextLocation, options: NSString.En
 - (void) enumerateSubstringsFromLocation:(id<NSTextLocation>) location options:(NSStringEnumerationOptions) options usingBlock:(void (^)(NSString *substring, NSTextRange *substringRange, NSTextRange *enclosingRange, BOOL *stop)) block;
 ```
 
-#### Discussion
+## Discussion
 
 ## Parameters
 

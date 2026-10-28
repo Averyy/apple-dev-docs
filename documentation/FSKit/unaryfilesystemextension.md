@@ -15,7 +15,7 @@ A protocol for implementing a minimal file system as an app extension.
 protocol UnaryFileSystemExtension : AppExtension
 ```
 
-#### Overview
+## Overview
 
 Your app needs to do the following to implement a FSKit-compatible minimal file system:
 

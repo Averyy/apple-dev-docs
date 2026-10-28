@@ -19,7 +19,7 @@ func setAccessibilityIdentifier(_ accessibilityIdentifier: String?)
 - (void) setAccessibilityIdentifier:(NSString *) accessibilityIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Use the identifier in this property to distinguish between different objects in your app. The identifier string is used solely for programmatic identity, as opposed to many other accessibility attributes.
 

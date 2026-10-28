@@ -24,7 +24,7 @@ let kVTCompressionPropertyKey_ICCProfile: CFString
 extern CFStringRef const kVTCompressionPropertyKey_ICCProfile;
 ```
 
-#### Discussion
+## Discussion
 
 If the video encoder enforces specific colorimetry, this property will be read-only ([`VTSessionSetProperty(_:key:value:)`](./vtsessionsetproperty%28_,key,value%29.md) will return [`kVTPropertyReadOnlyErr`](./kvtpropertyreadonlyerr.md)). If this property and any of the other color properties (color primaries, transfer function, or YCbCr matrix) are set, they should be set to consistent values, or undefined behavior may occur. The value will be set on the format description for output sample buffers. `NULL` can be a valid value for this property.
 

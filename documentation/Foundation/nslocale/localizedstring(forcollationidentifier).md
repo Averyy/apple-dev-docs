@@ -25,11 +25,11 @@ func localizedString(forCollationIdentifier collationIdentifier: String) -> Stri
 - (NSString *) localizedStringForCollationIdentifier:(NSString *) collationIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 The localized name for the collation.
 
-#### Discussion
+## Discussion
 
 For example, calling this method on an American English (`en_US`) locale, passing `"phonebook"` for `collationIdentifier`, produces the string `"Phonebook Sort Order"`.
 

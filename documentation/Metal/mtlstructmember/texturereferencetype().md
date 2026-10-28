@@ -24,7 +24,7 @@ func textureReferenceType() -> MTLTextureReferenceType?
 - (MTLTextureReferenceType *) textureReferenceType;
 ```
 
-#### Return Value
+## Return Value
 
 An object that describes the texture. If [`dataType`](./datatype.md) indicates that this member isn’t a texture, this method returns `nil`.
 

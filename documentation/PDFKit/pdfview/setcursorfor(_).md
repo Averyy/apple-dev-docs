@@ -19,7 +19,7 @@ func setCursorFor(_ area: PDFAreaOfInterest)
 - (void) setCursorForAreaOfInterest:(PDFAreaOfInterest) area;
 ```
 
-#### Discussion
+## Discussion
 
 This method is especially useful for custom subclasses of the `PDFView` class.
 

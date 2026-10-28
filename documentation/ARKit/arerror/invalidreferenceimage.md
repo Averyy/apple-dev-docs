@@ -16,7 +16,7 @@ An error that indicates the framework fails to process a reference image.
 static var invalidReferenceImage: ARError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs when a reference image in the configuration’s [`detectionImages`](../arworldtrackingconfiguration/detectionimages.md) lacks identifying features, such as when the image contains all white pixels.
 

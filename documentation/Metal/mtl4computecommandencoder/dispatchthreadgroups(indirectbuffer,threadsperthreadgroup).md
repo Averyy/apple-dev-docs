@@ -25,7 +25,7 @@ func dispatchThreadgroups(indirectBuffer: MTLGPUAddress, threadsPerThreadgroup: 
 - (void) dispatchThreadgroupsWithIndirectBuffer:(MTLGPUAddress) indirectBuffer threadsPerThreadgroup:(MTLSize) threadsPerThreadgroup;
 ```
 
-#### Discussion
+## Discussion
 
 This method allows you to supply the threadgroups-per-grid counts indirectly via an [`MTLBuffer`](../mtlbuffer.md) index. This enables you to calculate this value in the GPU timeline from a shader function, enabling GPU-driven workflows.
 

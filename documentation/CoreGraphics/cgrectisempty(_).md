@@ -25,11 +25,11 @@ func CGRectIsEmpty(_ rect: CGRect) -> Bool
 extern bool CGRectIsEmpty(CGRect rect);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the specified rectangle is empty; otherwise, [`false`](../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 An empty rectangle is either a null rectangle or a valid rectangle with zero height or width.
 

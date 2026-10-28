@@ -21,11 +21,11 @@ func CGPostKeyboardEvent(_ keyChar: CGCharCode, _ virtualKey: CGKeyCode, _ keyDo
 extern CGError CGPostKeyboardEvent(CGCharCode keyChar, CGKeyCode virtualKey, boolean_t keyDown);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See the result codes described in [Quartz Display Services](./quartz-display-services.md).
 
-#### Discussion
+## Discussion
 
 This function is not recommended for general use because of undocumented special cases and undesirable side effects. The recommended replacement for this function is [`init(keyboardEventSource:virtualKey:keyDown:)`](./cgevent/init%28keyboardeventsource,virtualkey,keydown%29.md), which allows you to create a keyboard event and customize the event before posting it to the event system.
 

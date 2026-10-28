@@ -21,11 +21,11 @@ Modifies the date interval format style to include the seconds.
 func second() -> Date.IntervalFormatStyle
 ```
 
-#### Return Value
+## Return Value
 
 A date interval format style that includes the seconds.
 
-#### Discussion
+## Discussion
 
 This example shows a combination of date interval format styles that include the hour, minutes, and seconds:
 

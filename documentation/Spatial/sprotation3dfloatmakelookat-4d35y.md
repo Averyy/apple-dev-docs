@@ -19,11 +19,11 @@
 static SPRotation3DFloat SPRotation3DFloatMakeLookAt(SPPoint3DFloat target, SPVector3DFloat up);
 ```
 
-#### Return Value
+## Return Value
 
 A new rotation stucture.
 
-#### Discussion
+## Discussion
 
 Returns a rotation that’s the look at direction from the origin to the target.
 

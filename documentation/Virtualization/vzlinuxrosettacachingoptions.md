@@ -15,7 +15,7 @@ An abstract class that defines UNIX socket-based caching options for Rosetta.
 @interface VZLinuxRosettaCachingOptions : NSObject
 ```
 
-#### Overview
+## Overview
 
 `VZLinuxRosettaCachingOptions` define the communication mechanism between the Rosetta daemon and the Rosetta runtime.
 

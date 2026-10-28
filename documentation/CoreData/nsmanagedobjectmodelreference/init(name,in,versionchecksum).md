@@ -25,7 +25,7 @@ init(name modelName: String, in bundle: Bundle?, versionChecksum: String)
 - (instancetype) initWithName:(NSString *) modelName inBundle:(NSBundle *) bundle versionChecksum:(NSString *) versionChecksum;
 ```
 
-#### Discussion
+## Discussion
 
 To determine an object model’s version checksum, use its [`versionChecksum`](../nsmanagedobjectmodel/versionchecksum.md) property. Alternatively, you can find the checksum in the versioned model’s `VersionInfo.plist` file or in Xcode’s build log.
 

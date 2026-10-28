@@ -30,7 +30,7 @@ var timeRemaining: TimeInterval { get }
 
 - [Unlocking purchased content](../unlocking-purchased-content.md)
 
-#### Discussion
+## Discussion
 
 The system attempts to estimate how long it will take to finish downloading the file. If it cannot create a good estimate, the value of this property is set to [`SKDownloadTimeRemainingUnknown`](../skdownloadtimeremainingunknown.md).
 

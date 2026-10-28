@@ -24,7 +24,7 @@ struct PhysicsMotionComponent
 
 - [Designing scene hierarchies for efficient physics simulation](./designing-scene-hierarchies-for-efficient-physics-simulation.md)
 
-#### Overview
+## Overview
 
 You specify velocities in the coordinate space of the physics simulation defined by [`nearestSimulationEntity(for:)`](./physicssimulationcomponent/nearestsimulationentity%28for%29.md).
 

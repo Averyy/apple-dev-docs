@@ -21,7 +21,7 @@ The on-disk identifier of the data store this token covers.
 var storeIdentifier: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use with [`configurationName(forStoreIdentifier:)`](../modelcontainer/configurationname%28forstoreidentifier%29.md) to map the identifier back to the [`ModelConfiguration`](../modelconfiguration.md) name.
 

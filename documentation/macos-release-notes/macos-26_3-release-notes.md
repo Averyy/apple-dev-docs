@@ -5,25 +5,25 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The macOS 26.2 SDK provides support to develop apps for Mac computers running Tahoe 26.3. The SDK comes bundled with Xcode 26.2. For information on the compatibility requirements for Xcode 26.2, see [Xcode 26.2 Release Notes](../Xcode-Release-Notes/xcode-26_2-release-notes.md).
 
-##### AppKit
+### AppKit
 
-###### Known Issues
+#### Known Issues
 
 - Window resize pointer does not follow the window’s corner shape.  (149726089)
 
-##### StoreKit
+### StoreKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: [Product.products(for:)](../StoreKit/product/products%28for%29.md) fails silently instead of throwing errors.  (165186025) (FB21110809)
 
-##### Virtualization
+### Virtualization
 
-###### Known Issues
+#### Known Issues
 
 - On certain hardware configurations, new macOS Tahoe virtual machine installations may boot to a black screen.  (169654019)
 

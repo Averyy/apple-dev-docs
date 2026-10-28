@@ -21,7 +21,7 @@ Displayed data should appear as invalidated and pending a new update.
 static let invalidated: RedactionReasons
 ```
 
-#### Discussion
+## Discussion
 
 Views marked with [`invalidatableContent(_:)`](../view/invalidatablecontent%28_%29.md) will be automatically redacted with a standard styling indicating the content is invalidated and new content will be available soon.
 

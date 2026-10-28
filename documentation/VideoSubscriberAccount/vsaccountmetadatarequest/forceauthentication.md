@@ -24,7 +24,7 @@ var forceAuthentication: Bool { get set }
 @property (nonatomic, assign) BOOL forceAuthentication;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), your app cannot use cached credentials; if [`false`](../../Swift/false.md), your app attempts to use any available cached credentials.
 

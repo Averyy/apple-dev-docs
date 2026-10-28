@@ -24,7 +24,7 @@ var delegate: (any CAAnimationDelegate)? { get set }
 @property (strong, nullable) id<CAAnimationDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `nil`.
 

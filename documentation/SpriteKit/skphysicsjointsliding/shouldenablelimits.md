@@ -25,7 +25,7 @@ var shouldEnableLimits: Bool { get set }
 @property (nonatomic) BOOL shouldEnableLimits;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md). If [`true`](../../Swift/true.md), then the [`lowerDistanceLimit`](./lowerdistancelimit.md) and [`upperDistanceLimit`](./upperdistancelimit.md) properties are used to limit the distance of the sliding joint.
 

@@ -13,7 +13,7 @@ void CMEnableMatchingComment (
 );
 ```
 
-#### Overview
+## Overview
 
 If you call this function when no picture is open, it will have no effect. 
 

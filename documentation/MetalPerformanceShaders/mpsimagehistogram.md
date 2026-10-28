@@ -24,7 +24,7 @@ class MPSImageHistogram
 @interface MPSImageHistogram : MPSKernel
 ```
 
-#### Overview
+## Overview
 
 Typically, you use an [`MPSImageHistogram`](./mpsimagehistogram.md) filter to calculate an image’s histogram that is passed to a subsequent filter such as [`MPSImageHistogramEqualization`](./mpsimagehistogramequalization.md) or [`MPSImageHistogramSpecification`](./mpsimagehistogramspecification.md).
 

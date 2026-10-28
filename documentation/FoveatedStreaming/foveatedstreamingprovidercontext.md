@@ -16,7 +16,7 @@ Context object provided to a streaming provider when it connects.
 final class FoveatedStreamingProviderContext
 ```
 
-#### Overview
+## Overview
 
 Provides access to session state, endpoint information, focus region data, and helpers for communicating events back to the host app.
 

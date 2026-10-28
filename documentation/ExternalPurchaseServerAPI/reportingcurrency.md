@@ -15,7 +15,7 @@ The currency the line item uses to report all amount values.
 string reportingCurrency
 ```
 
-#### Discussion
+## Discussion
 
 Allowed values: `CLP`, `EUR`, `QAR`, `COP`, `VND`, `EGP`, `THB`, `HKD`, `NOK`, `BRL`, `GBP`, `AUD`, `SEK`, `INR`, `BGN`, `ZAR`, `KZT`, `NGN`, `TWD`, `MXN`, `CHF`, `PEN`, `DKK`, `AED`, `ILS`, `KRW`, `PHP`, `TZS`, `PKR`, `HUF`, `IDR`, `CNY`, `MYR`, `RUB`, `RON`, `SGD`, `TRY`, `CZK`, `SAR`, `USD`, `NZD`, `PLN`, `JPY`, `CAD`
 
@@ -28,7 +28,7 @@ The reporting currency is the currency you use to report all of the amount value
 - [`netAmountTaxExclusive`](./netamounttaxexclusive.md)
 - [`taxAmount`](./taxamount.md)
 
-##### Determine your reporting currency
+### Determine your reporting currency
 
 Your reporting currency depends on your [`pricingCurrency`](./pricingcurrency.md), as follows:
 

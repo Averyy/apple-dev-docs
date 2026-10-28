@@ -23,7 +23,7 @@ var userOwned: NSNumber? { get set }
 @property (strong, getter=isUserOwned, nullable) NSNumber * userOwned;
 ```
 
-#### Discussion
+## Discussion
 
 Examples of items to set this property on include songs and movies the user purchases.
 

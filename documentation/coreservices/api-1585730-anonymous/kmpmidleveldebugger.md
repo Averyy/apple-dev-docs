@@ -14,7 +14,7 @@
 kMPMidLevelDebugger = 0x10000000
 ```
 
-#### Discussion
+## Discussion
 
 The mid-level debugger.
 

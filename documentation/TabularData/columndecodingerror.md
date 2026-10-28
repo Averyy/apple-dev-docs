@@ -21,7 +21,7 @@ A column decoding error.
 struct ColumnDecodingError
 ```
 
-#### Overview
+## Overview
 
 This error wraps a decoding error and includes the column name and row index where the decoding error occurs.
 

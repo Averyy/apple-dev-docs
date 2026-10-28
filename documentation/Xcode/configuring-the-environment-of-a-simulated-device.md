@@ -5,17 +5,17 @@
 
 Modify the settings of a simulated device.
 
-#### Overview
+## Overview
 
 Test your app on a simulated device with different operating system settings, such as accessibility, appearance, location, audio, and orientation. To test how your app loads on a new device or after a restart, reset or restart a simulated device.
 
-#### Change environment settings
+## Change environment settings
 
 In Device Hub, select a simulated device in the sidebar, and if necessary, click Start in the canvas. In the Settings inspector, change the environment settings, such as Appearance, Liquid Glass, and Text Size. Then run your app on the simulator and observe whether your app adjusts accordingly.
 
 To run your app in a simulator, see [Running your app on simulated or physical devices](./running-your-app-on-simulated-or-physical-devices.md).
 
-#### Resize the canvas
+## Resize the canvas
 
 In an expanded window, use the controls in the toolbar to resize the canvas. For example, scale the canvas to check alignment of controls, images, and colors used in your app.
 
@@ -25,7 +25,7 @@ In an expanded window, use the controls in the toolbar to resize the canvas. For
 
 For a compact window, click “Expand to view all controls” in the toolbar to expand the window and show the resize controls, or resize the compact window to change the canvas scale.
 
-#### Change the screen size of a simulated iPhone
+## Change the screen size of a simulated iPhone
 
 To quickly verify that your interface adjusts for different device sizes, you can resize a simulated iPhone screen to an arbitrary size without running your app on multiple devices.
 
@@ -33,7 +33,7 @@ To enter resize mode, run your app on the simulator and click the “Enter resiz
 
 ![A screenshot of the Device Hub showing an app running in an iPhone simulator with the resize mode enabled and the handles appearing around the sides of the device.](https://developer.apple.com/tutorials/images/com.apple.Xcode/resize-iphone-canvas@2x.png)
 
-#### Set the audio input and output
+## Set the audio input and output
 
 Set the audio input and audio output that simulated devices use.
 
@@ -47,7 +47,7 @@ Device Hub keeps track of the most recent selections for input and for output. D
 
 > **Note**: When you select Bluetooth headphones as the input source, playing or listening to audio in a simulator sets the headphones to phone call mode which lowers the quality of the audio. To hear sound at full quality, choose a different audio input source for a simulator.
 
-#### Restart or reset a simulated device
+## Restart or reset a simulated device
 
 Restart a simulated device to simulate turning off and turning back on a device. Click the More button (…) in the toolbar above a simulator and choose Shut Down or Restart. Alternatively, Control-click a device in the sidebar and choose Shut Down or Restart from the contextual menu.
 

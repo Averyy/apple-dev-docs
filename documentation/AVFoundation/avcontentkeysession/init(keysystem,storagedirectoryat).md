@@ -25,11 +25,11 @@ convenience init(keySystem: AVContentKeySystem, storageDirectoryAt storageURL: U
 + (instancetype) contentKeySessionWithKeySystem:(AVContentKeySystem) keySystem storageDirectoryAtURL:(NSURL *) storageURL;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a new AVContentKeySession instance.
 
-#### Discussion
+## Discussion
 
 The `AVContentKeySession` instance returned is capable of managing a collection of content decryption keys that correspond to the input key system. An [`invalidArgumentException`](../../Foundation/nsexceptionname/invalidargumentexception.md) is raised when the value of `keySystem` is unsupported.
 

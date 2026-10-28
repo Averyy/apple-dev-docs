@@ -19,7 +19,7 @@ var activityItemsConfiguration: (any UIActivityItemsConfigurationReading)? { get
 @property (nonatomic, strong, nullable) id<UIActivityItemsConfigurationReading> activityItemsConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 Use this object to provide the set of items to share from your macOS window.
 

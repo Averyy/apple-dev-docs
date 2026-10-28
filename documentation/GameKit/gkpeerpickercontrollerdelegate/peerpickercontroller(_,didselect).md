@@ -24,7 +24,7 @@ optional func peerPickerController(_ picker: GKPeerPickerController, didSelect t
 - (void) peerPickerController:(GKPeerPickerController *) picker didSelectConnectionType:(GKPeerPickerConnectionType) type;
 ```
 
-#### Discussion
+## Discussion
 
 If the peer picker is configured to allow users to choose between multiple connection types, this method is called when users select the connection type they want to use. Your delegate implements this method if you want to override the behavior for a particular connection type.
 

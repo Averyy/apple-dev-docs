@@ -5,11 +5,11 @@
 
 Create both asymmetric and symmetric cryptographic keys.
 
-#### Overview
+## Overview
 
 Very often, you retrieve a key from an identity, a certificate, or the keychain, or with some other method described in [Getting an Existing Key](./getting-an-existing-key.md). Sometimes, however, you need to create your own keys.
 
-##### Creating an Asymmetric Key Pair
+### Creating an Asymmetric Key Pair
 
 An asymmetric cryptographic key pair is composed of a public and a private key that are generated together. You distribute the public key freely, but you keep the private key secret. One or both may be stored in a keychain for safekeeping.
 
@@ -97,7 +97,7 @@ if (publicKey)  { CFRelease(publicKey);  }
 if (privateKey) { CFRelease(privateKey); }
 ```
 
-##### Creating a Symmetric Key
+### Creating a Symmetric Key
 
 Asymmetric key cryptography is useful because it enables secure communication between two players who don’t share a secret ahead of time. However, it’s not ideal for bulk data transfer, because it’s computationally expensive and because it operates on small, fixed-sized chunks of data. Symmetric key cryptography, on the other hand, is computationally efficient. It allows you to handle data streams of arbitrary length but requires that both sender and receiver, and no one else, know the secret key.
 

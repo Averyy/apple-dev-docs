@@ -30,7 +30,7 @@ var phoneNumberEditable: Bool { get set }
 @property (atomic) BOOL phoneNumberEditable;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`true`](../../Swift/true.md), which lets the current user change the phone number assigned to a pending reservation.
 

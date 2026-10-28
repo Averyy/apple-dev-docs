@@ -13,7 +13,7 @@
 kINQUIRY_PERIPHERAL_TYPE_ScannerSCSI2Device = 0x06
 ```
 
-#### Discussion
+## Discussion
 
 SCSI2 Device.
 

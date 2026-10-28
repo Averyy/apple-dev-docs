@@ -21,11 +21,11 @@ Prints log messages for all publishing events.
 func print(_ prefix: String = "", to stream: (any TextOutputStream)? = nil) -> Publishers.Print<Self>
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that prints log messages for all publishing events.
 
-#### Discussion
+## Discussion
 
 Use [`print(_:to:)`](./print%28_,to%29.md) to log messages the console.
 

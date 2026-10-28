@@ -19,7 +19,7 @@ Responds when a person or your code changes the zoom factor.
 func dataScannerDidZoom(_ dataScanner: DataScannerViewController)
 ```
 
-#### Discussion
+## Discussion
 
 The data scanner invokes this method when the [`zoomFactor`](../datascannerviewcontroller/zoomfactor.md) property changes.
 

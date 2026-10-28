@@ -23,7 +23,7 @@ class SFTranscriptionSegment
 @interface SFTranscriptionSegment : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use [`SFTranscriptionSegment`](./sftranscriptionsegment.md) to get details about a part of an overall [`SFTranscription`](./sftranscription.md). An [`SFTranscriptionSegment`](./sftranscriptionsegment.md) represents an utterance, which is a vocalized word or group of words that represent a single meaning to the speech recognizer ([`SFSpeechRecognizer`](./sfspeechrecognizer.md)).
 

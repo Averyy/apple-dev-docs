@@ -18,7 +18,7 @@ typedef struct IOFireWirePhysicalAddressSpaceInterface_t {
 } IOFireWirePhysicalAddressSpaceInterface;
 ```
 
-#### Overview
+## Overview
 
 Represents and provides management functions for a physical address space (hardware-backed) in the local machine.
 

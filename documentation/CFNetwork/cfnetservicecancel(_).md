@@ -26,7 +26,7 @@ func CFNetServiceCancel(_ theService: CFNetService)
 extern void CFNetServiceCancel(CFNetServiceRef theService);
 ```
 
-#### Discussion
+## Discussion
 
 This function cancels service registrations, started by [`CFNetServiceRegister`](./cfnetserviceregister.md), thereby making the service unavailable. It also cancels service resolutions, started by [`CFNetServiceResolve`](./cfnetserviceresolve.md).
 
@@ -36,7 +36,7 @@ If you are shutting down a synchronous service, call this function from another 
 
 This function also cancels service resolutions. You would want to cancel a service resolution if your callback function has received an IP address that you’ve successfully used to connect to the service. In addition, you might want to cancel a service resolution if the resolution is taking longer than a user would want to wait or if the user canceled the operation.
 
-##### Special Considerations
+### Special Considerations
 
 This function is thread safe.
 

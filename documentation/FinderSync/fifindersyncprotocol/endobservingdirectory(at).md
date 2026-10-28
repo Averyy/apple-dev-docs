@@ -19,7 +19,7 @@ optional func endObservingDirectory(at url: URL)
 - (void) endObservingDirectoryAtURL:(NSURL *) url;
 ```
 
-#### Discussion
+## Discussion
 
 Override this method to receive notifications when the user is no longer looking at the contents of the given URL. As with [`beginObservingDirectory(at:)`](./beginobservingdirectory%28at%29.md), the Open and Save dialogs are tracked separately from the Finder.
 

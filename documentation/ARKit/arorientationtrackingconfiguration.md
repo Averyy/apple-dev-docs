@@ -20,7 +20,7 @@ class AROrientationTrackingConfiguration
 @interface AROrientationTrackingConfiguration : ARConfiguration
 ```
 
-#### Overview
+## Overview
 
 All AR configurations establish a correspondence between the real world the device inhabits and a virtual 3D coordinate space where you can model content. When your app displays that content together with a live camera image, the user experiences the illusion that your virtual content is part of the real world.
 

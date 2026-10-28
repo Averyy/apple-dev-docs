@@ -25,11 +25,11 @@ Creates a new record of the specified type.
 
 - [Designing and Creating a CloudKit Database](../designing-and-creating-a-cloudkit-database.md)
 
-#### Return Value
+## Return Value
 
 An initialized record object.
 
-#### Discussion
+## Discussion
 
 Use this method to initialize a new record object in the default zone of the database. The newly created record contains no data in any of its fields and receives a unique ID.
 

@@ -24,11 +24,11 @@ class func holeDistortion() -> any CIFilter & CIHoleDistortion
 + (CIFilter<CIHoleDistortion> *) holeDistortionFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The distorted image.
 
-#### Discussion
+## Discussion
 
 This method applies the hole distortion filter to an image. This effect distorts the image by generating a circular area that displaces pixels in the image by pushing them outward from the hole defined by the radius.
 

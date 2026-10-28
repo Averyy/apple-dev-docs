@@ -19,7 +19,7 @@ func flagsChanged(with event: NSEvent)
 - (void) flagsChanged:(NSEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation simply passes this message to the next responder.
 

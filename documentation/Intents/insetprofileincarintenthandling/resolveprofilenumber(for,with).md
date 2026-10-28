@@ -28,7 +28,7 @@ optional func resolveProfileNumber(for intent: INSetProfileInCarIntent) async ->
 - (void) resolveProfileNumberForSetProfileInCar:(INSetProfileInCarIntent *) intent withCompletion:(void (^)(INIntegerResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the specified profile index. If your vehicle supports named profiles and there’s a valid name in the [`INSetProfileInCarIntent`](../insetprofileincarintent.md) object, return a successful resolution for this parameter and use the label to identify the profile.
 

@@ -19,7 +19,7 @@ Generate jointly-normal random samples given a mean and covariance.
 func multivariateNormal(mean: MLXArray, covariance: MLXArray, shape: [Int] = [], dtype: DType = .float32, key: MLXArray? = nil, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 The matrix `covariance` must be positive semi-definite. The behavior is undefined if it is not.  The only supported `dtype` is `.float32`.
 

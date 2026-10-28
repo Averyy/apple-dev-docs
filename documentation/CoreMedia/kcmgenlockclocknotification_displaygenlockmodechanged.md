@@ -20,7 +20,7 @@ let kCMGenlockClockNotification_DisplayGenlockModeChanged: CFString
 extern CFStringRef const kCMGenlockClockNotification_DisplayGenlockModeChanged;
 ```
 
-#### Discussion
+## Discussion
 
 Observe this notification using `CMNotificationCenterAddListener` on the default local `CMNotificationCenter`. The notification payload dictionary contains a `CFBoolean` value for the key `kCMGenlockClockNotificationPayload_AnyDisplayIsSynchronizedToLockedGenlockSignal`.
 

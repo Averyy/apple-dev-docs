@@ -19,15 +19,15 @@ func SKIndexCopyTermIDArrayForDocumentID(_ inIndex: SKIndex!, _ inDocumentID: SK
 CFArrayRef SKIndexCopyTermIDArrayForDocumentID(SKIndexRef inIndex, SKDocumentID inDocumentID);
 ```
 
-#### Return Value
+## Return Value
 
 A CFArray containing CFNumbers, each of which represents the ID for a term in a document.
 
-#### Discussion
+## Discussion
 
 To derive the list of terms contained in a document, use this function to obtain an array of the term IDs, then convert each ID into the corresponding term with the [`SKIndexCopyTermStringForTermID(_:_:)`](./api-1442802-skindexcopytermstringfortermid.md) function.
 
-##### Version-Notes
+### Version-Notes
 
 In versions of macOS prior to OS X v10.4, the parameter type for `inDocumentID` was `CFIndex`. In macOS 10.4 and later, the parameter type is `SKDocumentID`.
 

@@ -4,7 +4,7 @@
 
 Find out how to bring the new material to your app.
 
-#### Overview
+## Overview
 
 If you have an existing app, adopting Liquid Glass doesn’t mean reinventing your app from the ground up. Start by building your app in the latest version of Xcode to see the changes. As you review your app, use the following sections to understand the scope of changes and learn how you can adopt these best practices in your interface.
 
@@ -12,13 +12,13 @@ If you have an existing app, adopting Liquid Glass doesn’t mean reinventing yo
 
 ---
 
-###### See your app with Liquid Glass
+#### See your app with Liquid Glass
 
 If your app uses standard components from SwiftUI, UIKit, or AppKit, your interface picks up the latest look and feel on the latest platform releases for iOS, iPadOS, macOS, tvOS, and watchOS. In Xcode, build your app with the latest SDKs, and run it on the latest platform releases to see the changes in your interface.
 
 ---
 
-#### Visual refresh
+## Visual refresh
 
 Interfaces across Apple platforms feature a new dynamic [material](https://developer.apple.com/design/human-interface-guidelines/materials) called Liquid Glass, which combines the optical properties of glass with a sense of fluidity. This material forms a distinct functional layer for controls and navigation elements. It affects how the interface looks, feels, and moves, adapting in response to a variety of factors to help bring focus to the underlying content.
 
@@ -70,7 +70,7 @@ Interfaces across Apple platforms feature a new dynamic [material](https://devel
 
 ---
 
-#### App icons
+## App icons
 
 [App icons](https://developer.apple.com/design/human-interface-guidelines/app-icons) take on a design that’s dynamic and expressive. Updates to the icon grid result in a standardized iconography that’s visually consistent across devices and concentric with hardware and other elements across the system. App icons now contain layers, which dynamically respond to lighting and other visual effects the system provides. iOS, iPadOS, and macOS all now offer default (light), dark, clear, and tinted appearance variants, empowering people to personalize the look and feel of their Home Screen.
 
@@ -98,7 +98,7 @@ Interfaces across Apple platforms feature a new dynamic [material](https://devel
 
 ---
 
-#### Controls
+## Controls
 
 Controls have a refreshed look across platforms, and come to life when a person interacts with them. For controls like sliders and toggles, the knob transforms into Liquid Glass during interaction, and [buttons](https://developer.apple.com/design/human-interface-guidelines/buttons) fluidly morph into menus and popovers. The shape of the hardware informs the curvature of controls, so many controls adopt rounder forms to elegantly nestle into the corners of windows and displays. Controls also feature an option for an extra-large size, allowing more space for labels and accents.
 
@@ -206,7 +206,7 @@ Segmented control
 
 ---
 
-#### Navigation
+## Navigation
 
 Liquid Glass applies to the topmost layer of the interface, where you define your navigation. Key navigation elements like [tab bars](https://developer.apple.com/design/human-interface-guidelines/tab-bars) and [sidebars](https://developer.apple.com/design/human-interface-guidelines/sidebars) float in this Liquid Glass layer to help people focus on the underlying content.
 
@@ -285,7 +285,7 @@ tabBarMinimizeBehavior = .onScrollDown
 
 ---
 
-#### Menus and toolbars
+## Menus and toolbars
 
 [Menus](https://developer.apple.com/design/human-interface-guidelines/menus) have a refreshed look across platforms. They adopt Liquid Glass, and menu items for common actions use icons to help people quickly scan and identify those actions. New to iPadOS, apps also have a [menu bar](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar) for faster access to common commands.
 
@@ -343,7 +343,7 @@ You can create a fixed spacer to separate items that share a background using th
 
 ---
 
-#### Windows and modals
+## Windows and modals
 
 [Windows](https://developer.apple.com/design/human-interface-guidelines/windows) adopt rounder corners to fit controls and navigation elements. In iPadOS, apps show window controls and support continuous window resizing. Instead of transitioning between specific preset sizes, windows resize fluidly down to a minimum size.
 
@@ -391,7 +391,7 @@ An [action sheet](https://developer.apple.com/design/human-interface-guidelines/
 
 ---
 
-#### Organization and layout
+## Organization and layout
 
 Style updates to [list-based layouts](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables) help you organize and showcase your content so it can shine through the Liquid Glass layer. To give content room to breathe, organizational components like lists, tables, and forms have a larger row height and padding. Sections have an increased corner radius to match the curvature of controls across the system.
 
@@ -405,7 +405,7 @@ Style updates to [list-based layouts](https://developer.apple.com/design/human-i
 
 ---
 
-#### Search
+## Search
 
 Platform conventions for location and behavior of search optimize the experience for each device and use case. To provide an engaging search experience in your app, review these [search](https://developer.apple.com/design/human-interface-guidelines/search-fields) design conventions.
 
@@ -435,7 +435,7 @@ UISearchTab { _ in
 
 ---
 
-#### Platform considerations
+## Platform considerations
 
 Liquid Glass can have a distinct appearance and behavior across different platforms, contexts, and input methods. Test your app across devices to understand how the material looks and feels across platforms.
 

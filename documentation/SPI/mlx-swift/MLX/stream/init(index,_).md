@@ -19,7 +19,7 @@ New stream on the given device.
 init(index: Int32, _ device: Device)
 ```
 
-#### Discussion
+## Discussion
 
 Note: `index` is unused.
 

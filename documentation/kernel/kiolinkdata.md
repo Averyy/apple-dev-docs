@@ -15,7 +15,7 @@ A property of IONetworkController objects.
 #define kIOLinkData
 ```
 
-#### Discussion
+## Discussion
 
 The kIOLinkData property is a property of IONetworkController objects. It has an OSData value that contains additional information describing the active link that was established. Its interpretation is not defined.
 

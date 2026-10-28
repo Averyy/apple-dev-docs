@@ -19,11 +19,11 @@ var webPlugInContainerSelectionColor: NSColor! { get }
 @property (nonatomic, strong, readonly) NSColor * webPlugInContainerSelectionColor;
 ```
 
-#### Return Value
+## Return Value
 
 The plug-in selection color.
 
-#### Discussion
+## Discussion
 
 The color should be used for any special drawing when the plug-in is selected.
 

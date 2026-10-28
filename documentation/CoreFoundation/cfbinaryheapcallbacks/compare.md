@@ -25,7 +25,7 @@ var compare: ((UnsafeRawPointer?, UnsafeRawPointer?, UnsafeMutableRawPointer?) -
 enum CFComparisonResult (*)(const void *, const void *, void *) compare;
 ```
 
-#### Return Value
+## Return Value
 
 [`CFComparisonResult.compareLessThan`](../cfcomparisonresult/comparelessthan.md) if `ptr1` is less than `ptr2`, [`CFComparisonResult.compareEqualTo`](../cfcomparisonresult/compareequalto.md) if `ptr1` and `ptr2` are equal, or [`CFComparisonResult.compareGreaterThan`](../cfcomparisonresult/comparegreaterthan.md) if `ptr1` is greater than `ptr2`.
 

@@ -14,7 +14,7 @@ Outputs the tranpose of a matrix.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Transpose (matrix3x3f)**:
 

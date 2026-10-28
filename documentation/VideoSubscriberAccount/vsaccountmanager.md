@@ -24,7 +24,7 @@ class VSAccountManager
 @interface VSAccountManager : NSObject
 ```
 
-#### Overview
+## Overview
 
 The `VSAccountManager` object allows your app to request access from the user to communicate with their TV provider to understand system-level authentication status, send authentication requests for your app, and deep link to the TV Provider system settings.
 

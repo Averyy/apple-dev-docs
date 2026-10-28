@@ -24,11 +24,11 @@ Returns a URL for the specified relative path.
 
 - [Reducing download and storage demands with localized asset packs](../reducing-download-and-storage-demands-with-localized-asset-packs.md)
 
-#### Return Value
+## Return Value
 
 The URL to the item or `nil` if an error occurred.
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: Don’t persist the returned URL beyond the lifetime of the current process.
 

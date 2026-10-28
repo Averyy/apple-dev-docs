@@ -27,7 +27,7 @@ struct LongPressGesture
 - [Adding interactivity with gestures](./adding-interactivity-with-gestures.md)
 - [Composing SwiftUI gestures](./composing-swiftui-gestures.md)
 
-#### Overview
+## Overview
 
 To recognize a long-press gesture on a view, create and configure the gesture, then add it to the view using the [`gesture(_:including:)`](./view/gesture%28_,including%29.md) modifier.
 

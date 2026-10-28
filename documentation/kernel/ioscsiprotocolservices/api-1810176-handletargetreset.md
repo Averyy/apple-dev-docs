@@ -12,11 +12,11 @@ virtual SCSIServiceResponse HandleTargetReset (
  void );
 ```
 
-#### Return Value
+## Return Value
 
 A valid SCSIServiceResponse.
 
-#### Overview
+## Overview
 
 HandleTargetReset instructs the Protocol Services driver to reset the target.
 

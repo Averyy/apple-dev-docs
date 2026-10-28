@@ -25,7 +25,7 @@ var localizedStringsTableName: String? { get set }
 @property (copy, nullable) NSString * localizedStringsTableName;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of the property is nil, it will default to “Localizable”
 

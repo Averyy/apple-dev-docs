@@ -24,7 +24,7 @@ var hasAttitude: Bool { get }
 @property (nonatomic, readonly) BOOL hasAttitude;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the controller provides attitude data; otherwise, [`false`](../../Swift/false.md).
 

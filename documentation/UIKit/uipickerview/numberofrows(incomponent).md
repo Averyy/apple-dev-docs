@@ -22,11 +22,11 @@ func numberOfRows(inComponent component: Int) -> Int
 - (NSInteger) numberOfRowsInComponent:(NSInteger) component;
 ```
 
-#### Return Value
+## Return Value
 
 The number of rows in the given component.
 
-#### Discussion
+## Discussion
 
 A picker view fetches the value of this property from the data source and and caches it. The default value is zero.
 

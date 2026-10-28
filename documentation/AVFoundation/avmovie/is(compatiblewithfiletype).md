@@ -24,7 +24,7 @@ func `is`(compatibleWithFileType fileType: AVFileType) -> Bool
 - (BOOL) isCompatibleWithFileType:(AVFileType) fileType;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the movie only contains tracks whose media types are allowed by the specified file type; otherwise, [`false`](../../Swift/false.md).
 

@@ -22,11 +22,11 @@ class func disambiguation(with restaurantGuestsToDisambiguate: [INRestaurantGues
 + (instancetype) disambiguationWithRestaurantGuestsToDisambiguate:(NSArray<INRestaurantGuest *> *) restaurantGuestsToDisambiguate;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INRestaurantGuestResolutionResult`](../inrestaurantguestresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you cannot resolve the guest uniquely and need the user to select from a limited set of possible guests.
 

@@ -17,7 +17,7 @@ Specifies a round line cap style for endpoints for an open path when stroked.
 static const NSLineCapStyle NSRoundLineCapStyle;
 ```
 
-#### Discussion
+## Discussion
 
 Here is an example of the appearance of this style:
 

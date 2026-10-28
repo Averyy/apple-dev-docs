@@ -19,7 +19,7 @@ let NSFileManagerUnmountDissentingProcessIdentifierErrorKey: String
 extern NSString * const NSFileManagerUnmountDissentingProcessIdentifierErrorKey;
 ```
 
-#### Discussion
+## Discussion
 
 If [`unmountVolume(at:options:completionHandler:)`](./filemanager/unmountvolume%28at,options,completionhandler%29.md) fails, the error sent to its completion handler will contain a `userInfo` dictionary with this string as one of its keys. The value is the process identifier of the process that prevented the unmounting, as an [`NSNumber`](./nsnumber.md).
 

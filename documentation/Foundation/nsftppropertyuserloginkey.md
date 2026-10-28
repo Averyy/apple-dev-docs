@@ -17,7 +17,7 @@ Key for the user login, returned as an `NSString` object.
 extern NSString * const NSFTPPropertyUserLoginKey;
 ```
 
-#### Discussion
+## Discussion
 
 The default value for this key is “anonymous”.
 

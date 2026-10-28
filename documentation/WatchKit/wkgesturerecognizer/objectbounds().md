@@ -19,11 +19,11 @@ func objectBounds() -> CGRect
 - (CGRect) objectBounds;
 ```
 
-#### Return Value
+## Return Value
 
 The bounding rectangle of the interface object to which the gesture recognizer is attached.
 
-#### Discussion
+## Discussion
 
 You attach a gesture recognizer to a specific element in your storyboard file. At runtime, you use this property to get the dimensions of that element.
 

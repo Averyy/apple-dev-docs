@@ -25,11 +25,11 @@ func base64EncodedData(options: NSData.Base64EncodingOptions = []) -> Data
 - (NSData *) base64EncodedDataWithOptions:(NSDataBase64EncodingOptions) options;
 ```
 
-#### Return Value
+## Return Value
 
 A Base64, UTF-8 encoded data object.
 
-#### Discussion
+## Discussion
 
 By default, no line endings are inserted.
 

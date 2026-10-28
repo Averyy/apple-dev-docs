@@ -19,7 +19,7 @@ protocol AccessCheckHandler : NSObjectProtocol
 @protocol FSVolumeAccessCheckHandler <NSObject>
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**: This protocol replaces the [`FSVolume.AccessCheckOperations`](./accesscheckoperations.md) protocol. It exposes the same functionality, while using the [`FSCheckAccessResult`](../fscheckaccessresult.md) object, to align with all other `Handler` protocols.
 

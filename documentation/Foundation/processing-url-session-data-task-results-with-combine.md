@@ -5,11 +5,11 @@
 
 Use a chain of asynchronous operators to receive and process data fetched from a URL.
 
-#### Overview
+## Overview
 
 Performing tasks with URL sessions is inherently asynchronous; it takes time to fetch data from network endpoints, file systems, and other URL-based sources. The URL Loading System accounts for this by delivering results asynchronously to delegates or completion handlers. The [Combine](../Combine/Combine.md) framework also handles asynchronicity; using it to process your URL task results simplifies and empowers your code.
 
-##### Create a data task publisher
+### Create a data task publisher
 
 [`URLSession`](./urlsession.md) offers a Combine publisher, [`URLSession.DataTaskPublisher`](./urlsession/datataskpublisher.md), which publishes the results of fetching data from a [`URL`](./url.md) or [`URLRequest`](./urlrequest.md). You create this publisher with the method [`dataTaskPublisher(for:)`](./urlsession/datataskpublisher%28for%29-5kiir.md). When the task completes, it publishes either:
 
@@ -20,7 +20,7 @@ Unlike the completion handler passed to [`dataTask(with:completionHandler:)`](./
 
 When using [`URLSession`](./urlsession.md)’s completion handler-based code, you need to do all your work in the handler closure: error-handling, data parsing, and so on. When you instead use the data task publisher, you can move many of these responsibilities to Combine operators.
 
-##### Convert incoming raw data to your types with Combine operators
+### Convert incoming raw data to your types with Combine operators
 
 When a data task completes successfully, it delivers a block of raw [`Data`](./data.md) to your app. Most apps need to convert this data to their own types. Combine provides operators to perform these conversions, allowing you to declare a chain of processing operations.
 
@@ -50,7 +50,7 @@ cancellable = urlSession
           receiveValue: { user in print ("Received user: \(user).")})
 ```
 
-##### Retry transient errors and catch and replace persistent errors
+### Retry transient errors and catch and replace persistent errors
 
 Any app that uses the network should expect to encounter errors, and your app should handle them gracefully. Because transient network errors are fairly common, you may want to immediately retry a failed data task. With [`URLSession`](./urlsession.md)‘s completion handler idiom, you need to create a whole new task to perform a retry. With the data task publisher, you can instead use Combine’s [`retry(_:)`](../Combine/publisher/retry%28_%29.md) operator. This handles errors by recreating the subscription to the upstream publisher a specified number of times. However, since network operations are expensive, only retry a small number of times, and ensure all requests are idempotent.
 
@@ -73,7 +73,7 @@ cancellable = pub
           receiveValue: { print("Received data: \($0.data).") })
 ```
 
-##### Move work between dispatch queues with scheduling operators
+### Move work between dispatch queues with scheduling operators
 
 When using [`URLSession`](./urlsession.md)’s delegate and completion handler idioms, the session calls back to your code on a fixed [`delegateQueue`](./urlsession/delegatequeue.md). Sometimes, this means your callback code has to manually use dispatch queues or other scheduling APIs to put work on a specific queue.
 
@@ -87,7 +87,7 @@ cancellable = urlSession
           receiveValue: { print ("Received data: \($0.data).")})
 ```
 
-##### Share the result of a data task publisher with multiple subscribers
+### Share the result of a data task publisher with multiple subscribers
 
 You may want to use data from the URL endpoint in different parts of your application. Because network requests are expensive, don’t reissue them needlessly. Combine lets you use multiple subscribers to a single [`URLSession.DataTaskPublisher`](./urlsession/datataskpublisher.md), while allowing the publisher to service all of them with a single request.
 

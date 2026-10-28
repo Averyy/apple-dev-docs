@@ -24,7 +24,7 @@ var instanceAlphaOffset: Float { get set }
 @property float instanceAlphaOffset;
 ```
 
-#### Discussion
+## Discussion
 
 The `instanceAlphaOffset` is added to the alpha color component of instance `k-1` to produce the modulation color of instance k.
 

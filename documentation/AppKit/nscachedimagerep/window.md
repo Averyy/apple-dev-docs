@@ -15,7 +15,7 @@ Returns the window where the representation is cached.
 - (NSWindow *) window;
 ```
 
-#### Return Value
+## Return Value
 
 The window (typically offscreen) used to store the image.
 

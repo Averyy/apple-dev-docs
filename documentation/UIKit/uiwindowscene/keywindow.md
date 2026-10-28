@@ -23,7 +23,7 @@ var keyWindow: UIWindow? { get }
 @property (nonatomic, strong, readonly, nullable) UIWindow * keyWindow;
 ```
 
-#### Discussion
+## Discussion
 
 The key window receives keyboard and other non-touch-related events. Of a scene’s associated [`windows`](./windows.md), only one window at a time may be the key window.
 

@@ -21,7 +21,7 @@ func showCGGlyphs(_ glyphs: UnsafePointer<CGGlyph>, positions: UnsafePointer<NSP
 - (void) showCGGlyphs:(const CGGlyph *) glyphs positions:(const NSPoint *) positions count:(NSUInteger) glyphCount font:(NSFont *) font matrix:(NSAffineTransform *) textMatrix attributes:(NSDictionary<NSString *,id> *) attributes inContext:(NSGraphicsContext *) graphicsContext;
 ```
 
-#### Discussion
+## Discussion
 
 `NSLayoutManager` invokes this primitive method unless an override implementation of the deprecated [`showPackedGlyphs:length:glyphRange:atPoint:font:color:printingAdjustment:`](./showpackedglyphs_length_glyphrange_atpoint_font_color_printingadjustment_.md) method exists and this method is not overridden.
 

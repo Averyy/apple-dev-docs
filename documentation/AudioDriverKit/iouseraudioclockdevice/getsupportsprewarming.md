@@ -15,11 +15,11 @@ Returns a Boolean value that indicates clock device’s support for prewarming.
 bool GetSupportsPrewarming();
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the clock device supports prewarming; `false` otherwise.
 
-#### Discussion
+## Discussion
 
 A device that supports prewarming can enable a minimal state that allows it to be ready to start audio I/O immediately on demand.
 

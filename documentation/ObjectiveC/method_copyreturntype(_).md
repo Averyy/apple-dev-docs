@@ -25,7 +25,7 @@ func method_copyReturnType(_ m: Method) -> UnsafeMutablePointer<CChar>
 extern char *method_copyReturnType(Method m);
 ```
 
-#### Return Value
+## Return Value
 
 A C string describing the return type. You must free the string with `free()`.
 

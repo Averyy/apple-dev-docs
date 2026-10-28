@@ -20,7 +20,7 @@ class ASDiscoveredAccessory
 @interface ASDiscoveredAccessory : ASAccessory
 ```
 
-#### Overview
+## Overview
 
 When your app’s picker uses the [`filterDiscoveryResults`](./aspickerdisplaysettings/options-swift.struct/filterdiscoveryresults.md) option, you receive [`ASAccessoryEventType.accessoryDiscovered`](./asaccessoryeventtype/accessorydiscovered.md) events that contain this type. Use the discovered accessory’s Bluetooth properties to create a new [`ASDiscoveredDisplayItem`](./asdiscovereddisplayitem.md), incorporating traits like a custom accessory name or a newly downloaded product image. You can then add this item to the picker to allow the person using the app to set up the accessory.
 

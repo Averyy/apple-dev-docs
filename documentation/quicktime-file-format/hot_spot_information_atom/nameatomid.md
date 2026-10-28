@@ -6,7 +6,7 @@
 
 The ID of the string atom that contains the name of the hot spot.
 
-#### Overview
+## Overview
 
 This atom should be a sibling of the hot spot information atom. This string is displayed in the QuickTime VR controller bar when the mouse is moved over the hot spot.
 

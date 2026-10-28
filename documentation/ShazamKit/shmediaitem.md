@@ -25,7 +25,7 @@ class SHMediaItem
 @interface SHMediaItem : NSObject
 ```
 
-#### Overview
+## Overview
 
 This class uses subscripting for the data elements of a custom media item that an existing property doesn’t already represent.
 

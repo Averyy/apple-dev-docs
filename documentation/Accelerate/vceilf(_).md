@@ -25,13 +25,13 @@ func vceilf(_: vFloat) -> vFloat
 extern vFloat vceilf(vFloat );
 ```
 
-#### Return Value
+## Return Value
 
 Returns a vector of floating-point values, each of which is the ceiling of the corresponding value in `A`.
 
-#### Discussion
+## Discussion
 
-##### Parameters:
+### Parameters:
 
 - **parameter 2**: The input array, A.
 

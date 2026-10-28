@@ -17,7 +17,7 @@ The weight by which the body will be pulled towards this target shape.
 var weight: Float
 ```
 
-#### Discussion
+## Discussion
 
 Clamped between 0 and 1. A weight of 0 will effectively inactivate the target shape.
 

@@ -5,13 +5,13 @@
 
 Select an appropriate storage mode for your textures and buffers on AMD and Intel GPUs.
 
-#### Overview
+## Overview
 
 A Mac can have multiple GPUs, each with a unified or discrete memory model. In a *unified memory model*, the CPU and the GPU share system memory. However, CPU and GPU access to that memory depends on the storage mode you choose for your resources. In a *discrete memory model*, system memory is separate from video memory. System memory is accessible to both the CPU and the GPU, but video memory is accessible only to the GPU.
 
 The Metal framework’s resource storage mode API works for both unified and discrete memory models, so you don’t need to write specific code for either.
 
-##### Understand the different Metal memory modes
+### Understand the different Metal memory modes
 
 In both memory models, a resource with an [`MTLStorageMode.shared`](./mtlstoragemode/shared.md) mode resides in system memory accessible to both the CPU and the GPU. Shared resources are only available on systems with integrated graphics, such as Apple silicon and integrated GPUs on Intel-based Mac computers.
 
@@ -31,7 +31,7 @@ In both memory models, Metal optimizes CPU and GPU access to managed resources. 
 
 ![Two system diagrams that show the memory location of managed resources. The unified-memory model diagram at top shows a managed resource in system memory that connects to the GPU and CPU with bidirectional arrows. The discrete-memory model diagram below it shows a resource in video memory that connects to the GPU connected by a bidirectional arrow that has a synchronize symbol. The video memory connects to the system memory by a dashed bidirectional arrow. The system memory connects to the CPU by a bidirectional arrow that has a synchronize symbol.](https://developer.apple.com/tutorials/images/com.apple.metal/choosing-a-resource-storage-mode-for-intel-and-amd-gpus-3@2x.png)
 
-##### Choose a storage mode for resources
+### Choose a storage mode for resources
 
 Your storage mode should depend on the resource type and how your application uses storage accessed by Metal. Understanding the underlying memory architecture gives context and helps you investigate where you can optimize storage and synchronization. On Intel-based Mac computers, follow these guidelines:
 

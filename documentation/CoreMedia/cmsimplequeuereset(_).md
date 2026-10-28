@@ -25,11 +25,11 @@ func CMSimpleQueueReset(_ queue: CMSimpleQueue) -> OSStatus
 extern OSStatus CMSimpleQueueReset(CMSimpleQueueRef queue);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `noErr` if the call succeeds.
 
-#### Discussion
+## Discussion
 
 This function resets the queue to an empty state. `CMSimpleQueueReset` isn’t synchronized in any way, so the client must hold off the reader thread and writer thread during this operation.
 

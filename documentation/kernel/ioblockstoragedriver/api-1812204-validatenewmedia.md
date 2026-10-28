@@ -12,7 +12,7 @@ virtual bool validateNewMedia(
  void);
 ```
 
-#### Overview
+## Overview
 
 This method will be called whenever new media is detected. Return true to accept the media, or false to reject it (and call rejectMedia). Vendors might override this method to handle password-protection for new media.
 

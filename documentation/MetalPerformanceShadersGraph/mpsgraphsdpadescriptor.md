@@ -24,7 +24,7 @@ class MPSGraphSDPADescriptor
 @interface MPSGraphSDPADescriptor : MPSGraphObject
 ```
 
-#### Overview
+## Overview
 
 Use this descriptor with [`scaledDotProductAttention(query:key:value:descriptor:name:)`](./mpsgraph/scaleddotproductattention%28query,key,value,descriptor,name%29.md) to specify optional features such as an attention mask, causal masking, and attention sinks.
 

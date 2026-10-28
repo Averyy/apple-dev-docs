@@ -16,7 +16,7 @@ Removes an IOFireWireLib-added run loop event source.
 void (*RemoveIsochCallbackDispatcherFromRunLoop)(IOFireWireLibDeviceRef self);
 ```
 
-#### Discussion
+## Discussion
 
 Reverses the effects of AddIsochCallbackDispatcherToRunLoop(). This method removes the run loop event source that was added to the specified run loop preventing any future callbacks from being called.
 

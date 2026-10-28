@@ -19,7 +19,7 @@ convenience init(date: Date, relativeTo relativeToDate: Date?, style: CLKRelativ
 + (instancetype) textProviderWithDate:(NSDate *) date relativeToDate:(NSDate *) relativeToDate style:(CLKRelativeDateStyle) style units:(NSCalendarUnit) calendarUnits;
 ```
 
-#### Discussion
+## Discussion
 
 This initializer creates a text provider that produces a fixed, relative date. If you want a text provider that automatically updates as time passes, use [`init(date:style:units:)`](./init%28date,style,units%29.md) instead.
 

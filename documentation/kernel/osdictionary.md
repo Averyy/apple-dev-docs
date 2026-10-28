@@ -15,7 +15,7 @@ OSDictionary provides an associative store using strings for keys.
 class OSDictionary : OSCollection
 ```
 
-#### Overview
+## Overview
 
 OSDictionary is a container for Libkern C++ objects (those derived from OSMetaClassBase, in particular OSObject). Storage and access are associative, based on string-valued keys (C string, `OSString`, or [`OSSymbol`](./ossymbol.md)). When adding an object to an OSDictionary, you provide a string identifier, which can then used to retrieve that object or remove it from the dictionary. Setting an object with a key that already has an associated object replaces the original object.
 

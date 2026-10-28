@@ -20,7 +20,7 @@ var attributedStringValue: NSAttributedString { get set }
 @property (copy) NSAttributedString * attributedStringValue;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to get the value of the cell interpreted as an attributed string. The textual attributes included in the string are the default paragraph style, the cell’s font and alignment, and whether the cell is enabled and scrollable.
 

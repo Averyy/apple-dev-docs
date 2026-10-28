@@ -15,7 +15,7 @@ Converts a coordinate on the map to a point in the page’s coordinate system.
 convertCoordinateToPointOnPage(coordinate: CoordinateData): DOMPoint;
 ```
 
-#### Return Value
+## Return Value
 
 A `DOMPoint` in the page coordinates that corresponds to the provided map `coordinate`.
 

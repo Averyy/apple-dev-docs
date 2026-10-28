@@ -23,7 +23,7 @@ class NETransparentProxyProvider
 
 - [Handling Flow Copying](./handling-flow-copying.md)
 
-#### Overview
+## Overview
 
 The [`NETransparentProxyProvider`](./netransparentproxyprovider.md) class has the following behavior differences from its superclass [`NEAppProxyProvider`](./neappproxyprovider.md):
 

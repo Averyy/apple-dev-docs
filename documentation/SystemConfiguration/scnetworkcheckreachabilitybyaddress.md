@@ -17,11 +17,11 @@ Determines whether the specified network address is reachable using the current 
 Boolean SCNetworkCheckReachabilityByAddress(const struct sockaddr *address, socklen_t addrlen, SCNetworkConnectionFlags *flags);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the network connection flags are valid; `FALSE` if the status could not be determined.
 
-#### Discussion
+## Discussion
 
 This function is deprecated, but you can get equivalent results using the following code:
 

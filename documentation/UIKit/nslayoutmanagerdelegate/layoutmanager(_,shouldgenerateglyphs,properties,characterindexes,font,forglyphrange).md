@@ -23,11 +23,11 @@ optional func layoutManager(_ layoutManager: NSLayoutManager, shouldGenerateGlyp
 - (NSUInteger) layoutManager:(NSLayoutManager *) layoutManager shouldGenerateGlyphs:(const CGGlyph *) glyphs properties:(const NSGlyphProperty *) props characterIndexes:(const NSUInteger *) charIndexes font:(UIFont *) aFont forGlyphRange:(NSRange) glyphRange;
 ```
 
-#### Return Value
+## Return Value
 
 The actual glyph range stored in this method. By returning `0`, it can indicate for the layout manager to do the default processing.
 
-#### Discussion
+## Discussion
 
 This message is sent whenever the layout manager is about to store the initial glyph information via [`setGlyphs(_:properties:characterIndexes:font:forGlyphRange:)`](../nslayoutmanager/setglyphs%28_,properties,characterindexes,font,forglyphrange%29.md). To customize the initial glyph generation process, this method can invoke [`setGlyphs(_:properties:characterIndexes:font:forGlyphRange:)`](../nslayoutmanager/setglyphs%28_,properties,characterindexes,font,forglyphrange%29.md) with modified glyph information.
 

@@ -12,7 +12,7 @@ virtual void setCommandTimeout(
  UInt32timeout );
 ```
 
-#### Overview
+## Overview
 
 This sets the timeout for the ORB in milliseconds. Note that ORBs without timeouts can be "lost." You will obviously not recieve timeout notification for timeouts of zero. But perhaps less obviously you will not recieve orb reset notification, which is really a sort of accelerated timeout notification for bus reset situations.
 

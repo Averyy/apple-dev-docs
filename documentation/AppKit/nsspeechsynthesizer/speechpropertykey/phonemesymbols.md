@@ -19,7 +19,7 @@ static let phonemeSymbols: NSSpeechSynthesizer.SpeechPropertyKey
 extern NSSpeechPropertyKey const NSSpeechPhonemeSymbolsProperty;
 ```
 
-#### Discussion
+## Discussion
 
 A dictionary object that contains the phoneme symbols and example words defined for the current synthesizer.
 

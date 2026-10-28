@@ -25,11 +25,11 @@ class func resolveInstanceMethod(_ sel: Selector!) -> Bool
 + (BOOL) resolveInstanceMethod:(SEL) sel;
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](../yes.md) if the method was found and added to the receiver, otherwise [`NO`](../no.md).
 
-#### Discussion
+## Discussion
 
 This method and [`resolveClassMethod(_:)`](./resolveclassmethod%28_%29.md) allow you to dynamically provide an implementation for a given selector.
 
@@ -56,7 +56,7 @@ you can use `resolveInstanceMethod:` to dynamically add it to a class as a metho
 }
 ```
 
-##### Special Considerations
+### Special Considerations
 
 This method is called before the Objective-C forwarding mechanism is invoked. If [`responds(to:)`](../nsobjectprotocol/responds%28to%29.md) or [`instancesRespond(to:)`](./instancesrespond%28to%29.md) is invoked, the dynamic method resolver is given the opportunity to provide an `IMP` for the given selector first.
 

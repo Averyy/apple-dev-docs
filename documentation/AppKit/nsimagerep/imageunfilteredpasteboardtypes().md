@@ -21,11 +21,11 @@ class func imageUnfilteredPasteboardTypes() -> [NSPasteboard.PasteboardType]
 + (NSArray<NSString *> *) imageUnfilteredPasteboardTypes;
 ```
 
-#### Return Value
+## Return Value
 
 An array of `NSString` objects. This array is empty by default. Subclasses must override to return the list of pasteboard formats they support.
 
-#### Discussion
+## Discussion
 
 When creating a subclass of `NSImageRep`, override this method to return a list representing the supported pasteboard types. For example, the `NSBitmapImageRep` class implements code similar to the following for this method:
 

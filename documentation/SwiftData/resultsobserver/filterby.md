@@ -21,7 +21,7 @@ The predicate used to filter which models are included in the results.
 final var filterBy: Predicate<Element>? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Setting this property updates the underlying [`fetchDescriptor`](./fetchdescriptor.md)’s predicate and immediately refetches on the calling actor — results are synchronously up to date before the setter returns. Set to `nil` to remove filtering and include all models of this type.
 

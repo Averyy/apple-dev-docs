@@ -19,7 +19,7 @@ var isModalPanel: Bool { get }
 @property (readonly, getter=isModalPanel) BOOL modalPanel;
 ```
 
-#### Discussion
+## Discussion
 
 This property is key-value coding compliant.
 

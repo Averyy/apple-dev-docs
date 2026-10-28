@@ -21,11 +21,11 @@ Creates a dispatch I/O channel and associates it with the specified file descrip
 extern dispatch_io_tdispatch_io_create(dispatch_io_type_t type, dispatch_fd_t fd, dispatch_queue_t queue, void (^cleanup_handler)(int error));
 ```
 
-#### Return Value
+## Return Value
 
 The dispatch I/O channel or `NULL` if an error occurred. The returned object is retained before it is returned; it is your responsibility to close the channel and then release this object when you are done using it.
 
-#### Discussion
+## Discussion
 
 You use this function to create a dispatch I/O channel for an already open file descriptor. After calling this function, the system takes control of the specified file descriptor until one of the following occurs:
 

@@ -25,7 +25,7 @@ func CTFontCollectionCreateMatchingFontDescriptors(_ collection: CTFontCollectio
 extern CFArrayRefCTFontCollectionCreateMatchingFontDescriptors(CTFontCollectionRef collection);
 ```
 
-#### Return Value
+## Return Value
 
 A retained reference to an array of normalized font descriptors matching the collection definition.
 

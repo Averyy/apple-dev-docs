@@ -21,7 +21,7 @@ Returns a new point from the floating-point values.
 init<T>(width: T, height: T, depth: T) where T : BinaryFloatingPoint
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This function is provided as a convenience. All Spatial storage and calculations are single-precision.
 

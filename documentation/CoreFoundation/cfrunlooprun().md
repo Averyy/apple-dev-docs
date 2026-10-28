@@ -25,7 +25,7 @@ func CFRunLoopRun()
 extern void CFRunLoopRun();
 ```
 
-#### Discussion
+## Discussion
 
 The current thread’s run loop runs in the default mode (see [Default Run Loop Mode](./default-run-loop-mode.md)) until the run loop is stopped with [`CFRunLoopStop(_:)`](./cfrunloopstop%28_%29.md) or all the sources and timers are removed from the default run loop mode.
 

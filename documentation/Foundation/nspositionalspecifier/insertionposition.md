@@ -20,7 +20,7 @@ enum InsertionPosition
 enum NSInsertionPosition : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 These constants are described in [`NSPositionalSpecifier`](../nspositionalspecifier.md).
 

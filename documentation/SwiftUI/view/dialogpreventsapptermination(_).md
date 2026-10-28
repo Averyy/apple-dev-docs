@@ -16,7 +16,7 @@ nonisolated
 func dialogPreventsAppTermination(_ prevents: Bool?) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 SwiftUI uses the actions passed to the above dialogs to determine whether the dialog should block app termination by default when presented. If all of the following are satisfied, the dialog will not block app quit:
 

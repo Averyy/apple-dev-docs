@@ -23,7 +23,7 @@ Returns the properties this transition type has.
 @preconcurrency static var properties: TransitionProperties { get }
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `TransitionProperties()`.
 

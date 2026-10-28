@@ -5,11 +5,11 @@
 
 Keys for optional properties in a display mode dictionary.
 
-#### Overview
+## Overview
 
 A given key is present in a display mode dictionary only if the property applies, and is always associated with a value of `kCFBooleanTrue`. Keys not relevant to a particular display mode will not appear in the mode dictionary.
 
-##### Special Considerations
+### Special Considerations
 
 Starting in OS X v10.6, display mode dictionaries have been made obsolete by the display mode opaque type. For more information on display modes, see[Changing Display Modes (OS X v10.6 or later)](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/QuartzDisplayServicesConceptual/Articles/DisplayModes.html#//apple_ref/doc/uid/TP40004234).
 

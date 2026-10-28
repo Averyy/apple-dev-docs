@@ -21,7 +21,7 @@ Returns the intersection of two sizes.
 func intersection(_ other: Size3D) -> Size3D?
 ```
 
-#### Return Value
+## Return Value
 
 A new size that is the intersection of two sizes.
 

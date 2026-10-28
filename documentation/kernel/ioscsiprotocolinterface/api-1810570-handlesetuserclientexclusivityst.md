@@ -13,11 +13,11 @@ virtual IOReturn HandleSetUserClientExclusivityState (
  boolstate );
 ```
 
-#### Return Value
+## Return Value
 
 A valid IOReturn code indicating success or the type of failure.
 
-#### Overview
+## Overview
 
 The HandleSetUserClientExclusivityState() method is called on the serialized side of the command gate to set the exclusive access mode.
 

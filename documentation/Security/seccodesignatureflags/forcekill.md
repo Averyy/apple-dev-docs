@@ -20,7 +20,7 @@ static var forceKill: SecCodeSignatureFlags { get }
 kSecCodeSignatureForceKill
 ```
 
-#### Discussion
+## Discussion
 
 The `kSecCodeStatusKill` flag indicates that the code wishes to be terminated if it is ever invalidated. Once this is set, it cannot be cleared. Therefore, setting this option flag guarantees that the running code will always be valid, since it will die immediately if it becomes invalid.
 

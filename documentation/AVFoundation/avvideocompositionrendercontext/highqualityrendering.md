@@ -24,7 +24,7 @@ var highQualityRendering: Bool { get }
 @property (nonatomic, readonly) BOOL highQualityRendering;
 ```
 
-#### Discussion
+## Discussion
 
 Specifies that the custom compositor should use higher quality, potentially slower algorithms.
 

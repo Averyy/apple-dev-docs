@@ -25,11 +25,11 @@ func contains(_ node: SKNode) -> Bool
 - (BOOL) containsNode:(SKNode *) node;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the node in the same scene and inside the camera’s viewport; otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The camera must be part of a scene’s node hierarchy and the scene must be presented in an view.
 

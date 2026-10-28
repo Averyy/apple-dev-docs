@@ -25,7 +25,7 @@ class AVSemanticSegmentationMatte
 @interface AVSemanticSegmentationMatte : NSObject
 ```
 
-#### Overview
+## Overview
 
 The matting image stores its pixel data as [CVPixelBuffer](../CoreVideo/cvpixelbuffer-q2e.md) objects in [`kCVPixelFormatType_OneComponent8`](../CoreVideo/kcvpixelformattype_onecomponent8.md) format. The image file contains the semantic segmentation matte as an auxiliary image, accessible using the ImageIO framework’s [`CGImageSourceCopyAuxiliaryDataInfoAtIndex(_:_:_:)`](../ImageIO/cgimagesourcecopyauxiliarydatainfoatindex%28_,_,_%29.md) function.
 

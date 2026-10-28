@@ -22,7 +22,7 @@ Annotates a method declaration to indicate that it conforms to an existing metho
 
 - [Creating a Driver Using the DriverKit SDK](./creating-a-driver-using-the-driverkit-sdk.md)
 
-#### Discussion
+## Discussion
 
 Typically, you use this macro to implement DriverKit callbacks using your own custom methods. The macro lets you ignore the original method’s name and choose any name you want. Your method must still declare the same parameters and return type as the original method. For example, the following code shows how to declare a custom version of the [`DataAvailable`](./iodataqueuedispatchsource/dataavailable.md) method of [`IODataQueueDispatchSource`](./iodataqueuedispatchsource.md) in your header file.
 

@@ -21,7 +21,7 @@ Displays a prompt that asks the person for confirmation before performing the ap
 func requestConfirmation() async throws
 ```
 
-#### Discussion
+## Discussion
 
 Call this method before performing any work that might be destructive or unsafe. The method displays a prompt that asks the person to confirm or cancel the operation. The method returns normally if they confirm the operation, but throws an error if they cancel it.
 

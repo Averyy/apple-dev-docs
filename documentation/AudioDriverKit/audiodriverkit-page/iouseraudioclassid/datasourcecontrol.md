@@ -15,7 +15,7 @@ The identifier for the audio data source control class.
 DataSourceControl
 ```
 
-#### Discussion
+## Discussion
 
 This class is a subclass of the [`IOUserAudioSelectorControl`](../../iouseraudioselectorcontrol.md) class that identifies where the element’s data comes from.
 

@@ -22,7 +22,7 @@ nonisolated
 init<Y>(xStart: CGFloat? = nil, xEnd: CGFloat? = nil, y: PlottableValue<Y>, height: MarkDimension = .automatic, stacking: MarkStackingMethod = .standard) where Y : Plottable
 ```
 
-##### Discussion
+### Discussion
 
 Use this initializer to create a chart with a single vertical bar:
 

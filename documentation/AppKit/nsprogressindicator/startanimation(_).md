@@ -19,7 +19,7 @@ func startAnimation(_ sender: Any?)
 - (void) startAnimation:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 Does nothing for a determinate progress indicator.
 

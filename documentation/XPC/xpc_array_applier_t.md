@@ -25,7 +25,7 @@ typealias xpc_array_applier_t = (Int, xpc_object_t) -> Bool
 typedef _Bool (^)(unsigned long, NSObject<OS_xpc_object> *) xpc_array_applier_t;
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean indicating whether iteration should continue.
 

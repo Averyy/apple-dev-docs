@@ -21,7 +21,7 @@ An asynchronous load has been canceled.
 static var cancelled: URLError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 `URLSession` sends this error to its delegate when a task is canceled.
 

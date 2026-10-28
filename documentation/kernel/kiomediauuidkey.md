@@ -15,7 +15,7 @@ A property of IOMedia objects.
 #define kIOMediaUUIDKey
 ```
 
-#### Discussion
+## Discussion
 
 The kIOMediaUUIDKey property has an OSString value and contains a persistent Universal Unique Identifier for the media if such an identifier is available.
 

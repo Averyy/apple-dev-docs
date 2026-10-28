@@ -5,7 +5,7 @@
 
 Register an observer to be notified of changes to the photo library.
 
-#### Overview
+## Overview
 
 To be notified of changes to the photo library, use the [`register(_:)`](../Photos/phphotolibrary/register%28_%29-6y3b9.md) method to designate an observer object. Whenever you use a fetch method, such as [`fetchAssets(with:)`](../Photos/phasset/fetchassets%28with%29.md), to retrieve assets or collections, Photos automatically registers your interest in observing changes to those items. After you perform a fetch, Photos sends messages to your observer through the [`PHPhotoLibraryChangeObserver`](../Photos/phphotolibrarychangeobserver.md) protocol whenever the items in the resulting fetch request change. For example, you’ll get notified when changes add items, remove items, or reorder the list of items in the fetch result. Update your user interface based on the details you receive from [`PHChange`](../Photos/phchange.md) objects.
 

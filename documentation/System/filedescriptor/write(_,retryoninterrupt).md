@@ -25,11 +25,11 @@ func write(_ buffer: UnsafeRawBufferPointer, retryOnInterrupt: Bool = true) thro
 
 - [Adopting Swift File Operations](../adopting-file-operations.md)
 
-#### Return Value
+## Return Value
 
 The number of bytes that were written.
 
-#### Discussion
+## Discussion
 
 After writing, this method increments the file’s offset by the number of bytes written. To change the file’s offset, call the [`seek(offset:from:)`](./seek%28offset,from%29.md) method.
 

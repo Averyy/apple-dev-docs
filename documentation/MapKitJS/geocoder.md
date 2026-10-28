@@ -19,7 +19,7 @@ class Geocoder extends Service
 
 - [MapKit JS 5](./mapkit-js-5.md)
 
-#### Overview
+## Overview
 
 When using MapKit JS to show Apple Maps on a website, the geocoder handles forward and reverse geocoding. Because the framework performs geocoding on the server, the geocoder requires a network connection and handles calls asynchronously.
 

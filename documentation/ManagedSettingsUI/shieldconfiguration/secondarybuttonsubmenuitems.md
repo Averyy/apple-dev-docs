@@ -17,7 +17,7 @@ An array of strings that define the items to display in the secondary button’s
 let secondaryButtonSubmenuItems: [String]?
 ```
 
-#### Discussion
+## Discussion
 
 When you provide this array, the system displays a submenu on secondary button taps. Add up to three array elements that correspond to custom actions your app implements, for example:
 

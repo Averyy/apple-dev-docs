@@ -12,11 +12,11 @@ virtual unsigned int getDepth(
  const IORegistryPlane *plane ) const;
 ```
 
-#### Return Value
+## Return Value
 
 The maximum number of entries between the entry and the root. Zero is returned if the entry is not attached in the plane.
 
-#### Overview
+## Overview
 
 This method counts the number of entries between and entry and the registry root, in a plane, for each parent of the entry and returns the maximum value.
 

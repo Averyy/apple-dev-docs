@@ -24,7 +24,7 @@ var hardwareRevision: String { get }
 @property (nonatomic, readonly) NSString * hardwareRevision;
 ```
 
-#### Discussion
+## Discussion
 
 The format of this string is determined by the accessory manufacturer.
 

@@ -21,7 +21,7 @@ Returns a dictionary that contains the CloudKit record IDs for the specified man
 - (NSDictionary<NSManagedObjectID *,CKRecordID *> *) recordIDsForManagedObjectIDs:(NSArray<NSManagedObjectID *> *) managedObjectIDs;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary that uses `managedObjectIDs` as its keys, and the [`CKRecord.ID`](../../CloudKit/ckrecord/id.md) of each object’s underlying CloudKit record as its values. The dictionary excludes IDs that don’t have a CloudKit record.
 

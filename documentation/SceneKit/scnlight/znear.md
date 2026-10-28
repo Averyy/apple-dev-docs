@@ -25,7 +25,7 @@ var zNear: CGFloat { get set }
 @property (nonatomic) CGFloat zNear;
 ```
 
-#### Discussion
+## Discussion
 
 A spotlight casts shadows if its [`castsShadow`](./castsshadow.md) property is [`true`](../../Swift/true.md). If a surface is closer to the light than this distance, shadows are not cast against the surface.
 

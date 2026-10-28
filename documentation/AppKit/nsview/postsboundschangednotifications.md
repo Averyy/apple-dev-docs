@@ -19,7 +19,7 @@ var postsBoundsChangedNotifications: Bool { get set }
 @property BOOL postsBoundsChangedNotifications;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md) and the view’s bounds rectangle changes to a new value, the view posts a [`boundsDidChangeNotification`](./boundsdidchangenotification.md) to the default notification center. The notification is not posted when you set the bounds rectangle to the value it already has. The default value of this property is [`true`](../../Swift/true.md).
 

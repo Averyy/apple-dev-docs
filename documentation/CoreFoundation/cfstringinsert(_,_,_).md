@@ -25,7 +25,7 @@ func CFStringInsert(_ str: CFMutableString!, _ idx: CFIndex, _ insertedStr: CFSt
 extern void CFStringInsert(CFMutableStringRef str, CFIndex idx, CFStringRef insertedStr);
 ```
 
-#### Discussion
+## Discussion
 
 To accommodate the new characters, this function moves any existing characters to the right of the inserted characters the appropriate number of positions.
 

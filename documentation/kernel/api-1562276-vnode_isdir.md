@@ -15,7 +15,7 @@ Determine if a vnode is a directory.
 int vnode_isdir(vnode_t vp);
 ```
 
-#### Return Value
+## Return Value
 
 Nonzero if the vnode is of type VDIR, 0 otherwise.
 

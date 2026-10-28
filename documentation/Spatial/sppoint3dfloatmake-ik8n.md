@@ -19,11 +19,11 @@
 static SPPoint3DFloat SPPoint3DFloatMake(float x, float y, float z);
 ```
 
-#### Return Value
+## Return Value
 
 A new point.
 
-#### Discussion
+## Discussion
 
 Creates a single-precision point with the specified coordinates.
 

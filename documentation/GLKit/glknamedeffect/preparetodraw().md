@@ -23,7 +23,7 @@ func prepareToDraw()
 - (void) prepareToDraw;
 ```
 
-#### Discussion
+## Discussion
 
 An effect binds a compiled shader program to the context and returns. Many effects also bind data to other OpenGL state variables—see the appropriate reference for each effect class.
 

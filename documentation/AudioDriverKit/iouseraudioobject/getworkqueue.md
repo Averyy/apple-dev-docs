@@ -15,11 +15,11 @@ Gets the work queue created by the audio object, as a pointer to a dispatch queu
 OSSharedPtr<IODispatchQueue> GetWorkQueue();
 ```
 
-#### Return Value
+## Return Value
 
 The work queue created by the audio object.
 
-#### Discussion
+## Discussion
 
 The work queue synchronizes access to the driver’s state. Setters and getters for the object do their work on the work queue.
 

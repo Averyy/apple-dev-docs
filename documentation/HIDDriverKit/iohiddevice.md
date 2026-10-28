@@ -16,7 +16,7 @@ An object containing the low-level behavior for all HID device providers.
 class IOHIDDevice;
 ```
 
-#### Overview
+## Overview
 
 `IOHIDDevice` is the abstract base class for provider objects that represent a human interface device. This class defines the basic interface that subclasses use to manage reports. Don’t create instances of this class directly. Instead, subclass [`IOUserHIDDevice`](./iouserhiddevice.md) or [`IOUserUSBHostHIDDevice`](./iouserusbhosthiddevice.md) to define the behavior of your custom device provider.
 

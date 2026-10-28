@@ -21,7 +21,7 @@ The vertical distance between adjacent subviews.
 var verticalSpacing: CGFloat?
 ```
 
-#### Discussion
+## Discussion
 
 Set this value to `nil` to use default vertical distances between subviews.
 

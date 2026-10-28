@@ -13,11 +13,11 @@ Use advanced Metal features such as indirect command buffers, sparse textures, a
 - macOS 14.0+
 - Xcode 26.3+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with the [Metal Enhancements for A13 Bionic](http://developer.apple.com/tech-talks/608) tech talk.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 Because this sample app uses indirect command buffers, you can’t run this sample in the Simulator — you need to run it on a device. To run this sample, use one of the following:
 

@@ -24,7 +24,7 @@ class MDLLightProbe
 @interface MDLLightProbe : MDLLight
 ```
 
-#### Overview
+## Overview
 
 A light probe represents this variation either as a cube map texture or as a set of spherical harmonic coefficients. In addition to describing such light sources, the [`MDLLightProbe`](./mdllightprobe.md) class provides methods for generating light probe textures based on the contents of a scene and for generating spherical harmonic coefficients from a texture.
 

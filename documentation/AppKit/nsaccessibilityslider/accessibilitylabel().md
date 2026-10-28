@@ -20,11 +20,11 @@ func accessibilityLabel() -> String?
 - (NSString *) accessibilityLabel;
 ```
 
-#### Return Value
+## Return Value
 
 The description of the slider.
 
-#### Discussion
+## Discussion
 
 This method is the getter for the [`NSAccessibilityProtocol`](../nsaccessibilityprotocol.md) protocol’s [`accessibilityLabel`](../nsaccessibility-c.protocol/accessibilitylabel.md) property.
 

@@ -21,7 +21,7 @@ A Boolean that indicates whether the quick actions feature is enabled.
 var accessibilityQuickActionsEnabled: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 The system uses quick actions to provide users with a fast alternative interaction method. Quick actions can be presented to users with a textual banner at the top of their screen and/or an outline around a view that is already on screen.
 

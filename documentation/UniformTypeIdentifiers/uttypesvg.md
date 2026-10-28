@@ -21,7 +21,7 @@ A type that represents a scalable vector graphics (SVG) image.
 extern UTType * const UTTypeSVG;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.svg-image`.
 

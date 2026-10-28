@@ -25,7 +25,7 @@ static var outOfRange: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 A numerical result of the function was too large to fit in the available space; for example, because it exceeded a floating point number’s level of precision.
 

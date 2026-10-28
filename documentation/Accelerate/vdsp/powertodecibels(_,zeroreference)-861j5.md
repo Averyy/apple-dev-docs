@@ -21,7 +21,7 @@ Returns single-precision power values converted to decibel values.
 static func powerToDecibels<U>(_ power: U, zeroReference: Float) -> [Float] where U : AccelerateBuffer, U.Element == Float
 ```
 
-#### Discussion
+## Discussion
 
 The function uses the following calculation to perform the conversion:
 

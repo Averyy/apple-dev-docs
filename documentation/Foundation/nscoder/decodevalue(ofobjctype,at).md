@@ -27,7 +27,7 @@ func decodeValue(ofObjCType type: UnsafePointer<CChar>, at data: UnsafeMutableRa
 - (void) decodeValueOfObjCType:(const char *) type at:(void *) data;
 ```
 
-#### Discussion
+## Discussion
 
 `valueType` must contain exactly one type code, and the buffer specified by `data` must be large enough to hold the value corresponding to that type code. For information on creating an Objective-C type code suitable for `valueType`, see [Type Encodings](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Articles/ocrtTypeEncodings.html#//apple_ref/doc/uid/TP40008048-CH100).
 

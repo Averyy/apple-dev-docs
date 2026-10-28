@@ -15,7 +15,7 @@ An asynchronous sequence of incoming message notifications produced by the servi
 final var incomingMessageNotifications: some AsyncSequence<MMSService.IncomingMessageNotification, Never> { get throws }
 ```
 
-#### Discussion
+## Discussion
 
 Iterate over this sequence with a `for`-`await`-`in` loop to receive [`MMSService.IncomingMessageNotification`](./incomingmessagenotification.md) instances that indicate the arrival of incoming messages.
 

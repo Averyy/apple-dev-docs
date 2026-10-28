@@ -29,7 +29,7 @@ func makeRenderPipelineState(descriptor: MTLRenderPipelineDescriptor) async thro
 - (void) newRenderPipelineStateWithDescriptor:(MTLRenderPipelineDescriptor *) descriptor completionHandler:(MTLNewRenderPipelineStateCompletionHandler) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Use the graphics-rendering pipeline state to configure a render pass by calling the [`setRenderPipelineState(_:)`](../mtlrendercommandencoder/setrenderpipelinestate%28_%29.md) method of an [`MTLRenderCommandEncoder`](../mtlrendercommandencoder.md) instance.
 

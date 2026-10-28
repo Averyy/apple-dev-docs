@@ -4,13 +4,13 @@
 
 Displays a rating for an item.
 
-#### Overview
+## Overview
 
 Use the `ratingTemplate` element to display a rating for an item. The following figure shows the basic layout for a `ratingTemplate` page. The theme for the rating template defaults to the system preference.
 
 ![Layout diagram showing a title area above a rating area.](https://developer.apple.com/tutorials/images/com.apple.TVML/ratingtemplate-1@2x.png)
 
-##### Main Elements
+### Main Elements
 
 The following listing shows the main elements of the `ratingTemplate` element in TVML format.
 
@@ -23,12 +23,12 @@ The following listing shows the main elements of the `ratingTemplate` element in
 </document>
 ```
 
-###### Element Descriptions
+#### Element Descriptions
 
 - **[ratingBadge](./ratingbadge.md)**: The rating for the item.
 - **[title](./title.md)**: The title for the rated item.
 
-##### Example
+### Example
 
 The following listing shows the TVML for a `ratingTemplate` example. The example displays a title and a set of rating badge images, such as stars. The filled rating badge images indicate the current rating for that title. The value attribute indicates that the example title has an 80 percent favorable rating, or 4 of 5 stars.
 

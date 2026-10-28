@@ -21,7 +21,7 @@ class CPListSection
 @interface CPListSection : NSObject
 ```
 
-#### Overview
+## Overview
 
 A section contains zero or more list items. You can configure a section to display a header and a section index title, which CarPlay displays on the trailing edge of the screen. The section header and the section index title are optional.
 

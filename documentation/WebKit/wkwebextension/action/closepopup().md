@@ -23,7 +23,7 @@ func closePopup()
 - (void) closePopup;
 ```
 
-#### Discussion
+## Discussion
 
 Invoke this method to manage the pop-up’s lifecycle, ensuring the web view is unloaded and resources are released once the pop-up closes. This method is automatically called upon the dismissal of the action’s [`UIViewController`](../../../UIKit/uiviewcontroller.md) or [`NSPopover`](../../../AppKit/nspopover.md).  For custom scenarios where the pop-up’s lifecycle is manually managed, it must be explicitly invoked to ensure proper closure.
 

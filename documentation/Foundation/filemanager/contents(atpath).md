@@ -25,7 +25,7 @@ func contents(atPath path: String) -> Data?
 - (NSData *) contentsAtPath:(NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSData`](../nsdata.md) object with the contents of the file. If `path` specifies a directory, or if some other error occurs, this method returns `nil`.
 

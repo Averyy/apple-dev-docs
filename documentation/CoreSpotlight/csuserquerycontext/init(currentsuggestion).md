@@ -23,7 +23,7 @@ init(currentSuggestion: CSSuggestion?)
 + (CSUserQueryContext *) userQueryContextWithCurrentSuggestion:(CSSuggestion *) currentSuggestion;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized user query context object. Configure the properties of the returned object and use it to construct a [`CSUserQuery`](../csuserquery.md) object.
 

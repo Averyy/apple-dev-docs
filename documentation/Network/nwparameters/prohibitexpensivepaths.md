@@ -21,7 +21,7 @@ A Boolean that prevents connections, listeners, and browsers from using network 
 final var prohibitExpensivePaths: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 To test the behavior of this property, you can override the device’s current values for cellular and Wi-Fi cost in Settings > Developer > Network Override.
 

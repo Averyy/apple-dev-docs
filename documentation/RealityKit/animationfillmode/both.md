@@ -20,7 +20,7 @@ An option that displays the animation’s initial frame or final frame when play
 static let both: AnimationFillMode
 ```
 
-#### Discussion
+## Discussion
 
 For example, if you extend a hand-waving animation’s duration by one second in both directions by setting [`trimStart`](../sampledanimation/trimstart.md) to `-1.0`, and [`trimEnd`](../sampledanimation/trimend.md) to [`duration`](../sampledanimation/duration.md) + `1.0`, a [`fillMode`](../sampledanimation/fillmode.md) of `both` determines that the hand holds its initial appearance for one second before continuing to wave. Then, the animation freezes on its final hand-waving frame for one second before disappearing.
 

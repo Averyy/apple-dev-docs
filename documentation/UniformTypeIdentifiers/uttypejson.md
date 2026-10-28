@@ -21,7 +21,7 @@ A type that represents JavaScript Object Notation (JSON) data.
 extern UTType * const UTTypeJSON;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.json`.
 

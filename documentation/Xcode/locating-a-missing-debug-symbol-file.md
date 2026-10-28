@@ -5,11 +5,11 @@
 
 Find the debug symbol file (`.dSYM`) required to decode the hexadecimal address from a crash report.
 
-#### Overview
+## Overview
 
 When your crash report includes a hexadecimal address from a binary you created or a third-party binary, you need to find its companion `.dSYM` file to *symbolicate* that address. *Symbolication* is the process of replacing memory addresses in a crash log with human-readable function names and line numbers. A `.dSYM` file is a macOS bundle that contains debug symbols for a binary. The build UUID links the two files. A binary and its `.dSYM` file are compatible only when their build UUIDs match. For more information, see [Building your app to include debugging information](./building-your-app-to-include-debugging-information.md) and [Adding identifiable symbol names to a crash report](./adding-identifiable-symbol-names-to-a-crash-report.md).
 
-##### Locate the build UUID of the binary
+### Locate the build UUID of the binary
 
 The following backtrace highlights a hexadecimal address at line frame 3 from a binary named `TouchCanvas`:
 
@@ -25,7 +25,7 @@ Alternatively, you can use Xcode to find the build UUID of the binary. When you 
 
 ![A screenshot that shows the Debug navigator on the left containing a crash report and a contextual menu opened on the right displaying a list of binary images.](https://developer.apple.com/tutorials/images/com.apple.Xcode/locating-a-missing-debug-symbol-03@2x.png)
 
-##### Locate the corresponding .dSYM file
+### Locate the corresponding .dSYM file
 
 After you find the binary’s build UUID, use it to locate the corresponding `.dSYM` file. In Terminal, run the following `mdfind` command, including the quotation marks around the query:
 
@@ -53,7 +53,7 @@ If you use Xcode to archive your app, take the following additional steps:
 - Verify that you still have the Xcode archive for the version of your app that crashed. If you no longer have the archive, you can’t symbolicate the hexadecimal address for that version. To avoid this in the future, release a new version of your app and retain its Xcode archive, so you can symbolicate crash reports for the new version.
 - Add the Xcode archive to a location where Spotlight can find it, such as your home directory.
 
-##### Determine the build UUID of the .dSYM file
+### Determine the build UUID of the .dSYM file
 
 After you locate the `.dSYM` file, use `dwarfdump` to retrieve its build UUID. In Terminal, run `dwarfdump` with the `--uuid` option and the path to the `.dSYM` file:
 
@@ -68,7 +68,7 @@ The following command returns `E3EA8743-C9E6-3C68-BF04-8D51363B689D` as the buil
 UUID: E3EA8743-C9E6-3C68-BF04-8D51363B689D (arm64) /Users/.../TouchCanvas.app.dSYM/Contents/Resources/DWARF/TouchCanvas
 ```
 
-##### Confirm the build UUIDs match
+### Confirm the build UUIDs match
 
 Verify that the `.dSYM` file’s build UUID matches the binary’s build UUID. If the build UUIDs match, you can symbolicate the hexadecimal address in Xcode or from the command line. For more information, see [Adding identifiable symbol names to a crash report](./adding-identifiable-symbol-names-to-a-crash-report.md).
 

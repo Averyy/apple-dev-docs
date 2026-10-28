@@ -21,7 +21,7 @@ A Boolean value indicating whether the scalar is an ideographic description char
 var isIDSTrinaryOperator: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 Ideographic description characters are technically printable characters, but advanced rendering engines may use them to approximate ideographs that are otherwise unrepresentable.
 

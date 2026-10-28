@@ -22,7 +22,7 @@ case player
 - [Routing and streaming media to remote devices](../../routing-and-streaming-media-to-remote-devices.md)
 - [Routing media to third-party devices](../../routing-media-to-third-party-devices.md)
 
-#### Discussion
+## Discussion
 
 Use this mode when you want to use the remote device’s built-in media player instead of launching a custom application. This provides a standardized playback experience without requiring a corresponding application to be installed on the remote device.
 

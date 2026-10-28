@@ -19,7 +19,7 @@ The capture session.
 var captureSession: AVCaptureSession { get }
 ```
 
-#### Discussion
+## Discussion
 
 You can use the capture session to create a preview with [`AVCaptureVideoPreviewLayer`](../../../AVFoundation/avcapturevideopreviewlayer.md) and to configure the input device, for example switching the input camera.
 

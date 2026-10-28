@@ -26,11 +26,11 @@ func currentTime() -> CMTime
 - (CMTime) currentTime;
 ```
 
-#### Return Value
+## Return Value
 
 The current time of the current player item.
 
-#### Discussion
+## Discussion
 
 This property isn’t key-value observable. To observe the player’s time, use [`addPeriodicTimeObserver(forInterval:queue:using:)`](./addperiodictimeobserver%28forinterval,queue,using%29.md) or [`addBoundaryTimeObserver(forTimes:queue:using:)`](./addboundarytimeobserver%28fortimes,queue,using%29.md).
 

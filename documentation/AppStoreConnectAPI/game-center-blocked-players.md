@@ -5,7 +5,7 @@
 
 Block and unblock the Game Center players who can play your game.
 
-#### Overview
+## Overview
 
 Blocked players represent the Game Center players you block from playing a game. Blocking a player prevents that player from playing the game the Game Center detail belongs to, and unblocking reinstates access. Use this resource to:
 

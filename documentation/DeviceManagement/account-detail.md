@@ -9,7 +9,7 @@ Obtain the details for your account.
 **Availability**:
 - Device Assignment Services 5.0+
 
-#### Discussion
+## Discussion
 
 Each Mobile Device Management server must be registered with Apple. This endpoint provides details about the server entity to identify it uniquely throughout your organization. Each server is identifiable by either its system-generated unique identifier or by a user-provided name assigned by one of the organization’s users. Both the identifier and server name must be unique within your organization.
 

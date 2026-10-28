@@ -5,7 +5,7 @@
 
 Create immersive augmented reality experiences.
 
-#### Overview
+## Overview
 
 ARKit in visionOS offers a new set of sensing capabilities that you adopt individually in your app, using data providers to deliver updates asynchronously. The available capabilities include:
 

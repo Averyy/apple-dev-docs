@@ -19,7 +19,7 @@ func setContentSize(_ size: NSSize)
 - (void) setContentSize:(NSSize) size;
 ```
 
-#### Discussion
+## Discussion
 
 This size in turn alters the size of the `NSWindow` object itself. Note that the window server limits window sizes to 10,000; if necessary, be sure to limit `aSize` relative to the frame rectangle.
 

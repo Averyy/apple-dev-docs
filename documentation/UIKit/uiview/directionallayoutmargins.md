@@ -27,7 +27,7 @@ var directionalLayoutMargins: NSDirectionalEdgeInsets { get set }
 
 - [Positioning content within layout margins](../positioning-content-within-layout-margins.md)
 
-#### Discussion
+## Discussion
 
 Use this property to specify the desired amount of space (measured in points) between the edges of this view and its subviews. The system applies leading and trailing margins appropriately to the left or right margins based on the current layout direction. For example, the system applies the leading margin to the right edge of the view in right-to-left layouts. Set the margin values as needed for your interface.
 

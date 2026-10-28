@@ -15,7 +15,7 @@ Returns the type identifier code for the CFXMLNode opaque type.
 extern CFTypeID CFXMLNodeGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The type identifier for the CFXMLNode opaque type.
 

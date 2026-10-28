@@ -20,7 +20,7 @@ A notification that indicates when component tags change.
 static let AVAudioUnitComponentTagsDidChange: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The notification object contains the `AVAudioUnitComponent` object with the tags.
 

@@ -17,7 +17,7 @@ An object that represents a running browser rendering extension process.
 @interface BERenderingProcess : NSObject
 ```
 
-#### Overview
+## Overview
 
 A browser app may have one or more rendering extensions, each of which need a separate bundle identifier. The app can launch only one instance of each of rendering extension.
 

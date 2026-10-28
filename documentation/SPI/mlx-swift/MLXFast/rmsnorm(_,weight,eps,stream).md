@@ -19,7 +19,7 @@ Root Mean Square normalization (RMS norm).
 func rmsNorm(_ x: MLXArray, weight: MLXArray, eps: Float, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 The normalization is with respect to the last axis of the input `x`.
 

@@ -19,7 +19,7 @@ var valueWraps: Bool { get set }
 @property BOOL valueWraps;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if, when incrementing or decrementing, the value wraps around to the minimum or maximum. [`false`](../../Swift/false.md) if the value stays pinned at the minimum or maximum. The default is [`true`](../../Swift/true.md).
 

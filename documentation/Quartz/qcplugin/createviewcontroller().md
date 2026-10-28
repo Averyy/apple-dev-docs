@@ -21,11 +21,11 @@ func createViewController() -> QCPlugInViewController!
 - (QCPlugInViewController *) createViewController;
 ```
 
-#### Return Value
+## Return Value
 
 A view controller for the custom patch. Quartz Composer releases the controller when it is no longer needed. If necessary, you can return a subclass of `QCPlugInViewController`, but this it not typically done.
 
-#### Discussion
+## Discussion
 
 This extension to the `QCPlugInViewController` class  provides user-interface support for the Settings pane of the inspector for a custom patch. You must override this method if your custom patch provides a Settings pane. The `QCPlugInViewController` object acts as a controller for Cocoa bindings between the custom patch instance (the model) and the `NSView` that contains the controls. It loads the nib file from the bundle.
 

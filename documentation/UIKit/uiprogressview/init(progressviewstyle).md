@@ -23,11 +23,11 @@ convenience init(progressViewStyle style: UIProgressView.Style)
 - (instancetype) initWithProgressViewStyle:(UIProgressViewStyle) style;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized [`UIProgressView`](../uiprogressview.md) object.
 
-#### Discussion
+## Discussion
 
 [`UIProgressView`](../uiprogressview.md) sets the height of the returned view according to the specified `style`. You can set and retrieve the style of a progress view through the [`progressViewStyle`](./progressviewstyle.md) property.
 

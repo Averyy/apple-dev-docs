@@ -21,7 +21,7 @@ var url: URL? { get }
 @property (nonatomic, strong, readonly, nullable) NSURL * URL;
 ```
 
-#### Discussion
+## Discussion
 
 Use `url` to retrieve data that’s passed to an App Clip on launch, and use the data to update the user interface of the App Clip.
 

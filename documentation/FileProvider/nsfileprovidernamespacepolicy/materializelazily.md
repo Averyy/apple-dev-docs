@@ -23,7 +23,7 @@ case materializeLazily
 NSFileProviderNamespacePolicyMaterializeLazily
 ```
 
-#### Discussion
+## Discussion
 
 This is the default policy on the root.
 

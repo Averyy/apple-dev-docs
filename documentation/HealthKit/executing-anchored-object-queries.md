@@ -5,11 +5,11 @@
 
 Create and run an anchored object query.
 
-#### Overview
+## Overview
 
 Anchored object queries return changes that occurred since the previous query. These queries can also continue running in a background queue, notifying your app about any updates to the specified samples.
 
-##### Create an Anchored Object Query
+### Create an Anchored Object Query
 
 You create an anchored object query by calling the [`init(type:predicate:anchor:limit:resultsHandler:)`](./hkanchoredobjectquery/init%28type,predicate,anchor,limit,resultshandler%29.md) initializer. Start by creating the type object for the desired samples. The following example creates a type object for step counts.
 
@@ -61,7 +61,7 @@ store.execute(query)
 
 When you run the query, the system passes the current results to the results handler. If the `myAnchor` property is `nil`, the query returns all the step count data currently available in the HealthKit store. On subsequent runs, the code uses the anchor returned by the previous query. These queries return only the changes since the previous run.
 
-##### Create a Long-Running Query
+### Create a Long-Running Query
 
 Optionally, add an update handler to create a long-running query.
 

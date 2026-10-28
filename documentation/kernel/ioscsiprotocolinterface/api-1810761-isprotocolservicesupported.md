@@ -13,11 +13,11 @@ virtual bool IsProtocolServiceSupported (
  void *serviceValue ) = 0;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the feature is supported, `false` otherwise.
 
-#### Overview
+## Overview
 
 This method is called to query for support of a protocol specific service feature. Subclasses of IOSCSIProtocolServices should override this method.
 

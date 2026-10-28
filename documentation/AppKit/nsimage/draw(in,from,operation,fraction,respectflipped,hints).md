@@ -19,7 +19,7 @@ func draw(in dstSpacePortionRect: NSRect, from srcSpacePortionRect: NSRect, oper
 - (void) drawInRect:(NSRect) dstSpacePortionRect fromRect:(NSRect) srcSpacePortionRect operation:(NSCompositingOperation) op fraction:(CGFloat) requestedAlpha respectFlipped:(BOOL) respectContextIsFlipped hints:(NSDictionary<NSString *,id> *) hints;
 ```
 
-#### Discussion
+## Discussion
 
 If the `srcSpacePortionRect` and `dstSpacePortionRect` rectangles have different sizes, the source portion of the image is scaled to fit the specified destination rectangle.
 

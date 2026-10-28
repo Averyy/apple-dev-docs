@@ -24,7 +24,7 @@ case segment
 HKWorkoutEventTypeSegment
 ```
 
-#### Discussion
+## Discussion
 
 Use segments to highlight important time periods during a workout. For example, you could use different segments to mark when a runner is going up or downhill. Similarly, when swimming, you can use segments to group consecutive laps with the same style of stroke.
 

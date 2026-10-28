@@ -14,7 +14,7 @@ struct mbuf_stat {
 };
 ```
 
-#### Discussion
+## Discussion
 
 The mbuf_stat contains mbuf statistics.
 

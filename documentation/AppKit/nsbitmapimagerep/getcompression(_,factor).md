@@ -19,7 +19,7 @@ func getCompression(_ compression: UnsafeMutablePointer<NSBitmapImageRep.TIFFCom
 - (void) getCompression:(NSTIFFCompression *) compression factor:(float *) factor;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to get information on the compression type for the source image data.
 

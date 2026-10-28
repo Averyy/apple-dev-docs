@@ -17,7 +17,7 @@ The joint landmarks in normalized coordinates.
 var jointLandmarks: [simd_float2] { get }
 ```
 
-#### Discussion
+## Discussion
 
 The joint landmarks are normalized within the range [0..1] in the coordinate space of the current frame’s camera image, where 0 is the upper left, and 1 is the bottom right.
 

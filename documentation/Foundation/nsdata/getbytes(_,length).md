@@ -25,7 +25,7 @@ func getBytes(_ buffer: UnsafeMutableRawPointer, length: Int)
 - (void) getBytes:(void *) buffer length:(NSUInteger) length;
 ```
 
-#### Discussion
+## Discussion
 
 The number of bytes copied is the smaller of the `length` parameter and the [`length`](./length.md) of the data encapsulated in the object.
 

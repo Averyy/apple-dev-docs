@@ -24,7 +24,7 @@ case sine
 PHASECurveTypeSine
 ```
 
-#### Discussion
+## Discussion
 
 The function `y` `=` `sin(x)` shapes this curve. For a linear input along the `x`-axis, a sine curve gradually moves upward then downward in the `y`-direction, in a repeating fashion.
 

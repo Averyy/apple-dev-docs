@@ -19,7 +19,7 @@ var kFxPropertyKey_DrawsInScreenSpace: String { get }
 #define kFxPropertyKey_DrawsInScreenSpace
 ```
 
-#### Discussion
+## Discussion
 
 This property indicates that the drawing space behaves as if the layer its applied to is always directly in front of the camera, even if the camera moves. This is a Boolean value encoded as an `NSNumber` object.
 

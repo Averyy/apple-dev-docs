@@ -20,7 +20,7 @@ The minimum weight of each leaf node.
 var minChildWeight: Double
 ```
 
-#### Discussion
+## Discussion
 
 The minimum child weight controls when the tree building should terminate based comparing the sum of the instance weights to the [`minChildWeight`](./minchildweight.md).
 

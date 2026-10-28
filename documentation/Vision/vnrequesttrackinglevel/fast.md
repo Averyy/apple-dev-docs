@@ -16,7 +16,7 @@ case fast
 VNRequestTrackingLevelFast
 ```
 
-#### Discussion
+## Discussion
 
 This is the default option used by trackers.
 

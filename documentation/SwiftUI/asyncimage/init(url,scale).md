@@ -22,7 +22,7 @@ nonisolated
 init(url: URL?, scale: CGFloat = 1) where Content == Image
 ```
 
-#### Discussion
+## Discussion
 
 Until the image loads, SwiftUI displays a default placeholder. When the load operation completes successfully, SwiftUI updates the view to show the loaded image. If the operation fails, SwiftUI continues to display the placeholder. The following example loads and displays an icon from an example server:
 

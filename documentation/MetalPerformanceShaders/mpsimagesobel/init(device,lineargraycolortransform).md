@@ -24,7 +24,7 @@ init(device: any MTLDevice, linearGrayColorTransform transform: UnsafePointer<Fl
 - (instancetype) initWithDevice:(id<MTLDevice>) device linearGrayColorTransform:(const float *) transform;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized Sobel filter object.
 

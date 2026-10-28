@@ -20,7 +20,7 @@ Calculates the distance from a point to the bounding box.
 func distanceSquared(toPoint: SIMD3<Float>) -> Float
 ```
 
-#### Return Value
+## Return Value
 
 The square of the distance, in meters, from the point to the box.
 

@@ -14,7 +14,7 @@ Multiplies a mask to all channels of the input.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Inside (float)**:
 
@@ -60,12 +60,12 @@ Multiplies a mask to all channels of the input.
 | --- | --- |
 | `Out` | Color4 |
 
-#### Parameter descriptions
+## Parameter descriptions
 
 - **`In`**: The input value to which the mask applies.
 - **`Mask`**: The value by which the input is multiplied.
 
-#### Discussion
+## Discussion
 
 Below is an example of a simple node graph that uses the Inside node to apply a mask to a brick texture:
 

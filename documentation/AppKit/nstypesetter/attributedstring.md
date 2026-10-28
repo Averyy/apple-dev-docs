@@ -19,7 +19,7 @@ unowned(unsafe) var attributedString: NSAttributedString? { get set }
 @property (assign, nullable) NSAttributedString * attributedString;
 ```
 
-#### Return Value
+## Return Value
 
 The text backing store.
 

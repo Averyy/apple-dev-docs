@@ -21,7 +21,7 @@ A type that represents a Spotlight metadata importer bundle.
 extern UTType * const UTTypeSpotlightImporter;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.apple.metadata-importer`.
 

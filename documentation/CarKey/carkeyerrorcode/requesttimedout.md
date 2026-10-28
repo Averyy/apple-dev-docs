@@ -19,7 +19,7 @@ An error that indicates the request didn’t complete in time.
 case RequestTimedOut
 ```
 
-#### Discussion
+## Discussion
 
 A time-out can occur because of connectivity issues or other reasons.
 

@@ -24,7 +24,7 @@ var areWirelessRoutesAvailable: Bool { get }
 @property (nonatomic, readonly, getter=areWirelessRoutesAvailable) BOOL wirelessRoutesAvailable;
 ```
 
-#### Discussion
+## Discussion
 
 When set to [`true`](../../Swift/true.md), a wireless route is available for user selection. Some types of wireless routes are only discovered when the view is present in the window hierarchy.
 

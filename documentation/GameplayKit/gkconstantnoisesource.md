@@ -24,7 +24,7 @@ class GKConstantNoiseSource
 @interface GKConstantNoiseSource : GKNoiseSource
 ```
 
-#### Overview
+## Overview
 
 Constant noise can be useful as an input to [`GKNoise`](./gknoise.md) methods that create noise by combining other noise objects through various operations. For example, when using the [`displaceWithNoises(x:y:z:)`](./gknoise/displacewithnoises%28x,y,z%29.md) method you can pass constant noise for some parameters and non-constant noise for other parameters, resulting in a variable displacement along one axis but constant or no displacement along the others.
 

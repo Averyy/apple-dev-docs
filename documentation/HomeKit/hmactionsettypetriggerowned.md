@@ -24,7 +24,7 @@ let HMActionSetTypeTriggerOwned: String
 extern NSString * const HMActionSetTypeTriggerOwned;
 ```
 
-#### Discussion
+## Discussion
 
 An action set of this type is owned by a trigger and is not listed as part of the home. An action set of this type cannot be executed, renamed, or associated with a different trigger.
 

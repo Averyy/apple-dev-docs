@@ -25,7 +25,7 @@ var options: [AVMediaSelectionOption] { get }
 @property (nonatomic, readonly) NSArray<AVMediaSelectionOption *> * options;
 ```
 
-#### Discussion
+## Discussion
 
 The value of the property is an array of [`AVMediaSelectionOption`](../avmediaselectionoption.md) objects.
 

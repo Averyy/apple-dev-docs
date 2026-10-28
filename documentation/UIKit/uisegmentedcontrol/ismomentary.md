@@ -23,7 +23,7 @@ var isMomentary: Bool { get set }
 @property (nonatomic, getter=isMomentary) BOOL momentary;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`false`](../../Swift/false.md). If it’s set to [`true`](../../Swift/true.md), segments in the control don’t show selected state and don’t update the value of [`selectedSegmentIndex`](./selectedsegmentindex.md) after tracking ends.
 

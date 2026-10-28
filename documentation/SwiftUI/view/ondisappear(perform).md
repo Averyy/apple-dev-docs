@@ -22,11 +22,11 @@ nonisolated
 func onDisappear(perform action: (() -> Void)? = nil) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that triggers `action` after it disappears.
 
-#### Discussion
+## Discussion
 
 The exact moment that SwiftUI calls this method depends on the specific view type that you apply it to, but the `action` closure doesn’t execute until the view disappears from the interface.
 

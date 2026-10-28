@@ -15,7 +15,7 @@ A unique identifier the App Store server creates for its requests.
 uuid requestIdentifier
 ```
 
-#### Discussion
+## Discussion
 
 The request identifier uniquely identifies each request the App Store server sends to your server’s `Get Retention Message` endpoint. For more information, see [`DecodedRealtimeRequestBody`](./decodedrealtimerequestbody.md).
 

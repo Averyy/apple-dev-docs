@@ -21,11 +21,11 @@ Returns a tuple containing the quotient and remainder of dividing the given valu
 func dividingFullWidth(_ dividend: (high: Int64, low: Int64.Magnitude)) -> (quotient: Int64, remainder: Int64)
 ```
 
-#### Return Value
+## Return Value
 
 A tuple containing the quotient and remainder of `dividend` divided by this value.
 
-#### Discussion
+## Discussion
 
 The resulting quotient must be representable within the bounds of the type. If the quotient of dividing `dividend` by this value is too large to represent in the type, a runtime error will occur.
 

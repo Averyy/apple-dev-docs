@@ -19,11 +19,11 @@
 static SPRect3DFloat SPRect3DFloatMake(SPRect3D rect);
 ```
 
-#### Return Value
+## Return Value
 
 A new rectangle.
 
-#### Discussion
+## Discussion
 
 Returns a single-precision rectangle from a double-precision rectangle.
 

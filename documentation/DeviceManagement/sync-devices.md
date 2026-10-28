@@ -9,7 +9,7 @@ Get updates about the list of devices the server manages.
 **Availability**:
 - Device Assignment Services 5.0+
 
-#### Discussion
+## Discussion
 
 The sync service depends on a cursor returned by the fetch device service. It returns a list of all modifications (additions or deletions) since the specified cursor. The cursor passed to this endpoint should not be older than 7 days.
 

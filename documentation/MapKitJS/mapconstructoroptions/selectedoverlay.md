@@ -15,7 +15,7 @@ The selected overlay on the map.
 selectedOverlay?: Overlay;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `null.`
 

@@ -15,7 +15,7 @@ A value that determines the subtitle’s visibility.
 get subtitleVisibility(): FeatureVisibility;
 ```
 
-#### Discussion
+## Discussion
 
 You can’t set the subtitle visibility property of the map feature annotation.
 

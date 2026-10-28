@@ -25,7 +25,7 @@ init(recordZoneID: CKRecordZone.ID)
 - (instancetype) initWithRecordZoneID:(CKRecordZoneID *) recordZoneID;
 ```
 
-#### Discussion
+## Discussion
 
 A shared record zone must have the [`zoneWideSharing`](../ckrecordzone/capabilities-swift.struct/zonewidesharing.md) capability. Custom record zones that you create in the user’s private database have this capability by default. A record zone, and the records it contains, can take part in only a single share.
 

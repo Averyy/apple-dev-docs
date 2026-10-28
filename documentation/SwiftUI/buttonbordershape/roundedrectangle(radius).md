@@ -21,7 +21,7 @@ A rounded rectangle shape.
 static func roundedRectangle(radius: CGFloat) -> ButtonBorderShape
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`buttonBorderShape(_:)`](../view/buttonbordershape%28_%29.md) view modifier to apply the shape to bordered buttons within a view hierarchy.
 

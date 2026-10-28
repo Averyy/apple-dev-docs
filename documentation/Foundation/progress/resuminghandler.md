@@ -25,11 +25,11 @@ var resumingHandler: (@Sendable () -> Void)? { get set }
 @property (copy, nullable) void (^resumingHandler)();
 ```
 
-#### Discussion
+## Discussion
 
 If the receiver is a suboperation of another progress object, the system invokes the [`resumingHandler`](./resuminghandler.md) block when pausing the containing progress object.
 
-##### Special Considerations
+### Special Considerations
 
 You’re responsible for resuming any work for the progress object.
 

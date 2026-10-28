@@ -20,7 +20,7 @@ protocol CMIOExtensionDeviceSource : NSObjectProtocol
 @protocol CMIOExtensionDeviceSource <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Create a class that adopts this protocol to configure device properties.
 

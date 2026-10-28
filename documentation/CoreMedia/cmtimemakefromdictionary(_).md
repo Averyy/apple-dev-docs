@@ -25,11 +25,11 @@ func CMTimeMakeFromDictionary(_ dictionaryRepresentation: CFDictionary?) -> CMTi
 extern CMTime CMTimeMakeFromDictionary(CFDictionaryRef dictionaryRepresentation);
 ```
 
-#### Return Value
+## Return Value
 
 A time structure.
 
-#### Discussion
+## Discussion
 
 For keys in the dictionary, see [Dictionary Keys](./cmtime-dictionary-keys.md).
 

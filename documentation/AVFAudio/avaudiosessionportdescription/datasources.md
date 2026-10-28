@@ -23,7 +23,7 @@ var dataSources: [AVAudioSessionDataSourceDescription]? { get }
 @property (nonatomic, readonly, nullable) NSArray<AVAudioSessionDataSourceDescription *> * dataSources;
 ```
 
-#### Discussion
+## Discussion
 
 This feature is only supported on certain devices and peripherals; for example, the data sources represent front- and rear-facing microphones on a device.
 

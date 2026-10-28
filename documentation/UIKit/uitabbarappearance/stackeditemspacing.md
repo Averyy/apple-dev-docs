@@ -23,7 +23,7 @@ var stackedItemSpacing: CGFloat { get set }
 @property (nonatomic, assign, readwrite) CGFloat stackedItemSpacing;
 ```
 
-#### Discussion
+## Discussion
 
 When the [`stackedItemPositioning`](./stackeditempositioning.md) property is set to [`UITabBar.ItemPositioning.centered`](../uitabbar/itempositioning-swift.enum/centered.md), UIKit uses this property to determine how much space to insert between the items. The default value of this property is `0`, which causes UIKit to insert a system-defined default space between items. For any values above `0`, UIKit inserts the specified amount of space, measured in points, between the items. If you try to assign a negative number to this property, UIKit sets the value to `0` instead.
 

@@ -18,7 +18,7 @@ A recorded app state associated with a metric or diagnostic report entry.
 struct ReportedState
 ```
 
-#### Discussion
+## Discussion
 
 `ReportedState` describes a single state that your app was in during a reporting interval. It carries the domain and label identifying the state, the duration the app spent in that state, and any stable context values your app recorded with the state.
 

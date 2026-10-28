@@ -23,11 +23,11 @@ func encodeTileRender(to commandBuffer: any MTLCommandBuffer, sourceTileRGBA: an
 - (BOOL) encodeTileRenderToCommandBuffer:(id<MTLCommandBuffer>) commandBuffer sourceTileRGBA:(id<MTLTexture>) sourceTileRGBA sourceDisparity:(id<MTLTexture>) sourceDisparity destinationTileRGBA:(id<MTLTexture>) destinationTileRGBA fNumber:(float) fNumber focusDisparity:(float) focusDisparity sourceRGBASize:(CGSize) sourceRGBASize tileOffset:(CGPoint) tileOffset tileExtendOffset:(CGPoint) tileExtendOffset;
 ```
 
-#### Return Value
+## Return Value
 
 YES if encoding succeeded; NO if required resources are unavailable or if the provided parameters are incompatible.
 
-#### Discussion
+## Discussion
 
 Tiled rendering avoids allocating a full-resolution texture for large images. The source tile must be larger than the destination tile (the “extend” region) so the renderer has enough surrounding pixel context to correctly compute bokeh near tile edges. Use `minimumTileExtendRectForTileRect:sourceRGBASize:` to compute the required extended source rect.
 

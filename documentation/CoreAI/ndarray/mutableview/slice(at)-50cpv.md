@@ -22,7 +22,7 @@ consuming func slice<let indexRank : Int>(at ranges: [indexRank of any NDArray.R
 
 Available when `Element` conforms to `BitwiseCopyable`.
 
-#### Discussion
+## Discussion
 
 For example if you have a 3D NDArray and want to increment a specific region, you can slice that region and then access a span over it (or use `withUnsafeMutablePointer` if not contiguous).
 

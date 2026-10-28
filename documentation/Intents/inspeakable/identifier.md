@@ -35,7 +35,7 @@ optional var identifier: String? { get }
 @property (atomic, strong, readonly, nullable) NSString * identifier;
 ```
 
-#### Discussion
+## Discussion
 
 For phrases that are included in your app’s `AppIntentVocabulary.plist` file, this property contains the value of the `VocabularyItemIdentifier` key associated with that phrase. When determining the resolution for speakable strings, you can use this identifier (when present) to validate and resolve the term to a known phrase.
 

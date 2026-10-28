@@ -28,11 +28,11 @@ final class YAMLSnapshot
 
 - [Using reloading providers](./using-reloading-providers.md)
 
-#### Overview
+## Overview
 
 This class represents a point-in-time view of configuration values. It handles the conversion from YAML types to configuration value types.
 
-#### Usage
+## Usage
 
 Use with [`FileProvider`](./fileprovider.md) or [`ReloadingFileProvider`](./reloadingfileprovider.md):
 

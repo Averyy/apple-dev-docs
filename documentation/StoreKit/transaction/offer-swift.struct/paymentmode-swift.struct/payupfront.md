@@ -21,7 +21,7 @@ A payment mode of a product discount that applies the discount up front.
 static let payUpFront: Transaction.Offer.PaymentMode
 ```
 
-#### Discussion
+## Discussion
 
 With a Pay Up Front payment mode, subscribers pay a one-time discounted price for a specific duration.
 

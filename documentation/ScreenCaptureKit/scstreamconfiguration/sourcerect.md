@@ -20,7 +20,7 @@ var sourceRect: CGRect { get set }
 @property (nonatomic, assign) CGRect sourceRect;
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t specify a source rectangle to capture, the system captures the entire display.
 

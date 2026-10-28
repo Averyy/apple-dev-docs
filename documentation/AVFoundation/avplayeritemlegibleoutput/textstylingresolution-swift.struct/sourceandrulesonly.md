@@ -24,7 +24,7 @@ static let sourceAndRulesOnly: AVPlayerItemLegibleOutput.TextStylingResolution
 extern AVPlayerItemLegibleOutputTextStylingResolution const AVPlayerItemLegibleOutputTextStylingResolutionSourceAndRulesOnly;
 ```
 
-#### Discussion
+## Discussion
 
 You typically use this option to override the styling specified in source media. When overriding the styling, you are strongly encouraged to allow your custom styling in turn to be overridden by user preferences for text styling that are available as Media Accessibility settings. See `Media Accessibility Function` for more information.
 

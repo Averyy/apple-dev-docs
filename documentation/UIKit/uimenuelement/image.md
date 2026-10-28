@@ -23,7 +23,7 @@ var image: UIImage? { get }
 @property (nonatomic, readonly, nullable) UIImage * image;
 ```
 
-#### Discussion
+## Discussion
 
 Only the [`context`](../uimenusystem/context.md) menu system supports the display of an image, and only when the app is running in iOS.
 

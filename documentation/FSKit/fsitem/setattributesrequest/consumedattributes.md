@@ -19,7 +19,7 @@ var consumedAttributes: FSItem.Attribute { get set }
 @property (nonatomic) FSItemAttribute consumedAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 This property is a bit field in Objective-C and an [`OptionSet`](../../../Swift/optionset.md) in Swift.
 

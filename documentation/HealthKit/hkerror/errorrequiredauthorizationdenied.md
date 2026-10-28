@@ -20,7 +20,7 @@ The user hasn’t granted the application authorization to access all the requir
 static var errorRequiredAuthorizationDenied: HKError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 You can specify required clinical record types using the [`NSHealthRequiredReadAuthorizationTypeIdentifiers`](../../BundleResources/information-property-list/nshealthrequiredreadauthorizationtypeidentifiers.md) `Info.plist` key.
 

@@ -25,7 +25,7 @@ var unitsStyle: DateComponentsFormatter.UnitsStyle { get set }
 @property NSDateComponentsFormatterUnitsStyle unitsStyle;
 ```
 
-#### Discussion
+## Discussion
 
 Configures the strings to use (if any) for unit names such as days, hours, minutes, and seconds. Use this property to specify whether you want abbreviated or shortened versions of unit names—for example, `hrs` instead of `hours`.
 

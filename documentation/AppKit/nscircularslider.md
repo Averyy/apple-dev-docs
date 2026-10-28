@@ -15,7 +15,7 @@
 static const NSSliderType NSCircularSlider;
 ```
 
-#### Discussion
+## Discussion
 
 A dial representing an angular range.
 

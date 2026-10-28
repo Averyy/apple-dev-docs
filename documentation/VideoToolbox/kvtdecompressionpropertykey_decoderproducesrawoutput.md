@@ -19,7 +19,7 @@ let kVTDecompressionPropertyKey_DecoderProducesRAWOutput: CFString
 extern CFStringRef const kVTDecompressionPropertyKey_DecoderProducesRAWOutput;
 ```
 
-#### Discussion
+## Discussion
 
 If this property isn’t implemented, it’s assumed that the decoder does not produce RAW output. If the decoder reports that it produces RAW output, the [`VTDecompressionSession`](./vtdecompressionsession.md) internally invokes a [`VTRAWProcessingSession`](./vtrawprocessingsession.md) by default to produce processed output.
 

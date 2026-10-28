@@ -21,7 +21,7 @@ The definitions for the app’s intent value queries.
 var valueQueries: IntentDefinitions.DefinitionCollection<IntentValueQueryDefinition> { get }
 ```
 
-#### Discussion
+## Discussion
 
 Access individual value query definitions using subscript syntax with the query’s type name as shown in the following example:
 

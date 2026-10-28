@@ -19,11 +19,11 @@ func InvokeOSLDisposeTokenUPP(_ unneededToken: UnsafeMutablePointer<AEDesc>!, _ 
 OSErr InvokeOSLDisposeTokenUPP(AEDesc *unneededToken, OSLDisposeTokenUPP userUPP);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 See the [`OSLDisposeTokenProcPtr`](./osldisposetokenprocptr.md) callback function. 
 

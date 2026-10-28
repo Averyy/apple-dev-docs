@@ -21,7 +21,7 @@ var shortText: String? { get set }
 @property (nonatomic, copy, nullable) NSString * shortText;
 ```
 
-#### Discussion
+## Discussion
 
 The text provider uses this string before attempting to truncate the long version of your text. In this string, you might use abbreviations instead of full words or include only the most important word or characters.
 

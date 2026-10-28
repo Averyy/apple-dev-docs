@@ -25,7 +25,7 @@ class CBCharacteristic
 @interface CBCharacteristic : CBAttribute
 ```
 
-#### Overview
+## Overview
 
 [`CBCharacteristic`](./cbcharacteristic.md) and its subclass [`CBMutableCharacteristic`](./cbmutablecharacteristic.md) represent further information about a peripheral’s service. In particular, [`CBCharacteristic`](./cbcharacteristic.md) objects represent the characteristics of a remote peripheral’s service. A characteristic contains a single value and any number of descriptors describing that value. The properties of a characteristic determine how you can use a characteristic’s value, and how you access the descriptors.
 

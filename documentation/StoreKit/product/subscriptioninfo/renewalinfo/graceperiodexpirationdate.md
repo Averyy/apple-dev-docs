@@ -25,7 +25,7 @@ let gracePeriodExpirationDate: Date?
 
 - [Testing failing subscription renewals and Apple In-App Purchases](../../../testing-failing-subscription-renewals-and-in-app-purchases.md)
 
-#### Discussion
+## Discussion
 
 This value is `nil` if the subscription is not in a billing grace period.
 

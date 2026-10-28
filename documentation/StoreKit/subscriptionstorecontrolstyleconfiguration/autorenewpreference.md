@@ -21,7 +21,7 @@ The auto-renewable subscripton product that renews at the next billing cycle.
 var autoRenewPreference: Product? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`autoRenewPreference`](./autorenewpreference.md) property to identify the subscription that renews in the next billing cycle, if there is one. The property is `nil` if the customer doesn’t have an auto-renewable subscription that renews in the next billing period. This indicates that the customer turned off the auto-renew preference, or that they don’t have a current subscription.
 

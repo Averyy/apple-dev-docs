@@ -16,7 +16,7 @@ An error that indicates the action has been deprecated.
 static var actionIsDeprecatedError: AMError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use a replacement action, if available.
 

@@ -19,7 +19,7 @@ class var shared: NSPrintInfo { get set }
 @property (class, strong) NSPrintInfo * sharedPrintInfo;
 ```
 
-#### Return Value
+## Return Value
 
 The shared printer information.
 

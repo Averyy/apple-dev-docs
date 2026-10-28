@@ -22,7 +22,7 @@ nonisolated
 struct DefaultTabViewStyle
 ```
 
-#### Overview
+## Overview
 
 Use [`automatic`](./tabviewstyle/automatic.md) to construct this style.
 

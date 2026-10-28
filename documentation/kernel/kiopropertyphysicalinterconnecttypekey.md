@@ -13,7 +13,7 @@
 #define kIOPropertyPhysicalInterconnectTypeKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is used to define the Physical Interconnect to which a device is attached.
 

@@ -25,7 +25,7 @@ init(textures: [SKTexture], size: CGSize, timePerFrame: CGFloat)
 - (instancetype) initWithTextures:(NSArray<SKTexture *> *) textures size:(CGSize) size timePerFrame:(CGFloat) timePerFrame;
 ```
 
-#### Return Value
+## Return Value
 
 A new tile definition.
 

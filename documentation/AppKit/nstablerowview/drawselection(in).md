@@ -19,7 +19,7 @@ func drawSelection(in dirtyRect: NSRect)
 - (void) drawSelectionInRect:(NSRect) dirtyRect;
 ```
 
-#### Discussion
+## Discussion
 
 This method is only called if the selection should be drawn.
 

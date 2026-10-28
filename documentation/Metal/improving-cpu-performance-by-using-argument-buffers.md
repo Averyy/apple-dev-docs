@@ -5,7 +5,7 @@
 
 Optimize your app’s performance by grouping your resources into argument buffers.
 
-#### Overview
+## Overview
 
 Use argument buffers to gather multiple resources into a single shader argument. An *argument buffer* is a Metal buffer that contains references to other Metal resources, including [`MTLBuffer`](./mtlbuffer.md), [`MTLTexture`](./mtltexture.md), [`MTLSamplerState`](./mtlsamplerstate.md), and [`MTLAccelerationStructure`](./mtlaccelerationstructure.md) instances. Argument buffers use less overhead than assigning each resource individually. This is especially true for resources that don’t change between frames because you can assign the argument buffer once and reuse it many times.
 
@@ -13,7 +13,7 @@ Use argument buffers to gather multiple resources into a single shader argument.
 
 For more information on argument buffers, watch [Go bindless with Metal 3](https://developer.apple.com/videos/play/wwdc2022/10101/) and [Explore bindless rendering in Metal](https://developer.apple.com/wwdc21/10286).
 
-##### Define argument buffer formats in Metal shading language
+### Define argument buffer formats in Metal shading language
 
 Declare your argument buffers in a Metal Shading Language (MSL) source file as structures.
 
@@ -48,7 +48,7 @@ Add the following types to the structures:
 
 > **Note**:  Argument buffers can’t contain union types, although instances that adopt the [`MTLBuffer`](./mtlbuffer.md) protocol support unions.
 
-##### Encode resources into argument buffers
+### Encode resources into argument buffers
 
 Structures in regular Metal buffers define the exact layout of the data in memory. The memory layout for argument buffers depends on the GPU’s support for argument buffers and the device’s OS version. Metal divides argument buffer support into two tiers: Tier 1 and Tier 2. For Tier 2, argument buffers match the memory layout of an equivalent C structure on these OS releases:
 
@@ -78,7 +78,7 @@ You can encode resources into argument buffers using the following types:
 - [`MTLComputePipelineState`](./mtlcomputepipelinestate.md)
 - [`MTLRenderPipelineState`](./mtlrenderpipelinestate.md)
 
-##### Use heaps to improve efficiency
+### Use heaps to improve efficiency
 
 Encoding resources into argument buffers eliminates the need for the Metal driver to capture state and track residency when it assigns individual resources to the indices of a function’s argument table. Argument buffers provide greater control over resource residency, which you need to explicitly declare before issuing draw or dispatch calls.
 
@@ -86,7 +86,7 @@ When you combine resource heaps with argument buffers, you can further reduce ov
 
 Finally, argument buffers allow Metal to index resources dynamically at function execution time, which increases the limit on the number of resources that it can place inside the buffers.
 
-##### Understand argument buffer tier limits and capabilities
+### Understand argument buffer tier limits and capabilities
 
 Use the [`argumentBuffersSupport`](./mtldevice/argumentbufferssupport.md) property of the [`MTLDevice`](./mtldevice.md) instance to get its tier.
 

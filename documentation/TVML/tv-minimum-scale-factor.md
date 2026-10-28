@@ -5,15 +5,15 @@
 
 Sets the minimum size for text.
 
-#### Overview
+## Overview
 
 Use the `tv-minimum-scale-factor` style for text that does not fit in the available space.
 
-##### Values for tv-minimum-scale-factor
+### Values for tv-minimum-scale-factor
 
 - **Float**: The maximum amount, as a percentage, that a font can be minimized in order to fit in the available space. Valid values are from `0.0` to `1.0`.
 
-##### Elements that Use tv-minimum-scale-factor
+### Elements that Use tv-minimum-scale-factor
 
 - [description](./description.md)
 - [subtitle](./subtitle.md)

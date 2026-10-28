@@ -19,7 +19,7 @@ func noteFileSystemChanged(_ path: String)
 - (void) noteFileSystemChanged:(NSString *) path;
 ```
 
-#### Discussion
+## Discussion
 
 Avoid calling this method if possible. If you want to track changes to files and directories, use the FSEvents API described in `FSEvents`.
 

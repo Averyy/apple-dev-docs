@@ -24,11 +24,11 @@ optional func accountManager(_ accountManager: VSAccountManager, shouldAuthentic
 - (BOOL) accountManager:(VSAccountManager *) accountManager shouldAuthenticateAccountProviderWithIdentifier:(NSString *) accountProviderIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 Return [`true`](../../Swift/true.md) to attempt authentication with the selected provider; otherwise, return [`false`](../../Swift/false.md) to respond with an unsupported provider error.
 
-#### Discussion
+## Discussion
 
 The system calls this method when the user chooses a provider from the list of supported providers; it isn’t called if the user selects “Other TV Providers”. Use this method to temporarily refrain from authenticating the user with the supported provider during a brief outage or service degradation.
 

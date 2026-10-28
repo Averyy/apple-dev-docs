@@ -23,11 +23,11 @@ func contains(_ element: Bound) -> Bool
 
 Available when `Bound` conforms to `Comparable`.
 
-#### Return Value
+## Return Value
 
 `true` if `element` is contained in the range; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 A `ClosedRange` instance contains both its lower and upper bound. `element` is contained in the range if it is between the two bounds or equal to either bound.
 

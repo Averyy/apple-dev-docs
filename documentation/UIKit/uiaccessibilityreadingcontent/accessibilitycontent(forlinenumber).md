@@ -25,11 +25,11 @@ func accessibilityContent(forLineNumber lineNumber: Int) -> String?
 - (NSString *) accessibilityContentForLineNumber:(NSInteger) lineNumber;
 ```
 
-#### Return Value
+## Return Value
 
 A string containing the text that is associated with the specified line number, or `nil` if the line number is invalid. By default, this function returns `nil`.
 
-#### Discussion
+## Discussion
 
 The system tries to call the [`accessibilityAttributedContent(forLineNumber:)`](./accessibilityattributedcontent%28forlinenumber%29.md) method before calling this method.
 

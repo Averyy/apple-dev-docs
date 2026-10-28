@@ -24,7 +24,7 @@ typealias AudioFileStreamPropertyID = UInt32
 typedef UInt32 AudioFileStreamPropertyID;
 ```
 
-#### Discussion
+## Discussion
 
 See [Audio File Stream Properties](./api-1391506-audio-file-stream-properties.md) for possible values.
 

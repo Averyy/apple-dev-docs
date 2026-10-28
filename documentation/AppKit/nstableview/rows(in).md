@@ -19,11 +19,11 @@ func rows(in rect: NSRect) -> NSRange
 - (NSRange) rowsInRect:(NSRect) rect;
 ```
 
-#### Return Value
+## Return Value
 
 A range of indexes for the table view’s rows that lie wholly or partially within the horizontal boundaries of `aRect`. If the width or height of `aRect` is `0`, this method returns an `NSRange` whose length is `0`.
 
-#### Discussion
+## Discussion
 
 The location of the range is the index of the first row in the rectangle, and the length is the number of rows that lie in the rectangle.
 

@@ -5,7 +5,7 @@
 
 Provide additional information about a QuickTime VR movie using custom atoms.
 
-#### Overview
+## Overview
 
 If you author a QuickTime VR movie, you may choose to add custom atoms to either the VR world or node information atom containers. Those atoms can be extracted within an application to provide additional information that the application may use.
 

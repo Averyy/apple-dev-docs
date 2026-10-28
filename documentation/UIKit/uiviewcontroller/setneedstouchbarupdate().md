@@ -19,7 +19,7 @@ func setNeedsTouchBarUpdate()
 - (void) setNeedsTouchBarUpdate;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method when the value from [`childViewControllerForTouchBar`](./childviewcontrollerfortouchbar.md) changes.
 

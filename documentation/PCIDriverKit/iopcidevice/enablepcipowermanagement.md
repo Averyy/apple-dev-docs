@@ -16,11 +16,11 @@ Configures the device’s PCI bus power management capabilities.
 virtual kern_return_t EnablePCIPowerManagement(uint64_t state);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) if the specified state is supported, or another value if isn’t supported. See [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 - state: The flags for the power management capabilities you want to enable. If you specify `0xffffffff`, this method lets the [`IOPCIDevice`](../iopcidevice.md) object determine the desired state. Specify [`kPCIPMCSPowerStateD0`](../kpcipmcspowerstated0.md) to disable PCI power management. For a list of possible flags, see [Power Management Capabilities](../power-management-capabilities-enum.md).
 

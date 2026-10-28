@@ -21,7 +21,7 @@ Creates a new integer value from the given string.
 init?(_ description: String)
 ```
 
-#### Discussion
+## Discussion
 
 The string passed as `description` may begin with a plus or minus sign character (`+` or `-`), followed by one or more numeric digits (`0-9`).
 

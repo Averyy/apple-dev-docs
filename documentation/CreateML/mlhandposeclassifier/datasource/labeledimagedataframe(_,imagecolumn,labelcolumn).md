@@ -19,7 +19,7 @@ Creates a data source from a data frame that contains the location and annotatio
 case labeledImageDataFrame(DataFrame, imageColumn: String = __Defaults.imageColumnName, labelColumn: String = __Defaults.labelColumnName)
 ```
 
-#### Discussion
+## Discussion
 
 - dataFrame: A data frame that contains the locations of annotations for each hand pose image file.
 - imageColumn: The name of the column in the data frame that contains the image filenames.

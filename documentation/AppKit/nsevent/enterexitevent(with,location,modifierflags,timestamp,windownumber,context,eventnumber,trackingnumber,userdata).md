@@ -19,7 +19,7 @@ class func enterExitEvent(with type: NSEvent.EventType, location: NSPoint, modif
 + (NSEvent *) enterExitEventWithType:(NSEventType) type location:(NSPoint) location modifierFlags:(NSEventModifierFlags) flags timestamp:(NSTimeInterval) time windowNumber:(NSInteger) wNum context:(NSGraphicsContext *) unusedPassNil eventNumber:(NSInteger) eNum trackingNumber:(NSInteger) tNum userData:(void *) data;
 ```
 
-#### Return Value
+## Return Value
 
 The created `NSEvent` object or `nil` if the object could not be created.
 

@@ -23,7 +23,7 @@ Confirm this confirmation.
 func confirm(count: Int = 1)
 ```
 
-#### Discussion
+## Discussion
 
 As a convenience, this method can be called by calling the confirmation directly.
 

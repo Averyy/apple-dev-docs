@@ -25,7 +25,7 @@ var atol: Double
 double atol;
 ```
 
-#### Discussion
+## Discussion
 
 In the Fong and Saunders case, this value holds an estimate of the relative error in the data defining the matrix *A*. For example, if *A* is accurate to about six digits, set [`atol`](./atol.md) `= 1.0e-6`.
 

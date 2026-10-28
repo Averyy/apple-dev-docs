@@ -19,7 +19,7 @@ A Boolean value that indicates whether direct touches automatically draw based o
 @preconcurrency var directTouchAutomaticallyDraws: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Direct touches on the canvas behave as if `directTouchMode = .drawing` when `directTouchAutomaticallyDraws` is true, a `PKToolPicker` is visible, and the “Draw with Finger” system setting is on.
 

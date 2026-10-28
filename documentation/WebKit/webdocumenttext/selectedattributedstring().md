@@ -20,7 +20,7 @@ func selectedAttributedString() -> NSAttributedString!
 - (NSAttributedString *) selectedAttributedString;
 ```
 
-#### Return Value
+## Return Value
 
 An attributed string containing the currently selected text in the web document.
 

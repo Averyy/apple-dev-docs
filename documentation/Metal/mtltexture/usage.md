@@ -25,7 +25,7 @@ var usage: MTLTextureUsage { get }
 @property (readonly) MTLTextureUsage usage;
 ```
 
-#### Discussion
+## Discussion
 
 You set this value in an [`MTLTextureDescriptor`](../mtltexturedescriptor.md) that you then use to create the given texture. After you create the texture, its usage options don’t change.
 

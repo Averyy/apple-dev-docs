@@ -20,7 +20,7 @@ var interfaceDescriptor: UnsafePointer<IOUSBInterfaceDescriptor> { get }
 @property (readonly) const IOUSBInterfaceDescriptor * interfaceDescriptor;
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the interface’s descriptor.
 

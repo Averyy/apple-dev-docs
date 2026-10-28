@@ -19,11 +19,11 @@
 static SPProjectiveTransform3D SPProjectiveTransform3DMake(SPProjectiveTransform3DFloat transform);
 ```
 
-#### Return Value
+## Return Value
 
 A new transform.
 
-#### Discussion
+## Discussion
 
 Returns a double-precision projective transformation from a single-precision projective transformation.
 

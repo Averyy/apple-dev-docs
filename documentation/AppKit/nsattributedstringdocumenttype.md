@@ -15,7 +15,7 @@ Constants for the document type document attribute key.
 typedef NSString * NSAttributedStringDocumentType;
 ```
 
-#### Discussion
+## Discussion
 
 Use these constants as values for the [`NSDocumentTypeDocumentAttribute`](./nsdocumenttypedocumentattribute.md) key in the document attributes dictionary.
 

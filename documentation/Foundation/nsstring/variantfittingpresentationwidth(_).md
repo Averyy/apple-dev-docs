@@ -25,11 +25,11 @@ func variantFittingPresentationWidth(_ width: Int) -> String
 - (NSString *) variantFittingPresentationWidth:(NSInteger) width;
 ```
 
-#### Return Value
+## Return Value
 
 A string variation, or the original string if no variations exist for the specified width.
 
-#### Discussion
+## Discussion
 
 You can use this method to provide adaptive strings for the user’s device—that is, text that avoids truncation and maximizes available space. For example, an app running on an iPad Pro in Landscape orientation might welcome a user with the message “Greetings and Salutations!”, whereas the same app running on an iPhone SE in Portrait orientation might instead show an abbreviated welcome message, like “Hello!”.
 
@@ -62,7 +62,7 @@ print(adaptiveString.variantFittingPresentationWidth(25)) // Prints "Hello!"
 print(adaptiveString.variantFittingPresentationWidth(70)) // Prints "Greetings and Salutations!"
 ```
 
-##### Understanding How Width Variants Are Selected
+### Understanding How Width Variants Are Selected
 
 This method selects a variation for a specified width according to the following behavior:
 
@@ -71,7 +71,7 @@ This method selects a variation for a specified width according to the following
 - If no variation is found with a width less than the specified value, the variation with the smallest width is returned.
 - Otherwise, the variation with the next smallest width value is returned.
 
-##### Specifying Width Values
+### Specifying Width Values
 
 Smaller width values correspond to shorter strings, whereas larger values correspond to longer strings. By default, width values do not have an associated unit.
 

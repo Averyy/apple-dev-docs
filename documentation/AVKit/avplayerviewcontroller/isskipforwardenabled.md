@@ -19,7 +19,7 @@ var isSkipForwardEnabled: Bool { get set }
 @property (nonatomic, getter=isSkipForwardEnabled) BOOL skipForwardEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 This property affects the appearance of the forward-skipping indicator. The value you set for the player view controller’s [`skippingBehavior`](./skippingbehavior.md) property determines its forward-skipping behavior.
 

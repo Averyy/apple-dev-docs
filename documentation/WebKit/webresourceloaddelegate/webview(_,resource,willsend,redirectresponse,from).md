@@ -19,11 +19,11 @@ optional func webView(_ sender: WebView!, resource identifier: Any!, willSend re
 - (NSURLRequest *) webView:(WebView *) sender resource:(id) identifier willSendRequest:(NSURLRequest *) request redirectResponse:(NSURLResponse *) redirectResponse fromDataSource:(WebDataSource *) dataSource;
 ```
 
-#### Return Value
+## Return Value
 
 A possibly modified request.
 
-#### Discussion
+## Discussion
 
 Delegates might implement this method to modify resource requests before they are sent. Note that this method might be invoked multiple times per load (as a result of a server redirect) where as the  [`webView(_:identifierForInitialRequest:from:)`](./webview%28_,identifierforinitialrequest,from%29.md) method is invoked once.
 

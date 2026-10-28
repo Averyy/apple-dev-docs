@@ -22,11 +22,11 @@ optional func documentInteractionControllerViewForPreview(_ controller: UIDocume
 - (UIView *) documentInteractionControllerViewForPreview:(UIDocumentInteractionController *) controller;
 ```
 
-#### Return Value
+## Return Value
 
 The view to use as the starting point for the animation or `nil` if you want the document preview to fade into place.
 
-#### Discussion
+## Discussion
 
 By default, the starting rectangle for the animation is set to the bounds of the returned view. To specify a different starting rectangle, you must also override the [`documentInteractionControllerRectForPreview(_:)`](./documentinteractioncontrollerrectforpreview%28_%29.md) method.
 

@@ -17,7 +17,7 @@ The name of `array`.
 func name(for array: MLXArray) -> String?
 ```
 
-#### Discussion
+## Discussion
 
 Arrays without an assigned name are given a generated one, which is recorded so that subsequent calls return the same value.
 

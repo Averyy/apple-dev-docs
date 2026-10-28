@@ -17,7 +17,7 @@ Embeds one item; returns a unit-length float32 vector.
 func embed(_ input: Input, task: Task, dimensions: Int? = nil) async throws -> [Float]
 ```
 
-#### Discussion
+## Discussion
 
 Each media item’s soft tokens are evaluated before the next one is prepared, so only one encoder’s activations are alive at a time.
 

@@ -17,7 +17,7 @@ A traffic class for voice communication with highest priority and lowest latency
 case voice
 ```
 
-#### Discussion
+## Discussion
 
 The voice traffic class provides the highest priority and lowest latency for real-time voice communication, such as phone calls and VoIP.
 

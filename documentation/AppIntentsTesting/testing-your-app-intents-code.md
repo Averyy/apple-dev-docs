@@ -5,13 +5,13 @@
 
 Evaluate intents, entities, and queries, and verify your integration with system features like Spotlight and Siri.
 
-#### Overview
+## Overview
 
 The [App Intents](../AppIntents/AppIntents.md) framework connects your app to system features like Siri, Spotlight, and Shortcuts. When your App Intents code regresses, those integrations often break silently — people may get wrong results, custom shortcuts fail, or Spotlight search doesn’t find content without any obvious error. The App Intents Testing framework enables you to test your App Intents code, and prevent and catch regressions before they ship.
 
 Writing tests with App Intents Testing works differently from typical unit testing: you create an [`IntentDefinitions`](./intentdefinitions.md) instance with your app’s bundle identifier, then use it to look up definitions by their string name — [`AppIntentDefinition`](./appintentdefinition.md) for intents, [`AppEntityDefinition`](./appentitydefinition.md) for entities, [`AppEnumDefinition`](./appenumdefinition.md) for enumerations. Because every type is accessed by name rather than imported directly, your tests run in a UI Testing target that communicates with your app out-of-process through the real App Intents infrastructure. As a result, tests use the same code path that Siri and Shortcuts use, and they run fast enough that you can include them in frequent continuous-integration workflows.
 
-#### Set up your test target
+## Set up your test target
 
 App Intents Testing runs your intents inside a live app process, so your tests belong in a UI testing bundle rather than a unit test target. Add a new UI Testing target to your Xcode project if you don’t already have one, and make sure it uses the same code signing team as your app.
 
@@ -31,7 +31,7 @@ override func setUp() async throws {
 
 The [`IntentDefinitions`](./intentdefinitions.md) instance discovers all intent types, entity types, enums, and queries that your app registers with the system. You use this single entry point throughout your tests to look up definitions by their string name.
 
-#### Run your first intent test
+## Run your first intent test
 
 To test an intent, use the [`IntentDefinitions`](./intentdefinitions.md) instance you created, and look up the intent under test using the [`intents`](./intentdefinitions/intents.md) property. Then, create an intent instance with parameters, run it, and assert the result. The [`AppIntentDefinition`](./appintentdefinition.md) type’s [`makeIntent`](./appintentdefinition/makeintent.md) property accepts primitive parameters, for example, strings, dates, and Boolean values, and resolves them automatically.
 
@@ -46,7 +46,7 @@ func testOpenFavorites() async throws {
 
 The [`run()`](./anyappintent/run%28%29.md) method sends the intent to your running app for processing through the real App Intents infrastructure. The returned [`ResolvedIntentResult`](./resolvedintentresult.md) uses dynamic member lookup (`@dynamicMemberLookup`), so you access return-value properties by name — like `result.value.count` or `result.value.title` — without importing your app’s types.
 
-#### Test entities and enumerations
+## Test entities and enumerations
 
 [App entities](../AppIntents/app-entities.md) represent your app’s content and contain information about its data, or concepts related to its data. Think of them like the “nouns” of your app. The system queries your app for entities that match an intent’s parameter, a person’s search in Spotlight, or to understand visible onscreen content. Testing your entities and entity queries confirms that system features like Siri and Spotlight can find the right entities when people ask for them.
 
@@ -81,7 +81,7 @@ let priority = definitions
     .makeCase("high")
 ```
 
-#### Chain intents and let entities flow from one intent to another
+## Chain intents and let entities flow from one intent to another
 
 Real-world tasks often involve several intents in sequence. A person might want to find a calendar, create an event on it, and then add an attendee — and each step depends on the output of the previous one. Testing these chains of intents confirms that entity references flow correctly between intents.
 
@@ -126,7 +126,7 @@ Then, pass the result entity into a second intent to add an attendee:
 
 This test verifies the entire workflow end-to-end. If the entity identifier format changes, or if the `AddAttendee` intent doesn’t resolve the event parameter correctly, this test catches it.
 
-#### Use testing-only intents for setup and teardown
+## Use testing-only intents for setup and teardown
 
 Some tests need the app to be in a specific state before they run — a particular calendar needs to exist, or the database needs to be empty. Rather than relying on UI automation to navigate your app and set up state, create intents specifically for testing that perform app navigation or other setup tasks. Mark these intents with [`isDiscoverable`](../AppIntents/appintent/isdiscoverable.md) set to `false`, so they don’t appear in Shortcuts or Siri, and wrap them in an `#if DEBUG` block so they’re excluded from release builds:
 
@@ -158,7 +158,7 @@ func testEventCreation() async throws {
 
 This pattern keeps your tests deterministic without coupling them to navigation paths or UI structure. When the app’s interface changes, your tests continue to pass because they operate entirely using the App Intents framework.
 
-#### Test transferable conformance
+## Test transferable conformance
 
 Making your app entities conform to the [`Transferable`](../CoreTransferable/transferable.md) protocol is a key requirement for your app to support Apple Intelligence and Siri. If an entity doesn’t serialize and transfer to other apps correctly, features like drag and drop, copy and paste, or multi-turn commands for Siri don’t work or produce incorrect results.
 
@@ -188,7 +188,7 @@ func testEventTransferable() async throws {
 
 If the entity drops a property during serialization, or if the `Transferable` conformance doesn’t handle a field correctly, this test fails and indicates what went wrong.
 
-#### Verify your Spotlight indexing code
+## Verify your Spotlight indexing code
 
 To let people find your app’s content with Spotlight, your app donates app entities to the Spotlight index. Spotlight indexing bugs can be easy to introduce and hard to notice — a missing attribute or a stale index entry can silently degrade people’s search experience. The [`spotlightQuery(_:)`](./appentitydefinition/spotlightquery%28_%29.md) method lets you test your Spotlight integration directly.
 
@@ -218,7 +218,7 @@ func testAllEventsIndexed() async throws {
 }
 ```
 
-#### Test your entity annotations
+## Test your entity annotations
 
 On-screen awareness lets the system identify entities that are visible in your app’s interface. When someone asks Siri about something they can see onscreen, the system uses entity annotations that you provide to resolve the person’s sometimes ambiguous reference to what they see. For example, a person might say “update this event” when they view a calendar event on screen, and the calendar app provides an entity annotation to let the system resolve the content that “this event” refers to.
 

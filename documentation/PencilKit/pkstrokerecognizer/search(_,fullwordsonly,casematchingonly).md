@@ -23,7 +23,7 @@ final func search(_ query: String, fullWordsOnly: Bool = false, caseMatchingOnly
 
 - [Recognizing handwriting and converting it to text](../recognizing-handwriting-and-converting-to-text.md)
 
-#### Return Value
+## Return Value
 
 An array of all results found.
 

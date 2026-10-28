@@ -25,7 +25,7 @@ static let audioFallback: AVAssetTrack.AssociationType
 extern AVTrackAssociationType const AVTrackAssociationTypeAudioFallback;
 ```
 
-#### Discussion
+## Discussion
 
 A player that doesn’t support the format of the original track can use the fallback track instead. For example, an asset may contain both stereo and a 5.1-channel audio tracks. In this case, marking the stereo track as the fallback for the 5.1-channel track ensures that devices not capable of playing 5.1-channel audio can still play an equivalent track.
 

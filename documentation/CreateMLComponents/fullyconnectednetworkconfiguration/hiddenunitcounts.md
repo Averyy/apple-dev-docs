@@ -21,7 +21,7 @@ The number of neurons in each hidden layer.
 var hiddenUnitCounts: [Int]
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to a single hidden layer with 100 neurons.
 

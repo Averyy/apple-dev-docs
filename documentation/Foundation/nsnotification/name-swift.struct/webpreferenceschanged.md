@@ -15,7 +15,7 @@ Posted when the web preference settings are changed.
 static let WebPreferencesChanged: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the WebPreferences object that changed. This notification does not contain a `userInfo` dictionary.
 

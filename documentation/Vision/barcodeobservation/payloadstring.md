@@ -21,7 +21,7 @@ A string value that represents the barcode payload.
 let payloadString: String?
 ```
 
-#### Discussion
+## Discussion
 
 Depending on the symbology or the payload data itself, a string representation of the payload may not be available.
 

@@ -5,11 +5,11 @@
 
 Interpret postback properties to understand the attribution report.
 
-#### Overview
+## Overview
 
 The lists in this article describe all the possible parameters you can get in a postback. To verify that Apple signed the postback, see [Verifying a postback](./verifying-a-postback.md).
 
-#### Understand the JSON stanza the framework sends
+## Understand the JSON stanza the framework sends
 
 The JSON stanza your servers receive resembles the following:
 
@@ -30,7 +30,7 @@ The keys in this stanza may include:
 - **`jws-string`**: A compact JSON web signature (JWS) of the Apple-signed postback contents.
 - **`country-code`**: An ISO 3166-2 two-letter country identifier. For apps installed from the App Store, it comes from the location of the signed-in account at the time of the app install. For third-party marketplaces, it comes from the proof of download (POD) token the marketplace provides and represents the country the app is installed from. For more information on POD tokens, see [Supplying an install verification token](../MarketplaceKit/supplying-an-install-verification-token.md).
 
-#### Examine the JWS header for the encryption algorithm and key identifier
+## Examine the JWS header for the encryption algorithm and key identifier
 
 The JWS header of the postback consists of two parameters and resembles the following structure:
 
@@ -46,7 +46,7 @@ The keys for this structure are:
 - **`alg`**: The encryption algorithm Apple uses to sign the postback.
 - **`kid`**: The identifier of the key Apple uses to sign the postback.
 
-#### Examine the JWS payload of the postback
+## Examine the JWS payload of the postback
 
 The JWS decoded payload of the postback resembles the following structure:
 
@@ -78,13 +78,13 @@ The keys the framework delivers in this structure may include the following:
 - **`postback-identifier`**: The postback’s unique identifier.
 - **`publisher-item-identifier`**: (optional) The app ID of the app that displays the ad.
 
-#### Examine the postback’s JWS signature
+## Examine the postback’s JWS signature
 
 The signature is a combination of the JSON Web Signature (JWS) header and payload components that Apple signs using its private key.
 
 For more information about verifying the postback’s signature, see [Verifying a postback](./verifying-a-postback.md). For more information about receiving postbacks, see [Receiving postbacks in multiple conversion windows](./receiving-postbacks-in-multiple-conversion-windows.md).
 
-#### Understand the crowd anonymity controlled properties
+## Understand the crowd anonymity controlled properties
 
 To help ensure crowd anonymity, Apple assigns a postback data tier to app downloads. The postback data tier determines whether certain parameters appear in the postback, as well as the number of digits in the hierarchical source identifier. The following postback parameters are subject to the postback data tier:
 

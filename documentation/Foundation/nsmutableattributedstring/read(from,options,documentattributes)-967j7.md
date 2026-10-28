@@ -21,7 +21,7 @@ func read(from data: Data, options: [AnyHashable : Any] = [:], documentAttribute
 - (BOOL) readFromData:(NSData *) data options:(NSDictionary *) options documentAttributes:(NSDictionary **) dict;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the attributed string is created successfully or [`false`](../../Swift/false.md) if it was not.
 

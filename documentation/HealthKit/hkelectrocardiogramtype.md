@@ -24,7 +24,7 @@ class HKElectrocardiogramType
 @interface HKElectrocardiogramType : HKSampleType
 ```
 
-#### Overview
+## Overview
 
 The [`HKElectrocardiogramType`](./hkelectrocardiogramtype.md) class is a concrete subclass of the [`HKObjectType`](./hkobjecttype.md) class. To create an electrocardiogram type instance, use the object type’s [`electrocardiogramType()`](./hkobjecttype/electrocardiogramtype%28%29.md) convenience method.
 

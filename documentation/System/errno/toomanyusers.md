@@ -25,7 +25,7 @@ static var tooManyUsers: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 The quota system ran out of table entries.
 

@@ -19,7 +19,7 @@ var socketDevices: [VZSocketDevice] { get }
 @property (copy, readonly) NSArray<VZSocketDevice *> * socketDevices;
 ```
 
-#### Discussion
+## Discussion
 
 If you included a [`VZVirtioSocketDeviceConfiguration`](../vzvirtiosocketdeviceconfiguration.md) object in the configuration of your VM, this property contains a corresponding [`VZVirtioSocketDevice`](../vzvirtiosocketdevice.md) object. Use that object to configure the ports your VM makes available to the guest operating system.
 

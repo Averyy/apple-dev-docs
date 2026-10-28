@@ -25,7 +25,7 @@ func adding(_ index: Int) -> IndexPath
 - (NSIndexPath *) indexPathByAddingIndex:(NSUInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 A new index path containing the receiving index path’s indexes and `index`.
 

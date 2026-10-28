@@ -9,7 +9,7 @@ framework: "swift-argument-parser/ArgumentParser"
 **Kind**: property  
 **Role**: Type Property
 
-The completion kind to use for options or arguments of this type that don’t explicitly declare a completion kind.
+Inherited from `ExpressibleByArgument.defaultCompletionKind`.
 
 ## Declaration
 
@@ -18,10 +18,6 @@ static var defaultCompletionKind: CompletionKind { get }
 ```
 
 Available when `Self` conforms to `CaseIterable`.
-
-#### Discussion
-
-The default implementation of this property returns `.default`.
 
 
 ---

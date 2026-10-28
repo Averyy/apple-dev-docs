@@ -15,7 +15,7 @@ A Boolean value that determines whether to show the user’s location on the map
 showsUserLocation?: boolean;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `false`.
 

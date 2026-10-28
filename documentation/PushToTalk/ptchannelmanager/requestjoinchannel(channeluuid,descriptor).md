@@ -25,7 +25,7 @@ func requestJoinChannel(channelUUID: UUID, descriptor: PTChannelDescriptor)
 
 - [Creating a Push to Talk app](../creating-a-push-to-talk-app.md)
 
-#### Discussion
+## Discussion
 
 If successful, you receive a callback from [`channelManager(_:didJoinChannel:reason:)`](../ptchannelmanagerdelegate/channelmanager%28_,didjoinchannel,reason%29.md) with `PTChannelJoinReasonProgrammaticRequest`; otherwise, you receive a failure reason through [`channelManager(_:failedToJoinChannel:error:)`](../ptchannelmanagerdelegate/channelmanager%28_,failedtojoinchannel,error%29.md).
 

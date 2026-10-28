@@ -8,7 +8,7 @@ Retrieve geographic location metadata used for geo targeting.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Overview
+## Overview
 
 Geo targeting lets you focus ad delivery on specific countries, regions, cities, or postal codes associated with where the ad viewer is located.
 
@@ -17,7 +17,7 @@ Geo targeting lets you focus ad delivery on specific countries, regions, cities,
 - Apple Maps campaigns discover users based on their location while they’re using Apple Maps, not based on the business locations the ads promote.
 - The API provides dedicated endpoints for discovering valid location identifiers, which you then reference in ad group targeting dimensions.
 
-##### Query Geo Location Metadata
+### Query Geo Location Metadata
 
 App Store and Apple Maps campaigns both use the Geo Search endpoints (`GET` and `POST /v1/search/geo` ([`Query Geo Locations`](./gets-a-list-of-geo-locations.md))). The `supplySource` parameter controls which entity types appear in the results and scopes eligibility evaluation to the relevant campaign context.
 
@@ -35,7 +35,7 @@ Each result includes `id`, `legacyId` (pipe-delimited hierarchy, for example, `U
 
 By default, the API includes soft-blocked geos (low search volume, sparse coverage) with eligibility data. Pass `eligible=true` on the GET endpoint to exclude them from results.
 
-##### Target Apple Maps Campaigns by Geography
+### Target Apple Maps Campaigns by Geography
 
 For Apple Maps campaigns, geo targeting controls where the ad viewer is located when the ad is shown, not which advertiser business locations the ad group promotes. To reach users in specific geographic areas on Maps, use the `postalCode`, `locality`, and `adminArea` targeting dimensions.
 
@@ -45,7 +45,7 @@ You can view location-level reporting for Apple Maps campaigns by grouping or fi
 
 > **Note**: The `locationGroup` targeting field controls which of the advertiser’s business locations the ad group promotes. It isn’t a geo targeting dimension and doesn’t filter by the ad viewer’s location. Manage location groups via the [Managing Location Groups](./location-groups-overview.md).
 
-##### Apply Geo Targeting Dimensions to an Ad Group
+### Apply Geo Targeting Dimensions to an Ad Group
 
 You apply geo targeting through the `targeting` field on an ad group, alongside the ad group’s other audience and placement dimensions. See [`AdGroupTargeting`](./adgrouptargeting.md) for the full set of available dimensions. Each geo dimension uses a [`TargetingData`](./targetingdata.md) object with `include` and `exclude` arrays of location identifiers.
 
@@ -62,11 +62,11 @@ Dimensions can be combined. For example, target a country while excluding specif
 
 > **Note**: The `locationGroup` field isn’t a geo targeting dimension. It specifies which of the advertiser’s business locations to promote and doesn’t filter by the ad viewer’s location. See [Managing Location Groups](./location-groups-overview.md).
 
-##### Check Supported Languages by Market
+### Check Supported Languages by Market
 
 This applies to App Store campaigns only. To retrieve the languages supported for App Store advertising in each country or region, use `POST /v1/metadata/apps/supported-languages/query` ([`Query Supported App Languages`](./query-supported-app-languages.md)). The response includes `adsSupportedLanguages` and `adsDefaultLanguages` per country code. To validate creative language selection before targeting a new market, use this data.
 
-##### Report on Performance by Geography
+### Report on Performance by Geography
 
 Both Apps and Apple Maps reports support geographic breakdowns via the `groupBy` parameter. The following table lists which geographic dimensions each report type supports:
 
@@ -80,7 +80,7 @@ Both Apps and Apple Maps reports support geographic breakdowns via the `groupBy`
 
 For Apple Maps, `locationId` groups report rows by individual business location, enabling per-location performance analysis across the full campaign hierarchy.
 
-#### Use the Geo Search Endpoints
+## Use the Geo Search Endpoints
 
 Use these endpoints to retrieve and search geographic location metadata:
 

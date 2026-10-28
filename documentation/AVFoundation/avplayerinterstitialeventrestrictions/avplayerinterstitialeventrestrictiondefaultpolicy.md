@@ -21,7 +21,7 @@ The default restriction policy.
 AVPlayerInterstitialEventRestrictionDefaultPolicy
 ```
 
-#### Discussion
+## Discussion
 
 By default, an event imposes no restrictions.
 

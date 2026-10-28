@@ -24,11 +24,11 @@ init(seed: UInt64)
 - (instancetype) initWithSeed:(uint64_t) seed;
 ```
 
-#### Return Value
+## Return Value
 
 A new, independent random source.
 
-#### Discussion
+## Discussion
 
 Any two random sources initialized with the same seed data will generate the same sequence of random numbers. To replicate the behavior of an existing [`GKMersenneTwisterRandomSource`](../gkmersennetwisterrandomsource.md) instance, read that instance’s [`init(seed:)`](./init%28seed%29.md) property and then create a new instance by passing the resulting data to the [`seed`](./seed.md) initializer.
 

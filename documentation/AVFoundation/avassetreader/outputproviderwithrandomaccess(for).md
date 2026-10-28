@@ -20,7 +20,7 @@ Attaches the output to the reader and returns a tuple with an output provider fo
 func outputProviderWithRandomAccess(for output: AVAssetReaderOutput) -> sending (AVAssetReaderOutput.Provider<CMReadySampleBuffer<CMSampleBuffer.DynamicContent>>, AVAssetReaderOutput.RandomAccessController)
 ```
 
-#### Return Value
+## Return Value
 
 A tuple with an output provider for reading sample buffers, and an associated random access controller.
 

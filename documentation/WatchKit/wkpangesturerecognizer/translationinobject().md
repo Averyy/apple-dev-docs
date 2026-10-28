@@ -19,11 +19,11 @@ func translationInObject() -> CGPoint
 - (CGPoint) translationInObject;
 ```
 
-#### Return Value
+## Return Value
 
 A point representing the translation value relative to the current object’s coordinate system.
 
-#### Discussion
+## Discussion
 
 The x and y values report the total translation over time. They are not delta values from the last time that the translation was reported.
 

@@ -25,7 +25,7 @@ let CBUUIDL2CAPPSMCharacteristicString: String
 extern NSString * const CBUUIDL2CAPPSMCharacteristicString;
 ```
 
-#### Discussion
+## Discussion
 
 This PSM is a little-endian [`UInt16`](../Swift/uint16.md). Servers can publish this characteristic with the UUID `ABDD3056-28FA-441D-A470-55A75A52553A`.
 

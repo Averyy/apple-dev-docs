@@ -23,7 +23,7 @@ string KeywordDisplayStatus
 - `AD_GROUP_ON_HOLD`: The keyword’s parent ad group is on hold, stopping keyword delivery.
 - `CAMPAIGN_ON_HOLD`: The keyword’s parent campaign is on hold, stopping keyword delivery.
 
-#### Discussion
+## Discussion
 
 The `KeywordDisplayStatus` is a read-only derived field on [`Keyword`](./keyword.md) that summarizes why a keyword is or isn’t participating in auctions. It accounts for the keyword’s own status and the status of its parent ad group and campaign. Use this field when displaying keyword health in a UI.
 

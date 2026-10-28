@@ -19,7 +19,7 @@ var kFxError_NoMediaFolder: Int { get }
 kFxError_NoMediaFolder
 ```
 
-#### Discussion
+## Discussion
 
 The project may not have a media folder either because it hasn’t been saved yet or because it was saved without the user checking “Collect Media.”
 

@@ -22,7 +22,7 @@ var frameWidth: Int { get }
 @property (nonatomic, readonly) NSInteger frameWidth;
 ```
 
-#### Discussion
+## Discussion
 
 The maximum value is 8192 pixels for macOS, and 4096 pixels for iOS.
 

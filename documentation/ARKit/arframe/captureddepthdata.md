@@ -20,7 +20,7 @@ var capturedDepthData: AVDepthData? { get }
 @property (nonatomic, strong, readonly, nullable) AVDepthData * capturedDepthData;
 ```
 
-#### Discussion
+## Discussion
 
 Frames vended by the session contain a depth map captured by the depth sensor in addition to the color pixel buffer (see [`capturedImage`](./capturedimage.md)) captured by the color camera. The depth-sensing camera provides data at a different frame rate than the color camera, so this property’s value can be `nil` if no depth data was captured at the same time as the current color image.
 

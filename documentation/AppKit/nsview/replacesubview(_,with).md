@@ -19,7 +19,7 @@ func replaceSubview(_ oldView: NSView, with newView: NSView)
 - (void) replaceSubview:(NSView *) oldView with:(NSView *) newView;
 ```
 
-#### Discussion
+## Discussion
 
 This method does nothing if `oldView` is not a subview of the view.
 

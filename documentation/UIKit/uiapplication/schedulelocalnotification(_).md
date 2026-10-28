@@ -23,7 +23,7 @@ func scheduleLocalNotification(_ notification: UILocalNotification)
 - (void) scheduleLocalNotification:(UILocalNotification *) notification;
 ```
 
-#### Discussion
+## Discussion
 
 Prior to scheduling any local notifications, you must call the [`registerUserNotificationSettings(_:)`](./registerusernotificationsettings%28_%29.md) method to let the system know what types of alerts, if any, you plan to display to the user.
 

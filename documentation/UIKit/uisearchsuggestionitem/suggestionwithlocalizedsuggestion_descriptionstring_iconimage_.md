@@ -19,7 +19,7 @@ Creates a search suggestion with the specified text and image attributes.
 + (instancetype) suggestionWithLocalizedSuggestion:(NSString *) suggestion descriptionString:(NSString *) description iconImage:(UIImage *) iconImage;
 ```
 
-#### Return Value
+## Return Value
 
 A new search suggestion.
 

@@ -25,11 +25,11 @@ func CFPlugInIsLoadOnDemand(_ plugIn: CFPlugIn!) -> Bool
 extern Boolean CFPlugInIsLoadOnDemand(CFPlugInRef plugIn);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the plug-in is loaded only when a client requests an instance of a supported type, otherwise  `false`.
 
-#### Discussion
+## Discussion
 
 Plug-ins that do static registration are load on demand by default. Plug-ins that do dynamic registration are not load on demand by default.
 

@@ -15,7 +15,7 @@ An error that indicates the image is currently in use as part of a message, so y
 object ImageInUseError
 ```
 
-#### Overview
+## Overview
 
 The [`Delete Image`](./delete-image.md) endpoint returns this error if a configured message uses the [`imageIdentifier`](./imageidentifier.md). To delete an image, first delete all messages that include the image.
 

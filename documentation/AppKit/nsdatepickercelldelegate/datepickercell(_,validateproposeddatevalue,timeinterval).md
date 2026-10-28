@@ -20,7 +20,7 @@ optional func datePickerCell(_ datePickerCell: NSDatePickerCell, validatePropose
 - (void) datePickerCell:(NSDatePickerCell *) datePickerCell validateProposedDateValue:(NSDate **) proposedDateValue timeInterval:(NSTimeInterval *) proposedTimeInterval;
 ```
 
-#### Discussion
+## Discussion
 
 When returning a new `proposedDateValue`, the `NSDate` instance should be autoreleased, and the `proposedDateValue` should not be released by the delegate.
 

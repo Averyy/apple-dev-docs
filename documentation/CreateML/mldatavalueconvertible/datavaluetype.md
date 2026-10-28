@@ -21,7 +21,7 @@ The underlying type the conforming type uses when it wraps itself in a data valu
 static var dataValueType: MLDataValue.ValueType { get }
 ```
 
-#### Discussion
+## Discussion
 
 See [`MLDataValue.ValueType`](../mldatavalue/valuetype.md) for a list of available options.
 

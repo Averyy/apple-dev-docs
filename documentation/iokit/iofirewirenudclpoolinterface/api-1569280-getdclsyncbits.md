@@ -14,7 +14,7 @@
 UInt8 (*GetDCLSyncBits)(NuDCLRef dcl);
 ```
 
-#### Discussion
+## Discussion
 
 Description forthcoming
 

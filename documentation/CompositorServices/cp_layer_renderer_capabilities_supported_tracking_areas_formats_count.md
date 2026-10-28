@@ -16,11 +16,11 @@ Returns the number of tracking areas formats the specified layer supports.
 size_t cp_layer_renderer_capabilities_supported_tracking_areas_formats_count(cp_layer_renderer_capabilities_t layer_capabilities);
 ```
 
-#### Return Value
+## Return Value
 
 The number of tracking areas formats the layer supports.
 
-#### Discussion
+## Discussion
 
 To iterate over the index formats, use the [`cp_layer_renderer_capabilities_supported_tracking_areas_format`](./cp_layer_renderer_capabilities_supported_tracking_areas_format.md) function.
 

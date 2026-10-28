@@ -5,11 +5,11 @@
 
 Update your server-side code to use new features, and test your code against API changes.
 
-#### Overview
+## Overview
 
 App Store Connect API version 2.1 provides resources that enable you to automate actions you take in App Store Connect.
 
-##### New features
+### New features
 
 - The [`ScreenshotDisplayType`](./screenshotdisplaytype.md) and [`PreviewType`](./previewtype.md) objects add values that enable you to submit screenshots and app previews for iPhone 14, iPhone 14 Plus, iPhone 14 Pro, iPhone 14 Pro Max, Apple Watch Series 8, and Apple Watch Ultra.
 

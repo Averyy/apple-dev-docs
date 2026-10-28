@@ -17,11 +17,11 @@ Retrieves the authorization reference passed by the AuthorizationExecuteWithPriv
 OSStatus AuthorizationCopyPrivilegedReference(AuthorizationRef*authorization, AuthorizationFlags flags);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Authorization Services Result Codes](./authorization-services-result-codes.md).
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This function is deprecated. Use a `launchd`-launched helper tool and/or the Service Management framework for this functionality.
 

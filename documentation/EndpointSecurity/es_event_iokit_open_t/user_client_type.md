@@ -20,7 +20,7 @@ var user_client_type: UInt32
 uint32_t user_client_type;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this type and its semantics depend on the kernel extension the caller is connecting to.
 

@@ -17,7 +17,7 @@ class var defaultMeasureOptions: XCTMeasureOptions { get }
 @property (class, copy, readonly) XCTMeasureOptions * defaultMeasureOptions;
 ```
 
-#### Discussion
+## Discussion
 
 The default measurement options the test uses when you call [`measure(_:)`](./measure%28_%29.md). Subclasses of [`XCTestCase`](../xctestcase.md) can override this property to change the default measurement options.
 

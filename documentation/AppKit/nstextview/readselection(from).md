@@ -19,11 +19,11 @@ func readSelection(from pboard: NSPasteboard) -> Bool
 - (BOOL) readSelectionFromPasteboard:(NSPasteboard *) pboard;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the data was successfully read, [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 This method invokes the [`preferredPasteboardType(from:restrictedToTypesFrom:)`](./preferredpasteboardtype%28from,restrictedtotypesfrom%29.md) method to determine the text view’s preferred type of data and then reads the data using the [`readSelection(from:type:)`](./readselection%28from,type%29.md) method.
 

@@ -19,7 +19,7 @@ var objectValue: Any? { get set }
 @property (strong, nullable) id objectValue;
 ```
 
-#### Discussion
+## Discussion
 
 The `objectValue` is automatically set by the table when using bindings or is the object returned by the [`NSTableViewDataSource`](../nstableviewdatasource.md) protocol method [`tableView(_:objectValueFor:row:)`](../nstableviewdatasource/tableview%28_,objectvaluefor,row%29.md).
 

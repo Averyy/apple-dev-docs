@@ -15,7 +15,7 @@ Set the handler for receiving sharing status updates.
 extern void ar_shared_coordinate_space_provider_set_sharing_status_update_handler(ar_shared_coordinate_space_provider_t shared_coordinate_space_provider, dispatch_queue_t status_updates_queue, ar_shared_coordinate_space_sharing_status_update_handler_t sharing_status_update_handler);
 ```
 
-#### Discussion
+## Discussion
 
 Set the sharing status update handler to be informed when the provider starts producing data and when the user can push data.
 

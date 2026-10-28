@@ -20,11 +20,11 @@ func accessibilitySelectedChildren() -> [Any]?
 - (NSArray *) accessibilitySelectedChildren;
 ```
 
-#### Return Value
+## Return Value
 
 An array containing the currently selected children. If no children are selected, this method returns an empty array.
 
-#### Discussion
+## Discussion
 
 This method is the getter for the [`NSAccessibilityProtocol`](../nsaccessibilityprotocol.md) protocol’s [`accessibilitySelectedChildren`](../nsaccessibility-c.protocol/accessibilityselectedchildren.md) property.
 

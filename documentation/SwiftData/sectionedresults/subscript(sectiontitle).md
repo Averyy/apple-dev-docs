@@ -21,7 +21,7 @@ Returns the section with the given title, or `nil` if no such section exists.
 subscript(sectionTitle title: SectionTitle) -> ResultsSection<Element, SectionTitle>? { get }
 ```
 
-#### Overview
+## Overview
 
 > **Complexity**: O(1)
 

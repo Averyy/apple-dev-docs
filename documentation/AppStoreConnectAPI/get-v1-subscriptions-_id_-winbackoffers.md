@@ -9,13 +9,13 @@ The data structure that represents a get-v1-subscriptions-{id}-win back offers r
 **Availability**:
 - App Store Connect API 3.6+
 
-#### Overview
+## Overview
 
 List all win-back offers for a specific subscription.
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

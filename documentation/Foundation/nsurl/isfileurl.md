@@ -25,7 +25,7 @@ var isFileURL: Bool { get }
 @property (readonly, getter=isFileURL) BOOL fileURL;
 ```
 
-#### Discussion
+## Discussion
 
 The property’s value is  [`true`](../../Swift/true.md) if the receiver uses the file scheme, [`false`](../../Swift/false.md) otherwise. Both file path and file reference URLs are considered to be file URLs.
 

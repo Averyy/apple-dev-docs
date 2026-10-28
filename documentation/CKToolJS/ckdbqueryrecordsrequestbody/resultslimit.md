@@ -15,7 +15,7 @@ The maximum number of records to fetch.
 attribute Int32? resultsLimit;
 ```
 
-#### Discussion
+## Discussion
 
 `resultsLimit` can be between 1 and 200, inclusive.
 

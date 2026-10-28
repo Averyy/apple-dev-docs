@@ -25,7 +25,7 @@ optional func outputMediaDataWillChange(_ sender: AVPlayerItemOutput)
 - (void) outputMediaDataWillChange:(AVPlayerItemOutput *) sender;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this method to prepare for any new sample data. This method is called at some point after a call to your video output object’s `requestNotificationOfMediaDataChangeWithAdvanceInterval:` method.
 

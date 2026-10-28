@@ -5,11 +5,11 @@
 
 Enable broadcast capability for Apple Push Notifications service (APNs).
 
-#### Overview
+## Overview
 
 Broadcast push notifications provide an effective way to reach a large audience with Live Activities. Starting in iOS 18 and iPadOS 18, people can subscribe to receive updates on a channel for a Live Activity.
 
-##### Determine if your app needs broadcast capability
+### Determine if your app needs broadcast capability
 
 Instead of using a device token to update a Live Activity for an individual person, you can publish a single broadcast request to APNs to reach everyone interested in receiving an update. This capability removes the need to manage device tokens and send updates to each person with a device token. Broadcast push notifications for Live Activities are effective for updating a multitude of people interested in receiving information about the same activity or event in real time. For example, use broadcast push for flight status updates or sports coverage. When Live Activity updates impact only one person, such as for an order delivery or a ride share, send push notifications directly to the device token. For more information, refer to [Sending notification requests to APNs](./sending-notification-requests-to-apns.md).
 
@@ -17,7 +17,7 @@ Instead of using a device token to update a Live Activity for an individual pers
 
 > 💡 **Tip**:  Refer to [Viewing the status of push notifications using Metrics and APNs](./viewing-the-status-of-push-notifications-using-metrics-and-apns.md).
 
-##### Enable broadcast capability
+### Enable broadcast capability
 
 To utilize broadcast capability to power Live Activities for your app, first ensure you have enabled push notifications. For more information on how to enable push notification in your app, refer to [Enable push notifications](https://help.apple.com/xcode/mac/current/#/devdfd3d04a1). You can enable Broadcast Capability by signing on to developer.apple.com.
 
@@ -27,7 +27,7 @@ To utilize broadcast capability to power Live Activities for your app, first ens
 
 To disable broadcast capability, go to the developer portal and unselect the Broadcast Capability, confirm your choice, and Save. Once you delete the capability, APNs deletes all channels and broadcast-related configurations for the topic. You can’t reverse this action: channel IDs are unique every time they’re created, and all the channels in use would be invalidated.
 
-##### Examine broadcast push notification metrics
+### Examine broadcast push notification metrics
 
 The Overview tab of the [Push Notification Console](https://icloud.developer.apple.com/dashboard) provides comprehensive reports of broadcast push notifications for your app. You can view a four-week history of your application’s broadcast push notification metrics.
 

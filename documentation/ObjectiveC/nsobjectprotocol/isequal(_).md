@@ -26,11 +26,11 @@ func isEqual(_ object: Any?) -> Bool
 - (BOOL) isEqual:(id) object;
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](../yes.md) if the receiver and `anObject` are equal, otherwise [`NO`](../no.md).
 
-#### Discussion
+## Discussion
 
 This method defines what it means for instances to be equal. For example, a container object might define two containers as equal if their corresponding objects all respond [`YES`](../yes.md) to an [`isEqual(_:)`](./isequal%28_%29.md) request. See the [`NSData`](../../Foundation/nsdata.md), [`NSDictionary`](../../Foundation/nsdictionary.md), [`NSArray`](../../Foundation/nsarray.md), and [`NSString`](../../Foundation/nsstring.md) class specifications for examples of the use of this method.
 

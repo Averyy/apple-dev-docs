@@ -27,7 +27,7 @@ func selectTextForEditMenuWithLocation(inView locationInView: CGPoint) async -> 
 - (void) selectTextForEditMenuWithLocationInView:(CGPoint) locationInView completionHandler:(void (^)(BOOL shouldPresentMenu, NSString *contextString, NSRange selectedRangeInContextString)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The completion handler arguments are:
 

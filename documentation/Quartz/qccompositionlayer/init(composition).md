@@ -21,7 +21,7 @@ init!(composition: QCComposition!)
 - (id) initWithComposition:(QCComposition *) composition;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized `QCCompositionLayer` object or `nil` if initialization is not successful.
 

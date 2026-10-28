@@ -22,7 +22,7 @@ A type that defines how an animatable value changes over time.
 protocol CustomAnimation : Hashable, Sendable
 ```
 
-#### Overview
+## Overview
 
 Use this protocol to create a type that changes an animatable value over time, which produces a custom visual transition of a view. For example, the follow code changes an animatable value using an elastic ease-in ease-out function:
 

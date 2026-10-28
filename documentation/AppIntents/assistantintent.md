@@ -21,7 +21,7 @@ An app intent that Siri performs to fulfill a person’s request.
 protocol AssistantIntent : AppIntent
 ```
 
-#### Overview
+## Overview
 
 Don’t adopt this protocol directly, instead use the [`AssistantIntent(schema:)`](./assistantintent%28schema%29.md) macro to meet requirements for making your [`AppIntent`](./appintent.md) discoverable by Apple Intelligence and Siri.
 

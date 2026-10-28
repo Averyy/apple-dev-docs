@@ -23,7 +23,7 @@ var kDNSServiceType_DS: Int { get }
 kDNSServiceType_DS
 ```
 
-#### Discussion
+## Discussion
 
 Delegation Signer
 

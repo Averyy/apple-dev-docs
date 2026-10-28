@@ -5,13 +5,13 @@
 
 Define display names and SKUs for one-time charges and subscriptions in the Mini Apps Partner Program.
 
-#### Overview
+## Overview
 
 If your app supports the Mini Apps Partner Program, use the Advanced Commerce APIs when a customer initiates a one-time purchase ([`OneTimeChargeCreateRequest`](./onetimechargecreaterequest.md)), or purchases a subscription ([`SubscriptionCreateRequest`](./subscriptioncreaterequest.md)).
 
 The Mini Apps Partner Program has specific requirements for defining the SKUs and the product display names, so they fully identify each mini app product. Follow these guidelines to create display names and SKUs for products you offer through the Mini Apps Partner Program and describe the format for one-time purchases and subscriptions. See [Creating SKUs for your Apple In-App Purchases](./creating-your-purchases.md) for additional guidance.
 
-#### Describe the mini app and mini apps partner with metadata
+## Describe the mini app and mini apps partner with metadata
 
 The following table lists the identifiers that make up mini app display names and SKUs.
 
@@ -25,7 +25,7 @@ The following table lists the identifiers that make up mini app display names an
 
 You determine the names and concatenate them to create the display names and SKUs, as specified in the one-time or subscription purchase instructions below, when you use the Advanced Commerce APIs to initiate purchases.
 
-#### Initiate a one-time charge purchase
+## Initiate a one-time charge purchase
 
 To initiate a one-time charge for a mini app product, use the [`OneTimeChargeCreateRequest`](./onetimechargecreaterequest.md).
 
@@ -49,7 +49,7 @@ item.SKU = "boost_pack_id |Apple_Seed|WC123"
 - The SKU value needs to be unique within your app and can use a maximum of 128 characters.
 - All three elements are separated by the ‘|’ character and all three elements must be present.
 
-#### Initiate a subscription purchase
+## Initiate a subscription purchase
 
 To initiate a subscription purchase, use the [`SubscriptionCreateRequest`](./subscriptioncreaterequest.md) API.
 

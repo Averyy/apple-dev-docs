@@ -20,7 +20,7 @@ A notification that a write operation finishes working on a document.
 static let PDFDocumentDidEndWrite: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the `PDFDocument` object itself.
 

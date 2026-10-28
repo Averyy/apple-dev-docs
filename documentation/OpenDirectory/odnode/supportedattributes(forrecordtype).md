@@ -20,11 +20,11 @@ func supportedAttributes(forRecordType inRecordType: String!) throws -> [Any]
 - (NSArray *) supportedAttributesForRecordType:(ODRecordType) inRecordType error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 An array of supported attribute types.
 
-#### Discussion
+## Discussion
 
 If `inRecordType` is `nil`, this function returns all attribute types supported by all record types of the node; otherwise, only attribute types specific to `inRecordType` are returned.
 

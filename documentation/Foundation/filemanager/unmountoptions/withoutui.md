@@ -19,7 +19,7 @@ static var withoutUI: FileManager.UnmountOptions { get }
 NSFileManagerUnmountWithoutUI
 ```
 
-#### Discussion
+## Discussion
 
 If this option is not specified when calling [`unmountVolume(at:options:completionHandler:)`](../unmountvolume%28at,options,completionhandler%29.md), any needed UI will delay completion of the completion handler.
 

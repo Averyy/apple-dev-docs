@@ -5,45 +5,45 @@
 
 Released July 20, 2022 — Version 15.6 (17613.3.9)
 
-#### Overview
+## Overview
 
 Safari 15.6 ships with the iOS & iPadOS 15.6 and macOS 12.5.
 
-##### CSS
+### CSS
 
-###### New Features
+#### New Features
 
 - Added support for `:modal` CSS pseudo-class.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `object-fit` causing iframe contents to shift.
 - Fixed inert behavior to apply to `::after`, `::before`, and `::marker` pseudo-elements.
 - Fixed `:focus-visible` matching a mouse click after a second `element.focus()` call.
 - Fixed logical inline and logical block viewport units to be based on the current element’s `writing-mode`.
 
-##### Editing
+### Editing
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed resetting writing direction when inserting a new paragraph breaks out of a quoted reply block.
 - Fixed managed pasteboard on iOS to work for all managed locations including managed Safari domains.
 
-##### Fonts
+### Fonts
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed automatically updating page layout when new fonts are installed.
 
-##### HTML
+### HTML
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `<link rel=preconnect>` to respect `crossorigin=anonymous` and prevent sending credentials to different-origin links.
 
-##### Media
+### Media
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed blank video playback with only audio.
 - Fixed replaceTrack with different constraints preventing sending packets.
@@ -53,35 +53,35 @@ Safari 15.6 ships with the iOS & iPadOS 15.6 and macOS 12.5.
 - Fixed playback for video when the timeline sometimes goes backward at the start of playback.
 - Fixed capturing and rendering audio simultaneously.
 
-##### Rendering
+### Rendering
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed flickering when rendering overlapping negative `z-index` layers.
 - Fixed disappearing multi-column content inside a fixed position container when scrolling.
 - Fixed images displayed in Reader not appearing in a print job or PDF export.
 
-##### WebAuthn
+### WebAuthn
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed missing text in a sign-in sheet when registering a passkey with syncing platform authenticator disabled, if Touch ID isn’t configured.
 
-##### Web Animations
+### Web Animations
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed computing implicit keyframes when either a 0 percent or 100 percent keyframe (or both) define only a timing function.
 
-##### Web API
+### Web API
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed communication between BroadcastChannel instances in distinct opaque origins.
 
-##### Web Inspector
+### Web Inspector
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed resources from memory cache showing empty content in Network, Sources, and Search tabs.
 

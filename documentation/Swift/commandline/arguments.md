@@ -21,7 +21,7 @@ An array that provides access to this program’s command line arguments.
 static var arguments: [String] { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Use `CommandLine.arguments` to access the command line arguments used when executing the current program. The name of the executed program is the first argument.
 

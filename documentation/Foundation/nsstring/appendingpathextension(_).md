@@ -25,11 +25,11 @@ func appendingPathExtension(_ str: String) -> String?
 - (NSString *) stringByAppendingPathExtension:(NSString *) str;
 ```
 
-#### Return Value
+## Return Value
 
 A new string made by appending to the receiver an extension separator followed by `ext`.
 
-#### Discussion
+## Discussion
 
 The following table illustrates the effect of this method on a variety of different paths, assuming that `ext` is supplied as `@"tiff"`:
 
@@ -44,7 +44,7 @@ Note that adding an extension to `@"/tmp/"` causes the result to be `@"/tmp.tiff
 
 Note that this method only works with file paths (not, for example, string representations of URLs).
 
-##### Special Considerations
+### Special Considerations
 
 Prior to OS X v10.9 this method did not allow you to append file extensions to filenames starting with the tilde character (`~`).
 

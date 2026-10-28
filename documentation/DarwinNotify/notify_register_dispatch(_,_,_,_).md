@@ -25,11 +25,11 @@ func notify_register_dispatch(_ name: UnsafePointer<CChar>!, _ out_token: Unsafe
 extern uint32_t notify_register_dispatch(const char *name, int *out_token, dispatch_queue_t queue, notify_handler_t handler);
 ```
 
-#### Return Value
+## Return Value
 
 Returns status.
 
-#### Discussion
+## Discussion
 
 When notifications are received by the process, the notify subsystem will deliver the registered Block to the target dispatch queue. Notification blocks are not re-entrant, and subsequent notification Blocks will not be delivered for the same registration until the previous Block has returned.
 

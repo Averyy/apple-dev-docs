@@ -26,7 +26,7 @@ static let hasFocus: XCUIElement.AttributeName
 extern XCUIElementAttributeName const XCUIElementAttributeNameHasFocus;
 ```
 
-#### Discussion
+## Discussion
 
 This property is only available in tvOS.
 

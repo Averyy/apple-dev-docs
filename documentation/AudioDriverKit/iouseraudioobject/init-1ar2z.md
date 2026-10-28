@@ -15,11 +15,11 @@ Initializes an instance of the audio object base class.
 virtual bool init(IOUserAudioDriver *in_audio_driver);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates the result of initialization: `true` if initialization succeeded, `false` otherwise.
 
-#### Discussion
+## Discussion
 
 Always pass in the [`IOUserAudioDriver`](../iouseraudiodriver.md). The no-arg initializer, [`init`](./init-26qwx.md), always returns `false`.
 

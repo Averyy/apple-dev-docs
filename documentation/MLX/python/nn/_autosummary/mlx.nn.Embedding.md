@@ -6,21 +6,23 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.E
 
 # mlx.nn.Embedding
 
-**class Embedding(*num_embeddings: int*, *dims: int*)**
-: Implements a simple lookup table that maps each input integer to a
+```python
+class Embedding(num_embeddings: int, dims: int)
+```
+
+Implements a simple lookup table that maps each input integer to a
 high-dimensional vector.
+
 Typically used to embed discrete tokens for processing by neural networks.
 
-Parameters:
+**Parameters:**
 
-**num_embeddings** ([int](https://docs.python.org/3/builtins/functions.html#int)) – How many possible discrete tokens can we embed.
+- **num_embeddings** ([int](https://docs.python.org/3/builtins/functions.html#int)) – How many possible discrete tokens can we embed.
 Usually called the vocabulary size.
-**dims** ([int](https://docs.python.org/3/builtins/functions.html#int)) – The dimensionality of the embeddings.
+- **dims** ([int](https://docs.python.org/3/builtins/functions.html#int)) – The dimensionality of the embeddings.
 
 Methods
 
-`as_linear`(x)
-Call the embedding layer as a linear layer.
-
-`to_quantized`([group_size, bits, mode, ...])
-Return a [QuantizedEmbedding](mlx.nn.QuantizedEmbedding.md#mlx.nn.QuantizedEmbedding) layer that approximates this embedding layer.
+| `as_linear`(x) | Call the embedding layer as a linear layer. |
+| --- | --- |
+| `to_quantized`([group_size, bits, mode, ...]) | Return a [QuantizedEmbedding](mlx.nn.QuantizedEmbedding.md#mlx.nn.QuantizedEmbedding) layer that approximates this embedding layer. |

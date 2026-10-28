@@ -24,7 +24,7 @@ var usesEvenOddFillRule: Bool { get set }
 @property (nonatomic) BOOL usesEvenOddFillRule;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the path is filled using the even-odd rule. If [`false`](../../Swift/false.md), it is filled using the non-zero rule. Both rules are algorithms to determine which areas of a path to fill with the current fill color. A ray is drawn from a point inside a given region to a point anywhere outside the path’s bounds. The total number of crossed path lines (including implicit path lines) and the direction of each path line are then interpreted as follows:
 

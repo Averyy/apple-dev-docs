@@ -20,7 +20,7 @@ var device: any MTLDevice { get }
 id<MTLDevice>cp_layer_renderer_get_device(cp_layer_renderer_t layer_renderer);
 ```
 
-#### Discussion
+## Discussion
 
 You can inspect the device for any information you might need. The system uses it to create the textures for drawing, and also to create synchronization events for the layer.
 

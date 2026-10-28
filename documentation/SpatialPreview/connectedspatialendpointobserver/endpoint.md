@@ -17,7 +17,7 @@ The endpoint for the visionOS device currently connected via Mac Virtual Display
 final var endpoint: SpatialPreviewEndpoint { get async throws }
 ```
 
-#### Discussion
+## Discussion
 
 Check [`isEndpointAvailable`](./isendpointavailable.md) before accessing this property to avoid catching an [`ConnectedSpatialEndpointObserver.UnavailableError`](./unavailableerror.md).
 

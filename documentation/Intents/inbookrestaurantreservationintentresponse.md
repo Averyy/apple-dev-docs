@@ -22,7 +22,7 @@ class INBookRestaurantReservationIntentResponse
 @interface INBookRestaurantReservationIntentResponse : INIntentResponse
 ```
 
-#### Overview
+## Overview
 
 An [`INBookRestaurantReservationIntentResponse`](./inbookrestaurantreservationintentresponse.md) object contains final reservation booking information. You create an instance of this class when confirming or handling an [`INBookRestaurantReservationIntent`](./inbookrestaurantreservationintent.md) object, which contains the details of the reservation that you need to book.
 

@@ -23,11 +23,11 @@ optional func collectionView(_ collectionView: UICollectionView, canMoveItemAt i
 - (BOOL) collectionView:(UICollectionView *) collectionView canMoveItemAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the item is allowed to move, or [`false`](../../Swift/false.md) if it isn’t.
 
-#### Discussion
+## Discussion
 
 Use this method to selectively allow or disallow the movement of items within a collection view. If you don’t implement this method, but you do implement the [`collectionView(_:moveItemAt:to:)`](./collectionview%28_,moveitemat,to%29.md) method, the collection view allows all items to be reordered.
 

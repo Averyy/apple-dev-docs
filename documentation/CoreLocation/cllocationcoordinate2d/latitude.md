@@ -25,7 +25,7 @@ var latitude: CLLocationDegrees
 CLLocationDegrees latitude;
 ```
 
-#### Discussion
+## Discussion
 
 Positive values indicate latitudes north of the equator. Negative values indicate latitudes south of the equator.
 

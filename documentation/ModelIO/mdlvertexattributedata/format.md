@@ -24,7 +24,7 @@ var format: MDLVertexFormat { get set }
 @property (nonatomic) MDLVertexFormat format;
 ```
 
-#### Discussion
+## Discussion
 
 A [`MDLVertexFormat`](../mdlvertexformat.md) value describes the number of vector components for an attribute, as well as the data type of each component, and, for special packed formats, the layout of components.
 

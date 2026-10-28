@@ -24,7 +24,7 @@ var backgroundColor: UIColor? { get set }
 @property (nonatomic, copy, nullable) UIColor * backgroundColor;
 ```
 
-#### Discussion
+## Discussion
 
 Changes to this property can be animated. The default value is `nil`, which results in a transparent background color.
 

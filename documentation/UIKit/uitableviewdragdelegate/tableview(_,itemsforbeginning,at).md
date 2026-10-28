@@ -27,11 +27,11 @@ func tableView(_ tableView: UITableView, itemsForBeginning session: any UIDragSe
 
 - [Supporting drag and drop in table views](../supporting-drag-and-drop-in-table-views.md)
 
-#### Return Value
+## Return Value
 
 An array of [`UIDragItem`](../uidragitem.md) objects representing the contents of the specified row. Return an empty array if you do not want the user to drag the specified row.
 
-#### Discussion
+## Discussion
 
 You must implement this method to allow the dragging of rows from your table view. In your implementation, use the specified `indexPath` to identify which row is being dragged. In response, create one or more [`UIDragItem`](../uidragitem.md) objects representing the content for that row. Normally, you return only one drag item, but you may return more than one item if the specified row represents a container for other content. Return an empty array to indicate that you don’t want the specified row to be dragged.
 

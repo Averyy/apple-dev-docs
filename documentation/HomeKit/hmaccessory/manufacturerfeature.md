@@ -16,7 +16,7 @@ A manufacturer-declared extension feature available for an accessory.
 struct ManufacturerFeature
 ```
 
-#### Overview
+## Overview
 
 `name` carries the localized display name. `id` is optional because `.troubleshooting` and `.productManual` features carry no per-feature identifier. `kind` distinguishes the five feature categories the system understands.
 

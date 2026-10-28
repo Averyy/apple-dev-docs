@@ -15,7 +15,7 @@ An array that contains the views and splitter bar from the split view.
 @property (copy, nullable) NSArray * accessibilitySplitters;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property on a split view element.
 

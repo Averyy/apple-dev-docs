@@ -23,7 +23,7 @@ static var connectCallBack: CFSocketCallBackType { get }
 kCFSocketConnectCallBack
 ```
 
-#### Discussion
+## Discussion
 
 If a connection attempt is made in the background by calling [`CFSocketConnectToAddress(_:_:_:)`](../cfsocketconnecttoaddress%28_,_,_%29.md) or [`CFSocketCreateConnectedToSocketSignature(_:_:_:_:_:_:)`](../cfsocketcreateconnectedtosocketsignature%28_,_,_,_,_,_%29.md) with a negative timeout value, this callback type is made when the connect finishes. In this case the data argument is either `NULL` or a pointer to an `SInt32` error code, if the connect failed. This callback will never be sent more than once for a given socket.
 

@@ -5,13 +5,13 @@
 
 Keep the user informed on the current session state and recover from interruptions.
 
-#### Overview
+## Overview
 
 World-tracking AR sessions use a technique called *visual-inertial odometry.* This process combines motion sensor data with computer vision analysis of camera imagery to track the device’s position and orientation in real-world space, also known as *pose*, which is expressed in the [`ARCamera`](./arcamera.md) [`transform`](./arcamera/transform.md) property. For best results, world tracking needs consistent sensor data and camera imagery with visual complexity or recognizable features.
 
 When you start a session, it takes some time for ARKit to gather enough data to precisely model device pose. During a session, the conditions that affect world-tracking quality can change. Use [`ARSessionObserver`](./arsessionobserver.md) delegate methods and [`ARCamera`](./arcamera.md) properties to follow these changes.
 
-##### Basic Lifecycle of an AR Session
+### Basic Lifecycle of an AR Session
 
 The figure below shows the changes in tracking state when you start running an AR session.
 
@@ -23,7 +23,7 @@ A few frames later, the tracking state changes to [`ARCamera.TrackingState.limit
 
 After a short time, the tracking state changes to [`ARCamera.TrackingState.normal`](./arcamera/trackingstate-swift.enum/normal.md), indicating that the device pose is accurate and all ARKit features are available.
 
-##### Provide Feedback for Tracking Quality Changes
+### Provide Feedback for Tracking Quality Changes
 
 The figure below shows changes in tracking state that can occur due to user interaction or changes in the environment.
 
@@ -38,7 +38,7 @@ A session can enter a [`ARCamera.TrackingState.limited(_:)`](./arcamera/tracking
 
 Use the associated [`ARCamera.TrackingState.Reason`](./arcamera/trackingstate-swift.enum/reason.md) value to provide feedback that guides the user to resolving the situation so that the tracking state can return to [`ARCamera.TrackingState.normal`](./arcamera/trackingstate-swift.enum/normal.md).
 
-##### Recover from Session Interruptions
+### Recover from Session Interruptions
 
 ARKit can’t track device pose without a running [`ARSession`](./arsession.md). By default, if your session is interrupted (for example, by switching to another app), any virtual content in that session is likely out of place relative to the real-world environment.
 
@@ -50,7 +50,7 @@ For relocalization to succeed, the device must be returned to a position and ori
 
 > ❗ **Important**:  When your app is in the [`ARCamera.TrackingState.Reason.relocalizing`](./arcamera/trackingstate-swift.enum/reason/relocalizing.md) state, offer the user a way to reset the session (with [`run(_:options:)`](./arsession/run%28_,options%29.md) and [`resetTracking`](./arsession/runoptions/resettracking.md)) in case relocalization never succeeds.
 
-##### Create a Persistent AR Experience
+### Create a Persistent AR Experience
 
 In iOS 12.0 and later, the [`ARWorldMap`](./arworldmap.md) class stores the information that ARKit uses to resume a session. By saving a world map to a file, you can use the same relocalization process either to recover from a brief interruption or to resume from an earlier session, even if your app has relaunched. World maps include anchors, so you can also replace virtual content to match an earlier session.
 

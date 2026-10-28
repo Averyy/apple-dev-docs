@@ -22,11 +22,11 @@ nonisolated
 func hueRotation(_ angle: Angle) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that applies a hue rotation effect to this view.
 
-#### Discussion
+## Discussion
 
 Use hue rotation effect to shift all of the colors in a view according to the angle you specify.
 

@@ -19,7 +19,7 @@ class FSListXattrsResult
 @interface FSListXattrsResult : FSVolumeHandlerResult
 ```
 
-#### Overview
+## Overview
 
 Use this type in your implementation of [`supportedXattrNames(for:)`](./fsvolume/xattrhandler/supportedxattrnames%28for%29.md).
 

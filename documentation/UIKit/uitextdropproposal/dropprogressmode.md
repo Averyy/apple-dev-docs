@@ -22,7 +22,7 @@ var dropProgressMode: UITextDropProposal.ProgressMode { get set }
 @property (nonatomic) UITextDropProgressMode dropProgressMode;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`UITextDropProposal.ProgressMode.system`](./progressmode/system.md).
 

@@ -19,7 +19,7 @@ func ABCopyArrayOfAllPeople(_ addressBook: ABAddressBookRef!) -> Unmanaged<CFArr
 extern CFArrayRefABCopyArrayOfAllPeople(ABAddressBookRef addressBook);
 ```
 
-#### Return Value
+## Return Value
 
 An array of ABPerson objects representing all the people in the Address Book database. If the database does not contain any people, the function returns an empty array. You are responsible for releasing this object.
 

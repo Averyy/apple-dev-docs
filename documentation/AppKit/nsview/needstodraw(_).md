@@ -19,7 +19,7 @@ func needsToDraw(_ rect: NSRect) -> Bool
 - (BOOL) needsToDrawRect:(NSRect) rect;
 ```
 
-#### Discussion
+## Discussion
 
 You typically send this message from within a [`draw(_:)`](./draw%28_%29.md) implementation. It gives you a convenient way to determine whether any part of a given graphical entity might need to be drawn. It is optimized to efficiently reject any rectangle that lies outside the bounding box of the area that the view is being asked to draw in [`draw(_:)`](./draw%28_%29.md).
 

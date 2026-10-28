@@ -17,7 +17,7 @@ Parse all remaining inputs after parsing any known options or flags, including d
 static var captureForPassthrough: ArgumentArrayParsingStrategy { get }
 ```
 
-#### Discussion
+## Discussion
 
 You can use the `captureForPassthrough` parsing strategy if you need to capture a user’s input to manually pass it unchanged to another command.
 

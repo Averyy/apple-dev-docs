@@ -16,7 +16,7 @@
 kSCSITaskStatus_GOOD
 ```
 
-#### Discussion
+## Discussion
 
 The task completed with a status of GOOD.
 

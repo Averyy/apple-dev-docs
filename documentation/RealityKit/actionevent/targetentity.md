@@ -20,7 +20,7 @@ The entity the bind target references.
 let targetEntity: Entity?
 ```
 
-#### Discussion
+## Discussion
 
 For example, if a bind target references an entity’s transform (i.e. `.transform`), this value is set to that entity.
 

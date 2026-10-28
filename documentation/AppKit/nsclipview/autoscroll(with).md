@@ -19,7 +19,7 @@ func autoscroll(with event: NSEvent) -> Bool
 - (BOOL) autoscroll:(NSEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 `theEvent`‘s location should be expressed in the window’s base coordinate system (which it normally is), not the receiving [`NSClipView`](../nsclipview.md). Returns [`true`](../../Swift/true.md) if any scrolling is performed; otherwise returns [`false`](../../Swift/false.md).
 

@@ -17,7 +17,7 @@ TXT records associated with the device discovered via network protocols.
 let txtRecords: [NWTXTRecord]
 ```
 
-#### Discussion
+## Discussion
 
 Contains key-value pairs of metadata about the device that were advertised during network discovery (for example, via Bonjour/mDNS). This information can include device-specific attributes, service capabilities, version information, or other properties that help identify and configure the connection.
 

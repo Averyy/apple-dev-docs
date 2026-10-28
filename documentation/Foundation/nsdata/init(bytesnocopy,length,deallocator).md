@@ -25,11 +25,11 @@ init(bytesNoCopy bytes: UnsafeMutableRawPointer, length: Int, deallocator: ((Uns
 - (instancetype) initWithBytesNoCopy:(void *) bytes length:(NSUInteger) length deallocator:(void (^)(void *bytes, NSUInteger length)) deallocator;
 ```
 
-#### Return Value
+## Return Value
 
 A data object initialized by adding to it `length` bytes of data from the buffer `bytes`. The returned object might be different than the original receiver.
 
-#### Discussion
+## Discussion
 
 Use this method to define your own deallocation behavior for the data buffer you provide.
 

@@ -21,7 +21,7 @@ Informs credential managers that a specific credential is unknown or no longer a
 final func reportUnknownPublicKeyCredential(relyingPartyIdentifier: String, credentialID: Data) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Credential managers can act on this report by removing or hiding the credential.
 

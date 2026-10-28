@@ -24,7 +24,7 @@ var vertexCreaseIndices: (any MDLMeshBuffer)? { get set }
 @property (nonatomic, retain, nullable) id<MDLMeshBuffer> vertexCreaseIndices;
 ```
 
-#### Discussion
+## Discussion
 
 Each of entry in this buffer identifies a vertex that is to be treated as a crease or point during surface subdivision. The buffer is sparse, containing only those vertex indices to be treated as creases. The corresponding entry in the [`vertexCreases`](./vertexcreases.md) buffer provides a sharpness value for the crease.
 

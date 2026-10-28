@@ -22,7 +22,7 @@ var format: AVAudioFormat { get }
 @property (nonatomic, strong, readonly) AVAudioFormat * format;
 ```
 
-#### Discussion
+## Discussion
 
 The readonly property that returns the AVAudioFormat that this stream was initialized with
 

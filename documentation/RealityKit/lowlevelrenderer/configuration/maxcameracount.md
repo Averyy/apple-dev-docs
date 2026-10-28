@@ -18,7 +18,7 @@ The maximum number of simultaneous cameras supported.
 var maxCameraCount: Int { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Must be less than or equal to `CameraArray.maxCount`.
 

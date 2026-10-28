@@ -5,7 +5,7 @@
 
 An object that rotates source pixel buffers to destination pixel buffers.
 
-#### Overview
+## Overview
 
 To create a rotation session, call [`VTPixelRotationSessionCreate(_:_:)`](./vtpixelrotationsessioncreate%28_,_%29.md). Optionally configure the session by calling [`VTSessionSetProperty(_:key:value:)`](./vtsessionsetproperty%28_,key,value%29.md).
 

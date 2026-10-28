@@ -22,7 +22,7 @@ class func system() -> Self
 + (instancetype) systemPointerStyle;
 ```
 
-#### Discussion
+## Discussion
 
 To display custom accessories alongside the default pointer, use this pointer style and assign your accessories to the [`accessories`](./accessories.md) property.
 

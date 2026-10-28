@@ -20,7 +20,7 @@ The framework can’t complete a face grouping operation.
 case faceGroupProcessing
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs when the framework fails to detect faces, insert or delete face data, or update face cluster assignments. If this error occurs during [`insertOrUpdateAssets(_:)`](../facegroupanalyzer/insertorupdateassets%28_%29.md) or [`deleteAssets(_:)`](../facegroupanalyzer/deleteassets%28_%29.md), the framework automatically rolls back any partial changes.
 

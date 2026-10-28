@@ -21,7 +21,7 @@ Show all tips regardless of their display rule eligibility or display frequency 
 static func showAllTipsForTesting()
 ```
 
-#### Overview
+## Overview
 
 This function can also be called with the launch argument `-com.apple.TipKit.ShowAllTips 1`.
 

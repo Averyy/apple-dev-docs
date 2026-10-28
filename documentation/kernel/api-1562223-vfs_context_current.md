@@ -15,11 +15,11 @@ Get the vfs_context for the current thread, or the kernel context if there is no
 vfs_context_t vfs_context_current(void);
 ```
 
-#### Return Value
+## Return Value
 
 Context for current thread, or kernel context if thread context is unavailable.
 
-#### Discussion
+## Discussion
 
 Kexts should not use this function--it is preferred to use vfs_context_create(NULL) and vfs_context_rele(), which ensure proper reference counting of underlying structures.
 

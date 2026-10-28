@@ -29,7 +29,7 @@ optional func resolveTasks(for intent: INDeleteTasksIntent) async -> [INDeleteTa
 - (void) resolveTasksForDeleteTasks:(INDeleteTasksIntent *) intent withCompletion:(void (^)(NSArray<INDeleteTasksTaskResolutionResult *> *resolutionResults)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This method resolves the tasks to delete. Use the intent object to obtain information about the task to delete. Use the information in the [`INTask`](../intask.md) object to look up the corresponding task information in your app’s data structures.
 

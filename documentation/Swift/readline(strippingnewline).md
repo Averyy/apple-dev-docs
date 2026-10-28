@@ -21,11 +21,11 @@ Returns a string read from standard input through the end of the current line or
 func readLine(strippingNewline: Bool = true) -> String?
 ```
 
-#### Return Value
+## Return Value
 
 The string of characters read from standard input. If EOF has already been reached when `readLine()` is called, the result is `nil`.
 
-#### Discussion
+## Discussion
 
 Standard input is interpreted as `UTF-8`. Invalid bytes are replaced by Unicode [replacement characters](https://unicode.org/glossary/#replacement_character).
 

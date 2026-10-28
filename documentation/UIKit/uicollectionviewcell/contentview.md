@@ -23,7 +23,7 @@ var contentView: UIView { get }
 @property (nonatomic, readonly) UIView * contentView;
 ```
 
-#### Discussion
+## Discussion
 
 When configuring a cell, you add any custom views representing your cell’s content to this view. The cell object places the content in this view in front of any background views.
 

@@ -21,7 +21,7 @@ Look up a localized string given a list of available languages.
 func localizedString(forKey key: String, value: String?, table tableName: String?, localizations: [Locale.Language]) -> String
 ```
 
-#### Return Value
+## Return Value
 
 A localized version of the string designated by `key` in table `tableName`.
 

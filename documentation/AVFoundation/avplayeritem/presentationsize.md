@@ -26,7 +26,7 @@ var presentationSize: CGSize { get }
 @property (readonly) CGSize presentationSize;
 ```
 
-#### Discussion
+## Discussion
 
 This property can be accessed at any time, but may return a value of `CGSizeZero` prior to the player item becoming ready to play. You can use key-value observing to obtain the player item’s valid presentation size as early as possible.
 

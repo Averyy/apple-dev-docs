@@ -21,7 +21,7 @@ The never limit behavior.
 static var never: ValueAlignedLimitBehavior { get }
 ```
 
-#### Discussion
+## Discussion
 
 Never limit the amount of marks that can be scrolled.
 

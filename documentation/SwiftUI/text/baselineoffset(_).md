@@ -22,11 +22,11 @@ nonisolated
 func baselineOffset(_ baselineOffset: CGFloat) -> Text
 ```
 
-#### Return Value
+## Return Value
 
 Text that’s above or below its baseline.
 
-#### Discussion
+## Discussion
 
 Change the baseline offset to move the text in the view (in points) up or down relative to its baseline. The bounds of the view expand to contain the moved text.
 

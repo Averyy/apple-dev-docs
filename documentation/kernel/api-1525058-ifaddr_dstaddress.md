@@ -13,11 +13,11 @@
 errno_t ifaddr_dstaddress(ifaddr_t ifaddr, struct sockaddr *out_dstaddr, u_int32_t dstaddr_size);
 ```
 
-#### Return Value
+## Return Value
 
 0 upon success
 
-#### Discussion
+## Discussion
 
 Copies the destination address out of the ifaddr.
 

@@ -26,7 +26,7 @@ var coordinate: CLLocationCoordinate2D { get }
 @property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
 ```
 
-#### Discussion
+## Discussion
 
 Your implementation of this property must be key-value observing (KVO) compliant. For more information on how to implement support for KVO, see [Key-Value Observing Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueObserving/KeyValueObserving.html#//apple_ref/doc/uid/10000177i).
 

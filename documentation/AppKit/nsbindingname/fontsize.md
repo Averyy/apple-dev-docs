@@ -19,7 +19,7 @@ static let fontSize: NSBindingName
 extern NSBindingName NSFontSizeBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

@@ -5,7 +5,7 @@
 
 Create play-through connections between sources and destinations.
 
-#### Overview
+## Overview
 
 Use play-through connections, instead of performing MIDI Thru operations, to reduce the overhead of moving MIDI messages between the server and the client. This API provides a simple interface to perform a variety of transformations.
 

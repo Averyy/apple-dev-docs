@@ -21,7 +21,7 @@ Performs an ordinal encoding on a sequence of inputs.
 func applied<S>(_ input: S, eventHandler: EventHandler? = nil) throws -> [Int] where S : Sequence, S.Element == Category?
 ```
 
-#### Return Value
+## Return Value
 
 An array of ordinal encoded values.
 

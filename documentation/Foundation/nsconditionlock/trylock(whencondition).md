@@ -25,11 +25,11 @@ func tryLock(whenCondition condition: Int) -> Bool
 - (BOOL) tryLockWhenCondition:(NSInteger) condition;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the lock could be acquired, [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 As part of its implementation, this method invokes [`lock(whenCondition:before:)`](./lock%28whencondition,before%29.md). This method returns immediately.
 

@@ -22,7 +22,7 @@ Displays a set of links to related resources, like downloads, sample code, and v
 }
 ```
 
-#### Overview
+## Overview
 
 Use the `Resources` directive to include a Resources section at the bottom of a tutorial’s table of contents page. This optional section can offer links to helpful material for continued learning. Provide some text for the top of the section, then add directives, for example [`Documentation`](./documentation.md), [`Downloads`](./downloads.md), [`Forums`](./forums.md), [`SampleCode`](./samplecode.md), and [`Videos`](./videos.md)) for the resource types you want to share.
 
@@ -49,7 +49,7 @@ Use the `Resources` directive to include a Resources section at the bottom of a 
 }
 ```
 
-##### Contained Elements
+### Contained Elements
 
 A Resources section can contain the following items:
 
@@ -59,7 +59,7 @@ A Resources section can contain the following items:
 - **[`SampleCode`](./samplecode.md)**: Displays one or more links to related sample code. **(optional)**
 - **[`Videos`](./videos.md)**: Displays one or more links to related videos. **(optional)**
 
-##### Containing Elements
+### Containing Elements
 
 The following pages can include a Resources section:
 

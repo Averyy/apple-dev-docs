@@ -5,7 +5,7 @@
 
 Identify the four-character signatures that describe an ICC profile’s tags, class, and color space.
 
-#### Overview
+## Overview
 
 An International Color Consortium (ICC) profile is a collection of tags, represented as a four-character signature constant. Use these constants to look up a tag with [`ColorSyncProfileCopyTag(_:_:)`](./colorsyncprofilecopytag%28_,_%29.md), or test for one with [`ColorSyncProfileContainsTag(_:_:)`](./colorsyncprofilecontainstag%28_,_%29.md), and to interpret a profile’s class and color space.
 

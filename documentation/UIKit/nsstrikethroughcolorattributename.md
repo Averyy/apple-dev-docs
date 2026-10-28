@@ -20,7 +20,7 @@ The color of the strikethrough.
 extern NSAttributedStringKey const NSStrikethroughColorAttributeName;
 ```
 
-#### Overview
+## Overview
 
 The value of this attribute is a [`UIColor`](./uicolor.md) object. The default value is nil, indicating same as foreground color.
 

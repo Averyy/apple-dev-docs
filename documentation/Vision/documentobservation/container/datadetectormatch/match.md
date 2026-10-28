@@ -20,7 +20,7 @@ The details of the data detected.
 var match: DataDetector.Match { get }
 ```
 
-#### Discussion
+## Discussion
 
 The extracted match includes the content type and the detected content. For example the type is `email` and the content is the email address.
 

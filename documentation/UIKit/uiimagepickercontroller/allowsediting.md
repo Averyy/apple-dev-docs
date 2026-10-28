@@ -22,7 +22,7 @@ var allowsEditing: Bool { get set }
 @property (nonatomic) BOOL allowsEditing;
 ```
 
-#### Discussion
+## Discussion
 
 If you allow the user to edit still images or movies, the delegate may receive a dictionary with information about the edits that were made. The protocol for the delegate is described in [`UIImagePickerControllerDelegate`](../uiimagepickercontrollerdelegate.md).
 

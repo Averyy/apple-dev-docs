@@ -21,7 +21,7 @@ object Pass.RelevantDates
 
 - [Creating a poster event pass using semantic tags](../creating-an-event-pass-using-semantic-tags.md)
 
-#### Discussion
+## Discussion
 
 > **Note**:  The values need to be a complete dates that include hours and minutes, and may optionally include seconds. For information about the ISO 8601 timestamp format, see [Time and Date Formats](http://www.w3.org/TR/NOTE-datetime) on the W3C website.
 

@@ -20,7 +20,7 @@ optional func applicationWillTerminate(_ notification: Notification)
 - (void) applicationWillTerminate:(NSNotification *) notification;
 ```
 
-#### Discussion
+## Discussion
 
 Your delegate can use this method to perform any final cleanup before the app terminates.  The app will terminate after this method returns.
 

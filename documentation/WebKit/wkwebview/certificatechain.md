@@ -25,7 +25,7 @@ var certificateChain: [Any] { get }
 @property (nonatomic, copy, readonly) NSArray * certificateChain;
 ```
 
-#### Discussion
+## Discussion
 
 Each item in the array is a [`SecCertificate`](../../Security/seccertificate.md) object.
 

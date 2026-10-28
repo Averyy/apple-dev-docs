@@ -25,11 +25,11 @@ class var punctuationCharacters: CharacterSet { get }
 @property (class, copy, readonly) NSCharacterSet * punctuationCharacterSet;
 ```
 
-#### Return Value
+## Return Value
 
 A character set containing all the punctuation characters.
 
-#### Discussion
+## Discussion
 
 Informally, this set is the set of all non-whitespace characters used to separate linguistic units in scripts, such as periods, dashes, parentheses, and so on.
 

@@ -23,7 +23,7 @@ var majorRadius: CGFloat { get }
 @property (nonatomic, readonly) CGFloat majorRadius;
 ```
 
-#### Discussion
+## Discussion
 
 Use the value in this property to determine the size of the touch that was reported by the hardware. This value is an approximation of the size and can vary by the amount specified in the [`majorRadiusTolerance`](./majorradiustolerance.md) property.
 

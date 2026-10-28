@@ -14,7 +14,7 @@ Linearly remaps incoming values from one range to another.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Remap (float)**:
 
@@ -268,7 +268,7 @@ Linearly remaps incoming values from one range to another.
 | --- | --- |
 | `Out` | Color4 |
 
-#### Parameter descriptions
+## Parameter descriptions
 
 - **`In`**: The input value to remap.
 - **`In Low`**: The low end value of the input range; the default is `0.0`.

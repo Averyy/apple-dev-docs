@@ -25,7 +25,7 @@ func SparseSolve(_ Factored: SparseOpaqueFactorization_Complex_Float, _ B: Dense
 static void SparseSolve(SparseOpaqueFactorization_Complex_Float Factored, DenseMatrix_Complex_Float B, DenseMatrix_Complex_Float X);
 ```
 
-#### Discussion
+## Discussion
 
 If the factorization is `A=QR` and the system is underdetermined, the solution of minimum norm `|| x ||_2` is returned. If the factorization is A=QR and the system is overdetermined, the least squares solution `arg min_x || Ax - b ||_2` is returned. In the case of a factorization of `type=SparseCholeskyAtA`, the factorization is in fact of `A^T A`, so the solution returned is for the system `A^TAx=b`.
 

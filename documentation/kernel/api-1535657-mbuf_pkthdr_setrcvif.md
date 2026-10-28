@@ -13,11 +13,11 @@
 errno_t mbuf_pkthdr_setrcvif(mbuf_t mbuf, ifnet_t ifp);
 ```
 
-#### Return Value
+## Return Value
 
 0 upon success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Sets the interface the packet was received on.
 

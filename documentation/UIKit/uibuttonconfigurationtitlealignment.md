@@ -19,7 +19,7 @@ Specifies how to align a button’s title and subtitle.
 enum UIButtonConfigurationTitleAlignment : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 If your button displays both [`title`](./uibuttonconfiguration/title.md) and [`subtitle`](./uibuttonconfiguration/subtitle.md), use this enumeration to configure how the text aligns.
 

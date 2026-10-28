@@ -23,7 +23,7 @@ func multiply(by matrix: (Float, Float, Float, Float), preBias: (Float, Float, F
 
 Available when `Format` is `vImage.InterleavedFx4`.
 
-#### Discussion
+## Discussion
 
 This function applies the following operation to each pixel:
 

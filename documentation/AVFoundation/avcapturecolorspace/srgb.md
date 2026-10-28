@@ -23,7 +23,7 @@ case sRGB
 AVCaptureColorSpace_sRGB
 ```
 
-#### Discussion
+## Discussion
 
 All devices support this color space.
 

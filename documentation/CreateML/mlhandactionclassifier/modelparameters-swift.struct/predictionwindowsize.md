@@ -19,7 +19,7 @@ The number of video frames the model training session uses to train a hand actio
 var predictionWindowSize: Int
 ```
 
-#### Discussion
+## Discussion
 
 Set to 60 to capture hand actions with a 2 second duration from videos that have a frame rate of 30 frames per second.
 

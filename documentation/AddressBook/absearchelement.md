@@ -19,7 +19,7 @@ class ABSearchElement
 @interface ABSearchElement : NSObject
 ```
 
-#### Overview
+## Overview
 
 The `ABSearchElement` class is “toll-free bridged” with its procedural C opaque-type counterpart. This means that the `ABSearchElementRef` type is interchangeable in function or method calls with instances of the `ABSearchElement` class.
 

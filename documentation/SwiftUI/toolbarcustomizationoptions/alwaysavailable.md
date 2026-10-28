@@ -21,7 +21,7 @@ Configures default customizable toolbar content to always be present in the tool
 static var alwaysAvailable: ToolbarCustomizationOptions { get }
 ```
 
-#### Discussion
+## Discussion
 
 In iOS, default customizable toolbar content have the option of always being available in the toolbar regardless of the customization status of the user. These items will always be in the overflow menu of the toolbar. Users can customize whether the items are present as controls in the toolbar itself but will still always be able to access the item if they remove it from the toolbar itself.
 

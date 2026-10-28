@@ -5,11 +5,11 @@
 
 Use selectors and key paths to interact with dynamic Objective-C APIs.
 
-#### Overview
+## Overview
 
 Some Objective-C APIs—like target-action—accept method or property names as parameters, then use those names to dynamically call or access the methods or properties. In Swift, you use the `#selector` and `#keyPath` expressions to represent those method or property names as selectors or key paths, respectively.
 
-##### Use Selectors to Arrange Calls to Objective-C Methods
+### Use Selectors to Arrange Calls to Objective-C Methods
 
 In Objective-C, a selector is a type that refers to the name of an Objective-C method. In Swift, Objective-C selectors are represented by the [`Selector`](../ObjectiveC/selector.md) structure, and you create them using the `#selector` expression.
 
@@ -38,7 +38,7 @@ class MyViewController: UIViewController {
 
 If you need to disambiguate between overloaded functions, use parenthesized expressions along with the `as` operator to make the `#selector` expression refer unambiguously to a specific overload.
 
-##### Use Key Paths to Dynamically Access Objective-C Properties
+### Use Key Paths to Dynamically Access Objective-C Properties
 
 In Objective-C, a key is a string that identifies a specific property of an object. A key path is a string of dot-separated keys that specifies a sequence of object properties to traverse. Keys and key paths are frequently used for key-value coding (KVC), a mechanism for indirectly accessing an object’s attributes and relationships using string identifiers.
 

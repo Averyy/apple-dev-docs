@@ -19,7 +19,7 @@ var minimumItemSize: NSSize { get set }
 @property NSSize minimumItemSize;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to ensure that items have a minimum size when displayed in the grid. The default value of this property is (`0.0`, `0.0`), which imposes no minimum size for items.
 

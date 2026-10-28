@@ -21,7 +21,7 @@ The current iCloud account’s record identifier.
 @property (nonatomic, copy, readonly, nullable) CKRecordID * currentUser;
 ```
 
-#### Discussion
+## Discussion
 
 If the user just signed in or switched accounts, this is the new user record ID. If the user signed out, this is `nil`.
 

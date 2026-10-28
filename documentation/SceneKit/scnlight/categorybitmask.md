@@ -25,7 +25,7 @@ var categoryBitMask: Int { get set }
 @property (nonatomic) NSUInteger categoryBitMask;
 ```
 
-#### Discussion
+## Discussion
 
 You can assign each light and each node in a scene to one or more categories, each corresponding to a bit in the bit mask. You define the mask values used in your app. When SceneKit renders a scene, it compares the [`categoryBitMask`](../scnnode/categorybitmask.md) property of each node with that of each light using a bitwise AND operation. If the result is a nonzero value, SceneKit uses that light when rendering that node.
 

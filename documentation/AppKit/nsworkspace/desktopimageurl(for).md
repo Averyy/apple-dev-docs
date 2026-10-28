@@ -19,11 +19,11 @@ func desktopImageURL(for screen: NSScreen) -> URL?
 - (NSURL *) desktopImageURLForScreen:(NSScreen *) screen;
 ```
 
-#### Return Value
+## Return Value
 
 The desktop image.
 
-#### Discussion
+## Discussion
 
 You must call this method from your app’s main thread.
 

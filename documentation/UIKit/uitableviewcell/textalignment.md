@@ -19,7 +19,7 @@ A constant that specifies the alignment of text in the cell.
 @property (nonatomic) NSTextAlignment textAlignment;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of the property is `nil` (the default), the title is left-aligned ([`UITextAlignmentLeft`](../uitextalignment/uitextalignmentleft.md)). See the descriptions of the [`UITextAlignment`](../uitextalignment.md) constants for alternative text alignments.
 

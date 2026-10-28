@@ -24,7 +24,7 @@ func ignore(_ button: UIPress, for event: UIPressesEvent)
 - (void) ignorePress:(UIPress *) button forEvent:(UIPressesEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 If a button press isn’t part of this gesture you may pass it to this method, causing it to be ignored. `UIGestureRecognizer` does not cancel ignored presses on the associated view even if [`cancelsTouchesInView`](./cancelstouchesinview.md) is [`true`](../../Swift/true.md). This method is intended to be called, not overridden.
 

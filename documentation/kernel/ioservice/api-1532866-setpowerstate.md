@@ -15,11 +15,11 @@ Requests a power managed driver to change the power state of its device.
 virtual IOReturn setPowerState(unsigned long powerStateOrdinal, IOService *whatDevice);
 ```
 
-#### Return Value
+## Return Value
 
 The driver must return `IOPMAckImplied` if it has complied with the request when it returns. Otherwise if it has started the process of changing power state but not finished it, the driver should return a number in microseconds which is an upper limit of the time it needs to finish. Then, when it has completed the power switch, it should call `acknowledgeSetPowerState`.
 
-#### Discussion
+## Discussion
 
 A power managed driver must override [`setPowerState`](./api-1532866-setpowerstate.md) to take part in system power management. After a driver registers with power management, the system uses [`setPowerState`](./api-1532866-setpowerstate.md) to power the device off and on for system sleep and wake. Calls to [PMinit](./api-1810486-pminit.md) and [registerPowerDriver](./api-1810706-registerpowerdriver.md) enable power management to change a device’s power state using [`setPowerState`](./api-1532866-setpowerstate.md). The system calls [`setPowerState`](./api-1532866-setpowerstate.md) in a clean and separate thread context.
 

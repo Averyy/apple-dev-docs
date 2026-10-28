@@ -18,7 +18,7 @@ A reference to a specific mip level, slice, and depth plane within a Metal textu
 struct Texture
 ```
 
-#### Overview
+## Overview
 
 Corresponds to the level/slice/depthPlane parameters on `MTLRenderPassAttachmentDescriptor`.
 

@@ -22,7 +22,7 @@ A property wrapper type that subscribes to an observable object and invalidates 
 @propertyWrapper @preconcurrency @frozen struct ObservedObject<ObjectType> where ObjectType : ObservableObject
 ```
 
-#### Overview
+## Overview
 
 Add the `@ObservedObject` attribute to a parameter of a SwiftUI [`View`](./view.md) when the input is an [`ObservableObject`](../Combine/observableobject.md) and you want the view to update when the object’s published properties change. You typically do this to pass a [`StateObject`](./stateobject.md) into a subview.
 

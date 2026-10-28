@@ -19,11 +19,11 @@ func shouldEnableAction(for person: ABPerson!, identifier: String!) -> Bool
 - (BOOL) shouldEnableActionForPerson:(ABPerson *) person identifier:(NSString *) identifier;
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](../yes.md) if the action is applicable; otherwise, [`NO`](../no.md).
 
-#### Discussion
+## Discussion
 
 If the property returned by [`actionProperty()`](./actionproperty%28%29.md) is a multivalue property, `identifier` contains the unique identifier of the value selected.
 

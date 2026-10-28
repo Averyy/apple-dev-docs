@@ -20,7 +20,7 @@ var primaryLightDirection: simd_float3 { get }
 @property (nonatomic, readonly) simd_float3 primaryLightDirection;
 ```
 
-#### Discussion
+## Discussion
 
 When ARKit analyzes the directional lighting environment for a detected face, the resulting lighting estimate can represent the influence of multiple light sources with different directions and intensities. To access this level of detail for use in your custom rendering code, use the [`sphericalHarmonicsCoefficients`](./sphericalharmonicscoefficients.md) property.
 

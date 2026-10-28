@@ -25,11 +25,11 @@ class func confirmationRequired(with visualCodeTypeToConfirm: INVisualCodeType) 
 + (instancetype) confirmationRequiredWithVisualCodeTypeToConfirm:(INVisualCodeType) visualCodeTypeToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INVisualCodeTypeResolutionResult`](../invisualcodetyperesolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you can’t provide the requested type of code but can provide a code of some type.
 

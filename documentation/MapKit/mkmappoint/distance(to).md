@@ -25,11 +25,11 @@ func distance(to b: MKMapPoint) -> CLLocationDistance
 extern CLLocationDistance MKMetersBetweenMapPoints(MKMapPoint a, MKMapPoint b);
 ```
 
-#### Return Value
+## Return Value
 
 The number of meters between the specified map points.
 
-#### Discussion
+## Discussion
 
 This distance reflects the actual distance between the two points on the surface of the globe, taking into account the curvature of the Earth.
 

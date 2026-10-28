@@ -24,7 +24,7 @@ var collectionListSubtype: PHCollectionListSubtype { get }
 @property (nonatomic, assign, readonly) PHCollectionListSubtype collectionListSubtype;
 ```
 
-#### Discussion
+## Discussion
 
 Use subtypes to make minor distinctions between collection lists of the same type, such as moment clusters and moment years. See [`PHCollectionListSubtype`](../phcollectionlistsubtype.md).
 

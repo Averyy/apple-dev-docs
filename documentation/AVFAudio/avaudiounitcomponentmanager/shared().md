@@ -24,7 +24,7 @@ class func shared() -> Self
 + (instancetype) sharedAudioUnitComponentManager;
 ```
 
-#### Return Value
+## Return Value
 
 The singleton instance of the `AVAudioUnitComponentManager` object.
 

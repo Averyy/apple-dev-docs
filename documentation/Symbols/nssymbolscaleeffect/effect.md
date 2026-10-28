@@ -21,7 +21,7 @@ An animation that scales the layers in a symbol-based image separately or as a w
 + (instancetype) effect;
 ```
 
-#### Return Value
+## Return Value
 
 A new instance of the scale effect options.
 

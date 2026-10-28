@@ -25,13 +25,13 @@ func sparse_matrix_vector_product_dense_double(_ transa: CBLAS_TRANSPOSE, _ alph
 sparse_status sparse_matrix_vector_product_dense_double(enum CBLAS_TRANSPOSE transa, double alpha, sparse_matrix_double A, const double * restrictx, sparse_stride incx, double * restricty, sparse_stride incy);
 ```
 
-#### Return Value
+## Return Value
 
 On success [`SPARSE_SUCCESS`](./sparse_success.md)  (`y` will be updated with result of the operation).  Retruns [`SPARSE_ILLEGAL_PARAMETER`](./sparse_illegal_parameter.md) if `transa` is invalid and `y` will be unchanged.
 
-#### Discussion
+## Discussion
 
-Multiplies the dense vector *x* by the sparse matrix *A* and adds the result to the dense vector *y* (*y = alpha * op(A) * x + y*, where *op(A)* is either *A* or the transpose of *A*).If the desired operation is *y = A * x*, then an efficient option is to create the `y` buffer of zeros and then perform the operation with the zero filled `y`.
+Multiplies the dense vector *x* by the sparse matrix *A* and adds the result to the dense vector *y* (*y = alpha \* op(A) \* x + y*, where *op(A)* is either *A* or the transpose of *A*).If the desired operation is *y = A \* x*, then an efficient option is to create the `y` buffer of zeros and then perform the operation with the zero filled `y`.
 
 > ❗ **Important**:  Apple provides the BLAS and LAPACK libraries under the Accelerate framework to be in line with LAPACK 3.9.1. Starting with iOS 26, iPadOS 26, macOS 26, tvOS 26, visionOS 26, and watchOS 26, the libraries are in line with LAPACK 3.12.0. These new interfaces provide additional functionality, as well as a new ILP64 interface. To use the new interfaces, define `ACCELERATE_NEW_LAPACK` before including the Accelerate or vecLib headers. For ILP64 interfaces, also define `ACCELERATE_LAPACK_ILP64`. For Swift projects, specify `ACCELERATE_NEW_LAPACK=1` and `ACCELERATE_LAPACK_ILP64=1` as preprocessor macros in Xcode build settings under Apple Clang - Preprocessing > Preprocessor Macros.
 
@@ -51,9 +51,9 @@ Multiplies the dense vector *x* by the sparse matrix *A* and adds the result to 
 - [func sparse_matrix_vector_product_dense_float(CBLAS_TRANSPOSE, Float, sparse_matrix_float!, UnsafePointer<Float>!, sparse_stride, UnsafeMutablePointer<Float>!, sparse_stride) -> sparse_status](./sparse_matrix_vector_product_dense_float%28_,_,_,_,_,_,_%29.md)
   Multiplies the dense vector *x* by the sparse matrix *A* and adds the result to the dense vector *y*, with all operands containing single-precision values.
 - [func sparse_vector_triangular_solve_dense_double(CBLAS_TRANSPOSE, Double, sparse_matrix_double!, UnsafeMutablePointer<Double>!, sparse_stride) -> sparse_status](./sparse_vector_triangular_solve_dense_double%28_,_,_,_,_%29.md)
-  Solves the system of equations *x = alpha * T⁻¹ * x* for x where *x* is a dense vector and *T* is a triangular sparse matrix, with all operands containing double-precision values.
+  Solves the system of equations *x = alpha \* T⁻¹ \* x* for x where *x* is a dense vector and *T* is a triangular sparse matrix, with all operands containing double-precision values.
 - [func sparse_vector_triangular_solve_dense_float(CBLAS_TRANSPOSE, Float, sparse_matrix_float!, UnsafeMutablePointer<Float>!, sparse_stride) -> sparse_status](./sparse_vector_triangular_solve_dense_float%28_,_,_,_,_%29.md)
-  Solves the system of equations *x = alpha * T⁻¹ * x* for x where *x* is a dense vector and *T* is a triangular sparse matrix, with all operands containing single-precision values.
+  Solves the system of equations *x = alpha \* T⁻¹ \* x* for x where *x* is a dense vector and *T* is a triangular sparse matrix, with all operands containing single-precision values.
 - [func sparse_outer_product_dense_double(sparse_dimension, sparse_dimension, sparse_dimension, Double, UnsafePointer<Double>!, sparse_stride, UnsafePointer<Double>!, UnsafePointer<sparse_index>!, UnsafeMutablePointer<sparse_matrix_double?>!) -> sparse_status](./sparse_outer_product_dense_double%28_,_,_,_,_,_,_,_,_%29.md)
   Computes the outer product of the dense vector *x* and the sparse vector *y*, with both operands containing double-precision values.
 - [func sparse_outer_product_dense_float(sparse_dimension, sparse_dimension, sparse_dimension, Float, UnsafePointer<Float>!, sparse_stride, UnsafePointer<Float>!, UnsafePointer<sparse_index>!, UnsafeMutablePointer<sparse_matrix_float?>!) -> sparse_status](./sparse_outer_product_dense_float%28_,_,_,_,_,_,_,_,_%29.md)

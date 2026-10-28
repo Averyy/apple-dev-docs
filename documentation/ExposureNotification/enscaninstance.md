@@ -23,7 +23,7 @@ class ENScanInstance
 @interface ENScanInstance : NSObject
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  This property is available in iOS 12.5, and in iOS 13.7 and later.
 

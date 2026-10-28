@@ -21,11 +21,11 @@ Indicates the quantity of items the customer is purchasing.
 static func quantity(_ quantity: Int) -> Product.PurchaseOption
 ```
 
-#### Return Value
+## Return Value
 
 An instance of [`Product.PurchaseOption`](../purchaseoption.md) to use in [`purchase(options:)`](../purchase%28options%29.md).
 
-#### Discussion
+## Discussion
 
 The quantity applies to consumable Apple In-App Purchases and non-renewing subscriptions.
 

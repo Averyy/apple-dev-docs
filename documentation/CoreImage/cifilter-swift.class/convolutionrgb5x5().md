@@ -24,11 +24,11 @@ class func convolutionRGB5X5() -> any CIFilter & CIConvolution
 + (CIFilter<CIConvolution> *) convolutionRGB5X5Filter;
 ```
 
-#### Return Value
+## Return Value
 
 This method applies a 5 x 5 convolution to the `RGB` components image. The effect uses a 5 x 5 area surrounding an input pixel, the pixel itself, and those within a distance of two pixels horizontally and vertically. The effect repeats this for every pixel within the image. The work area is then combined with the weight property vector to produce the processed image. This filter differs from the [`convolution5X5()`](./convolution5x5%28%29.md) filter, which processes all of the color components including the alpha component.
 
-#### Discussion
+## Discussion
 
 The convolution-RGB 5 x 5 filter uses the following properties:
 

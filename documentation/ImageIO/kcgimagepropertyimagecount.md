@@ -25,7 +25,7 @@ let kCGImagePropertyImageCount: CFString
 extern CFStringRef const kCGImagePropertyImageCount;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is a [`CFNumber`](../CoreFoundation/cfnumber.md).
 

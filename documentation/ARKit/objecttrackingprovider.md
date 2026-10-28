@@ -15,7 +15,7 @@ A source of real-time position of reference objects in a person’s environment.
 final class ObjectTrackingProvider
 ```
 
-#### Overview
+## Overview
 
 Use this class to configure ARKIt to track reference objects in a person’s environment and receive a stream of updates that contains [`ObjectAnchor`](./objectanchor.md) structures that describe them.
 

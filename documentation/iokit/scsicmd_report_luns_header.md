@@ -16,7 +16,7 @@ typedef struct SCSICmd_REPORT_LUNS_Header {
 } SCSICmd_REPORT_LUNS_Header;
 ```
 
-#### Overview
+## Overview
 
 This structure defines the format of the data that is returned for the REPORT_LUNS command.
 

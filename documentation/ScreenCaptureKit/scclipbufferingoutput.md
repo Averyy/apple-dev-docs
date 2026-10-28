@@ -22,7 +22,7 @@ class SCClipBufferingOutput
 @interface SCClipBufferingOutput : NSObject
 ```
 
-#### Overview
+## Overview
 
 SCClipBufferingOutput
 

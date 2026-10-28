@@ -19,7 +19,7 @@ func restoreState(with coder: NSCoder)
 - (void) restoreStateWithCoder:(NSCoder *) coder;
 ```
 
-#### Discussion
+## Discussion
 
 This method is part of the window restoration system and is called at launch time to restore the window-related state of your document object. The default implementation restores some basic information about the document. If you override this method, you must call `super` at some point in your implementation.
 

@@ -24,11 +24,11 @@ func SSLGetDatagramWriteSize(_ dtlsContext: SSLContext, _ bufSize: UnsafeMutable
 OSStatus SSLGetDatagramWriteSize(SSLContextRef dtlsContext, size_t *bufSize);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 
-#### Discussion
+## Discussion
 
 Although any packet below this threshold size will not be fragmented by the OS when sent using [`SSLWrite(_:_:_:_:)`](./sslwrite%28_,_,_,_%29.md), this function provides no guarantees about whether the packet will be fragmented by routers en route. This size value is equal to the maximum Datagram Record size (set by calling [`SSLSetMaxDatagramRecordSize(_:_:)`](./sslsetmaxdatagramrecordsize%28_,_%29.md)) minus the DTLS Record header size.
 

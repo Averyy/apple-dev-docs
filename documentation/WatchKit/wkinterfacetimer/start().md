@@ -19,7 +19,7 @@ func start()
 - (void) start;
 ```
 
-#### Discussion
+## Discussion
 
 After setting the target date for the timer, call this method to begin updating the timer object’s displayed text. Further updates to the timer occur automatically on the user’s Apple Watch, without the need for you to do anything else.
 

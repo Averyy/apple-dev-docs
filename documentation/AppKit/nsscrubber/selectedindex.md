@@ -19,7 +19,7 @@ var selectedIndex: Int { get set }
 @property NSInteger selectedIndex;
 ```
 
-#### Discussion
+## Discussion
 
 If no item is selected, the value of this property is `-1`. If you set this property through the scrubber’s animator proxy, the selection change animates.
 

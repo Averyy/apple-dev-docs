@@ -23,7 +23,7 @@ let CTSubscriberTokenRefreshed: String
 extern NSString * const CTSubscriberTokenRefreshed;
 ```
 
-#### Discussion
+## Discussion
 
 The notification’s [`object`](../Foundation/nsnotification/object.md) property is the [`CTSubscriber`](./ctsubscriber.md) instance whose subscriber token refreshed.
 

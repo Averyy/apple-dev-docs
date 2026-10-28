@@ -20,7 +20,7 @@ Indicates a relative shift of the left and right images, which changes the zero 
 static var horizontalDisparityAdjustment: CMFormatDescription.Extensions.Key { get }
 ```
 
-#### Discussion
+## Discussion
 
 The value encoded in normalized image space is  a signed 32-bit integer measured over the range of -10000 to 10000 mapping to the uniform range [-1.0…1.0]. The interval of 0.0 to 1.0 or 0 to 10000 maps onto the stereo eye view image width. The negative interval 0.0 to -1.0 or 0 to -10000 similarly maps onto the stereo eye view image width.
 

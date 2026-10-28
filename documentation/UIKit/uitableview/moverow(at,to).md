@@ -23,7 +23,7 @@ func moveRow(at indexPath: IndexPath, to newIndexPath: IndexPath)
 - (void) moveRowAtIndexPath:(NSIndexPath *) indexPath toIndexPath:(NSIndexPath *) newIndexPath;
 ```
 
-#### Discussion
+## Discussion
 
 You can combine row-move operations with row-insertion and row-deletion operations within a [`beginUpdates()`](./beginupdates%28%29.md)–[`endUpdates()`](./endupdates%28%29.md) block to have all changes occur together as a single animation.
 

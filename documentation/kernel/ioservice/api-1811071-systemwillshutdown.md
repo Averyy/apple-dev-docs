@@ -12,7 +12,7 @@ virtual void systemWillShutdown(
  IOOptionBitsspecifier );
 ```
 
-#### Overview
+## Overview
 
 This function is called for all members of the power plane in leaf-to-root order. If a subclass needs to wait for a pending I/O, then the call to `systemWillShutdown` should be postponed until the I/O completes.
 

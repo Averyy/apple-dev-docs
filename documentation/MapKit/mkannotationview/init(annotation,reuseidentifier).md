@@ -24,11 +24,11 @@ init(annotation: (any MKAnnotation)?, reuseIdentifier: String?)
 - (instancetype) initWithAnnotation:(id<MKAnnotation>) annotation reuseIdentifier:(NSString *) reuseIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized annotation view, or `nil` if there’s a problem initializing the object.
 
-#### Discussion
+## Discussion
 
 The reuse identifier provides a way for you to improve performance by recycling annotation views as the map scrolls on and off of the map. As MapKit no longer needs views, the map view moves them to a reuse queue. When a new annotation becomes visible, your app can request a view for that annotation by passing the appropriate reuse identifier string to the [`dequeueReusableAnnotationView(withIdentifier:)`](../mkmapview/dequeuereusableannotationview%28withidentifier%29.md) method of [`MKMapView`](../mkmapview.md).
 

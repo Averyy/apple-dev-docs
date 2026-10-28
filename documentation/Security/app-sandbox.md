@@ -4,7 +4,7 @@
 
 Restrict access to system resources and user data in macOS apps to contain damage if an app becomes compromised.
 
-#### Overview
+## Overview
 
 App Sandbox provides protection to system resources and user data by limiting your app’s access to resources requested through entitlements.
 

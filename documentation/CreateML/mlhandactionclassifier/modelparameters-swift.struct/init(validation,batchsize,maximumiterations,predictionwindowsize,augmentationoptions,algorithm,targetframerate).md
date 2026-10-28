@@ -19,7 +19,7 @@ Creates a set of training session parameters for a hand action classifier task.
 init(validation: MLHandActionClassifier.ModelParameters.ValidationData = .split(strategy: .automatic), batchSize: Int = MLHandActionClassifier.__Defaults.batchSize, maximumIterations: Int = MLHandActionClassifier.__Defaults.maximumIterations, predictionWindowSize: Int = MLHandActionClassifier.__Defaults.predictionWindowSize, augmentationOptions: MLHandActionClassifier.VideoAugmentationOptions = [], algorithm: MLHandActionClassifier.ModelParameters.ModelAlgorithmType = .gcn, targetFrameRate: Double = MLHandActionClassifier.__Defaults.targetFrameRate)
 ```
 
-#### Discussion
+## Discussion
 
 - validation: An [`MLHandActionClassifier.ModelParameters.ValidationData`](./validationdata.md) instance.
 - batchSize: The number of videos the training session uses for each of its training iterations.

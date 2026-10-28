@@ -25,7 +25,7 @@ var mapRect: MKMapRect { get set }
 @property (nonatomic, assign) MKMapRect mapRect;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the map using map view points. If you assign a value for this property, the snapshotter updates the value in the [`region`](./region.md) property to match the corresponding map rectangle as closely as possible.
 

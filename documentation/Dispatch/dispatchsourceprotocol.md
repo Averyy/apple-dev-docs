@@ -25,7 +25,7 @@ protocol DispatchSourceProtocol : NSObjectProtocol
 @protocol OS_dispatch_source <OS_dispatch_object>
 ```
 
-#### Overview
+## Overview
 
 You do not adopt this protocol in your objects. Instead, use the [`makeSignalSource(signal:queue:)`](./dispatchsource/makesignalsource%28signal,queue%29.md) method to create an object that adopts this protocol.
 

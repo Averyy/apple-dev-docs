@@ -24,7 +24,7 @@ func setDescriptor(_ descriptor: MTLTensorAuxiliaryPlaneDescriptor, for plane: M
 - (void) setDescriptor:(MTLTensorAuxiliaryPlaneDescriptor *) descriptor forPlane:(MTLTensorPlaneType) plane;
 ```
 
-#### Discussion
+## Discussion
 
 [`MTLTensorPlaneType.data`](../mtltensorplanetype/data.md) is not a valid plane type for this method. The data plane is always present, and you configure it directly on [`MTLTensorDescriptor`](../mtltensordescriptor.md).
 

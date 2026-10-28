@@ -22,7 +22,7 @@ var calibratedLatency: CFTimeInterval { get }
 @property (nonatomic, readonly) CFTimeInterval calibratedLatency;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property when you need to manually synchronize video playback with custom audio. For example, you might correlate this value with the [`latency`](../../AudioToolbox/auaudiounit/latency.md) property of a Core Audio unit when writing custom video-playback software. The value of this property is `0` until the user explicitly calibrates their display.
 

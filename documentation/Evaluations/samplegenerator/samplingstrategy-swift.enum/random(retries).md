@@ -25,7 +25,7 @@ case random(retries: Int = 5)
 
 - [Generating synthetic datasets](../../generating-synthetic-evaluation-datasets.md)
 
-#### Discussion
+## Discussion
 
 When the model repeats an inference, this strategy retries up to `retries` times, selecting a random subset to steer the model toward a new inference.
 

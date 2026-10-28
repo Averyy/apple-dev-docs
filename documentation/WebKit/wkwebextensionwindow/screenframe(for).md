@@ -19,7 +19,7 @@ optional func screenFrame(for context: WKWebExtensionContext) -> CGRect
 - (CGRect) screenFrameForWebExtensionContext:(WKWebExtensionContext *) context;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to [`CGRectNull`](../../CoreGraphics/cgrectnull.md) if not implemented.
 

@@ -24,7 +24,7 @@ var reorderingHandlers: __UICollectionViewDiffableDataSourceReorderingHandlers {
 @property (nonatomic, copy) UICollectionViewDiffableDataSourceReorderingHandlers<id,id> * reorderingHandlers;
 ```
 
-#### Discussion
+## Discussion
 
 Provide reordering handlers to support the reordering of items in your collection view.
 

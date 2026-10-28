@@ -24,11 +24,11 @@ struct Category
 typedef NSString * AVAudioSessionCategory;
 ```
 
-#### Discussion
+## Discussion
 
 An audio session category defines a set of audio behaviors. Choose a category that most accurately describes the audio behavior you require.
 
-##### Supporting AirPlay
+### Supporting AirPlay
 
 The playback-only categories ([`ambient`](./category-swift.struct/ambient.md), [`soloAmbient`](./category-swift.struct/soloambient.md), and [`playback`](./category-swift.struct/playback.md)) support both the mirrored and nonmirrored variants of AirPlay.
 

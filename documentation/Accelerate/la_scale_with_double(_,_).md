@@ -25,7 +25,7 @@ func la_scale_with_double(_ matrix: la_object_t, _ scalar: Double) -> la_object_
 extern la_object_tla_scale_with_double(la_object_t matrix, double scalar);
 ```
 
-#### Discussion
+## Discussion
 
 Multiply a matrix or vector by a scalar given by a double.
 

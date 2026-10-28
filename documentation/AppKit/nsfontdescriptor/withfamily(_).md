@@ -19,7 +19,7 @@ func withFamily(_ newFamily: String) -> NSFontDescriptor
 - (NSFontDescriptor *) fontDescriptorWithFamily:(NSString *) newFamily;
 ```
 
-#### Return Value
+## Return Value
 
 The new font descriptor.
 

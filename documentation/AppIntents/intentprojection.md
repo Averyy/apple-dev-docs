@@ -22,7 +22,7 @@ Projections for an app intent that returns non-optional values for parameters.
 final class IntentProjection<Intent> where Intent : AppIntent
 ```
 
-#### Overview
+## Overview
 
 Use an `IntentProjection` to create an app intent that returns non-optional values for parameters you list using an [`IntentParameterDependency`](./intentparameterdependency.md) property wrapper.
 

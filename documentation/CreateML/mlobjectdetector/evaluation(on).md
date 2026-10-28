@@ -15,7 +15,7 @@ Generates metrics by evaluating the object detector’s performance using annota
 func evaluation(on annotatedImages: MLObjectDetector.DataSource) -> MLObjectDetectorMetrics
 ```
 
-#### Return Value
+## Return Value
 
 An [`MLObjectDetectorMetrics`](../mlobjectdetectormetrics.md) instance that represents the object detector’s performance on the annotated images.
 

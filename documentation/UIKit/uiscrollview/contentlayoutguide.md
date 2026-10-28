@@ -23,7 +23,7 @@ var contentLayoutGuide: UILayoutGuide { get }
 @property (nonatomic, strong, readonly) UILayoutGuide * contentLayoutGuide;
 ```
 
-#### Discussion
+## Discussion
 
 Use this layout guide when you want to create Auto Layout constraints related to the content area of a scroll view.
 

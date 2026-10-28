@@ -22,7 +22,7 @@ case popover
 UIModalPresentationPopover
 ```
 
-#### Discussion
+## Discussion
 
 In a horizontally regular environment, this style displays the view controller in a popover view. The background content is dimmed and taps outside the popover cause the popover to be dismissed. If you do not want taps to dismiss the popover, you can assign one or more views to the [`passthroughViews`](../uipopoverpresentationcontroller/passthroughviews.md) property of the associated [`UIPopoverPresentationController`](../uipopoverpresentationcontroller.md) object, which you can get from the [`popoverPresentationController`](../uiviewcontroller/popoverpresentationcontroller.md) property.
 

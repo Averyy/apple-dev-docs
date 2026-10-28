@@ -21,7 +21,7 @@ object ProductPageReason
 
 - [Apple Ads Campaign Management API 4](./apple-search-ads-campaign-management-api-4.md)
 
-#### Discussion
+## Discussion
 
 Descriptions of reason codes include the following:
 

@@ -25,7 +25,7 @@ struct OpenURLOptionsKey
 typedef NSString * UIApplicationOpenURLOptionsKey;
 ```
 
-#### Overview
+## Overview
 
 Use these keys to retrieve options in the [`application(_:open:options:)`](../uiapplicationdelegate/application%28_,open,options%29.md) method of your app delegate.
 

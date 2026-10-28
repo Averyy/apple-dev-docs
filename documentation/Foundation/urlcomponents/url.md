@@ -21,7 +21,7 @@ A URL created from the components.
 var url: URL? { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the NSURLComponents has an authority component (user, password, host or port) and a path component, then the path must either begin with “/” or be an empty string. If the NSURLComponents does not have an authority component (user, password, host or port) and has a path component, the path component must not start with “//”. If those requirements are not met, nil is returned.
 

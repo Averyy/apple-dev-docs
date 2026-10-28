@@ -19,7 +19,7 @@ Returns the data for providing a Live Text interaction with a pixel buffer image
 final func analyze(_ pixelBuffer: CVPixelBuffer, orientation: CGImagePropertyOrientation, configuration: ImageAnalyzer.Configuration) async throws -> ImageAnalysis
 ```
 
-#### Return Value
+## Return Value
 
 The data items that the analyzer finds in the image.
 

@@ -19,11 +19,11 @@ func getDataValue() -> Data!
 - (NSData *) getDataValue;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an NSData representation of the data element if it is a 128-bit number.
 
-#### Discussion
+## Discussion
 
 The data types represented by a data object are 128-bit versions of 1 (unsigned int) and 2 (signed int).
 

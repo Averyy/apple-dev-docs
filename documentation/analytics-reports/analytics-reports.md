@@ -4,7 +4,7 @@
 
 A list of app development reports, their field descriptions, and glossaries.
 
-#### Overview
+## Overview
 
 Use the Analytics Report API to analyze data about your apps on Apple platforms. This page provides details on downloading reports, report changes, and a list of available reports. You can look at specific reports to read descriptions of report fields, glossaries of values, definitions of key terms, and coverage across platforms.
 
@@ -16,7 +16,7 @@ You can review these reports if you have any of these API key roles:
 
 > **Note**: If you share an API key for your developer account with a third party for analyzing or processing your reports, select the SALES_AND_REPORTS role when generating a new key. This role can access to [`Download sales and trends reports`](../AppStoreConnectAPI/get-v1-salesreports.md) but can’t access [`Download finance reports`](../AppStoreConnectAPI/get-v1-financereports.md) endpoint.
 
-##### Download and process reports
+### Download and process reports
 
 To start receiving reports, use the [`Request Reports`](../AppStoreConnectAPI/post-v1-analyticsreportrequests.md) endpoint in the App Store Connect API. To learn more, see [Downloading Analytics Reports](../AppStoreConnectAPI/downloading-analytics-reports.md). After you create your request, use [`Read Report Request Information`](../AppStoreConnectAPI/get-v1-analyticsreportrequests-_id_.md) to poll the list of report instances to check whether new instances are downloadable. Apple does not generate reports until you create a valid Analytics Report Request.
 
@@ -26,11 +26,11 @@ Each report instance has a specific granularity: daily, weekly, or monthly. *Dai
 
 > **Note**: For weekly and monthly report instances, the `Date` column represents the first day of the week and month, respectively.
 
-##### Retrieve missed reports
+### Retrieve missed reports
 
 Once you generate a report instance, it’s available for 35 days. After this period, the system automatically deletes report instances. In that event, you are able to initiate a new one-time snapshot request using the [Request reports](../AppStoreConnectAPI/post-v1-analyticsreportrequests.md) endpoint in App Store Connect API to retrieve data that is no longer available in a daily generated report. This request generates a comprehensive data collection of all available historical reports. You can make a single, one-time snapshot request per month.
 
-##### Monitor future report changes
+### Monitor future report changes
 
 Report column position might change over time. Rely on column names instead of column positions in the report files to ensure smoother schema upgrades. Report values are not case sensitive.
 

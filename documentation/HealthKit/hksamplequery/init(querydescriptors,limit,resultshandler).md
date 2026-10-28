@@ -24,7 +24,7 @@ init(queryDescriptors: [HKQueryDescriptor], limit: Int, resultsHandler: @escapin
 - (instancetype) initWithQueryDescriptors:(NSArray<HKQueryDescriptor *> *) queryDescriptors limit:(NSInteger) limit resultsHandler:(void (^)(HKSampleQuery *query, NSArray<__kindof HKSample *> *results, NSError *error)) resultsHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a sample query for data that matches any of the [`HKQueryDescriptor`](../hkquerydescriptor.md) objects. Each descriptor can specify a different data type.
 

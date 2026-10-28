@@ -19,7 +19,7 @@ Indicates whether the layer display is mirrored.
 @property (nonatomic, getter=isMirrored) BOOL mirrored;
 ```
 
-#### Discussion
+## Discussion
 
 To change the value of this property, the value of [`automaticallyAdjustsMirroring`](./automaticallyadjustsmirroring.md) must be [`false`](../../Swift/false.md).
 

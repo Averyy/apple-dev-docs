@@ -23,7 +23,7 @@ func activate()
 - (void) activateSession;
 ```
 
-#### Discussion
+## Discussion
 
 This method executes asynchronously and calls the [`session(_:activationDidCompleteWith:error:)`](../wcsessiondelegate/session%28_,activationdidcompletewith,error%29.md) method of your delegate object upon completion. Call this method when your app is ready to communicate with its counterpart. Your cannot send or receive messages until you call this method. If the [`delegate`](./delegate.md) property is `nil`, calling this method logs an error.
 

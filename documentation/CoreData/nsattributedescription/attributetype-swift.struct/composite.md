@@ -21,7 +21,7 @@ An attribute that derives its value by composing other attributes.
 static let composite: NSAttributeDescription.AttributeType
 ```
 
-#### Discussion
+## Discussion
 
 Composite attributes support all attribute types except the following:
 

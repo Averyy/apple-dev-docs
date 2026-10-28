@@ -10,13 +10,13 @@ Build efficient custom worlds for your app.
 - visionOS 1.0+
 - Xcode 15.3+
 
-#### Overview
+## Overview
 
 You can implement immersive environments for your app that people can fade in and out using the Digital Crown, just like the provided system environments. However, custom immersive environments can cause performance and thermal problems if you’re not careful about how you build them.
 
 This article describes ways to address these potential problems, and the sample provides a demonstration of some of these methods in action.
 
-#### Avoid very dark or light environments
+## Avoid very dark or light environments
 
 If possible, avoid creating environments that are very dark or very light. With very dark environments, you may notice banding artifacts. You can mitigate this effect to some extent by using 16-bit textures instead of 8-bit textures, but doing so adds nontrivial overhead because Reality Composer Pro doesn’t compress the texture. You may also be able to implement dithering in your shader to reduce banding.
 
@@ -24,7 +24,7 @@ With very bright textures, the lightest parts of your environment may look clipp
 
 This sample’s garden scene is a well-balanced environment.
 
-#### Minimize shader complexity
+## Minimize shader complexity
 
 All shaders aren’t created equal. Physically based rendering (PBR) materials are considerably more complex than unlit materials, which just map a texture or color onto an object without requiring lighting calculations. Most 3D modeling applications provide a way to bake lighting into a texture, creating the illusion of a lighted entity. Baking lighting into your model’s textures isn’t always possible, but when you use an unlit material instead of a PBR material, you improve your environment’s performance. The sample app uses unlit materials as much as possible to limit pixel shader cost.
 
@@ -41,13 +41,13 @@ You can also set `applyPostProcessToneMap` to `false` in Reality Composer Pro’
 
 Certain other settings can affect the complexity and performance of the shaders that RealityKit generates. For example, enabling transparency can add nontrivial overhead to the generated shader, as can using trilinear filtering on textures. For more information, see [Improving the Performance of a RealityKit App](./improving-the-performance-of-a-realitykit-app.md).
 
-#### Use perpendicular geometry
+## Use perpendicular geometry
 
 Try to use geometry that’s perpendicular to the viewer. For objects more than a moderate distance from the user, consider mapping a texture containing the rendered object and map it to a rectangle or other two-dimensional polygon using an unlit shader. You can also use normal maps and use UV animation on your textures to create more convincing flat objects, like the pond shown in this video. This sample has the pond located behind you. In the visonOS Simulator, once you have entered the immersive space, use the I/O > Set immersion to > 100% and then turn around to see the pond.
 
 [Video: A video showing a stylized pond with lily pads and moving water. As we change our perspective, we see that the pond is actually a single rectangle with an animated texture applied to it.](https://developer.apple.com/tutorials/videos/com.apple.RealityKit/immersive-simple-geometry.mp4)
 
-#### Use a sky dome
+## Use a sky dome
 
 To create your environment’s sky and distant objects, place a large dome over the viewer with the dome’s normals pointing inward, and map an environment texture onto it with an unlit material, as shown in this sample’s garden asset. If your environment has no floor or ground, use a sphere instead of a dome.
 
@@ -55,7 +55,7 @@ Beyond a certain distance, a viewer can’t tell the difference between an entit
 
 ![A screenshot of a sky dome in an outdoor environment.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/immersive-environment-skydome@2x.png)
 
-#### Use geometry efficiently
+## Use geometry efficiently
 
 Although the geometry detail in the stylized content of the sample isn’t dense enough to require much optimization, vertex count is one of the biggest sources of performance problems in rendered 3D scenes, so use the smallest number of vertices you need to achieve the effect that you want. Objects that are further away from from the viewer generally need fewer vertices than those closer to the camera.
 
@@ -67,17 +67,17 @@ Remove geometry the user can’t see, including vertices inside an object or beh
 
 Try to avoid using long, thin triangles in your models. To create items like wires and chain link fences, either break up the geometry into multiple smaller triangles, or consider using an alpha map, which is a texture you apply to your model that identifies which parts of the object are transparent. You can use an alpha map to “cut out” thin shapes from a simple, larger polygon rather than building them from vertices.
 
-#### Reduce draw calls
+## Reduce draw calls
 
 Each model entity in your scene generates one draw call per material for noninstanced geometry. On the other hand, with instanced entities, RealityKit only generates a single draw call for each material used on the original instanced entity. As a result, using instanced entities can reduces the number of draw calls your app makes.
 
 Sharing textures between entities by using *texture atlases*, which are textures that contain images for multiple materials, also reduces your app’s draw calls, as can combining multiple models into a single entity with shared materials. When combining model entities, be careful not to make the combined entities too large; if the entities are too large, they won’t be culled during frustum culling, when objects that are completely off-camera are removed from the rendering process — resulting in no draw calls at all. If any part of the combined entity is visible on screen, every material on that entity generates a draw call, even materials that are completely off screen.
 
-#### Generate efficient textures
+## Generate efficient textures
 
 The way you create the textures for your model entities can have a significant impact on shader performance. For best results, use 8 bits per channel, sRGB-encoded textures that use the Display P3 color space. Select the smallest texture size you can without sacrificing quality. Also, use UV map geometry so the entity is consistently sized based on the entity’s relative distance to the viewer. In other words, create texture maps so that objects closer to the viewer use more UV space than distant objects of roughly the same size.
 
-#### Provide a custom, image-based lighting texture
+## Provide a custom, image-based lighting texture
 
 To control the lighting of your scene, provide an image-based lighting (IBL) texture. For best results, use a 1024x512 pixel HDRI image saved as an `.exr` file. Load the image, then use it to create an `ImageBasedLightComponent` on the root node of your `RealityView`, as shown below:
 
@@ -92,7 +92,7 @@ To control the lighting of your scene, provide an image-based lighting (IBL) tex
 
 When using IBL in your scene, add an `ImageBasedLightReceiverComponent` to any entity in the scene using PBR materials, such as [`PhysicallyBasedMaterial`](./physicallybasedmaterial.md), [`SimpleMaterial`](./simplematerial.md), or materials created in Reality Composer’s Shader Graph of type `Physically Based`, or of type `Custom` that uses a `MaterialXPreviewSurface` shader node. If you don’t provide an IBL texture when using PBR materials, those materials render using RealityKit’s default IBL texture when in immersive mode.
 
-#### Instrument your environment
+## Instrument your environment
 
 Use the RealityKit Trace tool in Instruments to identify performance bottlenecks caused by your environment. With your project open in Xcode, select Product -> Analyze and choose the RealityKit Trace instrument. Click the red record button on the left side of the toolbar to start your app running. Use your app normally for a few minutes, then hit the same button again to stop recording. That button now shows a white square instead of the red circle to indicate the recording is in process. It takes a little bit of time for Instrument to process the recorded data after you stop it. For more information on the RealityKit Trace tool, see the [Meet RealityKit Trace](https://developer.apple.com/videos/play/wwdc2023/10099/) video from WWDC23.
 
@@ -108,9 +108,9 @@ The three most important metrics to keep an eye on are Entity Count, 3D Mesh Dra
 | 3D Mesh Draw Calls | < 100 |
 | 3D Mesh Vertices | < 100000 |
 
-#### See Also
+## See Also
 
-###### Related articles
+#### Related articles
 
 - [Improving the Performance of a RealityKit App](./improving-the-performance-of-a-realitykit-app.md)
   Measure CPU and GPU utilization to find ways to improve your app’s performance.
@@ -119,7 +119,7 @@ The three most important metrics to keep an eye on are Entity Count, 3D Mesh Dra
 - [Creating a performance plan for your visionOS app](../visionOS/creating-a-performance-plan-for-visionos-app.md)
   Identify your app’s performance and power goals and create a plan to measure and assess them.
 
-###### Related videos
+#### Related videos
 
 - [Optimize your custom environments for visionOS](https://developer.apple.com/videos/play/wwdc2025/305)
   Discover how you can use procedural tools to create beautiful immersive environments for your visionOS app or game. We’ll share the building blocks for creating a high-quality environment, then dive deep into the optimization process. Learn how to use a series of Apple-provided workflows for Houdini to reduce your scene’s polygon count, clean up geometry, package UV maps, and create USD assets to import into Reality Composer Pro or your game engine of choice.

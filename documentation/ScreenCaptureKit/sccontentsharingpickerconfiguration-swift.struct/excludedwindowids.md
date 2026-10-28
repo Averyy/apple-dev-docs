@@ -16,7 +16,7 @@ A list of window IDs to exclude from the sharing picker.
 var excludedWindowIDs: Array<Int>
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Using an invalid window ID can cause an error. Use window values returned from Core Graphics methods such as [`CGWindowListCopyWindowInfo(_:_:)`](../../CoreGraphics/cgwindowlistcopywindowinfo%28_,_%29.md) to provide window IDs to exclude from the picker.
 

@@ -24,7 +24,7 @@ let kVTCompressionPropertyKey_MaxH264SliceBytes: CFString
 extern CFStringRef const kVTCompressionPropertyKey_MaxH264SliceBytes;
 ```
 
-#### Discussion
+## Discussion
 
 If supported by an H.264 encoder, the value limits the size in bytes of slices produced by the encoder, where possible. By default, no limit is specified.  A value of zero implies default behavior.
 

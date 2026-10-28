@@ -25,7 +25,7 @@ var kAudioChannelLayoutTag_DTS_6_0_B: AudioChannelLayoutTag { get }
 kAudioChannelLayoutTag_DTS_6_0_B
 ```
 
-#### Discussion
+## Discussion
 
 Your channel layout must be in the following order:
 

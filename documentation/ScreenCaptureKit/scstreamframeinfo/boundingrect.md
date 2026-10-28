@@ -20,7 +20,7 @@ static let boundingRect: SCStreamFrameInfo
 extern SCStreamFrameInfo const SCStreamFrameInfoBoundingRect;
 ```
 
-#### Discussion
+## Discussion
 
 The bounding rectangle provided for a frame is the minimum bounding box for containing all captured windows in the frame.
 

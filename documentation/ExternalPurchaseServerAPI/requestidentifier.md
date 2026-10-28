@@ -20,7 +20,7 @@ uuid requestIdentifier
 - [Reporting corrections](./reportcorrections.md)
 - [Reporting unrecognized and transactionless tokens](./reportwithouttransactions.md)
 
-#### Discussion
+## Discussion
 
 You generate this identifier when you send a report to the [`Send External Purchase Report`](./send-external-purchase-report.md) endpoint. Use the same `requestIdentifier` only if you resubmit a report that previously failed. Use a new `requestIdentifier` for each new report, including for reports that correct line items you previously submitted successfully.
 

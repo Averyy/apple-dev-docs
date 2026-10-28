@@ -25,7 +25,7 @@ init(title: INSpeakableString, contents: [INNoteContent], groupName: INSpeakable
 - (instancetype) initWithTitle:(INSpeakableString *) title contents:(NSArray<INNoteContent *> *) contents groupName:(INSpeakableString *) groupName createdDateComponents:(NSDateComponents *) createdDateComponents modifiedDateComponents:(NSDateComponents *) modifiedDateComponents identifier:(NSString *) identifier;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized note object or `nil` if the object could not be created.
 

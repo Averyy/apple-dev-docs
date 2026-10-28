@@ -21,7 +21,7 @@ Hide the scroll indicators.
 static var hidden: ScrollIndicatorVisibility { get }
 ```
 
-#### Discussion
+## Discussion
 
 By default, scroll views in macOS show indicators when a mouse is connected. Use [`never`](./never.md) to indicate a stronger preference that can override this behavior.
 

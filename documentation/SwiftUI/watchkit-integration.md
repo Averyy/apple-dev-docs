@@ -5,7 +5,7 @@
 
 Add WatchKit views to your SwiftUI app, or use SwiftUI views in your WatchKit app.
 
-#### Overview
+## Overview
 
 Integrate SwiftUI with your app’s existing content using hosting controllers to add SwiftUI views into WatchKit interfaces. A hosting controller wraps a set of SwiftUI views in a form that you can then add to your storyboard-based app.
 

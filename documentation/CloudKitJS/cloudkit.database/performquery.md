@@ -18,11 +18,11 @@ Promise<CloudKit.QueryResponse, CloudKit.CKError> performQuery(
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `Promise` object that resolves to a [`CloudKit.QueryResponse`](../cloudkit.queryresponse.md) object if the operation succeeds; otherwise, a [`CKError`](../cloudkit/ckerror.md) object.
 
-#### Discussion
+## Discussion
 
 To fetch records that match some criteria, create a [`CloudKit.Query`](../cloudkit.query.md) dictionary.
 

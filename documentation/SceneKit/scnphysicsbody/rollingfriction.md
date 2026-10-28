@@ -25,7 +25,7 @@ var rollingFriction: CGFloat { get set }
 @property (nonatomic) CGFloat rollingFriction;
 ```
 
-#### Discussion
+## Discussion
 
 This property simulates the traction between a rounded body and bodies it might roll against. A rolling friction of `0.0` (the default) means that a body induced to roll (for example, by being placed on an inclined surface) will continue to roll without slowing down unless otherwise acted upon, and a rolling friction of `1.0` prevents the body from rolling.
 

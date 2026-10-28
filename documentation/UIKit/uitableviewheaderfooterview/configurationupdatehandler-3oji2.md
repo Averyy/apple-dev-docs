@@ -19,7 +19,7 @@ A block for handling updates to the view’s configuration using the current sta
 @property (nonatomic, copy, nullable) UITableViewHeaderFooterViewConfigurationUpdateHandler configurationUpdateHandler;
 ```
 
-#### Discussion
+## Discussion
 
 A configuration update handler provides an alternative approach to overriding [`updateConfigurationUsingState:`](./updateconfigurationusingstate_.md) in a subclass. Set a configuration update handler to update the header footer view’s configuration using the new state in response to a configuration state change.
 

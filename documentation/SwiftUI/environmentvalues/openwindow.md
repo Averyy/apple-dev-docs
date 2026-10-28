@@ -19,7 +19,7 @@ A window presentation action stored in a view’s environment.
 var openWindow: OpenWindowAction { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use the `openWindow` environment value to get an [`OpenWindowAction`](../openwindowaction.md) instance for a given [`Environment`](../environment.md). Then call the instance to open a window. You call the instance directly because it defines a [`callAsFunction(id:)`](../openwindowaction/callasfunction%28id%29.md) method that Swift calls when you call the instance.
 

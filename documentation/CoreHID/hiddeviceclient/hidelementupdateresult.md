@@ -15,7 +15,7 @@ A class to hold the results of an element update.
 struct HIDElementUpdateResult
 ```
 
-#### Overview
+## Overview
 
 This class is received as the return value from [`updateElements(_:timeout:)`](./updateelements%28_,timeout%29.md). The results of the transactions can be received by subscripting the results object with [`HIDDeviceClient.ProvideElementUpdate`](./provideelementupdate.md) and [`HIDDeviceClient.RequestElementUpdate`](./requestelementupdate.md) originally passed to [`updateElements(_:timeout:)`](./updateelements%28_,timeout%29.md).
 

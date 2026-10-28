@@ -21,7 +21,7 @@ init(networkIdentifier: Int)
 - (instancetype) initWithNetworkIdentifier:(NSInteger) networkIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 When you call this method, the [`discoveryMethod`](./discoverymethod-swift.property.md) defaults to [`NIDLTDOAConfiguration.DiscoveryMethod.bluetoothLowEnergy`](./discoverymethod-swift.enum/bluetoothlowenergy.md). To initialize a configuration and specify your deployment’s discovery method, call [`init(networkIdentifier:discoveryMethod:)`](./init%28networkidentifier,discoverymethod%29.md) instead.
 

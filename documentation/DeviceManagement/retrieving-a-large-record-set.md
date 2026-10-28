@@ -5,7 +5,7 @@
 
 Efficiently work with large record sets.
 
-#### Overview
+## Overview
 
 When the number of records in a response exceeds a server-controlled limit, the response is batched. You can retrieve only the records that have changed since your last query by using the `sinceModifiedToken`. Make requests in parallel to reduce the time it takes to retrieve the entire result set.
 
@@ -14,7 +14,7 @@ These concepts apply to the following endpoints:
 - [`Get Licenses`](./get-licenses.md)
 - [`Get Users`](./get-users-5boi1.md)
 
-#### Track changes
+## Track changes
 
 Use `sinceModifiedToken` to keep your device management service up to date with changes, without having to retrieve all records.
 
@@ -22,7 +22,7 @@ After returning all records for a request, the server includes a `sinceModifiedT
 
 > **Note**:  Even if the server doesn’t return any records, the response still includes a `sinceModifiedToken` for use in subsequent requests.
 
-#### Handle batched responses
+## Handle batched responses
 
 Use a `batchToken` to retrieve multiple batches of records when the total number of records exceeds a limit.
 
@@ -45,7 +45,7 @@ The following fields are used with batched responses:
 
 > 💡 **Tip**:  One of a set of sequential batch requests may return an error. It’s also possible to get a response that includes no token, but also no error number. Because requests should return either a `batchToken` or `sinceModifiedToken`, don’t interpret an error or the lack of a `batchToken` for an individual batch to mean that the last batch has been received. The last batch includes a `sinceModifiedToken`. If an individual batch request fails, the device management service should retry the same batch using the same `batchToken`.
 
-#### Perform parallel requests
+## Perform parallel requests
 
 Both the [`Get Licenses`](./get-licenses.md) and [`Get Users`](./get-users-5boi1.md) endpoints can accept multiple requests in parallel, instead of sequentially, which can significantly reduce the amount of time required to request all licenses and users. You start by making an initial request to receive a `batchToken`. Subsequent requests can be submitted in parallel, by submitting the same `batchToken` and including an `overrideIndex` value from 1 to `totalBatchCount`. The request in which the `overrideIndex` value is equal to the `totalBatchCount` returns the new `sinceModifiedToken`.
 

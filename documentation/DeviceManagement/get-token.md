@@ -13,7 +13,7 @@ Gets a token from the server.
 - macOS 14.0+
 - visionOS 1.1+
 
-#### Discussion
+## Discussion
 
 A server that supports this request needs to include a `com.apple.mdm.token` value in the `ServerCapabilities` key of the MDM profile payload to enroll the device.
 
@@ -21,7 +21,7 @@ This request allows devices to fetch security-related tokens from the server and
 
 > **Note**:  The `GetBootstrapToken` request is a separate request specifically for the bootstrap token.
 
-##### Support access management for Managed Apple Accounts
+### Support access management for Managed Apple Accounts
 
 For the service type `com.apple.maid`, the Apple Identity Service requests this token when a Managed Apple Account is signing in, and then uses it to verify that the Managed Apple Account belongs to the same organization as the MDM server that enrolled the device. The token is a JSON Web Token (JWT) per RFC 7519 with the following claims:
 
@@ -32,11 +32,11 @@ For the service type `com.apple.maid`, the Apple Identity Service requests this 
 
 Sign the JWT using the server’s private key that corresponds to the RFC 3280 public key certificate that’s registered with Apple School Manager or Apple Business. The Apple Identity Service requires that the signing algorithm is “RS256” as defined in RFC 7518 section 3.1.
 
-##### Support Apple Watch pairing
+### Support Apple Watch pairing
 
 For the service type `com.apple.watch.pairing`, the MDM server requests this token to enroll an Apple Watch, with the request coming from the phone that’s paired to the watch. The format of the token is implementation-defined, but the phone and watch MDM servers need to use the same format. The purpose of this token is to confirm the pairing relationship of the watch to the phone, and to ensure that the phone is already enrolled in an MDM server that belongs to the same organization as the watch MDM server. Ensure that the token is cryptographically protected against tampering, spoofing, and replay attacks.
 
-##### Check-in availability
+### Check-in availability
 
 |  |  |
 | --- | --- |

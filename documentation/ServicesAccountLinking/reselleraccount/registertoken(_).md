@@ -18,7 +18,7 @@ Registers a signed token with the user’s Media & Purchases account.
 static func registerToken(_ token: String) async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: [`notEligible`](../registrationerror/noteligible.md) if app is not a registered partner, or [`failed`](../registrationerror/failed.md) for other failures
 

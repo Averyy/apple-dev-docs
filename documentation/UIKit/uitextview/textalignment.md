@@ -23,7 +23,7 @@ var textAlignment: NSTextAlignment { get set }
 @property (nonatomic) NSTextAlignment textAlignment;
 ```
 
-#### Discussion
+## Discussion
 
 This property applies to the entire text string. The default value of this property is [`NSTextAlignment.natural`](../nstextalignment/natural.md).
 

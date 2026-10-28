@@ -5,7 +5,7 @@
 
 Create sparse matrices for factorization and solving systems.
 
-#### Overview
+## Overview
 
 In the Accelerate framework, the Sparse Solvers library stores sparse matrices using the compressed sparse column (CSC) format. CSC stores a matrix as a series of column vectors that specify the nonzero entries as `(row-index, value)` pairs and omit the zero entries.
 
@@ -17,7 +17,7 @@ The Sparse Solvers library supports unsymmetric and symmetric sparse matrices, e
 - A *symmetric matrix* is symmetrical along the diagonal from its upper-left to lower-right corners. In other words, a symmetric matrix is equal to its transpose (*A=Aᵀ*).
 - A *block matrix* can be either unsymmetric or symmetric, and consists of sections called blocks. The blocks along the diagonal of a symmetric block matrix must, themselves, be symmetrical.
 
-##### Create an unsymmetric matrix
+### Create an unsymmetric matrix
 
 In this example of an unsymmetric sparse matrix, empty cells represent zeros:
 
@@ -115,7 +115,7 @@ SparseMatrix_Double A = {
 };
 ```
 
-##### Create a symmetric matrix
+### Create a symmetric matrix
 
 In this example of a symmetric sparse matrix, empty cells represent zeros:
 
@@ -205,7 +205,7 @@ SparseMatrix_Double A = {
 };
 ```
 
-##### Create a block matrix
+### Create a block matrix
 
 You can create block sparse matrices *—* that is, a matrix that consists of blocks that contain multiple values — by defining a [`blockSize`](./sparsematrixstructure/blocksize.md) greater than 1. The block size is the length of the side of the square block.
 

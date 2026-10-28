@@ -16,7 +16,7 @@ The URL of your web service.
 required DOMString webServiceURL;
 ```
 
-#### Discussion
+## Discussion
 
 The URL for your web service needs to begin with `https://`; for example, `https://example.com`.
 

@@ -19,7 +19,7 @@ init(image: UIImage?)
 - (instancetype) initWithImage:(UIImage *) image;
 ```
 
-#### Discussion
+## Discussion
 
 The size of the poster view is determined by the natural size of the passed image when no frame or content size is explicitly set.
 

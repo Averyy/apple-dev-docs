@@ -23,7 +23,7 @@ struct NSFileProviderSyncAnchor
 typedef NSData * NSFileProviderSyncAnchor;
 ```
 
-#### Discussion
+## Discussion
 
 Your file provider should populate the sync anchor with the information it needs to identify and enumerate only the changes that occurred after the synchronization point. For example, a simple sync anchor could use the time and date of the last update successfully downloaded from the server. A request to enumerate changes from that sync anchor would then return only the changes downloaded after that date.
 

@@ -4,7 +4,7 @@
 
 Inspect and modify the schema and data for your app’s iCloud container.
 
-#### Overview
+## Overview
 
 The CloudKit Database app is a web-based tool for developers to manage their iCloud containers. You can sign in to the CloudKit Database app through the Apple Developer web portal or through the CloudKit Console at [https://icloud.developer.apple.com/](https://icloud.developer.apple.com/).
 
@@ -17,7 +17,7 @@ With the CloudKit Database app, you can:
 - Deploy your schema to production. See [Deploying an iCloud Container’s Schema](./deploying-an-icloud-container-s-schema.md).
 - Obtain API tokens for use with CloudKit web services and [CloudKit JS](../CloudKitJS/CloudKitJS.md). See [Obtaining an API Token for an iCloud Container](./obtaining-an-api-token-for-an-icloud-container.md).
 
-##### Navigate to an iCloud Container’s Schema Management Page
+### Navigate to an iCloud Container’s Schema Management Page
 
 A schema defines record types and the possible relationships between them. You can use CloudKit Database Console or code to create your app’s schema. If you use code to create a just-in-time schema, the CloudKit Database app can help you verify the schema is correct.
 
@@ -32,7 +32,7 @@ To navigate to the iCloud container’s schema management page:
 
 After you select the container you want to manage, you can access information about the schema quickly by using the menu items. See [Inspecting and Editing an iCloud Container’s Schema](./inspecting-and-editing-an-icloud-container-s-schema.md) for more details.
 
-##### Navigate to an iCloud container’s data management page
+### Navigate to an iCloud container’s data management page
 
 You can use the CloudKit Database app to inspect data within the public database of an iCloud container. If you develop using the same iCloud account to store private data, you can also use the CloudKit Database app to inspect and edit private data.
 

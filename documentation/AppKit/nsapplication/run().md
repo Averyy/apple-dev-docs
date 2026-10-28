@@ -19,7 +19,7 @@ func run()
 - (void) run;
 ```
 
-#### Discussion
+## Discussion
 
 The loop continues until a [`stop(_:)`](./stop%28_%29.md) or [`terminate(_:)`](./terminate%28_%29.md) message is received. Upon each iteration through the loop, the next available event from the window server is stored and then dispatched by sending it to `NSApp` using [`sendEvent(_:)`](./sendevent%28_%29.md).
 

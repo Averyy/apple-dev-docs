@@ -21,7 +21,7 @@ Returns the mask of events monitored by the dispatch source.
 extern uintptr_t dispatch_source_get_mask(dispatch_source_t source);
 ```
 
-##### Return Value
+### Return Value
 
 The return value should be interpreted according to the type of the dispatch source, and can be one of the following:
 
@@ -29,7 +29,7 @@ The return value should be interpreted according to the type of the dispatch sou
 - [`DISPATCH_SOURCE_TYPE_PROC`](./dispatch_source_type_proc.md): `Dispatch Source Process Event Flags`
 - [`DISPATCH_SOURCE_TYPE_VNODE`](./dispatch_source_type_vnode.md): `Dispatch Source Vnode Event Flags`
 
-#### Discussion
+## Discussion
 
 The mask is a bitmask of relevant events being monitored by the dispatch event source. Any events that are not specified in the event mask are ignored and no event handler block is submitted for them.
 

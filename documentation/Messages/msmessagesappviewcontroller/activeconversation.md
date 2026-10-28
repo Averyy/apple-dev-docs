@@ -21,7 +21,7 @@ var activeConversation: MSConversation? { get }
 @property (nonatomic, strong, readonly, nullable) MSConversation * activeConversation;
 ```
 
-#### Discussion
+## Discussion
 
 This is the conversation that the user is currently viewing in the Messages app.
 

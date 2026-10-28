@@ -21,7 +21,7 @@ Returns the value of one of the properties, using an enumeration value instead o
 func value(for component: Calendar.Component) -> Int?
 ```
 
-#### Discussion
+## Discussion
 
 The calendar and timeZone and isLeapMonth property values cannot be retrieved by this method.
 

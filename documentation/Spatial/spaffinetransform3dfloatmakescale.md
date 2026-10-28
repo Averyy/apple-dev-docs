@@ -19,11 +19,11 @@
 static SPAffineTransform3DFloat SPAffineTransform3DFloatMakeScale(SPSize3DFloat scale);
 ```
 
-#### Return Value
+## Return Value
 
 A new affine transform structure.
 
-#### Discussion
+## Discussion
 
 Returns a new scale affine transform.
 

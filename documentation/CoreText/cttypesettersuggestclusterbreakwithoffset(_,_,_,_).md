@@ -25,11 +25,11 @@ func CTTypesetterSuggestClusterBreakWithOffset(_ typesetter: CTTypesetter, _ sta
 extern CFIndex CTTypesetterSuggestClusterBreakWithOffset(CTTypesetterRef typesetter, CFIndex startIndex, double width, double offset);
 ```
 
-#### Return Value
+## Return Value
 
 A count of the characters from `startIndex` that would cause the cluster break. The value returned can be used to construct a character range for [`CTTypesetterCreateLine(_:_:)`](./cttypesettercreateline%28_,_%29.md).
 
-#### Discussion
+## Discussion
 
 This cluster break is similar to a character break, except that it does not break apart linguistic clusters. No other contextual analysis is done. This can be used by the caller to implement a different line-breaking scheme, such as hyphenation. A typographic cluster break can also be triggered by a hard-break character in the stream.
 

@@ -23,7 +23,7 @@ var DISPATCH_TIME_FOREVER: UInt64 { get }
 #define DISPATCH_TIME_FOREVER
 ```
 
-#### Discussion
+## Discussion
 
 Indicates a time that means infinity.
 

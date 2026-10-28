@@ -25,7 +25,7 @@ var isLowPowerModeEnabled: Bool { get }
 @property (readonly, getter=isLowPowerModeEnabled) BOOL lowPowerModeEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 Users who wish to prolong their device’s battery life can enable Low Power Mode under Settings > Battery. In Low Power Mode, the system conserves battery life by enacting certain energy-saving measures, such as:
 

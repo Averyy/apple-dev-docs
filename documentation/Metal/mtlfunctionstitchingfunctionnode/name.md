@@ -24,7 +24,7 @@ var name: String { get set }
 @property (nonatomic, copy, readwrite, nonnull) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 The name needs to match one of the functions in the stitched library descriptor’s [`functions`](../mtlstitchedlibrarydescriptor/functions.md) property.
 

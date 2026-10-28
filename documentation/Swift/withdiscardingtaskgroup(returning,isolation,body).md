@@ -22,7 +22,7 @@ Starts a new scope that can contain a dynamic number of child tasks.
 func withDiscardingTaskGroup<GroupResult>(returning returnType: GroupResult.Type = GroupResult.self, isolation: isolated (any Actor)? = #isolation, body: (inout DiscardingTaskGroup) async -> GroupResult) async -> GroupResult
 ```
 
-#### Discussion
+## Discussion
 
 Unlike a [`TaskGroup`](./taskgroup.md), the child tasks as well as their results are discarded as soon as the tasks complete. This prevents the discarding task group from accumulating many results waiting to be consumed, and is best applied in situations where the result of a child task is some form of side-effect.
 
@@ -40,7 +40,7 @@ await withDiscardingTaskGroup(...) { group in
 
 Refer to [`TaskGroup`](./taskgroup.md) documentation for detailed discussion of semantics shared between all task groups.
 
-### Task Group Cancellation
+## Task Group Cancellation
 
 You can cancel a task group and all of its child tasks by calling the [`cancelAll()`](./taskgroup/cancelall%28%29.md) method on the task group, or by canceling the task in which the group is running.
 

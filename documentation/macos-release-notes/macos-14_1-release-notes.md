@@ -5,33 +5,33 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The macOS 14 SDK provides support to develop apps for Mac computers running Sonoma 14.1. The SDK comes bundled with Xcode 15. For information on the compatibility requirements for Xcode 15, see [Xcode 15 Release Notes](../Xcode-Release-Notes/xcode-15-release-notes.md).
 
-##### Remote Widgets
+### Remote Widgets
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Remote Widgets might render blank on mismatched iOS and macOS releases.  (115436466)
 
-##### Wallet
+### Wallet
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Some event ticket passes might fail to ingest into Wallet when added from a website on a Mac.  (115216417)
 
-##### WidgetKit
+### WidgetKit
 
-###### Known Issues
+#### Known Issues
 
 - In widgets `Text(_:style:)` doesn’t animate its content by default.  (107582710)
 
   **Workaround:** To explicitly request an animation, use the `View.contentTransition(_:)` modifier.
 
-##### iPhone 12 in France
+### iPhone 12 in France
 
-###### Notes
+#### Notes
 
 - Updates the iPhone 12 for users in France to accommodate a test protocol for Specific Absorption Rate (SAR) testing. For more information, visit this website: [https://support.apple.com/kb/HT213923](https://support.apple.com/kb/HT213923)  (116601274)
 

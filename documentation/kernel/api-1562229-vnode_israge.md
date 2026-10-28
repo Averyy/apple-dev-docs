@@ -15,7 +15,7 @@ Check if a vnode is marked for rapid aging
 int vnode_israge(vnode_t vp);
 ```
 
-#### Return Value
+## Return Value
 
 Nonzero if vnode is marked for rapid aging, 0 otherwise
 

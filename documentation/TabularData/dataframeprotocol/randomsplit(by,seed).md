@@ -21,7 +21,7 @@ Generates two data frame slices by randomly splitting the rows of the data table
 func randomSplit(by proportion: Double, seed: Int? = nil) -> (DataFrame.Slice, DataFrame.Slice)
 ```
 
-#### Return Value
+## Return Value
 
 A tuple of two data frame slices.
 

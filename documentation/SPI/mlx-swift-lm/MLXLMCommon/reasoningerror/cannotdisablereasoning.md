@@ -17,7 +17,7 @@ The caller asked to disable reasoning on a model whose reasoning cannot be turne
 case cannotDisableReasoning
 ```
 
-#### Discussion
+## Discussion
 
 This is a package-internal error. The `MLXFoundationModels` layer translates it into the framework’s `LanguageModelError.unsupportedCapability` so app developers see a first-party error type.
 

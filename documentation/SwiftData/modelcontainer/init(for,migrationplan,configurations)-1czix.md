@@ -22,7 +22,7 @@ Creates a model container using the specified schema, migration plan, and config
 init(for givenSchema: Schema, migrationPlan: (any SchemaMigrationPlan.Type)? = nil, configurations: [ModelConfiguration]) throws
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: A container must have at least one configuration. If you specify an empty array, the framework creates an instance of [`ModelConfiguration`](../modelconfiguration.md) for you by combining your app’s entitlements with the type’s default values.
 

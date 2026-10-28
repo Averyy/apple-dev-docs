@@ -16,11 +16,11 @@ Cancel a previously scheduled power event.
 IOReturn IOPMCancelScheduledPowerEvent(CFDateRef time_to_wake, CFStringRef my_id, CFStringRef type);
 ```
 
-#### Return Value
+## Return Value
 
 kIOReturnSuccess on success, otherwise on failure
 
-#### Discussion
+## Discussion
 
 Arguments mirror those to IOPMSchedulePowerEvent. All arguments must match the original arguments from when the power on was scheduled. Must be called as root.
 

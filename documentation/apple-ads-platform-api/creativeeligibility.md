@@ -15,11 +15,11 @@ Eligibility state for an ad creative across supply sources and placements.
 object CreativeEligibility
 ```
 
-#### Discussion
+## Discussion
 
 The `CreativeEligibility` object describes whether an ad creative is eligible to serve on specific supply sources and placements. It includes both allowed and blocked groups, providing granular visibility into where the ad creative can and cannot serve. To diagnose partial delivery restrictions without needing to check individual ad-level status fields, use this object.
 
-##### Example
+### Example
 
 ```json
 {

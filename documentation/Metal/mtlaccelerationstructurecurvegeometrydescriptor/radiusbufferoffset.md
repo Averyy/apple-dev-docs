@@ -24,7 +24,7 @@ var radiusBufferOffset: Int { get set }
 @property (nonatomic) NSUInteger radiusBufferOffset;
 ```
 
-#### Discussion
+## Discussion
 
 The offset needs to be a multiple of the radius format you configure with the [`radiusFormat`](./radiusformat.md) property. You also need to align the offset to both the radius format’s size and the platform’s buffer alignment requirement.
 

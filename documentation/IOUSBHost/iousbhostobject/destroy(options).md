@@ -18,7 +18,7 @@ func destroy(options: IOUSBHostObjectDestroyOptions = [])
 - (void) destroyWithOptions:(IOUSBHostObjectDestroyOptions) options;
 ```
 
-#### Discussion
+## Discussion
 
 Removes underlying allocations of the IOUSBHostObject object along with user client
 

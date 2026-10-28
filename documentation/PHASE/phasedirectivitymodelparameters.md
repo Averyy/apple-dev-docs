@@ -24,7 +24,7 @@ class PHASEDirectivityModelParameters
 @interface PHASEDirectivityModelParameters : NSObject
 ```
 
-#### Overview
+## Overview
 
 Several classes derive from this class that implement a unique strategy to direct sound. Rather than create an instance of this class, instantiate a subclass, such as [`PHASECardioidDirectivityModelParameters`](./phasecardioiddirectivitymodelparameters.md) or [`PHASEConeDirectivityModelParameters`](./phaseconedirectivitymodelparameters.md).
 

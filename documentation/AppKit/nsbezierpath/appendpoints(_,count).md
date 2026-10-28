@@ -19,7 +19,7 @@ func appendPoints(_ points: NSPointArray, count: Int)
 - (void) appendBezierPathWithPoints:(NSPointArray) points count:(NSInteger) count;
 ```
 
-#### Discussion
+## Discussion
 
 This method interprets the points as a set of connected line segments.  If the current path contains an open subpath, a line is created from the last point in that subpath to the first point in the points array. If the current path is empty, the first point in the points array is used to set the starting point of the line segments. Subsequent line segments are added using the remaining points in the array.
 

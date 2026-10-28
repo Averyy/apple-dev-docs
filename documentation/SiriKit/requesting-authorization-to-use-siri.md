@@ -5,19 +5,19 @@
 
 Request permission from the user for Siri and Maps to communicate with your app or Intents app extension.
 
-#### Overview
+## Overview
 
 Siri can’t interact with your app or app extension until the user grants permission. Maps only interacts with your app extension, but as with Siri, only after the user authorizes it to do so. Request authorization from your iOS app, whether you’re handling intents in an app extension or in your app. When the user approves an authorization request from your iOS app, this grants permission for your iOS app, its Intents app extension, and your watchOS app.
 
 > **Note**:  You don’t need to request authorization if your app only supports actions in the Shortcuts app.
 
-##### Configure Your App Target
+### Configure Your App Target
 
 First, enable the Siri capability for your iOS app or WatchKit extension for authorization to succeed. For information about how to enable the Siri capability, see [Creating an Intents App Extension](./creating-an-intents-app-extension.md).
 
 Next, configure your `Info.plist` file. Include the [`NSSiriUsageDescription`](../BundleResources/information-property-list/nssiriusagedescription.md) key in your iOS appʼs `Info.plist` file. The value for this key is a string that describes what information your app shares with SiriKit. For example, a workout app might set the value to the string *Workout information will be sent to Siri*. This key is a requirement.
 
-##### Request User Authorization
+### Request User Authorization
 
 Call the [`requestSiriAuthorization(_:)`](../Intents/inpreferences/requestsiriauthorization%28_%29.md) class method of [`INPreferences`](../Intents/inpreferences.md) at some point during your iOS app’s execution.
 

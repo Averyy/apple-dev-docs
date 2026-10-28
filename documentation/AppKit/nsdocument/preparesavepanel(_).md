@@ -19,11 +19,11 @@ func prepareSavePanel(_ savePanel: NSSavePanel) -> Bool
 - (BOOL) prepareSavePanel:(NSSavePanel *) savePanel;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if successfully prepared; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The default implementation is empty and returns [`true`](../../Swift/true.md).
 

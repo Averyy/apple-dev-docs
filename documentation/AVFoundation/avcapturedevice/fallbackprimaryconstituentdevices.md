@@ -23,7 +23,7 @@ var fallbackPrimaryConstituentDevices: [AVCaptureDevice] { get set }
 @property (nonatomic) NSArray<AVCaptureDevice *> * fallbackPrimaryConstituentDevices;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this value contains the array of devices that the [`supportedFallbackPrimaryConstituentDevices`](./supportedfallbackprimaryconstituentdevices.md) property provides. The system throws an exception if you attempt to specify a device other than the ones found in the device array.
 

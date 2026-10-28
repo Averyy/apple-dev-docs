@@ -17,7 +17,7 @@ typedef struct IOAudioEnginePosition {
 } IOAudioEnginePosition;
 ```
 
-#### Overview
+## Overview
 
 This position is based on the sample frame within a loop around the sample buffer, and the loop count which starts at 0 when the audio engine begins playback.
 

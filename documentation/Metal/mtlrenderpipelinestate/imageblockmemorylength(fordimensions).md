@@ -25,7 +25,7 @@ func imageblockMemoryLength(forDimensions imageblockDimensions: MTLSize) -> Int
 - (NSUInteger) imageblockMemoryLengthForDimensions:(MTLSize) imageblockDimensions;
 ```
 
-#### Discussion
+## Discussion
 
 The imageblock dimensions need to match a valid tile size, such as one of the following:
 

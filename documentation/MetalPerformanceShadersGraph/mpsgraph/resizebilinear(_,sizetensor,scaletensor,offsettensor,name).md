@@ -24,11 +24,11 @@ func resizeBilinear(_ imagesTensor: MPSGraphTensor, sizeTensor size: MPSGraphTen
 - (MPSGraphTensor *) resizeBilinearWithTensor:(MPSGraphTensor *) imagesTensor sizeTensor:(MPSGraphTensor *) size scaleTensor:(MPSGraphTensor *) scale offsetTensor:(MPSGraphTensor *) offset name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object
 
-#### Discussion
+## Discussion
 
 Resamples input images to given size using the provided scale and offset and bilinear sampling. Destination indices are computed using
 

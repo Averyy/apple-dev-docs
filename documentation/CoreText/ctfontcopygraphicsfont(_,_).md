@@ -25,7 +25,7 @@ func CTFontCopyGraphicsFont(_ font: CTFont, _ attributes: UnsafeMutablePointer<U
 extern CGFontRefCTFontCopyGraphicsFont(CTFontRef font, CTFontDescriptorRef*attributes);
 ```
 
-#### Return Value
+## Return Value
 
 A [`CGFont`](../CoreGraphics/cgfont.md) object for the given font reference.
 

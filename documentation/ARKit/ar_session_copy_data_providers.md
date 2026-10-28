@@ -15,11 +15,11 @@ Get a copy of the collection of all data providers on this session.
 extern ar_data_providers_tar_session_copy_data_providers(ar_session_t session);
 ```
 
-#### Return Value
+## Return Value
 
 The collection of data providers.
 
-#### Discussion
+## Discussion
 
 > **Note**: This type supports ARC. In non-ARC files, use `ar_retain()` and `ar_release()` to retain and release the object.
 

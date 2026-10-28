@@ -15,7 +15,7 @@ An array of errors that occurred when attempting to load resources.
 readonly attribute Error[] errors;
 ```
 
-#### Discussion
+## Discussion
 
 If an error occurs while attempting to load required resources or play a Live Photo, the `Error` instance lands at this property and remains until the Player is given new resources or information it lacked.
 

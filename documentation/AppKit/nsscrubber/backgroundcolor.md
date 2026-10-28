@@ -20,7 +20,7 @@ var backgroundColor: NSColor? { get set }
 @property (copy, nullable) NSColor * backgroundColor;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is ignored if the value of the [`backgroundView`](./backgroundview.md) property is non-`nil`. The default value is `nil`.
 

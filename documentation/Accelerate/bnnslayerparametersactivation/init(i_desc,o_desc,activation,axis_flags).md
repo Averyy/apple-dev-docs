@@ -23,7 +23,7 @@ Returns a new activation layer parameters structure from the supplied descriptor
 init(i_desc: BNNSNDArrayDescriptor, o_desc: BNNSNDArrayDescriptor, activation: BNNSActivation, axis_flags: UInt32)
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  The input dimensions must be equal to the output dimensions. For activation types other than identity, the input and output must be `float`.
 

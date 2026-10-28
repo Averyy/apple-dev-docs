@@ -19,11 +19,11 @@ func convert(_ fontObj: NSFont) -> NSFont
 - (NSFont *) panelConvertFont:(NSFont *) fontObj;
 ```
 
-#### Return Value
+## Return Value
 
 The converted font, or `aFont` itself if it can’t be converted.
 
-#### Discussion
+## Discussion
 
 For example, if `aFont` is Helvetica Oblique 12.0 point and the user has selected the Times font family (and nothing else) in the Font panel, the font returned is Times Italic 12.0 point.
 

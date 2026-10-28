@@ -21,11 +21,11 @@ func trackScrollButtons(with event: NSEvent)
 - (void) trackScrollButtons:(NSEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked automatically when the receiver receives `theEvent` mouse-down event in a scroll button; you should not invoke this method directly.
 
-##### Special Considerations
+### Special Considerations
 
 This method is not invoked in macOS 10.7 and later.
 

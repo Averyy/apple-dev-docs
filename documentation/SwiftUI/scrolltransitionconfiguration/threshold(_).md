@@ -21,7 +21,7 @@ Sets the threshold at which the view will be considered fully visible.
 func threshold(_ threshold: ScrollTransitionConfiguration.Threshold) -> ScrollTransitionConfiguration
 ```
 
-#### Return Value
+## Return Value
 
 A copy of this configuration with the threshold set to the given value.
 

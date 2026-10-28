@@ -21,7 +21,7 @@ The closure to execute when a record match is available.
 var recordMatchedBlock: ((CKRecord.ID, Result<CKRecord, any Error>) -> Void)? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The closure returns no value and takes the following parameters:
 

@@ -22,11 +22,11 @@ nonisolated
 func contentMargins(for guide: ContentMarginGuide, edges: Edge.Set = .all, alignment: Alignment? = nil) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view inset on `edges` by `guide`.
 
-#### Discussion
+## Discussion
 
 Use this modifier to lay a view out against a system metric, like the margins of the container it appears in:
 

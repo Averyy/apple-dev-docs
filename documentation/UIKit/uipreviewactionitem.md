@@ -24,7 +24,7 @@ protocol UIPreviewActionItem : NSObjectProtocol
 @protocol UIPreviewActionItem <NSObject>
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  Don’t adopt this protocol in custom classes.
 

@@ -16,7 +16,7 @@ Set values for 64-bit compare swap operation. Calling this function will make th
 void (*SetValues64)(IOFireWireLibCompareSwapCommandV3Ref self, UInt64 cmpVal, UInt64 newVal);
 ```
 
-#### Discussion
+## Discussion
 
 Available in v2 and newer.
 

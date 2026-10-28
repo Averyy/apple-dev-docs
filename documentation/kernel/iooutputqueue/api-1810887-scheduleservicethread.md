@@ -12,11 +12,11 @@ virtual bool scheduleServiceThread(
  void *param = 0);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if a thread callout was scheduled, false otherwise.
 
-#### Overview
+## Overview
 
 This method can be called by service() to schedule a thread that will call serviceThread() when it starts running.
 

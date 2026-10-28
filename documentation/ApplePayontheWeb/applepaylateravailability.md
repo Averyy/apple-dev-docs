@@ -18,7 +18,7 @@ Values you use to enable or disable Apple Pay Later for a specific transaction.
 enum ApplePayLaterAvailability
 ```
 
-#### Overview
+## Overview
 
 The following table describes the Apple Pay Later availability reasons.
 

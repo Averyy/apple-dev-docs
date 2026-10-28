@@ -14,7 +14,7 @@
 kMPAddressSpaceInfoVersion = 1L | (kOpaqueAddressSpaceID << 16)
 ```
 
-#### Discussion
+## Discussion
 
 The `MPAddressSpaceInfo` structure version.
 

@@ -24,7 +24,7 @@ case fullSizePairedVideo
 PHAssetResourceTypeFullSizePairedVideo
 ```
 
-#### Discussion
+## Discussion
 
 This asset resource type appears when fetching the asset resources associated with a Live Photo asset. This resource type represents the current rendered output, if any, for an edited Live Photo asset. The corresponding still image can be found in the [`PHAssetResourceType.fullSizePhoto`](./fullsizephoto.md) resource type.
 

@@ -15,7 +15,7 @@ The number of images the training session can use in a training iteration.
 var batchSize: Int?
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t have a preference, set this property to `nil` to tell Create ML to use an appropriate value when it trains the model.
 

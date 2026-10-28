@@ -5,13 +5,13 @@
 
 Change the default format for capturing movie files.
 
-#### Overview
+## Overview
 
 You use [`AVCaptureMovieFileOutput`](./avcapturemoviefileoutput.md) to capture QuickTime movie files, and the framework chooses the HEVC format by default on most iPhone and iPad models. However, you can change the default format in advance if you know you need a different format.
 
 If your app shares the captured video using a system share sheet, the system automatically converts the video to a format thatʼs compatible with the destination device. However, if your app saves or shares captured video internally, for applications outside the system share sheet, you need to use a video-capture format thatʼs compatible with all target devices. This article shows you how to change the capture format dynamically, so that videos captured in your app begin in the desired format.
 
-##### Change the default capture format
+### Change the default capture format
 
 You can change the default format at capture time by specifying it in the output settings for capturing movie files. Each capture device has a dictionary of settings that you adjust to control properties of the output movie file. For example, to capture video in H.264/MPEG-4 AVC, set the output settings key [`AVVideoCodecKey`](./avvideocodeckey.md) to [`h264`](./avvideocodectype/h264.md), as the example below shows:
 
@@ -45,7 +45,7 @@ if ([movieFileOutput.availableVideoCodecTypes containsObject:AVVideoCodecTypeH26
 
 For a list of supported capture codecs, see [`AVVideoCodecType`](./avvideocodectype.md).
 
-##### Convert previously captured movie files
+### Convert previously captured movie files
 
 In addition to saving or sharing captured video using a different default format, you can also convert existing movie file content by generating a new movie file based on the contents of the existing file. For details on how, see [Exporting video to alternative formats](./exporting-video-to-alternative-formats.md).
 

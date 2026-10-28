@@ -25,7 +25,7 @@ func la_difference(_ obj_left: la_object_t, _ obj_right: la_object_t) -> la_obje
 extern la_object_tla_difference(la_object_t obj_left, la_object_t obj_right);
 ```
 
-#### Discussion
+## Discussion
 
 Compute the element-wise difference of two vectors or matrices.
 

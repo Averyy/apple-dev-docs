@@ -24,7 +24,7 @@ class GKAgent3D
 @interface GKAgent3D : GKAgent
 ```
 
-#### Overview
+## Overview
 
 Agents are game entities that move according to realistic constraints and whose behavior is determined by goals that motivate movement. The general functionality of an agent is defined by the abstract superclass [`GKAgent`](./gkagent.md); however, you use instances of the [`GKAgent3D`](./gkagent3d.md) class to implement agent-based gameplay in a 3D game.
 

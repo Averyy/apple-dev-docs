@@ -23,7 +23,7 @@ convenience init(for traitCollection: UITraitCollection)
 + (instancetype) formatForTraitCollection:(UITraitCollection *) traitCollection;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized format object.
 

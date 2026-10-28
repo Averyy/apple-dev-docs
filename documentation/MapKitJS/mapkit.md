@@ -21,7 +21,7 @@ class MapKit extends EventTarget
 - [Creating a Maps token](./creating-a-maps-token.md)
 - [MapKit JS 6](./mapkit-js-6.md)
 
-#### Overview
+## Overview
 
 The [`mapkit`](./mapkit.md) object is the main namespace for the MapKit JS framework. Similar to [MapKit](../MapKit/MapKit.md) for apps, you can use MapKit JS to display interactive maps with customized annotations and overlays, and provide directions and search services. Your app can supply step-by-step navigation, and help a user find a location by autocompleting a search query.
 

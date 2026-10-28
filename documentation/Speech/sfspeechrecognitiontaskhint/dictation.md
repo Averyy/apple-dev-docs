@@ -23,7 +23,7 @@ case dictation
 SFSpeechRecognitionTaskHintDictation
 ```
 
-#### Discussion
+## Discussion
 
 Use this hint type when you are using speech recognition for a task that’s similar to the keyboard’s built-in dictation function.
 

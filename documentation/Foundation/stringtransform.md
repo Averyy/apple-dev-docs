@@ -25,7 +25,7 @@ struct StringTransform
 typedef NSString * NSStringTransform;
 ```
 
-#### Discussion
+## Discussion
 
 These constants are used by the [`NSString`](./nsstring.md) method [`applyingTransform(_:reverse:)`](./nsstring/applyingtransform%28_,reverse%29.md).
 

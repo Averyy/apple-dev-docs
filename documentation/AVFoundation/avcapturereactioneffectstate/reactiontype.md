@@ -23,7 +23,7 @@ var reactionType: AVCaptureReactionType { get }
 @property (nonatomic, readonly) AVCaptureReactionType reactionType;
 ```
 
-#### Discussion
+## Discussion
 
 There may be multiple reactions of the same type at a given time. Some may come from calls to [`performEffect(for:)`](../avcapturedevice/performeffect%28for%29.md) and others from gesture detection.
 

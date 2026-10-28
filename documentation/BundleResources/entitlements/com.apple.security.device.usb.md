@@ -14,7 +14,7 @@ A Boolean value indicating whether your app may interact with USB devices.
 - **Name**: `com.apple.security.device.usb`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 Use this key to allow your sandboxed app to interact with USB devices through USB device access APIs.
 

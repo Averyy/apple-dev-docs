@@ -26,7 +26,7 @@ var discoverAllUserIdentitiesCompletionBlock: (((any Error)?) -> Void)? { get se
 @property (nonatomic, copy, nullable) void (^discoverAllUserIdentitiesCompletionBlock)(NSError *operationError);
 ```
 
-#### Discussion
+## Discussion
 
 The closure doesn’t return a value and takes the following parameter:
 

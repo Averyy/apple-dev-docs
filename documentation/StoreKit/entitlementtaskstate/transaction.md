@@ -23,7 +23,7 @@ var transaction: VerificationResult<Transaction>? { get }
 
 Available when `Value` is `VerificationResult<Transaction>?`.
 
-#### Discussion
+## Discussion
 
 Use [`transaction`](./transaction.md) as a convenience to access the transaction value in code that doesn’t depend on the reason a transaction isn’t available. The value is `nil` while the transaction is loading, if it fails to load for any reason, or if the customer isn’t entitled to the product.
 

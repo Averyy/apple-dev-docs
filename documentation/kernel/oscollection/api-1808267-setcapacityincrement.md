@@ -12,11 +12,11 @@ virtual unsigned int setCapacityIncrement(
  unsigned increment) = 0;
 ```
 
-#### Return Value
+## Return Value
 
 The new storage increment of the collection, which may be different from the number requested.
 
-#### Overview
+## Overview
 
 Subclasses must implement this pure virtual member function. Most collection subclasses allocate their storage in multiples of the capacity increment.
 

@@ -24,7 +24,7 @@ class INVolumeResolutionResult
 @interface INVolumeResolutionResult : INIntentResolutionResult
 ```
 
-#### Overview
+## Overview
 
 An [`INVolumeResolutionResult`](./involumeresolutionresult.md) object is what you return when resolving volume related parameters of an intent object. Use the creation method that best reflects your ability to successfully resolve the parameter.
 

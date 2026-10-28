@@ -25,7 +25,7 @@ func nw_quic_get_initial_max_data(_ options: nw_protocol_options_t) -> UInt64
 uint64_t nw_quic_get_initial_max_data(nw_protocol_options_t options);
 ```
 
-#### Return Value
+## Return Value
 
 The value of the `initial_max_data` transport parameter.
 

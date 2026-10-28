@@ -6,7 +6,7 @@
 
 Automate the tasks you perform on the Apple Developer website.
 
-#### Overview
+## Overview
 
 The Enterprise Program API is a REST API that enables the automation of actions you take on the [Apple Developer website](https://developer.apple.com). Click [OpenAPI specification](http://developer.apple.com/sample-code/enterprise/enterprise-program-openapi-oas.zip) to download the specification file.
 

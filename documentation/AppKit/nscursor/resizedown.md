@@ -22,7 +22,7 @@ class var resizeDown: NSCursor { get }
 @property (class, strong, readonly) NSCursor * resizeDownCursor;
 ```
 
-#### Return Value
+## Return Value
 
 The resize-down cursor. This cursor is used when moving or resizing an object to indicate that the user can move only in the indicated direction.
 

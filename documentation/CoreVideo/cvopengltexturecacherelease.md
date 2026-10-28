@@ -15,7 +15,7 @@ Releases a texture cache object.
 extern void CVOpenGLTextureCacheRelease(CVOpenGLTextureCacheRef textureCache);
 ```
 
-#### Discussion
+## Discussion
 
 This function is equivalent to [`CFRelease`](../CoreFoundation/cfrelease.md), but is `NULL` safe.
 

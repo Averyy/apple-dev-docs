@@ -26,7 +26,7 @@ struct Definition
 
 - [Adding support for app extensions to your app](../adding-support-for-app-extensions-to-your-app.md)
 
-#### Overview
+## Overview
 
 Apply this property wrapper to variables that define your host app’s custom extension points. In the property that follows the definition, specify the name of your extension point and any additional attributes. The following example defines an extension point that runs app extensions with enhanced security:
 

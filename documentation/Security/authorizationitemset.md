@@ -20,7 +20,7 @@ struct AuthorizationItemSet
 typedef struct { ... } AuthorizationItemSet;
 ```
 
-#### Overview
+## Overview
 
 Because it is actually a set, the list of items should not contain any duplicates.
 

@@ -26,7 +26,7 @@ var lastModifiedPlayer: GKCloudPlayer { get }
 @property (nonatomic, readonly) GKCloudPlayer * lastModifiedPlayer;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the [`GKCloudPlayer`](../gkcloudplayer.md) object representing the last player to modify the game session.
 

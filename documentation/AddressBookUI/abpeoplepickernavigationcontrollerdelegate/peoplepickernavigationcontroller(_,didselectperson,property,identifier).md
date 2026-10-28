@@ -21,7 +21,7 @@ optional func peoplePickerNavigationController(_ peoplePicker: ABPeoplePickerNav
 - (void) peoplePickerNavigationController:(ABPeoplePickerNavigationController *) peoplePicker didSelectPerson:(ABRecordRef) person property:(ABPropertyID) property identifier:(ABMultiValueIdentifier) identifier;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called with an identifier. If you need an index, use the [`ABMultiValueGetIndexForIdentifier(_:_:)`](../../AddressBook/abmultivaluegetindexforidentifier%28_,_%29.md) function to get the corresponding index.
 

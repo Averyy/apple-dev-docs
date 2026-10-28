@@ -22,7 +22,7 @@ class AEAssessmentConfiguration
 @interface AEAssessmentConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 Create a configuration instance and pass it to the [`init(configuration:)`](./aeassessmentsession/init%28configuration%29.md) initializer of an [`AEAssessmentSession`](./aeassessmentsession.md) instance to create a new assessment session. Before using the configuration, indicate which exceptions you want to allow for the assessment session’s restrictions by setting values on the configuration instance. For example, you can set values to allow dictation and certain aspects of autocorrect:
 

@@ -21,7 +21,7 @@ Creates a classification with label and probability.
 init(label: Label, probability: Float)
 ```
 
-#### Discussion
+## Discussion
 
 - Parameters
 

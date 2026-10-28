@@ -28,7 +28,7 @@ class UIBarButtonItem
 
 - [Getting the user’s attention with alerts and action sheets](./getting-the-user-s-attention-with-alerts-and-action-sheets.md)
 
-#### Overview
+## Overview
 
 You typically use Interface Builder to create and configure bar button items. However, you can customize the appearance of buttons by sending the setter messages to [`UIBarButtonItemAppearance`](./uibarbuttonitemappearance.md) to customize all buttons, or to a specific [`UIBarButtonItem`](./uibarbuttonitem.md) instance. You can use customized buttons in standard places in a [`UINavigationItem`](./uinavigationitem.md) object or a [`UIToolbar`](./uitoolbar.md) instance.
 

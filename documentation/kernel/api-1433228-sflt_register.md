@@ -13,11 +13,11 @@
 errno_t sflt_register(const struct sflt_filter *filter, int domain, int type, int protocol);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Registers a socket filter. See 'man 2 socket' for a desciption of domain, type, and protocol.
 

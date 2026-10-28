@@ -24,7 +24,7 @@ static let waistCircumference: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierWaistCircumference;
 ```
 
-#### Discussion
+## Discussion
 
 These samples use length units (described in [`HKUnit`](../hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)).
 

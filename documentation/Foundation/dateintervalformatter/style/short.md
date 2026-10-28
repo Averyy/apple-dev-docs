@@ -25,7 +25,7 @@ case short
 NSDateIntervalFormatterShortStyle
 ```
 
-#### Discussion
+## Discussion
 
 For dates, this style displays the day, month, and year in numerical form using a format appropriate for the current locale. For example, formatting the date January 15, 2015 with this style results in the value “1/15/15” for US English and the value “15.1.15” for German.
 

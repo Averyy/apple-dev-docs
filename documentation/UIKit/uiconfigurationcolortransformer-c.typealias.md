@@ -19,7 +19,7 @@ Generates a modified output color from an input color.
 typedef UIColor *(^)(UIColor *) UIConfigurationColorTransformer;
 ```
 
-#### Discussion
+## Discussion
 
 A color transformer takes an input color and modifies it to produce a different output color. For example, you might have a color transformer that returns a grayscale or reduced alpha version of the input color.
 

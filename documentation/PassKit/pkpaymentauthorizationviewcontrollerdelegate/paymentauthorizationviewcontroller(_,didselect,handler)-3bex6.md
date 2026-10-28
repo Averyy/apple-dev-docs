@@ -27,7 +27,7 @@ optional func paymentAuthorizationViewController(_ controller: PKPaymentAuthoriz
 - (void) paymentAuthorizationViewController:(PKPaymentAuthorizationViewController *) controller didSelectPaymentMethod:(PKPaymentMethod *) paymentMethod handler:(void (^)(PKPaymentRequestPaymentMethodUpdate *update)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method when the user selects a new payment card.  Use this delegate callback to update the summary items in response to the card type changing (for example, applying credit card surcharges), and then call the handler with the updated summary items.
 

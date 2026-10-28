@@ -21,7 +21,7 @@ Specifies no separator between the time and time zone in an ISO 8601 date format
 case omitted
 ```
 
-#### Discussion
+## Discussion
 
 The `rawValue` of `omitted` is an empty string (””).
 

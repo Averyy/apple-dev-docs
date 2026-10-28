@@ -21,7 +21,7 @@ The subscription group identifier for this subscription.
 let subscriptionGroupID: String
 ```
 
-#### Discussion
+## Discussion
 
 Auto-renewable subscriptions always belong to a subscription group. You create the subscription group identifiers in App Store Connect before you create and add an auto-renewable subscription. For more information about subscription groups, see [Offer auto-renewable subscriptions](https://help.apple.com/app-store-connect/#/dev75708c031).
 

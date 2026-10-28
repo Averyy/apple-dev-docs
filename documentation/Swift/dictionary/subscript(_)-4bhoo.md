@@ -23,11 +23,11 @@ subscript(position: Dictionary<Key, Value>.Index) -> Dictionary<Key, Value>.Elem
 
 Available when `Key` conforms to `Hashable`.
 
-#### Return Value
+## Return Value
 
 A two-element tuple with the key and value corresponding to `position`.
 
-#### Overview
+## Overview
 
 This subscript takes an index into the dictionary, instead of a key, and returns the corresponding key-value pair as a tuple. When performing collection-based operations that return an index into a dictionary, use this subscript with the resulting value.
 

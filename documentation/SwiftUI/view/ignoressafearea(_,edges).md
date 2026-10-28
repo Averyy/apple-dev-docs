@@ -26,11 +26,11 @@ func ignoresSafeArea(_ regions: SafeAreaRegions = .all, edges: Edge.Set = .all) 
 
 - [Adding a background to your view](../adding-a-background-to-your-view.md)
 
-#### Return Value
+## Return Value
 
 A view with an expanded safe area.
 
-#### Discussion
+## Discussion
 
 By default, the SwiftUI layout system sizes and positions views to avoid certain safe areas. This ensures that system content like the software keyboard or edges of the device don’t obstruct your views. To extend your content into these regions, you can ignore safe areas on specific edges by applying this modifier.
 

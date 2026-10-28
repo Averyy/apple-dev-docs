@@ -24,7 +24,7 @@ var isPaused: Bool { get set }
 @property (nonatomic, getter=isPaused) BOOL paused;
 ```
 
-#### Discussion
+## Discussion
 
 If the value is [`true`](../../Swift/true.md), the scene’s content is fixed onscreen. No actions are executed and no physics simulation is performed.
 

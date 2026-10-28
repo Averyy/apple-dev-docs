@@ -21,7 +21,7 @@ convenience init(text: String, shortText: String?)
 + (instancetype) textProviderWithText:(NSString *) text shortText:(NSString *) shortText;
 ```
 
-#### Return Value
+## Return Value
 
 A text provider initialized with the specified content.
 

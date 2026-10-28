@@ -19,7 +19,7 @@ func setTextColor(_ color: NSColor?, range: NSRange)
 - (void) setTextColor:(NSColor *) color range:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 Removes the text color attribute if `color` is `nil`. This method applies only to rich text objects.
 

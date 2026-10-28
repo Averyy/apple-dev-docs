@@ -20,7 +20,7 @@ var contextualActionsPreviewImage: UIImage? { get set }
 @property (nonatomic, copy, nullable) UIImage * contextualActionsPreviewImage;
 ```
 
-#### Discussion
+## Discussion
 
 Use this to enhance a contextual action with more context. For example, if the action presents a button to jump back in time, show a preview frame of where in the movie the action skips to.
 

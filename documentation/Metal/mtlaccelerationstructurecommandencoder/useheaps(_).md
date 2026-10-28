@@ -20,7 +20,7 @@ Makes the resources contained in the specified heaps available to the accelerati
 func useHeaps(_ heaps: [any MTLHeap])
 ```
 
-#### Discussion
+## Discussion
 
 This method makes all the resources in multiple heaps resident for the duration of a compute pass and ensures that they’re in a format compatible with the compute function.
 

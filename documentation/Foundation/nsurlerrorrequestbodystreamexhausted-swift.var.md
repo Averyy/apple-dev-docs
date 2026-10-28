@@ -21,7 +21,7 @@ A body stream was needed but the client did not provide one.
 var NSURLErrorRequestBodyStreamExhausted: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 This impacts clients on iOS that send a `POST` request using a body stream but do not implement the [`URLSessionTaskDelegate`](./urlsessiontaskdelegate.md) delegate method [`urlSession(_:task:needNewBodyStream:)`](./urlsessiontaskdelegate/urlsession%28_,task,neednewbodystream%29.md).
 

@@ -25,11 +25,11 @@ init(objects: UnsafePointer<AnyObject>?, count cnt: Int)
 - (instancetype) initWithObjects:(ObjectType const[]) objects count:(NSUInteger) cnt;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized set containing `cnt` objects from the list of objects specified by `objects`. The returned set might be different than the original receiver.
 
-#### Discussion
+## Discussion
 
 This method is a designated initializer for `NSSet`.
 

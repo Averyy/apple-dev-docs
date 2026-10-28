@@ -25,7 +25,7 @@ static var classSymbolic: CTFontStylisticClass { get }
 kCTFontClassSymbolic
 ```
 
-#### Discussion
+## Discussion
 
 A class typically assigned to fonts used for special characters, such as icons, dingbats, technical symbols, and so on.
 

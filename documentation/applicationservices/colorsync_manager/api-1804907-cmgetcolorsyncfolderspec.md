@@ -16,15 +16,15 @@ CMError CMGetColorSyncFolderSpec (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 If the ColorSync Profiles folder does not already exist, you can use this function to create it. 
 
-##### Version-Notes
+### Version-Notes
 
 Starting with version 2.5, the name and location of the profile folder changed.
 

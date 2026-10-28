@@ -24,7 +24,7 @@ func didReceive(_ response: URLResponse)
 - (void) didReceiveResponse:(NSURLResponse *) response;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to provide WebKit with the MIME type of the requested resource and its expected size. You must call this method at least once for each task, and you may call it multiple times if needed. Always call it before sending any data back to WebKit using the [`didReceive(_:)`](./didreceive%28_%29-8t5f8.md) method.
 

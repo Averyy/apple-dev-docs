@@ -19,7 +19,7 @@ func menu(for result: NSTextCheckingResult, string checkedString: String, option
 - (NSMenu *) menuForResult:(NSTextCheckingResult *) result string:(NSString *) checkedString options:(NSDictionary<NSString *,id> *) options atLocation:(NSPoint) location inView:(NSView *) view;
 ```
 
-#### Return Value
+## Return Value
 
 A menu suitable for displaying as a contextual menu, or adding to another contextual menu as a submenu.
 

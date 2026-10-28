@@ -19,11 +19,11 @@ func quickLookPreviewableItems(inRanges ranges: [NSValue]) -> [any QLPreviewItem
 - (NSArray<id<QLPreviewItem>> *) quickLookPreviewableItemsInRanges:(NSArray<NSValue *> *) ranges;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an array of document URLs for text attachment content, if available.
 
-#### Discussion
+## Discussion
 
 Each preview item must conform to the [`QLPreviewItem`](../../QuickLookUI/qlpreviewitem.md) protocol.
 

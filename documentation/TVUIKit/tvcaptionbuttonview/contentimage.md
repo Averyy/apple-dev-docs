@@ -19,7 +19,7 @@ var contentImage: UIImage? { get set }
 @property (nonatomic, strong, nullable) UIImage * contentImage;
 ```
 
-#### Discussion
+## Discussion
 
 The content image is displayed in the caption button and indicates the purpose of the caption button. The last instance of [`contentImage`](./contentimage.md) or [`contentText`](./contenttext.md) that was set in your app is displayed by the caption button view.
 

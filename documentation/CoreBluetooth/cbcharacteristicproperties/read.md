@@ -25,7 +25,7 @@ static var read: CBCharacteristicProperties { get }
 CBCharacteristicPropertyRead
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`readValue(for:)`](../cbperipheral/readvalue%28for%29-6u2kr.md) method of the [`CBPeripheral`](../cbperipheral.md) class to read the value of a characteristic.
 

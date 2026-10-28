@@ -19,7 +19,7 @@ class NSTextBlock
 @interface NSTextBlock : NSObject
 ```
 
-#### Overview
+## Overview
 
 A text block appears as an attribute of a paragraph, and as part of the paragraph style. The most important subclass of [`NSTextBlock`](./nstextblock.md) is [`NSTextTableBlock`](./nstexttableblock.md), which represents a block of text that appears as a cell in a table. The table itself is a [`NSTextTable`](./nstexttable.md) object. All [`NSTextBlock`](./nstextblock.md) objects reference this table, which controls their sizing and positioning.
 

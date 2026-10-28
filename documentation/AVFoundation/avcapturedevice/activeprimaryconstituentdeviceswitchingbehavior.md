@@ -23,7 +23,7 @@ var activePrimaryConstituentDeviceSwitchingBehavior: AVCaptureDevice.PrimaryCons
 @property (nonatomic, readonly) AVCapturePrimaryConstituentDeviceSwitchingBehavior activePrimaryConstituentDeviceSwitchingBehavior;
 ```
 
-#### Discussion
+## Discussion
 
 For virtual devices with multiple constituent devices, this property provides the active switching behavior. It equals the value of the [`primaryConstituentDeviceSwitchingBehavior`](./primaryconstituentdeviceswitchingbehavior-swift.property.md) property except when you record with an [`AVCaptureMovieFileOutput`](../avcapturemoviefileoutput.md) that you configure to use different behavior.
 

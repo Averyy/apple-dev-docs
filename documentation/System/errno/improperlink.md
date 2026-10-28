@@ -25,7 +25,7 @@ static var improperLink: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 You attempted to create a hard link to a file on another file system.
 

@@ -21,7 +21,7 @@ A property for accessing a Markdown source position attribute.
 let markdownSourcePosition: AttributeScopes.FoundationAttributes.MarkdownSourcePositionAttribute
 ```
 
-#### Discussion
+## Discussion
 
 This attribute indicates the position in the Markdown source where a run of attributed text begins and ends, omitting markup characters in the source. For example, after parsing the source string `“This is *emphasized*.”`, the text `emphasized` has a Markdown source position that starts at column `10`. This index is the `“e”` character, not the `“*”` formatting character.
 

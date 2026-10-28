@@ -26,7 +26,7 @@ mutating func addColumn(_ newColumn: MLUntypedColumn, named: String)
 mutating func addColumn<Element>(_ newColumn: MLDataColumn<Element>, named: String) where Element : MLDataValueConvertible
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to add an untyped column to a data table.
 

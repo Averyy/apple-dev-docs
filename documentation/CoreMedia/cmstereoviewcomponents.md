@@ -25,7 +25,7 @@ struct CMStereoViewComponents
 enum CMStereoViewComponents : uint64_t;
 ```
 
-#### Overview
+## Overview
 
 When no stereo view components are available on a video track, even if it’s encoded for multiview video, any video content in the associated data is single-track 2D.
 

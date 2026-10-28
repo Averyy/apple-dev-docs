@@ -23,7 +23,7 @@ var headingFilter: CLLocationDegrees { get set }
 @property (nonatomic, assign) CLLocationDegrees headingFilter;
 ```
 
-#### Discussion
+## Discussion
 
 The angular distance is measured relative to the last delivered heading event. Use the value [`kCLHeadingFilterNone`](../kclheadingfilternone.md) to be notified of all movements. The default value of this property is `1` degree.
 

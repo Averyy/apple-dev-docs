@@ -15,7 +15,7 @@ The component for adding a map.
 object Map
 ```
 
-#### Discussion
+## Discussion
 
 Use the `Map` component to display a location or geographical area on a map. You can display multiple pins on a map by setting the `items` property. (To display a specific point of interest, use the [`Place`](./place.md) component.)
 
@@ -23,7 +23,7 @@ You can omit the `latitude` and `longitude` properties for map if at least one i
 
 > **Note**:  To add a map using Markdown, see [Maps](../AppleNews/using-markdown-with-apple-news-format.md#Maps).
 
-##### Example
+### Example
 
 ```json
 {

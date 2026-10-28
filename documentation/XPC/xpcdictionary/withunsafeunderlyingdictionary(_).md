@@ -21,11 +21,11 @@ Calls a closure with an unsafe reference to the dictionary.
 func withUnsafeUnderlyingDictionary<ReturnType>(_ closure: (xpc_object_t) throws -> ReturnType) rethrows -> ReturnType
 ```
 
-#### Return Value
+## Return Value
 
 The return value, if any, of the closure.
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**:  It’s possible for `closure` to perform operations on the dictionary that cause the receiving dictionary to no longer wrap the underlying dictionary.
 

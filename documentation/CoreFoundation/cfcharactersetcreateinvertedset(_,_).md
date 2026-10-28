@@ -25,7 +25,7 @@ func CFCharacterSetCreateInvertedSet(_ alloc: CFAllocator!, _ theSet: CFCharacte
 extern CFCharacterSetRefCFCharacterSetCreateInvertedSet(CFAllocatorRef alloc, CFCharacterSetRef theSet);
 ```
 
-#### Return Value
+## Return Value
 
 A new character set that is the invert of `theSet`. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

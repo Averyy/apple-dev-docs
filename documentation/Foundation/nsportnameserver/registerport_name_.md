@@ -16,11 +16,11 @@ Makes a given port available on the network under a specified name.
 - (BOOL) registerPort:(NSPort *) port name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if successful, [`false`](../../Swift/false.md) otherwise (for example, if another `NSPort` object  has already been registered under `name`).
 
-#### Discussion
+## Discussion
 
 A port can be registered under multiple names. If it is, it must be unregistered for each name with [`removePortForName:`](./removeportforname_.md) to make it completely unavailable.
 

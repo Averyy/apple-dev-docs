@@ -25,7 +25,7 @@ var httpServer: NEProxyServer? { get set }
 @property (copy, nullable) NEProxyServer * HTTPServer;
 ```
 
-#### Discussion
+## Discussion
 
 If [`autoProxyConfigurationEnabled`](./autoproxyconfigurationenabled.md) is [`false`](../../Swift/false.md) and [`httpEnabled`](./httpenabled.md) is [`true`](../../Swift/true.md), then the proxy server specified in this property will be used for HTTP connections.
 

@@ -12,11 +12,11 @@ virtual SCSIServiceResponse AbortSCSICommand (
  SCSITaskIdentifierrequest ) = 0;
 ```
 
-#### Return Value
+## Return Value
 
 A valid SCSIServiceResponse.
 
-#### Overview
+## Overview
 
 Provides the capability for a caller to request that a particular SCSITask be aborted.
 

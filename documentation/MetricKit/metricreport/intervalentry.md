@@ -22,7 +22,7 @@ struct IntervalEntry
 
 - [Monitoring app performance with MetricKit](../monitoring-app-performance-with-metrickit.md)
 
-#### Discussion
+## Discussion
 
 `IntervalEntry` contains all metric values for a given time interval. Access it through [`intervalEntries`](./intervalentries.md).
 

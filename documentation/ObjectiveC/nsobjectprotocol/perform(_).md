@@ -26,11 +26,11 @@ func perform(_ aSelector: Selector!) -> Unmanaged<AnyObject>!
 - (id) performSelector:(SEL) aSelector;
 ```
 
-#### Return Value
+## Return Value
 
 An object that is the result of the message.
 
-#### Discussion
+## Discussion
 
 Calling the [`perform(_:)`](./perform%28_%29.md) method is equivalent to sending the `aSelector` message directly to the receiver. For example, the following both do the same thing if `anObject` is an instance of `MyObject`:
 

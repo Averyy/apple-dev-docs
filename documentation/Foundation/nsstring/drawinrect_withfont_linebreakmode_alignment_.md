@@ -19,7 +19,7 @@ Draws the string in the current graphics context using the specified bounding re
 - (CGSize) drawInRect:(CGRect) rect withFont:(UIFont *) font lineBreakMode:(NSLineBreakMode) lineBreakMode alignment:(NSTextAlignment) alignment;
 ```
 
-#### Return Value
+## Return Value
 
 The size of the rendered string. The returned values may be rounded up to the nearest whole number.
 

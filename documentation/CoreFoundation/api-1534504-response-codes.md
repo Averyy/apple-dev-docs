@@ -5,7 +5,7 @@
 
 Response codes identifying the button that was pressed to dismiss a notification dialog.
 
-#### Overview
+## Overview
 
 To extract this value from the response flags of a dismissed notification (such as returned by [`CFUserNotificationReceiveResponse(_:_:_:)`](./cfusernotificationreceiveresponse%28_,_,_%29.md)), you must perform a bitwise-AND operation between the returned response flags and `0x3` before comparing the value to these constants.
 

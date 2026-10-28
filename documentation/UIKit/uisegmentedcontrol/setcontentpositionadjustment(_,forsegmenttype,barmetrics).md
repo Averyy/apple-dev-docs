@@ -23,7 +23,7 @@ func setContentPositionAdjustment(_ adjustment: UIOffset, forSegmentType leftCen
 - (void) setContentPositionAdjustment:(UIOffset) adjustment forSegmentType:(UISegmentedControlSegment) leftCenterRightOrAlone barMetrics:(UIBarMetrics) barMetrics;
 ```
 
-#### Discussion
+## Discussion
 
 You use this method to adjust the position of a title or image within the given segment of a segmented control.
 

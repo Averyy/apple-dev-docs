@@ -15,7 +15,7 @@ Get the timestamp of the field of view anchor.
 extern CFTimeInterval ar_field_of_view_anchor_get_timestamp(ar_field_of_view_anchor_t anchor);
 ```
 
-#### Return Value
+## Return Value
 
 The timestamp of the anchor.
 

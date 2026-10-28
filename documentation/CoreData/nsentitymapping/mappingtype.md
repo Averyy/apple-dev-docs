@@ -25,7 +25,7 @@ var mappingType: NSEntityMappingType { get set }
 @property NSEntityMappingType mappingType;
 ```
 
-#### Discussion
+## Discussion
 
 If you specify a custom entity mapping type, you must specify a value for the migration policy class name as well (see [`entityMigrationPolicyClassName`](./entitymigrationpolicyclassname.md)).
 

@@ -19,7 +19,7 @@ case typing
 NSWritingToolsCoordinatorTextUpdateReasonTyping
 ```
 
-#### Discussion
+## Discussion
 
 Specify this option when the changes come from the text input system.
 

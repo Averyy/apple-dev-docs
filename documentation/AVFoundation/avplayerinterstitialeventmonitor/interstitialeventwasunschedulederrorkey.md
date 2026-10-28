@@ -25,7 +25,7 @@ class let interstitialEventWasUnscheduledErrorKey: String
 extern NSString * const AVPlayerInterstitialEventMonitorInterstitialEventWasUnscheduledErrorKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value corresponding to this key is of type NSError. This key only exists in the payload of AVPlayerInterstitialEventMonitorInterstitialEventWasUnscheduledNotification if the interstitial event was unscheduled due to an error.
 

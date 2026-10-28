@@ -20,7 +20,7 @@ Registers an observer that runs when a notice of the given type is sent for this
 func addObserver<Notice>(for noticeType: Notice.Type, using observer: @escaping (Notice) -> Void) -> USDStage.ObservationToken where Notice : USDStage.Notice
 ```
 
-#### Discussion
+## Discussion
 
 Observation continues while the returned token is retained, and ends when the token is released.
 

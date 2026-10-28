@@ -24,7 +24,7 @@ class CIBarcodeDescriptor
 @interface CIBarcodeDescriptor : NSObject
 ```
 
-#### Overview
+## Overview
 
 Subclasses encapsulate the formal specification and fields specific to a code type. Each subclass is sufficient to recreate the unique symbol exactly as seen or used with a custom parser.
 

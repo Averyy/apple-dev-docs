@@ -24,7 +24,7 @@ func irradiance(atPoint point: vector_float3, colorSpace: CGColorSpace) -> Unman
 - (CGColorRef) irradianceAtPoint:(vector_float3) point colorSpace:(CGColorSpaceRef) colorSpace;
 ```
 
-#### Return Value
+## Return Value
 
 The color and intensity of the light’s effect on the specified point.
 

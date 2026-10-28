@@ -23,7 +23,7 @@ var spatialCaptureDiscomfortReasons: Set<AVSpatialCaptureDiscomfortReason> { get
 @property (nonatomic, readonly) NSSet<NSString *> * spatialCaptureDiscomfortReasons;
 ```
 
-#### Discussion
+## Discussion
 
 You can monitor this property to determine whether to present UI that recommends a person reframe their scene for more pleasing spatial capture. For example, you could show a message that indicates the subject is too close or the scene is too dark.
 

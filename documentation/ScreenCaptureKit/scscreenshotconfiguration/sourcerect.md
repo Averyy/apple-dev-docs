@@ -20,7 +20,7 @@ var sourceRect: CGRect { get set }
 @property (nonatomic, assign) CGRect sourceRect;
 ```
 
-#### Discussion
+## Discussion
 
 If not set, the screenshot captures the entire frame. Specify the rectangle in points in the display’s logical coordinate system.
 

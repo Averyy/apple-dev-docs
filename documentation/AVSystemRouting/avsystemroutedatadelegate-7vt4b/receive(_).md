@@ -18,7 +18,7 @@ Receives data sent from a connected remote applicaiton.
 func receive(_ data: Data) async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if processing the received data fails.
 

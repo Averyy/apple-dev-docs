@@ -15,7 +15,7 @@ An object literal of style properties.
 style?: Style;
 ```
 
-#### Discussion
+## Discussion
 
 The following table lists the available style properties:
 

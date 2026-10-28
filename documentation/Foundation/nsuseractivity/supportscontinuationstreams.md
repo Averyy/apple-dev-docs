@@ -25,7 +25,7 @@ var supportsContinuationStreams: Bool { get set }
 @property BOOL supportsContinuationStreams;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is [`true`](../../Swift/true.md), the continuing app can connect back to the originating app for more information using streams. The default value of this property is [`false`](../../Swift/false.md). It can dynamically be set to [`true`](../../Swift/true.md) to selectively support continuation streams based on the state of the user activity.
 

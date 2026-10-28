@@ -13,13 +13,13 @@ Learn to create, publish and use Swift package collections.
 **Availability**:
 - Swift 5.5+
 
-#### Overview
+## Overview
 
 Package collections, introduced by [SE-0291](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0291-package-collections.md), are curated lists of packages and associated metadata that you can import to make discovery of existing packages easier.
 
 Educators and community influencers can publish package collections to go along with course materials or blog posts, making it easier for their readers to use packages for the first time, or choosing which packages to use for a particular task. Enterprises may use collections to provide a trusted set of packages, or a collection of packages consistently used by a team. You can author a package collection as a static JSON document and publish it to the web or distribute it on a local file system.
 
-##### Using the package-collection CLI
+### Using the package-collection CLI
 
 With the `swift package-collection` command-line interface, SwiftPM users can subscribe to package collections. Contents of imported package collections are accessible to any clients of [libSwiftPM](./swiftpmasalibrary.md).
 
@@ -32,7 +32,7 @@ With the `swift package-collection` command-line interface, SwiftPM users can su
 - [`remove`](./packagecollectionremove.md): Remove a configured collection
 - [`search`](./packagecollectionsearch.md): Search for packages by keywords or module names within imported collections
 
-##### Creating Package Collections
+### Creating Package Collections
 
 A package collection is a JSON document that contains a list of packages and metadata per package.
 
@@ -45,7 +45,7 @@ Package collections can be created and published by anyone. The [swift-package-c
 
 All package collections must adhere to the [collection data format](./packagecollections.md#Input-Format) for SwiftPM to be able to consume them. The recommended way to create package collections is to use [`package-collection-generate`](https://github.com/apple/swift-package-collection-generator/tree/main/Sources/PackageCollectionGenerator). For custom implementations, the data models are available through the [PackageCollectionsModel module](https://github.com/swiftlang/swift-package-manager/tree/main/Sources/PackageCollectionsModel).
 
-###### Input Format
+#### Input Format
 
 To begin, define the top-level metadata about the collection:
 
@@ -60,7 +60,7 @@ To begin, define the top-level metadata about the collection:
   - `name`: The author name.
 - `packages`: A non-empty array of package objects.
 
-##### Add packages to the collection
+### Add packages to the collection
 
 Each item in the `packages` array is a package object with the following properties:
 
@@ -75,7 +75,7 @@ Each item in the `packages` array is a package object with the following propert
   - `name`: License name. [SPDX identifier](https://spdx.org/licenses/) (e.g., `Apache-2.0`, `MIT`, etc.) preferred. Omit if unknown. **Optional.**
 - `versions`: An array of version objects representing the most recent and/or relevant releases of the package.
 
-##### Add versions to a package
+### Add versions to a package
 
 A version object has metadata extracted from `Package.swift` and optionally additional metadata from other sources:
 
@@ -153,7 +153,7 @@ A version object has metadata extracted from `Package.swift` and optionally addi
   - `organizationName`: The organization name of the signing certificate’s subject.
 - `createdAt`: The ISO 8601-formatted datetime string when the package version was created. **Optional.**
 
-##### Version-specific manifests
+### Version-specific manifests
 
 Package collection generators should include data from the “default” manifest `Package.swift` as well as [version-specific manifest(s)](./swiftversionspecificpackaging.md#Version-specific-Manifest-Selection)
 
@@ -162,17 +162,17 @@ The keys of the `manifests` map are Swift tools (semantic) versions:
 - For `Package.swift`, the tools version specified in `Package.swift` should be used.
 - For version-specific manifests, the tools version specified in the filename should be used. For example, for `Package@swift-4.2.swift` it would be `4.2`. The tools version in the manifest must match that in the filename.
 
-##### Version-specific tags
+### Version-specific tags
 
 [Version-specific tags](./swiftversionspecificpackaging.md#Version-specific-tags-when-resolving-remote-dependencies) are not supported by package collections.
 
-##### Configuration File
+### Configuration File
 
 Configuration that pertains to package collections are stored in the file `~/.swiftpm/config/collections.json`. It keeps track of user’s list of configured collections and preferences such as those set by the `--trust-unsigned` and `--skip-signature-check` flags in the [`package-collection add` command](./packagecollectionadd.md).
 
 > **Note**: This file is managed through Swift Package Manager commands and users are not expected to edit it by hand.
 
-#### Example
+## Example
 
 ```json
 {
@@ -300,15 +300,15 @@ Configuration that pertains to package collections are stored in the file `~/.sw
 }
 ```
 
-#### Protecting package collections
+## Protecting package collections
 
-##### Signing a collection
+### Signing a collection
 
 [Sign package collections](./packagesecurity.md#Signed-package-collections) to establish authenticity and protect their integrity. Doing this is optional. Users will be prompted for confirmation before they can add an [unsigned collection](./packagecollectionadd.md#Unsigned-package-collections). The signing certificate you use to sign a package collection must meet a list of [requirements](./packagesecurity.md#Requirements-on-signing-certificate). If these requirements are not met, the package manager returns an error.
 
 For more details on the security features Package manager implements, see [Package Security](./packagesecurity.md).
 
-##### Security risks
+### Security risks
 
 While signing can provide some degree of protection on package collections and reduce the risks of their contents being modified by malicious actors, it doesn’t prevent the following attack vectors:
 

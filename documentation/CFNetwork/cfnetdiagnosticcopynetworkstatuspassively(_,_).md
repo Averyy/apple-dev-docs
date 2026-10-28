@@ -24,17 +24,17 @@ func CFNetDiagnosticCopyNetworkStatusPassively(_ details: CFNetDiagnostic, _ des
 extern CFNetDiagnosticStatus CFNetDiagnosticCopyNetworkStatusPassively(CFNetDiagnosticRef details, CFStringRef*description);
 ```
 
-#### Return Value
+## Return Value
 
 A network status value.
 
-#### Discussion
+## Discussion
 
 This function returns a status value that can be used to display basic information about the connection, and optionally gets a localized string containing a description of the current network status.
 
 This function is guaranteed not to generate network activity.
 
-##### Special Considerations
+### Special Considerations
 
 This function is thread safe as long as another thread does not alter the same CFNetDiagnosticRef at the same time.
 

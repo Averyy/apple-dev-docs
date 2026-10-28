@@ -25,7 +25,7 @@ var deletingLastPathComponent: URL? { get }
 @property (copy, readonly, nullable) NSURL * URLByDeletingLastPathComponent;
 ```
 
-#### Discussion
+## Discussion
 
 If the receiver’s URL represents the root path, this property contains a copy of the original URL. Otherwise, if the original URL has only one path component, this property contains the empty string.
 

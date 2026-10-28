@@ -25,7 +25,7 @@ var sphericalHarmonicsCoefficients: Data { get }
 @property (nonatomic, copy, readonly) NSData * sphericalHarmonicsCoefficients;
 ```
 
-#### Discussion
+## Discussion
 
 Spherical harmonic coefficients describe the distribution of light around a point in a format that can be used efficiently in real-time rendering. SceneKit supports spherical harmonics only for lights of the [`probe`](./lighttype/probe.md) type.
 

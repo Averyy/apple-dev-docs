@@ -25,7 +25,7 @@ var elements: [SCNGeometryElement] { get }
 @property (nonatomic, readonly) NSArray<SCNGeometryElement *> * geometryElements;
 ```
 
-#### Discussion
+## Discussion
 
 Each [`SCNGeometryElement`](../scngeometryelement.md) object describes how vertices from the geometry’s sources are combined into polygons to create the geometry’s shape. Visible geometries contain at least one element.
 

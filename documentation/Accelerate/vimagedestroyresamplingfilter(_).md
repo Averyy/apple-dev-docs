@@ -25,7 +25,7 @@ func vImageDestroyResamplingFilter(_ filter: ResamplingFilter!)
 void vImageDestroyResamplingFilter(ResamplingFilter filter);
 ```
 
-#### Discussion
+## Discussion
 
 This function deallocates the memory associated with a resampling filter object that was created by calling the function [`vImageNewResamplingFilter(_:_:)`](./vimagenewresamplingfilter%28_,_%29.md). Don’t directly deallocate this memory yourself.
 

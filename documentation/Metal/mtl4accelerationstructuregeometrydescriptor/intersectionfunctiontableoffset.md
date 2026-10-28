@@ -24,7 +24,7 @@ var intersectionFunctionTableOffset: Int { get set }
 @property (nonatomic) NSUInteger intersectionFunctionTableOffset;
 ```
 
-#### Discussion
+## Discussion
 
 When you perform a ray tracing operation in the Metal Shading Language, and provide the ray intersector object with an instance of [`MTLIntersectionFunctionTable`](../mtlintersectionfunctiontable.md), Metal adds this offset to the instance offset from structs such as:
 

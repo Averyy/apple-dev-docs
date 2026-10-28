@@ -27,7 +27,7 @@ optional func resolveNote(for intent: INSendPaymentIntent) async -> INStringReso
 - (void) resolveNoteForSendPayment:(INSendPaymentIntent *) intent withCompletion:(void (^)(INStringResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve any notes associated with the transaction.
 

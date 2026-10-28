@@ -14,7 +14,7 @@ typedef IOReturn ( *Action)(
    void *param3);
 ```
 
-#### Overview
+## Overview
 
 Definition of a C function that can be called through executeCommand().
 

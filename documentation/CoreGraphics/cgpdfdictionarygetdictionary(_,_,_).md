@@ -25,7 +25,7 @@ func CGPDFDictionaryGetDictionary(_ dict: CGPDFDictionaryRef, _ key: UnsafePoint
 extern bool CGPDFDictionaryGetDictionary(CGPDFDictionaryRef dict, const char *key, CGPDFDictionaryRef*value);
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`true`](../Swift/true.md) if there is a PDF dictionary associated with the specified key; otherwise, [`false`](../Swift/false.md).
 

@@ -5,13 +5,13 @@
 
 Enhance the experience in your app by prompting an on-device large language model.
 
-#### Overview
+## Overview
 
 The Foundation Models framework lets you tap into the on-device large models at the core of Apple Intelligence. You can enhance your app by using generative models to create content or perform tasks. The framework supports language understanding and generation based on model capabilities.
 
 For design guidance, see Human Interface Guidelines > Technologies > [Generative AI](https://developer.apple.com/design/human-interface-guidelines/generative-ai).
 
-#### Understand model capabilities
+## Understand model capabilities
 
 When considering features for your app, it helps to know what the on-device language model can do. The on-device model supports text generation and understanding that you can use to:
 
@@ -36,7 +36,7 @@ The on-device language model may not be suitable for handling all requests, like
 
 The model can complete complex generative tasks when you use guided generation or tool calling. For more on handling complex tasks, or tasks that require extensive world-knowledge, see [Generating Swift data structures with guided generation](./generating-swift-data-structures-with-guided-generation.md) and [Expanding generation with tool calling](./expanding-generation-with-tool-calling.md).
 
-#### Check for availability
+## Check for availability
 
 Before you use the on-device model in your app, check that the model is available by creating an instance of [`SystemLanguageModel`](./systemlanguagemodel.md) with the [`default`](./systemlanguagemodel/default.md) property.
 
@@ -66,7 +66,7 @@ struct GenerativeView: View {
 }
 ```
 
-#### Create a session
+## Create a session
 
 After confirming that the model is available, create a [`LanguageModelSession`](./languagemodelsession.md) object to call the model. For a single-turn interaction, create a new session each time you call the model:
 
@@ -77,7 +77,7 @@ let session = LanguageModelSession()
 
 For a multiturn interaction — where the model retains some knowledge of what it produced — reuse the same session each time you call the model.
 
-#### Provide a prompt to the model
+## Provide a prompt to the model
 
 A [`Prompt`](./prompt.md) is an input that the model responds to. Prompt engineering is the art of designing high-quality prompts so that the model generates a best possible response for the request you make. A prompt can be as short as “hello”, or as long as multiple paragraphs. The process of designing a prompt involves a lot of exploration to discover the best prompt, and involves optimizing prompt length and writing style.
 
@@ -95,7 +95,7 @@ let simple = "Write me a story about pears."
 let quick = "Write the profile for the dog breed Siberian Husky using three sentences."
 ```
 
-#### Provide instructions to the model
+## Provide instructions to the model
 
 [`Instructions`](./instructions.md) help steer the model in a way that fits the use case of your app. The model obeys prompts at a lower priority than the instructions you provide. When you provide instructions to the model, consider specifying details like:
 
@@ -106,7 +106,7 @@ let quick = "Write the profile for the dog breed Siberian Husky using three sent
 
 Use content you trust in instructions because the model follows them more closely than the prompt itself. When you initialize a session with instructions, it affects all prompts the model responds to in that session. Instructions can also include example responses to help steer the model. When you add examples to your prompt, you provide the model with a template that shows the model what a good response looks like.
 
-#### Generate a response
+## Generate a response
 
 To call the model with a prompt, call [`respond(to:options:)`](./languagemodelsession/respond%28to,options%29-b2re.md) on your session. The response call is asynchronous because it may take a few seconds for the on-device foundation model to generate the response.
 
@@ -128,7 +128,7 @@ Instead of working with raw string output from the model, the framework offers g
 
 When you make a request to the model, you can provide custom tools to help the model complete the request. If the model determines that a [`Tool`](./tool.md) can assist with the request, the framework calls your [`Tool`](./tool.md) to perform additional actions like retrieving content from your local database. For more information about tool calling, see [Expanding generation with tool calling](./expanding-generation-with-tool-calling.md)
 
-#### Consider context size limits per session
+## Consider context size limits per session
 
 The *context window size* is a limit on how much data the model can process for a session instance. A token is a chunk of text the model processes, and the system model supports up to 4,096 tokens. A single token corresponds to three or four characters in languages like English, Spanish, or German, and one token per character in languages like Japanese, Chinese, or Korean. In a single session, the sum of all tokens in the instructions, all prompts, and all outputs count toward the context window size.
 
@@ -136,7 +136,7 @@ If your session processes a large amount of tokens that exceed the context windo
 
 For more information on managing the context window size, see [Managing the context window](./managing-the-context-window.md).
 
-#### Tune generation options and optimize performance
+## Tune generation options and optimize performance
 
 To get the best results for your prompt, experiment with different generation options. [`GenerationOptions`](./generationoptions.md) affects the runtime parameters of the model, and you can customize them for every request you make.
 

@@ -21,7 +21,7 @@ The customer is currently subscribed.
 static let subscribed: Product.SubscriptionInfo.RenewalState
 ```
 
-#### Discussion
+## Discussion
 
 An auto-renewable subscription in this state is entitled to service.
 

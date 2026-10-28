@@ -41,7 +41,7 @@ func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, placement: Sear
 
 - [Performing a search operation](../performing-a-search-operation.md)
 
-#### Discussion
+## Discussion
 
 For more information about using searchable modifiers, see [Adding a search interface to your app](../adding-a-search-interface-to-your-app.md).
 

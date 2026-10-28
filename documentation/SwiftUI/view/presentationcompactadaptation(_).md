@@ -22,7 +22,7 @@ nonisolated
 func presentationCompactAdaptation(_ adaptation: PresentationAdaptation) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Some presentations adapt their appearance depending on the context. For example, a sheet presentation over a vertically-compact view uses a full-screen-cover appearance by default. Use this modifier to indicate a custom adaptation preference. For example, the following code uses a presentation adaptation value of [`none`](../presentationadaptation/none.md) to request that the system not adapt the sheet in compact size classes:
 

@@ -10,11 +10,11 @@ Create an HTTP Live Streaming presentation by turning a movie file into a sequen
 - macOS 11.0+
 - Xcode 12.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC20 session [10011: Authoring Fragmented MPEG-4 with AVAssetWriter](https://developer.apple.com/videos/play/wwdc2020/10011).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 Before you run the sample code project in Xcode:
 

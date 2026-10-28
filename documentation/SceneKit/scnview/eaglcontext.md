@@ -27,7 +27,7 @@ var eaglContext: EAGLContext? { get set }
 @property (nonatomic, retain, nullable) EAGLContext * eaglContext;
 ```
 
-#### Discussion
+## Discussion
 
 If you use OpenGL ES for custom rendering (see the [`SCNShadable`](../scnshadable.md), [`SCNNodeRendererDelegate`](../scnnoderendererdelegate.md), and [`SCNSceneRendererDelegate`](../scnscenerendererdelegate.md) protocols), you can use this property to share OpenGL ES resources between the context used for rendering the scene and other OpenGL ES contexts your app uses. For details on sharing OpenGL ES resources, see [An EAGL Sharegroup Manages OpenGL ES Objects for the Context](https://developer.apple.com/library/archive/documentation/3DDrawing/Conceptual/OpenGLES_ProgrammingGuide/WorkingwithOpenGLESContexts/WorkingwithOpenGLESContexts.html#//apple_ref/doc/uid/TP40008793-CH2-SW5). (SceneKit automatically shares its own OpenGL ES resources between multiple [`SCNView`](../scnview.md) instances in your app as needed.)
 

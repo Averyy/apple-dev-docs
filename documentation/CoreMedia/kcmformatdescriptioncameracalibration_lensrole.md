@@ -23,7 +23,7 @@ let kCMFormatDescriptionCameraCalibration_LensRole: CFString
 extern CFStringRef const kCMFormatDescriptionCameraCalibration_LensRole;
 ```
 
-#### Discussion
+## Discussion
 
 Specifies the particular use of the lens in the camera system (e.g., left or right for a stereo system).
 

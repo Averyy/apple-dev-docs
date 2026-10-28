@@ -19,7 +19,7 @@ case helpButton
 NSBezelStyleHelpButton
 ```
 
-#### Discussion
+## Discussion
 
 A help button appears within a view and opens app-specific help documentation.
 

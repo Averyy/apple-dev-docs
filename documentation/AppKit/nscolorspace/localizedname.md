@@ -19,7 +19,7 @@ var localizedName: String? { get }
 @property (copy, readonly, nullable) NSString * localizedName;
 ```
 
-#### Discussion
+## Discussion
 
 This property holds the name of the color space as a localized string or `nil` if no localized name exists.
 

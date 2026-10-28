@@ -5,11 +5,11 @@
 
 Generate ride options for Maps to display to the user.
 
-#### Overview
+## Overview
 
 When the user selects Ride as the transportation option, Maps sends an [`INListRideOptionsIntent`](../Intents/inlistrideoptionsintent.md) object to any Intents app extensions that support the intent. In your response to that intent, provide one or more [`INRideOption`](../Intents/inrideoption.md) objects representing the rides you’re able to offer. Keep your list of rides reasonably short and representative of the types of vehicles and price points that are available. Don’t return an exhaustive list of all vehicles available to pick up the user.
 
-##### Include Essential Information
+### Include Essential Information
 
 For each ride option, include as much information as possible about the ride, including its pricing, passenger capacity, disclaimers, and an estimated time at which a vehicle of that type could arrive at the user’s location. Make the information as accurate as possible, but understand that you can update the information when actually booking the ride. Here are some tips to creating your [`INRideOption`](../Intents/inrideoption.md) objects:
 
@@ -23,7 +23,7 @@ The following figure shows how Maps reveals the party size details to the user. 
 
 ![A screenshot that shows a list of ride options with the title “Choose a party size”. The list offers ride options for 1 person, 2-3 people, and 4+ people, with prices. Behind the list is a dimmed view that includes the ride’s destination, type of vehicle, and other information.](https://developer.apple.com/tutorials/images/com.apple.sirikit/media-3866871@2x.png)
 
-##### Create Ride Options
+### Create Ride Options
 
 The following code shows the creation of an [`INRideOption`](../Intents/inrideoption.md) object for a compact car with fixed pricing options. In this case, the ride-booking service computes the price of the ride and quotes it directly. Because the ride’s price and number of passengers can’t change, it includes a disclaimer message to convey the vehicle capacity rather than assigning a value to the [`availablePartySizeOptions`](../Intents/inrideoption/availablepartysizeoptions.md) property.
 

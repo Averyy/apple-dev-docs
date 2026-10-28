@@ -19,11 +19,11 @@ func SCDynamicStoreKeyCreateProxies(_ allocator: CFAllocator?) -> CFString
 CFStringRefSCDynamicStoreKeyCreateProxies(CFAllocatorRef allocator);
 ```
 
-#### Return Value
+## Return Value
 
 A notification string for the current proxy settings.
 
-#### Discussion
+## Discussion
 
 Use this key with the [`SCDynamicStoreSetNotificationKeys(_:_:_:)`](./scdynamicstoresetnotificationkeys%28_,_,_%29.md) function.
 

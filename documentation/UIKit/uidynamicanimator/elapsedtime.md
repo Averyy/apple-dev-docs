@@ -23,7 +23,7 @@ var elapsedTime: TimeInterval { get }
 @property (nonatomic, readonly) NSTimeInterval elapsedTime;
 ```
 
-#### Return Value
+## Return Value
 
 The elapsed time since the dynamic animator started running.
 

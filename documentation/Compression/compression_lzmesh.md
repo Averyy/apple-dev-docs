@@ -25,7 +25,7 @@ var COMPRESSION_LZMESH: compression_algorithm { get }
 COMPRESSION_LZMESH
 ```
 
-#### Discussion
+## Discussion
 
 LZMESH is the Apple general-purpose compression algorithm, designed to replace both [`COMPRESSION_LZFSE`](./compression_lzfse.md) and [`COMPRESSION_ZLIB`](./compression_zlib.md) across Apple platforms. It combines LZ77 with length-limited Huffman coding and a lazy match parser to deliver better compression ratio than both [`COMPRESSION_LZFSE`](./compression_lzfse.md) and [`COMPRESSION_ZLIB`](./compression_zlib.md) while encoding significantly faster than either. LZMESH decodes 3.5x faster than [`COMPRESSION_ZLIB`](./compression_zlib.md) on Apple silicon.
 

@@ -26,7 +26,7 @@ func UIGraphicsEndImageContext()
 extern void UIGraphicsEndImageContext();
 ```
 
-#### Discussion
+## Discussion
 
 You use this function to clean up the drawing environment put in place by the [`UIGraphicsBeginImageContext(_:)`](./uigraphicsbeginimagecontext%28_%29.md) function and to remove the corresponding bitmap-based graphics context from the top of the stack. If the current context was not created using the [`UIGraphicsBeginImageContext(_:)`](./uigraphicsbeginimagecontext%28_%29.md) function, this function does nothing.
 

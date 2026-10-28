@@ -21,7 +21,7 @@ Computes the autospectrum of a complex double-precision vector.
 extern void vDSP_zaspecD(const DSPDoubleSplitComplex *__A, double *__C, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function computes the autospectrum of the complex input vector and adds the result to the existing real values in the output vector. The function returns the product of each input element and its complex conjugate. Each element-wise product is a real value that’s the sum of the squares of the real and imaginary parts.
 

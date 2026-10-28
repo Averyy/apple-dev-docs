@@ -36,7 +36,7 @@ class SWAttributionView
 
 - [Making your app content shareable](./making-your-app-content-shareable.md)
 
-#### Overview
+## Overview
 
 The `SWAttributionView` also allows users to get back to the conversation about the [`SWHighlight`](./swhighlight.md) content, and other related actions using a [`highlightMenu`](./swattributionview/highlightmenu.md).
 

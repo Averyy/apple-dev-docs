@@ -25,7 +25,7 @@ var isEncrypted: Bool { get }
 extern bool CGPDFDocumentIsEncrypted(CGPDFDocumentRef document);
 ```
 
-#### Discussion
+## Discussion
 
 If the document is encrypted, a password must be supplied before certain operations are enabled. For more information, see [`unlockWithPassword(_:)`](./unlockwithpassword%28_%29.md).
 

@@ -19,7 +19,7 @@ func scrollToVisible(_ rect: NSRect) -> Bool
 - (BOOL) scrollRectToVisible:(NSRect) rect;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if any scrolling is performed; otherwise returns [`false`](../../Swift/false.md).
 

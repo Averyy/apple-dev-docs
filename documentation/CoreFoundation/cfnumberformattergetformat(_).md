@@ -25,7 +25,7 @@ func CFNumberFormatterGetFormat(_ formatter: CFNumberFormatter!) -> CFString!
 extern CFStringRefCFNumberFormatterGetFormat(CFNumberFormatterRef formatter);
 ```
 
-#### Return Value
+## Return Value
 
 The format string for `formatter` as was specified by calling the [`CFNumberFormatterSetFormat(_:_:)`](./cfnumberformattersetformat%28_,_%29.md) function, or derived from the number formatter’s style. See [Creating and Using CFNumberFormatter Objects](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFDataFormatting/Articles/dfCreatingCFNumberFormatters.html#//apple_ref/doc/uid/TP40002342) for more information. Ownership follows the [The Get Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
 

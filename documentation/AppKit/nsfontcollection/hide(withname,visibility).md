@@ -19,7 +19,7 @@ class func hide(withName name: NSFontCollection.Name, visibility: NSFontCollecti
 + (BOOL) hideFontCollectionWithName:(NSFontCollectionName) name visibility:(NSFontCollectionVisibility) visibility error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 For a persistent font collection, this method deletes the named font collection from disk.
 

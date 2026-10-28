@@ -19,11 +19,11 @@ func AEStreamWriteKeyDesc(_ ref: AEStreamRef!, _ key: AEKeyword, _ newType: Desc
 OSStatus AEStreamWriteKeyDesc(AEStreamRef ref, AEKeyword key, DescType newType, const void *data, Size length);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 Use this routine to add a descriptor to the currently open `AERecord` inside a stream. You cannot use this routine to write parameters to any other types of descriptors, even if they are nested inside of an `AERecord`. This routine can only be called in between calls to [`AEStreamOpenRecord(_:_:)`](./api-1447141-aestreamopenrecord.md) and [`AEStreamCloseRecord(_:)`](./api-1449522-aestreamcloserecord.md). 
 

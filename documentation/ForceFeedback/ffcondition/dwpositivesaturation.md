@@ -20,7 +20,7 @@ var dwPositiveSaturation: DWORD
 DWORD dwPositiveSaturation;
 ```
 
-#### Discussion
+## Discussion
 
 If the device does not support force saturations, the value of this member is ignored.
 

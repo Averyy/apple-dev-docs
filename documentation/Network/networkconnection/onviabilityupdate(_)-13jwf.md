@@ -24,7 +24,7 @@ final func onViabilityUpdate(_ handler: @escaping @isolated(any) @Sendable (Netw
 
 Available when `ApplicationProtocol` conforms to `MultiplexProtocol`.
 
-#### Discussion
+## Discussion
 
 Connections that are not currently viable do not have a route, and packets will not be sent or received. There is a possibility that the connection will become viable again when network connectivity changes.
 

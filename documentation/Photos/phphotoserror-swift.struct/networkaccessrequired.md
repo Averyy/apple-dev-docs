@@ -20,7 +20,7 @@ An error that indicates the request for an asset resource failed because it requ
 static var networkAccessRequired: PHPhotosError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Set [`isNetworkAccessAllowed`](../phassetresourcerequestoptions/isnetworkaccessallowed.md) to `true` to enable network access.
 

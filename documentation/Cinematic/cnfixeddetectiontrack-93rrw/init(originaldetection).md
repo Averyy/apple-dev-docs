@@ -19,7 +19,7 @@ Creates a detection track with fixed focus at the disparity of an existing detec
 init(originalDetection: CNDetection)
 ```
 
-#### Discussion
+## Discussion
 
 This is the way to determine the time and bounds from which the fixed focus originated. This detection isn’t part of the detection track and has a different detection ID or none.
 

@@ -19,11 +19,11 @@ convenience init!(addressString address: String!)
 + (instancetype) deviceWithAddressString:(NSString *) address;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the IOBluetoothDevice object for the given BluetoothDeviceAddress
 
-#### Discussion
+## Discussion
 
 Within a single application, there will be only one instance of IOBluetoothDevice for a given remote device address.
 

@@ -28,7 +28,7 @@ class PHASEShape
 
 - [Playing sound from a location in a 3D scene](./playing-sound-from-a-location-in-a-3d-scene.md)
 
-#### Overview
+## Overview
 
 To define your scene’s important 3D volumes, create one or more of the following surfaces and add them to your scene’s [`shapes`](./phasesource/shapes.md) array:
 

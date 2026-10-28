@@ -23,7 +23,7 @@ protocol INSetCarLockStatusIntentHandling : NSObjectProtocol
 @protocol INSetCarLockStatusIntentHandling <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Use the methods of the `INSetCarLockStatusIntentHandling` protocol to resolve, confirm, and handle requests to lock or unlock the user’s car. Adopt this protocol in an object of your Intents extension that is capable of locking or unlocking the car.
 

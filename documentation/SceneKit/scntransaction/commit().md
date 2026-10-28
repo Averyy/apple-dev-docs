@@ -25,7 +25,7 @@ class func commit()
 + (void) commit;
 ```
 
-#### Discussion
+## Discussion
 
 If there is no current transaction, this method has no effect.
 

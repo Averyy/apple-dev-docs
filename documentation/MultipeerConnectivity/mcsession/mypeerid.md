@@ -34,7 +34,7 @@ var myPeerID: MCPeerID { get }
 @property (atomic, readonly) MCPeerID * myPeerID;
 ```
 
-#### Discussion
+## Discussion
 
 You set this value when you initialize the session object. It cannot be changed later.
 

@@ -21,7 +21,7 @@ Indicates whether the sample should be displayed immediately.
 var displayImmediately: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 If this key is present, the sample should be displayed as soon as possible rather than according to its presentation timestamp. Use this attachment at run time to request this behavior from a display pipeline such as the `AVSampleBufferDisplayLayer` class.
 

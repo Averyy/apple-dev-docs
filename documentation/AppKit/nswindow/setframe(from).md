@@ -19,7 +19,7 @@ func setFrame(from string: NSWindow.PersistableFrameDescriptor)
 - (void) setFrameFromString:(NSWindowPersistableFrameDescriptor) string;
 ```
 
-#### Discussion
+## Discussion
 
 If the window is not resizable, this method will not resize the window. The frame is constrained according to the window’s minimum and maximum size settings. This method causes a [`windowWillResize(_:to:)`](../nswindowdelegate/windowwillresize%28_,to%29.md) message to be sent to the delegate.
 

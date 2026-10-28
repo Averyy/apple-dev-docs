@@ -19,7 +19,7 @@ The decision that occurs before the given time.
 - (CNDecision *) decisionBeforeTime:(CMTime) time;
 ```
 
-#### Return Value
+## Return Value
 
 A decision representing the decision that occurs before the given time.
 

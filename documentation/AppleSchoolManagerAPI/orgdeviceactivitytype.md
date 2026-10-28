@@ -23,7 +23,7 @@ string OrgDeviceActivityType
 - `UPDATE_MDM_MIGRATION_DEADLINE`
 - `CANCEL_MDM_MIGRATION`
 
-#### Discussion
+## Discussion
 
 - Possible Values
 

@@ -17,7 +17,7 @@ Reopens an autosaved document located by a URL, by reading the contents for the 
 - (BOOL) reopenDocumentForURL:(NSURL *) url withContentsOfURL:(NSURL *) contentsURL error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 The document is located by `absoluteDocumentURL` and the contents are read from `absoluteDocumentContentsURL`. If not  successful, the method returns [`false`](../../Swift/false.md) after setting `outError` to point to an `NSError` object that encapsulates the reason why the document could not be reopened.
 

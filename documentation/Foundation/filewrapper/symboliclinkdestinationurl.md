@@ -25,11 +25,11 @@ var symbolicLinkDestinationURL: URL? { get }
 @property (copy, readonly, nullable) NSURL * symbolicLinkDestinationURL;
 ```
 
-#### Discussion
+## Discussion
 
 This property may contain `nil` if the user modifies the symbolic link after you call [`read(from:options:)`](./read%28from,options%29.md) or [`init(url:options:)`](./init%28url,options%29-70161.md) but before [`FileWrapper`](../filewrapper.md) has read the contents of the link.  Use the [`immediate`](./readingoptions/immediate.md) reading option to reduce the likelihood of that problem.
 
-##### Special Considerations
+### Special Considerations
 
 This property raises `NSInternalInconsistencyException` if the file wrapper object is not a symbolic-link file wrapper.
 

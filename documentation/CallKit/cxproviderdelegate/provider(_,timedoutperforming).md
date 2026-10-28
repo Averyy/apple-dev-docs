@@ -23,7 +23,7 @@ optional func provider(_ provider: CXProvider, timedOutPerforming action: CXActi
 - (void) provider:(CXProvider *) provider timedOutPerformingAction:(CXAction *) action;
 ```
 
-#### Discussion
+## Discussion
 
 Depending on the action, a timeout may also force the call to end.
 

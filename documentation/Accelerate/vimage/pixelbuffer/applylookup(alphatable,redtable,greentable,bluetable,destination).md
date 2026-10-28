@@ -23,7 +23,7 @@ func applyLookup(alphaTable: [Pixel_8]?, redTable: [Pixel_8]?, greenTable: [Pixe
 
 Available when `Format` is `vImage.Interleaved8x4`.
 
-#### Discussion
+## Discussion
 
 Use this function to apply individual lookup tables to each channel in an interleaved, four-channel image. Adjust the order of the tables for images that don’t use ARGB channel ordering. For example, use the `blueTable` parameter for the alpha lookup table to transform an RGBA image.
 

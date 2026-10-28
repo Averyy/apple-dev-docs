@@ -5,7 +5,7 @@
 
 Create API keys you use to sign JSON Web Tokens and authorize API requests.
 
-#### Overview
+## Overview
 
 The [App Store Server API](./AppStoreServerAPI.md), the [Advanced Commerce API](../AdvancedCommerceAPI/AdvancedCommerceAPI.md), and the [External Purchase Server API](../ExternalPurchaseServerAPI/ExternalPurchaseServerAPI.md) require JSON Web Tokens (JWTs) to authorize each request you make to the API. You generate JWTs using a private API key that you download from App Store Connect. For information about generating the JWT using your private key, see [Generating JSON Web Tokens for API requests](./generating-json-web-tokens-for-api-requests.md).
 
@@ -15,7 +15,7 @@ An API key has two parts: a public portion that Apple keeps, and a private key t
 
 Use the API key for the App Store Server API, the Advanced Commerce API, and the External Purchase Server API. You can’t use the key for other Apple services.
 
-##### Generate a private key
+### Generate a private key
 
 To generate an API key to use with the App Store Server API, the Advanced Commerce API, and the External Purchase Server API, log in to [App Store Connect](https://appstoreconnect.apple.com) and complete the following steps:
 
@@ -30,7 +30,7 @@ After you generate an in-app purchase key, you cannot edit its name. If you need
 
 The new key’s name, key ID, a download link, and other information appear on the page.
 
-##### Download and store the private key
+### Download and store the private key
 
 After generating your API key, App Store Connect gives you the opportunity to download the private half of the key. The private key is only available for download a single time.
 

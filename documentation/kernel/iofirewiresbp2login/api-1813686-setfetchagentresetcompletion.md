@@ -13,7 +13,7 @@ virtual void setFetchAgentResetCompletion(
  FWSBP2StatusCallbackcallback );
 ```
 
-#### Overview
+## Overview
 
 The fetch agent state machine on the device can be reset by a write to a specific register. The SBP2 services offer a utility method to reset the fetch agent. You can register a callback routine here to be notified when this rest write completes.
 

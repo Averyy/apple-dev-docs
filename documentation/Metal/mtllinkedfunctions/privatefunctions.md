@@ -24,7 +24,7 @@ var privateFunctions: [any MTLFunction]? { get set }
 @property (nonatomic, copy, readwrite, nullable) NSArray<id<MTLFunction>> * privateFunctions;
 ```
 
-#### Discussion
+## Discussion
 
 The pipeline doesn’t export these functions as [`MTLFunctionHandle`](../mtlfunctionhandle.md) instances because the Metal device doesn’t need to support function pointers to link private functions.
 

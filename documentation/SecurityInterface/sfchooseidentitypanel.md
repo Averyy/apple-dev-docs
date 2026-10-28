@@ -19,7 +19,7 @@ class SFChooseIdentityPanel
 @interface SFChooseIdentityPanel : NSPanel
 ```
 
-#### Overview
+## Overview
 
 An identity is a digital certificate together with its associated private key. This class also allows the user to display the contents of any certificate in the list.
 

@@ -21,11 +21,11 @@ Runs an operation with a cancellation handler that receives a cancellation reaso
 func withIntentCancellationHandler<T>(operation: () async throws -> T, onCancel handler: @Sendable (IntentCancellationReason) -> Void, isolation: isolated (any Actor)? = #isolation) async rethrows -> T
 ```
 
-#### Return Value
+## Return Value
 
 The value you return from the `operation` closure.
 
-#### Discussion
+## Discussion
 
 > **Throws**: Rethrows any error thrown by the operation.
 

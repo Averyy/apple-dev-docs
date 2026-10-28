@@ -19,7 +19,7 @@ A Boolean that you use to control whether the directional light operates as a pr
 var isRealWorldProxy: Bool
 ```
 
-#### Discussion
+## Discussion
 
 Set the value to `true` when you want the light to cast shadows on virtual content without illuminating anything in the scene. You can use this to create shadows on occlusion materials that accept dynamic lighting.
 

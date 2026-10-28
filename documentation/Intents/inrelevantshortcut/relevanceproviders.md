@@ -35,7 +35,7 @@ var relevanceProviders: [INRelevanceProvider] { get set }
 
 - [Defining Relevant Shortcuts for the Siri Watch Face](../../SiriKit/defining-relevant-shortcuts-for-the-siri-watch-face.md)
 
-#### Discussion
+## Discussion
 
 To attach relevance information to the shortcut, like a daily routine or location, set this property to an array of [`INRelevanceProvider`](../inrelevanceprovider.md) objects. The system uses this relevance information to suggest widgets on a Smart Stack, or offer shortcuts on the Siri watch face. If you provide an empty array, the system relies on other relevance cues like user interactions to determine what widget to suggest or shortcut to offer.
 

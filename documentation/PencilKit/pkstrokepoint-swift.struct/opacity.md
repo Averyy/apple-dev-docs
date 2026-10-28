@@ -19,7 +19,7 @@ Opacity of the point.
 var opacity: CGFloat { get }
 ```
 
-#### Discussion
+## Discussion
 
 The opacity of a [`PKStrokePoint`](../pkstrokepoint-swift.struct.md) has a range of `0-2`, which is a multiplier of the [`PKInk`](../pkink-swift.struct.md) opacity.
 

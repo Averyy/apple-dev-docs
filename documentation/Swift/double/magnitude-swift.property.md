@@ -21,7 +21,7 @@ The magnitude of this value.
 var magnitude: Double { get }
 ```
 
-#### Discussion
+## Discussion
 
 For any numeric value `x`, `x.magnitude` is the absolute value of `x`. You can use the `magnitude` property in operations that are simpler to implement in terms of unsigned values, such as printing the value of an integer, which is just printing a ‘-’ character in front of an absolute value.
 

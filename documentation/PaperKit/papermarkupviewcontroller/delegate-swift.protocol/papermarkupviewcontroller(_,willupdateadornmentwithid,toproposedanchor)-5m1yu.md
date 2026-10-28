@@ -19,7 +19,7 @@ Asks the delegate to validate and potentially adjust an adornment’s proposed a
 func paperMarkupViewController(_ paperMarkupViewController: PaperMarkupViewController, willUpdateAdornmentWithID id: UUID, toProposedAnchor proposedAnchor: MarkupAdornment.Anchor) -> MarkupAdornment.Anchor?
 ```
 
-#### Return Value
+## Return Value
 
 The final anchor position to use for the adornment, or `nil` to deny the move.
 

@@ -24,7 +24,7 @@ var maxMotionTransformCount: Int { get set }
 @property (nonatomic) NSUInteger maxMotionTransformCount;
 ```
 
-#### Discussion
+## Discussion
 
 You are responsible for ensuring that final number of motion transforms at build time that the buffer [`motionTransformCountBuffer`](./motiontransformcountbuffer.md) references is less than or equal to this number.
 

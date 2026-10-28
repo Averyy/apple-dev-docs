@@ -23,11 +23,11 @@ var isFirstResponder: Bool { get }
 @property (nonatomic, readonly) BOOL isFirstResponder;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the responder is the first responder; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 UIKit dispatches some types of events, such as motion events, to the first responder initially.
 

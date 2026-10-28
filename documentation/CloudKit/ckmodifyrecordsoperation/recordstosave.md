@@ -25,7 +25,7 @@ var recordsToSave: [CKRecord]? { get set }
 @property (nonatomic, copy, nullable) NSArray<CKRecord *> * recordsToSave;
 ```
 
-#### Discussion
+## Discussion
 
 The initial value of the property is the array that you provide to the [`init(recordsToSave:recordIDsToDelete:)`](./init%28recordstosave,recordidstodelete%29.md) method. You can modify this array as necessary before you execute the operation. The records must all target the same database, but can belong to different record zones.
 

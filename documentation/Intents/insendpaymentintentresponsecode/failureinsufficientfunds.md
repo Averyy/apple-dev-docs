@@ -23,7 +23,7 @@ case failureInsufficientFunds
 INSendPaymentIntentResponseCodeFailureInsufficientFunds
 ```
 
-#### Discussion
+## Discussion
 
 Use this response code when the current user does not have sufficient funds in their account to cover the transaction.
 

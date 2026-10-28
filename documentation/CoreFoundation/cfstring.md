@@ -23,7 +23,7 @@ class CFString
 typedef const struct __CFString * CFStringRef;
 ```
 
-#### Overview
+## Overview
 
 CFString provides a suite of efficient string-manipulation and string-conversion functions. It offers seamless Unicode support and facilitates the sharing of data between Cocoa and C-based programs. CFString objects are immutable—use [`CFMutableString`](./cfmutablestring.md) to create and manage a string that can be changed after it has been created.
 

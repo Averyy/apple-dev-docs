@@ -24,7 +24,7 @@ class var linearBurn: CIBlendKernel { get }
 @property (class, strong, readonly) CIBlendKernel * linearBurn;
 ```
 
-#### Discussion
+## Discussion
 
 ![The result of using the linear burn blend kernel (background image is top left, foreground image is bottom left)](https://developer.apple.com/tutorials/images/com.apple.coreimage/media-2926872@2x.png)
 

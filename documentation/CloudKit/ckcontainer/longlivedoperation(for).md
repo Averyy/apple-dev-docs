@@ -21,11 +21,11 @@ Fetches the long-lived operation for the specified operation ID and returns it t
 func longLivedOperation(for operationID: CKOperation.ID) async throws -> CKOperation?
 ```
 
-#### Return Value
+## Return Value
 
 The long-lived operation, or `nil` if the operation completes, or your app or the system cancels it
 
-#### Discussion
+## Discussion
 
 A long-lived operation is one that continues to run after the user closes your app. When a long-lived operation completes, the system calls its completion block to notify you.
 

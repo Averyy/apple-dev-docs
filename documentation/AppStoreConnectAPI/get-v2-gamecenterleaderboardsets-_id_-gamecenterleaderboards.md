@@ -9,7 +9,7 @@ Get a list of leaderboards for a specific Game Center leaderboard set.
 **Availability**:
 - App Store Connect API 3.6+
 
-#### Overview
+## Overview
 
 - id:
 - fields[gameCenterActivities]:

@@ -22,7 +22,7 @@ class CMHighFrequencyHeartRateData
 @interface CMHighFrequencyHeartRateData : CMLogItem
 ```
 
-#### Overview
+## Overview
 
 Use the [`heartRate`](./cmhighfrequencyheartratedata/heartrate.md) property to get the data, and the [`confidence`](./cmhighfrequencyheartratedata/confidence.md) property for the accuracy.
 

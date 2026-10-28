@@ -17,7 +17,7 @@ Marks the end of the current subpath at the specified point.
 static const NSBezierPathElement NSClosePathBezierPathElement;
 ```
 
-#### Discussion
+## Discussion
 
 Note that the point specified for the Close Path element is essentially the same as the current point.
 

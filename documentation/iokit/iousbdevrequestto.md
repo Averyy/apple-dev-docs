@@ -16,7 +16,7 @@ typedef struct IOUSBDevRequestTO {
 } IOUSBDevRequestTO;
 ```
 
-#### Overview
+## Overview
 
 Parameter block for control requests with timeouts, using a simple pointer for the data to be transferred. Same as a IOUSBDevRequest except for the two extra timeout fields.
 

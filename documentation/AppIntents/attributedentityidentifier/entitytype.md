@@ -21,7 +21,7 @@ The type identifier that defines what kind of entity this is.
 let entityType: AttributedTypeIdentifier
 ```
 
-#### Discussion
+## Discussion
 
 This identifier includes information about the entity’s type and any relevant attributes associated with it, uniquely identifying the entity type within the application’s bundle.
 

@@ -24,7 +24,7 @@ var isPreparedToPlay: Bool { get }
 @property (nonatomic, readonly) BOOL isPreparedToPlay;
 ```
 
-#### Discussion
+## Discussion
 
 When set to [`true`](../../Swift/true.md), the media player is ready to begin playing the queued media items.
 

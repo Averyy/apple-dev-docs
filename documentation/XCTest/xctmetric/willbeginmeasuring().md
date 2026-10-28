@@ -16,7 +16,7 @@ optional func willBeginMeasuring()
 - (void) willBeginMeasuring;
 ```
 
-#### Discussion
+## Discussion
 
 XCTest calls this method before it runs a test’s `measure()` or `measure(metrics:)` block. It calls the method once for each iteration of a performance test. Use this method to start gathering measurements.
 

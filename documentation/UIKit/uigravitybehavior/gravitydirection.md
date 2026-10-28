@@ -23,7 +23,7 @@ var gravityDirection: CGVector { get set }
 @property (nonatomic, readwrite) CGVector gravityDirection;
 ```
 
-#### Discussion
+## Discussion
 
 The gravity vector is expressed as an *x, y* pair that represents the relative motion along the x and y axes of the reference view. A value of `1.0` corresponds to an acceleration of 1000 points / second², which is referred to as UIKit gravity and approximates the Earth’s own gravitational force. A value of `-1.0` represents the same amount of force, but in the opposite direction of the corresponding axis.
 

@@ -29,11 +29,11 @@ OSStatus SecTrustSetVerifyDate(SecTrustRef trust, CFDateRef verifyDate);
 
 - [Configuring a Trust](./configuring-a-trust.md)
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 By default, the [`SecTrustEvaluateWithError(_:_:)`](./sectrustevaluatewitherror%28_,_%29.md) function uses the current date and time when verifying a certificate. However, you can use `SecTrustSetVerifyDate` to set another date and time to use when verifying a certificate. For example, you can determine whether the certificate was valid when the document was signed rather than whether it’s valid at the present time.
 

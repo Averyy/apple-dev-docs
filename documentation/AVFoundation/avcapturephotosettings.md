@@ -33,7 +33,7 @@ class AVCapturePhotoSettings
 - [Saving captured photos](./saving-captured-photos.md)
 - [Tracking photo capture progress](./tracking-photo-capture-progress.md)
 
-#### Overview
+## Overview
 
 To take a photo, you create and configure a [`AVCapturePhotoSettings`](./avcapturephotosettings.md) object, then pass it to the [`AVCapturePhotoOutput`](./avcapturephotooutput.md) [`capturePhoto(with:delegate:)`](./avcapturephotooutput/capturephoto%28with,delegate%29.md) method.
 

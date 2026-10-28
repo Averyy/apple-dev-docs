@@ -10,7 +10,7 @@ Add biquadratic filter audio-effect processing to apps like Logic Pro X and Gara
 - macOS 14.0+
 - Xcode 15.1+
 
-#### Overview
+## Overview
 
 An audio unit extension provides a way to create or modify audio and MIDI data in an iOS or macOS app that uses sound — including music-production apps. It contains the audio unit and, optionally, a user interface to control the audio unit. The audio unit is a custom plug-in where you generate audio or implement an audio-processing algorithm.
 
@@ -26,7 +26,7 @@ This project is based on the Audio Unit Extension App Xcode template and uses th
 
 For more information about creating audio unit extensions, see [Creating an audio unit extension](../AVFAudio/creating-an-audio-unit-extension.md).
 
-##### Add a new parameter address
+### Add a new parameter address
 
 The peaking EQ filter requires three parameters: the center frequency, the Q value (which controls the shape of the response curve), and the decibel gain.
 
@@ -103,7 +103,7 @@ AUValue getParameter(AUParameterAddress address) {
 }
 ```
 
-##### Implement the biquadratic filter
+### Implement the biquadratic filter
 
 The audio unit extension applies a peaking EQ filter with the [`vDSP_biquad_Setup`](./vdsp_biquad_setup.md) filter. For more information about using biquadratic filters, see [Applying biquadratic filters to a music loop](./applying-biquadratic-filters-to-a-music-loop.md).
 

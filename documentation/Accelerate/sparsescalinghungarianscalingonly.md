@@ -25,7 +25,7 @@ var SparseScalingHungarianScalingOnly: SparseScaling_t { get }
 SparseScalingHungarianScalingOnly
 ```
 
-#### Discussion
+## Discussion
 
 This algorithm is similar to MC64.
 

@@ -5,13 +5,13 @@
 
 Ensure that your users understand and have control over the data your app collects.
 
-#### Overview
+## Overview
 
 When using the movement disorder APIs, it’s critical that your app provides a transparent data collection experience. Your app must display an introductory screen that describes its data use policy. Additionally, some data types require specific disclosures.
 
 > ❗ **Important**:  Apps that offer movement disorders monitoring must adhere to the [Movement Disorder API Addendum](https://developer.apple.com/contact/request/movement-disorder-api-entitlement/). Note that only Apple Developer Program account holders can access the addendum. In addition, all health-related apps must follow best practices for handling the user’s health data, as defined by the HealthKit guidelines (see [Protecting user privacy](../HealthKit/protecting-user-privacy.md)).
 
-##### Explain your app’s data use policy
+### Explain your app’s data use policy
 
 Apps that perform movement disorder monitoring must display an introduction screen when the user first launches the app. This screen must describe the following:
 
@@ -21,7 +21,7 @@ Apps that perform movement disorder monitoring must display an introduction scre
 - Whether your app collects data while running in the background.
 - Instructions on how to opt out of data collection in the future.
 
-##### Include required disclosures
+### Include required disclosures
 
 For some types of data, your app must include additional text in the introduction screen. For each of the following situations, add the specified text:
 

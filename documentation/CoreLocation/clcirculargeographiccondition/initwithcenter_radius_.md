@@ -18,7 +18,7 @@ Creates a new circular geographic condition with the center point and radius you
 - (instancetype) initWithCenter:(CLLocationCoordinate2D) center radius:(CLLocationDistance) radius;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an instance of `CLCircularGeographicCondition` with the specified center coordinate and radius.
 

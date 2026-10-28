@@ -19,7 +19,7 @@ class func validateName(_ name: String) throws
 + (BOOL) validateName:(NSString *) name error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 The name must not be empty, have characters unsafe for file systems, be longer than `NAME_MAX`, or using a reserved name such as the Unix “.” or “..” current and parent directory filenames.
 

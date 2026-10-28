@@ -5,7 +5,7 @@
 
 Set environment variables in Xcode to control your widget’s configuration in the debugger.
 
-#### Overview
+## Overview
 
 To debug your widget, select the widget-extension target in Xcode and choose Product > Run. Xcode automatically displays your widget on the target device, as follows:
 
@@ -23,17 +23,17 @@ To configure a specific widget configuration, use the Arguments pane of the widg
 
 Additionally, use Xcode previews for iOS widgets as described in [Previewing widgets and Live Activities in Xcode](./previewing-widgets-and-live-activities-in-xcode.md).
 
-#### Debug specific widget configurations
+## Debug specific widget configurations
 
 To debug a specific family of your widget that’s not an accessory widget, edit the scheme for your widget extension target and set the `_XCWidgetFamily` environment variable to `small`, `medium`, `large`, or `extralarge`.
 
 If your widget extension supports multiple widgets using [`WidgetBundle`](../SwiftUI/widgetbundle.md), select the specific widget to debug by setting `_XCWidgetKind` to a string that matches the `kind` property of the widget’s configuration.
 
-#### Debug watch complications
+## Debug watch complications
 
 Debugging a watch complication you create with WidgetKit works the same as debugging a complication you create with ClockKit. To learn more about testing complications, see [Creating complications for your watchOS app](../ClockKit/creating-complications-for-your-watchos-app.md).
 
-#### Debug Mac widgets
+## Debug Mac widgets
 
 The WidgetKit Simulator app provides a flexible way to see all your widget configurations in one place. Running your widget in the WidgetKit Simulator app lets you:
 

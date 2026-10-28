@@ -9,7 +9,7 @@ Resend a webhook notification from a specified template.
 **Availability**:
 - App Store Connect API 4.0+
 
-#### Overview
+## Overview
 
 > **Note**: The `template` in this payload is the original delivery that you want to resend. Find the `id` using [`Read the Deliveries for a Webhook`](./get-v1-webhooks-_id_-deliveries.md).
 

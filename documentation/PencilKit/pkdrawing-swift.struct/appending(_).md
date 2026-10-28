@@ -19,7 +19,7 @@ Returns a new drawing created by appending the current drawing with another draw
 func appending(_ toAppend: PKDrawing) -> PKDrawing
 ```
 
-#### Return Value
+## Return Value
 
 A new drawing created by merging the content from the current object with the content in the drawing parameter.
 

@@ -26,7 +26,7 @@ Tests the reader’s knowledge at the end of a tutorial page.
 
 - [Building an Interactive Tutorial](./building-an-interactive-tutorial.md)
 
-#### Overview
+## Overview
 
 Use the `Assessment` directive to display an assessments section that helps the reader check their knowledge of your Swift framework or package APIs at the end of a tutorial page. An assessment includes a set of multiple-choice questions that you create using the [`MultipleChoice`](./multiplechoice.md) directive. If the reader gets a question wrong, you can provide a hint that points them toward the correct answer so they can try again.
 
@@ -65,13 +65,13 @@ Use the `Assessment` directive to display an assessments section that helps the 
 }
 ```
 
-##### Contained Elements
+### Contained Elements
 
 An assessment contains the following items:
 
 - **[`MultipleChoice`](./multiplechoice.md)**: A question with multiple possible answers that tests the reader’s knowledge about content within the tutorial. It’s a good practice to include 3-4 multiple choice questions. **(optional)**
 
-##### Containing Elements
+### Containing Elements
 
 The following items include assessments:
 

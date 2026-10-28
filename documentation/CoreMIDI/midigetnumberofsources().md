@@ -23,7 +23,7 @@ func MIDIGetNumberOfSources() -> Int
 extern ItemCount MIDIGetNumberOfSources();
 ```
 
-#### Return Value
+## Return Value
 
 The number of sources in the system, or 0 if an error occurred.
 

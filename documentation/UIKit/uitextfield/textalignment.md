@@ -23,7 +23,7 @@ var textAlignment: NSTextAlignment { get set }
 @property (nonatomic) NSTextAlignment textAlignment;
 ```
 
-#### Discussion
+## Discussion
 
 This property applies to the both the main text string and the placeholder string. The default value of this property is [`NSLeftTextAlignment`](../../AppKit/nslefttextalignment.md).
 

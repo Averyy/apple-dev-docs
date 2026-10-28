@@ -14,7 +14,7 @@
 kMPQueueInfoVersion = 1L | (kOpaqueQueueID << 16)
 ```
 
-#### Discussion
+## Discussion
 
 The `MPQueueInfo` structure version.
 

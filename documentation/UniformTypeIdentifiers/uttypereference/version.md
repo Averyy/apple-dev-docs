@@ -25,7 +25,7 @@ var version: NSNumber? { get }
 @property (readonly, nullable) NSNumber * version;
 ```
 
-#### Discussion
+## Discussion
 
 Most types don’t have a version.
 

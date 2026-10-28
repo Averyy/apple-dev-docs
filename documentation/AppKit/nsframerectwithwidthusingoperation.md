@@ -15,7 +15,7 @@ Draws a bordered rectangle using the specified compositing operation.
 extern void NSFrameRectWithWidthUsingOperation(NSRect rect, CGFloat frameWidth, NSCompositingOperation op);
 ```
 
-#### Discussion
+## Discussion
 
 Draws a frame around the inside of `aRect` in the current color, using the compositing operation `op`. The width is equal to `frameWidth` in the current coordinate system. Since the frame is drawn inside the rectangle, it will be visible even if drawing is clipped to the rectangle.
 

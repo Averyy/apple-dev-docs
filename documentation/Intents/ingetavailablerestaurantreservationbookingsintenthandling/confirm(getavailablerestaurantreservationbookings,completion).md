@@ -26,7 +26,7 @@ optional func confirm(getAvailableRestaurantReservationBookings intent: INGetAva
 - (void) confirmGetAvailableRestaurantReservationBookings:(INGetAvailableRestaurantReservationBookingsIntent *) intent completion:(void (^)(INGetAvailableRestaurantReservationBookingsIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to validate that you can generate a set of potential reservation times. For example, you might use this method to verify the user’s account information. At some point in your implementation, execute the provided completion block with a response object indicating your app’s readiness to generate the reservation details.
 

@@ -20,7 +20,7 @@ The workgroup that manages the rendering threads of the audio unit.
 os_workgroup_t workgroup;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property might be `NULL` when the new render context does not perform real-time rendering. It might also be `NULL` when the new real-time render thread isn’t part of a workgroup.
 

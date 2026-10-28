@@ -20,11 +20,11 @@ optional func collectionView(_ collectionView: NSCollectionView, shouldSelectIte
 - (NSSet<NSIndexPath *> *) collectionView:(NSCollectionView *) collectionView shouldSelectItemsAtIndexPaths:(NSSet<NSIndexPath *> *) indexPaths;
 ```
 
-#### Return Value
+## Return Value
 
 The set of [`NSIndexPath`](../../Foundation/nsindexpath.md) objects corresponding to the items that you want to be selected. If you do not want any items selected, return an empty set.
 
-#### Discussion
+## Discussion
 
 Use this method to approve or modify the items that the user tries to select. During interactive selection, the collection view calls this method whenever the user selects new items. Your implementation of the method can return the proposed set of index paths as-is or modify the set before returning it. You might modify the set to disallow the selection of specific items or specific combinations of items.
 

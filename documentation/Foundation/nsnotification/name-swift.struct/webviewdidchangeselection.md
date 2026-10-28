@@ -15,7 +15,7 @@ Posted when a web view changes its typing selection.
 static let WebViewDidChangeSelection: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the WebView that changed its typing selection. This notification does not contain a `userInfo` dictionary.
 

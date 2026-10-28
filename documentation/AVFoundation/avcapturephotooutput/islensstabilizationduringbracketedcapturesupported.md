@@ -22,7 +22,7 @@ var isLensStabilizationDuringBracketedCaptureSupported: Bool { get }
 @property (nonatomic, readonly, getter=isLensStabilizationDuringBracketedCaptureSupported) BOOL lensStabilizationDuringBracketedCaptureSupported;
 ```
 
-#### Discussion
+## Discussion
 
 To make use of optical image stabilization across the entire duration of a bracketed capture, set the [`isLensStabilizationEnabled`](../avcapturephotobracketsettings/islensstabilizationenabled.md) property of your bracketed photo settings object.
 

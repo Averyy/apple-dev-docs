@@ -21,7 +21,7 @@ A type that represents an M3U or M3U8 playlist.
 extern UTType * const UTTypeM3UPlaylist;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.m3u-playlist`.
 

@@ -13,7 +13,7 @@ Capture touch and Apple Pencil input as a drawing, and display that content from
 - macOS 10.15+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 PencilKit makes it easy to incorporate hand-drawn content into your iPadOS or macOS apps. PencilKit provides a drawing environment for your iOS app that receives input from Apple Pencil or the user’s finger, and turns it into images you display in iPadOS, iOS, or macOS. The environment comes with tools for creating, erasing, and selecting lines.
 

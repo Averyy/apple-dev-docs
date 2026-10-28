@@ -19,7 +19,7 @@ A type that provides a value to a control template.
 protocol ControlValueProvider
 ```
 
-#### Overview
+## Overview
 
 The provider quickly and cheaply prepares a synchronous value to be shown while previewing the control in the add sheet. When the actual control needs to be rendered, the actual, current value will be fetched asynchronously.
 

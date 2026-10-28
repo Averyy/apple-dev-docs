@@ -15,11 +15,11 @@ Installs the designated dictionary into a speech channel.
 OSErr UseDictionary(SpeechChannel chan, Handle dictionary);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./speech_synthesis_manager.md#1659745).
 
-#### Discussion
+## Discussion
 
 The `UseDictionary` functionattempts to install the dictionary data referenced by the `dictionary` parameterinto the speech channel referenced by the `chan` parameter.The synthesizer will use whatever elements of the dictionary resourceit considers useful to the speech conversion process. Some speechsynthesizers might ignore certain types of dictionary entries.
 

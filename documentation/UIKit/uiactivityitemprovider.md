@@ -22,13 +22,13 @@ class UIActivityItemProvider
 @interface UIActivityItemProvider : NSOperation
 ```
 
-#### Overview
+## Overview
 
 You can use a provider object in situations where you want to make data available for use by an activity but you want to delay providing that data until it’s actually needed. For example, you might use a provider object to represent a large video file that needs to be processed before it can be shared to a user’s social media account.
 
 When you initialize a [`UIActivityViewController`](./uiactivityviewcontroller.md) object, you can pass a provider object in addition to any other data objects. When the user selects an activity, the activity view controller adds your provider object (which is also an operation object) to an operation queue so that it can begin to gather or process the needed data.
 
-##### Subclassing notes
+### Subclassing notes
 
 You must subclass `UIActivityItemProvider` and implement its [`item`](./uiactivityitemprovider/item.md) method, which is called to generate the item data. You implement this method instead of the normal [`main()`](../Foundation/operation/main%28%29.md) method you’d implement for an operation object. (The [`main()`](../Foundation/operation/main%28%29.md) method calls the [`item`](./uiactivityitemprovider/item.md) method when the operation object is executed.) Your implementation of the [`item`](./uiactivityitemprovider/item.md) method should do whatever work is necessary to create and return the data.
 

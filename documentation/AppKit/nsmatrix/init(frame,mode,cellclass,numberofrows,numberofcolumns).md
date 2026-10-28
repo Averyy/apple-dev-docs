@@ -19,11 +19,11 @@ init(frame frameRect: NSRect, mode: NSMatrix.Mode, cellClass factoryId: AnyClass
 - (instancetype) initWithFrame:(NSRect) frameRect mode:(NSMatrixMode) mode cellClass:(Class) factoryId numberOfRows:(NSInteger) rowsHigh numberOfColumns:(NSInteger) colsWide;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized instance of [`NSMatrix`](../nsmatrix.md).
 
-#### Discussion
+## Discussion
 
 This method is the designated initializer for matrices that add cells by creating instances of an [`NSCell`](../nscell.md) subclass.
 

@@ -24,7 +24,7 @@ static let resizeAspectFill: AVLayerVideoGravity
 extern AVLayerVideoGravity const AVLayerVideoGravityResizeAspectFill;
 ```
 
-#### Discussion
+## Discussion
 
 This gravity value may crop the video image along its horizontal or vertical dimension.
 

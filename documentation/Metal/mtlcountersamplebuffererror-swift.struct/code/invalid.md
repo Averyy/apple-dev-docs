@@ -24,7 +24,7 @@ case invalid
 MTLCounterSampleBufferErrorInvalid
 ```
 
-#### Discussion
+## Discussion
 
 This error applies to the [`MTLDevice`](../../mtldevice.md) protocol’s [`makeCounterSampleBuffer(descriptor:)`](../../mtldevice/makecountersamplebuffer%28descriptor%29.md) method and its [`MTLCounterSampleBufferDescriptor`](../../mtlcountersamplebufferdescriptor.md) parameter.
 

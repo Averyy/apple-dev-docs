@@ -21,7 +21,7 @@ A type that represents a symbolic link.
 extern UTType * const UTTypeSymbolicLink;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.symlink`.
 

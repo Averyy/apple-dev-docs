@@ -16,7 +16,7 @@ Sets the element group(s) for spawn requests from this emitter.
 void emitter::setGroup(int activeGroup, int sequentialGroups)
 ```
 
-#### Discussion
+## Discussion
 
 > **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/emitter__setGroup.svg)
 

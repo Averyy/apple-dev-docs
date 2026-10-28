@@ -24,7 +24,7 @@ var gain: Double { get }
 @property (nonatomic, readonly) double gain;
 ```
 
-#### Discussion
+## Discussion
 
 The framework clamps the value to the range between `0` and `1`, where `0` silences the mixer’s volume and `1` doesn’t modify the volume.
 

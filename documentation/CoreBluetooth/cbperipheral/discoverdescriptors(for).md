@@ -25,7 +25,7 @@ func discoverDescriptors(for characteristic: CBCharacteristic)
 - (void) discoverDescriptorsForCharacteristic:(CBCharacteristic *) characteristic;
 ```
 
-#### Discussion
+## Discussion
 
 When the peripheral discovers one or more descriptors of the specified characteristic, it calls the [`peripheral(_:didDiscoverDescriptorsFor:error:)`](../cbperipheraldelegate/peripheral%28_,diddiscoverdescriptorsfor,error%29.md) method of its delegate object. After the peripheral discovers the descriptors of the characteristic, you can access them through the characteristic’s [`descriptors`](../cbcharacteristic/descriptors.md) property.
 

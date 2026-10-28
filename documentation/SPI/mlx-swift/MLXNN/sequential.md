@@ -17,7 +17,7 @@ A layer that calls the passed [`UnaryLayer`](./unarylayer.md) in order.
 class Sequential
 ```
 
-#### Overview
+## Overview
 
 `Sequential` can be constructed either with an array of layers or using a [`SequentialBuilder`](./sequentialbuilder.md):
 

@@ -17,7 +17,7 @@ An enumeration that represents the authorization state for sharing Wi-Fi network
 enum AuthorizationState
 ```
 
-#### Overview
+## Overview
 
 Use `AuthorizationState` to determine the current permission level for Wi-Fi network sharing between the person’s device and a connected accessory. This enum helps you understand whether the person has granted, denied, or not yet decided on Wi-Fi sharing permissions.
 

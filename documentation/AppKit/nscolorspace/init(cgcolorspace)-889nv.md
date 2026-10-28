@@ -19,11 +19,11 @@ init?(cgColorSpace: CGColorSpace)
 - (instancetype) initWithCGColorSpace:(CGColorSpaceRef) cgColorSpace;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized `NSColorSpace` object or `nil` if initialization was not successful, which might happen if the color space represented by the `CGColorSpace` object is not supported by `NSColorSpace`.
 
-#### Discussion
+## Discussion
 
 Because `NSColorSpace` might retain or copy the `CGColorSpace` object depending on circumstances, you should not assume pointer equality of the provided object with that returned by [`cgColorSpace`](./cgcolorspace.md). And even if the pointer equality is preserved during runtime, it may not be after the `NSColorSpace` object is archived and unarchived.
 

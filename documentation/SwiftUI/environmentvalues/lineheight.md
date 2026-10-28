@@ -21,7 +21,7 @@ The default line height for text influenced by this environment.
 var lineHeight: AttributedString.LineHeight? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`. In that case, SwiftUI automatically chooses an appropriate line height setting for each context.
 

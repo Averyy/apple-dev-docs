@@ -19,11 +19,11 @@ func shouldDelayWindowOrdering(for event: NSEvent) -> Bool
 - (BOOL) shouldDelayWindowOrderingForEvent:(NSEvent *) event;
 ```
 
-#### Return Value
+## Return Value
 
 If this method returns [`true`](../../Swift/true.md), the normal window-ordering and activation mechanism is delayed (not necessarily prevented) until the next mouse-up event. If it returns [`false`](../../Swift/false.md), then normal ordering and activation occur.
 
-#### Discussion
+## Discussion
 
 Never invoke this method directly; it’s invoked automatically for each mouse-down event directed at the NSView.
 

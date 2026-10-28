@@ -25,7 +25,7 @@ var compare: CMBufferCompareCallback?
 CMBufferCompareCallback compare;
 ```
 
-#### Discussion
+## Discussion
 
 This may be `NULL` (queue will be FIFO).
 

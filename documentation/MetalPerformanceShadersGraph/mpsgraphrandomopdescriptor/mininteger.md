@@ -24,7 +24,7 @@ var minInteger: Int { get set }
 @property (nonatomic, readwrite) NSInteger minInteger;
 ```
 
-#### Discussion
+## Discussion
 
 This value is used for Uniform with integer data types Defaults to 0.
 

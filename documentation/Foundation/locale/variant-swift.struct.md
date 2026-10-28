@@ -21,7 +21,7 @@ A type that represents a locale’s language variant.
 struct Variant
 ```
 
-#### Overview
+## Overview
 
 This type corresponds to the Unicode variant subtag, such as `posix`.
 

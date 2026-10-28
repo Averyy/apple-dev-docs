@@ -22,7 +22,7 @@ var barHideOnSwipeGestureRecognizer: UIPanGestureRecognizer { get }
 @property (nonatomic, strong, readonly) UIPanGestureRecognizer * barHideOnSwipeGestureRecognizer;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the gesture recognizer used to hide and show the navigation bar and toolbar. The gesture recognizer is inactive unless the [`hidesBarsOnSwipe`](./hidesbarsonswipe.md) property is [`true`](../../Swift/true.md). You can make changes to the gesture recognizer as needed but must not change its delegate and you must not remove the default target object and action that come configured with it. Do not try to replace this gesture recognizer by overriding the property.
 

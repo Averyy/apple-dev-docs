@@ -22,7 +22,7 @@ A binding to the request’s mutable configuration properties.
 @preconcurrency var projectedValue: Binding<FetchRequest<Result>.Configuration> { get }
 ```
 
-#### Discussion
+## Discussion
 
 SwiftUI returns the value associated with this property when you use [`FetchRequest`](../fetchrequest.md) as a property wrapper on a [`FetchedResults`](../fetchedresults.md) instance, and then access the results with a dollar sign (`$`) prefix. The value that SwiftUI returns is a [`Binding`](../binding.md) to the request’s [`FetchRequest.Configuration`](./configuration.md) structure, which dynamically configures the request.
 

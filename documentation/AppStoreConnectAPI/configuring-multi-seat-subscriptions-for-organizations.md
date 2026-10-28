@@ -5,7 +5,7 @@
 
 Control whether organizations can purchase an auto-renewable subscription for multiple people, and which markets offer it.
 
-#### Overview
+## Overview
 
 Organizations can buy your auto-renewable subscriptions in quantities greater than one through Apple Business Manager (Enterprise) and Apple School Manager (Education). To learn more, see [Apple School Manager and Apple Business APIs](../apple-school-and-business-manager-api/apple-school-and-business-manager-api.md). Use the `multiSeatStatus` and `marketSettings` attributes on the subscriptions resource to control whether a subscription supports these multi-seat purchases and which markets offer it. Both attributes apply only to auto-renewable subscriptions; updating them on any other in-app purchase type returns an error.
 
@@ -17,7 +17,7 @@ Before you configure multi-seat settings, create an auto-renewable subscription 
 
 API keys with the `MARKETING` role have read-only access to both attributes.
 
-##### Turn multi-seat purchasing on or off
+### Turn multi-seat purchasing on or off
 
 Every auto-renewable subscription defaults to `multiSeatStatus` of `ENABLED`, so you only need to set this attribute when you want to change a subscription’s current state. To update it, use [`Modify an auto-renewable subscription`](./patch-v1-subscriptions-_id_.md) with a payload that sets the `multiSeatStatus`.
 
@@ -44,7 +44,7 @@ The `multiSeatStatus` attribute accepts the following values:
 
 > **Note**:  Turning on Family Sharing for a subscription automatically sets `multiSeatStatus` to `DISABLED`. If you turn multi-seat purchasing back on for a family-shareable subscription, Family Sharing only applies when the a single seat is purchased.
 
-##### Choose which markets offer multi-seat purchases
+### Choose which markets offer multi-seat purchases
 
 After you turn on multi-seat purchasing, use the `marketSettings` attribute to choose which markets support multi-seat purchases of the subscription. Update it with the same `PATCH /v1/subscriptions/{id}` ([`Modify an auto-renewable subscription`](./patch-v1-subscriptions-_id_.md)) endpoint, providing an array of markets.
 
@@ -75,7 +75,7 @@ Here’s an example payload that makes a subscription available for multi-seat p
 
 > ❗ **Important**:  `marketSettings` only has an effect while `multiSeatStatus` is `ENABLED`. If `multiSeatStatus` is `DISABLED`, the subscription isn’t available for multi-seat purchase in any market, regardless of which values you set in `marketSettings`.
 
-##### Verify your configuration
+### Verify your configuration
 
 To confirm the current settings, use `GET /v1/subscriptions/{id}` ([`Read subscription information`](./get-v1-subscriptions-_id_.md)) and check the `multiSeatStatus` and `marketSettings` values in the response.
 

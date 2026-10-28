@@ -19,7 +19,7 @@ func setAccessibilityImageRegions(_ accessibilityImageRegions: [WKAccessibilityI
 - (void) setAccessibilityImageRegions:(NSArray<WKAccessibilityImageRegion *> *) accessibilityImageRegions;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to associate different accessibility labels with different parts of the object’s image. You might also use this method to assign accessibility information to different parts of a dynamically generated image.
 

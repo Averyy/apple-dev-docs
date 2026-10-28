@@ -25,7 +25,7 @@ var isDaylightSavingTime: Bool { get }
 @property (readonly, getter=isDaylightSavingTime) BOOL daylightSavingTime;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the receiver is currently using daylight saving time, otherwise [`false`](../../Swift/false.md). This property invokes [`isDaylightSavingTime(for:)`](./isdaylightsavingtime%28for%29.md) with the current date as the argument.
 

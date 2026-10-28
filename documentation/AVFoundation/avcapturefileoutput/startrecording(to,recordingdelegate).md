@@ -23,7 +23,7 @@ func startRecording(to outputFileURL: URL, recordingDelegate delegate: any AVCap
 - (void) startRecordingToOutputFileURL:(NSURL *) outputFileURL recordingDelegate:(id<AVCaptureFileOutputRecordingDelegate>) delegate;
 ```
 
-#### Discussion
+## Discussion
 
 A failure occurs if you attempt to record to a URL where a file exists. To overwrite the content, delete the old file before calling this method.
 

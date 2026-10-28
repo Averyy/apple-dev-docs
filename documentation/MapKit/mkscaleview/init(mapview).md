@@ -23,7 +23,7 @@ convenience init(mapView: MKMapView?)
 + (instancetype) scaleViewWithMapView:(MKMapView *) mapView;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized scale view.
 

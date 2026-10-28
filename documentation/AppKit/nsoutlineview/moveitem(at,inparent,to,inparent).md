@@ -19,7 +19,7 @@ func moveItem(at fromIndex: Int, inParent oldParent: Any?, to toIndex: Int, inPa
 - (void) moveItemAtIndex:(NSInteger) fromIndex inParent:(id) oldParent toIndex:(NSInteger) toIndex inParent:(id) newParent;
 ```
 
-#### Discussion
+## Discussion
 
 This method parallels the [`moveRow(at:to:)`](../nstableview/moverow%28at,to%29.md) method of [`NSTableView`](../nstableview.md). The `newParent` can be the same as `oldParent` to reorder an item within the same parent.
 

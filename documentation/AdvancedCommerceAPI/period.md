@@ -28,7 +28,7 @@ string period
 
 - [Creating SKUs for your Apple In-App Purchases](./creating-your-purchases.md)
 
-##### Discussion
+### Discussion
 
 Auto-renewable subscriptions renew periodically. For example, if the period is 2 months, the subscription renews every 2 months.
 

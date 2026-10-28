@@ -25,7 +25,7 @@ protocol UNNotificationContentProviding : NSObjectProtocol
 @protocol UNNotificationContentProviding <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The system allows only objects in the Apple SDK that conform to `UNNotificationContentProviding`. The system ignores objects outside of the Apple SDK that your app conforms to `UNNotificationContentProviding`.
 

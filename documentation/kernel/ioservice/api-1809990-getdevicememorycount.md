@@ -12,11 +12,11 @@ virtual IOItemCount getDeviceMemoryCount(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 An integer count of the number of ranges available.
 
-#### Overview
+## Overview
 
 This method returns the count of physical memory ranges, each represented by an IODeviceMemory instance, that have been allocated for a memory mapped device.
 

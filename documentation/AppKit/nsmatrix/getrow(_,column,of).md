@@ -19,11 +19,11 @@ func getRow(_ row: UnsafeMutablePointer<Int>, column col: UnsafeMutablePointer<I
 - (BOOL) getRow:(NSInteger *) row column:(NSInteger *) col ofCell:(NSCell *) cell;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the cell is one of the cells in the receiver, [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 .
 

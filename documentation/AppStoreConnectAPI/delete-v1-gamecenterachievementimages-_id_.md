@@ -11,9 +11,9 @@ Delete an image that’s associated with an achievement.
 
 > **Deprecated**: This endpoint is deprecated. Use [`Delete a Game Center Achievement Image`](./delete-v2-gamecenterachievementimages-_id_.md) instead.
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

@@ -19,7 +19,7 @@ static let selectionIndexPaths: NSBindingName
 extern NSBindingName NSSelectionIndexPathsBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

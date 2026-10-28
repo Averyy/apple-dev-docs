@@ -19,11 +19,11 @@ Configures the pipeline for reading payment or loyalty cards.
 func prepare(using token: PaymentCardReader.Token, updateHandler: ((PaymentCardReader.UpdateEvent) -> Void)?) async throws -> PaymentCardReaderSession
 ```
 
-#### Return Value
+## Return Value
 
 [`PaymentCardReaderSession`](../paymentcardreadersession.md) when successful.
 
-#### Discussion
+## Discussion
 
 Call this function to configure Tap to Pay on iPhone on someone’s device. This method verifies that the device is able to read contactless cards and is properly configured to process transactions.
 

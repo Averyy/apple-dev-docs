@@ -13,11 +13,11 @@
 int sock_isconnected(socket_t so);
 ```
 
-#### Return Value
+## Return Value
 
 0 - socket is not connected. 1 - socket is connected.
 
-#### Discussion
+## Discussion
 
 Returns whether or not the socket is connected.
 

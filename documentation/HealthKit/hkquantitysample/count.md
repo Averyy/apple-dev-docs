@@ -28,7 +28,7 @@ var count: Int { get }
 
 - [Accessing condensed workout samples](../accessing-condensed-workout-samples.md)
 
-#### Discussion
+## Discussion
 
 Samples created using one of the `init()` methods have a [`count`](./count.md) of `1`. Samples created using an [`HKQuantitySeriesSampleBuilder`](../hkquantityseriessamplebuilder.md) may have a [`count`](./count.md) greater than `1`.
 

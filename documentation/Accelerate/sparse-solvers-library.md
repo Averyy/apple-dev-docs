@@ -5,7 +5,7 @@
 
 Solve systems of equations where the coefficient matrix is sparse.
 
-#### Overview
+## Overview
 
 The Sparse Solvers library in the Accelerate framework handles the solution of systems of equations where the coefficient matrix is sparse. That is, most of the entries in the matrix are zero. The Sparse Solvers library provides a sparse counterpart to the dense factorizations and linear solvers that LAPACK provides.
 
@@ -13,7 +13,7 @@ Many problems in science and technology require the solution of large systems of
 
 ![A linear graph that depicts a plotted sparse matrix.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-2904627@2x.png)
 
-##### Sparse matrices
+### Sparse matrices
 
 Routines from libraries such as BLAS and LAPACK work with matrices that you store as a 2D dense array of floating-point values. However, the algorithms you use to manipulate matrices and solve equations normally require *O(n_²*)_ data and *O(n_³*)_ operations. As a result, scaling to a large *n* is prohibitive.
 
@@ -25,7 +25,7 @@ These zeros arise naturally in these types of situations:
 - ****Limited connectivity****: For example, most people on social networks only connect to a tiny proportion of the entire user base.
 - ****Physical properties****: For example, points on structural meshes only connect to locally adjacent points.
 
-By exploiting these zero entries, you can often reduce the storage and computational requirements to *O(𝜏*n)* and *O(𝜏*n_²*),_ respectively, where *𝜏* is the average number of entries in each column. This reduction makes the solution of large problems (*n* in the millions or larger) tractable on most computers.
+By exploiting these zero entries, you can often reduce the storage and computational requirements to *O(𝜏\*n)* and *O(𝜏\*n_²*),_ respectively, where *𝜏* is the average number of entries in each column. This reduction makes the solution of large problems (*n* in the millions or larger) tractable on most computers.
 
 For example, the sparse benchmark matrix *ldoor*, which arises from structural modeling, has 952,200 x 952,200 entries with an average of 25 nonzero [`Double`](../Swift/double.md) entries per column. The following table shows the number of floating-point operations (1 Tflop is 10¹² floating-point operations) and the memory necessary to perform Cholesky factorization on that matrix:
 
@@ -34,7 +34,7 @@ For example, the sparse benchmark matrix *ldoor*, which arises from structural m
 | Dense | 287,782 Tflop | 6800 GB |
 | Sparse | 0.0783 Tflop | 1.2 GB |
 
-##### Solution approaches
+### Solution approaches
 
 The Accelerate framework offers two solution approaches:
 
@@ -52,7 +52,7 @@ The following table summarizes the differences between direct methods and iterat
 
 In contrast to direct methods, iterative methods provide a way for expert users to find approximate solutions faster using less memory. You can also use iterative methods when forming the explicit matrix is prohibitively expensive, but performing matrix-vector multiplications is performant. However, to achieve these gains, you need to select an appropriate preconditioner (an operator that approximates the inverse of *A*) that’s specific to your problem. It’s best to try a direct method before trying to use iterative methods.
 
-##### Iterative refinement
+### Iterative refinement
 
 It’s sometimes possible to improve the accuracy of the solution to *Ax = b* using *iterative refinement*. After finding an initial solution, iterative refinement reuses the factorization to find a series of small corrections with the aim of reducing the backward error.
 
@@ -107,7 +107,7 @@ for _ in 0 ..< maximumIteratons {
 }
 ```
 
-##### Sparse Solvers and multithreading
+### Sparse Solvers and multithreading
 
 By default, the Sparse Solvers library runs in multithreaded mode. Because multithreaded mode may sum child nodes and their ancestors in different orders, the solutions that the library provides may be different — although equally valid — across different runs.
 

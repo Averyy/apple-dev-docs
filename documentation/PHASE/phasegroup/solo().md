@@ -24,7 +24,7 @@ func solo()
 - (void) solo;
 ```
 
-#### Discussion
+## Discussion
 
 The engine silences all groups other than the group on which the app calls this function.
 

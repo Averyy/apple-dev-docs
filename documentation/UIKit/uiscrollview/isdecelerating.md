@@ -23,7 +23,7 @@ var isDecelerating: Bool { get }
 @property (nonatomic, readonly, getter=isDecelerating) BOOL decelerating;
 ```
 
-#### Discussion
+## Discussion
 
 The returned value is [`true`](../../Swift/true.md) if user isn’t dragging the content but scrolling is still occurring.
 

@@ -19,7 +19,7 @@ optional func webView(_ sender: WebView!, runJavaScriptAlertPanelWithMessage mes
 - (void) webView:(WebView *) sender runJavaScriptAlertPanelWithMessage:(NSString *) message initiatedByFrame:(WebFrame *) frame;
 ```
 
-#### Discussion
+## Discussion
 
 This method displays an alert panel when JavaScript code calls `alert`. Delegates should visually indicate that this panel comes from JavaScript. The panel should contain a single OK button. No action is taken if you do not implement this method.
 

@@ -22,7 +22,7 @@ var typeIdentifier: String { get }
 @property (copy, readonly) NSString * typeIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Multiple groups within a media source can have the same type identifier. For descriptions of group type identifiers, see [MediaLibrary Constants](../medialibrary-constants.md).
 

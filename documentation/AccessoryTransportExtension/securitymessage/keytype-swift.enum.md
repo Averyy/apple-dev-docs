@@ -15,7 +15,7 @@ A type that identifies the key material a security message carries.
 enum KeyType
 ```
 
-#### Overview
+## Overview
 
 Use this enumeration to specify the type of cryptographic key when creating a [`SecurityMessage`](../securitymessage.md) for the key exchange process. The accessory initiates key exchange by sending a message with [`SecurityMessage.KeyType.publicKey`](./keytype-swift.enum/publickey.md). The system responds with a message containing [`SecurityMessage.KeyType.encapsulatedKey`](./keytype-swift.enum/encapsulatedkey.md), which completes the exchange.
 

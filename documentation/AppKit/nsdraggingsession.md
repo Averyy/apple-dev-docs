@@ -19,7 +19,7 @@ class NSDraggingSession
 @interface NSDraggingSession : NSObject
 ```
 
-#### Overview
+## Overview
 
 You start a new dragging session by calling [`beginDraggingSession(with:event:source:)`](./nsview/begindraggingsession%28with,event,source%29.md) or [`beginDraggingSession(items:gesture:source:)`](./nsview/begindraggingsession%28items,gesture,source%29.md) on an `NSView`. The method immediately returns, and the actual drag begins at the next turn of the run loop.
 

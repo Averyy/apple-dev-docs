@@ -24,7 +24,7 @@ var supportsIdentify: Bool { get }
 @property (readonly) BOOL supportsIdentify;
 ```
 
-#### Discussion
+## Discussion
 
 If [`false`](../../Swift/false.md), any calls to the [`identify(completionHandler:)`](./identify%28completionhandler%29.md) method return an error. However, even if this property is [`true`](../../Swift/true.md), calls to [`identify(completionHandler:)`](./identify%28completionhandler%29.md) may not succeed.
 

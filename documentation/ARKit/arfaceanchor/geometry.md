@@ -20,7 +20,7 @@ var geometry: ARFaceGeometry { get }
 @property (nonatomic, strong, readonly) ARFaceGeometry * geometry;
 ```
 
-#### Discussion
+## Discussion
 
 This mesh provides vertex, index, and texture coordinate buffers describing the 3D shape of the face, conforming a generic face model to match the dimensions, shape, and current expression of the detected face.
 

@@ -19,7 +19,7 @@ var currentPreviewItemIndex: Int { get set }
 @property NSInteger currentPreviewItemIndex;
 ```
 
-#### Discussion
+## Discussion
 
 The value is `NSNotFound` if there’s no current preview item.
 

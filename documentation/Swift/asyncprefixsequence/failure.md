@@ -23,7 +23,7 @@ typealias Failure = Base.Failure
 
 Available when `Base` conforms to `AsyncSequence`.
 
-#### Discussion
+## Discussion
 
 The prefix sequence produces whatever type of error its base sequence does.
 

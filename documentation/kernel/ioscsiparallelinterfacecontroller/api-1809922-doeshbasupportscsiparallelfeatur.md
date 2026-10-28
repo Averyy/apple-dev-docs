@@ -12,11 +12,11 @@ virtual bool DoesHBASupportSCSIParallelFeature (
  SCSIParallelFeature theFeature ) = 0;
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if requested feature is supported.
 
-#### Overview
+## Overview
 
 Queries the HBA child class to determine if it supports the specified feature as defined by the SCSI Parallel Interconnect specifications.
 

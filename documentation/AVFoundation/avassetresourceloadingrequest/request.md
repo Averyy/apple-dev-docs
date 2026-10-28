@@ -24,7 +24,7 @@ var request: URLRequest { get }
 @property (nonatomic, readonly) NSURLRequest * request;
 ```
 
-#### Discussion
+## Discussion
 
 Use the value in this property to identify the requested resource and to formulate an appropriate response object.
 

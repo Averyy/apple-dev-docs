@@ -15,7 +15,7 @@ Handler for enumerating camera frame samples.
 typedef _Bool (^)(NSObject<OS_ar_camera_frame_sample> *) ar_camera_frame_sample_enumerator_t;
 ```
 
-#### Return Value
+## Return Value
 
 `true` to continue enumerating, or `false` to stop enumerating.
 

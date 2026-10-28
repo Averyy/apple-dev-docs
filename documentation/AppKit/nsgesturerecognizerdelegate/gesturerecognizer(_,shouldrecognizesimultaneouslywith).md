@@ -20,11 +20,11 @@ optional func gestureRecognizer(_ gestureRecognizer: NSGestureRecognizer, should
 - (BOOL) gestureRecognizer:(NSGestureRecognizer *) gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(NSGestureRecognizer *) otherGestureRecognizer;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to allow `gestureRecognizer` and `otherGestureRecognizer` to recognize their gestures simultaneously. If you do not implement this method, the default return value is [`false`](../../Swift/false.md)—no two gestures can be recognized simultaneously.
 
-#### Discussion
+## Discussion
 
 This method is called when recognition of a gesture by either `gestureRecognizer` and `otherGestureRecognizer` would block the other gesture recognizer from recognizing its gesture. Returning [`true`](../../Swift/true.md) is guaranteed to allow simultaneous recognition; returning [`false`](../../Swift/false.md) is not guaranteed to prevent simultaneous recognition because the other gesture recognizer’s delegate may return [`true`](../../Swift/true.md).
 

@@ -20,7 +20,7 @@ An error type that you create to indicate problems with address or contact infor
 struct PKPaymentError
 ```
 
-#### Overview
+## Overview
 
 The user must resolve any errors that you report on the Apple Pay sheet before they’re able to authorize the transaction.  You return any errors in [`PKPaymentAuthorizationResult`](./pkpaymentauthorizationresult.md) or [`PKPaymentRequestShippingContactUpdate`](./pkpaymentrequestshippingcontactupdate.md).
 

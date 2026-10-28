@@ -19,7 +19,7 @@ class var includesTextListMarkers: Bool { get }
 @property (class, readonly) BOOL includesTextListMarkers;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `false`.
 

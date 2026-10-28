@@ -21,11 +21,11 @@ object Intro
 - [Using HTML with Apple News Format](../AppleNews/using-html-with-apple-news-format.md)
 - [Using Markdown with Apple News Format](../AppleNews/using-markdown-with-apple-news-format.md)
 
-#### Discussion
+## Discussion
 
 Use an `Intro` component to indicate introductory or other preliminary text.
 
-##### Example
+### Example
 
 ```json
 {

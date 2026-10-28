@@ -24,7 +24,7 @@ static let cyclingPower: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierCyclingPower;
 ```
 
-#### Discussion
+## Discussion
 
 These samples use power units (described in [`HKUnit`](../hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)). Cycling power can be automatically collected by peripherals connected to an Apple Watch during cycling workouts. Sample data may be condensed and/or coalesced by HealthKit. For more information, see [Accessing condensed workout samples](../accessing-condensed-workout-samples.md).
 

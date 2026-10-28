@@ -24,7 +24,7 @@ func unregisterForLocalNotifications()
 - (void) unregisterForLocalNotifications;
 ```
 
-#### Discussion
+## Discussion
 
 Typically, you would call this method either when your application exits or when you no longer want to receive accessory-related notifications. Calls to this method must be balanced with a preceding call to the [`registerForLocalNotifications()`](./registerforlocalnotifications%28%29.md) method.
 

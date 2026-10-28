@@ -5,13 +5,13 @@
 
 Defines power management constants and keys used by both in-kernel and user space power management.
 
-#### Overview
+## Overview
 
 IOPM.h defines a range of power management constants used in several in-kernel and user space APIs. Most significantly, the IOPMPowerFlags used to specify the fields of an IOPMPowerState struct are defined here.
 
 Most of the constants defined in IOPM.h are deprecated or for Apple internal use only, and are not elaborated on in headerdoc.
 
-##### Included Headers
+### Included Headers
 
 - <IOKit/IOTypes.h>
 - <IOKit/IOMessage.h>

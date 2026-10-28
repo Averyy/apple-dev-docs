@@ -10,7 +10,7 @@ framework: "Swift-Org/PackageManagerDocs"
 
 Manipulate tools version of the current package.
 
-#### Overview
+## Overview
 
 ```
 package tools-version [--package-path=<package-path>]

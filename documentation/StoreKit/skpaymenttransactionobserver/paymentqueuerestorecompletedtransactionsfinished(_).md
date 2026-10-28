@@ -32,7 +32,7 @@ optional func paymentQueueRestoreCompletedTransactionsFinished(_ queue: SKPaymen
 - [Processing a transaction](../processing-a-transaction.md)
 - [Testing Apple In-App Purchases in Xcode](../testing-in-app-purchases-in-xcode.md)
 
-#### Discussion
+## Discussion
 
 This method is called after all restorable transactions have been processed by the payment queue. Your application is not required to do anything in this method.
 

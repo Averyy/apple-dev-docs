@@ -23,7 +23,7 @@ func encode(to encoder: any Encoder) throws
 
 Available when `Self` conforms to `Encodable` and `RawValue` is `Int64`.
 
-#### Discussion
+## Discussion
 
 This function throws an error if any values are invalid for the given encoder’s format.
 

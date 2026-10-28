@@ -24,7 +24,7 @@ var authenticationExpirationDate: Date? { get }
 @property (nonatomic, copy, readonly, nullable) NSDate * authenticationExpirationDate;
 ```
 
-#### Discussion
+## Discussion
 
 This property is `nil` if the user doesn’t have a current authentication session with their account provider.
 

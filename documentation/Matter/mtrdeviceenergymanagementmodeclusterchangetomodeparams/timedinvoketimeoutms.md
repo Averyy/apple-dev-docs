@@ -26,7 +26,7 @@ var timedInvokeTimeoutMs: NSNumber? { get set }
 @property (nonatomic, copy, nullable) NSNumber * timedInvokeTimeoutMs;
 ```
 
-#### Discussion
+## Discussion
 
 If nil (the default value), a regular invoke is done for commands that do not require a timed invoke and a timed invoke with some default timed request timeout is done for commands that require a timed invoke.
 

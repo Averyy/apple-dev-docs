@@ -19,7 +19,7 @@ case transient
 NSPopoverBehaviorTransient
 ```
 
-#### Discussion
+## Discussion
 
 Note that interacting with menus or panels that become key only when needed will not cause a transient popover to close. The exact interactions that will cause transient popovers to close are not specified.
 

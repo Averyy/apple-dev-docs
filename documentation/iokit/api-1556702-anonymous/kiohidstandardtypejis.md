@@ -14,7 +14,7 @@
 kIOHIDStandardTypeJIS = 0x2
 ```
 
-#### Discussion
+## Discussion
 
 JIS.
 

@@ -22,7 +22,7 @@ case success
 INCancelRideIntentResponseCodeSuccess
 ```
 
-#### Discussion
+## Discussion
 
 Use this code during the handling phase to indicate that your ride service acknowledged the cancellation of the ride. You can also specify this code during the confirmation phase to indicate that you are ready to handle the intent.
 

@@ -24,7 +24,7 @@ convenience init(name: CAMediaTimingFunctionName)
 + (instancetype) functionWithName:(CAMediaTimingFunctionName) name;
 ```
 
-#### Return Value
+## Return Value
 
 A new instance of `CAMediaTimingFunction` with the timing function specified by `name`.
 

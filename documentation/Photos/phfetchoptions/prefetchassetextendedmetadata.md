@@ -24,7 +24,7 @@ var prefetchAssetExtendedMetadata: Bool { get set }
 @property (nonatomic, assign) BOOL prefetchAssetExtendedMetadata;
 ```
 
-#### Discussion
+## Discussion
 
 By default `extendedMetadata` is fetched on demand, with the dot accessor. Prefetching will fetch it as part of the `PHAsset` in a single fetch, rather than incurring fetch overhead for each `PHAsset`.
 

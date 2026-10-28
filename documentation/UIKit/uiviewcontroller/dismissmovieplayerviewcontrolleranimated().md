@@ -23,7 +23,7 @@ func dismissMoviePlayerViewControllerAnimated()
 - (void) dismissMoviePlayerViewControllerAnimated;
 ```
 
-#### Discussion
+## Discussion
 
 If the receiver’s [`modalViewController`](./modalviewcontroller.md) property does not contain a movie player view controller, this method does nothing.
 

@@ -21,7 +21,7 @@ The auto-renewable subscription expired because of a billing error.
 static let billingError: Product.SubscriptionInfo.RenewalInfo.ExpirationReason
 ```
 
-#### Discussion
+## Discussion
 
 Check the value of [`isInBillingRetry`](../isinbillingretry.md) to determine whether an auto-renewable subscription is in a billing retry state.
 

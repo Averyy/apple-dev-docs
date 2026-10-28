@@ -24,7 +24,7 @@ class func maxKernelDiameter() -> Int
 + (NSUInteger) maxKernelDiameter;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the maximum diameter, in pixels, of the filter window supported by the median filter.
 

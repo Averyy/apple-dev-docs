@@ -16,11 +16,11 @@ Creates a pseudo address space in initial units space.
 IOFireWireLibPseudoAddressSpaceRef (*CreateInitialUnitsPseudoAddressSpace)(IOFireWireLibDeviceRef self, UInt32 inAddressLo, UInt32 inSize, void *inRefCon, UInt32 inQueueBufferSize, void *inBackingStore, UInt32 inFlags, REFIID iid);
 ```
 
-#### Return Value
+## Return Value
 
 An IOFireWireLibPseudoAddressSpaceRef. Returns 0 upon failure
 
-#### Discussion
+## Discussion
 
 Creates a pseudo address space object in initial units space and returns an interface to it. This will create a pseudo address space (software-backed) on the local machine.
 

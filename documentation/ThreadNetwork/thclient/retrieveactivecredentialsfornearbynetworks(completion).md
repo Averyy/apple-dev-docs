@@ -28,7 +28,7 @@ var activeCredentialsForNearbyNetworks: Set<THCredentials> { get async throws }
 - (void) retrieveActiveCredentialsForNearbyNetworksWithCompletion:(void (^)(NSSet<THCredentials *> *credentials, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 When calling this method, you will receive credentials for active border routers around. You receive all credentials agnostic to team ID. Unlike [`retrieveAllActiveCredentials(_:)`](./retrieveallactivecredentials%28_%29.md), this method returns active credentials on the device regardless of who actually stored it.
 

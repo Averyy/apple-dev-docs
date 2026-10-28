@@ -22,11 +22,11 @@ Returns a collection of persistent identifiers, in batches, where each identifie
 func fetchIdentifiers<T>(_ descriptor: FetchDescriptor<T>, batchSize: Int) throws -> FetchResultsCollection<PersistentIdentifier> where T : PersistentModel
 ```
 
-#### Return Value
+## Return Value
 
 The collection of persistent identifiers. If no models match the descriptor’s criteria, the array is empty.
 
-#### Discussion
+## Discussion
 
 The collection automatically fetches subsequent batches as you iterate over the identifiers, or access one at a specific index.
 

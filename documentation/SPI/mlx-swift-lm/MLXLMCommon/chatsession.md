@@ -22,7 +22,7 @@ final class ChatSession
 - [Observing token log probabilities](./generation-observability.md)
 - [KV Cache Quantization](./kv-cache-quantization.md)
 
-#### Overview
+## Overview
 
 For example:
 

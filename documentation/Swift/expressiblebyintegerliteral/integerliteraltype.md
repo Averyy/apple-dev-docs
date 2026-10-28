@@ -22,7 +22,7 @@ A type that represents an integer literal.
 associatedtype IntegerLiteralType : _ExpressibleByBuiltinIntegerLiteral
 ```
 
-#### Discussion
+## Discussion
 
 The standard library integer and floating-point types are all valid types for `IntegerLiteralType`.
 

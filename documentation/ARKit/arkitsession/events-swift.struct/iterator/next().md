@@ -16,7 +16,7 @@ Returns the next element in a sequence.
 mutating func next() async -> ARKitSession.Events.Element?
 ```
 
-#### Return Value
+## Return Value
 
 Returns an [`ARKitSession.Events.Element`](../element.md), or `nil` if there are no more elements.
 

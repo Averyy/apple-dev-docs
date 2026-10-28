@@ -25,7 +25,7 @@ func setOption(_ option: NSObject?, forKey key: String)
 - (void) setOption:(NSObject *) option forKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 If a value was previously set for the given option, that value is replaced with the given value. Note that the keys are case-sensitive. For a list of the available options, see [`NSPersistentStoreCoordinator`](../nspersistentstorecoordinator.md).
 

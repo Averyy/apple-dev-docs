@@ -25,7 +25,7 @@ var fStop: CGFloat { get set }
 @property (nonatomic) CGFloat fStop;
 ```
 
-#### Discussion
+## Discussion
 
 F-stop numbers describe the light-gathering area of a physical camera’s imaging system, and are typically expressed as the denominator of a ratio including the camera’s focal length ƒ, such as ƒ/2 or ƒ/5.6. A larger denominator indicates a smaller aperture, allowing less light to pass from the camera’s lens through to the imaging plane (sensor or film), and a smaller denominator indicates a larger aperture that lets more light through.
 

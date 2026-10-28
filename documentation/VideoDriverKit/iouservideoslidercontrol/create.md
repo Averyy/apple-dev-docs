@@ -15,11 +15,11 @@ A static factory method that allocates and initializes an slider control.
 static OSSharedPtr<IOUserVideoSliderControl> Create(IOUserVideoDriver *in_driver, bool in_is_settable, uint32_t in_control_value, IOUserVideoSliderRange in_range, IOUserVideoObjectPropertyElement in_control_element, IOUserVideoObjectPropertyScope in_control_scope, IOUserVideoClassID in_control_class_id);
 ```
 
-#### Return Value
+## Return Value
 
 OSSharedPtr to an IOUserVideoSliderControl if it was successfully allocated and initialized
 
-#### Discussion
+## Discussion
 
 If IOUserVideoSliderControl is subclassed to override behavior, don’t use this method to allocate or initialize the custom subclass.
 

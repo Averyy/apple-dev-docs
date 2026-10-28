@@ -25,11 +25,11 @@ func CGImageSourceCopyTypeIdentifiers() -> CFArray
 extern CFArrayRefCGImageSourceCopyTypeIdentifiers();
 ```
 
-#### Return Value
+## Return Value
 
 Returns an array of the uniform type identifiers that are supported for image sources.
 
-#### Discussion
+## Discussion
 
 For a list of system-declared and third-party identifiers, see [Uniform Type Identifiers](../UniformTypeIdentifiers/UniformTypeIdentifiers.md).
 

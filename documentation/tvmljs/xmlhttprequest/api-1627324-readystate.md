@@ -25,7 +25,7 @@ readonly attribute int readyState;
 readonly attribute unsigned short readyState;
 ```
 
-#### Discussion
+## Discussion
 
 This attribute can have the following values:
 

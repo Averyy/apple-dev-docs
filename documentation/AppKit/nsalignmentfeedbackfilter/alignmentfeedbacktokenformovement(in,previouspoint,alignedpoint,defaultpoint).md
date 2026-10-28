@@ -19,11 +19,11 @@ func alignmentFeedbackTokenForMovement(in view: NSView?, previousPoint: NSPoint,
 - (id<NSAlignmentFeedbackToken>) alignmentFeedbackTokenForMovementInView:(NSView *) view previousPoint:(NSPoint) previousPoint alignedPoint:(NSPoint) alignedPoint defaultPoint:(NSPoint) defaultPoint;
 ```
 
-#### Return Value
+## Return Value
 
 A null value if the system determines that the alignment should not occur. Otherwise, a feedback token of type `NSAlignmentFeedbackToken` is returned.
 
-#### Discussion
+## Discussion
 
 This method requests a feedback token for the alignment of an object requiring horizontal and vertical movement.
 

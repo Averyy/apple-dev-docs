@@ -25,7 +25,7 @@ var isCountOnlyRequest: Bool { get }
 @property (readonly, getter=isCountOnlyRequest) BOOL countOnlyRequest;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the receiver represents a count-only fetch request, otherwise [`false`](../../Swift/false.md). If this method returns [`false`](../../Swift/false.md), the managed object context (from the [`contextExpression`](./contextexpression.md)) will perform [`fetch(_:)`](../nsmanagedobjectcontext/fetch%28_%29-38ys1.md): with the [`requestExpression`](./requestexpression.md); if this method returns [`true`](../../Swift/true.md), the managed object context will perform [`count(for:)`](../nsmanagedobjectcontext/count%28for%29-93zbm.md) with the [`requestExpression`](./requestexpression.md).
 

@@ -21,7 +21,7 @@ A format style that creates string representations of date intervals.
 struct IntervalFormatStyle
 ```
 
-#### Overview
+## Overview
 
 Use a date interval format style to create user-readable strings in the form of `<start> - <end>` for your app’s interface, where `<start>` and `<end>` are date values that you supply. The format style uses locale and language information, along with custom formatting options, to define the content of the resulting string.
 

@@ -20,7 +20,7 @@ A direct adjustment to a body’s linear or angular acceleration, independent of
 case acceleration
 ```
 
-#### Discussion
+## Discussion
 
 The quantity that user sets via [`setForce(_:index:)`](../forceeffectparameters/setforce%28_,index%29.md) has the units of distance / time^2. `acceleration` mode causes a change in acceleration independent of a body’s mass.
 

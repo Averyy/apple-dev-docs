@@ -23,7 +23,7 @@ var scopeButtonTitles: [String]? { get set }
 @property (nonatomic, copy, nullable) NSArray<NSString *> * scopeButtonTitles;
 ```
 
-#### Discussion
+## Discussion
 
 The order of the strings in the array indicates the order that the corresponding buttons will be displayed, from left to right. The index in the array corresponds to the index used in [`selectedScopeButtonIndex`](./selectedscopebuttonindex.md).
 

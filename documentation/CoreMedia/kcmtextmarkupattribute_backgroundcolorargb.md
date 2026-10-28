@@ -25,7 +25,7 @@ let kCMTextMarkupAttribute_BackgroundColorARGB: CFString
 extern CFStringRef const kCMTextMarkupAttribute_BackgroundColorARGB;
 ```
 
-#### Discussion
+## Discussion
 
 This attribute’s value must be a `CFArray` of four `CFNumber`s representing alpha, red, green, and blue fields with values between `0.0` and `1.0`. The system interprets the red, green, and blue components in the sRGB color space. The alpha indicates the opacity from `0.0` for transparent to `1.0` for 100 percent opaque.
 

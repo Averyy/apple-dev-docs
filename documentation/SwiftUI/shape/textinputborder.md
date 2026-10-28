@@ -23,7 +23,7 @@ static var textInputBorder: TextInputBorderShape { get }
 
 Available when `Self` is `TextInputBorderShape`.
 
-#### Discussion
+## Discussion
 
 You can override the resolved shape in a given view hierarchy by using the [`textInputBorderShape(_:)`](../view/textinputbordershape%28_%29.md) modifier. If no text input border shape is specified, it is resolved automatically for the given context and platform.
 

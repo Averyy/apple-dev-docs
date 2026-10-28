@@ -13,13 +13,13 @@ Create and configure a local administrator account on a device.
 
 - [Implementing Platform SSO for unattended device enrollment](./implementing-platform-sso-for-unattended-device-enrollment.md)
 
-#### Discussion
+## Discussion
 
 The device only uses this command during initial device setup. The device ignores this command when migrating from one MDM server to another.
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command availability
+### Command availability
 
 |  |  |
 | --- | --- |
@@ -29,7 +29,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | N/A |
 | Required access right | N/A |
 
-##### Example request and response
+### Example request and response
 
 **Request**:
 

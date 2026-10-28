@@ -19,7 +19,7 @@ func getHue(_ hue: UnsafeMutablePointer<CGFloat>?, saturation: UnsafeMutablePoin
 - (void) getHue:(CGFloat *) hue saturation:(CGFloat *) saturation brightness:(CGFloat *) brightness alpha:(CGFloat *) alpha;
 ```
 
-#### Discussion
+## Discussion
 
 If `NULL` is passed in as an argument, the method doesn’t set that value. This method works only with objects representing colors in the [`calibratedRGB`](../nscolorspacename/calibratedrgb.md) or [`deviceRGB`](../nscolorspacename/devicergb.md) color space. Sending it to other objects raises an exception.
 

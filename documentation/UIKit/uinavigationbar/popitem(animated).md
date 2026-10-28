@@ -23,11 +23,11 @@ func popItem(animated: Bool) -> UINavigationItem?
 - (UINavigationItem *) popNavigationItemAnimated:(BOOL) animated;
 ```
 
-#### Return Value
+## Return Value
 
 The top item that was popped.
 
-#### Discussion
+## Discussion
 
 Popping a navigation item removes the top item from the stack and replaces it with the back item. The back item’s title is centered on the navigation bar and its other properties are displayed.
 

@@ -19,11 +19,11 @@ The decision that occurs after the given time.
 final func decision(after time: CMTime) -> CNDecision?
 ```
 
-#### Return Value
+## Return Value
 
 The decision that occurred after the given time.
 
-#### Discussion
+## Discussion
 
 Pass the time of an existing decision to find the next one.
 

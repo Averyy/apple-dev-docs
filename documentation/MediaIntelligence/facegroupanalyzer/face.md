@@ -24,7 +24,7 @@ struct Face
 
 - [Detecting and grouping faces in images](../detecting-and-grouping-faces-in-images.md)
 
-#### Overview
+## Overview
 
 This type represents a single face that [`FaceGroupAnalyzer`](../facegroupanalyzer.md) detects in an image. It records the face’s location within the image, the identifier of the image it came from, and after [`update(subprogress:)`](./update%28subprogress%29.md) runs, the entity the face belongs to.
 

@@ -19,7 +19,7 @@ func stopLoading()
 - (void) stopLoading;
 ```
 
-#### Discussion
+## Discussion
 
 This method does not change the state of the receiver—whatever content has been loaded is preserved.
 

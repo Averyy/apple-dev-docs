@@ -25,7 +25,7 @@ func semantic(forSymbol symbol: String) -> String?
 - (NSString *) semanticForSymbol:(NSString *) symbol;
 ```
 
-#### Return Value
+## Return Value
 
 A SceneKit semantic identifier. See Geometry Semantic Identifiers and Rendering Transform Keys for possible values.
 

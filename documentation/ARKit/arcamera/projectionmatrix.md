@@ -20,7 +20,7 @@ var projectionMatrix: simd_float4x4 { get }
 @property (nonatomic, readonly) simd_float4x4 projectionMatrix;
 ```
 
-#### Discussion
+## Discussion
 
 Reading this property’s value is equivalent to calling the `projectionMatrix(withViewportSize:orientation:zNear:zFar:)` method, using the camera’s [`imageResolution`](./imageresolution.md) and [`intrinsics`](./intrinsics.md) properties to derive size and orientation, and passing default values of `0.001` and `1000.0` for the near and far clipping planes.
 

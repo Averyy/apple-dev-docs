@@ -21,7 +21,7 @@ unowned(unsafe) var delegate: (any NSUserNotificationCenterDelegate)? { get set 
 @property (assign, nullable) id<NSUserNotificationCenterDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate must conform to the [`NSUserNotificationCenterDelegate`](../nsusernotificationcenterdelegate.md) protocol.
 

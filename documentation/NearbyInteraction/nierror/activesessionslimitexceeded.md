@@ -18,7 +18,7 @@ An error code that indicates that the app reached the maximum number of sessions
 static var activeSessionsLimitExceeded: NIError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 The maximum number of concurrent Nearby Interaction sessions varies across device type and platform.
 

@@ -23,11 +23,11 @@ func sec_identity_create(_ identity: SecIdentity) -> sec_identity_t?
 sec_identity_tsec_identity_create(SecIdentityRef identity);
 ```
 
-#### Return Value
+## Return Value
 
 A `sec_identity_t` instance.
 
-#### Discussion
+## Discussion
 
 Create an ARC-able `sec_identity_t` instance from a `SecIdentityRef`.
 

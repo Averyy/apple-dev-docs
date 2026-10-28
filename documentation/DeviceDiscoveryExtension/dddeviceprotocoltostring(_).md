@@ -23,11 +23,11 @@ func DDDeviceProtocolToString(_ inValue: DDDevice.Protocol) -> String
 extern NSString *DDDeviceProtocolToString(DDDeviceProtocol inValue);
 ```
 
-#### Return Value
+## Return Value
 
 A textual value for the specified device protocol.
 
-#### Discussion
+## Discussion
 
 Your extension can use this function for logging.
 

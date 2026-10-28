@@ -19,7 +19,7 @@ var terminationHandler: (@Sendable (Process) -> Void)? { get set }
 @property (copy, nullable) void (^)(NSTask *) terminationHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The system passes the task object to the block to allow access to the task parameters, for example to determine if the task completed successfully.
 

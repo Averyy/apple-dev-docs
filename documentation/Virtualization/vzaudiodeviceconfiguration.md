@@ -19,7 +19,7 @@ class VZAudioDeviceConfiguration
 @interface VZAudioDeviceConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 Don’t instantiate this abstract class directly. Instead, instantiate one of its subclasses such as [`VZVirtioSoundDeviceConfiguration`](./vzvirtiosounddeviceconfiguration.md).
 

@@ -18,7 +18,7 @@ Returns the resolved buffer and constant indices for the named constant paramete
 func constantLocation(named name: String) -> LowLevelMaterialParameterMapping.ConstantLocation?
 ```
 
-#### Return Value
+## Return Value
 
 A [`LowLevelMaterialParameterMapping.ConstantLocation`](./constantlocation.md) with the buffer and constant indices, or `nil` if no constant parameter with that name exists.
 

@@ -21,7 +21,7 @@ Returns the bits of the given instance, interpreted as having the specified type
 func unsafeBitCast<T, U>(_ x: T, to type: U.Type) -> U
 ```
 
-#### Discussion
+## Discussion
 
 Use this function only to convert the instance passed as `x` to a layout-compatible type when conversion through other means is not possible. Common conversions supported by the Swift standard library include the following:
 

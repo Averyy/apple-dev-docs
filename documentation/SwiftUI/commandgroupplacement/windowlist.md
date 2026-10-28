@@ -15,7 +15,7 @@ Placement for commands that describe and reveal the app’s open windows.
 static let windowList: CommandGroupPlacement
 ```
 
-#### Discussion
+## Discussion
 
 SwiftUI manages this group automatically in macOS.
 

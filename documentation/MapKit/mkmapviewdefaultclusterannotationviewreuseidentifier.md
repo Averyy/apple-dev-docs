@@ -24,7 +24,7 @@ let MKMapViewDefaultClusterAnnotationViewReuseIdentifier: String
 extern NSString * const MKMapViewDefaultClusterAnnotationViewReuseIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Use this constant to register a default annotation view to use for clusters of annotations. The map view uses this cluster annotation view when your map view’s delegate doesn’t implement the [`mapView(_:viewFor:)`](./mkmapviewdelegate/mapview%28_,viewfor%29-8humz.md) method, or when that method returns `nil`.
 

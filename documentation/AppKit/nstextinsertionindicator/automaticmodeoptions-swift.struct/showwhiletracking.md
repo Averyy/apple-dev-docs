@@ -23,7 +23,7 @@ NSTextInsertionIndicatorAutomaticModeOptionsShowWhileTracking
 
 - [Adopting the system text cursor in custom text views](../../adopting-the-system-text-cursor-in-custom-text-views.md)
 
-#### Discussion
+## Discussion
 
 When set, the insertion indicator hides during an [`NSEventTrackingRunLoopMode`](../../nseventtrackingrunloopmode.md) such as while actively scrolling a view.
 

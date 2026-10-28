@@ -29,7 +29,7 @@ func changeToMode(with params: MTROvenModeClusterChangeToModeParams) async throw
 - (void) changeToModeWithParams:(MTROvenModeClusterChangeToModeParams *) params completion:(void (^)(MTROvenModeClusterChangeToModeResponseParams *data, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This command is used to change device modes.
 

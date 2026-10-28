@@ -15,7 +15,7 @@ Acknowledges the belated completion of a driver’s setPowerState power state ch
 IOReturn acknowledgeSetPowerState(void);
 ```
 
-#### Discussion
+## Discussion
 
 After power management instructs a driver to change its state by calling [`setPowerState`](./api-1532866-setpowerstate.md), that driver must acknowledge the change when its device has completed its transition. The acknowledgement may be immediate, with a return code from [`setPowerState`](./api-1532866-setpowerstate.md), or delayed, with this call to [`acknowledgeSetPowerState`](./api-1532596-acknowledgesetpowerstate.md). Any driver that doesn’t return [`kIOPMAckImplied`](../api-1645020-anonymous/kiopmackimplied.md) from its [`setPowerState`](./api-1532866-setpowerstate.md) implementation must later call [`acknowledgeSetPowerState`](./api-1532596-acknowledgesetpowerstate.md).
 

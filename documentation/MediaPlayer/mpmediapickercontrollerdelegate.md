@@ -25,7 +25,7 @@ protocol MPMediaPickerControllerDelegate : NSObjectProtocol
 
 - [Displaying a media picker from your app](./displaying-a-media-picker-from-your-app.md)
 
-#### Overview
+## Overview
 
 The delegate for a media item picker can respond to a user making media item selections. The delegate is also responsible for dismissing the media item picker from the parent view controller. The methods in this protocol are optional.
 

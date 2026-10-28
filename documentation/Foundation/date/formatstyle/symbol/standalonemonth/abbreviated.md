@@ -21,7 +21,7 @@ The abbreviated representation of a standalone month.
 static var abbreviated: Date.FormatStyle.Symbol.StandaloneMonth { get }
 ```
 
-#### Discussion
+## Discussion
 
 This custom format style conveys an abbreviated representation of a standalone month, like `Oct` for October.
 

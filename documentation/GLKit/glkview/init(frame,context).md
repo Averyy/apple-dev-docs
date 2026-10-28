@@ -23,7 +23,7 @@ init(frame: CGRect, context: EAGLContext)
 - (instancetype) initWithFrame:(CGRect) frame context:(EAGLContext *) context;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized view object or `nil` if the object couldn’t be created.
 

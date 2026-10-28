@@ -21,11 +21,11 @@ Raises a debugger signal when a provided closure needs to stop the process in th
 func breakpoint(receiveSubscription: ((any Subscription) -> Bool)? = nil, receiveOutput: ((Self.Output) -> Bool)? = nil, receiveCompletion: ((Subscribers.Completion<Self.Failure>) -> Bool)? = nil) -> Publishers.Breakpoint<Self>
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that raises a debugger signal when one of the provided closures returns `true`.
 
-#### Discussion
+## Discussion
 
 Use [`breakpoint(receiveSubscription:receiveOutput:receiveCompletion:)`](./breakpoint%28receivesubscription,receiveoutput,receivecompletion%29.md) to examine one or more stages of the subscribe/publish/completion process and stop in the debugger, based on conditions you specify. When any of the provided closures returns `true`, this operator raises the `SIGTRAP` signal to stop the process in the debugger. Otherwise, this publisher passes through values and completions as-is.
 

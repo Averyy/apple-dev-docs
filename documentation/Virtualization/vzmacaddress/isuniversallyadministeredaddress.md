@@ -19,7 +19,7 @@ var isUniversallyAdministeredAddress: Bool { get }
 @property (readonly, getter=isUniversallyAdministeredAddress) BOOL isUniversallyAdministeredAddress;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the address is universally administered, or [`false`](../../Swift/false.md) if it isn’t. The manufacturer of a device assigns an address of this type, and the address includes the organization’s unique identification code.
 

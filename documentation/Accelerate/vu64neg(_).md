@@ -19,7 +19,7 @@ func vU64Neg(_ vA: vUInt32) -> vUInt32
 extern vUInt32 vU64Neg(vUInt32 vA);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the negated value.
 

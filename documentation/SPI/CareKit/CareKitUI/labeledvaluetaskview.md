@@ -18,7 +18,7 @@ A card that displays a header and a labeled value.
 struct LabeledValueTaskView<Header> where Header : View
 ```
 
-### Style
+## Style
 
 The card supports styling using `careKitStyle(_:)`.
 

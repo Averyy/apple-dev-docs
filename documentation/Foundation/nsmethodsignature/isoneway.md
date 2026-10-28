@@ -21,11 +21,11 @@ Whether the receiver is asynchronous when invoked through distributed objects.
 - (BOOL) isOneway;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver is asynchronous when invoked through distributed objects, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 If the method is `oneway`, the sender of the remote message doesn’t block awaiting a reply.
 

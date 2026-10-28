@@ -23,7 +23,7 @@ var isFinal: Bool { get }
 @property (nonatomic, readonly, getter=isFinal) BOOL final;
 ```
 
-#### Discussion
+## Discussion
 
 When a speech recognition request is final, its transcriptions don’t change.
 

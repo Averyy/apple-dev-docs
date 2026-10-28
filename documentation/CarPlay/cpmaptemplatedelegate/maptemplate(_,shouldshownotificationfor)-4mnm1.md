@@ -21,7 +21,7 @@ optional func mapTemplate(_ mapTemplate: CPMapTemplate, shouldShowNotificationFo
 - (BOOL) mapTemplate:(CPMapTemplate *) mapTemplate shouldShowNotificationForManeuver:(CPManeuver *) maneuver;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the system should display the maneuver as a notification; otherwise, [`false`](../../Swift/false.md).
 

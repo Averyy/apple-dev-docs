@@ -22,7 +22,7 @@ optional func lookup(_ sender: Any?)
 - (void) lookup:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 To present the standard system UI for showing a dictionary definition, call [`showDictionary(forTextInContext:definingTextInRange:from:)`](../betextinteraction/showdictionary%28fortextincontext,definingtextinrange,from%29.md) in your implementation of this method.
 

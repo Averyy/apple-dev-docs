@@ -19,7 +19,7 @@ static var function: NSEvent.ModifierFlags { get }
 NSEventModifierFlagFunction
 ```
 
-#### Discussion
+## Discussion
 
 The function keys include the F keys at the top of most keyboards (F1, F2, and so on) and the navigation keys in the center of most keyboards (Help, Forward, Delete, Home, End, Page Up, Page Down, and the arrow keys).
 

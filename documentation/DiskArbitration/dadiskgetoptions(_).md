@@ -19,7 +19,7 @@ func DADiskGetOptions(_ disk: DADisk) -> DADiskOptions
 extern DADiskOptions DADiskGetOptions(DADiskRef disk);
 ```
 
-#### Return Value
+## Return Value
 
 The options.
 

@@ -19,7 +19,7 @@ Apply rotary position embeddings, using the cache offset when available.
 func applyRotaryPosition<R>(_ rope: R, to x: MLXArray, cache: KVCache?) -> MLXArray where R : ArrayOffsetLayer, R : OffsetLayer
 ```
 
-#### Return Value
+## Return Value
 
 The input with rotary positional encoding applied.
 

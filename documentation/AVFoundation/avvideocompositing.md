@@ -24,7 +24,7 @@ protocol AVVideoCompositing : NSObjectProtocol, Sendable
 @protocol AVVideoCompositing <NSObject>
 ```
 
-#### Overview
+## Overview
 
 For each AVFoundation object of class [`AVPlayerItem`](./avplayeritem.md), [`AVAssetExportSession`](./avassetexportsession.md), [`AVAssetImageGenerator`](./avassetimagegenerator.md), or [`AVAssetReaderVideoCompositionOutput`](./avassetreadervideocompositionoutput.md) that has a non-`nil` value for its `videoComposition` property, and the value of the [`customVideoCompositorClass`](./avvideocomposition/customvideocompositorclass.md) property of the `AVVideoComposition` isn’t `nil`, AVFoundation creates and uses an instance of that custom video compositor class to process the instructions contained in the [`AVVideoComposition`](./avvideocomposition.md).
 

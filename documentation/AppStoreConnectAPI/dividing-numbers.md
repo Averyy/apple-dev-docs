@@ -5,21 +5,21 @@
 
 Return the result of dividing one number into another.
 
-#### Overview
+## Overview
 
 Use the `div()` function in the expression of a matchmaking rule to divide two numbers.
 
-##### Declaration
+### Declaration
 
 ```other
 number div(number $dividend, number $divisor)
 ```
 
-##### Parameters
+### Parameters
 
 -`dividend`: The number that the function divides. -`divisor`: The number that the function divides into `dividend`.
 
-##### Return value
+### Return value
 
 The result or quotient of dividing `divisor` into `dividend`. If `divisor` is `zero`, `null`.
 

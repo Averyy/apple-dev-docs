@@ -25,7 +25,7 @@ typealias MIDIEndpointRef = MIDIObjectRef
 typedef MIDIObjectRef MIDIEndpointRef;
 ```
 
-#### Discussion
+## Discussion
 
 An endpoint object derives from [`MIDIObjectRef`](./midiobjectref.md). It’s owned by a [`MIDIEntityRef`](./midientityref.md), unless it’s a virtual endpoint, in which case it has no owner. An entity may have any number of MIDI endpoints, which contain sources and destinations of 16-channel MIDI streams.
 

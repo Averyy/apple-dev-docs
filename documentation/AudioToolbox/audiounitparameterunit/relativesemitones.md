@@ -24,7 +24,7 @@ case relativeSemiTones
 kAudioUnitParameterUnit_RelativeSemiTones
 ```
 
-#### Discussion
+## Discussion
 
 One octave has 12 semitones equal in size. Each semitone is equivalent to 100 cents. This parameter unit is useful for coarse tuning or detuning.
 

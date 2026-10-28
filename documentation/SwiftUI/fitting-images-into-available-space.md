@@ -5,11 +5,11 @@
 
 Adjust the size and shape of images in your app’s user interface by applying view modifiers.
 
-#### Overview
+## Overview
 
 Image sizes vary widely, from single-pixel PNG files to digital photography images with millions of pixels. Because device sizes also vary, apps commonly need to make runtime adjustments to image sizes so they fit within the visible user interface. SwiftUI provides modifiers to scale, clip, and transform images to fit your interface perfectly.
 
-##### Scale a large image to fit its container using resizing
+### Scale a large image to fit its container using resizing
 
 Consider the image `Landscape_4.jpg`, a photograph with the dimensions 4032 x 3024, showing a water wheel, the surrounding building, and the sky above.
 
@@ -42,7 +42,7 @@ To fix this, you need to apply two modifiers to the `Image`:
 
 ![An image that shows a frame with a blue border overlaid on an image of a water wheel. The water wheel image is scaled to fit the width of the containing rectangle. Empty space extends from the bottom of the image to the bottom of the rectangle.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-FIIAS-resizeToFit@2x.png)
 
-##### Keep image data inside the view’s bounds using clipping
+### Keep image data inside the view’s bounds using clipping
 
 If you use [`ContentMode.fill`](./contentmode/fill.md) when scaling an image, a portion of an image may extend beyond the view’s bounds, unless the view matches the image’s aspect ratio exactly. The following example illustrates this problem:
 
@@ -69,7 +69,7 @@ To prevent this problem, add the [`clipped(antialiased:)`](./view/clipped%28anti
 
 ![An image that shows a frame with a blue border overlaid on an image of a water wheel. The water wheel image fills the entire frame vertically and horizontally. The right side of the image is cut off at the right side of the rectangle.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-FIIAS-resizeToFill-clipped@2x.png)
 
-##### Use interpolation flags to adjust rendered image quality
+### Use interpolation flags to adjust rendered image quality
 
 Rendering an image at anything other than its original size requires *interpolation*: using the existing image data to approximate a representation at a different size. Different approaches to performing interpolation have different trade-offs between computational complexity and visual quality of the rendered image. You can use the [`interpolation(_:)`](./image/interpolation%28_%29.md) modifier to provide a hint for SwiftUI rendering behavior.
 
@@ -94,7 +94,7 @@ If you change the interpolation value to [`Image.Interpolation.medium`](./image/
 
 > 💡 **Tip**: You can also specify interpolation behavior when scaling images down, to ensure the highest quality image possible, fastest rendering time, or a behavior in between.
 
-##### Fill a space with a repeating image using tiling
+### Fill a space with a repeating image using tiling
 
 When you have an image that’s much smaller than the space you want to render it into, another option  to fill the space is *tiling*: repeating the same image over and over again. To tile an image, pass the [`Image.ResizingMode.tile`](./image/resizingmode/tile.md) parameter to the [`resizable(capInsets:resizingMode:)`](./image/resizable%28capinsets,resizingmode%29.md) modifier:
 

@@ -16,7 +16,7 @@ A number that represents an hour.
 long hours;
 ```
 
-#### Discussion
+## Discussion
 
 Hours of the day are 0-based. For example, to represent the time 06:00, use `6`, and to represent midnight, use `0`.
 

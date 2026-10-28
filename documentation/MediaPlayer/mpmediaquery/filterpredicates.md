@@ -22,7 +22,7 @@ var filterPredicates: Set<MPMediaPredicate>? { get set }
 @property (nonatomic, strong, nullable) NSSet<MPMediaPredicate *> * filterPredicates;
 ```
 
-#### Discussion
+## Discussion
 
 The General Media Item Property Keys and Podcast Item Property Keys enumerations in [`MPMediaItem`](../mpmediaitem.md) contain the keys you can use to construct predicates.
 

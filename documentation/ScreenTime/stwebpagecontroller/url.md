@@ -22,7 +22,7 @@ var url: URL? { get set }
 @property (nonatomic, copy, nullable) NSURL * URL;
 ```
 
-#### Discussion
+## Discussion
 
 Set this value to the webpage’s URL when the user navigates to a new URL.
 

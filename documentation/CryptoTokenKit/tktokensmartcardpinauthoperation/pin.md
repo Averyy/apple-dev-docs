@@ -25,7 +25,7 @@ var pin: String? { get set }
 @property (copy, nullable) NSString * PIN;
 ```
 
-#### Discussion
+## Discussion
 
 This property is set to the result of the operation after `finishWithError:` is called.
 

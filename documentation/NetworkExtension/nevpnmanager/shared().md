@@ -24,7 +24,7 @@ class func shared() -> NEVPNManager
 + (NEVPNManager *) sharedManager;
 ```
 
-#### Return Value
+## Return Value
 
 The `NEVPNManager` instance for the calling application.
 

@@ -20,11 +20,11 @@ class func attribute(withName name: String, stringValue: String) -> Any
 + (id) attributeWithName:(NSString *) name stringValue:(NSString *) stringValue;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSXMLNode` object of kind [`XMLNode.Kind.attribute`](./kind-swift.enum/attribute.md) or `nil` if the object couldn’t be created.
 
-#### Discussion
+## Discussion
 
 For example, in the attribute “id=`12345’”, “id” is the attribute name and “12345” is the attribute value.
 

@@ -5,7 +5,7 @@
 
 Possible options when posting notifications.
 
-#### Overview
+## Overview
 
 Use these constants when calling the [`CFNotificationCenterPostNotificationWithOptions(_:_:_:_:_:)`](./cfnotificationcenterpostnotificationwithoptions%28_,_,_,_,_%29.md) function.
 

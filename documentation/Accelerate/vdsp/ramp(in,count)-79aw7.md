@@ -25,7 +25,7 @@ static func ramp(in range: ClosedRange<Float>, count: Int) -> [Float]
 
 - [Using linear interpolation to construct new data points](../using-linear-interpolation-to-construct-new-data-points.md)
 
-#### Discussion
+## Discussion
 
 Use this function to generate and return a vector populated with ramped values.
 

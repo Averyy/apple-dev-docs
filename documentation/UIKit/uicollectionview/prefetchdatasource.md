@@ -23,7 +23,7 @@ weak var prefetchDataSource: (any UICollectionViewDataSourcePrefetching)? { get 
 @property (nonatomic, weak, nullable) id<UICollectionViewDataSourcePrefetching> prefetchDataSource;
 ```
 
-#### Discussion
+## Discussion
 
 Assign an object that conforms to the [`UICollectionViewDataSourcePrefetching`](../uicollectionviewdatasourceprefetching.md) protocol to facilitate prefetching of data for cells to be displayed in the near future. To disable data prefetching behavior, set this property to `nil`.
 

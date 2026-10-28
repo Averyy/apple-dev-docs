@@ -21,7 +21,7 @@ Creates a string by interpreting the null-terminated platform string as UTF-8 on
 init(platformString: UnsafePointer<CInterop.PlatformChar>)
 ```
 
-#### Discussion
+## Discussion
 
 If the content of the platform string isn’t well-formed Unicode, this initializer replaces invalid bytes with U+FFFD. This means that, depending on the semantics of the specific platform, conversion to a string and back might result in a value that’s different from the original platform string.
 

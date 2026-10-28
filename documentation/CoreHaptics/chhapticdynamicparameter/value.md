@@ -24,7 +24,7 @@ var value: Float { get set }
 @property (readwrite) float value;
 ```
 
-#### Discussion
+## Discussion
 
 The range of possible values varies between different parameters. For example, the dynamic parameter for haptic intensity ranges from 0 and 1, indicating a multiplicative envelope, whereas the dynamic parameter for haptic sharpness varies between -1 and 1, indicating that the parameter can additively increase or decrease the sharpness.
 

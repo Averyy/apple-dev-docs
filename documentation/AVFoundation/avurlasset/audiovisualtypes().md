@@ -27,7 +27,7 @@ class func audiovisualTypes() -> [AVFileType]
 + (NSArray<NSString *> *) audiovisualTypes;
 ```
 
-#### Return Value
+## Return Value
 
 An array of supported file types.
 

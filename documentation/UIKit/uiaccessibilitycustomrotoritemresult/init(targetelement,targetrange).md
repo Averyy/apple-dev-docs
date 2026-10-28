@@ -23,7 +23,7 @@ init(targetElement: any NSObjectProtocol, targetRange: UITextRange?)
 - (instancetype) initWithTargetElement:(id<NSObject>) targetElement targetRange:(UITextRange *) targetRange;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized rotor item result.
 

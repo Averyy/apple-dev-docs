@@ -25,7 +25,7 @@ class CTTextTab
 typedef const struct __CTTextTab * CTTextTabRef;
 ```
 
-#### Overview
+## Overview
 
 Core Text supports five alignment types: [`CTTextAlignment.left`](./cttextalignment/left.md), [`CTTextAlignment.center`](./cttextalignment/center.md), [`CTTextAlignment.right`](./cttextalignment/right.md), [`CTTextAlignment.justified`](./cttextalignment/justified.md) and [`CTTextAlignment.natural`](./cttextalignment/natural.md). These alignment types are absolute, not based on the line sweep direction of text.
 

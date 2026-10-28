@@ -17,7 +17,7 @@ Tells the delegate when the available experiences change.
 func experienceController(_ controller: AVExperienceController, didChangeAvailableExperiences availableExperiences: AVExperienceController.Experiences)
 ```
 
-#### Discussion
+## Discussion
 
 Use this callback to hide or show interface elements based on which experiences are possible.
 

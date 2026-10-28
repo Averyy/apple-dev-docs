@@ -10,11 +10,11 @@ framework: "mlx-swift-lm/MLXLLM"
 
 Using a model is easy:  load the weights, tokenize and evaluate.
 
-#### Overview
+## Overview
 
 There is a high level API described in [Evaluation](./evaluation.md) and this documentation describes the lower level API if you need more control.
 
-#### Loading a Model
+## Loading a Model
 
 A model is typically loaded by using a `ModelFactory` and a `ModelConfiguration`:
 
@@ -67,7 +67,7 @@ public class LLMModelFactory: ModelFactory {
 
 Callers with specialized requirements can use these individual components to manually load models, if needed.
 
-##### Inspecting LoRA Metadata
+### Inspecting LoRA Metadata
 
 Use [`loraMetadata(configurationData:)`](./llmmodelfactory/lorametadata%28configurationdata%29.md) to discover the model’s LoRA layer count and default runtime module paths without loading checkpoint weights:
 
@@ -85,7 +85,7 @@ if let metadata = try await LLMModelFactory.shared.loraMetadata(
 
 The returned `LoRAModelMetadata.defaultKeys` come from the registered model architecture, not from safetensors names. This accounts for models that rename or reshape checkpoint weights while loading.
 
-#### Evaluation Flow
+## Evaluation Flow
 
 - Load the Model
 - UserInput
@@ -95,7 +95,7 @@ The returned `LoRAModelMetadata.defaultKeys` come from the registered model arch
   - NaiveStreamingDetokenizer
   - TokenIterator
 
-#### Evaluating a Model
+## Evaluating a Model
 
 Once a model is loaded you can evaluate a prompt or series of messages. Minimally you need to prepare the user input:
 
@@ -151,7 +151,7 @@ Given that `input` we can call `generate()` to produce a stream of tokens. In th
 }
 ```
 
-##### Wired Memory (Optional)
+### Wired Memory (Optional)
 
 Use the policy-based API to coordinate a single global wired limit across tasks. `WiredMemoryManager` and `WiredMemoryTicket` are provided by MLX, while MLXLMCommon adds LLM-oriented policies (like `WiredFixedPolicy` or capped sum). Policy-only admission is enabled by default on unsupported backends so the same ticket logic applies on CPU (no OS limit changes are attempted).
 

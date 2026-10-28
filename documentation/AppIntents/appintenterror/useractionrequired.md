@@ -21,7 +21,7 @@ Errors that represent a state where a person needs to respond to successfully co
 enum UserActionRequired
 ```
 
-#### Overview
+## Overview
 
 Use these system-defined errors to inform people about steps they can take to fix the error.
 

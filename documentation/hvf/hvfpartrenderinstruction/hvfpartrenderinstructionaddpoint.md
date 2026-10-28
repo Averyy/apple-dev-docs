@@ -21,7 +21,7 @@ Instruction to move to the specified point.
 HVFPartRenderInstructionAddPoint
 ```
 
-#### Discussion
+## Discussion
 
 The `HVFPartRenderParams` union will contain the data for `addPoint`.
 

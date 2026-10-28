@@ -23,7 +23,7 @@ var supportsPreciseDistanceMeasurement: Bool { get }
 @property (nonatomic, readonly) BOOL supportsPreciseDistanceMeasurement;
 ```
 
-#### Discussion
+## Discussion
 
 If [`false`](../../Swift/false.md), then the device doesn’t support Nearby Interaction.
 

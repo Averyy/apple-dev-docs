@@ -21,11 +21,11 @@ func QLThumbnailRequestIsCancelled(_ thumbnail: QLThumbnailRequest!) -> Bool
 extern Boolean QLThumbnailRequestIsCancelled(QLThumbnailRequestRef thumbnail);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the request is being cancelled, `false` otherwise.
 
-#### Discussion
+## Discussion
 
 Thread-safety: This function should be called in the same thread as the thumbnail request is made in; generally, this is the same thread in which the `GenerateThumbnailForURL` callback was invoked.
 

@@ -24,7 +24,7 @@ var kJSTypeBoolean: JSType { get }
 kJSTypeBoolean
 ```
 
-#### Discussion
+## Discussion
 
 This value can be [`true`](../Swift/true.md) or [`false`](../Swift/false.md).
 

@@ -25,7 +25,7 @@ func unusedTrackID() -> CMPersistentTrackID
 - (CMPersistentTrackID) unusedTrackID;
 ```
 
-#### Return Value
+## Return Value
 
 An unused [`CMPersistentTrackID`](../../CoreMedia/cmpersistenttrackid.md) value.
 

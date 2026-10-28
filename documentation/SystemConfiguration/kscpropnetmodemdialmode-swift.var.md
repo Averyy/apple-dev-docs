@@ -19,7 +19,7 @@ let kSCPropNetModemDialMode: CFString
 extern CFStringRef const kSCPropNetModemDialMode;
 ```
 
-#### Discussion
+## Discussion
 
 This key can be passed the following constants:
 

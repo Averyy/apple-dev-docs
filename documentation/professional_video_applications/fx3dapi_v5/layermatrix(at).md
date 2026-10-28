@@ -20,7 +20,7 @@ func layerMatrix(at time: CMTime) throws -> FxMatrix44
 - (FxMatrix44 *) layerMatrixAtTime:(CMTime) time error:(NSError * *) error;
 ```
 
-#### Return Value
+## Return Value
 
 An FxMatrix44 containing the matrix.
 

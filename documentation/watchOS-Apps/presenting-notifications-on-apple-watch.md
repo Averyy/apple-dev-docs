@@ -5,11 +5,11 @@
 
 Understand how the system displays incoming notifications.
 
-#### Overview
+## Overview
 
 When the Apple Watch displays a notification, the system first presents the short-look interface. If the user continues to look at the notification, the system transitions quickly from the short-look interface to the long-look interface
 
-##### Display a short-look interface
+### Display a short-look interface
 
 The *short-look* interface is a nonscrolling screen that the system creates automatically.
 
@@ -17,7 +17,7 @@ The *short-look* interface is a nonscrolling screen that the system creates auto
 
 The system uses a template to display the app name and icon along with the title string from the notification payload, and you can’t customize this interface. For local notifications, you specify the title string using the [`UNMutableNotificationContent`](../UserNotifications/unmutablenotificationcontent.md) object’s [`title`](../UserNotifications/unmutablenotificationcontent/title.md) property. For remote notifications, you specify it using the `alert` dictionary’s `title` key inside the notification’s payload.
 
-##### Transition to the long-look interface
+### Transition to the long-look interface
 
 The *long-look* interface is a scrollable screen that displays the notification’s content and any associated action buttons. The system’s default long-look interface includes your app icon, the notification’s title string, and the alert message; however, your app can customize this interface.
 

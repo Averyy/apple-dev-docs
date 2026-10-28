@@ -13,7 +13,7 @@ virtual void taggedRelease(
  const intfreeWhen) const;
 ```
 
-#### Overview
+## Overview
 
 Kernel extensions should not use this function. It is for use by OSCollection and subclasses to track inclusion in collections.
 

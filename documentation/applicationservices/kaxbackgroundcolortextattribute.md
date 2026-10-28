@@ -19,7 +19,7 @@ var kAXBackgroundColorTextAttribute: Unmanaged<CFString>
 CFStringRef kAXBackgroundColorTextAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 
 ---

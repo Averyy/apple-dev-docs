@@ -19,7 +19,7 @@ var usesPredominantAxisScrolling: Bool { get set }
 @property BOOL usesPredominantAxisScrolling;
 ```
 
-#### Discussion
+## Discussion
 
 Some content is scrollable in both the horizontal and vertical axes, but is predominantly scrolled one axis at a time. Other content (such as a drawing canvas) should scroll freely in both axes.
 

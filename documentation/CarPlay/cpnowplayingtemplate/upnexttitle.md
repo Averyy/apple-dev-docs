@@ -21,7 +21,7 @@ var upNextTitle: String { get set }
 @property (nonatomic, copy) NSString * upNextTitle;
 ```
 
-#### Discussion
+## Discussion
 
 If you display the Up Next button in your app by setting [`isUpNextButtonEnabled`](./isupnextbuttonenabled.md) to [`true`](../../Swift/true.md), use this property to set the button’s title. If you don’t specify a title, CarPlay uses the system default title.
 

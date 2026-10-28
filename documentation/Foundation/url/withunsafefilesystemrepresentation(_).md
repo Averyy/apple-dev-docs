@@ -21,11 +21,11 @@ Passes the URL’s path in the file system representation to a closure.
 func withUnsafeFileSystemRepresentation<ResultType>(_ block: (UnsafePointer<Int8>?) throws -> ResultType) rethrows -> ResultType
 ```
 
-#### Return Value
+## Return Value
 
 The value returned by your closure, if any.
 
-#### Discussion
+## Discussion
 
 The file system representation is a null-terminated C string with canonical UTF-8 encoding.
 

@@ -15,7 +15,7 @@ The MPEG-1/2, Layer 2 audio format.
 MPEGLayer2
 ```
 
-#### Discussion
+## Discussion
 
 This format uses no flags.
 

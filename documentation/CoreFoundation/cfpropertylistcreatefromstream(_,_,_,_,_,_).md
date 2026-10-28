@@ -27,15 +27,15 @@ func CFPropertyListCreateFromStream(_ allocator: CFAllocator!, _ stream: CFReadS
 extern CFPropertyListRefCFPropertyListCreateFromStream(CFAllocatorRef allocator, CFReadStreamRef stream, CFIndex streamLength, CFOptionFlags mutabilityOption, CFPropertyListFormat *format, CFStringRef*errorString);
 ```
 
-#### Return Value
+## Return Value
 
 A new property list initialized with the data contained in `stream`. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 This function simply reads bytes from `stream` starting at the current location to the end, which is expected to be the end of the property list, or up to the number of bytes specified by `streamLength` if it is not `0`.
 
-##### Special Considerations
+### Special Considerations
 
 > ⚠️ **Warning**:  This function is obsolete and will be deprecated soon. Use [`CFPropertyListCreateWithStream(_:_:_:_:_:_:)`](./cfpropertylistcreatewithstream%28_,_,_,_,_,_%29.md) instead.
 

@@ -19,7 +19,7 @@ var isButtonBordered: Bool { get set }
 @property (getter=isButtonBordered) BOOL buttonBordered;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the combo box displays a border. For example, when displaying a combo box in a table, it is often useful to display the combo box without a border. The default value of this property is [`true`](../../Swift/true.md).
 

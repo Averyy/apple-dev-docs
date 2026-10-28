@@ -16,7 +16,7 @@ Value for key [`kIOPSTransportTypeKey`](./kiopstransporttypekey.md).
 #define kIOPSSerialTransportType
 ```
 
-#### Discussion
+## Discussion
 
 Indicates the power source is a UPS attached over a serial connection.
 

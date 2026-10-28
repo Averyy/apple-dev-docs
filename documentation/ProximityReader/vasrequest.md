@@ -21,7 +21,7 @@ class VASRequest
 
 - [Accepting loyalty passes from Wallet](./accepting-loyalty-passes-from-wallet.md)
 
-#### Overview
+## Overview
 
 Create a `VASRequest` object to obtain details from someone’s loyalty card so that you can process associated transactions. After you create this object, pass it to the [`readVAS(_:)`](./paymentcardreadersession/readvas%28_%29.md)or [`readPaymentCard(_:vasRequest:stopOnVASResult:)`](./paymentcardreadersession/readpaymentcard%28_,vasrequest,stoponvasresult%29.md) method of [`PaymentCardReaderSession`](./paymentcardreadersession.md).
 

@@ -3,7 +3,7 @@
 **Framework**: IOKit  
 **Role**: API Collection
 
-#### Overview
+## Overview
 
 IOHIDTransaction defines an object used to manipulate multiple parsed items (IOHIDElement) contained within a Human Interface Device (HID) object. It is used to minimize device communication when interacting with feature and output type elements that are grouped by their report IDs. IOHIDTransaction is a CFType object and as such conforms to all the conventions expected such object.
 
@@ -11,7 +11,7 @@ This documentation assumes that you have a basic understanding of the material c
 
 All of the information described in this document is contained in the header file `IOHIDTransaction.h` found at `/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDTransaction.h`.
 
-##### Included Headers
+### Included Headers
 
 - <CoreFoundation/CoreFoundation.h>
 - <IOKit/hid/IOHIDBase.h>

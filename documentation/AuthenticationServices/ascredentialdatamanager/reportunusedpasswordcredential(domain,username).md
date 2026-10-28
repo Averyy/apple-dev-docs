@@ -19,7 +19,7 @@ Report an unused password credential for a given domain and username. Password m
 final func reportUnusedPasswordCredential(domain: String, userName: String) async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: `ASAuthorizationError` if the system failed to accept the update.
 

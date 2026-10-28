@@ -5,7 +5,7 @@
 
 Examine the steps between the user, client, device management service, and Apple services in the OAuth 2 flow.
 
-#### Overview
+## Overview
 
 To implement account-driven enrollment, you need to support a series of interactions between the user’s device and your device management service. The following diagrams illustrate the interactions, and the sections below detail each of the interaction steps.
 
@@ -13,7 +13,7 @@ To implement account-driven enrollment, you need to support a series of interact
 
 To implement the OAuth 2 flow, steps 1–4 are identical to the simple flow explained in [Implementing the simple authentication account-driven enrollment flow](./implementing-the-simple-authentication-account-driven-enrollment-flow.md).
 
-#### Return the 401 response (Step 5)
+## Return the 401 response (Step 5)
 
 The device managmeent service returns an `HTTP 401` response status to the client and includes a `WWW-Authenticate` response header. This response header needs to use the `Bearer` scheme and include the following parameters:
 
@@ -28,7 +28,7 @@ The device managmeent service returns an `HTTP 401` response status to the clien
 
 If the client’s enrollment request is invalid, you return a standard HTTP error response code (for example, 400 or 403) to halt the enrollment flow on the device. If the response of your device management service is invalid (for example, missing the `WWW-Authenticate` response header), the system cancels the enrollment.
 
-#### Send the authorization request (Step 6-10)
+## Send the authorization request (Step 6-10)
 
 The client starts the OAuth 2 authorization grant flow with a public client type by constructing the authorization request URL from the parameters that return in the `401 response. It then adds a query item with the name `login_hint` and its value as the user account identifier that the user enters.
 
@@ -64,7 +64,7 @@ Content-Length: 17643
 </html>
 ```
 
-#### Return the authorization response (Step 11)
+## Return the authorization response (Step 11)
 
 The authentication session web flow completes when the service returns an HTTP 308 permanent redirect response to the client, with a `Location` header that it sets to the `redirect-url` parameter value in step 5. The URL also needs to include the OAuth 2 protocol `code` and `state` query items (note that the client sets a `state` parameter in its authorization request, so you need to set it in the authorization response).
 
@@ -91,7 +91,7 @@ Location: apple-remotemanagement-user-login:/oauth2/redirection
     ?code=Dek1jUOEcaIPGhbDrCTm9GDV5qT1sb&state=340B948D-A84A-45A3-AC45-C93195124B00
 ```
 
-#### Send the token request (Steps 12 and 13)
+## Send the token request (Steps 12 and 13)
 
 The client makes a token access request to fetch the OAuth 2 access and (optional) refresh tokens, using the authorization grant code from step 11, along with other required OAuth 2 parameters. The client securely stores the tokens that your device management service returns and uses them when authorizing subsequent requests to the service.
 
@@ -124,7 +124,7 @@ Content-Type: application/json
 }
 ```
 
-#### Attempt the second enrollment (Steps 14-21)
+## Attempt the second enrollment (Steps 14-21)
 
 The behavior is identical to the second enrollment attempt from the [simple authentication protocol](./implementing-the-simple-authentication-account-driven-enrollment-flow.md), with the client using the OAuth 2 access token value in the `Authorization` HTTP request header.
 

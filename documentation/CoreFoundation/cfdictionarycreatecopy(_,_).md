@@ -25,7 +25,7 @@ func CFDictionaryCreateCopy(_ allocator: CFAllocator!, _ theDict: CFDictionary!)
 extern CFDictionaryRefCFDictionaryCreateCopy(CFAllocatorRef allocator, CFDictionaryRef theDict);
 ```
 
-#### Return Value
+## Return Value
 
 A new dictionary that contains the same key-value pairs as `theDict`, or `NULL` if there was a problem creating the object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

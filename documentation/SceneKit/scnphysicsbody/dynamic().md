@@ -25,11 +25,11 @@ class func dynamic() -> Self
 + (instancetype) dynamicBody;
 ```
 
-#### Return Value
+## Return Value
 
 A new physics body object.
 
-#### Discussion
+## Discussion
 
 Use dynamic bodies for the elements of your scene that are moved by the physics simulation.
 

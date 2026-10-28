@@ -23,7 +23,7 @@ optional func collectionView(_ collectionView: UICollectionView, didDeselectItem
 - (void) collectionView:(UICollectionView *) collectionView didDeselectItemAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Discussion
+## Discussion
 
 The collection view calls this method when the user successfully deselects an item in the collection view. It does not call this method when you programmatically deselect items.
 

@@ -19,11 +19,11 @@
 static SPVector3D SPVector3DMakeWithPackedVector(simd_packed_double4 source);
 ```
 
-#### Return Value
+## Return Value
 
 A new vector.
 
-#### Discussion
+## Discussion
 
 Creates a Spatial vector from a packed simd vector.
 

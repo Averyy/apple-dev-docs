@@ -20,7 +20,7 @@ An object that defines how the system removes polygons before rendering a scene.
 enum FaceCulling
 ```
 
-#### Overview
+## Overview
 
 To improve performance, RealityKit culls polygons, or faces, that it determines won’t be visible. Discarding faces that aren’t part of the final render eliminates the need to do any calculations for those faces. Use this object to specify what kind of polygons RealityKit culls.
 

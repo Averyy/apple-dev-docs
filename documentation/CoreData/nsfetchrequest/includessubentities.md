@@ -25,7 +25,7 @@ var includesSubentities: Bool { get set }
 @property (nonatomic) BOOL includesSubentities;
 ```
 
-#### Discussion
+## Discussion
 
 The value is [`true`](../../Swift/true.md) if the request will include all subentities of the entity for the request; otherwise it is [`false`](../../Swift/false.md). The default is [`true`](../../Swift/true.md).
 

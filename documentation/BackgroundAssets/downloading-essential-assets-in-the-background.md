@@ -15,11 +15,11 @@ Fetch the assets your app requires before its first launch using an app extensio
 - visionOS 2.4+
 - Xcode 15.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC23 session 10108: [What’s new in Background Assets](https://developer.apple.com/wwdc23/10108/).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 Before you run the sample code project in Xcode:
 

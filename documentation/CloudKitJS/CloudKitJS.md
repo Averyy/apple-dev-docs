@@ -9,11 +9,11 @@ Provide access from your web app to your CloudKit app’s containers and databas
 **Availability**:
 - CloudKit JS 1.0+
 
-#### Overview
+## Overview
 
 Use CloudKit JS to build a web interface that lets users access the same public and private databases as your CloudKit app running on iOS or macOS. You must have an existing CloudKit app and enable web services to use CloudKit JS.
 
-##### Before You Begin
+### Before You Begin
 
 Set up your app’s containers and configure CloudKit JS.
 
@@ -47,7 +47,7 @@ Set up your app’s containers and configure CloudKit JS.
 
 Now you can use the `CloudKit`.[`getDefaultContainer`](./cloudkit/getdefaultcontainer.md) method in your JavaScript code to get the app container ([`CloudKit.Container`](./cloudkit.container.md)) and its database objects ([`CloudKit.Database`](./cloudkit.database.md)).
 
-##### Next Steps
+### Next Steps
 
 To learn CloudKit JS, download the [CloudKit Catalog: An Introduction to CloudKit (Cocoa and JavaScript) ](https://developer.apple.com/library/archive/samplecode/CloudAtlas/Introduction/Intro.html#//apple_ref/doc/uid/TP40014599) sample code project and refer to the CloudKit JS class reference documents for API details. For the hosted version of this sample code project, which allows you to execute CloudKit JS code and see the CloudKit server responses, go to [CloudKit Catalog](https://cdn.apple-CloudKit.com/CloudKit-catalog/).
 

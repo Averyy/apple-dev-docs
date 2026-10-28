@@ -40,7 +40,7 @@ extern ABRecordRefABPersonCreate();
 extern ABPersonRefABPersonCreate();
 ```
 
-#### Return Value
+## Return Value
 
 A newly created person object. You are responsible for releasing this object.
 

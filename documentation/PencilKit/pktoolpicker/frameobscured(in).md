@@ -22,11 +22,11 @@ func frameObscured(in view: UIView) -> CGRect
 - (CGRect) frameObscuredInView:(UIView *) view;
 ```
 
-#### Return Value
+## Return Value
 
 The portion of `view` (in its own coordinate space) obscured by the palette.
 
-#### Discussion
+## Discussion
 
 Because the palette is transparent in places, part of your view’s content may continue to show through in the specified rectangle.
 

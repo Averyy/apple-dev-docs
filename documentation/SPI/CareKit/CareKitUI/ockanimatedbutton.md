@@ -18,7 +18,7 @@ A highlightable and selectable button that can be animated. The `isHighlighted` 
 class OCKAnimatedButton<Content> where Content : UIView
 ```
 
-#### Overview
+## Overview
 
 The content view can be injected into the button. By default, the content is constrained to the button’s `layoutMarginGuide`.
 

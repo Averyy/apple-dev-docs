@@ -23,11 +23,11 @@ class func status() -> any UIFocusDebuggerOutput
 + (id<UIFocusDebuggerOutput>) status;
 ```
 
-#### Return Value
+## Return Value
 
 An object the focus debugger uses to output information to the debugger console.
 
-#### Discussion
+## Discussion
 
 Call this method from the `lldb` debugger using the following command:
 

@@ -20,11 +20,11 @@ optional func numberOfSections(in collectionView: NSCollectionView) -> Int
 - (NSInteger) numberOfSectionsInCollectionView:(NSCollectionView *) collectionView;
 ```
 
-#### Return Value
+## Return Value
 
 The number of sections in the specified collection view.
 
-#### Discussion
+## Discussion
 
 Implement this method when the organization of your data requires more than one section. If you do not implement this method, the collection view creates only one section.
 

@@ -24,11 +24,11 @@ convenience init(toStayOn path: GKPath, maxPredictionTime: TimeInterval)
 + (instancetype) goalToStayOnPath:(GKPath *) path maxPredictionTime:(NSTimeInterval) maxPredictionTime;
 ```
 
-#### Return Value
+## Return Value
 
 A new goal object.
 
-#### Discussion
+## Discussion
 
 This goal uses the shape and the [`radius`](../gkpath/radius.md) property of the specified path to define the boundaries of an area for the agent to stay in. If an affected agent is outside that area, the agent will move into that area; if the agent is already in that area, this goal will not motivate the agent to move further.
 

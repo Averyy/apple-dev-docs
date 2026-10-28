@@ -23,7 +23,7 @@ case failureRequiringAppLaunchNoServiceInArea
 INRequestRideIntentResponseCodeFailureRequiringAppLaunchNoServiceInArea
 ```
 
-#### Discussion
+## Discussion
 
 Use this response code when the pickup or drop-off locations are outside of your service area. Do not use this response code for general errors or to force the user to launch your app.
 

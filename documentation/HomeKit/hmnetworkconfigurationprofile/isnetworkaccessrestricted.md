@@ -24,7 +24,7 @@ var isNetworkAccessRestricted: Bool { get }
 @property (nonatomic, assign, readonly, getter=isNetworkAccessRestricted) BOOL networkAccessRestricted;
 ```
 
-#### Discussion
+## Discussion
 
 When the value is `true`, the accessory experiences restricted network access. When the value is `false`, the accessory’s access to the network isn’t restricted.
 

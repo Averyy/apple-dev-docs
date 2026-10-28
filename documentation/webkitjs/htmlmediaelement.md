@@ -16,9 +16,9 @@ An abstract superclass for media classes that display audio or video in webpages
 interface HTMLMediaElement
 ```
 
-#### Overview
+## Overview
 
-##### Handling Events
+### Handling Events
 
 The different types of media events that can occur are described in [Table 1](./htmlmediaelement.md#1965705).
 

@@ -23,7 +23,7 @@ let kCTFontDescriptionNameKey: CFString
 extern CFStringRef const kCTFontDescriptionNameKey;
 ```
 
-#### Discussion
+## Discussion
 
 The name specifier for the description name.
 

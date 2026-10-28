@@ -13,7 +13,7 @@
 #define kIOPropertySCSITargetIdentifierKey
 ```
 
-#### Discussion
+## Discussion
 
 This is the SCSI Target Identifier for a given SCSI Target Device.
 

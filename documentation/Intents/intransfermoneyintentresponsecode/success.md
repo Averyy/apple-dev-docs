@@ -25,7 +25,7 @@ case success
 INTransferMoneyIntentResponseCodeSuccess
 ```
 
-#### Discussion
+## Discussion
 
 Use this code after scheduling the transaction successfully. Returning this code doesn’t require a transfer of funds. It only means that you’ve recorded the transaction in order to perform the transfer on the specified date.
 

@@ -21,7 +21,7 @@ An interface for defining the visual representation of an app intent’s paramet
 protocol ParameterSummary
 ```
 
-#### Overview
+## Overview
 
 For more information about using parameters and providing a parameter summary, see [Provide an interactive parameter summary for your intent](./adding-parameters-to-an-app-intent.md#Provide-an-interactive-parameter-summary-for-your-intent).
 

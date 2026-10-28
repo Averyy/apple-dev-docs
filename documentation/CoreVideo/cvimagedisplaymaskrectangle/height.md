@@ -21,7 +21,7 @@ The height of the rectangle starting at rectangle’s top offset toward the rect
 var height: UInt16
 ```
 
-#### Discussion
+## Discussion
 
 This value is always less than [`referenceRasterHeight`](./referencerasterheight.md).
 

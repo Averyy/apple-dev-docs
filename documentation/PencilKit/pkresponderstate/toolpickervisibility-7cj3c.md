@@ -18,7 +18,7 @@ The visibility state of the tool picker.
 var toolPickerVisibility: PKToolPickerVisibility? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This controls the state of the tool picker that is provided by the `activeToolPicker` property.
 

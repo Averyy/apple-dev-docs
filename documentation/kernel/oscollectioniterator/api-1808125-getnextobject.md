@@ -11,11 +11,11 @@ Advances to and returns the next object in the iteration.
 virtual OSObject * getNextObject();
 ```
 
-#### Return Value
+## Return Value
 
 The next object in the iteration context, `NULL` if there is no next object or if the iterator is no longer valid.
 
-#### Overview
+## Overview
 
 This function first calls isValid and returns `NULL` if that function returns `false`.
 

@@ -5,7 +5,7 @@
 
 Initiate calls and search the user’s call history.
 
-#### Overview
+## Overview
 
 With the VoIP domain, users can ask Siri to initiate audio and video calls or search for calls already received by your app. Your Intents app extension validates the intent parameters, but doesn’t place calls or perform searches directly. Instead, SiriKit expects you to hand off control to your app, which is responsible for displaying the search results and managing calls.
 

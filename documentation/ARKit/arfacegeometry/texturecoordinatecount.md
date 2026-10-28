@@ -16,7 +16,7 @@ The number of elements in the [`textureCoordinates`](./texturecoordinates-8ahq1.
 @property (nonatomic, readonly) NSUInteger textureCoordinateCount;
 ```
 
-#### Discussion
+## Discussion
 
 Face mesh topology is constant across [`ARFaceGeometry`](../arfacegeometry.md) instances, so the value of this property is the same for all instances.
 

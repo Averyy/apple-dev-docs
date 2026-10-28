@@ -24,17 +24,17 @@ func CFHTTPMessageApplyCredentials(_ request: CFHTTPMessage, _ auth: CFHTTPAuthe
 extern Boolean CFHTTPMessageApplyCredentials(CFHTTPMessageRef request, CFHTTPAuthenticationRef auth, CFStringRef username, CFStringRef password, CFStreamError *error);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the authentication was successful, otherwise, `FALSE`.
 
-#### Discussion
+## Discussion
 
 This function performs the authentication method specified by `auth` on behalf of the request specified by `request` using the credentials specified by `username` and `password`. If, in addition to a username and password, you also need to specify an account domain, call [`CFHTTPMessageApplyCredentialDictionary(_:_:_:_:)`](./cfhttpmessageapplycredentialdictionary%28_,_,_,_%29.md) instead of this function.
 
 This function is appropriate for performing several authentication requests. If you only need to make a single authentication request, consider using [`CFHTTPMessageAddAuthentication(_:_:_:_:_:_:)`](./cfhttpmessageaddauthentication%28_,_,_,_,_,_%29.md) instead.
 
-##### Special Considerations
+### Special Considerations
 
 This function is thread safe as long as another thread does not alter the same `CFHTTPMessage` object at the same time.
 

@@ -20,7 +20,7 @@ case none
 ARGeoTrackingStateReasonNone
 ```
 
-#### Discussion
+## Discussion
 
 This reason indicates that there is no user action currently needed to improve the geo-tracking state.
 

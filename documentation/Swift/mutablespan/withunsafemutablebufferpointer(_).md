@@ -21,11 +21,11 @@ Call a closure with a pointer to the viewed mutable contiguous storage.
 mutating func withUnsafeMutableBufferPointer<E, Result>(_ body: (UnsafeMutableBufferPointer<Element>) throws(E) -> Result) throws(E) -> Result where E : Error, Result : ~Copyable
 ```
 
-#### Return Value
+## Return Value
 
 The return value of the `body` closure parameter.
 
-#### Discussion
+## Discussion
 
 The buffer pointer passed as an argument to `body` is valid only during the execution of `withUnsafeMutableBufferPointer(_:)`. Do not store or return the pointer for later use.
 

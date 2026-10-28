@@ -21,7 +21,7 @@ Creates an index in the given Unicode scalars view that corresponds exactly to t
 init?(_ sourcePosition: String.Index, within unicodeScalars: String.UnicodeScalarView)
 ```
 
-#### Discussion
+## Discussion
 
 The following example finds the position of a space in a string’s `utf16` view and then converts that position to an index in the string’s `unicodeScalars` view:
 

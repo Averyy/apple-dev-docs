@@ -23,7 +23,7 @@ let kCTFontVersionNameKey: CFString
 extern CFStringRef const kCTFontVersionNameKey;
 ```
 
-#### Discussion
+## Discussion
 
 The name specifier for the version name.
 

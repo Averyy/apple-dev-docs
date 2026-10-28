@@ -23,7 +23,7 @@ func subpath(with range: __PKFloatRange) -> PKStrokePath
 - (PKStrokePath *) subpathWithRange:(PKFloatRange *) range;
 ```
 
-#### Return Value
+## Return Value
 
 A new stroke path containing the portion within the specified parametric range.
 

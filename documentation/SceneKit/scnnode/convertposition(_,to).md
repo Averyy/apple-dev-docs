@@ -25,7 +25,7 @@ func convertPosition(_ position: SCNVector3, to node: SCNNode?) -> SCNVector3
 - (SCNVector3) convertPosition:(SCNVector3) position toNode:(SCNNode *) node;
 ```
 
-#### Return Value
+## Return Value
 
 A position in the local coordinate space defined by the other node.
 

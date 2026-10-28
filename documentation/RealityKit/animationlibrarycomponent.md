@@ -20,11 +20,11 @@ A component that represents a collection of animations that an entity can play.
 struct AnimationLibraryComponent
 ```
 
-#### Overview
+## Overview
 
 You use an `AnimationLibraryComponent` to access an entity’s animation resources. You can store animations with an entity by packaging them together into a `.reality` file. You can do this with Reality Composer Pro or by building a custom tool.
 
-##### Create an animation library with Reality Composer Pro
+### Create an animation library with Reality Composer Pro
 
 Follow these steps to create an animation library for an entity:
 
@@ -47,7 +47,7 @@ if let walkAnimation = animationLibrary.animations["walk"] {
 }
 ```
 
-##### Create an animation library by building your own tool
+### Create an animation library by building your own tool
 
 If you need to build a custom tool to create `.reality` files, you can use RealityKit to programmatically create an animation library by following these steps:
 

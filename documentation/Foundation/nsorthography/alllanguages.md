@@ -25,7 +25,7 @@ var allLanguages: [String] { get }
 @property (copy, readonly) NSArray<NSString *> * allLanguages;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is an array of BCP-47 language tags, such as `"en"` or `"fr"`, that identify the languages.
 

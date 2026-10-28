@@ -25,7 +25,7 @@ class var weights: MLParameterKey { get }
 @property (class, nonatomic, readonly) MLParameterKey * weights;
 ```
 
-#### Discussion
+## Discussion
 
 The value type for the [`weights`](./weights.md) key is an [`MLMultiArray`](../mlmultiarray.md). You must scope this key with the name of the specific neural network layer whose weights you’d like to access. See [`scoped(to:)`](./scoped%28to%29.md).
 

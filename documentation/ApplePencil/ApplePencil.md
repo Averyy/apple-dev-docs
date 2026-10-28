@@ -5,7 +5,7 @@
 
 Enhance your iPad app’s user experience by supporting drawing, handwriting, and other features of Apple Pencil.
 
-#### Overview
+## Overview
 
 Apple Pencil is an input accessory for iPad that people rely on for tasks like drawing, sketching, painting, jotting notes, marking up documents, and more. In addition to drawing and handwriting, Apple Pencil can also serve as a pointer and UI interaction tool.
 
@@ -22,7 +22,7 @@ As you optimize your app for iPad, there are many ways you can enhance it with A
 
 For more details on Apple Pencil features and compatibility, see [Apple Pencil](https://www.apple.com/apple-pencil/).
 
-###### Related videos
+#### Related videos
 
 - [Introducing PencilKit](https://developer.apple.com/videos/play/wwdc2019/221)
   Meet PencilKit, Apple's feature-rich drawing and annotation framework. With just a few lines of code, you can add a full drawing experience to your app — with access to a canvas, responsive inks, rich tool palette and drawing model. Hear the technical details that make a great Apple Pencil experience. Learn about the new screenshot editor and how you can adopt just a few small APIs to enable your full content to be captured beyond the size of the screen, with or without your app's user interface.

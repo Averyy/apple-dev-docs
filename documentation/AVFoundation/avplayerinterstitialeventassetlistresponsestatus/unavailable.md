@@ -25,7 +25,7 @@ case unavailable
 AVPlayerInterstitialEventAssetListResponseStatusUnavailable
 ```
 
-#### Discussion
+## Discussion
 
 The system is unable to read the `X-ASSET-LIST` response from the stream.
 

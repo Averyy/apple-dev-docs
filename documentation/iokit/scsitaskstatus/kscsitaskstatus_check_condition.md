@@ -14,7 +14,7 @@
 kSCSITaskStatus_CHECK_CONDITION = 0x02
 ```
 
-#### Discussion
+## Discussion
 
 The task completed with a status of CHECK_CONDITION. Additional information about the condition should be available in the sense data.
 

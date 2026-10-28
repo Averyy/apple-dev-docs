@@ -19,7 +19,7 @@ static var fullScreenAllowsTiling: NSWindow.CollectionBehavior { get }
 NSWindowCollectionBehaviorFullScreenAllowsTiling
 ```
 
-#### Discussion
+## Discussion
 
 The default behavior is to allow any window to participate in full-screen tiling, as long as it isn’t a panel or sheet and it meets certain requirements, such as being resizable. Windows that aren’t full screen capable can still become a secondary tile in full-screen.
 

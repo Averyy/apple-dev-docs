@@ -19,7 +19,7 @@ The source for the verifiable clinical records, for example from a SMART Health 
 var sourceTypes: [HKVerifiableClinicalRecordSourceType]
 ```
 
-#### Discussion
+## Discussion
 
 For a list of valid sources, see [`HKVerifiableClinicalRecordSourceType`](../hkverifiableclinicalrecordsourcetype.md).
 

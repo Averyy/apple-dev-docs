@@ -25,7 +25,7 @@ func CFErrorCopyUserInfo(_ err: CFError!) -> CFDictionary!
 extern CFDictionaryRefCFErrorCopyUserInfo(CFErrorRef err);
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary containing the same keys and values as in the userInfo dictionary `err` was created with. Returns an empty dictionary if `NULL` was supplied to the create function. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

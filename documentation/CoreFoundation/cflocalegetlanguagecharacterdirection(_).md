@@ -25,7 +25,7 @@ func CFLocaleGetLanguageCharacterDirection(_ isoLangCode: CFString!) -> CFLocale
 extern CFLocaleLanguageDirection CFLocaleGetLanguageCharacterDirection(CFStringRef isoLangCode);
 ```
 
-#### Return Value
+## Return Value
 
 The character direction for the language. See [`CFLocaleLanguageDirection`](./cflocalelanguagedirection.md) for possible values. If the appropriate direction can’t be determined, [`CFLocaleLanguageDirection.unknown`](./cflocalelanguagedirection/unknown.md) is returned.
 

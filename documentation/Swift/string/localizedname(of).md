@@ -21,7 +21,7 @@ Returns a human-readable string giving the name of the specified encoding.
 static func localizedName(of encoding: String.Encoding) -> String
 ```
 
-#### Return Value
+## Return Value
 
 A human-readable string giving the name of `encoding` in the current locale.
 

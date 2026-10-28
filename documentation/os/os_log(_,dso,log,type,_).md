@@ -23,7 +23,7 @@ Sends a message to the logging system, optionally specifying a custom log object
 func os_log(_ message: StaticString, dso: UnsafeRawPointer? = #dsohandle, log: OSLog = .default, type: OSLogType = .default, _ args: any CVarArg...)
 ```
 
-#### Discussion
+## Discussion
 
 Call this function to capture information about things that might result in a failure. For more information about format strings, see [String Format Specifiers](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFStrings/formatSpecifiers.html#//apple_ref/doc/uid/TP40004265).
 

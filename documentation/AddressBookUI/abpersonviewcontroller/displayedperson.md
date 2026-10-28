@@ -23,7 +23,7 @@ var displayedPerson: ABRecord { get set }
 @property (nonatomic, readwrite) ABRecordRef displayedPerson;
 ```
 
-#### Discussion
+## Discussion
 
 The receiver displays the properties of this person record that are present in [`displayedProperties`](./displayedproperties.md).
 

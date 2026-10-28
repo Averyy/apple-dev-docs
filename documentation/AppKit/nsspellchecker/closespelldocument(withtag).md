@@ -19,7 +19,7 @@ func closeSpellDocument(withTag tag: Int)
 - (void) closeSpellDocumentWithTag:(NSInteger) tag;
 ```
 
-#### Discussion
+## Discussion
 
 The spell checker will release any resources associated with the document, including but not necessarily limited to, ignored words.
 

@@ -23,7 +23,7 @@ optional func delete(_ sender: Any?)
 - (void) delete:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 UIKit calls this method when the user selects the Delete command from an editing menu. Your implementation should remove the selected content from your interface.
 

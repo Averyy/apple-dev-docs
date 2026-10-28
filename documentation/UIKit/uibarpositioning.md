@@ -24,7 +24,7 @@ protocol UIBarPositioning : NSObjectProtocol
 @protocol UIBarPositioning <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Bars can be positioned at the bottom of their enclosing view, at the top of their enclosing view, or at both the top of their enclosing view and also the top of the screen. In this last case, the bar will abut the status bar displayed by the system. Bars in this position need to have their background extend above their own frame to the top of the screen. This allows the background to show through the status bar.
 

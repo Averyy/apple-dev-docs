@@ -25,11 +25,11 @@ func run(mode: RunLoop.Mode, before limitDate: Date) -> Bool
 - (BOOL) runMode:(NSRunLoopMode) mode beforeDate:(NSDate *) limitDate;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the run loop ran and processed an input source or if the specified timeout value was reached; otherwise, [`false`](../../Swift/false.md) if the run loop could not be started.
 
-#### Discussion
+## Discussion
 
 If no input sources or timers are attached to the run loop, this method exits immediately and returns [`false`](../../Swift/false.md); otherwise, it returns after either the first input source is processed or `limitDate` is reached. Manually removing all known input sources and timers from the run loop does not guarantee that the run loop will exit immediately. macOS may install and remove additional input sources as needed to process requests targeted at the receiver’s thread. Those sources could therefore prevent the run loop from exiting.
 

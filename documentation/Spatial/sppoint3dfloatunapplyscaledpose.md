@@ -19,11 +19,11 @@
 static SPPoint3DFloat SPPoint3DFloatUnapplyScaledPose(SPPoint3DFloat point, SPScaledPose3DFloat pose);
 ```
 
-#### Return Value
+## Return Value
 
 The transformed point.
 
-#### Discussion
+## Discussion
 
 Returns a point that’s transformed by the inverse of the specified scaled pose.
 

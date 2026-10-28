@@ -26,7 +26,7 @@ class NWEndpoint
 @interface NWEndpoint : NSObject
 ```
 
-#### Overview
+## Overview
 
 All endpoint objects are static collections of parameters that describe a network resource. They do not directly provide any resolution services, but instead must be used with other classes to be resolved and create connections.
 

@@ -23,7 +23,7 @@ var touchIDAuthenticationAllowableReuseDuration: TimeInterval { get set }
 @property (nonatomic) NSTimeInterval touchIDAuthenticationAllowableReuseDuration;
 ```
 
-#### Discussion
+## Discussion
 
 If the user unlocks the device using Touch ID within the specified time interval, then authentication for the receiver succeeds automatically, without prompting the user for Touch ID. This bypasses a scenario where the user unlocks the device and then is almost immediately prompted for another fingerprint.
 

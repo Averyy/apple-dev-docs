@@ -19,7 +19,7 @@ var colorSyncProfile: UnsafeMutableRawPointer? { get }
 @property (readonly, nullable) void * colorSyncProfile;
 ```
 
-#### Discussion
+## Discussion
 
 The ColorSync profile on which the receiver is based. You need to cast this value to an object of opaque type CMProfileRef. Returns `NULL` if the receiver was created from a ICC-profile data instead. See [ColorSync Manager](../../applicationservices/colorsync_manager.md) for further information on CMProfileRef.
 

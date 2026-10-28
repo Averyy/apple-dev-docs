@@ -23,7 +23,7 @@ var compassVisibility: MKFeatureVisibility { get set }
 @property (nonatomic, assign) MKFeatureVisibility compassVisibility;
 ```
 
-#### Discussion
+## Discussion
 
 You can configure a compass button to be visible all the time or only when the compass heading changes.
 

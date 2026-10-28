@@ -19,7 +19,7 @@ var contentSafeAreaInsets: UIEdgeInsets { get }
 @property (nonatomic, readonly) UIEdgeInsets contentSafeAreaInsets;
 ```
 
-#### Discussion
+## Discussion
 
 The 40 mm and 44 mm watches have rounded corners that may clip content that extends to the edge of the screen. The content-safe area defines the region below the status bar that avoids the rounded corners.
 

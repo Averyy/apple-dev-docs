@@ -19,7 +19,7 @@ Initializes properties you need to preview an object that represents the pass yo
 + (instancetype) previewWithPassThumbnail:(CGImageRef) passThumbnail localizedDescription:(NSString *) description;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an object that represents the pass you add to Wallet.
 

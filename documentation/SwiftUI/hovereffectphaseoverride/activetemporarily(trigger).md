@@ -15,7 +15,7 @@ Temporaily transitions to the active phase until all animations finish, and the 
 static func activeTemporarily(trigger: some Equatable) -> HoverEffectPhaseOverride
 ```
 
-#### Discussion
+## Discussion
 
 Use `activeTemporarily(trigger:)` to override an effect’s phase until it fully transitions to its active phase. The transition will use the animations defined by the effect, but will ignore any delays.
 

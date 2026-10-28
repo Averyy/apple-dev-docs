@@ -15,11 +15,11 @@ Identifies where your application can safely break a Unicodestring to be convert
 OSStatus TruncateForUnicodeToText(ConstUnicodeToTextInfo iUnicodeToTextInfo, ByteCount iSourceLen, const UniChar iSourceStr[], OptionBits iControlFlags, ByteCount iMaxLen, ByteCount *oTruncatedLen);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 
-#### Discussion
+## Discussion
 
 Your application can use this function to divide up a Unicodestring properly truncating each portion before you call `ConvertFromUnicodeToText` or `ConvertFromUnicodeToScriptCodeRun` toconvert the string. You can call this function repeatedly to properlytruncate a text segment, each time identifying the new beginningof the string, until the last portion of the text is less than orequal to the maximum allowable length. Each time you use the function,you get a properly terminated string within the allowable lengthrange. 
 

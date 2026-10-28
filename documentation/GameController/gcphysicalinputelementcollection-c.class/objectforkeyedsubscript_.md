@@ -20,7 +20,7 @@ Returns the element in the collection for the specified key.
 - (Element) objectForKeyedSubscript:(Key) key;
 ```
 
-#### Return Value
+## Return Value
 
 An element in the collection.
 

@@ -24,7 +24,7 @@ func MusicTrackNewUserEvent(_ inTrack: MusicTrack, _ inTimeStamp: MusicTimeStamp
 extern OSStatus MusicTrackNewUserEvent(MusicTrack inTrack, MusicTimeStamp inTimeStamp, const MusicEventUserData *inUserData);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 

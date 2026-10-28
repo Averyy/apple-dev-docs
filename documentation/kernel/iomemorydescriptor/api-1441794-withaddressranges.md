@@ -15,11 +15,11 @@ Creates an IOMemoryDescriptor to describe one or more virtual ranges.
 static OSPtr<IOMemoryDescriptor> withAddressRanges(IOAddressRange *ranges, UInt32 rangeCount, IOOptionBits options, task_t task);
 ```
 
-#### Return Value
+## Return Value
 
 The created IOMemoryDescriptor on success, to be released by the caller, or zero on failure.
 
-#### Discussion
+## Discussion
 
 This method creates and initializes an IOMemoryDescriptor for memory consisting of an array of virtual memory ranges each mapped into a specified source task. This memory descriptor needs to be prepared before it can be used to extract data from the memory described.
 

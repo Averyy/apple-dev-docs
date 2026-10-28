@@ -9,7 +9,7 @@ Get updates about the list of classes the server manages.
 **Availability**:
 - Device Assignment Services 5.0+
 
-#### Discussion
+## Discussion
 
 This sync service uses a cursor that is returned by the full class-roster service. It returns a list of all modifications (additions or deletions) made since the cursor date, for up to 7 days.
 

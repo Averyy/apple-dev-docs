@@ -23,11 +23,11 @@ func makeIterator() -> Dictionary<Key, Value>.Iterator
 
 Available when `Key` conforms to `Hashable`.
 
-#### Return Value
+## Return Value
 
 An iterator over the dictionary with elements of type `(key: Key, value: Value)`.
 
-#### Discussion
+## Discussion
 
 Iterating over a dictionary yields the key-value pairs as two-element tuples. You can decompose the tuple in a `for`-`in` loop, which calls `makeIterator()` behind the scenes, or when calling the iterator’s `next()` method directly.
 

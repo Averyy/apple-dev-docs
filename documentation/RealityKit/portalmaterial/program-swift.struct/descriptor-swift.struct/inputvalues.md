@@ -20,7 +20,7 @@ Initial values for the inputs that the shader graph declares.
 var inputValues: [String : MaterialParameters.Value]
 ```
 
-#### Discussion
+## Discussion
 
 Each entry binds a graph input by name to a starting value. The engine applies these values when a [`PortalMaterial`](../../../portalmaterial.md) is first created from the resulting program; you can change any of them at runtime by calling [`setParameter(name:value:)`](../../setparameter%28name,value%29.md).
 

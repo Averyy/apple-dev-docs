@@ -21,7 +21,7 @@ The size is roughly the size of a page of paper, appropriate for informational o
 struct PagePresentationSizing
 ```
 
-#### Overview
+## Overview
 
 On iOS, `.page` sizing enforces a platform-defined floor for the vertical and horizontal dimensions. On macOS, no floor is enforced, however a maximum proposed height is derived from the presenter height. To achieve presentations outside of these bounds, see `PresentationSizing.fitted` or implement your own custom [`PresentationSizing`](./presentationsizing.md).
 

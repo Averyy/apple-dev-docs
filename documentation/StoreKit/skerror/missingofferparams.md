@@ -21,7 +21,7 @@ Error code indicating that parameters are missing in a payment discount.
 static var missingOfferParams: SKError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error appears if all parameters of [`SKPaymentDiscount`](../skpaymentdiscount.md) are not present.
 

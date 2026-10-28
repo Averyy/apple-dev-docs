@@ -17,7 +17,7 @@ Default implementation of [`MessageGenerator`](./messagegenerator.md) that produ
 struct DefaultMessageGenerator
 ```
 
-#### Overview
+## Overview
 
 ```swift
 [

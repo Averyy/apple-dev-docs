@@ -14,7 +14,7 @@
 kMPTaskState32BitMemoryException = 4
 ```
 
-#### Discussion
+## Discussion
 
 The task’s exception information for older 32-bit memory exceptions (that is, memory exceptions on 32-bit CPUs). The `MemoryExceptionInformation` structure in `MachineExceptions.h` defines the format of this information. This exception information is read-only. 
 

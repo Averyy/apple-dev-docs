@@ -19,7 +19,7 @@ class NSScrubberFlowLayout
 @interface NSScrubberFlowLayout : NSScrubberLayout
 ```
 
-#### Overview
+## Overview
 
 To set the size of items on a per-item basis, ensure that your scrubber delegate conforms to the [`NSScrubberFlowLayoutDelegate`](./nsscrubberflowlayoutdelegate.md) protocol, and provides an implementation of the [`scrubber(_:layout:sizeForItemAt:)`](./nsscrubberflowlayoutdelegate/scrubber%28_,layout,sizeforitemat%29.md) method.
 

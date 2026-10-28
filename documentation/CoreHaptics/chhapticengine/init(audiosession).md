@@ -24,7 +24,7 @@ init(audioSession: AVAudioSession?) throws
 - (instancetype) initWithAudioSession:(AVAudioSession *) audioSession error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Create your haptic engine with this initializer if you want the audio behavior of your engine to match other audio APIs in your app. For example, if you’re using [`AVAudioSession`](../../AVFAudio/avaudiosession.md) to manage audio elsewhere in your app, then you want to share the session’s [`sharedInstance()`](../../AVFAudio/avaudiosession/sharedinstance%28%29.md). In this case, the engine mutes and routes audio in accordance with the passed session.
 

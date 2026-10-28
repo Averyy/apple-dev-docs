@@ -19,11 +19,11 @@ class func localizedName(forTIFFCompressionType compression: NSBitmapImageRep.TI
 + (NSString *) localizedNameForTIFFCompressionType:(NSTIFFCompression) compression;
 ```
 
-#### Return Value
+## Return Value
 
 A localized name for `compression` or `nil` if `compression` is unrecognized.
 
-#### Discussion
+## Discussion
 
 When implementing a user interface for selecting TIFF compression types, use [`getTIFFCompressionTypes(_:count:)`](./gettiffcompressiontypes%28_,count%29.md) to get the list of supported compression types, then use this method to get the localized names for each compression type.
 

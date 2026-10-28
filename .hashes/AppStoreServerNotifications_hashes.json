@@ -848,6 +848,10 @@
       "file_path": "documentation/AppStoreServerNotifications/jwstransactiondecodedpayload.md",
       "hash": "fa28237a6a00520310d432d663c0f100e8b0d6b2ed1227a39818b7b6c6768ec3"
     },
+    "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/jwstransactiondecodedpayload/price.json": {
+      "error": "HTTP 404",
+      "status": "error"
+    },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/notification_type.json": {
       "file_path": "documentation/AppStoreServerNotifications/notification_type.md",
       "hash": "aa34315741551b629b976d1de2aba24900f8bd8a548d5b09ebf4556206b35363"
@@ -944,6 +948,10 @@
       "file_path": "documentation/AppStoreServerNotifications/responsebodyv1.md",
       "hash": "89cda85556c90418db4eb86ab88719a756ac66417fa2f070644ea813ba5db213"
     },
+    "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/responsebodyv1/notification_type.json": {
+      "error": "HTTP 404",
+      "status": "error"
+    },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/responsebodyv2.json": {
       "file_path": "documentation/AppStoreServerNotifications/responsebodyv2.md",
       "hash": "cc1f2937817be1fdbc165e8985e6c66808e1211684ad53dbf4e001701d507c54"
@@ -951,6 +959,10 @@
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/responsebodyv2decodedpayload.json": {
       "file_path": "documentation/AppStoreServerNotifications/responsebodyv2decodedpayload.md",
       "hash": "b829f8d5a3ae87175e0e5bb4f2d6a02260db54ed92b8eb468db2e6f9c16c4431"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/responsebodyv2decodedpayload/notificationtype.json": {
+      "error": "HTTP 404",
+      "status": "error"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/revocationdate.json": {
       "file_path": "documentation/AppStoreServerNotifications/revocationdate.md",
@@ -1075,8 +1087,8 @@
   },
   "metadata": {
     "render": {
-      "version": 3
+      "version": 4
     },
-    "total_pages": 268
+    "total_pages": 271
   }
 }

@@ -15,7 +15,7 @@ Defines a `-language-mode` to pass  to the corresponding build tool.
 static func swiftLanguageMode(_ mode: SwiftLanguageMode, _ condition: BuildSettingCondition? = nil) -> SwiftSetting
 ```
 
-#### Discussion
+## Discussion
 
 > **Since**: First available in PackageDescription 6.0.
 

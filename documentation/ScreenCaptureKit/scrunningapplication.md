@@ -20,7 +20,7 @@ class SCRunningApplication
 @interface SCRunningApplication : NSObject
 ```
 
-#### Overview
+## Overview
 
 Retrieve the available apps from an instance of [`SCShareableContent`](./scshareablecontent.md). Select one or more apps to capture and use them to create an instance of [`SCContentFilter`](./sccontentfilter.md). Apply the filter to an instance of [`SCStream`](./scstream.md) to limit its output to content matching your criteria.
 

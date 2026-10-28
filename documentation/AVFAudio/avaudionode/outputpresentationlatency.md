@@ -25,7 +25,7 @@ var outputPresentationLatency: TimeInterval { get }
 @property (nonatomic, readonly) NSTimeInterval outputPresentationLatency;
 ```
 
-#### Discussion
+## Discussion
 
 This latency describes the maximum time it takes to present the audio at the output of a node.
 

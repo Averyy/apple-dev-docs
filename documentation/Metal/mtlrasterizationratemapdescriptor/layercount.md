@@ -24,7 +24,7 @@ var layerCount: Int { get }
 @property (nonatomic, readonly) NSUInteger layerCount;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is dynamically determined based on how many layers you’ve added to the descriptor. To add a new layer, call [`setLayer(_:at:)`](./setlayer%28_,at%29.md) or use the subscripting operator to assign a layer.
 

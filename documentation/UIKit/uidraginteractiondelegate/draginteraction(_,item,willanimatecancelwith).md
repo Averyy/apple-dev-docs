@@ -22,7 +22,7 @@ optional func dragInteraction(_ interaction: UIDragInteraction, item: UIDragItem
 - (void) dragInteraction:(UIDragInteraction *) interaction item:(UIDragItem *) item willAnimateCancelWithAnimator:(id<UIDragAnimating>) animator;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called for each drag item, whether it is visible or not.
 

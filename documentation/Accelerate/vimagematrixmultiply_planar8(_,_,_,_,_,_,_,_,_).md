@@ -25,11 +25,11 @@ func vImageMatrixMultiply_Planar8(_ srcs: UnsafeMutablePointer<UnsafePointer<vIm
 vImage_Error vImageMatrixMultiply_Planar8(const vImage_Buffer * srcs[], const vImage_Buffer * dests[], uint32_t src_planes, uint32_t dest_planes, const int16_t matrix[], int32_t divisor, const int16_t *pre_bias, const int32_t *post_bias, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 This function treats corresponding pixels in the source buffers as `m`-element vectors, and the corresponding pixels in the destination buffers as `n`-element vectors. Therefore, the multiplication requires an `m x n` matrix, that is, a matrix with `src_planes` rows and `dest_planes` columns.
 

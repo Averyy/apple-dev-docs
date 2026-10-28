@@ -14,7 +14,7 @@
 kIOAudioMixBuffer = 2
 ```
 
-#### Discussion
+## Discussion
 
 This requests the IOAudioEngine's mix buffer
 

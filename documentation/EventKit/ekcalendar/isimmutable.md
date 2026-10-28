@@ -24,7 +24,7 @@ var isImmutable: Bool { get }
 @property (nonatomic, readonly, getter=isImmutable) BOOL immutable;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the calendar is immutable; otherwise it is not. Events and reminders can still be added to an immutable calendar.
 

@@ -15,7 +15,7 @@ The region that encloses the places from the search results.
 boundingRegion: CoordinateRegion | null;
 ```
 
-#### Discussion
+## Discussion
 
 This property isn’t present if there aren’t any results.
 

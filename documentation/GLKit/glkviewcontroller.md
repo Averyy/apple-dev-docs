@@ -23,7 +23,7 @@ class GLKViewController
 @interface GLKViewController : UIViewController
 ```
 
-#### Overview
+## Overview
 
 A [`GLKViewController`](./glkviewcontroller.md) object works in conjunction with a [`GLKView`](./glkview.md) object to display frames of animation in the view, and also provides standard view controller functionality.
 
@@ -36,7 +36,7 @@ When active, rendering loop automatically updates the view’s contents each tim
 1. The view controller calls its delegate’s [`glkViewControllerUpdate(_:)`](./glkviewcontrollerdelegate/glkviewcontrollerupdate%28_%29.md) method. Your delegate should update frame data that does not involve rendering the results to the screen.
 2. The view controller calls its view’s [`display()`](./glkview/display%28%29.md) method. Your view should redraw the frame.
 
-##### Subclassing Notes
+### Subclassing Notes
 
 Your application should subclass [`GLKViewController`](./glkviewcontroller.md) and override the [`viewDidLoad()`](../UIKit/uiviewcontroller/viewdidload%28%29.md) and [`viewDidUnload`](../UIKit/uiviewcontroller/viewdidunload.md) methods. Your `viewDidLoad` method should set up your context and any drawable properties and can perform other resource allocation and initialization. Similarly, your class’s `viewDidUnload` method should delete the drawable object and free any unneeded resources.
 

@@ -21,7 +21,7 @@ The value type of a Markdown source position attribute.
 typealias Value = AttributedString.MarkdownSourcePosition
 ```
 
-#### Discussion
+## Discussion
 
 Attributes of this type have [`AttributedString.MarkdownSourcePosition`](../../../attributedstring/markdownsourceposition.md) values.
 

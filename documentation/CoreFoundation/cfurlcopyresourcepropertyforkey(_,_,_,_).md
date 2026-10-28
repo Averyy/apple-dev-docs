@@ -25,11 +25,11 @@ func CFURLCopyResourcePropertyForKey(_ url: CFURL!, _ key: CFString!, _ property
 extern Boolean CFURLCopyResourcePropertyForKey(CFURLRef url, CFStringRef key, void *propertyValueTypeRefPtr, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `propertyValueTypeRefPtr` is successfully populated; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 This function first checks if the URL object already caches the resource value. If so, it returns the cached resource value to the caller. If not, then this function synchronously obtains the resource value from the backing store, adds the resource value to the URL object’s cache, and returns the resource value to the caller.
 

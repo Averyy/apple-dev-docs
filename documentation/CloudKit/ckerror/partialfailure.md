@@ -21,7 +21,7 @@ An error that occurs when an operation completes with partial failures.
 static var partialFailure: CKError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Examine the specific item failures, and act on the failed items. Each specific item error is from the CloudKit error domain. You can inspect the [`userInfo`](../../Foundation/nserror/userinfo.md) [`CKPartialErrorsByItemIDKey`](../ckpartialerrorsbyitemidkey.md) to see per-item errors.
 

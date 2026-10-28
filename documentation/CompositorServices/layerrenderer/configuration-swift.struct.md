@@ -20,7 +20,7 @@ struct Configuration
 
 - [Defining layer renderer quality](../defining-layer-renderer-quality.md)
 
-#### Overview
+## Overview
 
 A [`LayerRenderer.Configuration`](./configuration-swift.struct.md) type stores the configuration options for your app’s [`LayerRenderer`](../layerrenderer.md) object. When configuring your app’s [`CompositorLayer`](../compositorlayer.md) type, use this type to specify information about the texture layouts, pixel formats, and rendering options you want. The system uses the provided information to initialize the [`LayerRenderer`](../layerrenderer.md) object. It also uses the information to create the Metal textures and other data structures that you use for each frame of content.
 

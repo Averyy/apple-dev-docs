@@ -25,7 +25,7 @@ func indirectComputeCommandAt(_ commandIndex: Int) -> any MTLIndirectComputeComm
 - (id<MTLIndirectComputeCommand>) indirectComputeCommandAtIndex:(NSUInteger) commandIndex;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method only if the indirect command buffer contains compute commands.
 

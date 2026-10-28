@@ -17,7 +17,7 @@ Starts the session with the provided output image directory and optional checkpo
 func start(imagesDirectory: URL, configuration: ObjectCaptureSession.Configuration = Configuration())
 ```
 
-#### Discussion
+## Discussion
 
 The directory that `imagesDirectory` points to needs to be an empty and writable directory or it is an error. Likewise, if `checkpointDirectory` is provided, it needs to be empty if it already exists. If the directory does not exist, it is created for you. If it cannot be, the session moves to `.failed` state.
 

@@ -21,7 +21,7 @@ Encodes this tool expectation into the given encoder.
 func encode(to encoder: any Encoder) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if encoding fails.
 

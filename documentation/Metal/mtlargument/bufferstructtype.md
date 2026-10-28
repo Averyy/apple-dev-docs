@@ -24,7 +24,7 @@ var bufferStructType: MTLStructType? { get }
 @property (readonly, nullable) MTLStructType * bufferStructType;
 ```
 
-#### Discussion
+## Discussion
 
 If the buffer data type is [`MTLDataType.struct`](../mtldatatype/struct.md), this property describes the type of the struct; otherwise, this property is `nil`.
 

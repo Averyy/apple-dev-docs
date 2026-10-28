@@ -21,7 +21,7 @@ Creates a string by interpreting the path’s content as UTF-8 on Unix and UTF-1
 var string: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property is equivalent to calling `String(decoding: path)`
 

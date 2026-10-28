@@ -16,7 +16,7 @@ A Bool where true indicates that the process will allow the CPU to idle sleep ev
 var allowsSleeping: Bool { get throws }
 ```
 
-#### Discussion
+## Discussion
 
 Note that this property won’t affect when the CPU is forced to sleep.
 

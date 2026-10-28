@@ -21,7 +21,7 @@ var kABMultiStringPropertyType: Int { get }
 kABMultiStringPropertyType
 ```
 
-#### Discussion
+## Discussion
 
 Returned as an [`ABMultiValue`](./abmultivalue-swift.typealias.md) of [`CFString`](../CoreFoundation/cfstring.md) objects.
 

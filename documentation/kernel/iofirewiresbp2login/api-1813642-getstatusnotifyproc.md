@@ -13,7 +13,7 @@ virtual void getStatusNotifyProc(
  FWSBP2NotifyCallback *callback );
 ```
 
-#### Overview
+## Overview
 
 Returns the refCon and callback address of the status notify callback.
 

@@ -22,7 +22,7 @@ var autoExposureLensApertureRateLimit: Float { get set }
 @property (nonatomic) float autoExposureLensApertureRateLimit;
 ```
 
-#### Discussion
+## Discussion
 
 This rate limit is enforced whenever the auto-exposure system has control of one or more exposure parameters, to ensure smooth transitions between target values with coordinated management of the automatically adjusted parameters to maintain image brightness. However, if a full set of explicit (not “auto”) positions are passed to `setExposureModeCustomWithLensAperture:duration:ISO:completionHandler:`, any change to aperture is immediately applied without rate limit. In this case, the client has full control of the exposure parameters, and can implement arbitrary exposure transitions by repeated calls to the setter.
 

@@ -17,7 +17,7 @@ Loads an adapter into the model.
 func load(adapter: ModelAdapter) throws
 ```
 
-#### Discussion
+## Discussion
 
 Example:
 

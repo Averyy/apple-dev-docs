@@ -20,7 +20,7 @@ A notification posted when the current selection has changed.
 static let PDFViewSelectionChanged: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the `PDFView` object itself.
 

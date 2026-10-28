@@ -22,11 +22,11 @@ init(filterPredicates: Set<MPMediaPredicate>?)
 - (instancetype) initWithFilterPredicates:(NSSet<MPMediaPredicate *> *) filterPredicates;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized media query.
 
-#### Discussion
+## Discussion
 
 [`MPMediaPropertyPredicate`](../mpmediapropertypredicate.md) describes how to create media property predicates. The [General media item property keys](../general-media-item-property-keys.md) and `Podcast Item Property Keys` enumerations in [`MPMediaItem`](../mpmediaitem.md) contain the keys you can use to construct predicates.
 

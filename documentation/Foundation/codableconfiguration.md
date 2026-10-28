@@ -22,7 +22,7 @@ A property wrapper that makes a type codable, by supplying a configuration that 
 struct CodableConfiguration<T, ConfigurationProvider> where T : DecodableWithConfiguration, T : EncodableWithConfiguration, ConfigurationProvider : DecodingConfigurationProviding, ConfigurationProvider : EncodingConfigurationProviding, T.DecodingConfiguration == ConfigurationProvider.DecodingConfiguration, T.EncodingConfiguration == ConfigurationProvider.EncodingConfiguration
 ```
 
-#### Overview
+## Overview
 
 [`CodableConfiguration`](./codableconfiguration.md) allows you to create [`Codable`](../Swift/codable.md) types whose members don’t all conform to [`Codable`](../Swift/codable.md). For types that can’t support encoding and decoding by themselves but could become encodable and decodable with some statically-defined information, use the `@CodableConfiguration` wrapper. This lets you assign a configuration provider — a type that conforms to both [`EncodingConfigurationProviding`](./encodingconfigurationproviding.md) and [`DecodingConfigurationProviding`](./decodingconfigurationproviding.md) — to supply this data.
 

@@ -24,7 +24,7 @@ final class KeyFrameAnalysisRequest
 
 - [Finding the best moments in a video](./finding-the-best-moments-in-a-video.md)
 
-#### Overview
+## Overview
 
 Use this type to find the single frame that best represents the overall content of the video. Pass it to [`analyze(_:for:)`](./videoanalyzer/analyze%28_,for%29.md) to receive a [`KeyFrameAnalysisRequest.Result`](./keyframeanalysisrequest/result.md) value containing the frame’s timestamp.
 

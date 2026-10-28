@@ -21,7 +21,7 @@ Requests an `IntentFile` representation as a file url.
 func file(contentType: UTType, destinationDirectory: URL? = nil) async throws -> (fileURL: URL, openedInPlace: Bool)
 ```
 
-#### Discussion
+## Discussion
 
 If a destination directory is not given the file is opened in place, falling back to a temporary directory if this fails. If the file is not opened in place and a destination directory is used it is the caller’s responsibility to remove the file.
 

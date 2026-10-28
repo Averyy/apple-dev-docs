@@ -24,7 +24,7 @@ class UICollectionViewCell
 @interface UICollectionViewCell : UICollectionReusableView
 ```
 
-#### Overview
+## Overview
 
 You can use [`UICollectionViewCell`](./uicollectionviewcell.md) as-is or subclass it to add additional properties and methods. The layout and presentation of cells is managed by the collection view and its corresponding layout object.
 

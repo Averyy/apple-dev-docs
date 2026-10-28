@@ -25,11 +25,11 @@ init(coordinate: CLLocationCoordinate2D)
 - (instancetype) initWithCoordinate:(CLLocationCoordinate2D) coordinate;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized [`MKPlacemark`](../mkplacemark.md) object.
 
-#### Discussion
+## Discussion
 
 This method doesn’t fill in any of the other inherited properties describing the location.
 

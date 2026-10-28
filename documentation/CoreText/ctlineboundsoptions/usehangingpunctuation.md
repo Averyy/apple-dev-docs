@@ -25,7 +25,7 @@ static var useHangingPunctuation: CTLineBoundsOptions { get }
 kCTLineBoundsUseHangingPunctuation
 ```
 
-#### Discussion
+## Discussion
 
 The result of this option moves standard punctuation, such as periods, commas, hyphens, dashes, quotation marks, and asterisks, into the margin of either end of text, to give the appearance of a more uniform vertical alignment. Consider using this option when the text is fully justified.
 

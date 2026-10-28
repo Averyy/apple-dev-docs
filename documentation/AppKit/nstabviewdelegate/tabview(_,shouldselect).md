@@ -20,7 +20,7 @@ optional func tabView(_ tabView: NSTabView, shouldSelect tabViewItem: NSTabViewI
 - (BOOL) tabView:(NSTabView *) tabView shouldSelectTabViewItem:(NSTabViewItem *) tabViewItem;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the tab view item should be selected, otherwise [`false`](../../Swift/false.md).
 

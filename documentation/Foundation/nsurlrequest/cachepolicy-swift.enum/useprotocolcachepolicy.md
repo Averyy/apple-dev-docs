@@ -29,11 +29,11 @@ NSURLRequestUseProtocolCachePolicy
 
 - [Accessing cached data](../../accessing-cached-data.md)
 
-#### Discussion
+## Discussion
 
 This is the default policy for URL load requests.
 
-##### HTTP caching behavior
+### HTTP caching behavior
 
 For the HTTP and HTTPS protocols, [`NSURLRequest.CachePolicy.useProtocolCachePolicy`](./useprotocolcachepolicy.md) performs the following behavior:
 

@@ -20,7 +20,7 @@ A mode that displays the clearcoat channel of a material as the surface color.
 case clearcoat
 ```
 
-#### Discussion
+## Discussion
 
 Add a [`ModelDebugOptionsComponent`](../../modeldebugoptionscomponent.md) with a visualization mode of `clearcoat` to an entity to tell RealityKit to draw the entity’s clearcoat values as its surface color. A clearcoat is a way to render objects that appear to have a transparent coating or veneer, such as the surface of a car with a coat of wax or items shrinkwrapped in clear plastic. RealityKit draws clearcoat values as a grayscale value from black (`0.0`) to white (`1.0`), with black representing parts of the entity that don’t use clearcoat.
 

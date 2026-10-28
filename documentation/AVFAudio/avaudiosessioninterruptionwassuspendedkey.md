@@ -27,7 +27,7 @@ let AVAudioSessionInterruptionWasSuspendedKey: String
 extern NSString * const AVAudioSessionInterruptionWasSuspendedKey;
 ```
 
-#### Discussion
+## Discussion
 
 This [`userInfo`](../Foundation/nsnotification/userinfo.md) key is present only in [`AVAudioSession.InterruptionType.began`](./avaudiosession/interruptiontype/began.md) interruption events, where the interruption is a direct result of the operating system suspending the app. Its associated value is a Boolean [`NSNumber`](../Foundation/nsnumber.md), where a [`true`](../Swift/true.md) value indicates that the interruption is due to the system suspending the app, rather than being interrupted by another audio session.
 

@@ -25,7 +25,7 @@ struct BNNSVectorDescriptor
 typedef struct { ... } BNNSVectorDescriptor;
 ```
 
-#### Overview
+## Overview
 
 Vector format descriptor (DEPRECATED, Use BNNSNDArrayDescriptor)
 

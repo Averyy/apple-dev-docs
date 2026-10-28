@@ -23,7 +23,7 @@ case automatic
 UITabBarControllerModeAutomatic
 ```
 
-#### Discussion
+## Discussion
 
 Different platforms handle the mode differently:
 

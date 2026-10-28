@@ -21,7 +21,7 @@ The way SwiftUI infers the appropriate text alignment if no value is explicitly 
 struct AlignmentStrategy
 ```
 
-#### Overview
+## Overview
 
 > **Note**: [`Text`](../text.md) tightly wraps its content, so text alignment only affects how lines are positioned relative to each other. The text as a whole needs to be positioned at the view level using [`Alignment`](../alignment.md).
 

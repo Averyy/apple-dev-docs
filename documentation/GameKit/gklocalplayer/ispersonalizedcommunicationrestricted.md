@@ -28,7 +28,7 @@ var isPersonalizedCommunicationRestricted: Bool { get }
 
 - [Authenticating a player](../authenticating-a-player.md)
 
-#### Discussion
+## Discussion
 
 If this property or the underage property is [`true`](../../Swift/true.md), the local player can’t include personalized messages on invitations or enable voice communication in multiplayer games. If your game includes any custom communication features, you should disable them.
 

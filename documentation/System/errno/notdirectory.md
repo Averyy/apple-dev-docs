@@ -25,7 +25,7 @@ static var notDirectory: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 A component of the specified pathname exists, but it wasn’t a directory, when a directory was expected.
 

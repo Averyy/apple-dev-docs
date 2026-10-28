@@ -24,11 +24,11 @@ func orientationTransform(forExifOrientation orientation: Int32) -> CGAffineTran
 - (CGAffineTransform) imageTransformForOrientation:(int) orientation;
 ```
 
-#### Return Value
+## Return Value
 
 An affine transform that will rotate or mirror the image to match the specified orientation when applied.
 
-#### Discussion
+## Discussion
 
 This method determines the transformation needed to match the specified orientation, but does not apply that transformation to the image. To apply the transformation (possibly after concatenating it with other transformations), use the [`transformed(by:)`](./transformed%28by%29.md) method or the `CIAffineTransform` filter. To determine and apply the transformation in a single step, use the [`oriented(forExifOrientation:)`](./oriented%28forexiforientation%29.md) method.
 

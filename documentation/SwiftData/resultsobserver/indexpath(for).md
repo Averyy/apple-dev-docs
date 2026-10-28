@@ -21,7 +21,7 @@ Returns the index path of the given element within the sectioned results.
 final func indexPath(for element: Element) -> IndexPath?
 ```
 
-#### Return Value
+## Return Value
 
 An index path where `[0]` is the section index and `[1]` is the item index, or `nil` if the object is not found or [`sections`](./sections.md) is `nil`.
 

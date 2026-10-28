@@ -5,13 +5,13 @@
 
 Modify the appearance of your Metal heads-up display to monitor your graphics performance.
 
-#### Overview
+## Overview
 
 You can customize the appearance of the Metal Performance HUD in a variety of ways, including its size and opacity, or change the metrics that appear in the overlay.
 
 In macOS, you can export the HUD settings and apply them to your app at launch.
 
-##### Customize the Metal Performance HUD on macOS
+### Customize the Metal Performance HUD on macOS
 
 When you enable the Metal Performance HUD in your app, the HUD adds a new Metal HUD menu to the menu bar.
 
@@ -35,7 +35,7 @@ In the Insights panel, enable the performance insights feature to help you find 
 
 ![A screenshot of the Metal HUD’s insights configuration panel.](https://developer.apple.com/tutorials/images/com.apple.Xcode/metal-hud-config-insights@2x.png)
 
-##### Customize the Metal Performance HUD on a device
+### Customize the Metal Performance HUD on a device
 
 You can customize the Metal Performance HUD and logging on an iOS or iPadOS device in the Developer settings by following these steps:
 
@@ -49,7 +49,7 @@ The following screenshot shows the options in iOS:
 
 > ❗ **Important**:  These settings apply to all apps that enable the Metal Performance HUD. You can use environment variables to override the settings when debugging from Xcode.
 
-##### Customize the Metal Performance HUD programmatically
+### Customize the Metal Performance HUD programmatically
 
 You can customize the Metal Performance HUD programmatically by configuring the `CAMetalLayer` instance’s `developerHUDProperties` dictionary with the following:
 
@@ -93,7 +93,7 @@ Additionally, you can add various effects by setting environment variables that 
 - **`MTL_HUD_REPORT_URL=\<path>`**: Sets an app writable path where the system writes performance reports to. See [Generating performance reports with the Metal Performance HUD](./generating-performance-reports-with-metal-performance-hud.md) for more information.
 - **`MTL_HUD_DISABLE_MENU_BAR=1`**: Disables the Metal Performance HUD menu item.
 
-##### Save and load the Metal Performance HUD configuration
+### Save and load the Metal Performance HUD configuration
 
 You can save your custom Metal Performance HUD configuration by clicking the Export HUD Configuration button in the configuration panel.
 

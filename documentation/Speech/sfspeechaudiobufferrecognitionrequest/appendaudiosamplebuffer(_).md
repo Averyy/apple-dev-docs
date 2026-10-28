@@ -23,7 +23,7 @@ func appendAudioSampleBuffer(_ sampleBuffer: CMSampleBuffer)
 - (void) appendAudioSampleBuffer:(CMSampleBufferRef) sampleBuffer;
 ```
 
-#### Discussion
+## Discussion
 
 The audio must be in a native format.
 

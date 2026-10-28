@@ -19,7 +19,7 @@ func unregister()
 - (void) unregister;
 ```
 
-#### Discussion
+## Discussion
 
 Once this method has completed, the target IOBluetoothUserNotification will no longer be valid.
 

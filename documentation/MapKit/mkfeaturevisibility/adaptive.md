@@ -24,7 +24,7 @@ case adaptive
 MKFeatureVisibilityAdaptive
 ```
 
-#### Discussion
+## Discussion
 
 The framework displays title text and hides subtitle text for features in the normal state. When selected, the framework hides the feature’s title and subtitle text when the feature requires a callout.
 

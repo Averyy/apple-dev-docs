@@ -25,7 +25,7 @@ static let avci: AVFileType
 extern AVFileType const AVFileTypeAVCI;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this UTI is `public.avci`. Files of this type have an `.avci` extension.
 

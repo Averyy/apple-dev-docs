@@ -23,7 +23,7 @@ A customizable annotation that marks a map location.
 struct MapAnnotation<Content> where Content : View
 ```
 
-#### Overview
+## Overview
 
 Use [`MapAnnotation`](./mapannotation.md) to declare the layout of the view that MapKit uses for the annotation. Create a [`Map`](./map.md) and display annotations by returning a view that conforms to [`MapAnnotationProtocol`](./mapannotationprotocol.md) from the trailing closure of [`init(coordinateRegion:interactionModes:showsUserLocation:userTrackingMode:annotationItems:annotationContent:)`](./map/init%28coordinateregion,interactionmodes,showsuserlocation,usertrackingmode,annotationitems,annotationcontent%29.md) or [`init(mapRect:interactionModes:showsUserLocation:userTrackingMode:annotationItems:annotationContent:)`](./map/init%28maprect,interactionmodes,showsuserlocation,usertrackingmode,annotationitems,annotationcontent%29.md). Items you provide as a collection to the source  annotations need to conform to [`Identifiable`](../Swift/identifiable.md).
 

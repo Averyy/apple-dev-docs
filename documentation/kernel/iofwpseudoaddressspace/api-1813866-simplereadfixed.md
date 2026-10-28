@@ -15,7 +15,7 @@ static IOFWPseudoAddressSpace* simpleReadFixed(
  const void *data);
 ```
 
-#### Return Value
+## Return Value
 
 returns valid IOFWPseudoAddressSpace on success, null on failure
 

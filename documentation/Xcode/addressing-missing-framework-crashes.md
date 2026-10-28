@@ -5,11 +5,11 @@
 
 Identify missing frameworks from a crash report, and adjust your app’s build to correctly include the framework.
 
-#### Overview
+## Overview
 
 If you modularize your app’s functionality into frameworks, the app must link the frameworks at build time, and also embed a copy of the frameworks inside the app bundle during the build. If an app links a framework but doesn’t embed it, the app crashes at launch, because the dynamic linker can’t locate the missing framework.
 
-##### Identify the missing framework
+### Identify the missing framework
 
 The dynamic linker, `dyld`, outputs detailed information about the framework it couldn’t locate, in the `Termination Description` of the crash report:
 
@@ -39,7 +39,7 @@ Termination Description: DYLD, Library not loaded: @rpath/MyFramework.framework/
 
 > **Note**: For readability, extra line breaks are in this example. In the original crash report file for these examples, the `dyld` information is on fewer lines.
 
-##### Inspect the framework’s configuration
+### Inspect the framework’s configuration
 
 Ensure the framework is correctly embedded in the app bundle—see [Embedding Frameworks In An App](https://developer.apple.com/library/archive/technotes/tn2435/_index.html#//apple_ref/doc/uid/DTS40017543).
 

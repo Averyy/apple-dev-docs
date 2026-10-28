@@ -19,7 +19,7 @@ var windowFrameAutosaveName: NSWindow.FrameAutosaveName { get set }
 @property (copy) NSWindowFrameAutosaveName windowFrameAutosaveName;
 ```
 
-#### Discussion
+## Discussion
 
 By default, `name` is an empty string, which means that no information is stored in the defaults database.
 

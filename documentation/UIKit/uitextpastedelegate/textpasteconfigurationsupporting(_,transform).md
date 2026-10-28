@@ -22,7 +22,7 @@ optional func textPasteConfigurationSupporting(_ textPasteConfigurationSupportin
 - (void) textPasteConfigurationSupporting:(id<UITextPasteConfigurationSupporting>) textPasteConfigurationSupporting transformPasteItem:(id<UITextPasteItem>) item;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called for each text paste item during a paste or drop operation. You’re required to call one of the `setResult` methods (see Setting a text paste item’s result value) on `item`, but the call doesn’t have to be within the scope of the transform method. It can, for example, be part of the asynchronous handling code for the [`itemProvider`](../uitextpasteitem/itemprovider.md), or it can be part of a completion block. You can make the call whenever you prefer.
 

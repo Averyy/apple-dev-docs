@@ -27,7 +27,7 @@ var openGLContext: NSOpenGLContext? { get set }
 @property (nonatomic, retain, nullable) NSOpenGLContext * openGLContext;
 ```
 
-#### Discussion
+## Discussion
 
 If you use OpenGL for custom rendering (see the [`SCNShadable`](../scnshadable.md), [`SCNNodeRendererDelegate`](../scnnoderendererdelegate.md), and [`SCNSceneRendererDelegate`](../scnscenerendererdelegate.md) protocols), you can use this property to share OpenGL resources between the context used for rendering the scene and other OpenGL contexts your app uses. For details on sharing OpenGL resources, see [Sharing Rendering Context Resources](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/OpenGL-MacProgGuide/opengl_contexts/opengl_contexts.html#//apple_ref/doc/uid/TP40001987-CH216-SW7). (SceneKit automatically shares its own OpenGL resources between multiple [`SCNView`](../scnview.md) instances in your app as needed.)
 

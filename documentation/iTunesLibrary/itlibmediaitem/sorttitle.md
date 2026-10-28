@@ -20,7 +20,7 @@ var sortTitle: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * sortTitle;
 ```
 
-#### Discussion
+## Discussion
 
 If `nil`, iTunes uses [`title`](./title.md) when sorting media items.
 

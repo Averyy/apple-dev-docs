@@ -26,7 +26,7 @@ var share: CKRecord.Reference? { get }
 @property (copy, readonly, nullable) CKReference * share;
 ```
 
-#### Discussion
+## Discussion
 
 CloudKit clears this property’s value when it deletes the corresponding [`CKShare`](../ckshare.md) object on the server. Send this record in the same batch operation as the share object you’re deleting, and this property updates accordingly.
 

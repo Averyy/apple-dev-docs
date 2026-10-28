@@ -25,7 +25,7 @@ let kCVImageBufferTransferFunctionKey: CFString
 extern CFStringRef const kCVImageBufferTransferFunctionKey;
 ```
 
-#### Discussion
+## Discussion
 
 The transfer function value is of type [`CFString`](../CoreFoundation/cfstring.md). See [Image Buffer Transfer Function Constants](./image-buffer-transfer-function-constants.md) for more information.
 

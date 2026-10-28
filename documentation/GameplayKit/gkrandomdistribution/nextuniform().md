@@ -24,11 +24,11 @@ func nextUniform() -> Float
 - (float) nextUniform;
 ```
 
-#### Return Value
+## Return Value
 
 A random floating-point value within the range `[delta, 1.0]`, where `delta` is the ratio of the [`lowestValue`](./lowestvalue.md) and [`highestValue`](./highestvalue.md) properties.
 
-#### Discussion
+## Discussion
 
 When using the [`GKRandomDistribution`](../gkrandomdistribution.md) class directly, generated numbers are uniform within the range of the distribution. For example, in a distribution whose lowest value is `1` and highest is `20` (as produced by the [`d20()`](./d20%28%29.md) class method), `delta` is `1/20 = 0.05`; that is, the distribution returns numbers in 5% increments. Subclasses of [`GKRandomDistribution`](../gkrandomdistribution.md) can alter this quantization, as well as relative probability of generating any particular number within the distribution’s range.
 

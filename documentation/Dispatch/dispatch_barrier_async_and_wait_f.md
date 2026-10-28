@@ -21,7 +21,7 @@ Submits a function-based work item for synchronous execution and marks the work 
 extern void dispatch_barrier_async_and_wait_f(dispatch_queue_t queue, void *context, dispatch_function_t work);
 ```
 
-#### Discussion
+## Discussion
 
 This function submits work to the specified queue for execution. Unlike [`dispatch_async`](./dispatch_async.md), this function does not return until after the `work` function finishes. Calling this function and targeting the current queue results in deadlock.
 

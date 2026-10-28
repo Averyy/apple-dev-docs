@@ -15,7 +15,7 @@ The response object for a Campaign operation.
 object CampaignResponse
 ```
 
-#### Discussion
+## Discussion
 
 Create, get, and update campaign operations return `CampaignResponse` as the single-item response envelope. On success, `result` contains the `Campaign` object reflecting its current or post-operation state. On failure, `result` is absent and `error` contains structured details about what went wrong.
 
@@ -23,7 +23,7 @@ Delete operations (`DELETE /v1/campaigns/{id}` ([`Delete a Campaign`](./delete-c
 
 To handle failures gracefully, check the `error` field before accessing `result`.
 
-##### Example
+### Example
 
 The following example shows the response for a [`Get a Campaign`](./get-campaigns-_id_.md) request.
 

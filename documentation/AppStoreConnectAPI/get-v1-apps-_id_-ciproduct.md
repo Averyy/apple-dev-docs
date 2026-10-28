@@ -9,11 +9,11 @@ Get the Xcode Cloud product information for an app you build with Xcode Cloud.
 **Availability**:
 - App Store Connect API 1.5+
 
-#### Discussion
+## Discussion
 
 The example request below retrieves information about a specific Xcode Cloud product. Use the data provided in the response to read additional information; for example, workflow information.
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

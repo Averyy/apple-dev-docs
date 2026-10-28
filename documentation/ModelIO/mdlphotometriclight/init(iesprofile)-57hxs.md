@@ -24,7 +24,7 @@ init?(iesProfile URL: URL)
 - (instancetype) initWithIESProfile:(NSURL *) URL;
 ```
 
-#### Return Value
+## Return Value
 
 A new light object.
 

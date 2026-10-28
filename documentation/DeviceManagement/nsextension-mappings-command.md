@@ -9,13 +9,13 @@ Get a list of the installed extensions for a user on a device.
 **Availability**:
 - macOS 10.13+
 
-#### Discussion
+## Discussion
 
 This list is a superset of the list that [`ActiveNSExtensionsCommand`](./activensextensionscommand.md) returns. It may contain extensions that the system never enables due to various restrictions.
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command availability
+### Command availability
 
 |  |  |
 | --- | --- |
@@ -25,7 +25,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | N/A |
 | Required access right | QueryInstalledApps |
 
-##### Example request and response
+### Example request and response
 
 **Request**:
 

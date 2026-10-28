@@ -25,11 +25,11 @@ func CFURLEnumeratorCreateForDirectoryURL(_ alloc: CFAllocator!, _ directoryURL:
 extern CFURLEnumeratorRefCFURLEnumeratorCreateForDirectoryURL(CFAllocatorRef alloc, CFURLRef directoryURL, CFURLEnumeratorOptions option, CFArrayRef propertyKeys);
 ```
 
-#### Return Value
+## Return Value
 
 The created directory enumerator.
 
-#### Discussion
+## Discussion
 
 Directory enumerators do not descend into subdirectories of `directoryURL` by default. To create a recursive enumerator, include the [`descendRecursively`](./cfurlenumeratoroptions/descendrecursively.md) option in `options`.
 

@@ -23,7 +23,7 @@ case none
 UITableViewScrollPositionNone
 ```
 
-#### Discussion
+## Discussion
 
 If the row is already fully visible, no scrolling occurs. For example, if the row is above the visible area, the behavior is identical to that specified by [`UITableView.ScrollPosition.top`](./top.md). This is the default.
 

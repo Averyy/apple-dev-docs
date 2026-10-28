@@ -15,11 +15,11 @@ Gets the names of locations with pre-defined coordinate systems available for th
 extern ar_strings_tar_accessory_copy_location_names(ar_accessory_t accessory);
 ```
 
-#### Return Value
+## Return Value
 
 An `ar_strings_t` with the location names.
 
-#### Discussion
+## Discussion
 
 > **Note**: This type supports ARC. In non-ARC files, use `ar_retain()` and `ar_release()` to retain and release the object.
 

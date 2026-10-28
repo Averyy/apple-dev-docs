@@ -15,7 +15,7 @@ Adds a custom property object to the video driver.
 kern_return_t AddCustomProperty(IOUserVideoCustomProperty *in_custom_property);
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` on success
 

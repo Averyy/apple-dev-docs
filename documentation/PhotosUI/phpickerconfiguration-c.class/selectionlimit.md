@@ -19,7 +19,7 @@ The maximum number of selections the user can make.
 @property (nonatomic) NSInteger selectionLimit;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `1`. Setting the value to `0` sets the selection limit to the maximum that the system supports.
 

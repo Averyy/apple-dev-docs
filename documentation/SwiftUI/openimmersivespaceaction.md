@@ -17,7 +17,7 @@ An action that presents an immersive space.
 struct OpenImmersiveSpaceAction
 ```
 
-#### Overview
+## Overview
 
 Use the [`openImmersiveSpace`](./environmentvalues/openimmersivespace.md) environment value to get the instance of this structure for a given [`Environment`](./environment.md). Then call the instance to present a space. You call the instance directly because it defines `callAsFunction()` methods that Swift calls when you call the instance.
 

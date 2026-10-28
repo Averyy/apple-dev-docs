@@ -14,7 +14,7 @@
 kIOFWMustBeRoot = (1 << 5)
 ```
 
-#### Discussion
+## Discussion
 
 Attempt to make this device root, There is no guarentee Mac OS will succeed in making the device root.
 

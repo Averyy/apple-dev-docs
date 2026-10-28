@@ -5,7 +5,7 @@
 
 Perform custom control of the dock accessory.
 
-#### Overview
+## Overview
 
 You can implement your own inference and tracking to directly control the velocity or position of the docking station. To do this, use [`setSystemTrackingEnabled(_:)`](./dockaccessorymanager/setsystemtrackingenabled%28_%29.md) to prevent system from automatically tracking subjects.
 

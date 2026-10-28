@@ -19,11 +19,11 @@ init(draw selector: Selector, delegate: Any)
 - (instancetype) initWithDrawSelector:(SEL) selector delegate:(id) delegate;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized [`NSCustomImageRep`](../nscustomimagerep.md) object, or `nil` if the object could not be initialized.
 
-#### Discussion
+## Discussion
 
 When the receiver is asked to draw the image, it sends the specified message to the selector, passing itself as a parameter to the delegate method. The delegate’s drawing method should have the following form:
 

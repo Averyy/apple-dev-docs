@@ -21,7 +21,7 @@ Indicates information about the lens stabilization applied to the current still 
 static let stillImageLensStabilizationInfo: CVAttachmentKeyDefinition<CMSampleBufferAttachmentKeyDefinitions.ShouldPropagate, CMStillImageLensStabilization>
 ```
 
-#### Discussion
+## Discussion
 
 Sample buffers that have been captured with a lens stabilization module may have this attachment. Which provides information about the stabilization status during the capture. This key will not be present in sample buffers coming from cameras without a lens stabilization module.
 

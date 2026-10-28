@@ -25,11 +25,11 @@ func string(forKey aKey: String) -> String?
 - (NSString *) stringForKey:(NSString *) aKey;
 ```
 
-#### Return Value
+## Return Value
 
 The string associated with `aKey`, or `nil` if the key isn’t present.
 
-#### Discussion
+## Discussion
 
 This method automatically coerces certain types to equivalent strings. For example, it converts the integer `123` to the string “123”. If the key is present, but the method can’t use it to create an appropriate string, this method returns `nil`.
 

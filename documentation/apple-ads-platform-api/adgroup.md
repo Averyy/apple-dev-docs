@@ -15,13 +15,13 @@ Primary unit governing targeting, bid strategy, pricing model, and scheduling wi
 object AdGroup
 ```
 
-#### Discussion
+## Discussion
 
 An `AdGroup` is the primary unit for governing ad delivery within a campaign. Multiple ad groups within a campaign allow different targeting strategies, bids, and schedules to compete and optimize within the same promoted app or brand.
 
 Fields you can filter and sort on when querying ad groups are listed in [`Query Ad Groups`](./post-adgroups-query.md).
 
-##### Example
+### Example
 
 ```json
 {

@@ -20,7 +20,7 @@ func ODQueryCreateWithNode(_ allocator: CFAllocator!, _ node: ODNodeRef!, _ reco
 extern ODQueryRefODQueryCreateWithNode(CFAllocatorRef allocator, ODNodeRef node, CFTypeRef recordTypeOrList, ODAttributeType attribute, ODMatchType matchType, CFTypeRef queryValueOrList, CFTypeRef returnAttributeOrList, CFIndex maxResults, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 The created query.
 

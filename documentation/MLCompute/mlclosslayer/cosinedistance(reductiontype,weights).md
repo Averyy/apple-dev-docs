@@ -23,7 +23,7 @@ class func cosineDistance(reductionType: MLCReductionType, weights: MLCTensor?) 
 + (instancetype) cosineDistanceLossWithReductionType:(MLCReductionType) reductionType weights:(MLCTensor *) weights;
 ```
 
-#### Return Value
+## Return Value
 
 A cosine distance loss layer.
 

@@ -24,7 +24,7 @@ var symbolDescriptor: CIQRCodeDescriptor? { get }
 @property (readonly, nullable) CIQRCodeDescriptor * symbolDescriptor;
 ```
 
-#### Discussion
+## Discussion
 
 The property is a [`CIQRCodeDescriptor`](../ciqrcodedescriptor.md) instance that contains the payload, symbol version, mask pattern, and error correction level, so the QR Code can be reproduced.
 

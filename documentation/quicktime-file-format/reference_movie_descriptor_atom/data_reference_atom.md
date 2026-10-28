@@ -6,7 +6,7 @@
 
 Each reference movie atom must contain exactly one data reference atom.
 
-#### Overview
+## Overview
 
 See [`Data reference atom`](../reference_movie_data_reference_atom.md) for more information.
 

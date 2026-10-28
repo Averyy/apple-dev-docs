@@ -14,7 +14,7 @@ struct ctl_event_data {
 };
 ```
 
-#### Discussion
+## Discussion
 
 This structure is used for KEV_CTL_SUBCLASS kernel events.
 

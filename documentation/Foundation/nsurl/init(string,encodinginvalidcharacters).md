@@ -25,7 +25,7 @@ convenience init?(string URLString: String, encodingInvalidCharacters: Bool)
 - (instancetype) initWithString:(NSString *) URLString encodingInvalidCharacters:(BOOL) encodingInvalidCharacters;
 ```
 
-#### Discussion
+## Discussion
 
 If `encodingInvalidCharacters` is `true`, this initializer tries to encode the string to create a valid URL. If the URL string is still invalid after encoding, the initializer returns `nil`.
 

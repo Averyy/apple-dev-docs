@@ -37,7 +37,7 @@ var percentComplete: Double { get set }
 
 - [Rewarding players with achievements](../rewarding-players-with-achievements.md)
 
-#### Discussion
+## Discussion
 
 The default value for a newly initialized achievement object is `0`. The range of legal values is between `0` and `100`, inclusive. You decide how to calculate the percentage and when to change it. This value must be an integer and can’t contain a decimal.
 

@@ -23,7 +23,7 @@ final var supportedLanguages: Set<Locale.Language> { get }
 
 - [Supporting languages and locales with Foundation Models](../supporting-languages-and-locales-with-foundation-models.md)
 
-#### Discussion
+## Discussion
 
 To check if a given locale is considered supported by the model, use [`supportsLocale(_:)`](./supportslocale%28_%29.md), which also takes language fallbacks into consideration.
 

@@ -25,7 +25,7 @@ let kCVImageBufferColorPrimariesKey: CFString
 extern CFStringRef const kCVImageBufferColorPrimariesKey;
 ```
 
-#### Discussion
+## Discussion
 
 The color primaries gamut value is of type [`CFString`](../CoreFoundation/cfstring.md). See [Image Buffer Color Primaries Constants](./image-buffer-color-primaries-constants.md) for more information.
 

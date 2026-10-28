@@ -16,7 +16,7 @@ The maximum dimension of the reconstructed texture maps.
 var maximumTextureDimension: PhotogrammetrySession.Configuration.CustomDetailSpecification.TextureDimension
 ```
 
-#### Discussion
+## Discussion
 
 The reconstructed texture map will have width and height dimensions both less than or equal to the provided `maxTextureDimension`. This property is useful for fitting within the texture memory resources of the rendering system.
 

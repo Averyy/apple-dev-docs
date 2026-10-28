@@ -19,7 +19,7 @@ func ABAddPropertiesAndTypes(_ addressBook: ABAddressBookRef!, _ recordType: CFS
 extern CFIndex ABAddPropertiesAndTypes(ABAddressBookRef addressBook, CFStringRef recordType, CFDictionaryRef propertiesAndTypes);
 ```
 
-#### Return Value
+## Return Value
 
 The number of properties successfully added.
 

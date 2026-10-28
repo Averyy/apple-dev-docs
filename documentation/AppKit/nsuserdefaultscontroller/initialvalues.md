@@ -19,7 +19,7 @@ var initialValues: [String : Any]? { get set }
 @property (copy, nullable) NSDictionary<NSString *,id> * initialValues;
 ```
 
-#### Discussion
+## Discussion
 
 These values are used when is no value found for the bound property in [`defaults`](./defaults.md).
 

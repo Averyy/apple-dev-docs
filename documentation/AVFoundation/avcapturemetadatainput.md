@@ -22,7 +22,7 @@ class AVCaptureMetadataInput
 @interface AVCaptureMetadataInput : AVCaptureInput
 ```
 
-#### Overview
+## Overview
 
 This class provides input to an [`AVCaptureSession`](./avcapturesession.md). An instance of [`AVCaptureMetadataInput`](./avcapturemetadatainput.md) can present one and only one [`AVCaptureInput.Port`](./avcaptureinput/port.md) connected to an [`AVCaptureMovieFileOutput`](./avcapturemoviefileoutput.md). Provide metadata through the input port by conforming to a [`CMFormatDescription`](../CoreMedia/cmformatdescription.md) and supplying [`AVMetadataItem`](./avmetadataitem.md) objects in an [`AVTimedMetadataGroup`](./avtimedmetadatagroup.md).
 

@@ -25,7 +25,7 @@ func interfaceGroup(for protocol: TKSmartCardProtocol) -> TKSmartCardATR.Interfa
 - (TKSmartCardATRInterfaceGroup *) interfaceGroupForProtocol:(TKSmartCardProtocol) protocol;
 ```
 
-#### Return Value
+## Return Value
 
 The interface group with the specified protocol, or `nil` if none exists.
 

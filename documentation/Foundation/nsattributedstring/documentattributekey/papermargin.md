@@ -29,7 +29,7 @@ static let paperMargin: NSAttributedString.DocumentAttributeKey
 static let paperMarginDocumentAttribute: NSAttributedString.DocumentAttributeKey
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSValue`](../../nsvalue.md) object containing [`UIEdgeInsets`](../../../UIKit/uiedgeinsets.md).
 

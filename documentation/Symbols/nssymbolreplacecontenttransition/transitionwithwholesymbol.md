@@ -21,7 +21,7 @@ An effect that replaces all layers simultaneously.
 - (instancetype) transitionWithWholeSymbol;
 ```
 
-#### Return Value
+## Return Value
 
 A copy of the transition that replaces all layers simultaneously.
 

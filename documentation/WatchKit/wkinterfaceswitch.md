@@ -19,7 +19,7 @@ class WKInterfaceSwitch
 @interface WKInterfaceSwitch : WKInterfaceObject
 ```
 
-#### Overview
+## Overview
 
 Switches are commonly used to indicate whether a feature is enabled or disabled. You set the initial value of the switch in your storyboard file, but you can modify that value at runtime using the methods of this class.
 
@@ -55,7 +55,7 @@ When the user changes the value of a switch, WatchKit delivers the new value to 
 
 Declare a method of this form in the interface controller class used to manage the switch. You can change the method name to anything you like. When configuring the switch in Xcode, connect its selector to your custom action method.
 
-##### Interface Builder Configuration Options
+### Interface Builder Configuration Options
 
 Xcode lets you configure information about switches in your storyboard file. The following table lists the attributes you can configure and their meaning.
 

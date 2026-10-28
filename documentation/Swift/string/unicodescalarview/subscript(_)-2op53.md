@@ -21,7 +21,7 @@ Accesses the Unicode scalar value at the given position.
 subscript(position: String.UnicodeScalarView.Index) -> Unicode.Scalar { get }
 ```
 
-#### Overview
+## Overview
 
 The following example searches a string’s Unicode scalars view for a capital letter and then prints the character and Unicode scalar value at the found index:
 

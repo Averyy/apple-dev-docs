@@ -19,7 +19,7 @@ func SCNetworkSetCopyAll(_ prefs: SCPreferences) -> CFArray?
 CFArrayRefSCNetworkSetCopyAll(SCPreferencesRef prefs);
 ```
 
-#### Return Value
+## Return Value
 
 The list of network sets associated with the preferences. You must release the returned value.
 

@@ -19,7 +19,7 @@ var attachment: VZNetworkDeviceAttachment? { get set }
 @property (strong, readwrite, nullable) VZNetworkDeviceAttachment * attachment;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `nil`. Assign an appropriate value to specify the type of network interface you want to make available to the guest operating system. For example, assign a [`VZBridgedNetworkDeviceAttachment`](../vzbridgednetworkdeviceattachment.md) object to grant access to one of the host computer’s physical network interfaces.
 

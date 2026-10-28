@@ -25,7 +25,7 @@ func CFRunLoopObserverGetOrder(_ observer: CFRunLoopObserver!) -> CFIndex
 extern CFIndex CFRunLoopObserverGetOrder(CFRunLoopObserverRef observer);
 ```
 
-#### Return Value
+## Return Value
 
 The ordering parameter for `observer`. When multiple observers are scheduled in the same run loop mode and stage, this value determines the order (from small to large) in which the observers are called.
 

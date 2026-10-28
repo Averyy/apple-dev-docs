@@ -25,7 +25,7 @@ var state: UnsafeMutableRawPointer?
 void * state;
 ```
 
-#### Discussion
+## Discussion
 
 You should not directly access this field.
 

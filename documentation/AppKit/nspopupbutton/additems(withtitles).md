@@ -19,7 +19,7 @@ func addItems(withTitles itemTitles: [String])
 - (void) addItemsWithTitles:(NSArray<NSString *> *) itemTitles;
 ```
 
-#### Discussion
+## Discussion
 
 If you want to move an item, it’s better to invoke [`removeItem(withTitle:)`](./removeitem%28withtitle%29.md) explicitly and then send this method. After adding the items, this method uses the [`synchronizeTitleAndSelectedItem()`](./synchronizetitleandselecteditem%28%29.md) method to make sure the item being displayed matches the currently selected item.
 

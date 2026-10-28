@@ -18,7 +18,7 @@ Updates the byte offset of this slice.
 mutating func setOffset(_ offset: Int) throws(LowLevelRenderContextError)
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: [`LowLevelRenderContextError`](../lowlevelrendercontexterror.md) if the new offset falls outside the buffer’s allocated capacity.
 

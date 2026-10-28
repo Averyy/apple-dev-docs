@@ -21,7 +21,7 @@ Creates a new instance from an interpolated string literal.
 init(stringInterpolation: DefaultStringInterpolation)
 ```
 
-#### Discussion
+## Discussion
 
 You don’t need to call this initializer directly. It’s used by the compiler when you create a string using string interpolation. Instead, use string interpolation to create a new string by including values, literals, variables, or expressions enclosed in parentheses, prefixed by a backslash (`\(`…`)`).
 

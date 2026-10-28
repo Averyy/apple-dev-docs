@@ -15,7 +15,7 @@ Version 1 of the cipher suite protocol.
 case version1
 ```
 
-#### Discussion
+## Discussion
 
 Use this value when creating [`SecurityMessage`](../../../securitymessage.md) instances. When deriving HPKE keys on your accessory, format the protocol information as: `{cipherSuite}-version1-{identifier}`.
 

@@ -23,7 +23,7 @@ A URL that links to more information about the bug, if available.
 var url: String?
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property represents a URL conforming to [RFC 3986](https://www.ietf.org/rfc/rfc3986.txt).
 

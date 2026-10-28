@@ -24,7 +24,7 @@ class AVAudioUnitReverb
 @interface AVAudioUnitReverb : AVAudioUnitEffect
 ```
 
-#### Overview
+## Overview
 
 A reverb simulates the acoustic characteristics of a particular environment. Use the different presets to simulate a particular space and blend it in with the original signal using the [`wetDryMix`](./avaudiounitreverb/wetdrymix.md) property.
 

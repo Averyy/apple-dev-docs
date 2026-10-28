@@ -19,11 +19,11 @@ class func addOfItem(at url: URL, withContentsOf contentsURL: URL, options: NSFi
 + (NSFileVersion *) addVersionOfItemAtURL:(NSURL *) url withContentsOfURL:(NSURL *) contentsURL options:(NSFileVersionAddingOptions) options error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 The file version object representing the new version or `nil` if an error occurred.
 
-#### Discussion
+## Discussion
 
 You can use this method to save a version of your file to the location specified by the `url` parameter. The contents of the file are taken from the `contentsURL` parameter, whose value may be the same as the `url` parameter.
 

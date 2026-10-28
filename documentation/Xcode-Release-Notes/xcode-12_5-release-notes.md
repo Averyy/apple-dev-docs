@@ -5,44 +5,44 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 ---
 
-#### Overview
+## Overview
 
 Xcode 12.5 includes SDKs for iOS 14.5, iPadOS 14.5, tvOS 14.5, watchOS 7.4, and macOS Big Sur 11.3. The Xcode 12.5 release supports on-device debugging for iOS 9 and later, tvOS 9 and later, and watchOS 2 and later. Xcode 12.5 requires a Mac running macOS Big Sur 11 or later.
 
-##### General
+### General
 
-###### New Features
+#### New Features
 
 - You can create macOS File Provider extensions using the new File Provider Extension target template. (54054417)
 - The Reveal Build Products Folder item in the Product menu opens Finder and selects the folder where Xcode builds the product. (72248847)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue that could cause code completion, live issues, and other code-analysis features to produce incorrect results after you moved any of the source files of an open Xcode project. (57054858)
 - Large workspaces now open faster. (70276306)
 - Fixed an issue that could cause iOS 12.5, tvOS 14.5, watchOS 7.4, and earlier to set the minimum deployment target based on the app’s [`LSMinimumSystemVersion`](../BundleResources/information-property-list/lsminimumsystemversion.md) instead of its [`MinimumOSVersion`](../BundleResources/information-property-list/minimumosversion.md). (76221112)
 
-###### Deprecations
+#### Deprecations
 
 - Don’t use the iOS `MinimumOSVersion` information property list key to declare the minimum release of macOS in which your app runs. Use `LSMinimumSystemVersion` instead. (73890473)
 
   - Future releases of macOS ignore the `MinimumOSVersion` key in Mac apps, including apps built with Mac Catalyst.
   - Future releases of macOS use the `LSMinimumSystemVersion` key in iOS apps built with Xcode 12.5 or later. If an iOS app doesn’t include an `LSMinimumSystemVersion` key, future releases of macOS compare the app’s `MinimumOSVersion` with the version of its Mac Catalyst runtime to determine compatibility.
 
-##### Apple Clang Compiler
+### Apple Clang Compiler
 
-###### New Features
+#### New Features
 
 - libc++ no longer honors the `_LIBCPP_RAW_ITERATORS` macro. Use wrapped iterators instead. (63088925)
 - Clang now infers the availability of `+new` from availability annotations on `-init` methods. Since `+new` calls `[[Foo alloc] init]`, `+new` isn’t available unless `+init` is available. (75884815)
 
-##### Build System
+### Build System
 
-###### New Features
+#### New Features
 
 - The build system no longer re-signs the hosting app target when building app-hosted test targets; instead it builds test targets before the app target’s sign task runs. This eliminates an extra `codesign` task, which speeds up builds for large apps with such test targets. (47322098)
 - `xcodebuild` now supports the `-archive` flag when creating an XCFramework, providing a shorthand method for creating an XCFramework from one or more archives. (64725832)
@@ -53,7 +53,7 @@ Xcode 12.5 includes SDKs for iOS 14.5, iPadOS 14.5, tvOS 14.5, watchOS 7.4, and 
   xcodebuild -archive <archive_path1> -framework MyFramework.framework -archive <archive_path2> -framework MyFramework.framework -o <output_xcframework_path>
   ```
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Copy Files Build Phase now properly signs code for embedded frameworks with a framework version that isn’t “A”. (55701162) (FB7323980)
 - You can now manually reorder schemes. (61456142)
@@ -62,9 +62,9 @@ Xcode 12.5 includes SDKs for iOS 14.5, iPadOS 14.5, tvOS 14.5, watchOS 7.4, and 
 - Fixed a dependency cycle involving hosted test targets when Parallelize Build is disabled. Xcode no longer creates a cycle when the test target depends on another target in addition to the hosting target. (73210420)
 - The build system no longer emits a “duplicate tasks” error when both an app and a test target link with the same XCFramework. (74362639) (FB9005738)
 
-##### Code Completion
+### Code Completion
 
-###### New Features
+#### New Features
 
 - Code completion is more reliable in expressions that contain errors, and in expressions that are ambiguous without additional context. (71378252)
 
@@ -84,32 +84,32 @@ Xcode 12.5 includes SDKs for iOS 14.5, iPadOS 14.5, tvOS 14.5, watchOS 7.4, and 
   }
   ```
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Code completion now returns suggestions more quickly inside large function bodies. (58687608)
 
-##### Debugging
+### Debugging
 
-###### New Features
+#### New Features
 
 - When debugging C++ programs using libc++, LLDB now offers improved expression evaluation support for STL containers and algorithms. (19866497)
 
   - You can call member functions of STL containers, even if they are never called in the target program.
   - LLDB can instantiate templated functions from the standard library. This includes algorithms such as `std::sort`, `std::count`, `std::count_if`, and so on.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - When debugging Swift code, Xcode’s variable view and the `v` (`frame variable`) command now display variables with resilient types including Foundation value types such as `URL`, `URLComponents`, `Notification`, `IndexPath`, `Decimal`, `Data`, `Date`, `Global`, `Measurement`, and `UUID`. (72101693)
 
-###### Known Issues
+#### Known Issues
 
 - Xcode fails to launch apps when Nightstand Mode is enabled on Apple Watch. (61351690)
 
   **Workaround**: Disable Nightstand Mode on Apple Watch; Go to Settings > General > Nightstand Mode.
 
-##### Instruments
+### Instruments
 
-###### New Features
+#### New Features
 
 - `<(start|end)-pattern>` elements in os-signpost-interval schema are now optional. This allows Custom Instruments to match signposts by name and other properties without needing to specify the expected message format. (43850670)
 - Profiling XCTest with Instruments now automatically starts the recording, without a click on the record button. (50260328)
@@ -118,24 +118,24 @@ Xcode 12.5 includes SDKs for iOS 14.5, iPadOS 14.5, tvOS 14.5, watchOS 7.4, and 
 - `xctrace export` now produces output in time-sorted order. (69804348)
 - Table of Contents query for `xctrace` now exposes metadata information about the run. (71320853)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where `xctrace` wouldn’t pass a standard input to the launched process. (17842765)
 - Launching an extension via Product > Profile in Xcode no longer causes Instruments to wait indefinitely for the process to start. (62275419) (FB7674284)
 - Fixed a crash that sometimes occurred when you started recording after transferring a Metal app from Xcode to Instruments. (70655385) (FB8824932)
 - Fixed an issue where plot elements wouldn’t draw using the color column specified in a point schema. (71680467) (FB8913696)
 
-###### Known Issues
+#### Known Issues
 
 - In macOS 11.2 or earlier, `leaks` and other command line analysis tools fail or crash when run against processes built with Mac Catalyst and processes running in iOS 14.5 or later on simulated devices. (74690398)
 
-##### Interface Builder
+### Interface Builder
 
-###### New Features
+#### New Features
 
 - You can now configure a Module for custom classes in the inspector for [`NSObjectController`](../AppKit/nsobjectcontroller.md) and similar objects. (35971498)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - [`NSButton`](../AppKit/nsbutton.md)’s  “Image Only” Position setting now properly displays an image without a title at runtime. (16200971)
 - Fixed an issue where the assistant editor wouldn’t display source code for a selected object’s custom Swift class if the class was annotated with `@objc`. (19623315)
@@ -150,15 +150,15 @@ Xcode 12.5 includes SDKs for iOS 14.5, iPadOS 14.5, tvOS 14.5, watchOS 7.4, and 
 - Fixed an issue where certain connect-to-source popover labels didn’t show up in Dark Mode. (69713404)
 - Fixed an issue where the custom colors swatch in an inspector’s color properties displayed an incorrectly offset focus indicator. (72370447)
 
-##### Localization
+### Localization
 
-###### New Features
+#### New Features
 
 - You can now use Xcode to localize applications into all ISO 639 languages. (46806165) (FB5359472)
 - You can now use workspaces to export a collection of projects for localization, generating a single localization catalog for all projects in the workspace. As part of this change, options to import and export for localization are now in the Product menu instead of  the Editor menu. You can also use `xcodebuild -importLocalizations` and `xcodebuild -exportLocalizations` with the `-workspace` option to export or import a workspace. (48548375)
 - The new Localization Export Supported build setting lets you disable localization export for a specific target or project that doesn’t require localization. (66606145)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where the Application Language menu in the scheme editor doesn’t show all languages for which a project is localized. (28872507)
 - `*-InfoPlist.strings` files are now renamed to `InfoPlist.strings` at build-time for bundles that require `Info.plist` localization. This is consistent with existing behavior that renames `Info.plist` files at build-time. (38686398)
@@ -168,31 +168,31 @@ Xcode 12.5 includes SDKs for iOS 14.5, iPadOS 14.5, tvOS 14.5, watchOS 7.4, and 
 - Localizable keys in `Info.plist` files are now only automatically extracted on localization export for Application and App Extension targets. (66871236)
 - Fixed an issue where strings were replaced with their keys at localization export if the `.strings` file was outside the directory hierarchy of the Xcode project. (69835864) (FB8761502)
 
-##### Playgrounds
+### Playgrounds
 
-###### New Features
+#### New Features
 
 - A Playground in an app’s project can now access symbols from the app target. New playgrounds you create have this option on by default. To enable this functionality in existing playground documents, turn on the Import App Types option in the File Inspector. (66357893)
 - Inline results for deeply nested Swift arrays and structs now display more information in Xcode Playgrounds. (67344623)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue that could cause Xcode to show “No editor” when opening a Playground. (56484197)
 
-##### Previews
+### Previews
 
-###### Resolved Issues
+#### Resolved Issues
 
 - The [`preferredColorScheme(_:)`](../SwiftUI/view/preferredcolorscheme%28_%29.md) modifier now applies the theme to the nearest enclosing presentation, and its contained views. (62745457)
 
-##### Signing and Distribution
+### Signing and Distribution
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Resolved an issue that prevented exporting distribution certificates from Xcode due to a keyboard focus issue in the authentication window. (71011727) (FB8880845)
 - Fixed an issue that caused OS X 10.11 and earlier to reject packages signed in macOS 11 or later. (71695608, 75599040)
 
-###### Known Issues
+#### Known Issues
 
 - Xcode doesn’t build projects with a signing certificate on a smart card, or that is accessed via a [CryptoTokenKit](../CryptoTokenKit/CryptoTokenKit.md) extension. (58266781) (FB7516556)
 
@@ -212,25 +212,25 @@ Xcode 12.5 includes SDKs for iOS 14.5, iPadOS 14.5, tvOS 14.5, watchOS 7.4, and 
 
   If operating your app requires you to embed the binary, you can update its signature by following the instructions documented at [Using the latest code signature format](../Xcode/using-the-latest-code-signature-format.md).
 
-##### Simulator
+### Simulator
 
-###### New Features
+#### New Features
 
 - Simulator now supports recording video from within the app. Hold Option when clicking on the screenshot button in the toolbar (or press Command-R) to record a video. Click the red button to stop video recording. (63041314)
 - Simulator can create animated GIFs from video recordings using the new Record Video feature. After recording a video, right-click on the video preview, then select Save as Animated GIF. To keep both the video file and the animated GIF, press and hold Option and select Save Copy as Animated GIF. You can adjust the dimensions and size of the generated GIFs in Simulator Preferences. (65089299)
 
-###### Known Issues
+#### Known Issues
 
 - Siri isn’t available in simulated tvOS devices. (74261184, 75115292)
 - Simulator may not respect the I/O > Keyboard > Use the Same Keyboard Language as macOS setting. (74897431)
 
-##### Source Control
+### Source Control
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where some workspaces could fail to notice project file changes from source control operations until you quit and relaunched Xcode. (3920347)
 
-###### Known Issues
+#### Known Issues
 
 - If you rename the default branch in your remote repository and don’t update `HEAD` to point to the renamed branch, source code operations may fail and Xcode may return an error -100. (76070146)
 
@@ -240,16 +240,16 @@ Xcode 12.5 includes SDKs for iOS 14.5, iPadOS 14.5, tvOS 14.5, watchOS 7.4, and 
   git symbolic-ref refs/remotes/origin/HEAD refs/remotes/origin/<your_default_branch_name>
   ```
 
-##### StoreKit
+### StoreKit
 
-###### New Features
+#### New Features
 
 - StoreKit Testing in Xcode now supports testing of non-renewing subscriptions. (59478394)
 - The [StoreKit Test](../StoreKitTest/StoreKitTest.md) framework is now available on watchOS. (68152552)
 
-##### Swift
+### Swift
 
-###### New Features
+#### New Features
 
 - Incremental compilation is faster in many cases. When you change code within the body of a struct, class, enum, protocol, or extension, Swift now recompiles far fewer files in that module than before. (51230617)
 - Implicit member expressions now support chains of member accesses. (57295228)
@@ -403,7 +403,7 @@ Xcode 12.5 includes SDKs for iOS 14.5, iPadOS 14.5, tvOS 14.5, watchOS 7.4, and 
   - Move the `typealias` from the extension to the type itself.
   - Relax the `where` clause on the extension.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Function overloading now works in local contexts, making the following valid:
 
@@ -428,7 +428,7 @@ Xcode 12.5 includes SDKs for iOS 14.5, iPadOS 14.5, tvOS 14.5, watchOS 7.4, and 
 - If your app (including loaded OS binaries) contains multiple redundant protocol conformances, Swift now uses the first one it finds in the first binary loaded (including in OS binaries). (72049977)
 - Fixed a crash that occurred when setting a value using a [`ReferenceWritableKeyPath`](../Swift/referencewritablekeypath.md) that was upcast to a [`WritableKeyPath`](../Swift/writablekeypath.md). (74191390) (FB8999603)
 
-###### Known Issues
+#### Known Issues
 
 - iOS Playgrounds may crash on initial execution. (70826934)
 
@@ -459,21 +459,21 @@ Xcode 12.5 includes SDKs for iOS 14.5, iPadOS 14.5, tvOS 14.5, watchOS 7.4, and 
   }
   ```
 
-###### Deprecations
+#### Deprecations
 
 - The Swift compiler emits a warning for the use of the `await` keyword as an unqualified identifier. Wrap `await` with back-ticks so Swift always treats it as an identifier, or fully qualify declarations named await. For example, add `self` anytime you reference an instance member named `await` from within the instance. ([SE-0296](https://github.com/apple/swift-evolution/blob/main/proposals/0296-async-await.md), 67000350)
 
-##### Swift Packages
+### Swift Packages
 
-###### New Features
+#### New Features
 
 - Swift packages that specify a 5.4 tools version can now explicitly declare targets as executable, which allows the use of the `@main` keyword in package code. ([SE-0294](https://forums.swift.org/t/se-0294-declaring-executable-targets-in-package-manifests/42404), 47691185)
 - The Swift Package Manager now builds package products and targets as dynamic frameworks automatically, if doing so avoids duplication of library code at runtime. (59931771) (FB7608638)
 - Swift Package Manager caches package dependencies on a per-user basis, which reduces the amount of network traffic and increases performance of dependency resolution for subsequent uses of the same package. If needed, you can disable cache use in `xcodebuild` by using the new `-disablePackageRepositoryCache` flag. (72204929)
 
-##### Testing
+### Testing
 
-###### New Features
+#### New Features
 
 - XCTest now supports marking test failures as “expected.” Expected test failures don’t impact the overall pass/fail result of the suite containing the test. Xcode displays expected failures differently in the Test Navigator and Test Report, and highlights the line of code where the expected failure occurred along with an optional user description. Expected test failures provide a low-overhead tool for preserving the overall “green” state of a project’s test suite when there are failures which can’t be immediately resolved, ensuring that any new failures are clearly visible. In contrast to skipping a test with [`XCTSkip`](../XCTest/xctskip-swift.struct.md), a test with an expected failure still runs, reporting any unexpected changes. (13408632)
 
@@ -510,7 +510,7 @@ Xcode 12.5 includes SDKs for iOS 14.5, iPadOS 14.5, tvOS 14.5, watchOS 7.4, and 
 - XCTest now includes [`XCTAssertIdentical(_:_:_:file:line:)`](../XCTest/xctassertidentical%28_,_,_,file,line%29.md) and [`XCTAssertNotIdentical(_:_:_:file:line:)`](../XCTest/xctassertnotidentical%28_,_,_,file,line%29.md) APIs to assert whether two object instances are identical (the same instance) and are stricter than [`XCTAssertEqual`](../XCTest/xctassertequal.md) by using the `===` operator instead of `==` in Swift. (46137782)
 - The code coverage report now shows the number of executable lines per file. (68808019)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - The `message` String parameter of `XCTSkip.init(_:file:line:)` no longer includes `@autoclosure` incorrectly. Unlike its conditional variants [`XCTSkipIf`](../XCTest/xctskipif.md) and [`XCTSkipUnless`](../XCTest/xctskipunless.md), XCTSkip’s initializer unconditionally evaluates its message string. (63827685)
 - If a test times out (due to having Test Timeouts enabled in the active Test Plan), any content that the test emitted to standard out or standard error prior to the timeout is now included in the test log. (64591225)
@@ -519,7 +519,7 @@ Xcode 12.5 includes SDKs for iOS 14.5, iPadOS 14.5, tvOS 14.5, watchOS 7.4, and 
 - Fixed an issue where methods on [`XCTOSSignpostMetric`](../XCTest/xctossignpostmetric.md) threw an exception on watchOS. (72552791)
 - Xcode no longer incorrectly reports a name that starts with “<unknown>” for tests that the test code dynamically generates at runtime. (73767460)
 
-###### Known Issues
+#### Known Issues
 
 - When running on a Mac with Apple silicon, Xcode doesn’t provide code coverage information for code in Swift packages. (71769076) (FB8919898)
 - If you run lengthy uninterrupted CPU-bound computation in a test on Apple Watch devices, watchOS may terminate the test runner. (74301580)
@@ -529,7 +529,7 @@ Xcode 12.5 includes SDKs for iOS 14.5, iPadOS 14.5, tvOS 14.5, watchOS 7.4, and 
 
   **Workaround**: Download the integration’s build logs and open the enclosed result bundle.
 
-###### Deprecations
+#### Deprecations
 
 - Xcode no longer includes XCTest’s legacy Swift overlay library (`libswiftXCTest.dylib`). Use the library’s replacement, `libXCTestSwiftSupport.dylib`, instead. For frameworks that encounter build issues because of the removal of the legacy library, delete the framework and library search paths for `libswiftXCTest.dylib` and add the `ENABLE_TESTING_SEARCH_PATHS=YES` build setting. This setting automatically sets the target’s search paths so that it can locate the replacement XCTest library. (70365050)
 

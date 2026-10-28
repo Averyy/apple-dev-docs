@@ -15,7 +15,7 @@ The value corresponding to this key is the type of the parameter.
 extern CFStringRef const kVTRAWProcessingParameter_ValueType;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key must be one of the following:
 

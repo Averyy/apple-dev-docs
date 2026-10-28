@@ -21,11 +21,11 @@ class func wellKnownTypeURIPayload(string uri: String) -> Self?
 + (instancetype) wellKnownTypeURIPayloadWithString:(NSString *) uri;
 ```
 
-#### Return Value
+## Return Value
 
 An NDEF payload record.
 
-#### Discussion
+## Discussion
 
 Use this method to create NDEF URI payload records that you can’t create using a URL object, such as a URI containing special characters not represented by 7-bit ASCII encoding such as ä and ö.
 

@@ -5,7 +5,7 @@
 
 Beta license agreements for apps.
 
-#### Overview
+## Overview
 
 A `betaLicenseAgreements` resource contains the license agreement text for users who test the app through TestFlight. Each app has a single beta license agreement. You can edit the agreement text.
 

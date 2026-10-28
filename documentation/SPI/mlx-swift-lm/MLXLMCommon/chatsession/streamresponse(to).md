@@ -17,11 +17,11 @@ Produces a streaming response after appending a batch of structured chat message
 func streamResponse(to messages: consuming [Chat.Message]) -> AsyncThrowingStream<String, Error>
 ```
 
-#### Return Value
+## Return Value
 
 A stream of string chunks from the model
 
-#### Discussion
+## Discussion
 
 Use this to continue an existing session with non-user roles, such as one or more tool results, while preserving the session’s KV cache.
 

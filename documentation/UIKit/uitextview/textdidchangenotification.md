@@ -24,7 +24,7 @@ class let textDidChangeNotification: NSNotification.Name
 extern NSNotificationName const UITextViewTextDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The affected view is stored in the `object` parameter of the notification. The `userInfo` dictionary is not used.
 

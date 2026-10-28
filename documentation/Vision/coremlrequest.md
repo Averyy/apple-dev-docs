@@ -21,7 +21,7 @@ An image-analysis request that uses a Core ML model to process images.
 struct CoreMLRequest
 ```
 
-#### Overview
+## Overview
 
 The results array of a [Core ML](../CoreML/CoreML.md)-based image-analysis request contain a different observation type, depending on the kind of `MLModel` object you use:
 

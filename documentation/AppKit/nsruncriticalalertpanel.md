@@ -17,7 +17,7 @@ Creates and runs a critical alert panel.
 extern NSInteger NSRunCriticalAlertPanel(NSString *title, NSString *msgFormat, NSString *defaultButton, NSString *alternateButton, NSString *otherButton, ...);
 ```
 
-#### Discussion
+## Discussion
 
 Creates a critical alert panel that warns the user of some critical consequence of a requested action; the panel lets the user cancel the action and may allow the user to modify the action. It then runs the panel in a modal event loop.
 

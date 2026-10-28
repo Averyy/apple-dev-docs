@@ -16,7 +16,7 @@ Invalidates the current SwiftUI views and triggers an update during the next cyc
 @preconcurrency func setNeedsBodyUpdate()
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to mark the views of the hosting controller as needing an update. During the next update cycle, the hosting controller fetches an updated set of views from its [`body`](./body.md) property.
 

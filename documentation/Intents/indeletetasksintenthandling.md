@@ -25,7 +25,7 @@ protocol INDeleteTasksIntentHandling : NSObjectProtocol
 @protocol INDeleteTasksIntentHandling <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Use the methods of the [`INDeleteTasksIntentHandling`](./indeletetasksintenthandling.md) protocol to resolve, confirm, and handle requests to delete tasks from a task list. Adopt this protocol in an object of your Intents extension capable of handling the request directly or forwarding the request to your app or task management service.
 

@@ -5,7 +5,7 @@
 
 Transmit your broadcast notification payload to Apple Push Notifications service (APNs).
 
-#### Overview
+## Overview
 
 Starting with iOS 18 and iPadOS 18, devices can subscribe on channels to receive updates for Live Activities. You can send a single push notification to APNs on the channel to update a Live Activity event to a large audience. When you have a notification to send on a channel, your provider must construct a `POST` request and send it to APNs. Upon receiving your server’s `POST` request, APNs validates the request using either the provided authentication token or your server’s certificate. If authentication succeeds, APNs then validates the channel ID you’re using to send the push notification. After channel validation, APNs tries to send your `JSON` payload to all the devices subscribed to the channel. For information on sending test notifications without setting up the environment, refer to [Testing notifications using the Push Notification Console](./testing-notifications-using-the-push-notification-console.md).
 
@@ -13,7 +13,7 @@ As a best-effort service, APNs may reorder notifications you send on the same ch
 
 > 💡 **Tip**:  Refer to [Viewing the status of push notifications using Metrics and APNs](./viewing-the-status-of-push-notifications-using-metrics-and-apns.md).
 
-##### Establish a connection to APNs
+### Establish a connection to APNs
 
 Use HTTP/2 and TLS 1.2 or later to establish a connection between your provider server and one of the following servers:
 
@@ -22,7 +22,7 @@ Use HTTP/2 and TLS 1.2 or later to establish a connection between your provider 
 
 For more details on establishing a connection to the APNs server to send requests, refer to [Establishing a connection to Apple Push Notification service (APNs)](./establishing-a-connection-to-apns.md).
 
-##### Send a POST request to APNs
+### Send a POST request to APNs
 
 Include header fields in your notifications or the system won’t be able to deliver them. In addition to the preceding data, add the following header fields in to your request. Other headers are optional or may depend on whether you’re using token-based or certificate-based authentication.
 

@@ -21,7 +21,7 @@ Calculates an operation queue scheduler time by advancing the scheduler time typ
 func advanced(by n: OperationQueue.SchedulerTimeType.Stride) -> OperationQueue.SchedulerTimeType
 ```
 
-#### Return Value
+## Return Value
 
 An operation queue scheduler time advanced by the given interval from [`date`](./date.md).
 

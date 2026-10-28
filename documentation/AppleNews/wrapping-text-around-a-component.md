@@ -5,7 +5,7 @@
 
 Define the layout of a text component to wrap around another component.
 
-#### Overview
+## Overview
 
 You can wrap the text of one body component around another component by using the `targetAnchorPosition` property of the [`Anchor`](../AppleNewsFormat/anchor.md) object. For example, you can wrap body text around a pull quote. You can include an `Anchor` object in a text component to vertically align that component to the position of a text character in a body component. If they also share columns, these components would then overlap. In the case of overlap, the text would automatically wrap around the component that contains the `Anchor` object.
 

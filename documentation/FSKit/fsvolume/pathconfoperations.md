@@ -19,7 +19,7 @@ protocol PathConfOperations : NSObjectProtocol
 @protocol FSVolumePathConfOperations <NSObject>
 ```
 
-#### Overview
+## Overview
 
 This protocol gathers properties related to the `pathconf` and `fpathconf` system calls.
 

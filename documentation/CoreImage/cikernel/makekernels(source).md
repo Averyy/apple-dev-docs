@@ -26,11 +26,11 @@ class func makeKernels(source string: String) -> [CIKernel]?
 + (NSArray<CIKernel *> *) kernelsWithString:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 An array of  `CIKernel` objects. The array contains one `CIKernel` objects for each kernel routine in the supplied string. Each object in the array can be of class [`CIKernel`](../cikernel.md), [`CIColorKernel`](../cicolorkernel.md), or [`CIWarpKernel`](../ciwarpkernel.md) depending on the corresponding routine specified in the Core Image Kernel Language source code string.
 
-#### Discussion
+## Discussion
 
 The Core Image Kernel Language is a dialect of the OpenGL Shading Language. See [Core Image Kernel Language Reference](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Reference/CIKernelLangRef/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004397) and [Core Image Programming Guide](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/CoreImaging/ci_intro/ci_intro.html#//apple_ref/doc/uid/TP30001185) for more details.
 

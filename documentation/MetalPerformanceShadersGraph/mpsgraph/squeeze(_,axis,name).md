@@ -24,11 +24,11 @@ func squeeze(_ tensor: MPSGraphTensor, axis: Int, name: String?) -> MPSGraphTens
 - (MPSGraphTensor *) squeezeTensor:(MPSGraphTensor *) tensor axis:(NSInteger) axis name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object.
 
-#### Discussion
+## Discussion
 
 Squeezes the tensor, removing a dimension with size 1 at the specified axis. The size of the input tensor must be 1 at the specified axis.
 

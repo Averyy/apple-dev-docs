@@ -10,7 +10,7 @@ framework: "Swift-Org/PackageManagerDocs"
 
 Include Swift Package Manager as a dependency in your Swift package.
 
-#### Overview
+## Overview
 
 > ⚠️ **Warning**: **The libSwiftPM API is *unstable* and may change at any time.**
 

@@ -26,7 +26,7 @@ func prediction(from input: any MLFeatureProvider, options: MLPredictionOptions)
 - (id<MLFeatureProvider>) predictionFromFeatures:(id<MLFeatureProvider>) input options:(MLPredictionOptions *) options error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A feature provider that represents the model’s prediction.
 

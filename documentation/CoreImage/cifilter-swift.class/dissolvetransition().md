@@ -28,11 +28,11 @@ class func dissolveTransition() -> any CIFilter & CIDissolveTransition
 
 - [Customizing Image Transitions](../customizing-image-transitions.md)
 
-#### Return Value
+## Return Value
 
 The transition image.
 
-#### Discussion
+## Discussion
 
 This method applies the disintegrate transition filter to an image. The effect transitions from one image to another by using a fade effect.
 

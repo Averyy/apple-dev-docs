@@ -4,7 +4,7 @@
 
 The size of the star image used for a rating element.
 
-#### Overview
+## Overview
 
 ```
 NSString *const TVRatingStyleStarSmall;

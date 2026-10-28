@@ -22,7 +22,7 @@ Performs the transformation on an input sequence.
 func applied<S>(to input: S, eventHandler: EventHandler?) async throws -> Self.OutputSequence where S : TemporalSequence, Self.Input == S.Feature
 ```
 
-#### Return Value
+## Return Value
 
 An async sequence produced by applying the transformation to the input.
 

@@ -20,7 +20,7 @@ Returns time samples authored within the specified interval.
 func timeSamples(in interval: ClosedRange<USDStage.TimeCode>) -> [USDStage.TimeCode]
 ```
 
-#### Return Value
+## Return Value
 
 Time samples within the interval, or an empty array if none exist.
 

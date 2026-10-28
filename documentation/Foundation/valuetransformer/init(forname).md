@@ -25,11 +25,11 @@ init?(forName name: NSValueTransformerName)
 + (NSValueTransformer *) valueTransformerForName:(NSValueTransformerName) name;
 ```
 
-#### Return Value
+## Return Value
 
 The value transformer identified by `name` in the shared registry, or `nil` if not found.
 
-#### Discussion
+## Discussion
 
 If `valueTransformerForName:` does not find a registered transformer instance for `name`, it will attempt to find a class with the specified name. If a corresponding class is found an instance will be created and initialized using its `init:` method and then automatically registered with `name`.
 

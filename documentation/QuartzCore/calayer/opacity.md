@@ -24,7 +24,7 @@ var opacity: Float { get set }
 @property float opacity;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property must be in the range `0.0` (transparent) to `1.0` (opaque). Values outside that range are clamped to the minimum or maximum. The default value of this property is `1.0`.
 

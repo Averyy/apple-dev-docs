@@ -15,11 +15,11 @@ A bulk request to update multiple Keyword objects.
 object KeywordUpdateBulkRequest
 ```
 
-#### Discussion
+## Discussion
 
 The `KeywordUpdateBulkRequest` object allows updating multiple keywords in a single API call.
 
-##### Example
+### Example
 
 ```json
 {

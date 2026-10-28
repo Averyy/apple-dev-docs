@@ -25,7 +25,7 @@ var propertiesByName: [String : NSPropertyDescription] { get }
 @property (copy, readonly) NSDictionary<NSString *,__kindof NSPropertyDescription *> * propertiesByName;
 ```
 
-#### Discussion
+## Discussion
 
 The keys in the dictionary are the property names and the values are instances of [`NSAttributeDescription`](../nsattributedescription.md) and/or [`NSRelationshipDescription`](../nsrelationshipdescription.md).
 

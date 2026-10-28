@@ -20,7 +20,7 @@ optional func stackView(_ stackView: NSStackView, willDetach views: [NSView])
 - (void) stackView:(NSStackView *) stackView willDetachViews:(NSArray<NSView *> *) views;
 ```
 
-#### Discussion
+## Discussion
 
 To configure a custom class to respond to the automatic detachment of views from a stack view’s view hierarchy, implement this method in the class. This method is not called when your code explicitly removes a view from a stack view’s [`views`](../nsstackview/views.md) array.
 

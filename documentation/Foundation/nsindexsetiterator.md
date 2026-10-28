@@ -21,7 +21,7 @@ An iterator suitable for enumerating the elements of an index set.
 struct NSIndexSetIterator
 ```
 
-#### Overview
+## Overview
 
 You typically obtain an index set iterator by calling the [`makeIterator()`](./nsindexset/makeiterator%28%29.md) function of an [`NSIndexSet`](./nsindexset.md) instance.
 

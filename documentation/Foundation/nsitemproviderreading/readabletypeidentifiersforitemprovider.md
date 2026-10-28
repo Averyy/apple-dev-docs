@@ -34,7 +34,7 @@ static var readableTypeIdentifiersForItemProvider: [String] { get }
 @property (class, atomic, copy, readonly) NSArray<NSString *> * readableTypeIdentifiersForItemProvider;
 ```
 
-#### Discussion
+## Discussion
 
 Provide uniform type identifiers (UTIs) in order from highest fidelity to lowest. If your app employs a native data representation, place that first in the array.
 

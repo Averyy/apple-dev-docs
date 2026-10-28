@@ -24,7 +24,7 @@ var height: Int { get set }
 @property (nonatomic, readwrite) NSUInteger height;
 ```
 
-#### Discussion
+## Discussion
 
 The formal height of the image, in pixels. The default value is 1.
 

@@ -24,7 +24,7 @@ struct HKWorkoutZoneGroup
 
 - [Accessing workout zone data](./accessing-workout-zone-data.md)
 
-#### Overview
+## Overview
 
 This structure combines an [`HKWorkoutZoneConfiguration`](./hkworkoutzoneconfiguration.md) with an array of [`HKWorkoutZoneDuration`](./hkworkoutzoneduration.md) instances. Access zone groups from [`HKWorkout`](./hkworkout.md) and [`HKWorkoutActivity`](./hkworkoutactivity.md) instances to retrieve zone data for completed workouts, or from [`HKWorkoutBuilder`](./hkworkoutbuilder.md) for real-time zone information during active workouts.
 

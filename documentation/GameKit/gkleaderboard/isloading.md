@@ -27,7 +27,7 @@ var isLoading: Bool { get }
 @property (readonly, getter=isLoading) BOOL loading;
 ```
 
-#### Discussion
+## Discussion
 
 The value of the `loading` property is [`true`](../../Swift/true.md) if the leaderboard object has any pending requests for scores.
 

@@ -23,7 +23,7 @@ func apply(_ layoutAttributes: UICollectionViewLayoutAttributes)
 - (void) applyLayoutAttributes:(UICollectionViewLayoutAttributes *) layoutAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method does nothing.
 

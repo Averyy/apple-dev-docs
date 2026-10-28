@@ -15,7 +15,7 @@ The tag of the menu item that was last selected by the user.
 @property (readonly) NSInteger selectedTag;
 ```
 
-#### Discussion
+## Discussion
 
 Tags are integers that you assign to items to identify them in your code. Tags are not used by AppKit.
 

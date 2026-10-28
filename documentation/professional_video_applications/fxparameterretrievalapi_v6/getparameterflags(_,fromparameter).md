@@ -20,7 +20,7 @@ func getParameterFlags(_ flags: UnsafeMutablePointer<FxParameterFlags>, fromPara
 - (BOOL) getParameterFlags:(FxParameterFlags *) flags fromParameter:(UInt32) parameterID;
 ```
 
-#### Return Value
+## Return Value
 
 Returns `YES` if the state information is retrieved successfully; `NO` otherwise.
 

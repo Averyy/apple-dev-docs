@@ -24,11 +24,11 @@ func registerSoundAsset(url: URL, identifier: String?, assetType: PHASEAsset.Ass
 - (PHASESoundAsset *) registerSoundAssetAtURL:(NSURL *) url identifier:(NSString *) identifier assetType:(PHASEAssetType) assetType channelLayout:(AVAudioChannelLayout *) channelLayout normalizationMode:(PHASENormalizationMode) normalizationMode error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A sound asset object. If an error occurs, the function returns `nil`.
 
-#### Discussion
+## Discussion
 
 To expedite audio loading, run this function for multiple assets on multiple threads. This function runs synchronously. As a thread-safe function, you can run it off the main thread.
 

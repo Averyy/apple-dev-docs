@@ -25,7 +25,7 @@ struct GroupActivityMetadata
 - [Defining your app’s SharePlay activities](./defining-your-apps-shareplay-activities.md)
 - [Adding spatial Persona support to an activity](./adding-spatial-persona-support-to-an-activity.md)
 
-#### Overview
+## Overview
 
 Use a `GroupActivityMetadata` structure to store user-facing information about a specific activity your app suggests. Metadata information includes the title of the activity, an image that corresponds to the activity, and a fallback URL for users who don’t have your app. For example, a movie-watching activity might include the poster of the specific movie a participant suggests. The system uses the provided metadata to generate invitations for other participants.
 

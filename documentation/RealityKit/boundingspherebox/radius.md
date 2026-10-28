@@ -18,7 +18,7 @@ The bounding sphere radius.
 var radius: Float { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Setting a smaller radius shrinks `halfExtents` to fit within the sphere when necessary.
 

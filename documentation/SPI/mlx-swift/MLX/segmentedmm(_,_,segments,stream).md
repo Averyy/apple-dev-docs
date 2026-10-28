@@ -17,11 +17,11 @@ Perform a matrix multiplication but segment the inner dimension and save the res
 func segmentedMM(_ a: MLXArray, _ b: MLXArray, segments: MLXArray, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 Result per segment of shape `MxN`
 
-##### See Also
+### See Also
 
 - [Arithmetic](./arithmetic.md)
 

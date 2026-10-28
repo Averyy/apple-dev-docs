@@ -21,7 +21,7 @@ Set the axis value.
 int HVF_set_axis_value(HVFPartRenderer *renderer, int axis, HVFAxisValue value);
 ```
 
-#### Discussion
+## Discussion
 
 The value is in design space, [-1.0, 1.0]) for the indicated global axis, using the same axis numbering as would be in the `fvar` table.
 

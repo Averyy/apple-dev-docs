@@ -12,7 +12,7 @@ Give a language model access to your app’s Core Spotlight index to enable natu
 - Mac Catalyst 27.0+
 - Xcode 27.0+
 
-#### Overview
+## Overview
 
 This sample demonstrates [`SpotlightSearchTool`](./spotlightsearchtool.md), a type that connects a Foundation Models language-model session to your app’s Core Spotlight index. Using `SpotlightSearchTool`, the language model can search, filter, and reason about your indexed content, turning a metadata-based index into a conversational search experience.
 
@@ -22,7 +22,7 @@ The app indexes a collection of hiking trail entries as [`CSSearchableItem`](./c
 
 > **Note**: This sample code project is associated with WWDC26 session [246: LLM search using Core Spotlight](https://developer.apple.com/wwdc26/246/).
 
-#### Configure the sample code project
+## Configure the sample code project
 
 This sample requires a device that supports Apple Intelligence, running iOS 27 or later.
 
@@ -30,7 +30,7 @@ Before you build and run the sample, turn on Apple Intelligence by opening Setti
 
 By default, the sample runs searches on the on-device system language model, so the project builds and runs without additional configuration. For best search performance, route searches to *Private Cloud Compute* (PCC) models designed for Apple Intelligence. For more information, see [Adopt Private Cloud Compute](./searching-indexed-content-with-natural-language.md#Adopt-Private-Cloud-Compute).
 
-#### Provide search attributes to the language model
+## Provide search attributes to the language model
 
 The sample creates a [`SpotlightSearchTool`](./spotlightsearchtool.md) configured with a Core Spotlight source to let the language model search the indexed content. The `fetchAttributes` parameter specifies which item attributes the tool returns to the model, providing the information it uses to answer questions about trails. The sample includes both built-in attributes and a custom distance attribute that the app indexes for each trail:
 
@@ -51,7 +51,7 @@ let fetchAttributes: [SearchableItemAttribute] = [
 ]
 ```
 
-#### Adopt Private Cloud Compute
+## Adopt Private Cloud Compute
 
 By default, the sample searches your app’s Spotlight index using the on-device [`SystemLanguageModel`](../FoundationModels/systemlanguagemodel.md), so the project builds and runs without additional configuration.
 
@@ -94,7 +94,7 @@ private func makeSpotlightTool() -> SpotlightSearchTool {
 }
 ```
 
-#### Stream responses from the language model
+## Stream responses from the language model
 
 The sample passes the search tool to a [`LanguageModelSession`](../FoundationModels/languagemodelsession.md) along with system instructions that describe the indexed data. When a person submits a query, the session calls the tool to find matching entries and streams a natural-language response. The sample creates a fresh session and tool for each search so every query starts with fresh context:
 
@@ -114,7 +114,7 @@ do {
 }
 ```
 
-#### Display search results alongside the response
+## Display search results alongside the response
 
 The search tool provides an asynchronous stream of search replies as the model processes the query. Each reply’s `content` is a discriminated union: matches arrive as [`SpotlightSearchTool.SearchReply.Content.items(_:)`](./spotlightsearchtool/searchreply/content-swift.enum/items%28_%29.md), [`SpotlightSearchTool.SearchReply.Content.scoredItems(_:)`](./spotlightsearchtool/searchreply/content-swift.enum/scoreditems%28_%29.md), or [`SpotlightSearchTool.SearchReply.Content.groupedItems(_:)`](./spotlightsearchtool/searchreply/content-swift.enum/groupeditems%28_%29.md) that provide wrapped [`SearchableItem`](./searchableitem.md) results. Additionally, the model may also return other [`SpotlightSearchTool.SearchReply.Content`](./spotlightsearchtool/searchreply/content-swift.enum.md) enumeration values as replies, depending on the query.
 
@@ -145,7 +145,7 @@ private func listenForSearchResults(from tool: SpotlightSearchTool) -> Task<Void
 }
 ```
 
-#### Index searchable items with Core Spotlight
+## Index searchable items with Core Spotlight
 
 The sample loads trail data from a property list at launch and indexes each entry as a [`CSSearchableItem`](./cssearchableitem.md). Each item includes attributes like title, location, keywords, and duration. The indexer uses [`beginBatch()`](./cssearchableindex/beginbatch%28%29.md) and [`endBatch(withClientState:completionHandler:)`](./cssearchableindex/endbatch%28withclientstate,completionhandler%29.md) to group the work into a single transaction, and records client state so it can skip reindexing on subsequent launches:
 

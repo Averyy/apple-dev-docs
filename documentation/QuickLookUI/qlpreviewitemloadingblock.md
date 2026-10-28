@@ -21,7 +21,7 @@ typealias QLPreviewItemLoadingBlock = ((any Error)?) -> Void
 typedef void (^)(NSError *) QLPreviewItemLoadingBlock;
 ```
 
-#### Discussion
+## Discussion
 
 A type that defines a block used to load a Quick Look preview item.
 

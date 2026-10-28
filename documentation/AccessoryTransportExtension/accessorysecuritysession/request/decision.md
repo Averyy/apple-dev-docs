@@ -15,7 +15,7 @@ A structure that represents the decision to accept or reject a session request.
 struct Decision
 ```
 
-#### Overview
+## Overview
 
 The [`accept(_:)`](./accept%28_%29.md) and [`reject(error:)`](./reject%28error%29.md) methods return this type.
 

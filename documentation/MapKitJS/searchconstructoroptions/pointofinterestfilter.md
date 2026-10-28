@@ -15,7 +15,7 @@ A filter used to include or exclude point-of-interest categories.
 pointOfInterestFilter?: PointOfInterestFilter;
 ```
 
-#### Discussion
+## Discussion
 
 If you provide a [`PointOfInterestFilter`](../pointofinterestfilter.md) and set [`includePointsOfInterest`](./includepointsofinterest.md) to `false`, the filter takes precedence and MapKit JS ignores the Boolean.
 

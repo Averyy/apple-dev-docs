@@ -19,7 +19,7 @@ Specify whether the target Metal layer has been configured for EDR output.
 var extendedDynamicRangeOutput: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 If the Metal layer that this [`RealityRenderer`](../realityrenderer.md) will be rendering into has been configured to output extended dynamic range content (i.e. the property `QuartzCore/CAMetalLayer/wantsExtendedDynamicRangeContent` on the target `QuartzCore/CAMetalLayer` has been set to `true` and a pixel format that supports EDR content has been set), this property should be set to `true` so that [`RealityRenderer`](../realityrenderer.md) adjusts its tone mapping accordingly.
 

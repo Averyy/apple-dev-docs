@@ -24,7 +24,7 @@ optional func applicationDidFinishLaunching()
 - [Working with the watchOS app life cycle](../working-with-the-watchos-app-life-cycle.md)
 - [Handling Common State Transitions](../handling-common-state-transitions.md)
 
-#### Discussion
+## Discussion
 
 WatchKit calls this method after the launch cycle has finished and before your app’s interface is active. Use this method to complete your WatchKit extension’s initialization and prepare it to run. For example, a page-based app could use this method to call the [`reloadRootControllers(withNames:contexts:)`](../wkinterfacecontroller/reloadrootcontrollers%28withnames,contexts%29.md) method to specify the initial set of interface controllers to display.
 

@@ -25,7 +25,7 @@ init(tagSchemes: [NLTagScheme])
 - (instancetype) initWithTagSchemes:(NSArray<NSString *> *) tagSchemes;
 ```
 
-#### Discussion
+## Discussion
 
 Pass any tag schemes to tagSchemes that you intend to use with the methods described in Enumerating linguistic tags and Getting linguistic tags in [`NLTagger`](../nltagger.md).
 

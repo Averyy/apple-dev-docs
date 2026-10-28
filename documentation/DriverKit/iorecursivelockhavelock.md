@@ -16,11 +16,11 @@
 bool IORecursiveLockHaveLock(struct IORecursiveLock *lock);
 ```
 
-#### Return Value
+## Return Value
 
 True if the calling thread holds the lock otherwise false.
 
-#### Discussion
+## Discussion
 
 Check if a recursive lock is held by the calling thread.
 

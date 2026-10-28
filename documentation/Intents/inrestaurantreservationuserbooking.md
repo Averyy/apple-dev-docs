@@ -22,7 +22,7 @@ class INRestaurantReservationUserBooking
 @interface INRestaurantReservationUserBooking : INRestaurantReservationBooking
 ```
 
-#### Overview
+## Overview
 
 An [`INRestaurantReservationUserBooking`](./inrestaurantreservationuserbooking.md) object contains information about a reservation placed by a user. When the user actually books a reservation at a restaurant, you create an instance of this class to represent the reservation details. This object contains the specific details of the reservation, including any user-specified information such as selected offers or special requests.
 

@@ -20,11 +20,11 @@ init?(event: CGEvent?)
 extern CGEventSourceRefCGEventCreateSourceFromEvent(CGEventRef event);
 ```
 
-#### Return Value
+## Return Value
 
 An event source created from the specified event, or `NULL` if the event was generated with a private event source owned by another process. When you no longer need this event source, you should release it using the function `CFRelease`.
 
-#### Discussion
+## Discussion
 
 Event filters may use the event source to generate events that are compatible with an event being filtered.
 

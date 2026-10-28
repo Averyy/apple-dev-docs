@@ -8,7 +8,7 @@ An atom that specifies the duration of a tween operation.
 
 > **Deprecated**: Tween media is deprecated in the QuickTime file format. The information that follows documents existing content containing tween media and should not be used for new development.
 
-#### Overview
+## Overview
 
 When a QuickTime movie includes a tween track, the time units for the duration are those of the tween track. If a tween component is used outside of a movie, the application using the tween data determines how the duration value and values returned by the component are interpreted.
 

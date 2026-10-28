@@ -22,7 +22,7 @@ static var existingPlane: ARHitTestResult.ResultType { get }
 ARHitTestResultTypeExistingPlane
 ```
 
-#### Discussion
+## Discussion
 
 When searching for this result type, ARKit can return any point coplanar with an already detected plane, regardless of whether that plane’s already detected [`extent`](../../arplaneanchor/extent.md) or [`geometry`](../../arplaneanchor/geometry.md) includes that point. (That is, this result type searches the infinite extensions of detected planes.)
 

@@ -15,7 +15,7 @@ A unique name for the launch screen configuration.
 - **Name**: `UILaunchScreenIdentifier`
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 You can choose any name you want for the identifier, as long as it’s unique among all your app’s configuration identifiers. Use this value to refer to the configuration when storing a URL to configuration mapping as the value for the [`UIURLToLaunchScreenAssociations`](../uiurltolaunchscreenassociations.md) key, or when specifying a default configuration with the [`UIDefaultLaunchScreen`](../uidefaultlaunchscreen.md) key.
 

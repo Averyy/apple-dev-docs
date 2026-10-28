@@ -16,11 +16,11 @@ Submits the given orb
 IOReturn (*submitORB)(void *self, IOFireWireSBP2LibORBInterface **orb);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if the ORB has been started successfully.
 
-#### Discussion
+## Discussion
 
 Starts execution of the given ORB. If the ORB is an immediate ORB it's addresss is written to the fetch agent. If it is a non immediate orb its address is appended to the last orb of the currently processing chain. The doorbell is not rung automatically it must be run manually with the ringDoorbell command described below.
 

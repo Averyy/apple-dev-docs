@@ -20,7 +20,7 @@ enum SSLSessionOption
 enum SSLSessionOption : int;
 ```
 
-#### Overview
+## Overview
 
 Use these flags with calls to the [`SSLSetSessionOption(_:_:_:)`](./sslsetsessionoption%28_,_,_%29.md) function.
 

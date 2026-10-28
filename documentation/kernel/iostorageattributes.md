@@ -14,7 +14,7 @@ struct IOStorageAttributes {
 };
 ```
 
-#### Discussion
+## Discussion
 
 Attributes of read and write storage requests.
 

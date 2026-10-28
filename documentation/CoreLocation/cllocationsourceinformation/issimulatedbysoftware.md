@@ -25,7 +25,7 @@ var isSimulatedBySoftware: Bool { get }
 @property (nonatomic, readonly) BOOL isSimulatedBySoftware;
 ```
 
-#### Discussion
+## Discussion
 
 Core Location sets [`isSimulatedBySoftware`](./issimulatedbysoftware.md) to `true` if the system generated the location using on-device software simulation. You can simulate locations by loading GPX files using the Xcode debugger. The default value is `false`.
 

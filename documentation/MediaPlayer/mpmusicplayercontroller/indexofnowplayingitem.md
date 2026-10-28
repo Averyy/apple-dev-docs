@@ -23,7 +23,7 @@ var indexOfNowPlayingItem: Int { get }
 @property (nonatomic, readonly) NSUInteger indexOfNowPlayingItem;
 ```
 
-#### Discussion
+## Discussion
 
 This property’s value is `NSNotFound` if the index isn’t valid, for example, if the playback queue is empty.
 

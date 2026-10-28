@@ -22,7 +22,7 @@ func removeAllBlockingEntries()
 - (void) removeAllBlockingEntries;
 ```
 
-#### Discussion
+## Discussion
 
 If [`isIncremental`](./isincremental.md) is [`true`](../../Swift/true.md), the request provides incremental entries and may use this method to remove all previously added blocking entries. Don’t call this method if [`isIncremental`](./isincremental.md) is [`false`](../../Swift/false.md).
 

@@ -19,11 +19,11 @@ optional func webView(_ sender: WebView!, createWebViewWith request: URLRequest!
 - (WebView *) webView:(WebView *) sender createWebViewWithRequest:(NSURLRequest *) request;
 ```
 
-#### Return Value
+## Return Value
 
 The web view that is loading the request.
 
-#### Discussion
+## Discussion
 
 This method should begin loading the content for the specified request by sending [`load(_:)`](../webframe/load%28_%29-47p2s.md) to its main frame. The new window should initially be hidden. Later, a [`webViewShow(_:)`](./webviewshow%28_%29.md) message is sent to the delegate of the new web view. By default, this method returns `nil`.
 

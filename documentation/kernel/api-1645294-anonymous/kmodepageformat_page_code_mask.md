@@ -13,7 +13,7 @@
 kModePageFormat_PAGE_CODE_Mask = 0x3F
 ```
 
-#### Discussion
+## Discussion
 
 Mask to obtain the PAGE_CODE from the PS_PAGE_CODE field.
 

@@ -20,7 +20,7 @@ Creates and returns an image object from the contents of a file, using the speci
 + (CIImage *) imageWithContentsOfURL:(NSURL *) url options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Return Value
+## Return Value
 
 An image object initialized with the contents of the file and set up with the specified options.
 

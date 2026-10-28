@@ -19,11 +19,11 @@ func helpRequested(with eventPtr: NSEvent)
 - (void) helpRequested:(NSEvent *) eventPtr;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses in their implementation of this method should cause the Help Manager ([`NSHelpManager`](../nshelpmanager.md)) to display the help associated with the menu. Never invoke this method directly.
 
-##### Special Considerations
+### Special Considerations
 
 In macOS 10.6 and later this method has no effect. This method may be deprecated in a future release.
 

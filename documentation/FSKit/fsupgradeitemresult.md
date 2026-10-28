@@ -19,7 +19,7 @@ class FSUpgradeItemResult
 @interface FSUpgradeItemResult : FSVolumeHandlerResult
 ```
 
-#### Overview
+## Overview
 
 Use this type in your implementation of [`upgrade(_:cacheMode:context:replyHandler:)`](./fsvolume/datacachehandler/upgrade%28_,cachemode,context,replyhandler%29.md).
 

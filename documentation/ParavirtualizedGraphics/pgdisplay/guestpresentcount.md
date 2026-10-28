@@ -21,7 +21,7 @@ var guestPresentCount: Int { get }
 @property (nonatomic, readonly) NSUInteger guestPresentCount;
 ```
 
-#### Discussion
+## Discussion
 
 This value can exceed the number of times that the framework invokes the [`newFrameEventHandler`](../pgdisplaydescriptor/newframeeventhandler.md) block if the host isn’t encoding frames fast enough to keep up.
 

@@ -19,7 +19,7 @@ Creates an empty drawing object.
 init()
 ```
 
-#### Discussion
+## Discussion
 
 This initializer creates a new canvas object that doesn’t contain any data.
 

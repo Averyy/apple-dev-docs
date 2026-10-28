@@ -21,11 +21,11 @@ Returns the number of bytes from the start of one instance of `T` to the start o
 static func stride(ofValue value: borrowing T) -> Int
 ```
 
-#### Return Value
+## Return Value
 
 The stride, in bytes, of the given value’s type.
 
-#### Discussion
+## Discussion
 
 This is the same as the number of bytes moved when an `UnsafePointer<T>` instance is incremented. `T` may have a lower minimal alignment that trades runtime performance for space efficiency. The result is always positive.
 

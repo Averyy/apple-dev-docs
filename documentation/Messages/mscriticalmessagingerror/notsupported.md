@@ -20,7 +20,7 @@ case notSupported
 
 - [Sending SMS messages from an app](../critical-messaging-api.md)
 
-#### Discussion
+## Discussion
 
 The device a person is using isn’t supported by the Critical Messaging API.
 

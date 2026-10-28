@@ -25,7 +25,7 @@ convenience init(uuidBytes bytes: UnsafePointer<UInt8>?)
 - (instancetype) initWithUUIDBytes:(const uuid_t) bytes;
 ```
 
-#### Return Value
+## Return Value
 
 A new UUID object.
 

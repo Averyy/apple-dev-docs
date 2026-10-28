@@ -16,15 +16,15 @@ OSStatus PMSetResolution (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../core_printing.md#1670007).
 
-#### Overview
+## Overview
 
 If you call this function after initiating a print job, the change is ignored for the current job.
 
-##### Special Considerations
+### Special Considerations
 
 This function was needed in the past because QuickDraw uses integer coordinates and has no notion of scaling coordinate systems. For Quartz drawing, this function is obsolete. To change the resolution, draw with fractional coordinates or scale the coordinate system and draw with integer coordinates.
 

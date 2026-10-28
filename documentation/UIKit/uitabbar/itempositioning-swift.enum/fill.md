@@ -23,7 +23,7 @@ case fill
 UITabBarItemPositioningFill
 ```
 
-#### Discussion
+## Discussion
 
 When the [`UITabBar.ItemPositioning.automatic`](./automatic.md) option is selected, the tab bar uses this behavior in horizontally compact environments.
 

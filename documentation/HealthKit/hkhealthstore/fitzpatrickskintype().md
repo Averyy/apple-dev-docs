@@ -28,11 +28,11 @@ func fitzpatrickSkinType() throws -> HKFitzpatrickSkinTypeObject
 
 - [About the HealthKit framework](../about-the-healthkit-framework.md)
 
-#### Return Value
+## Return Value
 
 A skin type object representing the skin type selected by the user.
 
-#### Discussion
+## Discussion
 
 If the user has not yet specified a skin type, or if the user has denied your app permission to read the skin type, this method returns [`HKFitzpatrickSkinType.notSet`](../hkfitzpatrickskintype/notset.md).
 

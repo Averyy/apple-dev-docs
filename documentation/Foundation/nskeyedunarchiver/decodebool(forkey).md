@@ -25,7 +25,7 @@ func decodeBool(forKey key: String) -> Bool
 - (BOOL) decodeBoolForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 The Boolean value associated with the key `key`. Returns [`false`](../../Swift/false.md) if `key` does not exist.
 

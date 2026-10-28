@@ -386,8 +386,12 @@
     }
   },
   "metadata": {
+    "gone_links": [
+      "https://developer.apple.com/documentation/technologyoverviews/documentation/Speech",
+      "https://developer.apple.com/documentation/technologyoverviews/documentation/security/notarizing-macos-software-before-distribution"
+    ],
     "render": {
-      "version": 3
+      "version": 4
     },
     "total_pages": 96
   }

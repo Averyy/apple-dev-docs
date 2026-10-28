@@ -25,7 +25,7 @@ var NSUbiquitousKeyValueStoreAccountChange: Int { get }
 NSUbiquitousKeyValueStoreAccountChange
 ```
 
-#### Discussion
+## Discussion
 
 When someone changes the Apple account of the current device, the system removes any previous iCloud data and replaces it with data from the new account. Use the new data to configure your app.
 

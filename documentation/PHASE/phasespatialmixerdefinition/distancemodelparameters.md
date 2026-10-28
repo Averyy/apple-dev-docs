@@ -24,14 +24,14 @@ var distanceModelParameters: PHASEDistanceModelParameters? { get set }
 @property (nonatomic, strong, nullable) PHASEDistanceModelParameters * distanceModelParameters;
 ```
 
-#### Discussion
+## Discussion
 
 Similar to a Doppler effect, this property changes how an audio source sounds as its distance between the listener increases or decreases in 3D space. The available options are:
 
 - **[`PHASEGeometricSpreadingDistanceModelParameters`](../phasegeometricspreadingdistancemodelparameters.md)**: Create a realistic effect by dissipating certain frequency ranges of the audio spectrum differently with distance.
 - **[`PHASEEnvelopeDistanceModelParameters`](../phaseenvelopedistancemodelparameters.md)**: Take full control of the sound’s volume by graphing its loudness using points and curves over the distance.
 
-##### Programmatically Check Sound Dissipation
+### Programmatically Check Sound Dissipation
 
 After setting a value for this property, you can move a looping sound source to tweak the effect to your app’s particular requirements. The following code programmaticaly moves a looping source away from the listener along the z-axis:
 

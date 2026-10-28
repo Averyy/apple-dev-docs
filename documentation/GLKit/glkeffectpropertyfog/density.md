@@ -24,7 +24,7 @@ var density: GLfloat { get set }
 @property (nonatomic, assign) GLfloat density;
 ```
 
-#### Discussion
+## Discussion
 
 This property is ignored when the [`mode`](./mode.md) property is set to [`GLKFogMode.linear`](../glkfogmode/linear.md).
 

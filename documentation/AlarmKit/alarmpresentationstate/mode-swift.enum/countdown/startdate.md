@@ -17,7 +17,7 @@ The date at which the countdown was mostly recently resumed.
 var startDate: Date
 ```
 
-#### Discussion
+## Discussion
 
 If the countdown was never paused, the date is when the countdown started.
 

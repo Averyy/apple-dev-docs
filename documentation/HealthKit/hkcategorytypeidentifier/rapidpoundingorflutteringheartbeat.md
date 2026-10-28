@@ -24,7 +24,7 @@ static let rapidPoundingOrFlutteringHeartbeat: HKCategoryTypeIdentifier
 extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierRapidPoundingOrFlutteringHeartbeat;
 ```
 
-#### Discussion
+## Discussion
 
 These samples use values from the  [`HKCategoryValueSeverity`](../hkcategoryvalueseverity.md) enumeration.
 

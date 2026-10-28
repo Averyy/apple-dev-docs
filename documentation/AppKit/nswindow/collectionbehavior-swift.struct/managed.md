@@ -19,7 +19,7 @@ static var managed: NSWindow.CollectionBehavior { get }
 NSWindowCollectionBehaviorManaged
 ```
 
-#### Discussion
+## Discussion
 
 This is the default behavior if `windowLevel` is equal to [`normal`](../level-swift.struct/normal.md).
 

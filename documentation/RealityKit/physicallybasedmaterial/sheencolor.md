@@ -20,7 +20,7 @@ An object that defines the color of an entity’s sheen.
 struct SheenColor
 ```
 
-#### Overview
+## Overview
 
 Use `sheen` to add specular highlights that simulate subtle reflections, like the ones that occur on materials such as fabrics. Use this object to define the color of the highlights.
 

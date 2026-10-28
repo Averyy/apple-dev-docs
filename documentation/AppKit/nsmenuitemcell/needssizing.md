@@ -19,7 +19,7 @@ var needsSizing: Bool { get set }
 @property BOOL needsSizing;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the next attempt to obtain size information about the menu cause the [`calcSize()`](./calcsize%28%29.md) method to be called. When the value of the property is [`false`](../../Swift/false.md), the size information is obtained from the currently cached values.
 

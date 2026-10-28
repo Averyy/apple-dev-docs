@@ -15,11 +15,11 @@ Returns an array of overlays at a given point on the webpage.
 overlaysAtPoint(point: DOMPoint): Overlay[];
 ```
 
-#### Return Value
+## Return Value
 
 Returns an array of overlays. If there are no overlays at the point, the array is empty.
 
-#### Discussion
+## Discussion
 
 If the point is above an overlay fill or stroke, MapKit JS returns the overlay. MapKit JS returns overlays in the order they display, with the first overlay in the array closest to the background, and the last overlay closest to the foreground.
 

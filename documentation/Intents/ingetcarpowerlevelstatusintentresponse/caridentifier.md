@@ -31,7 +31,7 @@ var carIdentifier: String? { get set }
 @property (atomic, copy, readwrite, nullable) NSString * carIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The `carIdentifier` is a unique value that your app provides, and must not be the vehicle’s VIN or equivalent identifier. For the best user experience—and to prevent orphaned or duplicate vehicles in the user’s My Vehicles collection—your app must always provide the same identifier for the same vehicle.
 

@@ -23,7 +23,7 @@ func invalidateLayout(with context: UICollectionViewLayoutInvalidationContext)
 - (void) invalidateLayoutWithContext:(UICollectionViewLayoutInvalidationContext *) context;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method optimizes the layout process using the base properties of the [`UICollectionViewLayoutInvalidationContext`](../uicollectionviewlayoutinvalidationcontext.md) class. If you define a custom context object for your layout, override this method and apply any custom properties of the context object to your layout computations.
 

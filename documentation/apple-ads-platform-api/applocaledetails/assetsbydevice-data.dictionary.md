@@ -15,7 +15,7 @@ Map of device type to a `DeviceAssetGroup` containing the ordered list of asset 
 object AppLocaleDetails.AssetsByDevice
 ```
 
-#### Discussion
+## Discussion
 
 Each key is a device type identifier, such as `iphone_6_5` or `iphone_6_7`, not a fixed field name. The `assetsByDevice` field is a free-form map rather than an object with named properties, so the reference page labels this key `Any Key`. The value for each key is a [`DeviceAssetGroup`](../deviceassetgroup.md).
 

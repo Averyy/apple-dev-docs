@@ -25,7 +25,7 @@ var renewsExpiringResponseData: Bool { get }
 @property (readonly) BOOL renewsExpiringResponseData;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `YES` if the request renews previously provided response data that is expiring or has already expired.
 

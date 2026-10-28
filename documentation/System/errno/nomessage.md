@@ -25,7 +25,7 @@ static var noMessage: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 An IPC message queue doesn’t contain a message of the desired type, or a message catalog doesn’t contain the requested message.
 

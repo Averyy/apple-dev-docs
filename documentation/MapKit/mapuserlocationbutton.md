@@ -22,7 +22,7 @@ A button that sets the framing of the associated map to the user location.
 @preconcurrency struct MapUserLocationButton
 ```
 
-#### Overview
+## Overview
 
 Use `MapUserLocationButton` in conjunction with [`Map`](./map.md) as a stand alone view, as shown in this example:
 

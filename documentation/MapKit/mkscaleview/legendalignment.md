@@ -23,7 +23,7 @@ var legendAlignment: MKScaleView.Alignment { get set }
 @property (nonatomic, assign) MKScaleViewAlignment legendAlignment;
 ```
 
-#### Discussion
+## Discussion
 
 This property determines whether measurements start at the leading or trailing edge of the view. The default value of this property is [`MKScaleView.Alignment.leading`](./alignment/leading.md).
 

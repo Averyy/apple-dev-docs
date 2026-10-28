@@ -24,7 +24,7 @@ var curveType: MTLCurveType { get set }
 @property (nonatomic) MTLCurveType curveType;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`MTLCurveType.round`](../mtlcurvetype/round.md).
 

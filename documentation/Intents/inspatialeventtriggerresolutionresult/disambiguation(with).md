@@ -23,11 +23,11 @@ class func disambiguation(with spatialEventTriggersToDisambiguate: [INSpatialEve
 + (instancetype) disambiguationWithSpatialEventTriggersToDisambiguate:(NSArray<INSpatialEventTrigger *> *) spatialEventTriggersToDisambiguate;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INSpatialEventTriggerResolutionResult`](../inspatialeventtriggerresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when more than one trigger condition matches the provided information and you cannot pick one definitively. Ask the user to select from among the triggers that you specify.
 

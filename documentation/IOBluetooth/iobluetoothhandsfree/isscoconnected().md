@@ -19,11 +19,11 @@ func isSCOConnected() -> Bool
 - (BOOL) isSCOConnected;
 ```
 
-#### Return Value
+## Return Value
 
 YES if there is a SCO connection to the device; otherwise, NO.
 
-#### Discussion
+## Discussion
 
 Determines if there is a SCO connection to the device.
 

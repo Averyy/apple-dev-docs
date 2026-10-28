@@ -15,7 +15,7 @@ List the adjusted territory equalizations for a subscription price point.
 - [Configuring subscription prices across territories](./configuring-subscription-prices-across-territories.md)
 - [Querying adjusted subscription price equalizations](./querying-adjusted-subscription-price-equalizations.md)
 
-#### Overview
+## Overview
 
 Use this endpoint with filters to identify a specific adjusted equalization. Provide the `filter[upfrontPricePointId]` and `filter[planType]` query parameters, for example:
 

@@ -25,7 +25,7 @@ var filters: [CIFilter]? { get set }
 @property (nonatomic, copy, nullable) NSArray<CIFilter *> * filters;
 ```
 
-#### Discussion
+## Discussion
 
 An array of [`CIFilter`](../../CoreImage/cifilter-swift.class.md) objects.
 

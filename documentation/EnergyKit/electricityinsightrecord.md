@@ -17,7 +17,7 @@ A structure that provides environmental impact and cost insights for electricity
 struct ElectricityInsightRecord<Measure> where Measure : ElectricityInsightMeasure
 ```
 
-#### Overview
+## Overview
 
 This structure provides electricity usage data categorized by environmental impact ([`ElectricityInsightRecord.GridCleanliness`](./electricityinsightrecord/gridcleanliness.md)) and cost factors ([`ElectricityInsightRecord.TariffPeak`](./electricityinsightrecord/tariffpeak.md)) for analysis and optimization.
 

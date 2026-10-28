@@ -5,7 +5,7 @@
 
 An atom that contains information for converting from media time to sample number to sample location for tweens.
 
-#### Overview
+## Overview
 
 The tween sample description uses the standard sample description header, as described in [`Sample table atom`](./sample_table_atom.md).
 

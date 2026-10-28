@@ -22,11 +22,11 @@ nonisolated
 func scaledToFit() -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that scales this view to fit its parent, maintaining this view’s aspect ratio.
 
-#### Discussion
+## Discussion
 
 Use `scaledToFit()` to scale this view to fit its parent, while maintaining the view’s aspect ratio as the view scales.
 

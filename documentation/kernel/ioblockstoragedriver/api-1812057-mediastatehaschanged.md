@@ -12,7 +12,7 @@ virtual IOReturn mediaStateHasChanged(
  IOMediaState state);
 ```
 
-#### Overview
+## Overview
 
 This method is called on a media state change, that is, an arrival or removal. If media has just become available, calls are made to recordMediaParameters and acceptNewMedia. If media has just gone away, a call is made to decommissionMedia, with the forcible parameter set to true. The forcible tear-down is needed to enforce the disappearance of media, regardless of interested clients.
 

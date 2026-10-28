@@ -24,7 +24,7 @@ class func predicateForContacts(matching phoneNumber: CNPhoneNumber) -> NSPredic
 + (NSPredicate *) predicateForContactsMatchingPhoneNumber:(CNPhoneNumber *) phoneNumber;
 ```
 
-#### Return Value
+## Return Value
 
 A predicate that you can use to fetch contacts from [`CNContactStore`](../cncontactstore.md).
 

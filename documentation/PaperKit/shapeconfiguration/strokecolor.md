@@ -19,7 +19,7 @@ The stroke color of the shape.
 var strokeColor: CGColor?
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `nil`.
 

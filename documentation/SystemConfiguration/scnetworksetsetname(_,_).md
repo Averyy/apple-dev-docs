@@ -19,11 +19,11 @@ func SCNetworkSetSetName(_ set: SCNetworkSet, _ name: CFString?) -> Bool
 Boolean SCNetworkSetSetName(SCNetworkSetRef set, CFStringRef name);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the name was saved; `FALSE` if an error occurred.
 
-#### Discussion
+## Discussion
 
 Although it is not technically required, the user-specified names for all sets should be unique. For this reason, an error is returned if you attempt to name two sets with the same string.
 

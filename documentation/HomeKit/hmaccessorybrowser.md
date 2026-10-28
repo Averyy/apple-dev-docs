@@ -22,7 +22,7 @@ class HMAccessoryBrowser
 @interface HMAccessoryBrowser : NSObject
 ```
 
-#### Overview
+## Overview
 
 Discovering new network accessories is an expensive operation in terms of time and power. Only start searching for new accessories when the user explicitly asks to do so, and stop searching as soon as the user has chosen the new accessories to add to their home.
 

@@ -22,7 +22,7 @@ nonisolated
 func toolbarTitleDisplayMode(_ mode: ToolbarTitleDisplayMode) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to override the default toolbar title display mode.
 

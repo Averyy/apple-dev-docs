@@ -21,7 +21,7 @@ var subtitleVariants: [String] { get }
 @property (nonatomic, copy, readonly) NSArray<NSString *> * subtitleVariants;
 ```
 
-#### Discussion
+## Discussion
 
 Each subtitle should be localized and ready for display to the user. The system selects the subtitle to display based on the available screen space.
 

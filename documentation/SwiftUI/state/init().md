@@ -23,7 +23,7 @@ init()
 
 Available when `Value` conforms to `ExpressibleByNilLiteral`.
 
-#### Discussion
+## Discussion
 
 This initializer behaves like the [`init(wrappedValue:)`](./init%28wrappedvalue%29.md) initializer with an input of `nil`. See that initializer for more information.
 

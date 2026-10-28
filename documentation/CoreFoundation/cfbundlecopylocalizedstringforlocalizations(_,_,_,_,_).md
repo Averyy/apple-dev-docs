@@ -25,11 +25,11 @@ func CFBundleCopyLocalizedStringForLocalizations(_ bundle: CFBundle!, _ key: CFS
 extern CFStringRefCFBundleCopyLocalizedStringForLocalizations(CFBundleRef bundle, CFStringRef key, CFStringRef value, CFStringRef tableName, CFArrayRef localizations);
 ```
 
-#### Return Value
+## Return Value
 
 A CFString object that contains the localized string. If no value exists for `key`, returns `value` unless `value` is `NULL` or an empty string, in which case `key` is returned instead. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 Returns a localized string given a list of possible localizations. The one most suitable to use with the given `bundle` is returned.
 

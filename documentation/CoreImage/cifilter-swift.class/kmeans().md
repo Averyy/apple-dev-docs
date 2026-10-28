@@ -24,11 +24,11 @@ class func kMeans() -> any CIFilter & CIKMeans
 + (CIFilter<CIKMeans> *) KMeansFilter;
 ```
 
-#### Return Value
+## Return Value
 
 A one-dimensional [`CIImage`](../ciimage.md) containing the colors.
 
-#### Discussion
+## Discussion
 
 This filter uses the k-means clustering algorithm to find the most common colors in an input image. The result is a [`CIImage`](../ciimage.md) with `count` x 1 dimensions. Each `RGBA` pixel in the result image represents the center of a k-means cluster. The `RGB` components contain the color and the alpha component represents the weight of the color. You typically use the [`kMeans()`](./kmeans%28%29.md) filter in conjunction with the [`palettize()`](./palettize%28%29.md) filter to produce an image with a reduced number of colors.
 

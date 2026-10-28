@@ -20,7 +20,7 @@ typealias AECoercionHandlerUPP = AECoerceDescUPP
 typedef AECoerceDescUPP AECoercionHandlerUPP;
 ```
 
-#### Discussion
+## Discussion
 
 For a description of a coercion handler callback function, see [`AECoercePtrProcPtr`](./aecoerceptrprocptr.md). 
 

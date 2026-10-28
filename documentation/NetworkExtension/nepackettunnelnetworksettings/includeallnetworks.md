@@ -10,7 +10,7 @@
 @property NEPacketTunnelNetworkSettingsIPFamily includeAllNetworks;
 ```
 
-#### Discussion
+## Discussion
 
 If this property is set then all network traffic is routed through the tunnel, with some exclusions. Several of the exclusions can be controlled with the excludeLocalNetworks, excludeCellularServices, excludeAPNs and excludeDeviceCommunication properties. See the documentation for those properties. The set value of NEPacketTunnelNetworkSettingsIPFamily type indicates if includeAllNetworks should be applied to all traffic, IPv4 only or IPv6 only. The following traffic is always excluded from the tunnel:
 

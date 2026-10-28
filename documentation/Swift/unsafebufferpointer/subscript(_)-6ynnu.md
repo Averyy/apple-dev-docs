@@ -21,7 +21,7 @@ Accesses a contiguous subrange of the buffer’s elements.
 subscript(bounds: Range<Int>) -> Slice<UnsafeBufferPointer<Element>> { get }
 ```
 
-#### Overview
+## Overview
 
 The accessed slice uses the same indices for the same elements as the original buffer uses. Always use the slice’s `startIndex` property instead of assuming that its indices start at a particular value.
 

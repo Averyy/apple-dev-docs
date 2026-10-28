@@ -22,7 +22,7 @@ The subscription’s unique identifier.
 var subscriptionID: CKSubscription.ID { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property’s value is the subscription ID that you provide to the `init(recordType:predicate:subscriptionID:options:)` or `init(zoneID:subscriptionID:options:)` methods when you create the subscription. If you use a different method to create the subscription, CloudKit automatically assigns a UUID as the subscription ID.
 

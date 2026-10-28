@@ -22,7 +22,7 @@ var selectionFollowsFocus: Bool { get set }
 @property (nonatomic) BOOL selectionFollowsFocus;
 ```
 
-#### Discussion
+## Discussion
 
 The system determines the default value of this property according to the platform and other properties of the table view.
 

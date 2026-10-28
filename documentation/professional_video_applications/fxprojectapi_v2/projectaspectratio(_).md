@@ -20,7 +20,7 @@ func projectAspectRatio(_ aspectRatio: UnsafeMutablePointer<Float>!) throws
 - (BOOL) projectAspectRatio:(float *) aspectRatio error:(NSError * *) error;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to get the aspect ratio of the current project. The clip that the user applies your plug-in to may not be the same aspect ratio as the project or sequence it’s a part of.
 

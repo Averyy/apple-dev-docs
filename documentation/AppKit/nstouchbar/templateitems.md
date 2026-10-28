@@ -22,7 +22,7 @@ var templateItems: Set<NSTouchBarItem> { get set }
 @property (copy) NSSet<NSTouchBarItem *> * templateItems;
 ```
 
-#### Discussion
+## Discussion
 
 When a bar needs to fill its private items array with items ([`NSTouchBarItem`](../nstouchbaritem.md) instances), it employs a variety of potential sources. The first place it looks is this property. For more information, see [Item objects](../nstouchbar.md#Item-objects).
 

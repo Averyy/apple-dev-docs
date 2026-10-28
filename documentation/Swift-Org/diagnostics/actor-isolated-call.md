@@ -8,7 +8,7 @@ framework: "Swift-Org/diagnostics"
 **Framework**: Swift-Org/diagnostics  
 **Role**: Article
 
-#### Overview
+## Overview
 
 Accessing actor-isolated state from outside the actor can cause data races in your program. Resolve this error by calling actor-isolated functions on the actor.
 

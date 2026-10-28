@@ -18,7 +18,7 @@ A system style that displays the components in an editable field, with adjoining
 
 Available when `Self` is `StepperFieldDatePickerStyle`.
 
-#### Discussion
+## Discussion
 
 This style is useful when space is constrained and users expect to make specific date and time selections.
 

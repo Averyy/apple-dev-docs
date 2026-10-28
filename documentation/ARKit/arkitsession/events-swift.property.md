@@ -16,7 +16,7 @@ An asynchronous sequence of events that provide updates to the current authoriza
 final var events: ARKitSession.Events { get }
 ```
 
-#### Discussion
+## Discussion
 
 The following example detects changes in the current session’s authorization status.
 

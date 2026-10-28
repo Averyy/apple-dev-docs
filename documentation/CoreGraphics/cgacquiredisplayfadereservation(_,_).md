@@ -20,11 +20,11 @@ func CGAcquireDisplayFadeReservation(_ seconds: CGDisplayReservationInterval, _ 
 extern CGError CGAcquireDisplayFadeReservation(CGDisplayReservationInterval seconds, CGDisplayFadeReservationToken *token);
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`CGError.noneAvailable`](./cgerror/noneavailable.md) if another fade reservation is in effect. Otherwise, returns [`CGError.success`](./cgerror/success.md).
 
-#### Discussion
+## Discussion
 
 Before performing a fade operation, an application must reserve the fade hardware for a specified period of time. Quartz returns a token that represents a new fade reservation. The application uses this token as an argument in subsequent calls to other display fade functions.
 

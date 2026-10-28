@@ -20,7 +20,7 @@ func classDescription(withAppleEventCode appleEventCode: FourCharCode) -> NSScri
 - (NSScriptClassDescription *) classDescriptionWithAppleEventCode:(FourCharCode) appleEventCode;
 ```
 
-#### Discussion
+## Discussion
 
 Overriding behavior is important here. Multiple classes can have the same code if the classes have an uninterrupted linear inheritance from one another. For example, if class B is a subclass of A and class C is a subclass of B, and all three classes have the same four-character Apple event code, then this method returns the class description for class C.
 

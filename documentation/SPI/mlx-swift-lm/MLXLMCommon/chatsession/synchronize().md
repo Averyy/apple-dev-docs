@@ -17,7 +17,7 @@ Wait for exclusive access to the KVCache.
 func synchronize() async
 ```
 
-#### Discussion
+## Discussion
 
 This is useful for cases where a program is terminating and wants to ensure that any async operations are complete.
 

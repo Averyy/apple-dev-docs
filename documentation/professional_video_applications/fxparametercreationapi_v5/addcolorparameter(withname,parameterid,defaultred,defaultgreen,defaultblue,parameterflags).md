@@ -20,11 +20,11 @@ func addColorParameter(withName name: String, parameterID: UInt32, defaultRed re
 - (BOOL) addColorParameterWithName:(NSString *) name parameterID:(UInt32) parameterID defaultRed:(double) red defaultGreen:(double) green defaultBlue:(double) blue parameterFlags:(FxParameterFlags) flags;
 ```
 
-#### Return Value
+## Return Value
 
 Returns `YES` if the application successfully creates an RGB color parameter; otherwise `NO`.
 
-#### Discussion
+## Discussion
 
 The parameter assumes the default color values are in the sRGB color space.
 

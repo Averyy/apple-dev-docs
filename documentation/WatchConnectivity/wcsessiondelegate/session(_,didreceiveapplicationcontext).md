@@ -23,7 +23,7 @@ optional func session(_ session: WCSession, didReceiveApplicationContext applica
 - (void) session:(WCSession *) session didReceiveApplicationContext:(NSDictionary<NSString *,id> *) applicationContext;
 ```
 
-#### Discussion
+## Discussion
 
 The session uses this method to deliver the last known context data from its counterpart—that is, data sent by the counterpart using the [`updateApplicationContext(_:)`](../wcsession/updateapplicationcontext%28_%29.md) method of its own session object. If context data is already waiting to be delivered, this method is called shortly after you activate the session object for the current process.
 

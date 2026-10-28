@@ -15,7 +15,7 @@ The layout orientations for each section.
 extern NSAttributedStringDocumentAttributeKey NSTextLayoutSectionsAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 An [`NSArray`](../Foundation/nsarray.md) containing [`NSDictionary`](../Foundation/nsdictionary.md) objects, each dictionary describing a layout orientation section. The dictionary can have two attributes: [`NSTextLayoutSectionOrientation`](./nstextlayoutsectionorientation.md) and [`NSTextLayoutSectionRange`](./nstextlayoutsectionrange.md). When there is a gap between sections, it’s assumed to have [`NSLayoutManager.TextLayoutOrientation.horizontal`](./nslayoutmanager/textlayoutorientation/horizontal.md).
 

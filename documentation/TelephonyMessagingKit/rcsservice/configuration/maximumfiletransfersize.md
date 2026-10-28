@@ -15,7 +15,7 @@ The maximum size of a file that the RCS file transfer service can send.
 var maximumFileTransferSize: Measurement<UnitInformationStorage>? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value is represented as a Foundation [`Measurement`](../../../Foundation/measurement.md) that uses the [`UnitInformationStorage`](../../../Foundation/unitinformationstorage.md) unit type. If the messaging service doesn’t limit the file size, the value is `nil`.
 

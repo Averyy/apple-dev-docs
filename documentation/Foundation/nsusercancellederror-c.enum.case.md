@@ -21,7 +21,7 @@ The user canceled the operation (for example, by pressing Command-period).
 NSUserCancelledError
 ```
 
-#### Discussion
+## Discussion
 
 This code is for errors that do not require a dialog displayed and might be candidates for special-casing.
 

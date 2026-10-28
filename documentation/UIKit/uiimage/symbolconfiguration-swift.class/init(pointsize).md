@@ -24,7 +24,7 @@ convenience init(pointSize: CGFloat)
 + (instancetype) configurationWithPointSize:(CGFloat) pointSize;
 ```
 
-#### Return Value
+## Return Value
 
 A new symbol configuration object with the specified information.
 

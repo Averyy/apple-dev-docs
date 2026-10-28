@@ -23,7 +23,7 @@ var kCTFontTableGSUB: Int { get }
 kCTFontTableGSUB
 ```
 
-#### Discussion
+## Discussion
 
 Font table tag for glyph substitution.
 

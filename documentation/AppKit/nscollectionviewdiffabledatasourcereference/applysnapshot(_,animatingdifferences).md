@@ -19,7 +19,7 @@ func applySnapshot(_ snapshot: NSDiffableDataSourceSnapshotReference, animatingD
 - (void) applySnapshot:(NSDiffableDataSourceSnapshot<id,id> *) snapshot animatingDifferences:(BOOL) animatingDifferences;
 ```
 
-#### Discussion
+## Discussion
 
 It’s safe to call this method from a background queue, but you must do so consistently in your app. Always call this method exclusively from the main queue or from a background queue.
 

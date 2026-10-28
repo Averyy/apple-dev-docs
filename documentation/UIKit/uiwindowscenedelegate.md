@@ -29,7 +29,7 @@ protocol UIWindowSceneDelegate : UISceneDelegate
 - [Transitioning to the UIKit scene-based life cycle](./transitioning-to-the-uikit-scene-based-life-cycle.md)
 - [Specifying the scenes your app supports](./specifying-the-scenes-your-app-supports.md)
 
-#### Overview
+## Overview
 
 Use your [`UIWindowSceneDelegate`](./uiwindowscenedelegate.md) object to manage the life cycle of one instance of your app’s user interface. The window scene delegate conforms to the [`UISceneDelegate`](./uiscenedelegate.md) protocol, and you use it to receive notifications when its scene connects to the app, enters the foreground, and so on. You also use it to respond to changes in the underlying environment of the scene. For example, if the user resizes a scene, use your delegate to make any needed changes to your content to accommodate the new size.
 

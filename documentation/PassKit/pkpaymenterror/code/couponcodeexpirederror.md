@@ -23,7 +23,7 @@ case couponCodeExpiredError
 PKPaymentCouponCodeExpiredError
 ```
 
-#### Discussion
+## Discussion
 
 Use this error code if the coupon code entered in the payment sheet has expired. You can use [`paymentCouponCodeExpiredError(localizedDescription:)`](../../pkpaymentrequest/paymentcouponcodeexpirederror%28localizeddescription%29.md) to create an expired coupon error object.
 

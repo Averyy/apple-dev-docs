@@ -20,7 +20,7 @@ Creates and returns an image object from a Quartz 2D image using the specified o
 + (CIImage *) imageWithCGImage:(CGImageRef) image options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Return Value
+## Return Value
 
 An image object initialized with the contents of the Quartz 2D image and the specified options.
 

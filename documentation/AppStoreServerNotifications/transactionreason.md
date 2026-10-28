@@ -24,7 +24,7 @@ string transactionReason
 
 - [App Store Server Notifications changelog](./app-store-server-notifications-changelog.md)
 
-#### Discussion
+## Discussion
 
 If a customer upgrades an auto-renewable subscription, the upgrade is effective immediately and the `transactionReason` is `PURCHASE`.
 

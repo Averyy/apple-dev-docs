@@ -15,11 +15,11 @@ Fetches targeting keywords in a campaign’s ad groups.
 
 - [Apple Ads Campaign Management API 4](./apple-search-ads-campaign-management-api-4.md)
 
-#### Discussion
+## Discussion
 
 Use this endpoint to find targeting keywords in different ad groups within the same campaign. Use the associated `campaignId` in the URI. Find calls use [`Selector`](./selector.md) [`Condition`](./condition.md) operators to narrow results. If you don’t specify any selector conditions in the payload, the API returns all keywords across all ad groups of the campaign. For more information about available selection condition operators to use, see the [`Keyword`](./keyword.md) object.
 
-##### Payload example: Find targeting keywords in a campaign
+### Payload example: Find targeting keywords in a campaign
 
 **Request**:
 

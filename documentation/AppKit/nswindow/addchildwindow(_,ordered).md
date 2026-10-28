@@ -19,7 +19,7 @@ func addChildWindow(_ childWin: NSWindow, ordered place: NSWindow.OrderingMode)
 - (void) addChildWindow:(NSWindow *) childWin ordered:(NSWindowOrderingMode) place;
 ```
 
-#### Discussion
+## Discussion
 
 After the `childWin` is added as a child of the window, it is maintained in relative position indicated by `place` for subsequent ordering operations involving either window. While this attachment is active, moving `childWin` will not cause the window to move (as in sliding a drawer in or out), but moving the window will cause `childWin` to move.
 

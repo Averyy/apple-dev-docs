@@ -30,7 +30,7 @@ class PHContentEditingInput
 - [Displaying Live Photos](../PhotoKit/displaying-live-photos.md)
 - [Editing Asset Content](../PhotoKit/editing-asset-content.md)
 
-#### Overview
+## Overview
 
 To edit an asset’s photo or video content:
 

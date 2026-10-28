@@ -15,7 +15,7 @@ The name assigned to the route.
 name: string;
 ```
 
-#### Discussion
+## Discussion
 
 Display [`name`](./name.md) to the user so they can distinguish one route from another. MapKit JS localizes this string according to the [`Directions`](../directions.md) object’s [`language`](../directionsconstructoroptions/language.md) value.
 

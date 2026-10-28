@@ -17,7 +17,7 @@ var kIOBluetoothServiceBrowserControllerOptionsAutoStartInquiry: Int { get }
 kIOBluetoothServiceBrowserControllerOptionsAutoStartInquiry
 ```
 
-#### Discussion
+## Discussion
 
 - automatically start an inquiry when the panel is displayed. This has been deprecated in 10.5
 

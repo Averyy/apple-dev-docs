@@ -21,11 +21,11 @@ Returns a string created by reading data from the file at a given path and retur
 + (instancetype) stringWithContentsOfFile:(NSString *) path usedEncoding:(NSStringEncoding *) enc error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A string created by reading data from the file named by `path`. If the file can’t be opened or there is an encoding error, returns `nil`.
 
-#### Discussion
+## Discussion
 
 This method attempts to determine the encoding of the file at `path`.
 

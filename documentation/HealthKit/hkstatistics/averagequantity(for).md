@@ -24,7 +24,7 @@ func averageQuantity(for source: HKSource) -> HKQuantity?
 - (HKQuantity *) averageQuantityForSource:(HKSource *) source;
 ```
 
-#### Return Value
+## Return Value
 
 If both the [`discreteAverage`](../hkstatisticsoptions/discreteaverage.md) option and the [`separateBySource`](../hkstatisticsoptions/separatebysource.md) option were set, this method returns a quantity object. This object contains the average value from all the samples that match the query and that were created by the specified source. If the statistics options were not both set, this method returns `nil`
 

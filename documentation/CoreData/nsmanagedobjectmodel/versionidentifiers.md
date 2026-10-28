@@ -25,7 +25,7 @@ var versionIdentifiers: Set<AnyHashable> { get set }
 @property (copy) NSSet * versionIdentifiers;
 ```
 
-#### Discussion
+## Discussion
 
 Merged models return the combined collection of identifiers. The Core Data framework does not assign a default identifier to object models, nor does it depend on this value at runtime. For models you create in Xcode, set this value in the model inspector.
 

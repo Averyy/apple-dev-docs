@@ -36,7 +36,7 @@ nonisolated
 func navigationSubtitle<S>(_ subtitle: S) -> some View where S : StringProtocol
 ```
 
-#### Discussion
+## Discussion
 
 A view’s navigation subtitle is used to provide additional contextual information alongside the navigation title. On macOS, the primary destination’s subtitle is displayed with the navigation title in the titlebar. On iOS and iPadOS, the subtitle is displayed with the navigation title in the navigation bar.
 

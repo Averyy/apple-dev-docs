@@ -5,13 +5,13 @@
 
 Support the Platform SSO 2.0 protocol for encryption and decryption operations.
 
-#### Overview
+## Overview
 
 Key requests and key exchange requests require the SSO extension and the server to support the Platform SSO 2.0 protocol. To do so, the server needs to fully support requests, shared device keys, and the modified flows for registration, login, and unlock.
 
 These requests are similar to login requests. They start with a server nonce request, sign the JSON Web Token (JWT) using the device signing key, and require an encrypted response that uses the device encryption key.
 
-##### Request the key
+### Request the key
 
 The system uses a key request to ask the server to provision an `EC256` key for the supplied purpose. The server needs to issue a public key in a certificate so that normal keychain operations can find it and use the key. In macOS, encryption operations for login and unlock use the public key. The server can also return a context that’s stored with the key and sent with all key exchange requests. The use of the context isn’t required, but the server can encrypt it to store key material for the key, for example, to rotate encryption values. Storage of the context doesn’t include additional encryption.
 
@@ -99,7 +99,7 @@ client-request-id: DCAB01D3-B1FE-4E1C-802F-B3EBDCDF9E67
 platform_sso_version2.0&grant_type=urn:ietf:params:oauth:grant-type:jwt-bearer&assertion=ewogI...HGuQg
 ```
 
-##### Create the key response JSON Web Encryption (JWE)
+### Create the key response JSON Web Encryption (JWE)
 
 The response is a JWE that’s decrypted according to RFC 7516 Section 5.2 with JWE Compact Serialization.
 
@@ -153,7 +153,7 @@ The following code provides an example of a key response JWE body:
 }
 ```
 
-##### Request the key exchange
+### Request the key exchange
 
 The system uses the key exchange request when using the keys to decrypt data. Typically there are two or three requests occuring at the same time, depending on the number of decryption calls and required checks. These calls need to return quickly because the user is waiting for them to complete.
 
@@ -243,7 +243,7 @@ client-request-id: DCAB01D3-B1FE-4E1C-802F-B3EBDCDF9E67
 platform_sso_version=2.0&grant_type=urn:ietf:params:oauth:grant-type:jwt-bearer&assertion=ewogIC...JmVhg
 ```
 
-##### Receive the key exchange response JWE
+### Receive the key exchange response JWE
 
 The response is a JWE that’s decrypted according to RFC 7516 Section 5.2 with JWE Compact Serialization.
 

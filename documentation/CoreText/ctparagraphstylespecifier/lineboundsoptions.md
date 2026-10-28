@@ -25,7 +25,7 @@ case lineBoundsOptions
 kCTParagraphStyleSpecifierLineBoundsOptions
 ```
 
-#### Discussion
+## Discussion
 
 Type: [`CTLineBoundsOptions`](../ctlineboundsoptions.md). Default value `0` (that is, no options). Affects: [`CTTypesetter`](../cttypesetter.md).
 

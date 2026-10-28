@@ -20,7 +20,7 @@ class var readOnlyPropertyAttribute: CMIOExtensionPropertyAttributes<AnyObject> 
 @property (class, readonly) CMIOExtensionPropertyAttributes * readOnlyPropertyAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The attribute doesn’t contain values for its [`minValue`](./minvalue.md), [`maxValue`](./maxvalue.md), or [`validValues`](./validvalues.md) properties.
 

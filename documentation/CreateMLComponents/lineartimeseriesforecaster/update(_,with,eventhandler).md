@@ -23,7 +23,7 @@ func update(_ model: inout LinearTimeSeriesForecaster<Scalar>.Model, with input:
 
 Available when `Scalar` conforms to `MLShapedArrayScalar` and `BinaryFloatingPoint`.
 
-#### Discussion
+## Discussion
 
 This method uses a sliding window to chunk the input features into features of [`inputWindowSize`](./inputwindowsize.md) elements and annotations of [`forecastWindowSize`](./forecastwindowsize.md) elements. If you want to use a different windowing strategy, use [`update(_:withWindows:eventHandler:)`](./update%28_,withwindows,eventhandler%29.md).
 

@@ -24,7 +24,7 @@ convenience init(font: UIFont)
 + (instancetype) configurationWithFont:(UIFont *) font;
 ```
 
-#### Return Value
+## Return Value
 
 A new symbol configuration object with the specified information.
 

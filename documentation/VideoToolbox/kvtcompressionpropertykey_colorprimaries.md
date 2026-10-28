@@ -24,7 +24,7 @@ let kVTCompressionPropertyKey_ColorPrimaries: CFString
 extern CFStringRef const kVTCompressionPropertyKey_ColorPrimaries;
 ```
 
-#### Discussion
+## Discussion
 
 If a video encoder enforces specific colorimetry, this property will be read-only ([`VTSessionSetProperty(_:key:value:)`](./vtsessionsetproperty%28_,key,value%29.md) returns [`kVTPropertyReadOnlyErr`](./kvtpropertyreadonlyerr.md)). The value is set on the format description for output sample buffers.
 

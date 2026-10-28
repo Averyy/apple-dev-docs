@@ -20,11 +20,11 @@ init?(contentsOf url: URL, error errorInfo: AutoreleasingUnsafeMutablePointer<NS
 - (instancetype) initWithContentsOfURL:(NSURL *) url error:(NSDictionary<NSString *,id> **) errorInfo;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized script object, `nil` if an error occurs.
 
-#### Discussion
+## Discussion
 
 This method is a designated initializer for `NSAppleScript`.
 

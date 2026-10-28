@@ -23,7 +23,7 @@ func dismissalTransitionDidEnd(_ completed: Bool)
 - (void) dismissalTransitionDidEnd:(BOOL) completed;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method does nothing. Subclasses can override this method and use it to remove any custom views that the presentation controller added to the view hierarchy. Remove your views only if the `completed` parameter is [`true`](../../Swift/true.md).
 

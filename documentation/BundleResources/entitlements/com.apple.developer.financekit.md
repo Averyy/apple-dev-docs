@@ -20,7 +20,7 @@ An entitlement that allows an app to access financial data in FinanceKit.
 
 **Default**: `true`
 
-#### Discussion
+## Discussion
 
 Add this entitlement to your app to use [FinanceKit](../../FinanceKit/FinanceKit.md) to read financial data, and read and write order data. You need to get consent from the person using your app to access data in FinanceKit.
 

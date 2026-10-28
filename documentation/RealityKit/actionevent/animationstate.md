@@ -20,7 +20,7 @@ The animation state for the action.
 var animationState: (any AnimationStateProtocol)? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Used to procedurally animate a target value with cross-fading, and additive blending support.
 

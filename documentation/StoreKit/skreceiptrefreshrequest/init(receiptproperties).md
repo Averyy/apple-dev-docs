@@ -31,11 +31,11 @@ init(receiptProperties properties: [String : Any]?)
 
 - [Restoring purchased products](../restoring-purchased-products.md)
 
-#### Return Value
+## Return Value
 
 The initialized request.
 
-#### Discussion
+## Discussion
 
 In the sandbox environment, you can initialize a receipt with any combination of properties to test the state transitions related to Volume Purchase Plan receipts. Set the `properties` when you call this initializer.
 

@@ -24,7 +24,7 @@ var tileWidth: Int { get set }
 @property (nonatomic) NSUInteger tileWidth;
 ```
 
-#### Discussion
+## Discussion
 
 For tile-based rendering, Metal divides each render attachment into smaller regions, or *tiles*. The property’s default is `0`, which tells Metal to select a size that fits in tile memory.
 

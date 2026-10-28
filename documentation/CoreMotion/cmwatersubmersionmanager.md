@@ -27,7 +27,7 @@ class CMWaterSubmersionManager
 
 - [Accessing submersion data](./accessing-submersion-data.md)
 
-#### Overview
+## Overview
 
 Use this class to receive live depth, water pressure, and water temperature data on Apple Watch Ultra.
 

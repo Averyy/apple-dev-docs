@@ -14,7 +14,7 @@
 #define kIOPropertyFibreChannelALPAKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is the 8-bit Arbitrated Loop Physical Address (AL_PA) value as defined in the FC-AL-2 specification.
 

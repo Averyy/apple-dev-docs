@@ -6,7 +6,7 @@
 
 An atom that uses one byte per sample as a bit field that describes dependency information.
 
-#### Overview
+## Overview
 
 The sample dependency flags atom has a type of `'sdtp'`.
 

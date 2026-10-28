@@ -23,7 +23,7 @@ optional func collectionView(_ collectionView: UICollectionView, didEndDisplayin
 - (void) collectionView:(UICollectionView *) collectionView didEndDisplayingCell:(UICollectionViewCell *) cell forItemAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to detect when a cell is removed from a collection view, as opposed to monitoring the view itself to see when it disappears.
 

@@ -25,7 +25,7 @@ string AuditOperator
 - `GREATER_THAN_OR_EQUAL_TO`: The field value must be greater than or equal to the provided value.
 - `BETWEEN`: The field value must fall within the inclusive range defined by exactly two values. Required for `eventTime` filters.
 
-#### Discussion
+## Discussion
 
 The `AuditOperator` determines how the system applies the filter `values` against the target field. Use `GREATER_THAN` or `LESS_THAN` with a single timestamp for an open-ended `eventTime` filter.
 

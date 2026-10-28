@@ -24,7 +24,7 @@ convenience init(paletteColors: [UIColor])
 + (instancetype) configurationWithPaletteColors:(NSArray<UIColor *> *) paletteColors;
 ```
 
-#### Discussion
+## Discussion
 
 When you create an image with this configuration, the system applies each color to the corresponding layer in the symbol layer hierarchy.
 

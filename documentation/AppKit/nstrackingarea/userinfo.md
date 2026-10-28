@@ -19,7 +19,7 @@ var userInfo: [AnyHashable : Any]? { get }
 @property (copy, readonly, nullable) NSDictionary<id,id> * userInfo;
 ```
 
-#### Discussion
+## Discussion
 
 You can obtain this dictionary per event in each [`mouseEntered(with:)`](../nsresponder/mouseentered%28with%29.md) and [`mouseExited(with:)`](../nsresponder/mouseexited%28with%29.md) method by querying the passed-in `NSEvent` object with `[[event trackingArea] userData]`.
 

@@ -5,7 +5,7 @@
 
 Atoms that act as a container for the information that describes a movie’s data.
 
-#### Overview
+## Overview
 
 QuickTime movie atoms have an atom type of `'moov'`. These atoms act as a container for the information that describes a movie’s data. This information, or metadata, is stored in a number of different types of atoms. Generally speaking, only metadata is stored in a movie atom. Sample data for the movie, such as audio or video samples, are referenced in the movie atom, but are not contained in it.
 

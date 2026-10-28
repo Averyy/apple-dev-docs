@@ -19,7 +19,7 @@ var headIndent: CGFloat { get }
 @property (readonly) CGFloat headIndent;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the distance (in points) from the leading margin of a text container to the beginning of lines other than the first. This value is always nonnegative.
 

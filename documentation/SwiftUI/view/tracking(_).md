@@ -22,7 +22,7 @@ nonisolated
 func tracking(_ tracking: CGFloat) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view where text has the specified amount of tracking.
 

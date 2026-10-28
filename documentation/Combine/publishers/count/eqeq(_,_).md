@@ -23,11 +23,11 @@ static func == (lhs: Publishers.Count<Upstream>, rhs: Publishers.Count<Upstream>
 
 Available when `Upstream` conforms to `Publisher` and `Equatable`.
 
-#### Return Value
+## Return Value
 
 `true` if the two publishers’ `upstream` properties are equal; otherwise `false`.
 
-#### Discussion
+## Discussion
 
 - lhs: A `Count` instance to compare.
 - rhs: Another `Count` instance to compare.

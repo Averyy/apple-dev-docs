@@ -23,7 +23,7 @@ case absoluteColorimetric
 kCGRenderingIntentAbsoluteColorimetric
 ```
 
-#### Discussion
+## Discussion
 
 Map colors outside of the gamut of the output device to the closest possible match inside the gamut of the output device. This can produce a clipping effect, where two different color values in the gamut of the graphics context are mapped to the same color value in the output device’s gamut. Unlike the relative colorimetric, absolute colorimetric does not modify colors inside the gamut of the output device.
 

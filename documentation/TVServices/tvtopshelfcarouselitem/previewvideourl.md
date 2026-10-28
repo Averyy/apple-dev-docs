@@ -19,7 +19,7 @@ var previewVideoURL: URL? { get set }
 @property (nonatomic, copy, nullable) NSURL * previewVideoURL;
 ```
 
-#### Discussion
+## Discussion
 
 When the navigation focus stops on the item, the system removes the item’s static image or cinemagraph video and plays the video at the specified URL.
 

@@ -15,11 +15,11 @@ Determines a conversion path for a source and destinationencoding, then creates 
 OSStatus TECCreateConverter(TECObjectRef *newEncodingConverter, TextEncoding inputEncoding, TextEncoding outputEncoding);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 
-#### Discussion
+## Discussion
 
 You use this converter object reference with conversion functionssuch as  [`TECConvertText`](./api-1571824-tecconverttext.md)  toconvert text. This converter object describes the source, destination,and intermediate encodings; state information; and references torequired plug-ins.
 

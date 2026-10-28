@@ -19,11 +19,11 @@ func hv_capability(_ capability: hv_capability_t, _ value: UnsafeMutablePointer<
 extern hv_return_t hv_capability(hv_capability_t capability, uint64_t *value);
 ```
 
-#### Return Value
+## Return Value
 
 [`HV_SUCCESS`](./hv_success.md) if the operation was successful, otherwise an error code specified in [`hv_return_t`](./hv_return_t.md).
 
-#### Discussion
+## Discussion
 
 Intel-based Mac only.
 

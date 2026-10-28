@@ -5,13 +5,13 @@
 
 Distribute a customized watch face to Apple Watch users.
 
-#### Overview
+## Overview
 
 In watchOS 7 and later, all users (including an app’s developers or marketing departments) can exchange customized watch face files. These files contain all the complications placed on the watch face, as well as any specified colors, features, or images. When the system adds a watch face, it checks for the apps that provide the face’s complications, and prompts the user to install any missing apps. As a result, shared watch faces provide an opportunity to introduce your app to new users.
 
 Users can share a watch face that includes one of your app’s complications—essentially sharing your app at the same time. You can also create and share watch faces that explicitly highlight your app. For example, if your app supports multiple complications, you can share a watch face that shows the range of its complications. You can also offer to load the watch face directly from your watchOS or companion iOS app.
 
-##### Export an Apple Watch face
+### Export an Apple Watch face
 
 To share a face from Apple Watch, press firmly on the watch face. When the face configuration interface appears, select the share button and the contact or phone number with which to share the watch face. The watch then shares the watch face using Messages.
 
@@ -27,7 +27,7 @@ You can then share the watch face file using Messages, Mail, or other apps that 
 
 The resulting `.watchface` file contains information about the watch face, including its configuration, color, any images it displays, and its complications. The file may also include [`userInfo`](./clkcomplication/userinfo.md) or [`userActivity`](./clkcomplication/useractivity.md) data associated with the complications, although the system removes this data if the user excludes personal data from the watch face.
 
-##### Display a Shared Watch face
+### Display a Shared Watch face
 
 When presenting a watch face from your app or on the web, always display a preview of the watch face, and a button that uses an official Add Watch Face asset.
 
@@ -39,7 +39,7 @@ Finally, use the `application/vnd.apple.watchface` MIME type to host a watch fac
 
 For additional guidelines on sharing watch faces, see the [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/watchos/elements/faces/). For more information on the Add Watch Face assets, see [Apple Design Resources](https://developer.apple.com/design/resources/).
 
-##### Support shared complications
+### Support shared complications
 
 To ensure that your app’s complications appear as expected in the watch face preview, you must implement your ClockKit data source’s [`getLocalizableSampleTemplate(for:withHandler:)`](./clkcomplicationdatasource/getlocalizablesampletemplate%28for,withhandler%29.md) method. You can’t just add preview images to the assets catalog.
 
@@ -51,7 +51,7 @@ Finally, ClockKit calls your data source’s methods to populate the complicatio
 
 > **Note**:  Users can exclude personal information from watch faces that they share. When a user excludes information, the system sets the shared [`CLKComplication`](./clkcomplication.md) object’s `identifier` property to `CLKDefaultComplicationTypeIdentifier`. If your watchOS app provides complications, your [`CLKComplicationDataSource`](./clkcomplicationdatasource.md) must handle default identifiers.
 
-##### Add Watch Faces from your app
+### Add Watch Faces from your app
 
 To offer a watch face directly in your app, customize and share one of the watch faces, emailing the .`watchface` file and preview to yourself. To embed the watch file in an app, drag both the `.watchface` file and the preview into Xcode to add them to the app’s bundle.
 

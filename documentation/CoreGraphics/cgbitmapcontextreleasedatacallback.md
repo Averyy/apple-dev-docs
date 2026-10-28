@@ -25,7 +25,7 @@ typealias CGBitmapContextReleaseDataCallback = (UnsafeMutableRawPointer?, Unsafe
 typedef void (*)(void *, void *) CGBitmapContextReleaseDataCallback;
 ```
 
-#### Discussion
+## Discussion
 
 The `releaseInfo` parameter contains the contextual data that you passed to the `CGContext/init(data:width:height:bitsPerComponent:bytesPerRow:space:bitmapInfo:releaseCallback:releaseInfo:)` function. The `data` parameter contains a pointer to the bitmap data for you to release.
 

@@ -24,7 +24,7 @@ let GCProductCategorySiriRemote1stGen: String
 extern NSString * const GCProductCategorySiriRemote1stGen;
 ```
 
-#### Discussion
+## Discussion
 
 Remotes in this category feature motion and a touch surface for navigation.
 

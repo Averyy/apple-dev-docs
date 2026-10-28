@@ -25,7 +25,7 @@ let NSRecoveryAttempterErrorKey: String
 extern NSErrorUserInfoKey const NSRecoveryAttempterErrorKey;
 ```
 
-#### Discussion
+## Discussion
 
 The recovery attempter must be an object that can correctly interpret an index into the array returned by [`recoveryAttempter`](./nserror/recoveryattempter.md).
 

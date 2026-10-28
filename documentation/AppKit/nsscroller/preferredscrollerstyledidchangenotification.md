@@ -19,7 +19,7 @@ class let preferredScrollerStyleDidChangeNotification: NSNotification.Name
 extern NSNotificationName const NSPreferredScrollerStyleDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 For a full discussion, see [`preferredScrollerStyle`](./preferredscrollerstyle.md).
 

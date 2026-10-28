@@ -19,7 +19,7 @@ case graphicCircular
 CLKComplicationFamilyGraphicCircular
 ```
 
-#### Discussion
+## Discussion
 
 The following figure shows the size and location of the graphic circular complication.
 

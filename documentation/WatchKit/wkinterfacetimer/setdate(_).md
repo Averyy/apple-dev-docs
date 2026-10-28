@@ -19,7 +19,7 @@ func setDate(_ date: Date)
 - (void) setDate:(NSDate *) date;
 ```
 
-#### Discussion
+## Discussion
 
 This method updates the target value but does not automatically update the timer display. You must call the timer’s [`start()`](./start%28%29.md) method to begin updating the text it displays. When you do, the timer text is updated based on the time you set using this method.
 

@@ -21,7 +21,7 @@ Appends the given value’s bytes repeatedly to this span’s bytes.
 mutating func append<T>(repeating repeatedValue: T, count: Int, as type: T.Type, _ byteOrder: ByteOrder) where T : BitwiseCopyable, T : ConvertibleToBytes, T : FixedWidthInteger
 ```
 
-#### Discussion
+## Discussion
 
 There must be at least `count * MemoryLayout<T>.stride` bytes available in the span.
 

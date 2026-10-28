@@ -5,7 +5,7 @@
 
 Obtain a preconfigured activation layer with common behavior.
 
-#### Overview
+## Overview
 
 Use a factory to receive a preconfigured activation layer for various activation types.
 

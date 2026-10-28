@@ -21,11 +21,11 @@ Returns the data stored for the given key as represented in a container keyed by
 func nestedContainer<NestedKey>(keyedBy type: NestedKey.Type, forKey key: KeyedDecodingContainer<K>.Key) throws -> KeyedDecodingContainer<NestedKey> where NestedKey : CodingKey
 ```
 
-#### Return Value
+## Return Value
 
 A keyed decoding container view into `self`.
 
-#### Discussion
+## Discussion
 
 > **Throws**: `DecodingError.typeMismatch` if the encountered stored value is not a keyed container.
 

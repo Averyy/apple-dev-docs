@@ -25,11 +25,11 @@ func CFEqual(_ cf1: CFTypeRef!, _ cf2: CFTypeRef!) -> Bool
 extern Boolean CFEqual(CFTypeRef cf1, CFTypeRef cf2);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `cf1` and `cf2` are of the same type and considered equal, otherwise `false`.
 
-#### Discussion
+## Discussion
 
 Equality is something specific to each Core Foundation opaque type. For example, two CFNumber objects are equal if the numeric values they represent are equal. Two CFString objects are equal if they represent identical sequences of characters, regardless of encoding.
 

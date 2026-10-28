@@ -20,7 +20,7 @@ case customIconItemAttr
 kSecCustomIconItemAttr
 ```
 
-#### Discussion
+## Discussion
 
 Use of this attribute is deprecated. Custom icons for keychains are not supported in macOS.
 

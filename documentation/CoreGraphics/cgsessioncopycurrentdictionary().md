@@ -20,7 +20,7 @@ func CGSessionCopyCurrentDictionary() -> CFDictionary?
 extern CFDictionaryRefCGSessionCopyCurrentDictionary();
 ```
 
-#### Return Value
+## Return Value
 
 A window server session dictionary, or `NULL` if the caller is not running within a Quartz GUI session or the window server is disabled. You should release the dictionary when you are finished using it. For information about the key-value pairs in this dictionary, see [Window Server Session Properties](./window-server-session-properties.md).
 

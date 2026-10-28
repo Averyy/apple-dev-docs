@@ -22,7 +22,7 @@ weak var dataSource: (any UIPickerViewDataSource)? { get set }
 @property (nonatomic, weak, nullable) id<UIPickerViewDataSource> dataSource;
 ```
 
-#### Discussion
+## Discussion
 
 The data source must adopt the [`UIPickerViewDataSource`](../uipickerviewdatasource.md) protocol and implement the required methods to return the number of components and the number of rows in each component.
 

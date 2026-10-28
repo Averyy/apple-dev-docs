@@ -22,7 +22,7 @@ nonisolated
 func blur(radius: CGFloat, opaque: Bool = false) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use `blur(radius:opaque:)` to apply a gaussian blur effect to the rendering of this view.
 

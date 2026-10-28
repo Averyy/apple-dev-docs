@@ -25,11 +25,11 @@ class func play() -> SKAction
 + (SKAction *) play;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 This action may only be executed on an [`SKAudioNode`](../skaudionode.md) object.
 

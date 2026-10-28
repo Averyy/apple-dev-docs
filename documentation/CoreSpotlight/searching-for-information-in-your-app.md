@@ -5,19 +5,19 @@
 
 Search for app-specific content and refine search results using predicates and filters.
 
-#### Overview
+## Overview
 
 Add search capabilities to your app to find relevant information quickly. Instead of building your own custom search tools, index your content using the Core Spotlight APIs and use the framework-provided queries to retrieve information. Indexing your content makes it available to both your app and to the system’s Spotlight search feature.
 
 Use a [`CSSearchQuery`](./cssearchquery.md) object to execute a search of your app’s indexed content. With this query object, you specify which attributes of an item to match, and the values that constitute a match. For example, you might tell the query to look for media clips with a duration in a specific range. Although you might incorporate input from your app’s UI when building your query string, use this query type to match specific attributes of your indexed content. For information about how to search based solely on input from a person, see [Building a search interface for your app](./building-a-search-interface-for-your-app.md).
 
-##### Select the attributes you want the query to retrieve
+### Select the attributes you want the query to retrieve
 
 When you execute a query, the system doesn’t automatically retrieve every property of your [`CSSearchableItem`](./cssearchableitem.md) objects. Instead, it retrieves only the properties you specifically request. This behavior improves performance by not spending time to retrieve information your app doesn’t need.
 
 Identify the properties you want, and specify the property names as strings when you initialize your query. For example, to fetch the title and display name of each item, include “title” and “displayName” strings in the [`fetchAttributes`](./cssearchquerycontext/fetchattributes.md) property of your context object.
 
-##### Create a query string for your search
+### Create a query string for your search
 
 When you execute a query, Core Spotlight evaluates each item in the index against a query string you provide. Construct your query string from one or more predicates, and use each predicate to evaluate an attribute of the indexed item. If the predicates in the overall query string evaluate to true for an item, the query object returns the item in the search results. For each predicate in your query string, use one of the following formats:
 
@@ -77,7 +77,7 @@ To detect the presence or absence of a particular attribute in an item, compare 
 | `completionDate == "*"` | Matches an item when the `completionDate` attribute is present and has a value. |
 | `completionDate != "*"` | Matches an item when the `completionDate` attribute is absent. |
 
-##### Match dates and times in a query string
+### Match dates and times in a query string
 
 When an attribute contains a date or time value, there are two ways you can specify the value portion of your predicate:
 
@@ -109,7 +109,7 @@ The following example shows a query string that includes different types of pred
  InRange(completionDate,$time.today(-10),$time.today)
 ```
 
-##### Start the query and process the results
+### Start the query and process the results
 
 Search queries are one-shot objects. While they run, they deliver matching items asynchronously to the handlers you provide. When there are no more items, the query stops. You can also stop a query early by calling its [`cancel()`](./cssearchquery/cancel%28%29.md) method before the system delivers all matching results.
 

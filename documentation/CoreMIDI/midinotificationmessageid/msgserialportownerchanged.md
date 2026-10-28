@@ -25,7 +25,7 @@ case msgSerialPortOwnerChanged
 kMIDIMsgSerialPortOwnerChanged
 ```
 
-#### Discussion
+## Discussion
 
 This type has no data.
 

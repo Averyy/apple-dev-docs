@@ -16,7 +16,7 @@ The content-selection modes supported by the picker.
 var allowedPickerModes: SCContentSharingPickerMode
 ```
 
-#### Discussion
+## Discussion
 
 The default value doesn’t exclude selecting any content for streaming. There isn’t an equivalent [`SCContentSharingPickerMode`](../sccontentsharingpickermode.md) available to reset this property once changed.
 

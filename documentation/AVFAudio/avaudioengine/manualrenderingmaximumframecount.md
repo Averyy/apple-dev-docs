@@ -25,7 +25,7 @@ var manualRenderingMaximumFrameCount: AVAudioFrameCount { get }
 @property (nonatomic, readonly) AVAudioFrameCount manualRenderingMaximumFrameCount;
 ```
 
-#### Discussion
+## Discussion
 
 If you get this property when the engine isn’t in manual rendering mode, it returns zero.
 

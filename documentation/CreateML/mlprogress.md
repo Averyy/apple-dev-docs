@@ -20,7 +20,7 @@ A convenience type that exposes information about the progress of a training ses
 struct MLProgress
 ```
 
-#### Overview
+## Overview
 
 Create ML uses this type to exposes specific values within a *Progress* instance as properties.
 

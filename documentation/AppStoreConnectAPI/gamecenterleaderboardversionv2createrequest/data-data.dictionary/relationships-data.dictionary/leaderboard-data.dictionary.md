@@ -15,7 +15,7 @@ The data that describes the leaderboard of the Game Center leaderboard version.
 object GameCenterLeaderboardVersionV2CreateRequest.Data.Relationships.Leaderboard
 ```
 
-#### Overview
+## Overview
 
 - data:
 

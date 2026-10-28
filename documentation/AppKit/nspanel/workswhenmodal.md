@@ -19,7 +19,7 @@ var worksWhenModal: Bool { get set }
 @property BOOL worksWhenModal;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the panel receives keyboard and mouse events even when some other window is being run modally; when the value is [`false`](../../Swift/false.md), the panel is prevented from receiving events while a modal loop or session is running. By default, the value of this property is [`false`](../../Swift/false.md), indicating a panel’s ineligibility for events during a modal loop or session. See [How Modal Windows Work](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/WinPanel/Concepts/UsingModalWindows.html#//apple_ref/doc/uid/20000223) for more information on modal windows and panels.
 

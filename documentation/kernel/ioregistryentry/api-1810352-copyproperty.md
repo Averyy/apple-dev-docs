@@ -12,11 +12,11 @@ virtual OSObject * copyProperty(
  const char *aKey) const;
 ```
 
-#### Return Value
+## Return Value
 
 The property value found, or zero. It should be released by the caller.
 
-#### Overview
+## Overview
 
 This method will lookup a property in a registry entry's property table, using the OSDictionary::getObject semantics, and return a reference to the caller. This method is synchronized with other IORegistryEntry accesses to the property table.
 

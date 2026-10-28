@@ -25,11 +25,11 @@ class func isVoIPAllowed() -> Bool
 + (BOOL) isVoIPAllowed;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if voice chat is available to the application.
 
-#### Discussion
+## Discussion
 
 Some countries or phone carriers may restrict the availability of voice over IP services. Before retrieving the shared voice chat service object, your application should check to see whether voice chat is available.
 

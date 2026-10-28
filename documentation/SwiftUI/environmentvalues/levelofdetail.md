@@ -18,7 +18,7 @@ The level of detail the view is recommended to have.
 var levelOfDetail: LevelOfDetail { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Read from the environment with
 

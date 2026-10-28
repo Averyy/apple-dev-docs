@@ -20,7 +20,7 @@ init(fileURL: URL)
 - (instancetype) initWithFileURL:(NSURL *) fileURL;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to provide a preview by providing a URL to a file of a supported type.
 

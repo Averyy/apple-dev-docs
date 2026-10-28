@@ -25,7 +25,7 @@ var maximumSequenceLength: Int { get }
 @property (readonly) NSUInteger maximumSequenceLength;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: The model operates on subword tokens rather than whole words. Each token may represent a single character, part of a word, or (less commonly) an entire word. Most words are split into multiple tokens, especially rare or complex terms. As a result, the number of tokens in a sequence is often greater than the number of words.
 

@@ -5,7 +5,7 @@
 
 Build neural networks with layers.
 
-#### Overview
+## Overview
 
 - Think carefully about the edge mode requested for pooling layers. The default value is [`MPSImageEdgeMode.zero`](./mpsimageedgemode/zero.md), but there are times when a [`MPSImageEdgeMode.clamp`](./mpsimageedgemode/clamp.md) value may be better.
 - To avoid reading off the edge of an image for filters that have a filter area (convolution, pooling), set `MPSCNNKernel.offset = (MPSOffset){ .x = kernelWidth/2, .y = kernelHeight/2, .z = 0}` and reduce the size of the output image by `{kernelWidth-1, kernelHeight-1, 0}`. The filter area stretches up and to the left of the kernel offset by `{kernelWidth/2, kernelHeight/2}`.

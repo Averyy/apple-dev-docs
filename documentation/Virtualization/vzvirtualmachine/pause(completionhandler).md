@@ -15,7 +15,7 @@ Pauses a running VM and notifies the specified completion handler of the results
 func pause(completionHandler: @escaping (Result<Void, any Error>) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to pause a Vm that’s in the [`VZVirtualMachine.State.running`](./state-swift.enum/running.md) state. To determine if a virtual machine is in a state that allows you to pause it, check the VM’s [`canPause`](./canpause.md) property.
 

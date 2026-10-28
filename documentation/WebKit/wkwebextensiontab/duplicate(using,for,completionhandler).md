@@ -27,7 +27,7 @@ optional func duplicate(using configuration: WKWebExtension.TabConfiguration, fo
 - (void) duplicateUsingConfiguration:(WKWebExtensionTabConfiguration *) configuration forWebExtensionContext:(WKWebExtensionContext *) context completionHandler:(void (^)(id<WKWebExtensionTab>duplicatedTab, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This is equivalent to the user selecting to duplicate the tab through a menu item, with the specified configuration.
 

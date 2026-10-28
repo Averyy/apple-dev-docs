@@ -20,7 +20,7 @@ func toggleSectionCollapse(_ sender: Any)
 - (void) toggleSectionCollapse:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 The icon view in Finder offers this type of collapsible section behavior when users choose the Show Less and Show More buttons. To enable this behavior, your header view must conform to the `NSCollectionViewSectionHeaderView` protocol, because the collection view uses the `sectionCollapseButton` property to identify the button that controls the collapse action.
 

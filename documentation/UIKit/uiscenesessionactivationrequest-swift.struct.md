@@ -19,7 +19,7 @@ A collection of properties that you use to request activation of a scene.
 struct UISceneSessionActivationRequest
 ```
 
-#### Overview
+## Overview
 
 A `UISceneSessionActiviationRequest` object provides information about how to activate a scene session. Create a request to specify:
 

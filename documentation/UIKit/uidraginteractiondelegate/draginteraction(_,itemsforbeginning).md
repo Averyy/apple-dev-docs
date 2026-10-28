@@ -27,11 +27,11 @@ func dragInteraction(_ interaction: UIDragInteraction, itemsForBeginning session
 
 - [Making a view into a drag source](../making-a-view-into-a-drag-source.md)
 
-#### Return Value
+## Return Value
 
 An array of drag items to include in the drag session, or an empty array if there are no drag items for the session.
 
-#### Discussion
+## Discussion
 
 As part of enabling dragging from a view, implement this method to return an array of one or more drag items. The system calls this method and uses this array to populate the drag session’s `items` property.
 

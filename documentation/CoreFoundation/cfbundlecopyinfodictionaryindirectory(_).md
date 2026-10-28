@@ -25,11 +25,11 @@ func CFBundleCopyInfoDictionaryInDirectory(_ bundleURL: CFURL!) -> CFDictionary!
 extern CFDictionaryRefCFBundleCopyInfoDictionaryInDirectory(CFURLRef bundleURL);
 ```
 
-#### Return Value
+## Return Value
 
 A CFDictionary object containing the information dictionary for a bundle located at `bundleURL`. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 This function provides a means to obtain an information dictionary for a bundle without first creating a CFBundle object.
 

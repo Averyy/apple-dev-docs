@@ -40,7 +40,7 @@ class GKMatchmakerViewController
 - [Finding players using matchmaking rules](./finding-players-using-matchmaking-rules.md)
 - [Finding players with similar skill levels](./finding-players-with-similar-skill-levels.md)
 
-#### Overview
+## Overview
 
 Before you create a `GKMatchmakerViewController` object, create a [`GKMatchRequest`](./gkmatchrequest.md) object and configure it according to the parameters of your game. Then pass the match request to the [`init(matchRequest:)`](./gkmatchmakerviewcontroller/init%28matchrequest%29.md) initializer to create the view controller.
 

@@ -24,11 +24,11 @@ func AudioQueueFlush(_ inAQ: AudioQueueRef) -> OSStatus
 extern OSStatus AudioQueueFlush(AudioQueueRef inAQ);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See Result Codes.
 
-#### Discussion
+## Discussion
 
 Call [`AudioQueueFlush(_:)`](./audioqueueflush%28_%29.md) after enqueuing the last audio queue buffer to ensure that all buffered data, as well as all audio data in the midst of processing, gets recorded or played. If you do not call this function, stale data in the audio queue’s decoder may interfere with playback or recording of the next set of buffers.
 

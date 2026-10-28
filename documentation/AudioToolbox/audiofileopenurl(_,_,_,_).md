@@ -24,7 +24,7 @@ func AudioFileOpenURL(_ inFileRef: CFURL, _ inPermissions: AudioFilePermissions,
 extern OSStatus AudioFileOpenURL(CFURLRef inFileRef, AudioFilePermissions inPermissions, AudioFileTypeID inFileTypeHint, AudioFileID*outAudioFile);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See Result Codes.
 

@@ -20,7 +20,7 @@ Constants that specify the highlight color to use with the text.
 typedef NSString * NSTextHighlightColorScheme;
 ```
 
-#### Overview
+## Overview
 
 Use an [`NSTextHighlightColorScheme`](./nstexthighlightcolorscheme.md) structure as the value of the [`NSTextHighlightColorSchemeAttributeName`](./nstexthighlightcolorschemeattributename.md) attribute. That attribute specifies which color to use when drawing the highlight on the text. This attribute specifies only the color option. To display the highlight itself, add the [`NSTextHighlightStyleAttributeName`](./nstexthighlightstyleattributename.md) attribute to the text.
 

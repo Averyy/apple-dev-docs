@@ -21,7 +21,7 @@ A snippet intent that renders an empty view.
 struct EmptySnippetIntent
 ```
 
-#### Overview
+## Overview
 
 You don’t create this type directly. AppIntent uses the default value for functions that expect a `SnippetIntent`.
 

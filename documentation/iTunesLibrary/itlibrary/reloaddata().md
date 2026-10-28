@@ -20,7 +20,7 @@ func reloadData() -> Bool
 - (BOOL) reloadData;
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`true`](../../Swift/true.md) if the data reloads, or [`false`](../../Swift/false.md) if an error occurs.
 

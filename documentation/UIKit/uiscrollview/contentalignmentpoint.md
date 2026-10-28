@@ -23,7 +23,7 @@ var contentAlignmentPoint: CGPoint { get set }
 @property (nonatomic) CGPoint contentAlignmentPoint;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this point is in the unit square, with `(0,0)` representing the top-left corner of the scroll view’s frame, and `(1,1)` representing the bottom-right corner. The default value is `(0,0)`.
 

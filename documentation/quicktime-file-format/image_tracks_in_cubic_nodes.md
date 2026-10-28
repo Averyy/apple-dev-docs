@@ -5,7 +5,7 @@
 
 Store cubic nodes that represent a panorama.
 
-#### Overview
+## Overview
 
 For a cubic node the image track contains six samples that correspond to the six square faces of the cube. The same applies to hot spot and preview tracks. The following diagram shows how the order of samples in the track corresponds to the orientation of the cube faces.
 

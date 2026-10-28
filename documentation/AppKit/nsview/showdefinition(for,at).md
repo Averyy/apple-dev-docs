@@ -19,7 +19,7 @@ func showDefinition(for attrString: NSAttributedString?, at textBaselineOrigin: 
 - (void) showDefinitionForAttributedString:(NSAttributedString *) attrString atPoint:(NSPoint) textBaselineOrigin;
 ```
 
-#### Discussion
+## Discussion
 
 Shows a window that displays the definition (or other subject depending on available dictionaries) of the specified attributed string.
 

@@ -21,11 +21,11 @@ Creates an empty texture with a specific size.
 + (instancetype) mutableTextureWithSize:(CGSize) size;
 ```
 
-#### Return Value
+## Return Value
 
 An empty mutable texture.
 
-#### Discussion
+## Discussion
 
 You must call the [`modifyPixelData(_:)`](./modifypixeldata%28_%29.md) method at least once before using this texture.
 

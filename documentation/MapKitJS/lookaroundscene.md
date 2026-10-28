@@ -15,7 +15,7 @@ Object that represents the current location of the view.
 class LookAroundScene
 ```
 
-#### Discussion
+## Discussion
 
 You can retain the object and use it on a different [`LookAround`](./lookaround.md) view or [`LookAroundPreview`](./lookaroundpreview.md) object
 

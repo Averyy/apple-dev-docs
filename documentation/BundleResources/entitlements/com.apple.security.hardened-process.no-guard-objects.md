@@ -21,7 +21,7 @@ A Boolean value that turns off guard objects for the process.
 
 **Default**: `false`
 
-#### Discussion
+## Discussion
 
 The system turns on guard objects automatically when you set [`com.apple.security.hardened-process.enhanced-security-version-string`](./com.apple.security.hardened-process.enhanced-security-version-string.md) to `2` or greater.
 

@@ -23,7 +23,7 @@ optional func url(for context: WKWebExtensionContext) -> URL?
 - (NSURL *) urlForWebExtensionContext:(WKWebExtensionContext *) context;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `URL` of the tab’s web view if not implemented.
 

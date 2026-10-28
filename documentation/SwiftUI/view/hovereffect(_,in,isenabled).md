@@ -16,7 +16,7 @@ nonisolated
 func hoverEffect(_ effect: some CustomHoverEffect, in group: HoverEffectGroup?, isEnabled: Bool = true) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A new view that applies the hover effect to `self` whenever the view is hovered, or the [`HoverEffectGroup`](../hovereffectgroup.md) is activated.
 

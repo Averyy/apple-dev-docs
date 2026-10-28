@@ -13,7 +13,7 @@ An atom that stores information that allows you to decode samples in the media.
 - [QuickTime File Format change log](./revision_history.md)
 - [Sprite media](./sprite_media.md)
 
-#### Overview
+## Overview
 
 The data stored in the sample description varies, depending on the media type. For example, in the case of video media, the sample descriptions are image description structures. The sample description information for each media type is explained in [Media data atom types](./media_data_atom_types.md).
 
@@ -30,7 +30,7 @@ The layout of the sample description atom is as follows.
 
 The sample description atom has an atom type of `'stsd'`. The sample description atom contains a table of sample descriptions. A media may have one or more sample descriptions, depending upon the number of different encoding schemes used in the media and on the number of files used to store the data. The sample-to-chunk atom identifies the sample description for each sample in the media by specifying the index into this table for the appropriate description (see [`Sample-to-chunk atom`](./sample-to-chunk_atom.md)).
 
-#### General structure of a sample description
+## General structure of a sample description
 
 While the exact format of the sample description varies by media type, the first four fields of every sample description are the same.
 

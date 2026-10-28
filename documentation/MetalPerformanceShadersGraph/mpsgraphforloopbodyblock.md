@@ -24,7 +24,7 @@ typealias MPSGraphForLoopBodyBlock = (MPSGraphTensor, [MPSGraphTensor]) -> [MPSG
 typedef NSArray<MPSGraphTensor *> *(^)(MPSGraphTensor *, NSArray<MPSGraphTensor *> *) MPSGraphForLoopBodyBlock;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor array with same count and corresponding element types as `initialIterationArguments` and return types of the `for` loop.
 

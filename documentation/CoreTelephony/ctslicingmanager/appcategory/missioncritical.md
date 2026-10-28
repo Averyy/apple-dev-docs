@@ -17,7 +17,7 @@ An application category for mission-critical applications requiring guaranteed r
 case missionCritical
 ```
 
-#### Discussion
+## Discussion
 
 Mission-critical slices provide the highest reliability and priority for applications where uninterrupted connectivity is essential. Use this category for applications that require guaranteed network access, such as emergency services or critical infrastructure apps.
 

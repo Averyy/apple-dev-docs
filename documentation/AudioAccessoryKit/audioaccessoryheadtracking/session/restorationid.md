@@ -15,7 +15,7 @@ A stable identifier the system uses to bring this extension out of suspension wh
 final let restorationID: String?
 ```
 
-#### Discussion
+## Discussion
 
 `nil` if the host could not provide a restoration identifier for the underlying accessory transport.
 

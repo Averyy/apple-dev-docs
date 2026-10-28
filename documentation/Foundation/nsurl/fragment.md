@@ -25,7 +25,7 @@ var fragment: String? { get }
 @property (copy, readonly, nullable) NSString * fragment;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the URL’s fragment. Any percent-encoded characters are not unescaped. If the receiver does not conform to RFC 1808, this property contains `nil`. For example, in the URL `http://www.example.com/index.html#jumpLocation`, the fragment identifier is `jumpLocation`.
 

@@ -23,7 +23,7 @@ static var didBecomeActive: NotificationCenter.BaseMessageIdentifier<NSExtension
 
 Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSExtensionContext.DidBecomeActiveMessage>`.
 
-#### Discussion
+## Discussion
 
 Use this identifier with [`NotificationCenter`](../../notificationcenter.md)’s `addObserver(of:for:using:)` or `messages(of:for:bufferSize:)` methods to observe messages of type [`NSExtensionContext.DidBecomeActiveMessage`](../../nsextensioncontext/didbecomeactivemessage.md).
 

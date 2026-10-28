@@ -19,7 +19,7 @@ func item(withTag tag: Int) -> NSMenuItem?
 - (NSMenuItem *) itemWithTag:(NSInteger) tag;
 ```
 
-#### Return Value
+## Return Value
 
 The found menu item (an object conforming to the NSMenuItem protocol) or `nil` if the object couldn’t be found.
 

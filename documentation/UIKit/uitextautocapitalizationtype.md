@@ -23,7 +23,7 @@ enum UITextAutocapitalizationType
 enum UITextAutocapitalizationType : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Use these constants with the [`autocapitalizationType`](./uitextinputtraits/autocapitalizationtype.md) property. If the script system doesn’t support capitalization, the keyboard input method ignores these constants.
 

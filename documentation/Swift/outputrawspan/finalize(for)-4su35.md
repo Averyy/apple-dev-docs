@@ -21,11 +21,11 @@ Consume the output span and return the number of initialized bytes.
 consuming func finalize(for buffer: Slice<UnsafeMutableRawBufferPointer>) -> Int
 ```
 
-#### Return Value
+## Return Value
 
 The number of initialized bytes in the same buffer, as tracked by the consumed `OutputRawSpan` instance.
 
-#### Discussion
+## Discussion
 
 This method should be invoked in the scope where the `OutputRawSpan` was created, when it is time to commit the contents of the updated buffer back into the construct being initialized.
 

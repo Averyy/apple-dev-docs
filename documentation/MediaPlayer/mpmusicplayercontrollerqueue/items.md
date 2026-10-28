@@ -23,7 +23,7 @@ var items: [MPMediaItem] { get }
 @property (nonatomic, copy, readonly) NSArray<MPMediaItem *> * items;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains an array of media items currently in the playing queue.
 

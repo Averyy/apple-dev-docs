@@ -21,7 +21,7 @@ var trailingImage: UIImage? { get }
 @property (nonatomic, readonly, nullable) UIImage * trailingImage;
 ```
 
-#### Discussion
+## Discussion
 
 Configurations are immutable. To change or remove the image that the message list item’s trailing region shows, create a new configuration and update the list item’s [`trailingConfiguration`](../cpmessagelistitem/trailingconfiguration.md) property.
 

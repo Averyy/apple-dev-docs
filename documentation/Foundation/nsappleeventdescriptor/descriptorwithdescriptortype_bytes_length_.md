@@ -16,7 +16,7 @@ Creates a descriptor initialized with the specified event type that stores the s
 + (NSAppleEventDescriptor *) descriptorWithDescriptorType:(DescType) descriptorType bytes:(const void *) bytes length:(NSUInteger) byteCount;
 ```
 
-#### Return Value
+## Return Value
 
 A descriptor with the specified type and data, or `nil` if an error occurs.
 

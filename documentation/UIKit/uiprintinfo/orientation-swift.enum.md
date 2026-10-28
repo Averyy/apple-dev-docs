@@ -22,7 +22,7 @@ enum Orientation
 enum UIPrintInfoOrientation : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 You use these constants when setting the value of the [`orientation`](./orientation-swift.property.md) property of a `UIPrintInfo` object.
 

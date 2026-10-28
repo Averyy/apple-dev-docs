@@ -25,7 +25,7 @@ static var badExecutable: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 The executable or shared library being referenced was malformed.
 

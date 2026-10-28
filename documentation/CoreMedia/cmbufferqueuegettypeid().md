@@ -25,11 +25,11 @@ func CMBufferQueueGetTypeID() -> CFTypeID
 extern CFTypeID CMBufferQueueGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 CFTypeID of `CMBufferQueue` objects.
 
-#### Discussion
+## Discussion
 
 You can check if a `CFTypeRef` object is actually a `CMBufferQueue` by comparing [`CFGetTypeID(_:)`](../CoreFoundation/cfgettypeid%28_%29.md)(object) with [`CMBufferQueueGetTypeID()`](./cmbufferqueuegettypeid%28%29.md)().
 

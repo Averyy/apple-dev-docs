@@ -23,11 +23,11 @@ func gss_add_buffer_set_member(_ minor_status: UnsafeMutablePointer<OM_uint32>, 
 OM_uint32 gss_add_buffer_set_member(OM_uint32 *minor_status, gss_buffer_t const member_buffer, gss_buffer_set_t*buffer_set);
 ```
 
-#### Return Value
+## Return Value
 
 A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on success, or [`GSS_S_FAILURE`](./gss_s_failure.md) otherwise. Inspect the `minor_status` parameter for additional information on failure.
 
-#### Discussion
+## Discussion
 
 The function does not add the `member_buffer` to the buffer set directly. Rather it allocates new memory for a copy of the buffer, which it includes in the buffer set. When you call [`gss_release_buffer_set(_:_:)`](./gss_release_buffer_set%28_,_%29.md) later, you deallocate the memory for the buffer set and all of its buffer copies, but this has no effect on the original `member_buffer`.
 

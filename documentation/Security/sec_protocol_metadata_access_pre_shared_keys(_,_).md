@@ -23,11 +23,11 @@ func sec_protocol_metadata_access_pre_shared_keys(_ metadata: sec_protocol_metad
 bool sec_protocol_metadata_access_pre_shared_keys(sec_protocol_metadata_t metadata, void (^handler)(dispatch_data_t psk, dispatch_data_t psk_identity));
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the PSKs were accessible, false otherwise.
 
-#### Discussion
+## Discussion
 
 Get the PSKs supported by the local instance.
 

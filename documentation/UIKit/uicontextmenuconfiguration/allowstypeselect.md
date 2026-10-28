@@ -22,7 +22,7 @@ var allowsTypeSelect: Bool { get set }
 @property (nonatomic) BOOL allowsTypeSelect;
 ```
 
-#### Discussion
+## Discussion
 
 TypeSelect lets users move focus to a matching menu option by typing on a hardware keyboard while the menu is open. When a context menu appears alongside a text field that actively receives keyboard input, TypeSelect can intercept keystrokes before they reach the text field.
 

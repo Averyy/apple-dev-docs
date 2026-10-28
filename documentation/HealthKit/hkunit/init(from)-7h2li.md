@@ -24,7 +24,7 @@ convenience init(from massFormatterUnit: MassFormatter.Unit)
 + (instancetype) unitFromMassFormatterUnit:(NSMassFormatterUnit) massFormatterUnit;
 ```
 
-#### Return Value
+## Return Value
 
 A HealthKit unit object, or `nil` if the unit parameter is not a valid energy formatter unit value.
 

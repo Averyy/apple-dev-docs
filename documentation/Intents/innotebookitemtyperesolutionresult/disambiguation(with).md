@@ -19,11 +19,11 @@ Creates an object whose resolution requires the user to select from among the sp
 static func disambiguation(with notebookItemTypesToDisambiguate: [INNotebookItemType]) -> Self
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INNotebookItemTypeResolutionResult`](../innotebookitemtyperesolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when more than one notebook item type matches the given information and you cannot pick one definitively. Ask the user to select from among the item types that you specify.
 

@@ -25,11 +25,11 @@ func xpc_fd_dup(_ xfd: xpc_object_t) -> Int32
 extern int xpc_fd_dup(xpc_object_t xfd);
 ```
 
-#### Return Value
+## Return Value
 
 A file descriptor that is equivalent to the one originally given to [`xpc_fd_create(_:)`](./xpc_fd_create%28_%29.md). If the descriptor could not be created, -1 is returned.
 
-#### Discussion
+## Discussion
 
 Multiple invocations of [`xpc_fd_dup(_:)`](./xpc_fd_dup%28_%29.md) will not return the same file descriptor number, but they will return descriptors that are equivalent, as though they had been created by `dup(2)`.
 

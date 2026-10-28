@@ -17,7 +17,7 @@ The cumulative energy in milli-watt-hours [mWh] of the reporting device rounded 
 let energy: Measurement<UnitEnergy>
 ```
 
-#### Discussion
+## Discussion
 
 The accumulator is reset on [`ElectricVehicleLoadEvent.Session.State.end`](../session-swift.struct/state-swift.enum/end.md).
 

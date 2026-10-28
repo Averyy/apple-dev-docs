@@ -20,7 +20,7 @@ optional func tableView(_ tableView: NSTableView, updateDraggingItemsForDrag dra
 - (void) tableView:(NSTableView *) tableView updateDraggingItemsForDrag:(id<NSDraggingInfo>) draggingInfo;
 ```
 
-#### Discussion
+## Discussion
 
 Required for multi-image dragging. Typically this will involve invoking [`enumerateDraggingItems(options:for:classes:searchOptions:using:)`](../nsdragginginfo/enumeratedraggingitems%28options,for,classes,searchoptions,using%29.md) on the `draggingInfo` parameter value and setting the `draggingItem` object’s [`imageComponentsProvider`](../nsdraggingitem/imagecomponentsprovider.md) to a proper image based on the content.
 

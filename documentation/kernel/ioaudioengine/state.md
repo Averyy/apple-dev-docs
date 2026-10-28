@@ -9,7 +9,7 @@
 IOAudioEngineState state;
 ```
 
-#### Overview
+## Overview
 
 The current state of the IOAudioEngine - running, stopped, paused.
 

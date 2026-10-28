@@ -20,7 +20,7 @@ Reads the encoded transformer and optimizer with a decoder.
 func decodeWithOptimizer(from decoder: inout any EstimatorDecoder) throws -> UpdatableSupervisedEstimatorToTemporalAdaptor<Base>.Transformer
 ```
 
-#### Return Value
+## Return Value
 
 The decoded transformer.
 

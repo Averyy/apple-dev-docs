@@ -19,7 +19,7 @@ func VTRegisterProfessionalVideoWorkflowVideoEncoders()
 extern void VTRegisterProfessionalVideoWorkflowVideoEncoders();
 ```
 
-#### Discussion
+## Discussion
 
 Loads the video encoders within the client’s `/Library/Video/Professional Video Workflow Plug-Ins/` directory, if any are present.
 

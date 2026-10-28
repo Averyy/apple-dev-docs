@@ -23,7 +23,7 @@ static func == (lhs: AsyncThrowingStream<Element, Failure>.Continuation, rhs: As
 
 Available when `Failure` conforms to `Error`.
 
-#### Discussion
+## Discussion
 
 Equality is the inverse of inequality. For any values `a` and `b`, `a == b` implies that `a != b` is `false`.
 

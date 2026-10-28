@@ -24,7 +24,7 @@ static let appleStandTime: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierAppleStandTime;
 ```
 
-#### Discussion
+## Discussion
 
 These samples use time units (described in [`HKUnit`](../hkunit.md)) and measure cumulative values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)).
 

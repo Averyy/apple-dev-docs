@@ -20,7 +20,7 @@ Creates an animation library from a variadic list of key-value pairs.
 init(dictionaryLiteral elements: (String, AnimationResource)...)
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`ExpressibleByDictionaryLiteral`](../../Swift/expressiblebydictionaryliteral.md) initializer by directly assigning the library to a dictionary literal.
 

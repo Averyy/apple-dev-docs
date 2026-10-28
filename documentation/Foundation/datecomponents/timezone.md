@@ -21,7 +21,7 @@ A time zone.
 var timeZone: TimeZone? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  This value is interpreted in the context of the calendar in which it is used.
 

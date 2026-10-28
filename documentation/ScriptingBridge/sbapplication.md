@@ -20,7 +20,7 @@ class SBApplication
 @interface SBApplication : SBObject
 ```
 
-#### Overview
+## Overview
 
 Although `SBApplication` includes methods that manually send and process Apple events, you should never have to call these methods directly. Instead, subclasses of `SBApplication` implement application-specific methods that handle the sending of Apple events automatically.
 
@@ -32,7 +32,7 @@ For example, if you wanted to get the current iTunes track, you can simply use t
 
 If you do need to send Apple events manually, consider using the `NSAppleEventDescriptor` class.
 
-#### Subclassing Notes
+## Subclassing Notes
 
 You rarely instantiate `SBApplication` objects directly. Instead, you get the shared instance of a application-specific subclass typically by calling one of the `applicationWith...` class methods, using a bundle identifier, process identifier, or URL to identify the application.
 

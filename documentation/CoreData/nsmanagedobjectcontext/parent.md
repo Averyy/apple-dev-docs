@@ -25,7 +25,7 @@ var parent: NSManagedObjectContext? { get set }
 @property (strong, nullable) NSManagedObjectContext * parentContext;
 ```
 
-#### Discussion
+## Discussion
 
 `nil` indicates there is no parent context. For more details, see [Parent store](../nsmanagedobjectcontext.md#Parent-store).
 

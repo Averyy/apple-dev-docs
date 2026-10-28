@@ -22,7 +22,7 @@ var biometryType: LABiometryType { get }
 @property (nonatomic, readonly) LABiometryType biometryType;
 ```
 
-#### Discussion
+## Discussion
 
 Type of biometry supported by the device.
 

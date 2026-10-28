@@ -19,11 +19,11 @@ func NSDrawTiledRects(_ boundsRect: NSRect, _ clipRect: NSRect, _ sides: UnsafeP
 extern NSRect NSDrawTiledRects(NSRect boundsRect, NSRect clipRect, const NSRectEdge *sides, const CGFloat *grays, NSInteger count);
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle that lies within the resulting border.
 
-#### Discussion
+## Discussion
 
 This is a generic function that can be used to draw different types of borders inside a given rectangle. These borders can be used to outline an area or to give rectangles the effect of being recessed from or elevated above the surface of the screen.
 

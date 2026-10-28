@@ -18,7 +18,7 @@ Returns a recommended image based light specular cube texture descriptor (for [`
 func makeSpecularDescriptor(fromCube texture: any MTLTexture) throws -> MTLTextureDescriptor
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: If `texture` is not a cube texture.
 

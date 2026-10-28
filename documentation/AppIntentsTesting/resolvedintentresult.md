@@ -26,7 +26,7 @@ struct ResolvedIntentResult
 
 - [Testing your App Intents code](./testing-your-app-intents-code.md)
 
-#### Overview
+## Overview
 
 After performing the app intent with [`run()`](./anyappintent/run%28%29.md), use the `value` property to inspect the output as shown in the following example:
 

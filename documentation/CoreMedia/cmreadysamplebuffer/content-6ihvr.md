@@ -23,7 +23,7 @@ var content: CMReadOnlyDataBlockBuffer { get set }
 
 Available when `Content` is `CMReadOnlyDataBlockBuffer`.
 
-#### Discussion
+## Discussion
 
 The content type of the sample buffer can not be changed by assigning different content.
 

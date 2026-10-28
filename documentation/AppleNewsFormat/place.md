@@ -15,11 +15,11 @@ The component for adding a map with a specific point of interest.
 object Place
 ```
 
-#### Discussion
+## Discussion
 
 Use the `Place` component to display a map with a single point of interest. The map automatically centers the point of interest based on the `latitude` and `longitude` locations you provide. If you want to display multiple pins on a map, use the [`Map`](./map.md) component.
 
-##### Example
+### Example
 
 ```json
 {

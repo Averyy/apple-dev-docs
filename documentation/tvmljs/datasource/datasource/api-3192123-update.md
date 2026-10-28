@@ -19,7 +19,7 @@ void update(
 );
 ```
 
-#### Discussion
+## Discussion
 
 The update API allows the existing data source to reuse already loaded items. This reduces any flashes that might traditionally occur in the UI because of these updates.
 

@@ -24,7 +24,7 @@ var kAudioFormatProperty_AvailableEncodeBitRates: AudioFormatPropertyID { get }
 kAudioFormatProperty_AvailableEncodeBitRates
 ```
 
-#### Discussion
+## Discussion
 
 An array of [`AudioValueRange`](../CoreAudioTypes/audiovaluerange.md) structures describing all available bit rates. The specifier is a `UInt32` format identifier.
 

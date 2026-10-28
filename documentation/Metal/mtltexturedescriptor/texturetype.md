@@ -24,7 +24,7 @@ var textureType: MTLTextureType { get set }
 @property (nonatomic, readwrite) MTLTextureType textureType;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `MTLTexture2D`.
 

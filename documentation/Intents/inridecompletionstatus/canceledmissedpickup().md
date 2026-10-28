@@ -23,11 +23,11 @@ class func canceledMissedPickup() -> Self
 + (instancetype) canceledMissedPickup;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized [`INRideCompletionStatus`](../inridecompletionstatus.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when a missed pickup caused the cancellation of the ride. This method sets the [`isCanceled`](./iscanceled.md) and [`isMissedPickup`](./ismissedpickup.md) properties of the returned object to [`true`](../../Swift/true.md), and it sets the [`isCompleted`](./iscompleted.md) and [`isOutstanding`](./isoutstanding.md) properties to [`false`](../../Swift/false.md).
 

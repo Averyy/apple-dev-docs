@@ -19,7 +19,7 @@ init?(displayID: CGDirectDisplayID)
 - (instancetype) initWithDisplayID:(CGDirectDisplayID) displayID;
 ```
 
-#### Return Value
+## Return Value
 
 A capture screen input initialized to provide media data from a given display. If the display cannot be used (because it is not available on the system, for example), returns `nil`.
 

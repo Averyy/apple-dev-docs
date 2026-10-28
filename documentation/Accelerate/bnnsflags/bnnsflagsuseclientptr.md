@@ -21,7 +21,7 @@ A flag that instructs the filter to use pointers to data you provide at creation
 BNNSFlagsUseClientPtr
 ```
 
-#### Discussion
+## Discussion
 
 Set this flag to instruct the filter to keep the pointers you provide at creation time and to work directly from this data. In this case, the you must ensure these pointers remain valid through the entire lifetime of the filter.
 

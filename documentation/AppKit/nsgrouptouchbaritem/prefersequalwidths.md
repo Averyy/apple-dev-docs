@@ -22,7 +22,7 @@ var prefersEqualWidths: Bool { get set }
 @property BOOL prefersEqualWidths;
 ```
 
-#### Discussion
+## Discussion
 
 When [`true`](../../Swift/true.md), items in the [`groupTouchBar`](./grouptouchbar.md) are sized to have equal widths when possible.
 

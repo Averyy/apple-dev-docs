@@ -19,7 +19,7 @@ var automaticallyMirrorsInRightToLeftLayout: Bool { get }
 @property (readonly) BOOL automaticallyMirrorsInRightToLeftLayout;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the layout of a scrubber in a right-to-left interface is the mirror of the left-to-right version. If you wish to customize the behavior of the scrubber in right-to-left interfaces in a custom subclass, override this method to return [`false`](../../Swift/false.md).
 

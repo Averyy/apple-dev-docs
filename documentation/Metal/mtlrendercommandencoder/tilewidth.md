@@ -25,7 +25,7 @@ var tileWidth: Int { get }
 @property (readonly) NSUInteger tileWidth;
 ```
 
-#### Discussion
+## Discussion
 
 The value comes from the [`tileWidth`](../mtlrenderpassdescriptor/tilewidth.md) property of the [`MTLRenderPassDescriptor`](../mtlrenderpassdescriptor.md) at the time you create the render command encoder.
 

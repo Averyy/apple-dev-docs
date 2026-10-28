@@ -24,7 +24,7 @@ var boundingBoxBuffer: MTL4BufferRange { get set }
 @property (nonatomic) MTL4BufferRange boundingBoxBuffer;
 ```
 
-#### Discussion
+## Discussion
 
 You are responsible for ensuring the buffer address of the range is not zero.
 

@@ -30,7 +30,7 @@ subscript(bounds: Range<AnimationLibraryComponent.AnimationCollection.Index>) ->
 subscript(key: String) -> AnimationResource? { get set }
 ```
 
-#### Return Value
+## Return Value
 
 The animation at the dictionary index.
 

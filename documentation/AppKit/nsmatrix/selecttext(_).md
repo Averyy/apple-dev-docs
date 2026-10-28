@@ -19,7 +19,7 @@ func selectText(_ sender: Any?)
 - (void) selectText:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 If the currently selected cell is editable and enabled, its text is selected. Otherwise, the key cell is selected.
 

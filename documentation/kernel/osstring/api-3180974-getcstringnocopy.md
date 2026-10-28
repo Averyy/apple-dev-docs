@@ -24,7 +24,7 @@ const char * getCStringNoCopy(void);
 virtual const char * getCStringNoCopy(void);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the string or NULL if the OSString has zero length. The string will be null terminated.
 

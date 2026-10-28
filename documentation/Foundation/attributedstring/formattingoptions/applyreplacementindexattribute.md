@@ -21,7 +21,7 @@ An option to add an attribute that marks replacements in localized strings.
 static let applyReplacementIndexAttribute: AttributedString.FormattingOptions
 ```
 
-#### Discussion
+## Discussion
 
 When you use this option, string formatting applies the [`replacementIndex`](../../nsattributedstring/key/replacementindex.md) key to the final range of each replacement. Its value is an `Int`, wrapping the integer ordinal of that particular replacement, such as the `2` in `%2$@`. This allows the developer to relate ranges to replacements even if a localizer modifies the word order.
 

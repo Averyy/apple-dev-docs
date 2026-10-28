@@ -21,7 +21,7 @@ Creates a decimal number whose value is equivalent to that in a given numeric st
 + (NSDecimalNumber *) decimalNumberWithString:(NSString *) numberValue locale:(id) locale;
 ```
 
-#### Discussion
+## Discussion
 
 The `locale` parameter determines whether the [`decimalSeparator`](../nslocale/key/decimalseparator.md) is a period (like in the United States) or a comma (like in France).
 

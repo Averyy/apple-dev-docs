@@ -5,7 +5,7 @@
 
 Import a reference object file and track a real-world object in your app.
 
-#### Overview
+## Overview
 
 With ARKit, you use reference objects to track and attach virtual content to real-world objects in a person’s surroundings. For example, with a reference object, you can track a household item — like a lamp — and add a highlight to a part that’s broken and show how to fix it.
 
@@ -13,7 +13,7 @@ To create a reference object, you obtain a 3D model asset, train a machine learn
 
 For more information about creating a reference object file, see [Implementing object tracking in your app](./implementing-object-tracking-in-your-app.md).
 
-#### Import the reference object file
+## Import the reference object file
 
 ARKit provides two ways to import a reference object file:
 
@@ -31,7 +31,7 @@ let referenceObject = try await ReferenceObject(from: url)
 
 For more information, see [Exploring object tracking with ARKit](./exploring_object_tracking_with_arkit.md).
 
-#### Enable high frame rate tracking
+## Enable high frame rate tracking
 
 By default, ARKit tracks objects at a lower frequency so apps consume less power. This works best with stationary objects where the virtual content doesn’t need to follow an object’s precise position on every frame. With default tracking, the anchor also persists briefly when the object leaves the field of view, while high frame rate tracking removes the anchor immediately.
 
@@ -47,7 +47,7 @@ let referenceObject = try await ReferenceObject(named: "MyObject", from: Bundle.
 
 > ❗ **Important**: High frame rate tracking significantly increases power and performance consumption. Enable it only for objects that require precise, per-frame pose updates, such as handheld or moving objects.
 
-#### Run object tracking on a session
+## Run object tracking on a session
 
 You use an [`ObjectTrackingProvider`](../ARKit/objecttrackingprovider.md) to track your reference object in a spatial location and receive [`ObjectAnchor`](../ARKit/objectanchor.md) updates. `ObjectTrackingProvider` gets the live position and orientation of the real-world object. The system can track a maximum of 10 reference objects at once. To receive this data and begin tracking, configure an [`ARKitSession`](../ARKit/arkitsession.md).
 
@@ -73,7 +73,7 @@ func configureAndRunObjectTracking() async -> ObjectTrackingProvider? {
 }
 ```
 
-#### Handle changes in the scene
+## Handle changes in the scene
 
 As your app tracks the reference object file, ARKit sends asynchronous updates when it detects changes in a person’s surroundings. Account for those changes and update the scene accordingly.
 
@@ -111,7 +111,7 @@ Task {
 }
 ```
 
-#### Obtain metric poses
+## Obtain metric poses
 
 By default, the system optimizes an object anchor’s transform for placing virtual content over the tracked object in the [`mixed`](../SwiftUI/immersionstyle/mixed.md) immersion style.
 
@@ -126,7 +126,7 @@ let metricSpace = myObjectAnchor.coordinateSpace(correction: .none)
 
 The resulting coordinate space corresponds to real-world measurements and remains unaltered by display corrections.
 
-#### Adjust the object-tracking properties for your app
+## Adjust the object-tracking properties for your app
 
 If you have an enterprise app, you can further adjust object-tracking properties to track more objects with a higher frequency. Use the [`Object-tracking parameter adjustment`](../BundleResources/entitlements/com.apple.developer.arkit.object-tracking-parameter-adjustment.allow.md) key to configure object-tracking properties.
 
@@ -156,9 +156,9 @@ var trackingConfiguration = ObjectTrackingProvider.TrackingConfiguration()
 
 With a tracking configuration in place, you can optimize the detection parameters for your app by adjusting the following properties:
 
-- **[maximumTrackableInstances](../ARKit/objecttrackingprovider/trackingconfiguration/api-4380072-maximumtrackableinstances.md)**: The maximum number of instances that you can track across different object types at the same time.
-- **[maximumInstancesPerReferenceObject](../ARKit/objecttrackingprovider/trackingconfiguration/api-4380071-maximuminstancesperreferenceobje.md)**: The maximum number of instances of each reference object type. The default value is `1`.
-- **[detectionRate](../ARKit/objecttrackingprovider/trackingconfiguration/api-4380069-detectionrate.md)**: The frequency for detecting objects to track.
+- **[maximumTrackableInstances](../ARKit/objecttrackingprovider/trackingconfiguration-swift.struct/maximumtrackableinstances.md)**: The maximum number of instances that you can track across different object types at the same time.
+- **[maximumInstancesPerReferenceObject](../ARKit/objecttrackingprovider/trackingconfiguration-swift.struct/maximuminstancesperreferenceobject.md)**: The maximum number of instances of each reference object type. The default value is `1`.
+- **[detectionRate](../ARKit/objecttrackingprovider/trackingconfiguration-swift.struct/detectionrate.md)**: The frequency for detecting objects to track.
 
 Use `TrackingConfiguration` to adjust the values of these properties in your app:
 

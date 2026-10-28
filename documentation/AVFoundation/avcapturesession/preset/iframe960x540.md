@@ -23,7 +23,7 @@ static let iFrame960x540: AVCaptureSession.Preset
 extern AVCaptureSessionPreset const AVCaptureSessionPresetiFrame960x540;
 ```
 
-#### Discussion
+## Discussion
 
 QuickTime movies captured in iFrame format are optimal for editing applications.
 

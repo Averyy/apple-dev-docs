@@ -25,7 +25,7 @@ func discoverCharacteristics(_ characteristicUUIDs: [CBUUID]?, for service: CBSe
 - (void) discoverCharacteristics:(NSArray<CBUUID *> *) characteristicUUIDs forService:(CBService *) service;
 ```
 
-#### Discussion
+## Discussion
 
 You can provide an array of [`CBUUID`](../cbuuid.md) objects—representing characteristic UUIDs— in the `characteristicUUIDs` parameter. When you do, the peripheral returns only the characteristics of the service that match the provided UUIDs. If the `characteristicUUIDs` parameter is `nil`, this method returns all characteristics of the service.
 

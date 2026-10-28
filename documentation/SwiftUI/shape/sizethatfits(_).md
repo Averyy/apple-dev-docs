@@ -23,11 +23,11 @@ nonisolated
 func sizeThatFits(_ proposal: ProposedViewSize) -> CGSize
 ```
 
-#### Return Value
+## Return Value
 
 A size that indicates how much space the shape needs.
 
-#### Discussion
+## Discussion
 
 Implement this method to tell the container of the shape how much space the shape needs to render itself, given a size proposal.
 

@@ -19,7 +19,7 @@ A Boolean value that indicates whether you can export this asset using an export
 var isExportable: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property value is [`true`](../../Swift/true.md) if you can export the composition using [`AVAssetExportSession`](../avassetexportsession.md).
 

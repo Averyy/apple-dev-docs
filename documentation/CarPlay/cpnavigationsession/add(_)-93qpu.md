@@ -21,7 +21,7 @@ func add(_ laneGuidances: [CPLaneGuidance])
 - (void) addLaneGuidances:(NSArray<CPLaneGuidance *> *) laneGuidances;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to add [`CPLaneGuidance`](../cplaneguidance.md) elements in chronological order to the navigation session. Add [`CPLaneGuidance`](../cplaneguidance.md) objects as soon as they are available.
 

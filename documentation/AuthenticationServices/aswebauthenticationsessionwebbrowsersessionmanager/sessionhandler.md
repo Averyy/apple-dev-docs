@@ -23,7 +23,7 @@ var sessionHandler: any ASWebAuthenticationSessionWebBrowserSessionHandling { ge
 
 - [Supporting Single Sign-On in a Web Browser App](../supporting-single-sign-on-in-a-web-browser-app.md)
 
-#### Discussion
+## Discussion
 
 To enable a web browser that you write to participate in single sign-on (SSO), adopt the [`ASWebAuthenticationSessionWebBrowserSessionHandling`](../aswebauthenticationsessionwebbrowsersessionhandling.md) protocol, and then set your browser app as the [`shared`](./shared.md) manager’s [`sessionHandler`](./sessionhandler.md).
 

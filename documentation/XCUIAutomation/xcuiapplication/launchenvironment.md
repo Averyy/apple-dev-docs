@@ -26,7 +26,7 @@ var launchEnvironment: [String : String] { get set }
 @property (nonatomic, copy) NSDictionary<NSString *,NSString *> * launchEnvironment;
 ```
 
-#### Discussion
+## Discussion
 
 If not modified, these are the environment variables that Xcode passes to the application on launch. You can change, add to, or remove the environment variables. Unlike with [`Process`](../../Foundation/process.md), you can modify the environment variables after the application launches. Such changes don’t affect the current launch session, but do take effect the next time the application launches.
 

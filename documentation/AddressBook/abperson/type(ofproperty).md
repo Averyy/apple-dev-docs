@@ -19,7 +19,7 @@ class func type(ofProperty property: String!) -> ABPropertyType
 + (ABPropertyType) typeOfProperty:(NSString *) property;
 ```
 
-#### Discussion
+## Discussion
 
 If the property does not exist, this method returns `kABErrorInProperty`.
 

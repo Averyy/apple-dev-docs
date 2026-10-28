@@ -13,11 +13,11 @@ Get usage metrics for beta testers of a specific app.
 
 - [App Store Connect API 3.1 release notes](./app-store-connect-api-3-1-release-notes.md)
 
-#### Discussion
+## Discussion
 
 > 💡 **Tip**:  This endpoint requires either `groupBy` or `filter[betaTesters]` parameter.
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 
@@ -158,7 +158,7 @@ https://api.appstoreconnect.apple.com/v1/apps/6447306070/metrics/betaTesterUsage
 }
 ```
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

@@ -25,7 +25,7 @@ case resonantLowPass
 AVAudioUnitEQFilterTypeResonantLowPass
 ```
 
-#### Discussion
+## Discussion
 
 The necessary parameters for this type are [`frequency`](../avaudiouniteqfilterparameters/frequency.md) (`-3 dB` cutoff at specified frequency) and [`bandwidth`](../avaudiouniteqfilterparameters/bandwidth.md).
 

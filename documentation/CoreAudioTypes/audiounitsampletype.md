@@ -43,7 +43,7 @@ typedef SInt32 AudioUnitSampleType;
 typedef Float32 AudioUnitSampleType;
 ```
 
-#### Discussion
+## Discussion
 
 The canonical audio sample type for audio units and other audio processing in iPhone OS is noninterleaved linear PCM with 8.24-bit fixed-point samples.
 

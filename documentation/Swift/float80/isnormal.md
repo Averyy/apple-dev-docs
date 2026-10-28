@@ -15,7 +15,7 @@ A Boolean value indicating whether this instance is normal.
 var isNormal: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 A *normal* value is a finite number that uses the full precision available to values of a type. Zero is neither a normal nor a subnormal number.
 

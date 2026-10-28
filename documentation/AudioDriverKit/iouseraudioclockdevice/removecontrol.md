@@ -15,11 +15,11 @@ Removes a control from the clock device.
 kern_return_t RemoveControl(IOUserAudioControl *in_control);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 If removing the control succeeds, the control’s reference count decrements by one.
 

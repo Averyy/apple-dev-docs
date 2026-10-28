@@ -16,7 +16,7 @@ typedef enum USBReEnumerateOptions : int {
 } USBReEnumerateOptions;
 ```
 
-#### Overview
+## Overview
 
 Options used when calling ReEnumerateDevice.
 

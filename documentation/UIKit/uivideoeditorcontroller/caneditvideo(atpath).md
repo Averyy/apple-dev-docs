@@ -22,11 +22,11 @@ class func canEditVideo(atPath videoPath: String) -> Bool
 + (BOOL) canEditVideoAtPath:(NSString *) videoPath;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the specified video file can be edited on the current device or [`false`](../../Swift/false.md) if it cannot.
 
-#### Discussion
+## Discussion
 
 Video editing requires the presence of specific hardware and is available only for specific file formats. Use this method to check whether video editing is available for a given video file, before you create a video editor.
 

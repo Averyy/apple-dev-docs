@@ -20,11 +20,11 @@ func AuthorizationFree(_ authorization: AuthorizationRef, _ flags: Authorization
 OSStatus AuthorizationFree(AuthorizationRef authorization, AuthorizationFlags flags);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Authorization Services Result Codes](./authorization-services-result-codes.md).
 
-#### Discussion
+## Discussion
 
 Call this function when your application no longer needs the authorization reference you created using the function [`AuthorizationCreate(_:_:_:_:)`](./authorizationcreate%28_,_,_,_%29.md).
 

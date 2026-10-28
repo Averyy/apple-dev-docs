@@ -14,11 +14,11 @@
 - (uint64_t) currentMicroframeWithTime:(IOUSBHostTime *) time error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The current microframe number. Returns 0 on failure, with NSError populated with the IOReturn error code.
 
-#### Discussion
+## Discussion
 
 Return the current microframe number of the USB controller
 

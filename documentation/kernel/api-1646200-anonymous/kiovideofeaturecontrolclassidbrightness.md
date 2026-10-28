@@ -13,7 +13,7 @@
 kIOVideoFeatureControlClassIDBrightness = 'brit'
 ```
 
-#### Discussion
+## Discussion
 
 A IOVideoFeatureControl that controls the intensity of the video level. The units for the control's absolute value are percetage (%).
 

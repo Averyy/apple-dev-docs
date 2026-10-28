@@ -25,7 +25,7 @@ var simdWorldRight: simd_float3 { get }
 @property (nonatomic, readonly) simd_float3 simdWorldRight;
 ```
 
-#### Discussion
+## Discussion
 
 Reading this property is equivalent to reading the [`simdLocalRight`](./simdlocalright.md) class property and using the [`simdConvertVector(_:to:)`](./simdconvertvector%28_,to%29.md) or [`simdConvertVector(_:from:)`](./simdconvertvector%28_,from%29.md) method to convert that vector from the node’s local coordinate space to the scene’s world coordinate space.
 

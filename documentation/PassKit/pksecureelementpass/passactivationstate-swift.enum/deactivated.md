@@ -24,7 +24,7 @@ case deactivated
 PKSecureElementPassActivationStateDeactivated
 ```
 
-#### Discussion
+## Discussion
 
 PassKit can’t reactivate a pass with this state.
 

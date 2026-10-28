@@ -24,7 +24,7 @@ var paymentSummaryItems: [PKPaymentSummaryItem] { get set }
 @property (nonatomic, copy) NSArray<PKPaymentSummaryItem *> * paymentSummaryItems;
 ```
 
-#### Discussion
+## Discussion
 
 A typical transaction includes separate summary items for the order total, shipping cost, tax, and the grand total. See the following code for an example.
 

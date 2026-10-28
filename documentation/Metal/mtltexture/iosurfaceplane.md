@@ -25,7 +25,7 @@ var iosurfacePlane: Int { get }
 @property (readonly) NSUInteger iosurfacePlane;
 ```
 
-#### Discussion
+## Discussion
 
 The plane number applies to the [`iosurfacePlane`](./iosurfaceplane.md) property when it isn’t `nil`. The property’s value defaults to `0` for textures that don’t come from an [`IOSurface`](../../IOSurface/iosurface-page.md) instance.
 

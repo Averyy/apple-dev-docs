@@ -20,7 +20,7 @@ var ES_EVENT_TYPE_NOTIFY_TRACE: es_event_type_t { get }
 ES_EVENT_TYPE_NOTIFY_TRACE
 ```
 
-#### Discussion
+## Discussion
 
 This identifier corresponds to the [`es_events_t`](./es_events_t.md) union member [`trace`](./es_events_t/trace.md), which has the type [`es_event_trace_t`](./es_event_trace_t.md).
 

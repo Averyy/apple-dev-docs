@@ -19,7 +19,7 @@ A rectangle that identifies the extremities of a subject within an image in rela
 var bounds: CGRect { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property will always return `CGRect.zero` if the interaction isn’t added to the view.
 

@@ -31,7 +31,7 @@ var isOutstanding: Bool { get }
 @property (atomic, readonly, getter=isOutstanding) BOOL outstanding;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when your ride service is still waiting for payment from the user. It is [`false`](../../Swift/false.md) after the user successfully paid for the ride. The method you use to create an instance of this class automatically sets the value of this property.
 

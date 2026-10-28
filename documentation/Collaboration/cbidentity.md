@@ -19,7 +19,7 @@ class CBIdentity
 @interface CBIdentity : NSObject
 ```
 
-#### Overview
+## Overview
 
 You can obtain a `CBIdentity` object from one of the following class factory methods: [`init(name:authority:)`](./cbidentity/init%28name,authority%29.md), [`init(uuidString:authority:)`](./cbidentity/init%28uuidstring,authority%29-13vns.md), [`init(persistentReference:)`](./cbidentity/init%28persistentreference%29.md), or [`identityWithCSIdentity:`](./cbidentity/identitywithcsidentity_.md).
 

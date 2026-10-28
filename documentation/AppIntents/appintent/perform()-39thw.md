@@ -19,7 +19,7 @@ A default implementation that throws an error rather than perform an intent.
 func perform() async throws -> Self.NeverResult
 ```
 
-#### Discussion
+## Discussion
 
 You don’t need to implement [`perform()`](./perform%28%29-39thw.md) on your [`ControlConfigurationIntent`](../controlconfigurationintent.md) to use it for configuring a control. However, you may implement it if you also use this intent for widget configuration or as a runnable action.
 

@@ -24,7 +24,7 @@ var lineWidth: CGFloat { get set }
 @property CGFloat lineWidth;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `0`.
 

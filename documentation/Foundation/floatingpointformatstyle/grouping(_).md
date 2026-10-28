@@ -21,11 +21,11 @@ Modifies the format style to use the specified grouping.
 func grouping(_ group: FloatingPointFormatStyle<Value>.Configuration.Grouping) -> FloatingPointFormatStyle<Value>
 ```
 
-#### Return Value
+## Return Value
 
 A floating-point format style modified to use the specified grouping.
 
-#### Discussion
+## Discussion
 
 The following example creates a default [`FloatingPointFormatStyle`](../floatingpointformatstyle.md) for the `en_US` locale, and a second style that never uses grouping. It then applies each style to an array of floating-point values. The formatting that the the modified style applies eliminates the three-digit grouping usually performed for the `en_US` locale.
 

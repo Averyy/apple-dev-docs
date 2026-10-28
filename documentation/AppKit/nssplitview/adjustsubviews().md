@@ -19,7 +19,7 @@ func adjustSubviews()
 - (void) adjustSubviews;
 ```
 
-#### Discussion
+## Discussion
 
 When you call this method, the split view’s subviews resize proportionally; the relative sizes of the subviews don’t change.
 

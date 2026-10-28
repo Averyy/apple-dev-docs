@@ -19,7 +19,7 @@ var isSecureDigitEntry: Bool { get set }
 @property (nonatomic, assign, getter=isSecureDigitEntry) BOOL secureDigitEntry;
 ```
 
-#### Discussion
+## Discussion
 
 The defualt value is `NO`.
 

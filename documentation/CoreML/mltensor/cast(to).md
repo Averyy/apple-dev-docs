@@ -21,11 +21,11 @@ Casts the elements of the tensor to the given scalar type.
 func cast<Scalar>(to scalarType: Scalar.Type) -> MLTensor where Scalar : MLTensorScalar
 ```
 
-#### Return Value
+## Return Value
 
 A new tensor with its contents cast to the given scalar type.
 
-#### Discussion
+## Discussion
 
 For example:
 

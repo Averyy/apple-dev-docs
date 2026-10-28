@@ -19,7 +19,7 @@ Creates a style transfer model from a training session checkpoint.
 init(checkpoint: MLCheckpoint) throws
 ```
 
-#### Discussion
+## Discussion
 
 You can only use a checkpoint from a style transfer model’s training session if its [`phase`](../mlcheckpoint/phase.md) property is [`MLPhase.training`](../mlphase/training.md).
 

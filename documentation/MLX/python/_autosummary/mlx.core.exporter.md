@@ -6,31 +6,35 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ex
 
 # mlx.core.exporter
 
-**exporter(*file: str*, *fun: Callable*, ***, *shapeless: bool = False*, *metadata: str | None = None*) → mlx.core.FunctionExporter**
-: Make a callable object to export multiple traces of a function to a file.
+```python
+exporter(file: str, fun: Callable, *, shapeless: bool = False, metadata: str | None = None) → mlx.core.FunctionExporter
+```
+
+Make a callable object to export multiple traces of a function to a file.
 
 Warning
+
 This is part of an experimental API which is likely to
 change in future versions of MLX. Functions exported with older
 versions of MLX may not be compatible with future versions.
 
-Parameters:
+**Parameters:**
 
-**file** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)) – File path to export the function to.
-**shapeless** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – Whether or not the function allows
+- **file** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)) – File path to export the function to.
+- **shapeless** ([bool](https://docs.python.org/3/builtins/functions.html#bool), *optional*) – Whether or not the function allows
 inputs with variable shapes. Default: `False`.
-**metadata** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)*, **optional*) – A string to save alongside the
+- **metadata** ([str](https://docs.python.org/3/builtins/stdtypes.html#str), *optional*) – A string to save alongside the
 function, for example a JSON encoded model configuration. Read
 it back with [import_function()](mlx.core.import_function.md#mlx.core.import_function). Default: `None`.
 
 Example
 
-  ```
-  def fun(*args):
-      return sum(args)
+```
+def fun(*args):
+    return sum(args)
 
-  with mx.exporter("fun.mlxfn", fun) as exporter:
-      exporter(mx.array(1))
-      exporter(mx.array(1), mx.array(2))
-      exporter(mx.array(1), mx.array(2), mx.array(3))
-  ```
+with mx.exporter("fun.mlxfn", fun) as exporter:
+    exporter(mx.array(1))
+    exporter(mx.array(1), mx.array(2))
+    exporter(mx.array(1), mx.array(2), mx.array(3))
+```

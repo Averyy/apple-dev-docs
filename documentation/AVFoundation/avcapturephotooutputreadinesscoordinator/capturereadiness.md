@@ -23,7 +23,7 @@ var captureReadiness: AVCapturePhotoOutput.CaptureReadiness { get }
 @property (nonatomic, readonly) AVCapturePhotoOutputCaptureReadiness captureReadiness;
 ```
 
-#### Discussion
+## Discussion
 
 The value incorporates the photo output’s [`captureReadiness`](../avcapturephotooutput/capturereadiness-swift.property.md) property value and any requests registered by calling the [`startTrackingCaptureRequest(using:)`](./starttrackingcapturerequest%28using%29.md) method. The system updates this value before calling the [`readinessCoordinator(_:captureReadinessDidChange:)`](../avcapturephotooutputreadinesscoordinatordelegate/readinesscoordinator%28_,capturereadinessdidchange%29.md) method.
 

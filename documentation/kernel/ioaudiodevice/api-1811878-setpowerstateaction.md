@@ -16,11 +16,11 @@ static IOReturn setPowerStateAction(
  void *arg4);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the result of protectedSetPowerState()
 
-#### Overview
+## Overview
 
 This is needed to allow protectedSetPowerState() to be called on the IOWorkLoop
 

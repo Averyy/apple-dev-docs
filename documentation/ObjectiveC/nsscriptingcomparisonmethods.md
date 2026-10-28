@@ -5,7 +5,7 @@
 
 A collection of methods useful for comparing script objects.
 
-#### Overview
+## Overview
 
 Often the correct way to compare two objects for scripting is different from the correct way to compare objects programmatically. This informal protocol defines a set of methods that can be implemented to perform a comparison appropriate for scripting that is independent of other methods for doing comparisons.
 

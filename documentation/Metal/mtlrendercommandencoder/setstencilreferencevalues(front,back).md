@@ -25,7 +25,7 @@ func setStencilReferenceValues(front frontReferenceValue: UInt32, back backRefer
 - (void) setStencilFrontReferenceValue:(uint32_t) frontReferenceValue backReferenceValue:(uint32_t) backReferenceValue;
 ```
 
-#### Discussion
+## Discussion
 
 The command sets separate reference values for front- and back-facing primitives (see [`stencilCompareFunction`](../mtlstencildescriptor/stencilcomparefunction.md), [`frontFaceStencil`](../mtldepthstencildescriptor/frontfacestencil.md), and [`backFaceStencil`](../mtldepthstencildescriptor/backfacestencil.md)). These reference values apply to the stencil state you set with the [`setDepthStencilState(_:)`](./setdepthstencilstate%28_%29.md) method.
 

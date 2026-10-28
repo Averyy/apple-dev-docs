@@ -20,7 +20,7 @@ An error code that indicates the Metal framework has an internal problem.
 static var internalError: MTLBinaryArchiveError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 You can report the scenario that generated this error code with [Feedback Assistant](https://feedbackassistant.apple.com).
 

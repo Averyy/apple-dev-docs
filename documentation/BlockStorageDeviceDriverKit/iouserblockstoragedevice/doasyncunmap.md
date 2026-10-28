@@ -15,11 +15,11 @@ Sends an asynchronous request to the dext to reclaim storage by unmapping.
 virtual kern_return_t DoAsyncUnmap(uint32_t requestID, IOMemoryDescriptor *buffer, uint32_t numOfRanges);
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates the unmap result. [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) indicates success. For error definitions, see [IOKit Constants](../../iokit/iokit_constants.md).
 
-#### Discussion
+## Discussion
 
 When the unmap operation completes, the dext calls your [`Complete`](./complete.md) method with the results of the operation.
 

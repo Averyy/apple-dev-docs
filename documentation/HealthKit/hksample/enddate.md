@@ -28,7 +28,7 @@ var endDate: Date { get }
 
 - [Adding samples to a workout](../adding-samples-to-a-workout.md)
 
-#### Discussion
+## Discussion
 
 The sample’s end date must be equal to or later than its start date.
 

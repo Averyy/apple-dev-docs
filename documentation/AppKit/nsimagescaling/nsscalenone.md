@@ -19,7 +19,7 @@ static var NSScaleNone: NSImageScaling { get }
 NSScaleNone
 ```
 
-#### Discussion
+## Discussion
 
 Use [`NSImageScaling.scaleNone`](./scalenone.md).
 

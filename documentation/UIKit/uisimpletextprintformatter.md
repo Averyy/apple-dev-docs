@@ -22,7 +22,7 @@ class UISimpleTextPrintFormatter
 @interface UISimpleTextPrintFormatter : UIPrintFormatter
 ```
 
-#### Overview
+## Overview
 
 The [`UISimpleTextPrintFormatter`](./uisimpletextprintformatter.md) class allows you to specify global font, color, and text alignment properties for the printed text. To use this print formatter for a print job, create an instance of [`UISimpleTextPrintFormatter`](./uisimpletextprintformatter.md) initialized with the text, set the text properties and the inherited layout properties, and add the object to the print job in one of two ways:
 

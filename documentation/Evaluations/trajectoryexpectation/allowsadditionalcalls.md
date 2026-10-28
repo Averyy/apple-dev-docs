@@ -25,7 +25,7 @@ var allowsAdditionalCalls: Bool
 
 - [Evaluating tool-calling behavior](../evaluating-tool-calling-behavior.md)
 
-#### Discussion
+## Discussion
 
 When `false`, any unmatched tool call causes evaluation to fail. When `true` (the default), unmatched calls are ignored as long as all expectations are met.
 

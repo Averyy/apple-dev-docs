@@ -6,7 +6,7 @@
 
 An atom that stores the sound media’s control information, such as balance.
 
-#### Overview
+## Overview
 
 See [`Sound media information header atom`](../sound_media_information_header_atom.md).
 

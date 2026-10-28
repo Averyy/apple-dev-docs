@@ -16,11 +16,11 @@ Checks whether an element has been added to the transaction.
 Boolean (*hasElement)(void *self, IOHIDElementCookie elementCookie);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a Boolean value.
 
-#### Discussion
+## Discussion
 
 Will return true if present, otherwise will return false.
 

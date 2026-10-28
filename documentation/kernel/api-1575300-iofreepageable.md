@@ -15,7 +15,7 @@ Frees memory allocated with IOMallocPageable.
 void IOFreePageable(void *address, vm_size_t size);
 ```
 
-#### Discussion
+## Discussion
 
 This function frees memory allocated with IOMallocPageable, it may block and so should not be called from interrupt level or while a simple lock is held.
 

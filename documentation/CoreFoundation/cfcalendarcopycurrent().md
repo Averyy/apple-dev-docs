@@ -25,11 +25,11 @@ func CFCalendarCopyCurrent() -> CFCalendar!
 extern CFCalendarRefCFCalendarCopyCurrent();
 ```
 
-#### Return Value
+## Return Value
 
 The logical calendar for the current user that is formed from the settings for the current user’s chosen system locale overlaid with any custom settings the user has specified in System Preferences. This function may return a retained cached object, not a new object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 Settings you get from this calendar do not change if user defaults change so that your operations are consistent.
 

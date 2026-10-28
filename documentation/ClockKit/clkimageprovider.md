@@ -25,7 +25,7 @@ class CLKImageProvider
 
 - [Creating a timeline entry](./creating-a-timeline-entry.md)
 
-#### Overview
+## Overview
 
 You create an image provider with at least one image, and you may specify two additional images to use under certain conditions. The specified images are *template images*, with a color applied to them prior to display. The clock face displaying the complication determines how the images are composited together and which tint color is applied.
 

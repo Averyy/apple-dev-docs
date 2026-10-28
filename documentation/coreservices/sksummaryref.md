@@ -16,7 +16,7 @@ Defines an opaque data type representing summarization information.
 typedef struct __SKSummary *SKSummaryRef;
 ```
 
-#### Discussion
+## Discussion
 
 A summarization object contains summarization information, including summary text.
 

@@ -24,7 +24,7 @@ typealias PHAssetResourceDataRequestID = Int32
 typedef int32_t PHAssetResourceDataRequestID;
 ```
 
-#### Discussion
+## Discussion
 
 Pass this identifier to the [`cancelDataRequest(_:)`](./phassetresourcemanager/canceldatarequest%28_%29.md) method if you need to cancel a request before it completes.
 

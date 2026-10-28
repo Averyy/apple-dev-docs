@@ -23,7 +23,7 @@ func resumeRecording()
 - (void) resumeRecording;
 ```
 
-#### Discussion
+## Discussion
 
 This method causes the receiver to resume writing captured samples to the current output file returned by [`outputFileURL`](./outputfileurl.md), after recording was previously paused using [`pauseRecording()`](./pauserecording%28%29.md). This allows you to record multiple media segments that are not contiguous in time to a single file.
 

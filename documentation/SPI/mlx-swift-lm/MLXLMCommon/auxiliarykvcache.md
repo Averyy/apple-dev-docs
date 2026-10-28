@@ -17,7 +17,7 @@ A cache entry that holds no attention state, such as a record of the tokens proc
 protocol AuxiliaryKVCache : KVCache
 ```
 
-#### Overview
+## Overview
 
 Cache policy skips these entries: capacity and compression settings, offset alignment checks, and [`KVCacheStatus`](./kvcachestatus.md) layers ignore them. Generation still trims, copies, and saves them with the other entries, so an auxiliary cache must be trimmable to keep pace, and it needs a [`serializedClassName`](./kvcache/serializedclassname.md) to be saved to a prompt cache file.
 

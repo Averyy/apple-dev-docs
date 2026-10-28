@@ -22,7 +22,7 @@ var entity: Entity? { get }
 
 Available when `ActionType` conforms to `BehaviorTreeAction`.
 
-#### Discussion
+## Discussion
 
 This is the entity on which the behavior tree is running,.
 

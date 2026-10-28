@@ -17,11 +17,11 @@ Generates tokens asynchronously using MTP speculative decoding.
 func generate(input: LMInput, cache: [KVCache]? = nil, parameters: GenerateParameters, context: ModelContext, mtpDrafter: any MTPDrafterModel, blockSize: Int = 4, components: GenerationComponents = .init(), wiredMemoryTicket: WiredMemoryTicket? = nil, tools: [[String : any Sendable]]? = nil) throws -> AsyncStream<Generation>
 ```
 
-#### Return Value
+## Return Value
 
 An `AsyncStream<Generation>` yielding chunks and tool calls.
 
-#### Discussion
+## Discussion
 
 Parallel to [`generate(input:cache:state:parameters:context:draftModel:draftCache:numDraftTokens:components:wiredMemoryTicket:tools:)`](./generate%28input,cache,state,parameters,context,draftmodel,draftcache,numdrafttokens,components,wiredmemoryticket,tools%29.md) but for MTP drafters: the drafter shares K/V with the target model and produces a block of `blockSize - 1` candidate tokens per round in a single `draftBlock(...)` call. The drafter shares the target’s tokenizer (via `context.tokenizer`).
 

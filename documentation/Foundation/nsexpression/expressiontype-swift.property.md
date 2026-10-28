@@ -25,7 +25,7 @@ var expressionType: NSExpression.ExpressionType { get }
 @property (readonly) NSExpressionType expressionType;
 ```
 
-#### Discussion
+## Discussion
 
 Accessing this property raises an exception if it is not applicable to the expression.
 

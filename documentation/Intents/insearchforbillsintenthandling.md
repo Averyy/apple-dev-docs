@@ -25,7 +25,7 @@ protocol INSearchForBillsIntentHandling : NSObjectProtocol
 @protocol INSearchForBillsIntentHandling <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Use the methods of the [`INSearchForBillsIntentHandling`](./insearchforbillsintenthandling.md) protocol to resolve, confirm, and handle requests to search for bills related to the user. Adopt this protocol in an object of your Intents extension that’s capable of searching the user’s bills and returning those bills that match the specified criteria. Users can search for bills based on the payee, the bill type, the due date, and whether the user has paid them or not.
 

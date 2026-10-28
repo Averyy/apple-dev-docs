@@ -19,7 +19,7 @@ func childrenKeyPath(for node: NSTreeNode) -> String?
 - (NSString *) childrenKeyPathForNode:(NSTreeNode *) node;
 ```
 
-#### Return Value
+## Return Value
 
 A string containing the key path in `node` that provides the child nodes.
 

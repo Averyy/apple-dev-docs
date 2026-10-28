@@ -16,7 +16,7 @@ A type that indicates an instance is the head application of a group.
 case headApplication
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`instanceAID`](../instanceaid.md) of this object when calling [`performTransactionInWiredMode(using:instanceAID:)`](../../../../credentialtransaction/performtransactioninwiredmode%28using,instanceaid%29.md). Doing so delivers the authentication token to all of the [`CredentialSession.Credential.InstanceInfo.InstanceType.groupApplication`](./groupapplication.md) members through the broker interface on the Secure Element, as described in the [Apple Business Register](https://register.apple.com) Secure Element (ABR SE) documents.
 

@@ -23,7 +23,7 @@ Allocates memory in a zone.
 extern void *NSZoneRealloc(NSZone *zone, void *ptr, NSUInteger size);
 ```
 
-#### Discussion
+## Discussion
 
 Changes the size of the block of memory pointed to by `ptr` to `size` bytes. It may allocate new memory to replace the old, in which case it moves the contents of the old memory block to the new block, up to a maximum of `size` bytes. `ptr` may be `NULL`. This function returns `NULL` if it was unable to allocate the requested memory.
 

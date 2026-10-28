@@ -18,7 +18,7 @@ Indicates that the device needs more vertical motion.
 static let insufficientVerticalSweep: NIAlgorithmConvergenceStatus.Reason
 ```
 
-#### Discussion
+## Discussion
 
 Coach the user to resolve the issue, such as by presenting text that asks the user to move the device in a vertical direction.
 

@@ -24,7 +24,7 @@ var count: Int { get }
 @property (nonatomic, readonly) NSUInteger count;
 ```
 
-#### Discussion
+## Discussion
 
 This property measures the number of grid positions in the array for which voxel data exists, not the total number of grid positions within the voxel array’s extent.
 

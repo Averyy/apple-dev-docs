@@ -25,7 +25,7 @@ class var momentum: MLParameterKey { get }
 @property (class, nonatomic, readonly) MLParameterKey * momentum;
 ```
 
-#### Discussion
+## Discussion
 
 The value type for the [`momentum`](./momentum.md) key is a [`Double`](../../Swift/double.md).
 

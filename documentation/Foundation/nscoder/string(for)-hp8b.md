@@ -20,7 +20,7 @@ Returns a string formatted to contain the data from a directional edge insets st
 class func string(for insets: NSDirectionalEdgeInsets) -> String
 ```
 
-#### Return Value
+## Return Value
 
 A string that corresponds to insets. See [`nsDirectionalEdgeInsets(for:)`](./nsdirectionaledgeinsets%28for%29.md) for a discussion of the string format.
 

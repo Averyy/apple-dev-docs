@@ -19,7 +19,7 @@ var findIndicatorNeedsUpdate: Bool { get set }
 @property BOOL findIndicatorNeedsUpdate;
 ```
 
-#### Discussion
+## Discussion
 
 If the [`client`](./client.md) object’s document is not scrolled by an instance of `NSScrollView`, then set this property to [`true`](../../Swift/true.md) when scrolling occurs to cause the find indicator to be updated appropriately.
 

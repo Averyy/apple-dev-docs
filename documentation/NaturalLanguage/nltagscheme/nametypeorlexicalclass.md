@@ -25,7 +25,7 @@ static let nameTypeOrLexicalClass: NLTagScheme
 extern NLTagScheme const NLTagSchemeNameTypeOrLexicalClass;
 ```
 
-#### Discussion
+## Discussion
 
 For possible values, see Name types and Lexical classes in [`NLTag`](../nltag.md).
 

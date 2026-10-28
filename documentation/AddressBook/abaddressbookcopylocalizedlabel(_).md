@@ -23,7 +23,7 @@ func ABAddressBookCopyLocalizedLabel(_ label: CFString!) -> Unmanaged<CFString>!
 extern CFStringRefABAddressBookCopyLocalizedLabel(CFStringRef label);
 ```
 
-#### Return Value
+## Return Value
 
 The label localized to the user’s locale.
 

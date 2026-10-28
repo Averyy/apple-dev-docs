@@ -22,11 +22,11 @@ Sets the unique tag value of this view.
 nonisolated func tag<V>(_ tag: V, includeOptional: Bool = true) -> some View where V : Hashable
 ```
 
-#### Return Value
+## Return Value
 
 A view with the specified tag set.
 
-#### Discussion
+## Discussion
 
 Use this modifier to differentiate among certain selectable views, like the possible values of a [`Picker`](../picker.md) or the tabs of a [`TabView`](../tabview.md). Tag values can be of any type that conforms to the [`Hashable`](../../Swift/hashable.md) protocol.
 

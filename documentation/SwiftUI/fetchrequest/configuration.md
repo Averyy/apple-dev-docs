@@ -22,13 +22,13 @@ The request’s configurable properties.
 @preconcurrency struct Configuration
 ```
 
-#### Overview
+## Overview
 
 You initialize a [`FetchRequest`](../fetchrequest.md) with an optional predicate and sort descriptors, either explicitly or using a configured [`NSFetchRequest`](../../CoreData/nsfetchrequest.md). Later, you can dynamically update the predicate and sort parameters using the request’s configuration structure.
 
 You access or bind to a request’s configuration components through properties on the associated [`FetchedResults`](../fetchedresults.md) instance.
 
-##### Configure using a binding
+### Configure using a binding
 
 Get a [`Binding`](../binding.md) to a fetch request’s configuration structure by accessing the request’s [`projectedValue`](./projectedvalue.md), which you do by using the dollar sign (`$`) prefix on the associated results property. For example, you can create a request for `Quake` entities — a managed object type that the [Loading and displaying a large data feed](../loading-and-displaying-a-large-data-feed.md) sample code project defines — that initially sorts the results by time:
 
@@ -55,7 +55,7 @@ A user who clicks on a table column header initiates the following sequence of e
 3. The reconfigured request fetches new results.
 4. SwiftUI redraws the table in response to new results.
 
-##### Set configuration directly
+### Set configuration directly
 
 If you need to access the fetch request’s configuration elements directly, use the [`nsPredicate`](../fetchedresults/nspredicate.md) and [`sortDescriptors`](../fetchedresults/sortdescriptors.md) or [`nsSortDescriptors`](../fetchedresults/nssortdescriptors.md) properties of the [`FetchedResults`](../fetchedresults.md) instance. Continuing the example above, to enable the user to dynamically update the predicate, declare a [`State`](../state.md) property to hold a query string:
 

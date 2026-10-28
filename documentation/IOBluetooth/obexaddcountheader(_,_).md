@@ -19,11 +19,11 @@ func OBEXAddCountHeader(_ count: UInt32, _ dictRef: CFMutableDictionary!) -> OBE
 OBEXError OBEXAddCountHeader(uint32_t count, CFMutableDictionaryRef dictRef);
 ```
 
-#### Return Value
+## Return Value
 
 Error code, kOBEXSuccess (0) if success.
 
-#### Discussion
+## Discussion
 
 Count header - OBEX Spec, 2.2.1: 4 byte unsigned integer
 

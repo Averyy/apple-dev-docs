@@ -12,7 +12,7 @@ Creates an attachment from the contents of an existing file on disk, with a cust
 convenience init(contentsOfFileAtURL url: URL, uniformTypeIdentifier identifier: String)
 ```
 
-#### Discussion
+## Discussion
 
 The attachment’s [`name`](./name.md) property is the file name of the provided url.
 

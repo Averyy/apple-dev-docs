@@ -24,7 +24,7 @@ case applePay
 INPaymentMethodTypeApplePay
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Always use the [`applePay()`](../inpaymentmethod/applepay%28%29.md) class method to create payment methods of this type.
 

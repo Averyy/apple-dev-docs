@@ -21,7 +21,7 @@ Creates a rectangle from double-precision vectors that describe the origin and s
 init(origin: simd_double3 = .zero, size: simd_double3)
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This function is provided as a convenience. All Spatial storage and calculations are single-precision.
 

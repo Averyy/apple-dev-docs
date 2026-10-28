@@ -25,7 +25,7 @@ func setTileSamplerState(_ sampler: (any MTLSamplerState)?, index: Int)
 - (void) setTileSamplerState:(id<MTLSamplerState>) sampler atIndex:(NSUInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the sampler state at each index is `nil`.
 

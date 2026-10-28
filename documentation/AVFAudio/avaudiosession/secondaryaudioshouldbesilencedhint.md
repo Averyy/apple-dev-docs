@@ -24,7 +24,7 @@ var secondaryAudioShouldBeSilencedHint: Bool { get }
 @property (readonly) BOOL secondaryAudioShouldBeSilencedHint;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property as a hint to silence audio that’s secondary to the functionality of the app. For example, in a game that uses the [`ambient`](./category-swift.struct/ambient.md) category, you can use this property to mute the soundtrack while leaving sound effects unmuted.
 

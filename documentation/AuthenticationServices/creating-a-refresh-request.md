@@ -5,7 +5,7 @@
 
 Refresh a non-expired token instead of sending a new login request.
 
-#### Overview
+## Overview
 
 The system sends a refresh request instead of a login request when a token hasn’t expired yet and the [`refreshEndpointURL`](./asauthorizationproviderextensionloginconfiguration/refreshendpointurl.md) is set. The refresh request also sends a server nonce request before it begins.
 

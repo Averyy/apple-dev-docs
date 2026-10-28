@@ -11,7 +11,7 @@ framework: "Swift-Org/EmbeddedSwift"
 
 Run a Swift LED-blink program on an Arm Cortex-M nRF board using the Zephyr RTOS SDK.
 
-#### Overview
+## Overview
 
 This example demonstrates how to integrate with the Zephyr SDK using CMake and West, and how to build a Swift firmware application on top of Zephyr and its libraries. The example was tested on an nRF52840-DK board, but it also works on other Zephyr-supported boards.
 
@@ -33,7 +33,7 @@ struct Main {
 }
 ```
 
-#### Install Zephyr
+## Install Zephyr
 
 Download and install [Zephyr](https://docs.zephyrproject.org/latest/), and make sure you are set up for development with it by following the [Zephyr Getting Started Guide](https://docs.zephyrproject.org/latest/develop/getting_started/index.html). In particular, you’ll need:
 
@@ -47,11 +47,11 @@ Before adding Swift, confirm that your setup can build the standard C/C++ sample
 
 See [Integrating with the Zephyr RTOS SDK](./integratewithzephyr.md) for more details on how Swift integrates with Zephyr’s CMake and West build system.
 
-#### Install Swift
+## Install Swift
 
 Follow the instructions in [Installing Embedded Swift](./installembeddedswift.md) to install the latest Swift development snapshot with Embedded Swift support. Confirm the installation by running `swift --version` and ensure that it reports a “6.2-dev” or newer development snapshot.
 
-#### Build the project
+## Build the project
 
 Activate the Zephyr virtual environment, then build the program, specifying the target board with the `-DBOARD=...` CMake setting:
 
@@ -62,7 +62,7 @@ $ source ~/zephyrproject/.venv/bin/activate
 (.venv) cmake --build build
 ```
 
-#### Run on a device
+## Run on a device
 
 Connect the nRF52840-DK board to your Mac using a USB cable connected to the J-Link connector on the board.
 

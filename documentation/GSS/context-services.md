@@ -5,7 +5,7 @@
 
 Use context services to manage secure operations between endpoints.
 
-#### Overview
+## Overview
 
 You use these flags as input to [`gss_init_sec_context(_:_:_:_:_:_:_:_:_:_:_:_:_:)`](./gss_init_sec_context%28_,_,_,_,_,_,_,_,_,_,_,_,_%29.md) to request certain context services. You also receive them as output from both that function and [`gss_accept_sec_context(_:_:_:_:_:_:_:_:_:_:_:)`](./gss_accept_sec_context%28_,_,_,_,_,_,_,_,_,_,_%29.md), indicating which services are actually engaged. Requesting a service does not guarantee its availability.
 

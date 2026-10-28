@@ -20,7 +20,7 @@ func read(from fileWrapper: FileWrapper, ofType typeName: String) throws
 - (BOOL) readFromFileWrapper:(NSFileWrapper *) fileWrapper ofType:(NSString *) typeName error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method invokes `[self readFromData:[fileWrapper regularFileContents] ofType:typeName error:outError]`.
 

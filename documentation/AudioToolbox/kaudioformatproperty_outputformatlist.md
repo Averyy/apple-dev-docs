@@ -24,7 +24,7 @@ var kAudioFormatProperty_OutputFormatList: AudioFormatPropertyID { get }
 kAudioFormatProperty_OutputFormatList
 ```
 
-#### Discussion
+## Discussion
 
 A list of [`AudioFormatListItem`](../CoreAudioTypes/audioformatlistitem.md) structures describing the audio formats which may be obtained by decoding the format described by the specifier. Set the `inSpecifier` parameter to an [`AudioFormatInfo`](./audioformatinfo.md) structure. At a minimum, the `formatID` field of the `AudioStreamBasicDescription` structure must filled in. Other fields may be filled in. If there is no magic cookie, then the number of channels and sample rate should be filled in.
 

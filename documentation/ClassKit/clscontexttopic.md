@@ -27,7 +27,7 @@ typedef NSString * CLSContextTopic;
 
 - [Building missing contexts](./building-missing-contexts.md)
 
-#### Discussion
+## Discussion
 
 After initializing a context, you can assign it a topic by setting its [`topic`](./clscontext/topic.md) property. Doing so helps teachers browsing your app’s content to understand what your app offers.
 

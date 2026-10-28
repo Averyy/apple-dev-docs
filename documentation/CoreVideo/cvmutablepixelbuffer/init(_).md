@@ -21,7 +21,7 @@ Creates a CVPixelBuffer with given attributes. It allocates the necessary memory
 init(_ attributes: CVPixelBufferCreationAttributes) throws
 ```
 
-#### Discussion
+## Discussion
 
 It is preferable to use [`CVMutablePixelBuffer.Pool`](./pool.md) for allocating pixel buffers in an environment that creates and releases pixel buffers of the same type, i.e., matching Attributes, repeatedly. The pool efficiently reuses the pixel buffer memory and reduces memory fragmentation.
 

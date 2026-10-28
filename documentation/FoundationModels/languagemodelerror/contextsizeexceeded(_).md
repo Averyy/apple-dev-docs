@@ -28,7 +28,7 @@ case contextSizeExceeded(LanguageModelError.ContextSizeExceeded)
 - [Inspecting session transcripts and reporting model feedback](../inspecting-session-transcripts-and-reporting-model-feedback.md)
 - [Optimizing key-value caching in language model sessions](../optimizing-key-value-caching-in-language-model-sessions.md)
 
-#### Discussion
+## Discussion
 
 You can recover from this error by removing entries from the transcript and trying again.
 

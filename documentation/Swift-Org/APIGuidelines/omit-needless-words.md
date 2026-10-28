@@ -10,7 +10,7 @@ framework: "Swift-Org/APIGuidelines"
 
 Every word in a name should convey salient information at the use site.
 
-#### Overview
+## Overview
 
 More words may be needed to clarify intent or disambiguate meaning, but those that are redundant with information the reader already possesses should be omitted. In particular, omit words that *merely repeat* type information.
 

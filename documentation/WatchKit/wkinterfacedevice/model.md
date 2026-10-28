@@ -19,7 +19,7 @@ var model: String { get }
 @property (nonatomic, copy, readonly) NSString * model;
 ```
 
-#### Discussion
+## Discussion
 
 For Apple Watch, the value of this string is `Apple Watch`.
 

@@ -17,7 +17,7 @@ Element-wise less than or equal with a [`ScalarOrArray`](../scalarorarray.md) (s
 static func .<= (lhs: MLXArray, rhs: some ScalarOrArray) -> MLXArray
 ```
 
-##### See Also
+### See Also
 
 - [Arithmetic](../arithmetic.md)
 - [`.<=(_:_:)`](./dotopeq%28_,_%29-2a0s9.md)

@@ -15,13 +15,13 @@ The response object for an Ad query, containing matched results and pagination m
 object AdQueryResponse
 ```
 
-#### Discussion
+## Discussion
 
 The ads query endpoint returns `AdQueryResponse`, which contains the filtered, sorted, and paginated set of `Ad` objects matching the request.
 
 To scope results by `adGroupId`, `campaignId`, `status`, or other filterable fields, use the `QueryRequest` body with `filters`.
 
-##### Example
+### Example
 
 ```json
 {

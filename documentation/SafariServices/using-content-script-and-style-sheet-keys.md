@@ -5,7 +5,7 @@
 
 Learn about controlling style sheet and script injection with information property list keys.
 
-#### Overview
+## Overview
 
 Content scripts and style sheets have similar functionality. Safari injects content scripts (as `.js` files) and style sheets (as `.css` files) into webpages to customize web content. Injected scripts and styles have the same access privileges as the scripts and styles that execute from the webpage’s host. The scripts can also send messages to, and receive messages from, the extension.
 

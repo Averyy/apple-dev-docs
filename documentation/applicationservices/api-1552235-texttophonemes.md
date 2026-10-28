@@ -15,11 +15,11 @@ Converts a buffer of textual data into phonemic data.
 OSErr TextToPhonemes(SpeechChannel chan, const void *textBuf, unsigned long textBytes, Handle phonemeBuf, long *phonemeBytes);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./speech_synthesis_manager.md#1659745).
 
-#### Discussion
+## Discussion
 
 Converting textual data into phonemic data is particularlyuseful during application development, when you might wish to adjustphrases that your application generates to produce smoother speech.By first converting the target phrase into phonemes, you can see whatthe synthesizer will try to speak. Then you need correct only theparts that would not have been spoken the way you want.
 

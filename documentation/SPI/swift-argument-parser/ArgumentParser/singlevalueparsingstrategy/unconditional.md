@@ -17,7 +17,7 @@ Parse the next input, even if it could be interpreted as an option or flag.
 static var unconditional: SingleValueParsingStrategy { get }
 ```
 
-#### Discussion
+## Discussion
 
 For inputs such as `--foo --bar baz`, if `.unconditional` is used for `foo`, this would read `--bar` as the value for `foo` and would use `baz` as the next positional argument.
 

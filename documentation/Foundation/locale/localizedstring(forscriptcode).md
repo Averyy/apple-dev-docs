@@ -21,7 +21,7 @@ Returns a localized string for a specified script code.
 func localizedString(forScriptCode scriptCode: String) -> String?
 ```
 
-#### Discussion
+## Discussion
 
 For example, in the “en” locale, the result for `"Hans"` is `"Simplified Han"`.
 

@@ -19,7 +19,7 @@ case regular
 NSApplicationActivationPolicyRegular
 ```
 
-#### Discussion
+## Discussion
 
 This policy is the default for bundled apps, unless overridden in the `Info.plist`.
 

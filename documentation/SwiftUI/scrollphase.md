@@ -22,7 +22,7 @@ A type that describes the state of a scroll gesture of a scrollable view like a 
 enum ScrollPhase
 ```
 
-#### Overview
+## Overview
 
 A scroll gesture can be in one of four phases: - idle: No active scroll is occurring. - panning: An active scroll being driven by the user is occurring. - decelerating: The user has stopped driving a scroll and the scroll view is decelerating to its final target. - animating: The system is animating to a final target as a result of a programmatic animated scroll from using a [`ScrollViewReader`](./scrollviewreader.md) or [`scrollPosition(id:anchor:)`](./view/scrollposition%28id,anchor%29.md) modifier.
 

@@ -21,7 +21,7 @@ struct ShoppingCartToken
 
 - [Adding support for Tap to Share to your app](../adding-support-for-tap-to-share-to-your-app.md)
 
-#### Overview
+## Overview
 
 Use this token to make a payment request.
 

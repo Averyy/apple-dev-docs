@@ -21,7 +21,7 @@ A type that fades the opacity of some or all layers in a symbol-based image.
 @interface NSSymbolPulseEffect : NSSymbolEffect
 ```
 
-#### Overview
+## Overview
 
 A pulse animation applies an opacity ramp to the layers in a symbol. You can choose to animate only layers marked as “always-pulses” or all layers simultaneously. Participating layers reduce their opacity to a minimum value before returning to fully opaque.
 

@@ -5,11 +5,11 @@
 
 Create and run source queries.
 
-#### Overview
+## Overview
 
 Source queries return a list of apps and devices that have saved data to the HealthKit store.  The query returns all sources for the specified sample type.
 
-##### Create Source Queries
+### Create Source Queries
 
 You create a source query by calling the [`init(sampleType:samplePredicate:completionHandler:)`](./hksourcequery/init%28sampletype,samplepredicate,completionhandler%29.md) initializer. Start by creating the type object for the desired samples. The following example creates a type object for step counts.
 
@@ -40,7 +40,7 @@ let query = HKSourceQuery(sampleType: stepCountType, samplePredicate: nil) { (qu
 }
 ```
 
-##### Run the Query
+### Run the Query
 
 After the query is instantiated, you run it by calling the HealthKit store’s [`execute(_:)`](./hkhealthstore/execute%28_%29.md) method.
 

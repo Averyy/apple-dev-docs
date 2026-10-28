@@ -25,7 +25,7 @@ class NSPredicate
 @interface NSPredicate : NSObject
 ```
 
-#### Overview
+## Overview
 
 Predicates represent logical conditions, which you can use to filter collections of objects. Although it’s common to create predicates directly from instances of [`NSComparisonPredicate`](./nscomparisonpredicate.md), [`NSCompoundPredicate`](./nscompoundpredicate.md), and [`NSExpression`](./nsexpression.md), you often create predicates from a format string that the class methods parse on [`NSPredicate`](./nspredicate.md). Examples of predicate format strings include:
 

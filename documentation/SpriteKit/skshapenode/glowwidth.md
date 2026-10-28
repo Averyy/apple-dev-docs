@@ -29,7 +29,7 @@ var glowWidth: CGFloat { get set }
 
 - [Getting Started with Shape Nodes](../getting-started-with-shape-nodes.md)
 
-#### Discussion
+## Discussion
 
 The default value is `0.0`, which means no glow is added. The glow color is determined by [`strokeColor`](./strokecolor.md).
 

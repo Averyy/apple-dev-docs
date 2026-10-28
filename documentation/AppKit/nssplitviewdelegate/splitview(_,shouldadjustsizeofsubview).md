@@ -20,11 +20,11 @@ optional func splitView(_ splitView: NSSplitView, shouldAdjustSizeOfSubview view
 - (BOOL) splitView:(NSSplitView *) splitView shouldAdjustSizeOfSubview:(NSView *) view;
 ```
 
-#### Return Value
+## Return Value
 
 If [`adjustSubviews()`](../nssplitview/adjustsubviews%28%29.md) can change the size of the subview, [`true`](../../Swift/true.md); otherwise, [`false`](../../Swift/false.md). By returning [`false`](../../Swift/false.md), you lock the size of the split view `subview` while the split view resizes.
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  If your split view uses Auto Layout to size its subviews, don’t implement this method.
 

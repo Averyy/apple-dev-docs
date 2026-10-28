@@ -25,7 +25,7 @@ struct AppExtensionIdentity
 
 - [Discovering app extensions from your app](./discovering-app-extensions-from-your-app.md)
 
-#### Overview
+## Overview
 
 Use this type to identify an app extension on the system and connect to it. You don’t create this type directly. Instead, you use the [`AppExtensionPoint.Monitor`](./appextensionpoint/monitor.md) type to retrieve instances of this type for the available app extensions.
 

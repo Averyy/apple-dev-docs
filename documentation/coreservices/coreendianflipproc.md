@@ -16,15 +16,15 @@ Defines a pointer to a callback function thatbyte-swaps your custom data.
 typedef OSStatus (*CoreEndianFlipProc)(OSType dataDomain, OSType dataType, SInt16 id, void *dataPtr, ByteCount dataSize, Boolean currentlyNative, void *refcon);
 ```
 
-#### Return Value
+## Return Value
 
 A result code thatindicates whether the byte swapping is successful. Your callbackshould return `noErr` ifthe resource is byte swapped without error, `handlerNotFound` ifyou chose not to byte swap the data, and the appropriate resultcode to indicate an error condition if the data is bad. The resultcode you return is propagated through the appropriate manager (ResourceManager (`ResError`) orApple Event Manager) to the caller. 
 
-#### Discussion
+## Discussion
 
 You would declare your flipper callback function as followsif your were to name it `MyCoreEndianFlipProc`:
 
-##### Discussion
+### Discussion
 
 You should write each flipper callback so it traverses thedata structure that contains the data and performs the followingtasks: 
 

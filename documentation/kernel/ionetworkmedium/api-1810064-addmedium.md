@@ -13,11 +13,11 @@ static bool addMedium(
  const IONetworkMedium *medium);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true on success, false otherwise.
 
-#### Overview
+## Overview
 
 A helper function to add an IONetworkMedium object to a given dictionary. The name of the medium is used as the key for the new dictionary entry.
 

@@ -5,7 +5,7 @@
 
 Learn the basics about using images, also known as sprites, with SpriteKit.
 
-#### Overview
+## Overview
 
 The simplest way to create a textured sprite node is to have SpriteKit create both the texture and the sprite for you. You store the artwork in the app bundle (ideally in an [asset catalog](https://developer.apple.com/library/prerelease/content/documentation/Xcode/Reference/xcode_ref-Asset_Catalog_Format/)), and then load it at runtime, as shown in this code:
 
@@ -25,7 +25,7 @@ spaceship.position = CGPointMake(100,100);
 [self addChild: spaceship]
 ```
 
-##### Default Behavior
+### Default Behavior
 
 When you create a sprite as shown in the code above, you get a lot of default behavior for free:
 
@@ -34,7 +34,7 @@ When you create a sprite as shown in the code above, you get a lot of default be
 - The texture is alpha blended into the frame buffer.
 - An [`SKTexture`](./sktexture.md) object is created and attached to the node. This texture object automatically loads the texture data whenever the sprite node is in the scene, is visible, and is necessary for rendering the scene. Later, if the sprite is removed from the scene or is no longer visible, SpriteKit can delete the texture data if it needs that memory for other purposes. This automatic memory management simplifies but does not eliminate the work you need to do to manage art assets in your game.
 
-##### Textures
+### Textures
 
 Although SpriteKit can create textures for you automatically when a sprite is created, in more complex apps you need finer control over textures.  For example, you might want to do any of the following:
 
@@ -47,7 +47,7 @@ Although SpriteKit can create textures for you automatically when a sprite is cr
 
 You do all of these things by working directly with texture objects. For more information, see the [`SKTexture`](./sktexture.md) class reference.
 
-##### Customized Rendering Stages
+### Customized Rendering Stages
 
 You can use each sprite node’s properties to independently configure four distinct rendering stages:
 
@@ -56,7 +56,7 @@ You can use each sprite node’s properties to independently configure four dist
 - Colorize a sprite node’s texture when it is applied to the sprite. See `Colorizing a Sprite Node`.
 - Use other blend modes in a sprite node to combine its contents with that of the framebuffer. Custom blend modes are useful for lighting and other special effects. See `Blending the Sprite into the Frame Buffer`.
 
-##### Art and Property Configuration Matching
+### Art and Property Configuration Matching
 
 Often, configuring a sprite node to perform these four steps—positioning, sizing, colorizing, and blending—is based on the artwork used to create its texture. This means that you rarely set property values in isolation from the artwork. You work with your artist to ensure that your game is configuring the sprites to match the artwork.
 

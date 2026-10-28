@@ -29,7 +29,7 @@ var isSupported: Bool { get }
 
 - [Establishing your app’s integrity](../establishing-your-app-s-integrity.md)
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: Not all device types support the App Attest service, so check for support before using the service.
 >

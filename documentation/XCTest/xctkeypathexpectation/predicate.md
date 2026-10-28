@@ -20,11 +20,11 @@ A function the key path expectation uses to test the value of an observed proper
 typealias Predicate = @Sendable (T, NSKeyValueObservedChange<V>) async -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`true`](../../Swift/true.md) if the change fulfills the expectation; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 A key path expectation uses this function to determine whether the value of the observed property fulfills the conditions of the expectation. The system invokes the function asyncronously on a detached task and may call the function more that once.
 

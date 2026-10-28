@@ -34,7 +34,7 @@ func contains(_ p: CGPoint) -> Bool
 - (BOOL) containsPoint:(CGPoint) p;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the point lies inside the parent’s coordinate system; otherwise [`false`](../../Swift/false.md).
 

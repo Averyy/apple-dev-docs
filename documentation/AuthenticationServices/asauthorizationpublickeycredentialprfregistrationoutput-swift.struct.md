@@ -19,7 +19,7 @@ A type to represent outputs of the web authentication PRF extension, when reques
 struct ASAuthorizationPublicKeyCredentialPRFRegistrationOutput
 ```
 
-#### Overview
+## Overview
 
 This object represents one or two `SymmetricKey` keys that are available anywhere the passkey is available for use. These are general purpose keys that you can use for application-specific needs, such as encryption of user data.
 

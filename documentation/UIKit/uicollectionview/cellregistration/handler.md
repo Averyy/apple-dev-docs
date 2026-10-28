@@ -19,7 +19,7 @@ A closure that handles the cell registration and configuration.
 typealias Handler = (Cell, IndexPath, Item) -> Void
 ```
 
-#### Discussion
+## Discussion
 
 The closure takes the following parameters:
 

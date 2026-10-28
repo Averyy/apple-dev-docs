@@ -25,7 +25,7 @@ static let mp3: AVFileType
 extern AVFileType const AVFileTypeMPEGLayer3;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this UTI is `public.mp3`. Files of this type have an `.mp3` extension.
 

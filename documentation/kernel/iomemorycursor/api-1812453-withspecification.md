@@ -15,11 +15,11 @@ static IOMemoryCursor * withSpecification(
  IOPhysicalLength alignment = 1);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a new memory cursor if successfully created and initialized, 0 otherwise.
 
-#### Overview
+## Overview
 
 Factory function to create and initialize an IOMemoryCursor in one operation. For more information, see IOMemoryCursor::initWithSpecification.
 

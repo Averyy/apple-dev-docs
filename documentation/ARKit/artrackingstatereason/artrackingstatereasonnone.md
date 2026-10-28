@@ -16,7 +16,7 @@ The current tracking state is not limited.
 ARTrackingStateReasonNone
 ```
 
-#### Discussion
+## Discussion
 
 This value occurs when the [`trackingState`](../arcamera/trackingstate-9pgmq.md) property is [`ARTrackingStateNotAvailable`](../artrackingstate/artrackingstatenotavailable.md) or [`ARTrackingStateNormal`](../artrackingstate/artrackingstatenormal.md).
 

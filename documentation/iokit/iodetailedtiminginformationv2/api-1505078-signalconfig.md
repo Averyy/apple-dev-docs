@@ -16,7 +16,7 @@ Information about display setup.
 UInt32 signalConfig;
 ```
 
-#### Discussion
+## Discussion
 
 kIOAnalogSetupExpected is set if display expects a blank-to-black setup or pedestal. See VESA signal standards.`kIOInterlacedCEATiming` is set for a CEA style interlaced timing:
 

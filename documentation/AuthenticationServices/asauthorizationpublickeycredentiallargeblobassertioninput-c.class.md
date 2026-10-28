@@ -19,7 +19,7 @@ A type that represents input for the binary large object extension in passkey as
 @interface ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use this type during assertion (sign-in) with an existing passkey. An app can specify exactly one operation to perform during the sign-in: Either read the existing saved blob or write a new blob, overwriting the existing one, if applicable. This restriction mirrors the operations available in the WebAuthn specification.
 

@@ -21,7 +21,7 @@ Associates a privacy context with any connections or listeners that use the para
 final func setPrivacyContext(_ privacyContext: NWParameters.PrivacyContext)
 ```
 
-#### Discussion
+## Discussion
 
 The privacy context allows using separate caches for different sets of connections, as well as restricting how connection-specific information is logged and shared on the network.
 

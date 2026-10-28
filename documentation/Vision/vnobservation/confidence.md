@@ -24,7 +24,7 @@ var confidence: VNConfidence { get }
 @property (nonatomic, assign, readonly) VNConfidence confidence;
 ```
 
-#### Discussion
+## Discussion
 
 The Vision framework normalizes this value to `[0.0, 1.0]` under most circumstances. A value of `0.0` indicates no confidence. A value of `1.0` indicates highest confidence, or the observation doesn’t support or assign meaning to confidence.
 

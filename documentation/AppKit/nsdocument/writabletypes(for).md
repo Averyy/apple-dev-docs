@@ -20,11 +20,11 @@ func writableTypes(for saveOperation: NSDocument.SaveOperationType) -> [String]
 - (NSArray<NSString *> *) writableTypesForSaveOperation:(NSSaveOperationType) saveOperation;
 ```
 
-#### Return Value
+## Return Value
 
 An array of `NSString` objects representing the writable document types.
 
-#### Discussion
+## Discussion
 
 The save operation type is represented by `saveOperation`. For every kind of save operation except `NSSaveToOperation`, the returned array must only include types for which the app can play the Editor role. For `NSSaveToOperation` the returned array may include types for which the app can only play the Viewer role, and other types that the app can merely export. The default implementation of this method returns `[[self class] writableTypes]` with, except during `NSSaveToOperation`, types for which [`isNativeType(_:)`](./isnativetype%28_%29.md) returns [`false`](../../Swift/false.md) filtered out.
 

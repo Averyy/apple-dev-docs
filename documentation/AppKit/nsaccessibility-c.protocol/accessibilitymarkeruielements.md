@@ -15,7 +15,7 @@ An array of marker accessibility elements for the ruler.
 @property (copy, nullable) NSArray * accessibilityMarkerUIElements;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property on a ruler element.
 

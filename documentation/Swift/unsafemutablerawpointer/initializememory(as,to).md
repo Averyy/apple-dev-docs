@@ -22,11 +22,11 @@ Initializes the memory referenced by this pointer with the given value, binds th
 func initializeMemory<T>(as type: T.Type, to value: consuming T) -> UnsafeMutablePointer<T> where T : ~Copyable
 ```
 
-#### Return Value
+## Return Value
 
 A typed pointer to the memory referenced by this raw pointer.
 
-#### Discussion
+## Discussion
 
 The memory referenced by this pointer must be uninitialized or initialized to a trivial type, and must be properly aligned for accessing `T`.
 

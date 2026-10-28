@@ -18,7 +18,7 @@ Context dictionary containing state-specific information
 let stableMetadata: [String : ReportableMetadataValue]
 ```
 
-#### Discussion
+## Discussion
 
 ReportableMetadataValue is defined in the StateReporting framework.
 

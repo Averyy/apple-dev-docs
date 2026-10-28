@@ -24,7 +24,7 @@ var index: Int { get }
 @property (nonatomic, readonly) NSUInteger index;
 ```
 
-#### Discussion
+## Discussion
 
 The index of the outline object is relative to its siblings and from the perspective of the parent of the outline object. The root outline object, and any outline object without a parent, has an index value of `0`.
 

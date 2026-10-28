@@ -23,7 +23,7 @@ class MKPolygonView
 @interface MKPolygonView : MKOverlayPathView
 ```
 
-#### Overview
+## Overview
 
 This view fills and strokes the area represented by the annotation. You can change the color and other drawing attributes of the polygon by modifying the properties inherited from the [`MKOverlayPathView`](./mkoverlaypathview.md) class. This class is typically used as is and not subclassed.
 

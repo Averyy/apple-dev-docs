@@ -20,7 +20,7 @@ func ODSessionCreate(_ allocator: CFAllocator!, _ options: CFDictionary!, _ erro
 extern ODSessionRefODSessionCreate(CFAllocatorRef allocator, CFDictionaryRef options, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 The created session.
 

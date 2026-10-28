@@ -23,7 +23,7 @@ var kDNSServiceType_GID: Int { get }
 kDNSServiceType_GID
 ```
 
-#### Discussion
+## Discussion
 
 IANA-Reserved
 

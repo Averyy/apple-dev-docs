@@ -22,7 +22,7 @@ case purple
 MKPinAnnotationColorPurple
 ```
 
-#### Discussion
+## Discussion
 
 The head of the pin is purple. Purple pins indicate user-specified points on the map.
 

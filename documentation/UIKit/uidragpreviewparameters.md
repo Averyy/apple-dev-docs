@@ -23,7 +23,7 @@ class UIDragPreviewParameters
 @interface UIDragPreviewParameters : UIPreviewParameters
 ```
 
-#### Overview
+## Overview
 
 You can refine the appearance of a preview by providing additional parameters when creating a [`UIDragPreview`](./uidragpreview.md) or [`UITargetedDragPreview`](./uitargeteddragpreview.md) object. The parameters specify different visual aspects of the preview, including the background color and the visible area of the view associated with the preview.
 

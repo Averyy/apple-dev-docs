@@ -21,11 +21,11 @@ optional func toolTipInteraction(_ interaction: UIToolTipInteraction, configurat
 - (UIToolTipConfiguration *) toolTipInteraction:(UIToolTipInteraction *) interaction configurationAtPoint:(CGPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 A tooltip configuration that specifies the text that appears in the tooltip and the region of the view or control where the pointer must hover over to trigger the display of the tooltip. Return `nil` to prevent the display of the tooltip.
 
-#### Discussion
+## Discussion
 
 Implement this method to provide a tooltip configuration based on logic specific to your app. For example, the following code listing returns a tooltip configuration when the pointer hovers over the top or bottom regions of the view. If the pointer hovers over the middle region, the method returns `nil` to prevent the display of a tooltip.
 

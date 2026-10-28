@@ -21,7 +21,7 @@ Creates a new random nonce.
 init()
 ```
 
-#### Discussion
+## Discussion
 
 The default nonce is a 12-byte random nonce.
 

@@ -19,7 +19,7 @@ var minimumThicknessForInlineSidebars: CGFloat { get set }
 @property CGFloat minimumThicknessForInlineSidebars;
 ```
 
-#### Discussion
+## Discussion
 
 This value describes the minimum thickness in the primary axis of a split view—width if the split view’s [`isVertical`](../nssplitview/isvertical.md) value is [`true`](../../Swift/true.md), height if it’s [`false`](../../Swift/false.md). This value is the minimum thickness that sidebars can shrink to before they automatically collapse. When sidebars autocollapse in full-screen mode, they overlay the other split view items.
 

@@ -23,11 +23,11 @@ class func userInterfaceLayoutDirection(for attribute: UISemanticContentAttribut
 + (UIUserInterfaceLayoutDirection) userInterfaceLayoutDirectionForSemanticContentAttribute:(UISemanticContentAttribute) attribute;
 ```
 
-#### Return Value
+## Return Value
 
 The user interface layout direction (left-to-right or right-to-left).
 
-#### Discussion
+## Discussion
 
 When creating a view that contains subviews, you can use this method to determine whether the subviews should be flipped, and lay out the views in the appropriate order.
 

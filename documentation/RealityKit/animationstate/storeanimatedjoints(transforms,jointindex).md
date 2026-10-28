@@ -23,7 +23,7 @@ func storeAnimatedJoints(transforms: [Transform], jointIndex: Int) -> Bool
 
 Available when `Value` is `JointTransforms`.
 
-#### Discussion
+## Discussion
 
 See [`storeAnimatedValue(_:)`](../animationstateprotocol/storeanimatedvalue%28_%29.md) for more about returning an animation result to the animation system.
 

@@ -23,7 +23,7 @@ func setCollectionViewLayout(_ layout: UICollectionViewLayout, animated: Bool, c
 - (void) setCollectionViewLayout:(UICollectionViewLayout *) layout animated:(BOOL) animated completion:(void (^)(BOOL finished)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This method initiates a layout change programmatically, notifying you when the transition is complete. If you choose to animate the layout change, the animation timing and parameters are controlled by the collection view.
 

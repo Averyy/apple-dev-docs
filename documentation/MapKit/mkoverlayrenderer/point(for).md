@@ -24,11 +24,11 @@ func point(for mapPoint: MKMapPoint) -> CGPoint
 - (CGPoint) pointForMapPoint:(MKMapPoint) mapPoint;
 ```
 
-#### Return Value
+## Return Value
 
 The point in the overlay’s drawing area that corresponds to the map point.
 
-#### Discussion
+## Discussion
 
 You may call this method safely from your view’s [`draw(_:zoomScale:in:)`](./draw%28_,zoomscale,in%29.md) method.
 

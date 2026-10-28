@@ -19,7 +19,7 @@ func noResponder(for eventSelector: Selector)
 - (void) noResponderFor:(SEL) eventSelector;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation beeps if `eventSelector` is [`keyDown(with:)`](./keydown%28with%29.md).
 

@@ -19,21 +19,21 @@ class NSLayoutManager
 @interface NSLayoutManager : NSObject
 ```
 
-#### Overview
+## Overview
 
 [`NSLayoutManager`](./nslayoutmanager.md) maps Unicode character codes to glyphs, sets the glyphs in a series of [`NSTextContainer`](./nstextcontainer.md) objects, and displays them in a series of [`NSTextView`](./nstextview.md) objects. In addition to its core function of laying out text, a layout manager object coordinates its text view objects, provides services to those text views to support [`NSRulerView`](./nsrulerview.md) instances for editing paragraph styles, and handles the layout and display of text attributes not inherent in glyphs (such as underline or strikethrough). You can create a subclass of [`NSLayoutManager`](./nslayoutmanager.md) to handle additional text attributes, whether inherent or not.
 
-##### Text Antialiasing
+### Text Antialiasing
 
 [`NSLayoutManager`](./nslayoutmanager.md) provides the threshold for text antialiasing. It looks at the `AppleAntiAliasingThreshold` default value. If the font size is smaller than or equal to this threshold size, the text is rendered aliased by [`NSLayoutManager`](./nslayoutmanager.md). In macOS, you can change the threshold value from the Appearance pane of System Preferences.
 
-##### Thread Safety of NSLayoutManager
+### Thread Safety of NSLayoutManager
 
 Generally speaking, a specific layout manager (and associated objects) should not be used in more than one block, operation, or thread at a time. Most layout managers are used on the main thread, since it is the main thread on which their text views are displayed, and since background layout occurs on the main thread.
 
 If you want to use a layout manager on a background thread, first make sure that text views associated with that layout manager (if any) are not displayed while the layout manager is being used on the background thread, and, second, turn off background layout for that layout manager while it is being used on the background thread. The most effective way to ensure that no text view is displayed, without knowing deep implementation, is just not to connect a text view to the layout manager.
 
-##### Noncontiguous Layout
+### Noncontiguous Layout
 
 Noncontiguous layout is an optional layout manager behavior. Previously, both glyph generation and layout were always performed, in order, from the beginning to the end of the document. When noncontiguous layout is turned on, however, the layout manager gains the option of performing glyph generation or layout for one portion of the document without having done so for previous sections. This can provide significant performance improvements for large documents.
 

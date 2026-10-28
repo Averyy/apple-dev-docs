@@ -23,11 +23,11 @@ class var systemMusicPlayer: any MPMusicPlayerController & MPSystemMusicPlayerCo
 @property (class, nonatomic, readonly) MPMusicPlayerController<MPSystemMusicPlayerController> * systemMusicPlayer;
 ```
 
-#### Return Value
+## Return Value
 
 The system music player.
 
-#### Discussion
+## Discussion
 
 The System music player employs the Music app on your behalf. On instantiation, it takes on the current Music app state and controls that state as your app runs. Specifically, the shared state includes the following:
 

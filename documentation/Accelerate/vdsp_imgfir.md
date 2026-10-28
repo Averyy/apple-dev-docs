@@ -21,7 +21,7 @@ Filters a single-precision image by performing a 2D convolution with an arbitrar
 extern void vDSP_imgfir(const float *__A, vDSP_Length __NR, vDSP_Length __NC, const float *__F, float *__C, vDSP_Length __P, vDSP_Length __Q);
 ```
 
-#### Discussion
+## Discussion
 
 This function performs a two-dimensional convolution on the signal `A` using the kernel `B`, leaving results in `C`. The function pads the perimeter of the output image with a border of (*P*-1)/2 rows of zeros on the top and bottom and (*Q*-1)/2 columns of zeros on the left and right:
 

@@ -25,7 +25,7 @@ var XPC_ACTIVITY_STATE_CHECK_IN: Int { get }
 XPC_ACTIVITY_STATE_CHECK_IN
 ```
 
-#### Discussion
+## Discussion
 
 An activity in this state has just completed a check-in with the system after providing [`XPC_ACTIVITY_CHECK_IN`](./xpc_activity_check_in.md) as the criteria dictionary to [`xpc_activity_register(_:_:_:)`](./xpc_activity_register%28_,_,_%29.md). The state gives the app an opportunity to inspect and modify the activity’s criteria.
 

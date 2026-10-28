@@ -15,7 +15,7 @@ An empty object.
 object SubmissionListResponse.Meta
 ```
 
-#### Discussion
+## Discussion
 
 This object is reserved for future use.
 

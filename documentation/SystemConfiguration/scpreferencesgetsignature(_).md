@@ -19,7 +19,7 @@ func SCPreferencesGetSignature(_ prefs: SCPreferences) -> CFData?
 CFDataRefSCPreferencesGetSignature(SCPreferencesRef prefs);
 ```
 
-#### Return Value
+## Return Value
 
 Data that reflects the signature of the configuration preferences at the time of the call to the [`SCPreferencesCreate(_:_:_:)`](./scpreferencescreate%28_,_,_%29.md) function.
 

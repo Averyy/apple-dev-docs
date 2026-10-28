@@ -15,7 +15,7 @@ The data and links that describe the Game Center leaderboard sets of the Game Ce
 object GameCenterGroup.Relationships.GameCenterLeaderboardSetsV2
 ```
 
-#### Overview
+## Overview
 
 - data:
 - links:

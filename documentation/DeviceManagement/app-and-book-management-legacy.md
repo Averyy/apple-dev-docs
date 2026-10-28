@@ -5,7 +5,7 @@
 
 Manage apps and books for your students and employees.
 
-#### Overview
+## Overview
 
 > ⚠️ **Warning**:  As of April 2027, calls to this API will fail. Migrate to the [App, Book, and Subscription Management](./app-book-and-subscription-management.md) API.
 

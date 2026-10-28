@@ -20,7 +20,7 @@ var autoSaveTextFields: Bool { get }
 @property (readonly) BOOL autoSaveTextFields;
 ```
 
-#### Discussion
+## Discussion
 
 If this property is [`true`](../../Swift/true.md), text fields are forced to give up their responder status before [`shouldUnselect`](./shouldunselect.md) is called on the preference pane. If it is [`false`](../../Swift/false.md), the preference pane is responsible for forcing text fields to give up their responder status before saving them. The default value is [`true`](../../Swift/true.md).
 

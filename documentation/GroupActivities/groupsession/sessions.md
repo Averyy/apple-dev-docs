@@ -22,7 +22,7 @@ struct Sessions
 
 Available when `ActivityType` conforms to `GroupActivity`.
 
-#### Overview
+## Overview
 
 When a participant engages one of your app’s activities, a `Sessions` structure provides the session you use to handle synchronization. Iterate over the contents of this structure asynchronously to retrieve each new session the system delivers to your app. The system delivers only one [`GroupSession`](../groupsession.md) for each activity. To monitor changes to that session, configure subscribers to its published properties.
 

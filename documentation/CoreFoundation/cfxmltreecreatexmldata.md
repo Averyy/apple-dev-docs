@@ -15,11 +15,11 @@ Generates an XML document from a CFXMLTree object which is ready to be written t
 extern CFDataRefCFXMLTreeCreateXMLData(CFAllocatorRef allocator, CFXMLTreeRef xmlTree);
 ```
 
-#### Return Value
+## Return Value
 
 The XML data. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 This function will *not* regenerate entity references replaced at the parse time (except those required for syntactic correctness). If you need this you must manually walk the tree and re-insert any entity references that should appear in the final output file.
 

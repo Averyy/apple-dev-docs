@@ -19,7 +19,7 @@ An entitlement you enable so your app can use Managed App Distribution.
 
 - `managed-app`: The value for normal operation.
 
-#### Discussion
+## Discussion
 
 To add this entitlement to your app, enable the Managed App Installation UI capability in Xcode.
 

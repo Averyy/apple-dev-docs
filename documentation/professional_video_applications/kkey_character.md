@@ -19,7 +19,7 @@ let kKey_Character: String
 extern NSString * kKey_Character;
 ```
 
-#### Discussion
+## Discussion
 
 If this value is `0`, then there is no key assigned to this command.
 

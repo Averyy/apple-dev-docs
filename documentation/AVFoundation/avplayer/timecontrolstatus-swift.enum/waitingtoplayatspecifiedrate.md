@@ -25,7 +25,7 @@ case waitingToPlayAtSpecifiedRate
 AVPlayerTimeControlStatusWaitingToPlayAtSpecifiedRate
 ```
 
-#### Discussion
+## Discussion
 
 The player enters this state in the following conditions:
 

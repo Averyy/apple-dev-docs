@@ -16,7 +16,7 @@ An error that indicates the action is a third party action, and loading it has n
 static var actionThirdPartyActionsNotAllowedError: AMError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 The user must enable loading of third party actions inside Automator.
 

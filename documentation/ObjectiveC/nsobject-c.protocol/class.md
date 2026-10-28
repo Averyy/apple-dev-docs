@@ -21,7 +21,7 @@ Returns the class object for the receiver’s class.
 - (Class) class;
 ```
 
-#### Return Value
+## Return Value
 
 The class object for the receiver’s class.
 

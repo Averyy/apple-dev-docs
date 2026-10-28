@@ -17,7 +17,7 @@ Creates an electric HVAC load event.
 init(timestamp: Date, measurement: ElectricHVACLoadEvent.ElectricalMeasurement, session: ElectricHVACLoadEvent.Session, device: ElectricalLoadDevice)
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**:  [`EnergyKitError.invalidLoadEvent`](../energykiterror/invalidloadevent.md)
 

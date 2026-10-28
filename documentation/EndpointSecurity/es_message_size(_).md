@@ -24,7 +24,7 @@ func es_message_size(_ msg: UnsafePointer<es_message_t>) -> Int
 extern size_t es_message_size(const es_message_t *msg);
 ```
 
-#### Return Value
+## Return Value
 
 The calculated size of the message.
 

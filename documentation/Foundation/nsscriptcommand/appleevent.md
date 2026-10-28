@@ -21,7 +21,7 @@ var appleEvent: NSAppleEventDescriptor? { get }
 @property (copy, readonly, nullable) NSAppleEventDescriptor * appleEvent;
 ```
 
-#### Discussion
+## Discussion
 
 The effects of mutating or retaining this descriptor are undefined, although it may be copied.
 

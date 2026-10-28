@@ -23,7 +23,7 @@ protocol GKVoiceChatClient : NSObjectProtocol
 @protocol GKVoiceChatClient <NSObject>
 ```
 
-#### Overview
+## Overview
 
 - Provides a network connection that the voice chat service uses to send and receive configuration data with other participants. If this network connection is shared with other application data, the client must also disambiguate between chat configuration data and application data.
 - Provides a participant ID that identifies the user to remote participants in the chat.

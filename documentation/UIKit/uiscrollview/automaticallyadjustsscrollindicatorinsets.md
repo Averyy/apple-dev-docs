@@ -23,7 +23,7 @@ var automaticallyAdjustsScrollIndicatorInsets: Bool { get set }
 @property (nonatomic) BOOL automaticallyAdjustsScrollIndicatorInsets;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`true`](../../Swift/true.md).
 

@@ -22,7 +22,7 @@ nonisolated
 func fontDesign(_ design: Font.Design?) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that uses the font design you specify.
 

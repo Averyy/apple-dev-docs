@@ -20,7 +20,7 @@ var queue: dispatch_queue_t { get }
 @property (nonatomic, readonly) dispatch_queue_t queue;
 ```
 
-#### Discussion
+## Discussion
 
 This property is a reference to the queue the framework used to create the virtual machine when initialized using [`init(configuration:queue:)`](./init%28configuration,queue%29.md). If not specified, the default is the main queue.
 

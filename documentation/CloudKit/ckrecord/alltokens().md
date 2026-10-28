@@ -25,11 +25,11 @@ func allTokens() -> [String]
 - (NSArray<NSString *> *) allTokens;
 ```
 
-#### Return Value
+## Return Value
 
 An array of strings that contains data from the record’s string-based fields.
 
-#### Discussion
+## Discussion
 
 When performing your own full-text searches, you can use this method to get a list of strings for your search. The method acts only on keys with string values. It breaks each value string apart at whitespace boundaries, creates new strings for each word, adds the new strings to an array, and returns the array. This tokenized version of the record’s string values makes it easier to do string-based comparisons of individual words.
 

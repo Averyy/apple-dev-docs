@@ -23,7 +23,7 @@ optional func splitViewController(_ svc: UISplitViewController, willChangeTo dis
 - (void) splitViewController:(UISplitViewController *) svc willChangeToDisplayMode:(UISplitViewControllerDisplayMode) displayMode;
 ```
 
-#### Discussion
+## Discussion
 
 The split view controller calls this method when its display mode is about to change. Because changing the display mode usually means hiding or showing one of the child view controllers, you can implement this method and use it to add or remove the controls for showing the primary view controller.
 

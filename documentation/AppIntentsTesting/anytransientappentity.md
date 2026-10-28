@@ -22,7 +22,7 @@ A type-erased representation of a transient app entity that provides dynamic pro
 struct AnyTransientAppEntity
 ```
 
-#### Overview
+## Overview
 
 Use `AnyTransientAppEntity` to work with transient entities when you don’t know the specific entity type at compile time.
 

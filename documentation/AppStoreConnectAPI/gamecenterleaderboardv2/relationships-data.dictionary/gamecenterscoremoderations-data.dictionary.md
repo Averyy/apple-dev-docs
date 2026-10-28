@@ -15,7 +15,7 @@ The links to the score moderations related to the Game Center leaderboard v2.
 object GameCenterLeaderboardV2.Relationships.GameCenterScoreModerations
 ```
 
-#### Overview
+## Overview
 
 - links: Navigational links that include the self-link.
 

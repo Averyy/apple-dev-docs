@@ -21,11 +21,11 @@ Creates a geometry source from an array of vertex positions.
 + (instancetype) geometrySourceWithVertices:(const SCNVector3 *) vertices count:(NSInteger) count;
 ```
 
-#### Return Value
+## Return Value
 
 A new geometry source whose [`SCNGeometrySource`](../scngeometrysource.md) property is [`vertex`](./semantic-swift.struct/vertex.md).
 
-#### Discussion
+## Discussion
 
 SceneKit converts this data to its own format to optimize rendering performance. To read the converted data, examine the properties of the created [`SCNGeometrySource`](../scngeometrysource.md) object.
 

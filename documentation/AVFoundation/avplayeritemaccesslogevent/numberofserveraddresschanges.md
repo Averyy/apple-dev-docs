@@ -25,7 +25,7 @@ var numberOfServerAddressChanges: Int { get }
 @property (nonatomic, readonly) NSInteger numberOfServerAddressChanges;
 ```
 
-#### Discussion
+## Discussion
 
 The property corresponds to “s-ip-changes”.
 

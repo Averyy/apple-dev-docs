@@ -23,7 +23,7 @@ var invalidationHandler: (() -> Void)? { get set }
 @property (nonatomic, copy, readwrite, nullable) dispatch_block_t invalidationHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The framework invokes this handler only once, and clears the property before invoking it to break retain cycles.
 

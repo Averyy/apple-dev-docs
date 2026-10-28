@@ -22,7 +22,7 @@ mutating func copyElements(fromContentsOf collection: some Collection<Element>)
 
 Available when `Element` conforms to `BitwiseCopyable`.
 
-#### Discussion
+## Discussion
 
 The number of elements in `collection` must be less than or equal to `layout.scalarCount`.
 

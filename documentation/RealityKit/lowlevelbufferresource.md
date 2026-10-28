@@ -18,7 +18,7 @@ A GPU-managed buffer for arbitrary per-draw data such as uniforms and custom par
 final class LowLevelBufferResource
 ```
 
-#### Overview
+## Overview
 
 Buffer contents can be read and written synchronously on the CPU via span-based accessors, or on the GPU by writing to a `MTLBuffer` returned by `replace(commandBuffer:)`.
 

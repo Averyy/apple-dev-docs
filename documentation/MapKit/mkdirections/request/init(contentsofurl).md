@@ -21,11 +21,11 @@ Creates and returns a directions request object using the specified URL.
 init(contentsOfURL url: URL)
 ```
 
-#### Return Value
+## Return Value
 
 An initialized directions request object.
 
-#### Discussion
+## Discussion
 
 You should use the [`isDirectionsRequest(_:)`](./isdirectionsrequest%28_%29.md) method to verify that the specified URL is of the correct format before calling this method to initialize the object.
 

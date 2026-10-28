@@ -17,7 +17,7 @@ Provides the number at the subscripted index.
 subscript(index: Int32) -> CUnsignedChar { get }
 ```
 
-#### Discussion
+## Discussion
 
 This subscript operates on one-component geometry sources with a [`format`](./format.md) of [`MTLVertexFormat.uchar`](../../Metal/mtlvertexformat/uchar.md), such as [`classification`](../armeshgeometry/classification.md).
 

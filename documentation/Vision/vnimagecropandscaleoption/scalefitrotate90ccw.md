@@ -16,7 +16,7 @@ case scaleFitRotate90CCW
 VNImageCropAndScaleOptionScaleFitRotate90CCW
 ```
 
-#### Discussion
+## Discussion
 
 This option optimizes portrait images to fit into landscape buffers for algorithms that are rotation agnostic, and fills the remaining space with transparent pixels.
 

@@ -21,9 +21,9 @@ The status item that lists the device’s managed certificates.
 object StatusSecurityCertificateList
 ```
 
-#### Discussion
+## Discussion
 
-##### Status item availability
+### Status item availability
 
 |  |  |
 | --- | --- |
@@ -34,7 +34,7 @@ object StatusSecurityCertificateList
 | Allowed in system scope | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 | Allowed in user scope | macOS, Shared iPad |
 
-##### Status item example
+### Status item example
 
 **New or updated certificate**:
 

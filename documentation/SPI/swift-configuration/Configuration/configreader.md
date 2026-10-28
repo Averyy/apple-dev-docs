@@ -32,11 +32,11 @@ struct ConfigReader
 - [Integrating with Swift Argument Parser](./integrating-with-swift-argument-parser.md)
 - [Using reloading providers](./using-reloading-providers.md)
 
-#### Overview
+## Overview
 
 Use `ConfigReader` to access configuration values from various sources like environment variables, JSON files, or in-memory stores. The reader supports provider hierarchies, key scoping, and access reporting for debugging configuration usage.
 
-#### Usage
+## Usage
 
 To read configuration values, create a config reader with one or more providers:
 
@@ -45,7 +45,7 @@ let config = ConfigReader(provider: EnvironmentVariablesProvider())
 let httpTimeout = config.int(forKey: "http.timeout", default: 60)
 ```
 
-##### Using multiple providers
+### Using multiple providers
 
 Create a hierarchy of providers by passing an array to the initializer. The reader queries providers in order, using the first non-nil value it finds:
 
@@ -71,7 +71,7 @@ do {
 
 The `get` and `fetch` methods query providers sequentially, while the `watch` method monitors all providers in parallel and returns the first non-nil value from the latest results.
 
-##### Creating scoped readers
+### Creating scoped readers
 
 Create a scoped reader to access nested configuration sections without repeating key prefixes. This is useful for passing configuration to specific components.
 
@@ -92,11 +92,11 @@ let httpConfig = config.scoped(to: "http")
 let timeout = httpConfig.int(forKey: "timeout")  // Reads "http.timeout"
 ```
 
-##### Understanding config keys
+### Understanding config keys
 
 The library accesses configuration values using config keys that represent a hierarchical path to the value. Internally, the library represents a key as a list of string components, such as `["http", "timeout"]`.
 
-##### Using configuration context
+### Using configuration context
 
 Provide additional context to help providers return more specific values. In the following example with a configuration that includes repeated configurations per “upstream”, the value returned is potentially constrained to the configuration with the matching context:
 
@@ -109,7 +109,7 @@ let httpTimeout = config.int(
 
 Providers can use this context to return specialized values or fall back to generic ones. Some providers may ignore context and use only the key path.
 
-##### Automatic type conversion
+### Automatic type conversion
 
 The library can automatically convert string or int configuration values to other types using the `as:` parameter. This works with:
 
@@ -159,11 +159,11 @@ let dbUrl = config.string(
 )
 ```
 
-##### How providers encode keys
+### How providers encode keys
 
 Each [`ConfigProvider`](./configprovider.md) interprets config keys according to its data source format. For example, [`EnvironmentVariablesProvider`](./environmentvariablesprovider.md) converts `["http", "timeout"]` to the environment variable name `HTTP_TIMEOUT` by uppercasing components and joining with underscores.
 
-##### Monitoring configuration access
+### Monitoring configuration access
 
 Use an access reporter to track which configuration values your application reads. The reporter receives [`AccessEvent`](./accessevent.md) instances containing the requested key, calling code location, returned value, and source provider.
 
@@ -171,11 +171,11 @@ This helps debug configuration issues and to discover the config dependencies in
 
 > 💡 **Tip**: Set the `CONFIG_ACCESS_LOG_FILE` environment variable to automatically log all configuration access to a file: `CONFIG_ACCESS_LOG_FILE=/tmp/config-access.log`
 
-##### Protecting sensitive values
+### Protecting sensitive values
 
 Mark sensitive configuration values as secrets to prevent logging by access loggers. Both config readers and providers can set the `isSecret` property. When either marks a value as sensitive, [`AccessReporter`](./accessreporter.md) instances should not log the raw value.
 
-##### Configuration context
+### Configuration context
 
 Configuration context supplements the configuration key components with extra metadata that providers can use to refine value lookups or return more specific results. Context is particularly useful for scenarios where the same configuration key might need different values based on runtime conditions.
 
@@ -190,7 +190,7 @@ let context: [String: ConfigContextValue] = [
 ]
 ```
 
-###### Provider behavior
+#### Provider behavior
 
 Not all providers use context information. Providers that support context can:
 
@@ -207,7 +207,7 @@ let dbConfig = config.string(
 )
 ```
 
-##### Error handling behavior
+### Error handling behavior
 
 The config reader handles provider errors differently based on the method type:
 

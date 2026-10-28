@@ -19,11 +19,11 @@ var fileLabelColors: [NSColor] { get }
 @property (copy, readonly) NSArray<NSColor *> * fileLabelColors;
 ```
 
-#### Return Value
+## Return Value
 
 An array of `NSColor` objects.
 
-#### Discussion
+## Discussion
 
 This array has the same number of elements as [`fileLabels`](./filelabels.md), and the color at a given index corresponds to the label at the same index.
 

@@ -19,7 +19,7 @@ Create a credential assertion request, for authenticating to the relying party.
 func createCredentialAssertionRequest(clientData: ASPublicKeyCredentialClientData) -> ASAuthorizationPlatformPublicKeyCredentialAssertionRequest
 ```
 
-#### Return Value
+## Return Value
 
 The credential assertion request, that you pass to [`ASAuthorizationController`](../asauthorizationcontroller.md).
 

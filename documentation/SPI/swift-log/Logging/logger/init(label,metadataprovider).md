@@ -17,7 +17,7 @@ Creates a logger using the label that identifies the creator of the logger or a 
 init(label: String, metadataProvider: MetadataProvider)
 ```
 
-#### Discussion
+## Discussion
 
 The `label` should identify the creator of the `Logger`. The label can represent an application, a sub-system, or even a datatype.
 

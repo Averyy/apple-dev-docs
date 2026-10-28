@@ -21,7 +21,7 @@ var coarseConversionValue: SKAdNetwork.CoarseConversionValue? { get }
 @property (nonatomic, strong, readonly, nullable) SKAdNetworkCoarseConversionValue coarseConversionValue;
 ```
 
-#### Discussion
+## Discussion
 
 A postback in SKAdNetwork version 4 and later provides a [`fineConversionValue`](./fineconversionvalue.md) or this [`coarseConversionValue`](./coarseconversionvalue.md). Earlier versions of SKAdNetwork use a single [`conversionValue`](./conversionvalue.md).
 

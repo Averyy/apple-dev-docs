@@ -26,7 +26,7 @@ protocol MCSessionDelegate : NSObjectProtocol
 @protocol MCSessionDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Delegate calls occur on a private serial queue. If your app needs to perform an action on a particular run loop or operation queue, its delegate method should explicitly dispatch or schedule that work.
 

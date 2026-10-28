@@ -25,7 +25,7 @@ func CTFrameGetLines(_ frame: CTFrame) -> CFArray
 extern CFArrayRefCTFrameGetLines(CTFrameRef frame);
 ```
 
-#### Return Value
+## Return Value
 
 A CFArray object containing the CTLine objects that make up the frame, or, if there are no lines in the frame, an array with no elements.
 

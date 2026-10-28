@@ -20,7 +20,7 @@ The default view properties for a view controller placed in the arrangement.
 var defaultViewProperties: Self.ViewProperties { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use these default view properties as a starting point to configure an arrangement.
 

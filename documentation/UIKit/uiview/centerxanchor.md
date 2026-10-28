@@ -23,7 +23,7 @@ var centerXAnchor: NSLayoutXAxisAnchor { get }
 @property (nonatomic, strong, readonly) NSLayoutXAxisAnchor * centerXAnchor;
 ```
 
-#### Discussion
+## Discussion
 
 Use this anchor to create constraints with the view’s horizontal center. You can combine this anchor only with other [`NSLayoutXAxisAnchor`](../nslayoutxaxisanchor.md) anchors. For more information, see [`NSLayoutAnchor`](../nslayoutanchor.md).
 

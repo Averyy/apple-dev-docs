@@ -24,11 +24,11 @@ func outlineItem(for selection: PDFSelection) -> PDFOutline?
 - (PDFOutline *) outlineItemForSelection:(PDFSelection *) selection;
 ```
 
-#### Return Value
+## Return Value
 
 The PDF outline object that is the most likely parent of the specified selection. Note that only the point representing the first character of the selection is considered in this method.
 
-#### Discussion
+## Discussion
 
 Typically, outlines represent structural items such as chapters. You can use this method to identify the chapter that a selection falls within.
 

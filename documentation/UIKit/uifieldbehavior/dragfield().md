@@ -23,11 +23,11 @@ class func dragField() -> Self
 + (instancetype) dragField;
 ```
 
-#### Return Value
+## Return Value
 
 A field behavior object that applies a drag force to items.
 
-#### Discussion
+## Discussion
 
 This field simulates the force of friction on an item. The force is applied in the opposite direction of the affected item’s velocity vector and has a magnitude that is proportional to the field’s [`strength`](./strength.md) property and the item’s current velocity.
 

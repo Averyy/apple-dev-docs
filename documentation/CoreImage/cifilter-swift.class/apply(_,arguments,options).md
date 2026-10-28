@@ -19,11 +19,11 @@ func apply(_ k: CIKernel, arguments args: [Any]?, options dict: [String : Any]? 
 - (CIImage *) apply:(CIKernel *) k arguments:(NSArray *) args options:(NSDictionary<NSString *,id> *) dict;
 ```
 
-#### Return Value
+## Return Value
 
 The [`CIImage`](../ciimage.md) object produced by a filter.
 
-#### Discussion
+## Discussion
 
 If you are implementing a custom filter, this method needs to be called from within the [`outputImage`](./outputimage.md) method in order to apply your kernel function to the [`CIImage`](../ciimage.md) object. You can pass any of the keys defined in [Options for Applying a Filter](../options-for-applying-a-filter.md), along with appropriate values, into the options dictionary.
 

@@ -15,7 +15,7 @@ An audio clock device object that handles the configurations for running I/O.
 class IOUserAudioDevice;
 ```
 
-#### Overview
+## Overview
 
 The [`IOUserAudioDevice`](./iouseraudiodevice.md) class subclasses [`IOUserAudioClockDevice`](./iouseraudioclockdevice.md) and can contain [`IOUserAudioStream`](./iouseraudiostream.md) instances that perform I/O for the audio device.
 

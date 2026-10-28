@@ -25,7 +25,7 @@ typealias CFAbsoluteTime = CFTimeInterval
 typedef CFTimeInterval CFAbsoluteTime;
 ```
 
-#### Discussion
+## Discussion
 
 Absolute time is measured by the number of seconds between the reference date and the specified date. Negative values indicate dates/times before the reference date. Positive values indicate dates/times after the reference date.
 

@@ -10,15 +10,15 @@ framework: "swift-openapi-generator/swift-openapi-generator"
 
 Explore OpenAPI patterns for common data representations.
 
-#### Overview
+## Overview
 
 This document lists some common OpenAPI patterns that have been tested to work well with Swift OpenAPI Generator.
 
-##### Open enums and oneOfs
+### Open enums and oneOfs
 
 While `enum` and `oneOf` are closed by default in OpenAPI, meaning that decoding fails if an unknown value is encountered, it can be a good practice to instead use open enums and oneOfs in your API, as it allows adding new cases over time without having to roll a new API-breaking version.
 
-###### Enums
+#### Enums
 
 A simple enum looks like:
 
@@ -44,7 +44,7 @@ anyOf:
 
 When accessing this data on the generated Swift code, first check if the first value (closed enum) is non-nil – if so, one of the known enum values were provided. If the enum value is nil, the second string value will contain the raw value that was provided, which you can log or pass through your program.
 
-###### oneOfs
+#### oneOfs
 
 A simple oneOf looks like:
 
@@ -81,7 +81,7 @@ MyOpenOneOf:
     - type: object
 ```
 
-##### Event streams: JSON Lines, JSON Sequence, and Server-sent Events
+### Event streams: JSON Lines, JSON Sequence, and Server-sent Events
 
 While [JSON Lines](https://jsonlines.org), [JSON Sequence](https://datatracker.ietf.org/doc/html/rfc7464), and [Server-sent Events](https://html.spec.whatwg.org/multipage/server-sent-events.html#server-sent-events) are not explicitly part of the OpenAPI 3.0 or 3.1 specification, you can document an operation that returns events and also the event payloads themselves.
 
@@ -132,7 +132,7 @@ The returned binary body contains the raw events, and the stream can be split up
 
 See the `event-streams-*` client and server examples in [Checking out an example project](./checking-out-an-example-project.md) to learn how to produce and consume these sequences.
 
-##### Represent dates and times
+### Represent dates and times
 
 OpenAPI defines `date-time` as a standard format value for string schemas. Swift OpenAPI Generator maps the `date-time` format to `Foundation.Date` when generating Swift code.
 

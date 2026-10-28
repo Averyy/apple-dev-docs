@@ -20,7 +20,7 @@ func stopAnimating()
 - (void) stopAnimating;
 ```
 
-#### Discussion
+## Discussion
 
 If no animation is in progress, this method does nothing.
 

@@ -24,7 +24,7 @@ var aggregationStyle: HKQuantityAggregationStyle { get }
 @property (readonly) HKQuantityAggregationStyle aggregationStyle;
 ```
 
-#### Discussion
+## Discussion
 
 For more information on aggregation styles, see [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md).
 

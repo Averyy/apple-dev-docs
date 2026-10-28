@@ -26,7 +26,7 @@ class NWPath
 @interface NWPath : NSObject
 ```
 
-#### Overview
+## Overview
 
 For example, if the path status is [`NWPathStatus.satisfied`](./nwpathstatus/satisfied.md), then a connection attempt will be made.
 

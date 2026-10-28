@@ -15,7 +15,7 @@ Returns the currently enrolled Secure Boot signatures in the Key Exchange Key (K
 - (VZEFISignatureDatabaseConfiguration *) getEnrolledSecureBootSignaturesWithError:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A `VZEFISignatureDatabaseConfiguration` object containing the enrolled signatures, or `nil` if an error occurred.
 

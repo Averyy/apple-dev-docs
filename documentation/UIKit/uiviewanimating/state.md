@@ -24,7 +24,7 @@ var state: UIViewAnimatingState { get }
 @property (nonatomic, readonly) UIViewAnimatingState state;
 ```
 
-#### Discussion
+## Discussion
 
 This property reflects the current state of the animation. An animator object starts in the [`UIViewAnimatingState.inactive`](../uiviewanimatingstate/inactive.md) state. Calling the [`startAnimation()`](./startanimation%28%29.md) or [`pauseAnimation()`](./pauseanimation%28%29.md) method changes the state to [`UIViewAnimatingState.active`](../uiviewanimatingstate/active.md). Changing the [`fractionComplete`](./fractioncomplete.md) property also moves the animator to the active state. The animator remains in the active state until its animations finish, at which point it moves back to the inactive state.
 

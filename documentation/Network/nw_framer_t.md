@@ -25,7 +25,7 @@ typealias nw_framer_t = any OS_nw_framer
 typedef NSObject<OS_nw_framer> * nw_framer_t;
 ```
 
-#### Discussion
+## Discussion
 
 All interaction between your protocol and the connection occurs through this object.
 

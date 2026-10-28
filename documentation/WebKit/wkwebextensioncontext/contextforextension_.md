@@ -19,7 +19,7 @@ Returns a web extension context initialized with the specified extension.
 + (instancetype) contextForExtension:(WKWebExtension *) extension;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized web extension context.
 

@@ -23,11 +23,11 @@ func endEditing(_ force: Bool) -> Bool
 - (BOOL) endEditing:(BOOL) force;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the view resigned the first responder status or [`false`](../../Swift/false.md) if it did not.
 
-#### Discussion
+## Discussion
 
 This method looks at the current view and its subview hierarchy for the text field that is currently the first responder. If it finds one, it asks that text field to resign as first responder. If the `force` parameter is set to [`true`](../../Swift/true.md), the text field is never even asked; it is forced to resign.
 

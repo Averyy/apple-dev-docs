@@ -10,7 +10,7 @@ Reduce a video’s data rate while maintaining high acuity in the center of the 
 - macOS 27.0+
 - Xcode 27.0+
 
-#### Overview
+## Overview
 
 Apple Immersive Video (AIV) uses very high resolution cameras capable of capturing video that exceeds 8K per eye at 90 frames per second (fps), which is over 10 billion pixels per second.
 
@@ -18,7 +18,7 @@ Because it’s impractical to stream that many pixels over even the fastest avai
 
 > **Note**: This sample code project is associated with WWDC26 session 287: [Build next generation experiences with visionOS 27](https://developer.apple.com/videos/play/wwdc2026/287).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 To run this sample app, you need to [download](https://devstreaming-cdn.apple.com/videos/streaming/examples/immersive-media/AIV/Apple_Immersive_Video_Dual_Track_Foveation.zip) and expand a zip file that contains an example QuickTime movie and supporting content.
 

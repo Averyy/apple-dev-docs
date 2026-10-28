@@ -22,7 +22,7 @@ nonisolated
 func id<ID>(_ id: ID) -> some View where ID : Hashable
 ```
 
-#### Discussion
+## Discussion
 
 When the proxy value specified by the `id` parameter changes, the identity of the view — for example, its state — is reset.
 

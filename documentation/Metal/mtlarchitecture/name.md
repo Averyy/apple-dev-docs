@@ -24,7 +24,7 @@ var name: String { get }
 @property (readonly, nonnull) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 The property’s value is equivalent to the output from the `metal-arch` command line tool on the same system.
 

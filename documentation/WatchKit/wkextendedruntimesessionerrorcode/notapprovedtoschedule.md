@@ -19,7 +19,7 @@ case notApprovedToSchedule
 WKExtendedRuntimeSessionErrorNotApprovedToSchedule
 ```
 
-#### Discussion
+## Discussion
 
 You can schedule alarm sessions by calling the session’s [`start(at:)`](../wkextendedruntimesession/start%28at%29.md) method. For all other session types, use the [`start()`](../wkextendedruntimesession/start%28%29.md) method instead.
 

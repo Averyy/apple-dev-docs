@@ -24,7 +24,7 @@ var actions: [String : any CAAction]? { get set }
 @property (copy, nullable) NSDictionary<NSString *,id<CAAction>> * actions;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `nil`. You can use this dictionary to store custom actions for your layer. The contents of this dictionary searched as part of the standard implementation of the [`action(forKey:)`](./action%28forkey%29.md) method.
 

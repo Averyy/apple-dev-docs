@@ -20,7 +20,7 @@ var category: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * category;
 ```
 
-#### Discussion
+## Discussion
 
 If the media item isn’t a podcast, this property is `nil`. The creator of the podcast specifies the category.
 

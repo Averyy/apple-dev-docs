@@ -22,7 +22,7 @@ An attribute for defining the height of lines in a text.
 enum LineHeightAttribute
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**: Note that this attribute is not for usage with CoreText APIs directly, but exposed to give other frameworks common vocabulary to express the line height concept as defined by CoreText in Swift. For more details, see [`AttributeScopes.CoreTextAttributes`](../coretextattributes.md).
 

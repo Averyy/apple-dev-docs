@@ -20,7 +20,7 @@ struct SecCSFlags
 enum SecCSFlags : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 All of the bits in the [`SecCSFlags`](./seccsflags.md) enumeration are reserved by Apple. If you set any bits not defined here, the behavior is undefined.
 

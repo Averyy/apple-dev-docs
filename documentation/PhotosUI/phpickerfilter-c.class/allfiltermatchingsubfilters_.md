@@ -19,7 +19,7 @@ Creates a new filter that includes only the filters you specify.
 + (PHPickerFilter *) allFilterMatchingSubfilters:(NSArray<PHPickerFilter *> *) subfilters;
 ```
 
-#### Return Value
+## Return Value
 
 A new filter that contains the list of filters you specify.
 

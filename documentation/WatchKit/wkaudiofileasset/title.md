@@ -19,7 +19,7 @@ var title: String? { get }
 @property (nonatomic, readonly, nullable) NSString * title;
 ```
 
-#### Discussion
+## Discussion
 
 If you do not set the title directly at initialization time, the asset object obtains the information from the audio file’s metadata. If the file does not contain any title metadata, the filename is used for the title.
 

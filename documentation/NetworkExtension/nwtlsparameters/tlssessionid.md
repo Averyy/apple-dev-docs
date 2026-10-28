@@ -26,7 +26,7 @@ var tlsSessionID: Data? { get set }
 @property (copy, nullable) NSData * TLSSessionID;
 ```
 
-#### Discussion
+## Discussion
 
 The Session ID is used for TLS session resumption.
 

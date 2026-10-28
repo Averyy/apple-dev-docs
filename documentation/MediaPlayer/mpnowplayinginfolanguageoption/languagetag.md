@@ -25,7 +25,7 @@ var languageTag: String? { get }
 @property (nonatomic, readonly, nullable) NSString * languageTag;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the IETF BCP 47 language code for the language option. A value of [`nil`](../../ObjectiveC/nil-227m0.md) indicates that this option is disabled.
 

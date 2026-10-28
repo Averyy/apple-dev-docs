@@ -22,15 +22,15 @@ class ManagedSettingsStore
 
 - [Confirming the effective TV and movie ratings](./readingmedia.md)
 
-#### Overview
+## Overview
 
 The Managed Settings data store groups settings according to function. Each group contains relevant data about its associated settings, for example, a default value and minimum and maximum possible values.
 
-##### Configure Settings
+### Configure Settings
 
 Use the settings objects to inspect your application’s current configurations as well as apply new configurations. Changing the value of a setting to `nil` deletes your app’s configuration for that setting from the device. The system doesn’t guarantee that the settings you specify govern the device’s behavior. The system is responsible for determining its effective state based on all the settings it receives.
 
-##### Examine Effective Settings
+### Examine Effective Settings
 
 In a few cases, you can also access the effective settings. For example, a media app can access the effective rating settings to filter the content it offers, even though it doesn’t provide configurations for these or any other settings. Subscribe to [`$effectiveMaximumTVShowRating`](./managedsettingsstore/dollareffectivemaximumtvshowrating.md) or [`$effectiveMaximumMovieRating`](./managedsettingsstore/dollareffectivemaximummovierating.md) to determine what TV shows or movies to offer.
 

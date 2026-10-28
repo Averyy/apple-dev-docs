@@ -19,11 +19,11 @@ func hv_gic_config_set_distributor_base(_ config: hv_gic_config_t, _ distributor
 extern hv_return_t hv_gic_config_set_distributor_base(hv_gic_config_t config, hv_ipa_t distributor_base_address);
 ```
 
-#### Return Value
+## Return Value
 
 A new GIC configuration object.
 
-#### Discussion
+## Discussion
 
 Guest physical address for the distributor base aligned to the byte value returned by [`hv_gic_get_distributor_base_alignment(_:)`](./hv_gic_get_distributor_base_alignment%28_%29.md).
 

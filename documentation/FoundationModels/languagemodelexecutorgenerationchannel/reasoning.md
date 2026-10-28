@@ -20,7 +20,7 @@ A reasoning event.
 struct Reasoning
 ```
 
-#### Overview
+## Overview
 
 A per-entry reasoning text, segment replacements, signature updates, metadata, or usage. Reasoning events are peers of [`LanguageModelExecutorGenerationChannel.Response`](./response.md) and [`LanguageModelExecutorGenerationChannel.ToolCalls`](./toolcalls.md).
 

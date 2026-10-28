@@ -25,7 +25,7 @@ convenience init(points: UnsafePointer<MKMapPoint>, count: Int)
 + (instancetype) polylineWithPoints:(const MKMapPoint *) points count:(NSUInteger) count;
 ```
 
-#### Return Value
+## Return Value
 
 A new polyline object.
 

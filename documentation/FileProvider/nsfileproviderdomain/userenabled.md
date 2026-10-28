@@ -23,7 +23,7 @@ var userEnabled: Bool { get }
 @property (readonly) BOOL userEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the property is [`true`](../../Swift/true.md); however, If the user disables the domain in the System Preferences, the property is [`false`](../../Swift/false.md).
 

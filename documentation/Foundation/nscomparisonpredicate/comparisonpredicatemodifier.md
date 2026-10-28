@@ -25,7 +25,7 @@ var comparisonPredicateModifier: NSComparisonPredicate.Modifier { get }
 @property (readonly) NSComparisonPredicateModifier comparisonPredicateModifier;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`NSComparisonPredicate.Modifier.direct`](./modifier/direct.md).
 

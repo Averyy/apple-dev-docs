@@ -19,7 +19,7 @@ static let fullScreenModeApplicationPresentationOptions: NSView.FullScreenModeOp
 extern NSViewFullScreenModeOptionKey const NSFullScreenModeApplicationPresentationOptions;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an instance of [`NSNumber`](../../../Foundation/nsnumber.md) containing an unsigned integer value of [`NSApplication.PresentationOptions`](../../nsapplication/presentationoptions-swift.struct.md). Those options can be combined using the C bit-wise `OR` operator before created the `NSNumber` instance. See [`NSApplication`](../../nsapplication.md) constants section [`NSApplication.PresentationOptions`](../../nsapplication/presentationoptions-swift.struct.md) for more information on these options.
 

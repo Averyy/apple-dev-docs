@@ -17,7 +17,7 @@ Boolean canOpenURL(
 );
 ```
 
-#### Return Value
+## Return Value
 
 Returns `YES` if the app can be opened.
 

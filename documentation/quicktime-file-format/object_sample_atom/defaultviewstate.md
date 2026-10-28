@@ -6,7 +6,7 @@
 
 The 1-based index of the default view state.
 
-#### Overview
+## Overview
 
 The default view state image for a given view is displayed when the mouse button is not down.
 

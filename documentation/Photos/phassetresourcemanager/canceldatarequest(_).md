@@ -24,7 +24,7 @@ func cancelDataRequest(_ requestID: PHAssetResourceDataRequestID)
 - (void) cancelDataRequest:(PHAssetResourceDataRequestID) requestID;
 ```
 
-#### Discussion
+## Discussion
 
 When you perform an asynchronous request for asset resource data using the [`requestData(for:options:dataReceivedHandler:completionHandler:)`](./requestdata%28for,options,datareceivedhandler,completionhandler%29.md) method, the image manager returns a numeric identifier for the request. To cancel the request before it completes, provide this identifier when calling the [`cancelDataRequest(_:)`](./canceldatarequest%28_%29.md) method.
 

@@ -24,7 +24,7 @@ func setCustomZoneConfiguration(_ configuration: HKWorkoutZoneConfiguration?, fo
 
 - [Accessing workout zone data](../accessing-workout-zone-data.md)
 
-#### Discussion
+## Discussion
 
 Call this method before calling [`beginCollection(withStart:completion:)`](./begincollection%28withstart,completion%29.md) to apply custom zones. If you don’t set a custom configuration, the system uses the person’s preferred zone configuration from Health Settings for zone calculations. Custom configurations apply only to this workout and don’t modify the person’s preferred zones.
 

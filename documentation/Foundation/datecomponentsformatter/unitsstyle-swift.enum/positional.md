@@ -25,7 +25,7 @@ case positional
 NSDateComponentsFormatterUnitsStylePositional
 ```
 
-#### Discussion
+## Discussion
 
 This style is most commonly used for time values where the hour, minute, and second values are separated by colons. You can use the zero formatting behaviors ([`DateComponentsFormatter.ZeroFormattingBehavior`](../zeroformattingbehavior-swift.struct.md)) to further modify the formatting of this value.
 

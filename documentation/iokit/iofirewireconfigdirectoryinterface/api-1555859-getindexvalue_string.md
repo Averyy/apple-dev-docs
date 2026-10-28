@@ -14,7 +14,7 @@
 IOReturn (*GetIndexValue_String)(IOFireWireLibConfigDirectoryRef self, int inIndex, CFStringRef *outValue);
 ```
 
-#### Discussion
+## Discussion
 
 Description forthcoming
 

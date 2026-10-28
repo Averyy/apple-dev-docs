@@ -23,7 +23,7 @@ var latitude: NSNumber? { get set }
 @property (strong, nullable) NSNumber * latitude;
 ```
 
-#### Discussion
+## Discussion
 
 Negative values lie south of the equator.
 

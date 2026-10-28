@@ -12,7 +12,7 @@
 - visionOS 1.0+
 - watchOS 2.2+
 
-#### Overview
+## Overview
 
 ```objc
 char *ForceNaturalAlignment;

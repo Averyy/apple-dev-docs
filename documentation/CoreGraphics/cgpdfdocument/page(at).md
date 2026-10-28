@@ -25,7 +25,7 @@ func page(at pageNumber: Int) -> CGPDFPage?
 extern CGPDFPageRefCGPDFDocumentGetPage(CGPDFDocumentRef document, size_t pageNumber);
 ```
 
-#### Return Value
+## Return Value
 
 Return the PDF page corresponding to the specified page number, or `NULL` if no such page exists in the document. Pages are numbered starting at 1.
 

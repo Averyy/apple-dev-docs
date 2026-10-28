@@ -23,7 +23,7 @@ func viewWillLayout()
 
 - [Updating views automatically with observation tracking in AppKit](../updating-views-automatically-with-observation-tracking-in-appkit.md)
 
-#### Discussion
+## Discussion
 
 You can override this method to perform tasks to precede the layout of the view controller’s view, such as adjusting Auto Layout constraints. If you override this method, call this method on `super` at some point in your implementation in case a superclass also overrides this method.
 

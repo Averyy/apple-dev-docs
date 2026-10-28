@@ -20,7 +20,7 @@ A reader that provides access to an attachment’s data.
 class HKAttachmentDataReader
 ```
 
-#### Overview
+## Overview
 
 To access the attachment’s data, get a data reader from the attachment store.
 

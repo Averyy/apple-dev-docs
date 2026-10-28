@@ -21,7 +21,7 @@ The type of the column’s elements that defines an associated type for the bidi
 typealias Element = Base.WrappedElement
 ```
 
-#### Discussion
+## Discussion
 
 See [`BidirectionalCollection`](../../Swift/bidirectionalcollection.md) for more information.
 

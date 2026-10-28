@@ -15,7 +15,7 @@
 kINQUIRY_Byte6_BQUE_Mask = (1 << kINQUIRY_Byte6_BQUE_Bit)
 ```
 
-#### Discussion
+## Discussion
 
 Mask to use to test the BQUE bit.
 

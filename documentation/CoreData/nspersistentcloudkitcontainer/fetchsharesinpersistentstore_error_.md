@@ -21,11 +21,11 @@ Returns an array that contains all share records in the specified persistent sto
 - (NSArray<CKShare *> *) fetchSharesInPersistentStore:(NSPersistentStore *) persistentStore error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`CKShare`](../../CloudKit/ckshare.md) objects. If the fetch is successful, but Core Data doesn’t find any share records, the method returns an empty array.
 
-#### Discussion
+## Discussion
 
 Use a fetched share record to manage its participants and their permissions, or assign data directly to it. A share record is a subclass of [`CKRecord`](../../CloudKit/ckrecord.md), which means you can store any data you choose in the underlying record to meet your specific needs. For more information, see [`CKShare`](../../CloudKit/ckshare.md).
 

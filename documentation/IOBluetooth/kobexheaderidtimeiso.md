@@ -17,7 +17,7 @@ var kOBEXHeaderIDTimeISO: OBEXHeaderIdentifiers { get }
 kOBEXHeaderIDTimeISO
 ```
 
-#### Discussion
+## Discussion
 
 Date/time stamp - ISO8601 version of time. (YYYYMMDDTHHMMSSZ)
 

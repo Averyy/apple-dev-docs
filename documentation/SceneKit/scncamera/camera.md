@@ -21,11 +21,11 @@ Creates a new camera object.
 + (instancetype) camera;
 ```
 
-#### Return Value
+## Return Value
 
 A new camera object.
 
-#### Discussion
+## Discussion
 
 To use the camera to display a scene, attach it to the [`camera`](../scnnode/camera.md) property of a node and then select that node using the [`pointOfView`](../scnscenerenderer/pointofview.md) property of the view (or layer or renderer) rendering the scene.
 

@@ -13,13 +13,13 @@ Identify multiple objects in an image by using the DEtection TRansformer image-s
 - macOS 14.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 Semantic image-segmentation models identify multiple objects on an input image you provide. For each object, the model output provides the precise locations of each pixel that represents it, so that you can do things like visualize the area of an image that corresponds to the object.
 
 This sample code project shows you how to load the model, read the model’s metadata to get label information, and perform offline inference. It also shows how to create a mask — from the image-segment label — and overlay it on the original image.
 
-##### Select the image-segmentation model
+### Select the image-segmentation model
 
 The sample code project includes an 8-bit palletization image-segmentation model — `DETRResnet50SemanticSegmentationF16P8` — in the `models` directory. Replace the model with a different version by dropping the model `.mlpackage` into the `models` folder in Xcode. To download a DETR model using 16-bit, see [Core ML Models](https://developer.apple.com/machine-learning/models/).
 
@@ -36,7 +36,7 @@ final class ViewModel: ObservableObject {
 }
 ```
 
-##### Load the model
+### Load the model
 
 How long it takes to load a model depends on many factors, including the size of the model. The sample app loads the segmentation model asynchronously to avoid blocking the calling thread:
 
@@ -82,7 +82,7 @@ var body: some View {
 
 ```
 
-##### Read the image-segmentation model metadata
+### Read the image-segmentation model metadata
 
 The `Core ML` framework uses optional metadata to map segment label values into strings an app reads. The metadata is in JSON format, and consists of two optional lists of strings:
 
@@ -114,7 +114,7 @@ extension MLModel {
 
 Because the colors from the model metadata are optional, a common practice is to use a generic set of colors that an app defines. A semantic image-segmentation model can generate a large number of labels, and may need to reuse colors or use very similar colors. To assist people with color blindness, avoid using only color to identify different objects. For more information about using inclusive colors, see [Inclusive color](https://developer.apple.com/design/human-interface-guidelines/color#Inclusive-color).
 
-##### Perform inference
+### Perform inference
 
 The 8-bit DETR model takes a `CVPixelBuffer` with the type `kCVPixelFormatType_32ARGB` as the input, and generates a `ShapedArray` of `Int32` as output. For both arrays, the model uses fixed dimensions with the size `(448, 448)`. These values are specific to the model, and can be different for another model. To perform inference on the image-segmentation model, the sample app calls the `performInference` method. After inference, the sample app gets the result array from the `semanticPredictionsShapedArray` property:
 
@@ -132,7 +132,7 @@ let result = try model.prediction(image: pixelBuffer)
 let resultArray = result.semanticPredictionsShapedArray
 ```
 
-##### Overlay the result
+### Overlay the result
 
 The sample app provides a visualization of model output by overlaying a masked image — representing the selected segment — on top of the original, like the sky in the following image:
 

@@ -21,7 +21,7 @@ The properties of a toggle instance.
 struct ToggleStyleConfiguration
 ```
 
-#### Overview
+## Overview
 
 When you define a custom toggle style by creating a type that conforms to the [`ToggleStyle`](./togglestyle.md) protocol, you implement the [`makeBody(configuration:)`](./togglestyle/makebody%28configuration%29.md) method. That method takes a `ToggleStyleConfiguration` input that has the information you need to define the behavior and appearance of a [`Toggle`](./toggle.md).
 

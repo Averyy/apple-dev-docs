@@ -4,7 +4,7 @@
 
 Contains rating information about a product.
 
-#### Overview
+## Overview
 
 This element can contain information about a movie’s viewing rating or information from a rating service, such as Rotten Tomatoes. Here’s an example that shows a movie has been rated for general audiences.
 
@@ -16,7 +16,7 @@ This element can contain information about a movie’s viewing rating or informa
 </ratingCard>
 ```
 
-##### Subelements of ratingCard
+### Subelements of ratingCard
 
 - [description](./description.md)
 - [infoTable](./infotable.md)
@@ -26,7 +26,7 @@ This element can contain information about a movie’s viewing rating or informa
 - [text](./text.md)
 - [title](./title.md)
 
-##### Elements that Use ratingCard
+### Elements that Use ratingCard
 
 - section
 

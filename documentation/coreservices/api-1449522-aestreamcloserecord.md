@@ -19,11 +19,11 @@ func AEStreamCloseRecord(_ ref: AEStreamRef!) -> OSStatus
 OSStatus AEStreamCloseRecord(AEStreamRef ref);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 Call this function to balance a preceding call to [`AEStreamOpenRecord(_:_:)`](./api-1447141-aestreamopenrecord.md). This function completes the definition of the Apple event record. 
 

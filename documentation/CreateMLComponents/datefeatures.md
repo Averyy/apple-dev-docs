@@ -20,7 +20,7 @@ A set of date and time features.
 struct DateFeatures
 ```
 
-#### Overview
+## Overview
 
 The choice of features for a particular task depends on the relevance of different date and time components. For example a dataset of weather data may require hour and day-of-year features, while a dataset of workout metrics may require second, hour, and weekday features.
 

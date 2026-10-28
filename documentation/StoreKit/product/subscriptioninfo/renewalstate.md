@@ -26,7 +26,7 @@ struct RenewalState
 - [Testing failing subscription renewals and Apple In-App Purchases](../../testing-failing-subscription-renewals-and-in-app-purchases.md)
 - [Testing Apple In-App Purchases in Xcode](../../testing-in-app-purchases-in-xcode.md)
 
-#### Overview
+## Overview
 
 A subscription’s renewal state indicates whether an auto-renewable subscription is entitled to service. Subscriptions in the [`subscribed`](./renewalstate/subscribed.md) and [`inGracePeriod`](./renewalstate/ingraceperiod.md) states are entitled to service.
 

@@ -25,7 +25,7 @@ var fetchRecordChangesCompletionBlock: ((CKServerChangeToken?, Data?, (any Error
 @property (nonatomic, copy, nullable) void (^fetchRecordChangesCompletionBlock)(CKServerChangeToken *serverChangeToken, NSData *clientChangeTokenData, NSError *operationError);
 ```
 
-#### Discussion
+## Discussion
 
 The block returns no value and takes the following parameters:
 

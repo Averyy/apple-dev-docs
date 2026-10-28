@@ -16,11 +16,11 @@ CMError CMSetDeviceFactoryProfiles (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 This function establishes the profiles used by a given device. It should be called after device registration to notify ColorSync of the device's profiles. Note that factory device profiles and the current device profiles might not be the same, since the latter may contain modifications to the factory set. 
 

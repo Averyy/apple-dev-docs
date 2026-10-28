@@ -26,7 +26,7 @@ func connectionDidFinishDownloading(_ connection: NSURLConnection, destinationUR
 - (void) connectionDidFinishDownloading:(NSURLConnection *) connection destinationURL:(NSURL *) destinationURL;
 ```
 
-#### Discussion
+## Discussion
 
 This method will be called once after a successful download. The file downloaded to `destinationURL` is guaranteed to exist there only for the duration of this method implementation; the delegate should copy or move the file to a more persistent and appropriate location.
 

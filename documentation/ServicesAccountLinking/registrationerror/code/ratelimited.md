@@ -21,7 +21,7 @@ case rateLimited
 SALRegistrationErrorRateLimited
 ```
 
-#### Discussion
+## Discussion
 
 Check the error’s `userInfo` for [`RegistrationErrorRetryAfterKey`](../../registrationerrorretryafterkey.md) to get the server-provided retry interval. If absent, use exponential backoff.
 

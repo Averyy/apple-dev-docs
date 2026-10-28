@@ -15,7 +15,7 @@ Returns a new print panel object.
 + (NSPrintPanel *) printPanel;
 ```
 
-#### Return Value
+## Return Value
 
 The print panel object.
 

@@ -23,7 +23,7 @@ func dataScanner(_ dataScanner: DataScannerViewController, didRemove removedItem
 
 - [Scanning data with the camera](../scanning-data-with-the-camera.md)
 
-#### Discussion
+## Discussion
 
 To identify an item in the `removedItems` and `allItems` parameters, use the item’s `id` property.
 

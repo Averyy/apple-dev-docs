@@ -23,13 +23,13 @@ class WCSession
 @interface WCSession : NSObject
 ```
 
-#### Overview
+## Overview
 
 Your iOS app and watchOS app must both create and configure an instance of this class at some point during their execution. When both session objects are active, the two processes can communicate immediately by sending messages back and forth. When only one session is active, the active session may still send updates and transfer files, but those transfers happen opportunistically in the background.
 
 > ❗ **Important**:  The session object must be configured and activated before you attempt to send messages or obtain information about the state of the connection. Before activating the session, you may call the [`isSupported()`](./wcsession/issupported%28%29.md) method to make sure that current device can use the Watch Connectivity framework.
 
-##### Configuring and Activating the Session
+### Configuring and Activating the Session
 
 To configure and activate the session, assign a [`delegate`](./wcsession/delegate.md) to the default session object and call that object’s [`activate()`](./wcsession/activate%28%29.md) method, as shown in code snippet below. Your WatchKit extension and iOS app must each configure their own session object. Activating the session establishes a connection between the two apps.
 
@@ -61,7 +61,7 @@ Apps may initiate transfers only when the session is active—that is, the [`act
 
 For more information about implementing the methods of the delegate object, see [`WCSessionDelegate`](./wcsessiondelegate.md).
 
-##### Supporting Communication with Multiple Apple Watches
+### Supporting Communication with Multiple Apple Watches
 
 An iPhone running iOS 9.3 or later may pair with more than one Apple Watch running watchOS 2.2 or later. In your Watch app, you should support asynchronous activation of the session, but doing so is not required. In your iOS app, you must support asynchronous activation of the session and also monitor the activation and deactivation of the session object. You do this by implementing the following methods in your session delegate:
 
@@ -77,7 +77,7 @@ Your iOS app can use the [`watchDirectoryURL`](./wcsession/watchdirectoryurl.md)
 
 For more information about handling session activation and deactivation, see [`WCSessionDelegate`](./wcsessiondelegate.md).
 
-##### Communicating with the Counterpart App
+### Communicating with the Counterpart App
 
 You may initiate data transfers to a counterpart app only when the [`activationState`](./wcsession/activationstate.md) property is set to [`WCSessionActivationState.activated`](./wcsessionactivationstate/activated.md). The iOS app should ensure the Watch app is installed before trying to initiate transfers. You initiate transfers in any of the following ways:
 

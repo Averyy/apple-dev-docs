@@ -21,11 +21,11 @@ A span used to access the code units.
 var span: Span<UInt8> { get }
 ```
 
-#### Return Value
+## Return Value
 
 A `Span` over the UTF-8 code units of this `UTF8Span`.
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(1)
 

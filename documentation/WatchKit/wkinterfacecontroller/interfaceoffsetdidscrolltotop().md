@@ -19,7 +19,7 @@ func interfaceOffsetDidScrollToTop()
 - (void) interfaceOffsetDidScrollToTop;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method does nothing. You can override this method to take actions when the user scrolls to the top of the interface.
 

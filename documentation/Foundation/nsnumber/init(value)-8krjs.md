@@ -25,7 +25,7 @@ init(value: CChar)
 - (NSNumber *) initWithChar:(char) value;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSNumber` object containing `value`, treating it as a signed `char`.
 

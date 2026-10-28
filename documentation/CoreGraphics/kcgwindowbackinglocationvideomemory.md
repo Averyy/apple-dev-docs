@@ -18,7 +18,7 @@ let kCGWindowBackingLocationVideoMemory: CFString
 extern CFStringRef const kCGWindowBackingLocationVideoMemory;
 ```
 
-#### Discussion
+## Discussion
 
 The key that identifies whether the window’s backing store is located in video memory. The value for this key is a [`CFBoolean`](../CoreFoundation/cfboolean.md) type.
 

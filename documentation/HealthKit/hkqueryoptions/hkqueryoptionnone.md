@@ -20,7 +20,7 @@ The sample’s time period must overlap part of the target time period.
 HKQueryOptionNone
 ```
 
-#### Discussion
+## Discussion
 
 The sample’s end time must be equal to or later than the target’s start time, and the sample’s start time must be earlier than the target’s end time.
 

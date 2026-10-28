@@ -21,7 +21,7 @@ A strategy that determines how to format the fractional part of a duration if th
 struct FractionalPartDisplayStrategy
 ```
 
-#### Overview
+## Overview
 
 When using a [`Duration.UnitsFormatStyle`](../unitsformatstyle.md), specifying a `FractionalPartDisplayStrategy` enables you to decide how to balance between accuracy and verbosity when you’re not using all of the available units (hours, minutes, and seconds). When a formatted duration has a fractional part, you can hide it entirely, round the unit up or down while hiding the fractional part, or show the unit with a fraction.
 

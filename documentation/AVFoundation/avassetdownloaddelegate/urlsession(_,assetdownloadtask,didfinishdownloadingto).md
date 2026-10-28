@@ -26,7 +26,7 @@ optional func urlSession(_ session: URLSession, assetDownloadTask: AVAssetDownlo
 - (void) URLSession:(NSURLSession *) session assetDownloadTask:(AVAssetDownloadTask *) assetDownloadTask didFinishDownloadingToURL:(NSURL *) location;
 ```
 
-#### Discussion
+## Discussion
 
 Don’t move the downloaded asset from this location. Downloaded assets must remain at the system-provided URL. Instead, save a persistent reference to this URL for future use.
 

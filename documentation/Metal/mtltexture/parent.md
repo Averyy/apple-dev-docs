@@ -25,7 +25,7 @@ var parent: (any MTLTexture)? { get }
 @property (readonly, nullable) id<MTLTexture> parentTexture;
 ```
 
-#### Discussion
+## Discussion
 
 When this value is `nil`, an [`MTLBuffer`](../mtlbuffer.md) instance provides texture data.
 

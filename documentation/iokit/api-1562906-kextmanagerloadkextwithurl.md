@@ -16,11 +16,11 @@ Request the kext loading system to load a kext with a given URL.
 OSReturn KextManagerLoadKextWithURL(CFURLRef kextURL, CFArrayRef dependencyKextAndFolderURLs);
 ```
 
-#### Return Value
+## Return Value
 
 `kOSReturnSuccess` if the kext is successfully loaded (or is already loaded), otherwise returns on error.
 
-#### Discussion
+## Discussion
 
 Any non-kext URLs in `dependencyKextAndFolderURLs` are scanned at the top level for kexts and plugins of kexts.
 

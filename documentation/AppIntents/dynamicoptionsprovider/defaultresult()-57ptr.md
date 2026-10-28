@@ -21,7 +21,7 @@ The default value for parameters using this provider when no value is provided b
 func defaultResult() async -> Self.DefaultValue?
 ```
 
-#### Discussion
+## Discussion
 
 Either a single value or an array of values may be provided. If an array is provided and the parameter requires a single value, only the first element of the array is used.
 

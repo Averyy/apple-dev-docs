@@ -19,11 +19,11 @@ init(pasteboardWriter: any NSPasteboardWriting)
 - (instancetype) initWithPasteboardWriter:(id<NSPasteboardWriting>) pasteboardWriter;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized NSDraggingItem instance with the specified dragging content.
 
-#### Discussion
+## Discussion
 
 When the developer creates an `NSDraggingItem` instance , it is for use with the view method [`beginDraggingSession(with:event:source:)`](../nsview/begindraggingsession%28with,event,source%29.md) During the invocation of that method, the `pasteboardWriter` is placed onto the dragging pasteboard for the `NSDraggingSession` that contains the dragging item instance.
 

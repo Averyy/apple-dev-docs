@@ -23,7 +23,7 @@ typealias gss_qop_t = OM_uint32
 typedef OM_uint32 gss_qop_t;
 ```
 
-#### Discussion
+## Discussion
 
 See [Object Identifiers](./object-identifiers.md) for valid values.
 

@@ -20,7 +20,7 @@ Waits on a group of expectations for up to the specified timeout, optionally enf
 func fulfillment(of expectations: [XCTestExpectation], timeout seconds: TimeInterval = .infinity, enforceOrder enforceOrderOfFulfillment: Bool = false) async
 ```
 
-#### Discussion
+## Discussion
 
 Use this concurrency-safe alternative to [`wait(for:timeout:enforceOrder:)`](./wait%28for,timeout,enforceorder%29.md) in your Swift code. Expectations can only appear in the array once. The method can return before the timeout if the test fulfills all the expectations you provide.
 

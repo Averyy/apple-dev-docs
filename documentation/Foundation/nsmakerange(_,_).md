@@ -25,7 +25,7 @@ func NSMakeRange(_ loc: Int, _ len: Int) -> NSRange
 static NSRange NSMakeRange(NSUInteger loc, NSUInteger len);
 ```
 
-#### Return Value
+## Return Value
 
 An `NSRange` with location `location` and length `length`.
 

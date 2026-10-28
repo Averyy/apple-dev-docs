@@ -21,7 +21,7 @@ var allowsContinuousPathKeyboard: Bool { get set }
 @property (nonatomic, assign) BOOL allowsContinuousPathKeyboard;
 ```
 
-#### Discussion
+## Discussion
 
 Users can turn on Slide to Type in the Settings app (General > Keyboard). An assessment session disables this feature by default, but you can allow it by setting [`allowsContinuousPathKeyboard`](./allowscontinuouspathkeyboard.md) to `true` in the [`AEAssessmentConfiguration`](../aeassessmentconfiguration.md) instance that you use to initialize a session.
 

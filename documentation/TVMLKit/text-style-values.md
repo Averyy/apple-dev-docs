@@ -4,7 +4,7 @@
 
 Font size and weight.
 
-#### Overview
+## Overview
 
 ```
 NSString *const TVTextStyleTitle1;

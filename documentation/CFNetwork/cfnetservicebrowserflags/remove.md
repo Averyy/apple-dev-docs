@@ -24,7 +24,7 @@ static var remove: CFNetServiceBrowserFlags { get }
 kCFNetServiceFlagRemove
 ```
 
-#### Discussion
+## Discussion
 
 If set, the client should remove the result item instead of adding it.
 

@@ -18,7 +18,7 @@ Returns the operation if it fetches an item’s content.
 - (id<NSFileProviderTestingContentFetch>) asContentFetch;
 ```
 
-#### Discussion
+## Discussion
 
 If the operation doesn’t conform to the [`NSFileProviderTestingContentFetch`](../nsfileprovidertestingcontentfetch.md) protocol, this method returns `nil`.
 

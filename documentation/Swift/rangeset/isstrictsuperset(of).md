@@ -23,7 +23,7 @@ func isStrictSuperset(of other: RangeSet<Bound>) -> Bool
 
 Available when `Bound` conforms to `Comparable`.
 
-#### Return Value
+## Return Value
 
 `true` if this range set is a strict superset of `other`; otherwise, `false`.
 

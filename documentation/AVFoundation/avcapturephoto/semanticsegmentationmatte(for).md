@@ -22,11 +22,11 @@ func semanticSegmentationMatte(for semanticSegmentationMatteType: AVSemanticSegm
 - (AVSemanticSegmentationMatte *) semanticSegmentationMatteForType:(AVSemanticSegmentationMatteType) semanticSegmentationMatteType;
 ```
 
-#### Return Value
+## Return Value
 
 An instance of [`AVSemanticSegmentationMatte`](../avsemanticsegmentationmatte.md), or `nil` of you didn’t request semantic segmentation matte delivery or if no mattes of the specified type were found.
 
-#### Discussion
+## Discussion
 
 If you requested one or more semantic segmentation mattes by calling [`enabledSemanticSegmentationMatteTypes`](../avcapturephotosettings/enabledsemanticsegmentationmattetypes.md) with a nonempty array of types, this property offers access to the resulting [`AVSemanticSegmentationMatte`](../avsemanticsegmentationmatte.md) objects.
 

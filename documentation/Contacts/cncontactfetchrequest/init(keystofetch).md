@@ -24,11 +24,11 @@ init(keysToFetch: [any CNKeyDescriptor])
 - (instancetype) initWithKeysToFetch:(NSArray<id<CNKeyDescriptor>> *) keysToFetch;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized [`CNContactFetchRequest`](../cncontactfetchrequest.md) instance.
 
-#### Discussion
+## Discussion
 
 This is the designated initializer for this class. Using `init` raises an exception.
 

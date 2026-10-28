@@ -14,7 +14,7 @@
 IOReturn (*GetKeyValue_ConfigDirectory)(IOFireWireLibConfigDirectoryRef self, int inKey, IOFireWireLibConfigDirectoryRef *outValue, REFIID iid, CFStringRef *outText);
 ```
 
-#### Discussion
+## Discussion
 
 Description forthcoming
 

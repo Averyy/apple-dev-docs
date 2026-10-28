@@ -19,7 +19,7 @@ init?(protocolFamily family: Int32, socketType type: Int32, protocol: Int32, soc
 - (instancetype) initWithProtocolFamily:(int) family socketType:(int) type protocol:(int) protocol socket:(NSSocketNativeHandle) sock;
 ```
 
-#### Return Value
+## Return Value
 
 A local socket port initialized with the provided socket.
 

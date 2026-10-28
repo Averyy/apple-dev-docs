@@ -21,7 +21,7 @@ An asynchronous sequence of transactions.
 struct Transactions
 ```
 
-#### Overview
+## Overview
 
 You don’t create a [`Transaction.Transactions`](./transactions.md) sequence directly. Use methods such as [`all`](./all.md), [`updates`](./updates.md), or [`currentEntitlements`](./currententitlements.md) to get transactions.
 

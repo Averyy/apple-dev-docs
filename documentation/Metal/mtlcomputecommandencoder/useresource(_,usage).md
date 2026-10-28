@@ -30,7 +30,7 @@ func useResource(_ resource: any MTLResource, usage: MTLResourceUsage)
 - [Simplifying GPU resource management with residency sets](../simplifying-gpu-resource-management-with-residency-sets.md)
 - [Tracking the resource residency of argument buffers](../tracking-the-resource-residency-of-argument-buffers.md)
 
-#### Discussion
+## Discussion
 
 You can make a resource *resident* (available in GPU memory) for the remaining duration of the compute pass by calling this method. Call the method before encoding function calls that may access the `resource` through an argument buffer. The method ensures the resource is in a format that’s compatible with the kernels that depend on it.
 

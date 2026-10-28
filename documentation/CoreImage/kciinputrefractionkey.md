@@ -24,7 +24,7 @@ let kCIInputRefractionKey: String
 extern NSString * const kCIInputRefractionKey;
 ```
 
-#### Discussion
+## Discussion
 
 A key for a scalar value ([`NSNumber`](../Foundation/nsnumber.md)) that specifies the index of refraction of the material (such as glass) used in the effect.
 

@@ -24,11 +24,11 @@ func toArray() -> [Any]!
 - (NSArray *) toArray;
 ```
 
-#### Return Value
+## Return Value
 
 The array representation of the value.
 
-#### Discussion
+## Discussion
 
 If the value is a JavaScript object, this method reads the object’s `length` property as an unsigned integer, creates an [`NSArray`](../../Foundation/nsarray.md) object of the corresponding size, and recursively copies and converts any properties corresponding to indices within the array bounds. JavaScript converts each element to a native object using the rules listed in [Convert Between JavaScript and Native Types](../jsvalue.md#Convert-Between-JavaScript-and-Native-Types).
 

@@ -23,11 +23,11 @@ func makeExpression() -> IntentValueExpression
 
 Available when `Wrapped` conforms to `IntentValueExpressing`.
 
-#### Return Value
+## Return Value
 
 An intent value expression representing this optional value.
 
-#### Discussion
+## Discussion
 
 This method handles both the `.some` and `.none` cases:
 

@@ -17,7 +17,7 @@ Flushes any held-back text at end of generation.
 mutating func finalize() -> [Segment]
 ```
 
-#### Discussion
+## Discussion
 
 If the stream ends mid-reasoning (no closing delimiter ever arrived — e.g. a primed model that hit `maxTokens`), the leftover is emitted as `.reasoning`.
 

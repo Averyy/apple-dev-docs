@@ -19,11 +19,11 @@ func didCommand(by aSelector: Selector!, client sender: Any!) -> Bool
 - (BOOL) didCommandBySelector:(SEL) aSelector client:(id) sender;
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](../yes.md) if the command is handled; [`NO`](../no.md) if the command is not handled. If not handled, the event passes to the client.
 
-#### Discussion
+## Discussion
 
 This method is called when the system binds a key down event to an action method. If you implement this method you should test if it is appropriate to call the action method before actually calling it, because calling the action method implies that you agree to handle the command. Suppose you have implemented a version of `insertNewline:`  that terminates the conversion session and sends the fully converted text to the client. However, if you conversion buffer is empty, you want the application to receive the return key that triggered the call to `insertNewline:`. In that case, when `didCommandBySelector:client:` is called you should test your buffer before calling your implementation of `insertNewline:`. If the buffer is empty, return [`NO`](../no.md) to indicate that the return key should be passed on to the application. If the buffer is not empty, call `insertNewline:` and then return [`YES`](../yes.md) as the result of `didCommandBySelector:client:`.
 

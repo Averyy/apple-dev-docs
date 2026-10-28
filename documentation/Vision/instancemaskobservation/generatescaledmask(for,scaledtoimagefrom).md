@@ -21,7 +21,7 @@ Creates a high-resolution mask representing a combination of the instances you s
 func generateScaledMask(for instances: IndexSet, scaledToImageFrom requestHandler: ImageRequestHandler) throws -> CVPixelBuffer
 ```
 
-#### Return Value
+## Return Value
 
 The pixel buffer that contains the mask.
 

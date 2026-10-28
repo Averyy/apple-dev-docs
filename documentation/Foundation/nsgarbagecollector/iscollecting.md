@@ -15,7 +15,7 @@ Returns a Boolean value that indicates whether a collection is currently in prog
 - (BOOL) isCollecting;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if a collection is currently in progress, otherwise [`false`](../../Swift/false.md).
 

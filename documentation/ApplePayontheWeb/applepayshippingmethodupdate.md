@@ -28,7 +28,7 @@ dictionary ApplePayShippingMethodUpdate {
 
 - [Apple Pay on the Web Version 3 Release Notes](./apple-pay-on-the-web-version-3-release-notes.md)
 
-#### Overview
+## Overview
 
 Provide updated transaction details if the user changes the shipping method in the payment sheet. Recalculate the total for the payment, because it may change as a result of shipping method changes. The [`newTotal`](./applepayshippingcontactupdate/newtotal.md) value is required.
 

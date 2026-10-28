@@ -24,11 +24,11 @@ object AppSettings
 
 - [Allowing and denying apps and binaries](./allowing-and-denying-apps-and-binaries.md)
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.configuration.app.settings` as the declaration type.
 
-##### Binary identifier rules
+### Binary identifier rules
 
 The following combinations of binary identifiers are supported for each key:
 
@@ -41,7 +41,7 @@ The following combinations of binary identifiers are supported for each key:
   - Either `CDHash` or `TeamID` or `SigningID` needs to be present.
   - `PathPrefix` or `SigningState` may be present.
 
-##### Privacy permission defaults
+### Privacy permission defaults
 
 Privacy permission defaults allow an organization to suggest a set of privacy permissions for use with an app. When set, the app displays a consent prompt listing all the configured defaults. If the user accepts, the device applies those defaults for the app. If the user declines, no defaults are set and the device prompts the user in the normal way when the app requires permission.
 
@@ -54,7 +54,7 @@ The user can change the app permission privacy settings in Settings.app if they 
 
 Only AppKit-based apps on macOS support this feature.
 
-##### Configuration availability
+### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -66,9 +66,9 @@ Only AppKit-based apps on macOS support this feature.
 | Allowed in user scope | macOS, Shared iPad |
 | Apply | Multiple configurations are combined and applied as a single effective configuration |
 
-##### Configuration examples
+### Configuration examples
 
-###### App privacy examples
+#### App privacy examples
 
 **Allow various permission defaults for several apps in iOS**:
 
@@ -128,7 +128,7 @@ This configuration sets various privacy permission defaults for several apps.
 }
 ```
 
-###### App settings allowlist examples
+#### App settings allowlist examples
 
 **Allow apps by code directory hash**:
 
@@ -197,7 +197,7 @@ This configuration allows any app that matches a set of complex rules to run on 
 }
 ```
 
-###### App settings denylist examples
+#### App settings denylist examples
 
 **Deny apps by code directory hash**:
 
@@ -287,7 +287,7 @@ This configuration prevents any app that matches a set of complex rules from run
 }
 ```
 
-###### App settings allowlist and denylist examples
+#### App settings allowlist and denylist examples
 
 This configuration allows one set of apps to run, and prevents ome other apps that would otherwise be allowed from running.
 
@@ -324,7 +324,7 @@ This configuration allows one set of apps to run, and prevents ome other apps th
 }
 ```
 
-###### App settings managed apps examples
+#### App settings managed apps examples
 
 This configuration always allows all managed apps and one other app to run on macOS.
 
@@ -347,7 +347,7 @@ This configuration always allows all managed apps and one other app to run on ma
 }
 ```
 
-###### App settings WebClips examples
+#### App settings WebClips examples
 
 **Allow WebClips on macOS**:
 

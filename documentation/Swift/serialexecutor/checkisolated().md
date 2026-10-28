@@ -22,7 +22,7 @@ Last resort “fallback” isolation check, called when the concurrency runtime 
 func checkIsolated()
 ```
 
-#### Discussion
+## Discussion
 
 During executor comparison, the Swift concurrency runtime attempts to compare current and expected executors in a few ways (including “complex” equality between executors (see [`isSameExclusiveExecutionContext(other:)`](./issameexclusiveexecutioncontext%28other%29.md)), and if all those checks fail, this method is invoked on the expected executor.
 

@@ -23,11 +23,11 @@ class func activationRequest(forExtensionWithIdentifier identifier: String, queu
 
 - [Installing System Extensions and Drivers](../installing-system-extensions-and-drivers.md)
 
-#### Return Value
+## Return Value
 
 A new extension request.
 
-#### Discussion
+## Discussion
 
 Create and submit an activation request whenever you want to use a given extension. If the extension is inactive, the system may need to prompt the user for approval. The request succeeds only after the user gives their approval.
 

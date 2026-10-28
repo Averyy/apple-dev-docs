@@ -24,11 +24,11 @@ var minimumAllowedDuration: TimeInterval { get }
 @property (nonatomic, readonly) NSTimeInterval minimumAllowedDuration;
 ```
 
-#### Return Value
+## Return Value
 
 The minimum time interval between the sample’s [`startDate`](../hksample/startdate.md) and [`endDate`](../hksample/enddate.md) properties.
 
-#### Discussion
+## Discussion
 
 This method throws an exception if [`isMinimumDurationRestricted`](./isminimumdurationrestricted.md) is [`false`](../../Swift/false.md).
 

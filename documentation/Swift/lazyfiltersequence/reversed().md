@@ -21,11 +21,11 @@ Returns an array containing the elements of this sequence in reverse order.
 func reversed() -> [Self.Element]
 ```
 
-#### Return Value
+## Return Value
 
 An array containing the elements of this sequence in reverse order.
 
-#### Discussion
+## Discussion
 
 The sequence must be finite.
 

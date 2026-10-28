@@ -25,7 +25,7 @@ extern void vDSP_fftm_zip(FFTSetup __Setup, const DSPSplitComplex *__C, vDSP_Str
 
 - [Performing Fourier Transforms on Multiple Signals](./performing-fourier-transforms-on-multiple-signals.md)
 
-#### Discussion
+## Discussion
 
 > 💡 **Tip**:  To learn how the vDSP library scales and arranges the FFT output, see [Understanding data packing for Fourier transforms](./understanding-data-packing-for-fourier-transforms.md).
 

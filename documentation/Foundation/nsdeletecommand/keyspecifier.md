@@ -20,11 +20,11 @@ var keySpecifier: NSScriptObjectSpecifier { get }
 @property (retain, readonly) NSScriptObjectSpecifier * keySpecifier;
 ```
 
-#### Return Value
+## Return Value
 
 A specifier for the object or objects to be deleted.
 
-#### Discussion
+## Discussion
 
 Note that this may be different than the specifier or specifiers set by [`setReceiversSpecifier(_:)`](./setreceiversspecifier%28_%29.md).
 

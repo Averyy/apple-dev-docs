@@ -21,7 +21,7 @@ The session is recording and making at least one match attempt.
 case matching
 ```
 
-#### Discussion
+## Discussion
 
 When a session is in this state, the framework ignores calls to [`prepare()`](../prepare%28%29.md).
 

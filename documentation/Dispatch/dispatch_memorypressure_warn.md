@@ -25,7 +25,7 @@ var DISPATCH_MEMORYPRESSURE_WARN: Int32 { get }
 #define DISPATCH_MEMORYPRESSURE_WARN
 ```
 
-#### Discussion
+## Discussion
 
 Apps should release memory that they do not need right now.
 

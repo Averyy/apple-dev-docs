@@ -20,7 +20,7 @@ func performSynchronousFileAccess(_ block: () -> Void)
 - (void) performSynchronousFileAccessUsingBlock:(void (^)()) block;
 ```
 
-#### Discussion
+## Discussion
 
 Given a block that will perform file access, this method waits for any file access scheduled by previous invocations of this method or [`performAsynchronousFileAccess(_:)`](./performasynchronousfileaccess%28_%29.md) to complete, then invokes the passed-in block. When the block invocation returns, the method allows the next scheduled file access to to be performed, if any.
 

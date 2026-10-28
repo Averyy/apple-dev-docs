@@ -20,11 +20,11 @@ optional func tableView(_ tableView: NSTableView, rowViewForRow row: Int) -> NST
 - (NSTableRowView *) tableView:(NSTableView *) tableView rowViewForRow:(NSInteger) row;
 ```
 
-#### Return Value
+## Return Value
 
 An instance or subclass of [`NSTableRowView`](../nstablerowview.md). If `nil` is returned, an [`NSTableRowView`](../nstablerowview.md) instance will be created and used.
 
-#### Discussion
+## Discussion
 
 The delegate can implement this method to return a custom [`NSTableRowView`](../nstablerowview.md) for `row`.
 

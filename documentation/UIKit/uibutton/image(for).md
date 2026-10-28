@@ -23,7 +23,7 @@ func image(for state: UIControl.State) -> UIImage?
 - (UIImage *) imageForState:(UIControlState) state;
 ```
 
-#### Return Value
+## Return Value
 
 The image used for the specified state.
 

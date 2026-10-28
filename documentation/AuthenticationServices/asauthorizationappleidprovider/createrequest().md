@@ -25,7 +25,7 @@ func createRequest() -> ASAuthorizationAppleIDRequest
 - (ASAuthorizationAppleIDRequest *) createRequest;
 ```
 
-#### Return Value
+## Return Value
 
 An Apple ID authorization request that you can configure and execute.
 

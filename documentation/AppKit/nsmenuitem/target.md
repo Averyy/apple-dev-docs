@@ -19,7 +19,7 @@ weak var target: AnyObject? { get set }
 @property (weak, nullable) id target;
 ```
 
-#### Discussion
+## Discussion
 
 To ensure that a menu item’s target can receive commands while a modal dialog is open, the target object should return [`true`](../../Swift/true.md) in [`worksWhenModal`](../nspanel/workswhenmodal.md).
 

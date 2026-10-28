@@ -24,7 +24,7 @@ func CFHTTPAuthenticationGetTypeID() -> CFTypeID
 extern CFTypeID CFHTTPAuthenticationGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The Core Foundation type identifier for the CFHTTPAuthentication opaque type.
 

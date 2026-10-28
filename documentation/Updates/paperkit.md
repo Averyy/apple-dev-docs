@@ -5,22 +5,22 @@
 
 Learn about important changes to PaperKit.
 
-#### Overview
+## Overview
 
 Browse notable changes in [PaperKit](../PaperKit/PaperKit.md).
 
-#### June 2026
+## June 2026
 
-##### Data model
+### Data model
 
 - Represent a markup document using [`PaperMarkup`](../PaperKit/papermarkup.md), which provides a background color and an ordered collection of markup elements accessible through the [`Markup`](../PaperKit/markup.md) protocol and [`MarkupOrderedSet`](../PaperKit/markuporderedset.md).
 
-##### Markup elements
+### Markup elements
 
 - Add images and shapes to a markup document using [`ImageMarkup`](../PaperKit/imagemarkup.md) and [`ShapeMarkup`](../PaperKit/shapemarkup.md), and embed URLs and magnified views using [`LinkMarkup`](../PaperKit/linkmarkup.md) and [`LoupeMarkup`](../PaperKit/loupemarkup.md).
 - Control which interactions (such as move, resize, rotate, and delete) are available for each element using [`MarkupInteractions`](../PaperKit/markupinteractions.md).
 
-##### Adornments
+### Adornments
 
 - Attach custom visuals or handles to specific locations on the canvas using [`MarkupAdornment`](../PaperKit/markupadornment.md), and respond to taps and position changes through the [`PaperMarkupViewController`](../PaperKit/papermarkupviewcontroller.md) delegate.
 

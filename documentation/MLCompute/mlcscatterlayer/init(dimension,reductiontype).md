@@ -23,7 +23,7 @@ convenience init?(dimension: Int, reductionType: MLCReductionType)
 + (instancetype) layerWithDimension:(NSUInteger) dimension reductionType:(MLCReductionType) reductionType;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  The reduction type can be either [`MLCReductionType.none`](../mlcreductiontype/none.md) or [`MLCReductionType.sum`](../mlcreductiontype/sum.md).
 

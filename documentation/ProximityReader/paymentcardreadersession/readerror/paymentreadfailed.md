@@ -17,7 +17,7 @@ An internal failure prevented the read operation.
 case paymentReadFailed
 ```
 
-#### Discussion
+## Discussion
 
 The Tap to Pay on iPhone sheet displayed a message indicating that the read failed.
 

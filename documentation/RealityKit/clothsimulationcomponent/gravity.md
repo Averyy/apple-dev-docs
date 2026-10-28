@@ -17,7 +17,7 @@ The gravitational acceleration for the bodies in the simulation, in m/s².
 var gravity: SIMD3<Float>
 ```
 
-#### Discussion
+## Discussion
 
 Expressed in the simulation root entity’s local coordinate space.
 

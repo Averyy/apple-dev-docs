@@ -15,7 +15,7 @@ This operation is called just prior to reading data from the device’s stream b
 constexpr const IOUserVideoIOOperation IOUserVideoIOOperationBeginRead;
 ```
 
-#### Discussion
+## Discussion
 
 It is required that this operation is handled if the device has input streams.
 

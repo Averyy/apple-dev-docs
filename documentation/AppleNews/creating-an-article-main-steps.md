@@ -5,7 +5,7 @@
 
 Plan the design for your article and create it in Apple News Format.
 
-#### Overview
+## Overview
 
 When you create an article in Apple News Format, you start by creating a JSON document file. The file contains code that specifies the layout for your article, provides the content, and customizes the look. The system processes the JSON file and renders it as an article in Apple News.
 
@@ -30,7 +30,7 @@ The following figure shows the basic tasks associated with creating an article.
 
 ![Flow diagram showing the steps to publish an article to Apple News. ](https://developer.apple.com/tutorials/images/com.apple.applenews/media-3975561@2x.png)
 
-##### Main Steps
+### Main Steps
 
 > **Note**:  Before you start, download [News Preview](https://developer.apple.com/news-preview/) and follow the instructions to choose the devices you want to preview on. Then, as you create your article, you can drag your `article.json` file to the News Preview window to see how your content will look in Apple News.
 

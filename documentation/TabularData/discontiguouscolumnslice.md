@@ -21,7 +21,7 @@ A collection that represents a selection, potentially with gaps, of elements fro
 struct DiscontiguousColumnSlice<WrappedElement>
 ```
 
-#### Overview
+## Overview
 
 A column slice contains only certain elements from its parent column. Create a slice by selecting certain elements. For example, use [`filter(_:)`](./discontiguouscolumnslice/filter%28_%29.md) to create a slice that only includes elements with even values.
 

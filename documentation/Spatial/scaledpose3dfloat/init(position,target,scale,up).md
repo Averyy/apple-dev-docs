@@ -21,7 +21,7 @@ Creates a scaled pose at the specified position that’s oriented towards a look
 init(position: Point3DFloat = .zero, target: Point3DFloat, scale: Float = 1, up: Vector3DFloat = Vector3DFloat(x: 0, y: 1, z: 0))
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This function creates a scaled pose where `+z` is forward.
 

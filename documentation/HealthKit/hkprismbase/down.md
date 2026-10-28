@@ -24,7 +24,7 @@ case down
 HKPrismBaseDown
 ```
 
-#### Discussion
+## Discussion
 
 You can only use this value for the prism’s [`verticalBase`](../hkvisionprism/verticalbase.md).
 

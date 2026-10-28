@@ -19,11 +19,11 @@ func CMSDecoderCopyContent(_ cmsDecoder: CMSDecoder, _ contentOut: UnsafeMutable
 OSStatus CMSDecoderCopyContent(CMSDecoderRef cmsDecoder, CFDataRef*contentOut);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 If the message has detached content, you are responsible for retrieving the content. In that case, you use the [`CMSDecoderSetDetachedContent(_:_:)`](./cmsdecodersetdetachedcontent%28_,_%29.md) function to tell the decoder the location of the content.
 

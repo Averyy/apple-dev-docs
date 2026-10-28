@@ -17,7 +17,7 @@ The images associated with the `UserInput`.
 var images: [UserInput.Image]
 ```
 
-#### Discussion
+## Discussion
 
 If the [`prompt`](./prompt-swift.property.md) is a [`UserInput.Prompt.chat(_:)`](./prompt-swift.enum/chat%28_%29.md) this will collect the images from the chat messages, otherwise these are the stored images with the [`UserInput`](../userinput.md).
 

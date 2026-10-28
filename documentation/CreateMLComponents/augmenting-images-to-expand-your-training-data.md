@@ -5,7 +5,7 @@
 
 Improve your model by using transformed versions of your training images.
 
-#### Overview
+## Overview
 
 Training a good image model requires a variety of training images with different characteristics. If you’re training an image classifier to recognize flowers you can improve classification accuracy by providing flower photos with a variety of lighting conditions, angles, and backgrounds. However, collecting and labeling images is a time-consuming process.
 
@@ -15,7 +15,7 @@ To maximize the potential impact of your data you can use image augmentations. A
 
 Keep in mind that performing augmentations has some drawbacks. You can’t reuse extracted features across training iterations because each iteration produces a new set of augmented images. This increase in training time can be significant. Augmentations have the most impact when your dataset is small relative to the number of parameters in your model.
 
-##### Write an augmentation
+### Write an augmentation
 
 You can use [`Augmenter`](./augmenter.md) to create a custom augmentation. The augmenter applies each transformer to each image in sequence. For example, this augmenter randomly flips (with 50% probability) and then randomly crops images:
 
@@ -42,7 +42,7 @@ let augmenter = Augmenter {
 }
 ```
 
-##### Apply augmentations to your training data
+### Apply augmentations to your training data
 
 After you create an augmenter, you can use it to augment your training data. You do this with the [`applied(to:)`](./augmenter/applied%28to%29.md) method:
 
@@ -61,7 +61,7 @@ let augmentedTrainingData = augmenter.applied(
 
 > **Note**: The result of the augmentations is an asynchronous sequence. The augmenter doesn’t perform augmentations until you request them to avoid the memory overhead.
 
-##### Train an image classifier
+### Train an image classifier
 
 You can now use your augmented data set to train an image classifier. Because augmentations take images, not URLs, you may need to read your files first.
 
@@ -113,7 +113,7 @@ The example above applies the `augmenter` to shuffled images. Shuffling images c
 
 > 💡 **Tip**: A batch size of 32 is often a good starting point.
 
-##### Stop training
+### Stop training
 
 Training your model progressively using the [`update(_:with:eventHandler:)`](./updatablesupervisedestimator/update%28_,with,eventhandler%29.md) method lets you control when to stop training. Stop training when the validation accuracy stops improving, for example:
 

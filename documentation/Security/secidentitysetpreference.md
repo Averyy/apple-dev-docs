@@ -15,11 +15,11 @@ Sets the preferred identity for the specified name and key use.
 OSStatus SecIdentitySetPreference(SecIdentityRef identity, CFStringRef name, CSSM_KEYUSE keyUsage);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 Use [`SecIdentitySetPreferred(_:_:_:)`](./secidentitysetpreferred%28_,_,_%29.md) for new development instead.
 

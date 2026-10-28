@@ -15,7 +15,7 @@ The stylus side button above the primary button.
 extern GCInputButtonName GCInputStylusSecondaryButton;
 ```
 
-#### Discussion
+## Discussion
 
 A spatial stylus has at least two buttons arranged vertically along the barrel.  The secondary button is located above the primary button when the stylus is held with the tip pointing down.
 

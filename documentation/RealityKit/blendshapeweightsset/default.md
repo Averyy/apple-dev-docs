@@ -20,7 +20,7 @@ The blend shape weights data set that drives the model.
 var `default`: BlendShapeWeightsSet.Element? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This is equivalent to reading [`blendWeights`](../hasmodel/blendweights.md).
 

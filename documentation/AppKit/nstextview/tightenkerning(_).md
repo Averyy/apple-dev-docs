@@ -19,7 +19,7 @@ func tightenKerning(_ sender: Any?)
 - (void) tightenKerning:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 Kerning values are determined by the point size of the fonts in the selection.
 

@@ -16,7 +16,7 @@ typedef struct SPCModeParameterHeader6 {
 } SPCModeParameterHeader6;
 ```
 
-#### Overview
+## Overview
 
 Mode Parameter Header for the MODE_SENSE_6 command.
 

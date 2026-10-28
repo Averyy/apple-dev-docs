@@ -14,7 +14,7 @@
 attribute EventHandler onaudioprocess;
 ```
 
-#### Discussion
+## Discussion
 
 This attribute uses [`AudioContext`](../audionode/api-1631014-audiocontext.md), so you need to trigger this handler with a touch event. 
 

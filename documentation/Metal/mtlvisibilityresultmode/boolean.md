@@ -24,7 +24,7 @@ case boolean
 MTLVisibilityResultModeBoolean
 ```
 
-#### Discussion
+## Discussion
 
 The GPU writes a 64-bit integer to the visibility result buffer that is nonzero if at least one fragment passed depth and stencil tests, and zero if no fragments passed the tests.
 

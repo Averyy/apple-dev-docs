@@ -9,7 +9,7 @@ Retrieve a paginated list of business categories using filters and sorting.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint returns a paginated list of business categories from the Maps taxonomy. Categories classify brands and locations. You use them to scope targeting and discovery within Apple Maps campaigns. An empty request body returns all categories with default pagination.
 
@@ -17,7 +17,7 @@ Each category has a `qualifiedId` using a dot to separate each level of the taxo
 
 See [`QueryFilterOperator`](./queryfilteroperator.md) for the full set of supported comparison operators.
 
-##### Filterable Fields
+### Filterable Fields
 
 | Field | Type | Operators | Sortable | Description |
 | --- | --- | --- | --- | --- |
@@ -25,7 +25,7 @@ See [`QueryFilterOperator`](./queryfilteroperator.md) for the full set of suppor
 
 Only `name` is confirmed filterable; other category fields (`id`, `qualifiedId`, `eligibility`) aren’t documented as query filters. The request body is a [`QueryRequest`](./queryrequest.md) composed of [`QueryFilter`](./queryfilter.md) conditions and [`QuerySort`](./querysort.md) directives ([`QuerySortOrder`](./querysortorder.md)), controlled by [`QueryPagination`](./querypagination.md).
 
-#### Request Body
+## Request Body
 
 See [`QueryRequest`](./queryrequest.md).
 
@@ -47,13 +47,13 @@ The `qualifiedId` format and eligibility status both carry specific rules:
 | `qualifiedId` format | Dot-delimited hierarchy string. A dot always marks a hierarchy boundary, but an individual level’s name can itself contain underscores. Use this value as the `text` on a `CATEGORY` match-type Keyword. |
 | Eligibility check | Only categories with `ELIGIBLE` status can be used in active Apple Maps campaigns. |
 
-#### Payload Examples
+## Payload Examples
 
 **Query All Categories**:
 
 Retrieve all business categories with default pagination.
 
-##### Request
+### Request
 
 ```http
 POST /v1/business-categories/query
@@ -61,7 +61,7 @@ POST /v1/business-categories/query
 {}
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -91,7 +91,7 @@ POST /v1/business-categories/query
 
 Find categories with a specific name prefix.
 
-##### Request
+### Request
 
 ```http
 POST /v1/business-categories/query
@@ -112,7 +112,7 @@ POST /v1/business-categories/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

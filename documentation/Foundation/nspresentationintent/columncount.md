@@ -21,7 +21,7 @@ The number of columns in a table.
 @property (readonly) NSInteger columnCount;
 ```
 
-#### Discussion
+## Discussion
 
 If the intent is not a table, the value of this property is `0`.
 

@@ -36,7 +36,7 @@ var parameterTree: AUParameterTree? { get set }
 
 - [Migrating Your Audio Unit Host to the AUv3 API](../migrating-your-audio-unit-host-to-the-auv3-api.md)
 
-#### Discussion
+## Discussion
 
 Hosts can fetch this property to discover a unit’s parameters. KVO notifications are issued on this member to notify the host of changes to the set of available parameters.
 

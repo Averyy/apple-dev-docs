@@ -22,7 +22,7 @@ var videoMinFrameDurationOverride: CMTime { get set }
 @property (nonatomic) CMTime videoMinFrameDurationOverride;
 ```
 
-#### Discussion
+## Discussion
 
 A capture device’s [`activeVideoMinFrameDuration`](../avcapturedevice/activevideominframeduration.md) property is the reciprocal of its active maximum frame rate. To limit the maximum frame rate of the capture device, you may set [`activeVideoMinFrameDuration`](../avcapturedevice/activevideominframeduration.md) to a value supported by the device’s [`activeFormat`](../avcapturedevice/activeformat.md). Changes you make to the device’s [`activeVideoMinFrameDuration`](../avcapturedevice/activevideominframeduration.md) value take effect immediately without disrupting preview. Therefore, [`AVCaptureSession`](../avcapturesession.md) must always allocate sufficient resources to allow the device to run at its active format’s maximum frame rate.
 

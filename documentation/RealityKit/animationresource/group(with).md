@@ -21,7 +21,7 @@ Creates an animation resource that simultaneously plays back a collection of ani
 @preconcurrency static func group(with resources: [AnimationResource]) throws -> AnimationResource
 ```
 
-#### Return Value
+## Return Value
 
 An animation resource that simultaneously plays back the argument collection of animations.
 

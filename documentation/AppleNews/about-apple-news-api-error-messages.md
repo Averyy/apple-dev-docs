@@ -5,7 +5,7 @@
 
 Understand the error message format for the Apple News API.
 
-#### Overview
+## Overview
 
 In responses, errors are represented as an array of information in a common format. The following example shows a Read Channel 400 error.  If the value of `channel_id` in your Read Channel request is not a UUID, you’ll receive an error such as the following:
 
@@ -28,7 +28,7 @@ Content-Length: 212
 }
 ```
 
-##### Understanding the keyPath Array
+### Understanding the keyPath Array
 
 When reporting Apple News Format errors through the API, the component with the error is identified through a `keyPath` array. The `keyPath` array navigates from the root of the JSON document to the problematic object. It identifies keys by name and array items by index.
 

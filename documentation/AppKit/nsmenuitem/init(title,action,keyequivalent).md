@@ -19,11 +19,11 @@ init(title string: String, action selector: Selector?, keyEquivalent charCode: S
 - (instancetype) initWithTitle:(NSString *) string action:(SEL) selector keyEquivalent:(NSString *) charCode;
 ```
 
-#### Return Value
+## Return Value
 
 An instance of `NSMenuItem`.
 
-#### Discussion
+## Discussion
 
 For instances of the `NSMenuItem` class, the default initial state is `NSOffState`, the default on-state image is a check mark, and the default mixed-state image is a dash.
 

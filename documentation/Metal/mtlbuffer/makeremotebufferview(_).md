@@ -26,7 +26,7 @@ func makeRemoteBufferView(_ device: any MTLDevice) -> (any MTLBuffer)?
 
 - [Transferring data between connected GPUs](../transferring-data-between-connected-gpus.md)
 
-#### Discussion
+## Discussion
 
 The device instance that this buffer belongs to and the device you pass to the method both need to have the same nonzero peer group identifier ([`peerGroupID`](../mtldevice/peergroupid.md)). This buffer needs to use the private storage mode ([`MTLStorageMode.private`](../mtlstoragemode/private.md)).
 

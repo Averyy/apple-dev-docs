@@ -27,7 +27,7 @@ func configuredSSIDs() async -> [String]
 - (void) getConfiguredSSIDsWithCompletionHandler:(void (^)(NSArray<NSString *> *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The hotspot configuration manager sends your app a list of network SSIDs or Hotspot 2.0 domain names from the configuration by calling the completion handler you pass to the method.
 

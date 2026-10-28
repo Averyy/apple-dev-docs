@@ -19,7 +19,7 @@ var updatesNowPlayingInfoCenter: Bool { get set }
 @property BOOL updatesNowPlayingInfoCenter;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `true`.
 

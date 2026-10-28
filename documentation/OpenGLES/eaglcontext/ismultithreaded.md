@@ -24,7 +24,7 @@ var isMultiThreaded: Bool { get set }
 @property (nonatomic, getter=isMultiThreaded) BOOL multiThreaded;
 ```
 
-#### Discussion
+## Discussion
 
 Set the value of this property to [`true`](../../Swift/true.md) to enable multithreading in OpenGL ES. A multithreaded OpenGL ES context automatically creates a worker thread and transfers some of its calculations to that thread. When you enable multithreading on a multicore device, internal OpenGL ES calculations performed on the CPU act in parallel with your app, improving performance.
 

@@ -15,7 +15,7 @@ Defines a pointer to a function that iterates through color management modules i
 typedef OSErr (*CMMIterateProcPtr)(CMMInfo *iterateData, void *refCon);
 ```
 
-#### Return Value
+## Return Value
 
  An `OSErr` value.
 

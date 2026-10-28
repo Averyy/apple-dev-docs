@@ -13,11 +13,11 @@ virtual bool terminateClient(
  IOOptionBitsoptions );
 ```
 
-#### Return Value
+## Return Value
 
 result of the terminate request on the client.
 
-#### Overview
+## Overview
 
 When an IOService object is made inactive the default behavior is to also make any of its clients that have it as their only provider inactive, in this way recursing the termination up the driver stack. This method allows a terminated IOService object to override this behavior. Note the client may also override this behavior by overriding its terminate method.
 

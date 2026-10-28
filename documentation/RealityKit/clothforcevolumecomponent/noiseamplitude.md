@@ -17,7 +17,7 @@ The amplitude of the noise applied to particles inside the volume.
 var noiseAmplitude: Float { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Must be non-negative; negative values are clamped to zero.
 

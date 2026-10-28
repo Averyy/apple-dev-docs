@@ -5,13 +5,13 @@
 
 Design a CloudKit-compatible data model and initialize your CloudKit schema.
 
-#### Overview
+## Overview
 
 To pass records between a Core Data store and a CloudKit database, they both require a shared understanding of the data structure. You define this in the Core Data model and then use that to generate a CloudKit schema.
 
 ![Flow diagram showing that your app’s Core Data model generates a CloudKit schema.](https://developer.apple.com/tutorials/images/com.apple.coredata/media-3230504@2x.png)
 
-##### Create a Data Model
+### Create a Data Model
 
 Use Xcode’s Core Data model editor to define your app’s entities and their attributes, or construct your model in code. For more information, see [Creating a Core Data model](./creating-a-core-data-model.md) and the articles under [Modeling data](./modeling-data.md).
 
@@ -26,7 +26,7 @@ CloudKit doesn’t support all the features of a Core Data model. As you design 
 
 For more information about how Core Data translates managed objects to CloudKit records, see [Reading CloudKit Records for Core Data](./reading-cloudkit-records-for-core-data.md).
 
-##### Initialize Your CloudKit Schema During Development
+### Initialize Your CloudKit Schema During Development
 
 After creating your Core Data model, inform CloudKit about the types of records it contains by initializing a development schema. This is a draft schema that you can rewrite as often as necessary during development. You can’t delete a record type or modify any existing attributes after you promote a development schema to production.
 
@@ -58,11 +58,11 @@ While initializing the schema, Core Data creates a temporary instance of each di
 
 For more information about configuring a CloudKit persistent container, see [Setting Up Core Data with CloudKit](./setting-up-core-data-with-cloudkit.md).
 
-##### Reset the Environment
+### Reset the Environment
 
 As you change the model during development, periodically visit the CloudKit dashboard to reset the development environment and delete the existing development schema, before initializing a new one. For more information about resetting the development environment, see [Using CloudKit Dashboard to Manage Databases](https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitQuickStart/EditingSchemesUsingCloudKitDashboard/EditingSchemesUsingCloudKitDashboard.html#//apple_ref/doc/uid/TP40014987-CH5).
 
-##### Promote the Schema to Production
+### Promote the Schema to Production
 
 When you’re happy with your data model, have a fully tested app, and are ready to submit it to the App Store, it’s time to promote your schema from development to production.
 
@@ -70,7 +70,7 @@ When you’re happy with your data model, have a fully tested app, and are ready
 
 Initialize your schema one last time, then promote it from the CloudKit dashboard. For more information about promoting a schema from development to production, see [Deploying the Schema](https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitQuickStart/DeployingYourCloudKitApp/DeployingYourCloudKitApp.html#//apple_ref/doc/uid/TP40014987-CH10).
 
-##### Update the Production Schema
+### Update the Production Schema
 
 Plan carefully for how your app handles forward compatibility and major changes to the data model, because you can’t rename or delete CloudKit record types and fields in production. Consider these strategies:
 

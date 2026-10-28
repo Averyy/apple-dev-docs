@@ -19,7 +19,7 @@ var NSGlyphAttributeInscribe: Int { get }
 NSGlyphAttributeInscribe
 ```
 
-#### Discussion
+## Discussion
 
 See [`NSGlyphInscription`](./nsglyphinscription.md) for possible values.
 

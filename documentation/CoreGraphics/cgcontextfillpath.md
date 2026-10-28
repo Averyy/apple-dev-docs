@@ -21,7 +21,7 @@ Paints the area within the current path, using the nonzero winding number rule.
 extern void CGContextFillPath(CGContextRef c);
 ```
 
-#### Discussion
+## Discussion
 
 Each subpath is treated as if it were closed by calling [`closePath()`](./cgcontext/closepath%28%29.md). The nonzero winding number rule is described in [Filling a Path](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/dq_paths/dq_paths.html#//apple_ref/doc/uid/TP30001066-CH211-TPXREF106) in [Quartz 2D Programming Guide](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/Introduction/Introduction.html#//apple_ref/doc/uid/TP30001066). The current path is cleared as a side effect of calling this function.
 

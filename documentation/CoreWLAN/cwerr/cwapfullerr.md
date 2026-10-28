@@ -17,7 +17,7 @@ case cwapFullErr
 kCWAPFullErr
 ```
 
-#### Discussion
+## Discussion
 
 Access point is unable to handle another associated station.
 

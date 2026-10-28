@@ -22,7 +22,7 @@ func pointOfInterestTemplate(_ pointOfInterestTemplate: CPPointOfInterestTemplat
 - (void) pointOfInterestTemplate:(CPPointOfInterestTemplate *) pointOfInterestTemplate didChangeMapRegion:(MKCoordinateRegion) region;
 ```
 
-#### Discussion
+## Discussion
 
 CarPlay calls this method whenever the user pans the template’s map and its visible region changes. In response, re-evaluate which points of interest are relevant to the new region and, if necessary, call [`setPointsOfInterest(_:selectedIndex:)`](../cppointofinteresttemplate/setpointsofinterest%28_,selectedindex%29.md) to update the template.
 

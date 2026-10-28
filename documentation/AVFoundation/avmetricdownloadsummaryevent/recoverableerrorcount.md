@@ -25,7 +25,7 @@ var recoverableErrorCount: Int { get }
 @property (readonly) NSInteger recoverableErrorCount;
 ```
 
-#### Discussion
+## Discussion
 
 Error counts may not be consistent across OS versions. Comparisons should be made within a given OS version, as error reporting is subject to change with OS updates.
 

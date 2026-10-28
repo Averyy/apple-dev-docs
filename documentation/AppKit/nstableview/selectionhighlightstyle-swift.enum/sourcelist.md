@@ -19,7 +19,7 @@ case sourceList
 NSTableViewSelectionHighlightStyleSourceList
 ```
 
-#### Discussion
+## Discussion
 
 The source list style of NSTableView. On 10.5, a light blue gradient is used to highlight selected rows.
 

@@ -21,11 +21,11 @@ An effect that enables each layer of a symbol-based image in sequence.
 - (instancetype) effectWithCumulative;
 ```
 
-#### Return Value
+## Return Value
 
 A copy of the symbol effect options that uses the `cumulative` animation.
 
-#### Discussion
+## Discussion
 
 This effect enables each successive variable layer, and the layer remains enabled until the end of the animation cycle. This effect cancels the [`iterative`](../variablecolorsymboleffect/iterative.md) variant.
 

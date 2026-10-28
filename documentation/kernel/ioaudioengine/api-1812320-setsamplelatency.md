@@ -12,7 +12,7 @@ virtual void setSampleLatency(
  UInt32 numSamples);
 ```
 
-#### Overview
+## Overview
 
 The sample latency represents the number of samples ahead of the playback head that it is safe to write into the sample buffer. The audio device API will never write closer to the playback head than the number of samples specified. For input audio engines the number of samples is behind the record head.
 

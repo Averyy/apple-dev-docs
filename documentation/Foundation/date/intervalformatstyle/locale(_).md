@@ -21,7 +21,7 @@ Modifies the date interval format style to use the specified locale.
 func locale(_ locale: Locale) -> Date.IntervalFormatStyle
 ```
 
-#### Return Value
+## Return Value
 
 A date inteverval format style with the provided locale.
 

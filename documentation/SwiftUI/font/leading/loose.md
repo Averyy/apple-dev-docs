@@ -21,7 +21,7 @@ Increased line spacing.
 case loose
 ```
 
-#### Discussion
+## Discussion
 
 This value typically increases line spacing by 1 point for watchOS and 2 points on other platforms.
 

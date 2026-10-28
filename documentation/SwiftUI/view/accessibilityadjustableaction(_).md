@@ -22,7 +22,7 @@ nonisolated
 func accessibilityAdjustableAction(_ handler: @escaping (AccessibilityAdjustmentDirection) -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>
 ```
 
-#### Discussion
+## Discussion
 
 For example, this is how an adjustable action to navigate through pages could be added to a view.
 

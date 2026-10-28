@@ -19,7 +19,7 @@ func tag(forSegment segment: Int) -> Int
 - (NSInteger) tagForSegment:(NSInteger) segment;
 ```
 
-#### Return Value
+## Return Value
 
 The tag of the segment.
 

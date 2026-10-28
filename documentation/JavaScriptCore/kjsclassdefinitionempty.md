@@ -24,7 +24,7 @@ let kJSClassDefinitionEmpty: JSClassDefinition
 extern const JSClassDefinition kJSClassDefinitionEmpty;
 ```
 
-#### Discussion
+## Discussion
 
 Use this constant as a convenience when creating class definitions. For example, to create a class definition with only a finalize method.
 

@@ -19,7 +19,7 @@ enum BadgeType
 enum NSMenuItemBadgeType : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The predefined strings that display are localizable and automatically handle any pluralization of [`itemCount`](./itemcount.md).
 

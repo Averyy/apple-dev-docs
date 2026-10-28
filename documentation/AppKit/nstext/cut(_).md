@@ -19,7 +19,7 @@ func cut(_ sender: Any?)
 - (void) cut:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 A plain text object uses `NSStringPboardType` for plain text, and a rich text object also uses `NSRTFPboardType`.
 

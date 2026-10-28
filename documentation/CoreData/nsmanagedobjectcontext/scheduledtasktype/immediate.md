@@ -21,7 +21,7 @@ The immediate scheduled task type.
 case immediate
 ```
 
-#### Discussion
+## Discussion
 
 Immediate tasks execute right away if the context operates within the current scope; otherwise, the context enqueues the task. Tasks of this type are reentrant, nonblocking, and continuation-aware.
 

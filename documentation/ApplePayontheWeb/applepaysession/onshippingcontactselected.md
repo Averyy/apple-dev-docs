@@ -16,7 +16,7 @@ An event handler to call when the user selects a shipping contact in the payment
 attribute EventHandler onshippingcontactselected;
 ```
 
-#### Discussion
+## Discussion
 
 This attribute must be set to a function that accepts an `events` argument; for example,
 

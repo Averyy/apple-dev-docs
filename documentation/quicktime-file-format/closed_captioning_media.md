@@ -5,7 +5,7 @@
 
 Store closed captioning for QuickTime movies.
 
-#### Overview
+## Overview
 
 A closed caption media track contains text data used for closed captioning in QuickTime movies. It has a media type of `'clcp'`. Closed captions are used to display the audio portions of a movie as text. They transcribe dialog and indicate other sounds.
 

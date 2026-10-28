@@ -24,7 +24,7 @@ class AVAssetSegmentReport
 @interface AVAssetSegmentReport : NSObject
 ```
 
-#### Overview
+## Overview
 
 You receive a segment report through the [`assetWriter(_:didOutputSegmentData:segmentType:segmentReport:)`](./avassetwriterdelegate/assetwriter%28_,didoutputsegmentdata,segmenttype,segmentreport%29.md) delegate method.
 

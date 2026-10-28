@@ -25,7 +25,7 @@ func CTLineCreateJustifiedLine(_ line: CTLine, _ justificationFactor: CGFloat, _
 extern CTLineRefCTLineCreateJustifiedLine(CTLineRef line, CGFloat justificationFactor, double justificationWidth);
 ```
 
-#### Return Value
+## Return Value
 
 A reference to a justified CTLine object if the call was successful; otherwise, `NULL`.
 

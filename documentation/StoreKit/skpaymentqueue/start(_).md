@@ -30,7 +30,7 @@ func start(_ downloads: [SKDownload])
 
 - [Unlocking purchased content](../unlocking-purchased-content.md)
 
-#### Discussion
+## Discussion
 
 In order for a download object to be queued, it must be associated with a transaction that has been successfully purchased, but not yet finished.
 

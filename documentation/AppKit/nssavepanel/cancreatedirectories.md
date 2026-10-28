@@ -19,7 +19,7 @@ var canCreateDirectories: Bool { get set }
 @property BOOL canCreateDirectories;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the panel includes UI to create new directories. When the value is [`false`](../../Swift/false.md), the panel does not expose that UI.
 

@@ -25,7 +25,7 @@ init(_ key: LocalizedStringKey, tableName: String? = nil, bundle: Bundle? = nil,
 
 - [Preparing views for localization](../preparing-views-for-localization.md)
 
-#### Discussion
+## Discussion
 
 Use this initializer to look for the `key` parameter in a localization table and display the associated string value in the initialized text view. If the initializer can’t find the key in the table, or if no table exists, the text view displays the string representation of the key instead.
 
@@ -43,7 +43,7 @@ Text(LocalizedStringKey(someString)) // Localizes the contents of `someString`.
 
 If you have a string literal that you don’t want to localize, use the [`init(verbatim:)`](./init%28verbatim%29.md) initializer instead.
 
-##### Styling localized strings with markdown
+### Styling localized strings with markdown
 
 If the localized string or the fallback key contains Markdown, the view displays the text with appropriate styling. For example, consider an app with the following entry in its Spanish localization file:
 

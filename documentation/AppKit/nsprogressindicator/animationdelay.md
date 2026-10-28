@@ -17,7 +17,7 @@ Returns the delay, in seconds, between animation steps for an indeterminate prog
 - (NSTimeInterval) animationDelay;
 ```
 
-#### Return Value
+## Return Value
 
 The delay between animation steps. By default, the animation delay is set to 1/12 of a second (5.0/60.0). A determinate progress indicator does not use the animation delay value.
 

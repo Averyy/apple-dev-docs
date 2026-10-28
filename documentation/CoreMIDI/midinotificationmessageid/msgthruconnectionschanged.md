@@ -25,7 +25,7 @@ case msgThruConnectionsChanged
 kMIDIMsgThruConnectionsChanged
 ```
 
-#### Discussion
+## Discussion
 
 This type has no data.
 

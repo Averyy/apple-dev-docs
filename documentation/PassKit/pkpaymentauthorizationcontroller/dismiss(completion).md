@@ -28,7 +28,7 @@ func dismiss() async
 - (void) dismissWithCompletion:(void (^)()) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method when you receive the [`paymentAuthorizationControllerDidFinish(_:)`](../pkpaymentauthorizationcontrollerdelegate/paymentauthorizationcontrollerdidfinish%28_%29.md) delegate callback, or otherwise want to dismiss the payment sheet.
 

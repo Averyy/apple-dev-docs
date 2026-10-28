@@ -14,7 +14,7 @@ func simd_clamp(_ x: simd_half16, _ min: simd_half16, _ max: simd_half16) -> sim
 static simd_half16 simd_clamp(simd_half16 x, simd_half16 min, simd_half16 max);
 ```
 
-#### Discussion
+## Discussion
 
 X clamped to the range [min, max].
 

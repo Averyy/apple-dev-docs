@@ -16,7 +16,7 @@ typedef struct IOUSBEndpointProperties {
 } IOUSBEndpointProperties;
 ```
 
-#### Overview
+## Overview
 
 Structure used with the IOUSBLib GetEndpointPropertiesV3 and GetPipePropertiesV3 API. Most of the fields are taken directly from corresponding Standard Endpoint Descriptor and SuperSpeed Endpoint Companion Descriptor. wBytesPerInterval will be synthesized for High Speed High Bandwidth Isochronous endpoints.
 

@@ -23,7 +23,7 @@ func startRecording()
 - (void) startRecording;
 ```
 
-#### Discussion
+## Discussion
 
 This function instructs the framework to start recording for this reader’s sensor. The framework records on this device and any paired devices. Call [`fetchDevices()`](./fetchdevices%28%29.md) to acquire the full list of devices on which the framework records.
 

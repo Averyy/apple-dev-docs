@@ -24,7 +24,7 @@ func applyingGaussianBlur(sigma: Double) -> CIImage
 - (CIImage *) imageByApplyingGaussianBlurWithSigma:(double) sigma;
 ```
 
-#### Return Value
+## Return Value
 
  An autoreleased [`CIImage`](../ciimage.md) instance or the received image.
 

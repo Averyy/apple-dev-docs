@@ -23,7 +23,7 @@ func gss_userok(_ name: gss_name_t, _ user: UnsafePointer<CChar>) -> Int32
 int gss_userok(gss_name_t const name, const char *user);
 ```
 
-#### Return Value
+## Return Value
 
 A non-zero integer when the user is authorized and zero otherwise.
 

@@ -25,7 +25,7 @@ class AVSampleBufferGeneratorBatch
 @interface AVSampleBufferGeneratorBatch : NSObject
 ```
 
-#### Overview
+## Overview
 
 The benefit of batching is it aggregates adjacent I/O requests and overlaps them when possible for all sample buffers within the batch.
 

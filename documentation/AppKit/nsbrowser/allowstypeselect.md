@@ -19,7 +19,7 @@ var allowsTypeSelect: Bool { get set }
 @property BOOL allowsTypeSelect;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the browser allows keystroke-based selection. The default value of this property is [`true`](../../Swift/true.md).
 

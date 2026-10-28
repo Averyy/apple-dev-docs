@@ -23,7 +23,7 @@ optional func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool
 - (BOOL) searchBarShouldBeginEditing:(UISearchBar *) searchBar;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if an editing session should be initiated, otherwise, [`false`](../../Swift/false.md).
 

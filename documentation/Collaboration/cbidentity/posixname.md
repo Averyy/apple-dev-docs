@@ -19,11 +19,11 @@ var posixName: String { get }
 @property (nonatomic, readonly) NSString * posixName;
 ```
 
-#### Return Value
+## Return Value
 
 The POSIX name of the identity.
 
-#### Discussion
+## Discussion
 
 The POSIX name is also referred to as the “short name” for an identity. It can only contain the characters A-Z, a-z, 0-9, -, _, ., and @.
 

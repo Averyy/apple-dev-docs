@@ -22,7 +22,7 @@ func addAcceptableTypeIdentifiers(_ acceptableTypeIdentifiers: [String])
 - (void) addAcceptableTypeIdentifiers:(NSArray<NSString *> *) acceptableTypeIdentifiers;
 ```
 
-#### Discussion
+## Discussion
 
 List the acceptable UTIs in descending order of fidelity. The UTI that provides the richest data representation should be first in the list. For instance, if the data to paste is contact information, list the vCard UTI first, followed by the plain text UTI.
 

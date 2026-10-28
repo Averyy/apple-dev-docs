@@ -20,7 +20,7 @@ func consumeImageData(_ data: Data!, forTag tag: Int)
 - (void) consumeImageData:(NSData *) data forTag:(NSInteger) tag;
 ```
 
-#### Discussion
+## Discussion
 
 In the case of a multithreaded application, this method is always called on the main thread.
 

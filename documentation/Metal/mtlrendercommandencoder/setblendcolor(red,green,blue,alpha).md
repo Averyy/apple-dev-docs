@@ -25,7 +25,7 @@ func setBlendColor(red: Float, green: Float, blue: Float, alpha: Float)
 - (void) setBlendColorRed:(float) red green:(float) green blue:(float) blue alpha:(float) alpha;
 ```
 
-#### Discussion
+## Discussion
 
 The alpha and color values apply to all the render pass’s attachments. The `red`, `green`, and `blue` color parameters apply to the [`MTLBlendFactor.blendColor`](../mtlblendfactor/blendcolor.md) and [`MTLBlendFactor.oneMinusBlendColor`](../mtlblendfactor/oneminusblendcolor.md) blend factors.
 

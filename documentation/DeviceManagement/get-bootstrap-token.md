@@ -13,7 +13,7 @@ Gets the bootstrap token from the server.
 - macOS 10.15+
 - visionOS 26.0+
 
-#### Discussion
+## Discussion
 
 A server that supports this request needs to include a `com.apple.mdm.bootstraptoken` value in the `ServerCapabilities` key of the MDM profile payload to enroll the device.
 
@@ -23,7 +23,7 @@ If a bootstrap token isn’t available, the server returns a success response wi
 
 Requires a device enrolled using Automated Device Enrollment.
 
-##### Check-in availability
+### Check-in availability
 
 |  |  |
 | --- | --- |

@@ -21,7 +21,7 @@ Returns a Boolean value that indicates whether a ray intersects a rectangle.
 func intersects(_ rect: Rect3D) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the ray intersects the rectangle.
 

@@ -17,7 +17,7 @@ Access the date interval of the longest activity session during the activity seg
 var longestActivity: DateInterval?
 ```
 
-#### Discussion
+## Discussion
 
 This value may be `nil` if the person didn’t use this device during [`dateInterval`](./dateinterval.md).
 

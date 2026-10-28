@@ -24,11 +24,11 @@ class func confirmationRequired(with stringToConfirm: String?) -> Self
 + (instancetype) confirmationRequiredWithStringToConfirm:(NSString *) stringToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INStringResolutionResult`](../instringresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you can resolve the parameter to the specified string but you want the user to confirm that value.
 

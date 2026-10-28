@@ -24,7 +24,7 @@ class MDLVertexDescriptor
 @interface MDLVertexDescriptor : NSObject
 ```
 
-#### Overview
+## Overview
 
 A [`MDLMesh`](./mdlmesh.md) object contains arrays of data for separate attributes of each vertex, such as position, color, surface normal vector, or texture coordinates. The vertex data for various attributes can be contained in one or more buffers and may be laid out in various contiguous or interleaved formats. You use a mesh’s [`vertexDescriptor`](./mdlmesh/vertexdescriptor.md) property to determine the structure of vertex data for a mesh loaded from an asset file for use in rendering or processing a mesh. You also use vertex descriptors to describe the structure of existing vertex data when creating a new mesh.
 

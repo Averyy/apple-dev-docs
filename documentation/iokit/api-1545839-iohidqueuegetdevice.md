@@ -16,7 +16,7 @@ Obtain the device associated with the queue.
 IOHIDDeviceRef IOHIDQueueGetDevice(IOHIDQueueRef queue);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the a reference to the device.
 

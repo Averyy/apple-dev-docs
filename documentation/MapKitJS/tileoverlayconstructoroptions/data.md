@@ -15,7 +15,7 @@ Custom data for populating the URL template.
 data: Record<string, any>;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `{}`.
 

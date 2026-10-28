@@ -25,7 +25,7 @@ static let extensionHidden: FileAttributeKey
 extern NSFileAttributeKey const NSFileExtensionHidden;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an [`NSNumber`](../nsnumber.md) object containing a Boolean value.
 

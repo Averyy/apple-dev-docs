@@ -25,11 +25,11 @@ func secondsFromGMT(for aDate: Date) -> Int
 - (NSInteger) secondsFromGMTForDate:(NSDate *) aDate;
 ```
 
-#### Return Value
+## Return Value
 
 The difference in seconds between the receiver and Greenwich Mean Time at `aDate`.
 
-#### Discussion
+## Discussion
 
 The difference may be different from the current difference if the time zone changes its offset from GMT at different points in the year—for example, the U.S. time zones change with daylight saving time.
 

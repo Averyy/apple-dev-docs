@@ -17,7 +17,7 @@ The names of the intent classes your app can’t handle when the user locks the 
 - **Name**: `INIntentsRestrictedWhileLocked` (Intents restricted while locked)
 - **Type**: array of string 
 
-#### Discussion
+## Discussion
 
 To specify this information in Xcode, add the intent class name to your app target’s Supported Intents in the Project Editor. Then set the Authentication level to Restricted While Locked.
 

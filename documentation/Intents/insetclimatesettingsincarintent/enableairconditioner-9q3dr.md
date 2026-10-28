@@ -20,7 +20,7 @@ A Boolean value indicating whether to turn on the air conditioner system.
 final var enableAirConditioner: Bool? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property is `nil` when the user modified a different climate control setting.
 

@@ -19,7 +19,7 @@ var networkDevices: [VZNetworkDevice] { get }
 @property (copy, readonly) NSArray<VZNetworkDevice *> * networkDevices;
 ```
 
-#### Discussion
+## Discussion
 
 Returns an empty array if there are no configured network devices.
 

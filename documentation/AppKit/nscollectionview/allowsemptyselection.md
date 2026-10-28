@@ -19,7 +19,7 @@ var allowsEmptySelection: Bool { get set }
 @property BOOL allowsEmptySelection;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`true`](../../Swift/true.md), which allows the collection view to have no selected items. Setting this property to [`false`](../../Swift/false.md) causes the collection view to always leave at least one item selected.
 

@@ -20,7 +20,7 @@ func NSUnionRect(_ aRect: NSRect, _ bRect: NSRect) -> NSRect
 extern NSRect NSUnionRect(NSRect aRect, NSRect bRect);
 ```
 
-#### Discussion
+## Discussion
 
 Returns the smallest rectangle that completely encloses both `aRect` and `bRect`. If one of the rectangles has 0 (or negative) width or height, a copy of the other rectangle is returned; but if both have 0 (or negative) width or height, the returned rectangle has its origin at (0.0, 0.0) and has 0 width and height.
 

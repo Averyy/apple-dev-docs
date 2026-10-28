@@ -28,13 +28,13 @@ class HKCumulativeQuantitySample
 
 - [Accessing condensed workout samples](./accessing-condensed-workout-samples.md)
 
-#### Overview
+## Overview
 
 A quantity sample contains one or more [`HKQuantity`](./hkquantity.md) objects. Each quantity represents a single piece of data with a single numeric value and the value’s associated units. Use these samples to store data that accumulates over time, such as step count, active energy burned, or walking distance.
 
 The [`HKCumulativeQuantitySample`](./hkcumulativequantitysample.md) class is a concrete subclass of the [`HKQuantitySample`](./hkquantitysample.md) class. Cumulative quantity samples are immutable; you set the sample’s properties when you create it, and they cannot change.
 
-##### Extend Cumulative Quantity Samples
+### Extend Cumulative Quantity Samples
 
 Like many HealthKit classes, you should not subclass the [`HKCumulativeQuantitySample`](./hkcumulativequantitysample.md) class. You may extend this class by adding metadata with custom keys to save related data used by your app.
 

@@ -16,7 +16,7 @@ A true value.
 - watchOS 2.0+
 - Swift 1.0+
 
-#### Discussion
+## Discussion
 
 For information about true and false values, see [Booleans](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/#Booleans) in *[The Swift Programming Language](https://docs.swift.org/swift-book/)*.
 

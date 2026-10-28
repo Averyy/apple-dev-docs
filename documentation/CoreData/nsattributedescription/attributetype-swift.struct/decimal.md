@@ -21,7 +21,7 @@ An attribute that stores a decimal value.
 static let decimal: NSAttributeDescription.AttributeType
 ```
 
-#### Discussion
+## Discussion
 
 Use instances of [`NSDecimalNumber`](../../../Foundation/nsdecimalnumber.md) when reading and writing attributes of this type.
 

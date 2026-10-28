@@ -21,7 +21,7 @@ var confidence: Double { get }
 @property (nonatomic, assign, readonly) double confidence;
 ```
 
-#### Discussion
+## Discussion
 
 This property is a range from `0` to `1`, where `1` indicates the most confident.
 

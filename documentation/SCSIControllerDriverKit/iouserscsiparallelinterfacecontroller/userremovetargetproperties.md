@@ -15,11 +15,11 @@ Removes properties from a target.
 virtual kern_return_t UserRemoveTargetProperties(SCSIDeviceIdentifier targetID, OSArray *properties);
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates the result of setting the target’s specified properties. [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) indicates success. For error definitions, see [IOKit Constants](../../iokit/iokit_constants.md).
 
-#### Discussion
+## Discussion
 
 Your driver extension calls this method to remove the specified properties from the target.
 

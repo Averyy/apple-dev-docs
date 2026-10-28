@@ -23,7 +23,7 @@ var primaryConstituentDeviceRestrictedSwitchingBehaviorConditions: AVCaptureDevi
 @property (nonatomic, readonly) AVCapturePrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions primaryConstituentDeviceRestrictedSwitchingBehaviorConditions;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`AVCapturePrimaryConstituentDeviceRestrictedSwitchingBehaviorConditionNone`](../avcaptureprimaryconstituentdevicerestrictedswitchingbehaviorconditions/avcaptureprimaryconstituentdevicerestrictedswitchingbehaviorconditionnone.md).
 

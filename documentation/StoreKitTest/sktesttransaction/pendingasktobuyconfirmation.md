@@ -25,7 +25,7 @@ var pendingAskToBuyConfirmation: Bool { get }
 @property (nonatomic, readonly) BOOL pendingAskToBuyConfirmation;
 ```
 
-#### Discussion
+## Discussion
 
 To test an Ask to Buy scenario, first set [`askToBuyEnabled`](../sktestsession/asktobuyenabled.md) to `true` before making a purchase. If [`pendingAskToBuyConfirmation`](./pendingasktobuyconfirmation.md) is `true`, approve the transaction by calling [`approveAskToBuyTransaction(identifier:)`](../sktestsession/approveasktobuytransaction%28identifier%29.md) , or decline it by calling [`declineAskToBuyTransaction(identifier:)`](../sktestsession/declineasktobuytransaction%28identifier%29.md).
 

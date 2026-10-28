@@ -25,11 +25,11 @@ func BNNSGraphContextSetOutputAllocationCallback(_ context: bnns_graph_context_t
 int BNNSGraphContextSetOutputAllocationCallback(bnns_graph_context_t context, bnns_graph_realloc_fn_t realloc, bnns_graph_free_all_fn_t free, size_t user_memory_context_size, void *user_memory_context);
 ```
 
-#### Return Value
+## Return Value
 
 `0` on success, nonzero on failure.
 
-#### Discussion
+## Discussion
 
 If BNNS can’t bound the required output size prior to execution — for example, if the tensor sizes depend on input data — it allocates outputs during execution. Use this function to override the default memory allocation mechanisms.
 

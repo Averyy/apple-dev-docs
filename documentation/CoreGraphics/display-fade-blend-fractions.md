@@ -5,7 +5,7 @@
 
 The lower and upper bounds for blend color fractions during a display fade operation.
 
-#### Overview
+## Overview
 
 For general information about blend fractions, see the data type [`CGDisplayBlendFraction`](./cgdisplayblendfraction.md). For information about how these constants are used, see the function [`CGDisplayFade(_:_:_:_:_:_:_:_:)`](./cgdisplayfade%28_,_,_,_,_,_,_,_%29.md).
 

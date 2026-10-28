@@ -20,7 +20,7 @@ enum SecCSDigestAlgorithm
 enum SecCSDigestAlgorithm : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 Use these values with the [`kSecCodeInfoDigestAlgorithm`](./kseccodeinfodigestalgorithm.md) and [`kSecCodeInfoDigestAlgorithms`](./kseccodeinfodigestalgorithms.md) keys described in [Signing Information Dictionary Keys](./signing-information-dictionary-keys.md).
 

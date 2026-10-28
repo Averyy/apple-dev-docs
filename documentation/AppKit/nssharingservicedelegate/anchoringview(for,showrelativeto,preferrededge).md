@@ -20,7 +20,7 @@ optional func anchoringView(for sharingService: NSSharingService, showRelativeTo
 - (NSView *) anchoringViewForSharingService:(NSSharingService *) sharingService showRelativeToRect:(NSRect *) positioningRect preferredEdge:(NSRectEdge *) preferredEdge;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate should return the view that will act as the anchor of the popover, along with the target rectangle within the bounds of that view and preferred edge of that rectangle for the popover to appear. The delegate may also return `nil`, indicating that there is no anchoring view currently available, in which case the service may attempt to display the service via some other means.
 

@@ -19,7 +19,7 @@ Creates the default configuration for content that’s loading.
 static func loading() -> UIContentUnavailableConfiguration
 ```
 
-#### Return Value
+## Return Value
 
 A new configuration.
 

@@ -21,15 +21,15 @@ Returns the specified object’s reference count.
 extern NSUInteger NSExtraRefCount(id object);
 ```
 
-#### Return Value
+## Return Value
 
 The current reference count of `object`.
 
-#### Discussion
+## Discussion
 
 This function is used in conjunction with [`NSIncrementExtraRefCount`](./nsincrementextrarefcount.md) and [`NSDecrementExtraRefCountWasZero`](./nsdecrementextrarefcountwaszero.md) in situations where you need to override an object’s [`retain`](../ObjectiveC/nsobject-c.protocol/retain.md) and [`release`](../ObjectiveC/nsobject-c.protocol/release.md) methods.
 
-##### Special Considerations
+### Special Considerations
 
 This function is deprecated and unavailable for use with ARC.
 

@@ -19,7 +19,7 @@ The search text.
 @property (nonatomic, strong, nullable) NSString * searchText;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this property returns the search bar text from the view controller’s search controller.
 

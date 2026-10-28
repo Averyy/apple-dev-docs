@@ -15,7 +15,7 @@ Creates an object that represents a rectangular region of the map projection.
 constructor(x?: number, y?: number, width?: number, height?: number);
 ```
 
-#### Discussion
+## Discussion
 
 The following example demonstrates how to create a `mapkit.MapRect` instance from map units and inspect the object’s `origin` and `size` properties:
 

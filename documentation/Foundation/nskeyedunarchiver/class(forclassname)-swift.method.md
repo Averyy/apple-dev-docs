@@ -25,11 +25,11 @@ func `class`(forClassName codedName: String) -> AnyClass?
 - (Class) classForClassName:(NSString *) codedName;
 ```
 
-#### Return Value
+## Return Value
 
 The class from which the receiver instantiates an encoded object with the class name `codedName`. Returns `nil` if the receiver does not have a translation mapping for `codedName`.
 
-#### Discussion
+## Discussion
 
 The class’s separate translation map is not searched.
 

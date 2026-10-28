@@ -9,11 +9,11 @@ Update the App Store categories and sub-categories for your app.
 **Availability**:
 - App Store Connect API 1.2+
 
-#### Discussion
+## Discussion
 
 Use this endpoint to modify the primary and secondary categories and subcategories for an app.
 
-##### Add an App to the Games Category and the Sports and Role Playing Subcategories
+### Add an App to the Games Category and the Sports and Role Playing Subcategories
 
 **Request**:
 

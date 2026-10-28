@@ -19,7 +19,7 @@ class let didChangeNotification: NSNotification.Name
 extern NSNotificationName NSColorListDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the [`NSColorList`](../nscolorlist.md) object that changed. This notification does not contain a `userInfo` dictionary.
 

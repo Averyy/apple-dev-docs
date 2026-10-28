@@ -20,7 +20,7 @@ A mode that displays the intensity of direct light hitting the entity as its sur
 case lightingSpecular
 ```
 
-#### Discussion
+## Discussion
 
 Adding a [`ModelDebugOptionsComponent`](../../modeldebugoptionscomponent.md) with a visualization mode of `lightingSpecular` to an entity tells RealityKit to draw the intensity of direct light falling on the entity as its surface color. The calculated value represents direct light hitting the object from both real-world and virtual lights. RealityKit draws the light intensity as a grayscale value from black (`0.0`) to white (`1.0`).
 

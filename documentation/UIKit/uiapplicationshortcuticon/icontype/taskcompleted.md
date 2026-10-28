@@ -22,7 +22,7 @@ case taskCompleted
 UIApplicationShortcutIconTypeTaskCompleted
 ```
 
-#### Discussion
+## Discussion
 
 ![Task completed quick action icon](https://developer.apple.com/tutorials/images/com.apple.uikit/media-2934532@2x.png)
 

@@ -19,7 +19,7 @@ enum Role
 enum CBChannelSoundingSessionConfigurationRole : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Specifies which channel sounding role a CBPeripheral should assume for a given session.
 

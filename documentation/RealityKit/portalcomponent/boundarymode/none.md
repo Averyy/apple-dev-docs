@@ -20,7 +20,7 @@ The portal renders without clipping or crossing.
 case none
 ```
 
-#### Discussion
+## Discussion
 
 Portal world content is bounded only by the [`PortalMaterial`](../../portalmaterial.md) mesh. Entities with [`PortalCrossingComponent`](../../portalcrossingcomponent.md) don’t cross the portal.
 

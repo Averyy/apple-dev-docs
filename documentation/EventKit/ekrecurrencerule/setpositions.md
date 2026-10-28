@@ -24,7 +24,7 @@ var setPositions: [NSNumber]? { get }
 @property (nonatomic, readonly, nullable) NSArray<NSNumber *> * setPositions;
 ```
 
-#### Discussion
+## Discussion
 
 For example, a yearly recurrence rule that has a [`daysOfTheWeek`](./daysoftheweek.md) value that specifies Monday through Friday, and a [`setPositions`](./setpositions.md) array containing `2` and `-1`, occurs only on the second weekday and last weekday of every year. Values can be from `1` to `366` and from `-1` to `-366`.
 

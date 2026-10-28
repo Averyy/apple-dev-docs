@@ -23,7 +23,7 @@ var configuration: AEAssessmentConfiguration { get }
 @property (nonatomic, copy, readonly) AEAssessmentConfiguration * configuration;
 ```
 
-#### Discussion
+## Discussion
 
 You configure a session when you create it with the [`init(configuration:)`](./init%28configuration%29.md) initializer. You can later change the configuration by calling the [`update(to:)`](./update%28to%29.md) method. Read the [`configuration`](./configuration.md) property to obtain the session’s current configuration.
 

@@ -25,11 +25,11 @@ class func success(with resolvedBillType: INBillType) -> Self
 + (instancetype) successWithResolvedBillType:(INBillType) resolvedBillType;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INBillTypeResolutionResult`](../inbilltyperesolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you’re able to resolve the parameter successfully to a recognizable value in your app.
 

@@ -15,7 +15,7 @@ Sets whether or not using thread-unsafe components is allowed in the current thr
 void CSSetComponentsThreadMode(CSComponentsThreadMode mode);
 ```
 
-#### Discussion
+## Discussion
 
 Core Services maintains a component thread-mode flag for each thread in the current process. The default value of this flag is `kCSAcceptAllComponentsMode`, which means the thread can call any component regardless of whether the component is thread-safe. Applications and other high-level code that call component-based APIs (such as QuickTime) from preemptive threads should call this function from their thread beforehand and pass in the value `kCSAcceptThreadSafeComponentsOnlyMode`. 
 

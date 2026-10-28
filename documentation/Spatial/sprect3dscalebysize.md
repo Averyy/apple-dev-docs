@@ -21,7 +21,7 @@ Returns a rectangle that results from scaling with the specified size structure.
 static SPRect3D SPRect3DScaleBySize(SPRect3D rect, SPSize3D scale);
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle that results from scaling with the specified size structure.
 

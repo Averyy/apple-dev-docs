@@ -29,7 +29,7 @@ optional func player(_ player: GKPlayer, wantsToQuitMatch match: GKTurnBasedMatc
 
 - [Starting turn-based matches and passing turns between players](../starting-turn-based-matches-and-passing-turns-between-players.md)
 
-#### Discussion
+## Discussion
 
 Implement this method to forfeit the match by passing the turn to the next participant using the  [`participantQuitInTurn(with:nextParticipants:turnTimeout:match:completionHandler:)`](../gkturnbasedmatch/participantquitinturn%28with,nextparticipants,turntimeout,match,completionhandler%29.md) method.
 

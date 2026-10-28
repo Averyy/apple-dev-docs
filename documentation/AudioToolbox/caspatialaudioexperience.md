@@ -15,7 +15,7 @@ Configure an audio stream for spatial computing.
 @interface CASpatialAudioExperience : NSObject
 ```
 
-#### Overview
+## Overview
 
 The Objective-C version of the [`SpatialAudioExperience`](./spatialaudioexperience.md) Swift type.
 

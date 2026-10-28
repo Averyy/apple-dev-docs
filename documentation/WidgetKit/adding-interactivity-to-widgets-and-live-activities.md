@@ -5,7 +5,7 @@
 
 Include buttons or toggles in a widget or Live Activity to offer app functionality without launching the app.
 
-#### Overview
+## Overview
 
 Widgets and Live Activities can include buttons and toggles to offer specific app functionality without launching the app. For example, a Reminders widget allows people to mark a task as completed with a toggle. On a locked device, buttons and toggles are inactive and the system doesn’t perform actions unless a person authenticates and unlocks their device.
 
@@ -17,7 +17,7 @@ For design guidance, refer to [Human Interface Guidelines > Widgets](https://dev
 
 > **Related session from WWDC23**: [Session 10027: Bring widgets to new places](https://developer.apple.com/videos/play/wwdc2023/10027)
 
-##### Review widgets that support interactive views
+### Review widgets that support interactive views
 
 Widgets of the following sizes can include buttons and toggles:
 
@@ -31,11 +31,11 @@ Widgets of the following sizes can include buttons and toggles:
 
 Live Activities can include buttons or toggles in the expanded and the Lock Screen presentation.
 
-##### Support interactive widgets in CarPlay
+### Support interactive widgets in CarPlay
 
 People configure small system widgets to appear in CarPlay in the Widgets screen. To fit the context of widgets on a vehicle’s built-in display, WidgetKit adjusts their functionality to match the CarPlay context. For additional information, refer to [Adding StandBy and CarPlay support to your widget](./adding-standby-and-carplay-support-to-your-widget.md).
 
-##### Understand the role of app intents
+### Understand the role of app intents
 
 Widgets offer direct interaction with your app using the [App Intents](../AppIntents/AppIntents.md) framework and SwiftUI. For example, the large widget of the [Emoji Rangers: Supporting Live Activities, interactivity, and animations](./emoji-rangers-supporting-live-activities-interactivity-and-animations.md) sample code project includes a button to boost the hero’s healing power.
 
@@ -45,7 +45,7 @@ As a result of the timeline mechanism and of rendering in a separate process, th
 
 > **Note**: Live Activities don’t use a timeline mechanism to update their content. However, they use WidgetKit and a widget extension with a similar cycle of view archiving and decoding. As a result, you add buttons and toggles to a Live Activity in the same way as you do for your widgets, as described below.
 
-##### Add an app intent that performs the action
+### Add an app intent that performs the action
 
 Buttons and toggles you add to your widgets and Live Activities use functionality that you expose to the system by adopting the App Intents framework. Before you add a button or toggle, make the app functionality available to the system using an app intent:
 
@@ -73,7 +73,7 @@ If you adopt the `LiveActivityIntent` or `AudioPlaybackIntent` protocol, the sys
 
 If you adopt the `AppIntent` protocol, add your custom app intent to your widget extension target and your app target. Adding it to the app target in addition to the widget extension target allows you to reuse the button or toggle you add to the widget in your app.
 
-##### Implement the perform function
+### Implement the perform function
 
 When a person interacts with a button or toggle in your widget, the system runs the underlying app intent’s [`perform()`](../AppIntents/appintent/perform%28%29.md) function. The `perform()` function is asynchronous, and you can take full advantage of Swift concurrency. To learn more about concurrency, see [The Swift Programming Language > Concurrency](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/) and [Concurrency](../Swift/concurrency.md). By default, the system runs the app intent in the same process as the widget extension. However, if the app intent’s [`openAppWhenRun`](../AppIntents/appintent/openappwhenrun.md) property is `true`, or if the intent conforms to [`AudioPlaybackIntent`](../AppIntents/audioplaybackintent.md), [`ForegroundContinuableIntent`](../AppIntents/foregroundcontinuableintent.md), [`LiveActivityIntent`](../AppIntents/liveactivityintent.md), or [`PushToTalkTransmissionIntent`](../AppIntents/pushtotalktransmissionintent.md), the system performs the app intent in the app’s process.
 
@@ -85,7 +85,7 @@ Additionally, note that the `perform()` function is marked as `throws`. Be sure 
 
 > 💡 **Tip**: With the App Intents framework, you can extend your app’s custom functionality to support system-level services like Siri and the Shortcuts app. Additionally, you use app intents to make your widget configurable. By making your widget interactive, you automatically support system services for that interaction. To learn more about the App Intents framework, see [App Intents](../AppIntents/AppIntents.md) and [Getting started with the App Intents framework](../AppIntents/getting-started-with-the-app-intents-framework.md). To learn more about configurable widgets, see [Making a configurable widget](./making-a-configurable-widget.md).
 
-##### Add a button
+### Add a button
 
 After you’ve implemented the app intent, add a [`Button`](../SwiftUI/button.md) to your widget using one of the initializers that take an app intent, for example, [`init(_:intent:)`](../SwiftUI/button/init%28_,intent%29-7urde.md).
 
@@ -137,7 +137,7 @@ After you’ve added a button, review views in your widget or Live Activity that
 
 > **Note**: A button indicates that a person interacted with it but it doesn’t remain in a pressed state. As a result, use `Toggle` to indicate on/off functionality.
 
-##### Add a toggle
+### Add a toggle
 
 Add a [`Toggle`](../SwiftUI/toggle.md) to your view using one of the initializers that take an app intent, for example, [`init(isOn:intent:label:)`](../SwiftUI/toggle/init%28ison,intent,label%29.md).
 
@@ -191,7 +191,7 @@ To accurately reflect changed state for a person’s action with a `Toggle`, upd
 3. Refresh the widget’s timeline to show the correct state for the task when your server acknowledges the successful synchronization. The `Toggle` should show the correct state and not its earlier optimistic prediction.
 4. In case of an error or server timeout, update the widget to reflect that the task isn’t completed. For example, set the toggle’s `isOn` property to `false` and show text in the widget that there’s a synchronization error.
 
-##### Review interactions in iPhone widgets on Mac
+### Review interactions in iPhone widgets on Mac
 
 In the context of iPhone widgets on Mac, it’s important to use the [`invalidatableContent(_:)`](../SwiftUI/view/invalidatablecontent%28_%29.md) view modifier on views if you add a [`Button`](../SwiftUI/button.md) to a widget and also understand the optimistic behavior of a [`Toggle`](../SwiftUI/toggle.md). People can put iPhone widgets on their Mac desktop and in Notification Center. When a person interacts with the iPhone widget on Mac, the system sends the interaction to iPhone. On iPhone, the system performs the intent, generates a new timeline, and then sends the updated timeline to the iPhone widget on Mac. This process may take extra time. As a result, marking views that await updated data and making sure a toggle reflects synchronized data are especially important.
 

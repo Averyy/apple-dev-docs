@@ -17,7 +17,7 @@ Returns the location of a joint with a given name.
 func landmark(for jointName: ARSkeleton.JointName) -> simd_float2?
 ```
 
-#### Discussion
+## Discussion
 
 Joint landmarks are normalized within the range [0..1] and are in the coordinate space of the current frame’s camera image, where 0 is the upper left, and 1 is the bottom right.
 

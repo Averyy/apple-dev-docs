@@ -5,7 +5,7 @@
 
 Provide information about data units to stream in hint tracks.
 
-#### Overview
+## Overview
 
 The QuickTime file format supports streaming of media data over a network as well as local playback. The process of sending protocol data units is time-based, just like the display of time-based data, and is therefore suitably described by a time-based format. A QuickTime file or movie that supports streaming includes information about the data units to stream. This information is included in additional tracks of the movie called hint tracks.
 
@@ -31,7 +31,7 @@ Hint tracks are built and flagged, so that when the movie is viewed directly (no
 
 The next section describes a generic format for streaming hints to be stored in a QuickTime movie.
 
-#### Adding hint tracks to a movie
+## Adding hint tracks to a movie
 
 To store packetization hints, one or more hint tracks are added to a movie. Each hint track contains hints for at least one actual media track to be streamed. A streamed media track may have more than one hint track. For example, it might have a separate hint track for the different packet sizes the server supports, or it might have different hint tracks for different protocols. It is not required that all media tracks have corresponding hint tracks in a movie.
 
@@ -52,18 +52,18 @@ Note that if a QuickTime media track is edited, any previously stored packetizat
 
 > ⚠️ **Warning**: Hint tracks are marked as inactive, so calling the `FlattenMovie` function with the `flattenActiveTracksOnly` bit set deletes all hint tracks from a movie.
 
-#### Packetization hint media header atom
+## Packetization hint media header atom
 
 In QuickTime movies, the media information atom (`'minf'`) contains header data specific to the media. For hint tracks, the media header is a base media information atom (`'gmhd'`). The hint track must contain the base media information atom.
 
-#### Hint track user data atom
+## Hint track user data atom
 
 Each hint track may contain track user data atoms that apply to only to the corresponding hint track. There are currently two such atoms defined.
 
 - **User data atom type `'hinf'`**: This contains statistics for the hint track. The `'hinf'` atom contains child atoms as defined in the table in the Movie info data atom section below. In some cases, there are both 32-bit and 64-bit counters available. Ignore any unknown types.
 - **User data atom type `'hnti'`**: This may contain child atoms. Child atoms that start with `'sdp '` (note, again, the space) contain SDP text for this track. Text from these child atoms must be inserted into the proper place in the SDP text for the movie, after any common SDP text. This is analogous to the movie-level `'hnti'` atom.
 
-#### Movie hint info atom
+## Movie hint info atom
 
 A movie may contain an `'hnti'` movie user data atom, which may contain one or more child atoms. The child atom contents start with 4 bytes that specify the transport and 4 bytes that specify the type of data contained in the rest of the child atom. Currently, the only defined transport is `'rtp '` (note the space) and the only content data type defined is `'sdp '` (note the space). Skip any child atoms whose transport or type combinations you don’t recognize.
 

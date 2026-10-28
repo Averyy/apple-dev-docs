@@ -20,11 +20,11 @@ func resolvePrefix(forNamespaceURI namespaceURI: String) -> String?
 - (NSString *) resolvePrefixForNamespaceURI:(NSString *) namespaceURI;
 ```
 
-#### Return Value
+## Return Value
 
 A string that is the matching prefix or `nil` if it finds no matching prefix.
 
-#### Discussion
+## Discussion
 
 The method looks in the entire namespace chain for the URI.
 

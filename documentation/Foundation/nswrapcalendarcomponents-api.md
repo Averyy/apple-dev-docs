@@ -5,7 +5,7 @@
 
 A legacy constant used to control overflow in date calculations.
 
-#### Overview
+## Overview
 
 > **Deprecated**:  Use [`wrapComponents`](./nscalendar/options/wrapcomponents.md) instead.
 

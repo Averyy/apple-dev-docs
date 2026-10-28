@@ -21,7 +21,7 @@ var textStyle: TVTextElementStyle { get }
 @property (nonatomic, readonly) TVTextElementStyle textStyle;
 ```
 
-#### Discussion
+## Discussion
 
 This property will contain a [`TVTextElementStyle`](../tvtextelementstyle.md) value.
 

@@ -24,11 +24,11 @@ Watches for updates to an array of config values for the given config key, conve
 func watchStringArray<Value, Return>(forKey key: ConfigKey, as type: Value.Type = Value.self, isSecret: Bool = false, fileID: String = #fileID, line: UInt = #line, updatesHandler: nonisolated(nonsending) (ConfigUpdatesAsyncSequence<[Value]?, Never>) async throws -> Return) async throws -> Return where Value : RawRepresentable, Value : Sendable, Value.RawValue == String, Return : ~Copyable
 ```
 
-#### Return Value
+## Return Value
 
 The result produced by the handler.
 
-#### Discussion
+## Discussion
 
 Use this method to observe changes to optional string-convertible array configuration values over time. The handler receives an async sequence that produces the current array whenever it changes, or `nil` if the value is missing or can’t be converted.
 

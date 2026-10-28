@@ -19,7 +19,7 @@ Returns the descriptor for the specified output.
 func outputDescriptor(of outputName: String) -> InferenceValue.Descriptor?
 ```
 
-#### Return Value
+## Return Value
 
 The descriptor for the output, or `nil` if the function doesn’t have an output with the specified name.
 

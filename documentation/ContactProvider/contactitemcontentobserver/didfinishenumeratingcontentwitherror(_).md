@@ -17,7 +17,7 @@ Finishes the content enumeration with an error, indicating failure, to the obser
 func didFinishEnumeratingContentWithError(_: any Error)
 ```
 
-#### Discussion
+## Discussion
 
 Use [`ContactProviderError.pageExpired`](../contactprovidererror/pageexpired.md) to restart the content enumeration.
 

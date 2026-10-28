@@ -24,7 +24,7 @@ var mipFilter: MDLMaterialMipMapFilterMode { get set }
 @property (nonatomic, assign) MDLMaterialMipMapFilterMode mipFilter;
 ```
 
-#### Discussion
+## Discussion
 
 Mipmapping is a technique that can increase rendering performance when rendering a texture image at smaller sizes. A texture can contain several mipmap levels for its image contents, each at a fraction of the original image’s size. A renderer samples texels from the mipmap level closest to the size being rendered.
 

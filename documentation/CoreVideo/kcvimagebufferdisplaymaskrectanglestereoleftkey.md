@@ -25,7 +25,7 @@ let kCVImageBufferDisplayMaskRectangleStereoLeftKey: CFString
 extern CFStringRef const kCVImageBufferDisplayMaskRectangleStereoLeftKey;
 ```
 
-#### Discussion
+## Discussion
 
 To address window violations in stereo video, the system supports points insetting the left and right edges of the rectangle through additional keys, allowing the description of the extended raster rectangle.
 

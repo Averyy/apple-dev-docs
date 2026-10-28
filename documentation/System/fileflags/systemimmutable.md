@@ -21,7 +21,7 @@ File may not be changed.
 static var systemImmutable: FileFlags { get }
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding C constant is `SF_IMMUTABLE`.
 

@@ -20,7 +20,7 @@ A result that indicates the user disabled the automatic sharing of activities, o
 case activationDisabled
 ```
 
-#### Discussion
+## Discussion
 
 Use the available context to determine the best way to proceed with this action. For example, instead of sharing a movie with a group, configure playback locally on the user’s device. For activities that only make sense in a group environment, you might alert the user that you can’t start the activity.
 

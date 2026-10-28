@@ -20,7 +20,7 @@ Includes time-code attributes in a transcription’s attributed string.
 case audioTimeRange
 ```
 
-#### Discussion
+## Discussion
 
 These are `Foundation/AttributeScopes/SpeechAttributes/TimeRangeAttribute` attributes.
 

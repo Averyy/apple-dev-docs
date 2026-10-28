@@ -14,7 +14,7 @@ Create pipelines for different levels of detail from a common shader source.
 - tvOS 17.0+
 - Xcode 26.3+
 
-#### Overview
+## Overview
 
 A high-quality gaming experience has to manage trade-offs between great graphics and great performance. High-quality models look great, but their complexity requires a significant amount of processing power. By increasing or decreasing the level of detail (LOD) of a model, games can selectively manage both graphics and performance.
 
@@ -26,11 +26,11 @@ This sample demonstrates dynamic LOD selection for a fire truck model, based on 
 
 ![Levels of Detail](https://developer.apple.com/tutorials/images/com.apple.metal/lod-with-function-constants-2-LevelsOfDetail@2x.png)
 
-##### Getting started
+### Getting started
 
 The Xcode project contains schemes for running the sample on macOS, iOS, or tvOS.
 
-##### GPU branch statements
+### GPU branch statements
 
 Unlike CPU code, graphics processing unit (GPU) branch statements like `if` and `else` are very expensive. The massively parallel architecture of GPUs isn’t particularly well suited to handling GPU functions that have many branches. More branches result in more register allocations and thus decrease the number of GPU threads that can execute concurrently. Nevertheless, branch statements are useful programming constructs, particularly for functions that share a lot of code. In fact, a common problem for graphics functions that share code is how to handle a branch condition that differs only between draw calls, not between individual threads executing within a single draw call.
 
@@ -41,7 +41,7 @@ Traditionally, branches that differ between draw calls are mitigated in one of t
 
 The Metal *function specialization* feature reduces branch performance costs, avoids code duplication, and leverages build time compilation. Function specialization allows you to create multiple executable versions of a single source function. You create specialized functions by declaring *function constants* in your Metal shading language code and setting their values at runtime. Doing so allows the front-end compiler to precompile your source function at build time and the back-end compiler to compile the specialized function at runtime, when the pipeline is created.
 
-##### Define your LOD selection criteria
+### Define your LOD selection criteria
 
 This sample demonstrates function specialization by creating different render pipelines for different LODs. All of the pipelines share the same source function, but function constants determine LOD-specific paths and inputs for each pipeline. Specifically, the sample demonstrates dynamic LOD selection for a fire truck model, based on its distance from the scene’s camera. When the fire truck is close to the camera, it occupies more pixels on the screen; therefore, the sample uses a high-quality render pipeline. When the fire truck is far from the camera, it occupies fewer pixels on the screen; therefore, the sample uses a low-quality render pipeline.
 
@@ -68,7 +68,7 @@ The `isTexturedProperty:atQualityLevel:` method controls whether a material prop
 }
 ```
 
-##### Implement specialized functions
+### Implement specialized functions
 
 The sample uses six function constants to control the various inputs available to the `fragmentLighting` fragment function.
 
@@ -130,7 +130,7 @@ fragmentLighting(                 ColorInOut in           [[ stage_in ]],
                  texturecube<float> irradianceMap         [[ texture(AAPLTextureIndexIrradianceMap),    function_constant(has_irradiance_map)]])
 ```
 
-##### Create different pipelines
+### Create different pipelines
 
 This sample uses three different `MTLRenderPipelineState` objects, each representing a different LOD. Specializing functions and building pipelines is expensive, so the sample performs these tasks asynchronously before starting the render loop. When the `AAPLRenderer` object is initialized, each LOD pipeline is created asynchronously by using dispatch groups, completion handlers, and notification blocks.
 
@@ -203,7 +203,7 @@ void (^notifyBlock)(void) = ^void()
 dispatch_group_notify(specializationGroup, pipelineQueue, notifyBlock);
 ```
 
-##### Render with a specific LOD
+### Render with a specific LOD
 
 At the beginning of the render loop, for each frame, the sample calls the `_calculateQualityAtDistance:` method to update the `_currentQualityLevel` value. This value defines the LOD for the frame based on the distance between the model and the camera. The `_calculateQualityAtDistance:` method also sets a `_globalMapWeight` value that creates a smooth transition between LOD boundaries.
 

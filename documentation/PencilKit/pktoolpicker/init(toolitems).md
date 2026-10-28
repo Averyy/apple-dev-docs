@@ -22,7 +22,7 @@ init(toolItems items: [PKToolPickerItem])
 - (instancetype) initWithToolItems:(NSArray<PKToolPickerItem *> *) items;
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a tool picker with the tools you specify, which the picker displays in the custom order you provide during initialization. You can add system tools, such as the eraser and ruler, and custom tools in the same picker.
 

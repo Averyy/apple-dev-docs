@@ -22,7 +22,7 @@ optional func dragInteraction(_ interaction: UIDragInteraction, sessionDidTransf
 - (void) dragInteraction:(UIDragInteraction *) interaction sessionDidTransferItems:(id<UIDragSession>) session;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method if you need to clean up resources related to the drag items or their item provider objects.
 

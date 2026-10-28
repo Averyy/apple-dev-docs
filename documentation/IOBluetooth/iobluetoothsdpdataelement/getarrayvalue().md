@@ -19,11 +19,11 @@ func getArrayValue() -> [Any]!
 - (NSArray *) getArrayValue;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an NSArray representation of the data element if it is a sequence type.
 
-#### Discussion
+## Discussion
 
 The data types represented by an array object are 6 (data element sequence) and 7 (data element alternative).
 

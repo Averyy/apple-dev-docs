@@ -5,13 +5,13 @@
 
 Sign JSON Web Tokens to use Maps Server API and debug common signing errors.
 
-#### Overview
+## Overview
 
 Maps Server API uses a Maps token to authenticate map initializations and other API requests, such as requests to retrieve directions or execute a search. To use a Maps token with Maps Server API you must have an Apple Developer account and obtain a Maps ID and a private key as described in [Creating a Maps identifier and a private key](./creating-a-maps-identifier-and-a-private-key.md).
 
 After getting or creating a token, confirm the success of the token authorization by using the token to access the API; check the status codes that the API responses return to verify the calls were successful.
 
-#### Create a token to use Maps Server API
+## Create a token to use Maps Server API
 
 Maps Server API requires a Maps token to initialize MapKit. A Maps token has two sections, a header and a payload. The header describes the token and the cryptographic operations applied to the payload. The payload contains a set of cryptographically signed claims.
 
@@ -54,7 +54,7 @@ To learn more about Maps tokens, see the [JSON Web Token (JWT) specification](ht
 
 For next steps, go to [`Generate a Maps token`](./v1-token.md).
 
-#### Available token scopes
+## Available token scopes
 
 The `scope` claim sets one or more Apple Maps frameworks you are authorizing the token to use. Available values are:
 

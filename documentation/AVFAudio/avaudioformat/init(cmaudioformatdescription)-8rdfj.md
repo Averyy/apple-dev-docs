@@ -25,7 +25,7 @@ init(cmAudioFormatDescription formatDescription: CMAudioFormatDescription)
 - (instancetype) initWithCMAudioFormatDescription:(CMAudioFormatDescriptionRef) formatDescription;
 ```
 
-#### Return Value
+## Return Value
 
 A new `AVAudioFormat` instance, or `nil` if `formatDescription` isn’t valid.
 

@@ -20,11 +20,11 @@ class func element(withName name: String, stringValue string: String) -> Any
 + (id) elementWithName:(NSString *) name stringValue:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSXMLElement` object with a single text-node child—an `NSXMLNode` object of kind [`XMLNode.Kind.text`](./kind-swift.enum/text.md)—containing the text specified in `string`. Returns `nil` if the object couldn’t be created.
 
-#### Discussion
+## Discussion
 
 The equivalent XML markup is `<``name``>``string``</``name``>`.
 

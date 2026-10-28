@@ -21,7 +21,7 @@ static func zeros(like array: MLXArray, dtype: DType? = nil, stream: StreamOrDev
 
 - [Converting From Python](../converting-python.md)
 
-#### Discussion
+## Discussion
 
 Example:
 
@@ -30,7 +30,7 @@ let array = MLXArray(0 ..< 12, [4, 3])
 let z = MLXArray.zeros(like: array)
 ```
 
-##### See Also
+### See Also
 
 - [Initialization](../initialization.md)
 - [`zeros(_:type:stream:)`](./zeros%28_,type,stream%29.md)

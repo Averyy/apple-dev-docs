@@ -5,7 +5,7 @@
 
 Add drag and drop support in your app to give users an intuitive way to receive clips, projects, and other items from Final Cut Pro.
 
-#### Overview
+## Overview
 
 Drag and drop is a good choice for receiving data when your users need to transfer a relatively small number of items from Final Cut Pro to your app. If your users often go back and forth between Final Cut Pro and your app as they receive data from Final Cut Pro, supporting drag and drop in your app could streamline that workflow by letting them drag items directly from the Final Cut Pro sidebar or browser to your app.
 
@@ -21,7 +21,7 @@ For information on versioned pasteboard types, see [Pasteboard Types and Version
 
 > **Note**:  When your users drag an object from Final Cut Pro to your app, only the metadata in the currently selected metadata view is included in the FCPXML. Users can change the metadata view in Final Cut Pro before they drag data to your app. For more information, see [Intro to metadata in Final Cut Pro](https://support.apple.com/guide/final-cut-pro/intro-to-metadata-verc392f8885/mac).
 
-##### Receive Pasteboard Data
+### Receive Pasteboard Data
 
 When receiving XML, your app can begin checking the available types on the pasteboard to request the most appropriate type; typically the highest versioned pasteboard type your app supports. Requesting a versioned pasteboard type ensures that your app continues to function as expected if a user updates to a new version of Final Cut Pro, with a newer DTD version, before updating your app. Order the pasteboard types your app supports by priority. Then you can iterate through your app’s sorted pasteboard types and select the first type available on the pasteboard. The following code snippet shows how you can do this in your app.
 

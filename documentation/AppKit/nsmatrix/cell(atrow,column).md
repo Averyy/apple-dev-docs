@@ -19,7 +19,7 @@ func cell(atRow row: Int, column col: Int) -> NSCell?
 - (NSCell *) cellAtRow:(NSInteger) row column:(NSInteger) col;
 ```
 
-#### Return Value
+## Return Value
 
 The [`NSCell`](../nscell.md) object at the specified row and column location specified, or `nil` if either `row` or `column` is outside the bounds of the receiver.
 

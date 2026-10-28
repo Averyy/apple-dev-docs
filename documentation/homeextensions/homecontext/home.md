@@ -18,7 +18,7 @@ The home that a person selected in the Home app.
 final var home: HMHome? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` if the home isn’t available.
 

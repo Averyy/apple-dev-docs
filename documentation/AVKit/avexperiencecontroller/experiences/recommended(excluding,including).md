@@ -15,7 +15,7 @@ Returns the recommended set of experiences.
 static func recommended<C>(excluding: C = [], including: C = []) -> AVExperienceController.Experiences where C : Collection, C.Element == AVExperienceController.Experience
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to return the default recommended set of experiences for each platform and SDK version. Include or exclude experiences specifically desired or not supported by your app.
 

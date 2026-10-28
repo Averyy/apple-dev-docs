@@ -18,7 +18,7 @@ The object that uniquely identifies the specific document with selected text.
 @property (readonly, nullable) UITextSearchDocumentIdentifier selectedTextSearchDocument;
 ```
 
-#### Discussion
+## Discussion
 
 When performing a search across multiple documents, this object returns the identifier for the document with the selected text. When performing a search on a single document, it returns `nil`.
 

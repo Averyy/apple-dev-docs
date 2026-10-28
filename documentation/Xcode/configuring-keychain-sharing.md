@@ -5,7 +5,7 @@
 
 Share keychain items between multiple apps belonging to the same developer.
 
-#### Overview
+## Overview
 
 Sharing keychain items between multiple targets of the same app, or between different apps that belong to the same developer, relies on the concept of an *access group* — a collection of targets that all share a common keychain group. When a particular target wants to make a keychain item accessible to the rest of the access group, it specifies the shared keychain group when writing that item to the keychain, which can be useful for apps that need to share account credentials and other sensitive information. For more information, see [Sharing access to keychain items among a collection of apps](../Security/sharing-access-to-keychain-items-among-a-collection-of-apps.md).
 
@@ -15,7 +15,7 @@ Before you make a keychain group accessible to your target, follow the steps in 
 
 If not already present, Xcode updates your target’s entitlements file to include the [`Keychain Access Groups Entitlement`](../BundleResources/entitlements/keychain-access-groups.md), which is an array that contains each keychain group you specify.
 
-##### Make a keychain group accessible to your target
+### Make a keychain group accessible to your target
 
 When you want two (or more) targets to share common keychain items, make the same keychain group accessible to both by following these steps:
 
@@ -36,7 +36,7 @@ After you make a keychain group accessible to your target, you can later revoke 
 
 Keychain groups you specify are then available to use with the [Keychain services](../Security/keychain-services.md) APIs, such as [`SecItemAdd(_:_:)`](../Security/secitemadd%28_,_%29.md) and [`SecItemCopyMatching(_:_:)`](../Security/secitemcopymatching%28_,_%29.md).
 
-##### Specify the default keychain group
+### Specify the default keychain group
 
 During compilation, the system determines the canonical list of keychain groups accessible to your app by concatenating the groups you specify with the app’s unique application identifier and any App Groups you configure; the system considers the first item in that list as the default keychain group. If you omit the [`kSecAttrAccessGroup`](../Security/ksecattraccessgroup.md) attribute when writing keychain items, the system automatically populates that attribute with the default keychain group, and therefore the order in which you specify your keychain groups matters.
 

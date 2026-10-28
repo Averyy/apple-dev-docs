@@ -25,11 +25,11 @@ func CTFramesetterSuggestFrameSizeWithConstraints(_ framesetter: CTFramesetter, 
 extern CGSize CTFramesetterSuggestFrameSizeWithConstraints(CTFramesetterRef framesetter, CFRange stringRange, CFDictionaryRef frameAttributes, CGSize constraints, CFRange *fitRange);
 ```
 
-#### Return Value
+## Return Value
 
 The actual dimensions for the given string range and constraints.
 
-#### Discussion
+## Discussion
 
 This function can be used to determine how much space is needed to display a string, optionally by constraining the space along either dimension.
 

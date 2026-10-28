@@ -24,7 +24,7 @@ var spinRange: CGFloat { get set }
 @property CGFloat spinRange;
 ```
 
-#### Discussion
+## Discussion
 
 The range specifies the mean amount the [`spin`](./spin.md) value can vary over the cell’s lifetime.
 

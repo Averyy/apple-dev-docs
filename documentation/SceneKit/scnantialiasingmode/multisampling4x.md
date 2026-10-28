@@ -25,7 +25,7 @@ case multisampling4X
 SCNAntialiasingModeMultisampling4X
 ```
 
-#### Discussion
+## Discussion
 
 This is the default antialiasing mode in macOS.
 

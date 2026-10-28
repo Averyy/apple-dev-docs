@@ -21,7 +21,7 @@ var ALAssetsLibraryWriteDataEncodingError: Int { get }
 ALAssetsLibraryWriteDataEncodingError
 ```
 
-#### Discussion
+## Discussion
 
 This error may be returned in the completion block for `ALAssetsLibrary/writeVideoAtPath(toSavedPhotosAlbum:completionBlock:)` and `ALAssetsLibrary/writeImage(toSavedPhotosAlbum:orientation:completionBlock:)` as well as the completion selector for [`UIImageWriteToSavedPhotosAlbum(_:_:_:_:)`](../UIKit/uiimagewritetosavedphotosalbum%28_,_,_,_%29.md) and [`UISaveVideoAtPathToSavedPhotosAlbum(_:_:_:_:)`](../UIKit/uisavevideoatpathtosavedphotosalbum%28_,_,_,_%29.md).
 

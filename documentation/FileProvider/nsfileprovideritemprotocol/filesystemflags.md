@@ -23,7 +23,7 @@ optional var fileSystemFlags: NSFileProviderFileSystemFlags { get }
 @property (nonatomic, readonly) NSFileProviderFileSystemFlags fileSystemFlags;
 ```
 
-#### Discussion
+## Discussion
 
 The flags define the on-disk properties of the item. The system modifies the item’s appearance based on these flags.
 

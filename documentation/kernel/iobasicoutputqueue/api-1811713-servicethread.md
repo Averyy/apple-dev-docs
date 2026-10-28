@@ -12,7 +12,7 @@ virtual void serviceThread(
  void *param);
 ```
 
-#### Overview
+## Overview
 
 This method is called by the scheduled service thread when it starts to run. The service thread is scheduled by service() to restart a stalled queue when the kServiceAsync option is given.
 

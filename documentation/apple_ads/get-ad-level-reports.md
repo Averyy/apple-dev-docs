@@ -16,7 +16,7 @@ Fetches ad performance data within a campaign.
 - [Apple Ads Campaign Management API 4](./apple-search-ads-campaign-management-api-4.md)
 - [Apple Ads Campaign Management API 5](./apple-search-ads-campaign-management-api-5.md)
 
-#### Discussion
+## Discussion
 
 Use this endpoint to return performance data for `ads` within your campaigns. The `orderBy` [`Selector`](./selector.md) is required in ad-level report requests. See [`ReportingAd`](./reportingad.md) to identify fields you can use with `orderBy`. To filter results, use selector [`Condition`](./condition.md) operators and field values that the `ReportingAd` object specifies. You can only perform `GroupBy` on the [`CountryOrRegion`](./countryorregion.md) field. See [`ReportingRequest`](./reportingrequest.md).
 
@@ -24,7 +24,7 @@ Historical ad-level metrics for the `APPSTORE_SEARCH_TAB` placement from before 
 
 You can map your campaign installations by `adId` through the [AdServices](../AdServices/AdServices.md) attribution framework.
 
-##### Payload example: Get ad-level reports
+### Payload example: Get ad-level reports
 
 **Request**:
 

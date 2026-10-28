@@ -25,7 +25,7 @@ func deleteCharacters(in range: NSRange)
 - (void) deleteCharactersInRange:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 This method treats the length of the string as a valid range value that returns an empty string.
 

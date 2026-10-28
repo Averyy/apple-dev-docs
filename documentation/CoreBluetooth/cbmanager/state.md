@@ -25,7 +25,7 @@ var state: CBManagerState { get }
 @property (nonatomic, assign, readonly) CBManagerState state;
 ```
 
-#### Discussion
+## Discussion
 
 This state is initially set to [`CBManagerState.unknown`](../cbmanagerstate/unknown.md). When the state updates, the manager calls its delegate’s [`centralManagerDidUpdateState(_:)`](../cbcentralmanagerdelegate/centralmanagerdidupdatestate%28_%29.md) method.
 

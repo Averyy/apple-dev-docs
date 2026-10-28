@@ -24,7 +24,7 @@ convenience init(title: String, style: UIPreviewAction.Style, handler: @escaping
 + (instancetype) actionWithTitle:(NSString *) title style:(UIPreviewActionStyle) style handler:(void (^)(UIPreviewAction *action, UIViewController *previewViewController)) handler;
 ```
 
-#### Return Value
+## Return Value
 
 A newly-created peek quick action.
 

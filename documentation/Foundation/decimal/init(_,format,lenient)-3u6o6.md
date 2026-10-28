@@ -21,7 +21,7 @@ Creates and initializes a percentage decimal by parsing a string according to th
 init(_ value: String, format: Decimal.FormatStyle.Percent, lenient: Bool = true) throws
 ```
 
-#### Discussion
+## Discussion
 
 This initializer throws an error if the format style fails to parse the string into a decimal value.
 

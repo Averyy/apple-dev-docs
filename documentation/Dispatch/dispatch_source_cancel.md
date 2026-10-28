@@ -21,7 +21,7 @@ Asynchronously cancels the dispatch source, preventing any further invocation of
 extern void dispatch_source_cancel(dispatch_source_t source);
 ```
 
-#### Discussion
+## Discussion
 
 Cancellation prevents any further invocation of the event handler block for the specified dispatch source, but does not interrupt an event handler block that is already in progress. The optional cancellation handler is submitted to the target queue once the event handler block has been completed.
 

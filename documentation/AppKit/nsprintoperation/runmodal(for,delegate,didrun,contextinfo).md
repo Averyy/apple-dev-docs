@@ -19,7 +19,7 @@ func runModal(for docWindow: NSWindow, delegate: Any?, didRun didRunSelector: Se
 - (void) runOperationModalForWindow:(NSWindow *) docWindow delegate:(id) delegate didRunSelector:(SEL) didRunSelector contextInfo:(void *) contextInfo;
 ```
 
-#### Discussion
+## Discussion
 
 The method specified by the  `didRunSelector` parameter must have the following signature:
 

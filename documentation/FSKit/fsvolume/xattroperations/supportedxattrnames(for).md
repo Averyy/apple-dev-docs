@@ -19,7 +19,7 @@ optional func supportedXattrNames(for item: FSItem) -> [FSFileName]
 - (NSArray<FSFileName *> *) supportedXattrNamesForItem:(FSItem *) item;
 ```
 
-#### Discussion
+## Discussion
 
 If `item` supports no extended attributes, this method returns `nil`.
 

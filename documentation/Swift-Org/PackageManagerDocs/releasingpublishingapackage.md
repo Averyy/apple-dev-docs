@@ -10,7 +10,7 @@ framework: "Swift-Org/PackageManagerDocs"
 
 Share a specific version of your package.
 
-#### Overview
+## Overview
 
 Swift Package Manager expects a package to be remotely shared as a single Git repository, with a tag that conforms to a full semantic version, and a `Package.swift` manifest in the root of the repository.
 

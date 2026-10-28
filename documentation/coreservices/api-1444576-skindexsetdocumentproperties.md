@@ -19,13 +19,13 @@ func SKIndexSetDocumentProperties(_ inIndex: SKIndex!, _ inDocument: SKDocument!
 void SKIndexSetDocumentProperties(SKIndexRef inIndex, SKDocumentRef inDocument, CFDictionaryRef inProperties);
 ```
 
-#### Discussion
+## Discussion
 
 Search Kit document URL objects (of type [`SKDocument`](./skdocument.md)) can have an optional, application-defined properties dictionary to hold any information you’d like to associate with the document represented by a document URL object—such as timestamp, keywords, and so on.
 
 Use `SKIndexSetDocumentProperties` to persistently set application-defined properties for a document URL object in an index. This function replaces a document URL object’s existing properties dictionary with the new one. To obtain a copy of a document URL object’s properties dictionary, use [`SKIndexCopyDocumentProperties(_:_:)`](./api-1449500-skindexcopydocumentproperties.md).
 
-##### Special Considerations
+### Special Considerations
 
 You must set any desired properties on a document URL object *after* adding the document URL object to an index. Adding a document URL object to an index clears the object’s preexisting properties.
 

@@ -20,11 +20,11 @@ Creates an image by using the name, configuration, and variable value you specif
 convenience init?(named name: String, in bundle: Bundle? = nil, variableValue: Double, configuration: UIImage.Configuration? = nil)
 ```
 
-#### Return Value
+## Return Value
 
 An object that contains the image variant that matches the configuration data; otherwise, `nil` if the system didn’t find a suitable image.
 
-#### Discussion
+## Discussion
 
 When searching the asset catalog, this method prefers an asset containing a symbol image over an asset with the same name containing a bitmap image. Because the system supports symbol images in iOS 13 or later, you may include both types of assets in the same asset catalog. In iOS 12 or earlier, the system automatically chooses the bitmap image.
 

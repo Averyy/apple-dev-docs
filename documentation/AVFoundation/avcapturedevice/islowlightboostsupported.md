@@ -22,7 +22,7 @@ var isLowLightBoostSupported: Bool { get }
 @property (nonatomic, readonly, getter=isLowLightBoostSupported) BOOL lowLightBoostSupported;
 ```
 
-#### Discussion
+## Discussion
 
 You can set the capture device’s [`automaticallyEnablesLowLightBoostWhenAvailable`](./automaticallyenableslowlightboostwhenavailable.md) property only if this property is [`true`](../../Swift/true.md).
 

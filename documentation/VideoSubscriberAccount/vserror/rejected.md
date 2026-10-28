@@ -19,7 +19,7 @@ The system rejected the request.
 static var rejected: VSError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Only TV provider apps can use this error code.
 

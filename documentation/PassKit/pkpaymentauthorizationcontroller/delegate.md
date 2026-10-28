@@ -24,7 +24,7 @@ weak var delegate: (any PKPaymentAuthorizationControllerDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<PKPaymentAuthorizationControllerDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate is called at various points in the interaction, such as when the user selects shipping or billing information and when the user authorizes the payment request.
 

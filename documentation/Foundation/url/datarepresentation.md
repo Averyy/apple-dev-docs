@@ -21,7 +21,7 @@ The data representation of the URL’s relativeString.
 var dataRepresentation: Data { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the URL was initialized with `init?(dataRepresentation:relativeTo:isAbsolute:)`, the data representation returned are the same bytes as those used at initialization; otherwise, the data representation returned are the bytes of the `relativeString` encoded with UTF8 string encoding.
 

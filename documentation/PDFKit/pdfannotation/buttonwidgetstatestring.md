@@ -28,7 +28,7 @@ var buttonWidgetStateString: String { get set }
 
 - [Adding Widgets to a PDF Document](../adding-widgets-to-a-pdf-document.md)
 
-#### Discussion
+## Discussion
 
 The default value is `Yes`.
 

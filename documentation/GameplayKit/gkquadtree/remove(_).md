@@ -24,11 +24,11 @@ func remove(_ element: ElementType) -> Bool
 - (BOOL) removeElement:(ElementType) element;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the object was removed from the tree. [`false`](../../Swift/false.md) if the specified object is not in the tree.
 
-#### Discussion
+## Discussion
 
 The tree does not directly reference its elements—quadtrees are optimized to search for elements based on spatial positions—so this method must exhaustively search the entire tree to find the object to remove. For quicker removal, keep a reference to the [`GKQuadtreeNode`](../gkquadtreenode.md) object returned when you add an object to the tree, and call the [`remove(_:using:)`](./remove%28_,using%29.md) method instead.
 

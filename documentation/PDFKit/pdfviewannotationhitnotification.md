@@ -20,7 +20,7 @@ A notification posted when the user clicks on an annotation.
 extern NSNotificationName const PDFViewAnnotationHitNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the `PDFView` object itself.
 

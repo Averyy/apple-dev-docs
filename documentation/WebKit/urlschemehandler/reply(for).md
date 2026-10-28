@@ -20,7 +20,7 @@ Produces a sequence of intermixed responses and data to load a resource for a gi
 func reply(for request: URLRequest) -> Self.TaskSequence
 ```
 
-#### Discussion
+## Discussion
 
 Upon receiving the request, determine the size of the resource and add a [`URLSchemeTaskResult.response(_:)`](../urlschemetaskresult/response%28_%29.md) value to the async sequence. Providing a response mirrors the behavior that a web server performs when it receives a request.
 

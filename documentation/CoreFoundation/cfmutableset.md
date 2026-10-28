@@ -23,7 +23,7 @@ class CFMutableSet
 typedef struct __CFSet * CFMutableSetRef;
 ```
 
-#### Overview
+## Overview
 
 CFMutableSet manages dynamic sets. The basic interface for managing sets is provided by [`CFSet`](./cfset.md). CFMutableSet adds functions to modify the contents of a set.
 

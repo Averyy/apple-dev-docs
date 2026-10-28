@@ -25,7 +25,7 @@ func CMTextFormatDescriptionCopyAsBigEndianTextDescriptionBlockBuffer(allocator:
 extern OSStatus CMTextFormatDescriptionCopyAsBigEndianTextDescriptionBlockBuffer(CFAllocatorRef allocator, CMTextFormatDescriptionRef textFormatDescription, CMTextDescriptionFlavor flavor, CMBlockBufferRef*blockBufferOut);
 ```
 
-#### Discussion
+## Discussion
 
 On return, the caller owns the returned CMBlockBuffer, and must release it when done with it.
 

@@ -25,7 +25,7 @@ class NSMergeConflict
 @interface NSMergeConflict : NSObject
 ```
 
-#### Overview
+## Overview
 
 A conflict can occur in two situations:
 

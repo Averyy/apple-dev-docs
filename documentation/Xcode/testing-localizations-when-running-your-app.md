@@ -5,11 +5,11 @@
 
 Run your app in each language and region you support to thoroughly test your app.
 
-#### Overview
+## Overview
 
 After you translate strings and adapt resources for the different cultures and regions, test each localization in your app by choosing the language and region in the Run scheme.
 
-##### Select a language and region in the scheme
+### Select a language and region in the scheme
 
 To test your app in a specific language and region:
 

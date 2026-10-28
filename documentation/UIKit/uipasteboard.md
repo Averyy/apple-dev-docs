@@ -22,7 +22,7 @@ class UIPasteboard
 @interface UIPasteboard : NSObject
 ```
 
-#### Overview
+## Overview
 
 For sharing data with any other app, use the systemwide general pasteboard. For sharing data with another app from your team — that has the same team ID as the app to share from — configure an App Group. For more information about configuring an App Group, see [Configuring app groups](../Xcode/configuring-app-groups.md).
 
@@ -30,13 +30,13 @@ In typical usage, an object in your app writes data to a pasteboard when the use
 
 > ❗ **Important**:  Starting in iOS 14, the system notifies the user when an app gets general pasteboard content that originates in a different app without *user intent*. The system determines user intent based on user interactions, such as tapping a system-provided control or pressing Command-V. Use the properties and methods below to determine whether pasteboard items match various patterns, such as web search terms, URLs, or numbers, without notifying the user.
 
-##### The general pasteboard and named pasteboards
+### The general pasteboard and named pasteboards
 
 The system identifies the systemwide general pasteboard with the [`general`](./uipasteboard/name-swift.struct/general.md) pasteboard name, and you can use it for any type of data. Obtain the general pasteboard from the [`general`](./uipasteboard/general.md) shared system pasteboard object.
 
 You can create named pasteboards with the class methods [`init(name:create:)`](./uipasteboard/init%28name,create%29.md) and [`withUniqueName()`](./uipasteboard/withuniquename%28%29.md) for sharing data within your app, and from your app to other apps that have the same Team ID.
 
-##### Using pasteboards
+### Using pasteboards
 
 The [`UIPasteboard`](./uipasteboard.md) class provides methods for reading and writing individual pasteboard items, as well as methods for reading and writing multiple pasteboard items at once. For more information, see [Getting and setting pasteboard items](./uipasteboard.md#Getting-and-setting-pasteboard-items) in the topic groups below. The data to write to a pasteboard can be in one of the following forms:
 
@@ -67,7 +67,7 @@ Use the following properties to avoid user notifications and alerts when the sys
 
 The system notifies the user when you access properties or call methods that pull data from the pasteboard if the system doesn’t determine that the user intends to access that data.
 
-##### Pasteboard items and representation types
+### Pasteboard items and representation types
 
 When you write an object to a pasteboard, the pasteboard stores it as a *pasteboard item*. A pasteboard item consists of one or more key-value pairs in which the key identifies the representation type (sometimes called a *pasteboard type*) of the value.
 
@@ -81,14 +81,14 @@ You can provide flexibility for data sharing by providing multiple representatio
 
 For more about representation types, read the discussion for the [`types`](./uipasteboard/types.md) instance method.
 
-##### Sharing pasteboards between devices
+### Sharing pasteboards between devices
 
 When a user signs into iCloud, the general pasteboard automatically transfers its contents to nearby devices that use the same iCloud account. You can control Handoff behavior when writing contents to the general pasteboard, and can set an expiration for items, using the [`setItemProviders(_:localOnly:expirationDate:)`](./uipasteboard/setitemproviders%28_,localonly,expirationdate%29.md), [`setObjects(_:localOnly:expirationDate:)`](./uipasteboard/setobjects%28_,localonly,expirationdate%29-3h3iz.md), or [`setItems(_:options:)`](./uipasteboard/setitems%28_,options%29.md) methods, as follows:
 
 - To exclude a pasteboard from Handoff, specify [`false`](../Swift/false.md) for the `localOnly` parameter, or call the [`setItems(_:options:)`](./uipasteboard/setitems%28_,options%29.md) method with the [`localOnly`](./uipasteboard/optionskey/localonly.md) option.
 - To indicate an expiration time and date for copied data, provide the `expirationDate` parameter, or call the [`setItems(_:options:)`](./uipasteboard/setitems%28_,options%29.md) method with the [`expirationDate`](./uipasteboard/optionskey/expirationdate.md) option. At the time and date that you set, the system removes the pasteboard items from the pasteboard.
 
-##### Using pasteboards with other objects
+### Using pasteboards with other objects
 
 Although the [`UIPasteboard`](./uipasteboard.md) class is central to copy, paste, and duplicate operations, you can employ protocols and instances of other UIKit classes in these operations as well, such as the following:
 

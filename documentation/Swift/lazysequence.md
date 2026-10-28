@@ -22,7 +22,7 @@ A sequence containing the same elements as a `Base` sequence, but on which some 
 struct LazySequence<Base> where Base : Sequence
 ```
 
-#### Overview
+## Overview
 
 - See also: `LazySequenceProtocol`
 

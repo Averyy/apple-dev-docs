@@ -19,11 +19,11 @@ Passes a multi-image frame to a compression session for encoding.
 extern OSStatus VTCompressionSessionEncodeMultiImageFrame(VTCompressionSessionRef session, CMTaggedBufferGroupRef taggedBufferGroup, CMTime presentationTimeStamp, CMTime duration, CFDictionaryRef frameProperties, void *sourceFrameRefcon, VTEncodeInfoFlags *infoFlagsOut);
 ```
 
-#### Return Value
+## Return Value
 
 An `OSStatus` value that indicates the result of the operation.
 
-#### Discussion
+## Discussion
 
 The system doesn’t guarantee that encoded frames be output before the function returns. The session and encoder retain the image buffer as long as necessary.
 

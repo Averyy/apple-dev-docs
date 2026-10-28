@@ -25,7 +25,7 @@ func CTLineGetTypographicBounds(_ line: CTLine, _ ascent: UnsafeMutablePointer<C
 extern double CTLineGetTypographicBounds(CTLineRef line, CGFloat *ascent, CGFloat *descent, CGFloat *leading);
 ```
 
-#### Return Value
+## Return Value
 
 The typographic width of the line. If the line is invalid, this function returns `0`.
 

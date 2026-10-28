@@ -5,13 +5,13 @@
 
 Inject a script that you write for a Safari app extension into a webpage.
 
-#### Overview
+## Overview
 
 After you write a script that can read and modify browser content, you need to add it to your Safari app extension and apply it to webpages, where it can perform the defined actions and change the appearance and behavior of the webpages.
 
 A script can apply to a single webpage, all webpages, or only some webpages — for example, webpages from certain domains. To inject your script, you specify either `Some` or `All` website access for your app extension. In Safari 17 or later, users also need to grant your extension access to a website. For more information, see [Adjusting website access permissions](./adjusting-website-access-permissions.md). For more information about injected scripts, see [Using injected style sheets and scripts](./using-injected-style-sheets-and-scripts.md).
 
-##### Add a script
+### Add a script
 
 After specifying website access, add the script to your Safari app extension.
 
@@ -23,7 +23,7 @@ After specifying website access, add the script to your Safari app extension.
 
 If your app extension specifies multiple scripts to inject into the webpage, the scripts execute in the order in which they appear in the `Info.plist` file.
 
-##### Access resources within your app extension’s bundle
+### Access resources within your app extension’s bundle
 
 To access the resources in your app extension’s bundle from within your scripts, create a URL at runtime that references the resource relative to the root of the app extension’s bundle. The `safari.extension.baseURI` property specifies the location of the bundle’s resource directory.
 
@@ -34,7 +34,7 @@ var newElement = document.createElement("img");
 newElement.src = safari.extension.baseURI + "myDog.jpeg";
 ```
 
-##### Execute your code after the webpage loads
+### Execute your code after the webpage loads
 
 The injected scripts execute before the webpage fully loads, so you can take action as the system adds resources to the webpage. During that time, `document.body` is `null`. To take action after the document loads, listen for the `DOMContentLoaded` event. The code example below registers a document event handler to call after the content loads:
 
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 ```
 
-##### Add an element to the webpage
+### Add an element to the webpage
 
 The example code below injects a new element into the webpage after the webpage loads. This example uses a resource stored in the bundle and shows how to register the document event handler:
 

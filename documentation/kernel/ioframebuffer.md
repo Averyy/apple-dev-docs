@@ -17,7 +17,7 @@ The base class for graphics devices to be made available as part of the desktop.
 class IOFramebuffer : IOGraphicsDevice
 ```
 
-#### Overview
+## Overview
 
 The IOFramebuffer base class defines APIs used to publish a linear framebuffer device. Device driver writers should subclass this class to provide a X native driver. macOS will also utilize 'ndrv' drivers via a subclass of IOFramebuffer IONDRVFramebuffer that does not require device driver writers to provide a X native driver.
 

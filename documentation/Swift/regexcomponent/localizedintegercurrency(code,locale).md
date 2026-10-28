@@ -23,11 +23,11 @@ static func localizedIntegerCurrency(code: Locale.Currency, locale: Locale) -> S
 
 Available when `Self` is `IntegerFormatStyle<Int>.Currency`.
 
-#### Return Value
+## Return Value
 
 A `RegexComponent` that matches localized currency substrings as [`Int`](../int.md) instances.
 
-#### Discussion
+## Discussion
 
 This method matches currency substrings in accordance with the provided currency code and locale. For example, the currency code `USD` matches U.S. dollars, which use the symbol `$`, and `JPY` matches Japanese yen, which use the symbol `¥`. The locale determines formatting conventions for number separators in the currency value. The regex uses both of these to match currency substrings.
 

@@ -25,7 +25,7 @@ var domainLookupEndDate: Date? { get }
 @property (copy, readonly, nullable) NSDate * domainLookupEndDate;
 ```
 
-#### Discussion
+## Discussion
 
 This value will be `nil` if a persistent connection was used, or if the resource was retrieved from local resources.
 

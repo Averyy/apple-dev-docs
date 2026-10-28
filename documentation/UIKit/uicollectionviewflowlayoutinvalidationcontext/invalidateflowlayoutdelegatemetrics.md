@@ -23,7 +23,7 @@ var invalidateFlowLayoutDelegateMetrics: Bool { get set }
 @property (nonatomic) BOOL invalidateFlowLayoutDelegateMetrics;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`false`](../../Swift/false.md). Set this property to [`true`](../../Swift/true.md) if you’re invalidating the layout because of changes to the size of any items.
 

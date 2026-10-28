@@ -23,11 +23,11 @@ var isInputGainSettable: Bool { get }
 @property (readonly, getter=isInputGainSettable) BOOL inputGainSettable;
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`true`](../../Swift/true.md) if the device allows input gain to be changed, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Not all devices support variable gain; check this property before attempting to set the input gain.
 

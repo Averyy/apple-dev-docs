@@ -5,13 +5,13 @@
 
 Construct virtual objects to use in your AR experiences.
 
-#### Overview
+## Overview
 
 In iOS 17 and later, and macOS 12 and later, to create a 3D object from a series of photographs, submit the images to RealityKit using a [`PhotogrammetrySession`](./photogrammetrysession.md), register to receive status updates, and start the session. The completed process produces a 3D representation of the photographed object that you can use in your app or export to other software like Reality Composer Pro.
 
 For more information on capturing high-quality images for photogrammetry, see [Capturing photographs for RealityKit Object Capture](./capturing-photographs-for-realitykit-object-capture.md).
 
-##### Check for availability
+### Check for availability
 
 RealityKit Object Capture is only available on Mac computers that meet the minimum requirements for performing object reconstruction, including a GPU with at least 4 GB of RAM and ray tracing support. It is also available on select iOS devices with LiDAR capabilities.
 
@@ -23,7 +23,7 @@ guard PhotogrammetrySession.isSupported else {
 }
 ```
 
-##### Create the photogrammetry session
+### Create the photogrammetry session
 
 Begin by creating a [`PhotogrammetrySession.Request`](./photogrammetrysession/request.md) with a URL that points to the desired output location for the generated USDZ file and the desired level of detail for the model. Next, use that request, along with a URL pointing to the directory containing your images, to create the [`PhotogrammetrySession`](./photogrammetrysession.md) object.
 
@@ -36,7 +36,7 @@ guard let session = try PhotogrammetrySession(input: inputFolderUrl) else {
     return } 
 ```
 
-##### Listen for updates and begin creation
+### Listen for updates and begin creation
 
 RealityKit uses an [`AsyncSequence`](../Swift/asyncsequence.md) of [`PhotogrammetrySession.Output`](./photogrammetrysession/output.md) objects to deliver status updates about the object-creation process in the background. To update your app’s UI or to take other actions as a result of these status updates, create an `async` task and use a `for`-`try`-`await` loop on [`outputs`](./photogrammetrysession/outputs-swift.property.md).
 
@@ -81,7 +81,7 @@ Once you’ve created a session and registered to receive status updates, start 
 session.process(requests: [request])
 ```
 
-##### Compensate for challenging images
+### Compensate for challenging images
 
 RealityKit’s default photogrammetry settings work for the vast majority of input images. If, however, you have image sets that are low contrast or lack many identifying landmarks, you can override the default values to compensate by creating a [`PhotogrammetrySession.Configuration`](./photogrammetrysession/configuration-swift.struct.md) object and passing it into the initializer when you create your [`PhotogrammetrySession`](./photogrammetrysession.md).
 

@@ -19,7 +19,7 @@ var isEnabled: Bool { get set }
 @property (getter=isEnabled) BOOL enabled;
 ```
 
-#### Discussion
+## Discussion
 
 The receiver continues to reflect the font of the selection for cooperating text objects regardless of this setting.
 

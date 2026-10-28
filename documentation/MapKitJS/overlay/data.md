@@ -16,7 +16,7 @@ get data(): {};
 set data(data: {});
 ```
 
-#### Discussion
+## Discussion
 
 You choose the data to assign to the overlay. It can be any JavaScript value.
 

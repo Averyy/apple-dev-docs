@@ -20,11 +20,11 @@ func addAngleSlider(withName name: String, parameterID: UInt32, defaultDegrees: 
 - (BOOL) addAngleSliderWithName:(NSString *) name parameterID:(UInt32) parameterID defaultDegrees:(double) defaultDegrees parameterMinDegrees:(double) minDegrees parameterMaxDegrees:(double) maxDegrees parameterFlags:(FxParameterFlags) flags;
 ```
 
-#### Return Value
+## Return Value
 
 Returns `YES` if the application successfully creates an angle slider parameter; `NO` otherwise.
 
-#### Discussion
+## Discussion
 
 The min, max, and default values are expressed in degrees. Use [`getFloatValue(_:fromParameter:at:)`](../fxparameterretrievalapi_v6/getfloatvalue%28_,fromparameter,at%29.md) to retrieve the angle parameter value in radians.
 

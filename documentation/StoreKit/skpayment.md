@@ -32,7 +32,7 @@ class SKPayment
 - [Promoting Apple In-App Purchases](./promoting-in-app-purchases.md)
 - [Testing a payment request](./testing-a-payment-request.md)
 
-#### Overview
+## Overview
 
 A payment object identifies a product and the quantity of those items the user would like to purchase.
 

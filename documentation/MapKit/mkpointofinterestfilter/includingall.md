@@ -25,7 +25,7 @@ class var includingAll: MKPointOfInterestFilter { get }
 @property (class, nonatomic, readonly) MKPointOfInterestFilter * filterIncludingAllCategories;
 ```
 
-#### Discussion
+## Discussion
 
 You can use [`includingAll`](./includingall.md)  to include all points of interest in your map view without listing all the categories individually.
 

@@ -17,7 +17,7 @@ Variance-normalized (KVarN-inspired) cache compression settings.
 struct VarianceNormalizedKVCacheConfiguration
 ```
 
-#### Overview
+## Overview
 
 Completed tiles are rotated, dual-axis variance-normalized, and quantized asymmetrically (keys and values may use different bit widths). The intended use case is memory-constrained long-context decoding rather than latency- sensitive generation.
 

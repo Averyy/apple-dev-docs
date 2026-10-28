@@ -9,7 +9,7 @@ Authenticates a user with a two-step authentication protocol.
 **Availability**:
 - macOS 10.7+
 
-#### Discussion
+## Discussion
 
 A `UserAuthenticate` handshake usually consists of two transactions between the client and the server. Upon receiving the first request from the client, the server needs to respond with a `200` status code and a dictionary containing a `DigestChallenge` key (string).
 
@@ -19,7 +19,7 @@ If the server rejects the `DigestResponse` value because of an invalid password,
 
 The next time the user logs in, the client sends a new request and the server can optionally return `410` again. The `AuthToken` remains valid until the next time the client sends a `UserAuthenticate` request. The client initiates a handshake each time a mobile or network user logs in.
 
-##### Check-in availability
+### Check-in availability
 
 |  |  |
 | --- | --- |

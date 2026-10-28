@@ -25,7 +25,7 @@ func entities(forConfigurationName configuration: String?) -> [NSEntityDescripti
 - (NSArray<NSEntityDescription *> *) entitiesForConfiguration:(NSString *) configuration;
 ```
 
-#### Return Value
+## Return Value
 
 An array containing the entities of the receiver for the configuration specified by `configuration`.
 

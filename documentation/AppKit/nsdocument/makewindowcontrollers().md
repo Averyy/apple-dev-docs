@@ -19,7 +19,7 @@ func makeWindowControllers()
 - (void) makeWindowControllers;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses may override this method to create the initial window controller(s) for the document.
 

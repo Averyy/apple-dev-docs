@@ -18,7 +18,7 @@ Posted when the audio playback volume for the music player has changed.
 static let MPMusicPlayerControllerVolumeDidChange: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The object associated with the notification is the music player whose playback volume changed. The notification has no `userInfo` dictionary.
 

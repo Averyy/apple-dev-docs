@@ -20,7 +20,7 @@ func attributedString() -> NSAttributedString!
 - (NSAttributedString *) attributedString;
 ```
 
-#### Return Value
+## Return Value
 
 An attributed string containing the entire content of the web document.
 

@@ -23,7 +23,7 @@ var bounds: CGRect { get }
 @property (nonatomic, readonly) CGRect bounds;
 ```
 
-#### Discussion
+## Discussion
 
 The rectangle in this property always matches the app’s interface orientation. For apps that support all interface orientations, the value in this property can change when the user rotates the device between portrait and landscape modes.
 

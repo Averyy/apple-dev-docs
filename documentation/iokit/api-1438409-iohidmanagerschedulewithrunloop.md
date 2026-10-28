@@ -16,7 +16,7 @@ Schedules HID manager with run loop.
 void IOHIDManagerScheduleWithRunLoop(IOHIDManagerRef manager, CFRunLoopRef runLoop, CFStringRef runLoopMode);
 ```
 
-#### Discussion
+## Discussion
 
 Formally associates manager with client's run loop. Scheduling this device with the run loop is necessary before making use of any asynchronous APIs. This will propagate to current and future devices that are enumerated.
 

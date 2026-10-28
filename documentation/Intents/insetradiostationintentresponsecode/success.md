@@ -24,7 +24,7 @@ case success
 INSetRadioStationIntentResponseCodeSuccess
 ```
 
-#### Discussion
+## Discussion
 
 Use this code if your app successfully changed the radio station to the new value.
 

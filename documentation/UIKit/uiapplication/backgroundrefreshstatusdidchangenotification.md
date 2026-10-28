@@ -24,7 +24,7 @@ class let backgroundRefreshStatusDidChangeNotification: NSNotification.Name
 extern NSNotificationName const UIApplicationBackgroundRefreshStatusDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The system sends this notification when the [`backgroundRefreshStatus`](./backgroundrefreshstatus.md) property of the app object changes. That property can change in response to the user disabling multitasking support for the app. The `object` of the notification is the `UIApplication` object. There is no `userInfo` dictionary.
 

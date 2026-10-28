@@ -19,7 +19,7 @@ Placement for commands that manipulate and transform the styles applied to text 
 static let textFormatting: CommandGroupPlacement
 ```
 
-#### Discussion
+## Discussion
 
 By default, this group includes the following commands in macOS:
 

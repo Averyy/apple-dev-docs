@@ -13,7 +13,7 @@ IOReturn ( *DequeueOutputEntry)(
    IOStreamBufferQueueEntry *entry );
 ```
 
-#### Return Value
+## Return Value
 
 The IOStreamBufferID of the next available buffer, or kInvalidIOStreamBufferID if no buffer is in the queue.
 

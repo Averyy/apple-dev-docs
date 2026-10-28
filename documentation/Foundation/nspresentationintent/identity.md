@@ -21,7 +21,7 @@ A unique identifier for the intent in the document.
 @property (readonly) NSInteger identity;
 ```
 
-#### Discussion
+## Discussion
 
 Use the value in this property to disambiguate attributes that apply to contiguous text. For example, you might use it to differentiate between two headers in a row with the same level.
 

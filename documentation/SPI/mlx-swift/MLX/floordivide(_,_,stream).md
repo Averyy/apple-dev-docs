@@ -21,7 +21,7 @@ func floorDivide(_ array: MLXArray, _ other: some ScalarOrArray, stream: StreamO
 
 - [Converting From Python](./converting-python.md)
 
-#### Discussion
+## Discussion
 
 Divide two arrays with [Numpy Style Broadcasting](./broadcasting.md).
 
@@ -36,7 +36,7 @@ let b = MLXArray([4, 5, 6])
 let r = a.floorDivide(b)
 ```
 
-##### See Also
+### See Also
 
 - [Arithmetic](./arithmetic.md)
 - [`floor(_:stream:)`](./floor%28_,stream%29.md)

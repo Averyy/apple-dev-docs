@@ -21,9 +21,9 @@ The status item that reports the device’s management enrollment type.
 object StatusMDMEnrollmentType
 ```
 
-#### Discussion
+## Discussion
 
-##### Status item availability
+### Status item availability
 
 |  |  |
 | --- | --- |
@@ -34,7 +34,7 @@ object StatusMDMEnrollmentType
 | Allowed in system scope | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 | Allowed in user scope | macOS, Shared iPad |
 
-##### Status item example
+### Status item example
 
 ```json
 {

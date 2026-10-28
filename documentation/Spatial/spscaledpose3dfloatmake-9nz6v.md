@@ -19,11 +19,11 @@
 static SPScaledPose3DFloat SPScaledPose3DFloatMake(SPScaledPose3D pose);
 ```
 
-#### Return Value
+## Return Value
 
 A new pose.
 
-#### Discussion
+## Discussion
 
 Returns a single-precision scaled pose from a double-precision scaled pose.
 

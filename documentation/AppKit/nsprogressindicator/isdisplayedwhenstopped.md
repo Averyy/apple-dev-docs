@@ -19,7 +19,7 @@ var isDisplayedWhenStopped: Bool { get set }
 @property (getter=isDisplayedWhenStopped) BOOL displayedWhenStopped;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`false`](../../Swift/false.md), the progress indicator is hidden when it isn’t animating. The default value of this property is [`true`](../../Swift/true.md).
 

@@ -21,7 +21,7 @@ var image: UIImage? { get }
 @property (nonatomic, strong, readonly, nullable) UIImage * image;
 ```
 
-#### Discussion
+## Discussion
 
 For the animated images, the system enforces a minimum cycle duration of 0.3 seconds, and a maximum cycle duration of 5 seconds.
 

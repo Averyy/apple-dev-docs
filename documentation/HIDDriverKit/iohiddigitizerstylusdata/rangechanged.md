@@ -16,7 +16,7 @@ A single-bit Boolean that indicates whether the in-range status changed since th
 uint32_t rangeChanged;
 ```
 
-#### Discussion
+## Discussion
 
 For example, this property is `1` if the value in the [`inRange`](./inrange.md) field changed from `0` to `1` since the last event.
 

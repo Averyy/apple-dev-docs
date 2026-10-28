@@ -23,11 +23,11 @@ func IOObjectCopySuperclassForClass(_ classname: CFString!) -> Unmanaged<CFStrin
 CFStringRef IOObjectCopySuperclassForClass(CFStringRef classname);
 ```
 
-#### Return Value
+## Return Value
 
 The resulting CFStringRef. This should be released by the caller. If there is no superclass, or a valid class name is not passed in, then NULL is returned.
 
-#### Discussion
+## Discussion
 
 This function uses the OSMetaClass system in the kernel to derive the name of the superclass of the class.
 

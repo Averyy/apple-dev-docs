@@ -25,7 +25,7 @@ The default instance of this options type.
 static var `default`: Self { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property provides a default configuration that can be used when no parsing options are specified.
 

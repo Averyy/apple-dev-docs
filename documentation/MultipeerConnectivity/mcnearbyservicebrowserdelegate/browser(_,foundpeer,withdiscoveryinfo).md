@@ -27,7 +27,7 @@ func browser(_ browser: MCNearbyServiceBrowser, foundPeer peerID: MCPeerID, with
 - (void) browser:(MCNearbyServiceBrowser *) browser foundPeer:(MCPeerID *) peerID withDiscoveryInfo:(NSDictionary<NSString *,NSString *> *) info;
 ```
 
-#### Discussion
+## Discussion
 
 The peer ID provided to this delegate method can be used to invite the nearby peer to join a session.
 

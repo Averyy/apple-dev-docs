@@ -21,7 +21,7 @@ Plays the audio resource asynchronously at a specified time.
 @preconcurrency func play(at time: AVAudioTime) throws
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to schedule playback of a sound source to a precise time in the future. This method enables sample-accurate timing for individual sounds and synchronization of multiple audio sources.
 

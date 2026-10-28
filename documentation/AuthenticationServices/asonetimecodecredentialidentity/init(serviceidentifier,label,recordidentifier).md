@@ -21,7 +21,7 @@ init(serviceIdentifier: ASCredentialServiceIdentifier, label: String, recordIden
 - (instancetype) initWithServiceIdentifier:(ASCredentialServiceIdentifier *) serviceIdentifier label:(NSString *) label recordIdentifier:(NSString *) recordIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Initializes an instance of ASOneTimeCodeCredentialIdentity.
 

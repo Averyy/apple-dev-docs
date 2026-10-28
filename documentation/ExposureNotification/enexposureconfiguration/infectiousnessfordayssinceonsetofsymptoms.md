@@ -23,7 +23,7 @@ var infectiousnessForDaysSinceOnsetOfSymptoms: [NSNumber : NSNumber]? { get set 
 @property (nonatomic, copy, readwrite, nullable) NSDictionary<NSNumber *,NSNumber *> * infectiousnessForDaysSinceOnsetOfSymptoms;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This property is available in iOS 12.5, and in iOS 13.7 and later.
 

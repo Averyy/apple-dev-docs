@@ -21,7 +21,7 @@ The maximum number of degrees a rectangle corner angle deviates from 90°.
 var quadratureToleranceDegrees: Float
 ```
 
-#### Discussion
+## Discussion
 
 The property’s value defaults to `30`, but you can set it to any value in the range `[0, 45]`.
 

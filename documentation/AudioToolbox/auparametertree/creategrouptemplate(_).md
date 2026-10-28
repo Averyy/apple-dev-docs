@@ -24,11 +24,11 @@ class func createGroupTemplate(_ children: [AUParameterNode]) -> AUParameterGrou
 + (AUParameterGroup *) createGroupTemplate:(NSArray<AUParameterNode *> *) children;
 ```
 
-#### Return Value
+## Return Value
 
 A newly-initialized parameter group template.
 
-#### Discussion
+## Discussion
 
 Template groups provide a way to construct multiple instances of identical parameter groups, sharing certain immutable state between the instances.
 

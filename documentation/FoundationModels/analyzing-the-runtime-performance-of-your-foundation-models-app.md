@@ -5,7 +5,7 @@
 
 Measure how prompts, responses, and tool calls affect token consumption and response times in Instruments.
 
-#### Overview
+## Overview
 
 The Foundation Models instrument surfaces the prompts your app sends to the model, the tools the model calls, where your app spends time, and how your app consumes tokens — all of which helps you understand what your app is doing and when. Depending on the model provider you use, cost can be a factor to consider.
 
@@ -17,7 +17,7 @@ Use the breakdown of token usage to make informed decisions about cached tokens 
 
 Together, these insights show how your app interacts with the model and help you identify where to apply optimizations.
 
-#### Launch and configure Instruments for recording
+## Launch and configure Instruments for recording
 
 Instruments includes a default template you use when analyzing your app’s interactions with the Foundation Models framework. Start by opening Instruments from your Xcode project:
 
@@ -27,7 +27,7 @@ Instruments includes a default template you use when analyzing your app’s inte
 
 ![A screenshot that shows the Template Selection window with the Foundation Models](https://developer.apple.com/tutorials/images/com.apple.foundationmodels/analyzing-the-runtime-performance-of-your-foundation-models-app-template-selector@2x.png)
 
-#### Record app interactions to gather data
+## Record app interactions to gather data
 
 Before reviewing your app’s performance, check that your development device isn’t under thermal pressure or busy with other work. This helps you ensure that the device is in a good performance state, which can influence your analysis. When you record a run, use your app as normal and focus on interactions that perform requests to the model. Begin gathering data by clicking the Record Trace button in the upper-left corner or by choosing File > Record Trace:
 
@@ -35,7 +35,7 @@ Before reviewing your app’s performance, check that your development device is
 
 Because a recording captures and stores all Foundation Models prompts and responses in an unencrypted form, Instruments presents an alert when you begin recording. The captured data can include sensitive information, so handle trace files accordingly, and use this feature in a manner consistent with the [Apple Developer Program License Agreement](https://developer.apple.com/support/terms/apple-developer-program-license-agreement/). After starting the recording, perform actions that interact with the model, wait for the responses to complete, then click Stop to end recording.
 
-#### Get to know the instrument
+## Get to know the instrument
 
 The primary timeline shows events the instrument measures. The width of each component on the timeline indicates latency.
 
@@ -67,7 +67,7 @@ The Inspector shows a breakdown of duration details:
 - ****Response Duration****: The time spent generating the response, which excludes any input processing.
 - ****Time to First Token****: The wait time before the model starts streaming its response.
 
-#### Monitor token usage
+## Monitor token usage
 
 When you prompt a language model, the model breaks down the input text into small fragments called *tokens*. Each token is typically a word or a piece of a word. The token count includes instructions, prompts, and outputs for a session instance. If your session processes a large number of tokens that exceed the context window, the framework throws the error [`LanguageModelError.contextSizeExceeded(_:)`](./languagemodelerror/contextsizeexceeded%28_%29.md). For more information on managing the context window size, see [Managing the context window](./managing-the-context-window.md).
 
@@ -88,7 +88,7 @@ The Inspector shows a variety of token metrics:
 
 The cache hit rate is the percentage of input tokens the system serves from the prefix cache, and depends on the model provider you use. For more information about caching, see [Optimizing key-value caching in language model sessions](./optimizing-key-value-caching-in-language-model-sessions.md).
 
-#### Reduce token consumption
+## Reduce token consumption
 
 A lower token count improves performance and helps you stay within context limits.
 

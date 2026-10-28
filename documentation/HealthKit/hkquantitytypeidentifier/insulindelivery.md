@@ -24,7 +24,7 @@ static let insulinDelivery: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierInsulinDelivery;
 ```
 
-#### Discussion
+## Discussion
 
 These samples use international units (IU) (described in [`HKUnit`](../hkunit.md)) and measure cumulative values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)).
 

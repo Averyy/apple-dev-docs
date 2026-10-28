@@ -23,7 +23,7 @@ func ranges<C>(of other: C) -> [Range<Self.Index>] where C : Collection, Self.El
 
 Available when `Element` conforms to `Equatable`.
 
-#### Return Value
+## Return Value
 
 A collection of ranges of all occurrences of `other`. Returns an empty collection if `other` is not found.
 

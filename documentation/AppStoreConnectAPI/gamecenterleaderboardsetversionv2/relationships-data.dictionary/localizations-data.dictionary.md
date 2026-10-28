@@ -15,7 +15,7 @@ The data and links that describe the localizations of the Game Center leaderboar
 object GameCenterLeaderboardSetVersionV2.Relationships.Localizations
 ```
 
-#### Overview
+## Overview
 
 - data:
 - links:

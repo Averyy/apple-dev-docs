@@ -13,7 +13,7 @@ void extendedConfigWrite16(
  UInt16data );
 ```
 
-#### Overview
+## Overview
 
 This method writes a 16-bit value to a configuration space register on the device.
 

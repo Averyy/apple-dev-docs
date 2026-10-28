@@ -24,7 +24,7 @@ class UIScrollEdgeElementContainerInteraction
 @interface UIScrollEdgeElementContainerInteraction : NSObject
 ```
 
-#### Overview
+## Overview
 
 In the following example, an interaction is added to a container view of buttons that overlay the bottom edge of a scroll view.
 

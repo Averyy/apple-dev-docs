@@ -22,7 +22,7 @@ func MACaptionAppearanceExecuteBlockForProfileID(_ profileID: CFString, _ aBlock
 extern void MACaptionAppearanceExecuteBlockForProfileID(CFStringRef profileID, void (^aBlock)());
 ```
 
-#### Discussion
+## Discussion
 
 Executes a block of code as if the provided profileID was active. This is used in cases such as a need to get the fonts and colors of a profileID without changing the currently selected profileID.
 

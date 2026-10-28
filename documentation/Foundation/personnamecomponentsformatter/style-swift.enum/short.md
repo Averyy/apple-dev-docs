@@ -23,7 +23,7 @@ case short
 NSPersonNameComponentsFormatterStyleShort
 ```
 
-#### Discussion
+## Discussion
 
 The shortened form appropriate for display in space-constrained settings, contingent on user preferences and language defaults. See “[Short](../../personnamecomponentsformatter.md#Short)” for details about its specific behavior.
 

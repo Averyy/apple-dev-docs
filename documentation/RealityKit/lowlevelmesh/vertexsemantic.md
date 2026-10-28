@@ -20,7 +20,7 @@ Designates the intended usage of a vertex attribute.
 enum VertexSemantic
 ```
 
-#### Overview
+## Overview
 
 RealityKit consults the vertex semantic when interpreting the data in your [`LowLevelMesh`](../lowlevelmesh.md). For example, an attribute with the semantic value of [`LowLevelMesh.VertexSemantic.position`](./vertexsemantic/position.md) determines the position of a vertex.
 

@@ -23,7 +23,7 @@ var isEditing: Bool { get set }
 @property (nonatomic, getter=isEditing) BOOL editing;
 ```
 
-#### Discussion
+## Discussion
 
 When a cell is in an editable state, it displays the editing controls specified for it: the green insertion control, the red deletion control, or (on the right side) the reordering control. Use [`editingStyle`](./editingstyle-swift.property.md) and [`showsReorderControl`](./showsreordercontrol.md) to specify these controls for the cell.
 

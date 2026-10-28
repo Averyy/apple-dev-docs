@@ -23,7 +23,7 @@ Whether the expectation passed or failed.
 var isPassing: Bool
 ```
 
-#### Discussion
+## Discussion
 
 An expectation is considered to pass when its condition evaluates to `true`. If it evaluates to `false`, it fails instead.
 

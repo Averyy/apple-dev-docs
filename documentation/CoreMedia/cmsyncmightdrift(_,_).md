@@ -25,7 +25,7 @@ func CMSyncMightDrift(_ clockOrTimebase1: CMClockOrTimebase, _ clockOrTimebase2:
 extern Boolean CMSyncMightDrift(CMClockOrTimebaseRef clockOrTimebase1, CMClockOrTimebaseRef clockOrTimebase2);
 ```
 
-#### Discussion
+## Discussion
 
 A timebase can drift relative to another if they are ultimately mastered by clocks that can drift relative to each other.
 

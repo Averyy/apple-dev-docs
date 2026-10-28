@@ -25,7 +25,7 @@ func willAccessValue(forKey key: String?)
 - (void) willAccessValueForKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 See [`didAccessValue(forKey:)`](./didaccessvalue%28forkey%29.md) for more details. You can invoke this method with the `key` value of `nil` to ensure that a fault has been fired, as illustrated by the following example.
 

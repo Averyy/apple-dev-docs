@@ -19,11 +19,11 @@ object FadeInAnimation
 
 - [About Component Animations](../AppleNews/about-component-animations.md)
 
-#### Discussion
+## Discussion
 
 With this animation type the component fades in as it enters the person’s view. The initial transparency (alpha value) of the component is configurable. A `FadeInAnimation` with the `userControllable` property set to `true` is shown in [this video](https://developer.apple.com/apple-news/videos/fade-in-true.mp4).
 
-##### Example
+### Example
 
 ```json
 {

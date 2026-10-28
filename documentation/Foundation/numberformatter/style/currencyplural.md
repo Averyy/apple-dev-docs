@@ -25,7 +25,7 @@ case currencyPlural
 NSNumberFormatterCurrencyPluralStyle
 ```
 
-#### Discussion
+## Discussion
 
 This style behaves like the [`NumberFormatter.Style.currency`](./currency.md) style, except that the currency symbol is replaced by the corresponding pluralized denomination. For example, in the en_US locale, the number 1234.5678 is represented as 1,234.57 US dollars; in the fr_FR locale, the number 1234.5678 is represented as 1 234,57 euros.
 

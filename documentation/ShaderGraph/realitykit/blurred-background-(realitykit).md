@@ -14,7 +14,7 @@ Returns a sample of the blurred background.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Blurred Background (color3)**:
 

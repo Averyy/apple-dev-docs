@@ -24,11 +24,11 @@ func NewMusicEventIterator(_ inTrack: MusicTrack, _ outIterator: UnsafeMutablePo
 extern OSStatus NewMusicEventIterator(MusicTrack inTrack, MusicEventIterator*outIterator);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 A newly-created music event iterator points at the first event on the music track specified in the `inTrack` parameter.
 

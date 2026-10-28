@@ -17,7 +17,7 @@ nonisolated
 func upperLimbVisibility(_ preferredVisibility: Visibility) -> some CompositorContent
 ```
 
-#### Discussion
+## Discussion
 
 The system can show the user’s upper limbs during fully immersive experiences, but you can also hide them, for example, in order to display virtual hands instead.
 

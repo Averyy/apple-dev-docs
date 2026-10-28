@@ -19,7 +19,7 @@ The visibility of the tab in the sidebar.
 var sidebarVisibility: Visibility { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Visibility can be set imperatively by subscripting with the tab’s id:
 

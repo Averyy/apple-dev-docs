@@ -6,7 +6,7 @@
 
 A data reference type and a data reference.
 
-#### Overview
+## Overview
 
 The data reference type is stored as an `OSType` at the start of the atom. The data reference is stored following the data reference type. If the data reference type is URL and the data reference is for a movie on the Apple website, the contents of the atom would be `url http://www.apple.com/foo.mov`.
 

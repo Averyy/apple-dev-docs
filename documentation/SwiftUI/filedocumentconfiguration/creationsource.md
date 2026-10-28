@@ -22,7 +22,7 @@ var creationSource: DocumentCreationSource? { get }
 
 Available when `Document` conforms to `FileDocument`.
 
-#### Discussion
+## Discussion
 
 On iOS, you can specify the source via a [`NewDocumentButton`](../newdocumentbutton.md) in [`DocumentGroupLaunchScene`](../documentgrouplaunchscene.md):
 

@@ -24,7 +24,7 @@ static let properties: CIImageOption
 extern CIImageOption const kCIImageProperties;
 ```
 
-#### Discussion
+## Discussion
 
 To ensure that an image has no metadata properties, set the value of this key to `[NSNull null]`.
 

@@ -21,7 +21,7 @@ Copies the contents of the data to memory.
 func copyBytes(to pointer: UnsafeMutablePointer<UInt8>, count: Int)
 ```
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**:  This method does not verify that the contents at pointer have enough space to hold `count` bytes.
 

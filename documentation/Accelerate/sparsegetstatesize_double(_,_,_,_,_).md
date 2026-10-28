@@ -25,7 +25,7 @@ func SparseGetStateSize_Double(_ method: SparseIterativeMethod, _ preconditioner
 static size_t SparseGetStateSize_Double(SparseIterativeMethod method, bool preconditioner, int m, int n, int nrhs);
 ```
 
-#### Return Value
+## Return Value
 
 The size of the required state space, in bytes.
 

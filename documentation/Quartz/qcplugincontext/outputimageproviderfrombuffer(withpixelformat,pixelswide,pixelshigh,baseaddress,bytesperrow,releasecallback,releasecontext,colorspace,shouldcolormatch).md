@@ -22,11 +22,11 @@ func outputImageProviderFromBuffer(withPixelFormat format: String!, pixelsWide w
 - (id) outputImageProviderFromBufferWithPixelFormat:(NSString *) format pixelsWide:(NSUInteger) width pixelsHigh:(NSUInteger) height baseAddress:(const void *) baseAddress bytesPerRow:(NSUInteger) rowBytes releaseCallback:(QCPlugInBufferReleaseCallback) callback releaseContext:(void *) context colorSpace:(CGColorSpaceRef) colorSpace shouldColorMatch:(BOOL) colorMatch;
 ```
 
-#### Return Value
+## Return Value
 
 An image provider.
 
-#### Discussion
+## Discussion
 
 You must not modify the image until the release callback is invoked.
 

@@ -15,11 +15,11 @@ Mark a filesystem as supporting security controls beyond POSIX permissions.
 void vfs_setextendedsecurity(mount_t mp);
 ```
 
-#### Return Value
+## Return Value
 
 void.
 
-#### Discussion
+## Discussion
 
 Specific controls include ACLs, file owner UUIDs, and group UUIDs.
 

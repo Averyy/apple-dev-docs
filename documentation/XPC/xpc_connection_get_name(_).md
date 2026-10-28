@@ -25,7 +25,7 @@ func xpc_connection_get_name(_ connection: xpc_connection_t) -> UnsafePointer<CC
 extern const char *xpc_connection_get_name(xpc_connection_t connection);
 ```
 
-#### Return Value
+## Return Value
 
 The name of the remote service. If you obtained the connection through an invocation of another connection’s event handler, `NULL` is returned.
 

@@ -24,7 +24,7 @@ func generateSphericalHarmonics(fromLight sphericalHarmonicsLevel: Int)
 - (void) generateSphericalHarmonicsFromLight:(NSUInteger) sphericalHarmonicsLevel;
 ```
 
-#### Discussion
+## Discussion
 
 Spherical harmonic coefficients describe the distribution of light around a light source with less high-frequency detail than a cube map texture, but they can be used more efficiently in real-time rendering. After calling this method, use the [`sphericalHarmonicsCoefficients`](./sphericalharmonicscoefficients.md) property to access the generated coefficients.
 

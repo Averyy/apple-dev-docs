@@ -16,11 +16,11 @@ Sets an element property.
 Boolean IOHIDElementSetProperty(IOHIDElementRef element, CFStringRef key, CFTypeRef property);
 ```
 
-#### Return Value
+## Return Value
 
 Returns TRUE if successful.
 
-#### Discussion
+## Discussion
 
 This method can be used to set arbitrary element properties, such as application specific references.
 

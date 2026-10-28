@@ -26,7 +26,7 @@ class LayerHierarchy
 - [Hosting browser view layers in the rendering extension](./hosting-browser-view-layers-in-the-rendering-extension.md)
 - [Propagating view visibility information to extension processes](./propagating-view-visibility-information-to-browser-extensions.md)
 
-#### Overview
+## Overview
 
 This class holds another process’s view to synchronize UI updates across multiple processes in your browser app.
 

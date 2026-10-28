@@ -13,7 +13,7 @@
 kINQUIRY_Byte5_3PC_Bit = 3
 ```
 
-#### Discussion
+## Discussion
 
 3PC bit definition.
 

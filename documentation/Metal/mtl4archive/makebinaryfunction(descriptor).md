@@ -25,7 +25,7 @@ func makeBinaryFunction(descriptor: MTL4BinaryFunctionDescriptor) throws -> any 
 - (id<MTL4BinaryFunction>) newBinaryFunctionWithDescriptor:(MTL4BinaryFunctionDescriptor *) descriptor error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A new GPU binary function instance if the method succeeds; otherwise `nil`.
 

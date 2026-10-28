@@ -17,7 +17,7 @@ A collection of certificates that App Transport Security expects when connecting
 - **Name**: `NSPinnedDomains`
 - **Type**: dictionary
 
-#### Discussion
+## Discussion
 
 The value for this optional key is a dictionary with keys that specify the domain names for which you want to set the expected certificates. The value for each domain name key is another dictionary that configures the expected certificates for that domain.
 

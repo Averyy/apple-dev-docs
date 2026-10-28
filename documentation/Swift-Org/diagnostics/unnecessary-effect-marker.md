@@ -8,7 +8,7 @@ framework: "Swift-Org/diagnostics"
 **Framework**: Swift-Org/diagnostics  
 **Role**: Article
 
-#### Overview
+## Overview
 
 These warnings are emitted when an effect marker — `try`, `await`, or `unsafe` — appears on an expression that contains no operation requiring it. The marker may have been added preemptively, the operation it was needed for may have been removed, or the resolved expression may not contain the operation that was expected to carry the effect.
 
@@ -19,7 +19,7 @@ The `UnnecessaryEffectMarker` group covers:
 - `unsafe` on an expression that contains no unsafe operations
 - `unsafe` on a `for`-`in` loop whose `Sequence` has a safe conformance
 
-#### Example
+## Example
 
 ```swift
 func greet(_ name: String) {
@@ -33,7 +33,7 @@ func caller() async throws {
 }
 ```
 
-#### How to fix
+## How to fix
 
 Remove the marker:
 

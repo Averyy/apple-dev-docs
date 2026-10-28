@@ -22,7 +22,7 @@ Inserts the elements of a sequence into the collection at the specified position
 mutating func insert<S>(contentsOf newElements: S, at i: Self.Index) where S : Collection, Self.Element == S.Element
 ```
 
-#### Discussion
+## Discussion
 
 The new elements are inserted before the element currently at the specified index. If you pass the collection’s `endIndex` property as the `index` parameter, the new elements are appended to the collection.
 

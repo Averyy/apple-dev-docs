@@ -25,7 +25,7 @@ var baseGeometryBindTransform: SCNMatrix4 { get set }
 @property (nonatomic) SCNMatrix4 baseGeometryBindTransform;
 ```
 
-#### Discussion
+## Discussion
 
 This transformation matrix converts from the geometry’s model coordinate space to that used by the animation skeleton. It should match the coordinate space in which the skeleton (the nodes in the [`bones`](./bones.md) array) is initially defined, binding the model to its default pose.
 

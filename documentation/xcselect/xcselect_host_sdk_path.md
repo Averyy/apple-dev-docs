@@ -15,7 +15,7 @@ Returns the path to a version of the macOS SDK for building executables, librari
 extern errno_t xcselect_host_sdk_path(xcselect_host_sdk_policy_t sdk_policy, char **path);
 ```
 
-#### Return Value
+## Return Value
 
 The return value is `0` if successful; otherwise, it returns `EINVAL` if the parameters are invalid or `ENOENT` if the function can’t find the SDK using the specified criteria.
 

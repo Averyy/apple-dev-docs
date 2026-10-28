@@ -22,7 +22,7 @@ var kCTErrorDomainMach: Int { get }
 kCTErrorDomainMach
 ```
 
-#### Discussion
+## Discussion
 
 Mach error codes are listed in `mach/error.h`.
 

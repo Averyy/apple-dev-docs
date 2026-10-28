@@ -19,7 +19,7 @@ var kFxError_UserCancelled: Int { get }
 kFxError_UserCancelled
 ```
 
-#### Discussion
+## Discussion
 
 This error tells the host or plug-in that the analysis operation was cancelled by the user, allowing the host or plug-in to stop an ongoing analysis operation without showing an error to the user.
 

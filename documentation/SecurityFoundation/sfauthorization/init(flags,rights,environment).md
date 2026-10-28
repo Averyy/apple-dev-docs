@@ -19,11 +19,11 @@ init!(flags: AuthorizationFlags, rights: UnsafePointer<AuthorizationRights>!, en
 - (id) initWithFlags:(AuthorizationFlags) flags rights:(const AuthorizationRights *) rights environment:(const AuthorizationEnvironment *) environment;
 ```
 
-#### Return value
+## Return value
 
 The authorization object.
 
-#### Discussion
+## Discussion
 
 You can use this method to initialize an authorization object. Normally, such initialization is not required, as you pass in flags, rights, and environmental data when you request authorization.
 

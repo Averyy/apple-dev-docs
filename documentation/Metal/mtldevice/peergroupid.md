@@ -26,7 +26,7 @@ var peerGroupID: UInt64 { get }
 
 - [Transferring data between connected GPUs](../transferring-data-between-connected-gpus.md)
 
-#### Discussion
+## Discussion
 
 A group ID value of `0` indicates the GPU isn’t in a peer group. Otherwise, the GPU is in a peer group and the value is the group’s ID. All other GPUs in the same peer group have the same group ID.
 

@@ -5,7 +5,7 @@
 
 Display graphically rich data in the watch face’s corner.
 
-#### Overview
+## Overview
 
 The graphic corner templates display gauges, images, and text in the watch face’s corner.
 

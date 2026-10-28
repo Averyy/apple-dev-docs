@@ -17,11 +17,11 @@ static func hoverEffectGroup(id: String? = nil, in namespace: Namespace.ID, beha
 
 Available when `Self` is `GroupHoverEffect`.
 
-#### Return Value
+## Return Value
 
 A new effect that activates the given effect group.
 
-#### Discussion
+## Discussion
 
 The effect group is uniquely identified by combining the `id` and `namespace` parameters. If an `id` is not provided, the effect will be identified by the `namespace` alone. Providing an `id` is useful when creating effects that use multiple, closely-related groups.
 

@@ -21,7 +21,7 @@ Returns pending data for the dispatch source.
 extern uintptr_t dispatch_source_get_data(dispatch_source_t source);
 ```
 
-##### Return Value
+### Return Value
 
 The return value should be interpreted according to the type of the dispatch source, and can be one of the following:
 
@@ -36,7 +36,7 @@ The return value should be interpreted according to the type of the dispatch sou
 - [`DISPATCH_SOURCE_TYPE_VNODE`](./dispatch_source_type_vnode.md): `Dispatch Source Vnode Event Flags`
 - `Dispatch Source Memory Pressure Event Flags`: estimated buffer space available
 
-#### Discussion
+## Discussion
 
 Call this function from within the event handler block. The result of calling this function outside of the event handler callback is undefined.
 

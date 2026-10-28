@@ -26,7 +26,7 @@ func contains(_ boundingBox: BoundingBox) -> Bool
 func contains(_ point: SIMD3<Float>) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean that’s `true` if the box contains the specified bounds.
 

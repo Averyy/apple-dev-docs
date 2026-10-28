@@ -23,7 +23,7 @@ init(userInterfaceIdiom idiom: UIUserInterfaceIdiom)
 + (UITraitCollection *) traitCollectionWithUserInterfaceIdiom:(UIUserInterfaceIdiom) idiom;
 ```
 
-#### Return Value
+## Return Value
 
 A new trait collection containing only a specified user interface idiom trait.
 

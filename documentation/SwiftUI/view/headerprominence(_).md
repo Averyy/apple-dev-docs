@@ -22,7 +22,7 @@ nonisolated
 func headerProminence(_ prominence: Prominence) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 In the following example, the section header appears with increased prominence:
 

@@ -19,11 +19,11 @@ func didChangeArrangementCriteria()
 - (void) didChangeArrangementCriteria;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked by the controller itself when any criteria for arranging objects change (sort descriptors or filter predicates) to reset the key paths for automatic rearranging.
 
-##### Special Considerations
+### Special Considerations
 
 If you implement a subclass of `NSArrayController` and override [`rearrangeObjects()`](./rearrangeobjects%28%29.md) to use additional arrangement criteria, you should invoke this method if those criteria change.
 

@@ -24,7 +24,7 @@ func requestState(for region: CLRegion)
 - (void) requestStateForRegion:(CLRegion *) region;
 ```
 
-#### Discussion
+## Discussion
 
 This method performs the request asynchronously and delivers the results to the location manager’s delegate. You must implement the [`locationManager(_:didDetermineState:for:)`](../cllocationmanagerdelegate/locationmanager%28_,diddeterminestate,for%29.md) method in the delegate to receive the results.
 

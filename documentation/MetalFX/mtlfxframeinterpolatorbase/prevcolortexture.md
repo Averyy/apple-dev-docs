@@ -24,7 +24,7 @@ var prevColorTexture: (any MTLTexture)? { get set }
 @property (nonatomic, retain, nullable) id<MTLTexture> prevColorTexture;
 ```
 
-#### Discussion
+## Discussion
 
 The frame interpolator typically uses the previous color texture as part of its operation. When you call [`encode(commandBuffer:)`](../mtlfxframeinterpolator/encode%28commandbuffer%29.md) and its [`shouldResetHistory`](./shouldresethistory.md) property is [`false`](../../Swift/false.md), then you are responsible for assigning to this property the data that in [`colorTexture`](./colortexture.md) from the previous call to [`encode(commandBuffer:)`](../mtlfxframeinterpolator/encode%28commandbuffer%29.md).
 

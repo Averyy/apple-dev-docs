@@ -19,7 +19,7 @@ var titleVisibility: NSWindow.TitleVisibility { get set }
 @property NSWindowTitleVisibility titleVisibility;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the value of this property is [`NSWindow.TitleVisibility.visible`](./titlevisibility-swift.enum/visible.md).
 

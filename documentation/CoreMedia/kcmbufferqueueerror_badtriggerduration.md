@@ -25,7 +25,7 @@ var kCMBufferQueueError_BadTriggerDuration: OSStatus { get }
 kCMBufferQueueError_BadTriggerDuration
 ```
 
-#### Discussion
+## Discussion
 
 The trigger duration must be numeric, and epoch must be zero (non-zero epoch is only for timestamps, not durations).
 

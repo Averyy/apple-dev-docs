@@ -24,7 +24,7 @@ class MPSImageAreaMin
 @interface MPSImageAreaMin : MPSImageAreaMax
 ```
 
-#### Overview
+## Overview
 
 An [`MPSImageAreaMin`](./mpsimageareamin.md) filter has the same methods and properties as the [`MPSImageAreaMax`](./mpsimageareamax.md) class.
 

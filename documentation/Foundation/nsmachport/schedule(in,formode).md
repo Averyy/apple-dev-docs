@@ -25,7 +25,7 @@ func schedule(in runLoop: RunLoop, forMode mode: RunLoop.Mode)
 - (void) scheduleInRunLoop:(NSRunLoop *) runLoop forMode:(NSRunLoopMode) mode;
 ```
 
-#### Discussion
+## Discussion
 
 When the receiver is scheduled, the run loop monitors the mach port for incoming messages and, when a message arrives, invokes the delegate method [`handleMachMessage(_:)`](../nsmachportdelegate/handlemachmessage%28_%29.md).
 

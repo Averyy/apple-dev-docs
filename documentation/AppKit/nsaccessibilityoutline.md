@@ -19,7 +19,7 @@ protocol NSAccessibilityOutline : NSAccessibilityTable
 @protocol NSAccessibilityOutline <NSAccessibilityTable>
 ```
 
-#### Overview
+## Overview
 
 Use this protocol when you want a user interface element to behave like an outline—a view that uses a row-and-column format to display hierarchical data that can expand and collapse—in the accessibility hierarchy.
 

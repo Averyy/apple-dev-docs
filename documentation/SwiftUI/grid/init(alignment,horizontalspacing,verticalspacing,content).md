@@ -22,7 +22,7 @@ nonisolated
 init(alignment: Alignment = .center, horizontalSpacing: CGFloat? = nil, verticalSpacing: CGFloat? = nil, @ContentBuilder content: () -> Content)
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a [`Grid`](../grid.md). Provide a content closure that defines the rows of the grid, and optionally customize the spacing between cells and the alignment of content within each cell. The following example customizes the spacing between cells:
 

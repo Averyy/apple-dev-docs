@@ -23,11 +23,11 @@ func keyPathsAndRelativeValues(forViewerOffset viewerOffset: UIOffset) -> [Strin
 - (NSDictionary<NSString *,id> *) keyPathsAndRelativeValuesForViewerOffset:(UIOffset) viewerOffset;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary containing one or more key path strings representing the properties of the view to modify. The value associated with each key path string is the value to add to the given property—that is, it is the amount by which to change the current value of the property. Specify each key path relative to the view containing the motion effect object.
 
-#### Discussion
+## Discussion
 
 Subclasses must override this method and use it to return the values to apply to a view when the user changes the relative orientation of the device’s screen. iOS computes the viewer offset values and calls this method so that subclassers can decide how that offset affects the underlying views. For example, you might use this method to modify the position of the view and its layer to give the view some visual depth.
 

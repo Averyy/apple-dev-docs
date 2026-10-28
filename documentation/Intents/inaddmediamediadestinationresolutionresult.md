@@ -24,7 +24,7 @@ class INAddMediaMediaDestinationResolutionResult
 @interface INAddMediaMediaDestinationResolutionResult : INMediaDestinationResolutionResult
 ```
 
-#### Overview
+## Overview
 
 You return an [`INAddMediaMediaDestinationResolutionResult`](./inaddmediamediadestinationresolutionresult.md) object when resolving parameters containing an [`INMediaDestinationResolutionResult`](./inmediadestinationresolutionresult.md) value. Use the creation method that best reflects your ability to resolve the parameter successfully.
 

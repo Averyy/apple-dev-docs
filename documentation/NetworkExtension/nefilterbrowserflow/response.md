@@ -22,7 +22,7 @@ var response: URLResponse? { get }
 @property (readonly, nullable) NSURLResponse * response;
 ```
 
-#### Discussion
+## Discussion
 
 This property will be nil until some incoming data is received for this flow.
 

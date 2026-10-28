@@ -25,7 +25,7 @@ func undo()
 - (void) undo;
 ```
 
-#### Discussion
+## Discussion
 
 After closing the top-level undo group, this method invokes [`undoNestedGroup()`](./undonestedgroup%28%29.md).
 

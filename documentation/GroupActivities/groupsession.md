@@ -26,7 +26,7 @@ final class GroupSession<ActivityType> where ActivityType : GroupActivity
 - [Adding spatial Persona support to an activity](./adding-spatial-persona-support-to-an-activity.md)
 - [Synchronizing data during a SharePlay activity](./synchronizing-data-during-a-shareplay-activity.md)
 
-#### Overview
+## Overview
 
 A `GroupSession` object contains details about the user’s currently selected activity, its status, and its participants. When a participant engages in an activity, the system binds a session to that activity for you. You use the session object to synchronize your app’s activity-related content, including your app’s UI.
 
@@ -34,7 +34,7 @@ You don’t create `GroupSession` objects directly. Instead, the system creates 
 
 Before the system can create a session object, your app must create a `GroupActivity` object and activate it. For information about how to configure group activities, see [`GroupActivity`](./groupactivity.md).
 
-##### Start and Stop the Session
+### Start and Stop the Session
 
 When you receive a new session object, it’s initially in the [`GroupSession.State.waiting`](./groupsession/state-swift.enum/waiting.md) state. As soon as your app is ready to begin the associated activity, call the session’s [`join()`](./groupsession/join%28%29.md) method. Joining a session validates the connection and starts the synchronization process between the current device and other participants’ devices. If your app successfully joins the session, the session transitions to the [`GroupSession.State.joined`](./groupsession/state-swift.enum/joined.md) state.
 

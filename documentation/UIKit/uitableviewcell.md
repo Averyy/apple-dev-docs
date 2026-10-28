@@ -30,7 +30,7 @@ class UITableViewCell
 - [Configuring the cells for your table](./configuring-the-cells-for-your-table.md)
 - [Adding user-focusable elements to a tvOS app](./adding-user-focusable-elements-to-a-tvos-app.md)
 
-#### Overview
+## Overview
 
 A [`UITableViewCell`](./uitableviewcell.md) object is a specialized type of view that manages the content of a single table row. You use cells primarily to organize and present your app’s custom content, but [`UITableViewCell`](./uitableviewcell.md) provides some specific customizations to support table-related behaviors, including:
 
@@ -45,7 +45,7 @@ Your app’s content occupies most of the cell’s bounds, but the cell may adju
 
 Every table view must have at least one type of cell for displaying content, and tables may have multiple cell types to display different types of content. Your table’s data source object handles the creation and configuration of cells immediately before they appear onscreen. For information about how to create your table’s cells, see [Filling a table with data](./filling-a-table-with-data.md).
 
-##### Configure your cell’s content
+### Configure your cell’s content
 
 Configure the content and layout of your cells in your storyboard file. Tables have one cell type by default, but you can add more by changing the value in the table’s Prototype Cells attribute. In addition to configuring the cell’s content, make sure you configure the following attributes:
 

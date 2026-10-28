@@ -11,11 +11,11 @@ Disables the notification request.
 virtual bool disable() = 0;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the previous enable state of the IONotifier.
 
-#### Overview
+## Overview
 
 Disables the notification request. This method is synchronous with any handler invocations, so when this method returns its guaranteed the handler will not be in entered.
 

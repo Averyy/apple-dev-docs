@@ -25,11 +25,11 @@ class func dateFormat(fromTemplate tmplate: String, options opts: Int, locale: L
 + (NSString *) dateFormatFromTemplate:(NSString *) tmplate options:(NSUInteger) opts locale:(NSLocale *) locale;
 ```
 
-#### Return Value
+## Return Value
 
 A localized date format string representing the date format components given in `template`, arranged appropriately for the locale specified by `locale`. The returned string may not contain exactly those components given in `template`, but may—for example—have locale-specific adjustments applied.
 
-#### Discussion
+## Discussion
 
 Different locales have different conventions for the ordering of date components. You use this method to get an appropriate format string for a given set of components for a specified locale (typically you use the current locale—see [`current`](../nslocale/current.md)).
 

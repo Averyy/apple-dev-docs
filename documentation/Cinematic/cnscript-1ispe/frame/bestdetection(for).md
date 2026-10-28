@@ -19,11 +19,11 @@ The best detection to focus on in a frame among those within the given detection
 func bestDetection(for detectionGroupID: CNDetectionGroupID) -> CNDetection?
 ```
 
-#### Return Value
+## Return Value
 
 An object representing the best detection to focus on in a frame among those within the given detection group.
 
-#### Discussion
+## Discussion
 
 Some types of detections also include a detection group ID that associates related detections, such as a face and torso, of the same person.
 

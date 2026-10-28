@@ -25,7 +25,7 @@ let NSPersistentStoreDeferredLightweightMigrationOptionKey: String
 extern NSString * const NSPersistentStoreDeferredLightweightMigrationOptionKey;
 ```
 
-#### Discussion
+## Discussion
 
 As your managed object model changes, Core Data can use lightweight migrations to synchronize the underlying store data with those evolving entity definitions. These migrations happen at runtime, so they need to be fast or they can lead to a poor experience, because a migration must complete before your app can continue. Reduce the impact of migrations by deferring expensive cleanup tasks — such as dropping a table — until a more opportune time.
 

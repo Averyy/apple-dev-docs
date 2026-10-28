@@ -10,7 +10,7 @@ Display a set of recent, personal events that inspire someone to contribute to y
 - iOS 17.2+
 - iPadOS 26.0+
 
-#### Overview
+## Overview
 
 Journaling Suggestions provides a visual picker interface for iPhone apps. The picker displays personal events that occur in someone’s life, such as a place they visited, a person they connected with, a photo in their library, or a song that they play repeatedly.
 

@@ -29,7 +29,7 @@ func requestCommissioningApproval(with params: MTRCommissionerControlClusterRequ
 - (void) requestCommissioningApprovalWithParams:(MTRCommissionerControlClusterRequestCommissioningApprovalParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This command is sent by a client to request approval for a future CommissionNode call.
 

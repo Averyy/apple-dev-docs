@@ -25,7 +25,7 @@ func CMSampleBufferDataIsReady(_ sbuf: CMSampleBuffer) -> Bool
 extern Boolean CMSampleBufferDataIsReady(CMSampleBufferRef sbuf);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean indicating whether or not the sample buffer’s data is ready.  True is returned for special marker buffers, even though they have no data. False is returned if there is an error.
 

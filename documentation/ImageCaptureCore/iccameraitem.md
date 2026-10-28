@@ -23,7 +23,7 @@ class ICCameraItem
 @interface ICCameraItem : NSObject
 ```
 
-#### Overview
+## Overview
 
 The ImageCaptureCore framework defines two concrete subclasses of camera items: [`ICCameraFolder`](./iccamerafolder.md) and [`ICCameraFile`](./iccamerafile.md).
 

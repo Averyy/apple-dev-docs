@@ -23,7 +23,7 @@ func start(at date: Date)
 
 - [Using extended runtime sessions](../using-extended-runtime-sessions.md)
 
-#### Discussion
+## Discussion
 
 Use [`start(at:)`](./start%28at%29.md) to set up a scheduable session. You must call this method while your app is running in the foreground. However, when the scheduled date and time arrives, the session starts running regardless of your app’s current state. If your app isn’t running, the system launches your app and calls your extension delegate’s [`handle(_:)`](../wkextensiondelegate/handle%28_%29-4qxgv.md) method to start the session. If you don’t set the session’s delegate in the [`handle(_:)`](../wkextensiondelegate/handle%28_%29-4qxgv.md) method, the system ends the session.
 

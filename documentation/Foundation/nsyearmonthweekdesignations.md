@@ -17,7 +17,7 @@ Key for an array of strings that specify the words for year, month, and week in 
 extern NSString * const NSYearMonthWeekDesignations;
 ```
 
-#### Discussion
+## Discussion
 
 The defaults are “year,” “month,” and “week.”
 

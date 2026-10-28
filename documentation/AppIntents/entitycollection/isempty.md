@@ -21,7 +21,7 @@ A Boolean value that indicates whether the collection is empty.
 var isEmpty: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `true` if the collection is empty, or `false` if the collection has one or more identifiers.
 

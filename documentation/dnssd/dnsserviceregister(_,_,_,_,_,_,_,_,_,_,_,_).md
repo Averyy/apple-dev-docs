@@ -25,7 +25,7 @@ func DNSServiceRegister(_ sdRef: UnsafeMutablePointer<DNSServiceRef?>!, _ flags:
 DNSServiceErrorType DNSServiceRegister(DNSServiceRef*sdRef, DNSServiceFlags flags, uint32_t interfaceIndex, const char *name, const char *regtype, const char *domain, const char *host, uint16_t port, uint16_t txtLen, const void *txtRecord, DNSServiceRegisterReply callBack, void *context);
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`kDNSServiceErr_NoError`](./kdnsserviceerr_noerror.md) on success (any subsequent, asynchronous errors are delivered to the callback), otherwise returns an error code indicating the error that occurred (the callback is never invoked and the DNSServiceRef is not initialized).
 

@@ -29,11 +29,11 @@ func allowedChildrenForUnwinding(from source: UIStoryboardUnwindSegueSource) -> 
 
 - [Creating a custom container view controller](../creating-a-custom-container-view-controller.md)
 
-#### Return Value
+## Return Value
 
 An array of view controllers representing the child view controllers to search. The order of the items in the array determines the search order.
 
-#### Discussion
+## Discussion
 
 UIKit calls this method when searching for the destination of an unwind segue. The default implementation returns the contents of the [`children`](./children.md) property minus the view controller returned by the [`childContaining(_:)`](./childcontaining%28_%29.md) method. You can override this method as needed in your custom container view controllers to change the search order. For example, a navigation controller reverses the order so that the search starts with the view controller at the top of the navigation stack.
 

@@ -18,7 +18,7 @@ Message type for text message availability change notifications.
 struct TextMessageAvailabilityDidChangeMessage
 ```
 
-#### Overview
+## Overview
 
 This notification is posted when the value of `+canSendText` changes, indicating whether the device can send text messages.
 

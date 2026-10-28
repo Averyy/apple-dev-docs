@@ -24,7 +24,7 @@ class MDLTextureSampler
 @interface MDLTextureSampler : NSObject
 ```
 
-#### Overview
+## Overview
 
 You use texture samplers as material property values with the [`MDLMaterialProperty`](./mdlmaterialproperty.md) class.
 

@@ -5,7 +5,7 @@
 
 Start, end, and manage fitness routines.
 
-#### Overview
+## Overview
 
 Users can start, pause, resume, cancel, or end workouts with Siri. Your Intents app extension directs any workout-related requests to your app, which manages the actual workouts. SiriKit automatically asks users to unlock their device, as needed, before launching your app.
 

@@ -15,7 +15,7 @@ A message that explains the purpose for accessing data that an application can u
 - **Name**: `NSUserTrackingMarkdownUsageDescription` (Privacy - Tracking Markdown Usage Description)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 If your application uses the [App Tracking Transparency](../../AppTrackingTransparency/AppTrackingTransparency.md) framework, use this key to provide a *usage-description string* to explain your app’s purpose for accessing data that the app can use to track the person or the device. The system displays the string value in a full-page authorization sheet from which the person can grant or deny permission to access the tracking data.
 

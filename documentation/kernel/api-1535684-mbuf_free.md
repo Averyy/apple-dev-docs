@@ -13,11 +13,11 @@
 mbuf_t mbuf_free(mbuf_t mbuf);
 ```
 
-#### Return Value
+## Return Value
 
 The next mbuf in the chain.
 
-#### Discussion
+## Discussion
 
 Frees a single mbuf. Not commonly used because it doesn't touch the rest of the mbufs on the chain.
 

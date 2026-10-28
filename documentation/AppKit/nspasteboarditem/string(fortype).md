@@ -19,7 +19,7 @@ func string(forType type: NSPasteboard.PasteboardType) -> String?
 - (NSString *) stringForType:(NSPasteboardType) type;
 ```
 
-#### Return Value
+## Return Value
 
 The value for the specified type as a string.
 

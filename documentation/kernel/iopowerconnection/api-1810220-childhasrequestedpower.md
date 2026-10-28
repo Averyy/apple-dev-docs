@@ -12,7 +12,7 @@ bool childHasRequestedPower (
  void );
 ```
 
-#### Overview
+## Overview
 
 Called by the PCI Aux Power Supply Driver to see if a device driver is power managed.
 

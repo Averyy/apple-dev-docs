@@ -15,7 +15,7 @@ The version of the product installed on the Apple TV.
 readonly attribute String productType;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains an identifier for the device, for example, `AppleTV 3,1`.
 

@@ -27,7 +27,7 @@ class func fetchCurrent() async -> NEHotspotNetwork?
 + (void) fetchCurrentWithCompletionHandler:(void (^)(NEHotspotNetwork *currentNetwork)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method produces a non-`nil` [`NEHotspotNetwork`](../nehotspotnetwork.md) object only when the requesting app meets at least one of the following criteria:
 

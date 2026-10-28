@@ -17,7 +17,7 @@ The small toolbar style for segmented controls.
 UISegmentedControlStyleBar
 ```
 
-#### Discussion
+## Discussion
 
 Segmented controls in this style can have a tint color (see `tintColor`).
 

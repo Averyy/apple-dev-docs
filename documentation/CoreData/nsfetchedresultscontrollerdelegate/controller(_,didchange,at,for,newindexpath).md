@@ -25,7 +25,7 @@ optional func controller(_ controller: NSFetchedResultsController<any NSFetchReq
 - (void) controller:(NSFetchedResultsController *) controller didChangeObject:(id) anObject atIndexPath:(NSIndexPath *) indexPath forChangeType:(NSFetchedResultsChangeType) type newIndexPath:(NSIndexPath *) newIndexPath;
 ```
 
-#### Discussion
+## Discussion
 
 The fetched results controller reports changes to its section before changes to the fetch result objects.
 
@@ -41,7 +41,7 @@ An update of the object is assumed in this case, but no separate update message 
 
 - An update is reported when an object’s state changes, but the changed attributes aren’t part of the sort keys. 
 
-##### Special Considerations
+### Special Considerations
 
 This method may be invoked many times during an update event (for example, if you are importing data on a background thread and adding them to the context in a batch). You should consider carefully whether you want to update the table view on receipt of each message.
 

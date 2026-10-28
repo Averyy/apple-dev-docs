@@ -19,7 +19,7 @@ The handler that processes a reordering transaction.
 @property (nonatomic, copy, nullable) void (^didReorderHandler)(NSDiffableDataSourceTransaction<id,id> *);
 ```
 
-#### Discussion
+## Discussion
 
 The system calls the [`didReorderHandler`](./didreorderhandler.md) handler after a reordering transaction ([`NSDiffableDataSourceTransaction`](../nsdiffabledatasourcetransaction-swift.struct.md)) occurs, so you can update your data backing store with information about the changes.
 

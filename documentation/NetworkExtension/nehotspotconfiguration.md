@@ -23,7 +23,7 @@ class NEHotspotConfiguration
 @interface NEHotspotConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 The `NEHotspotConfiguration` class contains configuration properties and credentials required to connect to Wi-Fi networks.
 

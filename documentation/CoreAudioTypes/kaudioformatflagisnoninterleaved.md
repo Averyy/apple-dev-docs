@@ -25,7 +25,7 @@ var kAudioFormatFlagIsNonInterleaved: AudioFormatFlags { get }
 kAudioFormatFlagIsNonInterleaved
 ```
 
-#### Discussion
+## Discussion
 
 This flag affects the use of the [`AudioStreamBasicDescription`](./audiostreambasicdescription.md) and [`AudioBufferList`](./audiobufferlist.md) structures.
 

@@ -29,11 +29,11 @@ OSStatus SecTrustEvaluateAsyncWithError(SecTrustRef trust, dispatch_queue_t queu
 
 - [Evaluating a Trust and Parsing the Result](./evaluating-a-trust-and-parsing-the-result.md)
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 This method behaves like [`SecTrustEvaluateWithError(_:_:)`](./sectrustevaluatewitherror%28_,_%29.md), except that it provides an evaluation by calling the given closure. The method might do this synchronously before returning if the trust instance already contains a result. Otherwise, the method returns immediately, performs the evaluation asynchronously, and calls the closure with the result later.
 

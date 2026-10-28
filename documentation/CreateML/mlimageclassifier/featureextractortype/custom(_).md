@@ -19,7 +19,7 @@ A feature extractor that you provide as a Core ML model file or a layer within t
 case custom(MLImageClassifier.CustomFeatureExtractor)
 ```
 
-#### Discussion
+## Discussion
 
 A custom feature extractor is a neural network model you provide to an [`MLImageClassifier`](../../mlimageclassifier.md). The feature extractor can be a layer within the model or the model itself. In either case, the neural network must take an image as input and output an [`MLMultiArray`](../../../CoreML/mlmultiarray.md).
 

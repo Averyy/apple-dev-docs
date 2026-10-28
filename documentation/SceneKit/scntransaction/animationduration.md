@@ -29,11 +29,11 @@ class var animationDuration: CFTimeInterval { get set }
 
 - [Animating SceneKit Content](../animating-scenekit-content.md)
 
-#### Return Value
+## Return Value
 
 The animation duration, in seconds.
 
-#### Discussion
+## Discussion
 
 The default duration is zero for transactions automatically created by SceneKit, and `0.25` for animations you create using the [`begin()`](./begin%28%29.md) method.
 

@@ -22,7 +22,7 @@ var targetContentIdentifier: Any? { get }
 @property (nonatomic, copy, readonly, nullable) id targetContentIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 UIKit applies the value in this property to the activation conditions defined by the [`UISceneActivationConditions`](../uisceneactivationconditions.md) objects of the available scenes. Based on the predicates you specify, UIKit selects the most appropriate scene for handling the action.
 

@@ -16,7 +16,7 @@ Represents a task ID.
 typedef struct OpaqueMPTaskID *MPTaskID;
 ```
 
-#### Discussion
+## Discussion
 
 You obtain a task ID by calling the function [`MPCreateTask`](./api-1585779-mpcreatetask.md). 
 

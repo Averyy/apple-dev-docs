@@ -21,7 +21,7 @@ The kind of errors this publisher might publish.
 typealias Failure = Suffix.Failure
 ```
 
-#### Discussion
+## Discussion
 
 This publisher uses its source publishers’ failure type.
 

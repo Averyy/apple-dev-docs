@@ -27,7 +27,7 @@ var b_desc: BNNSNDArrayDescriptor
 BNNSNDArrayDescriptor b_desc;
 ```
 
-#### Discussion
+## Discussion
 
 Bias is ordered as `[num_layers][num_directions][hidden_size]` (C style multi array notation).
 

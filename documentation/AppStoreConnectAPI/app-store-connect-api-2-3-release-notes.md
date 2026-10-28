@@ -5,14 +5,14 @@
 
 Update your server-side code to use new features, and test your code against API changes.
 
-##### New features
+### New features
 
 - Getting an app’s price points and [`List all price points for an In-App Purchase`](./get-v2-inapppurchases-_id_-pricepoints.md) now support 900 price points.
 - [`List App Price Point Equalizations`](./get-v3-apppricepoints-_id_-equalizations.md) allows for setting equalized prices.
 - Getting and managing an app’s price schedules   and [In-App Purchase price schedules](./in-app-purchase-price-schedules.md) support automatic prices, manual prices, and base territory configuration.
 - Getting and managing an app’s availability, [In-App Purchase availability](./in-app-purchase-availability.md) and [Subscription availability](./subscription-availability.md) supports configuring availability for apps, In-App Purchases, and subscriptions.
 
-##### Deprecations
+### Deprecations
 
 - The `List all price points for an app V1` endpoint is now deprecated and replaced with [`List All Price Points for an App`](./get-v1-apps-_id_-apppricepoints.md).
 - The `List all prices for an app` endpoint is now deprecated and replaced with [`Read Price Schedule Information for an App`](./get-v1-apps-_id_-apppriceschedule.md).
@@ -23,7 +23,7 @@ Update your server-side code to use new features, and test your code against API
 
 > ❗ **Important**:  If you use [`Add a Scheduled Price Change to an App`](./post-v1-apppriceschedules.md) to add a scheduled price change to your App, you can’t use `AppPriceInlineCreate` to change your App’s price.
 
-##### Note to Developers
+### Note to Developers
 
 On May 9, 2023, pricing for your existing apps and In-App Purchases (excluding auto-renewable subscriptions) will be updated across all 175 storefronts to be equalized to your base country or region using publicly available exchange rate information. If you don’t specify a base country or region, Apple will use your current price in the United States as the basis to provide comparable prices in other countries or regions. Learn more about [app](https://developer.apple.com/help/app-store-connect/manage-app-pricing/set-a-price) or[ In-App Purchase pricing](https://developer.apple.com/help/app-store-connect/manage-in-app-purchases/set-a-price-for-an-in-app-purchase).
 

@@ -25,7 +25,7 @@ let kCVImageBufferDisplayMaskRectangle_ReferenceRasterHeightKey: CFString
 extern CFStringRef const kCVImageBufferDisplayMaskRectangle_ReferenceRasterHeightKey;
 ```
 
-#### Discussion
+## Discussion
 
 The `0,0` origin is the top-left corner. The raster height value is a [`CFNumber`](../CoreFoundation/cfnumber.md) of an unsigned 16-bit integer. The value usually matches the height of the video or the output device.
 

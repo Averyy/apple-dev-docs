@@ -34,7 +34,7 @@ var organizationName: INSpeakableString? { get }
 @property (atomic, copy, readonly, nullable) INSpeakableString * organizationName;
 ```
 
-#### Discussion
+## Discussion
 
 This property represents the actual name of the organization that provides services to the user and supports bill payment through your app. The organization name might refer to the name of a specific company or group that provides services. When the user specifies the organization name, instead of the account nickname, use this value to locate the corresponding account in your app.
 

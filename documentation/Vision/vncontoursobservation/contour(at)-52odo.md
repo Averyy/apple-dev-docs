@@ -24,7 +24,7 @@ func contour(at indexPath: IndexPath) throws -> VNContour
 - (VNContour *) contourAtIndexPath:(NSIndexPath *) indexPath error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The contour object at the specified index path.
 

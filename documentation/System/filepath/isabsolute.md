@@ -21,7 +21,7 @@ Returns true if this path uniquely identifies the location of a file without ref
 var isAbsolute: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 On Unix platforms, absolute paths begin with a `/`. `isAbsolute` is equivalent to `root != nil`.
 

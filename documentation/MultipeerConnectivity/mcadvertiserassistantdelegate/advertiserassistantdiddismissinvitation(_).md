@@ -26,7 +26,7 @@ optional func advertiserAssistantDidDismissInvitation(_ advertiserAssistant: MCA
 - (void) advertiserAssistantDidDismissInvitation:(MCAdvertiserAssistant *) advertiserAssistant;
 ```
 
-#### Discussion
+## Discussion
 
 This call tells your app to resume any activity that it stopped doing while the invitation was onscreen. For example, it might resume computationally intensive UI updates for views that are no longer hidden by the invitation.
 

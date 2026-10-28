@@ -26,11 +26,11 @@ func CFURLEnumeratorGetSourceDidChange(_ enumerator: CFURLEnumerator!) -> Bool
 extern Boolean CFURLEnumeratorGetSourceDidChange(CFURLEnumeratorRef enumerator);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `false`.
 
-#### Discussion
+## Discussion
 
 Use the File System Events API to detect changes to the file system. See [File System Events Programming Guide](https://developer.apple.com/library/archive/documentation/Darwin/Conceptual/FSEvents_ProgGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40005289) for more information.
 

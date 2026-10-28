@@ -15,7 +15,7 @@ Multiplies two single-precision vectors.
 void vDSP_vmul(const float *__A, vDSP_Stride __IA, const float *__B, vDSP_Stride __IB, float *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the products of the first `N` elements of input vectors `A` and `B`, writing the result to output vector `C`:
 

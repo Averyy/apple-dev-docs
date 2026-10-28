@@ -22,11 +22,11 @@ func CVDisplayLinkCreateWithCGDisplay(_ displayID: CGDirectDisplayID, _ displayL
 extern CVReturn CVDisplayLinkCreateWithCGDisplay(CGDirectDisplayID displayID, CVDisplayLinkRef*displayLinkOut);
 ```
 
-#### Return Value
+## Return Value
 
 A Core Video result code. See [Core Video Constants](./core-video-constants.md) for possible values.
 
-#### Discussion
+## Discussion
 
 Use this call to create a display link for a single display. For more information on the display identifier type, see [`CGDirectDisplayID`](../CoreGraphics/cgdirectdisplayid.md).
 

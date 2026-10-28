@@ -21,7 +21,7 @@ A localized accessibility description describing the weather severity.
 var accessibilityDescription: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 The description is suitable for Voice Over and other assistive technologies.
 

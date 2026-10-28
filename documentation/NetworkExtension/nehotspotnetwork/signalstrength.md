@@ -22,7 +22,7 @@ var signalStrength: Double { get }
 @property (readonly) double signalStrength;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property lies within the range 0.0 (weak/no signal) to 1.0 (strong signal).
 

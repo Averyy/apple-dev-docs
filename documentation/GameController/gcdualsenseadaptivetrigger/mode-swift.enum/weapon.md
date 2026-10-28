@@ -24,7 +24,7 @@ case weapon
 GCDualSenseAdaptiveTriggerModeWeapon
 ```
 
-#### Discussion
+## Discussion
 
 This mode emulates the feeling of pulling the trigger on a weapon.
 

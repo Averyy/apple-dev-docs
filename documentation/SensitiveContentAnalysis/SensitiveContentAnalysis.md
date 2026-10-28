@@ -12,7 +12,7 @@ Provide a safer experience in your app by detecting and alerting people to sensi
 - Mac Catalyst 17.0+
 - macOS 14.0+
 
-#### Overview
+## Overview
 
 The Sensitive Content Analysis framework enables an app to check content for nudity and other sensitive material. In iOS and macOS, the Sensitive Content Warning user preference or the Communication Safety parental control in Screen Time offer people the option to indicate their desire to guard against unexpected or unwanted exposure to images that contain sensitive content. Provide people with the experience they request in these settings by using Sensitive Content Analysis to check for sensitive content before displaying it.
 
@@ -20,7 +20,7 @@ Consider situations in which your app acquires externally sourced images or vide
 
 ![A flowchart that progresses from left to right. The chart has three areas. The left area contains the label Third party app, with text that indicates the app receives an image over a network. An arrow flows to the right from this area to a box that contains the label Sensitivity Analyzer, which resides in the center. The overall central area of the flowchart is the labeled Sensitive Content Analysis. An arrow flows from the Sensitivity Analyzer box to two other boxes within the center that contain the labels Yes, and No, respectively. Text on the arrow itself reads Is Sensitive, which represents the condition on which the chart’s flow branches. An arrow flows to the right of the Yes box to the right section of the chart, which contains two boxes. The top box contains text that reads: The app avoids displaying sensitive content. A second arrow flows to the right of the No box to another box that reads: The app displays content that’s not sensitive. ](https://developer.apple.com/tutorials/images/com.apple.SensitiveContentAnalysis/sensitivecontentanalysis-1@2x.png)
 
-##### Intervene when content is sensitive
+### Intervene when content is sensitive
 
 If the framework determines that some media contains sensitive content, call the person’s attention to the issue and avoid displaying the media until the person decides what to do. For example, the following image depicts Messages in iOS 17 as a potentially explicit image arrives. The user interface blurs the image and:
 

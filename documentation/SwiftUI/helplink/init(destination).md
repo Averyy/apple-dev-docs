@@ -16,7 +16,7 @@ Constructs a new help link that opens the specified destination URL.
 @preconcurrency init(destination: URL)
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer when you want the standard help button appearance that opens a link to a website.
 

@@ -19,7 +19,7 @@ protocol NSAccessibilityElementLoading : NSObjectProtocol
 @protocol NSAccessibilityElementLoading <NSObject>
 ```
 
-#### Overview
+## Overview
 
 You can further enhance the adopting element by implementing any of the information properties or action methods that the [`NSAccessibilityProtocol`](./nsaccessibilityprotocol.md) protocol declares.
 

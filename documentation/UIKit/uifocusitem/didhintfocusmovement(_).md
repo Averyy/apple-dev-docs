@@ -23,7 +23,7 @@ optional func didHintFocusMovement(_ hint: UIFocusMovementHint)
 - (void) didHintFocusMovement:(UIFocusMovementHint *) hint;
 ```
 
-#### Discussion
+## Discussion
 
 The focus item is mutated by the focus engine whenever the user’s finger moves on the remote.
 

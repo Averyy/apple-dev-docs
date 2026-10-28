@@ -20,11 +20,11 @@ func DADiskCopyIOMedia(_ disk: DADisk) -> io_service_t
 extern io_service_t DADiskCopyIOMedia(DADiskRef disk);
 ```
 
-#### Return Value
+## Return Value
 
 The disk’s I/O Kit media object.
 
-#### Discussion
+## Discussion
 
 The caller of this function receives a reference to the returned object. The caller also implicitly retains the object and is responsible for releasing it with IOObjectRelease().
 

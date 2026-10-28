@@ -19,7 +19,7 @@ class XCSourceTextBuffer
 @interface XCSourceTextBuffer : NSObject
 ```
 
-#### Overview
+## Overview
 
 Mutations to the buffer are tracked and committed when a command completes successfully and has not been canceled by the user.
 

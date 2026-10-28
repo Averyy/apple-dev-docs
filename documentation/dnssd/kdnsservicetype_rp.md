@@ -23,7 +23,7 @@ var kDNSServiceType_RP: Int { get }
 kDNSServiceType_RP
 ```
 
-#### Discussion
+## Discussion
 
 Responsible person.
 

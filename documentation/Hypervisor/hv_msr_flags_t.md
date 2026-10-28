@@ -19,7 +19,7 @@ typealias hv_msr_flags_t = UInt32
 typedef uint32_t hv_msr_flags_t;
 ```
 
-#### Discussion
+## Discussion
 
 This type represents the native MSR permissions for `hv_vm_enable_managed_msr()`. The [MSR Permissions](./api-3567078-msr_permissions-enum.md) enumeration describes the available permission values.
 

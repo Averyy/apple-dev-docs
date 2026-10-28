@@ -19,11 +19,11 @@ func SKIndexGetMaximumTermID(_ inIndex: SKIndex!) -> CFIndex
 CFIndex SKIndexGetMaximumTermID(SKIndexRef inIndex);
 ```
 
-#### Return Value
+## Return Value
 
 A CFIndex object containing the highest-numbered term ID in an index.
 
-#### Discussion
+## Discussion
 
 A new Search Kit index does not have term IDs until it is flushed.
 

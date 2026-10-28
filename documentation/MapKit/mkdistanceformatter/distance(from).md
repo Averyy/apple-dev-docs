@@ -25,11 +25,11 @@ func distance(from distance: String) -> CLLocationDistance
 - (CLLocationDistance) distanceFromString:(NSString *) distance;
 ```
 
-#### Return Value
+## Return Value
 
 The distance value represented by the string or `-1.0` if the string does not contain a recognized distance value.
 
-#### Discussion
+## Discussion
 
 This method searches the provided string for a number that could represent a distance. Specify distances as purely numerical values. Don’t specify distances as fractions such as “1/4 mile,” use distances and standard distance designations instead, such as “0.25 miles,” “1.2 km,” “120 yards,” and so on.
 

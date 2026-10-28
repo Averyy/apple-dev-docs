@@ -23,7 +23,7 @@ var transform3D: CATransform3D { get set }
 @property (nonatomic) CATransform3D transform3D;
 ```
 
-#### Discussion
+## Discussion
 
 Assigning a value to this property replaces the value in the [`transform`](./transform.md) property with an affine version of the 3D transform you specify.
 

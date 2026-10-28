@@ -16,7 +16,7 @@
 kINQUIRY_Byte56_IUS_Bit
 ```
 
-#### Discussion
+## Discussion
 
 IUS bit definition.
 

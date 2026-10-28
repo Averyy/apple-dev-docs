@@ -21,7 +21,7 @@ Creates the object with specified strides.
 convenience init(shape: [Int], dataType: MLMultiArrayDataType, strides: [Int])
 ```
 
-#### Discussion
+## Discussion
 
 The contents of the object are left uninitialized; the client must initialize it.
 

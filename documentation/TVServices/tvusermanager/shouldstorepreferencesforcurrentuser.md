@@ -19,7 +19,7 @@ var shouldStorePreferencesForCurrentUser: Bool { get }
 @property (nonatomic, assign, readonly) BOOL shouldStorePreferencesForCurrentUser;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  To create a [`TVUserManager`](../tvusermanager.md) object, add the [`User Management Entitlement`](../../BundleResources/entitlements/com.apple.developer.user-management.md) to your app or app extension, and select the Runs as Current User, Only When User-Independent Keychain is Available option.
 

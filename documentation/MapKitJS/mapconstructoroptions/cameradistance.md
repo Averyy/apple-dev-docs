@@ -15,7 +15,7 @@ The altitude of the camera relative to the elevation of the center of the map.
 cameraDistance?: number;
 ```
 
-#### Discussion
+## Discussion
 
 This property sets the altitude of the camera relative to the elevation of the center of the map. The camera distance is a value in meters; it must be greater than or equal to `0`.
 

@@ -21,7 +21,7 @@ The identifiers of zones with changes on the server that have not yet been fetch
 @property (copy, readonly) NSArray<CKRecordZoneID *> * zoneIDsWithUnfetchedServerChanges;
 ```
 
-#### Discussion
+## Discussion
 
 The sync engine populates this list automatically, for example when receiving a push notification indicating new changes.
 

@@ -23,7 +23,7 @@ let PKDisbursementErrorDomain: String
 extern NSString * const PKDisbursementErrorDomain;
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`PKDisbursementErrorDomain`](./pkdisbursementerrordomain.md) to create your own [`PKDisbursementError`](./pkdisbursementerror.md) objects, and return them to indicate problems with a transfer.
 

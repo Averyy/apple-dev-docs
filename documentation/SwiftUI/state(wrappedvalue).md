@@ -18,11 +18,11 @@ Creates a property with a wrapped value that can read and write a value managed 
 ## Declaration
 
 ```swift
-@attached
-(accessor, names: named(init), named(get), named(set)) @attached(peer, names: prefixed(`_`), prefixed(__), prefixed(`$`)) macro State<Value>(wrappedValue: Value)
+@attached(accessor, names: named(init), named(get), named(set))
+@attached(peer, names: prefixed(`_`), prefixed(__), prefixed(`$`)) macro State<Value>(wrappedValue: Value)
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**: When you build with Xcode 26 or earlier, the system uses the [`State`](./state.md) property wrapper instead.
 

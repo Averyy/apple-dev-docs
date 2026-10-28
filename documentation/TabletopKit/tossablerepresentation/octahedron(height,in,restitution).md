@@ -15,7 +15,7 @@ Creates a regular octahedron, a shape with 8 triangular faces, that the player t
 static func octahedron(height: Float, in unit: UnitLength = .meters, restitution: Float? = nil) -> TossableRepresentation
 ```
 
-#### Discussion
+## Discussion
 
 The vertices for the simulated octahedron are oriented with one face toward +y with one vertex of that top face oriented toward -z. In this orientation, the height (h) is measured from face to opposing face, and the vertices have the following coordinates, which all lie on a circumscribed sphere of radius r = h/2 ⋅ sqrt(3): ±Y face: ±{          0, +1, -sqrt(2)   } ⋅ h/2, ±{ -sqrt(6)/2, +1, +sqrt(2)/2 } ⋅ h/2, ±{ +sqrt(6)/2, +1, +sqrt(2)/2 } ⋅ h/2
 

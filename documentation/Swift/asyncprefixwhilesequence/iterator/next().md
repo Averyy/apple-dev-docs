@@ -21,7 +21,7 @@ Produces the next element in the prefix-while sequence.
 mutating func next() async rethrows -> Base.Element?
 ```
 
-#### Discussion
+## Discussion
 
 If the predicate hasn’t yet failed, this method gets the next element from the base sequence and calls the predicate with it. If this call succeeds, this method passes along the element. Otherwise, it returns `nil`, ending the sequence.
 

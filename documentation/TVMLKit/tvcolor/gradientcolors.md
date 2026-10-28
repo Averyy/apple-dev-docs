@@ -21,7 +21,7 @@ var gradientColors: [UIColor]? { get }
 @property (nonatomic, readonly, nullable) NSArray<UIColor *> * gradientColors;
 ```
 
-#### Discussion
+## Discussion
 
 This property is only available when [`colorType`](./colortype.md) is set to [`TVColorType.linearGradientTopToBottom`](../tvcolortype/lineargradienttoptobottom.md) or [`TVColorType.linearGradientLeftToRight`](../tvcolortype/lineargradientlefttoright.md).
 

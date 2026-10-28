@@ -17,7 +17,7 @@ Enumerates items changed since the last sync.
 func enumerateChanges(startingAt syncAnchor: ContactItemSyncAnchor, for observer: any ContactItemChangeObserver) async
 ```
 
-#### Discussion
+## Discussion
 
 The system calls `enumerateChanges(startingAt:for:)` for each batch of changed items to enumerate. After enumerating each batch of changed items, your implementation calls [`didFinishEnumeratingChanges(upTo:moreComing:)`](../contactitemchangeobserver/didfinishenumeratingchanges%28upto,morecoming%29.md) .
 

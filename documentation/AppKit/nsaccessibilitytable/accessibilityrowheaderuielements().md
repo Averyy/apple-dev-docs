@@ -19,11 +19,11 @@ optional func accessibilityRowHeaderUIElements() -> [Any]?
 - (NSArray *) accessibilityRowHeaderUIElements;
 ```
 
-#### Return Value
+## Return Value
 
 The row header elements for the table.
 
-#### Discussion
+## Discussion
 
 This method is the getter for the [`NSAccessibilityProtocol`](../nsaccessibilityprotocol.md) protocol’s [`accessibilityRowHeaderUIElements`](../nsaccessibility-c.protocol/accessibilityrowheaderuielements.md) property.
 

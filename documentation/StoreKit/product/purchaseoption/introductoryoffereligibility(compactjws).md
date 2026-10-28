@@ -26,7 +26,7 @@ static func introductoryOfferEligibility(compactJWS: String) -> Product.Purchase
 
 - [Generating JWS to sign App Store requests](../../generating-jws-to-sign-app-store-requests.md)
 
-#### Discussion
+## Discussion
 
 For information about generating and signing this JWT, see [Include custom claims for introductory offer eligibility](../../generating-jws-to-sign-app-store-requests.md#Include-custom-claims-for-introductory-offer-eligibility).
 

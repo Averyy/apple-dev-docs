@@ -25,7 +25,7 @@ func NSDecimalCopy(_ destination: UnsafeMutablePointer<Decimal>, _ source: Unsaf
 extern void NSDecimalCopy(NSDecimal *destination, const NSDecimal *source);
 ```
 
-#### Discussion
+## Discussion
 
 Copies the value in `source` to `destination`.
 

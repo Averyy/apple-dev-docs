@@ -19,11 +19,11 @@ optional func accessibilityVisibleRows() -> [any NSAccessibilityRow]?
 - (NSArray<id<NSAccessibilityRow>> *) accessibilityVisibleRows;
 ```
 
-#### Return Value
+## Return Value
 
 An array containing the currently visible rows.
 
-#### Discussion
+## Discussion
 
 This method is the getter for the [`NSAccessibilityProtocol`](../nsaccessibilityprotocol.md) protocol’s [`accessibilityVisibleRows`](../nsaccessibility-c.protocol/accessibilityvisiblerows.md) property.
 

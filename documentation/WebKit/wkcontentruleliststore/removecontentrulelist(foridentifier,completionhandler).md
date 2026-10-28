@@ -27,7 +27,7 @@ func removeContentRuleList(forIdentifier identifier: String!) async throws
 - (void) removeContentRuleListForIdentifier:(NSString *) identifier completionHandler:(void (^)(NSError *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method also removes the persistent copy of the rules stored on disk.
 

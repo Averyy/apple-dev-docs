@@ -25,7 +25,7 @@ func vDSP_DFT_Interleaved_DestroySetup(_ Setup: vDSP_DFT_Interleaved_Setup?)
 void vDSP_DFT_Interleaved_DestroySetup(vDSP_DFT_Interleaved_Setup Setup);
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This function isn’t fully thread-safe. Don’t call this function concurrently with any function that uses or shares its underlying storage with the setup structure.
 

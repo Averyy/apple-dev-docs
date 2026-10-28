@@ -20,7 +20,7 @@ Ensures the shaders in the render pass’s subsequent draw commands have access 
 - (void) useHeaps:(id<MTLHeap> const[]) heaps count:(NSUInteger) count stages:(MTLRenderStages) stages;
 ```
 
-#### Discussion
+## Discussion
 
 You can make the resources in `heaps` *resident* (available in GPU memory) for the remaining duration of the render pass by calling this method. Call the method before encoding draw calls that may access resources within `heaps` through an argument buffer. The method ensures each resource is in a format that’s compatible with the shaders that depend on it.
 

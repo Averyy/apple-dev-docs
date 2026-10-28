@@ -21,7 +21,7 @@ func ABAddressBookHasUnsavedChanges(_ addressBook: ABAddressBook!) -> Bool
 extern bool ABAddressBookHasUnsavedChanges(ABAddressBookRef addressBook);
 ```
 
-#### Return Value
+## Return Value
 
 `true` when `addressBook` contains unsaved changes, `false` otherwise.
 

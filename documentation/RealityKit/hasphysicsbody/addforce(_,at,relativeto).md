@@ -21,7 +21,7 @@ Applies a force to the physics body at the specified position.
 @preconcurrency func addForce(_ force: SIMD3<Float>, at position: SIMD3<Float>, relativeTo referenceEntity: Entity?)
 ```
 
-#### Discussion
+## Discussion
 
 The physics simulator applies the added force until the end of the frame interval. To continue exerting the force after that time, add the force again with another call to the method. Handle the [`SceneEvents.Update`](../sceneevents/update.md) event to receive an indication of when the frame interval ends. For an app that renders at 60 frames per second (fps), this event occurs about once per 16 milliseconds.
 

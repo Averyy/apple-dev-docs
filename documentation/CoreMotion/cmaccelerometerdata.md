@@ -24,7 +24,7 @@ class CMAccelerometerData
 @interface CMAccelerometerData : CMLogItem
 ```
 
-#### Overview
+## Overview
 
 An application accesses `CMAccelerometerData` objects through the block handler specified as the last parameter of the [`startAccelerometerUpdates(to:withHandler:)`](./cmmotionmanager/startaccelerometerupdates%28to,withhandler%29.md) method and through the [`accelerometerData`](./cmmotionmanager/accelerometerdata.md) property, both declared by the `CMMotionManager` class. The superclass of `CMAccelerometerData`, [`CMLogItem`](./cmlogitem.md), defines a [`timestamp`](./cmlogitem/timestamp.md) property that records when the acceleration measurement was taken.
 

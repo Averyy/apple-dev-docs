@@ -25,11 +25,11 @@ func attributedString(for obj: Any, withDefaultAttributes attrs: [NSAttributedSt
 - (NSAttributedString *) attributedStringForObjectValue:(id) obj withDefaultAttributes:(NSDictionary<NSString *,id> *) attrs;
 ```
 
-#### Return Value
+## Return Value
 
 An attributed string that represents `anObject`.
 
-#### Discussion
+## Discussion
 
 When implementing a subclass, return an `NSAttributedString` object if the string for display should have some attributes. For instance, you might want negative values in a financial application to appear in red text. Invoke your implementation of [`string(for:)`](./string%28for%29.md) to get the non-attributed string, then create an `NSAttributedString` object with it (see [`init(string:)`](../nsattributedstring/init%28string%29.md)). Use the `attributes` default dictionary to reset the attributes of the string when a change in value warrants it (for example, a negative value becomes positive) For information on creating attributed strings, see [Attributed String Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/AttributedStrings/AttributedStrings.html#//apple_ref/doc/uid/10000036i).
 

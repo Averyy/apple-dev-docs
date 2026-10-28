@@ -19,11 +19,11 @@ func CMSEncodeContent(_ signers: CFTypeRef?, _ recipients: CFTypeRef?, _ eConten
 OSStatus CMSEncodeContent(CFTypeRef signers, CFTypeRef recipients, CFTypeRef eContentTypeOID, Boolean detachedContent, CMSSignedAttributes signedAttributes, const void *content, size_t contentLen, CFDataRef*encodedContentOut);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 If you use this function, you must include content and you must provide valid non-`NULL` input for at least one of the `signers` and `recipients` parameters. You can both encrypt and sign a message; however, you cannot use detached content with an encrypted message. If you want to create a message that contains certificates and no other content, you must use the [`CMSEncoderAddSupportingCerts(_:_:)`](./cmsencoderaddsupportingcerts%28_,_%29.md) function instead of this one. To gain more control over the process of encoding a message, call the sequence of functions beginning with the [`CMSEncoderCreate(_:)`](./cmsencodercreate%28_%29.md) function instead of this one.
 

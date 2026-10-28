@@ -24,7 +24,7 @@ case phase
 kAudioUnitParameterUnit_Phase
 ```
 
-#### Discussion
+## Discussion
 
 Typical range is –180 through +180 and is intended to represent the phase difference between two signals. See also the [`AudioUnitParameterUnit.degrees`](./degrees.md) property.
 

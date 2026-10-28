@@ -33,7 +33,7 @@ func sendReminder(to participants: [GKTurnBasedParticipant], localizableMessageK
 
 - [Sending messages to players in turn-based games](../sending-messages-to-players-in-turn-based-games.md)
 
-#### Discussion
+## Discussion
 
 Use this method to send a localized message to participants of a turn-based event or exchange request that needs their attention.
 

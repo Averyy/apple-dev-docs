@@ -22,7 +22,7 @@ class func writePlaceholder(at placeholderURL: URL, withMetadata metadata: NSFil
 + (BOOL) writePlaceholderAtURL:(NSURL *) placeholderURL withMetadata:(NSFileProviderItem) metadata error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method whenever you need to create a placeholder for a document. The metadata that you provide sets the data provided to the user in the browser interface.
 

@@ -15,7 +15,7 @@ The payload that configures the firewall.
 object Firewall
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.security.firewall` as the payload type.
 
@@ -23,7 +23,7 @@ The payload needs to exist in a system-scoped profile.
 
 If more than one profile contains this payload, the system uses the most restrictive union of settings.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -35,7 +35,7 @@ If more than one profile contains this payload, the system uses the most restric
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | macOS |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

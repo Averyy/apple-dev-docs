@@ -23,7 +23,7 @@ var kCTFontTableZapf: Int { get }
 kCTFontTableZapf
 ```
 
-#### Discussion
+## Discussion
 
 Font table tag for glyph reference.
 

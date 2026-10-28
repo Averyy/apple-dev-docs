@@ -17,7 +17,7 @@ The friction the collider applies to contacting cloth body particles with no rel
 var staticFriction: Float { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Must be non-negative; negative values are clamped to zero. The default value is `0.8`.
 

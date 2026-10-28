@@ -21,7 +21,7 @@ struct ModelComponent
 
 - [Model Compatibility](./model-compatibility.md)
 
-#### Overview
+## Overview
 
 A model declares its components through [`ModelComponentsProviding`](./modelcomponentsproviding.md). A component that the model lists in [`onDemandComponents`](./modelcomponentsproviding/ondemandcomponents.md) loads the first time an input needs it. List a component in [`excludedComponents`](./modelconfiguration/excludedcomponents.md) to never load it.
 

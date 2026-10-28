@@ -20,7 +20,7 @@ func selectAlternateSetting(_ alternateSetting: Int) throws
 - (BOOL) selectAlternateSetting:(NSUInteger) alternateSetting error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to select an alternative setting for the interface. The operation aborts all pending input/output requests on the interface’s pipes, and closes all open pipes. It also selects the new alternative setting through the `SET_INTERFACE` control request (See USB 3.2, 9.4.10.).
 

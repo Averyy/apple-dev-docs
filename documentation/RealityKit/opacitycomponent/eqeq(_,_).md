@@ -20,7 +20,7 @@ Returns a Boolean value that indicates whether two opacity components are equal.
 static func == (lhs: OpacityComponent, rhs: OpacityComponent) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 If the member values of each component match, the components are equal.
 

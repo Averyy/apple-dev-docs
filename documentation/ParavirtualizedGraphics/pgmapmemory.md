@@ -15,7 +15,7 @@ The block signature for a routine that maps guest physical memory into a task.
 typedef _Bool (^)(struct PGTask_s *, unsigned int, unsigned long long, _Bool, struct PGPhysicalMemoryRange_s *) PGMapMemory;
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`true`](../Swift/true.md) if the block successfully mapped memory; otherwise [`false`](../Swift/false.md).
 

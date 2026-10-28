@@ -21,7 +21,7 @@ Generates a data frame that contains the quantiles of each group’s rows along 
 func quantiles<N>(_ columnID: ColumnID<N>, quantile: N, order: Order? = nil) -> DataFrame where N : BinaryFloatingPoint
 ```
 
-#### Discussion
+## Discussion
 
 > **Precondition**: Quantile must be between 0.0 and 1.0.
 

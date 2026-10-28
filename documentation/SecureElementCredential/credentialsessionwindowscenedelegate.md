@@ -20,7 +20,7 @@ protocol CredentialSessionWindowSceneDelegate
 
 - [Accessing and using secure element credentials](./accessing-and-using-secure-element-credentials.md)
 
-#### Overview
+## Overview
 
 All files that refer to symbols defined here should never `import SwiftUI` Importing SwiftUI with UIKit will result in ambiguous symbols during compilation.
 

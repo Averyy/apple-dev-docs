@@ -26,7 +26,7 @@ class func string(withContentsOfFile path: String) -> Any?
 + (id) stringWithContentsOfFile:(NSString *) path;
 ```
 
-#### Discussion
+## Discussion
 
 If the contents begin with a Unicode byte-order mark (`U+FEFF` or `U+FFFE`), interprets the contents as UTF-16 code units. If the contents begin with a UTF-8 byte-order mark (`EFBBBF`), interprets the contents as UTF-8. Otherwise, interprets the contents as data in the default C string encoding. Since the default C string encoding will vary with the user’s configuration, do not depend on this method unless you are using Unicode or UTF-8 or you can verify the default C string encoding. Returns `nil` if the file can’t be opened.
 

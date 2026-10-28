@@ -24,11 +24,11 @@ Watches for updates to a config value for the given config key, converting from 
 func watchInt<Value, Return>(forKey key: ConfigKey, as type: Value.Type = Value.self, isSecret: Bool = false, fileID: String = #fileID, line: UInt = #line, updatesHandler: nonisolated(nonsending) (ConfigUpdatesAsyncSequence<Value?, Never>) async throws -> Return) async throws -> Return where Value : ExpressibleByConfigInt, Value : Sendable, Return : ~Copyable
 ```
 
-#### Return Value
+## Return Value
 
 The result produced by the handler.
 
-#### Discussion
+## Discussion
 
 Use this method to observe changes to optional integer-convertible configuration values over time. The handler receives an async sequence that produces the current value whenever it changes, or `nil` if the value is missing or can’t be converted.
 

@@ -15,7 +15,7 @@ An arrangement where the participants can see one another and the app’s conten
 static let conversational: SpatialTemplatePreference
 ```
 
-#### Discussion
+## Discussion
 
 This arrangement works best when you want participants to converse with each other and also look at your app’s content.
 

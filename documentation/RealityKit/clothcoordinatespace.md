@@ -17,7 +17,7 @@ Defines a reference frame within a cloth simulation.
 struct ClothCoordinateSpace
 ```
 
-#### Overview
+## Overview
 
 Positions described with respect to a cloth coordinate space are relative to its reference frame.
 

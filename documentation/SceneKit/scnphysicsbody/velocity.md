@@ -25,7 +25,7 @@ var velocity: SCNVector3 { get set }
 @property (nonatomic) SCNVector3 velocity;
 ```
 
-#### Discussion
+## Discussion
 
 SceneKit’s physics simulation determines the velocity (and corresponding change in position) of each dynamic physics body in the scene. You can also set a body’s velocity directly to set the physics simulation in motion or influence its behavior.
 

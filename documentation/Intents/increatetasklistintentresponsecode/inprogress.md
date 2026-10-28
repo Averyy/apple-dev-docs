@@ -25,7 +25,7 @@ case inProgress
 INCreateTaskListIntentResponseCodeInProgress
 ```
 
-#### Discussion
+## Discussion
 
 Return this code if you initiated the task list creation process but didn’t receive a timely response. You might use this code when a server handles creation and you haven’t yet received a confirmation from that server.
 

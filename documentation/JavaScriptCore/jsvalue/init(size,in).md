@@ -22,11 +22,11 @@ init!(size: CGSize, in context: JSContext!)
 + (JSValue *) valueWithSize:(CGSize) size inContext:(JSContext *) context;
 ```
 
-#### Return Value
+## Return Value
 
 A newly allocated JavaScript object containing properties named width and height, with values from the CGSize.
 
-#### Discussion
+## Discussion
 
 Create a JSValue from a CGSize.
 

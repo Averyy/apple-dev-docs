@@ -20,7 +20,7 @@ nonisolated
 struct EmptyTableRowContent<Value> where Value : Identifiable
 ```
 
-#### Overview
+## Overview
 
 You will rarely, if ever, need to create an `EmptyTableRowContent` directly. Instead, `EmptyTableRowContent` represents the absence of a row.
 

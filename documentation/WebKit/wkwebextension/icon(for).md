@@ -39,11 +39,11 @@ func icon(for size: CGSize) -> NSImage?
 - (NSImage *) iconForSize:(CGSize) size;
 ```
 
-#### Return Value
+## Return Value
 
 The extension’s icon image, or `nil` if the icon was unable to be loaded.
 
-#### Discussion
+## Discussion
 
 This icon should represent the extension in settings or other areas that show the extension. The returned image will be the best match for the specified size that is available in the extension’s icon set. If no matching icon can be found, the method will return `nil`.
 

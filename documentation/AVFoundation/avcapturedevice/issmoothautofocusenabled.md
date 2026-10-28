@@ -22,7 +22,7 @@ var isSmoothAutoFocusEnabled: Bool { get set }
 @property (nonatomic, getter=isSmoothAutoFocusEnabled) BOOL smoothAutoFocusEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 On capable devices, you can enable a focusing mode in which the camera makes lens movements more slowly. This mode make focus transitions less visually intrusive, a behavior that you may want for video capture.
 

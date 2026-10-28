@@ -24,11 +24,11 @@ func setPurgeableState(_ state: MPSPurgeableState) -> MPSPurgeableState
 - (MPSPurgeableState) setPurgeableState:(MPSPurgeableState) state;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the prior purgeable state of the image’s underlying texture.
 
-#### Discussion
+## Discussion
 
 This method behaves the same as the [`setPurgeableState(_:)`](../../Metal/mtlresource/setpurgeablestate%28_%29.md) method of the [`MTLResource`](../../Metal/mtlresource.md) class, except that the state might be [`MPSPurgeableState.allocationDeferred`](../mpspurgeablestate/allocationdeferred.md), which means there is no underlying texture to mark as volatile or non-volatile. Attempts to set a purgeable state on [`MTLTexture`](../../Metal/mtltexture.md) objects that have not yet been allocated will be ignored.
 

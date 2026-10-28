@@ -24,7 +24,7 @@ case replace
 MTLStencilOperationReplace
 ```
 
-#### Discussion
+## Discussion
 
 You can set by the reference value by calling the [`setStencilReferenceValue(_:)`](../mtlrendercommandencoder/setstencilreferencevalue%28_%29.md) method of an [`MTLRenderCommandEncoder`](../mtlrendercommandencoder.md) instance.
 

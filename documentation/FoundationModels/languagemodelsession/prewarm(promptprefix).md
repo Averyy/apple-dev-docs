@@ -24,7 +24,7 @@ final func prewarm(promptPrefix: Prompt? = nil)
 
 - [Optimizing key-value caching in language model sessions](../optimizing-key-value-caching-in-language-model-sessions.md)
 
-#### Discussion
+## Discussion
 
 This method can be useful in cases where you have a strong signal that the user will interact with session within a few seconds. For example, you might call `prewarm(promptPrefix:)` when a person begins typing into a text field.
 

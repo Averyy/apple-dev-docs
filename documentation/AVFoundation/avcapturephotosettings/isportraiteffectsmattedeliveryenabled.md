@@ -22,7 +22,7 @@ var isPortraitEffectsMatteDeliveryEnabled: Bool { get set }
 @property (nonatomic, getter=isPortraitEffectsMatteDeliveryEnabled) BOOL portraitEffectsMatteDeliveryEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The default is `NO`.  Set to `YES` if you wish to receive a portrait effects matte with your photo. AVFoundation throws an exception if [`isPortraitEffectsMatteDeliveryEnabled`](../avcapturephotooutput/isportraiteffectsmattedeliveryenabled.md) is not set to `YES`, or if your delegate doesn’t respond to the [`photoOutput(_:didFinishProcessingPhoto:error:)`](../avcapturephotocapturedelegate/photooutput%28_,didfinishprocessingphoto,error%29.md) selector.
 

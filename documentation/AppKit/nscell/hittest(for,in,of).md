@@ -19,11 +19,11 @@ func hitTest(for event: NSEvent, in cellFrame: NSRect, of controlView: NSView) -
 - (NSCellHitResult) hitTestForEvent:(NSEvent *) event inRect:(NSRect) cellFrame ofView:(NSView *) controlView;
 ```
 
-#### Return Value
+## Return Value
 
 A constant that specifies the type of area in which the event occurred—see [`NSCell.HitResult`](./hitresult.md) for values.
 
-#### Discussion
+## Discussion
 
 You can use a bit-wise mask to look for a specific value when calling this method—see [`NSCell.HitResult`](./hitresult.md) for values.
 

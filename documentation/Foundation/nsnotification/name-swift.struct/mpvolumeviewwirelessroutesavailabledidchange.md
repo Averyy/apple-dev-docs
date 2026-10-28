@@ -20,7 +20,7 @@ Indicates the available wireless routes changed.
 static let MPVolumeViewWirelessRoutesAvailableDidChange: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The system posts this notification when the [`areWirelessRoutesAvailable`](../../../MediaPlayer/mpvolumeview/arewirelessroutesavailable.md) property changes.
 

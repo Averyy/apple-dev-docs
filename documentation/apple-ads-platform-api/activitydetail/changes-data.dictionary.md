@@ -15,11 +15,11 @@ A single field change entry, capturing the field name and its before and after v
 object ActivityDetail.Changes
 ```
 
-#### Discussion
+## Discussion
 
 Each entry in the `changes` array describes a single field that changed during the activity.
 
-##### Example
+### Example
 
 ```json
 {

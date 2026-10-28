@@ -17,7 +17,7 @@ Whether the processor stood down because a sampled token did not match the const
 var didStandDown: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 That happens when another component overrides this one, or when the tokenizer disagrees with the model vocabulary. Standing down is the correct conservative response — the budget stops interfering and the model finishes under its own control — so this is a diagnostic, not an error. It is deliberately not a trap: a `precondition` here would crash a shipping generation loop, and an `assertionFailure` would crash debug builds of client apps.
 

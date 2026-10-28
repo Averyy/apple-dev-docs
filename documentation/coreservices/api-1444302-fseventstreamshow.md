@@ -18,7 +18,7 @@ func FSEventStreamShow(_ streamRef: ConstFSEventStreamRef)
 void FSEventStreamShow(ConstFSEventStreamRef streamRef);
 ```
 
-#### Discussion
+## Discussion
 
 Prints a description of the supplied stream to stderr. For debugging only.
 

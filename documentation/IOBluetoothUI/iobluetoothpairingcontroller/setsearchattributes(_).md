@@ -19,7 +19,7 @@ func setSearchAttributes(_ searchAttributes: UnsafePointer<IOBluetoothDeviceSear
 - (void) setSearchAttributes:(const IOBluetoothDeviceSearchAttributes *) searchAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 The device search attributes control the inquiry behavior of the panel. They allow only devices that match the specified attributes (i.e. class of device) to be displayed to the user. Note that this only covers attributes returned in an inquiry result and not actual SDP services on the device.
 

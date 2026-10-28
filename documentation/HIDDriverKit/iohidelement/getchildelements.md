@@ -14,7 +14,7 @@
 virtual OSArray * getChildElements();
 ```
 
-#### Return Value
+## Return Value
 
 Returns an array of child elements, if any.
 

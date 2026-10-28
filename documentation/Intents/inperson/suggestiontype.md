@@ -24,7 +24,7 @@ var suggestionType: INPersonSuggestionType { get }
 @property (atomic, readonly) INPersonSuggestionType suggestionType;
 ```
 
-#### Discussion
+## Discussion
 
 When donating interactions involving a person, the system uses this property to determine how to surface the user’s identity. For example, an app might prefer to display the person’s social media profile name rather than their real name.
 

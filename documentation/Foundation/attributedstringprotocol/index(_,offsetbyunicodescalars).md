@@ -21,7 +21,7 @@ Returns the position of the Unicode scalar offset a given distance, measured in 
 func index(_ i: AttributedString.Index, offsetByUnicodeScalars distance: Int) -> AttributedString.Index
 ```
 
-#### Return Value
+## Return Value
 
 The position of the Unicode scalar offset `distance` Unicode scalars from position `i`.
 

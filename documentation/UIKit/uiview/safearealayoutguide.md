@@ -27,7 +27,7 @@ var safeAreaLayoutGuide: UILayoutGuide { get }
 
 - [Positioning content relative to the safe area](../positioning-content-relative-to-the-safe-area.md)
 
-#### Discussion
+## Discussion
 
 When the view is visible onscreen, this guide reflects the portion of the view that is not covered by navigation bars, tab bars, toolbars, and other ancestor views. (In tvOS, the safe area reflects the area not covered the screen’s bezel.) If the view is not currently installed in a view hierarchy, or is not yet visible onscreen, the layout guide edges are equal to the edges of the view.
 

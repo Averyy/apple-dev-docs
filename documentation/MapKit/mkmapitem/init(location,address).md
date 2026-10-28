@@ -25,11 +25,11 @@ init(location: CLLocation, address: MKAddress?)
 - (instancetype) initWithLocation:(CLLocation *) location address:(MKAddress *) address;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized map item object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a map item for a specific location. Don’t use it to create a map item representing the current location of someone’s device, instead use the ```MKMapItem/forCurrentLocation()`` method.
 

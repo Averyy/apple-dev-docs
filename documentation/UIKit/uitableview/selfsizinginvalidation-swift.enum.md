@@ -23,7 +23,7 @@ enum SelfSizingInvalidation
 enum UITableViewSelfSizingInvalidation : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Use these constants with the [`selfSizingInvalidation`](./selfsizinginvalidation-swift.property.md) property.
 

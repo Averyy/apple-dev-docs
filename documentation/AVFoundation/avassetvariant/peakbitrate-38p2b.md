@@ -21,7 +21,7 @@ The peak bit rate for the variant.
 @property (nonatomic, readonly) double peakBitRate;
 ```
 
-#### Discussion
+## Discussion
 
 If the variant doesn’t define a peak bit rate, the value is negative.
 

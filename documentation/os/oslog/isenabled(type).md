@@ -25,7 +25,7 @@ func isEnabled(type: OSLogType) -> Bool
 extern bool os_log_type_enabled(os_log_t oslog, os_log_type_t type);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if logging at the specified level is in an enabled state; otherwise, [`false`](../../Swift/false.md).
 

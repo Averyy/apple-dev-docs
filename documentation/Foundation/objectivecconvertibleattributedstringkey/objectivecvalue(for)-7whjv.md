@@ -23,7 +23,7 @@ static func objectiveCValue(for value: Self.Value) throws -> Self.ObjectiveCValu
 
 Available when `ObjectiveCValue` is `NSString`, `Value` conforms to `RawRepresentable`, and `Value.RawValue` is `String`.
 
-#### Return Value
+## Return Value
 
 `value`, expressed as the Objective-C type defined by [`ObjectiveCValue`](./objectivecvalue.md).
 

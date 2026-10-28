@@ -21,7 +21,7 @@ The position of the first element in a nonempty array.
 var startIndex: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 For an instance of `ContiguousArray`, `startIndex` is always zero. If the array is empty, `startIndex` is equal to `endIndex`.
 

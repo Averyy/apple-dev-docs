@@ -23,7 +23,7 @@ var contentInsetsReference: UIContentInsetsReference { get set }
 @property (nonatomic) UIContentInsetsReference contentInsetsReference;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`UIContentInsetsReference.safeArea`](../uicontentinsetsreference/safearea.md).
 

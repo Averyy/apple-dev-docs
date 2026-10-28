@@ -25,11 +25,11 @@ init?(pcmFormat format: AVAudioFormat, frameCapacity: AVAudioFrameCount)
 - (instancetype) initWithPCMFormat:(AVAudioFormat *) format frameCapacity:(AVAudioFrameCount) frameCapacity;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`AVAudioPCMBuffer`](../avaudiopcmbuffer.md) instance, or `nil` if it’s not possible.
 
-#### Discussion
+## Discussion
 
 The method returns `nil` due to the following reasons:
 

@@ -5,7 +5,7 @@
 
 See the full JSON code from this tutorial.
 
-#### Overview
+## Overview
 
 This page brings together everything from this tutorial as a template that you can use for your News articles. If you followed the steps throughout this tutorial, the following example code should match the code in your `article.json` file.
 
@@ -469,11 +469,11 @@ You can copy this template (which is also the `article.json` file in `News_Desig
 }
 ```
 
-##### Previous
+### Previous
 
 [Adding Parallax Behavior](./adding-parallax-behavior.md)
 
-##### Next
+### Next
 
 [Creating a Complex, Layered Header](./creating-a-complex-layered-header.md)
 

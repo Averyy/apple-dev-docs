@@ -19,7 +19,7 @@ func setTitle(_ title: String?)
 - (void) setTitle:(NSString *) title;
 ```
 
-#### Discussion
+## Discussion
 
 This method looks for a localized version of title in your WatchKit extension’s `Localizable.strings` file. If it finds one, it uses the localized string for the switch title. If it does not find a localized version of the string, it uses the value in the title directly. The text replaces the previous text set for the switch.
 

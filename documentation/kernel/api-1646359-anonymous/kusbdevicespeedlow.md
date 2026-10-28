@@ -13,7 +13,7 @@
 kUSBDeviceSpeedLow = 0
 ```
 
-#### Discussion
+## Discussion
 
 The device is a low speed device.
 

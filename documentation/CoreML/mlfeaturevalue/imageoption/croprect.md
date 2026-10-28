@@ -25,7 +25,7 @@ static let cropRect: MLFeatureValue.ImageOption
 extern MLFeatureValueImageOption const MLFeatureValueImageOptionCropRect;
 ```
 
-#### Discussion
+## Discussion
 
 Use this value as a dictionary key for the `options` argument of an image-based `MLFeatureValue` initializer. Pair this key with a [`VNImageCropAndScaleOption`](../../../Vision/vnimagecropandscaleoption.md) value in the initializer’s `options` dictionary. For example, see [`init(CGImage:pixelsWide:pixelsHigh:pixelFormatType:options:)`](../init%28cgimage,pixelswide,pixelshigh,pixelformattype,options%29-2zg43.md).
 

@@ -25,7 +25,7 @@ static var traitCondensed: CTFontSymbolicTraits { get }
 kCTFontTraitCondensed
 ```
 
-#### Discussion
+## Discussion
 
 Additional detail is available via [`kCTFontWidthTrait`](../kctfontwidthtrait.md).
 

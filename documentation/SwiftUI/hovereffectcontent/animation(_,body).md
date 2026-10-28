@@ -15,11 +15,11 @@ Applies the given [`Animation`](../animation.md) to all effects within the `body
 func animation(_ animation: Animation?, body: (EmptyHoverEffectContent) -> some HoverEffectContent) -> some HoverEffectContent
 ```
 
-#### Return Value
+## Return Value
 
 A new effect that combines the effects defined in `body` with
 
-#### Discussion
+## Discussion
 
 Any effects defined within the `body` closure will be combined with this effect, and the `animation` will used to animate those effects’ changes when the effects are applied.
 

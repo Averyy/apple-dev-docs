@@ -16,7 +16,7 @@
 kSCSITask_ACA
 ```
 
-#### Discussion
+## Discussion
 
 The task has an auto-contingent-allegiance attribute.
 

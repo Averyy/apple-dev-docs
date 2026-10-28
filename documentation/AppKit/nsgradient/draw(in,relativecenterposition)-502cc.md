@@ -19,7 +19,7 @@ func draw(in path: NSBezierPath, relativeCenterPosition: NSPoint)
 - (void) drawInBezierPath:(NSBezierPath *) path relativeCenterPosition:(NSPoint) relativeCenterPosition;
 ```
 
-#### Discussion
+## Discussion
 
 The center point of the starting circle is the same as the center point of `path`. The radius of the starting circle is 0, resulting in the starting circle being just a point.
 

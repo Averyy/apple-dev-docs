@@ -15,7 +15,7 @@ Determine if a vnode is a symbolic link.
 int vnode_islnk(vnode_t vp);
 ```
 
-#### Return Value
+## Return Value
 
 Nonzero if the vnode is of type VLNK, 0 otherwise.
 

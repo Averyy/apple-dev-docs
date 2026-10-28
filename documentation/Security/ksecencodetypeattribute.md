@@ -21,7 +21,7 @@ let kSecEncodeTypeAttribute: CFString
 extern CFStringRef const kSecEncodeTypeAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 See `Encoding Types` for a list of valid values.
 

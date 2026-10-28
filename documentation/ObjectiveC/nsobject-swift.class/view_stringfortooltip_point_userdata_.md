@@ -15,7 +15,7 @@ Returns the tool tip string to be displayed due to the cursor pausing at locatio
 - (NSString *) view:(NSView *) view stringForToolTip:(NSToolTipTag) tag point:(NSPoint) point userData:(void *) data;
 ```
 
-#### Discussion
+## Discussion
 
 `userData` is additional information provided by the creator of the tool tip rectangle.
 

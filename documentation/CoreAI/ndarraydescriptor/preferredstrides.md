@@ -19,7 +19,7 @@ The strides that avoid data layout transformations during inference.
 var preferredStrides: [Int] { get }
 ```
 
-#### Discussion
+## Discussion
 
 During the specialization of an [`AIModel`](../aimodel.md), a preferred memory layout for a given ndArray value may be set depending on structure of the model and which compute units it is specialized for. In some cases, this can result in a non-contiguous layout being preferred/required by the backing compute. In such case, you are still able to provide `InferenceFunction.run` normal contiguous ndArray values, however it may incur a copy to the preferred layout. As such, this property provides an opportunity for you to optimize performance by creating your source ndArray value with the preferred striding and avoiding that copy.
 

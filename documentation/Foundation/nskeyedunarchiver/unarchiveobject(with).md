@@ -27,11 +27,11 @@ class func unarchiveObject(with data: Data) -> Any?
 + (id) unarchiveObjectWithData:(NSData *) data;
 ```
 
-#### Return Value
+## Return Value
 
 The object graph previously encoded by `NSKeyedArchiver` and stored in `data`.
 
-#### Discussion
+## Discussion
 
 This method raises an [`invalidArgumentException`](../nsexceptionname/invalidargumentexception.md) if `data` is not a valid archive.
 

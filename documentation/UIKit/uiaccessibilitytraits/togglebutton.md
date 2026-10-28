@@ -25,7 +25,7 @@ static let toggleButton: UIAccessibilityTraits
 extern const UIAccessibilityTraits UIAccessibilityTraitToggleButton;
 ```
 
-#### Discussion
+## Discussion
 
 Use this trait to characterize an accessibility element that represents a button that toggles a value on, off, or mixed status. VoiceOver will describe the options offered by the toggle button.
 

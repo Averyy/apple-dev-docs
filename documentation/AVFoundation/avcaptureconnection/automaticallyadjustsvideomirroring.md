@@ -23,7 +23,7 @@ var automaticallyAdjustsVideoMirroring: Bool { get set }
 @property (nonatomic) BOOL automaticallyAdjustsVideoMirroring;
 ```
 
-#### Discussion
+## Discussion
 
 For some session configurations, the connection mirrors the video data by default. When the value of this property is [`true`](../../Swift/true.md), the value of [`isVideoMirrored`](./isvideomirrored.md) may change, depending on the configuration of the session. For example, the value may change after switching to a different capture device input.
 

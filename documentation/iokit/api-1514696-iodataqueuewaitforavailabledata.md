@@ -23,11 +23,11 @@ func IODataQueueWaitForAvailableData(_ dataQueue: UnsafeMutablePointer<IODataQue
 IOReturn IODataQueueWaitForAvailableData(IODataQueueMemory *dataQueue, mach_port_t notificationPort);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess on success. Returns kIOReturnBadArgument if either dataQueue is 0 (NULL) or notiryPort is MACH_PORT_NULL. Returns the result of the mach_msg() listen call on the given port.
 
-#### Discussion
+## Discussion
 
 This method will simply wait for an incoming message on the given notifyPort. Once it is received, the return from mach_msg() is returned.
 

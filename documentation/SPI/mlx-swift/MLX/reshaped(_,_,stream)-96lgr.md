@@ -21,7 +21,7 @@ func reshaped(_ array: MLXArray, _ newShape: Int..., stream: StreamOrDevice = .d
 
 - [Converting From Python](./converting-python.md)
 
-#### Discussion
+## Discussion
 
 ```swift
 let array = MLXArray(0 ..< 12)
@@ -29,7 +29,7 @@ let array = MLXArray(0 ..< 12)
 let r = reshaped(array, 4, 3)
 ```
 
-##### See Also
+### See Also
 
 - [Shapes](./shapes.md)
 - [`reshaped(_:stream:)`](./mlxarray/reshaped%28_,stream%29-67a89.md)

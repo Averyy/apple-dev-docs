@@ -5,7 +5,7 @@
 
 Improve your UI test’s stability by handling interface changes that block the UI elements under test.
 
-#### Overview
+## Overview
 
 Use XCTestCase UI interruption monitors to handle situations in which unrelated UI elements might appear and block the test’s interaction with elements in the workflow under test. The following situations could result in a blocked test:
 
@@ -14,7 +14,7 @@ Use XCTestCase UI interruption monitors to handle situations in which unrelated 
 
 > ❗ **Important**:  When an alert or other modal UI is an expected part of the test workflow, don’t write a UI interruption monitor. The test won’t use the monitor because the modal UI isn’t blocking the test. A UI test only tries its UI interruption monitors if the elements it needs to interact with to complete the test are blocked by an interruption from an unrelated UI.
 
-##### Add a UI Interruption Monitor to Your Test
+### Add a UI Interruption Monitor to Your Test
 
 Call [`addUIInterruptionMonitor(withDescription:handler:)`](./xctestcase/adduiinterruptionmonitor%28withdescription,handler%29.md) with a block that handles the interrupting UI and gets the test back on its expected path. Your block should return `true` if it clears the interruption, and `false` otherwise. UI interruption monitors are stored in a stack and their blocks are tried in last-in, first-out order, so returning `false` gives other interruption monitors the chance to run.
 

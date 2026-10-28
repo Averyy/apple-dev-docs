@@ -22,7 +22,7 @@ func webView(_ webView: WKWebView, presentImmersiveEnvironment environment: WKIm
 - (void) webView:(WKWebView *) webView presentImmersiveEnvironment:(WKImmersiveEnvironment *) environment completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Asks the delegate to present an immersive environment.
 

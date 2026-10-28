@@ -21,7 +21,7 @@ If there is no matching time before the end of the next instance of the next hig
 case previousTimePreservingSmallerComponents
 ```
 
-#### Discussion
+## Discussion
 
 For example, during a daylight saving transition there may be no 2:37am. The result would then be 1:37am, if that does exist.
 

@@ -19,7 +19,7 @@ convenience init?(string: String)
 - (instancetype) initWithString:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 A MAC address object with the specified value, or `nil` if the string is formatted incorrectly.
 

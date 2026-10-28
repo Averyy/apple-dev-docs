@@ -16,7 +16,7 @@ A Mach absolute time clock value.
 typedef struct cp_time cp_time_t;
 ```
 
-#### Discussion
+## Discussion
 
 Mach absolute time measures the number of ticks that have elapsed since an arbitrary point after system startup. Each value represents a unique point in time during the course of your app’s execution.
 

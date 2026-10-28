@@ -25,7 +25,7 @@ var alignsResumptionWithPrimarySegmentBoundary: Bool { get set }
 @property (nonatomic, readonly) BOOL alignsResumptionWithPrimarySegmentBoundary;
 ```
 
-#### Discussion
+## Discussion
 
 If the value is [`true`](../../Swift/true.md), the system adjusts the resumption time of primary playback following an interstitial to the nearest segment boundary when the primary player is playing an HTTP Live Streaming asset.
 

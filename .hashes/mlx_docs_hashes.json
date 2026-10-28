@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "last_updated": "2026-10-27T01:45:41.303819",
+    "last_updated": "2026-10-28T06:19:40.977490",
     "total_files": 855,
     "source": "scrape_mlx_docs.py",
     "sources": {
@@ -20,7 +20,7 @@
       "App-Store": "App-Store"
     },
     "render": {
-      "version": 3
+      "version": 4
     }
   },
   "hashes": {
@@ -876,7 +876,7 @@
     "github:swiftlang/swift-format:Documentation/IgnoringSource.md": "a57aa595a8c07690b908b5285e8ba94fe36ec31d98a44e4f90bed71fc4dc65f1",
     "github:swiftlang/swift-format:Documentation/PrettyPrinter.md": "8d2ea148360c888d1728abe03722f72c2b413626eb131d666c0d8a19151cca82",
     "github:swiftlang/swift-format:Documentation/RuleDocumentation.md": "5f520184ab84b55cbdf8bfc5fe26b99204de18518751a25f84fdcf877efac6c8",
-    "App-Store:https://developer.apple.com/app-store/review/guidelines/": "cf9e43c33d7ba5c792cd7fee490b59cd818156dba14c6543d9bf0046cf5eaf0a",
+    "App-Store:https://developer.apple.com/app-store/review/guidelines/": "387cbe8e10518ebe381959ac748d0b06e4e841970721bd393b33a4b773c5fbbe",
     "App-Store:https://developer.apple.com/app-store/app-privacy-details/": "cdc97e2ae1144946632a4dd0e229d33824201dd26dff33e8c0e43d4f8e6e6c17",
     "App-Store:https://developer.apple.com/app-store/user-privacy-and-data-use/": "7a41460b36d2673f132b2576c76d0a2fc574674e744e6a92f7d5a2922fb4749c"
   }

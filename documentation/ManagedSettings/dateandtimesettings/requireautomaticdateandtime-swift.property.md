@@ -17,7 +17,7 @@ A Boolean value that indicates whether to prevent the user from changing their d
 var requireAutomaticDateAndTime: Bool? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 If your app doesn’t configure this setting, the value is `nil`.
 

@@ -17,7 +17,7 @@ Parse only unprefixed values from the command-line input, ignoring any inputs th
 static var remaining: ArgumentArrayParsingStrategy { get }
 ```
 
-#### Discussion
+## Discussion
 
 `remaining` is the default parsing strategy for argument arrays.
 

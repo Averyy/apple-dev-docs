@@ -18,11 +18,11 @@ Measure the elapsed time to execute an asynchronous closure.
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) func measure(_ work: nonisolated(nonsending) () async throws -> Void) async rethrows -> Self.Instant.Duration
+nonisolated(nonsending)
+func measure(_ work: nonisolated(nonsending) () async throws -> Void) async rethrows -> Self.Instant.Duration
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
   let clock = ContinuousClock()

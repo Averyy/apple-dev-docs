@@ -19,7 +19,7 @@ class NSTabView
 @interface NSTabView : NSView
 ```
 
-#### Overview
+## Overview
 
 A tab view contains a row of tabs that give the appearance of folder tabs, as shown in the [Figure 1](./nstabview.md#2555818). The user selects the desired page by clicking the appropriate tab or using the arrow keys to move between pages. Each page displays a view hierarchy provided by your app.
 

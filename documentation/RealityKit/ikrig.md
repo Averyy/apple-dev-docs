@@ -20,11 +20,11 @@ A full body inverse kinematics rig definition for a single skeleton.
 struct IKRig
 ```
 
-#### Overview
+## Overview
 
 Describes the skeleton, its tuning, and the active constraints for the solver instance.
 
-##### Balance of demands’ weights in a full body solver
+### Balance of demands’ weights in a full body solver
 
 The full body solver calculates the final pose by balancing the various demands based on their assigned weights. This process ensures that each demand, ranging from forward kinematics (FK) demands to constraints on joint movement, affects the pose proportionally to its importance.
 

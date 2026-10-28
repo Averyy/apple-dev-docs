@@ -24,11 +24,11 @@ final var contextSize: Int { get }
 
 - [Managing the context window](../managing-the-context-window.md)
 
-#### Return Value
+## Return Value
 
 The context size, in tokens.
 
-#### Discussion
+## Discussion
 
 The context size represents the total number of tokens that can be used in a single session, including both input prompts and generated responses.
 

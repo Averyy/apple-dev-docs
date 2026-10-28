@@ -24,7 +24,7 @@ func `for`(numberOfIterations: MPSGraphTensor, initialBodyArguments: [MPSGraphTe
 - (NSArray<MPSGraphTensor *> *) forLoopWithNumberOfIterations:(MPSGraphTensor *) numberOfIterations initialBodyArguments:(NSArray<MPSGraphTensor *> *) initialBodyArguments body:(MPSGraphForLoopBodyBlock) body name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor array with same count and corresponding elementTypes as initialIterationArguments and return types of the for loop
 

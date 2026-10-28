@@ -18,11 +18,11 @@ func FSEventStreamCopyPathsBeingWatched(_ streamRef: ConstFSEventStreamRef) -> C
 CFArrayRef FSEventStreamCopyPathsBeingWatched(ConstFSEventStreamRef streamRef);
 ```
 
-#### Return Value
+## Return Value
 
 A CFArray of CFStringRefs corresponding to those supplied when the stream was created. Ownership follows the Copy rule.
 
-#### Discussion
+## Discussion
 
 Fetches the paths supplied when the stream was created via one of the FSEventStreamCreate...() functions.
 

@@ -21,7 +21,7 @@ protocol BEDragInteractionDelegate : UIDragInteractionDelegate
 @protocol BEDragInteractionDelegate <UIDragInteractionDelegate>
 ```
 
-#### Overview
+## Overview
 
 The [`BEDragInteraction`](./bedraginteraction.md) class’s [`delegate`](./bedraginteraction/delegate.md) implements this protocol. Use [`BEDragInteraction`](./bedraginteraction.md) to prepare drag interactions asynchronously and add items to drag sessions, for example, when drag support requires JavaScript.
 

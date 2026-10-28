@@ -24,7 +24,7 @@ class func foot() -> Self
 + (instancetype) footUnit;
 ```
 
-#### Return Value
+## Return Value
 
 A HealthKit unit for measuring length in feet.
 

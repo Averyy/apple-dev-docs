@@ -20,7 +20,7 @@ static var partialRights: AuthorizationFlags { get }
 kAuthorizationFlagPartialRights
 ```
 
-#### Discussion
+## Discussion
 
 If this and the [`extendRights`](./extendrights.md) flags are set, the Security Server grants or denies rights on an individual basis and all rights are checked.
 

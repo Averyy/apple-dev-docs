@@ -19,7 +19,7 @@ func save(to URL: URL!) throws
 - (BOOL) saveToURL:(NSURL *) URL error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 When successful, this method posts a notification ([`WebHistorySavedNotification`](../webhistorysavednotification.md)).
 

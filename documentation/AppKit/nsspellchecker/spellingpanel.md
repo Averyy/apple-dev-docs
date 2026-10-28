@@ -19,7 +19,7 @@ var spellingPanel: NSPanel { get }
 @property (strong, readonly) NSPanel * spellingPanel;
 ```
 
-#### Return Value
+## Return Value
 
 The spell checking panel.
 

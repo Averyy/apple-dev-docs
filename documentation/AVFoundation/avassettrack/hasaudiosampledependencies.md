@@ -26,7 +26,7 @@ var hasAudioSampleDependencies: Bool { get }
 @property (nonatomic, readonly) BOOL hasAudioSampleDependencies;
 ```
 
-#### Discussion
+## Discussion
 
 The value is always [`false`](../../Swift/false.md) for nonaudible media.
 

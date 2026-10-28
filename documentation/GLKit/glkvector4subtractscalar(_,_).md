@@ -22,7 +22,7 @@ func GLKVector4SubtractScalar(_ vector: GLKVector4, _ value: Float) -> GLKVector
 static GLKVector4 GLKVector4SubtractScalar(GLKVector4 vector, float value);
 ```
 
-#### Return Value
+## Return Value
 
 A new vector.
 

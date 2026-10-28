@@ -21,7 +21,7 @@ case crossDissolve
 UIModalTransitionStyleCrossDissolve
 ```
 
-#### Discussion
+## Discussion
 
 When the view controller is presented, the current view fades out while the new view fades in at the same time. On dismissal, a similar type of cross-fade is used to return to the original view.
 

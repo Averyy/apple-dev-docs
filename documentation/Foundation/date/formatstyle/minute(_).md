@@ -21,11 +21,11 @@ Modifies the date format style to use the specified minute format style.
 func minute(_ format: Date.FormatStyle.Symbol.Minute = .defaultDigits) -> Date.FormatStyle
 ```
 
-#### Return Value
+## Return Value
 
 A date format style modified to include the specified minute style.
 
-#### Discussion
+## Discussion
 
 Values of [`Date.FormatStyle.Symbol.Minute`](./symbol/minute.md) are [`defaultDigits`](./symbol/minute/defaultdigits.md) and [`twoDigits`](./symbol/minute/twodigits.md).
 

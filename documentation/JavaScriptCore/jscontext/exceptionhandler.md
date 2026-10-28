@@ -24,7 +24,7 @@ var exceptionHandler: ((JSContext?, JSValue?) -> Void)! { get set }
 @property (copy) void (^exceptionHandler)(JSContext *context, JSValue *exception);
 ```
 
-#### Discussion
+## Discussion
 
 The block takes the following parameters:
 

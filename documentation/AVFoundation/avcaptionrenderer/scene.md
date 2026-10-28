@@ -22,7 +22,7 @@ class Scene
 @interface AVCaptionRendererScene : NSObject
 ```
 
-#### Overview
+## Overview
 
 To render a scene, the object considers state like the existence of captions and regions, their temporal overlaps, and whether captions use animation effects. Your app can request time ranges where visual differences exist and use these time ranges to optimize drawing performance, like drawing once per scene. Alternatively, it can ignore scenes, and instead call [`render(in:for:)`](./render%28in,for%29.md) repeatedly, but this may have additional performance impact.
 

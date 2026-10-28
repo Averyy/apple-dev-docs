@@ -25,7 +25,7 @@ let kCVPixelBufferCGImageCompatibilityKey: CFString
 extern CFStringRef const kCVPixelBufferCGImageCompatibilityKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is of type [`CFBoolean`](../CoreFoundation/cfboolean.md), and it indicates compatibility with [`CGImage`](../CoreGraphics/cgimage.md) types.
 

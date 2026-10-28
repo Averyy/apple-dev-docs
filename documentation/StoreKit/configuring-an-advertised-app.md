@@ -5,13 +5,13 @@
 
 Prepare an advertised app to participate in ad campaigns.
 
-#### Overview
+## Overview
 
 An *advertised app* is an app a user installs after viewing an ad that an ad network signs. The advertised app doesn’t require any configuration to participate in install validation. However, to register ad attributions, the app needs to call one of the methods that update conversion values when the app first launches. Those methods are: [`updatePostbackConversionValue(_:coarseValue:lockWindow:completionHandler:)`](./skadnetwork/updatepostbackconversionvalue%28_,coarsevalue,lockwindow,completionhandler%29.md), [`updatePostbackConversionValue(_:coarseValue:completionHandler:)`](./skadnetwork/updatepostbackconversionvalue%28_,coarsevalue,completionhandler%29.md), and [`updatePostbackConversionValue(_:completionHandler:)`](./skadnetwork/updatepostbackconversionvalue%28_,completionhandler%29.md).
 
 Developers opt in to get copies of winning install-validation postbacks.
 
-##### Configure your app to receive copies of winning install-validation postbacks
+### Configure your app to receive copies of winning install-validation postbacks
 
 To opt in to receive copies of winning install-validation postbacks for your advertised app, add the [`NSAdvertisingAttributionReportEndpoint`](../BundleResources/information-property-list/nsadvertisingattributionreportendpoint.md) key in your app’s `Info.plist` file, and configure your server to receive the postbacks.
 

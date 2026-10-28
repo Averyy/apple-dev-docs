@@ -24,7 +24,7 @@ var timeRange: CMTimeRange { get set }
 @property (nonatomic) CMTimeRange timeRange;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is a time range with a start time of [`zero`](../../CoreMedia/cmtime/zero.md) and a duration of [`positiveInfinity`](../../CoreMedia/cmtime/positiveinfinity.md).
 

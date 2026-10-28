@@ -21,7 +21,7 @@ enum SentimentCategory
 enum SRKeyboardMetricsSentimentCategory : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 This class describes possible values for [`wordCount(for:)`](./wordcount%28for%29.md) and [`emojiCount(for:)`](./emojicount%28for%29.md) properties of a keyboard report.
 

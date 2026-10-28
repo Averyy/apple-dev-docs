@@ -25,11 +25,11 @@ func CTFontGetBoundingRectsForGlyphs(_ font: CTFont, _ orientation: CTFontOrient
 extern CGRect CTFontGetBoundingRectsForGlyphs(CTFontRef font, CTFontOrientation orientation, const CGGlyph glyphs[], CGRect boundingRects[], CFIndex count);
 ```
 
-#### Return Value
+## Return Value
 
 The overall bounding rectangle for an array or run of glyphs. Returns [`CGRectNull`](../CoreGraphics/cgrectnull.md) on error.
 
-#### Discussion
+## Discussion
 
 The bounding rectangles of the individual glyphs are returned through the `boundingRects` parameter. These are the design metrics from the font transformed in font space.
 

@@ -20,11 +20,11 @@ Adds the specified item to the journal and begins transferring the item’s data
 final func add<ItemType>(_ item: ItemType) async throws -> GroupSessionJournal.Attachment where ItemType : Transferable
 ```
 
-#### Return Value
+## Return Value
 
 An attachment object you can remove by passing it to the [`remove(attachment:)`](./remove%28attachment%29.md) function.
 
-#### Discussion
+## Discussion
 
 Call this method when you want to send a file or codable data type to the other participants of an activity. The method runs asynchronously and can return before the upload operation finishes.
 

@@ -29,7 +29,7 @@ func modifyEnabledAlarms(with params: MTRDishwasherAlarmClusterModifyEnabledAlar
 - (void) modifyEnabledAlarmsWithParams:(MTRDishwasherAlarmClusterModifyEnabledAlarmsParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This command allows a client to request that an alarm be enabled or suppressed at the server.
 

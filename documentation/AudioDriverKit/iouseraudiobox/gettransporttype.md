@@ -15,11 +15,11 @@ Returns the box’s transport type.
 IOUserAudioTransportType GetTransportType();
 ```
 
-#### Return Value
+## Return Value
 
 The audio box’s `IOUserAudioTransportType`.
 
-#### Discussion
+## Discussion
 
 This method synchronizes by using the work queue created by the object.
 

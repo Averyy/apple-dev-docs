@@ -5,7 +5,7 @@
 
 Encode a block information transfer pass to adjust and copy data to and from GPU resources, such as buffers and textures.
 
-#### Overview
+## Overview
 
 Your app can use a block information transfer (blit) pass to manage data within, and copy data between, buffers, textures, and other Metal resources. Start by creating a blit command encoder by calling an [`MTLCommandBuffer`](./mtlcommandbuffer.md) instance’s [`makeBlitCommandEncoder()`](./mtlcommandbuffer/makeblitcommandencoder%28%29.md) method. Then use the [`MTLBlitCommandEncoder`](./mtlblitcommandencoder.md) instance’s methods to encode individual commands of your blit pass.
 

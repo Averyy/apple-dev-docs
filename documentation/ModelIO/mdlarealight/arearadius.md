@@ -24,7 +24,7 @@ var areaRadius: Float { get set }
 @property (nonatomic, readwrite) float areaRadius;
 ```
 
-#### Discussion
+## Discussion
 
 The effect of radius on a light’s shape depends on the value of its inherited [`lightType`](../mdllight/lighttype.md) property:
 

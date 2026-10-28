@@ -19,7 +19,7 @@ func cleanUp()
 - (void) cleanUpOperation;
 ```
 
-#### Discussion
+## Discussion
 
 You typically do not invoke this method directly.
 

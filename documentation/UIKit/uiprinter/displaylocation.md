@@ -22,7 +22,7 @@ var displayLocation: String? { get }
 @property (copy, readonly, nullable) NSString * displayLocation;
 ```
 
-#### Discussion
+## Discussion
 
 Many printers can be configured with a location string to reflect the printer’s physical location in an office. This property contains that location string or `nil` if no such string is available.
 

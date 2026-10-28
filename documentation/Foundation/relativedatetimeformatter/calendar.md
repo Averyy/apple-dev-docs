@@ -25,7 +25,7 @@ var calendar: Calendar! { get set }
 @property (copy, null_resettable) NSCalendar * calendar;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to [`autoupdatingCurrent`](../nscalendar/autoupdatingcurrent.md). If you set this property to `nil`, the formatter resets to using [`autoupdatingCurrent`](../nscalendar/autoupdatingcurrent.md).
 

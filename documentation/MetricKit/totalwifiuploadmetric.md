@@ -18,7 +18,7 @@ A metric that measures the total data uploaded over WiFi.
 struct TotalWiFiUploadMetric
 ```
 
-#### Discussion
+## Discussion
 
 This metric corresponds to the [`MetricResult.totalWiFiUpload(_:)`](./metricresult/totalwifiupload%28_%29.md) case. It appears only in [`intervalEntries`](./metricreport/intervalentries.md) and is not included in state entries.
 

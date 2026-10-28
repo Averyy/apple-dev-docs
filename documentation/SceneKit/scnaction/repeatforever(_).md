@@ -25,11 +25,11 @@ class func repeatForever(_ action: SCNAction) -> SCNAction
 + (SCNAction *) repeatActionForever:(SCNAction *) action;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 When the action executes, the associated action runs to completion and then repeats.
 

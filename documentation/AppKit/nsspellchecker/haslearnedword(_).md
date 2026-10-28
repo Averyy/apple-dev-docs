@@ -19,7 +19,7 @@ func hasLearnedWord(_ word: String) -> Bool
 - (BOOL) hasLearnedWord:(NSString *) word;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) when the spell checker has learned word, [`false`](../../Swift/false.md) otherwise.
 

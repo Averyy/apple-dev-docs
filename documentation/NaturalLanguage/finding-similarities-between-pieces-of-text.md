@@ -5,7 +5,7 @@
 
 Calculate the semantic distance between words or sentences.
 
-#### Overview
+## Overview
 
 Finding semantic similarities between words or sentences can help you create a better user experience for your app. For example, you might enhance the experience of searching for specific photos by knowing that the search term “cloud” is related to the word “sky,” and expanding the search query to return more relevant results.
 
@@ -21,7 +21,7 @@ You use embeddings for tasks like:
 
 In Natural Language, [`NLEmbedding`](./nlembedding.md) represents an embedding, stored in a space- and time-efficient format. [`NLEmbedding`](./nlembedding.md) provides pretrained word embeddings for a number of languages, trained on large bodies of general text.
 
-##### Find similar words
+### Find similar words
 
 To calculate the distance between individual words, use a word embedding.
 
@@ -48,7 +48,7 @@ if let embedding = NLEmbedding.wordEmbedding(for: .english) {
 }
 ```
 
-##### Find similar sentences
+### Find similar sentences
 
 To calculate the distance between phrases, use a sentence embedding. You might use it to measure similarity between sentences for tasks like text retrieval, or for detecting paraphrases. For example, if a user searches a food-delivery app using the text, “Where is my order?” you could use a sentence embedding to suggest a result from the FAQ with the similar title, “How do I check the status of my order?”
 

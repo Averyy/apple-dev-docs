@@ -16,7 +16,7 @@
 kINQUIRY_Byte7_WBUS16_Bit
 ```
 
-#### Discussion
+## Discussion
 
 WBUS16 bit definition.
 

@@ -19,7 +19,7 @@ var title: String! { get }
 @property (nonatomic, copy, readonly) NSString * title;
 ```
 
-#### Discussion
+## Discussion
 
 The title returned comes from the title HTML tag for HTML documents.
 

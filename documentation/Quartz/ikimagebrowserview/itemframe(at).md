@@ -19,7 +19,7 @@ func itemFrame(at index: Int) -> NSRect
 - (NSRect) itemFrameAtIndex:(NSInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The frame rectangle of the item.
 

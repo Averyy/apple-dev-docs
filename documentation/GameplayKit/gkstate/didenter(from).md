@@ -24,7 +24,7 @@ func didEnter(from previousState: GKState?)
 - (void) didEnterWithPreviousState:(GKState *) previousState;
 ```
 
-#### Discussion
+## Discussion
 
 Override this method when the actions you want to perform in response to a state change should be associated with the new state, or when those actions depend on which state a state machine was previously in.
 

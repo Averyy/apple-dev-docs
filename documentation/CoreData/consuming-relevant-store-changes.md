@@ -5,7 +5,7 @@
 
 Filter store transactions for changes relevant to the current view.
 
-#### Overview
+## Overview
 
 Use persistent history tracking to determine what changes have occurred in the store, and to update your view context only as needed.
 
@@ -13,7 +13,7 @@ For example, consider an app that sometimes shows a list of shopping items, and 
 
 Persistent history solves the problem by keeping track of every transaction on the store. You can filter this history for relevant changes and decide how or whether to update a view.
 
-##### Enable history tracking for your local store
+### Enable history tracking for your local store
 
 When you create a persistent container, set the [`NSPersistentHistoryTrackingKey`](./nspersistenthistorytrackingkey.md) option on the store description to [`true`](../Swift/true.md) to enable history tracking.
 
@@ -30,7 +30,7 @@ description?.setOption(true as NSNumber, forKey: NSPersistentHistoryTrackingKey)
 
 Core Data tracks all changes to your local store.
 
-##### Listen for remote changes
+### Listen for remote changes
 
 In the persistent container, set the [`NSPersistentStoreRemoteChangeNotificationPostOptionKey`](./nspersistentstoreremotechangenotificationpostoptionkey.md) option to [`true`](../Swift/true.md) to enable listening for remote change notifications.
 
@@ -55,7 +55,7 @@ In your view, add an observer to listen for remote change notifications.
     }
 ```
 
-##### Provide details about a transaction’s source
+### Provide details about a transaction’s source
 
 Each history transaction automatically includes the originating [`storeID`](./nspersistenthistorytransaction/storeid.md), [`bundleID`](./nspersistenthistorytransaction/bundleid.md) and [`processID`](./nspersistenthistorytransaction/processid.md). You can supply additional information about the source of a change by setting each managed object context’s [`name`](./nsmanagedobjectcontext/name.md) and [`transactionAuthor`](./nsmanagedobjectcontext/transactionauthor.md).
 
@@ -98,7 +98,7 @@ viewContext.perform {
 
 Reset the context’s [`transactionAuthor`](./nsmanagedobjectcontext/transactionauthor.md) to `nil` after saving the context to prevent misattribution of future transactions.
 
-##### Keep track of the most recent history
+### Keep track of the most recent history
 
 Create an instance of [`NSPersistentHistoryToken`](./nspersistenthistorytoken.md) to keep track of the most recent history.
 
@@ -147,7 +147,7 @@ lazy var tokenFileURL: URL = {
 }()
 ```
 
-##### Request history
+### Request history
 
 To request history, use the [`fetchHistory(after:)`](./nspersistenthistorychangerequest/fetchhistory%28after%29-3rmfm.md) type method on [`NSPersistentHistoryChangeRequest`](./nspersistenthistorychangerequest.md).
 
@@ -178,7 +178,7 @@ guard let historyTransactions = historyResult as? [NSPersistentHistoryTransactio
 
 Alternatively you can use [`fetchHistory(after:)`](./nspersistenthistorychangerequest/fetchhistory%28after%29-qi5b.md) to get history after a particular date, or after a particular a transaction.
 
-##### Read history transactions
+### Read history transactions
 
 Each transaction represents a set of changes. Iterate through the array of transactions to learn their details. The following code loops through the results of the `fetchHistoryRequest` to inspect the properties of each transaction.
 
@@ -231,7 +231,7 @@ for change in changes {
 }
 ```
 
-##### Filter for relevant transactions
+### Filter for relevant transactions
 
 Filter the history to narrow it to changes that affect the current view. The following code filters for changes to `ShoppingItem` instances, and it updates the last transaction token as it goes.
 
@@ -254,7 +254,7 @@ for transaction in transactions {
 
 Relevant changes may include all changes to a given entity, or more selectively, only changes to those properties that are visible on the screen.
 
-##### Merge relevant transactions
+### Merge relevant transactions
 
 To merge the relevant changes into your view context, first obtain a notification by calling [`objectIDNotification()`](./nspersistenthistorytransaction/objectidnotification%28%29.md) on the transaction. Then, pass the notification to [`mergeChanges(fromContextDidSave:)`](./nsmanagedobjectcontext/mergechanges%28fromcontextdidsave%29.md).
 
@@ -272,7 +272,7 @@ if filteredTransactions.isEmpty == false {
 }
 ```
 
-##### Access attributes of deleted objects
+### Access attributes of deleted objects
 
 After you delete an object from the store, its [`objectID`](./nsmanagedobject/objectid.md) is no longer relevant. Identify a deleted object by recording select properties in its tombstone.
 
@@ -296,7 +296,7 @@ for transaction in history.reversed() {
 }
 ```
 
-##### Purge History
+### Purge History
 
 Because persistent history tracking transactions take up space on disk, determine a clean-up strategy to remove them when you no longer need them. Before you purge history, ensure that your app and its clients have consumed the history they need.
 

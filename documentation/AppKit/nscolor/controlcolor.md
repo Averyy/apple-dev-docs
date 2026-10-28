@@ -19,11 +19,11 @@ class var controlColor: NSColor { get }
 @property (class, strong, readonly) NSColor * controlColor;
 ```
 
-#### Return Value
+## Return Value
 
 The system color used for the flat surfaces of a control. By default, the control color is a pattern color that will draw the ruled lines for the window background, which is the same as returned by [`windowBackgroundColor`](./windowbackgroundcolor.md).
 
-#### Discussion
+## Discussion
 
 If you use [`controlColor`](./controlcolor.md) assuming that it is a solid, you may have an incorrect appearance. You should use [`lightGray`](./lightgray.md) in its place.
 

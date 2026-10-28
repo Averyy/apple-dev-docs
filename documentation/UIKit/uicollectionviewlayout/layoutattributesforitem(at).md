@@ -23,11 +23,11 @@ func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutA
 - (UICollectionViewLayoutAttributes *) layoutAttributesForItemAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 A layout attributes object containing the information to apply to the item’s cell.
 
-#### Discussion
+## Discussion
 
 Subclasses must override this method and use it to return layout information for items in the collection view. You use this method to provide layout information only for items that have a corresponding cell. Do not use it for supplementary views or decoration views.
 

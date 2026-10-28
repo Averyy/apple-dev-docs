@@ -22,7 +22,7 @@ class ActivationAction
 @interface UIWindowSceneActivationAction : UIAction
 ```
 
-#### Overview
+## Overview
 
 Create a [`UIWindowScene.ActivationAction`](./activationaction.md) object to facilitate activating a new window scene from a menu item. You initialize the action with a closure that the system executes when a user selects the item. The closure should return a [`UIWindowScene.ActivationConfiguration`](./activationconfiguration.md) object. You can specify an alternate action to display on iPhone and apps that don’t support multiple windows.
 

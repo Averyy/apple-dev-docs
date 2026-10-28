@@ -5,13 +5,13 @@
 
 Build an extension by using an Xcode template.
 
-#### Overview
+## Overview
 
 An audio unit extension provides a way to create or modify audio and MIDI data in a multiplatform app that uses sound — including music production apps. It contains the audio unit and, optionally, a user interface to control the audio unit. The audio unit is a custom plug-in where you generate audio or implement an audio-processing algorithm.
 
 To create an audio unit extension, you create an Xcode project using the Audio Unit Extension App template.
 
-##### Create a new Audio Unit extension project
+### Create a new Audio Unit extension project
 
 To create a new project in Xcode, choose File > New > Project. In the template chooser, select multiplatform. Scroll to the end of the template chooser and select the Audio Unit Extension App template under the Application section.
 
@@ -19,7 +19,7 @@ To create a new project in Xcode, choose File > New > Project. In the template c
 
 After clicking Next, configure the options for the project — including choosing what kind of audio unit to generate.
 
-##### Configure the project options
+### Configure the project options
 
 Configure the options for your new audio unit extension application. The template creates an extension and a host application for your audio unit.
 
@@ -38,7 +38,7 @@ Choose a subtype code that reflects the type of extension, and a manufacturer co
 
 If your extension doesn’t need a user interface, choose No User Interface; otherwise, Xcode creates a view for you to customize.
 
-##### Explore the generated extension project
+### Explore the generated extension project
 
 Xcode generates two targets for you — the host app and the extension. The template uses Swift and SwiftUI for the business logic and user interface, C++ for real-time processing, and Objective-C for interacting between Swift and C++.
 
@@ -53,7 +53,7 @@ In most cases, you only need to edit the extension files within the top-level gr
 - **`NewAUExtensionDSPKernel.hpp`**: A class that handles the real-time aspects of the extension and is where you implement signal processing.
 - **`NewAUExtensionMainView.swift`**: A view you use to customize your user interface, if your audio unit presents one.
 
-##### Add a new parameter address
+### Add a new parameter address
 
 The template project contains a parameter that allows you to adjust the audio gain. To add a signal parameter to the template project, navigate to `NewAUExtensionParameterAddress.h` and add it to the enumeration.
 

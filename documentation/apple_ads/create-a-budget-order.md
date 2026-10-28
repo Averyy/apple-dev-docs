@@ -16,7 +16,7 @@ Creates a budget order in the context of your org ID.
 - [Apple Ads Campaign Management API 4](./apple-search-ads-campaign-management-api-4.md)
 - [Apple Ads Campaign Management API 5](./apple-search-ads-campaign-management-api-5.md)
 
-#### Discussion
+## Discussion
 
 Use this call to create a budget order in the context of your `orgId`.
 
@@ -24,7 +24,7 @@ When you create a budget order through the API or [Apple Ads](https://ads.apple.
 
 > **Note**: As of [Apple Ads Campaign Management API version 5.3](./apple-search-ads-campaign-management-api-5.md#53), `supplySources` is optional. In all responses, the `supplySources` field contains all possible values.
 
-##### Payload example: Create a budget order
+### Payload example: Create a budget order
 
 **Request**:
 

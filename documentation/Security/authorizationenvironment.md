@@ -20,7 +20,7 @@ typealias AuthorizationEnvironment = AuthorizationItemSet
 typedef AuthorizationItemSet AuthorizationEnvironment;
 ```
 
-#### Discussion
+## Discussion
 
 The authorization items in the set represent data about the environment, such as user name and other information gathered during evaluation of authorization.
 

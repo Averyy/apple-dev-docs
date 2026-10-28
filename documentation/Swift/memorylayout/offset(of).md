@@ -21,11 +21,11 @@ Returns the offset of an inline stored property within a type’s in-memory repr
 static func offset(of key: PartialKeyPath<T>) -> Int?
 ```
 
-#### Return Value
+## Return Value
 
 The offset in bytes from a pointer to a value of type `T` to a pointer to the storage referenced by `key`, or `nil` if no such offset is available for the storage referenced by `key`. If the value is `nil`, it can be because `key` is computed, has observers, requires reabstraction, or overlaps storage with other properties.
 
-#### Discussion
+## Discussion
 
 You can use this method to find the distance in bytes that can be added to a pointer of type `T` to get a pointer to the property referenced by `key`. The offset is available only if the given key refers to inline, directly addressable storage within the in-memory representation of `T`.
 

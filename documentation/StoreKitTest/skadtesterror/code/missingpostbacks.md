@@ -21,7 +21,7 @@ case missingPostbacks
 SKAdTestErrorCodeMissingPostbacks
 ```
 
-#### Discussion
+## Discussion
 
 Check that the `postbacks` array you provide when calling [`setPostbacks(_:)`](../../skadtestsession/setpostbacks%28_%29.md) isn’t empty.
 

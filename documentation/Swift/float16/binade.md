@@ -21,7 +21,7 @@ The floating-point value with the same sign and exponent as this value, but with
 var binade: Float16 { get }
 ```
 
-#### Discussion
+## Discussion
 
 A *binade* is a set of binary floating-point values that all have the same sign and exponent. The `binade` property is a member of the same binade as this value, but with a unit significand.
 

@@ -24,7 +24,7 @@ func VTMultiPassStorageCreate(allocator: CFAllocator?, fileURL: CFURL?, timeRang
 extern OSStatus VTMultiPassStorageCreate(CFAllocatorRef allocator, CFURLRef fileURL, CMTimeRange timeRange, CFDictionaryRef options, VTMultiPassStorageRef*multiPassStorageOut);
 ```
 
-#### Discussion
+## Discussion
 
 You can use the multipass storage object to perform multipass encoding; see [`kVTCompressionPropertyKey_MultiPassStorage`](./kvtcompressionpropertykey_multipassstorage.md).
 

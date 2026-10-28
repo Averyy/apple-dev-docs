@@ -20,7 +20,7 @@ static var documentValidate: XMLNode.Options { get }
 NSXMLDocumentValidate
 ```
 
-#### Discussion
+## Discussion
 
 (Input)
 

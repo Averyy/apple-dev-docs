@@ -15,7 +15,7 @@ An accessory that displays place information when someone selects a map feature.
 selectableMapFeatureSelectionAccessory?: PlaceSelectionAccessory;
 ```
 
-#### Discussion
+## Discussion
 
 This option sets the initial value of [`selectableMapFeatureSelectionAccessory`](../map/selectablemapfeatureselectionaccessory.md). The default is `null`.
 

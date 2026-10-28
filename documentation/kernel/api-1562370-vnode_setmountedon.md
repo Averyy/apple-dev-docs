@@ -15,11 +15,11 @@ Set flags indicating that a block device vnode has been mounted as a filesystem.
 void vnode_setmountedon(vnode_t vp);
 ```
 
-#### Return Value
+## Return Value
 
 void.
 
-#### Discussion
+## Discussion
 
 A block device marked as being mounted on cannot be opened.
 

@@ -20,7 +20,7 @@ Creates a metadata generation session object.
 extern OSStatus VTHDRPerFrameMetadataGenerationSessionCreate(CFAllocatorRef allocator, float framesPerSecond, CFDictionaryRef options, VTHDRPerFrameMetadataGenerationSessionRef*hdrPerFrameMetadataGenerationSessionOut);
 ```
 
-#### Discussion
+## Discussion
 
 The returned session object may be used to perform HDR Per Frame Metadata Generation.
 

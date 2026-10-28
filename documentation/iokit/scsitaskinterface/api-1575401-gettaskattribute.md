@@ -16,11 +16,11 @@ Method to get the task's attribute.
 IOReturn (*GetTaskAttribute)(void *task, SCSITaskAttribute *outAttribute);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess or kIOReturnError.
 
-#### Discussion
+## Discussion
 
 This method can be used to get the SCSITasks' SCSITaskAttribute field. Valid values are defined in SCSITask.h
 

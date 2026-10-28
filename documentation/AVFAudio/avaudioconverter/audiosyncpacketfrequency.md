@@ -23,7 +23,7 @@ var audioSyncPacketFrequency: Int { get set }
 @property (nonatomic) NSInteger audioSyncPacketFrequency;
 ```
 
-#### Discussion
+## Discussion
 
 Number of packets between consecutive sync packets.
 

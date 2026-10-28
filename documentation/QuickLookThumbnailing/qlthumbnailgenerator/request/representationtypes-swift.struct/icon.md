@@ -23,7 +23,7 @@ static var icon: QLThumbnailGenerator.Request.RepresentationTypes { get }
 QLThumbnailGenerationRequestRepresentationTypeIcon
 ```
 
-#### Discussion
+## Discussion
 
 Files of the same type share the same file icon.
 

@@ -23,11 +23,11 @@ func ABPersonComparePeopleByName(_ person1: ABRecord!, _ person2: ABRecord!, _ o
 extern CFComparisonResult ABPersonComparePeopleByName(ABRecordRef person1, ABRecordRef person2, ABPersonSortOrdering ordering);
 ```
 
-#### Return Value
+## Return Value
 
 - `kCFCompareLessThan` when `person1` goes before `person2`.
 
-#### Discussion
+## Discussion
 
 - `kCFCompareEqualTo` when `person1` and `person2` have the same name.
 - `kCFCompareGreaterThan` when `person1` goes after `person2`.

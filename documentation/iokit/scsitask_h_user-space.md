@@ -3,7 +3,7 @@
 **Framework**: IOKit  
 **Role**: API Collection
 
-#### Overview
+## Overview
 
 SCSITask typedefs and constants used inside the kernel and user space.
 
@@ -11,7 +11,7 @@ Note that the SCSITaskIdentifier is an opaque object and that directly casting t
 
 Device and protocol layer drivers that need to access information contained in a SCSITask should use the appropriate accessor methods in IOSCSIPrimaryCommandsDevice.h or IOSCSIProtocolServices.h
 
-##### Included Headers
+### Included Headers
 
 - <IOKit/IOTypes.h>
 - <CoreFoundation/CoreFoundation.h>

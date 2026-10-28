@@ -15,7 +15,7 @@ The index of the row or column that the accessibility element represents.
 @property NSInteger accessibilityIndex;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property for any element that can be accessed through an index: cells, rows, columns, and so forth.
 

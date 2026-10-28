@@ -22,11 +22,11 @@ nonisolated
 func listRowInsets(_ edges: Edge.Set = .all, _ length: CGFloat?) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view in which the margins of list sections are set to the specified amount
 
-#### Discussion
+## Discussion
 
 Use this modifier to change the default insets of list rows on the specified edges.
 

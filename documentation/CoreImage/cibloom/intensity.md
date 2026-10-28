@@ -25,7 +25,7 @@ var intensity: Float { get set }
 @property (nonatomic) float intensity;
 ```
 
-#### Discussion
+## Discussion
 
 A value of 0.0 is no effect. A value of 1.0 is the maximum effect.
 

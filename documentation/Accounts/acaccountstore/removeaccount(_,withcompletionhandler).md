@@ -28,7 +28,7 @@ func removeAccount(_ account: ACAccount!) async throws -> Bool
 - (void) removeAccount:(ACAccount *) account withCompletionHandler:(ACAccountStoreRemoveCompletionHandler) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
 >

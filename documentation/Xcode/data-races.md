@@ -5,11 +5,11 @@
 
 Detects unsynchronized access to mutable state across multiple threads.
 
-#### Overview
+## Overview
 
 Use this check to detect when multiple threads access the same memory without synchronization, and at least one access is a write. Available in Xcode 8 and later.
 
-##### Data race with producer and consumer functions
+### Data race with producer and consumer functions
 
 In the following example, the `producer()` function sets the global variable `message`, and the `consumer()` function waits for a flag to set before printing the message. Because `producer()` executes on one thread and `consumer()` executes on another thread, their execution can be concurrent, creating a data race.
 
@@ -30,7 +30,7 @@ func consumer() {
 }
 ```
 
-###### Solution
+#### Solution
 
 Use [Dispatch](../Dispatch/Dispatch.md) APIs to coordinate access to `message` across multiple threads.
 

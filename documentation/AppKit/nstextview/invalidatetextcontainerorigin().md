@@ -19,7 +19,7 @@ func invalidateTextContainerOrigin()
 - (void) invalidateTextContainerOrigin;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked automatically; you should never need to invoke it directly. Usually called because the text view has been resized or the contents of the text container have changed.
 

@@ -25,7 +25,7 @@ var data: Data? { get }
 @property (readonly, nullable) NSData * data;
 ```
 
-#### Discussion
+## Discussion
 
 If the scene source was created using the [`sceneSourceWithData:options:`](./scenesourcewithdata_options_.md) or [`init(data:options:)`](./init%28data,options%29.md) method, this property’s value is the data from which the scene source was created. If the scene source was created from a scene file using the the [`sceneSourceWithURL:options:`](./scenesourcewithurl_options_.md) or [`init(url:options:)`](./init%28url,options%29-rw0y.md) method, this property’s value is the data loaded from that URL at the time the scene source was created.
 

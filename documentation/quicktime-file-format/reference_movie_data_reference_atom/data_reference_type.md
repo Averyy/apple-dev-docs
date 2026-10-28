@@ -6,7 +6,7 @@
 
 The data reference type.
 
-#### Overview
+## Overview
 
 A value of `'alis'` indicates a file system alias record. A value of `'url '` indicates a string containing a uniform resource locator. Note that the fourth character in `'url '` is an ASCII blank (`0x20`).
 

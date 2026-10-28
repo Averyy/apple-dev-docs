@@ -21,11 +21,11 @@ func startSpeaking(_ string: String) -> Bool
 - (BOOL) startSpeakingString:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) when speaking starts successfully, [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 If the receiver is currently speaking synthesized speech when [`startSpeaking(_:)`](./startspeaking%28_%29.md) is called, that process is stopped before `text` is spoken.
 

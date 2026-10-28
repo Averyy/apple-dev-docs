@@ -21,7 +21,7 @@ Indicates that the file is executed as the group.
 static var setGroupID: FilePermissions { get }
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see the `setgid(2)` man page.
 

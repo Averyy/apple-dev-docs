@@ -24,11 +24,11 @@ func annotations(in mapRect: MKMapRect) -> Set<AnyHashable>
 - (NSSet<id<MKAnnotation>> *) annotationsInMapRect:(MKMapRect) mapRect;
 ```
 
-#### Return Value
+## Return Value
 
 The set of annotation objects within `mapRect`.
 
-#### Discussion
+## Discussion
 
 This method offers a fast way to retrieve the annotation objects in a particular portion of the map. It’s much faster than doing a linear search of the objects in the [`annotations`](./annotations.md) property yourself.
 

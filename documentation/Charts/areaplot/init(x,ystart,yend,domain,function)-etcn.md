@@ -24,7 +24,7 @@ init(x: Text, yStart: Text, yEnd: Text, domain: ClosedRange<Double>? = nil, func
 
 Available when `Content` is `FunctionAreaPlotContent`.
 
-#### Discussion
+## Discussion
 
 Parameters:
 

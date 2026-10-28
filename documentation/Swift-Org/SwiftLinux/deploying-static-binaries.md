@@ -10,7 +10,7 @@ framework: "Swift-Org/SwiftLinux"
 
 Build fully self-contained Swift executables and deploy them to minimal containers or directly to Linux machines.
 
-#### Overview
+## Overview
 
 The Static Linux SDK produces Swift executables with no external dependencies — not even the C library. This lets you run the binary on any Linux machine regardless of distribution, which opens deployment options that aren’t possible with dynamically linked builds.
 
@@ -18,7 +18,7 @@ You can copy the binary into a `scratch` or distroless container image that cont
 
 This article walks you through installing the SDK, building a static binary, and deploying it.
 
-##### Install the Static Linux SDK
+### Install the Static Linux SDK
 
 The Static Linux SDK requires an open source Swift toolchain. The toolchain bundled with Xcode doesn’t support SDK-based cross-compilation. Use `swiftly` to install an open source Swift toolchain, then install the Static Linux SDK for that toolchain. Go to [swift.org](https://www.swift.org/install/) for the links and commands to install both.
 
@@ -36,7 +36,7 @@ swift sdk list
 
 The output includes SDK names like `x86_64-swift-linux-musl` and `aarch64-swift-linux-musl` that you use in build commands.
 
-##### Build a static binary
+### Build a static binary
 
 Build your service with the `--swift-sdk` flag, specifying the target architecture:
 
@@ -54,7 +54,7 @@ This produces a statically linked ELF binary in `.build/release/` that you can c
 
 > **Note**: Because Musl replaces Glibc, some packages that import C libraries need changes — for example, changing import lines from `Glibc` to `Musl`. The Swift standard library and Foundation handle this automatically.
 
-##### Deploy to a distroless container image
+### Deploy to a distroless container image
 
 A distroless container image contains no operating system utilities — no package manager, no shell, nothing but what you put in it. This eliminates an entire class of potential vulnerabilities because there are no extra programs an attacker could exploit.
 
@@ -96,7 +96,7 @@ container build -t <my-app>:latest .
 
 > **Note**: A `scratch`-based image doesn’t include a shell, so you can’t use `container run --rm -it <my-app> /bin/sh` to debug. If you need a shell for troubleshooting, use a slim base image during development and switch to `scratch` for production.
 
-##### Include swift-backtrace for crash diagnostics
+### Include swift-backtrace for crash diagnostics
 
 A static binary in a `scratch` container has no toolchain layout for the runtime to fall back on. As a result, the runtime’s default path to find `swift-backtrace` doesn’t exist in the image. To get backtraces from crashes, copy the static helper from a Swift container image into your final image and explicitly pass its path to the runtime:
 
@@ -117,7 +117,7 @@ The `swift-backtrace=/swift-backtrace` setting overrides the runtime’s default
 
 For the full set of `SWIFT_BACKTRACE` options, see the [Swift backtracing reference](https://github.com/swiftlang/swift/blob/main/docs/Backtracing.rst#how-do-i-configure-backtracing). To debug your service using a captured trace, see [Debugging a service using a backtrace](./debugging-a-service-using-a-backtrace.md).
 
-##### Build and publish with Swift Container Plugin
+### Build and publish with Swift Container Plugin
 
 The [Swift Container Plugin](https://github.com/apple/swift-container-plugin) combines building, packaging, and pushing to a registry into a single command. It builds your service with the Static Linux SDK, packages the executable into a container image, and publishes the image to a container registry — all without a Dockerfile.
 
@@ -144,7 +144,7 @@ container run -p 8080:8080 registry.example.com/my-app
 
 > 💡 **Tip**: The container plugin is especially useful in CI pipelines where you want a single, repeatable command that produces a ready-to-deploy image.
 
-##### Deploy directly to a Linux machine
+### Deploy directly to a Linux machine
 
 A static binary runs on any Linux machine, so you can copy it directly to a virtual machine or bare-metal server:
 

@@ -19,7 +19,7 @@ Does not apply any system effect when selected.
 static let custom: PaletteSelectionEffect
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: Make sure to manually implement a way to indicate selection when using this case. For example, you could dynamically resolve the item’s image based on the selection state.
 

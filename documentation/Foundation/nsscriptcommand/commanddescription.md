@@ -20,7 +20,7 @@ var commandDescription: NSScriptCommandDescription { get }
 @property (retain, readonly) NSScriptCommandDescription * commandDescription;
 ```
 
-#### Discussion
+## Discussion
 
 Once a command is created, its command description is immutable.
 

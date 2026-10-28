@@ -24,7 +24,7 @@ optional func netServiceBrowserDidStopSearch(_ browser: NetServiceBrowser)
 - (void) netServiceBrowserDidStopSearch:(NSNetServiceBrowser *) browser;
 ```
 
-#### Discussion
+## Discussion
 
 When `netServiceBrowser` receives a [`stop()`](../netservicebrowser/stop%28%29.md) message from its client, `netServiceBrowser` sends a `netServiceBrowserDidStopSearch:` message to its delegate. The delegate then performs any necessary cleanup.
 

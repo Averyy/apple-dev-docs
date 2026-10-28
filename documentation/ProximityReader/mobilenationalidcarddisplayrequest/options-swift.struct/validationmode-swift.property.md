@@ -17,7 +17,7 @@ The validation mode of the mobile document request.
 var validationMode: MobileNationalIDCardDisplayRequest.Options.ValidationMode
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`check`](./validationmode-swift.struct/check.md).
 

@@ -15,7 +15,7 @@ The Apple implementation of IMA 4:1 Adaptive Differential Pulse-Code Modulation 
 AppleIMA4
 ```
 
-#### Discussion
+## Discussion
 
 This format uses no flags.
 

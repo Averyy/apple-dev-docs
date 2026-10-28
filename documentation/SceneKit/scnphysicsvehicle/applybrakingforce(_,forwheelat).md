@@ -25,7 +25,7 @@ func applyBrakingForce(_ value: CGFloat, forWheelAt index: Int)
 - (void) applyBrakingForce:(CGFloat) value forWheelAtIndex:(NSInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 Applying a braking force causes the wheel to slow down regardless of the direction it’s currently spinning in.
 

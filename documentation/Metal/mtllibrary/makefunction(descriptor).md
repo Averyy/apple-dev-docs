@@ -25,7 +25,7 @@ func makeFunction(descriptor: MTLFunctionDescriptor) throws -> any MTLFunction
 - (id<MTLFunction>) newFunctionWithDescriptor:(MTLFunctionDescriptor *) descriptor error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`MTLFunction`](../mtlfunction.md) instance if the method finds the function in the library; otherwise Swift throws an error and Objective-C returns `nil`.
 

@@ -23,7 +23,7 @@ func isSubset(of other: RangeSet<Bound>) -> Bool
 
 Available when `Bound` conforms to `Comparable`.
 
-#### Return Value
+## Return Value
 
 `true` if this range set is a subset of `other`; otherwise, `false`.
 

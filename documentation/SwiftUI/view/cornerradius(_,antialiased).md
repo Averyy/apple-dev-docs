@@ -24,11 +24,11 @@ nonisolated
 func cornerRadius(_ radius: CGFloat, antialiased: Bool = true) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that clips this view to its bounding frame with the specified corner radius.
 
-#### Discussion
+## Discussion
 
 By default, a view’s bounding frame only affects its layout, so any content that extends beyond the edges of the frame remains visible. Use `cornerRadius(_:antialiased:)` to hide any content that extends beyond these edges while applying a corner radius.
 

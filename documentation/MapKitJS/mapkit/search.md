@@ -15,7 +15,7 @@ The getter to use to access the search class.
 get Search(): typeof Search;
 ```
 
-#### Discussion
+## Discussion
 
 You must load the appropriate library before accessing the getter, otherwise, the getter throws an `Error`.
 

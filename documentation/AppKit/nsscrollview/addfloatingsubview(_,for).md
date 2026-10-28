@@ -19,7 +19,7 @@ func addFloatingSubview(_ view: NSView, for axis: NSEvent.GestureAxis)
 - (void) addFloatingSubview:(NSView *) view forAxis:(NSEventGestureAxis) axis;
 ```
 
-#### Discussion
+## Discussion
 
 Floating subviews of the document view do not scroll like the rest of the document. Instead these views appear to float over the document. For example, see `NSTableView` floating group rows ([`floatsGroupRows`](../nstableview/floatsgrouprows.md)).
 

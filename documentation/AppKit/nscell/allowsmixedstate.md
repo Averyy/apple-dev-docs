@@ -19,7 +19,7 @@ var allowsMixedState: Bool { get set }
 @property BOOL allowsMixedState;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the cell supports three states: on, off, and mixed. When the value is [`false`](../../Swift/false.md), the cell supports only the on and off states.
 

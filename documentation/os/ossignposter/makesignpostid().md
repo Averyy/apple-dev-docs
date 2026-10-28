@@ -25,11 +25,11 @@ func makeSignpostID() -> OSSignpostID
 
 - [Recording Performance Data](../recording-performance-data.md)
 
-#### Return Value
+## Return Value
 
 A signpost ID that you use to match an interval’s signposts.
 
-#### Discussion
+## Discussion
 
 The signposter uses a signpost ID to pair the beginning and the end of a signposted interval, which is necessary because multiple intervals with the same configuration and scope can be in-flight simultaneously.
 

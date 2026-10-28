@@ -23,7 +23,7 @@ optional var typeAndCreator: NSFileProviderTypeAndCreator { get }
 @property (nonatomic, readonly) NSFileProviderTypeAndCreator typeAndCreator;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains two values: the file type code and the creator code. The system synchronizes both codes at the same time, so define both, even if you’re just changing one.
 

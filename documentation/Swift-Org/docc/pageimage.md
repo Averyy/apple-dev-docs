@@ -24,7 +24,7 @@ Associates an image with a page.
 
 - [Customizing the Appearance of Your Documentation Pages](./customizing-the-appearance-of-your-documentation-pages.md)
 
-#### Overview
+## Overview
 
 You can use this directive to set the image used when rendering a user-interface element representing the page.
 

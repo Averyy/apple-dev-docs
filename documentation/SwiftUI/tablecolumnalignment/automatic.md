@@ -19,7 +19,7 @@ The default column alignment.
 static var automatic: TableColumnAlignment { get }
 ```
 
-#### Discussion
+## Discussion
 
 This is equivalent to `leading`.
 

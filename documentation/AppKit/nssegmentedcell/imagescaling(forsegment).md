@@ -19,7 +19,7 @@ func imageScaling(forSegment segment: Int) -> NSImageScaling
 - (NSImageScaling) imageScalingForSegment:(NSInteger) segment;
 ```
 
-#### Return Value
+## Return Value
 
 The scaling mode in use for the specified segment. For the possible values, see [`NSSegmentedControl.Style`](../nssegmentedcontrol/style.md). If no value has been explicitly set, [`NSImageScaling.scaleProportionallyDown`](../nsimagescaling/scaleproportionallydown.md) is returned.
 

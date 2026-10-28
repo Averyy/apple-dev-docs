@@ -21,7 +21,7 @@ The error code to indicate an unsupported audio format.
 static var invalidAudioFormat: SHError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 For the list of the supported audio formats, see [`append(_:at:)`](../shsignaturegenerator/append%28_,at%29.md).
 

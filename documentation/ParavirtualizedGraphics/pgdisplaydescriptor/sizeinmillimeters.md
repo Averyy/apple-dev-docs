@@ -20,7 +20,7 @@ var sizeInMillimeters: NSSize { get set }
 @property (nonatomic, readwrite) NSSize sizeInMillimeters;
 ```
 
-#### Discussion
+## Discussion
 
 The device propagates the display size to the guest operating system. The app can scale the resulting screen data to a different size in its user interface.
 

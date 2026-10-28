@@ -24,11 +24,11 @@ init?(name fontName: String, size fontSize: CGFloat)
 + (UIFont *) fontWithName:(NSString *) fontName size:(CGFloat) fontSize;
 ```
 
-#### Return Value
+## Return Value
 
 A font object of the specified name and size.
 
-#### Discussion
+## Discussion
 
 You can use the [`fontNames(forFamilyName:)`](./fontnames%28forfamilyname%29.md) method to retrieve the specific font names for a given font family.
 

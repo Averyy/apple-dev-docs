@@ -21,7 +21,7 @@ string MdmServerStatus
 - `DELETED`
 - `INACTIVE`
 
-#### Discussion
+## Discussion
 
 - Possible Values
 

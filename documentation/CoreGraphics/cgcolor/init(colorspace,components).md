@@ -25,7 +25,7 @@ init?(colorSpace space: CGColorSpace, components: UnsafePointer<CGFloat>)
 extern CGColorRefCGColorCreate(CGColorSpaceRef space, const CGFloat *components);
 ```
 
-#### Return Value
+## Return Value
 
 A new color. In Objective-C, you’re responsible for releasing this object using [`CGColorRelease`](../cgcolorrelease.md).
 

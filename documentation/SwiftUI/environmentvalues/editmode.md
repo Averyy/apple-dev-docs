@@ -19,7 +19,7 @@ An indication of whether the user can edit the contents of a view associated wit
 var editMode: Binding<EditMode>? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Read this environment value to receive a optional binding to the edit mode state. The binding contains an [`EditMode`](../editmode.md) value that indicates whether edit mode is active, and that you can use to change the mode. To learn how to read an environment value, see [`EnvironmentValues`](../environmentvalues.md).
 

@@ -21,11 +21,11 @@ Creates a geometry source from an array of normal vectors.
 + (instancetype) geometrySourceWithNormals:(const SCNVector3 *) normals count:(NSInteger) count;
 ```
 
-#### Return Value
+## Return Value
 
 A new geometry source whose [`SCNGeometrySource`](../scngeometrysource.md) property is [`normal`](./semantic-swift.struct/normal.md).
 
-#### Discussion
+## Discussion
 
 SceneKit converts this data to its own format to optimize rendering performance. To read the converted data, examine the properties of the created [`SCNGeometrySource`](../scngeometrysource.md) object.
 

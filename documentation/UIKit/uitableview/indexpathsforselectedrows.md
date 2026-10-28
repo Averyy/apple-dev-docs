@@ -23,7 +23,7 @@ var indexPathsForSelectedRows: [IndexPath]? { get }
 @property (nonatomic, readonly, nullable) NSArray<NSIndexPath *> * indexPathsForSelectedRows;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is an array of index-path objects each identifying a row through its section and row index. The value of this property is `nil` if there are no selected rows.
 

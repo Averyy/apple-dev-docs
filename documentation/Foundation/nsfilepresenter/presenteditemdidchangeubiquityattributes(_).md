@@ -23,7 +23,7 @@ optional func presentedItemDidChangeUbiquityAttributes(_ attributes: Set<URLReso
 - (void) presentedItemDidChangeUbiquityAttributes:(NSSet<NSString *> *) attributes;
 ```
 
-#### Discussion
+## Discussion
 
 To specify the ubiquity attributes that trigger notifications, implement your file provider’s [`observedPresentedItemUbiquityAttributes`](./observedpresenteditemubiquityattributes.md) property. If you do not implement this property, the system sends notifications when any ubiquity attribute changes.
 

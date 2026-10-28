@@ -25,7 +25,7 @@ var fileDescriptor: Int32 { get }
 extern dispatch_fd_t dispatch_io_get_descriptor(dispatch_io_t channel);
 ```
 
-#### Discussion
+## Discussion
 
 If the path name associated with the channel has not yet been opened, calling this function does not normally open the corresponding file, with one exception. If you call the function from a barrier block scheduled on the channel, the function does open the file and return the resulting file descriptor.
 

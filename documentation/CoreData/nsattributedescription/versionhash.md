@@ -25,7 +25,7 @@ var versionHash: Data { get }
 @property (copy, readonly) NSData * versionHash;
 ```
 
-#### Discussion
+## Discussion
 
 The version hash is used to uniquely identify an attribute based on its configuration. This value includes the [`versionHash`](../nspropertydescription/versionhash.md) information from [`NSPropertyDescription`](../nspropertydescription.md) and the attribute type.
 

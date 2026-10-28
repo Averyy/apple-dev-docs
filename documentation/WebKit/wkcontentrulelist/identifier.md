@@ -23,7 +23,7 @@ var identifier: String! { get }
 @property (nonatomic, copy, readonly) NSString * identifier;
 ```
 
-#### Discussion
+## Discussion
 
 You specify the identifier for your rule lists at compile time in the [`compileContentRuleList(forIdentifier:encodedContentRuleList:completionHandler:)`](../wkcontentruleliststore/compilecontentrulelist%28foridentifier,encodedcontentrulelist,completionhandler%29.md) method of [`WKContentRuleListStore`](../wkcontentruleliststore.md). You also use this identifier to look up the rules list later.
 

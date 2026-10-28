@@ -21,7 +21,7 @@ An error that occurs when a share has too many participants.
 static var tooManyParticipants: CKError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Remove some participants before you retry the operation. Limits can change at any time, but CloudKit generally enforces a maximum of 100 participants for a share.
 

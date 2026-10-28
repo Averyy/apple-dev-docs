@@ -5,11 +5,11 @@
 
 Detects when you don’t close threads after use.
 
-#### Overview
+## Overview
 
 Use this check to detect threads you create using the `pthread_create(_:_:_:_:)` function without a corresponding call to the `pthread_join(_:_:)` function. Leaked threads can result in decreased performance and may lead to crashes. Available in Xcode 8 and later.
 
-##### Leaked thread in C
+### Leaked thread in C
 
 In the following example, the code creates a `thread` variable, but doesn’t close it after use:
 
@@ -22,7 +22,7 @@ pthread_create(&thread, NULL, run, NULL); // Error: thread leak
 sleep(1);
 ```
 
-###### Solution
+#### Solution
 
 Add a call to the `pthread_join(_:_:)` function.
 

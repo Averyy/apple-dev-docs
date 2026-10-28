@@ -25,7 +25,7 @@ func vImageGamma_PlanarF(_ src: UnsafePointer<vImage_Buffer>, _ dest: UnsafePoin
 vImage_Error vImageGamma_PlanarF(const vImage_Buffer *src, const vImage_Buffer *dest, GammaFunction const gamma, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 

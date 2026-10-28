@@ -13,11 +13,11 @@
 int sockopt_name(sockopt_t sopt);
 ```
 
-#### Return Value
+## Return Value
 
 The socket option name. See man 2 setsockopt
 
-#### Discussion
+## Discussion
 
 Retrieves the socket option name. (SO_SNDBUF, etc).
 

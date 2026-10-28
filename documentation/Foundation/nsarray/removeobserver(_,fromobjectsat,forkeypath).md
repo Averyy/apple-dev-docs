@@ -25,7 +25,7 @@ func removeObserver(_ observer: NSObject, fromObjectsAt indexes: IndexSet, forKe
 - (void) removeObserver:(NSObject *) observer fromObjectsAtIndexes:(NSIndexSet *) indexes forKeyPath:(NSString *) keyPath;
 ```
 
-#### Discussion
+## Discussion
 
 This is not merely a convenience method; invoking this method is potentially much faster than repeatedly invoking [`removeObserver(_:forKeyPath:)`](../../ObjectiveC/nsobject-swift.class/removeobserver%28_,forkeypath%29.md).
 

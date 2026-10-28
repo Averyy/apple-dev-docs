@@ -30,11 +30,11 @@ func start() -> Bool
 - [Authenticating a User Through a Web Service](../authenticating-a-user-through-a-web-service.md)
 - [Supporting Single Sign-On in a Web Browser App](../supporting-single-sign-on-in-a-web-browser-app.md)
 
-#### Return Value
+## Return Value
 
 A Boolean value indicating whether the web authentication session started successfully.
 
-#### Discussion
+## Discussion
 
 Only call this method once for a given [`ASWebAuthenticationSession`](../aswebauthenticationsession.md) instance after initialization. Calling the [`start()`](./start%28%29.md) method on a canceled session results in a failure.
 

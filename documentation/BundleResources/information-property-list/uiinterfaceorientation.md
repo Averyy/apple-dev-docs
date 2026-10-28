@@ -26,7 +26,7 @@ The initial orientation of the app’s user interface.
 
 **Default**: `UIInterfaceOrientationPortrait`
 
-#### Discussion
+## Discussion
 
 The default value is `UIInterfaceOrientationPortrait`. If you add the [`UISupportedInterfaceOrientations`](./uisupportedinterfaceorientations.md) key to the information property list, the system ignores this key.
 

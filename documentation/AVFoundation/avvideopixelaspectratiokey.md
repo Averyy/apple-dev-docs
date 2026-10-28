@@ -24,7 +24,7 @@ let AVVideoPixelAspectRatioKey: String
 extern NSString * const AVVideoPixelAspectRatioKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an instance of `NSDictionary`.
 

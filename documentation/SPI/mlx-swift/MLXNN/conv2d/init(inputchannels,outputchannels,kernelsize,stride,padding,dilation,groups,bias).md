@@ -17,7 +17,7 @@ Applies a 2-dimensional convolution over the multi-channel input image.
 init(inputChannels: Int, outputChannels: Int, kernelSize: IntOrPair, stride: IntOrPair = 1, padding: IntOrPair = 0, dilation: IntOrPair = 1, groups: Int = 1, bias: Bool = true)
 ```
 
-#### Discussion
+## Discussion
 
 The channels are expected to be last i.e. the input shape should be `NHWC` where:
 

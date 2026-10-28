@@ -21,7 +21,7 @@ Creates a timed metadata group with a sample buffer.
 convenience init?(sampleBuffer: CMReadySampleBuffer<CMSampleBuffer.DynamicContent>)
 ```
 
-#### Return Value
+## Return Value
 
 An instance of `AVTimedMetadataGroup`.
 

@@ -24,7 +24,7 @@ string AddressCategory
 - `SubLocality`
 - `PostalCode`
 
-#### Possible Values
+## Possible Values
 
 - **Country**: Countries and regions. AdministrativeArea The primary administrative divisions of countries or regions.
 - **SubAdministrativeArea**: The secondary administrative divisions of countries or regions.

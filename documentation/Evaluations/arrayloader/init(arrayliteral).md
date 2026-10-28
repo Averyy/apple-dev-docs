@@ -21,7 +21,7 @@ Creates a loader from an array literal of samples.
 init(arrayLiteral elements: Sample...)
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 let loader: ArrayLoader = [

@@ -19,7 +19,7 @@ func appendArc(from point1: NSPoint, to point2: NSPoint, radius: CGFloat)
 - (void) appendBezierPathWithArcFromPoint:(NSPoint) point1 toPoint:(NSPoint) point2 radius:(CGFloat) radius;
 ```
 
-#### Discussion
+## Discussion
 
 The created arc is defined by a circle inscribed inside the angle specified by three points: the current point, the `fromPoint` parameter, and the  `toPoint` parameter (in that order). The arc itself lies on the perimeter of the circle, whose radius is specified by the `radius` parameter. The arc is drawn between the two points of the circle that are tangent to the two legs of the angle.
 

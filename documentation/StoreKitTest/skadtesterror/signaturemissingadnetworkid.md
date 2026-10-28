@@ -17,7 +17,7 @@ The signature is missing an ad network identifier, in the testing environment.
 static var signatureMissingAdNetworkId: SKAdTestError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Be sure to include an ad network identifier when you create and validate an ad impression in the testing environment.
 

@@ -19,11 +19,11 @@ func window(withWindowNumber windowNum: Int) -> NSWindow?
 - (NSWindow *) windowWithWindowNumber:(NSInteger) windowNum;
 ```
 
-#### Return Value
+## Return Value
 
 The desired window object or `nil` if the window could not be found.
 
-#### Discussion
+## Discussion
 
 [`window(withWindowNumber:)`](./window%28withwindownumber%29.md) may return `nil` for window numbers found using [`windowNumbers(options:)`](../nswindow/windownumbers%28options%29.md) if there is no corresponding window object owned by your app—for example, the menu bar.
 

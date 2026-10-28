@@ -19,7 +19,7 @@ func sendEvent(_ event: NSEvent)
 - (void) sendEvent:(NSEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 You rarely invoke [`sendEvent(_:)`](./sendevent%28_%29.md) directly, although you might want to override this method to perform some action on every event. [`sendEvent(_:)`](./sendevent%28_%29.md) messages are sent from the main event loop (the [`run()`](./run%28%29.md) method). [`sendEvent(_:)`](./sendevent%28_%29.md) is the method that dispatches events to the appropriate responders—`NSApp` handles app events, the [`NSWindow`](../nswindow.md) object indicated in the event record handles window-related events, and mouse and key events are forwarded to the appropriate [`NSWindow`](../nswindow.md) object for further dispatching.
 

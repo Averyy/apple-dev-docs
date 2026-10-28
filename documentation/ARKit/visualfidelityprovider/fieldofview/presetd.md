@@ -15,7 +15,7 @@ Preset field of view D.
 static let presetD: VisualFidelityProvider.FieldOfView
 ```
 
-#### Discussion
+## Discussion
 
 To learn more about this preset you can visualize the `FieldOfViewAnchor`.
 

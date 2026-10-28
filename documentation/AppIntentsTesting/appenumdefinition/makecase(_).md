@@ -25,11 +25,11 @@ func makeCase(_ rawValue: String) -> AnyAppEnum
 
 - [Testing your App Intents code](../testing-your-app-intents-code.md)
 
-#### Return Value
+## Return Value
 
 A type-erased enumeration instance with the specified value.
 
-#### Discussion
+## Discussion
 
 The provided `rawValue` needs to match one of your enum’s cases.
 

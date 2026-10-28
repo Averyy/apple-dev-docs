@@ -25,11 +25,11 @@ class func fadeOpacity(by factor: CGFloat, duration sec: TimeInterval) -> SCNAct
 + (SCNAction *) fadeOpacityBy:(CGFloat) factor duration:(NSTimeInterval) sec;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 When the action executes, the node’s [`opacity`](../scnnode/opacity.md) property animates to its new value.
 

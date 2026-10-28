@@ -27,7 +27,7 @@ var error: (any Error)? { get }
 @property (nonatomic, readonly, nullable) NSError * error;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is nil unless the value of [`status`](./status.md) is [`AVQueuedSampleBufferRenderingStatus.failed`](../avqueuedsamplebufferrenderingstatus/failed.md).
 

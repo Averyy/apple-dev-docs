@@ -20,7 +20,7 @@ var flags: UInt32
 UInt32 flags;
 ```
 
-#### Discussion
+## Discussion
 
 Set to `0` on creation and do not modify afterward.
 

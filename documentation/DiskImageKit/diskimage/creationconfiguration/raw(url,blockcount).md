@@ -17,11 +17,11 @@ static func raw(url: URL, blockCount: Int) -> Self
 
 Available when `Self` is `RAWCreationConfiguration`.
 
-#### Return Value
+## Return Value
 
 A [`RAWCreationConfiguration`](../../rawcreationconfiguration.md) instance.
 
-#### Discussion
+## Discussion
 
 The framework only supports the 512-byte block size for RAW images.
 

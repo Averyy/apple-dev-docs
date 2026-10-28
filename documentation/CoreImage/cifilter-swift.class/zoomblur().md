@@ -24,11 +24,11 @@ class func zoomBlur() -> any CIFilter & CIZoomBlur
 + (CIFilter<CIZoomBlur> *) zoomBlurFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The blurred image.
 
-#### Discussion
+## Discussion
 
 This method applies the zoom blur filter to an image. This effect mimics the zoom of a camera when capturing the image.
 

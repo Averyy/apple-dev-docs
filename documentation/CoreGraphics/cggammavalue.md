@@ -20,7 +20,7 @@ typealias CGGammaValue = Float
 typedef float CGGammaValue;
 ```
 
-#### Discussion
+## Discussion
 
 In macOS, the Display panel in System Preferences is used to set the default gamma for a display. Quartz also allows an application to provide its own custom gamma information, using functions such as [`CGSetDisplayTransferByTable(_:_:_:_:_:)`](./cgsetdisplaytransferbytable%28_,_,_,_,_%29.md) and [`CGSetDisplayTransferByFormula(_:_:_:_:_:_:_:_:_:_:)`](./cgsetdisplaytransferbyformula%28_,_,_,_,_,_,_,_,_,_%29.md).
 

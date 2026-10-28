@@ -21,7 +21,7 @@ A guide that marks the bottom and leading edges of the view.
 static let bottomLeading: Alignment
 ```
 
-#### Discussion
+## Discussion
 
 This alignment combines the [`leading`](../horizontalalignment/leading.md) horizontal guide and the [`bottom`](../verticalalignment/bottom.md) vertical guide:
 

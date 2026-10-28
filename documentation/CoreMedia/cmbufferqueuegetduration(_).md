@@ -25,11 +25,11 @@ func CMBufferQueueGetDuration(_ queue: CMBufferQueue) -> CMTime
 extern CMTime CMBufferQueueGetDuration(CMBufferQueueRef queue);
 ```
 
-#### Return Value
+## Return Value
 
 Returns sum of all the individual buffer durations in the `CMBufferQueue`.
 
-#### Discussion
+## Discussion
 
 The duration of the `CMBufferQueue` is the sum of all the individual                buffer durations, as reported by the `getDuration` callback (provided to                `Creating Buffer Queues`).  If there are no buffers in the queue,                `kCMTimeZero` will be returned.
 

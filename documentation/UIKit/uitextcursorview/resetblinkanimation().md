@@ -24,7 +24,7 @@ func resetBlinkAnimation()
 - (void) resetBlinkAnimation;
 ```
 
-#### Discussion
+## Discussion
 
 When the cursor is moving in your text view, call this method to prevent the insertion point from blinking.
 

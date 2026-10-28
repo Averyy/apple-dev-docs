@@ -19,11 +19,11 @@ func hv_gic_set_redistributor_reg(_ vcpu: hv_vcpu_t, _ reg: hv_gic_redistributor
 extern hv_return_t hv_gic_set_redistributor_reg(hv_vcpu_t vcpu, hv_gic_redistributor_reg_t reg, uint64_t value);
 ```
 
-#### Return Value
+## Return Value
 
 [`HV_SUCCESS`](./hv_success.md) on success; otherwise, an error code.
 
-#### Discussion
+## Discussion
 
 GIC redistributor register enumeration values are equal to the device register offsets defined in the ARM GIC v3 specification. Alternatively, the client can use the offset while looping through large register arrays.
 

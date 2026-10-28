@@ -19,7 +19,7 @@ enum AnnotationType
 
 - [Building an object detector data source](../building-an-object-detector-data-source.md)
 
-#### Overview
+## Overview
 
 Use [`MLObjectDetector.AnnotationType`](./annotationtype.md) to tell Create ML how to interpret your object annotations.
 

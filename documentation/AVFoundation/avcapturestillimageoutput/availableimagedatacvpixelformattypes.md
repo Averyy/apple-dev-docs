@@ -24,7 +24,7 @@ var availableImageDataCVPixelFormatTypes: [NSNumber] { get }
 @property (nonatomic, readonly) NSArray<NSNumber *> * availableImageDataCVPixelFormatTypes;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is an array of `NSNumber` objects that you can use as values for the [`kCVPixelBufferPixelFormatTypeKey`](../../CoreVideo/kcvpixelbufferpixelformattypekey.md) in the [`outputSettings`](./outputsettings.md) property.
 

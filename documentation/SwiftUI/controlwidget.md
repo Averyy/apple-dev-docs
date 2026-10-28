@@ -20,7 +20,7 @@ The configuration and content of a control widget to display in system spaces su
 @preconcurrency protocol ControlWidget
 ```
 
-#### Overview
+## Overview
 
 Controls allow users to quickly read the state of your app or its accessories, and take quick actions, without having to open your app. Users can add, configure, and arrange controls to suit their individual needs. You can provide multiple types of controls, each representing a specific kind of action.
 

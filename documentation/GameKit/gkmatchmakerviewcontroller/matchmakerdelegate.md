@@ -28,7 +28,7 @@ weak var matchmakerDelegate: (any GKMatchmakerViewControllerDelegate)? { get set
 
 - [Finding players for custom server-based games](../finding-players-for-custom-server-based-games.md)
 
-#### Discussion
+## Discussion
 
 You must set the delegate for GameKit to notify you when players accept their invitations and you can start the game.
 

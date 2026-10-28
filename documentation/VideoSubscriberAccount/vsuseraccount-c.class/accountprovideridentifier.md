@@ -19,7 +19,7 @@ A string that uniquely identifies a TV provider known to Apple that provides the
 @property (nonatomic, strong, nullable) NSString * accountProviderIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 For use only with TV Provider Authentication integrated apps.
 

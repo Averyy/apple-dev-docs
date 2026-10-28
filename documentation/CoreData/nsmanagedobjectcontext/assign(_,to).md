@@ -25,11 +25,11 @@ func assign(_ object: Any, to store: NSPersistentStore)
 - (void) assignObject:(id) object toPersistentStore:(NSPersistentStore *) store;
 ```
 
-#### Discussion
+## Discussion
 
 You can obtain a store from the persistent store coordinator, using for example [`persistentStore(for:)`](../nspersistentstorecoordinator/persistentstore%28for%29.md).
 
-##### Special Considerations
+### Special Considerations
 
 It is only necessary to use this method if the receiver’s persistent store coordinator manages multiple writable stores that have `object`‘s entity in their configuration. Maintaining configurations in the managed object model can eliminate the need for invoking this method directly in many situations. If the receiver’s persistent store coordinator manages only a single writable store, or if only one store has `object`’s entity in its model, `object` will automatically be assigned to that store.
 

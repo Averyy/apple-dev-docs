@@ -23,7 +23,7 @@ convenience init()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized search bar or `nil` if the view could not be initialized.
 

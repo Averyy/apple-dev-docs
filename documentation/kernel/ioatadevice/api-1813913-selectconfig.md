@@ -12,11 +12,11 @@ virtual IOReturn selectConfig(
  IOATADevConfig *configRequest);
 ```
 
-#### Return Value
+## Return Value
 
 kIOSuccess (0) if the configuration was succesfully selected.
 
-#### Overview
+## Overview
 
 This should only be called once during a disk drivers start method before registering its availability, and must be called prior to issuing any data IO transactions.
 

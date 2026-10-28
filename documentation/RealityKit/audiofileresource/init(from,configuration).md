@@ -21,7 +21,7 @@ Initializes an AudioFileResource from in-memory data asynchronously.
 @preconcurrency convenience init(from data: Data, configuration: AudioFileResource.Configuration = .init()) async throws
 ```
 
-#### Discussion
+## Discussion
 
 This API creates a memory-resident audio resource that never writes to disk. The data must contain a valid audio file format (WAV, M4A, etc.).
 

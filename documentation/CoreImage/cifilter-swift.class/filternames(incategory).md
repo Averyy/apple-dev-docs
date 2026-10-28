@@ -24,7 +24,7 @@ class func filterNames(inCategory category: String?) -> [String]
 + (NSArray<NSString *> *) filterNamesInCategory:(NSString *) category;
 ```
 
-#### Return Value
+## Return Value
 
 An array that contains all published names of the filter in a category.
 

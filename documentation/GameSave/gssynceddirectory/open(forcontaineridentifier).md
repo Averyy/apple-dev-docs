@@ -23,7 +23,7 @@ class func open(forContainerIdentifier containerIdentifier: String?) -> GSSynced
 + (GSSyncedDirectory *) openDirectoryForContainerIdentifier:(NSString *) containerIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 This method returns immediately, and starts syncing the directory in the background. To wait for syncing to complete, call the [`finishSyncing(completionHandler:)`](./finishsyncing%28completionhandler%29.md) method.
 

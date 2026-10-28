@@ -21,7 +21,7 @@ The character the CSV file generator uses to separate data fields in a CSV file.
 var delimiter: Character
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to comma (`,`).
 

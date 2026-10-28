@@ -19,11 +19,11 @@ func correction(forWordRange range: NSRange, in string: String, language: String
 - (NSString *) correctionForWordRange:(NSRange) range inString:(NSString *) string language:(NSString *) language inSpellDocumentWithTag:(NSInteger) tag;
 ```
 
-#### Return Value
+## Return Value
 
 The proposed correct string.
 
-#### Discussion
+## Discussion
 
 While correction functionality is available starting in OS X v10.6 as part of unified text checking, for convenience this method makes it available separately starting in OS X v10.7.
 

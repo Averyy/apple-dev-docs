@@ -21,11 +21,11 @@ Tells the system a widget is relevant at a specific date.
 static func date(_ exact: Date) -> RelevantContext
 ```
 
-#### Return Value
+## Return Value
 
 A contextual clue that the system uses to determine the relevance of a widget in the Smart Stack on Apple Watch.
 
-#### Discussion
+## Discussion
 
 Let the system know that a widget is most relevant to a person on a specific date. For example, an app people use to follow sport events might provide the start of a match or a live broadcast. If you know when the widget isn’t relevant anymore, use [`date(interval:kind:)`](./date%28interval,kind%29.md).
 

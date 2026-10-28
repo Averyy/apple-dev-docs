@@ -16,11 +16,11 @@ Obtains a property from an IOHIDDevice.
 CFTypeRef IOHIDDeviceGetProperty(IOHIDDeviceRef device, CFStringRef key);
 ```
 
-#### Return Value
+## Return Value
 
 Returns CFTypeRef containing the property.
 
-#### Discussion
+## Discussion
 
 Property keys are prefixed by kIOHIDDevice and declared in <IOKit/hid/IOHIDKeys.h>.
 

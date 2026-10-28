@@ -23,11 +23,11 @@ optional func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange
 - (BOOL) textView:(UITextView *) textView shouldChangeTextInRange:(NSRange) range replacementText:(NSString *) text;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the old text should be replaced by the new text; [`false`](../../Swift/false.md) if the replacement operation should be aborted.
 
-#### Discussion
+## Discussion
 
 The text view calls this method whenever the user types a new character or deletes an existing character. Implementation of this method is optional. You can use this method to replace text before it is committed to the text view storage. For example, a spell checker might use this method to replace a misspelled word with the correct spelling.
 

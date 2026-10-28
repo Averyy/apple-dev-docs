@@ -21,7 +21,7 @@ A structure that calculates k-nearest neighbors.
 struct NearestNeighbors
 ```
 
-#### Overview
+## Overview
 
 The following code generates eight 2D data points and loads them into a k-nearest neighbors object with a single call to the [`append(samples:)`](./nearestneighbors/append%28samples%29.md) function. The code then computes the four nearest neighbors, based on Euclidean distance, to the sample data point at index 7 of the samples data:
 

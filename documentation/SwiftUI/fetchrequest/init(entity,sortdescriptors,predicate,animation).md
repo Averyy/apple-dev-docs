@@ -24,7 +24,7 @@ Creates a fetch request for a specified entity description, based on a predicate
 
 Available when `Result` conforms to `NSFetchRequestResult`.
 
-#### Discussion
+## Discussion
 
 Use this initializer if you need to explicitly specify the entity type for the request. If you specify a placeholder `Result` type in the request declaration, use the [`init(sortDescriptors:predicate:animation:)`](./init%28sortdescriptors,predicate,animation%29.md) initializer to let the request infer the entity type. If you need more control over the fetch request configuration, use [`init(fetchRequest:animation:)`](./init%28fetchrequest,animation%29.md).
 

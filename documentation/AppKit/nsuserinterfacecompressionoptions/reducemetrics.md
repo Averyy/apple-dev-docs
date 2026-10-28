@@ -20,7 +20,7 @@ class var reduceMetrics: NSUserInterfaceCompressionOptions { get }
 @property (class, copy, readonly) NSUserInterfaceCompressionOptions * reduceMetricsOption;
 ```
 
-#### Discussion
+## Discussion
 
 Use this compression option to reduce the padding in system controls.
 

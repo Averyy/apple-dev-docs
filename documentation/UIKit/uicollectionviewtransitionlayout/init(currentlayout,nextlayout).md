@@ -23,11 +23,11 @@ init(currentLayout: UICollectionViewLayout, nextLayout newLayout: UICollectionVi
 - (instancetype) initWithCurrentLayout:(UICollectionViewLayout *) currentLayout nextLayout:(UICollectionViewLayout *) newLayout;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized transition layout object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 This method initializes the transition layout object and saves references to the current and new layout objects so that you can access them later. If you subclass and implement your own initialization method, you must call this method to initialize the superclass.
 

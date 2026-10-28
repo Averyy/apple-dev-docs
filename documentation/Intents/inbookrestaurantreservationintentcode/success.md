@@ -16,7 +16,7 @@ case success
 INBookRestaurantReservationIntentCodeSuccess
 ```
 
-#### Discussion
+## Discussion
 
 Use this code if your app successfully created the reservation object in your system. Use this code even if the restaurant itself has not yet confirmed the reservation. You can always update the status of the reservation later.
 

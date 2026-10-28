@@ -24,7 +24,7 @@ optional func netService(_ sender: NetService, didNotResolve errorDict: [String 
 - (void) netService:(NSNetService *) sender didNotResolve:(NSDictionary<NSString *,NSNumber *> *) errorDict;
 ```
 
-#### Discussion
+## Discussion
 
 Clients may try to resolve again upon receiving this error. For example, a DNS rotary may yield different IP addresses on different resolution requests. A common error condition is that no addresses were resolved during the timeout period specified in [`resolve(withTimeout:)`](../netservice/resolve%28withtimeout%29.md).
 

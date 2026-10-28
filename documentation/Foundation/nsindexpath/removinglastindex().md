@@ -25,15 +25,15 @@ func removingLastIndex() -> IndexPath
 - (NSIndexPath *) indexPathByRemovingLastIndex;
 ```
 
-#### Return Value
+## Return Value
 
 A new index path with the receiving index path’s indexes, excluding the last one.
 
-#### Discussion
+## Discussion
 
 Returns an empty `NSIndexPath` instance if the receiving index path’s length is 1 or less.
 
-##### Special Considerations
+### Special Considerations
 
 In OS X v10.4 this method returns `nil` when the length of the receiving index path is 1 or less. On iOS and macOS 10.5 and later this method never returns `nil`.
 

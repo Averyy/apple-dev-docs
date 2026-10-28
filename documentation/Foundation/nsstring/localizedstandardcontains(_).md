@@ -25,7 +25,7 @@ func localizedStandardContains(_ str: String) -> Bool
 - (BOOL) localizedStandardContainsString:(NSString *) str;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver contains `str`, otherwise [`false`](../../Swift/false.md).
 

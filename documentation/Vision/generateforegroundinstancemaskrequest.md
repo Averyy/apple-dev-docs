@@ -21,7 +21,7 @@ A request that generates an instance mask of noticeable objects to separate from
 struct GenerateForegroundInstanceMaskRequest
 ```
 
-#### Overview
+## Overview
 
 This request generates an [`InstanceMaskObservation`](./instancemaskobservation.md) object with instance-mask data.
 

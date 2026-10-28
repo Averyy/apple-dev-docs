@@ -5,7 +5,7 @@
 
 Read, create, and update imagery that appears on the App Clip card for advanced App Clip experiences.
 
-#### Overview
+## Overview
 
 The `appClipAdvancedExperienceImages` resource represents an image asset that appears on the App Clip card for your advanced App Clip experiences. Use this resource to associate your advanced experience with new imagery or to update already associated imagery.
 

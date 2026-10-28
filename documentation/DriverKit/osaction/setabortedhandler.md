@@ -18,11 +18,11 @@ Install a handler for the system to call when no other processes reference the a
 kern_return_t SetAbortedHandler(OSActionAbortedHandler handler);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../error-codes.md).
 
-#### Discussion
+## Discussion
 
 The system calls your handler when no other objects reference the action object. If you want to keep the action object, use your handler to retain it. If you don’t retain the object, the system releases it shortly after your handler returns.
 

@@ -22,7 +22,7 @@ nonisolated
 init(_ artwork: Artwork, width: CGFloat)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer derives the [`URL`](../../Foundation/url.md) for loading the artwork image from the [`Artwork`](../artwork.md) instance and the specified sizing parameters, as well as the display scale for the current environment.
 

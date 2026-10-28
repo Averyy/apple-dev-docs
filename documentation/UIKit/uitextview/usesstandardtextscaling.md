@@ -23,7 +23,7 @@ var usesStandardTextScaling: Bool { get set }
 @property (nonatomic) BOOL usesStandardTextScaling;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), UIKit automatically adjusts the rendering of the text in the text view to match the standard text scaling.
 

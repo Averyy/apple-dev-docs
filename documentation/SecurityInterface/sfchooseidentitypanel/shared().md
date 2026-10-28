@@ -19,7 +19,7 @@ class func shared() -> SFChooseIdentityPanel!
 + (SFChooseIdentityPanel *) sharedChooseIdentityPanel;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method if your application displays a single choose identity panel or sheet at a time. If your application can display multiple choose identity panels or sheets at once, you must allocate separate object instances (using the [`alloc`](../../ObjectiveC/nsobject-swift.class/alloc.md) class method inherited from [`NSObject`](../../ObjectiveC/nsobject-swift.class.md)) and initialize them (using the [`init()`](../../ObjectiveC/nsobject-swift.class/init%28%29.md) instance method, also inherited from [`NSObject`](../../ObjectiveC/nsobject-swift.class.md)) instead of using this class method.
 

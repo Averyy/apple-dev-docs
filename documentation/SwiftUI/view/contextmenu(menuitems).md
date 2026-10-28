@@ -22,11 +22,11 @@ nonisolated
 func contextMenu<MenuItems>(@ContentBuilder menuItems: () -> MenuItems) -> some View where MenuItems : View
 ```
 
-#### Return Value
+## Return Value
 
 A view that can display a context menu.
 
-#### Discussion
+## Discussion
 
 Use this modifier to add a context menu to a view in your app’s user interface. Compose the menu by returning controls like [`Button`](../button.md), [`Toggle`](../toggle.md), and [`Picker`](../picker.md) from the `menuItems` closure. You can also use [`Menu`](../menu.md) to define submenus or [`Section`](../section.md) to group items.
 

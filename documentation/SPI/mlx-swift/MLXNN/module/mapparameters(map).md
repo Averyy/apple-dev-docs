@@ -17,7 +17,7 @@ Function that will turn a `(MLXArray) -> Result?` into a function suitable for u
 static func mapParameters<Result>(map: @escaping (MLXArray) -> Result? = { $0 }) -> (ModuleItem) -> Result?
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 // map is (ModuleItem) -> [Int]?
@@ -37,7 +37,7 @@ let shapes = module.mapParameters { array in
 }
 ```
 
-##### See Also
+### See Also
 
 - [Module Filter and Map Functions](../module-filters.md)
 - [`ModuleValue.parameters(_:)`](../modulevalue/parameters%28_%29.md)

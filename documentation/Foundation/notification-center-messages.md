@@ -5,13 +5,13 @@
 
 Use Foundation’s notification center with Swift concurrency.
 
-#### Overview
+## Overview
 
 In Swift, the [`Notification`](./notification.md) type is `nonisolated`, even in cases where it’s posted on a known isolation. To provide specific isolation information and better support Swift concurrency, `NotificationCenter` defines two message types. A [`NotificationCenter.MainActorMessage`](./notificationcenter/mainactormessage.md) binds to the main actor, whereas a [`NotificationCenter.AsyncMessage`](./notificationcenter/asyncmessage.md) uses an arbitrary isolation. Frameworks extend these types to define distinct messages, typically corresponding to an existing [`Notification.Name`](./notification/name-swift.typealias.md), that declare instance properties for their values instead of using a `userInfo` dictionary. As a result, messages can conform to [`Sendable`](../Swift/sendable.md) when they either don’t use properties or contain only sendable properties.
 
 If your project only needs to support Swift, you can just use the `Message` types. For projects with both Objective-C and Swift code, define a [`Notification`](./notification.md) as well as a corresponding `Message` type.
 
-##### Posting and observing messages
+### Posting and observing messages
 
 You can post a message with the `post(_:subject:)` method, passing a message instance and optionally providing a subject. To receive messages, add an observer with the `addObserver(of:for:using:)` method. The overloads of this method allow you to observe either messages from a single object or from any object of a given type. Observation ends when you discard the token returned from `addObserver(of:for:using:)` or after an explicit call to [`removeObserver(_:)`](./notificationcenter/removeobserver%28_%29-2gmm0.md).
 
@@ -19,7 +19,7 @@ You can also receive messages as an [`AsyncSequence`](../Swift/asyncsequence.md)
 
 Several flavors of `addObserver(of:for:using:)` and `messages(of:for:bufferSize:)` take a [`NotificationCenter.MessageIdentifier`](./notificationcenter/messageidentifier.md), which frameworks may implement to provide a typed, ergonomic experience at the call point for convenience, as described in [SE-0299](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0299-extend-generic-static-member-lookup.md).
 
-##### Using messages with the SDK
+### Using messages with the SDK
 
 Many system frameworks — including Foundation, UIKit, and AppKit — adopt the [`NotificationCenter.MainActorMessage`](./notificationcenter/mainactormessage.md) and [`NotificationCenter.AsyncMessage`](./notificationcenter/asyncmessage.md) types to facilitate using their notifications in concurrency-safe Swift code. The following example shows how to observe Foundation’s [`TimeZone`](./timezone.md) type for the [`systemTimeZoneDidChange`](./notificationcenter/messageidentifier/systemtimezonedidchange.md) message, which contains the property [`previousTimeZone`](./timezone/systemtimezonedidchangemessage/previoustimezone.md).
 

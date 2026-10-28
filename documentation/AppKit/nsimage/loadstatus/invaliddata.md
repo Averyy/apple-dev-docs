@@ -19,7 +19,7 @@ case invalidData
 NSImageLoadStatusInvalidData
 ```
 
-#### Discussion
+## Discussion
 
 The image data is probably corrupt. The image contains the portions of the data that have already been successfully decompressed, if any.
 

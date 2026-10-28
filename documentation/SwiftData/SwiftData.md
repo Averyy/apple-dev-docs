@@ -15,7 +15,7 @@ Write your model code declaratively to add managed persistence and efficient mod
 - visionOS 1.0+
 - watchOS 10.0+
 
-#### Overview
+## Overview
 
 Combining Core Data’s proven persistence technology and Swift’s modern concurrency features, SwiftData enables you to add persistence to your app quickly, with minimal code and no external dependencies. Using modern language features like macros, SwiftData enables you to write code that is fast, efficient, and safe, enabling you to describe the entire model layer (or object graph) for your app. The framework handles storing the underlying model data, and optionally, syncing that data across multiple devices.
 

@@ -27,11 +27,11 @@ class func authorizationStatus() -> CLAuthorizationStatus
 + (CLAuthorizationStatus) authorizationStatus;
 ```
 
-#### Return Value
+## Return Value
 
 A value indicating whether the app is authorized to use location services.
 
-#### Discussion
+## Discussion
 
 The system is guaranteed to call the delegate method with the app’s initial authorization state and all authorization status changes.
 

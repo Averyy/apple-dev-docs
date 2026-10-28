@@ -13,7 +13,7 @@
 func tap(forUID UID: String) throws -> AudioHardwareTap?
 ```
 
-#### Return Value
+## Return Value
 
 The AudioHardwareTap that corresponds with the given UID, or nil if the UID does not correspond with any tap object.
 

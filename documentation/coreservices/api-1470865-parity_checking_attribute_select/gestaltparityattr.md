@@ -14,7 +14,7 @@
 gestaltParityAttr = 'prty'
 ```
 
-#### Discussion
+## Discussion
 
 The selector you pass to the `Gestalt` function to determine information about the machine’s parity-checking features.
 

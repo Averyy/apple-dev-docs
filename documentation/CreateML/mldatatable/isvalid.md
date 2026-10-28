@@ -20,7 +20,7 @@ A Boolean value that indicates whether the data table is valid.
 var isValid: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 Check [`isValid`](./isvalid.md) after you create or mutate a data table to ensure the data table is still valid. If it’s [`false`](../../Swift/false.md), the data table encountered an error and you can’t use it for training or subsequent operations. The following are some of the actions that can invalidate a data table:
 

@@ -19,7 +19,7 @@ protocol VZCustomVirtioDeviceDelegate : NSObjectProtocol
 @protocol VZCustomVirtioDeviceDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 When you define these methods and set the delegate on your [`VZCustomVirtioDevice`](./vzcustomvirtiodevice.md) instance, the Virtualization framework notifies you when the Virtio device stops, pauses, resumes, or resets by the invocation of the respective methods defined here, and you can provide code to handle each of these situations.
 

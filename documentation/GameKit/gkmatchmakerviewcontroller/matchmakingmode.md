@@ -28,7 +28,7 @@ var matchmakingMode: GKMatchmakingMode { get set }
 
 - [Finding multiple players for a game](../finding-multiple-players-for-a-game.md)
 
-#### Discussion
+## Discussion
 
 This method throws an exception if the mode isn’t possible due to restrictions.
 

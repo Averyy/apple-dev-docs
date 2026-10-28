@@ -21,7 +21,7 @@ Indicates if the current device supports presenting a [`RemoteImmersiveSpace`](.
 var supportsRemoteScenes: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this to provide affordances for displaying your app’s content on a remote device.
 

@@ -19,7 +19,7 @@ static let toolTip: NSBindingName
 extern NSBindingName NSToolTipBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

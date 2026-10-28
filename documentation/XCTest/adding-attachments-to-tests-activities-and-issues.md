@@ -5,7 +5,7 @@
 
 Use attachments to store a test’s output data for later analysis.
 
-#### Overview
+## Overview
 
 Tests often produce output such as files, images, screenshots, and data during their execution. You can store this test output for later analysis by wrapping it in an [`XCTAttachment`](./xctattachment.md) instance and adding it to the current test, activity, or issue. You can then view these attachments within Xcode’s test results browser alongside the test, activity, or issue that created them.
 
@@ -100,7 +100,7 @@ The code above produces one of three outcomes from the results of the download:
 
 See `Testing Asynchronous Operations with Expectations` for more information.
 
-##### Attachment Lifetime
+### Attachment Lifetime
 
 By default, when the test passes successfully, it discards the test’s attachments to save storage. To persist an attachment even when its test passes, set the attachment’s [`lifetime`](./xctattachment/lifetime-swift.property.md) property to [`XCTAttachment.Lifetime.keepAlways`](./xctattachment/lifetime-swift.enum/keepalways.md) rather than the default value of [`XCTAttachment.Lifetime.deleteOnSuccess`](./xctattachment/lifetime-swift.enum/deleteonsuccess.md). Alternatively, change the default lifetime for an entire test scheme by deselecting the “Attachments: Delete when each test succeeds” option in the Options tab of the scheme’s Test scheme action.
 

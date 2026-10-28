@@ -13,7 +13,7 @@
 typedef struct DASDModeParameterBlockDescriptor DASDModeParameterBlockDescriptor;
 ```
 
-#### Discussion
+## Discussion
 
 Direct Access Storage Device mode parameter block descriptor.
 

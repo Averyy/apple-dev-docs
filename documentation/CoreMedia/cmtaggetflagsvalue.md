@@ -21,7 +21,7 @@ Retrieves a tag’s value as a 64-bit field flag.
 extern uint64_t CMTagGetFlagsValue(CMTag tag);
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  Before retrieving a tag’s value with this function, call [`CMTagHasFlagsValue`](./cmtaghasflagsvalue.md) to ensure it has the correct type.
 

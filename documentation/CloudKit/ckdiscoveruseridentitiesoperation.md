@@ -27,7 +27,7 @@ class CKDiscoverUserIdentitiesOperation
 @interface CKDiscoverUserIdentitiesOperation : CKOperation
 ```
 
-#### Overview
+## Overview
 
 Use this operation to discover one or more iCloud users that match identity information you provide, such as email addresses and phone numbers.
 

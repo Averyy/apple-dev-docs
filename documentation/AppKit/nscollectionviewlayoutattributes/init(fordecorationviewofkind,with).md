@@ -19,11 +19,11 @@ convenience init(forDecorationViewOfKind decorationViewKind: NSCollectionView.De
 + (instancetype) layoutAttributesForDecorationViewOfKind:(NSCollectionViewDecorationElementKind) decorationViewKind withIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 A new layout attributes object configured with the initial attributes for the decoration view.
 
-#### Discussion
+## Discussion
 
 Call this method when you need to create a layout attributes object for a decoration view in a collection view. Decoration views are a tertiary type of content that display visual adornments in your collection view interface. For example, decoration views might display custom backgrounds. This method uses the parameters to set the initial values of the [`indexPath`](./indexpath.md) and [`representedElementKind`](./representedelementkind.md) properties the returned object.
 

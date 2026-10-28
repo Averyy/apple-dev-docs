@@ -28,7 +28,7 @@ optional func resolvePresetNumber(for intent: INSetRadioStationIntent) async -> 
 - (void) resolvePresetNumberForSetRadioStation:(INSetRadioStationIntent *) intent withCompletion:(void (^)(INIntegerResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the preset number for the radio station. Use this method to set the radio to the station associated with the preset number on the raido.
 

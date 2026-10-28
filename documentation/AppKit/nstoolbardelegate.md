@@ -22,7 +22,7 @@ protocol NSToolbarDelegate : NSObjectProtocol
 @protocol NSToolbarDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Use the methods of [`NSToolbarDelegate`](./nstoolbardelegate.md) to customize the behavior of your toolbars. You might use these methods to track the addition or removal of toolbar items, or use them to prevent someone from rearranging or removing specific items. Adopt this protocol in one of your custom objects and assign that object to the [`delegate`](./nstoolbar/delegate.md) property of the [`NSToolbar`](./nstoolbar.md) object you want to manage.
 

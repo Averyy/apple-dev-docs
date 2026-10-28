@@ -22,7 +22,7 @@ var customizationRequiredItemIdentifiers: [NSTouchBarItem.Identifier] { get set 
 @property (copy) NSArray<NSString *> * customizationRequiredItemIdentifiers;
 ```
 
-#### Discussion
+## Discussion
 
 Configure this property at your discretion, depending on the design of your app.
 

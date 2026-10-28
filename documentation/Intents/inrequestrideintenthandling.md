@@ -23,7 +23,7 @@ protocol INRequestRideIntentHandling : NSObjectProtocol
 @protocol INRequestRideIntentHandling <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Use the methods of the [`INRequestRideIntentHandling`](./inrequestrideintenthandling.md) protocol to resolve, confirm, and handle requests to book a ride using your service. Adopt this protocol in an object of your Intents extension that is capable of initiating the booking process with your service. SiriKit calls the methods of your object to resolve the parameters to your ride-related information and to book the ride upon confirmation by the user.
 
@@ -37,7 +37,7 @@ Ride requests have many items to resolve. You should resolve all options in some
 
 > **Note**:  Maps does not require you to confirm the contents of a get ride status intent before handling it. User interactions drive the selection of data in Maps, ensuring that the data Maps places into an intent object is already valid.
 
-##### Handling a Ride Request
+### Handling a Ride Request
 
 Handling a ride request involves booking the ride with your service and providing SiriKit with the status of the booking. The details of how you book rides through your service are up to you. You need to schedule the ride, find a vehicle and a driver, and arrange payment from the user. The [`INRequestRideIntent`](./inrequestrideintent.md) object contains information about what the user needs. Pass the information in that object to your service and use the results to configure the response object you return to SiriKit.
 

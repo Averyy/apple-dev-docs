@@ -19,11 +19,11 @@ func validateAction(_ op: NSTextFinder.Action) -> Bool
 - (BOOL) validateAction:(NSTextFinderAction) op;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the operation is valid; otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Responders the `NSResponder` method  [`performTextFinderAction(_:)`](../nsresponder/performtextfinderaction%28_%29.md) should call this method.
 

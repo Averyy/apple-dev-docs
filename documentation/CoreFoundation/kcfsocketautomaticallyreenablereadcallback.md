@@ -23,7 +23,7 @@ var kCFSocketAutomaticallyReenableReadCallBack: CFOptionFlags { get }
 kCFSocketAutomaticallyReenableReadCallBack
 ```
 
-#### Discussion
+## Discussion
 
 When enabled using [`CFSocketSetSocketFlags(_:_:)`](./cfsocketsetsocketflags%28_,_%29.md), the read callback is called every time the sockets has data to be read. When disabled, the read callback is called only once the next time data are available. The read callback is automatically reenabled by default.
 

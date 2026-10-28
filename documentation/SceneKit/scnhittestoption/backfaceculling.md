@@ -25,7 +25,7 @@ static let backFaceCulling: SCNHitTestOption
 extern SCNHitTestOption const SCNHitTestBackFaceCullingKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSNumber`](../../Foundation/nsnumber.md) object containing a Boolean value. The default value is [`true`](../../Swift/true.md), specifying that back-facing polygons will not be returned as hit-test results.
 

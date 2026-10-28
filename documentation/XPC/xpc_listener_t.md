@@ -25,7 +25,7 @@ typealias xpc_listener_t = OS_xpc_listener
 typedef NSObject<OS_xpc_listener> * xpc_listener_t;
 ```
 
-#### Discussion
+## Discussion
 
 To implement an XPC service, create a listener and respond to incoming session requests.
 

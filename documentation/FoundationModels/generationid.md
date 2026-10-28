@@ -20,7 +20,7 @@ A unique identifier that is stable for the duration of a response, but not acros
 struct GenerationID
 ```
 
-#### Overview
+## Overview
 
 The framework guarantees a `GenerationID` to be both present and stable when you receive it from a [`LanguageModelSession`](./languagemodelsession.md). When you create an instance of `GenerationID` there is no guarantee an identifier is present or stable.
 

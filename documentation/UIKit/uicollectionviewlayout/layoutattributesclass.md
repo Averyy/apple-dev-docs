@@ -23,11 +23,11 @@ class var layoutAttributesClass: AnyClass { get }
 @property (class, nonatomic, readonly) Class layoutAttributesClass;
 ```
 
-#### Return Value
+## Return Value
 
 The class to use for layout attributes objects.
 
-#### Discussion
+## Discussion
 
 If you subclass [`UICollectionViewLayoutAttributes`](../uicollectionviewlayoutattributes.md) in order to manage additional layout attributes, you should override this method and return your custom subclass. The methods for creating layout attributes use this class when creating new layout attributes objects.
 

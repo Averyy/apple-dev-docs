@@ -20,7 +20,7 @@ The current value of the gauge.
 var value: Double
 ```
 
-#### Discussion
+## Discussion
 
 The valid range is  `0.0...1.0`.
 

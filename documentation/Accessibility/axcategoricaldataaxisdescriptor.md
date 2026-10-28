@@ -25,7 +25,7 @@ class AXCategoricalDataAxisDescriptor
 @interface AXCategoricalDataAxisDescriptor : NSObject
 ```
 
-#### Overview
+## Overview
 
 A categorical data axis divides information into groups, or categories. For example, a categorical axis may represent blood type data divided into the possible categories *AB*, *A*, *B*, and *O*.
 

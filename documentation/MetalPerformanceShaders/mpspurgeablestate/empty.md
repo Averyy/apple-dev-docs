@@ -24,7 +24,7 @@ case empty
 MPSPurgeableStateEmpty
 ```
 
-#### Overview
+## Overview
 
 The contents of the resource are discarded. This is equivalent to using [`MTLPurgeableState.empty`](../../Metal/mtlpurgeablestate/empty.md).
 

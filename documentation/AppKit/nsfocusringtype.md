@@ -19,7 +19,7 @@ enum NSFocusRingType
 enum NSFocusRingType : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 The focus ring type is used by [`NSView`](./nsview.md) and [`NSCell`](./nscell.md) to configure whether and how a control draws its focus ring.
 

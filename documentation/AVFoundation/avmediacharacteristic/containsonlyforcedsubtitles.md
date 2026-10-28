@@ -25,7 +25,7 @@ static let containsOnlyForcedSubtitles: AVMediaCharacteristic
 extern AVMediaCharacteristic const AVMediaCharacteristicContainsOnlyForcedSubtitles;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this characteristic is `public.subtitles.forced-only`.
 

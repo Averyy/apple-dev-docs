@@ -23,7 +23,7 @@ var titleView: UIView? { get set }
 @property (nonatomic, strong, readwrite, nullable) UIView * titleView;
 ```
 
-#### Discussion
+## Discussion
 
 If this property value is `nil`, the navigation item’s title is displayed in the center of the navigation bar when the receiver is the top item. If you set this property to a custom title, it is displayed instead of the title.
 

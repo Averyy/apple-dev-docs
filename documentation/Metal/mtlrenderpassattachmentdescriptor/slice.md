@@ -24,7 +24,7 @@ var slice: Int { get set }
 @property (nonatomic) NSUInteger slice;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0`.
 

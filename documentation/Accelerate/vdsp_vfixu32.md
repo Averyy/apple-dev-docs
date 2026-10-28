@@ -21,7 +21,7 @@ Converts a vector of single-precision floating-point values to unsigned 32-bit i
 extern void vDSP_vfixu32(const float *__A, vDSP_Stride __IA, unsigned int *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 If the resulting value is outside the bounds of the output type, the behavior is undefined. If you need to handle out-of-bounds data, you should use one of the functions in Clipping Operations on the data first.
 

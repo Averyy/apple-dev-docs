@@ -20,7 +20,7 @@ Replaces `count` items in `operation`’s slot starting at `index` with `newItem
 mutating func replaceItems(in operation: USDLayer.ListOperationType, at index: Int, count: Int, with newItems: [T]) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the range is out of bounds.
 

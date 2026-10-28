@@ -22,11 +22,11 @@ func textureMatrix() -> UnsafePointer<GLfloat>!
 - (const GLfloat *) textureMatrix;
 ```
 
-#### Return Value
+## Return Value
 
 A 4x4 texture matrix created by scaling (from [`0`, pixels] to [`0`,`1`]) and vertically flipping the texture coordinates;  `NULL` if coordinate  transformation is not required.
 
-#### Discussion
+## Discussion
 
 This method is provided as a convenience for 2D textures to take care of two issues:
 

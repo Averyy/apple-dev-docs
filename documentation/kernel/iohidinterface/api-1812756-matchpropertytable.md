@@ -13,7 +13,7 @@ virtual bool matchPropertyTable(
  SInt32 *score);
 ```
 
-#### Overview
+## Overview
 
 Compare the properties in the supplied table to this object's properties.
 

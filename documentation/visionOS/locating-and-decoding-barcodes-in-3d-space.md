@@ -10,25 +10,25 @@ Create engaging, hands-free experiences based on barcodes in a person’s surrou
 - visionOS 2.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 This sample code project demonstrates how to use barcode detection in ARKit to detect, decode, and place content near barcodes in your visionOS app. ARKit enables your visionOS app to detect barcodes (including QR codes), locate their positions in a person’s surroundings, and decode their contents. For example, a warehouse worker can use your app to retrieve an item by looking at a package’s barcode to confirm its contents.
 
-##### Configure your sample code project
+### Configure your sample code project
 
 Replace `Enterprise.license` with your license file. The sample app requires a valid license file to detect barcodes.
 
-##### Request the entitlement
+### Request the entitlement
 
 Barcode detection is a part of enterprise APIs for visionOS, a collection of APIs that unlock capabilities for enterprise customers. To use barcode detection, you need to apply for the [`Spatial barcode and QR code scanning`](../BundleResources/entitlements/com.apple.developer.arkit.barcode-detection.allow.md) entitlement. For more information, including how to apply for this entitlement, see [Building spatial experiences for business apps with enterprise APIs for visionOS](./building-spatial-experiences-for-business-apps-with-enterprise-apis.md).
 
-##### Add usage descriptions for ARKit data access
+### Add usage descriptions for ARKit data access
 
 To help protect people’s privacy, visionOS limits app access to cameras and other sensors in Apple Vision Pro. You need to add an [`NSWorldSensingUsageDescription`](../BundleResources/information-property-list/nsworldsensingusagedescription.md) to your app’s information property list to provide a usage description that explains how your app uses the data those sensors provide. People see this description when your app prompts for access to world-sensing data.
 
 > **Note**: In visionOS, ARKit is only available in an immersive space. See [Setting up access to ARKit data](./setting-up-access-to-arkit-data.md) to learn more about opening an immersive space and requesting authorization for ARKit data access. To learn more about best practices for privacy, see [Adopting best practices for privacy and user preferences](./adopting-best-practices-for-privacy.md).
 
-##### Detect, decode, and highlight barcodes
+### Detect, decode, and highlight barcodes
 
 Your visionOS app can detect barcodes in a person’s surroundings and highlight the barcode the person is looking for. The following code example detects and highlights every Code 128 or QR Code symbology in a person’s surroundings. The code example includes three steps: detecting the barcode, printing its decoded content, and creating the highlight animation.
 
@@ -133,7 +133,7 @@ func playAnimation(for anchor: BarcodeAnchor) {
 
 > **Note**: Because [`BarcodeDetectionProvider`](../ARKit/barcodedetectionprovider.md) has a low refresh rate, use its transform to initialize the position of content relative to a stationary barcode.
 
-##### Determine the ideal barcode width
+### Determine the ideal barcode width
 
 The sample code project can’t read barcodes that are too small to appear clearly in a person’s field of view. Larger barcodes generally improve readability, providing that they remain within the field of view. The minimum barcode size depends on its [`BarcodeAnchor.Symbology`](../ARKit/barcodeanchor/symbology-swift.enum.md). Refer to the table below to determine the minimum width required for a barcode to be readable under nominal lighting conditions (100 lux) at an arm’s length distance (~40 cm).
 

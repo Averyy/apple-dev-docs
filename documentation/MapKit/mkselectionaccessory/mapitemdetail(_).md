@@ -23,7 +23,7 @@ class func mapItemDetail(_ presentationStyle: MKSelectionAccessory.MapItemDetail
 + (MKSelectionAccessory *) mapItemDetailWithPresentationStyle:(MKMapItemDetailSelectionAccessoryPresentationStyle *) presentationStyle;
 ```
 
-#### Discussion
+## Discussion
 
 Supported for [`MKMapFeatureAnnotation`](../mkmapfeatureannotation.md) and [`MKMapItemAnnotation`](../mkmapitemannotation.md).
 

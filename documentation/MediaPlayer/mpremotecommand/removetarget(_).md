@@ -25,7 +25,7 @@ func removeTarget(_ target: Any?)
 - (void) removeTarget:(id) target;
 ```
 
-#### Discussion
+## Discussion
 
 Call the [`removeTarget(_:)`](./removetarget%28_%29.md) method to remove the specified target and all actions associated with the target.
 

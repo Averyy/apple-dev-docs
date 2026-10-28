@@ -21,7 +21,7 @@ A loader backed by a JSON or JSONL file.
 struct JSONLoader<Sample> where Sample : SampleProtocol
 ```
 
-#### Overview
+## Overview
 
 ```swift
 let url = Bundle.main.url(forResource: "samples", withExtension: "jsonl")!

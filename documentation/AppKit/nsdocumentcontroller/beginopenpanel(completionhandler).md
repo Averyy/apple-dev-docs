@@ -23,7 +23,7 @@ func beginOpenPanel() async -> [URL]?
 - (void) beginOpenPanelWithCompletionHandler:(void (^)(NSArray<NSURL *> *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method presents either a modal or nonmodal open panel, depending on which methods are overridden. Although you can call this method in other circumstances, this method is most commonly called by [`openDocument(_:)`](./opendocument%28_%29.md) in response to the user choosing Open… from the File menu.
 

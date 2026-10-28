@@ -9,11 +9,11 @@ Get information about a specific action Xcode Cloud performed as part of a build
 **Availability**:
 - App Store Connect API 1.5+
 
-#### Discussion
+## Discussion
 
 The example request below retrieves detailed information about an action Xcode Cloud performed. It also requests detailed information about the action’s build by including the [Build Runs](./build-runs.md) resource in the query. Use the information provided in the response to display information on a dashboard or to access additional information; for example, information about other actions Xcode Cloud performed during the build.
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

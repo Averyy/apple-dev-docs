@@ -23,7 +23,7 @@ func tentConvolved(kernelSize: vImage.Size, edgeMode: vImage.EdgeMode<Pixel_8888
 
 Available when `Format` is `vImage.Interleaved8x4`.
 
-#### Return Value
+## Return Value
 
 A pixel buffer that contains a blurred version of the source pixel buffer.
 

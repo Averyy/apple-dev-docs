@@ -25,7 +25,7 @@ func CFBagGetCount(_ theBag: CFBag!) -> CFIndex
 extern CFIndex CFBagGetCount(CFBagRef theBag);
 ```
 
-#### Return Value
+## Return Value
 
 The number of values in `theBag`.
 

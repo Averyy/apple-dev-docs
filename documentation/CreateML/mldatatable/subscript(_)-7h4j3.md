@@ -46,7 +46,7 @@ subscript<R>(slice: R) -> MLDataTable where R : RangeExpression, R.Bound == Int 
 subscript<S>(columnNames: S) -> MLDataTable where S : Sequence, S.Element == String { get }
 ```
 
-#### Return Value
+## Return Value
 
 A new data table.
 

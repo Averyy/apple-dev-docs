@@ -21,7 +21,7 @@ Begins analyzing video frames.
 final func startAnalysis(of timeRange: CMTimeRange? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 By default the framework processes the entire video.
 

@@ -19,7 +19,7 @@ var CPU_BASED2_EPT_MODE_BASED_EXEC: UInt32 { get }
 CPU_BASED2_EPT_MODE_BASED_EXEC
 ```
 
-#### Discussion
+## Discussion
 
 Must be `0`.
 

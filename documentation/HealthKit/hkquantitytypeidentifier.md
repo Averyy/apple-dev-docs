@@ -24,7 +24,7 @@ struct HKQuantityTypeIdentifier
 typedef NSString * HKQuantityTypeIdentifier;
 ```
 
-#### Overview
+## Overview
 
 To create an [`HKQuantityType`](./hkquantitytype.md) instance, pass an [`HKQuantityTypeIdentifier`](./hkquantitytypeidentifier.md) value to the [`quantityType(forIdentifier:)`](./hkobjecttype/quantitytype%28foridentifier%29.md) method.
 

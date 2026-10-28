@@ -19,11 +19,11 @@ func ABRemoveProperties(_ addressBook: ABAddressBookRef!, _ recordType: CFString
 extern CFIndex ABRemoveProperties(ABAddressBookRef addressBook, CFStringRef recordType, CFArrayRef properties);
 ```
 
-#### Return Value
+## Return Value
 
 The number of properties successfully removed.
 
-#### Discussion
+## Discussion
 
 Only custom properties can be removed. This function is not implemented.
 

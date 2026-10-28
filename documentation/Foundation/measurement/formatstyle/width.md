@@ -21,7 +21,7 @@ The width of the measurement unit.
 var width: Measurement<UnitType>.FormatStyle.UnitWidth
 ```
 
-#### Discussion
+## Discussion
 
 The `width` property specifies the display of the measurement unit. The possible values are [`abbreviated`](./unitwidth/abbreviated.md), [`narrow`](./unitwidth/narrow.md), and [`wide`](./unitwidth/wide.md). The format style represents the unit in the shortest notation available.
 

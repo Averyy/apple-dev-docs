@@ -21,7 +21,7 @@ Returns a Boolean value that indicates whether the string can be converted to th
 func canBeConverted(to encoding: String.Encoding) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the string can be encoded in `encoding` without loss of information; otherwise, `false`.
 

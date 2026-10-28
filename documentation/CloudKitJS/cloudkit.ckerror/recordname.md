@@ -15,7 +15,7 @@ The name of the record that the operation failed on.
 readonly attribute String recordName;
 ```
 
-#### Discussion
+## Discussion
 
 This property value is `Undefined` if the error is unrelated to a record operation.
 

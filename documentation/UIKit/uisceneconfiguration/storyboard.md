@@ -23,7 +23,7 @@ var storyboard: UIStoryboard? { get set }
 @property (nonatomic, strong, nullable) UIStoryboard * storyboard;
 ```
 
-#### Discussion
+## Discussion
 
 UIKit loads the initial view controller from the specified scene and displays it appropriately.
 

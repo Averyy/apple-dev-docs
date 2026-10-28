@@ -15,11 +15,11 @@
 SInt8 OSDecrementAtomic8(volatile SInt8 *address);
 ```
 
-#### Return Value
+## Return Value
 
 The value before the decrement.
 
-#### Discussion
+## Discussion
 
 The OSDecrementAtomic8 function decrements the value at the specified address by one and returns the original value.
 

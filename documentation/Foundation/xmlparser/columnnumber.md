@@ -25,7 +25,7 @@ var columnNumber: Int { get }
 @property (readonly) NSInteger columnNumber;
 ```
 
-#### Discussion
+## Discussion
 
 The column refers to the nesting level of the XML elements in the document. You may access this property once a parsing operation has begun or after an error occurs.
 

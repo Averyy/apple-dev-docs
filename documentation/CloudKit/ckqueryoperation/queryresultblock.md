@@ -21,7 +21,7 @@ The closure to execute after CloudKit retrieves all of the records.
 var queryResultBlock: ((Result<CKQueryOperation.Cursor?, any Error>) -> Void)? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The closure returns no value and takes the following parameter:
 

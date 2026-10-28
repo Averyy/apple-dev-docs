@@ -25,7 +25,7 @@ init(genericCMYKCyan cyan: CGFloat, magenta: CGFloat, yellow: CGFloat, black: CG
 extern CGColorRefCGColorCreateGenericCMYK(CGFloat cyan, CGFloat magenta, CGFloat yellow, CGFloat black, CGFloat alpha);
 ```
 
-#### Return Value
+## Return Value
 
 A color object.
 

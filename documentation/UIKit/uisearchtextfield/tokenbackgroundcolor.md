@@ -22,7 +22,7 @@ var tokenBackgroundColor: UIColor! { get set }
 @property (nonatomic, strong, null_resettable) UIColor * tokenBackgroundColor;
 ```
 
-#### Discussion
+## Discussion
 
 If you set this property to `nil`, the search field reverts to the default token background color.
 

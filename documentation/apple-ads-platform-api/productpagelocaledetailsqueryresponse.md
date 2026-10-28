@@ -15,11 +15,11 @@ Paginated response object for the product page locale details query.
 object ProductPageLocaleDetailsQueryResponse
 ```
 
-#### Discussion
+## Discussion
 
 The `ProductPageLocaleDetailsQueryResponse` object is the top-level envelope returned by [`Query Product Page Locale Details`](./query-product-page-locale-details.md). The `pagination` object describes the current page position.
 
-##### Example
+### Example
 
 ```json
 {

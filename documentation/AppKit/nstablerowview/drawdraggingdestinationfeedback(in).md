@@ -19,7 +19,7 @@ func drawDraggingDestinationFeedback(in dirtyRect: NSRect)
 - (void) drawDraggingDestinationFeedbackInRect:(NSRect) dirtyRect;
 ```
 
-#### Discussion
+## Discussion
 
 Overriding this method allows an application to draw custom dragging destination feedback when the entire row is a drop target.
 

@@ -19,7 +19,7 @@ func ABAddRecord(_ addressBook: ABAddressBookRef!, _ record: ABRecordRef!) -> Bo
 extern bool ABAddRecord(ABAddressBookRef addressBook, ABRecordRef record);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the record was added successfully, `false` otherwise.
 

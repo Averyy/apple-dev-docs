@@ -24,11 +24,11 @@ func write(to nsurl: URL, type: CFString) -> Bool
 - (BOOL) writeToURL:(NSURL *) nsurl type:(CFStringRef) type;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if export succeeded; [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 For the `type` parameter, pass the Uniform Type Identifier for any output format supported by the Image I/O framework, such as the JPEG, TIFF, PNG, or (in macOS only) OpenEXR format. For details, see [Uniform Type Identifiers Reference](https://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/UTIRef/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009257).
 

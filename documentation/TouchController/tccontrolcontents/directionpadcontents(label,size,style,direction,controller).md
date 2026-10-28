@@ -21,7 +21,7 @@ class func directionPadContents(label: TCControlLabel, size: CGSize, style: TCCo
 + (TCControlContents *) directionPadContentsForLabel:(TCControlLabel *) label size:(CGSize) size style:(TCControlContentsDpadElementStyle) style direction:(TCControlContentsDpadDirection) direction controller:(TCTouchController *) controller;
 ```
 
-#### Return Value
+## Return Value
 
 The `TCControlContents` for the direction pad.
 

@@ -20,7 +20,7 @@ The array of items that follow the current item.
 var forwardList: [WebPage.BackForwardList.Item] { get }
 ```
 
-#### Discussion
+## Discussion
 
 The items are in the order in which they were originally visited.
 

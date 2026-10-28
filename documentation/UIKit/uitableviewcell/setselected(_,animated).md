@@ -23,7 +23,7 @@ func setSelected(_ selected: Bool, animated: Bool)
 - (void) setSelected:(BOOL) selected animated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 The selection affects the appearance of labels, image, and background. When the selected state of a cell is [`true`](../../Swift/true.md), it draws the background for selected cells (Reusing cells) with its title in white.
 

@@ -23,7 +23,7 @@ case failureRequiringAppLaunch
 INListRideOptionsIntentResponseCodeFailureRequiringAppLaunch
 ```
 
-#### Discussion
+## Discussion
 
 Use this response code when there is a failure that your parent app can resolve. Specify this code to redirect the user to your app. Don’t use it for general errors or to force the user to launch your app.
 

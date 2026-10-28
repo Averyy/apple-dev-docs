@@ -23,7 +23,7 @@ case fullScreen
 UIModalPresentationFullScreen
 ```
 
-#### Discussion
+## Discussion
 
 The views belonging to the presenting view controller are removed after the presentation completes.
 

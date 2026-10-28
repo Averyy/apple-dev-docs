@@ -26,11 +26,11 @@ final func streamResponse(to prompt: Prompt, options: GenerationOptions = Genera
 final func streamResponse(to prompt: String, options: GenerationOptions = GenerationOptions(), contextOptions: ContextOptions = ContextOptions(), metadata: [String : any ConvertibleToGeneratedContent] = [:]) -> sending LanguageModelSession.ResponseStream<String>
 ```
 
-#### Return Value
+## Return Value
 
 A response stream that produces aggregated tokens.
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: If running in the background, use the non-streaming [`respond(to:options:)`](./respond%28to,options%29-6a2gb.md) method to reduce the likelihood of encountering [`LanguageModelError.rateLimited(_:)`](../languagemodelerror/ratelimited%28_%29.md) errors.
 

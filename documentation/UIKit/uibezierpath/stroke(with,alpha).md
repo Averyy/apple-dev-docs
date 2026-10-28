@@ -24,7 +24,7 @@ func stroke(with blendMode: CGBlendMode, alpha: CGFloat)
 - (void) strokeWithBlendMode:(CGBlendMode) blendMode alpha:(CGFloat) alpha;
 ```
 
-#### Discussion
+## Discussion
 
 The drawn line is centered on the path with its sides parallel to the path segment. This method applies the current stroke color and drawing properties (plus the specified blend mode and transparency value) to the rendered path.
 

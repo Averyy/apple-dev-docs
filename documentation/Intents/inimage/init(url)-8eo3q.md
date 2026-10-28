@@ -25,7 +25,7 @@ convenience init?(url URL: URL)
 + (instancetype) imageWithURL:(NSURL *) URL;
 ```
 
-#### Return Value
+## Return Value
 
 An image object that contains the local image file, or `nil` if the system can’t load the image file or it doesn’t exist.
 

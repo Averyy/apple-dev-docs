@@ -5,7 +5,7 @@
 
 Request and share customer information on device.
 
-#### Overview
+## Overview
 
 With Tap to Share, merchants can use an iPhone to connect to a customer’s iPhone or device and exchange information. Your app can request information from customers for membership sign-up or ship-to-home purchases, share a customer’s shopping cart information, and allow them to check out with Apple Pay on their own iPhone. Your app uses the [ProximityReader](./ProximityReader.md) framework to open a [`CustomerEngagementSession`](./customerengagementsession.md) that allows the customer to connect. From that session you can request or share information with the customer.
 
@@ -13,7 +13,7 @@ With Tap to Share, merchants can use an iPhone to connect to a customer’s iPho
 
 Before you get started, you need to add the Tap to Share capability to your project in Xcode, see [Adding capabilities to your app](../Xcode/adding-capabilities-to-your-app.md).
 
-#### Create a session and connect to a customer’s device
+## Create a session and connect to a customer’s device
 
 When your app opens a screen in which a merchant  requires input from a customer, create a session that provides relevant merchant information. This configuration includes your region, currency, and privacy policy URL. You can include additional data, depending on your needs.
 
@@ -71,7 +71,7 @@ Catch any errors that happen during an open session and take appropriate action.
 
 > **Note**: Calling [`open(using:)`](./customerengagementsession/open%28using%29.md) prepares the connection between you and the customer’s devices. When the devices are brought together, the [`open(using:)`](./customerengagementsession/open%28using%29.md) completes. At that point, you can request information from the customer.
 
-#### Request information from a customer
+## Request information from a customer
 
 After your session is ready, use the appropriate method to request customer information. You can look up an existing customer account through an existing Wallet Pass and fallback to a secondary identifier like an email address by sending a  [`requestCustomerInfo(for:fields:message:)`](./customerengagementsession/requestcustomerinfo%28for,fields,message%29.md).
 
@@ -118,7 +118,7 @@ func createCustomerAccount() async throws {
 }
 ```
 
-#### Share a shopping cart
+## Share a shopping cart
 
 At any point during the session, you can share a shopping cart with the customer by creating a [`CustomerEngagement.ShoppingCart`](./customerengagement/shoppingcart.md) and using the [`updateShoppingCart(_:)`](./customerengagementsession/updateshoppingcart%28_%29.md) method. Use the same method to repopulate the shopping cart when making updates. The shopping cart is stateless, so make sure to include the full shopping cart every update. You can also choose to share an empty shopping cart in the background as a placeholder throughout the session.
 
@@ -165,7 +165,7 @@ func populateShoppingCart() -> ShoppingCartToken {
 
 In addition to the [`updateShoppingCart(_:)`](./customerengagementsession/updateshoppingcart%28_%29.md), you can update the customer screen using the [`updateStatus(_:)`](./customerengagementsession/updatestatus%28_%29.md) method. This method allows you to indicate a screen state when there aren’t any active request forms on the customer screen. For example, when a customer has completed their payment, you can update the customer screen with [`CustomerEngagement.Status.paymentCompleted`](./customerengagement/status/paymentcompleted.md).
 
-#### Request an Apple Pay payment
+## Request an Apple Pay payment
 
 Tap to Share allows the customer to pay using an Apple Pay payment sheet. If the customer uses a [`CustomerEngagementSession.PeerClientType.localWireless`](./customerengagementsession/peerclienttype/localwireless.md) connection, indicating they’re on a compatible iOS version, prompt them to complete a full or partial payment of the shopping cart using Apple Pay. If the customer hasn’t set up Apple Pay on their device or chooses not to use Apple Pay, [`requestPayment(for:using:delegate:)`](./customerengagementsession/requestpayment%28for,using,delegate%29.md) returns `false` and you must use another payment method to receive the payment from the customer.
 
@@ -225,11 +225,11 @@ func paymentAuthorizationControllerDidFinish(_ controller: PKPaymentAuthorizatio
 }
 ```
 
-#### Add a Wallet Pass
+## Add a Wallet Pass
 
 If the merchant supports loyalty or membership Wallet Passes, you can use the [`addPass(_:)`](./customerengagementsession/addpass%28_%29.md) method to allow the customer to add your pass to their Wallet. For example, after a customer successfully signs up for a membership program, your app can obtain a pass from the merchant and send it to the customer’s Wallet. Make sure to create and sign the `.pkpass` data file.
 
-#### End a session with a customer
+## End a session with a customer
 
 To provide the best customer experience,  programmatically end the connection when your workflow completes. For example, when a customer finishes a payment, use the [`close()`](./customerengagementsession/close%28%29.md) method to end the session.
 

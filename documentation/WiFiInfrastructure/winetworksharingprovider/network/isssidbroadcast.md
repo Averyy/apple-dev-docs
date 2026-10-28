@@ -17,7 +17,7 @@ A Boolean value indicating whether the access point broadcasts the SSID.
 let isSSIDBroadcast: Bool
 ```
 
-#### Discussion
+## Discussion
 
 Networks that don’t broadcast their SSID need directed scanning with the specific SSID information to be discoverable by your accessory.
 

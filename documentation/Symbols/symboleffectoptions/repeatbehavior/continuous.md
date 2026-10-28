@@ -21,7 +21,7 @@ A repeat behavior that prefers to repeat indefinitely, using continuous animatio
 static var continuous: SymbolEffectOptions.RepeatBehavior { get }
 ```
 
-#### Return Value
+## Return Value
 
 A new behavior that prefers to repeat indefinitely with continuous animations.
 

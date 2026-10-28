@@ -22,7 +22,7 @@ A type that performs cryptographically secure hashing.
 protocol HashFunction : Sendable
 ```
 
-#### Overview
+## Overview
 
 The [`HashFunction`](./hashfunction.md) protocol describes an interface for computing a fixed-length digest from an arbitrarily large collection of bytes. Because the digest is small, you can quickly compare the digests to detect a difference in two corresponding data sets. Alternatively, transmit or store data with its digest to detect changes introduced after initially calculating the digest.
 

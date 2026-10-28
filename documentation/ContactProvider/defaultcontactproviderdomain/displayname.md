@@ -16,7 +16,7 @@ The display name the system shows to represent the default domain.
 let displayName: String
 ```
 
-#### Discussion
+## Discussion
 
 The default domain uses the app’s bundle display name.
 

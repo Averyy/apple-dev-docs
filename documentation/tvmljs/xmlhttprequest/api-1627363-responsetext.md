@@ -25,7 +25,7 @@ readonly attribute String responseText;
 readonly attribute DOMString? responseText;
 ```
 
-#### Discussion
+## Discussion
 
 If the request was unsuccessful or has not been sent, the value of this attribute is `null`. Otherwise, this attribute contains a string containing the response.
 

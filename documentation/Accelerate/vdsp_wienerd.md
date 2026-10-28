@@ -21,7 +21,7 @@ Solves a system of linear equations for a double-precision symmetric Toeplitz co
 extern void vDSP_wienerD(vDSP_Length __L, const double *__A, const double *__C, double *__F, double *__P, int __Flag, int *__Error);
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to solve a system of simultaneous equations where the coefficient matrix is a symmetric Toeplitz matrix. A symmetric matrix is one that’s equal to its transpose, that is, a matrix that’s identical when swapping its row and column indices. A Toeplitz matrix is a matrix where each diagonal is constant.
 

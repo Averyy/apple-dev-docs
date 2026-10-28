@@ -19,7 +19,7 @@ A description of a drop that is in progress.
 struct DropSession
 ```
 
-#### Overview
+## Overview
 
 Read [`location`](./dropsession/location.md) to find where the drop landed, [`itemsCount`](./dropsession/itemscount.md) for how many items it carries, and [`phase`](./dropsession/phase-swift.property.md) to follow the drag through its lifecycle.
 

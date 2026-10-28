@@ -24,7 +24,7 @@ var foregroundColor: CGColor? { get set }
 @property (nullable) CGColorRef foregroundColor;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to opaque white.
 

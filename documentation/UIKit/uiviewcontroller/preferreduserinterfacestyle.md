@@ -19,7 +19,7 @@ var preferredUserInterfaceStyle: UIUserInterfaceStyle { get }
 @property (nonatomic, readonly) UIUserInterfaceStyle preferredUserInterfaceStyle;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to apply a specific appearance in your tvOS app. The default value of this property is [`UIUserInterfaceStyle.unspecified`](../uiuserinterfacestyle/unspecified.md), which causes your view controller to follow the system’s current style. You can override this property to force the view controller to adopt a specific style.
 

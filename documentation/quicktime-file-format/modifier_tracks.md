@@ -5,7 +5,7 @@
 
 Create dynamic movies with modifier tracks that send data to another track.
 
-#### Overview
+## Overview
 
 The addition of modifier tracks in QuickTime 2.1 introduced the capability for creating dynamic movies. (A modifier track sends data to another track; by comparison, a track reference is an association.) For example, instead of playing video in a normal way, a video track could send its image data to a sprite track. The sprite track then could use that video data to replace the image of one of its sprites. When the movie is played, the video track appears as a sprite.
 
@@ -17,7 +17,7 @@ Because a modifier track can send its data to more than one track, you can easil
 
 See [Creating movies with modifier tracks](./creating_movies_with_modifier_tracks.md) for more information about using modifier tracks.
 
-#### Limitations of Spatial Modifier Tracks
+## Limitations of Spatial Modifier Tracks
 
 A modifier track may cause a track to move outside of its original boundary regions. This may present problems, since applications do not expect the dimensions or location of a QuickTime movie to change over time.
 

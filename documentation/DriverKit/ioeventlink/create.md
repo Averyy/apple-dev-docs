@@ -16,11 +16,11 @@
 static kern_return_t Create(OSString *name, IOUserClient *userClient, IOEventLink **eventLink);
 ```
 
-#### Return Value
+## Return Value
 
 kIOReturnSuccess on success. See IOReturn.h for error codes.
 
-#### Discussion
+## Discussion
 
 Create an IOEventLink.
 

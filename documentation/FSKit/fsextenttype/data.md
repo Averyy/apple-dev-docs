@@ -19,7 +19,7 @@ case data
 FSExtentTypeData
 ```
 
-#### Discussion
+## Discussion
 
 Use this type for all extents on a file system that doesn’t support sparse files.
 

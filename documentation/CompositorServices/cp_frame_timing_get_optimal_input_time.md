@@ -16,11 +16,11 @@ Returns the optimal time to start the frame submission process.
 cp_time_t cp_frame_timing_get_optimal_input_time(cp_frame_timing_t frame_timing);
 ```
 
-#### Return Value
+## Return Value
 
 The Mach absolute time at which to query the input for your frame.
 
-#### Discussion
+## Discussion
 
 The optimal input time is the time at which to call the [`startSubmission()`](./layerrenderer/frame/startsubmission%28%29.md) function. Use the time before the input time to update your app’s data structures and prepare for rendering. Call [`cp_time_wait_until`](./cp_time_wait_until.md) to suspend your app until the optimal time arrives. When it does, fetch the current device pose and finish rendering and the frame and commit your Metal command buffers.
 

@@ -20,7 +20,7 @@ The dimensions of the 2D array texture.
 struct Dimensions2DArray
 ```
 
-#### Overview
+## Overview
 
 This specifies the width, height, and length of the 2D array texture.
 

@@ -4,13 +4,13 @@
 
 A specific task that a trigger performs.
 
-#### Overview
+## Overview
 
 Because it inherits `Typed`, this schema declares a `Preliminary_Action` as a type of prim. For more information about typed schemas, see USD Specification > [Typed](http://graphics.pixar.com/usd/docs/USD-Glossary.html#USDGlossary-TypedSchema).
 
 When a behavior executes an action, the behavior modifies the state of the scene dynamically. For example, an action might start an animation, change the location of a prim, or start playing audio.
 
-##### Declaration
+### Declaration
 
 ```swift
 class "Preliminary_Action" (
@@ -18,7 +18,7 @@ class "Preliminary_Action" (
 )
 ```
 
-##### Define an action that slides a cube
+### Define an action that slides a cube
 
 The following example shows an action prim called `PushCube` that affects an impulse feature.
 

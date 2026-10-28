@@ -12,11 +12,11 @@ Tests whether a single-precision point lies inside, on, or outside a circle.
 static _Float16 simd_incircle(simd_half2 __x, simd_half2 __a, simd_half2 __b, simd_half2 __c);
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates whether the point lies inside, on, or outside the specified circle.
 
-#### Discussion
+## Discussion
 
 If the points `a`, `b`, and `c` describe a positively oriented (counterclockwise) circle, the function returns:
 

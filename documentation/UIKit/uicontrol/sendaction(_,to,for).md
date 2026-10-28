@@ -23,7 +23,7 @@ func sendAction(_ action: Selector, to target: Any?, for event: UIEvent?)
 - (void) sendAction:(SEL) action to:(id) target forEvent:(UIEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 This method takes the provided information and forwards it to the singleton [`UIApplication`](../uiapplication.md) object for dispatching. If you supplied a valid target object, the app calls the action method on that target object. If the target object is `nil`, the app searches the responder chain for an object that defines the method.
 

@@ -28,7 +28,7 @@ extern CGRect VNImageRectForNormalizedRect(CGRect normalizedRect, size_t imageWi
 
 - [Recognizing Text in Images](./recognizing-text-in-images.md)
 
-#### Return Value
+## Return Value
 
 The input rect projected into image (pixel) coordinates.
 

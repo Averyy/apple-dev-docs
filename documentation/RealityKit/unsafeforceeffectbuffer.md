@@ -20,7 +20,7 @@ Provides access to physics body parameters from the effect’s update function o
 struct UnsafeForceEffectBuffer<T>
 ```
 
-#### Overview
+## Overview
 
 This struct is a transient buffer view of underlying data, and is only available in effect’s update function or update closure.
 

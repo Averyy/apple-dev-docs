@@ -24,7 +24,7 @@ var isNetworkAccessAllowed: Bool { get set }
 @property (nonatomic, assign, getter=isNetworkAccessAllowed) BOOL networkAccessAllowed;
 ```
 
-#### Discussion
+## Discussion
 
 If `true`, and the requested resource data is not stored on the local device, Photos downloads that data from iCloud. To be notified of the download’s progress, use the [`progressHandler`](./progresshandler.md) property to provide a block that Photos calls periodically while downloading the resource data. If `false` (the default), and the resource data is not on the local device, Photos calls the `completionHandler` block you provided in your request, with an `NSError` object indicating that the resource requires network access.
 

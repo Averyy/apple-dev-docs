@@ -24,7 +24,7 @@ func addObstacles(_ obstacles: [GKPolygonObstacle])
 - (void) addObstacles:(NSArray<GKPolygonObstacle *> *) obstacles;
 ```
 
-#### Discussion
+## Discussion
 
 Adding a new obstacle to the graph has the same effect as if that obstacle were present when creating the graph—that is, the [`GKObstacleGraph`](../gkobstaclegraph.md) class automatically creates new nodes and edges where necessary to describe the navigable area around the complete collection of obstacles.
 

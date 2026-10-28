@@ -15,7 +15,7 @@ Passes error information to the Component Manager which sets the current error v
 void SetComponentInstanceError(ComponentInstance aComponentInstance, OSErr theError);
 ```
 
-#### Discussion
+## Discussion
 
 In general, your component returns error information in its function result a nonzero function result indicates an error occurred, and a function result of 0 indicates the request was successful. However, some requests require that your component return other information as its function result. In these cases, your component can use this function to report its latest error state to the Component Manager. You can also use this function at any time during your component’s execution to report an error.
 

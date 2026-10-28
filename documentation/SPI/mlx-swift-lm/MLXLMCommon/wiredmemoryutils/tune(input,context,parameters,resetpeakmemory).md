@@ -17,11 +17,11 @@ Measure weights, KV cache, and prefill workspace using a prepared input.
 static func tune(input: LMInput, context: ModelContext, parameters: GenerateParameters, resetPeakMemory: Bool = true) async throws -> WiredMemoryMeasurement
 ```
 
-#### Return Value
+## Return Value
 
 A measurement snapshot for weights, KV, and workspace.
 
-#### Discussion
+## Discussion
 
 This overload is recommended for multimodal models because it accepts a fully prepared `LMInput` (e.g. with image/video tensors already embedded).
 

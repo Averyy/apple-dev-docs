@@ -19,7 +19,7 @@ func SKSummaryGetSentenceCount(_ summary: SKSummary!) -> CFIndex
 CFIndex SKSummaryGetSentenceCount(SKSummaryRef summary);
 ```
 
-#### Return Value
+## Return Value
 
 A CFIndex object containing the number of sentences in the summarization object.
 

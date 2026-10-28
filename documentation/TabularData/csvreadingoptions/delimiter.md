@@ -21,7 +21,7 @@ The character that separates data fields in a CSV file, typically a comma.
 var delimiter: Character { get }
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to comma (`,`).
 

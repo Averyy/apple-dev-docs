@@ -19,7 +19,7 @@ The merchant’s country code string.
 @property (nonatomic, copy) NSString * regionCode;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to the two-letter [ISO 3166](https://www.iso.org/iso-3166-country-codes.html) country code for the country or region of the merchant’s principal place of business. Consult with your payment service provider (PSP) to determine the appropriate country or region code.
 

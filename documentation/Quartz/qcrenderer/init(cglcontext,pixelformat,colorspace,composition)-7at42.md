@@ -21,7 +21,7 @@ init!(cglContext context: CGLContextObj!, pixelFormat format: CGLPixelFormatObj!
 - (id) initWithCGLContext:(CGLContextObj) context pixelFormat:(CGLPixelFormatObj) format colorSpace:(CGColorSpaceRef) colorSpace composition:(QCComposition *) composition;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized `QCRenderer` object or `nil` if initialization is not successful.
 

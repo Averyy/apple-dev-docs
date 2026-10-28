@@ -21,7 +21,7 @@ var sectionIndexTitle: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * sectionIndexTitle;
 ```
 
-#### Discussion
+## Discussion
 
 The system displays only the first character of the section index title.
 

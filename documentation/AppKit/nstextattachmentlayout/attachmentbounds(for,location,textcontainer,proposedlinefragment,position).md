@@ -20,11 +20,11 @@ func attachmentBounds(for attributes: [NSAttributedString.Key : Any], location: 
 - (CGRect) attachmentBoundsForAttributes:(NSDictionary<NSString *,id> *) attributes location:(id<NSTextLocation>) location textContainer:(NSTextContainer *) textContainer proposedLineFragment:(CGRect) proposedLineFragment position:(CGPoint) position;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a [`CGRect`](../../CoreFoundation/cgrect.md) that describes the boundaries of the attachment, or `CGRectZero.`
 
-#### Discussion
+## Discussion
 
 The framework interprets the bounds origin to match `position` inside `proposedLineFragment`. The default [`NSTextAttachment`](../nstextattachment.md) implementation returns bounds if the value isn’t equivalent to [`CGRectZero`](../../CoreGraphics/cgrectzero.md); otherwise, it derives the bounds value from `image.size`. Conforming objects can implement more sophisticated logic for negotiating the frame size based on the available container space and proposed line fragment rectangle.
 

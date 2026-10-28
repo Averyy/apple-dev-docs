@@ -23,7 +23,7 @@ case tanh
 MLCActivationTypeTanh
 ```
 
-#### Discussion
+## Discussion
 
 This activation type implements the function:
 

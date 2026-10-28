@@ -21,7 +21,7 @@ The shortest possible unit name.
 static var narrow: Duration.UnitsFormatStyle.UnitWidth { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, `narrow` produces the unit label “3h” for a 3-hour duration in the `en_US` locale.
 

@@ -21,7 +21,7 @@ case word
 UITextGranularityWord
 ```
 
-#### Discussion
+## Discussion
 
 The unit of text is a word.
 

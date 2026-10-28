@@ -23,7 +23,7 @@ case contentRuleListStoreRemoveFailed
 WKErrorContentRuleListStoreRemoveFailed
 ```
 
-#### Discussion
+## Discussion
 
 A [`WKContentRuleListStore`](../../wkcontentruleliststore.md) object might return this error if it’s unable to delete the persistent copy of the rule list from the user’s system.
 

@@ -19,11 +19,11 @@ func titleFrame() -> NSRect
 - (NSRect) titleFrame;
 ```
 
-#### Return Value
+## Return Value
 
 The coordinates of the title frame, in the `IKImageBrowserView` coordinate space.
 
-#### Discussion
+## Discussion
 
 It is the developer’s responsibility to compute the `titleFrame` such that it lies entirely within the cell’s [`frame()`](./frame%28%29.md) rectangle.
 

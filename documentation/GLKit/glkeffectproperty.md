@@ -24,7 +24,7 @@ class GLKEffectProperty
 @interface GLKEffectProperty : NSObject
 ```
 
-#### Overview
+## Overview
 
 Subclasses of [`GLKEffectProperty`](./glkeffectproperty.md) provide one or more Objective-C properties that define how that state can be configured for an effect.
 

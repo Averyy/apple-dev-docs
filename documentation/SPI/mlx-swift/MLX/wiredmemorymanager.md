@@ -21,7 +21,7 @@ actor WiredMemoryManager
 
 - [Wired Memory Management](./wired-memory.md)
 
-#### Overview
+## Overview
 
 The wired limit is a global resource. This manager serializes updates, performs admission control, and restores the baseline when work completes. Use the shared singleton in production; multiple managers are undefined.
 

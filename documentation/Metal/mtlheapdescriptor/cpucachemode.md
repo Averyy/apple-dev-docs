@@ -24,7 +24,7 @@ var cpuCacheMode: MTLCPUCacheMode { get set }
 @property (nonatomic, readwrite) MTLCPUCacheMode cpuCacheMode;
 ```
 
-#### Discussion
+## Discussion
 
 This property’s default value is [`MTLCPUCacheMode.defaultCache`](../mtlcpucachemode/defaultcache.md).
 

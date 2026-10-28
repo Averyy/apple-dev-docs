@@ -21,7 +21,7 @@ Calculates the single-precision element-wise sum of the products of two pairs of
 extern void vDSP_vmma(const float *__A, vDSP_Stride __IA, const float *__B, vDSP_Stride __IB, const float *__C, vDSP_Stride __IC, const float *__D, vDSP_Stride __ID, float *__E, vDSP_Stride __IE, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the differences of the first `N` elements of the product of vectors `A` and `B` and the product of vectors `C` and `D`, as follows:
 

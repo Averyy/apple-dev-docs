@@ -21,7 +21,7 @@ Begins the audio stream from the generator render handler.
 func play()
 ```
 
-#### Discussion
+## Discussion
 
 When you play the controller, the render handler starts receiving callbacks. The controller ignores calls to [`play()`](./play%28%29.md) when audio is already playing.
 

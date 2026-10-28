@@ -15,7 +15,7 @@ Determine if a filesystem is mounted read-only.
 int vfs_isrdonly(mount_t mp);
 ```
 
-#### Return Value
+## Return Value
 
 Nonzero if filesystem is mounted read-only, else 0.
 

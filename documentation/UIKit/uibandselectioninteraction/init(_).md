@@ -22,7 +22,7 @@ init(_ selectionHandler: @escaping (UIBandSelectionInteraction) -> Void)
 - (instancetype) initWithSelectionHandler:(void (^)(UIBandSelectionInteraction *interaction)) selectionHandler;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized band selection interaction object. Add the returned object to a view to begin detecting interactions.
 

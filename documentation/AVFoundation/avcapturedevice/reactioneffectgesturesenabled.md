@@ -23,7 +23,7 @@ class var reactionEffectGesturesEnabled: Bool { get }
 @property (class, readonly) BOOL reactionEffectGesturesEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 This property reflects the enabled state of Gestures in Control Center.
 

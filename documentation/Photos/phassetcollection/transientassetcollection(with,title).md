@@ -24,11 +24,11 @@ class func transientAssetCollection(with assets: [PHAsset], title: String?) -> P
 + (PHAssetCollection *) transientAssetCollectionWithAssets:(NSArray<PHAsset *> *) assets title:(NSString *) title;
 ```
 
-#### Return Value
+## Return Value
 
 A new asset collection.
 
-#### Discussion
+## Discussion
 
 Transient asset collections are not saved to local storage or iCloud and do not appear in the Photos app or other apps using the Photos framework. A transient collection can be useful if you’ve designed a UI for displaying the contents of a collection and want to display an arbitrary set of assets.
 

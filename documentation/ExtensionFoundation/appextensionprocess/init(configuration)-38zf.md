@@ -21,7 +21,7 @@ Finds an existing process for the specified app extension or creates a new one a
 init(configuration: AppExtensionProcess.Configuration) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to request a process for the specified app extension and receive the results asynchronously. If a process for the extension already exists, the returned type uses that process. If no process exists, the system creates one and runs the app extension’s startup code before returning.
 

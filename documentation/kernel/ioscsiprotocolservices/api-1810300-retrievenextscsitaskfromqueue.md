@@ -12,11 +12,11 @@ SCSITask * RetrieveNextSCSITaskFromQueue (
  void );
 ```
 
-#### Return Value
+## Return Value
 
 A valid SCSITask pointer or NULL if there are no tasks to process.
 
-#### Overview
+## Overview
 
 Internal method called to retrieve the next SCSITask to process.
 

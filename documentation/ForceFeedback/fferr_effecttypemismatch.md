@@ -18,7 +18,7 @@ var FFERR_EFFECTTYPEMISMATCH: Int { get }
 #define FFERR_EFFECTTYPEMISMATCH
 ```
 
-#### Discussion
+## Discussion
 
 The IOForceFededbackLib driver has received an effect modification request whose basic type does not match the defined effect type for the given effect.
 

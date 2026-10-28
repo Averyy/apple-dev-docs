@@ -29,7 +29,7 @@ enum MTLGPUFamily : NSInteger;
 - [Detecting GPU features and Metal software versions](./detecting-gpu-features-and-metal-software-versions.md)
 - [Improving your game’s graphics performance and settings](./improving-your-games-graphics-performance-and-settings.md)
 
-#### Overview
+## Overview
 
 Check whether a GPU supports the features of a specific family by calling the [`supportsFamily(_:)`](./mtldevice/supportsfamily%28_%29.md) method of a GPU’s [`MTLDevice`](./mtldevice.md) instance.
 

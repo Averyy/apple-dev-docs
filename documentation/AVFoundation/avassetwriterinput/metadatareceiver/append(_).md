@@ -17,11 +17,11 @@ Suspends until the input is ready for more media data, then appends the timed me
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) func append(_ timedMetadataGroup: AVTimedMetadataGroup) async throws
+nonisolated(nonsending)
+func append(_ timedMetadataGroup: AVTimedMetadataGroup) async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the underlying writer failed.
 

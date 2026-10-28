@@ -24,11 +24,11 @@ class UISearchBar
 @interface UISearchBar : UIView
 ```
 
-#### Overview
+## Overview
 
 [`UISearchBar`](./uisearchbar.md) provides a text field for entering text, a search button, a bookmark button, and a cancel button. A search bar doesn’t actually perform any searches. You use a delegate, an object conforming to the [`UISearchBarDelegate`](./uisearchbardelegate.md) protocol, to implement the actions when the user enters text or clicks buttons. For details about interacting with the text field, accessing its content, and using tokens, see [`UISearchTextField`](./uisearchtextfield.md) and [`UISearchToken`](./uisearchtoken.md).
 
-##### Customize appearance
+### Customize appearance
 
 You can customize the appearance of search bars one at a time, or you can use the appearance proxy (`[UISearchBar appearance]`) to customize the appearance of all search bars in an app.
 

@@ -18,7 +18,7 @@ Resets the render encoder state to renderer defaults.
 func reset()
 ```
 
-#### Discussion
+## Discussion
 
 Call this after any custom Metal commands that modify the depth stencil state, cull mode, viewports, or scissor rects, to restore the renderer’s expected state before the next draw call.
 

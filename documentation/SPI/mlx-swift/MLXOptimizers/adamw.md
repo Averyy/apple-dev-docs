@@ -17,13 +17,13 @@ The AdamW optimizer [1].
 class AdamW
 ```
 
-#### Overview
+## Overview
 
 By default AdamW omits bias correction in the first and second moments, to match the longstanding MLX Swift behavior. Set `biasCorrection` to `true` to apply it. We update the weights with a `weightDecay` lambda value:
 
 [1]: Loshchilov, I. and Hutter, F., 2019. Decoupled weight decay regularization. ICLR 2019.
 
-##### See Also
+### See Also
 
 - [MLXOptimizers](./MLXOptimizers.md)
 

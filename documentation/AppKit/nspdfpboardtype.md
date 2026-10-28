@@ -15,7 +15,7 @@ PDF data.
 extern NSPasteboardType NSPDFPboardType;
 ```
 
-#### Discussion
+## Discussion
 
 In macOS 10.6 and later, use [`pdf`](./nspasteboard/pasteboardtype/pdf.md) instead.
 

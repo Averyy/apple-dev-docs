@@ -32,7 +32,7 @@ var title: String { get set }
 @property (atomic, copy, readwrite) NSString * title;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the title of your notification alert. If your app isn’t authorized to display alert-based notifications, the system ignores this property.
 

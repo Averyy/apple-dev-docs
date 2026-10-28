@@ -25,7 +25,7 @@ func CVBufferRemoveAllAttachments(_ buffer: CVBuffer)
 extern void CVBufferRemoveAllAttachments(CVBufferRef buffer);
 ```
 
-#### Discussion
+## Discussion
 
 This function removes all attachments from a buffer and decrements their reference counts.
 

@@ -23,7 +23,7 @@ class UIEventAttributionView
 @interface UIEventAttributionView : UIView
 ```
 
-#### Overview
+## Overview
 
 Web AdAttributionKit (formerly known as Private Click Measurement, or PCM) is a proposed web standard that allows external websites to measure when external links, such as ads, result in a *conversion*. The external website decides what constitutes a conversion, but it’s often the result of the user making a purchase or signing up for a service. Web AdAttributionKit doesn’t send any user-identifiable information to the remote server, so it protects user privacy, while providing websites the ability to measure the effectiveness of their ad campaigns.
 
@@ -35,11 +35,11 @@ You can’t subclass [`UIEventAttributionView`](./uieventattributionview.md).
 
 For more information on the proposed Web AdAttributionKit web standard, see [Introducing Private Click Measurement](https://webkit.org/blog/11529/introducing-private-click-measurement-pcm/) and [Private Click Measurement Draft Community Group Report](https://privacycg.github.io/private-click-measurement/).
 
-##### Verify user interaction
+### Verify user interaction
 
 Event attribution views overlay other UIKit controls to ensure that either handling a tap with `AdAttributionKit` or opening an external link with Web AdAttributionKit data only happens as the result of a user tap. The system doesn’t handle the tap or send event attribution data to the browser unless a `UIEventAttributionView` exists above the tapped control.
 
-##### Create an event attribution view
+### Create an event attribution view
 
 Place an event attribution view above any view that launches external links with event attribution data and make sure there are no other overlapping views above the event attribution view that might intercept taps. [`UIEventAttributionView`](./uieventattributionview.md) doesn’t consume tap events, so the behavior of any control below one in the view hierarchy isn’t affected.
 

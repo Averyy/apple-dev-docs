@@ -24,11 +24,11 @@ class func canExportFileExtension(_ extension: String) -> Bool
 + (BOOL) canExportFileExtension:(NSString *) extension;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the [`MDLAsset`](../mdlasset.md) class can export asset data in the format with the specified extension; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 If this method returns [`true`](../../Swift/true.md), you can use the [`export(to:)`](./export%28to%29.md) method to write an asset to a file using the format identified by the specified extension.
 

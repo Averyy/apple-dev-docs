@@ -25,7 +25,7 @@ case `in`
 NSInPredicateOperatorType
 ```
 
-#### Discussion
+## Discussion
 
 For strings, returns [`true`](../../../Swift/true.md) if the left hand side is a substring of the right hand side . For collections, returns [`true`](../../../Swift/true.md) if the left hand side is in the right hand side .
 

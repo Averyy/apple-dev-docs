@@ -25,7 +25,7 @@ var uuid: CBUUID { get }
 @property (nonatomic, readonly) CBUUID * UUID;
 ```
 
-#### Discussion
+## Discussion
 
 This property is a 128-bit UUID that identifies the attribute.
 

@@ -18,7 +18,7 @@ Loads the adapter into the specified model.
 func load(into model: LanguageModel) throws
 ```
 
-#### Discussion
+## Discussion
 
 Prefer [`load(adapter:)`](../languagemodel/load%28adapter%29.md) when invoking an adapter so the model can rebuild derived inference state after the topology change.
 

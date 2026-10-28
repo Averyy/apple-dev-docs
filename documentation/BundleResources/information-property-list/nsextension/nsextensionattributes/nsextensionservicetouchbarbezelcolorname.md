@@ -14,7 +14,7 @@ The color to use for the bezel around the extension when it appears as a Quick A
 - **Name**: `NSExtensionServiceTouchBarBezelColorName`
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 This key is used in conjunction with the [`NSExtensionServiceAllowsTouchBarItem`](./nsextensionserviceallowstouchbaritem.md) key.
 

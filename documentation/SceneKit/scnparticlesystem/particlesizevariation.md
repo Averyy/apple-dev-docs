@@ -25,7 +25,7 @@ var particleSizeVariation: CGFloat { get set }
 @property (nonatomic) CGFloat particleSizeVariation;
 ```
 
-#### Discussion
+## Discussion
 
 Setting a nonzero value for this property randomizes the effect of the [`particleSize`](./particlesize.md) property. SceneKit randomly adjusts the size of each particle by up to half the [`particleSizeVariation`](./particlesizevariation.md) value. For example, if the [`particleSize`](./particlesize.md) value is `1.0` and the [`particleSizeVariation`](./particlesizevariation.md) value is `0.5`, newly spawned particles are randomly sized between `0.75` and `1.25` units wide and high.
 

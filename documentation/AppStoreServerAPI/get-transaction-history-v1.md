@@ -16,7 +16,7 @@ Get a customer’s in-app purchase transaction history for your app, except fini
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 - [Identifying rate limits](./identifying-rate-limits.md)
 
-#### Discussion
+## Discussion
 
 The [`Get Transaction History V1`](./get-transaction-history-v1.md) endpoint returns results for the following product types:
 

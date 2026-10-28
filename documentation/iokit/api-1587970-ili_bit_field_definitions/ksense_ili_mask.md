@@ -15,7 +15,7 @@
 kSENSE_ILI_Mask = 0x20
 ```
 
-#### Discussion
+## Discussion
 
 Mask to use when checking the SENSE_KEY field for the ILI bit.
 

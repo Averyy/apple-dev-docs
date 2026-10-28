@@ -23,7 +23,7 @@ func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: I
 - (NSInteger) pickerView:(UIPickerView *) pickerView numberOfRowsInComponent:(NSInteger) component;
 ```
 
-#### Return Value
+## Return Value
 
 The number of rows for the component.
 

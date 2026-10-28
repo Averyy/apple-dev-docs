@@ -24,7 +24,7 @@ static var truncateDestinationToMovieHeaderOnly: AVMovieWritingOptions { get }
 AVMovieWritingTruncateDestinationToMovieHeaderOnly
 ```
 
-#### Discussion
+## Discussion
 
 Creates a file type box at the beginning of the destination file.
 

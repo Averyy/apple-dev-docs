@@ -5,25 +5,25 @@
 
 Learn about changes to Apple Ads Campaign Management API 4.
 
-#### Overview
+## Overview
 
 API 4 calls are able to access resources created with [Apple Ads Campaign Management API 5](./apple-search-ads-campaign-management-api-5.md).
 
-##### 4.11
+### 4.11
 
 Released in April, 2024.
 
 - Added guidance for suggested keyword bid amount to help you increase the likelihood of your ad showing in the App Store.  See [`KeywordBidRecommendation`](./keywordbidrecommendation.md) for a summary of changes to [`Get Keyword-Level Reports`](./get-keyword-level-reports.md).
 - You can now create and update budget orders through the API.  Added two endpoints: [`Create a Budget Order`](./create-a-budget-order.md) and [`Update a Budget Order`](./update-a-budget-order.md). See [Budget Orders](./budget-orders.md).
 
-##### 4.10
+### 4.10
 
 Released in November, 2023.
 
 - Added an endpoint to provide app eligibility according to available supply sources, device classes, age criteria, and countries or regions. See [`Find App Eligibility Records`](./find-app-eligibility-records.md).
 - The [`Find Targeting Keywords in a Campaign`](./find-targeting-keywords-in-a-campaign.md) endpoint now supports filtering and sorting by `modificationTime` and `creationTime`.
 
-##### 4.9
+### 4.9
 
 Released in July, 2023.
 
@@ -39,7 +39,7 @@ Updates to the [`ProductPageReason`](./productpagereason.md) object:
 
 > ❗ **Important**:  With the 4.9 release, all previously rejected Today tab ad creatives were `PAUSED` and resubmitted for re-review. The status was updated to `ENABLED` after the re-review. For more information about updating an ad status, see [`Update an Ad`](./update-an-ad.md).
 
-##### 4.8
+### 4.8
 
 Released in April, 2023.
 
@@ -47,13 +47,13 @@ Released in April, 2023.
 - [`Find Ad Creative Rejection Reasons`](./find-ad-creative-rejection-reasons.md) and [`Get Ad Creative Rejection Reasons`](./gets-a-product-page-reason.md) can help you resolve a [`ProductPageReason`](./productpagereason.md) for rejected ad creatives based on [Custom Product Pages](./custom-product-pages.md).
 - [`Find App Assets`](./find-app-assets.md) returns your app asset metadata that may need adjusting.
 
-##### 4.7
+### 4.7
 
 Released in January, 2023.
 
 - Added [Impression Share Reports](./impression-share-reports.md).
 
-##### 4.6.1
+### 4.6.1
 
 Released in October, 2022.
 
@@ -62,7 +62,7 @@ Released in October, 2022.
 - Added a new [`Find Ad Groups (org-level)`](./find-ad-groups-%28org-level%29.md) endpoint to find ad groups within your organization.
 - Added a new [`Find Ads (org-level)`](./find-ads-%28org-level%29.md) endpoint to find `ads` within your organization.
 
-##### 4.6
+### 4.6
 
 Released in September, 2022.
 
@@ -74,7 +74,7 @@ Advertisers can book ads using two new ad placements: `APPSTORE_TODAY_TAB` and `
 - `APPSTORE_PRODUCT_PAGES_BROWSE` places your ad at the top of the You Might Also Like list when users scroll to the bottom of relevant pages across the App Store.
 - An optional app categories targeting dimension is eligible to use with `APPSTORE_PRODUCT_PAGES_BROWSE`. See [`AppCategoryCriteria`](./appcategorycriteria.md).
 
-##### 4.4
+### 4.4
 
 Released in June, 2022.
 
@@ -83,21 +83,21 @@ Released in June, 2022.
 - A lifetime budget is now optional. New campaigns require either a `dailyBudgetAmount` or a `budgetAmount` (lifetime budget), or both. See [`Create a Campaign`](./create-a-campaign.md) and [`Update a Campaign`](./update-a-campaign.md) for payload examples.
 - Campaign `endTime` and `startTime` attributes are now configurable. See the [`Campaign`](./campaign.md) object for validations.
 
-##### 4.3
+### 4.3
 
 Released in April, 2022.
 
 - Added delete keywords endpoints. See [`Delete Targeting Keywords`](./delete-targeting-keywords.md) and [`Find Targeting Keywords in a Campaign`](./find-targeting-keywords-in-a-campaign.md).
 - Enhancements to the geolocation search service.
 
-##### 4.2
+### 4.2
 
 Released in March, 2022.
 
 - Added `creationTime` field to the [`Creative`](./creative.md), [`Ad`](./ad.md) object, [`AdCreate`](./adcreate.md), [`AdUpdate`](./adupdate.md), [`ReportingAd`](./reportingad.md), and `ReportingCreativeSet`.
 - Reports now include [`Get Keyword-Level within Ad Group Reports`](./get-keyword-level-within-ad-group-reports.md) and [`Get Search Term-Level within Ad Group Reports`](./get-search-term-level-within-ad-group-reports.md).
 
-##### 4.1
+### 4.1
 
 Released in January, 2022.
 
@@ -105,17 +105,17 @@ Released in January, 2022.
 
 Custom Product Pages reports now include [`Get Ad-Level Reports`](./get-ad-level-reports.md), available for campaigns using the `APPSTORE_SEARCH_RESULTS` [`SupplySource`](./supplysource.md).
 
-##### 4.0
+### 4.0
 
 Released in May, 2021. You can use calls from the 4.x API to access all of your resources that you created in Apple Search Ads Campaign Management API 3.
 
-###### OAuth
+#### OAuth
 
 Beginning in 2021, the Apple Ads Campaign Management API uses OAuth 2 for API account authentication. Apple Search Ads users no longer use API certificates to manage access to their Search Ads accounts. For more information, see [Implementing OAuth for the Apple Ads API](./implementing-oauth-for-the-apple-search-ads-api.md).
 
 To make calls to the Apple Search Ads Campaign Management API with OAuth, see [Calling the Apple Ads API](./calling-the-apple-search-ads-api.md).
 
-###### Access Control Lists
+#### Access Control Lists
 
 Access control lists have the following updates:
 
@@ -123,11 +123,11 @@ Access control lists have the following updates:
 - The [`Get Me Details`](./get-me-details.md) endpoint has been added with its [`MeDetailResponse`](./medetailresponse.md) object.
 - The `certExpirationDate` field is no longer a property of the `UserAcl` object.
 
-###### Ad Groups
+#### Ad Groups
 
 The `defaultCpcBid` field in the [`AdGroup`](./adgroup.md) object has been renamed to `defaultBidAmount`.
 
-###### Reports
+#### Reports
 
 [`Campaign`](./campaign.md) objects now include new fields: [`SupplySource`](./supplysource.md), [`AdChannelType`](./adchanneltype.md), and [`BillingEventType`](./billingeventtype.md). The [`AdGroup`](./adgroup.md) object now includes a new field: [`PricingModel`](./pricingmodel.md).  Note, in the [`AdGroup`](./adgroup.md) object, the `defaultCpcBid` field used in API 3 is now the `defaultBidAmount` field in API 4.
 

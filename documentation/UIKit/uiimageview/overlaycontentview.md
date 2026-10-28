@@ -19,7 +19,7 @@ var overlayContentView: UIView { get }
 @property (nonatomic, strong, readonly) UIView * overlayContentView;
 ```
 
-#### Discussion
+## Discussion
 
 Use this view to host content that you want layered on top of the image view. This view is managed by the image view itself and is automatically sized to fill the image view’s frame rectangle. Add your subviews and use layout constraints to position them within the view. When the [`adjustsImageWhenAncestorFocused`](./adjustsimagewhenancestorfocused.md) property is [`true`](../../Swift/true.md), the overlay view receives the same floating effects as the image view when it’s focused.
 

@@ -19,11 +19,11 @@ convenience init(for urlOrNil: URL?, withContentsOf contentsURL: URL, ofType typ
 - (instancetype) initForURL:(NSURL *) urlOrNil withContentsOfURL:(NSURL *) contentsURL ofType:(NSString *) typeName error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized document object, or `nil` if the document could not be created.
 
-#### Discussion
+## Discussion
 
 The system calls this method to open a document that has an associated autosave file . You can override this method to handle any document initialization specific to autosave contents.
 

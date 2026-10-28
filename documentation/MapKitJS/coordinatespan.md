@@ -15,7 +15,7 @@ The width and height of a map region.
 class CoordinateSpan implements CoordinateSpanData
 ```
 
-#### Overview
+## Overview
 
 You use the delta values in a coordinate span to indicate the desired zoom level of the map. Smaller delta values correspond to a higher zoom level. The *span* in this class refers to the width and height of a region, with distances as degrees of latitude and longitude.
 

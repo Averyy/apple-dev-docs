@@ -21,7 +21,7 @@ A type that defines the geometry of a scroll view.
 struct ScrollGeometry
 ```
 
-#### Overview
+## Overview
 
 SwiftUI provides you values of this type when using modifiers like `View/onScrollGeometryChange(_:action:)` or [`onScrollPhaseChange(_:)`](./view/onscrollphasechange%28_%29.md).
 

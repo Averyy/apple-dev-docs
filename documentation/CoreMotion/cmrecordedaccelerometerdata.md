@@ -23,7 +23,7 @@ class CMRecordedAccelerometerData
 @interface CMRecordedAccelerometerData : CMAccelerometerData
 ```
 
-#### Overview
+## Overview
 
 You do not create instances of this class directly. Instead, you use a [`CMSensorRecorder`](./cmsensorrecorder.md) object to retrieve already recorded data from the system.
 

@@ -23,7 +23,7 @@ var searchBar: UISearchBar { get }
 @property (nonatomic, strong, readonly) UISearchBar * searchBar;
 ```
 
-#### Discussion
+## Discussion
 
 Before presenting your searchable content, install the search bar somewhere in your view hierarchy. The search bar becomes the starting point for searching your contents. Interactions with the search bar are handled automatically by the `UISearchController` object, which notifies the object in the [`searchResultsUpdater`](./searchresultsupdater.md) property whenever the search information changes.
 

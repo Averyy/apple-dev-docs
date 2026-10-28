@@ -18,7 +18,7 @@ Links the search tab’s selection to search activation.
 static var searchTabSelection: TabSearchActivation { get }
 ```
 
-#### Discussion
+## Discussion
 
 When the search tab is selected, search will activate. When the user dismisses search, the search tab will be deselected and the previously selected tab will be reselected.
 

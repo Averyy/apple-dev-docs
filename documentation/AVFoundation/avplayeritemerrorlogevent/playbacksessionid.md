@@ -25,7 +25,7 @@ var playbackSessionID: String? { get }
 @property (nonatomic, readonly, nullable) NSString * playbackSessionID;
 ```
 
-#### Discussion
+## Discussion
 
 The property corresponds to “cs-guid”.
 

@@ -21,7 +21,7 @@ var isDualCameraFusionSupported: Bool { get }
 @property (nonatomic, readonly, getter=isDualCameraFusionSupported) BOOL dualCameraFusionSupported;
 ```
 
-#### Discussion
+## Discussion
 
 On devices equipped with a dual camera, image fusion combines samples from both cameras to produce a higher quality image.
 

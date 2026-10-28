@@ -24,11 +24,11 @@ class func colorBlendMode() -> any CIFilter & CICompositeOperation
 + (CIFilter<CICompositeOperation> *) colorBlendModeFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the color-blend mode filter to an image. The effect creates the output image by using the luminance values of the background image, while using the hue and saturation values of the input image. The effect preserves gray levels from the background image.
 

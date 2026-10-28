@@ -25,7 +25,7 @@ var kLinearPCMFormatFlagsSampleFractionMask: AudioFormatFlags { get }
 kLinearPCMFormatFlagsSampleFractionMask
 ```
 
-#### Discussion
+## Discussion
 
 The number of fractional bits is equal to `(` [`mFormatFlags`](./audiostreambasicdescription/mformatflags.md) `&` [`kLinearPCMFormatFlagsSampleFractionMask`](./klinearpcmformatflagssamplefractionmask.md) `) >>` [`kLinearPCMFormatFlagsSampleFractionShift`](./klinearpcmformatflagssamplefractionshift.md).
 

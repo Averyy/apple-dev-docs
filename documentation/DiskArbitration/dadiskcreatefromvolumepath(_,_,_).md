@@ -20,11 +20,11 @@ func DADiskCreateFromVolumePath(_ allocator: CFAllocator?, _ session: DASession,
 extern DADiskRefDADiskCreateFromVolumePath(CFAllocatorRef allocator, DASessionRef session, CFURLRef path);
 ```
 
-#### Return Value
+## Return Value
 
 A reference to a new DADisk.
 
-#### Discussion
+## Discussion
 
 The caller of this function receives a reference to the returned object. The caller also implicitly retains the object and is responsible for releasing it with CFRelease().
 

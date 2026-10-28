@@ -23,7 +23,7 @@ weak var delegate: (any WCSessionDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<WCSessionDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 You must assign an object conforming to the [`WCSessionDelegate`](../wcsessiondelegate.md) protocol to this property before calling the [`activate()`](./activate%28%29.md) method. The delegate is responsible for responding to session-related changes, for processing incoming data, and for responding to errors.
 

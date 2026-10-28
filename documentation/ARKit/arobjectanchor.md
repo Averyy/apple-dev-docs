@@ -20,7 +20,7 @@ class ARObjectAnchor
 @interface ARObjectAnchor : ARAnchor
 ```
 
-#### Overview
+## Overview
 
 When you run a world-tracking AR session and specify [`ARReferenceObject`](./arreferenceobject.md) objects for the session configuration’s [`detectionObjects`](./arworldtrackingconfiguration/detectionobjects.md) property, ARKit searches for those objects in the real-world environment. When the session recognizes an object, it automatically adds to its list of anchors an [`ARObjectAnchor`](./arobjectanchor.md) for each detected object.
 

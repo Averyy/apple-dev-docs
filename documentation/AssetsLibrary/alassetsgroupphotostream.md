@@ -12,7 +12,7 @@ The PhotoStream album.
 ALAssetsGroupPhotoStream
 ```
 
-#### Discussion
+## Discussion
 
 In iOS 6.0 and later, this also includes Shared Streams.
 

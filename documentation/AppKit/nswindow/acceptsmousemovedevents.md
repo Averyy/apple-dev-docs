@@ -19,7 +19,7 @@ var acceptsMouseMovedEvents: Bool { get set }
 @property BOOL acceptsMouseMovedEvents;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the window accepts (and distributes) mouse-moved events; otherwise, [`false`](../../Swift/false.md). By default the value is [`false`](../../Swift/false.md).
 

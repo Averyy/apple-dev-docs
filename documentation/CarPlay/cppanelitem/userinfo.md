@@ -21,7 +21,7 @@ var userInfo: Any? { get set }
 @property (nonatomic, strong, nullable) id userInfo;
 ```
 
-#### Discussion
+## Discussion
 
 Store any app-specific data for the item in this property. For example, you might store a dictionary of keys and values. The item maintains a strong reference to the object you specify.
 

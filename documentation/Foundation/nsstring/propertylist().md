@@ -25,11 +25,11 @@ func propertyList() -> Any
 - (id) propertyList;
 ```
 
-#### Return Value
+## Return Value
 
 A property list representation of returning an `NSString`, `NSData`, `NSArray`, or `NSDictionary` object, according to the topmost element.
 
-#### Discussion
+## Discussion
 
 The receiver must contain a string in a property list format. For a discussion of property list formats, see [Property List Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html#//apple_ref/doc/uid/10000048i).
 

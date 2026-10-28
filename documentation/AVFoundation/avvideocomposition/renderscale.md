@@ -24,7 +24,7 @@ var renderScale: Float { get }
 @property (nonatomic, readonly) float renderScale;
 ```
 
-#### Discussion
+## Discussion
 
 This value must be `1.0` unless you set the composition on an [`AVPlayerItem`](../avplayeritem.md).
 

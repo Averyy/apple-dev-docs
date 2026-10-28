@@ -19,7 +19,7 @@ var contentWidthValueType: NSTextBlock.ValueType { get }
 @property (readonly) NSTextBlockValueType contentWidthValueType;
 ```
 
-#### Discussion
+## Discussion
 
 This property determines how the width value should be interpreted.
 

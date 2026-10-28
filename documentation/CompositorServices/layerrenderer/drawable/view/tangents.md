@@ -21,7 +21,7 @@ var tangents: simd_float4 { get }
 simd_float4 cp_view_get_tangents(cp_view_t view);
 ```
 
-#### Discussion
+## Discussion
 
 In a 3D scene, the viewing frustum is the volume between the near and far clipping planes that contains the scene’s visible content. When you render this content into a view, you generate a two-dimensional version of your content suitable for display. To ensure your content still looks three-dimensional, apply a perspective projection matrix to your content. This matrix scales your content appropriately based on its distance from the viewing point.
 

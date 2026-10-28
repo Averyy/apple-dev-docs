@@ -17,7 +17,7 @@ The parent index for each joint.
 var parentIndices: [Int] { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property may be used to identify the hierarchical dependency between joints. If a line is drawn for every joint and its parent joint, the result is a visualization of the underlying skeleton. The joint with no parent is denoted as the root joint. The root joint’s parent index is -1.
 

@@ -22,7 +22,7 @@ struct EnhancedSecurity
 
 - [Building an app extension to support a host app](../building-an-app-extension-to-support-a-host-app.md)
 
-#### Overview
+## Overview
 
 Add the `EnhancedSecurity` type to your extension point definition to indicate its security requirements. Initialize the type with a value of `true` if you require app extensions to run in a highly restrictive sandbox, or `false` if you don’t. For more information about configuring the sandbox environment, see [Enabling enhanced security for your app](../../Xcode/enabling-enhanced-security-for-your-app.md).
 

@@ -25,7 +25,7 @@ func CFPreferencesSetValue(_ key: CFString, _ value: CFPropertyList?, _ applicat
 extern void CFPreferencesSetValue(CFStringRef key, CFPropertyListRef value, CFStringRef applicationID, CFStringRef userName, CFStringRef hostName);
 ```
 
-#### Discussion
+## Discussion
 
 This function is the primitive set mechanism for the higher level preference function [`CFPreferencesSetAppValue(_:_:_:)`](./cfpreferencessetappvalue%28_,_,_%29.md). Only the exact domain specified is modified. Do not use this function directly unless you have a specific need. All arguments except `value` must be non-`NULL`. Do not use arbitrary user and host names, instead pass the pre-defined constants.
 

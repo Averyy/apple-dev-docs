@@ -22,7 +22,7 @@ case date
 UIApplicationShortcutIconTypeDate
 ```
 
-#### Discussion
+## Discussion
 
 ![Calendar icon](https://developer.apple.com/tutorials/images/com.apple.uikit/media-2934527@2x.png)
 

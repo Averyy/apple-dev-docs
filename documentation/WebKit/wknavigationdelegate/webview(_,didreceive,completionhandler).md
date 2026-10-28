@@ -31,7 +31,7 @@ optional func webView(_ webView: WKWebView, respondTo challenge: URLAuthenticati
 
 - [Replacing UIWebView in your app](../replacing-uiwebview-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 If you don’t implement this method, the web view responds to the authentication challenge with the [`URLSession.AuthChallengeDisposition.rejectProtectionSpace`](../../Foundation/urlsession/authchallengedisposition/rejectprotectionspace.md) disposition.
 

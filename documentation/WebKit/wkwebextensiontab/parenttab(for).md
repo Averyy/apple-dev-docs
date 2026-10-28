@@ -23,7 +23,7 @@ optional func parentTab(for context: WKWebExtensionContext) -> (any WKWebExtensi
 - (id<WKWebExtensionTab>) parentTabForWebExtensionContext:(WKWebExtensionContext *) context;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `nil` if not implemented.
 

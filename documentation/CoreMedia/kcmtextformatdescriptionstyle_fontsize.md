@@ -25,7 +25,7 @@ let kCMTextFormatDescriptionStyle_FontSize: CFString
 extern CFStringRef const kCMTextFormatDescriptionStyle_FontSize;
 ```
 
-#### Discussion
+## Discussion
 
 The value needs to be `SInt8` for 3G or `SInt16` for QuickTime.
 

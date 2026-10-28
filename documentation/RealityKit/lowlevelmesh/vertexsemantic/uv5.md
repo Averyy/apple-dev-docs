@@ -20,7 +20,7 @@ The semantic for the sixth UV channel, also known as UV5.
 case uv5
 ```
 
-#### Discussion
+## Discussion
 
 A shader can access this generic data.
 

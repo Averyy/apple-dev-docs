@@ -22,11 +22,11 @@ optional func printInteractionController(_ printInteractionController: UIPrintIn
 - (UIPrintPaper *) printInteractionController:(UIPrintInteractionController *) printInteractionController choosePaper:(NSArray<UIPrintPaper *> *) paperList;
 ```
 
-#### Return Value
+## Return Value
 
 A [`UIPrintPaper`](../uiprintpaper.md) object representing both the paper size and imageable area (or printable rectangle) to use for the print job.
 
-#### Discussion
+## Discussion
 
 This method is intended for apps (typically document-based apps) that have a notion of distinct paper sizes. The delegate can examine the objects in `paperList` to locate the paper size and printable rectangle combination that is best suited for its needs and return the encapsulating `UIPrintPaper` object. Or it can call the [`bestPaper(forPageSize:withPapersFrom:)`](../uiprintpaper/bestpaper%28forpagesize,withpapersfrom%29.md) class method of the [`UIPrintPaper`](../uiprintpaper.md) class, passing in a specific page size (typically the document size), and return the object returned by that method.
 

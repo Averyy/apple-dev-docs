@@ -15,7 +15,7 @@ The print screen key.
 static let printScreen: NSEvent.SpecialKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is unavailable on most Macintosh keyboards.
 

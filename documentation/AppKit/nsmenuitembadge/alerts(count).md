@@ -19,7 +19,7 @@ class func alerts(count itemCount: Int) -> Self
 + (instancetype) alertsWithCount:(NSInteger) itemCount;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a new badge item of type [`NSMenuItemBadge.BadgeType.alerts`](./badgetype/alerts.md).
 

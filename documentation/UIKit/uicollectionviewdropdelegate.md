@@ -27,7 +27,7 @@ protocol UICollectionViewDropDelegate : NSObjectProtocol
 
 - [Supporting Drag and Drop in Collection Views](./supporting-drag-and-drop-in-collection-views.md)
 
-#### Overview
+## Overview
 
 Implement this protocol in the object that you use to incorporate dropped data into your collection view. The only required method of this protocol is the [`collectionView(_:performDropWith:)`](./uicollectionviewdropdelegate/collectionview%28_,performdropwith%29.md) method, but you can implement other methods as needed to customize the drop behavior of your collection view.
 

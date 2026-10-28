@@ -25,7 +25,7 @@ var httpMaximumConnectionsPerHost: Int { get set }
 @property NSInteger HTTPMaximumConnectionsPerHost;
 ```
 
-#### Discussion
+## Discussion
 
 This property determines the maximum number of simultaneous HTTP/1.1 connections made to each host by tasks within sessions based on this configuration.
 

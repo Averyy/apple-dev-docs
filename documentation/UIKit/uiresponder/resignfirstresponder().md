@@ -23,7 +23,7 @@ func resignFirstResponder() -> Bool
 - (BOOL) resignFirstResponder;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation returns [`true`](../../Swift/true.md), resigning first responder status. You can override this method in your custom responders to update your object’s state or perform other actions, such as removing the highlight from a selection. You can also return [`false`](../../Swift/false.md), refusing to relinquish first responder status. If you override this method, you must call `super` (the superclass implementation) at some point in your code.
 

@@ -23,7 +23,7 @@ var invalidatedItemIndexPaths: [IndexPath]? { get }
 @property (nonatomic, readonly, nullable) NSArray<NSIndexPath *> * invalidatedItemIndexPaths;
 ```
 
-#### Discussion
+## Discussion
 
 The array contains zero or more [`NSIndexPath`](../../Foundation/nsindexpath.md) objects, each of which represents a cell whose layout changed.
 

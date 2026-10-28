@@ -15,7 +15,7 @@ Write one byte to the desired "Physical" IOSpace address.
 void IOMappedWrite8(IOPhysicalAddress address, UInt8 value);
 ```
 
-#### Discussion
+## Discussion
 
 Write one byte to the desired "Physical" IOSpace address. This function allows the developer to write to an address returned from any memory descriptor's getPhysicalSegment routine.
 

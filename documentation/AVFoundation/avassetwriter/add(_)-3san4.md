@@ -24,7 +24,7 @@ func add(_ inputGroup: AVAssetWriterInputGroup)
 - (void) addInputGroup:(AVAssetWriterInputGroup *) inputGroup;
 ```
 
-#### Discussion
+## Discussion
 
 An asset writer marks tracks associated with grouped inputs as mutually exclusive to each other for playback or other processing, if the output container format supports mutually exclusive relationships among tracks.
 

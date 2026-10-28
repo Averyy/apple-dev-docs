@@ -6,11 +6,11 @@
 
 Build a 3D application that integrates with Hydra and USD.
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC22 session 10141: [Explore USD tools and rendering](https://developer.apple.com/wwdc22/10141/).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 This sample requires Xcode 14 or later and macOS 13 or later. To build the project, you first need to [get and build the USD source code](https://github.com/PixarAnimationStudios/OpenUSD/blob/release/README.md#getting-and-building-the-code) from the Pixar GitHub repository, and then use CMake to generate an Xcode project with references to both the compiled USD libraries and the header files in the USD source code. If you don’t already have CMake installed, [download the latest version of CMake](https://cmake.org/download/) to your Applications folder.
 

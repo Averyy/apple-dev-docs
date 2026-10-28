@@ -19,11 +19,11 @@ class func toolTipsFont(ofSize fontSize: CGFloat) -> NSFont
 + (NSFont *) toolTipsFontOfSize:(CGFloat) fontSize;
 ```
 
-#### Return Value
+## Return Value
 
 A font object of the specified size.
 
-#### Discussion
+## Discussion
 
 If `fontSize` is 0 or negative, returns the tool tips font at the default size.
 

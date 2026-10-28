@@ -25,7 +25,7 @@ var phoneticRepresentation: PersonNameComponents? { get set }
 @property (copy, nullable) NSPersonNameComponents * phoneticRepresentation;
 ```
 
-#### Discussion
+## Discussion
 
 Each component of the receiver with a value should have a corresponding value for any value set for this property. `nil` by default.
 

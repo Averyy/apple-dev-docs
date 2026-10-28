@@ -20,11 +20,11 @@ var index: Int { get }
 @property (readonly) NSUInteger index;
 ```
 
-#### Return Value
+## Return Value
 
 An integer that is the index of the receiver relative to its sibling nodes.
 
-#### Discussion
+## Discussion
 
 The first child node of a parent has an index of zero.
 

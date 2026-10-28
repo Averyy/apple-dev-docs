@@ -25,7 +25,7 @@ let kCMSampleAttachmentKey_PartialSync: CFString
 extern CFStringRef const kCMSampleAttachmentKey_PartialSync;
 ```
 
-#### Discussion
+## Discussion
 
 A partial sync sample can be decoded without requiring any previous samples to have been decoded. Samples following two consecutive partial sync samples also do not require samples prior to the pair to have been decoded. To treat a sample as a partial sync sample, set a value of [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md) for both this key and the [`kCMSampleAttachmentKey_NotSync`](./kcmsampleattachmentkey_notsync.md) key.
 

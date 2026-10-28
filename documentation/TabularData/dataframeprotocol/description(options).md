@@ -21,7 +21,7 @@ Generates a text representation of the data frame type.
 func description(options: FormattingOptions) -> String
 ```
 
-#### Discussion
+## Discussion
 
 `FormattingOptions.maximumLineWidth` needs to be wide enough to print at least the index column, the truncation column, and one data column (at least two characters, one for initial of the content, and one for “…”).
 

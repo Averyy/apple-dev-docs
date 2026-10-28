@@ -15,11 +15,11 @@ Returns a Boolean value that indicates the box’s audio support.
 bool HasAudio();
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the box supports audio; `false` otherwise.
 
-#### Discussion
+## Discussion
 
 This method synchronizes by using the work queue created by the object.
 

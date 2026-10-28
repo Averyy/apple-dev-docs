@@ -5,7 +5,7 @@
 
 Book rides and report their status.
 
-#### Overview
+## Overview
 
 Users can book rides from Maps, Shortcuts, and Siri Suggestions. When the user requests a ride from your service, SiriKit forwards the information to your Intents app extension for processing. The user can ask you to provide a list of available rides, to initiate the booking of a ride, and to provide status updates for a booked ride. Maps expects you to handle all of the intents in this domain and won’t load your Intents app extension if you don’t support all of them.
 

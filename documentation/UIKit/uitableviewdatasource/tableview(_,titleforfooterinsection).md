@@ -27,11 +27,11 @@ optional func tableView(_ tableView: UITableView, titleForFooterInSection sectio
 
 - [Adding headers and footers to table sections](../adding-headers-and-footers-to-table-sections.md)
 
-#### Return Value
+## Return Value
 
 A string to use as the title of the section footer. If you return `nil` , the section will have no title.
 
-#### Discussion
+## Discussion
 
 The table view uses a fixed font style for section footer titles. If you want a different font style, return a custom view (for example, a [`UILabel`](../uilabel.md) object) in the delegate method [`tableView(_:viewForFooterInSection:)`](../uitableviewdelegate/tableview%28_,viewforfooterinsection%29.md) instead.
 

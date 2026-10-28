@@ -5,17 +5,17 @@
 
 Learn about time handling in host apps and plug-ins.
 
-#### Overview
+## Overview
 
 FxPlug 4 uses rational time of [`CMTime`](../CoreMedia/cmtime.md) type to handle all timing in the host apps and plug-ins. Time can be in the form of a specific time or duration in an effect, object, or timeline (project). When FxPlug methods use `time` or `renderTime`, that time generally refers to the current time that the host is providing or requesting. [`FxTimingAPI_v4`](../professional_video_applications/fxtimingapi_v4.md) provides methods to access other time values available in the host app. For FxPlug methods that don’t provide time, you can use [`FxCustomParameterActionAPI_v4`](../professional_video_applications/fxcustomparameteractionapi_v4.md)’s  [`currentTime()`](../professional_video_applications/fxcustomparameteractionapi_v4/currenttime%28%29.md) to determine current playhead time in the project.
 
-##### Time in Motion
+### Time in Motion
 
 In Motion projects, timelines always start at zero, regardless of the custom timecode the user may set in the project’s properties. Input time is also always relative to the timeline start time. Other times of significance are indicated in the following figure.
 
 ![Screenshot of a Motion timeline showing a variety of times, ranging from Zero Timeline time on the left to Maximum Timline Time on the right.](https://developer.apple.com/tutorials/images/com.apple.professionalvideoapplications/media-3695370@2x.png)
 
-##### Time in Final Cut Pro
+### Time in Final Cut Pro
 
 In Final Cut Pro, projects can start at any timecode set by the user, and their timeline time will be continuous from that start time. Timeline time is independent of Input Time in Final Cut Pro, so [`FxTimingAPI_v4`](../professional_video_applications/fxtimingapi_v4.md) provides two convenience methods to convert between them: [`timelineTime(_:fromInputTime:)`](../professional_video_applications/fxtimingapi_v4/timelinetime%28_,frominputtime%29.md) and [`inputTime(_:fromTimelineTime:)`](../professional_video_applications/fxtimingapi_v4/inputtime%28_,fromtimelinetime%29.md). The following figure shows various times in the FxTiming API.
 
@@ -23,11 +23,11 @@ In Final Cut Pro, projects can start at any timecode set by the user, and their 
 
 > **Note**:  Although the timeline’s start time is set by the user, the timecode of the timeline will not necessarily correspond to the rational time your plug-in uses. This difference may be due to drop-frame timecode, or because the timecode resets to `00:00:00:00`. For example, if the user sets the project start timecode to `23:59:50:00`, the rational start time of the timeline when converted to seconds may be `86476.39` seconds, but will NOT reset to `0` seconds when the timeline’s timecode reaches `00:00:00:00`.
 
-##### Motion effect templates
+### Motion effect templates
 
 You must [apply FxPlug plug-ins to a Motion template](https://support.apple.com/guide/motion/intro-to-final-cut-pro-templates-motn17691fe6/mac) to use it in a Final Cut Pro project. You may notice significant differences in how [`startTime(forEffect:)`](../professional_video_applications/fxtimingapi_v4/starttime%28foreffect%29.md), [`durationTime(forEffect:)`](../professional_video_applications/fxtimingapi_v4/durationtime%28foreffect%29.md), and [`startTimeOfInput(toFilter:)`](../professional_video_applications/fxtimingapi_v4/starttimeofinput%28tofilter%29.md) return time values. To understand these differences, imagine that an effect template added to a clip in Final Cut Pro is equivalent to a complete timeline in Motion. For example, in Motion, [`startTime(forEffect:)`](../professional_video_applications/fxtimingapi_v4/starttime%28foreffect%29.md) will return the plug-in effect’s start time relative to the Motion timeline. In Final Cut Pro, the same method will return the start time of the plug-in effect, relative to the native start time of the clip to which the user applies the template, regardless of the how much of the clip’s head has been trimmed by the user.
 
-##### Retiming and frame duration
+### Retiming and frame duration
 
 Effect templates that you apply to clips or other objects in Final Cut Pro may stretch to match the duration of the clip. When clips with effect templates are retimed by the user in Final Cut Pro, the effect template will adjust proportionally.
 

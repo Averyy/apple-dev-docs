@@ -16,11 +16,11 @@ Adds secondary views within the 3D bounds of this view.
 nonisolated func spatialOverlay<V>(alignment: Alignment3D = .center, @ContentBuilder content: () -> V) -> some View where V : View
 ```
 
-#### Return Value
+## Return Value
 
 A view that adds `content` within the view’s 3D bounds.
 
-#### Discussion
+## Discussion
 
 Multiple views provided by `content` are stacked depthwise.
 

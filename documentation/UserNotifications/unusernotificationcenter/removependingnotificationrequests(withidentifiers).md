@@ -25,7 +25,7 @@ func removePendingNotificationRequests(withIdentifiers identifiers: [String])
 - (void) removePendingNotificationRequestsWithIdentifiers:(NSArray<NSString *> *) identifiers;
 ```
 
-#### Discussion
+## Discussion
 
 This method executes asynchronously, removing the pending notification requests on a secondary thread.
 

@@ -15,7 +15,7 @@ The count of subscriptions that successfully receive a subscription-renewal-date
 int64 succeededCount
 ```
 
-#### Discussion
+## Discussion
 
 For information about a subscription’s eligibility to receive a subscription-renewal-date extension, see [Extending the renewal date for auto-renewable subscriptions](./extending-the-renewal-date-for-auto-renewable-subscriptions.md).
 

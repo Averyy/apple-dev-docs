@@ -24,7 +24,7 @@ var indexCount: Int { get }
 @property (nonatomic, readonly) NSUInteger indexCount;
 ```
 
-#### Discussion
+## Discussion
 
 Use this value for the `indexCount` parameter in a call to [`drawIndexedPrimitives(type:indexCount:indexType:indexBuffer:indexBufferOffset:)`](../../Metal/mtlrendercommandencoder/drawindexedprimitives%28type,indexcount,indextype,indexbuffer,indexbufferoffset%29.md).
 

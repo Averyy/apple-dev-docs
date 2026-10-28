@@ -21,7 +21,7 @@ init(contentSize: NSSize, preferredEdge edge: NSRectEdge)
 - (instancetype) initWithContentSize:(NSSize) contentSize preferredEdge:(NSRectEdge) edge;
 ```
 
-#### Discussion
+## Discussion
 
 You must specify the parent window and content view of the drawer using the methods in this class. When you create a drawer in Interface Builder, this constructor is invoked. The NSDrawer Inspector in Interface Builder allows you to set the edge, and you can specify the size by changing the content view in Interface Builder.
 

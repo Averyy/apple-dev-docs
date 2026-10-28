@@ -20,7 +20,7 @@ class NSDocumentController
 @interface NSDocumentController : NSObject
 ```
 
-#### Overview
+## Overview
 
 As the first-responder target of New and Open menu commands, [`NSDocumentController`](./nsdocumentcontroller.md) creates and opens documents and tracks them throughout a session of the app. When opening documents, a document controller runs and manages the modal Open panel. [`NSDocumentController`](./nsdocumentcontroller.md) objects also maintain and manage the mappings of document types, extensions, and [`NSDocument`](./nsdocument.md) subclasses as specified in the [CFBundleDocumentTypes](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html#//apple_ref/doc/uid/20001431-101685) property loaded from the information property list (`Info.plist`).
 

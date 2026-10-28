@@ -22,11 +22,11 @@ init(rideIdentifier: String)
 - (instancetype) initWithRideIdentifier:(NSString *) rideIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized intent object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 Normally, you do not create instances of this class yourself. Instead, SiriKit creates instances when the user tries to cancel a ride. However, you can use this method during testing to create intent objects in order to validate your intent handling code paths.
 

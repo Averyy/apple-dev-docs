@@ -24,11 +24,11 @@ class func areaMaximum() -> any CIFilter & CIAreaMaximum
 + (CIFilter<CIAreaMaximum> *) areaMaximumFilter;
 ```
 
-#### Return Value
+## Return Value
 
 A 1 x 1 size image containing the maximum color components.
 
-#### Discussion
+## Discussion
 
 This filter returns the maximum color components in the region defined by `extent`.
 

@@ -12,7 +12,7 @@ virtual void StopController (
  void ) = 0;
 ```
 
-#### Overview
+## Overview
 
 The StopController method will be called any time that the system wants the card to stop accepting requests. ( See StartController discussion ). The subclass should disable the hardware interrupt for the particular controller (if possible) in this method.
 

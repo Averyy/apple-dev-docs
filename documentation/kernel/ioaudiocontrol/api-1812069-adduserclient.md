@@ -12,11 +12,11 @@ virtual IOReturn addUserClient(
  IOAudioControlUserClient *newUserClient);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess on success.
 
-#### Overview
+## Overview
 
 There is no need to call this directly. It is called on the workLoop by newUserClient() through addUserClientAction().
 

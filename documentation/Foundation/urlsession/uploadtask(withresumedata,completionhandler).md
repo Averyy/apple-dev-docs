@@ -25,7 +25,7 @@ func uploadTask(withResumeData resumeData: Data, completionHandler: @escaping @S
 - (NSURLSessionUploadTask *) uploadTaskWithResumeData:(NSData *) resumeData completionHandler:(void (^)(NSData *data, NSURLResponse *response, NSError *error)) completionHandler;
 ```
 
-#### Return Value
+## Return Value
 
 A new session upload task, or nil if the resumeData is invalid.
 

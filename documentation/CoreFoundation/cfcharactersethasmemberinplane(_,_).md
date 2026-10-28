@@ -25,7 +25,7 @@ func CFCharacterSetHasMemberInPlane(_ theSet: CFCharacterSet!, _ thePlane: CFInd
 extern Boolean CFCharacterSetHasMemberInPlane(CFCharacterSetRef theSet, CFIndex thePlane);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if at least one member character is in the specified plane, otherwise `false`.
 

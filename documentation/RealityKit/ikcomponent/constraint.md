@@ -20,7 +20,7 @@ The update stage object that lets you read and update the current settings of a 
 class Constraint
 ```
 
-#### Overview
+## Overview
 
 The settings this object exposes are the runtime editable values of the solver constraint. Initial values are set in [`IKRig.Constraint`](../ikrig/constraint.md).
 

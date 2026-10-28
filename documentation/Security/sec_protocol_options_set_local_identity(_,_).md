@@ -23,7 +23,7 @@ func sec_protocol_options_set_local_identity(_ options: sec_protocol_options_t, 
 void sec_protocol_options_set_local_identity(sec_protocol_options_t options, sec_identity_t identity);
 ```
 
-#### Discussion
+## Discussion
 
 Set the local identity to be used for this protocol instance.
 

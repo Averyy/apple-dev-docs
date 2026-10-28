@@ -23,7 +23,7 @@ var sectionIndexMinimumDisplayRowCount: Int { get set }
 @property (nonatomic) NSInteger sectionIndexMinimumDisplayRowCount;
 ```
 
-#### Discussion
+## Discussion
 
 This property is applicable only to table views in the [`UITableView.Style.plain`](./style-swift.enum/plain.md) style. The default value is zero.
 

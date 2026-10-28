@@ -21,7 +21,7 @@ Adjusts the font to enable all small capitals.
 func smallCaps() -> Font
 ```
 
-#### Discussion
+## Discussion
 
 See [`lowercaseSmallCaps()`](./lowercasesmallcaps%28%29.md) and [`uppercaseSmallCaps()`](./uppercasesmallcaps%28%29.md) for more details.
 

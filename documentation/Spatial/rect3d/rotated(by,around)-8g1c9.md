@@ -25,7 +25,7 @@ func rotated(by quaternion: simd_quatd, around pivot: Point3D) -> Rect3D
 static SPRect3D SPRect3DRotateByQuaternionAroundPoint(SPRect3D rect, simd_quatd quaternion, SPPoint3D pivot);
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle that results from applying the specified rotation around a pivot point.
 

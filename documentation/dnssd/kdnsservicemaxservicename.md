@@ -23,7 +23,7 @@ var kDNSServiceMaxServiceName: Int32 { get }
 #define kDNSServiceMaxServiceName
 ```
 
-#### Discussion
+## Discussion
 
 Maximum length, in bytes, of a service name represented as a literal C string, including the terminating NULL at the end.
 

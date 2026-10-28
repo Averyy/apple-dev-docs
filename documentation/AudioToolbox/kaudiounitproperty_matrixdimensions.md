@@ -24,7 +24,7 @@ var kAudioUnitProperty_MatrixDimensions: AudioUnitPropertyID { get }
 kAudioUnitProperty_MatrixDimensions
 ```
 
-#### Discussion
+## Discussion
 
 A read-only `2 * UInt32` value valid on the audio unit global scope.
 

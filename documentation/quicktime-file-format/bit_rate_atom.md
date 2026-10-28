@@ -6,7 +6,7 @@
 
 An atom that signals the bit rate information of a stream.
 
-#### Overview
+## Overview
 
 The optional bit rate atom may be present at the end of any timed metadata sample description to signal the bit rate information of a stream. The bit rate information can be used for buffer configuration.
 

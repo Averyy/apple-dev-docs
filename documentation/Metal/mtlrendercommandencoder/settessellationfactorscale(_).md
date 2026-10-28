@@ -25,7 +25,7 @@ func setTessellationFactorScale(_ scale: Float)
 - (void) setTessellationFactorScale:(float) scale;
 ```
 
-#### Discussion
+## Discussion
 
 The command converts `scale` to a half-precision floating-point value before it applies it to the per-patch tessellation factors (see [`setTessellationFactorBuffer(_:offset:instanceStride:)`](./settessellationfactorbuffer%28_,offset,instancestride%29.md)).
 

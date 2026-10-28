@@ -22,7 +22,7 @@ var inputAssistantItem: UITextInputAssistantItem { get }
 @property (nonatomic, strong, readonly) UITextInputAssistantItem * inputAssistantItem;
 ```
 
-#### Discussion
+## Discussion
 
 When search is engaged on iPad, the shortcuts bar above the keyboard contains typing suggestions and may contain other controls for managing text. This property contains the object you use to configure the custom bar button items above the keyboard. The shortcuts bar is not available on iPhone or iPod Touch.
 

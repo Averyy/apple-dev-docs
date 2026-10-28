@@ -25,7 +25,7 @@ var title: String { get }
 @property (nonatomic, strong, readonly) NSString * title;
 ```
 
-#### Discussion
+## Discussion
 
 The local search completion object ensures this string isn’t empty.
 

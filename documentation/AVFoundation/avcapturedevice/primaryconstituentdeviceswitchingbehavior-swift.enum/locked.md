@@ -23,7 +23,7 @@ case locked
 AVCapturePrimaryConstituentDeviceSwitchingBehaviorLocked
 ```
 
-#### Discussion
+## Discussion
 
 A locked value restricts the [`minAvailableVideoZoomFactor`](../minavailablevideozoomfactor.md) property value to the switch-over zoom factor of the active primary constituent device. See [`virtualDeviceSwitchOverVideoZoomFactors`](../virtualdeviceswitchovervideozoomfactors.md) for more information.
 

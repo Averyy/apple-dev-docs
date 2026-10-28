@@ -34,7 +34,7 @@ func loadFriendsObsoleted() async throws -> [String]
 - (void) loadFriendsWithCompletionHandler:(void (^)(NSArray<NSString *> *friendIDs, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 After this call completes, the [`friends`](./friends.md) property of the shared local player object is the same list of players that the completion handler returns.
 

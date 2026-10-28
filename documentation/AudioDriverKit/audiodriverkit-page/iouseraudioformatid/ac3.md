@@ -15,7 +15,7 @@ The AC-3 format.
 AC3
 ```
 
-#### Discussion
+## Discussion
 
 This format uses no flags.
 

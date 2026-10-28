@@ -19,7 +19,7 @@ An option that customizes the behavior of an offer code redemption.
 struct RedeemOption
 ```
 
-#### Overview
+## Overview
 
 Pass a set of these values to `AppStore/presentOfferCodeRedeemSheet(from:options:)` to configure the offer code redemption.
 

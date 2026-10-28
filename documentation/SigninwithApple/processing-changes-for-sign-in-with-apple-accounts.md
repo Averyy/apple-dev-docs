@@ -5,15 +5,15 @@
 
 Manage user-initiated modifications to maintain privacy with server-to-server notifications.
 
-#### Overview
+## Overview
 
 Sign in with Apple users can modify their accounts, including deleting or disabling their Apple Accounts. If your app or website hosts such an account, Apple can alert you when these changes occur by delivering developer notifications to your server. To learn how your users manage their account preferences for your app, see [Manage the apps that you use with Sign in with Apple](https://support.apple.com/en-us/HT210426).
 
-##### Set up your server
+### Set up your server
 
 To receive server notifications for Sign in with Apple, your server must support the Transport Layer Security (TLS) 1.2 protocol or later. When determining the endpoint URL on your server to receive notifications, you may use the same URL for multiple developer teams and apps. To configure your Sign in with Apple service to receive notifications, see [Enabling server-to-server notifications](https://developer.apple.com/help/account/configure-app-capabilities/enabling-server-to-server-notifications).
 
-##### Decode and validate the notifications
+### Decode and validate the notifications
 
 These notifications contain a cryptographically signed payload, in JSON Web Signature (JWS) format, signed by Apple’s private key. After your server receives a notification, examine the JWS payload and use the algorithm specified in the header’s `alg` parameter to validate the signature. For more information, see [`Fetch Apple’s public key to verify token signatures`](../SigninwithAppleRESTAPI/fetch-apples-public-key-for-verifying-token-signature.md).
 
@@ -37,7 +37,7 @@ Pragma: no-cache
 }
 ```
 
-##### Process a user’s email forwarding change
+### Process a user’s email forwarding change
 
 Users can enable or disable email forwarding to your app or website. When a user enables email forwarding, Apple sends a JWT to your registered endpoint URL with the `type` value of `email-enabled` in the `events` claim. A decoded payload for an email-enabled notification has the following format:
 
@@ -77,7 +77,7 @@ When a user disables email forwarding, Apple sends a JWT to your registered endp
 
 To allow or prevent sending emails to the email address, be sure to update your server’s records according to your process. For more information, see [Communicating using the private email relay service](./communicating-using-the-private-email-relay-service.md).
 
-##### Process disabling and deleting a user’s Apple Account
+### Process disabling and deleting a user’s Apple Account
 
 Users can disable their Apple Account for a specific primary app ID, or delete their Apple Account account entirely. When a user disables their Apple Account for an app or app group, Apple sends a JWT to your registered endpoint URL with the `type` value of `consent-revoked` in the `events` claim. A decoded payload for a consent-revoked notification has the following format:
 

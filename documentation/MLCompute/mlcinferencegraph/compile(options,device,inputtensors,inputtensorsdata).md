@@ -23,11 +23,11 @@ func compile(options: MLCGraphCompilationOptions = [], device: MLCDevice, inputT
 - (BOOL) compileWithOptions:(MLCGraphCompilationOptions) options device:(MLCDevice *) device inputTensors:(NSDictionary<NSString *,MLCTensor *> *) inputTensors inputTensorsData:(NSDictionary<NSString *,MLCTensorData *> *) inputTensorsData;
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean that indicates success or failure.
 
-#### Discussion
+## Discussion
 
 If you specify the list of constant tensors before the framework compiles the graph, then the framework can perform additional optimizations during the compilation.
 

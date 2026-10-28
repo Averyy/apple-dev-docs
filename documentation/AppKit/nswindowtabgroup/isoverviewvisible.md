@@ -19,7 +19,7 @@ var isOverviewVisible: Bool { get set }
 @property (getter=isOverviewVisible) BOOL overviewVisible;
 ```
 
-#### Discussion
+## Discussion
 
 The tab overview provides a visual overview of the windows that make up a tabbing group. This property indicates whether the tab overview is currently displayed. Setting the property either shows or hides the overview.
 

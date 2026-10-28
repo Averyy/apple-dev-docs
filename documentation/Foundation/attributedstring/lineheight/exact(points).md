@@ -21,7 +21,7 @@ Constant line height based on a fixed total.
 static func exact(points: CGFloat) -> AttributedString.LineHeight
 ```
 
-#### Discussion
+## Discussion
 
 Defines the line height as the exact given total (in points), regardless of the effective ascent and descent of the fonts in use.
 

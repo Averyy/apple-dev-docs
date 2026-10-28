@@ -23,7 +23,7 @@ protocol AVCaptureMetadataOutputObjectsDelegate : NSObjectProtocol
 @protocol AVCaptureMetadataOutputObjectsDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The `AVCaptureMetadataOutputObjectsDelegate` protocol must be adopted by the delegate of an [`AVCaptureMetadataOutput`](./avcapturemetadataoutput.md) object. The single method in this protocol is optional. The method allows a delegate to respond when a capture metadata output object receives relevant metadata objects through its connection.
 

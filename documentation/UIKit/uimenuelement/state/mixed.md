@@ -23,7 +23,7 @@ case mixed
 UIMenuElementStateMixed
 ```
 
-#### Discussion
+## Discussion
 
 A [`UIMenuElement.State.mixed`](./mixed.md) state is one that’s neither “on” or “off”. The menu system displays a mixed-mark, such as a checkmark or hyphen, next to the menu element.
 

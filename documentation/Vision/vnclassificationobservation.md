@@ -24,7 +24,7 @@ class VNClassificationObservation
 @interface VNClassificationObservation : VNObservation
 ```
 
-#### Overview
+## Overview
 
 This type of observation results from performing a [`VNCoreMLRequest`](./vncoremlrequest.md) image analysis with a Core ML model whose role is classification (rather than prediction or image-to-image processing). Vision infers that an [`MLModel`](../CoreML/mlmodel.md) object is a classifier model if that model predicts a single feature. That is, the model’s [`modelDescription`](../CoreML/mlmodel/modeldescription.md) object has a non-`nil` value for its [`predictedFeatureName`](../CoreML/mlmodeldescription/predictedfeaturename.md) property.
 

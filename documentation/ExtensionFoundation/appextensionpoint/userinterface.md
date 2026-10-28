@@ -19,7 +19,7 @@ A type with that indicates whether the extension point displays UI from an app e
 struct UserInterface
 ```
 
-#### Overview
+## Overview
 
 Add a `UserInterface` type in an extension point definition and initialize it with a Boolean value. Specify `true` if your extension point supports custom UI or `false` if it doesn’t.
 

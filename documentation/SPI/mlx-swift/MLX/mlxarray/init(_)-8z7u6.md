@@ -17,7 +17,7 @@ Initialize with the given +1 context (transfer ownership).
 init(_ ctx: consuming mlx_array)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer is for `Cmlx` interoperation.
 

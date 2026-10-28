@@ -20,7 +20,7 @@ The reference level (-12dBLUFS) of the audio source material will be reproduced 
 static func absolute(dBSPL: Audio.Decibel) -> AudioResource.Calibration
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: The -12dBLUFS reference level is achieved automatically by using `Normalization.dynamic`.
 

@@ -22,7 +22,7 @@ let MPMoviePlayerThumbnailTimeKey: String
 extern NSString * const MPMoviePlayerThumbnailTimeKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is a [`NSNumber`](../Foundation/nsnumber.md) object containing a double value. This value represents the actual time (measured in seconds) from the beginning of the movie at which the image was captured.
 

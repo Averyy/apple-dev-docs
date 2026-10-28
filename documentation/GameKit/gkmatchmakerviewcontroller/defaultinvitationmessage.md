@@ -25,7 +25,7 @@ var defaultInvitationMessage: String? { get set }
 @property (nonatomic, copy, nullable) NSString * defaultInvitationMessage;
 ```
 
-#### Discussion
+## Discussion
 
 Your game sets this property to change the default invitation text displayed when the local player creates a new invitation. The local player may edit the text before sending the invitation.
 

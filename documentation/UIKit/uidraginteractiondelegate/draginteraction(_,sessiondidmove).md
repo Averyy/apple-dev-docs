@@ -22,7 +22,7 @@ optional func dragInteraction(_ interaction: UIDragInteraction, sessionDidMove s
 - (void) dragInteraction:(UIDragInteraction *) interaction sessionDidMove:(id<UIDragSession>) session;
 ```
 
-#### Discussion
+## Discussion
 
 To get the new location, call the drag session’s [`location(in:)`](../uidragdropsession/location%28in%29.md) method.
 

@@ -22,11 +22,11 @@ nonisolated
 func tracking(_ tracking: CGFloat) -> Text
 ```
 
-#### Return Value
+## Return Value
 
 Text with the specified amount of tracking.
 
-#### Discussion
+## Discussion
 
 Tracking adds space, measured in points, between the characters in the text view. A positive value increases the spacing between characters, while a negative value brings the characters closer together.
 

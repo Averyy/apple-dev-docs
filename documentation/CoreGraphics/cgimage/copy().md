@@ -25,7 +25,7 @@ func copy() -> CGImage?
 extern CGImageRefCGImageCreateCopy(CGImageRef image);
 ```
 
-#### Return Value
+## Return Value
 
 An copy of the image.
 

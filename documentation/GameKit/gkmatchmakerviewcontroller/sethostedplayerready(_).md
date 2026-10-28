@@ -24,7 +24,7 @@ func setHostedPlayerReady(_ playerID: String)
 - (void) setHostedPlayerReady:(NSString *) playerID;
 ```
 
-#### Discussion
+## Discussion
 
 In a hosted match, when a new player connects to the server, your server needs to inform all participating devices connected to the match. Each participating device must separately call this method to update its matchmaking user interface.
 

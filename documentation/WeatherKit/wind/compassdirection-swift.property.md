@@ -21,7 +21,7 @@ The general indicator of wind direction.
 var compassDirection: Wind.CompassDirection
 ```
 
-#### Discussion
+## Discussion
 
 This structure refers to the direction the wind is coming from; for instance, a north wind blows from north to south.
 

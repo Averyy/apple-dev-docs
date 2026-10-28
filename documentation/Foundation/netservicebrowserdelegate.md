@@ -24,7 +24,7 @@ protocol NetServiceBrowserDelegate : NSObjectProtocol
 @protocol NSNetServiceBrowserDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Delegates of [`NetServiceBrowser`](./netservicebrowser.md) instances optionally implement these methods.
 

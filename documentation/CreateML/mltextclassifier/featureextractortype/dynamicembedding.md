@@ -19,7 +19,7 @@ A feature extractor that provides embeddings for words, based on their in-contex
 case dynamicEmbedding
 ```
 
-#### Discussion
+## Discussion
 
 Dynamic embedding requires certain downloadable assets to be present on device at training time. Training will throw an error if the specified language is unavailable at runtime. Asset downloads are managed in the background automatically by the OS when a new language is configured in device settings, such as when adding a new keyboard language or changing the preferred language.
 

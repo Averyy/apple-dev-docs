@@ -23,7 +23,7 @@ var isCenterStageActive: Bool { get }
 @property (nonatomic, readonly, getter=isCenterStageActive) BOOL centerStageActive;
 ```
 
-#### Discussion
+## Discussion
 
 When Center Stage is active, the camera automatically pans, tightens, or widens the field of view as it requires to keep people optimally framed. If an app or a user enables Center Stage, this property value is [`true`](../../Swift/true.md) if the device supports the feature in its current configuration.
 

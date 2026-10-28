@@ -15,11 +15,11 @@ Returns the MIDI driver that owns a serial port.
 extern OSStatus MIDIGetSerialPortOwner(CFStringRef portName, CFStringRef*outDriverName);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus result code.
 
-#### Discussion
+## Discussion
 
 The current MIDISetup tracks ownership of serial ports to one of the MIDI drivers installed in the system.
 

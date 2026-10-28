@@ -25,7 +25,7 @@ func applied<S, Annotation>(to base: S) -> AugmentationSequence<S, RandomTransfo
 
 - [Augmenting images to expand your training data](../augmenting-images-to-expand-your-training-data.md)
 
-#### Return Value
+## Return Value
 
 A sequence of augmented elements having the same number of elements as the input sequence.
 

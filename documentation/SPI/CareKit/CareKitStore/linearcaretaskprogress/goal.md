@@ -17,7 +17,7 @@ A value that indicates whether the task is complete.
 var goal: Double? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 When there is no goal, the value is `nil`.  The task is considered completed if the progress value is greater than zero.
 

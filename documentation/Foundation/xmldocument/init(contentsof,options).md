@@ -20,11 +20,11 @@ convenience init(contentsOf url: URL, options mask: XMLNode.Options = []) throws
 - (instancetype) initWithContentsOfURL:(NSURL *) url options:(NSXMLNodeOptions) mask error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSXMLDocument` object, or  `nil` if initialization fails because of parsing errors or other reasons.
 
-#### Discussion
+## Discussion
 
 > **Handling Errors in Swift**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
 >

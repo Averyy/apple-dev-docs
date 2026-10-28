@@ -25,7 +25,7 @@ static let decimalSeparator: CFLocaleKey!
 extern CFLocaleKey const kCFLocaleDecimalSeparator;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a CFString object, for example “.” or “,”.
 

@@ -22,7 +22,7 @@ The underlying value that the observed object references.
 @preconcurrency var wrappedValue: ObjectType
 ```
 
-#### Discussion
+## Discussion
 
 The wrapped value property provides primary access to the observed object’s data. However, you don’t typically access it by name. Instead, SwiftUI accesses this property for you when you refer to the variable that you create with the `@ObservedObject` attribute.
 

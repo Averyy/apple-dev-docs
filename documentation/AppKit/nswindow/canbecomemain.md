@@ -19,7 +19,7 @@ var canBecomeMain: Bool { get }
 @property (readonly) BOOL canBecomeMainWindow;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the window can become the main window; otherwise, [`false`](../../Swift/false.md).
 

@@ -13,7 +13,7 @@
 kINQUIRY_Byte5_3PC_Mask = (1 << kINQUIRY_Byte5_3PC_Bit)
 ```
 
-#### Discussion
+## Discussion
 
 Mask to use to test the 3PC bit.
 

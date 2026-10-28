@@ -12,11 +12,11 @@ virtual IOReturn addAudioControl(
  IOAudioControl *control);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true on successfully staring the IOAudioControl.
 
-#### Overview
+## Overview
 
 This method is responsible for starting the new IOAudioControl and adding it to the internal audioControls array.
 

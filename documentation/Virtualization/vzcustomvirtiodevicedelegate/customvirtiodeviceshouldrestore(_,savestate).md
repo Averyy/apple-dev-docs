@@ -19,7 +19,7 @@ optional func customVirtioDeviceShouldRestore(_ device: VZCustomVirtioDevice, sa
 - (BOOL) customVirtioDeviceShouldRestore:(VZCustomVirtioDevice *) device saveState:(NSData *) saveState;
 ```
 
-#### Discussion
+## Discussion
 
 This method should return `NO` if restore operation failed.
 

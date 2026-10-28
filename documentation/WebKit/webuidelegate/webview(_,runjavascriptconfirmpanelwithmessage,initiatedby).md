@@ -19,11 +19,11 @@ optional func webView(_ sender: WebView!, runJavaScriptConfirmPanelWithMessage m
 - (BOOL) webView:(WebView *) sender runJavaScriptConfirmPanelWithMessage:(NSString *) message initiatedByFrame:(WebFrame *) frame;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the user clicks OK; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method displays a confirmation panel when JavaScript code calls `confirm`. Delegates should visually indicate that this panel comes from JavaScript. The panel should contain an OK and a Cancel button. No action is taken if you do not implement this method.
 

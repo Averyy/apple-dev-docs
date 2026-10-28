@@ -19,7 +19,7 @@ var titleOfSelectedItem: String? { get }
 @property (copy, readonly, nullable) NSString * titleOfSelectedItem;
 ```
 
-#### Discussion
+## Discussion
 
 If no item is selected, the value in this property is `nil`.
 

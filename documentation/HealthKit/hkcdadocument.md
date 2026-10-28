@@ -23,7 +23,7 @@ class HKCDADocument
 @interface HKCDADocument : NSObject
 ```
 
-#### Overview
+## Overview
 
 CDA documents use XML to encode clinical documents so that they can be easily exchanged. For more information on the CDA document format, see the [Clinical Document Architecture, R2](http://www.hl7.org/implement/standards/product_brief.cfm?product_id=7) standard.
 

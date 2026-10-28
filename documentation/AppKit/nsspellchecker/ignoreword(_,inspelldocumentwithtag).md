@@ -19,7 +19,7 @@ func ignoreWord(_ wordToIgnore: String, inSpellDocumentWithTag tag: Int)
 - (void) ignoreWord:(NSString *) wordToIgnore inSpellDocumentWithTag:(NSInteger) tag;
 ```
 
-#### Discussion
+## Discussion
 
 You should invoke this method from within your implementation of the NSIgnoreMisspelledWords protocol’s [`ignoreSpelling(_:)`](../nsignoremisspelledwords/ignorespelling%28_%29.md) method.
 

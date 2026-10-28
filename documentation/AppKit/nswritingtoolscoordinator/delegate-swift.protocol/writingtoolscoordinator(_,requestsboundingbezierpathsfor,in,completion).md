@@ -24,7 +24,7 @@ func writingToolsCoordinator(_ writingToolsCoordinator: NSWritingToolsCoordinato
 - (void) writingToolsCoordinator:(NSWritingToolsCoordinator *) writingToolsCoordinator requestsBoundingBezierPathsForRange:(NSRange) range inContext:(NSWritingToolsCoordinatorContext *) context completion:(void (^)(NSArray<NSBezierPath *> *bezierPaths)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 After applying proofreading marks to your view’s text, Writing Tools lets the person accept or reject individual suggestions. To facilitate interactions, the coordinator asks your delegate to provide one or more Bezier paths that surround those proofreading suggestions. For each distinct range of text with a suggestion, it calls this method to get the Bezier paths that surround the corresponding text.
 

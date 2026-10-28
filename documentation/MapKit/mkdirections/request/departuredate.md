@@ -25,7 +25,7 @@ var departureDate: Date? { get set }
 @property (nonatomic, copy, nullable) NSDate * departureDate;
 ```
 
-#### Discussion
+## Discussion
 
 Specifying a departure date provides the server with extra information that it can use to optimize the returned routes. For example, for a trip that takes place during commute hours, the server might consider alternatives to routes that are typically congested at that time.
 

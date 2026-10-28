@@ -18,7 +18,7 @@ An error code that indicates the extension identifier is missing.
 static var extensionMissingIdentifier: OSSystemExtensionError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Make sure that the value in the `Info.plist` file of your DriverKit extension matches the identifier string you passed to the [`activationRequest(forExtensionWithIdentifier:queue:)`](../ossystemextensionrequest/activationrequest%28forextensionwithidentifier,queue%29.md) method.
 

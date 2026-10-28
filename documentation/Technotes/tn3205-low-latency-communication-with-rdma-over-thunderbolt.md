@@ -5,13 +5,13 @@
 
 Learn how to use RDMA over Thunderbolt to enable low-latency communication between clusters of Mac computers.
 
-#### Overview
+## Overview
 
 RDMA over Thunderbolt enables high performance, peer-to-peer networking between Mac computers connected with Thunderbolt. In particular, RDMA over Thunderbolt exposes an RDMA (Remote Direct Memory Access) Verbs compatible API for the Thunderbolt controller which enables carefully designed software to operate at the hardware limits of Thunderbolt.
 
 RDMA over Thunderbolt is available starting with macOS 26.2 on Macs with Apple silicon with Thunderbolt 5.
 
-#### Enabling RDMA over Thunderbolt
+## Enabling RDMA over Thunderbolt
 
 To use RDMA over Thunderbolt, first enable it in macOS Recovery:
 
@@ -60,11 +60,11 @@ hca_id:    rdma_en4
             state:            PORT_ACTIVE (4)
 ```
 
-#### RDMA over Thunderbolt and IP over Thunderbolt
+## RDMA over Thunderbolt and IP over Thunderbolt
 
 Thunderbolt already provides [IP over Thunderbolt](https://support.apple.com/guide/mac-help/ip-thunderbolt-connect-mac-computers-mchld53dd2f5/mac) to allow IP-based connectivity between devices. IP interfaces work well for tasks such as SSH, NFS or HTTPS but have higher latency and CPU overhead than equivalent RDMA interfaces. IP over Thunderbolt works in parallel to RDMA and the Thunderbolt hardware load-balances between the two protocols.
 
-##### Disabling the Thunderbolt Bridge
+### Disabling the Thunderbolt Bridge
 
 The default IP over Thunderbolt configuration bridges all Thunderbolt ports into a single network using an Ethernet bridge which looks as follows:
 
@@ -86,7 +86,7 @@ A bridge works like a physical Ethernet hub, so when an Ethernet frame arrives o
 
 > ❗ **Important**: Disable the Thunderbolt bridge when connecting Macs in loops. Open System Settings, navigate to Network, select the “Thunderbolt Bridge” and press [ Make Inactive ] to disable the bridge.
 
-##### RDMA over Thunderbolt Addressing
+### RDMA over Thunderbolt Addressing
 
 The RDMA Verbs API addresses peers using a 128-bit address, or GID, which corresponds directly with an IP address on a paired Thunderbolt IP interface. Consider the following Thunderbolt IP interface `en2` with IP addresses `169.254.205.255` and `fe80::1021:1bac:fe1:b5e3`:
 
@@ -116,7 +116,7 @@ hca_id:    rdma_en2 transport:            Thunderbolt (100) node_guid:
             GID[  2]:        fe80::1021:1bac:fe1:b5e3
 ```
 
-#### Example Topologies
+## Example Topologies
 
 All RDMA interfaces are point-to-point between Mac computers. For minimal latency, connect each Mac to every other Mac within a cluster to form a fully-connected topology. However, because RDMA over Thunderbolt creates point-to-point connections, many other topologies are possible. In particular, a ring topology can allow connecting more Mac computers than Thunderbolt ports at the cost of requiring the application to forward data.
 
@@ -219,29 +219,29 @@ RDMA over Thunderbolt can’t route data and thus the application is responsible
 
 For some workloads, such as collective communication operations, applications might allow intermediate nodes to perform portions of the computation rather than merely forwarding bytes. Consider an “All Sum” operation where each node adds its buffer to every other node’s buffer. Rather than forward all buffers to one node which performs the addition, intermediate nodes might receive from one neighbor, add their buffer to the running sum, then forward the result to the next neighbor.
 
-#### Configuring Systems for Cluster Use
+## Configuring Systems for Cluster Use
 
 Mac clusters work best with a few macOS settings tuned for cluster use.
 
-##### Disable Idle Sleep
+### Disable Idle Sleep
 
 To ensure uninterrupted network access, disable sleep by following the [ instructions to stop automatic sleeping when the display is off](https://support.apple.com/guide/mac-help/set-sleep-and-wake-settings-mchle41a6ccd/mac).
 
 Without this, you may not be able to reach connected Macs over Thunderbolt using IP or RDMA because Thunderbolt does not support Wake-on-LAN.
 
-##### Enable Automatic Login
+### Enable Automatic Login
 
 To make remote access easier, set a macOS device to automatically log in as a particular user by following the instructions under [How to log in automatically to a Mac user account](https://support.apple.com/en-us/102316).
 
-##### Start Up After Power Failure
+### Start Up After Power Failure
 
 To ensure you can remotely access your Mac cluster after a power outage, open System Settings, navigate to Energy, and toggle “Start up automatically after a power failure”.
 
-#### Usage with MLX
+## Usage with MLX
 
 RDMA over Thunderbolt was co-developed and optimized for [MLX Distributed and the jaccl distributed compute backend](https://ml-explore.github.io/mlx/build/html/usage/distributed.html#jaccl-section). For ML tasks like distributed inference, MLX should work out of the box with RDMA over Thunderbolt.
 
-#### RDMA Verbs API Usage
+## RDMA Verbs API Usage
 
 The RDMA Verbs API is available for developers to use directly and independently of MLX. To use RDMA Verbs, include `infiniband/verbs.h` and link against `librdma.tbd` in the macOS SDK.
 
@@ -254,7 +254,7 @@ RDMA over Thunderbolt supports:
 
 If you’re familiar with RDMA Verbs on other platforms, you should find yourself right at home. If you are new to this API, read the introduction below and refer to the [JACCL backend for MLX Distributed](https://github.com/ml-explore/mlx/tree/8017d438a97308f8e36f990a849c48e23cc80afc/mlx/distributed/jaccl) for example code.
 
-##### Listing devices
+### Listing devices
 
 To discover RDMA Verbs interfaces, use the `ibv_get_device_list` function and the `ibv_get_device_name` function to fetch the interface name:
 
@@ -274,7 +274,7 @@ printf("Found %d RDMA Verbs devices\n", devices_found);
 
 The device name might be `rdma_en2` for the RDMA over Thunderbolt interface paired with the Thunderbolt IP interface `en2`. Be sure to free the dynamically-allocated device list with `ibv_free_device_list` when the program is done interacting with RDMA Verbs devices.
 
-##### Opening a device and mapping memory
+### Opening a device and mapping memory
 
 Once an application has identified the RDMA Verbs network interface, it should open the device using `ibv_open_device` to get a context that can be used to allocate RDMA Verbs resources:
 
@@ -326,7 +326,7 @@ if (memory_region == NULL) {
 
 > **Note**: RDMA over Thunderbolt only supports 2-sided operations and not hardware-initiated remote writes, thus applications should only register memory as `IBV_ACCESS_LOCAL_WRITE`.
 
-##### Setting up queue pair connections
+### Setting up queue pair connections
 
 A queue pair holds RDMA Verbs connection state from a host to a particular peer, just as a socket holds connection state for a TCP connection.
 
@@ -459,7 +459,7 @@ if (ibv_modify_qp(queue_pair, &queue_pair_rts_attr,
 
 After a successful transition to “Ready to Send”, the application can freely send and receive data from its peer using the new queue pair.
 
-##### Preparing to receive
+### Preparing to receive
 
 Once an application has connected a queue pair to its peer as described above, it can post a receive work request (WR) to indicate to the Thunderbolt hardware where incoming data should be written. When a sender sends a matching frame, the Thunderbolt controller directly copies the data into the address specified in the receive work request.
 
@@ -491,7 +491,7 @@ ibv_post_recv(queue_pair, &receive_work_request,
 
 > **Note**: Thunderbolt devices require a receiver and sender to post messages which are the same number of frames long. For example, if the sender sends a 16K message and the receiver posts a 4K or 32K receive buffer the receive operation will fail.
 
-##### Preparing to send
+### Preparing to send
 
 To send data to a peer, applications should call `ibv_post_send` to send data from a pre-registered buffer. The Thunderbolt controller hardware ensures this send work request isn’t processed until the receiving Mac has posted a matching receive work request using a credit-based flow control system.
 
@@ -527,7 +527,7 @@ ibv_post_send(queue_pair, &send_work_request,
 
 > **Note**: Completion of a send operation indicates that the peer has posted sufficient receive requests to receive all sent frames and that the Thunderbolt hardware has sent the buffers to the peer. Completion does not indicate the receiver has successfully received the sent data or that data was not corrupted in flight because Thunderbolt does not perform Acks in hardware.
 
-##### Polling for completion
+### Polling for completion
 
 To check work requests for completion, poll for completion using `ibv_poll_cq`. The Thunderbolt controller reports failures to send or receive in the work completion (WC) status field.
 
@@ -554,7 +554,7 @@ for (int i = 0; i < completions_polled; ++i) {
 }
 ```
 
-#### Revision History
+## Revision History
 
 - **2026-04-13** Added a section about configuring Macs for cluster use.
 - **2026-03-19** First published.

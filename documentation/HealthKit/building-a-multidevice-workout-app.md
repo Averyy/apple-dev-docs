@@ -13,11 +13,11 @@ Mirror a workout from a watchOS app to its companion iOS app, and perform bidire
 - watchOS 10.0+
 - Xcode 15.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC23 session 10023: [Build a multidevice workout app](https://developer.apple.com/wwdc23/10023/).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 This sample code project needs to run on physical devices. Before you run it with Xcode:
 

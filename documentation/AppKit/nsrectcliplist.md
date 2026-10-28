@@ -15,7 +15,7 @@ Modifies the current clipping path by intersecting it with the passed rect.
 extern void NSRectClipList(const NSRect *rects, NSInteger count);
 ```
 
-#### Discussion
+## Discussion
 
 This function modifies the clipping path permanently by generating a graphical union of the specified rectangles and then intersecting that union with the current clipping path. If you need to undo this modification later, you should save the current graphics state before calling this function and restore it once you are done.
 

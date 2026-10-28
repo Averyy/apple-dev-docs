@@ -23,7 +23,7 @@ optional func location(_ location: any NSTextLocation, offsetBy offset: Int) -> 
 - (id<NSTextLocation>) locationFromLocation:(id<NSTextLocation>) location withOffset:(NSInteger) offset;
 ```
 
-#### Return Value
+## Return Value
 
 An new `NSTextLocation`, or `nil` of the offset exceeds the bounds of the text.
 

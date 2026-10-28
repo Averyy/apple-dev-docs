@@ -12,11 +12,11 @@ Establish a connection with a nearby accessory to receive periodic measurements 
 - Mac Catalyst 17.0+
 - Xcode 17.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC21 session [10165: Explore Nearby Interaction with Third-Party Accessories](https://developer.apple.com/wwdc21/10165).
 
-##### Configure the Sample Code Project
+### Configure the Sample Code Project
 
 Set the run destination to an iPhone that contains an Ultra Wideband chip. The sample app interacts with an accessory you partner with or develop using the [Nearby Interaction Accessory Protocol Specification](https://developer.apple.com/nearby-interaction).
 

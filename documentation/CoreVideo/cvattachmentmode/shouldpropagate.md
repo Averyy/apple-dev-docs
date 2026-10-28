@@ -25,7 +25,7 @@ case shouldPropagate
 kCVAttachmentMode_ShouldPropagate
 ```
 
-#### Discussion
+## Discussion
 
 The [`CVBufferPropagateAttachments(_:_:)`](../cvbufferpropagateattachments%28_,_%29.md) function propagates all attachments that have this attachment mode. For example, in most cases, you’ll want to propagate an attachment bearing a timestamp to each successive buffer.
 

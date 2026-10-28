@@ -22,7 +22,7 @@ var text: String { get }
 @property (nonatomic, readonly) NSString * text;
 ```
 
-#### Discussion
+## Discussion
 
 Apple iTT format text supports the same Unicode code points that an XML document supports. The system converts XML special characters like ‘&’ to corresponding character-reference syntax when it writes the caption to a file. The text may contain the line-breaking character sequences LF, CR, or CF+LF.
 

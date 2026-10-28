@@ -16,7 +16,7 @@ Clears element transaction values.
 void IOHIDTransactionClear(IOHIDTransactionRef transaction);
 ```
 
-#### Discussion
+## Discussion
 
 In regards to kIOHIDTransactionDirectionTypeOutput direction, default element values will be preserved.
 

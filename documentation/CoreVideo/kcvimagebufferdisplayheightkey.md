@@ -25,7 +25,7 @@ let kCVImageBufferDisplayHeightKey: CFString
 extern CFStringRef const kCVImageBufferDisplayHeightKey;
 ```
 
-#### Discussion
+## Discussion
 
 The display height value is of type [`CFNumber`](../CoreFoundation/cfnumber.md).
 

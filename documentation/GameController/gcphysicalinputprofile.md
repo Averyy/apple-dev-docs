@@ -24,7 +24,7 @@ class GCPhysicalInputProfile
 @interface GCPhysicalInputProfile : NSObject
 ```
 
-#### Overview
+## Overview
 
 This class provides properties and methods for accessing common elements of controllers, and for creating snapshots of profiles.
 

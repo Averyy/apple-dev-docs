@@ -25,7 +25,7 @@ var transportType: MKDirectionsTransportType { get }
 @property (nonatomic, readonly) MKDirectionsTransportType transportType;
 ```
 
-#### Discussion
+## Discussion
 
 You specify the desired transportation type in your [`MKDirections.Request`](../request.md) object. If you specified [`any`](../../mkdirectionstransporttype/any.md), this property contains the transportation type used to generate the estimated information.
 

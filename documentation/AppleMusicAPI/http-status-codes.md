@@ -5,7 +5,7 @@
 
 Reference error codes returned by the Apple Music API.
 
-#### Overview
+## Overview
 
 An error code indicates the type of error that occurred while executing a request. These are the possible values for the `status` member in an [`Error`](./error.md) object:
 

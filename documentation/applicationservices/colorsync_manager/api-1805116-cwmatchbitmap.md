@@ -17,11 +17,11 @@ CMError CWMatchBitmap (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 The `CWMatchBitmap` function matches a bitmap using the profiles specified by the given color world.
 
@@ -36,7 +36,7 @@ For this function to execute successfully, the source profile’s `dataColorSpac
 
 If you set `matchedBitMap` to `NULL` to specify in-place matching, you must be sure the space required by the destination bitmap is less than or equal to the size of the source bitmap. 
 
-##### Version-Notes
+### Version-Notes
 
 The color spaces currently supported for the CWMatchBitmap function are defined in [`CMBitmapColorSpace`](../cmbitmapcolorspace.md). Support for the following color space constants, was added with ColorSync version 2.5:
 

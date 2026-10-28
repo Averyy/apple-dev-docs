@@ -5,7 +5,7 @@
 
 Make your app’s core types and data concepts available to the system using app entity types.
 
-#### Overview
+## Overview
 
 App entities provide the system with information about your app’s data, or about concepts related to your app’s data. App entities help the system resolve parameters for app intents by letting it introspect relevant types. For example, a photo app that provides app entities for its photos and albums might also provide app entities to represent “the current photo” or “this album.” These specific app entities help resolve intents more quickly and with fewer verbal interactions.
 

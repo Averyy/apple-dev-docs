@@ -22,7 +22,7 @@ func load(fromContents contents: Any, ofType typeName: String?) throws
 - (BOOL) loadFromContents:(id) contents ofType:(NSString *) typeName error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 Override this method to accept and load the data for a document. After `UIDocument` reads the document data from the file located at [`fileURL`](./fileurl.md) it calls your subclass, passing the data to the subclass in this method. This method is called on the queue that the [`open(completionHandler:)`](./open%28completionhandler%29.md) method was called on (typically, the main queue).
 

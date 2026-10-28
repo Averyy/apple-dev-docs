@@ -26,11 +26,11 @@ class func predicateForWorkouts(with operatorType: NSComparisonPredicate.Operato
 + (NSPredicate *) predicateForWorkoutsWithOperatorType:(NSPredicateOperatorType) operatorType totalEnergyBurned:(HKQuantity *) totalEnergyBurned;
 ```
 
-#### Return Value
+## Return Value
 
 A predicate for matching workouts based on the total energy burned. This predicate works only on workouts.
 
-#### Discussion
+## Discussion
 
 Use this convenience method to create a predicate that matches against a workout’s total energy burned. The following sample uses both the convenience method and a predicate format string to create equivalent predicates.
 

@@ -21,7 +21,7 @@ The system definition of the QUIC protocol.
 struct QUIC
 ```
 
-#### Overview
+## Overview
 
 Conforms to MultiplexProtocol, exposing configuration for a multiplexing instance of QUIC, which in turn exposes the ability to handle multiple streams of data over QUIC.
 

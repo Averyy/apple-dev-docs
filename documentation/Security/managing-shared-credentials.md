@@ -5,7 +5,7 @@
 
 Use shared web credentials to create a seamless experience for the user.
 
-#### Overview
+## Overview
 
 There are a wide range of common situations where you may want to use shared web credentials. This article covers four:
 
@@ -14,13 +14,13 @@ There are a wide range of common situations where you may want to use shared web
 3. Changing a user’s password
 4. Deleting a user’s account
 
-##### Logging In to a Remote Server
+### Logging In to a Remote Server
 
-Typically, when an app needs to log in to a remote service, you start by checking for the user’s credentials in the iOS keychain. If you have current credentials for the user, you can log them in directly. If not, prompt the users for their user name and password, and then try to log them in. You will also want to save their credentials after the login is successful. This workflow is shown in [Figure 1](./shared_web_credentials/managing_shared_credentials.md#1965823).
+Typically, when an app needs to log in to a remote service, you start by checking for the user’s credentials in the iOS keychain. If you have current credentials for the user, you can log them in directly. If not, prompt the users for their user name and password, and then try to log them in. You will also want to save their credentials after the login is successful. This workflow is shown in [Figure 1](./managing-shared-credentials.md#1965823).
 
 ![](https://developer.apple.com/tutorials/images/com.apple.security/media-1965823@2x.png)
 
-When using shared web credentials, you add two steps to this procedure. As before, you start by checking if the user’s credentials are stored in the keychain. If you cannot find the user’s credentials, you check for shared web credentials. If you still cannot find any credentials, or if the user declines to use the shared credentials, you must prompt the user for her name and password. Try to log the user in, and if the login is successful, save the credentials to both the keychain and the shared web credentials. This ensures that the user has access to the credentials in Safari as well as within your app. This workflow is shown in [Figure 2](./shared_web_credentials/managing_shared_credentials.md#1965824).
+When using shared web credentials, you add two steps to this procedure. As before, you start by checking if the user’s credentials are stored in the keychain. If you cannot find the user’s credentials, you check for shared web credentials. If you still cannot find any credentials, or if the user declines to use the shared credentials, you must prompt the user for her name and password. Try to log the user in, and if the login is successful, save the credentials to both the keychain and the shared web credentials. This ensures that the user has access to the credentials in Safari as well as within your app. This workflow is shown in [Figure 2](./managing-shared-credentials.md#1965824).
 
 ![](https://developer.apple.com/tutorials/images/com.apple.security/media-1965824@2x.png)
 
@@ -71,7 +71,7 @@ SecRequestSharedWebCredential(NULL, NULL, ^(CFArrayRef credentials, CFErrorRef e
 
 > **Note**:  The keychain supports saving and loading a wide range of possible credential types. These types can be user name and password pairs, authentication tokens or cookies. Shared web credentials, however, are much more restrictive. You can save only user name and password pairs to the shared web credentials.
 
-##### Creating a User Account in the App
+### Creating a User Account in the App
 
 If the user can create new accounts in your app, you should save the user name and password to the shared web credentials. In this way, the user can easily access the account from Safari, as well as from within your app. You can save the user’s name and password to the shared web credentials using the [`SecAddSharedWebCredential(_:_:_:_:)`](./secaddsharedwebcredential%28_,_,_,_%29.md) function as shown.
 
@@ -92,11 +92,11 @@ SecAddSharedWebCredential(domain, name, password, ^(CFErrorRef error) {
 
 If there are no existing credentials for this user name and domain, this method completes without prompting the user for permission.
 
-##### Changing a User’s Password
+### Changing a User’s Password
 
 If the user changes her password in the app, you must update both the credentials stored in the keychain and in the shared web credentials. You can change a password using the [`SecAddSharedWebCredential(_:_:_:_:)`](./secaddsharedwebcredential%28_,_,_,_%29.md) function. This is exactly the same procedure used when creating a new user account (see Creating a User Account in the App, above). However, if credentials already exist for the given user name and domain, this method prompts the user for permission before making the change. The user can cancel this change.
 
-##### Deleting a User’s Account
+### Deleting a User’s Account
 
 If the user deletes her account, you should remove the credentials from both the keychain and the shared web credentials. You can remove the credentials for a given domain and user name by calling the [`SecAddSharedWebCredential(_:_:_:_:)`](./secaddsharedwebcredential%28_,_,_,_%29.md) function and passing `NULL` for the password.
 

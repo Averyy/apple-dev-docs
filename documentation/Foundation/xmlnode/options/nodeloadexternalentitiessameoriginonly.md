@@ -20,7 +20,7 @@ static var nodeLoadExternalEntitiesSameOriginOnly: XMLNode.Options { get }
 NSXMLNodeLoadExternalEntitiesSameOriginOnly
 ```
 
-#### Discussion
+## Discussion
 
 It loads entities with target URLs that match the host, scheme, and port of the document URL.You may choose  only one of [`nodeLoadExternalEntitiesAlways`](./nodeloadexternalentitiesalways.md), [`nodeLoadExternalEntitiesSameOriginOnly`](./nodeloadexternalentitiessameoriginonly.md), or [`nodeLoadExternalEntitiesNever`](./nodeloadexternalentitiesnever.md) or none.
 

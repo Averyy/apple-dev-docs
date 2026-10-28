@@ -21,15 +21,15 @@ func LSGetApplicationForURL(_ inURL: CFURL!, _ inRoleMask: LSRolesMask, _ outApp
 OSStatus LSGetApplicationForURL(CFURLRef inURL, LSRolesMask inRoleMask, FSRef *outAppRef, CFURLRef *outAppURL);
 ```
 
-#### Return Value
+## Return Value
 
 A result code; see [Result Codes](./launch_services.md#1661359). If no application suitable for opening the item is found in the Launch Services database, the function will return the result code `kLSApplicationNotFoundErr`.
 
-#### Discussion
+## Discussion
 
 If the item URL’s scheme is `file` (designating either a file or a directory), the selection of the preferred application is based on the designated item’s filename extension, file type, and creator signature, along with the role specified by the `inRolesMask` parameter; otherwise, it is based on the URL scheme (such as `http`, `ftp`, or `mailto`).
 
-##### Version-Notes
+### Version-Notes
 
 Thread-safe since Mac OS version 10.2.
 

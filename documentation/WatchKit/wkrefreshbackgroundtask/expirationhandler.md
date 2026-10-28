@@ -23,7 +23,7 @@ var expirationHandler: (() -> Void)? { get set }
 
 - [Using background tasks](../using-background-tasks.md)
 
-#### Discussion
+## Discussion
 
 To respond when your background task is about to expire, assign a block to this property. In this block, clean up any running background tasks, and prepare for the system to suspend your app.
 

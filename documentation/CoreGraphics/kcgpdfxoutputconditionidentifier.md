@@ -23,7 +23,7 @@ let kCGPDFXOutputConditionIdentifier: CFString
 extern CFStringRef const kCGPDFXOutputConditionIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 A string identifying the intended output device or production condition in a human- or machine-readable form. This key is required. The value of this key must be a [`CFString`](../CoreFoundation/cfstring.md) object. For best results, the string should be restricted to characters in the ASCII character set.
 

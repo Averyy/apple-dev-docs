@@ -21,7 +21,7 @@ Match at the character level.
 static var graphemeCluster: RegexSemanticLevel { get }
 ```
 
-#### Discussion
+## Discussion
 
 At this semantic level, each matched element is a `Character` value. This is the default semantic level.
 

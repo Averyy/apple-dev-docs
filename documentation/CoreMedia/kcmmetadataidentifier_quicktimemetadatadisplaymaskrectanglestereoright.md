@@ -23,7 +23,7 @@ let kCMMetadataIdentifier_QuickTimeMetadataDisplayMaskRectangleStereoRight: CFSt
 extern CFStringRef const kCMMetadataIdentifier_QuickTimeMetadataDisplayMaskRectangleStereoRight;
 ```
 
-#### Discussion
+## Discussion
 
 ```
     Display mask rectangle for stereoscopic video's right eye view

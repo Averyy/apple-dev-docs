@@ -15,11 +15,11 @@ Set logical block number associated with a buffer.
 void buf_setlblkno(buf_t bp, daddr64_t lblkno);
 ```
 
-#### Return Value
+## Return Value
 
 void.
 
-#### Discussion
+## Discussion
 
 Logical block number is set on traditionally-used buffers by an argument passed to buf_getblk(), for example by buf_bread().
 

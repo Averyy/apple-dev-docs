@@ -15,7 +15,7 @@ The source app’s bundle identifier.
 let sourceIdentifier: String
 ```
 
-#### Discussion
+## Discussion
 
 If Messages is the app that sends the notification, the value of this property is `com.apple.MobileSMS`.
 

@@ -29,7 +29,7 @@ optional func resolveTemporalEventTrigger(for intent: INAddTasksIntent) async ->
 - (void) resolveTemporalEventTriggerForAddTasks:(INAddTasksIntent *) intent withCompletion:(void (^)(INTemporalEventTriggerResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve any time-based triggers associated with the new tasks. Use the intent object to obtain the trigger information, if any, suggested by the user. If the intent doesn’t contain any trigger information, and you don’t require any, return a [`notRequired()`](../inintentresolutionresult/notrequired%28%29.md) resolution.
 

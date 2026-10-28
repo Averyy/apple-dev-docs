@@ -20,11 +20,11 @@ Returns a Core Graphics point structure corresponding to the data in a given str
 extern CGPoint CGPointFromString(NSString *string);
 ```
 
-#### Return Value
+## Return Value
 
 A Core Graphics structure that represents a point. If the string is not well-formed, the function returns [`CGPointZero`](../CoreGraphics/cgpointzero.md).
 
-#### Discussion
+## Discussion
 
 In general, you should use this function only to convert strings that were previously created using the [`NSStringFromCGPoint`](./nsstringfromcgpoint.md) function.
 

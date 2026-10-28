@@ -24,7 +24,7 @@ func changeDetails(for objectType: PHObjectType) throws -> PHPersistentObjectCha
 - (PHPersistentObjectChangeDetails *) changeDetailsForObjectType:(PHObjectType) objectType error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An object that represents the change details.
 

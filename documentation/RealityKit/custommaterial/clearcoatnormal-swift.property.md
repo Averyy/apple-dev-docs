@@ -19,7 +19,7 @@ Waviness and imperfections for the top clearcoat.
 var clearcoatNormal: CustomMaterial.ClearcoatNormal { get set }
 ```
 
-#### Discussion
+## Discussion
 
 An entity in RealityKit can display a clearcoat, which is a separate layer of transparent specular highlights used to simulate a clear coating, like on a car or the surface of lacquered objects. This property allows you to specify a clearcoat normal and add waviness and imperfections to the top clearcoat.
 

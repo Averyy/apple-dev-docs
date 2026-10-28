@@ -15,7 +15,7 @@ Used to identify the type of memory requested by a client process to be mapped i
 typedef enum _IOAudioEngineMemory IOAudioEngineMemory;
 ```
 
-#### Discussion
+## Discussion
 
 This is the parameter to the type field of IOMapMemory when called on an IOAudioEngine. This is only intended for use by the Audio Device API library.
 

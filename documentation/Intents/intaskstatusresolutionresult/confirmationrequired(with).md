@@ -25,11 +25,11 @@ class func confirmationRequired(with taskStatusToConfirm: INTaskStatus) -> Self
 + (instancetype) confirmationRequiredWithTaskStatusToConfirm:(INTaskStatus) taskStatusToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INTaskStatusResolutionResult`](../intaskstatusresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you cannot handle the intent using the specified task status but can handle it using a different status and want to confirm with the user before proceeding.
 

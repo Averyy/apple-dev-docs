@@ -25,7 +25,7 @@ func CGImageSourceCreateWithData(_ data: CFData, _ options: CFDictionary?) -> CG
 extern CGImageSourceRefCGImageSourceCreateWithData(CFDataRef data, CFDictionaryRef options);
 ```
 
-#### Return Value
+## Return Value
 
 An image source. You’re responsible for releasing this type using [`CFRelease`](../CoreFoundation/cfrelease.md).
 

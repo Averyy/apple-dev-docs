@@ -23,7 +23,7 @@ class VZMacAuxiliaryStorage
 
 - [Installing macOS on a Virtual Machine](./installing-macos-on-a-virtual-machine.md)
 
-#### Overview
+## Overview
 
 The Mac auxiliary storage contains data used by the boot loader and the guest operating system. It’s necessary to boot a macOS guest OS.
 

@@ -22,7 +22,7 @@ In-place mutating variant of `removingLastComponent`.
 mutating func removeLastComponent() -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 If `self` only contains a root, does nothing and returns `false`. Otherwise removes `lastComponent` and returns `true`.
 

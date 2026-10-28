@@ -24,7 +24,7 @@ func addOverlay(_ overlay: any MKOverlay, level: MKOverlayLevel)
 - (void) addOverlay:(id<MKOverlay>) overlay level:(MKOverlayLevel) level;
 ```
 
-#### Discussion
+## Discussion
 
 Positioning an overlay at a specific level places that overlay’s visual representation in front of or behind other map content such as map labels and point-of-interest icons.
 

@@ -25,7 +25,7 @@ func replaceObjects(at indexes: IndexSet, with objects: [Any])
 - (void) replaceObjectsAtIndexes:(NSIndexSet *) indexes withObjects:(NSArray<id> *) objects;
 ```
 
-#### Discussion
+## Discussion
 
 The indexes in `indexes` are used in the same order as the objects in `objects`.
 

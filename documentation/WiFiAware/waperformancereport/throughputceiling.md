@@ -17,7 +17,7 @@ The highest throughput the connection is capable of under ideal conditions, give
 let throughputCeiling: Double?
 ```
 
-#### Discussion
+## Discussion
 
 The result is in `Mbps` and can be `nil` if the system can’t calculate it.
 

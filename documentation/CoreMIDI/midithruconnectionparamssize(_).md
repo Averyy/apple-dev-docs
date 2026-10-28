@@ -25,11 +25,11 @@ func MIDIThruConnectionParamsSize(_ ptr: UnsafePointer<MIDIThruConnectionParams>
 static size_t MIDIThruConnectionParamsSize(const MIDIThruConnectionParams *ptr);
 ```
 
-#### Return Value
+## Return Value
 
 The connection’s parameter’s size.
 
-#### Discussion
+## Discussion
 
 This function accounts for variable-length elements in the structure and returns its true size in bytes.
 

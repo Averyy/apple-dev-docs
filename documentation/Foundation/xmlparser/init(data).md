@@ -25,11 +25,11 @@ init(data: Data)
 - (instancetype) initWithData:(NSData *) data;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSXMLParser` object or `nil` if an error occurs.
 
-#### Discussion
+## Discussion
 
 This method is the designated initializer.
 

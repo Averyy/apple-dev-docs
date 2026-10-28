@@ -22,7 +22,7 @@ func itemChanged(at url: URL)
 - (void) itemChangedAtURL:(NSURL *) url;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method when a shared file’s content changes, typically in response to coordinated writes from the host app.
 

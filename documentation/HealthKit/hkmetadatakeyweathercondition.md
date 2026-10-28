@@ -24,7 +24,7 @@ let HKMetadataKeyWeatherCondition: String
 extern NSString * const HKMetadataKeyWeatherCondition;
 ```
 
-#### Discussion
+## Discussion
 
 This key takes an an [`NSNumber`](../Foundation/nsnumber.md) value that contains an [`HKWeatherCondition`](./hkweathercondition.md) value. Set this key on an [`HKWorkout`](./hkworkout.md) object to represent the overall weather condition during the workout.
 

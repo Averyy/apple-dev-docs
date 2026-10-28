@@ -5,7 +5,7 @@
 
 Request and analyze risk data using server-to-server calls.
 
-#### Overview
+## Overview
 
 Your app uses the App Attest service to assert its authenticity. A compromised version of your app running on a genuine, unmodified Apple device can’t create valid assertions. However, an attacker that modifies the device’s operating system might bypass restrictions. Although modifying the operating system is difficult and an unlikely source of widespread fraud, you might need to guard against an attack that uses a single compromised device to serve assertions to many subscribers.
 
@@ -15,7 +15,7 @@ While it isn’t possible to detect fraudulent activity with absolute certainty,
 
 To get the metric, use the receipt that your server extracts from the attestation object, as described in [Validating apps that connect to your server](./validating-apps-that-connect-to-your-server.md). Send the receipt from your server to an Apple server using an HTTP POST request. The Apple server returns a new receipt that includes the metric. You can also use the new receipt to refresh the metric later, but be sure to do that before the receipt expires.
 
-##### Create a request
+### Create a request
 
 You request a new receipt by sending an HTTP POST to an Apple server with a body composed entirely of the Base64-encoded receipt you extracted from an attestation object. Add a header that includes an authentication key in the form of a generated JSON Web Token (JWT):
 
@@ -35,7 +35,7 @@ Send the request to the `attestationData` endpoint. For example, a `curl` comman
 
 Use the base URL of `https://data-development.appattest.apple.com` shown in the example above for testing. This URL accesses the sandbox environment that your app uses during development. To work with apps that you’ve distributed through the App Store, TestFlight, or with an Enterprise Developer certificate, use a base URL of `https://data.appattest.apple.com` instead. You can’t use a receipt generated in one environment to request a new receipt in the other.
 
-##### Parse the response
+### Parse the response
 
 If your request succeeds, the Apple server sends back a response with code `200` and a body that consist of a new, Base64-encoded receipt. Store this receipt in place of the one used to generate the request, because you’ll use it the next time you make a request to refresh the metric. For a list of other response codes you might receive instead, like `401` for a missing or malformed token, see Understand HTTP response codes.
 
@@ -55,7 +55,7 @@ App Attest receipts use the following fields:
 | 19 | Not Before | `2020-07-22T14:40:38.819Z` |
 | 21 | Expiration Time | `2020-08-22T14:40:38.819Z` |
 
-##### Verify the receipt
+### Verify the receipt
 
 When you receive a receipt (including the one that accompanies an attestation object) — but before trusting it — check its validity:
 
@@ -66,19 +66,19 @@ When you receive a receipt (including the one that accompanies an attestation ob
 5. Verify that the receipt’s creation time, given in field 12, is no more than five minutes old. This helps to thwart replay attacks.
 6. Verify that the attested public key in field 3, encoded as a DER ASN.1 object, matches the one you stored after initial attestation.
 
-##### Interpret the metric
+### Interpret the metric
 
 Field 6 of the receipt contains either the string `ATTEST` for the receipt that comes with an attestation object, or the string `RECEIPT` for receipts that you request using your server. Only the latter provide the risk metric in field 17. The receipt represents the metric as a string that indicates the number of attested keys associated with a given device over the past 30 days. Look for this value to be a low number.
 
 Note that the metric can grow if a user reinstalls your app, restores from a backup, or transfers a device to another user. For privacy reasons, App Attest keys stored on device don’t survive these events, forcing your app to generate a new key on the same device. This growth should be modest, but you’ll have to tune your risk assessment logic based on the typical numbers that you see over time. You can help to keep the number small by only generating new keys when absolutely necessary.
 
-##### Refresh the metric
+### Refresh the metric
 
 When you want to read the latest value for the metric, create a new request using the most recently received receipt as the HTTP POST body, just like you did with the attestation receipt. Be sure to wait until after the date found in field 19. If you try to refresh too soon, the Apple server sends an error response with code `304`.
 
 On the other hand, do use the receipt before the receipt’s expiration date, found in field 21. After that date, the Apple server might not honor the request. Therefore, if you want to receive metrics at all, you need to do so periodically.
 
-##### Understand HTTP response codes
+### Understand HTTP response codes
 
 When you communicate with the server, you may receive one of the following response codes:
 

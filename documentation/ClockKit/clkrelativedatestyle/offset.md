@@ -21,7 +21,7 @@ case offset
 CLKRelativeDateStyleOffset
 ```
 
-#### Discussion
+## Discussion
 
 The resulting value gives the time offset using a single key unit. For example, values might be “10 hours”, or “9 minutes” depending on the total amount of time between the current date and the date you specified.
 

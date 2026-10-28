@@ -23,7 +23,7 @@ optional func livePhotoView(_ livePhotoView: PHLivePhotoView, extraMinimumTouchD
 - (NSTimeInterval) livePhotoView:(PHLivePhotoView *) livePhotoView extraMinimumTouchDurationForTouch:(UITouch *) touch withStyle:(PHLivePhotoViewPlaybackStyle) playbackStyle;
 ```
 
-#### Return Value
+## Return Value
 
 The time interval offset.
 

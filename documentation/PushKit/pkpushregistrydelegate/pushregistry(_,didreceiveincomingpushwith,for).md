@@ -24,7 +24,7 @@ optional func pushRegistry(_ registry: PKPushRegistry, didReceiveIncomingPushWit
 - (void) pushRegistry:(PKPushRegistry *) registry didReceiveIncomingPushWithPayload:(PKPushPayload *) payload forType:(PKPushType) type;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked when a push notification has been received for the specified push type.
 

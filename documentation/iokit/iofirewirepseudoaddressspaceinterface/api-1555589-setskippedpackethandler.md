@@ -16,7 +16,7 @@ Set the callback that should be called when incoming packets are dropped by the 
 const IOFireWirePseudoAddressSpaceSkippedPacketHandler (*SetSkippedPacketHandler)(IOFireWireLibPseudoAddressSpaceRef self, IOFireWirePseudoAddressSpaceSkippedPacketHandler inHandler);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the callback that was previously set or nil for none.
 

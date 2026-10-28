@@ -24,7 +24,7 @@ static let LANG3: GCKeyCode
 extern const GCKeyCode GCKeyCodeLANG3;
 ```
 
-#### Discussion
+## Discussion
 
 For Japanese USB word-processing keyboards, this is the code for the Katakana key.
 

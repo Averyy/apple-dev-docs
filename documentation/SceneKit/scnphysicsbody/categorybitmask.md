@@ -25,7 +25,7 @@ var categoryBitMask: Int { get set }
 @property (nonatomic) NSUInteger categoryBitMask;
 ```
 
-#### Discussion
+## Discussion
 
 Every physics body in a scene can be assigned to one or more categories, each corresponding to a bit in the bit mask. You define the mask values used in your game. Use this property together with the [`physicsShape`](./physicsshape.md) and [`contactTestBitMask`](./contacttestbitmask.md) properties to define which physics bodies interact with each other and when your game is notified of interactions.
 

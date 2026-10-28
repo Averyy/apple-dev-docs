@@ -19,7 +19,7 @@ class FSClient
 @interface FSClient : NSObject
 ```
 
-#### Overview
+## Overview
 
 FSClient is the primary management interface for FSKit. Use this class to discover FSKit extensions installed on the system, including your own.
 

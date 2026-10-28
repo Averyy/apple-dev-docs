@@ -27,7 +27,7 @@ func CMTimebaseCreateWithMasterClock(allocator: CFAllocator?, masterClock: CMClo
 static OSStatus CMTimebaseCreateWithMasterClock(CFAllocatorRef allocator, CMClockRef masterClock, CMTimebaseRef*timebaseOut);
 ```
 
-#### Discussion
+## Discussion
 
 The timebase will initially have rate zero and time zero. Pass [`CMClockGetHostTimeClock()`](./cmclockgethosttimeclock%28%29.md)() for masterClock to have the host time clock drive this timebase.
 

@@ -30,7 +30,7 @@ func setConnectionState(_ state: GKConnectionState) async throws
 - (void) setConnectionState:(GKConnectionState) state completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method will fail when the game session’s player limit has already been reached or there are network problems. The game session’s `lastModifiedDate` and `lastModifiedPlayer` properties are updated on completion.
 

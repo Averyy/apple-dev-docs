@@ -22,7 +22,7 @@ nonisolated
 struct LabeledToolbarItemGroupContent<Content, Label> where Content : View, Label : View
 ```
 
-#### Overview
+## Overview
 
 You don’t create this type directly. SwiftUI creates it when you build a [`ToolbarItemGroup`](./toolbaritemgroup.md).
 

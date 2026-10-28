@@ -21,7 +21,7 @@ All buffer types that can be carried by sample buffer are marked by this protoco
 protocol Content : Sendable
 ```
 
-#### Overview
+## Overview
 
 Note: This protocol is a marker protocol sealed to CoreMedia framework. Any types outside of the CoreMedia framework that implement this protocol will cause precondition failures when passed to sample buffer methods.
 

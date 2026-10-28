@@ -24,7 +24,7 @@ func string(from postalAddress: CNPostalAddress) -> String
 - (NSString *) stringFromPostalAddress:(CNPostalAddress *) postalAddress;
 ```
 
-#### Return Value
+## Return Value
 
 The formatted postal address.
 

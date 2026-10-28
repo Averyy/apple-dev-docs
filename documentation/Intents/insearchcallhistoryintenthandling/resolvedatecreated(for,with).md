@@ -29,7 +29,7 @@ optional func resolveDateCreated(for intent: INSearchCallHistoryIntent) async ->
 - (void) resolveDateCreatedForSearchCallHistory:(INSearchCallHistoryIntent *) intent withCompletion:(void (^)(INDateComponentsRangeResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 When resolving the set of dates, always strive toward a successful resolution, but feel free to return a different result where appropriate. For example, if you don’t support searching for records that are more than one year old, you could return an unsupported resolution if the user specifies a date that’s more than one year in the past.
 

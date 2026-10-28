@@ -19,7 +19,7 @@ func copy(_ sender: Any?)
 - (void) copy:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 A plain text object uses `NSStringPboardType` for plain text, and a rich text object also uses `NSRTFPboardType`.
 

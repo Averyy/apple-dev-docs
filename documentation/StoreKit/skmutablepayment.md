@@ -31,7 +31,7 @@ class SKMutablePayment
 
 - [Implementing promotional offers in your app](./implementing-promotional-offers-in-your-app.md)
 
-#### Overview
+## Overview
 
 A mutable payment object identifies a product and the quantity of that item the user would like to purchase.
 

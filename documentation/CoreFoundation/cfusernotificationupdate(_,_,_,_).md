@@ -19,7 +19,7 @@ func CFUserNotificationUpdate(_ userNotification: CFUserNotification!, _ timeout
 extern SInt32 CFUserNotificationUpdate(CFUserNotificationRef userNotification, CFTimeInterval timeout, CFOptionFlags flags, CFDictionaryRef dictionary);
 ```
 
-#### Return Value
+## Return Value
 
 `0` if the cancel was successful; a non-`0` value otherwise.
 

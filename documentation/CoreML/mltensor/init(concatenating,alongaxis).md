@@ -21,7 +21,7 @@ Concatenates `tensors` along the `axis` dimension.
 init(concatenating tensors: some Collection<MLTensor>, alongAxis axis: Int = 0)
 ```
 
-#### Discussion
+## Discussion
 
 For example:
 

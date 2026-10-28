@@ -21,7 +21,7 @@ Converts double-precision power values to decibel values.
 static func convert<U, V>(power: U, toDecibels decibels: inout V, zeroReference: Double) where U : AccelerateBuffer, V : AccelerateMutableBuffer, U.Element == Double, V.Element == Double
 ```
 
-#### Discussion
+## Discussion
 
 The function uses the following calculation to perform the conversion:
 

@@ -22,7 +22,7 @@ A property wrapper type that reads and writes to persisted, per-scene storage.
 @propertyWrapper struct SceneStorage<Value>
 ```
 
-#### Overview
+## Overview
 
 You use `SceneStorage` when you need automatic state restoration of the value.  `SceneStorage` works very similar to `State`, except its initial value is restored by the system if it was previously saved, and the value is shared with other `SceneStorage` variables in the same scene.
 

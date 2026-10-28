@@ -23,7 +23,7 @@ let kCTFontManagerRegisteredFontsChangedNotification: CFString
 extern CFStringRef const kCTFontManagerRegisteredFontsChangedNotification;
 ```
 
-#### Discussion
+## Discussion
 
 This is the string to use as the notification name when subscribing to Core Text Font Manager notifications. This notification is posted when fonts are added to the font registry. The client is responsible for registered with the distributed notification center to receive notifications for changes to the session or user scopes, and with a local notification center for changes to the process scope.
 

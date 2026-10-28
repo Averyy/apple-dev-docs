@@ -24,7 +24,7 @@ let HMCharacteristicTypeOzoneDensity: String
 extern NSString * const HMCharacteristicTypeOzoneDensity;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a number in units of micrograms per cubic meter.
 

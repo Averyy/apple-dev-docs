@@ -19,7 +19,7 @@ The visibility of the column identified by its identifier.
 subscript(visibility id: String) -> Visibility { get set }
 ```
 
-#### Overview
+## Overview
 
 Explicit identifiers can be associated with a `TableColumn` using the `customizationID(_:)` modifier.
 

@@ -24,7 +24,7 @@ var workingColorSpace: CGColorSpace? { get }
 @property (nonatomic, readonly, nullable) CGColorSpaceRef workingColorSpace;
 ```
 
-#### Discussion
+## Discussion
 
 The working color space determines the color space used when executing filter kernels; Core Image automatically converts to and from the source and destination color spaces of input images and output contexts. You specify a working color space using the [`workingColorSpace`](../cicontextoption/workingcolorspace.md) key in the `options` dictionary when creating a Core Image context.
 

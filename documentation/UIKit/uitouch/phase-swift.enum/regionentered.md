@@ -23,7 +23,7 @@ case regionEntered
 UITouchPhaseRegionEntered
 ```
 
-#### Discussion
+## Discussion
 
 The [`UITouch.Phase.regionEntered`](./regionentered.md), [`UITouch.Phase.regionMoved`](./regionmoved.md), and [`UITouch.Phase.regionExited`](./regionexited.md) phases don’t always align with the [`state`](../../uigesturerecognizer/state-swift.property.md) property of a [`UIHoverGestureRecognizer`](../../uihovergesturerecognizer.md). States of the hover gesture recognizer only apply within the context of the gesture’s view, whereas the touch states apply within the window.
 

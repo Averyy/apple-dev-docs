@@ -21,7 +21,7 @@ Creates and returns an initialized output stream for writing to a specified URL.
 + (instancetype) outputStreamWithURL:(NSURL *) url append:(BOOL) shouldAppend;
 ```
 
-#### Discussion
+## Discussion
 
 The stream must be opened before it can be used.
 

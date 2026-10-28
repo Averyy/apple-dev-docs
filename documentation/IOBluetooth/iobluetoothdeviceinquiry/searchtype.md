@@ -19,7 +19,7 @@ var searchType: IOBluetoothDeviceSearchTypes { get set }
 @property (assign) IOBluetoothDeviceSearchTypes searchType;
 ```
 
-#### Discussion
+## Discussion
 
 A default of kIOBluetoothDeviceSearchClassic is used, unless a different value is specified using this method.
 

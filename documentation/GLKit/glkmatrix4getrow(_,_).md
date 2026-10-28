@@ -22,11 +22,11 @@ func GLKMatrix4GetRow(_ matrix: GLKMatrix4, _ row: Int32) -> GLKVector4
 static GLKVector4 GLKMatrix4GetRow(GLKMatrix4 matrix, int row);
 ```
 
-#### Return Value
+## Return Value
 
 A vector representing the row retrieved from the matrix.
 
-#### Discussion
+## Discussion
 
 The last component of rows `0` through `2` correspond to the translation values `tx`, `ty`, and `tz`, respectively.
 

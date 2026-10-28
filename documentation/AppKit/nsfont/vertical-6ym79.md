@@ -20,7 +20,7 @@ var vertical: NSFont { get }
 @property (copy, readonly) NSFont * verticalFont;
 ```
 
-#### Discussion
+## Discussion
 
 The value in this property is a vertical version of the font, if such a configuration is supported. If a vertical configuration is not supported, the value in the property is `self`.
 

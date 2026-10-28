@@ -25,7 +25,7 @@ func CMTimeRangeGetEnd(_ range: CMTimeRange) -> CMTime
 extern CMTime CMTimeRangeGetEnd(CMTimeRange range);
 ```
 
-#### Return Value
+## Return Value
 
 A time structure.
 

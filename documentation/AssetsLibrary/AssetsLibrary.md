@@ -11,7 +11,7 @@ Access the assets in a user’s media library.
 - iPadOS 4.0+
 - Mac Catalyst 14.0+
 
-#### Overview
+## Overview
 
 Use the Assets Library framework to access the pictures and videos managed by the Photos application.
 

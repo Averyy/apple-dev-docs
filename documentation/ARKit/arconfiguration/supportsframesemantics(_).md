@@ -20,11 +20,11 @@ class func supportsFrameSemantics(_ frameSemantics: ARConfiguration.FrameSemanti
 + (BOOL) supportsFrameSemantics:(ARFrameSemantics) frameSemantics;
 ```
 
-#### Return Value
+## Return Value
 
 A boolean value that indicates whether the device supports the argument frame semantics.
 
-#### Discussion
+## Discussion
 
 Call this function before attempting to enable a frame semantic on your app’s configuration. For example, if you call `supportsFrameSemantic(.sceneDepth)` on [`ARWorldTrackingConfiguration`](../arworldtrackingconfiguration.md), the function returns [`true`](../../Swift/true.md) on devices that support the LiDAR scanner’s depth buffer.
 

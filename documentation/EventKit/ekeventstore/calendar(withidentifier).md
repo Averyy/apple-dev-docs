@@ -24,7 +24,7 @@ func calendar(withIdentifier identifier: String) -> EKCalendar?
 - (EKCalendar *) calendarWithIdentifier:(NSString *) identifier;
 ```
 
-#### Return Value
+## Return Value
 
 A calendar with a [`calendarIdentifier`](../ekcalendar/calendaridentifier.md) that matches the specified identifier.
 

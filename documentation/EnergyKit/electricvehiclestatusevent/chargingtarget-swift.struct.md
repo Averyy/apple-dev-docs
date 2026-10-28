@@ -17,7 +17,7 @@ The desired target when charging an electric vehicle.
 struct ChargingTarget
 ```
 
-#### Overview
+## Overview
 
 Charging targets represent a person’s intent, such as their desired state of charge or charging range, and planning data, such as their selected start time or estimated completion time. Combined, this information describes the desired outcome of a charging session.
 

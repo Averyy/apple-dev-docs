@@ -17,7 +17,7 @@ The session token.
 final let token: CustomerEngagementSession.Token
 ```
 
-#### Discussion
+## Discussion
 
 This token can be associated with the customer profile and used to check if the new session is a reconnection of the previous session.
 

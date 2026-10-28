@@ -17,7 +17,7 @@ Default option reserved for colliders.
 static let defaultColliders: ClothCollisionGroupSet
 ```
 
-#### Discussion
+## Discussion
 
 All colliders have their [`groups`](../clothcollisionfilter/groups.md) set to this value by default.
 

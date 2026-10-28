@@ -5,11 +5,11 @@
 
 Detects invalid pointer casts due to differences in the sizes of types.
 
-#### Overview
+## Overview
 
 Use this check to detect pointer casts when the size of the source type is less than the size of the destination type. Using the result of such a cast to access out-of-bounds data has undefined behavior. Available in Xcode 9 and later.
 
-##### Downcast from type with insufficient space in C++
+### Downcast from type with insufficient space in C++
 
 In the following example, the cast from `Base *` to `Derived *` is suspect because `Base` isn’t large enough to contain an instance of `Derived`:
 
@@ -29,7 +29,7 @@ The optimizer may remove an expression, such as `getDerived()->pad2`, because `g
 
 > **Note**: This UBSan check may not trigger at low optimization levels.
 
-###### Solution
+#### Solution
 
 One way to fix this issue is to avoid the downcast, such as by using instances of the `Derived` object wherever you need them.
 

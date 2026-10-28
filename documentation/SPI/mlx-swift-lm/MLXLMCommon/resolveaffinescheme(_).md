@@ -17,7 +17,7 @@ Dynamically quantize KV caches during generation if conditions are met
 func resolveAffineScheme(_ scheme: String?) -> (bits: Int, groupSize: Int)?
 ```
 
-#### Discussion
+## Discussion
 
 Resolve a kvScheme string to (bits, groupSize) for affine quantization. Returns nil for unrecognized schemes (custom schemes handle their own caches).
 

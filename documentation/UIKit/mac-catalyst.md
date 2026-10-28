@@ -5,7 +5,7 @@
 
 Create a version of your iPad app that users can run on a Mac device.
 
-#### Overview
+## Overview
 
 With Mac Catalyst, you can make a Mac version of your iPad app. Click the Mac checkbox in your iPad app’s project settings to configure the project to build both Mac and iPad versions of your app. The two apps share the same project and source code, making it easy to change your code in one place.
 

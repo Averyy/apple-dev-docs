@@ -19,7 +19,7 @@ An enum schema for an affinity state parameter.
 var affinityState: some AppSchemaEnum { get }
 ```
 
-#### Discussion
+## Discussion
 
 To make your app’s parameter types available to Apple Intelligence, conform your [`AppEnum`](../../appenum.md) to a schema that describes a parameter’s possible values to the system. If your app’s functionality aligns with the `audio` domain and a parameter type matches the `affinityState` schema, you can generate the protocol conformance the schema requires for your app enum implementation with the `@AppEnum( .audio.affinityState)` Swift macro. To make your app work with Siri, see [Apple Intelligence and Siri AI](../../apple-intelligence-and-siri-ai.md).
 

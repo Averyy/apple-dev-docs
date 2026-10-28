@@ -23,7 +23,7 @@ var presentingViewController: UIViewController { get }
 @property (nonatomic, strong, readonly) UIViewController * presentingViewController;
 ```
 
-#### Discussion
+## Discussion
 
 The object in this property could be the root view controller of the window, a parent view controller that is marked as defining the current context, or the last view controller that was presented onscreen. This view controller may or may not be the same one whose [`present(_:animated:completion:)`](../uiviewcontroller/present%28_,animated,completion%29.md) method was called to initiate the presentation process. It may also not be the view controller used to initialize your presentation controller.
 

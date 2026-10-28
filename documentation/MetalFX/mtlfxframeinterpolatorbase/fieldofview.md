@@ -24,7 +24,7 @@ var fieldOfView: Float { get set }
 @property (nonatomic, readwrite) float fieldOfView;
 ```
 
-#### Discussion
+## Discussion
 
 In a 3D game, you set this value to the field of view you use to create your perspective matrix.
 

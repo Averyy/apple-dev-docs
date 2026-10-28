@@ -25,7 +25,7 @@ struct Logger
 
 - [Generating Log Messages from Your Code](./generating-log-messages-from-your-code.md)
 
-#### Overview
+## Overview
 
 Create a [`Logger`](./logger.md) structure and use it to log messages about your app’s behavior. When logging a message, you specify the message and any program variables or custom data to help you assess the state of your app. You also choose a log level to indicate the severity of that message. The system records log messages in memory and, in some cases, also writes those messages to an on-disk data store. The log level determines which messages stay in memory and which go to disk.
 

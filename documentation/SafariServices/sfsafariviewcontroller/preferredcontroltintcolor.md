@@ -23,7 +23,7 @@ var preferredControlTintColor: UIColor? { get set }
 @property (nonatomic, nullable) UIColor * preferredControlTintColor;
 ```
 
-#### Discussion
+## Discussion
 
 This color preference is ignored if the view controller is in Private Browsing mode or displaying an antiphishing warning. After the view controller is presented, changes made are not reflected. Use `preferredControlTintColor` instead of setting the view’s [`tintColor`](../../UIKit/uiview/tintcolor.md) property.
 

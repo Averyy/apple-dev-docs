@@ -15,7 +15,7 @@ Determine if a vfs_context_t corresponds to a 64-bit user process.
 int vfs_context_is64bit(vfs_context_t ctx);
 ```
 
-#### Return Value
+## Return Value
 
 Nonzero if context is of 64-bit process, 0 otherwise.
 

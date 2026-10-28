@@ -14,11 +14,11 @@ CMError CMMakeProfile (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 The function `CMMakeProfile` adds appropriate tags to a profile to make a display or abstract profile based on a specification dictionary you supply. 
 

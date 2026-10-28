@@ -24,7 +24,7 @@ class ASAuthorizationPlatformPublicKeyCredentialAssertion
 @interface ASAuthorizationPlatformPublicKeyCredentialAssertion : NSObject
 ```
 
-#### Overview
+## Overview
 
 The device creates an assertion when signing in with an existing credential. Use this class to verify the platform credential assertion when the authorization controller calls [`authorizationController(controller:didCompleteWithAuthorization:)`](./asauthorizationcontrollerdelegate/authorizationcontroller%28controller,didcompletewithauthorization%29.md).
 

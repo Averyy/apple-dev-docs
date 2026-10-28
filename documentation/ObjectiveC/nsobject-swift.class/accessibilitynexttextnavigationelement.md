@@ -23,7 +23,7 @@ var accessibilityNextTextNavigationElement: Any? { get set }
 @property (nonatomic, strong, nullable) id accessibilityNextTextNavigationElement;
 ```
 
-#### Discussion
+## Discussion
 
 Assistive technologies transition to these elements when navigating through text granularities, such as when using the VoiceOver Lines rotor.
 

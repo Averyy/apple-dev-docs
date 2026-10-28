@@ -17,7 +17,7 @@ A Boolean value indicating whether the app supports two or more scenes simultane
 - **Name**: `UIApplicationSupportsMultipleScenes` (Enable Multiple Scenes)
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 If your app supports multiple scenes, set the value of this key to [`true`](../../../Swift/true.md). If you set the value to [`false`](../../../Swift/false.md), UIKit never creates more than one scene for your app.
 

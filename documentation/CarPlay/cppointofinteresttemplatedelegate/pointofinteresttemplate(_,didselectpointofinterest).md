@@ -21,7 +21,7 @@ optional func pointOfInterestTemplate(_ pointOfInterestTemplate: CPPointOfIntere
 - (void) pointOfInterestTemplate:(CPPointOfInterestTemplate *) pointOfInterestTemplate didSelectPointOfInterest:(CPPointOfInterest *) pointOfInterest;
 ```
 
-#### Discussion
+## Discussion
 
 CarPlay calls this method whenever the user selects a point of interest from the template’s map. The template displays a detail card for the selection, which contains secondary information and optional actions the user can perform.
 

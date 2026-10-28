@@ -21,7 +21,7 @@ A Boolean value indicating whether this character represents a hexadecimal digit
 var isHexDigit: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 Hexadecimal digits include 0-9, Latin letters a-f and A-F, and their fullwidth compatibility forms. To get the character’s value, use the `hexDigitValue` property.
 

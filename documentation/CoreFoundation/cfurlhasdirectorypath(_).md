@@ -25,7 +25,7 @@ func CFURLHasDirectoryPath(_ anURL: CFURL!) -> Bool
 extern Boolean CFURLHasDirectoryPath(CFURLRef anURL);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `anURL` represents a directory, `false` otherwise.
 

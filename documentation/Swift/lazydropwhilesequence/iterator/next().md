@@ -23,11 +23,11 @@ mutating func next() -> LazyDropWhileSequence<Base>.Iterator.Element?
 
 Available when `Base` conforms to `Sequence`.
 
-#### Return Value
+## Return Value
 
 The next element in the underlying sequence, if a next element exists; otherwise, `nil`.
 
-#### Discussion
+## Discussion
 
 Repeatedly calling this method returns, in order, all the elements of the underlying sequence. As soon as the sequence has run out of elements, all subsequent calls return `nil`.
 

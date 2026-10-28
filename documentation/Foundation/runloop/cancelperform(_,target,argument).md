@@ -25,7 +25,7 @@ func cancelPerform(_ aSelector: Selector, target: Any, argument arg: Any?)
 - (void) cancelPerformSelector:(SEL) aSelector target:(id) target argument:(id) arg;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this method to cancel a message previously scheduled using the [`perform(_:target:argument:order:modes:)`](./perform%28_,target,argument,order,modes%29.md) method. The parameters identify the message you want to cancel and must match those originally specified when the selector was scheduled. This method removes the perform request from all modes of the run loop.
 

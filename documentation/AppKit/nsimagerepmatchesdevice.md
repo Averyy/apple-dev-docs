@@ -19,7 +19,7 @@ var NSImageRepMatchesDevice: Int { get }
 NSImageRepMatchesDevice
 ```
 
-#### Discussion
+## Discussion
 
 This value can be passed in (or received back) as the value of [`bitsPerSample`](./nsimagerep/bitspersample.md), [`pixelsWide`](./nsimagerep/pixelswide.md), and [`pixelsHigh`](./nsimagerep/pixelshigh.md).
 

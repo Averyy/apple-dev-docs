@@ -23,7 +23,7 @@ var weight: Float { get }
 @property (nonatomic, readonly) float weight;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `1.0`.
 

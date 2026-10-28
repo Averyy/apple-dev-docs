@@ -19,7 +19,7 @@ var state: NSGestureRecognizer.State { get set }
 @property (readonly) NSGestureRecognizerState state;
 ```
 
-#### Discussion
+## Discussion
 
 This property conveys where the gesture recognizer is in the recognition process. The default declaration of this property is read-only so that external clients (such as other gesture recognizers) can use the value for informational purposes. Subclasses can redeclare the property as read-write internally. When doing so, you do not need to provide a custom implementation to set the value of the property. This class provides an implementation that detects state transitions and updates the gesture recognizer accordingly.
 

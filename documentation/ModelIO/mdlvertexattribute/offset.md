@@ -24,7 +24,7 @@ var offset: Int { get set }
 @property (nonatomic, readwrite) NSUInteger offset;
 ```
 
-#### Discussion
+## Discussion
 
 For example, if a vertex buffer contains interleaved data for two attributes, the first attribute’s offset is typically zero, and the second attribute’s offset is at least the data size of the first attribute.
 

@@ -23,7 +23,7 @@ var pageZoom: CGFloat { get set }
 @property (nonatomic) CGFloat pageZoom;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `1.0`, which displays the content without any scaling. Changing the value of this property is equivalent to setting the CSS `zoom` property on all page content.
 

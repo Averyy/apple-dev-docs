@@ -12,7 +12,7 @@ Invite your friends to draw on a shared canvas while on a FaceTime call.
 - Mac Catalyst 17.0+
 - Xcode 15.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC23 session 10241: [Share files with SharePlay](https://developer.apple.com/wwdc23/10241), and WWDC21 session 10187: [Build custom experiences with Group Activities](https://developer.apple.com/videos/play/wwdc2021/10187/).
 
@@ -24,14 +24,14 @@ There are two steps to adopt a [`GroupActivity`](./groupactivity.md): activity c
 
 These steps change slightly when building a custom experience, starting with activity creation. Activity creation consists of configuring the activity, and then activating the activity. Only the configuration part is different for a custom activity compared to a media activity.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 - Build the sample with Xcode 13 or later, and Swift 5.5 or later.
 - This sample runs on physical devices with iOS 15 or later.
 
 To see the custom drawing experience together, install the app on two or more devices with unique Apple IDs, and start a FaceTime call between the devices. Tap the bottom-left icon, and respond to the system prompt to start a shared DrawTogether experience. On the other device, join the group session. The app gives each user a random color to draw with. When the user draws on the screen, the app propagates the drawing to all the other devices in the group session.
 
-##### Configure a custom activity
+### Configure a custom activity
 
 To make drawing a group experience, the sample defines a `DrawTogether` structure that adopts the [`GroupActivity`](./groupactivity.md) protocol. This protocol defines a shareable experience in the app.  The `GroupActivity` protocol has two properties that the app implements: [`activityIdentifier`](./groupactivity/activityidentifier.md) and [`metadata`](./groupactivity/metadata.md). The app relies on the default implementation for `activityIdentifier`, and the `metadata` property is required. To make this activity a custom activity, the sample code sets the [`type`](./groupactivitymetadata/type.md) on the `metadata` to [`generic`](./groupactivitymetadata/activitytype/generic.md). This is crucial for a custom activity, and is the only difference between configuring a custom activity and a media activity.
 
@@ -46,7 +46,7 @@ struct DrawTogether: GroupActivity {
 }
 ```
 
-##### Activate an activity
+### Activate an activity
 
 After configuring the activity, the app needs to activate it at the appropriate moment. The sample provides a button for activation. First, the sample checks to make sure a [`GroupSession`](./groupsession.md) doesn’t exist already. Next, it calls the [`GroupStateObserver`](./groupstateobserver.md) [`isEligibleForGroupSession`](./groupstateobserver/iseligibleforgroupsession.md) method to make sure a FaceTime call is active and the system can create group sessions. Then, in the action closure, the sample calls its `canvas.startSharing()` method to activate the activity.
 
@@ -75,7 +75,7 @@ func startSharing() {
 }
 ```
 
-##### Configure the session for sending and receiving custom data
+### Configure the session for sending and receiving custom data
 
 The sample uses [`GroupSessionMessenger`](./groupsessionmessenger.md) to configure the session for sending and receiving its custom drawing data. The app creates a `GroupSessionMessenger` from the [`GroupSession`](./groupsession.md). It also adds the `messenger` property to its `Canvas` to hold the `messenger` object.
 
@@ -112,7 +112,7 @@ The third step for configuring the session is to send data using the [`send(_:to
 try? await messenger.send(UpsertStrokeMessage(id: stroke.id, color: stroke.color, point: point))
 ```
 
-##### Receive custom data
+### Receive custom data
 
 The sample creates a detached task to receive the `UpsertStrokeMessages` from the async sequence, then calls its `handle` method to process the message.
 
@@ -139,7 +139,7 @@ func handle(_ message: UpsertStrokeMessage) {
 }
 ```
 
-##### Send custom data
+### Send custom data
 
 The sample calls its `addPointToActiveStroke` method to send the messages using the [`send(_:to:)`](./groupsessionmessenger/send%28_,to%29-2a4ku.md) method.
 
@@ -163,7 +163,7 @@ func addPointToActiveStroke(_ point: CGPoint) {
 }
 ```
 
-##### Handle late joiners
+### Handle late joiners
 
 Late joiners are devices that join an activity session after the session starts. To ensure a proper experience, the app gives late joiners the most recent information so all the devices use the same data.
 
@@ -210,7 +210,7 @@ groupSession.$activeParticipants
     }
 ```
 
-##### Change activities
+### Change activities
 
 The Group Activities framework provides two ways to change activities: create a [`GroupSession`](./groupsession.md), or update the activity for everyone in the existing `GroupSession`.
 
@@ -254,7 +254,7 @@ func startSharing() {
 }
 ```
 
-##### Start SharePlay experiences
+### Start SharePlay experiences
 
 The sample’s `ControlBar` view contains a button to allow users to share the canvas with their friends. The sample dynamically displays the button only when it’s helpful to the user. The sample uses the [`isEligibleForGroupSession`](./groupstateobserver/iseligibleforgroupsession.md) property to determine whether a FaceTime call is active and the system can create group sessions. The `ControlBar` only shows the button if the system is eligible for a group session, and not in a group session already.
 

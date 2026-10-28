@@ -6,7 +6,7 @@
 
 The default field of view for the object.
 
-#### Overview
+## Overview
 
 This is the field of view used when the object is first displayed. The value in this field must be greater than or equal to the value of the `minFieldOfView` field and less than or equal to the value of the `fieldOfView` field.
 

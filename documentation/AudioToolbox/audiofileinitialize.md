@@ -15,11 +15,11 @@
 extern OSStatus AudioFileInitialize(const struct FSRef *inFileRef, AudioFileTypeID inFileType, const AudioStreamBasicDescription *inFormat, AudioFileFlags inFlags, AudioFileID*outAudioFile);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See Result Codes.
 
-#### Discussion
+## Discussion
 
 This deprecated function deletes the content of an existing audio file to let you write over it.
 

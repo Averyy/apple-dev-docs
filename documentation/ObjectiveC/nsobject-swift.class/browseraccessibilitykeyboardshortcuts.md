@@ -22,7 +22,7 @@ var browserAccessibilityKeyboardShortcuts: String? { get set }
 @property (nonatomic, strong, nullable) NSString * browserAccessibilityKeyboardShortcuts;
 ```
 
-#### Discussion
+## Discussion
 
 Represents the value of aria-keyshortcuts. default: nil
 

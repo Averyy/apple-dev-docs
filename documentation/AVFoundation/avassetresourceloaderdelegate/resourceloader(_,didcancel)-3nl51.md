@@ -24,7 +24,7 @@ optional func resourceLoader(_ resourceLoader: AVAssetResourceLoader, didCancel 
 - (void) resourceLoader:(AVAssetResourceLoader *) resourceLoader didCancelLoadingRequest:(AVAssetResourceLoadingRequest *) loadingRequest;
 ```
 
-#### Discussion
+## Discussion
 
 Previously issued loading requests can be cancelled when data from the resource is no longer required or when a loading request is superseded by new requests for data from the same resource.
 

@@ -5,13 +5,13 @@
 
 Improve Rosetta performance by adding support for the total store ordering (TSO) memory model to your Linux kernel.
 
-#### Overview
+## Overview
 
 Rosetta is a translation process that makes it possible to run apps that contain x86_64 instructions on Apple silicon. In macOS, Rosetta allows apps built for Intel-based Mac computers to run seamlessly on Apple silicon, and enables the same capability for Intel Linux apps in ARM Linux VMs.
 
 Rosetta enables Linux distributions running on Apple silicon to support legacy Intel binaries with the addition of a few lines of code in your virtualization-enabled app, and the creation of a directory share for Rosetta to use.
 
-##### Optimize the memory model for recompiled x86_64 instructions
+### Optimize the memory model for recompiled x86_64 instructions
 
 By applying a set of kernel optimizations to support the TSO memory model, it’s possible to increase Rosetta performance. The optimizations this patch adds to the Linux kernel sources make the following enhancements to the system:
 
@@ -19,7 +19,7 @@ By applying a set of kernel optimizations to support the TSO memory model, it’
 - Creates functions that can read and modify the `ACTLR.TSOEN` bit on Apple silicon. Setting this bit to `1` changes the CPU’s memory model to the x86-64 TSO memory model. Clearing it sets the CPU’s memory model to the standard ARM64 memory model.
 - Adds a new process control mode to the `prctl` (process control) API that allows userspace programs to change the TSO bit. The process control mode helps emulators that recompile x86_64 instructions to ARM64 instructions. Previously, programs needed to emulate TSO, degrading performance. With this change, emulators can selectively enable TSO for processes that need the emulation. Without selective enablement, the system opts all processes into this memory mode, which degrades performance for native ARM processes that don’t need it.
 
-##### Patch the Linux kernel
+### Patch the Linux kernel
 
 The Rosetta Linux kernel patches are available to download on Apple’s developer portal; see [Rosetta Enhancement Patch](https://developer.apple.com/download/files/RosettaPatch.zip).
 
@@ -37,13 +37,13 @@ Follow these steps to apply the Rosetta patch:
 6. Apply the patch with the patch command, using the command `patch -p1 < Rosetta.diff` in terminal.
 7. After applying the patch, rebuild and install the new kernel as the new, active boot kernel for your system.
 
-##### Enable Rosetta and activate TSO in your app
+### Enable Rosetta and activate TSO in your app
 
 To allow Linux apps to take advantage of the TSO memory model, the app needs to call the `prctl` API on each thread that needs TSO support by calling `prctl(PR_SET_MEM_MODEL, PR_SET_MEM_MODEL_TSO)`in order to set the `tso` bit on that thread.
 
 For basic information on Rosetta and running x86_64 binaries on Apple silicon under Linux, see doc:running-intel-binaries-in-linux-vms-with-rosetta.
 
-##### Provide enhanced Linux kernels or distributions
+### Provide enhanced Linux kernels or distributions
 
 The Rosetta patches are open source software; you can add them to kernels or distributions you provide to people using your virtualization-enabled app, or include instructions for how people can apply and use the patch in their own kernel builds and take advantage of the optimization.
 

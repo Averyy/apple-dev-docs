@@ -24,7 +24,7 @@ func addManagedReference(_ object: Any!, withOwner owner: Any!)
 - (void) addManagedReference:(id) object withOwner:(id) owner;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to make the JavaScript runtime aware of arbitrary external Objective-C or Swift object graphs. The runtime can then use this information to retain any JavaScript values that are referenced from somewhere in said object graph.
 

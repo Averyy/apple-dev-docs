@@ -34,7 +34,7 @@ var session: MCSession { get }
 @property (atomic, readonly) MCSession * session;
 ```
 
-#### Discussion
+## Discussion
 
 You set this property’s value when you initialize the object. It cannot be changed later.
 

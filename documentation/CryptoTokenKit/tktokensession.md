@@ -25,7 +25,7 @@ class TKTokenSession
 @interface TKTokenSession : NSObject
 ```
 
-#### Overview
+## Overview
 
 A token session communicates with its delegate to perform operations with its token that are bound to the authentication state.
 

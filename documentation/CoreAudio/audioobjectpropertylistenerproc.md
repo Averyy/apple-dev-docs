@@ -18,11 +18,11 @@ typealias AudioObjectPropertyListenerProc = (AudioObjectID, UInt32, UnsafePointe
 typedef int (*)(unsigned int, unsigned int, const struct AudioObjectPropertyAddress *, void *) AudioObjectPropertyListenerProc;
 ```
 
-#### Return Value
+## Return Value
 
 The return value is currently unused and should always be 0.
 
-#### Discussion
+## Discussion
 
 Clients register an AudioObjectPropertyListenerProc with an AudioObject in order to receive notifications when the properties of the object change.
 

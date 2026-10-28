@@ -13,11 +13,11 @@ virtual IOReturn activateAudioEngine(
  boolshouldStartAudioEngine);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the audio engine was successfully activated.
 
-#### Overview
+## Overview
 
 Once the IOAudioEngine has been activated by this function, it is ready to begin moving audio data. This should be called either during the subclass' initHardware() implementation for each IOAudioEngine the device creates. Or it should be called by the IOAudioEngine itself if the audio engine was automatically created by IOKit's matching process. The system won't be able to properly track and control IOAudioEngines if they are not activated though this function. This implementation will retain the IOAudioEngine while it maintains control of it. When the audio engine is deactivated, the IOAudioEngine will be released. If the IOAudioDevice subclass is passing a newly instantiated IOAudioEngine, it will need to release the audio engine after it has been activated. This will insure that the refCount on the audio engine is correct when it gets deactivated when the driver is stopped. That allows the audio engine to be freed when it is no longer needed.
 

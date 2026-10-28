@@ -23,7 +23,7 @@ protocol UIAccessibilityReadingContent
 @protocol UIAccessibilityReadingContent
 ```
 
-#### Overview
+## Overview
 
 To give VoiceOver users a superior, continuous reading experience, you can implement this protocol on an element that represents readable content, characterize it with the [`causesPageTurn`](./uiaccessibilitytraits/causespageturn.md) trait, and use the [`UIAccessibilityScrollDirection.next`](./uiaccessibilityscrolldirection/next.md) and [`UIAccessibilityScrollDirection.previous`](./uiaccessibilityscrolldirection/previous.md) constants to enable page turning.
 

@@ -19,7 +19,7 @@ func viewDidLayout()
 - (void) viewDidLayout;
 ```
 
-#### Discussion
+## Discussion
 
 You can override this method to perform tasks to follow the completion of layout of the view controller’s view. If you override this method, call this method on `super` at some point in your implementation in case a superclass also overrides this method.
 

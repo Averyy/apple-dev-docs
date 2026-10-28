@@ -20,7 +20,7 @@ var episodeOrder: Int { get }
 @property (nonatomic, assign, readonly) NSInteger episodeOrder;
 ```
 
-#### Discussion
+## Discussion
 
 This property is `0` if the media item isn’t an episode of a TV series.
 

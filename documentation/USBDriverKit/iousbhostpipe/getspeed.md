@@ -15,7 +15,7 @@ Retrieves the device’s operational speed.
 virtual kern_return_t GetSpeed(uint8_t *speed) const;
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 

@@ -25,11 +25,11 @@ func setPurgeableState(_ state: MTLPurgeableState) -> MTLPurgeableState
 - (MTLPurgeableState) setPurgeableState:(MTLPurgeableState) state;
 ```
 
-#### Return Value
+## Return Value
 
 The previous purgeable state of the heap.
 
-#### Discussion
+## Discussion
 
 The heap purgeability state refers to its whole backing memory and affects all resources in the heap. Heaps can be marked purgeable but its resources cannot; the heap’s resources always reflect the heap’s purgeability state.
 

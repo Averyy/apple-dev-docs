@@ -19,7 +19,7 @@ var backingScaleFactor: CGFloat { get }
 @property (readonly) CGFloat backingScaleFactor;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `2.0` for high-resolution scaled display modes, and `1.0` for all other cases.
 

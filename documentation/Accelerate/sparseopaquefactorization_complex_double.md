@@ -25,7 +25,7 @@ struct SparseOpaqueFactorization_Complex_Double
 typedef struct { ... } SparseOpaqueFactorization_Complex_Double;
 ```
 
-#### Overview
+## Overview
 
 Use the `SparseCleanup` function to free resources held by these objects.
 

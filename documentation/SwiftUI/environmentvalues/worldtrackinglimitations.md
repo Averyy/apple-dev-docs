@@ -16,7 +16,7 @@ The current limitations of the device tracking the user’s surroundings.
 var worldTrackingLimitations: Set<WorldTrackingLimitation> { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Read this environment value from within a view to obtain the current limitations of the device tracking the user’s surroundings. The device’s capabilities may be limited due to physical circumstances such as the lighting. If any of the limitations occur due to changing circumstances, the set is updated accordingly. For example, the following [`Text`](../text.md) view automatically updates when the world tracking limitations change:
 

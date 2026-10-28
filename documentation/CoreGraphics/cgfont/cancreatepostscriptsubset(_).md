@@ -25,11 +25,11 @@ func canCreatePostScriptSubset(_ format: CGFontPostScriptFormat) -> Bool
 extern bool CGFontCanCreatePostScriptSubset(CGFontRef font, CGFontPostScriptFormat format);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` if a subset in the PostScript format can be created for the font; `false` otherwise.
 
-#### Discussion
+## Discussion
 
 For more information on PostScript format, see *Adobe Type 1 Font Format*, which is available from [http://partners.adobe.com/](http://partners.adobe.com/).
 

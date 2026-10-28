@@ -18,7 +18,7 @@ A renderer that encodes draw calls for a collection of mesh instances into a Met
 final class LowLevelRenderer
 ```
 
-#### Overview
+## Overview
 
 `LowLevelRenderer` manages camera constants, per-instance transforms, MSAA resolve, tonemapping, and optional color gamut conversion. You are responsible for creating and committing the Metal command buffer; the renderer only encodes into it.
 

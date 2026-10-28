@@ -21,11 +21,11 @@ func SecTransformSetAttribute(_ transformRef: SecTransform, _ key: CFString, _ v
 extern Boolean SecTransformSetAttribute(SecTransformRef transformRef, CFStringRef key, CFTypeRef value, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean set to [`true`](../Swift/true.md) if the call succeeds. Otherwise, the `error` parameter contains information about the failure.
 
-#### Discussion
+## Discussion
 
 This function is useful for things like iteration counts and other non-changing values. It returns an error and the named attribute is not changed if [`SecTransformExecute(_:_:)`](./sectransformexecute%28_,_%29.md) has already been called on the transform.
 

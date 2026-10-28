@@ -19,7 +19,7 @@ init()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 A [`VZVirtioTraditionalMemoryBalloonDeviceConfiguration`](../vzvirtiotraditionalmemoryballoondeviceconfiguration.md) object to include in your virtual machine’s configuration data.
 

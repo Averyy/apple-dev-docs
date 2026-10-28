@@ -21,7 +21,7 @@ Adds an arc of a circle to the path, specified with a radius and a difference in
 func addRelativeArc(center: CGPoint, radius: CGFloat, startAngle: CGFloat, delta: CGFloat, transform: CGAffineTransform = .identity)
 ```
 
-#### Discussion
+## Discussion
 
 This method calculates starting and ending points using the radius and angles you specify, uses a sequence of cubic Bézier curves to approximate a segment of a circle between those points, and then appends those curves to the path.
 

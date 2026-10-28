@@ -24,7 +24,7 @@ class NERelayManager
 @interface NERelayManager : NSObject
 ```
 
-#### Overview
+## Overview
 
 When your app starts up, access the shared instance of the relay manager, and load existing settings from the preferences using [`loadFromPreferences(completionHandler:)`](./nerelaymanager/loadfrompreferences%28completionhandler%29.md). You can define your relay server configuration, and persist it by calling [`saveToPreferences(completionHandler:)`](./nerelaymanager/savetopreferences%28completionhandler%29.md).
 

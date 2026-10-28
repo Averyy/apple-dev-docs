@@ -18,7 +18,7 @@ An array of values associated with this outcome.
 var values: [OCKOutcomeValue] { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Most outcomes have 0 or 1 values, but some may have more. For example, a task to call a physician might have 0 values, or 1 value containing the time stamp of when the call was placed.
 

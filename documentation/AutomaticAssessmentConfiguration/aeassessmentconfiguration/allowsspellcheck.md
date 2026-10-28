@@ -22,7 +22,7 @@ var allowsSpellCheck: Bool { get set }
 @property (nonatomic, assign) BOOL allowsSpellCheck;
 ```
 
-#### Discussion
+## Discussion
 
 Users can activate the spell checker by turning on the Check Spelling feature in the Settings app (General > Keyboard). An assessment session disables spell checking by default, but you can allow it by setting [`allowsSpellCheck`](./allowsspellcheck.md) to `true` in the [`AEAssessmentConfiguration`](../aeassessmentconfiguration.md) instance that you use to initialize a session.
 

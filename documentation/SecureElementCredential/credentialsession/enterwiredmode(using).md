@@ -16,7 +16,7 @@ Enters wired mode to perform maintenance operations with the given credential.
 func enterWiredMode(using credential: CredentialSession.Credential) async throws
 ```
 
-#### Discussion
+## Discussion
 
 You can call this method in any session state. If successful, the state transitions to [`CredentialSession.State.wired(credential:)`](./state-swift.enum/wired%28credential%29.md). The state transitions to [`CredentialSession.State.management`](./state-swift.enum/management.md) if the call encounters a [`CredentialSession.ErrorCode.resourceUnavailable`](./errorcode/resourceunavailable.md) error; otherwise the state remains unchanged.
 

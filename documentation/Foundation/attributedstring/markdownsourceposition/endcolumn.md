@@ -21,7 +21,7 @@ The column where the text ends in the Markdown source.
 let endColumn: Int
 ```
 
-#### Discussion
+## Discussion
 
 This property uses `1`-based counting. Columns represent UTF-8 indices; for multi-byte characters, the column indicates the first byte.
 

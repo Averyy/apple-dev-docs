@@ -24,11 +24,11 @@ class func toneCurve() -> any CIFilter & CIToneCurve
 + (CIFilter<CIToneCurve> *) toneCurveFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the tone curve filter to an image. The effect calculates the adjustment of the tone curve by the sum of the red, green, and blue color values with the point value properties specified.
 

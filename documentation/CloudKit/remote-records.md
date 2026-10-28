@@ -5,7 +5,7 @@
 
 Use subscriptions and change tokens to efficiently manage modifications to remote records.
 
-#### Overview
+## Overview
 
 CloudKit stores your records in iCloud and uses subscriptions to notify your app in real time about record changes. You then use change tokens to handle these changes efficiently. Additionally, you can improve your app’s performance and support offline use by storing records in a local cache.
 
@@ -30,7 +30,7 @@ CloudKit supports the following subscription types:
 | **Record zone** | Use a record zone subscription to track changes in a custom record zone in the user’s private database. You can’t use this subscription in public or shared databases. For more information, see [`CKRecordZoneSubscription`](./ckrecordzonesubscription.md). |
 | **Query** | Use a query subscription to track changes to records in a database that match a predicate. Only public and private databases support query subscriptions. For more information, see [`CKQuerySubscription`](./ckquerysubscription.md). |
 
-##### Integrate Records with Your Existing Models
+### Integrate Records with Your Existing Models
 
 If you already cache your app’s model objects, you don’t need to cache CloudKit records in tandem. Instead, attach a record’s metadata to a model to associate the two. The metadata includes the record’s ID, record type, record zone ID, and change tag, as well as other information.
 

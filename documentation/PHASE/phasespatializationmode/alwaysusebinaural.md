@@ -24,7 +24,7 @@ case alwaysUseBinaural
 PHASESpatializationModeAlwaysUseBinaural
 ```
 
-#### Discussion
+## Discussion
 
 Enable this mode to override a system or user preference and implement binaural audio output. When binaural mode plays through internal speakers on supported Apple devices, the framework applies additional effects to the output to achieve a sound experience comparable to one with headphones.
 

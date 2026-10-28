@@ -25,7 +25,7 @@ static var tooManySymbolicLinkLevels: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 A pathname lookup involved more than eight symbolic links.
 

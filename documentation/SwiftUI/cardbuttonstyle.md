@@ -16,7 +16,7 @@ nonisolated
 struct CardButtonStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`card`](./primitivebuttonstyle/card.md) to construct this style.
 

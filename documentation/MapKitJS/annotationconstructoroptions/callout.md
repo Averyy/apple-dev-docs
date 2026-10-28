@@ -15,7 +15,7 @@ A delegate that enables you to customize the annotation’s callout.
 callout?: AnnotationCalloutDelegate | null;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `null`. See [`AnnotationCalloutDelegate`](../annotationcalloutdelegate.md) for details.
 

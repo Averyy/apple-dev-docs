@@ -25,7 +25,7 @@ var simdTransform: simd_float4x4 { get set }
 @property (nonatomic) simd_float4x4 simdTransform;
 ```
 
-#### Discussion
+## Discussion
 
 The transform is the combination of the node’s [`simdRotation`](./simdrotation.md), [`simdPosition`](./simdposition.md), and [`simdScale`](./simdscale.md) properties. The default transform is the identity matrix.
 

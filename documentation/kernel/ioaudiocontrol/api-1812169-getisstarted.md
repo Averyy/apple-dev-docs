@@ -11,7 +11,7 @@ Returns true after start() has been called.
 virtual bool getIsStarted();
 ```
 
-#### Overview
+## Overview
 
 Used by IOAudioPort and IOAudioEngine to decide if the control needs to be started.
 

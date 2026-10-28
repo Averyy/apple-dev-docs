@@ -25,7 +25,7 @@ func CFCalendarCreateWithIdentifier(_ allocator: CFAllocator!, _ identifier: CFC
 extern CFCalendarRefCFCalendarCreateWithIdentifier(CFAllocatorRef allocator, CFCalendarIdentifier identifier);
 ```
 
-#### Return Value
+## Return Value
 
 A calendar object for the calendar identified by `ident`. If the identifier is unknown (if, for example, it is either an unrecognized string, or the calendar is not supported by the current version of the operating system), returns `NULL`. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

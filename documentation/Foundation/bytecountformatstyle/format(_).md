@@ -21,11 +21,11 @@ Formats a numeric byte count, using this style.
 func format(_ value: Int64) -> String
 ```
 
-#### Return Value
+## Return Value
 
 A formatted representation of `value`, formatted according to the style’s configuration.
 
-#### Discussion
+## Discussion
 
 Use this method when you want to create a single style instance, and then use it to format multiple values. The following example creates a [`ByteCountFormatStyle`](../bytecountformatstyle.md) to format values as kilobyte counts, then applies this style to an array of [`Int64`](../../Swift/int64.md) values.
 

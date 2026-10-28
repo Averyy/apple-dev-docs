@@ -19,7 +19,7 @@ Placement for commands that interact with the Clipboard and manipulate content t
 static let pasteboard: CommandGroupPlacement
 ```
 
-#### Discussion
+## Discussion
 
 By default, this group includes the following commands in macOS:
 

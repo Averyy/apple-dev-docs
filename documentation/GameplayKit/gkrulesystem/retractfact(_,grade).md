@@ -24,7 +24,7 @@ func retractFact(_ fact: any NSObjectProtocol, grade: Float)
 - (void) retractFact:(id<NSObject>) fact grade:(float) grade;
 ```
 
-#### Discussion
+## Discussion
 
 Each fact has a membership grade ranging from zero to 1.0, representing variable levels of truth, strength, or confidence for use in fuzzy logic. Calling this method reduces the fact’s grade by the amount specified in the `grade` parameter; reducing a fact’s grade to zero or below removes it from the [`facts`](./facts.md) array.
 

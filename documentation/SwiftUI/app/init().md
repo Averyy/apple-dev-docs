@@ -23,7 +23,7 @@ Creates an instance of the app using the body that you define for its content.
 @preconcurrency init()
 ```
 
-#### Discussion
+## Discussion
 
 Swift synthesizes a default initializer for structures that don’t provide one. You typically rely on the default initializer for your app.
 

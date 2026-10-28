@@ -24,7 +24,7 @@ func finishLoading(with error: (any Error)?)
 - (void) finishLoadingWithError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 When a resource loader’s delegate takes responsibility for loading a resource, it calls this method when a failure occurred when loading the resource. This method marks the loading request as finished and notifies the resource loader object that the resource could not be loaded.
 

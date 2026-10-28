@@ -21,7 +21,7 @@ var largeSubtitle: String? { get set }
 @property (nonatomic, copy, nullable) NSString * largeSubtitle;
 ```
 
-#### Discussion
+## Discussion
 
 When `nil`, the navigation bar will fall back to the `subtitle`.
 

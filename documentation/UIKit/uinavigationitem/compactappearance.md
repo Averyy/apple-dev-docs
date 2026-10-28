@@ -24,7 +24,7 @@ var compactAppearance: UINavigationBarAppearance? { get set }
 @property (nonatomic, copy, readwrite, nullable) UINavigationBarAppearance * compactAppearance;
 ```
 
-#### Discussion
+## Discussion
 
 When the navigation bar displays the current navigation item, the appearance settings in this property override the settings provided by the [`compactAppearance`](../uinavigationbar/compactappearance.md) property of [`UINavigationBar`](../uinavigationbar.md).
 

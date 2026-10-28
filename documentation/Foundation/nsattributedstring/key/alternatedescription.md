@@ -25,7 +25,7 @@ static let alternateDescription: NSAttributedString.Key
 extern NSAttributedStringKey const NSAlternateDescriptionAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is an [`NSString`](../../nsstring.md) with the alternate description of the URL or image.
 

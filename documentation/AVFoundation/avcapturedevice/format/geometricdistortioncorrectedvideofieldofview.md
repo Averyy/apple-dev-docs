@@ -22,7 +22,7 @@ var geometricDistortionCorrectedVideoFieldOfView: Float { get }
 @property (nonatomic, readonly) float geometricDistortionCorrectedVideoFieldOfView;
 ```
 
-#### Discussion
+## Discussion
 
 If the capture device doesn’t support geometric distortion correction (GDC), the value of this property is equal to the value of [`videoFieldOfView`](./videofieldofview.md).
 

@@ -25,7 +25,7 @@ var dnsSettings: NEDNSSettings? { get set }
 @property (copy, nullable) NEDNSSettings * DNSSettings;
 ```
 
-#### Discussion
+## Discussion
 
 Network connections to hosts in the tunnel’s internal network will use these DNS settings when resolving host names.
 

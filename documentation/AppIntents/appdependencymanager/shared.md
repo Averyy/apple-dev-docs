@@ -16,8 +16,8 @@
 ## Declaration
 
 ```swift
-nonisolated
-(unsafe) static let shared: AppDependencyManager
+nonisolated(unsafe)
+static let shared: AppDependencyManager
 ```
 
 

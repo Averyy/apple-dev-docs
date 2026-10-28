@@ -20,7 +20,7 @@ Gets the asset pack with the given identifier.
 - (void) getAssetPackWithIdentifier:(NSString *) assetPackIdentifier completionHandler:(void (^)(BAAssetPack *assetPack, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 If no asset pack with the given identifier is found, then the block will receive an `NSError` object with [`BAManagedErrorCodeAssetPackNotFound`](../bamanagederrorcode/bamanagederrorcodeassetpacknotfound.md) as its code for the `error` parameter. This method may attempt to get the latest asset-pack information from the server. To force the system to get the latest information from the server unconditionally, send [`checkForUpdatesWithCompletionHandler:`](./checkforupdateswithcompletionhandler_.md) to the shared asset-pack manager.
 

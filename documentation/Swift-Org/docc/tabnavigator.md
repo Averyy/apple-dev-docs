@@ -22,7 +22,7 @@ A container directive that arranges content into a tab-based layout.
 }
 ```
 
-#### Overview
+## Overview
 
 Create a new tab navigator by writing a `@TabNavigator` directive that contains child `@Tab` directives.
 

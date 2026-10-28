@@ -27,7 +27,7 @@ class SCNLayer
 @interface SCNLayer : CAOpenGLLayer
 ```
 
-#### Overview
+## Overview
 
 Use this class to integrate 3D content rendered by SceneKit into a user interface composed of Core Animation layers. To provide content for the layer, assign an [`SCNScene`](./scnscene.md) object to its [`scene`](./scnlayer/scene.md) property.
 

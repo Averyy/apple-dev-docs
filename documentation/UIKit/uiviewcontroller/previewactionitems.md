@@ -24,11 +24,11 @@ var previewActionItems: [any UIPreviewActionItem] { get }
 @property (nonatomic, readonly) NSArray<id<UIPreviewActionItem>> * previewActionItems;
 ```
 
-#### Return Value
+## Return Value
 
 An array of preview (peek) quick actions.
 
-#### Discussion
+## Discussion
 
 This property is for use with a preview (peek) view controller which you present in your implementation of the [`previewingContext(_:viewControllerForLocation:)`](../uiviewcontrollerpreviewingdelegate/previewingcontext%28_,viewcontrollerforlocation%29.md) delegate method..
 

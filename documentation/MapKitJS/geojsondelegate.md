@@ -15,7 +15,7 @@ A delegate object that controls a GeoJSON import to override default behavior an
 interface GeoJSONDelegate
 ```
 
-#### Overview
+## Overview
 
 The delegate object provides hooks into the key moments in the GeoJSON import process. When you pass a delegate object to the [`importGeoJSON()`](./mapkit/importgeojson.md) method, you can:
 

@@ -16,11 +16,11 @@ Opens a session to the PCI device.
 kern_return_t Open(IOService *forClient, IOOptionBits options);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 This method gives the specified [`IOService`](../../DriverKit/ioservice.md) object exclusive access to the PCI device. It also gives the service object access to the PCI device’s configuration and aperture space.
 

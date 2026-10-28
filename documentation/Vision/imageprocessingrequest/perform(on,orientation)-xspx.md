@@ -22,7 +22,7 @@ Performs the request on a pixel buffer and produces observations.
 func perform(on pixelBuffer: CVPixelBuffer, orientation: CGImagePropertyOrientation?) async throws -> Self.Result
 ```
 
-#### Return Value
+## Return Value
 
 The observation — or list of observations — the request produces.
 

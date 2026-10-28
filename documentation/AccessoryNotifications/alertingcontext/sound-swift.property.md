@@ -15,7 +15,7 @@ An optional sound configuration for the notification.
 var sound: AlertingContext.Sound? { get }
 ```
 
-#### Discussion
+## Discussion
 
 A value of `nil` indicates the notification has no sound. Use the [`AlertingContext.Sound`](./sound-swift.struct.md) properties to determine sound characteristics.
 

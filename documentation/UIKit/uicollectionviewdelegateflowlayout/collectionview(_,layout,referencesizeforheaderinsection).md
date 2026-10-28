@@ -23,11 +23,11 @@ optional func collectionView(_ collectionView: UICollectionView, layout collecti
 - (CGSize) collectionView:(UICollectionView *) collectionView layout:(UICollectionViewLayout *) collectionViewLayout referenceSizeForHeaderInSection:(NSInteger) section;
 ```
 
-#### Return Value
+## Return Value
 
 The size of the header. If you return a value of size (0, 0), no header is added.
 
-#### Discussion
+## Discussion
 
 If you do not implement this method, the flow layout uses the value in its [`headerReferenceSize`](../uicollectionviewflowlayout/headerreferencesize.md) property to set the size of the header.
 

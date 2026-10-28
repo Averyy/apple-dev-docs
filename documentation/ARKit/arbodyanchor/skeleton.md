@@ -20,7 +20,7 @@ var skeleton: ARSkeleton3D { get }
 @property (nonatomic, strong, readonly) ARSkeleton3D * skeleton;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to interpret motion information in 3D space.
 

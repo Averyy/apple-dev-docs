@@ -16,11 +16,11 @@ Returns the unit exponenet in base 10 for the element.
 uint32_t IOHIDElementGetUnitExponent(IOHIDElementRef element);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the unit exponent.
 
-#### Discussion
+## Discussion
 
 The unit exponent property is described in more detail in Section 6.2.2.7 of the "Device Class Definition for Human Interface Devices(HID)" Specification, Version 1.11.
 

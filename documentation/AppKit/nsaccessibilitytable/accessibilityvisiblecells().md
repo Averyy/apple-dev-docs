@@ -19,11 +19,11 @@ optional func accessibilityVisibleCells() -> [Any]?
 - (NSArray *) accessibilityVisibleCells;
 ```
 
-#### Return Value
+## Return Value
 
 An array containing the currently visible cells.
 
-#### Discussion
+## Discussion
 
 This method is the getter for the [`NSAccessibilityProtocol`](../nsaccessibilityprotocol.md) protocol’s [`accessibilityVisibleCells`](../nsaccessibility-c.protocol/accessibilityvisiblecells.md) property.
 

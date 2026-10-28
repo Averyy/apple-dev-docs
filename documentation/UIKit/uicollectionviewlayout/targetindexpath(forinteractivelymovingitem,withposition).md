@@ -23,11 +23,11 @@ func targetIndexPath(forInteractivelyMovingItem previousIndexPath: IndexPath, wi
 - (NSIndexPath *) targetIndexPathForInteractivelyMovingItem:(NSIndexPath *) previousIndexPath withPosition:(CGPoint) position;
 ```
 
-#### Return Value
+## Return Value
 
 The index path corresponding to the specified location in the collection view.
 
-#### Discussion
+## Discussion
 
 During interactive movement of an item, this method maps points in the collection view’s bounds rectangle to index paths that correspond to the locations of those points. The default implementation of this method searches for an existing cell at the specified location and returns the index path of that cell. If there are multiple cells at the same location, the method returns the topmost cell—that is, the cell whose [`zIndex`](../uicollectionviewlayoutattributes/zindex.md) layout attribute value is greatest.
 

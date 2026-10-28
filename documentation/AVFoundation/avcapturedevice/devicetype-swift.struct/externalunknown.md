@@ -21,7 +21,7 @@ static let externalUnknown: AVCaptureDevice.DeviceType
 extern AVCaptureDeviceType const AVCaptureDeviceTypeExternalUnknown;
 ```
 
-#### Discussion
+## Discussion
 
 In macOS, use this type to specify external devices, such as an iPhone camera.
 

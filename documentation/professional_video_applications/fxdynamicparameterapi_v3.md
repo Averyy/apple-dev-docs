@@ -19,7 +19,7 @@ protocol FxDynamicParameterAPI_v3
 @protocol FxDynamicParameterAPI_v3
 ```
 
-#### Overview
+## Overview
 
 With this API your plugin can create and remove parameters outside of its `-addParameters` method. It can also get and set various properties of parameters during run-time, as well, such as the minimum and maximum allowable values.
 

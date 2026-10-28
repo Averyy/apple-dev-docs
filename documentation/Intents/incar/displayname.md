@@ -31,7 +31,7 @@ var displayName: String? { get }
 @property (atomic, copy, readonly, nullable) NSString * displayName;
 ```
 
-#### Discussion
+## Discussion
 
 The system displays this value when presenting information about the electric vehicle. The user configures the display name in your app.
 

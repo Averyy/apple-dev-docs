@@ -24,11 +24,11 @@ class func placeholderURL(for url: URL) -> URL
 + (NSURL *) placeholderURLForURL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 A placeholder URL for the given document.
 
-#### Discussion
+## Discussion
 
 This method maps file URLs into their corresponding placeholder URLs. You typically call this method to generate the placeholder URL before calling [`writePlaceholder(at:withMetadata:)`](./writeplaceholder%28at,withmetadata%29.md).
 

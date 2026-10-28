@@ -16,7 +16,7 @@ Initiates a request to open the extension’s containing app.
 final func openApplication(for userActivity: NSUserActivity) async throws
 ```
 
-#### Discussion
+## Discussion
 
 The system requests authentication before opening the app, if needed.
 

@@ -20,11 +20,11 @@ var descriptor: NSAppleEventDescriptor? { get }
 @property (copy, readonly, nullable) NSAppleEventDescriptor * descriptor;
 ```
 
-#### Return Value
+## Return Value
 
 An Apple event descriptor of type `typeObjectSpecifier`.
 
-#### Discussion
+## Discussion
 
 If the receiver was created with [`init(descriptor:)`](./init%28descriptor%29.md), the passed-in descriptor is returned. Otherwise, a new descriptor is created and returned, autoreleased.
 

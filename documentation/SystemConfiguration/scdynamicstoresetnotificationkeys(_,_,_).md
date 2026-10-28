@@ -19,7 +19,7 @@ func SCDynamicStoreSetNotificationKeys(_ store: SCDynamicStore, _ keys: CFArray?
 Boolean SCDynamicStoreSetNotificationKeys(SCDynamicStoreRef store, CFArrayRef keys, CFArrayRef patterns);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the set of notification keys and patterns was successfully updated; otherwise, `FALSE`.
 

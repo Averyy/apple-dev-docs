@@ -15,7 +15,7 @@ Invokes your word callback function.
 void InvokeSpeechWordUPP(SpeechChannel chan, SRefCon refCon, unsigned long wordPos, UInt16 wordLen, SpeechWordUPP userUPP);
 ```
 
-#### Discussion
+## Discussion
 
 You should not need to call the `InvokeSpeechWordUPP` function,because the system calls your word callback function for you.
 

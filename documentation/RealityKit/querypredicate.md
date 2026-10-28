@@ -24,7 +24,7 @@ struct QueryPredicate<Value>
 
 - [Implementing systems for entities in a scene](./implementing-systems-for-entities-in-a-scene.md)
 
-#### Overview
+## Overview
 
 Query predicates specify the entities an [`EntityQuery`](./entityquery.md) returns from a scene. Predicates describe entities based on which components they contain, or on the entity’s relationship to other entities in the scene. For example, you can build a predicate to retrieve the model entities from a scene.
 
@@ -32,7 +32,7 @@ Query predicates specify the entities an [`EntityQuery`](./entityquery.md) retur
 let modelPredicate = QueryPredicate.has(ModelComponent.self)
 ```
 
-##### Create compound predicates
+### Create compound predicates
 
 You can combine predicates using Swift’s logical operators to create compound predicates. [`QueryPredicate`](./querypredicate.md) supports Swift’s logical `AND` (`&&`), logical `OR` (`||`), and logical `NOT` (`!`) operators. The following code shows how to build a compound predicate that returns all entities that are either model entities or anchor entities:
 

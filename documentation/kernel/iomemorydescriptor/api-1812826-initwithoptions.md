@@ -17,11 +17,11 @@ virtual bool initWithOptions(
  IOMapper *mapper = kIOMapperSystem);
 ```
 
-#### Return Value
+## Return Value
 
 true on success, false on failure.
 
-#### Overview
+## Overview
 
 Note this function can be used to re-init a previously created memory descriptor. For a more complete description see [`withOptions`](./api-1441825-withoptions.md).
 

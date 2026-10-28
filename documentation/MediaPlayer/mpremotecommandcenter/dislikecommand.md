@@ -25,7 +25,7 @@ var dislikeCommand: MPFeedbackCommand { get }
 @property (nonatomic, readonly) MPFeedbackCommand * dislikeCommand;
 ```
 
-#### Discussion
+## Discussion
 
 Use the object in this property to register your app’s handler for disliking the current track. Use your handler to register the user’s dislike for a track, artist, or whatever is appropriate for your app. You can disable the command if your app does not support it.
 

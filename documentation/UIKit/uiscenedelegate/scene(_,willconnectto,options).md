@@ -29,7 +29,7 @@ optional func scene(_ scene: UIScene, willConnectTo session: UISceneSession, opt
 - [About the app launch sequence](../about-the-app-launch-sequence.md)
 - [Transitioning to the UIKit scene-based life cycle](../transitioning-to-the-uikit-scene-based-life-cycle.md)
 
-#### Discussion
+## Discussion
 
 This method is called when your app creates or restores an instance of your user interface.
 

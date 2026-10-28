@@ -25,7 +25,7 @@ var storageMode: MTLStorageMode { get }
 @property (readonly) MTLStorageMode storageMode;
 ```
 
-#### Discussion
+## Discussion
 
 Any resources you allocate on the heap have this storage mode.
 

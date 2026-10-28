@@ -25,7 +25,7 @@ func CFArrayRemoveValueAtIndex(_ theArray: CFMutableArray!, _ idx: CFIndex)
 extern void CFArrayRemoveValueAtIndex(CFMutableArrayRef theArray, CFIndex idx);
 ```
 
-#### Discussion
+## Discussion
 
 All values in `theArray` with indices larger than `idx` have their indices decreased by one.
 

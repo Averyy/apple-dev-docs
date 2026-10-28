@@ -24,7 +24,7 @@ class MTLSharedEventHandle
 @interface MTLSharedEventHandle : NSObject
 ```
 
-#### Overview
+## Overview
 
 To create a `MTLSharedEventHandle` instance, call the [`makeSharedEventHandle()`](./mtlsharedevent/makesharedeventhandle%28%29.md) method on an [`MTLSharedEvent`](./mtlsharedevent.md) instance. Use an XPC conection to pass a `MTLSharedEventHandle` instance to another process. To recreate the event, call the [`makeSharedEvent(handle:)`](./mtldevice/makesharedevent%28handle%29.md) on an [`MTLDevice`](./mtldevice.md) instance.
 

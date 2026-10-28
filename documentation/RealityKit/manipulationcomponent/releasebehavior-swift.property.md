@@ -15,7 +15,7 @@ The behavior to apply to the object’s transform when someone releases it.
 var releaseBehavior: ManipulationComponent.ReleaseBehavior
 ```
 
-#### Discussion
+## Discussion
 
 By default, the `releaseBehavior` is [`reset`](./releasebehavior-swift.struct/reset.md), which animates the object to its initial pose relative to its parent.
 

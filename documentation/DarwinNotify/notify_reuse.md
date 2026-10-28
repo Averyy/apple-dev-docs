@@ -23,7 +23,7 @@ var NOTIFY_REUSE: Int32 { get }
 #define NOTIFY_REUSE
 ```
 
-#### Discussion
+## Discussion
 
 Flag bits used for registration.
 

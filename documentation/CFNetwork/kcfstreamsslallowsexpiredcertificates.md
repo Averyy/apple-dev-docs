@@ -23,7 +23,7 @@ let kCFStreamSSLAllowsExpiredCertificates: CFString
 extern CFStringRef const kCFStreamSSLAllowsExpiredCertificates;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the value of this key is `kCFBooleanFalse` (expired certificates are not allowed).
 

@@ -6,13 +6,13 @@
 
 Create reusable code, organize it in a lightweight way, and share it across your projects and with other developers.
 
-#### Overview
+## Overview
 
 Swift packages are reusable components of Swift, Objective-C, Objective-C++, C, or C++ code that developers can use in their projects. They bundle source files, binaries, and resources in a way that’s easy to use in your app’s project.
 
 Each Swift package requires a `Package.swift` file in the main directory of the package — referred to as the package manifest. When you create a Swift package, you use the PackageDescription library in the package manifest to list dependencies, configure localized resources, and set other configuration options.
 
-For example, the package manifest from the [SlothCreator: Building DocC Documentation in Xcode](../Xcode/slothcreator_building_docc_documentation_in_xcode.md) sample project below defines the SlothCreator package, with the SlothCreator library in it. It specifies the deployment targets, and that its resources are in the `Resources` folder.
+For example, the package manifest from the [SlothCreator: Building DocC Documentation in Xcode](../Xcode/slothcreator-building-docc-documentation-in-xcode.md) sample project below defines the SlothCreator package, with the SlothCreator library in it. It specifies the deployment targets, and that its resources are in the `Resources` folder.
 
 ```swift
 import PackageDescription

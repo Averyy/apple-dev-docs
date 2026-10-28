@@ -10,7 +10,7 @@ Implement Action Extensions to provide quick access to commonly used features of
 - macOS 10.14+
 - Xcode 11.3+
 
-#### Overview
+## Overview
 
 Action Extensions can let users access features of your app directly from macOS. For example, if your app contains the functionality to perform image processing, an Action Extension could allow users to process their images directly from Finder. This sample code project creates three Action Extensions, two for processing images and one for processing text. One extension also presents a user interface and all three are available from both the Touch Bar and Finder Preview pane.
 
@@ -25,7 +25,7 @@ The extensions in this sample all accept file data from Finder, process it, and 
 
 By default, new Action Extensions are not enabled in macOS. After running this sample code project, enable the extensions by selecting the “Create Thumbnail”, “Make PNG Opaque”, and “Convert Text to Upper Case” checkboxes in the Actions, Finder, and Touch Bar categories of the [Extensions System Preferences](https://support.apple.com/guide/mac-help/change-extensions-preferences-mchl8baf92fe/mac).
 
-##### Accept File Data
+### Accept File Data
 
 The system makes Action Extensions available depending on the type of data that the user has selected in Finder. For example, if the user selects a `PNG` file, Action Extensions that support images are shown. Each of the extensions in this sample operate on different kinds of input content:
 
@@ -55,7 +55,7 @@ SUBQUERY (
 
 For more information on defining extension activation rules, see the [App Extension Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/ExtensionScenarios.html#//apple_ref/doc/uid/TP40014214-CH21-SW8).
 
-##### Process Input Attachments
+### Process Input Attachments
 
 When a user invokes an Action Extension, the system instantiates the [NSExtensionPrincipalClass](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AppExtensionKeys.html#//apple_ref/doc/uid/TP40014212-SW3) specified in the `Info.plist` and asks it to handle the request through the [`NSExtensionRequestHandling`](../Foundation/nsextensionrequesthandling.md) protocol.
 
@@ -91,7 +91,7 @@ Finally, signal that the action is complete by calling [`completeRequest(returni
 
 > **Note**: If you wish to preserve the input files instead of replacing them, it is important that `NSItemProvider` objects for the original input files are also included in the returned array of item providers. The `ThumbnailAction` target in this sample code project demonstrates passing back both the original input files as well as new thumbnail files.
 
-##### Process Text Data
+### Process Text Data
 
 The `UppercaseAction` extension accepts any text, either supplied as attachments in the same way as `ThumbnailAction` and `RemoveOpacityAction`, or from other sources such as a standard `NSTextField` control. Check the [`attributedContentText`](../Foundation/nsextensionitem/attributedcontenttext.md) property for input from text fields.
 
@@ -103,7 +103,7 @@ outputItem.attributedContentText = NSAttributedString(string: inputContent.strin
 context.completeRequest(returningItems: [outputItem], completionHandler: nil)
 ```
 
-##### Present a User Interface
+### Present a User Interface
 
 If the action requires user interaction then the extension may present a user interface. Set the [NSExtensionPointIdentifier](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AppExtensionKeys.html#//apple_ref/doc/uid/TP40014212-SW15) key in the `Info.plist` to `com.apple.ui-services` and ensure that the principal class is a subclass of  [`NSViewController`](./nsviewcontroller.md). If the extension does not require user interaction, specify `com.apple.services` and have the principal class conform to `NSExtensionRequestHandling`.
 
@@ -120,7 +120,7 @@ let cancelError = NSError(domain: NSCocoaErrorDomain, code: NSUserCancelledError
 context.cancelRequest(withError: cancelError)
 ```
 
-##### Support the Touch Bar and Finder Preview Pane
+### Support the Touch Bar and Finder Preview Pane
 
 Users may also access Action Extensions from the Touch Bar and from the Quick Actions menu in Finder’s Preview pane. Set both `NSExtensionServiceAllowsFinderPreviewItem` and `NSExtensionServiceAllowsTouchBarItem` to `YES` in the `Info.plist` to support the Touch Bar and Preview Pane.
 

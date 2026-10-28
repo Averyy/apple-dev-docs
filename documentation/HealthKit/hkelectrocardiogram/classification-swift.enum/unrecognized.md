@@ -24,7 +24,7 @@ case unrecognized
 HKElectrocardiogramClassificationUnrecognized
 ```
 
-#### Discussion
+## Discussion
 
 For example, if the Apple Watch recording the sample is running a newer version of watchOS, it may support classification types that aren’t included in this version. You can check the version of the algorithm used to classify the ECG by reading the value of the sample’s [`HKMetadataKeyAppleECGAlgorithmVersion`](../../hkmetadatakeyappleecgalgorithmversion.md) metadata key.
 

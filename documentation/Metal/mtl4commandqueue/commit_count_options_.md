@@ -20,7 +20,7 @@ Enqueues an array of command buffer instances for execution with a set of option
 - (void) commit:(id<MTL4CommandBuffer> const[]) commandBuffers count:(NSUInteger) count options:(MTL4CommitOptions *) options;
 ```
 
-#### Discussion
+## Discussion
 
 Provide an [`MTL4CommitOptions`](../mtl4commitoptions.md) instance to configure the commit operation.
 

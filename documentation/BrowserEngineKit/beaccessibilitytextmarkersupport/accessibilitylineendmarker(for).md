@@ -25,7 +25,7 @@ func accessibilityLineEndMarker(for marker: BEAccessibilityTextMarker) -> BEAcce
 - (BEAccessibilityTextMarker *) accessibilityLineEndMarkerForMarker:(BEAccessibilityTextMarker *) marker;
 ```
 
-#### Return Value
+## Return Value
 
 A text marker that represents the end of the line that contains `marker`, or `nil` if there isn’t one.
 

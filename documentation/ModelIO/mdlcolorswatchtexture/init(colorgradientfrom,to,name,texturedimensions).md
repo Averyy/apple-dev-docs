@@ -24,11 +24,11 @@ init(colorGradientFrom color1: CGColor, to color2: CGColor, name: String?, textu
 - (instancetype) initWithColorGradientFrom:(CGColorRef) color1 toColor:(CGColorRef) color2 name:(NSString *) name textureDimensions:(vector_int2) textureDimensions;
 ```
 
-#### Return Value
+## Return Value
 
 A new color swatch texture object.
 
-#### Discussion
+## Discussion
 
 Model I/O interpolates between the `color1` and `color2` colors by hue, saturation, and lightness to create a color gradient when generating texture data.
 

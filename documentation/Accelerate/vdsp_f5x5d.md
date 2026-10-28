@@ -21,7 +21,7 @@ Filters a double-precision image by performing a 2D convolution with a 5 x 5 ker
 extern void vDSP_f5x5D(const double *__A, vDSP_Length __NR, vDSP_Length __NC, const double *__F, double *__C);
 ```
 
-#### Discussion
+## Discussion
 
 This is the same as [`vDSP_f5x5`](./vdsp_f5x5.md), except for the types of vectors `A`, `F`, and `C`.
 

@@ -22,7 +22,7 @@ extern simd_float3 NINearbyObjectDirectionNotAvailable;
 
 - [Initiating and maintaining a session](./initiating-and-maintaining-a-session.md)
 
-#### Discussion
+## Discussion
 
 The framework sets [`direction`](./ninearbyobject/direction-5xcld.md) to the value of this property when it’s unable to acquire the nearby object’s direction at any given time.
 

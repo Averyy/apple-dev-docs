@@ -27,7 +27,7 @@ func write(_ data: Data)
 - (void) writeData:(NSData *) data;
 ```
 
-#### Discussion
+## Discussion
 
 If the handle represents a file, writing takes place at the file pointer’s current position. After it writes the data, the method advances the file pointer by the number of bytes written.
 

@@ -24,7 +24,7 @@ static let numberOfAlcoholicBeverages: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierNumberOfAlcoholicBeverages;
 ```
 
-#### Discussion
+## Discussion
 
 Samples matching the [`numberOfAlcoholicBeverages`](./numberofalcoholicbeverages.md) identifier measure the number of standard alcoholic drinks consumed by the user. A standard drink is one beer, glass of wine, or mixed drink made with spirits. The samples use count units (described in [`HKUnit`](../hkunit.md)) to measure cumulative values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)).
 

@@ -19,7 +19,7 @@ static let pitchMod: NSSpeechSynthesizer.SpeechPropertyKey
 extern NSSpeechPropertyKey const NSSpeechPitchModProperty;
 ```
 
-#### Discussion
+## Discussion
 
 An [`NSNumber`](../../../Foundation/nsnumber.md) object that specifies the synthesizer’s pitch modulation.
 

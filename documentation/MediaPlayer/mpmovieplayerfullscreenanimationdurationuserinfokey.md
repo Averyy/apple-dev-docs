@@ -22,7 +22,7 @@ let MPMoviePlayerFullscreenAnimationDurationUserInfoKey: String
 extern NSString * const MPMoviePlayerFullscreenAnimationDurationUserInfoKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is an [`NSNumber`](../Foundation/nsnumber.md) containing a double value. This value represents the duration (measured in seconds) of the animation used to transition in or out of full-screen mode.
 

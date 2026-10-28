@@ -15,7 +15,7 @@ On visionOS, by looking at the edge of a scroll view the content can automatical
 static func look(axes: Axis.Set) -> ScrollInputKind
 ```
 
-#### Discussion
+## Discussion
 
 This is an opt-in behavior.
 

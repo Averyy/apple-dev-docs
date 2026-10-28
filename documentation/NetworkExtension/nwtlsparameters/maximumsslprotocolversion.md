@@ -26,7 +26,7 @@ var maximumSSLProtocolVersion: Int { get set }
 @property (assign) NSUInteger maximumSSLProtocolVersion;
 ```
 
-#### Discussion
+## Discussion
 
 Values for `SSLProtocol` are defined in `<Security/SecureTransport.h>`. If set to a non-zero value, the SSL handshake will not accept any protocol version greater than the maximum.
 

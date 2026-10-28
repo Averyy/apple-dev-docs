@@ -21,7 +21,7 @@ The minimum amount of water vapor in the air for the day.
 var minimumHumidity: Double
 ```
 
-#### Discussion
+## Discussion
 
 Relative humidity measures the amount of water vapor in the air, compared to the maximum amount that the air can hold at the current temperature.
 

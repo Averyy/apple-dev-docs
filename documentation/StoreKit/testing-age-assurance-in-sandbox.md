@@ -5,13 +5,13 @@
 
 Check that your app responds correctly to age assurance scenarios and consent revocation using the sandbox environment.
 
-#### Overview
+## Overview
 
 You can provide parents and guardians with the ability to make decisions about whether their child can continue to access your app or parts of your app. [Declared Age Range](../DeclaredAgeRange/DeclaredAgeRange.md) API enables you to request people’s age and create custom experiences based on the information they share, and [PermissionKit](../PermissionKit/PermissionKit.md) gives you the ability to provide parents or guardians the opportunity to decide if their child can continue using your app or parts of your app after a significant update. Make sure your app implements age restrictions and processes permission revocation as parents or guardians instruct.
 
 In the sandbox environment you can test how your app responds to various age range scenarios, location-based restrictions, approval state changes, and consent revocation. Focus on testing age range variations across your target audience, and consider regulatory compliance in different regions.
 
-##### Navigate to your Sandbox Apple Account settings
+### Navigate to your Sandbox Apple Account settings
 
 1. Confirm that you have enabled Developer Mode. If you haven’t, see [Enabling Developer Mode on a device](../Xcode/enabling-developer-mode-on-a-device.md).
 2. Open Settings and select Developer.
@@ -19,7 +19,7 @@ In the sandbox environment you can test how your app responds to various age ran
 4. If you’re not logged in to an account, select Sign In to authenticate yourself.
 5. Once you’ve authenticated, select your Apple Account.
 
-##### Test age assurance on device
+### Test age assurance on device
 
 1. Follow the steps from “Navigate to your Sandbox Apple Account.”
 2. In the Sandbox Apple Account modal, select Manage.
@@ -42,7 +42,7 @@ When you select a scenario, the Declared Age Range API returns the corresponding
 
 Check the `AgeRangeDeclaration` field in your Declared Age Range API responses to determine status.
 
-##### Test app consent revocation
+### Test app consent revocation
 
 To test the notification when a parent or guardian revokes access to your app on behalf of their child, follow these steps:
 

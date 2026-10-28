@@ -21,7 +21,7 @@ A unit-space rectangle defining how much of the source image to draw.
 var sourceRect: CGRect
 ```
 
-#### Discussion
+## Discussion
 
 The results are undefined if this rectangle selects areas outside the `[0, 1]` range in either axis.
 

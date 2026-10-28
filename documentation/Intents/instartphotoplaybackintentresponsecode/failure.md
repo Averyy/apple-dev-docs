@@ -25,7 +25,7 @@ case failure
 INStartPhotoPlaybackIntentResponseCodeFailure
 ```
 
-#### Discussion
+## Discussion
 
 Use this code for both transient and unrecoverable errors that would prevent your app from searching the user’s photos or starting the slideshow.
 

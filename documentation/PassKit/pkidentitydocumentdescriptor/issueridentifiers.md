@@ -23,7 +23,7 @@ var issuerIdentifiers: [Data] { get set }
 @property (nonatomic, copy) NSArray<NSData *> * issuerIdentifiers;
 ```
 
-#### Discussion
+## Discussion
 
 An empty list means any document signer certificate is acceptable.
 

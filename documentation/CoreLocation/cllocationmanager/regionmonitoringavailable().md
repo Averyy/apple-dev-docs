@@ -25,17 +25,17 @@ class func regionMonitoringAvailable() -> Bool
 + (BOOL) regionMonitoringAvailable;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if region monitoring is available; [`false`](../../Swift/false.md) if it is not.
 
-#### Discussion
+## Discussion
 
 Support for region monitoring may not be available on all devices and models. You should check the value of this property before attempting to set up any regions or initiate region monitoring.
 
 Even if region monitoring support is present on a device, it may still be unavailable because the user disabled it for the current app or for all apps.
 
-##### Special Considerations
+### Special Considerations
 
 This class is deprecated in iOS 7 and later but is still supported in macOS.
 

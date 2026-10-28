@@ -25,7 +25,7 @@ var applicableEncodeSampleRates: [NSNumber]? { get }
 @property (nonatomic, readonly, nullable) NSArray<NSNumber *> * applicableEncodeSampleRates;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns `nil` if you’re not encoding.
 

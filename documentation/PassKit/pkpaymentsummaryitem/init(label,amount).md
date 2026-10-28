@@ -24,7 +24,7 @@ convenience init(label: String, amount: NSDecimalNumber)
 + (instancetype) summaryItemWithLabel:(NSString *) label amount:(NSDecimalNumber *) amount;
 ```
 
-#### Return Value
+## Return Value
 
 A summary item with the given label and amount. The resulting item has a [`PKPaymentSummaryItemType.final`](../pkpaymentsummaryitemtype/final.md) type.
 

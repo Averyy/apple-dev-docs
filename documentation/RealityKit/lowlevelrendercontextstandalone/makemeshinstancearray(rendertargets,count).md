@@ -18,11 +18,11 @@ Creates a fixed-capacity ordered collection of mesh instances for the given rend
 final func makeMeshInstanceArray(renderTargets: LowLevelRenderTarget.DescriptorSet, count: Int) throws -> LowLevelMeshInstanceArray
 ```
 
-#### Return Value
+## Return Value
 
 A newly created [`LowLevelMeshInstanceArray`](../lowlevelmeshinstancearray.md).
 
-#### Discussion
+## Discussion
 
 Pass the resulting array to [`setMeshInstances(_:at:)`](../lowlevelrenderer/setmeshinstances%28_,at%29.md) to submit it for rendering.
 

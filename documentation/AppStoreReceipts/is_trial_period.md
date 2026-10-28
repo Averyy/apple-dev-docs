@@ -20,7 +20,7 @@ string is_trial_period
 - `true`: The subscription is in the free trial period.
 - `false`: The subscription is not in the free trial period.
 
-#### Discussion
+## Discussion
 
 This field is returned in the JSON response, in the [`responseBody.Latest_receipt_info`](./responsebody/latest_receipt_info-data.dictionary.md) and [`responseBody.Receipt.In_app`](./responsebody/receipt-data.dictionary/in_app-data.dictionary.md) arrays.
 

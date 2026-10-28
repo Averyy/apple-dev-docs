@@ -24,7 +24,7 @@ class AVDelegatingPlaybackCoordinatorBufferingCommand
 @interface AVDelegatingPlaybackCoordinatorBufferingCommand : AVDelegatingPlaybackCoordinatorPlaybackControlCommand
 ```
 
-#### Overview
+## Overview
 
 When your app receives this command, update its user interface to indicate that playback is buffering.
 

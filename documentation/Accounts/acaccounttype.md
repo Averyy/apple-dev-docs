@@ -24,7 +24,7 @@ class ACAccountType
 @interface ACAccountType : NSObject
 ```
 
-#### Overview
+## Overview
 
 You don’t create account type objects directly. To obtain an account type object, use the [`accountType(withAccountTypeIdentifier:)`](./acaccountstore/accounttype%28withaccounttypeidentifier%29.md) method or the [`accountType`](./acaccount/accounttype.md) property of an account object. Use the [`accounts(with:)`](./acaccountstore/accounts%28with%29.md) method to obtain all accounts of a particular type.
 

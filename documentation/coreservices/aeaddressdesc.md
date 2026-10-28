@@ -20,7 +20,7 @@ typealias AEAddressDesc = AEDesc
 typedef AEDesc AEAddressDesc;
 ```
 
-#### Discussion
+## Discussion
 
 An address descriptor is identical to a descriptor of data type [`AEDesc`](./aedesc.md); however, the data for an address descriptor must always consist of the address of an application.
 

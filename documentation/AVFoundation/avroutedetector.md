@@ -28,7 +28,7 @@ class AVRouteDetector
 
 - [Supporting AirPlay in your app](./supporting-airplay-in-your-app.md)
 
-#### Overview
+## Overview
 
 If you enable route detection, the object reports whether it detects multiple playback routes. If it does, use [`AVRoutePickerView`](../AVKit/avroutepickerview.md) to present the UI for the user to select an appropriate route.
 

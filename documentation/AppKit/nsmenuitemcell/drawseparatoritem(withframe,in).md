@@ -19,7 +19,7 @@ func drawSeparatorItem(withFrame cellFrame: NSRect, in controlView: NSView)
 - (void) drawSeparatorItemWithFrame:(NSRect) cellFrame inView:(NSView *) controlView;
 ```
 
-#### Discussion
+## Discussion
 
 This method uses the `cellFrame` parameter to calculate the rectangle in which to draw the menu item separator. This method uses the `controlView` to determine whether the separator item should be drawn normally or flipped.
 

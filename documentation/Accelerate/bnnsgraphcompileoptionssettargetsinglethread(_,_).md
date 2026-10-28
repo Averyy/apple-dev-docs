@@ -25,7 +25,7 @@ func BNNSGraphCompileOptionsSetTargetSingleThread(_ options: bnns_graph_compile_
 void BNNSGraphCompileOptionsSetTargetSingleThread(bnns_graph_compile_options_t options, bool value);
 ```
 
-#### Discussion
+## Discussion
 
 The default option is execution on multiple threads.
 

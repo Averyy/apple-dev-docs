@@ -21,7 +21,7 @@ var action: Selector? { get }
 @property (readonly, nullable) SEL action;
 ```
 
-#### Return Value
+## Return Value
 
 The selector of the receiver’s action method.
 

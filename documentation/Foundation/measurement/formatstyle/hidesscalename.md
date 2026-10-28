@@ -23,7 +23,7 @@ var hidesScaleName: Bool { get set }
 
 Available when `UnitType` is `UnitTemperature`.
 
-#### Discussion
+## Discussion
 
 Set `hidesScaleName` to `true` to exclude the unit name from a formatted temperature string. For example, `90°` rather than `90°F` or `90°C` with the [`narrow`](./unitwidth/narrow.md) unit width, or `90 degrees` rather than `90 degrees Celcius` or `90 degrees Fahrenheit` with the [`wide`](./unitwidth/wide.md) width.
 

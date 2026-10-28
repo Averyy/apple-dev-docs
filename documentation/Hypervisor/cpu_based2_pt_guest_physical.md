@@ -19,7 +19,7 @@ var CPU_BASED2_PT_GUEST_PHYSICAL: UInt32 { get }
 CPU_BASED2_PT_GUEST_PHYSICAL
 ```
 
-#### Discussion
+## Discussion
 
 Musr be `0`.
 

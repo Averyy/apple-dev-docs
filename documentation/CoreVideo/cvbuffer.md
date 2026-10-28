@@ -23,7 +23,7 @@ class CVBuffer
 typedef struct __CVBuffer * CVBufferRef;
 ```
 
-#### Overview
+## Overview
 
 Base type for all CoreVideo buffers
 

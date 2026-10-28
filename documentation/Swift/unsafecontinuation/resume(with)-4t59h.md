@@ -23,7 +23,7 @@ func resume(with result: sending Result<T, E>)
 
 Available when `E` conforms to `Error`.
 
-#### Discussion
+## Discussion
 
 A continuation must be resumed exactly once. If the continuation has already resumed, then calling this method results in undefined behavior.
 

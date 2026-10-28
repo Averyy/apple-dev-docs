@@ -19,7 +19,7 @@ var invalidatedDecorationIndexPaths: [NSCollectionView.DecorationElementKind : S
 @property (readonly, nullable) NSDictionary<NSString *,NSSet<NSIndexPath *> *> * invalidatedDecorationIndexPaths;
 ```
 
-#### Discussion
+## Discussion
 
 The keys in this dictionary are the element kind strings of the decoration views. The value for each key is an [`NSSet`](../../Foundation/nsset.md) object containing one or more [`NSIndexPath`](../../Foundation/nsindexpath.md) objects, each of which identifies the section containing the decoration view.
 

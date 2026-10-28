@@ -31,7 +31,7 @@ var registrationPlate: String? { get set }
 @property (atomic, copy, readwrite, nullable) NSString * registrationPlate;
 ```
 
-#### Discussion
+## Discussion
 
 Examples might include “1JBO007” or “SL68 APL” depending on the format used in the specific country or region where the driver registered the car.
 

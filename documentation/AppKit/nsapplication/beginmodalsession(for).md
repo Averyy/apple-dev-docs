@@ -19,11 +19,11 @@ func beginModalSession(for window: NSWindow) -> NSApplication.ModalSession
 - (NSModalSession) beginModalSessionForWindow:(NSWindow *) window;
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the `NSModalSession` structure that represents the session.
 
-#### Discussion
+## Discussion
 
 In a modal session, the app receives mouse events only if they occur in `aWindow`. The window is made key, and if not already visible is placed onscreen using the `NSWindow` method [`center()`](../nswindow/center%28%29.md).
 

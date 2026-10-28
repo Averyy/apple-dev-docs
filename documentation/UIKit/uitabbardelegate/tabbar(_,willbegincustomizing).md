@@ -21,7 +21,7 @@ optional func tabBar(_ tabBar: UITabBar, willBeginCustomizing items: [UITabBarIt
 - (void) tabBar:(UITabBar *) tabBar willBeginCustomizingItems:(NSArray<UITabBarItem *> *) items;
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`beginCustomizingItems(_:)`](../uitabbar/begincustomizingitems%28_%29.md) method of [`UITabBar`](../uitabbar.md) to display the customizing modal view and begin the customizing mode.
 

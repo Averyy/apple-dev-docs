@@ -19,7 +19,7 @@ func sizeToFit()
 - (void) sizeToFit;
 ```
 
-#### Discussion
+## Discussion
 
 The receiver is then moved and resized to wrap around the content view. The receiver’s width is constrained so its title will be fully displayed.
 

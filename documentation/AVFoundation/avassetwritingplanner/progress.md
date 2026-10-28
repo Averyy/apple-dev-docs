@@ -24,7 +24,7 @@ var progress: AVAssetWritingPlannerProgress { get }
 @property (readonly) AVAssetWritingPlannerProgress * progress;
 ```
 
-#### Discussion
+## Discussion
 
 Returns an AVAssetWritingPlannerProgress object that can be queried for per-track and overall progress information.
 

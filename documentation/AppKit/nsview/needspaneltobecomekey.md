@@ -19,7 +19,7 @@ var needsPanelToBecomeKey: Bool { get }
 @property (readonly) BOOL needsPanelToBecomeKey;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`false`](../../Swift/false.md). Subclasses can override this property and use their implementation to determine if the view requires its panel to become the key window so that it can handle keyboard input and navigation. Such a subclass should also override [`acceptsFirstResponder`](../nsresponder/acceptsfirstresponder.md) to return [`true`](../../Swift/true.md).
 

@@ -23,7 +23,7 @@ var animationCurve: UIView.AnimationCurve { get }
 @property (nonatomic, readonly) UIViewAnimationCurve animationCurve;
 ```
 
-#### Discussion
+## Discussion
 
 If you initialized this object using an animation curve, this property reflects the curve you specified. If you initialized the object using the control points for a cubic Bézier curve, the value of this property is undefined.
 

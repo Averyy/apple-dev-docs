@@ -22,7 +22,7 @@ Returns a Boolean value that indicates whether the entity contains the specified
 func contains(_ other: Self) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 - Returns A Boolean value that indicates whether the entity contains the specified volumetric entity.
 

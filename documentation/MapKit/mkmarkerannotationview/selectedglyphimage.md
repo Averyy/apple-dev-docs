@@ -42,7 +42,7 @@ var selectedGlyphImage: NSImage? { get set }
 @property (nonatomic, copy, nullable) NSImage * selectedGlyphImage;
 ```
 
-#### Discussion
+## Discussion
 
 MapKit displays the glyph image when the marker is in the selected state. If you specify an image for this property, you should also specify an image in the [`glyphImage`](./glyphimage.md) property.
 

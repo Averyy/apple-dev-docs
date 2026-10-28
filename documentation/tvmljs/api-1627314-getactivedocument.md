@@ -15,11 +15,11 @@ Retrieves the currently active document.
 Document getActiveDocument();
 ```
 
-#### Return Value
+## Return Value
 
 The currently active document.
 
-#### Discussion
+## Discussion
 
 The currently active document is the document that the user is interacting with. It can be the document on top of the navigation stack or a modally presented document. If the a menu bar document is the top most document, this function returns the document that is selected in the Menu Bar.
 

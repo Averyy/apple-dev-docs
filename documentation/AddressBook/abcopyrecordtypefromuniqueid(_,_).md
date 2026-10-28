@@ -19,7 +19,7 @@ func ABCopyRecordTypeFromUniqueId(_ addressBook: ABAddressBookRef!, _ uniqueId: 
 extern CFStringRefABCopyRecordTypeFromUniqueId(ABAddressBookRef addressBook, CFStringRef uniqueId);
 ```
 
-#### Return Value
+## Return Value
 
 A string with the name of the type for the record that matches the given unique ID. You are responsible for releasing this object.
 

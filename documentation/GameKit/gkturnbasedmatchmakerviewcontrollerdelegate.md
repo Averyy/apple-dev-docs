@@ -28,7 +28,7 @@ protocol GKTurnBasedMatchmakerViewControllerDelegate : NSObjectProtocol
 
 - [Starting turn-based matches and passing turns between players](./starting-turn-based-matches-and-passing-turns-between-players.md)
 
-#### Overview
+## Overview
 
 To receive notifications when a player cancels turn-based matchmaking or an error occurs, implement this protocol in the [`GKTurnBasedMatchmakerViewController`](./gkturnbasedmatchmakerviewcontroller.md) object’s delegate.
 

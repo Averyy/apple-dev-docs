@@ -27,7 +27,7 @@ optional func photoOutput(_ output: AVCapturePhotoOutput, willCapturePhotoFor re
 
 - [Tracking photo capture progress](../tracking-photo-capture-progress.md)
 
-#### Discussion
+## Discussion
 
 The photo output calls this method as close as possible to the initial moment of capture. If the shutter sound is enabled, this call occurs immediately after the photo output begins playing the shutter sound.
 

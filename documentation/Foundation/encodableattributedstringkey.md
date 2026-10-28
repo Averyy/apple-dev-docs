@@ -21,7 +21,7 @@ A protocol that defines how an attribute key encodes its value.
 protocol EncodableAttributedStringKey : AttributedStringKey
 ```
 
-#### Overview
+## Overview
 
 Implement this protocol to make an attribute encodable. Encoding an [`AttributedString`](./attributedstring.md) or [`AttributeContainer`](./attributecontainer.md) drops any attributes whose types don’t conform to this protocol.
 

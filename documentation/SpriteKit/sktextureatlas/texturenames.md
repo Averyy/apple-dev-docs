@@ -25,7 +25,7 @@ var textureNames: [String] { get }
 @property (nonatomic, readonly) NSArray<NSString *> * textureNames;
 ```
 
-#### Discussion
+## Discussion
 
 The property holds an array of [`NSString`](../../Foundation/nsstring.md) objects. Each string is the name of a texture stored in the atlas. The count of the array is the number of textures stored in the atlas.
 

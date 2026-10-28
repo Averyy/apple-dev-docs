@@ -29,15 +29,15 @@ class OutputStream
 
 - [Uploading streams of data](./uploading-streams-of-data.md)
 
-#### Overview
+## Overview
 
 [`OutputStream`](./outputstream.md) is “toll-free bridged” with its Core Foundation counterpart, [`CFWriteStream`](../CoreFoundation/cfwritestream.md). For more information on toll-free bridging, see [Toll-Free Bridging](https://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2).
 
-##### Subclassing Notes
+### Subclassing Notes
 
 `NSOutputStream` is a concrete subclass of `NSStream` that lets you write data to a stream. Although `NSOutputStream` is probably sufficient for most situations requiring this capability, you can create a subclass of `NSOutputStream` if you want more specialized behavior (for example, you want to record statistics on the data in a stream).
 
-###### Methods to Override
+#### Methods to Override
 
 To create a subclass of `NSOutputStream` you may have to implement initializers for the type of stream data supported and suitably reimplement existing initializers. You must also provide complete implementations of the following methods:
 

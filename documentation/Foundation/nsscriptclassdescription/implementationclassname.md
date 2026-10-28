@@ -20,11 +20,11 @@ var implementationClassName: String? { get }
 @property (copy, readonly, nullable) NSString * implementationClassName;
 ```
 
-#### Return Value
+## Return Value
 
 An Objective-C class name.
 
-#### Discussion
+## Discussion
 
 The name returned by the [`className`](./classname.md) method for an instance of `NSScriptClassDescription` resulting from an sdef class declaration is the human-readable name for the class—that is, the name that is used in a script. To obtain the name of the Objective-C class instantiated to implement the class, use `implementationClassName`.
 

@@ -15,7 +15,7 @@ Set or get the surface opacity.
 static const NSOpenGLContextParameter NSOpenGLCPSurfaceOpacity;
 ```
 
-#### Discussion
+## Discussion
 
 If the opacity is set to 1 (the default), the surface is opaque. If the value is 0, the surface is non-opaque.
 

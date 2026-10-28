@@ -25,7 +25,7 @@ var device: any MTLDevice { get }
 @property (readonly) id<MTLDevice> device;
 ```
 
-#### Discussion
+## Discussion
 
 You can only use this function object with this [`MTLDevice`](../mtldevice.md).
 

@@ -14,7 +14,7 @@ The value of the specified geometric property (defined using ) of the currently-
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Geometric Property (float)**:
 
@@ -71,12 +71,12 @@ The value of the specified geometric property (defined using ) of the currently-
 | --- | --- |
 | `Out` | Vector3f |
 
-#### Parameter descriptions
+## Parameter descriptions
 
 - **`Geomprop`**: The name of the geometric property to be read.
 - **`Default`**: The value the node returns if it’s unable to read the geometric property.
 
-#### Discussion
+## Discussion
 
 The Geometric Property node attempts to return the value of the geometric property with the name defined by the `Geomprop` parameter. If that property doesn’t exist or there’s an error retrieving the property’s value, the node outputs the value of the `Default` parameter.
 

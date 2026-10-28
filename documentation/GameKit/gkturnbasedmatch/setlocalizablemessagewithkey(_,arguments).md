@@ -29,7 +29,7 @@ func setLocalizableMessageWithKey(_ key: String, arguments: [String]?)
 
 - [Sending messages to players in turn-based games](../sending-messages-to-players-in-turn-based-games.md)
 
-#### Discussion
+## Discussion
 
 Invoke this method only when the local player is the current participant and before you invoke a method that generates a turn-based event.
 

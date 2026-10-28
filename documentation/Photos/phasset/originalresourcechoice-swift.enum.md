@@ -24,7 +24,7 @@ enum OriginalResourceChoice
 enum PHOriginalResourceChoice : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Applies to RAW+JPEG assets.
 

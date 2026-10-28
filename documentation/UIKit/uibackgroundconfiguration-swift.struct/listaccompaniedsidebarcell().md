@@ -18,11 +18,11 @@ Creates the default configuration you use to style a cell in an accompanied side
 static func listAccompaniedSidebarCell() -> UIBackgroundConfiguration
 ```
 
-#### Return Value
+## Return Value
 
 The default configuration for a cell in an accompanied sidebar list.
 
-#### Discussion
+## Discussion
 
 Create this configuration to update the styling for the background of a cell in a list. When you apply this configuration to a cell, the background of the cell matches the system default styling for a cell in an accompanied sidebar collection view list, including styling for highlighted and selected states. An accompanied sidebar collection view list is a list that’s in the primary column of a split view controller, accompanied by another list in the split view controller’s supplementary column.
 

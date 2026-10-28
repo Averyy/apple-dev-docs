@@ -25,7 +25,7 @@ case failureRequiringAppLaunch
 INAppendToNoteIntentResponseCodeFailureRequiringAppLaunch
 ```
 
-#### Discussion
+## Discussion
 
 Use this response code when you can’t update the note from your Intents extension but can do so from your app. Don’t use this code for general errors or to force the user to launch your app.
 

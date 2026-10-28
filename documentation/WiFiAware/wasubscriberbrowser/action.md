@@ -17,7 +17,7 @@ The structure that configures the Wi-Fi Aware subscriber operation the network b
 struct Action
 ```
 
-#### Overview
+## Overview
 
 The configuration includes the service and devices it operates on.
 

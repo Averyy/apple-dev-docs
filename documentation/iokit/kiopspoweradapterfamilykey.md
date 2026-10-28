@@ -16,7 +16,7 @@ The power adapter's family code. The value associated with this key is a CFNumbe
 #define kIOPSPowerAdapterFamilyKey
 ```
 
-#### Discussion
+## Discussion
 
 This key may be present in the dictionary returned from [`IOPSCopyExternalPowerAdapterDetails`](./api-1523866-iopscopyexternalpoweradapterdeta.md) This key might not be defined in the adapter details dictionary.
 

@@ -25,7 +25,7 @@ func nw_protocol_options_is_quic(_ options: nw_protocol_options_t) -> Bool
 bool nw_protocol_options_is_quic(nw_protocol_options_t options);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the options object uses the QUIC protocol.
 

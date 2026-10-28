@@ -19,7 +19,7 @@ func autorecalculatesContentBorderThickness(for edge: NSRectEdge) -> Bool
 - (BOOL) autorecalculatesContentBorderThicknessForEdge:(NSRectEdge) edge;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) when the window auto-recalculates the given border’s thickness; otherwise, [`false`](../../Swift/false.md).
 

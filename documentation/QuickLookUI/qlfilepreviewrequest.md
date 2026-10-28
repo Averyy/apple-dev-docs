@@ -19,7 +19,7 @@ class QLFilePreviewRequest
 @interface QLFilePreviewRequest : NSObject
 ```
 
-#### Overview
+## Overview
 
 The system provides a [`QLFilePreviewRequest`](./qlfilepreviewrequest.md) to the [`providePreview(for:completionHandler:)`](./qlpreviewingcontroller/providepreview%28for,completionhandler%29.md) method of your data-based Quick Look extension.
 

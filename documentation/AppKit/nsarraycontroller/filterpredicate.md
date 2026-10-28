@@ -19,7 +19,7 @@ var filterPredicate: NSPredicate? { get set }
 @property (strong, nullable) NSPredicate * filterPredicate;
 ```
 
-#### Discussion
+## Discussion
 
 This property is observable using key-value observing.
 

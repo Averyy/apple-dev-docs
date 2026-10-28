@@ -21,11 +21,11 @@ An effect that replaces a symbol by scaling it up, and scaling a different symbo
 + (instancetype) replaceUpUpTransition;
 ```
 
-#### Return Value
+## Return Value
 
 A new instance of the transition that uses the Up-Up animation.
 
-#### Discussion
+## Discussion
 
 The initial symbol scales up as it’s removed, and the new symbol scales up as it’s added.
 

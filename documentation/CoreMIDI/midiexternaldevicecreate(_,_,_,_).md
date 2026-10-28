@@ -23,11 +23,11 @@ func MIDIExternalDeviceCreate(_ name: CFString, _ manufacturer: CFString, _ mode
 extern OSStatus MIDIExternalDeviceCreate(CFStringRef name, CFStringRef manufacturer, CFStringRef model, MIDIDeviceRef *outDevice);
 ```
 
-#### Return Value
+## Return Value
 
 An `OSStatus` result code.
 
-#### Discussion
+## Discussion
 
 Non-drivers may call this function to create external devices.
 

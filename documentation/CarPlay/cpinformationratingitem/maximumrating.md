@@ -21,7 +21,7 @@ var maximumRating: NSNumber? { get }
 @property (nonatomic, readonly, nullable) NSNumber * maximumRating;
 ```
 
-#### Discussion
+## Discussion
 
 This property is an [`NSNumber`](../../Foundation/nsnumber.md) that contains a value in the range of 1 to 5. The value is a whole number.
 

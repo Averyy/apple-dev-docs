@@ -26,7 +26,7 @@ var particleAction: SKAction? { get set }
 @property (nonatomic, copy, nullable) SKAction * particleAction;
 ```
 
-#### Discussion
+## Discussion
 
 Although you do not have direct access to the particles created by SpriteKit, you can specify an action that all particles execute. Whenever a new particle is created, the emitter tells the particle to run that action. You can use actions to create very sophisticated behaviors.
 

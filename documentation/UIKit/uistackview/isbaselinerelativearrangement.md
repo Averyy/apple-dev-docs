@@ -23,7 +23,7 @@ var isBaselineRelativeArrangement: Bool { get set }
 @property (nonatomic, getter=isBaselineRelativeArrangement) BOOL baselineRelativeArrangement;
 ```
 
-#### Discussion
+## Discussion
 
 If YES, the vertical space between views are measured from the last baseline of a text-based view, to the first baseline of the view below it. Top and bottom views are also positioned so that their closest baseline is the specified distance away from the stack view’s edge. This property is only used by vertical stack views. Use the [`alignment`](./alignment-swift.property.md) property to baseline align views in a horizontal stack view.
 

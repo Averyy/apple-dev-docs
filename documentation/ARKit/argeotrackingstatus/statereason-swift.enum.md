@@ -20,7 +20,7 @@ enum StateReason
 enum ARGeoTrackingStateReason : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 These possible values of [`stateReason`](./statereason-swift.property.md) provide more information about a geotracking session’s current [`state`](./state-swift.property.md).
 

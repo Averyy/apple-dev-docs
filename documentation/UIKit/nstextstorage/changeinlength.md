@@ -23,7 +23,7 @@ var changeInLength: Int { get }
 @property (nonatomic, readonly) NSInteger changeInLength;
 ```
 
-#### Discussion
+## Discussion
 
 This property reflects difference between the current length of the edited range and its length before editing began—that is, before the first call to the [`beginEditing()`](../../Foundation/nsmutableattributedstring/beginediting%28%29.md) method or a single call to the[`edited(_:range:changeInLength:)`](./edited%28_,range,changeinlength%29.md) method. This difference is accumulated with each call to the [`edited(_:range:changeInLength:)`](./edited%28_,range,changeinlength%29.md) method, until the changes are finally processed.
 

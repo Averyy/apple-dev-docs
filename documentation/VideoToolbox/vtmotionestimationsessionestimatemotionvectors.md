@@ -20,11 +20,11 @@ Creates a new pixel buffer that contains motion vectors between the input pixel 
 extern OSStatus VTMotionEstimationSessionEstimateMotionVectors(VTMotionEstimationSessionRef session, CVPixelBufferRef referenceImage, CVPixelBufferRef currentImage, VTMotionEstimationFrameFlags motionEstimationFrameFlags, CFDictionaryRef additionalFrameOptions, VTMotionEstimationOutputHandler outputHandler);
 ```
 
-#### Return Value
+## Return Value
 
 If the call was successful, returns `noErr`; otherwise, returns an error code, such as `kVTMotionEstimationNotSupportedErr`.
 
-#### Discussion
+## Discussion
 
 The motion-estimation session compares the reference frame to the current frame, and generates motion vectors in the form of a `CVPixelBuffer`.
 

@@ -22,7 +22,7 @@ static func zoom(sourceID: some Hashable, in namespace: Namespace.ID) -> ZoomNav
 
 Available when `Self` is `ZoomNavigationTransition`.
 
-#### Discussion
+## Discussion
 
 Indicate the source view using the [`matchedTransitionSource(id:in:)`](../view/matchedtransitionsource%28id,in%29.md) modifier.
 

@@ -16,7 +16,7 @@
 kINQUIRY_Byte56_QAS_Bit
 ```
 
-#### Discussion
+## Discussion
 
 QAS bit definition.
 

@@ -13,11 +13,11 @@ virtual bool HandleProtocolServiceFeature (
  void *serviceValue ) = 0;
 ```
 
-#### Return Value
+## Return Value
 
 True if successful, otherwise false.
 
-#### Overview
+## Overview
 
 HandleProtocolServiceFeature instructs the Protocol Services driver to perform the necessary tasks for the indicated feature.
 

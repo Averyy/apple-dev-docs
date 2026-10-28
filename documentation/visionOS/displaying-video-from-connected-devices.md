@@ -10,15 +10,15 @@ Show video from devices connected with the Developer Strap in your visionOS app.
 - visionOS 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 Apple’s audiovisual frameworks allow your visionOS app to access video from USB video class (UVC) devices connected with the [Developer Strap](https://developer.apple.com/visionos/developer-strap/purchase) for Apple Vision Pro. You can use this functionality to display real-time video in your app. For example, a medical professional can view the output from an endoscopic camera during a procedure. This article outlines the requirements to access UVC devices in visionOS. The sample code project shows a picker for each device connected to Apple Vision Pro, and displays the selected device’s video feed.
 
-##### Add usage descriptions for camera access
+### Add usage descriptions for camera access
 
 To help protect people’s privacy, visionOS limits app access to cameras and other sensors in Apple Vision Pro. You need to add an [`NSCameraUsageDescription`](../BundleResources/information-property-list/nscamerausagedescription.md) to your app’s information property list file to provide a usage description that explains how your app uses the data those sensors provide. People see this description when your app prompts for access to camera data.
 
-##### Create the device picker
+### Create the device picker
 
 Use an [`AVCaptureDevice.DiscoverySession`](../AVFoundation/avcapturedevice/discoverysession.md) to obtain an array of connected devices.
 
@@ -74,7 +74,7 @@ Picker("Device Picker", selection: $previewManager.selectedDevice) {
 }
 ```
 
-##### Display the selected device’s video feed
+### Display the selected device’s video feed
 
 Configure an [`AVCaptureSession`](../AVFoundation/avcapturesession.md) to capture [`AVCaptureDeviceInput`](../AVFoundation/avcapturedeviceinput.md) from the selected device and output it to an [`AVCaptureVideoDataOutput`](../AVFoundation/avcapturevideodataoutput.md).
 
@@ -220,7 +220,7 @@ struct DevicePreview: UIViewRepresentable {
 }
 ```
 
-##### Display a prompt when denying access to the camera
+### Display a prompt when denying access to the camera
 
 If the person denies camera access, the sample app prompts them to grant access in the Settings app. For more information about providing camera access in your app, see [Requesting authorization to capture and save media](../AVFoundation/requesting-authorization-to-capture-and-save-media.md).
 

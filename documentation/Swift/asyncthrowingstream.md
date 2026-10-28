@@ -21,7 +21,7 @@ An asynchronous sequence generated from an error-throwing closure that calls a c
 struct AsyncThrowingStream<Element, Failure> where Failure : Error
 ```
 
-#### Overview
+## Overview
 
 `AsyncThrowingStream` conforms to `AsyncSequence`, providing a convenient way to create an asynchronous sequence without manually implementing an asynchronous iterator. In particular, an asynchronous stream is well-suited to adapt callback- or delegation-based APIs to participate with `async`-`await`.
 
@@ -31,7 +31,7 @@ You initialize an `AsyncThrowingStream` with a closure that receives an `AsyncTh
 
 An arbitrary source of elements can produce elements faster than they are consumed by a caller iterating over them. Because of this, `AsyncThrowingStream` defines a buffering behavior, allowing the stream to buffer a specific number of oldest or newest elements. By default, the buffer limit is `Int.max`, which means it’s unbounded.
 
-##### Adapting Existing Code to Use Streams
+### Adapting Existing Code to Use Streams
 
 To adapt existing callback code to use `async`-`await`, use the callbacks to provide values to the stream, by using the continuation’s `yield(_:)` method.
 

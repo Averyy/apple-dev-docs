@@ -19,7 +19,7 @@ var locationInWindow: NSPoint { get }
 @property (readonly) NSPoint locationInWindow;
 ```
 
-#### Discussion
+## Discussion
 
 This property applies to mouse events. For non-mouse events the value of this property is undefined.
 

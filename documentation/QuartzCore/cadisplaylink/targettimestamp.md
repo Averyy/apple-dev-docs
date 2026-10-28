@@ -28,7 +28,7 @@ var targetTimestamp: CFTimeInterval { get }
 
 - [Optimizing iPhone and iPad apps to support ProMotion displays](../optimizing-iphone-and-ipad-apps-to-support-promotion-displays.md)
 
-#### Discussion
+## Discussion
 
 You can use the target timestamp to cancel or pause long running processes that may overrun the available time between frames in order to maintain a consistent frame rate.
 

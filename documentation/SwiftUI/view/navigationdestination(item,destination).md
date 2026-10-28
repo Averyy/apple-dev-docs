@@ -26,7 +26,7 @@ func navigationDestination<D, C>(item: Binding<Optional<D>>, @ContentBuilder des
 
 - [Understanding the navigation stack](../understanding-the-navigation-stack.md)
 
-#### Discussion
+## Discussion
 
 Add this view modifier to a view inside a [`NavigationStack`](../navigationstack.md) or [`NavigationSplitView`](../navigationsplitview.md) to describe the view that the stack displays when presenting a particular kind of data. Programmatically update the binding to display or remove the view. For example, you can replace the view showing in the detail column of a navigation split view:
 

@@ -25,11 +25,11 @@ func temporarySurface(identifier: String, format: OSType, width: Int, height: In
 - (IOSurface *) temporarySurfaceWithIdentifier:(NSString *) identifier format:(OSType) format width:(size_t) width height:(size_t) height;
 ```
 
-#### Return Value
+## Return Value
 
  An autoreleased `IOSurface` of the requested size and format, or `nil` if the surface could not be created.
 
-#### Discussion
+## Discussion
 
 Use this method when your processor needs an intermediate `IOSurface` to stash data between stages of its work. Core Image manages the lifetime of the returned surface and reuses the underlying allocation across multiple invocations when possible. This is more efficient than allocating a fresh `IOSurface` on each invocation of your processor.
 

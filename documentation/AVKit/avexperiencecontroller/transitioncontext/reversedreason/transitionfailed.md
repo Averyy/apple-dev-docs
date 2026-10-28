@@ -15,7 +15,7 @@ A transition has failed.
 case transitionFailed
 ```
 
-#### Discussion
+## Discussion
 
 This could fail due to changes in the system state after a transition is prepared.
 

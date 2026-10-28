@@ -24,7 +24,7 @@ let AVVideoHeightKey: String
 extern NSString * const AVVideoHeightKey;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an instance of `NSNumber`.
 

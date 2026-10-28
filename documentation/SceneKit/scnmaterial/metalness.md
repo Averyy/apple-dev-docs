@@ -25,7 +25,7 @@ var metalness: SCNMaterialProperty { get }
 @property (nonatomic, readonly) SCNMaterialProperty * metalness;
 ```
 
-#### Discussion
+## Discussion
 
 This property measures only the total intensity of color values; texture contents are best defined in grayscale.
 

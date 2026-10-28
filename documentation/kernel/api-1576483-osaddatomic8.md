@@ -15,11 +15,11 @@
 SInt8 OSAddAtomic8(SInt32 amount, volatile SInt8 *address);
 ```
 
-#### Return Value
+## Return Value
 
 The value before the addition.
 
-#### Discussion
+## Discussion
 
 The OSAddAtomic8 function adds the specified amount to the value at the specified address and returns the original value.
 

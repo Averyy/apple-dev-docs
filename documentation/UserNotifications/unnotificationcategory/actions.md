@@ -32,7 +32,7 @@ var actions: [UNNotificationAction] { get }
 @property (atomic, copy, readonly) NSArray<UNNotificationAction *> * actions;
 ```
 
-#### Discussion
+## Discussion
 
 When displaying a notification assigned to this category, the system adds a button to the notification interface for each action in this property. The system displays these buttons after the notification’s content but before the Dismiss button.
 

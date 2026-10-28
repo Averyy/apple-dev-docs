@@ -30,7 +30,7 @@ func requestUserToken(forDeveloperToken developerToken: String) async throws -> 
 - (void) requestUserTokenForDeveloperToken:(NSString *) developerToken completionHandler:(void (^)(NSString *userToken, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method with your developer token to get a token that authenticates the user in personalized Apple Music API requests. Note that personalized requests return user-specific data. Errors 401 and 403 only occur when requesting a music user token. They do not occur for any of the other Apple Music API requests.
 

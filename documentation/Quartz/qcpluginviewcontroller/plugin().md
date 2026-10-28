@@ -21,7 +21,7 @@ func plugIn() -> QCPlugIn!
 - (QCPlugIn *) plugIn;
 ```
 
-#### Return Value
+## Return Value
 
 The `QCPlugIn` object associated with the view controller for the custom patch.
 

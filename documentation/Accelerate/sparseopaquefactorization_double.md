@@ -29,7 +29,7 @@ typedef struct { ... } SparseOpaqueFactorization_Double;
 
 - [Solving systems using direct methods](./solving-systems-using-direct-methods.md)
 
-#### Overview
+## Overview
 
 Use the [`SparseCleanup(_:)`](./sparsecleanup%28_%29-3cnxt.md) function to free resources that these objects hold.
 

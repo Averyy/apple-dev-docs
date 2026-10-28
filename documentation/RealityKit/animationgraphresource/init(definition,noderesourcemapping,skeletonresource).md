@@ -20,7 +20,7 @@ Compiles an animation graph definition into a resource that can drive animation 
 convenience init(definition: Data, nodeResourceMapping: [Int : AnimationResource] = [:], skeletonResource: SkeletonResource) throws
 ```
 
-#### Discussion
+## Discussion
 
 To validate a definition without producing a resource — for example, when surfacing errors in editor tooling — call [`validate(definition:nodeResourceMapping:skeletonResource:)`](./validate%28definition,noderesourcemapping,skeletonresource%29.md) instead.
 

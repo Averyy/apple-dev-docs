@@ -19,7 +19,7 @@ Generates predictions for an array of images.
 func predictions(from images: [URL]) throws -> [String]
 ```
 
-#### Return Value
+## Return Value
 
 An array of prediction labels for the images. Each label’s index corresponds to the image’s index in the input array.
 

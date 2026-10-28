@@ -20,7 +20,7 @@ A structure that contains the top three rows of a 4x4 matrix of 32-bit floating-
 typealias MTLPackedFloat4x3 = _MTLPackedFloat4x3
 ```
 
-#### Discussion
+## Discussion
 
 Metal uses the values `[0,0,0,1]` as the bottom row of the `4x4` matrix.
 

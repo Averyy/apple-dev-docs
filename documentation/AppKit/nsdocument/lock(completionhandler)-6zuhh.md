@@ -23,7 +23,7 @@ func lock() async -> Bool
 - (void) lockDocumentWithCompletionHandler:(void (^)(BOOL didLock)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this method first ensures that any editor who has registered using Cocoa Binding’s NSEditorRegistration informal protocol has committed all changes and then autosaves the document, if necessary, before attempting to lock it using the [`lock(completionHandler:)`](./lock%28completionhandler%29-161qv.md) method. Upon successful locking, the [`isLocked`](./islocked.md) property is set to `[YES]`. Documents whose [`fileURL`](./fileurl.md) property is set to `nil` cannot be locked.
 

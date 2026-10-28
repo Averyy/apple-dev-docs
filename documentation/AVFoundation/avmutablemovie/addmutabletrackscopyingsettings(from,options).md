@@ -24,11 +24,11 @@ func addMutableTracksCopyingSettings(from existingTracks: [AVAssetTrack], option
 - (NSArray<AVMutableMovieTrack *> *) addMutableTracksCopyingSettingsFromTracks:(NSArray<AVAssetTrack *> *) existingTracks options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`AVMutableMovieTrack`](../avmutablemovietrack.md) objects. The index of a track in this array is the same as the index of its source track in the `existingTracks` array.
 
-#### Discussion
+## Discussion
 
 Properties involving pairs of tracks,such as track references, are copied from the source tracks to the target tracks.
 

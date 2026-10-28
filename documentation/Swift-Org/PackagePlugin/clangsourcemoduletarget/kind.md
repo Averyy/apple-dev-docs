@@ -17,7 +17,7 @@ The kind of module.
 let kind: ModuleKind
 ```
 
-#### Discussion
+## Discussion
 
 The kind of module describes whether it contains unit tests, the main entry point of an executable, or neither.
 

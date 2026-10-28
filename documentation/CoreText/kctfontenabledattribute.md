@@ -25,7 +25,7 @@ let kCTFontEnabledAttribute: CFString
 extern CFStringRef const kCTFontEnabledAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The returned value is an integer represented as a [`CFNumber`](../CoreFoundation/cfnumber.md) object representing a Boolean value. Unregistered font descriptors return `NULL`, which is equivalent to `false`.
 

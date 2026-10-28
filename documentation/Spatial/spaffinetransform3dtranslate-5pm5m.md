@@ -21,7 +21,7 @@ Returns a transform with an origin that’s offset by the specified size.
 static SPAffineTransform3D SPAffineTransform3DTranslate(SPAffineTransform3D transform, SPSize3D size);
 ```
 
-#### Return Value
+## Return Value
 
 The transform with an origin that’s offset by the specified size.
 

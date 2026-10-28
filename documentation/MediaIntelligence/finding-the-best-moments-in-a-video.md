@@ -5,7 +5,7 @@
 
 Identify keyframes and highlight segments using on-device analysis.
 
-#### Overview
+## Overview
 
 People often want to find the best moments in a video, whether to jump to the most exciting parts of a long recording or to choose a thumbnail that represents the content rather than a generic first frame. The [`VideoAnalyzer`](./videoanalyzer.md) class provides on-device analysis that evaluates engagement across a video and identifies its highlights and most representative frame.
 
@@ -13,7 +13,7 @@ You access the analyzer through its [`shared`](./videoanalyzer/shared.md) proper
 
 Because video analysis is computationally intensive, the framework queues concurrent requests and processes them serially. If multiple tasks call [`analyze(_:for:)`](./videoanalyzer/analyze%28_,for%29.md) at the same time, each request waits for the previous one to finish. The framework doesn’t impose a maximum queue depth or timeout, so your app is responsible for managing how many analyses it enqueues.
 
-#### Prepare a video asset
+## Prepare a video asset
 
 Create a [`MediaIntelligenceVideoAsset`](./mediaintelligencevideoasset.md) that identifies the video you want to analyze. Each asset takes a unique identifier you assign and a [`MediaIntelligenceVideoAsset.Kind`](./mediaintelligencevideoasset/kind-swift.enum.md) value that tells the framework how to access the video data. Pass [`MediaIntelligenceVideoAsset.Kind.url(_:)`](./mediaintelligencevideoasset/kind-swift.enum/url%28_%29.md) with a file URL pointing to the video on disk:
 
@@ -26,7 +26,7 @@ let asset = MediaIntelligenceVideoAsset(
 
 This example uses the URL’s last path component as the identifier, but you can use any string that uniquely identifies the video in your app.
 
-#### Find the keyframe
+## Find the keyframe
 
 The simplest analysis you can perform is finding the *keyframe*, which is a single frame that best represents the video’s content. Create a [`KeyFrameAnalysisRequest`](./keyframeanalysisrequest.md) and pass it to [`analyze(_:for:)`](./videoanalyzer/analyze%28_,for%29.md):
 
@@ -47,7 +47,7 @@ The keyframe’s `timestamp` is a [`CMTime`](../CoreMedia/cmtime.md) value that 
 
 > **Note**: A convenient way to generate a thumbnail from the keyframe timestamp is with [`AVAssetImageGenerator`](../AVFoundation/avassetimagegenerator.md). For more information, see [Creating images from a video asset](../AVFoundation/creating-images-from-a-video-asset.md).
 
-#### Find video highlights
+## Find video highlights
 
 To understand engagement across an entire video rather than a single representative frame, create a [`HighlightAnalysisRequest`](./highlightanalysisrequest.md). The result provides two complementary perspectives on engagement:
 
@@ -72,7 +72,7 @@ case .failure(let error):
 }
 ```
 
-#### Combine multiple requests
+## Combine multiple requests
 
 When you need highlights and a keyframe from a video, pass both requests to a single [`analyze(_:for:)`](./videoanalyzer/analyze%28_,for%29.md) call. The analyzer decodes the video once regardless of how many requests you pass, making the combined call more efficient. Because each request produces its own [`Result`](../Swift/result.md) value, you can handle successes and failures independently. The following example requests both analyses:
 
@@ -98,7 +98,7 @@ case .failure(let error):
 }
 ```
 
-#### Cancel an in-progress analysis
+## Cancel an in-progress analysis
 
 The [`analyze(_:for:)`](./videoanalyzer/analyze%28_,for%29.md) method supports cooperative cancellation through Swift concurrency. When you cancel the task that called [`analyze(_:for:)`](./videoanalyzer/analyze%28_,for%29.md), the analyzer checks for cancellation periodically during processing and returns early. Because the analyzer needs to cancel in-progress work on the Neural Engine, the method can take a moment to return.
 

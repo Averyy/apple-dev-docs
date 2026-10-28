@@ -17,7 +17,7 @@ Count the number of non-zero elements in the array over the given axis.
 func countNonzero(_ array: MLXArray, axis: Int, keepDims: Bool = false, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-##### See Also
+### See Also
 
 - [Reduction Functions](./reduction.md)
 - [`countNonzero(_:axes:keepDims:stream:)`](./countnonzero%28_,axes,keepdims,stream%29.md)

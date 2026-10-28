@@ -20,7 +20,7 @@ typealias es_handler_block_t = (OpaquePointer, UnsafePointer<es_message_t>) -> V
 typedef void (^)(struct es_client_s *, const es_message_t *) es_handler_block_t;
 ```
 
-#### Discussion
+## Discussion
 
 The block receives two parameters:
 

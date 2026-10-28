@@ -25,7 +25,7 @@ init?(colorSpace space: CGColorSpace, colorComponents components: UnsafePointer<
 extern CGGradientRefCGGradientCreateWithColorComponents(CGColorSpaceRef space, const CGFloat *components, const CGFloat *locations, size_t count);
 ```
 
-#### Return Value
+## Return Value
 
 A CGGradient object.
 

@@ -25,7 +25,7 @@ final class PassthroughSubject<Output, Failure> where Failure : Error
 
 - [Using Combine for Your App’s Asynchronous Code](./using-combine-for-your-app-s-asynchronous-code.md)
 
-#### Overview
+## Overview
 
 As a concrete implementation of [`Subject`](./subject.md), the [`PassthroughSubject`](./passthroughsubject.md) provides a convenient way to adapt existing imperative code to the Combine model.
 

@@ -21,11 +21,11 @@ Returns a new instance of the receiving class.
 + (instancetype) alloc;
 ```
 
-#### Return Value
+## Return Value
 
 A new instance of the receiver.
 
-#### Discussion
+## Discussion
 
 This is an instance variable of the new instance that is initialized to a data structure describing the class; memory for all other instance variables is set to `0`.
 

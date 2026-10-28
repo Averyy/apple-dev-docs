@@ -21,7 +21,7 @@ func write(toFile path: String?) -> Bool
 - (BOOL) writeToFile:(NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) upon success and [`false`](../../Swift/false.md) if the method fails to write the file.
 

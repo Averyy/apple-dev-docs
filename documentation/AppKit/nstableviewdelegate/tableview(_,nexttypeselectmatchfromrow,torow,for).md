@@ -20,11 +20,11 @@ optional func tableView(_ tableView: NSTableView, nextTypeSelectMatchFromRow sta
 - (NSInteger) tableView:(NSTableView *) tableView nextTypeSelectMatchFromRow:(NSInteger) startRow toRow:(NSInteger) endRow forString:(NSString *) searchString;
 ```
 
-#### Return Value
+## Return Value
 
 The first row in the range of `startRow` through `endRow` (excluding `endRow` itself) that matches `selectionString`. Return `-1` if no match is found.
 
-#### Discussion
+## Discussion
 
 Use this method to control how type selection works in a table. (Implementation of this method isn’t required to support type selection.) Note that it’s possible for `endRow` to be less than `startRow` if the search will wrap.
 

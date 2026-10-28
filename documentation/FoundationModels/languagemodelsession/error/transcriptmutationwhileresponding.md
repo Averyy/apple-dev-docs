@@ -20,7 +20,7 @@ A request mutated the session’s transcript while it was in progress.
 case transcriptMutationWhileResponding
 ```
 
-#### Discussion
+## Discussion
 
 Do not modify the transcript while a request is being processed.
 

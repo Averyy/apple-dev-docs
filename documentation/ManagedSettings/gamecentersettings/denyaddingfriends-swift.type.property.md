@@ -17,7 +17,7 @@ The metadata for the setting that prevents the user from adding friends in Game 
 static let denyAddingFriends: SettingMetadata<Bool>
 ```
 
-#### Discussion
+## Discussion
 
 Use `denyAddingFriends` to access the metadata for [`denyAddingFriends`](./denyaddingfriends-swift.property.md). The default value is `false`.
 

@@ -23,11 +23,11 @@ convenience init(item item1: any UIDynamicItem, attachedTo item2: any UIDynamicI
 - (instancetype) initWithItem:(id<UIDynamicItem>) item1 attachedToItem:(id<UIDynamicItem>) item2;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized attachment behavior, or `nil` if there was a problem initializing the object
 
-#### Discussion
+## Discussion
 
 The behavior created by this method acts like a solid rod connecting the two items at their center points. Forces applied to one item push or pull the other item accordingly. The items are free to rotate around each other but always remain the same distance apart.
 

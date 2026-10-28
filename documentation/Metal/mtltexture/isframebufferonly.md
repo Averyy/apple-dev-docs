@@ -25,7 +25,7 @@ var isFramebufferOnly: Bool { get }
 @property (readonly, getter=isFramebufferOnly) BOOL framebufferOnly;
 ```
 
-#### Discussion
+## Discussion
 
 The default is [`false`](../../Swift/false.md), which indicates the use of the texture is not restricted.
 

@@ -25,7 +25,7 @@ var shouldFetchSubresources: Bool { get set }
 @property (nonatomic) BOOL shouldFetchSubresources;
 ```
 
-#### Discussion
+## Discussion
 
 Subresources include the icon, image, or video. When set to `false`, the returned [`LPLinkMetadata`](../lplinkmetadata.md) object consists only of metadata retrieved from the main resource identified by the url passed to [`startFetchingMetadata(for:completionHandler:)`](./startfetchingmetadata%28for,completionhandler%29-54z5i.md).
 

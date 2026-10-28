@@ -26,7 +26,7 @@ class func data(fromTXTRecord txtDictionary: [String : Data]) -> Data
 + (NSData *) dataFromTXTRecordDictionary:(NSDictionary<NSString *,NSData *> *) txtDictionary;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSData` object representing TXT data formed from `txtDictionary`. Fails an assertion if `txtDictionary` cannot be represented as an `NSData` object.
 

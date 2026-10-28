@@ -21,7 +21,7 @@ Indicates a video frame’s level within a hierarchical frame dependency structu
 var hevcTemporalInfo: CMSampleBuffer.HEVCTemporalInfo? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 When present, the temporal level attachments among a group of video frames provide information about where inter-frame dependencies may and may not exist.
 

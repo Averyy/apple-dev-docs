@@ -28,7 +28,7 @@ MTLTextureUsagePixelFormatView
 
 - [Optimizing texture data](../optimizing-texture-data.md)
 
-#### Discussion
+## Discussion
 
 Set this option if you need to call any of these methods of the texture to create a texture view with a different component layout:
 

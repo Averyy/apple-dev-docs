@@ -24,7 +24,7 @@ static let enhance: CIImageAutoAdjustmentOption
 extern CIImageAutoAdjustmentOption const kCIImageAutoAdjustEnhance;
 ```
 
-#### Discussion
+## Discussion
 
 The value associated with this key is a `CFBoolean` value. Supply `false` to indicate not to return enhancement filters. If you don’t specify this option, Core Image assumes its value is `true`.
 

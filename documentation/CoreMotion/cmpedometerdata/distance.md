@@ -23,7 +23,7 @@ var distance: NSNumber? { get }
 @property (nonatomic, readonly, nullable) NSNumber * distance;
 ```
 
-#### Discussion
+## Discussion
 
 This value reflects the distance traveled while walking and running. The value in this property may be `nil` if distance estimation is not supported on the current device.
 

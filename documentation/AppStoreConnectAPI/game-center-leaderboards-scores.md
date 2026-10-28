@@ -5,7 +5,7 @@
 
 Create and modify Game Center leaderboards scores.
 
-#### Overview
+## Overview
 
 This endpoint is different than most in App Store Connect API, with this you can create or modify a player’s leaderboard score in your app. Any and all data you send through this endpoint overwrites existing data for the player’s score.
 

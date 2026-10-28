@@ -19,7 +19,7 @@ func DisposeOSLCountUPP(_ userUPP: OSLCountUPP!)
 void DisposeOSLCountUPP(OSLCountUPP userUPP);
 ```
 
-#### Discussion
+## Discussion
 
 See the [`OSLCountProcPtr`](./oslcountprocptr.md) callback function. 
 

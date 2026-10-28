@@ -21,7 +21,7 @@ Returns a Boolean value that indicates whether a given time is invalid.
 func CMTIME_IS_INVALID(_ time: CMTime) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the time is invalid; otherwise, [`false`](../Swift/false.md).
 

@@ -24,7 +24,7 @@ class PHASEDistanceModelParameters
 @interface PHASEDistanceModelParameters : NSObject
 ```
 
-#### Overview
+## Overview
 
 When your app outputs sound with a 3D position and orientation, designate a subclass of this class to indicate the manner in which PHASE changes sound with distance. Assign an instance of either [`PHASEGeometricSpreadingDistanceModelParameters`](./phasegeometricspreadingdistancemodelparameters.md) or [`PHASEEnvelopeDistanceModelParameters`](./phaseenvelopedistancemodelparameters.md), depending on your app’s needs, to the [`PHASESpatialMixerDefinition`](./phasespatialmixerdefinition.md) class’s [`distanceModelParameters`](./phasespatialmixerdefinition/distancemodelparameters.md) property.
 

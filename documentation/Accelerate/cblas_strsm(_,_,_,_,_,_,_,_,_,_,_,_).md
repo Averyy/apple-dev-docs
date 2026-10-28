@@ -25,7 +25,7 @@ func cblas_strsm(_ ORDER: CBLAS_ORDER, _ SIDE: CBLAS_SIDE, _ UPLO: CBLAS_UPLO, _
 void cblas_strsm(const enum CBLAS_ORDER ORDER, const enum CBLAS_SIDE SIDE, const enum CBLAS_UPLO UPLO, const enum CBLAS_TRANSPOSE TRANSA, const enum CBLAS_DIAG DIAG, const __LAPACK_int M, const __LAPACK_int N, const float ALPHA, const float *A, const __LAPACK_int LDA, float *B, const __LAPACK_int LDB);
 ```
 
-#### Discussion
+## Discussion
 
 If `Side` is `'L'`, solves `A*X=alpha*B` or `A'*X=alpha*B`, depending on `TransA`.
 

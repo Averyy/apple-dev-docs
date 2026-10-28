@@ -19,11 +19,11 @@ class func webScriptName(for selector: Selector!) -> String!
 + (NSString *) webScriptNameForSelector:(SEL) selector;
 ```
 
-#### Return Value
+## Return Value
 
 The name used to represent the selector in the scripting environment.
 
-#### Discussion
+## Discussion
 
 It is your responsibility to ensure that the returned name is unique to the script invoking this method. If this method returns `nil` or you do not implement it, the default name for the selector is constructed as follows:
 

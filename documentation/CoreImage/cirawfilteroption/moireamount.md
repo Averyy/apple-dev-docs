@@ -26,11 +26,11 @@ static let moireAmount: CIRAWFilterOption
 extern CIRAWFilterOption const kCIInputMoireAmountKey;
 ```
 
-#### Discussion
+## Discussion
 
 A key for an [`NSNumber`](../../Foundation/nsnumber.md) object containing a double that expresses the amount of moiré reduction applied to an image.
 
-#### Discussion
+## Discussion
 
 The range of valid moiré reduction is 0.0 to 1.0.
 

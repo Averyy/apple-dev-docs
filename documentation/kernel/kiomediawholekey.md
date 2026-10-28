@@ -15,7 +15,7 @@ A property of IOMedia objects.
 #define kIOMediaWholeKey
 ```
 
-#### Discussion
+## Discussion
 
 The kIOMediaWholeKey property has an OSBoolean value and describes whether the media is whole, that is, it represents the whole disk (the physical disk, or a virtual replica thereof).
 

@@ -23,7 +23,7 @@ var appearance: NSAppearance? { get set }
 
 - [Choosing a Specific Appearance for Your macOS App](../choosing-a-specific-appearance-for-your-macos-app.md)
 
-#### Discussion
+## Discussion
 
 When the value of this property is `nil` (the default), AppKit applies the current system appearance to the app’s user interface elements, including its windows, views, panels, and popovers. Assigning an [`NSAppearance`](../nsappearance.md) object to this property causes the app’s interface elements to adopt the specified appearance instead.
 

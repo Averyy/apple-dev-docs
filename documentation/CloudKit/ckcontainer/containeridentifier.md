@@ -25,7 +25,7 @@ var containerIdentifier: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * containerIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property’s value to distinguish different containers in your app.
 

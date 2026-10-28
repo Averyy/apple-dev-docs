@@ -25,7 +25,7 @@ var heap: (any MTLHeap)? { get }
 @property (readonly, nullable) id<MTLHeap> heap;
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` if the resource isn’t allocated on a heap.
 

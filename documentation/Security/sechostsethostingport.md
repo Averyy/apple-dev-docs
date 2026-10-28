@@ -19,11 +19,11 @@ OSStatus SecHostSetHostingPort(mach_port_t hostingPort, SecCSFlags flags);
 
 - [Hosting Guest Code](./hosting-guest-code.md)
 
-#### Return Value
+## Return Value
 
 A result code. See [Code Signing Services Result Codes](./code-signing-services-result-codes.md).
 
-#### Discussion
+## Discussion
 
 If you want to use dynamic hosting mode (see [Guest Code](./code-signing-services.md#Guest-Code)), call this function before calling any other code signing services hosting functions. When you call [`SecHostSetHostingPort`](./sechostsethostingport.md), the calling code takes direct responsibility for answering questions about its guests using the hosting IPC services. After you call this function, you cannot call the [`SecHostCreateGuest`](./sechostcreateguest.md), [`SecHostRemoveGuest`](./sechostremoveguest.md), or [`SecHostSetGuestStatus`](./sechostsetgueststatus.md) functions.
 

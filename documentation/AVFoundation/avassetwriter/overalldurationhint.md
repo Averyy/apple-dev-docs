@@ -24,7 +24,7 @@ var overallDurationHint: CMTime { get set }
 @property (nonatomic) CMTime overallDurationHint;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of [`invalid`](../../CoreMedia/cmtime/invalid.md) indicates that the asset writer doesn’t write an overall duration hint to the file. The asset writer ignores this value if it doesn’t write movie fragments.
 

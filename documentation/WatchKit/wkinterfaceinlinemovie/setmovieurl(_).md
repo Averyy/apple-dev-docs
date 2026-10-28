@@ -19,7 +19,7 @@ func setMovieURL(_ URL: URL)
 - (void) setMovieURL:(NSURL *) URL;
 ```
 
-#### Discussion
+## Discussion
 
 Movies must be local to the device before playback begins. If you specify a URL that is on a remote server, Apple Watch downloads the movie before playing it.
 

@@ -25,7 +25,7 @@ func makeSharedEvent(handle sharedEventHandle: MTLSharedEventHandle) -> (any MTL
 - (id<MTLSharedEvent>) newSharedEventWithHandle:(MTLSharedEventHandle *) sharedEventHandle;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`MTLSharedEvent`](../mtlsharedevent.md) instance if the method completed successfully; otherwise nil.
 

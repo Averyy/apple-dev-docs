@@ -23,7 +23,7 @@ var kDNSServiceType_HINFO: Int { get }
 kDNSServiceType_HINFO
 ```
 
-#### Discussion
+## Discussion
 
 Host information.
 

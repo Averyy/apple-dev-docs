@@ -14,7 +14,7 @@ A constant half-precision floating-point Vector3 numeric value.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 | Input | Type |
 | --- | --- |

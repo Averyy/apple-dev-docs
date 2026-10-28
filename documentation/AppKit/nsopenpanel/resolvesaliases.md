@@ -19,7 +19,7 @@ var resolvesAliases: Bool { get set }
 @property BOOL resolvesAliases;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), dropping an alias on the panel or asking for filenames or URLs returns the resolved aliases. The default value of this property is [`true`](../../Swift/true.md). When this value is [`false`](../../Swift/false.md), selecting an alias returns the alias instead of the file or directory it represents.
 

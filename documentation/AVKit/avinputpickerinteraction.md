@@ -22,7 +22,7 @@ class AVInputPickerInteraction
 @interface AVInputPickerInteraction : NSObject
 ```
 
-#### Overview
+## Overview
 
 People expect the microphone they chose to be the one your app records with. Add an input picker interaction to a view, and your app presents the same picker the system uses, listing the audio inputs available at that moment.
 

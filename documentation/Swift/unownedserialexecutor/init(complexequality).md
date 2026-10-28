@@ -21,7 +21,7 @@ Opts the executor into complex “same exclusive execution context” equality c
 init<E>(complexEquality executor: E) where E : SerialExecutor
 ```
 
-#### Discussion
+## Discussion
 
 This means what when asserting or assuming executors, and the current and expected executor are not the same instance (by object equality), the runtime may invoke `isSameExclusiveExecutionContext` in order to compare the executors for equality.
 

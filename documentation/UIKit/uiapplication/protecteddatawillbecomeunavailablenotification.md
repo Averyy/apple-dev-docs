@@ -24,7 +24,7 @@ class let protectedDataWillBecomeUnavailableNotification: NSNotification.Name
 extern NSNotificationName const UIApplicationProtectedDataWillBecomeUnavailable;
 ```
 
-#### Discussion
+## Discussion
 
 Upon receiving this notification, clients should release any references to protected files. This notification does not contain a `userInfo` dictionary.
 

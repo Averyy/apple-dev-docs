@@ -13,7 +13,7 @@
 kIOFWDisablePhyOnSleep = (1 << 4)
 ```
 
-#### Discussion
+## Discussion
 
 Disable Phy, when machine is in Sleep mode
 

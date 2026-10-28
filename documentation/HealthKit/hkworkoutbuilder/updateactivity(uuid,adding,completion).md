@@ -28,7 +28,7 @@ func updateActivity(uuid UUID: UUID, adding metadata: [String : Any]) async thro
 - (void) updateActivityWithUUID:(NSUUID *) UUID addMedatata:(NSDictionary<NSString *,id> *) metadata completion:(void (^)(BOOL success, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 You can call this method multiple times to incrementally add metadata to the workout activity. The system merges the new metadata with any existing metadata using [`addEntries(from:)`](../../Foundation/nsmutabledictionary/addentries%28from%29.md). Calling this method after calling [`finishWorkout(completion:)`](./finishworkout%28completion%29.md) fails with an error.
 

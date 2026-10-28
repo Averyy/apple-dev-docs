@@ -25,7 +25,7 @@ enum CTFramePathFillRule
 enum CTFramePathFillRule : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 When a path intersects with itself, the client should specify which rule to use for deciding the area of the path.
 

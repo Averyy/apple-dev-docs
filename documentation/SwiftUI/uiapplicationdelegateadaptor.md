@@ -24,7 +24,7 @@ A property wrapper type that you use to create a UIKit app delegate.
 
 - [Migrating to the SwiftUI life cycle](./migrating-to-the-swiftui-life-cycle.md)
 
-#### Overview
+## Overview
 
 To handle app delegate callbacks in an app that uses the SwiftUI life cycle, define a type that conforms to the [`UIApplicationDelegate`](../UIKit/uiapplicationdelegate.md) protocol, and implement the delegate methods that you need. For example, you can implement the [`application(_:didRegisterForRemoteNotificationsWithDeviceToken:)`](../UIKit/uiapplicationdelegate/application%28_,didregisterforremotenotificationswithdevicetoken%29.md) method to handle remote notification registration:
 
@@ -62,7 +62,7 @@ This enables you to use the dollar sign (`$`) prefix to get a binding to publish
 
 > ❗ **Important**: Manage an app’s life cycle events without using an app delegate whenever possible. For example, prefer to handle changes in [`ScenePhase`](./scenephase.md) instead of relying on delegate callbacks, like [`application(_:didFinishLaunchingWithOptions:)`](../UIKit/uiapplicationdelegate/application%28_,didfinishlaunchingwithoptions%29.md).
 
-##### Scene delegates
+### Scene delegates
 
 Some iOS apps define a [`UIWindowSceneDelegate`](../UIKit/uiwindowscenedelegate.md) to handle scene-based events, like app shortcuts:
 

@@ -22,7 +22,7 @@ An action that opens a URL.
 @preconcurrency struct OpenURLAction
 ```
 
-#### Overview
+## Overview
 
 Read the [`openURL`](./environmentvalues/openurl.md) environment value to get an instance of this structure for a given [`Environment`](./environment.md). Call the instance to open a URL. You call the instance directly because it defines a [`callAsFunction(_:)`](./openurlaction/callasfunction%28_%29.md) method that Swift calls when you call the instance.
 

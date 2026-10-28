@@ -5,15 +5,15 @@
 
 Use text in SwiftUI complications.
 
-#### Overview
+## Overview
 
 When creating ClockKit templates with SwiftUI views, [`Text`](../SwiftUI/text.md) views adapt their appearance based on the template’s complication family. The system automatically sets the font and size to match other templates in the same family.
 
-##### Match the Expected Font Size
+### Match the Expected Font Size
 
 Use the default font size as a guide for the type of information your complication displays. For example, the [`CLKComplicationTemplateGraphicExtraLargeCircularView`](./clkcomplicationtemplategraphicextralargecircularview.md) template provides a large canvas for drawing, but it’s intended to present large, easy-to-read content instead of a lot of small, detailed data.
 
-##### Use Text Formatters
+### Use Text Formatters
 
 When displaying dates and times, use [`Text.DateStyle`](../SwiftUI/text/datestyle.md) to create localized strings. [`Text.DateStyle`](../SwiftUI/text/datestyle.md) also defines formatters such as [`relative`](../SwiftUI/text/datestyle/relative.md), [`offset`](../SwiftUI/text/datestyle/offset.md), and [`timer`](../SwiftUI/text/datestyle/timer.md). ClockKit automatically updates information in these formatters, and you can use these formatters when instantiating a [`Text`](../SwiftUI/text.md) view.
 

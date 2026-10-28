@@ -19,7 +19,7 @@ class func shared() -> WKExtension
 + (WKExtension *) sharedExtension;
 ```
 
-#### Return Value
+## Return Value
 
 The WatchKit extension object. This object is never `nil`.
 

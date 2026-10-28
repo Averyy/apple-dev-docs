@@ -19,7 +19,7 @@ func ABCopyRecordForUniqueId(_ addressBook: ABAddressBookRef!, _ uniqueId: CFStr
 extern ABRecordRefABCopyRecordForUniqueId(ABAddressBookRef addressBook, CFStringRef uniqueId);
 ```
 
-#### Return Value
+## Return Value
 
 The record that matches the given unique ID. If no record matches `uniqueId`, the function returns `NULL`. You are responsible for releasing this object.
 

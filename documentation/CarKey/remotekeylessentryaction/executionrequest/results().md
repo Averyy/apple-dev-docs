@@ -19,11 +19,11 @@ Returns the results of a preceding action request.
 final func results() async throws -> ExecutionStatus
 ```
 
-#### Return Value
+## Return Value
 
 A structure that contains the vehicle-specific status code from the vehicle.
 
-#### Discussion
+## Discussion
 
 After you call your session’s [`perform(_:)`](../../carkeyremotecontrolsession/perform%28_%29-8ac0c.md) method to send an action request to a vehicle, call this method and await the results of that request. Upon the successful completion of the request, this method returns the vehicle-provided status code. If an error occurs, this method throws the error instead.
 

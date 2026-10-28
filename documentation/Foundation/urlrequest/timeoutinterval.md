@@ -21,7 +21,7 @@ The timeout interval of the request.
 var timeoutInterval: TimeInterval { get set }
 ```
 
-#### Discussion
+## Discussion
 
 If during a connection attempt the request remains idle for longer than the timeout interval, the request is considered to have timed out. The default timeout interval is 60 seconds.
 

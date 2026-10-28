@@ -17,7 +17,7 @@ A Boolean value that enables checking pointers for arithmetic overflow.
 - **Name**: `com.apple.security.hardened-process.checked-allocations.enforce-checked-pointer-arithmetic-overflow`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 To enable this entitlement for your app or extension in Xcode, navigate to the Signing and Capabilities editor for your Xcode target and add the Enhanced Security capability. Then, under Memory Safety, select Enable Hardware Memory Tagging and  Enforce Checking for Overflow Pointer Arithmetic.
 

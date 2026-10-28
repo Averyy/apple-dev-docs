@@ -16,7 +16,7 @@ Returns the string index in the interface descriptor.
 IOReturn (*USBInterfaceGetStringIndex)(void *self, UInt8 *si);
 ```
 
-#### Discussion
+## Discussion
 
 The interface does not have to be open to use this function.
 

@@ -25,7 +25,7 @@ func CFBitVectorGetCountOfBit(_ bv: CFBitVector!, _ range: CFRange, _ value: CFB
 extern CFIndex CFBitVectorGetCountOfBit(CFBitVectorRef bv, CFRange range, CFBit value);
 ```
 
-#### Return Value
+## Return Value
 
 The number of occurrences of `value` in the specified range of `bv`.
 

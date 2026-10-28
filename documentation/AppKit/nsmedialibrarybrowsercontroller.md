@@ -19,7 +19,7 @@ class NSMediaLibraryBrowserController
 @interface NSMediaLibraryBrowserController : NSObject
 ```
 
-#### Overview
+## Overview
 
 From this panel a user can drag media  into views in their app. The class provides a standard interface to the MediaLibrary framework content.
 
@@ -27,7 +27,7 @@ From this panel a user can drag media  into views in their app. The class provid
 
 For more information see [`MLMediaLibrary`](../MediaLibrary/mlmedialibrary.md), [`MLMediaSource`](../MediaLibrary/mlmediasource.md), [`MLMediaGroup`](../MediaLibrary/mlmediagroup.md), and [`MLMediaObject`](../MediaLibrary/mlmediaobject.md) in [Media Library](../MediaLibrary/MediaLibrary.md).
 
-##### Pasteboard Types
+### Pasteboard Types
 
 The Media Library Browser defines two pasteboard types for decoding the dragged content and retrieving the media content that is appropriate, one for mediagroup content and one for individual media items
 
@@ -38,7 +38,7 @@ There is a third, less specialized, type of media library pasteboard. When the u
 
 If you do not need access to the associated Media Library metadata, using the `NSFilenamesPboardType` pasteboard data is the simplest means of retrieving the dragged content, although accessing the media in this manner when your app is sandboxed requires that you use the `NSURL` [`startAccessingSecurityScopedResource()`](../Foundation/nsurl/startaccessingsecurityscopedresource%28%29.md) and [`stopAccessingSecurityScopedResource()`](../Foundation/nsurl/stopaccessingsecurityscopedresource%28%29.md) methods.
 
-###### The Media Group Pasteboard Type
+#### The Media Group Pasteboard Type
 
 The `"com.apple.MediaLibrary.PboardType.MediaGroupIdentifiersPlist"` pasteboard type is published when the user drags items from the upper media-group-organized pane of the Media Library Browser.
 
@@ -72,7 +72,7 @@ NSDictionary *mediaGroupsDict = [dragPasteboard propertyListForType:@"com.apple.
     }
 ```
 
-###### The Media Object Pasteboard Type
+#### The Media Object Pasteboard Type
 
 The `"com.apple.MediaLibrary.PboardType.MediaObjectIdentifiersPlist"` pasteboard type is published when the user drags an item from the media item pane of the Media Library Browser.
 

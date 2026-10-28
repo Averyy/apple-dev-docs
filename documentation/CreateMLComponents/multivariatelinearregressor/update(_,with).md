@@ -23,7 +23,7 @@ func update(_ model: inout MultivariateLinearRegressor<Scalar>.Model, with input
 
 Available when `Scalar` conforms to `MLShapedArrayScalar` and `BinaryFloatingPoint`.
 
-#### Return Value
+## Return Value
 
 The mean squared error for the batch, also known as the batch loss.
 

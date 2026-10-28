@@ -23,7 +23,7 @@ var deliveryType: NSNumber? { get set }
 @property (strong, nullable) NSNumber * deliveryType;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is 0 for fast start and 1 for RTSP.
 

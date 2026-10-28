@@ -22,7 +22,7 @@ func GLKMatrix3RotateX(_ matrix: GLKMatrix3, _ radians: Float) -> GLKMatrix3
 static GLKMatrix3 GLKMatrix3RotateX(GLKMatrix3 matrix, float radians);
 ```
 
-#### Return Value
+## Return Value
 
 A new matrix.
 

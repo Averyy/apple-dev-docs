@@ -21,7 +21,7 @@ Creates a rectangle using the concentric corner style on each corner individuall
 init()
 ```
 
-#### Discussion
+## Discussion
 
 The system may calculate a different radius for each corner. This can happen when the rectangle is not centered within the container shape, or the container shape’s corners have different radii.
 

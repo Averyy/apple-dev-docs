@@ -23,7 +23,7 @@ var deviceType: MLCDeviceType { get }
 @property (nonatomic, readonly) MLCDeviceType deviceType;
 ```
 
-#### Discussion
+## Discussion
 
 The system uses the [`MLCDevice`](../mlcdevice.md) you provide to [`compile(options:device:)`](../mlctraininggraph/compile%28options,device%29.md) to execute the layers in the graph.
 

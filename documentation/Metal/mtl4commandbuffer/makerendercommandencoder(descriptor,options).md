@@ -25,11 +25,11 @@ func makeRenderCommandEncoder(descriptor: MTL4RenderPassDescriptor, options: MTL
 - (id<MTL4RenderCommandEncoder>) renderCommandEncoderWithDescriptor:(MTL4RenderPassDescriptor *) descriptor options:(MTL4RenderEncoderOptions) options;
 ```
 
-#### Return Value
+## Return Value
 
 The created [`MTL4RenderCommandEncoder`](../mtl4rendercommandencoder.md) instance, or `nil` if the function fails.
 
-#### Discussion
+## Discussion
 
 This method creates a render command encoder to encode a render pass, whilst providing you the option to define some render pass characteristics via an instance of [`MTL4RenderEncoderOptions`](../mtl4renderencoderoptions.md).
 

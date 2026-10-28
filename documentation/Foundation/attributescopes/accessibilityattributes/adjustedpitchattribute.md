@@ -22,7 +22,7 @@ An attribute to adjust the pitch the spoken speech.
 enum AdjustedPitchAttribute
 ```
 
-#### Overview
+## Overview
 
 Values between `-1` and `0` result in a lower pitch while values between `0` and `1` result in a higher pitch.
 

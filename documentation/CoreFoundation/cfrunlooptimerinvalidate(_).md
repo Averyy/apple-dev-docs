@@ -25,7 +25,7 @@ func CFRunLoopTimerInvalidate(_ timer: CFRunLoopTimer!)
 extern void CFRunLoopTimerInvalidate(CFRunLoopTimerRef timer);
 ```
 
-#### Discussion
+## Discussion
 
 Once invalidated, `timer` will never fire and call its callback function again. This function automatically removes `timer` from all run loop modes in which it had been added. The memory is not deallocated unless the run loop held the only reference to `timer`.
 

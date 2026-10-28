@@ -26,7 +26,7 @@ func finish(with error: any Error)
 - (void) finishWithError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method if you cannot process the input image and wish to abort playback as a result—for example, if the [`outputImage`](../../CoreImage/cifilter-swift.class/outputimage.md) object from your filter chain is nil. (If instead you want to fall back to rendering an unfiltered image, call the [`finish(with:context:)`](./finish%28with,context%29.md) and pass the [`sourceImage`](./sourceimage.md) object to the `filteredImage` parameter.)
 

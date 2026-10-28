@@ -25,7 +25,7 @@ static let forcedSubtitlesOnly: AVAssetTrack.AssociationType
 extern AVTrackAssociationType const AVTrackAssociationTypeForcedSubtitlesOnly;
 ```
 
-#### Discussion
+## Discussion
 
 Nonforced subtitles typically transcribe dialogue in a media asset and are typically not presented by default. Forced subtitles are those that are essential for presentation even if the user disables playback of normal subtitles (for example, when a character speaks in a language foreign to that of the audio track).
 

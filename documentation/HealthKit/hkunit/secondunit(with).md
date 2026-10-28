@@ -24,11 +24,11 @@ class func secondUnit(with prefix: HKMetricPrefix) -> Self
 + (instancetype) secondUnitWithMetricPrefix:(HKMetricPrefix) prefix;
 ```
 
-#### Return Value
+## Return Value
 
 A HealthKit unit for measuring time based on seconds and the provided prefix.
 
-#### Discussion
+## Discussion
 
 This method is used to create prefixed versions of seconds. Common uses include creating millisecond units, as shown below.
 

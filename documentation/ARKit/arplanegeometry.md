@@ -20,7 +20,7 @@ class ARPlaneGeometry
 @interface ARPlaneGeometry : NSObject
 ```
 
-#### Overview
+## Overview
 
 This class provides the estimated general shape of a detected plane, in the form of a detailed 3D mesh appropriate for use with various rendering technologies or for exporting 3D assets. (For a quick way to visualize a plane geometry using SceneKit, see the [`ARSCNPlaneGeometry`](./arscnplanegeometry.md) class.)
 

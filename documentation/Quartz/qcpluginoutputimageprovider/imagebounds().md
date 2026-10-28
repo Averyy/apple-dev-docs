@@ -22,7 +22,7 @@ func imageBounds() -> NSRect
 - (NSRect) imageBounds;
 ```
 
-#### Return Value
+## Return Value
 
 The bounds of the image. Note that the `QCPlugIn` class does not support images that have infinite bounds.
 

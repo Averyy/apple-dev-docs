@@ -24,7 +24,7 @@ class MTLCommandBufferDescriptor
 @interface MTLCommandBufferDescriptor : NSObject
 ```
 
-#### Overview
+## Overview
 
 Create a command buffer with a custom configuration by creating an [`MTLCommandBufferDescriptor`](./mtlcommandbufferdescriptor.md) instance and passing it to an [`MTLCommandQueue`](./mtlcommandqueue.md) instance’s [`makeCommandBuffer(descriptor:)`](./mtlcommandqueue/makecommandbuffer%28descriptor%29.md) method. You can configure whether the command buffer retains references to resources that its commands refer to with the [`retainedReferences`](./mtlcommandbufferdescriptor/retainedreferences.md) property. The command buffer can save extra error information, which is useful during development, by setting its [`errorOptions`](./mtlcommandbufferdescriptor/erroroptions.md) property to [`encoderExecutionStatus`](./mtlcommandbuffererroroption/encoderexecutionstatus.md).
 

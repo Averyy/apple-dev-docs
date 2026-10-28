@@ -20,7 +20,7 @@ Creates a new action that interpolates towards a specified value, which is relat
 init(from: Value? = nil, by: Value, timing: AnimationTimingFunction = .linear, isAdditive: Bool = false)
 ```
 
-#### Discussion
+## Discussion
 
 `from` → `from + by` or `defaultSource` → `defaultSource + by`
 

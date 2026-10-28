@@ -22,7 +22,7 @@ Creates a rectangle with a corner style uniformly set on the two leading corners
 static func rect(uniformLeadingCorners: Edge.Corner.Style, uniformTrailingCorners: Edge.Corner.Style) -> Self
 ```
 
-#### Discussion
+## Discussion
 
 For the two leading corners and two trailing corners, the system calculates the radius for each corner first. Then, it selects the largest leading radius and applies it to each leading corner, and it selects the largest trailing radius and applies it to each trailing corner to achieve the symmetric look.
 

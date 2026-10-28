@@ -19,7 +19,7 @@ func removeSubgroup(_ subgroup: CNGroup, from group: CNGroup)
 - (void) removeSubgroup:(CNGroup *) subgroup fromGroup:(CNGroup *) group;
 ```
 
-#### Discussion
+## Discussion
 
 If you previously tried to add `subgroup` to `group` in the same save request, calling this method undoes that addition. The last change you make is the one that takes effect.
 

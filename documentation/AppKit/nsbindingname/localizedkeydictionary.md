@@ -19,7 +19,7 @@ static let localizedKeyDictionary: NSBindingName
 extern NSBindingName NSLocalizedKeyDictionaryBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

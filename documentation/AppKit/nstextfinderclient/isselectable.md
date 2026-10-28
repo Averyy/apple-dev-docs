@@ -19,7 +19,7 @@ optional var isSelectable: Bool { get }
 @property (readonly, getter=isSelectable) BOOL selectable;
 ```
 
-#### Discussion
+## Discussion
 
 If this properties is not implemented, the text finder will act as if they returned [`true`](../../Swift/true.md).
 

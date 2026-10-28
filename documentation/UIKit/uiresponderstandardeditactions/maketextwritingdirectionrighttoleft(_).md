@@ -23,7 +23,7 @@ optional func makeTextWritingDirectionRightToLeft(_ sender: Any?)
 - (void) makeTextWritingDirectionRightToLeft:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to make your content adopt a right-to-left layout. Apply this layout information to text and to other visual elements in your interface.
 

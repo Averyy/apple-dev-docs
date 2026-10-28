@@ -13,7 +13,7 @@
 kSENSE_ILI_Set = 0x20
 ```
 
-#### Discussion
+## Discussion
 
 Incorrect Length Indicator bit is set.
 

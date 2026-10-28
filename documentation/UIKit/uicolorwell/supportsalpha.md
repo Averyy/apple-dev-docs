@@ -22,7 +22,7 @@ var supportsAlpha: Bool { get set }
 @property (nonatomic) BOOL supportsAlpha;
 ```
 
-#### Discussion
+## Discussion
 
 If this property is [`false`](../../Swift/false.md), people can only pick fully opaque colors from the color picker.
 

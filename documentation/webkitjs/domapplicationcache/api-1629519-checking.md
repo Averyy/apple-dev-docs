@@ -15,7 +15,7 @@ The update has started but the resources are not downloaded yet—for example, t
 const unsigned short CHECKING;
 ```
 
-#### Discussion
+## Discussion
 
 ```javascript
 const unsigned short CHECKING = 2;

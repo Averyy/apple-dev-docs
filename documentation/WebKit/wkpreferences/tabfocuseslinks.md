@@ -19,7 +19,7 @@ var tabFocusesLinks: Bool { get set }
 @property (nonatomic) BOOL tabFocusesLinks;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the web view includes links and form controls in the set of items that may receive focus. Pressing the Option key temporarily reverses this preference.
 

@@ -16,11 +16,11 @@ Sends an Apple event with the given event class, event ID, and format to the tar
 - (id) sendEvent:(AEEventClass) eventClass id:(AEEventID) eventID parameters:(DescType) firstParamCode;
 ```
 
-#### Return Value
+## Return Value
 
 The target application’s Apple event sent in reply; it is converted to a Cocoa object of an appropriate type.
 
-#### Discussion
+## Discussion
 
 Scripting Bridge uses this method to communicate with target applications. If the target application responds to this method by sending an Apple event representing an error, the receiver calls its delegate’s [`eventDidFail(_:withError:)`](../sbapplicationdelegate/eventdidfail%28_,witherror%29.md) method. If no delegate has been assigned, the receiver raises an exception.
 

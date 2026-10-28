@@ -24,11 +24,11 @@ func reLU(with tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
 - (MPSGraphTensor *) reLUWithTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid [`MPSGraphTensor`](../mpsgraphtensor.md) object.
 
-#### Discussion
+## Discussion
 
 The operation is:  f(x) = max(x, 0).
 

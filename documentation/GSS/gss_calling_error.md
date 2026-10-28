@@ -19,7 +19,7 @@ A macro that masks out all but the calling error field from a major status code.
 #define GSS_CALLING_ERROR(x)
 ```
 
-#### Discussion
+## Discussion
 
 Apply this macro to a major status code, then compare the result with one of the calling error constants to determine which calling error occurred.
 

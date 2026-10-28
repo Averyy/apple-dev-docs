@@ -19,7 +19,7 @@ protocol NSTextFinderBarContainer : NSObjectProtocol
 @protocol NSTextFinderBarContainer <NSObject>
 ```
 
-#### Overview
+## Overview
 
 To display the find bar, a container for the find bar must be specified. You specify a find bar container using the [`findBarContainer`](./nstextfinder/findbarcontainer.md) of the [`NSTextFinder`](./nstextfinder.md) class.
 

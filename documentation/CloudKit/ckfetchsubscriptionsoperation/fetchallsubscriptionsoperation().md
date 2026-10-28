@@ -25,7 +25,7 @@ class func fetchAllSubscriptionsOperation() -> Self
 + (instancetype) fetchAllSubscriptionsOperation;
 ```
 
-#### Discussion
+## Discussion
 
 After creating the operation, set the [`fetchSubscriptionCompletionBlock`](./fetchsubscriptioncompletionblock-207ep.md) property to process the results.
 

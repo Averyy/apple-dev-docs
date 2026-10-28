@@ -25,11 +25,11 @@ class func success(with resolvedVisualCodeType: INVisualCodeType) -> Self
 + (instancetype) successWithResolvedVisualCodeType:(INVisualCodeType) resolvedVisualCodeType;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INVisualCodeTypeResolutionResult`](../invisualcodetyperesolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you’re able to provide a visual code of the specified type.
 

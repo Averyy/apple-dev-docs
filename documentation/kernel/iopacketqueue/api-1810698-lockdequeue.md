@@ -11,11 +11,11 @@ Removes a single packet from the head of a synchronized queue.
 virtual mbuf_t lockDequeue();
 ```
 
-#### Return Value
+## Return Value
 
 Returns a packet removed from the head of the queue, or NULL if the queue was empty.
 
-#### Overview
+## Overview
 
 A spinlock is used to synchronize access to the queue.
 

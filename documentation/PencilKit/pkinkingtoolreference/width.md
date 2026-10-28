@@ -23,7 +23,7 @@ var width: CGFloat { get }
 @property (nonatomic, readonly) CGFloat width;
 ```
 
-#### Discussion
+## Discussion
 
 The actual line width at any given point varies based on input from Apple Pencil. For finger-based drawing, the line width is equal to the value in this property.
 

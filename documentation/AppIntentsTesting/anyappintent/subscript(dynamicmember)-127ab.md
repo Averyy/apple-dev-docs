@@ -21,7 +21,7 @@ Accesses an intent parameter by name, for comparison with a known value.
 subscript<T>(dynamicMember identifier: String) -> T where T : IntentValueConvertible { get throws }
 ```
 
-#### Overview
+## Overview
 
 The code below shows the syntactic sugar and the equivalent, desugared, subscript syntax.
 

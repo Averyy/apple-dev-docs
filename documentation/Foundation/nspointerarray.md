@@ -25,7 +25,7 @@ class NSPointerArray
 @interface NSPointerArray : NSObject
 ```
 
-#### Overview
+## Overview
 
 The pointer array class is modeled after [`NSArray`](./nsarray.md), but can also hold `nil` values. You can insert or remove `nil` values which contribute to the array’s [`count`](./nspointerarray/count.md).
 
@@ -35,7 +35,7 @@ The [`NSCopying`](./nscopying.md) and [`NSCoding`](./nscoding.md) protocols are 
 
 When enumerating a pointer array with [`NSFastEnumeration`](./nsfastenumeration.md) using `for...in`, the loop will yield any `nil` values present in the array. See [Fast Enumeration Makes It Easy to Enumerate a Collection](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/FoundationTypesandCollections/FoundationTypesandCollections.html#//apple_ref/doc/uid/TP40011210-CH7-SW30) in [Programming with Objective-C](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html#//apple_ref/doc/uid/TP40011210) for more information.
 
-##### Subclassing Notes
+### Subclassing Notes
 
 `NSPointerArray` is not suitable for subclassing.
 

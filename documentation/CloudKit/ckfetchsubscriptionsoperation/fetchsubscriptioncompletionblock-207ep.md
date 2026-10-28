@@ -21,7 +21,7 @@ The block to execute after the operation fetches the subscriptions.
 @property (nonatomic, copy, nullable) void (^fetchSubscriptionCompletionBlock)(NSDictionary<NSString *,CKSubscription *> *subscriptionsBySubscriptionID, NSError *operationError);
 ```
 
-#### Discussion
+## Discussion
 
 The block returns no value and takes the following parameters:
 

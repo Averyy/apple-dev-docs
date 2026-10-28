@@ -21,7 +21,7 @@ A base type that represents a bundle-based plug-in.
 static var pluginBundle: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.apple.plugin`.
 

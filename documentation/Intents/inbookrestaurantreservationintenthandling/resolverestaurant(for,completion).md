@@ -26,7 +26,7 @@ optional func resolveRestaurant(for intent: INBookRestaurantReservationIntent) a
 - (void) resolveRestaurantForBookRestaurantReservation:(INBookRestaurantReservationIntent *) intent withCompletion:(void (^)(INRestaurantResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the restaurant requested by the user.
 

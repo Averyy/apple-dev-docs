@@ -24,7 +24,7 @@ static let cvMetalTextureCache: CIContextOption
 extern CIContextOption const kCIContextCVMetalTextureCache;
 ```
 
-#### Discussion
+## Discussion
 
 Creating a Core Image context with this optional `CVMetalTextureCache` can improve the performance of creating a Metal texture from a `CVPixelBuffer`. It is recommended to specify this option if the context renders to or from pixel buffers that come from a `CVPixelBufferPool`.
 

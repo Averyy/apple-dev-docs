@@ -21,7 +21,7 @@ Returns a Boolean value indicating whether the first tuple is ordered before the
 func < <A, B, C, D, E, F>(lhs: (A, B, C, D, E, F), rhs: (A, B, C, D, E, F)) -> Bool where A : Comparable, B : Comparable, C : Comparable, D : Comparable, E : Comparable, F : Comparable
 ```
 
-#### Discussion
+## Discussion
 
 Given two tuples `(a1, a2, ..., aN)` and `(b1, b2, ..., bN)`, the first tuple is before the second tuple if and only if `a1 < b1` or (`a1 == b1` and `(a2, ..., aN) < (b2, ..., bN)`).
 

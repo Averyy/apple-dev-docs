@@ -24,7 +24,7 @@ protocol TimelineEntry
 
 - [Migrating ClockKit complications to WidgetKit](./converting-a-clockkit-app.md)
 
-#### Overview
+## Overview
 
 A [`TimelineProvider`](./timelineprovider.md) creates one or more timeline entries with dates that tell WidgetKit when to display a widget. To render a widget, WidgetKit executes the `content` block of the widget’s configuration, passing the corresponding timeline entry.
 

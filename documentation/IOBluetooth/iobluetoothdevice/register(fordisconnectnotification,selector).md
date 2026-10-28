@@ -19,11 +19,11 @@ func register(forDisconnectNotification observer: Any!, selector inSelector: Sel
 - (IOBluetoothUserNotification *) registerForDisconnectNotification:(id) observer selector:(SEL) inSelector;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOBluetoothUserNotification representing the outstanding device disconnect notification. To unregister the notification, call -unregister of the returned IOBluetoothUserNotification object. If an error is encountered creating the notification, nil is returned.
 
-#### Discussion
+## Discussion
 
 The given selector will be called on the target observer when the target device’s connection is closed. The selector should contain two arguments. The first is the user notification object. The second is the IOBluetoothDevice that was disconnected.
 

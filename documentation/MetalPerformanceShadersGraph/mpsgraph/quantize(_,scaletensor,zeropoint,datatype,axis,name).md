@@ -24,11 +24,11 @@ func quantize(_ tensor: MPSGraphTensor, scaleTensor: MPSGraphTensor, zeroPoint: 
 - (MPSGraphTensor *) quantizeTensor:(MPSGraphTensor *) tensor scaleTensor:(MPSGraphTensor *) scaleTensor zeroPoint:(double) zeroPoint dataType:(MPSDataType) dataType axis:(NSInteger) axis name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor array of datatype dataType
 
-#### Discussion
+## Discussion
 
 Convert the float `tensor` to a quantized tensor by applying a scale + bias transform: result = round(tensor / scaleTensor) + zeroPoint
 

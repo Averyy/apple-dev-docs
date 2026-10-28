@@ -12,7 +12,7 @@ Install a book on a device.
 - Mac Catalyst 8.0+
 - macOS 10.9+ - Deprecated in 11.0
 
-#### Discussion
+## Discussion
 
 The request must contain either the `iTunesStoreID` or `MediaURL`. The `MediaURL` must lead to a PDF file, an EPUB file in `gzip` format, or an iBooks Author document in `gzip` format. Books that MDM has installed become managed books.
 
@@ -28,7 +28,7 @@ If you install a book that isn’t from the Book Store with the same `Persistent
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command availability
+### Command availability
 
 |  |  |
 | --- | --- |
@@ -38,7 +38,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | iOS |
 | Required access right | AllowAppInstallation |
 
-##### Example request and response
+### Example request and response
 
 **Enterprise**:
 

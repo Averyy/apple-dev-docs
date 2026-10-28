@@ -23,7 +23,7 @@ weak var delegate: (any UINavigationBarDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<UINavigationBarDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate must conform to the [`UINavigationBarDelegate`](../uinavigationbardelegate.md) protocol. The default value is `nil`.
 

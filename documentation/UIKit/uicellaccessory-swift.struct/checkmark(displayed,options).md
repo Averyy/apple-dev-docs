@@ -19,7 +19,7 @@ Creates a checkmark system accessory with the specified display state and config
 static func checkmark(displayed: UICellAccessory.DisplayedState = .always, options: UICellAccessory.CheckmarkOptions = CheckmarkOptions()) -> UICellAccessory
 ```
 
-#### Return Value
+## Return Value
 
 A configured checkmark cell accessory. This accessory is a checkmark with the default system green color. This accessory appears on the trailing edge of the cell.
 

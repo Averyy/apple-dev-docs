@@ -15,7 +15,7 @@ The step distance, in meters.
 distance: number;
 ```
 
-#### Discussion
+## Discussion
 
 This property reflects the distance that the user covers while traveling along this segment of the route.
 

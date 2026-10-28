@@ -17,11 +17,11 @@ Provides access to the indices of particles that intersected the volume.
 func withParticleIndices<Result>(_ callback: (Span<UInt32>) -> Result) -> Result
 ```
 
-#### Return Value
+## Return Value
 
 The value returned by `callback`.
 
-#### Discussion
+## Discussion
 
 This span is only available during the subscription callback of this event. The provided span is only valid for the lifetime of the callback.
 

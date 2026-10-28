@@ -25,7 +25,7 @@ func CFNotificationCenterRemoveObserver(_ center: CFNotificationCenter!, _ obser
 extern void CFNotificationCenterRemoveObserver(CFNotificationCenterRef center, const void *observer, CFNotificationName name, const void *object);
 ```
 
-#### Discussion
+## Discussion
 
 If both `name` and `object` are `NULL`, this function unregisters `observer` from all the notifications for which it had previously registered with `center`.
 

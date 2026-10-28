@@ -19,7 +19,7 @@ A deferred menu element that provides assigned document submission functionality
 @objc @preconcurrency class AssignedDocumentDeferredMenuElement
 ```
 
-#### Overview
+## Overview
 
 `AssignedDocumentDeferredMenuElement` enables students to submit and withdraw assigned documents directly from UIKit menus. The menu element loads asynchronously, fetching document metadata from ClassKit and displaying the appropriate action based on the current submission status. The element shows an in-line spinner during both initial loading and submission processing.
 

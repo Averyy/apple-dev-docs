@@ -19,11 +19,11 @@
 static simd_quatf SPRotation3DFloatGetQuaternion(SPRotation3DFloat rotation);
 ```
 
-#### Return Value
+## Return Value
 
 A quaternion with an axis and angle derived from the source rotation.
 
-#### Discussion
+## Discussion
 
 Returns the rotation represented as a normalized quaternion.
 

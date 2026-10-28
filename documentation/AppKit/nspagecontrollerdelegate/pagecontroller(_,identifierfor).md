@@ -20,11 +20,11 @@ optional func pageController(_ pageController: NSPageController, identifierFor o
 - (NSPageControllerObjectIdentifier) pageController:(NSPageController *) pageController identifierForObject:(id) object;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a string identifier for the view controller for the specified object.
 
-#### Discussion
+## Discussion
 
 If `pageController` does not have an unused view controller for this identifier, the you will be asked to create one via [`pageController(_:viewControllerForIdentifier:)`](./pagecontroller%28_,viewcontrollerforidentifier%29.md).
 

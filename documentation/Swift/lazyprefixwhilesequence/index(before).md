@@ -23,7 +23,7 @@ func index(before i: LazyPrefixWhileSequence<Base>.Index) -> LazyPrefixWhileSequ
 
 Available when `Base` conforms to `BidirectionalCollection`.
 
-#### Return Value
+## Return Value
 
 The index value immediately before `i`.
 

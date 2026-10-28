@@ -5,11 +5,11 @@
 
 Check color reproduction of your app or workflow by using test pattern files.
 
-#### Overview
+## Overview
 
 QuickTime Test Pattern movie files produce known results when displayed on Mac computers. Use these files to evaluate the color characteristics of your AVFoundation-based app or workflow. The simplest way to check color management in your app is with the 75% gray bars in the test pattern file.
 
-##### Open test patterns and verify color characteristics
+### Open test patterns and verify color characteristics
 
 The video industry commonly evaluates color using known, standard test patterns. Comparing your video’s color to the known standard gives you an indication of how recording or transmission altered the video signal. Use this information to determine the modifications you must make to return the signal to the standard. Typically, in an analog video environment, you use Society of Motion Picture and Television Engineers (SMPTE) color bars or Engineering Guideline EG 1.1990.
 
@@ -32,7 +32,7 @@ The figure below shows the example test pattern file `QuickTime_Test_Pattern_HD.
 
 Open the test pattern in your app and visually inspect it for the above features. Read the display buffer pixel values using the Digital Color Meter app (see below).
 
-##### Interpret gray levels using the digital color meter app
+### Interpret gray levels using the digital color meter app
 
 The simplest way to check color management in your app is with the 75% gray bars shown in the example test pattern file `QuickTime_Test_Pattern_HD.mov`.
 
@@ -50,11 +50,11 @@ With rounding error, you’ll see results in this range. This is the default beh
 
 By default, the system performs color matches using perceptual rendering intent. However, with matrix-based profiles, the system color matching reports identical results for all rendering intents.
 
-##### Verify that the color match maintains gray levels
+### Verify that the color match maintains gray levels
 
 Given a correct display profile, a color match won’t change a gray value from appearing gray in a color-managed app. It may adjust the brightness based on the gamma correction, but it won’t add color to it (grays remain R=G=B). Therefore, the color match reports identical values for the RGB components of a given gray value from any of the color bars. If it doesn’t, you should investigate the issue (see [Ensure accurate color application of your app’s video](./evaluating-an-app-s-video-color.md#Ensure-accurate-color-application-of-your-apps-video)).
 
-##### Interpret non-gray colors in the color bar
+### Interpret non-gray colors in the color bar
 
 Pixel values that aren’t gray may change due to the color match. This color match ensures the color fidelity of the original video during playback. The system performs color matches using perceptual rendering intent. This means a 75% green may get any one of many color shifts during the color match, depending on the nature of the source profile and display profile. For example, a 75% green value (0, 191, 0) may change to (40, 200, 8) after the color match.
 

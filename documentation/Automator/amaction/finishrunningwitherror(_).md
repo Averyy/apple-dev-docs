@@ -20,7 +20,7 @@ func finishRunningWithError(_ error: (any Error)?)
 - (void) finishRunningWithError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method on any action that overrides [`runAsynchronously(withInput:)`](./runasynchronously%28withinput%29.md) in order to make asynchronous calls. When [`finishRunningWithError(_:)`](./finishrunningwitherror%28_%29.md) is invoked, it immediately calls [`willFinishRunning()`](./willfinishrunning%28%29.md).
 

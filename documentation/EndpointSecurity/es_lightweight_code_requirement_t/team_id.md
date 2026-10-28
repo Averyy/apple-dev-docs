@@ -18,7 +18,7 @@ var team_id: es_string_token_t
 es_string_token_t team_id;
 ```
 
-#### Discussion
+## Discussion
 
 Structure for handling strings
 

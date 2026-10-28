@@ -25,11 +25,11 @@ func CMSampleBufferMakeDataReady(_ sbuf: CMSampleBuffer) -> OSStatus
 extern OSStatus CMSampleBufferMakeDataReady(CMSampleBufferRef sbuf);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Sample Buffer Error Codes](./sample-buffer-errors.md).
 
-#### Discussion
+## Discussion
 
 The `CMSampleBufferMakeDataReadyCallback` is passed in by the client during creation. It must return 0 if successful, and in that case, `CMSampleBufferMakeDataReady` sets the data readiness of the `CMSampleBuffer` to true. If the sample buffer isn’t ready, and there’s no `CMSampleBufferMakeDataReadyCallback` to call, `kCMSampleBufferError_BufferNotReady` will be returned. Similarly, if the `CMSampleBuffer` isn’t ready, and the `CMSampleBufferMakeDataReadyCallback` fails and returns an error, [`CMSampleBuffer`](./cmsamplebuffer.md) will be returned.
 

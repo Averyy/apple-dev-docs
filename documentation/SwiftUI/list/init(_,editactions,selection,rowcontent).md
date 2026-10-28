@@ -30,7 +30,7 @@ nonisolated
 init<Data, RowContent>(_ data: Binding<Data>, editActions: EditActions<Data>, selection: Binding<Set<SelectionValue>>?, @ContentBuilder rowContent: @escaping (Binding<Data.Element>) -> RowContent) where Content == ForEach<IndexedIdentifierCollection<Data, Data.Element.ID>, Data.Element.ID, EditableCollectionContent<RowContent, Data>>, Data : MutableCollection, Data : RandomAccessCollection, RowContent : View, Data.Element : Identifiable, Data.Index : Hashable
 ```
 
-#### Discussion
+## Discussion
 
 The following example creates a list to display a collection of favorite foods allowing the user to delete or move elements from the collection, and select a single element.
 

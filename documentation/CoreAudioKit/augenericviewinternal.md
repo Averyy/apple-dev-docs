@@ -18,7 +18,7 @@
 @objc @preconcurrency class AUGenericViewInternal
 ```
 
-#### Overview
+## Overview
 
 Apple discourages the use of this symbol.
 

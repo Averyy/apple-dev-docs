@@ -18,11 +18,11 @@ func FSEventStreamCopyDescription(_ streamRef: ConstFSEventStreamRef) -> CFStrin
 CFStringRef FSEventStreamCopyDescription(ConstFSEventStreamRef streamRef);
 ```
 
-#### Return Value
+## Return Value
 
 A CFStringRef containing the description of the supplied stream. Ownership follows the Copy rule.
 
-#### Discussion
+## Discussion
 
 Returns a CFStringRef containing the description of the supplied stream. For debugging only.
 

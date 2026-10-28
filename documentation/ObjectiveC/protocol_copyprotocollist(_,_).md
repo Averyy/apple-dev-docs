@@ -25,11 +25,11 @@ func protocol_copyProtocolList(_ proto: Protocol, _ outCount: UnsafeMutablePoint
 extern Protocol **protocol_copyProtocolList(Protocol *proto, unsigned int *outCount);
 ```
 
-#### Return Value
+## Return Value
 
 A C array of protocols adopted by `proto`. The array contains `*outCount` pointers followed by a `NULL` terminator. You must free the array with `free()`.
 
-#### Discussion
+## Discussion
 
 If the protocol declares no properties, `NULL` is returned and `*outCount` is `0`.
 

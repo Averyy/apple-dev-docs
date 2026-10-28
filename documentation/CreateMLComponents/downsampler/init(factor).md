@@ -21,7 +21,7 @@ Creates a down sample temporal transformer.
 init(factor: Int)
 ```
 
-#### Discussion
+## Discussion
 
 > **Precondition**: `factor` must be greater than 0.
 

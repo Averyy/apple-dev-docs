@@ -27,7 +27,7 @@ var requestData: Data? { get set }
 @property (nonatomic, copy, readwrite, nullable) NSData * requestData;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`. If [`requestData`](./requestdata.md) is not `nil`, your payment will be rejected by the Apple App Store.
 

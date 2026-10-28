@@ -13,13 +13,13 @@ Make remote files available in macOS and iOS, and synchronize their states by us
 - macOS 15.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 More and more people use cloud storage to store and share digital assets. Developers can seamlessly integrate their cloud storage service with macOS and iOS by creating file provider extensions to expose items on their server as files or folders in macOS and iOS, and synchronize their states.
 
 This sample code project implements file provider extensions that sync content between a file storage server and both macOS and iOS, so the files on the server are available on the local system and accessible through user interactions and system-provided APIs. It also demonstrates how to synchronize the states of the file provider items between the server and the systems, and how to enhance the user experience using decorations and custom actions. It includes a macOS app and an iOS app that implement a management interface for users to log in to the server and try out other features. The macOS app implements a simplified file storage server with HTTP-based communication to act as the backend of the file provider extensions.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 To build the sample app, perform the following steps in Xcode:
 
@@ -40,7 +40,7 @@ To try out the sample app in iOS:
 4. Tap the Add button (+) to add a domain. A new domain is in a disabled state by default.
 5. Launch the Files app, find the domain in the list of locations, and then tap to enable it.
 
-##### Understand the targets of the sample project
+### Understand the targets of the sample project
 
 This sample project consists of the following targets:
 
@@ -52,7 +52,7 @@ This sample project consists of the following targets:
 - `Server` creates a simplified file storage server that acts as the backend of the file provider extensions.
 - `Common` creates `common.framework`, which provides some utilities for the entire project.
 
-##### Manage file provider domains
+### Manage file provider domains
 
 A file provider domain ([NSFileProviderDomain](./nsfileproviderdomain.md)) represents a location on the sidebar of Finder (macOS) or Files (iOS). A file provider extension can have multiple domains to provide different item sets and apply per-domain account authentication. macOS and iOS create one extension instance for each domain, so all the domains work independently.
 
@@ -70,7 +70,7 @@ The domain name needs to be unique. Adding a domain with a name that conflicts w
 
 Users can delete a domain by selecting it and tapping the Remove Domain button, which eventually triggers [remove(_:completionHandler:)](./nsfileprovidermanager/remove%28_,completionhandler%29.md) or [remove(_:mode:completionHandler:)](./nsfileprovidermanager/remove%28_,mode,completionhandler%29.md). In iOS, deleting a domain deletes all the files. In macOS, apps can keep downloaded files or files that contain unsynchronized local changes by specifying a removal mode ([NSFileProviderManager.DomainRemovalMode](./nsfileprovidermanager/domainremovalmode.md)).
 
-##### Enumerate file provider items
+### Enumerate file provider items
 
 After users add a domain, the system immediately asks the file provider extension for an enumerator (an object that implements [NSFileProviderEnumerator](./nsfileproviderenumerator.md)) by calling [enumerator(for:request:)](./nsfileproviderenumerating/enumerator%28for,request%29.md), and then triggers enumerations to request the items.
 
@@ -90,7 +90,7 @@ In this sample, the working set is the same as the item set in the root containe
 
 This sample doesn’t track the materialized items in the local system. Real-world file provider extensions can do that and report the items to the server so the server can maintain the materialized item set and avoid pushing the changes on items irrelevant to the devices. See [Synchronizing the File Provider Extension](./synchronizing-the-file-provider-extension.md) for more details.
 
-##### Synchronize files between the device and the server
+### Synchronize files between the device and the server
 
 The state of a file provider item can change on both the device side and the server side. When that happens, the file provider extension needs to synchronize the state.
 
@@ -139,7 +139,7 @@ When changes happen on the server side, there are two ways to notify the file pr
 
 In this sample, the server doesn’t implement the `PushKit` support (to reduce the complexity of the sample code configuration). It posts an `.itemsChanged` notification using [DistributedNotificationCenter](../Foundation/distributednotificationcenter.md) when changes happen. The macOS app, which runs on the same computer as the server, observes the notification, and triggers an enumeration when getting one. The iOS app provides the Signal domain button in the domain detail view for users to trigger an enumeration manually.
 
-##### Enhance file providers with decorations, custom actions, and file provider UI extensions
+### Enhance file providers with decorations, custom actions, and file provider UI extensions
 
 File provider extensions can provide decorations and custom actions for an item. Finder and Files display the decorations on the item, and present the custom actions as contextual menu items when users Control-click or long press the item.
 
@@ -179,7 +179,7 @@ public override func prepare(forError error: Error) {
 }
 ```
 
-##### Handle errors elegantly
+### Handle errors elegantly
 
 The File Provider framework defines the common errors in [FSFileProviderError.Code](./nsfileprovidererror/code.md). If an error happens when running a method that the system calls, file provider extensions need to report that by passing the error to the completion handler.
 

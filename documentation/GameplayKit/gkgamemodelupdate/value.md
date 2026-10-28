@@ -25,7 +25,7 @@ var value: Int { get set }
 @property (nonatomic, assign) NSInteger value;
 ```
 
-#### Discussion
+## Discussion
 
 Your game does not assign to or read from this property directly. Instead, when you adopt the [`GKGameModelUpdate`](../gkgamemodelupdate.md) protocol, you simply provide a read/write implementation of this property. When you use the [`GKMinmaxStrategist`](../gkminmaxstrategist.md) class to select optimal moves during gameplay, GameplayKit assigns values to this property in order to rate the desirability of each move to a given player.
 

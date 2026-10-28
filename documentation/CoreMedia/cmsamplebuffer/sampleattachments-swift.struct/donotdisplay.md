@@ -21,7 +21,7 @@ Indicates whether the sample should be decoded but not displayed.
 var doNotDisplay: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Use this attachment at run time to request this behavior from a display pipeline such as the `AVSampleBufferDisplayLayer` class.
 

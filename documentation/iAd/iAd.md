@@ -11,7 +11,7 @@ The Apple Search Ads iAd Attribution API is a legacy framework for attributing a
 - iPadOS 4.0+
 - Mac Catalyst 13.0+
 
-#### Overview
+## Overview
 
 > ⚠️ **Warning**:  After February 7, 2023, all requests made to the Apple Search Ads iAd Attribution API will return with a value of `"iad-attribution"` `=` `false`, or errors. See `ADClient/requestAttributionDetails(_:)`. Use the [AdServices](../AdServices/AdServices.md) framework for current attribution integration with the [Apple Ads](../apple_ads/apple_ads.md) Campaign Management API for devices using iOS 14.3 and later. Attribution isn’t available for downloads and redownloads from devices using iOS 14.2 or earlier.
 

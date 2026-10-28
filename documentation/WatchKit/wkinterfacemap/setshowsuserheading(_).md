@@ -19,7 +19,7 @@ func setShowsUserHeading(_ showsUserHeading: Bool)
 - (void) setShowsUserHeading:(BOOL) showsUserHeading;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the map doesn’t show the user’s heading.
 

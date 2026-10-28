@@ -21,7 +21,7 @@ An interface that marks a type as an extension capability.
 protocol Capability : Identifiable where Self.ID == String
 ```
 
-#### Overview
+## Overview
 
 Types adopt this protocol if they comprise part of an extension’s capabilities.
 

@@ -29,11 +29,11 @@ func size() -> CGSize
 
 - [Loading and Using Textures](../loading-and-using-textures.md)
 
-#### Return Value
+## Return Value
 
 The dimensions of the texture, measured in points.
 
-#### Discussion
+## Discussion
 
 If the texture was created using an image file and that image file hasn’t been loaded, calling this method forces the texture data to be loaded from the file.
 

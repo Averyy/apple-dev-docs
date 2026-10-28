@@ -13,11 +13,11 @@
 errno_t ifaddr_reference(ifaddr_t ifaddr);
 ```
 
-#### Return Value
+## Return Value
 
 0 upon success
 
-#### Discussion
+## Discussion
 
 Increment the reference count of an address tied to an interface.
 

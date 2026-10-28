@@ -22,7 +22,7 @@ An abstract handle to an input or output data resource, such as a file or a sock
 struct FileDescriptor
 ```
 
-#### Overview
+## Overview
 
 You are responsible for managing the lifetime and validity of `FileDescriptor` values, in the same way as you manage a raw C file handle.
 

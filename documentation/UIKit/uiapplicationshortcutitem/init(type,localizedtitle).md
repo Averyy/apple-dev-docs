@@ -22,7 +22,7 @@ convenience init(type: String, localizedTitle: String)
 - (instancetype) initWithType:(NSString *) type localizedTitle:(NSString *) localizedTitle;
 ```
 
-#### Return Value
+## Return Value
 
 An immutable Home Screen dynamic quick action with a user-visible title and no icon.
 

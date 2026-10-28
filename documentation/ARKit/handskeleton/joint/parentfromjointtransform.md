@@ -15,7 +15,7 @@ The transform from the joint to its parent joint’s coordinate system.
 var parentFromJointTransform: simd_float4x4 { get }
 ```
 
-#### Discussion
+## Discussion
 
 The root joint’s [`parentFromJointTransform`](./parentfromjointtransform.md) is an identity matrix.
 

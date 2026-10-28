@@ -23,11 +23,11 @@ func gss_display_name(_ minor_status: UnsafeMutablePointer<OM_uint32>, _ input_n
 OM_uint32 gss_display_name(OM_uint32 *minor_status, gss_name_t const input_name, gss_buffer_t output_name_buffer, gss_OID*output_name_type);
 ```
 
-#### Return Value
+## Return Value
 
 A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on success. See [Function Status](./function-status.md) for a complete enumeration of status outputs.
 
-#### Discussion
+## Discussion
 
 Use this function to reverse the import procedure carried out with the [`gss_import_name(_:_:_:_:)`](./gss_import_name%28_,_,_,_%29.md) function.
 

@@ -20,7 +20,7 @@ Consumes and returns the [`USDPlayer.MaterialData`](../materialdata.md) for the 
 mutating func takeMaterialAddition(id: USDPlayer.MaterialID) -> USDPlayer.MaterialData?
 ```
 
-#### Discussion
+## Discussion
 
 Returns `nil` if not present.
 

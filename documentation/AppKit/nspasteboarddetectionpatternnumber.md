@@ -15,7 +15,7 @@ A pattern that indicates the pasteboard detects a string that consists of a nume
 extern NSPasteboardDetectionPattern const NSPasteboardDetectionPatternNumber;
 ```
 
-#### Return Value
+## Return Value
 
 NSNumber value
 

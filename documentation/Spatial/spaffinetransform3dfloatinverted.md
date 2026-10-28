@@ -19,11 +19,11 @@
 static SPAffineTransform3DFloat SPAffineTransform3DFloatInverted(SPAffineTransform3DFloat transform);
 ```
 
-#### Return Value
+## Return Value
 
 A new transform that’s constructed by inverting an existing affine transform.
 
-#### Discussion
+## Discussion
 
 Returns a new transform that’s constructed by inverting an existing affine transform.
 

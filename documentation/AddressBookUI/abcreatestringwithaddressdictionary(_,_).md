@@ -23,11 +23,11 @@ func ABCreateStringWithAddressDictionary(_ address: [AnyHashable : Any], _ addCo
 NSString *ABCreateStringWithAddressDictionary(NSDictionary *address, BOOL addCountryName);
 ```
 
-#### Return Value
+## Return Value
 
 The formatted address (may include line endings).
 
-#### Discussion
+## Discussion
 
 The address is formatted based on the address’s country code ([`kABPersonAddressCountryCodeKey`](../AddressBook/kabpersonaddresscountrycodekey.md)).  In general, the country code should be set to correspond with the country or region name ([`kABPersonAddressCountryKey`](../AddressBook/kabpersonaddresscountrykey.md)).
 

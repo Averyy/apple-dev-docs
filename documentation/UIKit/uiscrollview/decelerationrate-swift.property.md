@@ -23,7 +23,7 @@ var decelerationRate: UIScrollView.DecelerationRate { get set }
 @property (nonatomic) UIScrollViewDecelerationRate decelerationRate;
 ```
 
-#### Discussion
+## Discussion
 
 The default rate is [`normal`](./decelerationrate-swift.struct/normal.md). For possible deceleration rates, see [`UIScrollView.DecelerationRate`](./decelerationrate-swift.struct.md).
 

@@ -19,11 +19,11 @@ Disables this hover effect.
 func hoverEffectDisabled(_ isDisabled: Bool = true) -> some CustomHoverEffect
 ```
 
-#### Return Value
+## Return Value
 
 A conditionally disabled hover effect.
 
-#### Discussion
+## Discussion
 
 Use `hoverEffectDisabled(_:)` to prevent a hover effect from becoming active. When an effect is disabled, all contained effects are also disabled and cannot be re-enabled.
 

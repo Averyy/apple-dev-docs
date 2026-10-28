@@ -25,7 +25,7 @@ static var userInitiated: ProcessInfo.ActivityOptions { get }
 NSActivityUserInitiated
 ```
 
-#### Discussion
+## Discussion
 
 Examples of user initiated actions are exporting or downloading a user-specified file or dismissing a form sheet.
 

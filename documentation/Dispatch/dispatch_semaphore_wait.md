@@ -21,11 +21,11 @@ Waits for (decrements) a semaphore.
 extern intptr_t dispatch_semaphore_wait(dispatch_semaphore_t dsema, dispatch_time_t timeout);
 ```
 
-#### Return Value
+## Return Value
 
 Returns zero on success, or non-zero if the timeout occurred.
 
-#### Discussion
+## Discussion
 
 Decrement the counting semaphore. If the resulting value is less than zero, this function waits for a signal to occur before returning.
 

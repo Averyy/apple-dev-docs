@@ -17,7 +17,7 @@ Returns the document type associated with files having extension `fileExtensionO
 - (NSString *) typeFromFileExtension:(NSString *) fileNameExtensionOrHFSFileType;
 ```
 
-#### Discussion
+## Discussion
 
 The  `fileExtensionOrHFSFileType` parameter may also be an encoded HFS file type, as well as a filename extension.
 

@@ -17,7 +17,7 @@
 @property (nonatomic, readonly) AVAssetTrack * defaultSpatialAudioTrack;
 ```
 
-#### Discussion
+## Discussion
 
 Default `AVAssetTrack` containing Spatial Audio
 

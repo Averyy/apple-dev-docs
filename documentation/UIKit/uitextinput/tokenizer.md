@@ -24,7 +24,7 @@ var tokenizer: any UITextInputTokenizer { get }
 @property (nonatomic, readonly) id<UITextInputTokenizer> tokenizer;
 ```
 
-#### Discussion
+## Discussion
 
 Standard units of granularity include characters, words, lines, and paragraphs. In most cases, you may lazily create and assign an instance of a subclass of [`UITextInputStringTokenizer`](../uitextinputstringtokenizer.md) for this purpose. If you require different behavior than this system-provided tokenizer, you can create a custom tokenizer that adopts the [`UITextInputTokenizer`](../uitextinputtokenizer.md) protocol.
 

@@ -19,7 +19,7 @@ var initialRamdiskURL: URL? { get set }
 @property (copy, nullable) NSURL * initialRamdiskURL;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `nil`. If you want specific files to be available when your Linux kernel boots, provide a URL to a valid RAM disk file in this property.
 

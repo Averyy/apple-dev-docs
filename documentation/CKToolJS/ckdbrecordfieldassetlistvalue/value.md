@@ -15,7 +15,7 @@ The array of asset objects in this record field.
 attribute CKDBAsset[]? value;
 ```
 
-#### Discussion
+## Discussion
 
 This is an array of CKDBAsset objects.
 

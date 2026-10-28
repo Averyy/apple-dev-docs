@@ -18,7 +18,7 @@ Configure the distribution of audio channels in 3D space.
 enum CASoundStageSize : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The Objective-C version of the `SpatialAudioExperiences.SoundStageSize` Swift type.
 

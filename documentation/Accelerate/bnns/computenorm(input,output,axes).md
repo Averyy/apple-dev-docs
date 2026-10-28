@@ -23,7 +23,7 @@ Computes the Euclidean norm and writes the result to the output tensor.
 static func computeNorm(input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, axes: [Int]? = nil) throws
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to compute the norm of either an entire tensor or an axis or axes of a tensor.
 

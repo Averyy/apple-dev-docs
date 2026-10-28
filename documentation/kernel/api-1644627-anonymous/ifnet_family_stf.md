@@ -13,7 +13,7 @@
 IFNET_FAMILY_STF = 12
 ```
 
-#### Discussion
+## Discussion
 
 A 6to4 interface.
 

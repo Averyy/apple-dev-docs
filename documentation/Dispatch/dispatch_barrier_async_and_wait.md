@@ -21,7 +21,7 @@ Submits a work item for synchronous execution and marks the work as a barrier fo
 extern void dispatch_barrier_async_and_wait(dispatch_queue_t queue, dispatch_block_t block);
 ```
 
-#### Discussion
+## Discussion
 
 This function submits work to the specified queue for execution. Unlike [`dispatch_async`](./dispatch_async.md), this function doesn’t return until after the block finishes. Calling this function and targeting the current queue results in deadlock.
 

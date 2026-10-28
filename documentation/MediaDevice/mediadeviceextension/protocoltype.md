@@ -23,7 +23,7 @@ var protocolType: UTType { get }
 
 - [Creating a media device extension](../creating-a-media-device-extension.md)
 
-#### Declaring the Protocol Type
+## Declaring the Protocol Type
 
 Declare a custom Uniform Type Identifier in your extension’s Info.plist using `UTExportedTypeDeclarations`. The type must conform to `public.media-sharing-protocol`:
 
@@ -52,7 +52,7 @@ Declare a custom Uniform Type Identifier in your extension’s Info.plist using 
 - `UTTypeDescription`: A human-readable name for the protocol. The system may display this in user interfaces such as the route picker.
 - `UTTypeConformsTo`: Must include `public.media-sharing-protocol`.
 
-#### Returning the Type
+## Returning the Type
 
 Return a `UTType` whose identifier matches the `UTTypeIdentifier` declared in Info.plist:
 

@@ -25,11 +25,11 @@ class func electricField() -> SKFieldNode
 + (SKFieldNode *) electricField;
 ```
 
-#### Return Value
+## Return Value
 
 A new electric field node.
 
-#### Discussion
+## Discussion
 
 The force points toward the field node’s position and has a magnitude proportional to the field’s [`strength`](./strength.md) property and the physics body’s [`charge`](../skphysicsbody/charge.md) property. This field models the first part of the Lorentz equation:
 

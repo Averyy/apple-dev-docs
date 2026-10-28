@@ -20,7 +20,7 @@ The name of this property.
 var name: USDToken { get }
 ```
 
-#### Discussion
+## Discussion
 
 A property’s name is the last component of its [`path`](./path.md). `name` is equivalent to the `USDLayer.Path/name` of that path.
 

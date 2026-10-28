@@ -23,7 +23,7 @@ func reportPublicKeyCredentialUpdate(forRelyingParty relyingParty: String, userH
 - (void) reportPublicKeyCredentialUpdateForRelyingParty:(NSString *) relyingParty userHandle:(NSData *) userHandle newName:(NSString *) newName;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method when a relying party sends an updated user name by calling [`reportPublicKeyCredentialUpdate(relyingPartyIdentifier:userHandle:newName:)`](../ascredentialupdater/reportpublickeycredentialupdate%28relyingpartyidentifier,userhandle,newname%29.md).
 

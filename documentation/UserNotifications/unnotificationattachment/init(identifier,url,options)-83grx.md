@@ -24,11 +24,11 @@ convenience init(identifier: String, url URL: URL, options: [AnyHashable : Any]?
 + (instancetype) attachmentWithIdentifier:(NSString *) identifier URL:(NSURL *) URL options:(NSDictionary *) options error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An attachment object containing information about the specified file or `nil` if the attachment could not be created.
 
-#### Discussion
+## Discussion
 
 This method verifies that the specified file is readable and that the file format is one of the supported types. When errors occur, the method provides an appropriate `error` object.
 

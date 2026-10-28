@@ -25,7 +25,7 @@ class func setMetadata(_ metadata: [String : Any]?, forPersistentStoreAt url: UR
 + (BOOL) setMetadata:(NSDictionary<NSString *,id> *) metadata forPersistentStoreWithURL:(NSURL *) url error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses must override this method to set metadata appropriately.
 

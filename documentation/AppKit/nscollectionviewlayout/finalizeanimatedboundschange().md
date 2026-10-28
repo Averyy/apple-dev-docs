@@ -19,7 +19,7 @@ func finalizeAnimatedBoundsChange()
 - (void) finalizeAnimatedBoundsChange;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method does nothing. The collection view calls this method after creating the animations for changing inserting or deleting items or for changing the collection view’s bounds. Subclasses can use this method to perform any cleanup operations related to those changes. You can also use this method to perform custom animations. Any animations you create are added to the animation block used to handle the insertions, deletions, and bounds changes.
 

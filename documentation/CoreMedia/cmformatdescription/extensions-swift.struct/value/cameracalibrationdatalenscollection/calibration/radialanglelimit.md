@@ -21,7 +21,7 @@ Outer limit of the calibration validity in degrees of angle eccentric from the o
 var radialAngleLimit: Float
 ```
 
-#### Discussion
+## Discussion
 
 The value is linked to radial distortion corrections with k1 and k2.
 

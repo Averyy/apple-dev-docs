@@ -19,7 +19,7 @@ func transform(using transform: AffineTransform)
 - (void) transformUsingAffineTransform:(NSAffineTransform *) transform;
 ```
 
-#### Discussion
+## Discussion
 
 This method applies the transform to the path’s points immediately. The following code translates a line from 0,0 to 100,100 to a line from 10,10 to 110,110.
 

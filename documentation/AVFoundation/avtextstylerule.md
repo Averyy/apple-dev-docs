@@ -24,7 +24,7 @@ class AVTextStyleRule
 @interface AVTextStyleRule : NSObject
 ```
 
-#### Overview
+## Overview
 
 You use text style objects to format subtitles, closed captions, and other text-related content of the item. The system applies these rules to all or part of the text of the media item.
 

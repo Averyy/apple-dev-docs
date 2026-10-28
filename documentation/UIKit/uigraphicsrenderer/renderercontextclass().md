@@ -23,11 +23,11 @@ class func rendererContextClass() -> AnyClass
 + (Class) rendererContextClass;
 ```
 
-#### Return Value
+## Return Value
 
 A subclass of [`UIGraphicsRendererContext`](../uigraphicsrenderercontext.md) suitable for the current renderer.
 
-#### Discussion
+## Discussion
 
 Each subclass of `UIGraphicsRenderer` can define its own subclass of [`UIGraphicsRendererContext`](../uigraphicsrenderercontext.md). The graphics renderer calls this method whenever it needs to create a new graphics renderer context.
 

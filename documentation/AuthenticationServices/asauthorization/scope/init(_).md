@@ -21,7 +21,7 @@ Creates a scope from the given string.
 init(_ rawValue: String)
 ```
 
-#### Discussion
+## Discussion
 
 Typically you use one of the predefined scopes, like [`email`](./email.md), instead of initializing one from a string.
 

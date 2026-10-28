@@ -20,7 +20,7 @@ A reference to a function in a Metal shader library, along with its bound unifor
 struct Shader
 ```
 
-#### Overview
+## Overview
 
 Shader values can be used as filter effects on views, see the [`colorEffect(_:isEnabled:)`](./view/coloreffect%28_,isenabled%29.md), [`distortionEffect(_:maxSampleOffset:isEnabled:)`](./view/distortioneffect%28_,maxsampleoffset,isenabled%29.md), and [`layerEffect(_:maxSampleOffset:isEnabled:)`](./view/layereffect%28_,maxsampleoffset,isenabled%29.md) functions.
 

@@ -25,7 +25,7 @@ case becomeDownload
 NSURLSessionResponseBecomeDownload
 ```
 
-#### Discussion
+## Discussion
 
 When used with the completion handler from [`urlSession(_:dataTask:didReceive:completionHandler:)`](../../urlsessiondatadelegate/urlsession%28_,datatask,didreceive,completionhandler%29.md), this disposition converts the data task to a download task. This will result in your delegate’s [`urlSession(_:dataTask:didBecome:)`](../../urlsessiondatadelegate/urlsession%28_,datatask,didbecome%29-60op5.md) being called to provide you with the new download task that supersedes the current task.
 

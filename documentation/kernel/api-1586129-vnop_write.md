@@ -15,11 +15,11 @@ Call down to the filesystem to write file data.
 errno_t VNOP_WRITE(vnode_t vp, struct uio *uio, int ioflag, vfs_context_t ctx);
 ```
 
-#### Return Value
+## Return Value
 
 0 for success or a filesystem-specific error. VNOP_WRITE() can return success even if less data was written than originally requested; returning an error value should indicate that something actually went wrong.
 
-#### Discussion
+## Discussion
 
 VNOP_WRITE() is to write() as VNOP_READ() is to read(). The filesystem may use the buffer cache, the cluster layer, or an alternative method to write its data; uio routines will be used to see that data is copied to the correct virtual address in the correct address space and will update its uio argument to indicate how much data has been moved.
 

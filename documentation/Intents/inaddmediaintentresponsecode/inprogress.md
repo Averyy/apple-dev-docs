@@ -24,7 +24,7 @@ case inProgress
 INAddMediaIntentResponseCodeInProgress
 ```
 
-#### Discussion
+## Discussion
 
 When handling the intent, return this code if it may take more than a few seconds to add the media.
 

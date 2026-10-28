@@ -25,7 +25,7 @@ func string(from measurement: Measurement<Unit>) -> String
 - (NSString *) stringFromMeasurement:(NSMeasurement *) measurement;
 ```
 
-#### Return Value
+## Return Value
 
 A user-readable string that represents the measurement.
 

@@ -14,11 +14,11 @@ IOReturn setBufferConstraints(
  UInt32 options = 0);
 ```
 
-#### Return Value
+## Return Value
 
 May return an error if there is a problem allocating the underlying resources or if buffers are currently attached.
 
-#### Overview
+## Overview
 
 Sets the maximums size of any page table segment and the required alignemnt. Double buffering may be used to satisfy these constraints. The only supported option is kFWSBP2ConstraintForceDoubleBuffer which forces a page aligned double buffering of the entire descriptor.
 

@@ -12,13 +12,13 @@ Improve the user experience of finding and selecting assets by using the Photos 
 - Mac Catalyst 15.0+
 - Xcode 13.0+
 
-#### Overview
+## Overview
 
 This sample shows how to use the [PhotoKit](./PhotoKit.md) Photos picker, and illustrates how to filter assets according to the user’s selection. After you have a selection, you use an item provider to load the asset to display in the app. The sample also explores the new configuration options in iOS 15.
 
 > **Note**: This sample code project is associated with WWDC21 session [10046: Improve access to Photos in your app](https://developer.apple.com/videos/play/wwdc2021/10046/).
 
-##### Understand the Photos Picker Benefits
+### Understand the Photos Picker Benefits
 
 Both [`PHPickerViewController`](../PhotosUI/phpickerviewcontroller.md) and [`UIImagePickerController`](../UIKit/uiimagepickercontroller.md) use the out-of-process Photos picker user interface. The `PHPickerViewController` contains a powerful set of APIs that make it a great alternative to `UIImagePickerController`. `PHPickerViewController` improves stability and reliability, and includes several benefits to developers and users, such as the following:
 
@@ -31,7 +31,7 @@ Both [`PHPickerViewController`](../PhotosUI/phpickerviewcontroller.md) and [`UII
 
 Apps don’t need to request photo library permission when using either class, so the sample app avoids requesting permission until it’s necessary. A camera app, photo editing app, or library browsing app needs to use much more of [PhotoKit](./PhotoKit.md)‘s functionality, but an app that’s only setting a basic profile photo doesn’t need photo library permission. An app that only saves photos to the photo library can use the Add Photos Only permission level when requesting authorization.
 
-##### Configure the Photos Picker
+### Configure the Photos Picker
 
 Before displaying the photo library, the sample creates a [`PHPickerConfiguration`](../PhotosUI/phpickerconfiguration-swift.struct.md) object using the shared photo library. Creating a configuration without a photo library provides only asset data, and doesn’t include asset identifiers.
 
@@ -64,7 +64,7 @@ configuration.selectionLimit = 0
 configuration.preselectedAssetIdentifiers = selectedAssetIdentifiers
 ```
 
-##### Display a Picker with the Configuration
+### Display a Picker with the Configuration
 
 The sample creates and displays the picker using the configuration object. Displaying the photo library doesn’t need user permission because it’s running in a separate process. An app can’t take screenshots of content and can only read the assets that the user selects.
 
@@ -78,7 +78,7 @@ Apps are responsible for presenting and dismissing the photo library. The sample
 
 See [Delivering an Enhanced Privacy Experience in Your Photos App](./delivering-an-enhanced-privacy-experience-in-your-photos-app.md) to learn more about requesting authorization and limited library capabilities.
 
-##### Retrieve the Selected Results
+### Retrieve the Selected Results
 
 When completing a picker session, the delegate provides a list of result objects that contain an item provider that allows for loading data asynchronously. The results contain local identifiers because of initializing the configuration with a photo library.
 
@@ -104,7 +104,7 @@ if selection.isEmpty {
 }
 ```
 
-##### Fetch Selected Asset Data for Display
+### Fetch Selected Asset Data for Display
 
 An item provider gives an app the ability to load assets asynchronously and on demand. Before loading an object, the sample verifies that the object is available.
 
@@ -125,7 +125,7 @@ if itemProvider.canLoadObject(ofClass: PHLivePhoto.self) {
 }
 ```
 
-##### Load Asset Metadata
+### Load Asset Metadata
 
 Retrieving metadata for an asset doesn’t require special permission. An app can get the properties after loading an object from an item provider. However, it may not include all properties because of the transcoding process.
 

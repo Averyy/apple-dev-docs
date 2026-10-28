@@ -20,7 +20,7 @@ class NSPropertySpecifier
 @interface NSPropertySpecifier : NSScriptObjectSpecifier
 ```
 
-#### Overview
+## Overview
 
 You don’t typically subclass [`NSPropertySpecifier`](./nspropertyspecifier.md).
 

@@ -19,7 +19,7 @@ var storageDevices: [VZStorageDeviceConfiguration] { get set }
 @property (copy, readwrite) NSArray<VZStorageDeviceConfiguration *> * storageDevices;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is an empty array. If your VM exposes one or more storage devices, assign an array of [`VZVirtioBlockDeviceConfiguration`](../vzvirtioblockdeviceconfiguration.md) objects to this property.
 

@@ -21,7 +21,7 @@ Brightens the view by the specified amount.
 func brightness(_ amount: Double) -> some VisualEffect
 ```
 
-#### Return Value
+## Return Value
 
 An effect that brightens the view by the specified amount.
 

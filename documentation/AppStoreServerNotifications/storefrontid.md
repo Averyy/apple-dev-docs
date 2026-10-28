@@ -19,7 +19,7 @@ string storefrontId
 
 - [App Store Server Notifications changelog](./app-store-server-notifications-changelog.md)
 
-#### Discussion
+## Discussion
 
 This value is the same as the [`id`](../StoreKit/storefront/id.md) value in StoreKit.
 

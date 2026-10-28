@@ -16,7 +16,7 @@ This array defines the cursor color values and transparency. The array is two di
 unsigned short image[4][256];
 ```
 
-#### Discussion
+## Discussion
 
 Non-zero values are stored with the red, green, blue, and alpha values encoded with the following masks:
 

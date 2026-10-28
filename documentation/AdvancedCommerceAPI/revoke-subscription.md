@@ -15,7 +15,7 @@ Immediately cancel a customer’s subscription and all the items that are includ
 - [Advanced Commerce API changelog](./changelog.md)
 - [Identifying rate limits for Advanced Commerce APIs](./ratelimits.md)
 
-#### Discussion
+## Discussion
 
 When this endpoint succeeds, the system sets the subscription’s auto-renew status to `false`, and revokes the subscription with a full or prorated refund. The App Store Server Notifications sends a `REFUND`  [`notificationType`](../AppStoreServerNotifications/notificationtype.md) to your [`App Store Server Notifications V2`](../AppStoreServerNotifications/app-store-server-notifications-v2.md) endpoint. Check the `revocationDate` property in the notification’s  [`JWSTransactionDecodedPayload`](../AppStoreServerNotifications/jwstransactiondecodedpayload.md). Turn off service for the subscription and its items as of the revocation date. Don’t turn off service to the subscription until you receive the notification.
 

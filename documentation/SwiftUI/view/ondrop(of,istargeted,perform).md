@@ -37,11 +37,11 @@ nonisolated
 func onDrop(of supportedTypes: [String], isTargeted: Binding<Bool>?, perform action: @escaping ([NSItemProvider], CGPoint) -> Bool) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that provides a drop destination for a drag operation of the specified types.
 
-#### Discussion
+## Discussion
 
 The drop destination is the same size and position as this view.
 

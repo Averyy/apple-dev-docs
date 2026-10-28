@@ -32,7 +32,7 @@ var label: String? { get }
 @property (atomic, copy, readonly, nullable) NSString * label;
 ```
 
-#### Discussion
+## Discussion
 
 Labeled property is used only for properties that are in labeled arrays. If the property is not an array of labeled values, the value of the label is `nil`.
 

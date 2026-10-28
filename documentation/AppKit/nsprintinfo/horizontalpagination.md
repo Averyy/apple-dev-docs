@@ -19,7 +19,7 @@ var horizontalPagination: NSPrintInfo.PaginationMode { get set }
 @property NSPrintingPaginationMode horizontalPagination;
 ```
 
-#### Discussion
+## Discussion
 
 Pagination modes described in [`NSPrintInfo.PaginationMode`](./paginationmode.md).
 

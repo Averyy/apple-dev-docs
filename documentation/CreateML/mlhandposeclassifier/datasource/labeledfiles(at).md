@@ -19,7 +19,7 @@ Creates a data source from a folder that contains images, each named after the h
 case labeledFiles(at: URL)
 ```
 
-#### Discussion
+## Discussion
 
 Create a hand-pose data source from a directory of images with the `labeledFiles` case. You must name each image file with a hand-pose label, followed by a period and an arbitrary string, ending with the image file’s extension. For example, you can name a hand-pose classifier’s training files as `Peace.3.png`, `ThumbsUp.1.jpg`, `ThumbsUp.2.jpg`, and so on.
 

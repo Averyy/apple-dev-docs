@@ -21,7 +21,7 @@ No alignment.
 static var none: OSLogStringAlignment { get }
 ```
 
-#### Discussion
+## Discussion
 
 When you specify this option, the system displays the value using its natural width and doesn’t align it.
 

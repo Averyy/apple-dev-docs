@@ -5,33 +5,33 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The visionOS 27.2 SDK provides support to develop apps for Apple Vision Pro devices running visionOS 27.2. The SDK comes bundled with Xcode 27.2. For information on the compatibility requirements for Xcode 27.2, see [Xcode 27.2 Release Notes](../Xcode-Release-Notes/xcode-27_2-release-notes.md).
 
-##### Quick Look
+### Quick Look
 
-###### Known Issues
+#### Known Issues
 
 - 3D objects opened from Safari might reposition unexpectedly when you move them. (187035825)
 
-##### Siri AI
+### Siri AI
 
-###### Known Issues
+#### Known Issues
 
 - If you ask ChatGPT a question using Siri while ChatGPT is turned off in Settings, Siri might become unresponsive. (189382856)
 
   **Workaround:** Force quit Siri, and then turn on ChatGPT in Settings.
 
-##### StoreKit Testing in Xcode
+### StoreKit Testing in Xcode
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Intro offer eligibility does not reset immediately after calling `SKTestSession.clearTransactions()`. (183933307) (FB24137836)
 - Fixed: Changing the storefront or locale using `SKTestSession` doesn’t propagate through `Storefront.updates`. (184155259)
 - Fixed: Failed purchases using `SKTestSession` might display error dialogs even when `dialogsDisabled` is set to `true`. (184255116)
 
-###### Known Issues
+#### Known Issues
 
 - Making a purchase in-app for a subscription that is a member of a subscription bundle incorrectly allows the user to unbundle instead of throwing an error. (186018916)
 

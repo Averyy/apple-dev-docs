@@ -21,7 +21,7 @@ class CPMessageListItemTrailingConfiguration
 @interface CPMessageListItemTrailingConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use a trailing configuration to describe the visual elements that a message list item’s trailing region contains. The region can show a [`CPMessageTrailingItem`](./cpmessagetrailingitem.md) and an image.
 

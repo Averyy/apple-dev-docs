@@ -24,7 +24,7 @@ var byValue: Any? { get set }
 @property (strong, nullable) id byValue;
 ```
 
-#### Discussion
+## Discussion
 
 See [Setting Interpolation Values](../cabasicanimation.md#Setting-Interpolation-Values) for details on how `byValue` interacts with the other interpolation values.
 

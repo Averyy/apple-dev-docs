@@ -21,7 +21,7 @@ Uniforms that are named and exposed as parameters of this graph, keyed by name.
 var namedUniforms: [String : ComputeNodeGraph.Assembly.UniformBinding] { get }
 ```
 
-#### Discussion
+## Discussion
 
 Unlike [`sharedUniforms`](./shareduniforms.md), named uniforms are local to this graph and not shared with other graphs.
 

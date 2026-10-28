@@ -19,11 +19,11 @@
 static SPScaledPose3DFloat SPScaledPose3DFloatMakeWithProjectiveTransform(SPProjectiveTransform3DFloat transform);
 ```
 
-#### Return Value
+## Return Value
 
 A scaled pose with a scale, position and rotation that are defined by a projective transform.
 
-#### Discussion
+## Discussion
 
 Returns a scaled pose with with a position, rotation, and scale that are defined by a projective transform.
 

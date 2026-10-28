@@ -14,7 +14,7 @@
 kIOPacketFilterBroadcast = 0x2
 ```
 
-#### Discussion
+## Discussion
 
 Reception of broadcast packets.
 

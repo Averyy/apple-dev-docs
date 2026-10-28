@@ -19,7 +19,7 @@ var level: NSWindow.Level { get set }
 @property NSWindowLevel level;
 ```
 
-#### Discussion
+## Discussion
 
 See `Window Levels` for a list of possible values. Each level in the list groups windows within it in front of those in all preceding groups. Floating windows, for example, appear in front of all normal-level windows.
 

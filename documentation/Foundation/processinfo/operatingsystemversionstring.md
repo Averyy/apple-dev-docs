@@ -25,7 +25,7 @@ var operatingSystemVersionString: String { get }
 @property (copy, readonly) NSString * operatingSystemVersionString;
 ```
 
-#### Discussion
+## Discussion
 
 The operating system version string is human readable, localized, and is appropriate for displaying to the user. This string is *not* appropriate for parsing.
 

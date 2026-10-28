@@ -24,7 +24,7 @@ class BEWebAppManifest
 @interface BEWebAppManifest : NSObject
 ```
 
-#### Overview
+## Overview
 
 To add a web app or bookmark to someone’s Home Screen:
 

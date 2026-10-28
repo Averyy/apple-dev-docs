@@ -24,7 +24,7 @@ var userInfo: [AnyHashable : Any] { get }
 @property (nonatomic, strong, readonly, nonnull) NSDictionary * userInfo;
 ```
 
-#### Discussion
+## Discussion
 
 Use this dictionary to add state information to the domain. You can then access the [`userInfo`](./userinfo.md) dictionary in predicates for user interactions, file provider actions, and [File Provider UI](../../FileProviderUI/FileProviderUI.md) actions using the `domainUserInfo` context key.
 

@@ -5,7 +5,7 @@
 
 Use nullability annotations or mark regions as annotated to control how Objective-C declarations are imported into Swift.
 
-#### Overview
+## Overview
 
 In Objective-C, you work with references to objects by using pointers that can be null, called `nil` in Objective-C. In Swift, all values — including object instances — are guaranteed to be non-null. Instead, you represent a value that could be missing as wrapped in an optional type. When you need to indicate that a value is missing, you use the value `nil`.
 
@@ -29,7 +29,7 @@ class MyList: NSObject {
 }
 ```
 
-##### Annotate Nullability of Individual Declarations
+### Annotate Nullability of Individual Declarations
 
 You can use nullability annotations in your Objective-C code to designate whether a parameter type, property type, or return type is nullable. Annotate property declarations, parameter types, and return types that are simple objects or block pointers using the `nullable`, `nonnull`, and `null_resettable` property attributes. If no nullability information is provided for a type, Swift doesn’t distinguish between optional and nonoptional references, and imports the type as an implicitly unwrapped optional.
 
@@ -61,7 +61,7 @@ class MyList: NSObject {
 
 The `nullable` and `nonnull` annotations are simplified forms of the `_Nullable` and `_Nonnull` annotations, which you can use in almost any context that you would use the `const` keyword with a pointer type. Complex pointer types, such as `id *`, must be explicitly annotated using these annotations. For example, to specify a nonnullable pointer to a nullable object reference, use `_Nullable id * _Nonnull`.
 
-##### Annotate Regions as Nonnullable
+### Annotate Regions as Nonnullable
 
 You can simplify the process of annotating your Objective-C code by marking entire regions as audited for nullability. Within a section of code demarcated by the `NS_ASSUME_NONNULL_BEGIN` and `NS_ASSUME_NONNULL_END` macros, you only need to annotate the nullable type declarations. Unannotated declarations within the audited region are treated as nonnullable.
 

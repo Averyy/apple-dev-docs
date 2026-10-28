@@ -23,7 +23,7 @@ optional func updateSearchResults(for searchController: UISearchController, sele
 - (void) updateSearchResultsForSearchController:(UISearchController *) searchController selectingSearchSuggestion:(id<UISearchSuggestion>) searchSuggestion;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method when the user selects a search suggestion. Perform any required filtering and updating of search results or suggestions inside of this method.
 

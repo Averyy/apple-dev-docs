@@ -23,7 +23,7 @@ func point(inside point: CGPoint, with event: UIEvent?) -> Bool
 - (BOOL) pointInside:(CGPoint) point withEvent:(UIEvent *) event;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if `point` is inside the receiver’s bounds; otherwise, [`false`](../../Swift/false.md).
 

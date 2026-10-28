@@ -19,7 +19,7 @@ var hasEditingTransaction: Bool { get }
 @property (readonly) BOOL hasEditingTransaction;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is `true`, there’s an active editing transaction from the `primaryTextLayoutManager`. The synchronization operations to nonprimary text layout managers and the backing store block (or fail when synchronous) while this property is `true`. Avoid accessing the elements from a nonprimary text layout manager while this values is `true`.
 

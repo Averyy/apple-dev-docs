@@ -22,7 +22,7 @@ let kAudioSession_AudioRouteChangeKey_CurrentRouteDescription: CFString!
 extern CFStringRef const kAudioSession_AudioRouteChangeKey_CurrentRouteDescription;
 ```
 
-#### Discussion
+## Discussion
 
 A [`CFDictionary`](../CoreFoundation/cfdictionary.md) object that describes the current audio route. For specifics on the contents of this dictionary, see [`kAudioSession_AudioRouteKey_Inputs`](./kaudiosession_audioroutekey_inputs.md) and [`kAudioSession_AudioRouteKey_Outputs`](./kaudiosession_audioroutekey_outputs.md).
 

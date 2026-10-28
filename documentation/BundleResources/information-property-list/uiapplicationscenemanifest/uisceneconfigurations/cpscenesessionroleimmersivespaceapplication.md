@@ -14,7 +14,7 @@ Configurations for scenes you use to display Compositor Services content in an i
 - **Name**: `CPSceneSessionRoleImmersiveSpaceApplication`
 - **Type**: array of dictionary 
 
-#### Discussion
+## Discussion
 
 Use this key to specify scene configurations for a session role. Each scene corresponds to one you use for content you display on the device. Make the default scene the first entry in the array. Use [`UIApplicationPreferredDefaultSceneSessionRole`](../../uiapplicationpreferreddefaultscenesessionrole.md) to indicate a preferred initial scene session role.
 

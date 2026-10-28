@@ -20,7 +20,7 @@ case notAvailableAtLocation
 ARGeoTrackingStateReasonNotAvailableAtLocation
 ```
 
-#### Discussion
+## Discussion
 
 This reason indicates that ARKit does not have the necessary landscape data to support geo tracking at the user’s current location. See [`checkAvailability(completionHandler:)`](../../argeotrackingconfiguration/checkavailability%28completionhandler%29.md) for more information.
 

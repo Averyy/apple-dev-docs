@@ -12,11 +12,11 @@ Add background notifications to your app by using the UserNotifications framewor
 - Mac Catalyst 13.0+
 - Xcode 11.5+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC20 session [10095: Push Notifications Primer](https://developer.apple.com/wwdc20/10095/).
 
-##### Configure the Sample Code Project
+### Configure the Sample Code Project
 
 Before you run the sample code project in Xcode, set up a remote notification server to send pushes. See [Setting Up a Remote Notification Server](./setting-up-a-remote-notification-server.md).
 

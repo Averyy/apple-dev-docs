@@ -5,7 +5,7 @@
 
 Generate content in the language people prefer when they interact with your app.
 
-#### Overview
+## Overview
 
 The on-device system language model is multilingual, which means the same model understands and generates text in any language that Apple Intelligence supports. The model supports using different languages for prompts, instructions, and the output that the model produces.
 
@@ -18,7 +18,7 @@ When you enhance your app with multilingual support, generate content in the lan
 
 For more information about the languages and locales that Apple Intelligence supports, see the “Supported languages” section in [How to get Apple Intelligence](https://support.apple.com/en-us/121115).
 
-#### Prompt the model in the language you prefer
+## Prompt the model in the language you prefer
 
 Write your app’s built-in prompts in the language with which you normally write code, if Apple Intelligence supports that language. Translate your prompts into a supported language if your preferred language isn’t supported. In the code below, *all* inputs need to be in supported language for the model to understand, including all `Generable` types and descriptions:
 
@@ -44,7 +44,7 @@ struct CatProfile {
 
 Because the framework treats `Generable` types as model inputs, the names of properties like `age` or `profile` are just as important as the `@Guide` descriptions for helping the model understand your request.
 
-#### Check a person’s language settings for your app
+## Check a person’s language settings for your app
 
 People can use the Settings app on their device to configure the language they prefer to use on a per-app basis, which might differ from their default language. If your app supports a language that Apple Intelligence doesn’t, you need to verify that the current language setting of your app is supported before you call the model. Keep in mind that language support improves over time in newer model and OS versions. Thus, someone using your app with an older OS may not have the latest language support.
 
@@ -58,7 +58,7 @@ if SystemLanguageModel.default.supportsLocale() {
 
 For advanced use cases where you need full language support details, use [`supportedLanguages`](./systemlanguagemodel/supportedlanguages.md) to retrieve a list of languages supported by the on-device model.
 
-#### Handle an unsupported language or locale errors
+## Handle an unsupported language or locale errors
 
 When you call [`respond(to:options:)`](./languagemodelsession/respond%28to,options%29.md) on a [`LanguageModelSession`](./languagemodelsession.md), the Foundation Models framework checks the language or languages of the input prompt text, and whether your prompt asks the model to respond in any specific language or languages. If the model detects a language it doesn’t support, the session throws [`LanguageModelError.unsupportedLanguageOrLocale(_:)`](./languagemodelerror/unsupportedlanguageorlocale%28_%29.md). Handle the error by communicating to the person using your app that a language in their request is unsupported.
 
@@ -70,7 +70,7 @@ If your app supports languages or locales that Apple Intelligence doesn’t, hel
 
 > ❗ **Important**: Guardrails for model input and output safety are only for supported languages and locales. If a prompt contains sensitive content in an unsupported language, which typically is a short phrase mixed-in with text in a supported language, it might not throw a [`LanguageModelError.unsupportedLanguageOrLocale(_:)`](./languagemodelerror/unsupportedlanguageorlocale%28_%29.md) error. If unsupported-language detection fails, the guardrails may also fail to flag that short, unsupported content. For more on guardrails, see [Improving the safety of generative model output](./improving-the-safety-of-generative-model-output.md).
 
-#### Use Instructions to set the locale and language
+## Use Instructions to set the locale and language
 
 For locales other than United States English, you can improve response quality by telling the model which locale to use by detailing a set of [`Instructions`](./instructions.md). Start with the *exact* phrase in English. This special phrase comes from the model’s training, and reduces the possibility of hallucinations in multilingual situations:
 

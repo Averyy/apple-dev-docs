@@ -25,7 +25,7 @@ var sampleType: HKSampleType { get }
 @property (nonatomic, copy, readonly) HKSampleType * sampleType;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Data types](../data-types.md).
 

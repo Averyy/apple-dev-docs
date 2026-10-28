@@ -31,7 +31,7 @@ optional func application(_ application: UIApplication, handleActionWithIdentifi
 - (void) application:(UIApplication *) application handleActionWithIdentifier:(NSString *) identifier forLocalNotification:(UILocalNotification *) notification withResponseInfo:(NSDictionary *) responseInfo completionHandler:(void (^)()) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 A `nil` value in the `identifier` parameter indicates the default action.
 

@@ -25,7 +25,7 @@ func createSymbolicLink(at url: URL, withDestinationURL destURL: URL) throws
 - (BOOL) createSymbolicLinkAtURL:(NSURL *) url withDestinationURL:(NSURL *) destURL error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method does not traverse symbolic links contained in `destURL`, making it possible to create symbolic links to locations that do not yet exist. Also, if the final path component in `url` is a symbolic link, that link is not followed.
 

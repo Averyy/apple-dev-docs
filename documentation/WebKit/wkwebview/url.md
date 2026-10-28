@@ -23,7 +23,7 @@ var url: URL? { get }
 @property (nonatomic, copy, readonly, nullable) NSURL * URL;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the URL for the webpage that the web view currently displays. Use this URL in places where you reflect the webpage address in your app’s user interface.
 

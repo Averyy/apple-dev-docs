@@ -22,7 +22,7 @@ var rateMetaParameter: PHASENumberMetaParameter? { get }
 @property (nonatomic, strong, readonly, nullable) PHASENumberMetaParameter * rateMetaParameter;
 ```
 
-#### Discussion
+## Discussion
 
 If specified during construction, the metaparameter for controlling rate/pitch will be available here
 

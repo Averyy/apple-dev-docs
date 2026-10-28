@@ -25,11 +25,11 @@ func SCNMatrix4EqualToMatrix4(_ a: SCNMatrix4, _ b: SCNMatrix4) -> Bool
 extern bool SCNMatrix4EqualToMatrix4(SCNMatrix4 a, SCNMatrix4 b);
 ```
 
-#### Return Value
+## Return Value
 
 True if each element in `matA` is exactly equal to the corresponding element in `b`.
 
-#### Discussion
+## Discussion
 
 This function performs a numeric (not bitwise) comparison of each pair of elements.
 

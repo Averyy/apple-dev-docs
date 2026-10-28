@@ -22,11 +22,11 @@ func additionalContent(for absoluteURL: URL) throws -> Any
 - (id) additionalContentForURL:(NSURL *) absoluteURL error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An object that contains the additional content for the document at `absoluteURL`, or `nil` if there is a problem.
 
-#### Discussion
+## Discussion
 
 You override this method to perform to manage non-Core Data content to be stored in the additional content directory in the document’s file package.
 
@@ -38,7 +38,7 @@ There’s no need to invoke `super`’s implementation.
 >
 > When overriding this method, use the `throw` statement to throw an `NSError`, as described in [Error Handling](https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
-##### Special considerations
+### Special considerations
 
 A return value of `nil` indicates an error condition. To avoid generating an exception, you must return a value from this method. If it isn’t always the case that there will be additional content, you should return a sentinel value (for example, an [`NSNull`](../../Foundation/nsnull.md) instance) that you check for in [`writeAdditionalContent(_:to:originalContentsURL:)`](./writeadditionalcontent%28_,to,originalcontentsurl%29.md).
 

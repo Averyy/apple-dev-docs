@@ -23,7 +23,7 @@ func makeSendRight() -> Mach.Port<Mach.SendRight>
 
 Available when `RightType` is `Mach.ReceiveRight`.
 
-#### Discussion
+## Discussion
 
 This increments the makeSendCount of the receive right.
 

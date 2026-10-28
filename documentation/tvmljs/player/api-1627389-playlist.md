@@ -15,7 +15,7 @@ The playlist for a player.
 attribute Playlist playlist;
 ```
 
-#### Discussion
+## Discussion
 
 Setting this attribute changes the [`Playlist`](../playlist.md) object associated with the player. Inspect this attribute to get the [`Playlist`](../playlist.md) object currently associated with the player.
 

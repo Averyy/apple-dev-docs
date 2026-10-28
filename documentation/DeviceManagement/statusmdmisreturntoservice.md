@@ -18,9 +18,9 @@ The status item that reports the device’s return to service with app preservat
 object StatusMDMIsReturnToService
 ```
 
-#### Discussion
+## Discussion
 
-##### Status item availability
+### Status item availability
 
 |  |  |
 | --- | --- |
@@ -31,7 +31,7 @@ object StatusMDMIsReturnToService
 | Allowed in system scope | iOS, Shared iPad, visionOS |
 | Allowed in user scope | Shared iPad |
 
-##### Status item example
+### Status item example
 
 ```json
 {

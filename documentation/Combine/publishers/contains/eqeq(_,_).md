@@ -23,7 +23,7 @@ static func == (lhs: Publishers.Contains<Upstream>, rhs: Publishers.Contains<Ups
 
 Available when `Upstream` conforms to `Publisher`, `Upstream` conforms to `Equatable`, and `Upstream.Output` conforms to `Equatable`.
 
-#### Return Value
+## Return Value
 
 `true` if the two publishers’ `upstream` and `output` properties are equal; otherwise `false`.
 

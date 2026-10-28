@@ -22,7 +22,7 @@ nonisolated
 func keyframeAnimator<Value>(initialValue: Value, trigger: some Equatable, @ContentBuilder content: @escaping @Sendable (PlaceholderContentView<Self>, Value) -> some View, @KeyframesBuilder<Value> keyframes: @escaping (Value) -> some Keyframes) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Note that the `content` closure will be updated on every frame while animating, so avoid performing any expensive operations directly within `content`.
 

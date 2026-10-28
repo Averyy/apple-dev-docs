@@ -14,7 +14,7 @@
 enum IOPCILinkSpeed : unsigned int;
 ```
 
-#### Overview
+## Overview
 
 Link speeds for SetLinkSpeed and GetLinkSpeed
 

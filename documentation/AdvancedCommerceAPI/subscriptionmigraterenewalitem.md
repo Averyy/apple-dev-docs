@@ -15,7 +15,7 @@ The item information that replaces a migrated subscription item when the subscri
 object SubscriptionMigrateRenewalItem
 ```
 
-#### Discussion
+## Discussion
 
 If you migrate a subscription that is to renew to another SKU, provide the item that is to renew in the `SubscriptionMigrateRenewalItem`.
 For example, if a customer downgrades a subscription, the subscription continues unchanged until the end of the billing period, and downgrades when it renews. If you migrate a subscription in this state before the end of the billing period, you need to provide the item that renews.

@@ -19,11 +19,11 @@ func es_set_deadline_max_milliseconds(_ client: OpaquePointer, _ events: UnsafeP
 extern es_return_t es_set_deadline_max_milliseconds(es_client_t *client, const es_event_type_t *events, uint32_t event_count, uint32_t milliseconds);
 ```
 
-#### Return Value
+## Return Value
 
 ES_RETURN_SUCCESS on success, ES_RETURN_ERROR on failure or if milliseconds exceeds system default
 
-#### Discussion
+## Discussion
 
 This allows clients to configure lower per-event-type deadlines so that operations don’t block for too long if the client fails to respond. The kernel will automatically unblock operations based on the client’s deadline miss mode when the deadline expires.
 

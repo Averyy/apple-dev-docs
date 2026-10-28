@@ -19,7 +19,7 @@ optional func dockMenu() -> NSMenu?
 - (NSMenu *) dockMenu;
 ```
 
-#### Return Value
+## Return Value
 
 The menu the dock tile displays.
 

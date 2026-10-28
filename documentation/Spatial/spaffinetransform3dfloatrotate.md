@@ -19,11 +19,11 @@
 static SPAffineTransform3DFloat SPAffineTransform3DFloatRotate(SPAffineTransform3DFloat transform, SPRotation3DFloat rotation);
 ```
 
-#### Return Value
+## Return Value
 
 A transform that’s rotated by the specified rotation.
 
-#### Discussion
+## Discussion
 
 Returns an affine transform that’s constructed by concatenating an existing affine transform and a rotation.
 

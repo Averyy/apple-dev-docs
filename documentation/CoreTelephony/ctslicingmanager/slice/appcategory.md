@@ -17,7 +17,7 @@ An application category associated with this network slice.
 let appCategory: CTSlicingManager.AppCategory
 ```
 
-#### Discussion
+## Discussion
 
 This property identifies which type of application traffic the slice optimizes for, such as gaming, communication, or streaming.
 

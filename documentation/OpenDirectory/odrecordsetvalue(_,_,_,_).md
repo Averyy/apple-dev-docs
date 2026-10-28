@@ -20,11 +20,11 @@ func ODRecordSetValue(_ record: ODRecordRef!, _ attribute: String!, _ valueOrVal
 extern bool ODRecordSetValue(ODRecordRef record, ODAttributeType attribute, CFTypeRef valueOrValues, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the value or values are successfully set; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 Passing an empty array for `inValueOrValues` deletes the attribute.
 

@@ -19,7 +19,7 @@ func underline(_ sender: Any?)
 - (void) underline:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 If there is a selection and the first character of the selected range has any form of underline on it, or if there is no selection and the typing attributes have any form of underline, then underline is removed; otherwise a single simple underline is added.
 

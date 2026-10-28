@@ -16,7 +16,7 @@ nonisolated
 func volumeWorldAlignment(_ behavior: WorldAlignmentBehavior) -> some Scene
 ```
 
-#### Discussion
+## Discussion
 
 For example, you can create a volume that remains parallel to the floor even when lifted up high above eye level by applying a [`gravityAligned`](../worldalignmentbehavior/gravityaligned.md) alignment to the scene:
 

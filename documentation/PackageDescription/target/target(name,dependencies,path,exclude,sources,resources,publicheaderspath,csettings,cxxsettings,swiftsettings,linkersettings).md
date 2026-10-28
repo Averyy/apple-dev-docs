@@ -12,7 +12,7 @@ Creates a regular target.
 static func target(name: String, dependencies: [Target.Dependency] = [], path: String? = nil, exclude: [String] = [], sources: [String]? = nil, resources: [Resource]? = nil, publicHeadersPath: String? = nil, cSettings: [CSetting]? = nil, cxxSettings: [CXXSetting]? = nil, swiftSettings: [SwiftSetting]? = nil, linkerSettings: [LinkerSetting]? = nil) -> Target
 ```
 
-#### Discussion
+## Discussion
 
 A target can contain either Swift or C-family source files, but not both. It contains code that is built as a regular module that can be included in a library or executable product, but that cannot itself be used as the main target of an executable product.
 

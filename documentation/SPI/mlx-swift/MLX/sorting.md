@@ -10,7 +10,7 @@ framework: "mlx-swift/MLX"
 
 Sorting and partitioning values and indices.
 
-#### Overview
+## Overview
 
 MLX has a number of methods that produce an array of indexes, including for sorting and partitioning:
 

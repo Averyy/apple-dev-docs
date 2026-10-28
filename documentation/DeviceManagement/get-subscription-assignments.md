@@ -10,9 +10,9 @@ Get the subscription assignments for users in your organization.
 
 - [Getting started with the management API](./getting-started-with-the-management-api.md)
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

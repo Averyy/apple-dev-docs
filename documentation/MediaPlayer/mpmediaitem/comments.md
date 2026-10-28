@@ -23,7 +23,7 @@ var comments: String? { get }
 @property (nonatomic, readonly, nullable) NSString * comments;
 ```
 
-#### Discussion
+## Discussion
 
 The contents of this property correspond to the “Comments” field in the Info tab in the Get Info dialog in iTunes.
 

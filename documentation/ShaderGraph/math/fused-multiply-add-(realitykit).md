@@ -14,7 +14,7 @@ Returns (A * B) + C.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Fused Multiply-Add (half)**:
 

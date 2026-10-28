@@ -25,7 +25,7 @@ var kCTFontPriorityComputer: Int { get }
 kCTFontPriorityComputer
 ```
 
-#### Discussion
+## Discussion
 
 Computer local fonts are located in `/Library/Fonts`.
 

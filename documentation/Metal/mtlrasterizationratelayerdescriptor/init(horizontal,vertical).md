@@ -20,7 +20,7 @@ Initializes a layer rate map with a set of horizontal and vertical rasterization
 convenience init(horizontal: [Float], vertical: [Float])
 ```
 
-#### Return Value
+## Return Value
 
 A layer descriptor whose width is the number of horizontal rates and whose height is the number of vertical rates. The layer descriptor copies the values from the input parameters.
 

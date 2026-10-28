@@ -25,11 +25,11 @@ func downloadTask(with url: URL, completionHandler: @escaping @Sendable (URL?, U
 - (NSURLSessionDownloadTask *) downloadTaskWithURL:(NSURL *) url completionHandler:(void (^)(NSURL *location, NSURLResponse *response, NSError *error)) completionHandler;
 ```
 
-#### Return Value
+## Return Value
 
 The new session download task.
 
-#### Discussion
+## Discussion
 
 By using the completion handler, the task bypasses calls to delegate methods for response and data delivery, and instead provides any resulting [NSData](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/PropertyLists/OldStylePlists/OldStylePLists.html#//apple_ref/doc/uid/20001012-47169), [`URLResponse`](../urlresponse.md), and [`NSError`](../nserror.md) objects inside the completion handler. Delegate methods for handling authentication challenges, however, are still called.
 

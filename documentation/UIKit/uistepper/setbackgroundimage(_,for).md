@@ -22,7 +22,7 @@ func setBackgroundImage(_ image: UIImage?, for state: UIControl.State)
 - (void) setBackgroundImage:(UIImage *) image forState:(UIControlState) state;
 ```
 
-#### Discussion
+## Discussion
 
 For good results, `image` must be a stretchable image.
 

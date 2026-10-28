@@ -21,7 +21,7 @@ Populates a double-precision vector with a specified scalar value.
 extern void vDSP_vfillD(const double *__A, double *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 The functions in this group populate a vector with a specified scalar value.
 

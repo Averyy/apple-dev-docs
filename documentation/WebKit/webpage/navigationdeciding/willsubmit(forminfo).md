@@ -21,7 +21,7 @@ Allow the application to process form autofill information before a form submiss
 mutating func willSubmit(formInfo: WebPage.FormInfo) async
 ```
 
-#### Discussion
+## Discussion
 
 This is an informative callback only. The form values cannot be changed, nor can the navigation be changed to not submit a form.
 

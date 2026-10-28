@@ -15,11 +15,11 @@ Sets the desired idle suspend timeout for the interface.
 virtual kern_return_t SetIdlePolicy(uint32_t deviceIdleTimeout);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 An idle device defers electrical suspension for the specified duration. By default, [`IOUSBHostInterface`](../iousbhostinterface.md) doesn’t enable an idle policy, letting the device remain in the active state as long as the host machine is awake. Call this method to enable an idle policy for your device.
 

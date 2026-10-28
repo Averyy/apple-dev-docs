@@ -17,7 +17,7 @@ A mutable template for configuring media metadata before creating immutable meta
 @interface AVPlaybackUserInterfaceContentMetadataTemplate : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use this class to build and configure metadata for media content with full control over all properties. Once configured, create an immutable `AVPlaybackUserInterfaceContentMetadata` object using `initWithTemplate:` to provide stable metadata for playback interfaces.
 

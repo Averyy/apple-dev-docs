@@ -16,11 +16,11 @@ The predicted pose of the current device at a given time.
 final func queryDeviceAnchor(atTimestamp timestamp: TimeInterval) -> DeviceAnchor?
 ```
 
-#### Return Value
+## Return Value
 
 The predicted position and orientation of the device at the time you specify.
 
-#### Discussion
+## Discussion
 
 Pass the `timestamp` parameter as absolute time in seconds. For example, to get the device’s current pose, pass [`CACurrentMediaTime()`](../../QuartzCore/cacurrentmediatime%28%29.md) as the timestamp.
 

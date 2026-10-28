@@ -25,11 +25,11 @@ func makeRenderPipelineDescriptorForSpecialization() -> MTL4PipelineDescriptor
 - (MTL4PipelineDescriptor *) newRenderPipelineDescriptorForSpecialization;
 ```
 
-#### Return Value
+## Return Value
 
 A new pipeline descriptor that you use for pipeline state specialization.
 
-#### Discussion
+## Discussion
 
 Use this method to obtain a new [`MTL4PipelineDescriptor`](../mtl4pipelinedescriptor.md) instance that you can use to specialize any unspecialized properties in this pipeline state object.
 

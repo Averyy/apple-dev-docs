@@ -19,7 +19,7 @@ case notRecognized
 FSMatchResultNotRecognized
 ```
 
-#### Discussion
+## Discussion
 
 This match result is appropriate when the file system module determines that the resource uses a completely different format.
 

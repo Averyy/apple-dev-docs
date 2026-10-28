@@ -24,7 +24,7 @@ class XCTCPUMetric
 @interface XCTCPUMetric : NSObject
 ```
 
-#### Overview
+## Overview
 
 `XCTCPUMetric` captures the following statistics about CPU activity; each metric is captured while the block argument to a [`measure(metrics:block:)`](./xctestcase/measure%28metrics,block%29.md) call runs in a performance test:
 

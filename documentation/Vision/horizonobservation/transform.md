@@ -21,7 +21,7 @@ The transform to apply to the detected horizon.
 let transform: CGAffineTransform
 ```
 
-#### Discussion
+## Discussion
 
 Apply the transform’s inverse to orient the image in an upright position and make the detected horizon level.
 

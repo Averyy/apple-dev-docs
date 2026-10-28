@@ -19,7 +19,7 @@ func setupPanel(_ aPanel: DRSetupPanel!, deviceContainsSuitableMedia device: DRD
 - (BOOL) setupPanel:(DRSetupPanel *) aPanel deviceContainsSuitableMedia:(DRDevice *) device promptString:(NSString **) prompt;
 ```
 
-#### Return Value
+## Return Value
 
  Return `NO` to disable the default button.
 

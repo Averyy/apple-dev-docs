@@ -23,7 +23,7 @@ class CSCustomAttributeKey
 @interface CSCustomAttributeKey : NSObject
 ```
 
-#### Overview
+## Overview
 
 The `CSCustomAttributeKey` class defines a key that you can associate with a custom attribute for a searchable item. Item attributes provide metadata about the item that can be indexed and displayed to users in search results.
 

@@ -12,7 +12,7 @@ A structure that identifies an app and a key that’s required to decrypt the ap
 struct ALDAppKey
 ```
 
-#### Overview
+## Overview
 
 An instance of this structure represents a unique variant for an app. The [`AppleItemID`](../MarketplaceKit/appleitemid.md) argument to the [`init(appleItemID:appKeyBlob:)`](./aldappkey/init%28appleitemid,appkeyblob%29.md) initializer refers to the app, and the `appKeyBlob` argument refers to a *key blob* for a specific app variant that App Store Connect provides your marketplace server during app ingestion. For more information, see [Ingesting an alternative distribution package](../MarketplaceKit/ingesting-an-alternative-distribution-package.md).
 

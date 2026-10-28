@@ -17,7 +17,7 @@ LFM2 VL VLM `UserInputProcessor`.
 struct LFM2VLProcessor
 ```
 
-#### Overview
+## Overview
 
 This is meant to be used with [`LFM2VL`](./lfm2vl.md) and is typically created by [`VLMModelFactory`](./vlmmodelfactory.md).
 

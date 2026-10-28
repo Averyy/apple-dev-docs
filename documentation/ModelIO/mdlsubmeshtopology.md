@@ -24,7 +24,7 @@ class MDLSubmeshTopology
 @interface MDLSubmeshTopology : NSObject
 ```
 
-#### Overview
+## Overview
 
 Model I/O creates topology objects when importing assets containing non-uniform index buffers (that is, index buffers not composed of a single primitive type such as triangles or quads). You can also use topology objects (or load assets from file formats supporting topology information) to describe models for surface subdivision, identifying which edges or vertices remain sharp or become smooth when you use the [`newSubdividedMesh(_:submeshIndex:subdivisionLevels:)`](./mdlmesh/newsubdividedmesh%28_,submeshindex,subdivisionlevels%29.md) method.
 

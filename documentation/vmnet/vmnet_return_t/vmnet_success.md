@@ -18,7 +18,7 @@ case VMNET_SUCCESS
 VMNET_SUCCESS
 ```
 
-#### Discussion
+## Discussion
 
 Indicates success.
 

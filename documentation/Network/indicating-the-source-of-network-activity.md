@@ -5,7 +5,7 @@
 
 Control whether the App Privacy Report attributes network traffic to the app or to the user.
 
-#### Overview
+## Overview
 
 In iOS and iPadOS 15 or later, users can view an App Privacy Report that includes the network domains that apps on the device have recently accessed. The report differentiates between network connections that the user initiates and those that the app initiates.
 
@@ -13,7 +13,7 @@ By default, the system attributes all connections — except those that your app
 
 To learn how to examine all the data your app contributes to the privacy report, see [Inspecting app activity data](./inspecting-app-activity-data.md).
 
-##### Determine the appropriate attribution
+### Determine the appropriate attribution
 
 All connections, other than those that use [`SFSafariViewController`](../SafariServices/sfsafariviewcontroller.md) or [`ASWebAuthenticationSession`](../AuthenticationServices/aswebauthenticationsession.md), are classified by default as *app-initiated*. User-initiated network connections are the exception. Network connections to third-party domains can only be classified as *user-initiated* if they meet all of the following criteria:
 
@@ -36,7 +36,7 @@ In contrast, you can attribute these connections to the user:
 
 To reclassify an access as user-initiated, use API at the same layer of the protocol stack that you use to make the connection.
 
-##### Attribute URL Loading System connections
+### Attribute URL Loading System connections
 
 To mark a connection as user-initiated when using the [URL Loading System](../Foundation/url-loading-system.md), create an explicit [`URLRequest`](../Foundation/urlrequest.md) and set its [`attribution`](../Foundation/urlrequest/attribution-swift.property.md) property to [`NSURLRequest.Attribution.user`](../Foundation/nsurlrequest/attribution-swift.enum/user.md) before calling one of the [`URLSession`](../Foundation/urlsession.md) methods that takes a request, like [`data(for:delegate:)`](../Foundation/urlsession/data%28for,delegate%29.md):
 
@@ -52,7 +52,7 @@ let (data, response) = try await URLSession.shared.data(for: request)
 
 The [`NSURLRequest`](../Foundation/nsurlrequest.md) and [`NSMutableURLRequest`](../Foundation/nsmutableurlrequest.md) classes also have a comparable property. Use this kind of parameterized request for other high level link types as well, as the next few sections describe.
 
-##### Attribute WebKit loads
+### Attribute WebKit loads
 
 A [WebKit](../WebKit/WebKit.md) network access that you initiate with a URL request using the https://developer.apple.com/documentation/webkit/wkwebview/load(_:) method honors the attribution parameter that you set on the [`URLRequest`](../Foundation/urlrequest.md) instance, just like the previous section describes for a [`URLSession`](../Foundation/urlsession.md) access. If you want to set an attribution when you use WebKit to load an HTML string, data, or a file URL, use one of the corresponding load methods that takes a request. For example, you can load an HTML string with attribution using the [`loadSimulatedRequest(_:responseHTML:)`](../WebKit/wkwebview/loadsimulatedrequest%28_,responsehtml%29.md) method, relying on the `request` defined in the previous section:
 
@@ -96,7 +96,7 @@ webView.loadFileRequest(
 
 These load methods — as opposed to their non-request counterparts like [`loadHTMLString(_:baseURL:)`](../WebKit/wkwebview/loadhtmlstring%28_,baseurl%29.md) and [`loadFileRequest(_:allowingReadAccessTo:)`](../WebKit/wkwebview/loadfilerequest%28_,allowingreadaccessto%29.md) — also enable the user to browse backward and forward among the corresponding pages.
 
-##### Attribute LinkPresentation metadata fetches
+### Attribute LinkPresentation metadata fetches
 
 To load link presentation metadata with attribution, use the [`LPMetadataProvider`](../LinkPresentation/lpmetadataprovider.md) fetch method that takes a request. Specifically, use the [`startFetchingMetadata(for:completionHandler:)`](../LinkPresentation/lpmetadataprovider/startfetchingmetadata%28for,completionhandler%29-9e6s8.md) method — again, relying on the user-attributed `request` value that you defined earlier:
 
@@ -107,7 +107,7 @@ let metadataProvider = LPMetadataProvider()
 let metadata = try await metadataProvider.startFetchingMetadata(for: request)
 ```
 
-##### Attribute Network framework connections
+### Attribute Network framework connections
 
 To control attribution when using the [Network](./Network.md) framework, set the [`attribution`](./nwparameters/attribution-swift.property.md) property of an [`NWParameters`](./nwparameters.md) instance to [`NWParameters.Attribution.user`](./nwparameters/attribution-swift.enum/user.md), and use that to create a connection:
 
@@ -129,7 +129,7 @@ let endpoint = nw_endpoint_create_url("https://example.com")
 let connection = nw_connection_create(endpoint, parameters)
 ```
 
-##### Attribute connections made with sockets
+### Attribute connections made with sockets
 
 To control attribution when working with sockets, import the `ne_socket.h` header file, and use the `ne_socket_set_attribution` function to set the value `NE_SOCKET_ATTRIBUTION_USER` on a socket:
 

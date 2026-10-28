@@ -5,11 +5,11 @@
 
 Create an activity to record student progress through an assignment.
 
-#### Overview
+## Overview
 
 While contexts describe what tasks a teacher can assign in your app, such as reading a chapter in a book, activities report on student progress as they work through those tasks. An activity measures duration—the length of time a person spends on a task—based on when you tell the activity to start and stop. It also records how far a person has progressed through the task as a percentage of completion, based on updates you supply. It’s up to you to define progress depending on the particulars of your app.
 
-##### Retrieve the context
+### Retrieve the context
 
 An activity is always tied to a particular context. You create a new [`CLSActivity`](./clsactivity.md) instance by asking the context whose task you are measuring to do so on your behalf. The newly created activity becomes the context’s current activity, which you access later through the context’s [`currentActivity`](./clscontext/currentactivity.md) property.
 
@@ -25,7 +25,7 @@ CLSDataStore.shared.mainAppContext.descendant(matchingIdentifierPath: identifier
 
 Look up a context like this every time you need it, rather than storing a reference to it. The underlying instance may change from time to time as a result of network synchronization. If you always look up the context, you can be sure that you’re working with the right instance.
 
-##### Create and start an activity
+### Create and start an activity
 
 From within the [`descendant(matchingIdentifierPath:completion:)`](./clscontext/descendant%28matchingidentifierpath,completion%29.md) method’s completion handler, activate the context, and then create the activity. Typically, you’ll also start the activity right after creating it:
 
@@ -51,7 +51,7 @@ When you create and start an activity as shown above, you indicate that the pers
 
 > **Note**:  In some cases, the person might only pause the task—for example, to review something that appears in an earlier chapter. In that case, when the person resumes the current task, don’t create a new activity. Instead, restart the existing one. See [Pause an activity when interrupting a task briefly](./recording-student-progress.md#Pause-an-activity-when-interrupting-a-task-briefly) for more details.
 
-##### Update progress periodically
+### Update progress periodically
 
 An activity measures duration as the time interval between when you call its [`start()`](./clsactivity/start%28%29.md) and [`stop()`](./clsactivity/stop%28%29.md) methods. But the concept of progress depends entirely on what your app does, so you supply additional information in the form of progress updates.
 
@@ -81,7 +81,7 @@ let progress = Double(max(0, min(1, position / total)))
 
 You can call the data store’s [`save(completion:)`](./clsdatastore/save%28completion%29.md) method every time you add a progress update to ensure your changes are reported to the teacher. And for certain long-running activities with infrequent updates, this might make sense. But for performance reasons, in most cases it’s best to wait until the activity ends, after which you save all the updates in one shot. This is particularly true if you generate frequent progress updates, as you might from the [`scrollViewDidScroll(_:)`](../UIKit/uiscrollviewdelegate/scrollviewdidscroll%28_%29.md) method.
 
-##### Stop an activity when the person ends the attempt
+### Stop an activity when the person ends the attempt
 
 When the person aborts or completes a task, for example by navigating away from the chapter they’ve been reading, or by answering all the questions on a quiz, mark the activity as stopped:
 
@@ -104,7 +104,7 @@ Call the data store’s [`save(completion:)`](./clsdatastore/save%28completion%2
 
 > **Note**:  Because data must be synchronized across the network, expect some delay in a production environment between when you record results in your app, and when the teacher actually sees the results in Schoolwork.
 
-##### Pause an activity when interrupting a task briefly
+### Pause an activity when interrupting a task briefly
 
 You can also use the [`stop()`](./clsactivity/stop%28%29.md) method to pause an activity. For example, if you’re measuring progress through a game and the player taps the pause button, you may want to tell the corresponding activity to stop. Resume a paused activity with another call to the [`start()`](./clsactivity/start%28%29.md) method. You can stop and start repeatedly, but after creating a new activity in a given context using a call to the [`createNewActivity()`](./clscontext/createnewactivity%28%29.md) method, the previous activity becomes final and can no longer be accessed from your app.
 
@@ -112,7 +112,7 @@ Whether pausing makes sense depends on the particulars of your app. Typically, y
 
 > **Note**:  The framework automatically pauses a running activity if your app enters the background, and resumes the same activity when your app returns to the foreground.
 
-##### Optionally, mark an assignment as done
+### Optionally, mark an assignment as done
 
 For each assignment, the Schoolwork app displays a per-student Done indicator to teachers. Students self-report this status by tapping a button in their own instance of Schoolwork. To do the same thing programmatically from your app, call the [`completeAllAssignedActivities(matching:)`](./clsdatastore/completeallassignedactivities%28matching%29.md) method.
 
@@ -124,7 +124,7 @@ You can do this automatically for tasks that have a well-defined end point, like
 
 > **Note**:  A task’s progress isn’t connected to its Done indicator. For example, setting the [`progress`](./clsactivity/progress.md) property to 1 doesn’t automatically force the Done indicator to true. Use progress to give teachers an idea of which parts of a task the student has attempted. Use the Done indicator to indicate that the student plans no further action for the activity.
 
-##### Record progress at multiple levels of hierarchy
+### Record progress at multiple levels of hierarchy
 
 If you group contexts into a hierarchy, you might want to record progress at multiple levels of the hierarchy concurrently. This lets you measure progress through a small, indivisible task, like reading a chapter in a book, while simultaneously recording progress through the larger, enclosing task, like reading the whole book in which that chapter appears. Do this by running more than one activity at a time.
 

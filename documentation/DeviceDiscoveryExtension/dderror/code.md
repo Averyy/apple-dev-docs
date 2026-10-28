@@ -23,7 +23,7 @@ enum Code
 enum DDErrorCode : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The system returns one of these codes to describe a completed operation by invoking a [`DDErrorHandler`](../dderrorhandler.md) that the client provides.
 

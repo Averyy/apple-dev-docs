@@ -25,11 +25,11 @@ init(asset: AVAsset, automaticallyLoadedAssetKeys: [String]?)
 - (instancetype) initWithAsset:(AVAsset *) asset automaticallyLoadedAssetKeys:(NSArray<NSString *> *) automaticallyLoadedAssetKeys;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized instance of `AVPlayerItem`.
 
-#### Discussion
+## Discussion
 
 The value of each key in `automaticallyLoadedAssetKeys` will automatically be loaded by the underlying [`AVAsset`](../avasset.md) before the player item achieves the status [`AVPlayerItem.Status.readyToPlay`](./status-swift.enum/readytoplay.md); i.e. when the item is ready to play, the value returned by invoking the [`asset`](./asset.md) property’s [`statusOfValue(forKey:error:)`](../avasynchronouskeyvalueloading/statusofvalue%28forkey,error%29.md) method will be one of the terminal status values, either [`AVKeyValueStatus.loaded`](../avkeyvaluestatus/loaded.md), [`AVKeyValueStatus.failed`](../avkeyvaluestatus/failed.md), or [`AVKeyValueStatus.cancelled`](../avkeyvaluestatus/cancelled.md).
 

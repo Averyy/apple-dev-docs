@@ -22,11 +22,11 @@ Removes and returns the last element of the array.
 mutating func removeLast() -> Element
 ```
 
-#### Return Value
+## Return Value
 
 The last element of the original array.
 
-#### Discussion
+## Discussion
 
 The array must not be empty.
 

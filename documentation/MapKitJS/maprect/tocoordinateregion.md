@@ -15,11 +15,11 @@ Returns the region that corresponds to a map rectangle.
 toCoordinateRegion(): CoordinateRegion;
 ```
 
-#### Return Value
+## Return Value
 
 A [`CoordinateRegion`](../coordinateregion.md) object that corresponds to a map rectangle.
 
-#### Discussion
+## Discussion
 
 It’s often easier to work with a map rectangle than a [`CoordinateRegion`](../coordinateregion.md).
 

@@ -24,7 +24,7 @@ var recurrence: DateComponents? { get }
 @property (nonatomic, copy, readonly, nullable) NSDateComponents * recurrence;
 ```
 
-#### Discussion
+## Discussion
 
 This value may be `nil` if the trigger should not repeat.
 

@@ -25,7 +25,7 @@ case critical
 NSProcessInfoThermalStateCritical
 ```
 
-#### Discussion
+## Discussion
 
 The system takes significant steps to reduce thermal state. Fans are running at maximum speed.
 

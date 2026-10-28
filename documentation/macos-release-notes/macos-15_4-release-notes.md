@@ -5,47 +5,47 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The macOS 15.4 SDK provides support to develop apps for Mac computers running Sequoia 15.4. The SDK comes bundled with Xcode 16.3. For information on the compatibility requirements for Xcode 16.3, see [Xcode 16.3 Release Notes](../Xcode-Release-Notes/xcode-16_3-release-notes.md).
 
-##### Apple Intelligence
+### Apple Intelligence
 
-###### Known Issues
+#### Known Issues
 
 - After restoring macOS 15.4, some Apple Intelligence features might not be available or you might see “Downloading support…”.  (145297891)
 
   **Workaround:** Restarting your device might resolve the issue.
 
-##### Automatic Assessment Configuration
+### Automatic Assessment Configuration
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Assessment session might be interrupted in high-memory use conditions.  (144416806)
 
-##### Driver Extensions
+### Driver Extensions
 
-###### Known Issues
+#### Known Issues
 
 - After updating to macOS 15.4 beta, you might experience issues with loading installed drivers.  (145330084) (FB16547388)
 
   **Workaround:** Go to System Settings > General > Login Items & Extensions and disable your affected driver extensions. Restart your Mac. After restarting, go back to System Settings > General > Login Items & Extensions and re-enable the affected driver extensions.
 
-##### FSKit
+### FSKit
 
-###### New Features
+#### New Features
 
 - FSKit is now available, enabling delivery of user space file systems as Application Extensions. These file systems support integration with DiskArbitration.  (44900760)
 
-##### Game Controller
+### Game Controller
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Game controllers might stop responding when accessibility features, such as Voice Over, are enabled.  (141497799)
 
-##### hvf
+### hvf
 
-###### Known Issues
+#### Known Issues
 
 - Availability checking is disabled for C APIs in hvf.  (147323772)
 
@@ -55,27 +55,27 @@ The macOS 15.4 SDK provides support to develop apps for Mac computers running Se
    #define BUILD_FOR_APPLE_SDK 1
   ```
 
-##### libxml2
+### libxml2
 
-###### Deprecations
+#### Deprecations
 
 - The custom allocation API for libxml2 is deprecated starting in macOS Sequoia 15.4, iOS 18.4, tvOS 18.4, visionOS 2.4, and tvOS 18.4.  If this API is not used, no changes are required.  If this API is currently used, make changes to call `malloc()` instead of `xmlMalloc()` or `xmlMallocAtomic()`; call `realloc()` instead of `xmlRealloc()`; call `free()` instead of `xmlFree()` and call `strdup()` instead of `xmlMemStrdup()`.  Stop calling `xmlMemSetup()`, `xmlMemGet()`, `xmlGcMemSetup()` and `xmlGcMemGet()` to set custom allocation functions.  Do not set global variables `xmlMalloc`, `xmlMallocAtomic`, `xmlRealloc`, `xmlFree`, and `xmlMemStrdup`.  Internally, libxml2 and libxslt will now use the system allocator instead of this API, so do not rely on these libraries using the custom allocation API.  (138404994)
 
-##### Networking
+### Networking
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: On Ethernet, 169.254.169.254 causes functionality issues on CI build machines due to Local Network Privacy restrictions.  (145297894) (FB16541221)
 
-##### Podcasts
+### Podcasts
 
-###### New Features
+#### New Features
 
 - Podcasts Search provides suggestions as you type to help you find what you’re looking for.  (144169175)
 
-##### SCSIControllerDriverKit
+### SCSIControllerDriverKit
 
-###### New Features
+#### New Features
 
 - Four new API’s have been introduced: `UserMapBundledParallelTaskCommandAndResponseBuffers`, `BundledParallelTaskCompletion`, `UserProcessBundledParallelTasks` and `UserCompleteBundledParallelTask`.
 
@@ -87,15 +87,15 @@ The macOS 15.4 SDK provides support to develop apps for Mac computers running Se
 
   If DriverExtension has considerably lower I/O performance compared to the KernelExtension for workloads with high queue depths or very small I/O sizes (i.e. 4KB), try using these new APIs.  (134516478)
 
-##### SD Card Reader
+### SD Card Reader
 
-###### New Features
+#### New Features
 
 - Apple silicon Macs with an internal SD card reader now support SDUC cards larger than 2TB.  (122898691)
 
-##### StoreKit
+### StoreKit
 
-###### New Features
+#### New Features
 
 - New StoreKit APIs support [Advanced Commerce API](https://developer.apple.com/in-app-purchase/advanced-commerce-api/) in-app purchases.  (118528943)
 - By using the new purchase option API `introductoryOfferEligibility(compactJWS:)`, you can now set a preference for whether an introductory offer should be redeemed during a purchase. This API requires you to sign a payload on your server in order to either apply the offer (even if the customer is not eligible) or block it.  (136152740)
@@ -104,67 +104,67 @@ The macOS 15.4 SDK provides support to develop apps for Mac computers running Se
 - The introductory offer eligibility preference API in PurchaseOption has been renamed to `introductoryOfferEligibility(compactJWS:)`.  (143905053)
 - `watchOS` is removed as an option in the AppStore.Platform API. `watchOS` is now combined with `iOS`.  (145578780)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: StoreKit helper application quits with NSCocoaErrorDomain error 4097 during a purchase.  (140317005) (FB15907723)
 - Fixed: StoreKit APIs might return errors from the StoreKit 2 domain during a purchase.  (144191684)
 
-###### Known Issues
+#### Known Issues
 
 - Calling `isEligibleForIntroOffer(for:)` will return false if there is no user account signed in.  (146119524)
 
   **Workaround:** The user should sign in with their App Store account to request introductory offer eligibility.
 
-###### Deprecations
+#### Deprecations
 
 - [Transaction.currentEntitlement(for:)](../StoreKit/transaction/currententitlement%28for%29.md) is now deprecated. This API returns the latest transaction that entitles the user to a product, which may not include transactions originated for family shared subscriptions. Use the `Transaction.currentEntitlements(for:)` method to get all the transactions that entitle the user to a product.  (138320205)
 
-##### SwiftUI
+### SwiftUI
 
-###### New Features
+#### New Features
 
 - On macOS `.sheet`, `.alert` and `.confirmationDialog` modal presentations conditionally allow app termination (via the menu item, ⌘Q, Software Update, etc.) automatically. This is now configurable with two new modifiers, [presentationPreventsAppTermination(_:)](../SwiftUI/view/presentationpreventsapptermination%28_%29.md) and [dialogPreventsAppTermination(_:)](../SwiftUI/view/dialogpreventsapptermination%28_%29.md).  (141551605)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: A color set by the `tint(_:)` modifier does not override the tint color of buttons in that view’s confirmation dialogs and alerts.  (138774306)
 - Fixed: For apps compiled against iOS 18.4 beta, applying `defaultVisibility(.hidden)` to customizable toolbar items does not hide the item by default on iOS.  (139815290)
 - Fixed: When NavigationStack or NavigationSplitView content updates, the environment is not invalidated unless properties in the environment have changed.  (139855826)
 - Fixed: `.onPreferenceChange` modifier’s closure argument is required to be `@Sendable`. This might cause concurrency diagnostics that’s unnecessary if the closure needs to access main actor-isolated values. This particular closure shouldn’t have to be this restrictive.  (145238570)
 
-##### System Calls
+### System Calls
 
-###### New Features
+#### New Features
 
 - fileport_makeport(2) and fileport_makefd(2) are now APIs with manual pages.  (66571768) (FB8270900)
 
-##### UIWritingToolsCoordinator
+### UIWritingToolsCoordinator
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: In macOS 15.4 beta, NSWritingToolsCoordinatorDelegate method `-writingToolsCoordinator:requestsRangeInContextWithIdentifierForPoint:completion:` is marked as optional and will not be called.  (142681236)
 
-##### URLSession
+### URLSession
 
-###### New Features
+#### New Features
 
 - To enable the new HTTP loading mode, set `usesClassicLoadingMode` to false on URLSessionConfiguration. The new loading mode will become the default in a future release.  (89390075)
 
-##### Virtual Machines
+### Virtual Machines
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: M4 Macs are unable to launch virtual machine, and attempts result in a system restart.  (145309647) (FB16542958)
 
-##### WebKit
+### WebKit
 
-###### New Features
+#### New Features
 
 - Added support for `WKWebExtension`, `WKWebExtensionContext`, and `WKWebExtensionController` Swift and Objective-C classes to support integrating Web Extensions into WebKit-based browsers.  (121537087)
 
-##### Writing Tools
+### Writing Tools
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: After generating a list, key point, table, or summary in the pop-over, selecting “Replace” results in an error message.  (145186545)
 

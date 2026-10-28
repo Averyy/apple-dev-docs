@@ -13,7 +13,7 @@
 typedef struct SCSICmd_INQUIRY_PageB1_Data SCSICmd_INQUIRY_PageB1_Data;
 ```
 
-#### Discussion
+## Discussion
 
 INQUIRY Page B1h data as defined in the SBC specification. This section contians all structures and definitions used by the INQUIRY command in response to a request for page B1h - Block Device Characteristics VPD Page.
 

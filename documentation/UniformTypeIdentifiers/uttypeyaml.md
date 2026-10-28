@@ -21,7 +21,7 @@ A type that represents Yet Another Markup Language data.
 extern UTType * const UTTypeYAML;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.yaml`.
 

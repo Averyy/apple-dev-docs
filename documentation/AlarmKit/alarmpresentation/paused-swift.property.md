@@ -17,7 +17,7 @@ The content for the pause mode of the alarm.
 var paused: AlarmPresentation.Paused?
 ```
 
-#### Discussion
+## Discussion
 
 This value can be `nil` if the alarm doesn’t support pause mode.
 

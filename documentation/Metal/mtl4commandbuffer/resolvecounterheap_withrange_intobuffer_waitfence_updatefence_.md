@@ -20,7 +20,7 @@ Encodes a command that resolves an opaque counter heap into a buffer.
 - (void) resolveCounterHeap:(id<MTL4CounterHeap>) counterHeap withRange:(NSRange) range intoBuffer:(MTL4BufferRange) bufferRange waitFence:(id<MTLFence>) fenceToWait updateFence:(id<MTLFence>) fenceToUpdate;
 ```
 
-#### Discussion
+## Discussion
 
 The command this method encodes converts the data within `counterHeap` into a common format and stores it into the `bufferRange` parameter.
 

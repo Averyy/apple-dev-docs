@@ -19,11 +19,11 @@
 static bool SPRotation3DFloatAlmostEqualToRotation(SPRotation3DFloat r1, SPRotation3DFloat r2, float tolerance);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the two rotations are equal within the specified absolute tolerance.
 
-#### Discussion
+## Discussion
 
 Returns a Boolean value that indicates whether the two rotations are equal within the specified absolute tolerance.
 

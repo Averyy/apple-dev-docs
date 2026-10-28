@@ -25,7 +25,7 @@ func move(toParent parent: SKNode)
 - (void) moveToParent:(SKNode *) parent;
 ```
 
-#### Discussion
+## Discussion
 
 The node maintains its current position in scene coordinates.
 

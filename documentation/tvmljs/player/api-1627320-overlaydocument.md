@@ -15,7 +15,7 @@ The annotations for a video created by placing a DOM document over the video.
 attribute Document overlayDocument;
 ```
 
-#### Discussion
+## Discussion
 
 Create a DOM document using the [divTemplate](https://developer.apple.com/library/archive/documentation/LanguagesUtilities/Conceptual/ATV_Template_Guide/DivTemplate.html#//apple_ref/doc/uid/TP40015064-CH28) and assign it to the `overlayDocument` property. Set this attribute to `null` to remove the current overlay document.
 

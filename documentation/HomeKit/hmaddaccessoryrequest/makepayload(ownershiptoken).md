@@ -22,7 +22,7 @@ func makePayload(ownershipToken: HMAccessoryOwnershipToken) -> HMAccessorySetupP
 - (HMAccessorySetupPayload *) payloadWithOwnershipToken:(HMAccessoryOwnershipToken *) ownershipToken;
 ```
 
-#### Return Value
+## Return Value
 
 An accessory setup payload that you use to add the accessory. The method fails and returns `nil` if the request’s [`requiresSetupPayloadURL`](./requiressetuppayloadurl.md) property is `true`. In that case, use [`makePayload(url:ownershipToken:)`](./makepayload%28url,ownershiptoken%29.md) instead.
 

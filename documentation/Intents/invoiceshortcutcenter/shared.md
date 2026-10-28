@@ -24,7 +24,7 @@ class var shared: INVoiceShortcutCenter { get }
 @property (class, strong, readonly) INVoiceShortcutCenter * sharedCenter;
 ```
 
-#### Discussion
+## Discussion
 
 To get an instance of [`INVoiceShortcutCenter`](../invoiceshortcutcenter.md), always use the [`shared`](./shared.md) class property. Creating an instance of the shortcut center isn’t allowed.
 

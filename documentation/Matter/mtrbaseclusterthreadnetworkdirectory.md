@@ -25,7 +25,7 @@ class MTRBaseClusterThreadNetworkDirectory
 @interface MTRBaseClusterThreadNetworkDirectory : MTRGenericBaseCluster
 ```
 
-#### Overview
+## Overview
 
 Manages the names and credentials of Thread networks visible to the user.
 

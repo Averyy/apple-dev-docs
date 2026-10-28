@@ -25,7 +25,7 @@ func CMSampleBufferGetSampleSize(_ sbuf: CMSampleBuffer, at sampleIndex: CMItemI
 extern size_t CMSampleBufferGetSampleSize(CMSampleBufferRef sbuf, CMItemIndex sampleIndex);
 ```
 
-#### Return Value
+## Return Value
 
 The size in bytes of the specified sample in the sample buffer. If the sample index is not in the range 0 to `numSamples`-1, a size of 0 will be returned.If there are no sample sizes in this sample buffer, a size of 0 will be returned.This will be true, for example, if the samples in the buffer are non-contiguous (eg. non-interleaved audio, where the channel values for a single sample are scattered through the buffer), or if this sample buffer contains a `CVImageBuffer`.
 

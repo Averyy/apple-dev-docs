@@ -17,7 +17,7 @@ Shard a module in place by replacing its parameters with sharded ones.
 func shardInPlace(_ module: Module, sharding: ShardingType, segments: Segments = .count(1), group: MLXDistributed.Group? = nil) throws
 ```
 
-#### Discussion
+## Discussion
 
 The module itself is unchanged, so distributed communication only happens if the module supports it natively.
 

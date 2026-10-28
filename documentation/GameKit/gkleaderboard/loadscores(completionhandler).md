@@ -27,7 +27,7 @@ func loadScores(completionHandler: (([GKScore]?, (any Error)?) -> Void)? = nil)
 - (void) loadScoresWithCompletionHandler:(void (^)(NSArray<GKScore *> *scores, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 When you call this method, it creates a new background task to handle the request. The method then returns control to your game. When the task completes, GameKit calls your completion handler on the main thread.
 

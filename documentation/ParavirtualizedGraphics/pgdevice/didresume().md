@@ -21,7 +21,7 @@ func didResume()
 - (void) didResume;
 ```
 
-#### Discussion
+## Discussion
 
 After you call this method, the virtualized device can generate new interrupts immediately, even before the call completes. Similarly, guest memory must also be accessible before you call this method.
 

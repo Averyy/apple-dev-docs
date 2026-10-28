@@ -29,7 +29,7 @@ class CMMotionManager
 - [Getting raw gyroscope events](./getting-raw-gyroscope-events.md)
 - [Getting processed device-motion data](./getting-processed-device-motion-data.md)
 
-#### Overview
+## Overview
 
 Use a [`CMMotionManager`](./cmmotionmanager.md) object to start the services that report movement detected by the device’s onboard sensors. Use this object to receive four types of motion data:
 
@@ -44,7 +44,7 @@ The processed device-motion data gives the device’s attitude, rotation rate, c
 
 You can receive live sensor data at a specified update interval, or you can let the sensors collect data and store it for retrieval later. With both of these approaches,  call the appropriate stop method ([`stopAccelerometerUpdates()`](./cmmotionmanager/stopaccelerometerupdates%28%29.md), [`stopGyroUpdates()`](./cmmotionmanager/stopgyroupdates%28%29.md), [`stopMagnetometerUpdates()`](./cmmotionmanager/stopmagnetometerupdates%28%29.md), and [`stopDeviceMotionUpdates()`](./cmmotionmanager/stopdevicemotionupdates%28%29.md)) when you no longer need the data.
 
-##### Receive regular motion updates
+### Receive regular motion updates
 
 To receive motion data at specific intervals, the app calls a start method that takes an operation queue (instance of [`OperationQueue`](../Foundation/operationqueue.md)) and a block handler of a specific type for processing those updates.  The motion data is passed into the block handler. The frequency of updates is determined by the value of an interval property.
 
@@ -53,7 +53,7 @@ To receive motion data at specific intervals, the app calls a start method that 
 - **Magnetometer.** Set the [`magnetometerUpdateInterval`](./cmmotionmanager/magnetometerupdateinterval.md) property to specify an update interval. Call the [`startMagnetometerUpdates(to:withHandler:)`](./cmmotionmanager/startmagnetometerupdates%28to,withhandler%29.md) method, passing a block of type [`CMMagnetometerHandler`](./cmmagnetometerhandler.md). Magnetic-field data is passed into the block as [`CMMagnetometerData`](./cmmagnetometerdata.md) objects.
 - **Device motion.** Set the [`deviceMotionUpdateInterval`](./cmmotionmanager/devicemotionupdateinterval.md) property to specify an update interval. Call the [`startDeviceMotionUpdates(using:)`](./cmmotionmanager/startdevicemotionupdates%28using%29.md)or [`startDeviceMotionUpdates(using:to:withHandler:)`](./cmmotionmanager/startdevicemotionupdates%28using,to,withhandler%29.md) or [`startDeviceMotionUpdates(to:withHandler:)`](./cmmotionmanager/startdevicemotionupdates%28to,withhandler%29.md) method, passing in a block of type [`CMDeviceMotionHandler`](./cmdevicemotionhandler.md). With the former method, you can specify a reference frame to be used for the attitude estimates. Rotation-rate data is passed into the block as [`CMDeviceMotion`](./cmdevicemotion.md) objects.
 
-##### Sample motion data periodically
+### Sample motion data periodically
 
 To sample motion data periodically, start a motion service using a method that takes no parameters and periodically access the properties of the [`CMMotionManager`](./cmmotionmanager.md). This approach is the recommended approach for apps such as games. Handling accelerometer data in a block introduces additional overhead, and most game apps are only interested in the latest sample of motion data when they render a frame.
 
@@ -62,11 +62,11 @@ To sample motion data periodically, start a motion service using a method that t
 - **Magnetometer.** Call [`startMagnetometerUpdates()`](./cmmotionmanager/startmagnetometerupdates%28%29.md) to begin updates and periodically access [`CMMagnetometerData`](./cmmagnetometerdata.md) objects by reading the [`magnetometerData`](./cmmotionmanager/magnetometerdata.md) property.
 - **Device motion.** Call the [`startDeviceMotionUpdates(using:)`](./cmmotionmanager/startdevicemotionupdates%28using%29.md) or [`startDeviceMotionUpdates()`](./cmmotionmanager/startdevicemotionupdates%28%29.md) method to begin updates and periodically access [`CMDeviceMotion`](./cmdevicemotion.md) objects by reading the [`deviceMotion`](./cmmotionmanager/devicemotion.md) property. The [`startDeviceMotionUpdates(using:)`](./cmmotionmanager/startdevicemotionupdates%28using%29.md) method lets you specify a reference frame for the attitude estimates.
 
-##### Determine hardware availability and state
+### Determine hardware availability and state
 
 If a hardware feature (for example, a gyroscope) is not available on a device, calling a start method related to that feature has no effect. You can find out whether a hardware feature is available or active by checking the appropriate property; for example, for gyroscope data, you can check the value of the [`isGyroAvailable`](./cmmotionmanager/isgyroavailable.md) or [`isGyroActive`](./cmmotionmanager/isgyroactive.md) properties.
 
-##### Identify the coordinate axes of the device
+### Identify the coordinate axes of the device
 
 To interpret accelerometer, gyroscope, or attitude information, you need to know the orientation of the device’s coordinate axes. The following illustration shows the positive x-axis, positive y-axis, and positive z-axis for motion-capable Apple devices.
 

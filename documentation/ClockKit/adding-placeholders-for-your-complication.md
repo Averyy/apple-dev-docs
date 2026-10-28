@@ -5,7 +5,7 @@
 
 Provide the placeholders that users see when adding your complication to a watch face.
 
-#### Overview
+## Overview
 
 Create placeholders for all of the complication families that your app supports. Ideally, these placeholders should indicate the type of data that your complication usually shows. The system uses these placeholders to represent your complication when the user configures a watch face on Apple Watch.
 
@@ -13,7 +13,7 @@ Create placeholders for all of the complication families that your app supports.
 
 You can provide placeholders in two ways: you can use static images for your placeholder, or dynamically create localized versions of the placeholders using complication templates. Ideally, your app provides both.
 
-##### Add Static Placeholder Images
+### Add Static Placeholder Images
 
 When you first install your app, the system initially displays the static placeholders. The system then checks to see if your data source can generate a localized placeholder using a complication template. If the data source returns a valid template, the system transitions from the static image to the localized placeholder. The system then caches the template, and reuses the cached version until the user updates or reinstalls your app.
 
@@ -27,7 +27,7 @@ Create PNG files to represent a complication for each family your app supports. 
 
 Drag these files into the asset catalog, and drop them into the desired position. You can provide separate images for each screen size. If you don’t provide an image for a particular screen size, watchOS resizes the closest available image in that family.
 
-##### Create Localized Placeholders
+### Create Localized Placeholders
 
 To dynamically create a localized placeholder, implement your data source’s [`getLocalizableSampleTemplate(for:withHandler:)`](./clkcomplicationdatasource/getlocalizablesampletemplate%28for,withhandler%29.md) method. In your implementation, check the complication’s family, and create a template for that family. Populate the template with mock data that reflects what your complication would normally look like.
 

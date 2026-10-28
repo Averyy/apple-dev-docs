@@ -24,7 +24,7 @@ class INPersonHandle
 @interface INPersonHandle : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`INPersonHandle`](./inpersonhandle.md) object contains information that you use to uniquely identify a user of your app. When resolving a person associated with an intent, you might create instances of this class and add them to an [`INPerson`](./inperson.md) object when resolving an intent involving that person. Handles contain unique information such as an email address or phone number.
 

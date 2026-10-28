@@ -22,7 +22,7 @@ var gesturesForFailureRequirements: [UIGestureRecognizer] { get }
 @property (nonatomic, readonly) NSArray<UIGestureRecognizer *> * gesturesForFailureRequirements;
 ```
 
-#### Discussion
+## Discussion
 
 If your app provides other gestures in the same view hierarchy, you may want to set up failure requirements between your app’s gestures and the gestures added by the text interaction. To do this, use the [`require(toFail:)`](../uigesturerecognizer/require%28tofail%29.md) method to relate your gestures to those listed in [`gesturesForFailureRequirements`](./gesturesforfailurerequirements.md).
 

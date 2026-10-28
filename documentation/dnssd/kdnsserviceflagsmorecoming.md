@@ -23,7 +23,7 @@ var kDNSServiceFlagsMoreComing: UInt32 { get }
 kDNSServiceFlagsMoreComing
 ```
 
-#### Discussion
+## Discussion
 
 MoreComing indicates to a callback that at least one more result is queued and will be delivered following immediately after this one. When the MoreComing flag is set, applications should not immediately update their UI, because this can result in a great deal of ugly flickering on the screen, and can waste a great deal of CPU time repeatedly updating the screen with content that is then immediately erased, over and over. Applications should wait until MoreComing is not set, and then update their UI when no more changes are imminent.
 

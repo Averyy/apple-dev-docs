@@ -15,13 +15,13 @@ The request body for updating an existing ad group.
 object AdGroupUpdate
 ```
 
-#### Discussion
+## Discussion
 
 The `AdGroupUpdate` object is the request payload for modifying an existing ad group. Include only the fields you want to change. The `pricingModel` and `automatedKeywordsRequired` fields are immutable.
 
 To manage keywords and negative keywords, use the dedicated keyword endpoints.
 
-##### Example
+### Example
 
 ```json
 {

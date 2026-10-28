@@ -23,7 +23,7 @@ class NSRunningApplication
 
 - [Passing control from one app to another with cooperative activation](./passing-control-from-one-app-to-another-with-cooperative-activation.md)
 
-#### Overview
+## Overview
 
 Some properties of an app are fixed, such as the bundle identifier. Other properties may vary over time, such as whether the app is hidden. Properties that vary can be observed with key-value observing, in which case the description comment for the method notes this capability.
 

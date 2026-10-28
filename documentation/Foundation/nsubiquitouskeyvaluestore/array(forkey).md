@@ -25,7 +25,7 @@ func array(forKey aKey: String) -> [Any]?
 - (NSArray *) arrayForKey:(NSString *) aKey;
 ```
 
-#### Return Value
+## Return Value
 
 The array associated with `aKey`, or `nil` if the key isn’t present. This method also returns `nil` if the retrieved value isn’t an array.
 

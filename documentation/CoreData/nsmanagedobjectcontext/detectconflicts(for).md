@@ -25,7 +25,7 @@ func detectConflicts(for object: NSManagedObject)
 - (void) detectConflictsForObject:(NSManagedObject *) object;
 ```
 
-#### Discussion
+## Discussion
 
 If on the next invocation of [`save()`](./save%28%29.md)     `object` has been modified in its persistent store, the save fails. This allows optimistic locking for unchanged objects. Conflict detection is always performed on changed or deleted objects.
 

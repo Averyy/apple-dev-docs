@@ -25,7 +25,7 @@ var tileDefinitions: [SKTileDefinition] { get set }
 @property (nonatomic, copy) NSArray<SKTileDefinition *> * tileDefinitions;
 ```
 
-#### Discussion
+## Discussion
 
 When this rule is evaluated and its conditions met, one of the definitions is randomly selected for placement based on their placement weights.
 

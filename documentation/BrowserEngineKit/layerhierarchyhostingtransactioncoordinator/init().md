@@ -20,7 +20,7 @@ init() throws
 + (BELayerHierarchyHostingTransactionCoordinator *) coordinatorWithError:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This initializer can fail and throw an error if the process fails to retrieve a connection to the system’s Core Animation rendering server.
 

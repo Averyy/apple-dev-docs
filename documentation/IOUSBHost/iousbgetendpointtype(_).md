@@ -20,7 +20,7 @@ func IOUSBGetEndpointType(_ descriptor: UnsafePointer<IOUSBEndpointDescriptor>!)
 uint8_t IOUSBGetEndpointType(const IOUSBEndpointDescriptor *descriptor);
 ```
 
-#### Return Value
+## Return Value
 
 The type found.
 

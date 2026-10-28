@@ -13,13 +13,13 @@ Install and manage user space code that extends the capabilities of macOS.
 
 - [Implementing drivers, system extensions, and kexts](./implementing-drivers-system-extensions-and-kexts.md)
 
-#### Overview
+## Overview
 
 Extend the capabilities of macOS by installing and managing system extensions—drivers and other low-level code—in user space rather than in the kernel. By running in user space, system extensions can’t compromise the security or stability of macOS. The system grants these extensions a high level of privilege, so they can perform the kinds of tasks previously reserved for kernel extensions (KEXTs).
 
 You use frameworks like [DriverKit](../DriverKit/DriverKit.md), [Endpoint Security](../EndpointSecurity/EndpointSecurity.md), and [Network Extension](../NetworkExtension/NetworkExtension.md) to write your system extension, and you package the extension in your app bundle. At runtime, use the SystemExtensions framework to install or update the extension on the user’s system. Once installed, an extension remains available for all users on the system. Users can disable the extension by deleting the app, which deletes the extension.
 
-##### Configure the system extension and the host app
+### Configure the system extension and the host app
 
 To successfully activate your extension, you must adhere to the following rules:
 

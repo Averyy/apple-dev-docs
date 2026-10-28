@@ -27,7 +27,7 @@ optional func setSelected(_ selected: Bool, for context: WKWebExtensionContext) 
 - (void) setSelected:(BOOL) selected forWebExtensionContext:(WKWebExtensionContext *) context completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This is equivalent to the user command-clicking on the tab to add it to or remove it from a selection.
 

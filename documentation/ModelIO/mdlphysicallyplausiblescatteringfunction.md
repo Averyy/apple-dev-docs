@@ -24,7 +24,7 @@ class MDLPhysicallyPlausibleScatteringFunction
 @interface MDLPhysicallyPlausibleScatteringFunction : MDLScatteringFunction
 ```
 
-#### Overview
+## Overview
 
 The set of material properties that define a material’s response to lighting is also called the *Bidirectional Reflectance Distribution Function*, or BRDF, for surfaces shaded using that MDLMaterial object. The properties defined by this class, along with some properties inherited from the superclass [`MDLScatteringFunction`](./mdlscatteringfunction.md), describe a shading model that more closely simulates real-world lighting physics than traditional shading models. (This shading model is similar to those used in recent game engines and feature films.)
 

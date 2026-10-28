@@ -25,7 +25,7 @@ static var strongMemory: NSPointerFunctions.Options { get }
 NSPointerFunctionsStrongMemory
 ```
 
-#### Discussion
+## Discussion
 
 This is the default memory value.
 

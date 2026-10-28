@@ -23,7 +23,7 @@ var socketFamily: Int32 { get }
 @property (readonly) int socketFamily;
 ```
 
-#### Discussion
+## Discussion
 
 Examples of protocol families include symbols like `PF_INET` and `PF_INET6`.
 

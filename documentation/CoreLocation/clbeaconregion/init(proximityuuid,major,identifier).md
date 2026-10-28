@@ -24,11 +24,11 @@ init(proximityUUID: UUID, major: CLBeaconMajorValue, identifier: String)
 - (instancetype) initWithProximityUUID:(NSUUID *) proximityUUID major:(CLBeaconMajorValue) major identifier:(NSString *) identifier;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized beacon region object.
 
-#### Discussion
+## Discussion
 
 This method creates a region that reports all beacons with the specified `proximityUUID` and `major` values. The system ignores the beacon’s [`minor`](./minor.md) value.
 

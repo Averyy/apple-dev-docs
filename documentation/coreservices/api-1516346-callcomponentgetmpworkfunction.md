@@ -13,7 +13,7 @@
 ComponentResult CallComponentGetMPWorkFunction(ComponentInstance ci, ComponentMPWorkFunctionUPP *workFunction, void **refCon);
 ```
 
-#### Return Value
+## Return Value
 
 See the description of the `ComponentResult` data type.
 

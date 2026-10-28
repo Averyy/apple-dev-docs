@@ -23,7 +23,7 @@ var selectedBackgroundView: UIView? { get set }
 @property (nonatomic, strong, nullable) UIView * selectedBackgroundView;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this view to give a selected cell a custom appearance. When the cell has a selected state, this view layers above the [`backgroundView`](./backgroundview.md) and behind the [`contentView`](./contentview.md).
 

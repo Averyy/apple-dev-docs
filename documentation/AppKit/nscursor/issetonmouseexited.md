@@ -21,7 +21,7 @@ var isSetOnMouseExited: Bool { get }
 @property (readonly, getter=isSetOnMouseExited) BOOL setOnMouseExited;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the receiver becomes current when it receives a [`mouseExited(with:)`](./mouseexited%28with%29.md) message; otherwise, [`false`](../../Swift/false.md).
 

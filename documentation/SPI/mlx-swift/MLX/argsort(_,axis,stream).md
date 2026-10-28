@@ -21,7 +21,7 @@ func argSort(_ array: MLXArray, axis: Int, stream: StreamOrDevice = .default) ->
 
 - [Converting From Python](./converting-python.md)
 
-#### Discussion
+## Discussion
 
 ```swift
 // array with values in random order
@@ -33,7 +33,7 @@ let sortIndexes = argSort(array, axis: -1)
 let sorted = array[sortIndexes]
 ```
 
-##### See Also
+### See Also
 
 - [Indexes](./indexes.md)
 - [`argSort(_:stream:)`](./argsort%28_,stream%29.md)

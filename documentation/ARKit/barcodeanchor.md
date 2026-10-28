@@ -15,7 +15,7 @@ A barcode’s position in a person’s surroundings.
 struct BarcodeAnchor
 ```
 
-#### Overview
+## Overview
 
 A `BarcodeAnchor` describes a barcode that ARKit detects in a person’s surroundings. A barcode anchor has exactly one [`BarcodeSymbology`](../Vision/barcodesymbology.md) that indicates which type of barcode the framework detects. It also includes properties, such as the barcode’s payload data,  which is a decoded string value of that data.
 

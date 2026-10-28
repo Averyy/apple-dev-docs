@@ -22,7 +22,7 @@ Stores a new nested container for the given key and returns a new encoder instan
 mutating func superEncoder(forKey key: Self.Key) -> any Encoder
 ```
 
-#### Return Value
+## Return Value
 
 A new encoder to pass to `super.encode(to:)`.
 

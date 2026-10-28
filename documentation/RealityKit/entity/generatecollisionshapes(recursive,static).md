@@ -21,7 +21,7 @@ Creates the shape used to detect collisions between two entities that have colli
 @preconcurrency func generateCollisionShapes(recursive: Bool, static isStatic: Bool)
 ```
 
-#### Discussion
+## Discussion
 
 Call this method on entities that have a mesh to prepare a shape used for collision detection. The method stores the shape in the entity’s [`CollisionComponent`](../collisioncomponent.md) instance.
 

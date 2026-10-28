@@ -23,7 +23,7 @@ func send() async -> Bool
 - (void) sendWithCompletionHandler:(void (^)(BOOL sent)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Sends this UPI request.
 

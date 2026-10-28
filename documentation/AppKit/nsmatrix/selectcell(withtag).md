@@ -19,11 +19,11 @@ func selectCell(withTag tag: Int) -> Bool
 - (BOOL) selectCellWithTag:(NSInteger) tag;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver contains a cell whose tag matches `anInt`, or [`false`](../../Swift/false.md) if no such cell exists
 
-#### Discussion
+## Discussion
 
 If the matrix has at least one cell whose tag is equal to `anInt`, the last cell (when viewing the matrix as a row-ordered array) is selected. If the specified cell is an editable text cell, its text is selected.
 

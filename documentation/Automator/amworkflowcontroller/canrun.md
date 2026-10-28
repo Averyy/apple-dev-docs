@@ -20,11 +20,11 @@ var canRun: Bool { get }
 @property (nonatomic, readonly) BOOL canRun;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the controller’s workflow is able to run; [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 You might use this method to determine when to enable a “Run” button or other UI element you use to run the workflow.
 

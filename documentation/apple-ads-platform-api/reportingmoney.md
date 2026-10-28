@@ -15,13 +15,13 @@ A monetary value wrapper used in reporting contexts, capturing bid amounts and b
 object ReportingMoney
 ```
 
-#### Discussion
+## Discussion
 
 The `ReportingMoney` object is a thin wrapper around the `Money` type. The `value` field holds a `Money` object with the currency amount and currency code.
 
 To read the numeric value and currency code, use the `amount` and `currency` fields within the nested `Money` object.
 
-##### Example
+### Example
 
 ```json
 {

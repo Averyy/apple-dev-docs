@@ -19,7 +19,7 @@ func rulerView(_ ruler: NSRulerView, willSetClientView newClient: NSView)
 - (void) rulerView:(NSRulerView *) ruler willSetClientView:(NSView *) newClient;
 ```
 
-#### Discussion
+## Discussion
 
 The client view can use this opportunity to clear any cached information related to the ruler.
 

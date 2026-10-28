@@ -19,7 +19,7 @@ A flag representing whether this is a strong decision.
 var isStrongDecision: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 A strong decision keeps focus for as long as possible on the detected subject.
 

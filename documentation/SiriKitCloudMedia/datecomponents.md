@@ -19,7 +19,7 @@ A full or partial date and time.
 
 **Allowed Types**: `string(/[0-9]{4}/)`, `string(/[0-9]{4}-[0-9]{2}/)`, `date`, `date-time`, `ExplicitDateComponents`
 
-#### Discussion
+## Discussion
 
 The client may provide an [`ExplicitDateComponents`](./explicitdatecomponents.md) object or represent a Gregorian date in one of the following formats:
 

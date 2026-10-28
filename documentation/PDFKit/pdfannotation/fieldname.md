@@ -28,7 +28,7 @@ var fieldName: String? { get set }
 
 - [Adding Widgets to a PDF Document](../adding-widgets-to-a-pdf-document.md)
 
-#### Discussion
+## Discussion
 
 Use this identifier to refer to the widget when using a [`PDFActionResetForm`](../pdfactionresetform.md) action.
 

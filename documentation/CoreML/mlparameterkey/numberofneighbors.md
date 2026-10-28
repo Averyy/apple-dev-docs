@@ -25,7 +25,7 @@ class var numberOfNeighbors: MLParameterKey { get }
 @property (class, nonatomic, readonly) MLParameterKey * numberOfNeighbors;
 ```
 
-#### Discussion
+## Discussion
 
 The value type for the [`numberOfNeighbors`](./numberofneighbors.md) key is an [`Int64`](../../Swift/int64.md).
 

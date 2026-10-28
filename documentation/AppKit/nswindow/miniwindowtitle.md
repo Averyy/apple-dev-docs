@@ -19,7 +19,7 @@ var miniwindowTitle: String! { get set }
 @property (copy, null_resettable) NSString * miniwindowTitle;
 ```
 
-#### Discussion
+## Discussion
 
 A minimized window’s title usually reflects that of its full-size counterpart, abbreviated to fit if necessary. Although this property allows you to set the minimized window’s title explicitly, changing the full-size `NSWindow` object’s title (through [`title`](./title.md) or [`setTitleWithRepresentedFilename(_:)`](./settitlewithrepresentedfilename%28_%29.md)) automatically changes the minimized window’s title as well.
 

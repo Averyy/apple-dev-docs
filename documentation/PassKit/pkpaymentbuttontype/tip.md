@@ -24,7 +24,7 @@ case tip
 PKPaymentButtonTypeTip
 ```
 
-#### Discussion
+## Discussion
 
 This button looks like:
 

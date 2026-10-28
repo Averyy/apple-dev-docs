@@ -20,11 +20,11 @@ Transforms samples of a GPU’s counter set from the driver’s internal format 
 - (NSData *) resolveCounterRange:(NSRange) range;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSData`](../../Foundation/nsdata.md) instance if the method successfully resolves the range of samples in the buffer; otherwise, `nil`.
 
-#### Discussion
+## Discussion
 
 You can only call this method on a counter sample buffer that you create with [`MTLStorageMode.shared`](../mtlstoragemode/shared.md) (see [`storageMode`](../mtlcountersamplebufferdescriptor/storagemode.md)). For an example of how and when to use this method, see [Converting a GPU’s counter data into a readable format](../converting-a-gpus-counter-data-into-a-readable-format.md).
 

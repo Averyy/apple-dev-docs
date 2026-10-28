@@ -21,11 +21,11 @@ Formats a decimal value using this style.
 func format(_ value: Decimal) -> String
 ```
 
-#### Return Value
+## Return Value
 
 A string representation of `value` formatted according to the style’s configuration.
 
-#### Discussion
+## Discussion
 
 Use this method when you want to create a single style instance and then use it to format multiple decimal values. The following example creates a style that uses the `en_US` locale and then adds the [`scientific`](../../numberformatstyleconfiguration/notation/scientific.md) modifier. It then applies this style to all of the decimal values in an array.
 

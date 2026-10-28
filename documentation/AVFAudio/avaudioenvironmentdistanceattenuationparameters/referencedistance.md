@@ -25,7 +25,7 @@ var referenceDistance: Float { get set }
 @property (nonatomic) float referenceDistance;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `1.0` meter.
 

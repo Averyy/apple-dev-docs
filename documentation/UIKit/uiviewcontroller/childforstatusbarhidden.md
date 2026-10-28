@@ -24,7 +24,7 @@ var childForStatusBarHidden: UIViewController? { get }
 @property (nonatomic, readonly, nullable) UIViewController * childViewControllerForStatusBarHidden;
 ```
 
-#### Discussion
+## Discussion
 
 If your container view controller derives the hidden state of the status bar from one of its child view controllers, implement this property to specify which child view controller you want to control the hidden/unhidden state. If you return `nil` or don’t override this property, the status bar hidden/unhidden state for `self` is used.
 

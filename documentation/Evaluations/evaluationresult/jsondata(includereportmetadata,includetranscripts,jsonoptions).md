@@ -21,11 +21,11 @@ Returns the evaluation results as JSON data.
 func jsonData(includeReportMetadata: Bool = false, includeTranscripts: Bool = false, jsonOptions: JSONSerialization.WritingOptions = [.prettyPrinted, .sortedKeys]) throws -> Data
 ```
 
-#### Return Value
+## Return Value
 
 The JSON representation of the evaluation results as `Data`.
 
-#### Discussion
+## Discussion
 
 The data contains sections for summary, results, metadata, and optionally report metadata.
 

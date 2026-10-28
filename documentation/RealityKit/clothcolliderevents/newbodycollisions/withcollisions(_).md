@@ -17,11 +17,11 @@ Provides access to the collisions with cloth bodies that took place.
 func withCollisions<Result>(_ callback: (Span<ClothColliderEvents.NewBodyCollisions.Collision>) -> Result) -> Result
 ```
 
-#### Return Value
+## Return Value
 
 The value returned by `callback`.
 
-#### Discussion
+## Discussion
 
 This span is only available during the subscription callback of this event. The provided span is only valid for the lifetime of the callback.
 

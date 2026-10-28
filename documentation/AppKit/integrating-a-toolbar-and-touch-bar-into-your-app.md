@@ -10,13 +10,13 @@ Provide users quick access to your app’s features from a toolbar and correspon
 - macOS 10.13+
 - Xcode 12.0+
 
-#### Overview
+## Overview
 
 The *toolbar* appears in the space immediately below or next to a window’s title bar and above the app’s content. You use an [`NSToolbar`](./nstoolbar.md) object to manage the items that appear in a toolbar, which are [`NSToolbarItem`](./nstoolbaritem.md) objects created in Interface Builder or source code.
 
 This sample shows you how to add a toolbar to a window and add Touch Bar support that works in conjunction with the toolbar.
 
-##### Add the Toolbar
+### Add the Toolbar
 
 The sample defines the custom class `WindowController`, which derives from [`NSWindowController`](./nswindowcontroller.md) and conforms to the [`NSToolbarDelegate`](./nstoolbardelegate.md) protocol. In Interface Builder, the sample creates an instance of `WindowController` in the Window Controller Scene of `Main.storyboard`, and adds an [`NSToolbar`](./nstoolbar.md) object to the [`window`](./nswindowcontroller/window.md) referenced by the controller. Then the sample connects the toolbar’s [`delegate`](./nstoolbar/delegate.md) to the `WindowController` instance.
 
@@ -26,7 +26,7 @@ The window controller also defines an outlet variable `toolbar`, making it possi
 @IBOutlet weak var toolbar: NSToolbar!
 ```
 
-##### Create Toolbar Item Identifiers
+### Create Toolbar Item Identifiers
 
 Each [`NSToolbarItem`](./nstoolbaritem.md) object has a unique identifier of type [`NSToolbarItem.Identifier`](./nstoolbaritem/identifier.md). AppKit provides identifiers for standard toolbar items such as cloud sharing, printing, and showing the font and color palette. For custom toolbar items, the app provides the identifiers. For example, the sample provides two identifiers for its custom toolbar items: one for setting the font size and one for setting the font style of an [`NSTextView`](./nstextview.md).
 
@@ -37,7 +37,7 @@ private extension NSToolbarItem.Identifier {
 }
 ```
 
-##### Specify Allowed Toolbar Items
+### Specify Allowed Toolbar Items
 
 To tell the toolbar which items are available, the sample’s toolbar delegate implements the [`toolbarAllowedItemIdentifiers(_:)`](./nstoolbardelegate/toolbaralloweditemidentifiers%28_%29.md) method, which returns an array of item identifiers. The available items appear in the toolbar’s customization palette for customizing the toolbar when running the sample app.
 
@@ -51,7 +51,7 @@ func toolbarAllowedItemIdentifiers(_ toolbar: NSToolbar) -> [NSToolbarItem.Ident
 }
 ```
 
-##### Specify Default Toolbar Items
+### Specify Default Toolbar Items
 
 When the sample app launches for the first time, a default set of items appear in the toolbar. The sample provides these items by implementing the [`toolbarDefaultItemIdentifiers(_:)`](./nstoolbardelegate/toolbardefaultitemidentifiers%28_%29.md) delegate method, which returns an array containing the font style and font size item identifiers.
 
@@ -61,7 +61,7 @@ func toolbarDefaultItemIdentifiers(_ toolbar: NSToolbar) -> [NSToolbarItem.Ident
 }
 ```
 
-##### Create a Toolbar Item from an Identifier
+### Create a Toolbar Item from an Identifier
 
 The toolbar asks its delegate to create a toolbar item by calling the [`toolbar(_:itemForItemIdentifier:willBeInsertedIntoToolbar:)`](./nstoolbardelegate/toolbar%28_,itemforitemidentifier,willbeinsertedintotoolbar%29.md) method. It calls this method when adding an item to the toolbar but also when adding items to the toolbar’s customization palette.
 
@@ -103,7 +103,7 @@ func toolbar(
 
 The delegate isn’t responsible for creating toolbar items for standard identifiers; AppKit creates those toolbar items.
 
-##### Use a Custom View for a Toolbar Item
+### Use a Custom View for a Toolbar Item
 
 The font style and font size toolbar items display a custom view that the sample defines in `Main.storyboard` and connects with outlets in `WindowController`.
 
@@ -155,7 +155,7 @@ func customToolbarItem(
 }
 ```
 
-##### Add More Attributes to a Toolbar Item
+### Add More Attributes to a Toolbar Item
 
 The sample’s toolbar delegate also implements the [`toolbarWillAddItem(_:)`](./nstoolbardelegate/toolbarwilladditem%28_%29.md) method to know when the toolbar is about to add an item. This gives the delegate the opportunity to add or change state information for the item. For example, the sample sets the [`toolTip`](./nstoolbaritem/tooltip.md) property of a toolbar item with the [`print`](./nstoolbaritem/identifier/print.md) identifier.
 
@@ -172,7 +172,7 @@ func toolbarWillAddItem(_ notification: Notification) {
 }
 ```
 
-##### Provide Toolbar Customization to Users
+### Provide Toolbar Customization to Users
 
 The toolbar displays the default items in the same order as they appear in the array that [`toolbarDefaultItemIdentifiers(_:)`](./nstoolbardelegate/toolbardefaultitemidentifiers%28_%29.md) returns. But users can rearrange the items, add and remove items, and reset the toolbar to its default items by selecting View > Customize Toolbar, which displays the toolbar’s configuration palette. The sample app also saves the changes and reapplies them the next time the user launches the app.
 
@@ -194,7 +194,7 @@ toolbar.allowsUserCustomization = true
 toolbar.autosavesConfiguration = true
 ```
 
-##### Add Touch Bar Support
+### Add Touch Bar Support
 
 The sample app provides Touch Bar support that works in conjunction with the toolbar. Like the toolbar, the app provides two items on the Touch Bar: font style and font size.
 
@@ -216,7 +216,7 @@ override func makeTouchBar() -> NSTouchBar? {
 }
 ```
 
-##### Provide Touch Bar Customization to Users
+### Provide Touch Bar Customization to Users
 
 As with the toolbar, the sample app lets users customize items in the Touch Bar by choosing View > Customize Touch Bar. The app provides this feature by setting the [`isAutomaticCustomizeTouchBarMenuItemEnabled`](./nsapplication/isautomaticcustomizetouchbarmenuitemenabled.md) property to `true`.
 

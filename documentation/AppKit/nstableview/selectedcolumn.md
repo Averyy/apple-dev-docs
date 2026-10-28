@@ -19,7 +19,7 @@ var selectedColumn: Int { get }
 @property (readonly) NSInteger selectedColumn;
 ```
 
-#### Discussion
+## Discussion
 
 When multiple columns are selected, this property contains only the index of the last one in the selection. If no column is selected, the value of this property is `-1`.
 

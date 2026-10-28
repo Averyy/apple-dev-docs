@@ -5,7 +5,7 @@
 
 Names that identify semantic uses for vertex attribute data, used by the [`name`](./mdlvertexattribute/name.md) property.
 
-#### Overview
+## Overview
 
 Model I/O  automatically uses these names to identify vertex attribute data loaded from an asset when the asset does not already use its own custom names for vertex attributes.
 

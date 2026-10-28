@@ -22,7 +22,7 @@ nonisolated
 func onHingeChange(isEnabled: Bool = true, _ action: @escaping (DeviceHingeContext, DeviceHingeContext) -> Void) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to be informed of changes to the hinge context of the device.
 

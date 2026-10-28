@@ -31,7 +31,7 @@ class UISplitViewController
 - [Creating a custom container view controller](./creating-a-custom-container-view-controller.md)
 - [Customizing the behavior of segue-based presentations](./customizing-the-behavior-of-segue-based-presentations.md)
 
-#### Overview
+## Overview
 
 A split view controller is a container view controller that manages child view controllers in a hierarchical interface. In this type of interface, changes in one view controller drive changes in the content of another.
 
@@ -43,7 +43,7 @@ When you build your app’s user interface, the split view controller is typical
 
 > **Note**:  You can’t push a split view controller onto a navigation stack. Although it’s possible to install a split view controller as a child in some other container view controllers, doing so isn’t recommended in most cases. For design guidance, see [Split views](https://developer.apple.com/design/human-interface-guidelines/split-views/).
 
-##### Split view styles
+### Split view styles
 
 In iOS 14 and later, [`UISplitViewController`](./uisplitviewcontroller.md) supports column-style layouts. A column-style split view controller lets you create an interface with two or three columns by using [`init(style:)`](./uisplitviewcontroller/init%28style%29.md) with the appropriate [`style`](./uisplitviewcontroller/style-swift.property.md):
 
@@ -56,13 +56,13 @@ In either the two-column or three-column layout, [`UISplitViewController`](./uis
 
 Before iOS 14, [`UISplitViewController`](./uisplitviewcontroller.md) supported just one split view interface style with a primary view controller and a secondary view controller. This classic interface style applies to split view controllers created using any other approach than [`init(style:)`](./uisplitviewcontroller/init%28style%29.md). Split view controllers with the classic interface have a [`style`](./uisplitviewcontroller/style-swift.property.md) of [`UISplitViewController.Style.unspecified`](./uisplitviewcontroller/style-swift.enum/unspecified.md) and they don’t respond to any of the column-style APIs introduced in iOS 14 and later.
 
-##### Child view controllers
+### Child view controllers
 
 In a column-style split view interface, use the [`setViewController(_:for:)`](./uisplitviewcontroller/setviewcontroller%28_,for%29.md) and [`viewController(for:)`](./uisplitviewcontroller/viewcontroller%28for%29.md) methods to set and get view controllers for each column. The split view controller wraps all of its child view controllers in navigation controllers. If you set a child view controller that’s not a navigation controller, the split view controller creates a navigation controller for it. The split view controller returns your original view controller through [`viewController(for:)`](./uisplitviewcontroller/viewcontroller%28for%29.md), but its [`children`](./uiviewcontroller/children.md) property contains the navigation controller it used to wrap your view controller. After you assign view controllers to specific columns, you can show and hide those columns using [`show(_:)`](./uisplitviewcontroller/show%28_%29.md) or [`hide(_:)`](./uisplitviewcontroller/hide%28_%29.md).
 
 In a classic split view interface, you can configure the child view controllers using Interface Builder or programmatically by assigning the view controllers to the [`viewControllers`](./uisplitviewcontroller/viewcontrollers.md) property. In cases where you need to change either the primary or secondary view controller, it’s recommended that you do so using the [`show(_:sender:)`](./uisplitviewcontroller/show%28_,sender%29.md) and [`showDetailViewController(_:sender:)`](./uisplitviewcontroller/showdetailviewcontroller%28_,sender%29.md) methods. Using these methods (instead of modifying the [`viewControllers`](./uisplitviewcontroller/viewcontrollers.md) property directly) lets the split view controller present the specified view controller in a way that’s most appropriate for the current display mode and size class.
 
-##### Interface transitions
+### Interface transitions
 
 The split view controller performs collapse and expand transitions in response to certain changes in its interface. For example, transitions occur when the interface’s size class toggles between horizontally regular and horizontally compact, when a user interaction hides or shows a column, or when you hide or show columns programmatically. The split view controller works with its [`delegate`](./uisplitviewcontroller/delegate.md) object to perform collapse and expand transitions. The delegate is an object you provide that adopts the [`UISplitViewControllerDelegate`](./uisplitviewcontrollerdelegate.md) protocol.
 
@@ -72,7 +72,7 @@ Configure your own custom views and interactions to show or hide the inspector c
 
 For information about managing transitions in classic split view interfaces, see [Classic split views](./uisplitviewcontrollerdelegate.md#Classic-split-views).
 
-##### Display mode
+### Display mode
 
 A split view controller’s current display mode represents the visual arrangement of its child view controllers. It determines how many of its child view controllers are shown, and how they’re positioned in relation to each other. For example, you can arrange the child view controllers so that they appear side-by-side, so that only one at a time is visible, or so that one is partially obscured by the others.
 
@@ -82,7 +82,7 @@ You don’t set the display mode directly; instead, you set a preferred display 
 
 After you set the preferred display mode, the split view controller updates itself and reflects the actual display mode in the [`displayMode`](./uisplitviewcontroller/displaymode-swift.property.md) property. If you just want to change which columns are shown, try using [`show(_:)`](./uisplitviewcontroller/show%28_%29.md) or [`hide(_:)`](./uisplitviewcontroller/hide%28_%29.md). The split view controller will determine how to update the display mode to display the desired columns.
 
-##### Gesture and button support
+### Gesture and button support
 
 There are several ways for user interaction to change the current display mode.
 
@@ -92,7 +92,7 @@ If [`presentsWithGesture`](./uisplitviewcontroller/presentswithgesture.md) is [`
 
 For three-column split view interfaces—those with a [`style`](./uisplitviewcontroller/style-swift.property.md) of [`UISplitViewController.Style.tripleColumn`](./uisplitviewcontroller/style-swift.enum/triplecolumn.md)—another property that affects display mode is [`showsSecondaryOnlyButton`](./uisplitviewcontroller/showssecondaryonlybutton.md). When this property is [`true`](../Swift/true.md), the split view controller presents another bar button item for toggling the display mode to and from [`UISplitViewController.DisplayMode.secondaryOnly`](./uisplitviewcontroller/displaymode-swift.enum/secondaryonly.md). The split view controller manages the behavior, appearance, and positioning of this item. It appears as a double-arrow icon. When a user taps this button, it toggles the display mode to or from [`UISplitViewController.DisplayMode.secondaryOnly`](./uisplitviewcontroller/displaymode-swift.enum/secondaryonly.md).
 
-##### Split behavior
+### Split behavior
 
 A split view controller’s split behavior controls how its secondary view controller appears in relation to the others. You can configure this behavior so that the secondary view controller always appears side-by-side with the others, so that it’s partially obscured by the others, or so that it’s displaced offscreen opposite the others to make space for them.
 
@@ -100,11 +100,11 @@ You don’t set the split behavior directly; instead, you set a preferred split 
 
 ![Diagram showing a triple-column split view interface using the tile, overlay, and displace split behaviors.](https://developer.apple.com/tutorials/images/com.apple.uikit/UISplitViewController-4@2x.png)
 
-##### Column-width customization
+### Column-width customization
 
 You can specify custom widths for the primary, supplementary, secondary, and inspector columns of the split view interface by setting their respective minimum, maximum, and preferred width properties listed in [Managing column dimensions](./uisplitviewcontroller.md#Managing-column-dimensions). If you don’t specify values for these properties, they default to [`automaticDimension`](./uisplitviewcontroller/automaticdimension.md).
 
-##### Message forwarding
+### Message forwarding
 
 A split view controller interposes itself between the app’s window and its child view controllers. As a result, all messages to the child view controllers must flow through the split view controller. Messages are forwarded as appropriate. For example, view appearance and disappearance messages are sent only when the corresponding child view controller actually appears onscreen.
 

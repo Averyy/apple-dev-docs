@@ -17,11 +17,11 @@ static IONotifier * addNotification(
  SInt32 priority = 0 ) __attribute__((deprecated));
 ```
 
-#### Return Value
+## Return Value
 
 An instance of an IONotifier object that can be used to control or destroy the notification request.
 
-#### Overview
+## Overview
 
 IOService will deliver notifications of changes in state of an IOService object to registered clients. The type of notification is specified by a symbol, for example `gIOMatchedNotification` or `gIOTerminatedNotification`, and notifications will only include IOService objects that match the supplied matching dictionary. Notifications are ordered by a priority set with `addNotification`. When the notification is installed, its handler will be called with each of any currently existing IOService objects that are in the correct state (eg. registered) and match the supplied matching dictionary, avoiding races between finding preexisting and new IOService events. The notification request is identified by an instance of an IONotifier object, through which it can be enabled, disabled, or removed. `addNotification` consumes a retain count on the matching dictionary when the notification is removed.
 

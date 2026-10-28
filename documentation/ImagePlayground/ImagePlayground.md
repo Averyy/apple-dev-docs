@@ -13,7 +13,7 @@ Present a system interface to generate images based on descriptive information.
 - macOS 15.1+
 - visionOS 2.4+
 
-#### Overview
+## Overview
 
 Use the `ImagePlayground` framework to generate custom images using system-supported styles. To generate images, you specify a text description of what you want, an optional image, and the style you want the image to adopt. Use that information to present a system sheet from your SwiftUI view, or present a system view controller from your UIKit or AppKit interface. The system interface manages all interactions with the person, and upon success delivers an image for you to incorporate into your content. You can also use a programmatic interface to generate images without interactions.
 

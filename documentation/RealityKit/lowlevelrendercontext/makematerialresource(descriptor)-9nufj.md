@@ -16,8 +16,8 @@ Asynchronously compiles a material resource from a geometry modifier, surface sh
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) func makeMaterialResource(descriptor: LowLevelMaterialResource.Descriptor) async throws -> sending LowLevelMaterialResource
+nonisolated(nonsending)
+func makeMaterialResource(descriptor: LowLevelMaterialResource.Descriptor) async throws -> sending LowLevelMaterialResource
 ```
 
 **Other overloads**:
@@ -26,11 +26,11 @@ nonisolated
 func makeMaterialResource(descriptor: LowLevelMaterialResource.Descriptor) throws -> sending LowLevelMaterialResource
 ```
 
-#### Return Value
+## Return Value
 
 A newly compiled [`LowLevelMaterialResource`](../lowlevelmaterialresource.md).
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if shader compilation fails.
 

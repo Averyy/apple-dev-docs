@@ -40,7 +40,7 @@ func rowSize(for page: PDFPage) -> NSSize
 - (NSSize) rowSizeForPage:(PDFPage *) page;
 ```
 
-#### Discussion
+## Discussion
 
 The size is dependent on the current scale factor and display attributes.
 

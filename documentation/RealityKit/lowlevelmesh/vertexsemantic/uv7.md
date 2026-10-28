@@ -20,7 +20,7 @@ The semantic for the eighth UV channel, also known as UV7.
 case uv7
 ```
 
-#### Discussion
+## Discussion
 
 A shader can access this generic data.
 

@@ -33,7 +33,7 @@ class func report(_ achievements: [GKAchievement]) async throws
 
 - [Rewarding players with achievements](../rewarding-players-with-achievements.md)
 
-#### Discussion
+## Discussion
 
 Call this method to communicate to Game Center about the local player’s progress towards completing one or more achievements.
 

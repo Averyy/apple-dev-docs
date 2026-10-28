@@ -13,7 +13,7 @@
 typedef errno_t (*ctl_send_func)(kern_ctl_ref kctlref, u_int32_t unit, void *unitinfo, mbuf_t m, int flags);
 ```
 
-#### Discussion
+## Discussion
 
 The ctl_send_func is used to receive data sent from the client to the kernel control.
 

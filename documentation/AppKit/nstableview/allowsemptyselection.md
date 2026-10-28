@@ -19,7 +19,7 @@ var allowsEmptySelection: Bool { get set }
 @property BOOL allowsEmptySelection;
 ```
 
-#### Discussion
+## Discussion
 
 The default is [`true`](../../Swift/true.md), which allows the user to select zero columns or rows.
 

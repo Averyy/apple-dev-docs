@@ -19,7 +19,7 @@ var cellSize: NSSize { get set }
 @property NSSize cellSize;
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to both the width and height of each cell, because all cells in an [`NSMatrix`](../nsmatrix.md) are the same size.
 

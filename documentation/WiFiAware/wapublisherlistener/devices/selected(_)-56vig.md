@@ -17,7 +17,7 @@ Includes only the preselected paired devices in the provided dictionary.
 static func selected(_ pairedDevices: WAPairedDevice.Devices) -> WAPublisherListener.Devices
 ```
 
-#### Return Value
+## Return Value
 
 A new `Devices` including the selected devices.
 

@@ -20,7 +20,7 @@ var macAddress: VZMACAddress { get set }
 @property (copy, readwrite) VZMACAddress * MACAddress;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is a random, locally administered, unicast address. Assign a custom value to this property if you want your network device to have a specific MAC address.
 

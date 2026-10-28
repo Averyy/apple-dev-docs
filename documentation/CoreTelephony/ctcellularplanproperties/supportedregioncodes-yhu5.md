@@ -17,7 +17,7 @@ The available regions that your eSIM supports.
 var supportedRegionCodes: [Locale.Region] { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Use 2-letter country codes as defined per [ISO 3166-1 alpha-2](https://www.iso.org/obp/ui/#search/code/)
 

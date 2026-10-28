@@ -18,7 +18,7 @@ Update an item with text.
 @MainActor func updateItem(at index: Int, withTitle title: String) -> OCKChecklistItemButton?
 ```
 
-#### Return Value
+## Return Value
 
 The item that was modified.
 

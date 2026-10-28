@@ -14,7 +14,7 @@ A Boolean value that indicates whether the app may prompt the user for permissio
 - **Name**: `com.apple.security.automation.apple-events` (Apple Events)
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 Your app doesn’t need the Apple Events entitlement if it only sends Apple events to itself or to other processes signed with the same team ID.
 

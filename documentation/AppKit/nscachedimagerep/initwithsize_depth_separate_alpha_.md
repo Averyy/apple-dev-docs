@@ -15,7 +15,7 @@ Returns a cached image representation initialized with the specified image chara
 - (id) initWithSize:(NSSize) size depth:(NSWindowDepth) depth separate:(BOOL) flag alpha:(BOOL) alpha;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized `NSCachedImageRep` object or `nil` if the object could not be initialized.
 

@@ -21,7 +21,7 @@ A structure that wraps all geometric pins an entity owns.
 struct EntityGeometricPins
 ```
 
-#### Overview
+## Overview
 
 Access an instance of this structure through the entity property [`pins`](./entity/pins.md).
 

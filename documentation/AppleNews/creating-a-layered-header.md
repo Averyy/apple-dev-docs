@@ -5,13 +5,13 @@
 
 Create a header with a caption that’s layered in front of an image.
 
-#### Overview
+## Overview
 
 In [Setting Up the Advanced Tutorials](./setting-up-the-advanced-tutorials.md), you learned how to download some article bundles, including one called `News_Design_Tutorial_6_Embeds.zip`, which represents the outcome of the introductory tutorial.
 
 **On this page, you’ll learn how to create a layered header by adding code to the article.json file.**
 
-##### Replace a Captioned Photo with an Image Fill
+### Replace a Captioned Photo with an Image Fill
 
 An image fill is an image that is set as the background fill of a component. When you use an image fill, any other content in the component looks like it is layered in front of the image. This allows you to create collage effects and other layering effects.
 
@@ -31,7 +31,7 @@ To replace a captioned photo with an image fill:
 
 Your code should look like the example code [Header and Caption: Result](./creating-a-layered-header.md#Header-and-Caption-Result).
 
-###### Header and Caption: Copy This Code
+#### Header and Caption: Copy This Code
 
 ```json
     {
@@ -54,7 +54,7 @@ Your code should look like the example code [Header and Caption: Result](./creat
     },
 ```
 
-###### Header and Caption: Result
+#### Header and Caption: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -86,7 +86,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Define a ComponentLayout Object for Headers
+### Define a ComponentLayout Object for Headers
 
 In [Replace a Captioned Photo with an Image Fill](./creating-a-layered-header.md#Replace-a-Captioned-Photo-with-an-Image-Fill), you added a reference to an undefined `ComponentLayout` object. Now, you’ll define that `ComponentLayout` object. You’ll make the `ComponentLayout` object extend to both sides of the display, and you’ll give it a height that is 44 percent of the viewport’s longest side.
 
@@ -97,7 +97,7 @@ Your code should look like the example code [headerImageLayout: Result](./creati
 
 After you make these changes in your code, you can preview your working `article.json` file in News Preview to see the header with the image fill. The caption is still below the header. In [Move a Caption Inside a Header](./creating-a-layered-header.md#Move-a-Caption-Inside-a-Header), you’ll layer the caption in front of the header.
 
-###### headerImageLayout: Copy This Code
+#### headerImageLayout: Copy This Code
 
 ```json
 ,
@@ -107,7 +107,7 @@ After you make these changes in your code, you can preview your working `article
     }
 ```
 
-###### headerImageLayout: Result
+#### headerImageLayout: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -125,7 +125,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Move a Caption Inside a Header
+### Move a Caption Inside a Header
 
 In [Replace a Captioned Photo with an Image Fill](./creating-a-layered-header.md#Replace-a-Captioned-Photo-with-an-Image-Fill), you added a `header` component to your article. Now, you’ll move a `caption` component so that it’s a child of that header. This creates a layering effect.
 
@@ -139,7 +139,7 @@ Your code should look like the example code [Child Components: Result](./creatin
 
 After you make these changes in your code, you can preview your working `article.json` file in News Preview to see that the caption is layered in front of the header image.
 
-###### Child Components: Copy This Code
+#### Child Components: Copy This Code
 
 ```json
 ,
@@ -152,7 +152,7 @@ After you make these changes in your code, you can preview your working `article
       ]
 ```
 
-###### Child Components: Result
+#### Child Components: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -186,7 +186,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Define a Dark Background for the Caption
+### Define a Dark Background for the Caption
 
 In [Move a Caption Inside a Header](./creating-a-layered-header.md#Move-a-Caption-Inside-a-Header), you layered a caption in front of your header, but the caption that you moved is now difficult to read. Before you can give your container a darker background, you must define a new `ComponentStyle` object.
 
@@ -195,7 +195,7 @@ In [Move a Caption Inside a Header](./creating-a-layered-header.md#Move-a-Captio
 
 Your code should look like the example code [captionBarBackgroundStyle: Result](./creating-a-layered-header.md#captionBarBackgroundStyle-Result).
 
-###### captionBarBackgroundStyle: Copy This Code
+#### captionBarBackgroundStyle: Copy This Code
 
 ```json
     "captionBarBackgroundStyle": {
@@ -203,7 +203,7 @@ Your code should look like the example code [captionBarBackgroundStyle: Result](
     }
 ```
 
-###### captionBarBackgroundStyle: Result
+#### captionBarBackgroundStyle: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -219,7 +219,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Define a Light Text Color for the Caption
+### Define a Light Text Color for the Caption
 
 Before you can lighten the text of the caption, you must define a new `ComponentTextStyle` object.
 
@@ -228,7 +228,7 @@ Before you can lighten the text of the caption, you must define a new `Component
 
 Your code should look like the example code [captionLight: Result](./creating-a-layered-header.md#captionLight-Result).
 
-###### captionLight: Copy This Code
+#### captionLight: Copy This Code
 
 ```json
 ,
@@ -237,7 +237,7 @@ Your code should look like the example code [captionLight: Result](./creating-a-
     }
 ```
 
-###### captionLight: Result
+#### captionLight: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -254,7 +254,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Use the Caption Background Color, Text Color, and Layout
+### Use the Caption Background Color, Text Color, and Layout
 
 To make your caption easier to read, apply the styles that you added in [Define a Dark Background for the Caption](./creating-a-layered-header.md#Define-a-Dark-Background-for-the-Caption) and [Define a Light Text Color for the Caption](./creating-a-layered-header.md#Define-a-Light-Text-Color-for-the-Caption). Adjust the position of the caption using the `ComponentLayout` object `headerImageLayout` that you created earlier in [Define a ComponentLayout Object for Headers](./creating-a-layered-header.md#Define-a-ComponentLayout-Object-for-Headers). Because your `caption` component is in a container, you can adjust its position without affecting the parent container.
 
@@ -266,7 +266,7 @@ To make your caption easier to read, apply the styles that you added in [Define 
 
 Your code should look like the example code [Container and Caption: Result](./creating-a-layered-header.md#Container-and-Caption-Result).
 
-###### Container and Caption: Copy This Code
+#### Container and Caption: Copy This Code
 
 ```json
         {
@@ -284,7 +284,7 @@ Your code should look like the example code [Container and Caption: Result](./cr
         }
 ```
 
-###### Container and Caption: Result
+#### Container and Caption: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -326,7 +326,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Anchor the Caption to the Bottom of the Header
+### Anchor the Caption to the Bottom of the Header
 
 The final step in creating your layered header is to anchor the caption to the bottom of the header by adding an `anchor` property to the `container` component.
 
@@ -339,7 +339,7 @@ Your code should look like the example code [Anchor: Result](./creating-a-layere
 
 After you make this change in your code, you can preview your working `article.json` file in News Preview to see that the caption is anchored to the bottom of the header.
 
-###### Anchor: Copy This Code
+#### Anchor: Copy This Code
 
 ```json
           "anchor": {
@@ -347,7 +347,7 @@ After you make this change in your code, you can preview your working `article.j
           },
 ```
 
-###### Anchor: Result
+#### Anchor: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -392,7 +392,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Next
+### Next
 
 [Adding Parallax Behavior](./adding-parallax-behavior.md)
 

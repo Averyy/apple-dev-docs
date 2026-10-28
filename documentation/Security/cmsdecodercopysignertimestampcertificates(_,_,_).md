@@ -19,11 +19,11 @@ func CMSDecoderCopySignerTimestampCertificates(_ cmsDecoder: CMSDecoder, _ signe
 OSStatus CMSDecoderCopySignerTimestampCertificates(CMSDecoderRef cmsDecoder, size_t signerIndex, CFArrayRef*certificateRefs);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md). Typically, this function returns [`errSecParam`](./errsecparam.md) if the CMS message was not signed or `signerIndex` is out of bounds, and returns [`errSecItemNotFound`](./errsecitemnotfound.md) if no certificates were found.
 
-#### Discussion
+## Discussion
 
 The signature must contain an authenticated timestamp provided by a time stamping authority. Elements of the returned array are of type `SecCertificateRef`. The caller is responsible for releasing the returned array by calling `CFRelease`.
 

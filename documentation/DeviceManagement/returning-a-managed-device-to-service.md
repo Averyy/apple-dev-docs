@@ -5,7 +5,7 @@
 
 Use a device management service to reset and reenroll devices quickly after use.
 
-#### Overview
+## Overview
 
 Organizations often have managed devices that multiple people use, such as shift workers who pick up, use, and return devices. When a person returns a device, the device management service needs to reset it to erase any data associated with that person, ensuring a clean device for the next person. iPhone, iPad, Mac, Apple TV, and Apple Vision Pro support a simple erase. In addition, iPhone, iPad, Apple TV, and Apple Vision Pro support Return to Service, which fully automates the process of resetting and reenrolling.
 
@@ -22,7 +22,7 @@ A device management service uses the [`Erase Device`](./erase-device-command.md)
 
 The two Return to Service flows automate and speed up resetting and reenrolling devices. The app preservation flow speeds up Return to Service for users who need managed apps. Return to Service is available for iOS, iPadOS, tvOS, and visionOS devices. Return to Service with app preservation is available for iOS, iPadOS, and visionOS devices.
 
-#### Return a device to service
+## Return a device to service
 
 The device management service uses the [`Erase Device`](./erase-device-command.md) command to start the Return to Service flow. The service includes additional properties in the command to automatically reenroll the device after the erase operation completes. After a device erases itself, the following sequence of operations occurs:
 
@@ -35,7 +35,7 @@ The device management service uses the [`Erase Device`](./erase-device-command.m
 
 If the device management service initiates the Return to Service again, the device erases itself and returns to step 1 in this sequence.
 
-#### Initiate Return to Service
+## Initiate Return to Service
 
 The device management service initiates each Return to Service flow by setting the `ReturnToService` key in the [`Erase Device`](./erase-device-command.md) command it sends. This key contains a dictionary with the following keys:
 
@@ -63,7 +63,7 @@ The device management service only sets the `BootstrapToken` key in the [`Erase 
 
 If the device management service sets the `ShouldRetryEnrollment` key to `true`, an iOS or iPadOS device retries enrollment after a reset with an increasing time delay (up to five minutes) if the initial enrollment fails.
 
-#### Return a device to service and preserve apps
+## Return a device to service and preserve apps
 
 The first time a device goes through a Return to Service with app preservation flow, it downloads and installs the managed apps that the device management service requires. Then it takes a snapshot of the system data volume.
 
@@ -81,19 +81,19 @@ There are three ways to start Return to Service with app preservation:
 - User initiated: The user initiates Return to Service on the device.
 - Device initiated: The device initiates Return to Service when it’s idle for a set amount of time.
 
-#### Initiate Return to Service using a device management service
+## Initiate Return to Service using a device management service
 
 The device management service uses the [`Erase Device`](./erase-device-command.md) command to erase the device. The command has the same requirements as the Return to Service flow, with the additional requirement that the `BootstrapToken` key is present and set to the bootstrap token value the device previously sent. When the device receives the command, it uses the bootstrap token to erase user data while preserving system data, including managed apps.
 
-#### Handle user initiation
+## Handle user initiation
 
 A person can initiate Return to Service with app preservation from the lock screen (visionOS only) or Control Center. When they do, the device sends a [`Return To Service`](./return-to-service.md) check-in request to the device management service. The service includes a `ReturnToService` key in the [`ReturnToServiceResponse`](./returntoserviceresponse.md) response that matches the `ReturnToService` key in the [`Erase Device`](./erase-device-command.md) command. When the device processes the response, it uses the bootstrap token to erase user data while preserving system data, including managed apps.
 
-#### Handle the device initiation
+## Handle the device initiation
 
 A device can automatically initiate Return to Service with app preservation when it’s idle for a set amount of time. To set a timeout, the device management service sends a [`Settings`](./settings-command.md) command with a `SharedDeviceConfiguration` object that contains the `TemporarySessionTimeout` key, and sets the value to the required timeout in seconds. The device doesn’t start an idle timeout if the value is zero or the setting isn’t present. When the idle timeout expires, the device uses the [`Return To Service`](./return-to-service.md) check-in request to start Return to Service, just as it does for user-initiated Return to Service.
 
-#### Preserve apps
+## Preserve apps
 
 When the device uses Return to Service with app preservation, the following sequence of operations occurs after a reset:
 
@@ -117,7 +117,7 @@ If an action starts the flow again, the device erases itself and returns to step
 
 > **Note**:  After the device takes the snapshot (after step 12), new or updated managed apps aren’t preserved for the next Return to Service with app preservation cycle. The device management service can reinstall them in step 8 to preserve them for subsequent cycles.
 
-#### Handle software updates
+## Handle software updates
 
 The device management service can enforce software updates on devices that use Return to Service by applying the [`SoftwareUpdateEnforcementSpecific`](./softwareupdateenforcementspecific.md) configuration.
 
@@ -125,7 +125,7 @@ When the device management service configures a device for Return to Service wit
 
 On iOS, iPadOS, and visionOS devices, the device management service can enforce a software update during Return to Service and Return to Service with app preservation by returning the [`ErrorCodeSoftwareUpdateRequired`](./errorcodesoftwareupdaterequired.md) HTTP 403 error code during Automated Device Enrollment. In that case, the device performs a software update, then reboots to restart the flow.
 
-#### Allow visionOS devices to join Wi-Fi on reboot
+## Allow visionOS devices to join Wi-Fi on reboot
 
 When a person finishes using an Apple Vision Pro device, they often power down the device or disconnect it from its power source. When the next user picks up the device to use it, it powers on and remains locked to the previous user. For the new user to initiate Return to Service from the lock screen, the device needs to be on a Wi-Fi network so it can reach the device management service. However, at this point the device isn’t connected to Wi-Fi, preventing the new user from initiating Return to Service.
 

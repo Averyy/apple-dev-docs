@@ -10,13 +10,13 @@ framework: "Swift-Org/PackageManagerDocs"
 
 Include C language code as a target in your Swift package.
 
-#### Overview
+## Overview
 
 C language targets are structured similarly to Swift targets, with the additional of a directory, commonly named `include`, to hold public header files. If you use a directory other than `include` for public headers, declare it using the [publicHeadersPath parameter](https://developer.apple.com/documentation/packagedescription/target/publicheaderspath) on [target](https://developer.apple.com/documentation/packagedescription/target).
 
 Swift Package manager allows only one valid C language main file for executable targets. For example, it is invalid to have `main.c` and `main.cpp` in the same target.
 
-##### Exposing C functions to Swift
+### Exposing C functions to Swift
 
 Swift Package Manager automatically generates a module map for each C language library target for these use cases:
 

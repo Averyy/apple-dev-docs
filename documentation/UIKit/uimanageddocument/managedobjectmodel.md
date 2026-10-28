@@ -22,7 +22,7 @@ var managedObjectModel: NSManagedObjectModel { get }
 @property (nonatomic, strong, readonly) NSManagedObjectModel * managedObjectModel;
 ```
 
-#### Discussion
+## Discussion
 
 Persistent documents always have a managed object model. The default model is the union of all models in the main bundle. You can specify a configuration to use with [`modelConfiguration`](./modelconfiguration.md). You can subclass [`UIManagedDocument`](../uimanageddocument.md) to override this method if you need custom behavior.
 

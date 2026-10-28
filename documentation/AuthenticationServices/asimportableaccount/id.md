@@ -19,7 +19,7 @@ A unique identifier for the account.
 var id: Data
 ```
 
-#### Discussion
+## Discussion
 
 This property isn’t displayed to the person using the app.
 

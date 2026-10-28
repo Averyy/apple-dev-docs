@@ -23,11 +23,11 @@ func execute(inputsData: [String : MLCTensorData], lossLabelsData: [String : MLC
 - (BOOL) executeWithInputsData:(NSDictionary<NSString *,MLCTensorData *> *) inputsData lossLabelsData:(NSDictionary<NSString *,MLCTensorData *> *) lossLabelsData lossLabelWeightsData:(NSDictionary<NSString *,MLCTensorData *> *) lossLabelWeightsData batchSize:(NSUInteger) batchSize options:(MLCExecutionOptions) options completionHandler:(MLCGraphCompletionHandler) completionHandler;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the execution was successful.
 
-#### Discussion
+## Discussion
 
 When you execute a training iteration, if you specified an optimizer when you created the graph, the framework applies the optimizer update.
 

@@ -21,11 +21,11 @@ Prefixes a publisher’s output with the specified sequence.
 func prepend<S>(_ elements: S) -> Publishers.Concatenate<Publishers.Sequence<S, Self.Failure>, Self> where S : Sequence, Self.Output == S.Element
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that prefixes the sequence of elements prior to this publisher’s elements.
 
-#### Discussion
+## Discussion
 
 Use [`prepend(_:)`](./prepend%28_%29-v9sb.md) to publish values from two publishers when you need to prepend one publisher’s elements to another.
 

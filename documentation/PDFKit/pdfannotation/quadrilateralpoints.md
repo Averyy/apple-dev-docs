@@ -24,7 +24,7 @@ var quadrilateralPoints: [NSValue]? { get set }
 @property (nonatomic, copy, nullable) NSArray<NSValue *> * quadrilateralPoints;
 ```
 
-#### Discussion
+## Discussion
 
 The array contains `N * 4` [`NSValue`](../../Foundation/nsvalue.md) objects that use [`pointValue`](../../Foundation/nsvalue/pointvalue.md) or [`cgPointValue`](../../Foundation/nsvalue/cgpointvalue.md) to define `N` quadrilaterals in page-space coordinates, where `N` is the number of quad points. The order of the points is a Z pattern as follows:
 

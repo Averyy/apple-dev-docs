@@ -21,7 +21,7 @@ A tint effect configuration that you can apply to content in a list.
 struct ListItemTint
 ```
 
-#### Overview
+## Overview
 
 Use one of these tint values with the [`listItemTint(_:)`](./view/listitemtint%28_%29.md) view modifier. The containing list applies the tint in a platform-specific way. On iOS and macOS, sidebars apply the tint color to [`Label`](./label.md) icons, which otherwise use the app’s accent color by default.
 

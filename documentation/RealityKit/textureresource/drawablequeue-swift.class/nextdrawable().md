@@ -20,7 +20,7 @@ Returns drawable when one is available, blocking the caller in the meantime.
 func nextDrawable() throws -> TextureResource.Drawable
 ```
 
-#### Discussion
+## Discussion
 
 The method can block the caller for a duration up to the [`timeout`](./descriptor/timeout.md) period.
 

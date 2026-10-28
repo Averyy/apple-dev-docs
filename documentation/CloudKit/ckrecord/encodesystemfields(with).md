@@ -25,7 +25,7 @@ func encodeSystemFields(with coder: NSCoder)
 - (void) encodeSystemFieldsWithCoder:(NSCoder *) coder;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to encode the record’s metadata that CloudKit provides. Every record has keys that the system defines that correspond to record metadata, such as the record ID, record type, creation date, and so on. This method encodes those keys in the specified archiver. This method doesn’t include any keys you add to the record. It also doesn’t encode the keys that the [`changedKeys`](./changedkeys.md) method returns.
 

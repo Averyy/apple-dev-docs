@@ -20,7 +20,7 @@ Loads the web content from the HTML you provide as if the HTML were the response
 @MainActor final func load(simulatedRequest request: URLRequest, responseHTML htmlString: String) -> some AsyncSequence<WebPage.NavigationEvent, any Error>
 ```
 
-#### Return Value
+## Return Value
 
 An async sequence you use to track the loading progress of the navigation. If the `Task` enclosing the sequence is cancelled, the page will stop loading all resources.
 

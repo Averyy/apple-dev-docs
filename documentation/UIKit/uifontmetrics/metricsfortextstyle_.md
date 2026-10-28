@@ -20,7 +20,7 @@ Creates and returns a font metrics object for the specified text style.
 + (instancetype) metricsForTextStyle:(UIFontTextStyle) textStyle;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized font metrics object.
 

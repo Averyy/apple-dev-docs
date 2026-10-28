@@ -19,7 +19,7 @@ var drawsBackground: Bool { get set }
 @property BOOL drawsBackground;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the text field’s cell draws a background; if [`false`](../../Swift/false.md), it draws nothing behind the text.
 

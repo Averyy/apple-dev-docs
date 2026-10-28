@@ -19,7 +19,7 @@ var nibBundle: Bundle? { get }
 @property (strong, readonly, nullable) NSBundle * nibBundle;
 ```
 
-#### Discussion
+## Discussion
 
 This property’s value is the bundle you provide to the `nibBundleOrNil` parameter in the [`init(nibName:bundle:)`](./init%28nibname,bundle%29.md) method.
 

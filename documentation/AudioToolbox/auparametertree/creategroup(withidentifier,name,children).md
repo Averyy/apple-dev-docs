@@ -24,7 +24,7 @@ class func createGroup(withIdentifier identifier: String, name: String, children
 + (AUParameterGroup *) createGroupWithIdentifier:(NSString *) identifier name:(NSString *) name children:(NSArray<AUParameterNode *> *) children;
 ```
 
-#### Return Value
+## Return Value
 
 A newly-initialized parameter group object.
 

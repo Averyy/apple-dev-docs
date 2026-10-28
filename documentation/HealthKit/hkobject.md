@@ -28,7 +28,7 @@ class HKObject
 
 - [About the HealthKit framework](./about-the-healthkit-framework.md)
 
-#### Overview
+## Overview
 
 The `HKObject` class is an abstract class. You should never instantiate a `HKObject` object directly. Instead, always work with one of its concrete subclasses: [`HKCategorySample`](./hkcategorysample.md), [`HKQuantitySample`](./hkquantitysample.md), [`HKCorrelation`](./hkcorrelation.md), or [`HKWorkout`](./hkworkout.md).
 

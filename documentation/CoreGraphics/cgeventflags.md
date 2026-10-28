@@ -20,7 +20,7 @@ struct CGEventFlags
 enum CGEventFlags : uint64_t;
 ```
 
-#### Overview
+## Overview
 
 These constants specify masks for the bits in an event flags bit mask. Event flags indicate the modifier key state at the time an event is created, as well as other event-related states. Event flags are used in accessor functions such as [`flags`](./cgevent/flags.md), [`CGEventSetFlags`](./cgeventsetflags.md), and [`flagsState(_:)`](./cgeventsource/flagsstate%28_%29.md).
 

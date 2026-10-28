@@ -25,11 +25,11 @@ func CFGetRetainCount(_ cf: CFTypeRef!) -> CFIndex
 extern CFIndex CFGetRetainCount(CFTypeRef cf);
 ```
 
-#### Return Value
+## Return Value
 
 A number representing the reference count of `cf`.
 
-#### Discussion
+## Discussion
 
 You increment the reference count using the [`CFRetain`](./cfretain.md) function, and decrement the reference count using the [`CFRelease`](./cfrelease.md) function.
 

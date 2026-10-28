@@ -19,7 +19,7 @@ var temporalLevel: Int16 { get set }
 @property (nonatomic) int16_t temporalLevel;
 ```
 
-#### Discussion
+## Discussion
 
 This value maps to the [`kCMHEVCTemporalLevelInfoKey_TemporalLevel`](../../CoreMedia/kcmhevctemporallevelinfokey_temporallevel.md) sample buffer attachment, and is `-1` if this information isn’t available.
 

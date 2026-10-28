@@ -19,7 +19,7 @@ init?(source requestSource: FxImageTileRequestSource, time requestTime: CMTime, 
 - (id) initWithSource:(FxImageTileRequestSource) requestSource time:(CMTime) requestTime includeFilters:(BOOL) includeFilters parameterID:(UInt32) parameterID;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to notify the host application of the location to pull image tiles from (either the effect’s input or parameters), at what time to pull the images, and whether to include other filters.
 

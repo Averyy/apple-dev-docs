@@ -25,11 +25,11 @@ func CFErrorCopyRecoverySuggestion(_ err: CFError!) -> CFString!
 extern CFStringRefCFErrorCopyRecoverySuggestion(CFErrorRef err);
 ```
 
-#### Return Value
+## Return Value
 
 A localized, human-presentable recovery suggestion for `err`, or `NULL` if no user-presentable string is available. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 This is the string that can be displayed as the “informative” (or “secondary”) message on an alert panel. For example, an error description “Could not save file ‘Letter’ in folder ‘Documents’ because the volume ‘MyDisk’ doesn’t have enough space.” might have a corresponding recovery suggestion, “Remove some files from the volume and try again.”
 

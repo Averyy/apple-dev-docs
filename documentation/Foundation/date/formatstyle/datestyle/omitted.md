@@ -21,7 +21,7 @@ A date style with no date-related components represented.
 static let omitted: Date.FormatStyle.DateStyle
 ```
 
-#### Discussion
+## Discussion
 
 If both the date style and time style are set to `omitted`, the date is represented using the default style of `abbreviated`.
 

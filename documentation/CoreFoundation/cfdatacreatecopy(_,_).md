@@ -25,11 +25,11 @@ func CFDataCreateCopy(_ allocator: CFAllocator!, _ theData: CFData!) -> CFData!
 extern CFDataRefCFDataCreateCopy(CFAllocatorRef allocator, CFDataRef theData);
 ```
 
-#### Return Value
+## Return Value
 
 An immutable copy of `theData`, or `NULL` if there was a problem creating the object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 The resulting object has the same byte contents as the original object, but it is always immutable. If the specified allocator and the allocator of the original object are the same, and the string is already immutable, this function may simply increment the retain count without making a true copy. To the caller, however, the resulting object is a true immutable copy, except the operation was more efficient.
 

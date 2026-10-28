@@ -28,11 +28,11 @@ init?(named name: String, in bundle: Bundle?, with configuration: UIImage.Config
 
 - [Configuring and displaying symbol images in your UI](../configuring-and-displaying-symbol-images-in-your-ui.md)
 
-#### Return Value
+## Return Value
 
 An object containing the image variant that matches the specified configuration data, or `nil` if no suitable image was found.
 
-#### Discussion
+## Discussion
 
 When searching the asset catalog, this method prefers an asset containing a symbol image over an asset with the same name containing a bitmap image. Because the system supports symbol images in iOS 13 or later, you may include both types of assets in the same asset catalog. The system automatically falls back to the bitmap image on earlier versions of iOS.
 

@@ -25,7 +25,7 @@ func nw_parameters_get_attribution(_ parameters: nw_parameters_t) -> nw_paramete
 nw_parameters_attribution_t nw_parameters_get_attribution(nw_parameters_t parameters);
 ```
 
-#### Return Value
+## Return Value
 
 An indication of whether the network request comes from the developer or from the user.
 

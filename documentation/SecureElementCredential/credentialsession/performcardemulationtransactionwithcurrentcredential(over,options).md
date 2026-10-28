@@ -20,7 +20,7 @@ func performCardEmulationTransactionWithCurrentCredential(over scene: UIScene, o
 
 - [Accessing and using secure element credentials](../accessing-and-using-secure-element-credentials.md)
 
-#### Discussion
+## Discussion
 
 This call leads to the following sequence of events.
 

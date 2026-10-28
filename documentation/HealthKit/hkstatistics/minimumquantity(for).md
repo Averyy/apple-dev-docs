@@ -24,7 +24,7 @@ func minimumQuantity(for source: HKSource) -> HKQuantity?
 - (HKQuantity *) minimumQuantityForSource:(HKSource *) source;
 ```
 
-#### Return Value
+## Return Value
 
 If both the [`discreteMin`](../hkstatisticsoptions/discretemin.md) option and the [`separateBySource`](../hkstatisticsoptions/separatebysource.md) option were set, this method returns a quantity object. This object contains the minimum value from all the samples that match the query and were created by the specified source. If the statistics options were not both set, this method returns `nil`.
 

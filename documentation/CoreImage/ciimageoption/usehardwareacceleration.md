@@ -24,7 +24,7 @@ static let useHardwareAcceleration: CIImageOption
 extern CIImageOption const kCIImageUseHardwareAcceleration;
 ```
 
-#### Discussion
+## Discussion
 
 If the value for this option is:
 

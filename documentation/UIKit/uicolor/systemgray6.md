@@ -22,7 +22,7 @@ class var systemGray6: UIColor { get }
 @property (class, nonatomic, readonly) UIColor * systemGray6Color;
 ```
 
-#### Discussion
+## Discussion
 
 This color adapts to the current environment, and is close in color to [`systemBackground`](./systembackground.md). In light environments, this gray is slightly lighter than [`systemGray5`](./systemgray5.md). In dark environments, this gray is slightly darker than [`systemGray5`](./systemgray5.md).
 

@@ -21,11 +21,11 @@ func SecAccessCreate(_ descriptor: CFString, _ trustedlist: CFArray?, _ accessRe
 OSStatus SecAccessCreate(CFStringRef descriptor, CFArrayRef trustedlist, SecAccessRef*accessRef);
 ```
 
-#### Return Value
+## Return Value
 
 [`errSecSuccess`](./errsecsuccess.md) on success, or another status result on failure. See [Security Framework Result Codes](./security-framework-result-codes.md) for all possible status results.
 
-#### Discussion
+## Discussion
 
 Use this method to create a default access instance containing three ACL entries. If you don’t explicitly create and set an access instance when you create a protected keychain item, keychain services uses a default access like this one.
 
@@ -35,7 +35,7 @@ Use this method to create a default access instance containing three ACL entries
 - **Safe entry.** Applies to operations not considered secure, namely encrypting data. This ACL entry trusts all apps by default, because its array of trusted apps is set to `nil`.
 - **Restricted entry.** Applies to operations that are considered sensitive, such as decrypting, signing, deriving keys, and exporting keys. The method applies the list of apps given in the `trustedlist` parameter to this entry. If you set `trustedlist` to `nil`, the list of trusted apps contains only the calling app.
 
-##### Retrieving and Modifying ACL Entries
+### Retrieving and Modifying ACL Entries
 
 After you (or keychain services) create the access instance, you can retrieve all its ACL entries using the [`SecAccessCopyACLList(_:_:)`](./secaccesscopyacllist%28_,_%29.md) method. You can then modify any of these entries using the [`SecACLSetContents(_:_:_:_:)`](./secaclsetcontents%28_,_,_,_%29.md) method, or modify the operations for which an ACL entry is used using the [`SecACLUpdateAuthorizations(_:_:)`](./secaclupdateauthorizations%28_,_%29.md) method. You can also create additional ACL entries using the [`SecACLCreateWithSimpleContents(_:_:_:_:_:)`](./secaclcreatewithsimplecontents%28_,_,_,_,_%29.md) method. Because an ACL is always associated with an access instance, when you modify an entry or create a new one, you’re implicitly modifying the access instance as well.
 

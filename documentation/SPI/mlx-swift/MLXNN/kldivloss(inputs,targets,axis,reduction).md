@@ -17,11 +17,11 @@ Computes the Kullback-Leibler divergence loss.
 func klDivLoss(inputs: MLXArray, targets: MLXArray, axis: Int = -1, reduction: LossReduction = .none) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 Computed Kullback-Leibler divergence loss
 
-#### Discussion
+## Discussion
 
 Computes the following when the `reduction: .none`:
 
@@ -29,7 +29,7 @@ Computes the following when the `reduction: .none`:
 sum(exp(targets) * (targets - inputs), axis: axis)
 ```
 
-##### See Also
+### See Also
 
 - [Loss Functions](./losses.md)
 

@@ -27,11 +27,11 @@ class func tag(for string: String, at charIndex: Int, unit: NSLinguisticTaggerUn
 + (NSLinguisticTag) tagForString:(NSString *) string atIndex:(NSUInteger) charIndex unit:(NSLinguisticTaggerUnit) unit scheme:(NSLinguisticTagScheme) scheme orthography:(NSOrthography *) orthography tokenRange:(NSRangePointer) tokenRange;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the tag for the requested tag scheme and linguistic unit, or `nil`. If a tag is returned, this function returns by reference the range of the token to `tokenRange`.
 
-#### Discussion
+## Discussion
 
 This is a convenience method for initializing a linguistic tagger, setting the [`string`](./string.md) property, and calling the [`tag(for:at:unit:scheme:orthography:tokenRange:)`](./tag%28for,at,unit,scheme,orthography,tokenrange%29.md) method. If you analyze the same string more than once, you should create a linguistic tagger object instead of calling this method.
 

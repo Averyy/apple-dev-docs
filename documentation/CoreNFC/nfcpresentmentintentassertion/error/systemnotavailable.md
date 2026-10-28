@@ -17,7 +17,7 @@ The system is unavailable because it’s in the cool-down period.
 case systemNotAvailable
 ```
 
-#### Discussion
+## Discussion
 
 CoreNFC enforces a cool-down period after one [`NFCPresentmentIntentAssertion`](../../nfcpresentmentintentassertion.md) invalidates and before you can acquire another one. If you receive this error, wait a short time before trying to acquire a new [`NFCPresentmentIntentAssertion`](../../nfcpresentmentintentassertion.md).
 

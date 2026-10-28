@@ -31,7 +31,7 @@ func draw(_ text: GraphicsContext.ResolvedText, in rect: CGRect)
 func draw(_ text: Text, in rect: CGRect)
 ```
 
-#### Discussion
+## Discussion
 
 The current context state defines the full drawing operation. For example, the current transformation and clip shapes affect how SwiftUI draws the symbol.
 

@@ -22,7 +22,7 @@ An enumeration that specifies the moon phase kind.
 enum MoonPhase
 ```
 
-#### Overview
+## Overview
 
 Waxing and waning provide information about direction. Crescent and gibbous describe shape.
 

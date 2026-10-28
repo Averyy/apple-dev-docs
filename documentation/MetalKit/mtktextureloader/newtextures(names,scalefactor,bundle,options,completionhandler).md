@@ -28,7 +28,7 @@ func newTextures(names: [String], scaleFactor: CGFloat, bundle: Bundle?, options
 - (void) newTexturesWithNames:(NSArray<NSString *> *) names scaleFactor:(CGFloat) scaleFactor bundle:(NSBundle *) bundle options:(NSDictionary<NSString *,id> *) options completionHandler:(MTKTextureLoaderArrayCallback) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
 >

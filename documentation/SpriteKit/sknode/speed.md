@@ -29,7 +29,7 @@ var speed: CGFloat { get set }
 
 - [About Node Property Propagation](../about-node-property-propagation.md)
 
-#### Discussion
+## Discussion
 
 The default value is `1.0`, which means that all actions run at their normal speed. If you set a different speed, time appears to run faster or slower for all actions executed on the node and its descendants. For example, if you set a speed value of `2.0`, actions run twice as fast.
 

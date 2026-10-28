@@ -16,7 +16,7 @@ var testCaseCount: Int { get }
 @property (readonly) NSUInteger testCaseCount;
 ```
 
-#### Discussion
+## Discussion
 
 Must be overridden by subclasses.
 

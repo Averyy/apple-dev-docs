@@ -25,7 +25,7 @@ func SparseSolve(_ Factored: SparseOpaqueFactorization_Float, _ B: DenseMatrix_F
 static void SparseSolve(SparseOpaqueFactorization_Float Factored, DenseMatrix_Float X, DenseMatrix_Float B, void *workspace);
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to solve a system of linear equations using a factored coefficient matrix. In cases where your code calls the function frequently, create and manage the workspace that the Sparse Solvers library uses and reuse it across function calls. Reusing a workspace prevents the Sparse Solvers library from allocating the temporary storage with each call.
 

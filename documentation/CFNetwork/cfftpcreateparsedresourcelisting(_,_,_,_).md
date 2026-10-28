@@ -26,11 +26,11 @@ func CFFTPCreateParsedResourceListing(_ alloc: CFAllocator?, _ buffer: UnsafePoi
 extern CFIndex CFFTPCreateParsedResourceListing(CFAllocatorRef alloc, const UInt8 *buffer, CFIndex bufferLength, CFDictionaryRef*parsed);
 ```
 
-#### Return Value
+## Return Value
 
 The number of bytes parsed, `0` if no bytes were available for parsing, or `-1` if parsing failed.
 
-#### Discussion
+## Discussion
 
 This function examines the contents of buffer as an FTP directory listing and parses into a CFDictionary the information for a single file or folder. The CFDictionary is returned in the `parsed` parameter, and the number of bytes used from buffer is returned.
 

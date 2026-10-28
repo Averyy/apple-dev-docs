@@ -13,11 +13,11 @@ virtual IOReturn protectedSetPowerState(
  IOService *device);
 ```
 
-#### Return Value
+## Return Value
 
 Returns 0 if the power state change is complete - the number of microseconds until complete if its asynchronous.
 
-#### Overview
+## Overview
 
 This function is responsible for performing the necessary sleep and wake tasks when the system is sleeping or waking. If an outstanding power state change is in progress, it will wait until the state changes has completed. While sleeping, all audio engines are stopped before calling initiatePowerStateChange() to call performPowerStateChange() to let the driver deal with the sleep request. When waking, it determines if the device should be idle or active and continues to call initiatePowerStateChange(). If initiatePowerStateChange() indicates that the power state change is occuring asynchronously, it returns the number of microseconds. This function must be called on the IOWorkLoop, but should not be called directly.
 

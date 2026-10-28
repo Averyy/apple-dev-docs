@@ -17,7 +17,7 @@ Allocates collectable memory.
 extern void *NSAllocateCollectable(NSUInteger size, NSUInteger options);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the allocated memory, or `NULL` if the function is unable to allocate the requested memory.
 

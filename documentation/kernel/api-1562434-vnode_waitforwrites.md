@@ -15,7 +15,7 @@ Wait for the number of pending writes on a vnode to drop below a target.
 int vnode_waitforwrites(vnode_t vp, int output_target, int slpflag, int slptimeout, const char *msg);
 ```
 
-#### Return Value
+## Return Value
 
 0 for success, or an error value from msleep().
 

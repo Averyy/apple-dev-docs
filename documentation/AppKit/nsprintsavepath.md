@@ -15,7 +15,7 @@ An `NSString` object that specifies the pathname to which the job file will be s
 extern NSString * const NSPrintSavePath;
 ```
 
-#### Discussion
+## Discussion
 
 Use [`jobSavingURL`](./nsprintinfo/attributekey/jobsavingurl.md) instead.
 

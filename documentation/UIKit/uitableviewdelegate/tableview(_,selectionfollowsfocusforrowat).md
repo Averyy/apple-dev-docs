@@ -22,11 +22,11 @@ optional func tableView(_ tableView: UITableView, selectionFollowsFocusForRowAt 
 - (BOOL) tableView:(UITableView *) tableView selectionFollowsFocusForRowAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if you want to automatically select the row at the specified index path when focus moves to it; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 If the table view’s [`selectionFollowsFocus`](../uitableview/selectionfollowsfocus.md) property is [`true`](../../Swift/true.md) and you return [`false`](../../Swift/false.md) from this delegate method, focus still moves to the row when the user selects it. However, when focus moves to the row, the row doesn’t automatically select.
 

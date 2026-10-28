@@ -16,7 +16,7 @@ A value that indicates insights aren’t available on the current device.
 case unavailable
 ```
 
-#### Discussion
+## Discussion
 
 This may occur on unsupported devices (such as simulators), the app isn’t entitled to use the framework, or the framework isn’t available in a specific region.
 

@@ -16,7 +16,7 @@ Enables the session to continue capturing even after the number of captured imag
 var isOverCaptureEnabled: Bool
 ```
 
-#### Discussion
+## Discussion
 
 Note: The number of images used for on-device reconstruction will be limited to `maximumNumberOfInputImages` with any extra images skipped.
 

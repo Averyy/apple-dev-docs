@@ -19,11 +19,11 @@ func AEReplaceDescData(_ typeCode: DescType, _ dataPtr: UnsafeRawPointer!, _ dat
 OSErr AEReplaceDescData(DescType typeCode, const void *dataPtr, Size dataSize, AEDesc *theAEDesc);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 Thread safe starting in OS X v10.2.
 

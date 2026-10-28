@@ -25,11 +25,11 @@ func ColorSyncCreateCodeFragment(_ profileSequence: CFArray!, _ options: CFDicti
 extern CFTypeRefColorSyncCreateCodeFragment(CFArrayRef profileSequence, CFDictionaryRef options);
 ```
 
-#### Return Value
+## Return Value
 
 A `CFTypeRef` representing a ColorSync code fragment, or `NULL` in case of failure.
 
-#### Discussion
+## Discussion
 
 Each dictionary in `profileSequence` contains a profile object and information on the usage of the profile in the code fragment.
 

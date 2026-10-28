@@ -24,7 +24,7 @@ class MTLIOCommandQueueDescriptor
 @interface MTLIOCommandQueueDescriptor : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use this descriptor type to configure the settings of each input/output command queue that you create using [`makeIOCommandQueue(descriptor:)`](./mtldevice/makeiocommandqueue%28descriptor%29.md). To create additional input/output command queues, you can reuse a descriptor instance and optionally reconfigure its properties.
 

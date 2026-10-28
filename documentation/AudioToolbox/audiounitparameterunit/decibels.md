@@ -24,7 +24,7 @@ case decibels
 kAudioUnitParameterUnit_Decibels
 ```
 
-#### Discussion
+## Discussion
 
 Typically used as a relative measure of audio gain.
 

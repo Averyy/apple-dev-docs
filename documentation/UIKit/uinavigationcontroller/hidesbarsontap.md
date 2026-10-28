@@ -22,7 +22,7 @@ var hidesBarsOnTap: Bool { get set }
 @property (nonatomic, assign, readwrite) BOOL hidesBarsOnTap;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the navigation controller toggles the hiding and showing of its navigation bar and toolbar in response to an otherwise unhandled tap in the content area. The default value of this property is [`false`](../../Swift/false.md).
 

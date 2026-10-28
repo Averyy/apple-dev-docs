@@ -16,7 +16,7 @@ Returns a bar layout region on a given directional edge using the default system
 + (UIViewLayoutRegion *) layoutRegionForBarOnDirectionalEdge:(NSDirectionalRectEdge) edge;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: Only a single edge is allowed per region.
 

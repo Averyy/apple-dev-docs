@@ -13,7 +13,7 @@
 kINQUIRY_PERIPHERAL_QUALIFIER_Connected = 0x00
 ```
 
-#### Discussion
+## Discussion
 
 Peripheral Device is connected.
 

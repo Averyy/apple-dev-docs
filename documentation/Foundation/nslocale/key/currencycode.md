@@ -25,7 +25,7 @@ static let currencyCode: NSLocale.Key
 extern NSLocaleKey const NSLocaleCurrencyCode;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an `NSString` object; for example, `"USD"`.
 

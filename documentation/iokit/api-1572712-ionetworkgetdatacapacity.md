@@ -16,7 +16,7 @@ Get the capacity (in bytes) of a network data object.
 IOReturn IONetworkGetDataCapacity(io_connect_t conObject, IONDHandle dataHandle, UInt32 *capacityP);
 ```
 
-#### Return Value
+## Return Value
 
 kIOReturnSuccess on success, or an error code otherwise.
 

@@ -25,7 +25,7 @@ func addCacheNodes(_ cacheNodes: Set<NSAtomicStoreCacheNode>)
 - (void) addCacheNodes:(NSSet<__kindof NSAtomicStoreCacheNode *> *) cacheNodes;
 ```
 
-#### Discussion
+## Discussion
 
 You should invoke this method in a subclass during the call to [`load()`](./load%28%29.md) to register the loaded information with the store.
 

@@ -16,7 +16,7 @@ A wrapper that you use to integrate an AppKit view into your SwiftUI view hierar
 @preconcurrency protocol NSViewRepresentable : View where Self.Body == Never
 ```
 
-#### Overview
+## Overview
 
 Use an `NSViewRepresentable` instance to create and manage an [`NSView`](../AppKit/nsview.md) object in your SwiftUI interface. Adopt this protocol in one of your app’s custom instances, and use its methods to create, update, and tear down your view. The creation and update processes parallel the behavior of SwiftUI views, and you use them to configure your view with your app’s current state information. Use the teardown process to remove your view cleanly from your SwiftUI. For example, you might use the teardown process to notify other objects that the view is disappearing.
 

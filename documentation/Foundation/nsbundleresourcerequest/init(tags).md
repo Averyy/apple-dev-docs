@@ -26,7 +26,7 @@ convenience init(tags: Set<String>)
 - (instancetype) initWithTags:(NSSet<NSString *> *) tags;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized resource request.
 

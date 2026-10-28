@@ -17,7 +17,7 @@ The preferred AID specified in the transaction request is invalid.
 case invalidPreferredAID
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs when you specify preferred AIDs or RIDs that aren’t between the range of 5 to 16 bytes, or the list has too many entries.
 

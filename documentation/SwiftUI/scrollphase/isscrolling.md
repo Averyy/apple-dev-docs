@@ -21,7 +21,7 @@ Whether the scroll view is actively scrolling.
 var isScrolling: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 This convenience is equivalent to `phase != .idle`.
 

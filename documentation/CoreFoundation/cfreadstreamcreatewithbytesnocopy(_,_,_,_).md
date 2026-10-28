@@ -25,11 +25,11 @@ func CFReadStreamCreateWithBytesNoCopy(_ alloc: CFAllocator!, _ bytes: UnsafePoi
 extern CFReadStreamRefCFReadStreamCreateWithBytesNoCopy(CFAllocatorRef alloc, const UInt8 *bytes, CFIndex length, CFAllocatorRef bytesDeallocator);
 ```
 
-#### Return Value
+## Return Value
 
 The new read stream, or `NULL` on failure. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 You must open the stream, using [`CFReadStreamOpen(_:)`](./cfreadstreamopen%28_%29.md), before reading from it.
 

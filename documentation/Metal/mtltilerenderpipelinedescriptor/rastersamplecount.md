@@ -24,7 +24,7 @@ var rasterSampleCount: Int { get set }
 @property (nonatomic, readwrite) NSUInteger rasterSampleCount;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `1`. This value is used only if the pipeline render targets support multisampling. If the render targets don’t support multisampling, then this value needs to be `1`.
 

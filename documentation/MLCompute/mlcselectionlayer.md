@@ -23,7 +23,7 @@ class MLCSelectionLayer
 @interface MLCSelectionLayer : MLCLayer
 ```
 
-#### Overview
+## Overview
 
 A selection layer takes a condition tensor that acts as a mask. It determines whether the corresponding element or row in the output comes from tensor `X` (if the element in the condition is `true`) or tensor `Y` (if `false`).
 

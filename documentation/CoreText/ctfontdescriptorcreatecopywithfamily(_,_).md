@@ -25,7 +25,7 @@ func CTFontDescriptorCreateCopyWithFamily(_ original: CTFontDescriptor, _ family
 extern CTFontDescriptorRefCTFontDescriptorCreateCopyWithFamily(CTFontDescriptorRef original, CFStringRef family);
 ```
 
-#### Return Value
+## Return Value
 
 A new font descriptor with the original traits in the given family, or `NULL` if no matching font descriptor is found in the system.
 

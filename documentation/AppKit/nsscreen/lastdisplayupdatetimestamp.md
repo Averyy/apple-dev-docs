@@ -19,7 +19,7 @@ var lastDisplayUpdateTimestamp: TimeInterval { get }
 @property (readonly) NSTimeInterval lastDisplayUpdateTimestamp;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to determine how much time elapsed since the last frame update.
 

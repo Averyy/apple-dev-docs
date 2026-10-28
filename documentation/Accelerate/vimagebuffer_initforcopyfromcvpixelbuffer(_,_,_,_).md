@@ -25,11 +25,11 @@ func vImageBuffer_InitForCopyFromCVPixelBuffer(_ buffers: UnsafeMutablePointer<v
 vImage_Error vImageBuffer_InitForCopyFromCVPixelBuffer(vImage_Buffer *buffers, vImageConverterRef const converter, CVPixelBufferRef const pixelBuffer, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 The vImage library represents multiple plane Core Video pixel buffers as individual vImage buffers. Call [`vImageConverter_GetNumberOfSourceBuffers(_:)`](./vimageconverter_getnumberofsourcebuffers%28_%29.md) to instantiate the correct number of source buffers. Use this function to initialize the vImage buffers that you pass as the sources to a Core-Video-to-Core-Graphics [`vImageConverter`](./vimageconverter.md) instance.
 

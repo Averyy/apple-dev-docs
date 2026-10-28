@@ -20,7 +20,7 @@ Notifies the view controller that its view will be removed from a view hierarchy
 @preconcurrency override dynamic func viewWillDisappear(_ animated: Bool)
 ```
 
-#### Discussion
+## Discussion
 
 SwiftUI calls this method before removing the hosting controller’s root view from the view hierarchy. You can override this method to perform custom tasks associated with the disappearance of the view. If you override this method, you must call `super` at some point in your implementation.
 

@@ -24,7 +24,7 @@ func value(from string: String) -> AUValue
 - (AUValue) valueFromString:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 The parameter value obtained from the string.
 

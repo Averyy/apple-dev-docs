@@ -29,7 +29,7 @@ class PHSharedAlbumCustomizationViewController
 @interface PHSharedAlbumCustomizationViewController : NSViewController
 ```
 
-#### Overview
+## Overview
 
 This class is used to present the shared album customization view from AppKit-based view controllers.
 

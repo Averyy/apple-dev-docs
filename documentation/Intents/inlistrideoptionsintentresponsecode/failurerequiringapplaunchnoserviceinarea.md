@@ -23,7 +23,7 @@ case failureRequiringAppLaunchNoServiceInArea
 INListRideOptionsIntentResponseCodeFailureRequiringAppLaunchNoServiceInArea
 ```
 
-#### Discussion
+## Discussion
 
 Use this code when you definitively do not provide service in the requested area. Specify this code to redirect the user to your app. For temporary service disruptions, use the [`INListRideOptionsIntentResponseCode.failureRequiringAppLaunchServiceTemporarilyUnavailable`](./failurerequiringapplaunchservicetemporarilyunavailable.md) code instead. Don’t use this response code for general errors or to force the user to launch your app.
 

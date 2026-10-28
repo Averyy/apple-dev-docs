@@ -23,7 +23,7 @@ var tapCount: Int { get }
 @property (nonatomic, readonly) NSUInteger tapCount;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is an integer containing the number of taps that occurred for this touch within a predefined period of time. Use this property to evaluate whether the user single-tapped, double-tapped, or even triple-tapped a particular view or window.
 

@@ -21,7 +21,7 @@ An interface that extension point types adopt.
 protocol ExtensionPointDefining
 ```
 
-#### Overview
+## Overview
 
 The [ExtensionFoundation](./ExtensionFoundation.md) framework uses this protocol to identify types that represent extension points.
 

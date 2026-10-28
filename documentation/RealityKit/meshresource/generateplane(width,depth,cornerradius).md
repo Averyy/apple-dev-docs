@@ -21,11 +21,11 @@ Creates a new rectangle mesh with the specified dimensions in the entity’s xz-
 @preconcurrency static func generatePlane(width: Float, depth: Float, cornerRadius: Float = 0) -> MeshResource
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle mesh.
 
-#### Discussion
+## Discussion
 
 The rectangle is centered at the entity’s origin and aligned with its x and z axes. The surface normal points along the y-axis. The depth along the y-axis is 0.
 

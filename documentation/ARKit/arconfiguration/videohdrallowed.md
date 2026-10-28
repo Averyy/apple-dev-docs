@@ -20,7 +20,7 @@ var videoHDRAllowed: Bool { get set }
 @property (nonatomic, assign, readwrite) BOOL videoHDRAllowed;
 ```
 
-#### Discussion
+## Discussion
 
 Before calling this function, check whether the session configuration’s video format supports HDR first by calling [`isVideoHDRSupported`](./videoformat-swift.class/isvideohdrsupported.md).
 

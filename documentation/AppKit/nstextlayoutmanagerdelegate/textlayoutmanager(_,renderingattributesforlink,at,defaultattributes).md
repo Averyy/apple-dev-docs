@@ -19,11 +19,11 @@ optional func textLayoutManager(_ textLayoutManager: NSTextLayoutManager, render
 - (NSDictionary<NSString *,id> *) textLayoutManager:(NSTextLayoutManager *) textLayoutManager renderingAttributesForLink:(id) link atLocation:(id<NSTextLocation>) location defaultAttributes:(NSDictionary<NSString *,id> *) renderingAttributes;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary of rendering attributes for the link, or `nil` to use defaults.
 
-#### Discussion
+## Discussion
 
 Just as other rendering attributes, specifying [`NSNull`](../../Foundation/nsnull.md) removes the attribute from the final attributes used for rendering. It has priority over the general rendering attributes.
 

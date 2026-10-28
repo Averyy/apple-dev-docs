@@ -21,7 +21,7 @@ Creates a location updater with the configuration and queue that you specify.
 + (instancetype) liveUpdaterWithConfiguration:(CLLiveUpdateConfiguration) configuration queue:(dispatch_queue_t) queue handler:(void (^)(CLUpdate *update)) handler;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a location updater instance with the specified configuration, queue, and update handler.
 

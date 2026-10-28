@@ -25,7 +25,7 @@ var searchItems: [Any]? { get set }
 @property (copy, nullable) NSArray * searchItems;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to scope the metadata query to a collection of existing URLs and/or metadata items. This array contains the `NSURL` and/or `NSMetadataItem` items to be searched.
 

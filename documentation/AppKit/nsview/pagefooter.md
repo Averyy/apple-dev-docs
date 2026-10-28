@@ -20,7 +20,7 @@ var pageFooter: NSAttributedString { get }
 @property (copy, readonly) NSAttributedString * pageFooter;
 ```
 
-#### Discussion
+## Discussion
 
 A printable view class can override this property to substitute its own content in place of the default value. You should not need to access the value of this property directly. The printing system accesses it once per page during printing.
 

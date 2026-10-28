@@ -21,7 +21,7 @@ Resets random seeds using the provided randomness function.
 final func resetRandomSeeds(using randomness: () -> UInt32)
 ```
 
-#### Discussion
+## Discussion
 
 `randomness` will be called multiple times, for each of seeds used by the simulation
 

@@ -20,7 +20,7 @@ var state: CredentialSession.State { get async }
 
 - [Accessing and using secure element credentials](../accessing-and-using-secure-element-credentials.md)
 
-#### Discussion
+## Discussion
 
 Sessions start in the [`CredentialSession.State.management`](./state-swift.enum/management.md) state. Calls to the wired or card emulation APIs change the state to [`CredentialSession.State.wired(credential:)`](./state-swift.enum/wired%28credential%29.md) or [`CredentialSession.State.cardEmulation(credential:)`](./state-swift.enum/cardemulation%28credential%29.md). Leaving wired or card emulation mode returns the state to [`CredentialSession.State.management`](./state-swift.enum/management.md).
 

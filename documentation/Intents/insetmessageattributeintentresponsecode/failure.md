@@ -22,7 +22,7 @@ case failure
 INSetMessageAttributeIntentResponseCodeFailure
 ```
 
-#### Discussion
+## Discussion
 
 Use this code for both transient and unrecoverable errors that would prevent your app from modifying the messages.
 

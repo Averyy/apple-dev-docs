@@ -27,7 +27,7 @@ convenience init(row: Int, section: Int)
 + (instancetype) indexPathForRow:(NSInteger) row inSection:(NSInteger) section;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSIndexPath`](../nsindexpath.md) object.
 

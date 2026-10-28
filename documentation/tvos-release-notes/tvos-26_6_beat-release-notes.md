@@ -5,11 +5,11 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The tvOS 26.6 SDK provides support to develop tvOS apps for Apple TV devices running tvOS 26.6 Beat. The SDK comes bundled with Xcode 26.6. For information on the compatibility requirements for Xcode 26.6, see [Xcode 26.6 Release Notes](../Xcode-Release-Notes/xcode-26_6-release-notes.md).
 
-##### General
+### General
 
 There are no new release notes for this software update.
 

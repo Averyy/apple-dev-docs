@@ -4,7 +4,7 @@
 
 Displays grouped sets of information.
 
-#### Overview
+## Overview
 
 The `info` element displays displays grouped sets of data in either table or list form, depending on its parent element. For example, in an `infoList` element, the `info` element is often used to display a list of directors and actors for a product. Here’s an example that shows the director and main actors for a movie.
 
@@ -27,7 +27,7 @@ The `info` element displays displays grouped sets of data in either table or lis
 </infoList>
 ```
 
-##### Subelements of info
+### Subelements of info
 
 - [button](./button.md)
 - [description](./description.md)
@@ -35,7 +35,7 @@ The `info` element displays displays grouped sets of data in either table or lis
 - [row](./row.md)
 - [text](./text.md)
 
-##### Elements that Use info
+### Elements that Use info
 
 - [infoList](./infolist.md)
 - [infoTable](./infotable.md)

@@ -20,11 +20,11 @@ func attachmentBounds(for textContainer: NSTextContainer?, proposedLineFragment 
 - (CGRect) attachmentBoundsForTextContainer:(NSTextContainer *) textContainer proposedLineFragment:(CGRect) lineFrag glyphPosition:(CGPoint) position characterIndex:(NSUInteger) charIndex;
 ```
 
-#### Return Value
+## Return Value
 
 The [`bounds`](../nstextattachment/bounds.md) rectangle of the text attachment if not [`CGRectZero`](../../CoreGraphics/cgrectzero.md); otherwise, the rectangle of the [`size`](../../UIKit/uiimage/size.md) property of the attachment’s [`image`](../nstextattachment/image.md) property.
 
-#### Discussion
+## Discussion
 
 Conforming objects can implement more sophisticated logic for negotiating the attachment bounds based on the available container space and proposed line fragment rectangle.
 

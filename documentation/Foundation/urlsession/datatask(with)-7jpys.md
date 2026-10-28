@@ -25,11 +25,11 @@ func dataTask(with request: URLRequest) -> URLSessionDataTask
 - (NSURLSessionDataTask *) dataTaskWithRequest:(NSURLRequest *) request;
 ```
 
-#### Return Value
+## Return Value
 
 The new session data task.
 
-#### Discussion
+## Discussion
 
 By creating a task based on a request object, you can tune various aspects of the task’s behavior, including the cache policy and timeout interval.
 

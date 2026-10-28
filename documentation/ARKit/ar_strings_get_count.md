@@ -15,7 +15,7 @@ Returns the number of strings in this collection.
 extern size_t ar_strings_get_count(ar_strings_t strings);
 ```
 
-#### Return Value
+## Return Value
 
 Count of strings in the collection.
 

@@ -24,7 +24,7 @@ class AVAsynchronousVideoCompositionRequest
 @interface AVAsynchronousVideoCompositionRequest : NSObject
 ```
 
-#### Overview
+## Overview
 
 The video compositor must adopt the [`AVVideoCompositing`](./avvideocompositing.md) protocol.
 

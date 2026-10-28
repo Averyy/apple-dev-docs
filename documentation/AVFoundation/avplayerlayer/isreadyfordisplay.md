@@ -24,7 +24,7 @@ var isReadyForDisplay: Bool { get }
 @property (nonatomic, readonly, getter=isReadyForDisplay) BOOL readyForDisplay;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to determine when to show or animate a player layer into view. You can display a player layer while this property value is [`false`](../../Swift/false.md), but the layer doesn’t present any content until the value becomes [`true`](../../Swift/true.md).
 

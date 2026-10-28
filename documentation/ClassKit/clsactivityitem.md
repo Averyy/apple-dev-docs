@@ -23,7 +23,7 @@ class CLSActivityItem
 @interface CLSActivityItem : CLSObject
 ```
 
-#### Overview
+## Overview
 
 You don’t typically use an instance of this class directly. Instead, use one of its subclasses to represent a particular activity metric. For example, use a [`CLSScoreItem`](./clsscoreitem.md) to add a score to a [`CLSContextType.quiz`](./clscontexttype/quiz.md) activity.
 

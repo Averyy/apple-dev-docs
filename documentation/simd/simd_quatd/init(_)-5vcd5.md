@@ -12,7 +12,7 @@ Creates a new quaternion from a 4 x 4 rotation matrix.
 init(_ rotationMatrix: simd_double4x4)
 ```
 
-#### Discussion
+## Discussion
 
 This function ignores the last row and the last column of `rotationMatrix`, and is the equivalent of passing the upper-left 3 x 3 submatrix to [`init(_:)`](./init%28_%29-791zk.md).
 

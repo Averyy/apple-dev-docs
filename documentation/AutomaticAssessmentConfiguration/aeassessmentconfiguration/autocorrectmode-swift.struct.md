@@ -22,7 +22,7 @@ struct AutocorrectMode
 enum AEAutocorrectMode : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 Use one or more of the autocorrect modes to set the [`autocorrectMode`](./autocorrectmode-swift.property.md) property of an [`AEAssessmentConfiguration`](../aeassessmentconfiguration.md) instance. For example, you can enable both spelling and punctuation corrections by combining [`spelling`](./autocorrectmode-swift.struct/spelling.md) and [`punctuation`](./autocorrectmode-swift.struct/punctuation.md):
 

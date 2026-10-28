@@ -15,7 +15,7 @@ A boolean that indicates whether the Player has been instructed to play.
 readonly attribute Boolean wantsToPlay;
 ```
 
-#### Discussion
+## Discussion
 
 This property indicates whether the Player has been instructed to play. If true, the Player has been instructed to play, although it may not actually be playing. This occurs when the user or developer has invoked [`play`](./play.md) without all the required resources having loaded yet. When the resources are done loading, if `wantsToPlay` is still `true`, playback begins automatically.
 

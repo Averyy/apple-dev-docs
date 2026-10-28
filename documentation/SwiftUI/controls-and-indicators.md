@@ -5,7 +5,7 @@
 
 Display values and get user selections.
 
-#### Overview
+## Overview
 
 SwiftUI provides controls that enable user interaction specific to each platform and context. For example, people can initiate events with buttons and links, or choose among a set of discrete values with different kinds of pickers. You can also display information to the user with indicators like progress views and gauges.
 

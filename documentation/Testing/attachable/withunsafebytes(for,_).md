@@ -21,11 +21,11 @@ borrowing func withUnsafeBytes<R>(for attachment: borrowing Attachment<Self>, _ 
 
 - [Migrating a test from XCTest](../migratingfromxctest.md)
 
-#### Return Value
+## Return Value
 
 Whatever is returned by `body`.
 
-#### Discussion
+## Discussion
 
 > **Throws**: Whatever is thrown by `body`, or any error that prevented the creation of the buffer.
 

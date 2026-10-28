@@ -23,7 +23,7 @@ var minFreeDiskSpaceLimit: Int64 { get set }
 @property (nonatomic) int64_t minFreeDiskSpaceLimit;
 ```
 
-#### Discussion
+## Discussion
 
 This property specifies a hard lower limit on the amount of free space that must remain on a target volume for recording to continue. Recording is stopped when the limit is reached and the [`fileOutput(_:didFinishRecordingTo:from:error:)`](../avcapturefileoutputrecordingdelegate/fileoutput%28_,didfinishrecordingto,from,error%29.md) delegate method is invoked with an appropriate error.
 

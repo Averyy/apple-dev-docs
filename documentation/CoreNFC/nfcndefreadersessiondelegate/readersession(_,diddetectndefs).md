@@ -22,7 +22,7 @@ func readerSession(_ session: NFCNDEFReaderSession, didDetectNDEFs messages: [NF
 - (void) readerSession:(NFCNDEFReaderSession *) session didDetectNDEFs:(NSArray<NFCNDEFMessage *> *) messages;
 ```
 
-#### Discussion
+## Discussion
 
 The reader session calls this method when it detects NFC tags with NDEF messages in the polling sequence. The session restarts polling when the detected tags are no longer within reading range of the iOS device.
 

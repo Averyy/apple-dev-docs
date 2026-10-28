@@ -19,11 +19,11 @@ The behavior of the drag, proposed by the dragging source. A value that describe
 struct DragConfiguration
 ```
 
-#### Overview
+## Overview
 
 Pass a `DragConfiguration` to the [`dragConfiguration(_:)`](./view/dragconfiguration%28_%29.md) modifier to declare which operations — copy, move, or delete — a view supports when it is dragged.
 
-##### Opting in to move
+### Opting in to move
 
 By default, only copy is allowed. To support drag-to-move, where the source item is removed after a successful drop, initialize with `allowMove: true`:
 
@@ -39,7 +39,7 @@ On macOS, users can override the proposed operation during a drag by holding mod
 
 Modifier keys only take effect when the source supports the corresponding operation. For example, holding ⌘ has no effect unless `allowMove` is `true`.
 
-##### Responding to the performed operation
+### Responding to the performed operation
 
 `DragConfiguration` communicates *suggested* operations to drop destinations, but each destination chooses which operation to perform. To detect which operation was ultimately performed — for example, to remove the source item after a successful move — observe the drag session using [`onDragSessionUpdated(_:)`](./view/ondragsessionupdated%28_%29.md):
 

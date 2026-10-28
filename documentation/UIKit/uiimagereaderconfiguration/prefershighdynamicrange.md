@@ -20,7 +20,7 @@ A Boolean value that indicates whether the image reader should decode the image 
 @property (nonatomic, assign, readwrite) BOOL prefersHighDynamicRange;
 ```
 
-#### Discussion
+## Discussion
 
 This property doesn’t affect images that only decode in either SDR or HDR. The default value depends on the system capabilities.
 

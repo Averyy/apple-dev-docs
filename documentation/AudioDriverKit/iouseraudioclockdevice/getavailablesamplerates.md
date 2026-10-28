@@ -15,11 +15,11 @@ Gets the available sample rates of the clock device.
 size_t GetAvailableSampleRates(double *out_sample_rates, size_t in_num_rates);
 ```
 
-#### Return Value
+## Return Value
 
 A `size_t` that indicates how many rates were set in the `out_sample_rates` buffer.
 
-#### Discussion
+## Discussion
 
 This method synchronizes by using the work queue created by the object.
 

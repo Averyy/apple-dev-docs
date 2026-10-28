@@ -14,7 +14,7 @@
 kIOPMNullAssertionID = 0
 ```
 
-#### Discussion
+## Discussion
 
 This value represents a non-initialized assertion ID.
 

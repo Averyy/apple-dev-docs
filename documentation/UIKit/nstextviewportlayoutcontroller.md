@@ -27,7 +27,7 @@ class NSTextViewportLayoutController
 
 - [Managing viewport layout and attachment reuse in text views](./managing-viewport-layout-and-attachment-reuse-in-a-text-view-subclass.md)
 
-#### Overview
+## Overview
 
 A viewport is a rectangular area within a flipped coordinate system expanding along the y-axis. With text contents, lines advance expanding the view in the current writing direction. The viewport defines the active area where the framework lays out text fragments. In most cases, the area corresponds to the user visible area with an additional over-scroll region.
 

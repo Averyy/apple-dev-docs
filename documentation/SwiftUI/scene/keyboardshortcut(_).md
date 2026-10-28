@@ -20,11 +20,11 @@ func keyboardShortcut(_ shortcut: KeyboardShortcut?) -> some Scene
 
 - [Building and customizing the menu bar with SwiftUI](../building-and-customizing-the-menu-bar-with-swiftui.md)
 
-#### Return Value
+## Return Value
 
 A scene that can be presented with a keyboard shortcut.
 
-#### Discussion
+## Discussion
 
 A scene’s keyboard shortcut is bound to the command it adds for creating new windows (in the case of `WindowGroup` and `DocumentGroup`) or bringing a singleton window forward (in the case of `Window` and, on macOS, `Settings` and `UtilityWindow`). Pressing the keyboard shortcut is equivalent to selecting the menu command.
 

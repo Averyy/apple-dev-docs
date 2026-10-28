@@ -28,7 +28,7 @@ var detectedTypes: Set<SCSensitivityAnalysis.ContentType> { get }
 - [Detecting sensitive content in media and providing intervention options](../detecting-nudity-in-media-and-providing-intervention-options.md)
 - [Testing your app’s response to sensitive media](../testing-your-app-s-response-to-sensitive-media.md)
 
-#### Discussion
+## Discussion
 
 The Sensitive Content Analysis framework sets this property when analysis determines that media contains sensitive content. Check this property to determine the specific types of sensitive content, such as [`sexuallyExplicit`](./contenttype/sexuallyexplicit.md) or [`goreOrViolence`](./contenttype/goreorviolence.md). The framework populates this set only when [`isSensitive`](./issensitive.md) is `true`.
 

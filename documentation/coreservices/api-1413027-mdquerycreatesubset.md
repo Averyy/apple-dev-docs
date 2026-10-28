@@ -19,7 +19,7 @@ func MDQueryCreateSubset(_ allocator: CFAllocator!, _ query: MDQuery!, _ querySt
 MDQueryRef MDQueryCreateSubset(CFAllocatorRef allocator, MDQueryRef query, CFStringRef queryString, CFArrayRef valueListAttrs, CFArrayRef sortingAttrs);
 ```
 
-#### Return Value
+## Return Value
 
 An MDQueryRef, or `NULL` on failure. If the query string is empty or malformed the function returns NULL.
 

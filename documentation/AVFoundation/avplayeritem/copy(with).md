@@ -26,7 +26,7 @@ func copy(with zone: NSZone? = nil) -> Any
 - (id) copyWithZone:(NSZone *) zone;
 ```
 
-#### Return Value
+## Return Value
 
 A copy of the original asset instance.
 

@@ -25,7 +25,7 @@ class MXCPUExceptionDiagnostic
 @interface MXCPUExceptionDiagnostic : MXDiagnostic
 ```
 
-#### Overview
+## Overview
 
 A CPU exception occurs when your app uses an excessive amount of CPU time over a short period.
 

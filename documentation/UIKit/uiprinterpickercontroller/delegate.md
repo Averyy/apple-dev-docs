@@ -22,7 +22,7 @@ weak var delegate: (any UIPrinterPickerControllerDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<UIPrinterPickerControllerDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 Use the delegate object to filter out printers from the displayed list and to respond to events that occur during the presentation of the printer picker. The object you assign to this property must conform to the [`UIPrinterPickerControllerDelegate`](../uiprinterpickercontrollerdelegate.md) protocol.
 

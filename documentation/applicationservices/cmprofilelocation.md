@@ -17,7 +17,7 @@ typedef struct CMProfileLocation {
 } CMProfileLocation;
 ```
 
-#### Overview
+## Overview
 
 Your application passes a profile location structure of type `CMProfileLocation` when it calls:
 

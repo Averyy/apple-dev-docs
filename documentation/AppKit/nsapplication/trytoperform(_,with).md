@@ -19,11 +19,11 @@ func tryToPerform(_ action: Selector, with object: Any?) -> Bool
 - (BOOL) tryToPerform:(SEL) action with:(id) object;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if either the receiver or its delegate can accept the specified selector; otherwise, [`false`](../../Swift/false.md). This method also returns [`false`](../../Swift/false.md) if `aSelector` is `nil`.
 
-#### Discussion
+## Discussion
 
 The receiver tries to perform the method `aSelector` using its inherited [`tryToPerform(_:with:)`](../nsresponder/trytoperform%28_,with%29.md) method of [`NSResponder`](../nsresponder.md). If the receiver doesn’t perform `aSelector`, the delegate is given the opportunity to perform it using its inherited [`perform(_:with:)`](../../ObjectiveC/nsobjectprotocol/perform%28_,with%29.md) method of [`NSObject`](../../ObjectiveC/nsobject-swift.class.md).
 

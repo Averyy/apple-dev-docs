@@ -16,8 +16,8 @@
 ## Declaration
 
 ```swift
-@objc
-(MPAppEntityIdentifier) final class MPAppEntityIdentifier
+@objc(MPAppEntityIdentifier)
+final class MPAppEntityIdentifier
 ```
 
 ## Topics

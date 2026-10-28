@@ -25,7 +25,7 @@ func predictionsWithConfidence(from texts: [String]) throws -> [[String : Double
 func predictionsWithConfidence(from texts: MLDataColumn<String>) throws -> MLDataColumn<[String : Double]>
 ```
 
-#### Return Value
+## Return Value
 
 An array of dictionaries. Each dictionary corresponds to a string in the input array. A dictionary entry contains a label prediction with its associated confidence score.
 

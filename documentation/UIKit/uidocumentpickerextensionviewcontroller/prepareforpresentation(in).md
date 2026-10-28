@@ -24,7 +24,7 @@ func prepareForPresentation(in mode: UIDocumentPickerMode)
 - (void) prepareForPresentationInMode:(UIDocumentPickerMode) mode;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method when a host app presents a document picker view controller for your Document Picker extension. Override this method to provide a custom user interface based on the provided mode.
 

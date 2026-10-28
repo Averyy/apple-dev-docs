@@ -5,7 +5,7 @@
 
 Present your content onscreen and handle user input and events.
 
-#### Overview
+## Overview
 
 Views and controls are the building blocks of your app’s user interface.
 

@@ -25,11 +25,11 @@ func CMBufferQueueTestTrigger(_ queue: CMBufferQueue, triggerToken: CMBufferQueu
 extern Boolean CMBufferQueueTestTrigger(CMBufferQueueRef queue, CMBufferQueueTriggerToken triggerToken);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean indicating whether the trigger condition is True.
 
-#### Discussion
+## Discussion
 
 [CMBufferQueue](./cmbufferqueue-api.md) always returns the condition’s current status. The trigger callback will only be called when the condition goes from false to true. The `triggerToken` must be one that has been installed on this queue.
 

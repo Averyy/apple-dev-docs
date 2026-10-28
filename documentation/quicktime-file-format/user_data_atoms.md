@@ -5,7 +5,7 @@
 
 Atoms you use to define and store data associated with a QuickTime object.
 
-#### Overview
+## Overview
 
 User data atoms allow you to define and store data associated with a QuickTime object, such as a movie `'moov'`, track `'trak'`, or media `'mdia'`. This includes both information that QuickTime looks for, such as copyright information or whether a movie should loop, and arbitrary information — provided by and for your application — that QuickTime simply ignores.
 
@@ -15,7 +15,7 @@ The user data atom has an atom type of `'udta'`. Inside the user data atom is a 
 
 This section describes the data atoms that QuickTime recognizes. You may create new data atom types that your own application recognizes. Applications should ignore any data atom types that they do not recognize.
 
-#### User data list entry types
+## User data list entry types
 
 The user data list entry types are as follows.
 
@@ -67,7 +67,7 @@ The user-data items labelled “keywords” and marked as “For Sorting” are 
 
 The window location, looping, play selection only, play all frames, and print to video atoms control the way QuickTime displays a movie. These atoms are interpreted only if the user data atom’s immediate parent is a movie atom (`'moov'`). If they are included as part of a track atom’s user data, they are ignored.
 
-#### User data text strings and language codes
+## User data text strings and language codes
 
 All user data list entries whose type begins with the © character (ASCII `169`) are defined to be international text. These list entries must contain a list of text strings with associated language codes. By storing multiple versions of the same text, a single user data text item can contain translations for different languages.
 
@@ -79,7 +79,7 @@ User data text strings may use either Macintosh text encoding or Unicode text en
 
 ISO language codes are three-character codes. In order to fit inside a 16-bit field, the characters must be packed into three 5-bit subfields. This packing is described in [Language code values](./language_code_values.md).
 
-#### Media characteristic tags
+## Media characteristic tags
 
 A track (`'trak'`) atom’s user data atom may contain zero or more media characteristic tag atoms (`'tagc'`).
 

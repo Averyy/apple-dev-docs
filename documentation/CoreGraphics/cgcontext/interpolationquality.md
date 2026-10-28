@@ -25,7 +25,7 @@ var interpolationQuality: CGInterpolationQuality { get set }
 extern CGInterpolationQuality CGContextGetInterpolationQuality(CGContextRef c);
 ```
 
-#### Discussion
+## Discussion
 
 Interpolation quality is a graphics state parameter that provides a hint for the level of quality to use for image interpolation (for example, when scaling the image). Not all contexts support all interpolation quality levels.
 

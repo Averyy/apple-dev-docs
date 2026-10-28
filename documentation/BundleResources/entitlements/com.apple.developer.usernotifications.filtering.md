@@ -16,13 +16,13 @@ Enable receiving notifications without displaying the notification to the user.
 - **Name**: `com.apple.developer.usernotifications.filtering`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 This entitlement allows a notification service extension to receive remote notifications without displaying the notification to the user. To apply for this entitlement, see [Request Notification Service Entitlement](https://developer.apple.com/contact/request/notification-service).
 
 After you receive permission to use the entitlement, add [`com.apple.developer.usernotifications.filtering`](./com.apple.developer.usernotifications.filtering.md) to the entitlements file in the Notification Service Extension target. This allows you to silence push notifications after your extension receives them.
 
-##### Silence Push Notifications
+### Silence Push Notifications
 
 To suppress a notification’s alert, create an empty [`UNNotificationContent`](../../UserNotifications/unnotificationcontent.md) object in your extension’s [`didReceive(_:withContentHandler:)`](../../UserNotifications/unnotificationserviceextension/didreceive%28_,withcontenthandler%29.md) method, and pass it to the content handler. Don’t specify a title, subtitle, body, attachments, or sound for the content.
 

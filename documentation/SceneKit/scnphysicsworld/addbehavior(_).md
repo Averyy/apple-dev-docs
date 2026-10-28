@@ -25,7 +25,7 @@ func addBehavior(_ behavior: SCNPhysicsBehavior)
 - (void) addBehavior:(SCNPhysicsBehavior *) behavior;
 ```
 
-#### Discussion
+## Discussion
 
 Physics behaviors constrain or modify the effects of the physics simulation on sets of physics bodies. For example, the [`SCNPhysicsHingeJoint`](../scnphysicshingejoint.md) behavior causes two bodies to move as if connected by a hinge that pivots around a specific axis, and the [`SCNPhysicsVehicle`](../scnphysicsvehicle.md) behavior causes a body to roll like a car or other wheeled vehicle.
 

@@ -5,7 +5,7 @@
 
 Add actions to an Xcode Cloud workflow to build, test, analyze, and archive your app or framework when it performs a build.
 
-#### Overview
+## Overview
 
 With Xcode Cloud, you can create custom workflows to adopt a flexible continuous integration and delivery (CI/CD) practice. For example, configure a workflow that verifies changes by building and testing your app or framework, a workflow that performs in-depth verifications, another workflow to regularly deliver a new version of your app to testers, and so on. At the core of each workflow are the actions Xcode Cloud performs during a build.
 
@@ -15,7 +15,7 @@ You need to use Xcode to initially configure your project or workspace to use Xc
 
 For additional information about Xcode Cloud workflows, see [Explore Xcode Cloud workflows](https://developer.apple.com/wwdc21/10268) and [Customize your advanced Xcode Cloud workflows](https://developer.apple.com/wwdc21/10269).
 
-##### Review actions
+### Review actions
 
 A workflow can perform one or many actions that match your project or workflow’s scheme actions. Choose from the following actions:
 
@@ -41,7 +41,7 @@ When Xcode Cloud performs an action, it:
 
 > **Note**: Xcode Cloud performs each action separately in a temporary build environment. As a result, an action’s artifacts might not be available to other actions. For example, a test action’s test result bundle isn’t available to other actions.
 
-##### Add an action to a workflow
+### Add an action to a workflow
 
 To add an action to a workflow, first open or create a workflow in Xcode or in the Xcode Cloud tab on the [App Store Connect](https://appstoreconnect.apple.com) website. Click the Add button (+) next to Actions, choose an action, enter required information, choose from available settings, and save the workflow. Then, manually start a new build or wait for Xcode Cloud to start a new build.
 
@@ -49,7 +49,7 @@ The following screenshot shows Xcode’s Edit Workflow sheet for a workflow that
 
 ![A screenshot of Xcode’s Edit Workflow sheet for a workflow that performs all four available actions.](https://developer.apple.com/tutorials/images/com.apple.Xcode/Configuring-Your-Xcode-Cloud-Workflow-s-Actions-2@2x.png)
 
-##### Add a build action
+### Add a build action
 
 Verifying that a change always compiles is one of the key tasks of a CI/CD. With Xcode Cloud, you can perform this verification automatically with a build action.
 
@@ -66,7 +66,7 @@ The following screenshot shows an Xcode Cloud workflow for the [Fruta app](../Sw
 
 When Xcode Cloud performs a build action, it accesses your source code and runs the `xcodebuild build` command to create the build product. Upon completion, Xcode Cloud makes the following artifacts available: the build product, build logs, and the result bundle.
 
-##### Add a test action
+### Add a test action
 
 Verifying a change by running your tests is another key task of a CI/CD practice. While every project comes with its unique requirements, it usually makes sense to configure two workflows that perform a test action:
 
@@ -96,7 +96,7 @@ When Xcode Cloud completes the test action, it makes test products and the resul
 
 For additional information on using Xcode Cloud to run your tests, see [Author fast and reliable tests for Xcode Cloud](https://developer.apple.com/wwdc22/110361).
 
-##### Add an analyze action
+### Add an analyze action
 
 In addition to building and testing your code, analyzing it with Xcode can help you verify that your code is free from memory leaks and other issues. However, because analyzing code takes time, you might not do it regularly, causing issues to accumulate. Adding an analyze action to an Xcode Cloud workflow ensures you regularly analyze your code to identify errors before they become issues.
 
@@ -109,7 +109,7 @@ To add an analyze action to a workflow:
 
 When Xcode Cloud performs the analyze action, it accesses your source code and runs the `xcodebuild analyze` command to perform static code analysis. Upon completion, Xcode Cloud makes the build logs available as artifacts.
 
-##### Add an archive action
+### Add an archive action
 
 When you’re ready to distribute your app or framework to testers or to release it, you typically archive your app or framework with Xcode. To automate this task, add the archive action to an Xcode Cloud workflow. In fact, the archive action is a requirement for distributing a new version of your app to testers with TestFlight or for release on the App Store.
 

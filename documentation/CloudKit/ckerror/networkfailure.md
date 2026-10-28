@@ -21,7 +21,7 @@ An error that occurs when a network is available, but CloudKit is inaccessible.
 static var networkFailure: CKError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 You can retry network failures immediately, but have your app implement a backoff period so that it doesn’t attempt the same operation repeatedly.
 

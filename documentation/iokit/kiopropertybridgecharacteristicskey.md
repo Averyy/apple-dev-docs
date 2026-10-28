@@ -14,7 +14,7 @@
 #define kIOPropertyBridgeCharacteristicsKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is used to define Bridge Characteristics for a particular devices's bridge chipset. It has an associated dictionary which lists the bridge characteristics.
 

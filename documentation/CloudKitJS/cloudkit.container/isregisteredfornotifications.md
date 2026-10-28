@@ -15,7 +15,7 @@ Boolean value indicating whether this container is registered to receive push no
 attribute Boolean isRegisteredForNotifications;
 ```
 
-#### Discussion
+## Discussion
 
 `true` if the container is registered to receive push notifications; otherwise, `false`.
 

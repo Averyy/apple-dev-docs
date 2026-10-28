@@ -25,7 +25,7 @@ extern MTLDeviceNotificationName const MTLDeviceRemovalRequestedNotification;
 
 - [Handling external GPU additions and removals](../handling-external-gpu-additions-and-removals.md)
 
-#### Discussion
+## Discussion
 
 This notification tells your app to stop using an [`MTLDevice`](../mtldevice.md) instance by releasing any objects and resources your app created with it.
 

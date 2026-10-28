@@ -29,7 +29,7 @@ Boolean SecKeyVerifySignature(SecKeyRef key, SecKeyAlgorithm algorithm, CFDataRe
 
 - [Signing and Verifying](./signing-and-verifying.md)
 
-#### Return Value
+## Return Value
 
 A Boolean indicating whether or not the data and signature are intact.
 

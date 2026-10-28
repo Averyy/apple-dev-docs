@@ -5,7 +5,7 @@
 
 Notify players of match events by sending messages and game data.
 
-#### Overview
+## Overview
 
 GameKit provides several APIs for you to communicate events and send messages in your turn-based games. You can include a message and custom game data in the [`GKTurnBasedMatch`](./gkturnbasedmatch.md) object passed between active participants. You can also send a notification to other participants when they’re not running your game.
 
@@ -13,7 +13,7 @@ To send other types of data between players when they’re not taking their turn
 
 > ❗ **Important**:  The code listings in this article use GameKit asynchronous methods that you invoke from an `async` method or within a `Task` structure. For details on asynchronous flows, see [Concurrency](https://docs.swift.org/swift-book/LanguageGuide/Concurrency.html).
 
-##### Pass messages from the current participant
+### Pass messages from the current participant
 
 You can send localized or non-localized messages from the current participant to others in a turn-based match using the [`GKTurnBasedMatch`](./gkturnbasedmatch.md) object. If the game isn’t running or is in the background, the message you provide appears immediately at the top of the screen as a notification. If the game is in the foreground, get the message from the match object GameKit passes to participants and display it in your own interface.
 
@@ -30,7 +30,7 @@ If the game is in the foreground, GameKit invokes this method but passes [`false
 
 To localize a message, add the key you pass to the [`setLocalizableMessageWithKey(_:arguments:)`](./gkturnbasedmatch/setlocalizablemessagewithkey%28_,arguments%29.md) method and a placeholder translation to a `.strings` file in your project (for example, the default `Localizable.strings` file). For more information on adapting your game for different languages and regions, see [Localization](../Xcode/localization.md).
 
-##### Send messages from any participant
+### Send messages from any participant
 
 Send a localized message from any participant to others using a Game Center notification. For example, send a reminder to the current participant from another participant who is waiting for them to take their turn. GameKit sends the reminder to the participants as a push notification that doesn’t interrupt their gameplay. The notification only appears when the game isn’t running — it doesn’t appear if the participant runs the game in either the foreground or background.
 

@@ -21,7 +21,7 @@ func createSnapshotImage(ofType type: String!) -> Any!
 - (id) createSnapshotImageOfType:(NSString *) type;
 ```
 
-#### Return Value
+## Return Value
 
 The snapshot image in the provided image type. You are responsible for releasing this object when you no longer need it.
 

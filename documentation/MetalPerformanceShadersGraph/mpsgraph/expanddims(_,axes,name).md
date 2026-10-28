@@ -24,11 +24,11 @@ func expandDims(_ tensor: MPSGraphTensor, axes: [NSNumber], name: String?) -> MP
 - (MPSGraphTensor *) expandDimsOfTensor:(MPSGraphTensor *) tensor axes:(NSArray<NSNumber *> *) axes name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object.
 
-#### Discussion
+## Discussion
 
 Expands the tensor, inserting dimensions with size 1 at specified axes.
 

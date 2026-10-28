@@ -22,7 +22,7 @@ func save(arrays: [String : MLXArray], metadata: [String : String] = [:], url: U
 - [Converting From Python](./converting-python.md)
 - [Lazy Evaluation](./lazy-evaluation.md)
 
-##### See Also
+### See Also
 
 - [`save(arrays:metadata:url:stream:)`](./save%28arrays,metadata,url,stream%29.md)
 - [`loadArray(url:stream:)`](./loadarray%28url,stream%29.md)

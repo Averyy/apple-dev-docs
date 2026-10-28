@@ -25,7 +25,7 @@ func CFLocaleCreate(_ allocator: CFAllocator!, _ localeIdentifier: CFLocaleIdent
 extern CFLocaleRefCFLocaleCreate(CFAllocatorRef allocator, CFLocaleIdentifier localeIdentifier);
 ```
 
-#### Return Value
+## Return Value
 
 A new locale that corresponds to the arbitrary locale identifier `localeIdentifier`. Returns `NULL` if there was a problem creating the object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

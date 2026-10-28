@@ -23,7 +23,7 @@ var widthAnchor: NSLayoutDimension { get }
 @property (nonatomic, strong, readonly) NSLayoutDimension * widthAnchor;
 ```
 
-#### Discussion
+## Discussion
 
 Use this anchor to create constraints with the layout guide’s width. You can combine this anchor only with other [`NSLayoutDimension`](../nslayoutdimension.md) anchors. For more information, see [`NSLayoutAnchor`](../nslayoutanchor.md).
 

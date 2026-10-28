@@ -24,7 +24,7 @@ func deactivate()
 - (void) deactivate;
 ```
 
-#### Discussion
+## Discussion
 
 When you call this function, the framework restores the group’s default state by removing the preset’s settings. The settings fade over the [`timeToReset`](./timetoreset.md) duration, and the engine removes the preset from [`activeGroupPreset`](../phaseengine/activegrouppreset.md).
 

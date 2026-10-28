@@ -5,7 +5,7 @@
 
 Create a two-way association between your app and your website to enable universal links, Handoff, App Clips, and shared web credentials.
 
-#### Overview
+## Overview
 
 The system uses associated domains to initiate a secure association between your app and specific domains so they can share saved passwords, perform Handoff activities, and support universal links that allow users to open your app in a specific context and quickly complete their current task. To create such an association, you configure your app with the necessary entitlements by using Xcode to define associated domains, and then serve a special file from your web server that the system requires in order to verify those entitlements.
 
@@ -17,7 +17,7 @@ If not already present, Xcode updates your target’s entitlements file to inclu
 
 > **Note**: If you later remove the Associated Domains capability in Xcode, you must manually update your App ID’s configuration in your developer account to fully disable the feature.
 
-##### Define a service and its associated domain
+### Define a service and its associated domain
 
 When you want your app and one or more of your websites to interact using predefined services, define an associated domain by performing the following steps. Xcode automatically updates the `com.apple.developer.associated-domains` array in your target’s entitlements file to include those you define.
 
@@ -50,13 +50,13 @@ The following table describes the services that associated domains support:
 | `activitycontinuation` | If your domain supports Handoff, see [Web Browser-to-Native App Handoff](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/Handoff/AdoptingHandoff/AdoptingHandoff.html#//apple_ref/doc/uid/TP40014338-CH2-SW10) for more information. |
 | `appclips` | If your domain supports App Clips, see [Associating your App Clip with your website](../AppClip/associating-your-app-clip-with-your-website.md) for more information. |
 
-##### Provide an Apple App Site Association file
+### Provide an Apple App Site Association file
 
 When the user installs your app that contains associated domains, the system fetches the corresponding *Apple App Site Association* (AASA) file from an Apple-managed content delivery network (CDN) and uses its JSON contents to verify those associated domains. If the CDN doesn’t store a copy of that file, or has an outdated version, it automatically connects to your server and retrieves the latest version.
 
 After you define your app’s associated domains in Xcode, you must create this file and serve it using HTTPS from your website’s `.well-known` directory. For more information, see [Add the associated domain file to your website](./supporting-associated-domains.md#Add-the-associated-domain-file-to-your-website).
 
-##### Enable alternate mode for unreachable servers
+### Enable alternate mode for unreachable servers
 
 If you use a private web server while developing your app that’s unreachable from the public internet, enable *alternate mode* — an option you specify that allows the system to bypass Apple’s CDN and fetch the AASA file directly from your web server.
 

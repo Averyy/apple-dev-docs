@@ -24,7 +24,7 @@ var emissionLatitude: CGFloat { get set }
 @property CGFloat emissionLatitude;
 ```
 
-#### Discussion
+## Discussion
 
 The emission latitude is the orientation of the emission angle from the z-axis. It is also referred to as the colatitude.
 

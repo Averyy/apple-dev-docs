@@ -15,7 +15,7 @@ An object that describes a system framework error.
 object UnderlyingError
 ```
 
-#### Discussion
+## Discussion
 
 The client depends on a number of system frameworks that manage user interaction and media playback, each of which can generate its own errors. For example, if your service provides a [`Content`](./content.md) object that contains a malformed or expired URL, the [AVFoundation](../AVFoundation/AVFoundation.md) framework generates an error when it attempts to load that URL. The client uses this object to provide details of the framework error when it reports the playback failure to your service. For more information, see [`Recover from Content Playback Failure`](./contentplaybackfailure.md).
 

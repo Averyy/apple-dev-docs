@@ -21,11 +21,11 @@ Initializes a newly allocated set with members taken from the specified list of 
 - (instancetype) initWithObjects:(ObjectType) firstObj;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized ordered set containing the objects specified in the parameter list. The returned set might be different than the original receiver.
 
-#### Discussion
+## Discussion
 
 To add additional objects to the new ordered set, pass comma-separated list of trailing variadic arguments, ending with `nil`,
 

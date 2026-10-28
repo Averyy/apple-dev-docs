@@ -17,7 +17,7 @@ The status of the registration store.
 var status: IdentityDocumentProviderRegistrationStore.Status { get async }
 ```
 
-#### Discussion
+## Discussion
 
 Check this value before you make any attempts to interact with the store.
 

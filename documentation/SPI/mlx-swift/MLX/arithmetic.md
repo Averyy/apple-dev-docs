@@ -10,7 +10,7 @@ framework: "mlx-swift/MLX"
 
 MLX supports a wide range of binary arithmetic operators.
 
-#### Overview
+## Overview
 
 Many of the operations are avilable as infix operators (e.g. ‘+’) or as functions, either on MLXArray itself or as free functions.
 
@@ -33,7 +33,7 @@ let r = log(a)
 
 > **Note**: There are two operators from python that are not supported (as operators) in swift: `@` ([`matmul(_:_:stream:)`](./matmul%28_,_,stream%29.md)) and `//` ([`floorDivide(_:_:stream:)`](./floordivide%28_,_,stream%29.md)).  Please use the methods on `MLXArray` or the free functions.
 
-#### Swift Naming
+## Swift Naming
 
 Note that the element-wise logical operations such as:
 
@@ -42,7 +42,7 @@ Note that the element-wise logical operations such as:
 
 are named using the Swift convention for SIMD operations, e.g. `.==`, `.<`, etc.  These operators produce a new [`MLXArray`](./mlxarray.md) with `true`/`false` values for the elementwise comparison.
 
-#### Operations With Scalars
+## Operations With Scalars
 
 Many functions and operators that work on [`MLXArray`](./mlxarray.md) take a [`ScalarOrArray`](./scalarorarray.md) argument or have an overload that does.  A sampling:
 

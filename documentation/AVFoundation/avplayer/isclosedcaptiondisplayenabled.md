@@ -25,7 +25,7 @@ var isClosedCaptionDisplayEnabled: Bool { get set }
 @property (getter=isClosedCaptionDisplayEnabled) BOOL closedCaptionDisplayEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The player displays closed captions in the following cases:
 

@@ -22,11 +22,11 @@ init?(name pasteboardName: UIPasteboard.Name, create: Bool)
 + (UIPasteboard *) pasteboardWithName:(UIPasteboardName) pasteboardName create:(BOOL) create;
 ```
 
-#### Return Value
+## Return Value
 
 A pasteboard object you can use to transfer data within an app or between apps that have the same team ID.
 
-#### Discussion
+## Discussion
 
 Call this method to create custom app pasteboards. (You can also use it to obtain the general pasteboard, but the [`general`](./general.md) class method exists for that purpose.) App pasteboards this method returns aren’t persistent, existing only until the app quits. Starting in iOS 10, persistent, named pasteboards are deprecated. Instead, use a shared container, as described in the overview for the [`UIPasteboard`](../uipasteboard.md) class.
 

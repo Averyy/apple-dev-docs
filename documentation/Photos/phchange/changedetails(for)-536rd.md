@@ -20,11 +20,11 @@ Returns detailed change information for the specified asset or collection.
 func changeDetails<T>(for object: T) -> PHObjectChangeDetails<T>? where T : PHObject
 ```
 
-#### Return Value
+## Return Value
 
 A change details object, or `nil` if there have been no changes to the specified asset or collection.
 
-#### Discussion
+## Discussion
 
 When Photos calls your change observer’s [`photoLibraryDidChange(_:)`](../phphotolibrarychangeobserver/photolibrarydidchange%28_%29.md) method, call this [`changeDetails(for:)`](./changedetails%28for%29-536rd.md) method to get detailed change information about an asset or collection you’ve previously fetched. If the asset or collection has changed since you last fetched it, the resulting [`PHObjectChangeDetails`](../phobjectchangedetails.md) object describes the changes. If there are no changes between the fetched object and the current state of the asset or collection it represents in the Photos library, this method returns `nil`.
 

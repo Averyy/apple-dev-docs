@@ -25,7 +25,7 @@ static let quickTimeMetadataAutoLivePhoto: AVMetadataIdentifier
 extern AVMetadataIdentifier const AVMetadataIdentifierQuickTimeMetadataAutoLivePhoto;
 ```
 
-#### Discussion
+## Discussion
 
 If your app captures Live Photo content, you can add this movie-level metadata to signify that the movie content should only be used if it’s sufficiently dynamic for experiences like swiping between photos or force-touching a photo. For example, photos of static scenes or documents are excluded from the Live Photo experience.
 

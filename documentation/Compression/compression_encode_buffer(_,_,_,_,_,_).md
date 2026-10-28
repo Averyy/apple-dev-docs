@@ -25,11 +25,11 @@ func compression_encode_buffer(_ dst_buffer: UnsafeMutablePointer<UInt8>, _ dst_
 extern size_t compression_encode_buffer(uint8_t * restrictdst_buffer, size_t dst_size, const uint8_t * restrictsrc_buffer, size_t src_size, void * restrictscratch_buffer, compression_algorithm algorithm);
 ```
 
-#### Return Value
+## Return Value
 
 The number of bytes written to the destination buffer after compressing the input. If the funtion can’t compress the entire input to fit into the provided destination buffer, or an error occurs, 0 is returned.
 
-#### Discussion
+## Discussion
 
 If the input is successfully compressed, the function writes the compressed data to dst_buffer.
 

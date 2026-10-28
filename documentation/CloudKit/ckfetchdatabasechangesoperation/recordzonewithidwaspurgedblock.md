@@ -25,7 +25,7 @@ var recordZoneWithIDWasPurgedBlock: ((CKRecordZone.ID) -> Void)? { get set }
 @property (nonatomic, copy, nullable) void (^recordZoneWithIDWasPurgedBlock)(CKRecordZoneID *zoneID);
 ```
 
-#### Discussion
+## Discussion
 
 The closure returns no value and takes the following parameter:
 

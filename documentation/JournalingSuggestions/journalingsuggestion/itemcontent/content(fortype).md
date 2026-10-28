@@ -15,11 +15,11 @@ Retrieves a suggestion’s contents by returning a structure specific to the giv
 func content<Content>(forType content: Content.Type) async throws -> Content? where Content : JournalingSuggestionAsset
 ```
 
-#### Return Value
+## Return Value
 
 An instance of the requested type, if it exists in the suggestion.
 
-#### Discussion
+## Discussion
 
 The framework templates this method, where `Content` is [`JournalingSuggestionAsset`](../../journalingsuggestionasset.md), because the `content` argument is a `Type` rather than an enumeration case, or other primitive.
 

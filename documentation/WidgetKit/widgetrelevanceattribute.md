@@ -20,7 +20,7 @@ A type that describes when a specific widget could be relevant.
 struct WidgetRelevanceAttribute<Configuration>
 ```
 
-#### Overview
+## Overview
 
 Use the relevance attribute’s `RelevantContext` to describe when a specific widget might be relevant.
 

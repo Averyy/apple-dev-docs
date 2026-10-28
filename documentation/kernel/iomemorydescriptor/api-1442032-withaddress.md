@@ -15,11 +15,11 @@ Creates an IOMemoryDescriptor to describe one virtual range of the kernel task.
 static OSPtr<IOMemoryDescriptor> withAddress(void *address, IOByteCount withLength, IODirection withDirection);
 ```
 
-#### Return Value
+## Return Value
 
 The created IOMemoryDescriptor on success, to be released by the caller, or zero on failure.
 
-#### Discussion
+## Discussion
 
 This method creates and initializes an IOMemoryDescriptor for memory consisting of a single virtual memory range mapped into the kernel map. This memory descriptor needs to be prepared before it can be used to extract data from the memory described.
 

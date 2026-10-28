@@ -21,7 +21,7 @@ Retrieves a tag’s value as a signed 64-bit integer.
 extern int64_t CMTagGetSInt64Value(CMTag tag);
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  Before retrieving a tag’s value with this function, call [`CMTagHasSInt64Value`](./cmtaghassint64value.md) to ensure it has the correct type.
 

@@ -23,7 +23,7 @@ var subtype: UIEvent.EventSubtype { get }
 @property (nonatomic, readonly) UIEventSubtype subtype;
 ```
 
-#### Discussion
+## Discussion
 
 The [`UIEvent.EventSubtype`](./eventsubtype.md) constant returned by this property indicates the subtype of the event in relation to the general type, which you can retrieve from the [`type`](./type.md) property.
 

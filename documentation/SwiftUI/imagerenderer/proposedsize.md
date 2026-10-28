@@ -22,7 +22,7 @@ The size proposed to the root view.
 final var proposedSize: ProposedViewSize { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property, [`unspecified`](../proposedviewsize/unspecified.md), produces an image that matches the original view size. You can provide a custom [`ProposedViewSize`](../proposedviewsize.md) to override the view’s size in one or both dimensions.
 

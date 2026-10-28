@@ -5,7 +5,7 @@
 
 An object that decompresses video data.
 
-#### Overview
+## Overview
 
 A decompression session supports the decompression of a sequence of video frames. Here’s the basic workflow:
 

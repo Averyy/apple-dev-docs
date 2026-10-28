@@ -5,7 +5,7 @@
 
 Set up your project or workspace to use Xcode Cloud and adopt continuous integration and delivery.
 
-#### Overview
+## Overview
 
 Xcode helps you configure your project or workspace to use Xcode Cloud. It analyzes your project, suggests a configuration to quickly build your app or framework with Xcode Cloud, and makes it easy to refine your continuous integration practice after you complete your first build.
 
@@ -13,7 +13,7 @@ For additional information about Xcode Cloud, see [Meet Xcode Cloud](https://dev
 
 > ❗ **Important**: To avoid issues and save time when configuring your first workflow, review the requirements for using Xcode Cloud in [Setting up your project to use Xcode Cloud](./setting-up-your-project-to-use-xcode-cloud.md) before you configure your project or workspace to use Xcode Cloud. Additionally, if your project requires dependencies, make sure they’re accessible to Xcode Cloud. To learn more, see [Making dependencies available to Xcode Cloud](./making-dependencies-available-to-xcode-cloud.md).
 
-##### Review Xcode Cloud workflows
+### Review Xcode Cloud workflows
 
 When you start configuring a project or workspace to use Xcode Cloud, Xcode analyzes your project to detect its settings and then creates a list of its apps and frameworks — referred to as *products*. After you select a product, Xcode suggests a first workflow for it. The workflow is the configuration for the steps you want Xcode Cloud to perform.
 
@@ -47,7 +47,7 @@ Use Xcode to initially configure your project or workspace to use Xcode Cloud. A
 
 > **Note**: If you use `.xcconfig` files to set the bundle identifier or use them to automatically change the bundle identifier, you need to take extra steps to start using Xcode Cloud. First, set the bundle identifier for your app target in the Signing & Capabilities pane of your project or workspace. Then configure your first workflow as described below. Repeat this process for each bundle identifier. Note that you need to use App Store Connect to view your workflows and builds because Xcode relies on the explicitly set bundle identifier to show them.
 
-##### Select the archive action
+### Select the archive action
 
 For each app or framework that you want to build with Xcode Cloud, make sure its corresponding scheme uses the archive action. Choose Product > Scheme > Edit Scheme. In the sidebar, click Build and in the detail area, select the Archive checkbox for the target.
 
@@ -61,7 +61,7 @@ xcodebuild -project Example.xcodeproj -describeAllArchivableProducts -json
 
 Xcode uses the same command to find available products that you can build with Xcode Cloud.
 
-##### Select a product
+### Select a product
 
 To configure your project or workspace to use Xcode Cloud, open your project or workspace in Xcode. In the Report navigator, click the Cloud button, and then click Get Started.
 
@@ -78,7 +78,7 @@ If your project contains targets that use the same bundle identifier, Xcode Clou
 
 You may be a member of more than one Apple Developer Program team. In this case, Xcode asks you to select a team. Select the team you intend to use for distribution to testers with TestFlight, and for publishing the app in the App Store.
 
-##### Review the suggested workflow
+### Review the suggested workflow
 
 Based on the product you select, Xcode suggests a first workflow that:
 
@@ -99,7 +99,7 @@ To review the suggested workflow:
 
 > 💡 **Tip**: Keep your first workflow simple and use the suggested settings, if possible. That way, you become familiar with Xcode Cloud without worrying about misconfiguring your first workflow. When Xcode Cloud successfully finishes your first build, edit the workflow to meet your requirements or create additional workflows to refine your CI/CD practice in either Xcode or App Store Connect.
 
-##### Grant Xcode Cloud access to your source code
+### Grant Xcode Cloud access to your source code
 
 Xcode Cloud requires access to the Git repository containing your code. It uses this access to build and test your code automatically when you make changes. When you configure your project or workspace to use Xcode Cloud, Xcode analyzes it to detect the source code management (SCM) provider you use. In the Grant Access to Your Source Code sheet, click Grant Access and let Xcode guide you through your SCM provider’s authorization process.
 
@@ -113,7 +113,7 @@ After allowing Xcode Cloud to access your Git repository, Xcode indicates that i
 
 For additional guidance on granting Xcode Cloud access to your source code, see [Source code management setup](./source-code-management-setup.md).
 
-##### Create an app record
+### Create an app record
 
 Xcode Cloud combines Xcode, [TestFlight](https://developer.apple.com/testflight/), and App Store Connect into a powerful CI/CD system. As a result, you need an app record in App Store Connect for your app.
 
@@ -123,7 +123,7 @@ If you already have an app record in App Store Connect, Xcode Cloud uses it auto
 
 To create an app record, you need to have the App Manager, Admin, or Account Holder role for your team. If you have the Developer role, you need the Create Apps permission. If you don’t have the required role or permission, see [Create an app record in App Store Connect](./configuring-xcode-cloud-for-your-team.md#Create-an-app-record-in-App-Store-Connect).
 
-##### Start your first build
+### Start your first build
 
 After granting Xcode Cloud access to your Git repository and, if applicable, creating an app record, you’re ready to start your first build. Choose a branch from the pop-up menu and click Start Build. Xcode Cloud checks out the branch and starts building your code.
 
@@ -135,7 +135,7 @@ When Xcode Cloud finishes building your project, it sends an email that contains
 
 > **Note**: If you start using Xcode Cloud for an existing Mac app, you may need to configure Xcode Cloud to increment the build number starting with value other than `1`. For more information, see [Setting the next build number for Xcode Cloud builds](./setting-the-next-build-number-for-xcode-cloud-builds.md).
 
-##### Understand why a build fails
+### Understand why a build fails
 
 There’s a chance that your first build might fail. This is especially likely for complex code bases and projects with many dependencies. To understand why a build failed, select a build in the Report navigator, expand a failed action in the report outline, and click Logs to see the build logs.
 
@@ -151,7 +151,7 @@ In addition to viewing build logs in Xcode, you can explore build logs in App St
 4. Expand a workflow and select a build.
 5. Expand an action in the sidebar and click Logs.
 
-##### Refine your continuous integration practice
+### Refine your continuous integration practice
 
 After configuring your first workflow and successfully completing your first build, spend time planning next steps to refine your CI/CD process, and consider the following:
 
@@ -166,7 +166,7 @@ After configuring your first workflow and successfully completing your first bui
 - Receive build information in [Slack](https://slackhq.com), a popular collaboration tool. For more information, see [Connecting Xcode Cloud to Slack](./connecting-xcode-cloud-to-slack.md).
 - Require an Xcode Cloud build to succeed before it’s possible to merge a pull request. For more information, see [Configuring requirements for merging a pull request](./configuring-requirements-for-merging-a-pull-request.md).
 
-##### Create additional workflows in Xcode
+### Create additional workflows in Xcode
 
 To configure and create additional workflows, or to make changes to an existing one in Xcode:
 
@@ -176,7 +176,7 @@ To configure and create additional workflows, or to make changes to an existing 
 
 For more information on creating custom workflows, see [Developing a workflow strategy for Xcode Cloud](./developing-a-workflow-strategy-for-xcode-cloud.md) and [Xcode Cloud workflow reference](./xcode-cloud-workflow-reference.md).
 
-##### Edit and create workflows in App Store Connect
+### Edit and create workflows in App Store Connect
 
 You need to configure your first Xcode Cloud workflow in Xcode. The deep integration of Xcode Cloud into Xcode enables an integrated development process where you write code, review changes, view build information, and configure workflows. However, teams may have dedicated infrastructure engineers or release managers who aren’t familiar with Xcode. To accommodate them, and to offer you an additional way to configure your workflows and view build information, App Store Connect also deeply integrates with Xcode Cloud.
 
@@ -189,7 +189,7 @@ To view, edit, or create workflows in App Store Connect:
 
 By clicking the More button (···) for a workflow, you can also edit, duplicate, deactivate, or delete a workflow.
 
-##### Download and archive build artifacts
+### Download and archive build artifacts
 
 When Xcode Cloud completes a build for a workflow, it creates a set of artifacts that includes build information, app binaries, symbol information, test results, and more. Xcode Cloud stores artifacts for up to 30 days after it completes a build.
 

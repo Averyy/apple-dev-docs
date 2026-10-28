@@ -21,11 +21,11 @@ Sends an encodable message over the session to the destination service, blocking
 func sendSync<Message>(_ message: Message) throws -> XPCReceivedMessage where Message : Encodable
 ```
 
-#### Return Value
+## Return Value
 
 If successful, the response to the message; otherwise this method throws an error.
 
-#### Discussion
+## Discussion
 
 This method supports priority inversion avoidance. Use this method instead of calling [`send(message:replyHandler:)`](./send%28message,replyhandler%29.md) and using a semaphore.
 

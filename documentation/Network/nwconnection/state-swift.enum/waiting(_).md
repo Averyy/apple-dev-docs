@@ -21,7 +21,7 @@ The connection is waiting for a network path change.
 case waiting(NWError)
 ```
 
-#### Discussion
+## Discussion
 
 Connections that are waiting will indicate the reason that the connection couldn’t be established in the associated error. These errors are not fatal.
 

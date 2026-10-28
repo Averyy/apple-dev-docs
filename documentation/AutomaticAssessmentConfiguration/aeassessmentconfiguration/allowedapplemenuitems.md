@@ -20,7 +20,7 @@ var allowedAppleMenuItems: Set<AEAppleMenuItem>? { get set }
 @property (nonatomic, copy, nullable) NSSet<NSString *> * allowedAppleMenuItems;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `nil`, which leaves every Apple menu item available. Setting a non-`nil` set restricts the menu to the items it names; pass an empty set to restrict all of them. Some constants cover more than one menu item.
 

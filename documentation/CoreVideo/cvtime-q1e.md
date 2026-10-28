@@ -5,7 +5,7 @@
 
 A structure used for storing Core Video time values.
 
-#### Overview
+## Overview
 
 Core video uses the [`CVTime`](./cvtime.md) and [`CVTimeStamp`](./cvtimestamp.md) structures for storing Core Video time values. You use them to interact with the Core Video display link.
 

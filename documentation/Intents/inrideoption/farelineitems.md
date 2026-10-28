@@ -31,7 +31,7 @@ var fareLineItems: [INRideFareLineItem]? { get set }
 @property (atomic, copy, readwrite, nullable) NSArray<INRideFareLineItem *> * fareLineItems;
 ```
 
-#### Discussion
+## Discussion
 
 When the cost of a ride has multiple components, use [`INRideFareLineItem`](../inridefarelineitem.md) objects to break down the individual costs of the ride. You can use line items to specify fixed charges, per-mile charges, special surcharges, or any other charges that you designate. The system displays the fare line items to the user as part of the pricing information.
 

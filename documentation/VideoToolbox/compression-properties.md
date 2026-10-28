@@ -5,7 +5,7 @@
 
 Properties that you use to configure a compression session.
 
-#### Overview
+## Overview
 
 > **Note**:  Video encoders may not support all compression property keys.
 

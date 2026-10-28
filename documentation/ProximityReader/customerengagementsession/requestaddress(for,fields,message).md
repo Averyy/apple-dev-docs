@@ -17,11 +17,11 @@ Opens a form so that the customer can share the postal address and additionally 
 final func requestAddress(for purpose: CustomerEngagementSession.Purpose? = nil, fields: [CustomerEngagementSession.Field], message: String? = nil) async throws -> CustomerEngagement.Address
 ```
 
-#### Return Value
+## Return Value
 
 [`CustomerEngagement.Address`](../customerengagement/address.md) with postal address and contact information shared by the customer.
 
-#### Discussion
+## Discussion
 
 For example, email and phone number can be used for delivery notification.
 

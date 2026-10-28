@@ -21,7 +21,7 @@ protocol RoomCaptureSessionDelegate : AnyObject
 
 - [Scanning the rooms of a single structure](./scanning-the-rooms-of-a-single-structure.md)
 
-#### Overview
+## Overview
 
 The room-capture session’s [`delegate`](./roomcapturesession/delegate.md) property is of this type.
 

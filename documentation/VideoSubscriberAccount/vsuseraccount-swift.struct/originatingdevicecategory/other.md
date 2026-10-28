@@ -19,7 +19,7 @@ A constant that indicates the original registering device is not mobile.
 case other
 ```
 
-#### Discussion
+## Discussion
 
 Non-mobile devices include desktop computers and set-top TV devices.
 

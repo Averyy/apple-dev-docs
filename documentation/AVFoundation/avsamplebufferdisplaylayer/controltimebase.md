@@ -24,7 +24,7 @@ var controlTimebase: CMTimebase? { get set }
 @property (retain, nullable) CMTimebaseRef controlTimebase;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this property is `nil`, which indicates the layer interprets timestamps according the host time clock (`mach_absolute_time` with the appropriate timescale conversion; this is the same as Core Animation’s [`CACurrentMediaTime()`](../../QuartzCore/cacurrentmediatime%28%29.md)). Without a control timebase, it isn’t possible to change when the layer displays frames after enqueuing them.
 

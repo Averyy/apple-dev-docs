@@ -37,7 +37,7 @@ var groupIdentifier: String? { get set }
 
 - [Deleting Donated Shortcuts](../../SiriKit/deleting-donated-shortcuts.md)
 
-#### Discussion
+## Discussion
 
 Assigning the same identifier string to two or more interaction objects defines a group. You can use the group identifier later to delete all interactions with that identifier. The default value of this property is `nil`, which means that the interaction is not associated with a group.
 

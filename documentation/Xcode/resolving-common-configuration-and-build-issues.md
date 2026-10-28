@@ -5,17 +5,17 @@
 
 Review common configuration and build issues and learn how you can resolve them.
 
-#### Overview
+## Overview
 
 Xcode guides you through the process of configuring your project to use Xcode Cloud and of creating workflows. However, there’s a chance that you run into issues. This is more likely for complex codebases and projects that have many dependencies. To help you diagnose build failure, view logs in the build report in Xcode or on the [App Store Connect](https://appstoreconnect.apple.com) website and download build reports.
 
-##### View build logs
+### View build logs
 
 To understand why a build failed, open your project or workspace and navigate to the Report navigator. Select a build, expand a failed action, and select Logs to see the build logs. To download the build logs and any other build artifacts — for example, a result bundle — choose Artifacts for the failed action.
 
 Alternatively, select a build in the Xcode Cloud tab on the App Store Connect website to view detailed information about the build.
 
-##### Reproduce a build failure locally
+### Reproduce a build failure locally
 
 Reproducing a build failure locally is often key to fixing its cause. To quickly replicate a failing build’s source state locally:
 
@@ -25,7 +25,7 @@ Reproducing a build failure locally is often key to fixing its cause. To quickly
 
 If your workflow doesn’t automatically start a new build with the latest change, manually start a new build as described in [Start a new build](./resolving-common-configuration-and-build-issues.md#Start-a-new-build) below.
 
-##### Resolve configuration issues
+### Resolve configuration issues
 
 To resolve issues when first configuring your project or workspace to use Xcode Cloud:
 
@@ -33,7 +33,7 @@ To resolve issues when first configuring your project or workspace to use Xcode 
 - If you can’t grant Xcode Cloud access to your Git repository, check if you have the required permission or role to connect Xcode Cloud to your Git repository. For more information, see [Grant Xcode Cloud access to your source code](./configuring-your-first-xcode-cloud-workflow.md#Grant-Xcode-Cloud-access-to-your-source-code).
 - If a workflow’s action doesn’t list a scheme, make sure you shared the scheme. For information on sharing a scheme, see [Xcode Help](https://help.apple.com/xcode/mac/#/dev5426ddfcf).
 
-##### Resolve build issues
+### Resolve build issues
 
 To resolve build issues:
 
@@ -44,7 +44,7 @@ To resolve build issues:
 - If a third-party tool indicates networking issues, configure it to respect the `HTTP_PROXY` and `HTTPS_PROXY` environment variables and adjust its proxy settings as needed.
 - If your build fails with an error that indicates a missing app capability, check if the app ID you used when you configured your first Xcode Cloud workflow has all required capabilities enabled. For more information about capabilities, see [Enable app capabilities](https://developer.apple.com/help/account/manage-identifiers/enable-app-capabilities).
 
-##### Resolve Swift package dependency issues
+### Resolve Swift package dependency issues
 
 Xcode Cloud supports using Swift package dependencies in your project. Be sure to read [Use Swift package dependencies and Git submodules](./making-dependencies-available-to-xcode-cloud.md#Use-Swift-package-dependencies-and-Git-submodules) if your project requires Swift package dependencies to build successfully.
 
@@ -53,7 +53,7 @@ A common cause of failing builds is that Xcode Cloud can’t access the `Package
 - To commit and push the file to your Git repository.
 - Your `.gitignore` file doesn’t include the file.
 
-##### Start a new build
+### Start a new build
 
 When you’ve made changes to your project or workspace to resolve a build issue, start a new build to verify that the change resolved it:
 

@@ -24,7 +24,7 @@ func setPackedStrides()
 - (void) setPackedStrides;
 ```
 
-#### Discussion
+## Discussion
 
 This method examines the [`offset`](../mdlvertexattribute/offset.md) property of each of the descriptor’s vertex attributes, calculates a stride for each of the descriptor’s vertex layouts that fits vertex data into a single buffer with minimal unused padding space between vertices, then sets the [`stride`](../mdlvertexbufferlayout/stride.md) property of each vertex layour to the calculated value.
 

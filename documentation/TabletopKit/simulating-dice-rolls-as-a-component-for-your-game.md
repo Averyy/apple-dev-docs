@@ -10,7 +10,7 @@ Create a physically realistic dice game by adding interactive rolling and scorin
 - visionOS 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 When reproducing the physicality of a game — whether it’s a role-playing game or a boardgame — one key component is how you add realistic dice rolls to your game. When a player interacts with a die, the interaction feels natural as they lift, rotate, toss, and observe each die land on the appropriate face.
 
@@ -25,7 +25,7 @@ This sample code app showcases physics-driven dice simulation with realistic tos
 
 The app provides a tabletop gaming experience in a volumetric window that allows a player to toss an individual die or a group of dice. After tossing an individual or group of dice, the sample shows the total score.
 
-#### Create a die with face mapping
+## Create a die with face mapping
 
 Before creating the representation of dice with `TabletopKit`, the sample app includes corresponding `USDZ` files for each of the dice in the `RealityKit` content bundle, including a custom 8-sided die, shown here:
 
@@ -72,7 +72,7 @@ func calculateScore(for state: RawValueState) -> Int {
 }
 ```
 
-#### Configure the game
+## Configure the game
 
 The game configuration involves setting up the tabletop environment and adding seven dice to the table. The `Game` class manages the overall game state and coordinates between TabletopKit and the UI:
 
@@ -93,7 +93,7 @@ tabletopGame.claimAnySeat()
 
 The app uses a volumetric window style with a 2 x 2 x 2 meter default size to provide adequate space for dice interaction. The `RoundTabletop` provides the surface for dice physics simulation. The game automatically positions the table within the volumetric space, ensuring that the table surface aligns with the bottom of the volume and the closest edge stays against the front boundary so it remains close to the player interacting with the dice. When the player tosses the dice at the boundary, they bounce off of the volume bounds and back onto the table surface.
 
-#### Handle the dice interaction
+## Handle the dice interaction
 
 The sample app manages dice interaction through the `DiceInteraction` class, which implements [`TabletopInteraction.Delegate`](./tabletopinteraction/delegate.md). The interaction system supports both single die tossing and group tossing, where multiple dice move together and get tossed simultaneously. The sample uses a hexagonal positioning pattern to ensure dice don’t overlap during group interactions.
 
@@ -135,7 +135,7 @@ case .ended:
     }
 ```
 
-#### Process the dice toss and score
+## Process the dice toss and score
 
 The sample includes toggle controls for testing different scenarios:
 

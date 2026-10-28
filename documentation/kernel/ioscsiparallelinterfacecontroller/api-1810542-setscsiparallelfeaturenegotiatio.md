@@ -14,7 +14,7 @@ void SetSCSIParallelFeatureNegotiationResult (
  SCSIParallelFeatureResultnewResult );
 ```
 
-#### Overview
+## Overview
 
 Method to set the wide data transfer negotiation result.
 

@@ -29,7 +29,7 @@ func handle(intent: INSearchForMediaIntent) async -> INSearchForMediaIntentRespo
 - (void) handleSearchForMedia:(INSearchForMediaIntent *) intent completion:(void (^)(INSearchForMediaIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to search for the media item.
 

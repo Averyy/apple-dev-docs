@@ -19,7 +19,7 @@ func jsObject() -> JSObjectRef!
 - (JSObjectRef) JSObject;
 ```
 
-#### Return Value
+## Return Value
 
 The JavaScript object corresponding to the receiver in the JavaScriptCore C API.
 

@@ -19,7 +19,7 @@ struct CFXMLNotationInfo
 typedef struct { ... } CFXMLNotationInfo;
 ```
 
-#### Overview
+## Overview
 
 A pointer to this structure is included in the CFXMLNode object passed to your application when the parser encounters a notation element. Use the [`CFXMLNodeGetInfoPtr`](./cfxmlnodegetinfoptr.md) function to obtain a pointer to this structure.
 

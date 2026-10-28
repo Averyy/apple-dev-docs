@@ -27,11 +27,11 @@ func copyAppRules() -> [NEAppRule]?
 
 - [Routing your VPN network traffic](../routing-your-vpn-network-traffic.md)
 
-#### Return Value
+## Return Value
 
 An array of [`NEAppRule`](../neapprule.md) objects, or `nil` if the configuration doesn’t have any app rules.
 
-#### Discussion
+## Discussion
 
 This method provides read-only access to the configuration’s app rules.
 

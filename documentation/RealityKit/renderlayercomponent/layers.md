@@ -20,7 +20,7 @@ The layers this entity participates in.
 var layers: RenderLayer.Set
 ```
 
-#### Discussion
+## Discussion
 
 A layer is either a custom layer you define in an extension to [`RenderLayer`](../renderlayer.md) or [`defaultLayer`](../renderlayer/defaultlayer.md). Common conventions include:
 

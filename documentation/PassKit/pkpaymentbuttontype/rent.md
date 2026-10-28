@@ -24,7 +24,7 @@ case rent
 PKPaymentButtonTypeRent
 ```
 
-#### Discussion
+## Discussion
 
 This button looks like:
 

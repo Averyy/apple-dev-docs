@@ -19,11 +19,11 @@ func validRequestor(forSendType sendType: NSPasteboard.PasteboardType?, returnTy
 - (id) validRequestorForSendType:(NSPasteboardType) sendType returnType:(NSPasteboardType) returnType;
 ```
 
-#### Return Value
+## Return Value
 
 The object that can send and receive the specified types or `nil` if the receiver knows of no object that can send and receive data of that type.
 
-#### Discussion
+## Discussion
 
 This message is sent to all responders in a responder chain. `NSApp` is typically the last item in the responder chain, so it usually receives this message only if none of the current responders can send `sendType` data and accept back `returnType` data.
 

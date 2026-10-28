@@ -17,7 +17,7 @@ Start index using numpy conventions.
 func start(_ size: Int32) -> Int32
 ```
 
-#### Discussion
+## Discussion
 
 If `start` is not given it will be `size - 1` if [`stride`](./stride.md) is negative or `0` if positive.
 

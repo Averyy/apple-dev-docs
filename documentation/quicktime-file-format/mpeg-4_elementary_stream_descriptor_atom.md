@@ -11,7 +11,7 @@ A required extension to the video sample description for MPEG-4 video.
 - [QuickTime File Format change log](./revision_history.md)
 - [Video sample data](./video_sample_data.md)
 
-#### Overview
+## Overview
 
 This atom contains an MPEG-4 elementary stream descriptor atom. This is a required extension to the video sample description for MPEG-4 video. This extension appears in video sample descriptions only when the codec type is `'mp4v'`.
 

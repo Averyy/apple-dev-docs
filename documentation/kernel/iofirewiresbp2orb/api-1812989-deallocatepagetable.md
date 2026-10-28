@@ -12,7 +12,7 @@ virtual void deallocatePageTable(
  void );
 ```
 
-#### Overview
+## Overview
 
 Frees all memory associated with the page table. Undoes what allocatePageTable does. Calling allocatePageTable again will automatically deallocate the existing page table before allocating a new one, so this method is not used in most cases.
 

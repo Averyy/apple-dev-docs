@@ -25,7 +25,7 @@ class CBMutableCharacteristic
 @interface CBMutableCharacteristic : CBCharacteristic
 ```
 
-#### Overview
+## Overview
 
 [`CBMutableCharacteristic`](./cbmutablecharacteristic.md) objects represent the characteristics of a local peripheral’s service. This class adds write access to many of the properties in the [`CBCharacteristic`](./cbcharacteristic.md) class, which it inherits from.
 

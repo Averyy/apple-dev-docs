@@ -23,7 +23,7 @@ var insetsContentViewsToSafeArea: Bool { get set }
 @property (nonatomic) BOOL insetsContentViewsToSafeArea;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md) (the default), the table view adjusts the insets of the content view within each of its cells, headers, and footers on the leading and trailing sides to make the content fit within the safe area. The safe area ensures that the content within the table view isn’t obscured by other views, or by the edges of the device.
 

@@ -24,7 +24,7 @@ func duration(for source: HKSource) -> HKQuantity?
 - (HKQuantity *) durationForSource:(HKSource *) source;
 ```
 
-#### Discussion
+## Discussion
 
 If you set both the [`duration`](../hkstatisticsoptions/duration.md) and [`separateBySource`](../hkstatisticsoptions/separatebysource.md) options, this method returns a quantity object. This object contains the total duration covering all the samples created by the specified source that also match the query. If the statistics options were not both set, this method returns `nil`.
 

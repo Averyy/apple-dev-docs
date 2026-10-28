@@ -25,7 +25,7 @@ func la_diagonal_matrix_from_vector(_ vector: la_object_t, _ matrix_diagonal: la
 extern la_object_tla_diagonal_matrix_from_vector(la_object_t vector, la_index_t matrix_diagonal);
 ```
 
-#### Discussion
+## Discussion
 
 Create a matrix with a specified diagonal provided by a vector, and zeros in all the other entries.
 

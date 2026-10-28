@@ -19,11 +19,11 @@ Provides the visible Wi-Fi networks to the Matter device.
 func selectWiFiNetwork(from wifiScanResults: [MatterAddDeviceExtensionRequestHandler.WiFiScanResult]) async throws -> MatterAddDeviceExtensionRequestHandler.WiFiNetworkAssociation
 ```
 
-#### Return Value
+## Return Value
 
 The Wi-Fi network to join, or [`defaultSystemNetwork`](./wifinetworkassociation/defaultsystemnetwork.md).
 
-#### Discussion
+## Discussion
 
 This completion handler informs the device which Wi-Fi network it needs to join. The Matter device can provide information about the visible Wi-Fi networks that it sees, in order to provide the ability to choose the correct network on which to put the device. This method is a way for the ecosystem to choose the correct network for the device to use.
 

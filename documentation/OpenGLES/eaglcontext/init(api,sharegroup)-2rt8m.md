@@ -24,11 +24,11 @@ init?(api: EAGLRenderingAPI, sharegroup: EAGLSharegroup)
 - (instancetype) initWithAPI:(EAGLRenderingAPI) api sharegroup:(EAGLSharegroup *) sharegroup;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized context object, or `nil` if the object couldn’t be created.
 
-#### Discussion
+## Discussion
 
 To issue OpenGL ES commands to this context, you must first make it the current drawing context by calling [`setCurrent(_:)`](./setcurrent%28_%29.md).
 

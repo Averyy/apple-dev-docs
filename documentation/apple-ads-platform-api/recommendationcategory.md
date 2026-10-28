@@ -26,7 +26,7 @@ string RecommendationCategory
 - `BID`: Merged view of all bid recommendations.
 - `SBID`: System-generated bid recommendation.
 
-#### Discussion
+## Discussion
 
 > **Note**: The `KEYWORD`/`SKEYWORD` and `BID`/`SBID` categories are defined in this enum, but this API version doesn’t expose dedicated query, apply, or dismiss endpoints for keyword or bid recommendations. Only daily budget (`DAILYCAP`) and Target CPA (`TCPA`) recommendations have corresponding endpoints. See [Recommendations Endpoints](./recommendations-endpoints.md) for the available endpoints.
 

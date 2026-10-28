@@ -20,7 +20,7 @@ Ends the extension’s device discovery process.
 func stopDiscovery(session: DDDiscoverySession)
 ```
 
-#### Discussion
+## Discussion
 
 The system controls the discovery process using this function by calling it when [`AVRoutePickerView`](../../AVKit/avroutepickerview.md) dismisses. Your extension’s implementation performs any cleanup necessary, such as stopping Bluetooth or Bonjour scanning.
 

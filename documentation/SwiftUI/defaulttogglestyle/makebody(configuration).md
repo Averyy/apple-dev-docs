@@ -22,11 +22,11 @@ nonisolated
 func makeBody(configuration: DefaultToggleStyle.Configuration) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that acts as a toggle.
 
-#### Discussion
+## Discussion
 
 SwiftUI implements this required method of the [`ToggleStyle`](../togglestyle.md) protocol to define the behavior and appearance of the [`automatic`](../togglestyle/automatic.md) toggle style. Don’t call this method directly. Rather, the system calls this method for each [`Toggle`](../toggle.md) instance in a view hierarchy that needs the default style.
 

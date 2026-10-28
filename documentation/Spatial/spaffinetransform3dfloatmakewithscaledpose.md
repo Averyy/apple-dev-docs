@@ -19,11 +19,11 @@
 static SPAffineTransform3DFloat SPAffineTransform3DFloatMakeWithScaledPose(SPScaledPose3DFloat pose);
 ```
 
-#### Return Value
+## Return Value
 
 A new affine transform structure.
 
-#### Discussion
+## Discussion
 
 Returns a new affine transform structure from the specified scaled pose structure.
 

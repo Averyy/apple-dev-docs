@@ -21,7 +21,7 @@ The line where the text ends in the Markdown source.
 let endLine: Int
 ```
 
-#### Discussion
+## Discussion
 
 This property uses `1`-based counting.
 

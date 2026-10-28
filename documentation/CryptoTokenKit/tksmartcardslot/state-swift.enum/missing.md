@@ -23,7 +23,7 @@ case missing
 TKSmartCardSlotStateMissing
 ```
 
-#### Discussion
+## Discussion
 
 The Smart Card reader slot is no longer known to the system.
 

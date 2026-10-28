@@ -24,7 +24,7 @@ static let lactation: HKCategoryTypeIdentifier
 extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierLactation;
 ```
 
-#### Discussion
+## Discussion
 
 Use a [`HKCategoryValue.notApplicable`](../hkcategoryvalue/notapplicable.md) value with samples of this type.
 

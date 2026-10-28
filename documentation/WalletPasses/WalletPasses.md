@@ -11,7 +11,7 @@ Create, distribute, and update passes for the Wallet app.
 - iPadOS 6.0+
 - watchOS 2.0+
 
-#### Overview
+## Overview
 
 *Passes* are digital representations of information that previously might have been distributed on paper, plastic, or some other physical item. Passes enable people to take action, including board a flight, attend an event, or redeem a coupon. Use the Wallet Passes framework to create dynamic, interactive passes that stay up-to-date and provide people with relevant information.
 

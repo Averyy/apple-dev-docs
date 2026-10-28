@@ -20,11 +20,11 @@ Provides the view controller that presents the interface objects.
 func presentingViewController(for interaction: ImageAnalysisInteraction) -> UIViewController?
 ```
 
-#### Return Value
+## Return Value
 
 The view controller that presents the interaction object’s highlights, menus, and other elements.
 
-#### Discussion
+## Discussion
 
 The default return value is the window’s root view controller.
 

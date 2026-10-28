@@ -16,7 +16,7 @@ typedef struct IODot3RxExtraEntry {
 } IODot3RxExtraEntry;
 ```
 
-#### Overview
+## Overview
 
 Extra receiver statistics not defined by RFC1650.
 

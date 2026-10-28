@@ -17,7 +17,7 @@ Protocol for code that can load models.
 protocol GenericModelFactory<ContextType, ContainerType> : Sendable
 ```
 
-#### Overview
+## Overview
 
 See concrete implementations in:
 

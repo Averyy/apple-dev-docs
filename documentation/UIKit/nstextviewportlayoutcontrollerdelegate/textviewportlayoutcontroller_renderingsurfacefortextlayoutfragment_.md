@@ -12,11 +12,11 @@ Returns a rendering surface for the specified text layout fragment.
 - (id<NSTextViewportRenderingSurface>) textViewportLayoutController:(NSTextViewportLayoutController *) textViewportLayoutController renderingSurfaceForTextLayoutFragment:(NSTextLayoutFragment *) textLayoutFragment;
 ```
 
-#### Return Value
+## Return Value
 
 A rendering surface, or `nil`.
 
-#### Discussion
+## Discussion
 
 Invoked right before `textViewportLayoutController:configureRenderingSurfaceForTextLayoutFragment:`. The returned rendering surface is registered and mapped by `renderingSurfaceForKey:`.
 

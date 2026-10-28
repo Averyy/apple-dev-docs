@@ -17,7 +17,7 @@ Container for raw user input.
 struct UserInput
 ```
 
-#### Overview
+## Overview
 
 A [`UserInputProcessor`](./userinputprocessor.md) can convert this to [`LMInput`](./lminput.md). See also [`ModelContext`](./modelcontext.md).
 

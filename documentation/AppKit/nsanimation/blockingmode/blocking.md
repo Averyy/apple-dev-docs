@@ -19,7 +19,7 @@ case blocking
 NSAnimationBlocking
 ```
 
-#### Discussion
+## Discussion
 
 This is the default.
 

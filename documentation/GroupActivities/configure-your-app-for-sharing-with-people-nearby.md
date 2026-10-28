@@ -5,7 +5,7 @@
 
 Create shared experiences for people wearing Vision Pro in the same room and those on FaceTime.
 
-#### Overview
+## Overview
 
 SharePlay in visionOS helps people share activities together — for example, viewing a movie, listening to music, playing a game, or sketching ideas on a whiteboard. Starting in visionOS 26, SharePlay supports inviting nearby people who are wearing Apple Vision Pro to join a group activity. The system presents participants differently based on how they join the activity:
 
@@ -17,7 +17,7 @@ Both nearby participants and spatial Personas can move spatially, make eye conta
 
 > **Note**: If you’re new to SharePlay in visionOS, see [Building a guessing game for visionOS](./building-a-guessing-game-for-visionos.md) for a complete guide to building a visionOS SharePlay app.
 
-##### Verify your app’s nearby-sharing behavior
+### Verify your app’s nearby-sharing behavior
 
 SharePlay doesn’t require apps to distinguish between nearby and FaceTime participants. The `GroupActivities` APIs you use to manage group sessions, exchange messages, and position content treat all participants the same. Your app doesn’t need separate code to support nearby participants, so it typically already works when sharing with people nearby, but confirm the following during testing:
 
@@ -34,7 +34,7 @@ SharePlay doesn’t require apps to distinguish between nearby and FaceTime part
 
 > ❗ **Important**: To start your activity from the system’s Share Window menu, you need to donate it. If you don’t donate your activity, the system defaults to window mirroring instead of SharePlay.
 
-##### Distinguish between nearby and FaceTime participants
+### Distinguish between nearby and FaceTime participants
 
 To observe when participants join and leave an activity use [`activeParticipants`](./groupsession/activeparticipants.md). To determine if a [`Participant`](./participant.md) is nearby, use [`isNearbyWithLocalParticipant`](./participant/isnearbywithlocalparticipant.md):
 
@@ -49,7 +49,7 @@ func observeParticipants(session: GroupSession<BoardGameActivity>) async {
 }
 ```
 
-##### Position content relative to participants
+### Position content relative to participants
 
 Because nearby participants can join a group activity, you can no longer assume a spatial participant’s pose (position and orientation) matches their seat’s pose. When SharePlay applies a [`SpatialTemplate`](./spatialtemplate.md), it moves FaceTime participants using their spatial Persona to their assigned seats so their pose matches their seat’s pose. SharePlay can’t move a nearby participant, so the participant’s pose can be different from their seat’s pose.
 
@@ -60,7 +60,7 @@ Because nearby participants can join a group activity, you can no longer assume 
 
 > **Note**: A participant’s pose and seat pose are snapshots, not continuous tracking data. They are updated by the system at various points throughout a session, for example, when a new [`SpatialTemplate`](./spatialtemplate.md) is applied by the system or when a participant recenters.
 
-##### Synchronize entity transforms across devices
+### Synchronize entity transforms across devices
 
 To achieve consistent positioning of RealityKit entities across multiple devices in an immersive space during a SharePlay session, enable support for a group immersive space using [`SystemCoordinator.Configuration.supportsGroupImmersiveSpace`](./systemcoordinator/configuration-swift.struct/supportsgroupimmersivespace.md). When enabled, visionOS automatically ensures entities with identical transforms appear in the same relative location for all participants, including both nearby and remote participants.
 
@@ -68,7 +68,7 @@ Group immersive spaces handle this spatial consistency for entities with identic
 
 For more information, see [Synchronizing data during a SharePlay activity](./synchronizing-data-during-a-shareplay-activity.md).
 
-##### Incorporate the real world in your app’s shared context
+### Incorporate the real world in your app’s shared context
 
 When you’re sharing with people who are nearby, you may want to anchor shared virtual content to objects in the real world. Unlike remote SharePlay with spatial Personas, when you’re sharing with someone nearby, the real world is part of your shared context. To enable this, ARKit has support for sharing world anchors that appear in the exact same place for all nearby participants.
 

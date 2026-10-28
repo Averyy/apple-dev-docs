@@ -23,7 +23,7 @@ void transform(
 );
 ```
 
-#### Discussion
+## Discussion
 
 This method replaces the current transformation matrix with the result of a matrix multiplication between the current transformation matrix and the specified transformation matrix shown in [Figure 1](./api-1629911-transform.md#1965803).
 

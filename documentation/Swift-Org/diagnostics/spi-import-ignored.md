@@ -8,7 +8,7 @@ framework: "Swift-Org/diagnostics"
 **Framework**: Swift-Org/diagnostics  
 **Role**: Article
 
-#### Overview
+## Overview
 
 A module was imported with `@_spi` but the import will not expose any SPI symbols because the module was loaded from its public interface rather than from a binary module or private interface.
 

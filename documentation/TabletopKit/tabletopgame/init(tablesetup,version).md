@@ -16,7 +16,7 @@ Creates a tabletop game with the specified table configuration and version of ru
 init(tableSetup: TableSetup, version: Int = 0)
 ```
 
-#### Discussion
+## Discussion
 
 Players can only join multiplayer games when their rules version matches other players.
 

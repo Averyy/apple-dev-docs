@@ -21,7 +21,7 @@ func AudioHardwareServiceGetPropertyDataSize(_ inObjectID: AudioObjectID, _ inAd
 extern OSStatus AudioHardwareServiceGetPropertyDataSize(AudioObjectID inObjectID, const AudioObjectPropertyAddress *inAddress, UInt32 inQualifierDataSize, const void *inQualifierData, UInt32 *outDataSize);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 

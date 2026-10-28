@@ -20,11 +20,11 @@ func DADiskCopyWholeDisk(_ disk: DADisk) -> DADisk?
 extern DADiskRefDADiskCopyWholeDisk(DADiskRef disk);
 ```
 
-#### Return Value
+## Return Value
 
 The disk’s associated whole disk object.
 
-#### Discussion
+## Discussion
 
 The caller of this function receives a reference to the returned object. The caller also implicitly retains the object and is responsible for releasing it with CFRelease().
 

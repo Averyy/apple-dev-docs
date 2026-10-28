@@ -24,7 +24,7 @@ func activateVolume(options: FSTaskOptions) async throws -> FSActivateResult
 - (void) activateVolumeWithOptions:(FSTaskOptions *) options replyHandler:(void (^)(FSActivateResult *result, NSError *error)) reply;
 ```
 
-#### Discussion
+## Discussion
 
 When FSKit calls this method, allocate any in-memory state required to represent the file system. Also allocate an [`FSItem`](../../fsitem.md) for the root directory of the file system, and pass it to the reply block. FSKit caches this root item for the lifetime of the volume, and uses it as a starting point for all file look-ups.
 

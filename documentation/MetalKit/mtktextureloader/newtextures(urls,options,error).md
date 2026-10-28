@@ -24,7 +24,7 @@ func newTextures(URLs: [URL], options: [MTKTextureLoader.Option : Any]? = nil, e
 - (NSArray<id<MTLTexture>> *) newTexturesWithContentsOfURLs:(NSArray<NSURL *> *) URLs options:(NSDictionary<NSString *,id> *) options error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An array of Metal textures, each corresponding to a URL listed in the `URLs` parameter. If an error occurs while loading a texture, the corresponding array element is an [`NSNull`](../../Foundation/nsnull.md) object.
 

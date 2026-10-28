@@ -19,7 +19,7 @@ static let destination: NSGraphicsContext.AttributeKey
 extern NSGraphicsContextAttributeKey NSGraphicsContextDestinationAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 This value can be an instance of [`NSWindow`](../../nswindow.md) or [`NSBitmapImageRep`](../../nsbitmapimagerep.md) when creating a graphics context.
 

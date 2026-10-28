@@ -15,7 +15,7 @@ A collection of properties that explains your appâ€™s need to observe the userâ€
 - **Name**: `SRSensorUsageWristTemperature`
 - **Type**: dictionary
 
-#### Discussion
+## Discussion
 
 This key is a possible member of the [`NSSensorKitUsageDetail`](../nssensorkitusagedetail.md) dictionary.
 

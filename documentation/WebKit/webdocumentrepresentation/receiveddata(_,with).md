@@ -20,7 +20,7 @@ func receivedData(_ data: Data!, with dataSource: WebDataSource!)
 - (void) receivedData:(NSData *) data withDataSource:(WebDataSource *) dataSource;
 ```
 
-#### Discussion
+## Discussion
 
 Data is loaded incrementally, so this method may be invoked multiple times. The receiver is responsible for accumulating this data.
 

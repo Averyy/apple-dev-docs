@@ -16,7 +16,7 @@ The card used to complete a payment.
 readonly attribute ApplePayPaymentMethod paymentMethod;
 ```
 
-#### Discussion
+## Discussion
 
 See [`ApplePayPaymentMethod`](../applepaypaymentmethod.md). For privacy reasons, only the `type` property ([`ApplePayPaymentMethodType`](../applepaypaymentmethodtype.md)) is provided in most cases before the user authorizes the transaction.
 

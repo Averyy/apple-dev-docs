@@ -15,11 +15,11 @@ Creates a palette style menu displaying user-selectable color tags that tint usi
 static func palette(colors: [NSColor], titles: [String] = [], template: NSImage? = nil, onSelectionChange: ((NSMenu) -> Void)? = nil) -> NSMenu
 ```
 
-#### Return Value
+## Return Value
 
 A menu in the palette presentation style.
 
-#### Discussion
+## Discussion
 
 This factory method creates a presentation style menu as a selectable number of tags that display as colored circles or images. If `templateImage` is `nil`, a solid circle of color displays. If `templateImage` isn’t `nil`, the `templateImage` displays.
 

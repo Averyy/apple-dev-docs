@@ -5,7 +5,7 @@
 
 Specify the appearance and content of your table’s rows by defining one or more prototype cells in your storyboard.
 
-#### Overview
+## Overview
 
 Cells provide the visual representation of your table’s rows. For most tables, you provide only one or two different types of cells. Design your cells to ensure that the most important information stands out. Do that using a careful choice of views and view configurations in your cells.
 
@@ -15,7 +15,7 @@ You specify the appearance of cells at design time in your storyboard file. Xcod
 
 For tips on how to design the appearance of your cells, see Human Interface Guidelines > [Lists and tables](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables).
 
-##### Assign a reuse identifier to each cell
+### Assign a reuse identifier to each cell
 
 Reuse identifiers facilitate the creation and recycling of your table’s cells. A reuse identifier is a string that you assign to each prototype cell of your table. In your storyboard, select your prototype cell and assign a nonempty value to its identifier attribute. Each cell in a table view must have a unique reuse identifier.
 
@@ -25,7 +25,7 @@ When you need a cell object at runtime, call the table view’s [`dequeueReusabl
 var cell = tableView.dequeueReusableCell(withIdentifier: "myCellType", for: indexPath)
 ```
 
-##### Configure a cell with a built-in style
+### Configure a cell with a built-in style
 
 The simplest way to configure a cell is to use one of the built-in styles provided by [`UITableViewCell`](./uitableviewcell.md). You use these styles as is; you don’t need to provide a custom subclass to manage the cell. Each style incorporates one or two labels, with the style determining the positions of the labels within the cell’s content area. Most of the styles also incorporate an image at the leading edge of the cell’s content.
 
@@ -48,7 +48,7 @@ override func tableView(_ tableView: UITableView,
 }
 ```
 
-##### Configure a cell with custom views
+### Configure a cell with custom views
 
 For appearances other than the standard styles, use the custom cell style. With a custom cell, you specify the views you want in the cell, their configurations, and their sizes and positions. Static views such as labels and images make the best content for cells. Avoid views that require user interactions such as controls. Don’t include scroll views, table views, collection views, or other complex container views in cells. You may include stack views in your cells, but minimize the number of items in your stack view to improve performance.
 
@@ -88,7 +88,7 @@ override func tableView(_ tableView: UITableView,
 }
 ```
 
-##### Change the height of rows
+### Change the height of rows
 
 A table view tracks the height of rows separately from the cells that represent them. [`UITableView`](./uitableview.md) provides default sizes for rows, but you can override the default height by assigning a custom value to the table view’s [`rowHeight`](./uitableview/rowheight.md) property. Always use this property when the height of all of your rows is the same. Doing so is more efficient than returning the height values from your delegate object.
 
@@ -109,13 +109,13 @@ override func tableView(_ tableView: UITableView,
 
 The table view asks for the heights of visible rows only. As the user scrolls, the table view asks you to provide the height for each row as it appears, including when it moves offscreen and then back onscreen.
 
-##### Restore your cell’s original appearance before reuse
+### Restore your cell’s original appearance before reuse
 
 When a cell moves offscreen, the table view removes it from its view hierarchy and places it in an internally managed recycling queue. When you request a new cell using the table view’s [`dequeueReusableCell(withIdentifier:for:)`](./uitableview/dequeuereusablecell%28withidentifier,for%29.md) method, the table view returns cells from the recycling queue first. If the queue is empty, the table view instantiates a new cell from your storyboard.
 
 If you change the appearance of your custom cell’s views, implement the [`prepareForReuse()`](./uitableviewcell/prepareforreuse%28%29.md) method of your cell subclass. In your implementation, return the appearance of your cell’s views to their original state. For example, if you change the [`alpha`](./uiview/alpha.md) property of a view in your cell, return that property to its original value. You don’t need to clear label text, set images to `nil`, or do anything that would be corrected by your [`tableView(_:cellForRowAt:)`](./uitableviewdatasource/tableview%28_,cellforrowat%29.md) method when configuring the cell for display.
 
-##### Add an accessory view to your cell
+### Add an accessory view to your cell
 
 An accessory view is an optional, system-defined view that appears at the trailing edge of a cell. You use accessory views to communicate standard cell behaviors to users. For example, you add a detail button to let the user know that tapping the row displays more information about the row.
 

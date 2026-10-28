@@ -25,11 +25,11 @@ func indexPath(forObject object: ResultType) -> IndexPath?
 - (NSIndexPath *) indexPathForObject:(ResultType) object;
 ```
 
-#### Return Value
+## Return Value
 
 The index path of `object` in the receiver’s fetch results, or `nil` if `object` could not be found.
 
-#### Discussion
+## Discussion
 
 In versions of iOS before 3.2, this method raises an exception if `object` is not contained in the receiver’s fetch results.
 

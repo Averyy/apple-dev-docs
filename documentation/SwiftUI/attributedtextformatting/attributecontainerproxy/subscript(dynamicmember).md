@@ -43,7 +43,7 @@ subscript<S>(dynamicMember keyPath: KeyPath<AttributeScopes, S.Type>) -> Attribu
 subscript<S>(dynamicMember keyPath: KeyPath<Scope, S>) -> AttributedTextFormatting.AttributeContainerProxy<Scope, Attribute>.Scoped<S> where S : AttributeScope { get set }
 ```
 
-#### Overview
+## Overview
 
 For details on how attribute value constraining works, refer to [`constrain(_:)`](../../attributedtextvalueconstraint/constrain%28_%29.md).
 

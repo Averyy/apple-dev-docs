@@ -21,7 +21,7 @@ A custom attribute that constructs a widget bundle’s body.
 struct WidgetBundleBuilder
 ```
 
-#### Overview
+## Overview
 
 Use the `@WidgetBundleBuilder` attribute to group multiple widgets listed in the [`body`](./widgetbundle/body-swift.property.md) property of a widget bundle. For example, the following code defines a widget bundle that consists of two widgets.
 

@@ -42,7 +42,7 @@ string CampaignSystemLimitedStatusReason
 - `BRAND_POLICY_ISSUES`: A brand policy condition is limiting delivery.
 - `AD_GROUPS_LIMITED`: One or more ad groups are serving at reduced capacity.
 
-#### Discussion
+## Discussion
 
 The `CampaignSystemLimitedStatusReason` values appear in the `systemStatusLimitingReasons` array on a [`Campaign`](./campaign.md) alongside an active `systemStatus`. Unlike `CampaignSystemStatusReason`, these codes don’t stop delivery. They indicate conditions that constrain reach or impression volume.
 

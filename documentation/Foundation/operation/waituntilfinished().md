@@ -25,7 +25,7 @@ func waitUntilFinished()
 - (void) waitUntilFinished;
 ```
 
-#### Discussion
+## Discussion
 
 An operation object must never call this method on itself and should avoid calling it on any operations submitted to the same operation queue as itself. Doing so can cause the operation to deadlock. Instead, other parts of your app may call this method as needed to prevent other tasks from completing until the target operation object finishes. It is generally safe to call this method on an operation that is in a different operation queue, although it is still possible to create deadlocks if each operation waits on the other.
 

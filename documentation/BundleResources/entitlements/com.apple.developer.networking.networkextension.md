@@ -33,7 +33,7 @@ The APIs an app can use to customize networking features.
 - `relay`: The APIs you use to relay TCP and UDP connections, when signed with a Developer ID profile.
 - `url-filter-provider`: The APIs you use to create and manage [URL filters](../../NetworkExtension/url-filters.md).
 
-#### Discussion
+## Discussion
 
 To add this entitlement to an App Store app, enable the Network Extensions capability in Xcode.
 

@@ -27,7 +27,7 @@ func BNNSFilterApply(_ filter: BNNSFilter?, _ in: UnsafeRawPointer, _ out: Unsaf
 int BNNSFilterApply(BNNSFilter filter, const void *in, void *out);
 ```
 
-#### Return Value
+## Return Value
 
 Returns 0 on success, -1 on failure.
 

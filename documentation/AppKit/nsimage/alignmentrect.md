@@ -19,7 +19,7 @@ var alignmentRect: NSRect { get set }
 @property NSRect alignmentRect;
 ```
 
-#### Discussion
+## Discussion
 
 Alignment rectangles specify baselines that you can use to position the content of an image more accurately. These baselines are merely hints that your own code can use to determine positioning. The `NSImage` class does not use this rectangle during drawing; however, instances of [`NSCell`](../nscell.md) typically use this information when laying out images within their boundaries.
 

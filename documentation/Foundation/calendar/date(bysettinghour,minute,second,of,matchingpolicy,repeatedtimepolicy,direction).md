@@ -21,11 +21,11 @@ Returns a new `Date` representing the date calculated by setting hour, minute, a
 func date(bySettingHour hour: Int, minute: Int, second: Int, of date: Date, matchingPolicy: Calendar.MatchingPolicy = .nextTime, repeatedTimePolicy: Calendar.RepeatedTimePolicy = .first, direction: Calendar.SearchDirection = .forward) -> Date?
 ```
 
-#### Return Value
+## Return Value
 
 A `Date` representing the result of the search, or `nil` if a result could not be found.
 
-#### Discussion
+## Discussion
 
 If no such time exists, the next available time is returned (which could, for example, be in a different day than the nominal target date). The intent is to return a date on the same day as the original date argument.  This may result in a date which is backward than the given date, of course.
 

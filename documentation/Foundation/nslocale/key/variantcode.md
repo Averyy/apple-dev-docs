@@ -25,7 +25,7 @@ static let variantCode: NSLocale.Key
 extern NSLocaleKey const NSLocaleVariantCode;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an `NSString` object; for example, `"POSIX"`.
 

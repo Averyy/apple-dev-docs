@@ -24,11 +24,11 @@ func scatterWithData(_ dataTensor: MPSGraphTensor, updates updatesTensor: MPSGra
 - (MPSGraphTensor *) scatterWithDataTensor:(MPSGraphTensor *) dataTensor updatesTensor:(MPSGraphTensor *) updatesTensor indicesTensor:(MPSGraphTensor *) indicesTensor axis:(NSInteger) axis mode:(MPSGraphScatterMode) mode name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object
 
-#### Discussion
+## Discussion
 
 Scatters the slices in updatesTensor to the result tensor along the indices in indicesTensor, on top of dataTensor. The scatter is defined as
 

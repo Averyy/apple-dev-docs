@@ -5,7 +5,7 @@
 
 A set of methods that provides accessibility information about views and controls in an app’s user interface.
 
-#### Overview
+## Overview
 
 The `UIAccessibility` informal protocol provides accessibility information about an app’s user interface elements. Assistive apps, such as VoiceOver, convey this information to users with disabilities to help them use the app.
 

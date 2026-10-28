@@ -22,7 +22,7 @@ Performs the transformation on a single input.
 func applied(to input: Self.Input, eventHandler: EventHandler?) async throws -> Self.Output
 ```
 
-#### Return Value
+## Return Value
 
 An output produced by applying the transformer to the input.
 

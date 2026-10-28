@@ -15,11 +15,11 @@ Predicts neighbors.
 func prediction(from text: String, maxCount: Int = 10, maxDistance: Double = 2.0, distanceType: NLDistanceType = .cosine) throws -> [(text: String, distance: Double)]
 ```
 
-#### Return Value
+## Return Value
 
 An array of neighboring strings and their distances to the input string.
 
-#### Discussion
+## Discussion
 
 The distance values are calculated with a formula determined by [`NLDistanceType`](../../NaturalLanguage/nldistancetype.md), such as [`NLDistanceType.cosine`](../../NaturalLanguage/nldistancetype/cosine.md).
 

@@ -15,7 +15,7 @@ Updates the DHCP client preferences to include the specified list of options for
 Boolean DHCPClientPreferencesSetApplicationOptions(CFStringRef applicationID, const UInt8 *options, CFIndex count);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the operation succeeded; otherwise, `FALSE`.
 

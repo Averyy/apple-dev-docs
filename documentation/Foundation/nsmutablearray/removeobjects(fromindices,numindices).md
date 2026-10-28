@@ -26,13 +26,13 @@ func removeObjects(fromIndices indices: UnsafeMutablePointer<Int>, numIndices cn
 - (void) removeObjectsFromIndices:(NSUInteger *) indices numIndices:(NSUInteger) cnt;
 ```
 
-#### Discussion
+## Discussion
 
 This method is similar to [`removeObject(at:)`](./removeobject%28at%29.md), but it allows you to efficiently remove multiple objects with a single operation. If you sort the list of indexes in ascending order, you will improve the speed of this operation.
 
 This method cannot be sent to a remote object with distributed objects.
 
-##### Special Considerations
+### Special Considerations
 
 This deprecated method uses a C array of indices. The [`removeObjects(at:)`](./removeobjects%28at%29.md) method uses an [`NSIndexSet`](../nsindexset.md) which provides a more efficient way of indexing into an array.
 

@@ -19,7 +19,7 @@ The maximum number of selections the user can make.
 @property (nonatomic) NSInteger selectionLimit;
 ```
 
-#### Discussion
+## Discussion
 
 This property updates the photos picker configuration ([`PHPickerConfiguration`](../phpickerconfiguration-swift.struct.md)) property [`selectionLimit`](../phpickerconfiguration-swift.struct/selectionlimit.md).
 

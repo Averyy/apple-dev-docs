@@ -15,7 +15,7 @@ Gets the number of bytes reserved at the front of the packet’s buffer.
 virtual kern_return_t GetHeadroom(uint8_t *headroom) const;
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` on success, or another value if an error occurred.
 

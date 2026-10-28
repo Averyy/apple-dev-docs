@@ -23,7 +23,7 @@ var searchDisplayController: UISearchDisplayController? { get }
 @property (nonatomic, strong, readonly, nullable) UISearchDisplayController * searchDisplayController;
 ```
 
-#### Discussion
+## Discussion
 
 This property reflects the value of the `searchDisplayController` outlet that you set in Interface Builder. If you create your search display controller programmatically, this property is set automatically by the search display controller when it is initialized.
 

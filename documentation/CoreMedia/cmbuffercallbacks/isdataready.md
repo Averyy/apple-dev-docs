@@ -25,7 +25,7 @@ var isDataReady: CMBufferGetBooleanCallback?
 CMBufferGetBooleanCallback isDataReady;
 ```
 
-#### Discussion
+## Discussion
 
 This may be `NULL` (data will be assumed to be ready).
 

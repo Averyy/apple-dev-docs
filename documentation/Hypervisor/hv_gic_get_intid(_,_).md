@@ -19,7 +19,7 @@ func hv_gic_get_intid(_ interrupt: hv_gic_intid_t, _ intid: UnsafeMutablePointer
 extern hv_return_t hv_gic_get_intid(hv_gic_intid_t interrupt, uint32_t *intid);
 ```
 
-#### Return Value
+## Return Value
 
 [`HV_SUCCESS`](./hv_success.md) on success; otherwise, an error code.
 

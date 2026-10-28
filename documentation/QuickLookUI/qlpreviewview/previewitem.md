@@ -19,7 +19,7 @@ var previewItem: (any QLPreviewItem)! { get set }
 @property (retain) id<QLPreviewItem> previewItem;
 ```
 
-#### Discussion
+## Discussion
 
 Quick Look requires Items you wish to conform to the [`QLPreviewItem`](../qlpreviewitem.md) protocol. When you set this property, the [`QLPreviewView`](../qlpreviewview.md) loads the preview asynchronously. Due to this asynchronous behavior, don’t assume that the preview is ready immediately after assigning it to this property.
 

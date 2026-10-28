@@ -22,7 +22,7 @@ var phase: BEScrollViewScrollUpdate.Phase { get }
 @property (nonatomic, readonly) BEScrollViewScrollUpdatePhase phase;
 ```
 
-#### Discussion
+## Discussion
 
 The phases of a scroll update follow a state machine:
 

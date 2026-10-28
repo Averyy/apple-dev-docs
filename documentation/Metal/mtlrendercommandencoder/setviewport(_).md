@@ -25,7 +25,7 @@ func setViewport(_ viewport: MTLViewport)
 - (void) setViewport:(MTLViewport) viewport;
 ```
 
-#### Discussion
+## Discussion
 
 The render pipeline linearly maps vertex positions from normalized device coordinates to viewport coordinates by applying a viewport during the rasterization stage. It applies the transform first and then rasterizes the primitive while clipping any fragments outside the scissor rectangle (see [`setScissorRect(_:)`](./setscissorrect%28_%29.md)) or the render target’s extents.
 

@@ -17,7 +17,7 @@ A string that specifies the decimal separator.
 extern NSString * const NSDecimalSeparator;
 ```
 
-#### Discussion
+## Discussion
 
 The decimal separator separates the ones place from the tenths place. The default is “`.`”.
 

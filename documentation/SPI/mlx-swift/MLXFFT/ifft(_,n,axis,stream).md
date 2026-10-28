@@ -19,11 +19,11 @@ One dimensional inverse discrete Fourier Transform.
 func ifft(_ array: MLXArray, n: Int? = nil, axis: Int = -1, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 Inverse DFT of the input along the given axis
 
-##### See Also
+### See Also
 
 - [MLXFFT](./MLXFFT.md)
 

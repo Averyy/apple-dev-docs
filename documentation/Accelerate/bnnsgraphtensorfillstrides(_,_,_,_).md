@@ -25,11 +25,11 @@ func BNNSGraphTensorFillStrides(_ graph: bnns_graph_t, _ function: UnsafePointer
 int BNNSGraphTensorFillStrides(bnns_graph_t graph, const char *function, const char *argument, BNNSTensor *tensor);
 ```
 
-#### Return Value
+## Return Value
 
 `0` on success, nonzero on failure.
 
-#### Discussion
+## Discussion
 
 Call this function to fill the strides of a buffer according to the specification of the compiled graph’s model.
 

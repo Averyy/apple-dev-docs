@@ -15,7 +15,7 @@ Floating window level.
 static var floating: WindowLevel { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this if your window needs to function as a utility window and stay on top of other windows, for example, a PIP (picture-in-picture) window.
 

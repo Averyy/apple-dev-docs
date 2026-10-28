@@ -19,11 +19,11 @@ Returns the number of items in the specified section of the snapshot.
 func numberOfItems(inSection identifier: SectionIdentifierType) -> Int
 ```
 
-#### Return Value
+## Return Value
 
 The number of items in the specified section. This method returns `0` if the section is empty.
 
-#### Discussion
+## Discussion
 
 If you call this method with the identifier of a section that doesn’t exist in the snapshot, the app throws an error.
 

@@ -25,11 +25,11 @@ class var `default`: NSDecimalNumberHandler { get }
 @property (class, strong, readonly) NSDecimalNumberHandler * defaultDecimalNumberHandler;
 ```
 
-#### Return Value
+## Return Value
 
 The default instance of `NSDecimalNumberHandler`.
 
-#### Discussion
+## Discussion
 
 This default decimal number handler rounds to the closest possible return value. It assumes your need for precision does not exceed 38 significant digits, and it raises an exception when its `NSDecimalNumber` object tries to divide by `0` or when its `NSDecimalNumber` object produces a number too big or too small to be represented.
 

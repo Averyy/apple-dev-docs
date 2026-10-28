@@ -21,7 +21,7 @@ An optional closure that converts the model’s response to a string for the mod
 let evaluationTarget: (@Sendable (Input.ExpectedValue) -> String)?
 ```
 
-#### Discussion
+## Discussion
 
 When `nil`, the evaluator JSON-serializes the response automatically.
 

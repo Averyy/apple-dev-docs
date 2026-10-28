@@ -24,7 +24,7 @@ var accountProviderIdentifier: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * accountProviderIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to brand your app.
 

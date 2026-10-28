@@ -23,11 +23,11 @@ init(_ matrix: simd_float4x3)
 static SPAffineTransform3DFloat SPAffineTransform3DFloatMakeWith4x3Matrix(simd_float4x3 matrix);
 ```
 
-#### Return Value
+## Return Value
 
 A new affine transform structure.
 
-#### Discussion
+## Discussion
 
 Returns a new affine transform structure from the specified 4 x 3 matrix.
 

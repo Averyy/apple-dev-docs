@@ -24,11 +24,11 @@ func capture() -> Self
 - (instancetype) capture;
 ```
 
-#### Return Value
+## Return Value
 
 A snapshot of the profile.
 
-#### Discussion
+## Discussion
 
 A snapshot is a copy of profile at a moment in time with its current element values. Unlike other profiles, you can set the values of a snapshot’s elements.
 

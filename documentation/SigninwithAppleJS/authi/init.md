@@ -21,7 +21,7 @@ void init(
 
 - [Configuring your webpage for Sign in with Apple](../../SigninwithApple/configuring-your-webpage-for-sign-in-with-apple.md)
 
-#### Discussion
+## Discussion
 
 Use this method to configure the authentication object. Alternatively, you can use meta tags on your website to configure the authentication object.
 

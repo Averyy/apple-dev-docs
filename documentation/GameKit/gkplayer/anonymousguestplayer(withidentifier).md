@@ -24,11 +24,11 @@ class func anonymousGuestPlayer(withIdentifier guestIdentifier: String) -> Self
 + (instancetype) anonymousGuestPlayerWithIdentifier:(NSString *) guestIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 A player object that represents the guest.
 
-#### Discussion
+## Discussion
 
 You can treat a guest player the same as an initialized player in regard to matchmaking services.
 

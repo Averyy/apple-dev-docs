@@ -15,7 +15,7 @@ Returns the virtual address of an offset into the memory buffer.
 virtual void * getBytesNoCopy(vm_size_t start, vm_size_t withLength);
 ```
 
-#### Return Value
+## Return Value
 
 The address at the specified offset into the bufer, or `NULL` if the offset and length yield an invalid address range.
 

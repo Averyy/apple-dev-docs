@@ -19,7 +19,7 @@ func resetCursorRect(_ cellFrame: NSRect, in controlView: NSView)
 - (void) resetCursorRect:(NSRect) cellFrame inView:(NSView *) controlView;
 ```
 
-#### Discussion
+## Discussion
 
 The receiver must be an enabled and selectable (or editable) text-type cell.
 

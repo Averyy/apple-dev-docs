@@ -19,7 +19,7 @@ protocol NSTextFinderClient : NSObjectProtocol
 @protocol NSTextFinderClient <NSObject>
 ```
 
-#### Overview
+## Overview
 
 See [`NSTextFinder`](./nstextfinder.md) for details.
 

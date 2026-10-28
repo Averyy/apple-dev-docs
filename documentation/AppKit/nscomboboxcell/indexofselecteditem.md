@@ -19,7 +19,7 @@ var indexOfSelectedItem: Int { get }
 @property (readonly) NSInteger indexOfSelectedItem;
 ```
 
-#### Discussion
+## Discussion
 
 The index of the last item selected from the combo box’s pop-up list or –1 if no item is selected. Note that nothing is initially selected in a newly initialized combo box cell.
 

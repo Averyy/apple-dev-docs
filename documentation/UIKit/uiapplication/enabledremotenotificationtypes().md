@@ -23,11 +23,11 @@ func enabledRemoteNotificationTypes() -> UIRemoteNotificationType
 - (UIRemoteNotificationType) enabledRemoteNotificationTypes;
 ```
 
-#### Return Value
+## Return Value
 
 A bit mask whose values indicate the types of notifications the user has requested for the app. See [`UIRemoteNotificationType`](../uiremotenotificationtype.md) for valid bit-mask values.
 
-#### Discussion
+## Discussion
 
 The values in the returned bit mask indicate the types of notifications currently enabled for the app. These types are first set when the app calls the [`registerForRemoteNotifications(matching:)`](./registerforremotenotifications%28matching%29.md) method to register itself with Apple Push Notification service. Thereafter, the user may modify these accepted notification types in the Notifications preference of the Settings app. This method returns those initial or modified values. iOS does not display or play notification types specified in the notification payload that are not one of the enabled types. For example, the app might accept icon-badging as a form of notification, but might reject sounds and alert messages, even if they are specified in the notification payload.
 

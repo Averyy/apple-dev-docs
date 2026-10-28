@@ -19,7 +19,7 @@ var kFxLightType_Point: Int { get }
 kFxLightType_Point
 ```
 
-#### Discussion
+## Discussion
 
 Unlike ambient light, light eminating from a point light can be occluded.
 

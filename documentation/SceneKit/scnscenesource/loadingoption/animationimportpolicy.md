@@ -25,7 +25,7 @@ static let animationImportPolicy: SCNSceneSource.LoadingOption
 extern SCNSceneSourceLoadingOption const SCNSceneSourceAnimationImportPolicyKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is one of the constants listed in `Animation Import Policies`.
 

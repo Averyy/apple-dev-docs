@@ -9,11 +9,11 @@
 virtual UInt8 GetInterfaceClass();
 ```
 
-#### Return Value
+## Return Value
 
 the interface class
 
-#### Overview
+## Overview
 
 returns the class code for this interface (assigned by the USB) a value of zero is reserved if the value is FFh, the interface class is vendor-specific all other values are reserved for assignment by the USB
 

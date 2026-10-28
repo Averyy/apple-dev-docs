@@ -5,7 +5,7 @@
 
 A concatenation of one or more atoms that structure a timed metadata media sample.
 
-#### Overview
+## Overview
 
 A timed metadata media sample is structured as a concatenation of one or more atoms. Typically each atom will contain a metadata value corresponding to a key signaled in the timed metadata sample description.
 
@@ -17,7 +17,7 @@ If no values for any key are present for a time range, one approach is to includ
 
 In general, however, it is preferable to include a NULL metadata media sample data instead of using a track edit with an empty edit list to indicate the absence of metadata. Some readers may be unprepared for complex edits (more than one edit list entry and/or a non-contiguous presentation media time).
 
-#### Timed metadata media sample structure
+## Timed metadata media sample structure
 
 The timed metadata media sample data consists of some number of concatenated atoms. A `local_key_id` value defines the atom type for each of the atoms. The `local_key_id` value corresponds to a `local_key_id` defined for a metadata key atom in the metadata key table atom for the timed metadata sample. No special interpretation is made regarding the 32-bit value of `local_key_id`. Its interpretation is based solely on what is defined in the corresponding metadata key of the associated metadata sample description.
 

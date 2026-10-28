@@ -12,11 +12,11 @@ IOUSBDescriptorHeader * ( *FindNextAltInterface)(
    IOUSBFindInterfaceRequest *request);
 ```
 
-#### Return Value
+## Return Value
 
 Pointer to a matching interface descriptor, or NULL if none match.
 
-#### Overview
+## Overview
 
 return alternate interface descriptor satisfying the requirements specified in request, or NULL if there aren't any. discussion request is updated with the properties of the returned interface.
 

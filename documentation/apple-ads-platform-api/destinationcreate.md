@@ -15,11 +15,11 @@ Request payload for specifying the post-tap destination when creating an ad crea
 object DestinationCreate
 ```
 
-#### Discussion
+## Discussion
 
 The [`CreativeCreate`](./creativecreate.md) embeds `DestinationCreate` to define where users go after tapping the ad.
 
-##### Example
+### Example
 
 ```json
 {

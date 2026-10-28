@@ -22,7 +22,7 @@ var stepValue: Double { get set }
 @property (nonatomic) double stepValue;
 ```
 
-#### Discussion
+## Discussion
 
 Must be numerically greater than `0`. If you attempt to set this property’s value to `0` or to a negative number, the system raises an [`invalidArgumentException`](../../Foundation/nsexceptionname/invalidargumentexception.md) exception.
 

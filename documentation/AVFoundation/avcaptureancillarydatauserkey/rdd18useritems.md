@@ -23,7 +23,7 @@ static let rdd18UserItems: AVCaptureAncillaryDataUserKey
 extern AVCaptureAncillaryDataUserKey const AVCaptureAncillaryDataUserKeyRDD18UserItems;
 ```
 
-#### Discussion
+## Discussion
 
 Clients may inspect the user metadata with `AVCaptureAncillaryDataEncoder\currentUserDefinedAncillaryData` and set it with `AVCaptureAncillaryDataEncoder\setRDD18AncillaryData:forTag:error:` `AVCaptureAncillaryDataEncoder\setRDD18AncillaryDataString:forTag:error:` or remove it with `AVCaptureAncillaryDataEncoder\removeRDD18AncillaryDataForTag:`
 

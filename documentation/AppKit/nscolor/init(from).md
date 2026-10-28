@@ -19,7 +19,7 @@ init?(from pasteBoard: NSPasteboard)
 + (NSColor *) colorFromPasteboard:(NSPasteboard *) pasteBoard;
 ```
 
-#### Return Value
+## Return Value
 
 The color currently on the pasteboard or `nil` if `pasteBoard` doesn’t contain color data. The returned color’s alpha component is set to 1.0 if [`ignoresAlpha`](./ignoresalpha.md) returns [`true`](../../Swift/true.md).
 

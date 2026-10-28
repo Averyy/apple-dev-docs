@@ -16,7 +16,7 @@ Reasons ARKit is unable to classify a plane.
 enum Status
 ```
 
-#### Overview
+## Overview
 
 [`ARPlaneAnchor.Classification.Status`](./status.md) tells you why a plane anchor’s [`classification`](../classification-2r4x8.md) is [`ARPlaneAnchor.Classification.none(_:)`](./none%28_%29.md).
 

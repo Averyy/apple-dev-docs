@@ -23,7 +23,7 @@ func image(for icon: UISearchBar.Icon, state: UIControl.State) -> UIImage?
 - (UIImage *) imageForSearchBarIcon:(UISearchBarIcon) icon state:(UIControlState) state;
 ```
 
-#### Return Value
+## Return Value
 
 The image used for the search bar icon identified by `icon` in the state identified by `state`.
 

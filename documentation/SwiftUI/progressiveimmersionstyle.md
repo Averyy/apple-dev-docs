@@ -16,7 +16,7 @@ An immersion style that displays unbounded content that partially replaces passt
 struct ProgressiveImmersionStyle
 ```
 
-#### Overview
+## Overview
 
 Use [`progressive`](./immersionstyle/progressive.md) with the [`immersionStyle(selection:in:)`](./scene/immersionstyle%28selection,in%29.md)modifier to specify this style.
 

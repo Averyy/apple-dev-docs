@@ -9,7 +9,7 @@
 volatile bool workToDo;
 ```
 
-#### Overview
+## Overview
 
 Used to to indicate that an interrupt has fired and needs to be processed.
 

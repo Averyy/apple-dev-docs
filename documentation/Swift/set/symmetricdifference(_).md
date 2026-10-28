@@ -23,11 +23,11 @@ func symmetricDifference<S>(_ other: S) -> Set<Element> where Element == S.Eleme
 
 Available when `Element` conforms to `Hashable`.
 
-#### Return Value
+## Return Value
 
 A new set.
 
-#### Discussion
+## Discussion
 
 In the following example, the `eitherNeighborsOrEmployees` set is made up of the elements of the `employees` and `neighbors` sets that are not in both `employees` *and* `neighbors`. In particular, the names `"Bethany"` and `"Eric"` do not appear in `eitherNeighborsOrEmployees`.
 

@@ -21,11 +21,11 @@ Returns the remainder of this value divided by the given value.
 func remainder(dividingBy other: Self) -> Self
 ```
 
-#### Return Value
+## Return Value
 
 The remainder of this value divided by `other`.
 
-#### Discussion
+## Discussion
 
 For two finite values `x` and `y`, the remainder `r` of dividing `x` by `y` satisfies `x == y * q + r`, where `q` is the integer nearest to `x / y`. If `x / y` is exactly halfway between two integers, `q` is chosen to be even. Note that `q` is *not* `x / y` computed in floating-point arithmetic, and that `q` may not be representable in any available integer type.
 

@@ -24,7 +24,7 @@ static let characterSet: UIFontDescriptor.AttributeName
 extern UIFontDescriptorAttributeName const UIFontDescriptorCharacterSetAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value is an [`NSCharacterSet`](../../../Foundation/nscharacterset.md) instance that represents the set of Unicode characters that the font covers. The font supplies the default value.
 

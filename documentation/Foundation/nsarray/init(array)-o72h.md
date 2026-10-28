@@ -25,11 +25,11 @@ convenience init(array: [Any])
 - (instancetype) initWithArray:(NSArray<id> *) array;
 ```
 
-#### Return Value
+## Return Value
 
 An array initialized to contain the objects in `anArray`. The returned object might be different than the original receiver.
 
-#### Discussion
+## Discussion
 
 After an immutable array has been initialized in this way, it cannot be modified.
 

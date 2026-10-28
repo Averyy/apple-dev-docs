@@ -24,7 +24,7 @@ var scale: CGFloat { get set }
 @property CGFloat scale;
 ```
 
-#### Discussion
+## Discussion
 
 The scale of the cell will vary by a random amount within the range specified by [`scaleRange`](./scalerange.md). The [`scaleSpeed`](./scalespeed.md) property determines the rate of change.
 

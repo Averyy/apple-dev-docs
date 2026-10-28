@@ -25,7 +25,7 @@ func CMTimebaseSetTimerToFireImmediately(_ timebase: CMTimebase, timer: CFRunLoo
 extern OSStatus CMTimebaseSetTimerToFireImmediately(CMTimebaseRef timebase, CFRunLoopTimerRef timer);
 ```
 
-#### Discussion
+## Discussion
 
 The timer must be on the list of timers managed by the timebase. This is equivalent to calling `CFRunLoopTimerSetNextFireDate( timer, CFAbsoluteTimeGetCurrent() );` except that the timebase gets to know that it shouldn’t interfere.
 

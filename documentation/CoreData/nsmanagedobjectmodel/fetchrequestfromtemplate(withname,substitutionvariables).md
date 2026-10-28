@@ -25,11 +25,11 @@ func fetchRequestFromTemplate(withName name: String, substitutionVariables varia
 - (NSFetchRequest *) fetchRequestFromTemplateWithName:(NSString *) name substitutionVariables:(NSDictionary<NSString *,id> *) variables;
 ```
 
-#### Return Value
+## Return Value
 
 A copy of the fetch request template with the variables substituted by values from `variables`.
 
-#### Discussion
+## Discussion
 
 The `variables` dictionary must provide values for all the variables. If you want to test for a nil value, use `[NSNull null]`.
 

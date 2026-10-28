@@ -23,7 +23,7 @@ func moveItem(at indexPath: IndexPath, to newIndexPath: IndexPath)
 - (void) moveItemAtIndexPath:(NSIndexPath *) indexPath toIndexPath:(NSIndexPath *) newIndexPath;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to reorganize existing data items. You might do this when you rearrange the items within your data source object or in response to user interactions with the collection view. You can move items between sections or within the same section. The collection view updates the layout as needed to account for the move, animating cells into position as needed.
 

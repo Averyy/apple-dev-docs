@@ -29,7 +29,7 @@ protocol AVPictureInPictureControllerDelegate : NSObjectProtocol
 - [Adopting Picture in Picture for video calls](./adopting-picture-in-picture-for-video-calls.md)
 - [Adopting Picture in Picture in a custom player](./adopting-picture-in-picture-in-a-custom-player.md)
 
-#### Overview
+## Overview
 
 Adopt this protocol in a custom object, and assign the object as the [`delegate`](./avpictureinpicturecontroller/delegate.md) of your [`AVPictureInPictureController`](./avpictureinpicturecontroller.md) instance.
 

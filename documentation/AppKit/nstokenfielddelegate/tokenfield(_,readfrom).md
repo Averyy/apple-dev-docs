@@ -20,7 +20,7 @@ optional func tokenField(_ tokenField: NSTokenField, readFrom pboard: NSPasteboa
 - (NSArray *) tokenField:(NSTokenField *) tokenField readFromPasteboard:(NSPasteboard *) pboard;
 ```
 
-#### Return Value
+## Return Value
 
 An array of represented objects created from the pasteboard data.
 

@@ -20,7 +20,7 @@ The current item.
 var currentItem: WebPage.BackForwardList.Item? { get }
 ```
 
-#### Discussion
+## Discussion
 
 When the webpage has not loaded any resources, this value will be `nil`.
 

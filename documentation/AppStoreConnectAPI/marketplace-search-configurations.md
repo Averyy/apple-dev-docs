@@ -5,7 +5,7 @@
 
 Add and read information for alternative marketplace search configurations.
 
-#### Overview
+## Overview
 
 Alternative marketplaces can use a sitemap that uses an industry-standard specification, with additional features specified by Apple. To learn more about the data structure for the sitemap, see [Building a searchable catalog for your marketplace app for inclusion in Spotlight](./building-a-searchable-catalog-for-your-marketplace-app-for-inclusion-in-spotlight.md). To add the URL for this sitemap to [Applebot](https://support.apple.com/en-us/HT204683) web crawler use the [`Add a marketplace search detail url`](./post-v1-marketplacesearchdetails.md) endpoint.
 

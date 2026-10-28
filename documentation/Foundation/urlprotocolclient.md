@@ -25,7 +25,7 @@ protocol URLProtocolClient : NSObjectProtocol, Sendable
 @protocol NSURLProtocolClient <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Don’t implement this protocol in your application. Instead, your [`URLProtocol`](./urlprotocol.md) subclass calls methods of this protocol on its own [`client`](./urlprotocol/client.md) property.
 

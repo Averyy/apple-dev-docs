@@ -30,7 +30,7 @@ var restaurantIdentifier: String { get set }
 @property (atomic, copy) NSString * restaurantIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 You provide Apple with unique identifiers for the restaurants that your app supports. When the user selects a restaurant, Apple fills this property with the unique identifier that you provided.
 

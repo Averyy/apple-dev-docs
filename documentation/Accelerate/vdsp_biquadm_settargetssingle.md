@@ -21,7 +21,7 @@ Sets the single-precision coefficient target values of the specified single-prec
 extern void vDSP_biquadm_SetTargetsSingle(vDSP_biquadm_Setup __setup, const float *__targets, float __interp_rate, float __interp_threshold, vDSP_Length __start_sec, vDSP_Length __start_chn, vDSP_Length __nsec, vDSP_Length __nchn);
 ```
 
-#### Discussion
+## Discussion
 
 This function sets target values for the biquadratic filter’s coefficients. Each subsequent call to [`vDSP_biquadm`](../kernel/api-1579994-vdsp_biquadm.md) increments the coefficients until the difference between their values and their corresponding target is less than a specified threshold.
 

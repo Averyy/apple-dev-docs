@@ -19,7 +19,7 @@ var additionalActions: [NSUserNotificationAction]? { get set }
 @property (copy, nullable) NSArray<NSUserNotificationAction *> * additionalActions;
 ```
 
-#### Discussion
+## Discussion
 
 This array contains `NSUserNotificationAction` objects that describe the different actions for a notification in addition to the default action described by [`actionButtonTitle`](./actionbuttontitle.md).
 

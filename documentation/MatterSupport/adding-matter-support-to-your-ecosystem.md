@@ -5,11 +5,11 @@
 
 Allow people to add Matter accessories to your platform.
 
-#### Overview
+## Overview
 
 With the MatterSupport framework, you can administer, add, and configure Matter devices in your ecosystem using an iOS device. To onboard a device, you need to configure discovery, set up a home, create an extension request handler, and override its methods.
 
-##### Configure discovery
+### Configure discovery
 
 Add the following to your app’s `Info.plist` so it can discover Matter-related services. See [`NSBonjourServices`](../BundleResources/information-property-list/nsbonjourservices.md) for more information.
 
@@ -22,7 +22,7 @@ Add the following to your app’s `Info.plist` so it can discover Matter-related
 </array>
 ```
 
-##### Set up the home
+### Set up the home
 
 Define the home’s name, then create the topology and pass your ecosystem name and an array of homes.
 
@@ -78,7 +78,7 @@ do {
 }
 ```
 
-##### Create the extension request handler
+### Create the extension request handler
 
 Subclass [`MatterAddDeviceExtensionRequestHandler`](./matteradddeviceextensionrequesthandler.md) and override its methods. This class facilitates the user interface flow during the setup of a new Matter device.
 
@@ -194,7 +194,7 @@ class MyMatterAddDeviceExtensionRequestHandler: MatterAddDeviceExtensionRequestH
 }
 ```
 
-##### Set the principal class
+### Set the principal class
 
 Register the subclass you created above in the app’s `Info.plist` as the [`NSPrincipalClass`](../BundleResources/information-property-list/nsprincipalclass.md) for the `com.apple.matter.support.extension.device-setup` extension point identifier.
 

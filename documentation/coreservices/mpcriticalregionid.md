@@ -16,7 +16,7 @@ Represents a critical region ID, which Multiprocessing Services uses to manipula
 typedef struct OpaqueMPCriticalRegionID *MPCriticalRegionID;
 ```
 
-#### Discussion
+## Discussion
 
 You obtain a critical region ID by calling the function [`MPCreateCriticalRegion`](./api-1585663-mpcreatecriticalregion.md). 
 

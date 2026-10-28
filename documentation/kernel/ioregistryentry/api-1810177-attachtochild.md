@@ -13,11 +13,11 @@ virtual bool attachToChild(
  const IORegistryPlane *plane );
 ```
 
-#### Return Value
+## Return Value
 
 true on success, or false on a resource failure, or if the parent is the same as the child.
 
-#### Overview
+## Overview
 
 This method is called in the parent entry when a child attaches, to make overrides possible. This method will also call attachToParent in the child entry if it is not being called from attachToParent. It is a no-op and success if the entry is already a child. Attaching the entry into the registry retains both the child and parent while they are attached.
 

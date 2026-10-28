@@ -17,7 +17,7 @@ A type that represents the mobile driver’s license’ DHS (U.S. Department of 
 enum DHSComplianceStatus
 ```
 
-#### Overview
+## Overview
 
 This is also known as the document’s “REAL ID status”.
 

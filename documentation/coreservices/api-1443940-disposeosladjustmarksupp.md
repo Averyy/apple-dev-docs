@@ -19,7 +19,7 @@ func DisposeOSLAdjustMarksUPP(_ userUPP: OSLAdjustMarksUPP!)
 void DisposeOSLAdjustMarksUPP(OSLAdjustMarksUPP userUPP);
 ```
 
-#### Discussion
+## Discussion
 
 See the [`OSLAdjustMarksProcPtr`](./osladjustmarksprocptr.md) callback function. 
 

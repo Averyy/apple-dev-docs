@@ -20,7 +20,7 @@ The level of confidence in the observation’s accuracy.
 let confidence: Float
 ```
 
-#### Discussion
+## Discussion
 
 The framework normalizes this value to `[0, 1]`, where `1` represents the most confident in the observation’s accuracy.
 

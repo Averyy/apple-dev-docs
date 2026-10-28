@@ -20,7 +20,7 @@ The default layer.
 static var defaultLayer: RenderLayer { get }
 ```
 
-#### Discussion
+## Discussion
 
 Entities without a [`RenderLayerComponent`](../renderlayercomponent.md) belong to this layer. Lights illuminate only this layer unless their `layers` set is changed.
 

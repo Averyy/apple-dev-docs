@@ -22,7 +22,7 @@ init<Data, C>(_ data: Data, @Chart3DContentBuilder content: @escaping (Data.Elem
 
 Available when `Content` conforms to `Chart3DContent`.
 
-#### Discussion
+## Discussion
 
 This initializer wraps the data that you provide as input in an implicit [`ForEach`](../../SwiftUI/foreach.md) structure. If you need to represent more than one series in your chart, use [`init(content:)`](./init%28content%29.md) instead.
 

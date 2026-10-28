@@ -10,7 +10,7 @@ framework: "mlx-swift/MLX"
 
 How different size arrays can be used together.
 
-#### Overview
+## Overview
 
 MLX uses Numpy style broadcasting:
 
@@ -35,7 +35,7 @@ array([[0, 1, 2],
        [9, 10, 11]], dtype=int32)
 ```
 
-###### Scalars
+#### Scalars
 
 To add `1` to each value in the array we can simply write:
 
@@ -65,7 +65,7 @@ array([[1, 1, 1],
 
 Broadcasting allows a much more efficient implementation where the scalar may simply be reused for ever element in the first array.
 
-##### Arrays
+### Arrays
 
 Array broadcasting is similar to scalar broadcasting but it requires compatible shapes.
 Going from right to left two shapes are compatible for broadcasting if any of these conditions are true:

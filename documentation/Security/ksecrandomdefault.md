@@ -25,7 +25,7 @@ let kSecRandomDefault: SecRandomRef
 extern SecRandomRef const kSecRandomDefault;
 ```
 
-#### Discussion
+## Discussion
 
 When passed to the [`SecRandomCopyBytes(_:_:_:)`](./secrandomcopybytes%28_,_,_%29.md) function as the random number generator reference, this constant indicates that the default number generator should be used.
 

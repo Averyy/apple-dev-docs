@@ -44,7 +44,7 @@ weak var parentWindow: NSWindow? { get set }
 
 - [Adding an access point to your game](../adding-an-access-point-to-your-game.md)
 
-#### Discussion
+## Discussion
 
 For Mac games, use this property to specify the parent window of the access point. If you don’t specify a parent widow, GameKit tries to add the access point to the app’s main window. For iPadOS and iOS games, and for compatible iPad or iPhone games running in visionOS, GameKit adds the access point to the main window.
 

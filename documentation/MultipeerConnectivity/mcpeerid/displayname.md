@@ -34,7 +34,7 @@ var displayName: String { get }
 @property (atomic, readonly) NSString * displayName;
 ```
 
-#### Discussion
+## Discussion
 
 For the local peer, you set this property when the object is initialized. It cannot be changed.
 

@@ -19,7 +19,7 @@ optional func usbAccessoryDidDisconnect(_ usbAccessory: AAUSBAccessory)
 - (void) usbAccessoryDidDisconnect:(AAUSBAccessory *) usbAccessory;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked every time a USB accessory, for which the listener received the connect notification, is disconnected from the system.
 

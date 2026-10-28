@@ -20,7 +20,7 @@ The maximum number of instances the mesh supports.
 var instanceCapacity: Int
 ```
 
-#### Discussion
+## Discussion
 
 Use this when using vertex attributes with a per-instance step rate.
 

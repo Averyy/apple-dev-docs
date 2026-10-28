@@ -24,11 +24,11 @@ func tiffRepresentation(of image: CIImage, format: CIFormat, colorSpace: CGColor
 - (NSData *) TIFFRepresentationOfImage:(CIImage *) image format:(CIFormat) format colorSpace:(CGColorSpaceRef) colorSpace options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Return Value
+## Return Value
 
 A data representation of the rendered image in TIFF format, or `nil` if the image could not be rendered.
 
-#### Discussion
+## Discussion
 
 To render an image for export, the image’s contents must not be empty and its [`extent`](../ciimage/extent.md) dimensions must be finite. To export after applying a filter whose output has infinite extent, see the [`clampedToExtent()`](../ciimage/clampedtoextent%28%29.md) method.
 

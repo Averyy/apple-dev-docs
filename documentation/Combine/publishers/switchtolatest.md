@@ -21,7 +21,7 @@ A publisher that flattens nested publishers.
 struct SwitchToLatest<P, Upstream> where P : Publisher, P == Upstream.Output, Upstream : Publisher, P.Failure == Upstream.Failure
 ```
 
-#### Overview
+## Overview
 
 Given a publisher that publishes [`Publisher`](../publisher.md) instances, the [`Publishers.SwitchToLatest`](./switchtolatest.md) publisher produces a sequence of events from only the most recent one. For example, given the type `AnyPublisher<URLSession.DataTaskPublisher,NSError>`, calling `switchToLatest()` results in the type `SwitchToLatest<(Data, URLResponse), URLError>`. The downstream subscriber sees a continuous stream of `(Data, URLResponse)` elements from what looks like a single [`URLSession.DataTaskPublisher`](../../Foundation/urlsession/datataskpublisher.md) even though the elements are coming from different upstream publishers.
 

@@ -20,7 +20,7 @@ optional func scanCacheUpdatedForWiFiInterface(withName interfaceName: String)
 - (void) scanCacheUpdatedForWiFiInterfaceWithName:(NSString *) interfaceName;
 ```
 
-#### Discussion
+## Discussion
 
 Register for scan cache update notifications by sending the [`startMonitoringEvent(with:)`](../cwwificlient/startmonitoringevent%28with%29.md) message to a Wi-Fi client object with the [`CWEventType.scanCacheUpdated`](../cweventtype/scancacheupdated.md) event type.
 

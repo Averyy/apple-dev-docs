@@ -25,7 +25,7 @@ init(smartCard: TKSmartCard, aid AID: Data?, instanceID: String, tokenDriver: TK
 - (instancetype) initWithSmartCard:(TKSmartCard *) smartCard AID:(NSData *) AID instanceID:(NSString *) instanceID tokenDriver:(TKSmartCardTokenDriver *) tokenDriver;
 ```
 
-#### Discussion
+## Discussion
 
 This is the designated initializer.
 

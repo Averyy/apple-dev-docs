@@ -8,7 +8,7 @@ Retrieve the authenticated user’s identity, organization details, and ad accou
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Overview
+## Overview
 
 This group exposes the following endpoints:
 

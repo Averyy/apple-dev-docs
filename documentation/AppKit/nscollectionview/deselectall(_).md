@@ -20,7 +20,7 @@ func deselectAll(_ sender: Any?)
 - (void) deselectAll:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This method works only when the [`isSelectable`](./isselectable.md) and [`allowsEmptySelection`](./allowsemptyselection.md) properties are both true  [`true`](../../Swift/true.md). If either property is set to [`false`](../../Swift/false.md), this method quietly does nothing and any connected menu item is disabled.
 

@@ -19,7 +19,7 @@ init(scrollView: NSScrollView?, orientation: NSRulerView.Orientation)
 - (instancetype) initWithScrollView:(NSScrollView *) scrollView orientation:(NSRulerOrientation) orientation;
 ```
 
-#### Discussion
+## Discussion
 
 The new ruler view displays the user’s preferred measurement units and has no client, markers, or accessory view. Unlike most subclasses of NSView, no initial frame rectangle is given for NSRulerView; its containing NSScrollView adjusts its frame rectangle as needed.
 

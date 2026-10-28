@@ -6,7 +6,7 @@
 
 Get information about the device that a replacement device replaces.
 
-#### Discussion
+## Discussion
 
 This endpoint returns the original device serial number and replacement date for a replacement device. Call this endpoint only when the device’s `is_replacement_device` field is `true` in the response from [`Get a List of Devices`](./fetch-devices.md), [`Sync the List of Devices`](./sync-devices.md), or [`Get Device Details`](./device-details.md). Calling it for a device whose `is_replacement_device` value is `false` returns HTTP 404 `DEVICE_NOT_FOUND`.
 

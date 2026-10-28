@@ -19,7 +19,7 @@ class NSFontCollection
 @interface NSFontCollection : NSObject
 ```
 
-#### Overview
+## Overview
 
 You can publicize the font collection as a named collection and it is presented through the System user interface such as the font panel and Font Book. The queries can be modified using the [`NSMutableFontCollection`](./nsmutablefontcollection.md) subclass.
 

@@ -22,7 +22,7 @@ case standard
 AVCaptureVideoStabilizationModeStandard
 ```
 
-#### Discussion
+## Discussion
 
 Standard video stabilization has a reduced field of view. Enabling video stabilization may introduce additional latency into the video capture pipeline.
 

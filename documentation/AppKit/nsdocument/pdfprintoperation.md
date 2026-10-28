@@ -19,7 +19,7 @@ var pdfPrintOperation: NSPrintOperation { get }
 @property (strong, readonly) NSPrintOperation * PDFPrintOperation;
 ```
 
-#### Discussion
+## Discussion
 
 The object in this property can be run to print the document’s current contents to a PDF file.
 

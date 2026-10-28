@@ -21,7 +21,7 @@ Creates a new decimal value exactly representing the provided integer.
 init?<T>(exactly source: T) where T : BinaryInteger
 ```
 
-#### Discussion
+## Discussion
 
 If `source` isn’t representable as a `Decimal` instance, the result is `nil`.
 

@@ -26,7 +26,7 @@ var proposedCredential: URLCredential? { get }
 @property (copy, readonly, nullable) NSURLCredential * proposedCredential;
 ```
 
-#### Discussion
+## Discussion
 
 This method returns `nil` if there is no default credential for this challenge.
 

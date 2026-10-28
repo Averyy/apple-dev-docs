@@ -24,7 +24,7 @@ var soundName: String? { get set }
 @property (copy, nullable) NSString * soundName;
 ```
 
-#### Discussion
+## Discussion
 
 If you specify a value, the system uses it to locate a sound file in the app’s bundle. The sound plays when the system receives a push notification. If the system can’t find the specified file, or if you use the string `default`, the system plays the default sound.
 

@@ -21,11 +21,11 @@ func read(from url: URL, options: [AnyHashable : Any] = [:], documentAttributes 
 - (BOOL) readFromURL:(NSURL *) url options:(NSDictionary *) options documentAttributes:(NSDictionary **) dict;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the attributed string is created successfully or [`false`](../../Swift/false.md) if it was not.
 
-#### Discussion
+## Discussion
 
 Filter services can be used to convert the contents of the URL into a format recognized by Cocoa.
 

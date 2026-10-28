@@ -19,7 +19,7 @@ var backingType: NSWindow.BackingStoreType { get set }
 @property NSBackingStoreType backingType;
 ```
 
-#### Discussion
+## Discussion
 
 The possible values for this property are described in [`NSWindow.BackingStoreType`](./backingstoretype.md). You can set the property only to switch a buffered window to retained or vice versa; you can’t change the backing type to or from nonretained after initializing a `NSWindow` object (an error is generated if you attempt to do so).
 

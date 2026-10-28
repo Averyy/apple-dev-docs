@@ -5,7 +5,7 @@
 
 Dictionary key constants to use to retrieve video encoder information.
 
-#### Overview
+## Overview
 
 Use these keys to pass to the [`VTCopyVideoEncoderList(_:_:)`](./vtcopyvideoencoderlist%28_,_%29.md) function.
 

@@ -19,7 +19,7 @@ static var terminationOnRemoval: NSStatusItem.Behavior { get }
 NSStatusItemBehaviorTerminationOnRemoval
 ```
 
-#### Discussion
+## Discussion
 
 A status item with this behavior quits the application if the user removes it from the menu bar. This behavior implicitly provides the same functionality as [`removalAllowed`](./removalallowed.md).
 

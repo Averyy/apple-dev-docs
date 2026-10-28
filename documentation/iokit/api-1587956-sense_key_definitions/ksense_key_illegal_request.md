@@ -15,7 +15,7 @@
 kSENSE_KEY_ILLEGAL_REQUEST = 0x05
 ```
 
-#### Discussion
+## Discussion
 
 Device server detected an illegal request.
 

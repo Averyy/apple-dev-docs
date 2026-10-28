@@ -21,7 +21,7 @@ The type of elements produced by this asynchronous sequence.
 typealias Element = Character
 ```
 
-#### Discussion
+## Discussion
 
 [`AsyncCharacterSequence`](../asynccharactersequence.md) produces elements of type [`Character`](../../Swift/character.md).
 

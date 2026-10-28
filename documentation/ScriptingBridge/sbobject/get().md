@@ -20,11 +20,11 @@ func get() -> Any?
 - (id) get;
 ```
 
-#### Return Value
+## Return Value
 
 For most properties, the result is a Foundation object such as an `NSString`. For properties with no Foundation equivalent, the result is an `NSAppleEventDescriptor` or another [`SBObject`](../sbobject.md) for most elements.
 
-#### Discussion
+## Discussion
 
 This method forces the current object reference (the receiver) to be evaluated, resulting in the return of the referenced object. By default, Scripting Bridge deals with references to objects until you actually request some concrete data from them or until you call the `get` method.
 

@@ -12,11 +12,11 @@ UInt64 GetDataBufferOffset (
  SCSITaskIdentifierrequest );
 ```
 
-#### Return Value
+## Return Value
 
 Offset into the data buffer at which to start the transfer of data.
 
-#### Overview
+## Overview
 
 Accessor method to retrieve the data buffer offset associated with the specified request.
 

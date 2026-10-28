@@ -17,11 +17,11 @@ Roll array elements along a given axis.
 func roll(_ a: MLXArray, shift: Int, axis: Int, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 Elements that are rolled beyond the end of the array are introduced at the beggining and vice-versa.
 
-##### See Also
+### See Also
 
 - [Shapes](./shapes.md)
 

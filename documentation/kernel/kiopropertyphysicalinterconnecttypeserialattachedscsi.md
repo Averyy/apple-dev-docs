@@ -13,7 +13,7 @@
 #define kIOPropertyPhysicalInterconnectTypeSerialAttachedSCSI
 ```
 
-#### Discussion
+## Discussion
 
 This key defines the value of SAS for the key kIOPropertyPhysicalInterconnectTypeKey. If the device is connected to a SAS bus, this key should be set.
 

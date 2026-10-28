@@ -19,7 +19,7 @@ Initializes an object representing the outputs of the web authentication PRF ext
 init(first: SymmetricKey, second: SymmetricKey?)
 ```
 
-#### Discussion
+## Discussion
 
 Call this method only if the registration request includes input values. Otherwise, use [`supported`](./supported.md) or [`unsupported`](./unsupported.md).
 

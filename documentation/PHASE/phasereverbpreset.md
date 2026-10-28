@@ -24,7 +24,7 @@ enum PHASEReverbPreset
 enum PHASEReverbPreset : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The PHASE engine requires your app to choose an option of this enumeration and assign it to the [`defaultReverbPreset`](./phaseengine/defaultreverbpreset.md) property.
 

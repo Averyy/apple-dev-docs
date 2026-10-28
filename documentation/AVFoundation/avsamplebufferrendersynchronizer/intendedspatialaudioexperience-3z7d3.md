@@ -15,7 +15,7 @@ The synchronizer’s intended Spatial Audio experience.
 var intendedSpatialAudioExperience: any SpatialAudioExperience { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The value applies to all [`AVSampleBufferAudioRenderer`](../avsamplebufferaudiorenderer.md) objects within this synchronizer.
 

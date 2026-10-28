@@ -23,7 +23,7 @@ func send<Sending, Receiving, CoderType>(_ content: Sending, @ProtocolMetadataBu
 
 Available when `ApplicationProtocol` conforms to `NetworkProtocolOptions`.
 
-#### Discussion
+## Discussion
 
 This may be called before the connection is ready, in which case the send will be enqueued until the connection is ready to send.
 

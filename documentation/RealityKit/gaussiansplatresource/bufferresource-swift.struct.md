@@ -19,7 +19,7 @@ A set of buffer descriptors that supplies the per-splat data for rendering.
 struct BufferResource
 ```
 
-#### Overview
+## Overview
 
 The descriptors can share one buffer at different offsets, or use a separate buffer for each property.
 

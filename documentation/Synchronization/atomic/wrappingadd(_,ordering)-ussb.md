@@ -24,11 +24,11 @@ func wrappingAdd(_ operand: UInt8, ordering: AtomicUpdateOrdering) -> (oldValue:
 
 Available when `Value` is `UInt8`.
 
-#### Return Value
+## Return Value
 
 A tuple containing the original value before the operation and the new value after the operation.
 
-#### Discussion
+## Discussion
 
 > **Note**: This operation silently wraps around on overflow, like the `&+` operator does on `UInt8` values.
 

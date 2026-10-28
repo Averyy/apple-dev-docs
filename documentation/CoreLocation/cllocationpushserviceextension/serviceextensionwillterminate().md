@@ -21,7 +21,7 @@ optional func serviceExtensionWillTerminate()
 - (void) serviceExtensionWillTerminate;
 ```
 
-#### Discussion
+## Discussion
 
 If your [`didReceiveLocationPushPayload(_:completion:)`](./didreceivelocationpushpayload%28_,completion%29.md) method takes too long to collect a location and call its completion block, the system calls this method on the main thread. Use this method to execute the completion block from [`didReceiveLocationPushPayload(_:completion:)`](./didreceivelocationpushpayload%28_,completion%29.md) as quickly as possible.
 

@@ -23,11 +23,11 @@ func spotlightQuery(_ userQuery: String? = nil) async throws -> [AnyAppEntity]
 
 - [Testing your App Intents code](../testing-your-app-intents-code.md)
 
-#### Return Value
+## Return Value
 
 An array of `AnyAppEntity` instances that match the search criteria.
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the spotlight query fails.
 

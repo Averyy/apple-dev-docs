@@ -21,7 +21,7 @@ Returns a Boolean value that indicates whether a time range is indefinite.
 func CMTIMERANGE_IS_INDEFINITE(_ range: CMTimeRange) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if `range` is indefinite; otherwise, [`false`](../Swift/false.md).
 

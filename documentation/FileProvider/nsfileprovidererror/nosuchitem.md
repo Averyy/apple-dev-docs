@@ -18,7 +18,7 @@ An error indicating that the specified item doesn’t exist.
 static var noSuchItem: NSFileProviderError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use [`fileProviderErrorForNonExistentItem(withIdentifier:)`](../../Foundation/nserror/fileprovidererrorfornonexistentitem%28withidentifier%29.md) to create properly formatted [`noSuchItem`](./nosuchitem.md) errors.
 

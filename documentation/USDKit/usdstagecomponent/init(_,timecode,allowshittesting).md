@@ -21,7 +21,7 @@ Creates a USDStageComponent in automatic mode and waits for the first render to 
 init(_ stage: USDStage, timeCode: USDStage.TimeCode = .default, allowsHitTesting: Bool = true) async
 ```
 
-#### Discussion
+## Discussion
 
 In automatic mode, the component manages rendering internally and updates when the stage or time code changes.
 

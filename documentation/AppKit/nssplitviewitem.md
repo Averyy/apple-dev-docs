@@ -19,7 +19,7 @@ class NSSplitViewItem
 @interface NSSplitViewItem : NSObject
 ```
 
-#### Overview
+## Overview
 
 A split view item represents a single pane in a split view controller ([`NSSplitViewController`](./nssplitviewcontroller.md)). Each split view item contains information about a child view controller in the split view controller, like its preferred thickness, holding priority, and collapsed state.
 

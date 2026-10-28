@@ -12,11 +12,11 @@ virtual UInt32 getMaxCommandBlockSize(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 Returns a UInt32 containing the maximum command block size.
 
-#### Overview
+## Overview
 
 The device publishes an upper limit on the size of command block that it can accept. That value can be accessed via this method.
 

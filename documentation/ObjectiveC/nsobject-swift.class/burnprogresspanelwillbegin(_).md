@@ -19,7 +19,7 @@ func burnProgressPanelWillBegin(_ aNotification: Notification!)
 - (void) burnProgressPanelWillBegin:(NSNotification *) aNotification;
 ```
 
-#### Discussion
+## Discussion
 
 If the delegate implements this method it will receive the message immediately before the panel is displayed.
 

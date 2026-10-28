@@ -24,7 +24,7 @@ static let soloAmbient: AVAudioSession.Category
 extern AVAudioSessionCategory const AVAudioSessionCategorySoloAmbient;
 ```
 
-#### Discussion
+## Discussion
 
 Your audio is silenced by screen locking and by the Silent switch (called the *Ring/Silent switch* on iPhone).
 

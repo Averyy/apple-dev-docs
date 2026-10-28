@@ -26,7 +26,7 @@ func repeated(count: Int) -> Self
 func repeated(count: TimeInterval) -> Self
 ```
 
-#### Return Value
+## Return Value
 
 A version of the calling animation repeated the given number of times.
 

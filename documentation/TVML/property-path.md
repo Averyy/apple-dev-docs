@@ -5,7 +5,7 @@
 
 Compares a value from a JSON file to a specified value to find out if they are equal.
 
-#### Overview
+## Overview
 
 The `{property-path}` query is used with data binding to determine whether one value is equal to another. Bind a value from your JSON file to a variable associated with the query. If the `property-path` is equal to the designated value, the element is processed.
 

@@ -20,7 +20,7 @@ class func shared() -> NSScriptExecutionContext
 + (NSScriptExecutionContext *) sharedScriptExecutionContext;
 ```
 
-#### Return Value
+## Return Value
 
 The shared `NSScriptExecutionContext` instance, creating it first if it doesn’t exist.
 

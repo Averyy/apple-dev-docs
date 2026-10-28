@@ -23,7 +23,7 @@ var mailboxIdentifiers: [String]? { get set }
 @property (copy, nullable) NSArray<NSString *> * mailboxIdentifiers;
 ```
 
-#### Discussion
+## Discussion
 
 Can include `CSMailboxInbox`, `CSMailboxDrafts`, `CSMailboxSent`, or a custom identifier.
 

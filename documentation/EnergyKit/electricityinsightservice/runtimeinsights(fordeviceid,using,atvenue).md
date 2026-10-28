@@ -17,11 +17,11 @@ Returns records that provide insight into runtime of a given device.
 final func runtimeInsights(forDeviceID deviceID: String, using query: ElectricityInsightQuery, atVenue energyVenueID: UUID) async throws -> AsyncStream<ElectricityInsightRecord<Duration>>
 ```
 
-#### Return Value
+## Return Value
 
 An `AsyncStream` of [`ElectricityInsightRecord`](../electricityinsightrecord.md)s containing `Duration` values for a given device.
 
-#### Discussion
+## Discussion
 
 The system throws [`EnergyKitError.venueUnavailable`](../energykiterror/venueunavailable.md) if a person provides an invalid [`EnergyVenue`](../energyvenue.md) identifier. If another request is in progress, the system throws[`EnergyKitError.inProgress`](../energykiterror/inprogress.md).
 

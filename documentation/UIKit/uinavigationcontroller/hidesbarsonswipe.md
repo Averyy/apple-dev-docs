@@ -22,7 +22,7 @@ var hidesBarsOnSwipe: Bool { get set }
 @property (nonatomic, assign, readwrite) BOOL hidesBarsOnSwipe;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is set to [`true`](../../Swift/true.md), an upward swipe hides the navigation bar and toolbar. A downward swipe shows both bars again. If the toolbar does not have any items, it remains visible even after a swipe. The default value of this property is [`false`](../../Swift/false.md).
 

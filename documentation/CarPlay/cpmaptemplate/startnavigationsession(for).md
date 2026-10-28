@@ -21,11 +21,11 @@ func startNavigationSession(for trip: CPTrip) -> CPNavigationSession
 - (CPNavigationSession *) startNavigationSessionForTrip:(CPTrip *) trip;
 ```
 
-#### Return Value
+## Return Value
 
 A navigation session for the specified trip.
 
-#### Discussion
+## Discussion
 
 Keep a reference to the navigation session to perform guidance updates.
 

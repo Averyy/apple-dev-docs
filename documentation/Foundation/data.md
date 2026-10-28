@@ -27,7 +27,7 @@ struct Data
 - [Processing URL session data task results with Combine](./processing-url-session-data-task-results-with-combine.md)
 - [Encoding and Decoding Custom Types](./encoding-and-decoding-custom-types.md)
 
-#### Overview
+## Overview
 
 The [`Data`](./data.md) value type allows simple byte buffers to take on the behavior of Foundation objects. You can create empty or pre-populated buffers from a variety of sources and later add or remove bytes. You can filter and sort the content, or compare against other buffers. You can manipulate subranges of bytes and iterate over some or all of them.
 

@@ -5,7 +5,7 @@
 
 Learn about the basic support that UIKit and Xcode provide for your iOS and tvOS apps.
 
-#### Overview
+## Overview
 
 The UIKit framework provides the core objects that you need to build apps for iOS and tvOS. You use these objects to display your content onscreen, to interact with that content, and to manage interactions with the system. Apps rely on UIKit for their basic behavior, and UIKit provides many ways for you to customize that behavior to match your specific needs.
 
@@ -17,7 +17,7 @@ Xcode provides template projects as starting points for every app you create. Fo
 
 When you build your app, Xcode compiles your source files and creates an app bundle for your project. An app bundle is a structured directory that contains the code and resources associated with the app. Resources include the image assets, storyboard files, strings files, and app metadata that support your code.
 
-##### Add required resources
+### Add required resources
 
 Every UIKit app is required to have the following resources:
 
@@ -30,7 +30,7 @@ The system displays your app icon on the Home Screen, in Settings, and anywhere 
 
 The `LaunchScreen.storyboard` file contains your app’s initial interface, and it can be a splash screen or a simplified version of your actual interface. When someone taps your app’s icon, the system displays your launch screen immediately, letting the person know that your app is now launching. The launch screen also provides cover for your app while it initializes itself. When your app is ready, the system hides the launch screen and reveals your app’s actual interface. For more information, see [Specifying your app’s launch screen](../Xcode/specifying-your-apps-launch-screen.md).
 
-##### Update required app metadata
+### Update required app metadata
 
 The system derives information about your app’s configuration and capabilities from the information property list. Xcode provides a preconfigured version of this list with every new project template, and you modify it based on the needs of your app. For example, if your app relies on specific hardware, or uses specific system frameworks, you can add information related to those features to the list.
 
@@ -40,7 +40,7 @@ One common modification you can make to the information property list is to decl
 
 For information about the keys that you can include in your information property list, see [`Information Property List`](../BundleResources/information-property-list.md).
 
-##### Review the code structure of a UIKit app
+### Review the code structure of a UIKit app
 
 UIKit provides many of your app’s core objects, including those that interact with the system, run the app’s main event loop, and display your content onscreen. You use most of these objects as-is or with only minor modifications. Knowing which objects to modify, and when to modify them, is crucial to implementing your app.
 
@@ -48,7 +48,7 @@ Your app uses [`UIApplication`](./uiapplication.md) and a [`UIApplicationDelegat
 
 The structure of UIKit apps is based on the Model-View-Controller (MVC) design pattern, where you create objects that fulfill specific purposes. Model objects manage the app’s data and business logic. View objects provide the visual representation of your data. Controller objects act as a bridge between your model and view objects, moving data between them at appropriate times.
 
-##### Build and organize your app with UIKit objects
+### Build and organize your app with UIKit objects
 
 The UIKit and Foundation frameworks provide many of the basic types that you use to define your app’s model objects. UIKit provides a [`UIDocument`](./uidocument.md) object for organizing the data structures that belong in a disk-based file. The Foundation framework defines basic objects representing strings, numbers, arrays, and other data types. The [Swift Standard Library](../Swift/swift-standard-library.md) provides many of the same types available in the Foundation framework.
 

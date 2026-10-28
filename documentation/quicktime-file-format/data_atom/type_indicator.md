@@ -6,7 +6,7 @@
 
 Four bytes that indicate a type of data that QuickTime supports.
 
-#### Overview
+## Overview
 
 See [Type indicator](../type_indicator.md).
 

@@ -23,7 +23,7 @@ var kCTFontTableGasp: Int { get }
 kCTFontTableGasp
 ```
 
-#### Discussion
+## Discussion
 
 Font table tag for grid-fitting/scan-conversion.
 

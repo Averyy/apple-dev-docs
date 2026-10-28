@@ -23,7 +23,7 @@ func performPrimaryAction()
 - (void) performPrimaryAction;
 ```
 
-#### Discussion
+## Discussion
 
 This method invokes the primary action for the control, whether it’s a direct action, for example, a button tap, or presents further UI, for example, a contextual menu.
 

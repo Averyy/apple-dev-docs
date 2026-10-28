@@ -19,7 +19,7 @@ func setPolicies(_ policies: Any!)
 - (void) setPolicies:(id) policies;
 ```
 
-#### Discussion
+## Discussion
 
 Applications typically display a certificate view in the context of a specific use, such as SSL or S/MIME. You should set only the policy references that apply to your intended use.
 

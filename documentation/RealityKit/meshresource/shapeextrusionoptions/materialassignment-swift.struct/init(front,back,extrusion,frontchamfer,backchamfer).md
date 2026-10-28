@@ -20,7 +20,7 @@ Creates a material assignment structure with options for each side of an extrude
 init(front: UInt32 = 0, back: UInt32 = 0, extrusion: UInt32 = 0, frontChamfer: UInt32 = 0, backChamfer: UInt32 = 0)
 ```
 
-#### Discussion
+## Discussion
 
 The default for any omitted parameter is `0`.
 

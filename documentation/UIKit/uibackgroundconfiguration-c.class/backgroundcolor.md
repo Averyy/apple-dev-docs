@@ -19,7 +19,7 @@ The color of the background.
 @property (nonatomic, strong, nullable) UIColor * backgroundColor;
 ```
 
-#### Discussion
+## Discussion
 
 If the value is `nil`, the background color is the view’s tint color. Use [`clear`](../uicolor/clear.md) for a transparent background with no color.
 

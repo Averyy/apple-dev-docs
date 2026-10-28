@@ -19,11 +19,11 @@ string Ad.SystemStatusLimitingReasons
 
 - `CREATIVE_POLICY_ISSUES`: The ad creative associated with this ad has policy violations that limit but do not fully stop delivery.
 
-#### Discussion
+## Discussion
 
 Unlike [`Ad.SystemStatusReasons`](./systemstatusreasons-data.typealias.md), these codes flag conditions, such as creative policy issues, that reduce delivery rather than stop it outright.
 
-##### Example
+### Example
 
 ```json
 {

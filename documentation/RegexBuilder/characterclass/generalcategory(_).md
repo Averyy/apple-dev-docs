@@ -21,7 +21,7 @@ Returns a character class that matches any element with the given Unicode genera
 static func generalCategory(_ category: Unicode.GeneralCategory) -> CharacterClass
 ```
 
-#### Discussion
+## Discussion
 
 For example, when passed `.uppercaseLetter`, this method is equivalent to `/\p{Uppercase_Letter}/` or `/\p{Lu}/`.
 

@@ -19,11 +19,11 @@ func PMPaperCreateCustom(_ printer: PMPrinter?, _ id: CFString?, _ name: CFStrin
 OSStatus PMPaperCreateCustom(PMPrinter printer, CFStringRef id, CFStringRef name, double width, double height, const PMPaperMargins *margins, PMPaper  _Nullable *paperP);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 This function creates a custom paper object appropriate for the specified printer. Custom papers are treated differently than built-in papers by the printing system. To obtain one of the available built-in papers for a given printer, you can use the function [`PMPrinterGetPaperList(_:_:)`](./api-1460088-pmprintergetpaperlist.md).
 

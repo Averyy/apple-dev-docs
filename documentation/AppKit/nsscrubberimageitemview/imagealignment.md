@@ -19,7 +19,7 @@ var imageAlignment: NSImageAlignment { get set }
 @property NSImageAlignment imageAlignment;
 ```
 
-#### Discussion
+## Discussion
 
 The image is scaled proportionally to fit the frame of the item. This property determines how the image is cropped within that frame.
 

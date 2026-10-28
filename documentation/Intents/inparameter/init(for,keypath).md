@@ -22,11 +22,11 @@ convenience init(for aClass: AnyClass, keyPath: String)
 + (instancetype) parameterForClass:(Class) aClass keyPath:(NSString *) keyPath;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized parameter object.
 
-#### Discussion
+## Discussion
 
 If any properties in the key path contain an array or ordered set, use the [`setIndex(_:forSubKeyPath:)`](./setindex%28_,forsubkeypath%29.md) method to specify which object in those properties to use.
 

@@ -23,7 +23,7 @@ var disableSemanticSearch: Bool { get set }
 @property (nonatomic, assign) BOOL disableSemanticSearch;
 ```
 
-#### Discussion
+## Discussion
 
 Semantic searching finds matches that are related to the original term, but not necessarily a lexical match. For example, a search for the string “Sun and Moon” might also return a result with a title like “Sol and Luna”. The default value of this property is `false`, which enables the delivery of semantic search results.
 

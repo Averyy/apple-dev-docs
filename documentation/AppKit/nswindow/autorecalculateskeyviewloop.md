@@ -19,7 +19,7 @@ var autorecalculatesKeyViewLoop: Bool { get set }
 @property BOOL autorecalculatesKeyViewLoop;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the window automatically recalculates the key view loop when views are added; otherwise, [`false`](../../Swift/false.md). If [`autorecalculatesKeyViewLoop`](./autorecalculateskeyviewloop.md) is [`false`](../../Swift/false.md), the client code must update the key view loop manually or call [`recalculateKeyViewLoop()`](./recalculatekeyviewloop%28%29.md) to have the window recalculate it.
 

@@ -26,11 +26,11 @@ func metadata(forFormat format: AVMetadataFormat) -> [AVMetadataItem]
 - (NSArray<AVMetadataItem *> *) metadataForFormat:(AVMetadataFormat) format;
 ```
 
-#### Return Value
+## Return Value
 
 An array of metadata items matching the specified format, or an empty array if none are found.
 
-#### Discussion
+## Discussion
 
 Apple discourages the use of this method in iOS 15, tvOS 15, and macOS 12 or later. Load track metadata asynchronously using [`loadMetadata(for:completionHandler:)`](./loadmetadata%28for,completionhandler%29.md) instead.
 

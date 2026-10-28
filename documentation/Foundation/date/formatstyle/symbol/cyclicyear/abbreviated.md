@@ -21,7 +21,7 @@ Custom cyclic year format style that portrays a shortened cyclic year.
 static var abbreviated: Date.FormatStyle.Symbol.CyclicYear { get }
 ```
 
-#### Discussion
+## Discussion
 
 The [`abbreviated`](./abbreviated.md) cyclic year format style is appropriate for space-constrained applications.
 

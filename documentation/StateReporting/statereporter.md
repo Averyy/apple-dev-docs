@@ -25,7 +25,7 @@ final class StateReporter<StableMetadata, VolatileMetadata> where StableMetadata
 
 - [Getting started with StateReporting](./getting-started-with-statereporting.md)
 
-#### Overview
+## Overview
 
 `StateReporter` is the central object for recording your feature’s or subsystem’s current state. You obtain an instance through the [`reporter(for:stableMetadata:volatileMetadata:)`](./statereporter/reporter%28for,stablemetadata,volatilemetadata%29.md) method, which guarantees that every caller using the same domain string receives the same object. Attempting to call the method with different generic type arguments for an already-registered domain is a fatal error.
 

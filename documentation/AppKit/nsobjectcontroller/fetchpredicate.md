@@ -19,7 +19,7 @@ var fetchPredicate: NSPredicate? { get set }
 @property (strong, nullable) NSPredicate * fetchPredicate;
 ```
 
-#### Discussion
+## Discussion
 
 The receiver uses `predicate` when fetching its content, for example in [`fetch(_:)`](./fetch%28_%29.md). If you need to customize the fetching behavior further, you can override [`fetch(with:merge:)`](./fetch%28with,merge%29.md).
 

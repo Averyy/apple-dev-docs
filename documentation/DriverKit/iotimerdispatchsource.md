@@ -18,7 +18,7 @@ A dispatch source that notifies your driver at a specific time.
 class IOTimerDispatchSource;
 ```
 
-#### Overview
+## Overview
 
 An [`IOTimerDispatchSource`](./iotimerdispatchsource.md) object executes an associated action at a designated time. After configuring the dispatch source object, call the [`WakeAtTime`](./iotimerdispatchsource/wakeattime.md) method to schedule the time at which to execute your code. There are several timebases you can use to configure the timer, but the most common one is [`kIOTimerClockMachAbsoluteTime`](./kiotimerclockmachabsolutetime.md).
 

@@ -25,7 +25,7 @@ let kCGImagePropertyFileContentsDictionary: CFString
 extern CFStringRef const kCGImagePropertyFileContentsDictionary;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is a [`CFDictionary`](../CoreFoundation/cfdictionary.md).
 

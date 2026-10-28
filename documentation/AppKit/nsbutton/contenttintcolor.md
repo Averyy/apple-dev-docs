@@ -20,7 +20,7 @@ var contentTintColor: NSColor? { get set }
 @property (copy, nullable) NSColor * contentTintColor;
 ```
 
-#### Discussion
+## Discussion
 
 The `contentTintColor` is only applicable to borderless buttons. This color is used in combination with other theme-appropriate effects.
 

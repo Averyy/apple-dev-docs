@@ -10,7 +10,7 @@ An atom that identifies the file type specifications with which the file is comp
 
 - [QuickTime File Format change log](./revision_history.md)
 
-#### Overview
+## Overview
 
 The file type compatibility atom, also called the file type atom, allows the reader to determine whether this is a type of file that the reader understands. Specifically, the file type atom identifies the file type specifications with which the file is compatible. This allows the reader to distinguish among closely related file types, such as QuickTime movie files, MPEG-4, and JPEG-2000 files (all of which may contain file type atoms, movie atoms, and movie data atoms).
 

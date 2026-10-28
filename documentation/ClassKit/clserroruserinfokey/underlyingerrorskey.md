@@ -23,7 +23,7 @@ static let underlyingErrorsKey: CLSErrorUserInfoKey
 extern CLSErrorUserInfoKey const CLSErrorUnderlyingErrorsKey;
 ```
 
-#### Discussion
+## Discussion
 
 This key only appears for errors with code [`partialFailure`](../clserror/partialfailure.md) in Swift or [`CLSError.Code.partialFailure`](../clserror/code/partialfailure.md) in Objective-C, signifying that more than one error occurred.
 

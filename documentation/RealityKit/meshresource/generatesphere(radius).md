@@ -21,11 +21,11 @@ Creates a new sphere mesh with the specified radius.
 @preconcurrency static func generateSphere(radius: Float) -> MeshResource
 ```
 
-#### Return Value
+## Return Value
 
 A sphere mesh.
 
-#### Discussion
+## Discussion
 
 The sphere is centered at the entity’s origin.
 

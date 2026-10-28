@@ -22,7 +22,7 @@ A projection of the focused object that creates bindings to its properties using
 @preconcurrency var projectedValue: FocusedObject<ObjectType>.Wrapper? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use the projected value to pass a focused object down a view hierarchy.
 

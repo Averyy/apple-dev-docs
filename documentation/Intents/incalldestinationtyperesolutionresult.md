@@ -24,7 +24,7 @@ class INCallDestinationTypeResolutionResult
 @interface INCallDestinationTypeResolutionResult : INIntentResolutionResult
 ```
 
-#### Overview
+## Overview
 
 You return an `INCallDestinationTypeResolutionResult` object when resolving parameters containing an [`INCallDestinationType`](./incalldestinationtype.md) value. Use the creation method that best reflects your ability to resolve the parameter successfully.
 

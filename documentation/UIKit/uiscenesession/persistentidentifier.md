@@ -23,7 +23,7 @@ var persistentIdentifier: String { get }
 @property (nonatomic, readonly) NSString * persistentIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Use the value of this property as a unique identifier for the session and its accompanying scene.
 

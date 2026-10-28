@@ -19,7 +19,7 @@ Exports the sound classifier as a model file to a path in the file system.
 func write(toFile path: String, metadata: MLModelMetadata? = nil) throws
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to save the sound classifier as a Core ML model to a path.
 

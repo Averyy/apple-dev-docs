@@ -22,7 +22,7 @@ var isFindNavigatorVisible: Bool { get }
 @property (nonatomic, readonly, getter=isFindNavigatorVisible) BOOL findNavigatorVisible;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `YES` when the find panel displays; otherwise, `NO`.
 

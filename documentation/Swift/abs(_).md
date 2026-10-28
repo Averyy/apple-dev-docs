@@ -21,11 +21,11 @@ Returns the absolute value of the given number.
 func abs<T>(_ x: T) -> T where T : Comparable, T : SignedNumeric
 ```
 
-#### Return Value
+## Return Value
 
 The absolute value of `x`.
 
-#### Discussion
+## Discussion
 
 The absolute value of `x` must be representable in the same type. In particular, the absolute value of a signed, fixed-width integer type’s minimum cannot be represented.
 

@@ -20,7 +20,7 @@ enum CMSCertificateChainMode
 enum CMSCertificateChainMode : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 Use these with the [`CMSEncoderSetCertificateChainMode(_:_:)`](./cmsencodersetcertificatechainmode%28_,_%29.md) function.
 

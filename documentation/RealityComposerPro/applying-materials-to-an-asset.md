@@ -5,7 +5,7 @@
 
 Assign and configure surface materials on 3D model assets in Reality Composer Pro.
 
-#### Overview
+## Overview
 
 A material defines the surface properties of a rendered 3D object. Reality Composer Pro supports five material types: Physically Based, Unlit, Occlusion, Portal, and Shader Graph. The Inspector shows different properties based on which material is selected.
 
@@ -21,7 +21,7 @@ Reality Composer Pro displays materials in the active scene hierarchy with a pai
 
 > 💡 **Tip**: If an imported USDZ file contains Shader Graph materials, Reality Composer Pro creates those as well. You can also create materials manually, either to change the appearance of an entity loaded from a USDZ file or to use PBR rendering with procedurally created entities.
 
-#### Apply a material to an asset
+## Apply a material to an asset
 
 Apply a material to an asset or entity through the Inspector, under the Material Slots section.
 
@@ -31,7 +31,7 @@ When you select a **Physically Based** (PBR) material in the hierarchy view, its
 
 In the Inspector, under **Material Slots**, click the material field next to **Material**. The field may be blank or set to `default_material`. Select a material from the list.
 
-#### Configure general material options
+## Configure general material options
 
 Available options vary depending on the type of material.
 
@@ -55,7 +55,7 @@ Options include Back, Front, or None.
 
 **Writes Depth (toggle)** When toggled on, the material writes its depth into the RealityKit depth buffer.
 
-#### Configure physically based material options
+## Configure physically based material options
 
 The following properties appear when you set **Shader** to **Physically Based**.
 
@@ -100,7 +100,7 @@ The following properties appear when you set **Shader** to **Physically Based**.
 
 **Opacity Threshold** A threshold below which RealityKit ignores opacity. A setting of `0.0` means no additional masking occurs. If set above `0.0`, the material renders areas where the Opacity is greater than the Opacity Threshold.
 
-#### Configure Shader Graph material options
+## Configure Shader Graph material options
 
 The following property appears when you set **Shader** to **Shader Graph**.
 

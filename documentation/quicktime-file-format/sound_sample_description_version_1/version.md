@@ -6,7 +6,7 @@
 
 A 16-bit integer that holds the sample description version.
 
-#### Overview
+## Overview
 
 Currently `0` or `1`.
 

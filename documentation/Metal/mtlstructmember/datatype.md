@@ -24,7 +24,7 @@ var dataType: MTLDataType { get }
 @property (readonly) MTLDataType dataType;
 ```
 
-#### Discussion
+## Discussion
 
 For information on possible values, see [`MTLDataType`](../mtldatatype.md). If the value is [`MTLDataType.array`](../mtldatatype/array.md), then the [`arrayType()`](./arraytype%28%29.md) method returns an object that describes the underlying array. If the value is [`MTLDataType.struct`](../mtldatatype/struct.md), then the [`structType()`](./structtype%28%29.md) method returns an object that describes the underlying struct.
 

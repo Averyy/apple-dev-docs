@@ -19,7 +19,7 @@ func hv_gic_state_get_size(_ state: hv_gic_state_t, _ gic_state_size: UnsafeMuta
 extern hv_return_t hv_gic_state_get_size(hv_gic_state_t state, size_t *gic_state_size);
 ```
 
-#### Return Value
+## Return Value
 
 [`HV_SUCCESS`](./hv_success.md) on success; otherwise, an error code.
 

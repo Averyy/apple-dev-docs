@@ -5,7 +5,7 @@
 
 Read Xcode version information you configure for an Xcode Cloud workflow.
 
-#### Overview
+## Overview
 
 The `ciXcodeVersions` resource represents the version of Xcode you configure for an Xcode Cloud workflow.
 

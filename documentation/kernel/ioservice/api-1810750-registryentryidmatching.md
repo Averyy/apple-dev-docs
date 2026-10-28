@@ -13,11 +13,11 @@ static OSDictionary * registryEntryIDMatching(
  OSDictionary *table = 0 );
 ```
 
-#### Return Value
+## Return Value
 
 The matching dictionary created, or passed in, is returned on success, or zero on failure.
 
-#### Overview
+## Overview
 
 `registryEntryIDMatching` creates a matching dictionary that specifies the IOService object with the assigned registry entry ID (returned by `IORegistryEntry::getRegistryEntryID()`). An existing dictionary may be passed in, in which case the matching properties will be added to that dictionary rather than creating a new one.
 

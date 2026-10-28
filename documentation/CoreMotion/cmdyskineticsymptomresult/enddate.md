@@ -22,7 +22,7 @@ var endDate: Date { get }
 @property (nonatomic, copy, readonly) NSDate * endDate;
 ```
 
-#### Discussion
+## Discussion
 
 The result’s `endDate` is always one minute or less after the [`startDate`](./startdate.md).
 

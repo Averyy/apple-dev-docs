@@ -16,7 +16,7 @@ Requests authorization to provide parental controls for a child or individual.
 func requestAuthorization(for member: FamilyControlsMember) async throws
 ```
 
-#### Discussion
+## Discussion
 
 With this function you can authorize parental controls for a [`FamilyControlsMember.child`](../familycontrolsmember/child.md) that’s signed into the iCloud account on the device or a [`FamilyControlsMember.individual`](../familycontrolsmember/individual.md). A parent or guardian must authenticate a child’s account, while individuals can authenticate their own account. For more information, see [`FamilyControlsMember`](../familycontrolsmember.md).
 

@@ -20,7 +20,7 @@ optional func outlineView(_ outlineView: NSOutlineView, willDisplayOutlineCell c
 - (void) outlineView:(NSOutlineView *) outlineView willDisplayOutlineCell:(id) cell forTableColumn:(NSTableColumn *) tableColumn item:(id) item;
 ```
 
-#### Discussion
+## Discussion
 
 Informs the delegate that `outlineView` is about to display `cell`—an expandable cell (a cell that has the expansion symbol)—for the column and item specified by `tableColumn` and `item`. The delegate can modify cell to alter its display attributes.
 

@@ -16,7 +16,7 @@ Establish a relationship between one or more elements.
 void IOHIDElementAttach(IOHIDElementRef element, IOHIDElementRef toAttach);
 ```
 
-#### Discussion
+## Discussion
 
 This is useful for grouping HID elements with related functionality.
 

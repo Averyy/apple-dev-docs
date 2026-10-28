@@ -33,7 +33,7 @@ func analyze() async -> Bool
 
 - [Classifying Sounds in an Audio File](../classifying-sounds-in-an-audio-file.md)
 
-#### Discussion
+## Discussion
 
 The method executes asynchronously and calls the completion handler after the analyzer finishes analyzing the entire file. The audio file analyzer sends errors to each request’s results observer.
 

@@ -5,7 +5,7 @@
 
 Create developer documentation from in-source comments, add articles with code snippets, and add tutorials for a guided learning experience.
 
-#### Overview
+## Overview
 
 DocC, or *Documentation Compiler*, makes it easy to produce rich and engaging developer documentation for your apps, frameworks, and packages. The compiler builds documentation by combining in-source comments with extension files, articles, and other resources that live alongside your project in Xcode.
 
@@ -13,7 +13,7 @@ The compiler integrates directly with Xcode to enhance your existing workflow, i
 
 For a deeper understanding of DocC and how to use it to document frameworks and packages, please visit the documentation available at [Documenting a Swift Framework or Package Swift.org](https://www.swift.org/documentation/docc).
 
-##### Build simple documentation from source comments
+### Build simple documentation from source comments
 
 For DocC to compile your documentation, build your project. Xcode stores supplementary information about public APIs for frameworks, and internal APIs for app targets, alongside the compiled artifacts. DocC consumes that information and compiles the documentation into a DocC Archive. This process repeats for every framework or package your target depends on.
 
@@ -23,7 +23,7 @@ To build documentation for a project, choose Product > Build Documentation. DocC
 
 ![A screenshot of Xcode’s documentation viewer displaying a basic symbol reference page that DocC generates.](https://developer.apple.com/tutorials/images/com.apple.Xcode/basic-documentation@2x.png)
 
-##### Build multi-language documentation
+### Build multi-language documentation
 
 DocC takes information from the Swift compiler and the Objective-C compiler and combines it to form a single documentation archive that displays documentation for both languages. For targets that contain both Swift and Objective-C code, DocC automatically builds multi-language documentation. Targets written in a single language but intended to be used by both Swift and Objective-C code can opt in to multi-language documentation output. To enable this, do the following:
 
@@ -38,7 +38,7 @@ DocC takes information from the Swift compiler and the Objective-C compiler and 
 
 > **Note**: You can’t use the build setting with a Swift package.
 
-##### Configure a richer documentation experience
+### Configure a richer documentation experience
 
 DocC combines the public API information from the Swift compiler and the Objective-C compiler with the contents of the documentation catalog to generate a much richer DocC Archive.
 
@@ -51,7 +51,7 @@ To add a documentation catalog to an existing project, follow these steps:
 
 ![A screenshot of Xcode’s file template chooser with the Documentation Catalog template in a selected state in the Documentation section.](https://developer.apple.com/tutorials/images/com.apple.Xcode/add-documentation-catalog@2x.png)
 
-##### Incorporate documentation into your build process
+### Incorporate documentation into your build process
 
 In addition to building documentation on demand by choosing Product > Build Documentation, you can automatically compile documentation whenever you build a framework by enabling a build setting that DocC provides.
 

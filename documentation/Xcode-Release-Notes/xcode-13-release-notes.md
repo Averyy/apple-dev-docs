@@ -5,17 +5,17 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 ---
 
-#### Overview
+## Overview
 
 Xcode 13 includes SDKs for iOS 15, iPadOS 15, tvOS 15, watchOS 8, and macOS Big Sur 11.3. The Xcode 13 release supports on-device debugging for iOS 9 and later, tvOS 9 and later, and watchOS 2 and later. Xcode 13 requires a Mac running macOS 11.3 or later.
 
-##### General
+### General
 
-###### New Features
+#### New Features
 
 - Xcode 13 includes native support for [concurrency programming with Swift](https://docs.swift.org/swift-book/LanguageGuide/Concurrency.html), support for continuous integration and delivery with [Xcode Cloud](https://developer.apple.com/xcode-cloud/), integrated support for Git pull requests, the ability to create and view documentation in Swift frameworks using DocC, Vim keybinding support, Swift package collections, and more. For details, see [What’s Included In Xcode](https://developer.apple.com/xcode/whats-new/). (78887232)
 
@@ -23,13 +23,13 @@ Xcode 13 includes SDKs for iOS 15, iPadOS 15, tvOS 15, watchOS 8, and macOS Big 
 - You can now use `TextureConverter` on the command line to compress textures to all Metal compressed texture formats. For a list of available commands, run `xcrun TextureConverter --help`. (70481436)
 - The Xcode 13’s XIP archive is now approximately 15% smaller for the same content. You can expand the archive using Archive Utility, or with `xip` on the command line. *Note*: Other methods of expanding the archive may produce a broken Xcode app. (78714333)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Keyboard shortcuts in Xcode now work as expected when the documentation window has more than one tab open or is in full-screen mode. (72209603) (FB8936285)
 
-##### Apple Clang Compiler
+### Apple Clang Compiler
 
-###### New Features
+#### New Features
 
 - To support the new Swift concurrency model, `clang` can now warn if you call a completion handler more than once or if an execution path doesn’t have a completion handler call. To turn on the new warning, in your project’s Build Settings in the Apple Clang - Warnings - All languages section, select Yes from the Completion Handler Misuse pop-up menu; alternatively,  when invoking `clang` from the command line, pass the `-Wcompletion-handler` flag. You can suppress the warning for a method by adding the `NS_SWIFT_DISABLE_ASYNC` attribute to the method, which also suppresses the translation of this method into an `async` method in Swift. (10708075)
 - The new `-fobjc-constant-literals` flag lets you declare declare global constant literals, and performs optimizations for other literals it supports in Objective-C code. You can use this flag to embed static property list literals (`NSDictionary`, `NSNumber`, and `NSArray`) at compile time, placing them in the `CONST` section of the binaries. (44920795, 45380392)
@@ -72,20 +72,20 @@ Xcode 13 includes SDKs for iOS 15, iPadOS 15, tvOS 15, watchOS 8, and macOS Big 
 - You can now configure the `C++20` and `GNU++20` C++ language dialects in Xcode’s build settings. (50900425)
 - clang now supports C++20 likelihood attributes `[[likely]]` and `[[unlikely]]`. (78316737)
 
-###### Known Issues
+#### Known Issues
 
 - ASAN might cause Swift async functions to crash on x86_64. (80786596)
 
-##### Asset Catalogs
+### Asset Catalogs
 
-###### New Features
+#### New Features
 
 - At runtime, your app can now use iOS app icon assets from its asset catalog as alternate app icons. A new build setting, “Include all app icon assets,” controls whether Xcode includes all app icon sets in the built product. When the setting is disabled, Xcode includes the primary app icon, along with the icons specified in the new setting, “Alternate app icon sets.” The asset catalog compiler inserts the appropriate content into the `Info.plist` of the built product. (33600923)
 - The asset catalog allows selecting universal system colors that are available across all platforms, including watchOS. (73257675)
 
-##### Build System
+### Build System
 
-###### New Features
+#### New Features
 
 - Configuration settings (.xcconfig) files now support using `\` to break long lists across multiple lines. (4405473) (FB5943765)
 
@@ -103,7 +103,7 @@ Xcode 13 includes SDKs for iOS 15, iPadOS 15, tvOS 15, watchOS 8, and macOS Big 
 - The build system now emits a warning when a script phase, or custom build rule, declares an input dependency that isn’t part of the build input and isn’t declared as an output dependency of any other task in the build. (76129954)
 - The build options sheet now includes a Dependency Order option, which replaces the Parallelize Build option, and a Manual Order option, which is deprecated, but included for legacy compatibility. (76251439)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue that set the `NATIVE_ARCH` build setting to `armv7` when building against the iOS and iPadOS, tvOS, and watchOS SDKs. The `NATIVE_ARCH` build setting now reflects the architecture family of the host Mac — arm64 on Macs with Apple silicon or x86_64 on Intel-based Macs. (5716560)
 - Importing XCTest or StoreKitTest in a framework target when building for iOS, tvOS, or watchOS no longer fails with a linker error. (61952138)
@@ -111,38 +111,38 @@ Xcode 13 includes SDKs for iOS 15, iPadOS 15, tvOS 15, watchOS 8, and macOS Big 
 - Fixed an issue where clicking on a warning or error in the issue navigator didn’t navigate to the associated C or C++ file. (73582669) (FB8981116)
 - Fixed an issue that required closing and re-opening the workspace if the build system service crashed. The workspace now lets you attempt building again. (74124183)
 
-###### Deprecations
+#### Deprecations
 
 - The legacy build system is deprecated and now produces an error when you attempt to use it. (76124672)
 
-##### Core Data
+### Core Data
 
-###### New Features
+#### New Features
 
 - Use the Allows Cloud Encryption checkbox in the Core Data model editor’s attribute inspector to support the CloudKit Encrypted Record Fields feature. (73670355)
 
-##### Core ML
+### Core ML
 
-###### New Features
+#### New Features
 
 - Xcode’s Core ML model editor now supports the new Core ML package format, `.mlpackage`, along with direct editing of its metadata and descriptions. You can upgrade Core ML models from the `.mlmodel` format to the `.mlpackage` format in a model’s Utilities tab. (69867656)
 - The Swift generated interface for Core ML models now includes access to multidimensional inputs and outputs via strongly-typed `MLShapedArray` properties when your deployment target is macOS 12, iOS 15, tvOS 15 or watchOS 8. (73627777)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Resolved an issue in macOS 11 where the preview tab for CoreML model packages might not respond or might fail with an “Unable to compile model at `<ModelName>.mlpackage`” error. (77794983)
 - Resolved an issue where the operation distribution table didn’t appear in the General tab when viewing the model in the Xcode editor for ML Packages in the ML Program format that have no class labels. (78577088)
 
-###### Known Issues
+#### Known Issues
 
 - Create ML app machine learning model training performance may be unexpectedly reduced when running in macOS Monterey. (82415543)
 - Quitting the Create ML app or closing a project while training is still running may result in the loss of training progress. (82460651)
 
   **Workaround**: Pause training before quitting the app or closing a project.
 
-##### Create ML
+### Create ML
 
-###### New Features
+#### New Features
 
 - Two new templates are available for training models to interpret hand poses. (68942553)
 
@@ -150,26 +150,26 @@ Xcode 13 includes SDKs for iOS 15, iPadOS 15, tvOS 15, watchOS 8, and macOS Big 
   - Hand Action Classification trains a model for categorizing dynamic hand actions in video.
 - The Sound Classification template’s new Audio Feature Print option enables you to train sound classifier models faster with higher accuracy, lower latency, and smaller model size. This is now the default feature extraction option for new model sources. (70558475)
 
-##### Debugging
+### Debugging
 
-###### New Features
+#### New Features
 
 - Xcode’s console now supports toggling line wrapping through the Editor > Wrap Lines menu item. (3669727)
 - To set a column breakpoint on a line, Command-click on an expression then select Set Column Breakpoint from the Actions menu. (10112530)
 - If the debugger hasn’t resolved a breakpoint yet, the breakpoint’s icon changes into a placeholder glyph. For some breakpoints, such as a symbolic breakpoint, the icon changes back to the original glyph when the associated shared library is loaded into the process. (11439048)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Resolved an issue that caused Xcode to indefinitely display a window saying “Building Memory Graph” when clicking the “debug memory graph” button resulted in a failure. Xcode now promptly displays any error that causes memory graph retrieval to fail. (59479311)
 - Choosing Debug > Simulate MetricKit Payloads now works when debugging an app running in a macOS, macOS “Designed for iPad”, or Mac Catalyst run destination. (78026869)
 
-###### Deprecations
+#### Deprecations
 
 - LLDB’s Python scripting no longer supports Python 2. (73956573)
 
-##### Documentation
+### Documentation
 
-###### New Features
+#### New Features
 
 - Xcode can generate documentation from comments in your Swift code, as well as accompanying articles. (57148915, 57446055, 57447632, 74951110)
 
@@ -179,22 +179,22 @@ Xcode 13 includes SDKs for iOS 15, iPadOS 15, tvOS 15, watchOS 8, and macOS Big 
 - Code completion provides suggestions when you write your project’s documentation. It provides suggestions both when writing documentation comments in source files, and when writing markup files inside the `.docc` catalog. (57447419)
 - Quick Help now uses DocC to present project documentation and renders links to your project’s documentation in the documentation window. (71913824)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Links to symbols inherited from protocol conformances now correctly resolve in Quick Help and appear as completion items. (76927387)
 - Breadcrumbs in the documentation viewer now consistently reflect the page rendered inside the content view. (78512655) (FB9118964)
 
-###### Known Issues
+#### Known Issues
 
 - Links to Objective-C types exposed to Swift using a bridging header don’t resolve in Quick Help, and don’t appear as completion items. These links resolve as expected in full documentation builds and in Xcode’s documentation window. (77472074)
 
-##### Indexing
+### Indexing
 
-###### New Features
+#### New Features
 
 - Xcode indexes macro names. They now appear in Open Quickly. (47815401) (FB5667927)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Improved the reliability and performance of the source languages service that provides semantic functionality — such as live issues and code completion — in Xcode editors. (71098549)
 
@@ -203,9 +203,9 @@ Xcode 13 includes SDKs for iOS 15, iPadOS 15, tvOS 15, watchOS 8, and macOS Big 
   - Improved performance and significantly reduced the CPU usage by the `XCBBuildService` process, while it’s processing requests from the source languages service.
 - Fixed issue where a Swift package with symlinks to source modules would break live issues and code completion in Xcode. (75732781)
 
-##### Instruments
+### Instruments
 
-###### New Features
+#### New Features
 
 - You can now label a Run using the Run’s Info popover in the toolbar’s Activity viewer. (20823928)
 - Call tree views and the extended detail view in Instruments now indicate inlined functions with an “[inlined]” marker. (36153516)
@@ -229,7 +229,7 @@ Xcode 13 includes SDKs for iOS 15, iPadOS 15, tvOS 15, watchOS 8, and macOS Big 
 - A new `CPU Profiler` template allows for analyzing CPU workloads using Cycle-based Performance Monitoring Interrupts (PMIs). It provides a more stable measurement for code running on Performance or Efficiency CPUs. (76889185)
 - To support the new JSON-format crash logs generated in macOS Monterey and iOS 15, Instruments includes a new `CrashSymbolicator.py` script. This Python 3 script replaces the `symbolicatecrash` utility for JSON-format logs and supports inlined frames with its default options. For more information, see: `CrashSymbolicator.py --help`. `CrashSymbolicator.py` is located in the `Contents/SharedFrameworks/CoreSymbolicationDT.framework/Resources/` subdirectory within Xcode 13. (78891800)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where changing arguments in Xcode and invoking the profile action wasn’t reusing an existing trace document. (41842858)
 - Improved the performance of command-line tools like `malloc_history` by up to 300x when targeting processes that were built with large static archives. (63114609) (FB7698032)
@@ -237,14 +237,14 @@ Xcode 13 includes SDKs for iOS 15, iPadOS 15, tvOS 15, watchOS 8, and macOS Big 
 - Improved Instruments’ launch reliability when slow or unresponsive devices are connected. (77151140)
 - You can now stop HTTP Traffic recording initiated from Instruments, in tvOS 15’s Control Center. (77274053)
 
-###### Deprecations
+#### Deprecations
 
 - Instruments no longer includes the Energy template; use metrics reporting in the Xcode Organizer instead. (74161279)
 - The deprecated `instruments` command-line tool has been removed; instead, use `xctrace`. (74412969)
 
-##### Interface Builder
+### Interface Builder
 
-###### New Features
+#### New Features
 
 - You can now manually reorder Storyboard scenes in the outline view. (10103709)
 - Storyboards and XIBs for macOS compile using UINibEncoder to reduce file sizes and improve runtime performance. When deploying an App before macOS 10.13, Xcode generates a backward compatible nib for the older OSes. You can opt out of this behavior by applying the `IBC_COMPILER_USE_NIBKEYEDARCHIVER_FOR_MACOS=YES` and `IBSC_COMPILER_USE_NIBKEYEDARCHIVER_FOR_MACOS=YES` user defined overrides in the project’s build setting. (31889616)
@@ -280,7 +280,7 @@ Xcode 13 includes SDKs for iOS 15, iPadOS 15, tvOS 15, watchOS 8, and macOS Big 
 - In apps for macOS 12, you can configure the localized key equivalent options on a non-system `NSMenuItem` using the localize property in the attributes inspector. (76168930)
 - In apps for iOS 15, you can configure the localized key equivalent options on non-system UI menu commands using the localize property in the attributes inspector. (76622527)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue with canvas rendering and storyboard compilation that involved uninstalled constraints that spanned across `UIView` hierarchies. (23319744) (FB5697880)
 - Fixed `@IBDesignable` view support for multi-platform targets. (65449051) (FB7964472)
@@ -296,9 +296,9 @@ Xcode 13 includes SDKs for iOS 15, iPadOS 15, tvOS 15, watchOS 8, and macOS Big 
 - Fixed a runtime crash issue that occurred when using [`MKMapView`](../MapKit/mkmapview.md) in nibs that ran in macOS 10.15 and earlier. (78522530)
 - Xcode no longer resets `NSCollectionViewGridLayout.maximumNumberOfRows` and `NSCollectionViewGridLayout.maximumNumberOfColumns` to `0` during document unarchiving. (80157777) (FB9262860)
 
-##### Linking
+### Linking
 
-###### New Features
+#### New Features
 
 - The `dyld` shared cache has been split into multiple files. Update any of your tools that inspect the cache to use the new structure. (36378398)
 - All programs and `dylibs` built with a deployment target of  macOS 12 or iOS 15 or later now use the chained fixups format. This uses different load commands and LINKEDIT data, and won’t run or load on older OS versions. (49851380)
@@ -306,19 +306,19 @@ Xcode 13 includes SDKs for iOS 15, iPadOS 15, tvOS 15, watchOS 8, and macOS Big 
 - The DriverKit runtime now has a `dyld` shared cache. (70706923)
 - If the `DYLD_PRINT_SEARCHING` environment variable is set to `1` at launch time, `dyld` prints out the paths to all locations it searched to find a `dylib` to load. (76430687)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue that allowed editing of the `__DATA_CONST` region in the `dyld` shared cache. It’s now read-only. (22175031)
 - Resolved `-pagezero_size` incompatibility in iOS. iOS now ignores `-pagezero_size`. (69436371) (FB8733025)
 - Resolved an issue that required an `-image_base` option. When targeting PIE, `ld64` now ignores `-image_base`. (72143464)
 
-###### Deprecations
+#### Deprecations
 
 - The `-whatsloaded` option isn’t supported anymore. (73366865) (FB8975608)
 
-##### Localization
+### Localization
 
-###### New Features
+#### New Features
 
 - Xcode can now open Xcode Localization Catalogs (`.xcloc`) for viewing and editing the translations of strings and other localized assets. As part of this feature, `.xcloc` is now a package file-type in Finder. To inspect the contents of the localization catalog, use Show Package Contents in Finder. (30024017)
 - The new Use Compiler to Extract Swift Strings build setting invokes the Swift compiler to accurately extract string interpolations and string literals from `Text()`, `String(localized:)`, `AttributedString(localized:)` initializers, SwiftUI’s `LocalizedStringKey`, and Foundation’s `StringLocalizationKey`. Enabling this setting compiles all localized targets in your project when exporting and importing for localization. This build setting is enabled by default on all new projects, but can be opted-in for existing Swift projects. (58023398)
@@ -326,7 +326,7 @@ Xcode 13 includes SDKs for iOS 15, iPadOS 15, tvOS 15, watchOS 8, and macOS Big 
 - Errors in multiple localizations are now aggregated into a single alert dialog when exporting for localization. (73562452)
 - Xcode automatically extracts `NSGKFriendListUsageDescription`, `NSLocationTemporaryUsageDescriptionDictionary`, and `NSFallDetectionUsageDescription` from the `Info.plist` files when exporting for localization. (75813015)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue that may have unnecessarily required you to copy content from one localization into a newly added localization. When adding a new localization, you’re no longer required to copy content from a references language if the development language content doesn’t exist. (46222774) (FB5671738)
 - Fixed an issue where `genstrings` extracted all `Text*()` string literals from SwiftUI code, instead of `Text()`. (67694778) (FB8524688)
@@ -334,13 +334,13 @@ Xcode 13 includes SDKs for iOS 15, iPadOS 15, tvOS 15, watchOS 8, and macOS Big 
 - Fixed an issue were Xcode would non-deterministically export content from a project if multiple projects in a workspace had references to the same file. (71859474)
 - Fixed an issue where Xcode crashed when importing localizations where localized files existed in a directory within a `.lproj` directory. (72755034) (FB8958080)
 
-###### Deprecations
+#### Deprecations
 
 - The Localized String SwiftUI Support build setting is deprecated in favor of the new Swift compiler-based string extraction. (80817452)
 
-##### Metal
+### Metal
 
-###### New Features
+#### New Features
 
 - Metal Debugger now supports Selective Shader Debugging, which allows you to limit the debugging scope for large Compute shaders. This results in much faster shader-debugger session creation and iteration times. (67747242)
 - New Capture Controls in Metal Debugger give you precise control to decide which part of your Metal workload to capture, as well as the option to capture multiple frames or scopes. (68219613)
@@ -352,17 +352,17 @@ Xcode 13 includes SDKs for iOS 15, iPadOS 15, tvOS 15, watchOS 8, and macOS Big 
 - Metal Debugger now supports Metal ray tracing, alongside a new advanced Acceleration Structure Viewer. (70112081)
 - Metal Application recording settings are now specific to the device being profiled. (74116877)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Metal Shader Validation has been extended to support the following new Metal APIs: Indirect Command Buffers, Dynamic Libraries, Function Pointers, Visible Function Tables, and Pull Model Interpolation. (78491579)
 
-###### Deprecations
+#### Deprecations
 
 - TextureTool is now deprecated. Transition your texture compression workflow to use the new TextureConverter tool instead. TextureConverter offers a full range of texture compression formats and gives you more control over your compression pipeline. (73370277)
 
-##### Organizer
+### Organizer
 
-###### New Features
+#### New Features
 
 - Xcode now delivers crash reports in near real time, with longer data retention. Xcode aggregates crash logs by crash signature (“Crash Point”), in a list sorted by unique devices affected. Aggregated Crash Point data is now available for the past year. For any list filter selection, the Crashes Organizer shows a list of up to 1,000 possible Crash Points. Additionally, the new View > Reload Organizer menu item reloads the content in the Organizer. (54901702)
 
@@ -382,51 +382,51 @@ Xcode 13 includes SDKs for iOS 15, iPadOS 15, tvOS 15, watchOS 8, and macOS Big 
 - Qualitative Insights for Disk Write Reports in the Xcode Organizer show new information called Insights in the inspector. These insights include optimizations to help reduce the Disk Writes in the app. (66926840)
 - Smart Insights are now available in the Xcode Organizer to help you discover your app’s power and performance regressions faster than before. For more information, see [Analyzing the performance of your shipping app](../Xcode/analyzing-the-performance-of-your-shipping-app.md). (71420981)
 
-##### Playgrounds
+### Playgrounds
 
-###### Known Issues
+#### Known Issues
 
 - Importing the TabularData framework in an Xcode Playground targeting macOS may result in missing symbols. (77162151)
 
   **Workaround**: If your use case permits, set the playground’s platform to iOS.
 - Xcode Playgrounds don’t support Swift Concurrency language constructs. (79408099)
 
-##### Previews
+### Previews
 
-###### New Features
+#### New Features
 
 - Previews now supports inspecting a view’s accessibility elements while previewing the view. This support requires macOS 12. (78297929)
 
-###### Deprecations
+#### Deprecations
 
 - Xcode 13 no longer includes a menu item in the Previews canvas for debugging a preview. Instead, use the Debug > Attach to Process menu item to attach the debugger to your previewed app. (73981969)
 
-##### Project Navigator
+### Project Navigator
 
-###### New Features
+#### New Features
 
 - The project navigator hides the Products group when it’s in the default location. The Product > Show Build Folder in Finder menu item replaces the most common use. (71561549)
 - The Move Focus to Editor command now interprets vim directional movement keys. (71754671) (FB8918700)
 - The scheme editing sheet no longer has a maximum size. (73158957) (FB8969432)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where searching through a build log using Command-F would cause Xcode to crash. (52943982)
 - By default, the project navigator hides file extensions and document tab titles. Configure this behavior in Xcode’s general preferences. (71203294)
 - Fixed the indentation of wireless devices in the run destination menu. (72926304) (FB8964983)
 - Moving large folders in Xcode is faster. (77217929)
 
-##### Sanitizers
+### Sanitizers
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Undefined Behavior Sanitizer can sanitize pre- and post-increment and decrement of types with a bit width smaller than `int`. (60943408)
 - Fixed an issue on Macs with Apple silicon where memory allocation might fail while running with Address Sanitizer enabled. (75302812)
 - Resolved an issue in macOS 12 where Thread Sanitizer might cause programs to crash or report false positives. (78319076)
 
-##### Signing and Distribution
+### Signing and Distribution
 
-###### New Features
+#### New Features
 
 - `xcodebuild` now supports the use of App Store Connect API keys for authentication with the Apple Developer website. This enables the use of automatic signing via `xcodebuild` in headless environments, such as build machines and continuous integration setups. To use API keys with `xcodebuild`, create an API key on [App Store Connect](https://appstoreconnect.apple.com/access/api) and pass the key along with its identifier and your team’s issuer identifier to `xcodebuild` using the new parameters `authenticationKeyPath`, `authenticationKeyID`, and `authenticationKeyIssuerID`, respectively. When creating a key, you can assign it a role to control its permissions for performing automatic signing tasks. To learn more about creating and managing keys, see [Creating API Keys for App Store Connect API](../AppStoreConnectAPI/creating-api-keys-for-app-store-connect-api.md). (51444716)
 - Xcode now offers to create an app record the first time you upload a new app to App Store Connect. Before creating the app record, you can configure the name, primary language, and SKU for your app directly within Xcode’s distribution assistant. (57572562) (FB7476283)
@@ -435,13 +435,13 @@ Xcode 13 includes SDKs for iOS 15, iPadOS 15, tvOS 15, watchOS 8, and macOS Big 
 - Xcode 13 supports provisioning apps for TestFlight on Mac. For your macOS app to be eligible for TestFlight, it must include provisioning profiles. When you upload your Mac app to App Store Connect and use automatic signing in the distribution assistant, the assistant automatically includes the provisioning profiles in your app. If you use manual distribution signing, create provisioning profiles on the Apple Developer website and then select them in the manual distribution signing section of the distribution assistant. (72824383)
 - You may now use `notarytool` on the command line to interact with the Apple notary service. For a full description see the manual page with `man notarytool` or view available commands with `xcrun notarytool --help`. For more information about custom notarization workflows, see [Customizing the notarization workflow](../Security/customizing-the-notarization-workflow.md). (78516542)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Resolved an issue where automatic signing was unable to repair provisioning profiles for apps that use Cloud Containers, App Groups, or Apple Pay Merchant Identifiers if your account has the Developer role. (30185440) (FB5641770)
 - Resolved an issue in which Xcode fails to `codesign` using a smart card. (58266781) (FB7516556)
 - Fixed an issue where Xcode failed to sign a universal Mac Catalyst framework if it was built with bitcode. (71599193)
 
-###### Known Issues
+#### Known Issues
 
 - Running `notarytool submit` with large `.zip` files may result in `notarytool` permanently hanging. (78513932)
 
@@ -454,9 +454,9 @@ Xcode 13 includes SDKs for iOS 15, iPadOS 15, tvOS 15, watchOS 8, and macOS Big 
 
   **Workaround**: Export the app using cloud signing, or export in macOS 12.
 
-##### Simulator
+### Simulator
 
-###### Known Issues
+#### Known Issues
 
 - Shazam Catalog recognition doesn’t work in simulated devices. (77564423)
 
@@ -471,18 +471,18 @@ Xcode 13 includes SDKs for iOS 15, iPadOS 15, tvOS 15, watchOS 8, and macOS Big 
 
   **Workaround**: Test on device to confirm Always On behavior.
 
-##### Source Control
+### Source Control
 
-###### New Features
+#### New Features
 
 - You can now create, review, and merge pull requests using Xcode’s source control features, when signed into a GitHub or Bitbucket Server account. (62934369)
 - You can now enable code review in any editor (or editor split) from the document tab bar, and it shows comparisons in an inline presentation by default. New commit selectors at the bottom of the editor let you customize the diff that’s displayed. (68880112)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Xcode verifies an SSH fingerprint for Source Control operations when a previously trusted fingerprint has changed. (66421452) (FB8234008)
 
-###### Known Issues
+#### Known Issues
 
 - Xcode’s pull request feature doesn’t work with forked repositories. You can’t submit pull requests to an upstream repository. (60009682)
 
@@ -507,9 +507,9 @@ Xcode 13 includes SDKs for iOS 15, iPadOS 15, tvOS 15, watchOS 8, and macOS Big 
   **Workaround**: Remove the hidden .git folder from the root level of the project folder, add author name and email address in the Source Control preferences tab in Xcode, and create a new Git repository from the Source Control menu in Xcode.
 - If you close a project with an active and published PR while in a PR view and then re-open the project quickly, Xcode may display an error dialog. (82401004)
 
-##### Source Editor
+### Source Editor
 
-###### New Features
+#### New Features
 
 - Xcode 13 introduces Vim key bindings, emulating a vim experience in the source editor combined with the existing editor functionality. (3716281)
 
@@ -526,7 +526,7 @@ Xcode 13 includes SDKs for iOS 15, iPadOS 15, tvOS 15, watchOS 8, and macOS Big 
 
   Code completion helps you finish expressions that aren’t correct yet. It finds and identifies types in modules you haven’t imported, and automatically adds the necessary import. When the surrounding source has errors, code completion still infers what you mean. It offers the completion you’re looking for with a message describing how to make it valid.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where URLs in comments with MARKs, TODOs, and FIXMEs weren’t clickable. (10488785)
 - Fixed an issue where elements of array and dictionary literals in Objective-C were indented too far to the right. (15964664)
@@ -539,21 +539,21 @@ Xcode 13 includes SDKs for iOS 15, iPadOS 15, tvOS 15, watchOS 8, and macOS Big 
 - To improve access to the Vim Mode, Xcode replaced the Enable Vim key bindings preference with an Edit > Vim Mode menu item. (75491567)
 - Xcode now supports changing the line wrapping preference on a per-editor basis. (79168822, 79428189) (FB9157365)
 
-##### Static Analyzer
+### Static Analyzer
 
-###### New Features
+#### New Features
 
 - The static analyzer now warns about assertions with side effects, infinite loops, and more cases of C++11 `std::move` misuse. (34520956)
 
-##### StoreKit
+### StoreKit
 
-###### New Features
+#### New Features
 
 - StoreKit Testing in Xcode supports comprehensive testing of in-app purchases built using StoreKit’s new modern Swift-based APIs. For more information about StoreKit 2, see [StoreKit](../StoreKit/StoreKit.md). (69846798)
 
-##### Swift
+### Swift
 
-###### New Features
+#### New Features
 
 - Swift now natively supports concurrency programming using async/await and actors. For more information, see [What’s new in Swift](https://developer.apple.com/wwdc21/10192), [Meet async/await in Swift](https://developer.apple.com/wwdc21/10132), and [Explore structured concurrency in Swift](https://developer.apple.com/wwdc21/10134). ([SE-0296](https://github.com/apple/swift-evolution/blob/main/proposals/0296-async-await.md), [SE-0306](https://github.com/apple/swift-evolution/blob/main/proposals/0306-actors.md), 21398040, 78028712, 78029422)
 
@@ -836,7 +836,7 @@ Xcode 13 includes SDKs for iOS 15, iPadOS 15, tvOS 15, watchOS 8, and macOS Big 
 
   The concurrency library defines one global actor, `MainActor`, which represents the main thread of execution. Use it for any code that must execute on the main thread, e.g., for updating UI.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where capturing local property wrappers in a closure would result in a compiler error. (74457878)
 - Converting a non-async function with an actor constraint into an async function without the actor constraint no longer produces an error. The async conversion introduces a hop to the necessary actor on the callee side. (76248452)
@@ -948,7 +948,7 @@ Xcode 13 includes SDKs for iOS 15, iPadOS 15, tvOS 15, watchOS 8, and macOS Big 
 
   The `self` parameter of an actor method is implicitly `isolated`. The `nonisolated` keyword makes the `self` parameter no longer `isolated`.
 
-###### Known Issues
+#### Known Issues
 
 - Swift Concurrency requires a deployment target of macOS 12, iOS 15, tvOS 15, and watchOS 8 or newer. (70738378)
 - Swift libraries may fail to build for iOS targets that use armv7. (74120874)
@@ -975,7 +975,7 @@ Xcode 13 includes SDKs for iOS 15, iPadOS 15, tvOS 15, watchOS 8, and macOS Big 
           if #available(iOS 15, *), ProcessInfo.processInfo.operatingSystemVersion.majorVersion >= 15 {
   ```
 
-###### Deprecations
+#### Deprecations
 
 - Type names are no longer allowed as an argument to a subscript parameter that expects a metatype type. (61749633, 78029595)
 
@@ -994,9 +994,9 @@ Xcode 13 includes SDKs for iOS 15, iPadOS 15, tvOS 15, watchOS 8, and macOS Big 
   }
   ```
 
-##### Swift Packages
+### Swift Packages
 
-###### New Features
+#### New Features
 
 - Root packages and branch-based package dependencies can now use `unsafeFlags` in their target settings. (53679279)
 - Swift packages can now declare a deployment target for Mac Catalyst, and can now specify Mac Catalyst as a platform in build conditions.
@@ -1007,7 +1007,7 @@ Xcode 13 includes SDKs for iOS 15, iPadOS 15, tvOS 15, watchOS 8, and macOS Big 
 - Curated collections of packages can now be added in the Add Packages sheet. (70259327)
 - Unit tests can now directly test executable targets. To do this, configure the unit test to depend on the executable target and import the module, exactly as for any library module. Swift Package Manager still builds a product in this case, so that the unit test can also test the executable itself using `Process()`. (75198161)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Improved the diagnostic information that Swift Package Manager returns when file paths in package manifests are invalid. Specifying a nonexistent or invalid path for a source file or resource now produces an error. (60708059, 60745311, 64176116)
 - Improved target-based dependency resolution. A more intuitive `.product(name:, package:)` syntax is now accepted, where `package` is the package name as defined by the package URL. (65048461)
@@ -1027,27 +1027,27 @@ Xcode 13 includes SDKs for iOS 15, iPadOS 15, tvOS 15, watchOS 8, and macOS Big 
 - Xcode no longer repeatedly reloads the package if you customize settings to store Xcode’s Derived Data directory inside the package source directory. (77208577, 78143803) (FB9109834)
 - You can now access the Add Packages panel for Xcode windows hosting a package, and copy package dependencies to the clipboard. (79023046)
 
-###### Known Issues
+#### Known Issues
 
 - Using Swift packages with binary targets may result in a “no such module” error when attempting to import the module of a binary target. (77465707)
 
-##### Swift Refactoring
+### Swift Refactoring
 
-###### New Features
+#### New Features
 
 - New refactorings help migrate to async code. “Convert Call to Async Alternative” is available on calls that take a completion handler as their last argument, and refactors them to use the new async language features, assuming that an async equivalent of that function already exists. “Convert Function to Async” applies to any sync function, adds the `async` keyword to the signature, translates the completion handler argument (and calls to it) if there is one, and converts calls to async where possible. “Add Async Alternative” is similar to “Convert Function to Async” but adds the `async` function rather than converting the synchronous one. (68254700)
 - You can now apply a new “Add Async Wrapper” refactoring action to a function with a completion handler. When you apply this wrapper, a new async alternative function is created that forwards to the original function. (77802486)
 
-##### Templates
+### Templates
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Projects created from several templates no longer require configuration files such as entitlements and `Info.plist` files. Configure common fields in the target’s Info tab, and build settings in the project editor. These files are added to the project when additional fields are used. (68254857)
 - New projects created with Xcode 13 use a new project version. Using the new projects with an older version of Xcode requires changing the project version in the File inspector along with manual migration of the configuration settings for `Info.plist` and entitlements you can now specify in the target build settings. (77344653)
 
-##### Testing
+### Testing
 
-###### New Features
+#### New Features
 
 - The Source Editor and Test Navigator have two new variants of the Run Test action that run a test selection without building. This is supported for a single test execution or repeated test executions. The Product > Perform Action submenu has a new command for rerunning the last test action without rebuilding. (13486284)
 - You can now customize how a performance test’s custom metric’s measurements should be compared against a set baseline, using the `XCTPerformanceMeasurementPolarity` enum. This customization includes marking measurements as preferring them to be smaller (default), unspecified, or larger when compared against the baseline. (49493218)
@@ -1114,12 +1114,12 @@ Xcode 13 includes SDKs for iOS 15, iPadOS 15, tvOS 15, watchOS 8, and macOS Big 
 - XCTest now includes `async throws` overloads of the `setUp` and `tearDown` instance methods. XCTest invokes the async `setUp` overload first before `setUpWithError` and non-async `setUp`, but it invokes async `tearDown` last, after non-async `tearDown` and `tearDownWithError`. XCTest records errors thrown by these new overloads as issues. (77610427)
 - Tests can now call `XCTestCase.expectation(description:)` — as well as other `XCTestCase` APIs that return an `XCTestExpectation` — from any thread. This removes a previous requirement that tests call these APIs from the main thread, and it allows existing tests using them to adopt `async` without requiring `@MainActor`. (79163972)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Improved the performance of working in large workspaces that use many test plans. (56445700)
 - XCTest now supports resetting the authorization status of additional protected resources: Network Volumes, Removable Volumes, Apple Events, and Focus. (64937038) (FB7828459)
 
-###### Known Issues
+#### Known Issues
 
 - Attempting to run unit or UI tests for Watch apps crashes Xcode when the Run scheme action’s executable is set to None. (74928871)
 

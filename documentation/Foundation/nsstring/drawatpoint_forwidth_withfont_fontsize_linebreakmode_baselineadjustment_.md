@@ -19,11 +19,11 @@ Draws the string in a single line at the specified point in the current graphics
 - (CGSize) drawAtPoint:(CGPoint) point forWidth:(CGFloat) width withFont:(UIFont *) font fontSize:(CGFloat) fontSize lineBreakMode:(NSLineBreakMode) lineBreakMode baselineAdjustment:(UIBaselineAdjustment) baselineAdjustment;
 ```
 
-#### Return Value
+## Return Value
 
 The size of the rendered string. The returned values may be rounded up to the nearest whole number.
 
-#### Discussion
+## Discussion
 
 This method draws only a single line of text, drawing as much of the string as possible using the given font and constraints. This method does not perform any line wrapping during drawing.
 

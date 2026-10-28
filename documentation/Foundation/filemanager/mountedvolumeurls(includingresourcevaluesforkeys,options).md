@@ -25,13 +25,13 @@ func mountedVolumeURLs(includingResourceValuesForKeys propertyKeys: [URLResource
 - (NSArray<NSURL *> *) mountedVolumeURLsIncludingResourceValuesForKeys:(NSArray<NSString *> *) propertyKeys options:(NSVolumeEnumerationOptions) options;
 ```
 
-#### Return Value
+## Return Value
 
 An array of `NSURL` objects identifying the mounted volumes.
 
 > ❗ **Important**:  This method returns `nil` on platforms other than macOS.
 
-#### Discussion
+## Discussion
 
 This call may block if I/O is required to determine values for the requested `propertyKeys`.
 

@@ -21,7 +21,7 @@ A default set of effect options with a preferred repeat count.
 static func `repeat`(_ count: Int?) -> SymbolEffectOptions
 ```
 
-#### Return Value
+## Return Value
 
 A new set of effect options with the preferred repeat count.
 

@@ -6,6 +6,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary_function
 
 # mlx.nn.relu2
 
-**class relu2(*x*)**
-: Applies the ReLU² activation function.
+```python
+class relu2(x)
+```
+
+Applies the ReLU² activation function.
+
 Applies \(\max(0, x)^2\) element wise.

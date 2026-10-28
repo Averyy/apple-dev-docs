@@ -23,11 +23,11 @@ static func localizedDecimal(locale: Locale) -> Self
 
 Available when `Self` is `Decimal.FormatStyle`.
 
-#### Return Value
+## Return Value
 
 A `RegexComponent` that matches localized decimal substrings as Foundation [`Decimal`](../../Foundation/decimal.md) instances.
 
-#### Discussion
+## Discussion
 
 This method matches decimal substrings in accordance with the provided locale. For example, the value `1234567890.1234` formats as `1,234,567,890.1234` in the `en_US` locale, as `1 234 567 890,1234` in the `FR` locale, and as `1234567890.1234` in the `JP` locale. Because of this, the regex needs to know what locale convention to match against.
 

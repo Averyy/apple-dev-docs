@@ -19,7 +19,7 @@ func transform(_ path: NSBezierPath) -> NSBezierPath
 - (NSBezierPath *) transformBezierPath:(NSBezierPath *) path;
 ```
 
-#### Discussion
+## Discussion
 
 The original `NSBezierPath` object is not modified.
 

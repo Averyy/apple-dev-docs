@@ -5,7 +5,7 @@
 
 Indicates that a query has finished with the initial result-gathering phase.
 
-#### Overview
+## Overview
 
 The query results list is not updated as a result of this notification.
 

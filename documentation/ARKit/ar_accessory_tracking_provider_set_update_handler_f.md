@@ -15,7 +15,7 @@ Set the function for receiving accessory tracking updates.
 extern void ar_accessory_tracking_provider_set_update_handler_f(ar_accessory_tracking_provider_t accessory_tracking_provider, dispatch_queue_t accessory_tracking_updates_queue, void *context, ar_accessory_tracking_update_handler_function_t accessory_tracking_update_handler_function);
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: Setting this function will override the handler set using `ar_accessory_tracking_provider_set_update_handler`.
 

@@ -19,7 +19,7 @@ func fontPanel(_ create: Bool) -> NSFontPanel?
 - (NSFontPanel *) fontPanel:(BOOL) create;
 ```
 
-#### Return Value
+## Return Value
 
 The application’s shared Font panel object.
 

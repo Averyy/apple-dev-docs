@@ -22,7 +22,7 @@ A property wrapper that represents an app intent dependency you use to provide d
 final class IntentParameterDependency<Intent> where Intent : AppIntent
 ```
 
-#### Overview
+## Overview
 
 Use the `IntentParameterDependency` property wrapper for properties that represent dynamic options in your [`DynamicOptionsProvider`](./dynamicoptionsprovider.md) implementations as shown in the following example:
 

@@ -28,7 +28,7 @@ struct Label<Title, Icon> where Title : View, Icon : View
 - [Populating SwiftUI menus with adaptive controls](./populating-swiftui-menus-with-adaptive-controls.md)
 - [Preparing views for localization](./preparing-views-for-localization.md)
 
-#### Overview
+## Overview
 
 One of the most common and recognizable user interface components is the combination of an icon and a label. This idiom appears across many kinds of apps and shows up in collections, lists, menus of action items, and disclosable lists, just to name a few.
 

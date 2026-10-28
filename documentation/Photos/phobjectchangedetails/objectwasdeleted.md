@@ -24,7 +24,7 @@ var objectWasDeleted: Bool { get }
 @property (atomic, readonly) BOOL objectWasDeleted;
 ```
 
-#### Discussion
+## Discussion
 
 If this value is `true`, the asset or collection has been permanently deleted from the Photos library.
 

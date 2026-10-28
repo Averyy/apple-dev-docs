@@ -5,13 +5,13 @@
 
 Integrate the features of an array of frameworks seamlessly to enhance your spatial app.
 
-#### Overview
+## Overview
 
 When building spatial computing experiences on visionOS, developers leverage a powerful combination of [ARKit](../ARKit/ARKit.md), [RealityKit](../RealityKit/RealityKit.md), and [SwiftUI](../SwiftUI/SwiftUI.md) that work seamlessly together. This article demonstrates how these frameworks interoperate by walking through the creation of a bouncing ball game that interacts with the physical world around you.
 
 ![A screenshot of showing a person using the bouncing ball app on Apple Vision Pro. The person throws a virtual bouncing ball above a table, highlighted in light blue, with an attached SwiftUI view stating '20 points'.](https://developer.apple.com/tutorials/images/com.apple.visionOS/throwing-bouncing-ball@2x.png)
 
-#### Create a realistic bouncing ball
+## Create a realistic bouncing ball
 
 Begin by creating a bouncing ball entity that has physics simulation, collision detection, and input handling. The `setupBouncingBall()` method configures a RealityKit entity with multiple components:
 
@@ -31,7 +31,7 @@ func setupBouncingBall(_ content: (inout RealityViewContent) {
 
 The [`PhysicsBodyComponent`](../RealityKit/physicsbodycomponent.md) enables physics simulation, initially set to [`PhysicsBodyMode.kinematic`](../RealityKit/physicsbodymode/kinematic.md) mode for manual control. [`CollisionComponent`](../RealityKit/collisioncomponent.md) defines the collision shape using a sphere matching the visual mesh. Setting the [`InputTargetComponent`](../RealityKit/inputtargetcomponent.md) allows the entity to receive gestures, enabling a player to interact with the model. The method receives a [`RealityViewContent`](../RealityKit/realityviewcontent.md) object the [`RealityView`](../RealityKit/realityview.md) `make:` closure provides and places the bouncing ball entity within it.
 
-#### Recognize your environment
+## Recognize your environment
 
 To make the ball interactive, your app needs hand tracking, gesture, and spatial recognition support. Configure the [`SpatialTrackingSession`](../RealityKit/spatialtrackingsession.md) to track hands and planes in addition to scene understanding:
 
@@ -55,7 +55,7 @@ func runSpatialTrackingSession(_ content: (inout RealityViewContent)) async {
 
 These capabilities form the basis of the bouncing ball entity, allowing it to interact with the player and the environment.
 
-#### Add UI gestures to spatial entities
+## Add UI gestures to spatial entities
 
 An example of cross-framework interoperability is how the SwiftUI gesture system integrates with RealityKit entities through the [`GestureComponent`](../RealityKit/gesturecomponent.md). This component allows you to attach SwiftUI gestures directly to RealityKit entities:
 
@@ -105,7 +105,7 @@ The [`DragGesture`](../SwiftUI/draggesture.md) structure’s initializer,  [`ini
 
 > **Note**: For a more complete hand tracking sample with throwing support, see [Integrating virtual objects with your environment](../RealityKit/integrating-virtual-objects-with-your-environment.md).
 
-#### Define how the ball interacts with the scene
+## Define how the ball interacts with the scene
 
 The key to making the ball interact with the real world is to:
 
@@ -114,7 +114,7 @@ The key to making the ball interact with the real world is to:
 
 RealityKit uses the information to detect and create collision geometry for surfaces in the physical environment without explicitly invoking ARKit APIs. Allowing RealityKit to perform this work on your behalf can be convenience if you don’t require the detailed information `ARKit` API provides. The scene understanding happens entirely within the RealityKit physics simulation system. After enabling scene understanding, the ball bounces off real-world surfaces like floors, walls, tables, and ceilings.
 
-#### Visualize the physical world with plane anchors
+## Visualize the physical world with plane anchors
 
 While scene understanding provides invisible collision geometry, you might want to visualize the surfaces or create targets to hit. You provide this support by adding [`AnchorEntity`](../RealityKit/anchorentity.md) instances for different plane classifications:
 
@@ -170,7 +170,7 @@ didAnchor = content.subscribe(to: AnchorStateEvents.DidAnchor.self, { event in
 
 This subscription creates a semitransparent blue plane mesh for each surface RealityKit detects, providing visual feedback about where the ball can bounce.
 
-#### Attach views to spatial entities
+## Attach views to spatial entities
 
 You can attach SwiftUI views directly to RealityKit entities using the `ViewAttachmentComponent` initializer, [`init(rootView:)`](../RealityKit/viewattachmentcomponent/init%28rootview%29.md). In the context of the game example, it allows you to display game point values or other UI elements that track with the planes:
 
@@ -187,7 +187,7 @@ content.add(wallEntity)
 
 The SwiftUI renders views as part of the 3D scene and automatically positions them with their container entities.
 
-#### Observe spatial entities in views
+## Observe spatial entities in views
 
 SwiftUI views can observe RealityKit entities in nearly the same manner as SwiftUI `@State` and `@Binding` properties. By creating the bouncing ball entity up one level, at the app level in this case, and passing it to both the immersive space and a tracking view, you can observe changes in the bouncing ball in SwiftUI:
 

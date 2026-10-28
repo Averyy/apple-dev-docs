@@ -22,7 +22,7 @@ class CPGridTemplate
 @interface CPGridTemplate : CPTemplate
 ```
 
-#### Overview
+## Overview
 
 Use this template to display a grid of items as buttons. When creating the grid template, provide an array of [`CPGridButton`](./cpgridbutton.md) objects. Each button contains a title, an image, and an optional handler that the system invokes after the user taps the button on the CarPlay screen.
 

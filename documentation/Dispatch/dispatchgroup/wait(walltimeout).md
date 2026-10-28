@@ -21,7 +21,7 @@ Waits synchronously for the previously submitted work to complete, and returns i
 func wait(wallTimeout timeout: DispatchWallTime) -> DispatchTimeoutResult
 ```
 
-#### Return Value
+## Return Value
 
 [`DispatchTimeoutResult.timedOut`](../dispatchtimeoutresult/timedout.md) if the method returned due to a timeout, or [`DispatchTimeoutResult.success`](../dispatchtimeoutresult/success.md) if the tasks completed.
 

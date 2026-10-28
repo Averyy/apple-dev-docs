@@ -23,7 +23,7 @@ var GSS_C_CALLING_ERROR_MASK: UInt { get }
 #define GSS_C_CALLING_ERROR_MASK
 ```
 
-#### Discussion
+## Discussion
 
 Shift the mask to the left by [`GSS_C_CALLING_ERROR_OFFSET`](./gss_c_calling_error_offset.md) to put it in the correct position within the major status code to match the calling error field. The [`GSS_CALLING_ERROR`](./gss_calling_error.md) macro does this for you, before bitwise `AND`ing with its input.
 

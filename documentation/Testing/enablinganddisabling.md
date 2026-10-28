@@ -5,13 +5,13 @@
 
 Conditionally enable or disable individual tests before they run.
 
-#### Overview
+## Overview
 
 Often, a test is only applicable in specific circumstances. For instance, you might want to write a test that only runs on devices with particular hardware capabilities, or performs locale-dependent operations. The testing library allows you to add traits to your tests that cause runners to automatically skip them if conditions like these are not met.
 
 > **Note**: A condition may be evaluated multiple times during testing.
 
-##### Disable a test
+### Disable a test
 
 If you need to disable a test unconditionally, use the [`disabled(_:sourceLocation:)`](./trait/disabled%28_,sourcelocation%29.md) function. Given the following test function:
 
@@ -36,7 +36,7 @@ It’s also possible to add a comment to the trait to present in the output from
 func sellsBurritos() async throws { ... }
 ```
 
-##### Enable or disable a test conditionally
+### Enable or disable a test conditionally
 
 Sometimes, it makes sense to enable a test only when a certain condition is met. Consider the following test function:
 
@@ -83,7 +83,7 @@ func isCold() async throws { ... }
 
 If a test has multiple conditions applied to it, they must *all* pass for it to run. Otherwise, the test notes the first condition to fail as the reason the test is skipped.
 
-##### Handle complex conditions
+### Handle complex conditions
 
 If a condition is complex, consider factoring it out into a helper function to improve readability:
 
@@ -98,7 +98,7 @@ func allIngredientsAvailable(for food: Food) -> Bool { ... }
 func makeSundae() async throws { ... }
 ```
 
-##### End a test after it has already started
+### End a test after it has already started
 
 If a test is running and you determine it cannot complete and should end early without failing, use [`cancel(_:sourceLocation:)`](./test/cancel%28_,sourcelocation%29.md) to cancel the test:
 

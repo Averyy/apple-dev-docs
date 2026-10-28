@@ -24,7 +24,7 @@ var allowsToggleToOff: Bool { get set }
 @property (nonatomic) BOOL allowsToggleToOff;
 ```
 
-#### Discussion
+## Discussion
 
 To implement a group of radio buttons where at least one option must remain in a selected state, set [`allowsToggleToOff`](./allowstoggletooff.md) to [`false`](../../Swift/false.md) on each button in the group.
 

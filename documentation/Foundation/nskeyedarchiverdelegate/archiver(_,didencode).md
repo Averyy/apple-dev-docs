@@ -25,7 +25,7 @@ optional func archiver(_ archiver: NSKeyedArchiver, didEncode object: Any?)
 - (void) archiver:(NSKeyedArchiver *) archiver didEncodeObject:(id) object;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate might restore some state it had modified previously, or use this opportunity to keep track of the objects that are encoded.
 

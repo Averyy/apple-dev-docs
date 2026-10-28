@@ -21,7 +21,7 @@ Returns a locale initialized using the given locale identifier.
 + (instancetype) localeWithLocaleIdentifier:(NSString *) ident;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized locale.
 

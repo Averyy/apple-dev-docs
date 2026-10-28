@@ -23,7 +23,7 @@ var requiredMetadataObjectTypesForCinematicVideoCapture: [AVMetadataObject.Objec
 @property (nonatomic, readonly) NSArray<NSString *> * requiredMetadataObjectTypesForCinematicVideoCapture;
 ```
 
-#### Discussion
+## Discussion
 
 Since the Cinematic Video algorithm requires a particular set of metadata objects to function optimally, you must set your [`metadataObjectTypes`](./metadataobjecttypes.md) property to this property’s returned value if you’ve set [`isCinematicVideoCaptureEnabled`](../avcapturedeviceinput/iscinematicvideocaptureenabled.md) to `true` on the connected device input, otherwise an `NSInvalidArgumentException` is thrown.
 

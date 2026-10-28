@@ -17,7 +17,7 @@ optional func usbController(_ usbController: VZUSBController, usbPassthroughDevi
 - (void) usbController:(VZUSBController *) usbController usbPassthroughDeviceDidDisconnect:(VZUSBPassthroughDevice *) device;
 ```
 
-#### Discussion
+## Discussion
 
 Invoked when a USB device’s IOService is terminated.
 

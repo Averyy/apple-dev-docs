@@ -25,7 +25,7 @@ func NSPageSize() -> Int
 extern NSUInteger NSPageSize();
 ```
 
-#### Return Value
+## Return Value
 
 The number of bytes in a page.
 

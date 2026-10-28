@@ -34,7 +34,7 @@ var discoveryInfo: [String : String]? { get }
 @property (atomic, readonly, nullable) NSDictionary<NSString *,NSString *> * discoveryInfo;
 ```
 
-#### Discussion
+## Discussion
 
 This value is set when you initialize the object, and cannot be changed later.
 

@@ -23,7 +23,7 @@ var clientDataHash: Data { get }
 @property (nonatomic, readonly) NSData * clientDataHash;
 ```
 
-#### Discussion
+## Discussion
 
 Use the client data hash for both registration and assertion challenges.
 

@@ -21,7 +21,7 @@ An acquiring-and-releasing operation is a combination of `.acquiring` and `.rele
 static var acquiringAndReleasing: AtomicUpdateOrdering { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to `std::memory_order_acq_rel` in C++.
 

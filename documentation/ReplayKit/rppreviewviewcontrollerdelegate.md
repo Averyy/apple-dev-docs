@@ -26,7 +26,7 @@ protocol RPPreviewViewControllerDelegate : NSObjectProtocol
 @protocol RPPreviewViewControllerDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Use this class to respond to changes to a screen-recording user interface, represented by an [`RPBroadcastActivityViewController`](./rpbroadcastactivityviewcontroller.md) object.
 

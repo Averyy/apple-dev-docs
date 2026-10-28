@@ -16,7 +16,7 @@ Returns a Boolean value that indicates whether the analysis detects data at the 
 final func hasDataDetector(at point: CGPoint) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the analyzer detects data at `point`; otherwise, `false`.
 

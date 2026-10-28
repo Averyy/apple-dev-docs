@@ -21,11 +21,11 @@ Specifies the scheduler on which to perform subscribe, cancel, and request opera
 func subscribe<S>(on scheduler: S, options: S.SchedulerOptions? = nil) -> Publishers.SubscribeOn<Self, S> where S : Scheduler
 ```
 
-#### Return Value
+## Return Value
 
 A publisher which performs upstream operations on the specified scheduler.
 
-#### Discussion
+## Discussion
 
 In contrast with [`receive(on:options:)`](./receive%28on,options%29.md), which affects downstream messages, [`subscribe(on:options:)`](./subscribe%28on,options%29.md) changes the execution context of upstream messages.
 

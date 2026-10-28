@@ -25,7 +25,7 @@ var playbackSessionID: String? { get }
 @property (nonatomic, readonly, nullable) NSString * playbackSessionID;
 ```
 
-#### Discussion
+## Discussion
 
 This value is used in HTTP requests.
 

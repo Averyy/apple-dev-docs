@@ -20,7 +20,7 @@ struct es_event_deleteextattr_t
 typedef struct { ... } es_event_deleteextattr_t;
 ```
 
-#### Overview
+## Overview
 
 See the `removxattr(2)` man page for information on deleting extended attributes.
 

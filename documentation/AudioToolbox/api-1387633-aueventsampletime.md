@@ -5,7 +5,7 @@
 
 Expresses time as a sample count.
 
-#### Overview
+## Overview
 
 Callers of the [`AUScheduleParameterBlock`](./auscheduleparameterblock.md) and [`AUScheduleMIDIEventBlock`](./auschedulemidieventblock.md) blocks can pass the `AUEventSampleTimeImmediate` value to indicate that the event should be rendered as soon as possible (in the next cycle). A caller may also add a small (less than 4096) sample frame offset to this constant.
 

@@ -25,7 +25,7 @@ var dateTemplate: String! { get set }
 @property (copy, null_resettable) NSString * dateTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 Use this string to specify a custom fixed format for each of the date and time values. The string you specify is based on the Unicode Technical Standard #35, which uses characters to represent the day, time, year, hour, minute, and other pieces of date or time information.
 

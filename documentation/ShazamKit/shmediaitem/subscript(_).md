@@ -25,7 +25,7 @@ subscript(key: SHMediaItemProperty) -> Any { get }
 - (id) objectForKeyedSubscript:(SHMediaItemProperty) key;
 ```
 
-#### Return Value
+## Return Value
 
 The value of the property; otherwise, `nil`.
 

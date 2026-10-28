@@ -19,11 +19,11 @@
 int (*)(const struct AudioServerPlugInHostInterface *, const struct __CFString *) DeleteFromStorage;
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus indicating success or failure.
 
-#### Discussion
+## Discussion
 
 This method will remove the given key and any associated data from storage.
 

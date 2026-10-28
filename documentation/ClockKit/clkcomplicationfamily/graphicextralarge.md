@@ -19,7 +19,7 @@ case graphicExtraLarge
 CLKComplicationFamilyGraphicExtraLarge
 ```
 
-#### Discussion
+## Discussion
 
 The following figure shows the size and location of the graphic rectangular complication.
 

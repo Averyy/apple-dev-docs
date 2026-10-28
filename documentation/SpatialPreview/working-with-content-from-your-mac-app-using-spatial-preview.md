@@ -10,7 +10,7 @@ Send and update documents, and work with 3D content live from your Mac app to a 
 - macOS 27.0+
 - Xcode 27.0+
 
-#### Overview
+## Overview
 
 The Spatial Preview framework enables Mac apps to send content to a nearby Apple Vision Pro so people can view it spatially and immersively. This sample includes two examples that illustrate the main session types:
 

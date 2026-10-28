@@ -23,7 +23,7 @@ var height: NSNumber? { get }
 @property (nonatomic, readonly, nullable) NSNumber * height;
 ```
 
-#### Discussion
+## Discussion
 
 The object in this property contains a [`CGFloat`](../../CoreFoundation/cgfloat-swift.struct.md) value. If the webpage didn’t request a specific window height, this property is `nil`.
 

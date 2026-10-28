@@ -19,11 +19,11 @@ The declaration to configure Apple Intelligence settings.
 object IntelligenceSettings
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.configuration.intelligence.settings` as the declaration type.
 
-##### Configuration availability
+### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -35,7 +35,7 @@ Specify `com.apple.configuration.intelligence.settings` as the declaration type.
 | Allowed in user scope | macOS |
 | Apply | Multiple configurations are combined and applied as a single effective configuration |
 
-##### Configuration examples
+### Configuration examples
 
 This configuration restricts several Apple Intelligence features.
 

@@ -9,19 +9,19 @@ Retrieve the full details of a specific ad account by its ID.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint retrieves the full details of a specific ad account by its ID, including its associated advertiser resources.
 
-#### Payload Examples
+## Payload Examples
 
-##### Request
+### Request
 
 ```
 GET /v1/ad-accounts/123456789
 ```
 
-##### Response
+### Response
 
 ```json
 {

@@ -24,7 +24,7 @@ struct HKCharacteristicTypeIdentifier
 typedef NSString * HKCharacteristicTypeIdentifier;
 ```
 
-#### Overview
+## Overview
 
 To create an [`HKCharacteristicType`](./hkcharacteristictype.md) instance, pass an [`HKCharacteristicTypeIdentifier`](./hkcharacteristictypeidentifier.md) value to the [`characteristicType(forIdentifier:)`](./hkobjecttype/characteristictype%28foridentifier%29.md) method.
 

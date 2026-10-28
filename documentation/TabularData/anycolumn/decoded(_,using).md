@@ -21,11 +21,11 @@ Decodes data for each element of the column.
 func decoded<T, Decoder>(_ type: T.Type, using decoder: Decoder) throws -> AnyColumn where T : Decodable, Decoder : TopLevelDecoder
 ```
 
-#### Return Value
+## Return Value
 
 A new column of decoded values.
 
-#### Discussion
+## Discussion
 
 > **Throws**: `ColumnDecodingError` if an element fails to decode.
 

@@ -20,7 +20,7 @@ Creates a structure containing analysis processing options.
 init(priority: TaskPriority, modelRetention: SpeechAnalyzer.Options.ModelRetention, ignoresResourceLimits: Bool)
 ```
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**: When setting `ignoresResourceLimits` to `true`, test your app on a variety of devices under a variety of scenarios to experimentally determine how many analyzers you can reliably create and expect to function. Consider how to recover in the event one or more analyzers fail.
 

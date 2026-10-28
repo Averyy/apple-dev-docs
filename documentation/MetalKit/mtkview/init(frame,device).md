@@ -24,7 +24,7 @@ init(frame frameRect: CGRect, device: (any MTLDevice)?)
 - (instancetype) initWithFrame:(CGRect) frameRect device:(id<MTLDevice>) device;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized view object.
 

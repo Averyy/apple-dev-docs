@@ -25,7 +25,7 @@ var medicationDoseEventType: HKMedicationDoseEventType { get }
 @property (copy, readonly) HKMedicationDoseEventType * medicationDoseEventType;
 ```
 
-#### Discussion
+## Discussion
 
 You use this type when creating queries or filtering results by sample type.
 

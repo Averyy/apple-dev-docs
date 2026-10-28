@@ -24,11 +24,11 @@ init(characteristic: HMCharacteristic, thresholdRange: HMNumberRange)
 - (instancetype) initWithCharacteristic:(HMCharacteristic *) characteristic thresholdRange:(HMNumberRange *) thresholdRange;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized characteristic threshold range event.
 
-#### Discussion
+## Discussion
 
 Use a characteristic that supports notification; otherwise this initializer throws an exception.
 

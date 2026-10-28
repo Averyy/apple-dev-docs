@@ -25,7 +25,7 @@ struct SCNVector4
 typedef struct SCNVector4 { ... } SCNVector4;
 ```
 
-#### Overview
+## Overview
 
 SceneKit uses four-component vectors to represent multiple kinds of data:
 

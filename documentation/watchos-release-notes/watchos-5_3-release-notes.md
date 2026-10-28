@@ -5,13 +5,13 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The watchOS 5.3 SDK provides support for developing watchOS apps for Apple Watch devices running watchOS 5.3. The SDK comes bundled with Xcode 10.3. For information on the compatibility requirements for Xcode 10.3, see [Xcode 10.3 Release Notes](../Xcode-Release-Notes/xcode-10_3-release-notes.md).
 
-##### General
+### General
 
-###### Known Issues
+#### Known Issues
 
 - Devices running watchOS 5.3 don’t appear as available for development in Xcode 10.2.1. (50638444)
 

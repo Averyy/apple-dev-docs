@@ -24,7 +24,7 @@ case failureRequiringAppLaunch
 INPlayMediaIntentResponseCodeFailureRequiringAppLaunch
 ```
 
-#### Discussion
+## Discussion
 
 Respond with this code when you cannot handle the request through Siri for a reason not covered by any other response code. For example, use this code when the user hasn’t set up an account with your app. Don’t use this code for general errors or to force the user to launch your app.
 

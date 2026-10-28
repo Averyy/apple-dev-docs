@@ -16,11 +16,11 @@ Sends a report of type kIOHIDReportTypeOutput or kIOHIDReportTypeFeature to the 
 IOReturn (*setReport)(void *self, IOHIDReportType reportType, uint32_t reportID, const uint8_t *report, CFIndex reportLength, uint32_t timeout, IOHIDReportCallback callback, void *context, IOOptionBits options);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful or a kern_return_t if unsuccessful.
 
-#### Discussion
+## Discussion
 
 This method is useful if specific knowledge of the unparsed report is known to the caller. Otherwise, using an IOHIDDeviceTransactionInterface with the kIOHIDTransactionDirectionTypeOutput direction is recommended.
 

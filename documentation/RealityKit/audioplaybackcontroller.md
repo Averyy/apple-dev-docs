@@ -21,7 +21,7 @@ A controller that manages an audio playback instance.
 @preconcurrency class AudioPlaybackController
 ```
 
-#### Overview
+## Overview
 
 You can obtain an audio playback controller by calling an entity’s Entity/prepareAudio(*:) or Entity/playAudio(*:) method which creates a controller with the associated [`AudioResource`](./audioresource.md). To play multiple instances of a resource, call [`playAudio(_:)`](./entity/playaudio%28_%29.md) to obtain new AudioPlaybackControllers.
 

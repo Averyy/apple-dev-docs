@@ -17,7 +17,7 @@ A unique identifier for the venue.
 let id: UUID
 ```
 
-#### Discussion
+## Discussion
 
 Use this identifier to submit `ElectricalLoadEvent`s for [`ElectricityGuidance`](../electricityguidance.md).
 

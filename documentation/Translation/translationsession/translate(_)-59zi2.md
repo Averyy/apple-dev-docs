@@ -18,11 +18,11 @@ Translates a formatted string of text, preserving formatting in the translation.
 func translate(_ string: AttributedString) async throws -> TranslationSession.Response
 ```
 
-#### Return Value
+## Return Value
 
 The response that contains the text translation with formatting preserved.
 
-#### Discussion
+## Discussion
 
 Use this method to translate text that includes formatting like bold text or links, and preserve that formatting in the translated result. The framework aligns formatting between the source and target languages so that formatted words in the source remain formatted in the translation. Custom attributes, such as timestamps for synchronized captions or lyrics, are also preserved. For examples of translating attributed strings, see [`attributedSourceText`](./request/attributedsourcetext.md).
 

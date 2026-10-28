@@ -22,7 +22,7 @@ optional func previewController(_ controller: QLPreviewController, didSaveEdited
 - (void) previewController:(QLPreviewController *) controller didSaveEditedCopyOfPreviewItem:(id<QLPreviewItem>) previewItem atURL:(NSURL *) modifiedContentsURL;
 ```
 
-#### Discussion
+## Discussion
 
 The platform invokes this callback with an edited copy of the preview item at `modifiedContentsURL`. It invokes the callback in the following scenarios:
 

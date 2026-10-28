@@ -23,7 +23,7 @@ weak var delegate: (any UIDynamicAnimatorDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<UIDynamicAnimatorDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The methods for a dynamic animator delegate are described in [`UIDynamicAnimatorDelegate`](../uidynamicanimatordelegate.md).
 

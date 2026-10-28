@@ -24,7 +24,7 @@ init!(undefinedIn context: JSContext!)
 + (JSValue *) valueWithUndefinedInContext:(JSContext *) context;
 ```
 
-#### Return Value
+## Return Value
 
 The JavaScript `undefined` value.
 

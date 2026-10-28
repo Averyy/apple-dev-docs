@@ -25,11 +25,11 @@ func overrideTraitCollection(forChild childViewController: UIViewController) -> 
 - (UITraitCollection *) overrideTraitCollectionForChildViewController:(UIViewController *) childViewController;
 ```
 
-#### Return Value
+## Return Value
 
 The trait collection for the designated view controller.
 
-#### Discussion
+## Discussion
 
 Use this method to retrieve the trait collection for a child view controller. You can then modify the trait collection for the designated child view controller and set it using the [`setOverrideTraitCollection(_:forChild:)`](./setoverridetraitcollection%28_,forchild%29.md) method.
 

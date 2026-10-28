@@ -20,7 +20,7 @@ Returns a sub-view with the same rank as this view by slicing the dimensions at 
 mutating func mutatingSlice<let indexRank : Int>(at ranges: [indexRank of any NDArray.RangeExpression]) -> NDArray.MutableRawView
 ```
 
-#### Discussion
+## Discussion
 
 For example if you have a 3D NDArray and want to increment a specific region, you can slice that region, reintroduce the scalar type, and then access a span over it (or use `withUnsafeMutablePointer` if not contiguous).
 

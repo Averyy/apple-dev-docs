@@ -15,7 +15,7 @@ The name of person who last edited the document.
 static let editor: NSAttributedString.DocumentAttributeKey
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSString`](../../nsstring.md) object containing name of person who last edited the document.
 

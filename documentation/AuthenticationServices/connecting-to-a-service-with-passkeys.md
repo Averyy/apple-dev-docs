@@ -12,11 +12,11 @@ Allow users to sign in to a service without typing a password.
 - Mac Catalyst 16.0+
 - Xcode 14.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC22 session [10092: Meet passkeys](https://developer.apple.com/wwdc22/10092/) and WWDC21 session [10106: Move beyond passwords](https://developer.apple.com/wwdc21/10106/).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 To build and run this sample:
 

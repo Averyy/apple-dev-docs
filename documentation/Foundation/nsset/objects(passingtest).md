@@ -25,7 +25,7 @@ func objects(passingTest predicate: (Any, UnsafeMutablePointer<ObjCBool>) -> Boo
 - (NSSet<id> *) objectsPassingTest:(BOOL (^)(ObjectType obj, BOOL *stop)) predicate;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSSet`](../nsset.md) containing objects that pass the test.
 

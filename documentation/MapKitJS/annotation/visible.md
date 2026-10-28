@@ -16,7 +16,7 @@ get visible(): boolean;
 set visible(value: boolean);
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to `false` to temporarily hide an annotation.
 

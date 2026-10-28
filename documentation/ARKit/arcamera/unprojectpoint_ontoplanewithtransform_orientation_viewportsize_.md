@@ -16,11 +16,11 @@ Returns the projection of a point from the 2D space of a view rendering the scen
 - (simd_float3) unprojectPoint:(CGPoint) point ontoPlaneWithTransform:(simd_float4x4) planeTransform orientation:(UIInterfaceOrientation) orientation viewportSize:(CGSize) viewportSize;
 ```
 
-#### Return Value
+## Return Value
 
 The 3D point in world space where a ray projected from the specified 2D point intersects the specified plane. If the ray does not intersect the plane, this method returns a `float3` vector where all elements are `NaN`.
 
-#### Discussion
+## Discussion
 
 If you display AR content with SceneKit, the [`ARSCNView`](../arscnview.md) class provides an otherwise equivalent [`unprojectPoint:ontoPlaneWithTransform:`](../arscnview/unprojectpoint_ontoplanewithtransform_.md) method that requires fewer parameters (because the view can infer its orientation and size).
 

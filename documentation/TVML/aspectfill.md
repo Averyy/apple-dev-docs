@@ -5,15 +5,15 @@
 
 Stretches an image to fill the containing bounding box.
 
-#### Overview
+## Overview
 
 Use the `aspectFill` attribute to display an image that fills the bounding box while keeping the aspect of image intact.
 
-##### Values for aspectFill
+### Values for aspectFill
 
 - **boolean**: The image fills the entire screen when set to `true`.
 
-##### Elements that use aspectFill
+### Elements that use aspectFill
 
 - [img](./img.md) inside of a `oneupTemplate` element only
 

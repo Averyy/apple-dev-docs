@@ -19,7 +19,7 @@ Gets the entity with the given identifier.
 @preconcurrency func entity(for identifier: MultipeerConnectivityService.Identifier) -> Entity?
 ```
 
-#### Return Value
+## Return Value
 
 The entity with the corresponding identifier.
 

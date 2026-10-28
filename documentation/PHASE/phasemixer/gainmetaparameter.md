@@ -24,7 +24,7 @@ var gainMetaParameter: PHASEMetaParameter? { get }
 @property (nonatomic, strong, readonly, nullable) PHASEMetaParameter * gainMetaParameter;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to smoothly adjust the volume of the mixer’s audio signals by calling [`fade(value:duration:)`](../phasenumbermetaparameter/fade%28value,duration%29.md).
 

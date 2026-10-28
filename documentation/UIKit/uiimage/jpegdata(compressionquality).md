@@ -24,11 +24,11 @@ func jpegData(compressionQuality: CGFloat) -> Data?
 extern NSData *UIImageJPEGRepresentation(UIImage *image, CGFloat compressionQuality);
 ```
 
-#### Return Value
+## Return Value
 
 A data object containing the JPEG data, or `nil` if there’s a problem generating the data. This function may return `nil` if the image has no data or if the underlying `CGImageRef` contains data in an unsupported bitmap format.
 
-#### Discussion
+## Discussion
 
 If the image object’s underlying image data has been purged, calling this function forces that data to be reloaded into memory.
 

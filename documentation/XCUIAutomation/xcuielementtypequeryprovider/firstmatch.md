@@ -27,7 +27,7 @@ var firstMatch: XCUIElement { get }
 @property (readonly) XCUIElement * firstMatch;
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`firstMatch`](./firstmatch.md) property when you know that there can only be one possible match for an element query. When you call [`firstMatch`](./firstmatch.md), the framework stops traversing your app’s accessibility hierarchy as soon as it finds a matching element, speeding up element query resolution.
 

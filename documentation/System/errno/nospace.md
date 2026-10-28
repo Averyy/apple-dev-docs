@@ -25,7 +25,7 @@ static var noSpace: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 A write to an ordinary file, the creation of a directory or symbolic link, or the creation of a directory entry failed because there aren’t any available disk blocks on the file system, or the allocation of an inode for a newly created file failed because there aren’t any inodes available on the file system.
 

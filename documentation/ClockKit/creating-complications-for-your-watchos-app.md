@@ -4,7 +4,7 @@
 
 Set up and implement complications for your watchOS app.
 
-#### Overview
+## Overview
 
 Complications are small interface elements that users place on the clock face.
 
@@ -12,7 +12,7 @@ Complications are small interface elements that users place on the clock face.
 
 Having your complication on an active watch face gives you the opportunity to provide useful data whenever the user glances at their watch. Users can also interact with your app by tapping on the complication and launching your app. The system also provides apps with active complications larger budgets for background refresh tasks. You can use these tasks to keep the content of your watchOS app and your complications up to date and accurate.
 
-##### Add Complications to Your App
+### Add Complications to Your App
 
 To add complications to your watchOS app, perform the following steps:
 
@@ -22,7 +22,7 @@ To add complications to your watchOS app, perform the following steps:
 4. Update your complications.
 5. Add placeholders for your complications.
 
-##### Select the Data to Display
+### Select the Data to Display
 
 Before creating a complication, decide on the data you want to display. Each watch face only provides space for a handful of complications, and users are more likely to add your complication if it provides useful and up-to-date information at a glance.
 
@@ -34,7 +34,7 @@ Consider the following:
 
 The system gives larger background budgets to watchOS apps with complications on the active watch face. However, it still limits the background tasks to about four tasks per hour. Alternatively, you can generate the complication data on your server, and send it to the watch using push notifications. This strategy lets you move complex and time consuming tasks off the watch; however, the system limits you to 50 complication push notifications per day. Be sure that your complications can provide useful and timely information within these constraints.
 
-##### Set Up and Design Your Complications
+### Set Up and Design Your Complications
 
 Before you can begin designing your complications, you need to enable support. If you’re creating a new project, you can choose to include complications in the project, and Xcode does all the work for you. However, if you want to add complications to an existing app, you may need to create and configure your complications’ data source and an asset group. For more information, see [Enabling Complications for Your watchOS App](./enabling-complications-for-your-watchos-app.md).
 
@@ -42,13 +42,13 @@ Next, implement your app’s data source. ClockKit calls the [`CLKComplicationDa
 
 Finally, an effective complication must display useful information whenever the user glances at it. For information on strategies to keep your complication up to date and accurate, see [Keeping your complications up to date](./keeping-your-complications-up-to-date.md).
 
-##### Add Placeholders
+### Add Placeholders
 
 ClockKit displays placeholders for your app’s complications while the user configures a watch face. Your app can provide static images and localized templates as placeholders. For static placeholders, place images in the Complications group in your watch extension’s assets catalog. For localized templates, implement your data source’s [`getLocalizableSampleTemplate(for:withHandler:)`](./clkcomplicationdatasource/getlocalizablesampletemplate%28for,withhandler%29.md) method.
 
 ClockKit uses the localizable templates whenever possible; however, it may display the static image if the template isn’t available, such as when the user first installs your app. For more information, see [Adding Placeholders for Your Complication](./adding-placeholders-for-your-complication.md).
 
-##### Test Your Complications
+### Test Your Complications
 
 To test your complications, build and install the app on the simulator or a test device. Then add the complication to an active watch face, as described in this example:
 

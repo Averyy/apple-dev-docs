@@ -20,7 +20,7 @@ Processes a surface by analyzing pixels for sequences of flashing lights and mit
 func processSurface(_ inSurface: IOSurfaceRef, outSurface: inout IOSurfaceRef, timestamp: CFAbsoluteTime, options: [MAFlashingLightsProcessor.OptionKey : Any]? = nil) -> MAFlashingLightsProcessor.Result
 ```
 
-#### Return Value
+## Return Value
 
 An [`MAFlashingLightsProcessor.Result`](./result.md) object that indicates whether the processor successfully processed the input surface, the intensity of flashing lights in the input surface, and the amount of mitigation in the output surface.
 

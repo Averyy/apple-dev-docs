@@ -21,7 +21,7 @@ Creates a new tag collection from an existing Core Foundation dictionary.
 extern OSStatus CMTagCollectionCreateFromDictionary(CFDictionaryRef dict, CFAllocatorRef allocator, CMTagCollectionRef*newCollectionOut);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `0` on success and a value from Tag Collection Error Codes on failure.
 

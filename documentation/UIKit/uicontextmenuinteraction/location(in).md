@@ -23,7 +23,7 @@ func location(in view: UIView?) -> CGPoint
 - (CGPoint) locationInView:(UIView *) view;
 ```
 
-#### Return Value
+## Return Value
 
 The location of the interaction specified in the coordinate system of `view`.
 

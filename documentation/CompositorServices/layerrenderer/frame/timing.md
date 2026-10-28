@@ -16,7 +16,7 @@ A type that stores information about a frame’s encoding, rendering, and presen
 struct Timing
 ```
 
-#### Overview
+## Overview
 
 Before you start drawing your frame’s content, call [`predictTiming()`](./predicttiming%28%29.md) to retrieve the frame’s timing information. That function returns the latest predicted values for you to use during planning. After you retrieve the [`LayerRenderer.Drawable`](../drawable.md) type for the frame, get the timing information from the drawable instead using [`frameTiming`](../drawable/frametiming.md).
 

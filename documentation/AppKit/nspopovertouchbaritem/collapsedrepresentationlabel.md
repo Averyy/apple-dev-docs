@@ -22,7 +22,7 @@ var collapsedRepresentationLabel: String { get set }
 @property (strong) NSString * collapsedRepresentationLabel;
 ```
 
-#### Discussion
+## Discussion
 
 If the [`collapsedRepresentation`](./collapsedrepresentation.md) button has been replaced by a different view, this property may not have any effect.
 

@@ -17,7 +17,7 @@ Matrix or vector norm.
 static func norm(_ array: MLXArray, ord: Double, axis: IntOrArray? = nil, keepDims: Bool = false, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 See [`norm(_:ord:axes:keepDims:stream:)`](../norm%28_,ord,axes,keepdims,stream%29.md)
 

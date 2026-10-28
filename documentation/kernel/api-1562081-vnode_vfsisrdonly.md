@@ -15,7 +15,7 @@ Determine if the filesystem to which a vnode belongs is mounted read-only.
 int vnode_vfsisrdonly(vnode_t vp);
 ```
 
-#### Return Value
+## Return Value
 
 Nonzero if the filesystem is read-only, 0 otherwise.
 

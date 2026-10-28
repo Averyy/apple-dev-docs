@@ -21,7 +21,7 @@ Calls the given closure with the contents of underlying storage.
 func withBytes<R, E>(_ body: (RawSpan) throws(E) -> R) throws(E) -> R where E : Error
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: Calling `withBytes` multiple times does not guarantee that the same span will be passed in every time.
 

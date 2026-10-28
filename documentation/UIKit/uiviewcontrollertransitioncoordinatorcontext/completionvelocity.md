@@ -24,11 +24,11 @@ var completionVelocity: CGFloat { get }
 @property (nonatomic, readonly) CGFloat completionVelocity;
 ```
 
-#### Return Value
+## Return Value
 
 The completion velocity for the view controller transition. A value of `1.0` corresponds to an animation that would complete in the duration returned by the [`transitionDuration`](./transitionduration.md) method. Higher values cause the animations to move faster by the corresponding factor and lower values cause it to move slower. The value of this property is always greater than `0.0`.
 
-#### Discussion
+## Discussion
 
 The completion velocity provides the starting speed to use at the end of an interactive animation. Setting the initial speed of your animations ensures that views don’t change velocity abruptly. This value is usually obtained from the [`completionVelocity`](./completionvelocity.md) property of the interactive animator object.
 

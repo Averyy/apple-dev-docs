@@ -24,7 +24,7 @@ var hasRemappedElements: Bool { get }
 @property (nonatomic, readonly) BOOL hasRemappedElements;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the user remaps one or more elements; otherwise, this property is [`false`](../../Swift/false.md).
 

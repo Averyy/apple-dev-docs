@@ -22,7 +22,7 @@ Stores the result of shifting a value’s binary representation the specified nu
 static func <<= <RHS>(lhs: inout Self, rhs: RHS) where RHS : BinaryInteger
 ```
 
-#### Discussion
+## Discussion
 
 The `<<` operator performs a *smart shift*, which defines a result for a shift of any value.
 

@@ -20,7 +20,7 @@ Boolean value that indicates whether to detect barcodes in the document.
 var enabled: Bool
 ```
 
-#### Discussion
+## Discussion
 
 The value is unavailable by default. To enable barcode detection, set the property value to `true`.
 

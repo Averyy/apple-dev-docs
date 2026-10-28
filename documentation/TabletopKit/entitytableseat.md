@@ -15,7 +15,7 @@ A protocol for seats at the table that you render using RealityKit.
 protocol EntityTableSeat : TableSeat
 ```
 
-#### Overview
+## Overview
 
 To render seats using an entity, follow these steps:
 

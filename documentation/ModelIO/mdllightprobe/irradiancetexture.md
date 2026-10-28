@@ -24,7 +24,7 @@ var irradianceTexture: MDLTexture? { get }
 @property (nonatomic, retain, readonly, nullable) MDLTexture * irradianceTexture;
 ```
 
-#### Discussion
+## Discussion
 
 A renderer can use this texture to create diffuse lighting effects. You can derive an irradiance map from a reflective texture with methods on the [`MDLTexture`](../mdltexture.md) class, or when creating a light probe with the [`init(textureSize:forLocation:lightsToConsider:objectsToConsider:reflectiveCubemap:irradianceCubemap:)`](./init%28texturesize,forlocation,lightstoconsider,objectstoconsider,reflectivecubemap,irradiancecubemap%29.md) method.
 

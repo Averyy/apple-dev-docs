@@ -19,7 +19,7 @@ func name() -> String!
 - (NSString *) name;
 ```
 
-#### Discussion
+## Discussion
 
 Note that the name value of the stamp annotation is not necessarily identical to the user-visible appearance of the stamp annotation. For example, a stamp annotation that displays “Confidential” on a PDF page may not have a name value of “Confidential”.
 

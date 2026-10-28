@@ -25,7 +25,7 @@ case postDynamics
 SCNParticleModifierStagePostDynamics
 ```
 
-#### Discussion
+## Discussion
 
 Insert a modifier block at this stage to alter the output of the dynamics simulation. For example, if you modify the positions of particles during this stage, the modified positions override those determined by SceneKit’s simulation.
 

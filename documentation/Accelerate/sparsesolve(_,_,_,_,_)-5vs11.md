@@ -29,11 +29,11 @@ static SparseIterativeStatus_t SparseSolve(SparseIterativeMethod method, SparseM
 
 - [Solving systems using iterative methods](./solving-systems-using-iterative-methods.md)
 
-#### Return Value
+## Return Value
 
 A [`SparseIterativeStatus_t`](./sparseiterativestatus_t.md) enumeration that represents the status of the iterative solve.
 
-#### Discussion
+## Discussion
 
 Use this function to solve a system of linear equations using a factored coefficient matrix. Preconditioning the coefficient matrix can reduce the number of iterations the function requires to converge the system.
 

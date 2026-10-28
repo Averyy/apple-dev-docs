@@ -19,7 +19,7 @@ Returns the index of the given element in the set, or `nil` if the element is no
 func firstIndex(of element: MarkupOrderedSet.Element) -> Int?
 ```
 
-#### Discussion
+## Discussion
 
 `MarkupOrderedSet` members are always unique, so the first index of an element is always the same as its last index.
 

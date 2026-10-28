@@ -5,7 +5,7 @@
 
 Describe your app’s object structure.
 
-#### Overview
+## Overview
 
 In most cases, you describe your app’s data model using Xcode’s data model editor. [`NSManagedObjectModel`](./nsmanagedobjectmodel.md) represents the `.xcdatamodeld` file in your project’s source list. This is where you define entities that you use to generate [`NSManagedObject`](./nsmanagedobject.md) subclasses for Core Data to manage.
 

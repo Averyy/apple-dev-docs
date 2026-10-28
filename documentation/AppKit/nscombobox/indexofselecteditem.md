@@ -19,7 +19,7 @@ var indexOfSelectedItem: Int { get }
 @property (readonly) NSInteger indexOfSelectedItem;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `-1` if no item is selected; otherwise, it is the index of the selected item. Nothing is selected in a newly initialized combo box.
 

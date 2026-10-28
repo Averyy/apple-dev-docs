@@ -20,7 +20,7 @@ A change that invalidates a view’s intrinsic size.
 struct IntrinsicContentSize
 ```
 
-#### Overview
+## Overview
 
 Use [`intrinsicContentSize`](../../uiviewinvalidating/intrinsiccontentsize.md) to create an instance of this type.
 

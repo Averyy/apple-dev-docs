@@ -19,7 +19,7 @@ optional var actualThreadCount: Int { get }
 @property (readonly) NSInteger actualThreadCount;
 ```
 
-#### Discussion
+## Discussion
 
 The system queries this property on the extension when [Video Toolbox](../../VideoToolbox/VideoToolbox.md) queries the [`kVTDecompressionPropertyKey_ThreadCount`](../../VideoToolbox/kvtdecompressionpropertykey_threadcount.md) on the hosting [`VTDecompressionSession`](../../VideoToolbox/vtdecompressionsession.md).
 

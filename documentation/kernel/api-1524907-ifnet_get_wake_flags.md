@@ -13,11 +13,11 @@
 u_int32_t ifnet_get_wake_flags(ifnet_t interface);
 ```
 
-#### Return Value
+## Return Value
 
 The wake properties
 
-#### Discussion
+## Discussion
 
 Returns the wake properties set on the interface.
 

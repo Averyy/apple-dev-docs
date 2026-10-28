@@ -9,7 +9,7 @@ Update an existing location group’s name, rules, or location membership.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 The system modifies only the fields you include in the request body. Omitted fields retain their current values. See [`LocationGroupUpdate`](./locationgroupupdate.md) for the request body’s accepted fields, including which ones are mutable.
 
@@ -19,11 +19,11 @@ The `locationIds` and `rules` fields use full-replacement semantics: the value y
 
 When you add or update rules on a `DYNAMIC` group, `systemStatus` transitions to `PENDING` while the system evaluates membership, and `groupTotal` is `null` until evaluation completes. Updating only `name` or `description` leaves `systemStatus`, `groupTotal`, and membership unchanged. Because an ad group displays the place card for each location in its assigned location group, changing a group’s membership changes which place cards appear once evaluation (if triggered) completes.
 
-#### Payload Examples
+## Payload Examples
 
 **Update Rules**:
 
-##### Request
+### Request
 
 Replaces the rules on a dynamic group, triggering membership re-evaluation.
 
@@ -45,7 +45,7 @@ PUT /v1/location-groups/{id}
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -77,7 +77,7 @@ PUT /v1/location-groups/{id}
 
 **Rename Group**:
 
-##### Request
+### Request
 
 Updates only the display name without affecting membership.
 
@@ -89,7 +89,7 @@ PUT /v1/location-groups/{id}
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

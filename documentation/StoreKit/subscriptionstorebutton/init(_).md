@@ -22,7 +22,7 @@ Creates a button with an automatic label that describes the subscription option 
 @preconcurrency init(_ option: SubscriptionStoreControlStyleConfiguration.Option)
 ```
 
-#### Discussion
+## Discussion
 
 You receive [`SubscriptionStoreControlStyleConfiguration.Option`](../subscriptionstorecontrolstyleconfiguration/option.md) values to initialize the subscribe button from the [`makeBody(configuration:)`](../subscriptionstorecontrolstyle/makebody%28configuration%29.md) method of your custom subscription store control style.
 

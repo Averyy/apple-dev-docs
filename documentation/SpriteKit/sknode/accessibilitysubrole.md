@@ -19,7 +19,7 @@ var accessibilitySubrole: String? { get set }
 @property (nonatomic, copy, nullable) NSString * accessibilitySubrole;
 ```
 
-#### Discussion
+## Discussion
 
 See `Subroles` for more information.
 

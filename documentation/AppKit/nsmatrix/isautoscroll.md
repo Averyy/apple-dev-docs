@@ -19,7 +19,7 @@ var isAutoscroll: Bool { get set }
 @property (getter=isAutoscroll) BOOL autoscroll;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the matrix, if it is in a scrolling view, is automatically scrolled whenever the cursor is dragged outside the matrix after a mouse-down event within its bounds.
 

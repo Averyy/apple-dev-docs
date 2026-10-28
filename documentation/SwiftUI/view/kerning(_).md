@@ -22,7 +22,7 @@ nonisolated
 func kerning(_ kerning: CGFloat) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view where text has the specified amount of kerning.
 

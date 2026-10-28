@@ -25,7 +25,7 @@ var videoLayoutAttributes: [AVAssetVariant.VideoAttributes.LayoutAttributes] { g
 @property (nonatomic, readonly) NSArray<AVAssetVariantVideoLayoutAttributes *> * videoLayoutAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 This property may contain more that one element if the variant contains a collection of differing video layout media attributes over time.
 

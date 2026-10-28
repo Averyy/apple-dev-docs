@@ -20,7 +20,7 @@ Returns a sample predicate that matches audiogram samples.
 static func audiogram(_ predicate: NSPredicate? = nil) -> HKSamplePredicate<HKAudiogramSample>
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to create an [`HKSamplePredicate`](../hksamplepredicate.md) instance that you can use to query for [`HKAudiogramSample`](../hkaudiogramsample.md) objects.
 

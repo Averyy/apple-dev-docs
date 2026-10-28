@@ -23,7 +23,7 @@ class AVCaptureExternalDisplayConfigurator
 @interface AVCaptureExternalDisplayConfigurator : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`AVCaptureExternalDisplayConfigurator`](./avcaptureexternaldisplayconfigurator.md) allows you to configure a connected external display to output a clean feed using a `CALayer`. Using the configurator, you can opt into automatic adjustment of the external display’s color space and / or frame rate to match your device’s capture configuration. These adjustments are only applied to the external display, not to the device.
 

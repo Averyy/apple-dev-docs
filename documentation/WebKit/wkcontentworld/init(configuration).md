@@ -21,7 +21,7 @@ init(configuration: WKContentWorld.Configuration)
 + (WKContentWorld *) worldWithConfiguration:(WKContentWorldConfiguration *) configuration;
 ```
 
-#### Discussion
+## Discussion
 
 Creates a world with the given WKContentWorldConfiguration
 

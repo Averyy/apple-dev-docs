@@ -23,7 +23,7 @@ func firstRange<C>(of other: C) -> Range<Self.Index>? where C : Collection, Self
 
 Available when `Element` conforms to `Equatable`.
 
-#### Return Value
+## Return Value
 
 A range in the collection of the first occurrence of `sequence`. Returns nil if `sequence` is not found.
 

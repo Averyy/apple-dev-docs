@@ -23,7 +23,7 @@ var shadowImage: UIImage? { get set }
 @property (nonatomic, strong, nullable) UIImage * shadowImage;
 ```
 
-#### Discussion
+## Discussion
 
 For tab bars with custom backgrounds, you can use this property to specify a custom shadow image for your bar. The shadow image is positioned outside the bounds of the tab bar itself, usually above or below the tab bar’s frame rectangle. The exact position depends on the current platform. For example, shadow images are positioned above the tab bar on iPhone and iPad.
 

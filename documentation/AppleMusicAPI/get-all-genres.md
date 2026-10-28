@@ -9,11 +9,11 @@ Fetch all genres for the current top charts.
 **Availability**:
 - Apple Music 1.0+
 
-#### Discussion
+## Discussion
 
 If successful, the HTTP status code is 200 (OK) and the `data` array contains an array of `Genre` objects. If unsuccessful, the HTTP status code indicates the error and the details are in the `errors` array. For more information, see [Handling Requests and Responses](./handling-requests-and-responses.md).
 
-##### Example
+### Example
 
 **Request**:
 

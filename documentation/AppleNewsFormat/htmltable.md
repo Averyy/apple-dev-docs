@@ -15,11 +15,11 @@ The component for adding tables with HTML data.
 object HTMLTable
 ```
 
-#### Discussion
+## Discussion
 
 To add a table with HTML data, create a component with a `role` of `htmltable`. The required `html` property holds all the data and tags for an HTML table.
 
-##### Example
+### Example
 
 ```json
 {

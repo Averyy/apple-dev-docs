@@ -17,7 +17,7 @@ Identifies the assistant tool call answered by a tool message.
 static func result(id: String, name: String? = nil) -> Chat.Message.Tool
 ```
 
-#### Discussion
+## Discussion
 
 Some chat templates correlate results by `tool_call_id`, while others (including Onyx) render the function `name` directly.
 

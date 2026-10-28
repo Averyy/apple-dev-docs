@@ -24,7 +24,7 @@ var gravity: CMAcceleration { get }
 @property (nonatomic, readonly) CMAcceleration gravity;
 ```
 
-#### Discussion
+## Discussion
 
 The total acceleration of the device is equal to gravity plus the acceleration the user imparts to the device ([`userAcceleration`](./useracceleration.md)).
 

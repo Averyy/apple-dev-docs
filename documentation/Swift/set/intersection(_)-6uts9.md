@@ -23,11 +23,11 @@ func intersection<S>(_ other: S) -> Set<Element> where Element == S.Element, S :
 
 Available when `Element` conforms to `Hashable`.
 
-#### Return Value
+## Return Value
 
 A new set.
 
-#### Discussion
+## Discussion
 
 In the following example, the `bothNeighborsAndEmployees` set is made up of the elements that are in *both* the `employees` and `neighbors` sets. Elements that are in only one or the other are left out of the result of the intersection.
 

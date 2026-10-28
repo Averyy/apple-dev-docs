@@ -16,11 +16,11 @@
 virtual IOReturn getFirstElementIndex(uint64_t channel_id, int *element_index);
 ```
 
-#### Return Value
+## Return Value
 
 Appropriate IOReturn code
 
-#### Discussion
+## Discussion
 
 Returns the first element index for a channel
 

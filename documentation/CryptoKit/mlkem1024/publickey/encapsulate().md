@@ -21,7 +21,7 @@ Generates and encapsulates a shared secret.
 func encapsulate() throws -> KEM.EncapsulationResult
 ```
 
-#### Return Value
+## Return Value
 
 An encapsulated shared secret, that you decapsulate by calling [`decapsulate(_:)`](../privatekey/decapsulate%28_%29.md) on the corresponding private key.
 

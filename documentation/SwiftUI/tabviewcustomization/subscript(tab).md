@@ -19,7 +19,7 @@ The customization of the tab, identified by its customization identifier.
 subscript(tab id: String) -> TabViewCustomization.TabCustomization { get set }
 ```
 
-#### Overview
+## Overview
 
 You can imperatively set properties by subscripting with the tab ID. The following example sets the tab’s sidebar visibility:
 

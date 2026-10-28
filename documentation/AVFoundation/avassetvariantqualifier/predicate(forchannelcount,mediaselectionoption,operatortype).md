@@ -25,7 +25,7 @@ class func predicate(forChannelCount channelCount: Int, mediaSelectionOption: AV
 + (NSPredicate *) predicateForChannelCount:(NSInteger) channelCount mediaSelectionOption:(AVMediaSelectionOption *) mediaSelectionOption operatorType:(NSPredicateOperatorType) operatorType;
 ```
 
-#### Return Value
+## Return Value
 
 A predicate object that you use to to create an [`AVAssetVariantQualifier`](../avassetvariantqualifier.md).
 

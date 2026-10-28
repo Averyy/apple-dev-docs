@@ -24,7 +24,7 @@ init(circle: MKCircle)
 - (instancetype) initWithCircle:(MKCircle *) circle;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized circle renderer object.
 

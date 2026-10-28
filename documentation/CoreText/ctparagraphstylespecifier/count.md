@@ -25,7 +25,7 @@ case count
 kCTParagraphStyleSpecifierCount
 ```
 
-#### Discussion
+## Discussion
 
 The purpose is to simplify the validation of style specifiers.
 

@@ -5,7 +5,7 @@
 
 Prepare to deliver data over resource-limited data networks.
 
-#### Overview
+## Overview
 
 Carrier-provided satellite networks are called *ultra-constrained networks*. An ultra-constrained network has limited throughput, high latency, limited capacity, and intermittent loss of connectivity, all of which directly affect the performance of the apps that run on the network.
 
@@ -19,7 +19,7 @@ With limited bandwidth and availability, ultra-constrained networks aren’t a g
 - Minimize large background downloads and uploads.
 - Minimize and optimize the use of real-time data, for instance by creating app-level resilience to breaks in service or availability.
 
-#### Configure your app to access ultra-constrained networks
+## Configure your app to access ultra-constrained networks
 
 iOS enables apps to send data over ultra-constrained networks — or “opt-in by default” — but also makes it possible for carriers to dedicate traffic for specific use cases over the satellite networks they provide and limit data usage.
 
@@ -27,7 +27,7 @@ To ensure your app can use ultra-constrained networks on all providers, add the 
 
 > **Note**: To opt out of using ultra-constrained networks, set the [`allowUltraConstrainedPaths`](../Network/nwparameters/allowultraconstrainedpaths.md) property to `false`.
 
-#### Implement a network path monitor to limit use of resources
+## Implement a network path monitor to limit use of resources
 
 To ensure your app operates within the limits of ultra-constrained networks, implement a network path monitor to ensure that the data your app sends uses network resources appropriately. If you determine your app is on an ultra-constrained network, you can disable high-bandwidth features, as shown in this example.
 
@@ -55,7 +55,7 @@ monitor.start(queue: queue)
 
 The monitor runs in the background, and the system calls the handler you provide to inform the app when the network path type changes. This process allows an app to enable, disable, and then re-enable higher bandwidth features as necessary.
 
-#### Test your app and certify optimization
+## Test your app and certify optimization
 
 After you implement a network path monitor, test your app in a variety of conditions to ensure that it uses ultra-constrained network resources appropriately. Once you’ve optimized your app, add the [`com.apple.developer.networking.carrier-constrained.app-optimized`](./entitlements/com.apple.developer.networking.carrier-constrained.app-optimized.md) entitlement to certify the network optimization of your app. This entitlement ensures a seamless experience for people using your app, removing system alerts that ask for permission to use the network.
 

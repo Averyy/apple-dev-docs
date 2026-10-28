@@ -25,7 +25,7 @@ var streamDescription: UnsafePointer<AudioStreamBasicDescription> { get }
 @property (nonatomic, readonly) const AudioStreamBasicDescription * streamDescription;
 ```
 
-#### Discussion
+## Discussion
 
 Returns an [`AudioStreamBasicDescription`](../../CoreAudioTypes/audiostreambasicdescription.md) that you use with lower-level audio APIs.
 

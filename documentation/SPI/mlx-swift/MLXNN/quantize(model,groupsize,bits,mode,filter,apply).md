@@ -18,11 +18,11 @@ func quantize(model: Module, groupSize: Int = 64, bits: Int = 4, mode: Quantizat
         layer:groupSize:bits:mode:))
 ```
 
-#### Discussion
+## Discussion
 
 By default all [`Linear`](./linear.md) and [`Embedding`](./embedding.md) layers will be quantized.
 
-##### See Also
+### See Also
 
 - [`quantize(model:filter:apply:)`](./quantize%28model,filter,apply%29-3yqd1.md)
 

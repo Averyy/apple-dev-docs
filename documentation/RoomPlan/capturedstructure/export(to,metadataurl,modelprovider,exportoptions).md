@@ -17,7 +17,7 @@ Produces a 3D asset from the captured structure.
 func export(to url: URL, metadataURL: URL? = nil, modelProvider: CapturedStructure.ModelProvider? = nil, exportOptions: CapturedStructure.USDExportOptions = .mesh) throws
 ```
 
-#### Discussion
+## Discussion
 
 The file format of the output is Universal Scene Description (USD).
 

@@ -15,11 +15,11 @@ Finds the first USB 2.0 extension capability descriptor in a BOS descriptor.
 const IOUSBDeviceCapabilityUSB2Extension *IOUSBGetUSB20ExtensionDeviceCapabilityDescriptor(const IOUSBBOSDescriptor *bosDescriptor);
 ```
 
-#### Return Value
+## Return Value
 
 The descriptor pointer, or `NULL` if no matching descriptor can be found.
 
-#### Discussion
+## Discussion
 
 This method uses `getNextCapabilityDescriptorWithType` to fetch the first `USB20ExtensionCapabilityDescriptor.`
 

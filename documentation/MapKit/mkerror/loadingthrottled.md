@@ -21,7 +21,7 @@ The data didn’t load because data throttling is in effect.
 static var loadingThrottled: MKError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error can occur if an app makes frequent requests for data over a short period of time.
 

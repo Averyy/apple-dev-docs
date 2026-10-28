@@ -25,11 +25,11 @@ class var processInfo: ProcessInfo { get }
 @property (class, strong, readonly) NSProcessInfo * processInfo;
 ```
 
-#### Return Value
+## Return Value
 
 Shared process information agent for the process.
 
-#### Discussion
+## Discussion
 
 An [`ProcessInfo`](../processinfo.md) object is created the first time this method is invoked, and that same object is returned on each subsequent invocation.
 

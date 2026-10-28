@@ -25,7 +25,7 @@ var state: TKSmartCardSlot.State { get }
 @property (readonly) TKSmartCardSlotState state;
 ```
 
-#### Discussion
+## Discussion
 
 Use Key-Value-Observing to be notified for changes to the state. For more information, see [Key-Value Observing Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueObserving/KeyValueObserving.html#//apple_ref/doc/uid/10000177i).
 

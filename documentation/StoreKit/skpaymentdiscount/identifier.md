@@ -27,7 +27,7 @@ var identifier: String { get }
 @property (nonatomic, copy, readonly) NSString * identifier;
 ```
 
-#### Discussion
+## Discussion
 
 You set up offers and their identifiers in App Store Connect. If the [`identifier`](./identifier.md) is not valid, an [`SKError.Code.invalidOfferIdentifier`](../skerror/code/invalidofferidentifier.md) error can result.
 

@@ -24,7 +24,7 @@ var destinationAlphaBlendFactor: MTLBlendFactor { get set }
 @property (nonatomic) MTLBlendFactor destinationAlphaBlendFactor;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`MTLBlendFactor.zero`](../mtlblendfactor/zero.md).
 

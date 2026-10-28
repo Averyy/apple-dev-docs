@@ -15,7 +15,7 @@ The activation point for the user interface element.
 @property NSPoint accessibilityActivationPoint;
 ```
 
-#### Discussion
+## Discussion
 
 The activation point in screen coordinates.
 

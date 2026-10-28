@@ -26,11 +26,11 @@ func onAppear(perform action: (() -> Void)? = nil) -> some View
 
 - [Understanding the navigation stack](../understanding-the-navigation-stack.md)
 
-#### Return Value
+## Return Value
 
 A view that triggers `action` before it appears.
 
-#### Discussion
+## Discussion
 
 The exact moment that SwiftUI calls this method depends on the specific view type that you apply it to, but the `action` closure completes before the first rendered frame appears.
 

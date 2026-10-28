@@ -19,7 +19,7 @@ func ABPersonCreateWithVCardRepresentation(_ vCard: CFData!) -> Unmanaged<ABPers
 extern ABPersonRefABPersonCreateWithVCardRepresentation(CFDataRef vCard);
 ```
 
-#### Return Value
+## Return Value
 
 A new ABPerson object initialized with the given data in vCard format. You are responsible for releasing this object.
 

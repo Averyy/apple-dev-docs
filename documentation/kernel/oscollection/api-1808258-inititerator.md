@@ -12,11 +12,11 @@ virtual bool initIterator(
  void *iterationContext) const = 0;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if initialization was successful, `false` otherwise.
 
-#### Overview
+## Overview
 
 This pure virtual member function, which subclasses must implement, is called by an OSCollectionIterator object to initialize an iteration context for a collection. The collection object should interpret `iterationContext` appropriately and initialize its contents to begin an iteration.
 

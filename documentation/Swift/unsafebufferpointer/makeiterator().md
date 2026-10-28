@@ -21,7 +21,7 @@ Returns an iterator over the elements of this buffer.
 func makeIterator() -> UnsafeBufferPointer<Element>.Iterator
 ```
 
-#### Return Value
+## Return Value
 
 An iterator over the elements of this buffer.
 

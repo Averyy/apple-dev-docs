@@ -10,11 +10,11 @@ framework: "Swift-Org/diagnostics"
 
 Warnings that identify local `var` bindings which are never mutated after initialization and could instead be declared with `let`.
 
-#### Overview
+## Overview
 
 When a variable is introduced with `var` but never reassigned or otherwise mutated, it can be declared with `let` instead to explicitly indicate that the variable is constant.
 
-#### Example
+## Example
 
 ```swift
 func swap(_ a: inout Int, _ b: inout Int) {
@@ -34,7 +34,7 @@ func swap(_ a: inout Int, _ b: inout Int) {
 }
 ```
 
-#### Sub-groups
+## Sub-groups
 
 The `VariableNeverMutated` group contains the following sub-group, which can also be enabled or controlled independently:
 

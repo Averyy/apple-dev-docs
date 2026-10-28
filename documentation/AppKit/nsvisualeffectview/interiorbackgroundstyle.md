@@ -19,7 +19,7 @@ var interiorBackgroundStyle: NSView.BackgroundStyle { get }
 @property (readonly) NSBackgroundStyle interiorBackgroundStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The background style may be light or dark, depending on the selected material.
 

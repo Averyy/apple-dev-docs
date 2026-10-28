@@ -25,7 +25,7 @@ var haloOverlap: Float { get set }
 @property (nonatomic) float haloOverlap;
 ```
 
-#### Discussion
+## Discussion
 
 A value of `0` means the halo colors don’t overlap. A value of `1` means the halo colors fully overlap, creating a white halo.
 

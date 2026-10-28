@@ -19,7 +19,7 @@ Changes trimmed and time range shifted to start at zero.
 - (CNScriptChanges *) changesTrimmedByTimeRange:(CMTimeRange) timeRange;
 ```
 
-#### Return Value
+## Return Value
 
 Script changes trimmed and time range shifted to start at zero.
 

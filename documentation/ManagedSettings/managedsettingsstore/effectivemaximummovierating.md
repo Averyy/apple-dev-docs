@@ -23,7 +23,7 @@ The movie rating constraint that is active on this device.
 
 - [Confirming the effective TV and movie ratings](../readingmedia.md)
 
-#### Discussion
+## Discussion
 
 An authorized app can use the Family Controls framework to apply a [`maximumMovieRating`](../mediasettings/maximummovierating-swift.property.md) to the device. If no `maximumMovieRating` settings are active, then the value of this property is the default value of [`maximumMovieRating`](../mediasettings/maximummovierating-swift.type.property.md). The system publishes changes dynamically.
 

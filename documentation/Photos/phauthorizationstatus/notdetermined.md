@@ -28,7 +28,7 @@ PHAuthorizationStatusNotDetermined
 
 - [Delivering an Enhanced Privacy Experience in Your Photos App](../../PhotoKit/delivering-an-enhanced-privacy-experience-in-your-photos-app.md)
 
-#### Discussion
+## Discussion
 
 The framework automatically prompts for user authorization when you attempt to fetch assets, asset collections, or collection lists. Alternatively, you may call the [`requestAuthorization(for:handler:)`](../phphotolibrary/requestauthorization%28for,handler%29.md) method to prompt the user for authorization at a time of your choosing.
 

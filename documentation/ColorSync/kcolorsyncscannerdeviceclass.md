@@ -20,7 +20,7 @@ var kColorSyncScannerDeviceClass: Unmanaged<CFString>!
 extern CFStringRef kColorSyncScannerDeviceClass;
 ```
 
-#### Discussion
+## Discussion
 
 The string that represents a scanner device is `scnr`.
 

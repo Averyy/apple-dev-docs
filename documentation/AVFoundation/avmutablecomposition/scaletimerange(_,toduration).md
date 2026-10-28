@@ -25,7 +25,7 @@ func scaleTimeRange(_ timeRange: CMTimeRange, toDuration duration: CMTime)
 - (void) scaleTimeRange:(CMTimeRange) timeRange toDuration:(CMTime) duration;
 ```
 
-#### Discussion
+## Discussion
 
 A composition presents each track segment affected by the scaling operation at a rate equal to `source.duration / target.duration` of its resulting time mapping.
 

@@ -25,7 +25,7 @@ struct NSKeyValueChangeKey
 typedef NSString * NSKeyValueChangeKey;
 ```
 
-#### Discussion
+## Discussion
 
 These constants are used as keys in the change dictionary passed to [`observeValue(forKeyPath:of:change:context:)`](../ObjectiveC/nsobject-swift.class/observevalue%28forkeypath,of,change,context%29.md).
 

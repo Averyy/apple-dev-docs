@@ -15,7 +15,7 @@ The name of the principal view controller class of your extension.
 - **Name**: `ProExtensionPrincipalViewControllerClass`
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 This key provides the name of the primary view controller class of your extension that adopts the [`NSViewController`](../../../AppKit/nsviewcontroller.md) protocol. When you create an extension, the Xcode template automatically includes this key in the workflow extension information property list. You only modify the value of this key when you rename the primary view controller class in your extension.
 

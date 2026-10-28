@@ -23,7 +23,7 @@ enum NSFileProviderTestingOperationSide
 enum NSFileProviderTestingOperationSide : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 Most operations are symmetrical. They can affect either items stored locally or items in the File Provider extension’s remote storage.
 

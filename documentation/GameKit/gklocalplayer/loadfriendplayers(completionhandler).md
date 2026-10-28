@@ -35,7 +35,7 @@ func loadFriendPlayers() async throws -> [GKPlayer]
 - (void) loadFriendPlayersWithCompletionHandler:(void (^)(NSArray<GKPlayer *> *friendPlayers, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The code below shows an example of how to load a player’s friends. Create your own method to save information about the found players.
 

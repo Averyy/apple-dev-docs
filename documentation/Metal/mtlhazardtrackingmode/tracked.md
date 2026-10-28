@@ -24,7 +24,7 @@ case tracked
 MTLHazardTrackingModeTracked
 ```
 
-#### Discussion
+## Discussion
 
 Metal tracks memory dependencies for resources you create with this option. When at least one command writes to a tracked resource, the framework takes the following actions:
 

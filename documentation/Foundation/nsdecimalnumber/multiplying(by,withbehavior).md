@@ -25,7 +25,7 @@ func multiplying(by decimalNumber: NSDecimalNumber, withBehavior behavior: (any 
 - (NSDecimalNumber *) decimalNumberByMultiplyingBy:(NSDecimalNumber *) decimalNumber withBehavior:(id<NSDecimalNumberBehaviors>) behavior;
 ```
 
-#### Discussion
+## Discussion
 
 `behavior` specifies the handling of calculation errors and rounding.
 

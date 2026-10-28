@@ -15,11 +15,11 @@ Gets the clock algorithm of the clock device.
 IOUserAudioClockAlgorithm GetClockAlgorithm();
 ```
 
-#### Return Value
+## Return Value
 
 The clock algorithm of the clock device.
 
-#### Discussion
+## Discussion
 
 This method synchronizes by using the work queue created by the object.
 

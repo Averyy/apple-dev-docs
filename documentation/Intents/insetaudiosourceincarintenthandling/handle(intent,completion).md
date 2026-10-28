@@ -29,7 +29,7 @@ func handle(intent: INSetAudioSourceInCarIntent) async -> INSetAudioSourceInCarI
 - (void) handleSetAudioSourceInCar:(INSetAudioSourceInCarIntent *) intent completion:(void (^)(INSetAudioSourceInCarIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Your implementation of this method should communicate with the vehicle and change the vehicle’s audio source to the requested audio source. When done, execute the provided block with a response object indicating whether or not the operation was successful.
 

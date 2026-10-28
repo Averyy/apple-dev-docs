@@ -26,7 +26,7 @@ optional func webView(_ webView: WKWebView, showLockdownModeFirstUseMessage mess
 - (void) webView:(WKWebView *) webView showLockdownModeFirstUseMessage:(NSString *) message completionHandler:(void (^)(enum WKDialogResult)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to display a custom Lockdown Mode message, or to suppress the message. Return, or call the completion handler, with a [`WKDialogResult`](../wkdialogresult.md) case that indicates how your method handled the display request. For more information about Lockdown Mode, see [About Lockdown Mode](https://support.apple.com/en-us/HT212650).
 

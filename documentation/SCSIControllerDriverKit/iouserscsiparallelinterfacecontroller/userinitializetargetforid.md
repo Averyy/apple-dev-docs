@@ -15,11 +15,11 @@ Initializes a target device in response to a call from the framework.
 virtual kern_return_t UserInitializeTargetForID(SCSITargetIdentifier targetID);
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates the result of initialization. [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) indicates success. For error definitions, see [IOKit Constants](../../iokit/iokit_constants.md).
 
-#### Discussion
+## Discussion
 
 The host bus adapter (HBA) can use this method to probe the target or do anything else necessary before IOKit registers the device object for matching.
 

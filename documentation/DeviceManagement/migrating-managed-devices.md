@@ -5,7 +5,7 @@
 
 Migrate managed devices from one device management service to another.
 
-#### Overview
+## Overview
 
 Apple School Manager and Apple Business support device management migration to transfer management of a device from one service, the original, to another, the destination, using a simple and reliable process.
 
@@ -24,7 +24,7 @@ The Apple School Manager and Apple Business migration process simplifies and imp
 7. When the user initiates migration, or when the device reaches the deadline, it starts the migration flow, and displays progress as it unenrolls from the original service and reenrolls with the destination service.
 8. When migration is complete, the device is ready to use and the destination service manages it.
 
-#### Requirements
+## Requirements
 
 The requirements for Apple School Manager and Apple Business migration are:
 
@@ -36,13 +36,13 @@ The requirements for Apple School Manager and Apple Business migration are:
 - An iOS device can migrate only if the device management service specified by Automated Device Enrollment still manages it. If the device unenrolls and then reenrolls in the same or a different service, it can’t use the migration flow.
 - A macOS device can migrate if any device management service manages it, including when it unenrolls from the original Automated Device Enrollment service and reenrolls with the same or a different service, provided the new enrollment is a profile-driven device enrollment.
 
-#### Handle migration in the original device management service
+## Handle migration in the original device management service
 
 The original device management service doesn’t need to take any special actions when migration occurs. Apple School Manager or Apple Business removes the device from the original service’s [device assignment list](./device-assignment.md), which the original service detects when it next synchronizes that list. When migration starts, the original service receives a [`Check Out`](./check-out.md) request from the device, indicating unenrollment of the device.
 
 > **Note**:  The device sends the [`Check Out`](./check-out.md) request on a best-effort basis, and the device management service may not always receive it. The service needs to handle previously enrolled devices that no longer respond to requests.
 
-#### Handle migration in the destination device management service
+## Handle migration in the destination device management service
 
 Apple School Manager or Apple Business adds the migrating device to the [device assignment list](./device-assignment.md) for the destination device management service. It includes a `mdm_migration_deadline` field in the device record, indicating the timestamp of the migration deadline, and this tells the destination service that the next enrollment from the device is due to a migration.
 
@@ -54,7 +54,7 @@ The destination device management service also needs to set the `await_device_co
 
 > **Note**:  The administrator can cancel the migration before it starts, reverting the device to the original device management service, and cancelling migration prompts on the device.
 
-#### Preserve Activation Lock
+## Preserve Activation Lock
 
 Activation Lock is a feature of iCloud and Automated Device Enrollment that makes it harder for anyone to use or resell a lost or stolen device. Device management services can set Activation Lock by using the Apple School Manager or Apple Business [`Activation Lock a Device`](./activation-lock-devices.md) request. Users can also set their own Activation Lock via iCloud if allowed by the service.
 
@@ -66,7 +66,7 @@ For device migration, the following rules apply for Activation Lock:
 
 If the destination device management service wants to apply Activation Lock during migration, before migration starts, it assigns an Automated Device Enrollment [`Profile`](./profile.md) with the `await_device_configured` key with a value of `true` to the device, to ensure the device enters the await configuration state during migration. Then, after the device enrolls and enters the await configuration state, it sends a [`Activation Lock a Device`](./activation-lock-devices.md) request to Apple School Manager or Apple Business to lock the device, before it sends the [`Device Configured`](./device-configured-command.md) command to allow the device to proceed.
 
-#### Preserve managed apps
+## Preserve managed apps
 
 During migration, a device management service can preserve managed apps on iOS and iPadOS devices. Normally, devices remove managed apps and their local data when unenrolling from a service, which happens when the device starts migrating. If the administrator wants users to have the same set of managed apps after migration as they had before migration, then preserving apps during migration ensures no data loss and a quicker migration because the device doesn’t need to download previously installed managed apps.
 
@@ -79,7 +79,7 @@ The app preservation behavior works for apps installed using MDM commands such a
 
 > **Note**:  The destination device management service needs to ensure each preserved App Store app has a valid App Store license assigned to it in Apple School Manager or Apple Business.
 
-#### Handle multiple users when migrating macOS devices
+## Handle multiple users when migrating macOS devices
 
 MacOS devices can have multiple user accounts. When a device management service manages a device, if it includes the value `com.apple.mdm.per-user-connections` in the `ServerCapabilities` key in its [`MDM`](./mdm.md) profile payload, then it can also manage a single user account on the device. That applies to local and network user accounts on the device. The following rules apply when migrating macOS devices:
 
@@ -87,7 +87,7 @@ MacOS devices can have multiple user accounts. When a device management service 
 - If there’s a managed local user, but they aren’t signed in, the device notifies other signed-in users about the migration, but they can’t initiate migration themselves, and the device can’t initiate migration when it reaches the deadline. Instead, the device advises the nonmanaged user that the managed local user needs to sign in to start migration.
 - If there’s no managed local user prior to migration, the device allows any user to initiate migration or proceed with migration when it reaches the deadline. After migration, if the destination service supports managing users, then it manages the user that was signed in at the time of migration.
 
-#### Ensure the FileVault recovery key resets
+## Ensure the FileVault recovery key resets
 
 If the original device management service sets a FileVault Full Disk Encryption recovery key by installing a `com.apple.security.FDERecoveryKeyEscrow` profile payload, that key remains on the device after migration until the destination service sends its own `com.apple.security.FDERecoveryKeyEscrow` profile payload. If this happens, the device creates a new recovery key. To achieve optimal security, the destination service needs to install the `com.apple.security.FDERecoveryKeyEscrow` profile payload during the await configuration state.
 

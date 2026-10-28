@@ -22,11 +22,11 @@ nonisolated
 func saturation(_ amount: Double) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that adjusts the saturation of this view.
 
-#### Discussion
+## Discussion
 
 Use color saturation to increase or decrease the intensity of colors in a view.
 

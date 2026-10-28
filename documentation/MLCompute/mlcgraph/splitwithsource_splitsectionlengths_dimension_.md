@@ -19,7 +19,7 @@ Adds a new split layer to the graph using the source tensor, lengths of each spl
 - (NSArray<MLCTensor *> *) splitWithSource:(MLCTensor *) source splitSectionLengths:(NSArray<NSNumber *> *) splitSectionLengths dimension:(NSUInteger) dimension;
 ```
 
-#### Return Value
+## Return Value
 
 A result tensor.
 

@@ -29,7 +29,7 @@ optional func resolveBillType(for intent: INSearchForBillsIntent) async -> INBil
 - (void) resolveBillTypeForSearchForBills:(INSearchForBillsIntent *) intent withCompletion:(void (^)(INBillTypeResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve any questions about the bill type for the search. Use the [`billType`](../insearchforbillsintent/billtype.md) property in the intent object to identify the requested bill type. If the bill type is [`INBillType.unknown`](../inbilltype/unknown.md), you may return a resolution of success with that value or you may return a resolution of not required. In either case, when the bill type is [`INBillType.unknown`](../inbilltype/unknown.md), your subsequent search should return all bills regardless of their type.
 

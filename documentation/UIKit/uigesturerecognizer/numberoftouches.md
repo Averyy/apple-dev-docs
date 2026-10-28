@@ -23,11 +23,11 @@ var numberOfTouches: Int { get }
 @property (nonatomic, readonly) NSUInteger numberOfTouches;
 ```
 
-#### Return Value
+## Return Value
 
 The number of [`UITouch`](../uitouch.md) objects in a private array maintained by the receiver. Each of these objects represents a touch in the current gesture.
 
-#### Discussion
+## Discussion
 
 Using the value returned by this method in a loop, you can ask for the location of individual touches using the [`location(ofTouch:in:)`](./location%28oftouch,in%29.md) method.
 

@@ -21,7 +21,7 @@ Creates a mutable buffer by copying a read-only buffer’s audio data.
 convenience init(copying readOnlyBuffer: AVReadOnlyAudioPCMBuffer)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer allocates a new mutable buffer and copies all audio data from the read-only buffer.
 

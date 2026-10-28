@@ -15,7 +15,7 @@ Defines a universal procedure pointer to a profile iteration callback.
 typedef CMProfileIterateProcPtr CMProfileIterateUPP;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see the description of the [`CMProfileIterateProcPtr`](./cmprofileiterateprocptr.md) ) callback function.
 

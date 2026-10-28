@@ -21,7 +21,7 @@ var videoQuality: UIImagePickerController.QualityType { get set }
 @property (nonatomic) UIImagePickerControllerQualityType videoQuality;
 ```
 
-#### Discussion
+## Discussion
 
 The video quality setting specified by this property is used during video recording. It is also used whenever picking a recorded movie. Specifically, if the video quality setting is lower than the video quality of an existing movie, displaying that movie in the picker results in transcoding the movie to the lower quality.
 

@@ -17,11 +17,11 @@ Creates an object encapsulating locale and text-break information, for the purpo
 OSStatus UCCreateTextBreakLocator(LocaleRef locale, LocaleOperationVariant opVariant, UCTextBreakType breakTypes, TextBreakLocatorRef *breakRef);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.  The function can return memory errors and `paramErr` (for example, if the `breakRef` parameter is `NULL` or if invalid bits are set in the `breakTypes` parameter). It can also return resource errors in Mac OS 9 and CarbonLib.
 
-#### Discussion
+## Discussion
 
 To find boundaries in Unicode text, you must supply locale and text-break specifications to the function  [`UCFindTextBreak`](./api-1390429-ucfindtextbreak.md). You provide this information by means of a text-break locator object, created via the `UCCreateTextBreakLocator` function. When finished with the text-break locator object, you should dispose of it using the function  [`UCDisposeTextBreakLocator`](./api-1390419-ucdisposetextbreaklocator.md).
 
@@ -32,7 +32,7 @@ The `UCCreateTextBreakLocator` function creates a text-break locator object for 
 -  Boundaries of words. This can be used to determine what to highlight as the result of a double-click. 
 -  Potential line break locations. 
 
-##### Special Considerations
+### Special Considerations
 
 This function can move memory.
 

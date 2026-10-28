@@ -24,7 +24,7 @@ class CNContactRelation
 @interface CNContactRelation : NSObject
 ```
 
-#### Overview
+## Overview
 
 `CNContactRelation` objects are thread-safe, and you may access their properties from any thread of your app.
 

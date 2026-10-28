@@ -73,7 +73,6 @@ to produce a custom compile-time warning.
 
 Freestanding macros can produce a value, like `#function` does,
 or they can perform an action at compile time, like `#warning` does.
-<!-- SE-0397: or they can generate new declarations.  -->
 
 ## Attached Macros
 
@@ -123,13 +122,6 @@ generates the list of constants for each option,
 and adds a conformance to the [`OptionSet`][] protocol.
 
 [`OptionSet`]: https://developer.apple.com/documentation/swift/optionset
-
-<!--
-When the @OptionSet macro comes back, change both links back:
-
-[`@OptionSet`]: https://developer.apple.com/documentation/swift/optionset-swift.macro
-[`OptionSet`]: https://developer.apple.com/documentation/swift/optionset-swift.protocol
--->
 
 For comparison,
 here's what the expanded version of the `@OptionSet` macro looks like.
@@ -249,13 +241,6 @@ you write the `@freestanding` attribute to specify its role:
 public macro line<T: ExpressibleByIntegerLiteral>() -> T =
         /* ... location of the macro implementation... */
 ```
-
-<!--
-Elided the implementation of #line above
-because it's a compiler built-in:
-
-public macro line<T: ExpressibleByIntegerLiteral>() -> T = Builtin.LineMacro
--->
 
 The `#line` macro above has the `expression` role.
 An expression macro produces a value,
@@ -382,7 +367,7 @@ regardless of what code comes before and after it.
 This limitation helps make macro expansion easier to understand,
 and helps your code build faster
 because Swift can avoid expanding macros that haven't changed.
-<!-- TODO TR: Confirm -->
+
 Swift helps macro authors avoid accidentally reading other input
 by restricting the code that implements macros:
 
@@ -429,27 +414,6 @@ The compiler expands macros one at a time.
 If one macro appears inside another,
 the outer macro is expanded first ---
 this lets the outer macro modify the inner macro before it's expanded.
-
-<!-- OUTLINE
-
-- TR: Is there any limit to nesting?
-  TR: Is it valid to nest like this -- if so, anything to note about it?
-
-  ```
-  let something = #someMacro {
-      struct A { }
-      @someMacro struct B { }
-  }
-  ```
-
-- Macro recursion is limited.
-  One macro can call another,
-  but a given macro can't directly or indirectly call itself.
-  The result of macro expansion can include other macros,
-  but it can't include a macro that uses this macro in its expansion
-  or declare a new macro.
-  (TR: Likely need to iterate on details here)
--->
 
 ## Implementing a Macro
 
@@ -632,77 +596,6 @@ All of the SwiftSyntax types that you return from a macro implementation
 conform to `StringLiteralConvertible`,
 so you can use this approach when implementing any kind of macro.
 
-<!-- TODO contrast the `\(raw:)` and non-raw version.  -->
-
-<!--
-The return-a-string APIs come from here
-
-https://github.com/swiftlang/swift-syntax/blob/main/Sources/SwiftSyntaxBuilder/Syntax%2BStringInterpolation.swift
--->
-
-<!-- OUTLINE:
-
-- Note:
-  Behind the scenes, Swift serializes and deserializes the AST,
-  to pass the data across process boundaries,
-  but your macro implementation doesn't need to deal with any of that.
-
-- This method is also passed a macro-expansion context, which you use to:
-
-    + Generate unique symbol names
-    + Produce diagnostics (`Diagnostic` and `SimpleDiagnosticMessage`)
-    + Find a node's location in source
-
-- Macro expansion happens in their surrounding context.
-  A macro can affect that environment if it needs to ---
-  and a macro that has bugs can interfere with that environment.
-  (Give guidance on when you'd do this.  It should be rare.)
-
-- Generated symbol names let a macro
-  avoid accidentally interacting with symbols in that environment.
-  To generate a unique symbol name,
-  call the `MacroExpansionContext.makeUniqueName()` method.
-
-- Ways to create a syntax node include
-  Making an instance of the `Syntax` struct,
-  or `SyntaxToken`
-  or `ExprSyntax`.
-  (Need to give folks some general ideas,
-  and enough guidance so they can sort through
-  all the various `SwiftSyntax` node types and find the right one.)
-
-- Attached macros follow the same general model as expression macros,
-  but with more moving parts.
-
-- Pick the subprotocol of `AttachedMacro` to conform to,
-  depending on which kind of attached macro you're making.
-  [This is probably a table]
-
-  + `AccessorMacro` goes with `@attached(accessor)`
-  + `ConformanceMacro` goes with `@attached(conformance)`
-    [missing from the list under Declaring a Macro]
-  + `MemberMacro` goes with `@attached(member)`
-  + `PeerMacro` goes with `@attached(peer)`
-  + `MemberAttributeMacro` goes with `@member(memberAttribute)`
-
-- Code example of conforming to `MemberMacro`.
-
-  ```
-  static func expansion<
-    Declaration: DeclGroupSyntax,
-    Context: MacroExpansionContext
-  >(
-    of node: AttributeSyntax,
-    providingMembersOf declaration: Declaration,
-    in context: Context
-  ) throws -> [DeclSyntax]
-  ```
-
-- Adding a new member by making an instance of `Declaration`,
-  and returning it as part of the `[DeclSyntax]` list.
-
--->
-
 ## Developing and Debugging Macros
 
 Macros are well suited to development using tests:
@@ -744,36 +637,3 @@ precondition(transformedSF.description == expectedDescription)
 
 The example above tests the macro using a precondition,
 but you could use a testing framework instead.
-
-<!-- OUTLINE:
-
-- Ways to view the macro expansion while debugging.
-  The SE prototype provides `-Xfrontend -dump-macro-expansions` for this.
-  [TR: Is this flag what we should suggest folks use,
-  or will there be better command-line options coming?]
-
-- Use diagnostics for macros that have constraints/requirements
-  so your code can give a meaningful error to users when those aren't met,
-  instead of letting the compiler try & fail to build the generated code.
-
-Additional APIs and concepts to introduce in the future,
-in no particular order:
-
-- Using `SyntaxRewriter` and the visitor pattern for modifying the AST
-
-- Adding a suggested correction using `FixIt`
-
-- concept of trivia
-
-- `TokenSyntax`
--->
-
-<!--
-This source file is part of the Swift.org open source project
-
-Copyright (c) 2014 - 2023 Apple Inc. and the Swift project authors
-Licensed under Apache License v2.0 with Runtime Library Exception
-
-See https://swift.org/LICENSE.txt for license information
-See https://swift.org/CONTRIBUTORS.txt for the list of Swift project authors
--->

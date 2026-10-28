@@ -12,7 +12,7 @@ The service configuration for the Asset Management API.
 object ServiceConfigResponse
 ```
 
-#### Discussion
+## Discussion
 
 The values in `limits` and `urls` are dynamic and can change without notice. Sync them every 5 minutes rather than hard-coding them into your device management service.
 

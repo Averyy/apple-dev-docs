@@ -23,7 +23,7 @@ var identifier: String? { get set }
 @property (nonatomic, copy, nullable) NSString * identifier;
 ```
 
-#### Discussion
+## Discussion
 
 The system passes this string to the [`application(_:handleActionWithIdentifier:for:completionHandler:)`](../uiapplicationdelegate/application%28_,handleactionwithidentifier,for,completionhandler%29.md) or [`application(_:handleActionWithIdentifier:forRemoteNotification:completionHandler:)`](../uiapplicationdelegate/application%28_,handleactionwithidentifier,forremotenotification,completionhandler%29.md) method of the app delegate when the user chooses the action.
 

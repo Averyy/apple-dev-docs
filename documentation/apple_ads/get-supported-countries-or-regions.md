@@ -15,11 +15,11 @@ Fetches supported languages and language codes.
 
 - [Apple Ads Campaign Management API 4](./apple-search-ads-campaign-management-api-4.md)
 
-#### Discussion
+## Discussion
 
 Use this endpoint to fetch supported product page languages for countries or regions.
 
-##### Payload example 1: Get supported countries or regions
+### Payload example 1: Get supported countries or regions
 
 **Request**:
 
@@ -100,7 +100,7 @@ GET https://api.searchads.apple.com/api/v5/countries-or-regions?countriesOrRegio
 }
 ```
 
-##### Payload example 2: Get supported countries or regions
+### Payload example 2: Get supported countries or regions
 
 **Request**:
 

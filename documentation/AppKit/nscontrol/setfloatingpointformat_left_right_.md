@@ -15,7 +15,7 @@ Sets the auto-ranging and floating point number format of the receiver’s cell.
 - (void) setFloatingPointFormat:(BOOL) autoRange left:(NSUInteger) leftDigits right:(NSUInteger) rightDigits;
 ```
 
-#### Discussion
+## Discussion
 
 For more information about auto-ranging and how it works, see the description of this method in the [`NSCell`](../nscell.md) class specification. If the cell is being edited, the current edits are discarded and the cell’s interior is redrawn.
 

@@ -23,7 +23,7 @@ case automatic
 UITabBarItemPositioningAutomatic
 ```
 
-#### Discussion
+## Discussion
 
 - In a horizontally compact environment, the tab bar spreads items across the entire space, adjusting inter-item spacing as needed.
 - In a horizontally regular environment, the tab bar uses the [`itemWidth`](../itemwidth.md) and [`itemSpacing`](../itemspacing.md) properties to set the width of items and the spacing between items, positioning those items in the center of the available space. This configuration has the potential to leave space along the left and right edges of the tab bar.

@@ -21,7 +21,7 @@ Invalidates a sample buffer by calling its invalidation handler.
 func invalidate() throws
 ```
 
-#### Discussion
+## Discussion
 
 You can’t use a sample buffer after invalidating it; all of its accessors throw errors.
 

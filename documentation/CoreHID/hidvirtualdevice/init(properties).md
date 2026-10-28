@@ -15,7 +15,7 @@ Creates a virtual HID device.
 init?(properties: HIDVirtualDevice.Properties)
 ```
 
-#### Discussion
+## Discussion
 
 [`HIDVirtualDevice`](../hidvirtualdevice.md) is created in an inactive state, notifications won’t be received and many functions won’t run until [`activate(delegate:)`](./activate%28delegate%29.md) has run successfully.
 

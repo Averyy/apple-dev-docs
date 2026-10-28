@@ -25,7 +25,7 @@ var lastEventTimestamp: TimeInterval { get }
 @property (readonly) NSTimeInterval lastEventTimestamp;
 ```
 
-#### Discussion
+## Discussion
 
 This property isn’t relative to any specific date and time. To determine the time between events, subtract a previous value of this property from the current value. You can also compare [`lastEventTimestamp`](./lasteventtimestamp.md) properties of two different devices to determine which event occurs first.
 

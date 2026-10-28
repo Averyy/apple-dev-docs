@@ -20,7 +20,7 @@ A picker style that presents options as segmented tabs.
 struct TabsPickerStyle
 ```
 
-#### Overview
+## Overview
 
 On macOS, this style produces a segmented picker with a visual treatment that distinguishes tab navigation from value selection. On iOS, tvOS, and visionOS, the visual appearance matches that of the standard standard `.segmented` style. On all supported platforms, VoiceOver announces options as tabs.
 

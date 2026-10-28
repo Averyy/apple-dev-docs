@@ -16,7 +16,7 @@ A Boolean value that determines whether the payment sheet displays the coupon co
 boolean supportsCouponCode;
 ```
 
-#### Discussion
+## Discussion
 
 Set the value to `true` to display the coupon code field.
 

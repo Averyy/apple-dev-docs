@@ -20,7 +20,7 @@ var requiresSetUpModeCompletion: Bool { get set }
 @property BOOL requiresSetUpModeCompletion;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../../Swift/false.md), which tells the system to execute the completion handler as soon as it displays Desk View. If [`true`](../../../Swift/true.md), the system executes the completion handler after the user completes setup and starts Desk View.
 

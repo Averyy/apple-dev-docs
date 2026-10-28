@@ -25,7 +25,7 @@ var isActive: Bool { get set }
 @property (nonatomic, getter=isActive) BOOL active;
 ```
 
-#### Discussion
+## Discussion
 
 If this value is [`false`](../../Swift/false.md), the field does not apply forces to physics bodies in its area of effect. The default value is [`true`](../../Swift/true.md).
 

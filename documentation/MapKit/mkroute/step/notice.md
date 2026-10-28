@@ -25,7 +25,7 @@ var notice: String? { get }
 @property (nonatomic, readonly, nullable) NSString * notice;
 ```
 
-#### Discussion
+## Discussion
 
 Notices may include legal information or warning notices that apply to the step. For example, if the step crosses railroad tracks, it might contain a notice that warns the user not to cross the tracks when the lights are flashing.
 

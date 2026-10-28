@@ -23,11 +23,11 @@ func dequeueReusableCell(withReuseIdentifier identifier: String, for indexPath: 
 - (UICollectionViewCell *) dequeueReusableCellWithReuseIdentifier:(NSString *) identifier forIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 A valid [`UICollectionReusableView`](../uicollectionreusableview.md) object.
 
-#### Discussion
+## Discussion
 
 Call this method from your data source object when asked to provide a new cell for the collection view. This method dequeues an existing cell if one is available or creates a new one based on the class or nib file you previously registered.
 

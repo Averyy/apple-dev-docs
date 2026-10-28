@@ -29,7 +29,7 @@ class AVDepthData
 - [Extracting Portrait Effects matte image data from a photo](./extracting-portrait-effects-matte-image-data-from-a-photo.md)
 - [Creating auxiliary depth data manually](./creating-auxiliary-depth-data-manually.md)
 
-#### Overview
+## Overview
 
 *Depth data* is a generic term for a map of per-pixel data containing depth-related information. A depth data object wraps a disparity or depth map and provides conversion methods, focus information, and camera calibration data to aid in using the map for rendering or computer vision tasks.
 

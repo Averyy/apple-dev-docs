@@ -21,7 +21,7 @@ var activationType: NSUserNotification.ActivationType { get }
 @property (readonly) NSUserNotificationActivationType activationType;
 ```
 
-#### Discussion
+## Discussion
 
 This property specifies why the user notification was sent to to the [`NSUserNotificationCenterDelegate`](../nsusernotificationcenterdelegate.md) method [`userNotificationCenter(_:didActivate:)`](../nsusernotificationcenterdelegate/usernotificationcenter%28_,didactivate%29.md). The supported values are described in [`NSUserNotification.ActivationType`](./activationtype-swift.enum.md).
 

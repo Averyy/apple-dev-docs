@@ -19,7 +19,7 @@ func writeRTFD(toFile path: String, atomically flag: Bool) -> Bool
 - (BOOL) writeRTFDToFile:(NSString *) path atomically:(BOOL) flag;
 ```
 
-#### Discussion
+## Discussion
 
 Returns [`true`](../../Swift/true.md) on success and [`false`](../../Swift/false.md) on failure. If `atomicFlag` is [`true`](../../Swift/true.md), attempts to write the file safely so that an existing file at `path` is not overwritten, nor does a new file at `path` actually get created, unless the write is successful.
 

@@ -23,7 +23,7 @@ func shouldAllow(_ interaction: UISpringLoadedInteraction, with context: any UIS
 - (BOOL) shouldAllowInteraction:(UISpringLoadedInteraction *) interaction withContext:(id<UISpringLoadedInteractionContext>) context;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the spring-loaded interaction should begin or continue; otherwise, [`false`](../../Swift/false.md).
 

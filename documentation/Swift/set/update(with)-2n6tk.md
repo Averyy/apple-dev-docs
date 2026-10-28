@@ -24,11 +24,11 @@ mutating func update(with newMember: Element) -> Element?
 
 Available when `Element` conforms to `Hashable`.
 
-#### Return Value
+## Return Value
 
 An element equal to `newMember` if the set already contained such a member; otherwise, `nil`. In some cases, the returned element may be distinguishable from `newMember` by identity comparison or some other means.
 
-#### Discussion
+## Discussion
 
 If an element equal to `newMember` is already contained in the set, `newMember` replaces the existing element. In this example, an existing element is inserted into `classDays`, a set of days of the week.
 

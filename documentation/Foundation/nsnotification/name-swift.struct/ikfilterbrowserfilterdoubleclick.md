@@ -15,7 +15,7 @@ Posted when the user double-clicks a filter in the filter browser.
 static let IKFilterBrowserFilterDoubleClick: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The name of the selected filter is send as the object in the notification.
 

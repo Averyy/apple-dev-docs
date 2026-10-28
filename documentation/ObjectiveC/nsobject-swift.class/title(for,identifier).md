@@ -19,11 +19,11 @@ func title(for person: ABPerson!, identifier: String!) -> String!
 - (NSString *) titleForPerson:(ABPerson *) person identifier:(NSString *) identifier;
 ```
 
-#### Return Value
+## Return Value
 
 The title of the menu item for the action.
 
-#### Discussion
+## Discussion
 
 If the property returned by [`actionProperty()`](./actionproperty%28%29.md) is a multivalue property, `identifier` contains the unique identifier of the value selected.
 

@@ -15,7 +15,7 @@ The height, in pixels, of the photo component.
 readonly attribute Number photoHeight;
 ```
 
-#### Discussion
+## Discussion
 
 Height of the photo component (as obtained from [`photoSrc`](./photosrc.md) or [`photo`](./photo.md)) in pixels.
 

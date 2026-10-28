@@ -21,7 +21,7 @@ case incoming
 SCVideoStreamAnalyzerStreamDirectionIncoming
 ```
 
-#### Discussion
+## Discussion
 
 This option refers to a video stream that the device receives over the network from another device’s camera.
 

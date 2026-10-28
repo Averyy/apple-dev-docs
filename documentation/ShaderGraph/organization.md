@@ -6,7 +6,7 @@
 
 Modify the visual flow of data within your graph without changing any values.
 
-#### Overview
+## Overview
 
 Use organization nodes to manage the visual complexity of your graph. Place a [`Dot`](./organization/dot.md) node between two other nodes, and use the node to reroute connection lines around other nodes and elements. Dot nodes pass the data on their input side directly to the output side without modification.
 

@@ -21,11 +21,11 @@ Returns an array containing substrings from the string that have been divided by
 func components<T>(separatedBy separator: T) -> [String] where T : StringProtocol
 ```
 
-#### Return Value
+## Return Value
 
 An array containing substrings that have been divided from the string using `separator`.
 
-#### Discussion
+## Discussion
 
 The substrings in the resulting array appear in the same order as the original string. Adjacent occurrences of the separator string produce empty strings in the result. Similarly, if the string begins or ends with the separator, the first or last substring, respectively, is empty. The following example shows this behavior:
 

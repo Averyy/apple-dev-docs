@@ -11,11 +11,11 @@ Provides the localized standard string in the installation package for the curre
 localizedStandardString(stringKey)
 ```
 
-#### Return Value
+## Return Value
 
 The localized string, if found in the installation package; `null` otherwise.
 
-#### Overview
+## Overview
 
 This method is not supported. Use [localizedString](./api-1812321-localizedstring.md) instead.
 

@@ -5,7 +5,7 @@
 
 Add long short-term memory (LSTM) layers to recurrent neural networks to avoid long-term dependency problems.
 
-#### Overview
+## Overview
 
 An LSTM layer consists of four gates that manipulate cell-state data:
 

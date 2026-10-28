@@ -5,13 +5,13 @@
 
 Calculate the optimum sizes for threadgroups and grids when dispatching compute-processing workloads.
 
-#### Overview
+## Overview
 
 You can ensure your app doesn’t underuse threads by specifying the size of the grid and the number of threads per threadgroup. In iOS 11 and macOS 10.13 and later on devices that support nonuniform dispatch sizes, Metal calculates the number of threadgroups and provides nonuniform threadgroups if the grid size isn’t a multiple of the threadgroup size.
 
 In earlier versions of iOS and macOS, you specify the size and number of the threadgroups. Metal composes grids of uniform threadgroups that may not match the size of your data. You can ensure your kernel code doesn’t execute outside the bounds of the data by adding defensive code to it.
 
-##### Calculate threads per threadgroup
+### Calculate threads per threadgroup
 
 You calculate the number of threads per threadgroup based on two [`MTLComputePipelineState`](./mtlcomputepipelinestate.md) properties:
 
@@ -71,7 +71,7 @@ To determine if a device supports nonuniform threadgroups, see [Metal Feature Se
 
 ![An illustration that shows a grid of squares, which represent threads, divided into 6 threadgroups of varying size that utilize every thread in the grid. The grid is 11 by 7 threads in size. The threadgroups in the grid are 4 by 4, 4 by 3, 3 by 4, and 3 by 3 threads in size.](https://developer.apple.com/tutorials/images/com.apple.metal/calculating-threadgroup-and-grid-sizes-1@2x.png)
 
-##### Calculate threadgroups per grid
+### Calculate threadgroups per grid
 
 If you need fine control over the size and number of threadgroups, you can manually calculate how to divide the grid. In your code, ensure that there are sufficient threadgroups to cover the entire image.
 

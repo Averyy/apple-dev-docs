@@ -22,11 +22,11 @@ Stores a new nested container for the default `super` key and returns a new enco
 mutating func superEncoder() -> any Encoder
 ```
 
-#### Return Value
+## Return Value
 
 A new encoder to pass to `super.encode(to:)`.
 
-#### Discussion
+## Discussion
 
 Equivalent to calling `superEncoder(forKey:)` with `Key(stringValue: "super", intValue: 0)`.
 

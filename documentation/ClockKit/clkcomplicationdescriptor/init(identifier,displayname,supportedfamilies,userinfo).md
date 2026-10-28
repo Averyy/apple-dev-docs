@@ -21,7 +21,7 @@ convenience init(identifier: String, displayName: String, supportedFamilies: [CL
 
 - [Declaring complications for your app](../declaring-complications-for-your-app.md)
 
-#### Discussion
+## Discussion
 
 The system passes the user info dictionary to methods like your data source’s [`getCurrentTimelineEntry(for:withHandler:)`](../clkcomplicationdatasource/getcurrenttimelineentry%28for,withhandler%29.md) method as part of the complication. Your data source can use the information in the user info dictionary when creating the complications.
 

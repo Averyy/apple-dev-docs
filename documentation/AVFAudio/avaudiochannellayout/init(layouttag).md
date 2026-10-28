@@ -25,7 +25,7 @@ convenience init?(layoutTag: AudioChannelLayoutTag)
 - (instancetype) initWithLayoutTag:(AudioChannelLayoutTag) layoutTag;
 ```
 
-#### Return Value
+## Return Value
 
 A new `AVAudioChannelLayout` object, or `nil` if `layoutTag` is [`kAudioChannelLayoutTag_UseChannelDescriptions`](../../CoreAudioTypes/kaudiochannellayouttag_usechanneldescriptions.md) or [`kAudioChannelLayoutTag_UseChannelBitmap`](../../CoreAudioTypes/kaudiochannellayouttag_usechannelbitmap.md).
 

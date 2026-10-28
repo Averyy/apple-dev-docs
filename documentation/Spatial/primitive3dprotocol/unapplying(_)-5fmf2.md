@@ -22,7 +22,7 @@ Returns the primitive that results from unapplying a pose to the primitive.
 func unapplying(_ pose: Self.Pose) -> Self
 ```
 
-#### Discussion
+## Discussion
 
 - Returns The transformed primitive.
 

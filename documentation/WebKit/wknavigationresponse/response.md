@@ -24,7 +24,7 @@ var response: URLResponse { get }
 @property (nonatomic, copy, readonly) NSURLResponse * response;
 ```
 
-#### Discussion
+## Discussion
 
 Allowing a navigation response with a MIME type that WebKit can’t display causes the navigation to fail.
 

@@ -22,7 +22,7 @@ var EAConnectionIDNone: Int { get }
 EAConnectionIDNone
 ```
 
-#### Discussion
+## Discussion
 
 Indicates an invalid connection.
 

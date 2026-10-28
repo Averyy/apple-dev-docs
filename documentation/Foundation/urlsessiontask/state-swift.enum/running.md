@@ -25,7 +25,7 @@ case running
 NSURLSessionTaskStateRunning
 ```
 
-#### Discussion
+## Discussion
 
 A task in this state is subject to the request and resource timeouts specified in the session configuration object.
 

@@ -21,7 +21,7 @@ A type that represents a TIFF image.
 static var tiff: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.tiff`.
 

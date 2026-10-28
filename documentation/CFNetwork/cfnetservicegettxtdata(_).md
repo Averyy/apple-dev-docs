@@ -26,15 +26,15 @@ func CFNetServiceGetTXTData(_ theService: CFNetService) -> Unmanaged<CFData>?
 extern CFDataRefCFNetServiceGetTXTData(CFNetServiceRef theService);
 ```
 
-#### Return Value
+## Return Value
 
 CFDataRef object containing the requested TXT data and suitable for passing to [`CFNetServiceCreateDictionaryWithTXTData(_:_:)`](./cfnetservicecreatedictionarywithtxtdata%28_,_%29.md), or `NULL` if the service’s TXT data has not been resolved.
 
-#### Discussion
+## Discussion
 
 This function gets the data from the service’s TXT records.
 
-##### Special Considerations
+### Special Considerations
 
 This function gets the data in a thread-safe way, but the data itself is not safe if the service is altered from another thread.
 

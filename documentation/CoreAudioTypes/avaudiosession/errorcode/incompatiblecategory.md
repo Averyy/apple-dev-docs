@@ -25,7 +25,7 @@ case incompatibleCategory
 AVAudioSessionErrorCodeIncompatibleCategory
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs when calling [`setPreferredInputNumberOfChannels(_:)`](../../../AVFAudio/avaudiosession/setpreferredinputnumberofchannels%28_%29.md) while the session’s category is [`playback`](../../../AVFAudio/avaudiosession/category-swift.struct/playback.md).
 

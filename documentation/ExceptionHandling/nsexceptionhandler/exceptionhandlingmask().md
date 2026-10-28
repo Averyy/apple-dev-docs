@@ -20,7 +20,7 @@ func exceptionHandlingMask() -> Int
 - (NSUInteger) exceptionHandlingMask;
 ```
 
-#### Return Value
+## Return Value
 
 A bit mask composed of one or more constants specifying the types of exceptions monitored and whether they are handled or logged (or both). See [Logging and Handling Constants](../logging-and-handling-constants.md) for information about the constants.
 

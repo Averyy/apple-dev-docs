@@ -18,11 +18,11 @@ Promise<CloudKit.RecordsResponse, CloudKit.CKError> fetchRecords(
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `Promise` object that resolves to a [`CloudKit.RecordsResponse`](../cloudkit.recordsresponse.md) object if the operation succeeds; otherwise, a [`CKError`](../cloudkit/ckerror.md) object.
 
-#### Discussion
+## Discussion
 
 To get the fetched record, use the [`records`](../cloudkit.recordsresponse/records.md) property in the [`CloudKit.RecordsResponse`](../cloudkit.recordsresponse.md) class.
 

@@ -20,11 +20,11 @@ var lockDate: Date { get }
 @property (copy, readonly) NSDate * lockDate;
 ```
 
-#### Return Value
+## Return Value
 
 The time the receiver was acquired by any of the `NSDistributedLock` objects using the same path. Returns `nil` if the lock doesn’t exist.
 
-#### Discussion
+## Discussion
 
 This method is potentially useful to applications that want to use an age heuristic to decide if a lock is too old and should be broken.
 

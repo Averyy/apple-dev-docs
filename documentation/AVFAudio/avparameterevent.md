@@ -24,7 +24,7 @@ class AVParameterEvent
 @interface AVParameterEvent : AVMusicEvent
 ```
 
-#### Overview
+## Overview
 
 When you configure an audio unit as the destination for an [`AVMusicTrack`](./avmusictrack.md) that contains this event, you can schedule and automate parameter changes.
 

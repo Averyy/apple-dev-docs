@@ -15,7 +15,7 @@ Allows a task to yield the processor to another task.
 void MPYield(void);
 ```
 
-#### Discussion
+## Discussion
 
 This function indicates to the scheduler that another task can run. Other than possibly yielding the processor to another task or application, the call has no effect. Note that since tasks are preemptively scheduled, an implicit yield may occur at any point, whether or not this function is called. 
 

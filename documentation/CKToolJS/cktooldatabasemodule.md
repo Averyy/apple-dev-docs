@@ -15,7 +15,7 @@ The imported package that provides access to CloudKit containers and databases.
 interface CKToolDatabaseModule
 ```
 
-#### Overview
+## Overview
 
 This is the import of all exported content from the `@apple/cktool.database` package.
 

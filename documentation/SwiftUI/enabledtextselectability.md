@@ -19,7 +19,7 @@ A selectability type that enables text selection by the person using your app.
 struct EnabledTextSelectability
 ```
 
-#### Overview
+## Overview
 
 Don’t use this type directly. Instead, use [`enabled`](./textselectability/enabled.md).
 

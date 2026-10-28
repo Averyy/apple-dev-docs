@@ -28,7 +28,7 @@ extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierSleepAnalysis;
 
 - [Saving data to HealthKit](../saving-data-to-healthkit.md)
 
-#### Discussion
+## Discussion
 
 These samples use values from the [`HKCategoryValueSleepAnalysis`](../hkcategoryvaluesleepanalysis.md) enum.
 

@@ -23,7 +23,7 @@ var activationData: Data? { get set }
 @property (nonatomic, copy, nullable) NSData * activationData;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the data provided to the payment network as a cryptographic one-time pad (OTP), per the Payment Network API specification. The cryptographic OTP is not interpreted by Apple or iOS. The OTP should be verified by the issuer and/or payment network upon receipt of the provisioning request to ensure the request’s authenticity. For more information about the activation data’s content, contact your payment network.
 

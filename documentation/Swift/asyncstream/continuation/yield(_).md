@@ -22,11 +22,11 @@ Resume the task awaiting the next iteration point by having it return normally f
 func yield(_ value: sending Element) -> AsyncStream<Element>.Continuation.YieldResult
 ```
 
-#### Return Value
+## Return Value
 
 A `YieldResult` that indicates the success or failure of the yield operation.
 
-#### Discussion
+## Discussion
 
 If nothing is awaiting the next value, this method attempts to buffer the result’s element.
 

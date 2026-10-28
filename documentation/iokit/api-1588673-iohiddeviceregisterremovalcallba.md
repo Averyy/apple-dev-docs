@@ -16,7 +16,7 @@ Registers a callback to be used when a IOHIDDevice is removed.
 void IOHIDDeviceRegisterRemovalCallback(IOHIDDeviceRef device, IOHIDCallback callback, void *context);
 ```
 
-#### Discussion
+## Discussion
 
 In most cases this occurs when a device is unplugged.
 

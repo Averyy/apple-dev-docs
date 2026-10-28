@@ -23,7 +23,7 @@ nonisolated
 func actionSheet(isPresented: Binding<Bool>, content: () -> ActionSheet) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 In the example below, a button conditionally presents an action sheet depending upon the value of a bound Boolean variable. When the Boolean value is set to `true`, the system displays an action sheet with both destructive and default actions:
 

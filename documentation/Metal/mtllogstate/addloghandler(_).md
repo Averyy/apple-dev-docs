@@ -29,7 +29,7 @@ func addLogHandler(_ block: @escaping @Sendable (String?, String?, MTLLogLevel, 
 
 - [Logging shader debug messages](../logging-shader-debug-messages.md)
 
-#### Discussion
+## Discussion
 
 In absence of any log handlers, all messages goes through the unified log system and are available through the console.app, log tool, or Xcode.
 

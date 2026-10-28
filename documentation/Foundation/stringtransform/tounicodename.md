@@ -25,7 +25,7 @@ static let toUnicodeName: StringTransform
 extern NSStringTransform const NSStringTransformToUnicodeName;
 ```
 
-#### Discussion
+## Discussion
 
 For example, the string “🐶🐮” transforms to `"``\N{DOG FACE}\N{COW FACE}"` .
 

@@ -12,7 +12,7 @@ Stream media to a third-party device that a user selects in a system menu.
 - macOS 15.0+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 Use DeviceDiscoveryExtension (DDE) to discover third-party media receivers to which your app can stream AV content.
 

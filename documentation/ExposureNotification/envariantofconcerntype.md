@@ -23,7 +23,7 @@ enum ENVariantOfConcernType
 enum ENVariantOfConcernType : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 A Public Health Authority (PHA) defines the meaning of the types that indicate variants of concern. For example, a PHA could define the meaning of [`ENVariantOfConcernType.type1`](./envariantofconcerntype/type1.md) as “Vaccine is effective”, and [`ENVariantOfConcernType.type2`](./envariantofconcerntype/type2.md) as “Highly transmissive.” The PHA could assign the definition of “High severity” to [`ENVariantOfConcernType.type3`](./envariantofconcerntype/type3.md), and “Vaccine breakthrough” to [`ENVariantOfConcernType.type4`](./envariantofconcerntype/type4.md).
 

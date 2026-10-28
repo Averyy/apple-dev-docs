@@ -19,7 +19,7 @@ var localizedDisplayName: String? { get }
 @property (copy, readonly, nullable) NSString * localizedDisplayName;
 ```
 
-#### Discussion
+## Discussion
 
 An example interface name is `Ethernet`. Use this string when you need to display the name of the interface to the user.
 

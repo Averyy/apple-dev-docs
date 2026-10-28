@@ -25,7 +25,7 @@ class func token() async throws -> String
 + (void) getTokenWithCompletion:(void (^)(NSString *token, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Your app has 30 seconds to call this method after the system generates the token before the system invalidates it. The framework maps the token to the ICCID associated with the original [`MFMessageComposeViewController`](../../MessageUI/mfmessagecomposeviewcontroller.md) instance used for UPI device validation.
 

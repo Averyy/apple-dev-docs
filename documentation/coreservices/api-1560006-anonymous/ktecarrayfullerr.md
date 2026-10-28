@@ -14,7 +14,7 @@
 kTECArrayFullErr = -8751
 ```
 
-#### Discussion
+## Discussion
 
 The supplied TextEncodingRun, ScriptCodeRun,or UnicodeMapping array is too small, and the input was not completely converted.Call the function again with another output buffer—or with thesame output buffer after copying its contents—to convert the remainderof the string
 

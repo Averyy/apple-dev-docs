@@ -22,7 +22,7 @@ Combines a sequence of values by modifying the previously-accumulated value with
 static func reduce(value: inout Self.Value, nextValue: () -> Self.Value)
 ```
 
-#### Discussion
+## Discussion
 
 This method receives its values in view-tree order. Conceptually, this combines the preference value from one tree with that of its next sibling.
 

@@ -25,11 +25,11 @@ func CFURLEnumeratorGetNextURL(_ enumerator: CFURLEnumerator!, _ url: UnsafeMuta
 extern CFURLEnumeratorResult CFURLEnumeratorGetNextURL(CFURLEnumeratorRef enumerator, CFURLRef*url, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 The result of advancing the enumerator.
 
-#### Discussion
+## Discussion
 
 If this function returns [`CFURLEnumeratorResult.end`](./cfurlenumeratorresult/end.md), the enumeration has finished.
 

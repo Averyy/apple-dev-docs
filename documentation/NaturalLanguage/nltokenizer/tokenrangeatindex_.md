@@ -21,7 +21,7 @@ Finds the range of the token at the given index.
 - (NSRange) tokenRangeAtIndex:(NSUInteger) characterIndex;
 ```
 
-#### Return Value
+## Return Value
 
 The range of the token at the given location.
 

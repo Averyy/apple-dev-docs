@@ -18,11 +18,11 @@ The declaration to configure the math and calculator apps.
 object MathSettings
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.configuration.math.settings` as the declaration type.
 
-##### Configuration availability
+### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -34,7 +34,7 @@ Specify `com.apple.configuration.math.settings` as the declaration type.
 | Allowed in user scope | macOS, Shared iPad |
 | Apply | Multiple configurations are combined and applied as a single effective configuration |
 
-##### Configuration example
+### Configuration example
 
 This configuration prevents the use of scientific and programmer modes in calculator app.
 

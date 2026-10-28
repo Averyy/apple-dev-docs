@@ -13,11 +13,11 @@
 typedef errno_t (*ifnet_add_proto_func)(ifnet_t interface, protocol_family_t protocol_family, const struct ifnet_demux_desc *demux_array, u_int32_t demux_count);
 ```
 
-#### Return Value
+## Return Value
 
 If the result is zero, processing will continue normally. If the result is anything else, the add protocol will be aborted.
 
-#### Discussion
+## Discussion
 
 if_add_proto_func is called by the stack when a protocol is attached to an interface. This gives the interface an opportunity to get a list of protocol description structures for demuxing packets to this protocol (demux descriptors).
 

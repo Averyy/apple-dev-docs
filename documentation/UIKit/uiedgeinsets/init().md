@@ -20,11 +20,11 @@ Initializes the edge insets structure to default values.
 init()
 ```
 
-#### Return Value
+## Return Value
 
 An initialized inset structure.
 
-#### Discussion
+## Discussion
 
 This initializer sets all inset margins to `0.0`.
 

@@ -25,7 +25,7 @@ var motionVectorScaleY: Float { get set }
 @property (nonatomic) float motionVectorScaleY;
 ```
 
-#### Discussion
+## Discussion
 
 The scaler converts the horizontal component of each value in [`motionTexture`](./motiontexture.md) into fragment (pixel) coordinates by multiplying it by this property’s value.
 

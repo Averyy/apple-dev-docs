@@ -19,7 +19,7 @@ struct TextStyleOptionKey
 typedef NSString * NSFontTextStyleOptionKey;
 ```
 
-#### Discussion
+## Discussion
 
 Pass a dictionary that contains any combination of these keys and their corresponding values to [`preferredFont(forTextStyle:options:)`](./preferredfont%28fortextstyle,options%29.md) or [`preferredFontDescriptor(forTextStyle:options:)`](../nsfontdescriptor/preferredfontdescriptor%28fortextstyle,options%29.md) to further configure the returned font or font descriptor.
 

@@ -20,7 +20,7 @@ var ES_EVENT_TYPE_NOTIFY_UNLINK: es_event_type_t { get }
 ES_EVENT_TYPE_NOTIFY_UNLINK
 ```
 
-#### Discussion
+## Discussion
 
 This identifier corresponds to the [`es_events_t`](./es_events_t.md) union member [`unlink`](./es_events_t/unlink.md), which has the type [`es_event_unlink_t`](./es_event_unlink_t.md).
 

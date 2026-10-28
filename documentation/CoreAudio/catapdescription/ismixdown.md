@@ -20,7 +20,7 @@ var isMixdown: Bool { get set }
 @property (atomic, readwrite, getter=isMixdown) BOOL mixdown;
 ```
 
-#### Discussion
+## Discussion
 
 True if this description is a mono or stereo mix of the tapped device’s channels.
 

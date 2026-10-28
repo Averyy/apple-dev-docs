@@ -19,7 +19,7 @@ func range(of list: NSTextList, at location: Int) -> NSRange
 - (NSRange) rangeOfTextList:(NSTextList *) list atIndex:(NSUInteger) location;
 ```
 
-#### Return Value
+## Return Value
 
 The range of the given text list containing the location.
 

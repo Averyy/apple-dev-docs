@@ -19,7 +19,7 @@ func visibleItemIndexes() -> IndexSet!
 - (NSIndexSet *) visibleItemIndexes;
 ```
 
-#### Return Value
+## Return Value
 
 A set containing the indexes.
 

@@ -20,7 +20,7 @@ A component that stores diffuse probe data for a spatial region.
 struct DiffuseLightProbeGroupComponent
 ```
 
-#### Overview
+## Overview
 
 Attach this component to an entity to designate it as a diffuse probe group — a positioned source of baked diffuse lighting. Other entities can reference this group via [`DiffuseLightProbeReceiverComponent`](./diffuselightprobereceivercomponent.md) to receive spatially-varying diffuse illumination.
 

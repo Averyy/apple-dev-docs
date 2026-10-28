@@ -15,11 +15,11 @@ Allows your component to pass on a request to a specified component.
 ComponentResult DelegateComponentCall(ComponentParameters *originalParams, ComponentInstance ci);
 ```
 
-#### Return Value
+## Return Value
 
 The component result returned by the specified component. 
 
-#### Discussion
+## Discussion
 
 Your component may supplement its capabilities by using the services of another component to directly satisfy application requests using this function. For example, you might want to create two similar components that provide different levels of service to applications. Rather than completely implementing both components, you could design one to rely on the capabilities of the other. In this manner, you have to implement only that portion of the more capable component that provides additional services.
 

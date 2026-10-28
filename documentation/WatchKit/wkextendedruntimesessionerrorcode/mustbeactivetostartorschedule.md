@@ -19,7 +19,7 @@ case mustBeActiveToStartOrSchedule
 WKExtendedRuntimeSessionErrorMustBeActiveToStartOrSchedule
 ```
 
-#### Discussion
+## Discussion
 
 You can only start or schedule sessions when the watchOS app is running in the foreground. Specifically, the WatchKit extension’s [`applicationState`](../wkextension/applicationstate.md) must equal [`WKApplicationState.active`](../wkapplicationstate/active.md).
 

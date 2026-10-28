@@ -23,7 +23,7 @@ optional func hostViewControllerDidActivate(_ viewController: EXHostViewControll
 
 - [Including extension-based UI in your interface](../including-extension-based-ui-in-your-interface.md)
 
-#### Discussion
+## Discussion
 
 The host view controller calls this method after it launches an app extension and connects to its remote scene. Use this method to establish an XPC connection to the newly created UI instance.
 

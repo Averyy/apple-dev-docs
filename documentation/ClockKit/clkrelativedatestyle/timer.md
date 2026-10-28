@@ -21,7 +21,7 @@ case timer
 CLKRelativeDateStyleTimer
 ```
 
-#### Discussion
+## Discussion
 
 Timers convey the number of hours, minutes, and seconds between the two dates. For example, the date text provider formats ten hours and nine minutes as “10:09”.
 

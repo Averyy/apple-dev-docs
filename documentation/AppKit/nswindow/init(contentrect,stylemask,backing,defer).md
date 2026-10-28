@@ -19,11 +19,11 @@ init(contentRect: NSRect, styleMask style: NSWindow.StyleMask, backing backingSt
 - (instancetype) initWithContentRect:(NSRect) contentRect styleMask:(NSWindowStyleMask) style backing:(NSBackingStoreType) backingStoreType defer:(BOOL) flag;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized window.
 
-#### Discussion
+## Discussion
 
 This method is the designated initializer for the `NSWindow` class.
 

@@ -12,11 +12,11 @@ virtual IOReturn complete(
  IODirection forDirection = forDirection);
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn code.
 
-#### Overview
+## Overview
 
 This method should not be called unless a prepare was previously issued; the prepare() and complete() must occur in pairs, before and after an I/O transfer involving pageable memory.
 

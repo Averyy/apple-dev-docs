@@ -25,7 +25,7 @@ func CMVideoFormatDescriptionGetPresentationDimensions(_ videoDesc: CMVideoForma
 extern CGSize CMVideoFormatDescriptionGetPresentationDimensions(CMVideoFormatDescriptionRef videoDesc, Boolean usePixelAspectRatio, Boolean useCleanAperture);
 ```
 
-#### Discussion
+## Discussion
 
 Pixel aspect ratio is used to adjust the width, leaving the height alone.
 

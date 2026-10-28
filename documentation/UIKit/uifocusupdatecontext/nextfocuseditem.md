@@ -23,7 +23,7 @@ weak var nextFocusedItem: (any UIFocusItem)? { get }
 @property (nonatomic, weak, readonly, nullable) id<UIFocusItem> nextFocusedItem;
 ```
 
-#### Discussion
+## Discussion
 
 This property is set to `nil` if no item is receiving the focus.
 

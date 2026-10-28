@@ -12,11 +12,11 @@ SCSITaskAttribute GetTaskAttribute (
  SCSITaskIdentifierrequest );
 ```
 
-#### Return Value
+## Return Value
 
 A valid SCSITaskAttribute value.
 
-#### Overview
+## Overview
 
 Accessor method to retrieve the SCSITaskAttribute associated with the specified request.
 

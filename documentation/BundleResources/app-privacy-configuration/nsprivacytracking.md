@@ -24,7 +24,7 @@ A Boolean value that indicates whether your app or third-party SDK uses data for
 
 **Default**: `false`
 
-#### Overview
+## Overview
 
 Set the value for this key to `true` if your app or third-party SDK uses data for tracking as defined under the App Tracking Transparency framework. When set to `true` you need to provide a list of internet domains in [`NSPrivacyTrackingDomains`](./nsprivacytrackingdomains.md). For more information, see [User Privacy and Data Use](https://developer.apple.com/app-store/user-privacy-and-data-use/).
 

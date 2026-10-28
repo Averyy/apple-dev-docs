@@ -19,7 +19,7 @@
 BNNSDataTypeIndexedBit
 ```
 
-#### Discussion
+## Discussion
 
 Storage data type
 

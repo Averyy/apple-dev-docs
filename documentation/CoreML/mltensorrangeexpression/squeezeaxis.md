@@ -23,7 +23,7 @@ static var squeezeAxis: any MLTensorRangeExpression { get }
 
 Available when `Self` is `_MLTensorRange`.
 
-#### Discussion
+## Discussion
 
 For example:
 

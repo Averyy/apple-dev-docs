@@ -23,7 +23,7 @@ var drawableMultisample: GLKViewDrawableMultisample { get set }
 @property (nonatomic) GLKViewDrawableMultisample drawableMultisample;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`GLKViewDrawableMultisample.multisampleNone`](../glkviewdrawablemultisample/multisamplenone.md).
 

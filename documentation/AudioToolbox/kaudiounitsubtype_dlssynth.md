@@ -19,7 +19,7 @@ var kAudioUnitSubType_DLSSynth: UInt32 { get }
 kAudioUnitSubType_DLSSynth
 ```
 
-#### Discussion
+## Discussion
 
 This unit fully supports General MIDI and the basic extensions of General Standard MIDI.
 

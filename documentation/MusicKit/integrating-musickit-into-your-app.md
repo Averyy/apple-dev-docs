@@ -12,11 +12,11 @@ Enhance your workouts with Apple Music playback.
 - Mac Catalyst 27.0+
 - Xcode 27.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC26 session 254: [Integrate MusicKit into your app](https://developer.apple.com/videos/play/wwdc26/254).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 This sample code project doesn’t work in the simulator. Before you run the sample code project in Xcode, perform the following steps:
 

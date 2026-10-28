@@ -22,7 +22,7 @@ func MACaptionAppearanceSetActiveProfileID(_ profileID: CFString)
 extern void MACaptionAppearanceSetActiveProfileID(CFStringRef profileID);
 ```
 
-#### Discussion
+## Discussion
 
 Sets the currently-selected caption drawing profileID system wide. Behavior is undefined if NULL or an invalid profileID is provided
 

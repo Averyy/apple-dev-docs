@@ -23,7 +23,7 @@ var isCinematicVideoCaptureEnabled: Bool { get set }
 @property (nonatomic, getter=isCinematicVideoCaptureEnabled) BOOL cinematicVideoCaptureEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 Default is `false`. Set to `true` to enable support for Cinematic Video capture.
 

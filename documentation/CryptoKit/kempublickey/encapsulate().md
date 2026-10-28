@@ -22,11 +22,11 @@ Generates and encapsulates a shared secret.
 func encapsulate() throws -> KEM.EncapsulationResult
 ```
 
-#### Return Value
+## Return Value
 
 The shared secret, and its encapsulated version.
 
-#### Discussion
+## Discussion
 
 Share the encapsulated secret with the person who has the [`KEMPrivateKey`](../kemprivatekey.md). They use [`decapsulate(_:)`](../kemprivatekey/decapsulate%28_%29.md) to recover the shared secret.
 

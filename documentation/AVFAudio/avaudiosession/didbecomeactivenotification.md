@@ -28,7 +28,7 @@ extern NSNotificationName const AVAudioSessionDidBecomeActiveNotification;
 
 - [Handling audio interruptions](../handling-audio-interruptions.md)
 
-#### Discussion
+## Discussion
 
 This notification has no userInfo payload.
 

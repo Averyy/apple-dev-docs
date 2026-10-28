@@ -36,7 +36,7 @@ nonisolated
 init<S>(_ title: S, destination: URL) where S : StringProtocol
 ```
 
-#### Discussion
+## Discussion
 
 Use [`Link`](../link.md) to create a control that your app uses to navigate to a URL that you provide. The example below creates a link to `example.com` and uses `Visit Example Co` as the title key to generate a link-styled view in your app:
 

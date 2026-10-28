@@ -21,7 +21,7 @@ func setConfiguration(_ configDict: [String : Any])
 - (void) setConfigurationFromDictionary:(NSDictionary<NSString *,id> *) configDict;
 ```
 
-#### Discussion
+## Discussion
 
 If you implement your own autosave mechanism, call this method to restore the configuration of your toolbar to a previously saved state. The dictionary you read from disk must match the format of the dictionary in the [`configuration`](./configuration.md) property.
 

@@ -17,7 +17,7 @@ Stochastic gradient descent optimizer.
 class SGD
 ```
 
-##### See Also
+### See Also
 
 - [MLXOptimizers](./MLXOptimizers.md)
 

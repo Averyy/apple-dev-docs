@@ -15,7 +15,7 @@ A time-bounded instance of an analytics report, representing data for a specific
 object AnalyticsReportInstance
 ```
 
-#### Discussion
+## Discussion
 
 To learn more about the response that includes this analytics report instance object, see [`AnalyticsReportInstanceResponse`](./analyticsreportinstanceresponse.md).
 

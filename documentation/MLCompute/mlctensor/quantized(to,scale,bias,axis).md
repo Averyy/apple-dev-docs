@@ -23,11 +23,11 @@ func quantized(to type: MLCDataType, scale: MLCTensor, bias: MLCTensor, axis: In
 - (MLCTensor *) tensorByQuantizingToType:(MLCDataType) type scale:(MLCTensor *) scale bias:(MLCTensor *) bias axis:(NSInteger) axis;
 ```
 
-#### Return Value
+## Return Value
 
 A tensor the system quantizes.
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  The tensor type must be [`MLCDataType.int8`](../mlcdatatype/int8.md), [`MLCDataType.uint8`](../mlcdatatype/uint8.md), or [`MLCDataType.int32`](../mlcdatatype/int32.md).
 

@@ -23,7 +23,7 @@ var title: String { get }
 @property (copy, readonly) NSString * title;
 ```
 
-#### Discussion
+## Discussion
 
 HealthKit automatically extracts the document’s title from the CDA’s XML data.
 

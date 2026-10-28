@@ -21,11 +21,11 @@ Creates cryptographically strong key material from a main key or passcode that y
 static func extract<Salt>(inputKeyMaterial: SymmetricKey, salt: Salt?) -> HashedAuthenticationCode<H> where Salt : DataProtocol
 ```
 
-#### Return Value
+## Return Value
 
 A pseudorandom, cryptographically strong key in the form of a hashed authentication code.
 
-#### Discussion
+## Discussion
 
 Generate a derived symmetric key from the cryptographically strong key material this function creates by calling [`expand(pseudoRandomKey:info:outputByteCount:)`](./expand%28pseudorandomkey,info,outputbytecount%29.md).
 

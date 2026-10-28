@@ -23,7 +23,7 @@ Configures customizable toolbar content with the default visibility and options.
 func defaultCustomization() -> some CustomizableToolbarContent
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`defaultCustomization(_:options:)`](./defaultcustomization%28_,options%29.md) modifier providing either a `defaultVisibility` or `options` instead.
 

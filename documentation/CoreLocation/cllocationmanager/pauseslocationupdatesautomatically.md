@@ -27,7 +27,7 @@ var pausesLocationUpdatesAutomatically: Bool { get set }
 
 - [Getting the current location of a device](../getting-the-current-location-of-a-device.md)
 
-#### Discussion
+## Discussion
 
 Allowing the location manager to pause updates can improve battery life on the target device without sacrificing location data. Setting this property to [`true`](../../Swift/true.md) causes the location manager to pause updates (and powers down the appropriate hardware) at times when the location data is unlikely to change. For example, if the user stops for food while using a navigation app, the location manager might pause updates for a period of time. You can help the determination of when to pause location updates by assigning a value to the [`activityType`](./activitytype.md) property.
 

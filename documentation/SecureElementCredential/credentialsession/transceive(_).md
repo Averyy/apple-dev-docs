@@ -20,11 +20,11 @@ func transceive(_ data: Data) async throws -> Data
 
 - [Accessing and using secure element credentials](../accessing-and-using-secure-element-credentials.md)
 
-#### Return Value
+## Return Value
 
 A response APDU.
 
-#### Discussion
+## Discussion
 
 Before calling this method, make sure the credential session state is [`CredentialSession.State.wired(credential:)`](./state-swift.enum/wired%28credential%29.md). The state transitions to [`CredentialSession.State.management`](./state-swift.enum/management.md) if the call encounters a [`CredentialSession.ErrorCode.resourceUnavailable`](./errorcode/resourceunavailable.md) error; otherwise the state remains unchanged.
 

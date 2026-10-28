@@ -18,7 +18,7 @@ An array of parameter names to extract.
 var parameters: [String]?
 ```
 
-#### Discussion
+## Discussion
 
 Use a value of `nil` to include all query items.
 

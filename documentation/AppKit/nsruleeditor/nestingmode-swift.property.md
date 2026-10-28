@@ -19,7 +19,7 @@ var nestingMode: NSRuleEditor.NestingMode { get set }
 @property NSRuleEditorNestingMode nestingMode;
 ```
 
-#### Discussion
+## Discussion
 
 You typically set the nesting mode at view creation time and do not subsequently modify it. The default is `NSRuleEditorNestingModeCompound`. For a list of valid modes, see `Nesting Modes`.
 

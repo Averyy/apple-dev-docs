@@ -23,7 +23,7 @@ var inputView: UIInputView? { get set }
 @property (nonatomic, strong, nullable) UIInputView * inputView;
 ```
 
-#### Discussion
+## Discussion
 
 When you use an input view controller subclass as the primary view controller for a custom keyboard, this property’s [`UIInputView`](../uiinputview.md) object is initially empty. To display your keyboard’s user interface, add controls and views to the [`inputView`](./inputview.md) property.
 

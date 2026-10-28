@@ -17,7 +17,7 @@ Use this protocol to conform custom C++ sequence types to Swift’s `Iterable` p
 protocol CxxIterable<Element> : Iterable, ~Copyable, ~Escapable where Self.Failure == Never
 ```
 
-#### Overview
+## Overview
 
 ```swift
 extension MyCxxSequenceType : CxxIterable {}

@@ -20,7 +20,7 @@ Biases the transcriber towards responsiveness, yielding faster but also less acc
 case fastResults
 ```
 
-#### Discussion
+## Discussion
 
 If included, the transcriber reduces result latency by using a smaller “context window”.
 

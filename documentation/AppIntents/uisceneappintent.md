@@ -24,7 +24,7 @@ protocol UISceneAppIntent : TargetContentProvidingIntent
 - [Directing app intents to your app’s scenes](./directing-app-intents-to-your-apps-scenes.md)
 - [Configuring the runtime behavior of your app intents](./configuring-the-runtime-behavior-of-your-app-intents.md)
 
-#### Overview
+## Overview
 
 In a UIKit app, adopt this protocol in an app intent that causes the system to launch your app in the foreground. For example, include this protocol in an app intent that also supports the [`OpenIntent`](./openintent.md) protocol. The `UISceneAppIntent` protocol tells the system to deliver the app intent to one of your app’s scenes before calling the app intent’s [`perform()`](./appintent/perform%28%29.md) method. In your scene code, use the app intent to configure views and prepare your app’s interface for the app intent.
 

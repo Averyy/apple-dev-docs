@@ -23,7 +23,7 @@ The default control group style.
 
 Available when `Self` is `AutomaticControlGroupStyle`.
 
-#### Discussion
+## Discussion
 
 The default control group style can vary by platform. By default, both platforms use a momentary segmented control style that’s appropriate for the environment in which it is rendered.
 

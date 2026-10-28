@@ -25,11 +25,11 @@ convenience init(delegate: (any CBCentralManagerDelegate)?, queue: dispatch_queu
 - (instancetype) initWithDelegate:(id<CBCentralManagerDelegate>) delegate queue:(dispatch_queue_t) queue;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a newly initialized central manager.
 
-#### Discussion
+## Discussion
 
 For more information, see [Core Bluetooth Programming Guide](https://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/CoreBluetooth_concepts/AboutCoreBluetooth/Introduction.html#//apple_ref/doc/uid/TP40013257).
 

@@ -5,13 +5,13 @@
 
 Create a Maps identifier and a private key before generating tokens for MapKit JS.
 
-#### Overview
+## Overview
 
 MapKit JS uses a token to authenticate map initializations and other API requests. Before you can create a token, you need a Maps identifier (Maps ID) and private key that’s associated with a Maps ID.
 
 You create a Maps ID and private keys through your [Apple Developer Account](https://developer.apple.com/account). After you complete the steps to obtain these items you can construct a token and sign it with your private key, as [Creating and using tokens with Maps Server API](./creating-and-using-tokens-with-maps-server-api.md) describes.
 
-##### Create a Maps ID
+### Create a Maps ID
 
 A Maps ID is a string that you provide to identify a domain or environment that calls the MapKit JS API. Maps IDs use reverse-domain-style notation with three or four fields separated by a dot. The first field must be `maps`; the remainder of this string can be a name that’s meaningful to you. For example, your string might resemble `maps.com.mywebsite` or `maps.com.mycompany.mywebsite`.
 
@@ -27,7 +27,7 @@ To create a Maps ID, follow these steps:
 
 If you have multiple environments, such as a development environment and a production environment, it’s good practice to create separate Maps IDs and keys for each environment. That way, if a key you use in production becomes compromised, revoking it doesn’t affect your UAT or test environments.
 
-##### Obtain a MapKit JS private key
+### Obtain a MapKit JS private key
 
 After you create a Maps ID, the next steps are to create a private key, add the MapKit JS service to this key, and associate it with a Maps ID:
 

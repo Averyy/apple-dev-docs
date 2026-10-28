@@ -21,7 +21,7 @@ A custom pronoun for referring to a third person.
 struct Pronoun
 ```
 
-#### Overview
+## Overview
 
 Create instances of [`Morphology.Pronoun`](./pronoun.md) when you need to define custom pronouns for a localized term of address.
 

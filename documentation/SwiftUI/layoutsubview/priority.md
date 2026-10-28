@@ -21,7 +21,7 @@ The layout priority of the subview.
 var priority: Double { get }
 ```
 
-#### Discussion
+## Discussion
 
 If you define a custom layout type using the [`Layout`](../layout.md) protocol, you can read this value from subviews and use the value when deciding how to assign space to subviews. For example, you can read all of the subview priorities into an array before placing the subviews in a custom layout type called `BasicVStack`:
 

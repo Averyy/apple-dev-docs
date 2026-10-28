@@ -25,7 +25,7 @@ let kCMSampleBufferConduitNotification_UpcomingOutputPTSRangeChanged: CFString
 extern CFStringRef const kCMSampleBufferConduitNotification_UpcomingOutputPTSRangeChanged;
 ```
 
-#### Discussion
+## Discussion
 
 This information can be important for frame-reordered video and for certain types of decoding where samples are transmitted in a different order from the order they will be displayed. If you need to process frames in presentation order, you can use this information to ensure that you do not process a frame too early (that is, when there are upcoming frames that will have earlier presentation timestamps than a frame to be processed).
 

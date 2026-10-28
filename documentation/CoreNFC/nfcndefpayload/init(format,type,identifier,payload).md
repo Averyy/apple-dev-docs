@@ -21,11 +21,11 @@ init(format: NFCTypeNameFormat, type: Data, identifier: Data, payload: Data)
 - (instancetype) initWithFormat:(NFCTypeNameFormat) format type:(NSData *) type identifier:(NSData *) identifier payload:(NSData *) payload;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized payload record object.
 
-#### Discussion
+## Discussion
 
 This initializer uses the maximum payload chunk size defined by the NFC NDEF specification, which is 2^32-1 octets. If the payload size is bigger than the maximum size, the initializer splits the record into multiple record chunks.
 

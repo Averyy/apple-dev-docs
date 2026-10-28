@@ -25,7 +25,7 @@ init(string str: String, attributes attrs: [NSAttributedString.Key : Any]? = nil
 - (instancetype) initWithString:(NSString *) str attributes:(NSDictionary<NSString *,id> *) attrs;
 ```
 
-#### Discussion
+## Discussion
 
 Returns an [`NSAttributedString`](../nsattributedstring.md) object initialized with the characters of `str` and the attributes of `attrs`.
 

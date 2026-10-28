@@ -19,7 +19,7 @@ var maxValue: Double { get set }
 @property double maxValue;
 ```
 
-#### Discussion
+## Discussion
 
 A horizontal slider sends its maximum value when the knob is at the right end of the slider; a vertical slider sends it when the knob is at the top. The maximum selectable value for a circular slider is just below [`maxValue`](./maxvalue.md); for example, if [`maxValue`](./maxvalue.md) is 360, you can set the dial up to 359.999.
 

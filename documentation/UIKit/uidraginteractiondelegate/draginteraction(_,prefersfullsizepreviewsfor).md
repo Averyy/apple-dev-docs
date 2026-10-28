@@ -22,11 +22,11 @@ optional func dragInteraction(_ interaction: UIDragInteraction, prefersFullSizeP
 - (BOOL) dragInteraction:(UIDragInteraction *) interaction prefersFullSizePreviewsForSession:(id<UIDragSession>) session;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to tell the system the preview should appear in its original size; otherwise [`false`](../../Swift/false.md), which is the default if you don’t provide this method.
 
-#### Discussion
+## Discussion
 
 The return value is a recommendation to the system. The system may choose to scale the preview to a smaller size, according to its own rules, even if you return [`true`](../../Swift/true.md).
 

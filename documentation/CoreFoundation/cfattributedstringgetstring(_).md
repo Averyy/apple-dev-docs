@@ -25,11 +25,11 @@ func CFAttributedStringGetString(_ aStr: CFAttributedString!) -> CFString!
 extern CFStringRefCFAttributedStringGetString(CFAttributedStringRef aStr);
 ```
 
-#### Return Value
+## Return Value
 
 An immutable string containing the characters from `aStr`, or `NULL` if there was a problem creating the object. Ownership follows the [The Get Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
 
-#### Discussion
+## Discussion
 
 For performance reasons, the string returned will often be the backing store of the attributed string, and it might therefore change if the attributed string is edited. However, this is an implementation detail, and you should not rely on this behavior.
 

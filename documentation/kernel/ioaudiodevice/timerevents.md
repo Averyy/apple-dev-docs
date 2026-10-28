@@ -11,7 +11,7 @@ The set of timer events in use by the device.
 OSDictionary * timerEvents;
 ```
 
-#### Overview
+## Overview
 
 The key for the dictionary is the target of the event. This means that a single target may have only a single event associated with it.
 

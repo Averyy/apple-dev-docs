@@ -19,7 +19,7 @@ class NSPathComponentCell
 @interface NSPathComponentCell : NSTextFieldCell
 ```
 
-#### Overview
+## Overview
 
 An `NSPathCell` object manages a collection of `NSPathComponentCell` objects, in conjunction with an `NSPathControl` object, to represent a path.
 

@@ -22,7 +22,7 @@ var bundleShortVersion: String { get }
 @property (strong, readonly) NSString * bundleShortVersion;
 ```
 
-#### Discussion
+## Discussion
 
 This is the [`CFBundleShortVersionString`](../../BundleResources/information-property-list/cfbundleshortversionstring.md) of the extension bundle.
 

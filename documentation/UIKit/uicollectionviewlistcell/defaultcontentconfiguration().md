@@ -20,11 +20,11 @@ Retrieves a default list content configuration for the cell’s style.
 @preconcurrency func defaultContentConfiguration() -> UIListContentConfiguration
 ```
 
-#### Return Value
+## Return Value
 
 A default list content configuration. The system determines default values for the configuration according to the section where the cell appears.
 
-#### Discussion
+## Discussion
 
 The default content configuration has preconfigured default styling, but doesn’t contain any content. After you get the default configuration, you assign your content to it, customize any other properties, and assign it to the cell as the current content configuration.
 

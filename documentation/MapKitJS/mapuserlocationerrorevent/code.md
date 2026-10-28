@@ -15,7 +15,7 @@ The code indicating why location acquisition failed.
 readonly code: number;
 ```
 
-#### Discussion
+## Discussion
 
 The error codes mirror the HTML Geolocation API’s error codes with one additional MapKit JS-specific error code:
 

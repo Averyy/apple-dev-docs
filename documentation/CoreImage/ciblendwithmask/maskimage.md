@@ -25,7 +25,7 @@ var maskImage: CIImage? { get set }
 @property (nonatomic, retain, nullable) CIImage * maskImage;
 ```
 
-#### Discussion
+## Discussion
 
 When a mask value is 0.0, the result is the background. When the mask value is 1.0, the result is the image.
 

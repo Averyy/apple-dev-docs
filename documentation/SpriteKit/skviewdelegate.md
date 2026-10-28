@@ -28,7 +28,7 @@ protocol SKViewDelegate : NSObjectProtocol
 
 - [Getting Started with Nodes](./getting-started-with-nodes.md)
 
-#### Overview
+## Overview
 
 By setting a SpriteKit view’s `delegate` with an object that implements [`SKViewDelegate`](./skviewdelegate.md), you can precisely control the frame rate of a game or app. You may choose to do this to maintain a consistent frame rate for computationally intensive code or for special effects such as simulating cine film.
 

@@ -22,11 +22,11 @@ virtual kern_return_t RegisterService();
 
 - [Creating a Driver Using the DriverKit SDK](../creating-a-driver-using-the-driverkit-sdk.md)
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../error-codes.md).
 
-#### Discussion
+## Discussion
 
 After setting up your service in your custom [`Start`](./start.md) method, call this method to let the system know your service is running.
 

@@ -22,7 +22,7 @@ var arrowDirection: UIMenuController.ArrowDirection { get set }
 @property (nonatomic) UIMenuControllerArrowDirection arrowDirection;
 ```
 
-#### Discussion
+## Discussion
 
 You can set the direction editing-menu arrow points by assigning a [`UIMenuController.ArrowDirection`](./arrowdirection-swift.enum.md) enum constant to this property. The default behavior ([`UIMenuController.ArrowDirection.default`](./arrowdirection-swift.enum/default.md)) is to point up or down at the object of focus based on its location on the screen.
 

@@ -24,7 +24,7 @@ var biometryType: LABiometryType { get }
 @property (nonatomic, readonly) LABiometryType biometryType;
 ```
 
-#### Discussion
+## Discussion
 
 Use the value of this property to ensure that any authentication-related user prompts you create match the biometric capabilities of the device. For example, if the value of this property is [`LABiometryType.faceID`](../labiometrytype/faceid.md), don’t refer to Touch ID in an authentication prompt.
 

@@ -21,7 +21,7 @@ func appendGlyph(_ glyph: NSGlyph, in font: NSFont)
 - (void) appendBezierPathWithGlyph:(NSGlyph) glyph inFont:(NSFont *) font;
 ```
 
-#### Discussion
+## Discussion
 
 If the glyph is not encoded in the font specified by the `fontObj` parameter—that is, the font does not have an entry for the specified glyph—then no path is appended to the receiver.
 

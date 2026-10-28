@@ -25,7 +25,7 @@ static let stripCombiningMarks: StringTransform
 extern NSStringTransform const NSStringTransformStripCombiningMarks;
 ```
 
-#### Discussion
+## Discussion
 
 This is equivalent to [`kCFStringTransformStripCombiningMarks`](../../CoreFoundation/kcfstringtransformstripcombiningmarks.md).
 

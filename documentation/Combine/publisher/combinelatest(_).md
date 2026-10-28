@@ -21,11 +21,11 @@ Subscribes to an additional publisher and publishes a tuple upon receiving outpu
 func combineLatest<P>(_ other: P) -> Publishers.CombineLatest<Self, P> where P : Publisher, Self.Failure == P.Failure
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that receives and combines elements from this and another publisher.
 
-#### Discussion
+## Discussion
 
 Use [`combineLatest(_:)`](./combinelatest%28_%29.md) when you want the downstream subscriber to receive a tuple of the most-recent element from multiple publishers when any of them emit a value. To pair elements from multiple publishers, use [`zip(_:)`](./zip%28_%29.md) instead. To receive just the most-recent element from multiple publishers rather than tuples, use [`merge(with:)`](./merge%28with%29-7qt71.md).
 

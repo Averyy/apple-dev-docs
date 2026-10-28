@@ -16,7 +16,7 @@ A temporary directory URL inside the extension’s data container.
 final var sessionContentURL: URL { get }
 ```
 
-#### Discussion
+## Discussion
 
 Store captured content during the current `LockedCameraCaptureSession` to this `URL`.
 

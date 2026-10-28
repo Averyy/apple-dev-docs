@@ -36,7 +36,7 @@ var properties: [String : Any]? { get set }
 - [Letting players join matches using party codes](../letting-players-join-matches-using-party-codes.md)
 - [Troubleshooting matchmaking rules using metrics](../troubleshooting-matchmaking-rules-using-metrics.md)
 
-#### Discussion
+## Discussion
 
 Matchmaking rules may use one or more of these properties to improve matchmaking results and reduce wait times. You set rules in App Store Connect to find players that best match these properties in a reasonable amount of time by loosening the criteria over time.
 

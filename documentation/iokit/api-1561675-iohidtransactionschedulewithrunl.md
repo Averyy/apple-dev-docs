@@ -16,7 +16,7 @@ Schedules transaction with run loop.
 void IOHIDTransactionScheduleWithRunLoop(IOHIDTransactionRef transaction, CFRunLoopRef runLoop, CFStringRef runLoopMode);
 ```
 
-#### Discussion
+## Discussion
 
 Formally associates transaction with client's run loop. Scheduling this transaction with the run loop is necessary before making use of any asynchronous APIs.
 

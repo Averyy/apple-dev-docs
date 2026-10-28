@@ -21,7 +21,7 @@ A type that specifies the format for the day of the year in a date format style.
 struct DayOfYear
 ```
 
-#### Overview
+## Overview
 
 The type [`Date.FormatStyle.Symbol.DayOfYear`](./dayofyear.md) includes static factory variables that create custom [`Date.FormatStyle.Symbol.DayOfYear`](./dayofyear.md) objects:
 

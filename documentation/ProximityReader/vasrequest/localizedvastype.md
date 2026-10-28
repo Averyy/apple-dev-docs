@@ -17,7 +17,7 @@ The localized name of the loyalty program.
 final let localizedVASType: String
 ```
 
-#### Discussion
+## Discussion
 
 Specify the loyalty program name, instead of a payment amount, when you request only a Value Added Services (VAS) read. The maximum length of this string is 22 characters.
 

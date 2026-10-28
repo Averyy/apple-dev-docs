@@ -22,7 +22,7 @@ func setItems(_ items: [UIBarButtonItem]?, animated: Bool)
 - (void) setItems:(NSArray<UIBarButtonItem *> *) items animated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 If `animated` is [`true`](../../Swift/true.md), the changes are dissolved or the reordering is animated—for example, removed items fade out and new items fade in. This method also adjusts the spacing between items.
 

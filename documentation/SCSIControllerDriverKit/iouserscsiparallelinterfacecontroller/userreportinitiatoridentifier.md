@@ -15,11 +15,11 @@ Gets the SCSI device identifier for the host bus adapter (HBA) in response to a 
 virtual kern_return_t UserReportInitiatorIdentifier(uint64_t *id);
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates the result of getting the initiator identifier. [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) indicates success. For error definitions, see [IOKit Constants](../../iokit/iokit_constants.md).
 
-#### Discussion
+## Discussion
 
 The framework calls this method to determine the SCSI device identifier that the initiator has assigned for this HBA.
 

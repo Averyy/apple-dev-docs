@@ -21,7 +21,7 @@ Returns the anticipated compute devices that would be used for executing a Neura
 - (MLComputePlanDeviceUsage *) computeDeviceUsageForNeuralNetworkLayer:(MLModelStructureNeuralNetworkLayer *) layer;
 ```
 
-#### Return Value
+## Return Value
 
 The anticipated compute devices that would be used for executing the layer or `nil` if the usage couldn’t be determined.
 

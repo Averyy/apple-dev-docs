@@ -16,11 +16,11 @@ Constrains this view’s dimensions to the specified 3D aspect ratio.
 nonisolated func aspectRatio3D(_ aspectRatio: Size3D? = nil, contentMode: ContentMode) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that constrains this view’s dimensions to `aspectRatio`, using `contentMode` as its scaling algorithm.
 
-#### Discussion
+## Discussion
 
 If this view is resizable, the resulting view will have `aspectRatio` as its aspect ratio. In this example, the Model3D has a 2 : 3 : 1 width to height to depth ratio, and scales to fit its frame:
 

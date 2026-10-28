@@ -22,7 +22,7 @@ enum RemovalReason
 enum NINearbyObjectRemovalReason : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Each case is a possible value of the `reason` argument to the delegate’s [`session(_:didRemove:reason:)`](../nisessiondelegate/session%28_,didremove,reason%29.md) callback.
 

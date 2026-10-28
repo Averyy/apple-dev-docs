@@ -5,7 +5,7 @@
 
 Equivalent to [`SCNWrapMode.clamp`](./scnwrapmode/clamp.md).
 
-#### Overview
+## Overview
 
 Deprecated in OS X v10.9. Use [`SCNWrapMode.clamp`](./scnwrapmode/clamp.md) instead.
 

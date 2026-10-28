@@ -21,7 +21,7 @@ Gets or sets custom duration properties.
 final subscript<P>(dynamicMember key: KeyPath<ProgressManager.Properties, P.Type>) -> Duration where P : ProgressManager.Property, P.Summary == Duration, P.Value == Duration { get }
 ```
 
-#### Overview
+## Overview
 
 This subscript provides read-write access to custom progress properties where the value type is `Duration` and the summary type is `Duration`. If the property has not been set, the getter returns the property’s default value.
 

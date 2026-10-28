@@ -20,7 +20,7 @@ Sets the scroll view that bars observe for all edges of the view.
 @preconcurrency func setContentScrollView(_ scrollView: UIScrollView?)
 ```
 
-#### Discussion
+## Discussion
 
 Calling this convenience method is identical to calling [`setContentScrollView(_:for:)`](./setcontentscrollview%28_,for%29.md) and passing [`all`](../nsdirectionalrectedge/all.md) for the `edge` parameter.
 

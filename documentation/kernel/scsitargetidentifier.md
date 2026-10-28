@@ -16,7 +16,7 @@
 typedef SCSIDeviceIdentifier SCSITargetIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 If the identifier is for a target only and not an initiator, then SCSITargetIdentifier should be used.
 

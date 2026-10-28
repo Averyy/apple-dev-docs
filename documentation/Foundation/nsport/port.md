@@ -21,7 +21,7 @@ Creates and returns a new `NSPort` object capable of both sending and receiving 
 + (NSPort *) port;
 ```
 
-#### Return Value
+## Return Value
 
 A new `NSPort` object capable of both sending and receiving messages.
 

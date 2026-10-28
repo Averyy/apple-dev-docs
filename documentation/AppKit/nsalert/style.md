@@ -19,7 +19,7 @@ enum Style
 enum NSAlertStyle : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 Currently, there’s no visual difference between informational and warning alerts. You should only use the critical (or “caution”) alert style if warranted. For design guidance on alert styles, see [Human Interface Guidelines > Alerts](https://developer.apple.com/design/human-interface-guidelines/alerts#macOS). The default alert style is [`NSAlert.Style.warning`](./style/warning.md).
 

@@ -19,7 +19,7 @@ Initializes the rendering frame attributes from a timed metadata group read from
 - (instancetype) initWithTimedMetadataGroup:(AVTimedMetadataGroup *) metadataGroup sessionAttributes:(CNRenderingSessionAttributes *) sessionAttributes;
 ```
 
-#### Return Value
+## Return Value
 
 An object representing the rendering frame attributes from a timed metadata group, read from a Cinematic metadata track.
 

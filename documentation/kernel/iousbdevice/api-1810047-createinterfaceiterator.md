@@ -10,11 +10,11 @@ virtual OSIterator *CreateInterfaceIterator(
  IOUSBFindInterfaceRequest *request);
 ```
 
-#### Return Value
+## Return Value
 
 Pointer to an OSIterator.
 
-#### Overview
+## Overview
 
 return an OSIterator to iterate through interfaces satisfying the requirements specified in request.
 

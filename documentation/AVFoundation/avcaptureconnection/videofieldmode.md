@@ -19,7 +19,7 @@ var videoFieldMode: AVVideoFieldMode { get set }
 @property (nonatomic) AVVideoFieldMode videoFieldMode;
 ```
 
-#### Discussion
+## Discussion
 
 The property only applies to a video connection and when [`isVideoFieldModeSupported`](./isvideofieldmodesupported.md) is [`true`](../../Swift/true.md).
 

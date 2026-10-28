@@ -25,7 +25,7 @@ var animation: CAAnimation { get set }
 @property (nonatomic, retain) CAAnimation * animation;
 ```
 
-#### Discussion
+## Discussion
 
 You can use different [`CAAnimation`](../../QuartzCore/caanimation.md) subclasses to animate effects in different ways. For example, a [`CABasicAnimation`](../../QuartzCore/cabasicanimation.md) transitions a property from one value to another, and a [`CAKeyframeAnimation`](../../QuartzCore/cakeyframeanimation.md) transitions a property through a series of values. You use properties of the animation object to define its timing curve, repeat mode, and other options.
 

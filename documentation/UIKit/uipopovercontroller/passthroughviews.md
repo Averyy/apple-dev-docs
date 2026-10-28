@@ -24,7 +24,7 @@ var passthroughViews: [UIView]? { get set }
 @property (nonatomic, copy, nullable) NSArray<__kindof UIView *> * passthroughViews;
 ```
 
-#### Discussion
+## Discussion
 
 When a popover is active, interactions with other views are normally disabled until the popover is dismissed. Assigning an array of views to this property allows taps outside of the popover to be handled by the corresponding views.
 

@@ -19,7 +19,7 @@ Tells the app intent that the system is about to show the specified scene.
 func performNavigation(forScene scene: UIScene)
 ```
 
-#### Discussion
+## Discussion
 
 If the delegate for `scene` doesn’t implement the [`scene(_:willPerformAppIntent:)`](../appintentscenedelegate/scene%28_,willperformappintent%29.md) method of the [`AppIntentSceneDelegate`](../appintentscenedelegate.md) protocol, the system calls this method before running the app intent. Use this method to perform any scene-related tasks before the system brings the scene to the foreground. For example, you might use this method to configure the views of the scene with the app intent’s content. The system calls this method before calling the app intent’s [`perform()`](../appintent/perform%28%29.md) method.
 

@@ -21,7 +21,7 @@ Transforms all elements from an upstream publisher into a new publisher up to a 
 func flatMap<P>(maxPublishers: Subscribers.Demand = .unlimited, _ transform: @escaping (Self.Output) -> P) -> Publishers.FlatMap<Publishers.SetFailureType<P, Self.Failure>, Self> where P : Publisher, P.Failure == Never
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that transforms elements from an upstream  publisher into a publisher of that element’s type.
 

@@ -25,11 +25,11 @@ class var alphanumerics: CharacterSet { get }
 @property (class, copy, readonly) NSCharacterSet * alphanumericCharacterSet;
 ```
 
-#### Return Value
+## Return Value
 
 A character set containing all the alphanumeric characters.
 
-#### Discussion
+## Discussion
 
 Informally, this set is the set of all characters used as basic units of alphabets, syllabaries, ideographs, and digits.
 

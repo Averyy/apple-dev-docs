@@ -4,7 +4,7 @@
 
 Adopt design principles and recommended APIs to consume less power.
 
-#### Overview
+## Overview
 
 When your app performs intensive computation, or uses device features like location and networking, it causes the device to use more energy. Significant energy use can result in degraded performance both for your app, and the overall experience of using the device. For more information, see [Analyzing your app’s battery use](./analyzing-your-app-s-battery-use.md).
 
@@ -16,17 +16,17 @@ Use the following three-stage process to reduce your app’s energy use:
 
 The following sections describe approaches to take at each stage.
 
-##### Reduce overall computation
+### Reduce overall computation
 
 Consider whether your app can update its state less frequently. Look for opportunities to remove activity altogether, so that your app avoids consuming energy using device subsystems that it doesn’t need to use.
 
 If your app performs energy-intensive operations continuously, such as requesting the device’s location, change your app to only do this when someone requests it. Limiting your app’s use of location services to times when someone explicitly requests it also makes it easier for someone to understand the privacy implications of your app, because they can understand the relationship between their intent and how your app uses their data. For more information, see [Foundations > Privacy](https://developer.apple.com/design/human-interface-guidelines/privacy) in the Human Interface Guidelines.
 
-##### Improve the power-efficiency of tasks in your app
+### Improve the power-efficiency of tasks in your app
 
 Prefer high-level frameworks that are optimized to make efficient use of hardware, over direct low-level access to hardware that might be harder to use efficiently. Follow guidance in the documentation for specific frameworks to use them efficiently.
 
-##### Use APIs efficiently
+### Use APIs efficiently
 
 Follow best-practice recommendations to use APIs in energy-efficient ways. The following articles present guidance for reducing energy use related to specific technologies.
 

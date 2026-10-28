@@ -13,7 +13,7 @@
 ComponentResult CallComponentRegister(ComponentInstance ci);
 ```
 
-#### Return Value
+## Return Value
 
 See the description of the `ComponentResult` data type.
 

@@ -25,7 +25,7 @@ convenience init(previousServerChangeToken: CKServerChangeToken?)
 - (instancetype) initWithPreviousServerChangeToken:(CKServerChangeToken *) previousServerChangeToken;
 ```
 
-#### Discussion
+## Discussion
 
 After creating the operation, assign a handler to the [`fetchDatabaseChangesCompletionBlock`](./fetchdatabasechangescompletionblock.md) property so that you can process the operation’s results.
 

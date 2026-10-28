@@ -20,7 +20,7 @@ The window duration of the extractor.
 let windowDuration: TimeInterval
 ```
 
-#### Discussion
+## Discussion
 
 The window duration should be greater than or equal to 0.5 seconds and less than or equal to 15.0 seconds.
 

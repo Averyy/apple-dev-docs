@@ -20,7 +20,7 @@ unowned(unsafe) var client: (any NSTextFinderClient)? { get set }
 @property (assign, nullable) id<NSTextFinderClient> client;
 ```
 
-#### Discussion
+## Discussion
 
 The `NSTextFinder` instance class must be associated with a client object that implements the NSTextFinderClient protocol in order to function. The client is responsible for providing the string to be searched, the location for the find bar, and the methods which control feedback to the user about the search results.
 

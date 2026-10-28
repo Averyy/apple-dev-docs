@@ -15,7 +15,7 @@ An instance of `DeviceMotionEvent` is created when significant change in motion 
 interface DeviceMotionEvent
 ```
 
-#### Overview
+## Overview
 
 The accelerometer measures the sum of two acceleration vectors: gravity and user acceleration. User acceleration is the acceleration that the user imparts to the device. Because the system is able to track the device’s attitude using both the gyroscope and the accelerometer, it can differentiate between gravity and user acceleration.
 

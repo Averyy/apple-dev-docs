@@ -17,11 +17,11 @@ Compute the outer product of two 1-D arrays, if the array’s passed are not 1-D
 func outer(_ a: MLXArray, _ b: MLXArray, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 Outer product
 
-##### See Also
+### See Also
 
 - [Arithmetic](./arithmetic.md)
 

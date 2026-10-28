@@ -23,7 +23,7 @@ var childForPreferredVerticalBarBehavior: UIViewController? { get }
 @property (nonatomic, readonly, nullable) UIViewController * childViewControllerForPreferredVerticalBarBehavior;
 ```
 
-#### Discussion
+## Discussion
 
 Return a child to defer the configuration to it, or `nil` to use the configuration provided by this view controller. The system container view controllers forward to their active content by default — `UINavigationController` to its top view controller, `UITabBarController` to its selected view controller — so a content view controller’s preference flows up to the window of the app or the nearest presentation.
 

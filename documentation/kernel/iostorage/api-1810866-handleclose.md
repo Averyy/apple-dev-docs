@@ -11,7 +11,7 @@ virtual void handleClose(
  IOOptionBitsoptions) = 0;
 ```
 
-#### Overview
+## Overview
 
 The handleClose method closes the client's access to this object.
 

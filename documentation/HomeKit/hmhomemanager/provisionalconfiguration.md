@@ -16,7 +16,7 @@ The configuration you use to create a temporary, provisional home for performing
 struct ProvisionalConfiguration
 ```
 
-#### Overview
+## Overview
 
 The `ProvisionalConfiguration` structure provides Thread network credentials and a pairing identity for the home hub that an installation service uses to configure a provisional home and later transfer it to the owner of the home.
 

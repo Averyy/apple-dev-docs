@@ -13,9 +13,9 @@ Expire a build or change its encryption exemption setting.
 
 - [App Store Connect API 3.0 release notes](./app-store-connect-api-3-0-release-notes.md)
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

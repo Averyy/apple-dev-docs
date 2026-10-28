@@ -10,7 +10,7 @@ Track scene state across different window types.
 - visionOS 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 This sample code project demonstrates managing the life cycle of multiple scene types. In visionOS, a person can close any scene of your application at any time. For applications that support multiple scenes, provide an affordance for the person to reopen the desired scene. This sample includes the following scenes:
 
@@ -20,7 +20,7 @@ This sample code project demonstrates managing the life cycle of multiple scene 
 
 [Video: A video of a person navigating between scenes.](https://developer.apple.com/tutorials/videos/com.apple.visionOS/sample-scenes-01-browser-window.mov)
 
-#### Manage the scene life cycle
+## Manage the scene life cycle
 
 In visionOS, calling [`onAppear(perform:)`](../SwiftUI/view/onappear%28perform%29.md) on the root view of a scene updates state when that scene opens. Similarly, the [`onDisappear(perform:)`](../SwiftUI/view/ondisappear%28perform%29.md) method updates the state when the system eliminates that scene. When a person closes a window in visionOS, the system backgrounds that scene. When another nonimmersive scene of the application is open, the system also immediately eliminates the backgrounded scene. The last closed nonimmersive scene enters the [`ScenePhase.background`](../SwiftUI/scenephase/background.md) phase but doesn’t immediately receive the [`onDisappear(perform:)`](../SwiftUI/view/ondisappear%28perform%29.md) callback. When a person reopens the application, the system launches the backgrounded scene. For more details on launch behavior, see [Customize window launch behavior](./adopting-best-practices-for-scene-restoration.md#Customize-window-launch-behavior).
 
@@ -43,7 +43,7 @@ var sphereLauncherWindowState: WindowState = .closed
 }
 ```
 
-#### Open the sphere launcher window
+## Open the sphere launcher window
 
 In the sample code, the `ControlsView` exists as an ornament on the `SphereVolume`. This view provides the controls to enlarge the content inside the volume and to open or close the sphere window.
 
@@ -58,7 +58,7 @@ Button("\(action) Sphere Launcher") {
 }
 ```
 
-#### Track the sphere window states
+## Track the sphere window states
 
 The `AppModel` contains a dictionary for each of the sphere models to store the associated window state of each volume.
 
@@ -95,7 +95,7 @@ if case .open = appModel.sphereVolumeStates[sphere.id] {
 }
 ```
 
-#### Restore scene state across launches
+## Restore scene state across launches
 
 Scene restoration is an important part of a seamless experience in visionOS. People expect content to persist where they place it. After restarting their device, they expect to pick up where they left off. This sample uses [`SceneStorage`](../SwiftUI/scenestorage.md) to restore the sphere size in `SphereVolume` and to restore the navigation location in the `SphereNavigationStack`.
 
@@ -118,7 +118,7 @@ The sample app stores the selected sphere using [`SceneStorage`](../SwiftUI/scen
 @SceneStorage("ContentView.selectedSphere") private var selectedSphereID: SphereModel.ID?
 ```
 
-#### Manage multiple window instances
+## Manage multiple window instances
 
 When the main window is a [`WindowGroup`](../SwiftUI/windowgroup.md), there are additional considerations because multiple instances of this window can be open at one time. The sample app uses [`openWindow`](../SwiftUI/environmentvalues/openwindow.md) to create a new scene with the default value of `UUID()`, allowing a person to have multiple windows for this scene ID.
 
@@ -144,9 +144,9 @@ if !appModel.navigationWindowScenes.isEmpty {
 }
 ```
 
-#### See Also
+## See Also
 
-##### Managing multiple scenes
+### Managing multiple scenes
 
 Explore these concepts further in the following samples, which use window state to hide controls and transfer controls between a window and an immersive space.
 

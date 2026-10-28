@@ -5,7 +5,7 @@
 
 Set flags on vImage operations to specify processing options.
 
-#### Overview
+## Overview
 
 You can pass multiple flags to a function by adding the flag values together. For example, to leave alpha unchanged and turn off tiling, you can pass:
 

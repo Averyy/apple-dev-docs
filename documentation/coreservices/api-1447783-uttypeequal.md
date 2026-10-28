@@ -25,7 +25,7 @@ func UTTypeEqual(_ inUTI1: CFString, _ inUTI2: CFString) -> Bool
 Boolean UTTypeEqual(CFStringRef inUTI1, CFStringRef inUTI2);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` if the two uniform type identifiers are equivalent.
 

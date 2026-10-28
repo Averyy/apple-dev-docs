@@ -25,11 +25,11 @@ func CGImageSourceCreateThumbnailAtIndex(_ isrc: CGImageSource, _ index: Int, _ 
 extern CGImageRefCGImageSourceCreateThumbnailAtIndex(CGImageSourceRef isrc, size_t index, CFDictionaryRef options);
 ```
 
-#### Return Value
+## Return Value
 
 The image at the specified index, or `NULL` if an error occurs. You are responsible for releasing the returned object using [`CGImageRelease`](../CoreGraphics/cgimagerelease.md).
 
-#### Discussion
+## Discussion
 
 If the image source is a PDF, this function creates a 72 dpi image of the PDF page specified by the index that you pass. You must, however, pass an options dictionary that contains either the [`kCGImageSourceCreateThumbnailFromImageIfAbsent`](./kcgimagesourcecreatethumbnailfromimageifabsent.md) or [`kCGImageSourceCreateThumbnailFromImageAlways`](./kcgimagesourcecreatethumbnailfromimagealways.md) keys, with the value of the key set to `true`.
 

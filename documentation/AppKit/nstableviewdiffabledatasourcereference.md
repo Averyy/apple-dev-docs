@@ -19,7 +19,7 @@ class NSTableViewDiffableDataSourceReference<SectionIdentifierType, ItemIdentifi
 @interface NSTableViewDiffableDataSource : NSObject
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  If you’re working in a Swift codebase, always use [`NSTableViewDiffableDataSource`](./nstableviewdiffabledatasource-c5gl.md) instead of `NSTableViewDiffableDataSourceReference`.
 

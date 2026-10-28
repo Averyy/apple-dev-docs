@@ -23,7 +23,7 @@ func setTitleTextAttributes(_ attributes: [NSAttributedString.Key : Any]?, for s
 - (void) setTitleTextAttributes:(NSDictionary<NSString *,id> *) attributes forState:(UIControlState) state;
 ```
 
-#### Discussion
+## Discussion
 
 The attributes dictionary can specify the font, text color, text shadow color, and text shadow offset for the title in the text attributes dictionary, using the keys in [`NSAttributedString.Key`](../../Foundation/nsattributedstring/key.md).
 

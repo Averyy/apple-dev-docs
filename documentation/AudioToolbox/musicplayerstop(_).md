@@ -24,11 +24,11 @@ func MusicPlayerStop(_ inPlayer: MusicPlayer) -> OSStatus
 extern OSStatus MusicPlayerStop(MusicPlayer inPlayer);
 ```
 
-#### Return Value
+## Return Value
 
 A result code
 
-#### Discussion
+## Discussion
 
 Music players must be explicitly stopped. Specifically, a music player does not automatically stop when its associated music sequence has been completely played.
 

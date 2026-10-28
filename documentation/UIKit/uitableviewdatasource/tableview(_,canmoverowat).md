@@ -23,11 +23,11 @@ optional func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexP
 - (BOOL) tableView:(UITableView *) tableView canMoveRowAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the row can be moved; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method allows the data source to specify that the reordering control for the specified row not be shown. By default, the reordering control is shown if the data source implements the [`tableView(_:moveRowAt:to:)`](./tableview%28_,moverowat,to%29.md) method.
 

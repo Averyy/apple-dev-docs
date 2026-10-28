@@ -16,11 +16,11 @@ Reports whether this app is the person’s default app in the given category.
 - (UIApplicationCategoryDefaultStatus) defaultStatusForCategory:(UIApplicationCategory) category error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 If the system could determine the status of the app, this method returns [`UIApplicationCategoryDefaultStatusIsDefault`](../uiapplicationcategorydefaultstatus/uiapplicationcategorydefaultstatusisdefault.md) if the app is the default app in the category, and [`UIApplicationCategoryDefaultStatusNotDefault`](../uiapplicationcategorydefaultstatus/uiapplicationcategorydefaultstatusnotdefault.md) otherwise. If the system couldn’t determine the status, or the app has exceeded the threshold rate for calling this method, it returns [`UIApplicationCategoryDefaultStatusUnavailable`](../uiapplicationcategorydefaultstatus/uiapplicationcategorydefaultstatusunavailable.md) and supplies more information about the problem in `error`.
 
-#### Discussion
+## Discussion
 
 To reduce the likelihood that users will face continuous requests to set a browser as their default, this API will only tell the browser app if it is the default once per year. If you call the method too frequently, it throws an error with the domain [`UIApplicationCategoryDefaultErrorDomain`](../uiapplicationcategorydefaulterrordomain.md) and the code [`rateLimited`](./categorydefaulterror/ratelimited.md). The error’s info dictionary contains these keys:
 

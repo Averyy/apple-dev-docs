@@ -25,7 +25,7 @@ func CTRunDelegateGetTypeID() -> CFTypeID
 extern CFTypeID CTRunDelegateGetTypeID();
 ```
 
-#### Discussion
+## Discussion
 
 The return type is a Core Foundation type (CTType).
 

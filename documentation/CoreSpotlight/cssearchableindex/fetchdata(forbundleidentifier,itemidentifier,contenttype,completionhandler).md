@@ -23,7 +23,7 @@ func fetchData(forBundleIdentifier bundleIdentifier: String, itemIdentifier: Str
 - (void) fetchDataForBundleIdentifier:(NSString *) bundleIdentifier itemIdentifier:(NSString *) itemIdentifier contentType:(UTType *) contentType completionHandler:(void (^)(NSData *, NSError *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Clients with the appropriate entitlements can use this method to fetch data from an external app such as Mail.
 

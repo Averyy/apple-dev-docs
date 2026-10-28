@@ -20,7 +20,7 @@ init(typeCode: OSType)
 + (NSAppleEventDescriptor *) descriptorWithTypeCode:(OSType) typeCode;
 ```
 
-#### Return Value
+## Return Value
 
 A descriptor with the specified type, or `nil` if an error occurs.
 

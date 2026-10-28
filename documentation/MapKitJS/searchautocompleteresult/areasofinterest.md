@@ -15,7 +15,7 @@ An array of common names of the area in which the place resides.
 areasOfInterest: string[] | null;
 ```
 
-#### Discussion
+## Discussion
 
 For example, the autocompletion results for the [`areasOfInterest`](./areasofinterest.md) for Golden Gate Park in San Francisco, CA include `["Lindley Meadow", "Golden Gate Park"]`.
 

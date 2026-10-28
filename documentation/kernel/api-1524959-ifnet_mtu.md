@@ -13,7 +13,7 @@
 u_int32_t ifnet_mtu(ifnet_t interface);
 ```
 
-#### Return Value
+## Return Value
 
 The MTU.
 

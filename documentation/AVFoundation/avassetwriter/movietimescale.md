@@ -24,7 +24,7 @@ var movieTimeScale: CMTimeScale { get set }
 @property (nonatomic) CMTimeScale movieTimeScale;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0`, which indicates that the asset writer chooses an appropriate value, if applicable.
 

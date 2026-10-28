@@ -32,7 +32,7 @@ var mediaItems: [INMediaItem]? { get }
 @property (atomic, copy, readonly, nullable) NSArray<INMediaItem *> * mediaItems;
 ```
 
-#### Discussion
+## Discussion
 
 A media item such as a song, TV show, or podcast episode. Although the array can contain more than one [`INMediaItem`](../inmediaitem.md) object, the system uses only the first item in the array. You set [`mediaItems`](./mediaitems.md) when creating the [`INSearchForMediaIntent`](../insearchformediaintent.md) object.
 

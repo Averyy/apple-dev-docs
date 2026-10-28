@@ -19,7 +19,7 @@ protocol QLPreviewPanelDelegate : NSWindowDelegate
 @protocol QLPreviewPanelDelegate <NSWindowDelegate>
 ```
 
-#### Overview
+## Overview
 
 You can implement these methods to perform custom tasks in response to events in the preview panel.
 

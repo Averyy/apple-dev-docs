@@ -19,7 +19,7 @@ func setPosition(_ position: CGFloat, ofDividerAt dividerIndex: Int)
 - (void) setPosition:(CGFloat) position ofDividerAtIndex:(NSInteger) dividerIndex;
 ```
 
-#### Discussion
+## Discussion
 
 One of the views adjacent to the divider may collapse because the method’s default implementation assumes a person is dragging the divider to the new location. The Auto Layout system collapses the view if it can’t satisfy the view’s constraints — typically imposed by its delegate — with the divider’s new location.
 

@@ -16,7 +16,7 @@ A structure that describes an app that a person requests permission to install.
 struct ExceptionRequest
 ```
 
-#### Overview
+## Overview
 
 When a person tries to install an app with an age rating beyond the maximum allowed for the device (see [`maximumAllowedAgeRating`](./maximumallowedagerating.md)), the framework tracks the request by adding an instance of this structure to the [`currentAgeExceptionRequests()`](./currentageexceptionrequests%28%29.md) list.
 

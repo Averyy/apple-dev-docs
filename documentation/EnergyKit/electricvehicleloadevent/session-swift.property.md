@@ -17,7 +17,7 @@ The session information.
 let session: ElectricVehicleLoadEvent.Session
 ```
 
-#### Discussion
+## Discussion
 
 An electric vehicle between charging or discharging sessions can be idling and load events must not be generated
 

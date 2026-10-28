@@ -24,7 +24,7 @@ func upgrade(_ item: FSItem, cacheMode: FSVolume.DataCacheMode, context: FSConte
 - (void) upgradeItem:(FSItem *) item cacheMode:(FSDataCacheMode) cacheMode context:(FSContext *) context replyHandler:(void (^)(FSUpgradeItemResult *result, NSError *error)) reply;
 ```
 
-#### Discussion
+## Discussion
 
 FSKit calls this method when transitioning to a cache mode that allows more aggressive caching.
 

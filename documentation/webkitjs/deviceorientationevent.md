@@ -15,7 +15,7 @@ Instances of the `DeviceOrientationEvent` class are fired only when the device h
 interface DeviceOrientationEvent
 ```
 
-#### Overview
+## Overview
 
 The angles of rotation—the [`alpha`](./deviceorientationevent/api-1629200-alpha.md), [`beta`](./deviceorientationevent/api-1631254-beta.md), and [`gamma`](./deviceorientationevent/api-1631656-gamma.md) properties—do not represent the real world orientation. They are defined as an offset from an arbitrary direction—typically, the direction in which the device was held when the orientation was first obtained. Therefore, you can only use the angles to track changes in orientation, you cannot derive the direction in which the device is currently facing. To track changes, save the first device orientation event and use it as a reference for subsequent values. If you want a real world heading, use the [webkitCompassHeading](./deviceorientationevent/api-1804777-webkitcompassheading.md) property.
 

@@ -19,7 +19,7 @@ var shouldPrintBackgrounds: Bool { get set }
 @property (nonatomic) BOOL shouldPrintBackgrounds;
 ```
 
-#### Discussion
+## Discussion
 
 Set to [`true`](../../Swift/true.md) if the web view should print backgrounds, otherwise [`false`](../../Swift/false.md).
 

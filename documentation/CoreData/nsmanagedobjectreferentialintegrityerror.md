@@ -25,7 +25,7 @@ var NSManagedObjectReferentialIntegrityError: Int { get }
 NSManagedObjectReferentialIntegrityError
 ```
 
-#### Discussion
+## Discussion
 
 The store is accessible, but the object corresponding to the fault cannot be found.
 

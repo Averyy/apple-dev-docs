@@ -6,12 +6,15 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.sa
 
 # mlx.core.savez_compressed
 
-**savez_compressed(*file: file | str | Path*, **args*, ***kwargs*)**
-: Save several arrays to a binary file in compressed `.npz` format.
+```python
+savez_compressed(file: file | str | Path, *args, **kwargs)
+```
 
-Parameters:
+Save several arrays to a binary file in compressed `.npz` format.
 
-**file** (*file**, *[str](https://docs.python.org/3/builtins/stdtypes.html#str)*, *[Path](https://docs.python.org/3/library/pathlib.html#pathlib.Path)) – Path to file to which the arrays are saved.
-***args** (*arrays*) – Arrays to be saved.
-****kwargs** (*arrays*) – Arrays to be saved. Each array will be saved
+**Parameters:**
+
+- **file** (*file*, [str](https://docs.python.org/3/builtins/stdtypes.html#str), [Path](https://docs.python.org/3/library/pathlib.html#pathlib.Path)) – Path to file to which the arrays are saved.
+- **\*args** (*arrays*) – Arrays to be saved.
+- **\*\*kwargs** (*arrays*) – Arrays to be saved. Each array will be saved
 with the associated keyword as the output file name.

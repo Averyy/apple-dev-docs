@@ -14,7 +14,7 @@ Returns X – Y if X > Y, or +0 if X <= Y.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Fortran Difference and Minimum (half)**:
 

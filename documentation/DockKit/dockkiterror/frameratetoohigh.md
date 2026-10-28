@@ -18,7 +18,7 @@ The call rate for the method is too frequent.
 case frameRateTooHigh
 ```
 
-#### Discussion
+## Discussion
 
 Reduce the number of times per second you call the method.
 

@@ -23,7 +23,7 @@ var kCTFontTableBhed: Int { get }
 kCTFontTableBhed
 ```
 
-#### Discussion
+## Discussion
 
 Font table tag for bitmap font header.
 

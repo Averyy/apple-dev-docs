@@ -5,7 +5,7 @@
 
 Compose complex layouts from primitive container views.
 
-#### Overview
+## Overview
 
 Individually, [`HStack`](./hstack.md), [`VStack`](./vstack.md), and [`ZStack`](./zstack.md) are simple views. [`HStack`](./hstack.md) positions views in a horizontal line, [`VStack`](./vstack.md) positions them in a vertical line, and [`ZStack`](./zstack.md) overlays views on top of one another.
 
@@ -13,7 +13,7 @@ Individually, [`HStack`](./hstack.md), [`VStack`](./vstack.md), and [`ZStack`](.
 
 When you initialize them with default parameters, stack views center align their content and insert a small amount of spacing between each contained view. But, when you combine and customize stacks with view modifiers, [`Spacer`](./spacer.md), and [`Divider`](./divider.md) views, you can create highly flexible and complex layouts.
 
-##### Plan your layout hierarchy
+### Plan your layout hierarchy
 
 Think about a layout in terms of how you might create it using the various types of stack views as you start to translate your design into code. Break down complex designs into smaller, simpler pieces you can build with stack views.
 
@@ -51,7 +51,7 @@ struct ProfileView: View {
 }
 ```
 
-##### Position views with alignment and spacer views
+### Position views with alignment and spacer views
 
 Align any contained views inside a stack view by using a combination of the `alignment` property, [`Spacer`](./spacer.md), and [`Divider`](./divider.md) views.
 
@@ -69,7 +69,7 @@ Use [`Spacer`](./spacer.md) views to align views along the primary axis of an [`
 
 [`Divider`](./divider.md) views also add space in between a stack’s subviews, but only insert enough space to draw a line across the stack’s minor axis. They don’t expand to fill available space.
 
-##### Create adaptive layouts instead of explicit layouts
+### Create adaptive layouts instead of explicit layouts
 
 Wherever possible, define structure and hierarchy rather than explicitly positioning view frames. Instead of using explicit heights and widths for views, let them expand to fill available space. Adaptive layouts that you build adapt more easily to different device sizes and platforms.
 
@@ -77,7 +77,7 @@ It is possible to create this article’s example layout with two stack views ra
 
 You may need to make adjustments to a layout that uses explicit adjustments by using view modifiers such as [`frame(width:height:alignment:)`](./view/frame%28width,height,alignment%29.md) or [`position(x:y:)`](./view/position%28x,y%29.md), but only consider this when you can’t achieve your desired layout in an adaptive, flexible way. For more information on making fine adjustments to view layout, see [Making fine adjustments to a view’s position](./making-fine-adjustments-to-a-view-s-position.md).
 
-##### Add depth in alternative ways
+### Add depth in alternative ways
 
 In some situations it may make sense to add depth to your layout by using the [`overlay(_:alignment:)`](./view/overlay%28_,alignment%29.md) and [`background(_:alignment:)`](./view/background%28_,alignment%29.md) view modifiers instead of a [`ZStack`](./zstack.md). The background view modifier places another view behind the view you’re modifying, and overlay places a view on top of it.
 

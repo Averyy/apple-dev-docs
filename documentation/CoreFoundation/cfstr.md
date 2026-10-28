@@ -21,11 +21,11 @@ Creates an immutable string from a constant compile-time string.
 #define CFSTR(cStr)
 ```
 
-#### Return Value
+## Return Value
 
 An immutable string, or `NULL` if there was a problem creating the object. The returned object is a constant. You may retain and release it, similar to other immutable CFString objects, but are not required to do so—it will remain valid until the program terminates.
 
-#### Discussion
+## Discussion
 
 The `CFSTR` macro is a convenient way to create CFString representations of constant compile-time strings.
 

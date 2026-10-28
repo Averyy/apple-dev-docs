@@ -21,7 +21,7 @@ Creates a `Stat` struct for the file referenced by this `FilePath` using the giv
 func stat(relativeTo fd: FileDescriptor, flags: Stat.Flags, retryOnInterrupt: Bool = true) throws(Errno) -> Stat
 ```
 
-#### Discussion
+## Discussion
 
 If `path` is absolute (starts with a forward slash), then `fd` is ignored. If `path` is relative, it is resolved against the directory given by `fd`.
 

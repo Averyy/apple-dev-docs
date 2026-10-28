@@ -27,7 +27,7 @@ class PKIdentityNationalIDCardDescriptor
 - [Requesting identity data from a Wallet pass](./requesting-identity-data-from-a-wallet-pass.md)
 - [Configuring your environment for the Verify with Wallet API](./configuring-your-environment-for-the-verify-with-wallet-api.md)
 
-#### Discussion
+## Discussion
 
 For the elements you request, the response contains the corresponding elements present in the user’s identity document. The table below maps the elements you request using [`PKIdentityElement`](./pkidentityelement.md) with the ISO and JP namespace in the response.
 

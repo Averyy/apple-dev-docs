@@ -25,7 +25,7 @@ var placeholder: String { get }
 @property (nonatomic, readonly) NSString * placeholder;
 ```
 
-#### Discussion
+## Discussion
 
 The `placeholder` property holds an empty value when it is the last component.
 

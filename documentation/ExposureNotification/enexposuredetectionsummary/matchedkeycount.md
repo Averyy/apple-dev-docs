@@ -23,7 +23,7 @@ var matchedKeyCount: UInt64 { get }
 @property (nonatomic, assign, readonly) uint64_t matchedKeyCount;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This property is available in iOS 12.5, and in iOS 13.5 and later.
 

@@ -25,7 +25,7 @@ var isSearching: Bool { get }
 @property (nonatomic, readonly, getter=isSearching) BOOL searching;
 ```
 
-#### Discussion
+## Discussion
 
 The search object sets the value of this property to [`true`](../../Swift/true.md) when you initiate a search. It remains in that state until the search object delivers search results (or an appropriate error), at which time the search object sets the value of the property to [`false`](../../Swift/false.md).
 

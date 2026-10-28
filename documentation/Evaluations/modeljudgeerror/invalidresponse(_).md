@@ -21,7 +21,7 @@ The evaluator can’t interpret the model judge’s response as a valid score.
 case invalidResponse(String)
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is the raw response text.
 

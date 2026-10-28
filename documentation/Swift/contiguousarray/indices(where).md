@@ -21,11 +21,11 @@ Returns the indices of all the elements that match the given predicate.
 func indices(where predicate: (Self.Element) throws -> Bool) rethrows -> RangeSet<Self.Index>
 ```
 
-#### Return Value
+## Return Value
 
 A set of the indices of the elements for which `predicate` returns `true`.
 
-#### Discussion
+## Discussion
 
 For example, you can use this method to find all the places that a vowel occurs in a string.
 

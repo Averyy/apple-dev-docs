@@ -24,7 +24,7 @@ case sourceAlphaSaturated
 MTLBlendFactorSourceAlphaSaturated
 ```
 
-#### Discussion
+## Discussion
 
 `F(rgb) = min(Source.a, 1 - Dest.a)`
 

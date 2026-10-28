@@ -15,7 +15,7 @@ The data and links that describe the versions of the Game Center leaderboard v2.
 object GameCenterLeaderboardV2.Relationships.Versions
 ```
 
-#### Overview
+## Overview
 
 - data:
 - links:

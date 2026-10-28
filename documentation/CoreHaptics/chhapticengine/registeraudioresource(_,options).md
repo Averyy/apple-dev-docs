@@ -28,11 +28,11 @@ func registerAudioResource(_ resourceURL: URL, options: [AnyHashable : Any] = [:
 
 - [Preparing your app to play haptics](../preparing-your-app-to-play-haptics.md)
 
-#### Return Value
+## Return Value
 
 An identifier for the audio resource.
 
-#### Discussion
+## Discussion
 
 Before you initialize a Core Haptics event with your own audio file, use this method to register the file with the engine. Reference external audio files using a URL.
 

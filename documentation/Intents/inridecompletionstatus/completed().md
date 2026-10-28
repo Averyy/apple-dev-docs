@@ -23,11 +23,11 @@ class func completed() -> Self
 + (instancetype) completed;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized [`INRideCompletionStatus`](../inridecompletionstatus.md) object.
 
-#### Discussion
+## Discussion
 
 This method sets the [`isCompleted`](./iscompleted.md) property of the returned object to [`true`](../../Swift/true.md), and it sets the [`isCanceled`](./iscanceled.md), [`isMissedPickup`](./ismissedpickup.md), and [`isOutstanding`](./isoutstanding.md) properties to [`false`](../../Swift/false.md).
 

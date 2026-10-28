@@ -25,7 +25,7 @@ typealias CMVideoCodecType = FourCharCode
 typedef FourCharCode CMVideoCodecType;
 ```
 
-#### Discussion
+## Discussion
 
 Certain codec types are also pixel formats.
 

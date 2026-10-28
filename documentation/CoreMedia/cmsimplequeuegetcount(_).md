@@ -25,7 +25,7 @@ func CMSimpleQueueGetCount(_ queue: CMSimpleQueue) -> Int32
 extern int32_t CMSimpleQueueGetCount(CMSimpleQueueRef queue);
 ```
 
-#### Return Value
+## Return Value
 
 The number of elements currently in the queue. Returns `0` if there is an error.
 

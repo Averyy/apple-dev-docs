@@ -5,7 +5,7 @@
 
 Set up your app’s life cycle and create its user interface with SwiftUI.
 
-#### Overview
+## Overview
 
 Develop powerful, personal apps for Apple Watch using SwiftUI, a declarative framework for building user interfaces on all of Apple’s platforms. You can create rich user interfaces by composing simple views — which perform a single, focused task — into larger, more complex layouts. Your app describes the correct layout for its views based on its current state. SwiftUI detects changes to the state and updates the views accordingly.
 
@@ -19,7 +19,7 @@ Additionally, you can preview your SwiftUI code in Xcode’s canvas. You can des
 
 SwiftUI also provides watch-specific representations of tab and navigation views, with fully customizable navigation bars and customizable toolbar items for confirmation, cancellation, and destructive actions. You can also use SwiftUI to manage your app’s life cycle. To learn more about SwiftUI, see [Introducing SwiftUI](https://developer.apple.com/tutorials/swiftui).
 
-##### Set up the root view
+### Set up the root view
 
 To manage your app’s life cycle with SwiftUI, create a structure that adopts the [`App`](../SwiftUI/app.md) protocol in your watchOS app target.
 
@@ -100,7 +100,7 @@ class NotificationController: WKUserNotificationHostingController<NotificationLo
 
 For more information, see [Customizing your long-look interface](./customizing-your-long-look-interface.md).
 
-##### Respond to app events in SwiftUI
+### Respond to app events in SwiftUI
 
 Your app can respond to many app events directly in SwiftUI.
 
@@ -111,7 +111,7 @@ SwiftUI also provides view modifiers for handling user activity and background t
 - Use [`onContinueUserActivity(_:perform:)`](../SwiftUI/view/oncontinueuseractivity%28_,perform%29.md) to handle incoming [`NSUserActivity`](../Foundation/nsuseractivity.md) objects. For more information, see [Handling User Activity](../WatchKit/handling-user-activity.md).
 - Use [`backgroundTask(_:action:)`](../SwiftUI/scene/backgroundtask%28_,action%29.md) to handle incoming [`BackgroundTask`](../SwiftUI/backgroundtask.md) instances. For more information, see [Using background tasks](../WatchKit/using-background-tasks.md).
 
-##### Respond to app events using an app delegate
+### Respond to app events using an app delegate
 
 You need an app delegate to handle the following events:
 

@@ -20,7 +20,7 @@ A container that holds the position and orientation of each joint in a single an
 struct SkeletalPose
 ```
 
-#### Overview
+## Overview
 
 Each index in [`jointNames`](./skeletalpose/jointnames.md) directly corresponds to the same index in [`jointTransforms`](./skeletalpose/jointtransforms.md), linking each joint name to its respective transform.
 

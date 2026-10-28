@@ -22,7 +22,7 @@ Creates a new instance from the given value, if it can be represented exactly.
 init?<Source>(exactly value: Source) where Source : BinaryFloatingPoint
 ```
 
-#### Discussion
+## Discussion
 
 If the given floating-point value cannot be represented exactly, the result is `nil`. A value that is NaN (“not a number”) cannot be represented exactly if its payload cannot be encoded exactly.
 

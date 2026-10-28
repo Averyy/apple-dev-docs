@@ -19,11 +19,11 @@ object Springy
 
 - [About Component Behaviors](../AppleNews/about-component-behaviors.md)
 
-#### Discussion
+## Discussion
 
 When you apply the `Springy` behavior to a component, the component behaves as if it’s held in place with a short spring, as shown in [this video](https://developer.apple.com/apple-news/videos/springy.mp4).
 
-##### Example
+### Example
 
 ```json
 {

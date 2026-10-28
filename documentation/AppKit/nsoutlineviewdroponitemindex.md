@@ -19,7 +19,7 @@ var NSOutlineViewDropOnItemIndex: Int { get }
 NSOutlineViewDropOnItemIndex
 ```
 
-#### Discussion
+## Discussion
 
 In this case, the drop will happen directly on the target item.
 

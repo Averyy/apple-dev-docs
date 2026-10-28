@@ -19,7 +19,7 @@ int64 renewalPrice
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Discussion
+## Discussion
 
 This value represents the renewal price, in milliunits of the [`currency`](./currency.md), of the auto-renewable subscription. One unit of the currency equals 1000 milliunits.
 

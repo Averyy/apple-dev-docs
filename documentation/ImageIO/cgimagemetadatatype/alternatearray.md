@@ -25,7 +25,7 @@ case alternateArray
 kCGImageMetadataTypeAlternateArray
 ```
 
-#### Discussion
+## Discussion
 
 During serialization, this type becomes `<rdf:Alt>` in the XMP format.
 

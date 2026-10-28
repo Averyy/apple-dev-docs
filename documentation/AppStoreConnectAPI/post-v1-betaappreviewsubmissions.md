@@ -13,7 +13,7 @@ Submit an app for beta app review to allow external testing.
 
 - [Uploading and versioning Apple hosted background assets](./managing-apple-hosted-background-assets.md)
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  Before submitting to beta app review, you need to add a description for all `betaAppLocalizations`. To add a description, use [`Modify a beta app localization`](./patch-v1-betaapplocalizations-_id_.md).
 

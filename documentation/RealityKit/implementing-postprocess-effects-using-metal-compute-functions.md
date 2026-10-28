@@ -5,7 +5,7 @@
 
 Create custom shaders to implement postprocess effects.
 
-#### Overview
+## Overview
 
 In iOS 15 and later, and macOS 12 and later, you can apply postprocess effects to a RealityKit scene after RealityKit renders it, but before RealityKit displays it. If you register a postprocess callback function, RealityKit passes that function the complete, rendered frame so you can modify it before the viewer sees it. You can use any image-processing or drawing APIs on the rendered frame but, as a practical matter, only APIs that execute on the GPU are fast enough to use every frame and maintain a good framerate.
 
@@ -13,11 +13,11 @@ One way to implement postprocess effects is to write custom Metal compute functi
 
 You can also implement many common postprocessing effects without writing your own compute functions by using image filters from the [Metal Performance Shaders](../MetalPerformanceShaders/MetalPerformanceShaders.md) framework or [Core Image](../CoreImage/CoreImage.md), which also run on the GPU. For information on using the Metal Performance Shaders framework for postprocess effects, see [Using Metal performance shaders to create custom postprocess effects](./using-metal-performance-shaders-to-create-custom-postprocess-effects.md). For information on using Core Image for postprocess effects, see [Applying core image filters as a postprocess effect](./applying-core-image-filters-as-a-postprocess-effect.md).
 
-##### Check the output texture pixel format
+### Check the output texture pixel format
 
 Some device GPUs require that the output texture be in a specific pixel format. If the device your code is running on doesn’t support [`MTLGPUFamily.apple2`](../Metal/mtlgpufamily/apple2.md), convert the output texture to [`MTLPixelFormat.bgra8Unorm`](../Metal/mtlpixelformat/bgra8unorm.md) before using it. For more information, see [Checking the pixel format of a postprocess effect’s output texture](./checking-the-pixel-format-of-a-postprocess-effect-s-output-texture.md).
 
-##### Write a compute function
+### Write a compute function
 
 Add a new file to your Xcode project using the Metal File template. It doesn’t matter what filename you choose because Metal loads compute functions by the function name. As long as you include the file that contains the compute function in your build target, Metal is able to find and load it at runtime. A postprocess compute function executes once for each pixel in the rendered scene and is responsible for setting the final color of its pixel.
 
@@ -44,7 +44,7 @@ void postProcessInvert(uint2 gid [[thread_position_in_grid]],
 
 > **Note**: For more information on writing postprocess compute functions, see [Combining blit and compute operations in a single pass](../Metal/combining-blit-and-compute-operations-in-a-single-pass.md).
 
-##### Load the compute function
+### Load the compute function
 
 To use the Metal compute function in your [`postProcess`](./arview/rendercallbacks-swift.struct/postprocess.md) render callback, retrieve the default [`MTLLibrary`](../Metal/mtllibrary.md), then load your compute function and store the resulting [`MTLRenderPipelineState`](../Metal/mtlrenderpipelinestate.md) object. Load the pipeline state object during startup and store it in a property because you’ll need it in your postprocess callback. A good place to create and store it is in a [`prepareWithDevice`](./arview/rendercallbacks-swift.struct/preparewithdevice.md) render callback, which RealityKit calls once it has finished its setup but before it renders the next frame and passes it a reference to the [`MTLDevice`](../Metal/mtldevice.md) where the scene displays. If you assign the callback during app startup, RealityKit calls your method before it renders the first frame.
 
@@ -69,7 +69,7 @@ To make RealityKit call your function, assign it to the [`prepareWithDevice`](./
 arView.renderCallbacks.postProcess = loadPostprocessingShader
 ```
 
-##### Create a postprocess callback function
+### Create a postprocess callback function
 
 To apply the compute function to the rendered scene, create a callback function that takes a single [`ARView.PostProcessContext`](./arview/postprocesscontext.md) argument and has no return value. In that function, use the command buffer passed in the context to create an [`MTLComputeCommandEncoder`](../Metal/mtlcomputecommandencoder.md), and assign the pipeline state property you created to that encoder using [`setComputePipelineState(_:)`](../Metal/mtlindirectcomputecommand/setcomputepipelinestate%28_%29.md).
 
@@ -105,7 +105,7 @@ func postProcess(context: ARView.PostProcessContext) {
 
 > **Note**: The `compatibleTargetTexture` property referenced above is a derived property based on [`targetColorTexture`](./arview/postprocesscontext/targetcolortexture.md). It ensures that the output texture uses the appropriate pixel format for the current device. For more information, see [Checking the pixel format of a postprocess effect’s output texture](./checking-the-pixel-format-of-a-postprocess-effect-s-output-texture.md).
 
-##### Register the callback function
+### Register the callback function
 
 To apply the effect, register the function as the [`postProcess`](./arview/rendercallbacks-swift.struct/postprocess.md) render callback for the [`ARView`](./arview.md).
 

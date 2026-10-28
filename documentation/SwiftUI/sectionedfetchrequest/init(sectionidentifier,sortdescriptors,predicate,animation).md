@@ -31,7 +31,7 @@ Available when `SectionIdentifier` conforms to `Hashable` and `Result` inherits 
 @preconcurrency init(sectionIdentifier: KeyPath<Result, SectionIdentifier>, sortDescriptors: [SortDescriptor<Result>], predicate: NSPredicate? = nil, animation: Animation? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 The request gets the entity type from the `Result` instance by calling that managed object’s [`entity()`](../../CoreData/nsmanagedobject/entity%28%29.md) type method. If you need to specify the entity type explicitly, use the [`init(entity:sectionIdentifier:sortDescriptors:predicate:animation:)`](./init%28entity,sectionidentifier,sortdescriptors,predicate,animation%29.md) initializer instead. If you need more control over the fetch request configuration, use [`init(fetchRequest:sectionIdentifier:animation:)`](./init%28fetchrequest,sectionidentifier,animation%29.md). For value type sort descriptors, use [`init(sectionIdentifier:sortDescriptors:predicate:animation:)`](./init%28sectionidentifier,sortdescriptors,predicate,animation%29.md).
 

@@ -18,7 +18,7 @@ Tells the delegate that the reader session is active.
 func tagReaderSessionDidBecomeActive(_ session: NFCTagReaderSession)
 ```
 
-#### Discussion
+## Discussion
 
 The reader session calls this method after the device begins scanning for new tags.
 

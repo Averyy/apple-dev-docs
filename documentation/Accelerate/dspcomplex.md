@@ -30,7 +30,7 @@ typedef struct DSPComplex { ... } DSPComplex;
 - [Controlling vDSP operations with stride](./controlling-vdsp-operations-with-stride.md)
 - [Performing Fourier transforms on interleaved-complex data](./performing-fourier-transforms-on-interleaved-complex-data.md)
 
-#### Overview
+## Overview
 
 Complex data are stored as ordered pairs of floating-point numbers. Because they are stored as ordered pairs, complex vectors require address strides that are multiples of two.
 

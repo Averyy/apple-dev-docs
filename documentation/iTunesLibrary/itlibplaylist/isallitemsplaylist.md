@@ -22,7 +22,7 @@ var isAllItemsPlaylist: Bool { get }
 @property (nonatomic, assign, readonly, getter=isAllItemsPlaylist) BOOL allItemsPlaylist;
 ```
 
-#### Discussion
+## Discussion
 
 This property always returns [`true`](../../Swift/true.md).
 

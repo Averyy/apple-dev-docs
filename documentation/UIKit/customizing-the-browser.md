@@ -5,15 +5,15 @@
 
 Customize the document browser’s look and behavior.
 
-#### Overview
+## Overview
 
 You can set the browser’s appearance, create document thumbnails, and modify the browser’s behavior.
 
-##### Set the browser’s appearance
+### Set the browser’s appearance
 
 Change the browser’s appearance by setting the [`browserUserInterfaceStyle`](./uidocumentbrowserviewcontroller/browseruserinterfacestyle-swift.property.md) property. The document browser view controller supports white, light, and dark appearances.
 
-##### Create document thumbnails or icons
+### Create document thumbnails or icons
 
 The system automatically provides thumbnails or icons for supported document types. If your app uses a custom or third-party document type, you can create a Thumbnail extension for that type. For more information, see [`QLThumbnailProvider`](../QuickLookThumbnailing/qlthumbnailprovider.md).
 
@@ -32,13 +32,13 @@ Your app’s icon only appears in the Files app or document browser when all of 
 - The user hasn’t installed a Thumbnail extension for the Uniform Type Identifier.
 - Your app both declares document type support for the Uniform Type Identifier and declares it as an exported or imported type.
 
-##### Add document previews
+### Add document previews
 
 The system automatically provides previews for supported document types. If your app uses a custom or third-party document type, you can create a Preview extension for that type.
 
 For more information, see [Quick Look](../Quartz/quick-look.md).
 
-##### Modify the browser’s behavior
+### Modify the browser’s behavior
 
 You can control the following behaviors:
 
@@ -46,7 +46,7 @@ You can control the following behaviors:
 - Whether the browser opens multiple files at the same time
 - Whether the browser creates new documents
 
-###### Set allowed document types
+#### Set allowed document types
 
 You set the list of allowed document types when you create the browser. Pass an array of Uniform Type Identifier strings to the [`UIDocumentBrowserViewController`](./uidocumentbrowserviewcontroller.md) class’s [`init(forOpeningFilesWithContentTypes:)`](./uidocumentbrowserviewcontroller/init%28foropeningfileswithcontenttypes%29.md) method. If you pass `nil`, the browser uses the document types specified by the [`CFBundleDocumentTypes`](../BundleResources/information-property-list/cfbundledocumenttypes.md) key in the app’s `Info.plist` file.
 
@@ -58,11 +58,11 @@ The following example programmatically creates a document browser for `.txt` fil
 let browser = UIDocumentBrowserViewController(forOpeningFilesWithContentTypes: ["public.plain-text"])
 ```
 
-###### Enable multiple document selection
+#### Enable multiple document selection
 
 By default, users can select only one item at a time. To enable multiple document selection, set the document browser’s [`allowsPickingMultipleItems`](./uidocumentbrowserviewcontroller/allowspickingmultipleitems.md) property to [`true`](../Swift/true.md).
 
-###### Enable new document creation
+#### Enable new document creation
 
 To let users create new documents, you must do the following:
 

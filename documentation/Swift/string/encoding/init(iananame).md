@@ -21,7 +21,7 @@ Creates an instance from the name of the IANA registry “charset”.
 init?(ianaName charsetName: String)
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: The given name is compared to each IANA “charset” name with ASCII case-insensitive collation to determine which encoding is suitable.
 

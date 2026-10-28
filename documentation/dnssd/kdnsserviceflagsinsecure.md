@@ -23,7 +23,7 @@ var kDNSServiceFlagsInsecure: UInt32 { get }
 kDNSServiceFlagsInsecure
 ```
 
-#### Discussion
+## Discussion
 
 A chain of trust cannot be built starting from a known trust anchor to the response.
 

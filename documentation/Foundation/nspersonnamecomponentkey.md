@@ -23,7 +23,7 @@ let NSPersonNameComponentKey: String
 extern NSString * const NSPersonNameComponentKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSString`](./nsstring.md) constant identifying the personal name component represented in the attribute range. For possible values, see [Attributed String Components](./attributed-string-components.md).
 

@@ -15,7 +15,7 @@ The data that describes the leaderboard of the Game Center challenge.
 object GameCenterChallengeCreateRequest.Data.Relationships.LeaderboardV2
 ```
 
-#### Overview
+## Overview
 
 - data:
 

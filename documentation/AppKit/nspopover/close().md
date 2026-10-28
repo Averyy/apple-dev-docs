@@ -19,7 +19,7 @@ func close()
 - (void) close;
 ```
 
-#### Discussion
+## Discussion
 
 Any popovers nested within the popovers will also receive a [`close()`](./close%28%29.md) message. When a window is closed in response to the [`close()`](../nswindow/close%28%29.md) message being sent, all of its popovers are closed. The popover animates out when closed unless the [`animates`](./animates.md) property is set to [`false`](../../Swift/false.md).
 

@@ -23,7 +23,7 @@ struct MPMovieMediaTypeMask
 enum MPMovieMediaTypeMask : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 You can OR the specified constants together to specify a movie.
 

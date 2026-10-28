@@ -25,7 +25,7 @@ var timeZone: TimeZone? { get set }
 @property (nonatomic, copy, nullable) NSTimeZone * timeZone;
 ```
 
-#### Discussion
+## Discussion
 
 When you search for map items, MapKit populates this field with the time zone information as a convenience. You may also set the time zone for any map items you create.
 

@@ -24,7 +24,7 @@ static let linear: CAAnimationCalculationMode
 extern CAAnimationCalculationMode const kCAAnimationLinear;
 ```
 
-#### Discussion
+## Discussion
 
 The following code shows how to create a keyframe animation object using linear interpolation.
 

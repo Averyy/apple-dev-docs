@@ -14,11 +14,11 @@ CMError CMCountProfileElements (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 Every element in the profile outside the header is counted. A profile may contain tags that are references to other elements. These tags are included in the count. 
 

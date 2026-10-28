@@ -20,7 +20,7 @@ Creates a dynamic light shadow component.
 init(castsShadow: Bool)
 ```
 
-#### Discussion
+## Discussion
 
 By default, the component makes an entity to stop casting shadows from dynamic lights.
 

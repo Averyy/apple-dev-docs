@@ -21,7 +21,7 @@ An interface that enables manipulating the scale, rotation, and translation of a
 @preconcurrency protocol HasTransform : Entity
 ```
 
-#### Overview
+## Overview
 
 All entities automatically adopt this protocol because the [`Entity`](./entity.md) base class does. This adoption gives all entities a [`Transform`](./transform.md) component, and a collection of methods for manipulating the component, that you use to position the entity in space.
 

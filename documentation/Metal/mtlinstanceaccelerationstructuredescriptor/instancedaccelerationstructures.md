@@ -24,7 +24,7 @@ var instancedAccelerationStructures: [any MTLAccelerationStructure]? { get set }
 @property (nonatomic, retain, nullable) NSArray<id<MTLAccelerationStructure>> * instancedAccelerationStructures;
 ```
 
-#### Discussion
+## Discussion
 
 Each instance in the instance descriptor buffer has an index into this array, specifying which acceleration structure to use for that instance.
 

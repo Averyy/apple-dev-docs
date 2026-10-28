@@ -29,7 +29,7 @@ func setAliroReaderConfigWith(_ params: MTRDoorLockClusterSetAliroReaderConfigPa
 - (void) setAliroReaderConfigWithParams:(MTRDoorLockClusterSetAliroReaderConfigParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This command allows communicating an Aliro Reader configuration, as defined in Aliro, to the lock.
 

@@ -25,11 +25,11 @@ func localizedString(forLocaleIdentifier localeIdentifier: String) -> String
 - (NSString *) localizedStringForLocaleIdentifier:(NSString *) localeIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 The localized name of the locale.
 
-#### Discussion
+## Discussion
 
 For example, calling this method on an American English (`en_US`) locale, passing `"fr_FR"` for `localeIdentifier`, produces the string `"French (France)"`.
 

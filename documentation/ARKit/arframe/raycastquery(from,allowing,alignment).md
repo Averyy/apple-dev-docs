@@ -20,7 +20,7 @@ func raycastQuery(from point: CGPoint, allowing target: ARRaycastQuery.Target, a
 - (ARRaycastQuery *) raycastQueryFromPoint:(CGPoint) point allowingTarget:(ARRaycastTarget) target alignment:(ARRaycastTargetAlignment) alignment;
 ```
 
-#### Discussion
+## Discussion
 
 To cast the ray, you pass the resulting query to your current session via [`raycast(_:)`](../arsession/raycast%28_%29.md) or [`trackedRaycast(_:updateHandler:)`](../arsession/trackedraycast%28_,updatehandler%29.md).
 

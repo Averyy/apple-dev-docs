@@ -3,7 +3,7 @@
 **Framework**: IOKit  
 **Role**: API Collection
 
-#### Overview
+## Overview
 
 IOHIDManager defines an Human Interface Device (HID) management object. It provides global interaction with managed HID devices such as discovery/removal and receiving input events. IOHIDManager is also a CFType object and as such conforms to all the conventions expected such object.
 
@@ -11,7 +11,7 @@ This documentation assumes that you have a basic understanding of the material c
 
 All of the information described in this document is contained in the header file `IOHIDManager.h` found at `/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDManager.h`.
 
-##### Included Headers
+### Included Headers
 
 - <IOKit/IOTypes.h>
 - <IOKit/IOReturn.h>

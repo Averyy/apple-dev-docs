@@ -15,11 +15,11 @@ Retains a Core Video OpenGL buffer.
 extern CVOpenGLBufferRefCVOpenGLBufferRetain(CVOpenGLBufferRef buffer);
 ```
 
-#### Return Value
+## Return Value
 
 For convenience, the OpenGL buffer that was retained.
 
-#### Discussion
+## Discussion
 
 This function is equivalent to `CFRetain`, but is `NULL` safe.
 

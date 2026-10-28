@@ -19,7 +19,7 @@ var maxValue: Double { get set }
 @property double maxValue;
 ```
 
-#### Discussion
+## Discussion
 
 The maximum value is dependent on the style of the control. For continuous styles, the default value of this property is `100.0`. For discrete styles, the default maximum value is `5.0`.
 

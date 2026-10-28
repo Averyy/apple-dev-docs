@@ -22,7 +22,7 @@ let kCFProxyAutoConfigurationURLKey: CFString
 extern CFStringRef const kCFProxyAutoConfigurationURLKey;
 ```
 
-#### Discussion
+## Discussion
 
 A `CFURL` value specifying the location of the proxy autoconfiguration (PAC) file. This key is only present for proxies of type `kCFProxyTypeAutoConfigurationURL`.
 

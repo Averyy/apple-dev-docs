@@ -15,7 +15,7 @@ The line item identifier of another transaction, that the report  references.
 string referenceLineItemId
 ```
 
-#### Discussion
+## Discussion
 
 Maximum length: 128
 

@@ -12,7 +12,7 @@ Signature for the block executed when `ALAssetsLibrary/writeImage(toSavedPhotosA
 typedef void (^)(NSURL *, NSError *) ALAssetsLibraryWriteImageCompletionBlock;
 ```
 
-#### Discussion
+## Discussion
 
 The block parameters are defined as follows:
 

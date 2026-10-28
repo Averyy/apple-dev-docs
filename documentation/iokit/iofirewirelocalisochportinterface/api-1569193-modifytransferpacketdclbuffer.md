@@ -16,11 +16,11 @@ NOT IMPLEMENTED. Modify the transfer size of a transfer packet DCL (send or rece
 IOReturn (*ModifyTransferPacketDCLBuffer)(IOFireWireLibLocalIsochPortRef self, DCLTransferPacket *inDCL, void *buffer);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess on success. Will return an error if the range specified by [buffer, buffer+size] is not in the range of memory locked down for this program.
 
-#### Discussion
+## Discussion
 
 NOT IMPLEMENTED. Allows you to modify transfer packet DCLs after they have been compiled and while the DCL program is still running. The buffer can be set to be any location within the range of buffers specified when the DCL program was compiled (including 0). Availability: IOFireWireLocalIsochPortInterface_v3 and newer.
 

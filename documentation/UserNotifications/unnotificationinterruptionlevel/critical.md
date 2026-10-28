@@ -25,7 +25,7 @@ case critical
 UNNotificationInterruptionLevelCritical
 ```
 
-#### Discussion
+## Discussion
 
 This interruption level requires an approved entitlement. The system always presents this notification, even when Do Not Disturb is active. If your app doesn’t assign a sound to this notification, the system uses the default critical alert sound.
 

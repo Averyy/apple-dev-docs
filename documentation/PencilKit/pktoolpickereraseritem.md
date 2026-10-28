@@ -23,7 +23,7 @@ class PKToolPickerEraserItem
 @interface PKToolPickerEraserItem : PKToolPickerItem
 ```
 
-#### Overview
+## Overview
 
 An eraser item represents a [`PKEraserTool`](./pkerasertool-swift.struct.md) — a tool for erasing content in a canvas view — in a [`PKToolPicker`](./pktoolpicker.md).
 

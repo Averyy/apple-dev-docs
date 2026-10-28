@@ -28,7 +28,7 @@ var allowGPUOptimizedContents: Bool { get set }
 
 - [Optimizing texture data](../optimizing-texture-data.md)
 
-#### Discussion
+## Discussion
 
 The default value is `true`, which means that the Metal device is allowed to adjust the private layout of the texture in memory to improve GPU performance. For a shared or managed texture, this optimization can cause slower performance when accessing the texture from the CPU. Setting this property to `false` improves CPU performance at the cost of some GPU performance.
 

@@ -20,7 +20,7 @@ var event: es_events_t
 es_events_t event;
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`event_type`](./event_type.md) property to determine which member of this [`es_events_t`](../es_events_t.md) union is available. For example, if the type is [`ES_EVENT_TYPE_NOTIFY_FORK`](../es_event_type_notify_fork.md), use the [`fork`](../es_events_t/fork.md) member.
 

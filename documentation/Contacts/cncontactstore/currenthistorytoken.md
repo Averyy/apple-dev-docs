@@ -24,7 +24,7 @@ var currentHistoryToken: Data? { get }
 @property (nonatomic, copy, readonly, nullable) NSData * currentHistoryToken;
 ```
 
-#### Discussion
+## Discussion
 
 When fetching contacts or change history events, use the token on [`CNFetchResult`](../cnfetchresult.md) instead.
 

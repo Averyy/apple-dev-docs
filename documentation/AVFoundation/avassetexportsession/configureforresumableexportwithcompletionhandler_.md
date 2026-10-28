@@ -20,7 +20,7 @@ Attempts to configure the export session into resumption mode.
 - (void) configureForResumableExportWithCompletionHandler:(void (^)(AVAssetExportSessionResumptionState *resumptionState)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 For select encoders, an export can be performed in temporal segments, and then stitched together at the end.
 

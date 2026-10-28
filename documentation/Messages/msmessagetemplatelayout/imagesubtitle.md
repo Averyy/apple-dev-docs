@@ -21,7 +21,7 @@ var imageSubtitle: String? { get set }
 @property (nonatomic, copy, nullable) NSString * imageSubtitle;
 ```
 
-#### Discussion
+## Discussion
 
 The subtitle is drawn using white text, just below the title. This property defaults to `nil`.
 

@@ -21,7 +21,7 @@ case invalidWinningPostbackCount
 SKAdTestErrorCodeInvalidWinningPostbackCount
 ```
 
-#### Discussion
+## Discussion
 
 A valid session has one or three winning postbacks.
 

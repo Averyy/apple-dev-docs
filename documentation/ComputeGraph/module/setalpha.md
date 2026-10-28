@@ -16,7 +16,7 @@ Sets the alpha (opacity) value of an element.
 void module::setAlpha(half alpha)
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to control the transparency of an element without modifying its RGB color components.
 

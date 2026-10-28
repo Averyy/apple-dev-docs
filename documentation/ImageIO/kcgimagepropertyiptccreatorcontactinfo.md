@@ -25,7 +25,7 @@ let kCGImagePropertyIPTCCreatorContactInfo: CFString
 extern CFStringRef const kCGImagePropertyIPTCCreatorContactInfo;
 ```
 
-#### Discussion
+## Discussion
 
 For a list of keys to include in the contact dictionary, see [IPTC Creator Contact Info Dictionary Keys](./iptc-creator-contact-info-dictionary-keys.md).
 

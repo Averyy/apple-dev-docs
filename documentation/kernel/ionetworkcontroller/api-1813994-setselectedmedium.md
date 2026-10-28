@@ -12,11 +12,11 @@ virtual bool setSelectedMedium(
  const IONetworkMedium *medium);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the property table update was successful, false if the update failed, or if the medium provided does not match any entry from the published medium dictionary.
 
-#### Overview
+## Overview
 
 After the driver has configured the hardware to select one of its supported media types, it must call this method to inform its parent about the change that has occurred. IONetworkController will update a property in the registry to reflect the current selection.
 

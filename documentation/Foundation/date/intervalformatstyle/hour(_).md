@@ -21,11 +21,11 @@ Modifies the date interval format style to use the specified hour format style.
 func hour(_ format: Date.IntervalFormatStyle.Symbol.Hour = .defaultDigits(amPM: .abbreviated)) -> Date.IntervalFormatStyle
 ```
 
-#### Return Value
+## Return Value
 
 A date interval format style that includes the specified hour style.
 
-#### Discussion
+## Discussion
 
 The values of `Date.FormatStyle.Symbol.Hour` are `defaultDigitsNoAMPM` and `twoDigitsNoAMPM`.
 

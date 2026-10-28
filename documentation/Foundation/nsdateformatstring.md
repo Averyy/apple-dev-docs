@@ -17,7 +17,7 @@ Key for the format string that specifies how dates are printed using the date fo
 extern NSString * const NSDateFormatString;
 ```
 
-#### Discussion
+## Discussion
 
 The default is to use weekday names with full month names and full years, as in “Saturday, March 24, 2001.”
 

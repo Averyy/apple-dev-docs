@@ -15,7 +15,7 @@
 extern NSString * const NSPrintFormName;
 ```
 
-#### Discussion
+## Discussion
 
 Deprecated. Do not use.
 

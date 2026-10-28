@@ -25,7 +25,7 @@ var originalTransactionIdentifier: Int { get }
 @property (nonatomic, readonly) NSUInteger originalTransactionIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 For subscription renewals, or if you restore a purchase, the [`originalTransactionIdentifier`](./originaltransactionidentifier.md) is the original transaction for that subscription or Apple In-App Purchase.
 

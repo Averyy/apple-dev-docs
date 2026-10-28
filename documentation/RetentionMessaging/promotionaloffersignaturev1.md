@@ -15,7 +15,7 @@ The promotional-offer signature you generate using an earlier signature version.
 object promotionalOfferSignatureV1
 ```
 
-#### Discussion
+## Discussion
 
 To provide a promotional-offer retention message, you need to cryptographically sign the offer and include it in the [`promotionalOffer`](./promotionaloffer.md) parameter of your [`RealtimeResponseBody`](./realtimeresponsebody.md) response.
 

@@ -15,7 +15,7 @@ Returns the selection in the record list as an array of ABGroup or `ABPerson C` 
 extern CFArrayRefABPickerCopySelectedRecords(ABPickerRef inPicker);
 ```
 
-#### Return Value
+## Return Value
 
 An array with the groups or records selected in the record list.
 

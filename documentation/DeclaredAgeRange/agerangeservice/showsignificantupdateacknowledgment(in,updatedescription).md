@@ -18,7 +18,7 @@ Displays a system-provided interface for people to acknowledge a significant app
 func showSignificantUpdateAcknowledgment(in windowScene: UIWindowScene, updateDescription: String) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Call this function to inform people that your app has undergone a significant change that requires their acknowledgment. For more information on what constitutes a significant app change, refer to [`SignificantAppUpdateTopic`](../../PermissionKit/significantappupdatetopic.md).
 

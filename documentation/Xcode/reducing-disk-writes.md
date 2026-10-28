@@ -5,19 +5,19 @@
 
 Improve your app’s responsiveness by optimizing how it writes data to permanent storage.
 
-#### Overview
+## Overview
 
 All iOS devices and some macOS devices use a solid-state drive (SSD) for permanent storage. Accessing your data on SSD, or any long-term storage media, is slow compared to RAM. In addition, the system can only write to the same region of SSD a limited number of times before that region wears out.
 
 Use Xcode and Instruments to understand your app’s disk-writing performance, including the total amount of data written, the size of writes, excessive storage write exceptions, and other possible optimizations.
 
-##### Optimize SSD access
+### Optimize SSD access
 
 When the system writes to a block on the SSD, new read requests for that block are queued until the write operation completes. Writing to an SSD is a slower operation than reading. Interleaving read and write requests can slow your app’s performance.
 
 Optimize your app’s performance by reducing the number of write operations to an SSD. For example, create temporary files in a cache in the RAM whenever possible.
 
-##### Eliminate excessive write operations
+### Eliminate excessive write operations
 
 The system throws an exception and generates a report when the disk writes from your app exceed a certain threshold in a 24-hour period. View the aggregated exception logs for a version of your app in the Disk Writes pane in Xcode Organizer or capture them with [MetricKit](../MetricKit/MetricKit.md).
 
@@ -33,11 +33,11 @@ Each report in the Report List shows the function call that generated the except
 
 Prioritize fixing exceptions by using the total percentage of disk writes, as well as information on the operating system and the impacted device types. Identify the code that’s causing the increase in writes by using the function signature for a specific report in the Report List and the corresponding stack trace. After updating the code and verifying the fix, mark the report as resolved.
 
-##### Get coding assistant recommendations for disk write issues
+### Get coding assistant recommendations for disk write issues
 
 After selecting a disk write report, click Generate Recommendations in the Inspector to get assisted triage in Xcode. After selecting a workspace, Xcode opens your project and pastes the stack trace and impacted code paths into the coding assistant to help you identify and fix the root cause of the excessive writes.
 
-##### Gather metrics about your app’s disk usage
+### Gather metrics about your app’s disk usage
 
 View the daily amount of data your app writes to the disk in the Disk Writes metrics pane of the Xcode Organizer window or by using [MetricKit](../MetricKit/MetricKit.md).
 
@@ -51,7 +51,7 @@ Assess whether the amount of data recorded seems reasonable for your app. If the
 
 Use the graph of disk-write frequency by versions to identify trends in disk usage. An app whose writes increase daily might either be legitimately handling more data or inefficiently handling existing data. Spikes might indicate either the user created or downloaded new content for your app, or your app modified the same content even more than usual. Dips might help you identify the smallest subset of data required by your app.
 
-##### Identify the code causing significant disk writes
+### Identify the code causing significant disk writes
 
 Profile your app in Instruments, using the File Activity template. Instruments tracks the logical and physical use of storage by your app.
 
@@ -63,11 +63,11 @@ The Filesystem Suggestions instrument and the Disk Writes Reports pane in the Xc
 
 > **Note**: The size of physical reads and writes on the disk doesn’t correlate with the size of logical filesystem activity. The disk controller works with regions called blocks, frequently 4 KB in size. Writes to the disk occur in units of blocks, so saving a file with only a single-byte change writes 4 KB to the disk.
 
-##### Batch multiple write operations
+### Batch multiple write operations
 
 Repeatedly opening, saving, and then closing the same file can increase the frequency of disk writes. Collecting small changes and performing them as a single write reduces the frequency, though it can also result in an increase in your app’s memory use. Design your app’s persistence model to effectively balance its use of these two resources. See [Reducing your app’s memory use](./reducing-your-app-s-memory-use.md).
 
-##### Minimize writing to serialized files
+### Minimize writing to serialized files
 
 Many apps use property list, JSON, XML, or other serialized formats for writing user documents. These formats are good for read-only content, such as bundle metadata, or to transfer data over the network. The formats aren’t optimal to store user documents that frequently change. Changing a serialized document requires rewriting the entire file, which increases the latency of the operation and the wear on the device.
 
@@ -75,7 +75,7 @@ When possible, use [SwiftData](../SwiftData/SwiftData.md), [Core Data](../CoreDa
 
 The Disk Writes Report pane offers suggestions for optimizing the use of serialized files.
 
-##### Avoid rapid file creation and deletion
+### Avoid rapid file creation and deletion
 
 When you create or delete a file on iOS, the system updates the directory reference by writing 8 KB of metadata. Rapidly creating or deleting lots of files results in many small writes to the filesystem, degrading performance and increasing wear on the device. Renaming or moving a file on iOS adds up to 16 KB in filesystem metadata writes.
 
@@ -83,7 +83,7 @@ Creating a file atomically adds additional writes because the system must create
 
 Use atomic writes only when needed.
 
-##### Minimize explicit storage synchronization
+### Minimize explicit storage synchronization
 
 Writing data on iOS adds the data to a unified buffer cache that the system then writes to file storage. Forcing iOS to flush pending filesystem changes from the unified buffer can result in unnecessary writes to the disk, degrading performance and increasing wear on the device. When possible, avoid calling `fsync(_:)`, or using the `fcntl(_:_:)` `F_FULLFSYNC` operation to force a flush.
 
@@ -91,7 +91,7 @@ Some apps require a *write barrier* to ensure data persistence before subsequent
 
 Only use `F_FULLFSYNC` when your app requires a strong expectation of data persistence. Note that `F_FULLFSYNC` represents a best-effort guarantee that iOS writes data to the disk, but data can still be lost in the case of sudden power loss.
 
-##### Prevent regressions in disk-write frequency
+### Prevent regressions in disk-write frequency
 
 Measure the disk usage of your app by writing an XCTest performance test. Create a test that passes an instance of [`XCTStorageMetric`](../XCTest/xctstoragemetric.md) to the [`measure(metrics:block:)`](../XCTest/xctestcase/measure%28metrics,block%29.md) function. Call your code inside the block argument of `measure(metrics:block:)`, the method that writes data to disk.
 
@@ -105,23 +105,23 @@ func testDiskUse() {
 }
 ```
 
-##### Use SwiftData, Core Data, or SQLite databases for frequently changing documents
+### Use SwiftData, Core Data, or SQLite databases for frequently changing documents
 
 SQLite is highly optimized for efficient access to storage. It uses in-memory caches and batched disk-writes to ensure high performance and minimal wear on storage. The data structures are designed to allow efficient updates when inserting new content or updating existing content.
 
 [SwiftData](../SwiftData/SwiftData.md) and [Core Data](../CoreData/CoreData.md) both take advantage of SQLite’s efficient disk usage for storing your data. They also use the SQLite best practices described below.
 
-###### Avoid unnecessarily closing SQLite connections
+#### Avoid unnecessarily closing SQLite connections
 
 Opening and closing SQLite connections are expensive operations that require SQLite to write out all pending changes, along with additional metadata including consistency checks and journaling logs. Take better advantage of SQLite’s efficiency by closing a connection only when there’s a clear need.
 
-###### Use transactions
+#### Use transactions
 
 Use transactions to perform a consolidated write operation for related changes, such as editing multiple fields in a single document. Each transaction can contain multiple `INSERT`, `UPDATE`, and `DELETE` statements.
 
 Transactions are also atomic. Either all of the changes are saved to the database, or the database is restored to the state prior to the transaction. This prevents the database from being left in an inconsistent state.
 
-###### Use appropriate indices
+#### Use appropriate indices
 
 Decrease search time and avoid unnecessary writes to the disk by using appropriate indices on your database tables. For example, an email app that uses SQLite may show all inbox messages in chronological order using the following SQL statement:
 
@@ -149,7 +149,7 @@ The presence of `USE TEMP B-TREE FOR ORDER BY` in the output indicates that the 
 
 The Disk Writes Report pane suggestions identify queries that may benefit from an index.
 
-###### Use write-ahead logging journaling mode
+#### Use write-ahead logging journaling mode
 
 Enable more efficient reads and writes in SQLite by using write-ahead logging (WAL) journaling mode. This mode enables coalescing multiple writes to the same page, reducing SQLite’s use of write barriers, and supporting multiple database read threads in parallel with a writer.
 
@@ -157,7 +157,7 @@ Use `PRAGMA journal_mode` to determine your SQLite database’s journaling mode.
 
 The Disk Writes Report pane suggests using write-ahead logging when a stack trace indicates a different journaling mode.
 
-###### Avoid using the explicit VACUUM command
+#### Avoid using the explicit VACUUM command
 
 Using the SQLite `VACUUM` command saves space by rebuilding the database. The operation copies the existing database to a temporary file, then moves information back into the database, which may result in excessive disk writes.
 

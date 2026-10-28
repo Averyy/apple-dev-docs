@@ -21,7 +21,7 @@ A textual representation of this instance.
 override final var description: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 Calling this property directly is discouraged. Instead, convert an instance of any type to a string by using the `String(describing:)` initializer. This initializer works with any type, and uses the custom `description` property for types that conform to `CustomStringConvertible`:
 

@@ -24,7 +24,7 @@ struct TraitKey
 typedef NSString * UIFontDescriptorTraitKey;
 ```
 
-#### Overview
+## Overview
 
 Use these keys to fetch values from the dictionary associated with the [`traits`](./attributename/traits.md) key.
 

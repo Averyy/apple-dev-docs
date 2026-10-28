@@ -5,7 +5,7 @@
 
 Learn what to expect when evaluating a trust object.
 
-#### Overview
+## Overview
 
 Using the trust object that you obtained in [Creating a Trust Object](./creating-a-trust-object.md), you evaluate it with the [`SecTrustEvaluateAsyncWithError(_:_:_:)`](./sectrustevaluateasyncwitherror%28_,_,_%29.md) method:
 

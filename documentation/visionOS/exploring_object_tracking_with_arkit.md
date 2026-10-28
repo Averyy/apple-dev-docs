@@ -10,7 +10,7 @@ Find and track real-world objects in visionOS using reference objects you train 
 - visionOS 27.0+
 - Xcode 27.0+
 
-#### Overview
+## Overview
 
 This sample app demonstrates how to use a reference object to discover and track a specific object in a person’s surroundings. A reference object is a trained representation of a physical object that ARKit uses to recognize and track that object. You create a reference object in Create ML from a USDZ file of the physical object. Create ML writes the reference object to a `.referenceobject` file, which your app loads and passes to ARKit. When ARKit detects the object, you can attach digital content to it, for example, a diagram of a machine’s assembly for someone testing or repairing the machine, or labels annotating parts of the device.
 
@@ -29,11 +29,11 @@ Because Simulator doesn’t support object tracking, run this sample on Apple Vi
 
 > **Note**: This sample code project is associated with WWDC24 [Session 10101 — Explore object tracking for visionOS](https://developer.apple.com/wwdc24/10101/), and the sample also covers improvements to object tracking demonstrated in WWDC26 [Session 283 - Explore enhancements to visionOS object tracking](https://developer.apple.com/wwdc26/283).
 
-#### Configure the object-tracking capability
+## Configure the object-tracking capability
 
 To help protect people’s privacy, visionOS limits app access to object-tracking data and other sensors in Apple Vision Pro. Add the World Sensing capability to your app’s target and provide a usage description that explains how your app uses world-sensing data, including object tracking. People see that description when the system prompts for access to object tracking and other world-sensing data. For more information about app capabilities, see [Adding capabilities to your app](../Xcode/adding-capabilities-to-your-app.md).
 
-#### Load reference objects into the sample
+## Load reference objects into the sample
 
 The sample loads reference objects from two sources. The first source is the sample app’s bundle.
 
@@ -90,7 +90,7 @@ The second source is a file you pick at runtime by tapping the plus button in th
 }
 ```
 
-#### Run object tracking on a session
+## Run object tracking on a session
 
 To start receiving tracking anchors, create an [`ObjectTrackingProvider`](../ARKit/objecttrackingprovider.md) and initialize it with a reference object. Then start an [`ARKitSession`](../ARKit/arkitsession.md) with the provider.
 
@@ -109,7 +109,7 @@ func startTracking() async -> ObjectTrackingProvider? {
 }
 ```
 
-#### Respond to anchor updates
+## Respond to anchor updates
 
 ARKit delivers an asynchronous stream of updates as it detects changes in the scene. The sample app handles these events on the [`RealityView`](../RealityKit/realityview.md) inside `ObjectTrackingRealityView`.
 
@@ -149,7 +149,7 @@ ARKit delivers an asynchronous stream of updates as it detects changes in the sc
 
 When the provider adds an anchor, the sample creates an `ObjectAnchorVisualization` that renders the reference object’s USDZ as a wireframe over the real-world object, or a bounding box when the USDZ isn’t available. When the provider updates the anchor, the sample moves the visualization to match. When the provider removes the anchor, the sample removes the visualization from the scene.
 
-#### Opt in to high frame-rate tracking
+## Opt in to high frame-rate tracking
 
 By default, ARKit tracks reference objects at a low frame rate, which works well for stationary objects. For handheld and moving objects, opt in to high frame-rate tracking, at the cost of additional power and performance. To enable high frame-rate tracking, create a [`ReferenceObject.Configuration`](../ARKit/referenceobject/configuration.md) and set its `highFrameRateTrackingEnabled` property to `true`. Pass the configuration to the [`ReferenceObject`](../ARKit/referenceobject.md) initializer, then create an [`ObjectTrackingProvider`](../ARKit/objecttrackingprovider.md) with that reference object.
 
@@ -167,7 +167,7 @@ The steps for high frame-rate tracking differ if your app uses an [`AnchorEntity
 - When the provider adds an anchor, construct an `AnchorEntity` with that anchor and add it to your `RealityView`. Remove the `AnchorEntity` when the provider removes the anchor.
 - When the provider updates the anchor, check the anchor’s `isTracked` property and react to lost tracking, for example, hide the `AnchorEntity` or reduce its opacity when ARKit loses tracking on the underlying anchor. RealityKit updates the `AnchorEntity`‘s transform automatically, so you don’t need to do that.
 
-#### Choose between perceived and metric poses
+## Choose between perceived and metric poses
 
 ARKit reports an object’s pose in two coordinate spaces: perceived and metric. The system applies display corrections so that rendered content stays visually stable to the person wearing the device even as they move. Use the perceived pose, the default `coordinateSpace(correction: .rendered)`, when you render an [`Entity`](../RealityKit/entity.md) that needs to stay visually fixed to the tracked object as the person moves around the object. Use the metric pose, `coordinateSpace(correction: .none)`, for measurement, because display correction doesn’t affect it.
 
@@ -178,17 +178,17 @@ let translation = metricSpace.ancestorFromSpaceTransformFloat().translation
 
 This sample demonstrates how to read the metric pose and display it in a SwiftUI label that `ObjectAnchorVisualization` attaches above the tracked object using a [`ViewAttachmentComponent`](../RealityKit/viewattachmentcomponent.md).
 
-#### Print the marker
+## Print the marker
 
 The sample’s `Printable Objects` folder contains the marker’s 3D model in two forms. Print `Marker Full` in one piece using a 3D printer that supports two colors, or print the parts in `Marker Separated` one color at a time, then assemble them. When printed and assembled correctly, the marker measures approximately 31 mm (h) x 69 mm (w) x 66 mm (d) and has solid black and white areas with clean edges where they meet. The distinct, high-contrast pattern supports quick recognition and accurate tracking from any viewing angle. Mount the marker with its solid face against the object, leaving the patterned faces visible.
 
 > **Note**: The marker’s solid face carries no pattern because it isn’t visible during tracking. A featureless surface looks identical from every angle, so a visible face would need one.
 
-#### Create your own reference objects
+## Create your own reference objects
 
 To create a reference object, train a model with a USDZ file of the physical object using Create ML on a Mac with an M2 chip or later. If you don’t already have a USDZ, you can produce one from scans, for example, using Object Capture on an iPhone or iPad, or author one in a 3D modeling tool. For a step-by-step walkthrough of the training workflow, see [Implementing object tracking in your app](./implementing-object-tracking-in-your-app.md).
 
-#### Consider retraining reference objects
+## Consider retraining reference objects
 
 As of visionOS 27, Create ML creates reference objects capable of more accurate and lower-latency tracking. To pick up the improvements, retrain your reference objects with the latest version of Create ML. Reference objects you trained with previous versions continue to work with your existing code.
 

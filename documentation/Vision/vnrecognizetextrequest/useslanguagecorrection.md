@@ -24,7 +24,7 @@ var usesLanguageCorrection: Bool { get set }
 @property (nonatomic, assign, readwrite) BOOL usesLanguageCorrection;
 ```
 
-#### Discussion
+## Discussion
 
 When this value is [`true`](../../Swift/true.md), Vision applies language correction during the recognition process. Disabling this property returns the raw recognition results, which provides performance benefits but less accurate results.
 

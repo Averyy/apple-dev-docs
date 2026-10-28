@@ -20,7 +20,7 @@ An object that describes a set of attributes that share a buffer index, offset, 
 struct Layout
 ```
 
-#### Overview
+## Overview
 
 Applications typically express their types using contiguous or interleaved (strided) memory.
 

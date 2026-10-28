@@ -5,7 +5,7 @@
 
 Work around a recoverable trust failure.
 
-#### Overview
+## Overview
 
 The default procedure described in [Evaluating a Trust and Parsing the Result](./evaluating-a-trust-and-parsing-the-result.md) is often sufficient for evaluating trust, but sometimes you need finer-grained control. Whether in response to a recoverable trust failure or based on prior knowledge of the situation, the certificate, key, and trust services API allows you to customize trust evaluation to deal with certain common scenarios.
 

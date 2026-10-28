@@ -6,7 +6,7 @@
 
 A 16-bit integer that indicates this track’s spatial priority in its movie.
 
-#### Overview
+## Overview
 
 The QuickTime Movie Toolbox uses this value to determine how tracks overlay one another. Tracks with lower layer values are displayed in front of tracks with higher layer values.
 

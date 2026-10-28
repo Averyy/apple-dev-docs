@@ -21,7 +21,7 @@ A Boolean value indicating whether the scalar is one of the unified CJK ideograp
 var isUnifiedIdeograph: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property is false for CJK punctuation and symbols, as well as for compatibility ideographs (which canonically decompose to unified ideographs).
 

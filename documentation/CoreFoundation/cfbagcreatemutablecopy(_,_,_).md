@@ -25,7 +25,7 @@ func CFBagCreateMutableCopy(_ allocator: CFAllocator!, _ capacity: CFIndex, _ th
 extern CFMutableBagRefCFBagCreateMutableCopy(CFAllocatorRef allocator, CFIndex capacity, CFBagRef theBag);
 ```
 
-#### Return Value
+## Return Value
 
 A new mutable bag that contains the same values as `theBag`. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

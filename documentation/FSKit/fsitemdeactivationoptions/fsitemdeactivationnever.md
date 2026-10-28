@@ -15,7 +15,7 @@ An option to never perform deactivation.
 FSItemDeactivationNever
 ```
 
-#### Discussion
+## Discussion
 
 With this deactivation option, FSKit never issues `deactivateItem` calls, even though the volume conforms to [`FSVolume.ItemDeactivation`](../fsvolume/itemdeactivation.md).
 

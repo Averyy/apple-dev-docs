@@ -17,11 +17,11 @@ Extracts information from a Search Kit query result.
 CFIndex SKSearchResultsGetInfoInRange(SKSearchResultsRef inSearchResults, CFRange inRange, SKDocumentRef *outDocumentsArray, SKIndexRef *outIndexesArray, float *outScoresArray);
 ```
 
-#### Return Value
+## Return Value
 
 The number of items returned—usually the same number as specified by the length item in the `inRange` parameter.
 
-#### Discussion
+## Discussion
 
 This function provides results to its output parameters in the order in which they are found, to reduce latency and to support search-as-you-type functionality.
 

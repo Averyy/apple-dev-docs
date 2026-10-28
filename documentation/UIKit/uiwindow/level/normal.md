@@ -23,7 +23,7 @@ static let normal: UIWindow.Level
 extern const UIWindowLevel UIWindowLevelNormal;
 ```
 
-#### Discussion
+## Discussion
 
 Use this level for the majority of your content, including for your app’s main window.
 

@@ -19,7 +19,7 @@ func discardCursorRects()
 - (void) discardCursorRects;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked by [`resetCursorRects()`](./resetcursorrects%28%29.md) to clear out existing cursor rectangles before resetting them. You shouldn’t invoke it in the code you write, but you might want to override it to change its behavior.
 

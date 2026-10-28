@@ -5,7 +5,7 @@
 
 Create simple, reusable actions that can change your app state, RealityKit scene, or animate an entity.
 
-#### Overview
+## Overview
 
 Entity actions provide an easy way to change or animate parts of your scene, while also allowing you to influence the changes with your app state.
 

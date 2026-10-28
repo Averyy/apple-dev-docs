@@ -19,7 +19,7 @@ func width(ofColumn column: Int) -> CGFloat
 - (CGFloat) widthOfColumn:(NSInteger) column;
 ```
 
-#### Return Value
+## Return Value
 
 The width of the column.
 

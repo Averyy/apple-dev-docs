@@ -21,7 +21,7 @@ func springLoadingHighlightChanged(_ draggingInfo: any NSDraggingInfo)
 - (void) springLoadingHighlightChanged:(id<NSDraggingInfo>) draggingInfo;
 ```
 
-#### Discussion
+## Discussion
 
 During a spring-loaded operation, a destination may initiate animated highlighting to visually cue the user that spring-loading has been engaged or disengaged. This method is called as different stages of this animation are reached, providing an opportunity to change the highlighting style. Check the `springLoadingHighlight` property of the `draggingInfo` object to determine the style of highlighting to apply. Then, update the destination’s user interface accordingly.
 

@@ -13,7 +13,7 @@
 kIOVideoFeatureControlClassIDTilt = 'tilt'
 ```
 
-#### Discussion
+## Discussion
 
 A IOVideoFeatureControl that controls a tilt mechanism. Positive values mean updwards, negative values means downwards. The units for the control's absolute value are degrees (\xB0).
 

@@ -24,7 +24,7 @@ func dictionaryRepresentation(forAuxiliaryDataType outAuxDataType: Autoreleasing
 - (NSDictionary *) dictionaryRepresentationForAuxiliaryDataType:(NSString **) outAuxDataType;
 ```
 
-#### Discussion
+## Discussion
 
 When using `CGImageDestination` functions to write depth data (along with image data) to a HEIF, JPEG, or DNG file, you can use this method to obtain a dictionary of primitive depth map information, then use the [`CGImageDestinationAddAuxiliaryDataInfo(_:_:_:)`](../../ImageIO/cgimagedestinationaddauxiliarydatainfo%28_,_,_%29.md) function to embed that data into the output file.
 

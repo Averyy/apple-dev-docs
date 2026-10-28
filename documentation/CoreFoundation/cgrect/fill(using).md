@@ -16,7 +16,7 @@ Fills this rect in the current NSGraphicsContext in the context’s fill color. 
 func fill(using operation: NSCompositingOperation = NSGraphicsContext.current?.compositingOperation ?? .sourceOver)
 ```
 
-#### Discussion
+## Discussion
 
 > **Precondition**: There must be a set current NSGraphicsContext.
 

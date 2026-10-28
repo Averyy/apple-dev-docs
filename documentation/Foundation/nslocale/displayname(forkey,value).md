@@ -25,11 +25,11 @@ func displayName(forKey key: NSLocale.Key, value: Any) -> String?
 - (NSString *) displayNameForKey:(NSLocaleKey) key value:(id) value;
 ```
 
-#### Return Value
+## Return Value
 
 The display name for `value`.
 
-#### Discussion
+## Discussion
 
 Not all locale property keys have values with display name values.
 

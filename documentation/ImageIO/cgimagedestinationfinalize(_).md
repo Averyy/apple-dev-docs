@@ -25,11 +25,11 @@ func CGImageDestinationFinalize(_ idst: CGImageDestination) -> Bool
 extern bool CGImageDestinationFinalize(CGImageDestinationRef idst);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the image destination successfully finalized the images, or `false` if an error occurred.
 
-#### Discussion
+## Discussion
 
 Call this method as the final step in saving your images. The output of the image destination isn’t valid until you call this method. After calling this function, you can’t add any more data to the image destination.
 

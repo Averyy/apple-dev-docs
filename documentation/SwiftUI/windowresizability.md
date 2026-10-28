@@ -19,7 +19,7 @@ The resizability of a window.
 struct WindowResizability
 ```
 
-#### Overview
+## Overview
 
 Use the [`windowResizability(_:)`](./scene/windowresizability%28_%29.md) scene modifier to apply a value of this type to a [`Scene`](./scene.md) that you define in your [`App`](./app.md) declaration. The value that you specify indicates the strategy the system uses to place minimum and maximum size restrictions on windows that it creates from that scene.
 

@@ -22,11 +22,11 @@ optional func dragInteraction(_ interaction: UIDragInteraction, sessionAllowsMov
 - (BOOL) dragInteraction:(UIDragInteraction *) interaction sessionAllowsMoveOperation:(id<UIDragSession>) session;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the session allows moving drag items to the destination view; otherwise [`false`](../../Swift/false.md). The default is [`true`](../../Swift/true.md) if you don’t provide this method.
 
-#### Discussion
+## Discussion
 
 The [`UIDropOperation.move`](../uidropoperation/move.md) operation only applies to drop activities within the same app. Drag items dropped onto another app are always copied.
 

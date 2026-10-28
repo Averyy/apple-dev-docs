@@ -24,11 +24,11 @@ class func perspectiveRotate() -> any CIFilter & CIPerspectiveRotate
 + (CIFilter<CIPerspectiveRotate> *) perspectiveRotateFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The adjusted image.
 
-#### Discussion
+## Discussion
 
 This method applies the perspective rotate filter to an image. The effect rotates the image in 3D space to simulate the observer changing viewing position.
 

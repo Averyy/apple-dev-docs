@@ -17,7 +17,7 @@ Returns a sorted copy of the flattened array.
 func sorted(_ array: MLXArray, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-##### See Also
+### See Also
 
 - [Sorting](./sorting.md)
 - [`sorted(_:axis:stream:)`](./sorted%28_,axis,stream%29.md)

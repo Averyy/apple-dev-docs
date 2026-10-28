@@ -21,7 +21,7 @@ Calculates the inner product of two single-precision complex vectors.
 extern void vDSP_zidotpr(const DSPSplitComplex *__A, vDSP_Stride __IA, const DSPSplitComplex *__B, vDSP_Stride __IB, const DSPSplitComplex *__C, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the dot product of two vectors, using the following operation:
 

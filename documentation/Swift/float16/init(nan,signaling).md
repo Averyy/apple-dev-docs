@@ -21,7 +21,7 @@ Creates a NaN (“not a number”) value with the specified payload.
 init(nan payload: Float16.RawSignificand, signaling: Bool)
 ```
 
-#### Discussion
+## Discussion
 
 NaN values compare not equal to every value, including themselves. Most operations with a NaN operand produce a NaN result. Don’t use the equal-to operator (`==`) to test whether a value is NaN. Instead, use the value’s `isNaN` property.
 

@@ -25,7 +25,7 @@ typealias IMP = OpaquePointer
 typedef void (*)(void) IMP;
 ```
 
-#### Discussion
+## Discussion
 
 This data type is a pointer to the start of the function that implements the method. This function uses standard C calling conventions as implemented for the current CPU architecture. The first argument is a pointer to `self` (that is, the memory for the particular instance of this class, or, for a class method, a pointer to the metaclass). The second argument is the method selector. The method arguments follow.
 

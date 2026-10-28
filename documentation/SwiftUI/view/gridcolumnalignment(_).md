@@ -22,11 +22,11 @@ nonisolated
 func gridColumnAlignment(_ guide: HorizontalAlignment) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that uses the specified horizontal alignment, and that causes all cells in the same column of a grid to use the same alignment.
 
-#### Discussion
+## Discussion
 
 You set a default alignment for the cells in a grid in both vertical and horizontal dimensions when you create the grid with the [`init(alignment:horizontalSpacing:verticalSpacing:content:)`](../grid/init%28alignment,horizontalspacing,verticalspacing,content%29.md) initializer. However, you can use the `gridColumnAlignment(_:)` modifier to override the horizontal alignment of a column within the grid. The following example sets a grid’s alignment to [`leadingFirstTextBaseline`](../alignment/leadingfirsttextbaseline.md), and then sets the first column to use [`trailing`](../horizontalalignment/trailing.md) alignment:
 

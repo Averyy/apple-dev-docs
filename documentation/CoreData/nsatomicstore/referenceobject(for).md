@@ -25,11 +25,11 @@ func referenceObject(for objectID: NSManagedObjectID) -> Any
 - (id) referenceObjectForObjectID:(NSManagedObjectID *) objectID;
 ```
 
-#### Return Value
+## Return Value
 
 The reference object for `objectID`.
 
-#### Discussion
+## Discussion
 
 Subclasses should invoke this method to extract the reference data from the object ID for each cache node if the data is to be made persistent.
 

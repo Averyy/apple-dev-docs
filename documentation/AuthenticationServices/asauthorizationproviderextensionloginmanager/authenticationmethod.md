@@ -17,7 +17,7 @@ var authenticationMethod: ASAuthorizationProviderExtensionAuthenticationMethod {
 @property (nonatomic, readonly) ASAuthorizationProviderExtensionAuthenticationMethod authenticationMethod;
 ```
 
-#### Discussion
+## Discussion
 
 Returns the authentication method used for the device.
 

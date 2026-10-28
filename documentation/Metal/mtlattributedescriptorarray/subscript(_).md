@@ -24,7 +24,7 @@ subscript(index: Int) -> MTLAttributeDescriptor! { get set }
 - (MTLAttributeDescriptor *) objectAtIndexedSubscript:(NSUInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The attribute descriptor for data bound at this index.
 

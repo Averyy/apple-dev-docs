@@ -11,7 +11,7 @@ Enables a call to the action.
 virtual void enable();
 ```
 
-#### Overview
+## Overview
 
 Allows the action function to be called. If the timer event source was disabled while a call was outstanding and the call wasn't cancelled then it will be rescheduled. So a disable/enable pair will disable calls from this event source.
 

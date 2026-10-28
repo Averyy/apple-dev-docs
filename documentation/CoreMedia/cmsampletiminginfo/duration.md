@@ -25,7 +25,7 @@ var duration: CMTime
 CMTime duration;
 ```
 
-#### Discussion
+## Discussion
 
 If a single struct applies to each of the samples, they all have this duration.
 

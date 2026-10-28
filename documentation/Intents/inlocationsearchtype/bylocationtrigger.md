@@ -25,7 +25,7 @@ case byLocationTrigger
 INLocationSearchTypeByLocationTrigger
 ```
 
-#### Discussion
+## Discussion
 
 When specified, search for tasks that have reminders generated when the user is near a specified location.
 

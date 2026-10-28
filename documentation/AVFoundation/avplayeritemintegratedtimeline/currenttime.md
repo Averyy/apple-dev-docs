@@ -25,7 +25,7 @@ var currentTime: CMTime { get }
 @property (readonly) CMTime currentTime;
 ```
 
-#### Discussion
+## Discussion
 
 During playback of interstitial events that occupy a single point, this value doesn’t change.
 

@@ -45,7 +45,7 @@ var backgroundColor: NSColor { get set }
 
 - [Creating a Scene with a Transparent Background](../creating-a-scene-with-a-transparent-background.md)
 
-#### Discussion
+## Discussion
 
 The default value is a gray color (RGBA `0.15, 0.15, 0.15, 1.0)`.
 

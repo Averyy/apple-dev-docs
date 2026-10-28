@@ -16,7 +16,7 @@ Optional key that provides a localizable string for macOS to display PM Assertio
 #define kIOPMAssertionHumanReadableReasonKey
 ```
 
-#### Discussion
+## Discussion
 
 The caller should specify this string in [`IOPMAssertionCreateWithProperties`](./api-1557082-iopmassertioncreatewithpropertie.md). If present, macOS may display this string, localized to the user's language, to explain changes in system behavior caused by the assertion.
 

@@ -19,7 +19,7 @@ var isSMSEnabled: Bool { get }
 @property (readonly, getter=isSMSEnabled) BOOL SMSEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 Returns YES if the device has SMS enabled (by responding to a CMGF command). NO if the device has not set an SMS mode or doesn’t support SMS.
 

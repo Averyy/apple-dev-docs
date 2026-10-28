@@ -14,7 +14,7 @@ A message that tells people why the app is requesting access to image tracking, 
 - **Name**: `NSWorldSensingUsageDescription` (Privacy - World Sensing Usage Description)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 Use this key to indicate that your app requires access to world-sensing data. This includes plane detection, image tracking, and scene-reconstruction anchors. The first time your app tries to access world-sensing data, the system prompts for permission. Provide a string for the prompt that explains why your app needs access. For more information on setting up ARKit for world sensing, see [Setting up access to ARKit data](../../visionOS/setting-up-access-to-arkit-data.md).
 

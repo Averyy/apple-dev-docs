@@ -15,7 +15,7 @@ Initializes a slider control.
 virtual bool init(IOUserVideoDriver *in_driver, bool in_is_settable, uint32_t in_control_value, IOUserVideoSliderRange in_range, IOUserVideoObjectPropertyElement in_control_element, IOUserVideoObjectPropertyScope in_control_scope, IOUserVideoClassID in_control_class_id);
 ```
 
-#### Return Value
+## Return Value
 
 True on success.
 

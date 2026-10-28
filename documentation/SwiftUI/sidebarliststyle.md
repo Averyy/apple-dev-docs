@@ -19,7 +19,7 @@ The list style that describes the behavior and appearance of a sidebar list.
 struct SidebarListStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`sidebar`](./liststyle/sidebar.md) to construct this style.
 

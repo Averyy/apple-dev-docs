@@ -20,7 +20,7 @@ Creates and returns an image object from a Quartz 2D image.
 + (CIImage *) imageWithCGImage:(CGImageRef) image;
 ```
 
-#### Return Value
+## Return Value
 
 An image object initialized with the contents of the Quartz 2D image.
 

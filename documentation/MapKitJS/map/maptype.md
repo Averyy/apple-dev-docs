@@ -20,7 +20,7 @@ set mapType(mapType: MapType);
 
 - [MapKit JS 5](../mapkit-js-5.md)
 
-#### Discussion
+## Discussion
 
 The map type determines whether the map shows a standard view, a satellite view, or a hybrid view. The map type is a value of [`MapType`](../maptype.md).
 

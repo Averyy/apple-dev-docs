@@ -17,7 +17,7 @@ Progress update emitted by the Swift conversion pipeline.
 struct ModelConversionProgress
 ```
 
-#### Overview
+## Overview
 
 This intentionally stays coarse-grained so applications can map it onto their own UI without inheriting implementation details. Download progress is forwarded as a fractional value when the downloader provides one.
 

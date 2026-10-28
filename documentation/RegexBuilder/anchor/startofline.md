@@ -21,7 +21,7 @@ An anchor that matches at the start of a line, including the start of the input 
 static var startOfLine: Anchor { get }
 ```
 
-#### Discussion
+## Discussion
 
 This anchor is equivalent to `^` in regex syntax when the `m` option has been enabled or `anchorsMatchLineEndings(true)` has been called.
 

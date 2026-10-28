@@ -24,11 +24,11 @@ func SSLGetNumberEnabledCiphers(_ context: SSLContext, _ numCiphers: UnsafeMutab
 OSStatus SSLGetNumberEnabledCiphers(SSLContextRef context, size_t *numCiphers);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 
-#### Discussion
+## Discussion
 
 You use the number of enabled cipher suites returned by this function when you call the [`SSLGetEnabledCiphers(_:_:_:)`](./sslgetenabledciphers%28_,_,_%29.md) function to retrieve the list of currently enabled cipher suites.
 

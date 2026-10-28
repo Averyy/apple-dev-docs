@@ -23,7 +23,7 @@ static var didCloseUndoGroup: NotificationCenter.BaseMessageIdentifier<UndoManag
 
 Available when `Self` is `NotificationCenter.BaseMessageIdentifier<UndoManager.DidCloseUndoGroupMessage>`.
 
-#### Discussion
+## Discussion
 
 Use this identifier with [`NotificationCenter`](../../notificationcenter.md)’s `addObserver(of:for:using:)` or `messages(of:for:bufferSize:)` methods to observe messages of type [`UndoManager.DidCloseUndoGroupMessage`](../../undomanager/didcloseundogroupmessage.md).
 

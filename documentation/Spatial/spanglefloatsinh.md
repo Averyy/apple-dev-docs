@@ -19,11 +19,11 @@
 static float SPAngleFloatSinh(SPAngleFloat angle);
 ```
 
-#### Return Value
+## Return Value
 
 The hyperbolic sine of the specified angle.
 
-#### Discussion
+## Discussion
 
 Returns the hyperbolic sine of the specified angle.
 

@@ -25,11 +25,11 @@ func CFBundleCopyExecutableArchitecturesForURL(_ url: CFURL!) -> CFArray!
 extern CFArrayRefCFBundleCopyExecutableArchitecturesForURL(CFURLRef url);
 ```
 
-#### Return Value
+## Return Value
 
 For a directory URL, if the bundle’s executable exists and is a Mach-O file, returns an array of CFNumbers whose values are integers representing the architectures the URL provides. For a plain file URL representing an unbundled executable, returns the architectures it provides if it is a Mach-O file. Possible values are listed in [Architecture Types](./api-1537096-architecture-types.md). If there is no bundle executable or if the executable is not a Mach-O file, returns `NULL`. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 For a directory URL, this is equivalent to calling [`CFBundleCopyExecutableArchitectures(_:)`](./cfbundlecopyexecutablearchitectures%28_%29.md) on the corresponding bundle.
 

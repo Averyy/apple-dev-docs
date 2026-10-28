@@ -16,7 +16,7 @@ The authorization status is unknown.
 case unknown
 ```
 
-#### Discussion
+## Discussion
 
 A person hasn’t either explicitly authorized or denied authorization to use the framework.
 

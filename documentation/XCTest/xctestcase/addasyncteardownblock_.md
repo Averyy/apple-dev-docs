@@ -12,7 +12,7 @@ Registers a block of asynchronous teardown code to run after the current test me
 - (void) addAsyncTeardownBlock:(void (^)(void (^completion)(NSError *error))) block;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method during a test method’s execution to register a block of code to be called when the test method ends. The block of code may contain asynchronous teardown logic; the test system waits until the asynchronous teardown is complete before proceeding.
 

@@ -16,11 +16,11 @@ Get an `WAEndpoint` that can connect to this `NWEndpoint`’s remote device over
 func wifiAware(port: NWEndpoint.Port) -> WAEndpoint?
 ```
 
-#### Return Value
+## Return Value
 
 A new endpoint that can be used to connect over Wi-Fi Aware, or `nil` if it not compatible with Wi-Fi Aware.
 
-#### Discussion
+## Discussion
 
 The returned endpoint can be used to connect to a remote `NetworkListener` that accepts additional Wi-Fi Aware connections without publishing a service, via  `WiFiAware/WAPublisherListener/Action/addingConnections(from:)`
 

@@ -5,21 +5,21 @@
 
 Return the result of subtracting two numbers.
 
-#### Overview
+## Overview
 
 Use the `sub()` function in the expression of a matchmaking rule to subtract two numbers.
 
-##### Declaration
+### Declaration
 
 ```other
 number sub(number $minuend, number $subtrahend)
 ```
 
-##### Parameters
+### Parameters
 
 -`minuend`: The left side of the subtraction equation. -`subtrahend`: The right side of the subtraction equation.
 
-##### Return value
+### Return value
 
 The result of subtracting `subtrahend` from `minuend`. If either parameter isn’t a number, `null`.
 

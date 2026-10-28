@@ -25,7 +25,7 @@ var overlapFactor: Double { get set }
 @property (assign, readwrite) double overlapFactor;
 ```
 
-#### Discussion
+## Discussion
 
 The property defaults to `0.5` (50%) and supports values in the range `[0.0, 1.0]`.
 

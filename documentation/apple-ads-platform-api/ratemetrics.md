@@ -15,11 +15,11 @@ Rate metrics breakdown by attribution type.
 object RateMetrics
 ```
 
-#### Discussion
+## Discussion
 
 The `RateMetrics` reports ratio or rate values segmented by attribution type. This object appears in brands metrics for action-per-tap and action-per-impression rates.
 
-##### Example
+### Example
 
 ```json
 {

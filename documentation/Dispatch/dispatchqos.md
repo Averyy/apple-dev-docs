@@ -21,7 +21,7 @@ The quality of service, or the execution priority, to apply to tasks.
 struct DispatchQoS
 ```
 
-#### Overview
+## Overview
 
 A quality-of-service (QoS) class categorizes work to perform on a [`DispatchQueue`](./dispatchqueue.md). By specifying the quality of a task, you indicate its importance to your app. When scheduling tasks, the system prioritizes those that have higher service classes.
 

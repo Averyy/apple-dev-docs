@@ -5,13 +5,13 @@
 
 Detects when an argument incorrectly receives a null value.
 
-#### Overview
+## Overview
 
 Use this check to detect when a function that has an argument with the `nonnull` attribute or the `_Nonnull` annotation receives a null value. Available in Xcode 9 and later.
 
 > **Note**: The nonnull violation check for arguments with the `_Nonnull` annotation is off by default. You can turn it on by enabling the `-fsanitize=nullability-arg` compiler flag.
 
-##### Violation of the nonnull parameter attribute in C
+### Violation of the nonnull parameter attribute in C
 
 In the following example, the call to the `has_nonnull_argument` function breaks the `nonnull` attribute of the parameter `p`:
 
@@ -22,11 +22,11 @@ void has_nonnull_argument(__attribute__((nonnull)) int *p) {
 has_nonnull_argument(NULL); // Error: nonnull parameter attribute violation
 ```
 
-###### Solution
+#### Solution
 
 Correct logic errors, or remove the `nonnull` attribute and rework the called function’s logic accordingly.
 
-##### Violation of the nonnull annotation for an argument in C
+### Violation of the nonnull annotation for an argument in C
 
 In the following example, the call to the `has_nonnull_argument` function breaks the `_Nonnull` annotation of the parameter `p`:
 
@@ -37,7 +37,7 @@ void has_nonnull_argument(int * _Nonnull p) {
 has_nonnull_argument(NULL); // Error: _Nonnull annotation violation
 ```
 
-###### Solution
+#### Solution
 
 Correct logic errors, or remove the `_Nonnull` attribute and rework the called function’s logic accordingly.
 

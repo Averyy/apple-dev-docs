@@ -21,7 +21,7 @@ func SecTransformRegister(_ uniqueName: CFString, _ createTransformFunction: Sec
 extern Boolean SecTransformRegister(CFStringRef uniqueName, SecTransformCreateFP createTransformFunction, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean that is set to [`true`](../Swift/true.md) if the custom transform was registered and [`false`](../Swift/false.md) otherwise
 

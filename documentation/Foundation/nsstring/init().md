@@ -25,7 +25,7 @@ init()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSString` object that contains no characters. The returned object may be different from the original receiver.
 

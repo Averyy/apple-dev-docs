@@ -24,7 +24,7 @@ var frameProcessor: PHLivePhotoFrameProcessingBlock? { get set }
 @property (copy, nullable) PHLivePhotoFrameProcessingBlock frameProcessor;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to define the image processing to be performed on each frame of the Live Photo. Setting this property does not begin processing; instead, after you call one of the methods listed in Processing an Editing Context’s Live Photo, Photos executes your block repeatedly to process each frame of the Live Photo’s video and still photo content.
 

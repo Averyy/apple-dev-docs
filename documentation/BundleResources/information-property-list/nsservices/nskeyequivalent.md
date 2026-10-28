@@ -14,7 +14,7 @@ A keyboard shortcut that invokes the service menu command.
 - **Name**: `NSKeyEquivalent` (Menu key equivalent)
 - **Type**: dictionary
 
-#### Discussion
+## Discussion
 
 The dictionary key is `default` with a string value.
 

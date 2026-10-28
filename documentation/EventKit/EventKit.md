@@ -14,7 +14,7 @@ Create, view, and edit calendar and reminder events.
 - visionOS 1.0+
 - watchOS 2.0+
 
-#### Overview
+## Overview
 
 The EventKit framework provides access to calendar and reminders data so people can create, retrieve, and edit calendar items in your app. In iOS, [EventKit UI](../EventKitUI/EventKitUI.md) provides user interfaces you can implement in your app so people can create and edit calendar items.
 

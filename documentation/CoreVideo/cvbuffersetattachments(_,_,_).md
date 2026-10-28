@@ -25,7 +25,7 @@ func CVBufferSetAttachments(_ buffer: CVBuffer, _ theAttachments: CFDictionary, 
 extern void CVBufferSetAttachments(CVBufferRef buffer, CFDictionaryRef theAttachments, CVAttachmentMode attachmentMode);
 ```
 
-#### Discussion
+## Discussion
 
 This is a convenience function that calls [`CVBufferSetAttachment(_:_:_:_:)`](./cvbuffersetattachment%28_,_,_,_%29.md) for each key-value pair in the given dictionary. All key-value pairs must be in the root level of the dictionary.
 

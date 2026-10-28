@@ -20,7 +20,7 @@ A mode that doesn’t display a visualization.
 case none
 ```
 
-#### Discussion
+## Discussion
 
 A [`ModelDebugOptionsComponent`](../../modeldebugoptionscomponent.md) with a `VisualizationNode` of `none` has no effect on how RealityKit renders its entity.
 

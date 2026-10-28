@@ -19,7 +19,7 @@ struct IconCreationOptions
 enum NSWorkspaceIconCreationOptions : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 Use these constants with the [`setIcon(_:forFile:options:)`](./seticon%28_,forfile,options%29.md) method. You can combine these using the C bitwise OR operator.
 

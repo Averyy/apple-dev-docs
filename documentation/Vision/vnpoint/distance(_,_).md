@@ -26,7 +26,7 @@ class func distance(_ point1: VNPoint, _ point2: VNPoint) -> Double
 + (double) distanceBetweenPoint:(VNPoint *) point1 point:(VNPoint *) point2;
 ```
 
-#### Return Value
+## Return Value
 
 The calculated distance.
 

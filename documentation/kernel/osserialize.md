@@ -15,7 +15,7 @@ OSSerialize coordinates serialization of Libkern C++ objects into an XML stream.
 class OSSerialize : OSObject
 ```
 
-#### Overview
+## Overview
 
 This class is for the most part internal to the OSContainer classes, used for transferring property tables between the kernel and user space. It should not be used directly. Classes that participate in serialization override the OSObject::serialize . function.
 

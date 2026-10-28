@@ -19,7 +19,7 @@ func nw_parameters_create_custom_ip(_ custom_ip_protocol_number: UInt8, _ config
 nw_parameters_tnw_parameters_create_custom_ip(uint8_t custom_ip_protocol_number, nw_parameters_configure_protocol_block_t configure_ip);
 ```
 
-#### Discussion
+## Discussion
 
 Creating custom IP protocol connections requires the “com.apple.developer.networking.custom-protocol” entitlement.
 

@@ -25,7 +25,7 @@ optional func relinquishPresentedItem(toReader reader: @escaping @Sendable ((@Se
 - (void) relinquishPresentedItemToReader:(void (^)(void (^reacquirer)())) reader;
 ```
 
-#### Discussion
+## Discussion
 
 You use this method to provide an appropriate response when another object wants to read from your presented URL. For example, when this method is called, you might temporarily stop making changes to the file or directory. After taking any appropriate steps, you must execute the block in the `reader` parameter to let the waiting object know that it may now proceed with its task. If you want to be notified when the reader has completed its task, pass your own block to the reader and use that block to reacquire the file or URL for your own uses.
 

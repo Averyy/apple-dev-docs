@@ -10,7 +10,7 @@ framework: "Swift-Org/SwiftJavaDocumentation"
 
 The swift-java SwiftPM plugins automate `swift-java` command line tool invocations during the build.
 
-#### Overview
+## Overview
 
 There are three plugins, and you only include the ones your target needs:
 
@@ -20,7 +20,7 @@ There are three plugins, and you only include the ones your target needs:
 | `JExtractSwiftPlugin` | Runs `jextract` to generate Java bindings (plus Swift thunks) for the target’s Swift sources. |
 | `JavaCompilerPlugin` | Compiles `.java` sources kept alongside the Swift target with `javac`. |
 
-##### Installing the plugin
+### Installing the plugin
 
 Add the `swift-java` package dependency and list the plugins on the target:
 
@@ -67,7 +67,7 @@ let package = Package(
 
 > **Note**: Depending on the use case, swift-java may need to run Gradle or access files outside the Swift package. Resolving Maven `dependencies` in particular requires network access. Pass `--disable-sandbox` to `swift build` in those cases, since the SwiftPM sandbox blocks them. See [swift-java resolve](./swiftjavaresolve.md).
 
-##### Handling cross module Swift type dependencies
+### Handling cross module Swift type dependencies
 
 A module you run jextract over may expose types that come from other modules.
 

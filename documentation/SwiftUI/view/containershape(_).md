@@ -29,7 +29,7 @@ nonisolated
 func containerShape<T>(_ shape: T) -> some View where T : InsettableShape
 ```
 
-#### Discussion
+## Discussion
 
 The example below defines a view that shows its content with a rounded rectangle background and the same container shape. Any [`ContainerRelativeShape`](../containerrelativeshape.md) within the `content` matches the rounded rectangle shape from this container inset as appropriate. Any [`ConcentricRectangle`](../concentricrectangle.md) within the `content` will match the corners to be concentric to the container corners.
 

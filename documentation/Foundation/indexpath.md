@@ -21,7 +21,7 @@ A list of indexes that together represent the path to a specific location in a t
 struct IndexPath
 ```
 
-#### Overview
+## Overview
 
 Each index in an index path represents the index into an array of children from one node in the tree to another, deeper, node.
 

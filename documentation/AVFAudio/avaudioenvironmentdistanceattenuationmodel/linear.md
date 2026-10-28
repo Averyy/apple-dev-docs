@@ -25,7 +25,7 @@ case linear
 AVAudioEnvironmentDistanceAttenuationModelLinear
 ```
 
-#### Discussion
+## Discussion
 
 The framework calculates this value as `distanceGain = (1 – rolloffFactor * (distance – referenceDistance) / (maximumDistance – referenceDistance))`.
 

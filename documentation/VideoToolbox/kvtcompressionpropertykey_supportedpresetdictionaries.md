@@ -22,7 +22,7 @@ let kVTCompressionPropertyKey_SupportedPresetDictionaries: CFString
 extern CFStringRef const kVTCompressionPropertyKey_SupportedPresetDictionaries;
 ```
 
-#### Discussion
+## Discussion
 
 Where supported by video encoders, returns a dictionary whose keys are the available compression presets (prefixed by `kVTCompressionPreset_`) and the values are dictionaries containing the corresponding settings property key/value pairs.
 

@@ -9,7 +9,7 @@ Creates a new ad that links an ad creative to an ad group for delivery.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint creates an ad that links an ad creative to an ad group.
 
@@ -22,13 +22,13 @@ The ad’s `displayStatus` is an aggregate of campaign-level, ad group-level, an
 
 The `systemStatus` will be `NOT_RUNNING` if the ad creative is in `PENDING` state (awaiting system validation, policy determination, or asset CDN availability), or if Apple has rejected the ad creative (`INVALID`).
 
-#### Payload Examples
+## Payload Examples
 
 **App Store Ad**:
 
 An ad linking an App Store ad creative to an ad group in an App Store campaign.
 
-##### Request
+### Request
 
 ```http
 POST /v1/ads
@@ -41,7 +41,7 @@ POST /v1/ads
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -68,7 +68,7 @@ POST /v1/ads
 
 An ad linking an Apple Maps ad creative to an ad group in an Apple Maps campaign.
 
-##### Request
+### Request
 
 ```http
 POST /v1/ads
@@ -81,7 +81,7 @@ POST /v1/ads
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

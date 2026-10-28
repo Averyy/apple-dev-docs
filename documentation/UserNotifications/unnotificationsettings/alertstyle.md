@@ -31,7 +31,7 @@ var alertStyle: UNAlertStyle { get }
 @property (atomic, readonly) UNAlertStyle alertStyle;
 ```
 
-#### Discussion
+## Discussion
 
 When alerts are authorized, this property specifies the presentation style for alerts when the device is unlocked. The user may choose to display alerts as automatically disappearing banners or as modal windows that require explicit dismissal. The user may also choose not to display alerts at all.
 

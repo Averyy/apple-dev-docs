@@ -19,11 +19,11 @@ func SKIndexDocumentIteratorGetTypeID() -> CFTypeID
 CFTypeID SKIndexDocumentIteratorGetTypeID(void);
 ```
 
-#### Return Value
+## Return Value
 
 A CFTypeID object containing the type identifier for the SKIndexDocumentIterator opaque type.
 
-#### Discussion
+## Discussion
 
 Search Kit represents document iterators with the [`SKIndexDocumentIterator`](./skindexdocumentiterator.md) opaque type. If your code needs to determine whether a particular data type is a document iterator, you can use this function along with the [`CFGetTypeID(_:)`](../CoreFoundation/cfgettypeid%28_%29.md) function and perform a comparison.
 

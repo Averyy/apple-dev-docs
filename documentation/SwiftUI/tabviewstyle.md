@@ -22,7 +22,7 @@ A specification for the appearance and interaction of a tab view.
 @preconcurrency protocol TabViewStyle
 ```
 
-#### Overview
+## Overview
 
 A type conforming to this protocol inherits `@preconcurrency @MainActor` isolation from the protocol if the conformance is included in the type’s base declaration:
 

@@ -20,7 +20,7 @@ The value of a bindable target.
 struct BindableValue<T> where T : BindableData
 ```
 
-#### Overview
+## Overview
 
 This structure holds the value of an animatable property ([`animatedValue`](./bindablevalue/animatedvalue.md)), that is, the target property that animates. In addition, the structure stores the property’s original value ([`baseValue`](./bindablevalue/basevalue.md)), which represents the property’s value before a running animation starts. The [`value`](./bindablevalue/value.md) property returns the animated value when an animation runs; when the animation isn’t running, it returns the base value.
 

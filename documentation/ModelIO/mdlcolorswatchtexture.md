@@ -24,7 +24,7 @@ class MDLColorSwatchTexture
 @interface MDLColorSwatchTexture : MDLTexture
 ```
 
-#### Overview
+## Overview
 
 A MDLColorSwatchTexture object procedurally generates texel data by creating a gradient between two colors. Like other procedural [`MDLTexture`](./mdltexture.md) subclasses, the [`MDLColorSwatchTexture`](./mdlcolorswatchtexture.md) class generates texel data only when that data is first referenced, and caches it for future use.
 

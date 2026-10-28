@@ -15,11 +15,11 @@ virtual IOReturn attemptCommand(
  void *arg3 = 0);
 ```
 
-#### Return Value
+## Return Value
 
 kIOReturnSuccess if successful. kIOReturnNotPermitted if this event source is currently disabled, kIOReturnNoResources if no action available, kIOReturnCannotLock if lock attempt fails.
 
-#### Overview
+## Overview
 
 Client function that causes the current action to be called in a single threaded manner. When the executing on a client's thread attemptCommand will fail if the work-loop's gate is closed.
 

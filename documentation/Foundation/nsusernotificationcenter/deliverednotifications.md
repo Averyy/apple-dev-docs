@@ -21,7 +21,7 @@ var deliveredNotifications: [NSUserNotification] { get }
 @property (copy, readonly) NSArray<NSUserNotification *> * deliveredNotifications;
 ```
 
-#### Discussion
+## Discussion
 
 The number of notifications the user actually sees in the user interface may be less than the size of this array.
 

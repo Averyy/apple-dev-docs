@@ -25,7 +25,7 @@ class var timeZoneDataVersion: String { get }
 @property (class, copy, readonly) NSString * timeZoneDataVersion;
 ```
 
-#### Return Value
+## Return Value
 
 A string containing the time zone data version.
 

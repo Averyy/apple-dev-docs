@@ -16,11 +16,11 @@ func simd_axis(_ q: simd_quatd) -> simd_double3
 static simd_double3 simd_axis(simd_quatd q);
 ```
 
-#### Return Value
+## Return Value
 
 The normalized axis about which the action of the source quaternion rotates.
 
-#### Discussion
+## Discussion
 
 This function returns a vector filled with [`nan`](../Swift/double/nan.md) if the source quaternion has a rotation of zero radians.
 

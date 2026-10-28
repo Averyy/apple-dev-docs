@@ -17,7 +17,7 @@ Reallocates collectable memory.
 extern void *NSReallocateCollectable(void *ptr, NSUInteger size, NSUInteger options);
 ```
 
-#### Discussion
+## Discussion
 
 Changes the size of the block of memory pointed to by `ptr` to `size` bytes. It may allocate new memory to replace the old, in which case it moves the contents of the old memory block to the new block, up to a maximum of `size` bytes.
 

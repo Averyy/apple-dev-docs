@@ -17,7 +17,7 @@ An error that indicates the framework can’t begin Camera Assistance.
 static var invalidARConfiguration: NIError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 The framework invalidates a Nearby Interaction session when the app requests Camera Assistance ([`isCameraAssistanceEnabled`](../ninearbypeerconfiguration/iscameraassistanceenabled.md)) and either of the following are true:
 

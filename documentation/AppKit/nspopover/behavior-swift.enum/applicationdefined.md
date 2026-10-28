@@ -19,7 +19,7 @@ case applicationDefined
 NSPopoverBehaviorApplicationDefined
 ```
 
-#### Discussion
+## Discussion
 
 The system will still close the popover in a limited number of circumstances. For instance, the system will attempt to close the popover when the window of its positioningView is closed. The exact interactions in which AppKit will close the popover are not guaranteed. You may consider implementing -cancel: to close the popover when the escape key is pressed.
 

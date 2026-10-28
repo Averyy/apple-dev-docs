@@ -17,7 +17,7 @@ An array of texture coordinate values for each point in the plane mesh.
 var textureCoordinates: [vector_float2] { get }
 ```
 
-#### Discussion
+## Discussion
 
 Each `float2` value in this array represents the UV texture coordinates for the vertex at the corresponding index in the [`vertices`](./vertices-43kle.md) array.
 

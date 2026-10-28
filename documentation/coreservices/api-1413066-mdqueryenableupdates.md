@@ -19,7 +19,7 @@ func MDQueryEnableUpdates(_ query: MDQuery!)
 void MDQueryEnableUpdates(MDQueryRef query);
 ```
 
-#### Discussion
+## Discussion
 
 This function should be called when finished iterating through the list of results. Live-updates to the query results will continue when all the disables have been matched by a corresponding enable.
 

@@ -24,7 +24,7 @@ var glyphText: String? { get set }
 @property (nonatomic, copy, nullable) NSString * glyphText;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property or the [`glyphText`](./glyphtext.md) property to specify the marker balloon content. If you specify both an image and text, MapKit displays the text.
 

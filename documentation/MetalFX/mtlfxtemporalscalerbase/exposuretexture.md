@@ -25,7 +25,7 @@ var exposureTexture: (any MTLTexture)? { get set }
 @property (nonatomic, retain, nullable) id<MTLTexture> exposureTexture;
 ```
 
-#### Discussion
+## Discussion
 
 Create and assign a 1x1  `MTLPixelFormatR16Float`  texture to assign to this property. MetalFX reads the R channel of the texel at position `(0,0)` and uses it as the exposure value. It then uses this value to multiply the input color.
 

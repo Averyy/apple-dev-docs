@@ -21,11 +21,11 @@ typealias ABExternalChangeCallback = (ABAddressBook?, CFDictionary?, UnsafeMutab
 typedef void (*)(const void *, const struct __CFDictionary *, void *) ABExternalChangeCallback;
 ```
 
-#### Discussion
+## Discussion
 
 If you name your callback function `MyAddressBookExternalChangeCallback`, you declare it like this:
 
-##### Discussion
+### Discussion
 
 Use [`ABAddressBookRegisterExternalChangeCallback(_:_:_:)`](./abaddressbookregisterexternalchangecallback%28_,_,_%29.md) to register and [`ABAddressBookUnregisterExternalChangeCallback(_:_:_:)`](./abaddressbookunregisterexternalchangecallback%28_,_,_%29.md) to unregister the callback function.
 

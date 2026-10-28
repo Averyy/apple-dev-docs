@@ -25,7 +25,7 @@ var mergePolicy: Any { get set }
 @property (strong) id mergePolicy;
 ```
 
-#### Discussion
+## Discussion
 
 The default is [`NSErrorMergePolicy`](../nserrormergepolicy.md). For possible values, see [`NSMergePolicy`](../nsmergepolicy.md).
 

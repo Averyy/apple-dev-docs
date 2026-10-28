@@ -15,7 +15,7 @@ An accessor for the address category enumeration.
 get AddressCategory(): typeof AddressCategory;
 ```
 
-#### Discussion
+## Discussion
 
 You must load the appropriate library first before accessing the getter, otherwise, the getter throws an `Error`.
 

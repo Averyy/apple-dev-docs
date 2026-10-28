@@ -19,7 +19,7 @@ var serialPorts: [VZSerialPortConfiguration] { get set }
 @property (copy, readwrite) NSArray<VZSerialPortConfiguration *> * serialPorts;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is an empty array. If your VM supports one or more serial communication ports, assign an array of supported serial configurations to this property. Don’t include more than 10 [`VZVirtioConsoleDeviceConfiguration`](../vzvirtioconsoledeviceconfiguration.md) objects in the array.
 

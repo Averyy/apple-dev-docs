@@ -28,7 +28,7 @@ extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierDistanceCycling;
 
 - [Accessing condensed workout samples](../accessing-condensed-workout-samples.md)
 
-#### Discussion
+## Discussion
 
 These samples use length units (described in [`HKUnit`](../hkunit.md)) and measure cumulative values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)). During outdoor cycling workouts, the system automatically records distance samples on Apple Watch. During indoor cycling workouts, the system automatically records distance samples on Apple Watch when connected to a peripheral that provides cycling speed. Sample data may be condensed and/or coalesced by HealthKit. For more information, see [Accessing condensed workout samples](../accessing-condensed-workout-samples.md).
 

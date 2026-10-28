@@ -24,7 +24,7 @@ class XCTMemoryMetric
 @interface XCTMemoryMetric : NSObject
 ```
 
-#### Overview
+## Overview
 
 `XCTMemoryMetric` compares the memory use before and after running the block argument to [`measure(metrics:block:)`](./xctestcase/measure%28metrics,block%29.md), and reports the difference.
 

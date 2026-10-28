@@ -23,11 +23,11 @@ func canPrevent(_ preventedGestureRecognizer: UIGestureRecognizer) -> Bool
 - (BOOL) canPreventGestureRecognizer:(UIGestureRecognizer *) preventedGestureRecognizer;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to indicate that the receiver can block `preventedGestureRecognizer` from recognizing its gesture, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Overriding these methods enables the same behavior as implementing the [`UIGestureRecognizerDelegate`](../uigesturerecognizerdelegate.md) methods [`gestureRecognizerShouldBegin(_:)`](../uigesturerecognizerdelegate/gesturerecognizershouldbegin%28_%29.md) and [`gestureRecognizer(_:shouldReceive:)`](../uigesturerecognizerdelegate/gesturerecognizer%28_,shouldreceive%29-16fuh.md). However, by overriding them, subclasses can define class-wide prevention rules. For example, a [`UITapGestureRecognizer`](../uitapgesturerecognizer.md) object never prevents another `UITapGestureRecognizer` object with a higher tap count.
 

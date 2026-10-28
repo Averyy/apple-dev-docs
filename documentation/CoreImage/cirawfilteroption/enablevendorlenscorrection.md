@@ -26,7 +26,7 @@ static let enableVendorLensCorrection: CIRAWFilterOption
 extern CIRAWFilterOption const kCIInputEnableVendorLensCorrectionKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is a [`NSNumber`](../../Foundation/nsnumber.md) object containing a Boolean value. If this value is `true`, or if this option is not specified but the image contains metadata for lens distortion parameters, Core Image corrects for lens distortion.
 

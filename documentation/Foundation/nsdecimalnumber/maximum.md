@@ -26,7 +26,7 @@ class var maximum: NSDecimalNumber { get }
 @property (class, copy, readonly) NSDecimalNumber * maximumDecimalNumber;
 ```
 
-#### Return Value
+## Return Value
 
 The largest possible value of an `NSDecimalNumber` object.
 

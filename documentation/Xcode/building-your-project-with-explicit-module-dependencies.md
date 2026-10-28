@@ -5,7 +5,7 @@
 
 Reduce compile times by eliminating unnecessary module variants using the Xcode build system.
 
-#### Overview
+## Overview
 
 The Xcode build system is responsible for managing the compilation of source files in a project. Often, this source code has dependencies on other modules in the project, SDK, or external dependencies. When building with modules, C or Objective-C source code depends on modules imported with `@import` and modules that cover headers imported using `#import`. Swift code depends on modules imported with `import`. These modules must be built before compilation can proceed. In Xcode 16 and later, the build system coordinates with the compiler to surface this work as a set of explicit tasks in the build log.
 
@@ -20,7 +20,7 @@ For Swift code, explicitly built modules improves the debugging experience.
 
 > **Note**: Explicitly built modules aren’t supported when using the C++ interoperability features in Swift and not enabled by default for targets using Swift 4 or earlier. To enable explicitly built modules, set the [Explicitly Built Modules](./build-settings-reference.md#Explicitly-Built-Modules) build setting to `Yes`.
 
-##### Understand how module dependencies are built
+### Understand how module dependencies are built
 
 When explicitly building module dependencies, compilation is divided into three distinct stages:
 
@@ -32,7 +32,7 @@ In addition to appearing as distinct steps in the build log, you can also review
 
 ![A screenshot of an Xcode build log and accompanying timeline showing dependency scanning, module build, and compile tasks.](https://developer.apple.com/tutorials/images/com.apple.Xcode/building-your-project-with-explicit-module-dependencies-1@2x.png)
 
-##### Improve compile times by reducing module variants
+### Improve compile times by reducing module variants
 
 In more complex projects, the build log may show multiple tasks that correspond to builds of the same module, but with different sets of options. Modules are sensitive to the compiler options used by their dependents, so building different parts of a project with different options may require building multiple variants. Sometimes, building multiple variants of a module is necessary. For example, when building code for multiple architectures, at least one module variant must be built for each. In other cases, inconsistent project configurations may lead to building many variants of a module unnecessarily. For example, two targets with the same dependencies but different values of the `Preprocessor Macros` build setting are unable to share built modules. To reduce build times and the number of variants to build, you’ll instead update the project configuration to compile sources using a uniform set of options.
 

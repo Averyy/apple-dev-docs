@@ -23,7 +23,7 @@ var separatorInset: UIEdgeInsets { get set }
 @property (nonatomic) UIEdgeInsets separatorInset;
 ```
 
-#### Discussion
+## Discussion
 
 In iOS 7 and later, cell separators don’t extend all the way to the edge of the table view. This property sets the default inset for all cells in the table, much as [`rowHeight`](./rowheight.md) sets the default height for cells. It’s also used for managing the “extra” separators drawn at the bottom of plain style tables.
 
@@ -37,7 +37,7 @@ If every cell in a table contains an image view of the same size, by default iOS
 
 In a right-to-left user interface, an inset that you set using the [`separatorInset`](./separatorinset.md) property automatically flips its left and right measurements.
 
-##### Special considerations
+### Special considerations
 
 Only left and right insets are honored. In a right-to-left user interface, the inset measurements are automatically flipped.
 

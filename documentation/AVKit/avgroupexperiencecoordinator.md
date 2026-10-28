@@ -12,11 +12,11 @@ An object that synchronizes viewing environment state across participants in a S
 ## Declaration
 
 ```swift
-@objc
-(AVGroupExperienceCoordinator) class AVGroupExperienceCoordinator
+@objc(AVGroupExperienceCoordinator)
+class AVGroupExperienceCoordinator
 ```
 
-#### Overview
+## Overview
 
 Access an experience coordinator by querying a player view controller for its [`groupExperienceCoordinator`](./avplayerviewcontroller/groupexperiencecoordinator.md) object.
 

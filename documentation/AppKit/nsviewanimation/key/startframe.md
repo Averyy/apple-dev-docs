@@ -19,7 +19,7 @@ static let startFrame: NSViewAnimation.Key
 extern NSViewAnimationKey NSViewAnimationStartFrameKey;
 ```
 
-#### Discussion
+## Discussion
 
 The size and location are specified by an [`NSRect`](../../../Foundation/nsrect.md) structure encoded in an [`NSValue`](../../../Foundation/nsvalue.md) object. This property is optional. If it is not specified, `NSViewAnimation` uses the frame of the window or view at the start of the animation.
 

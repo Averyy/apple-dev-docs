@@ -25,7 +25,7 @@ var doesRelativeDateFormatting: Bool { get set }
 @property BOOL doesRelativeDateFormatting;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the receiver uses relative date formatting, otherwise [`false`](../../Swift/false.md).
 

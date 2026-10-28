@@ -24,7 +24,7 @@ func recognizedPoints(_ jointsGroupName: VNHumanHandPoseObservation.JointsGroupN
 - (NSDictionary<NSString *,VNRecognizedPoint *> *) recognizedPointsForJointsGroupName:(VNHumanHandPoseObservationJointsGroupName) jointsGroupName error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The array of points associated with the joint group name.
 

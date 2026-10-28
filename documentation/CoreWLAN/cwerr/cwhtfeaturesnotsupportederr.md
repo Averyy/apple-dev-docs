@@ -17,7 +17,7 @@ case cwhtFeaturesNotSupportedErr
 kCWHTFeaturesNotSupportedErr
 ```
 
-#### Discussion
+## Discussion
 
 Association was denied because the requesting station does not support HT features.
 

@@ -24,11 +24,11 @@ init!(value: JSValue!, andOwner owner: Any!)
 + (JSManagedValue *) managedValueWithValue:(JSValue *) value andOwner:(id) owner;
 ```
 
-#### Return Value
+## Return Value
 
 A new managed value.
 
-#### Discussion
+## Discussion
 
 Calling this method is equivalent to creating a managed value and then reporting it to the JavaScriptCore virtual machine using the [`addManagedReference(_:withOwner:)`](../jsvirtualmachine/addmanagedreference%28_,withowner%29.md) method.
 

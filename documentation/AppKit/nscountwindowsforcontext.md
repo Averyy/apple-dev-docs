@@ -15,7 +15,7 @@ Counts the number of onscreen windows belonging to a particular application.
 extern void NSCountWindowsForContext(NSInteger context, NSInteger *count);
 ```
 
-#### Discussion
+## Discussion
 
 Counts the number of onscreen windows belonging to a particular application, identified by `context`, which is a window server connection ID. The function returns the number by reference in `count`.
 

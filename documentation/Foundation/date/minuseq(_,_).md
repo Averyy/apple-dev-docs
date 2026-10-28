@@ -21,7 +21,7 @@ Subtract a `TimeInterval` from a `Date`.
 static func -= (lhs: inout Date, rhs: TimeInterval)
 ```
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**: This only adjusts an absolute value. If you wish to add calendrical concepts like hours, days, months then you must use a `Calendar`. That will take into account complexities like daylight saving time, months with different numbers of days, and more.
 

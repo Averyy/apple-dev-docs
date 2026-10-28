@@ -19,11 +19,11 @@
 static SPScaledPose3DFloat SPScaledPose3DFloatTranslate(SPScaledPose3DFloat scaledPose, SPVector3DFloat offset);
 ```
 
-#### Return Value
+## Return Value
 
 A scaled pose that’s offset by the @p x, @p y, and @p z of the vector.
 
-#### Discussion
+## Discussion
 
 Returns a scaled pose with a position that is offset from that of the source scaled pose.
 

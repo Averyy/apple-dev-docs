@@ -24,11 +24,11 @@ class func success(with resolvedVolume: Measurement<UnitVolume>) -> Self
 + (instancetype) successWithResolvedVolume:(NSMeasurement<NSUnitVolume *> *) resolvedVolume;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INVolumeResolutionResult`](../involumeresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you can resolve a parameter successfully to a value in your own internal data structures.
 

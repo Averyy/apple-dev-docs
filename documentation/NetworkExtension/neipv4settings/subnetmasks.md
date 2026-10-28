@@ -24,7 +24,7 @@ var subnetMasks: [String] { get }
 @property (readonly) NSArray<NSString *> * subnetMasks;
 ```
 
-#### Discussion
+## Discussion
 
 Each mask in this array is combined with the IP address in the corresponding index in `addresses` to specify an IPv4 network that the TUN interface is (virtually) connected to.
 

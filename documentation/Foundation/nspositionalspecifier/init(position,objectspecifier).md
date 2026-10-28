@@ -20,7 +20,7 @@ init(position: NSPositionalSpecifier.InsertionPosition, objectSpecifier specifie
 - (instancetype) initWithPosition:(NSInsertionPosition) position objectSpecifier:(NSScriptObjectSpecifier *) specifier;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized positional specifier with the position specified by `position` relative to the object specified by `specifier`.
 

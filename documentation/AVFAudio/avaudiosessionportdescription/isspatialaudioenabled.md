@@ -24,7 +24,7 @@ var isSpatialAudioEnabled: Bool { get }
 @property (readonly, getter=isSpatialAudioEnabled) BOOL spatialAudioEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 This property is only relevant in the context of ports that have a small number of hardware channels (typically 2), but have enhanced capabilities for playing multichannel content.
 

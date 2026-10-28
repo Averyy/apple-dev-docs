@@ -12,7 +12,7 @@ Display an interface for viewing, selecting, and editing calendar events and rem
 - Mac Catalyst 13.0+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 On iOS, use the EventKitUI framework to show calendar and reminder information to the user modally. EventKitUI provides view controllers for viewing and editing calendar and reminder information, choosing which calendar to view, and for determining whether to present calendars as read-only or readable and writeable.
 

@@ -23,7 +23,7 @@ class var activeMicrophoneMode: AVCaptureDevice.MicrophoneMode { get }
 @property (class, readonly) AVCaptureMicrophoneMode activeMicrophoneMode;
 ```
 
-#### Discussion
+## Discussion
 
 The value may differ from the value of the [`preferredMicrophoneMode`](./preferredmicrophonemode.md) property if the app’s active audio route doesn’t support the mode.
 

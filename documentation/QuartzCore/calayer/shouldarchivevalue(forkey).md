@@ -24,11 +24,11 @@ func shouldArchiveValue(forKey key: String) -> Bool
 - (BOOL) shouldArchiveValueForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the specified property should be archived or [`false`](../../Swift/false.md) if it should not.
 
-#### Discussion
+## Discussion
 
 The default implementation returns [`true`](../../Swift/true.md).
 

@@ -15,7 +15,7 @@ The MPEG-D Unified Speech and Audio Coding format.
 MPEGD_USAC
 ```
 
-#### Discussion
+## Discussion
 
 This format uses no flags.
 

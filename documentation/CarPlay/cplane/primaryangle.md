@@ -23,7 +23,7 @@ var primaryAngle: Measurement<UnitAngle> { get set }
 @property (nonatomic, strong) NSMeasurement<NSUnitAngle *> * primaryAngle;
 ```
 
-#### Discussion
+## Discussion
 
 If `primaryAngle` is present it can’t be included in [`secondaryAngles`](./secondaryangles.md).
 

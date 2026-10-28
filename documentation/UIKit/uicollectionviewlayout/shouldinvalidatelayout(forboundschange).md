@@ -23,11 +23,11 @@ func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool
 - (BOOL) shouldInvalidateLayoutForBoundsChange:(CGRect) newBounds;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the collection view requires a layout update or [`false`](../../Swift/false.md) if the layout does not need to change.
 
-#### Discussion
+## Discussion
 
 The default implementation of this method returns [`false`](../../Swift/false.md). Subclasses can override it and return an appropriate value based on whether changes in the bounds of the collection view require changes to the layout of cells and supplementary views.
 

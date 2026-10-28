@@ -15,7 +15,7 @@ A structure that contains upload metadata from the content server.
 struct Metadata
 ```
 
-#### Overview
+## Overview
 
 You receive this type as the return value from the [`upload(_:)`](../upload%28_%29.md) method of [`RCSService`](../../rcsservice.md).
 

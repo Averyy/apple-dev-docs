@@ -21,11 +21,11 @@ Initializes a newly allocated array by placing in it the objects in the argument
 - (instancetype) initWithObjects:(ObjectType) firstObj;
 ```
 
-#### Return Value
+## Return Value
 
 An array initialized to include the objects in the argument list. The returned object might be different than the original receiver.
 
-#### Discussion
+## Discussion
 
 Pass comma-separated list of trailing variadic arguments as additional objects, ending with `nil`.
 

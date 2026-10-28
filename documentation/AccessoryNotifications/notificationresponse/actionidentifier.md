@@ -15,7 +15,7 @@ An identifier for the action the person took with the notification.
 var actionIdentifier: String
 ```
 
-#### Discussion
+## Discussion
 
 This value matches one of the action identifiers in the notification’s [`actions`](../accessorynotification/actions.md) array.
 

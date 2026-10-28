@@ -21,7 +21,7 @@ func vSnaxpy(_ n: Int32, _ m: Int32, _ a: UnsafePointer<vFloat>, _ x: UnsafePoin
 extern void vSnaxpy(int32_t n, int32_t m, const vFloat *a, const vFloat *x, vFloat *y);
 ```
 
-#### Discussion
+## Discussion
 
 For i = 0 to n-1, the elements of `x` are multiplied by `a`[i] and added to the corresponding elements of `y`.  The results are accumulated and stored in `y`.
 

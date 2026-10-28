@@ -15,11 +15,11 @@ Set filesystem-private mount data.
 void vfs_setfsprivate(mount_t mp, void *mntdata);
 ```
 
-#### Return Value
+## Return Value
 
 Void.
 
-#### Discussion
+## Discussion
 
 A filesystem generally has an internal mount structure which it attaches to the VFS-level mount structure as part of the mounting process.
 

@@ -20,7 +20,7 @@ struct SceneReconstruction
 enum ARSceneReconstruction : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 When you set one of the these values onto a world-tracking configuration’s [`sceneReconstruction`](../arworldtrackingconfiguration/scenereconstruction.md) property, ARKit provides you with a mesh that models the real-world surrounding the user.
 

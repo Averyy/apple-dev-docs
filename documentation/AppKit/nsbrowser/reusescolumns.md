@@ -19,7 +19,7 @@ var reusesColumns: Bool { get set }
 @property BOOL reusesColumns;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the `NSMatrix` objects aren’t freed when their columns are unloaded, so they can be reused.
 

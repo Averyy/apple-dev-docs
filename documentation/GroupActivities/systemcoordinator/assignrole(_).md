@@ -15,7 +15,7 @@ Assigns the given spatial template role to the local participant.
 final func assignRole(_ role: some SpatialTemplateRole)
 ```
 
-#### Discussion
+## Discussion
 
 For example, in a table tennis game with two teams you might have the following:
 

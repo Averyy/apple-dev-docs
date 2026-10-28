@@ -25,7 +25,7 @@ let MPMediaPlaylistPropertyPersistentID: String
 extern NSString * const MPMediaPlaylistPropertyPersistentID;
 ```
 
-#### Discussion
+## Discussion
 
 Value is an [`NSNumber`](../Foundation/nsnumber.md) object containing a `UInt64_t` (unsigned long long). Can be used to build a media property predicate as described in [`MPMediaQuery`](./mpmediaquery.md).
 

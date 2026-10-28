@@ -17,7 +17,7 @@ A description of the setting that controls which apps a user can launch on their
 static let blockedApplications: SettingMetadata<Set<Application>>
 ```
 
-#### Discussion
+## Discussion
 
 Use `blockedApplications` to access the metadata for [`blockedApplications`](./blockedapplications-swift.property.md). The default value is an empty set.
 

@@ -13,11 +13,11 @@
 errno_t sock_receive(socket_t so, struct msghdr *msg, int flags, size_t *recvdlen);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success, EWOULDBLOCK if non-blocking and operation would cause the thread to block, otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Receive data from a socket. Similar to recvmsg. See 'man 2 recvmsg' for more information about receiving data.
 

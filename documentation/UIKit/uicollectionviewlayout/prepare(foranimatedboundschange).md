@@ -23,7 +23,7 @@ func prepare(forAnimatedBoundsChange oldBounds: CGRect)
 - (void) prepareForAnimatedBoundsChange:(CGRect) oldBounds;
 ```
 
-#### Discussion
+## Discussion
 
 The collection view calls this method before performing any animated changes to the view’s bounds or before the animated insertion or deletion of items. This method is the layout object’s opportunity to perform any calculations needed to prepare for those animated changes. Specifically, you might use this method to calculate the initial or final positions of inserted or deleted items so that you can return those values when asked for them.
 

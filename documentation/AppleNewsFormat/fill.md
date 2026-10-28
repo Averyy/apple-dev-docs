@@ -19,7 +19,7 @@ object Fill
 
 - [Nesting Components in an Article](../AppleNews/nesting-components-in-an-article.md)
 
-#### Discussion
+## Discussion
 
 This is an abstract definition. Don’t use this object type directly; use only the objects that extend `Fill,` for example [`GradientFill`](./gradientfill.md), [`ImageFill`](./imagefill.md), `and` [`VideoFill`](./videofill.md).
 

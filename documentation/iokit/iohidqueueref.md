@@ -14,7 +14,7 @@
 typedef struct __IOHIDQueue IOHIDQueueRef;
 ```
 
-#### Overview
+## Overview
 
 This is the type of a reference to the IOHIDQueue.
 

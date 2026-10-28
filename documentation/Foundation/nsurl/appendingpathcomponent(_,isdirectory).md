@@ -29,11 +29,11 @@ func appendingPathComponent(_ pathComponent: String, isDirectory: Bool) -> URL?
 
 - [Improving performance and stability when accessing the file system](../improving-performance-and-stability-when-accessing-the-file-system.md)
 
-#### Return Value
+## Return Value
 
 A new URL with `pathComponent` appended.
 
-#### Discussion
+## Discussion
 
 If the original URL does not end with a forward slash and `pathComponent` does not begin with a forward slash, a forward slash is inserted between the two parts of the returned URL, unless the original URL is the empty string.
 

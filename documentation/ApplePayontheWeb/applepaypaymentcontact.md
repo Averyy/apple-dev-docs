@@ -35,7 +35,7 @@ dictionary ApplePayPaymentContact {
 
 - [Apple Pay on the Web Version 3 Release Notes](./apple-pay-on-the-web-version-3-release-notes.md)
 
-#### Overview
+## Overview
 
 The [`phoneticGivenName`](./applepaypaymentcontact/phoneticgivenname.md) and [`phoneticFamilyName`](./applepaypaymentcontact/phoneticfamilyname.md) fields are available starting in Apple Pay version 3.
 

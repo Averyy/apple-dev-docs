@@ -14,7 +14,7 @@ Uploads a message to use for retention messaging.
 - [Setting up retention messages](./setting-up-retention-messages.md)
 - [Identifying rate limits](./identifying-rate-limits.md)
 
-#### Discussion
+## Discussion
 
 Call this endpoint to upload the text for retention messages. You provide a unique `messageIdentifier` to identify each message you upload. You can optionally include an image and bullet points with the message.
 
@@ -44,7 +44,7 @@ The maximum number of messages you can configure for each app is 2000. For examp
 
 This endpoint isn’t idempotent. If you have a previously configured message with the same `messageIdentifier`, the endpoint returns [`MessageAlreadyExistsError`](./messagealreadyexistserror.md).
 
-##### Determine whether a message is ready to display
+### Determine whether a message is ready to display
 
 Immediately after you upload an message, its [`messageState`](./messagestate.md) is `PENDING`. Apple checks the message, and sets the message state to `APPROVED` to indicate the system can display it in retention messaging. Call the [`Get Message List`](./get-message-list.md) endpoint to check the current state of all messages. If a message includes an image, call [`Get Image List`](./get-image-list.md) to check the current state of the image separately. Both the message and its image, if any, need to be in an `APPROVED` state before the system can display a message.
 

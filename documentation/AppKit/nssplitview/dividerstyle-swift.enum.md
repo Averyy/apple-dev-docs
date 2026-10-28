@@ -19,7 +19,7 @@ enum DividerStyle
 enum NSSplitViewDividerStyle : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 These constants specify the possible divider styles that [`NSSplitView`](../nssplitview.md) uses.
 

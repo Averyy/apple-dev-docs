@@ -11,13 +11,13 @@ Force the current user to log out of a device.
 - iPadOS 9.3+
 - Mac Catalyst 9.3+
 
-#### Discussion
+## Discussion
 
 After logging out the user, MDM commands aren’t available on the device for up to 2 minutes.
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command availability
+### Command availability
 
 |  |  |
 | --- | --- |
@@ -27,7 +27,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | N/A |
 | Required access right | N/A |
 
-##### Example request and response
+### Example request and response
 
 **Request**:
 

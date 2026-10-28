@@ -24,7 +24,7 @@ var rightMatrixOrigin: MTLOrigin { get set }
 @property (nonatomic, readwrite) MTLOrigin rightMatrixOrigin;
 ```
 
-#### Discussion
+## Discussion
 
 The origin, relative to `(0,0)`, at which to start reading values. If a different origin is desired, you must modify this property before encoding the matrix multiplication kernel. The default value is `(0,0,0)` (the `z` value must always be 0).
 

@@ -21,7 +21,7 @@ The total number of detected contours.
 var contourCount: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this value to determine the number of indices available for calling [`contourAtIndex(_:)`](./contouratindex%28_%29.md).
 

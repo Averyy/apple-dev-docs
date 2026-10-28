@@ -15,10 +15,10 @@ Creates a property with no default value, parsing with the given closure.
 
 ```swift
 @preconcurrency
-init(help: ArgumentHelp? = nil, completion: CompletionKind? = nil, transform: @escaping @Sendable (String) throws -> Value)
+init(help: ArgumentHelp? = nil, completion: CompletionKind? = nil, transform: @Sendable @escaping (String) throws -> Value)
 ```
 
-#### Discussion
+## Discussion
 
 This method is called to initialize an `Argument` with no default value such as:
 
@@ -40,11 +40,11 @@ var foo: String
   Creates a property with no default value.
 - [init<T>(help: ArgumentHelp?, completion: CompletionKind?)](./init%28help,completion%29-4p94d.md)
   Creates an optional property that reads its value from an argument.
-- [init<T>(help: ArgumentHelp?, completion: CompletionKind?, transform: (String) throws -> T)](./init%28help,completion,transform%29-7yn32.md)
+- [init<T>(help: ArgumentHelp?, completion: CompletionKind?, transform: @Sendable (String) throws -> T)](./init%28help,completion,transform%29-7yn32.md)
   Creates an optional property that reads its value from an argument.
 - [init(wrappedValue: Value, help: ArgumentHelp?, completion: CompletionKind?)](./init%28wrappedvalue,help,completion%29-9yifn.md)
   Creates a property with a default value provided by standard Swift default value syntax.
-- [init(wrappedValue: Value, help: ArgumentHelp?, completion: CompletionKind?, transform: (String) throws -> Value)](./init%28wrappedvalue,help,completion,transform%29-667t1.md)
+- [init(wrappedValue: Value, help: ArgumentHelp?, completion: CompletionKind?, transform: @Sendable (String) throws -> Value)](./init%28wrappedvalue,help,completion,transform%29-667t1.md)
   Creates a property with a default value provided by standard Swift default value syntax, parsing with the given closure.
 
 

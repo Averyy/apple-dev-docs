@@ -21,7 +21,7 @@ nonisolated
 func swipeActions(edge: HorizontalEdge = .trailing, allowsFullSwipe: Bool = true, @ContentBuilder content: () -> some View, onPresentationChanged: @escaping (Bool) -> Void) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this overload when you need to react to the swipe actions’s visibility — for example, to dim the row or update surrounding chrome while actions are showing.
 

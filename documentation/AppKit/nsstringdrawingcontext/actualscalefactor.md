@@ -19,7 +19,7 @@ var actualScaleFactor: CGFloat { get }
 @property (readonly) CGFloat actualScaleFactor;
 ```
 
-#### Discussion
+## Discussion
 
 If you specified a custom value in the [`minimumScaleFactor`](./minimumscalefactor.md) property, when drawing is complete, this property contains the actual scale factor value that was used to draw the string.
 

@@ -24,7 +24,7 @@ func IOSurfaceLock(_ buffer: IOSurfaceRef, _ options: IOSurfaceLockOptions, _ se
 kern_return_t IOSurfaceLock(IOSurfaceRef buffer, IOSurfaceLockOptions options, uint32_t *seed);
 ```
 
-#### Discussion
+## Discussion
 
 The term “lock” is used loosely in this context, and is used along with the “unlock” information to put a bound on CPU access to the raw [`IOSurface`](./iosurface-page.md) data.
 

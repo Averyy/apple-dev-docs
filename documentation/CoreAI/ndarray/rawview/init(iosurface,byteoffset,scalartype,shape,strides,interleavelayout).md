@@ -18,7 +18,7 @@ Initialize a raw view from an existing IOSurface, interpreted as the specified s
 init(ioSurface: borrowing IOSurface, byteOffset: Int = 0, scalarType: NDArray.ScalarType, shape: [Int], strides: [Int] = [], interleaveLayout: NDArray.InterleaveLayout? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 Note that the pixel format of the IOSurface will be ignored and the `scalarType` you specify will be used. However the `shape` argument will be checked with respect to the `height/width` fields of the IOSurface. For the `height` and `width` fields of the IOSurface, they must meet one of the following conditions:
 

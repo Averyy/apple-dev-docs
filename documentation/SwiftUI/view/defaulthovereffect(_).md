@@ -27,11 +27,11 @@ nonisolated
 func defaultHoverEffect(_ effect: some CustomHoverEffect) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that uses this effect as the default hover effect.
 
-#### Discussion
+## Discussion
 
 Use this modifier to set a specific hover effect for all views with the [`hoverEffect(_:)`](./hovereffect%28_%29.md) modifier applied within a view. The default effect is typically used when no [`HoverEffect`](../hovereffect.md) was provided or if [`automatic`](../hovereffect/automatic.md) is specified.
 

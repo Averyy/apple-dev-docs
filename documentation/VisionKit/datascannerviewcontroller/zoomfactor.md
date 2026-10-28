@@ -18,7 +18,7 @@ The zoom factor for the live video in the camera.
 var zoomFactor: Double { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to a value between the [`minZoomFactor`](./minzoomfactor.md) and [`maxZoomFactor`](./maxzoomfactor.md) properties.
 

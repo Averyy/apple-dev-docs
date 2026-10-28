@@ -15,7 +15,7 @@ Perform some operation on all buffers associated with a vnode.
 void buf_iterate(vnode_t vp, int (*callout)(buf_t, void *), int flags, void *arg);
 ```
 
-#### Return Value
+## Return Value
 
 void.
 

@@ -5,13 +5,13 @@
 
 Gather crash reports and device logs from the App Store, TestFlight, and directly from devices.
 
-#### Overview
+## Overview
 
 After your app is distributed to customers, learn ways to improve it by collecting crash reports and diagnostic logs. If a customer reports an issue with your app, use the Crashes organizer in Xcode to get a report about the issue, as described in [How are reports created?](https://help.apple.com/xcode/mac/current/#/dev675635e70) If the Crashes organizer doesn’t contain the diagnostic information you need or is unavailable to you, the customer can collect logs from their device and share them directly with you to resolve the issue. Once you have a crash report, you may need to add identifiable symbol information to the crash report—see [Adding identifiable symbol names to a crash report](./adding-identifiable-symbol-names-to-a-crash-report.md) for more information.
 
 For issues that aren’t crashes, inspect the operating system’s console log to find important information for diagnosing the issue’s source.
 
-##### Collect crash reports from TestFlight and the App Store
+### Collect crash reports from TestFlight and the App Store
 
 TestFlight and the App Store collect crash reports for every submitted version of your app. Crash reports automatically contain identifiable symbol information if you include symbol information when submitting a build to the App Store. Review [Building your app to include debugging information](./building-your-app-to-include-debugging-information.md) for the recommended settings.
 
@@ -24,19 +24,19 @@ The following crash report types aren’t available through the Crashes organize
 - Thermal events, where a device overheats because an app uses too much CPU
 - Jetsam events, where an app has high memory use
 
-##### Get coding assistant recommendations for crash issues
+### Get coding assistant recommendations for crash issues
 
 After selecting a crash report in the Crashes organizer, click Generate Recommendations in the Inspector to get assisted triage in Xcode. After selecting a workspace, Xcode opens your project and pastes the crash stack trace into coding assistant to help you identify and fix the root cause of the crash.
 
 ![A screenshot showing the Generate Recommendations button in the Inspector of the Crashes reports pane in Xcode Organizer.](https://developer.apple.com/tutorials/images/com.apple.Xcode/acquiring-crash-reports-and-diagnostic-logs-1@2x.png)
 
-##### Transfer crash reports and device logs to a Mac
+### Transfer crash reports and device logs to a Mac
 
 If you have access to the device on which your app crashes, you can transfer diagnostic logs by connecting the device to your Mac. You can view these logs using the Devices and Simulators window in Xcode, described in [About Devices and Simulators window](https://help.apple.com/xcode/mac/current/#/dev7b20475ba).
 
 If a customer reports a crash, they can transfer the crash report to either a Mac or Windows computer. See [Find device crash and energy logs on a Mac or Windows computer](https://help.apple.com/xcode/mac/current/#/dev0f3181c2c).
 
-##### Locate crash reports and memory logs on the device
+### Locate crash reports and memory logs on the device
 
 If a customer reports a crash in your app and you don’t have a crash report for it in the Crashes organizer, ask the customer to e-mail you the crash report from their device.
 
@@ -59,11 +59,11 @@ To locate and email crash reports for macOS and Mac Catalyst apps:
 5. Select Reveal in Finder.
 6. Drag the file displayed in Finder to Mail to send the crash report as a mail attachment.
 
-##### Create a crash report while debugging
+### Create a crash report while debugging
 
 If you encounter a crash while debugging your app using Xcode, the debugger intercepts the crash so you can inspect your app’s state. If you’d like to gather the full crash report for the issue, detach the debugger, either by using the Debug > Detach menu item in Xcode, or by issuing the `detach` command in the debugging console. This allows the app to finish crashing and lets the operating system generate the crash report. See [Locate crash reports and memory logs on the device](./acquiring-crash-reports-and-diagnostic-logs.md#Locate-crash-reports-and-memory-logs-on-the-device) for how to collect the crash report file.
 
-##### Access device console logs
+### Access device console logs
 
 If a customer reports an issue in your app that isn’t a crash, look at the device’s console log for additional information about the issue.
 
@@ -76,7 +76,7 @@ To access a device’s console logs:
 5. Look for logs that pertain to the issue from around the time you reproduced the issue.
 6. Use information from the log as clues to further guide your investigation of the issue.
 
-##### Share crash reports to receive help
+### Share crash reports to receive help
 
 If you need assistance debugging a crash, extract crash reports from the Xcode organizer to share. In the Xcode organizer, Control-click the crash and choose Show in Finder to reveal the Xcode crashpoint document (`.xccrashpoint`) in Finder. Then, Control-click on that document and choose Show Package Contents. In the resulting Finder window, find a crash report (`.crash`) that matches the crash you’re investigating.
 

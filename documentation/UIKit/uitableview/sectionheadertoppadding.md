@@ -23,7 +23,7 @@ var sectionHeaderTopPadding: CGFloat { get set }
 @property (nonatomic) CGFloat sectionHeaderTopPadding;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`automaticDimension`](./automaticdimension.md).
 

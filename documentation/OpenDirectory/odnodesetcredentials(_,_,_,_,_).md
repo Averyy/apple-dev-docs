@@ -20,11 +20,11 @@ func ODNodeSetCredentials(_ node: ODNodeRef!, _ recordType: String!, _ recordNam
 extern bool ODNodeSetCredentials(ODNodeRef node, ODRecordType recordType, CFStringRef recordName, CFStringRef password, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the credentials are successfully set; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 If this function fails, the previous credentials for the node are used.
 

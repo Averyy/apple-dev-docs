@@ -5,11 +5,11 @@
 
 The action’s unique identifier.
 
-#### Overview
+## Overview
 
 The default value is `Group`.
 
-##### Declaration
+### Declaration
 
 ```other
 uniform token info:id = "Group"

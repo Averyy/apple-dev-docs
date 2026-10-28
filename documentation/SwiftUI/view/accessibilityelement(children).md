@@ -22,7 +22,7 @@ nonisolated
 func accessibilityElement(children: AccessibilityChildBehavior = .ignore) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 See also:
 

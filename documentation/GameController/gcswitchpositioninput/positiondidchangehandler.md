@@ -25,7 +25,7 @@ var positionDidChangeHandler: ((any GCPhysicalInputElement, any GCSwitchPosition
 @property (atomic, copy, nullable) void (^positionDidChangeHandler)(id<GCPhysicalInputElement>element, id<GCSwitchPositionInput>input, NSInteger position);
 ```
 
-#### Discussion
+## Discussion
 
 The block’s parameters are:
 

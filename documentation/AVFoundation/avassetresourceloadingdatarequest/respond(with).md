@@ -24,7 +24,7 @@ func respond(with data: Data)
 - (void) respondWithData:(NSData *) data;
 ```
 
-#### Discussion
+## Discussion
 
 This method may be invoked multiple times on the same instance of `AVAssetResourceLoadingDataRequest` to provide the full range of requested data incrementally. Upon each invocation, the value of the [`currentOffset`](./currentoffset.md) property is updated to match the amount of data provided.
 

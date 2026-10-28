@@ -25,7 +25,7 @@ func turnBasedMatchmakerViewControllerWasCancelled(_ viewController: GKTurnBased
 - (void) turnBasedMatchmakerViewControllerWasCancelled:(GKTurnBasedMatchmakerViewController *) viewController;
 ```
 
-#### Discussion
+## Discussion
 
 This method needs to dismiss the view controller.
 

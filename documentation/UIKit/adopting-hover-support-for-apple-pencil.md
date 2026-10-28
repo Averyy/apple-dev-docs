@@ -12,11 +12,11 @@ Enhance user feedback for your iPadOS app with a hover preview for Apple Pencil 
 - Mac Catalyst 16.1+
 - Xcode 14.1+
 
-#### Overview
+## Overview
 
 This sample shows how to add support for hover gestures with Apple Pencil. The app is a simple drawing tool that allows a person to draw strokes on a blank canvas. When a person hovers the Apple Pencil slightly above the drawing canvas, the app uses hover gestures to render a visual preview of where the Apple Pencil touches down to draw a stroke on the canvas.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 Although the sample app’s basic functionality is available in Simulator, running the project with physical devices is recommended to demonstrate the full capabilities of the hardware. Run this project with the following devices:
 
@@ -31,7 +31,7 @@ To run the sample code project:
 - In the Scheme menu, choose the connected iPad Pro.
 - Run the app, and use Apple Pencil to interact with the app.
 
-##### Create a gesture recognizer for drawing
+### Create a gesture recognizer for drawing
 
 The sample project uses a *long-press gesture recognizer*, which reacts when a person presses and holds a touch for a minimum period of time, to draw strokes with Apple Pencil.
 
@@ -76,7 +76,7 @@ case .changed:
 
 To render the strokes on the canvas, the sample calls `updatePath(point: CGPoint)`, which updates the Bezier path associated with the current stroke and renders the visual output to a [`CAShapeLayer`](../QuartzCore/cashapelayer.md).
 
-##### Create a gesture recognizer for hover preview
+### Create a gesture recognizer for hover preview
 
 The sample project uses a hover gesture recognizer to generate a visual preview of the stroke before Apple Pencil touches down on the iPad screen. A *hover gesture recognizer* reacts when a pointer from a pointing device such as Apple Pencil moves over a user-interface element. When a person hovers the Apple Pencil a short distance above the iPad screen, the app generates a preview.
 
@@ -92,7 +92,7 @@ The hover preview implementation is in the `hoverGesture(_:)` method. This metho
 guard !isDrawing else { return }
 ```
 
-##### Update the hover preview
+### Update the hover preview
 
 The sample changes the opacity, or *alpha*, of the hover preview effect according to the distance the Apple Pencil hovers above the iPad screen. When Apple Pencil is farther from the screen, the preview alpha is lower, which makes the visual effect more subtle. When Apple Pencil is closer to the screen, the preview alpha is higher, which makes the visual effect more prominent.
 
@@ -108,7 +108,7 @@ previewAlpha = 1.0 - max(zOffset - fadeZOffset, 0.0) / (maxPreviewZOffset - fade
 
 This line of code calculates the preview alpha. When Apple Pencil is closer to the screen than `fadeZOffset`, the preview alpha is `1.0`, which makes the visual effect fully opaque. As Apple Pencil moves farther away than `fadeZOffset`, the alpha begins to decrease and eventually reaches `0.0`, which causes the visual preview to fade and disappear.
 
-##### Configure different behaviors for input types
+### Configure different behaviors for input types
 
 By default, hover gestures work with pointing devices such as trackpads as well as Apple Pencil. For example, running the sample code project on an iPad with a connected trackpad renders a hover preview when the pointer passes over the drawing canvas. However, this sample provides a different hover experience for Apple Pencil than for a trackpad, so the default behavior might be unsuitable for trackpad input.
 

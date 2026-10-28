@@ -26,7 +26,7 @@ class var screens: [XCUIScreen] { get }
 @property (class, copy, readonly) NSArray<XCUIScreen *> * screens;
 ```
 
-#### Discussion
+## Discussion
 
 The first screen in the array represents the main screen.
 

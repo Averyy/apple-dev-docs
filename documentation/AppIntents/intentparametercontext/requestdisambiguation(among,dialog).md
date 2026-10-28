@@ -23,7 +23,7 @@ func requestDisambiguation(among itemsToDisambiguate: [Value.ValueType], dialog:
 
 Available when `Value` conforms to `_IntentValue` and `Sendable`.
 
-#### Return Value
+## Return Value
 
 The value supplied by the user
 

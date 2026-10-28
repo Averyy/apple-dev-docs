@@ -19,7 +19,7 @@ var rowClass: AnyClass { get set }
 @property (assign) Class rowClass;
 ```
 
-#### Discussion
+## Discussion
 
 The default is `NSMutableDictionary`.
 

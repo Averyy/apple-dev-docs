@@ -27,11 +27,11 @@ class func dataFromPropertyList(_ plist: Any, format: PropertyListSerialization.
 + (NSData *) dataFromPropertyList:(id) plist format:(NSPropertyListFormat) format errorDescription:(NSString **) errorString;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSData` object containing `plist` in the format specified by `format`.
 
-#### Discussion
+## Discussion
 
 This method is obsolete and will be deprecated soon. Use [`data(fromPropertyList:format:options:)`](./data%28frompropertylist,format,options%29.md) instead.
 

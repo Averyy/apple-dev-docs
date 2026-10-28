@@ -23,7 +23,7 @@ class let enabledStatusDidChangeNotification: NSNotification.Name
 extern NSNotificationName const UILargeContentViewerInteractionEnabledStatusDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 Observe this notification to know whether to enable or disable your custom interaction behaviors. For example, if you add an interaction to a button that needs to cooperate with other gesture recognizers when the large content viewer settings are enabled. This notification lets you enable or disable the interaction accordingly.
 

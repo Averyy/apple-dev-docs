@@ -24,11 +24,11 @@ func mappedElementAlias(forPhysicalInputName inputName: String) -> String
 - (NSString *) mappedElementAliasForPhysicalInputName:(NSString *) inputName;
 ```
 
-#### Return Value
+## Return Value
 
 The name of the input element to which the user remaps the physical element, or `nil` if the user doesn’t remap the physical element.
 
-#### Discussion
+## Discussion
 
 Use this method to get the alias for an input element. For example, if the user remaps a physical press of the controller’s A button to button B, then passing [`GCInputButtonA`](../gcinputbuttona-8z15w.md) to this method returns [`GCInputButtonB`](../gcinputbuttonb-6z361.md).
 

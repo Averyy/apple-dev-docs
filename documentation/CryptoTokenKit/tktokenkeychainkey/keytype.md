@@ -25,7 +25,7 @@ var keyType: String { get set }
 @property (copy) NSString * keyType;
 ```
 
-#### Discussion
+## Discussion
 
 This property is equivalent to the `kSecAttrKeyType` type attribute.
 

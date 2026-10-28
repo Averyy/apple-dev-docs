@@ -24,7 +24,7 @@ var maxFragmentCallStackDepth: Int { get set }
 @property (nonatomic, readwrite) NSUInteger maxFragmentCallStackDepth;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is 1.
 

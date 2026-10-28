@@ -17,7 +17,7 @@ Loads document data from a given file wrapper.
 - (BOOL) loadFileWrapperRepresentation:(NSFileWrapper *) wrapper ofType:(NSString *) type;
 ```
 
-#### Discussion
+## Discussion
 
 Loads document data in file wrapper `wrapper` of type `docType` into the receiver, displays it in windows, and returns whether the operation was successful. If `wrapper` is a simple file, it invokes [`loadDataRepresentation:ofType:`](./loaddatarepresentation_oftype_.md) to load the data. If `wrapper` is a directory, it returns [`false`](../../Swift/false.md) by default; subclasses can override to handle file wrappers that are directories. This method is typically invoked by [`readFromFile:ofType:`](./readfromfile_oftype_.md) after it creates an NSData object from the contents of the file.
 

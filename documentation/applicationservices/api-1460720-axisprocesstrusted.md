@@ -19,7 +19,7 @@ func AXIsProcessTrusted() -> Bool
 Boolean AXIsProcessTrusted(void);
 ```
 
-#### Return Value
+## Return Value
 
 Returns TRUE if the current process is a trusted accessibility client, FALSE if it is not.
 

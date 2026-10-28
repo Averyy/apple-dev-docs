@@ -24,7 +24,7 @@ typealias VTDecompressionOutputCallback = (UnsafeMutableRawPointer?, UnsafeMutab
 typedef void (*)(void *, void *, int, enum VTDecodeInfoFlags, struct __CVBuffer *, CMTime, CMTime) VTDecompressionOutputCallback;
 ```
 
-#### Discussion
+## Discussion
 
 When you create a decompression session, you pass in a callback function to be called for decompressed frames.  This function is not necessarily called in display order.
 

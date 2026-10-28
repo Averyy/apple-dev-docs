@@ -21,7 +21,7 @@ func take(_ array: MLXArray, _ indices: MLXArray, axis: Int, stream: StreamOrDev
 
 - [Converting From Python](./converting-python.md)
 
-#### Discussion
+## Discussion
 
 The elements are taken from `indices` along the specified axis.
 
@@ -32,7 +32,7 @@ let array = MLXArray(0 ..< 12, [3, 4])
 let col = array.take([0, 2], axis: 1)
 ```
 
-##### See Also
+### See Also
 
 - [`take(_:_:stream:)`](./take%28_,_,stream%29.md)
 - [`take(_:axis:stream:)`](./mlxarray/take%28_,axis,stream%29.md)

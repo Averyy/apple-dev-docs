@@ -12,11 +12,11 @@ Configure your navigation app to work with CarPlay by displaying your custom map
 - Mac Catalyst 15.4+
 - Xcode 15.0+
 
-#### Overview
+## Overview
 
 Coastal Roads is a sample navigation app that demonstrates how to display a custom map and navigation instructions in a CarPlay–enabled vehicle. Coastal Roads integrates with the CarPlay framework by implementing the map and additional `CPTemplate` subclasses, such as [`CPGridTemplate`](./cpgridtemplate.md) and [`CPListTemplate`](./cplisttemplate.md). This sample’s iOS app component provides a logging interface to help you understand the life cycle of a CarPlay app.
 
-##### Handle Communication with CarPlay
+### Handle Communication with CarPlay
 
 After the app connects to CarPlay, it immediately sets a root template to display content onscreen. The sample sets the root template on the `CPInterfaceController` when the app connects to CarPlay. In all navigation apps, the root template must be an instance of `CPMapTemplate` and contain no additional graphics or UI elements.
 
@@ -56,7 +56,7 @@ func interfaceController(_ interfaceController: CPInterfaceController, didConnec
 }
 ```
 
-##### Render a Map as the Base Template
+### Render a Map as the Base Template
 
 Coastal Roads demonstrates various templates in CarPlay. The sample includes an image to serve as the map. All overlays must be a type of template that CarPlay provides. The map must cover the entire screen, which the sample accomplishes using constraints. The `CPMapTemplate` also provides native support for zooming and panning. Additional functionality, such as customizing default button behavior, is available.
 

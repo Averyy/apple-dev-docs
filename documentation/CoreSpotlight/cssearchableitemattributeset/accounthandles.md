@@ -23,7 +23,7 @@ var accountHandles: [String]? { get set }
 @property (copy, nullable) NSArray<NSString *> * accountHandles;
 ```
 
-#### Discussion
+## Discussion
 
 Account handles can include chat handles, email addresses, phone numbers, and so on.
 

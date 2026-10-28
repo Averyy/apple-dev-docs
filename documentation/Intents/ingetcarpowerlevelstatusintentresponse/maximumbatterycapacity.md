@@ -31,7 +31,7 @@ var maximumBatteryCapacity: Measurement<UnitEnergy>? { get set }
 @property (atomic, copy, readwrite, nullable) NSMeasurement<NSUnitEnergy *> * maximumBatteryCapacity;
 ```
 
-#### Discussion
+## Discussion
 
 The value the system displays to the user as 100% battery charge. It can never be less than that of [`currentBatteryCapacity`](./currentbatterycapacity.md).
 

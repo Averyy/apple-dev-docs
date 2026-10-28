@@ -15,7 +15,7 @@ A boolean value that indicates whether any explicit media is allowed.
 readonly attribute Boolean allowsExplicit;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is `true`, explicit media items are allowed.
 

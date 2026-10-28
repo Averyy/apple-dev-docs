@@ -17,7 +17,7 @@ nonisolated
 struct DocumentLaunchView<Actions, DocumentView> where Actions : View, DocumentView : View
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**: To create new documents, set [`UISupportsDocumentBrowser`](../BundleResources/information-property-list/uisupportsdocumentbrowser.md) to `YES` in your app’s information property list. Without this key, document creation doesn’t work.
 

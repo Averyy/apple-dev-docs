@@ -21,7 +21,7 @@ Returns a selection of rows that satisfy a predicate in the columns you select b
 func filter<T>(on columnName: String, _ type: T.Type, _ isIncluded: (T?) throws -> Bool) rethrows -> DataFrame.Slice
 ```
 
-#### Return Value
+## Return Value
 
 A data frame slice that contains the rows that satisfy the predicate.
 

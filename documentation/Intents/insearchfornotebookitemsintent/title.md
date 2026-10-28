@@ -34,7 +34,7 @@ var title: INSpeakableString? { get }
 @property (atomic, copy, readonly, nullable) INSpeakableString * title;
 ```
 
-#### Discussion
+## Discussion
 
 When this property contains a valid string, search for that string in the title text of notes, tasks, or task lists. For notes, use this string to match only the portion of the note that you use to summarize the note to the user.
 

@@ -23,11 +23,11 @@ optional func collectionView(_ collectionView: UICollectionView, shouldSelectIte
 - (BOOL) collectionView:(UICollectionView *) collectionView shouldSelectItemAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the item should be selected or [`false`](../../Swift/false.md) if it should not.
 
-#### Discussion
+## Discussion
 
 The collection view calls this method when the user tries to select an item in the collection view. It does not call this method when you programmatically set the selection.
 

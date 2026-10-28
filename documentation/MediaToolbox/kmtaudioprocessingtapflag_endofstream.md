@@ -24,7 +24,7 @@ var kMTAudioProcessingTapFlag_EndOfStream: MTAudioProcessingTapFlags { get }
 kMTAudioProcessingTapFlag_EndOfStream
 ```
 
-#### Discussion
+## Discussion
 
 This happens when the audio queue is being stopped asynchronously and has finished playing all of its data. Returned from GetSourceAudio and should be propagated on return from the process callback.
 

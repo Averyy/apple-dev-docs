@@ -19,7 +19,7 @@ static let uiElements: NSAccessibility.NotificationUserInfoKey
 extern NSAccessibilityNotificationUserInfoKey const NSAccessibilityUIElementsKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value is an array of accessibility elements for the notification. For example, in the [`layoutChanged`](../notification/layoutchanged.md) notification, use this key to include an array of elements that you add or change.
 

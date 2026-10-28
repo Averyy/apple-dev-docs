@@ -19,7 +19,7 @@ nonisolated
 func appStoreOverlay(isPresented: Binding<Bool>, configuration: @escaping () -> SKOverlay.Configuration) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 You use `appStoreOverlay` to display an overlay that recommends another app. The overlay enables users to instantly view the other app’s page on the App Store.
 

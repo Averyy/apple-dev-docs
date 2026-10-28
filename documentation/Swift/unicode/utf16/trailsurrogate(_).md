@@ -21,11 +21,11 @@ Returns the low-surrogate code unit of the surrogate pair representing the speci
 static func trailSurrogate(_ x: Unicode.Scalar) -> UTF16.CodeUnit
 ```
 
-#### Return Value
+## Return Value
 
 The trailing surrogate code unit of `x` when encoded in UTF-16.
 
-#### Discussion
+## Discussion
 
 Because a Unicode scalar value can require up to 21 bits to store its value, some Unicode scalars are represented in UTF-16 by a pair of 16-bit code units. The first and second code units of the pair, designated *leading* and *trailing* surrogates, make up a *surrogate pair*.
 

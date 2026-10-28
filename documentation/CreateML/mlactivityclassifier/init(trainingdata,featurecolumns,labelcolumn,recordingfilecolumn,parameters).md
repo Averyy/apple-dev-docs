@@ -21,7 +21,7 @@ init(trainingData: MLActivityClassifier.DataSource, featureColumns: [String], la
 init(trainingData: MLDataTable, featureColumns: [String], labelColumn: String, recordingFileColumn: String, parameters: MLActivityClassifier.ModelParameters = ModelParameters(validationData: nil)) throws
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create an activity classifier with an [`MLActivityClassifier.DataSource`](./datasource.md). To configure the training process, initialize the activity classifier with an [`MLActivityClassifier.ModelParameters`](./modelparameters-swift.struct.md) instance. For example, you can explicitly define the validation dataset instead of allowing the model to choose a random selection of your training data. Alternatively, set [`validationData`](./modelparameters-swift.struct/validationdata.md) to `nil` to allow the activity classifier to choose the validation data for you from among your training data. This lets you set other parameters — like [`maximumIterations`](./modelparameters-swift.struct/maximumiterations.md) and [`batchSize`](./modelparameters-swift.struct/batchsize.md) — to nondefault values.
 

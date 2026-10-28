@@ -25,7 +25,7 @@ var copyDescription: ((UnsafeRawPointer?) -> Unmanaged<CFString>?)!
 const struct __CFString *(*)(const void *) copyDescription;
 ```
 
-#### Discussion
+## Discussion
 
 The callback used to create a descriptive string representation of each value in the binary heap. This is used by the [`CFCopyDescription(_:)`](../cfcopydescription%28_%29.md) function. If this field is `NULL`, the binary heap constructs a `CFString` object describing the value based on its pointer value.
 

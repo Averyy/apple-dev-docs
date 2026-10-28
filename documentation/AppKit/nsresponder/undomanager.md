@@ -19,7 +19,7 @@ var undoManager: UndoManager? { get }
 @property (strong, readonly, nullable) NSUndoManager * undoManager;
 ```
 
-#### Discussion
+## Discussion
 
 The  `NSResponder` implementation simply invokes this property on the next responder.
 

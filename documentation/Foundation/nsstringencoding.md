@@ -21,7 +21,7 @@ The following constants are provided by `NSString` as possible string encodings.
 typedef NSUInteger NSStringEncoding;
 ```
 
-#### Discussion
+## Discussion
 
 These values represent the various character encodings supported by the `NSString` classes. This is an incomplete list. Additional encodings are defined in [String Programming Guide for Core Foundation](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFStrings/introCFStrings.html#//apple_ref/doc/uid/10000131i) (see `CFStringEncodingExt.h`); these encodings can be used with `NSString` by first passing the Core Foundation encoding to the [`CFStringConvertEncodingToNSStringEncoding(_:)`](../CoreFoundation/cfstringconvertencodingtonsstringencoding%28_%29.md) function.
 

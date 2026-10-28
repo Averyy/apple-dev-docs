@@ -23,7 +23,7 @@ var attestationObject: Data { get }
 @property (nonatomic, readonly) NSData * attestationObject;
 ```
 
-#### Discussion
+## Discussion
 
 The relying party may use information in the attestation object to assess the origin of a passkey during registration.
 

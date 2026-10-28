@@ -19,7 +19,7 @@ class NSFilePromiseProvider
 @interface NSFilePromiseProvider : NSObject
 ```
 
-#### Overview
+## Overview
 
 A file promise is a possible future file of a specified type.  When you’re working with drag and drop, use promises to indicate intent for future action.  Avoid loading or performing any actions on the file until the promise completes.
 

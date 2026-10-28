@@ -21,7 +21,7 @@ var inputIsMutuallyExclusive: Bool { get set }
 @property (nonatomic, assign, getter=inputIsMutuallyExclusive) BOOL mutuallyExclusiveInput;
 ```
 
-#### Discussion
+## Discussion
 
 If `YES`, only one element of the direction pad can be pressed at a time.
 

@@ -5,11 +5,11 @@
 
 Print debugging messages that a shader generates using shader logging.
 
-#### Overview
+## Overview
 
 With shader logging, you can print debugging messages directly from the shader in your app, to help identify issues you may not catch otherwise. You can view these messages from the Console app, the log command-line tool, or the Xcode debug area.
 
-##### Enable shader logging
+### Enable shader logging
 
 To enable shader logging, you first need to enable the compiler setting in [`MTLCompileOptions`](./mtlcompileoptions.md). You can either do this directly through Xcode, or while building your [`MTLLibrary`](./mtllibrary.md). Shader logging is only available in Metal 3.2 and later. It’s also only available in iOS 18 and later, iPadOS 18 and later, macOS 15 and later, tvOS 18 and later, and visionOS 2 and later.
 
@@ -65,7 +65,7 @@ The `MTL_LOG_LEVEL` variable is the minimum logging level you want to use. The s
 - **`MTLLogLevelError`**: The log level that captures error information.
 - **`MTLLogLevelFault`**: The log level that captures fault information.
 
-##### Generate and view the log messages
+### Generate and view the log messages
 
 After you enable shader logging, add `os_log` functions to your shader to begin generating the log messages:
 
@@ -107,7 +107,7 @@ You can view the shader logs using the Console app, the log command-line tool, o
 
 To view the logs through the Xcode debug console, set the environment variable `MTL_LOG_TO_STDERR` to 1.
 
-##### Use shader logging via the API
+### Use shader logging via the API
 
 The above methods enable shader logging for the entire app. However, if you want to enable logging for a specific command buffer or command queue, you can use the Metal API, [`MTLLogState`](./mtllogstate.md).
 

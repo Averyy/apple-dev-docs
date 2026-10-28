@@ -25,11 +25,11 @@ func CTLineGetOffsetForStringIndex(_ line: CTLine, _ charIndex: CFIndex, _ secon
 extern CGFloat CTLineGetOffsetForStringIndex(CTLineRef line, CFIndex charIndex, CGFloat *secondaryOffset);
 ```
 
-#### Return Value
+## Return Value
 
 The primary offset along the baseline for `charIndex`, or `0.0` if the line does not support string access.
 
-#### Discussion
+## Discussion
 
 This function returns the graphical offset or offsets corresponding to a string index, suitable for movement between adjacent lines or for drawing a custom caret. For moving between adjacent lines, the primary offset can be adjusted for any relative indentation of the two lines; a [`CGPoint`](../CoreFoundation/cgpoint.md) constructed with the adjusted offset for its `x` value and `0.0` for its `y` value is suitable for passing to [`CTLineGetStringIndexForPosition(_:_:)`](./ctlinegetstringindexforposition%28_,_%29.md). For drawing a custom caret, the returned primary offset corresponds to the portion of the caret that represents the visual insertion location for a character whose direction matches the line’s writing direction.
 

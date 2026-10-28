@@ -17,7 +17,7 @@ case hidden
 NSWindowTitleHidden
 ```
 
-#### Discussion
+## Discussion
 
 The window hides the title and moves the toolbar up into the area previously occupied by the title.
 

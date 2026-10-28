@@ -20,7 +20,7 @@ static func after(_ date: Date) -> ActivityUIDismissalPolicy
 
 - [Displaying live data with Live Activities](../displaying-live-data-with-live-activities.md)
 
-#### Discussion
+## Discussion
 
 Provide a date to tell the system when it should remove a Live Activity that ended. While you can provide any date, the system removes a Live Activity that ended after the specified date or after four hours from the moment the Live Activity ended — whichever comes first. When the system removes the Live Activity,  the [`ActivityState`](../activitystate.md) changes to [`ActivityState.dismissed`](../activitystate/dismissed.md).
 

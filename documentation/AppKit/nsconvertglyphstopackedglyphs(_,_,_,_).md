@@ -19,7 +19,7 @@ func NSConvertGlyphsToPackedGlyphs(_ glBuf: UnsafeMutablePointer<NSGlyph>, _ cou
 extern NSInteger NSConvertGlyphsToPackedGlyphs(NSGlyph *glBuf, NSInteger count, NSMultibyteGlyphPacking packing, char *packedGlyphs);
 ```
 
-#### Discussion
+## Discussion
 
 This function takes a buffer of glyphs, specified in the `glBuf` parameter, and packs them into a condensed character array. The character array is returned in the `packedGlyphs` parameter, which should have enough space for at least ((4 * count) + 1) bytes to guarantee that the packed glyphs fit. `count` specifies the number of glyphs in `glBuf`. `packing` specifies how the glyphs are currently packed.
 

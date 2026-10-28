@@ -12,11 +12,11 @@ IOReturn powerOverrideOffPriv(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 A return code that can be ignored by the caller.
 
-#### Overview
+## Overview
 
 When a driver has enabled an override via powerOverrideOnPriv, it can disable it again by calling this method in its superclass. Disabling the override reverts to the default algorithm for determining a device's power state. The superclass will now keep the device at the highest state required by `changePowerStateTo`, `changePowerStateToPriv`, and its children. Turning off the override will initiate a power change if the driver's desired power state is different from the maximum of the power managed driver's desire and the children's desires.
 

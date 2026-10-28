@@ -21,7 +21,7 @@ The level of a header section.
 @property (readonly) NSInteger headerLevel;
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to the number of hash marks (`#`) associated with the header. If the intent is not a header, the value of this property is `0`.
 

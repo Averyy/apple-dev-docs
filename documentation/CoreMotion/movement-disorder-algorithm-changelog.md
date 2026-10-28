@@ -5,17 +5,17 @@
 
 A chronological log of notable changes to the movement disorder algorithm.
 
-#### Overview
+## Overview
 
 The movement disorder algorithm measures and records tremors and dyskinetic symptoms for Parkinson’s disease. For more information on receiving and using this data, see [Getting movement disorder symptom data](./getting-movement-disorder-symptom-data.md).
 
-##### Unreleased
+### Unreleased
 
 - The [`version()`](./cmmovementdisordermanager/version%28%29.md) method for checking the algorithm’s current version is available in watchOS 9.
 
-##### 1.0.0 — 2018-07-17
+### 1.0.0 — 2018-07-17
 
-###### Added
+#### Added
 
 - Released the algorithm used in watchOS 5 and later.
 

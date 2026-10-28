@@ -20,7 +20,7 @@ A component that allows entities to cross portal boundaries.
 struct PortalCrossingComponent
 ```
 
-#### Overview
+## Overview
 
 Set this component on an entity inside the portal world to opt that entity — and its descendants — into the portal’s crossing behavior. RealityKit then renders parts of the entity inside the portal as portal content and parts outside in the host scene.
 
@@ -31,7 +31,7 @@ Crossing-eligible entities cross the boundary configured by [`crossingMode`](./p
 
 The component has no configurable state; its presence on an entity is what enables crossing.
 
-##### Inheritance
+### Inheritance
 
 [`PortalCrossingComponent`](./portalcrossingcomponent.md) propagates down the entity hierarchy. Setting it on an ancestor makes every descendant crossing-eligible without setting it on each one individually:
 

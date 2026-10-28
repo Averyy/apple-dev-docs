@@ -19,7 +19,7 @@ static let rowHeight: NSBindingName
 extern NSBindingName NSRowHeightBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

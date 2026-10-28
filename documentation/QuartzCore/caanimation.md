@@ -28,15 +28,15 @@ class CAAnimation
 
 - [Optimizing iPhone and iPad apps to support ProMotion displays](./optimizing-iphone-and-ipad-apps-to-support-promotion-displays.md)
 
-#### Overview
+## Overview
 
 `CAAnimation` provides the basic support for the [`CAMediaTiming`](./camediatiming.md) and [`CAAction`](./caaction.md) protocols. You do not create instance of [`CAAnimation`](./caanimation.md): to animate Core Animation layers or SceneKit objects, create instances of the concrete subclasses [`CABasicAnimation`](./cabasicanimation.md), [`CAKeyframeAnimation`](./cakeyframeanimation.md), [`CAAnimationGroup`](./caanimationgroup.md), or [`CATransition`](./catransition.md).
 
-##### Animating Core Animation Layers
+### Animating Core Animation Layers
 
 You can animate the contents of your iOS or macOS app’s user interface by attaching animations to [`CALayer`](./calayer.md) objects. For more information, see [Core Animation Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004514).
 
-##### Animating Scene Kit Content
+### Animating Scene Kit Content
 
 In Scene Kit, animation objects represent not only property-based animations, but also animations of geometry data created with external 3D authoring tools and loaded from a scene file. You use the properties of the [`CAAnimation`](./caanimation.md) object representing a geometry animation to control its timing, monitor its progress, and attach actions for Scene Kit to trigger during the animation. You can attach animations to Scene Kit objects that adopt the [`SCNAnimatable`](../SceneKit/scnanimatable.md) protocol, including nodes, geometries, and materials.
 

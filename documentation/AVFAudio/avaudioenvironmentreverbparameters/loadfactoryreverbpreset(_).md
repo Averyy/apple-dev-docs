@@ -25,7 +25,7 @@ func loadFactoryReverbPreset(_ preset: AVAudioUnitReverbPreset)
 - (void) loadFactoryReverbPreset:(AVAudioUnitReverbPreset) preset;
 ```
 
-#### Discussion
+## Discussion
 
 Loading a factory reverb preset changes the sound of the reverb. This is independent of the filter which follows the reverb in the signal chain.
 

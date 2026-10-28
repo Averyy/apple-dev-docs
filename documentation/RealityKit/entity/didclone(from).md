@@ -21,7 +21,7 @@ Tells a newly cloned entity that cloning is complete.
 @preconcurrency func didClone(from source: Entity)
 ```
 
-#### Discussion
+## Discussion
 
 This method clones all component data automatically. When you clone an entity that stores custom data that’s not part of a component, override the [`didClone(from:)`](./didclone%28from%29.md) method to copy that data manually after the clone finishes.
 

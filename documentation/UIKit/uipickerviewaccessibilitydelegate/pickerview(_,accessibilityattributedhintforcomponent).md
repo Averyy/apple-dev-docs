@@ -22,11 +22,11 @@ optional func pickerView(_ pickerView: UIPickerView, accessibilityAttributedHint
 - (NSAttributedString *) pickerView:(UIPickerView *) pickerView accessibilityAttributedHintForComponent:(NSInteger) component;
 ```
 
-#### Return Value
+## Return Value
 
 The localized attributed string that describes the results of performing an action on the specified component.
 
-#### Discussion
+## Discussion
 
 Implement this optional method to ensure that the accessibility element representing the picker view provides an appropriate hint for each component. Your attributed string may include the [`UIAccessibilitySpeechAttributeLanguage`](../uiaccessibilityspeechattributelanguage.md) attribute, which lets you use different language synthesizers for different parts of the string. The system prefers this method over the [`pickerView(_:accessibilityHintForComponent:)`](./pickerview%28_,accessibilityhintforcomponent%29.md) method.
 

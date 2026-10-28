@@ -21,7 +21,7 @@ class SRSupplementalCategory
 @interface SRSupplementalCategory : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use a supplemental category to interpret the detailed relationships of app usage data within a [`SRDeviceUsageReport`](./srdeviceusagereport.md). The device usage report contains high level primary categories defined by the [`SRDeviceUsageReport.CategoryKey`](./srdeviceusagereport/categorykey.md), which are then broken down into more specific descriptions with the supplemental category. Each category maps to a unique [`identifier`](./srsupplementalcategory/identifier.md), which you can access with the [`supplementalCategories`](./srdeviceusagereport/applicationusage/supplementalcategories.md) property and group the app usage relationships.
 

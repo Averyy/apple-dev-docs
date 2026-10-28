@@ -24,7 +24,7 @@ func createFile(name: FSFileName, in directory: FSItem, attributes: FSItem.SetAt
 - (void) createFileNamed:(FSFileName *) name inDirectory:(FSItem *) directory attributes:(FSItemSetAttributesRequest *) attributes packer:(FSExtentPacker *) packer replyHandler:(void (^)(FSItem *newFile, FSFileName *newFileName, NSError *error)) reply;
 ```
 
-#### Discussion
+## Discussion
 
 This method allows the module to opportunistically supply extents, avoiding future calls to `blockmapFile(_:offset:length:flags:operationID:packer:)`. Only perform this technique opportunistically. In particular, don’t perform additional I/O to fetch extent data.
 

@@ -33,7 +33,7 @@ var intentHandlingStatus: INIntentHandlingStatus { get }
 @property (atomic, readonly) INIntentHandlingStatus intentHandlingStatus;
 ```
 
-#### Discussion
+## Discussion
 
 This property reflects your app’s current progress (if any) toward completing the interaction. The value of this property is set automatically using the code in the response object. The default value of this property is [`INIntentHandlingStatus.unspecified`](../inintenthandlingstatus/unspecified.md).
 

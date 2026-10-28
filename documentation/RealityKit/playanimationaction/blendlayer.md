@@ -20,7 +20,7 @@ An integer that specifies the order in which to apply animations when more than 
 var blendLayer: Int
 ```
 
-#### Discussion
+## Discussion
 
 Animations in a lower layer are applied before animations in a higher layer. Animations in the same layer are applied in the order in which the animations where started.
 

@@ -21,11 +21,11 @@ Interleaves three 32-bit planar buffers into a floating-point 32-bit-per-channel
 #define vImageConvert_PlanarFToRGBXFFFF(_red, _green, _blue, _alpha, _dest, _flags)
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 This routine cannot be used in place.
 

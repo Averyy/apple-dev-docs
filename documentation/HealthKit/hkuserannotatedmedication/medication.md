@@ -25,7 +25,7 @@ var medication: HKMedicationConcept { get }
 @property (nonatomic, copy, readonly) HKMedicationConcept * medication;
 ```
 
-#### Discussion
+## Discussion
 
 This concept’s identifier is directly associated with the logged dose events.
 

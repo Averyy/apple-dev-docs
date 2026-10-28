@@ -23,11 +23,11 @@ func weakCompareExchange(expected: consuming Value, desired: consuming Value, or
 
 Available when `Value` conforms to `AtomicRepresentable` and `Value.AtomicRepresentation` is `_Atomic8BitStorage`.
 
-#### Return Value
+## Return Value
 
 A tuple `(exchanged, original)`, where `exchanged` is true if the exchange was successful, and `original` is the original value.
 
-#### Discussion
+## Discussion
 
 This operation performs the following algorithm as a single atomic transaction:
 

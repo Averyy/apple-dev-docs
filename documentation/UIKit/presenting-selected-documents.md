@@ -5,11 +5,11 @@
 
 Display user-selected documents over your browser view controller.
 
-#### Overview
+## Overview
 
 When the user selects one or more documents in the browser view controller, the system calls your delegate’s [`documentBrowser(_:didPickDocumentURLs:)`](./uidocumentbrowserviewcontrollerdelegate/documentbrowser%28_,didpickdocumenturls%29.md) method.
 
-##### Display documents with document view controllers
+### Display documents with document view controllers
 
 In your implementation of the [`documentBrowser(_:didPickDocumentURLs:)`](./uidocumentbrowserviewcontrollerdelegate/documentbrowser%28_,didpickdocumenturls%29.md) method, modally present a view controller to display the selected documents by calling the browser’s [`present(_:animated:completion:)`](./uiviewcontroller/present%28_,animated,completion%29.md) method.
 

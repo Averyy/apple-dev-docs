@@ -15,7 +15,7 @@ A value that represents a 4096 byte block size.
 case bytes4096
 ```
 
-#### Discussion
+## Discussion
 
 The framework doesn’t support this block size for RAW images; see [`RAWCreationConfiguration`](../../rawcreationconfiguration.md).
 

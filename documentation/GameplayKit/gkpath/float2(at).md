@@ -24,11 +24,11 @@ func float2(at index: Int) -> vector_float2
 - (vector_float2) float2AtIndex:(NSUInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The vertex at the specified index.
 
-#### Discussion
+## Discussion
 
 You define a path’s vertices when creating it, either directly with the [`initWithFloat3Points:count:radius:cyclical:`](./initwithfloat3points_count_radius_cyclical_.md) initializer or indirectly with the [`init(graphNodes:radius:)`](./init%28graphnodes,radius%29.md) initializer.
 

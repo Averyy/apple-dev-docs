@@ -24,7 +24,7 @@ enum DeactivationResult
 
 - [Handling audio interruptions](../handling-audio-interruptions.md)
 
-#### Overview
+## Overview
 
 This enum provides a Swift-idiomatic way to handle deactivation scenarios with associated values, ensuring impossible states are prevented at compile time.
 

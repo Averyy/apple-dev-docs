@@ -19,7 +19,7 @@ var numberOfItems: Int { get }
 @property (readonly) NSInteger numberOfItems;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains a value of type `NSInteger` that indicates the number of menu items in the menu, including separator items.
 

@@ -22,7 +22,7 @@ func GLKMatrix4MakeYRotation(_ radians: Float) -> GLKMatrix4
 static GLKMatrix4 GLKMatrix4MakeYRotation(float radians);
 ```
 
-#### Return Value
+## Return Value
 
 A new rotation matrix.
 

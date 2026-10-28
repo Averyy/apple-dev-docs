@@ -23,7 +23,7 @@ optional func match(_ match: GKMatch, didReceive data: Data, fromPlayer playerID
 - (void) match:(GKMatch *) match didReceiveData:(NSData *) data fromPlayer:(NSString *) playerID;
 ```
 
-#### Discussion
+## Discussion
 
 You define your own format for data packets that you transmit and receive over the network.
 

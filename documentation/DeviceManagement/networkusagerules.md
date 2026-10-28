@@ -17,13 +17,13 @@ The payload that configures network-usage rules.
 object NetworkUsageRules
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.networkusagerules` as the payload type.
 
 Network usage rules allow enterprises to specify how devices use networks, such as cellular data networks. iOS 9-12 require the application rules. In iOS 13, application rules, SIM rules, or both must be present.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -35,7 +35,7 @@ Network usage rules allow enterprises to specify how devices use networks, such 
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

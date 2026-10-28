@@ -19,7 +19,7 @@ var maskInset: UIEdgeInsets { get set }
 @property (nonatomic, assign) UIEdgeInsets maskInset;
 ```
 
-#### Discussion
+## Discussion
 
 Use the `maskInset` property to create a mask around the cell that is only revealed when the cell is brought into focus.
 

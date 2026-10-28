@@ -24,7 +24,7 @@ var sensorEnlargement: vector_float2 { get set }
 @property (nonatomic, assign) vector_float2 sensorEnlargement;
 ```
 
-#### Discussion
+## Discussion
 
 For example, an enlargement factor of `{2,2}` results in the center portion of the image being cropped and expanded to fill the image plane. The default factor is `1.0` in both directions.
 

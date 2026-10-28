@@ -22,11 +22,11 @@ init(term: String)
 - (instancetype) initWithTerm:(NSString *) term;
 ```
 
-#### Return Value
+## Return Value
 
 The newly initialized reference library view controller.
 
-#### Discussion
+## Discussion
 
 If a definition for the term is not available, a localized message is displayed instead. Use the [`dictionaryHasDefinition(forTerm:)`](./dictionaryhasdefinition%28forterm%29.md) class method to determine whether a definition is available before creating instances of this class.
 

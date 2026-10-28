@@ -20,7 +20,7 @@ The resolution and quality of the segmentation mask the request produces.
 enum QualityLevel
 ```
 
-#### Overview
+## Overview
 
 Higher quality levels produce a smoother, higher-resolution mask. Lower quality levels favor speed over resolution.
 

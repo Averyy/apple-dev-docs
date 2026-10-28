@@ -21,7 +21,7 @@ unowned(unsafe) var uiDelegate: (any WebUIDelegate)! { get set }
 @property (nonatomic, assign) id<WebUIDelegate> UIDelegate;
 ```
 
-#### Discussion
+## Discussion
 
 A user interface delegate that conforms to the WebUIDelegate protocol.
 

@@ -21,7 +21,7 @@ func disableFlushing()
 - (void) disableFlushWindow;
 ```
 
-#### Discussion
+## Discussion
 
 If the window is buffered, disabling [`flush()`](./flush%28%29.md) prevents drawing from being automatically flushed by the `NSView` `display...` methods from the window’s backing store to the screen. This method permits several views to be drawn before the results are shown to the user.
 

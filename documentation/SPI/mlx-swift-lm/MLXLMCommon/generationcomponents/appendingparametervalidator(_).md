@@ -17,7 +17,7 @@ Return a copy with an additional generation-parameter validator.
 func appendingParameterValidator(_ validator: @escaping @Sendable (GenerateParameters) throws -> Void) -> GenerationComponents
 ```
 
-#### Discussion
+## Discussion
 
 Validators run in insertion order. This composes independently from the logit-processor chain so behavioral components can reject incompatible token limits before generation starts.
 

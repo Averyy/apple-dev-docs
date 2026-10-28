@@ -20,7 +20,7 @@ The number of position iterations the solver performs.
 var positionIterations: Int
 ```
 
-#### Discussion
+## Discussion
 
 Use a value in the inclusive range `[1, 255]`. The default value is `6`.
 

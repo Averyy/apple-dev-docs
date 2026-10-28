@@ -21,7 +21,7 @@ The alignment on the horizontal axis.
 var horizontal: HorizontalAlignment
 ```
 
-#### Discussion
+## Discussion
 
 Set this value when you initialize an alignment using the [`init(horizontal:vertical:)`](./init%28horizontal,vertical%29.md) method. Use one of the built-in [`HorizontalAlignment`](../horizontalalignment.md) guides, like [`center`](../horizontalalignment/center.md), or a custom guide that you create.
 

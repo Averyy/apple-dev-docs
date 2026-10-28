@@ -23,7 +23,7 @@ Returns a new padding layer.
 convenience init?(input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, mode: BNNS.PaddingMode, size: [(x: Int, y: Int)], filterParameters: BNNSFilterParameters? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Padding isn’t supported beyond 4D tensors.
 

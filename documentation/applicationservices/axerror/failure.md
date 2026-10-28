@@ -13,7 +13,7 @@
 case failure = -25200
 ```
 
-#### Discussion
+## Discussion
 
 A system error occurred, such as the failure to allocate an object.
 

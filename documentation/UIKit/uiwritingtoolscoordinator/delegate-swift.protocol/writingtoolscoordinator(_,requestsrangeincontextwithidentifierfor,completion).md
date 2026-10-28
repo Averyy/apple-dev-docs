@@ -27,7 +27,7 @@ optional func writingToolsCoordinator(_ writingToolsCoordinator: UIWritingToolsC
 - (void) writingToolsCoordinator:(UIWritingToolsCoordinator *) writingToolsCoordinator requestsRangeInContextWithIdentifierForPoint:(CGPoint) point completion:(void (^)(NSRange range, NSUUID *contextID)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 When someone interacts with your view during a proofreading operation, Writing Tools calls this method to get the location of the interaction. If the interaction occurs in the text of one of your [`UIWritingToolsCoordinator.Context`](../context.md) objects, configure an [`NSRange`](../../../Foundation/nsrange-c.struct.md) with the character’s location in that context object and a length of `1`. If the interaction occurs outside of the text of your context objects, configure the range with a location of `NSNotFound`.
 

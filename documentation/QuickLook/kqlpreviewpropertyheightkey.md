@@ -21,7 +21,7 @@ let kQLPreviewPropertyHeightKey: CFString!
 extern CFStringRef const kQLPreviewPropertyHeightKey;
 ```
 
-#### Discussion
+## Discussion
 
 Note that this property is a hint; Quick Look may set the height automatically for some types of previews. You must encapsulate the value in a [`CFNumber`](../CoreFoundation/cfnumber.md) object.
 

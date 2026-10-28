@@ -21,7 +21,7 @@ Creates a data object by reading every byte from the file at a given path.
 + (instancetype) dataWithContentsOfFile:(NSString *) path;
 ```
 
-#### Discussion
+## Discussion
 
 This method returns `nil` if the data object could not be created. If you need to know the reason for failure, use [`dataWithContentsOfFile:options:error:`](./datawithcontentsoffile_options_error_.md).
 

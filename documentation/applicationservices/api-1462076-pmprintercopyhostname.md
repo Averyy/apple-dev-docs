@@ -19,11 +19,11 @@ func PMPrinterCopyHostName(_ printer: PMPrinter, _ hostNameP: UnsafeMutablePoint
 OSStatus PMPrinterCopyHostName(PMPrinter printer, CFStringRef  _Nullable *hostNameP);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 This function is typically used to obtain the name of the computer that hosts a shared printer, possibly for display in a user interface. In macOS 10.5 and later, the typical way that users browse and communicate with a shared printer creates a local print queue and `PMPrinterCopyHostName` for such a print queue will return the name of the local host.
 

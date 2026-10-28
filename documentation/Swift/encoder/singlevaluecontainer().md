@@ -22,11 +22,11 @@ Returns an encoding container appropriate for holding a single primitive value.
 func singleValueContainer() -> any SingleValueEncodingContainer
 ```
 
-#### Return Value
+## Return Value
 
 A new empty single value container.
 
-#### Discussion
+## Discussion
 
 You must use only one kind of top-level encoding container. This method must not be called after a call to `unkeyedContainer()` or `container(keyedBy:)`, or after encoding a value through a call to `singleValueContainer()`
 

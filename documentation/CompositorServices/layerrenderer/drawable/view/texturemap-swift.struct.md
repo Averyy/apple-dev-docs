@@ -16,7 +16,7 @@ A type that provides details about the textures associated with a view.
 struct TextureMap
 ```
 
-#### Overview
+## Overview
 
 A texture map helps you locate the content for a specific view within a texture. Texture maps are especially important when a layer uses a single texture to manage multiple views. For example, a head-mounted display might store the images for both the left and right eyes in a single texture. Pass this type to other functions to get specific details about the current texture, such as its view bounds or its index into a texture array.
 

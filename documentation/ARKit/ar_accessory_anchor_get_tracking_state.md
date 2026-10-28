@@ -15,7 +15,7 @@ Get the tracking state of the accessory anchor.
 extern ar_accessory_anchor_tracking_state_t ar_accessory_anchor_get_tracking_state(ar_accessory_anchor_t accessory_anchor);
 ```
 
-#### Return Value
+## Return Value
 
 Tracking state for this anchor.
 

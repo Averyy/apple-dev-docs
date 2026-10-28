@@ -19,7 +19,7 @@ func removeRows(at indexes: IndexSet, withAnimation animationOptions: NSTableVie
 - (void) removeRowsAtIndexes:(NSIndexSet *) indexes withAnimation:(NSTableViewAnimationOptions) animationOptions;
 ```
 
-#### Discussion
+## Discussion
 
 This method deletes from the table the rows represented at `indexes` and automatically decreases [`numberOfRows`](./numberofrows.md) by the count of `indexes`.
 

@@ -24,7 +24,7 @@ var horizontal: CGFloat
 CGFloat horizontal;
 ```
 
-#### Discussion
+## Discussion
 
 Positive values indicate an offset to the right, and negative values indicate an offset to the left.
 

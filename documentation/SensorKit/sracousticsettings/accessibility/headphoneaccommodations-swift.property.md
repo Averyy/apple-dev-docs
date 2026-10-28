@@ -19,7 +19,7 @@ var headphoneAccommodations: SRAcousticSettings.Accessibility.HeadphoneAccommoda
 @property (nonatomic, strong, readonly) SRAcousticSettingsAccessibilityHeadphoneAccommodations * headphoneAccommodations;
 ```
 
-#### Discussion
+## Discussion
 
 Headphone Accommodations Settings
 

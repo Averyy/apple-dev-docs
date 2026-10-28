@@ -23,7 +23,7 @@ class INWorkoutGoalUnitTypeResolutionResult
 @interface INWorkoutGoalUnitTypeResolutionResult : INIntentResolutionResult
 ```
 
-#### Overview
+## Overview
 
 An [`INWorkoutGoalUnitTypeResolutionResult`](./inworkoutgoalunittyperesolutionresult.md) object is what you return when resolving parameters that contain a [`INWorkoutGoalUnitType`](./inworkoutgoalunittype.md) value. Use the creation method that best reflects your ability to successfully resolve the parameter. For additional resolution options, see [`INIntentResolutionResult`](./inintentresolutionresult.md).
 

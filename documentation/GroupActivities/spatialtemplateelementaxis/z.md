@@ -15,7 +15,7 @@ The z-axis of alignment.
 static let z: SpatialTemplateElementAxis
 ```
 
-#### Discussion
+## Discussion
 
 An element aligned with the z-axis is parallel to that axis and faces the front of the app.
 

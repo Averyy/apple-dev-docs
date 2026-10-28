@@ -15,7 +15,7 @@ The time, in seconds, to wait for a document to finish loading.
 extern NSAttributedStringDocumentReadingOptionKey NSTimeoutDocumentOption;
 ```
 
-#### Discussion
+## Discussion
 
 The value is an [`NSNumber`](../Foundation/nsnumber.md) object containing a float. The previous string constant was `@"Timeout"`.
 

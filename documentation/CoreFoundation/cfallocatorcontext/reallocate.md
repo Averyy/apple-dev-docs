@@ -25,7 +25,7 @@ var reallocate: CFAllocatorReallocateCallBack!
 CFAllocatorReallocateCallBack reallocate;
 ```
 
-#### Discussion
+## Discussion
 
 When implementing this function, change the size of the block of memory pointed to by `ptr` to the size specified by `newsize` and return the pointer to the larger block of memory. Return `NULL` on any reallocation failure, leaving the old block of memory untouched. Also return `NULL` immediately if any of the following conditions apply:
 

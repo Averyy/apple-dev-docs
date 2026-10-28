@@ -25,7 +25,7 @@ struct GeneratedContent
 - [Expanding generation with tool calling](./expanding-generation-with-tool-calling.md)
 - [Generating Swift data structures with guided generation](./generating-swift-data-structures-with-guided-generation.md)
 
-#### Overview
+## Overview
 
 Generated content may contain a single value, an array, or key-value pairs with unique keys.
 

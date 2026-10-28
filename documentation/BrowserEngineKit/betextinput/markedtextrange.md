@@ -23,7 +23,7 @@ var markedTextRange: UITextRange? { get }
 @property (nonatomic, readonly, nullable) UITextRange * markedTextRange;
 ```
 
-#### Discussion
+## Discussion
 
 Return `nil` if no marked text exists.
 

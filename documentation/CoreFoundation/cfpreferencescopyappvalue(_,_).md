@@ -25,11 +25,11 @@ func CFPreferencesCopyAppValue(_ key: CFString, _ applicationID: CFString) -> CF
 extern CFPropertyListRefCFPreferencesCopyAppValue(CFStringRef key, CFStringRef applicationID);
 ```
 
-#### Return Value
+## Return Value
 
 The preference data for the specified key and application. If no value was located, returns `NULL`. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 Note that values returned from this function are immutable, even if you have recently set the value using a mutable object.
 

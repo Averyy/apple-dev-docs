@@ -20,7 +20,7 @@ var isVisible: Bool { get }
 @property (nonatomic, assign, readonly, getter=isVisible) BOOL visible;
 ```
 
-#### Discussion
+## Discussion
 
 There are some playlists that iTunes hides, uses, and maintains without displaying them as playlists to the user. Tracks can still be visible when they’re in a playlist that’s not visible.
 

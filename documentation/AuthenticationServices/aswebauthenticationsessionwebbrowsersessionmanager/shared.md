@@ -19,7 +19,7 @@ class var shared: ASWebAuthenticationSessionWebBrowserSessionManager { get }
 @property (class, nonatomic, readonly) ASWebAuthenticationSessionWebBrowserSessionManager * sharedManager;
 ```
 
-#### Discussion
+## Discussion
 
 Use this singleton when supporting single sign-on (SSO) in a web browser app. Make the web browser adopt the [`ASWebAuthenticationSessionWebBrowserSessionHandling`](../aswebauthenticationsessionwebbrowsersessionhandling.md) protocol, and set it as the shared manager’s [`sessionHandler`](./sessionhandler.md). This allows your browser app to receive and process [`ASWebAuthenticationSessionRequest`](../aswebauthenticationsessionrequest.md) instances from other apps.
 

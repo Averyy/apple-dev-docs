@@ -17,7 +17,7 @@ An estimated timeseries of ambient noise intrusion.
 let backgroundNoise: Double
 ```
 
-#### Discussion
+## Discussion
 
 The sensor’s estimate of ambient noise intrusion in the [`normalizedReflectance`](../normalizedreflectance-15f2k.md) signal (Normalized Units).
 

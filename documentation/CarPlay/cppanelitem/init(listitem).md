@@ -21,7 +21,7 @@ init(listItem: CPListItem)
 - (instancetype) initWithListItem:(CPListItem *) listItem;
 ```
 
-#### Return Value
+## Return Value
 
 A panel item configured with the specified list item.
 

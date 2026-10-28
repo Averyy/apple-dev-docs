@@ -5,7 +5,7 @@
 
 Enable qualifying apps to offer external purchases.
 
-#### Overview
+## Overview
 
 The External Purchase APIs allow qualifying apps to implement external purchases. External purchases allow customers to complete purchases:
 
@@ -24,7 +24,7 @@ If you develop a qualifying app, you may complete a request for optional entitle
 
 Use the API based on the entitlements your app receives and the regions where your app runs.
 
-##### Implement external purchases using alternative payment service providers in the European Union (EU) and South Korea
+### Implement external purchases using alternative payment service providers in the European Union (EU) and South Korea
 
 If your account receives the StoreKit External Purchase entitlement or the StoreKit External Purchase Regions entitlement, implement the following to offer external purchases within your app:
 
@@ -33,7 +33,7 @@ If your account receives the StoreKit External Purchase entitlement or the Store
 - Call the [`presentNoticeSheet()`](./externalpurchase/presentnoticesheet%28%29.md) method and use the external purchase token you receive from the [`ExternalPurchase.NoticeResult.continuedWithExternalPurchaseToken(token:)`](./externalpurchase/noticeresult/continuedwithexternalpurchasetoken%28token%29.md) result to record transactions.
 - From your server, report the external purchase tokens and the transactions associated with the tokens by using the [External Purchase Server API](../ExternalPurchaseServerAPI/ExternalPurchaseServerAPI.md).
 
-##### Implement external purchase for apps available in the EU
+### Implement external purchase for apps available in the EU
 
 If your account receives the StoreKit External Purchase Link entitlement or the StoreKit External Custom Purchase Link Regions entitlement, in the EU your app can use the [`ExternalPurchaseCustomLink`](./externalpurchasecustomlink.md) API to implement external purchases. To use this API, complete the following steps:
 
@@ -43,7 +43,7 @@ If your account receives the StoreKit External Purchase Link entitlement or the 
 - Call the [`showNotice(for:)`](./externalpurchasecustomlink/shownotice%28for%29.md) function after a deliberate customer interaction, such as tapping a button, that can lead to a potential external purchase.
 - From your server, report the external purchase tokens and the transactions associated with the tokens by using the [External Purchase Server API](../ExternalPurchaseServerAPI/ExternalPurchaseServerAPI.md).
 
-##### Implement external purchase for apps available in Brazil
+### Implement external purchase for apps available in Brazil
 
 If your account receives the StoreKit External Custom Purchase Link Regions entitlement, in Brazil your app can use the [`ExternalPurchaseCustomLink`](./externalpurchasecustomlink.md) API to implement external purchases starting in iOS 26.5.  To use this API, complete the following steps:
 
@@ -53,7 +53,7 @@ If your account receives the StoreKit External Custom Purchase Link Regions enti
 - Before routing customers to external purchase options, display an in-app disclosure sheet that lets people know they’ll be transacting with you and not Apple. For more information, including downloadable resources, see the “In-app disclosure sheet” section of [Payment options on the App Store in Brazil](https://developer.apple.com/support/payment-options-on-the-app-store-in-brazil).
 - Report the external purchase tokens and the transactions associated with the tokens using the [External Purchase Server API](../ExternalPurchaseServerAPI/ExternalPurchaseServerAPI.md). Otherwise, report transactions as indicated in [Payment options on the App Store in Brazil](https://developer.apple.com/support/payment-options-on-the-app-store-in-brazil).
 
-##### Implement external purchase for apps available in Japan
+### Implement external purchase for apps available in Japan
 
 If your account receives the StoreKit External Custom Purchase Link Regions entitlement, in Japan your app can use the [`ExternalPurchaseCustomLink`](./externalpurchasecustomlink.md) API to implement external purchases starting in iOS 26.2.  To use this API, complete the following steps:
 
@@ -63,7 +63,7 @@ If your account receives the StoreKit External Custom Purchase Link Regions enti
 - Before routing customers to external purchase options, display an in-app disclosure sheet that lets people know they’ll be transacting with you and not Apple. For more information, including downloadable resources, see the “In-app disclosure sheet” section of [Payment options on the App Store in Japan](https://developer.apple.com/support/payment-options-on-the-app-store-in-japan).
 - Starting in iOS 26.4, report the external purchase tokens and the transactions associated with the tokens using the [External Purchase Server API](../ExternalPurchaseServerAPI/ExternalPurchaseServerAPI.md). Otherwise, report transactions as indicated in [Payment options on the App Store in Japan](https://developer.apple.com/support/payment-options-on-the-app-store-in-japan).
 
-##### Implement external purchase for music streaming apps in the European Economic Area (EEA)
+### Implement external purchase for music streaming apps in the European Economic Area (EEA)
 
 If your account receives the Music Streaming Services EEA entitlement, your music streaming app can use the [`ExternalPurchaseCustomLink`](./externalpurchasecustomlink.md) API to implement external purchases. To use this API, complete the following steps:
 
@@ -73,7 +73,7 @@ If your account receives the Music Streaming Services EEA entitlement, your musi
 - Call the [`showNotice(for:)`](./externalpurchasecustomlink/shownotice%28for%29.md) function after a deliberate customer interaction, such as tapping a button, and before offering external purchases.
 - From your server, report the external purchase tokens and the transactions associated with the tokens by using the [External Purchase Server API](../ExternalPurchaseServerAPI/ExternalPurchaseServerAPI.md).
 
-##### Implement external purchase through multiple links for the European Economic Area (EEA) and Russia
+### Implement external purchase through multiple links for the European Economic Area (EEA) and Russia
 
 If your account receives the StoreKit External Purchase Link entitlement or the StoreKit External Purchase Link Regions entitlement, in the EEA and Russia you can implement the following to offer multiple external purchase links:
 
@@ -83,7 +83,7 @@ If your account receives the StoreKit External Purchase Link entitlement or the 
 - Call the [`open(url:)`](./externalpurchaselink/open%28url%29.md) method with the URL you select. StoreKit appends the external purchase token to your website’s URL. Use this token to record purchases.
 - From your server, report the external purchase tokens and the transactions associated with the tokens by using the [External Purchase Server API](../ExternalPurchaseServerAPI/ExternalPurchaseServerAPI.md).
 
-##### Implement external purchase through single links for the European Economic Area (EEA) and Russia
+### Implement external purchase through single links for the European Economic Area (EEA) and Russia
 
 If your account receives the StoreKit External Purchase Link entitlement or the StoreKit External Purchase Link Regions entitlement, implement the following to offer a single external purchase link for each country code:
 
@@ -95,11 +95,11 @@ If your account receives the StoreKit External Purchase Link entitlement or the 
 
 Your app may configure both the [`SKExternalPurchaseLink`](../BundleResources/information-property-list/skexternalpurchaselink.md) and [`SKExternalPurchaseMultiLink`](../BundleResources/information-property-list/skexternalpurchasemultilink.md) property list keys.
 
-##### Record and report external purchase tokens and associated transactions
+### Record and report external purchase tokens and associated transactions
 
 An external purchase token is a unique string that your app or website receives when your app’s customer chooses to view your external purchase offerings. Record all tokens in your system and report them and their associated transactions using the [External Purchase Server API](../ExternalPurchaseServerAPI/ExternalPurchaseServerAPI.md). For more information about tokens, see [Receiving and decoding external purchase tokens](./receiving-and-decoding-external-purchase-tokens.md).
 
-##### Check API availability
+### Check API availability
 
 The External Purchase APIs, including [`ExternalPurchaseLink`](./externalpurchaselink.md), [`ExternalPurchase`](./externalpurchase.md), and [`ExternalPurchaseCustomLink`](./externalpurchasecustomlink.md) provide *external purchase tokens* that you use to report transactions to Apple:
 

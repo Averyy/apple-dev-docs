@@ -25,7 +25,7 @@ init(responseValue: [String : Any]) throws
 - (instancetype) initWithResponseValue:(NSDictionary<NSString *,id> *) responseValue error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Will return nil and hand out an error if the response-value dictionary is not a command data response or is not the right command response.
 

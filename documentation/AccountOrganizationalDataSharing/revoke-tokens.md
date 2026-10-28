@@ -9,7 +9,7 @@ Invalidate the tokens and associated user authorizations for someone when they a
 **Availability**:
 - AccountOrganizationalDataSharing 1.0+
 
-#### Overview
+## Overview
 
 To revoke authorization for a user, you must obtain a valid refresh token or access token. If you don’t have either token for the user, you can generate tokens when validating an authorization code. For more information about user tokens and creating client secrets, see [`Generate and validate tokens`](./generate-and-validate-tokens.md).
 

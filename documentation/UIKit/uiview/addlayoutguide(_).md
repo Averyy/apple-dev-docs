@@ -23,7 +23,7 @@ func addLayoutGuide(_ layoutGuide: UILayoutGuide)
 - (void) addLayoutGuide:(UILayoutGuide *) layoutGuide;
 ```
 
-#### Discussion
+## Discussion
 
 This method adds the specified layout guide to the end of the view’s [`layoutGuides`](./layoutguides.md) array. It also assigns the view to the guide’s [`owningView`](../uilayoutguide/owningview.md) property. Each guide can have only one owning view.
 

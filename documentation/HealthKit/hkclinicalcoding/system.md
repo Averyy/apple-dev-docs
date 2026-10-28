@@ -24,7 +24,7 @@ var system: String { get }
 @property (nonatomic, copy, readonly) NSString * system;
 ```
 
-#### Discussion
+## Discussion
 
 The system is usually expressed as a URL from the [HL7 Terminology](https://terminology.hl7.org/). For example, the RxNorm, a coding system for medications uses: `http://www.nlm.nih.gov/research/umls/rxnorm`.
 

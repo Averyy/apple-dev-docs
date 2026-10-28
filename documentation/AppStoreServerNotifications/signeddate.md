@@ -15,7 +15,7 @@ The UNIX time, in milliseconds, that the App Store signed the JSON Web Signature
 timestamp signedDate
 ```
 
-#### Discussion
+## Discussion
 
 This timestamp indicates the time the system signs the data before it sends the notification to your server. The notification payload contains a snapshot of the state of the transaction at this time.
 

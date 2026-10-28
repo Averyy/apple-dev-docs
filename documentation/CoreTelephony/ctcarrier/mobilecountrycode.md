@@ -23,7 +23,7 @@ var mobileCountryCode: String? { get }
 @property (nonatomic, retain, readonly, nullable) NSString * mobileCountryCode;
 ```
 
-#### Discussion
+## Discussion
 
 A read-only [`NSString`](../../Foundation/nsstring.md) object that contains the numeric mobile country code for the user’s cellular service provider. MCCs are defined by ITU-T Recommendation E.212, “List of Mobile Country or Geographical Area Codes”. Typing this property as an [`NSString`](../../Foundation/nsstring.md) object, rather than a number type, preserves leading zeroes in MCCs.
 

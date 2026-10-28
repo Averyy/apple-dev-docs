@@ -17,7 +17,7 @@ The number of shots taken in the entire capture session so far, including both a
 var numberOfShotsTaken: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 This number includes shots from all scan passes, flipped or unflipped.  It can be directly compared to the `maximumNumberOfInputImages` to keep track of the memory limits required for reconstruction of this session on-device and whether over-capture mode limits are reached for a given session.
 

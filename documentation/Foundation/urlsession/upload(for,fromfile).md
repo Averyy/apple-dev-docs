@@ -25,7 +25,7 @@ func upload(for request: URLRequest, fromFile fileURL: URL) async throws -> (Dat
 
 - [Pausing and resuming uploads](../pausing-and-resuming-uploads.md)
 
-#### Return Value
+## Return Value
 
 Data and response.
 

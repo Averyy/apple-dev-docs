@@ -22,7 +22,7 @@ nonisolated
 func subscriptionStatusTask(for groupID: String, priority: TaskPriority = .medium, action: @escaping (EntitlementTaskState<[Product.SubscriptionInfo.Status]>) async -> ()) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Before a view modified with this method appears, a task will start in the background to get the subscription status. While the view is presented, the task will call `action` whenever the status changes or the task’s state changes.
 

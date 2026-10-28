@@ -24,7 +24,7 @@ case invalidParameter
 HMErrorCodeInvalidParameter
 ```
 
-#### Discussion
+## Discussion
 
 For example, the home object issues an error when attempting to add a room that exists in another home.
 

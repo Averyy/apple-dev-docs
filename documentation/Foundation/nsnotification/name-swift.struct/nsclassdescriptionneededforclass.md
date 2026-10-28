@@ -20,7 +20,7 @@ static let NSClassDescriptionNeededForClass: NSNotification.Name
 extern NSNotificationName const NSClassDescriptionNeededForClassNotification;
 ```
 
-#### Discussion
+## Discussion
 
 After the notification is processed, [`init(for:)`](../../nsclassdescription/init%28for%29.md) checks for a class description again. This checking allows an observer to register class descriptions lazily. The notification is posted only once for any given class, even if the class description remains undefined.
 

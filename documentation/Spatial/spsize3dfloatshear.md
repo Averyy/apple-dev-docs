@@ -19,11 +19,11 @@
 static SPSize3DFloat SPSize3DFloatShear(SPSize3DFloat size, SPAxis shearAxis, float shearFactor0, float shearFactor1);
 ```
 
-#### Return Value
+## Return Value
 
 The transformed size.
 
-#### Discussion
+## Discussion
 
 Returns a size that’s sheared over an axis by shear factors for the other two axes.
 

@@ -24,7 +24,7 @@ var isInStation: Bool { get }
 @property (nonatomic, assign, readonly, getter=isInStation) BOOL inStation;
 ```
 
-#### Discussion
+## Discussion
 
 Transit networks that have tap-in and tap-out ride accounting use this value. Wallet may display this status as “en-route” in its user interface.
 

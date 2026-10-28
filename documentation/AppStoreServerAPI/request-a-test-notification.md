@@ -14,7 +14,7 @@ Ask App Store Server Notifications to send a test notification to your server.
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 - [Identifying rate limits](./identifying-rate-limits.md)
 
-#### Discussion
+## Discussion
 
 Use this endpoint to test if your server is receiving [App Store Server Notifications](../AppStoreServerNotifications/AppStoreServerNotifications.md) at the URLs that you configured in App Store Connect. The [`Request a Test Notification`](./request-a-test-notification.md) endpoint prompts the App Store server to send your server a notification with the `TEST` [`notificationType`](./notificationtype.md). The App Store server sends the `TEST` notification to your production URL if you call this endpoint’s production URL; it sends it to your sandbox URL if you call this endpoint’s sandbox URL.
 

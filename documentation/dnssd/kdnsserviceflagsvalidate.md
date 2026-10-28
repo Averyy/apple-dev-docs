@@ -23,7 +23,7 @@ var kDNSServiceFlagsValidate: UInt32 { get }
 kDNSServiceFlagsValidate
 ```
 
-#### Discussion
+## Discussion
 
 This flag is meaningful in DNSServiceGetAddrInfo and DNSServiceQueryRecord. This is the ONLY flag that is both valid as an input to the APIs and also as an output through the callbacks in the APIs.
 

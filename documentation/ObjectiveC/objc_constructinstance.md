@@ -21,7 +21,7 @@ Creates an instance of a class at the specified location.
 extern idobjc_constructInstance(Class cls, void *bytes);
 ```
 
-#### Return Value
+## Return Value
 
 An instance of the class `cls` at `bytes`, if successful; otherwise `nil` (for example, if `cls` or `bytes` are themselves `nil`).
 

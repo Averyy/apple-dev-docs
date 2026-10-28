@@ -19,7 +19,7 @@ var hides: Bool { get set }
 @property BOOL hides;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`false`](../../../Swift/false.md), which leaves the app in its default state after launch. Setting the property to [`true`](../../../Swift/true.md) causes the app to hide itself.
 

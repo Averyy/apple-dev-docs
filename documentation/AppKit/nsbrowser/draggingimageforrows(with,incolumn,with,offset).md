@@ -19,7 +19,7 @@ func draggingImageForRows(with rowIndexes: IndexSet, inColumn column: Int, with 
 - (NSImage *) draggingImageForRowsWithIndexes:(NSIndexSet *) rowIndexes inColumn:(NSInteger) column withEvent:(NSEvent *) event offset:(NSPointPointer) dragImageOffset;
 ```
 
-#### Return Value
+## Return Value
 
 Image representing the visible cells identified by rowIndexes.
 

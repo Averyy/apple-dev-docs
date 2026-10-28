@@ -24,7 +24,7 @@ var data: Data? { get }
 @property (nonatomic, readonly, nullable) NSData * data;
 ```
 
-#### Discussion
+## Discussion
 
 The value is `nil` if you didn’t initialize the movie with data.
 

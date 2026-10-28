@@ -21,7 +21,7 @@ The region that contains this region, if any.
 var containingRegion: Locale.Region? { get }
 ```
 
-#### Discussion
+## Discussion
 
 The following example shows how to look up the containing region for the `US` region.
 

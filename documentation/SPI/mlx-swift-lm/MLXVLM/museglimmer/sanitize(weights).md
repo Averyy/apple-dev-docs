@@ -17,7 +17,7 @@ Key renaming only — a byte-for-byte port of `muse_glimmer.Model.sanitize`.
 func sanitize(weights: [String : MLXArray]) -> [String : MLXArray]
 ```
 
-#### Discussion
+## Discussion
 
 The `mlx-community` repos are already published in the target layout, so this is a no-op there; the prefix rewrites cover the original `transformers` checkpoint. Notably there are no transposes: the patch embedder is a `Linear`, not a convolution.
 

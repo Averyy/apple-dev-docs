@@ -18,7 +18,7 @@ A value that indicates that a nearby object’s horizontal angle is unavailable.
 extern float NINearbyObjectAngleNotAvailable;
 ```
 
-#### Discussion
+## Discussion
 
 The framework sets [`horizontalAngle`](./ninearbyobject/horizontalangle-9ibky.md) to the value of this property when it’s unable to acquire the nearby object’s horizontal angle at any given time.
 

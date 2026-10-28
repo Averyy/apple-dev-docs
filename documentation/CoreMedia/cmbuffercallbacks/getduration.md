@@ -25,7 +25,7 @@ var getDuration: CMBufferGetTimeCallback
 CMBufferGetTimeCallback getDuration;
 ```
 
-#### Discussion
+## Discussion
 
 This must not be `NULL`.
 

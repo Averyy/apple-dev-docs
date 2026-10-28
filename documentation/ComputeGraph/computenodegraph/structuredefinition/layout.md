@@ -21,7 +21,7 @@ The in-memory layout of the structure’s members.
 var layout: ComputeNodeGraph.StructureLayout
 ```
 
-#### Discussion
+## Discussion
 
 The layout describes each member’s name, byte offset, and type, along with the structure’s size and stride. See [`ComputeNodeGraph.StructureLayout`](../structurelayout.md).
 

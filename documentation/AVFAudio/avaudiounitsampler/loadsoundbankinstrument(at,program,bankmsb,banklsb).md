@@ -24,7 +24,7 @@ func loadSoundBankInstrument(at bankURL: URL, program: UInt8, bankMSB: UInt8, ba
 - (BOOL) loadSoundBankInstrumentAtURL:(NSURL *) bankURL program:(uint8_t) program bankMSB:(uint8_t) bankMSB bankLSB:(uint8_t) bankLSB error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This method reads from the file and allocates memory. Don’t call it on a real-time thread.
 

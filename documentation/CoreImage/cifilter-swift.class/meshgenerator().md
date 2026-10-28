@@ -24,11 +24,11 @@ class func meshGenerator() -> any CIFilter & CIMeshGenerator
 + (CIFilter<CIMeshGenerator> *) meshGeneratorFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The generated image.
 
-#### Discussion
+## Discussion
 
 This method generates a mesh generator image. The effect uses an array of line segments to create the resulting image.
 

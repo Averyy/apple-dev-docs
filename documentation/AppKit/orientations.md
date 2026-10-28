@@ -5,7 +5,7 @@
 
 Values that indicate the orientation of elements, such as scroll bars and split views.
 
-#### Overview
+## Overview
 
 Use these values with an accessibility element’s [`orientation`](./nsaccessibility-swift.struct/attribute/orientation.md) property.
 

@@ -21,7 +21,7 @@ init(player: AVPlayer?)
 - (instancetype) initWithPlayer:(AVPlayer *) player;
 ```
 
-#### Discussion
+## Discussion
 
 Creates an AVLegibleMediaOptionsMenuController with an optional player
 

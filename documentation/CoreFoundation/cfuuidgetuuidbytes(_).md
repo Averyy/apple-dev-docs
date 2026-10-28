@@ -25,7 +25,7 @@ func CFUUIDGetUUIDBytes(_ uuid: CFUUID!) -> CFUUIDBytes
 extern CFUUIDBytes CFUUIDGetUUIDBytes(CFUUIDRef uuid);
 ```
 
-#### Return Value
+## Return Value
 
 The value of `uuid` represented as raw bytes.
 

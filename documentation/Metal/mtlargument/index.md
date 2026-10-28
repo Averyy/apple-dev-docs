@@ -24,7 +24,7 @@ var index: Int { get }
 @property (readonly) NSUInteger index;
 ```
 
-#### Discussion
+## Discussion
 
 A command encoder ([`MTLComputeCommandEncoder`](../mtlcomputecommandencoder.md) or [`MTLRenderCommandEncoder`](../mtlrendercommandencoder.md)) specifies the index in the corresponding argument table. For example, an app can call the [`setTexture(_:index:)`](../mtlcomputecommandencoder/settexture%28_,index%29.md) method of [`MTLComputeCommandEncoder`](../mtlcomputecommandencoder.md) to specify an index in the texture argument table for an [`MTLTexture`](../mtltexture.md) instance that is used as an argument of a compute function.
 

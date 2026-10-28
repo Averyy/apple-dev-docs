@@ -16,11 +16,11 @@ Creates and returns a new dictionary that describes the HID device.
 virtual OSDictionary * newDeviceDescription();
 ```
 
-#### Return Value
+## Return Value
 
 An `OSDictionary` that describes the device.
 
-#### Discussion
+## Discussion
 
 This method uses the information from the USB device to create and return the dictionary of attributes. The dictionary always includes the following keys:
 

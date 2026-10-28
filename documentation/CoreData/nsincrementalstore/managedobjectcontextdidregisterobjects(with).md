@@ -25,7 +25,7 @@ func managedObjectContextDidRegisterObjects(with objectIDs: [NSManagedObjectID])
 - (void) managedObjectContextDidRegisterObjectsWithIDs:(NSArray<NSManagedObjectID *> *) objectIDs;
 ```
 
-#### Discussion
+## Discussion
 
 This method and [`managedObjectContextDidUnregisterObjects(with:)`](./managedobjectcontextdidunregisterobjects%28with%29.md) allow managed object contexts to communicate interest in the row data of specific objects in a manner akin to reference counting. For more details, see [`managedObjectContextDidUnregisterObjects(with:)`](./managedobjectcontextdidunregisterobjects%28with%29.md).
 

@@ -12,11 +12,11 @@ virtual IOReturn enable(
  IOKernelDebugger *debugger);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess. Drivers must return kIOReturnSuccess on success, or an error otherwise.
 
-#### Overview
+## Overview
 
 Drivers that provide debugging support may either override this method and set up the hardware to support the polled-mode send and receive methods, receivePacket() and sendPacket(), or override the base enable() and disable() methods that take an IOService argument.
 

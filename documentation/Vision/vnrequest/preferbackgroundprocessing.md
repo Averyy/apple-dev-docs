@@ -24,7 +24,7 @@ var preferBackgroundProcessing: Bool { get set }
 @property (nonatomic, assign, readwrite) BOOL preferBackgroundProcessing;
 ```
 
-#### Discussion
+## Discussion
 
 If set to [`true`](../../Swift/true.md), this property reduces the request’s memory footprint, processing footprint, and CPU/GPU contention at the potential cost of longer execution time.
 

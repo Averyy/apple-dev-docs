@@ -25,7 +25,7 @@ func CGPDFOperatorTableRetain(_ table: CGPDFOperatorTableRef) -> CGPDFOperatorTa
 extern CGPDFOperatorTableRefCGPDFOperatorTableRetain(CGPDFOperatorTableRef table);
 ```
 
-#### Return Value
+## Return Value
 
 The same PDF operator table you passed in as the `table` parameter.
 

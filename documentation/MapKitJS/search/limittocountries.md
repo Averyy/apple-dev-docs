@@ -16,7 +16,7 @@ get limitToCountries(): string | null;
 set limitToCountries(value: string | null);
 ```
 
-#### Discussion
+## Discussion
 
 The string is a comma-separated list of two-digit ISO 3166-2 country and region codes. For example, to limit search results to Germany, Belgium, and France specify `de,be,fr`.
 

@@ -23,11 +23,11 @@ optional func collectionView(_ collectionView: UICollectionView, viewForSuppleme
 - (UICollectionReusableView *) collectionView:(UICollectionView *) collectionView viewForSupplementaryElementOfKind:(NSString *) kind atIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 A configured supplementary view object. You must not return `nil` from this method.
 
-#### Discussion
+## Discussion
 
 Your implementation of this method is responsible for creating, configuring, and returning the appropriate supplementary view that is being requested. You do this by calling the [`dequeueReusableSupplementaryView(ofKind:withReuseIdentifier:for:)`](../uicollectionview/dequeuereusablesupplementaryview%28ofkind,withreuseidentifier,for%29.md) method of the collection view and passing the information that corresponds to the view you want. That method always returns a valid view object. Upon receiving the view, you should set any properties that correspond to the data you want to display, perform any additional needed configuration, and return the view.
 

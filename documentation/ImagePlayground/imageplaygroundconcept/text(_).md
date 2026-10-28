@@ -19,11 +19,11 @@ Creates a concept structure that includes a short text description.
 static func text(_ text: String) -> ImagePlaygroundConcept
 ```
 
-#### Return Value
+## Return Value
 
 A concept object that encapsulates the specified text.
 
-#### Discussion
+## Discussion
 
 Call this method when you want to use short strings to generate an image. The system passes short strings in their entirety as input to the diffusion model. If you provide a long string, the system tries to extract only the relevant details and pass those to the model instead.
 

@@ -15,7 +15,7 @@ The total number of supported features.
 kSCSIParallelFeature_TotalFeatureCount
 ```
 
-#### Discussion
+## Discussion
 
 This is the last member of the [`SCSIParallelFeature`](../scsiparallelfeature.md) enumeration. Since the enumeration is zero-based, this value always represents the correct total number of features.
 

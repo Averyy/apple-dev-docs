@@ -19,7 +19,7 @@ var paragraphCharacterRange: NSRange { get }
 @property (readonly) NSRange paragraphCharacterRange;
 ```
 
-#### Return Value
+## Return Value
 
 The character range currently being processed.
 

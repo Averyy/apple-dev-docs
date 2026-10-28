@@ -24,11 +24,11 @@ func MTKMetalVertexFormatFromModelIO(_ vertexFormat: MDLVertexFormat) -> MTLVert
 extern MTLVertexFormat MTKMetalVertexFormatFromModelIO(MDLVertexFormat vertexFormat);
 ```
 
-#### Return Value
+## Return Value
 
 A Metal vertex format value.
 
-#### Discussion
+## Discussion
 
 This function returns [`MTLVertexFormat.invalid`](../Metal/mtlvertexformat/invalid.md) if no matching [`MTLVertexFormat`](../Metal/mtlvertexformat.md) exists.
 

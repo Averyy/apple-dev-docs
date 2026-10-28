@@ -20,7 +20,7 @@ A Boolean value that indicates whether the track has sample dependencies.
 var hasAudioSampleDependencies: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 The value is always [`false`](../../Swift/false.md) for nonaudible media.
 

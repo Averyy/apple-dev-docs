@@ -22,7 +22,7 @@ optional func assessmentSession(_ session: AEAssessmentSession, wasInterruptedWi
 - (void) assessmentSession:(AEAssessmentSession *) session wasInterruptedWithError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 If one or more subsystems fail during a session, the session tells its delegate by calling the [`assessmentSession(_:wasInterruptedWithError:)`](./assessmentsession%28_,wasinterruptedwitherror%29.md) method. If your app receives this callback, immediately stop the assessment, hide all sensitive content, and end the session. Because it might take time for your app to stop the assessment, the session relies on your app to call the [`end()`](../aeassessmentsession/end%28%29.md) method:
 

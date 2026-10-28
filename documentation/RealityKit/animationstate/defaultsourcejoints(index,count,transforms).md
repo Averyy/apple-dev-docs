@@ -22,7 +22,7 @@ func defaultSourceJoints(index: Int, count: Int, transforms: inout [Transform]) 
 
 Available when `Value` is `JointTransforms`.
 
-#### Discussion
+## Discussion
 
 See [`defaultSource`](../animationstateprotocol/defaultsource.md) for more about the default source value.
 

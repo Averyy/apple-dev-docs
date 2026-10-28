@@ -25,7 +25,7 @@ init(coder aDecoder: NSCoder)
 - (instancetype) initWithCoder:(NSCoder *) aDecoder;
 ```
 
-#### Discussion
+## Discussion
 
 When saving a newly created [`CKShare`](../ckshare.md), you must save the share and its [`rootRecord`](./metadata/rootrecord.md) in the same [`CKModifyRecordsOperation`](../ckmodifyrecordsoperation.md) batch.
 

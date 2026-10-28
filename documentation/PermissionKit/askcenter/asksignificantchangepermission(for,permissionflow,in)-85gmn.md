@@ -16,7 +16,7 @@ Tells the system to request that the user send the significant app update permis
 final func askSignificantChangePermission(for question: PermissionQuestion<SignificantAppUpdateTopic>, permissionFlow: PermissionFlow, in window: NSWindow) async throws -> PermissionResult
 ```
 
-#### Return Value
+## Return Value
 
 The user’s resolved action — `.askToApprove(didSend:)`, `.approveInPerson(approved:)`, or `.cancel`.
 

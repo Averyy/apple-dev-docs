@@ -25,17 +25,17 @@ func range(of searchString: String, options mask: NSString.CompareOptions = [], 
 - (NSRange) rangeOfString:(NSString *) searchString options:(NSStringCompareOptions) mask range:(NSRange) rangeOfReceiverToSearch locale:(NSLocale *) locale;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSRange`](../nsrange-c.struct.md) structure giving the location and length in the receiver of `aString` within `aRange` in the receiver, modulo the options in `mask`. The range returned is relative to the start of the string, not to the passed-in range. Returns `{``NSNotFound``, 0}` if `aString` is not found or is empty (`""`).
 
-#### Discussion
+## Discussion
 
 `NSString` objects are compared by checking the Unicode canonical equivalence of their code point sequences.  The length of the returned range and that of `aString` may differ if equivalent composed character sequences are matched.
 
 > ❗ **Important**:  When working with text that’s presented to the user, use the [`localizedStandardRange(of:)`](./localizedstandardrange%28of%29.md) method instead.
 
-##### Special Considerations
+### Special Considerations
 
 This method detects all invalid ranges (including those with negative lengths). For applications linked against macOS 10.6 and later, this error causes an exception; for applications linked against earlier releases, this error causes a warning, which is displayed just once per application execution.
 

@@ -25,7 +25,7 @@ class let playbackStalledNotification: NSNotification.Name
 extern NSNotificationName const AVPlayerItemPlaybackStalledNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification’s object is the player item whose playback is unable to continue due to network delays. Streaming-media playback continues after the player item retrieves a sufficient amount of data. File-based playback doesn’t continue.
 

@@ -24,7 +24,7 @@ func setNeedsLayout()
 - (void) setNeedsLayout;
 ```
 
-#### Discussion
+## Discussion
 
 You can call this method to indicate that the layout of a layer’s sublayers has changed and must be updated. The system typically calls this method automatically when the layer’s bounds change or when sublayers are added or removed. In macOS, if your layer’s [`layoutManager`](./layoutmanager.md) property contains an object that implements the `invalidateLayout(of:)` method in Swift or the `invalidateLayoutOfLayer:` method in Objective-C, the system calls that method too.
 

@@ -19,7 +19,7 @@ The foreground image the button displays.
 @property (nonatomic, strong, readwrite, nullable) UIImage * image;
 ```
 
-#### Discussion
+## Discussion
 
 A configuration contains one image. To change the image based on button state, use [`configurationUpdateHandler`](../uibutton/configurationupdatehandler-swift.property.md) or [`updateConfiguration()`](../uibutton/updateconfiguration%28%29.md).
 

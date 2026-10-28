@@ -20,13 +20,13 @@ object Audio
 - [Preparing Image, Video, Audio, Music, and ARKit Assets](../AppleNews/preparing-image-video-audio-music-and-arkit-assets.md)
 - [Using HTML with Apple News Format](../AppleNews/using-html-with-apple-news-format.md)
 
-#### Discussion
+## Discussion
 
 `Audio` is the abstract definition for all audio components. You can also include an image that represents your audio file.
 
 See [Preparing Image, Video, Audio, Music, and ARKit Assets](../AppleNews/preparing-image-video-audio-music-and-arkit-assets.md).
 
-##### Example
+### Example
 
 ```json
 {

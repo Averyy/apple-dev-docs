@@ -17,7 +17,7 @@ A component representation of the name.
 let components: PersonNameComponents
 ```
 
-#### Discussion
+## Discussion
 
 If available, these components will be taken directly from the underlying document. If not, the components will be derived from the full name String on the underlying document.
 

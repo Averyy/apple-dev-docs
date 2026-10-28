@@ -20,11 +20,11 @@ string AppsReportingAdGroup.SystemStatus
 - `RUNNING`: The ad group is active and serving ads.
 - `NOT_RUNNING`: The ad group isn’t serving ads. Check `systemStatusReasons` for the specific cause.
 
-#### Discussion
+## Discussion
 
 Like the other report-time status fields, this value is fixed at generation time and doesn’t reflect changes made afterward.
 
-##### Example
+### Example
 
 ```json
 {

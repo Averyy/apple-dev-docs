@@ -22,7 +22,7 @@ init(delegate: (any SCClipBufferingOutputDelegate)?)
 - (instancetype) initWithDelegate:(id<SCClipBufferingOutputDelegate>) delegate;
 ```
 
-#### Discussion
+## Discussion
 
 Initialize SCClipBufferingOutput object with SCClipBufferingOutputDelegate
 

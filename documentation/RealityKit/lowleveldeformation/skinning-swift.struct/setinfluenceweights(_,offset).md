@@ -18,7 +18,7 @@ Sets the buffer containing per-vertex influence weights.
 func setInfluenceWeights(_ buffer: any MTLBuffer, offset: Int) throws
 ```
 
-#### Discussion
+## Discussion
 
 The buffer must contain `influencesPerVertex × vertexCount` Float values.
 

@@ -23,7 +23,7 @@ var title: String? { get set }
 @property (nonatomic, copy, nullable) NSString * title;
 ```
 
-#### Discussion
+## Discussion
 
 You should set this property before adding the item to a bar. The default value is `nil`.
 

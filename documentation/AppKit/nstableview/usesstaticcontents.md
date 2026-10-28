@@ -19,7 +19,7 @@ var usesStaticContents: Bool { get set }
 @property BOOL usesStaticContents;
 ```
 
-#### Discussion
+## Discussion
 
 A static table does not rely on a data source to provide the number of rows. A static table view’s contents are set at design time and can be changed programmatically as needed. Typically, you do not change the contents of a static table view after setting them.
 

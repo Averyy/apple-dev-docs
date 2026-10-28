@@ -19,7 +19,7 @@ func fixParagraphStyleAttribute(in range: NSRange)
 - (void) fixParagraphStyleAttributeInRange:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 This method assigns the first paragraph style attribute value in each paragraph to all characters of the paragraph. This method extends the range as needed to cover the last paragraph partially contained. A paragraph is delimited by any of these characters, the longest possible sequence being preferred to any shorter:
 

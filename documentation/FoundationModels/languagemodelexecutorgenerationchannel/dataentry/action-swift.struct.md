@@ -20,7 +20,7 @@ An operation that can be performed on a data entry.
 struct Action
 ```
 
-#### Overview
+## Overview
 
 `Action` is an enum-like struct; construct one with a leading-dot factory such as [`update(contentType:content:metadata:)`](./action-swift.struct/update%28contenttype,content,metadata%29.md).
 

@@ -22,7 +22,7 @@ class UIPrintPaper
 @interface UIPrintPaper : NSObject
 ```
 
-#### Overview
+## Overview
 
 In most cases, UIKit automatically creates an instance of [`UIPrintPaper`](./uiprintpaper.md) that is appropriate for a print job. The UIKit framework has default paper sizes based on a print job’s output type ([`outputType`](./uiprintinfo/outputtype-swift.property.md) is a property of the [`UIPrintInfo`](./uiprintinfo.md) class). If the output type is [`UIPrintInfo.OutputType.photo`](./uiprintinfo/outputtype-swift.enum/photo.md), the default paper size is 4x6 or A6 or some other standard size, depending on locale; if the output type is [`UIPrintInfo.OutputType.general`](./uiprintinfo/outputtype-swift.enum/general.md) or [`UIPrintInfo.OutputType.grayscale`](./uiprintinfo/outputtype-swift.enum/grayscale.md), the default paper size is US Letter (8 1/2 by 11 inches) or A4 or some other standard size, depending on locale.
 

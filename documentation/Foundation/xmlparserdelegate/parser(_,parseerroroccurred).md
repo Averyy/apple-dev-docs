@@ -25,7 +25,7 @@ optional func parser(_ parser: XMLParser, parseErrorOccurred parseError: any Err
 - (void) parser:(NSXMLParser *) parser parseErrorOccurred:(NSError *) parseError;
 ```
 
-#### Discussion
+## Discussion
 
 When this method is invoked, parsing is stopped. For further information about the error, you can query `parseError` or you can send the `parser` a [`parserError`](../xmlparser/parsererror.md) message. You can also send the parser [`lineNumber`](../xmlparser/linenumber.md) and [`columnNumber`](../xmlparser/columnnumber.md) messages to further isolate where the error occurred. Typically you implement this method to display information about the error to the user.
 

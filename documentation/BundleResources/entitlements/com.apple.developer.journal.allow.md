@@ -19,7 +19,7 @@ An entitlement that enables an app to present the journaling suggestions picker.
 
 - `suggestions`
 
-#### Discussion
+## Discussion
 
 The [Journaling Suggestions](../../JournalingSuggestions/JournalingSuggestions.md) framework can’t present the [`JournalingSuggestionsPicker`](../../JournalingSuggestions/journalingsuggestionspicker.md) for apps without this entitlement in their code signature. Add this entitlement to your app by enabling the Journaling Suggestions capability in Xcode.
 

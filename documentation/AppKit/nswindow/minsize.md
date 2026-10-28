@@ -19,7 +19,7 @@ var minSize: NSSize { get set }
 @property NSSize minSize;
 ```
 
-#### Discussion
+## Discussion
 
 The minimum size constraint is enforced for resizing by the user as well as for the `setFrame...` methods other than [`setFrame(_:display:)`](./setframe%28_,display%29.md) and [`setFrame(_:display:animate:)`](./setframe%28_,display,animate%29.md).
 

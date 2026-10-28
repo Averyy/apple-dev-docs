@@ -19,7 +19,7 @@ var arePlugInsEnabled: Bool { get set }
 @property (nonatomic, getter=arePlugInsEnabled) BOOL plugInsEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 Set to [`true`](../../Swift/true.md) if the web view should allow plug-ins, otherwise [`false`](../../Swift/false.md).
 

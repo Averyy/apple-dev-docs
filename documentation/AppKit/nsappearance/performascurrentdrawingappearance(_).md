@@ -19,7 +19,7 @@ func performAsCurrentDrawingAppearance(_ block: () -> Void)
 - (void) performAsCurrentDrawingAppearance:(void (^)()) block;
 ```
 
-#### Discussion
+## Discussion
 
 This method saves and restores the previous current appearance.
 

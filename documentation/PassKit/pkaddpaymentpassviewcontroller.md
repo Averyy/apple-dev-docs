@@ -22,7 +22,7 @@ class PKAddPaymentPassViewController
 @interface PKAddPaymentPassViewController : UIViewController
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  Adding payment passes requires a special entitlement issued by Apple. Your app must include this entitlement before this class can be instantiated. For more information on requesting this entitlement, see the Card Issuers section at [developer.apple.com/apple-pay/](https://developer.apple.com/apple-pay/).
 

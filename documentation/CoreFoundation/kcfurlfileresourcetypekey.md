@@ -25,7 +25,7 @@ let kCFURLFileResourceTypeKey: CFString!
 extern CFStringRef const kCFURLFileResourceTypeKey;
 ```
 
-#### Discussion
+## Discussion
 
 See [File Resource Types](./file-resource-types.md) for possible values.
 

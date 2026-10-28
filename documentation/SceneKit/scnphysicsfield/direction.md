@@ -25,7 +25,7 @@ var direction: SCNVector3 { get set }
 @property (nonatomic) SCNVector3 direction;
 ```
 
-#### Discussion
+## Discussion
 
 Some types of fields apply forces whose direction or magnitude is relative to an axis. (For details on each type of field, see the methods listed in Creating Physics Fields.) Changing the direction changes the effects of these field types.
 

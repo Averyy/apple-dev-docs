@@ -5,7 +5,7 @@
 
 Read information about issues that occurred when Xcode Cloud performs a build.
 
-#### Overview
+## Overview
 
 The `ciIssues` resource represents issues that occur when Xcode Cloud performs a build. Use it to access a list of issues that occurred and read detailed issue information; for example:
 

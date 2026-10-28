@@ -20,7 +20,7 @@ func setSettings(_ settings: CompressorExtensionSettingsPtr!)
 - (void) setSettings:(CompressorExtensionSettingsPtr) settings;
 ```
 
-#### Discussion
+## Discussion
 
 During an encoding process, the Compressor app provides the extension with the current encoder settings. If the `settings` object contains an empty encoder setting string, use default values for the encoder settings.
 

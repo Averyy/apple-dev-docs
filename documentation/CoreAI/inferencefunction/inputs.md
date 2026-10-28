@@ -23,7 +23,7 @@ struct Inputs
 
 - [Integrating on-device AI models in your app with Core AI](../integrating-on-device-ai-models-in-your-app-with-core-ai.md)
 
-#### Overview
+## Overview
 
 Build an `Inputs` collection by calling [`insert(_:for:)`](./inputs/insert%28_,for%29-2htrp.md) for each named input the function expects, then pass it to [`run(inputs:states:outputViews:)`](./run%28inputs,states,outputviews%29-14emi.md).
 

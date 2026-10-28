@@ -23,7 +23,7 @@ case `default`
 UIInputViewStyleDefault
 ```
 
-#### Discussion
+## Discussion
 
 Don’t apply tinting effects. This style is intended for input views that attach to the top of the keyboard and have a similar theme but that don’t look like the keyboard itself.
 

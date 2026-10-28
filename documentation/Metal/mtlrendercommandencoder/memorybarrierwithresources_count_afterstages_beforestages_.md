@@ -20,7 +20,7 @@ Creates a memory barrier that enforces the order of write and read operations fo
 - (void) memoryBarrierWithResources:(id<MTLResource> const[]) resources count:(NSUInteger) count afterStages:(MTLRenderStages) after beforeStages:(MTLRenderStages) before;
 ```
 
-#### Discussion
+## Discussion
 
 Memory barriers ensure the relevant stages of prior draw commands finish modifying resources before starting the stages of subsequent commands that depend on those resources.
 

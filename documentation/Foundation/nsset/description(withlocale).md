@@ -25,11 +25,11 @@ func description(withLocale locale: Any?) -> String
 - (NSString *) descriptionWithLocale:(id) locale;
 ```
 
-#### Return Value
+## Return Value
 
 A string that represents the contents of the set, formatted as a property list.
 
-#### Discussion
+## Discussion
 
 This method sends each of the set’s members  `descriptionWithLocale:` with `locale` passed as the sole parameter. If the set’s members do not respond to `descriptionWithLocale:`, this method sends [`description`](../../ObjectiveC/nsobjectprotocol/description.md) instead.
 

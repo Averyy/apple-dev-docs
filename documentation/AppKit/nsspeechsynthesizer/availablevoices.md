@@ -21,7 +21,7 @@ class var availableVoices: [NSSpeechSynthesizer.VoiceName] { get }
 @property (class, copy, readonly) NSArray<NSString *> * availableVoices;
 ```
 
-#### Return Value
+## Return Value
 
 Array of strings representing the identifiers of each voice available on the system.
 

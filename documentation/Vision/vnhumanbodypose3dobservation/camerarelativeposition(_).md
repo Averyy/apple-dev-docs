@@ -24,7 +24,7 @@ func cameraRelativePosition(_ jointName: VNHumanBodyPose3DObservation.JointName)
 
 - [Identifying 3D human body poses in images](../identifying-3d-human-body-poses-in-images.md)
 
-#### Return Value
+## Return Value
 
 The joint position, in meters.
 

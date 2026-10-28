@@ -20,7 +20,7 @@ Blend shape deformation data.
 let blendShapes: USDPlayer.DeformationData.BlendShapeData?
 ```
 
-#### Discussion
+## Discussion
 
 `nil` when the mesh has no blend shapes.
 

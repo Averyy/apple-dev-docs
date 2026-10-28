@@ -13,7 +13,7 @@
 typedef errno_t (*ctl_connect_func)(kern_ctl_ref kctlref, struct sockaddr_ctl *sac, void **unitinfo);
 ```
 
-#### Discussion
+## Discussion
 
 The ctl_connect_func is used to receive notification of a client connecting to the kernel control.
 

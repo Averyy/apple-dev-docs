@@ -23,7 +23,7 @@ var type: UIEvent.EventType { get }
 @property (nonatomic, readonly) UIEventType type;
 ```
 
-#### Discussion
+## Discussion
 
 The [`UIEvent.EventType`](./eventtype.md) constant returned by this property indicates the general type of this event — for example, whether it’s a touch or motion event.
 

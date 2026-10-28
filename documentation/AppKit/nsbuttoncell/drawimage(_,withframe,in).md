@@ -19,7 +19,7 @@ func drawImage(_ image: NSImage, withFrame frame: NSRect, in controlView: NSView
 - (void) drawImage:(NSImage *) image withFrame:(NSRect) frame inView:(NSView *) controlView;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called automatically when the button is redrawn; you should not call it directly.
 

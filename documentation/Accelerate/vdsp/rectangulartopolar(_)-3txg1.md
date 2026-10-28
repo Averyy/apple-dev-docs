@@ -21,7 +21,7 @@ Returns double-precision polar coordinates converted from rectangular coordinate
 static func rectangularToPolar<U>(_ rectangularCoordinates: U) -> [Double] where U : AccelerateBuffer, U.Element == Double
 ```
 
-#### Discussion
+## Discussion
 
 The function calls the underlying [`vDSP_polar`](../vdsp_polar.md) function to convert the input angle-radius pairs to Cartesian x-y pairs.
 

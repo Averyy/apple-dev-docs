@@ -20,7 +20,7 @@ The current playback rate for the player.
 var playbackRate: Float { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This value represents a multiplier for the default playback rate of the current entry. A value of `0.0` indicates that the entry isn’t playing, and a value of `1.0` indicates that it’s playing at normal speed. Positive values indicate forward playback, and negative values indicate reverse playback.
 

@@ -26,7 +26,7 @@ func awakeFromNib()
 - (void) awakeFromNib;
 ```
 
-#### Discussion
+## Discussion
 
 The nib-loading infrastructure sends an `awakeFromNib` message to each object recreated from a nib archive, but only after all the objects in the archive have been loaded and initialized. When an object receives an `awakeFromNib` message, it is guaranteed to have all its outlet and action connections already established.
 

@@ -24,7 +24,7 @@ var mass: Float { get set }
 @property (nonatomic) float mass;
 ```
 
-#### Discussion
+## Discussion
 
 The higher the value of this property, the slower the agent will be to respond to goals that change its speed or direction, and vice versa.
 

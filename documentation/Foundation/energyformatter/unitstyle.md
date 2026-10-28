@@ -25,7 +25,7 @@ var unitStyle: Formatter.UnitStyle { get set }
 @property NSFormattingUnitStyle unitStyle;
 ```
 
-#### Discussion
+## Discussion
 
 This property defaults to [`Formatter.UnitStyle.medium`](../formatter/unitstyle/medium.md). For a complete list of unit styles, see [`Formatter.UnitStyle`](../formatter/unitstyle.md).
 

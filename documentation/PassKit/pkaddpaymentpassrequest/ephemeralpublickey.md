@@ -23,7 +23,7 @@ var ephemeralPublicKey: Data? { get set }
 @property (nonatomic, copy, nullable) NSData * ephemeralPublicKey;
 ```
 
-#### Discussion
+## Discussion
 
 When using an ECC scheme, this property contains your ephemeral public key.
 

@@ -12,7 +12,7 @@ virtual void dispatchTimerEvents(
  boolforce);
 ```
 
-#### Overview
+## Overview
 
 This method iterates through all of the timer event targets and calls the callback on each. Unless the force flag is set to true, the timer events will only be dispatched if the power state is not kIOAudioDeviceSleep. This prevents unexpected timer firings while making wake->sleep->wake transitions. This function must be called on the IOWorkLoop.
 

@@ -19,11 +19,11 @@ func sendFile(_ inLocalPathAndName: String!) -> OBEXError
 - (OBEXError) sendFile:(NSString *) inLocalPathAndName;
 ```
 
-#### Return Value
+## Return Value
 
 kOBEXSuccess, kOBEXSessionBusyError, or kOBEXBadArgumentError initially. Further results returned through the fileTransferServicesSendComplete: and fileTransferServicesSendProgress: delegate methods if initially successful.
 
-#### Discussion
+## Discussion
 
 Equivalent to ‘mv inLocalFilePath remoteCurrentPath’.
 

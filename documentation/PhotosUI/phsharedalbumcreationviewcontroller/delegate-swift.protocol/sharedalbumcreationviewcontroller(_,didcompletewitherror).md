@@ -22,7 +22,7 @@ func sharedAlbumCreationViewController(_ creationViewController: PHSharedAlbumCr
 - (void) sharedAlbumCreationViewController:(PHSharedAlbumCreationViewController *) creationViewController didCompleteWithError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 Called when shared album creation completes.
 

@@ -20,7 +20,7 @@ Reads an audio file as an async sequence of audio buffers.
 static func read(contentsOf url: URL, configuration: AudioReader.Configuration = .init()) throws -> AudioReader.AsyncBuffers
 ```
 
-#### Return Value
+## Return Value
 
 An async sequence of `AVAudioPCMBuffer`.
 

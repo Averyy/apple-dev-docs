@@ -27,7 +27,7 @@ struct Product
 - [Supporting Family Sharing in your app](./supporting-family-sharing-in-your-app.md)
 - [Supporting promoted Apple In-App Purchases in your app](./supporting-promoted-in-app-purchases-in-your-app.md)
 
-#### Overview
+## Overview
 
 The `Product` type represents the Apple In-App Purchases that you configure in App Store Connect and make available for purchase within your app. Use `Product` to perform all product-related tasks in your app, from displaying Apple In-App Purchases and offers to making a purchase and getting transaction and subscription status information.
 

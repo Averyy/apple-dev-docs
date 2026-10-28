@@ -26,11 +26,11 @@ func seek(to date: Date, completionHandler: (@Sendable (Bool) -> Void)? = nil) -
 - (BOOL) seekToDate:(NSDate *) date completionHandler:(void (^)(BOOL finished)) completionHandler;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the playhead moved to the specified date or [`false`](../../Swift/false.md) if it did not.
 
-#### Discussion
+## Discussion
 
 Use this method to seek to a specified time in the player item and be notified when the operation completes. If the seek request completes without being interrupted (either by another seek request or by any other operation), the completion handler you provide is executed with the `finished` parameter set to [`true`](../../Swift/true.md).
 

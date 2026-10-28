@@ -24,11 +24,11 @@ var preferredStatusBarStyle: UIStatusBarStyle { get }
 @property (nonatomic, readonly) UIStatusBarStyle preferredStatusBarStyle;
 ```
 
-#### Return Value
+## Return Value
 
 A [`UIStatusBarStyle`](../uistatusbarstyle.md) key indicating your preferred status bar style for the view controller.
 
-#### Discussion
+## Discussion
 
 You can override the preferred status bar style for a view controller by implementing the [`childForStatusBarStyle`](./childforstatusbarstyle.md) method.
 

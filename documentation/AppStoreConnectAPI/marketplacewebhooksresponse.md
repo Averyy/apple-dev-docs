@@ -17,7 +17,7 @@ A response containing a list of webhook endpoints for an alternative marketplace
 object MarketplaceWebhooksResponse
 ```
 
-#### Discussion
+## Discussion
 
 Use this object with [`Read Marketplace Webhook Information`](./get-v1-marketplacewebhooks.md).
 

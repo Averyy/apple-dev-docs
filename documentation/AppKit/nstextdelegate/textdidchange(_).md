@@ -20,7 +20,7 @@ optional func textDidChange(_ notification: Notification)
 - (void) textDidChange:(NSNotification *) notification;
 ```
 
-#### Discussion
+## Discussion
 
 The name of `aNotification` is [`didChangeNotification`](../nstext/didchangenotification.md).
 

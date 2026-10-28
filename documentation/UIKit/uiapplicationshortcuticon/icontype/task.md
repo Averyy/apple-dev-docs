@@ -22,7 +22,7 @@ case task
 UIApplicationShortcutIconTypeTask
 ```
 
-#### Discussion
+## Discussion
 
 ![Task quick action icon](https://developer.apple.com/tutorials/images/com.apple.uikit/media-2934531@2x.png)
 

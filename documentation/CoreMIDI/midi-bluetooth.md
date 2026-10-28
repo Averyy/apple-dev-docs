@@ -5,7 +5,7 @@
 
 Connect to Bluetooth Low Energy MIDI peripherals.
 
-#### Overview
+## Overview
 
 In macOS 13 or later and iOS 16 or later, the system automatically reconnects Bluetooth Low Energy (BLE) MIDI peripherals when powered on, if the device supports pairing. Previously, it was necessary to use Audio MIDI Setup to establish BLE MIDI connections.
 

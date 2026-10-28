@@ -25,7 +25,7 @@ func dataTaskPublisher(for url: URL) -> URLSession.DataTaskPublisher
 
 - [Processing URL session data task results with Combine](../processing-url-session-data-task-results-with-combine.md)
 
-#### Discussion
+## Discussion
 
 The publisher publishes data when the task completes, or terminates if the task fails with an error.
 

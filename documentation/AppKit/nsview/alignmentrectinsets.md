@@ -19,7 +19,7 @@ var alignmentRectInsets: NSEdgeInsets { get }
 @property (readonly) NSEdgeInsets alignmentRectInsets;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is an [`NSEdgeInsets`](../../Foundation/nsedgeinsets.md) structure with the value `0` for each component. Custom views that draw ornamentation around their content can override this property and return insets that align with the edges of the content, excluding the ornamentation. This allows the constraint-based layout system to align views based on their content, rather than just their frame.
 

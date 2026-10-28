@@ -22,7 +22,7 @@ A key for the space added between specific pairs of characters in a run of attri
 enum KerningAttribute
 ```
 
-#### Overview
+## Overview
 
 Kerning adjusts the gap between individual pairs, such as the two letters in “AV”, so that the pair looks evenly spaced. Give a positive value to open the pairs up and a negative value to tighten them:
 

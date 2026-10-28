@@ -20,7 +20,7 @@ optional func textView(_ textView: NSTextView, doubleClickedOn cell: any NSTextA
 - (void) textView:(NSTextView *) textView doubleClickedOnCell:(id<NSTextAttachmentCell>) cell inRect:(NSRect) cellFrame atIndex:(NSUInteger) charIndex;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate can use this message as its cue to perform an action, such as opening the file represented by the attachment. `aTextView` is the first text view in a series shared by a layout manager, not necessarily the one that draws `cell`.
 

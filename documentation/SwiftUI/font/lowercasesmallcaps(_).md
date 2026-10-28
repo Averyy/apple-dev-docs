@@ -21,7 +21,7 @@ Adjusts the font to enable/disable lowercase small capitals.
 func lowercaseSmallCaps(_ isActive: Bool) -> Font
 ```
 
-#### Discussion
+## Discussion
 
 This function controls turning lowercase characters into small capitals for the font. It is generally used for display lines set in large and small caps, such as titles. It may include forms related to small capitals, such as old-style figures.
 

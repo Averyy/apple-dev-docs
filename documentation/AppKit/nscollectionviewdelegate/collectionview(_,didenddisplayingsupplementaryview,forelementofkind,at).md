@@ -20,7 +20,7 @@ optional func collectionView(_ collectionView: NSCollectionView, didEndDisplayin
 - (void) collectionView:(NSCollectionView *) collectionView didEndDisplayingSupplementaryView:(NSView *) view forElementOfKind:(NSCollectionViewSupplementaryElementKind) elementKind atIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Discussion
+## Discussion
 
 The collection view calls this method after removing a supplementary view from its content. You can use this method to track the removal of views and perform related tasks.
 

@@ -25,7 +25,7 @@ func CFURLSetTemporaryResourcePropertyForKey(_ url: CFURL!, _ key: CFString!, _ 
 extern void CFURLSetTemporaryResourcePropertyForKey(CFURLRef url, CFStringRef key, CFTypeRef propertyValue);
 ```
 
-#### Discussion
+## Discussion
 
 Your app can use a temporary resource value to temporarily store a value for an app-defined resource value key in memory without modifying the actual resource that the URL represents. Once set, you can copy the temporary resource value from the URL object just as you would copy system-defined keys—by calling [`CFURLCopyResourcePropertyForKey(_:_:_:_:)`](./cfurlcopyresourcepropertyforkey%28_,_,_,_%29.md) or [`CFURLCopyResourcePropertiesForKeys(_:_:_:)`](./cfurlcopyresourcepropertiesforkeys%28_,_,_%29.md).
 

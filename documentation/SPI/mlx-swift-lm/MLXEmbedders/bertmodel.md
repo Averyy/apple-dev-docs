@@ -17,7 +17,7 @@ The complete BERT model implementation.
 class BertModel
 ```
 
-#### Overview
+## Overview
 
 `BertModel` coordinates the flow of data from raw input tokens to high-level contextual representations. It can be configured in two modes:
 

@@ -16,7 +16,7 @@ Creates a new affine transform initialized to the identity matrix.
 + (NSAffineTransform *) transform;
 ```
 
-#### Return Value
+## Return Value
 
 A new identity transform object. This matrix transforms any point to the same point.
 

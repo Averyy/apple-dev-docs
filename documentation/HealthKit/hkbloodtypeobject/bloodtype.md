@@ -24,7 +24,7 @@ var bloodType: HKBloodType { get }
 @property (readonly) HKBloodType bloodType;
 ```
 
-#### Discussion
+## Discussion
 
 For a list of possible blood types, see [`HKBloodType`](../hkbloodtype.md).
 

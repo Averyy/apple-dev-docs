@@ -2,7 +2,7 @@
 
 **Framework**: IOKit
 
-#### Overview
+## Overview
 
 Used when a scale_factor parameter is required to define a unit of time.
 

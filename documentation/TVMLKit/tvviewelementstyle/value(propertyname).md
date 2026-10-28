@@ -21,7 +21,7 @@ func value(propertyName name: String) -> Any?
 - (id) valueForStyleProperty:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 An object containing the value associated with the style name.
 

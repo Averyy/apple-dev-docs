@@ -21,11 +21,11 @@ Computes the maximum absolute error between predicted and ground truth values.
 func maximumAbsoluteError<T>(_ annotatedPredictions: [AnnotatedPrediction<T, T>]) -> T where T : FloatingPoint
 ```
 
-#### Return Value
+## Return Value
 
 The maximum absolute error.
 
-#### Discussion
+## Discussion
 
 If an empty `AnnotatedPrediction` is supplied, the result will be NaN.
 

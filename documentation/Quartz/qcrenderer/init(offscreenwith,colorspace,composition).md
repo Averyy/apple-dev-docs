@@ -21,11 +21,11 @@ init!(offScreenWith size: NSSize, colorSpace: CGColorSpace!, composition: QCComp
 - (id) initOffScreenWithSize:(NSSize) size colorSpace:(CGColorSpaceRef) colorSpace composition:(QCComposition *) composition;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized `QCRenderer` object or `nil` if initialization is not successful.
 
-#### Discussion
+## Discussion
 
 This method creates an internal OpenGL context and pixel buffer. Because offscreen rendering is performed on the GPU, the maximum rendering size is limited to the GPU capacity. On typical hardware, the limit is at least 2048 by 2048, but is often 4096 by 4096. The available VRAM affects performance.
 

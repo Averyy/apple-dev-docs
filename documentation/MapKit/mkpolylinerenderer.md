@@ -24,7 +24,7 @@ class MKPolylineRenderer
 @interface MKPolylineRenderer : MKOverlayPathRenderer
 ```
 
-#### Overview
+## Overview
 
 This renderer strokes the line only; it doesn’t fill it. You can change the color and other drawing attributes of the polyline by modifying the properties it inherits from the main class. You typically use this class as-is and don’t subclass it.
 

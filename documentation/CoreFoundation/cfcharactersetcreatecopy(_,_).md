@@ -25,11 +25,11 @@ func CFCharacterSetCreateCopy(_ alloc: CFAllocator!, _ theSet: CFCharacterSet!) 
 extern CFCharacterSetRefCFCharacterSetCreateCopy(CFAllocatorRef alloc, CFCharacterSetRef theSet);
 ```
 
-#### Return Value
+## Return Value
 
 A new character set that is a copy of `theSet`. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 This function tries to compact the backing store where applicable.
 

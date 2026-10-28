@@ -24,11 +24,11 @@ func imageWithoutBaseline() -> UIImage
 - (UIImage *) imageWithoutBaseline;
 ```
 
-#### Return Value
+## Return Value
 
 A new image object based on the current image but without baseline information.
 
-#### Discussion
+## Discussion
 
 Use this method to remove baseline information that might be interfering with the layout of the image.
 

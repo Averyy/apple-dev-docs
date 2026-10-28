@@ -23,7 +23,7 @@ var kCFSocketLeaveErrors: CFOptionFlags { get }
 kCFSocketLeaveErrors
 ```
 
-#### Discussion
+## Discussion
 
 Normally, the CFNetwork stack calls getsockopt(2) macOS Developer Tools Manual Page to read the error code from the socket prior to calling your write callback. This also has the effect of clearing any pending errors on the socket.
 

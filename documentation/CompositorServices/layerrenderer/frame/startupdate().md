@@ -24,7 +24,7 @@ void cp_frame_start_update(cp_frame_t frame);
 
 - [Drawing fully immersive content using Metal](../../drawing-fully-immersive-content-using-metal.md)
 
-#### Discussion
+## Discussion
 
 This function helps you optimize your app’s rendering efficiency. Before you render a frame, you might need to respond to interactions with your content and update your app’s data structures before you render items in your scene. Call this function immediately before you start that work, and call [`endUpdate()`](./endupdate%28%29.md)  as soon as you finish. Compositor Services uses the time difference to improve its predictions for when to start the frame encoding process.
 

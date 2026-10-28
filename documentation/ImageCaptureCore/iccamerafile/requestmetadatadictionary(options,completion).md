@@ -27,7 +27,7 @@ func requestMetadataDictionary(options: [ICCameraItemMetadataOption : Any]? = ni
 - (void) requestMetadataDictionaryWithOptions:(NSDictionary<NSString *,id> *) options completion:(void (^)(NSDictionary *, NSError *)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 The completion block executes on an any available queue; often this is not the main queue.
 

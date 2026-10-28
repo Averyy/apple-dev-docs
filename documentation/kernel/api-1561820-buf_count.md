@@ -15,7 +15,7 @@ Get count of valid bytes in a buffer. This may be less than the space allocated 
 uint32_t buf_count(buf_t bp);
 ```
 
-#### Return Value
+## Return Value
 
 Byte count.
 

@@ -24,7 +24,7 @@ var menu: UIMenu? { get set }
 @property (nonatomic, copy, readwrite, nullable) UIMenu * menu;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`. When this property changes, the button automatically enables and disables the [`contextMenuInteraction`](../uicontrol/contextmenuinteraction.md).
 

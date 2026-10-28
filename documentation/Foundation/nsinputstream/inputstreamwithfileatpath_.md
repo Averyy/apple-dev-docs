@@ -21,11 +21,11 @@ Creates and returns an initialized `NSInputStream` object that reads data from t
 + (instancetype) inputStreamWithFileAtPath:(NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSInputStream` object that reads data from the file at `path`.
 
-#### Discussion
+## Discussion
 
 The stream must be opened before it can be used.
 

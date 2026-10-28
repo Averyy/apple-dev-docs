@@ -16,7 +16,7 @@ nonisolated
 func dialogSuppressionToggle(isSuppressed: Binding<Bool>) -> some Scene
 ```
 
-#### Discussion
+## Discussion
 
 Applying dialog suppression adds a toggle to dialogs on macOS, which allows the user to request the alert not be displayed again. Typically whether a dialog is suppressed is stored in `AppStorage` and used to decide whether to present the dialog in the future.
 

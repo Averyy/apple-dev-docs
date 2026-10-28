@@ -17,11 +17,11 @@ Creates a provider for the specified accessory.
 init(for accessory: ASAccessory) async throws
 ```
 
-#### Return Value
+## Return Value
 
 A new [`WINetworkSharingProvider`](../winetworksharingprovider.md) configured for the specified accessory.
 
-#### Discussion
+## Discussion
 
 Use this initializer to establish a connection with the system for sharing networks with your accessory.
 

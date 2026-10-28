@@ -17,7 +17,7 @@ The metadata for the constraint that configures access to Siri.
 static let denySiri: SettingMetadata<Bool>
 ```
 
-#### Discussion
+## Discussion
 
 Use `denySiri`  to access the metadata for [`denySiri`](./denysiri-swift.property.md). The default value is `false`.
 

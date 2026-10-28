@@ -21,7 +21,7 @@ var configuresApplicationAudioSessionForBluetoothHighQualityRecording: Bool { ge
 @property (nonatomic) BOOL configuresApplicationAudioSessionForBluetoothHighQualityRecording;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to enable using AirPods as a high-quality microphone. Set this value to `true` to tell a capture session to opt-in to high-quality bluetooth recording, which enables a person to select AirPods as the active mic source for capture. This property has no effect when the value of [`usesApplicationAudioSession`](./usesapplicationaudiosession.md) is `false`.
 

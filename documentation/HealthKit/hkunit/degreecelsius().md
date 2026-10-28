@@ -24,7 +24,7 @@ class func degreeCelsius() -> Self
 + (instancetype) degreeCelsiusUnit;
 ```
 
-#### Return Value
+## Return Value
 
 A HealthKit unit for measuring temperature in degrees Celsius.
 

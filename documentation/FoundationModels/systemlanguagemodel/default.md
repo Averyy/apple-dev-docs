@@ -23,7 +23,7 @@ static var `default`: SystemLanguageModel { get }
 
 - [Generating content and performing tasks with Foundation Models](../generating-content-and-performing-tasks-with-foundation-models.md)
 
-#### Discussion
+## Discussion
 
 The base model is a generic model that is useful for a wide variety of applications, but is not specialized to any particular use case.
 

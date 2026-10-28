@@ -28,7 +28,7 @@ var requestedTimeToleranceBefore: CMTime { get set }
 
 - [Creating images from a video asset](../creating-images-from-a-video-asset.md)
 
-#### Discussion
+## Discussion
 
 The default value is [`positiveInfinity`](../../CoreMedia/cmtime/positiveinfinity.md). Set the values of [`requestedTimeToleranceBefore`](./requestedtimetolerancebefore.md) and [`requestedTimeToleranceAfter`](./requestedtimetoleranceafter.md) to [`zero`](../../CoreMedia/cmtime/zero.md) to request frame-accurate image generation; this may incur additional decoding delay.
 

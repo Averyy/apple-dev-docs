@@ -21,7 +21,7 @@ An indication that a non-optional value of the given type was expected, but a nu
 case valueNotFound(any Any.Type, DecodingError.Context)
 ```
 
-#### Discussion
+## Discussion
 
 As associated values, this case contains the attempted type and context for debugging.
 

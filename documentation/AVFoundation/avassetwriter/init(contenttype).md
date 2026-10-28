@@ -24,7 +24,7 @@ init(contentType outputContentType: UTType)
 - (instancetype) initWithContentType:(UTType *) outputContentType;
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create an asset writer that outputs segment data to an adopter of the [`AVAssetWriterDelegate`](../avassetwriterdelegate.md) protocol. For example, you can create an asset writer object to write an MPEG-4 file as shown below:
 

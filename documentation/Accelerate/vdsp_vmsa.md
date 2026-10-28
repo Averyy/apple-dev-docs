@@ -25,7 +25,7 @@ extern void vDSP_vmsa(const float *__A, vDSP_Stride __IA, const float *__B, vDSP
 
 - [Using vDSP for vector-based arithmetic](./using-vdsp-for-vector-based-arithmetic.md)
 
-#### Discussion
+## Discussion
 
 This function calculates the element-wise product of vectors `A` and `B`, adds scalar value `C` to the product, and writes the result to vector `D`, as follows:
 

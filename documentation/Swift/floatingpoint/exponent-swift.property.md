@@ -22,7 +22,7 @@ The exponent of the floating-point value.
 var exponent: Self.Exponent { get }
 ```
 
-#### Discussion
+## Discussion
 
 The *exponent* of a floating-point value is the integer part of the logarithm of the value’s magnitude. For a value `x` of a floating-point type `F`, the magnitude can be calculated as the following, where `**` is exponentiation:
 

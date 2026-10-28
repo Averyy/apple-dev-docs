@@ -28,7 +28,7 @@ protocol HKLiveWorkoutBuilderDelegate : NSObjectProtocol
 - [Running workout sessions](./running-workout-sessions.md)
 - [Accessing workout zone data](./accessing-workout-zone-data.md)
 
-#### Overview
+## Overview
 
 Conform to this protocol to receive notifications about workout data collection, events, activities, and zone changes during a live workout session.
 

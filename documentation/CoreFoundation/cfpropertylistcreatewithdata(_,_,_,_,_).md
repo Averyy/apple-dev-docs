@@ -25,7 +25,7 @@ func CFPropertyListCreateWithData(_ allocator: CFAllocator!, _ data: CFData!, _ 
 extern CFPropertyListRefCFPropertyListCreateWithData(CFAllocatorRef allocator, CFDataRef data, CFOptionFlags options, CFPropertyListFormat *format, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 A new property list created from the data in `data`. If an error occurs while parsing the data, returns `NULL`. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

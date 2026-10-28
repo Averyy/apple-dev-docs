@@ -13,11 +13,11 @@
 errno_t sock_shutdown(socket_t so, int how);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Shutdown one or both directions of a connection. See 'man 2 shutdown' for more information.
 

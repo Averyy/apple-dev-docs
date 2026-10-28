@@ -5,15 +5,15 @@
 
 Transform the user’s location that displays on a map into an informative textual description by reverse geocoding.
 
-#### Overview
+## Overview
 
 You can show a user’s location on a map in order to orient them to elements of your app that use map content. For instance, a user’s current location can be a point of reference for retrieving search results or calculating directions. Additionally, you can display location information outside of the map, such as a search field pre-filled with the user’s current city or street address. To provide this information in your app, configure your map view to display the user’s location, and then translate the location to informative, user-friendly data.
 
-##### Display the user location annotation
+### Display the user location annotation
 
 To provide user-friendly place information, configure your map view to display the user’s current location by enabling [`showsUserLocation`](../MapKit/mkmapview/showsuserlocation.md). After enabling this property, the map delegate begins receiving updates to the user’s location, represented with a [`MKUserLocation`](../MapKit/mkuserlocation.md) object, through [`mapView(_:didUpdate:)`](../MapKit/mkmapviewdelegate/mapview%28_,didupdate%29.md).
 
-##### Geocode the user location annotation
+### Geocode the user location annotation
 
 [`CLPlacemark`](./clplacemark.md) objects represent user place names, and include properties for street name, city name, country or region name, and many other location identifiers. When [`mapView(_:didUpdate:)`](../MapKit/mkmapviewdelegate/mapview%28_,didupdate%29.md) receives updates on the user’s location, convert the [`MKUserLocation`](../MapKit/mkuserlocation.md) object to a [`CLPlacemark`](./clplacemark.md) by reverse geocoding the [`location`](../MapKit/mkuserlocation/location.md) property with a [`CLGeocoder`](./clgeocoder.md). Readable descriptions of the user’s location are available as properties on the placemark, such as the city information stored in the [`locality`](./clplacemark/locality.md) property.
 

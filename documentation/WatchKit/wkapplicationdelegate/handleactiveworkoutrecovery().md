@@ -19,7 +19,7 @@ optional func handleActiveWorkoutRecovery()
 - (void) handleActiveWorkoutRecovery;
 ```
 
-#### Discussion
+## Discussion
 
 To recover from a crash, call your HealthKit store’s [`recoverActiveWorkoutSession(completion:)`](../../HealthKit/hkhealthstore/recoveractiveworkoutsession%28completion%29.md) method to receive a new workout session. You can then set up your data source and delegate as described in [Running workout sessions](../../HealthKit/running-workout-sessions.md).
 

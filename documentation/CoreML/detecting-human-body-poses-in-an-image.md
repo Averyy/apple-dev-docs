@@ -12,7 +12,7 @@ Locate people and the stance of their bodies by analyzing an image with a PoseNe
 - Mac Catalyst 13.0+
 - Xcode 15.2+
 
-#### Overview
+## Overview
 
 This sample project provides an illustrative example of using a third-party [Core ML](./CoreML.md) model, PoseNet, to detect human body poses from frames captured using a camera. PoseNet models detect 17 different body parts or joints: eyes, ears, nose, shoulders, hips, elbows, knees, wrists, and ankles. Collectively these joints form a pose.
 
@@ -22,7 +22,7 @@ The sample finds the locations of the 17 joints for each person in the image and
 
 > **Note**: Starting in iOS 14 and macOS 11, [Vision](../Vision/Vision.md) adds the ability to detect human body poses. For details, see [Detecting Human Body Poses in Images](../Vision/detecting-human-body-poses-in-images.md).
 
-##### Configure the capture session
+### Configure the capture session
 
 The sample starts by getting an image from the device’s built-in camera using an [`AVCaptureSession`](../AVFoundation/avcapturesession.md) (see [Setting Up a Capture Session](../AVFoundation/setting-up-a-capture-session.md)).
 
@@ -42,7 +42,7 @@ try setCaptureSessionOutput()
 captureSession.commitConfiguration()
 ```
 
-##### Acquire the captured image
+### Acquire the captured image
 
 ```swift
 // Attempt to lock the image buffer to gain access to its memory.
@@ -65,7 +65,7 @@ DispatchQueue.main.sync {
 }
 ```
 
-##### Prepare the input for the PoseNet model
+### Prepare the input for the PoseNet model
 
 ```swift
 // Wrap the image in an instance of PoseNetInput to have it resized
@@ -73,7 +73,7 @@ DispatchQueue.main.sync {
 let input = PoseNetInput(image: image, size: self.modelInputSize)
 ```
 
-##### Pass the input to the PoseNet model
+### Pass the input to the PoseNet model
 
 The sample app then proceeds to pass the input to the PoseNet’s [`prediction`](./mlmodel/prediction%28from%29-9y2aa.md) function to obtain its outputs, which the app uses to detect poses.
 
@@ -93,7 +93,7 @@ DispatchQueue.main.async {
 }
 ```
 
-##### Analyze the PoseNet output to locate joints
+### Analyze the PoseNet output to locate joints
 
 The sample uses one of two algorithms to locate the joints of either one person or multiple persons. The single-person algorithm, the simplest and fastest, inspects the model’s outputs to locate the most prominent joints in the image and uses these joints to construct a single pose.
 
@@ -165,7 +165,7 @@ detectedPoses.forEach { pose in
 return detectedPoses
 ```
 
-##### Visualize the detected poses
+### Visualize the detected poses
 
 For each detected pose, the sample app draws a wireframe over the input image, connecting the lines between the joints and then drawing circles for the joints themselves.
 

@@ -25,7 +25,7 @@ let MPMediaPlaylistPropertyAuthorDisplayName: String
 extern NSString * const MPMediaPlaylistPropertyAuthorDisplayName;
 ```
 
-#### Discussion
+## Discussion
 
 This is required for 3rd party apps. Defaults to the app display name when not defined.
 

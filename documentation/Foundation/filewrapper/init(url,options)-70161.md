@@ -25,11 +25,11 @@ init(url: URL, options: FileWrapper.ReadingOptions = []) throws
 - (instancetype) initWithURL:(NSURL *) url options:(NSFileWrapperReadingOptions) options error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 File wrapper for the file-system node at `url`. May be a directory, file, or symbolic link, depending on what is located at the URL. Returns [`false`](../../Swift/false.md) (0) if reading is not successful.
 
-#### Discussion
+## Discussion
 
 If `url` is a directory, this method recursively creates file wrappers for each node within that directory. Use the [`fileWrappers`](./filewrappers.md) property to get the file wrappers of the nodes contained by the directory.
 

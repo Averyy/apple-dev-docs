@@ -23,7 +23,7 @@ func startSpotlightIndexing()
 - (void) startSpotlightIndexing;
 ```
 
-#### Discussion
+## Discussion
 
 After you call this method, the delegate posts a notification whenever the index changes. The type of notification is [`indexDidUpdateNotification`](./indexdidupdatenotification.md), and its `userInfo` dictionary contains the keys [`NSStoreUUIDKey`](../nsstoreuuidkey.md) and [`NSPersistentHistoryTokenKey`](../nspersistenthistorytokenkey.md).
 

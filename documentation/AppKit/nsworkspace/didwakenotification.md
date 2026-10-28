@@ -19,7 +19,7 @@ class let didWakeNotification: NSNotification.Name
 extern NSNotificationName NSWorkspaceDidWakeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the shared `NSWorkspace` instance. The notification doesn’t contain a `userInfo` dictionary.
 

@@ -12,11 +12,11 @@ virtual bool GetUserClientExclusivityState (
  void );
 ```
 
-#### Return Value
+## Return Value
 
 `true` if a user client is in exclusive control of the device, `false` otherwise.
 
-#### Overview
+## Overview
 
 The GetUserClientExclusivityState() method is called by the SCSITaskUserClient to determine if any user client is holding exclusive access at the current time. This is simply a preflight check and a return value of `false` does not guarantee that a subsequent call to SetUserClientExclusivityState() will return successfully.
 

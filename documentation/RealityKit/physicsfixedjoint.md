@@ -20,7 +20,7 @@ A joint that rigidly connects two entity pins, with zero degrees of freedom.
 struct PhysicsFixedJoint
 ```
 
-#### Overview
+## Overview
 
 A fixed joint connects two [`GeometricPin`](./geometricpin.md) instances, `pin0` and `pin1`, so that their poses coincide.
 

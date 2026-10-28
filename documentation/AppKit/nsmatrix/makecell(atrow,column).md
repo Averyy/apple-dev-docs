@@ -19,11 +19,11 @@ func makeCell(atRow row: Int, column col: Int) -> NSCell
 - (NSCell *) makeCellAtRow:(NSInteger) row column:(NSInteger) col;
 ```
 
-#### Return Value
+## Return Value
 
 The newly created cell.
 
-#### Discussion
+## Discussion
 
 If the receiver has a prototype cell, it’s copied to create the new cell. If not, and if the receiver has a cell class set, it allocates and initializes (with `init`) an instance of that class. If the receiver hasn’t had either a prototype cell or a cell class set, [`NSMatrix`](../nsmatrix.md) creates an [`NSActionCell`](../nsactioncell.md).
 

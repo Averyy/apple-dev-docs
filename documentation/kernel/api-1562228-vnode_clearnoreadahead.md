@@ -15,7 +15,7 @@ Clear the flag indicating that a vnode should not have data speculatively read i
 void vnode_clearnoreadahead(vnode_t vp);
 ```
 
-#### Return Value
+## Return Value
 
 void.
 

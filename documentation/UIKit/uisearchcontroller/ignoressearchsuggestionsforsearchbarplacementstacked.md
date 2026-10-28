@@ -22,7 +22,7 @@ var ignoresSearchSuggestionsForSearchBarPlacementStacked: Bool { get set }
 @property (nonatomic) BOOL ignoresSearchSuggestionsForSearchBarPlacementStacked;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to [`false`](../../Swift/false.md). To prevent the search controller from creating and presenting a search suggestions view controller when the [`searchBarPlacement`](./searchbarplacement.md) is [`UINavigationItem.SearchBarPlacement.stacked`](../uinavigationitem/searchbarplacement-swift.enum/stacked.md), set to [`true`](../../Swift/true.md) when you create the search controller.
 

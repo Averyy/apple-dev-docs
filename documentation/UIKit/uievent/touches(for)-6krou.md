@@ -23,7 +23,7 @@ func touches(for gesture: UIGestureRecognizer) -> Set<UITouch>?
 - (NSSet<UITouch *> *) touchesForGestureRecognizer:(UIGestureRecognizer *) gesture;
 ```
 
-#### Return Value
+## Return Value
 
 A set of [`UITouch`](../uitouch.md) objects representing the touches being delivered to the specified gesture recognizer for the event represented by the receiver.
 

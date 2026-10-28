@@ -20,7 +20,7 @@ var textureIndex: Int { get }
 size_t cp_view_texture_map_get_texture_index(cp_view_texture_map_t view_texture_map);
 ```
 
-#### Discussion
+## Discussion
 
 Compositor Services places the color and depth textures for this view at same index number in the drawable. Use the returned index to the [`colorTextures`](../../colortextures.md) or [`depthTextures`](../../depthtextures.md) properties to retrieve the appropriate texture.
 

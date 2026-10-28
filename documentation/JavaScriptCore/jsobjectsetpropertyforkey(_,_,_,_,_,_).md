@@ -24,7 +24,7 @@ func JSObjectSetPropertyForKey(_ ctx: JSContextRef!, _ object: JSObjectRef!, _ p
 void JSObjectSetPropertyForKey(JSContextRef ctx, JSObjectRef object, JSValueRef propertyKey, JSValueRef value, JSPropertyAttributes attributes, JSValueRef*exception);
 ```
 
-#### Discussion
+## Discussion
 
 This function is the same as performing `object[propertyKey] = value` from JavaScript.
 

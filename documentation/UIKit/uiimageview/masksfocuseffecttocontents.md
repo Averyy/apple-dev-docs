@@ -19,7 +19,7 @@ var masksFocusEffectToContents: Bool { get set }
 @property (nonatomic) BOOL masksFocusEffectToContents;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to [`false`](../../Swift/false.md) when using multi-layer images or when using images that are completely opaque. Set this property to [`true`](../../Swift/true.md) only when the image view contains a single-layer image with transparency. When set to [`true`](../../Swift/true.md), the system uses the image’s alpha channel to create an appropriate floating focused appearance. For example, the system masks the shadow based on the alpha channel of the image.
 

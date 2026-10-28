@@ -21,7 +21,7 @@ A description of a row or a column in a lazy grid.
 struct GridItem
 ```
 
-#### Overview
+## Overview
 
 Use an array of `GridItem` instances to configure the layout of items in a lazy grid. Each grid item in the array specifies layout properties like size and spacing for the rows of a [`LazyHGrid`](./lazyhgrid.md) or the columns of a [`LazyVGrid`](./lazyvgrid.md). The following example defines four rows for a horizontal grid, each with different characteristics:
 

@@ -5,7 +5,7 @@
 
 Detect reference displays and keep your content within the capabilities of the display hardware.
 
-#### Overview
+## Overview
 
 Reference displays are calibrated to produce accurate brightness and color values within a specified range, which you use in a controlled environment to create optimized video content. Always establish if you’re using a reference display before you process any data so you can avoid system tone mapping and clamp pixel values to the range the display can accurately produce.
 

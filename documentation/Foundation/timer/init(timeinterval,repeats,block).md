@@ -25,11 +25,11 @@ init(timeInterval interval: TimeInterval, repeats: Bool, block: @escaping @Senda
 + (NSTimer *) timerWithTimeInterval:(NSTimeInterval) interval repeats:(BOOL) repeats block:(void (^)(NSTimer *timer)) block;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`Timer`](../timer.md) object, configured according to the specified parameters.
 
-#### Discussion
+## Discussion
 
 You must add the new timer to a run loop, using [`add(_:forMode:)`](../runloop/add%28_,formode%29-392ag.md). Then, after `interval` seconds have elapsed, the timer fires, executing `block`. (If the timer is configured to repeat, you don’t need to add the timer to the run loop again.)
 

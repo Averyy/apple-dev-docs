@@ -20,7 +20,7 @@ func LSMMapSetProperties(_ mapref: LSMMap, _ properties: CFDictionary)
 void LSMMapSetProperties(LSMMapRef mapref, CFDictionaryRef properties);
 ```
 
-#### Discussion
+## Discussion
 
 Latent Semantic Mapping makes its own copy of the properties, so you don’t need to retain them past this call.
 

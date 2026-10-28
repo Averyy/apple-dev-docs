@@ -20,7 +20,7 @@ Creates a label for displaying additional content outside an accessory family wi
 @preconcurrency func widgetLabel<Label>(@ViewBuilder label: () -> Label) -> some View where Label : View
 ```
 
-#### Discussion
+## Discussion
 
 The system only displays labels on widget-based complications in watchOS. The system ignores any labels attached to widgets on the Lock Screen on iPhone. Therefore, you can use the same code to display an accessory family widget on both iPhone and Apple Watch.
 

@@ -19,7 +19,7 @@ class NSAnimationContext
 @interface NSAnimationContext : NSObject
 ```
 
-#### Overview
+## Overview
 
 [`NSAnimationContext`](./nsanimationcontext.md) is analogous to [`CATransaction`](../QuartzCore/catransaction.md) and is similar in overall concept to [`NSGraphicsContext`](./nsgraphicscontext.md). Each thread maintains its own stack of nestable [`NSAnimationContext`](./nsanimationcontext.md) instances, with each new instance initialized as a copy of the instance below (so, inheriting its current properties).
 

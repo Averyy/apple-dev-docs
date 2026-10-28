@@ -24,7 +24,7 @@ The library determines the secret status dynamically by evaluating each key-valu
 case dynamic(@Sendable (KeyType, ValueType) -> Bool)
 ```
 
-#### Discussion
+## Discussion
 
 Use this case when you need complex logic to determine whether a value is secret based on the key name, value content, or other criteria.
 

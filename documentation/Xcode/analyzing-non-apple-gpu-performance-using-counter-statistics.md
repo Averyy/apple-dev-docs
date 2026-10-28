@@ -5,7 +5,7 @@
 
 Optimize performance by examining counters for individual passes and commands.
 
-#### Overview
+## Overview
 
 > ❗ **Important**: The Counters viewer feature isn’t applicable to Apple GPUs. For Apple GPUs, see [Analyzing Apple GPU performance using a visual timeline](./analyzing-apple-gpu-performance-using-a-visual-timeline.md) and [Analyzing Apple GPU performance using counter statistics](./analyzing-apple-gpu-performance-using-counter-statistics.md).
 
@@ -15,11 +15,11 @@ The Counters viewer shows performance counters from your app’s passes or comma
 
 The Metal debugger collects data from the passes running without overlap, so only one pass runs at a time on the device when the profiler measures the performance. Additionally, it includes deterministic counters that don’t vary by time, such as the number of vertices in a render pass.
 
-##### View different counter sets for passes or commands
+### View different counter sets for passes or commands
 
 At the top of the graph, you can click the Encoder or the Draw tab to choose to view the counters by pass or command granularity. Then, you can choose which counter set to use for viewing the collection of counters.
 
-##### Find a pass with high shader GPU time
+### Find a pass with high shader GPU time
 
 The height of the orange bar for each pass represents its shader GPU time. The tallest bar corresponds to the pass that took the longest time to complete. Minimize the duration of the long-running passes to optimize your app’s performance.
 
@@ -27,7 +27,7 @@ The height of the orange bar for each pass represents its shader GPU time. The t
 
 There are three render passes in the screenshot above, with the tallest bar for shader GPU time at the GBuffer Generation pass. You can move the pointer over the bar to view the time and other information. In the screenshot above, the shader GPU time for the GBuffer Generation pass reads 657.69 microseconds (μs).
 
-##### View performance counters in the assistant editor
+### View performance counters in the assistant editor
 
 The assistant editor allows you to see additional information for individual passes and commands. You can enable the assistant editor by clicking the Adjust Editor Options button and choosing the Assistant option.
 
@@ -43,7 +43,7 @@ The performance counters in the assistant editor let you inspect all the counter
 
 For more information, see [Analyzing draw command and compute dispatch performance with GPU counters](./analyzing-draw-command-and-compute-dispatch-performance-with-gpu-counters.md).
 
-##### View pipeline statistics for a command
+### View pipeline statistics for a command
 
 Selecting a command allows you to look at its pipeline statistics in the assistant editor. You can select Pipeline Statistics from the Assistant Editor drop-down menu to view information about the pipeline state and its performance statistics.
 

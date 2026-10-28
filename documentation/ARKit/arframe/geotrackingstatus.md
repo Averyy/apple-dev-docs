@@ -20,7 +20,7 @@ var geoTrackingStatus: ARGeoTrackingStatus? { get }
 @property (nonatomic, strong, readonly, nullable) ARGeoTrackingStatus * geoTrackingStatus;
 ```
 
-#### Discussion
+## Discussion
 
 For the current geo-tracking status, check the value of this property on the session’s [`currentFrame`](../arsession/currentframe.md). ARKit populates this property only for [`ARGeoTrackingConfiguration`](../argeotrackingconfiguration.md) sessions.
 

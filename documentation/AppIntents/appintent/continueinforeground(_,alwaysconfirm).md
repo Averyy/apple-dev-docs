@@ -25,7 +25,7 @@ func continueInForeground(_ dialog: IntentDialog? = nil, alwaysConfirm: Bool = t
 
 - [Configuring the runtime behavior of your app intents](../configuring-the-runtime-behavior-of-your-app-intents.md)
 
-#### Discussion
+## Discussion
 
 Call this method from your app intent’s [`perform()`](./perform%28%29.md) method when you want to continue running your code in the foreground. Before calling this method, use the contextual information in the intent’s [`systemContext`](./systemcontext.md) property to verify the app can transition to the foreground. If you call this method and it’s not possible to transition the app to the foreground, the system throws an [`notAllowed`](../appintenterror/unrecoverable/notallowed.md) error.
 

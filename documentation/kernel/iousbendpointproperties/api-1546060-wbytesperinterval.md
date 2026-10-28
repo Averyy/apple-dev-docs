@@ -15,9 +15,9 @@ The number of bytes per interval.
 UInt16 wBytesPerInterval;
 ```
 
-#### Discussion
+## Discussion
 
-For SuperSpeed interrupt and isochronous endpoints, this is [`wBytesPerInterval`](../iousbsuperspeedendpointcompaniondescriptor/api-1546415-wbytesperinterval.md) from the SuperSpeed endpoint companion descriptor. For high-speed high-bandwidth isochronous endpoints, this is equal to `wMaxPacketSize` ** (*`bMult`*+1)*.
+For SuperSpeed interrupt and isochronous endpoints, this is [`wBytesPerInterval`](../iousbsuperspeedendpointcompaniondescriptor/api-1546415-wbytesperinterval.md) from the SuperSpeed endpoint companion descriptor. For high-speed high-bandwidth isochronous endpoints, this is equal to `wMaxPacketSize` *\* (*`bMult`*+1)*.
 
 ## See Also
 

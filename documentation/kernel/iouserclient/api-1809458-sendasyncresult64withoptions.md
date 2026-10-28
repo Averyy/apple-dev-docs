@@ -16,7 +16,7 @@ static IOReturn sendAsyncResult64WithOptions(
  IOOptionBits options);
 ```
 
-#### Overview
+## Overview
 
 IOUserClient::sendAsyncResult64() will infitely queue messages if the client is not processing them in a timely fashion. This variant will not, for simple handling of situations where clients may be expected to stop processing messages.
 

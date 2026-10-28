@@ -19,7 +19,7 @@ func setNextState()
 - (void) setNextState;
 ```
 
-#### Discussion
+## Discussion
 
 If the button has three states, it cycles through them in this order: on, off, mixed, on, and so forth. If the button has two states, it toggles between them.
 

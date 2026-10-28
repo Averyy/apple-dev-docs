@@ -24,7 +24,7 @@ var buttonB: GCControllerButtonInput { get }
 @property (nonatomic, readonly) GCControllerButtonInput * buttonB;
 ```
 
-#### Discussion
+## Discussion
 
 The face buttons in the gamepad profile are analog buttons.
 

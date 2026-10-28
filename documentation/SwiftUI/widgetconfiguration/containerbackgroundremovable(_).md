@@ -21,11 +21,11 @@ A modifier that marks the background of a widget as removable.
 @preconcurrency func containerBackgroundRemovable(_ isRemovable: Bool = true) -> some WidgetConfiguration
 ```
 
-#### Return Value
+## Return Value
 
 A modified widget configuration.
 
-#### Discussion
+## Discussion
 
 In most cases, mark the background container of a widget as removable to allow people to place the widget in as many contexts as possible. If you mark the background as nonremovable, the widget becomes ineligible in various contexts that require a removable background. For example, a small widget without a removable background doesn’t appear in the widget gallery on the iPad Lock Screen.
 

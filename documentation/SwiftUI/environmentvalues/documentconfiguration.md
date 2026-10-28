@@ -19,7 +19,7 @@ The configuration of a document in a [`DocumentGroup`](../documentgroup.md).
 var documentConfiguration: DocumentConfiguration? { get }
 ```
 
-#### Discussion
+## Discussion
 
 The value is `nil` for views that are not enclosed in a [`DocumentGroup`](../documentgroup.md).
 

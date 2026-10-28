@@ -19,7 +19,7 @@ func MDItemCopyAttribute(_ item: MDItem!, _ name: CFString!) -> CFTypeRef!
 CFTypeRef MDItemCopyAttribute(MDItemRef item, CFStringRef name);
 ```
 
-#### Return Value
+## Return Value
 
 A CFTypeRef, or `NULL` if there was a failure reading the attribute or the attribute does not exist.
 

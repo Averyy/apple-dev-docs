@@ -21,7 +21,7 @@ func usingColorSpaceName(_ name: NSColorSpaceName) -> NSColor?
 - (NSColor *) colorUsingColorSpaceName:(NSColorSpaceName) name;
 ```
 
-#### Return Value
+## Return Value
 
 The new `NSColor` object or `nil` if the specified conversion cannot be done.
 

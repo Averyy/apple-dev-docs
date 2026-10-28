@@ -21,7 +21,7 @@ Decode and return the scalar starting at `currentCodeUnitOffset`. After the func
 mutating func next() -> Unicode.Scalar?
 ```
 
-#### Discussion
+## Discussion
 
 Returns `nil` if at the end of the `UTF8Span`.
 

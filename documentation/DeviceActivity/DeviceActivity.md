@@ -11,7 +11,7 @@ Monitor device activity with your app extension while maintaining privacy.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 
-#### Overview
+## Overview
 
 Device Activity provides a privacy-preserving way for an application to monitor a person’s application and website activity. For instance, you can set up a bedtime schedule that monitors device activity while the person is supposed to be asleep. Your app extension can receive warnings before an activity’s schedule starts or ends, or when an activity is about to reach a predefined threshold. You can monitor the time spent on websites and apps to warn the person once they have reached their threshold.
 

@@ -19,11 +19,11 @@ func location(in view: NSView?) -> NSPoint
 - (NSPoint) locationInView:(NSView *) view;
 ```
 
-#### Return Value
+## Return Value
 
 The point at which the gesture occurred. The returned point is in the coordinate system of the specified view, or in the coordinate system of the window if you specified `nil` for the view parameter.
 
-#### Discussion
+## Discussion
 
 Use this method to determine the location at which the gesture occurred. Subclasses are responsible for overriding this method and returning an appropriate value based on the type of gesture.
 

@@ -20,7 +20,7 @@ Creates a collision filter.
 init(group: CollisionGroup, mask: CollisionGroup)
 ```
 
-#### Discussion
+## Discussion
 
 Collision filters are created for the collision group specified in the `group` parameter. The `mask` parameter defines which objects will collide with the objects that use this filter. Because [`CollisionGroup`](../collisiongroup.md) conforms to [`OptionSet`](../../Swift/optionset.md), you can specify any combination of collision groups in the `mask` parameter by using the various [`OptionSet`](../../Swift/optionset.md) methods like `CollisionGroup/union(_:)`, `CollisionGroup/subtracting(_:)`, and `CollisionGroup/intersection(_:)`. Entities from any group contained in `mask` will collide with entities using this filter, while those not contained by `mask` will not.
 

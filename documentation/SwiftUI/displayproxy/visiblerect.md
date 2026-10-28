@@ -15,7 +15,7 @@ The portion of the display where it is safe to place windows.
 let visibleRect: CGRect
 ```
 
-#### Discussion
+## Discussion
 
 On macOS, this area does not contain the space occupied by the dock and menu bar. Additionally, on Macs that include a camera housing in the bezel this rectangle does not include the bezel or visible areas to each side of the bezel.
 

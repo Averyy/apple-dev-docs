@@ -21,7 +21,7 @@ var isStillImageStabilizationScene: Bool { get }
 @property (nonatomic, readonly) BOOL isStillImageStabilizationScene;
 ```
 
-#### Discussion
+## Discussion
 
 This property’s value changes depending on the scene currently visible to the camera. For example, you might use this property to highlight  controls in your app’s camera UI related to image stabilization, indicating to the user that the scene is dark enough that enabling image stabilization might be desirable.
 

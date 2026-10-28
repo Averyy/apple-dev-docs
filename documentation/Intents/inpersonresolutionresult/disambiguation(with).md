@@ -28,11 +28,11 @@ class func disambiguation(with peopleToDisambiguate: [INPerson]) -> Self
 
 - [Improving interactions between Siri and your messaging app](../../SiriKit/improving-interactions-between-siri-and-your-messaging-app.md)
 
-#### Return Value
+## Return Value
 
 A new [`INPersonResolutionResult`](../inpersonresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when more than one person might match the given information and you can’t pick one definitively. Ask the user to select from among the people you specify.
 

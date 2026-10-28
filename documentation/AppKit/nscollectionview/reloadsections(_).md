@@ -19,7 +19,7 @@ func reloadSections(_ sections: IndexSet)
 - (void) reloadSections:(NSIndexSet *) sections;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method when the data for the specified sections changes or when you want to force the appearance of those sections to be updated. When you call this method, the collection view discards visible elements in the section along with any cached attributes for those elements. For efficiency, it then asks the layout object to provide fresh attributes for only the visible items and views and requests new views for those elements.
 

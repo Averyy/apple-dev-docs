@@ -5,7 +5,7 @@
 
 Examine the steps between the user, client, and device management service in the Enrollment SSO flow.
 
-#### Overview
+## Overview
 
 To support Enrollment SSO, your device management service delivers details about an Enrollment SSO app the system needs to implement the single sign-on behavior for enrollment. Enterprise apps can then use single sign-on to access enterprise websites and other resources. This app needs to contain an extensible SSO extension that the device management service configures to support the single sign-on behavior. For more information about how to create an app with an enterprise SSO extension, see [Enterprise single sign-on (SSO)](../AuthenticationServices/enterprise-single-sign-on-sso.md).
 
@@ -17,15 +17,15 @@ The diagram below illustrates the interactions the [simple](./implementing-the-s
 
 Enrollment SSO modifies the [simple](./implementing-the-simple-authentication-account-driven-enrollment-flow.md) and [OAuth 2](./implementing-the-oauth2-authentication-account-driven-enrollment-flow.md) enrollment flows as follows. In step 5 of both flows, an `X-Apple-MDM-ESSO` response header returns. When the client receives that header in the `401` response from the device management service, the system inserts the following additional steps into the authentication flows before performing the actions in step 5.
 
-#### Extract the X-Apple-MDM-ESSO header
+## Extract the X-Apple-MDM-ESSO header
 
 In (modified) step 5a, the device management service returns an HTTP 401 response status to the client and includes an `X-Apple-MDM-ESSO` response header. This response header value needs to be an `https` URL that points to a JSON document with the Enrollment SSO details necessary for downloading and configuring an app with an extensible SSO extension.
 
-#### Send the Enrollment SSO document request
+## Send the Enrollment SSO document request
 
 In (modified) step 5b, the client sends an HTTPS GET request for the Enrollment SSO URL that the system retrieves in the previous step.
 
-#### Return the Enrollment SSO document response
+## Return the Enrollment SSO document response
 
 In (modified) step 5c, you need to return a JSON document with a JSON object that has the following keys:
 
@@ -61,7 +61,7 @@ The `Declarations` key value is an array of Base64-encoded declarative managemen
 
 When using declarations, the system automatically enables the declarative management feature of the MDM protocol after a successful enrollment, without the device management service having to first send the MDM `Declarations` command. Because this automatic enablement immediately starts a declarative management synchronization operation, it’s critical that the device management service prestages the declarations it sends in the Enrollment SSO’s `Declarations` key, so that those same declarations return during the synchronization. Failure to do so results in the system immediately removing those declarations from the device, with the result that single sign-on no longer works.
 
-#### Install the Enrollment SSO app
+## Install the Enrollment SSO app
 
 In (modified) step 5d, the client pauses the enrollment flow on the device to request the user’s permission to download the Enrollment SSO app. If the user grants permission, the client first creates a data-separated volume to store device management-related managed data. The client then downloads and installs the Enrollment SSO app as a managed app, and stores its data (including any keychain items) on the data-separated volume. The client also installs the configuration profile or declarations from the Enrollment SSO JSON document.
 
@@ -69,7 +69,7 @@ If the user subsequently cancels the overall enrollment flow, the system removes
 
 After this step is complete, the client continues with processing the actions in step 5 of the overall enrollment flow.
 
-#### Test the Enrollment SSO app
+## Test the Enrollment SSO app
 
 Developers can test their Enrollment SSO app with the account-driven enrollment flow prior to submitting the app for App Store deployment by using a *test mode* variant of the Enrollment SSO JSON document described above.
 

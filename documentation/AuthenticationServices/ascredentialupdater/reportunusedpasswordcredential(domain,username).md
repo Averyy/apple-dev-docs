@@ -21,7 +21,7 @@ Informs credential managers that a password is no longer in use.
 final func reportUnusedPasswordCredential(domain: String, userName: String) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Credential managers can act on this report by removing or hiding the password credential.
 

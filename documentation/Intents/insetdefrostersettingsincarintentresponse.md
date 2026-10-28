@@ -24,7 +24,7 @@ class INSetDefrosterSettingsInCarIntentResponse
 @interface INSetDefrosterSettingsInCarIntentResponse : INIntentResponse
 ```
 
-#### Overview
+## Overview
 
 An [`INSetDefrosterSettingsInCarIntentResponse`](./insetdefrostersettingsincarintentresponse.md) object contains the status of changing the defroster settings in the user’s vehicle. You create instances of this class when confirming or handling a set defroster settings in car intent.
 

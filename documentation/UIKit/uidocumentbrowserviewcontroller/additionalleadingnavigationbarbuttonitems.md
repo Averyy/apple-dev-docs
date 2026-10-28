@@ -26,7 +26,7 @@ var additionalLeadingNavigationBarButtonItems: [UIBarButtonItem] { get set }
 
 - [Adding custom actions and activities](../adding-custom-actions-and-activities.md)
 
-#### Discussion
+## Discussion
 
 Actions triggered by these items don’t have any access to the browser’s content or to the URLs of selected items. Use these bar button items for global actions only (actions that don’t affect a specific document or folder).
 

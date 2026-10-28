@@ -19,7 +19,7 @@ protocol VZVirtioSocketListenerDelegate : NSObjectProtocol
 @protocol VZVirtioSocketListenerDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Adopt the [`VZVirtioSocketListenerDelegate`](./vzvirtiosocketlistenerdelegate.md) protocol in a custom object and use it to accept or reject socket-based connection attempts from the guest operating system to the host computer. You may use the same object to manage connection attempts on multiple ports.
 

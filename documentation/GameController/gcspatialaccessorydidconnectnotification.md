@@ -15,7 +15,7 @@ Use these constants with NSNotificationCenter to listen to connection and discon
 extern NSString * const GCSpatialAccessoryDidConnectNotification;
 ```
 
-#### Discussion
+## Discussion
 
 Use GCSpatialAccessoryDidConnectNotification for observing connections of spatial accessories. Use GCSpatialAccessoryDidDisconnectNotification for observing disconnections of spatial accessories.
 

@@ -19,7 +19,7 @@ func removeFromSuperview()
 - (void) removeFromSuperview;
 ```
 
-#### Discussion
+## Discussion
 
 The view is also released; if you plan to reuse it, be sure to retain it before sending this message and to release it as appropriate when adding it as a subview of another `NSView`.
 

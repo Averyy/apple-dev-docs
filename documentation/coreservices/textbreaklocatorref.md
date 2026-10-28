@@ -20,7 +20,7 @@ typealias TextBreakLocatorRef = OpaquePointer
 typedef struct OpaqueTextBreakLocatorRef *TextBreakLocatorRef;
 ```
 
-#### Discussion
+## Discussion
 
 You can obtain a `TextBreakLocatorRef` value from the function  [`UCCreateTextBreakLocator`](./api-1390362-uccreatetextbreaklocator.md). 
 

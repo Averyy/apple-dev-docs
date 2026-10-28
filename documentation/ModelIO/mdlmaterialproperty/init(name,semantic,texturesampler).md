@@ -24,11 +24,11 @@ convenience init(name: String, semantic: MDLMaterialSemantic, textureSampler: MD
 - (instancetype) initWithName:(NSString *) name semantic:(MDLMaterialSemantic) semantic textureSampler:(MDLTextureSampler *) textureSampler;
 ```
 
-#### Return Value
+## Return Value
 
 A new material property object whose [`type`](./type.md) property is [`MDLMaterialPropertyType.texture`](../mdlmaterialpropertytype/texture.md).
 
-#### Discussion
+## Discussion
 
 Unlike the URL to a texture image, a texture sampler object specifies both a texture image and parameters for rendering that image.
 

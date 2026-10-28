@@ -21,7 +21,7 @@ The ordering of characters within a line.
 var characterDirection: Locale.LanguageDirection { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, English uses left-to-right while Mongolian in the Mongolian script uses top-to-bottom.
 

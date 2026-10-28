@@ -19,7 +19,7 @@ var subtitle: String { get set }
 @property (copy) NSString * subtitle;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is an empty string, the system removes the subtitle from the window layout.
 

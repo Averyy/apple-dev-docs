@@ -21,7 +21,7 @@ var cameraOverlayView: UIView? { get set }
 @property (nonatomic, strong, nullable) UIView * cameraOverlayView;
 ```
 
-#### Discussion
+## Discussion
 
 You can use an overlay view to present a custom view hierarchy on top of the default image picker interface. The image picker layers your custom overlay view on top of the other image picker views and positions it relative to the screen coordinates. If you have the default camera controls set to be visible, incorporate transparency into your view, or position it to avoid obscuring the underlying content.
 

@@ -21,7 +21,7 @@ The point of interest category of the map feature.
 var pointOfInterestCategory: MKPointOfInterestCategory? { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the feature doesn’t have a point of interest category, this value is `nil`.
 

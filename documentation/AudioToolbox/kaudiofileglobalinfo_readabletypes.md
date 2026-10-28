@@ -24,7 +24,7 @@ var kAudioFileGlobalInfo_ReadableTypes: AudioFilePropertyID { get }
 kAudioFileGlobalInfo_ReadableTypes
 ```
 
-#### Discussion
+## Discussion
 
 When accessing this property’s value, you must set the `inSpecifier` parameter to `NULL`.
 

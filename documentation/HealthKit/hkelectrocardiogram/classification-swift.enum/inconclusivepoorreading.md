@@ -24,7 +24,7 @@ case inconclusivePoorReading
 HKElectrocardiogramClassificationInconclusivePoorReading
 ```
 
-#### Discussion
+## Discussion
 
 Apple Watch reports a poor recording when circumstances cause the watch to collect insufficient or inaccurate data, such as when the user wears the watch too loosely on their wrist, or if the user’s arm isn’t resting on a firm surface. The user can make another attempt at measuring their ECG after fixing the issue.
 

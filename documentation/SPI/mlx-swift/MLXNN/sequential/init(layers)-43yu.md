@@ -17,7 +17,7 @@ A convenient way to write code that builds a Sequential layer:
 init(@SequentialBuilder layers: () -> [any UnaryLayer])
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 // a nonsensical Sequential layer, but it demonstrates how

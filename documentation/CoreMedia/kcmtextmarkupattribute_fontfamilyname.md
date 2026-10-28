@@ -25,7 +25,7 @@ let kCMTextMarkupAttribute_FontFamilyName: CFString
 extern CFStringRef const kCMTextMarkupAttribute_FontFamilyName;
 ```
 
-#### Discussion
+## Discussion
 
 This attribute’s value must be a `CFString` that holds the family name of an installed font (for example, “Helvetica”) that the system uses to render and/or measure text.
 

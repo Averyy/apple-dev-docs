@@ -24,7 +24,7 @@ func expectedItemTime(atHostTime hostClockTime: CMTime) -> CMTime
 - (CMTime) expectedItemTimeAtHostTime:(CMTime) hostClockTime;
 ```
 
-#### Return Value
+## Return Value
 
 A time in the current item’s timeline.
 

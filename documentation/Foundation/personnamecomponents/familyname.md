@@ -21,7 +21,7 @@ Name bestowed upon an individual to denote membership in a group or family.
 var familyName: String? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 An example of a family name would be Ruiz.
 

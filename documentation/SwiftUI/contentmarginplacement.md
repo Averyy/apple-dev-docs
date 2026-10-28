@@ -21,7 +21,7 @@ The placement of margins.
 struct ContentMarginPlacement
 ```
 
-#### Overview
+## Overview
 
 Different views can support customizating margins that appear in different parts of that view. Use values of this type to customize those margins of a particular placement.
 

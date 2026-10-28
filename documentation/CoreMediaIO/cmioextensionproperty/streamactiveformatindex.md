@@ -20,7 +20,7 @@ static let streamActiveFormatIndex: CMIOExtensionProperty
 extern CMIOExtensionProperty const CMIOExtensionPropertyStreamActiveFormatIndex;
 ```
 
-#### Discussion
+## Discussion
 
 The property state for this property is a number.
 

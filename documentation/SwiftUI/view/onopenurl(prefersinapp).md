@@ -22,7 +22,7 @@ Sets an `OpenURLAction` that prefers opening URL with an in-app browser. The `ha
 @preconcurrency func onOpenURL(prefersInApp: Bool) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 It’s equivalent to calling `.onOpenURL(_:)`
 

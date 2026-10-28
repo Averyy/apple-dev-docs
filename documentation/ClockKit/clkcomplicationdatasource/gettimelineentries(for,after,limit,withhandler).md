@@ -30,7 +30,7 @@ optional func timelineEntries(for complication: CLKComplication, after date: Dat
 - [Loading future timeline events](../loading-future-timeline-events.md)
 - [Sharing an Apple Watch face](../sharing-an-apple-watch-face.md)
 
-#### Discussion
+## Discussion
 
 Use this method to build an array of timeline entries with your app’s future data. Each timeline entry contains the data and the date at which that data is valid. Don’t provide entries that occur before the date in the `date` parameter, and limit the number of entries you create to the value in the `limit` parameter.
 

@@ -25,7 +25,7 @@ var minLOD: Float { get }
 @property (readonly) float minLOD;
 ```
 
-#### Discussion
+## Discussion
 
 The property represents the lower limit of the level-of-detail (LOD) range that texture operations access for the texture. When the GPU calculates a mipmap level, it applies the value of this property as the final step, after clamping the sampler LOD and applying the texture view level range offsets.
 

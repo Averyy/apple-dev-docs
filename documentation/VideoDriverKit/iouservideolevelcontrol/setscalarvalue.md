@@ -15,7 +15,7 @@ Sets the current scalar level value.
 kern_return_t SetScalarValue(float in_scalar);
 ```
 
-#### Discussion
+## Discussion
 
 Changing the scalar level value will send a notification to the host to update the object state if successful. The object’s work queue synchronizes access to the value.
 

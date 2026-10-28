@@ -5,19 +5,19 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The iOS & iPadOS 16.4 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 16.6. The SDK comes bundled with Xcode 14.3. For information on the compatibility requirements for Xcode 14.3, see [Xcode 14.3 Release Notes](../Xcode-Release-Notes/xcode-14_3-release-notes.md).
 
-##### Home
+### Home
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Pairing the first Matter accessory in a new Home will fail when paired by selecting the accessory from the nearby accessories list.  (109905770)
 
-##### Xcode
+### Xcode
 
-###### Known Issues
+#### Known Issues
 
 - Starting in iOS 16.6 a negative value for `NSBaselineOffsetAttributeName` applied to the full run of an `attributedText` of a `UILabel` will return to its pre-16.3 behavior of lowering the text position within the label’s bounds.  (106109259)
 

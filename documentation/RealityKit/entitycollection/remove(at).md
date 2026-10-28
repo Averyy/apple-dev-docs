@@ -21,7 +21,7 @@ Removes the entity at the given index from this collection.
 mutating func remove(at index: Int)
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This operation can invalidate the index order of any remaining entities.
 

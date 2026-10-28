@@ -5,13 +5,13 @@
 
 Use test data to ensure your integration with the Roster API works correctly.
 
-#### Overview
+## Overview
 
 Testing your Roster API integration before deployment is critical to the success of your implementation. The Roster API provides a *test scope* that you use to obtain sample user and class data for testing to ensure your integration is correct.
 
 Use the test scope to generate an access token, then query the various endpoints of the Roster API. When the Roster API receives the request, it responds with test data that represents the dataset and provides all possible states of user and class records.
 
-##### Configure the test scope
+### Configure the test scope
 
 From your developer account, select Certificates, Identifiers & Profiles. When performing the steps to select the primary app identifier, choose “Roster API: Test data access” in the Organizational Data Sharing Scopes section.
 
@@ -19,7 +19,7 @@ Ensure the service URL has the test scope configured in the Apple Developer webs
 
 ![A screenshot showing the Certificates, Identifiers and Profiles page of the Apple developer website.](https://developer.apple.com/tutorials/images/com.apple.rosterapi/media-4133355@2x.png)
 
-##### Test the authorization endpoint
+### Test the authorization endpoint
 
 As explained in the WWDC 2022 session [Discover Sign in with Apple at Work & School](https://developer.apple.com/videos/play/wwdc2022/10053/), you need to generate the grant code to get the access token.
 
@@ -41,7 +41,7 @@ The URL opens the Apple OAuth consent screen. Enter your developer account crede
 
 After successfully logging in, you receive the grant code in the registered redirect URI.
 
-##### Generate the access and refresh tokens
+### Generate the access and refresh tokens
 
 With your grant code, generate the access and refresh tokens. Create the `POST` request from your server with the following URL:
 
@@ -77,7 +77,7 @@ This generates both the access and refresh tokens. You receive a response like t
 
 Access tokens expire after one hour. If yours expires, you can use the refresh token you receive to create a new access token. For more information, see Handle an expired token, below.
 
-##### Perform a request
+### Perform a request
 
 After receiving the access token, perform a Roster API request using the test scope. Replace `[ACCESS_TOKEN]` with the token you receive from the previous step.
 
@@ -128,7 +128,7 @@ You receive a response like the following:
 }
 ```
 
-##### Handle an expired access token
+### Handle an expired access token
 
 If your access token expires, use the refresh token to generate a new access token.
 

@@ -20,11 +20,11 @@ func nodes(forXPath xpath: String) throws -> [XMLNode]
 - (NSArray<__kindof NSXMLNode *> *) nodesForXPath:(NSString *) xpath error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An array of `NSXMLNode` objects that match the query, or an empty array if there are no matches.
 
-#### Discussion
+## Discussion
 
 The receiver acts as the context item for the query (”.”).  If you have explicitly added adjacent text nodes as children of an element, you should invoke the `NSXMLElement` method [`normalizeAdjacentTextNodesPreservingCDATA(_:)`](../xmlelement/normalizeadjacenttextnodespreservingcdata%28_%29.md) (with an argument of [`false`](../../Swift/false.md)) on the element before applying any XPath queries to it; this method coalesces these text nodes. The same precaution applies if you have processed a document preserving CDATA sections and these sections are adjacent to text nodes.
 

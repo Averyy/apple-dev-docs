@@ -20,7 +20,7 @@ Returns a Boolean value that indicates whether `name` is a valid property name.
 static func isValidName(_ name: USDToken) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `name` is a valid property name; otherwise, `false`.
 

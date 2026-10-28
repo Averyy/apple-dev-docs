@@ -5,13 +5,13 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The macOS 15.5 SDK provides support to develop apps for Mac computers running Sequoia 15.6. The SDK comes bundled with Xcode 16.4. For information on the compatibility requirements for Xcode 16.4, see [Xcode 16.4 Release Notes](../Xcode-Release-Notes/xcode-16_4-release-notes.md).
 
-##### General
+### General
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Finder and Apple Configurator may be unable to successfully restore some devices from DFU mode.  (153476458)
 

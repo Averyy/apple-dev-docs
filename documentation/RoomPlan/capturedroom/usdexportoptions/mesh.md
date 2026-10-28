@@ -17,7 +17,7 @@ An export option that formats the output file as a collection of size-independan
 static let mesh: CapturedRoom.USDExportOptions
 ```
 
-#### Discussion
+## Discussion
 
 A mesh model stores elements as polygonal units. You infer element size based on the bounding box around its vertices.
 

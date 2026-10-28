@@ -24,7 +24,7 @@ let kVTPropertySupportedValueMaximumKey: CFString
 extern CFStringRef const kVTPropertySupportedValueMaximumKey;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is a [`CFNumber`](../CoreFoundation/cfnumber.md).
 

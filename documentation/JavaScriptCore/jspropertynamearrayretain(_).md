@@ -24,7 +24,7 @@ func JSPropertyNameArrayRetain(_ array: JSPropertyNameArrayRef!) -> JSPropertyNa
 JSPropertyNameArrayRefJSPropertyNameArrayRetain(JSPropertyNameArrayRef array);
 ```
 
-#### Return Value
+## Return Value
 
 A [`JSPropertyNameArrayRef`](./jspropertynamearrayref.md) that is the same as `array`.
 

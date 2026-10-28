@@ -25,7 +25,7 @@ var status: SparseStatus_t
 SparseStatus_t status;
 ```
 
-#### Discussion
+## Discussion
 
 ```
                                   numerical issue.

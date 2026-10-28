@@ -19,7 +19,7 @@ init(patternImage image: NSImage)
 + (NSColor *) colorWithPatternImage:(NSImage *) image;
 ```
 
-#### Return Value
+## Return Value
 
 The `NSColor` object. This color object is autoreleased.
 

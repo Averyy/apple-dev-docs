@@ -5,7 +5,7 @@
 
 A type that represents the state of an activity.
 
-#### Overview
+## Overview
 
 An activity is in one of the states that [`xpc_activity_state_t`](./xpc_activity_state_t.md) defines. Apps may check the current state of the activity using [`xpc_activity_get_state(_:)`](./xpc_activity_get_state%28_%29.md) in the handler block that you provide to [`xpc_activity_register(_:_:_:)`](./xpc_activity_register%28_,_,_%29.md).
 

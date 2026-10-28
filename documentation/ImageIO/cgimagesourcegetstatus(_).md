@@ -25,11 +25,11 @@ func CGImageSourceGetStatus(_ isrc: CGImageSource) -> CGImageSourceStatus
 extern CGImageSourceStatus CGImageSourceGetStatus(CGImageSourceRef isrc);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the current status of the image source. See [`CGImageSourceStatus`](./cgimagesourcestatus.md) for a list of possible values.
 
-#### Discussion
+## Discussion
 
 Status information is particularly informative for incremental image sources, but it may also be useful on image sources that contain non-incremental data.
 

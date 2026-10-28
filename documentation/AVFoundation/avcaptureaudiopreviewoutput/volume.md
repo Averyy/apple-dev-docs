@@ -19,7 +19,7 @@ var volume: Float { get set }
 @property (nonatomic) float volume;
 ```
 
-#### Discussion
+## Discussion
 
 A value of `1.0` indicates maximum volume, and a value of `0.0` mutes the audio preview.
 

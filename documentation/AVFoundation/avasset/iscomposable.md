@@ -26,7 +26,7 @@ var isComposable: Bool { get }
 @property (nonatomic, readonly, getter=isComposable) BOOL composable;
 ```
 
-#### Discussion
+## Discussion
 
 This property value is [`true`](../../Swift/true.md) you can use the asset as a segment within an [`AVCompositionTrack`](../avcompositiontrack.md) object.
 

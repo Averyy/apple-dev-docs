@@ -15,7 +15,7 @@ A numeric value that indicates the progress of loading the Live Photo.
 readonly attribute Number loadProgress;
 ```
 
-#### Discussion
+## Discussion
 
 This value is a number from 0 to 1 that denotes the loading progress until it is possible to start playback without further delay.
 

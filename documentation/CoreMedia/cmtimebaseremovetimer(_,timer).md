@@ -25,7 +25,7 @@ func CMTimebaseRemoveTimer(_ timebase: CMTimebase, timer: CFRunLoopTimer) -> OSS
 extern OSStatus CMTimebaseRemoveTimer(CMTimebaseRef timebase, CFRunLoopTimerRef timer);
 ```
 
-#### Discussion
+## Discussion
 
 The timebase no longer maintain the timer’s “NextFireDate.” If the system invalidates the timer, the timebase eventually removes it from its list and releases it even if you don’t call this function.
 

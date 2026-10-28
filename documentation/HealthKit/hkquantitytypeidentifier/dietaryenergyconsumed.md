@@ -24,7 +24,7 @@ static let dietaryEnergyConsumed: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierDietaryEnergyConsumed;
 ```
 
-#### Discussion
+## Discussion
 
 These samples use energy units (described in [`HKUnit`](../hkunit.md)) and measure cumulative values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)).
 

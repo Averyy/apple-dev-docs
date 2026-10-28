@@ -26,7 +26,7 @@ func takeStoredValue(_ value: Any?, forKey key: String)
 - (void) takeStoredValue:(id) value forKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 This method is used to initialize the receiver with values from an object store (generally, this storage is ultimately from a database) or to restore a value from a snapshot. The default implementation is similar to the implementation of [`takeValue(_:forKey:)`](./takevalue%28_,forkey%29.md), but it resolves `key` with a different method/instance variable search order:
 

@@ -19,7 +19,7 @@ An opaque token used to check the networking compatibility between two peers in 
 final class NetworkCompatibilityToken
 ```
 
-#### Overview
+## Overview
 
 [RealityKit](./RealityKit.md) apps running on incompatible versions of RealityKit can’t connect and sync over the network. Use [`NetworkCompatibilityToken`](./networkcompatibilitytoken.md) to check if two peers can synchronize [RealityKit](./RealityKit.md) scenes over the network. With this class, host applications can prevent incompatible clients from joining.
 

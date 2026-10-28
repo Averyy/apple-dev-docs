@@ -17,7 +17,7 @@ Uses matching flags with `enable-` and `disable-` prefixes.
 static var prefixedEnableDisable: FlagInversion { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, the `extraOutput` property in this declaration is set to `true` when a user provides `--enable-extra-output` and to `false` when the user provides `--disable-extra-output`:
 

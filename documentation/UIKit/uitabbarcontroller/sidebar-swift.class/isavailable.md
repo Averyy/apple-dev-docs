@@ -22,7 +22,7 @@ var isAvailable: Bool { get }
 @property (nonatomic, assign, readonly) BOOL isAvailable;
 ```
 
-#### Discussion
+## Discussion
 
 Implement the delegate method `tabBarController:sidebarAvailabilityDidChange:` to be notified when the value of this property changes.
 

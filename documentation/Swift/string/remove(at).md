@@ -22,11 +22,11 @@ Removes and returns the character at the specified position.
 mutating func remove(at i: String.Index) -> Character
 ```
 
-#### Return Value
+## Return Value
 
 The character that was removed.
 
-#### Discussion
+## Discussion
 
 All the elements following `i` are moved to close the gap. This example removes the hyphen from the middle of a string.
 

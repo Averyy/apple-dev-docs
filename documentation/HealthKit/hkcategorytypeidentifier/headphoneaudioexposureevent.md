@@ -24,7 +24,7 @@ static let headphoneAudioExposureEvent: HKCategoryTypeIdentifier
 extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierHeadphoneAudioExposureEvent;
 ```
 
-#### Discussion
+## Discussion
 
 iPhone and Apple Watch save a [`headphoneAudioExposureEvent`](./headphoneaudioexposureevent.md) sample when the device generates a notification about loud headphone audio. Both devices generate these notifications when the user listens to audio long enough and at a volume that could affect their hearing. In some regions, users can enable or disable loud headphone notifications from Settings > Sounds & Haptics > Headphone Safety.
 

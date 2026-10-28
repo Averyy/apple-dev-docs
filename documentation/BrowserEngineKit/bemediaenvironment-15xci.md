@@ -13,11 +13,11 @@ An object that identifies a media playback or streaming environment.
 ## Declaration
 
 ```swift
-@objc
-(BEMediaEnvironment) class BEMediaEnvironment
+@objc(BEMediaEnvironment)
+class BEMediaEnvironment
 ```
 
-#### Overview
+## Overview
 
 See [`BEMediaEnvironment`](./bemediaenvironment-n91a.md).
 

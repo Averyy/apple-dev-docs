@@ -15,7 +15,7 @@ Options that determine the map parameters to use when showing items.
 interface MapShowItemsOptions
 ```
 
-#### Overview
+## Overview
 
 Use these options when calling [`showItems()`](./map/showitems.md).
 

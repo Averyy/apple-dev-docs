@@ -16,7 +16,7 @@ virtual IOFWPseudoAddressSpace *createPseudoAddressSpace(
  void *refcon);
 ```
 
-#### Return Value
+## Return Value
 
 A valid `IOFWPseudoAddressSpace` object on success; NULL on failure.
 

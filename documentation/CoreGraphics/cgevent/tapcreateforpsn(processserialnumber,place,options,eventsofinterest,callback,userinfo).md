@@ -20,11 +20,11 @@ class func tapCreateForPSN(processSerialNumber: UnsafeMutableRawPointer, place: 
 extern CFMachPortRefCGEventTapCreateForPSN(void *processSerialNumber, CGEventTapPlacement place, CGEventTapOptions options, CGEventMask eventsOfInterest, CGEventTapCallBack callback, void *userInfo);
 ```
 
-#### Return Value
+## Return Value
 
 A Core Foundation mach port that represents the new event tap, or `NULL` if the event tap could not be created. When you are finished using the event tap, you should release the mach port using the function `CFRelease`. Releasing the mach port also releases the tap.
 
-#### Discussion
+## Discussion
 
 This function creates an event tap that receives events being routed by the window server to the specified process. For more information about creating event taps, see [`tapCreate(tap:place:options:eventsOfInterest:callback:userInfo:)`](./tapcreate%28tap,place,options,eventsofinterest,callback,userinfo%29.md).
 

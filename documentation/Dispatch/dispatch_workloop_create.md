@@ -21,11 +21,11 @@ Creates a new workloop with the specified label.
 extern dispatch_workloop_tdispatch_workloop_create(const char *label);
 ```
 
-#### Return Value
+## Return Value
 
 The newly created workloop.
 
-#### Discussion
+## Discussion
 
 The returned workloop is active, and you may submit blocks to it immediately.
 

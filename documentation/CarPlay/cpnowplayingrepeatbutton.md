@@ -22,7 +22,7 @@ class CPNowPlayingRepeatButton
 @interface CPNowPlayingRepeatButton : CPNowPlayingButton
 ```
 
-#### Overview
+## Overview
 
 `CPNowPlayingRepeatButton` is a concrete subclass of [`CPNowPlayingButton`](./cpnowplayingbutton.md). Use the button’s handler to invoke your existing functionality for cycling through repeat modes, using the same [`MPChangeRepeatModeCommand`](../MediaPlayer/mpchangerepeatmodecommand.md) that you provide to [`MPRemoteCommandCenter`](../MediaPlayer/mpremotecommandcenter.md).
 

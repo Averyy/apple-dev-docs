@@ -25,7 +25,7 @@ func present(from windowScene: UIWindowScene) async throws
 - (void) presentFromWindowScene:(UIWindowScene *) windowScene completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Present the recording editor from the specified window scene.
 

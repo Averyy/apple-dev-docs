@@ -23,7 +23,7 @@ var modificationDate: Date? { get }
 @property (atomic, readonly, nullable) NSDate * modificationDate;
 ```
 
-#### Discussion
+## Discussion
 
 Game Center sets this property when you save game data using the [`saveGameData(_:withName:completionHandler:)`](../gklocalplayer/savegamedata%28_,withname,completionhandler%29.md) method. If you save game data using an existing filename, Game Center overwrites the file with the new data and changes the modification date.
 

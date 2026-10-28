@@ -19,7 +19,7 @@ var requiresFullSubtitles: Bool { get set }
 @property (nonatomic) BOOL requiresFullSubtitles;
 ```
 
-#### Discussion
+## Discussion
 
 When this property value is `true`, the subtitle menu doesn’t present the Off or Auto options, because subtitles are always displayed, if available.
 

@@ -16,7 +16,7 @@ A Boolean value that indicates whether the layer renderer provides rasterization
 var generateFlippedRasterizationRateMaps: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 When foveation is enabled and the value of this property is `true`, the layer renderer generates both flipped and nonflipped rasterization rate maps. When the value of this property is `false`, the layer renderer generates only the nonflipped rasterization rate maps. The default value of this property is `false`.
 

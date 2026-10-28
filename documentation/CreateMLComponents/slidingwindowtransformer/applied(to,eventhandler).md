@@ -21,7 +21,7 @@ Extracts a window sequence from the input sequence
 func applied<S>(to input: S, eventHandler: EventHandler?) throws -> SlidingWindowTransformer<Input>.WindowSequence where Input == S.Feature, S : TemporalSequence
 ```
 
-#### Return Value
+## Return Value
 
 An async sequence of windowed outputs.
 

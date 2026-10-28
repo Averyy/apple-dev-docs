@@ -25,13 +25,13 @@ func acceptConnectionInBackgroundAndNotify()
 - (void) acceptConnectionInBackgroundAndNotify;
 ```
 
-#### Discussion
+## Discussion
 
 This method asynchronously creates a file handle for the other end of the socket connection and returns that object by posting a [`NSFileHandleConnectionAccepted`](../nsnotification/name-swift.struct/nsfilehandleconnectionaccepted.md) notification in the current thread. The notification includes a `userInfo` dictionary with the created `NSFileHandle` object, which is accessible using the `NSFileHandleNotificationFileHandleItem` key.
 
 You must call this method from a thread that has an active run loop.
 
-##### Special Considerations
+### Special Considerations
 
 The receiver must be created by an [`init(fileDescriptor:)`](./init%28filedescriptor%29.md) message that takes as an argument a stream-type socket created by the appropriate system routine, *and that is being listened on*. In other words, you must `bind()` the socket, and ensure that the socket has a connection backlog defined by `listen()`.
 

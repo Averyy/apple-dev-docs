@@ -21,7 +21,7 @@ var endDate: Date { get set }
 @property (nonatomic, retain) NSDate * endDate;
 ```
 
-#### Discussion
+## Discussion
 
 The date in this property must come chronologically after the date in the [`startDate`](./startdate.md) property. This property must not be `nil`.
 

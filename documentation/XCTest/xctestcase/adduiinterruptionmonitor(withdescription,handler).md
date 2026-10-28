@@ -20,7 +20,7 @@ func addUIInterruptionMonitor(withDescription handlerDescription: String, handle
 
 - [Handling UI Interruptions](../handling-ui-interruptions.md)
 
-#### Return Value
+## Return Value
 
 Returns a token that can be used to unregister the handler. Handlers are invoked in the reverse order in which they are added until one of the handlers returns true, indicating that it has handled the alert.
 

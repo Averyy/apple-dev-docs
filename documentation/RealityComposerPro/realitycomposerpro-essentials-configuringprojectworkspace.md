@@ -5,11 +5,11 @@
 
 Open a project and arrange the workspace’s tabs and panes to fit your task.
 
-#### Overview
+## Overview
 
 Reality Composer Pro’s project workspace is the main interface for viewing, editing, creating, and arranging 3D RealityKit content for your Xcode project. From the welcome window, select a recently opened project, choose **Create New Project**, or choose **Open Existing Project**.
 
-#### Open a new workspace
+## Open a new workspace
 
 You can open multiple workspaces, each with multiple tabs. For example, open one workspace for your scene and another for a specific object in your scene.
 
@@ -17,7 +17,7 @@ To open a new workspace, in the Project Browser, double-click an entity (or any 
 
 ![A screenshot showing how to open a new tab from the Reality Composer Pro Main Menu.](https://developer.apple.com/tutorials/images/RealityComposerPro/WorkspaceTab@2x.png)
 
-#### Open a new tab
+## Open a new tab
 
 From the **Main Menu**, choose **Tab** > **New Tab**, and then select the tab you want to open. The new tab appears in the tab bar at the top of the viewport.
 
@@ -43,7 +43,7 @@ Tabs you can open include:
 
 > **Note**: Console, Hierarchy, Inspector, Preview, Project Browser, and Viewport open by default in the workspace.
 
-#### Move and dock a tab
+## Move and dock a tab
 
 Drag any tab onto a layout dock to dock it to a new location in a workspace.
 

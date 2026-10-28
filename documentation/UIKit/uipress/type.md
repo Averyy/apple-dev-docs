@@ -23,7 +23,7 @@ var type: UIPress.PressType { get }
 @property (nonatomic, readonly) UIPressType type;
 ```
 
-#### Discussion
+## Discussion
 
 For a list of all possible types, see the [`UIPress.PressType`](./presstype.md) enumeration.
 

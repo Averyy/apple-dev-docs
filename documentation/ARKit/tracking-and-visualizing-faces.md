@@ -11,7 +11,7 @@ Detect faces in a front-camera AR experience, overlay virtual content, and anima
 - iPadOS 11.0+
 - Xcode 16.1+
 
-#### Overview
+## Overview
 
 This sample app presents a simple interface allowing you to choose between five augmented reality (AR) visualizations on devices with a TrueDepth front-facing camera.
 
@@ -27,7 +27,7 @@ Use the tab bar to switch between these modes.
 
 > ❗ **Important**: Face tracking is available on all devices with Apple Neural Engine in iOS 14 & iPad OS 14, and requires a device with TrueDepth camera on iOS 13 & iPadOS 13 and below. ARKit is not available in iOS Simulator.
 
-##### Start a face-tracking session in a scenekit view
+### Start a face-tracking session in a scenekit view
 
 Like other uses of ARKit, face tracking requires configuring and running a session (an [`ARSession`](./arsession.md) object) and rendering the camera image together with virtual content in a view. This sample uses [`ARSCNView`](./arscnview.md) to display 3D content with SceneKit, but you can also use SpriteKit or build your own renderer using Metal (see [`ARSKView`](./arskview.md) and [Displaying an AR Experience with Metal](./displaying-an-ar-experience-with-metal.md).
 
@@ -43,7 +43,7 @@ configuration.isLightEstimationEnabled = true
 sceneView.session.run(configuration, options: [.resetTracking, .removeExistingAnchors])
 ```
 
-##### Track the Position and Orientation of a Face
+### Track the Position and Orientation of a Face
 
 When face tracking is active, ARKit automatically adds[`ARFaceAnchor`](./arfaceanchor.md) objects to the running AR session, containing information about the user’s face, including its position and orientation. (ARKit detects and provides information about only face at a time. If multiple faces are present in the camera image, ARKit chooses the largest or most clearly recognizable face.)
 
@@ -67,7 +67,7 @@ func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode
 
 This example uses a convenience extension on [`SCNReferenceNode`](../SceneKit/scnreferencenode.md) to load content from an `.scn` file in the app bundle. The [`renderer(_:nodeFor:)`](./arscnviewdelegate/renderer%28_,nodefor%29.md) method provides that node to [`ARSCNView`](./arscnview.md), allowing ARKit to automatically adjust the node’s position and orientation to match the tracked face.
 
-##### Use face geometry to model the user’s face
+### Use face geometry to model the user’s face
 
 ARKit provides a coarse 3D mesh geometry matching the size, shape, topology, and current facial expression of the user’s face. ARKit also provides the [`ARSCNFaceGeometry`](./arscnfacegeometry.md) class, offering an easy way to visualize this mesh in SceneKit.
 
@@ -109,7 +109,7 @@ func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor:
 }
 ```
 
-##### Place 3D content on the user’s face
+### Place 3D content on the user’s face
 
 Another use of the face mesh that ARKit provides is to create *occlusion geometry* in your scene. An occlusion geometry is a 3D model that doesn’t render any visible content (allowing the camera image to show through), but obstructs the camera’s view of other virtual content in the scene.
 
@@ -130,7 +130,7 @@ The sample app combines this technique with a SceneKit object positioned in fron
 
 > **Note**: The `ARFaceGeometry.obj` file included in this sample project represents ARKit’s face geometry in a neutral pose. You can use this as a template to design your own 3D art assets for placement on a real face.
 
-##### Map camera video onto 3D face geometry
+### Map camera video onto 3D face geometry
 
 For additional creative uses of face tracking, you can texture-map the live 2D video feed from the camera onto the 3D geometry that ARKit provides. After mapping pixels in the camera video onto the corresponding points on ARKit’s face mesh, you can modify that mesh, creating illusions such as resizing or distorting the user’s face in 3D.
 
@@ -178,7 +178,7 @@ faceGeometry.setValue(SCNMatrix4Invert(transform), forKey: "displayTransform")
 
 > **Note**: This example’s shader modifier also applies a constant scale factor to all vertices, causing the user’s face to appear larger than life. Try other transformations to distort the face in other ways.
 
-##### Animate a character with blend shapes
+### Animate a character with blend shapes
 
 In addition to the face mesh shown in the earlier examples, ARKit also provides a more abstract representation of the user’s facial expressions. You can use this representation (called *blend shapes*) to control animation parameters for your own 2D or 3D assets, creating a character that follows the user’s real facial movements and expressions.
 

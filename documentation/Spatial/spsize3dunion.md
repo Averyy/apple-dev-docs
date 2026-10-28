@@ -21,7 +21,7 @@ Returns the smallest size that contains two sizes.
 static SPSize3D SPSize3DUnion(SPSize3D size, SPSize3D other);
 ```
 
-#### Return Value
+## Return Value
 
 A new size that is the union of two sizes.
 

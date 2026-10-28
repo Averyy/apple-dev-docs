@@ -19,11 +19,11 @@ var preferredRenderingQuality: NSPrintOperation.RenderingQuality { get }
 @property (readonly) NSPrintRenderingQuality preferredRenderingQuality;
 ```
 
-#### Return Value
+## Return Value
 
 The preferred printing quality. See [`NSPrintOperation.RenderingQuality`](./renderingquality.md) for the possible values.
 
-#### Discussion
+## Discussion
 
 If the print sheet is unresponsive or sluggish due to the time is takes to fully render a page, you can check this method in `drawRect:` and other printing methods such as `beginDocument` and `knowsPageRage:` to determine if the print operation prefers speed over fidelity. Most applications render each page fast enough and do not need to call this method. Only use this method after establishing that best quality rendering does indeed make the user interface unresponsive.
 

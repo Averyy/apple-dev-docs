@@ -21,7 +21,7 @@ On Unix, creates the string `"/"`
 init(decoding root: FilePath.Root)
 ```
 
-#### Discussion
+## Discussion
 
 On Windows, creates a string by interpreting the path root’s content as UTF-16.
 

@@ -25,7 +25,7 @@ func CMBufferQueueResetWithCallback(_ queue: CMBufferQueue, callback: (CMBuffer,
 extern OSStatus CMBufferQueueResetWithCallback(CMBufferQueueRef queue, void (*)(const void *, void *)callback, void *refcon);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See `Result Codes`.
 

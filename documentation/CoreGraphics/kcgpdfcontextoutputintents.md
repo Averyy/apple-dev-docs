@@ -23,7 +23,7 @@ let kCGPDFContextOutputIntents: CFString
 extern CFStringRef const kCGPDFContextOutputIntents;
 ```
 
-#### Discussion
+## Discussion
 
 Output intent dictionaries. This key is optional. If present, the value must be an array of one or more [`kCGPDFContextOutputIntent`](./kcgpdfcontextoutputintent.md) dictionaries. The array is added to the PDF document in the `/OutputIntents` entry in the PDF file’s document catalog. Each dictionary in the array must be of form specified for the [`kCGPDFContextOutputIntent`](./kcgpdfcontextoutputintent.md) key, except that only the first dictionary in the array is required to contain the “S” key with a value of `GTS_PDFX`. If both the [`kCGPDFContextOutputIntent`](./kcgpdfcontextoutputintent.md) and [`kCGPDFContextOutputIntents`](./kcgpdfcontextoutputintents.md) keys are specified, the former is ignored.
 

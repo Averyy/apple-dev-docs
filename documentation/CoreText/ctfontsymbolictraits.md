@@ -25,7 +25,7 @@ struct CTFontSymbolicTraits
 enum CTFontSymbolicTraits : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 `CTFontSymbolicTraits` symbolically describes stylistic aspects of a font. The upper 16 bits are used to describe appearance of the font, whereas the lower 16 bits are for typeface information. The font appearance information represented by the upper 16 bits can be used for stylistic font matching.
 

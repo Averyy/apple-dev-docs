@@ -24,7 +24,7 @@ var accessories: [HMAccessory] { get }
 @property (nonatomic, copy, readonly) NSArray<HMAccessory *> * accessories;
 ```
 
-#### Discussion
+## Discussion
 
 You assign accessories to a room using the [`assignAccessory(_:to:completionHandler:)`](../hmhome/assignaccessory%28_,to,completionhandler%29.md) method of [`HMHome`](../hmhome.md).
 

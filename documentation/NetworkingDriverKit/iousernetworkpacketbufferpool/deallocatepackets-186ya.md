@@ -15,11 +15,11 @@ Disposes of any resources associated with the specified packets and makes them a
 virtual kern_return_t DeallocatePackets(IOUserNetworkPacket **packets, uint32_t packetsCount);
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` on success, or another value if an error occurred.
 
-#### Discussion
+## Discussion
 
 After you move one or more packets to the appropriate completion queue, call this method to recycle those packets. Recycling packets makes them available for use with new incoming or outgoing packets.
 

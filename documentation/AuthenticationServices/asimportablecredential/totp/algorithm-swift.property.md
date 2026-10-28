@@ -19,7 +19,7 @@ The algorithm used by the generator.
 var algorithm: ASImportableCredential.TOTP.Algorithm
 ```
 
-#### Discussion
+## Discussion
 
 This value must be one of [`ASImportableCredential.TOTP.Algorithm.sha1`](./algorithm-swift.enum/sha1.md), [`ASImportableCredential.TOTP.Algorithm.sha256`](./algorithm-swift.enum/sha256.md), or [`ASImportableCredential.TOTP.Algorithm.sha512`](./algorithm-swift.enum/sha512.md).
 

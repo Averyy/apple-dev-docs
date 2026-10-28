@@ -22,7 +22,7 @@ class let currentISO: Float
 extern const float AVCaptureISOCurrent;
 ```
 
-#### Discussion
+## Discussion
 
 A special value that you may pass as the ISO parameter of the [`setExposureModeCustom(duration:iso:completionHandler:)`](./setexposuremodecustom%28duration,iso,completionhandler%29.md) method to indicate that the caller doesn’t specify a value for the ISO property, and to instead set to its current value.
 

@@ -25,7 +25,7 @@ var capHeight: Int32 { get }
 extern int CGFontGetCapHeight(CGFontRef font);
 ```
 
-#### Discussion
+## Discussion
 
 The cap height is the distance above the baseline of the top of flat capital letters of glyphs in a font. The value is specified in glyph space units.
 

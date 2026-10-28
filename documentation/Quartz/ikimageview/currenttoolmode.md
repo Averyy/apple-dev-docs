@@ -19,7 +19,7 @@ var currentToolMode: String! { get set }
 @property (copy) NSString * currentToolMode;
 ```
 
-#### Discussion
+## Discussion
 
 See [Tool Modes](../tool-modes.md) for possible values.
 

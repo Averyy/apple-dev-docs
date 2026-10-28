@@ -16,7 +16,7 @@ Set reference value associated with this port.
 void (*SetRefCon)(IOFireWireLibIsochPortRef self, void *inRefCon);
 ```
 
-#### Discussion
+## Discussion
 
 Retrieve the reference value with GetRefCon()
 

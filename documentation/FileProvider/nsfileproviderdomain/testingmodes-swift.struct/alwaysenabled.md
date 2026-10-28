@@ -23,7 +23,7 @@ static var alwaysEnabled: NSFileProviderDomain.TestingModes { get }
 NSFileProviderDomainTestingModeAlwaysEnabled
 ```
 
-#### Discussion
+## Discussion
 
 By default, the user must manually enable a domain in System Preferences > Extensions before the File Provider extension can access it. This testing mode bypasses that workflow and automatically enables the domain.
 

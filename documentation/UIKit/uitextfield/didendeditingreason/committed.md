@@ -23,7 +23,7 @@ case committed
 UITextFieldDidEndEditingReasonCommitted
 ```
 
-#### Discussion
+## Discussion
 
 On tvOS, text field changes become committed when the user presses the Done button.
 

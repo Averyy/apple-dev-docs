@@ -19,7 +19,7 @@ The font of the title.
 @property (nonatomic, strong, nullable) UIFont * font;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is `nil` (the default), [`UITableViewCell`](../uitableviewcell.md) uses a standard font optimized for the device.
 

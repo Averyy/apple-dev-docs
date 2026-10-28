@@ -21,7 +21,7 @@ A type that represents data in Microsoft Waveform Audio File Format.
 extern UTType * const UTTypeWAV;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.microsoft.waveform-audio`.
 

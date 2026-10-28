@@ -25,7 +25,7 @@ var suspensionRestLength: CGFloat { get set }
 @property CGFloat suspensionRestLength;
 ```
 
-#### Discussion
+## Discussion
 
 This property measures the length of the simulated spring between the vehicle and its wheel when the spring is not stressed by the weight of either body. When the wheel receives a shock (for example, when the vehicle runs over a bump), SceneKit adds the difference between the wheel’s current position and its connection position to this rest length and then applies a force between the wheel and vehicle proportional to the total.
 

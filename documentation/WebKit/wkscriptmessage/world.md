@@ -23,7 +23,7 @@ var world: WKContentWorld { get }
 @property (nonatomic, readonly) WKContentWorld * world;
 ```
 
-#### Discussion
+## Discussion
 
 For more information about content worlds, see [`WKContentWorld`](../wkcontentworld.md).
 

@@ -10,7 +10,7 @@ framework: "Swift-Org/PackageManagerDocs"
 
 Learn to create and use Swift packages.
 
-#### Overview
+## Overview
 
 To provide a more complete look at what the Swift Package Manager can do, the following example consists of three interdependent packages, which you can explore:
 
@@ -20,7 +20,7 @@ To provide a more complete look at what the Swift Package Manager can do, the fo
 
 This guide shows you how to create a library that uses another library as a dependency, use the Package Manager to build and test your code, and show you how you might release your own package.
 
-##### Creating a library package
+### Creating a library package
 
 This example starts with using an existing package that represents a playing card in a standard 52-card deck. The package, [PlayingCard](https://github.com/apple/example-package-playingcard), is available through git and provides a library (`PlayingCard`) that this guide uses and expands upon.
 
@@ -74,7 +74,7 @@ let package = Package(
 )
 ```
 
-##### Adding a dependency
+### Adding a dependency
 
 To add the dependency on the library that provides a PlayingCard so that this example can use it, use the `add-dependency` command, providing the location where the package is hosted.
 
@@ -130,7 +130,7 @@ This allows DeckOfPlayingCards to access the public members of its dependent mod
 
 With this update in place, when you run `swift build` the package compiles without warnings.
 
-##### Implement the library
+### Implement the library
 
 The template provides an empty file for the source for your package. Remove the content, add `import PlayingCard`, and your implementation. The following code provides an example implementation:
 
@@ -208,7 +208,7 @@ Test Suite 'All tests' passed at 2025-10-09 13:12:08.095.
 ✔ Test run with 1 test in 0 suites passed after 0.001 seconds.
 ```
 
-##### Add tests for your package
+### Add tests for your package
 
 Extend the tests to work with the code in your library. Update the contents of `Tests/DeckOfPlayingCardsTests/DeckOfPlayingCardsTests.swift`:
 
@@ -303,13 +303,13 @@ Test Suite 'All tests' passed at 2025-10-09 13:16:44.052.
 
 > **Note**: The complete code for the DeckOfPlayingCards example package can be found at [https://github.com/apple/example-package-deckofplayingcards](https://github.com/apple/example-package-deckofplayingcards).
 
-##### Share your package
+### Share your package
 
 You can use this package from other Swift packages locally, or share the package through a git hosting provider. When you want to release your own package, create a git tag that matches the major, minor, and patch versions of a semantic version and push the tag to your git hosting provider. For example, to tag the package with the semantic version `0.1`, which indicates that it’s an initial minor release, use the tag `0.1.0`.
 
 For more information about sharing packages, see [Releasing and publishing a Swift package](https://docs.swift.org/swiftpm/documentation/packagemanagerdocs/releasingpublishingapackage).
 
-##### Resolving transitive dependencies
+### Resolving transitive dependencies
 
 The Package Manager resolves dependencies for the package you’re using and all of its transitive dependencies. Another example package, `Dealer`, illustrates how this works by using the example of the package this guide created. You can explore the example package online at [https://github.com/swiftlang/example-package-dealer/](https://github.com/swiftlang/example-package-dealer/), or download it locally to explore:
 

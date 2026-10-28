@@ -25,7 +25,7 @@ func CFRunLoopObserverGetContext(_ observer: CFRunLoopObserver!, _ context: Unsa
 extern void CFRunLoopObserverGetContext(CFRunLoopObserverRef observer, CFRunLoopObserverContext *context);
 ```
 
-#### Discussion
+## Discussion
 
 The context version number for run loop observers is currently `0`. Before calling this function, you need to initialize the `version` member of `context` to `0`.
 

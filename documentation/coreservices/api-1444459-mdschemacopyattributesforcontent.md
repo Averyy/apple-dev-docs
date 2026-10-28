@@ -19,11 +19,11 @@ func MDSchemaCopyAttributesForContentType(_ contentTypeUTI: CFString!) -> CFDict
 CFDictionaryRef MDSchemaCopyAttributesForContentType(CFStringRef contentTypeUTI);
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary containing `kMDAttributeDisplayValues` and `kMDAttributeAllValues` keys.Returns `NULL` if the UTItype is unknown.
 
-#### Discussion
+## Discussion
 
 This function returns the metadata attributes for the specifiedUTI type only.
 

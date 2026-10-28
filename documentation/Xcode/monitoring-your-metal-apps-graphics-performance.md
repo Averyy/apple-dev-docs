@@ -5,7 +5,7 @@
 
 Catch performance issues using the Metal Performance HUD while your app runs.
 
-#### Overview
+## Overview
 
 The Metal Performance HUD (heads-up display) adds a real-time overlay to your app that displays and, optionally, logs common graphics performance information. The overlay helps you spot subtle performance issues, such as large variations in rendering time, so you can find the perfect scope to capture in Xcode (see [Capturing a Metal workload in Xcode](./capturing-a-metal-workload-in-xcode.md)) or in Instruments (see [Analyzing the performance of your Metal app](./analyzing-the-performance-of-your-metal-app.md)).
 
@@ -21,7 +21,7 @@ You can also customize the HUD to include more metrics. To learn more, see [Cust
 
 For more information about the metrics provided by the HUD, see [Understanding the Metal Performance HUD metrics](./understanding-metal-performance-hud-metrics.md).
 
-##### Enable the HUD and logging in Xcode
+### Enable the HUD and logging in Xcode
 
 Follow these steps to enable the Metal Performance HUD using the runtime diagnostics options in the scheme settings:
 
@@ -38,7 +38,7 @@ You can also optionally enable the output of per-frame statistics to the console
 
 > **Note**: You need to select both the Show Graphics Overview and the Log Graphics Overview options to output per-frame statistics.
 
-##### Enable the HUD and logging with environment variables
+### Enable the HUD and logging with environment variables
 
 You can enable the Metal Performance HUD and logging by setting the following environment variables on your Metal app:
 
@@ -46,7 +46,7 @@ You can enable the Metal Performance HUD and logging by setting the following en
 - **MTL_HUD_LOG_ENABLED=1**: Enables logging of per-frame statistics. Requires `MTL_HUD_ENABLED=1`.
 - **MTL_HUD_LOG_SHADER_ENABLED=1**: Enables logging of shader compilation activities. Requires `MTL_HUD_ENABLED=1`.
 
-##### Enable the HUD and logging on a device
+### Enable the HUD and logging on a device
 
 You can enable the Metal Performance HUD and logging on an iOS, iPadOS, or tvOS device in the Developer settings by following these steps:
 
@@ -67,14 +67,14 @@ The following screenshot shows the options in tvOS:
 
 ![A screenshot of the Developer settings in tvOS, highlighting the toggles to enable the Metal Performance HUD overlay and logging.](https://developer.apple.com/tutorials/images/com.apple.Xcode/metal-hud-tv-settings@2x.png)
 
-##### Enable the HUD and logging with information property list and user defaults
+### Enable the HUD and logging with information property list and user defaults
 
 Alternatively, you can enable the HUD and logging programmatically with one of the following methods:
 
 - Add `MetalHudEnabled` to your app’s `Info.plist` file.
 - Add `MetalHUDForceEnabled=1` in your app’s [`UserDefaults`](../Foundation/userdefaults.md).
 
-##### Utilize the logging capabilities
+### Utilize the logging capabilities
 
 If you enable logging, once per second as your app runs, the HUD writes data in the following format to the console:
 
@@ -93,7 +93,7 @@ When you enable shader compiler logging, as your app runs, the Metal HUD emits s
 [com.apple.metal.hud:Logging] CompileShader: name: ParticlePs compilation-time: 6335000 cached: 0
 ```
 
-##### Understand encoder GPU time tracking
+### Understand encoder GPU time tracking
 
 You can turn on encoder GPU time tracking by ticking the `Enable Encoder GPU Time Tracking` option in the configuration panel or by setting `MTL_HUD_ENCODER_TIMING_ENABLED` to `1` in the environment variable.
 
@@ -111,7 +111,7 @@ With the encoder GPU time tracking enabled, the Metal Performance HUD also track
 
 ![A screenshot showing the top labeled command buffers and encoders.](https://developer.apple.com/tutorials/images/com.apple.Xcode/metal-hud-app-top-objects-zoomed@2x.png)
 
-##### Display the value range of metrics
+### Display the value range of metrics
 
 You can visualize the range of common metrics in the overlay by enabling the Show Metrics Value Range option in the configuration panel or by setting `MTL_HUD_SHOW_VALUE_RANGE` to `1` in the environment variable.
 

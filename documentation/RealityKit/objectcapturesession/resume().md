@@ -17,7 +17,7 @@ Resumes object tracking algorithms after [`pause()`](./pause%28%29.md) is called
 func resume()
 ```
 
-#### Discussion
+## Discussion
 
 Call this method when the object capture view first appears on the screen, or after `pause()` is called to show another view temporarily.
 

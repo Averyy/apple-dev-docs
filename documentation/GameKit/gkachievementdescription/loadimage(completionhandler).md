@@ -56,7 +56,7 @@ func loadImage() async throws -> NSImage
 
 - [Rewarding players with achievements](../rewarding-players-with-achievements.md)
 
-#### Discussion
+## Discussion
 
 First, use the [`loadAchievementDescriptions(completionHandler:)`](./loadachievementdescriptions%28completionhandler%29.md) method to download the achievement description objects, and then use this method to download the individual achievement images. While GameKit downloads an achievement image, you can display the placeholder image. If successful, GameKit sets the image property to the image it passes to the completion handler.
 

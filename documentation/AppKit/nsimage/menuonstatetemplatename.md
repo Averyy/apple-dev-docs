@@ -19,7 +19,7 @@ class let menuOnStateTemplateName: String
 extern NSImageName const NSImageNameMenuOnStateTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 Drawing these outside of menus is discouraged.
 

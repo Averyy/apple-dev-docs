@@ -5,80 +5,80 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The macOS 13.3 SDK provides support to develop apps for Mac computers running Ventura 13.3. The SDK comes bundled with Xcode 14.3. For information on the compatibility requirements for Xcode 14.3, see [Xcode 14.3 Release Notes](../Xcode-Release-Notes/xcode-14_3-release-notes.md).
 
-##### Accelerate
+### Accelerate
 
-###### New Features
+#### New Features
 
 - The BLAS and LAPACK libraries under the Accelerate framework are now inline with reference version 3.9.1. These new interfaces provide additional functionality and a new ILP64 interface. To use the new interfaces, define `ACCELERATE_NEW_LAPACK` before including the Accelerate or vecLib headers. For ILP64 interfaces, also define `ACCELERATE_LAPACK_ILP64`. For Swift projects, specify `ACCELERATE_NEW_LAPACK=1` and `ACCELERATE_LAPACK_ILP64=1` as preprocessor macros in Xcode build settings. (105572917)
 
-##### Accessory Security
+### Accessory Security
 
-###### New Features
+#### New Features
 
 - On Apple silicon portables, SD or SD extended capacity cards require user approval before the card can communicate with macOS. (102838867)
 
-##### Core ML
+### Core ML
 
-###### Deprecations
+#### Deprecations
 
 - Core ML Model Deployment is being deprecated. Consider using Background Assets or `NSURLSession` instead. (102993813)
 
-##### iCloud Settings
+### iCloud Settings
 
-###### Known Issues
+#### Known Issues
 
 - You might be unable to enter the upgrade page for iCloud+ from iCloud Settings. (104629261)
 
   **Workaround:** Click “Upgrade to iCloud+” from [https://www.apple.com/icloud/](https://www.apple.com/icloud/) to trigger the upgrade page.
 - Some apps which previously displayed sync toggles in iCloud Drive Settings aren’t currently displayed. (105239897)
 
-##### Installation
+### Installation
 
-###### Known Issues
+#### Known Issues
 
 - macOS Ventura 13.3 beta installer fails when upgrading from versions prior to macOS Big Sur. (106102320)
 
   **Workaround:** Upgrade to macOS Ventura 13.2.1 before upgrading to macOS Ventura 13.3.
 
-##### Metal
+### Metal
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: [MTLAccelerationStructureCommandEncoder](../Metal/mtlaccelerationstructurecommandencoder.md) now supports `nil` for a refit scratch buffer if the required size of the buffer is zero bytes. (103192673)
 
-##### Pages, Numbers, and Keynote
+### Pages, Numbers, and Keynote
 
-###### Known Issues
+#### Known Issues
 
 - When Advanced Data Protection for iCloud is turned on, Pages, Numbers, and Keynote might unexpectedly require collaborative documents to be closed. (103463223)
 
   **Workaround:** Close the affected document, spreadsheet, or presentation and reopen it after a few minutes.
 
-##### Safari Web Extensions
+### Safari Web Extensions
 
-###### New Features
+#### New Features
 
 - Added support for `modifyHeaders` action type for `declarativeNetRequest` rules. (71867709)
 - Added support for `browser.storage.session` to store up to 10MB of data in-memory. (79283961)
 - Added support for persistent content scripts via `browser.scripting.registerContentScript`, `browser.scripting.getRegisteredContentScripts`, `browser.scripting.unregisterContentScripts`, and `scripting.updateContentScripts`. (91261369)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `browser.webNavigation` events firing for hosts where the extension didn’t have access. Extensions should request host permissions for sites to receive events. (100204850)
 
-##### StoreKit
+### StoreKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue causing iOS apps on Mac to fail while purchasing or restoring in-app content. (102123618)
 
-##### SwiftUI
+### SwiftUI
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed a regression where the `truncationMode` view modifier didn’t truncate `TextField` on macOS. (53647517)
 - Fixed: Dragging an `Image` using `draggable` modifier no longer causes an app to freeze. (99157719)
@@ -92,9 +92,9 @@ The macOS 13.3 SDK provides support to develop apps for Mac computers running Ve
 - Fixed: `List` with `DisclosureGroup` now supports expand/collapse animations when `isExpanded` is set within a `withAnimation` block. (104923100)
 - Fixed: `Table` on macOS will now properly respond to `scrollTo` requests with dynamcially added rows as target IDs. (105579236)
 
-##### SwiftUI Navigation
+### SwiftUI Navigation
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: `.navigationSplitViewColumn` and `.layoutPriority` now control the widths of columns of a `NavigationSplitView` on macOS. Use the existing `.windowResizability(.contentSize)` scene modifier if needed to control the window’s size based off a root `NavigationSplitView`.
 
@@ -156,15 +156,15 @@ The macOS 13.3 SDK provides support to develop apps for Mac computers running Ve
 
   (103429535)
 
-##### Task Manager
+### Task Manager
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue introduced in macOS Ventura 13.1 that caused the system to post excessive “Background Items Added” notifications after toggling items in System Settings > General > Login Items. Toggling items in macOS Ventura 13.2 doesn’t cause excessive notifications, but that release doesn’t automatically correct the issue inherited from macOS Ventura 13.1. (102352141)
 
-##### Virtualization
+### Virtualization
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Installing macOS Ventura 13.3 beta on a virtual machine running on a Apple silicon Mac might result in a hang during setup. (105504504)
 

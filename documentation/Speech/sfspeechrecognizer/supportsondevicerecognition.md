@@ -23,7 +23,7 @@ var supportsOnDeviceRecognition: Bool { get set }
 @property (nonatomic) BOOL supportsOnDeviceRecognition;
 ```
 
-#### Discussion
+## Discussion
 
 An [`SFSpeechRecognitionRequest`](../sfspeechrecognitionrequest.md) can only honor its [`requiresOnDeviceRecognition`](../sfspeechrecognitionrequest/requiresondevicerecognition.md) property if [`supportsOnDeviceRecognition`](./supportsondevicerecognition.md) is `true`. If [`supportsOnDeviceRecognition`](./supportsondevicerecognition.md) is `false`, the [`SFSpeechRecognizer`](../sfspeechrecognizer.md) requires a network in order to recognize speech.
 

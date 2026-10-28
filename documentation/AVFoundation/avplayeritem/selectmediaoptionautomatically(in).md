@@ -26,7 +26,7 @@ func selectMediaOptionAutomatically(in mediaSelectionGroup: AVMediaSelectionGrou
 - (void) selectMediaOptionAutomaticallyInMediaSelectionGroup:(AVMediaSelectionGroup *) mediaSelectionGroup;
 ```
 
-#### Discussion
+## Discussion
 
 This method has no effect unless the [`appliesMediaSelectionCriteriaAutomatically`](../avplayer/appliesmediaselectioncriteriaautomatically.md) property of the associated [`AVPlayer`](../avplayer.md) is [`true`](../../Swift/true.md) and unless automatic media selection has previously been overridden by invoking [`select(_:in:)`](./select%28_,in%29.md).
 

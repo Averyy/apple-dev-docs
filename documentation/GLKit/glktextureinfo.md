@@ -24,7 +24,7 @@ class GLKTextureInfo
 @interface GLKTextureInfo : NSObject
 ```
 
-#### Overview
+## Overview
 
 When your app loads textures using the [`GLKTextureLoader`](./glktextureloader.md) class, the texture loader returns information about the textures using [`GLKTextureInfo`](./glktextureinfo.md) objects. Your app never creates [`GLKTextureInfo`](./glktextureinfo.md) objects directly.
 

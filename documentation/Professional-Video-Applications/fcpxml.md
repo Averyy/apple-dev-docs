@@ -5,7 +5,7 @@
 
 Contain top-level elements in a document.
 
-#### Overview
+## Overview
 
 The root element in an FCPXML document is `fcpxml`, which can contain the following elements:
 

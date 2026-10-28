@@ -28,7 +28,7 @@ optional func resolveMediaItems(for intent: INAddMediaIntent) async -> [INAddMed
 - (void) resolveMediaItemsForAddMedia:(INAddMediaIntent *) intent withCompletion:(void (^)(NSArray<INAddMediaMediaItemResolutionResult *> *resolutionResults)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the media items to add. Always strive toward a successful resolution to the specific media items, but feel free to ask for confirmation of the selected media items if there’s some uncertainty about whether you are adding the correct media items.
 

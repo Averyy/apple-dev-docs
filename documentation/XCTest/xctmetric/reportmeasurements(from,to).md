@@ -17,11 +17,11 @@ func reportMeasurements(from startTime: XCTPerformanceMeasurementTimestamp, to e
 - (NSArray<XCTPerformanceMeasurement *> *) reportMeasurementsFromStartTime:(XCTPerformanceMeasurementTimestamp *) startTime toEndTime:(XCTPerformanceMeasurementTimestamp *) endTime error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An array of the measurements gathered by this metric during the requested interval.
 
-#### Discussion
+## Discussion
 
 Report the measurements gathered during the execution of measured code in a performance test. Use the `startTime` and `endTime` parameters to refine the accuracy of the reported measurements.
 

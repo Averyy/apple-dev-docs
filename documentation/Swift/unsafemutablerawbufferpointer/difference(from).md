@@ -23,11 +23,11 @@ func difference<C>(from other: C) -> CollectionDifference<Self.Element> where C 
 
 Available when `Element` conforms to `Equatable`.
 
-#### Return Value
+## Return Value
 
 The difference needed to produce this collection’s ordered elements from the given collection.
 
-#### Discussion
+## Discussion
 
 This function does not infer element moves. If you need to infer moves, call the `inferringMoves()` method on the resulting difference.
 

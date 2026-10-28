@@ -15,7 +15,7 @@ Scales the view’s rendered output by the given horizontal and vertical amounts
 func scaleEffect(x: CGFloat = 1.0, y: CGFloat = 1.0, anchor: UnitPoint = .center) -> some HoverEffectContent
 ```
 
-#### Return Value
+## Return Value
 
 An effect that scales the view’s rendered output.
 

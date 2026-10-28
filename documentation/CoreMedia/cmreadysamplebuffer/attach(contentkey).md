@@ -23,7 +23,7 @@ mutating func attach(contentKey: AVContentKey) throws
 
 Available when `Content` conforms to `CMSampleBuffer.Content`.
 
-#### Discussion
+## Discussion
 
 > **Throws**: Describes the reason for failure to attach the content key.
 

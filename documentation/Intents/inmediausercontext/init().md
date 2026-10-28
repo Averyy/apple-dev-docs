@@ -24,7 +24,7 @@ init()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INMediaUserContext`](../inmediausercontext.md) object.
 

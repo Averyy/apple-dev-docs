@@ -19,7 +19,7 @@ var shouldRunSavePanelWithAccessoryView: Bool { get }
 @property (readonly) BOOL shouldRunSavePanelWithAccessoryView;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the document includes a pop-up menu of supported writable document types when it displays the Save panel. The default value of this property is [`true`](../../Swift/true.md). Subclasses can override this property to provide a different value. For example, you might provide the following implementation:
 

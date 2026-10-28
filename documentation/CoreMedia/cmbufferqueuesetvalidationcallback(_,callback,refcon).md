@@ -25,7 +25,7 @@ func CMBufferQueueSetValidationCallback(_ queue: CMBufferQueue, callback: CMBuff
 extern OSStatus CMBufferQueueSetValidationCallback(CMBufferQueueRef queue, CMBufferValidationCallback callback, void *refcon);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See `Result Codes`.
 

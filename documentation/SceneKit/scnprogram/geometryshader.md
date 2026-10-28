@@ -25,7 +25,7 @@ var geometryShader: String? { get set }
 @property (nonatomic, copy, nullable) NSString * geometryShader;
 ```
 
-#### Discussion
+## Discussion
 
 A program’s geometry shader executes once for each geometric primitive (line or triangle) to be rendered. The geometry shader takes as input the vertex positions output by the vertex shader (or by the tessellation shader, if one is in use), and outputs new geometric primitives for rendering.
 

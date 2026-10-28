@@ -20,7 +20,7 @@ let kLSItemFileCreator: CFString!
 const CFStringRef kLSItemFileCreator;
 ```
 
-#### Discussion
+## Discussion
 
 Use the URL resource property [`kCFURLTypeIdentifierKey`](../CoreFoundation/kcfurltypeidentifierkey.md)/[`typeIdentifierKey`](../Foundation/urlresourcekey/typeidentifierkey.md) to get the file's UTI instead.
 

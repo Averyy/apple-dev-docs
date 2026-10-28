@@ -25,7 +25,7 @@ func setShouldSubpixelQuantizeFonts(_ shouldSubpixelQuantizeFonts: Bool)
 extern void CGContextSetShouldSubpixelQuantizeFonts(CGContextRef c, bool shouldSubpixelQuantizeFonts);
 ```
 
-#### Discussion
+## Discussion
 
 When enabled, the graphics context may quantize the subpixel positions of glyphs.
 

@@ -5,7 +5,7 @@
 
 Wrap article body text around an inset pull quote.
 
-#### Overview
+## Overview
 
 In [Creating a Floating Caption](./creating-a-floating-caption.md), you positioned a component in the article margin. Now, you’ll position a component in the same columns as the body text and make text wrap around it.
 
@@ -16,7 +16,7 @@ In [Creating a Floating Caption](./creating-a-floating-caption.md), you position
 - Use an anchor to control vertical placement and allow body text to flow around the pull quote.
 - Delete some `divider` components, and replace them with top and bottom borders.
 
-##### Define Minor Adjustments for Pull Quote Position
+### Define Minor Adjustments for Pull Quote Position
 
 Before you can position the pull quote in the leftmost three columns of the article, you must define some new `ComponentLayout` objects. The `quoteLockupLayout` object determines that the pull quote is displayed in the left portion of the article. The other two `ComponentLayout` objects will make minor vertical adjustments to the components’ placement.
 
@@ -27,7 +27,7 @@ Before you can position the pull quote in the leftmost three columns of the arti
 
 Your code should look like the example code [Inset Pull Quote Layout: Result](./creating-an-inset-pull-quote.md#Inset-Pull-Quote-Layout-Result).
 
-###### Inset Pull Quote Layout: Copy This Code
+#### Inset Pull Quote Layout: Copy This Code
 
 ```json
 ,
@@ -48,7 +48,7 @@ Your code should look like the example code [Inset Pull Quote Layout: Result](./
     }
 ```
 
-###### Inset Pull Quote Layout: Result
+#### Inset Pull Quote Layout: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -77,7 +77,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Create Top and Bottom Borders
+### Create Top and Bottom Borders
 
 Your pull quote has dividers above and below it, and you’ll replace these with borders. Before you can add top and bottom borders to the pull quote, you must create a `ComponentStyle` object that creates a top and bottom border.
 
@@ -86,7 +86,7 @@ Your pull quote has dividers above and below it, and you’ll replace these with
 
 Your code should look like the example code [quoteLockupStyle: Result](./creating-an-inset-pull-quote.md#quoteLockupStyle-Result).
 
-###### quoteLockupStyle: Copy This Code
+#### quoteLockupStyle: Copy This Code
 
 ```json
 ,
@@ -104,7 +104,7 @@ Your code should look like the example code [quoteLockupStyle: Result](./creatin
     }
 ```
 
-###### quoteLockupStyle: Result
+#### quoteLockupStyle: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -130,7 +130,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Recombine Body Components and Use Style and Layout with a Container
+### Recombine Body Components and Use Style and Layout with a Container
 
 1. In your `article.json` file, copy the value of `text` for the first `body` component whose text begins with `Quis autem vel eum`. Do not copy the quotation marks.
 2. Paste the text inside the value of `text` for the `body` component whose text begins with `Cras ultricies mi eu turpis`, at the beginning of the value, before the existing `<p>.` Then wrap the pasted text with `<p></p>`.
@@ -143,7 +143,7 @@ Your code should look like the example code [Container: Result](./creating-an-in
 
 After you make this change in your code, you can preview your working `article.json` file in News Preview to see that the pull quote is vertically aligned. Note that the text does not yet wrap around the pull quote.
 
-###### Container: Copy This Code
+#### Container: Copy This Code
 
 ```json
         {
@@ -167,7 +167,7 @@ After you make this change in your code, you can preview your working `article.j
         },
 ```
 
-###### Container: Result
+#### Container: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -208,7 +208,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Wrap Text Around the Pull Quote
+### Wrap Text Around the Pull Quote
 
 Now that the `pullquote` components are combined in a container, you can use HTML to anchor the container, as one unit, to a portion of the body text.
 
@@ -225,7 +225,7 @@ Your code should look like the example code [Anchor: Result](./creating-an-inset
 
 After you make these changes in your code, you can preview your working `article.json` file in News Preview to see the text wrapped around the pull quote.
 
-###### Anchor: Copy This Code
+#### Anchor: Copy This Code
 
 ```json
           "anchor": {
@@ -234,7 +234,7 @@ After you make these changes in your code, you can preview your working `article
           },
 ```
 
-###### Anchor: Result
+#### Anchor: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -285,11 +285,11 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Previous
+### Previous
 
 [Creating a Floating Caption](./creating-a-floating-caption.md)
 
-##### Next
+### Next
 
 [Creating an Inset Photo](./creating-an-inset-photo.md)
 

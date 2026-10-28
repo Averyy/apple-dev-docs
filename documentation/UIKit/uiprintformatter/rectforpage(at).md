@@ -22,11 +22,11 @@ func rectForPage(at pageIndex: Int) -> CGRect
 - (CGRect) rectForPageAtIndex:(NSInteger) pageIndex;
 ```
 
-#### Return Value
+## Return Value
 
 A rectangle enclosing the content area for page `pageIndex`.
 
-#### Discussion
+## Discussion
 
 Returns [`CGRectZero`](../../CoreGraphics/cgrectzero.md) if the print formatter draws no content on the specified page.
 

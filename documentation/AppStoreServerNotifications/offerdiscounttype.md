@@ -26,7 +26,7 @@ string offerDiscountType
 
 - [App Store Server Notifications changelog](./app-store-server-notifications-changelog.md)
 
-#### Discussion
+## Discussion
 
 Offer discount types apply to auto-renewable subscriptions except for `ONE_TIME`, which applies to the consumable, non-consumable, and non-renewing subscription product types.
 

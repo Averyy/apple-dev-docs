@@ -16,7 +16,7 @@ Try to turn on packet notifications for this channel.
 Boolean (*TurnOnNotification)(IOFWAsyncStreamListenerInterfaceRef self);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true upon success
 

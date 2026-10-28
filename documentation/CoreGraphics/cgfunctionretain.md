@@ -21,7 +21,7 @@ Increments the retain count of a function object.
 extern CGFunctionRefCGFunctionRetain(CGFunctionRef function);
 ```
 
-#### Discussion
+## Discussion
 
 This function is equivalent to [`CFRetain`](../CoreFoundation/cfretain.md), except that it does not cause an error if the `function` parameter is `nil`.
 

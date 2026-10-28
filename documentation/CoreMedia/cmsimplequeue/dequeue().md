@@ -21,7 +21,7 @@ Dequeues an element from the queue.
 func dequeue() -> UnsafeRawPointer?
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to a dequeued element.
 

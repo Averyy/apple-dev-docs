@@ -20,7 +20,7 @@ typealias OSLGetMarkTokenUPP = OSLGetMarkTokenProcPtr
 typedef OSLGetMarkTokenProcPtr OSLGetMarkTokenUPP;
 ```
 
-#### Discussion
+## Discussion
 
 For a description of a mark token callback function, see [`OSLGetMarkTokenProcPtr`](./oslgetmarktokenprocptr.md). 
 

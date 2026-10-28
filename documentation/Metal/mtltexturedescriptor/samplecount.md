@@ -24,7 +24,7 @@ var sampleCount: Int { get set }
 @property (nonatomic, readwrite) NSUInteger sampleCount;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `1`. If [`textureType`](./texturetype.md) is not [`MTLTextureType.type2DMultisample`](../mtltexturetype/type2dmultisample.md) or [`MTLTextureType.type2DMultisampleArray`](../mtltexturetype/type2dmultisamplearray.md), this value needs to be `1`.
 

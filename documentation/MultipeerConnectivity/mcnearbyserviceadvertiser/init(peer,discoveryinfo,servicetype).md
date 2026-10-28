@@ -26,11 +26,11 @@ init(peer myPeerID: MCPeerID, discoveryInfo info: [String : String]?, serviceTyp
 - (instancetype) initWithPeer:(MCPeerID *) myPeerID discoveryInfo:(NSDictionary<NSString *,NSString *> *) info serviceType:(NSString *) serviceType;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an initialized instance, or `nil` if an error occurred.
 
-#### Discussion
+## Discussion
 
 This method throws an exception if a valid `peerID` object is not provided or if the value of `serviceType` is not a legal Bonjour service type.
 

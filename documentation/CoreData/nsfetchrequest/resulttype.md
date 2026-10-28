@@ -25,7 +25,7 @@ var resultType: NSFetchRequestResultType { get set }
 @property (nonatomic) NSFetchRequestResultType resultType;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`managedObjectResultType`](../nsfetchrequestresulttype/managedobjectresulttype.md).
 

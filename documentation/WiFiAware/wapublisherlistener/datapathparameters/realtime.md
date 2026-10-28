@@ -17,7 +17,7 @@ Parameters that prioritize latency at the expense of throughput, power consumpti
 static let realtime: WAPublisherListener.DatapathParameters
 ```
 
-#### Return Value
+## Return Value
 
 Realtime parameters.
 

@@ -19,7 +19,7 @@ Creates an empty table column customization.
 init()
 ```
 
-#### Discussion
+## Discussion
 
 With an empty customization, columns will be ordered as described by the table’s column builder.
 

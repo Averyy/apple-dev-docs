@@ -20,11 +20,11 @@ func AudioObjectGetPropertyDataSize(_ inObjectID: AudioObjectID, _ inAddress: Un
 extern OSStatus AudioObjectGetPropertyDataSize(AudioObjectID inObjectID, const AudioObjectPropertyAddress *inAddress, UInt32 inQualifierDataSize, const void *inQualifierData, UInt32 *outDataSize);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus indicating success or failure.
 
-#### Discussion
+## Discussion
 
 Queries an AudioObject to find the size of the data for the given property.
 

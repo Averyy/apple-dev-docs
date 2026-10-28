@@ -19,7 +19,7 @@ var doubleAction: Selector? { get set }
 @property (nullable) SEL doubleAction;
 ```
 
-#### Discussion
+## Discussion
 
 This property stores a selector that corresponds to a method of the following form:
 

@@ -23,7 +23,7 @@ var sceneClass: AnyClass? { get set }
 @property (nonatomic, nullable) Class sceneClass;
 ```
 
-#### Discussion
+## Discussion
 
 The class you specify must be [`UIScene`](../uiscene.md) or one of its subclasses. Typically, you specify the [`UIWindowScene`](../uiwindowscene.md) class for all windows associated with your app.
 

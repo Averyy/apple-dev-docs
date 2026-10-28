@@ -18,7 +18,7 @@ A description of a limit placed on an axis of rotation.
 struct Limit
 ```
 
-#### Overview
+## Overview
 
 Zero is the default minimum angular speed. Invalid limit specifications include minimum position greater than maximum position, minimum position equals maximum position, and maximum speed is less than zero.
 

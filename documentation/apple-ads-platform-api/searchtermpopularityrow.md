@@ -15,15 +15,15 @@ A single search term popularity data row.
 object SearchTermPopularityRow
 ```
 
-#### Discussion
+## Discussion
 
 Each `SearchTermPopularityRow` represents one combination of time period, country or region, genre, and search term in a search term popularity report. The date field present depends on the granularity in [`SearchTermPopularityTimeRange`](./searchtermpopularitytimerange.md): `week` for `WEEKLY_SUN_SAT`, `month` for `MONTHLY`.
 
-##### Popularity metrics
+### Popularity metrics
 
 The response provides three popularity scales, each scoped differently.
 
-##### Example
+### Example
 
 ```json
 {

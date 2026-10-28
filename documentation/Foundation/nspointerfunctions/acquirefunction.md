@@ -25,7 +25,7 @@ var acquireFunction: ((UnsafeRawPointer, ((UnsafeRawPointer) -> Int)?, ObjCBool)
 @property (nullable) void *(*)(const void *, unsigned long (*)(const void *), _Bool) acquireFunction;
 ```
 
-#### Discussion
+## Discussion
 
 This specifies the function to use for copy-in operations.
 

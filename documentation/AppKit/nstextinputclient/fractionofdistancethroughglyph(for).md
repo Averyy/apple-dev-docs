@@ -19,11 +19,11 @@ optional func fractionOfDistanceThroughGlyph(for point: NSPoint) -> CGFloat
 - (CGFloat) fractionOfDistanceThroughGlyphForPoint:(NSPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 The fraction of the distance `aPoint` is through the glyph in which it lies. May be 0 or 1 if `aPoint` is not within the bounding rectangle of a glyph (0 if the point is to the left or above the glyph; 1 if it’s to the right or below).
 
-#### Discussion
+## Discussion
 
 Implementation of this method is optional. This allows caller to perform precise selection handling.
 

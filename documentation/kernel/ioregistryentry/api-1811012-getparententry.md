@@ -12,11 +12,11 @@ virtual IORegistryEntry * getParentEntry(
  const IORegistryPlane *plane ) const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the first parent of the registry entry, or zero if the entry is not attached into the registry in that plane. The parent is retained while the entry is attached, and should not be released by the caller.
 
-#### Overview
+## Overview
 
 This function will return the parent to which a registry entry was first attached. Since the majority of registry entrys have only one provider, this is a useful simplification.
 

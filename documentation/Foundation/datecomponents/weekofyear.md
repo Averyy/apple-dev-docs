@@ -21,7 +21,7 @@ A week of the year or count of the weeks of the year.
 var weekOfYear: Int? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  This value is interpreted in the context of the calendar in which it is used.
 

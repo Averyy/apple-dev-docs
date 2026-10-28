@@ -23,11 +23,11 @@ optional func adaptivePresentationStyle(for controller: UIPresentationController
 - (UIModalPresentationStyle) adaptivePresentationStyleForPresentationController:(UIPresentationController *) controller;
 ```
 
-#### Return Value
+## Return Value
 
 The new presentation style, which must be [`UIModalPresentationStyle.fullScreen`](../uimodalpresentationstyle/fullscreen.md), [`UIModalPresentationStyle.overFullScreen`](../uimodalpresentationstyle/overfullscreen.md), or [`UIModalPresentationStyle.none`](../uimodalpresentationstyle/none.md).
 
-#### Discussion
+## Discussion
 
 In iOS 8.3 and later, use the [`adaptivePresentationStyle(for:traitCollection:)`](./adaptivepresentationstyle%28for,traitcollection%29.md) method to handle all trait changes instead of this method. If you do not implement that method, you can use this method to change the presentation style when transitioning to a horizontally compact environment.
 

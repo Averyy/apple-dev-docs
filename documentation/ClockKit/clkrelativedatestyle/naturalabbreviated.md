@@ -19,7 +19,7 @@ case naturalAbbreviated
 CLKRelativeDateStyleNaturalAbbreviated
 ```
 
-#### Discussion
+## Discussion
 
 The smallest possible abbreviation of the natural date style. For example, ten hours and nine minutes always formats as “10H 9M.” The [`CLKRelativeDateStyle.natural`](./natural.md) style may provide a longer string like “10hrs 9min” if there’s enough space.
 

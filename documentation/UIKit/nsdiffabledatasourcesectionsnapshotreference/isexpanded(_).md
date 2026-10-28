@@ -23,7 +23,7 @@ func isExpanded(_ item: Any) -> Bool
 - (BOOL) isExpanded:(ItemIdentifierType) item;
 ```
 
-#### Discussion
+## Discussion
 
 This expansion state persists along with the section snapshot.
 

@@ -24,7 +24,7 @@ func MTLOriginMake(_ x: Int, _ y: Int, _ z: Int) -> MTLOrigin
 static MTLOrigin MTLOriginMake(NSUInteger x, NSUInteger y, NSUInteger z);
 ```
 
-#### Return Value
+## Return Value
 
 The specified origin point.
 

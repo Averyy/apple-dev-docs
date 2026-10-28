@@ -24,7 +24,7 @@ struct AudioFilePacketTableInfo
 struct AudioFilePacketTableInfo;
 ```
 
-#### Overview
+## Overview
 
 Some data formats might have packets with contents that are not completely valid, but that represent priming or remainder frames not intended for playback. For example, a file with 100 packets of AAC is nominally 1024 * 100 = 102400 frames of data. However, the first 2112 frames might be priming frames.
 

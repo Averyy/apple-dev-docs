@@ -17,7 +17,7 @@ The user-facing display name of the remote device or route.
 @property (copy, readonly) NSString * routeDisplayName;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to show the name of the destination device in your app’s user interface. The display name typically reflects a custom name for the device or a default name the system provides.
 

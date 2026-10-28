@@ -16,7 +16,7 @@ class var runsForEachTargetApplicationUIConfiguration: Bool { get }
 @property (class, readonly) BOOL runsForEachTargetApplicationUIConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 The default is `false`. Override this method to return `true` in your UI test case to run the tests once for each UI configuration your app supports. To determine what UI configurations your app supports, the test system examines your project settings, including:
 

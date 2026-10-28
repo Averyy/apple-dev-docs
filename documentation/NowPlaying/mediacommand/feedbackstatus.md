@@ -21,7 +21,7 @@ The feedback status for a media item.
 enum FeedbackStatus
 ```
 
-#### Overview
+## Overview
 
 Use this to represent whether the user has expressed positive, negative, or no preference for the current content.
 

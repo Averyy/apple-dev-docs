@@ -19,11 +19,11 @@ func pmPageFormat() -> UnsafeMutableRawPointer
 - (void *) PMPageFormat;
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to a [`PMPageFormat`](../../applicationservices/pmpageformat.md) object, an opaque data type that stores information such as the paper size, orientation, and scale of pages in a printing session. You should not call `PMRelease` to release the returned object, except to balance calls to `PMRetain` that your code also issued.
 
-#### Discussion
+## Discussion
 
 The information in the returned `PMPageFormat` object is consistent with the receiver’s page format information at the time this method is called. Subsequent changes to the receiving `NSPrintInfo` object do not result in changes to the information in the `PMPageFormat` object.
 

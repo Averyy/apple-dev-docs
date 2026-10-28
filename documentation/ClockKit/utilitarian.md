@@ -5,7 +5,7 @@
 
 Use the utilitarian templates to display content on a variety of watch faces, including the Utility, Chronograph, Simple, and character watch faces.
 
-#### Overview
+## Overview
 
 The small utilitarian templates occupy a short rectangular area in the corner of the watch face. The content can include a glyph or icon, or it can include a circular graph. The large utilitarian templates occupy a long rectangular area at the bottom of the watch face. That area can display a longer string of text and a small image.
 

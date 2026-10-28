@@ -23,7 +23,7 @@ final func requestConfirmation(for itemToConfirm: Value.ValueType, dialog: Inten
 
 Available when `Value` conforms to `_IntentValue` and `Sendable`.
 
-#### Return Value
+## Return Value
 
 Whether or not the user confirmed the value
 

@@ -21,7 +21,7 @@ The record type to search.
 @property (copy, readonly) CKRecordType recordType;
 ```
 
-#### Discussion
+## Discussion
 
 A query’s results include only records of the specified type. The record type is an app-specific string that you use to distinguish among the records of your app. The records of a particular type all represent different instances of the same information. For example, an employee record type might store the employee’s name, phone number, and a reference to the employee’s manager.
 

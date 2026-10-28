@@ -10,7 +10,7 @@ virtual UInt8 GetMaxPacketSize(
  void);
 ```
 
-#### Overview
+## Overview
 
 returns the maximum packet size for endpoint zero (only 8, 16, 32, 64 are valid)
 

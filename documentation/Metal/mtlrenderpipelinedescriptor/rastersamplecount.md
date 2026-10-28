@@ -24,7 +24,7 @@ var rasterSampleCount: Int { get set }
 @property (nonatomic, readwrite) NSUInteger rasterSampleCount;
 ```
 
-#### Discussion
+## Discussion
 
 The render pipeline state honors this property only if the pipeline render targets support multisampling.
 

@@ -23,7 +23,7 @@ var metadata: LPLinkMetadata { get set }
 @property (nonatomic, copy, readwrite) LPLinkMetadata * metadata;
 ```
 
-#### Discussion
+## Discussion
 
 If you initialize the document properties object using [`init(url:)`](./init%28url%29-zeio.md), UIKit generates this metadata automatically. Typically, you don’t need to access the value of this property directly because UIKit updates the metadata asynchronously to display the latest information in the document header.
 

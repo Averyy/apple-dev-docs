@@ -19,11 +19,11 @@ func SCNetworkSetAddService(_ set: SCNetworkSet, _ service: SCNetworkService) ->
 Boolean SCNetworkSetAddService(SCNetworkSetRef set, SCNetworkServiceRef service);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the service was added to the set; `FALSE` if the service was already present or an error occurred.
 
-#### Discussion
+## Discussion
 
 Prior to OS X v10.5, the Network Preferences pane did not support having a single service being a member of more than one set. Therefore, an error is returned if you attempt to add a service to more than one set on a pre-10.5 system.
 

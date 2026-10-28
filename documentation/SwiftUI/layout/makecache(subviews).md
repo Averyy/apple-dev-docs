@@ -22,11 +22,11 @@ Creates and initializes a cache for a layout instance.
 func makeCache(subviews: Self.Subviews) -> Self.Cache
 ```
 
-#### Return Value
+## Return Value
 
 Storage for calculated data that you share among the methods of your custom layout container.
 
-#### Discussion
+## Discussion
 
 You can optionally use a cache to preserve calculated values across calls to a layout container’s methods. Many layout types don’t need a cache, because SwiftUI automatically reuses both the results of calls into the layout and the values that the layout reads from its subviews. Rely on the protocol’s default implementation of this method if you don’t need a cache.
 
@@ -38,7 +38,7 @@ However you might find a cache useful when:
 
 Only implement a cache if profiling shows that it improves performance.
 
-##### Initialize a cache
+### Initialize a cache
 
 Implement the `makeCache(subviews:)` method to create a cache. You can add computed values to the cache right away, using information from the `subviews` input parameter, or you can do that later. The methods of the [`Layout`](../layout.md) protocol that can access the cache take the cache as an in-out parameter, which enables you to modify the cache anywhere that you can read it.
 
@@ -46,7 +46,7 @@ You can use any storage type that makes sense for your layout algorithm, but be 
 
 When you return a cache from this method, you implicitly define a type for your cache. Be sure to either make the type of the `cache` parameters on your other [`Layout`](../layout.md) protocol methods match, or use a type alias to define the [`Cache`](./cache.md) associated type.
 
-##### Update the cache
+### Update the cache
 
 If the layout container or any of its subviews change, SwiftUI calls the [`updateCache(_:subviews:)`](./updatecache%28_,subviews%29.md) method so you can modify or invalidate the contents of the cache. The default implementation of that method calls the `makeCache(subviews:)` method to recreate the cache, but you can provide your own implementation of the update method to take an incremental approach, if appropriate.
 

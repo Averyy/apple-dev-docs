@@ -23,7 +23,7 @@ var indentationWidth: CGFloat { get set }
 @property (nonatomic) CGFloat indentationWidth;
 ```
 
-#### Discussion
+## Discussion
 
 The default indentation width is `10.0` points.
 

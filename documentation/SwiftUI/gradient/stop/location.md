@@ -21,7 +21,7 @@ The parametric location of the stop.
 var location: CGFloat
 ```
 
-#### Discussion
+## Discussion
 
 This value must be in the range `[0, 1]`.
 

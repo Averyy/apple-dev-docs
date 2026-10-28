@@ -21,7 +21,7 @@ Calculates the single-precision hypotenuses of right triangles with legs that ar
 static func hypot<T, U, V>(_ x: T, _ y: U, result: inout V) where T : AccelerateBuffer, U : AccelerateBuffer, V : AccelerateMutableBuffer, T.Element == Float, U.Element == Float, V.Element == Float
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the square roots of the sum of the squares of corresponding elements of vectors `x` and `y`, using the following operation:
 

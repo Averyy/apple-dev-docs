@@ -17,7 +17,7 @@ Read operations aren’t allowed during a phone call.
 case readNotAllowedDuringCall
 ```
 
-#### Discussion
+## Discussion
 
 Your app needs to ask the user to end all calls before using Tap to Pay on iPhone.
 

@@ -23,7 +23,7 @@ optional func voiceChatService(_ voiceChatService: GKVoiceChatService, didNotSta
 - (void) voiceChatService:(GKVoiceChatService *) voiceChatService didNotStartWithParticipantID:(NSString *) participantID error:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 Your application can implement this method to notify the user that an error occurred when establishing a connection.
 

@@ -25,11 +25,11 @@ object AssetCredentialACME
 
 - [Validating a Managed Device Attestation](./validating-a-managed-device-attestation-attestation.md)
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.asset.credential.acme` as the declaration type.
 
-##### Asset example
+### Asset example
 
 ```json
 {

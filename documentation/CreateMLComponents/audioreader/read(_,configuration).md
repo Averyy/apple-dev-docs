@@ -26,7 +26,7 @@ static func read<S, Annotation>(_ annotatedFiles: S, configuration: AudioReader.
 static func read<S>(_ files: S, configuration: AudioReader.Configuration = .init()) throws -> [AudioReader.AsyncBuffers] where S : Sequence, S.Element == URL
 ```
 
-#### Return Value
+## Return Value
 
 An array of annotated async sequences.
 

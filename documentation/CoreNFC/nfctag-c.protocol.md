@@ -17,7 +17,7 @@ An interface for interacting with an NFC or RFID tag.
 @protocol NFCTag <NSObject, NSSecureCoding, NSCopying>
 ```
 
-#### Overview
+## Overview
 
 When an NFC reader session detects a tag, it returns an object that conforms to this protocol.
 

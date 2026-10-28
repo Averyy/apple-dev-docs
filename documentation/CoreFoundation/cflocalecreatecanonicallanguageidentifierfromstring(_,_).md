@@ -25,7 +25,7 @@ func CFLocaleCreateCanonicalLanguageIdentifierFromString(_ allocator: CFAllocato
 extern CFLocaleIdentifierCFLocaleCreateCanonicalLanguageIdentifierFromString(CFAllocatorRef allocator, CFStringRef localeIdentifier);
 ```
 
-#### Return Value
+## Return Value
 
 A string that represents the canonical language identifier for the specified arbitrary locale identifier. Returns `NULL` if there was a problem creating the object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

@@ -21,7 +21,7 @@ Creates a camera in the context of the map that frames the given coordinate regi
 func camera(framing region: MKCoordinateRegion) -> MapCamera
 ```
 
-#### Return Value
+## Return Value
 
 Returns a [`MapCamera`](../mapcamera.md) with the framing region you specified.
 

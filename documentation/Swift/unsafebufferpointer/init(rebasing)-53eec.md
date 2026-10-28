@@ -21,7 +21,7 @@ Creates a buffer over the same memory as the given buffer slice.
 init(rebasing slice: Slice<UnsafeMutableBufferPointer<Element>>)
 ```
 
-#### Discussion
+## Discussion
 
 The new buffer represents the same region of memory as `slice`, but is indexed starting at zero instead of sharing indices with the original buffer. For example:
 

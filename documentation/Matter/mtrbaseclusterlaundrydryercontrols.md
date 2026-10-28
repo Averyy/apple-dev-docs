@@ -25,7 +25,7 @@ class MTRBaseClusterLaundryDryerControls
 @interface MTRBaseClusterLaundryDryerControls : MTRGenericBaseCluster
 ```
 
-#### Overview
+## Overview
 
 This cluster provides a way to access options associated with the operation of a laundry dryer device type.
 

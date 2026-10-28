@@ -23,7 +23,7 @@ var externalPlaybackVideoGravity: AVLayerVideoGravity { get set }
 @property (nonatomic, copy) AVLayerVideoGravity externalPlaybackVideoGravity;
 ```
 
-#### Discussion
+## Discussion
 
 Valid values are [`resize`](../avlayervideogravity/resize.md), [`resizeAspectFill`](../avlayervideogravity/resizeaspectfill.md), or [`resizeAspect`](../avlayervideogravity/resizeaspect.md).
 

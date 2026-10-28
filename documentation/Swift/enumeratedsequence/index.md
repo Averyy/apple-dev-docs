@@ -24,7 +24,7 @@ struct Index
 
 Available when `Base` conforms to `Collection`.
 
-#### Overview
+## Overview
 
 Valid indices consist of the position of every element and a “past the end” position that’s not valid for use as a subscript argument.
 

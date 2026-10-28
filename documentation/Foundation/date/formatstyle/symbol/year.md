@@ -21,7 +21,7 @@ A type that specifies a format for the year in a date format style.
 struct Year
 ```
 
-#### Overview
+## Overview
 
 The [`Date.FormatStyle.Symbol.Year`](./year.md) type includes static factory variables and methods that create custom [`Date.FormatStyle.Symbol.Year`](./year.md) objects:
 

@@ -6,7 +6,7 @@
 
 A 16-bit unsigned integer indicating the oldest hint track version with which this hint track is backward-compatible.
 
-#### Overview
+## Overview
 
 If your application understands the hint track version specified by this field, it can work with this hint track.
 

@@ -17,13 +17,13 @@ Sum policy: `baseline + sum(activeSizes)`, optionally capped.
 struct WiredSumPolicy
 ```
 
-#### Overview
+## Overview
 
 This is the most common policy for inference workloads. Each ticket adds to the wired limit, making the total proportional to concurrent demand.
 
 If `cap` is nil, the policy clamps to `GPU.maxRecommendedWorkingSetBytes()` when available. If a cap is provided, both limit computation and admission respect it.
 
-##### Example
+### Example
 
 ```swift
 let policy = WiredSumPolicy(cap: 12 * 1024 * 1024 * 1024)

@@ -9,11 +9,11 @@
 virtual bool isEjectable() const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the media is ejectable, false otherwise.
 
-#### Overview
+## Overview
 
 Ask the media object whether it is ejectable.
 

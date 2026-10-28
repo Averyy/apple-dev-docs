@@ -25,7 +25,7 @@ optional func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor character
 - (void) peripheral:(CBPeripheral *) peripheral didUpdateValueForCharacteristic:(CBCharacteristic *) characteristic error:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 Core Bluetooth invokes this method when your app calls the [`readValue(for:)`](../cbperipheral/readvalue%28for%29-6u2kr.md) method. A peripheral also invokes this method to notify your app of a change to the value of the characteristic for which the app previously enabled notifications by calling [`setNotifyValue(_:for:)`](../cbperipheral/setnotifyvalue%28_,for%29.md). If successful, the `error` parameter is `nil`. If unsuccessful, the `error` parameter returns the cause of the failure.
 

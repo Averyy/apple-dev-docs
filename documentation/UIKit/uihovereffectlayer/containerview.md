@@ -19,7 +19,7 @@ weak var containerView: UIView? { get set }
 @property (nonatomic, weak, nullable) UIView * containerView;
 ```
 
-#### Discussion
+## Discussion
 
 The [`containerView`](./containerview.md) should be an ancestor of this layer (once it has been added to a layer hierarchy) to behave correctly, but does not need to be the immediate parent of this layer. If the [`containerView`](./containerview.md) is set to nil or is deallocated, some aspects of this layer’s hover effect may no longer work correctly.
 

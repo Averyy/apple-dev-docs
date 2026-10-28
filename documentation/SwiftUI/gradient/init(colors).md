@@ -21,7 +21,7 @@ Creates a gradient from an array of colors.
 init(colors: [Color])
 ```
 
-#### Discussion
+## Discussion
 
 The gradient synthesizes its location values to evenly space the colors along the gradient.
 

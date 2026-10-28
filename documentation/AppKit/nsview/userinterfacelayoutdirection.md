@@ -19,7 +19,7 @@ var userInterfaceLayoutDirection: NSUserInterfaceLayoutDirection { get set }
 @property NSUserInterfaceLayoutDirection userInterfaceLayoutDirection;
 ```
 
-#### Discussion
+## Discussion
 
 Different languages support different directions for laying out content. While many languages support left-to-right layout, some support right-to-left layout. This property contains the preferred layout direction employed by the view. It is the responsibility of the view to respect this value and lay out its content appropriately.
 

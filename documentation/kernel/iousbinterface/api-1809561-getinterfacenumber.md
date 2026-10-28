@@ -9,11 +9,11 @@
 virtual UInt8 GetInterfaceNumber();
 ```
 
-#### Return Value
+## Return Value
 
 the interface index
 
-#### Overview
+## Overview
 
 returns the zero based value identifying the index in the array of concurrent interfaces supported by the current configuration
 

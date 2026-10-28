@@ -25,7 +25,7 @@ func CFDictionaryGetValue(_ theDict: CFDictionary!, _ key: UnsafeRawPointer!) ->
 extern const void *CFDictionaryGetValue(CFDictionaryRef theDict, const void *key);
 ```
 
-#### Return Value
+## Return Value
 
 The value associated with `key` in `theDict`, or `NULL` if no key-value pair matching `key` exists. Since `NULL` is also a valid value in some dictionaries, use [`CFDictionaryGetValueIfPresent(_:_:_:)`](./cfdictionarygetvalueifpresent%28_,_,_%29.md) to distinguish between a value that is not found, and a `NULL` value. If the value is a Core Foundation object, ownership follows the [The Get Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
 

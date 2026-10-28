@@ -21,7 +21,7 @@ func dismissPanningInterface(animated: Bool)
 - (void) dismissPanningInterfaceAnimated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 When dismissing the panning interface, the system shows the previously hidden map buttons.
 

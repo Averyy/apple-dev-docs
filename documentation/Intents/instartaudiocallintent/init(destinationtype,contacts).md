@@ -23,11 +23,11 @@ init(destinationType: INCallDestinationType, contacts: [INPerson]?)
 - (instancetype) initWithDestinationType:(INCallDestinationType) destinationType contacts:(NSArray<INPerson *> *) contacts;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized intent or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 Normally, you don’t create instances of this class yourself. Instead, Siri creates instances when the user asks to place a call to another user. However, you can use this method during testing to create intent objects in order to validate your intent handling code paths.
 

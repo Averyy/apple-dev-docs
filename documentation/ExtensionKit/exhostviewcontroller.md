@@ -22,7 +22,7 @@ class EXHostViewController
 
 - [Including extension-based UI in your interface](./including-extension-based-ui-in-your-interface.md)
 
-#### Overview
+## Overview
 
 Present this view controller from your app’s interface to display the content for an associated app extension. Configure the view controller with the app extension identity and the specific scene you want to display. Use the associated delegate object to receive notifications when the app extension becomes active or inactive.
 

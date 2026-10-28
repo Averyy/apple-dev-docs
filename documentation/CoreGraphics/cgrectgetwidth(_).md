@@ -25,11 +25,11 @@ func CGRectGetWidth(_ rect: CGRect) -> CGFloat
 extern CGFloat CGRectGetWidth(CGRect rect);
 ```
 
-#### Return Value
+## Return Value
 
 The width of the specified rectangle.
 
-#### Discussion
+## Discussion
 
 Regardless of whether the width is stored in the [`CGRect`](../CoreFoundation/cgrect.md) data structure as a positive or negative number, this function returns the width as if the rectangle were standardized.  That is, the result is never a negative number.
 

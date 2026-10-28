@@ -5,7 +5,7 @@
 
 Capture from hardware buttons and AirPods, present an audio input picker, and connect a nearby iPhone as a camera.
 
-#### Overview
+## Overview
 
 AVKit connects your capture app to the system features that surround capture. For example, people expect a camera app to work with the device the way the Camera app does. The volume button takes the photo, a click on AirPods starts a recording, and the microphone someone chose is the one that records audio.
 

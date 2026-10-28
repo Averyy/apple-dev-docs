@@ -5,7 +5,7 @@
 
 Prevent unintentional loss of subscribers due to billing issues.
 
-#### Overview
+## Overview
 
 After acquiring new customers for your subscription service, you can minimize subscriber loss, known as churn, by keeping them engaged as active subscribers. However, irregular billing events can occur throughout the lifecycle of a subscription that can impact your customer’s subscription status.
 
@@ -13,7 +13,7 @@ Involuntary churn occurs when users do not intend to leave your service but thei
 
 Billing-related issues trigger a subscription to automatically enter a billing retry state, where the App Store attempts to recover the subscription. While the App Store tries to recover these customers, you have the option to prompt users to update their billing information or implement a grace period, or both, to assist in recovery efforts. Enabling a grace period and providing uninterrupted service provides a great customer experience, and avoids interrupting your days of paid service and revenue loss if Apple is able to recover the subscription within the grace period. For information on auto-renewable subscription proceeds and days of paid service, see [Net Revenue After a Year](https://developer.apple.com/app-store/subscriptions/#revenue-after-one-year).
 
-##### React to Billing Issues
+### React to Billing Issues
 
 If the customer’s billing is invalid, the renewal fails and the user’s subscription enters a billing retry state, where the App Store attempts to collect payment for up to 60 days. This billing retry lowers the rate of involuntary churn and prevents the need to re-acquire subscribers if they churned. If the user is recovered within the 60 days, the new billing date is established on the date of recovery and subsequent renewal dates are based on this new billing date, as shown in the figure below.
 
@@ -33,7 +33,7 @@ https://apps.apple.com/account/billing
 
 For more general guidance on handling subscriptions that enter a billing retry state, see [WWDC 2018 > Engineering Subscriptions](https://developer.apple.com/videos/play/wwdc2018/705/). You can also agree to provide a grace period for subscribers in a billing retry state. Billing error recoveries made within the set grace period automatically recover subscribers onto their current billing cycle, also providing revenue continuity.
 
-##### Enable Billing Grace Period
+### Enable Billing Grace Period
 
 To avoid interrupting days of paid service, you can enable Billing Grace Period in App Store Connect, which allows subscribers to retain full access to your app’s paid content while Apple attempts to collect payment. For guidance on opting in to enable Billing Grace Period for your app, see [Enable Billing Grace Period for Auto-Renewable Subscriptions](https://help.apple.com/app-store-connect/#/dev58bda3212).
 
@@ -58,7 +58,7 @@ Consider all scenarios for subscription recovery:
 - If the subscription renews after the time specified in `grace_period_expires_date_ms` while still in the billing retry state, the `grace_period_expires_date` fields are removed along with the `is_in_billing_retry_period` indicator. You can use the `expires_date_ms` value for a past transaction to determine the lapse period.
 - If attempts to renew the subscription fail, the `grace_period_expires_date` fields persist along with a value of `0` for the `auto_renew_status` and `is_in_billing_retry_period` indicators.
 
-##### Restore Service
+### Restore Service
 
 When users update their payment information, the App Store immediately attempts to renew the payment. Once the App Store successfully bills the customer in a billing retry state, the App Store notifies your server with notifications of types `RENEWAL` and `DID_RECOVER`, and a new receipt is generated for the successful transaction. A new value appears in the `expires_date_ms` field in the app transaction receipt, based on the date of recovery, to mark the next renewal date of the subscription.
 

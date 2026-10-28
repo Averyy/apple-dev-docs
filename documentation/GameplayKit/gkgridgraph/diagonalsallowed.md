@@ -24,7 +24,7 @@ var diagonalsAllowed: Bool { get }
 @property (nonatomic, readonly) BOOL diagonalsAllowed;
 ```
 
-#### Discussion
+## Discussion
 
 If this property’s value is [`true`](../../Swift/true.md), nodes in the grid are connected to their diagonal neighbors. If the value is [`false`](../../Swift/false.md), nodes are connected only to their horizontal and vertical neighbors.
 

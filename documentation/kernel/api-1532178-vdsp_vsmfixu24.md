@@ -15,7 +15,7 @@ Scales and converts single-precision floating-point values to unsigned 24-bit in
 void vDSP_vsmfixu24(const float vDSP_input1[], ptrdiff_t vDSP_stride1, const float vDSP_input2[], vDSP_uint24 *vDSP_input3, ptrdiff_t vDSP_stride2, size_t vDSP_size);
 ```
 
-#### Discussion
+## Discussion
 
 This function scales vector `A` by the scalar `*B` and converts each resulting value to an unsigned 24-bit integer, placing the results in `C`. After scaling, the function clamps values that are outside the range that unsigned 24-bit integers can represent to the largest or smallest representable values.
 

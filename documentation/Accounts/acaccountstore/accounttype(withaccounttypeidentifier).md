@@ -24,7 +24,7 @@ func accountType(withAccountTypeIdentifier typeIdentifier: String!) -> ACAccount
 - (ACAccountType *) accountTypeWithAccountTypeIdentifier:(NSString *) typeIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 An account type that matches `typeIdentifier`.
 

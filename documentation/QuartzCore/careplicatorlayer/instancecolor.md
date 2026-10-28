@@ -24,7 +24,7 @@ var instanceColor: CGColor? { get set }
 @property (nullable) CGColorRef instanceColor;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to opaque white.
 

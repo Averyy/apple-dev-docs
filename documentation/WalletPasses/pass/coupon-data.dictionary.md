@@ -21,7 +21,7 @@ object Pass.Coupon
 
 - [Creating a coupon pass](../creating-a-coupon-pass.md)
 
-#### Discussion
+## Discussion
 
 Use the coupon pass type for coupons, discounts, and other special offers.
 

@@ -21,7 +21,7 @@ The number of requested values.
 var max: Int? { get }
 ```
 
-#### Discussion
+## Discussion
 
 The value is `nil` if the demand is [`unlimited`](./unlimited.md).
 

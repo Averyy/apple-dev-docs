@@ -20,7 +20,7 @@ func unmarkText()
 - (void) unmarkText;
 ```
 
-#### Discussion
+## Discussion
 
 The receiver removes any marking from pending input text and disposes of the marked text as it wishes. The text view should accept the marked text as if it had been inserted normally. If there is no marked text, the invocation of this method has no effect.
 

@@ -15,7 +15,7 @@ A Boolean value that indicates whether the system bases the appearance of the st
 - **Name**: `UIViewControllerBasedStatusBarAppearance` (View controller-based status bar appearance)
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 If this key is `YES`, the system uses the current view controller’s preferred status bar style. If this key is `NO`, it uses the status bar style of the [`UIApplication`](../../UIKit/uiapplication.md) object. The default value is `YES`.
 

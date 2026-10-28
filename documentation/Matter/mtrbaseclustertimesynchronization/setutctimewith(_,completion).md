@@ -29,7 +29,7 @@ func setUTCTimeWith(_ params: MTRTimeSynchronizationClusterSetUTCTimeParams) asy
 - (void) setUTCTimeWithParams:(MTRTimeSynchronizationClusterSetUTCTimeParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This command is used to set the UTC time of the node.
 

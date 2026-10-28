@@ -22,7 +22,7 @@ class var secondarySystemBackground: UIColor { get }
 @property (class, nonatomic, readonly) UIColor * secondarySystemBackgroundColor;
 ```
 
-#### Discussion
+## Discussion
 
 Use this color for standard table views and designs that have a white primary background in a light environment.
 

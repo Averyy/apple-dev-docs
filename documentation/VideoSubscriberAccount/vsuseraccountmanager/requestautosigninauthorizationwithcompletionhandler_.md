@@ -17,7 +17,7 @@ Presents a modal sheet that offers a person to opt in to Automatic Sign-In.
 - (void) requestAutoSignInAuthorizationWithCompletionHandler:(void (^)(VSAutoSignInTokenUpdateContext *updateContext, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method after a successful sign in to your service. You might also call this method through custom UI that your app implements to offer Automatic Sign-In.
 

@@ -23,7 +23,7 @@ static let fileProvider: PKPushType
 extern PKPushType const PKPushTypeFileProvider;
 ```
 
-#### Discussion
+## Discussion
 
 Use file provider notifications to update your File Provider extension’s content from your server. For more information, see [Tracking Your File Provider’s Changes](../../FileProvider/tracking-your-file-provider-s-changes.md).
 

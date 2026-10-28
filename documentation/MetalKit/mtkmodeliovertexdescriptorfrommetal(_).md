@@ -24,11 +24,11 @@ func MTKModelIOVertexDescriptorFromMetal(_ metalDescriptor: MTLVertexDescriptor)
 extern MDLVertexDescriptor *MTKModelIOVertexDescriptorFromMetal(MTLVertexDescriptor *metalDescriptor);
 ```
 
-#### Return Value
+## Return Value
 
 A Model I/O vertex descriptor object.
 
-#### Discussion
+## Discussion
 
 This function is equivalent to the [`MTKModelIOVertexDescriptorFromMetalWithError`](./mtkmodeliovertexdescriptorfrommetalwitherror.md) function, but does not report errors.
 

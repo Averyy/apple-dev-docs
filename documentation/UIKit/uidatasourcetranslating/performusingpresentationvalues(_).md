@@ -24,7 +24,7 @@ func performUsingPresentationValues(_ actionsToTranslate: () -> Void)
 - (void) performUsingPresentationValues:(void (^)()) actionsToTranslate;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to perform actions on the current object, when the index paths for those actions are relative to the object’s presentation layer. For example, you might call this method to modify a table view or collection view that has uncommitted updates.
 

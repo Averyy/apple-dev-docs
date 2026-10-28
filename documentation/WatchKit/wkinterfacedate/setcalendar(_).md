@@ -19,7 +19,7 @@ func setCalendar(_ calendar: Calendar?)
 - (void) setCalendar:(NSCalendar *) calendar;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to configure the calendar to one that is different from the user’s current calendar. You might change the calendar to format dates differently based on your app’s needs. For example, a financial reporting app might use a calendar that breaks the year into fiscal quarters rather than months.
 

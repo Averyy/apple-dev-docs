@@ -15,11 +15,11 @@ Sets the zero time stamp of the clock device.
 kern_return_t SetZeroTimeStampPeriod(uint32_t in_zts_period);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 The parameter indicates the number of sample frames the host can expect between successive timestamps returned from [`GetCurrentZeroTimestamp`](./getcurrentzerotimestamp.md). In other words, if [`GetCurrentZeroTimestamp`](./getcurrentzerotimestamp.md) returns a sample time of `x`, the host can expect that the next valid timestamp it recieves will be `x + in_zero_timestamp_period`.
 

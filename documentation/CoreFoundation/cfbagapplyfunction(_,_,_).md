@@ -25,7 +25,7 @@ func CFBagApplyFunction(_ theBag: CFBag!, _ applier: ((UnsafeRawPointer?, Unsafe
 extern void CFBagApplyFunction(CFBagRef theBag, CFBagApplierFunction applier, void *context);
 ```
 
-#### Discussion
+## Discussion
 
 While this function iterates over a mutable collection, it is unsafe for the `applier` function to change the contents of the collection.
 

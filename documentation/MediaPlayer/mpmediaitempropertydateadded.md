@@ -25,7 +25,7 @@ let MPMediaItemPropertyDateAdded: String
 extern NSString * const MPMediaItemPropertyDateAdded;
 ```
 
-#### Discussion
+## Discussion
 
 Value is a [`NSDate`](../Foundation/nsdate.md) object.
 

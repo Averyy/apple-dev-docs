@@ -24,7 +24,7 @@ init(device: any MTLDevice, srcAlpha: MPSAlphaType, destAlpha: MPSAlphaType, bac
 - (instancetype) initWithDevice:(id<MTLDevice>) device srcAlpha:(MPSAlphaType) srcAlpha destAlpha:(MPSAlphaType) destAlpha backgroundColor:(CGFloat *) backgroundColor conversionInfo:(CGColorConversionInfoRef) conversionInfo;
 ```
 
-#### Return Value
+## Return Value
 
 An [`MPSImageConversion`](../mpsimageconversion.md) object.
 

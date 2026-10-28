@@ -22,7 +22,7 @@ func drawPage(at pageIndex: Int, in printableRect: CGRect)
 - (void) drawPageAtIndex:(NSInteger) pageIndex inRect:(CGRect) printableRect;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method calls, in sequence, [`drawHeaderForPage(at:in:)`](./drawheaderforpage%28at,in%29.md), [`drawContentForPage(at:in:)`](./drawcontentforpage%28at,in%29.md), [`drawPrintFormatter(_:forPageAt:)`](./drawprintformatter%28_,forpageat%29.md), and [`drawFooterForPage(at:in:)`](./drawfooterforpage%28at,in%29.md). Override this method to draw the specified page of content for the printer.
 

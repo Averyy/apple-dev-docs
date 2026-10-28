@@ -15,7 +15,7 @@ Configurations for scenes that you use to display template content on a CarPlay-
 - **Name**: `CPTemplateApplicationSceneSessionRoleApplication`
 - **Type**: array of dictionary 
 
-#### Discussion
+## Discussion
 
 Use this key to specify the scene configuration you use when displaying content on a CarPlay-enabled vehicle screen.
 

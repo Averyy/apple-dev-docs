@@ -20,11 +20,11 @@ init(send sendPort: Port?, receive replyPort: Port?, components: [Any]?)
 - (instancetype) initWithSendPort:(NSPort *) sendPort receivePort:(NSPort *) replyPort components:(NSArray *) components;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSPortMessage` object initialized to send `components` on `sendPort` and to receiver replies on `receivePort`.
 
-#### Discussion
+## Discussion
 
 An `NSPortMessage` object initialized with this method has a message identifier of 0.
 

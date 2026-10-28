@@ -20,7 +20,7 @@ optional func outlineView(_ outlineView: NSOutlineView, didRemove rowView: NSTab
 - (void) outlineView:(NSOutlineView *) outlineView didRemoveRowView:(NSTableRowView *) rowView forRow:(NSInteger) row;
 ```
 
-#### Discussion
+## Discussion
 
 The removed `rowView` may be reused by the table, so any additionally inserted views should be removed at this point.
 

@@ -20,7 +20,7 @@ A directive that configures an alternate language representation of a symbol.
 @AlternateRepresentation(_ reference: TopicReference)
 ```
 
-#### Overview
+## Overview
 
 An API that can be called from more than one source language has more than one language representation.
 
@@ -38,7 +38,7 @@ If you prefer, you can wrap the symbol link in a set of double backticks (``), o
 
 This provides a hint to the renderer as to the alternate language representations for the current symbol. The renderer may use this hint to provide a link to these alternate symbols. For example, Swift-DocC-Render shows a toggle between supported languages, where switching to a different language representation will redirect to the documentation for the configured alternate symbol.
 
-##### Special considerations
+### Special considerations
 
 Links containing a colon (`:`) must be wrapped in quotes:
 

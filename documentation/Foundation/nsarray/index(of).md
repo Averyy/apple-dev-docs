@@ -25,11 +25,11 @@ func index(of anObject: Any) -> Int
 - (NSUInteger) indexOfObject:(ObjectType) anObject;
 ```
 
-#### Return Value
+## Return Value
 
 The lowest index whose corresponding array value is equal to `anObject`. If none of the objects in the array is equal to `anObject`, returns `NSNotFound`.
 
-#### Discussion
+## Discussion
 
 Starting at index `0`, each element of the array is passed as an argument to an [`isEqual(_:)`](../../ObjectiveC/nsobjectprotocol/isequal%28_%29.md) message sent to `anObject` until a match is found or the end of the array is reached. Objects are considered equal if [`isEqual(_:)`](../../ObjectiveC/nsobjectprotocol/isequal%28_%29.md) (declared in the [`NSObjectProtocol`](../../ObjectiveC/nsobjectprotocol.md) protocol) returns [`true`](../../Swift/true.md).
 

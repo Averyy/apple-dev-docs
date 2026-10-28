@@ -13,7 +13,7 @@ virtual void detachFromChild(
  const IORegistryPlane *plane );
 ```
 
-#### Overview
+## Overview
 
 This method is called in the parent entry when a child detaches, to make overrides possible. It is a no-op if the entry is not a child of the parent. Detaching the entry will release both the child and parent. This method will call detachFromParent in the child entry if it is not being called from detachFromParent.
 

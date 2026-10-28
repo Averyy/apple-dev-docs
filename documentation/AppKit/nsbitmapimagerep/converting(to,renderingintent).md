@@ -19,7 +19,7 @@ func converting(to targetSpace: NSColorSpace, renderingIntent: NSColorRenderingI
 - (NSBitmapImageRep *) bitmapImageRepByConvertingToColorSpace:(NSColorSpace *) targetSpace renderingIntent:(NSColorRenderingIntent) renderingIntent;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSBitmapImageRep`](../nsbitmapimagerep.md), or `nil`, if the conversion fails. If the original [`NSBitmapImageRep`](../nsbitmapimagerep.md) already uses that color space, it is returned as is.
 

@@ -21,7 +21,7 @@ final var routeDisplayName: String { get }
 
 - [Routing and streaming media to remote devices](../routing-and-streaming-media-to-remote-devices.md)
 
-#### Discussion
+## Discussion
 
 Use this property to show the name of the destination device in your app’s user interface. The display name typically reflects a custom name for the device or a default name the system provides.
 

@@ -28,7 +28,7 @@ func requestAuthorization() async -> INFocusStatusAuthorizationStatus
 - (void) requestAuthorizationWithCompletionHandler:(void (^)(INFocusStatusAuthorizationStatus status)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method from your app to request authorization to access the user’s focus status. The first time you make this request, the system prompts the user to grant or deny permission.
 

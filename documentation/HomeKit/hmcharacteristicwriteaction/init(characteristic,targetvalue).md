@@ -22,7 +22,7 @@ init(characteristic: HMCharacteristic, targetValue: TargetValueType)
 - (instancetype) initWithCharacteristic:(HMCharacteristic *) characteristic targetValue:(TargetValueType) targetValue;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized characteristic write action object with the specified characteristic and target value.
 

@@ -20,11 +20,11 @@ func FFDeviceReleaseEffect(_ deviceReference: FFDeviceObjectReference!, _ effect
 extern HRESULT FFDeviceReleaseEffect(FFDeviceObjectReference deviceReference, FFEffectObjectReference effectReference);
 ```
 
-#### Return Value
+## Return Value
 
 If the method succeeds, the return value is FF_OK. If the method fails, the return value can be one of the following error values:
 
-#### Discussion
+## Discussion
 
 FFERR_INVALIDPARAM
 

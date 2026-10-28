@@ -25,11 +25,11 @@ func strings(byAppendingPaths paths: [String]) -> [String]
 - (NSArray<NSString *> *) stringsByAppendingPaths:(NSArray<NSString *> *) paths;
 ```
 
-#### Return Value
+## Return Value
 
 An array of string objects made by separately appending each string in `paths` to the receiver, preceded if necessary by a path separator.
 
-#### Discussion
+## Discussion
 
 Note that this method only works with file paths (not, for example, string representations of URLs). See [`appendingPathComponent(_:)`](./appendingpathcomponent%28_%29.md) for an individual example.
 

@@ -23,7 +23,7 @@ var granularity: NSTextSelection.Granularity { get }
 @property (readonly) NSTextSelectionGranularity granularity;
 ```
 
-#### Discussion
+## Discussion
 
 The default is [`NSTextSelection.Granularity.character`](./granularity-swift.enum/character.md). Selection extending operations modify the selection by `granularity`.
 

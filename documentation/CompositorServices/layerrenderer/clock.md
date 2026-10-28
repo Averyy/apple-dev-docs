@@ -16,7 +16,7 @@ A type that supports operations that require a precise time measurement.
 struct Clock
 ```
 
-#### Overview
+## Overview
 
 Use this type to perform time-related operations during the rendering of a frame. For example, call [`wait(until:tolerance:)`](./clock/wait%28until,tolerance%29.md) to pause your render loop until the optimal rendering time arrives.
 

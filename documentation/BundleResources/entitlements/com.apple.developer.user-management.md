@@ -20,7 +20,7 @@ The entitlement for distinguishing between multiple user accounts on Apple TV.
 - `runs-as-current-user`: The value that grants access to a separate set of data for your app for each user from GameCenter, iCloud, and local storage. Available in tvOS 14 or later. If you only want to run  as the current user on tvOS 16 or later, use `runs-as-current-user-with-user-independent-keychain` instead.
 - `runs-as-current-user-with-user-independent-keychain`: The value that grants access to a separate set of data for your app for the current user. Available in tvOS 16 or later.
 
-#### Discussion
+## Discussion
 
 To configure the entitlement, add the User Management capability on your app’s target in Xcode and select the checkbox for each privilege your app requires. For more details about adding a capability, see [Adding capabilities to your app](../../Xcode/adding-capabilities-to-your-app.md).
 

@@ -25,7 +25,7 @@ func resume()
 extern void dispatch_resume(dispatch_object_t object);
 ```
 
-#### Discussion
+## Discussion
 
 Calling this function decrements the suspension count of a suspended dispatch queue or dispatch event source object. While the count is greater than zero, the object remains suspended. When the suspension count returns to zero, any blocks submitted to the dispatch queue or any events observed by the dispatch source while suspended are delivered.
 

@@ -24,7 +24,7 @@ static let shouldRenderAtPlaybackTime: PHLivePhotoEditingOption
 extern PHLivePhotoEditingOption PHLivePhotoShouldRenderAtPlaybackTime;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an NSNumber object with a Boolean value. With the default value of `false`, Photos always renders your edits immediately when you call the [`init(livePhotoEditingInput:)`](../phlivephotoeditingcontext/init%28livephotoeditinginput%29.md) method, calling your [`frameProcessor`](../phlivephotoeditingcontext/frameprocessor.md) block for each frame in the Live Photo’s video and still photo content.
 

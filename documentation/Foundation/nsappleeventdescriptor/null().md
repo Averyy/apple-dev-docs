@@ -20,11 +20,11 @@ class func null() -> NSAppleEventDescriptor
 + (NSAppleEventDescriptor *) nullDescriptor;
 ```
 
-#### Return Value
+## Return Value
 
 A descriptor with no parameter or attribute values set, or `nil` if an error occurs.
 
-#### Discussion
+## Discussion
 
 You don’t typically call this method, as most `NSAppleEventDescriptor` instance methods can’t be safely called on the returned empty descriptor.
 

@@ -28,7 +28,7 @@ func endBackgroundTask(_ identifier: UIBackgroundTaskIdentifier)
 
 - [Extending your app’s background execution time](../extending-your-app-s-background-execution-time.md)
 
-#### Discussion
+## Discussion
 
 You must call this method to end a task that was started using the [`beginBackgroundTask(expirationHandler:)`](./beginbackgroundtask%28expirationhandler%29.md) method. If you do not, the system may terminate your app.
 

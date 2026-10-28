@@ -18,7 +18,7 @@ The seed used for the hashing function.
 let murmurSeed: UInt32
 ```
 
-#### Discussion
+## Discussion
 
 The prefilter uses the MurmurHash3 function.
 

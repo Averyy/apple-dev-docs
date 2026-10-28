@@ -15,7 +15,7 @@ The interval to use when polling the endpoint for data transfers.
 uint8_t bInterval;
 ```
 
-#### Discussion
+## Discussion
 
 Specify the value in frames or microframes, depending on the device’s speed.
 

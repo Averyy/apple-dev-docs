@@ -25,7 +25,7 @@ var shadowColor: Any { get set }
 @property (nonatomic, retain) id shadowColor;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is an [`NSColor`](../../AppKit/nscolor.md) or [`CGColor`](../../CoreGraphics/cgcolor.md) object. SceneKit blends the light’s color with other colors in the rendered image to produce a shadow effect. The color’s opacity (alpha value) determines the intensity of the shadows. The default shadow color is black with 50% opacity.
 

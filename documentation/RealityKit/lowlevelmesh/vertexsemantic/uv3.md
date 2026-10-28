@@ -20,7 +20,7 @@ The semantic for the fourth UV channel, also known as UV3.
 case uv3
 ```
 
-#### Discussion
+## Discussion
 
 A shader can access this generic data.
 

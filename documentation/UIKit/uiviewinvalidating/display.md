@@ -22,7 +22,7 @@ static var display: UIView.Invalidations.Display { get }
 
 Available when `Self` is `UIView.Invalidations.Display`.
 
-#### Discussion
+## Discussion
 
 Use this invalidation type to call [`setNeedsDisplay()`](../uiview/setneedsdisplay%28%29.md) when a change in property value should cause the system to redraw the containing view’s content.
 

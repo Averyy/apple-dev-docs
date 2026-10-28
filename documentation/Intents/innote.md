@@ -25,7 +25,7 @@ class INNote
 @interface INNote : NSObject
 ```
 
-#### Overview
+## Overview
 
 When SiriKit asks you to create a note, use an instance of this class to specify the contents of the note.
 

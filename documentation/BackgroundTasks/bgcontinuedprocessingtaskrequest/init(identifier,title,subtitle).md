@@ -21,7 +21,7 @@ init(identifier: String, title: String, subtitle: String)
 - (instancetype) initWithIdentifier:(NSString *) identifier title:(NSString *) title subtitle:(NSString *) subtitle;
 ```
 
-#### Discussion
+## Discussion
 
 Apps and their extensions need to use this method to initialize any tasks due to the underlying association to the currently foregrounded app. Note that [`earliestBeginDate`](../bgtaskrequest/earliestbegindate.md) is ignored by the scheduler in favor of `NSDate.now`.
 

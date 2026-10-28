@@ -15,7 +15,7 @@ Get the count of accessory anchors in the collection.
 extern size_t ar_accessory_anchors_get_count(ar_accessory_anchors_t accessory_anchors);
 ```
 
-#### Return Value
+## Return Value
 
 The number of accessory anchors in the collection.
 

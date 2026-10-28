@@ -23,7 +23,7 @@ static var matchBidirectionally: WKWebExtension.MatchPattern.Options { get }
 WKWebExtensionMatchPatternOptionsMatchBidirectionally
 ```
 
-#### Discussion
+## Discussion
 
 For example, A matches B, or B matches A. Invalid for matching URLs.
 

@@ -30,7 +30,7 @@ func updateTimeZone(_ timeZone: TimeZone?) async throws
 - (void) updateTimeZone:(NSTimeZone *) timeZone completionHandler:(void (^)(NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 See [`timeZone`](./timezone.md) for a description of how the time zone is interpreted.
 

@@ -21,11 +21,11 @@ Increments the retain count of a Core Graphics PDF document.
 extern CGPDFDocumentRefCGPDFDocumentRetain(CGPDFDocumentRef document);
 ```
 
-#### Return Value
+## Return Value
 
 The same document you passed in as the `document` parameter.
 
-#### Discussion
+## Discussion
 
 This function is equivalent to [`CFRetain`](../CoreFoundation/cfretain.md), except that it does not cause an error if the `document` parameter is `NULL`.
 

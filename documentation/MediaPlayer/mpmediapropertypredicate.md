@@ -22,7 +22,7 @@ class MPMediaPropertyPredicate
 @interface MPMediaPropertyPredicate : MPMediaPredicate
 ```
 
-#### Overview
+## Overview
 
 Use one or more `MPMediaPropertyPredicate` objects to define the filter in a media query to retrieve a subset of media items from the Music library. A predicate in this context is a statement of a logical condition that you want to test each media item against. The query retrieves the items that satisfy that condition.
 

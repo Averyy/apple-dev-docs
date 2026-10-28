@@ -20,7 +20,7 @@ A Boolean value that indicates whether an app can be the default calling app on 
 
 **Default**: `NO`
 
-#### Discussion
+## Discussion
 
 Add the Default Calling App entitlement to your app by following these steps:
 

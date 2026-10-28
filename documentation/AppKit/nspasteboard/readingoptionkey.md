@@ -19,7 +19,7 @@ struct ReadingOptionKey
 typedef NSString * NSPasteboardReadingOptionKey;
 ```
 
-#### Discussion
+## Discussion
 
 These options can be used for both the [`readObjects(forClasses:options:)`](./readobjects%28forclasses,options%29.md) and [`canReadObject(forClasses:options:)`](./canreadobject%28forclasses,options%29.md) methods, unless otherwise specified.  The currently available options allow for customization of how URLS are read from the pasteboard.
 

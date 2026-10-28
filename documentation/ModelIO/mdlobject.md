@@ -24,11 +24,11 @@ class MDLObject
 @interface MDLObject : NSObject
 ```
 
-#### Overview
+## Overview
 
 When you load content from an asset file using the [`MDLAsset`](./mdlasset.md) class, Model I/O creates instances of the [`MDLObject`](./mdlobject.md) subclasses [`MDLMesh`](./mdlmesh.md), [`MDLCamera`](./mdlcamera.md), and [`MDLLight`](./mdllight.md). For asset formats that describe a collection of meshes, cameras, and lights organized in a hierarchy of spatial transforms, Model I/O also creates instances of the [`MDLObject`](./mdlobject.md) class itself to describe the transform nodes that organize the asset’s visual content. Similarly, you use the [`MDLObject`](./mdlobject.md) class and its subclasses when creating an object graph to be exported as an asset file using  the [`MDLAsset`](./mdlasset.md) class.
 
-##### Extending Model I/O with Components
+### Extending Model I/O with Components
 
 Model I/O allows you to customize the content and relationships in an object graph with *components*. For each aspect of an object’s functionality, you use a component protocol (extending the [`MDLComponent`](./mdlcomponent.md) protocol) to define functionality and a class adopting that protocol to implement it. Then, you can use the [`componentConforming(to:)`](./mdlobject/componentconforming%28to%29.md) and [`setComponent(_:for:)`](./mdlobject/setcomponent%28_,for%29.md) methods to associate those objects with any instance of the [`MDLObject`](./mdlobject.md) class or of one of its subclasses. For example, you might define a protocol to add gameplay-related information such as scripting triggers to certain meshes, lights, or cameras in a scene.
 

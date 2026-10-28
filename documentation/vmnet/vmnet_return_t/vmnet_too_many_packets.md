@@ -18,7 +18,7 @@ case VMNET_TOO_MANY_PACKETS
 VMNET_TOO_MANY_PACKETS
 ```
 
-#### Discussion
+## Discussion
 
 Indicates failure due to the number of packets exceeding the system limit.
 

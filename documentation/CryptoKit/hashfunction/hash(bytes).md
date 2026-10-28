@@ -22,7 +22,7 @@ Computes a digest of a span of bytes.
 static func hash(bytes: RawSpan) -> Self.Digest
 ```
 
-#### Return Value
+## Return Value
 
 The computed digest.
 

@@ -21,11 +21,11 @@ Creates and returns an empty array.
 + (instancetype) array;
 ```
 
-#### Return Value
+## Return Value
 
 An empty array.
 
-#### Discussion
+## Discussion
 
 This method is used by mutable subclasses of `NSArray`.
 

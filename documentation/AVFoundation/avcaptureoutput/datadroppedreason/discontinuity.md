@@ -24,7 +24,7 @@ case discontinuity
 AVCaptureOutputDataDroppedReasonDiscontinuity
 ```
 
-#### Discussion
+## Discussion
 
 A discontinuity is a situation where the capture system can’t ensure that minimal time passes between the capture of data buffers. This kind of situation can arise when the system as a whole is too busy to handle the data.
 

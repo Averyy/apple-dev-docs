@@ -21,7 +21,7 @@ Returns a new object that presents an empty composition track segment.
 + (instancetype) compositionTrackSegmentWithTimeRange:(CMTimeRange) timeRange;
 ```
 
-#### Return Value
+## Return Value
 
 A new composition track segment.
 

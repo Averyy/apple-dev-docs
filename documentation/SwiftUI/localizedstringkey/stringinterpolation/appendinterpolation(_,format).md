@@ -35,7 +35,7 @@ mutating func appendInterpolation<V, F>(_ source: TimeDataSource<V>, format: F) 
 mutating func appendInterpolation<V, F>(_ source: TimeDataSource<V>, format: F) where V == F.FormatInput, F : DiscreteFormatStyle, F.FormatOutput == String
 ```
 
-#### Discussion
+## Discussion
 
 Don’t call this method directly; it’s used by the compiler when interpreting string interpolations.
 

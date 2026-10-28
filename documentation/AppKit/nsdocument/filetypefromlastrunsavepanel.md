@@ -20,7 +20,7 @@ var fileTypeFromLastRunSavePanel: String? { get }
 @property (copy, readonly, nullable) NSString * fileTypeFromLastRunSavePanel;
 ```
 
-#### Discussion
+## Discussion
 
 This type is primarily used by the [`save(_:)`](./save%28_%29.md), [`saveAs(_:)`](./saveas%28_%29.md), and [`saveTo(_:)`](./saveto%28_%29.md) methods to determine the type the user chose after the Save panel has been run. The string corresponds to the name of the document type as it is specified in the app’s `Info.plist` file.
 

@@ -25,7 +25,7 @@ convenience init(contentsOf url: URL) throws
 + (instancetype) modelWithContentsOfURL:(NSURL *) url error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 In most cases, your app won’t need to create a model object directly. Consider the programmer-friendly wrapper class that Xcode automatically generates when you add a model to your project (see [Integrating a Core ML Model into Your App](../integrating-a-core-ml-model-into-your-app.md)).
 

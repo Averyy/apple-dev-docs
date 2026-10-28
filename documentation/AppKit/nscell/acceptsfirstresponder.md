@@ -19,7 +19,7 @@ var acceptsFirstResponder: Bool { get }
 @property (readonly) BOOL acceptsFirstResponder;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the cell is able to become the first responder. The default value of this property is [`true`](../../Swift/true.md) when the cell is enabled. Subclasses may override this method to return a different value.
 

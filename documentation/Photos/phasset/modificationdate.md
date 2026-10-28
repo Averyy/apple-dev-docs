@@ -24,7 +24,7 @@ var modificationDate: Date? { get }
 @property (nonatomic, strong, readonly, nullable) NSDate * modificationDate;
 ```
 
-#### Discussion
+## Discussion
 
 Photos updates the modification date when an asset’s image or video content or metadata changes.
 

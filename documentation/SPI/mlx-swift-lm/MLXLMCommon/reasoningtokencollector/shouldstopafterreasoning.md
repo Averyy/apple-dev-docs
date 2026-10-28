@@ -17,7 +17,7 @@ Whether a reasoning span has closed — the Phase 1 → Phase 2 boundary.
 var shouldStopAfterReasoning: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 Latches on the FIRST close (a later stray `<think>` re-opens the emitter, but the caller has already stopped). Crucially this detects an empty `<think></think>` that opens and closes within a single decoded chunk, which sampling [`isInsideReasoning`](./isinsidereasoning.md) after `ingest` cannot.
 

@@ -18,7 +18,7 @@ The precision of landmark detection.
 var featureSensitivity: PhotogrammetrySession.Configuration.FeatureSensitivity
 ```
 
-#### Discussion
+## Discussion
 
 The photogrammetry process relies on finding identifiable landmarks in the overlap between images. Landmarks can be hard to identify if the images don’t have enough contrast, aren’t in focus, or if the object is all one color and lacks surface detail.
 

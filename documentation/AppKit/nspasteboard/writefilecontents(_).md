@@ -19,11 +19,11 @@ func writeFileContents(_ filename: String) -> Bool
 - (BOOL) writeFileContents:(NSString *) filename;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the data was successfully written, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Writes the contents of the file `filename` to the receiver and declares the data to be of type `NSFileContentsPboardType` and also of a type appropriate for the file’s extension (as returned by the `NSCreateFileContentsPboardType` function when passed the files extension), if it has one.
 

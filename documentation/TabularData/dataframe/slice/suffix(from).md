@@ -21,7 +21,7 @@ Returns a new slice that contains the final elements of the original slice begin
 func suffix(from position: Int) -> DataFrame.Slice
 ```
 
-#### Return Value
+## Return Value
 
 A new slice of the underlying data frame.
 

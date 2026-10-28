@@ -19,7 +19,7 @@ struct GenericMedia
 
 - [Presenting the suggestions picker and processing a selection](../presenting-the-suggestions-picker-and-processing-a-selection.md)
 
-#### Overview
+## Overview
 
 The system provides an instance of this structure to your app when a person chooses a media suggestion in the [`JournalingSuggestionsPicker`](../journalingsuggestionspicker.md). To exclude the Now Playing item from content suggestions, refer to [mpnowplayinginfopropertyexcludefromsuggestions](../../MediaPlayer/mpnowplayinginfopropertyexcludefromsuggestions.md).
 

@@ -24,11 +24,11 @@ mutating func remove(_ member: Element) -> Element?
 
 Available when `Element` conforms to `Hashable`.
 
-#### Return Value
+## Return Value
 
 The value of the `member` parameter if it was a member of the set; otherwise, `nil`.
 
-#### Discussion
+## Discussion
 
 This example removes the element `"sugar"` from a set of ingredients.
 

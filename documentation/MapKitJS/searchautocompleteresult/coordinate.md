@@ -15,7 +15,7 @@ The coordinate of the result when it corresponds to a single place.
 coordinate: Coordinate | null;
 ```
 
-#### Discussion
+## Discussion
 
 The coordinate may not be available for all results, and can return `null`. The coordinate is an approximate location.
 

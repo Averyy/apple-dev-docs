@@ -23,7 +23,7 @@ var musicalInstrumentCategory: String? { get set }
 @property (copy, nullable) NSString * musicalInstrumentCategory;
 ```
 
-#### Discussion
+## Discussion
 
 A file should specify an associated instrument (note that you can use “Other Instrument” to specify an unknown instrument). In some categories, you can use instrument names to provide a more detailed instrument definition. For example, the Keyboards category lets you include instrument names such as Piano or Organ.
 

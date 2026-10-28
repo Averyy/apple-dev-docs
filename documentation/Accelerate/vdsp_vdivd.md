@@ -21,7 +21,7 @@ Calculates the double-precision element-wise division of two vectors, using the 
 extern void vDSP_vdivD(const double *__B, vDSP_Stride __IB, const double *__A, vDSP_Stride __IA, double *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the division of the first `N` elements of input vectors `A` and `B`, and writes the result to output vector `C`, as follows:
 

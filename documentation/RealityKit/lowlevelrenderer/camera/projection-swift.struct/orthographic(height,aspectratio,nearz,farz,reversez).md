@@ -18,7 +18,7 @@ Creates a symmetric orthographic projection.
 static func orthographic(height: Float, aspectRatio: Float, nearZ: Float, farZ: Float, reverseZ: Bool = true) -> LowLevelRenderer.Camera.Projection
 ```
 
-#### Return Value
+## Return Value
 
 A symmetric orthographic [`LowLevelRenderer.Camera.Projection`](../projection-swift.struct.md).
 

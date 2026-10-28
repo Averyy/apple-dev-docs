@@ -17,7 +17,7 @@ The resistance to bending between adjacent triangles.
 var bendStiffness: Float { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The valid range is [0.0, 1.0], both included. Values outside the valid range are clamped. The default value is `0.0`.
 

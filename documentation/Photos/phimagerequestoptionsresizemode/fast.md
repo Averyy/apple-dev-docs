@@ -24,7 +24,7 @@ case fast
 PHImageRequestOptionsResizeModeFast
 ```
 
-#### Discussion
+## Discussion
 
 With this option, Photos can use image subsampling to quickly provide an image at a size roughly matching the target size.
 

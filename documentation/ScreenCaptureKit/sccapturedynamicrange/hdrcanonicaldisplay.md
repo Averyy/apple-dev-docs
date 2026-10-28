@@ -22,7 +22,7 @@ case hdrCanonicalDisplay
 SCCaptureDynamicRangeHDRCanonicalDisplay
 ```
 
-#### Discussion
+## Discussion
 
 Canonical display capture uses the attributes of the canonical display optimizing rendering for presentation on any high dynamic range display.
 

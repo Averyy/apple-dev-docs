@@ -19,11 +19,11 @@ func AECallObjectAccessor(_ desiredClass: DescType, _ containerToken: UnsafePoin
 OSErr AECallObjectAccessor(DescType desiredClass, const AEDesc *containerToken, DescType containerClass, DescType keyForm, const AEDesc *keyData, AEDesc *token);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145). `AECallObjectAccessor` returns any result codes returned by the object accessor function it calls.
 
-#### Discussion
+## Discussion
 
 If you want your application to do some of the Apple event object resolution normally performed by the [`AEResolve(_:_:_:)`](./api-1449720-aeresolve.md) function, you can use `AECallObjectAccessor` to invoke an object accessor function. This might be useful, for example, if you have installed an object accessor function using `typeWildCard` for the `AEInstallObjectAccessor` function’s `desiredClass` parameter and `typeAEList` for the `containerType` parameter. To return a list of tokens for a request like “line one of every window” the object accessor function can create an empty list, then call `AECallObjectAccessor` for each requested element, adding tokens for each element to the list one at a time.
 
@@ -31,7 +31,7 @@ The parameters of `AECallObjectAccessor` are identical to the parameters of an o
 
 You can also call a specific object accessor function directly through its universal procedure pointer with one of the invoke functions described in [Creating, Calling, and Deleting Universal Procedure Pointers](../applicationservices/apple_event_manager.md#1651592). 
 
-##### Version-Notes
+### Version-Notes
 
 In macOS, your application can not make an object callback function available to other applications by installing it in a system object accessor dispatch table.
 

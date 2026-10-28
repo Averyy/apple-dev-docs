@@ -19,7 +19,7 @@ string UserGroupStatus
 
 - `ACTIVE`
 
-#### Discussion
+## Discussion
 
 - Possible Values
 

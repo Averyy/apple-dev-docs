@@ -17,7 +17,7 @@ Warns your app of an ongoing activity’s conclusion a specified time before the
 func intervalWillEndWarning(for activity: DeviceActivityName)
 ```
 
-#### Discussion
+## Discussion
 
 When an activity is about to end, `intervalWillEndWarning` warns your app extension of the concluding activity.
 

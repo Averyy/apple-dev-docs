@@ -25,7 +25,7 @@ func CTFontGetXHeight(_ font: CTFont) -> CGFloat
 extern CGFloat CTFontGetXHeight(CTFontRef font);
 ```
 
-#### Return Value
+## Return Value
 
 The font x-height metric scaled according to the point size and matrix of the font reference.
 

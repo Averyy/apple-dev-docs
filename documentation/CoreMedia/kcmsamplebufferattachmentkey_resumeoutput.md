@@ -25,7 +25,7 @@ let kCMSampleBufferAttachmentKey_ResumeOutput: CFString
 extern CFStringRef const kCMSampleBufferAttachmentKey_ResumeOutput;
 ```
 
-#### Discussion
+## Discussion
 
 This attachment is used at run time to request that a decode pipeline resume producing output after a discontinuity announced using the [`kCMSampleBufferConduitNotification_InhibitOutputUntil`](./kcmsamplebufferconduitnotification_inhibitoutputuntil.md) notification.
 

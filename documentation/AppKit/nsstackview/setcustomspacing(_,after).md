@@ -19,7 +19,7 @@ func setCustomSpacing(_ spacing: CGFloat, after view: NSView)
 - (void) setCustomSpacing:(CGFloat) spacing afterView:(NSView *) view;
 ```
 
-#### Discussion
+## Discussion
 
 For a horizontal stack view, this method sets custom spacing between a specified view and the view to its right when the user interface direction is left to right. (See the inherited [`userInterfaceLayoutDirection`](../nsview/userinterfacelayoutdirection.md) property for information on layout direction.) For a vertical stack view, this method sets custom spacing below a specified view.
 

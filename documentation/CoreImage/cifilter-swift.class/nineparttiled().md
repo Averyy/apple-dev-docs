@@ -24,11 +24,11 @@ class func ninePartTiled() -> any CIFilter & CINinePartTiled
 + (CIFilter<CINinePartTiled> *) ninePartTiledFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The distorted image.
 
-#### Discussion
+## Discussion
 
 This method applies the nine-part tiled filter to an image. This effect distorts an image by tiling an image based on the breakpoints properties.
 

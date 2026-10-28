@@ -25,7 +25,7 @@ func SparseRefactor(_ Matrix: SparseMatrix_Double, _ Factorization: UnsafeMutabl
 static void SparseRefactor(SparseMatrix_Double Matrix, SparseOpaqueFactorization_Double *Factorization);
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to calculate the factorization of a sparse matrix to pass to the direct solve functions using an existing factorization’s storage. The specified matrix must have the same sparsity structure as the matrix of the original factorization.
 

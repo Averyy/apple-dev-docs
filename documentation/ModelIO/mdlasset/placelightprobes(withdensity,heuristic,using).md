@@ -24,11 +24,11 @@ class func placeLightProbes(withDensity value: Float, heuristic type: MDLProbePl
 + (NSArray<MDLLightProbe *> *) placeLightProbesWithDensity:(float) value heuristic:(MDLProbePlacement) type usingIrradianceDataSource:(id<MDLLightProbeIrradianceDataSource>) dataSource;
 ```
 
-#### Return Value
+## Return Value
 
 An array of light probe objects for use in the scene.
 
-#### Discussion
+## Discussion
 
 When you call this method, you must pass a custom object implementing the [`MDLLightProbeIrradianceDataSource`](../mdllightprobeirradiancedatasource.md) protocol. Model I/O queries this object to determine how to place light probes.
 

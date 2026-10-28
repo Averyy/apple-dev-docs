@@ -25,7 +25,7 @@ class let genericRGBLinear: CFString
 extern CFStringRef const kCGColorSpaceGenericRGBLinear;
 ```
 
-#### Discussion
+## Discussion
 
 This color space has the same colorimetry as [`kCGColorSpaceGenericRGB`](../kcgcolorspacegenericrgb.md), but with a linear transfer function.
 

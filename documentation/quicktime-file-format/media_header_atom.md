@@ -6,7 +6,7 @@
 
 An atom that specifies the characteristics of a media, including time scale and duration.
 
-#### Overview
+## Overview
 
 The media header atom specifies the characteristics of a media, including time scale and duration. The media header atom has an atom type of `'mdhd'`.
 

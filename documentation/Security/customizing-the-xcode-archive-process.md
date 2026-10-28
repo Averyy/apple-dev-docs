@@ -5,7 +5,7 @@
 
 Archive, export, and notarize your app in one step using Xcode post-action build scripts.
 
-#### Overview
+## Overview
 
 Before distributing your software, you must create an archive containing your executables. From that archive, you must perform additional steps to create a distributable version of your software and to notarize your executables. To simplify the workflow, you can incorporate the distribution and notarization steps into the archive process using post-action scripts.
 

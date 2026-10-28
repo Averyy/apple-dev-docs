@@ -18,7 +18,7 @@ Adds the receiver to the list of ports monitored by a given run loop for the giv
 - (void) addConnection:(NSConnection *) conn toRunLoop:(NSRunLoop *) runLoop forMode:(NSRunLoopMode) mode;
 ```
 
-#### Discussion
+## Discussion
 
 You should not call this method directly. The method is provided for subclassers who wish to provide their own custom types of `NSPort`. The `NSConnection` object, `conn`, calls this method at the appropriate times.
 

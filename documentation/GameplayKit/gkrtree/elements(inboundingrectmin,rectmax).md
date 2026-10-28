@@ -24,7 +24,7 @@ func elements(inBoundingRectMin rectMin: vector_float2, rectMax: vector_float2) 
 - (NSArray<NSObject *> *) elementsInBoundingRectMin:(vector_float2) rectMin rectMax:(vector_float2) rectMax;
 ```
 
-#### Return Value
+## Return Value
 
 An array of objects stored in the tree whose bounding regions overlap the specified region. The array is empty if no such objects are found.
 

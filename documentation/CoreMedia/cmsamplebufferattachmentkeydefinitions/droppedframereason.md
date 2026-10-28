@@ -21,7 +21,7 @@ Indicates the reason the current video frame was dropped.
 static let droppedFrameReason: CVAttachmentKeyDefinition<CMSampleBufferAttachmentKeyDefinitions.ShouldPropagate, CMDroppedFrameReason>
 ```
 
-#### Discussion
+## Discussion
 
 Sample buffers with this attachment contain no image or data buffer. They mark a dropped video frame. This attachment identifies the reason the frame was dropped.
 

@@ -14,7 +14,7 @@ A pass-through node used for visually routing edges in the graph.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Dot (float)**:
 
@@ -181,7 +181,7 @@ A pass-through node used for visually routing edges in the graph.
 | --- | --- |
 | `Out` | Half |
 
-#### Dicussion
+## Dicussion
 
 The Dot node is only visual; it has no effect on its input or output. Use the Dot node to make a graph more readable and visually appealing.
 

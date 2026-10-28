@@ -11,11 +11,11 @@ Returns the total number of bytes the OSData can store without reallocating.
 virtual unsigned int getCapacity() const;
 ```
 
-#### Return Value
+## Return Value
 
 The total number bytes the OSData can store without reallocating.
 
-#### Overview
+## Overview
 
 OSData objects grow when full to accommodate additional bytes. See getCapacityIncrement and ensureCapacity.
 

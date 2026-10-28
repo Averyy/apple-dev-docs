@@ -17,7 +17,7 @@ Stream transformed details after appending structured messages.
 func observe<T>(to messages: consuming [Chat.Message], using transformer: T) -> AsyncThrowingStream<T.Handler.Output, Error> where T : GenerationTransformer
 ```
 
-#### Discussion
+## Discussion
 
 The transformer applies only to this request. The session retains its transcript and KV cache, including across automatic tool restarts.
 

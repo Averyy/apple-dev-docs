@@ -21,7 +21,7 @@ Creates a new collection by concatenating the elements of two collections.
 static func + <Other>(lhs: Self, rhs: Other) -> Self where Other : RangeReplaceableCollection, Self.Element == Other.Element
 ```
 
-#### Discussion
+## Discussion
 
 The two arguments must have the same `Element` type. For example, you can concatenate the elements of two integer arrays.
 

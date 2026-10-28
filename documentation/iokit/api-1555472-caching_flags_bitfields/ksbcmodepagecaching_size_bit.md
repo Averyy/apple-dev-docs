@@ -14,7 +14,7 @@
 kSBCModePageCaching_SIZE_Bit = 3
 ```
 
-#### Discussion
+## Discussion
 
 SIZE Bit definition.
 

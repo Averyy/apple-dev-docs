@@ -25,11 +25,11 @@ func canModifyManagedObjects(in store: NSPersistentStore) -> Bool
 - (BOOL) canModifyManagedObjectsInStore:(NSPersistentStore *) store;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the user can modify records in the persistent store’s CloudKit database; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Use this method to determine whether the user is able to write any records to the CloudKit database. To find out if the user can modify a specific object, use the [`canUpdateRecord(forManagedObjectWith:)`](./canupdaterecord%28formanagedobjectwith%29.md) and [`canDeleteRecord(forManagedObjectWith:)`](./candeleterecord%28formanagedobjectwith%29.md) methods instead.
 

@@ -23,9 +23,9 @@ class func getRNGseed() -> NSNumber?
 + (NSNumber *) getRNGseed;
 ```
 
-#### Return Value
+## Return Value
 
-#### Discussion
+## Discussion
 
 The default value is `nil.`
 

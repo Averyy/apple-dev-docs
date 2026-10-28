@@ -24,11 +24,11 @@ convenience init(occurrenceCount: Int)
 + (instancetype) recurrenceEndWithOccurrenceCount:(NSUInteger) occurrenceCount;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized recurrence end.
 
-#### Discussion
+## Discussion
 
 The maximum occurrence count argument must be a positive integer and not `0`; otherwise an exception will be raised.
 

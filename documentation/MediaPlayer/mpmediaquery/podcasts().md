@@ -22,11 +22,11 @@ class func podcasts() -> MPMediaQuery
 + (MPMediaQuery *) podcastsQuery;
 ```
 
-#### Return Value
+## Return Value
 
 A media query that matches media items of type [`podcast`](../mpmediatype/podcast.md) and that has a grouping type of [`MPMediaGrouping.podcastTitle`](../mpmediagrouping/podcasttitle.md). This query only returns podcasts downloaded to the user’s library.
 
-#### Discussion
+## Discussion
 
 A media item can have more than one media type; for example, an item could be of types “music” and “podcast.” A [`podcasts()`](./podcasts%28%29.md) query matches all [`podcast`](../mpmediatype/podcast.md) items, whether or not they’re also of other media types.
 

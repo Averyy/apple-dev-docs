@@ -19,7 +19,7 @@ var networkDevices: [VZNetworkDeviceConfiguration] { get set }
 @property (copy, readwrite) NSArray<VZNetworkDeviceConfiguration *> * networkDevices;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is an empty array. If your VM supports one or more network devices, assign an array of supported network configurations to this property.
 

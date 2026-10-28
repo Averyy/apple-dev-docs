@@ -16,7 +16,7 @@ The path to the directory containing data shared between all playgrounds in Xcod
 let playgroundSharedDataDirectory: URL
 ```
 
-#### Discussion
+## Discussion
 
 Use this directory to store data that must be persisted between playground runs or shared between multiple playgrounds.
 

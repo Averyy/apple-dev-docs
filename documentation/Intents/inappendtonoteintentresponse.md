@@ -25,7 +25,7 @@ class INAppendToNoteIntentResponse
 @interface INAppendToNoteIntentResponse : INIntentResponse
 ```
 
-#### Overview
+## Overview
 
 Use an [`INAppendToNoteIntentResponse`](./inappendtonoteintentresponse.md) object to return information about the updated note. Siri communicates the information from the response to the user at appropriate times. Be sure to include the details of the note in the [`note`](./inappendtonoteintentresponse/note.md) property.
 

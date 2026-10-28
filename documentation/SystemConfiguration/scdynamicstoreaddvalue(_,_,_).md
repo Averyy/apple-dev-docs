@@ -19,7 +19,7 @@ func SCDynamicStoreAddValue(_ store: SCDynamicStore?, _ key: CFString, _ value: 
 Boolean SCDynamicStoreAddValue(SCDynamicStoreRef store, CFStringRef key, CFPropertyListRef value);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the key was added; `FALSE` if the key was already present in the dynamic store or if an error occurred.
 

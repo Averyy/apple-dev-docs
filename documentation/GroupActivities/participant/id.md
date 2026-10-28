@@ -20,7 +20,7 @@ A globally unique identifier for the session participant.
 let id: UUID
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to differentiate among the devices active in a session.
 

@@ -23,7 +23,7 @@ var activationKey: String? { get set }
 @property (nonatomic, copy, nullable) NSString * activationKey;
 ```
 
-#### Discussion
+## Discussion
 
 This property can be customized within the app to avoid conflicts with existing shortcuts or to enable user personalization.
 

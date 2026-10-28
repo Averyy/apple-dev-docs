@@ -23,7 +23,7 @@ class AVCaptureBroadcastVideoOutput
 @interface AVCaptureBroadcastVideoOutput : AVCaptureOutput
 ```
 
-#### Overview
+## Overview
 
 Not all [`AVCaptureDevice.Format`](./avcapturedevice/format.md) instances support [`AVCaptureBroadcastVideoOutput`](./avcapturebroadcastvideooutput.md). Before adding this output to a session, check the device format’s `AVCaptureDeviceFormat.unsupportedCaptureOutputClasses` property to verify that [`AVCaptureBroadcastVideoOutput`](./avcapturebroadcastvideooutput.md) is not listed. If the current format does not support broadcast video output, the connection will be marked inactive and no samples will be delivered.
 

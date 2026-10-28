@@ -23,7 +23,7 @@ func reload() -> WKNavigation?
 - (WKNavigation *) reload;
 ```
 
-#### Return Value
+## Return Value
 
 A new navigation object to represent the reload operation.
 

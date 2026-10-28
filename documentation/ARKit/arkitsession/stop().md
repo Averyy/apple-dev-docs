@@ -16,7 +16,7 @@ Stops all data providers running in this session.
 final func stop()
 ```
 
-#### Discussion
+## Discussion
 
 ARKit also automatically stops sessions when they’re deinitialized.
 

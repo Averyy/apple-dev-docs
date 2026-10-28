@@ -20,7 +20,7 @@ var image: NSImage? { get }
 @property (nonatomic, copy, readonly, nullable) NSImage * image;
 ```
 
-#### Discussion
+## Discussion
 
 PNG images with transparent backgrounds are recommended.
 

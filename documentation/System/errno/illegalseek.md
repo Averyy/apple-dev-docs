@@ -25,7 +25,7 @@ static var illegalSeek: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 An `lseek(2)` function was issued on a socket, pipe or FIFO.
 

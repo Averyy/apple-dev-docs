@@ -21,7 +21,7 @@ Configure TCP to drop the connection after a FIN does not receive an ACK.
 func retransmitFinDrop(_ drop: Bool) -> TCP
 ```
 
-#### Discussion
+## Discussion
 
 A boolean to cause TCP to drop its connection after not receiving an ACK after a FIN (`TCP_RXT_FINDROP`).
 

@@ -15,7 +15,7 @@ The JSON Web Signature (JWS) header parameter that contains the certificate chai
 [string] x5c
 ```
 
-#### Discussion
+## Discussion
 
 For more information, or to download Apple’s root and intermediate certificates, see [Apple PKI](https://www.apple.com/certificateauthority/).
 

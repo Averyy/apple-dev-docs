@@ -9,7 +9,7 @@
 bool familyManagePower;
 ```
 
-#### Overview
+## Overview
 
 Set to true if the family is supposed to manage power - this is the default state. It can be changed early in the initialization process with a call to setFamilyManagePower().
 

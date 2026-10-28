@@ -20,7 +20,7 @@ A binding to a joint, which consists of the joint’s index and the weight of th
 struct MeshJointInfluence
 ```
 
-#### Overview
+## Overview
 
 A vertex may be influenced by one or more joints. The skinned position of that vertex is defined by a set of MeshJointInfluence values whose weights sum to 1. The skinned position is given by:
 

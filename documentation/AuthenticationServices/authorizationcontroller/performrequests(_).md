@@ -22,11 +22,11 @@ Performs an authorization request from the provided array.
 func performRequests(_ requests: [ASAuthorizationRequest]) async throws -> ASAuthorizationResult
 ```
 
-#### Return Value
+## Return Value
 
 The request’s outcome. For more information, see [`ASAuthorizationResult`](../asauthorizationresult.md).
 
-#### Discussion
+## Discussion
 
 The framework checks each authorization request in the array against the credentials available on the person’s device; the more credential types your app supports, the more options a person can choose from.
 

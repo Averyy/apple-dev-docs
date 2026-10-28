@@ -25,11 +25,11 @@ func eulerAngles(order: __SPEulerAngleOrder) -> EulerAngles
 static SPEulerAngles SPRotation3DGetEulerAngles(SPRotation3D rotation, SPEulerAngleOrder order);
 ```
 
-#### Return Value
+## Return Value
 
 A structure that represents Euler angles and ordering.
 
-#### Discussion
+## Discussion
 
 > **Note**: In Swift, use [EulerAngles.Order](../eulerangles/order-swift.typealias.md) in place of `__SPEulerAngleOrder`.
 

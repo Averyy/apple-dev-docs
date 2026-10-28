@@ -21,11 +21,11 @@ Modifies the ISO 8601 date format style to include the week of the year in the f
 func weekOfYear() -> Date.ISO8601FormatStyle
 ```
 
-#### Return Value
+## Return Value
 
 An ISO 8601 date format style modified to include the week of the year.
 
-#### Discussion
+## Discussion
 
 The following example shows an ISO 8601 format with, and without, a week of the year.
 

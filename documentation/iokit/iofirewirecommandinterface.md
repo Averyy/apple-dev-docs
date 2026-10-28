@@ -18,7 +18,7 @@ typedef struct IOFireWireCommandInterface_t {
 } IOFireWireCommandInterface;
 ```
 
-#### Overview
+## Overview
 
 Represents an object that is configured and submitted to issue synchronous and asynchronous bus commands. This is a superclass containing all command object functionality not specific to any kind of bus transaction.
 

@@ -20,7 +20,7 @@ A response that exhibits bias or perpetuates a stereotype.
 case stereotypeOrBias
 ```
 
-#### Discussion
+## Discussion
 
 A stereotype or bias issue might be where you ask the model to summarize an article written by a male, and the model doesn’t state the authors sex, but the model uses male pronouns.
 

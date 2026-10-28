@@ -23,11 +23,11 @@ class func confirmationRequired(with temporalEventTriggerTypeOptionsToConfirm: I
 + (instancetype) confirmationRequiredWithTemporalEventTriggerTypeOptionsToConfirm:(INTemporalEventTriggerTypeOptions) temporalEventTriggerTypeOptionsToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INTemporalEventTriggerTypeOptionsResolutionResult`](../intemporaleventtriggertypeoptionsresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you can’t resolve the parameter to a similar but not equal temporal event type than the one specified in the intent. Don’t use this method to resolve temporal event types that your app doesn’t support.
 

@@ -24,11 +24,11 @@ func bandPart(_ inputTensor: MPSGraphTensor, numLowerTensor: MPSGraphTensor, num
 - (MPSGraphTensor *) bandPartWithTensor:(MPSGraphTensor *) inputTensor numLowerTensor:(MPSGraphTensor *) numLowerTensor numUpperTensor:(MPSGraphTensor *) numUpperTensor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object.
 
-#### Discussion
+## Discussion
 
 See above discussion of bandPartWithTensor: numLower: numUpper: name:
 

@@ -23,7 +23,7 @@ var isPresentingFriendRequestViewController: Bool { get }
 @property (nonatomic, readonly) BOOL isPresentingFriendRequestViewController;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the friends request view controller appears; otherwise, [`false`](../../Swift/false.md).
 

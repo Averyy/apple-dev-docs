@@ -15,7 +15,7 @@ The response body for endpoints that list alternative distribution keys.
 object AlternativeDistributionKeysResponse
 ```
 
-#### Discussion
+## Discussion
 
 For more information about the response that includes this alternative distribution key object, see [`AlternativeDistributionKeyResponse`](./alternativedistributionkeyresponse.md).
 

@@ -15,7 +15,7 @@ Disable a specific C compiler warning group.
 static func disableWarning(_ name: String, _ condition: BuildSettingCondition? = nil) -> CSetting
 ```
 
-#### Discussion
+## Discussion
 
 Use this setting to disable a specific warning group. This is equivalent to passing `-Wno-` followed by the group name to the C compiler.
 

@@ -19,7 +19,7 @@ var colorSpaceName: NSColorSpaceName? { get }
 extern NSColorSpaceNameNSColorSpaceFromDepth(NSWindowDepth depth);
 ```
 
-#### Discussion
+## Discussion
 
 Returns the color space name for the specified `depth`. For example, the returned color space name can be [`calibratedRGB`](../../nscolorspacename/calibratedrgb.md), or [`deviceCMYK`](../../nscolorspacename/devicecmyk.md).
 

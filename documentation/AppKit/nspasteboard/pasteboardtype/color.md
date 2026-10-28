@@ -19,7 +19,7 @@ static let color: NSPasteboard.PasteboardType
 extern NSPasteboardType const NSPasteboardTypeColor;
 ```
 
-#### Discussion
+## Discussion
 
 In macOS 10.6 and later, use [`color`](./color.md) (and you read and write colors directly to and from the pasteboard).
 

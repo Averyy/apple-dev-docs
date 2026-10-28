@@ -23,7 +23,7 @@ var uniqueIdentifier: String { get set }
 @property (nonatomic, copy) NSString * uniqueIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is a unique value that matches the host in the default base URL. The identifier can be any value that is unique. Setting is only allowed when the context is not loaded. This value is accessible by the extension via `browser.runtime.id` and is used for messaging the extension via `browser.runtime.sendMessage()`.
 

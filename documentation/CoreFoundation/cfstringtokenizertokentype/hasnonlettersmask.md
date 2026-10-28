@@ -25,7 +25,7 @@ static var hasNonLettersMask: CFStringTokenizerTokenType { get }
 kCFStringTokenizerTokenHasNonLettersMask
 ```
 
-#### Discussion
+## Discussion
 
 Given the way Unicode word break works, this means it is a standalone punctuation or symbol character, or a string of such.
 

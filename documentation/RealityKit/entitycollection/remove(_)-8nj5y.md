@@ -20,7 +20,7 @@ Removes the entity from the collection.
 mutating func remove(_ entity: Entity)
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This operation can invalidate the index order of any remaining entities.
 

@@ -23,11 +23,11 @@ optional func peoplePickerNavigationController(_ peoplePicker: ABPeoplePickerNav
 - (BOOL) peoplePickerNavigationController:(ABPeoplePickerNavigationController *) peoplePicker shouldContinueAfterSelectingPerson:(ABRecordRef) person property:(ABPropertyID) property identifier:(ABMultiValueIdentifier) identifier;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to perform the action for the property selected and dismiss the picker. [`false`](../../Swift/false.md) to show the person in the picker.
 
-#### Discussion
+## Discussion
 
 This method is called with an identifier. If you need an index, use the [`ABMultiValueGetIndexForIdentifier(_:_:)`](../../AddressBook/abmultivaluegetindexforidentifier%28_,_%29.md) function to get the corresponding index.
 

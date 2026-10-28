@@ -24,7 +24,7 @@ var destinationAudioUnit: AVAudioUnit? { get set }
 @property (nonatomic, retain, nullable) AVAudioUnit * destinationAudioUnit;
 ```
 
-#### Discussion
+## Discussion
 
 This property and a [`destinationMIDIEndpoint`](./destinationmidiendpoint.md) are mutually exclusive. You must attach the audio to an audio engine to receive events. The track must be part of the [`AVAudioSequencer`](../avaudiosequencer.md) you associate with the same engine. When playing, the track sends it’s events to that [`AVAudioUnit`](../avaudiounit.md). You can’t change the destination audio unit while the track’s sequence is in a playing state.
 

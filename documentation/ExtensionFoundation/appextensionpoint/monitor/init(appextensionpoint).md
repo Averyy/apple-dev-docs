@@ -21,7 +21,7 @@ Creates a new monitor and configures it with the specified extension point.
 convenience init(appExtensionPoint: AppExtensionPoint) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a monitor and start looking for app extensions that match the specified extension point. This initializer returns after successfully adding the extension point to the monitor and generating the initial list of app extensions.
 

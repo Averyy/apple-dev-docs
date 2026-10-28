@@ -19,11 +19,11 @@ func trackMouse(with event: NSEvent, in cellFrame: NSRect, of controlView: NSVie
 - (BOOL) trackMouse:(NSEvent *) event inRect:(NSRect) cellFrame ofView:(NSView *) controlView untilMouseUp:(BOOL) flag;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the mouse tracking conditions are met, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method is generally not overridden because the default implementation invokes other `NSCell` methods that can be overridden to handle specific events in a dragging session. This method’s return value depends on the `untilMouseUp` flag. If `untilMouseUp` is set to [`true`](../../Swift/true.md), this method returns [`true`](../../Swift/true.md) if the mouse button goes up while the cursor is anywhere; [`false`](../../Swift/false.md), otherwise. If `untilMouseUp` is set to [`false`](../../Swift/false.md), this method returns [`true`](../../Swift/true.md) if the mouse button goes up while the cursor is within `cellFrame`; [`false`](../../Swift/false.md), otherwise.
 

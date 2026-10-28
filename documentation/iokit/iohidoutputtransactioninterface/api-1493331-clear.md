@@ -16,11 +16,11 @@ Clears the transaction.
 IOReturn (*clear)(void *self);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOReturn code.
 
-#### Discussion
+## Discussion
 
 Transaction element values will cleared. Default values will be preserved.
 

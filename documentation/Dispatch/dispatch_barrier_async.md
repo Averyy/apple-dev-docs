@@ -21,7 +21,7 @@ Submits a barrier block for asynchronous execution and returns immediately.
 extern void dispatch_barrier_async(dispatch_queue_t queue, dispatch_block_t block);
 ```
 
-#### Discussion
+## Discussion
 
 Calls to this function always return immediately after the block is submitted and never wait for the block to be invoked. When the barrier block reaches the front of a private concurrent queue, it is not executed immediately. Instead, the queue waits until its currently executing blocks finish executing. At that point, the barrier block executes by itself. Any blocks submitted after the barrier block are not executed until the barrier block completes.
 

@@ -19,7 +19,7 @@ func discardCursorRects()
 - (void) discardCursorRects;
 ```
 
-#### Discussion
+## Discussion
 
 You need never invoke this method directly; neither is it typically invoked during the invalidation of cursor rectangles.  [`NSWindow`](../nswindow.md) automatically invalidates cursor rectangles in response to [`invalidateCursorRects(for:)`](../nswindow/invalidatecursorrects%28for%29.md) and before the view’s cursor rectangles are reestablished using [`resetCursorRects()`](./resetcursorrects%28%29.md).  This method is invoked just before the view is removed from a window and when the view is deallocated.
 

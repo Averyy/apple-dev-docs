@@ -19,7 +19,7 @@ func beginDocument()
 - (void) beginDocument;
 ```
 
-#### Discussion
+## Discussion
 
 Note that this method may be invoked in a subthread.
 

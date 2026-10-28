@@ -5,15 +5,15 @@
 
 Adds hidden text to an element that is used when VoiceOver is enabled.
 
-#### Overview
+## Overview
 
 Text that you add using the `accessibilityText` attribute is produced as audio when the element comes into focus. This attribute is only available when VoiceOver is enabled on Apple TV.
 
-##### Values for accessibilityText
+### Values for accessibilityText
 
 - **String**: The text to be spoken when the element comes into focus.
 
-##### Elements that Use accessibilityText
+### Elements that Use accessibilityText
 
 - [decorationLabel](./decorationlabel.md)
 - [description](./description.md)

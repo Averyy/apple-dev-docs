@@ -25,7 +25,7 @@ typealias CVOptionFlags = UInt64
 typedef uint64_t CVOptionFlags;
 ```
 
-#### Discussion
+## Discussion
 
 No flags are currently defined.
 

@@ -21,7 +21,7 @@ An error code for problems related to on-device model updates.
 static var update: MLModelError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Core ML typically throws this error when the update process encounters a problem at runtime, such as an [`MLMultiArray`](../mlmultiarray.md) input with an incorrect shape.
 

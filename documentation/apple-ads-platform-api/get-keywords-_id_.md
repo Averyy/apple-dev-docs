@@ -9,7 +9,7 @@ Retrieve a single keyword by its unique identifier.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint retrieves a single keyword by its ID. The response includes all keyword fields plus `displayStatus`, which reflects the combined delivery state of the keyword, its ad group, and its campaign.
 
@@ -22,9 +22,9 @@ Deleted keywords remain retrievable and only the query endpoint supports listing
 | Use query endpoint for listing | `GET /keywords/{id}` returns a single record. Use `POST /keywords/query` to filter and list multiple keywords. |
 | `adGroupId` and `campaignId` always returned | The parent hierarchy IDs are always present in the response. |
 
-#### Payload Examples
+## Payload Examples
 
-##### Request
+### Request
 
 Retrieves a single keyword by its unique identifier.
 
@@ -32,7 +32,7 @@ Retrieves a single keyword by its unique identifier.
 GET /v1/keywords/888999000
 ```
 
-##### Response
+### Response
 
 ```json
 {

@@ -24,7 +24,7 @@ var destinationRGBBlendFactor: MTLBlendFactor { get set }
 @property (nonatomic) MTLBlendFactor destinationRGBBlendFactor;
 ```
 
-#### Discussion
+## Discussion
 
 This property defaults to [`MTLBlendFactor.zero`](../mtlblendfactor/zero.md).
 

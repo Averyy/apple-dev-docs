@@ -26,7 +26,7 @@ var nodeID: NSNumber? { get set }
 @property (nonatomic, copy, nullable) NSNumber * nodeID;
 ```
 
-#### Discussion
+## Discussion
 
 If operationalCertificate is not nil, must be nil.  The provided operational certificate will be used as-is.
 

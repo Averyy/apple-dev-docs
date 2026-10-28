@@ -21,11 +21,11 @@ final func requestCustomerInfo(for purpose: CustomerEngagementSession.Purpose? =
 
 - [Adding support for Tap to Share to your app](../adding-support-for-tap-to-share-to-your-app.md)
 
-#### Return Value
+## Return Value
 
 [`CustomerEngagement.CustomerInfo`](../customerengagement/customerinfo.md) contact information shared by the customer.
 
-#### Discussion
+## Discussion
 
 If the `fields` array contains `pass` and a matching `passTypeIdentifier` , it displays the Wallet pass in full screen for the customer to confirm.
 

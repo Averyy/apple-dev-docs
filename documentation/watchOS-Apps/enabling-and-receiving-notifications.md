@@ -5,7 +5,7 @@
 
 Set up and handle local and remote notifications.
 
-#### Overview
+## Overview
 
 You have a variety of options when sending notifications to a watchOS app:
 
@@ -15,7 +15,7 @@ You have a variety of options when sending notifications to a watchOS app:
 
 In your watchOS app, schedule local notifications and handle both local and remote notifications using the [User Notifications](../UserNotifications/UserNotifications.md) framework.
 
-##### Request notifications
+### Request notifications
 
 Before the system can post alerts or play sounds for your app’s notifications, your watchOS app or iOS app must request authorization to interact with the user.
 
@@ -32,13 +32,13 @@ If you request provisional authorization, the system doesn’t prompt the user f
 
 For detailed instructions, see [Asking permission to use notifications](../UserNotifications/asking-permission-to-use-notifications.md).
 
-##### Handle notifications in your app
+### Handle notifications in your app
 
 If your watchOS app is running on screen, or is the frontmost app when a notification arrives, the system calls the [`userNotificationCenter(_:willPresent:withCompletionHandler:)`](../UserNotifications/unusernotificationcenterdelegate/usernotificationcenter%28_,willpresent,withcompletionhandler%29.md) method on your notification center delegate. The value you pass to the completion handler determines how the system responds. Pass [`UNNotificationPresentationOptionNone`](../UserNotifications/unnotificationpresentationoptionnone.md) to silence the notification. Otherwise, the system presents the notification using the specified options.
 
 > **Note**: If you don’t implement the [`userNotificationCenter(_:willPresent:withCompletionHandler:)`](../UserNotifications/unusernotificationcenterdelegate/usernotificationcenter%28_,willpresent,withcompletionhandler%29.md) method, the system silences the notification and doesn’t deliver it to your watchOS app.
 
-##### Send notifications directly to Apple Watch
+### Send notifications directly to Apple Watch
 
 With watchOS 6 and later, you can send remote notifications directly to Apple Watch. Before sending a notification, you must register your watchOS app, as described in [Registering your app with APNs](../UserNotifications/registering-your-app-with-apns.md). Registering your app creates a unique device token for the watch. Use that token to send notifications directly to the watch.
 

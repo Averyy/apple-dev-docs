@@ -15,7 +15,7 @@ Check if a vnode needs snapshots events (regardless of its ctime status)
 int vnode_needssnapshots(vnode_t vp);
 ```
 
-#### Return Value
+## Return Value
 
 Nonzero if vnode needs snapshot events, 0 otherwise
 

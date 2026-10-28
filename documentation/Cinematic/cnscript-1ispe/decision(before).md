@@ -19,7 +19,7 @@ The decision that occurs before the given time.
 final func decision(before time: CMTime) -> CNDecision?
 ```
 
-#### Return Value
+## Return Value
 
 A decision representing the decision that occurs before the given time.
 

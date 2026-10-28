@@ -27,11 +27,11 @@ convenience init()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSUserActivity`](../nsuseractivity.md) object.
 
-#### Discussion
+## Discussion
 
 This method retrieves the first string of the [NSUserActivityTypes](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW28) key declared in the app’s `Info.plist` file.
 

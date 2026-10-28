@@ -17,7 +17,7 @@ Creates a data type for barcodes the use the specified symbologies.
 static func barcode(symbologies: [VNBarcodeSymbology] = []) -> DataScannerViewController.RecognizedDataType
 ```
 
-#### Return Value
+## Return Value
 
 A barcode data type for the specified symbologies.
 

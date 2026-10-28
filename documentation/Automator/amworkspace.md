@@ -20,7 +20,7 @@ class AMWorkspace
 @interface AMWorkspace : NSObject
 ```
 
-#### Overview
+## Overview
 
 The [`AMWorkspace`](./amworkspace.md) class provides access to the shared workspace in the Automator framework, where you can run workflows without a workflow controller. Use [`shared`](./amworkspace/shared.md) to access the shared workspace and [`runWorkflow(atPath:withInput:)`](./amworkspace/runworkflow%28atpath,withinput%29.md) to run your workflow in it.
 

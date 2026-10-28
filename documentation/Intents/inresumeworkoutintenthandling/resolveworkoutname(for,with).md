@@ -27,7 +27,7 @@ optional func resolveWorkoutName(for intent: INResumeWorkoutIntent) async -> INS
 - (void) resolveWorkoutNameForResumeWorkout:(INResumeWorkoutIntent *) intent withCompletion:(void (^)(INSpeakableStringResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This method validates the workout name supplied by the user. If you don’t implement this method, SiriKit assumes that you’re able to resume the requested workout with the specified name.
 

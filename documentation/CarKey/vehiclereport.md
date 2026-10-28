@@ -19,7 +19,7 @@ A type that contains information about a vehicle configured for remote keyless e
 struct VehicleReport
 ```
 
-#### Overview
+## Overview
 
 A `VehicleReport` type provides information about a vehicle you manufacture. The system generates a vehicle report for each vehicle that matches your company’s make, and that the owner configured in their Apple Wallet. Use a vehicle report to get information about the vehicle, such as whether it’s currently connected and able to receive commands. You can also use the report to determine which vehicle features you can operate from your app.
 

@@ -20,7 +20,7 @@ func enableStreams() throws
 - (BOOL) enableStreamsWithError:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method changes the operational mode of the pipe to allow streaming endpoint transfers. Call this method before [`copyStream(withStreamID:)`](./copystream%28withstreamid%29.md).
 

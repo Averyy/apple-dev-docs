@@ -24,7 +24,7 @@ let HKMetadataKeySwimmingLocationType: String
 extern NSString * const HKMetadataKeySwimmingLocationType;
 ```
 
-#### Discussion
+## Discussion
 
 Set this key on a workout object that represents swimming. Set its value to an [`NSNumber`](../Foundation/nsnumber.md) object that contains a valid value from the [`HKWorkoutSwimmingLocationType`](./hkworkoutswimminglocationtype.md) enumeration.
 

@@ -24,11 +24,11 @@ func AudioServicesGetPropertyInfo(_ inPropertyID: AudioServicesPropertyID, _ inS
 extern OSStatus AudioServicesGetPropertyInfo(AudioServicesPropertyID inPropertyID, UInt32 inSpecifierSize, const void *inSpecifier, UInt32 *outPropertyDataSize, Boolean *outWritable);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 System Sound Services properties are listed and described in [System Sound Services Property Identifiers](./api-1405268-system-sound-services-property-i.md).
 

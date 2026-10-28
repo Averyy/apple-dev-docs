@@ -25,11 +25,11 @@ func dictionary(forKey defaultName: String) -> [String : Any]?
 - (NSDictionary<NSString *,id> *) dictionaryForKey:(NSString *) defaultName;
 ```
 
-#### Return Value
+## Return Value
 
 The dictionary object associated with `defaultName`, or `nil` if the key isn’t present in the defaults database. This method also returns `nil` if the retrieved value isn’t a dictionary object.
 
-#### Discussion
+## Discussion
 
 The returned dictionary and its contents are immutable, even if you originally set the key to mutable values.
 

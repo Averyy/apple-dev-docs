@@ -17,7 +17,7 @@ struct OBEXSessionEvent
 struct OBEXSessionEvent;
 ```
 
-#### Overview
+## Overview
 
 When a new session event occurs, your selector (or C callback) will be given an OBEXSessionEvent pointer, and in it will be information you might find interesting so that you can then reply back appropriately. For example, of you receive a kOBEXSessionEventTypeConnectCommandResponseReceived event, you can then parse out the information related to that event, and if all looks well to you, you could them send a “Get” command to get a file off of the OBEX server you just connected to.
 

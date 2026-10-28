@@ -9,9 +9,9 @@ Get the Boolean value that represents the grace period opt-in state for your app
 **Availability**:
 - App Store Connect API 2.0+
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

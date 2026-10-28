@@ -27,7 +27,7 @@ enum {
 };
 ```
 
-#### Overview
+## Overview
 
 Definitions for bits/masks in the INQUIRY Byte 56 field. Inquiry Byte 56 features (for devices that report an ANSI VERSION of kINQUIRY_ANSI_VERSION_SCSI_SPC_Compliant or later). These are SPI-3 Specific.
 

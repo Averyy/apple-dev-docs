@@ -5,19 +5,19 @@
 
 Manage unintended differences in your app by testing beta operating-system (OS) releases.
 
-#### Overview
+## Overview
 
 To catch API issues or incompatibilities, test your app on every released beta version during the beta release cycle. Beta software can introduce new issues in your app. To reduce the likelihood that these issues will impact your customers, identify, report, and address them as early in the beta release cycle as possible.  As the beta release cycle progresses, and Apple promotes the beta to Release Candidate, making changes without causing other instabilities becomes more difficult, so report issues as soon as you identify them.
 
-##### Install the beta OS
+### Install the beta OS
 
 To begin testing your app on a beta OS, download and install the beta OS on a device you plan to use for testing.  Test your app on the beta OS for each platform on which your app is available: Mac, Apple TV, Apple Watch, iPhone or iPad. To find the latest beta OS for each platform, and information about preparing to install the beta OS, see [Using Apple Beta Software](https://developer.apple.com/support/beta-software/).
 
-##### Install your app
+### Install your app
 
 To find the problems that your users might experience on the new version of the OS in your current app, install the current version of your app on your test device, either from the [App Store](https://www.apple.com/app-store/) or from [TestFlight](https://developer.apple.com/testflight/). Rebuilding your app using the beta SDK might introduce further changes that your customers don’t experience in the current version of your app.
 
-##### Test for changes in API behavior
+### Test for changes in API behavior
 
 The behavior of APIs in system frameworks that you use can change between releases. To identify changes in behavior, thoroughly test your app by exercising all code paths in your app. Test your app for each major OS version it supports, on at least one device for each family of devices that your customers use. Device families have the same architecture, screen resolution, and hardware capabilities. At a minimum, test your iOS, iPadOS, tvOS, visionOS, and watchOS apps using Simulator. However, Simulator provides limited testing coverage and is not a substitute for physical hardware with real memory and performance constraints.
 
@@ -27,7 +27,7 @@ Once you identify a change in your app’s behavior, locate the portion of your 
 
 Remember to update your feedback for each subsequent beta release. Reporting issues early and often throughout the beta release cycle provides the best chance for issue resolution before the OS revision goes public.
 
-##### Address changes in API behavior
+### Address changes in API behavior
 
 If your observed change in behavior results from a bug in your code, you can directly address the issue. To debug the issue, rebuild your app using the Xcode beta that contains the SDK for the beta OS you’re testing.
 

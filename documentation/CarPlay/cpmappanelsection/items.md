@@ -21,7 +21,7 @@ var items: [CPMapPanelItem] { get set }
 @property (nonatomic, copy) NSArray<CPMapPanelItem *> * items;
 ```
 
-#### Discussion
+## Discussion
 
 You specify the set of items at initialization time, but can change the items at any time. If you change the value of this property while the panel is visible, the system updates your CarPlay interface to reflect the changes.
 

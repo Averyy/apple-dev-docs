@@ -21,7 +21,7 @@ Performs a transformation on a single input.
 func applied(to input: MLShapedArray<Scalar>, eventHandler: EventHandler? = nil) async throws -> MLShapedArray<Scalar>
 ```
 
-#### Return Value
+## Return Value
 
 The transformed input.
 

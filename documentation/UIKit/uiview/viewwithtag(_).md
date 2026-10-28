@@ -23,11 +23,11 @@ func viewWithTag(_ tag: Int) -> UIView?
 - (UIView *) viewWithTag:(NSInteger) tag;
 ```
 
-#### Return Value
+## Return Value
 
 The view in the receiver’s hierarchy whose tag property matches the value in the `tag` parameter.
 
-#### Discussion
+## Discussion
 
 This method searches the current view and all of its subviews for the specified view.
 

@@ -37,7 +37,7 @@ protocol MTLBuffer : MTLResource
 - [Simplifying GPU resource management with residency sets](./simplifying-gpu-resource-management-with-residency-sets.md)
 - [Specifying drawing and dispatch arguments indirectly](./specifying-drawing-and-dispatch-arguments-indirectly.md)
 
-#### Overview
+## Overview
 
 An [`MTLBuffer`](./mtlbuffer.md) instance can be used only with the [`MTLDevice`](./mtldevice.md) that created it. Don’t implement this protocol yourself; instead, use the following [`MTLDevice`](./mtldevice.md) methods to create `MTLBuffer` instances:
 

@@ -27,7 +27,7 @@ var hidden_activation: BNNSActivation
 BNNSActivation hidden_activation;
 ```
 
-#### Discussion
+## Discussion
 
 This activation layer computes the hidden output.
 

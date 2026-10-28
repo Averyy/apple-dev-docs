@@ -23,7 +23,7 @@ class func fixedSpace(_ width: CGFloat) -> Self
 + (instancetype) fixedSpaceItemOfWidth:(CGFloat) width;
 ```
 
-#### Return Value
+## Return Value
 
 A fixed-width space [`UIBarButtonItem`](../uibarbuttonitem.md).
 

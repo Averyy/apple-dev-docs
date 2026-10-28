@@ -19,7 +19,7 @@ init?(attributes: FSItem.Attributes, freeSpace: FSFreeSpace?)
 - (instancetype) initWithAttributes:(FSItemAttributes *) attributes freeSpace:(FSFreeSpace *) freeSpace;
 ```
 
-#### Return Value
+## Return Value
 
 A populated result instance, or `nil` if validation fails.
 

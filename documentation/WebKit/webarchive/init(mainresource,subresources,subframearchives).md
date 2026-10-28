@@ -19,7 +19,7 @@ init!(mainResource: WebResource!, subresources: [Any]!, subframeArchives: [Any]!
 - (instancetype) initWithMainResource:(WebResource *) mainResource subresources:(NSArray *) subresources subframeArchives:(NSArray *) subframeArchives;
 ```
 
-#### Discussion
+## Discussion
 
 This method initializes and returns the receiver by setting the main resource to `mainResource`, and setting the subresources and subframe archives if supplied. The `subresources` argument should be an array of WebResource objects or `nil` if none are specified. The `subframeArchives` should be and array of WebArchive objects used by the subframes or `nil` if none are specified.
 

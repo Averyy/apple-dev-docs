@@ -17,7 +17,7 @@ Tells the delegate that a new peripheral was discovered and can be displayed in 
 func connectionView(_ connectionView: PlaygroundBluetoothConnectionView, shouldDisplayDiscovered peripheral: CBPeripheral, withAdvertisementData advertisementData: [String : Any]?, rssi: Double) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value indicating whether the newly discovered peripheral should show up in the connection view.
 

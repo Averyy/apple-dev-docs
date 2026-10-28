@@ -29,7 +29,7 @@ var isEligibleForPublicIndexing: Bool { get set }
 
 - [Creating a user activity object](../creating-a-user-activity-object.md)
 
-#### Discussion
+## Discussion
 
 Set the value of this property to `true` to add the activity object to the global Spotlight search indexes. Set the value of this property to `false` if the activity object contains private or sensitive information or if the activity isn’t useful outside your app. The default value of this property is `false`.
 

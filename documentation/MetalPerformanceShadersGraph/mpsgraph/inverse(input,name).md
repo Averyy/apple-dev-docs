@@ -24,11 +24,11 @@ func inverse(input inputTensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
 - (MPSGraphTensor *) inverseOfTensor:(MPSGraphTensor *) inputTensor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid [`MPSGraphTensor`](../mpsgraphtensor.md) object containing the inverse of the input tensor.
 
-#### Discussion
+## Discussion
 
 The framework computes the inverse of a square matrix by calling LU decomposition and LU solver. All dimensions after the first 2 are treated as batch dimensions and the inverse for each batch is computed. Results are undefined for ill conditioned matrices.
 

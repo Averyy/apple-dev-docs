@@ -28,7 +28,7 @@ class HKWorkoutActivity
 
 - [Dividing a HealthKit workout into activities](./dividing-a-healthkit-workout-into-activities.md)
 
-#### Overview
+## Overview
 
 Workout activity objects partition a workout into a set of separate activities. For example, you can use workout activities to record the swim, bike, and running portions of a multisport event, like a triathlon, or to represent the active and rest periods during interval training. All [`HKWorkout`](./hkworkout.md) instances have at least one associated [`HKWorkoutActivity`](./hkworkoutactivity.md). If you don’t explicitly set workout activities, HealthKit assigns a workout activity that matches the [`HKWorkout`](./hkworkout.md) object’s activity type. For more information, see [Dividing a HealthKit workout into activities](./dividing-a-healthkit-workout-into-activities.md).
 

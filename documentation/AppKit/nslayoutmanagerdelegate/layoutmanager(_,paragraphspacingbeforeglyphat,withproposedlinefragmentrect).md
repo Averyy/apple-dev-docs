@@ -19,11 +19,11 @@ optional func layoutManager(_ layoutManager: NSLayoutManager, paragraphSpacingBe
 - (CGFloat) layoutManager:(NSLayoutManager *) layoutManager paragraphSpacingBeforeGlyphAtIndex:(NSUInteger) glyphIndex withProposedLineFragmentRect:(NSRect) rect;
 ```
 
-#### Return Value
+## Return Value
 
 The paragraph spacing before the current line.
 
-#### Discussion
+## Discussion
 
 This message is sent while each line is laid out to enable the layout manager delegate to customize the shape of line.
 

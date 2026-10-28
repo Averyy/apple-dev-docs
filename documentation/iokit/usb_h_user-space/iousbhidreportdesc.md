@@ -13,7 +13,7 @@ struct IOUSBHIDReportDesc {
 };
 ```
 
-#### Overview
+## Overview
 
 USB HID Report Descriptor header. See the USB HID Specification at [http://www.usb.org](http://www.usb.org). (This structure should have used the #pragma pack(1) compiler directive to get byte alignment.
 

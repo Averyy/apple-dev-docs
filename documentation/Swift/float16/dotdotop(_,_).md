@@ -21,7 +21,7 @@ Returns a half-open range that contains its lower bound but not its upper bound.
 static func ..< (minimum: Self, maximum: Self) -> Range<Self>
 ```
 
-#### Discussion
+## Discussion
 
 Use the half-open range operator (`..<`) to create a range of any type that conforms to the `Comparable` protocol. This example creates a `Range<Double>` from zero up to, but not including, 5.0.
 

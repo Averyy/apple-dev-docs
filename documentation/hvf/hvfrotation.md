@@ -21,7 +21,7 @@ The type of a rotation passed to the scaler.
 typedef double HVFRotation;
 ```
 
-#### Discussion
+## Discussion
 
 The value is in radians, counterclockwise.
 

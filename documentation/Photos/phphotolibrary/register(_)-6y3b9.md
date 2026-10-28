@@ -28,7 +28,7 @@ func register(_ observer: any PHPhotoLibraryChangeObserver)
 
 - [Observing Changes in the Photo Library](../../PhotoKit/observing-changes-in-the-photo-library.md)
 
-#### Discussion
+## Discussion
 
 You implicitly declare interest in change messages whenever you use a fetch method (such as [`fetchAssets(with:)`](../phasset/fetchassets%28with%29.md)) to retrieve assets or collections. After you perform a fetch, Photos automatically sends change messages whenever the objects in the resulting fetch request change—including when changes happen that add to, remove from, or reorder the list of objects in the fetch result.
 

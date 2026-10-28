@@ -25,7 +25,7 @@ class func setClassName(_ codedName: String?, for cls: AnyClass)
 + (void) setClassName:(NSString *) codedName forClass:(Class) cls;
 ```
 
-#### Discussion
+## Discussion
 
 When encoding, an archiver consults its own translation map before using the class’ translation map.
 

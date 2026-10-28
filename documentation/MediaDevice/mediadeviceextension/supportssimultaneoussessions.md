@@ -19,7 +19,7 @@ Indicates whether the extension supports handling simultaneous media sessions vi
 var supportsSimultaneousSessions: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 When `true`, the extension can receive multiple active [`MediaOutputSession`](../mediaoutputsession.md) instances at once. When `false`, only one session is active at a time.
 

@@ -25,7 +25,7 @@ optional func outputSequenceWasFlushed(_ output: AVPlayerItemOutput)
 - (void) outputSequenceWasFlushed:(AVPlayerItemOutput *) output;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked after any seeking and change in playback direction. If you are maintaining any queued future media data, you may want to discard those objects after receiving this message.
 

@@ -23,7 +23,7 @@ var frameLayoutGuide: UILayoutGuide { get }
 @property (nonatomic, strong, readonly) UILayoutGuide * frameLayoutGuide;
 ```
 
-#### Discussion
+## Discussion
 
 Use this layout guide when you want to create Auto Layout constraints that explicitly involve the frame rectangle of the scroll view itself, as opposed to its content rectangle.
 

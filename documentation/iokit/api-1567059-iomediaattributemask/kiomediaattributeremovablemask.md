@@ -14,7 +14,7 @@
 kIOMediaAttributeRemovableMask = 0x00000002
 ```
 
-#### Discussion
+## Discussion
 
 Indicates whether the media is removable from the drive mechanism.
 

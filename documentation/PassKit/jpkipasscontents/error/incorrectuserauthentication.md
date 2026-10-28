@@ -18,7 +18,7 @@ The provided credential authentication request wasn’t accepted.
 case incorrectUserAuthentication
 ```
 
-#### Discussion
+## Discussion
 
 For example, this error occurs if the PIN provided is incorrect.
 

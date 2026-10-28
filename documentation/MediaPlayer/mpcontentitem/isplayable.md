@@ -24,7 +24,7 @@ var isPlayable: Bool { get set }
 @property (nonatomic, assign, getter=isPlayable) BOOL playable;
 ```
 
-#### Discussion
+## Discussion
 
 When set to [`true`](../../Swift/true.md), the designated content item is able to be played. Containers and individual content items can set this property to [`true`](../../Swift/true.md). For example, a playlist with multiple songs in it. The playlist is a container that can be played, or the user could choose a song from inside of the playlist.
 

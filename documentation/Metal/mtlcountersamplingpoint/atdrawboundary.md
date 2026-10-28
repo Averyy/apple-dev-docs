@@ -28,7 +28,7 @@ MTLCounterSamplingPointAtDrawBoundary
 
 - [Sampling GPU data into counter sample buffers](../sampling-gpu-data-into-counter-sample-buffers.md)
 
-#### Discussion
+## Discussion
 
 When a Metal device instance supports this sampling boundary, you can call the [`sampleCounters(sampleBuffer:sampleIndex:barrier:)`](../mtlrendercommandencoder/samplecounters%28samplebuffer,sampleindex,barrier%29.md) method on an [`MTLRenderCommandEncoder`](../mtlrendercommandencoder.md) to sample the counters between individual draw commands.
 

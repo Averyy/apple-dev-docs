@@ -25,7 +25,7 @@ var userData: NSMutableDictionary? { get set }
 @property (nonatomic, retain, nullable) NSMutableDictionary * userData;
 ```
 
-#### Discussion
+## Discussion
 
 You use this property to store your own data in a node. For example, you might store game-specific data about each node to use inside your game logic. This can be a useful alternative to creating your own node subclasses to hold game data.
 

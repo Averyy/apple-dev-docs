@@ -19,7 +19,7 @@ class FSReadSymlinkResult
 @interface FSReadSymlinkResult : FSVolumeHandlerResult
 ```
 
-#### Overview
+## Overview
 
 Use this type in your implementation of [`readSymbolicLink(_:context:replyHandler:)`](./fsvolume/handler/readsymboliclink%28_,context,replyhandler%29.md).
 

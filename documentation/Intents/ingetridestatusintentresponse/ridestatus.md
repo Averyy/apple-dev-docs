@@ -32,7 +32,7 @@ var rideStatus: INRideStatus? { get set }
 @property (atomic, copy, readwrite, nullable) INRideStatus * rideStatus;
 ```
 
-#### Discussion
+## Discussion
 
 Siri uses the information in this object to communicate the ride status to the user. Always provide as much information as you can for the current ride. If the user does not have an active ride, set this property to `nil`.
 

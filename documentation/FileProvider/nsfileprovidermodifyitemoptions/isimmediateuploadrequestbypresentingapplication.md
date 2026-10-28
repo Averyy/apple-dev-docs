@@ -23,7 +23,7 @@ static var isImmediateUploadRequestByPresentingApplication: NSFileProviderModify
 NSFileProviderModifyItemIsImmediateUploadRequestByPresentingApplication
 ```
 
-#### Discussion
+## Discussion
 
 This option allows the calling application to know when the uploaded version of the file is on the server.
 

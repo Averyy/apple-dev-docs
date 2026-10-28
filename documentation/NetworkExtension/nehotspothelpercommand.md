@@ -22,7 +22,7 @@ class NEHotspotHelperCommand
 @interface NEHotspotHelperCommand : NSObject
 ```
 
-#### Overview
+## Overview
 
 NEHotspostHelperCommand objects are passed to the the Hotspot Helper app’s command handler block. The Hotspot Helper app processes the command, instantiates an [`NEHotspotHelperResponse`](./nehotspothelperresponse.md) object, sets the annotated `network` or `networkList` (`Evaluate` or `FilterScanList` commands only), and then delivers the response to the system.
 

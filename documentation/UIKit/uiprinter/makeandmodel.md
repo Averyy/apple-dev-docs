@@ -22,7 +22,7 @@ var makeAndModel: String? { get }
 @property (copy, readonly, nullable) NSString * makeAndModel;
 ```
 
-#### Discussion
+## Discussion
 
 The string in this property is provided by the printer and usually consists of the manufacturer’s name, the model name of the printer, and the model number of the printer.
 

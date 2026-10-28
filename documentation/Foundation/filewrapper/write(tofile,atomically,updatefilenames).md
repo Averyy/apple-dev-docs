@@ -21,11 +21,11 @@ func write(toFile path: String, atomically atomicFlag: Bool, updateFilenames upd
 - (BOOL) writeToFile:(NSString *) path atomically:(BOOL) atomicFlag updateFilenames:(BOOL) updateFilenamesFlag;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) when the write operation is successful, [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 Beginning with OS X v10.6, the preferred method of referring to files is with a `file://` URL. Therefore, this method has been deprecated in favor of [`write(to:options:originalContentsURL:)`](./write%28to,options,originalcontentsurl%29.md).
 

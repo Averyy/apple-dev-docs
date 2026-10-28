@@ -24,7 +24,7 @@ func removeRenderObserver(_ token: Int)
 - (void) removeRenderObserver:(NSInteger) token;
 ```
 
-#### Discussion
+## Discussion
 
 This version 3 property is bridged to the version 2 [`AudioUnitRemoveRenderNotify(_:_:_:)`](../audiounitremoverendernotify%28_,_,_%29.md) API.
 

@@ -20,11 +20,11 @@ func hasMarkedText() -> Bool
 - (BOOL) hasMarkedText;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver has marked text; otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The text view itself may call this method to determine whether there currently is marked text. `NSTextView`, for example, disables the Edit > Copy menu item when this method returns [`true`](../../Swift/true.md).
 

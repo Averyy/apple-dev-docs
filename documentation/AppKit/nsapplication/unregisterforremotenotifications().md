@@ -19,7 +19,7 @@ func unregisterForRemoteNotifications()
 - (void) unregisterForRemoteNotifications;
 ```
 
-#### Discussion
+## Discussion
 
 You should only call this method in rare circumstances, such as when a new version of the app drops support for remote notifications. Apps unregistered through this method can always reregister.
 

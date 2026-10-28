@@ -20,11 +20,11 @@ Returns segment boundary guidelines that help clients determine how to segment c
 static func segmentBoundaryGuidelinesForVideo(codecType: AVVideoCodecType, encoderSpecification: [String : any Sendable]) -> AVAssetWritingPlanner.SegmentBoundaryGuidelines
 ```
 
-#### Return Value
+## Return Value
 
 An AVAssetWritingPlanner.SegmentBoundaryGuidelines with the minimum frame count and duration for the given codec and encoder.
 
-#### Discussion
+## Discussion
 
 The encoderSpecification parameter here is the same encoder specification the client uses to compress the video track.
 

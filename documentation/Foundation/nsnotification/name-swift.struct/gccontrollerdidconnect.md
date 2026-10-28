@@ -20,7 +20,7 @@ A notification that posts after a controller connects to the device.
 static let GCControllerDidConnect: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the [`GCController`](../../../GameController/gccontroller.md) object that connects to the device.
 

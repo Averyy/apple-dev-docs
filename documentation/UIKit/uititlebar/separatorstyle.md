@@ -19,7 +19,7 @@ var separatorStyle: UITitlebarSeparatorStyle { get set }
 @property (nonatomic) UITitlebarSeparatorStyle separatorStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`UITitlebarSeparatorStyle.automatic`](../uititlebarseparatorstyle/automatic.md).
 

@@ -28,7 +28,7 @@ optional func beginLoadingChildItems(at indexPath: IndexPath) async throws
 - (void) beginLoadingChildItemsAtIndexPath:(NSIndexPath *) indexPath completionHandler:(void (^)(NSError *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to start asynchronous batch loading of media items. The app can load content before the media player needs to display the next media items. When you use this method, the client app must call the completion handler after loading has finished.
 

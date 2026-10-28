@@ -20,11 +20,11 @@ optional func splitView(_ splitView: NSSplitView, canCollapseSubview subview: NS
 - (BOOL) splitView:(NSSplitView *) splitView canCollapseSubview:(NSView *) subview;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if `subview` collapses when the user drags a divider beyond the halfway mark between its minimum size and its edge; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The `subview` expands when the user drags the divider beyond the halfway mark between its minimum size and its edge.
 

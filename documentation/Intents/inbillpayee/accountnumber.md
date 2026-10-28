@@ -33,7 +33,7 @@ var accountNumber: String? { get }
 @property (atomic, copy, readonly, nullable) NSString * accountNumber;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is a string that helps identify the payee to the user. Typically, this property contains a portion of the user’s account number with the payee, often in an obscured format such as `****123`. When resolving a payee requires disambiguation from among several values, you can display this string to the user to help identify each account.
 

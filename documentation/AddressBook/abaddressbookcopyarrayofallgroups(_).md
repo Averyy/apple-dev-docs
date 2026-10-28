@@ -23,7 +23,7 @@ func ABAddressBookCopyArrayOfAllGroups(_ addressBook: ABAddressBook!) -> Unmanag
 extern CFArrayRefABAddressBookCopyArrayOfAllGroups(ABAddressBookRef addressBook);
 ```
 
-#### Return Value
+## Return Value
 
 An array containing the groups in `addressBook`.
 

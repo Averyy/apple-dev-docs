@@ -21,7 +21,7 @@ A type that represents a date interval.
 #define XPC_TYPE_DATE
 ```
 
-#### Discussion
+## Discussion
 
 The interval is with respect to UNIX time. XPC dates are in UTC and are unaware of local time or leap seconds.
 

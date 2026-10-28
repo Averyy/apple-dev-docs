@@ -20,7 +20,7 @@ Creates generated content from key-value pairs, resolving duplicate keys with a 
 init<S>(properties: S, id: GenerationID? = nil, uniquingKeysWith combine: (GeneratedContent, GeneratedContent) throws -> some ConvertibleToGeneratedContent) rethrows where S : Sequence, S.Element == (String, any ConvertibleToGeneratedContent)
 ```
 
-#### Discussion
+## Discussion
 
 The order of properties is important. For [`Generable`](../generable.md) types, the order must match the order properties in the types `schema`.
 

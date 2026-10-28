@@ -25,7 +25,7 @@ case signatureDurationInvalid
 SHErrorCodeSignatureDurationInvalid
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs when the length of the generated signature is less than [`minimumQuerySignatureDuration`](../../shcatalog/minimumquerysignatureduration.md) or greater than [`maximumQuerySignatureDuration`](../../shcatalog/maximumquerysignatureduration.md) for the session [`catalog`](../../shsession/catalog.md).
 

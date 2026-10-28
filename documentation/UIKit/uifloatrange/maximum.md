@@ -23,7 +23,7 @@ var maximum: CGFloat
 CGFloat maximum;
 ```
 
-#### Discussion
+## Discussion
 
 For sliding attachments, it represents the number of points to move along the axis of translation in the positive direction. For pin attachments, it represents the number of radians to rotate in the clockwise direction. This value must be greater than or equal to `0`.
 

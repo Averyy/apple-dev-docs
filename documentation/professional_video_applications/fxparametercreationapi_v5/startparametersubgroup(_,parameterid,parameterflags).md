@@ -20,7 +20,7 @@ func startParameterSubGroup(_ name: String, parameterID: UInt32, parameterFlags 
 - (BOOL) startParameterSubGroup:(NSString *) name parameterID:(UInt32) parameterID parameterFlags:(FxParameterFlags) flags;
 ```
 
-#### Return Value
+## Return Value
 
 Returns `YES` if the application successfully creates a parameter sub group; `NO` otherwise.
 

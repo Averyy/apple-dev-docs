@@ -21,7 +21,7 @@ enum Generation
 
 - [Observing token log probabilities](./generation-observability.md)
 
-#### Overview
+## Overview
 
 This enum distinguishes between the following:
 

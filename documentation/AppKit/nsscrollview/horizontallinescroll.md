@@ -19,7 +19,7 @@ var horizontalLineScroll: CGFloat { get set }
 @property CGFloat horizontalLineScroll;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is the amount by which the scroll view scrolls itself horizontally when scrolling line by line, expressed in the content view’s coordinate system. This value is used when the user clicks the scroll arrows on the horizontal scroll bar without holding down a modifier key.
 

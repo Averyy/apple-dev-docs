@@ -19,7 +19,7 @@ func bundle() -> Bundle!
 - (NSBundle *) bundle;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSBundle` object that is either created from the bundle identifier contained in the server object, or from the main bundle.
 

@@ -19,11 +19,11 @@ func icon(forFile fullPath: String) -> NSImage
 - (NSImage *) iconForFile:(NSString *) fullPath;
 ```
 
-#### Return Value
+## Return Value
 
 The icon associated with the file.
 
-#### Discussion
+## Discussion
 
 The returned image has an initial size of 32 pixels by 32 pixels.
 

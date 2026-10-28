@@ -6,5 +6,8 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ar
 
 # mlx.core.array.mean
 
-**array.mean(*self*, *axis: int | Sequence[int] | None = None*, *keepdims: bool = False*, ***, *stream: Stream | ThreadLocalStream | Device | mlx.core.DeviceType | None = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: See [mean()](mlx.core.mean.md#mlx.core.mean).
+```python
+array.mean(self, axis: int | Sequence[int] | None = None, keepdims: bool = False, *, stream: Stream | ThreadLocalStream | Device | mlx.core.DeviceType | None = None) → array
+```
+
+See [mean()](mlx.core.mean.md#mlx.core.mean).

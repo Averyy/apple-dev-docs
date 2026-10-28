@@ -21,7 +21,7 @@ A requested resource couldn’t be retrieved.
 static var resourceUnavailable: URLError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error can indicate a file-not-found situation, or decoding problems that prevent data from being processed correctly.
 

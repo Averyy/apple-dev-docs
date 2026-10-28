@@ -24,7 +24,7 @@ var virtualMachine: JSVirtualMachine! { get }
 @property (strong, readonly) JSVirtualMachine * virtualMachine;
 ```
 
-#### Discussion
+## Discussion
 
 To create a context associated with a specific virtual machine, allowing JavaScript values to be passed between contexts that share the same virtual machine, use the [`init(virtualMachine:)`](./init%28virtualmachine%29.md) initializer.
 

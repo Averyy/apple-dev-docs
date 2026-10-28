@@ -33,7 +33,7 @@ class SCNView
 @interface SCNView : NSView
 ```
 
-#### Overview
+## Overview
 
 In macOS, [`SCNView`](./scnview.md) is a subclass of [`NSView`](../AppKit/nsview.md). In iOS and tvOS, [`SCNView`](./scnview.md) is a subclass of [`UIView`](../UIKit/uiview.md). As part of either operating system’s view hierarchy, an [`SCNView`](./scnview.md) object provides a place for SceneKit content in your app’s user interface. You can create a SceneKit view by using its [`init(frame:options:)`](./scnview/init%28frame,options%29.md) method or by adding it to a nib file or storyboard.  To provide content for a SceneKit view, assign an [`SCNScene`](./scnscene.md) object to its [`scene`](./scnview/scene.md) property.
 

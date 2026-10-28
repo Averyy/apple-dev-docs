@@ -19,7 +19,7 @@ var capturesSystemKeys: Bool { get set }
 @property BOOL capturesSystemKeys;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `false.`
 

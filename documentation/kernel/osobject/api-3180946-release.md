@@ -16,7 +16,7 @@ Releases the OSObject instance
 virtual void release(void);
 ```
 
-#### Discussion
+## Discussion
 
 Decreases the retain count of the instance by one. If the count is then zero, frees the object.
 

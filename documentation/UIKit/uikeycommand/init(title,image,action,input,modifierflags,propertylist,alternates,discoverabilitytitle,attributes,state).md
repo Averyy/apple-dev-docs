@@ -19,7 +19,7 @@ Creates a key command that you can use as a menu element with a shortcut key, or
 @preconcurrency convenience init(title: String = "", image: UIImage? = nil, action: Selector, input: String, modifierFlags: UIKeyModifierFlags = [], propertyList: Any? = nil, alternates: [UICommandAlternate] = [], discoverabilityTitle: String? = nil, attributes: UIMenuElement.Attributes = [], state: UIMenuElement.State = .off)
 ```
 
-#### Discussion
+## Discussion
 
 After creating a key command object, you can:
 

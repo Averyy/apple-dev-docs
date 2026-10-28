@@ -5,35 +5,35 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The visionOS 26.1 SDK provides support for developing apps for Apple Vision Pro devices running visionOS 26.1. The SDK comes bundled with Xcode 26.1. For information on the compatibility requirements for Xcode 26.1, see [Xcode 26.1 Release Notes](../Xcode-Release-Notes/xcode-26_1-release-notes.md).
 
-##### Background Assets
+### Background Assets
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: `AssetPackManager.url(for:)` unexpectedly throws an error when looking up the URL for a locally available asset file.  (157959878) (FB19512759)
 
-##### Game Controller
+### Game Controller
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The time returned by `GCPressedStateInput.lastPressedStateTimestamp` is not in the correct time domain.  (159124910)
 
-##### HealthKit
+### HealthKit
 
-###### New Features
+#### New Features
 
 - HealthKit authorization UI now displays a single Blood Pressure switch to control changes to Systolic and Diastolic Blood Pressure type authorizations. The API is unchanged and apps should request for both types in code.  (153579893)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: `HKCorrelation` objects of type `.bloodPressure` fail to save with `errorInvalidArgument` HKError code if they don’t have exactly one systolic and one diastolic blood pressure quantity sample its set of objects.  (151889745)
 
-##### Logitech Muse
+### Logitech Muse
 
-###### Known Issues
+#### Known Issues
 
 - Logitech Muse might stop spatial tracking during usage, despite showing as connected in Settings.  (154905373)
 
@@ -42,9 +42,9 @@ The visionOS 26.1 SDK provides support for developing apps for Apple Vision Pro 
 
   **Workaround:** Pick Muse back up and set it down within Vision Pro’s field of view.
 
-##### SwiftUI
+### SwiftUI
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The `navigationLinkIndicatorVisibility` modifier crashes when run on iOS 17, iOS 18 and aligned releases.
 

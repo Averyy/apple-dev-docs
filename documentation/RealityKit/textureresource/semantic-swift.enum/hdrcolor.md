@@ -20,7 +20,7 @@ Use the texture to store a high-dynamic range image.
 case hdrColor
 ```
 
-#### Discussion
+## Discussion
 
 Properties that specify a semantic of `hdrColor` use the texture to store high-dynamic range RGB color data. If the source image contains color space information, RealityKit modifies the individual pixels to fit the color space. If the source image is grayscale, RealityKit converts it to an RGB image first.
 

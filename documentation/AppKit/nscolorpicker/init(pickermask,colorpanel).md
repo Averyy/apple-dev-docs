@@ -20,11 +20,11 @@ init?(pickerMask mask: Int, colorPanel owningColorPanel: NSColorPanel)
 - (instancetype) initWithPickerMask:(NSUInteger) mask colorPanel:(NSColorPanel *) owningColorPanel;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized color picker object.
 
-#### Discussion
+## Discussion
 
 Override this method to respond to the values in `mask` or do other custom initialization. If you override this method in a subclass, you should forward the message to `super` as part of the implementation.
 

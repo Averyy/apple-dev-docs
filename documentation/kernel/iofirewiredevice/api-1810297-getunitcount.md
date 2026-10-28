@@ -12,7 +12,7 @@ inline UInt32 getUnitCount(
  void )
 ```
 
-#### Return Value
+## Return Value
 
 UInt32 The number of units attached to this device.
 

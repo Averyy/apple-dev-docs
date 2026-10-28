@@ -15,7 +15,7 @@ The account-level resource within an organization that contains campaigns and ad
 object AdAccount
 ```
 
-#### Discussion
+## Discussion
 
 An `AdAccount` is the operational container for campaigns within an organization.
 
@@ -23,7 +23,7 @@ Each ad account is authorized for App Store or Apple Maps advertising, not both.
 
 The `systemStatus` field reflects operational readiness. If `INACTIVE`, check `systemStatusReasons`. Common causes include a missing payment method or pending tax verification.
 
-##### Example
+### Example
 
 ```json
 {

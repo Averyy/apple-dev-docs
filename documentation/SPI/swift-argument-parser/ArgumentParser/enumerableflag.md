@@ -21,7 +21,7 @@ protocol EnumerableFlag : CaseIterable, Equatable
 
 - [Declaring Arguments, Options, and Flags](./declaringarguments.md)
 
-#### Overview
+## Overview
 
 For example, the `Size` enumeration declared here can be used as the type of a `@Flag` property:
 

@@ -32,7 +32,7 @@ var fullState: [String : Any]? { get set }
 @property (atomic, copy, nullable) NSDictionary<NSString *,id> * fullState;
 ```
 
-#### Discussion
+## Discussion
 
 Hosts may use this property to save and restore the state of an audio unit being used in a user preset or document. The audio unit should not persist transitory properties such as stream formats, but should save and restore all other properties.
 

@@ -25,7 +25,7 @@ var percentSymbol: String! { get set }
 @property (copy, null_resettable) NSString * percentSymbol;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this property is set to the percent sign (%).
 

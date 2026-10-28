@@ -20,7 +20,7 @@ The angular motion limits around the z-axis.
 var angularMotionAroundZ: PhysicsCustomJoint.MotionLimit
 ```
 
-#### Discussion
+## Discussion
 
 This property sets the limits of `pin1` around the z-axis of `pin0`.
 

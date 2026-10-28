@@ -19,7 +19,7 @@ var suppressionButton: NSButton? { get }
 @property (strong, readonly, nullable) NSButton * suppressionButton;
 ```
 
-#### Discussion
+## Discussion
 
 If you want to customize an alert’s suppression checkbox, access it via this property and then use the methods of the [`NSButton`](../nsbutton.md) class. For example, you can do this to change the suppression checkbox’s default message, or to change its initial selection state (which is “unselected” by default). For a code example, see the [`showsSuppressionButton`](./showssuppressionbutton.md) property.
 

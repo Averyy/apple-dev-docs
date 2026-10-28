@@ -21,11 +21,11 @@ func SecTransformSetDataAction(_ ref: SecTransformImplementationRef, _ action: C
 extern CFErrorRefSecTransformSetDataAction(SecTransformImplementationRef ref, CFStringRef action, SecTransformDataBlock newAction);
 ```
 
-#### Return Value
+## Return Value
 
 An error on failure, or `NULL` on success. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to free the error’s memory when you are done with it.
 
-#### Discussion
+## Discussion
 
 When the `action` parameter is [`kSecTransformActionProcessData`](./ksectransformactionprocessdata.md), the `newAction` block changes the way that input data is processed to become the output data. When the `action` parameter is [`kSecTransformActionInternalizeExtraData`](./ksectransformactioninternalizeextradata.md) it changes the way a custom transform reads in data to be imported into the transform.
 

@@ -26,7 +26,7 @@ optional func resolveGuest(for intent: INBookRestaurantReservationIntent) async 
 - (void) resolveGuestForBookRestaurantReservation:(INBookRestaurantReservationIntent *) intent withCompletion:(void (^)(INRestaurantGuestResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the contact person for the reservation. The resolved guess is not necessarily the person who created the reservation.
 

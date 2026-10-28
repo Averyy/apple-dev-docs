@@ -23,11 +23,11 @@ var snapshot: UIImage { get }
 @property (strong, readonly) UIImage * snapshot;
 ```
 
-#### Return Value
+## Return Value
 
 An image object.
 
-#### Discussion
+## Discussion
 
 When this method is called, the view sets up a drawing environment and calls your drawing method. However, instead of presenting the view’s contents on screen, they are returned to your application as an image instead. This method should be called whenever your application explicitly needs the contents of the view; never attempt to directly read the contents of the underlying framebuffer using OpenGL ES functions.
 

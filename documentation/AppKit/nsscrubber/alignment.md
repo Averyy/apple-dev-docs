@@ -19,7 +19,7 @@ enum Alignment
 enum NSScrubberAlignment : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 For details on how to choose the right alignment option for your app, see [Choose a scrubber touch-interaction model](../nsscrubber.md#Choose-a-scrubber-touch-interaction-model).
 

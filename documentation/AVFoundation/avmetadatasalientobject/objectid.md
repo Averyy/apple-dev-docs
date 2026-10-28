@@ -23,7 +23,7 @@ var objectID: Int { get }
 @property (readonly) NSInteger objectID;
 ```
 
-#### Discussion
+## Discussion
 
 When an object enters the picture, it’s assigned a new, unique identifier.
 

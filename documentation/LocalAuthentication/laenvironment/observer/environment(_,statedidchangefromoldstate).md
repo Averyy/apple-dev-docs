@@ -24,7 +24,7 @@ optional func environment(_ environment: LAEnvironment, stateDidChangeFromOldSta
 - (void) environment:(LAEnvironment *) environment stateDidChangeFromOldState:(LAEnvironmentState *) oldState;
 ```
 
-#### Discussion
+## Discussion
 
 Invoked on a queue private to LocalAuthentication framework. At the moment of invocation of this method, @c LAEnvironment.state already contains the new updated state.
 

@@ -25,7 +25,7 @@ class MTRBaseClusterDishwasherMode
 @interface MTRBaseClusterDishwasherMode : MTRGenericBaseCluster
 ```
 
-#### Overview
+## Overview
 
 Attributes and commands for selecting a mode from a list of supported options.
 

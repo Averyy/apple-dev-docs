@@ -17,11 +17,11 @@ Return the sum along a specified diagonal in the given array.
 func trace(_ array: MLXArray, offset: Int = 0, axis1: Int = 0, axis2: Int = 1, dtype: DType? = nil, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 Sum of specified diagonal.
 
-##### See Also
+### See Also
 
 - [Arithmetic](./arithmetic.md)
 

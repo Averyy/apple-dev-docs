@@ -22,7 +22,7 @@ var nativeBounds: CGRect { get }
 @property (nonatomic, readonly) CGRect nativeBounds;
 ```
 
-#### Discussion
+## Discussion
 
 This rectangle is based on the device in a portrait-up orientation. This value does not change as the device rotates.
 

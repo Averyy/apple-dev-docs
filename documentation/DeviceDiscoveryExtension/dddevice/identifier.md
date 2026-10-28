@@ -23,7 +23,7 @@ var identifier: String { get set }
 @property (nonatomic, copy, readwrite) NSString * identifier;
 ```
 
-#### Discussion
+## Discussion
 
 As an example [`identifier`](./identifier.md) for Bluetooth devices, your extension can use the device’s local name (see [`CBAdvertisementDataLocalNameKey`](../../CoreBluetooth/cbadvertisementdatalocalnamekey.md)).
 

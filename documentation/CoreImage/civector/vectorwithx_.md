@@ -20,7 +20,7 @@ Create a Core Image vector object that is initialized with one value.
 + (instancetype) vectorWithX:(CGFloat) x;
 ```
 
-#### Return Value
+## Return Value
 
  An autoreleased [`CIVector`](../civector.md) object of length 1.
 

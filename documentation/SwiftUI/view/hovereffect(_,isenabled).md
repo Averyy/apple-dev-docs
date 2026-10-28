@@ -27,11 +27,11 @@ nonisolated
 func hoverEffect(_ effect: some CustomHoverEffect = .automatic, isEnabled: Bool = true) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A new view that applies a hover effect to `self`.
 
-#### Discussion
+## Discussion
 
 By default, [`automatic`](../hovereffect/automatic.md) is used. You can control the behavior of the automatic effect with the [`defaultHoverEffect(_:)`](./defaulthovereffect%28_%29.md) modifier.
 

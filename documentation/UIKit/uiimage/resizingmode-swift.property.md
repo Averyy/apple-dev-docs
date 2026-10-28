@@ -24,7 +24,7 @@ var resizingMode: UIImage.ResizingMode { get }
 @property (nonatomic, readonly) UIImageResizingMode resizingMode;
 ```
 
-#### Discussion
+## Discussion
 
 The default value for this property is [`UIImage.ResizingMode.tile`](./resizingmode-swift.enum/tile.md). However, [`UIImage`](../uiimage.md) will implement the resizing mode the fastest way possible while still retaining the desired visual appearance. This means that if the region to be resized is a 1-pixel region and this property is set to [`UIImage.ResizingMode.tile`](./resizingmode-swift.enum/tile.md), the region will be stretched instead because the two are virtually indistinguishable for a region of that size and stretching is dramatically faster than tiling. To set the value of this property, you need to call either [`animatedResizableImageNamed(_:capInsets:resizingMode:duration:)`](./animatedresizableimagenamed%28_,capinsets,resizingmode,duration%29.md) or [`resizableImage(withCapInsets:resizingMode:)`](./resizableimage%28withcapinsets,resizingmode%29.md) and specify the resizing mode using the `resizingMode` parameter. For a list of possible values for this property, see [`UIImage.ResizingMode`](./resizingmode-swift.enum.md).
 

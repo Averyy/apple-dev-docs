@@ -15,7 +15,7 @@ Your CloudKit API token.
 attribute string? CloudKitAPITokenAuth;
 ```
 
-#### Discussion
+## Discussion
 
 If you are accessing CloudKit containers using an API token, you set this to the token value.
 

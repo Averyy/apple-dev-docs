@@ -24,7 +24,7 @@ var maxLength: NSNumber? { get }
 @property (nonatomic, readonly, nullable) NSNumber * maxLength;
 ```
 
-#### Discussion
+## Discussion
 
 This value only applies to characteristics with a string type.
 

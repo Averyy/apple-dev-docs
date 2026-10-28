@@ -21,7 +21,7 @@ Flag indicating that the process has been attached by a debugger.
 static let isDebugged: ProcessCodeSigningFlags.ValueSet
 ```
 
-#### Discussion
+## Discussion
 
 This is equivalent to `CS_DEBUGGED` in C APIs.
 

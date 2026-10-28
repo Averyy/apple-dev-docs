@@ -17,7 +17,7 @@ A communication backend.
 enum Backend
 ```
 
-#### Overview
+## Overview
 
 Use [`isAvailable(_:)`](./isavailable%28_%29.md) to check whether MLX was built with support for a given backend.  Note that availability means MLX can instantiate the backend, not that a communication group can actually be formed – use [`initialize(backend:strict:)`](./initialize%28backend,strict%29.md) with `strict: true` for that.
 

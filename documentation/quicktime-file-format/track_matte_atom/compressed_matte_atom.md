@@ -6,7 +6,7 @@
 
 An atom that specifies the image description structure and the matte data associated with a particular matte atom.
 
-#### Overview
+## Overview
 
 See [`Compressed matte atom`](../compressed_matte_atom.md).
 

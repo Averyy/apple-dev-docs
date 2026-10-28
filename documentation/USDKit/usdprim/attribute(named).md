@@ -20,7 +20,7 @@ Returns the attribute with a given name on this prim.
 func attribute(named name: USDToken) -> USDPrim.Attribute
 ```
 
-#### Discussion
+## Discussion
 
 If no attribute named `name` exists on this prim, returns an invalid attribute handle.
 

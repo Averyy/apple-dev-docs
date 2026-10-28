@@ -21,11 +21,11 @@ func predictions(from data: DataFrame, perWindowPrediction: Bool? = false) throw
 func predictions(from data: MLDataTable, perWindowPrediction: Bool? = false) throws -> [String]
 ```
 
-#### Return Value
+## Return Value
 
 An array of predicted class names.
 
-#### Discussion
+## Discussion
 
 - Parameters
 

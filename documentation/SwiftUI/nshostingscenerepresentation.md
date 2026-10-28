@@ -16,7 +16,7 @@ An AppKit type that hosts and can present SwiftUI scenes
 class NSHostingSceneRepresentation<Content> where Content : Scene
 ```
 
-#### Overview
+## Overview
 
 Use instances of this type with `NSApplication.addSceneRepresentation(_:)` to include SwiftUI scene functionality in an app which uses the AppKit app lifecycle.
 

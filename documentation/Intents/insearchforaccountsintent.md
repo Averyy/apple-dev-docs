@@ -23,7 +23,7 @@ class INSearchForAccountsIntent
 @interface INSearchForAccountsIntent : INIntent
 ```
 
-#### Overview
+## Overview
 
 Siri creates an instance of [`INSearchForAccountsIntent`](./insearchforaccountsintent.md) when the user asks for information about accounts available in your app. Users can ask for information about monetary and nonmonetary accounts. For example, an airline app might allow the user to search for an account that manages their frequent flier miles. The user can ask for information such as a list of accounts or the balance of a specific account. Use the data the intent provides to find the user’s accounts and return the information the user requests.
 
@@ -34,7 +34,7 @@ To process the request, your handler must adopt the [`INSearchForAccountsIntentH
 - Requests the user’s confirmation before passing the request to your app or Intents extension for processing.
 - Asks the user to unlock a locked device.
 
-##### Example Phrases
+### Example Phrases
 
 Users can ask Siri to search for accounts in a variety of ways. Although not exhaustive, the following table provides a few sample phrases, in different languages, that you can use when testing your intents.
 

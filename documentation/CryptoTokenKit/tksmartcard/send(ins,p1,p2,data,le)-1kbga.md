@@ -21,11 +21,11 @@ Synchronously sends an APDU command to the smart card.
 func send(ins: UInt8, p1: UInt8, p2: UInt8, data: Data? = nil, le: Int? = nil) throws -> (sw: UInt16, response: Data)
 ```
 
-#### Return Value
+## Return Value
 
 A tuple containing the status word (sw) and response data.
 
-#### Discussion
+## Discussion
 
 Use this method when you need synchronous execution, such as within `withSession` blocks or when calling from synchronous code paths.
 

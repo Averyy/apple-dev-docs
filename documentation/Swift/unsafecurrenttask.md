@@ -21,7 +21,7 @@ An unsafe reference to the current task.
 struct UnsafeCurrentTask
 ```
 
-#### Overview
+## Overview
 
 To get an instance of `UnsafeCurrentTask` for the current task, call the `withUnsafeCurrentTask(body:)` method. Don’t store an unsafe task reference for use outside that method’s closure. Storing an unsafe reference doesn’t affect the task’s actual life cycle, and the behavior of accessing an unsafe task reference outside of the `withUnsafeCurrentTask(body:)` method’s closure isn’t defined.
 

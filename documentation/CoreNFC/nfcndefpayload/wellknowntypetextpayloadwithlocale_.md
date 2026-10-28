@@ -17,7 +17,7 @@ Returns the text of a valid Well Known Type Text payload.
 - (NSString *) wellKnownTypeTextPayloadWithLocale:(NSLocale **) locale;
 ```
 
-#### Return Value
+## Return Value
 
 A string containing the text when the payload is a Well Known Type Text; otherwise, `nil`.
 

@@ -15,7 +15,7 @@ Posted when a web view performs any operation that changes its contents in respo
 static let WebViewDidChange: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the WebView object that the user is editing. This notification does not contain a `userInfo` dictionary.
 

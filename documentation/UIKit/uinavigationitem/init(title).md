@@ -23,11 +23,11 @@ init(title: String)
 - (instancetype) initWithTitle:(NSString *) title;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`UINavigationItem`](../uinavigationitem.md) object initialized with the specified title.
 
-#### Discussion
+## Discussion
 
 This is the designated initializer for this class.
 

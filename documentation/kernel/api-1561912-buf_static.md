@@ -15,7 +15,7 @@ Check if a buffer contains static data.
 int buf_static(buf_t bp);
 ```
 
-#### Return Value
+## Return Value
 
 Nonzero if buffer has static data, 0 otherwise.
 

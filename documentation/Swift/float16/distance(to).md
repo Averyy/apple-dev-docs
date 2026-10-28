@@ -21,11 +21,11 @@ Returns the distance from this value to the given value, expressed as a stride.
 func distance(to other: Float16) -> Float16
 ```
 
-#### Return Value
+## Return Value
 
 The distance from this value to `other`.
 
-#### Discussion
+## Discussion
 
 If this type’s `Stride` type conforms to `BinaryInteger`, then for two values `x` and `y`, and a distance `n = x.distance(to: y)`, `x.advanced(by: n) == y`. Using this method with types that have a noninteger `Stride` may result in an approximation.
 

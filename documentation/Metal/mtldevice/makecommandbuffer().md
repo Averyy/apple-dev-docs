@@ -29,7 +29,7 @@ func makeCommandBuffer() -> (any MTL4CommandBuffer)?
 
 - [Understanding the Metal 4 core API](../understanding-the-metal-4-core-api.md)
 
-#### Return Value
+## Return Value
 
 A [`MTL4CommandBuffer`](../mtl4commandbuffer.md) instance, or `nil` if the function failed.
 

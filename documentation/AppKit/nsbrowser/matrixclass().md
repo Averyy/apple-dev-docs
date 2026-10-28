@@ -21,7 +21,7 @@ func matrixClass() -> AnyClass
 - (Class) matrixClass;
 ```
 
-#### Return Value
+## Return Value
 
 The class of `NSMatrix` used in the browser’s columns.
 

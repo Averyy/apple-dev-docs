@@ -20,7 +20,7 @@ func numberOfPaths(at time: CMTime) -> Int
 - (NSUInteger) numberOfPathsAtTime:(CMTime) time;
 ```
 
-#### Return Value
+## Return Value
 
 The number of paths available to the plugin.
 

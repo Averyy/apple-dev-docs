@@ -22,7 +22,7 @@ class func supportsSecureCoding() -> Bool
 + (BOOL) supportsSecureCoding;
 ```
 
-#### Discussion
+## Discussion
 
 Part of the NSSecureCoding
 

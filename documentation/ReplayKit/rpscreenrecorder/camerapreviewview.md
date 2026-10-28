@@ -41,7 +41,7 @@ var cameraPreviewView: NSView? { get }
 @property (nonatomic, readonly, nullable) NSView * cameraPreviewView;
 ```
 
-#### Discussion
+## Discussion
 
 When the value in the [`isCameraEnabled`](./iscameraenabled.md) property is [`true`](../../Swift/true.md), this property contains a view with the live camera view. If the camera isn’t enabled, the value in this property is `nil`. When the app runs in visionOS, the value in this property is `nil`.
 

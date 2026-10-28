@@ -23,11 +23,11 @@ func numberOfRows(inSection section: Int) -> Int
 - (NSInteger) numberOfRowsInSection:(NSInteger) section;
 ```
 
-#### Return Value
+## Return Value
 
 The number of rows in the section.
 
-#### Discussion
+## Discussion
 
 [`UITableView`](../uitableview.md) gets the value returned by this method from its data source and caches it.
 

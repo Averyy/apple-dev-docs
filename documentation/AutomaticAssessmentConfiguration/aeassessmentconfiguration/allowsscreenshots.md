@@ -20,7 +20,7 @@ var allowsScreenshots: Bool { get set }
 @property (nonatomic, assign) BOOL allowsScreenshots;
 ```
 
-#### Discussion
+## Discussion
 
 An assessment session disables the ability to take screenshots by default to maintain assessment integrity. This property specifically applies to screenshots that are copied to the clipboard, typically those taken using the Command+Control+Shift+3 and Command+Control+Shift+4 keyboard shortcuts. You can allow clipboard screenshots by setting `allowsScreenshots` to `true`.
 

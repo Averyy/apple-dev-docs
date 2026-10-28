@@ -24,7 +24,7 @@ var cellGateActivation: MPSGraphRNNActivation { get set }
 @property (nonatomic, readwrite) MPSGraphRNNActivation cellGateActivation;
 ```
 
-#### Discussion
+## Discussion
 
 Default value: `MPSGraphRNNActivationTanh`.
 

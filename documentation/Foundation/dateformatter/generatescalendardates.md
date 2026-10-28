@@ -25,7 +25,7 @@ var generatesCalendarDates: Bool { get set }
 @property BOOL generatesCalendarDates;
 ```
 
-#### Discussion
+## Discussion
 
 This property is [`true`](../../Swift/true.md) if the formatter generates the deprecated [`NSCalendarDate`](../nscalendardate.md) type, and is [`false`](../../Swift/false.md) otherwise. You should use [`Date`](../date.md) and [`Calendar`](../calendar.md) rather than [`NSCalendarDate`](../nscalendardate.md).
 

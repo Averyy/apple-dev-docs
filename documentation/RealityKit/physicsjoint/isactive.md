@@ -21,7 +21,7 @@ A Boolean that indicates whether the joint is active.
 var isActive: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 Inactive joints do not participate in the physics simulation.
 

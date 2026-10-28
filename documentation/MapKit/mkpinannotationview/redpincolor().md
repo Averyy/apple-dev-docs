@@ -40,11 +40,11 @@ class func redPinColor() -> NSColor
 + (NSColor *) redPinColor;
 ```
 
-#### Return Value
+## Return Value
 
 The red pin color.
 
-#### Discussion
+## Discussion
 
 The system uses red pins to indicate destination points on the map.
 

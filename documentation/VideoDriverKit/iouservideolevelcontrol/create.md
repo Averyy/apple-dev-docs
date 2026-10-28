@@ -15,11 +15,11 @@ A static factory method that allocates and initializes a video level control.
 static OSSharedPtr<IOUserVideoLevelControl> Create(IOUserVideoDriver *in_driver, bool in_is_settable, float in_decibel_value, IOUserVideoLevelControlRange in_decibel_range, IOUserVideoObjectPropertyElement in_control_element, IOUserVideoObjectPropertyScope in_control_scope, IOUserVideoClassID in_control_class_id);
 ```
 
-#### Return Value
+## Return Value
 
 OSSharedPtr to an IOUserVideoLevelControl if it was successfully allocated and initialized
 
-#### Discussion
+## Discussion
 
 If IOUserVideoLevelControl is subclassed to override behavior, don’t use this method to allocate or initialize the custom subclass.
 

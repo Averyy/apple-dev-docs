@@ -18,7 +18,7 @@ The interface for creating Metal shader functions from a ShaderGraph.
 protocol LowLevelRenderContextShaderGraph
 ```
 
-#### Overview
+## Overview
 
 Access this through [`shaderGraph`](./lowlevelrendercontext/shadergraph.md).
 

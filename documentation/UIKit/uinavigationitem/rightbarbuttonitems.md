@@ -23,7 +23,7 @@ var rightBarButtonItems: [UIBarButtonItem]? { get set }
 @property (nonatomic, copy, readwrite, nullable) NSArray<UIBarButtonItem *> * rightBarButtonItems;
 ```
 
-#### Discussion
+## Discussion
 
 This array can contain 0 or more bar button items to display on the right (or trailing) side of the navigation bar. Items are displayed right-to-left in the same order as they appear in the array. Thus, the first item in the array is the rightmost item and other items are added to the left of the previous item. In a right-to-left user interface, the items are automatically flipped.
 

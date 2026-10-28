@@ -19,7 +19,7 @@ A name used to specify services provided by host computers in the service/hostna
 #define GSS_C_NT_HOSTBASED_SERVICE
 ```
 
-#### Discussion
+## Discussion
 
 The format of the name is `service@hostname`.
 

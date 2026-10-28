@@ -24,7 +24,7 @@ case none
 PHASECalibrationModeNone
 ```
 
-#### Discussion
+## Discussion
 
 For a consistent user experience across platforms and output devices, avoid [`PHASECalibrationMode.none`](./none.md) by correcting loudness with [`PHASECalibrationMode.absoluteSpl`](./absolutespl.md) or [`PHASECalibrationMode.relativeSpl`](./relativespl.md).
 

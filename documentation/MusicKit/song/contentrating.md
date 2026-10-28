@@ -21,7 +21,7 @@ The rating of the content.
 var contentRating: ContentRating? { get }
 ```
 
-#### Discussion
+## Discussion
 
 A nil value means no rating is available for this song.
 

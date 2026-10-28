@@ -15,7 +15,7 @@ The promotional-offer signature you generate in a JSON Web Signature (JWS) forma
 string promotionalOfferSignatureV2
 ```
 
-#### Discussion
+## Discussion
 
 To provide a promotional-offer retention message, you need to cryptographically sign the offer and include it in the [`promotionalOffer`](./promotionaloffer.md) parameter of your [`RealtimeResponseBody`](./realtimeresponsebody.md) response.
 

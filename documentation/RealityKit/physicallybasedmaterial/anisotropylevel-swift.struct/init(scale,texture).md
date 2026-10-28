@@ -20,7 +20,7 @@ Creates an anisotropy level object using a single value or a texture.
 init(scale: Float = 1.0, texture: PhysicallyBasedMaterial.Texture? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 By default, PBR materials are isotropic; in other words, an entity that uses [`PhysicallyBasedMaterial`](../../physicallybasedmaterial.md) reflects light uniformly in all directions, mimicking the behavior of most real-world objects. Some objects, including those with many small parallel striations such as vinyl records, CDs, or straight hair, reflect light more in some directions than others, resulting in stretched or oblong specular highlights, as shown in the following figure.
 

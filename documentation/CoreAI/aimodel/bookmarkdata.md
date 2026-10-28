@@ -19,7 +19,7 @@ Create a bookmark for this AIModel’s cached specialized asset entry as seriali
 var bookmarkData: Data { get }
 ```
 
-#### Discussion
+## Discussion
 
 The data returned  can be stored and later resolved to re-create a model with init?(resolvingBookmark:). It contains information about the cache and entry backing the model
 

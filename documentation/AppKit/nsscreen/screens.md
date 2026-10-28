@@ -19,11 +19,11 @@ class var screens: [NSScreen] { get }
 @property (class, copy, readonly) NSArray<NSScreen *> * screens;
 ```
 
-#### Return Value
+## Return Value
 
 An array of the [`NSScreen`](../nsscreen.md) objects available on the current system.
 
-#### Discussion
+## Discussion
 
 The screen at index `0` in the returned array corresponds to the primary screen of the user’s system. This is the screen that contains the menu bar and whose origin is at the point `(0, 0)`. In the case of mirroring, the first screen is the largest drawable display; if all screens are the same size, it is the screen with the highest pixel depth. This primary screen may not be the same as the one returned by the [`main`](./main.md) method, which returns the screen with the active window.
 

@@ -25,7 +25,7 @@ func NSUserName() -> String
 extern NSString *NSUserName();
 ```
 
-#### Return Value
+## Return Value
 
 The logon name of the current user.
 

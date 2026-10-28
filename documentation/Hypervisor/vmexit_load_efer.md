@@ -19,7 +19,7 @@ var VMEXIT_LOAD_EFER: UInt32 { get }
 VMEXIT_LOAD_EFER
 ```
 
-#### Discussion
+## Discussion
 
 Must be `1`.
 

@@ -24,11 +24,11 @@ class func shared() -> GKTurnBasedEventHandler
 + (GKTurnBasedEventHandler *) sharedTurnBasedEventHandler;
 ```
 
-#### Return Value
+## Return Value
 
 An event handler object.
 
-#### Discussion
+## Discussion
 
 Your game never directly creates a [`GKTurnBasedEventHandler`](../gkturnbasedeventhandler.md) object. Instead, retrieve the shared instance using this class method.
 

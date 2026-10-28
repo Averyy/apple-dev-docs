@@ -24,7 +24,7 @@ var assetLocalIdentifier: String { get }
 @property (nonatomic, copy, readonly) NSString * assetLocalIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 This property’s value corresponds to the [`localIdentifier`](../phobject/localidentifier.md) property of the [`PHAsset`](../phasset.md) object that owns this asset resource. If you’ve obtained an asset resource without a reference to its owning asset, use the [`fetchAssets(withLocalIdentifiers:options:)`](../phasset/fetchassets%28withlocalidentifiers,options%29.md) method with this identifier to retrieve the correct [`PHAsset`](../phasset.md) object.
 

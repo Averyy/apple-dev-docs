@@ -26,7 +26,7 @@ func cancelPendingSeeks()
 - (void) cancelPendingSeeks;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to cancel and release the completion handlers of pending seeks.
 

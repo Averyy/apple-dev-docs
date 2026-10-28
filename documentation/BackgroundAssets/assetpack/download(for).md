@@ -20,7 +20,7 @@ Creates a download object for the asset pack that you schedule using a download 
 func download(for contentRequest: BAContentRequest?) -> BADownload
 ```
 
-#### Return Value
+## Return Value
 
 A download object.
 

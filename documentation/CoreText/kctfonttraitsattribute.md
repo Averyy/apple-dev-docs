@@ -25,7 +25,7 @@ let kCTFontTraitsAttribute: CFString
 extern CFStringRef const kCTFontTraitsAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 See Accessing Font Traits for the list of font traits. The value associated with this key is a [`CFDictionary`](../CoreFoundation/cfdictionary.md) object.
 

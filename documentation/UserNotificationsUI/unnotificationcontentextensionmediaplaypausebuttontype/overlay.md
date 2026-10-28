@@ -23,7 +23,7 @@ case overlay
 UNNotificationContentExtensionMediaPlayPauseButtonTypeOverlay
 ```
 
-#### Discussion
+## Discussion
 
 This button draws a play icon over the content initially. When playback begins, the button disappears. Tapping the content again pauses playback and displays the play button again.
 

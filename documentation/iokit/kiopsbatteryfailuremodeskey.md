@@ -16,7 +16,7 @@ Enumerates a battery's failures and error conditions.
 #define kIOPSBatteryFailureModesKey
 ```
 
-#### Discussion
+## Discussion
 
 Various battery failures will be listed here. A battery may suffer from more than one type of failure simultaneously, so this key has a CFArray value.
 

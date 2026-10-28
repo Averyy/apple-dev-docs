@@ -16,7 +16,7 @@ An array of updated multitoken contexts for a multimerchant payment request.
 sequence <ApplePayPaymentTokenContext> newMultiTokenContexts;
 ```
 
-#### Discussion
+## Discussion
 
 Provide this object to update the [`multiTokenContexts`](../applepaypaymentrequest/multitokencontexts.md) value in the original [`ApplePayPaymentRequest`](../applepaypaymentrequest.md), if necessary, after the user updated their shipping contact information.
 

@@ -19,7 +19,7 @@ Creates a set of training session parameters for a hand pose classifier task.
 init(validation: MLHandPoseClassifier.ModelParameters.ValidationData = .split(strategy: .automatic), batchSize: Int = MLHandPoseClassifier.__Defaults.batchSize, maximumIterations: Int = MLHandPoseClassifier.__Defaults.maximumIterations, augmentationOptions: MLHandPoseClassifier.ImageAugmentationOptions = [], algorithm: MLHandPoseClassifier.ModelParameters.ModelAlgorithmType = .gcn)
 ```
 
-#### Discussion
+## Discussion
 
 - validation: An [`MLHandPoseClassifier.ModelParameters.ValidationData`](./validationdata.md) instance.
 - batchSize: The number of images the training session uses for each of its training iterations.

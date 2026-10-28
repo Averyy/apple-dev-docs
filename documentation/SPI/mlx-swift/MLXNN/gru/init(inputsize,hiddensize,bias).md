@@ -17,7 +17,7 @@ A gated recurrent unit (GRU) RNN layer.
 init(inputSize: Int, hiddenSize: Int, bias: Bool = true)
 ```
 
-#### Discussion
+## Discussion
 
 The input has shape `NLD` or `LD` where:
 

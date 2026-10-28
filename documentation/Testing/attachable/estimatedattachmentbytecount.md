@@ -17,7 +17,7 @@ An estimate of the number of bytes of memory needed to store this value as an at
 var estimatedAttachmentByteCount: Int? { get }
 ```
 
-#### Discussion
+## Discussion
 
 The testing library uses this property to determine if an attachment should be held in memory or should be immediately saved. Larger attachments are more likely to be saved immediately, but the algorithm the testing library uses is an implementation detail and is subject to change.
 

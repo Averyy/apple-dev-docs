@@ -21,11 +21,11 @@ Gets the position of the file pointer within the file.
 func offset() throws -> UInt64
 ```
 
-#### Return Value
+## Return Value
 
 The position of the file pointer within the file.
 
-#### Discussion
+## Discussion
 
 Throws an error if called on a file handle representing a pipe or socket, or if the file descriptor is closed.
 

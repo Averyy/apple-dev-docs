@@ -17,7 +17,7 @@ Creates a session for initiating playback on a remote device.
 init(url: URL, mode: AVSystemRoute.LaunchMode)
 ```
 
-#### Discussion
+## Discussion
 
 Initialize a session with the media URL and launch mode before adding it to an [`AVSystemRoute`](../avsystemroute-5s2um.md). The URL and mode determine how the remote device handles playback — either by launching your app’s counterpart or using the system’s built-in media player.
 

@@ -23,7 +23,7 @@ A mutable container of traits.
 
 - [Providing data to the view hierarchy with custom traits](./providing-data-to-the-view-hierarchy-with-custom-traits.md)
 
-#### Overview
+## Overview
 
 The [`UIMutableTraits`](./uimutabletraits-8l00o.md) protocol provides read-write access to get and set trait values on an underlying container. UIKit uses this protocol to facilitate working with instances of [`UITraitCollection`](./uitraitcollection.md), which are immutable and read-only. The [`UITraitCollection`](./uitraitcollection.md) initializer [`traitCollectionWithTraits:`](./uitraitcollection/traitcollectionwithtraits_.md) uses an instance of [`UIMutableTraits`](./uimutabletraits-8l00o.md), which enables you to set a batch of trait values in one method call. [`UITraitOverrides`](./uitraitoverrides-c.protocol.md) conforms to [`UIMutableTraits`](./uimutabletraits-8l00o.md), making it easy to set trait overrides on trait environments such as views and view controllers.
 

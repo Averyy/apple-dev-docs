@@ -20,11 +20,11 @@ func IOUSBGetNextDescriptorWithType(_ configurationDescriptor: UnsafePointer<IOU
 const IOUSBDescriptorHeader *IOUSBGetNextDescriptorWithType(const IOUSBConfigurationDescriptor *configurationDescriptor, const IOUSBDescriptorHeader *currentDescriptor, const uint8_t type);
 ```
 
-#### Return Value
+## Return Value
 
 A descriptor pointer, or `nil` if no matching descriptor returns.
 
-#### Discussion
+## Discussion
 
 This method uses [`IOUSBGetNextDescriptor(_:_:)`](./iousbgetnextdescriptor%28_,_%29.md), and further validates that the returned descriptor’s `bDescriptorType` field matches the type parameter.
 

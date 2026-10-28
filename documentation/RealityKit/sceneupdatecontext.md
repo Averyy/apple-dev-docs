@@ -24,7 +24,7 @@ struct SceneUpdateContext
 
 - [Passing Metal command objects around your application](./passing-metal-command-objects-around-your-application.md)
 
-#### Overview
+## Overview
 
 RealityKit uses a [`SceneUpdateContext`](./sceneupdatecontext.md) to pass information to a [`System`](./system.md) about the scene it’s currently updating.
 

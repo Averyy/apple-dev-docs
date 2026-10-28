@@ -23,7 +23,7 @@ static func == (lhs: Publishers.Last<Upstream>, rhs: Publishers.Last<Upstream>) 
 
 Available when `Upstream` conforms to `Publisher` and `Equatable`.
 
-#### Return Value
+## Return Value
 
 `true` if the two publishers have equal upstream publishers; otherwise `false`.
 

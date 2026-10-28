@@ -5,13 +5,13 @@
 
 Manage draft versions of an In-App Purchase’s localized metadata and review images before submitting for App Review.
 
-#### Overview
+## Overview
 
 An In-App Purchase version is a draft container that groups the localized metadata and review images that go through App Review together. Create a version, attach localizations and images to it, then submit the version through the review submissions workflow. The parent In-App Purchase resource holds properties that stay stable across versions — its product ID, In-App Purchase type, and pricing — while each version captures the reviewable metadata for a single review cycle.
 
 > **Note**:  The pre-4.4.1 workflow that posts localizations and images directly to the In-App Purchase (`POST /v1/inAppPurchaseLocalizations`, `POST /v1/inAppPurchaseImages`) is deprecated as of 4.4.1 but remains available for existing integrations. For guidance on moving to the version-based workflow, see [Migrating In-App Purchase metadata to v2](./migrating-in-app-purchase-metadata-to-v2.md).
 
-##### Understand the version lifecycle
+### Understand the version lifecycle
 
 A version moves through these states, exposed on `InAppPurchaseVersion/Attributes/state`:
 
@@ -25,7 +25,7 @@ A version moves through these states, exposed on `InAppPurchaseVersion/Attribute
 
 Versions are read-only after creation. To change a version’s contents, create a new version.
 
-##### Create a version
+### Create a version
 
 Create a draft version with `POST /v1/inAppPurchaseVersions` ([`Create an In-App Purchase version`](./post-v1-inapppurchaseversions.md)). Relate it to the In-App Purchase whose metadata you’re updating:
 
@@ -47,7 +47,7 @@ Create a draft version with `POST /v1/inAppPurchaseVersions` ([`Create an In-App
 
 The response returns the new version’s `id` and a `state` of `PREPARE_FOR_SUBMISSION`. Note the `id` — every subsequent step references it.
 
-##### Attach a localization to the version
+### Attach a localization to the version
 
 Add a localized display name and description with `POST /v2/inAppPurchaseLocalizations` ([`Create an In-App Purchase localization`](./post-v2-inapppurchaselocalizations.md)). The payload relates the localization to the version, not the parent In-App Purchase:
 
@@ -74,7 +74,7 @@ Add a localized display name and description with `POST /v2/inAppPurchaseLocaliz
 
 Repeat for each locale you support. To list the localizations attached to a version, use `GET /v1/inAppPurchaseVersions/{id}/localizations` ([`List localizations for an In-App Purchase version`](./get-v1-inapppurchaseversions-_id_-localizations.md)).
 
-##### Attach a review image to the version
+### Attach a review image to the version
 
 An In-App Purchase version can carry review images that show the promotion image customers see on the App Store product page. Reserve, upload, and commit each image in three steps.
 
@@ -120,11 +120,11 @@ Read image metadata with `GET /v2/inAppPurchaseImages/{id}` ([`Read In-App Purch
 
 For more on the reserve-upload-commit pattern, see [Uploading Assets to App Store Connect](./uploading-assets-to-app-store-connect.md).
 
-##### List all versions for an In-App Purchase
+### List all versions for an In-App Purchase
 
 To see every version on a parent In-App Purchase, use `GET /v2/inAppPurchases/{id}/versions` ([`List the versions of an In-App Purchase`](./get-v2-inapppurchases-_id_-versions.md)). The response includes each version’s state, so you can find the current draft, the most recently approved version, and any versions currently in review.
 
-##### Submit the version
+### Submit the version
 
 Submit a completed version through the review submissions workflow. Create a review submission for the app, add the version as an item, and mark the submission as `submitted`. For step-by-step instructions, see [Managing In-App Purchases](./managing-in-app-purchases.md).
 

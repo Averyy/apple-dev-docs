@@ -24,7 +24,7 @@ var category: String? { get set }
 @property (copy, nullable) NSString * category;
 ```
 
-#### Discussion
+## Discussion
 
 Categories allow you to present custom actions to the user on your push notifications. For more information, see [`UIMutableUserNotificationCategory`](../../../UIKit/uimutableusernotificationcategory.md).
 

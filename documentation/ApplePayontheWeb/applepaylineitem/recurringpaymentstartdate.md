@@ -16,7 +16,7 @@ The date of the first payment.
 Date recurringPaymentStartDate;
 ```
 
-#### Discussion
+## Discussion
 
 To request the first payment as part of the initial transaction, don’t include this attribute.
 

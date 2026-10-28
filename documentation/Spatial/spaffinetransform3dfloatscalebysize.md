@@ -19,11 +19,11 @@
 static SPAffineTransform3DFloat SPAffineTransform3DFloatScaleBySize(SPAffineTransform3DFloat transform, SPSize3DFloat scale);
 ```
 
-#### Return Value
+## Return Value
 
 A transform that’s scaled by the specified value.
 
-#### Discussion
+## Discussion
 
 Returns an affine transform that’s constructed by concatenating an existing affine transform and a scale specified by an @p SPSize3DFloat structure.
 
